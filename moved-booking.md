@@ -6,7 +6,7 @@ Moved booking - This functionality allows the user to tie a “rescheduled ” b
 
 It can be activated from SuperAdmin.&#x20;
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Feature functionality**
 
@@ -14,7 +14,7 @@ A booking will have to be moved due to various reasons.&#x20;
 
 * First of all, a new booking will be created and the passengers will be copied from the initial booking.&#x20;
 
-<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 * After the new booking will be successfully created, we can go back and set the initial booking as “Moved”.&#x20;
 * Click on Mark as Moved&#x20;
