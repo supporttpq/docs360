@@ -34,6 +34,9 @@
 
 * [Coded discount booking](coded-discount-booking.md)
 * [Customer info / Details on customer card](customer-info-details-on-customer-card.md)
+* [QR code for vouchers](qr-code-for-vouchers.md)
+* [Individual payments](individual-payments.md)
+* [Waitting list](waitting-list.md)
 
 ## Customer
 
