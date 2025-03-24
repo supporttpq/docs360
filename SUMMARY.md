@@ -14,7 +14,10 @@
 
 ## Booking
 
-* [All bookings](booking/all-bookings.md)
+* [All bookings](booking/all-bookings/README.md)
+  * [View all bookings](booking/all-bookings/view-all-bookings.md)
+  * [Statistic in All bookings](booking/all-bookings/statistic-in-all-bookings.md)
+  * [All bookings Totals](booking/all-bookings/all-bookings-totals.md)
 * [New Booking](booking/new-booking/README.md)
   * [New Booking](booking/new-booking/new-booking.md)
   * [Economics](booking/new-booking/economics.md)
@@ -29,14 +32,17 @@
   * [Transport Seating](booking/new-booking/transport-seating.md)
   * [Tee Times](booking/new-booking/tee-times.md)
   * [Conversation](booking/new-booking/conversation.md)
+  * [Don't sent ticket option](booking/new-booking/dont-sent-ticket-option.md)
+  * [Coded discount booking](booking/new-booking/coded-discount-booking.md)
+  * [Customer info / Details on customer card](booking/new-booking/customer-info-details-on-customer-card.md)
+  * [QR code for vouchers](booking/new-booking/qr-code-for-vouchers.md)
+  * [Individual payments](booking/new-booking/individual-payments.md)
 
 ***
 
-* [Coded discount booking](coded-discount-booking.md)
-* [Customer info / Details on customer card](customer-info-details-on-customer-card.md)
-* [QR code for vouchers](qr-code-for-vouchers.md)
-* [Individual payments](individual-payments.md)
 * [Waitting list](waitting-list.md)
+* [Moved Booking](moved-booking.md)
+* [Copy Booking](copy-booking.md)
 
 ## Customer
 

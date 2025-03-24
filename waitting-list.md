@@ -8,7 +8,7 @@ The notion of waiting list (waitlist) has appeared in Tourpaq from the need to h
 
 The starting point is having a normal pricelist situation already in place: hotel allotment, transport allotment, price defined for a particular departure. The single setting to be made in order to activate waiting list behavior of this pricelist is checking the **Waitlist (WL)** checkbox on it.
 
-<figure><img src=".gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **The effects**
 
