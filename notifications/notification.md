@@ -14,9 +14,9 @@ layout:
 
 # Notification
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
-
 This page displays notifications related to reservations in the system, including errors, warnings and specific alerts regarding the status of reservations. The purpose of the page is to provide users with an overview of the problems that have arisen and to facilitate their management.&#x20;
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Main sections:&#x20;
 
