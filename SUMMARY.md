@@ -24,6 +24,16 @@
   * [Comments](booking/new-booking/comments.md)
   * [SSR](booking/new-booking/ssr.md)
   * [Profit](booking/new-booking/profit.md)
+  * [SMS](booking/new-booking/sms.md)
+  * [Hotel Room](booking/new-booking/hotel-room.md)
+  * [Transport Seating](booking/new-booking/transport-seating.md)
+  * [Tee Times](booking/new-booking/tee-times.md)
+  * [Conversation](booking/new-booking/conversation.md)
+
+***
+
+* [Coded discount booking](coded-discount-booking.md)
+* [Customer info / Details on customer card](customer-info-details-on-customer-card.md)
 
 ## Customer
 
