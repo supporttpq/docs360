@@ -38,20 +38,26 @@
   * [QR code for vouchers](booking/new-booking/qr-code-for-vouchers.md)
   * [Individual payments](booking/new-booking/individual-payments.md)
   * [Keep automatic discounts prices](booking/new-booking/keep-automatic-discounts-prices.md)
+  * [Waitting list](booking/new-booking/waitting-list.md)
+  * [Moved Booking](booking/new-booking/moved-booking.md)
+  * [Copy Booking](booking/new-booking/copy-booking.md)
+  * [Circuit Bookings](booking/new-booking/circuit-bookings.md)
+  * [Booking for 2 One Ways](booking/new-booking/booking-for-2-one-ways.md)
+  * [Multiple one way flights bookings](booking/new-booking/multiple-one-way-flights-bookings.md)
+  * [Multiple transports one room bookings](booking/new-booking/multiple-transports-one-room-bookings.md)
 
 ***
 
-* [Waitting list](waitting-list.md)
-* [Moved Booking](moved-booking.md)
-* [Copy Booking](copy-booking.md)
-* [Circuit Bookings](circuit-bookings.md)
-* [Booking for 2 One Ways](booking-for-2-one-ways.md)
-* [Multiple one way flights bookings](multiple-one-way-flights-bookings.md)
-* [Multiple transports one room bookings](multiple-transports-one-room-bookings.md)
 * [GDS Queue Place](gds-queue-place/README.md)
   * [GDS Bookings](gds-queue-place/gds-bookings.md)
   * [Submit a GDS Booking](gds-queue-place/submit-a-gds-booking.md)
   * [GDS One way flight bookings](gds-queue-place/gds-one-way-flight-bookings.md)
+* [Offers](offers/README.md)
+  * [Create new offer](offers/create-new-offer.md)
+  * [Offer management and statistics](offers/offer-management-and-statistics.md)
+  * [Offer template](offers/offer-template.md)
+  * [Select text for Offers](offers/select-text-for-offers.md)
+  * [Customer Offer SMS template](offers/customer-offer-sms-template.md)
 
 ## Customer
 
@@ -75,6 +81,7 @@
 ## Finance
 
 * [Page 5](finance/page-5.md)
+* [Page](finance/page.md)
 
 ## Price List
 

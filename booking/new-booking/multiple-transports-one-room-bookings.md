@@ -13,11 +13,11 @@ As an example, we'll choose two different transports with
 
 and the **same** hotel with the **same** room type.
 
-<figure><img src=".gitbook/assets/b337378e-5657-433e-8f6b-578196d03ea5.webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/b337378e-5657-433e-8f6b-578196d03ea5.webp" alt=""><figcaption></figcaption></figure>
 
 Next, on Allocate Passengers screen, the rooms will be merged by pressing the "Merge rooms by type" button.
 
-<figure><img src=".gitbook/assets/433fc318-d975-4b3f-a47a-995cc1701d1e.webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/433fc318-d975-4b3f-a47a-995cc1701d1e.webp" alt=""><figcaption></figcaption></figure>
 
 Now, the room is successfully merged, and two passengers from two different transports are able to stay in the same room.
 
