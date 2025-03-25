@@ -69,6 +69,8 @@
 
 * [E-tickets Overview](e-tickets-overview.md)
 * [SMS Overview](sms-overview.md)
+* [Tickets attachments](tickets-attachments.md)
+* [Ticket texts](ticket-texts.md)
 
 ## Finance
 
