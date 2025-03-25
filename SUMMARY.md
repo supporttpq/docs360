@@ -37,12 +37,21 @@
   * [Customer info / Details on customer card](booking/new-booking/customer-info-details-on-customer-card.md)
   * [QR code for vouchers](booking/new-booking/qr-code-for-vouchers.md)
   * [Individual payments](booking/new-booking/individual-payments.md)
+  * [Keep automatic discounts prices](booking/new-booking/keep-automatic-discounts-prices.md)
 
 ***
 
 * [Waitting list](waitting-list.md)
 * [Moved Booking](moved-booking.md)
 * [Copy Booking](copy-booking.md)
+* [Circuit Bookings](circuit-bookings.md)
+* [Booking for 2 One Ways](booking-for-2-one-ways.md)
+* [Multiple one way flights bookings](multiple-one-way-flights-bookings.md)
+* [Multiple transports one room bookings](multiple-transports-one-room-bookings.md)
+* [GDS Queue Place](gds-queue-place/README.md)
+  * [GDS Bookings](gds-queue-place/gds-bookings.md)
+  * [Submit a GDS Booking](gds-queue-place/submit-a-gds-booking.md)
+  * [GDS One way flight bookings](gds-queue-place/gds-one-way-flight-bookings.md)
 
 ## Customer
 
