@@ -55,7 +55,11 @@
 
 ## Customer
 
-* [Page 3](customer/page-3.md)
+* [Customers](customer/page-3.md)
+
+***
+
+* [Merge customers](merge-customers.md)
 
 ## Tickets
 
