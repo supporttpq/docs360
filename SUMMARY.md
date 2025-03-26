@@ -58,6 +58,7 @@
   * [Offer template](offers/offer-template.md)
   * [Select text for Offers](offers/select-text-for-offers.md)
   * [Customer Offer SMS template](offers/customer-offer-sms-template.md)
+  * [Customer offer automatic flow](offers/customer-offer-automatic-flow.md)
 
 ## Customer
 
@@ -80,8 +81,25 @@
 
 ## Finance
 
-* [Page 5](finance/page-5.md)
-* [Page](finance/page.md)
+* [Payment registration](finance/page-5.md)
+* [Payment file import](finance/payment-file-import.md)
+* [Method of Payment](finance/method-of-payment.md)
+
+***
+
+* [Balance Administration](balance-administration.md)
+* [Export](export.md)
+* [Gift Card Payments](gift-card-payments.md)
+* [Daily Export file](daily-export-file.md)
+* [Autobilling](autobilling/README.md)
+  * [How to create a creditor](autobilling/how-to-create-a-creditor.md)
+  * [How to set autobilling for hotels](autobilling/how-to-set-autobilling-for-hotels.md)
+  * [How to set autobilling for extras](autobilling/how-to-set-autobilling-for-extras.md)
+  * [How to set autobilling for discounts/supplements](autobilling/how-to-set-autobilling-for-discounts-supplements.md)
+  * [How to set autobilling for handling](autobilling/how-to-set-autobilling-for-handling.md)
+  * [Creditor invoices](autobilling/creditor-invoices.md)
+* [Missed Payments](missed-payments.md)
+* [Invoice Hotel Payments](invoice-hotel-payments.md)
 
 ## Price List
 
@@ -101,7 +119,7 @@
 
 ## Export
 
-* [Page 10](export/page-10.md)
+* [Page 10](export-1/page-10.md)
 
 ## Users
 
