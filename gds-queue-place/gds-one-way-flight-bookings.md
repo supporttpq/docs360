@@ -6,7 +6,7 @@ Tourpaq Office allows defining GDS Transport which can be booked as One Way. GDS
 
 Next step when defining this kind of transport is to define legs (departure and arrival) and to choose the provider: Please make sure that OneWay is selected.
 
-<figure><img src="../.gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Accessing "Configure" will allow user to select the filters for searching the GDS flights. After setting the filter, user should "Save Filters", otherwise the searching of GDS flights One Way will not be possible.
 

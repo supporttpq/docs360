@@ -114,10 +114,11 @@
 * [Price List Custom Hotel days Service](price-list-custom-hotel-days-service.md)
 * [Profit margin rules](profit-margin-rules.md)
 * [Packages Generator](packages-generator.md)
+* [Pricelist Tags](pricelist-tags.md)
 
 ## Hotel
 
-* [Page 7](hotel/page-7.md)
+* [Hotel creation](hotel/page-7.md)
 
 ## Transport
 
