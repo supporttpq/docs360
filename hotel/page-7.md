@@ -117,37 +117,37 @@ Two room types are needed in the hotel for this feature. **Warning!** Only the /
 
 Used for controlling allotments.
 
-![!](https://docs.tourpaq.com/assets/images/sh._all.-4c25b198e808fbfc5994a9c8c0b7ef9e.jpg)
+<figure><img src="../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
 
 The number of availlable rooms can be set from here by increasing or decreasing the value from the NO. RMS column.
 
 Also, from the transport column, the number of rooms availlable for the transport can be controlled, when there are more than one transport assigned to that room type. See more on [Hotel Allotments / Hotel Allotment Control](https://docs.tourpaq.com/docs/hotel/hotel-allotments) page.
 
-#### Disc.Ex.Beds <a href="#discexbeds" id="discexbeds"></a>
+### Disc.Ex.Beds <a href="#discexbeds" id="discexbeds"></a>
 
 Used to define the discount received by the passengers that use an extra bed in a room. Please check [Extra Bed Discount](https://docs.tourpaq.com/docs/hotel/extra-bed-discount)
 
-#### Room cost <a href="#room-cost" id="room-cost"></a>
+### Room cost <a href="#room-cost" id="room-cost"></a>
 
 Used to define the amount paid by the agency to the hotel for the rooms. It is found on the contract between the hotel and agency. Please check [Room Cost](https://docs.tourpaq.com/docs/hotel/room-cost)
 
-#### Ex.Beds Costs <a href="#exbeds-costs" id="exbeds-costs"></a>
+### Ex.Beds Costs <a href="#exbeds-costs" id="exbeds-costs"></a>
 
 Used to define the cost of the extra bed paid by the agency. Please check [Extra Bed Costs](https://docs.tourpaq.com/docs/hotel/extra-bed-costs)
 
-#### Special offers <a href="#special-offers" id="special-offers"></a>
+### Special offers <a href="#special-offers" id="special-offers"></a>
 
 Used to define discounts offered by the hotel to the agency. Please check [Room Cost](https://docs.tourpaq.com/docs/hotel/room-cost)
 
-#### Photos <a href="#photos" id="photos"></a>
+### Photos <a href="#photos" id="photos"></a>
 
 From here you can add the photos for hotel and rooms. Photos can be added for each room type by selecting the room type from the dropdown. All photos appear on the website, **Main photo** is the photo that will be displayed for the hotel
 
-#### Web <a href="#web" id="web"></a>
+### Web <a href="#web" id="web"></a>
 
 Used to define the facilities available at the hotel. Must have the Facilities template activated from the **Hotel** general tab.
 
-#### Layout <a href="#layout" id="layout"></a>
+### Layout <a href="#layout" id="layout"></a>
 
 Adds layout to a hotel.
 
@@ -155,18 +155,18 @@ More information is available in [Hotel Layout](https://docs.tourpaq.com/docs/ho
 
 To use this feature, please contact Tourpaq Support.
 
-#### Room numbers <a href="#room-numbers" id="room-numbers"></a>
+### Room numbers <a href="#room-numbers" id="room-numbers"></a>
 
 Adds numbers to the rooms of a hotel with layout.
 
 **!!! Can only be used if the layout is used.**
 
-#### Communication <a href="#communication" id="communication"></a>
+### Communication <a href="#communication" id="communication"></a>
 
 Used to configure the sending of lists with bookings made for the hotel.
 
 Please check [Hotel Reporting](https://docs.tourpaq.com/docs/hotel/hotel-reporting)
 
-#### Deposit <a href="#deposit" id="deposit"></a>
+### Deposit <a href="#deposit" id="deposit"></a>
 
-This feature works with [Autobilling](https://docs.tourpaq.com/docs/documentation/settings-for-autobilling)
+This feature works with [Autobilling](../autobilling/)
