@@ -103,7 +103,17 @@
 
 ## Price List
 
-* [Page 6](price-list/page-6.md)
+* [Pricelist](price-list/page-6.md)
+* [Pricelist Setup](price-list/pricelist-setup.md)
+* [Migrate Pricelist](price-list/migrate-pricelist.md)
+
+***
+
+* [Generate Pricelist](generate-pricelist.md)
+* [Price regulation rules](price-regulation-rules.md)
+* [Price List Custom Hotel days Service](price-list-custom-hotel-days-service.md)
+* [Profit margin rules](profit-margin-rules.md)
+* [Packages Generator](packages-generator.md)
 
 ## Hotel
 
