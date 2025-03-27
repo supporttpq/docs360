@@ -140,6 +140,7 @@
 * [Facilities](facilities.md)
 * [Base room types](base-room-types.md)
 * [Stop Sales](stop-sales.md)
+* [Stop Sale Resort](stop-sale-resort.md)
 * [Business Inteligence](business-inteligence.md)
 
 ## Transport
