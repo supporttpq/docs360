@@ -16,7 +16,7 @@ layout:
 
 Go to users / suppliers&#x20;
 
-<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Select the supplier.&#x20;
 * Go to Handling section&#x20;

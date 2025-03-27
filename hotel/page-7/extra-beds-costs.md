@@ -9,7 +9,7 @@ Extra beds cost will be applied only in 2 cases:
 
 If extra bed cost is not used, its value will be 0.
 
-<figure><img src=".gitbook/assets/image (63).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (63).png" alt=""><figcaption></figcaption></figure>
 
 * Set up the age of the passenger that will use the extra bed.&#x20;
 * Set the arrival start and end date.

@@ -115,23 +115,31 @@
 * [Profit margin rules](profit-margin-rules.md)
 * [Packages Generator](packages-generator.md)
 * [Pricelist Tags](pricelist-tags.md)
+* [Free room count behavior](free-room-count-behavior.md)
 
 ## Hotel
 
-* [Hotel creation](hotel/page-7.md)
+* [Hotel creation](hotel/page-7/README.md)
+  * [Hotel allotments](hotel/page-7/hotel-allotments.md)
+  * [Allotments per day](hotel/page-7/allotments-per-day.md)
+  * [Releases](hotel/page-7/releases/README.md)
+    * [Hotel release - automation](hotel/page-7/releases/hotel-release-automation.md)
+    * [Hotel release - Reporting](hotel/page-7/releases/hotel-release-reporting.md)
+  * [Photos & Documents](hotel/page-7/photos-and-documents.md)
+  * [Discount Extra Beds](hotel/page-7/discount-extra-beds.md)
+  * [Extra Beds Costs](hotel/page-7/extra-beds-costs.md)
+  * [Hotel Web](hotel/page-7/hotel-web.md)
+  * [Communication](hotel/page-7/communication/README.md)
+    * [Hotel reporting](hotel/page-7/communication/hotel-reporting.md)
+  * [Hotel Layout](hotel/page-7/hotel-layout.md)
+  * [Hotel Deposit](hotel/page-7/hotel-deposit.md)
+  * [Hotel Activity Log](hotel/page-7/hotel-activity-log.md)
 
 ***
 
+* [Facilities](facilities.md)
 * [Base room types](base-room-types.md)
-* [Hotel allotments](hotel-allotments.md)
-* [Allotments per day](allotments-per-day.md)
-* [Releases](releases/README.md)
-  * [Hotel release - automation](releases/hotel-release-automation.md)
-  * [Hotel release - Reporting](releases/hotel-release-reporting.md)
-* [Photos & Documents](photos-and-documents.md)
-* [Discount Extra Beds](discount-extra-beds.md)
-* [Extra Beds Costs](extra-beds-costs.md)
-* [Hotel Web](hotel-web.md)
+* [Stop Sales](stop-sales.md)
 * [Business Inteligence](business-inteligence.md)
 
 ## Transport

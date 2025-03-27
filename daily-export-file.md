@@ -20,7 +20,7 @@ This function allows the exporting of detailed information regarding bookings fr
 
 The email(s) where this export will be sent it can be setup in Setup Menu / System Setup / Financial Export email address(es)
 
-<figure><img src=".gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (16) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The data will contain information regarding each booking that corresponds to the given filters:
 
