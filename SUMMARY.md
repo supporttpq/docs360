@@ -120,6 +120,20 @@
 
 * [Hotel creation](hotel/page-7.md)
 
+***
+
+* [Base room types](base-room-types.md)
+* [Hotel allotments](hotel-allotments.md)
+* [Allotments per day](allotments-per-day.md)
+* [Releases](releases/README.md)
+  * [Hotel release - automation](releases/hotel-release-automation.md)
+  * [Hotel release - Reporting](releases/hotel-release-reporting.md)
+* [Photos & Documents](photos-and-documents.md)
+* [Discount Extra Beds](discount-extra-beds.md)
+* [Extra Beds Costs](extra-beds-costs.md)
+* [Hotel Web](hotel-web.md)
+* [Business Inteligence](business-inteligence.md)
+
 ## Transport
 
 * [Page 8](transport/page-8.md)
