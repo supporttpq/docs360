@@ -22,3 +22,11 @@ The **Activity Log** records changes made to room allotments in the system. This
      * **Original Value:** The previous value before the update (e.g., 20).
      * **New Value:** The updated value (e.g., 10).
      * **Description:** Likely provides additional details about the change.
+
+### **Allotment History**
+
+Additionally, there is an Allotment History under Allotment per Day, which can be accessed by clicking the Allotment History button.
+
+<figure><img src="../../.gitbook/assets/allotmenthistory-6f2543bf321a7cd732687fe54ab9380e.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/allhistorydialog-154b1706f3a26ac9be0110d4cc282a9d.png" alt=""><figcaption></figcaption></figure>
