@@ -151,7 +151,15 @@
 
 ## Quality
 
-* [Page 9](quality/page-9.md)
+* [Quality Management](quality/page-9/README.md)
+  * [Questionnaires Schemas](quality/page-9/questionnaires-schemas.md)
+  * [Questionnaires - Setup questions](quality/page-9/questionnaires-setup-questions.md)
+  * [Questionnaire Results](quality/page-9/questionnaire-results.md)
+
+***
+
+* [Service Cases](service-cases/README.md)
+  * [Add new Service Case](service-cases/add-new-service-case.md)
 
 ## Export
 

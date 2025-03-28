@@ -2,7 +2,7 @@
 
 This tab is used to monitor and control the hotel allotments, either by changing the number of total available rooms, or by modifying the number of rooms available for transports.
 
-<figure><img src="../../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 From the "NO.RMS" column, the number of available rooms can be changed (increased or decreased). Also, we can change the number of rooms by inserting a value in the change values fields and then clicking Apply.
 
