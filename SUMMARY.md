@@ -141,6 +141,8 @@
 * [Base room types](base-room-types.md)
 * [Stop Sales](stop-sales.md)
 * [Stop Sale Resort](stop-sale-resort.md)
+* [Hotel combination](hotel-combination.md)
+* [Hotel Contracts](hotel-contracts.md)
 * [Business Inteligence](business-inteligence.md)
 
 ## Transport

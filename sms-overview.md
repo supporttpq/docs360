@@ -9,7 +9,7 @@ description: >-
 
 ### **Main Elements of the Page**
 
-<figure><img src=".gitbook/assets/image (26) (1).png" alt=""><figcaption><p>SMS overview</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (26) (1) (1).png" alt=""><figcaption><p>SMS overview</p></figcaption></figure>
 
 #### **a) Search Filters**
 

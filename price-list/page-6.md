@@ -27,13 +27,13 @@ Creating a price list is fairly easy. From the **Price list** tab, select "Creat
 * Select the rooms.
 * Click **Create new price list**
 
-<figure><img src="../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (29) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Price List Search <a href="#price-list-search" id="price-list-search"></a>
 
 The search helps to find Prices based on [Brands](https://docs.tourpaq.com/docs/), [Transport](https://docs.tourpaq.com/docs/transport/transport), [Hotel](https://docs.tourpaq.com/docs/hotel/hotel), [Room](https://docs.tourpaq.com/docs/) and base on the departure date interval. To get results The most basic search you can get is By choosing All Brands and Transport but for the best performance try to fill most of the fields. The list of transports from the drop down list are filtered based on the [Brands](https://docs.tourpaq.com/docs/) selection.
 
-<figure><img src="../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (30) (1).png" alt=""><figcaption></figcaption></figure>
 
 If All Brands are selected all the transport will appear in the [Transport](https://docs.tourpaq.com/docs/transport/transport) drop down list otherwise only the transport assigned to that specific brand will appear. The [Transport](https://docs.tourpaq.com/docs/transport/transport)s are assigned to the [Brands](https://docs.tourpaq.com/docs/) in the Transport#Brands\_tab|Brands Tab under Edit [Transport](https://docs.tourpaq.com/docs/transport/transport). Also the Transport is not shown in the drop down list if the [Transport](https://docs.tourpaq.com/docs/transport/transport) is set as hidden. The visibility of the Transport can be set on the Transport#General\_tab|General tab
 
@@ -45,7 +45,7 @@ When the hotel is selected two more filed are displayed. This are some additiona
 
 The search will produce a result like shown in the Figure 2. For performance reasons the prices will not be loaded all at once. When the Display button is hit the first 25 fields are loaded when scrolling down the next 25 fields will be loaded and so on until the entire list is loaded into the page. By default the most of the columns will be hidden for reasons of performance and visibility.
 
-<figure><img src="../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (31) (1).png" alt=""><figcaption></figcaption></figure>
 
 The column title are abbreviated so the table can be more tidy. The most of the fields have a tool-tip with the full name of the column. The full list of the columns and explanation are as follow:
 

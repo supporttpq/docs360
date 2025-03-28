@@ -10,5 +10,5 @@ After that it will be necessary to set some filters:&#x20;
 * Select information about: owners, transports, real transports, hotels, status.&#x20;
 * Click on display&#x20;
 
-<figure><img src="../../.gitbook/assets/image (14) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
