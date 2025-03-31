@@ -24,13 +24,13 @@ This feature is available for administrator user type.
 
 Price lists can be created in the **Price list** tab, from **Create/Copy price list**. The first step is to choose the brand for which the price list will be available. Next, the transport is selected, followed by the transport's fix quota. And finally, the hotel and rooms that will use the price list.
 
-<figure><img src="../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (35) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Not created prices <a href="#not-created-prices" id="not-created-prices"></a>
 
 This feature enables the user to see if price lists were not created. This can be due to the fact that the fix quota does not cover the hotel allotment period, or that some settings for the transport and hotel have been skipped.
 
-<figure><img src="../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (36) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Copy price list <a href="#copy-price-list" id="copy-price-list"></a>
 
@@ -44,7 +44,7 @@ There are also check boxes that allows for the copying of prices from:
 * Copy prices
 * Save changed discounts
 
-<figure><img src="../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (37) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Price list overview <a href="#price-list-overview" id="price-list-overview"></a>
 
@@ -52,9 +52,9 @@ The user can have a better overview on what pricelists are defined on specifics,
 
 This feature also has a link to the pricelist, meaning if the user clicks on the **View** button, he will be redirected to the price list and all selected filters will be loaded.
 
-<figure><img src="../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (38) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (39) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Price list <a href="#price-list" id="price-list"></a>
 
@@ -77,11 +77,11 @@ Filters:
 
 A price list is blank when first created.
 
-<figure><img src="../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (41) (1).png" alt=""><figcaption></figcaption></figure>
 
 The fields must be then filled manually by the user with the amounts calculated or required. Some fields are set to autofill based on formula that takes into consideration the amounts already inserted. In the end a price list should look like this:
 
-<figure><img src="../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (40) (1).png" alt=""><figcaption></figcaption></figure>
 
 Fields:
 
@@ -141,13 +141,13 @@ Contains the actual pricelist
 
 Contains discounts from the hotel
 
-<figure><img src="../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (42) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Column filters**
 
 Allows the user to filter among the columns shown in prices. All unchecked filters will be displayed in **PRICES**
 
-<figure><img src="../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (43) (1).png" alt=""><figcaption></figcaption></figure>
 
 Filter categories:
 
@@ -181,7 +181,7 @@ Filter categories:
 
 Along with fixed children prices the system allows the user to calculate these prices based on a percentage of adult price. This will make price updates much easier. Simply insert a value in the **CH1 %** column and that value will be converted in a percentage of the amount from **P1**.
 
-<figure><img src="../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (44) (1).png" alt=""><figcaption></figcaption></figure>
 
 > A passenger will get the Child Price ONLY if:
 
@@ -193,7 +193,7 @@ Along with fixed children prices the system allows the user to calculate these p
 
 A handy improvement to be able to customize hotel name for specific departures.
 
-<figure><img src="../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (45) (1).png" alt=""><figcaption></figcaption></figure>
 
 This alternative name will also appear on the ticket.
 
@@ -203,7 +203,7 @@ In office the alternative name will replace the hotel name.
 
 The P. Ch column stand for Price Change. This will adjust price relative to what is currently in the column.
 
-<figure><img src="../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (46) (1).png" alt=""><figcaption></figcaption></figure>
 
 When something is selected in this column, another set of options will appear in the upper section.
 
@@ -215,6 +215,6 @@ Run -> makes the change take effect in the interface. Repeated pressing will inc
 
 Difference from Price -> This options is available only for Discount columns. This makes Discount values modify relatively to P in period (Example: D1 is relative to P1, D2 is relative to P2 , etc.).
 
-<figure><img src="../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (47) (1).png" alt=""><figcaption></figcaption></figure>
 
 When **Difference from Price** is checked, after Run, Discount values are calculated by deacrease the price with the value set. If Price P1=2000 and D1=200 and Difference from Price is checked, after Run, PD1=2000-200=1800. Only after Save, new values are saved in the PriceList.

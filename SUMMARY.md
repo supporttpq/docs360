@@ -160,18 +160,49 @@
 
 * [Service Cases](service-cases/README.md)
   * [Add new Service Case](service-cases/add-new-service-case.md)
+  * [Reasons](service-cases/reasons.md)
+  * [Notification](service-cases/notification.md)
+  * [Communication (Email & SMS)](service-cases/communication-email-and-sms.md)
+  * [Compensation & Deduction](service-cases/compensation-and-deduction.md)
+  * [Search filters, results, export & stats](service-cases/search-filters-results-export-and-stats.md)
 
 ## Export
 
-* [Page 10](export-1/page-10.md)
+* [Export](export-1/page-10.md)
+* [Lists](export-1/lists.md)
+* [Extras List](export-1/extras-list.md)
+
+***
+
+* [Tee Time extras list](tee-time-extras-list.md)
+* [Flight Transfer Export](flight-transfer-export.md)
 
 ## Users
 
-* [Page 11](users/page-11.md)
+* [Users](users/page-11/README.md)
+  * [User limited view](users/page-11/user-limited-view.md)
+  * [Password expiration](users/page-11/password-expiration.md)
+
+***
+
+* [Company Setup](company-setup.md)
+* [Suppliers](suppliers/README.md)
+  * [Hotel Supplier](suppliers/hotel-supplier.md)
+  * [Extra suplier](suppliers/extra-suplier.md)
+* [Creditor](creditor.md)
+* [Guides](guides/README.md)
+  * [Guide Names](guides/guide-names.md)
+  * [Guide Profiles](guides/guide-profiles.md)
+* [2 Factor Authentication](2-factor-authentication.md)
+* [GDPR (General Data Protection Regulation)](gdpr-general-data-protection-regulation.md)
 
 ## Guest App
 
-* [Page 12](guest-app/page-12.md)
+* [Settings](guest-app/page-12.md)
+
+***
+
+* [Destination - Mobile Guide App](destination-mobile-guide-app.md)
 
 ## Extras Setup
 

@@ -4,7 +4,7 @@ Packages are part of the à la carte feature and are used to generate a preset c
 
 To create a package go to price list and click on package generator. Click on Create.&#x20;
 
-<figure><img src=".gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (59) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Insert package name.&#x20;
 * Add the agency
@@ -19,7 +19,7 @@ To create a package go to price list and click on package generator. Click on Cr
 
 Click on save, and then generate.&#x20;
 
-<figure><img src=".gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (61) (1).png" alt=""><figcaption></figcaption></figure>
 
 View content allows seeing all entities used for this package and generated packages shows every departure date of the transports and every hotel check-in date used in a package.&#x20;
 

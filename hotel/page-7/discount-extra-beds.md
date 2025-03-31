@@ -2,7 +2,7 @@
 
 Extra bed discounts are applied only for rooms with extra beds.
 
-<figure><img src="../../.gitbook/assets/image (19) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;It should be possible to define as many discounts as possible. An extra bed discount will be defined by the following values:
 

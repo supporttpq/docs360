@@ -6,7 +6,7 @@
 
 The transport has to have the same brand as the one set for the price list generation rule. Set the brand in transport.
 
-<figure><img src=".gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (58) (1).png" alt=""><figcaption></figcaption></figure>
 
 After saving, to continue to add a rule, it is necessary to add a fix quota. Select a fix quota. We can select any fix quota provided, as they are unique, and for each fix quota we can set an interval. It is mandatory the new interval to be included in the parent fix quota.&#x20;
 
