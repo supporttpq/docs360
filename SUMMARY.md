@@ -203,6 +203,8 @@
 ***
 
 * [Destination - Mobile Guide App](destination-mobile-guide-app.md)
+* [Visit Sun App](visit-sun-app.md)
+* [Weekly Activities](weekly-activities.md)
 
 ## Extras Setup
 
@@ -210,7 +212,15 @@
 
 ## Email Setup
 
-* [Page 14](email-setup/page-14.md)
+* [Ticket Attachments](email-setup/ticket-attachments.md)
+* [Dynamic E-mail/SMS Center](email-setup/page-14.md)
+
+***
+
+* [E-mail/SMS Center Statistics](e-mail-sms-center-statistics.md)
+* [E-mail center](e-mail-center.md)
+* [Email Templates](email-templates.md)
+* [Warning notification rules](warning-notification-rules.md)
 
 ## Setup
 

@@ -58,4 +58,4 @@ Create or edit a schedule using the fields and filters from above. A mail will b
 * Show schedules - display the current schedules, allows for schedules to be created
 * Show columns - displays the **Columns** filter
 
-<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>

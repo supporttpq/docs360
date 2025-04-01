@@ -4,7 +4,7 @@ Notifications for service cases have the role to let the user know when somethin
 
 There is a dedicated icon for the service case notifications, in the upper part of the page, right next to the brand selection.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 All service cases that receive a new email from the customer, are marked with a star in the overview, and those will be counted and displayed in the counter icon for notifications.
 

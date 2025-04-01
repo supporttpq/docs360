@@ -18,7 +18,7 @@ The main requirement to use Autobilling feature is to have a creditor created in
 
 A creditor can be created in Tourpaq from Users/Creditors.
 
-<figure><img src="../.gitbook/assets/image (17) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (17) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Click on Create
 

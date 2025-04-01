@@ -2,15 +2,15 @@
 
 In the “Service cases” menu, press “Create” button.
 
-<figure><img src="../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Select the brand – make sure the booking you’re going to use is on this brand
 
-<figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Insert the booking number on which the complaint was made.
 
-<figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 After inserting the booking number, all information regarding that booking will be automatically filled in in read only mode:
 
@@ -21,7 +21,7 @@ After inserting the booking number, all information regarding that booking will 
 * Rooms details
 * All tabs from the booking page
 
-<figure><img src="../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Other information that can be completed by the service case user are:
 
@@ -35,4 +35,4 @@ Other information that can be completed by the service case user are:
 * Closed by user – the user that closes that service case
 * Comments – section for different notes, remarks and other information
 
-<figure><img src="../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11) (1) (1).png" alt=""><figcaption></figcaption></figure>
