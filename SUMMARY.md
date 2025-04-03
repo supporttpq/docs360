@@ -144,11 +144,11 @@
 * [Stop Sales](stop-sales.md)
 * [Stop Sale Resort](stop-sale-resort.md)
 * [Hotel beds](hotel-beds.md)
+* [Hotel Bed Banks - FAQ](hotel-bed-banks-faq.md)
 * [Hotel combination](hotel-combination.md)
 * [Hotel Contracts](hotel-contracts.md)
 * [Business Inteligence](business-inteligence.md)
 * [Hotel and transfer confirmation e-mail to suppliers](hotel-and-transfer-confirmation-e-mail-to-suppliers.md)
-* [Page](page.md)
 
 ## Transport
 
