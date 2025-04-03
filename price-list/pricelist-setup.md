@@ -24,13 +24,13 @@ This feature is available for administrator user type.
 
 Price lists can be created in the **Price list** tab, from **Create/Copy price list**. The first step is to choose the brand for which the price list will be available. Next, the transport is selected, followed by the transport's fix quota. And finally, the hotel and rooms that will use the price list.
 
-<figure><img src="../.gitbook/assets/image (35) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (35) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Not created prices <a href="#not-created-prices" id="not-created-prices"></a>
 
 This feature enables the user to see if price lists were not created. This can be due to the fact that the fix quota does not cover the hotel allotment period, or that some settings for the transport and hotel have been skipped.
 
-<figure><img src="../.gitbook/assets/image (36) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (36) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Copy price list <a href="#copy-price-list" id="copy-price-list"></a>
 
@@ -44,7 +44,7 @@ There are also check boxes that allows for the copying of prices from:
 * Copy prices
 * Save changed discounts
 
-<figure><img src="../.gitbook/assets/image (37) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (37) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Price list overview <a href="#price-list-overview" id="price-list-overview"></a>
 

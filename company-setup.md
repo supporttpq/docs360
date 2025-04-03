@@ -127,7 +127,7 @@ Additional settings - allows and give some additional permission to the user dep
 * Allow to view Internal Logs
 * Allow User To UnApprove ExtraOrder Refunds
 
-<figure><img src=".gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (28) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Automated Setup <a href="#automated-setup" id="automated-setup"></a>
 
@@ -135,7 +135,7 @@ USERS -> Company -> New API
 
 For Automated New Company creation, the user will only have to complete the following informations:
 
-<figure><img src=".gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (29) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Company Information
   * Company Name
@@ -152,7 +152,7 @@ For Automated New Company creation, the user will only have to complete the foll
 
 After the Company details are completed, at least one agency should be created.
 
-<figure><img src=".gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (30) (1).png" alt=""><figcaption></figcaption></figure>
 
 In order to add a new Agency,the following informations should be completed:
 

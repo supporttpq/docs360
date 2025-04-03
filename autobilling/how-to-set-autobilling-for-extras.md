@@ -16,7 +16,7 @@ layout:
 
 Those can be done on the extra general page in the automatic billing section.&#x20;
 
-<figure><img src="../.gitbook/assets/image (20) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (20) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Write the department code,&#x20;
 * the account debit and the account deposit. They're not mandatory, but they will be used in the invoice.&#x20;

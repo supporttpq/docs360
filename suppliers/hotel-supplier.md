@@ -16,7 +16,7 @@ To set up a hotel supplier go to Users / Users&#x20;
 
 Once the user is created, go to Users / Suppliers&#x20;
 
-<figure><img src="../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (31) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Click on Create new supplier&#x20;
 * Set the name&#x20;
@@ -25,12 +25,12 @@ Once the user is created, go to Users / Suppliers&#x20;
 
 The supplier has been created. After this, Go to hotel list&#x20;
 
-<figure><img src="../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (32) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Select the hotel lists the supplier has access to and set schedulers for the hotel schedulers. These are the same as the communication email from the hotel.&#x20;
 * In handling tab a creditor and a schedule are required.&#x20;
 
-<figure><img src="../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (33) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Set an account debit&#x20;
 * Then click on Save.&#x20;

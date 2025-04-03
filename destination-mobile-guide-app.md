@@ -6,7 +6,7 @@ Destination Mobile App is a new feature used to track down guides activity, help
 
 ### **Login Screen**
 
-<figure><img src=".gitbook/assets/Untitled (1).jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/Untitled (1) (1).jpg" alt=""><figcaption></figcaption></figure>
 
 This is the first screen the guide will encounter when using the app. As shown in the picture, the login is quite basic, requiring the username and password used in Tourpaq.
 

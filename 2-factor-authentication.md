@@ -12,11 +12,11 @@ First, a user will enter their username and a password. Then, instead of immedia
 
 * **Super Administrator** This feature will be activated by a Super Admin from Users → Companies → Feature Access.
 
-<figure><img src=".gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (36) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **System Setup** We'll add a new setting window in order to choose what 2FA methods will be used. It's recommended to select all methods. But, it will be up to you.
 
-<figure><img src=".gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (37) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **User setup** We will set the user's email and password that will be used for authentication
 
@@ -71,7 +71,7 @@ After you install the app, you will have 2 possibilities to get your code:
 * Using a QR code scanner
 * Enter the encoded key
 
-<figure><img src=".gitbook/assets/Untitled.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/Untitled (2).png" alt=""><figcaption></figcaption></figure>
 
 **Using the QR code scanner**
 

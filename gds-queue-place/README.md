@@ -2,7 +2,7 @@
 
 This page displays reservations that are in the queue for processing in the GDS (Global Distribution System). These reservations have not been automatically completed and require either additional verification or manual action to be placed correctly.
 
-<figure><img src="../.gitbook/assets/image (21) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (21) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Page Elements
 

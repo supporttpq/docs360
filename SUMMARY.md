@@ -144,6 +144,7 @@
 * [Hotel combination](hotel-combination.md)
 * [Hotel Contracts](hotel-contracts.md)
 * [Business Inteligence](business-inteligence.md)
+* [Hotel and transfer confirmation e-mail to suppliers](hotel-and-transfer-confirmation-e-mail-to-suppliers.md)
 
 ## Transport
 
@@ -221,7 +222,23 @@
 * [E-mail center](e-mail-center.md)
 * [Email Templates](email-templates.md)
 * [Warning notification rules](warning-notification-rules.md)
+* [Setup for Dynamic E-mail/SMS Center](setup-for-dynamic-e-mail-sms-center.md)
 
 ## Setup
 
-* [Page 15](setup/page-15.md)
+* [Arrival Gateways](setup/page-15.md)
+* [Departure Gateways](setup/departure-gateways.md)
+* [Destination](setup/destination.md)
+* [Resorts](setup/resorts.md)
+* [Departure stat weeks](setup/departure-stat-weeks.md)
+* [System Setup](setup/system-setup.md)
+* [System Setup Groups](setup/system-setup-groups.md)
+* [Creditor Currency Convertor](setup/creditor-currency-convertor.md)
+* [Internal logs](setup/internal-logs.md)
+* [Global search](setup/global-search.md)
+* [Tourpaq Web Booking - Technical documentation](setup/tourpaq-web-booking-technical-documentation.md)
+* [Web service](setup/web-service.md)
+* [Payment rate rules](setup/payment-rate-rules.md)
+* [Price currency](setup/price-currency.md)
+* [Vouchers](setup/vouchers.md)
+* [Autobilling](setup/autobilling.md)

@@ -27,13 +27,13 @@ Creating a price list is fairly easy. From the **Price list** tab, select "Creat
 * Select the rooms.
 * Click **Create new price list**
 
-<figure><img src="../.gitbook/assets/image (29) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (29) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Price List Search <a href="#price-list-search" id="price-list-search"></a>
 
 The search helps to find Prices based on [Brands](https://docs.tourpaq.com/docs/), [Transport](https://docs.tourpaq.com/docs/transport/transport), [Hotel](https://docs.tourpaq.com/docs/hotel/hotel), [Room](https://docs.tourpaq.com/docs/) and base on the departure date interval. To get results The most basic search you can get is By choosing All Brands and Transport but for the best performance try to fill most of the fields. The list of transports from the drop down list are filtered based on the [Brands](https://docs.tourpaq.com/docs/) selection.
 
-<figure><img src="../.gitbook/assets/image (30) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (30) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 If All Brands are selected all the transport will appear in the [Transport](https://docs.tourpaq.com/docs/transport/transport) drop down list otherwise only the transport assigned to that specific brand will appear. The [Transport](https://docs.tourpaq.com/docs/transport/transport)s are assigned to the [Brands](https://docs.tourpaq.com/docs/) in the Transport#Brands\_tab|Brands Tab under Edit [Transport](https://docs.tourpaq.com/docs/transport/transport). Also the Transport is not shown in the drop down list if the [Transport](https://docs.tourpaq.com/docs/transport/transport) is set as hidden. The visibility of the Transport can be set on the Transport#General\_tab|General tab
 
@@ -45,7 +45,7 @@ When the hotel is selected two more filed are displayed. This are some additiona
 
 The search will produce a result like shown in the Figure 2. For performance reasons the prices will not be loaded all at once. When the Display button is hit the first 25 fields are loaded when scrolling down the next 25 fields will be loaded and so on until the entire list is loaded into the page. By default the most of the columns will be hidden for reasons of performance and visibility.
 
-<figure><img src="../.gitbook/assets/image (31) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (31) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The column title are abbreviated so the table can be more tidy. The most of the fields have a tool-tip with the full name of the column. The full list of the columns and explanation are as follow:
 
@@ -66,7 +66,7 @@ The column title are abbreviated so the table can be more tidy. The most of the 
 
 Price list history is a way to see the evolution in time of prices.
 
-<figure><img src="../.gitbook/assets/image (32) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (32) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 At the beginning of each row there are tree icons:
 
@@ -76,13 +76,13 @@ At the beginning of each row there are tree icons:
 
 ### Column Filters <a href="#column-filters" id="column-filters"></a>
 
-<figure><img src="../.gitbook/assets/image (33) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (33) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This filters are a way to show a part of the information from price list grid. There is a check-box for each interval group (Interval 1, Interval 2, Interval 3, Interval 4). Ex. ALL PRICES (P1, P2, P3, P4) checked and I1 on top will show P1 column in table. The other columns that are not grouped in intervals are shown by default.
 
 ### Discounts <a href="#discounts" id="discounts"></a>
 
-<figure><img src="../.gitbook/assets/image (34) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (34) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Relation PL & Related PL <a href="#relation-pl--related-pl" id="relation-pl--related-pl"></a>
 

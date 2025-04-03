@@ -38,7 +38,7 @@ After hotel facility you can set an alternative description
 
 It is used in Offer and Create Booking when the hotel popup is opened.
 
-<figure><img src="../../.gitbook/assets/Untitled (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Untitled (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/internalNotesUse-c8e7978c90cd9ba40d7c44dd13f15265.png" alt=""><figcaption></figcaption></figure>
 
@@ -46,6 +46,6 @@ It is used in Offer and Create Booking when the hotel popup is opened.
 
 It is used in Offer and Create Booking when the hotel popup is opened.
 
-<figure><img src="../../.gitbook/assets/Untitled (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Untitled (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/soldOutUse-817314e445a9b01d8448d11a41d559c2.png" alt=""><figcaption></figcaption></figure>

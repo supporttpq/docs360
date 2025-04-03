@@ -11,7 +11,7 @@ There are 4 tabs:
 * Templates - used by hotels to group the facilities based on the type of hotel, can be chosen in the hotel general tab
 * Name for Feeds
 
-<figure><img src=".gitbook/assets/image (17) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (17) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Categories <a href="#categories" id="categories"></a>
 
@@ -25,13 +25,13 @@ Fields:
 * Show on ticket - displays the category on the ticket
 * Show on select offer - display the category on offer
 
-<figure><img src=".gitbook/assets/image (18) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (18) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Facilities <a href="#facilities" id="facilities"></a>
 
 A new facility can be defined in the **Facilities** tab, by pressing the "New facility" button in the upper right corner of the screen.
 
-<figure><img src=".gitbook/assets/image (19) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (19) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Fields:
 
@@ -58,7 +58,7 @@ Fields:
 * Name - name of the template
 * Facilities - choose the facilities available for the template
 
-<figure><img src=".gitbook/assets/image (21) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (21) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Facilities on web <a href="#facilities-on-web" id="facilities-on-web"></a>
 

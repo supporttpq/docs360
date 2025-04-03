@@ -26,7 +26,7 @@ In the “Service case overview” section, the results list is displayed, with 
 * User – that created the service case
 * Customer name from the booking – by clicking it, a pop-up with the service case history on that customer is shown
 
-<figure><img src="../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (20) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Destination from the booking
 * Hotel from the booking
@@ -39,10 +39,10 @@ Also, in the service case overview, you will be able to see all the services of 
 
 Also, we will find the all service case per customer in the customer details
 
-<figure><img src="../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (21) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In the “Totals” section, statistics are displayed, referring to the results list.
 
 Also, the results list can be exported in a CSV file, by clicking on “Export” button.
 
-<figure><img src="../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (22) (1) (1).png" alt=""><figcaption></figcaption></figure>

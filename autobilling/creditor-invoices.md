@@ -16,7 +16,7 @@ layout:
 
 Under creditor's edit page, you can schedule when the invoices will be created.&#x20;
 
-<figure><img src="../.gitbook/assets/image (24) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (24) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 You can set:&#x20;
 
@@ -64,4 +64,4 @@ The invoice status can have the following flow:&#x20;
 
 To regenerate an invoice, go to finance tab / invoice listing, select the invoice that you want to regenerate and click the button to do this. Click on OK button. The invoice will be regenerated.
 
-<figure><img src="../.gitbook/assets/image (25) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (25) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

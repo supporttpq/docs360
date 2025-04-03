@@ -4,7 +4,7 @@ Hotel Allotment Overview is a feature that shows bed numbers, rooms number, and 
 
 Also if there is a red background on a cell, that means in that date is a stop sale.
 
-<figure><img src=".gitbook/assets/image (9) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (9) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Hotel Allotment Overview <a href="#hotel-allotment-overview" id="hotel-allotment-overview"></a>
 
@@ -30,4 +30,4 @@ Rooms number will show all remaining rooms that can be sold in a period. Also yo
 
 By checking this checkbox, you can view guaranteed room numbers below the allotment line of each room.
 
-<figure><img src=".gitbook/assets/image (10) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (10) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
