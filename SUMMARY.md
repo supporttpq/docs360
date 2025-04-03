@@ -134,6 +134,8 @@
   * [Hotel Layout](hotel/page-7/hotel-layout.md)
   * [Hotel Deposit](hotel/page-7/hotel-deposit.md)
   * [Hotel Activity Log](hotel/page-7/hotel-activity-log.md)
+  * [Room cost](hotel/page-7/room-cost.md)
+  * [Room costs](hotel/page-7/room-costs.md)
 
 ***
 
@@ -141,10 +143,12 @@
 * [Base room types](base-room-types.md)
 * [Stop Sales](stop-sales.md)
 * [Stop Sale Resort](stop-sale-resort.md)
+* [Hotel beds](hotel-beds.md)
 * [Hotel combination](hotel-combination.md)
 * [Hotel Contracts](hotel-contracts.md)
 * [Business Inteligence](business-inteligence.md)
 * [Hotel and transfer confirmation e-mail to suppliers](hotel-and-transfer-confirmation-e-mail-to-suppliers.md)
+* [Page](page.md)
 
 ## Transport
 
@@ -238,6 +242,7 @@
 * [Global search](setup/global-search.md)
 * [Tourpaq Web Booking - Technical documentation](setup/tourpaq-web-booking-technical-documentation.md)
 * [Web service](setup/web-service.md)
+* [Web Hook Configuration](setup/web-hook-configuration.md)
 * [Payment rate rules](setup/payment-rate-rules.md)
 * [Price currency](setup/price-currency.md)
 * [Vouchers](setup/vouchers.md)
