@@ -2,7 +2,7 @@
 
 Communication is used to configure the sending of lists with bookings made for the hotel.
 
-<figure><img src="../../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (31) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In the communication tab,&#x20;
 

@@ -33,5 +33,5 @@ For all these listed categories, filtering can be done for one, several or even 
 
 You have also the possibility to save the view for a future view
 
-<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

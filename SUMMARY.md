@@ -45,6 +45,7 @@
   * [Booking for 2 One Ways](booking/new-booking/booking-for-2-one-ways.md)
   * [Multiple one way flights bookings](booking/new-booking/multiple-one-way-flights-bookings.md)
   * [Multiple transports one room bookings](booking/new-booking/multiple-transports-one-room-bookings.md)
+  * [Hotel Only Bookings](booking/new-booking/hotel-only-bookings.md)
 
 ***
 
@@ -134,6 +135,8 @@
   * [Hotel Layout](hotel/page-7/hotel-layout.md)
   * [Hotel Deposit](hotel/page-7/hotel-deposit.md)
   * [Hotel Activity Log](hotel/page-7/hotel-activity-log.md)
+  * [Room cost](hotel/page-7/room-cost.md)
+  * [Room costs](hotel/page-7/room-costs.md)
 
 ***
 
@@ -141,29 +144,79 @@
 * [Base room types](base-room-types.md)
 * [Stop Sales](stop-sales.md)
 * [Stop Sale Resort](stop-sale-resort.md)
+* [Hotel beds](hotel-beds.md)
+* [Hotel Bed Banks - FAQ](hotel-bed-banks-faq.md)
 * [Hotel combination](hotel-combination.md)
 * [Hotel Contracts](hotel-contracts.md)
 * [Business Inteligence](business-inteligence.md)
+* [Hotel and transfer confirmation e-mail to suppliers](hotel-and-transfer-confirmation-e-mail-to-suppliers.md)
+* [Seats vs Beds](seats-vs-beds.md)
 
 ## Transport
 
-* [Page 8](transport/page-8.md)
+* [Transport creation](transport/page-8.md)
+
+***
+
+* [Transport Dashboard](transport-dashboard.md)
+* [Transport Definition](transport-definition.md)
 
 ## Quality
 
-* [Page 9](quality/page-9.md)
+* [Quality Management](quality/page-9/README.md)
+  * [Questionnaires Schemas](quality/page-9/questionnaires-schemas.md)
+  * [Questionnaires - Setup questions](quality/page-9/questionnaires-setup-questions.md)
+  * [Questionnaire Results](quality/page-9/questionnaire-results.md)
+
+***
+
+* [Service Cases](service-cases/README.md)
+  * [Add new Service Case](service-cases/add-new-service-case.md)
+  * [Reasons](service-cases/reasons.md)
+  * [Notification](service-cases/notification.md)
+  * [Communication (Email & SMS)](service-cases/communication-email-and-sms.md)
+  * [Compensation & Deduction](service-cases/compensation-and-deduction.md)
+  * [Search filters, results, export & stats](service-cases/search-filters-results-export-and-stats.md)
 
 ## Export
 
-* [Page 10](export-1/page-10.md)
+* [Export](export-1/page-10.md)
+* [Lists](export-1/lists.md)
+* [Extras List](export-1/extras-list.md)
+
+***
+
+* [Tee Time extras list](tee-time-extras-list.md)
+* [Flight Transfer Export](flight-transfer-export.md)
 
 ## Users
 
-* [Page 11](users/page-11.md)
+* [Users](users/page-11/README.md)
+  * [User limited view](users/page-11/user-limited-view.md)
+  * [Password expiration](users/page-11/password-expiration.md)
+
+***
+
+* [Company Setup](company-setup.md)
+* [Suppliers](suppliers/README.md)
+  * [Hotel Supplier](suppliers/hotel-supplier.md)
+  * [Extra suplier](suppliers/extra-suplier.md)
+* [Creditor](creditor.md)
+* [Guides](guides/README.md)
+  * [Guide Names](guides/guide-names.md)
+  * [Guide Profiles](guides/guide-profiles.md)
+* [2 Factor Authentication](2-factor-authentication.md)
+* [GDPR (General Data Protection Regulation)](gdpr-general-data-protection-regulation.md)
 
 ## Guest App
 
-* [Page 12](guest-app/page-12.md)
+* [Settings](guest-app/page-12.md)
+
+***
+
+* [Destination - Mobile Guide App](destination-mobile-guide-app.md)
+* [Visit Sun App](visit-sun-app.md)
+* [Weekly Activities](weekly-activities.md)
 
 ## Extras Setup
 
@@ -171,8 +224,34 @@
 
 ## Email Setup
 
-* [Page 14](email-setup/page-14.md)
+* [Ticket Attachments](email-setup/ticket-attachments.md)
+* [Dynamic E-mail/SMS Center](email-setup/page-14.md)
+
+***
+
+* [E-mail/SMS Center Statistics](e-mail-sms-center-statistics.md)
+* [E-mail center](e-mail-center.md)
+* [Email Templates](email-templates.md)
+* [Warning notification rules](warning-notification-rules.md)
+* [Destination SMS Mappings](destination-sms-mappings.md)
+* [Setup for Dynamic E-mail/SMS Center](setup-for-dynamic-e-mail-sms-center.md)
 
 ## Setup
 
-* [Page 15](setup/page-15.md)
+* [Arrival Gateways](setup/page-15.md)
+* [Departure Gateways](setup/departure-gateways.md)
+* [Destination](setup/destination.md)
+* [Resorts](setup/resorts.md)
+* [Departure stat weeks](setup/departure-stat-weeks.md)
+* [System Setup](setup/system-setup.md)
+* [System Setup Groups](setup/system-setup-groups.md)
+* [Creditor Currency Convertor](setup/creditor-currency-convertor.md)
+* [Internal logs](setup/internal-logs.md)
+* [Global search](setup/global-search.md)
+* [Tourpaq Web Booking - Technical documentation](setup/tourpaq-web-booking-technical-documentation.md)
+* [Web service](setup/web-service.md)
+* [Web Hook Configuration](setup/web-hook-configuration.md)
+* [Payment rate rules](setup/payment-rate-rules.md)
+* [Price currency](setup/price-currency.md)
+* [Vouchers](setup/vouchers.md)
+* [Autobilling](setup/autobilling.md)

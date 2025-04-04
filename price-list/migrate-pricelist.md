@@ -4,7 +4,7 @@ Migrate pricelist function allows to make a bulk copy of all pricelists from one
 
 To migrate pricelists, choose Migrate pricelist from the Pricelist menu.&#x20;
 
-<figure><img src="../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (50) (1).png" alt=""><figcaption></figcaption></figure>
 
 * You need to select the source agency you want to migrate from using the “From brand” dropdown. All pricelists from this agency will be copied into the agency selected by the “To brand” dropdown, which will be the destination agency.&#x20;
 * Set Tag option allows defining what tag will be set on all destination pricelists. To do this check the checkbox and select a tag from dropdown. The selected tag will be set on all pricelists on the destination agency. How to define and use pricelist tags is presented in a separate video.&#x20;
@@ -22,7 +22,7 @@ An additional option that can be used in the “source agency” field that can 
 
 Migrations made in the past are logged so you can keep track of these actions. You also have option to search through migrations by clicking “Search Migrations” button.
 
-<figure><img src="../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (51) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;Here you can filter by brands, user who performed the migration and date of migration.&#x20;
 

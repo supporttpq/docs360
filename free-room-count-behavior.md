@@ -22,4 +22,4 @@ At the moment, the exact pricelist rule that is being used/canceled/released by 
 
 A manual recalculation of a pricelist rule free room count values can be triggered by clicking on the magic wand icon highlighted bellow. The recalculation should be instant.
 
-<figure><img src=".gitbook/assets/image (64).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (64) (1).png" alt=""><figcaption></figcaption></figure>

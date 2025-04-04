@@ -26,7 +26,7 @@ For **Transport Rules**, users must:
 
 The system will then update all price lists created with the selected transports. For example, a rule setting **PM1–PM4** for the interval **01-11-2024 to 30-11-2024** will apply to all price lists using transports **CPH-CDG**, **CPH-CDG-X0 THU 4 PP**, covering all hotels at the corresponding destination for agency **Primo Tours**.
 
-<figure><img src=".gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (56) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Resort Rules** can be created in three ways:
 
@@ -55,7 +55,7 @@ The same rule can be defined for different departure intervals.
 
 **Example:** Profit margin rules defined below:
 
-<figure><img src=".gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (57) (1).png" alt=""><figcaption></figcaption></figure>
 
 The value in the price list will be the sum of profit margins from Transport, Resort, and Hotel.
 

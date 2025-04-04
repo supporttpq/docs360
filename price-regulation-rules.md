@@ -6,7 +6,7 @@ To define price regulation rules, go to Price List menu click Price regulation R
 
 Here you can define rules, click Create.&#x20;
 
-<figure><img src=".gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (52) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Setup Name of the rule,&#x20;
 * Code for this rule,&#x20;
@@ -18,6 +18,6 @@ Click save.&#x20;
 
 To use the price list rules, after you have activated the feature and the service runs, you'll go to the Price list, choose the transport, choose a hotel and a room type then click Display. Here you have a column where you can set the rules&#x20;
 
-<figure><img src=".gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (53) (1).png" alt=""><figcaption></figcaption></figure>
 
 Click Save.
