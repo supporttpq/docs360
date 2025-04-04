@@ -45,6 +45,7 @@
   * [Booking for 2 One Ways](booking/new-booking/booking-for-2-one-ways.md)
   * [Multiple one way flights bookings](booking/new-booking/multiple-one-way-flights-bookings.md)
   * [Multiple transports one room bookings](booking/new-booking/multiple-transports-one-room-bookings.md)
+  * [Hotel Only Bookings](booking/new-booking/hotel-only-bookings.md)
 
 ***
 
@@ -149,6 +150,7 @@
 * [Hotel Contracts](hotel-contracts.md)
 * [Business Inteligence](business-inteligence.md)
 * [Hotel and transfer confirmation e-mail to suppliers](hotel-and-transfer-confirmation-e-mail-to-suppliers.md)
+* [Seats vs Beds](seats-vs-beds.md)
 
 ## Transport
 

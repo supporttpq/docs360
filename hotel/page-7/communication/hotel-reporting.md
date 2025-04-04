@@ -13,4 +13,4 @@ Allows the sending of lists to suppliers directly from the hotel. The lists are 
 * Reporting: type of lists sent
 * Empty list: when checked, lists will be sent even if they are empty
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
