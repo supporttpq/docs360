@@ -11,6 +11,6 @@ Under booking menu, click new booking. -> Select the brand.&#x20;
 
 In the discount/supplement bonus code field, insert the bonus code text applicable to this booking and click outside the box to validate the discount.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Click on save to save the booking.
