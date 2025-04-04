@@ -156,6 +156,11 @@
 
 * [Transport creation](transport/page-8.md)
 
+***
+
+* [Transport Dashboard](transport-dashboard.md)
+* [Transport Definition](transport-definition.md)
+
 ## Quality
 
 * [Quality Management](quality/page-9/README.md)
@@ -228,6 +233,7 @@
 * [E-mail center](e-mail-center.md)
 * [Email Templates](email-templates.md)
 * [Warning notification rules](warning-notification-rules.md)
+* [Destination SMS Mappings](destination-sms-mappings.md)
 * [Setup for Dynamic E-mail/SMS Center](setup-for-dynamic-e-mail-sms-center.md)
 
 ## Setup
