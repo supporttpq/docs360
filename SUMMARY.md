@@ -46,6 +46,7 @@
   * [Multiple one way flights bookings](booking/new-booking/multiple-one-way-flights-bookings.md)
   * [Multiple transports one room bookings](booking/new-booking/multiple-transports-one-room-bookings.md)
   * [Hotel Only Bookings](booking/new-booking/hotel-only-bookings.md)
+  * [Transport only Booking](booking/new-booking/transport-only-booking.md)
 
 ***
 
@@ -161,6 +162,10 @@
 * [Transport Dashboard](transport-dashboard.md)
 * [Transport Definition](transport-definition.md)
 * [Transport Layouts](transport-layouts.md)
+* [Transport Matrix](transport-matrix.md)
+* [Transport Price Control](transport-price-control.md)
+* [Transport regulation rules](transport-regulation-rules.md)
+* [Transport reporting](transport-reporting.md)
 
 ## Quality
 

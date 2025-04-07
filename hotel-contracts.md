@@ -19,11 +19,11 @@ The mandatory fields for creating a new contract are:
 
 Resort dropdown contains all available resorts defined per company.
 
-<figure><img src=".gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 After selecting one resort, hotel list is populated.
 
-<figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 You have 2 options:
 
@@ -33,7 +33,7 @@ You have 2 options:
 
 Contract Details:
 
-<figure><img src=".gitbook/assets/image (7) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (7) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Name** - represent name of the contract
 * **Creditor** - Hotel Contract currency = Creditor's currency
@@ -50,19 +50,19 @@ You have 3 options to define a room type:
 
 * **Add New Room Type** - create a new base room type per company
 
-<figure><img src=".gitbook/assets/image (8) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (8) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 All fields will be available to fill in. When importing in Tourpaq, a new base room type is created.
 
 * **Import New Room Type in Tourpaq**
 
-<figure><img src=".gitbook/assets/image (9) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (9) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 No. ordinary beds is calculated in this way: Minimum - Max. Extra Adult - Max. Extra Child
 
 * **Add New Room Type From Existing** - choose one of the exiting base room types defined per company
 
-<figure><img src=".gitbook/assets/image (10) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (10) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 When you use this option, Room Type Code, Room Type Name, Minimim, Maximum, Max. Adult and Max. Child can not be changed. These were defined in Base Room Type.
 
@@ -77,7 +77,7 @@ You can choose from 2 categories:
 
 * **Room Type Supplement**- Double as Single. Each room from "Room Type" can be sold as Single.
 
-<figure><img src=".gitbook/assets/image (11) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (11) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Age and Rank are not allowed for selecting.&#x20;
 
@@ -87,7 +87,7 @@ If "%" is checked, room cost represents percent cost from parent base room type.
 
 It is mandatory a mapping between standard room type and shared room type:
 
-<figure><img src=".gitbook/assets/image (12) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (12) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Room Code represents room sold as single Room. Room Above represents parent room.
 
@@ -95,7 +95,7 @@ Room Code represents room sold as single Room. Room Above represents parent room
 
 * **Product Supplement** - Mini All Inclusive, All Inclusive, Ultra All Inclusive, Breakfast, Diner, Half Board. You can select one of these options as Supplement.
 
-<figure><img src=".gitbook/assets/image (13) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (13) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Mandatories fields:
 

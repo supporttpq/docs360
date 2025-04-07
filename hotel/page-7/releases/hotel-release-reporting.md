@@ -30,7 +30,7 @@ In order to configure the reporting for one hotel you should complete the follow
 
 #### How to add a Daily release scheduler? <a href="#how-to-add-a-daily-release-scheduler" id="how-to-add-a-daily-release-scheduler"></a>
 
-<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Supposedly the service is running this scheduler for the first time on 24.03.2025 and from this point on the scheduler will run every day.
 
