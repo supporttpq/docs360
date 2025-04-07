@@ -2,11 +2,11 @@
 
 Once an offer has been sent, the customer has a certain amount of time until the offer expires.&#x20;
 
-<figure><img src="../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Also the sales agent has a certain amount of time to follow up on this offer. These intervals can be set in the company system set up by using these to fields The default offer availability days and the default offer follow up days.&#x20;
 
-<figure><img src="../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 On each offer these dates are being set automatically. They can also be adjusted manually if needed. An offer that is near its follow up or expiration date appears on the Tourpaq dashboard, so the sales agent has the possibility to manage it more easily. The end goal for any offer proposal is being transformed into a booking order. Or it can be closed with a certain reason.&#x20;
 
@@ -14,7 +14,7 @@ One booking option is for the customer to place the booking himself using the We
 
 The other option is for the sales agent to place the booking in the office admin.&#x20;
 
-<figure><img src="../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In the office, the booking will be prefilled with the transport and hotel details as well as customer information.&#x20;
 

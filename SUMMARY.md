@@ -164,6 +164,7 @@
   * [Automatic Seating](transport/transport/automatic-seating.md)
   * [Communication](transport/transport/communication.md)
   * [Documents](transport/transport/documents.md)
+  * [Passengers informations](transport/transport/passengers-informations.md)
 
 ***
 
@@ -173,6 +174,7 @@
 * [Airline Baggage Allowances](airline-baggage-allowances.md)
 * [Routes](routes.md)
 * [Real Transports](real-transports/README.md)
+  * [Introduction](real-transports/introduction.md)
   * [Dynamic transport baggage](real-transports/dynamic-transport-baggage.md)
   * [Dynamic transport supplement](real-transports/dynamic-transport-supplement.md)
   * [Setup for Transport Dynamic Packaging (GDS)](real-transports/setup-for-transport-dynamic-packaging-gds.md)
@@ -180,6 +182,11 @@
 * [Transport Reporting](transport-reporting.md)
 * [Transport Regulation Rules](transport-regulation-rules.md)
 * [Transport Layouts](transport-layouts.md)
+* [Seating Price Rules](seating-price-rules.md)
+* [Flight Transfer](flight-transfer.md)
+* [Airlines](airlines.md)
+* [Create citizen plane rules](create-citizen-plane-rules.md)
+* [Create citizen plane seats overview](create-citizen-plane-seats-overview.md)
 
 ## Quality
 
