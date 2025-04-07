@@ -4,7 +4,7 @@ Applies to Administrator
 
 This function allows users to automatically change the prices on all pricelists for a transport allotment. The rules are available for the company, and the rules are set on a transport allotment from the Transport –FixQuotas(view) – transport allotment table. For Load Factor usage within the corresponding feature rules, the Factor Matrix and Price Regulation functionalities must not be blocked. Please contact Tourpaq Support for this. The rule has the following 2 sets of fields:
 
-<figure><img src=".gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **General fields** (used for going prices UP) :&#x20;
 
@@ -30,7 +30,7 @@ This function allows users to automatically change the prices on all pricelists 
 
 Load factor is calculated based on the defined Factor Matrix, under Transport -> Factor Matrix tab. Here user can define the load factor based on weeks for a transport. Load Factor for a certain transport is calculated behind and can be checked into Transport->Transport Price Control on the Load Factor tab.
 
-<figure><img src=".gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Based on the load factor, the price regulation rules can be set. Rule can be assign for a departure of a transport under Fix Quota:
 

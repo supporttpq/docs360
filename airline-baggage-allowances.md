@@ -1,8 +1,8 @@
-# Baggage Allowances
+# Airline Baggage Allowances
 
 This page allows users to view, create, edit, and manage baggage allowance information for different airlines.
 
-<figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Overview:**
 
