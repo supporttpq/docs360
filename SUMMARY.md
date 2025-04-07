@@ -155,17 +155,26 @@
 
 ## Transport
 
-* [Transport creation](transport/page-8.md)
+* [All Transports](transport/all-transports.md)
+* [Transport](transport/transport/README.md)
+  * [Transport creation](transport/transport/page-8.md)
+  * [Transport Definition](transport/transport/transport-definition.md)
+  * [Transport Matrix](transport/transport/transport-matrix.md)
+  * [Allotments](transport/transport/allotments.md)
+  * [Automatic Seating](transport/transport/automatic-seating.md)
+  * [Communication](transport/transport/communication.md)
+  * [Documents](transport/transport/documents.md)
 
 ***
 
 * [Transport Dashboard](transport-dashboard.md)
-* [Transport Definition](transport-definition.md)
-* [Transport Layouts](transport-layouts.md)
-* [Transport Matrix](transport-matrix.md)
 * [Transport Price Control](transport-price-control.md)
-* [Transport regulation rules](transport-regulation-rules.md)
-* [Transport reporting](transport-reporting.md)
+* [Transport Payment Rules](transport-payment-rules.md)
+* [Baggage Allowances](baggage-allowances.md)
+* [Page](page.md)
+* [Transport Reporting](transport-reporting.md)
+* [Transport Regulation Rules](transport-regulation-rules.md)
+* [Transport Layouts](transport-layouts.md)
 
 ## Quality
 

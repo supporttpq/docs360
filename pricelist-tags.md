@@ -14,4 +14,4 @@ Here you can administrate the tags.&#x20;
 
 To use it, you can do it from the Price list, add a transport, add hotel and add a room. Click Display. Click on Column Filters, select Tag Ch checkbox, and click Display again. Now you can set a specific offer in o specific departure date and you can also check multiple offers and put the label you want.&#x20;
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

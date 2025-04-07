@@ -60,3 +60,26 @@ The **Resorts** interface provides a structured way to manage resorts associated
 * Hidden resorts can be managed using the **Show Hidden** toggle.
 
 This interface provides an intuitive way to manage resorts and their corresponding arrival gateways efficiently.
+
+### Resort - Photos tab <a href="#resort---photos-tab" id="resort---photos-tab"></a>
+
+Insert multiple photos in one step and sort them by drag and drop.
+
+Fields:
+
+* Title
+* Photo
+* Description
+* Main photo
+
+<figure><img src="../.gitbook/assets/insertResortPhotos-5fdb1cadfbe21144dca89d94d9877745.png" alt=""><figcaption></figcaption></figure>
+
+You can choose multiple images to be saved:
+
+<figure><img src="../.gitbook/assets/uploadingResortPhotos-7d42121311b31492fe6b45a4c30330e3.png" alt=""><figcaption></figcaption></figure>
+
+In case of uploading more than one image, the title and the description field will be saved for each photo with the same values. After save, these fields can be edited from inside the list.
+
+<figure><img src="../.gitbook/assets/editableFieldResortPhotos-e1c3c42024e4c0fa04085d5f64f25fdf.png" alt=""><figcaption></figcaption></figure>
+
+To order the list of photos, press and keep click on the specific row and move cursor up/down to the position desired. Release and then press save to store the ordered list.
