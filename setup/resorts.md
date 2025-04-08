@@ -4,7 +4,7 @@
 
 The **Resorts** interface provides a structured way to manage resorts associated with different arrival gateways. This system allows users to search, filter, and manage resort data efficiently.
 
-<figure><img src="../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (21) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Features
 
@@ -54,7 +54,7 @@ The **Resorts** interface provides a structured way to manage resorts associated
 
 &#x20;
 
-<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
 
 * The arrival gateway column ensures proper mapping between resorts and transportation hubs.
 * Hidden resorts can be managed using the **Show Hidden** toggle.

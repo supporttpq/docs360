@@ -251,7 +251,15 @@
 
 ## Extras Setup
 
-* [Extras](extras-setup/page-13.md)
+* [Extras](extras-setup/page-13/README.md)
+  * [Prices](extras-setup/page-13/prices.md)
+  * [Resources](extras-setup/page-13/resources.md)
+  * [Allotments](extras-setup/page-13/allotments.md)
+  * [Sold out behaviour](extras-setup/page-13/sold-out-behaviour.md)
+  * [Extra package](extras-setup/page-13/extra-package.md)
+  * [Attributes](extras-setup/page-13/attributes.md)
+  * [Communication](extras-setup/page-13/communication.md)
+  * [Early booking/Stay and pay and Special Early Booking/Stay and pay](extras-setup/page-13/early-booking-stay-and-pay-and-special-early-booking-stay-and-pay.md)
 
 ***
 

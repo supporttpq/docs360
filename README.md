@@ -1,10 +1,5 @@
 ---
-cover: .gitbook/assets/Tourpaq Logo.jpg
-coverY: 0
 layout:
-  cover:
-    visible: true
-    size: hero
   title:
     visible: true
   description:
