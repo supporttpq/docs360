@@ -179,7 +179,6 @@
   * [Dynamic transport supplement](real-transports/dynamic-transport-supplement.md)
   * [Setup for Transport Dynamic Packaging (GDS)](real-transports/setup-for-transport-dynamic-packaging-gds.md)
 * [Real Transport Dashboard](real-transport-dashboard.md)
-* [Transport Reporting](transport-reporting.md)
 * [Transport Regulation Rules](transport-regulation-rules.md)
 * [Transport Layouts](transport-layouts.md)
 * [Seating Price Rules](seating-price-rules.md)
@@ -187,9 +186,11 @@
   * [Transfer listing](flight-transfer/transfer-listing.md)
   * [Flight Transfer List](flight-transfer/flight-transfer-list.md)
   * [Flight Transfer Export](flight-transfer/flight-transfer-export.md)
+* [Transport Reporting](transport-reporting.md)
 * [Airlines](airlines.md)
 * [Create citizen plane rules](create-citizen-plane-rules.md)
 * [Create citizen plane seats overview](create-citizen-plane-seats-overview.md)
+* [Flexible Transports](flexible-transports.md)
 
 ## Quality
 
@@ -250,7 +251,25 @@
 
 ## Extras Setup
 
-* [Page 13](extras-setup/page-13.md)
+* [Extras](extras-setup/page-13.md)
+
+***
+
+* [Extras Attributes](extras-attributes.md)
+* [Custom Choices](custom-choices.md)
+* [Extras Category](extras-category.md)
+* [Discounts/Supplements](discounts-supplements.md)
+* [Disc/Suppl Categories](disc-suppl-categories.md)
+* [Ticket Categories](ticket-categories.md)
+* [Giftcards](giftcards.md)
+* [Daily Programs](daily-programs.md)
+* [Campaigns](campaigns.md)
+* [Generic Product Price Rules](generic-product-price-rules.md)
+* [Media](media.md)
+* [Cancellation Rules](cancellation-rules.md)
+* [Cancellation Insurance](cancellation-insurance.md)
+* [Catalogs](catalogs.md)
+* [Travel Insurance](travel-insurance.md)
 
 ## Email Setup
 
