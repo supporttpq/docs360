@@ -30,7 +30,7 @@ Generates a list which will contain (for homebounds and outbouns):
 * bold value- if buses are confirmed/confirmation is checked
 * underlined value- if all pax are seated/if there are still pax booked on a given flight/resort transfer
 
-<figure><img src=".gitbook/assets/ftr10-e5d703ed162ac3696181e4d9df53d415.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/ftr10-e5d703ed162ac3696181e4d9df53d415 (1).png" alt=""><figcaption></figcaption></figure>
 
 Filters:
 
@@ -95,7 +95,7 @@ Information is grouped by:
 * Number of passengers per flight for each transfer
 * Cost per transfer
 
-<figure><img src=".gitbook/assets/ftr13-4e3a0bdcee6bba1279b3627c740e401b.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/ftr13-4e3a0bdcee6bba1279b3627c740e401b (1).png" alt=""><figcaption></figcaption></figure>
 
 Filters:
 

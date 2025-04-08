@@ -2,7 +2,7 @@
 
 The **Activity Log** records changes made to room allotments in the system. This log helps track modifications to hotel room availability and ensures accountability for updates made in the system.
 
-<figure><img src="../../.gitbook/assets/image (16) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Key Elements in the Image:**
 

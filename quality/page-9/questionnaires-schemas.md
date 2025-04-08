@@ -6,11 +6,11 @@ Upon the responses of the customers, those services can be improved.&#x20;
 
 This section helps manage different **survey schemas** for collecting feedback or information, primarily for **a Brand**. Users can view, edit, or delete surveys from this interface.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Survey ID:** A unique identifier for each questionnaire. If you clik on the ID, you will be able to edit the survey (General information, Questions etc)
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Description:** Provides details about each questionnaire
 * **Eye Icon (👁️):** Likely used to **view** survey details.

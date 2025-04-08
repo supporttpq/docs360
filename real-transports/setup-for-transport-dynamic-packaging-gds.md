@@ -12,9 +12,9 @@ GDS transports are available only if the transport is set to use dynamic itinera
 
 When using GDS flights, **Legs** need a general setting like this.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The rest of the settings for configuring **Legs** are the same as those used for Real Transports
 
@@ -28,7 +28,7 @@ Every night the system is checking for the best flight available for each depart
 
 The flight found can be views under fix quota/view fligths:
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Alternative flights​ <a href="#alternative-flights" id="alternative-flights"></a>
 
