@@ -46,6 +46,7 @@
   * [Multiple one way flights bookings](booking/new-booking/multiple-one-way-flights-bookings.md)
   * [Multiple transports one room bookings](booking/new-booking/multiple-transports-one-room-bookings.md)
   * [Hotel Only Bookings](booking/new-booking/hotel-only-bookings.md)
+  * [Transport only Booking](booking/new-booking/transport-only-booking.md)
 
 ***
 
@@ -154,12 +155,42 @@
 
 ## Transport
 
-* [Transport creation](transport/page-8.md)
+* [All Transports](transport/all-transports.md)
+* [Transport](transport/transport/README.md)
+  * [Transport creation](transport/transport/page-8.md)
+  * [Transport Definition](transport/transport/transport-definition.md)
+  * [Transport Matrix](transport/transport/transport-matrix.md)
+  * [Allotments](transport/transport/allotments.md)
+  * [Automatic Seating](transport/transport/automatic-seating.md)
+  * [Communication](transport/transport/communication.md)
+  * [Documents](transport/transport/documents.md)
+  * [Passengers informations](transport/transport/passengers-informations.md)
 
 ***
 
 * [Transport Dashboard](transport-dashboard.md)
-* [Transport Definition](transport-definition.md)
+* [Transport Price Control](transport-price-control.md)
+* [Transport Payment Rules](transport-payment-rules.md)
+* [Airline Baggage Allowances](airline-baggage-allowances.md)
+* [Routes](routes.md)
+* [Real Transports](real-transports/README.md)
+  * [Introduction](real-transports/introduction.md)
+  * [Dynamic transport baggage](real-transports/dynamic-transport-baggage.md)
+  * [Dynamic transport supplement](real-transports/dynamic-transport-supplement.md)
+  * [Setup for Transport Dynamic Packaging (GDS)](real-transports/setup-for-transport-dynamic-packaging-gds.md)
+* [Real Transport Dashboard](real-transport-dashboard.md)
+* [Transport Regulation Rules](transport-regulation-rules.md)
+* [Transport Layouts](transport-layouts.md)
+* [Seating Price Rules](seating-price-rules.md)
+* [Flight Transfer](flight-transfer/README.md)
+  * [Transfer listing](flight-transfer/transfer-listing.md)
+  * [Flight Transfer List](flight-transfer/flight-transfer-list.md)
+  * [Flight Transfer Export](flight-transfer/flight-transfer-export.md)
+* [Transport Reporting](transport-reporting.md)
+* [Airlines](airlines.md)
+* [Create citizen plane rules](create-citizen-plane-rules.md)
+* [Create citizen plane seats overview](create-citizen-plane-seats-overview.md)
+* [Flexible Transports](flexible-transports.md)
 
 ## Quality
 
@@ -220,7 +251,33 @@
 
 ## Extras Setup
 
-* [Page 13](extras-setup/page-13.md)
+* [Extras](extras-setup/page-13/README.md)
+  * [Prices](extras-setup/page-13/prices.md)
+  * [Resources](extras-setup/page-13/resources.md)
+  * [Allotments](extras-setup/page-13/allotments.md)
+  * [Sold out behaviour](extras-setup/page-13/sold-out-behaviour.md)
+  * [Extra package](extras-setup/page-13/extra-package.md)
+  * [Attributes](extras-setup/page-13/attributes.md)
+  * [Communication](extras-setup/page-13/communication.md)
+  * [Early booking/Stay and pay and Special Early Booking/Stay and pay](extras-setup/page-13/early-booking-stay-and-pay-and-special-early-booking-stay-and-pay.md)
+
+***
+
+* [Extras Attributes](extras-attributes.md)
+* [Custom Choices](custom-choices.md)
+* [Extras Category](extras-category.md)
+* [Discounts/Supplements](discounts-supplements.md)
+* [Disc/Suppl Categories](disc-suppl-categories.md)
+* [Ticket Categories](ticket-categories.md)
+* [Giftcards](giftcards.md)
+* [Daily Programs](daily-programs.md)
+* [Campaigns](campaigns.md)
+* [Generic Product Price Rules](generic-product-price-rules.md)
+* [Media](media.md)
+* [Cancellation Rules](cancellation-rules.md)
+* [Cancellation Insurance](cancellation-insurance.md)
+* [Catalogs](catalogs.md)
+* [Travel Insurance](travel-insurance.md)
 
 ## Email Setup
 

@@ -18,7 +18,7 @@ Autobilling settings for hotels in Tourpaq are done in every hotel in part.&#x20
 
 They are done in the autobilling section on the Hotel General page.&#x20;
 
-<figure><img src="../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * The automatic billing checkbox activates the setting.&#x20;
 * A creditor is always required.&#x20;

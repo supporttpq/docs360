@@ -16,7 +16,7 @@ layout:
 
 Applies for Administrator and Financial
 
-<figure><img src=".gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This function allows the exporting of detailed information regarding bookings from the system (information contained is listed below), using the following filters:
 

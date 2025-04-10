@@ -2,11 +2,11 @@
 
 It must be possible to add pictures and documents for a hotel.
 
-<figure><img src="../../.gitbook/assets/image (17) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 To add pictures in the photos tab, you need to click Create, click on add files, select photos you want to add, then click open and start upload. Click on Save button and now you have the image insert.
 
-<figure><img src="../../.gitbook/assets/image (18) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * We can insert image title and a short description for the image.
 * We can choose if this photo is a main photo. Main photo is the photo that will be displayed for the hotel.

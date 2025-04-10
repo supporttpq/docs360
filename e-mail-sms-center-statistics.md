@@ -1,6 +1,6 @@
 # E-mail/SMS Center Statistics
 
-<figure><img src=".gitbook/assets/image (24) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (24) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Dynamic E-Mail / SMS Statistic is a new feature released within the Tourpaq v6.2. Its purpose is to emphasize the overall functioning of the Dynamic E-Mail/SMS feature.
 
