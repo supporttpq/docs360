@@ -16,13 +16,13 @@ In here the **Seat types** and the **Seat lists** are created.
 
 ### Seat type <a href="#seat-type" id="seat-type"></a>
 
-<figure><img src=".gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Seat list <a href="#seat-list" id="seat-list"></a>
 
 Seat list are generated from here according to the airplane specifications.
 
-<figure><img src=".gitbook/assets/image (5) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Rows** – The number of rows in the seating arrangement.&#x20;
 * **Columns** – The number of columns in each row.&#x20;
@@ -42,7 +42,7 @@ Seat lists can be edited by clicking on the **Assign seats** button. The followi
 
 If the **Default seat type** option has been chosen, all seats will be of the selected type.
 
-<figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Layouts <a href="#layouts" id="layouts"></a>
 
@@ -50,11 +50,11 @@ Allows the user to set up the interior of the airplane and the seat places.
 
 To create a new layout, go to Transport Layouts menu and  use Create **New layout** button.
 
-<figure><img src=".gitbook/assets/image (7) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The user is sent the to the Layout editor section where he can design the airplane interior according to his wish.
 
-<figure><img src=".gitbook/assets/image (8) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The first step is naming the section and selecting the **Seat list** from those already created.
 
@@ -62,7 +62,7 @@ Also, the user can copy an already existing layout.
 
 The user can begin configuring the layout by using the **Place automatically** option. This will generate a standard airplane section which the user can edit.
 
-<figure><img src=".gitbook/assets/image (9) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (9) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Elements can be moved by clicking and dragging them to their desired place. The width of the airplane is given by the width of the nose and tail. Please have them of the same width and on the roughly same axys, as the body of the airplane is automatically created by taking into account the nose and tail's positions and width.
 
@@ -94,7 +94,7 @@ This is done in the **Transport** from the **Layout** tab.
 
 Seat layouts can be assigned for each departure and arrival flights in part. Seat layouts can be different from flight to flight, depending on the transport type used.
 
-<figure><img src=".gitbook/assets/image (10) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (10) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Layouts can be changed, but the new layout needs to have the same or a higher number of seat than the existing layout.
 
@@ -104,15 +104,15 @@ To use the seats in bookings, a new extra category is needed along with a new ex
 
 When a booking is made, after the passengers have been saved, a new tab will appear in the booking, named **Transport seating**. From there seats can be selected for passengers.
 
-<figure><img src=".gitbook/assets/image (11) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (11) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 On the passenger grid, the seating will look like this:
 
-<figure><img src=".gitbook/assets/image (12) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (12) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 On the ticket, seats will look like this:
 
-<figure><img src=".gitbook/assets/image (13) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (13) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Transport seating is also available for real transports and follow the same rules. The only difference is that the layouts have to be assigned on the real transport and not the charter.
 
@@ -126,7 +126,7 @@ That means seat selected on a booking created with child transport will be displ
 
 Transport seating empty seats feature allows the customer to reserve extra seats on a plane. It can be activated from SuperAdmin.
 
-<figure><img src=".gitbook/assets/image (14) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (14) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **How to set up seating for empty seats**
 
@@ -140,11 +140,11 @@ For the change to be successfully saved, the AOT column should be the sum betwee
 
 Plus, it needs to modify **“GESH”**, too, in order to have empty seats on homebound.
 
-<figure><img src=".gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (15) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Second**, define the price rules for empty seats, from TRANSPORT -> SEATING PRICE RULES
 
-<figure><img src=".gitbook/assets/image (16) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (16) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **How to book empty seats**
 
@@ -154,7 +154,7 @@ To use transport seating empty seats feature on the booking, go to the "Transpor
 
 Notice that in the content table, the price for normal and empty seats are displayed for each seat type.
 
-<figure><img src=".gitbook/assets/image (17) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (17) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 First, the selection is enabled for the normal seats. After at least a passenger from the booking is assigned to a normal seat, the empty seats can be chosen too.
 
@@ -178,7 +178,7 @@ Plus, on the ticket, the empty seats selection is displayed separately for each 
 
 This feature will allow the user to disable the transport seating on WEB on a specific transport type: plane, train, or bus. Still, the seating will allow the seating in Office. This setting is on the Seating Product.
 
-<figure><img src=".gitbook/assets/image (10) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (10) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Restricted Seating <a href="#restricted-seating" id="restricted-seating"></a>
 
@@ -186,7 +186,7 @@ This feature permits to limit the capacity of the customer to choose the seats i
 
 * **No empty seat should be left empty on the window.**
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **No seat should be left empty between two passengers on a row.**
 

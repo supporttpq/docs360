@@ -16,7 +16,7 @@ layout:
 
 Go to users / suppliers&#x20;
 
-<figure><img src="../.gitbook/assets/image (22) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (22) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Select the supplier.&#x20;
 * Go to Handling section&#x20;
@@ -28,7 +28,7 @@ Click on save&#x20;
 
 Go to New Price&#x20;
 
-<figure><img src="../.gitbook/assets/image (23) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (23) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Set the arrival date&#x20;
 * The booking dates&#x20;

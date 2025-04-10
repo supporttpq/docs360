@@ -127,7 +127,7 @@ Additional settings - allows and give some additional permission to the user dep
 * Allow to view Internal Logs
 * Allow User To UnApprove ExtraOrder Refunds
 
-<figure><img src=".gitbook/assets/image (28) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (28) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Automated Setup <a href="#automated-setup" id="automated-setup"></a>
 

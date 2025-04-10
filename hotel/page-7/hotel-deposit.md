@@ -2,7 +2,7 @@
 
 It can be set in the _Hotel/Deposit_ tab.
 
-<figure><img src="../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 A deposit needs the following fields to be set:
 
@@ -15,4 +15,4 @@ Deposits are paid at a date agreed upon in the contract between companies/agenci
 
 A new function has been added here, **Special deposit rule**. It is used to precalculate the deposit amount for more deposit dates. It requires allotments and costs of the rooms to be set in the hotel.
 
-<figure><img src="../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

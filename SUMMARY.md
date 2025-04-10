@@ -260,6 +260,7 @@
   * [Attributes](extras-setup/page-13/attributes.md)
   * [Communication](extras-setup/page-13/communication.md)
   * [Early booking/Stay and pay and Special Early Booking/Stay and pay](extras-setup/page-13/early-booking-stay-and-pay-and-special-early-booking-stay-and-pay.md)
+  * [Teetime](extras-setup/page-13/teetime.md)
 
 ***
 

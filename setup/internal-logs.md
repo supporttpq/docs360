@@ -6,7 +6,7 @@ It is found in Setup / Internal logs.&#x20;
 
 It is used to view actions performed by different users in Tourpaq.&#x20;
 
-<figure><img src="../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (26) (1).png" alt=""><figcaption></figcaption></figure>
 
 You can select the starting change date and then the end change date.&#x20;
 

@@ -22,11 +22,11 @@ Fields for creating a new Transport Operator:
 * Email - email of the operator
 * Airports - airports assigned to this operator
 
-<figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 After this, in the **Bus Catalogue** you can define the means of transport at the disposal of the operator. They can be cars, vans, buses etc.
 
-<figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Routes​ <a href="#routes" id="routes"></a>
 
@@ -49,11 +49,11 @@ When selecting the **Resort**, you are given the option to choose between all **
 
 You can assign more than one **Transport operator** per route.
 
-<figure><img src="../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Route names and codes are created by adding the names and codes of the **Arrivals** and **Resorts** in the order they have been set on the route.
 
-<figure><img src="../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Stops​ <a href="#stops" id="stops"></a>
 
@@ -63,7 +63,7 @@ They are defined on a resort basis. Each **Stop** can have one or more hotels as
 
 Likewise, a **Resort** can have more than 1 **Stop**
 
-<figure><img src="../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 When adding a hotel, you have to also select the direction. This can be
 
@@ -71,11 +71,11 @@ When adding a hotel, you have to also select the direction. This can be
 * Homebound
 * Both
 
-<figure><img src="../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 It is recommended if you have more than 1 **Stop** per resort to give them different names in order to differentiate them.
 
-<figure><img src="../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Route prices​ <a href="#route-prices" id="route-prices"></a>
 
@@ -83,13 +83,13 @@ This is the amount the company pays for the services of the transport operator.
 
 They can be defined per Agency, Operator, Bus and Route.
 
-<figure><img src="../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Flight Transfers​ <a href="#flight-transfers" id="flight-transfers"></a>
 
 This part handles the planning for each bus in particular.
 
-<figure><img src="../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (16) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Airport - the Arrival for the planning
 * Departure Date: - date for the planning
@@ -113,7 +113,7 @@ When an Airport is selected, the system will automatically load the first **Tran
 
 After the plan has been created, it can be expanded from the blue arrow at the front of the line. From there you can plan the route of the bus in detail and manage the passengers that are loaded and unloaded into it along the way.
 
-<figure><img src="../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (17) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The feature was developed with the resort as the point of departure. As such the first column is the **Homebound** column, used for planning the route from the resorts to the airport. The **Outbound** column is used to plan the route from the airport to the resorts.
 
@@ -121,10 +121,10 @@ The columns contain the resorts define on the route, flight numbers of the trans
 
 After all these details have been inserted, the schedule fro stops can be made, meaning the time the buss bill arrive at each of the stops along the way. This is done with the help of the **Stop Times** buttons for each column.
 
-<figure><img src="../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (19) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Also, passengers can be assigned to the bus with the **Seating** button.
 
-<figure><img src="../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (20) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Once a passenger has been checked, his name will disappear from the list showing that he has been seated in the bus.
