@@ -18,7 +18,7 @@ layout:
 
 The "Invoice Hotel Payments" interface provides a detailed summary of hotel booking payments associated with invoices. It allows users to filter, view, and export payment details based on various parameters.
 
-<figure><img src=".gitbook/assets/image (27) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (27) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Features
 

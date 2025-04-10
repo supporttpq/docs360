@@ -38,7 +38,7 @@ Filters:
 * Departure Date To
 * Arrivals
 
-<figure><img src=".gitbook/assets/image (26) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (26) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Transfer Airport Report PDF/Excel <a href="#transfer-airport-report-pdfexcel" id="transfer-airport-report-pdfexcel"></a>
 

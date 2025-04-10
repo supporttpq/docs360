@@ -2,7 +2,7 @@
 
 Here the user can generate and export Tee Time data
 
-<figure><img src=".gitbook/assets/image (25) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (25) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Main Sections**
 

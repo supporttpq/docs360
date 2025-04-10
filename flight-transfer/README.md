@@ -10,7 +10,7 @@ The first step in using this feature is to create a Transport Operator. This is 
 
 A Transport Operator provides means of transport from the arrival place to the resort and viceversa.
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Fields for creating a new Transport Operator:
 
@@ -22,9 +22,9 @@ Fields for creating a new Transport Operator:
 
 After this, in the **Bus Catalogue** you can define the means of transport at the disposal of the operator. They can be cars, vans, buses etc.
 
-<figure><img src="../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Routes <a href="#routes" id="routes"></a>
 
@@ -45,7 +45,7 @@ When selecting the **Resort**, you are given the option to choose between all **
 
 You can assign more than one **Transport operator** per route.
 
-<figure><img src="../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Route names and codes are created by adding the names and codes of the **Arrivals** and **Resorts** in the order they have been set on the route. The flow for creating a route is the following:
 
@@ -64,9 +64,9 @@ They are defined on a resort basis. Each **Stop** can have one or more hotels as
 
 Likewise, a **Resort** can have more than 1 **Stop**
 
-<figure><img src="../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 It is recommended if you have more than 1 **Stop** per resort to give them different names in order to differentiate them.
 
@@ -76,7 +76,7 @@ This is the amount the company pays for the services of the transport operator.
 
 They can be defined per Agency, Operator, Bus and Route.
 
-<figure><img src="../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Flight Transfers <a href="#flight-transfers" id="flight-transfers"></a>
 

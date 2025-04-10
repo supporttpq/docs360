@@ -6,7 +6,7 @@ description: >-
 
 # Offers
 
-<figure><img src="../.gitbook/assets/image (28) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (28) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### &#x20;**Search Filters**&#x20;
 
