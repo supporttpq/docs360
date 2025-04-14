@@ -74,7 +74,7 @@ A manual discount/supplement will be manually chosen for a passenger; it can be 
 
 #### **Overview**
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 * Discount or Suppl: choose between either discount or supplement behaviour
 * General/Specified: choose between the general or specificate behaviour
@@ -97,7 +97,7 @@ A manual discount/supplement will be manually chosen for a passenger; it can be 
 * Include in basic price: add the price of the supplement to the price of the room, while hiding it from the guest
 * Used for price adjust:
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The entities having this checkbox active will:
 
@@ -129,7 +129,7 @@ The entities having this checkbox active will:
 
 Prices are defined for certain periods of time, periods that will consider the departure date of a booking. If defined here, this price will overrule the general price.&#x20;
 
-<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 In the Discount/supplements general window, go to the Prices tab and click on New Price.&#x20;
 
@@ -154,7 +154,7 @@ In the Discount/supplements general window, go to the Prices tab and click on Ne
 
 Any discount/supplement can be removed from selling by creating a stop sale interval for it. To do that, just go to Stop sale interval tab.&#x20;
 
-<figure><img src=".gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Click new interval&#x20;
 * Set the start date and stop date for the interval in which the discount cannot be sold.&#x20;
@@ -177,7 +177,7 @@ In the discount/supplement general window, go to Resources tab.&#x20;
 
 Here we can select the resource type from the dropdown: destination, resort, hotel, room, transport, real transport.&#x20;
 
-<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 Resources are used to limit the availability of discount/supplement to the selected entities.&#x20;
 
@@ -199,7 +199,7 @@ After all these are set, click on save resources.
 
 On Discount/supplement General window, go to Photos tab:
 
-<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Click on Add picture,&#x20;
 * Click on browse,&#x20;
@@ -224,7 +224,7 @@ There are two scenarios to use this feature:&#x20;
 
 Other destinations or booking dates outside the discount setting will not have the product auto selected or free of charge.&#x20;
 
-<figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 Go to links tab.&#x20;
 
@@ -247,7 +247,7 @@ In Discount/supplement general window, go to Brands tab and choose the brand tha
 
 A coded discount or bonus code discount is a discount given to guests during a campaign when they use a certain code during the booking process.
 
-<figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 To set a coded discount, first set the code name, plain text, list text and bonus code name. The text chosen for the bonus code has to be between 4 and 20 characters long&#x20;
 

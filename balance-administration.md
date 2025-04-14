@@ -101,7 +101,7 @@ The **GdsPayments** section allows users to track and manage payments related to
 
 The refund process allows users to return payments to customers when there is a negative balance in the system.
 
-<figure><img src=".gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Filter and Select the Seller (Optional):**
 

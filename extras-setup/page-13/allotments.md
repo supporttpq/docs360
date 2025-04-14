@@ -20,15 +20,15 @@ Linked to Transport Allotment is an extra allotment type given only to passenger
 
 To use it properly the user must create a new extra and select **Linked to transport**.
 
-<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 After the general settings have been set, and the extra saved, the next step is setting the brand and establishing the prices and resources. At the **Resource** tab, a must is setting the **Transport** filter.
 
-<figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The next step is setting up the allotments.
 
-<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 As long as the transport resource is selected, there is no need for a start and end date, these beeing defined by the transport fix quota. When setting the number of products (Al1/Al2/Al3/Al4), the user must take into account that the values will be summed up. For example, if, Al1=30, Al2=20, AI3=10 and the rest are 0, the total sum will be 60.
 

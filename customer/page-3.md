@@ -16,18 +16,18 @@ layout:
 
 Applies for Administrator
 
-The customer center module allows the user to search for customers, see the bonus packages, see the customer dashboard and catalog order.
+The customer center module enables users to search for customers, view bonus packages, access the customer dashboard, and place catalog orders.
 
 ### **Find customer**
 
 Can search for one or more customers using the filters:
 
-* Customer no
-* First name
-* Last name
+* Customer no - unique identify number for each customer
+* First name of the customer
+* Last name of the customer
 * Company
-* Email
-* Phone
+* Email - customer email
+* Phone - customer phone number
 * Mobile
 * Fax
 * Zip Code
