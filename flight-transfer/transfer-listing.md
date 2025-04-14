@@ -22,7 +22,7 @@ Fields for creating a new Transport Operator:
 * Email - email of the operator
 * Airports - airports assigned to this operator
 
-<figure><img src="../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 After this, in the **Bus Catalogue** you can define the means of transport at the disposal of the operator. They can be cars, vans, buses etc.
 

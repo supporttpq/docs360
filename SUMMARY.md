@@ -4,10 +4,6 @@
 
 * [Dashboard](README.md)
 
-***
-
-* [Main dashboard setup](main-dashboard-setup.md)
-
 ## Notifications
 
 * [Notification](notifications/notification.md)
@@ -47,6 +43,10 @@
   * [Multiple transports one room bookings](booking/new-booking/multiple-transports-one-room-bookings.md)
   * [Hotel Only Bookings](booking/new-booking/hotel-only-bookings.md)
   * [Transport only Booking](booking/new-booking/transport-only-booking.md)
+  * [Child Price](booking/new-booking/child-price.md)
+  * [A la Carte](booking/new-booking/a-la-carte/README.md)
+    * [General Description](booking/new-booking/a-la-carte/general-description.md)
+    * [Packages](booking/new-booking/a-la-carte/packages.md)
 
 ***
 
@@ -61,6 +61,8 @@
   * [Select text for Offers](offers/select-text-for-offers.md)
   * [Customer Offer SMS template](offers/customer-offer-sms-template.md)
   * [Customer offer automatic flow](offers/customer-offer-automatic-flow.md)
+* [Campaign Statistics](campaign-statistics.md)
+* [Live Offer Confirmation](live-offer-confirmation.md)
 
 ## Customer
 

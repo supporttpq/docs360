@@ -16,188 +16,100 @@ layout:
 
 The dashboard is the application start page. The main reason for this page is to receive information about the booking system quickly.
 
-The Dashboard includes the following areas:
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-* Unpaid bookings
-* Upsale
-* Overbookings Outbound
-* Overbookings Inbound
-* Overbookings Hotel
-* Overbookings Rooms
-* Seats vs Beds
-* Transport Warnings
-* Warnings
-* Error Bookings
-* Error discount
-* Waitlist
-* GDS Queue
-* GDS Ready For Submit
-* Not Generated Vouchers
-* Hotel Special Offers
-* Extra Special Offers
-* PrList Unlock
-* Unbooked Guar Rooms
-* Hotel Sold Out
-* HCW
-* Q Manag
-* Stop Sales
-* Sold Out PLTAs
-* Refund Money
-* Campaign Alarm
-* Wrong PltaID Pass
-* Extras with Allotments
+This dashboard provides a comprehensive overview of the sales and customer activity. The data is segmented into various widgets, offering insights into bookings, destinations, revenue, top-performing entities, and operational alerts.
 
-### **Unpaid bookings**
+### Filter Controls&#x20;
 
-This area represents a table with bookings that are selected by the following criteria:
+* **Booking Period:** The selected date range during which bookings occurred.
+* **Users**: Filter dropdown to select specific users.
+* **Brands**: Selection for filtering by brand.
+* **Clear**: Button to reset applied filters.
 
-* The booking must belong to the current selected agency (in case no agency is selected it will be taken the default agency)
-* The customer didn’t pay the amount before the due date minus PDO (payment dashboard overdue. The number of days and this value are set under the System Setup menu by the user.)
+### &#x20;Overview Widgets
 
-Note: If the Due date is 17-05-2010, PDO is 4 and the booking is not paid before 13-05-2010 the booking will be shown in the table.
+a. **Offers**
 
-In case the departure date of the booking is within 10 days and is unpayd the booking will appear in the table when the criteria due date minus one day is met.
+* **Total Offers**: Number of total offers made to customers.
+* **Active**: Offers that are still valid and awaiting customer response.
+* **Unsold**: Offers that did not convert into bookings.
+* **Sold**: Offers that successfully converted into bookings.
+* **Hit Rate**: The percentage of sold offers vs.
 
-Table 1: Unpaid booking column description
+b. **Service Cases**
 
-| Column Name      | Value Type                        | Description                                                                                        |
-| ---------------- | --------------------------------- | -------------------------------------------------------------------------------------------------- |
-| Booking no       | number                            | It’s the unique number identifier of a booking. It’s a hyper link that points to the Booking Page. |
-| Due date         | date formated like:day-month-year | Billing due date                                                                                   |
-| Departure Date   | date formated like:day-month-year | Date of departure                                                                                  |
-| Customer         | text                              | Full name name of the customer first name and last name.                                           |
-| Booking total    | number                            | Booking price.                                                                                     |
-| Paid amount      | number                            | Amount payed.                                                                                      |
-| Balance          | number                            | Outstanding amount of payment                                                                      |
-| Overdue          | text                              | Payment deadline                                                                                   |
-| Due amount       | number                            | Ammount to be paide until the current due date.                                                    |
-| Payment comments | text                              | Comments added by user                                                                             |
-| Admin comments   | text                              | Comments added by Super administrator                                                              |
+* **New**: Cases newly reported or created.
+* **Closed**: Cases that have been resolved.
+* **In Progress**: Currently being worked on.
+* **Waiting**: On hold or pending further action.
 
-### **Upsale**
+c. **Questionnaires**
 
-This area shows bookings that haven't chosen all available products(including hotel room and transport seating) and sellers can contact them and ask if they would like any more products.
+**Total**: Number of feedback or survey forms received from customers.
 
-### **Overbooking outbound**
+d. **Customers**
 
-A booking is overbooked, when the transport allotment that the booking is assigned to, has more passengers than the seats allowed.
+* **Total**: Number of customers during the selected period.
+* **New**: First-time customers.
+* **Recurring**: Returning customers.
 
-| Booking no    | Number | It’s the unique number identifier of a booking. It’s a hyper link that points to the booking page |
-| ------------- | ------ | ------------------------------------------------------------------------------------------------- |
-| Transport     | text   | Code of transport                                                                                 |
-| Resort        | text   | Code of resort                                                                                    |
-| Customer      | text   | Full name of the customer                                                                         |
-| Passengers no | number | Total number of the passengers of current booking.                                                |
-| Seats missing | number | Seats that transport that are missing.                                                            |
+e. **Notifications**
 
-### **Overbooking Inbound**
+### Sales Performance
 
-Same as **Overbooking Outbound**.
+**a. Sales**
 
-### **Overbooking Hotel**
+* **Bookings**: Total number of successful bookings.
+* **Pax**: Total number of passengers (not necessarily equal to bookings).
+* **Change %**: Comparison with previous period (in this case, +68%).
 
-A booking is overbooked, when the hotel that the booking is assigned to, has more passengers than the room available.
+**b. Bar Chart**
 
-| Booking no    | Number | It’s the unique number identifier of a booking. It’s a hyper link that points to the booking page |
-| ------------- | ------ | ------------------------------------------------------------------------------------------------- |
-| Transport     | text   | Code of transport                                                                                 |
-| Resort        | text   | Code of resort                                                                                    |
-| Customer      | text   | Full name of the customer                                                                         |
-| Passengers no | number | Total number of the passengers of current booking.                                                |
-| Seats missing | number | Rooms that are missing in current hotel.                                                          |
+* **X-Axis**: Weekly time periods (e.g., 17/3–23/3/2025).
+* **Y-Axis**: Number of:
+  * **PAX**: (Blue) Total passengers.
+  * **Bookings**: (Dark blue) Number of bookings.
+  * **New Offers**: (Green) Number of new offers made in that week.
 
-### **Overbooking Room**
+**c. Guest on Destinations**
 
-A room is overbooked when the total number of rooms of the same type booked is greater than the allotmed number of rooms of the same type.
+* **Bookings**: Number of bookings linked to specific travel destinations.
+* **Pax**: Number of passengers included in those bookings.
+* **Change %**: Comparison to previous period (e.g., +49%).
 
-**Destination seats vs Beds**
+### Destination & Accommodation Insights
 
-Shows the number of seats and number of beds for each departure grouped by destination. It indicates if there are too many flight seats (not incl. Dynamic P.) compared to numbers of beds.
+**a. Top-Selling Resorts**
 
-Note!!! Beds means average number of pax per room sold so far.
+* **Location Names**: Tourist destinations with the highest number of pax.
+* **Pax**: Number of passengers booked to each resort.
 
-### **Error bookings**
+**b. Top-Selling Hotels**
 
-Displays all bookings that have errors detected by the system, even though their status is **OK**.
+* **Hotel Names**: Most-booked hotels.
+* **Pax**: Number of passengers staying at each hotel.
 
-### **GDS queue**
+**c. Top-Selling Days**
 
-In here are shown all GDS bookings that have the **TKQ** status.
+* **Date**: Specific day when bookings were high.
+* **Pax**: Number of passengers booked on that day.
 
-### **GDS Ready For Submit**
+### Financial Summary
 
-This tab displays all bookings that have the **GDS pending** status and have met the requirements for beeing submited.
+**Bookings -** Total confirmed reservations.
 
-* Bookings that use Galileo can be submited upon creation.
-* Bookings that use ACH can be submited only after the deposit has been paid.
+**Profit Total -** Net profit (Revenue – Costs).
 
-### **Waitlist**
+* **Example**: DKK -1,727,600 means a loss.
+* **Profit/Pax**: Average profit or loss per passenger.
 
-It is possible to book trips out of stock if WL check box is used in the pricelist. When the user tries to book a trip which is sold out, the system displays a warning that the user must accept. The finished booking will have the status of **WL**. There is a running service that checks for allotment to all **WL** bookings and tries to book them. When successful, the system will change the status of the **WL** booking to **WLOK** and list it on the dashboard. When the seller has spoken with the customer, he can manually enter the booking and either cancel the booking or confirm it, changing it's status to **OK** or **CXL**
+**Extra Total -** Revenue from additional services (e.g., upgrades, add-ons).
 
-### **Invoices**
+* **Example**: DKK 105,366 in extras sold.
 
-This tab displays the statements that are sent for approval but not yet approved by the creditor. This is also where you can see if a settlement has come back from creditors in the event that the creditor does not agree with the content. It also shows returned and approved statements ready for payment.
+**DB Total -** Gross profit (Revenue – Direct Costs).
 
-### **Sold Out Hotels**
+* **Example**: DKK -2,698,116 indicates a negative gross margin.
 
-Displays all hotels that have exhausted their allotments and give the user the option to ignore the warning or request more rooms from the hotels.
-
-### **Q. Manag.**
-
-Allows the user to view Travelport Queue as well as changes made by Travelport to reservations.
-
-### **Stop Sales**
-
-This tab displays all hotels that have a stop sale, the period of the stop sale, and actions that can be taken regarding the stop sale:
-
-* Details - will take the user to the stop sale panel
-* Hide - hides the stop sale on dashboard
-
-### **Sold Out PLTAs**
-
-Displays the price lists that have depleted either the hotels or transport allotments, or both of them.
-
-### **Refund money**
-
-This tab displays bookings that have paid too much or those that have been modified and the total price became lower than the amount paid. The user must check these bookings, contact the guest and inform him/her of the changes and the fact that the amount paid is larger than the total, and decide with the guest the best course of action.
-
-### **Campaign alarms**
-
-In this tab an alert will appear that will notify the user that a set number of bookings per day have been made for a campaign in progress.
-
-### **Dashboard count for tabs**
-
-We have implemented a solution to calculate real live count for some tabs:
-
-* Unpaid Bkg - GetUnpaidBookingsCount
-* Upsale - GetExtrasNotSoldBookingsCount
-* Transport Warnings - GetTransportReportingWarningsCount + GetRealTransportWarningsCount
-* Warnings - GetWarningsCount
-* Error Bkg - GetTurnoverErrOkCountForDashboard, GetTurnoverErrFeeCanceledPassCountForDashboard, GetTurnoverErrFeeLockOkPassCountForDashboard, GetTurnoverErrNoActivePassCountForDashboard,GetTurnoverErrCanceledBookFeeCountForDashboard, GetErrorBookingsByPassengerTotalCountForDashboard
-* Error Disc - GetPassengersWithMultipleDiscountsWhileDoNotCombineCount
-* Waitlist - GetWaitlistBookingCount
-* GDQ Queue - GetGdsQueueCount
-* GDS ReadyForSubmit - GetGdsReadyForSubmitCount
-* Not Generated Vouchers - GetVouchersNotGeneratedBookingsCount
-* Hotel Special Offer - GetHotelPriceExtraCount
-* Extra Special Offer - GetNetPriceExtraCount
-* PrListUnlock - GetPriceListUnlockCount
-* Unbooked Guar Rooms - GetNumberOfUnbookedGuaranteedRoomsCount
-* Hotel Sold Out - GetSoldOutHotelsCount
-* StopSales - GetStopSalesCount
-* SoldOut PLTAs - GetSoldOutPltaCount
-* Refund Money - GetTransactionsToBeOverviewedCount
-* Campaign alarm - GetTodayWarningMessagesCount
-* Wrong PltaID Pass - GetWrongPltaPassengerCount
-* Extras With Allotments - GetProductsWithAllotmentsCount
-* NFIS in pricelist - GetNfisInPricelistCount
-
-For others we kept old functionality to calculate count by Service:
-
-* Overbkg - out
-* Overbkg - in
-* Overbkg - hotels
-* Overbkg - rooms
-* HCW
-* Q Manag.
+**Turnover Total -** Total revenue generated (before costs).
