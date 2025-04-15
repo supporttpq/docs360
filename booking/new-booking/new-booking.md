@@ -130,7 +130,7 @@ You can modify the products that are inside the package inside **Edit Product Pa
 
 ![](https://docs.tourpaq.com/assets/images/package_and_product_example3-83e4c48b16f44d9028b8a8ffcff1d567.png?width=1665)
 
-<mark style="background-color:red;">**Warning messages**</mark>
+<mark style="color:red;">**Warning messages**</mark>
 
 * If you select the package, you can't select the products inside the package as well, as you will get a warning message that looks like this one:
 

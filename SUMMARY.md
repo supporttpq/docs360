@@ -104,6 +104,7 @@
   * [Creditor invoices](autobilling/creditor-invoices.md)
 * [Missed Payments](missed-payments.md)
 * [Invoice Hotel Payments](invoice-hotel-payments.md)
+* [Pending payments DIBS transaction late response](pending-payments-dibs-transaction-late-response.md)
 
 ## Price List
 
@@ -140,6 +141,10 @@
   * [Hotel Activity Log](hotel/page-7/hotel-activity-log.md)
   * [Room cost](hotel/page-7/room-cost.md)
   * [Room costs](hotel/page-7/room-costs.md)
+  * [Occupancy / Handling](hotel/page-7/occupancy-handling/README.md)
+    * [Different Max Pax](hotel/page-7/occupancy-handling/different-max-pax.md)
+    * [Room Restriction](hotel/page-7/occupancy-handling/room-restriction.md)
+    * [Single Room Cost](hotel/page-7/occupancy-handling/single-room-cost.md)
 
 ***
 

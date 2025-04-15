@@ -2,9 +2,9 @@
 
 Packages Generator can be accessed from Price List-> Packages Generator. User can define packages which will be available for web by accessing "Create" and select "Name" of the package, Agency for which the package will be available, start and end interval, interval based on which the package will be generated and discount applied to the total price.
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 After clicking "Save" package will be added to the list and can be generated.
 

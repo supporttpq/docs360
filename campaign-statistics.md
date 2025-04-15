@@ -4,7 +4,7 @@
 
 The **Campaign Statistics Dashboard** provides a comprehensive overview of ongoing and past marketing campaigns. It includes essential metrics such as total bookings, total sales, discounts, and profit, all visualized through an intuitive interface. This documentation outlines the components and data displayed on the dashboard for efficient monitoring and analysis.
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1\. **Date Interval Selection -** filter campaign statistics based on a specific date range.
 
@@ -56,7 +56,7 @@ Detailed information about each campaign:
 
 * **"View"** button allows users to see more detailed campaign analytics or drill-down.
 
-<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Conclusion:
 
