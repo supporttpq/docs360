@@ -8,7 +8,7 @@ Guests can login using the booking number and the password provided.
 
 After login, guests are directed to a front page having a welcome quote.
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 From here, user can access available tabs in the application: Booking, Guide, Destination and VisitSun.
 

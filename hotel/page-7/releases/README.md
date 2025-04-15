@@ -24,7 +24,7 @@ Assuming that:
 
 Having this scenario in mind, here is how the Hotel Release Service should function for each release rule type.
 
-**General release rule** with start date set to 20-05-2009, number of days to make to release in advance is set to 5, and email address is set to “[admin@grandpalacehotel.com](mailto:admin@grandpalacehotel.com)”.
+**General release rule** with start date set to 20-05-2009, number of days to make to release in advance is set to 5, and email address is set to “admin@grandpalacehotel.com”.
 
 When the service runs, the above rule should release all the rooms of the hotel (allotment bookings) for today, compute the number of rooms that were released, create a log file for these room releases(1S, 2C, 3F) and send an email to the admin.
 
@@ -33,7 +33,7 @@ When the service runs, the above rule should release all the rooms of the hotel 
 * if the release rule is not supplied with a start date, then the rule should apply each day the service runs, and will release all the rooms of the hotel for a date after 5 days from today.
 * if a release rule is not provided with a number of days, then the above logic remains the same, only that it consider the days number to be 0 (zero).
 
-**Specific release rule** with start date set to 01-05-2009, end date set to 01-06-2009, room type 2C, days number set to 3 and email address to “[admin@grandpalacehotel.com](mailto:admin@grandpalacehotel.com)”.
+**Specific release rule** with start date set to 01-05-2009, end date set to 01-06-2009, room type 2C, days number set to 3 and email address to “admin@grandpalacehotel.com”.
 
 When the service runs, the above rule should release the 2C room type for the 18-05-2009, compute the number of rooms that were released, save a log file for the action and send an email to the hotel supplier.
 

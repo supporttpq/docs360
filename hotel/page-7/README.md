@@ -39,8 +39,8 @@ Other fields that are necessary for the hotel to work properly:
 * Infant price - price for infants that stay in the hotel
 * Standard room - main room type of the hotel
 * Status - set if the hotel is hidden or visible in the hotel dashboard
-* Facilities template - select a facility template from those available, will allow the setting of the facilities available in the hotel from **Web** tab, more information is availlable at [Facilities](https://docs.tourpaq.com/docs/documentation/facilities)
-* Hotel combination - allows for 2 or more hotels to be combined into 1, drawing room allotments from the hotels selected, for more information please check [Hotel Combination](https://docs.tourpaq.com/docs/hotel/hotel-combination)
+* Facilities template - select a facility template from those available, will allow the setting of the facilities available in the hotel from **Web** tab, more information is availlable at [Facilities](../../facilities.md)
+* Hotel combination - allows for 2 or more hotels to be combined into 1, drawing room allotments from the hotels selected, for more information please check [Hotel Combination](../../hotel-combination.md)
 * Child price ages - age interval that benefits from the child price from price list
 * Child ages for extra bed - age interval for children when taking into account the "extra bed child" from the room, if the age is outside of the interval, children will use an adult extra bed(overrites the age set in the base room type)
 * Adult hotel - sets an age limit preventing guests to book if there is a passenger with the age below the limit
@@ -103,7 +103,7 @@ Generate the number of rooms available at the hotel and the period in which they
 
 <figure><img src="../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-To finish the process, press //Insert//, followed by //Generate//.
+To finish the process, press Insert, followed by Generate.
 
 ### Shared Allotments <a href="#shared-allotments" id="shared-allotments"></a>
 
@@ -123,19 +123,19 @@ Used for controlling allotments.
 
 The number of availlable rooms can be set from here by increasing or decreasing the value from the NO. RMS column.
 
-Also, from the transport column, the number of rooms availlable for the transport can be controlled, when there are more than one transport assigned to that room type. See more on [Hotel Allotments / Hotel Allotment Control](https://docs.tourpaq.com/docs/hotel/hotel-allotments) page.
+Also, from the transport column, the number of rooms availlable for the transport can be controlled, when there are more than one transport assigned to that room type. See more on Hotel Allotments / Hotel Allotment Control page.
 
 ### Disc.Ex.Beds <a href="#discexbeds" id="discexbeds"></a>
 
-Used to define the discount received by the passengers that use an extra bed in a room. Please check [Extra Bed Discount](https://docs.tourpaq.com/docs/hotel/extra-bed-discount)
+Used to define the discount received by the passengers that use an extra bed in a room. Please check [Extra Bed Discount](discount-extra-beds.md)
 
 ### Room cost <a href="#room-cost" id="room-cost"></a>
 
-Used to define the amount paid by the agency to the hotel for the rooms. It is found on the contract between the hotel and agency. Please check [Room Cost](https://docs.tourpaq.com/docs/hotel/room-cost)
+Used to define the amount paid by the agency to the hotel for the rooms. It is found on the contract between the hotel and agency. Please check [Room Cost](room-cost.md)
 
 ### Ex.Beds Costs <a href="#exbeds-costs" id="exbeds-costs"></a>
 
-Used to define the cost of the extra bed paid by the agency. Please check [Extra Bed Costs](https://docs.tourpaq.com/docs/hotel/extra-bed-costs)
+Used to define the cost of the extra bed paid by the agency. Please check [Extra Bed Costs](extra-beds-costs.md)
 
 ### Special offers <a href="#special-offers" id="special-offers"></a>
 
@@ -153,7 +153,7 @@ Used to define the facilities available at the hotel. Must have the Facilities t
 
 Adds layout to a hotel.
 
-More information is available in [Hotel Layout](https://docs.tourpaq.com/docs/hotel/hotel-layout)
+More information is available in [Hotel Layout](hotel-layout.md)
 
 To use this feature, please contact Tourpaq Support.
 
@@ -167,7 +167,7 @@ Adds numbers to the rooms of a hotel with layout.
 
 Used to configure the sending of lists with bookings made for the hotel.
 
-Please check [Hotel Reporting](https://docs.tourpaq.com/docs/hotel/hotel-reporting)
+Please check [Hotel Reporting](communication/hotel-reporting.md)
 
 ### Deposit <a href="#deposit" id="deposit"></a>
 

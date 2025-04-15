@@ -2,7 +2,7 @@
 
 Once the settings are made for the customer offer feature, you can create a customer offer by going into the office management page and clicking new offer or by simply starting a new booking process the usual way and using the Select offer popup make a more precise trip search.&#x20;
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The offer can be sent to on existing customer or to a someone that doesn't yet exist in the system. We call this person an Offertee or a potential customer. Mandatory info is their email address and first name.
 

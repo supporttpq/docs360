@@ -80,19 +80,18 @@
 
 * [E-tickets Overview](e-tickets-overview.md)
 * [SMS Overview](sms-overview.md)
-* [Tickets attachments](tickets-attachments.md)
-* [Ticket texts](ticket-texts.md)
 
 ## Finance
 
-* [Payment registration](finance/page-5.md)
-* [Payment file import](finance/payment-file-import.md)
+* [Payment Registration](finance/page-5.md)
+* [Payment File Import](finance/payment-file-import.md)
 * [Method of Payment](finance/method-of-payment.md)
 
 ***
 
 * [Balance Administration](balance-administration.md)
 * [Export](export.md)
+* [Invoice](invoice.md)
 * [Gift Card Payments](gift-card-payments.md)
 * [Daily Export file](daily-export-file.md)
 * [Autobilling](autobilling/README.md)
@@ -289,7 +288,9 @@
 
 ## Email Setup
 
-* [Ticket Attachments](email-setup/ticket-attachments.md)
+* [Tickets attachments](email-setup/tickets-attachments/README.md)
+  * [Ticket Attachments](email-setup/tickets-attachments/ticket-attachments.md)
+  * [Ticket texts](email-setup/tickets-attachments/ticket-texts.md)
 * [Dynamic E-mail/SMS Center](email-setup/page-14.md)
 
 ***

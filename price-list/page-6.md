@@ -14,9 +14,9 @@ layout:
 
 # Pricelist
 
-**Price List** is the place where prices are created or managed for particular packages. Usually a package contains a [Transport](https://docs.tourpaq.com/docs/transport/transport) and a [Room types](https://docs.tourpaq.com/docs/hotel/room-types) Hotel but this is not necessary the case. The price can be added based on interval, discounts, children, group or it can be set for one way or round trip. Each package has a date assigned this date is pointing to the departure date of the trip.
+**Price List** is the place where prices are created or managed for particular packages. Usually a package contains a [Transport](../transport/transport/) and a [Room types](../base-room-types.md) Hotel but this is not necessary the case. The price can be added based on interval, discounts, children, group or it can be set for one way or round trip. Each package has a date assigned this date is pointing to the departure date of the trip.
 
-### Create/copy price list <a href="#createcopy-price-list" id="createcopy-price-list"></a>
+### Create / copy price list <a href="#createcopy-price-list" id="createcopy-price-list"></a>
 
 Creating a price list is fairly easy. From the **Price list** tab, select "Create/copy price list".
 
@@ -31,13 +31,13 @@ Creating a price list is fairly easy. From the **Price list** tab, select "Creat
 
 ### Price List Search <a href="#price-list-search" id="price-list-search"></a>
 
-The search helps to find Prices based on [Brands](https://docs.tourpaq.com/docs/), [Transport](https://docs.tourpaq.com/docs/transport/transport), [Hotel](https://docs.tourpaq.com/docs/hotel/hotel), [Room](https://docs.tourpaq.com/docs/) and base on the departure date interval. To get results The most basic search you can get is By choosing All Brands and Transport but for the best performance try to fill most of the fields. The list of transports from the drop down list are filtered based on the [Brands](https://docs.tourpaq.com/docs/) selection.
+The search helps to find Prices based on Brands, Transport, Hotel, Room and base on the departure date interval. To get results The most basic search you can get is By choosing All Brands and Transport but for the best performance try to fill most of the fields. The list of transports from the drop down list are filtered based on the Brands selection.
 
 <figure><img src="../.gitbook/assets/image (30) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-If All Brands are selected all the transport will appear in the [Transport](https://docs.tourpaq.com/docs/transport/transport) drop down list otherwise only the transport assigned to that specific brand will appear. The [Transport](https://docs.tourpaq.com/docs/transport/transport)s are assigned to the [Brands](https://docs.tourpaq.com/docs/) in the Transport#Brands\_tab|Brands Tab under Edit [Transport](https://docs.tourpaq.com/docs/transport/transport). Also the Transport is not shown in the drop down list if the [Transport](https://docs.tourpaq.com/docs/transport/transport) is set as hidden. The visibility of the Transport can be set on the Transport#General\_tab|General tab
+If All Brands are selected all the transport will appear in the Transport drop down list otherwise only the transport assigned to that specific brand will appear. The Transports are assigned to the Brands in the Transport#Brands\_tab|Brands Tab under Edit Transport. Also the Transport is not shown in the drop down list if the Transport is set as hidden. The visibility of the Transport can be set on the Transport#General\_tab|General tab
 
-When the [Transport](https://docs.tourpaq.com/docs/transport/transport) is selected in the drop down list the \[\[Fix Quota]] is filled in the multiple selection view and also the [Hotel](https://docs.tourpaq.com/docs/hotel/hotel)s. Only the [Hotel](https://docs.tourpaq.com/docs/hotel/hotel)s that share the same price list with the selected [Transport](https://docs.tourpaq.com/docs/transport/transport) will be shown. The [Hotel](https://docs.tourpaq.com/docs/hotel/hotel)s that are in the hidden status will not be shown in the drop down list. The visibility for the [Hotel](https://docs.tourpaq.com/docs/hotel/hotel)s can be sent from the Hotel#Hotel\_tab|General Tab.
+When the Transport is selected in the drop down list the \[\[Fix Quota]] is filled in the multiple selection view and also the Hotels. Only the Hotels that share the same price list with the selected Transport will be shown. The Hotels that are in the hidden status will not be shown in the drop down list. The visibility for the Hotels can be sent from the Hotel#Hotel\_tab|General Tab.
 
 When the hotel is selected two more filed are displayed. This are some additional tools that can help to save the prices based on an algorithm explained on Price List#Also\_Update\_Prices\_on\_Transports|Also Update Prices on Transports and Price List#Update\_Prices\_Based\_on\_Transport|Update Prices Based on Transport
 
@@ -53,7 +53,7 @@ The column title are abbreviated so the table can be more tidy. The most of the 
 * **Hotel** - Hotel Code - The hotel code for this specific booking configuration
 * **Room** - Room Code - The room code for this specific booking configuration
 * **Dep. date** - Departure Date - The Departure Date for this specific booking configuration
-* **FHA** - [Free Rooms Count](https://docs.tourpaq.com/docs/documentation/free-rooms-count) - How many rooms are available for this departure. The default value is for one week trip (or interval 1) on hover there can be seen the allotments for 1, 2, 3, 4 weeks.
+* **FHA** - Free Rooms Count - How many rooms are available for this departure. The default value is for one week trip (or interval 1) on hover there can be seen the allotments for 1, 2, 3, 4 weeks.
 * **FTA** - Free Transport Allotment - How many transport seats are available for this trip. The default value is one week round trip on hover there can be displayed the available seats for 1, 2, 3, 4 weeks round trip and also one way outbound and one way inbound.
 * **P1** - Price Interval 1 - //Editable field//.
 * **P2** - Price Interval 2 - //Editable field//.
@@ -72,7 +72,7 @@ At the beginning of each row there are tree icons:
 
 * View History - where you can see the evolution of prices like in Figure 3.
 * Clear API Cache - by clicking the icon you can clear the cache on the API for that particular prices
-* [Free Rooms Count|Recalculate Free room count](https://docs.tourpaq.com/docs/documentation/free-rooms-count) - you can recalculate on demand both transport and hotel allotment for current prices
+* Free Rooms Count|Recalculate Free room count - you can recalculate on demand both transport and hotel allotment for current prices
 
 ### Column Filters <a href="#column-filters" id="column-filters"></a>
 
@@ -86,7 +86,7 @@ This filters are a way to show a part of the information from price list grid. T
 
 ### Relation PL & Related PL <a href="#relation-pl--related-pl" id="relation-pl--related-pl"></a>
 
-These are covered in [Relation pricelist](https://docs.tourpaq.com/docs/documentation/relation-pricelist)
+These are covered in [Relation pricelist](page-6.md#relation-pl--related-pl)
 
 #### Also Update Prices on Transports <a href="#also-update-prices-on-transports" id="also-update-prices-on-transports"></a>
 
@@ -103,8 +103,8 @@ If //Override Transport Price// is checked and the filed next to the check-box i
 A simple workflow could be:
 
 * Select in the search form Brand, Transport, Fix Quota and Hotel and click Display button
-* Check //Also update prices on transports// and select one or more Transport in the list (The list of transports in this drop down list are transport that have price list with the same hotel)
-* Check the //Override Transport Price// and fill the amount
+* Check Also update prices on transports and select one or more Transport in the list (The list of transports in this drop down list are transport that have price list with the same hotel)
+* Check the Override Transport Price and fill the amount
 * Change one or more prices on the grid and click Save button.
 
 After the save you will notice that the the price on the selected transport with the same hotel and room has been changed accordingly by the formula above.

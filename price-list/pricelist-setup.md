@@ -34,13 +34,13 @@ This feature enables the user to see if price lists were not created. This can b
 
 #### Copy price list <a href="#copy-price-list" id="copy-price-list"></a>
 
-This feature allows for price lists to be copied. This works only inside the brand. The first step is to select the transport, hotel, room and date from which the pricelist will be copied. Next step is to select the transport, hotel, room and date to which the prices will be copied. The //Different days// case is used to define the diferrence of days between the price lists if the transports fix quota don't match or to extend the price list with the inserted number of days. Prices and discounts can also be changed from here with the use of //Change Discounts For Original Prices// and //PRICE DIFFERENCE// sections.
+This feature allows for price lists to be copied. This works only inside the brand. The first step is to select the transport, hotel, room and date from which the pricelist will be copied. Next step is to select the transport, hotel, room and date to which the prices will be copied. The Different days case is used to define the difference of days between the price lists if the transports fix quota don't match or to extend the price list with the inserted number of days. Prices and discounts can also be changed from here with the use of Change Discounts For Original Prices and PRICE DIFFERENCE sections.
 
 There are also check boxes that allows for the copying of prices from:
 
 * a transport to all transports of the brand
 * a hotel to all hotels assigned to the transport
-* a room to all rooms of a hotel Before copying the prices, be sure you have checked every check box from //PRICE DIFFERENCE// section, even if the values are 0. The process of copying prices is this one:
+* a room to all rooms of a hotel Before copying the prices, be sure you have checked every check box from PRICE DIFFERENCE section, even if the values are 0. The process of copying prices is this one:
 * Copy prices
 * Save changed discounts
 
