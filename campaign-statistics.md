@@ -6,7 +6,7 @@ The **Campaign Statistics Dashboard** provides a comprehensive overview of ongoi
 
 <figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-1\. **Date Interval Selection -** filter campaign statistics based on a specific date range.
+1\. **Date Interval Selection—Filter** campaign statistics based on a specific date range.
 
 2\. **Campaign Summary Cards**
 
@@ -14,10 +14,10 @@ Displayed at the top of the dashboard:
 
 * **Total Bookings**:
   * Displays the number of bookings made (24).
-  * Pax count is 80.
+  * The pax count is 80.
 * **Total Sales**:
   * Displays revenue generated: 648,441.
-  * Includes discount value of 140,000.
+  * Includes a discount value of 140,000.
 * **Total DB**:
   * Displays DB contribution (0), indicating no direct budget used.
 * **Campaigns Running**:
@@ -54,7 +54,7 @@ Detailed information about each campaign:
 
 5\. **Action Button**
 
-* **"View"** button allows users to see more detailed campaign analytics or drill-down.
+* **The "View"** button allows users to see more detailed campaign analytics or drill down.
 
 <figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 

@@ -14,7 +14,7 @@ layout:
 
 # Customer offer automatic flow
 
-This feature will send automatic Emails and offers at every set interval. For example: 7,14,21 days.
+This feature will send automatic emails and offers at every set interval. For example: 7,14,21 days.
 
 ### **Setup**
 
@@ -29,7 +29,7 @@ The settings are under Brand -> Select Offer.
 
 ### **Usage**
 
-To enable these automatic reminders, before sending the email/ SMS, the checkbox "Send Schedule Email" or "Send Schedule SMS" should be enabled.
+To enable these automatic reminders, before sending the email/SMS, the checkbox "Send Schedule Email" or "Send Schedule SMS" should be enabled.
 
 <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

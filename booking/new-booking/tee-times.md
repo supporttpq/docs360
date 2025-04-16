@@ -28,8 +28,8 @@ Click on the first passenger to select it&#x20;
 
 Click on the desired hour to make the reservation&#x20;
 
-We will do the same things for the second passenger And for the third passenger too.&#x20;
+We will do the same things for the second passenger and for the third passenger too.&#x20;
 
-Click on take allotment.&#x20;
+Click on Take Allotment.&#x20;
 
 Click on save

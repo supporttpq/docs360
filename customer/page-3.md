@@ -20,9 +20,9 @@ The customer center module enables users to search for customers, view bonus pac
 
 ### **Find customer**
 
-Can search for one or more customers using the filters:
+You can search for one or more customers using the filters:
 
-* Customer no - unique identify number for each customer
+* Customer no. - unique identify number for each customer
 * First name of the customer
 * Last name of the customer
 * Company
@@ -43,11 +43,11 @@ Can search for one or more customers using the filters:
 
 <figure><img src="../.gitbook/assets/f7150ac6-7b6b-4067-819c-bcadfa6e7406.webp" alt=""><figcaption></figcaption></figure>
 
-Also, from this page, you have the possibilities to:
+Also, from this page, you have the possibility to:
 
-* Send email - Allows the user to send custom e-mails to the displayed customers.
+* Send email - Allows the user to send custom emails to the displayed customers.
 * Send SMS - Allows the user to send custom SMS to displayed customers.
-* Export — Allows the user to export a generated list in an external document, usually Microsoft Excell. But other document types are also supported.
+* Export — Allows the user to export a generated list in an external document, usually Microsoft Excel. But other document types are also supported.
 
 <figure><img src="../.gitbook/assets/2470fd6d-6824-48f2-a602-c842aa595538.webp" alt=""><figcaption></figcaption></figure>
 

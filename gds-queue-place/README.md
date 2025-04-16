@@ -7,27 +7,27 @@ This page displays reservations that are in the queue for processing in the GDS 
 ### Page Elements
 
 \
-a) **Main Table – Booking List**\
+a) **Main Table—Booking List**\
 The table contains essential information about each booking in the queue, with the following columns:
 
-* Booking – Unique identifier of the booking in the system.
-* Status – Indicates the status of the booking in the GDS queue. (Example: “1” could mean that the booking is pending).
-* Departure Date – The travel start date for the booking.
-* Customer – The name of the customer associated with the booking.
-* Booking Total – The total value of the booking.
-* Paid Amount – The amount paid by the customer to date.
-* Balance – The difference between the booking total and the amount paid. A balance other than “0” indicates an outstanding payment.
-* Last Update – The date the booking was last modified.
+* Booking—Unique identifier of the booking in the system.
+* Status—Indicates the status of the booking in the GDS queue. (Example: “1” could mean that the booking is pending).
+* Departure Date—The travel start date for the booking.
+* Customer—The name of the customer associated with the booking.
+* Booking Total—The total value of the booking.
+* Paid Amount—The amount paid by the customer to date.
+* Balance—The difference between the booking total and the amount paid. A balance other than “0” indicates an outstanding payment.
+* Last Update—The date the booking was last modified.
 
 &#x20;**b) “Place Bookings” button**\
-&#x20;This button, located at the top right of the page, allows users to retry bookings that are in the queue.   This can be a solution to resubmit bookings to the GDS after any issues have been corrected.
+&#x20;This button, located at the top right of the page, allows users to retry bookings that are in the queue. This can be a solution to resubmit bookings to the GDS after any issues have been corrected.
 
 
 
 ### **Workflow**
 
 1. Reviewing Reservations
-   * The user can review each reservation in the list to identify issues (e.g. unpaid balance, pending processing status).
+   * The user can review each reservation in the list to identify issues (e.g., unpaid balance, pending processing status).
 2. Correcting and Updating Reservations
    * If there is an outstanding balance, it may be necessary to pay it in order for the reservation to be processed.
    * If a reservation has not been updated recently, the user can check if any changes are needed.

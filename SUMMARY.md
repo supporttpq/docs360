@@ -151,7 +151,7 @@
 * [Base room types](base-room-types.md)
 * [Stop Sales](stop-sales.md)
 * [Stop Sale Resort](stop-sale-resort.md)
-* [Hotel beds](hotel-beds.md)
+* [Hotel Beds](hotel-beds.md)
 * [Hotel Bed Banks - FAQ](hotel-bed-banks-faq.md)
 * [Hotel combination](hotel-combination.md)
 * [Hotel Contracts](hotel-contracts.md)

@@ -2,13 +2,13 @@
 
 ### Description <a href="#description" id="description"></a>
 
-Hotel layout is a feature that allows the user to define a floor-plan of a hotel with active-elements (rooms) and décor elements (logos / icons , anything basically). These floor-plans will be used in back-office for assigning a passenger to a specific room in a hotel as well as in webbooking where the customer can choose the room he wants to be booked for him and pay an extra fee for this (Room selection supplement)
+Hotel layout is a feature that allows the user to define a floor-plan of a hotel with active-elements (rooms) and décor elements (logos/icons, anything basically). These floor-plans will be used in back office for assigning a passenger to a specific room in a hotel as well as in webbooking where the customer can choose the room he wants to be booked for him and pay an extra fee for this (Room selection supplement)
 
 ### Workflow <a href="#workflow" id="workflow"></a>
 
 #### **Create the supplement**
 
-Create the "room reservation" supplement. This supplement will automatically be added when a room will be selected in the layout and it has to be configured like this:
+Create the "room reservation" supplement. This supplement will automatically be added when a room is selected in the layout, and it has to be configured like this:
 
 * Discount/Suppl Code: RR
 * Discount or Suppl: Supplement
@@ -18,25 +18,25 @@ Create the "room reservation" supplement. This supplement will automatically be 
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### **Add elements to be used on the layout**
+#### **Add elements to be used on the layout.**
 
 This can be done from "Hotel-> Layout Elements"
 
 <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-There are 4 element types: Seat, Decor, Room and Room Icon. It's very important to remember this, because when we will later associate a room number with a room type from the hotel, we will only use "room icon" element types.
+There are 4 element types: Seat, Decor, Room, and Room Icon. It's very important to remember this because when we later associate a room number with a room type from the hotel, we will only use "room icon" element types.
 
-We will start by adding a new hotel background, and then some elements to be placed on it.
+&#x20;We will start by adding a new hotel background and then some elements to be placed on it.
 
-Afterwards, on the hotel we want a layout. For this, we go to the “Layout” tab and then press “Create Layout”
+&#x20;Afterwards, in the hotel we want a layout. For this, we go to the “Layout” tab and then press “Create Layout”
 
 <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-On this screen we now have the possibility to create multiple sections of a hotel (floors , per example), but we will focus on editing a single section\ Adding a background is as simple as clicking the background image Important note: in order to see when a room is reserved on a booking on not (by using backgrounds shown yellow/red/green), please use room icon with transparent background.
+&#x20;On this screen we now can create multiple sections of a hotel (floor, per example), but we will focus on editing a single section. Adding a background is as simple as clicking the background image Important note: too see when a room is reserved on a booking on not (by using backgrounds shown yellow/red/green), please use room icon with transparent background.
 
 <figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Now for adding several other elements (rooms , décor) we click them and they appear in the top-left corner of the background image. Then we are able to drag and drop them (even more than one at once) on the background image of the layout (I also resized the background image in this step by dragging the corner):
+Now, for adding several other elements (rooms, décor), we click them, and they appear in the top-left corner of the background image. Then, we can drag and drop them (even more than one at once) on the background image of the layout (I also resized the background image in this step by dragging the corner):
 
 <figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -50,7 +50,7 @@ We now need to define “Real” rooms for the room types of this hotel.
 
 We associate a room type of the hotel with a room number from the tab "Room numbers", subtab "Room Icons". For this, we need to insert a room icon.
 
-Room number 1 is of type 2/22-H between the 1st of March and 31th of March and in the layout will be represented by the room icon "Room Normal". The elements from the drop down list "Room Icon" are layout elements of type "Room icon". Based on this record defined in room icon, allotments will be generated. We can see the generated allotments from tab "Room numbers" - subtab "Allotments"
+Room number 1 is of type 2/22-H between the 1st of March and 31st of March and in the layout will be represented by the room icon "Room Normal". The elements from the drop down list "Room Icon" are layout elements of type "Room icon". Based on this record defined in room icon, allotments will be generated. We can see the generated allotments from tab "Room numbers" - subtab "Allotments"
 
 <figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -78,7 +78,7 @@ By clicking room names in the list on the left, and then clicking rooms marked a
 
 For hotel combination, layouts are available from combined hotels, if they have this feature set.
 
-In order to use this feature, hotel combinations have to be assigned to the Room supplement resources from Disc/Suppl.
+To utilize this feature, hotel combinations must be assigned to the Room Supplement resources from Disc/Suppl.
 
 #### **Please be aware**
 

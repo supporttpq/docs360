@@ -13,7 +13,7 @@ The user can filter the displayed tickets using the following options:
 * **Sent from / Sent to** – Filters tickets by the time interval in which they were sent.
 * **+ More filters** – Possibility to add additional filters.
 * **Clear** – Clears all active filters.
-* **Export** – Button that allows downloading the list of tickets in a compatible format (e.g. Excel, CSV).
+* **Export** – Button that allows downloading the list of tickets in a compatible format (e.g., Excel, CSV).
 
 #### **b)** Main Table – E-Ticket List
 
@@ -45,7 +45,7 @@ The table displays essential details about each ticket submitted, including the 
 3. Exporting and Reporting
    * The list of tickets can be exported for analysis or archiving.
 
-### **3. Posibile probleme și soluții**
+### **3. Possible problems and solutions**
 
 | Issue                        | Possible cause                                     | Solution                                            |
 | ---------------------------- | -------------------------------------------------- | --------------------------------------------------- |

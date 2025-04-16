@@ -14,7 +14,7 @@ layout:
 
 # Dashboard
 
-The dashboard is the application start page. The main reason for this page is to receive information about the booking system quickly.
+The dashboard is the application's start page. The main reason for this page is to receive information about the booking system quickly.
 
 <figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
@@ -67,7 +67,7 @@ e. **Notifications**
 **b. Bar Chart**
 
 * **X-Axis**: Weekly time periods (e.g., 17/3–23/3/2025).
-* **Y-Axis**: Number of:
+* **Y-Axis**: Number of
   * **PAX**: (Blue) Total passengers.
   * **Bookings**: (Dark blue) Number of bookings.
   * **New Offers**: (Green) Number of new offers made in that week.
@@ -99,7 +99,7 @@ e. **Notifications**
 
 **Bookings -** Total confirmed reservations.
 
-**Profit Total -** Net profit (Revenue – Costs).
+**Profit Total -** Net profit (revenue – costs).
 
 * **Example**: DKK -1,727,600 means a loss.
 * **Profit/Pax**: Average profit or loss per passenger.
@@ -108,7 +108,7 @@ e. **Notifications**
 
 * **Example**: DKK 105,366 in extras sold.
 
-**DB Total -** Gross profit (Revenue – Direct Costs).
+**DB Total -** Gross profit (revenue – direct costs).
 
 * **Example**: DKK -2,698,116 indicates a negative gross margin.
 

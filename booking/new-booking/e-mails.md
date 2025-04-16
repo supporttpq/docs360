@@ -1,6 +1,6 @@
 # E-mails
 
-From this section is possible to view all the e-mails sent for the current booking.
+From this section, it is possible to view all the e-mails sent for the current booking.
 
 * Email type: displays the type of email sent.
 * Sent date: displays the date and hour the email was sent.

@@ -16,7 +16,7 @@ Click the "Save" icon.
 
 <figure><img src=".gitbook/assets/image (76) (1).png" alt=""><figcaption></figcaption></figure>
 
-The new rule is created ( a success message is displayed), and the page redirects to the overview (with the current year set as the default filter)
+The new rule is created (a success message is displayed), and the page redirects to the overview (with the current year set as the default filter)
 
 * The rule is set as disabled by default.&#x20;
 
@@ -26,7 +26,7 @@ The new rule is created ( a success message is displayed), and the page redirect
 
 The "Disabled" column will be marked with an "X" sign for that rule. The previous "Disable" button will now be "Enable" (to enable it back).
 
-The existing allotment for the hotels in that resort for that transport will be changed: max allotment per flight will be 0. Also, the FHA on the pricelist will become 0. Therefore no more booking can be created from office or web, on that period for the offers on the transport and hotels on that resort.
+The existing allotment for the hotels in that resort for that transport will be changed: the max allotment per flight will be 0. Also, the FHA on the price list will become 0. Therefore, no more bookings can be created from the office or the web for that period for the offers on the transport and hotels at that resort.
 
 In Stop Sale Resort Overview, click on the "Enable" button for one disabled rule.
 
@@ -34,13 +34,13 @@ In Stop Sale Resort Overview, click on the "Enable" button for one disabled rule
 
 The rule will be enabled.
 
-The "Disabled" column will have a check sign for that rule. The previous "Enable" button will be now "Disable" (to be able to disable it back).
+The "Disabled" column will have a check sign for that rule. The previous "Enable" button will now be "Disable" (to be able to disable it back).
 
-The existing allotment for the hotels in that resort for that transport will be changed: max allotment per flight will be back -1. Also, the FHA on pricelist will be back as it was the number of free rooms. Therefore, booking can now be created from the office or web, on that period, for the offers on the transport and hotels on that resort.
+The existing allotment for the hotels in that resort for that transport will be changed: the max allotment per flight will be back to -1. Also, the FHA on the price list will be back as it was the number of free rooms. Therefore, bookings can now be created from the office or web during that period for the offers on the transport and hotels at that resort.
 
 ### Search filters, results
 
-Fill in required information to filter results (Start and End date are mandatory):
+Fill in required information to filter results (start and end dates are mandatory):
 
 * Date interval (use calendar or just write a date in 'ddmmyy' format )
 * Transport (select from drop down list with all available transports)
@@ -52,7 +52,7 @@ Fill in required information to filter results (Start and End date are mandatory
 
 <figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-The stop sales rules results list is displayed, with the following information:
+The stop sales rules results list is displayed with the following information:
 
 * ID - rule's ID
 * Start Date - first day to apply the stop sale
@@ -61,8 +61,8 @@ The stop sales rules results list is displayed, with the following information:
 * Resort - resorts on which rule is applied
 * Disabled - if rule is disabled or not
 
-List is displayed by default sorted by ID, with the most recent ones first.
+The list is displayed by default sorted by ID, with the most recent ones first.
 
 Navigation through more results is possible using the pagination (move from one page to another)
 
-Results can be also sorted (ascending/descending) by ID, Start Date and End Date, Transport or Resort.
+Results can also be sorted (ascending/descending) by ID, Start Date, End Date, Transport, or Resort.

@@ -1,6 +1,6 @@
 # Live Offer Confirmation
 
-The "Live Offer Confirmation"  is part of the booking system for managing travel reservations.
+The "Live Offer Confirmation" is part of the booking system for managing travel reservations.
 
 <figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -21,15 +21,15 @@ The "Live Offer Confirmation"  is part of the booking system for managing travel
 #### Reservation Table Columns
 
 1. **Reservation ID:** Unique identifier for the reservation.
-2. **Booking No:** Internal booking number.
+2. **Booking No.:** Internal booking number.
 3. **Hotel:** Name of the hotel where the reservation is made.
 4. **Transport:** Transport arrangement status (e.g., "No Transport").
-5. **Departure / Check-In:** Date of departure or hotel check-in.
+5. **Departure/Check-In:** Date of departure or hotel check-in.
 6. **Booking Date:** Date when the reservation was made.
 7. **Customer:** Name of the customer who made the reservation.
 8. **Phone:** Customer's contact number.
 9. **Email:** Customer's email address.
-10. **Pax No:** Number of passengers in the booking.
+10. **Pax No.:** Number of passengers in the booking.
 11. **Total:** Total cost of the reservation.
 12. **Agency:** Travel agency that processed the booking.
 13. **Transaction Status:** Indicates if payment was successfully captured.

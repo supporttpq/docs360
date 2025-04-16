@@ -9,6 +9,6 @@ Information is detailed in the columns:
 * The category displays the product, discount/supplement, and room categories.
 * The item displays the actual products or discounts/supplements used in the booking.
 * Turnover displays the amount paid by the customer for each category in part.
-* Cost displays the cost of the products, discount/supplements, room, and transport
+* Cost displays the cost of the products, discounts/supplements, room, and transport
 * Profit is the difference between Turnover and Cost columns
-* Costs can be changed for room, transport, products, and discount/supplements using the “Save for all” and “Save individual” options.
+* Costs can be changed for rooms, transport, products, and discounts/supplements using the “Save for all” and “Save individual” options.
