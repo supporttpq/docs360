@@ -1,10 +1,10 @@
 # Hotel release - Reporting
 
-The hotel release reporting is a set of rules that are run periodically by an \[\[Windows Service]]. In order to set a scheduler
+The hotel release reporting is a set of rules that are run periodically by a Windows service. In order to set a scheduler
 
 #### How to add a new rule? <a href="#how-to-add-a-new-rule" id="how-to-add-a-new-rule"></a>
 
-In order to configure the reporting for one hotel you should complete the following steps: -From Dashboard **Hotel** -> **Release** Tab -> **Scheduler** -Add a new scheduler by clicking **Add Record** -In order to save that specific row click **Insert** -You can edit any row from the grid and the all changes will be saved by clicking **Update** button
+In order to configure the reporting for one hotel, you should complete the following steps: - From Dashboard **Hotel** -> **Release** Tab -> **Scheduler** - Add a new scheduler by clicking **Add Record** - In order to save that specific row, click **Insert** - You can edit any row from the grid and the all changes will be saved by clicking **Update** button
 
 | Column name         | Column type | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | ------------------- | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -21,26 +21,26 @@ In order to configure the reporting for one hotel you should complete the follow
 
 <figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Supposedly the service is running this scheduler for the first time on 24.03.2025 and from this point on the scheduler will run every day.
+Supposedly the service is running this scheduler for the first time on 24.03.2025, and from this point on the scheduler will run every day.
 
-In this case the service is making release in interval 24.03.2025 to 31.03.2025 but since the allow interval of this rule is 27.03.2025 to 31.03.25 the only released dates are 27 -31.03.2025
+In this case the service is making release in interval 24.03.2025 to 31.03.2025 but since the allow interval of this rule is 27.03.2025 to 31.03.2025 the only released dates are 27 - 31.03.2025
 
 #### How to add a Weekly release scheduler? <a href="#how-to-add-a-weekly-release-scheduler" id="how-to-add-a-weekly-release-scheduler"></a>
 
 <figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-The scheduler is run every week in a specific day of the week.
+The scheduler is run every week on a specific day of the week.
 
 #### How to add a Monthly release scheduler? <a href="#how-to-add-a-monthly-release-scheduler" id="how-to-add-a-monthly-release-scheduler"></a>
 
 <figure><img src="../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-The scheduler is run every month in a specific day of the month.
+The scheduler is run every month on a specific day of the month.
 
 #### How to add a Annually release scheduler? <a href="#how-to-add-a-annually-release-scheduler" id="how-to-add-a-annually-release-scheduler"></a>
 
 <figure><img src="../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-In case of annually the scheduler will run once a year for the entire start end period.
+In case of annually, the scheduler will run once a year for the entire start-end period.
 
 > 📝 **Note:** In this case the Field Days after is ignored
