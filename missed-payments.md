@@ -34,12 +34,12 @@ The **Missed Payment Page** contains information about payments that were not su
 * **PAYMENT NO:** A unique identifier for each payment.&#x20;
 * **PAYMENT METHODS:** Indicates the payment method used. In the example, it's "CARD".
 * **AMOUNT:** The value of the payment.
-* **DEBITS:**  identifier related to debits or transactions.
+* **DEBITS: identifier** related to debits or transactions.
 * **TRANSACTION CODE:** A unique code for the transaction.
 * **STATUS CODE:** Indicates the current status of the payment. The example shows "Capture Completed", which implies the payment was initially authorized but might have failed during the final capture stage.
 * **PAYMENT STATUS:** Provides a more descriptive status, which is "Capture Completed" in the example, mirroring the status code.
 * **AGENCY:** The agency associated with the payment, "Primo Tours" in this case.
-* **CUSTOMER:** The customer involved in the payment.
+* **CUSTOMER:** The customer is involved in the payment.
 * **BOOKING#:** A booking or reference number.
 * **PAYMENT DATE:** The date the payment was attempted.
 * **REASON:** This column is empty in the example, but it likely would contain the reason for the payment failure.

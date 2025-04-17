@@ -12,7 +12,7 @@ layout:
     visible: true
 ---
 
-# Payment registration
+# Payment Registration
 
 Applies for Administrator and Financial
 
@@ -20,7 +20,7 @@ Payment registration is a module that allows the making and viewing of payments.
 
 The payments inserted in the system can be either booking payments or guide payments. Booking payments are made for a certain booking. Guide payments are made by a guide for a certain destination.
 
-From Payment registration is possible to insert only booking payments. But it is possible to view both booking and guide payments.
+From payment registration, it is possible to insert only booking payments. But it is possible to view both booking and guide payments.
 
 When making a new payment these are the steps:
 
@@ -34,7 +34,7 @@ When making a new payment these are the steps:
 * Insert a comment
 * Save the payment
 
-It is also be possible to view all the payments from the system, by using certain search filters:
+It is also possible to view all the payments from the system by using certain search filters:
 
 * Payment start date
 * Payment end date
@@ -45,7 +45,7 @@ It is also be possible to view all the payments from the system, by using certai
 * Booking number – the booking number will be filled in
 * Guide – it will be selected from all the guides that have been inserted in the system for the current company; it should also be possible to select “all guides” or “no guide”
 * Giftcard number
-* Resort (this filter should appear only when a guide or “all guides” is selected) – it will be selected from all the resorts from the system for the current company; it should also be possible to select no resort
+* Resort (this filter should appear only when a guide or “all guides” is selected) – it will be selected from all the resorts in the system for the current company; it should also be possible to select no resort
 * Transport
 
 These are the default values:
@@ -60,7 +60,7 @@ These are the default values:
 * Guide – no guide selected
 * Resort – no resort selected
 
-When a date will be left empty (no selected date), it will mean that the filter shouldn’t be taken into account.
+When a date is left empty (no selected date), it will mean that the filter shouldn’t be taken into account.
 
 Let’s consider these filters in order to understand how this should work:
 
@@ -69,20 +69,20 @@ Let’s consider these filters in order to understand how this should work:
 * Departure start date = no selected date
 * Departure end date =  30.04.2025
 
-All the payments for bookings with departure date before 30.04.2025, that are made after 1st should be displayed.
+All the payments for bookings with departure dates before 30.04.2025 that are made after the 1st should be displayed.
 
 Below are all the cases when the filters shouldn’t be taken into account:
 
-* Payment start date empty - if Payment end date value is filled in, there will be returned all the records with payment date before the Payment end date value; if the Payment end date is left empty, the Payment date filter won’t be taken into account
-* Payment end date empty – if Payment start date value is filled in, there will be returned all the records with payment date after the Payment start date value; if the Payment start date is left empty, the Payment date filter won’t be taken into account
-* Departure start date – if Departure end date value is filled in, there will be returned all the payments done for bookings with departure date before the Departure end date value; if the Departure end date is left empty, the Departure date filter won’t be taken into account
-* Departure end date – if Departure start date value is filled in, there will be returned all the payments done for bookings with departure date after the Departure start date value; if the Departure end date is left empty, the Departure date filter won’t be taken into account
+* Payment start date empty - if Payment end date value is filled in, all the records with payment date before the Payment end date value will be returned; if the Payment end date is left empty, the Payment date filter won’t be taken into account
+* Payment end date empty – if Payment start date value is filled in, all the records with payment date after the Payment start date value will be returned; if the Payment start date is left empty, the Payment date filter won’t be taken into account
+* Departure start date – if Departure end date value is filled in, all the payments done for bookings with departure date before the Departure end date value will be returned; if the Departure end date is left empty, the Departure date filter won’t be taken into account
+* Departure end date – if Departure start date value is filled in, all the payments done for bookings with departure date after the Departure start date value will be returned; if the Departure end date is left empty, the Departure date filter won’t be taken into account
 * Payment method – if no payment method is selected, the Payment method filter will not be taken into account
 * Debit/Credit – if no type selected, the Debit/Credit filter will not be taken into account
 * Booking number – if no number is filled in, there will be returned the payments for all the bookings
 * Guide – if no guide is selected, the filter won’t be taken into account
 * Resort – if no resort selected, the Resort filter won’t be taken into account
 
-If at least one of the filters Departure start date, Departure end date or Booking number is filled in, then the guide payments won’t be taken into account. That’s because these filters are linked to a booking, but not to a group of passengers (for which the guide payments are made).
+If at least one of the filters, departure start date, departure end date, or booking number, is filled in, then the guide payments won’t be taken into account. That’s because these filters are linked to a booking, but not to a group of passengers (for which the guide payments are made).
 
 The reverse situation happens when a value is selected for guides (“all guides” or a certain guide); in this case, the booking payments won’t be taken into account. Even more, in this case, the filter for booking number should disappear, as a payment can be either a booking or a guide payment.
