@@ -1,6 +1,5 @@
 ---
 description: Your Complete Guide to Tourpaq Travel Management Solutions
-hidden: true
 noIndex: true
 cover: .gitbook/assets/Tourpaq Logo (1).jpg
 coverY: 0
@@ -48,7 +47,7 @@ This documentation is tailored for:
 * **New Users** looking to get up and running quickly
 * **Experienced Staff** seeking deeper knowledge of advanced features
 * **IT & Support Teams** needing configuration and troubleshooting help
-* **Business Owners & Managers** wanting insights into how to best leverage Tourpaq
+* **For Business Owners & Managers**: Gaining insights on maximizing the use of Tourpaq.
 
 ***
 
@@ -56,27 +55,6 @@ This documentation is tailored for:
 
 Use the menu on the left to navigate through the sections. You can also search for specific topics using the search bar above.
 
-If you’re new, we recommend starting with the **Getting Started** section.
-
 ***
 
 If you need additional support, our support team is always ready to assist. Happy exploring!
-
-## Table of contents
-
-* [Dashboard](broken-reference)
-* [Notifications](broken-reference)
-* [Booking](broken-reference)
-* [Customer](broken-reference)
-* [Tickets](broken-reference)
-* [Finance](broken-reference)
-* [Price List](broken-reference)
-* [Hotel](broken-reference)
-* [Transport](broken-reference)
-* [Quality](broken-reference)
-* [Export](broken-reference)
-* [Users](broken-reference)
-* [Guest App](broken-reference)
-* [Extras Setup](broken-reference)
-* [Email Setup](broken-reference)
-* [Setup](broken-reference)
