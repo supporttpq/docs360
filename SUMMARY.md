@@ -1,8 +1,12 @@
 # Table of contents
 
+## Tourpaq Manual
+
+* [Tourpaq Manual](README.md)
+
 ## Dashboard
 
-* [Dashboard](README.md)
+* [Dashboard](<README (1).md>)
 
 ## Notifications
 
