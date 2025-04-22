@@ -2,7 +2,7 @@
 
 ## Tourpaq Manual
 
-* [Tourpaq Manual](README.md)
+* [Welcome to the Tourpaq Manual Documentation](README.md)
 
 ## Dashboard
 
