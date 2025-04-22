@@ -1,6 +1,5 @@
 ---
 description: Your Complete Guide to Tourpaq Travel Management Solutions
-hidden: true
 noIndex: true
 cover: .gitbook/assets/Tourpaq Logo (1).jpg
 coverY: 0
@@ -20,7 +19,7 @@ layout:
     visible: true
 ---
 
-# Welcome to the Tourpaq Manual Documentation
+# Welcome to the Tourpaq Manual
 
 ## 🧭 Overview
 
@@ -55,8 +54,6 @@ This documentation is tailored for:
 ## 🚀 Let’s Get Started
 
 Use the menu on the left to navigate through the sections. You can also search for specific topics using the search bar above.
-
-If you’re new, we recommend starting with the **Getting Started** section.
 
 ***
 
