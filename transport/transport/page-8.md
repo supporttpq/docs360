@@ -58,7 +58,7 @@ Set the interval between flights.
 * Days - days between the flights
 * API Text It's used in setting the fix quota. Multiple intervals can be set.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Timetable <a href="#timetable" id="timetable"></a>
 
@@ -77,7 +77,7 @@ Used to set the date and time of the flights.
 * FL - flinght changes (After changing time and date of a flight, check this and update; an e-mail will be sent to all bookings made on this flight that the flight hours have been changed. Requires **Flight change e-mail** template
 * Alternative Airport - this can be set only for the Travel home lines and can change the returning airport. It will be shown on booking and ticket. (Example: Flight leaves from Billund to Krete and returns to Kobenhavn instead of Billund)
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Fix quota <a href="#fix-quota" id="fix-quota"></a>
 
@@ -108,15 +108,15 @@ The guarantee empty seats fields are linked to Empty seats feature, which you wi
 * One way out - number of seats for one way out
 * One way home - number of seats for one way home
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 To finish click on Insert and then Generate. The end result is:
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 or
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This depends on the simple cost being active or not In fix quota you can control the number of seats to be sold, costs, etc. For more information please check [Transport](./) and [Transport dashboard](../../transport-dashboard.md)
 

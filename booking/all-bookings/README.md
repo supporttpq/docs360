@@ -19,7 +19,7 @@ This tab displays bookings and statistics according to a series of set filters. 
 ### **Bookings and statistics filters:**
 
 * Brand
-* Pax no — number of passengers
+* Pax no.—number of passengers
 * Booking start date
 * Booking end date
 * Dept date from
@@ -42,13 +42,13 @@ This tab displays bookings and statistics according to a series of set filters. 
 
 A recently added feature in All Bookings is the “Hide filters” option. This allows the user to have a cleaner overview of the filters, giving him the possibility to hide the inactive ones. Although the filters can be hidden, there is also a checkbox called “Show hidden” on each of the filters. By checking it, you can see all the hidden ones or hide them by unchecking it.
 
-An important thing to take into consideration is that even if the filters are hidden, by checking “Choose all”, the displayed results should include the hidden ones also.
+An important thing to take into consideration is that even if the filters are hidden, by checking “Choose all,” the displayed results should include the hidden ones also.
 
-To hide a filter from the selection list, you can go for example to a Transport and check the “Hide as filter on lists” option.
+To hide a filter from the selection list, you can go, for example, to a transport and check the “Hide as filter on lists” option.
 
 <figure><img src="https://sonat.com/api/Document/Image/19670ef0-8b8a-4cda-8eb6-249681e07016/60a72aeb-a272-4428-a118-b6074b1b35b5/ec44a3d0-8810-4253-b486-355b314877ba.webp?width=898" alt="" height="200"><figcaption></figcaption></figure>
 
-Also, a faster way to hide the inactive filters would be to go under **System Setup** and complete the “Hide filter” input. The values in this input represent the number of past days that must be used to determine if a filter must be set as hidden or not. For example: if you set 10, the system will hide the transports that have Fix Quotas older than the past ten days. The same goes for the user, hotel, and real transport.
+Also, a faster way to hide the inactive filters would be to go under **System Setup** and complete the “Hide filter” input. The values in this input represent the number of past days that must be used to determine if a filter must be set as hidden or not. For example, if you set 10, the system will hide the transports that have fix quotas older than the past ten days. The same goes for the user, hotel, and real transport.
 
 <figure><img src="https://sonat.com/api/Document/Image/19670ef0-8b8a-4cda-8eb6-249681e07016/60a72aeb-a272-4428-a118-b6074b1b35b5/f3b2074c-944c-4260-a801-0a280f9da0af.webp?width=933" alt="" height="300" width="400"><figcaption></figcaption></figure>
 
@@ -89,7 +89,7 @@ Additional tools:
 
 * Totals/cost and profit
 * Additional sales per seller/turnover
-* Booking date statistic _Per Day_ P. Week
+* Booking date statistic _Per Day_ Per Week
 * Compare statistics — will display another set of filters for Booking, Departure and Arrival dates
 
 To view the statistics, after all filters are set, click on the **Display** button and then on the **Statistics** button.

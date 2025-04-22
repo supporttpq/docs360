@@ -4,7 +4,7 @@ Booking history is **where you can see all changes made to bookings by you or yo
 
 <figure><img src="https://sonat.com/api/Document/Image/19670ef0-8b8a-4cda-8eb6-249681e07016/60a72aeb-a272-4428-a118-b6074b1b35b5/9c97b89e-ce67-4811-a476-f54b040350d8.webp?width=1865" alt="" width="900"><figcaption></figcaption></figure>
 
-The timeline of reservations typically includes detailed information about each booking, such as:
+The timeline of reservations typically includes detailed information about each booking, such as
 
 1. **Booking Details**: The name of the service (e.g., hotel, flight), location, dates, and other relevant information.
 2. **Dates**: The date when the booking was made (e.g., check-in/check-out dates for hotels, flight dates, etc.).

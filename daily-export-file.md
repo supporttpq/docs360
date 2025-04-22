@@ -18,15 +18,15 @@ Applies for Administrator and Financial
 
 This function allows the exporting of detailed information regarding bookings from the system. The setting is present in SystemRegister in Database.
 
-The email(s) where this export will be sent it can be setup in Setup Menu / System Setup / Financial Export email address(es)
+The email(s) where this export will be sent can be setup in Setup Menu / System Setup / Financial Export email address(es)
 
 <figure><img src=".gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-The data will contain information regarding each booking that corresponds to the given filters:
+The data will contain information regarding each booking that corresponds to the given filters.
 
 * Booking number
 * Adults number
-* Children number
+* Children's number
 * Infants number
 * Seats
 * Booking date

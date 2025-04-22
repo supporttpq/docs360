@@ -1,8 +1,12 @@
 # Table of contents
 
+## Tourpaq Manual
+
+* [Welcome to the Tourpaq Manual Documentation](README.md)
+
 ## Dashboard
 
-* [Dashboard](README.md)
+* [Dashboard](<README (1).md>)
 
 ## Notifications
 
@@ -80,19 +84,18 @@
 
 * [E-tickets Overview](e-tickets-overview.md)
 * [SMS Overview](sms-overview.md)
-* [Tickets attachments](tickets-attachments.md)
-* [Ticket texts](ticket-texts.md)
 
 ## Finance
 
-* [Payment registration](finance/page-5.md)
-* [Payment file import](finance/payment-file-import.md)
+* [Payment Registration](finance/page-5.md)
+* [Payment File Import](finance/payment-file-import.md)
 * [Method of Payment](finance/method-of-payment.md)
 
 ***
 
 * [Balance Administration](balance-administration.md)
 * [Export](export.md)
+* [Invoice](invoice.md)
 * [Gift Card Payments](gift-card-payments.md)
 * [Daily Export file](daily-export-file.md)
 * [Autobilling](autobilling/README.md)
@@ -104,6 +107,7 @@
   * [Creditor invoices](autobilling/creditor-invoices.md)
 * [Missed Payments](missed-payments.md)
 * [Invoice Hotel Payments](invoice-hotel-payments.md)
+* [Pending payments DIBS transaction late response](pending-payments-dibs-transaction-late-response.md)
 
 ## Price List
 
@@ -140,6 +144,10 @@
   * [Hotel Activity Log](hotel/page-7/hotel-activity-log.md)
   * [Room cost](hotel/page-7/room-cost.md)
   * [Room costs](hotel/page-7/room-costs.md)
+  * [Occupancy / Handling](hotel/page-7/occupancy-handling/README.md)
+    * [Different Max Pax](hotel/page-7/occupancy-handling/different-max-pax.md)
+    * [Room Restriction](hotel/page-7/occupancy-handling/room-restriction.md)
+    * [Single Room Cost](hotel/page-7/occupancy-handling/single-room-cost.md)
 
 ***
 
@@ -147,7 +155,7 @@
 * [Base room types](base-room-types.md)
 * [Stop Sales](stop-sales.md)
 * [Stop Sale Resort](stop-sale-resort.md)
-* [Hotel beds](hotel-beds.md)
+* [Hotel Beds](hotel-beds.md)
 * [Hotel Bed Banks - FAQ](hotel-bed-banks-faq.md)
 * [Hotel combination](hotel-combination.md)
 * [Hotel Contracts](hotel-contracts.md)
@@ -284,7 +292,9 @@
 
 ## Email Setup
 
-* [Ticket Attachments](email-setup/ticket-attachments.md)
+* [Tickets attachments](email-setup/tickets-attachments/README.md)
+  * [Ticket Attachments](email-setup/tickets-attachments/ticket-attachments.md)
+  * [Ticket texts](email-setup/tickets-attachments/ticket-texts.md)
 * [Dynamic E-mail/SMS Center](email-setup/page-14.md)
 
 ***

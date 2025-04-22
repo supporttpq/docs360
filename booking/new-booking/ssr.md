@@ -8,8 +8,8 @@ In the booking, go to the SSR tab.
 
 Click on edit and add the SSR code required for the guest.
 
-In some case, the SSR codes are not displayed in the drop-down. This depends on whether or not the Reporting Type associated with the booking transport is allowed to have SSR Codes or not.
+In some cases, the SSR codes are not displayed in the drop-down. This depends on whether or not the reporting type associated with the booking transport is allowed to have SSR codes or not.
 
 Click save.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

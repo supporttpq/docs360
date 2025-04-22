@@ -1,6 +1,6 @@
 # Multiple transports one room bookings
 
-In Tourpaq,in general the transport and hotel are bundled into a single product and a single price therefore is not possible to take two transport charters and to book a single room. So this feature can do just that by selecting two charters and merge the rooms with same type and same hotel.
+In Tourpaq, in general, the transport and hotel are bundled into a single product, and a single price is therefore not possible to take two transport charters and to book a single room. So this feature can do just that by selecting two charters and merging the rooms with the same type and the same hotel.
 
 In order to activate this, the "Multiple Transports" feature should be activated from SuperAdmin.
 
@@ -15,7 +15,7 @@ and the **same** hotel with the **same** room type.
 
 <figure><img src="../../.gitbook/assets/b337378e-5657-433e-8f6b-578196d03ea5.webp" alt=""><figcaption></figcaption></figure>
 
-Next, on Allocate Passengers screen, the rooms will be merged by pressing the "Merge rooms by type" button.
+Next, on the Allocate Passengers screen, the rooms will be merged by pressing the "Merge rooms by type" button.
 
 <figure><img src="../../.gitbook/assets/433fc318-d975-4b3f-a47a-995cc1701d1e.webp" alt=""><figcaption></figcaption></figure>
 

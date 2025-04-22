@@ -24,7 +24,7 @@ For **Transport Rules**, users must:
 * Define **departure start** and **departure stop** intervals.
 * Set the profit margin values (**PM1–PM4**). Negative profit margins can be set, but this requires the "Use negative value in profit margin" company feature. Please contact an administrator for assistance.
 
-The system will then update all price lists created with the selected transports. For example, a rule setting **PM1–PM4** for the interval **01-11-2024 to 30-11-2024** will apply to all price lists using transports **CPH-CDG**, **CPH-CDG-X0 THU 4 PP**, covering all hotels at the corresponding destination for agency **Primo Tours**.
+The system will then update all price lists created with the selected transports. For example, a rule setting **PM1–PM4** for the interval **01-11-2024 to 30-11-2024** will apply to all price lists using transports **CPH-CDG and** **CPH-CDG-X0 THU 4 PP**, covering all hotels at the corresponding destination for agency **Primo Tours**.
 
 <figure><img src=".gitbook/assets/image (56) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -43,7 +43,7 @@ For a given brand and departure interval, the profit margin (**PM**) is calculat
 
 Where:
 
-* **PM**: The profit margin set in the price list.
+* **PM**: The profit margin is set in the price list.
 * **PMT**: Profit margin from the **Transport Rule**.
 * **PMD**: Profit margin from the **Destination Rule**.
   * **PMD = PMA**: Profit margin from the **All Resorts Rule** (defined at the destination).
@@ -53,7 +53,7 @@ Where:
 Once added, rules are scheduled to update the profit margins.\
 The same rule can be defined for different departure intervals.
 
-**Example:** Profit margin rules defined below:
+**Example:** Profit margin rules are defined below:
 
 <figure><img src=".gitbook/assets/image (57) (1).png" alt=""><figcaption></figcaption></figure>
 

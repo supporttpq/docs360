@@ -16,19 +16,19 @@ layout:
 
 Applies for Administrator and Financial
 
-This module contains 5 other sub modules:
+This module contains 5 other submodules:
 
 ### &#x20;**Unregistered payments**&#x20;
 
 <figure><img src=".gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-The unregistered payments are the booking payments with no correspondent booking number. It should be possible to assign an unregistered payment to a certain booking; thus, the modified record won’t appear anymore as unregistered, but it will be found in Payment registration.
+The unregistered payments are the booking payments with no corresponding booking number. It should be possible to assign an unregistered payment to a certain booking; thus, the modified record won’t appear anymore as unregistered, but it will be found in Payment Registration.
 
 ### &#x20;**Negative balances**&#x20;
 
 <figure><img src=".gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-All the bookings for which money should be returned to the customer will be displayed here. The seller decides if the money must be returned to the customer and this should be set from booking page. The following is an extract of the information that could be displayed:
+All the bookings for which money should be returned to the customer will be displayed here. The seller decides if the money must be returned to the customer, and this should be set from the booking page. The following is an extract of the information that could be displayed:
 
 * Booking number
 * Seller
@@ -40,8 +40,8 @@ All the bookings for which money should be returned to the customer will be disp
 * Release payment - checkbox set from economics tab of the booking, informs if the money can be sent to the customer
 * Financed
 * Comments - taken from Comments tab of the booking, Economics section
-* Branch - taken from Economics tab of the booking, Other Information Section
-* Account - taken from Economics tab of the booking, Other Information Section
+* Branch - taken from the Economics tab of the booking, Other Information Section
+* Account - taken from the .Economics tab of the booking, Other Information Section
 
 ### **Unpaid bookings**&#x20;
 
@@ -57,7 +57,7 @@ Here should appear all the bookings that haven’t been paid until today. It sho
 * Booking total
 * Paid amount
 * Balance
-* Due amount It should be possible to sort the data from all 3 sub modules by agency and seller.
+* Due amount It should be possible to sort the data from all 3 submodules by agency and seller.
 
 ### **GDS payments**
 
@@ -70,12 +70,12 @@ The **GdsPayments** section allows users to track and manage payments related to
    * Select a **Seller** to view specific payment records.
    * Click **+ More filters** for additional filtering options.
 2. **Review Payment Records:**
-   * Check the **Booking No** to identify a specific transaction.
-   * Review **Customer, Phone Number, and Passenger Details** for accuracy.
-   * Verify **PNR Codes, Airlines, and Cost Prices** to confirm payment details.
-   * Cross-check **Departure & Arrival Airports** for route confirmation.
+   * Check the **booking number** to identify a specific transaction.
+   * Review **customer, phone number, and passenger details** for accuracy.
+   * Verify **PNR codes, airlines, and cost prices** to confirm payment details.
+   * Cross-check **departure & arrival airports** for route confirmation.
 3. **Manage Comments & Notes:**
-   * Review **Payment Comments** for any transaction-specific notes.
+   * Review **payment comments** for any transaction-specific notes.
    * Check **Admin Comments** for additional insights or follow-ups.
 4. **Edit or Update Payments:**
    * Click on the **Edit (Pencil) Icon** next to a record to modify details.
@@ -83,9 +83,9 @@ The **GdsPayments** section allows users to track and manage payments related to
 
 **Key Fields Explained:**
 
-* **Booking No:** Unique reference number for the transaction.
+* **Booking No.:** Unique reference number for the transaction.
 * **Customer & Phone:** Identifies the traveler and contact details.
-* **Passengers No:** Number of passengers for the booking.
+* **Passengers No.:** Number of passengers for the booking.
 * **Departure & Arrival Dates:** Flight schedule details.
 * **PNR Codes & Airlines:** Booking reference and airline information.
 * **Cost Price:** Total ticket price in the designated currency.
@@ -97,7 +97,7 @@ The **GdsPayments** section allows users to track and manage payments related to
 * Use the **filters** to refine searches for specific time frames, sellers, or bookings.
 * Ensure **cost prices** match expected payments to avoid discrepancies.
 
-### Refound payments
+### Refund payments
 
 The refund process allows users to return payments to customers when there is a negative balance in the system.
 
@@ -125,7 +125,7 @@ The refund process allows users to return payments to customers when there is a 
 
 **Key Fields Explained:**
 
-* **Booking No:** Unique reference number for the transaction.
+* &#x20;**Booking No.:** the booking number for the transaction.
 * **Seller:** The party responsible for the booking.
 * **Creation Date:** Date the transaction was recorded.
 * **Customer:** Name of the customer requesting the refund.

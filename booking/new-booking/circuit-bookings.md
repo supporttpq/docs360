@@ -14,11 +14,11 @@ layout:
 
 # Circuit Bookings
 
-Circuit bookings are custom made bookings. The feature is an upgrade for the hotel combination and offers more freedom to the user in selecting the component of the booking.
+Circuit bookings are custom-made bookings. The feature is an upgrade for the hotel combination and offers more freedom to the user in selecting the component of the booking.
 
 This allows the user to put together in the same booking more than 1 hotel and 1 transport. The hotels can be in different resorts or countries.
 
-The be used, this requires One Way transports and Custom Hotel days enabled for hotels, along with the related pricelist. More information on these can be found in [Custom Hotel Days Bookings](https://docs.tourpaq.com/docs/a-la-carte/custom-hotel-days-bookings/) and [Multiple One Way Flights Bookings](https://docs.tourpaq.com/docs/documentation/multiple-one-way-flights-bookings/)
+To be used, this requires one-way transports and custom hotel days enabled for hotels, along with the related price list. More information on these can be found in Custom Hotel Days Bookings and [Multiple One Way Flights Bookings](multiple-one-way-flights-bookings.md)
 
 An example of a custom hotel days booking
 
@@ -33,7 +33,7 @@ An example of a custom hotel days booking
 * Departure - 04.06.2020 / 09:30 from Porto Santo
 * Arrival - 04.06.2020 / 11:00 in Billund
 
-In this example we have 2 different hotels from 2 different countries(Hotel Palma Hotel Only in Palma - Mallorca, Hotel Porto Hotel Only in Porto Santo). The connection is made by 3 transports (Billund - Palma-Mallorca, Palma-Mallorca - Porto Santo, Porto Santo - Billund). All of them need to be defined in Tourpaq.
+In this example we have 2 different hotels from 2 different countries (Hotel Palma Hotel Only in Palma - Mallorca, and Hotel Porto Hotel Only in Porto Santo). The connection is made by 3 transports (Billund-Palma-Mallorca, Palma-Mallorca-Porto Santo, and Porto Santo-Billund). All of them need to be defined in Tourpaq.
 
 Ticket will look like this
 

@@ -13,6 +13,6 @@ A deposit needs the following fields to be set:
 
 Deposits are paid at a date agreed upon in the contract between companies/agencies and creditors
 
-A new function has been added here, **Special deposit rule**. It is used to precalculate the deposit amount for more deposit dates. It requires allotments and costs of the rooms to be set in the hotel.
+A new feature has been added: the **Special Deposit Rule**. It is used to pre-calculate the deposit amount for multiple deposit dates. It requires the allotments and costs of the rooms to be set in the hotel
 
 <figure><img src="../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

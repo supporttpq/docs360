@@ -14,7 +14,7 @@ layout:
 
 # How to create a creditor
 
-The main requirement to use Autobilling feature is to have a creditor created in the system.&#x20;
+The main requirement to use the Autobilling feature is to have a creditor created in the system.&#x20;
 
 A creditor can be created in Tourpaq from Users/Creditors.
 
@@ -27,12 +27,12 @@ Click on Create
 * Swift code.&#x20;
 * IBAN number&#x20;
 * Account credit. This is the account assigned to this creditor in your accounting system and will appear in the accounting system export file, showing that the total amount of the invoice will go into this account. There's a creditor number that is given automatically by the system.&#x20;
-* Currency of the creditor. It is important to know that the currency is the currency used to fill costs for this creditor in the system. Example: if there is a hotel that belongs to this creditor it will have the same currency in this case EURO.&#x20;
+* Currency of the creditor. It is important to know that the currency is the currency used to fill costs for this creditor in the system. Example: If there is a hotel that belongs to this creditor, it will have the same currency, in this case the euro.&#x20;
 * Automatic checkbox: the invoicing will be made automatically.&#x20;
-* The approval interval is the number of days from the generation of invoice that allows the creditor to approve or reject the invoice.&#x20;
-* Payment days: from the approval day, they are 3 days to pay the invoice.&#x20;
+* The approval interval is the number of days from the generation of the invoice that allows the creditor to approve or reject the invoice.&#x20;
+* Payment days: from the approval day, they have 3 days to pay the invoice.&#x20;
 * Invoices can be set to be sent as PDF
-* You have also postcode of creditor.&#x20;
+* You also have the postcode of the creditor.&#x20;
 * Country of the creditor&#x20;
 * And address&#x20;
 * The payment terms section stores internal comments that will be shown for the creditor.&#x20;

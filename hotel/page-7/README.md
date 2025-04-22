@@ -14,37 +14,37 @@ layout:
 
 # Hotel creation
 
-This feature is available for administrator user type.
+This feature is available for the administrator user type.
 
 ### General <a href="#general" id="general"></a>
 
 Mandatory fields:
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Code - hotel code
 * Name - hotel name
 * Resort - resort name
-* Contract type - used for prioritising hotels in the **Select Hotel** pop-up when making a booking.
+* Contract type - used for prioritizing hotels in the **Select Hotel** pop-up when making a booking.
 * Standard room
 
 Without these fields, you cannot create the hotel.
 
 Other fields that are necessary for the hotel to work properly:
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Supplier - supplier of the hotel
 * Stars
 * Infant price - price for infants that stay in the hotel
 * Standard room - main room type of the hotel
 * Status - set if the hotel is hidden or visible in the hotel dashboard
-* Facilities template - select a facility template from those available, will allow the setting of the facilities available in the hotel from **Web** tab, more information is availlable at [Facilities](https://docs.tourpaq.com/docs/documentation/facilities)
-* Hotel combination - allows for 2 or more hotels to be combined into 1, drawing room allotments from the hotels selected, for more information please check [Hotel Combination](https://docs.tourpaq.com/docs/hotel/hotel-combination)
+* Facilities template - select a facility template from those available, which will allow the setting of the facilities available in the hotel from **the Web** tab. more information is available at [Facilities](../../facilities.md)
+* Hotel combination - allows for 2 or more hotels to be combined into 1, drawing room allotments from the hotels selected. for more information, please check [Hotel Combination](../../hotel-combination.md)
 * Child price ages - age interval that benefits from the child price from price list
-* Child ages for extra bed - age interval for children when taking into account the "extra bed child" from the room, if the age is outside of the interval, children will use an adult extra bed(overrites the age set in the base room type)
+* Child ages for extra bed - age interval for children when taking into account the "extra bed child" from the room; if the age is outside of the interval, children will use an adult extra bed (overrides the age set in the base room type)
 * Adult hotel - sets an age limit preventing guests to book if there is a passenger with the age below the limit
-* Order No - Tourpaq API, order of the hotels sent to website
+* Order No. - Tourpaq API, order of the hotels sent to website
 * Customise room offer priority
 * Issue voucher - allows for vouchers to be issued
 * For one way - a hotel used only for one way transports
@@ -59,7 +59,7 @@ Other fields that are necessary for the hotel to work properly:
 
 This field allows you to set a custom star rating for the hotel. If specified, the custom rating will be displayed on the ticket instead of the standard star rating.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The header text for the "Stars" column can also be customized, but only when the Customized Stars field is filled. This setting is located in Users → Brands → Ticket under the name "Customized Star".
 
@@ -71,7 +71,7 @@ For autobilling feature please check [Autobilling](../../autobilling/)
 
 ### Brands <a href="#brand" id="brand"></a>
 
-Brand assignment of a hotel is the next thing to do. An user can choose between the availability of a hotel on a brand. It can be either used:
+Brand assignment of a hotel is the next thing to do. A user can choose between the availability of a hotel on a brand. It can be either used:
 
 * only in office
 * only on internet
@@ -85,13 +85,13 @@ Add a new room to the hotel.
 
 <figure><img src="../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Override check box allows the creation of a child room type specific for that hotel based on the selected room type. The new room type can be edited.
+totoThe override check box allows the creation of a child room type specific for that hotel based on the selected room type. The new room type can be edited.
 
 <figure><img src="../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The new room will not be displayed in the room dropdown
 
-If mistakes are made when adding a new room, you cannot delete the inserted room, but you can leave it there since for a room to be booked it needs allotments and prices.
+If mistakes are made when adding a new room, you cannot delete the inserted room, but you can leave it there since for a room to be booked, it needs allotments and prices.
 
 **Hide room** - hides the room, available only if there is no allotment for the room
 
@@ -103,7 +103,7 @@ Generate the number of rooms available at the hotel and the period in which they
 
 <figure><img src="../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-To finish the process, press //Insert//, followed by //Generate//.
+To finish the process, press Insert, followed by Generate.
 
 ### Shared Allotments <a href="#shared-allotments" id="shared-allotments"></a>
 
@@ -121,21 +121,21 @@ Used for controlling allotments.
 
 <figure><img src="../../.gitbook/assets/image (62) (1).png" alt=""><figcaption></figcaption></figure>
 
-The number of availlable rooms can be set from here by increasing or decreasing the value from the NO. RMS column.
+The number of available rooms can be set from here by increasing or decreasing the value from the NO. RMS column.
 
-Also, from the transport column, the number of rooms availlable for the transport can be controlled, when there are more than one transport assigned to that room type. See more on [Hotel Allotments / Hotel Allotment Control](https://docs.tourpaq.com/docs/hotel/hotel-allotments) page.
+Also, from the transport column, the number of rooms available for the transport can be controlled when there is more than one transport assigned to that room type. See more on the Hotel Allotments/Hotel Allotment Control page.
 
 ### Disc.Ex.Beds <a href="#discexbeds" id="discexbeds"></a>
 
-Used to define the discount received by the passengers that use an extra bed in a room. Please check [Extra Bed Discount](https://docs.tourpaq.com/docs/hotel/extra-bed-discount)
+Used to define the discount received by the passengers that use an extra bed in a room. Please check [Extra Bed Discount](discount-extra-beds.md)
 
 ### Room cost <a href="#room-cost" id="room-cost"></a>
 
-Used to define the amount paid by the agency to the hotel for the rooms. It is found on the contract between the hotel and agency. Please check [Room Cost](https://docs.tourpaq.com/docs/hotel/room-cost)
+Used to define the amount paid by the agency to the hotel for the rooms. It is found on the contract between the hotel and agency. Please check [Room Cost](room-cost.md)
 
-### Ex.Beds Costs <a href="#exbeds-costs" id="exbeds-costs"></a>
+### Ex. Beds Costs <a href="#exbeds-costs" id="exbeds-costs"></a>
 
-Used to define the cost of the extra bed paid by the agency. Please check [Extra Bed Costs](https://docs.tourpaq.com/docs/hotel/extra-bed-costs)
+Used to define the cost of the extra bed paid by the agency. Please check [Extra Bed Costs](extra-beds-costs.md)
 
 ### Special offers <a href="#special-offers" id="special-offers"></a>
 
@@ -143,7 +143,7 @@ Used to define discounts offered by the hotel to the agency. Please check [Room 
 
 ### Photos <a href="#photos" id="photos"></a>
 
-From here you can add the photos for hotel and rooms. Photos can be added for each room type by selecting the room type from the dropdown. All photos appear on the website, **Main photo** is the photo that will be displayed for the hotel
+From here you can add the photos for the hotel and rooms. Photos can be added for each room type by selecting the room type from the dropdown. All photos appear on the website. **Main photo** is the photo that will be displayed for the hotel
 
 ### Web <a href="#web" id="web"></a>
 
@@ -153,13 +153,13 @@ Used to define the facilities available at the hotel. Must have the Facilities t
 
 Adds layout to a hotel.
 
-More information is available in [Hotel Layout](https://docs.tourpaq.com/docs/hotel/hotel-layout)
+More information is available in [Hotel Layout](hotel-layout.md)
 
 To use this feature, please contact Tourpaq Support.
 
 ### Room numbers <a href="#room-numbers" id="room-numbers"></a>
 
-Adds numbers to the rooms of a hotel with layout.
+Adds numbers to the rooms of a hotel with a layout.
 
 **!!! Can only be used if the layout is used.**
 
@@ -167,7 +167,7 @@ Adds numbers to the rooms of a hotel with layout.
 
 Used to configure the sending of lists with bookings made for the hotel.
 
-Please check [Hotel Reporting](https://docs.tourpaq.com/docs/hotel/hotel-reporting)
+Please check [Hotel Reporting](communication/hotel-reporting.md)
 
 ### Deposit <a href="#deposit" id="deposit"></a>
 

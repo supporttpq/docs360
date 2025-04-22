@@ -1,9 +1,17 @@
 ---
+description: Your Complete Guide to Tourpaq Travel Management Solutions
+hidden: true
+noIndex: true
+cover: .gitbook/assets/Tourpaq Logo (1).jpg
+coverY: 0
 layout:
+  cover:
+    visible: true
+    size: hero
   title:
     visible: true
   description:
-    visible: false
+    visible: true
   tableOfContents:
     visible: true
   outline:
@@ -12,104 +20,63 @@ layout:
     visible: true
 ---
 
-# Dashboard
+# Welcome to the Tourpaq Manual Documentation
 
-The dashboard is the application start page. The main reason for this page is to receive information about the booking system quickly.
+## 🧭 Overview
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+Welcome to the official **Tourpaq Documentation**, your go-to resource for understanding, using, and mastering the Tourpaq travel management system. Whether you're a tour operator, travel agent, or system administrator, this manual will guide you through everything from basic setup to advanced features.
 
-This dashboard provides a comprehensive overview of the sales and customer activity. The data is segmented into various widgets, offering insights into bookings, destinations, revenue, top-performing entities, and operational alerts.
+Tourpaq is designed to simplify and enhance your travel business operations. With powerful tools for booking management, customer handling, reporting, and integrations, Tourpaq ensures that your workflows are smooth, efficient, and scalable.
 
-### Filter Controls&#x20;
+***
 
-* **Booking Period:** The selected date range during which bookings occurred.
-* **Users**: Filter dropdown to select specific users.
-* **Brands**: Selection for filtering by brand.
-* **Clear**: Button to reset applied filters.
+## 📘 What You'll Find in This Documentation
 
-### &#x20;Overview Widgets
+* **Getting Started** – Learn how to access and set up your Tourpaq account.
+* **Core Modules** – Deep dive into key modules such as Booking, CRM, Product Management, and more.
+* **User Roles & Permissions** – Understand how to manage user access and roles efficiently.
+* **Integrations** – Explore how to integrate Tourpaq with third-party tools and services.
+* **FAQs & Troubleshooting** – Find quick solutions to common issues.
+* **Best Practices & Tips** – Discover expert advice to optimize your use of the platform.
 
-a. **Offers**
+***
 
-* **Total Offers**: Number of total offers made to customers.
-* **Active**: Offers that are still valid and awaiting customer response.
-* **Unsold**: Offers that did not convert into bookings.
-* **Sold**: Offers that successfully converted into bookings.
-* **Hit Rate**: The percentage of sold offers vs.
+## 🎯 Who Should Use This Manual?
 
-b. **Service Cases**
+This documentation is tailored for:
 
-* **New**: Cases newly reported or created.
-* **Closed**: Cases that have been resolved.
-* **In Progress**: Currently being worked on.
-* **Waiting**: On hold or pending further action.
+* **New Users** looking to get up and running quickly
+* **Experienced Staff** seeking deeper knowledge of advanced features
+* **IT & Support Teams** needing configuration and troubleshooting help
+* **Business Owners & Managers** wanting insights into how to best leverage Tourpaq
 
-c. **Questionnaires**
+***
 
-**Total**: Number of feedback or survey forms received from customers.
+## 🚀 Let’s Get Started
 
-d. **Customers**
+Use the menu on the left to navigate through the sections. You can also search for specific topics using the search bar above.
 
-* **Total**: Number of customers during the selected period.
-* **New**: First-time customers.
-* **Recurring**: Returning customers.
+If you’re new, we recommend starting with the **Getting Started** section.
 
-e. **Notifications**
+***
 
-### Sales Performance
+If you need additional support, our support team is always ready to assist. Happy exploring!
 
-**a. Sales**
+## Table of contents
 
-* **Bookings**: Total number of successful bookings.
-* **Pax**: Total number of passengers (not necessarily equal to bookings).
-* **Change %**: Comparison with previous period (in this case, +68%).
-
-**b. Bar Chart**
-
-* **X-Axis**: Weekly time periods (e.g., 17/3–23/3/2025).
-* **Y-Axis**: Number of:
-  * **PAX**: (Blue) Total passengers.
-  * **Bookings**: (Dark blue) Number of bookings.
-  * **New Offers**: (Green) Number of new offers made in that week.
-
-**c. Guest on Destinations**
-
-* **Bookings**: Number of bookings linked to specific travel destinations.
-* **Pax**: Number of passengers included in those bookings.
-* **Change %**: Comparison to previous period (e.g., +49%).
-
-### Destination & Accommodation Insights
-
-**a. Top-Selling Resorts**
-
-* **Location Names**: Tourist destinations with the highest number of pax.
-* **Pax**: Number of passengers booked to each resort.
-
-**b. Top-Selling Hotels**
-
-* **Hotel Names**: Most-booked hotels.
-* **Pax**: Number of passengers staying at each hotel.
-
-**c. Top-Selling Days**
-
-* **Date**: Specific day when bookings were high.
-* **Pax**: Number of passengers booked on that day.
-
-### Financial Summary
-
-**Bookings -** Total confirmed reservations.
-
-**Profit Total -** Net profit (Revenue – Costs).
-
-* **Example**: DKK -1,727,600 means a loss.
-* **Profit/Pax**: Average profit or loss per passenger.
-
-**Extra Total -** Revenue from additional services (e.g., upgrades, add-ons).
-
-* **Example**: DKK 105,366 in extras sold.
-
-**DB Total -** Gross profit (Revenue – Direct Costs).
-
-* **Example**: DKK -2,698,116 indicates a negative gross margin.
-
-**Turnover Total -** Total revenue generated (before costs).
+* [Dashboard](broken-reference)
+* [Notifications](broken-reference)
+* [Booking](broken-reference)
+* [Customer](broken-reference)
+* [Tickets](broken-reference)
+* [Finance](broken-reference)
+* [Price List](broken-reference)
+* [Hotel](broken-reference)
+* [Transport](broken-reference)
+* [Quality](broken-reference)
+* [Export](broken-reference)
+* [Users](broken-reference)
+* [Guest App](broken-reference)
+* [Extras Setup](broken-reference)
+* [Email Setup](broken-reference)
+* [Setup](broken-reference)
