@@ -16,18 +16,18 @@ layout:
 
 The dashboard is the application's start page. The main reason for this page is to receive information about the booking system quickly.
 
-<figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5) (2).png" alt=""><figcaption></figcaption></figure>
 
 This dashboard provides a comprehensive overview of the sales and customer activity. The data is segmented into various widgets, offering insights into bookings, destinations, revenue, top-performing entities, and operational alerts.
 
-### Filter Controls&#x20;
+### Filter Controls
 
 * **Booking Period:** The selected date range during which bookings occurred.
 * **Users**: Filter dropdown to select specific users.
 * **Brands**: Selection for filtering by brand.
 * **Clear**: Button to reset applied filters.
 
-### &#x20;Overview Widgets
+### Overview Widgets
 
 a. **Offers**
 

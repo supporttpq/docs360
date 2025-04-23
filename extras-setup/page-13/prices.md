@@ -14,7 +14,7 @@ A extras can have one or more prices. The prices are defined based on some inter
 * **Margin** - Margin of profit when rent a car is checked in the extras configuration and defines the amount of money added in plus to the basic cost of the car.
 * **Max cost** - Defines the maximum cost that a car can have so that the agency can sell it.
 * **Per Day** - The price and cost is calculated per day. In case the Days is specified the price will be calculated based on this number otherwise the cost and price will be calculated based on the number of booked days.
-* **Contract**&#x20;
+* **Contract**
 
 The cost/price per day is calculated based on the formula: If Days is filled: `Price*Days=Extra_Price` If Days is empty: `Price*Booked_Days=Extra_Price`
 
@@ -24,7 +24,7 @@ A new feature in Tourpaq that allows the setting of different prices for each br
 
 If only the default price is set, it will be applied to all agencies. If an agency price is set different of the default price, the agency price will be available only for the selected agency.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 Editing the price is only available for the default price. For the agency price the only editable fields are **Price**, **Group Price**, **Margin** and **Max cost**
 

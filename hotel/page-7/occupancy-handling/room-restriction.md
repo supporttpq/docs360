@@ -8,10 +8,10 @@ This ensures that hotels can customize bed availability per room type and mainta
 
 Room restrictions can be configured in the Base Room Type under Hotel → Base Room Types → Edit,
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;as well as in the Hotel Room under Hotel → Room Types → Edit.
+as well as in the Hotel Room under Hotel → Room Types → Edit.
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
 
 Base Room Type rules apply by default unless Hotel Room Type rules are set. Base Room rules do not override Hotel Room rules.

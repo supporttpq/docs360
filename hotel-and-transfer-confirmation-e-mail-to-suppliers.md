@@ -2,7 +2,7 @@
 
 This feature allows the sending of confirmation e-mails to suppliers if they need to confirm the reservation of rooms and products for bookings.
 
-It uses [Dynamic E-mail/SMS Center](email-setup/page-14.md), as a special e-mail template is required.
+It uses [Dynamic E-mail/SMS Center](email-setup/page-14/), as a special e-mail template is required.
 
 E-mails can be sent from the booking, if confirmation is necessary. A button named **Send Confirmation** will appear on the booking if the action is required.
 
@@ -10,7 +10,7 @@ E-mails can be sent from the booking, if confirmation is necessary. A button nam
 
 ### Setting up Confirmation E-mails <a href="#setting-up-confirmation-e-mails" id="setting-up-confirmation-e-mails"></a>
 
-Confirmation e-mails can be set up from [Dynamic E-mail/SMS Center](email-setup/page-14.md) by using one of the two available confirmation e-mail types:
+Confirmation e-mails can be set up from [Dynamic E-mail/SMS Center](email-setup/page-14/) by using one of the two available confirmation e-mail types:
 
 * Confirmation Transfer
 * Confirmation Hotel

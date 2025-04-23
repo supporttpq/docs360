@@ -8,13 +8,13 @@ Packages Generator can be accessed from Price List -> Packages Generator. Users 
 
 After clicking "Save," the package will be added to the list and can be generated.
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (2).png" alt=""><figcaption></figcaption></figure>
 
 Generated packages can be deleted by clicking Remove Packages, and after that, the rule based on which packages were generated can also be removed.
 
 After a package is generated, it will be available in "Select offer":
 
-<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (2).png" alt=""><figcaption></figcaption></figure>
 
 Prices displayed in Select Offer are with discounts/supplements already included.
 

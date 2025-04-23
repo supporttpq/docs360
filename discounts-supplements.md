@@ -74,7 +74,7 @@ A manual discount/supplement will be manually chosen for a passenger; it can be 
 
 #### **Overview**
 
-<figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (8) (2).png" alt=""><figcaption></figcaption></figure>
 
 * Discount or Suppl: choose between either discount or supplement behaviour
 * General/Specified: choose between the general or specificate behaviour
@@ -127,38 +127,38 @@ The entities having this checkbox active will:
 
 #### Prices
 
-Prices are defined for certain periods of time, periods that will consider the departure date of a booking. If defined here, this price will overrule the general price.&#x20;
+Prices are defined for certain periods of time, periods that will consider the departure date of a booking. If defined here, this price will overrule the general price.
 
-<figure><img src=".gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-In the Discount/supplements general window, go to the Prices tab and click on New Price.&#x20;
+In the Discount/supplements general window, go to the Prices tab and click on New Price.
 
-* Set the age limits.&#x20;
-* Set the departure start date and departure end date.&#x20;
-* Set the booking start date and the booking end date.&#x20;
-* Next, set the price of the discount/supplement. This price is overwritten by prices L1 to L4&#x20;
-  * Price L1 is the price for interval 1 of the transport&#x20;
-  * Price L2 is the price for interval 2&#x20;
-  * Price L3 is the price for interval 3&#x20;
-  * Price L4 is the price for interval 4&#x20;
+* Set the age limits.
+* Set the departure start date and departure end date.
+* Set the booking start date and the booking end date.
+* Next, set the price of the discount/supplement. This price is overwritten by prices L1 to L4
+  * Price L1 is the price for interval 1 of the transport
+  * Price L2 is the price for interval 2
+  * Price L3 is the price for interval 3
+  * Price L4 is the price for interval 4
 
-&#x20;      Any value from these intervals will overwrite the general price. To avoid overwriting the price, just let the prices for intervals empty (not 0).&#x20;
+Any value from these intervals will overwrite the general price. To avoid overwriting the price, just let the prices for intervals empty (not 0).
 
-* Then, set the general cost price for the discount/supplement and cost price for each interval.&#x20;
-* Per day check box sets the price for each stay day and will be placed as a total on the booking.&#x20;
-* DUD(days until departure) – this will prevent the discount to be applied on a booking, if the booking is created with the given number of days before departure date.&#x20;
-* BP% - sets the price as a percentage of the basic price&#x20;
+* Then, set the general cost price for the discount/supplement and cost price for each interval.
+* Per day check box sets the price for each stay day and will be placed as a total on the booking.
+* DUD(days until departure) – this will prevent the discount to be applied on a booking, if the booking is created with the given number of days before departure date.
+* BP% - sets the price as a percentage of the basic price
 * CD - date when the price was created
 
 #### Stop Sale Intervals
 
-Any discount/supplement can be removed from selling by creating a stop sale interval for it. To do that, just go to Stop sale interval tab.&#x20;
+Any discount/supplement can be removed from selling by creating a stop sale interval for it. To do that, just go to Stop sale interval tab.
 
 <figure><img src=".gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
-* Click new interval&#x20;
-* Set the start date and stop date for the interval in which the discount cannot be sold.&#x20;
-* Click on save.&#x20;
+* Click new interval
+* Set the start date and stop date for the interval in which the discount cannot be sold.
+* Click on save.
 
 The stop sale will run for each date and reduce the number of discounts/supplements available.
 
@@ -173,25 +173,25 @@ A discount/supplement could be universally available, or it could be available f
 
 #### Resources
 
-In the discount/supplement general window, go to Resources tab.&#x20;
+In the discount/supplement general window, go to Resources tab.
 
-Here we can select the resource type from the dropdown: destination, resort, hotel, room, transport, real transport.&#x20;
+Here we can select the resource type from the dropdown: destination, resort, hotel, room, transport, real transport.
 
 <figure><img src=".gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Resources are used to limit the availability of discount/supplement to the selected entities.&#x20;
+Resources are used to limit the availability of discount/supplement to the selected entities.
 
-* Destinations will limit the availability of the discount/supplement to the selected destinations.&#x20;
-* Resorts will limit the availability of the discount/supplement to the selected resorts.&#x20;
-* Hotels will limit the availability of the discount/supplement to the selected hotels&#x20;
-* Transports will limit the availability of the discount/supplement to the selected transports.&#x20;
-* Rooms will limit the availability of the discount/supplement to the selected rooms from the selected hotels. There are two boxes: first containing the hotels and the second containing rooms. Rooms will not appear unless a hotel is selected.&#x20;
-* Real Transport will limit the availability of the discount/supplement to the selected transports.&#x20;
+* Destinations will limit the availability of the discount/supplement to the selected destinations.
+* Resorts will limit the availability of the discount/supplement to the selected resorts.
+* Hotels will limit the availability of the discount/supplement to the selected hotels
+* Transports will limit the availability of the discount/supplement to the selected transports.
+* Rooms will limit the availability of the discount/supplement to the selected rooms from the selected hotels. There are two boxes: first containing the hotels and the second containing rooms. Rooms will not appear unless a hotel is selected.
+* Real Transport will limit the availability of the discount/supplement to the selected transports.
 
-There are two rules (set from system setup ) when using resources:&#x20;
+There are two rules (set from system setup ) when using resources:
 
 1. The first one is "AND". If used, it will limit the discount to all selected resources types. With this configuration the extra will be bookable If all the requirements are met on the booking.
-2. The second rule is "OR". If that rule is active, the extra can be booked if only one of the requirements is met.&#x20;
+2. The second rule is "OR". If that rule is active, the extra can be booked if only one of the requirements is met.
 
 After all these are set, click on save resources.
 
@@ -201,47 +201,47 @@ On Discount/supplement General window, go to Photos tab:
 
 <figure><img src=".gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* Click on Add picture,&#x20;
-* Click on browse,&#x20;
-* Select which photo you want to add,&#x20;
-* Click open&#x20;
-* Insert the title for the picture you're adding,&#x20;
-* Click on save button.&#x20;
+* Click on Add picture,
+* Click on browse,
+* Select which photo you want to add,
+* Click open
+* Insert the title for the picture you're adding,
+* Click on save button.
 
-We can add other pictures by repeating the previous process. We can add more pictures for the same product.&#x20;
+We can add other pictures by repeating the previous process. We can add more pictures for the same product.
 
-* Choose which of the added photos is the main photo, by clicking Main photo. Main photo is the photo that will be displayed for the discount/supplement. All the photos will be shown on the website.&#x20;
+* Choose which of the added photos is the main photo, by clicking Main photo. Main photo is the photo that will be displayed for the discount/supplement. All the photos will be shown on the website.
 * To remove images, just click delete.
 
 #### Links
 
-For a discount/supplement (set as Specified/Permanent) to be linked to a product, the extra will be chosen from this section. For this tab to be active, the "link to extras" checkbox must be selected in the general tab. This feature allows giving a product free of charge to the customers.&#x20;
+For a discount/supplement (set as Specified/Permanent) to be linked to a product, the extra will be chosen from this section. For this tab to be active, the "link to extras" checkbox must be selected in the general tab. This feature allows giving a product free of charge to the customers.
 
-There are two scenarios to use this feature:&#x20;
+There are two scenarios to use this feature:
 
-* First, if a discount is linked to a product, when the product is manually chosen for a certain passenger or automatically applied by the system (because of the option Automatically select extras (Web Booking), then a discount is automatically applied to that passenger. The value of the discount is the price of the product.&#x20;
-* Second, Tourpaq also supports giving a free product for a specific timeframe, without having it set as automatically to the customers. This can be obtained by having the discount permanent and linked to the product, but also set the discount as “Automatically select extras (in Web Booking)”. The product will be selected automatically in the offer even if the product is not set as automatically applicable.&#x20;
+* First, if a discount is linked to a product, when the product is manually chosen for a certain passenger or automatically applied by the system (because of the option Automatically select extras (Web Booking), then a discount is automatically applied to that passenger. The value of the discount is the price of the product.
+* Second, Tourpaq also supports giving a free product for a specific timeframe, without having it set as automatically to the customers. This can be obtained by having the discount permanent and linked to the product, but also set the discount as “Automatically select extras (in Web Booking)”. The product will be selected automatically in the offer even if the product is not set as automatically applicable.
 
-Other destinations or booking dates outside the discount setting will not have the product auto selected or free of charge.&#x20;
+Other destinations or booking dates outside the discount setting will not have the product auto selected or free of charge.
 
 <figure><img src=".gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
-Go to links tab.&#x20;
+Go to links tab.
 
-* Click on categories dropdown. For example, the Golf type of products is chosen for the filter, the golf extras will be displayed&#x20;
-* Choose the extra to link the discount/supplement to&#x20;
-* Click on save products.&#x20;
+* Click on categories dropdown. For example, the Golf type of products is chosen for the filter, the golf extras will be displayed
+* Choose the extra to link the discount/supplement to
+* Click on save products.
 
 Click save to have the link between the product and the discount/supplement
 
 #### Brands
 
-In Discount/supplement general window, go to Brands tab and choose the brand that will sale the discount/supplement.&#x20;
+In Discount/supplement general window, go to Brands tab and choose the brand that will sale the discount/supplement.
 
-* Default setting is Not assigned. At this stage the discount/supplement cannot be sold.&#x20;
+* Default setting is Not assigned. At this stage the discount/supplement cannot be sold.
 * For sale allows the discount/supplement to be selected only in Tourpaq office environment by seller and admin users when making or editing a booking.
-* &#x20;Internet sale allows the discount/supplement to be selected when making a booking from the website and also when editing the booking in customer center.&#x20;
-* For sale and internet sale, combines both options.&#x20;
+* Internet sale allows the discount/supplement to be selected when making a booking from the website and also when editing the booking in customer center.
+* For sale and internet sale, combines both options.
 
 #### Bonus code
 
@@ -249,16 +249,16 @@ A coded discount or bonus code discount is a discount given to guests during a c
 
 <figure><img src=".gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
-To set a coded discount, first set the code name, plain text, list text and bonus code name. The text chosen for the bonus code has to be between 4 and 20 characters long&#x20;
+To set a coded discount, first set the code name, plain text, list text and bonus code name. The text chosen for the bonus code has to be between 4 and 20 characters long
 
-General settings for a bonus code discount to perform as required are:&#x20;
+General settings for a bonus code discount to perform as required are:
 
-* discount&#x20;
-* specificate&#x20;
-* manual.&#x20;
+* discount
+* specificate
+* manual.
 
-Click insert.&#x20;
+Click insert.
 
-Click on brands and assign the discount to a brand. and click save.&#x20;
+Click on brands and assign the discount to a brand. and click save.
 
 Back to general settings and click save again.

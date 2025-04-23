@@ -295,7 +295,8 @@
 * [Tickets attachments](email-setup/tickets-attachments/README.md)
   * [Ticket Attachments](email-setup/tickets-attachments/ticket-attachments.md)
   * [Ticket texts](email-setup/tickets-attachments/ticket-texts.md)
-* [Dynamic E-mail/SMS Center](email-setup/page-14.md)
+* [Dynamic E-mail/SMS Center](email-setup/page-14/README.md)
+  * [Dynamic Email - Upload Image](email-setup/page-14/dynamic-email-upload-image.md)
 
 ***
 
