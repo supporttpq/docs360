@@ -10,7 +10,7 @@ The **Invoice Listing Dashboard** provides a comprehensive interface for managin
 
 <figure><img src=".gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
-### Filters and Controls (Top Section)
+### Filters and Controls&#x20;
 
 Users can filter the displayed invoices based on various parameters:
 

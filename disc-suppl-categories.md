@@ -19,7 +19,7 @@ The list contains predefined supplement or discount categories with the followin
 
 Click the **Create** button in the top-right to add a new category.
 
-<figure><img src=".gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Required Fields:
 

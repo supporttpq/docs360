@@ -1,6 +1,6 @@
 # E-tickets Overview
 
-Această pagină oferă o imagine de ansamblu asupra biletelor electronice (E-Tickets) generate și trimise către clienți. Aceasta permite monitorizarea statusului emailurilor trimise cu biletele electronice și gestionarea eventualelor erori.
+This page provides an overview of the electronic tickets (E-Tickets) generated and sent to customers. It allows monitoring the status of emails sent with electronic tickets and managing any errors.
 
 ### **1.** Main elements of the page
 

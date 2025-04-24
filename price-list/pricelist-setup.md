@@ -133,19 +133,13 @@ Fields:
 
 Below the filters are 3 tabs:
 
-**Prices**
+**Prices -** Contains the actual pricelist
 
-Contains the actual pricelist
-
-**Discounts**
-
-Contains discounts from the hotel
+**Discounts -** Contains discounts from the hotel
 
 <figure><img src="../.gitbook/assets/image (42) (1).png" alt=""><figcaption></figcaption></figure>
 
-**Column filters**
-
-Allows the user to filter among the columns shown in prices. All unchecked filters will be displayed in **PRICES**
+**Column filters -** Allows the user to filter among the columns shown in prices. All unchecked filters will be displayed in **PRICES**
 
 <figure><img src="../.gitbook/assets/image (43) (1).png" alt=""><figcaption></figcaption></figure>
 

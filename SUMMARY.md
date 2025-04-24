@@ -238,26 +238,35 @@
 
 ***
 
+* [Brands](brands/README.md)
+  * [How to add a new Brand](brands/how-to-add-a-new-brand.md)
+  * [How to set Payment settings](brands/how-to-set-payment-settings.md)
+  * [How to set SMTP Settings](brands/how-to-set-smtp-settings.md)
+  * [How to set GDS](brands/how-to-set-gds.md)
 * [Company Setup](company-setup.md)
 * [Suppliers](suppliers/README.md)
   * [Hotel Supplier](suppliers/hotel-supplier.md)
   * [Extra suplier](suppliers/extra-suplier.md)
-* [Creditor](creditor.md)
+* [Hotel Manager](hotel-manager.md)
 * [Guides](guides/README.md)
   * [Guide Names](guides/guide-names.md)
   * [Guide Profiles](guides/guide-profiles.md)
+* [Creditor](creditor.md)
 * [2 Factor Authentication](2-factor-authentication.md)
 * [GDPR (General Data Protection Regulation)](gdpr-general-data-protection-regulation.md)
 
 ## Guest App
 
-* [Settings](guest-app/page-12.md)
-
 ***
 
 * [Destination - Mobile Guide App](destination-mobile-guide-app.md)
 * [Visit Sun App](visit-sun-app.md)
+* [Vocabulary](vocabulary.md)
+* [Insider Tips](insider-tips.md)
+* [Maps](maps.md)
 * [Weekly Activities](weekly-activities.md)
+* [Good to Know](good-to-know.md)
+* [Settings](page-12.md)
 
 ## Extras Setup
 

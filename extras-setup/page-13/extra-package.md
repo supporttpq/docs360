@@ -10,4 +10,4 @@ To use an **Extra Package**, first Extras have to be assigned as **Content type*
 
 &#x20;A new tab, **Package content**, will appear. In this tab, the extras marked as **Content type** can be selected to be included in the package.
 
-<figure><img src="../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>

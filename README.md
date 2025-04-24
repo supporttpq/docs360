@@ -47,7 +47,7 @@ This documentation is tailored for:
 * **New Users** looking to get up and running quickly
 * **Experienced Staff** seeking deeper knowledge of advanced features
 * **IT & Support Teams** needing configuration and troubleshooting help
-* **Business Owners & Managers** wanting insights into how to best leverage Tourpaq
+* **For Business Owners & Managers**: Gaining insights on maximizing the use of Tourpaq.
 
 ***
 
@@ -58,22 +58,3 @@ Use the menu on the left to navigate through the sections. You can also search f
 ***
 
 If you need additional support, our support team is always ready to assist. Happy exploring!
-
-## Table of contents
-
-* [Dashboard](broken-reference)
-* [Notifications](broken-reference)
-* [Booking](broken-reference)
-* [Customer](broken-reference)
-* [Tickets](broken-reference)
-* [Finance](broken-reference)
-* [Price List](broken-reference)
-* [Hotel](broken-reference)
-* [Transport](broken-reference)
-* [Quality](broken-reference)
-* [Export](broken-reference)
-* [Users](broken-reference)
-* [Guest App](broken-reference)
-* [Extras Setup](broken-reference)
-* [Email Setup](broken-reference)
-* [Setup](broken-reference)

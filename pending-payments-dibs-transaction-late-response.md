@@ -70,9 +70,9 @@ Please note! We do not recommend applying big changes on the PENDPAY booking; yo
 
 If you receive a payment for the booking in other ways than through DIBS (e.g., bank imports, cash, etc.), the booking will not leave the PENDPAY status; only a DIBS reply can make it become an OK status.
 
-So, if you instantly need to obtain an OK booking for the customer, please manually set a new one in the system and link whatever payments you have to it. The PENDPAY one still needs to receive a final status from DIBS in order to reach a final status -OK—or a situation where an admin/sales agent will overview the outcome. The "Refund money" tab on the dashboard can present the following situations that need to be overviewed:
+So, if you instantly need to obtain an OK booking for the customer, please manually set a new one in the system and link whatever payments you have to it. The PENDPAY one still needs to receive a final status from DIBS in order to reach a final status - OK — or a situation where an admin/sales agent will overview the outcome. The "Refund money" tab on the dashboard can present the following situations that need to be overviewed:
 
-* Refund money -the amount was captured on the credit card, but the booking cannot be placed.
+* Refund money - the amount was captured on the credit card, but the booking cannot be placed.
   * At this point, the brand administrator needs to refund the amount from the DIBS admin interface and also take out the transaction from the system by inserting an out/credit transaction with the same value on the booking. Canceling the PENDPAY booking is optional but recommended for clarity in the statistical overview.
   * Another option is to withdraw the money from the booking using a cash-out option, cancel the booking, and place another one. Then add the money to the new booking using a cash-in option with the cancelled booking number and transaction ID in the comment.
 * Check booking - when the service found that the capture was successful and was able to save the booking as OK. In these situations, please check in the internal comment of the booking if the customer had chosen transport seating or hotel layout (where the case) and manually set them on the booking. Also, please check the booking's overall integrity.
