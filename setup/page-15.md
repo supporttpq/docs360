@@ -42,8 +42,33 @@ The **Arrival Gateways** interface provides a structured list of airport gateway
 
 ### Notes
 
-* "Extended Europe" indicates destinations that are not part of the standard European classification but are still considered within an extended coverage area.
-* "World" signifies destinations outside of the European insurance coverage.
-* Some locations are categorized differently based on insurance policies.
+1. "Extended Europe" indicates destinations that are not part of the standard European classification but are still considered within an extended coverage area.
+
+"**Extended Europe**" in the context of **insurance**, particularly **travel or car insurance**, refers to a broader geographic coverage area than just the countries of the **European Union (EU)** or the **European Economic Area (EEA)**.
+
+#### What is "Extended Europe"?
+
+It typically includes:
+
+* All **EU and EEA countries**
+* **Non-EU European countries** like:
+  * **Switzerland**
+  * **Norway**, **Iceland**, and **Liechtenstein** (members of EEA, but not EU)
+  * Often **UK** (post-Brexit, sometimes treated separately)
+  * **Western Balkan countries** (e.g., Serbia, Montenegro, Bosnia and Herzegovina)
+  * **Turkey** and **some parts of Eastern Europe** (e.g., Ukraine, Moldova, depending on the insurer)
+  * Sometimes **Caucasus countries** like **Georgia**, **Armenia**, and **Azerbaijan**
+
+So "Extended Europe" is a **marketing or practical term** used by insurers to indicate you're covered in **more countries than just the EU**.
+
+#### When would "Extended Europe" be relevant?
+
+* If you're traveling or driving beyond Scandinavia into **non-EU Eastern Europe** or **Turkey**
+* If you want broader coverage that includes **less typical destinations** within Europe.
+
+
+
+2. "World" signifies destinations outside of the European insurance coverage.
+3. Some locations are categorized differently based on insurance policies.
 
 This interface is designed to streamline airport gateway management efficiently and intuitively.
