@@ -19,7 +19,7 @@ layout:
     visible: true
 ---
 
-# Welcome to the Tourpaq Manual Documentation
+# Welcome to the Tourpaq Manual
 
 ## 🧭 Overview
 
