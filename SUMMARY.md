@@ -316,7 +316,7 @@
 
 ## Setup
 
-* [Arrival Gateways](setup/page-15.md)
+* [Arrival Gateways](setup/arrival-gateways.md)
 * [Departure Gateways](setup/departure-gateways.md)
 * [Destination](setup/destination.md)
 * [Resorts](setup/resorts.md)
