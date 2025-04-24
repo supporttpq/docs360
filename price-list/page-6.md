@@ -35,15 +35,15 @@ The search helps to find prices based on brands, Transport, Hotel, Room and the 
 
 <figure><img src="../.gitbook/assets/image (30) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-If All Brands are selected, all the transport will appear in the Transport drop-down list; otherwise, only the transport assigned to that specific brand will appear. The Transports are assigned to the brands in the Transport#Brands\_tab|Brands Tab under Edit Transport. Also, the Transport is not shown in the drop-down list if the Transport is set as hidden. The visibility of the Transport can be set on the Transport#General\_tab|General tab
+If All Brands are selected, all the transport will appear in the Transport drop-down list; otherwise, only the transport assigned to that specific brand will appear. The Transports are assigned to the brands in the Transport / Brands tab | Brands Tab under Edit Transport. Also, the Transport is not shown in the drop-down list if the Transport is set as hidden. The visibility of the Transport can be set on the Transport / General\_tab / General tab.
 
-When the Transport is selected in the drop-down list, the Fix Quota is filled in the multiple selection view and also the Hotels. Only the hotels that share the same price list with the selected Transport will be shown. The hotels that are in the hidden status will not be shown in the drop-down list. The visibility for the hotels can be sent from the Hotel#Hotel\_tab|General Tab.
+When the Transport is selected in the drop-down list, the Fix Quota is filled in the multiple selection view and also the Hotels. Only the hotels that share the same price list with the selected Transport will be shown. The hotels that are in the hidden status will not be shown in the drop-down list. The visibility for the hotels can be sent from the Hotel / Hotel\_tab / General Tab.
 
 When the hotel is selected, two more fields are displayed. These are some additional tools that can help to save the prices based on an algorithm explained on Price List#Also\_Update\_Prices\_on\_Transports|Also Update Prices on Transports and Price List#Update\_Prices\_Based\_on\_Transport|Update Prices Based on Transport
 
 ### Display Price List <a href="#display-price-list" id="display-price-list"></a>
 
-The search will produce a result like the one shown in Figure 2. For performance reasons, the prices will not be loaded all at once. When the Display button is hit, the first 25 fields are loaded; when scrolling down, the next 25 fields will be loaded, and so on until the entire list is loaded into the page. By default, most of the columns will be hidden for reasons of performance and visibility.
+The search will produce a result like the one shown in the next picture. For performance reasons, the prices will not be loaded all at once. When the Display button is hit, the first 25 fields are loaded; when scrolling down, the next 25 fields will be loaded, and so on until the entire list is loaded into the page. By default, most of the columns will be hidden for reasons of performance and visibility.
 
 <figure><img src="../.gitbook/assets/image (31) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -55,12 +55,15 @@ The column titles are abbreviated so the table can be more tidy. Most of the fie
 * **Dep. date** - Departure Date - The Departure Date for this specific booking configuration
 * **FHA** - Free Rooms Count - How many rooms are available for this departure. The default value is for a one-week trip (or interval 1) on hover there can be the allotments for 1, 2, 3, and 4 weeks.
 * **FTA** - Free Transport Allotment - How many transport seats are available for this trip. The default value is one week round trip. On hover, there can be displayed the available seats for 1, 2, 3, or 4 weeks round trip and also one-way outbound and one-way inbound.
-* **P1** - Price Interval 1 - //Editable field//.
-* **P2** - Price Interval 2 - //Editable field//.
-* **P3** - Price Interval 3 - //Editable field//.
-* **P4** - Price Interval 4 - //Editable field//.
-* **CH1**- Child Price Interval 1 - //Editable field//. Room Price for a child that occupies an extra child bed. From the Grundprins is made an extra bed discount to reach the Child Price.
-* **Status** - This column is showing the Guarantee Availability of the PLTA (Transport Guarantee Availability + Hotel Guarantee Availability). It has 3 statuses: GREEN - when both instances, transport and hotel, have guaranteed allotments; YELLOW - when one of the instances does not have Guarantee Availability, PINK - when none of the instances has Guarantee Availability.
+* **P1** - Price Interval 1&#x20;
+* **P2** - Price Interval 2
+* **P3** - Price Interval 3&#x20;
+* **P4** - Price Interval 4&#x20;
+* **CH1**- Child Price Interval 1. Room Price for a child that occupies an extra child bed. From the Grundprins is made an extra bed discount to reach the Child Price.
+* **Status** - This column is showing the Guarantee Availability of the PLTA (Transport Guarantee Availability + Hotel Guarantee Availability). It has 3 statuses:&#x20;
+  * GREEN - when both instances, transport and hotel, have guaranteed allotments;&#x20;
+  * YELLOW - when one of the instances does not have Guarantee Availability,&#x20;
+  * PINK - when none of the instances has Guarantee Availability.
 
 ### Price List History <a href="#price-list-history" id="price-list-history"></a>
 

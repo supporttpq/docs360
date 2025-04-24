@@ -8,7 +8,7 @@ Guests can login using the booking number and the password provided.
 
 After login, guests are directed to a front page having a welcome quote.
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 From here, user can access available tabs in the application: Booking, Guide, Destination and VisitSun.
 
@@ -18,7 +18,7 @@ In this tab, user can access information about the booking.
 
 **Welcome screen** provide information about number of days before departure, an introduction text and latest news regarding the destination. Introduction text displayed on "Welcome screen" can be configured from Tourpaq Office logged as admin by accessing **Guest App->Settings->Edit Agency->General settings**
 
-<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In this section, there are also displayed notifications for insider tips. Notifications can be configured from **Guest App->Edit Agency->Manage VisitSun Settings->Notifications**.
 
@@ -34,21 +34,21 @@ In **Weather** tab, details about weather during stay days are shown. Weather AP
 
 Using **Upgrade your vacantion** tab, user can update the booking by adding products (like seating or baggage facilities) to his reservation from Customer Center. Products which can be booked here are defined in Tourpaq Office and description and photos for products available in the application can be configured in Tourpaq Office under **Extras Setup->Extras Categories** tab.
 
-<figure><img src=".gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Guide tab <a href="#guide-tab" id="guide-tab"></a>
 
 In **Your guides** section, user will be able to call or send e-mail to guides assigned to specific resort on which reservation is made. Guides names displayed are configured in **Office->Users-> Guides Profiles**.
 
-<figure><img src=".gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Using **Chat** tab, user can start conversation with guides from the booking destination. If the booking is in the future, then the message sent by the user will be available to all guides and admin users. First guide that answer will automatically pick up the conversation. If the user is already at the destination, the conversation will be sent to all guides on that resort.
 
 In **Weekly activities** section, user will be able to see weekly activities defined from **Guest App->Weekly Activities**.
 
-<figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Under **"Excursions"** (Udflugter) section, excursions which are defined in **Office->Extras** when logged-in as a guide will be available for booking. This can be done when accessing **Excursions(Udflugfter)** tab. For detailed information about how this type of an excursion/extras is created, please check [Destination - Mobile guide App](destination-mobile-guide-app.md)
 
@@ -56,15 +56,15 @@ Remark: Excursions are displayed also according to stop sales hours setup on the
 
 **Vouchers** section displays the hotel voucher or excursions which are already confirmed for that specific booking. Hotel vouchers displayed in this section are hotels with Issue Voucher option checked.
 
-<figure><img src=".gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Destination tab <a href="#destination-tab" id="destination-tab"></a>
 
 * **Good to know** or "Things to see and do" section, contains tips configured when logged in as guide/admin in Tourpaq Office under **Guest App->Good to know** menu.
 
-<figure><img src=".gitbook/assets/image (12) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Vocabulary** section display a series of key words to be used by the guest during his vacation. Words are defined in Tourpaq Office from **Guest App-> Vocabulary** when logged in as guide or admin and are displayed in the application based on the country in which user travels.
 

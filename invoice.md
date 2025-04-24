@@ -8,9 +8,9 @@ description: Invoice listing
 
 The **Invoice Listing Dashboard** provides a comprehensive interface for managing, tracking, and processing invoices within a financial or accounting system. It displays a table of all invoices filtered by the selected date range, offering options to view, download, and take action on each invoice.
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
-### Filters and Controls (Top Section)
+### Filters and Controls&#x20;
 
 Users can filter the displayed invoices based on various parameters:
 

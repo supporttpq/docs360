@@ -6,8 +6,8 @@ A company can be created only by a Superadministrator user. Those who wish to cr
 
 Details of a company can be edited by an Administrator user. These are the fields that can be modified:
 
-* Name
-* Address
+* Name of the company
+* Address of the company
 * Country
 * Postcode
 * IBAN
