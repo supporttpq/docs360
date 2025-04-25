@@ -2,7 +2,7 @@
 
 Available for Administrator user types.
 
-Facilities feature allows a user to define the facilities available at a hotel. Can be defined from **Hotel/Facilities** and can be set from the hotel **Web** tab
+The facilities feature allows a user to define the facilities available at a hotel. Can be defined from **Hotel/Facilities** and can be set from the hotel **Web** tab
 
 There are 4 tabs:
 
@@ -17,7 +17,7 @@ There are 4 tabs:
 
 Categories are needed to define facilities.
 
-A new category can be defined in the **Category** tab, by pressing the "Create" button, in the upper right corner of the screen.
+A new category can be defined in the **Category** tab by pressing the "Create" button in the upper right corner of the screen.
 
 Fields:
 
@@ -29,29 +29,29 @@ Fields:
 
 ### Facilities <a href="#facilities" id="facilities"></a>
 
-A new facility can be defined in the **Facilities** tab, by pressing the "New facility" button in the upper right corner of the screen.
+A new facility can be defined in the **Facilities** tab by pressing the "New facility" button in the upper right corner of the screen.
 
 <figure><img src=".gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Fields:
 
 * Name - name of the facility
-* Data type - select from dropdown
+* Data type - select from the dropdown
 * Max chars (available for Decimal, Integer, Multiline Text and Text Data types) - max number of characters
 * Category - category of the facility
 * Default value - is set according to the Data type
 * Is mandatory - when **Facilities template** is chosen for a hotel, the facility must be set from **Web** tab
 * Show on hotels popup - will be shown on the booking page, in the hotel selection pop-up when clicking on the hotel code
-* Show on web as filter (When this is checked, the presentation website(ex: primotours.dk) will allow a more advanced filtering of hotels by this facility)
-* Show on web (When this is checked, the presentation website(ex: primotours.dk) will show this facility on the hotels that use it, on hotels listing)
-* Flag on web - used to highlight a facility on web.
+* Show on web as filter (When this is checked, the presentation website (e.g.: primotours.dk) will allow a more advanced filtering of hotels by this facility.)
+* Show on web (When this is checked, the presentation website (e.g.: primotours.dk) will show this facility on the hotels that use it, on hotels listing)
+* Flag on web - used to highlight a facility on the web.
 * All Inclusive - necessary to differentiate in API on web
 * Swimming Pool - necessary to differentiate in API on web
 * Child Pool - necessary to differentiate in API on web
 
 ### Templates <a href="#templates" id="templates"></a>
 
-A new template can be defined in the **Templates** tab, by pressing the "New template" button in the upper right corner of the screen.
+A new template can be defined in the **Templates** tab by pressing the "New template" button in the upper right corner of the screen.
 
 Fields:
 

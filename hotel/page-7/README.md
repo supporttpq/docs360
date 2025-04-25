@@ -139,7 +139,7 @@ Used to define the cost of the extra bed paid by the agency. Please check [Extra
 
 ### Special offers <a href="#special-offers" id="special-offers"></a>
 
-Used to define discounts offered by the hotel to the agency. Please check [Room Cost](https://docs.tourpaq.com/docs/hotel/room-cost)
+Used to define discounts offered by the hotel to the agency. Please check [Room Cost](room-cost.md)
 
 ### Photos <a href="#photos" id="photos"></a>
 
