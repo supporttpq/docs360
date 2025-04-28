@@ -4,11 +4,11 @@ To be able to add an image in the body section of the email, you need to follow 
 
 * Open the image upload pop-up.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 * Move to Upload Tab
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Browse... select an image
 
@@ -27,8 +27,7 @@ To be able to add an image in the body section of the email, you need to follow 
 * Select the image you need
 * Hit OK
 
-![](<../../.gitbook/assets/image (7).png>)\
-
+![](<../../.gitbook/assets/image (7).png>)\\
 
 * The image is inserted.
 

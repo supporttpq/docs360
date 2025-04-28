@@ -2,7 +2,7 @@
 
 This documentation outlines the structure and management of brands within the system. Each brand has associated metadata used for display, contact handling, and booking identification.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 #### Table Columns Explanation
 
