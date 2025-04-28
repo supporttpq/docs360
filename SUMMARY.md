@@ -243,6 +243,7 @@
   * [How to set Payment settings](brands/how-to-set-payment-settings.md)
   * [How to set SMTP Settings](brands/how-to-set-smtp-settings.md)
   * [How to set GDS](brands/how-to-set-gds.md)
+  * [WebBooking Settings](brands/webbooking-settings.md)
 * [Company Setup](company-setup.md)
 * [Suppliers](suppliers/README.md)
   * [Hotel Supplier](suppliers/hotel-supplier.md)
