@@ -28,8 +28,8 @@ You can search for one or more customers using the filters:
 * Company
 * Email - customer email
 * Phone - customer phone number
-* Mobile
-* Fax
+* Mobile - mobile phone number of the customer
+* Fax - Fax numberof thecustomer
 * Zip Code
 * City
 * Address
