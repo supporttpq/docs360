@@ -8,7 +8,7 @@ The notion of a waiting list (waitlist) has appeared in Tourpaq from the need to
 
 The starting point is having a normal price list situation already in place: hotel allotment, transport allotment, and a price defined for a particular departure. The single setting to be made in order to activate waiting list behavior of this price list is checking the **Waitlist (WL)** checkbox on it.
 
-<figure><img src="../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **The effects**
 
@@ -16,13 +16,13 @@ When dealing with a waitlist price, the system behaves as standard as long as th
 
 ### **In Tourpaq Office**
 
-<figure><img src="../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Because it is a special function, when placing a waitlist booking, the seller is warned in several ways that the booking will not be a standard type of booking. The first notice can be in the transport popup if all rooms for that departure are out of allotment and they are set as the waitlist. The transport may not appear unless you hit the "Search Waitlist also" button. Under the hotel popup, a new "heads up" sign is shown as a colored thick border around the room selection checkbox and a mouseover message. The most important check made to be sure the seller (and customer) is aware that they are operating in a waitlist scenario is when clicking the "Take allotment" button. A validation checkbox appears, and you cannot advance until you confirm this. The rest of the behavior is already explained above.
 
 ### **In Tourpaq Web booking**
 
-<figure><img src="../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The need to acknowledge the waitlist scenario is even greater in Web booking's case. The customers need to know and understand that they are not placing a firm order and that it is likely that they will not benefit from it. That is why a header message is listed on most pages of the Web Booking: landing page, confirmation page, and first page of the Customer Center login. The message has a default version and also can be customized for each brand. Generally, the texts that can be customized in Web Booking can be managed only by **Tourpaq Support**. Also, the payment step or payment option in the customer center is not present since the deal is not yet fully completed.
 

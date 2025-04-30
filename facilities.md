@@ -11,7 +11,7 @@ There are 4 tabs:
 * Templates - used by hotels to group the facilities based on the type of hotel, can be chosen in the hotel general tab
 * Name for Feeds
 
-<figure><img src=".gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Categories <a href="#categories" id="categories"></a>
 
