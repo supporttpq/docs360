@@ -2,6 +2,8 @@
 
 This page provides an overview of the electronic tickets (E-Tickets) generated and sent to customers. It allows monitoring the status of emails sent with electronic tickets and managing any errors.
 
+<figure><img src=".gitbook/assets/image (163).png" alt=""><figcaption></figcaption></figure>
+
 ### **1.** Main elements of the page
 
 #### **a) Search filters**

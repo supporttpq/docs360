@@ -119,6 +119,7 @@
 
 * [Generate Pricelist](generate-pricelist.md)
 * [Price regulation rules](price-regulation-rules.md)
+* [Relational Price list](relational-price-list.md)
 * [Price List Custom Hotel days Service](price-list-custom-hotel-days-service.md)
 * [Profit margin rules](profit-margin-rules.md)
 * [Packages Generator](packages-generator.md)
@@ -128,7 +129,9 @@
 ## Hotel
 
 * [Hotel creation](hotel/page-7/README.md)
+  * [Create using wizard](hotel/page-7/create-using-wizard.md)
   * [Hotel allotments](hotel/page-7/hotel-allotments.md)
+  * [Hotel allotment overview](hotel/page-7/hotel-allotment-overview.md)
   * [Allotments per day](hotel/page-7/allotments-per-day.md)
   * [Releases](hotel/page-7/releases/README.md)
     * [Hotel release - automation](hotel/page-7/releases/hotel-release-automation.md)

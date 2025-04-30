@@ -6,7 +6,7 @@ It uses [Dynamic E-mail/SMS Center](email-setup/page-14/), as a special e-mail t
 
 E-mails can be sent from the booking, if confirmation is necessary. A button named **Send Confirmation** will appear on the booking if the action is required.
 
-<figure><img src=".gitbook/assets/image (13) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (13) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Setting up Confirmation E-mails <a href="#setting-up-confirmation-e-mails" id="setting-up-confirmation-e-mails"></a>
 
@@ -23,7 +23,7 @@ Other required fields are:
 * From e-mail
 * Reply to
 
-<figure><img src=".gitbook/assets/image (14) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (14) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In the e-mail, a link will be also sent to allow the supplier to confirm or reject the booking. This link is hardcoded and updated in real time.
 
@@ -37,7 +37,7 @@ Alongside the e-mail template, a Hotel Confirmation e-mail will also need the fo
 * **Reservation Dept Email** field filled in the hotel
 * **Contract type** of the hotel to be set as either **Allotment** or **Request**
 
-<figure><img src=".gitbook/assets/image (15) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (15) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <mark style="color:red;">**!!! If the hotel doesn't have the Reservation Dept Email field filled, the e-mail will be not be sent**</mark>
 
@@ -50,9 +50,9 @@ To set up the **Transfer Confirmation email** the required settings are:
 * **Contract type** must be **Allotment** or **Request**
 * Category type has to be Transfer
 
-<figure><img src=".gitbook/assets/image (16) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (16) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (17) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (17) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Suppliers <a href="#suppliers" id="suppliers"></a>
 

@@ -35,11 +35,11 @@ The search helps to find prices based on brands, Transport, Hotel, Room and the 
 
 <figure><img src="../.gitbook/assets/image (30) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-If All Brands are selected, all the transport will appear in the Transport drop-down list; otherwise, only the transport assigned to that specific brand will appear. The Transports are assigned to the brands in the Transport / Brands tab | Brands Tab under Edit Transport. Also, the Transport is not shown in the drop-down list if the Transport is set as hidden. The visibility of the Transport can be set on the Transport / General\_tab / General tab.
+If All Brands are selected, all the transport will appear in the Transport drop-down list; otherwise, only the transport assigned to that specific brand will appear. The Transports are assigned to the brands in the Transport / Brands tab | Brands Tab under Edit Transport. Also, the Transport is not shown in the drop-down list if the Transport is set as hidden. The visibility of the Transport can be set on the Transport  -> General tab -> General tab.
 
-When the Transport is selected in the drop-down list, the Fix Quota is filled in the multiple selection view and also the Hotels. Only the hotels that share the same price list with the selected Transport will be shown. The hotels that are in the hidden status will not be shown in the drop-down list. The visibility for the hotels can be sent from the Hotel / Hotel\_tab / General Tab.
+When the Transport is selected in the drop-down list, the Fix Quota is filled in the multiple selection view and also the Hotels. Only the hotels that share the same price list with the selected Transport will be shown. The hotels that are in the hidden status will not be shown in the drop-down list. The visibility for the hotels can be sent from the Hotel -> Hotel tab -> General Tab.
 
-When the hotel is selected, two more fields are displayed. These are some additional tools that can help to save the prices based on an algorithm explained on Price List#Also\_Update\_Prices\_on\_Transports|Also Update Prices on Transports and Price List#Update\_Prices\_Based\_on\_Transport|Update Prices Based on Transport
+When the hotel is selected, two more fields are displayed. These are some additional tools that can help to save the prices based on an algorithm explained on Price List Also Update Prices on Transports /Also Update Prices on Transports and Price List Update Prices Based on Transport / Update Prices Based on Transport.
 
 ### Display Price List <a href="#display-price-list" id="display-price-list"></a>
 
@@ -99,7 +99,7 @@ This function is used to update the prices that share the same hotel but have di
 
 `T1_H0_Price = T0_H0_Price + T1_H0_Transport_Price`
 
-If //Override Transport Price// is checked and the filed next to the check-box is filled, the column Transport Price, will be overwritten in the transport T1\_H0
+If Override Transport Price is checked and the filed next to the check-box is filled, the column Transport Price, will be overwritten in the transport T1\_H0
 
 ![!](https://docs.tourpaq.com/assets/images/updatePriceOnTransports-2ce165a0ee01856d1fa742c9bdb84fb1.png)
 
@@ -116,6 +116,6 @@ After the save, you will notice that the price on the selected transport with th
 
 The fields are displayed only if the hotel is selected in the search form.
 
-This function is used when the Transport Price is updated and the prices P1, P2, D1, D2, etc., should be changed based on the selected transport. The transports shown in the drop-down list are transports that share the same hotel and room. The price P1 has been updated using the //Also update prices on transports// tool, and if the transport price is changed, the P1 price must be recalculated based on that price list.
+This function is used when the Transport Price is updated and the prices P1, P2, D1, D2, etc., should be changed based on the selected transport. The transports shown in the drop-down list are transports that share the same hotel and room. The price P1 has been updated using the Also update prices on transports tool, and if the transport price is changed, the P1 price must be recalculated based on that price list.
 
 ![!](https://docs.tourpaq.com/assets/images/updatePriceBasedOnTransport-b76eb367aade9faa3c6b2428cdd5760c.png)

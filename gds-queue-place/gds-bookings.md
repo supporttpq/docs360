@@ -42,13 +42,13 @@ Forward down are detailed explained all the steps that should be made when makin
 This is the information that should be displayed for each transport allotment:
 
 * Departure date
-* Departure
-* Arrival
+* Departure - Departure airport
+* Arrival - Arrival airport
 * Transport code
-* AO1
-* AO2
-* AO3
-* AO4
+* AO1 - Allotment out for interval 1
+* AO2 -  Allotment out for interval 2
+* AO3 -  Allotment out for interval 3
+* AO4 -  Allotment out for interval 4
 * Flight number
 
 Departure start date should have as a default value today’s date and Departure end date today’s date plus 3 weeks. If the logged in user makes other choices for these filters, these new values should be restored next time he makes a booking and opens the transports window.
