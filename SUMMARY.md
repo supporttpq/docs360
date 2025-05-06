@@ -346,4 +346,4 @@
 * [Price currency](setup/price-currency.md)
 * [Vouchers](setup/vouchers.md)
 * [Autobilling](setup/autobilling.md)
-* [Page](setup/page.md)
+* [Web Booking API flow](setup/web-booking-api-flow.md)
