@@ -236,6 +236,7 @@
 ## Users
 
 * [Users](users/page-11/README.md)
+  * [Users Management](users/page-11/users-management.md)
   * [User limited view](users/page-11/user-limited-view.md)
   * [Password expiration](users/page-11/password-expiration.md)
 
@@ -250,7 +251,9 @@
     * [Images](brands/webbooking-settings/images.md)
     * [Trackers](brands/webbooking-settings/trackers.md)
     * [Styles](brands/webbooking-settings/styles.md)
-* [Company Setup](company-setup.md)
+    * [Validate Phone Number](brands/webbooking-settings/validate-phone-number.md)
+* [Company](company/README.md)
+  * [Company Setup](company/company-setup.md)
 * [Suppliers](suppliers/README.md)
   * [Hotel Supplier](suppliers/hotel-supplier.md)
   * [Extra suplier](suppliers/extra-suplier.md)
@@ -261,6 +264,8 @@
 * [Creditor](creditor.md)
 * [2 Factor Authentication](2-factor-authentication.md)
 * [GDPR (General Data Protection Regulation)](gdpr-general-data-protection-regulation.md)
+* [Restful API authentication](restful-api-authentication.md)
+* [Security measures](security-measures.md)
 
 ## Guest App
 
@@ -285,6 +290,7 @@
   * [Communication](extras-setup/page-13/communication.md)
   * [Early booking/Stay and pay and Special Early Booking/Stay and pay](extras-setup/page-13/early-booking-stay-and-pay-and-special-early-booking-stay-and-pay.md)
   * [Teetime](extras-setup/page-13/teetime.md)
+  * [Multiple product selection in product category](extras-setup/page-13/multiple-product-selection-in-product-category.md)
 
 ***
 
@@ -340,3 +346,4 @@
 * [Price currency](setup/price-currency.md)
 * [Vouchers](setup/vouchers.md)
 * [Autobilling](setup/autobilling.md)
+* [Web Booking API flow](setup/web-booking-api-flow.md)
