@@ -13,11 +13,11 @@ Extras categories are mandatory in the extras definition process. So in order to
 * **Icon**: box where to upload an icon.
 * **Photo**: button that opens the upload photo pop-up; photo set is displayed on WebBooking.
 
-<figure><img src=".gitbook/assets/ExtraCategoryOverview-cc8404247963c69e65035b9fe43a31e8.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/ExtraCategoryOverview-cc8404247963c69e65035b9fe43a31e8.png" alt=""><figcaption></figcaption></figure>
 
 \*All texts can be set custom for each active brand.
 
-<figure><img src=".gitbook/assets/ExtraCategoryCustomBrand-594461f051027d3ba8bb1f54ee2bc7e8.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/ExtraCategoryCustomBrand-594461f051027d3ba8bb1f54ee2bc7e8.png" alt=""><figcaption></figcaption></figure>
 
 #### Filtering Options <a href="#filtering-options" id="filtering-options"></a>
 
@@ -26,7 +26,7 @@ Extras categories are mandatory in the extras definition process. So in order to
 * **Display In Hotel List**: multiple selection field; displays all brands; no selection behaves as select all; sets for which brands, the extras in this category, to be displayed in hotel lists.
 * **Hide as filter in list**: checkbox ; if enabled, hides the category in all lists throughout the system.
 
-<figure><img src=".gitbook/assets/ExtraCategoryFilteringOptions-2da18c606917c5debf7b17ec23fcbf0b.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/ExtraCategoryFilteringOptions-2da18c606917c5debf7b17ec23fcbf0b.png" alt=""><figcaption></figcaption></figure>
 
 #### Settings <a href="#settings" id="settings"></a>
 
@@ -44,4 +44,4 @@ Extras categories are mandatory in the extras definition process. So in order to
 * **Accepts multiple product selection**: checkbox; if set, will apply to all brands; This allows the category to display multiple selection for the products defined. If unchecked, bookings with multiple products selected will appear to have only one selected.
 * **Sold Out Behaviour**: checkbox; this will enable the sold-out behaviour for the products in the category.
 
-<figure><img src=".gitbook/assets/ExtraCategorySettings-106dd7c02e2b829c2d78a52edf62b298.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/ExtraCategorySettings-106dd7c02e2b829c2d78a52edf62b298.png" alt=""><figcaption></figcaption></figure>

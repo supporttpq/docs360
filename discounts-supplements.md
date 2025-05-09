@@ -97,7 +97,7 @@ A manual discount/supplement will be manually chosen for a passenger; it can be 
 * Include in basic price: add the price of the supplement to the price of the room, while hiding it from the guest
 * Used for price adjust:
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The entities having this checkbox active will:
 
@@ -129,7 +129,7 @@ The entities having this checkbox active will:
 
 Prices are defined for certain periods of time, periods that will consider the departure date of a booking. If defined here, this price will overrule the general price.
 
-<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In the Discount/supplements general window, go to the Prices tab and click on New Price.
 
@@ -177,7 +177,7 @@ In the discount/supplement general window, go to Resources tab.
 
 Here we can select the resource type from the dropdown: destination, resort, hotel, room, transport, real transport.
 
-<figure><img src=".gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Resources are used to limit the availability of discount/supplement to the selected entities.
 
@@ -199,7 +199,7 @@ After all these are set, click on save resources.
 
 On Discount/supplement General window, go to Photos tab:
 
-<figure><img src=".gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Click on Add picture,
 * Click on browse,
@@ -245,7 +245,11 @@ In Discount/supplement general window, go to Brands tab and choose the brand tha
 
 #### Bonus code
 
-A coded discount or bonus code discount is a discount given to guests during a campaign when they use a certain code during the booking process.
+A coded discount or bonus code discount is a discount given to guests during a campaign when they use a certain code during the booking process.&#x20;
+
+A bonus code is a text code that allows a visitor to book a trip with a certain discount as a campaign action. The text chosen for the bonus code has to be longer than 4 (including) characters and shorter than 20 (including) but NOT 12 characters. The 12 character lenght is reserved for giftcard codes that can be added in the Web Booking through the same field - this lenght rule is needed to differentiate between the two code types.
+
+Tourpaq system allows multiple discounts to use the same bonus code. If all discounts are available they will all be applied by using the bonus code. The discounts can also be set as not combinable with other discounts, this would lead in applying only the most advantageous discount for the current booking (not per passenger but on the entire booking).
 
 <figure><img src=".gitbook/assets/image (8) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

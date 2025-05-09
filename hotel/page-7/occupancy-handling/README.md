@@ -6,7 +6,7 @@ Occupancy handling is a feature that enables hotels to define flexible pricing a
 
 * This feature has to be activated "per company".
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Key Functionalities:
 

@@ -16,13 +16,13 @@ Create the "room reservation" supplement. This supplement will automatically be 
 * Fixed/Manual: Manual
 * Available for first pass: Checked
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Add elements to be used on the layout.**
 
 This can be done from "Hotel-> Layout Elements"
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 There are 4 element types: Seat, Decor, Room, and Room Icon. It's very important to remember this because when we later associate a room number with a room type from the hotel, we will only use "room icon" element types.
 
@@ -30,11 +30,11 @@ There are 4 element types: Seat, Decor, Room, and Room Icon. It's very important
 
 &#x20;Afterwards, in the hotel we want a layout. For this, we go to the “Layout” tab and then press “Create Layout”
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;On this screen we now can create multiple sections of a hotel (floor, per example), but we will focus on editing a single section. Adding a background is as simple as clicking the background image Important note: too see when a room is reserved on a booking on not (by using backgrounds shown yellow/red/green), please use room icon with transparent background.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Now, for adding several other elements (rooms, décor), we click them, and they appear in the top-left corner of the background image. Then, we can drag and drop them (even more than one at once) on the background image of the layout (I also resized the background image in this step by dragging the corner):
 

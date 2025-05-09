@@ -296,7 +296,8 @@
 
 * [Extras Attributes](extras-attributes.md)
 * [Custom Choices](custom-choices.md)
-* [Extras Category](extras-category.md)
+* [Extras Category](extras-category/README.md)
+  * [Extra Category Reporting](extras-category/extra-category-reporting.md)
 * [Discounts/Supplements](discounts-supplements.md)
 * [Disc/Suppl Categories](disc-suppl-categories.md)
 * [Ticket Categories](ticket-categories.md)
@@ -306,9 +307,12 @@
 * [Generic Product Price Rules](generic-product-price-rules.md)
 * [Media](media.md)
 * [Cancellation Rules](cancellation-rules.md)
-* [Cancellation Insurance](cancellation-insurance.md)
+* [Cancellation Insurance](cancellation-insurance/README.md)
+  * [Editing Cancellation Insurance](cancellation-insurance/editing-cancellation-insurance.md)
 * [Catalogs](catalogs.md)
-* [Travel Insurance](travel-insurance.md)
+* [Travel Insurance](travel-insurance/README.md)
+  * [Insurance Reporting](travel-insurance/insurance-reporting.md)
+  * [Insurance Automated Reporting](travel-insurance/insurance-automated-reporting.md)
 
 ## Email Setup
 
