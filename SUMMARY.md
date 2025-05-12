@@ -157,6 +157,11 @@
 * [Facilities](facilities.md)
 * [Base room types](base-room-types.md)
 * [Stop Sales](stop-sales.md)
+  * [Edit Stop Sale](stop-sales/edit-stop-sale.md)
+  * [Remove (Undo) Stop Sale](stop-sales/remove-undo-stop-sale.md)
+  * [Split the Stop Sale Rule](stop-sales/split-the-stop-sale-rule.md)
+  * [Notification on Dashboard Stop Sale](stop-sales/notification-on-dashboard-stop-sale.md)
+  * [Agreed Allotment Stop Sale](stop-sales/agreed-allotment-stop-sale.md)
 * [Stop Sale Resort](stop-sale-resort.md)
 * [Hotel Beds](hotel-beds.md)
 * [Hotel Bed Banks - FAQ](hotel-bed-banks-faq.md)
@@ -296,7 +301,8 @@
 
 * [Extras Attributes](extras-attributes.md)
 * [Custom Choices](custom-choices.md)
-* [Extras Category](extras-category.md)
+* [Extras Category](extras-category/README.md)
+  * [Extra Category Reporting](extras-category/extra-category-reporting.md)
 * [Discounts/Supplements](discounts-supplements.md)
 * [Disc/Suppl Categories](disc-suppl-categories.md)
 * [Ticket Categories](ticket-categories.md)
@@ -306,9 +312,12 @@
 * [Generic Product Price Rules](generic-product-price-rules.md)
 * [Media](media.md)
 * [Cancellation Rules](cancellation-rules.md)
-* [Cancellation Insurance](cancellation-insurance.md)
+* [Cancellation Insurance](cancellation-insurance/README.md)
+  * [Editing Cancellation Insurance](cancellation-insurance/editing-cancellation-insurance.md)
 * [Catalogs](catalogs.md)
-* [Travel Insurance](travel-insurance.md)
+* [Travel Insurance](travel-insurance/README.md)
+  * [Insurance Reporting](travel-insurance/insurance-reporting.md)
+  * [Insurance Automated Reporting](travel-insurance/insurance-automated-reporting.md)
 
 ## Email Setup
 

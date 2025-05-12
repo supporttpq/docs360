@@ -8,7 +8,7 @@ From the "NO.RMS" column, the number of available rooms can be changed (increase
 
 Secured rooms are rooms secured, not paid, and no stop sale can be added.
 
-Guaranteed Rooms represents the number of rooms that are paid for even if they are not booked. These rooms are marked in the booking process and should be sold first. Click update.
+Guaranteed Rooms represents the number of rooms that are paid for even if they are not booked, and no stop sale can be added. These rooms are marked in the booking process and should be sold first. Click update.
 
 Search with allotment control we'll search on departure date; this way you can control how many rooms are to be sold on each departure per flight.
 

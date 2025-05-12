@@ -9,7 +9,7 @@ There are 4 ways to set the price for the cancellation insurance:
 * The third method would set the fee using a given percentage. In this case, the fee will be the percentage of the passenger’s price.
 * The forth method would take into account the transport mode.
 
-<figure><img src=".gitbook/assets/cancellation-insurance-1b52675815ba054c3c0425d67be0dc18.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/cancellation-insurance-1b52675815ba054c3c0425d67be0dc18.png" alt=""><figcaption></figcaption></figure>
 
 #### External Cancellation <a href="#external-cancellation" id="external-cancellation"></a>
 
@@ -18,7 +18,7 @@ There are two main providers:
 * Gouda
 * Europeiske
 
-<figure><img src=".gitbook/assets/external-cancellation-c9308d8d9e4939f5f63674392cc01434.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/external-cancellation-c9308d8d9e4939f5f63674392cc01434.png" alt=""><figcaption></figcaption></figure>
 
 **Gouda configuration:**
 
