@@ -156,7 +156,7 @@
 
 * [Facilities](facilities.md)
 * [Base room types](base-room-types.md)
-* [Stop Sales](stop-sales/README.md)
+* [Stop Sales](stop-sales.md)
   * [Edit Stop Sale](stop-sales/edit-stop-sale.md)
   * [Remove (Undo) Stop Sale](stop-sales/remove-undo-stop-sale.md)
   * [Split the Stop Sale Rule](stop-sales/split-the-stop-sale-rule.md)
