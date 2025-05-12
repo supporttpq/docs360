@@ -8,7 +8,7 @@ This ensures that hotels can customize bed availability per room type and contro
 
 Room restrictions can be configured in the Base Room Type under Hotel → Base Room Types → Edit
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 As well as in the Hotel Room under Hotel → Room Types → Edit.
 

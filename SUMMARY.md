@@ -156,7 +156,12 @@
 
 * [Facilities](facilities.md)
 * [Base room types](base-room-types.md)
-* [Stop Sales](stop-sales.md)
+* [Stop Sales](stop-sales/README.md)
+  * [Edit Stop Sale](stop-sales/edit-stop-sale.md)
+  * [Remove (Undo) Stop Sale](stop-sales/remove-undo-stop-sale.md)
+  * [Split the Stop Sale Rule](stop-sales/split-the-stop-sale-rule.md)
+  * [Notification on Dashboard Stop Sale](stop-sales/notification-on-dashboard-stop-sale.md)
+  * [Agreed Allotment Stop Sale](stop-sales/agreed-allotment-stop-sale.md)
 * [Stop Sale Resort](stop-sale-resort.md)
 * [Hotel Beds](hotel-beds.md)
 * [Hotel Bed Banks - FAQ](hotel-bed-banks-faq.md)

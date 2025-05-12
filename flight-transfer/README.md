@@ -10,7 +10,7 @@ The first step in using this feature is to create a Transport Operator. This is 
 
 A Transport Operator provides means of transport from the arrival place to the resort and viceversa.
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Fields for creating a new Transport Operator:
 
@@ -22,7 +22,7 @@ Fields for creating a new Transport Operator:
 
 After this, in the **Bus Catalogue** you can define the means of transport at the disposal of the operator. They can be cars, vans, buses etc.
 
-<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
