@@ -33,5 +33,5 @@ The **Deposit Rules** tab allows administrators to configure custom deposit and 
 * When multiple rules overlap, priority may be determined by specificity (more exact match of both ranges).
 * Disabled rules are **not** considered in the payment schedule.
 
-Note: If a specific deposit rule is set per brand, it will override any rule set in payment rule.
+⚠️Note: If a specific deposit rule is set per brand, it will override any rule set in the payment rule.
 
