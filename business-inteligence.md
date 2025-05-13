@@ -13,7 +13,7 @@ Also if there is a red background on a cell, that means in that date is a stop s
 5 filters can be used like below:
 
 1. **You can search by Hotel Code.** If you search by hotel, all filters are disabled.
-2. **You can filter by transport**
+2. **You can filter by Transport**
 3. **You can filter by Real Transport**
 4. **You can filter by Resort.**
 5. **You can filter by Hotel Name**
