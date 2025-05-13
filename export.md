@@ -42,6 +42,8 @@ The data will contain information regarding each booking that corresponds to the
 * **Booking date -** The date when the booking was created.
 * **Booking status -** The current status of the booking (e.g., Confirmed, Cancelled, Pending).
 * **Booking total price -** The total price paid for the booking, including all products and services.
+* Customer No - The custumer's number.
+* Customer name - Name of the customer
 * **Customer e-mail -** The primary email address of the customer.
 * **Seller -** The individual or platform that made the booking.
 * **Agent -** The travel agent or representative involved in the booking, if any.
@@ -49,6 +51,7 @@ The data will contain information regarding each booking that corresponds to the
 * **Travel length -** The total duration of the trip in days.
 * **Hotel code -** A code representing the booked hotel.
 * **Resort code -** A code identifying the resort associated with the hotel.
+* **Destination** - The booking destination of the travelers
 * **Room code -** A code for the specific room type booked.
 * **Room price -** The cost of the room per booking or per night, depending on context.
 * **Rooms number -** The number of rooms included in the booking.
