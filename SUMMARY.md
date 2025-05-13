@@ -189,6 +189,8 @@
 * [Transport Dashboard](transport-dashboard.md)
 * [Transport Price Control](transport-price-control.md)
 * [Transport Payment Rules](transport-payment-rules.md)
+  * [Edit Payment Rule](transport-payment-rules/edit-payment-rule.md)
+  * [Edit Deposit Rules](transport-payment-rules/edit-deposit-rules.md)
 * [Airline Baggage Allowances](airline-baggage-allowances.md)
 * [Routes](routes.md)
 * [Real Transports](real-transports/README.md)
