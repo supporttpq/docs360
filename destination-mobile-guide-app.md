@@ -222,7 +222,7 @@ After setting the excursion up, we can proceed to the next stage: the one of boo
 * Pending payment is reported as approved – an email saying your payment has been approved
 * Pending payment is reported as rejected – an email saying your payment is rejected is sent and order is canceled and allotment set back
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 In the _Error_ menu, you’ll see bookings where extra orders (such as excursions) were canceled by the service, but the payment was still confirmed. These entries are shown to help you identify and resolve any discrepancies.
 

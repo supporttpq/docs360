@@ -175,9 +175,9 @@ A discount/supplement could be universally available, or it could be available f
 
 In the discount/supplement general window, go to Resources tab.
 
-Here we can select the resource type from the dropdown: destination, resort, hotel, room, transport, real transport.
+Here we can select the resource type from the dropdown: destination, resort, hotel, room, transport, real transport, hotel categories
 
-<figure><img src=".gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/screencapture-staging-bookingx-tourpaq-extras-discount-supplements-11296-2025-05-15-10_31_57.png" alt=""><figcaption></figcaption></figure>
 
 Resources are used to limit the availability of discount/supplement to the selected entities.
 
@@ -187,6 +187,7 @@ Resources are used to limit the availability of discount/supplement to the selec
 * Transports will limit the availability of the discount/supplement to the selected transports.
 * Rooms will limit the availability of the discount/supplement to the selected rooms from the selected hotels. There are two boxes: first containing the hotels and the second containing rooms. Rooms will not appear unless a hotel is selected.
 * Real Transport will limit the availability of the discount/supplement to the selected transports.
+* Hotel Categories will limit the availability of the discount/supplement to the selected hotel category
 
 There are two rules (set from system setup ) when using resources:
 
