@@ -23,7 +23,7 @@ Contract representation:
 
 At the moment of this writing, only **Hotel Beds** is implemented as a bed bank provider.
 
-### SETUP <a href="#setup" id="setup"></a>
+### Setup <a href="#setup" id="setup"></a>
 
 In order to start using this feature, a company must set up Hotelbeds credentials in System Setup (tab Hotelbeds):
 
@@ -35,7 +35,7 @@ Please allow up to 10 minutes for the service to run and download initial contra
 
 After setup, you can go to the Hotel Bed Bank menu item under the Hotel menu group. Here you can search for hotels or search for offers in order to get an idea of the price range and availability of hotels in a specific area.
 
-### SEARCH HOTELS <a href="#search-hotels" id="search-hotels"></a>
+### Search hotels <a href="#search-hotels" id="search-hotels"></a>
 
 The user must fill the mandatory fields (country and destination) and press Find. The rest of the fields are optional and can be used to filter the results.
 
@@ -50,7 +50,7 @@ The hotel can be imported only if it has at least one contract code assigned to 
 
 <figure><img src=".gitbook/assets/image (102).png" alt=""><figcaption></figcaption></figure>
 
-### IMPORT HOTEL <a href="#import-hotel" id="import-hotel"></a>
+### Import hotel <a href="#import-hotel" id="import-hotel"></a>
 
 On the import page, the user must
 
@@ -64,7 +64,7 @@ After everything has been selected, the hotel can be saved in Tourpaq.
 
 Images and allotments are not imported in time; all information will be available in about 5 minutes after the hotel has been saved.
 
-### SELECTING A CONTRACT <a href="#selecting-a-contract" id="selecting-a-contract"></a>
+### Selecting a contract <a href="#selecting-a-contract" id="selecting-a-contract"></a>
 
 Clicking on **View contract details** should bring up a popup with all relevant contract information.
 
@@ -77,7 +77,7 @@ It is important to review a contract before importing it.
 
 <figure><img src=".gitbook/assets/image (104).png" alt=""><figcaption></figcaption></figure>
 
-### SELECT/CHECK ROOM MAPPINGS <a href="#select--check-room-mappings" id="select--check-room-mappings"></a>
+### Select / Check room mappings <a href="#select--check-room-mappings" id="select--check-room-mappings"></a>
 
 The system has an automapping functionality in order to make future imports easier. It should remember any previous mappings and in some places will try to map rooms by their configurations.
 
@@ -85,7 +85,7 @@ The user should always assume that the system did not map the data correctly and
 
 <figure><img src=".gitbook/assets/image (105).png" alt=""><figcaption></figcaption></figure>
 
-### IMPORT/UPDATE HOTEL PHOTOS <a href="#import--update-hotel-photos" id="import--update-hotel-photos"></a>
+### Import / Update hotel photos <a href="#import--update-hotel-photos" id="import--update-hotel-photos"></a>
 
 You can also import hotel photos from the Bed Bank provider by simply selecting the desired photos, and they will be imported along with the rest of the hotel information.
 

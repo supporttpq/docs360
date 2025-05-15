@@ -83,6 +83,7 @@ Select the brands for which the campaign is available.
 * Real transport: select from available real transport (multiple choice)
 * Hotels: select from available hotels (multiple selection)
 * Rooms: select from available rooms (multiple selection)
+* Hotel categories: select from available hotel categories (multiple selection)
 
 If no resorts and/or transports are selected, the campaign will be applied to all bookings that use both the selected depature airports and arrival airports.
 
