@@ -58,7 +58,7 @@ Set the interval between flights.
 * Days - days between the flights
 * API Text It's used in setting the fix quota. Multiple intervals can be set.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Timetable <a href="#timetable" id="timetable"></a>
 
@@ -77,7 +77,7 @@ Used to set the date and time of the flights.
 * FL - flinght changes (After changing time and date of a flight, check this and update; an e-mail will be sent to all bookings made on this flight that the flight hours have been changed. Requires **Flight change e-mail** template
 * Alternative Airport - this can be set only for the Travel home lines and can change the returning airport. It will be shown on booking and ticket. (Example: Flight leaves from Billund to Krete and returns to Kobenhavn instead of Billund)
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Fix quota <a href="#fix-quota" id="fix-quota"></a>
 

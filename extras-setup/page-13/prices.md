@@ -2,7 +2,7 @@
 
 A extras can have one or more prices. The prices are defined based on some intervals. The interval can not overlap each other to prevent that there are some validation in place. There are three intervals as follow:
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Age From/To** - The price is applying for the passengers that has the age in interval.
 * **Departure Date From/To** - The Price is applying to passengers that have made the booking to depart in this interval.
