@@ -8,7 +8,7 @@ Guests can login using the booking number and the password provided.
 
 After login, guests are directed to a front page having a welcome quote.
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 From here, user can access available tabs in the application: Booking, Guide, Destination and VisitSun.
 
@@ -18,7 +18,7 @@ In this tab, user can access information about the booking.
 
 **Welcome screen** provide information about number of days before departure, an introduction text and latest news regarding the destination. Introduction text displayed on "Welcome screen" can be configured from Tourpaq Office logged as admin by accessing **Guest App->Settings->Edit Agency->General settings**
 
-<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In this section, there are also displayed notifications for insider tips. Notifications can be configured from **Guest App->Edit Agency->Manage VisitSun Settings->Notifications**.
 
