@@ -14,7 +14,7 @@ The user can filter the displayed tickets using the following options:
 * **Email** – Allows filtering by customer email address.
 * **Sent from / Sent to** – Filters tickets by the time interval in which they were sent.
 * **+ More filters** – Possibility to add additional filters.
-  * The filter "Show only communication email types" is only working when selecting "All Brands"
+  * To use filter "Show only communication email types" you must select "All Brands"
 * **Clear** – Clears all active filters.
 * **Export** – Button that allows downloading the list of tickets in a compatible format (e.g., Excel, CSV).
 
