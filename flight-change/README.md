@@ -27,23 +27,23 @@ If the guest fails to respond to the flight change, then the flight change is fo
 
 ### 🔍 Filter Section (Top Panel)
 
-| Field Name            | Description                                                                      |
-| --------------------- | -------------------------------------------------------------------------------- |
-| **Departure Gateway** | Dropdown to filter by the origin airport of the flight.                          |
-| **Arrival Gateway**   | Dropdown to filter by the destination airport.                                   |
-| **Flight No.**        | Text field to search for a specific flight number.                               |
-| **Type of Change**    | Dropdown to filter by the nature of the flight change (e.g., delay, reschedule). |
-| **Status**            | Dropdown to filter by the current status of the change (e.g., Queued, Sent).     |
-| **Airline**           | Dropdown to filter flights by airline.                                           |
-| **Booking**           | Text field to search by booking number.                                          |
-| **Transport**         | Dropdown to filter by transport identifier or vehicle.                           |
-| **Departure Date**    | Calendar picker to select the flight's departure date.                           |
-| **Created Date**      | Calendar picker to select when the change record was created.                    |
-| **Departure Time**    | Time selector to narrow results by flight departure time.                        |
-| **Show confirmed**    | Checkbox to include confirmed changes.                                           |
-| **Show dropped**      | Checkbox to include dropped/ignored changes.                                     |
-| **Display**           | Button to apply current filter settings.                                         |
-| **Clear**             | Button to reset all filters (with count of active filters).                      |
+| Field Name            | Description                                                                  |
+| --------------------- | ---------------------------------------------------------------------------- |
+| **Departure Gateway** | Dropdown to filter by the origin airport of the flight.                      |
+| **Arrival Gateway**   | Dropdown to filter by the destination airport.                               |
+| **Flight No.**        | Text field to search for a specific flight number.                           |
+| **Type of Change**    | Dropdown to filter by the nature of the flight change.                       |
+| **Status**            | Dropdown to filter by the current status of the change (e.g., Queued, Sent). |
+| **Airline**           | Dropdown to filter flights by airline.                                       |
+| **Booking**           | Text field to search by booking number.                                      |
+| **Transport**         | Dropdown to filter by transport identifier or vehicle.                       |
+| **Departure Date**    | Calendar picker to select the flight's departure date.                       |
+| **Created Date**      | Calendar picker to select when the change record was created.                |
+| **Departure Time**    | Time selector to narrow results by flight departure time.                    |
+| **Show confirmed**    | Checkbox to show the confirmed changes.                                      |
+| **Show dropped**      | Checkbox to show the dropped changes.                                        |
+| **Display**           | Button to apply current filter settings.                                     |
+| **Clear**             | Button to reset all filters (with count of active filters).                  |
 
 ***
 
@@ -63,6 +63,6 @@ If the guest fails to respond to the flight change, then the flight change is fo
 | **Type**              | Description of the flight change (e.g., “Flight Change Small Later”, “Tiny Later”).          |
 | **Status**            | Current status of the flight change process (e.g., **Queued**, **Sent**, **Resend Second**). |
 
-The flight change sent us different templates depending on the type of change. This allows the company to decide the content based on the type of change.
+The flight change sent uses different templates depending on the type of change. This allows the company to decide the content based on the type of change.
 
 When Send or Send SMS is selected, the flight change will be sent at once, independently of the Hour to send in the template.
