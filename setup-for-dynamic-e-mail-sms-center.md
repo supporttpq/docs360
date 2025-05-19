@@ -6,7 +6,7 @@ Can be found in **E-mail Setup/Dynamic E-mails/SMS Center**
 
 ### General <a href="#general" id="general"></a>
 
-<figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Dynamic communication types:
 
@@ -91,7 +91,7 @@ Note: 1 - the email is sent; 0 - the email is NOT sent
 
 ### Message content <a href="#message-content" id="message-content"></a>
 
-<figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 These are the text cases. They work just like the regular **E-mail Center** and have the same features.
 
@@ -99,7 +99,7 @@ For inserting links to the customer center, the process is the following:
 
 Write the text that will have the link in the back, for example //here//, select it, and click on the circled button from the screenshot.
 
-<figure><img src=".gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Next, in the URL, insert the \[Hash-key-link] and select the other protocol
 

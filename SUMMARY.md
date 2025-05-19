@@ -212,7 +212,10 @@
 * [Create citizen plane rules](create-citizen-plane-rules.md)
 * [Create citizen plane seats overview](create-citizen-plane-seats-overview.md)
 * [Flexible Transports](flexible-transports.md)
-* [Flight change](flight-change.md)
+* [Flight change](flight-change/README.md)
+  * [Flight Change - Configuration](flight-change/flight-change-configuration.md)
+  * [Flight Change - Email Template](flight-change/flight-change-email-template.md)
+  * [Flight Change - How it Works](flight-change/flight-change-how-it-works.md)
 
 ## Quality
 

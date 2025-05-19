@@ -69,7 +69,7 @@ In bookings made from office, routes appear as an extra category named Pickup P.
 
 On the Ticket, Routes appear in the **Specifikation af resjebestilling** section, after the extras.
 
-<figure><img src=".gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 When the transport is a bus type one, the routes appear also in the **Rejseplan** section:
 
@@ -81,8 +81,8 @@ This feature is for internal use only. The pickup points defined this way cannot
 
 To activate this feature you have to check the Destination Route from Transport -> Routes.
 
-<figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Also after you haved updated the route with this change, in the Pickup points tab you will find a new column named Hotels. The main porpose for this new column is to define what hotels are included in a pickup point.
 
-<figure><img src=".gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

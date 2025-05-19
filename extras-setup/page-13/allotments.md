@@ -20,11 +20,11 @@ Linked to Transport Allotment is an extra allotment type given only to passenger
 
 To use it properly the user must create a new extra and select **Linked to transport**.
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 After the general settings have been set, and the extra saved, the next step is setting the brand and establishing the prices and resources. At the **Resource** tab, a must is setting the **Transport** filter.
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The next step is setting up the allotments.
 

@@ -12,7 +12,7 @@ Also, the “SMS service” needs to be activated by a super admin.
 
 The SMS tool opens a simple chat dialog, from where the user can send a message to the customer on the phone number saved. Also, when the customer replies, that message will be displayed in the same chat.
 
-<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 For the email tool to work, it’s necessary to purchase a mail bee license key, accessing following link: [https://afterlogic.com/mailbee-net/email-components](https://afterlogic.com/mailbee-net/email-components)
 
@@ -20,11 +20,11 @@ For the email tool to work, it’s necessary to purchase a mail bee license key,
 
 After you have the key, complete the setup, going to Users menu/ Brands / Click on Edit and go to “Service case” tab and fill in all required information.
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 “Send Mail” button will open the E-mail overview dialog. From here, the user can send an email directly to the customer, as from the agency’s dedicated email address, set in Brands / Service case tab.
 
-<figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Replies from customer will be automatically displayed in the same dialog.
 

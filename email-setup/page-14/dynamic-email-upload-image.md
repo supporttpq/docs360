@@ -16,18 +16,18 @@ To be able to add an image in the body section of the email, you need to follow 
 
 * Send it to the server
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Wait until you get "File Uploaded" in place of where the Browse button was.
 * Move to the Image Info Tab
 * Press Browse Server
 
-<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Select the image you need
 * Hit OK
 
-![](<../../.gitbook/assets/image (7) (1).png>)\\
+![](<../../.gitbook/assets/image (7) (1) (1).png>)\\
 
 * The image is inserted.
 

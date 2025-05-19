@@ -51,19 +51,19 @@ After setting up the base room and relation, click on the **Update new price lis
 
 <figure><img src=".gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Price list configuration[​](https://docs.tourpaq.com/docs/documentation/relation-pricelist#price-list-configuration) <a href="#price-list-configuration" id="price-list-configuration"></a>
 
 When entering the price list, after selecting all desired filters (⚠️ **Warning:** Price list relation is available only if the hotel is also chosen!!!!) \*\*, after clicking on the **Display** button, you will see 2 new tabs called **Relation PL** and \*\*Related PL\*\*
 
-<figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Relation PL[​](https://docs.tourpaq.com/docs/documentation/relation-pricelist#relation-pl) <a href="#relation-pl" id="relation-pl"></a>
 
 At this moment only **Relation PL** is of interest. To configure it, click on **View**
 
-<figure><img src=".gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 For a relation price list to be in use, it has to be activated. That is done from the **ACTIVE** column check box.
 

@@ -12,4 +12,4 @@ This ensures that hotels can customize bed availability per room type and contro
 
 As well as in the Hotel Room under Hotel → Room Types → Edit.
 
-<figure><img src="../../../.gitbook/assets/image (3) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
