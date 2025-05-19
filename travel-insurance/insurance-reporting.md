@@ -2,7 +2,7 @@
 
 Travel and cancellation insurance reporting is managed in the brand settings under the insurance tab.
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 The insurances will be reported based on the communication type:
 

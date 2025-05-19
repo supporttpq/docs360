@@ -31,7 +31,7 @@ Fields Available:
 * Bed Bank rooms - if checked, only hotel set as **Bed bank** in //Contract Type// will be shown
 * Hide dynamic flights - if checked, all dynamic transports(real transports and GDS) will be hidden
 
-<figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In the example below, only the transport part of the export is shown to facilitate the understanding and explanations.
 
@@ -78,4 +78,4 @@ Filters:
 
 The schedule also has the option to be stopped without deleting it in order to be resumed at a later date or it can be deleted entirely.
 
-<figure><img src=".gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

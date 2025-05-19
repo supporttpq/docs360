@@ -116,7 +116,7 @@ To finish click on Insert and then Generate. The end result is:
 
 or
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This depends on the simple cost being active or not In fix quota you can control the number of seats to be sold, costs, etc. For more information please check [Transport](./) and [Transport dashboard](../../transport-dashboard.md)
 

@@ -49,7 +49,7 @@ If you choose the **View Details** for one of those stop sales, the system will 
 
 In the "Stop Sale" page from the hotel menu, it can be seen that all the stop sales, including the ignored ones, can be seen. The ignored "stop sales" can be seen with a red background. Here you can disable/enable a stop sale. If you disable a stop sale, the stop sale service filters it out so that the allotments of the hotel can be changed.
 
-<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
 
 In the "Stop sales" page from the Hotel menu, it can be seen all the Stop Sales including the ignored ones. The Ignored "Stop sales" can be seen with a red background. Here you can disable/enable a stops sale. If you disable a stop sale, the Stop sale service filters out it so that the allotments of the Hotel can be changed.
 

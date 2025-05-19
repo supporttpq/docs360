@@ -23,11 +23,11 @@ We can then overview the basket total amount and offer content. Here are listed 
 
 We can then select different room proposals and present a flexible proposal for the customer. The second offer is now visible in overview This is the first offer of the proposal&#x20;
 
-<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Saving the overall proposal produces an offer number, and now we are able to send it to the customer.&#x20;
 
-<figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 We can also add an overall custom email message. We can preview the email that's going to be sent These texts are part of the agency setup that we made earlier. This is the offer, the name of the hotel and the resort Basic information about the trip and the total proposed amount. If the offer can be purchased by the customer himself on the web booking, a button appears and allows booking in the web booking module.&#x20;
 
