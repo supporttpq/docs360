@@ -152,6 +152,7 @@
     * [Different Max Pax](hotel/page-7/occupancy-handling/different-max-pax.md)
     * [Room Restriction](hotel/page-7/occupancy-handling/room-restriction.md)
     * [Single Room Cost](hotel/page-7/occupancy-handling/single-room-cost.md)
+    * [Single Room Suplement](hotel/page-7/occupancy-handling/single-room-suplement.md)
 
 ***
 
