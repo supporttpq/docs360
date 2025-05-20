@@ -14,7 +14,7 @@ To create a Route, the user must go to the **Transport** tab in the **Dashboard*
 
 The Route Dashboard allows the managing of the routes. They can be created, edited or deleted from there. A new route can be created by pressing the Create button on the right of the screen.
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Code: should be treated as any transport code with abreviations of the departure and arrival points
 * Route name: the name of the route
@@ -53,7 +53,7 @@ Multiple transports can follow a specific route and all the bookings made for th
 
 The check box "Pickup point required", when checked does not allow the booking to be saved if a pickup point is not selected for each passenger.&#x20;
 
-<figure><img src=".gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Brands**
 

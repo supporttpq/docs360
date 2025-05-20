@@ -33,7 +33,7 @@ After this, click on the **Create relation price** button in the upper right cor
 
 For setting up relation price lists between rooms, first you have to display the rooms. You will notice 2 columns in the right part of the screen named **Base Room Price** and **Relation Price**. These columns allow the user to manage the price lists for the hotel.
 
-<figure><img src=".gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Base Room Price** is the room that will provide the price for the price list of the room type.
 

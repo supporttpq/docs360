@@ -8,7 +8,7 @@ Guests can login using the booking number and the password provided.
 
 After login, guests are directed to a front page having a welcome quote.
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 From here, user can access available tabs in the application: Booking, Guide, Destination and VisitSun.
 
@@ -34,7 +34,7 @@ In **Weather** tab, details about weather during stay days are shown. Weather AP
 
 Using **Upgrade your vacantion** tab, user can update the booking by adding products (like seating or baggage facilities) to his reservation from Customer Center. Products which can be booked here are defined in Tourpaq Office and description and photos for products available in the application can be configured in Tourpaq Office under **Extras Setup->Extras Categories** tab.
 
-<figure><img src=".gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Guide tab <a href="#guide-tab" id="guide-tab"></a>
 
