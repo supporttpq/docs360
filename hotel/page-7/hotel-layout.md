@@ -11,10 +11,13 @@ Hotel layout is a feature that allows the user to define a floor-plan of a hotel
 Create the "room reservation" supplement. This supplement will automatically be added when a room is selected in the layout, and it has to be configured like this:
 
 * Discount/Suppl Code: RR
+  * _Important! The Code "RR" connects the supplement to Room Reservation._
 * Discount or Suppl: Supplement
 * General/Specified: General
 * Fixed/Manual: Manual
 * Available for first pass: Checked
+
+This supplement will be used on multiple hotels. The price for the Room Reservation is defined for each Room Number in a later step.
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -24,15 +27,25 @@ This can be done from "Hotel-> Layout Elements"
 
 <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-There are 4 element types: Seat, Decor, Room, and Room Icon. It's very important to remember this because when we later associate a room number with a room type from the hotel, we will only use "room icon" element types.
-
 &#x20;We will start by adding a new hotel background and then some elements to be placed on it.
+
+The Background is added from tab "Backgrounds".
+
+There are 3 element types relevant for Hotel Layout:
+
+* Element type "Room icon" is used to associate a room number with a room type from the hotel
+* Element type "Room" is used to add a Room-element to the hotel layout from Hotel "Layout" tab.
+* Element type "Decor" is used to add decorations, e.g. toilets, pool, beach, bar etc.
+
+
 
 &#x20;Afterwards, in the hotel we want a layout. For this, we go to the “Layout” tab and then press “Create Layout”
 
 <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;On this screen we now can create multiple sections of a hotel (floor, per example), but we will focus on editing a single section. Adding a background is as simple as clicking the background image Important note: too see when a room is reserved on a booking on not (by using backgrounds shown yellow/red/green), please use room icon with transparent background.
+On this screen we now can create multiple sections of a hotel (floor, per example), but we will focus on editing a single section. Adding a background is as simple as clicking the background image.
+
+Important note: too see when a room is reserved on a booking on not (by using backgrounds shown yellow/red/green), please use an image with transparent background.
 
 <figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -44,7 +57,7 @@ Now, for adding several other elements (rooms, décor), we click them, and they 
 
 We now need to define “Real” rooms for the room types of this hotel.
 
-&#x20;For this, we first define some room numbers from the tab "Room numbers", sub-tab "Room number". We do this by inserting a start value (for example:1) and an end value (for example:7). Numbers from 1 to 7 will be generated.&#x20;
+&#x20;For this, we first define some room numbers from the tab "Room numbers", sub-tab "Room numbers". We do this by inserting a start value (for example:1) and an end value (for example:7). Numbers from 1 to 7 will be generated.&#x20;
 
 <figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
