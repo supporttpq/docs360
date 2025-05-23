@@ -75,9 +75,9 @@ Used to set the date and time of the flights.
 * Land days (should be disabled for travel out)
 * Extra day out - controls hotel check-in days
 * FL - flinght changes (After changing time and date of a flight, check this and update; an e-mail will be sent to all bookings made on this flight that the flight hours have been changed. Requires **Flight change e-mail** template
-* Alternative Airport - this can be set only for the Travel home lines and can change the returning airport. It will be shown on booking and ticket. (Example: Flight leaves from Billund to Krete and returns to Kobenhavn instead of Billund)
+* Alternative Airport - this can be set for both Travel Out and Travel home lines and can change the returning airport. It will be shown on booking and ticket. (Example: Flight leaves from Billund to Antalya and returns to Billund, but the departure home airport will be Istanbul instead of Antalya).
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (189).png" alt=""><figcaption></figcaption></figure>
 
 ### Fix quota <a href="#fix-quota" id="fix-quota"></a>
 
