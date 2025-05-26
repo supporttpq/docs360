@@ -4,7 +4,7 @@ This feature can be found in Hotel -> Single Room Supplement.
 
 A single room supplement is an additional charge imposed when one guest occupies a room designated for more than one occupant (e.g., a double room).
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (181).png" alt=""><figcaption></figcaption></figure>
 
 ### 📌 Interface Overview
 
@@ -34,4 +34,4 @@ When you insert for the first time a rule to the hotel, if is not already create
 
 When a room listed in ROOMS is booked for a single person, the supplement must be applied.
 
-<figure><img src="../../../.gitbook/assets/image (181).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (181) (1).png" alt=""><figcaption></figcaption></figure>
