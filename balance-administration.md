@@ -20,7 +20,7 @@ This module contains 5 other submodules:
 
 ### &#x20;**Unregistered payments**&#x20;
 
-<figure><img src=".gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The unregistered payments are the booking payments with no corresponding booking number. It should be possible to assign an unregistered payment to a certain booking; thus, the modified record won’t appear anymore as unregistered, but it will be found in Payment Registration.
 
@@ -40,7 +40,7 @@ The unregistered payments are the booking payments with no corresponding booking
 
 ### **Negative balances**&#x20;
 
-<figure><img src=".gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 All the bookings for which money should be returned to the customer will be displayed here. The seller decides if the money must be returned to the customer, and this should be set from the booking page.&#x20;
 
@@ -69,7 +69,7 @@ All the bookings for which money should be returned to the customer will be disp
 
 ### **Unpaid bookings**&#x20;
 
-<figure><img src=".gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Here should appear all the bookings that haven’t been paid until today. It should be possible to filter the data by departure dates and payment due dates. The following is an extract of the information that could be displayed:
 
@@ -87,7 +87,7 @@ Here should appear all the bookings that haven’t been paid until today. It sho
 
 The **GdsPayments** section allows users to track and manage payments related to Global Distribution System (GDS) bookings, including ticket costs, airline details, and passenger information.
 
-<figure><img src=".gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. **Filter the Data:**
    * Use **Departure Period** and **Booking Period** filters to narrow down transactions.
@@ -125,7 +125,7 @@ The **GdsPayments** section allows users to track and manage payments related to
 
 The refund process allows users to return payments to customers when there is a negative balance in the system.
 
-<figure><img src=".gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Filter and Select the Seller (Optional):**
 

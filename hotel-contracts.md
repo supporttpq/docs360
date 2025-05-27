@@ -19,11 +19,11 @@ The mandatory fields for creating a new contract are:
 
 Resort dropdown contains all available resorts defined per company.
 
-<figure><img src=".gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 After selecting one resort, hotel list is populated.
 
-<figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 You have 2 options:
 
@@ -33,7 +33,7 @@ You have 2 options:
 
 Contract Details:
 
-<figure><img src=".gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Name** - represent name of the contract
 * **Creditor** - Hotel Contract currency = Creditor's currency
@@ -50,19 +50,19 @@ You have 3 options to define a room type:
 
 * **Add New Room Type** - create a new base room type per company
 
-<figure><img src=".gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 All fields will be available to fill in. When importing in Tourpaq, a new base room type is created.
 
 * **Import New Room Type in Tourpaq**
 
-<figure><img src=".gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 No. ordinary beds is calculated in this way: Minimum - Max. Extra Adult - Max. Extra Child
 
 * **Add New Room Type From Existing** - choose one of the exiting base room types defined per company
 
-<figure><img src=".gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 When you use this option, Room Type Code, Room Type Name, Minimim, Maximum, Max. Adult and Max. Child can not be changed. These were defined in Base Room Type.
 
@@ -77,7 +77,7 @@ You can choose from 2 categories:
 
 * **Room Type Supplement**- Double as Single. Each room from "Room Type" can be sold as Single.
 
-<figure><img src=".gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Age and Rank are not allowed for selecting.&#x20;
 
@@ -87,7 +87,7 @@ If "%" is checked, room cost represents percent cost from parent base room type.
 
 It is mandatory a mapping between standard room type and shared room type:
 
-<figure><img src=".gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Room Code represents room sold as single Room. Room Above represents parent room.
 
@@ -95,20 +95,20 @@ Room Code represents room sold as single Room. Room Above represents parent room
 
 * **Product Supplement** - Mini All Inclusive, All Inclusive, Ultra All Inclusive, Breakfast, Diner, Half Board. You can select one of these options as Supplement.
 
-<figure><img src=".gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Mandatories fields:
 
 * Age (From - To) Example 12-99
 * Rank (From - To) (Example 1-3 From the 1st passenger till the 3rd will receive the supplement). A product should be selected for this category type:
 
-<figure><img src=".gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 After selecting one category, product list is populated. You can choose from existing one, or you can define a new product. When importing in
 
 * **Over Nights** - This option is used when hotel asks you to pay a supplement for each passenger, but only after a defined number of nights.
 
-<figure><img src=".gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Reductions <a href="#reductions" id="reductions"></a>
 
@@ -123,7 +123,7 @@ You can choose from 2 categories:
 
 Product Supplement could be defined as Supplement and also as Reduction. For both situations, prices from selected product will be imported and hotel is added in the Resources tab of the product.
 
-<figure><img src=".gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The difference is when we define Product Supplement as Reduction. For each room cost, value of product cost is also defined in "Included Cost".
 
@@ -154,19 +154,19 @@ After importing in Tourpaq the results are:
 
 The **Payment Plan** section allows users to define multiple payment milestones for a hotel contract. Each payment&#x20;
 
-| Field Name       | Description                                                                                                                                         |
-| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Deposit Date** | The date when the payment is initially made (input format: DD-MM-YYYY).                                                                             |
-| **Payback Date** | The date when the payment is expected to be returned or reconciled. This is optional and shown as a calendar input.                                 |
-| **Tot Amount**   | The total monetary value of the payment. This is input manually or pulled from contract terms.                                                      |
-| **Currency**     | The currency of the transaction (e.g., EUR). Currently fixed per contract.                                                                          |
-| **Year**         | The fiscal year in which the payment applies. This is selected from a dropdown list. It is used for grouping the plans in the Hotel Contract export |
+| Field Name       | Description                                                                                                                                                 |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Deposit Date** | The date when the payment is initially made (input format: DD-MM-YYYY).                                                                                     |
+| **Payback Date** | The date when the payment is expected to be returned or reconciled. This is optional and shown as a calendar input.                                         |
+| **Tot Amount**   | The total monetary value of the payment. This is input manually or pulled from contract terms.                                                              |
+| **Currency**     | The currency of the transaction (e.g., EUR). Currently fixed per contract.                                                                                  |
+| **Year**         | Represents the year after which the grouping is done. This is selected from a dropdown list. It is used for grouping the plans in the Hotel Contract export |
 
 This section is crucial for financial tracking, forecasting, and ensuring accurate settlements between the travel agency and the hotel.
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption><p>Payment Plan Grouping by years</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Payment Plan Grouping by years</p></figcaption></figure>
 
 ### Remarks
 

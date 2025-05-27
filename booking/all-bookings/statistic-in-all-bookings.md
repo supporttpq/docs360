@@ -16,7 +16,7 @@ layout:
 
 To view statistics in Tourpaq, go to Booking menu Click on  All Bookings.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Statistics filters work only for statistics. They are used along with the general filters to display various statistics&#x20;
 

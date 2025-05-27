@@ -4,18 +4,18 @@
 
 1. When a change is made to a flight, the Flight Change Type field is automatically filled in (but can be edited later).
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. To save the changes made to the timetable, select the row(s) where changes were made, and 2 options now appear:
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Send Flight Change - The changes to the timetable are saved, and an email is sent to all bookings affected by the changes to the timetable.
 * Queue Flight Change - the changes in the timetable are saved and placed in the flight change queue with the change type set in the flight change type in the timetable
 
 3. After all this has been done, go to the [Flight Change](./) menu to complete the flight change process. Select one or more flight changes (only those in the queue) and send an email or SMS using the Send/Send SMS buttons.
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;      Drop - if a flight change is selected and the drop button is used, that flight change is completed, and no more emails/SMS can be sent for that change.
 
