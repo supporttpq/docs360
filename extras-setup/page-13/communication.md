@@ -2,7 +2,7 @@
 
 Extra communication is used to send lists to suppliers and hotels about the product booked by guests.
 
-<figure><img src="../../.gitbook/assets/image (14) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Communication can be set after certain rules and filters:
 

@@ -2,7 +2,7 @@
 
 In the GDS tab you can add various info texts related to the status of GDS.&#x20;
 
-<figure><img src="../.gitbook/assets/image (11) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Text to add on ticket – text from this box will be added on the ticket, at the bottom of the "Betalingplan" section. If you want this text to be bold on the ticket, select the checkbox.&#x20;
 

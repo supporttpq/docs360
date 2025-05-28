@@ -329,6 +329,7 @@
 * [Board Type](board-type/README.md)
   * [Board Type - Hotell allotment / Ticket](board-type/board-type-hotell-allotment-ticket.md)
   * [Board Type - Extra](board-type/board-type-extra.md)
+  * [Board Type - Webboking](board-type/board-type-webboking.md)
 
 ## Email Setup
 

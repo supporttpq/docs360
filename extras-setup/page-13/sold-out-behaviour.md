@@ -2,7 +2,7 @@
 
 **Sold out** behaviour for extras can be set from the Extra category and is available only for products with allotment.
 
-<figure><img src="../../.gitbook/assets/image (11) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 To better exemplify this, we have the next case:
 
