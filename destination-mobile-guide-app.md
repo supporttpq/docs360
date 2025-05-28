@@ -197,7 +197,7 @@ After setting the excursion up, we can proceed to the next stage: the one of boo
 
 **Choose an excursion from the list**
 
-<figure><img src=".gitbook/assets/exc1-1fad91da0047f44d747f6cd095151953.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (190).png" alt=""><figcaption></figcaption></figure>
 
 **See the details of the excursion**
 
@@ -209,22 +209,26 @@ After setting the excursion up, we can proceed to the next stage: the one of boo
 
 **Select the previously created payment types and proceed to the checkout**
 
-![!](https://docs.tourpaq.com/assets/images/33-26ea9268165dcf4a35ebcdd598c34f31.png)
+<figure><img src=".gitbook/assets/image (191).png" alt=""><figcaption></figcaption></figure>
 
 **IMPORTANT:** The Mobile Application also gives the possibility to cancel an existing order. In order to do this, the user has to click on the **Booked** tab in the **Extras** screen and tap on the existing order. In here, he can also decide whether he will refund the money back to the customer. In order to make the refund possible, a Credit method of payment assigned to this specific guide is required! (see pictures below)
 
-![!](https://docs.tourpaq.com/assets/images/44-eb22f4d9b41b69ad1d249f865f6de8a5.png)
+<figure><img src=".gitbook/assets/image (192).png" alt=""><figcaption></figcaption></figure>
 
 ![!](https://docs.tourpaq.com/assets/images/55-f4fe0b97ccc6779a3e8784668d4048d4.png)
 
-**Note:** When ordering excursions from Destination app or Guest App the workflow is as follows: Allotment is taken but order is pending status (these orders do not appear in the system). On Payment Approved the order is set to status OK On Payment Rejected the allotment is restored and order is canceled On Payment not finalized (for any reason) the allotment is set back after 10 minutes On Pending payment a pending payment is sent to the customer. As we get the notification on the status two scenarios may occur:
+**Note:** When ordering excursions from Destination app or Guest App the workflow is as follows: Allotment is taken but order is pending status (these orders do not appear in the system).
+
+If payment approved, the order is set to status OK. If payment rejected, the allotment is restored and order is canceled. If payment not finalized (for any reason) the allotment is set back after 10 minutes. If pending payment, a pending payment is sent to the customer. As we get the notification on the status two scenarios may occur:
 
 * Pending payment is reported as approved – an email saying your payment has been approved
 * Pending payment is reported as rejected – an email saying your payment is rejected is sent and order is canceled and allotment set back
 
 <figure><img src=".gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-In the _Error_ menu, you’ll see bookings where extra orders (such as excursions) were canceled by the service, but the payment was still confirmed. These entries are shown to help you identify and resolve any discrepancies.
+In the CXL/Error menu, you’ll see bookings where extra orders (such as excursions) were canceled by the service, but the payment was still confirmed. These entries are shown to help you identify and resolve any discrepancies.
+
+The status in the app will be cleared when the guest is traveling home.
 
 ### **Export lists**
 
