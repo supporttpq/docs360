@@ -6,11 +6,11 @@ With this new functionality, you can create a new hotel much faster, without hav
 
 First go to Hotel list, and as you can see you have a new button: "Create using wizard."
 
-<figure><img src="../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This will redirect you to a new page to create hotel, with only required data as: Name, Code, Rooms, etc.
 
-<figure><img src="../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 You can insert from here all the minimum data for a new hotel without having to go to other tabs (rooms, brands)
 

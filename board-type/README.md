@@ -17,7 +17,7 @@ System implementations should accommodate these variations to ensure accurate ha
 
 The **Board Types** section allows system administrators or product managers to configure and maintain the list of board types available in the system. These types are used to define the meal and service options associated with a room booking at a hotel.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
 ### Overview
 

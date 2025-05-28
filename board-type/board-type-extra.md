@@ -11,7 +11,7 @@ These can be configured by accessing the Extras Setup -> Extras. To be able to u
 * Select **Pension** as the Extra Category.
 * The **Board Supplements** section becomes visible.
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -19,7 +19,7 @@ These can be configured by accessing the Extras Setup -> Extras. To be able to u
 
 * &#x20;Open the **Board Supplements** tab - A `Board Type` dropdown and a checkbox for **All guests in one room share the same board type** appear.
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Select a **Board Type**. - The selected type appears with `Code` and `List name`.
 * Check the **All guests...** checkbox -  The checkbox is selected.
@@ -43,7 +43,7 @@ These can be configured by accessing the Extras Setup -> Extras. To be able to u
 * Click on **Edit Passengers - P**ssenger list opens with editable extras.
 * Select the previously created Pension extra - The option is displayed in the input field.
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Check the price - The price should match the one set in the extras menu.
 * Click **Save Passengers**&#x20;
@@ -57,7 +57,7 @@ These can be configured by accessing the Extras Setup -> Extras. To be able to u
 * Click **Print Ticket -** A ticket PDF is downloaded.
 * Verify ticket content - The board supplements and their costs appear.
 
-<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -66,14 +66,14 @@ These can be configured by accessing the Extras Setup -> Extras. To be able to u
 * Return to the booking and click **Edit Passengers -** Passenger details are editable.
 * Select another **Pension extra -** The list shows extras for other board types as well.
 
-<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Click **Save Passengers -** Passenger data is saved.
 * Click **Save -** Booking is saved with **OK** status.
 * Click **Print Ticket -** Ticket is saved/downloaded.
 * Check ticket contents - Extras appear in the ticket
 
-<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -81,4 +81,4 @@ These can be configured by accessing the Extras Setup -> Extras. To be able to u
 
 * Check board type on the hotel - Board type updates for the passenger with a different extra selected.
 
-<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>

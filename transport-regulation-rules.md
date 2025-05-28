@@ -4,7 +4,7 @@ Applies to Administrator
 
 This function allows users to automatically change the prices on all pricelists for a transport allotment. The rules are available for the company, and the rules are set on a transport allotment from the Transport –FixQuotas(view) – transport allotment table. For Load Factor usage within the corresponding feature rules, the Factor Matrix and Price Regulation functionalities must not be blocked. Please contact Tourpaq Support for this. The rule has the following 2 sets of fields:
 
-<figure><img src=".gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **General fields** (used for going prices UP) :&#x20;
 
@@ -30,11 +30,11 @@ This function allows users to automatically change the prices on all pricelists 
 
 Load factor is calculated based on the defined Factor Matrix, under Transport -> Factor Matrix tab. Here user can define the load factor based on weeks for a transport. Load Factor for a certain transport is calculated behind and can be checked into Transport->Transport Price Control on the Load Factor tab.
 
-<figure><img src=".gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Based on the load factor, the price regulation rules can be set. Rule can be assign for a departure of a transport under Fix Quota:
 
-<figure><img src=".gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Based on an interval of values for Load Factor, certain price regulation rule will be applied or not.
 
@@ -56,7 +56,7 @@ This feature permits the user to set up schedulers to maintain an automatic chan
 
 They can be added under the menu Transport -> Tr. Regulation Rules -> Schedules.
 
-<figure><img src=".gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Create Schedule**
 
@@ -67,7 +67,7 @@ In order to create a schedule, the following fields have to be completed:
 * **Weeks Before Arrival** - With how many weeks to set the rule before. This setup will consider the exact date (day) , meaning that if schedule is set for eg, on Monday with 3 weeks before, but the departures on that transport are on Wednesday, then, the rule will be applied only on Wednesday for the departure over 3 weeks.
 * **Active** - The status of the schedule
 
-<figure><img src=".gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Workflow**
 
@@ -77,7 +77,7 @@ First the service will just apply the rule set on schedule.Then the same service
 
 **Very important:** the service will consider only transports with "Use Change Rule Service" set.
 
-<figure><img src=".gitbook/assets/image (12) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * If the rule is not set, it will be set up.
 * If a rule is already set, will be changed (if the case) with the first rule (from all the existing ones) that meets the conditions .

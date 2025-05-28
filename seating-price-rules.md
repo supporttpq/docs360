@@ -1,6 +1,6 @@
 # Seating Price Rules
 
-<figure><img src=".gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This page describes the functionality and usage of the Transport Seating Rules page. This page allows users to define and manage seating rules for different transportation types.
 
