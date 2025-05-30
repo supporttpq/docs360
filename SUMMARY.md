@@ -75,6 +75,15 @@
 ***
 
 * [Merge customers](merge-customers.md)
+* [Customer information (errata)](customer-information-errata/README.md)
+  * [Customer Information on Destination setup](customer-information-errata/customer-information-on-destination-setup.md)
+  * [Customer Information on Resort setup](customer-information-errata/customer-information-on-resort-setup.md)
+  * [Customer Information on Transport setup](customer-information-errata/customer-information-on-transport-setup.md)
+  * [Customer Information on Hotel setup](customer-information-errata/customer-information-on-hotel-setup.md)
+  * [Customer Information on Extra setup](customer-information-errata/customer-information-on-extra-setup.md)
+  * [Customer Information on WebBooking](customer-information-errata/customer-information-on-webbooking.md)
+  * [Customer Information Booking Flow](customer-information-errata/customer-information-booking-flow.md)
+  * [Customer Information display on Ticket](customer-information-errata/customer-information-display-on-ticket.md)
 
 ## Tickets
 
