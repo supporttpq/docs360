@@ -304,6 +304,25 @@ This e-mail is sent to the passenger that bought a parking extra.
 * VRN to be completed
 * 30 days before departure
 
+40. **Special Offer Rejected**
+41. **Quotation list**
+42. **Stop sales introduction**
+43. **Mail Platform for SmS**
+44. **Dynamic Email / SMS**
+45. **Confirmation Hotel**
+46. **Confirmation Transfer**
+47. **Seats vs. Beds Reporting**
+48. **Giftcard Email**
+49. **Time Share fee created notification**
+50. **Select offer SMS**
+51. **Time share fee reminder**
+52. **Time share fee preminder**
+53. **Car Registration**
+54. **Full Individual Payment Received**
+55. **Deposit received per passenger**
+
+    <figure><img src=".gitbook/assets/image (193).png" alt=""><figcaption></figcaption></figure>
+
 **New Variables that work ONLY on this template.**
 
 * \[ConfirmationCode] - Confirmation code from APCOA
