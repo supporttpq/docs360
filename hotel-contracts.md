@@ -166,7 +166,7 @@ This section is crucial for financial tracking, forecasting, and ensuring accura
 
 <figure><img src=".gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Payment Plan Grouping by years</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Payment Plan Grouping by years</p></figcaption></figure>
 
 ### Remarks
 

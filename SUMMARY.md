@@ -152,6 +152,7 @@
   * [Hotel Web](hotel/page-7/hotel-web.md)
   * [Communication](hotel/page-7/communication/README.md)
     * [Hotel reporting](hotel/page-7/communication/hotel-reporting.md)
+  * [Special Offer](hotel/page-7/special-offer.md)
   * [Hotel Layout](hotel/page-7/hotel-layout.md)
   * [Hotel Deposit](hotel/page-7/hotel-deposit.md)
   * [Hotel Activity Log](hotel/page-7/hotel-activity-log.md)

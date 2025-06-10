@@ -44,4 +44,4 @@ This test covers the Booking module and Brand configuration screens in the back‚
 
 Attach the generated PDF from Step 3 for each version and annotate the location of the Bem√¶rkninger sections.&#x20;
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
