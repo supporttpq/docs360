@@ -304,24 +304,81 @@ This e-mail is sent to the passenger that bought a parking extra.
 * VRN to be completed
 * 30 days before departure
 
-40. **Special Offer Rejected**
+40. **Special Offer Rejected** &#x20;
+
+This email is sent when a hotel's special offer is rejected, from the Notifications menu.
+
 41. **Quotation list**
-42. **Stop sales introduction**
+
+A quotation list email is a message containing a detailed list of products or services with their respective prices, quantities, and terms, sent to a potential customer. It's used to provide a comprehensive overview of the pricing and details of a potential purchase, helping the customer make an informed decisio
+
+42. **Stop sales introduction**&#x20;
+
+This email is sent when a new stop sale is created.
+
 43. **Mail Platform for SmS**
-44. **Dynamic Email / SMS**
-45. **Confirmation Hotel**
+44. **Dynamic Email / SMS**&#x20;
+
+It can be used to notify the guests of their departure date, to welcome them to the trip location, to welcome them home, to make them aware of certain products they can book etc.
+
+45. **Confirmation Hotel**&#x20;
+
+&#x20;A hotel confirmation email acknowledges a reservation, providing essential details like dates, room type, and booking number. It also includes the hotel's address, contact information, payment status, and any relevant policies.&#x20;
+
+Alongside the e-mail template, a Hotel Confirmation e-mail will also need the following in order to work properly:
+
+* **Supplier** selected for the hotel
+* **Reservation Dept Email** field filled in the hotel
+* **Contract type** of the hotel to be set as either **Allotment** or **Request**
+
+**!!! If the hotel doesn't have the Reservation Dept Email field filled, the e-mail will be not be sent**
+
 46. **Confirmation Transfer**
+
+&#x20;An email sent to verify and confirm the details of a scheduled transfer, such as the movement of a person, item, or service from one location to another. It typically includes information like the date, time, locations, names involved, and any relevant logistical or contact details. This type of email serves to ensure mutual understanding and agreement between the involved parties.
+
+To set up the **Transfer Confirmation email** the required settings are:
+
+* An extra that will act as transfer
+* Supplier for the extra
+* **Contract type** must be **Allotment** or **Request**
+* Category type has to be Transfer
+
 47. **Seats vs. Beds Reporting**
+
+This email is sent according to a scheduler set on communication. Attached to this email is a Seats vs beds report.
+
 48. **Giftcard Email**
+
+This email is sent automatically after the Giftcard is paid.
+
 49. **Time Share fee created notification**
+
+<mark style="color:red;">No longer used.</mark>
+
 50. **Select offer SMS**
+
+
+
 51. **Time share fee reminder**
+
+<mark style="color:red;">No longer used</mark>
+
 52. **Time share fee preminder**
+
+<mark style="color:red;">No longer used</mark>
+
 53. **Car Registration**
+
+This email is sent to passengers who have a product with the attribute "car registration"
+
 54. **Full Individual Payment Received**
+
+**This email is sent when the passengr made a full ammount paid by "Individual payment"**
+
 55. **Deposit received per passenger**
 
-    <figure><img src=".gitbook/assets/image (193).png" alt=""><figcaption></figcaption></figure>
+**This email is sent when the deposit is paid by "Individual payment"**
 
 **New Variables that work ONLY on this template.**
 
