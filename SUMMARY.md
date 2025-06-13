@@ -134,6 +134,7 @@
 * [Packages Generator](packages-generator.md)
 * [Pricelist Tags](pricelist-tags.md)
 * [Free room count behavior](free-room-count-behavior.md)
+* [2 x Child prices + Child price discount](2-x-child-prices-+-child-price-discount.md)
 
 ## Hotel
 
