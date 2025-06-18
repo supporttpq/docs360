@@ -51,6 +51,7 @@
   * [A la Carte](booking/new-booking/a-la-carte/README.md)
     * [General Description](booking/new-booking/a-la-carte/general-description.md)
     * [Packages](booking/new-booking/a-la-carte/packages.md)
+  * [Remove pax on outbound or homebound only](booking/new-booking/remove-pax-on-outbound-or-homebound-only.md)
 
 ***
 

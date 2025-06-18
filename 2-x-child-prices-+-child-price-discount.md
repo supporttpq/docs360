@@ -4,4 +4,4 @@ The 2 child prices are enabled by the feature "Child Profit Margin". The feature
 
 The child profit margin is the same for both children.
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>

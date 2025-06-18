@@ -23,7 +23,7 @@ To use this function, you need to follow the next steps:
 * Before pressing the Take Allotment button, insert the booking number from which you want to copy the passengers.&#x20;
 * Click on Take Allotment. An info message appears and asks you if you are sure you wish to copy the passengers.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Click OK The passenger has copied successfully.&#x20;
 * Continue the booking process, by clicking on save passengers&#x20;
