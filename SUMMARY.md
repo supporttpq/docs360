@@ -51,7 +51,9 @@
   * [A la Carte](booking/new-booking/a-la-carte/README.md)
     * [General Description](booking/new-booking/a-la-carte/general-description.md)
     * [Packages](booking/new-booking/a-la-carte/packages.md)
-  * [Remove pax on outbound or homebound only](booking/new-booking/remove-pax-on-outbound-or-homebound-only.md)
+  * [Remove pax on outbound or homebound only](booking/new-booking/remove-pax-on-outbound-or-homebound-only/README.md)
+    * [Remove pax on outbound or homebound only, Export lists impact](booking/new-booking/remove-pax-on-outbound-or-homebound-only/remove-pax-on-outbound-or-homebound-only-export-lists-impact.md)
+    * [Remove pax on outbound or homebound only, Transport Reporting Impact](booking/new-booking/remove-pax-on-outbound-or-homebound-only/remove-pax-on-outbound-or-homebound-only-transport-reporting-impact.md)
 
 ***
 
