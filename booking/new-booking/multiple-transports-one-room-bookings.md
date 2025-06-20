@@ -22,3 +22,19 @@ Next, on the Allocate Passengers screen, the rooms will be merged by pressing th
 Now, the room is successfully merged, and two passengers from two different transports are able to stay in the same room.
 
 Note: _Only one room is taken from the allotment of the hotel_
+
+There are 3 other possible cases of configuring reservations with passengers coming with 2 different transports and wanting the same type of room.
+
+1. We will choose 2 different transports with the same arrival, in the same interval, the hotel with the same room type (which is merged), and then save the booking
+
+<figure><img src="../../.gitbook/assets/image (196).png" alt=""><figcaption></figcaption></figure>
+
+Next, on the Allocate Passengers screen, the rooms will be merged by pressing the "Merge rooms by type" button.
+
+<figure><img src="../../.gitbook/assets/image (197).png" alt=""><figcaption></figcaption></figure>
+
+Now, the room is successfully merged, and two passengers from two different transports are able to stay in the same room.
+
+Add another passenger who uses a transport with the same arrival as the 2 existing passengers, in the same interval, but the room type is different from the one in which the 2 passengers are already staying.
+
+<figure><img src="../../.gitbook/assets/image (198).png" alt=""><figcaption></figcaption></figure>
