@@ -38,3 +38,9 @@ Now, the room is successfully merged, and two passengers from two different tran
 Add another passenger who uses a transport with the same arrival as the 2 existing passengers, in the same interval, but the room type is different from the one in which the 2 passengers are already staying.
 
 <figure><img src="../../.gitbook/assets/image (198).png" alt=""><figcaption></figcaption></figure>
+
+Next, on the Allocate Passengers screen, allocate the 3rd passenger and save.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (199).png" alt=""><figcaption></figcaption></figure>
+
+The 3rd passenger is corrcorrectlyect allocated and the booking can be saved.
