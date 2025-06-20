@@ -43,4 +43,12 @@ Next, on the Allocate Passengers screen, allocate the 3rd passenger and save.&#x
 
 <figure><img src="../../.gitbook/assets/image (199).png" alt=""><figcaption></figcaption></figure>
 
-The 3rd passenger is corrcorrectlyect allocated and the booking can be saved.
+The 3rd passenger is correctly allocated, and the booking can be saved.
+
+2. First step is the same as it was in the previous example; the difference now came in the second step when we will add on the booking another 2 passengers who will use different transports with the same arrival, in the same period, same hotel, but different room.
+
+<figure><img src="../../.gitbook/assets/image (200).png" alt=""><figcaption></figcaption></figure>
+
+Next, on the Allocate Passengers screen, the booth rooms type  will be merged by pressing the "Merge rooms by type" button.
+
+<figure><img src="../../.gitbook/assets/image (201).png" alt=""><figcaption></figcaption></figure>
