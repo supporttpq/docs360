@@ -358,7 +358,7 @@ This email is sent automatically after the Giftcard is paid.
 
 50. **Select offer SMS**
 
-
+This SMS is sent to inform  the customer about the offer that he requested. It is sent manually, and can contain a personalized message set in in the Brands menu / Select Offer.
 
 51. **Time share fee reminder**
 
