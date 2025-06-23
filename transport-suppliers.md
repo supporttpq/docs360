@@ -8,6 +8,8 @@ The **Transport Suppliers** page is used to manage the list of transport provide
 
 ### 🔍 Filters and Controls
 
+<figure><img src=".gitbook/assets/image (206).png" alt=""><figcaption></figcaption></figure>
+
 #### 1. **Search by Name**
 
 * A text input to filter the list of suppliers by name.
