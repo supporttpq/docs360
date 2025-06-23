@@ -1,14 +1,14 @@
-# Transport reporting
+# Transport Reporting
 
 Transport Reporting is a way to communicate the passenger name list **PNL** to the airline company. There are more methods to sent the PNL.
 
 The reporting method type can be sent in **Transport** in **Transport/General tab** as a default. Tour operator code is required for some reporting types.
 
-<figure><img src=".gitbook/assets/image (109).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (109).png" alt=""><figcaption></figcaption></figure>
 
 Another reporting method can be set from the **Timetable**. This will overwrite the method selected in the **Transport/General tab** for the duration of the flights.
 
-<figure><img src=".gitbook/assets/image (110).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (110).png" alt=""><figcaption></figcaption></figure>
 
 The last reporting method can be set up from **Communication** tab.
 
@@ -18,19 +18,19 @@ By clicking "Add schedule" user can define rules based on which communication fi
 
 Rules captured in the image below, will sent communication files at the e-mail set for all bookings of selected transport with 20,10 and 1 day(s) before departure date.
 
-<figure><img src=".gitbook/assets/image (112).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (112).png" alt=""><figcaption></figcaption></figure>
 
 **Defining one rule for an interval of days**
 
 User can compact many rules to one, using Departure Date End. It can be defined an interval Departure Date- Departure Date End and also, using **Minutes** interval, communication files will be sent every set minutes. Rule captured in the picture below, will sent communication files at the e-mail address for selected transport, every 60 minutes for all bookings with 1,2,3...50 days before departure date.
 
-<figure><img src=".gitbook/assets/image (113).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (113).png" alt=""><figcaption></figcaption></figure>
 
 When you are using Departure Date End, you can not copy this rule, to create a new one.
 
 It is possible to define rules like below (using Hour set):
 
-<figure><img src=".gitbook/assets/image (114).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (114).png" alt=""><figcaption></figcaption></figure>
 
 Rules number 1,2 and 3 are overwritten by the last rule, the only difference is the e-mail address to which the communication files are sent. This method can also overwrite the previous selected methods of defining communication files.
 
@@ -79,7 +79,7 @@ This feature permits the user:
 
 It can be accessed from Transport -> Resend Transport Reporting
 
-<figure><img src=".gitbook/assets/image (115).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (115).png" alt=""><figcaption></figcaption></figure>
 
 Available filters:
 
@@ -89,7 +89,7 @@ Available filters:
 * Arrival Airport - This field identifies the airport where the flight is scheduled to land. It is also typically represented by a standard airport code.
 * Airlines - This field indicates the airline operating the flight. It can be represented by the airline's name or its designated airline code.
 
-<figure><img src=".gitbook/assets/image (116).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (116).png" alt=""><figcaption></figcaption></figure>
 
 **Resending section**
 
@@ -131,11 +131,11 @@ One transport may have a single Transport Supplier for all rotations in the fix-
 
 Transport supplier can be found inside Edit Transport in Communication tab:
 
-<figure><img src=".gitbook/assets/transportSupplierTabLocation-956e7aac017ec67cc51896a22b5c413b.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/transportSupplierTabLocation-956e7aac017ec67cc51896a22b5c413b.png" alt=""><figcaption></figcaption></figure>
 
 This tab shows the list of communication triggered by the rules from the Transport supplier.
 
-<figure><img src=".gitbook/assets/transportSupplierTabList-e396a773c38ce57854d0a7cbe90b5761.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/transportSupplierTabList-e396a773c38ce57854d0a7cbe90b5761.png" alt=""><figcaption></figcaption></figure>
 
 This list can be ordered by Reporting Method, Transport Supplier and Period.
 
@@ -151,4 +151,4 @@ This table contains the following columns:
 * Email - Field to input one or more **email addresses** where notifications, reports, or PNL documents are sent.
 * Communications - link with the files for PNL Data(clicking this link will open a modal window that contains a list of links for files, when you click on one it will open in a new tab).
 
-<figure><img src=".gitbook/assets/transportSupplierTabModal-a9bb0c7ec87df174f925a60f198ee44f.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/transportSupplierTabModal-a9bb0c7ec87df174f925a60f198ee44f.png" alt=""><figcaption></figcaption></figure>
