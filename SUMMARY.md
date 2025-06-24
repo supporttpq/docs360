@@ -374,6 +374,7 @@
 * [Resorts](setup/resorts.md)
 * [Departure stat weeks](setup/departure-stat-weeks.md)
 * [System Setup](setup/system-setup.md)
+* [System Setup FTPs](setup/system-setup-ftps.md)
 * [System Setup Groups](setup/system-setup-groups.md)
 * [Creditor Currency Convertor](setup/creditor-currency-convertor.md)
 * [Internal logs](setup/internal-logs.md)
