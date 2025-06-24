@@ -4,7 +4,7 @@
 
 The **Special Offers** tab allows hotel administrators and travel agents to configure promotional pricing and discounts for specific room types and booking conditions. These offers can be tailored by date, room type, number of guests, and other criteria.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 There are 4 rules:
 

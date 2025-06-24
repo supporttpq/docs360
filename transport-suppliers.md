@@ -4,11 +4,16 @@
 
 The **Transport Suppliers** page is used to manage the list of transport providers integrated into the system. Each supplier is associated with a tour operator and a specific reporting format. This interface supports adding, viewing, and deleting transport suppliers.
 
+The Trasnport Supplier is used by the Transport and Real Transport to identify the supplier of the flight. The Transport Supplier can be used for:
+
+* A common way to describe the communication, so all Transports that uses this supplier use the Transport Supplier communication
+* The Transport Supplier can be used in Resources in Extra to select the relevant extras (e.g. different baggage options for two different transport suppliers)
+
 ***
 
 ### 🔍 Filters and Controls
 
-<figure><img src=".gitbook/assets/image (206).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 #### 1. **Search by Name**
 
@@ -22,8 +27,8 @@ The **Transport Suppliers** page is used to manage the list of transport provide
 
 #### 3. **Show All Checkbox**
 
-* When checked, displays all suppliers regardless of filters.
-* When unchecked, filtering is applied.
+* When checked, it displays the hidden Transports Suppliers
+* unchecked, filtering is applied.
 
 #### 4. **Clear Button**
 
@@ -46,7 +51,7 @@ Clicking on the column headers (marked with sort icons) will sort the entries as
 ### 🗑️ Actions
 
 * **Delete Icon (🗑️)**: Click to delete a supplier entry.
-  * A confirmation prompt may appear to avoid accidental deletions.
+  * A confirmation prompt will appear to avoid accidental deletions.
 
 ***
 
