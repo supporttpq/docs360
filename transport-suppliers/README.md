@@ -13,7 +13,7 @@ The Trasnport Supplier is used by the Transport and Real Transport to identify t
 
 ### 🔍 Filters and Controls
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 #### 1. **Search by Name**
 
@@ -28,6 +28,11 @@ The Trasnport Supplier is used by the Transport and Real Transport to identify t
 #### 3. **Show All Checkbox**
 
 * When checked, it displays the hidden Transports Suppliers
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
 * unchecked, filtering is applied.
 
 #### 4. **Clear Button**
