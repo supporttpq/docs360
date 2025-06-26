@@ -137,7 +137,9 @@
 * [Packages Generator](packages-generator.md)
 * [Pricelist Tags](pricelist-tags.md)
 * [Free room count behavior](free-room-count-behavior.md)
-* [2 x Child prices + Child price discount](2-x-child-prices-+-child-price-discount.md)
+* [2 x Child prices + Child price discount](2-x-child-prices-+-child-price-discount/README.md)
+  * [How CH1P1 & CH2P1 is calcualated in Price List](2-x-child-prices-+-child-price-discount/how-ch1p1-and-ch2p1-is-calcualated-in-price-list.md)
+  * [How CH1D1 & CH2D1 is calculated in Price List](2-x-child-prices-+-child-price-discount/how-ch1d1-and-ch2d1-is-calculated-in-price-list.md)
 
 ## Hotel
 
