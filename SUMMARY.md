@@ -140,6 +140,8 @@
 * [2 x Child prices + Child price discount](2-x-child-prices-+-child-price-discount/README.md)
   * [How CH1P1 & CH2P1 is calcualated in Price List](2-x-child-prices-+-child-price-discount/how-ch1p1-and-ch2p1-is-calcualated-in-price-list.md)
   * [How CH1D1 & CH2D1 is calculated in Price List](2-x-child-prices-+-child-price-discount/how-ch1d1-and-ch2d1-is-calculated-in-price-list.md)
+  * [How CH1P1 is used in booking](2-x-child-prices-+-child-price-discount/how-ch1p1-is-used-in-booking.md)
+  * [Child pays an adult's price for a double room when it does not occupy an extra bed](2-x-child-prices-+-child-price-discount/child-pays-an-adults-price-for-a-double-room-when-it-does-not-occupy-an-extra-bed.md)
 
 ## Hotel
 
