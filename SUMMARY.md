@@ -142,6 +142,8 @@
   * [How CH1D1 & CH2D1 is calculated in Price List](2-x-child-prices-+-child-price-discount/how-ch1d1-and-ch2d1-is-calculated-in-price-list.md)
   * [How CH1P1 is used in booking](2-x-child-prices-+-child-price-discount/how-ch1p1-is-used-in-booking.md)
   * [Child pays an adult's price for a double room when it does not occupy an extra bed](2-x-child-prices-+-child-price-discount/child-pays-an-adults-price-for-a-double-room-when-it-does-not-occupy-an-extra-bed.md)
+  * [CH1P1 is correctly used in WB](2-x-child-prices-+-child-price-discount/ch1p1-is-correctly-used-in-wb.md)
+  * [CH1P1 & Ch2P1 used in a booking with 3 children using extra beds](2-x-child-prices-+-child-price-discount/ch1p1-and-ch2p1-used-in-a-booking-with-3-children-using-extra-beds.md)
 
 ## Hotel
 
