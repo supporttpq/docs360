@@ -70,3 +70,7 @@ Next, on the Allocate Passengers screen, the booth room type will be merged by p
 <figure><img src="../../.gitbook/assets/image (201).png" alt=""><figcaption></figcaption></figure>
 
 At this point, the room has been successfully merged, allowing two passengers from different transports to be in different rooms. However, it is essential that the user specify which transport the room should be assigned to.
+
+When one or more rooms are merged, this will be indicated on the booking page using an info point.
+
+<figure><img src="../../.gitbook/assets/image (209).png" alt=""><figcaption></figcaption></figure>
