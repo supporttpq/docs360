@@ -328,6 +328,7 @@
   * [Early booking/Stay and pay and Special Early Booking/Stay and pay](extras-setup/page-13/early-booking-stay-and-pay-and-special-early-booking-stay-and-pay.md)
   * [Teetime](extras-setup/page-13/teetime.md)
   * [Multiple product selection in product category](extras-setup/page-13/multiple-product-selection-in-product-category.md)
+  * [Create an extra with stay days functionality and select it in bookings](extras-setup/page-13/create-an-extra-with-stay-days-functionality-and-select-it-in-bookings.md)
 
 ***
 
