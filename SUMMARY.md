@@ -329,6 +329,7 @@
   * [Teetime](extras-setup/page-13/teetime.md)
   * [Multiple product selection in product category](extras-setup/page-13/multiple-product-selection-in-product-category.md)
   * [Create an extra with stay days functionality and select it in bookings](extras-setup/page-13/create-an-extra-with-stay-days-functionality-and-select-it-in-bookings.md)
+  * [Individual per transport direction](extras-setup/page-13/individual-per-transport-direction.md)
 
 ***
 

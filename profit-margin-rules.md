@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Profit margin rules
 
 Under **Price List → Profit Margin Rules**, users can define rules to set profit margin values in price lists.

@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Notification
 
 This page displays notifications related to reservations in the system, including errors, warnings, and specific alerts regarding the status of reservations. The purpose of the page is to provide users with an overview of the problems that have arisen and to facilitate their management.&#x20;

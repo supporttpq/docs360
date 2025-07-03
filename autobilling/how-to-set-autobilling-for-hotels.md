@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # How to set autobilling for hotels
 
 Autobilling settings for hotels in Tourpaq are done in every hotel in part.&#x20;

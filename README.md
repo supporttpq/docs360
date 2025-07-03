@@ -3,20 +3,6 @@ description: Your Complete Guide to Tourpaq Travel Management Solutions
 noIndex: true
 cover: .gitbook/assets/Tourpaq Logo (1).jpg
 coverY: 0
-layout:
-  cover:
-    visible: true
-    size: hero
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Welcome to the Tourpaq Manual

@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # All bookings
 
 This tab displays bookings and statistics according to a series of set filters. A requirement for the filters to work is to set them in pairs (Bkg start and end date / Dept date from and to / Arrival date from and to)

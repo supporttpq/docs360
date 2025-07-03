@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Booking for 2 One Ways
 
 It is a new type of booking that allows the user to select 2 one-way flights (outbound and homebound) in the same booking.&#x20;

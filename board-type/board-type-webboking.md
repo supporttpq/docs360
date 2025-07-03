@@ -40,7 +40,7 @@
 
 * &#x20;Verify the board type selected in the hotel allotment tab - Correct board type should be displayed.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

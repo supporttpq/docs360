@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Don't sent ticket option
 
 Don't send ticket option consists of a new checkbox on the new booking page that, if it is enabled, will not send update emails.&#x20;

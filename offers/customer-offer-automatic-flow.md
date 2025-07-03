@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Customer offer automatic flow
 
 This feature will send automatic emails and offers at every set interval. For example: 7,14,21 days.

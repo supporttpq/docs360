@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Statistic in All bookings
 
 To view statistics in Tourpaq, go to Booking menu Click on  All Bookings.&#x20;
