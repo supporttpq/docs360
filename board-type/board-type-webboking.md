@@ -6,7 +6,7 @@
 
 * Create extras for different board types **without selecting** the "All guests in one room share the same board type" checkbox. - Extras should be created successfully.
 
-<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

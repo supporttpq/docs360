@@ -30,7 +30,7 @@ To verify that customer information rules can be:
 
 * Click on the **Passenger Information** tab.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Expected Result:**
   * A list of existing customer information rules is displayed (or a message stating _"There are no entries to show"_).

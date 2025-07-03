@@ -29,7 +29,7 @@ The Trasnport Supplier is used by the Transport and Real Transport to identify t
 
 * When checked, it displays the hidden Transports Suppliers
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
