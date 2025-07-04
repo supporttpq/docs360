@@ -316,7 +316,7 @@ A quotation list email is a message containing a detailed list of products or se
 
 This email is sent when a new stop sale is created.
 
-43. **Mail Platform for SmS**
+43. **Mail Platform for SmS -** Sent to notify the guest of different informations
 44. **Dynamic Email / SMS**&#x20;
 
 It can be used to notify the guests of their departure date, to welcome them to the trip location, to welcome them home, to make them aware of certain products they can book etc.
