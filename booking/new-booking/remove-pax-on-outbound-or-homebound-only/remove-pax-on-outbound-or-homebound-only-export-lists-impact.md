@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Remove pax on outbound or homebound only, Export lists impact
 
 ### Overview
