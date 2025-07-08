@@ -31,7 +31,7 @@ Other fields that are necessary for the hotel to work properly:
 * Child ages for extra bed - age interval for children when taking into account the "extra bed child" from the room; if the age is outside of the interval, children will use an adult extra bed (overrides the age set in the base room type)
 * Adult hotel - sets an age limit preventing guests to book if there is a passenger with the age below the limit
 * Order No. - Tourpaq API, order of the hotels sent to website
-* Customise room offer priority
+* Customise room offer priority - The checkbox allows the user to decide whether they want to use a personalized priority of room types (i.e., by orderId) or let the API decide automatically based on the room configuration (i.e., by number of beds).
 * Issue voucher - allows for vouchers to be issued
 * For one way - a hotel used only for one way transports
 * Extra Bed Discount Name - Name of the Extra Bed Discount on the ticket and in webbooking
