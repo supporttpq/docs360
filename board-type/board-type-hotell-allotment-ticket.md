@@ -26,12 +26,12 @@ The next guide describes how to create a room allotment with a specific board ty
 3. **For the “Board” field**, select a board type from the dropdown\
    → The board type (e.g., _All Inclusive_, _Summer board_) created earlier should be available in the list.
 
-<figure><img src="../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 4. **Click the Save icon**\
    → The new allotment is saved and the board type appears correctly in the allotment row.
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Step 3: Configure Pricing and Create a Booking
 
