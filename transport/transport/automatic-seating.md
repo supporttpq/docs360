@@ -22,7 +22,7 @@ On the booking page, the auto seated passengers will have:
 * the passenger name with shadow
 * no supplement for the seat - the seat supplement will not appear in Customer Center or on the ticket.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Keep seat price**
 

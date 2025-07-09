@@ -20,11 +20,11 @@ Linked to Transport Allotment is an extra allotment type given only to passenger
 
 To use it properly the user must create a new extra and select **Linked to transport**.
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 After the general settings have been set, and the extra saved, the next step is setting the brand and establishing the prices and resources. At the **Resource** tab, a must is setting the **Transport** filter.
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 The next step is setting up the allotments.
 
@@ -60,10 +60,10 @@ Special case for extras that are from a category that has the **"link to column 
 
 For these extras, the allotment total and calculation is displayed also on transport selection pop-up in the booking process. All extras linked to the transport will be taken in consideration when displaying the total, no matter if there are more from the same category or different categories.
 
-<figure><img src="../../.gitbook/assets/ExtraAllotment-8c4409fe644bfd76ecd659ed82a414a7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/LinkedToTransport-9c2183e4a9db0582d6849ed7fee00404.png" alt=""><figcaption></figcaption></figure>
 
-**One way usage**
+### **One way usage**
 
 For ONE WAY flights, another extras is required, as extras are not available for ONE WAYS unless a specific action is taken, action that will invalidate the extra for CHARTER flights.

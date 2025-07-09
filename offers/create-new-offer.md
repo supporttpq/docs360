@@ -15,7 +15,7 @@ The offer can be sent to an existing customer or to someone that doesn't yet exi
 
 Once a proposal is selected Relevant upsale proposals are presented. You can include them in the basket, increasing the offer total, or propose them as optional upgrades. You can include them in the basket, increasing the offer total, or propose them as optional upgrades. This Golfbag product can be selected and added in the basket And this meal flight product can be proposed as an optional upgrade without increasing the offer's total amount. Once the upsales are decided we need to update the price and save this offer in the basket&#x20;
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 We can then overview the basket total amount and offer content. Here are listed the optional upsells. And each offer can show an explanatory text for the customer. We can, of course adjust the filters and search for other period or other departures We can add infants or change the structure of the passengers.&#x20;
 
