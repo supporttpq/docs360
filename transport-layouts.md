@@ -16,13 +16,13 @@ In here the **Seat types** and the **Seat lists** are created.
 
 ### Seat type <a href="#seat-type" id="seat-type"></a>
 
-<figure><img src=".gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Seat list <a href="#seat-list" id="seat-list"></a>
 
 Seat list are generated from here according to the airplane specifications.
 
-<figure><img src=".gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Rows** – The number of rows in the seating arrangement.&#x20;
 * **Columns** – The number of columns in each row.&#x20;
@@ -42,7 +42,7 @@ Seat lists can be edited by clicking on the **Assign seats** button. The followi
 
 If the **Default seat type** option has been chosen, all seats will be of the selected type.
 
-<figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Layouts <a href="#layouts" id="layouts"></a>
 
@@ -50,7 +50,7 @@ Allows the user to set up the interior of the airplane and the seat places.
 
 To create a new layout, go to Transport Layouts menu and  use Create **New layout** button.
 
-<figure><img src=".gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The user is sent the to the Layout editor section where he can design the airplane interior according to his wish.
 
@@ -186,7 +186,7 @@ This feature permits to limit the capacity of the customer to choose the seats i
 
 * **No empty seat should be left empty on the window.**
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **No seat should be left empty between two passengers on a row.**
 

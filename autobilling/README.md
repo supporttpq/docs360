@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Autobilling
 
 Autobilling feature enables Tourpaq to generate invoices on behalf of creditors/suppliers.&#x20;

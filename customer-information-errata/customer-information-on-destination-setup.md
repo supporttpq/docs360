@@ -54,7 +54,7 @@ To ensure that destination-based customer information is accurately displayed ac
 | Information for the customer on ticket | Text            | Info displayed on the ticket, WB, and booking page. Opens in separate pop-up.                                     |
 | Acknowledge                            | Checkbox        | If enabled, the user must acknowledge the message during checkout and booking flow. Tooltip explains its purpose. |
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Validation Notes:**
 

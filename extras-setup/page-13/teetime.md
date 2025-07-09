@@ -69,9 +69,15 @@ This is an example of how it looks after the allotments have been generated
 
 The only change from **Daily allotments** is
 
-* Frequency - this time it is in weeks and not days, with the aditional selection of ays of the week in which the product is available
+* Frequency - this time it is in weeks and not days, with the additional selection of days of the week in which the product is available
 
 <figure><img src="../../.gitbook/assets/image (148).png" alt=""><figcaption></figcaption></figure>
+
+* if "All days" checkbox is selected, the allotment is generate for the entire week, but if you have the departure in one specific day, in the guest app only the first valid day of the respective allotments will be displayed. (Ex: Generate the allotment for the whole week and you have a departure on Tuesday -> it only brings you for Tuesday
+
+<figure><img src="../../.gitbook/assets/image (207).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (208).png" alt=""><figcaption></figcaption></figure>
 
 ### Block allotments <a href="#block-allotments" id="block-allotments"></a>
 

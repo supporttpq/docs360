@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Circuit Bookings
 
 Circuit bookings are custom-made bookings. The feature is an upgrade for the hotel combination and offers more freedom to the user in selecting the component of the booking.

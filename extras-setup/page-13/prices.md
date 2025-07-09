@@ -2,7 +2,7 @@
 
 A extras can have one or more prices. The prices are defined based on some intervals. The interval can not overlap each other to prevent that there are some validation in place. There are three intervals as follow:
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 * **Age From/To** - The price is applying for the passengers that has the age in interval.
 * **Departure Date From/To** - The Price is applying to passengers that have made the booking to depart in this interval.
@@ -14,7 +14,7 @@ A extras can have one or more prices. The prices are defined based on some inter
 * **Margin** - Margin of profit when rent a car is checked in the extras configuration and defines the amount of money added in plus to the basic cost of the car.
 * **Max cost** - Defines the maximum cost that a car can have so that the agency can sell it.
 * **Per Day** - The price and cost is calculated per day. In case the Days is specified the price will be calculated based on this number otherwise the cost and price will be calculated based on the number of booked days.
-* **Contract**
+* **Contract - Name of the contract**
 
 The cost/price per day is calculated based on the formula: If Days is filled: `Price*Days=Extra_Price` If Days is empty: `Price*Booked_Days=Extra_Price`
 
@@ -24,11 +24,11 @@ A new feature in Tourpaq that allows the setting of different prices for each br
 
 If only the default price is set, it will be applied to all agencies. If an agency price is set different of the default price, the agency price will be available only for the selected agency.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 Editing the price is only available for the default price. For the agency price the only editable fields are **Price**, **Group Price**, **Margin** and **Max cost**
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 **Split prices**
 
@@ -40,11 +40,11 @@ Prices can be split by:
 * departure
 * booking date
 
-<figure><img src="../../.gitbook/assets/image (17) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 When clicking on the Split button, an option will appear bellow the price lines to set the number of splits to be made
 
-<figure><img src="../../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 If spliting by Departure or Booking date, the Date from of the first line is the original date and Date to is the new stop date.
 
@@ -52,10 +52,10 @@ The second line will contain the new Date from and the Date to will be the origi
 
 It is advised to use the current day or next day Date to of the first line when splitting.
 
-<figure><img src="../../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 After filling in the details, click on **Split**
 
 The result will look like:
 
-<figure><img src="../../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>

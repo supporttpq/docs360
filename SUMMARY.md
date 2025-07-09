@@ -51,6 +51,9 @@
   * [A la Carte](booking/new-booking/a-la-carte/README.md)
     * [General Description](booking/new-booking/a-la-carte/general-description.md)
     * [Packages](booking/new-booking/a-la-carte/packages.md)
+  * [Remove pax on outbound or homebound only](booking/new-booking/remove-pax-on-outbound-or-homebound-only/README.md)
+    * [Remove pax on outbound or homebound only, Export lists impact](booking/new-booking/remove-pax-on-outbound-or-homebound-only/remove-pax-on-outbound-or-homebound-only-export-lists-impact.md)
+    * [Remove pax on outbound or homebound only, Transport Reporting Impact](booking/new-booking/remove-pax-on-outbound-or-homebound-only/remove-pax-on-outbound-or-homebound-only-transport-reporting-impact.md)
 
 ***
 
@@ -134,6 +137,13 @@
 * [Packages Generator](packages-generator.md)
 * [Pricelist Tags](pricelist-tags.md)
 * [Free room count behavior](free-room-count-behavior.md)
+* [2 x Child prices + Child price discount](2-x-child-prices-+-child-price-discount/README.md)
+  * [How CH1P1 & CH2P1 is calcualated in Price List](2-x-child-prices-+-child-price-discount/how-ch1p1-and-ch2p1-is-calcualated-in-price-list.md)
+  * [How CH1D1 & CH2D1 is calculated in Price List](2-x-child-prices-+-child-price-discount/how-ch1d1-and-ch2d1-is-calculated-in-price-list.md)
+  * [How CH1P1 is used in booking](2-x-child-prices-+-child-price-discount/how-ch1p1-is-used-in-booking.md)
+  * [Child pays an adult's price for a double room when it does not occupy an extra bed](2-x-child-prices-+-child-price-discount/child-pays-an-adults-price-for-a-double-room-when-it-does-not-occupy-an-extra-bed.md)
+  * [CH1P1 is correctly used in WB](2-x-child-prices-+-child-price-discount/ch1p1-is-correctly-used-in-wb.md)
+  * [CH1P1 & Ch2P1 used in a booking with 3 children using extra beds](2-x-child-prices-+-child-price-discount/ch1p1-and-ch2p1-used-in-a-booking-with-3-children-using-extra-beds.md)
 
 ## Hotel
 
@@ -195,9 +205,11 @@
   * [Communication](transport/transport/communication.md)
   * [Documents](transport/transport/documents.md)
   * [Passengers informations](transport/transport/passengers-informations.md)
+  * [Transport Reporting](transport/transport/transport-reporting.md)
 
 ***
 
+* [Transport Rules](transport-rules.md)
 * [Transport Dashboard](transport-dashboard.md)
 * [Transport Price Control](transport-price-control.md)
 * [Transport Payment Rules](transport-payment-rules.md)
@@ -213,16 +225,18 @@
 * [Real Transport Dashboard](real-transport-dashboard.md)
 * [Transport Regulation Rules](transport-regulation-rules.md)
 * [Transport Layouts](transport-layouts.md)
-* [Seating Price Rules](seating-price-rules.md)
 * [Flight Transfer](flight-transfer/README.md)
   * [Transfer listing](flight-transfer/transfer-listing.md)
   * [Flight Transfer List](flight-transfer/flight-transfer-list.md)
   * [Flight Transfer Export](flight-transfer/flight-transfer-export.md)
-* [Transport Reporting](transport-reporting.md)
-* [Airlines](airlines.md)
+* [Seating Price Rules](seating-price-rules.md)
 * [Create citizen plane rules](create-citizen-plane-rules.md)
 * [Create citizen plane seats overview](create-citizen-plane-seats-overview.md)
+* [Airlines](airlines.md)
 * [Flexible Transports](flexible-transports.md)
+* [Transport Suppliers](transport-suppliers/README.md)
+  * [Create a Transport Supplier](transport-suppliers/create-a-transport-supplier.md)
+  * [Communication Configuration – Transport Supplier](transport-suppliers/communication-configuration-transport-supplier.md)
 * [Flight change](flight-change/README.md)
   * [Flight Change - Configuration](flight-change/flight-change-configuration.md)
   * [Flight Change - Email Template](flight-change/flight-change-email-template.md)
@@ -314,6 +328,8 @@
   * [Early booking/Stay and pay and Special Early Booking/Stay and pay](extras-setup/page-13/early-booking-stay-and-pay-and-special-early-booking-stay-and-pay.md)
   * [Teetime](extras-setup/page-13/teetime.md)
   * [Multiple product selection in product category](extras-setup/page-13/multiple-product-selection-in-product-category.md)
+  * [Create an extra with stay days functionality and select it in bookings](extras-setup/page-13/create-an-extra-with-stay-days-functionality-and-select-it-in-bookings.md)
+  * [Individual per transport direction](extras-setup/page-13/individual-per-transport-direction.md)
 
 ***
 
@@ -366,6 +382,7 @@
 * [Resorts](setup/resorts.md)
 * [Departure stat weeks](setup/departure-stat-weeks.md)
 * [System Setup](setup/system-setup.md)
+* [System Setup FTPs](setup/system-setup-ftps.md)
 * [System Setup Groups](setup/system-setup-groups.md)
 * [Creditor Currency Convertor](setup/creditor-currency-convertor.md)
 * [Internal logs](setup/internal-logs.md)

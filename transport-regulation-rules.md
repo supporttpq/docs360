@@ -4,7 +4,7 @@ Applies to Administrator
 
 This function allows users to automatically change the prices on all pricelists for a transport allotment. The rules are available for the company, and the rules are set on a transport allotment from the Transport –FixQuotas(view) – transport allotment table. For Load Factor usage within the corresponding feature rules, the Factor Matrix and Price Regulation functionalities must not be blocked. Please contact Tourpaq Support for this. The rule has the following 2 sets of fields:
 
-<figure><img src=".gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **General fields** (used for going prices UP) :&#x20;
 

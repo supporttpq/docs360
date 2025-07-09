@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Hotel creation
 
 This feature is available for the administrator user type.
@@ -20,7 +6,7 @@ This feature is available for the administrator user type.
 
 Mandatory fields:
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Code - hotel code
 * Name - hotel name
@@ -32,7 +18,7 @@ Without these fields, you cannot create the hotel.
 
 Other fields that are necessary for the hotel to work properly:
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Supplier - supplier of the hotel
 * Stars
@@ -45,7 +31,7 @@ Other fields that are necessary for the hotel to work properly:
 * Child ages for extra bed - age interval for children when taking into account the "extra bed child" from the room; if the age is outside of the interval, children will use an adult extra bed (overrides the age set in the base room type)
 * Adult hotel - sets an age limit preventing guests to book if there is a passenger with the age below the limit
 * Order No. - Tourpaq API, order of the hotels sent to website
-* Customise room offer priority
+* Customise room offer priority - The checkbox allows the user to decide whether they want to use a personalized priority of room types (i.e., by orderId) or let the API decide automatically based on the room configuration (i.e., by number of beds).
 * Issue voucher - allows for vouchers to be issued
 * For one way - a hotel used only for one way transports
 * Extra Bed Discount Name - Name of the Extra Bed Discount on the ticket and in webbooking
@@ -59,7 +45,7 @@ Other fields that are necessary for the hotel to work properly:
 
 This field allows you to set a custom star rating for the hotel. If specified, the custom rating will be displayed on the ticket instead of the standard star rating.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The header text for the "Stars" column can also be customized, but only when the Customized Stars field is filled. This setting is located in Users → Brands → Ticket under the name "Customized Star".
 
@@ -67,7 +53,7 @@ The header text for the "Stars" column can also be customized, but only when the
 
 For autobilling feature please check [Autobilling](../../autobilling/)
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Brands <a href="#brand" id="brand"></a>
 

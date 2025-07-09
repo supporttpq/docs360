@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # How to set autobilling for discounts/supplements
 
 For discounts/supplements, the auto billing is handled in the discount/supplement in the automatic billing section.&#x20;

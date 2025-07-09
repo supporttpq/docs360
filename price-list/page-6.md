@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Pricelist
 
 Hotel **Price List** is the place where prices are created or managed for particular packages. Usually a package contains a [Transport](../transport/transport/) and a [Room types](../base-room-types.md) Hotel but this is not necessarily the case. The price can be added based on interval, discounts, children, or groups, or it can be set for one way or round trip. Each package has a date assigned; this date is pointing to the departure date of the trip.

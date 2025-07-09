@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Flexible Transports
 
 Flexible transports is a feature that allows the creation of flexible rules to generate new transport combinations based on existing ones. It utilizes the departure date from the outbound transport and the return date from the homebound transport.

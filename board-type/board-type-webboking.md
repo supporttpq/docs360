@@ -6,7 +6,7 @@
 
 * Create extras for different board types **without selecting** the "All guests in one room share the same board type" checkbox. - Extras should be created successfully.
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -14,7 +14,7 @@
 
 * Use one of the created board types to create a hotel allotment - Allotment should be created successfully.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -40,7 +40,7 @@
 
 * &#x20;Verify the board type selected in the hotel allotment tab - Correct board type should be displayed.
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -54,7 +54,7 @@
 
 * Check if the extra appears in the list - Extra should be listed correctly.
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -68,7 +68,7 @@
 
 * Access the generated ticket - Ticket file should open and show the board type in the hotel section.
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -76,7 +76,7 @@
 
 * Verify that extra’s details are included - Details should be present.
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

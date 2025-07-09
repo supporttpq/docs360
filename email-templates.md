@@ -316,7 +316,7 @@ A quotation list email is a message containing a detailed list of products or se
 
 This email is sent when a new stop sale is created.
 
-43. **Mail Platform for SmS**
+43. **Mail Platform for SmS -** Sent to notify the guest of different informations
 44. **Dynamic Email / SMS**&#x20;
 
 It can be used to notify the guests of their departure date, to welcome them to the trip location, to welcome them home, to make them aware of certain products they can book etc.
@@ -358,7 +358,7 @@ This email is sent automatically after the Giftcard is paid.
 
 50. **Select offer SMS**
 
-
+This SMS is sent to inform  the customer about the offer that he requested. It is sent manually, and can contain a personalized message set in in the Brands menu / Select Offer.
 
 51. **Time share fee reminder**
 
