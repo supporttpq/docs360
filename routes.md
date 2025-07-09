@@ -47,7 +47,7 @@ Pickup points are components of [Routes](https://docs.tourpaq.com/docs/documenta
 
 This is the place where routes are assigned to the transports.
 
-<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Multiple transports can follow a specific route and all the bookings made for these transports can or must choose a pickup point for each passenger.
 

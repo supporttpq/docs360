@@ -57,7 +57,7 @@ In the third field, you need to insert the number of days to be taken from the f
 
 **Example:** An e-mail or SMS can be sent 60 days before the departure date AND 2 days after the booking date.
 
-<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Example:** An e-mail or SMS can be sent within 102, 103, or 104 days before the departure date.
 
