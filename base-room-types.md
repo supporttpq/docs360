@@ -8,7 +8,7 @@ Fields that need to be filled:
 
 <figure><img src=".gitbook/assets/image (22) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* Room code
+* Room code - room code in the system
 * Plaintext - room name
 * List Text - room name on export files
 * No. ordinary beds - number of beds, these beds will always pay the full price of the bed, they cannot receive extra bed discounts
@@ -19,10 +19,10 @@ Fields that need to be filled:
 * End child age - ending age for children that can use the extra bed child
 * Internet- base room type will be shown in the API or not. Allows the room to be sold on the website
 * Status - determines if the room is visible or hidden.
-* Is fictive - are used to allow the room to be sold as a one way room for one way hotels and one way seats under transport.
-* For one way
+* Is fictive - are used to allow the room to be sold as a one way room for one way hotels and one way seats under transport. I**n base room type** typically refers to a **virtual or non-physical room** that is used for **system configuration, planning, or logic purposes**, rather than representing an actual, bookable room in a hotel or property.
+* For one way - it is used only for oneways transport (it can be only one per company); it is used to make pricelist for oneways
 * Ignore in seats vs. beds will make the room not displayed and not to be counted in the seats vs. beds overview.
-* For "A La Carte"
+* For "A La Carte" - is used for a la carte bookings
 
 #### Cost configuration <a href="#cost-configuration" id="cost-configuration"></a>
 
