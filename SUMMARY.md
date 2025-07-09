@@ -233,7 +233,6 @@
 * [Create citizen plane rules](create-citizen-plane-rules.md)
 * [Create citizen plane seats overview](create-citizen-plane-seats-overview.md)
 * [Airlines](airlines.md)
-* [Flexible Transports](flexible-transports.md)
 * [Transport Suppliers](transport-suppliers/README.md)
   * [Create a Transport Supplier](transport-suppliers/create-a-transport-supplier.md)
   * [Communication Configuration – Transport Supplier](transport-suppliers/communication-configuration-transport-supplier.md)

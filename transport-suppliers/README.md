@@ -4,7 +4,7 @@
 
 The **Transport Suppliers** page is used to manage the list of transport providers integrated into the system. Each supplier is associated with a tour operator and a specific reporting format. This interface supports adding, viewing, and deleting transport suppliers.
 
-The Trasnport Supplier is used by the Transport and Real Transport to identify the supplier of the flight. The Transport Supplier can be used for:
+The Transport Supplier is used by the Transport and Real Transport to identify the supplier of the flight. The Transport Supplier can be used for:
 
 * A common way to describe the communication, so all Transports that uses this supplier use the Transport Supplier communication
 * The Transport Supplier can be used in Resources in Extra to select the relevant extras (e.g. different baggage options for two different transport suppliers)
