@@ -10,7 +10,7 @@ This section helps manage different **survey schemas** for collecting feedback o
 
 * **Survey ID:** A unique identifier for each questionnaire. If you clik on the ID, you will be able to edit the survey (General information, Questions etc)
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Description:** Provides details about each questionnaire
 * **Eye Icon (👁️):** Likely used to **view** survey details.

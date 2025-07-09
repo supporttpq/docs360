@@ -19,7 +19,7 @@ All Extras of a specific category will have the out/home functionality, so this 
 
 When is checked another menu (**Individual Transports**) it will be available, where it will be possible to set the out or home products available for the selected Extra Category.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Afetr this, click on edit to add products for indicidual transports
 
