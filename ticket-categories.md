@@ -8,7 +8,7 @@
 
 Push the Create button from the upper left corner to create a new Ticket Category.
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 #### Overview
 
