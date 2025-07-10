@@ -335,6 +335,7 @@
 * [Extras Attributes](extras-attributes.md)
 * [Custom Choices](custom-choices.md)
 * [Extras Category](extras-category/README.md)
+  * [Extra Category Overview](extras-category/extra-category-overview.md)
   * [Extra Category Reporting](extras-category/extra-category-reporting.md)
 * [Discounts/Supplements](discounts-supplements.md)
 * [Disc/Suppl Categories](disc-suppl-categories.md)

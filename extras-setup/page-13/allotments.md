@@ -60,7 +60,7 @@ Special case for extras that are from a category that has the **"link to column 
 
 For these extras, the allotment total and calculation is displayed also on transport selection pop-up in the booking process. All extras linked to the transport will be taken in consideration when displaying the total, no matter if there are more from the same category or different categories.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/LinkedToTransport-9c2183e4a9db0582d6849ed7fee00404.png" alt=""><figcaption></figcaption></figure>
 
