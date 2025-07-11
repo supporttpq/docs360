@@ -1,47 +1,29 @@
 # Extras Category
 
+### 📌 Overview
+
 Applies to Administrator
 
 Extras categories are mandatory in the extras definition process. So in order to have optional services/products that a customer can book: like transfer, catering, pension, rental car, etc, first, an extra category needs to be created.
 
-### Overview setup - Default text <a href="#overview-setup---default-text" id="overview-setup---default-text"></a>
+The _Extras Category_ section provides administrators with a structured interface to manage optional services or items that can be added to bookings or reservations. These extras can range from luggage options to parking or VIP services, each with custom visibility and behavior settings.
 
-* **Name**: text field; mandatory; product category name to be displayed in Tourpaq office, WebBooking and ticket.
-* **List name**: text field; mandatory; product category name for export lists.
-* **Replace product name when Sold Out**: text field: when product is sold out, this text will be displayed.
-* **Description**: rich text editor to set the description of the category to be displayed in WebBooking.
-* **Icon**: box where to upload an icon.
-* **Photo**: button that opens the upload photo pop-up; photo set is displayed on WebBooking.
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/ExtraCategoryOverview-cc8404247963c69e65035b9fe43a31e8.png" alt=""><figcaption></figcaption></figure>
+### 📄 Fields&#x20;
 
-\*All texts can be set custom for each active brand.
+| **Field Name**                 | **Description**                                                                              |
+| ------------------------------ | -------------------------------------------------------------------------------------------- |
+| **Name**                       | The name of the extra category. Displayed throughout the system.                             |
+| **Code**                       | Unique system code used for identification                                                   |
+| **Category**                   | Defines the classification/group the extra belongs to.                                       |
+| **Display in Remember Extras** | Controls whether this extra appears in the “Remember Extras” section for future suggestions. |
+| **Use for Extras Statistics**  | Determines if data on this extra is collected for statistical reporting.                     |
+| **Behavior on Web**            | Indicates how and when the extra is shown in the online booking interface.                   |
 
-<figure><img src="../.gitbook/assets/ExtraCategoryCustomBrand-594461f051027d3ba8bb1f54ee2bc7e8.png" alt=""><figcaption></figcaption></figure>
+### ✏️ Editing or Deleting an Extra
 
-#### Filtering Options <a href="#filtering-options" id="filtering-options"></a>
+* **Edit**: Click the name of the extras. Anew page will open to edit the Rxtras Category
+* **Delete**: Click the trash icon. A confirmation pop-up ensures changes are intentional.
 
-* **Display In Remember Extras**: multiple selection field; displays all brands; no selection behaves as select all.
-* **Use For Extras Statistic**: multiple selection field; displays all brands; no selection behaves as select all.
-* **Display In Hotel List**: multiple selection field; displays all brands; no selection behaves as select all; sets for which brands, the extras in this category, to be displayed in hotel lists.
-* **Hide as filter in list**: checkbox ; if enabled, hides the category in all lists throughout the system.
-
-<figure><img src="../.gitbook/assets/ExtraCategoryFilteringOptions-2da18c606917c5debf7b17ec23fcbf0b.png" alt=""><figcaption></figcaption></figure>
-
-#### Settings <a href="#settings" id="settings"></a>
-
-* **Code**: text field; mandatory; the code used for the category
-* **Sold Out Text**: text field; text used for pop-up in WebBooking and Customer Center
-* **Status**: drop-down list: visible or hidden
-* **Behaviour on Web**: drop-down list; how and on which step to be displayed the category in WebBooking
-* **Category Type**: drop-down list; the existing values are hard-coded and are used to be able to use them on different export lists.
-* **Ticket Category**: drop-down list; displays all defined categories under "Ticket Categories" and it works like a meta-category for one or more extra categories. This ticket category is displayed only on ticket, grouping the extras under the same ticket category.
-* **Category order**: numeric field; sets the order of the extra categories in WebBooking
-* **Days after booking category locks**: numeric field; sets how many days after creating the booking can pass before locking the category on WebBooking. After this number of days have passed, no modification can be done in Customer Center.
-* **Link to column in transport**: checkbox; if enabled, the extras set as "linked to transport" in this category will have the allotment displayed in the transport selection pop-up in the booking creation process.
-* **Show description & photo opened in WebBooking**: checkbox; if set will apply on all brands.
-* **Stop default product selection for all passengers in WB**: checkbox; if set, will apply to all brands.
-* **Accepts multiple product selection**: checkbox; if set, will apply to all brands; This allows the category to display multiple selection for the products defined. If unchecked, bookings with multiple products selected will appear to have only one selected.
-* **Sold Out Behaviour**: checkbox; this will enable the sold-out behaviour for the products in the category.
-
-<figure><img src="../.gitbook/assets/ExtraCategorySettings-106dd7c02e2b829c2d78a52edf62b298.png" alt=""><figcaption></figcaption></figure>
+### &#x20;<a href="#overview-setup---default-text" id="overview-setup---default-text"></a>

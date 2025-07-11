@@ -95,7 +95,7 @@ A manual discount/supplement will be manually chosen for a passenger; it can be 
 * Supplier: select the supplier of the disc/suppl
 * Family discount: set the disc/suppl to behave as a family discount. This discount applies only if the first passager has the age between age rage from the discount's price section. Otherwise, a warning that the first passager doesn't meet the requirements is showing and the booking's status is changed in "Error".
 * Include in basic price: add the price of the supplement to the price of the room, while hiding it from the guest
-* Used for price adjust:
+* Used for price adjust: if a discount/supplement is used for price adjustment it can not be removed by a user in WB
 
 <figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
