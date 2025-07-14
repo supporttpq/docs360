@@ -8,7 +8,7 @@ To test the rule, create a booking with the selected hotel and room type. Under 
 
 These are costs paid by the agency towards the hotels.
 
-<figure><img src="../../.gitbook/assets/image (94).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (94).png" alt=""><figcaption></figcaption></figure>
 
 There are 2 rules, and both are applied:
 
@@ -26,7 +26,7 @@ Filters used in applying these costs:
 
 Represents the basic value paid by the agency to the hotel for the used rooms.
 
-<figure><img src="../../.gitbook/assets/image (95).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (95).png" alt=""><figcaption></figcaption></figure>
 
 **PER PAX**
 
@@ -55,7 +55,7 @@ It is possible to change the cost of the rooms with the usage of the **Up to roo
 
 These are discounts given to agencies by the hotels if certain conditions are met.
 
-<figure><img src="../../.gitbook/assets/image (96).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (96).png" alt=""><figcaption></figcaption></figure>
 
 There are two rules that apply. They cannot be applied at the same time and are governed by the **IS PERCENT** check box:
 
@@ -65,7 +65,7 @@ There are two rules that apply. They cannot be applied at the same time and are 
   * Per room - if the check box is used
 * Customer Early booking discount - the value inserted in this case is used in the calculation of the pricelist price. If this value is completed, the normal price will be taken into account when calculating the profit of the room on the booking, and the value for the price list will be taken into account when calculating the price Pricelist prices.
 
-<figure><img src="../../.gitbook/assets/image (97).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (97).png" alt=""><figcaption></figcaption></figure>
 
 This rule can be combined with the **Stay and Pay cost rules** if the **S\&P** check box is used. Filters used:
 
@@ -78,7 +78,7 @@ Stay and Pay cost rules
 
 These are considered to be more discounts given by the hotel to the agency.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (98).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (98).png" alt=""><figcaption></figcaption></figure>
 
 They are governed by two cases:
 
@@ -96,7 +96,7 @@ Filters used:
 
 Special offers are rules setup by hotel owners capable of overriding any other cost rules setup in the hotels.
 
-<figure><img src="../../.gitbook/assets/image (99).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (99).png" alt=""><figcaption></figcaption></figure>
 
 There are 4 rules:
 
@@ -134,4 +134,4 @@ Filters used to set up the rules:
 
 This is a mind map trying to cover the various interactions between hotel
 
-<figure><img src="../../.gitbook/assets/image (100).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (100).png" alt=""><figcaption></figcaption></figure>

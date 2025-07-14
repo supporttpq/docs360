@@ -117,7 +117,7 @@ Used to define the discount received by the passengers that use an extra bed in 
 
 ### Room cost <a href="#room-cost" id="room-cost"></a>
 
-Used to define the amount paid by the agency to the hotel for the rooms. It is found on the contract between the hotel and agency. Please check [Room Cost](room-cost.md)
+Used to define the amount paid by the agency to the hotel for the rooms. It is found on the contract between the hotel and agency. Please check [Room Cost](room-cost/)
 
 ### Ex. Beds Costs <a href="#exbeds-costs" id="exbeds-costs"></a>
 
@@ -125,7 +125,7 @@ Used to define the cost of the extra bed paid by the agency. Please check [Extra
 
 ### Special offers <a href="#special-offers" id="special-offers"></a>
 
-Used to define discounts offered by the hotel to the agency. Please check [Room Cost](room-cost.md)
+Used to define discounts offered by the hotel to the agency. Please check [Room Cost](room-cost/)
 
 ### Photos <a href="#photos" id="photos"></a>
 
