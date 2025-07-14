@@ -28,7 +28,7 @@ Other fields that are necessary for the hotel to work properly:
 * Facilities template - select a facility template from those available, which will allow the setting of the facilities available in the hotel from **the Web** tab. more information is available at [Facilities](../../facilities.md)
 * Hotel combination - allows for 2 or more hotels to be combined into 1, drawing room allotments from the hotels selected. for more information, please check [Hotel Combination](../../hotel-combination.md)
 * Child price ages - age interval that benefits from the child price from price list
-* Child ages for extra bed - age interval for children when taking into account the "extra bed child" from the room; if the age is outside of the interval, children will use an adult extra bed (overrides the age set in the base room type)
+* Child ages for extra bed - age interval for children when taking into account the "extra bed child" from the room; if the age is outside of the interval, children will use an adult extra bed (overrides the age set in the base room type). If nothing is set, the child ages for extra beds is not taken in the consideration.&#x20;
 * Adult hotel - sets an age limit preventing guests to book if there is a passenger with the age below the limit
 * Order No. - Tourpaq API, order of the hotels sent to website
 * Customise room offer priority - The checkbox allows the user to decide whether they want to use a personalized priority of room types (i.e., by orderId) or let the API decide automatically based on the room configuration (i.e., by number of beds).
