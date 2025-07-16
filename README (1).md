@@ -1,101 +1,158 @@
 # Dashboard
 
-The dashboard is the application's start page. The main reason for this page is to receive information about the booking system quickly.
+### 🧭 Overview
+
+The **Dashboard** is the default landing page in the Tourpaq Office application. Its purpose is to provide users—especially those in sales, operations, and management—with a **quick, centralized snapshot of system activity**, customer behavior, sales data, and operational metrics.
 
 <figure><img src=".gitbook/assets/image (5) (2).png" alt=""><figcaption></figcaption></figure>
 
 This dashboard provides a comprehensive overview of the sales and customer activity. The data is segmented into various widgets, offering insights into bookings, destinations, revenue, top-performing entities, and operational alerts.
 
-### Filter Controls
+### 🎯 Purpose
 
-* **Booking Period:** The selected date range during which bookings occurred.
-* **Users**: Filter dropdown to select specific users.
-* **Brands**: Selection for filtering by brand.
-* **Clear**: Button to reset applied filters.
+The dashboard aggregates and visualizes critical business data from multiple modules (Bookings, Offers, Questionnaires, Service Cases, and Finance). This allows users to:
 
-### Overview Widgets
+* Track sales performance at a glance
+* Monitor customer and destination trends
+* React to service and support metrics
+* Identify top-performing products and problem areas
 
-a. **Offers**
+### ✅ Preconditions
 
-* **Total Offers**: Number of total offers made to customers.
-* **Active**: Offers that are still valid and awaiting customer response.
-* **Unsold**: Offers that did not convert into bookings.
-* **Sold**: Offers that successfully converted into bookings.
-* **Hit Rate**: The percentage of sold offers vs.
+* The user must have access to the dashboard page (depending on user role/permissions).
+* Real-time or near-real-time data must be available in the database.
+* System filters must be configured properly for user-specific views (e.g., agency or brand access).
 
-b. **Service Cases**
+### 🛠️ How to Use the Dashboard
 
-* **New**: Cases newly reported or created.
-* **Closed**: Cases that have been resolved.
-* **In Progress**: Currently being worked on.
-* **Waiting**: On hold or pending further action.
+#### 🔍 Filter Controls
 
-c. **Questionnaires**
+These control the **scope of the data** shown in the dashboard widgets.
 
-**Total**: Number of feedback or survey forms received from customers.
+* **Booking Period**: Select a date range to view bookings created during that period.
+* **Users**: Filter the data to reflect actions made by selected users.
+* **Brands**: Choose one or more brands to limit the report to specific company identities.
+* **Clear**: Resets all filters and reloads default data.
 
-d. **Customers**
+***
 
-* **Total**: Number of customers during the selected period.
-* **New**: First-time customers.
-* **Recurring**: Returning customers.
+### 📦 Dashboard Widgets & Field Explanations
 
-e. **Notifications**
+#### 🔹 Offers Section
 
-### Sales Performance
+Tracks the effectiveness of quotes/offers sent to customers.
 
-**a. Sales**
+| Field            | Description                                                                    |
+| ---------------- | ------------------------------------------------------------------------------ |
+| **Total Offers** | The number of offers sent in the selected period.                              |
+| **Active**       | Offers still pending customer decision.                                        |
+| **Unsold**       | Offers that were not converted into bookings.                                  |
+| **Sold**         | Offers that turned into successful bookings.                                   |
+| **Hit Rate**     | Percentage of sold offers out of total offers. Formula: `(Sold / Total) * 100` |
 
-* **Bookings**: Total number of successful bookings.
-* **Pax**: Total number of passengers (not necessarily equal to bookings).
-* **Change %**: Comparison with previous period (in this case, +68%).
+***
 
-**b. Bar Chart**
+#### 🔹 Service Cases Section
 
-* **X-Axis**: Weekly time periods (e.g., 17/3–23/3/2025).
-* **Y-Axis**: Number of
-  * **PAX**: (Blue) Total passengers.
-  * **Bookings**: (Dark blue) Number of bookings.
-  * **New Offers**: (Green) Number of new offers made in that week.
+Tracks the health of customer support operations.
 
-**c. Guest on Destinations**
+| Field           | Description                                               |
+| --------------- | --------------------------------------------------------- |
+| **New**         | Recently opened or reported service cases.                |
+| **Closed**      | Resolved and completed cases.                             |
+| **In Progress** | Currently being worked on by staff.                       |
+| **Waiting**     | On hold, awaiting action from client or external parties. |
 
-* **Bookings**: Number of bookings linked to specific travel destinations.
-* **Pax**: Number of passengers included in those bookings.
-* **Change %**: Comparison to previous period (e.g., +49%).
+***
 
-### Destination & Accommodation Insights
+#### 🔹 Questionnaires Section
 
-**a. Top-Selling Resorts**
+Provides feedback quantity collected from clients.
 
-* **Location Names**: Tourist destinations with the highest number of pax.
-* **Pax**: Number of passengers booked to each resort.
+| Field     | Description                                                                     |
+| --------- | ------------------------------------------------------------------------------- |
+| **Total** | The number of survey forms received from clients, including post-trip feedback. |
 
-**b. Top-Selling Hotels**
+***
 
-* **Hotel Names**: Most-booked hotels.
-* **Pax**: Number of passengers staying at each hotel.
+#### 🔹 Customers Section
 
-**c. Top-Selling Days**
+Monitors customer engagement.
 
-* **Date**: Specific day when bookings were high.
-* **Pax**: Number of passengers booked on that day.
+| Field         | Description                                            |
+| ------------- | ------------------------------------------------------ |
+| **Total**     | Total number of customers in the selected time frame.  |
+| **New**       | First-time bookers in the period.                      |
+| **Recurring** | Repeat customers who previously used Tourpaq services. |
 
-### Financial Summary
+***
 
-**Bookings -** Total confirmed reservations.
+#### 🔹 Notifications Section
 
-**Profit Total -** Net profit (revenue – costs).
+* A system-level alert for notable events or changes (not further detailed in this section).
 
-* **Example**: DKK -1,727,600 means a loss.
-* **Profit/Pax**: Average profit or loss per passenger.
+***
 
-**Extra Total -** Revenue from additional services (e.g., upgrades, add-ons).
+### 💸 Sales Performance
 
-* **Example**: DKK 105,366 in extras sold.
+#### 📌 Sales Overview
 
-**DB Total -** Gross profit (revenue – direct costs).
+| Field        | Description                                                                               |
+| ------------ | ----------------------------------------------------------------------------------------- |
+| **Bookings** | Total number of confirmed bookings.                                                       |
+| **Pax**      | Total number of passengers (can exceed bookings if bookings contain multiple passengers). |
+| **Change %** | Change compared to the previous equivalent time period (e.g., last week or month).        |
 
-* **Example**: DKK -2,698,116 indicates a negative gross margin.
+#### 📊 Bar Chart (Performance Trends)
 
-**Turnover Total -** Total revenue generated (before costs).
+* **X-Axis**: Weekly time periods (e.g., 17/3–23/3/2025)
+* **Y-Axis**: Quantity
+
+| Color         | Metric                     |
+| ------------- | -------------------------- |
+| **Blue**      | PAX – Number of passengers |
+| **Dark Blue** | Bookings                   |
+| **Green**     | New Offers                 |
+
+***
+
+### 🌍 Guest on Destinations
+
+Tracks guest distribution by destination.
+
+| Field        | Description                           |
+| ------------ | ------------------------------------- |
+| **Bookings** | Number of bookings per destination    |
+| **Pax**      | Total passengers for each destination |
+| **Change %** | Comparison with previous period       |
+
+***
+
+### 🏖️ Destination & Accommodation Insights
+
+#### 🥇 Top-Selling Resorts
+
+* Shows resorts with the most passengers booked.
+
+#### 🏨 Top-Selling Hotels
+
+* Highlights the most-booked hotels by total passengers.
+
+#### 📅 Top-Selling Days
+
+* Identifies the most popular booking dates (by number of passengers).
+
+***
+
+### 💰 Financial Summary
+
+| Field              | Description                                                               |
+| ------------------ | ------------------------------------------------------------------------- |
+| **Bookings**       | Confirmed reservations.                                                   |
+| **Profit Total**   | Net profit (Revenue – Total Costs). May show loss (e.g., DKK -1,727,600). |
+| **Profit/Pax**     | Net profit per passenger.                                                 |
+| **Extra Total**    | Income from extra services like upgrades, VIP packages, or tours.         |
+| **DB Total**       | Gross profit (Revenue – Direct Costs).                                    |
+| **Turnover Total** | Total gross revenue before costs are subtracted.                          |
+
+> ⚠️ **Note on Negative Values**: Financial values may sometimes be negative due to refunds, high cancellations, or cost spikes. Always cross-check with the finance module for full context.
