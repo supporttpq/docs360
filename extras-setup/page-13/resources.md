@@ -4,7 +4,7 @@
 
 The resource tab is used to limit the availability of an extra. This is mainly due to the fact that certain products are available only to certain transports, destinations or hotels.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Arrival Airport** resource for products is not recognized by the old webbooking. The use of this resource is not recommended for companies using the old webbooking.
 

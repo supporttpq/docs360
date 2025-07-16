@@ -246,8 +246,11 @@
 ## Quality
 
 * [Quality Management](quality/page-9/README.md)
-  * [Questionnaires Schemas](quality/page-9/questionnaires-schemas.md)
+  * [Questionnaires - General](quality/page-9/questionnaires-schemas.md)
   * [Questionnaires - Setup questions](quality/page-9/questionnaires-setup-questions.md)
+  * [Questionnaire - Resource](quality/page-9/questionnaire-resource.md)
+  * [Questionnaire - Display](quality/page-9/questionnaire-display.md)
+  * [Questionnaire Groups](quality/page-9/questionnaire-groups.md)
   * [Questionnaire Results](quality/page-9/questionnaire-results.md)
 
 ***
