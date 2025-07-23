@@ -4,7 +4,7 @@ Attributes influence the behavior of the extra and allow guests to select a prod
 
 Example: A Ski rental product can have an attribute specifying the height of the guest so that the suppliers or the agency can know what length the ski equipment will be needed for the guest.
 
-<figure><img src=".gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (21) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Users can choose one or more attributes for an extra.&#x20;
 
@@ -12,7 +12,7 @@ An attribute will appear automatically on the Ticket and in Customer Center.&#x2
 
 To setup an attribute go to Extra setup menu Click on Extra attribute.
 
-<figure><img src=".gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (23) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The next step is to complete the fields:&#x20;
 

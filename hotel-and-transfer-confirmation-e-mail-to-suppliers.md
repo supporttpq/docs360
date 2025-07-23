@@ -52,10 +52,10 @@ To set up the **Transfer Confirmation email** the required settings are:
 
 <figure><img src=".gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (17) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (17) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Suppliers <a href="#suppliers" id="suppliers"></a>
 
 In order for the confirmation e-mails for transfer to be sent, a new field has been created for Suppliers, named **Reservation Dept Email**. This field is required.
 
-<figure><img src=".gitbook/assets/image (18) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (18) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

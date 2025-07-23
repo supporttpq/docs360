@@ -1,55 +1,120 @@
 # Statistic in All bookings
 
-To view statistics in Tourpaq, go to Booking menu Click on  All Bookings.&#x20;
+#### **Overview**
+
+The **Statistics** functionality in the **All Bookings** page of Tourpaq allows users to analyze booking and passenger data in various formats. It supports business decisions with insightful breakdowns such as profit per hotel, turnover by resort, or bookings per week.
+
+This guide explains how to access and use the statistics tools effectively.
 
 <figure><img src="../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Statistics filters work only for statistics. They are used along with the general filters to display various statistics&#x20;
+#### **Purpose**
 
-To view the statistics, a brand must be chosen.&#x20;
+This feature helps users:
 
-To view the statistics, after all filters are set, click on the Display button and then on the Statistics button.&#x20;
+* Gain an overview of booking trends by passenger, location, and time.
+* Analyze financial data such as **profit**, **turnover**, and **sales performance**.
+* Compare booking activity between two different periods.
+* Identify key performance indicators across hotels, sellers, and destinations.
 
-By default, you will see how the passengers from the selected period are distributed by week and by month.&#x20;
+***
 
-Then you can make different statistics types:&#x20;
+#### **Preconditions**
 
-1\. Per Passengers: can show statistics&#x20;
+Before using statistics:
 
-* per country&#x20;
-* per arrival&#x20;
-* per resort
-* &#x20;per hotel.&#x20;
+* You must have access to the **All Bookings** page under the **Booking menu**.
+* A **Brand** must be selected. No statistics can be generated without selecting at least one brand.
+* All relevant **filters** must be applied before viewing the statistics.
+* The **Display** button must be clicked to refresh the data, then the **Statistics** button to access statistical views.
 
-Click on Display to view the selected statistics. You will see how the passengers are distributed on which week, on which hotel, etc.&#x20;
+***
 
-2\. Statistics for average turnover:
+#### **Instructions**
 
-* total,&#x20;
-* per country,&#x20;
-* per arrival&#x20;
-* per resort.&#x20;
+**🔹 Step 1: Navigate to All Bookings**
 
-3\. Profit:
+* Go to the **Booking** menu.
+* Click on **All Bookings**.
 
-* per total&#x20;
-* per country,&#x20;
-* per arrival,&#x20;
-* per resort,&#x20;
-* per hotel.&#x20;
+**🔹 Step 2: Set Filters**
 
-4\. Statistics for average profit can be made:
+* Choose a **Brand** (mandatory).
+* Optionally, apply filters like **Booking Dates**, **Arrival Dates**, **Transport**, **Hotels**, etc.
+* Click **Display** to apply the filters.
 
-* per total or&#x20;
-* per country.&#x20;
+**🔹 Step 3: Open Statistics**
 
-5\. Statistics for total percentage.&#x20;
+* Click the **Statistics** button.
+* You will see a default view showing **passenger distribution** by **week** and **month**.
 
-6\. Statistics for possible vs. sold show how many bookings were possible and how many were sold. (per total, per country)&#x20;
+***
 
-Additional tools for statistics:
+#### 📊 **Types of Available Statistics**
 
-* Totals/cost and profit: shows in the totals column the total cost and total profit for the bookings from the selected period&#x20;
-* Additional sales per seller/turnover shows us which seller was more productive for the company.&#x20;
-* Booking date statistics show how many bookings were made per day/per week.&#x20;
-* Compare statistics: will display another set of filters for Booking, Departure and Arrival dates You can compare 2 different periods to view the evolution. You need to select a booking interval and then click on Display, and you will see the difference between those selected periods.
+**1. Passenger Statistics**
+
+Shows how passengers are distributed based on:
+
+* **Per Country**
+* **Per Arrival Date**
+* **Per Resort**
+* **Per Hotel**
+
+Click **Display** to update results after selection. These show how passengers are grouped weekly, by destination, etc.
+
+**2. Average Turnover Statistics**
+
+Analyze financial turnover:
+
+* **Total**
+* **Per Country**
+* **Per Arrival**
+* **Per Resort**
+
+**3. Profit Statistics**
+
+Shows profit earned from bookings:
+
+* **Total**
+* **Per Country**
+* **Per Arrival**
+* **Per Resort**
+* **Per Hotel**
+
+**4. Average Profit**
+
+Provides an overview of average profit values:
+
+* **Total**
+* **Per Country**
+
+**5. Total Percentage**
+
+Shows share percentages across categories (e.g., share of bookings per destination).
+
+**6. Possible vs. Sold**
+
+Compares availability vs. actual bookings:
+
+* **Total**
+* **Per Country**
+
+***
+
+#### 🛠️ **Additional Tools**
+
+| Tool                                       | Description                                                                                                                                                                                   |
+| ------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Totals / Cost and Profit**               | Displays total cost and total profit for the filtered bookings.                                                                                                                               |
+| **Additional Sales per Seller / Turnover** | Ranks sellers by the amount of extra sales generated (e.g., upsells).                                                                                                                         |
+| **Booking Date Statistics**                | Shows booking volumes: per **day** and per **week**.                                                                                                                                          |
+| **Compare Statistics**                     | Allows comparing two different periods: Booking, Departure, and Arrival dates. You must select a comparison range, then click **Display** to see the evolution or difference between periods. |
+
+***
+
+#### 💡 Tips
+
+* After changing filters, always click **Display** before opening or refreshing statistics.
+* Use **Compare Statistics** to analyze trends across different seasons or campaigns.
+* Combine filters for more granular views (e.g., profit per hotel in a certain resort for a selected time frame).

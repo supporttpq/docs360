@@ -1,44 +1,122 @@
 # Merge customers
 
-Available for Administrator type users.
+### 🔐 Availability
 
-Customers are displayed in groups based on:
+This module is available **only for Administrator-type users**.
 
-* the phone number,
-* e-mail address and
-* by ZIP code and address. Actions in this group will have a slightly different outcome; please read about it here. Allows the merging, deleting, and accepting of customers from the same group. Also, subgroups can be formed inside a bigger group.
+***
 
-**After a customer has been processed, that customer will no longer appear as a merge proposal in the future**. If similar (by merge criteria) customers will be created, the merge proposals will not include the previously merged customers.
+### 📌 Purpose
 
-### Usage tips for doublet customer management
+The **Doublet Customer Management** tool identifies and processes **duplicate customer entries**, based on key matching criteria, and allows administrators to **merge**, **delete**, or **accept** these entries—helping maintain a clean and accurate customer database.
 
-There are three operations that can be applied to dublet customers and two work scenarios. You can work on the entire group proposal, or you can create a subgroup within this group by checking the duplicate customers that should belong to the subgroup.
+***
 
-The operations are:
+### 🧮 Grouping Logic
 
-**Merging**
+Customers are automatically grouped by one or more of the following matching criteria:
 
-* **Group** - select a radio button of the customer that is to remain in the system as a single representative of the group and click the Merge button. All the other customers will have their bookings moved to this customer; details that they have and the remaining customer does not (e.g., fax number, etc.) will be ported to the remaining customer, and they will be deleted.
-* **Subgroup** - use checkboxes to determine the subgroup, then select a radio button inside the subgroup for the customer to be merged. After the merge, all the subgroups disappear from the merge proposal, and all the customers within the subgroup will be deleted from the system except the remaining customer.
+* 📞 **Phone Number**
+* 📧 **Email Address**
+* 🏠 **ZIP Code + Address**
 
-**Deleting**
+Within each group:
 
-* **Group** - do not check anything; you can directly click the Delete button, and all the customers inside the group will be deleted from the list.
-* **Subgroup** - use the checkboxes to determine the subgroup to be deleted and click the delete button. Similar behavior as on group delete.
+* You may **act on the entire group**.
+* Or you can create and manage **subgroups** (by selecting specific duplicates).
 
-**Accepting**
+Once a customer is processed (merged, deleted, or accepted), it will no longer be proposed in future doublet matches—even if newly created duplicates share the same data.
 
-* **Group** — click the Accept button, and all the customers inside the group will be accepted as individual customers inside the system; they will not be deleted, only that they will not appear in the merge proposal anymore.
-* **Subgroup** — use the checkboxes to determine the subgroup and click the Accept button. Similar behavior as in the group accepted.
+***
 
-### Special behavior of ZIP code and address merging
+### 🛠️ Operations on Doublets
 
-By using this type of grouping, doublet customers are not deleted but instead are linked to the customer that is selected as the merge source. The other customers can still be accessed and also keep their bookings, but all bonuses are sent to the 'parent customer.'
+There are **three types of actions** available for handling doublet customer groups:
 
-When accessing the 'parent' customer page, links will be present to the doublet customers. A similar link to the 'parent' is also present in the dublet customer page.
+#### 1. ✅ Merging
+
+**🔹 Full Group Merge:**
+
+* **Step 1**: Select the **radio button** of the customer to **keep** as the main record.
+* **Step 2**: Click **Merge**.
+* ✅ All bookings from other duplicates are moved to this main customer.
+* ✅ Non-overlapping info (e.g., fax, alternate phone) is transferred to the main record.
+* ❌ Other customers in the group are **deleted** after the merge.
+
+**🔸 Subgroup Merge:**
+
+* **Step 1**: Use **checkboxes** to select duplicate customers.
+* **Step 2**: Inside the selected subgroup, pick one customer with the **radio button**.
+* **Step 3**: Click **Merge**.
+* ✅ Only the subgroup is processed.
+* ✅ The subgroup disappears from the merge proposal.
+* ❌ All selected customers are deleted **except** the one retained.
+
+***
+
+#### 2. 🗑️ Deleting
+
+**🔹 Full Group Delete:**
+
+* Click **Delete** without selecting anything.
+* ❌ Deletes **all customers** in the group.
+
+**🔸 Subgroup Delete:**
+
+* Select a **subset** using checkboxes.
+* Click **Delete**.
+* ❌ Only the selected customers are deleted.
+
+***
+
+#### 3. ✔️ Accepting
+
+**🔹 Full Group Accept:**
+
+* Click **Accept** without checking any boxes.
+* ✅ All customers are accepted **as separate valid entries**.
+* ✅ They won’t appear in future duplicate suggestions.
+
+**🔸 Subgroup Accept:**
+
+* Use **checkboxes** to select a subgroup.
+* Click **Accept**.
+* ✅ Only selected customers are accepted.
+* ✅ Others may remain in the duplicate list.
+
+***
+
+### 🏘️ Special Case: ZIP Code + Address Grouping
+
+* Instead of deleting duplicates, this method **links** all customers in the group.
+* A **‘parent customer’** must be selected.
+  * All **bonuses and rewards** are redirected to the parent.
+  * Linked duplicates still retain **their bookings**.
+* On the **parent customer page**, you can:
+  * View links to the doublets.
+* On the **doublet customer page**, a link to the parent is also available.
+
+📌 **Important:** If any customers in the group have **future bookings**, one of them must become the **parent** during the merge.
 
 <figure><img src=".gitbook/assets/69d3b6e8-726a-421c-ba1c-b4ca7124becd.webp" alt=""><figcaption></figcaption></figure>
 
-If in a group, some customers have bookings in the future; one of these must become the 'parent'.
+### ⚠️ Performance Tips
 
-**Please note!** To prevent page blockage or heavy work on the database, on big doublet groups, you can have several subgroup operations followed by a final group operation. For finer adjustments, you can edit the customer's details.
+* For large groups:
+  * Perform **several subgroup operations** first.
+  * Follow up with a **final group-level action**.
+* You can manually **edit customer details** for more refined control before merging.
+
+***
+
+### 📘 Summary Table
+
+| Action | Full Group                    | Subgroup                               |
+| ------ | ----------------------------- | -------------------------------------- |
+| Merge  | Merges all to 1, deletes rest | Merges selected to 1, deletes selected |
+| Delete | Deletes entire group          | Deletes only selected                  |
+| Accept | Keeps all, skips future match | Accepts selected, skips future match   |
+
+***
+
+Let me know if you'd like a PDF version or internal help page layout with screenshots!

@@ -42,7 +42,7 @@ Other fields:
 
 * Dynamic Transport Supplement - when checked, transport price will be added as a supplement to guests in the booking (needs DTS supplement)
 
-<figure><img src="../../.gitbook/assets/image (18) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Brands <a href="#brands" id="brands"></a>
 

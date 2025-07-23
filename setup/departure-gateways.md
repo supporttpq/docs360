@@ -4,7 +4,7 @@
 
 The **Departure Gateways** interface provides a structured list of airport gateways for departures. This system allows users to manage and categorize various departure locations efficiently. The interface includes search, sorting, and management functionalities.
 
-<figure><img src="../.gitbook/assets/image (20) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (20) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Features
 

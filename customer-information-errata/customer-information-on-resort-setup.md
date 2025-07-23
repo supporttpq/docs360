@@ -18,7 +18,7 @@ To ensure that resort-based customer information is accurately displayed across 
 
 **Setup → Resorts → Passenger Information tab**
 
-<figure><img src="../.gitbook/assets/image (2) (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

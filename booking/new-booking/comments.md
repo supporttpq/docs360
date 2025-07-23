@@ -1,15 +1,43 @@
 # Comments
 
-Comments are used to write various texts related to the booking
+### **Overview**
+
+The **Comments** section is designed to capture various notes and documents related to a booking. These comments and attachments serve different purposes and audiences — from internal use only, to customer-facing messages and financial notes.
+
+***
+
+### **Purpose**
+
+* Add important contextual information or instructions related to the booking.
+* Attach relevant documents such as PDFs to tickets.
+* Communicate with customers, guides, or internal teams through specific comment types.
+* Track financial notes linked to the booking in finance modules.
+
+***
+
+### **Preconditions**
+
+* You must be inside an existing booking to add or view comments.
+* Attachments must be PDF files for upload.
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* Hotel text appears on hotel lists
-* To the customer, text will be shown on the ticket.
-* Ticket Attachments it is a PDF file attached to the ticket Click on browse Select the document Insert the title of the document Click on Save Click on Print Ticket. Open the ticket We will find the document at the end of the ticket.
-* Intern text visible only in the Comments section of the booking
-* Intern Attachments PDF file, will not be displayed anywhere To view click on it
-* Economy Text will appear in Negative Balances and Unpaid Bookings sections from Finance/Balance Administration if the booking is listed in there
-* Destination/Guides Text appears on the guide list and airport list.
+### **Instructions & Field Descriptions**
 
-After each comment is entered, the save button must be pressed
+| **Comment Type**            | **Description & Behavior**                                                                                 | **Visibility**           | **How to Add / Use**                                                                       |
+| --------------------------- | ---------------------------------------------------------------------------------------------------------- | ------------------------ | ------------------------------------------------------------------------------------------ |
+| **Hotel Text**              | Text shown on hotel lists and printed on the customer’s ticket.                                            | Customer & Hotel Lists   | Write text → Save → Appears on hotel lists and tickets.                                    |
+| **Ticket Attachments**      | PDF file attached to the customer’s ticket. Attached files will appear at the end of the printed ticket.   | Customer (on ticket)     | Click **Browse** → Select PDF → Add title → Save → Print ticket to view attachment at end. |
+| **Internal Text**           | Notes visible only inside the booking’s comments section for internal staff reference.                     | Internal only            | Enter text → Save → Viewable only by staff.                                                |
+| **Internal Attachments**    | PDF file attached internally, not shown anywhere outside comments section.                                 | Internal only            | Upload PDF → Click to view inside comments only.                                           |
+| **Economy Text**            | Notes related to payments/financials that appear in **Negative Balances** and **Unpaid Bookings** reports. | Finance module           | Add text → Save → Visible in finance-related reports.                                      |
+| **Destination/Guides Text** | Appears on guide and airport lists to inform guides or transport staff.                                    | Guides & Transport Teams | Enter text → Save → Shown on guide and airport lists.                                      |
+
+***
+
+#### **Important**
+
+* **Always click the Save button after entering or uploading any comment or attachment.**
+* Attachments must be in **PDF format**.
+* Ticket attachments will only appear after **printing or previewing the ticket**.
+* Internal comments and attachments **do not appear on customer-facing documents**.

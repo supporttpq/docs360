@@ -113,7 +113,7 @@ When an Airport is selected, the system will automatically load the first **Tran
 
 After the plan has been created, it can be expanded from the blue arrow at the front of the line. From there you can plan the route of the bus in detail and manage the passengers that are loaded and unloaded into it along the way.
 
-<figure><img src="../.gitbook/assets/image (17) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (17) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The feature was developed with the resort as the point of departure. As such the first column is the **Homebound** column, used for planning the route from the resorts to the airport. The **Outbound** column is used to plan the route from the airport to the resorts.
 
@@ -121,10 +121,10 @@ The columns contain the resorts define on the route, flight numbers of the trans
 
 After all these details have been inserted, the schedule fro stops can be made, meaning the time the buss bill arrive at each of the stops along the way. This is done with the help of the **Stop Times** buttons for each column.
 
-<figure><img src="../.gitbook/assets/image (19) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (19) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Also, passengers can be assigned to the bus with the **Seating** button.
 
-<figure><img src="../.gitbook/assets/image (20) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (20) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Once a passenger has been checked, his name will disappear from the list showing that he has been seated in the bus.

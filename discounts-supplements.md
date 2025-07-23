@@ -74,7 +74,7 @@ A manual discount/supplement will be manually chosen for a passenger; it can be 
 
 #### **Overview**
 
-<figure><img src=".gitbook/assets/image (8) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 * Discount or Suppl: choose between either discount or supplement behaviour
 * General/Specified: choose between the general or specificate behaviour
@@ -97,7 +97,7 @@ A manual discount/supplement will be manually chosen for a passenger; it can be 
 * Include in basic price: add the price of the supplement to the price of the room, while hiding it from the guest
 * Used for price adjust: if a discount/supplement is used for price adjustment it can not be removed by a user in WB
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 The entities having this checkbox active will:
 
@@ -177,7 +177,7 @@ In the discount/supplement general window, go to Resources tab.
 
 Here we can select the resource type from the dropdown: destination, resort, hotel, room, transport, real transport, hotel categories
 
-<figure><img src=".gitbook/assets/screencapture-staging-bookingx-tourpaq-extras-discount-supplements-11296-2025-05-15-10_31_57.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
 Resources are used to limit the availability of discount/supplement to the selected entities.
 
@@ -200,7 +200,7 @@ After all these are set, click on save resources.
 
 On Discount/supplement General window, go to Photos tab:
 
-<figure><img src=".gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 * Click on Add picture,
 * Click on browse,
@@ -225,7 +225,7 @@ There are two scenarios to use this feature:
 
 Other destinations or booking dates outside the discount setting will not have the product auto selected or free of charge.
 
-<figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
 Go to links tab.
 
@@ -252,7 +252,7 @@ A bonus code is a text code that allows a visitor to book a trip with a certain 
 
 Tourpaq system allows multiple discounts to use the same bonus code. If all discounts are available they will all be applied by using the bonus code. The discounts can also be set as not combinable with other discounts, this would lead in applying only the most advantageous discount for the current booking (not per passenger but on the entire booking).
 
-<figure><img src=".gitbook/assets/image (8) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 To set a coded discount, first set the code name, plain text, list text and bonus code name. The text chosen for the bonus code has to be between 4 and 20 characters long
 

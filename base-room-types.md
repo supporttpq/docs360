@@ -6,7 +6,7 @@ To create a new room type, the user must go to **Hotel/Base room types** and cli
 
 Fields that need to be filled:
 
-<figure><img src=".gitbook/assets/image (22) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (22) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Room code - room code in the system
 * Plaintext - room name

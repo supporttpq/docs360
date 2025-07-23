@@ -2,7 +2,7 @@
 
 To be able to use the board type in hotel allotment, you should have defined one or more board types in Extras.&#x20;
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 For every allotment, it shall be possible to specify the default BOARD type. The possible options are the ones defined for the company.
 
@@ -49,7 +49,7 @@ The next guide describes how to create a room allotment with a specific board ty
 2. **Check the ticket**\
    → The selected board type should be clearly visible on the ticket.
 
-<figure><img src="../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

@@ -1,41 +1,56 @@
 # Campaign Statistics
 
-### Overview:
+### 🔎 Overview
 
-The **Campaign Statistics Dashboard** provides a comprehensive overview of ongoing and past marketing campaigns. It includes essential metrics such as total bookings, total sales, discounts, and profit, all visualized through an intuitive interface. This documentation outlines the components and data displayed on the dashboard for efficient monitoring and analysis.
+The **Campaign Statistics Dashboard** offers a centralized interface to monitor and evaluate the **performance of marketing campaigns** across a selected time period. It consolidates data such as bookings, sales revenue, applied discounts, and ongoing campaign statuses—presented through visual graphs and summary cards for clarity and actionable insights.
 
 <figure><img src=".gitbook/assets/image (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-1\. **Date Interval Selection—Filter** campaign statistics based on a specific date range.
+### 🗓️ 1. Date Interval Selection
 
-2\. **Campaign Summary Cards**
+Use the **date range filter** to narrow down statistics and focus on a specific period.
 
-Displayed at the top of the dashboard:
+* **Function**: Filters all campaign statistics, graphs, and tables based on selected start and end dates.
+* **Example Range**: 01-03-2025 to 31-03-2025
 
-* **Total Bookings**:
-  * Displays the number of bookings made (24).
-  * The pax count is 80.
-* **Total Sales**:
-  * Displays revenue generated: 648,441.
-  * Includes a discount value of 140,000.
-* **Total DB**:
-  * Displays DB contribution (0), indicating no direct budget used.
-* **Campaigns Running**:
-  * Indicates current campaign statuses:
-    * 1 campaign open
-    * 0 full booked
-    * 0 deleted
+### 🧾 Campaign Summary Cards
 
-3\. **Graph View**
+Displayed at the **top of the dashboard**, these KPIs give a snapshot of overall campaign performance:
 
-* **Type**: Line chart with area shading.
-* **X-Axis**: Date range (01-03-2025 to 31-03-2025).
-* **Y-Axis**: Booking activity.
-* **Insights**: Peaks in booking activity correspond to campaign engagement days.
+| Card Title            | Description                                                                                                                    |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| **Total Bookings**    | <p>Shows the <strong>number of bookings</strong> generated during the selected period.<br>📌 <em>Example: 24 bookings</em></p> |
+| **Pax Count**         | <p>Indicates the <strong>total number of passengers (PAX)</strong> across all bookings.<br>📌 <em>Example: 80 PAX</em></p>     |
+| **Total Sales**       | <p>Displays the <strong>total gross revenue</strong> from campaigns.<br>📌 <em>Example: 648,441</em></p>                       |
+| **Discounts Applied** | <p>Indicates the <strong>total discount value</strong> applied during the campaigns.<br>📌 <em>Example: 140,000</em></p>       |
+| **Total DB**          | <p>Shows the <strong>Direct Budget (DB)</strong> used for campaigns.<br>📌 <em>Example: 0 – no direct budget used</em></p>     |
+| **Campaigns Running** | Current status of campaign execution:                                                                                          |
 
-4\. **Campaign Table View**
+* 🔛 _1 campaign open_
+* ✅ _0 fully booked_
+* ❌ _0 deleted_&#x20;
 
-Detailed information about each campaign:
+### 📈 Graph View – Booking Trends
+
+* **Chart Type**: Line chart with shaded area for volume emphasis.
+* **X-Axis**: Dates within the selected range.
+* **Y-Axis**: Booking activity volume (number of bookings per day).
+* **Insights**:
+  * Peaks in the chart indicate **high customer engagement days**.
+  * Helps correlate **marketing push periods** (e.g., newsletters, promotions) with booking spikes.
+
+### 📋 Campaign Table View
+
+A **tabular list** providing granular details about each campaign within the selected interval.\
+Includes key data such as:
+
+* Campaign name
+* Duration
+* Status (Open, Deleted, Fully Booked)
+* Total bookings & PAX
+* Revenue and discount breakdowns
+
+Useful for comparing the **individual campaign performance** side-by-side.
 
 | Column                 | Description                                                            |
 | ---------------------- | ---------------------------------------------------------------------- |
@@ -52,12 +67,21 @@ Detailed information about each campaign:
 | **Total Discount**     | Total value of discounts given (43,200).                               |
 | **Total Profit**       | Profit generated after discounts (651,772.845).                        |
 
-5\. **Action Button**
+### 🔍 Action Button – “View”
 
-* **The "View"** button allows users to see more detailed campaign analytics or drill down.
+Each campaign row includes a **"View"** button:
+
+* Opens a **detailed analytics page** for that specific campaign.
+* Allows further breakdown by destination, customer segment, channel, and more.
 
 <figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### Conclusion:
+### 🧠 Conclusion
 
-This dashboard provides a high-level yet detailed view of campaign performance, helping marketing teams evaluate effectiveness and optimize future promotions. The combination of visual data and tabular metrics ensures informed decision-making.
+The **Campaign Statistics Dashboard** enables marketing teams to:
+
+* Monitor campaign progress and success in real time
+* Identify which campaigns generate the most engagement and revenue
+* Make **data-driven adjustments** to active or future marketing efforts
+
+The combination of **summary metrics**, **trend graphs**, and **drill-down tables** ensures a **holistic view** of campaign health and efficiency.

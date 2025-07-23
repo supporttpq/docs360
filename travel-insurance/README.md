@@ -48,9 +48,9 @@ The following is an extract from the information that must be available for a tr
 
 Example:
 
-| Travel insurance name                    | Travel insurance code | Product code | Max days cover number | Description | Countries |
-| ---------------------------------------- | --------------------- | ------------ | --------------------- | ----------- | --------- |
-| Årsrejsef.EU(Husst.)m.gratis PRIMO Total | ÅEH                   | AREU         | 365                   | Bulgary     | Kreta     |
+| Travel insurance name               | Travel insurance code | Product code | Max days cover number | Description | Countries |
+| ----------------------------------- | --------------------- | ------------ | --------------------- | ----------- | --------- |
+| Årsrejsef.EU(Husst.)m.gratis  Total | ÅEH                   | AREU         | 365                   | Bulgary     | Kreta     |
 
 Let’s suppose that this travel insurance corresponds to a product provided by Gouda, so Gouda extensions should be filled in:
 

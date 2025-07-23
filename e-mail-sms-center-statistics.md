@@ -1,12 +1,12 @@
 # E-mail/SMS Center Statistics
 
-<figure><img src=".gitbook/assets/image (24) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (24) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Dynamic E-Mail / SMS Statistic is a new feature released within the Tourpaq v6.2. Its purpose is to emphasize the overall functioning of the Dynamic E-Mail/SMS feature.
 
 Within this feature you are able to monitorize the income and outcome data, such as: sent e-mail/SMS, failed e-mail/SMS, confirmed e-mail/SMS, queued SMS.
 
-<figure><img src=".gitbook/assets/image (25) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (25) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 It also gives you the capability of analysing the total turnover made throughout the Dynamic E-Mail/SMS feature either for a given template/category nor an overall statistic.
 

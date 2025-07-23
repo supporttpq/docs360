@@ -10,7 +10,7 @@ This page allows administrators to define **pricing rules** for generic products
 
 When there are more eligible rules, the system will choose the lowest rule from the table.
 
-<figure><img src=".gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (25) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Interface Fields Explained
 

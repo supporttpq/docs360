@@ -117,7 +117,7 @@ You can choose from 2 categories:
 * **Extra Bed Cost** Infant, Child, Adult Age and Rank are required.
 * **Product Supplement** - Mini All Inclusive
 
-<figure><img src=".gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Important <a href="#important" id="important"></a>
 
@@ -127,7 +127,7 @@ Product Supplement could be defined as Supplement and also as Reduction. For bot
 
 The difference is when we define Product Supplement as Reduction. For each room cost, value of product cost is also defined in "Included Cost".
 
-<figure><img src=".gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Extra cost rule <a href="#extra-cost-rule" id="extra-cost-rule"></a>
 
@@ -138,17 +138,17 @@ There are 2 extra cost rules:
 
 Both of them cannot be used for the same type of room.
 
-<figure><img src=".gitbook/assets/image (19) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Early Booking Discount <a href="#early-booking-discount" id="early-booking-discount"></a>
 
 You can define Early Booking Discounts
 
-<figure><img src=".gitbook/assets/image (20) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (20) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 After importing in Tourpaq the results are:
 
-<figure><img src=".gitbook/assets/image (21) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (21) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Payment Plan
 
@@ -166,15 +166,15 @@ This section is crucial for financial tracking, forecasting, and ensuring accura
 
 <figure><img src=".gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Payment Plan Grouping by years</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption><p>Payment Plan Grouping by years</p></figcaption></figure>
 
 ### Remarks
 
 This is an optional text and is displayed in Export Contract pdf
 
-<figure><img src=".gitbook/assets/image (23) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (23) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (24) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (24) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Rules <a href="#rules" id="rules"></a>
 
@@ -182,7 +182,7 @@ This is an optional text and is displayed in Export Contract pdf
 
 You can define as many rules as you want from main Menu: "Hotel -> Hotel Contract Rules"
 
-<figure><img src=".gitbook/assets/image (25) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (25) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Facilities <a href="#facilities" id="facilities"></a>
 

@@ -82,7 +82,7 @@ In the mobile application it is displayed like below:
 
 * **Kiss Cam** section allow to user to take photos using predefined overlays from **Guest App->Settings->KissCam Overlays**.
 
-<figure><img src=".gitbook/assets/image (18) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (18) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 User can save photo or publish on social media.
 
@@ -92,7 +92,7 @@ User can save photo or publish on social media.
 
 This tab offers the possibility to the user to check VisitSun special features like: Dine-around, In-room breakfast, Fast check-in or Room selection.
 
-<figure><img src=".gitbook/assets/image (20) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (20) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Dine Around** allow to guests to book lunch and/or dinner until the day before the latest one at a different hotel/restaurant than the one used on the booking from VisitSun group.
 
@@ -102,11 +102,11 @@ This tab offers the possibility to the user to check VisitSun special features l
 * After logged-in as a supplier which is a Visit Sun User or as an admin
 * (should be the supplier from the hotel), in Office can be defined new product for Dine Around from **Agent->Visit Sun Products**.
 
-<figure><img src=".gitbook/assets/image (21) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (21) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Please make sure that product have a resourcer on that hotel and allotments are generated from "Generate Allotment". In the picture below, it is shown an basic example of "Dine Around" product configuration.
 
-<figure><img src=".gitbook/assets/image (22) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (22) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * It can be defined only one product for each hotel. Also, supplier can upload suggestive photos which are shown in the application from the Photos tab.
 * In the application, accessing the **Dine Around** section, guests can select Dine Around to another hotel from that resort which is in the Visit Sun group.
@@ -136,7 +136,7 @@ When ordering "In Room Breakfast" from the application, guests can select the ho
 
 Information added here will be updated on the booking and after that Hotel List will be sent to the hotel by the supplier from **Agent->Hotel List**. From **Insider Tips** section guest will be able to find out insider tips related to his trip. Insider tips shown here are configured when logged in as guide/ admin from the **Guest App->Insider Tips** menu.
 
-<figure><img src=".gitbook/assets/image (23) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (23) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Tips entered here are available for guest when accessing "Insider tips" section.
 

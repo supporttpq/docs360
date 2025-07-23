@@ -8,7 +8,7 @@ Extras categories are mandatory in the extras definition process. So in order to
 
 The _Extras Category_ section provides administrators with a structured interface to manage optional services or items that can be added to bookings or reservations. These extras can range from luggage options to parking or VIP services, each with custom visibility and behavior settings.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 📄 Fields&#x20;
 
