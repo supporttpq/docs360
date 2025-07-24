@@ -20,7 +20,7 @@ For the email tool to work, it’s necessary to purchase a mail bee license key,
 
 After you have the key, complete the setup, going to Users menu/ Brands / Click on Edit and go to “Service case” tab and fill in all required information.
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (236).png" alt=""><figcaption></figcaption></figure>
 
 “Send Mail” button will open the E-mail overview dialog. From here, the user can send an email directly to the customer, as from the agency’s dedicated email address, set in Brands / Service case tab.
 

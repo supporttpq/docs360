@@ -21,15 +21,15 @@ For compensation you need to:
 
 \~ If the compensation amount is modified, SCD discount will be also updated on the booking.
 
-<figure><img src="../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (237).png" alt=""><figcaption></figcaption></figure>
 
 \~ If there are more service cases created on the same booking, with compensation, SCD discount will have the same behavior (will update the amount). So the last compensation set on that booking (no matter on which service case) will be updated on the SCD. If there is a need to compensate all amounts, it has to be done "manually" by editing the SCD on the booking with the total amount that needs to be compensate.
 
-<figure><img src="../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (238).png" alt=""><figcaption></figcaption></figure>
 
 * If giftcard, a giftcard must be generated with the proper amount, and after that is done, compensation can be marked as sent if the giftcard number generated is inserted. This can be visible, marked as “Giftcard sent”, also in the service case overview
 
-<figure><img src="../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (239).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
