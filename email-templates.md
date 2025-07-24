@@ -387,3 +387,35 @@ This email is sent to passengers who have a product with the attribute "car regi
 * \[Product] - Product name
 * \[EntryDateTime] - Entry date will be calculated as Departure date - 2h
 * \[ExitDateTime] - Exit date will be calculated as Departure date + 1h
+
+56. Flight Change Default
+
+Sent to customer when flight has been changed with e-ticket attached
+
+57. Flight Change Flight Number
+
+Sent to customer when flight has been changed with e-ticket attached
+
+58. Flight Change Large Earlier
+
+Sent to customer when flight has been changed with e-ticket attached
+
+59. Flight Change Large Later
+
+Sent to customer when flight has been changed with e-ticket attached
+
+60. Flight Change Small Earlier
+
+Sent to customer when flight has been changed with e-ticket attached
+
+61. Flight Change Small Later
+
+Sent to customer when flight has been changed with e-ticket attached
+
+62. Flight Change Tiny Earlier
+
+Sent to customer when flight has been changed with e-ticket attached
+
+63. Flight Change Tiny Later
+
+Sent to customer when flight has been changed with e-ticket attached
