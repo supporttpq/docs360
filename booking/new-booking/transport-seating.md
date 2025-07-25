@@ -1,22 +1,63 @@
 # Transport Seating
 
-The transport seating tab is used to distribute guests on the seats available on the plane.&#x20;
+#### **Overview**
+
+The **Transport Seating** tab is used to manually or automatically assign airplane seats to passengers listed in a booking. It handles both outbound and return flights, ensuring that seat assignments appear clearly on the booking and printed ticket.
+
+***
+
+#### **Purpose**
+
+* To reserve specific airplane seats for each passenger in a booking.
+* To give agents the ability to match customer seating preferences.
+* To display reserved seat numbers on printed travel documents.
+
+***
+
+#### **Preconditions**
+
+* A booking must be created and saved.
+* Passengers must already be added to the booking.
+* The transport (flight) must be set up with available seat data.
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-After a booking is made and the guests have been saved, a new "Transport seating" tab will appear on the booking&#x20;
+#### **Instructions**
 
-1. The first tab is for the outgoing flight. You can automatically select the same seats for the homebound flight. To select manually the seats for the outgoing flight: Click on the available seats to select them for each passenger. Click on Save passengers assignment for outbound.&#x20;
-2. The second tab is for returning flights. Seats can be selected manually as in the previous tab. You can also use the option that allows the automatic selection of the same seats for the return flight without having to switch to the Homebound tab and manually selecting seats. Save passengers assignments for homebound.&#x20;
+**🔹 Accessing the Tab**
 
-Click on Save.&#x20;
+1. After the booking is saved and includes at least one guest and a transport segment (flight), the **Transport Seating** tab will become available.
+2. Click on the **Transport Seating** tab within the booking.
 
-After these actions have been performed, in the booking tab a new column appears for the seating in the booking details.&#x20;
+***
 
-Click on save&#x20;
+**🔹 Outgoing Flight Seat Assignment**
 
-Print ticket&#x20;
+1. The **first tab** represents the **outbound flight**.
+2. Assign seats by clicking on **available seats** (typically marked as free or in green).
+3. Each seat is selected individually per passenger.
+4. After selecting all seats, click **“Save passenger assignment for outbound.”**
 
-Open the ticket&#x20;
+***
 
-In the ticket, a new section has appeared for flight reservation, containing the seats reserved.
+**🔹 Homebound Flight Seat Assignment**
+
+1. The **second tab** is for the **return flight**.
+2. Seats can be:
+   * **Manually selected** just like in the outbound flight tab.
+   * Or you can **auto-select the same seats** as the outbound flight for all passengers (if available), saving time and ensuring symmetry.
+3. Once done, click **“Save passenger assignment for homebound.”**
+
+***
+
+**🔹 Final Steps**
+
+1. Click **Save** again to confirm all seat assignments.
+2. Return to the **Booking** tab.
+3. A new **column for seating** will appear in the booking details, showing the assigned seats.
+4. Click **Print Ticket**.
+5. Open the printed ticket – it now includes a new **Flight Reservation section**, listing the selected seats for both outbound and return flights.
+
+***
+
+#### **Use Cases**

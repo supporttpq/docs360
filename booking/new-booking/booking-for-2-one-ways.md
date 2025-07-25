@@ -24,4 +24,4 @@ In **Finance/Export,** the passengers will appear doubled.
 
 In **Export/Lists** the passengers are grouped by the flight departure and arrival dates for **Guide list**
 
-<figure><img src="../../.gitbook/assets/ct9-f3b1e196155145fd434bc62a1bbd72f3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (250).png" alt=""><figcaption></figcaption></figure>

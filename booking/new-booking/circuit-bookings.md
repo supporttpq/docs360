@@ -1,10 +1,38 @@
 # Circuit Bookings
 
-Circuit bookings are custom-made bookings. The feature is an upgrade for the hotel combination and offers more freedom to the user in selecting the component of the booking.
+#### **Overview**
 
-This allows the user to put together in the same booking more than 1 hotel and 1 transport. The hotels can be in different resorts or countries.
+Circuit bookings enable the creation of **customized multi-component trips** within a single booking. Unlike standard bookings that typically link one hotel and one transport, circuit bookings allow the user to combine:
 
-To be used, this requires one-way transports and custom hotel days enabled for hotels, along with the related price list. More information on these can be found in Custom Hotel Days Bookings and [Multiple One Way Flights Bookings](multiple-one-way-flights-bookings.md)
+* Multiple hotels, potentially located in different resorts or even countries.
+* Multiple transports, often using one-way flights to accommodate complex itineraries.
+
+***
+
+#### **Purpose**
+
+* To provide greater flexibility in travel planning.
+* To accommodate multi-destination trips under one booking record.
+* To allow users to tailor customer journeys with varied hotels and transport legs.
+
+***
+
+#### **Preconditions**
+
+* One-way transports must be enabled in the system.
+* Custom hotel days must be enabled for hotels.
+* Related price lists supporting custom hotel days and multiple one-way flights must be configured.
+* Users should refer to:
+  * **Custom Hotel Days Bookings** documentation for details on handling hotel durations.
+  * **Multiple One-Way Flights Bookings** documentation for transport setup.
+
+***
+
+#### **Key Benefits**
+
+* Combine multiple hotels within a single booking.
+* Manage hotels across different resorts or countries seamlessly.
+* Use multiple one-way flights to match complex travel itineraries.
 
 An example of a custom hotel days booking
 
@@ -23,4 +51,4 @@ In this example we have 2 different hotels from 2 different countries (Hotel Pal
 
 Ticket will look like this
 
-![!](https://docs.tourpaq.com/assets/images/circuit2-2bd0bf63900266a2219951f4024e4cc9.png)
+<figure><img src="../../.gitbook/assets/image (249).png" alt=""><figcaption></figcaption></figure>
