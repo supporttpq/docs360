@@ -28,7 +28,7 @@ The list of available menus is available right after the login request succeeds.
 
 <mark style="background-color:red;">**IMPORTANT NOTE:**</mark> <mark style="background-color:red;"></mark><mark style="background-color:red;">Only guides can add products and make them available in the application.</mark>
 
-<figure><img src=".gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (279).png" alt=""><figcaption></figcaption></figure>
 
 In order to be made available in the application, the extra must have selected a category of type **Tours** (General info).
 
@@ -36,25 +36,25 @@ In order to be made available in the application, the extra must have selected a
 
 The first information that appears to the guest is the description - which can be easily customized under the main tab of the extra, specifically the **Description in customer center** box. This can also be customized per brand for a wider variety of descriptions. Another thing to mention when customizing an excursion is the possibility to add one or more representative pictures. That can be easily done through the **Photos** tab of the extra (see the picture below).
 
-<figure><img src=".gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (280).png" alt=""><figcaption></figcaption></figure>
 
 #### **Extra currency**
 
 By default, the price of the sold extra will represent either the currency of the agency (if it has one) or the currency of the company. However, you can customize this by creating a creditor with the desired currency and assign it to the required extra under the "Automatic billing" box (see the picture below).
 
-<figure><img src=".gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (281).png" alt=""><figcaption></figcaption></figure>
 
 #### **Assign the excursion to a resort**
 
 An essential aspect of selling an excursion is that even if Tourpaq supports adding multiples resources to a product - such as transports, hotels and so on, the application will only take into considerations the resort field. One can assign the desired resort or resorts for where they want to sell the excursion Adding a resort is quite simple - you navigate under the **Resurser** tab of the product, click on the **New filter type**, select the desired resort and click on **Save filter type** to save your desired settings (see the picture below).
 
-<figure><img src=".gitbook/assets/image (64).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (282).png" alt=""><figcaption></figcaption></figure>
 
 **Assign the excursion to a brand**
 
 An essential to-do in the process of setting up the excursion is assigning it to a brand so it will be available for sale for it. That can be done really simple under the **Brands** tab under the specific extra One must select the **Guide Sale** option for the desired brand and click on **Save Options** to save the desired configuration (see picture below).
 
-<figure><img src=".gitbook/assets/image (65).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (283).png" alt=""><figcaption></figcaption></figure>
 
 **Generate allotments for the excursion**
 
@@ -77,7 +77,7 @@ After filling in the settings we wanted we proceed to the next step - saving the
 
 If allotment is generated with 0 availability, or after the allotment runs out, the product can still be listed in the VisitSun mobile app if it is set as bellow:
 
-<figure><img src=".gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (284).png" alt=""><figcaption></figcaption></figure>
 
 In the VisitSun mobile app, the effect will be that the excursion/product will continue to be listed, but no buy button will be available.
 

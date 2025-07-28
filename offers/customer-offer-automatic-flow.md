@@ -25,4 +25,4 @@ If the automatic reminder was enabled and the customer has made a booking by usi
 
 The history of the email sent will show the scheduled ones marked in red.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (276).png" alt=""><figcaption></figcaption></figure>

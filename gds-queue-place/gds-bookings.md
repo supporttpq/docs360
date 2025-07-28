@@ -1,5 +1,13 @@
 # GDS Bookings
 
+### Overview
+
+“A La Carte” Booking is a custom booking type in Tourpaq that allows users to create a booking without the need to initially select a transport, hotel, or passengers. It is intended for highly flexible, client-specific travel arrangements, offering full control over insurance, discounts, and other booking extras.
+
+### Purpose
+
+The purpose of this feature is to allow agents to build highly customized bookings, starting only with a customer profile. This enables booking agents to respond to very specific customer needs and preferences without relying on predefined pack
+
 ### **New Booking**
 
 Applies for Administrator and Agent

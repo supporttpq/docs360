@@ -1,37 +1,70 @@
----
-description: >-
-  The "Offers" page, where different travel offers and customer requests are
-  managed.
----
-
 # Offers
 
-<figure><img src="../.gitbook/assets/image (28) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+### **Overview**
 
-### &#x20;**Search Filters**&#x20;
+The **Offers** page is a central hub for managing both offer proposals and incoming customer travel requests. It enables sales and support staff to efficiently track, organize, and act upon offers based on various filtering and status criteria.
 
-Users can filter offers using different criteria:
+***
 
-* **First Name / Last Name / Email** – Search for offers related to a specific customer.
-* **Status—**&#x53;elect offers based on their current state (e.g., available, unsent).
-* **Close Reason—**&#x46;ilter by reason for closing an offer.
-* **Follow-up Start & End Date—**&#x46;ind offers with follow-up scheduled within a time range.
-* **Customer Type—**&#x44;istinguish between different customer categories.
-* **Offer No.—Search** by a specific offer number.
-* **Departure Date, Arrival, Hotel—** Find offers based on travel details.
+### **Purpose**
 
-### **Offers Table**&#x20;
+To provide a flexible and organized view of all travel-related offers, allowing:
 
-The table lists offers with details:
+* Fast retrieval based on customer or travel data.
+* Status tracking and follow-up scheduling.
+* Internal collaboration via offer comments and updates.
 
-* **Offer No.—Unique** number identifying the offer.
-* **Brand—**&#x54;he tour company handling the offer.
-* **Type—**&#x57;hether it’s an offer proposal or a customer request.
-* **Customer/Offeree—**&#x4E;ame of the person the offer is for.
-* **Create User—**&#x57;ho created the offer
-* **Create Date—**&#x57;hen the offer was added.
-* **Update User & Update Date—**&#x44;etails about recent modifications.
-* **Follow-up Date—**&#x53;cheduled follow-up date.
-* **Status—**&#x41;vailability of the offer (e.g., available, unsent).
-* **Status Details—**&#x41;dditional info like “Not sent to customer” or “Available until a specific date.”
-* **Internal Comment—**&#x41;ny notes related to the offer.
+***
+
+### **Preconditions**
+
+* User must have access to the **Offers** module in Tourpaq Office.
+* Offers must be created either manually by an agent or through integrated customer interactions.
+* Customer and travel data should be available in the system for accurate filtering.
+
+<figure><img src="../.gitbook/assets/image (266).png" alt=""><figcaption></figcaption></figure>
+
+### **Search Filters**
+
+The filter panel allows users to refine the view using multiple criteria:
+
+| **Filter Field**                     | **Description**                                                                 |
+| ------------------------------------ | ------------------------------------------------------------------------------- |
+| First Name / Last Name / Email       | Search for offers associated with specific customer data.                       |
+| **Status**                           | Filter offers based on lifecycle state (e.g., _Available_, _Unsent_, _Closed_). |
+| **Close Reason**                     | Choose from predefined reasons why an offer was closed.                         |
+| **Follow-up Start/End Date**         | Search offers with follow-up actions within a date range.                       |
+| **Customer Type**                    | Identify offers by the type of customer (e.g., _New_, _Returning_).             |
+| **Offer No.**                        | Locate a specific offer using its unique ID.                                    |
+| **Departure Date / Arrival / Hotel** | Search offers based on planned trip details.                                    |
+
+***
+
+### **Offers Table**
+
+Displays a real-time list of all offers matching selected filters. Each row contains:
+
+| **Field**              | **Description**                                              |
+| ---------------------- | ------------------------------------------------------------ |
+| **Offer No.**          | Unique identifier for the offer.                             |
+| **Brand**              | Tour company or brand managing the offer.                    |
+| **Type**               | Indicates whether it’s a customer request or offer proposal. |
+| **Customer / Offeree** | Name of the customer the offer is addressed to.              |
+| **Create User**        | The system user who created the offer.                       |
+| **Create Date**        | Date and time the offer was initially saved.                 |
+| **Update User**        | The user who last modified the offer.                        |
+| **Update Date**        | Date and time of the last update.                            |
+| **Follow-up Date**     | When a follow-up should occur.                               |
+| **Status**             | Current state of the offer (e.g., _Available_, _Not Sent_).  |
+| **Status Details**     | Additional information such as “Available until DD.MM.YYYY.” |
+| **Internal Comment**   | Internal notes for tracking offer reasoning or next steps.   |
+
+### **Related Workflows**
+
+| **Workflow**                    | **Description**                                                                       |
+| ------------------------------- | ------------------------------------------------------------------------------------- |
+| **Creating a New Offer**        | Navigate to the Offer menu > Click "Create Offer" > Fill in customer and travel data. |
+| **Follow-Up Management**        | Set or adjust follow-up dates directly from the offer or the table view.              |
+| **Sending Offers to Customers** | Offers marked as “Not Sent” can be sent via email directly from the Offer view.       |
+| **Closing an Offer**            | Select a close reason and status manually when an offer is no longer active.          |
+| **Offer Conversion**            | Convert an active offer into a booking once accepted by the customer.                 |

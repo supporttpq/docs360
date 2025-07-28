@@ -17,7 +17,10 @@ The resource tab is used to limit the availability of an extra. This is mainly d
 > combining resources with **OR** condition
 
 * For a product with both Hotel and Transport (or other) resources => offer has the product eligible ONLY IF it contains one of the Hotels **OR** one of the Transport resources
-* This behavior is available by default to all the other companies in the system.
+
+This behavior is available by default to all the other companies in the system. It can be set on System Setup -> General Information -> Other Settings
+
+<figure><img src="../../.gitbook/assets/image (277).png" alt=""><figcaption></figcaption></figure>
 
 ### **Resources Overview:**
 

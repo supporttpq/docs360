@@ -2,7 +2,7 @@
 
 Tourpaq Office allows defining GDS Transport, which can be booked as one way. GDS transport can be used as one-way if, when creating the transport, dynamic packaging is selected (dynamic itineraries should be selected first in order for dynamic packaging to be revealed).
 
-<figure><img src="../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (265).png" alt=""><figcaption></figcaption></figure>
 
 The next step when defining this kind of transport is to define legs (departure and arrival) and to choose the provider. Please make sure that OneWay is selected.
 

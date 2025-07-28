@@ -2,7 +2,7 @@
 
 You can add the text from the Brands Section in the Select Offer tab.&#x20;
 
-<figure><img src="../.gitbook/assets/image (22) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (272).png" alt=""><figcaption></figcaption></figure>
 
 1. **Template Images**
    * Sections to upload images for **Logo, Trip Safety Image, More Experiences Image, and Web WebBanner Image**.
