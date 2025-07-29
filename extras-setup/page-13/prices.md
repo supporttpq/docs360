@@ -2,7 +2,7 @@
 
 A extras can have one or more prices. The prices are defined based on some intervals. The interval can not overlap each other to prevent that there are some validation in place. There are three intervals as follow:
 
-<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 * **Age From/To** - The price is applying for the passengers that has the age in interval.
 * **Departure Date From/To** - The Price is applying to passengers that have made the booking to depart in this interval.
@@ -40,11 +40,11 @@ Prices can be split by:
 * departure
 * booking date
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 When clicking on the Split button, an option will appear bellow the price lines to set the number of splits to be made
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 If spliting by Departure or Booking date, the Date from of the first line is the original date and Date to is the new stop date.
 
@@ -52,7 +52,7 @@ The second line will contain the new Date from and the Date to will be the origi
 
 It is advised to use the current day or next day Date to of the first line when splitting.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 After filling in the details, click on **Split**
 

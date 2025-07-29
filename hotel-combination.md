@@ -8,7 +8,7 @@ A hotel combination is like an itinerary of hotels where a customer stays two da
 
 You can add a new combination hotel in the same way a regular hotel is created, but make sure you check the Hotel Combination checkbox. In order to use the hotel in the booking, you should complete the next steps.
 
-<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Add hotel list and transport <a href="#add-hotel-list-and-transports" id="add-hotel-list-and-transports"></a>
 

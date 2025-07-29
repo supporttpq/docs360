@@ -15,5 +15,5 @@ Allows the user to add new Data types if the default ones are not up to the requ
 
 
 
-<figure><img src=".gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 

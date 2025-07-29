@@ -85,13 +85,13 @@ In the VisitSun mobile app, the effect will be that the excursion/product will c
 
 Another really important step in the process of setting up the excursion for the app is defining one or more price rules. That can be done per periods - meaning that you can have different adult or child prices for different periods. In order to do that one has to navigate to the **Extras -> Generic Product Price Rule** menu item (see the picture below).
 
-<figure><img src=".gitbook/assets/image (69).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 **Creating a new price rule for an excursion**
 
 In order to create a new price rule, one has to click on the **New** button in the right corner of the page mentioned previously. Pressing the **New** button will generate a new entry to the **Price Rules** table and we will have to configure it properly (see picture below).
 
-<figure><img src=".gitbook/assets/image (70).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 In order to properly understand how the price rules work in the process of setting up an excursion, we will provide a summary description of each field seen above:
 
@@ -113,7 +113,7 @@ Once we finish completing all the fields mentioned above, we click on **Save** a
 
 In order to do that, we will have to navigate under the **Extras -> Routes** page (see the picture below).
 
-<figure><img src=".gitbook/assets/image (71).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 After you click insert, a route will be generated and you will be able to add **pickup points** (see picture below).
 
@@ -127,7 +127,7 @@ In here, you will have to fill the following fields:
 * **Price** - **for this type of routes, we do not need to fill this one up**,
 * **Cost** - **for this type of routes, we do not need to fill this one up**,
 * **Price tag** - **for this type of routes, we do not need to fill this one up**,
-* **Meething hour** - the hour when the guests should start grouping up,
+* **Meeting hour** - the hour when the guests should start grouping up,
 * **Departure hour** - the hour when the guests will move on with their excursion,
 * **Return hour** - the hour when the guests will finish the excursion
 

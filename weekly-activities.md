@@ -2,7 +2,7 @@
 
 In the Weekly activities section, user will be able to see weekly activities defined from Guest App->Weekly Activities, it can be used by Guide Users as well. A Guide User will be able to see a weekly activity only if he has access to all the Resorts that are assigned to that specific Weekly Activity.
 
-<figure><img src=".gitbook/assets/weekly-activity-list-b0980bce48cee5a445ebb2fed6981fa7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 By pressing either on the Weekly Activity Title or "Create" button, we can view or create a new Weekly Activity.
 

@@ -117,7 +117,7 @@ You can choose from 2 categories:
 * **Extra Bed Cost** Infant, Child, Adult Age and Rank are required.
 * **Product Supplement** - Mini All Inclusive
 
-<figure><img src=".gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Important <a href="#important" id="important"></a>
 
@@ -127,7 +127,7 @@ Product Supplement could be defined as Supplement and also as Reduction. For bot
 
 The difference is when we define Product Supplement as Reduction. For each room cost, value of product cost is also defined in "Included Cost".
 
-<figure><img src=".gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Extra cost rule <a href="#extra-cost-rule" id="extra-cost-rule"></a>
 
@@ -138,17 +138,17 @@ There are 2 extra cost rules:
 
 Both of them cannot be used for the same type of room.
 
-<figure><img src=".gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Early Booking Discount <a href="#early-booking-discount" id="early-booking-discount"></a>
 
 You can define Early Booking Discounts
 
-<figure><img src=".gitbook/assets/image (20) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (20) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 After importing in Tourpaq the results are:
 
-<figure><img src=".gitbook/assets/image (21) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (21) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Payment Plan
 
@@ -164,7 +164,7 @@ The **Payment Plan** section allows users to define multiple payment milestones 
 
 This section is crucial for financial tracking, forecasting, and ensuring accurate settlements between the travel agency and the hotel.
 
-<figure><img src=".gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (16) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption><p>Payment Plan Grouping by years</p></figcaption></figure>
 

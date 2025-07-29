@@ -1,8 +1,8 @@
-# Board Type - Hotell allotment / Ticket
+# Board Type - Hotel allotment / Ticket
 
 To be able to use the board type in hotel allotment, you should have defined one or more board types in Extras.&#x20;
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 For every allotment, it shall be possible to specify the default BOARD type. The possible options are the ones defined for the company.
 
@@ -31,7 +31,7 @@ The next guide describes how to create a room allotment with a specific board ty
 4. **Click the Save icon**\
    → The new allotment is saved and the board type appears correctly in the allotment row.
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Step 3: Configure Pricing and Create a Booking
 
@@ -49,7 +49,7 @@ The next guide describes how to create a room allotment with a specific board ty
 2. **Check the ticket**\
    → The selected board type should be clearly visible on the ticket.
 
-<figure><img src="../.gitbook/assets/image (7) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

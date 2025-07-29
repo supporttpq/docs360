@@ -31,11 +31,11 @@ For compensation you need to:
 
 <figure><img src="../.gitbook/assets/image (239).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Compensation can be offered also on destination: cash or other. In this case, “closed on destination” checkbox can be selected. This is for statistics purposes only.
 
-<figure><img src="../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Select who’s fault is it from the drop-down list
 
@@ -45,6 +45,6 @@ Deduction can be done only for hotel or agent’s fault.
 
 When is hotel’s fault, a deduction will be automatically created on hotel’s page, having the amount calculated in creditor’s currency and the comment is also brought automatically from the service case page. Having the deduction on the hotel, normal process will follow, including this deduction on the next invoice.
 
-<figure><img src="../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 When a compensation is set, the service case goes automatically in closed status.

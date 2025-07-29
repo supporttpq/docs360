@@ -42,7 +42,7 @@ To create a new campaign, click on the “Create” button
 
 You need to complete the following fields:&#x20;
 
-<figure><img src=".gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (20) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Name: insert the name of the campaign&#x20;
 * Category: select the category&#x20;
@@ -148,7 +148,7 @@ First passengers in the room receive discounts according to the requirements set
 
 A campaign setup should look like this (this is an example, as the campaign can be setup in many ways, depending on the needs):
 
-<figure><img src=".gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (21) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Discount Limit <a href="#discount-limit" id="discount-limit"></a>
 
@@ -159,7 +159,7 @@ There are 2 types of discount limits
 
 They can be used separately or combined.
 
-<figure><img src=".gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (22) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Campaign linked with product (Select your benefit) <a href="#campaign-linked-with-product-select-your-benefit" id="campaign-linked-with-product-select-your-benefit"></a>
 

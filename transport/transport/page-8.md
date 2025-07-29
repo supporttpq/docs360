@@ -42,7 +42,7 @@ Other fields:
 
 * Dynamic Transport Supplement - when checked, transport price will be added as a supplement to guests in the booking (needs DTS supplement)
 
-<figure><img src="../../.gitbook/assets/image (18) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Brands <a href="#brands" id="brands"></a>
 
@@ -58,7 +58,7 @@ Set the interval between flights.
 * Days - days between the flights
 * API Text It's used in setting the fix quota. Multiple intervals can be set.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Timetable <a href="#timetable" id="timetable"></a>
 

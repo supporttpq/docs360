@@ -2,7 +2,7 @@
 
 Go to users/suppliers
 
-<figure><img src="../.gitbook/assets/image (22) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (22) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Select the supplier.&#x20;
 * Go to Handling section&#x20;

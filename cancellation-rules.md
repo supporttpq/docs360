@@ -12,7 +12,7 @@ Include the cancellation insurance in the total check box if used; adds the **Ca
 
 Cancellation rules that are applied to a booking are set on the transport when it is created.
 
-<figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 Cancellation fee on a booking is calculated as follows:
 

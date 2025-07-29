@@ -2,13 +2,13 @@
 
 VisitSun is an application designed for supporting the guests to have access to special features and information, to stay updated on any changes and to get inspired related to their bookings in order that the entire experience to be valuable. Application is available on both Android or IOS devices. Below, there is a picture with the application running on IOS:
 
-<figure><img src=".gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 Guests can login using the booking number and the password provided.
 
 After login, guests are directed to a front page having a welcome quote.
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 From here, user can access available tabs in the application: Booking, Guide, Destination and VisitSun.
 
@@ -18,7 +18,7 @@ In this tab, user can access information about the booking.
 
 **Welcome screen** provide information about number of days before departure, an introduction text and latest news regarding the destination. Introduction text displayed on "Welcome screen" can be configured from Tourpaq Office logged as admin by accessing **Guest App->Settings->Edit Agency->General settings**
 
-<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 In this section, there are also displayed notifications for insider tips. Notifications can be configured from **Guest App->Edit Agency->Manage VisitSun Settings->Notifications**.
 
@@ -34,13 +34,13 @@ In **Weather** tab, details about weather during stay days are shown. Weather AP
 
 Using **Upgrade your vacantion** tab, user can update the booking by adding products (like seating or baggage facilities) to his reservation from Customer Center. Products which can be booked here are defined in Tourpaq Office and description and photos for products available in the application can be configured in Tourpaq Office under **Extras Setup->Extras Categories** tab.
 
-<figure><img src=".gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 ### Guide tab <a href="#guide-tab" id="guide-tab"></a>
 
 In **Your guides** section, user will be able to call or send e-mail to guides assigned to specific resort on which reservation is made. Guides names displayed are configured in **Office->Users-> Guides Profiles**.
 
-<figure><img src=".gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 Using **Chat** tab, user can start conversation with guides from the booking destination. If the booking is in the future, then the message sent by the user will be available to all guides and admin users. First guide that answer will automatically pick up the conversation. If the user is already at the destination, the conversation will be sent to all guides on that resort.
 
@@ -58,17 +58,17 @@ Remark: Excursions are displayed also according to stop sales hours setup on the
 
 <figure><img src=".gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 ### Destination tab <a href="#destination-tab" id="destination-tab"></a>
 
 * **Good to know** or "Things to see and do" section, contains tips configured when logged in as guide/admin in Tourpaq Office under **Guest App->Good to know** menu.
 
-<figure><img src=".gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 * **Vocabulary** section display a series of key words to be used by the guest during his vacation. Words are defined in Tourpaq Office from **Guest App-> Vocabulary** when logged in as guide or admin and are displayed in the application based on the country in which user travels.
 
-<figure><img src=".gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src=".gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -82,17 +82,17 @@ In the mobile application it is displayed like below:
 
 * **Kiss Cam** section allow to user to take photos using predefined overlays from **Guest App->Settings->KissCam Overlays**.
 
-<figure><img src=".gitbook/assets/image (18) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 User can save photo or publish on social media.
 
-<figure><img src=".gitbook/assets/4ac2af24-33df-43a2-b1dd-366f2e89e1ef-36fb656515c808469f4adc4f1db47315.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 ### VisitSun <a href="#visitsun" id="visitsun"></a>
 
 This tab offers the possibility to the user to check VisitSun special features like: Dine-around, In-room breakfast, Fast check-in or Room selection.
 
-<figure><img src=".gitbook/assets/image (20) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (20) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Dine Around** allow to guests to book lunch and/or dinner until the day before the latest one at a different hotel/restaurant than the one used on the booking from VisitSun group.
 
@@ -102,11 +102,11 @@ This tab offers the possibility to the user to check VisitSun special features l
 * After logged-in as a supplier which is a Visit Sun User or as an admin
 * (should be the supplier from the hotel), in Office can be defined new product for Dine Around from **Agent->Visit Sun Products**.
 
-<figure><img src=".gitbook/assets/image (21) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 * Please make sure that product have a resourcer on that hotel and allotments are generated from "Generate Allotment". In the picture below, it is shown an basic example of "Dine Around" product configuration.
 
-<figure><img src=".gitbook/assets/image (22) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 * It can be defined only one product for each hotel. Also, supplier can upload suggestive photos which are shown in the application from the Photos tab.
 * In the application, accessing the **Dine Around** section, guests can select Dine Around to another hotel from that resort which is in the Visit Sun group.
@@ -136,7 +136,7 @@ When ordering "In Room Breakfast" from the application, guests can select the ho
 
 Information added here will be updated on the booking and after that Hotel List will be sent to the hotel by the supplier from **Agent->Hotel List**. From **Insider Tips** section guest will be able to find out insider tips related to his trip. Insider tips shown here are configured when logged in as guide/ admin from the **Guest App->Insider Tips** menu.
 
-<figure><img src=".gitbook/assets/image (23) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 Tips entered here are available for guest when accessing "Insider tips" section.
 
