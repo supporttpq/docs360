@@ -14,7 +14,7 @@ In this case, if all passengers what to book the allotment the fifth passenger w
 
 <figure><img src="../../.gitbook/assets/soldout2-a7d8ad4ff00f105df8e2edf899eaf59b.jpg" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
 
 If there is no allotment available from the start, a message appears in the category description, along with the other warnings on the product.
 

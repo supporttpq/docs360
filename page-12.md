@@ -14,7 +14,7 @@ To configure the settings for Guest app,&#x20;
 
 These are the texts for specific pages in the Guest App.&#x20;
 
-<figure><img src=".gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
 
 * &#x20;Welcome screen text: Write the title and the description. This will appear when the customer first logs in with their booking in Guest App.&#x20;
 * Countdown Screen Text will be shown when some features in the guest app aren't available until later.&#x20;

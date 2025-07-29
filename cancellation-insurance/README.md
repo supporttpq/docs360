@@ -9,7 +9,7 @@ There are 4 ways to set the price for the cancellation insurance:
 * The third method would set the fee using a given percentage. In this case, the fee will be the percentage of the passenger’s price.
 * The forth method would take into account the transport mode.
 
-<figure><img src="../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### External Cancellation <a href="#external-cancellation" id="external-cancellation"></a>
 

@@ -2,7 +2,7 @@
 
 For discounts/supplements, the auto billing is handled in the discount/supplement in the automatic billing section.&#x20;
 
-<figure><img src="../.gitbook/assets/image (21) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (21) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * The department code and account debit are used in the invoice and appear there.&#x20;
 * Set a creditor.&#x20;

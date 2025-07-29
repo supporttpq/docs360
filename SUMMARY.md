@@ -19,7 +19,8 @@
   * [Statistic in All bookings](booking/all-bookings/statistic-in-all-bookings.md)
   * [All bookings Totals](booking/all-bookings/all-bookings-totals.md)
 * [New Booking](booking/new-booking/README.md)
-  * [New Booking](booking/new-booking/new-booking.md)
+  * [New Booking](booking/new-booking/new-booking/README.md)
+    * [New Booking search support](booking/new-booking/new-booking/new-booking-search-support.md)
   * [Economics](booking/new-booking/economics.md)
   * [Passenger details](booking/new-booking/passenger-details.md)
   * [History](booking/new-booking/history.md)
@@ -208,6 +209,7 @@
   * [Documents](transport/transport/documents.md)
   * [Passengers informations](transport/transport/passengers-informations.md)
   * [Transport Reporting](transport/transport/transport-reporting.md)
+  * [Transport Allotment adjustment for Dynamic Transport](transport/transport/transport-allotment-adjustment-for-dynamic-transport.md)
 
 ***
 

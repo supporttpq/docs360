@@ -2,7 +2,7 @@
 
 This page allows users to view, create, edit, and manage baggage allowance information for different airlines.
 
-<figure><img src=".gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Overview:**
 
@@ -41,4 +41,4 @@ This documentation should help users understand and effectively utilize the Bagg
 
 It can be used also, to be shown on ticket as extra column in transport itineraries, if the Show Baggage Allowance check box is marked on the transport.
 
-<figure><img src=".gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

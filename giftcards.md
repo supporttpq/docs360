@@ -8,7 +8,7 @@ It can be activated by a Super Administrator.
 
 After the activation, on Users -> Brands -> Edit Brand the Giftcard IDs interval should be completed.
 
-<figure><img src=".gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (21) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Giftcard creation <a href="#giftcard-creation" id="giftcard-creation"></a>
 
@@ -16,7 +16,7 @@ The giftcards sections are under the "Extras" menu.
 
 Click on Create to create a gift card.&#x20;
 
-<figure><img src=".gitbook/assets/image (14) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (14) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Select Brand for which the gift card exists.&#x20;
 * Enter the payer email address - this is where the email with the gift card will be sent.&#x20;
@@ -36,11 +36,11 @@ Click on Save button.&#x20;
 
 At this moment the gift card cannot be used even if appears on the system. Also, you cannot send the email to the receiver, because it is not paid yet. This is shown by this flag.&#x20;
 
-<figure><img src=".gitbook/assets/image (16) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (16) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Click on Payments tab to pay the gift card.&#x20;
 
-<figure><img src=".gitbook/assets/image (15) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (15) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * You can pay via bank payment method.&#x20;
 * You can use the cash payment.&#x20;
@@ -48,8 +48,8 @@ Click on Payments tab to pay the gift card.&#x20;
 
 The gift card appears as being paid, and it can be used for bookings in the office or web booking.
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Click on card preview, and you can see a PDF file with the card. It contains the gift card information, the amount, an informative text and a custom text.
 
-<figure><img src=".gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
