@@ -19,7 +19,35 @@ Creating a price list is fairly easy. From the **Price List** tab, select "Creat
 
 The search helps to find prices based on brands, Transport, Hotel, Room and the departure date interval. To get results The most basic search you can get is by choosing All Brands and Transport but for the best performance, try to fill most of the fields. The list of transports from the drop-down list is filtered based on the brand selection.
 
-<figure><img src="../.gitbook/assets/image (30) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (291).png" alt=""><figcaption></figcaption></figure>
+
+### Top Section (Filters related to Dates and Transport):
+
+* **Date From/To Fields**: Set the date range for price list queries (format  DD-MM-YYYY)
+* **Resorts Dropdown**: Select specific resorts to include in the price list
+* **Transports Dropdown**: Configure transport options with code format
+* **Transport Type Dropdown**: Filter by transport categories&#x20;
+* **Hotels Dropdown**: Select specific hotels
+* **Allotment Type Dropdown**: Select the allotment type
+* **Room Dropdown**: Select a specific room type
+* **Fix Quotas Dropdown**: Select a transport fix quota&#x20;
+* **Display Names Checkbox**: Toggle to show hotel names in results
+* **Display Checkbox**: Toggle to show the price list results
+* **Clear Button**: Reset all filter selections (shows "1" indicator, possibly indicating active filters)
+* **Stay Length Field**: Used to filter price lists for a specific stay length. It is possible to specify one stay, several stays or a range.
+
+### Price Display Options
+
+* **Hotel Disc on Top Checkbox**: Show hotel discounts prominently
+* **Only Set Prices Checkbox**: Display only confirmed/set prices
+* **Hide Zero FTA Checkbox**: Exclude zero-value FTA (likely "Free to Agent") rates
+* **Hide Zero PHA Checkbox**: Exclude zero-value PHA rates
+
+### View Management
+
+* **Save View Button**: Preserve current filter configuration
+* **Update View Button**: Modify existing saved view
+* **Menu Icon (⋮)**: Additional options menu
 
 If All Brands are selected, all the transport will appear in the Transport drop-down list; otherwise, only the transport assigned to that specific brand will appear. The Transports are assigned to the brands in the Transport / Brands tab | Brands Tab under Edit Transport. Also, the Transport is not shown in the drop-down list if the Transport is set as hidden. The visibility of the Transport can be set on the Transport  -> General tab -> General tab.
 
@@ -31,7 +59,7 @@ When the hotel is selected, two more fields are displayed. These are some additi
 
 The search will produce a result like the one shown in the next picture. For performance reasons, the prices will not be loaded all at once. When the Display button is hit, the first 25 fields are loaded; when scrolling down, the next 25 fields will be loaded, and so on until the entire list is loaded into the page. By default, most of the columns will be hidden for reasons of performance and visibility.
 
-<figure><img src="../.gitbook/assets/image (31) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (290).png" alt=""><figcaption></figcaption></figure>
 
 The column titles are abbreviated so the table can be more tidy. Most of the fields have a tooltip with the full name of the column. The full list of the columns and explanations is as follows:
 
@@ -39,6 +67,7 @@ The column titles are abbreviated so the table can be more tidy. Most of the fie
 * **Hotel** - Hotel Code - The hotel code for this specific booking configuration
 * **Room** - Room Code - The room code for this specific booking configuration
 * **Dep. date** - Departure Date - The Departure Date for this specific booking configuration
+* STAYS - The stay lenght on interval 1 for a transport
 * **FHA** - Free Rooms Count - How many rooms are available for this departure. The default value is for a one-week trip (or interval 1) on hover there can be the allotments for 1, 2, 3, and 4 weeks.
 * **FTA** - Free Transport Allotment - How many transport seats are available for this trip. The default value is one week round trip. On hover, there can be displayed the available seats for 1, 2, 3, or 4 weeks round trip and also one-way outbound and one-way inbound.
 * **P1** - Price Interval 1&#x20;
