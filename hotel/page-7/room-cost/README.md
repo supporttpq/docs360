@@ -74,6 +74,20 @@ This rule can be combined with the **Stay and Pay cost rules** if the **S\&P** c
 * Room
 * Days no before arrival The rest of the filters are used in **invoices** and will be explained there.
 
+Early Booking Discount with Board Type as a filter
+
+<figure><img src="../../../.gitbook/assets/image (301).png" alt=""><figcaption></figcaption></figure>
+
+In Hotel - Room Costs (Early Booking Cost Discount Rules)  it was added a new field called BOARD, containing all the Board Types defined for the company.
+
+When saving a booking, the cost rules that will be added to the hotel cost calculation will also be filtered by the board types chosen by the passengers.
+
+A board type is set on a product (Basic setup - Board Supplements), so for a passenger to select a board type they should select a product that has the required board type.
+
+If a rule meets all the requirements for a booking, including the board type filter, then the system will also check that every passenger in the room will have the same board type (mixing board types on a passenger will return no rules with board type filters).
+
+If a rule meets all the requirements for a booking but it has no board type filter, it will be applied only to passengers that have no board type selected.
+
 Stay and Pay cost rules
 
 These are considered to be more discounts given by the hotel to the agency.&#x20;
@@ -106,6 +120,18 @@ There are 4 rules:
 * Stay and pay
 
 Filters used to set up the rules:
+
+* Approved
+* Rule Type - select the rule type for the  special offer to be applied (Room cost, Extra bed cost, Stay\&Pay, Early booking);
+
+&#x20;            When the **Rule Type** is set to **Early Booking**, an additional field named **BOARD** becomes available. This field displays all board types defined for the company. For other rule types, the **BOARD** field remains disabled in the _Special Offers_ configuration.
+
+During the booking process, any applicable cost rules used in hotel price calculations will be filtered based on the board types selected by the passengers.\
+Board types are assigned to products in the **Basic Setup > Board Supplements** section. To select a board type, passengers must choose a product that includes the desired board type.
+
+If a cost rule includes a board type filter and all other rule conditions are met, the system will apply the rule only if **all passengers in the same room** have the **same board type**. If different board types are assigned to passengers sharing a room, the rule will not be applied.
+
+If a rule does **not** include a board type filter, it will only apply to passengers who have **no board type** selected.
 
 * Arrival start date
 * Arrival end date
