@@ -44,3 +44,11 @@ Before adding board supplements:
 
 ### Board Basis
 
+#### **Overview**
+
+**Board Basis**: Define supplements per board type and age category.
+
+<figure><img src="../.gitbook/assets/image (295).png" alt=""><figcaption></figcaption></figure>
+
+
+

@@ -46,7 +46,7 @@ The Profit Margin Rules system is a comprehensive tool for managing pricing stra
 * **HOTEL**: Specific hotel property&#x20;
 * **TRANSPORT**: Transport service codes and identifiers
 * **DEPARTURE START/STOP**: Date range when the rule is active
-* **STAY**: The stay length of interval 1. In the case of two matching rules (overlap), the most precise rule wins.
+* **STAY**: The stay length of interval 1.
 * **PM1, PM2, PM3, PM4**: Four-tier profit margin structure allowing complex pricing models
 * **IS PERCENT**: Visual indicator (red/green dots) showing calculation method.
 
@@ -70,6 +70,8 @@ The system will then update all price lists created with the selected transports
    Applies to all price lists created with all hotels from a selected resort for the chosen brand within the specified departure interval.
 3. **Hotel-Specific Rule**\
    Applies to price lists created with selected hotels for the chosen brand.
+
+STAY: The stay length of interval 1.  If a hotel is specified, in the case of two matching rules (overlap), the most precise rule wins (if there is a rule with no stay and a rule that matches with stay, then the rule with stay is used).
 
 **Profit Margin Calculation:**\
 For a given brand and departure interval, the profit margin (**PM**) is calculated as:\
