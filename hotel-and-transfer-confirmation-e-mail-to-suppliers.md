@@ -6,7 +6,7 @@ It uses [Dynamic E-mail/SMS Center](email-setup/page-14/), as a special e-mail t
 
 E-mails can be sent from the booking, if confirmation is necessary. A button named **Send Confirmation** will appear on the booking if the action is required.
 
-<figure><img src=".gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Setting up Confirmation E-mails <a href="#setting-up-confirmation-e-mails" id="setting-up-confirmation-e-mails"></a>
 

@@ -22,11 +22,11 @@ Fields for creating a new Transport Operator:
 * Email - email of the operator
 * Airports - airports assigned to this operator
 
-<figure><img src="../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 After this, in the **Bus Catalogue** you can define the means of transport at the disposal of the operator. They can be cars, vans, buses etc.
 
-<figure><img src="../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Routes​ <a href="#routes" id="routes"></a>
 
@@ -49,11 +49,11 @@ When selecting the **Resort**, you are given the option to choose between all **
 
 You can assign more than one **Transport operator** per route.
 
-<figure><img src="../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Route names and codes are created by adding the names and codes of the **Arrivals** and **Resorts** in the order they have been set on the route.
 
-<figure><img src="../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Stops​ <a href="#stops" id="stops"></a>
 
@@ -63,7 +63,7 @@ They are defined on a resort basis. Each **Stop** can have one or more hotels as
 
 Likewise, a **Resort** can have more than 1 **Stop**
 
-<figure><img src="../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 When adding a hotel, you have to also select the direction. This can be
 
@@ -71,7 +71,7 @@ When adding a hotel, you have to also select the direction. This can be
 * Homebound
 * Both
 
-<figure><img src="../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 It is recommended if you have more than 1 **Stop** per resort to give them different names in order to differentiate them.
 

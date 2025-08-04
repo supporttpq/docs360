@@ -2,7 +2,7 @@
 
 The dashboard presents **survey results from passengers** on different aspects of their journey. The **ratings (1-5 scale)** show overall satisfaction levels for **airport experience, in-flight service, food, and hotel quality**. The filters help customize the view based on **departure and booking dates**.
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Key Sections of the Dashboard:**
 
@@ -29,6 +29,6 @@ The dashboard presents **survey results from passengers** on different aspects o
 
     * A **"Dashboard" button** is present to navigate to another view.
 
-    <figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     * A **"Display" button** allows changes in data visualization.

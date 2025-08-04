@@ -82,5 +82,5 @@ You can filter by **one, several, or all** options in any category.
 * When using filters across categories (e.g., Hotel + Transport + User), use **Display** to preview results before going to **Statistics**.
 * If filters look cluttered, use the **Hide Filters** option to simplify the interface without affecting results.
 
-<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

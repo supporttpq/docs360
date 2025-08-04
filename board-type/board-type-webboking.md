@@ -6,7 +6,7 @@
 
 * Create extras for different board types **without selecting** the "All guests in one room share the same board type" checkbox. - Extras should be created successfully.
 
-<figure><img src="../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -103,7 +103,7 @@
 * Navigate to **Extra Setup → Extras**, open the extra used, and expand the **Board Supplements** section - Board type dropdown and checkbox should be visible.
 * Checkbox for “All guests in one room share the same board type” should appear as selected.
 
-<figure><img src="../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -111,7 +111,7 @@
 
 * Select two different pension extras with different board types and click Save - A warning should appear to prevent saving.
 
-<figure><img src="../.gitbook/assets/image (11) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
