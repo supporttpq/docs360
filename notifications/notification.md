@@ -1,39 +1,82 @@
 # Notification
 
-This page displays notifications related to reservations in the system, including errors, warnings, and specific alerts regarding the status of reservations. The purpose of the page is to provide users with an overview of the problems that have arisen and to facilitate their management.&#x20;
+### 🧭 Overview
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+The **Reservation Notifications** page is a system-level tool used to **monitor, review, and manage issues and alerts related to bookings**. It centralizes all system-generated warnings, errors, and informational messages to help users maintain data integrity and ensure smooth booking operations.
 
-### Main sections:
+<figure><img src="../.gitbook/assets/image (243).png" alt=""><figcaption></figcaption></figure>
 
-1. Notifications menu (left panel)—Contains notification categories grouped by type, such as
+### 🎯 Purpose
 
-* Unpaid Bkg—unpaid reservations&#x20;
-* Overbkg—overbookings (homebound, hotels, rooms, outbound)&#x20;
-* Error Bkg—errors when saving reservations&#x20;
-* Warnings—general warnings&#x20;
-* Hotel Special Offer and Extra Special Offer—special offers&#x20;
-* Upsale—additional sales&#x20;
-* Queue Management—management of reservation queues&#x20;
+This module is intended to:
 
-Each category is accompanied by a number indicating the volume of existing notifications.&#x20;
+* Provide **real-time visibility** into booking-related issues
+* **Highlight critical problems** such as unpaid or overbooked reservations
+* **Assist users in troubleshooting and resolving errors**
+* Help ensure **reservation completeness and accuracy**
 
-2. Central notification table - Displays details about affected reservations, organized into columns:
+By consolidating alerts by type and severity, this module supports **operational efficiency and customer satisfaction**.
 
-* Booking No – reservation number&#x20;
-* Departure Date—departure date&#x20;
-* Customer—customer name&#x20;
-* Booking Total—total amount of the reservation&#x20;
-* Paid Amount—amount paid&#x20;
-* Balance—remaining balance
-* Error Description—description of the error&#x20;
+***
 
-3. Navigation and Pagination&#x20;
+### ✅ Preconditions
 
-Allows viewing of multiple records, with the option to navigate between pages and select the number of records displayed per page.&#x20;
+* Available only to users with permission to access booking administration and notifications.
+* Booking data must be up-to-date and error checking services should be running in the background.
+* Some notifications (e.g., overbookings) may rely on system configuration thresholds (e.g., allotment).
 
-### Usage:
+***
 
-Users can analyze notifications to identify reservation issues and take necessary actions (e.g., processing outstanding payments, correcting booking errors, and managing overbookings).&#x20;
+### 🧭 Page Structure
 
-Prioritization of notifications is done according to their category and number, highlighted in the menu on the left.
+#### 🔹 Left Panel: Notifications Menu (Categories)
+
+The **left-side menu** organizes notifications by type. Each category shows a **counter** for active issues.
+
+| Category                | Description                                                                       |
+| ----------------------- | --------------------------------------------------------------------------------- |
+| **Unpaid Bkg**          | Reservations with outstanding payments.                                           |
+| **Overbkg**             | Overbookings at various levels (Homebound, Hotels, Rooms, Outbound).              |
+| **Error Bkg**           | Errors that occurred while saving or updating a booking.                          |
+| **Warnings**            | General warnings that don’t block the booking but may need attention.             |
+| **Hotel Special Offer** | Issues related to hotel-based special offers.                                     |
+| **Extra Special Offer** | Issues related to special offers on extras.                                       |
+| **Upsale**              | Opportunities or issues related to additional product sales.                      |
+| **Queue Management**    | Errors in background processing queues (e.g., confirmations, communication jobs). |
+
+> 🔔 **TIP**: The count next to each category helps **prioritize** which notifications to address first.
+
+***
+
+#### 📋 Central Panel: Notification Table
+
+This is the **main working area**, displaying **detailed alerts**. Columns include:
+
+| Column Name           | Description                                             |
+| --------------------- | ------------------------------------------------------- |
+| **Booking No**        | Unique identifier of the affected reservation.          |
+| **Departure Date**    | The date of travel associated with the booking.         |
+| **Customer**          | Full name of the lead passenger or customer.            |
+| **Booking Total**     | Total value of the reservation (all included services). |
+| **Paid Amount**       | Amount already paid by the customer.                    |
+| **Balance**           | Remaining unpaid amount.                                |
+| **Error Description** | Human-readable explanation of the issue or error.       |
+
+Each row represents a **single notification event**, tied to a specific booking.
+
+***
+
+#### 🔄 Navigation & Pagination
+
+* **Pagination Controls**: Located at the bottom of the table.
+* **Records Per Page Selector**: Choose how many notifications to display at once (e.g., 10, 25, 50).
+* **Sorting**: Clicking on column headers allows for sorting by Booking No, Date, or other fields.
+
+***
+
+### 🚩 Special Notes & Behaviors
+
+* Notifications **do not auto-resolve**—they must be handled and cleared through booking updates or internal processing.
+* System may **auto-refresh counters** periodically depending on configuration (e.g., every 30 minutes).
+* The presence of multiple notification types for a single booking is possible.
+* In some environments, **notification acknowledgment** features may be added to track who resolved what (if enabled).

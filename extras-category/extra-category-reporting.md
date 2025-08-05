@@ -32,7 +32,7 @@ To add a new scheduler
 
 Note: The service will produce an PDF file.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **E-ticket Overview**[**​**](https://docs.tourpaq.com/docs/documentation/extra-category-reporting#e-ticket-overview)
 
@@ -43,4 +43,4 @@ The emails that are sent are stored in e-ticket overview. To view the emails
 3. By clicking //Show default communication email types// you will see int the **Email type** drop down the types for communication
 4. Select in the **Email type** drop down **Extras Category Reporting**
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

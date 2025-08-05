@@ -28,7 +28,7 @@ The list of available menus is available right after the login request succeeds.
 
 <mark style="background-color:red;">**IMPORTANT NOTE:**</mark> <mark style="background-color:red;"></mark><mark style="background-color:red;">Only guides can add products and make them available in the application.</mark>
 
-<figure><img src=".gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (279).png" alt=""><figcaption></figcaption></figure>
 
 In order to be made available in the application, the extra must have selected a category of type **Tours** (General info).
 
@@ -36,25 +36,25 @@ In order to be made available in the application, the extra must have selected a
 
 The first information that appears to the guest is the description - which can be easily customized under the main tab of the extra, specifically the **Description in customer center** box. This can also be customized per brand for a wider variety of descriptions. Another thing to mention when customizing an excursion is the possibility to add one or more representative pictures. That can be easily done through the **Photos** tab of the extra (see the picture below).
 
-<figure><img src=".gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (280).png" alt=""><figcaption></figcaption></figure>
 
 #### **Extra currency**
 
 By default, the price of the sold extra will represent either the currency of the agency (if it has one) or the currency of the company. However, you can customize this by creating a creditor with the desired currency and assign it to the required extra under the "Automatic billing" box (see the picture below).
 
-<figure><img src=".gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (281).png" alt=""><figcaption></figcaption></figure>
 
 #### **Assign the excursion to a resort**
 
 An essential aspect of selling an excursion is that even if Tourpaq supports adding multiples resources to a product - such as transports, hotels and so on, the application will only take into considerations the resort field. One can assign the desired resort or resorts for where they want to sell the excursion Adding a resort is quite simple - you navigate under the **Resurser** tab of the product, click on the **New filter type**, select the desired resort and click on **Save filter type** to save your desired settings (see the picture below).
 
-<figure><img src=".gitbook/assets/image (64).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (282).png" alt=""><figcaption></figcaption></figure>
 
 **Assign the excursion to a brand**
 
 An essential to-do in the process of setting up the excursion is assigning it to a brand so it will be available for sale for it. That can be done really simple under the **Brands** tab under the specific extra One must select the **Guide Sale** option for the desired brand and click on **Save Options** to save the desired configuration (see picture below).
 
-<figure><img src=".gitbook/assets/image (65).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (283).png" alt=""><figcaption></figcaption></figure>
 
 **Generate allotments for the excursion**
 
@@ -77,7 +77,7 @@ After filling in the settings we wanted we proceed to the next step - saving the
 
 If allotment is generated with 0 availability, or after the allotment runs out, the product can still be listed in the VisitSun mobile app if it is set as bellow:
 
-<figure><img src=".gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (284).png" alt=""><figcaption></figcaption></figure>
 
 In the VisitSun mobile app, the effect will be that the excursion/product will continue to be listed, but no buy button will be available.
 
@@ -85,13 +85,13 @@ In the VisitSun mobile app, the effect will be that the excursion/product will c
 
 Another really important step in the process of setting up the excursion for the app is defining one or more price rules. That can be done per periods - meaning that you can have different adult or child prices for different periods. In order to do that one has to navigate to the **Extras -> Generic Product Price Rule** menu item (see the picture below).
 
-<figure><img src=".gitbook/assets/image (69).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
 **Creating a new price rule for an excursion**
 
 In order to create a new price rule, one has to click on the **New** button in the right corner of the page mentioned previously. Pressing the **New** button will generate a new entry to the **Price Rules** table and we will have to configure it properly (see picture below).
 
-<figure><img src=".gitbook/assets/image (70).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In order to properly understand how the price rules work in the process of setting up an excursion, we will provide a summary description of each field seen above:
 
@@ -113,7 +113,7 @@ Once we finish completing all the fields mentioned above, we click on **Save** a
 
 In order to do that, we will have to navigate under the **Extras -> Routes** page (see the picture below).
 
-<figure><img src=".gitbook/assets/image (71).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 After you click insert, a route will be generated and you will be able to add **pickup points** (see picture below).
 
@@ -127,7 +127,7 @@ In here, you will have to fill the following fields:
 * **Price** - **for this type of routes, we do not need to fill this one up**,
 * **Cost** - **for this type of routes, we do not need to fill this one up**,
 * **Price tag** - **for this type of routes, we do not need to fill this one up**,
-* **Meething hour** - the hour when the guests should start grouping up,
+* **Meeting hour** - the hour when the guests should start grouping up,
 * **Departure hour** - the hour when the guests will move on with their excursion,
 * **Return hour** - the hour when the guests will finish the excursion
 

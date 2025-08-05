@@ -12,17 +12,17 @@ When new transport is defined and interval definition and timetable are set, the
 
 After the fix-quota was generated, allotments for one-way-out and one-way-home were available; the next step was to create the price list. A price list should be created between transport and one fictive hotel used for one-way bookings. Hotel for one way should be created for each company using the following settings:
 
-<figure><img src="../../.gitbook/assets/969a2df7-a130-44ba-bb5d-d5895ebea5a8.webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (251).png" alt=""><figcaption></figcaption></figure>
 
 There should be only one One Way Hotel for each company.
 
 The hotel has also assigned a room type:
 
-<figure><img src="../../.gitbook/assets/764ce91a-43c9-4e91-86ea-e8f233e2f462.webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (252).png" alt=""><figcaption></figcaption></figure>
 
 The hotel for one way does not have room costs or allotments defined. From **Create/Copy pricelist**, a pricelist between transport and hotel for one way should be created.
 
-<figure><img src="../../.gitbook/assets/89f42b5f-b6be-4286-b393-a4acd6f9aad5.webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (253).png" alt=""><figcaption></figcaption></figure>
 
 The next step will be to set prices for one-way out or one-way home flights in the PriceList by setting pricing values for POWO/POWH/DPOWO/DPOWH/GPOWO/GPOWH/CHOWO/CHOWH.
 

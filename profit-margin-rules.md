@@ -2,6 +2,54 @@
 
 Under **Price List → Profit Margin Rules**, users can define rules to set profit margin values in price lists.
 
+### Overview
+
+The Profit Margin Rules system is a comprehensive tool for managing pricing strategies and commission structures across different travel products, destinations, and customer segments. This interface allows you to create, modify, and monitor profit margin rules that automatically apply to bookings based on specific criteria such as destination, passenger type, travel dates, and accommodation preferences.
+
+<figure><img src=".gitbook/assets/image (292).png" alt=""><figcaption></figcaption></figure>
+
+#### Filtering and Searching
+
+* **Rule Types**: Use the dropdown to filter by "All types" or specific rule categories (Transport, Resort)
+* **Date Range**: Set departure start and stop dates using the calendar pickers to focus on specific time periods
+* Click **"More Filters"** to access additional search criteria
+* Select specific countries from the "Countries" dropdown
+* Choose arrival locations using the "Arrivals" dropdown
+* Filter by resort destinations in the "Resorts" dropdown
+* **Passenger Type**: Filter rules by customer categories (Adult, Child)
+* **Stay Length**: Set duration parameters for length-of-stay requirements. Used to filter rules for a specific stay length
+* **Show Codes**: Check this box to display internal system codes for technical reference
+
+#### Managing Profit Margin Rules
+
+**Creating New Rules**
+
+1. Click the **"Create"** button (blue button in top-right corner)
+2. Fill in all required fields based on your pricing strategy
+3. Configure profit margin values (PM1, PM2, PM3, PM4) as needed
+4. Set the "IS PERCENT" indicator to specify whether margins are percentage-based or fixed amounts
+
+**Editing Existing Rules**
+
+1. Click the **edit icon (pencil)** next to the rule you want to modify
+2. Update the necessary fields in the edit dialog
+3. Save changes and verify they appear correctly in the grid
+
+**Key Identification Fields**
+
+* **AGENCY**: The agency name&#x20;
+* **RULE TYPE**: Classification showing whether the rule applies to "Resort", "Transport"
+* **PASSENGER TYPE**: Customer segment the rule applies to
+* **COUNTRY**: Destination country for the rule
+* **ARRIVAL**: Specific arrival airport or location
+* **RESORT**: Resort or destination name
+* **HOTEL**: Specific hotel property&#x20;
+* **TRANSPORT**: Transport service codes and identifiers
+* **DEPARTURE START/STOP**: Date range when the rule is active
+* **STAY**: The stay length of interval 1.
+* **PM1, PM2, PM3, PM4**: Four-tier profit margin structure allowing complex pricing models
+* **IS PERCENT**: Visual indicator (red/green dots) showing calculation method.
+
 There are two types of rules: **Transport Rules** and **Resort Rules**.
 
 For **Transport Rules**, users must:
@@ -22,6 +70,8 @@ The system will then update all price lists created with the selected transports
    Applies to all price lists created with all hotels from a selected resort for the chosen brand within the specified departure interval.
 3. **Hotel-Specific Rule**\
    Applies to price lists created with selected hotels for the chosen brand.
+
+STAY: The stay length of interval 1.  If a hotel is specified, in the case of two matching rules (overlap), the most precise rule wins (if there is a rule with no stay and a rule that matches with stay, then the rule with stay is used).
 
 **Profit Margin Calculation:**\
 For a given brand and departure interval, the profit margin (**PM**) is calculated as:\

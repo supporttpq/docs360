@@ -1,12 +1,12 @@
 # Campaigns
 
-Campaign is a new feature in Tourpaq that allows the user to create a package of discounts and products according to a specific set of rules. Campaign feature can only be used with a campaign code.
+Campaign is a feature in Tourpaq that allows the user to create a package of discounts and products according to a specific set of rules. Campaign feature can only be used with a campaign code.
 
 A Campaign can be created in office, from **Extra Setup**/**Campaign**.
 
 This page allows system administrators or marketing managers to **view, manage, and control discount campaigns** that can be applied to bookings. Campaigns are typically linked to special promotions, early booking incentives, or seasonal offers.
 
-<figure><img src=".gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (24) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Campaigns Table Explained
 
@@ -42,7 +42,7 @@ To create a new campaign, click on the “Create” button
 
 You need to complete the following fields:&#x20;
 
-<figure><img src=".gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (20) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Name: insert the name of the campaign&#x20;
 * Category: select the category&#x20;
@@ -148,7 +148,7 @@ First passengers in the room receive discounts according to the requirements set
 
 A campaign setup should look like this (this is an example, as the campaign can be setup in many ways, depending on the needs):
 
-<figure><img src=".gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (21) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Discount Limit <a href="#discount-limit" id="discount-limit"></a>
 
@@ -159,7 +159,7 @@ There are 2 types of discount limits
 
 They can be used separately or combined.
 
-<figure><img src=".gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (22) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Campaign linked with product (Select your benefit) <a href="#campaign-linked-with-product-select-your-benefit" id="campaign-linked-with-product-select-your-benefit"></a>
 
@@ -167,7 +167,7 @@ This is a special type of campaign that gives a discount in relation with a sele
 
 More than one product can be selected.
 
-<figure><img src=".gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>
 
 The user will receive the discount after inserting the code and selecting the product the discount will apply to.
 

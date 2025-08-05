@@ -1,15 +1,64 @@
 # History
 
-Booking history is **where you can see all changes made to bookings by you or your team**. You can also see who created the booking and its initial settings.
+### **Overview**
 
-<figure><img src="https://sonat.com/api/Document/Image/19670ef0-8b8a-4cda-8eb6-249681e07016/60a72aeb-a272-4428-a118-b6074b1b35b5/9c97b89e-ce67-4811-a476-f54b040350d8.webp?width=1865" alt="" width="900"><figcaption></figcaption></figure>
+The **Booking History** section provides a full timeline of actions performed on a booking. It enables users to **track who made changes**, **what was changed**, and **when**—offering complete visibility into the life cycle of a booking.
 
-The timeline of reservations typically includes detailed information about each booking, such as
+***
 
-1. **Booking Details**: The name of the service (e.g., hotel, flight), location, dates, and other relevant information.
-2. **Dates**: The date when the booking was made (e.g., check-in/check-out dates for hotels, flight dates, etc.).
-3. **Confirmation Number**: A unique identifier for each booking that can be used for tracking or managing the reservation.
-4. **Cost/Payment Information**: Total price paid for the booking, including taxes, fees, etc.
-5. **Status**: Current status of the booking (e.g., completed, canceled, pending, refunded).
-6. **Modification History**: Any changes made to the original booking, such as rescheduling, adding special requests, or upgrades.
-7. **Cancellations**: If the booking was canceled, this would be part of the history, showing the reason and terms of the cancellation.
+### **Purpose**
+
+This feature is essential for:
+
+* Auditing booking modifications.
+* Tracing issues or confirming updates.
+* Ensuring transparency and accountability across teams.
+* Resolving customer support questions related to changes, payments, or cancellations.
+
+***
+
+### **Preconditions**
+
+* You must have access to a booking that has been created and possibly modified.
+* Permissions to view booking history are required.
+* Bookings must have been created or altered within the system to generate a visible history.
+
+***
+
+### **Instructions for Use**
+
+#### **🔎 Accessing Booking History**
+
+1. Navigate to the **Booking Page**.
+2. Click on the **“Booking History”** tab or section.
+3. A chronological timeline will display all key events associated with the booking.
+
+***
+
+### **Field-by-Field Breakdown**
+
+| **Field**                | **Description**                                                                                                                     |
+| ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
+| **Booking Creator**      | The user who originally created the booking, with timestamp.                                                                        |
+| **Booking Details**      | Name of the service (e.g., hotel, flight), location, check-in/check-out or travel dates.                                            |
+| **Booking Date**         | The exact date the booking was placed.                                                                                              |
+| **Confirmation Number**  | A unique system-generated identifier for the booking. Use this for customer communication and system tracing.                       |
+| **Cost / Payment Info**  | Total amount paid, breakdown by taxes, fees, deposits, and balance due.                                                             |
+| **Status**               | The current state of the booking (e.g., _Confirmed_, _Pending_, _Cancelled_, _Refunded_).                                           |
+| **Modification History** | Shows what was changed (e.g., hotel swapped, passenger name edited, dates rescheduled), by whom, and when.                          |
+| **Cancellation Info**    | If applicable, includes the cancellation date, cancellation reason (if provided), and terms (e.g., penalty applied or full refund). |
+
+***
+
+### ✅ What You Can Do
+
+* Hover over modification entries for detailed tooltips.
+* Check user actions to monitor staff performance or error tracing.
+* Cross-reference status changes with payment updates for financial verification.
+
+***
+
+### 🧠 Best Practices
+
+* Encourage staff to **always log meaningful notes or comments** when modifying a booking.
+* Use the **confirmation number** when reaching out to vendors or internal support.

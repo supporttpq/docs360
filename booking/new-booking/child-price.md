@@ -16,12 +16,12 @@ If the option is checked and we have **SET** a child price on the price list tha
 
 Booking with Child Price **NOT SET**:
 
-<figure><img src="../../.gitbook/assets/child-price-booking-no-price-5a2e0f1bbc34bf4b480667181a73a9ef.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (259).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/child-price-pricelist-no-price-7be6edd2dd72a90e189af2cad7bb2f59.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (260).png" alt=""><figcaption></figcaption></figure>
 
 Booking with Child Price **SET**:
 
-<figure><img src="../../.gitbook/assets/child-price-booking-with-price-e862965e15a4c176738696fbe1b8f4c5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (261).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/child-price-pricelist-with-price-d8bb0ec3d104f675d6aad3cf47d967d1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (262).png" alt=""><figcaption></figcaption></figure>

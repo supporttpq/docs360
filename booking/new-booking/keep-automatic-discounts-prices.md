@@ -1,26 +1,44 @@
 # Keep automatic discounts prices
 
-On booking, editing the booking engine handles price updates on discounts in two different ways:
+#### **Overview**
 
-1. The first way is to update prices on discounts/extras/travel insurance when a booking change is made.
-2. The second way is to keep prices used at the time of the booking.
+When editing a booking, the system can handle prices for discounts, extras, and travel insurance in two different ways:
 
-Default behavior is to keep prices, but there is a switch to make it the other way.
+* **Option 1**: Keep the prices that were used at the time of booking (default behavior).
+* **Option 2**: Update the prices automatically based on current availability and rates.
 
-### How it works <a href="#how-it-works" id="how-it-works"></a>
+The behavior is controlled by a setting in the **Back Office** interface via a checkbox.
 
-On the booking page in the back office, there is a checkbox called "Keep automatic discount prices." The state of this checkbox is set by the company's general setting; here, you have the option to override it.
+***
 
-When this checkbox is checked, prices for extras, discounts/supplements, and insurance are kept to existing values.
+#### **Keep Automatic Discount Prices Checkbox**
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+* Located on the **booking page** in the Back Office.
+* Labeled: **Keep automatic discount prices**
+* Determines how the booking engine treats pricing for:
+  * Discounts/Supplements
+  * Extras
+  * Travel Insurance
 
-When not checked, prices on extras, discounts/supplements, and insurance get updated with the new available prices.
+***
 
-### Do not apply <a href="#do-not-apply" id="do-not-apply"></a>
+#### **How It Works**
 
-**Keep automatic discount prices** doesn't apply in these situations:
+| Checkbox State  | System Behavior                                                                                                     |
+| --------------- | ------------------------------------------------------------------------------------------------------------------- |
+| ✅ **Checked**   | The original prices are retained for discounts, extras, and insurance, regardless of pricing updates in the system. |
+| ⬜ **Unchecked** | Prices are refreshed and updated to the current system prices when booking details are modified.                    |
 
-* Departure date is changed
-* Transport is changed
-* Hotel is changed
+* The **initial state** of this checkbox is controlled by a **general company setting**, but it can be overridden on individual bookings.
+
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+#### **When the Setting&#x20;**_**Does Not Apply**_
+
+In certain scenarios, prices will always be updated regardless of the checkbox state:
+
+* When the **departure date** is changed
+* When the **transport** is changed
+* When the **hotel** is changed
+
+These changes reset key elements of the booking and therefore require updated pricing.

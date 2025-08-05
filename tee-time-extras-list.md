@@ -1,37 +1,103 @@
 # Tee Time extras list
 
-Here the user can generate and export Tee Time data
+### ✅ Overview
 
-<figure><img src=".gitbook/assets/image (25) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+The **Tee Time Export** feature in Tourpaq Office is used to generate structured reports related to golf tee time bookings. It allows users to filter and export data based on supplier, booking details, arrival periods, extras, and more. This tool is valuable for operational teams and golf course suppliers who manage tee time reservations.
 
-### **Main Sections**
+<figure><img src=".gitbook/assets/image (25) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-1. **Supplier Dropdown**&#x20;
-   * Allows the user to select a specific supplier or include all suppliers in the report.
-2. **Report Type Dropdown**
-   * Lets the user choose the format or type of report&#x20;
-3. **More Filters Button**
-   * Expands additional filtering options for refining the data.
+***
 
-### **Filtering Options**
+### 🎯 Purpose
 
-5. **Arrival Period & Booking Period (Start & End Dates)**
-   * Date pickers to filter the data based on arrival and booking periods.
-6. **Display All Extras Checkbox**
-   * When checked, includes all additional items or services in the report.
-7. **Compress as ZIP Checkbox**
-   * When checked, compresses the exported report into a ZIP file.
+This tool is designed to:
 
-### **Customization Options**
+* Provide real-time and accurate tee time data to suppliers.
+* Export booking information filtered by date, supplier, extras, and categories.
+* Allow flexible report customization and format selection.
+* Support data delivery in ZIP-compressed format for easier sharing or archiving.
 
-8. **Categories Section**&#x20;
-   * Allows users to filter by specific categories.
-9. **Extras Section**&#x20;
-   * Provides options to include or exclude specific extra items.
-10. **Columns for Export Section**&#x20;
-    * Enables users to customize the columns that will be included in the exported file.
+***
 
-### **Action Button**
+### 👤 Availability
 
-11. **Export Button**
-    * Initiates the export process based on the selected filters and customization.
+* **User Role**: Administrator only
+* **Module Location**: `Export → Tee Time Export`
+
+***
+
+### ⚙️ Main Sections & Field Explanations
+
+#### 📌 Supplier Dropdown
+
+* **Function**: Select a specific **golf supplier** or choose **All suppliers**.
+* **Use case**: Useful when generating reports for a single golf partner.
+
+***
+
+#### 📌 Report Type Dropdown
+
+* **Function**: Select the **format or version** of the report.
+* **Examples**: Excel report, PDF version, supplier-customized template.
+* **Note**: Templates are pre-configured based on supplier expectations.
+
+***
+
+#### 📌 More Filters Button
+
+* **Function**: Expands advanced filtering options for precise data selection.
+* **Use case**: When you need to narrow results by extras, categories, or specific dates.
+
+***
+
+### 🔍 Filtering Options
+
+| Filter                               | Description                                                                                 |
+| ------------------------------------ | ------------------------------------------------------------------------------------------- |
+| **Arrival Period (Start/End Dates)** | Filters bookings based on **check-in/stay** dates.                                          |
+| **Booking Period (Start/End Dates)** | Filters bookings created during this interval.                                              |
+| **Display All Extras**               | When checked, includes **all extra items or services** (e.g., golf cart, caddy, equipment). |
+| **Compress as ZIP**                  | When checked, exports the file as a compressed `.zip` archive.                              |
+
+***
+
+### 🛠️ Customization Options
+
+#### 📌 Categories Section
+
+* **Function**: Allows filtering by **specific extra categories**, such as:
+  * Tee times
+  * Transfer
+  * Udflugter
+
+***
+
+#### 📌 Extras Section
+
+* **Function**: Lets you include or exclude specific extras from the export.
+* **Use case**: Export only tee times **with or without** particular items.
+
+***
+
+#### 📌 Columns for Export Section
+
+* **Function**: Lets the user **customize the columns** that appear in the final export file.
+* **Use case**: Tailor the report to the recipient’s preferences or operational needs.
+* **How to use**: First click **"Select Columns"** to enable this customization.
+
+***
+
+### 🧮 Action Button
+
+| Button     | Description                                                                              |
+| ---------- | ---------------------------------------------------------------------------------------- |
+| **Export** | Initiates the export process using the selected filters, customization, and report type. |
+
+***
+
+### 🧠 Tips&#x20;
+
+* Always double-check the **supplier** and **date filters** to ensure data relevance.
+* Use **“Display All Extras”** to prevent missing tee-time-related extras.
+* For recurring supplier needs, confirm the preferred **report format** (e.g., PDF, Excel).
+* Use **ZIP compression** when sending large reports by email or uploading to portals.

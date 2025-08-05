@@ -1,61 +1,115 @@
 # Lists
 
-Available for the Administrator user role only.
+### ✅ Overview
 
-Can be found in **Export/Lists**
+The **Export/Lists module** in Tourpaq Office allows administrators to generate and schedule exports of booking-related data tailored to specific operational needs. The module supports multiple export types (hotel, passenger, rooming, guide, canceled bookings, and booking changes) and can be used **manually** or with **automated scheduling**.
 
-Used for generating different types of lists on the stop or setting schedules for the export of said lists.
+***
 
-### Fields and filters <a href="#fields-and-filters" id="fields-and-filters"></a>
+### 🎯 Purpose
 
-* Brands - select the desired brand
-* Report type - select the desired report type
-* Arrival date from/to - will include only bookings with arrival dates within the interval set
-* Bkg date from/to - will include only bookings with booking dates within the interval set
-* Stay date from/to - will include only bookings with stay dates within the interval set
-* Ccl. from - will include cancelled bookings from the selected date
-* Changes since - will include only bookings that have been changed from the selected date
-* Compress as ZIP - will make the generated file a ZIP one
-* Transport - will include only bookings made on selected transport/transports
-* Real transport - will include only bookings made on selected real transport/real transports
-* Country - will include only bookings made in selected country/countries
-* Resort - will include only bookings made in selected resort/resorts
-* Hotel - will include only bookings made in selected hotel/hotels
-* Room - will include only bookings made in selected room/rooms
-* Columns - only the selected columns will appear on the exported file (available only if the "Show columns" button is used)
+The purpose of this module is to:
 
-### Report type <a href="#report-type" id="report-type"></a>
+* Provide a centralized interface for generating structured booking reports.
+* Allow filtering of exports based on various parameters (dates, hotels, rooms, transports, etc.).
+* Enable scheduled automatic delivery of reports via email.
+* Facilitate communication with hotel partners, guides, airline staff, and internal departments.
 
-* Hotel list shows the booking placement in rooms grouped by hotel
-* Rooming list shows the passengers of a booking distribution in rooms grouped by hotel
-* Guide list passenger list that a guide needs for his activity (airport picking, transfer, hotel placement, etc.)
-* Passenger list passenger list that an airline company (or another transport company) needs to operate the flight/transport (catering, bagage products, special services, etc)
-* Ccl. Bookings List list of canceled bookings/pax valid for the given filters.
-* Departure Homebound
-* Changes List list of all booking changes that have occured during given date interval (pax cancelation/increase/name change, hotel change, resort change, room adding/removing, extras adding/removing, etc.)
-* Transfer List
-* Airport List
-* Fast Checking
-* Air List
-* Buslist
-* Labe list
+***
 
-### Scheduled Export <a href="#scheduled-export" id="scheduled-export"></a>
+### 👤 Access & Availability
 
-Create or edit a schedule using the fields and filters from above. A mail will be sent to
+* **Role required**: Administrator
+* **Location in UI**: `Export → Lists`
 
-**Fields**
+***
 
-* Enabled - when checked will begin sending the mail
-* Description - a description of the export used
-* Schedule type - once a day/Once a week/Once per month
-* Day - available only with the last 2 schedule types, select the day of the week/month the export is generated
-* Actions
+### ⚙️ Preconditions
 
-### Buttons <a href="#buttons" id="buttons"></a>
+Before using this module:
 
-* Export - generates a list on the spot
-* Show schedules - display the current schedules, allows for schedules to be created
-* Show columns - displays the **Columns** filter
+* User must be assigned the Administrator role.
+* Bookings and travel data should exist in the system.
+* Export templates and system settings should be preconfigured.
+* Email templates and recipients must be properly set for scheduled exports.
 
-<figure><img src="../.gitbook/assets/image (23) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+***
+
+### 🔍 Fields & Filters – Export Generation
+
+| Field               | Description                                                                                       |
+| ------------------- | ------------------------------------------------------------------------------------------------- |
+| **Brands**          | Select one or more brands (agencies) for which the export is generated.                           |
+| **Report type**     | Choose the export format (see Report Types below).                                                |
+| **Arrival period**  | Filters bookings based on **arrival at destination** date range.                                  |
+| **Booking period**  | Filters bookings based on **booking creation date**.                                              |
+| **Stay period**     | Filters bookings by actual **hotel stay period**.                                                 |
+|  Cancel **from**    | Limits **canceled bookings** to those canceled on or after the selected date.                     |
+| **Changes since**   | Filters bookings to show only those **changed** after the selected date. Used for “Changes List”. |
+| **Compress as ZIP** | When checked, the exported file will be compressed in `.zip` format.                              |
+| **Transport**       | Select one or more **transport options** (as defined in the booking).                             |
+| **Real transport**  | Filter by **real, physical transport services** (e.g., actual bus, flight identifiers).           |
+| **Country**         | Filter by one or more **destination countries**.                                                  |
+| **Resort**          | Select one or more **resorts** to include bookings from.                                          |
+| **Hotel**           | Filter by specific hotels.                                                                        |
+| **Room**            | Filter by room type or room codes.                                                                |
+| **Columns**         | If enabled via "Show columns", allows selection of specific fields to include in the export.      |
+
+***
+
+### 📄 Report Types Explained
+
+| Report Type             | Description                                                                                                                      |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| **Hotel list**          | Bookings grouped by hotel → stay period → room type. Shows room placement and booking totals.                                    |
+| **Rooming list**        | Like hotel list, but includes **individual passenger details** (name, age, gender, flight info, extras).                         |
+| **Guide list**          | Guide-friendly list with passenger contacts, extras, transfer info, comments, and hotel preferences.                             |
+| **Passenger list**      | Flat list of all passengers grouped by **transport interval**, used by airlines or transport providers.                          |
+| **Ccl. Bookings List**  | List of canceled bookings matching filter criteria, grouped by hotel, stay, and room type.                                       |
+| **Departure Homebound** | Typically used to list passengers returning from holidays.                                                                       |
+| **Changes List**        | Tracks all booking changes (e.g., passenger name change, hotel/resort/room changes, extras added/removed) after a selected date. |
+| **Transfer List**       | Shows which bookings/passengers have included transport transfers.                                                               |
+| **Airport List**        | Export focused on flight/airport-related logistics.                                                                              |
+| **Fast Checking**       | Likely used for rapid identity or room allocation validation (company-specific).                                                 |
+| **Air List**            | Export for airline use, possibly for check-in or manifest purposes.                                                              |
+| **Bus List**            | Export of passengers grouped by bus transport for logistics.                                                                     |
+| **Label List**          | Generates label data for baggage, room doors, or luggage tags.                                                                   |
+
+***
+
+### 🗓️ Scheduled Export
+
+You can **automate exports** by setting up schedules.
+
+<figure><img src="../.gitbook/assets/image (23) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+#### 📌 Fields
+
+| Field             | Description                                                                            |
+| ----------------- | -------------------------------------------------------------------------------------- |
+| **Enabled**       | When checked, the export schedule becomes active and will begin sending automatically. |
+| **Description**   | Textual description of the purpose or content of the export.                           |
+| **Schedule type** | Choose the recurrence:                                                                 |
+|                   | → Once per day                                                                         |
+|                   | → Once per week                                                                        |
+|                   | → Once per month                                                                       |
+| **Day**           |                                                                                        |
+|                   | → If **weekly**, choose day of the week (e.g., Monday).                                |
+|                   | → If **monthly**, choose a specific day (e.g., 15th).                                  |
+
+#### 📤 Behavior
+
+* Email is automatically sent to preconfigured recipients.
+* Uses same filters and report settings as the on-demand export.
+* File format is the same (`Excel XML`), and can be compressed as ZIP.
+
+***
+
+### 🧰 UI Buttons / Actions
+
+| Button             | Action                                                                                  |
+| ------------------ | --------------------------------------------------------------------------------------- |
+| **Export**         | Immediately generates an export file based on current filter and sends or downloads it. |
+| **Show schedules** | Displays existing scheduled exports and allows editing or creating new ones.            |
+| **Show columns**   | Reveals the optional column selector to customize which fields appear in the export.    |
+

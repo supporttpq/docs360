@@ -30,7 +30,7 @@ Generates a list which will contain (for homebounds and outbouns):
 * bold value- if buses are confirmed/confirmation is checked
 * underlined value- if all pax are seated/if there are still pax booked on a given flight/resort transfer
 
-<figure><img src=".gitbook/assets/ftr10-e5d703ed162ac3696181e4d9df53d415 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (224).png" alt=""><figcaption></figcaption></figure>
 
 Filters:
 
@@ -59,7 +59,7 @@ Is a list of all transfers serving an airport, their load capacity and route pla
 * Passengers without transfer
 * Total number of passengers
 
-![!](https://docs.tourpaq.com/assets/images/ftr11-eea478144ae8f0ff57404bbbac9a590a.png)
+<figure><img src=".gitbook/assets/image (225).png" alt=""><figcaption></figcaption></figure>
 
 #### **Part 2 contains**:
 
@@ -114,7 +114,7 @@ Generates a list that contains information about the transfers of a transfer ope
 * home information - passengers number, flight number, flight time
 * transfer operator details - driver name, guide name
 
-![!](https://docs.tourpaq.com/assets/images/ftr14-0fe94cc2ea1748ec3158d6ecd67d3cf5.png)
+<figure><img src=".gitbook/assets/image (226).png" alt=""><figcaption></figcaption></figure>
 
 Filters:
 
@@ -137,7 +137,7 @@ The list can be exported in PDF or Excel version and contains information about:
 * airports
 * stops
 
-![!](https://docs.tourpaq.com/assets/images/ftr15-4421be07b9a0772e61f649afc9f25e34.png)
+<figure><img src=".gitbook/assets/image (227).png" alt=""><figcaption></figcaption></figure>
 
 Filters:
 
@@ -160,7 +160,7 @@ Details:
 * Number of passengers
 * Stops and bookings assigned to it
 
-![!](https://docs.tourpaq.com/assets/images/ftr16-6bc362d0f365f31fa85e0033aa724293.png)
+<figure><img src=".gitbook/assets/image (228).png" alt=""><figcaption></figcaption></figure>
 
 Filters:
 
@@ -182,7 +182,7 @@ A list detailing all passengers by bus that can be exported as a pdf or excel fi
 * Resort of the passenger
 * Hotel of the passenger
 
-![!](https://docs.tourpaq.com/assets/images/ftr17-2beca1b4cdb5b2eab22f6a9e365b53c8.png)
+<figure><img src=".gitbook/assets/image (229).png" alt=""><figcaption></figcaption></figure>
 
 Filters:
 

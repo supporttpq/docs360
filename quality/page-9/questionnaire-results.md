@@ -2,17 +2,17 @@
 
 The dashboard presents **survey results from passengers** on different aspects of their journey. The **ratings (1-5 scale)** show overall satisfaction levels for **airport experience, in-flight service, food, and hotel quality**. The filters help customize the view based on **departure and booking dates**.
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Key Sections of the Dashboard:**
 
 1. **Filters & Selection Options:**
-   * **Name:** The survey name (_Primo Tours - Spørgeskema_).
-   * **Departure Period:** A date range selection (01-01-2025 to 31-12-2025).
+   * **Name:** The survey name.
+   * **Departure Period:** A date range selection .
    * **Booking Period:** Another optional filter for booking dates.
    * **More Filters:** Allows for additional filtering options.
 2. **Passenger Completion:**
-   * A bar chart showing **total survey responses (387)**.
+   * A bar chart showing **total survey responses**.
    * **PAX % (Passenger percentage)** is also represented but is much smaller compared to responses.
 3. **Survey Questions & Results:**
    * Various aspects of the flight and accommodation experience are rated.
@@ -29,6 +29,6 @@ The dashboard presents **survey results from passengers** on different aspects o
 
     * A **"Dashboard" button** is present to navigate to another view.
 
-    <figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     * A **"Display" button** allows changes in data visualization.

@@ -1,13 +1,36 @@
 # Notification
 
-Notifications for service cases have the role to let the user know when something new happens on a service case.
+<figure><img src="../.gitbook/assets/image (235).png" alt=""><figcaption></figcaption></figure>
 
-There is a dedicated icon for the service case notifications, in the upper part of the page, right next to the brand selection.
+### ✅Overview
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Service case notifications are designed to keep users informed about new activity on service cases, especially when a customer sends a new email. These alerts ensure timely responses and help users efficiently manage ongoing communication.
 
-All service cases that receive a new email from the customer, are marked with a star in the overview, and those will be counted and displayed in the counter icon for notifications.
+### 🧭Purpose
 
-When pressing the notification icon, the overview page will be displayed having “Awaiting office response” filter set, so only the service cases with a new email from customer are shown in the results list.
+The notification system ensures that:
 
-The notifications are updated every 30 minutes, so if the user is working on something else, he will be notified every half an hour if there is something new on a service case.
+* Users are promptly informed when customer input is received.
+* Service cases requiring attention are easy to identify.
+* Office response times are improved through efficient task prioritization.
+
+### 🔔Notification Icon
+
+* A **dedicated notification icon** is located at the **top of the page**, next to the brand selection dropdown.
+* This icon visually signals when new customer emails have been received on any service case.
+
+### 📩Notification Behavior
+
+* **New Emails Marked**: When a customer replies to an existing service case, that case is **marked with a star** in the overview list.
+* **Notification Counter**: These marked cases are **counted and shown** on the notification icon as a badge.
+
+### 🔎User Interaction
+
+* When the user clicks the notification icon:
+  * They are redirected to the **Service Case Overview** page.
+  * The view is automatically filtered with **"Awaiting Office Response"**, so only cases with new customer replies are shown.
+
+### ⏱Refresh Interval
+
+* Notifications are **refreshed every 30 minutes**.
+* This means that users are notified at regular intervals even if they are working elsewhere in the system.

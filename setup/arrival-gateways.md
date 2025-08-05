@@ -4,7 +4,7 @@
 
 The **Arrival Gateways** interface provides a structured list of airport gateways, allowing users to manage and categorize various arrival destinations. The interface includes filtering, searching, and management functionalities.
 
-<figure><img src="../.gitbook/assets/image (19) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Features
 

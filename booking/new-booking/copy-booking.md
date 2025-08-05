@@ -1,16 +1,33 @@
 # Copy Booking
 
-To use this function, you need to follow the next steps:
+The **Copy Booking** feature allows you to quickly duplicate passenger details from an existing booking into a new one — saving time and reducing manual input errors.
 
-* Create a new booking as usual
-* Insert the number of passengers&#x20;
-* Select transport&#x20;
-* Select the hotel&#x20;
-* Before pressing the Take Allotment button, insert the booking number from which you want to copy the passengers.&#x20;
-* Click on Take Allotment. An info message appears and asks you if you are sure you wish to copy the passengers.&#x20;
+***
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+### **Steps to Use the Copy Booking Feature**
 
-* Click OK The passenger has copied successfully.&#x20;
-* Continue the booking process, by clicking on save passengers&#x20;
-* Click on Save the booking.
+1. **Start a new booking** from the **Booking menu**.
+2. **Insert the number of passengers** for the new booking.
+3. **Select the transport** option.
+4. **Select the hotel**.
+5. **Before clicking** the **Take Allotment** button, locate the field to **insert the booking number** you wish to copy passengers from.
+6. Enter the **booking number** of the original booking.
+
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+### **Copying Process**
+
+* Click **Take Allotment**.
+*   An **info message** will appear asking:
+
+    > _"Are you sure you want to copy the passengers?"_
+* Click **OK** to confirm.
+
+The passengers from the original booking are now copied into your new booking.
+
+***
+
+### **Final Steps**
+
+7. Click **Save Passengers** to confirm and store the copied data.
+8. Click **Save Booking** to complete the process.

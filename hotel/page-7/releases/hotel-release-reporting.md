@@ -19,7 +19,7 @@ In order to configure the reporting for one hotel, you should complete the follo
 
 #### How to add a Daily release scheduler? <a href="#how-to-add-a-daily-release-scheduler" id="how-to-add-a-daily-release-scheduler"></a>
 
-<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Supposedly the service is running this scheduler for the first time on 24.03.2025, and from this point on the scheduler will run every day.
 
@@ -27,19 +27,19 @@ In this case the service is making release in interval 24.03.2025 to 31.03.2025 
 
 #### How to add a Weekly release scheduler? <a href="#how-to-add-a-weekly-release-scheduler" id="how-to-add-a-weekly-release-scheduler"></a>
 
-<figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The scheduler is run every week on a specific day of the week.
 
 #### How to add a Monthly release scheduler? <a href="#how-to-add-a-monthly-release-scheduler" id="how-to-add-a-monthly-release-scheduler"></a>
 
-<figure><img src="../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The scheduler is run every month on a specific day of the month.
 
 #### How to add a Annually release scheduler? <a href="#how-to-add-a-annually-release-scheduler" id="how-to-add-a-annually-release-scheduler"></a>
 
-<figure><img src="../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In case of annually, the scheduler will run once a year for the entire start-end period.
 
