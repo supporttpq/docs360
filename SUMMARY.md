@@ -103,6 +103,7 @@
 
 * [Payment Registration](finance/page-5.md)
 * [Payment File Import](finance/payment-file-import.md)
+* [Refund File Import](finance/refund-file-import.md)
 * [Method of Payment](finance/method-of-payment.md)
 
 ***
