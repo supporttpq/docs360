@@ -115,3 +115,8 @@ At the bottom or side of the section, you will find **links/buttons** for proces
 * Use the **update history** to trace who made changes in case of issues.
 
 <figure><img src="https://sonat.com/api/Document/Image/19670ef0-8b8a-4cda-8eb6-249681e07016/60a72aeb-a272-4428-a118-b6074b1b35b5/055f9e6a-1e8f-4b00-a685-f03c27defc33.webp?width=1864" alt="" width="900"><figcaption></figcaption></figure>
+
+### Other Fields
+
+* Web Booking - redirect to the web booking page
+* Save - save the information in the Economics tab
