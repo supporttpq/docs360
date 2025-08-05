@@ -32,6 +32,7 @@
   * [Hotel Room](booking/new-booking/hotel-room.md)
   * [Transport Seating](booking/new-booking/transport-seating.md)
   * [Tee Times](booking/new-booking/tee-times.md)
+  * [Extra Orders](booking/new-booking/extra-orders.md)
   * [Conversation](booking/new-booking/conversation.md)
   * [Don't sent ticket option](booking/new-booking/dont-sent-ticket-option.md)
   * [Coded discount booking](booking/new-booking/coded-discount-booking.md)
