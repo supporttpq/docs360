@@ -1,22 +1,43 @@
-# Export
+# Export - Scheduled Reports
 
-Applies for Administrator and Financial
+#### Overview
 
-<figure><img src=".gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+The **Export** interface is used to generate and schedule automated export jobs for booking data, based on time filters and format preferences. This allows tour operators and system users to generate regular data exports without manual intervention.
 
-This function allows the exporting of detailed information regarding bookings from the system (information contained is listed below), using the following filters:
+***
 
-* Brand - Select the brand for which you want to export booking and departure data.
-* Booking start date - The beginning date of the booking period to include in the export.
-* Booking end date - The ending date of the booking period to include in the export.
-* Departure start date - The starting date of the departure range to be included in the export.
-* Departure end date - The ending date of the departure range to be included in the export.
-* Export for Mac OS - export finance data to CSV (for Excel, Numbers, or Accounting Software)
-* Compress as ZIP - Packages the exported file(s) into a compressed ZIP archive for easier downloading and sharing.
-* Include Cancelled Bookings and Details - the export will contain the cancelled booking.&#x20;
-* Include Moved Bookings and Details - the export will contain the moved booking.
-* Export Lite Version - Exports a simplified version of the data, with essential fields only—ideal for quick reviews or summaries.
-* Export Generic Discounts - Includes generic discount information applied to bookings in the exported data.
+#### Purpose
+
+To streamline the **periodic export** of booking data filtered by date and customized via user preferences, helping with operational tracking, reporting, and system integration (e.g., accounting, BI, auditing).
+
+***
+
+<figure><img src=".gitbook/assets/image (310).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+#### Preconditions
+
+* The user must have export permissions.
+* At least one booking must exist in the system for the given filters.
+* Schedules can only be created by users with administrative or reporting roles.
+
+#### Filters and Options
+
+**Date Range Filters**
+
+* **Booking start / Booking end** – Filter based on when the booking was created.
+* **Departure start / Departure end** – Filter based on travel dates.
+* **More Filters** – Additional filters may be available (e.g., destination, supplier, sales channel).
+
+**Export Options**
+
+* **Export for Mac OS** – Ensures file formatting compatibility with Mac systems.
+* **Compress as ZIP** – Delivers output as a `.zip` file.
+* **Include Cancelled Bookings and Details** – Adds bookings with status canceled.
+* **Include Moved Bookings and Details** – Adds rebooked bookings.
+* **Export Lite Version** – Strips out extended info for a simpler export.
+* **Export Generic Discounts** – Includes promotional or cross-product discounts.
 
 The data will contain information regarding each booking that corresponds to the given filters:
 
@@ -86,3 +107,43 @@ The data will contain information regarding each booking that corresponds to the
 * **Insurance cost -** Total cost of all types of insurance (travel, cancellation, etc.).
 * **Discounts/Supplements cost -** Total value of discounts and supplements applied.
 * **Hotel cost -** Total cost paid for the hotel accommodation.
+
+### Schedule Export
+
+In the Financial Export Schedule in Finance/ Export a schedule can be saved with a specific filter.&#x20;
+
+#### Export Scheduling Options
+
+<figure><img src=".gitbook/assets/image (311).png" alt=""><figcaption></figcaption></figure>
+
+Using the three buttons located next to the **Export** button, you can:
+
+* **View** all previously scheduled exports
+* **Create** new export schedules based on selected filters
+
+#### Schedules Table
+
+| Column            | Description                                                                                                                                                                      |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Enabled**       | Toggle to activate or deactivate an export schedule. Schedules not used in 7 days are automatically disabled! For a schedule to be considered used click on "Get Latest Result!" |
+| **Description**   | Name of the export schedule (customizable).                                                                                                                                      |
+| **Schedule Type** | Frequency of export (e.g., _Once a day_, _Once a week_).                                                                                                                         |
+| **Day**           | For weekly exports, allows selection of day (e.g., Monday, Tuesday).                                                                                                             |
+
+🔘 **Create** – Adds a new schedule.\
+🗑️ **Trash Icon** – Deletes the schedule.\
+📄 **File Icon** – Get Lates Result and download the export
+
+***
+
+#### Export Button (Top Right)
+
+Initiates a **manual export** using the current filters and options selected, independent of the schedule.
+
+***
+
+#### Notes
+
+* Each schedule can run independently based on its frequency and enabled status.
+* Scheduled exports are genarated via filters used and needs to be downloaded  by pushing the button Get Lates Results
+* Use descriptive names for schedules to avoid confusion (e.g., “Weekly Cancellations Export”).

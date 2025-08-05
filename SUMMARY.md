@@ -108,7 +108,7 @@
 ***
 
 * [Balance Administration](balance-administration.md)
-* [Export](export.md)
+* [Export - Scheduled Reports](export.md)
 * [Invoice](invoice.md)
 * [Gift Card Payments](gift-card-payments.md)
 * [Daily Export file](daily-export-file.md)
