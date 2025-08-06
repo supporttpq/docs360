@@ -2,7 +2,7 @@
 
 Brand creation can be made only by a Superadmin, accessing the Companies menu, clicking on the company, and adding Agency.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Insert the name of the new agency, phone number of the agency, email address, address, and select the template (WebBooking & Web / WebBooking). After that click on Save
 
