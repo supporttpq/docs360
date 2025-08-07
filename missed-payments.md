@@ -2,7 +2,7 @@
 
 ### **Overview**
 
-<figure><img src=".gitbook/assets/image (26) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 The **Missed Payment Page** contains information about payments that were not successfully processed or recorded.
 
@@ -24,7 +24,7 @@ The **Missed Payment Page** contains information about payments that were not su
 * **TRANSACTION CODE:** A unique code for the transaction.
 * **STATUS CODE:** Indicates the current status of the payment. The example shows "Capture Completed", which implies the payment was initially authorized but might have failed during the final capture stage.
 * **PAYMENT STATUS:** Provides a more descriptive status, which is "Capture Completed" in the example, mirroring the status code.
-* **AGENCY:** The agency associated with the payment, "Primo Tours" in this case.
+* **AGENCY:** The agency associated with the payment
 * **CUSTOMER:** The customer is involved in the payment.
 * **BOOKING#:** A booking or reference number.
 * **PAYMENT DATE:** The date the payment was attempted.

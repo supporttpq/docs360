@@ -72,7 +72,7 @@ These configurations ensure proper cost calculation and promotional accuracy for
 
 ***
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 #### **Instructions**
 
@@ -91,29 +91,29 @@ These configurations ensure proper cost calculation and promotional accuracy for
 
 #### **Grid Fields**
 
-| **Field**               | **Description**                                                                                                                                        |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Arrival Start / End** | Defines the arrival date range for which the early booking discount is valid.                                                                          |
-| **Booking Start / End** | Specifies when the booking must be made for the discount to apply.                                                                                     |
-| **Room**                | Allows selection of one or multiple room types.                                                                                                        |
-| **Board**               | Select the board type (e.g., Bed & Breakfast, Half Board, etc.) the discount applies to.                                                               |
-| **Price**               | The specific price code or rate this rule applies to.                                                                                                  |
-| **BDNBA**               | Booking Days No Before Arrival.                                                                                                                        |
-| **IS %**                | Checkbox indicating if the discount is a percentage.                                                                                                   |
-| **PR**                  | Checkbox for "Per Room" discount.                                                                                                                      |
-| **S\&P**                | Checkbox for "Stay & Pay" rules (e.g., Stay 7 Pay 6).                                                                                                  |
-| **BC**                  | Apply on Extra Bed Cost                                                                                                                                |
-| **BB**                  | Apply on Board basis                                                                                                                                   |
-| **Days of the Week**    | Select days of the week the discount is valid.                                                           ![](<../../../.gitbook/assets/image (1).png>) |
-| **Min Days**            | Minimum number of days in advance the booking must be made to qualify for the discount.                                                                |
-| **Deposit Date**        | The cutoff date for the deposit to be paid to validate the discount.                                                                                   |
-| **DDNBA**               | Deposit days no before arrival                                                                                                                         |
-| **OB**                  | Checkbox indicating if the rule applies to "On Booking"  - Deposit on Booking Final save                                                               |
-| **Deposit %**           | Discount percentage that applies for the deposit payment.                                                                                              |
-| **Send List Date**      | Date when the rate list or contract was sent, used for administrative tracking.                                                                        |
-| **SLDNBA**              | Send list days number before arrival                                                                                                                   |
-| **EBP Discount**        | Customer Early Booking Discount                                                                                                                        |
-| **Contract**            | Displays the selected contract ID or name that the rule belongs to.                                                                                    |
+| **Field**               | **Description**                                                                                                                                            |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Arrival Start / End** | Defines the arrival date range for which the early booking discount is valid.                                                                              |
+| **Booking Start / End** | Specifies when the booking must be made for the discount to apply.                                                                                         |
+| **Room**                | Allows selection of one or multiple room types.                                                                                                            |
+| **Board**               | Select the board type (e.g., Bed & Breakfast, Half Board, etc.) the discount applies to.                                                                   |
+| **Price**               | The specific price code or rate this rule applies to.                                                                                                      |
+| **BDNBA**               | Booking Days No Before Arrival.                                                                                                                            |
+| **IS %**                | Checkbox indicating if the discount is a percentage.                                                                                                       |
+| **PR**                  | Checkbox for "Per Room" discount.                                                                                                                          |
+| **S\&P**                | Checkbox for "Stay & Pay" rules (e.g., Stay 7 Pay 6).                                                                                                      |
+| **BC**                  | Apply on Extra Bed Cost                                                                                                                                    |
+| **BB**                  | Apply on Board basis                                                                                                                                       |
+| **Days of the Week**    | Select days of the week the discount is valid.                                                           ![](<../../../.gitbook/assets/image (1) (1).png>) |
+| **Min Days**            | Minimum number of days in advance the booking must be made to qualify for the discount.                                                                    |
+| **Deposit Date**        | The cutoff date for the deposit to be paid to validate the discount.                                                                                       |
+| **DDNBA**               | Deposit days no before arrival                                                                                                                             |
+| **OB**                  | Checkbox indicating if the rule applies to "On Booking"  - Deposit on Booking Final save                                                                   |
+| **Deposit %**           | Discount percentage that applies for the deposit payment.                                                                                                  |
+| **Send List Date**      | Date when the rate list or contract was sent, used for administrative tracking.                                                                            |
+| **SLDNBA**              | Send list days number before arrival                                                                                                                       |
+| **EBP Discount**        | Customer Early Booking Discount                                                                                                                            |
+| **Contract**            | Displays the selected contract ID or name that the rule belongs to.                                                                                        |
 
 There are two rules that apply. They cannot be applied at the same time and are governed by the **IS PERCENT** check box:
 
@@ -164,7 +164,7 @@ The purpose of this interface is to:
 
 ***
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Instructions**
 

@@ -37,21 +37,21 @@ All the bookings for which money should be returned to the customer will be disp
 
 #### **Table Fields Explained**
 
-| Field               | Description                                                                                                                                       |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Booking No**      | Unique identifier for a booking. Clickable link for detailed booking view.                                                                        |
-| **Seller**          | Identifier for the agency, travel operator, or partner responsible for the booking.                                                               |
-| **Creation Date**   | The date the booking was first registered in the system.                                                                                          |
-| **Departure Date**  | The scheduled start date of the trip or service.                                                                                                  |
-| **Customer**        | The name or anonymized identifier of the customer linked to the booking.                                                                          |
-| **Booking Total**   | The original total amount expected for the booking.                                                                                               |
-| **Paid Amount**     | The actual amount received from the customer. May exceed the booking total.                                                                       |
-| **Balance**         | The calculated discrepancy: `Paid Amount - Booking Total`. A negative value indicates overpayment.                                                |
-| **Release Payment** | Indicates whether the overpaid amount is approved for refund or manual adjustment. Status is visualized with a red icon (pending or unprocessed). |
-| **Financed**        | May denote if the balance was covered by financing or external source (currently blank).                                                          |
-| **Comments**        | Manual notes or system-generated explanations, often anonymized for data privacy.                                                                 |
-| **Branch**          | (Optional) Internal branch code or identifier (some rows include values).                                                                         |
-| **Account**         | (Optional) May refer to the financial ledger account to which this balance belongs (only used on some records).                                   |
+| Field               | Description                                                                                                              |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| **Booking No**      | Unique identifier for a booking. Clickable link for detailed booking view.                                               |
+| **Seller**          | Identifier for the agency, travel operator, or partner responsible for the booking.                                      |
+| **Creation Date**   | The date the booking was first registered in the system.                                                                 |
+| **Departure Date**  | The scheduled start date of the trip or service.                                                                         |
+| **Customer**        | The name or anonymized identifier of the customer linked to the booking.                                                 |
+| **Booking Total**   | The original total amount expected for the booking.                                                                      |
+| **Paid Amount**     | The actual amount received from the customer. May exceed the booking total.                                              |
+| **Balance**         | The calculated discrepancy: `Paid Amount - Booking Total`. A negative value indicates overpayment.                       |
+| **Release Payment** | Indicates whether the overpaid amount is approved for refund or manual adjustment. Status is visualized with a red icon  |
+| **Financed**        | May denote if the balance was covered by financing or external source.                                                   |
+| **Comments**        | Manual notes or system-generated explanations, often anonymized for data privacy.                                        |
+| **Branch**          |  Internal branch code or identifier                                                                                      |
+| **Account**         | May refer to the financial ledger account to which this balance belongs                                                  |
 
 ### **Unpaid bookings**&#x20;
 
@@ -60,13 +60,15 @@ All the bookings for which money should be returned to the customer will be disp
 Here should appear all the bookings that haven’t been paid until today. It should be possible to filter the data by departure dates and payment due dates. The following is an extract of the information that could be displayed:
 
 * Booking number
-* Seller
-* Payment due date
-* Departure date
-* Booking customer name
-* Booking total
-* Paid amount
-* Balance
+* Seller - Seller ID
+* D.Due.Date - Departure due date
+* SP.Due Date - Second payment due date&#x20;
+* RP due Date - Rest payment due date
+* Departure date - Day of the departure
+* Customer - Booking customer name
+* Booking total - Total sum of the booking
+* Paid amount - The amount that was paid
+* Balance - How was remeain to be paid
 * Due amount It should be possible to sort the data from all 3 submodules by agency and seller.
 
 ### **GDS payments**

@@ -8,15 +8,15 @@ description: Invoice listing
 
 The **Invoice Listing Dashboard** provides a comprehensive interface for managing, tracking, and processing invoices within a financial or accounting system. It displays a table of all invoices filtered by the selected date range, offering options to view, download, and take action on each invoice.
 
-<figure><img src=".gitbook/assets/image (9) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ### Filters and Controls
 
 Users can filter the displayed invoices based on various parameters:
 
 * **Date Range**:
-  * **From date**: Starting point for invoice listing (e.g., 01-01-2025).
-  * **To date**: Ending point for invoice listing (e.g., 15-04-2025).
+  * **From date**: Starting point for invoice listing (e.g., 01-04-2025).
+  * **To date**: Ending point for invoice listing (e.g., 07-08-2025).
 * **Invoice Number**: Search by invoice number.
 * **Status**: Filter invoices by their processing status (e.g., pending, approved, or rejected).
 * **Archive Status**: Filter between archived and not archived invoices.
