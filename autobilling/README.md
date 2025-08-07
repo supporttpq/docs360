@@ -1,22 +1,45 @@
 # Autobilling
 
-Autobilling feature enables Tourpaq to generate invoices on behalf of creditors/suppliers.&#x20;
+The **Autobilling** feature allows Tourpaq to automatically generate invoices on behalf of creditors and suppliers. This automation is based on predefined schedules and cost data registered in the system, streamlining the invoicing process and reducing manual work.
 
-Invoice generation is done automatically based on a schedule defined for the hotels, extras, discounts, supplements, and handling and using the costs registered in the system. The system can generate the following invoice types:
+#### **Automated Invoice Generation**
 
-* Hotel deposit invoice,&#x20;
-* Hotel early booking invoice,&#x20;
-* Hotel invoice,&#x20;
-* Extra invoice,&#x20;
-* Extra early booking invoice,&#x20;
-* Transfer invoice,&#x20;
-* Discount/Supplement invoice,&#x20;
-* Handling invoice.&#x20;
+Tourpaq generates invoices for the following components:
 
-Creditors will receive an email with the proposed invoice and, by accessing a link in the email, can accept or reject this invoice.&#x20;
+* **Hotel Deposit Invoice**
+* **Hotel Early Booking Invoice**
+* **Hotel Invoice**
+* **Extra Invoice**
+* **Extra Early Booking Invoice**
+* **Transfer Invoice**
+* **Discount/Supplement Invoice**
+* **Handling Invoice**
 
-Also, the invoice that are generated are shown on Finance menu/Invoice
+These invoices are generated based on configured billing schedules and use the cost values stored in the system for each relevant item (e.g., hotels, extras, supplements).
 
-You have the invoice number, type of the invoice, invoice name, creditor name, internal comment, amount, approved due date, and option to download the invoice. The invoice will look like this.&#x20;
+***
 
-We also have the option to download the accounting system export file, which will look like this.
+#### **Invoice Approval Workflow**
+
+Once an invoice is generated:
+
+1. The **creditor/supplier** receives an **email** with a link to review the proposed invoice.
+2. By accessing the link, the creditor can **approve or reject** the invoice directly.
+3. This interaction ensures that both parties have a clear and auditable trail for the invoicing process.
+
+***
+
+#### **Viewing Generated Invoices**
+
+All generated invoices are available under the **Finance > Invoice** menu in Tourpaq.
+
+For each invoice, the following information is displayed:
+
+* **Invoice Number**
+* **Invoice Type**
+* **Invoice Name**
+* **Creditor Name**
+* **Internal Comment**
+* **Amount**
+* **Approved Due Date**
+* **Download Option** (PDF format)
