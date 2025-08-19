@@ -1,8 +1,8 @@
-# Individual per transport direction - Ticket
+# Out / Home - Ticket
 
 ### **Overview**
 
-This page focuses on verifying how **individual transport extras** are displayed in printed tickets generated from both the **backoffice booking system** and the **WebBooking customer center**. It ensures that selected extras are presented correctly, split by **direction** (outbound/homebound), with accurate pricing and explanatory notes.
+This page focuses on verifying how **individual transport extras** are displayed in printed tickets generated from both the **back-office booking system** and the **Web Booking customer center**. It ensures that selected extras are presented correctly, split by **direction** (outbound/homebound), with accurate pricing and explanatory notes.
 
 ### **Purpose**
 
@@ -69,7 +69,7 @@ Whether the ticket is printed from the **internal booking page** or from the **W
 
 Web Booking flow
 
-* Go to WB customer center
+* Go to Web Booking customer center
 * Click on "Print ticket"
 
 <figure><img src="../../.gitbook/assets/image (324).png" alt=""><figcaption></figcaption></figure>

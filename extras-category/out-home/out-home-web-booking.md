@@ -1,10 +1,10 @@
-# Individual per transport direction Web Booking
+# Out/Home - Web Booking
 
 ## **Web Booking - Do Booking**
 
 #### **Overview**
 
-This page explains how to test the behaviour of the **Individual Transport Extra Category** in the **Web Booking** flow of our travel booking system.&#x20;
+This page explains how to test the behavior of the **Individual Transport Extra Category** in the **Web Booking** flow of our travel booking system.&#x20;
 
 #### **Purpose**
 
@@ -26,7 +26,7 @@ This ensures a smooth and intuitive experience for users selecting transport opt
 
 ### Using Transport Extras in Web Booking (WB)
 
-Transport-related extras can be configured **individually per direction** (outbound and homebound). This ensures that travellers can select and pay only for the services relevant to each part of their journey.
+Transport-related extras can be configured **individually per direction** (outbound and homebound). This ensures that travelers can select and pay only for the services relevant to each part of their journey.
 
 ***
 
@@ -40,7 +40,7 @@ Before using this functionality, make sure:
 
 ***
 
-## Behaviour in Do Booking (Web Booking)
+## Behavior in Do Booking (Web Booking)
 
 When a customer makes a booking through the Web Booking, extras behave as follows:
 
@@ -60,7 +60,7 @@ After the extras are selected and the booking process is completed:
 
 * The **Thank You for Booking** confirmation page displays the selected extras.
 * Outbound and homebound selections are clearly separated.
-* Totals are calculated correctly, ensuring both the traveller and the agent have full visibility of the chosen extras.
+* Totals are calculated correctly, ensuring both the traveler and the agent have full visibility of the chosen extras.
 
 <figure><img src="../../.gitbook/assets/image (312).png" alt=""><figcaption></figcaption></figure>
 
