@@ -1,6 +1,6 @@
 # Individual per transport direction Web Booking
 
-### **WB - Do Booking**
+## **WB - Do Booking**
 
 #### **Overview**
 
@@ -24,24 +24,47 @@ This ensures a smooth and intuitive experience for users selecting transport opt
 
 ***
 
-#### &#x20;**Steps & Field Descriptions**
+### Using Transport Extras in WebBooking (WB)
 
-<table data-header-hidden><thead><tr><th width="84.5555419921875"></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Step</strong></td><td><strong>Action</strong></td><td><strong>Expected Result</strong></td></tr><tr><td>1</td><td><strong>Go to DooBooking page</strong> from a price list or presentation site, and <strong>complete the passenger data</strong> (e.g. name, age, contact info).</td><td>The DooBooking page for the <strong>first step</strong> of the WB (web booking) process is displayed.</td></tr><tr><td>2</td><td>Proceed to <strong>second step (TILLAEG)</strong> where extras are selected.</td><td>All <strong>extra categories</strong> available for the current booking are displayed.</td></tr><tr><td>3</td><td>Locate and check the <strong>extra category for individual transport</strong>.</td><td>Each <strong>passenger</strong> will have <strong>two columns</strong> under this category:<br>- One for <strong>outbound</strong> direction<br>- One for <strong>homebound</strong> direction<br>Only the extras available for the relevant direction will appear under each.</td></tr><tr><td>4</td><td><strong>Select transport extras</strong> for one or more passengers, only in the direction(s) needed.</td><td>The selected extras are correctly <strong>saved</strong> for the corresponding passenger(s) and direction(s).</td></tr><tr><td>5</td><td>In case there are <strong>no products configured</strong> for a direction (e.g., no outbound transport available), or the extra is <strong>not eligible</strong> (due to passenger type, date, etc.):</td><td>The <strong>extra category for that direction will not be shown</strong> at all in the interface.</td></tr><tr><td>6</td><td><strong>Finish the booking</strong> and reach the <strong>ThankYouForBooking</strong> page.</td><td>The <strong>summary</strong> correctly shows the selected extras per passenger and direction. Totals are accurately calculated and displayed.</td></tr></tbody></table>
-
-<figure><img src="../../../.gitbook/assets/image (312).png" alt=""><figcaption></figcaption></figure>
+Transport-related extras can be configured **individually per direction** (outbound and homebound). This ensures that travelers can select and pay only for the services relevant to each part of their journey.
 
 ***
 
-#### **Field Explanation**
+### Prerequisites
 
-| **Field**                             | **Description**                                                                                                            |
-| ------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| **Passenger Data**                    | Information such as name, age, and other details required to initiate the booking.                                         |
-| **TILLAEG Step**                      | The step in the booking flow where all optional **extras** (such as transport, insurance, etc.) can be added.              |
-| **Individual Transport Extra**        | An optional service allowing transport to be added per passenger for outbound and/or homebound direction.                  |
-| **Outbound / Homebound Columns**      | Visual representation per passenger to manage extras independently for each direction.                                     |
-| **Eligibility**                       | System logic determines whether an extra is visible/applicable based on availability, configuration, or passenger details. |
-| **Summary Page (ThankYouForBooking)** | Final confirmation screen displaying selected extras and calculated total costs for verification.                          |
+Before using this functionality, make sure:
+
+* The **extra category** and corresponding **extra items** are properly defined&#x20;
+* The extra is correctly configured to be available on bookings (brand, resources, prices, and availability are set).
+* A booking has been created with extras defined for **both outbound and homebound directions**&#x20;
+
+***
+
+## Behavior in DooBooking (WB)
+
+When a customer makes a booking through the WebBooking (WB) center, extras behave as follows:
+
+* On the **Extras (TILLAEG)** step, all available extra categories for the booking are displayed.
+* For categories linked to **individual transport directions**, each passenger sees **two separate columns**:
+  * One for **outbound** extras
+  * One for **homebound** extras
+* Only the extras that are **eligible for the corresponding direction** are shown.
+* Customers can select extras per passenger and per direction. Once selected, the extras are **saved correctly** to the booking.
+* If no products are available on one direction, or no extras are eligible, the category for that direction will simply **not be displayed**.
+
+***
+
+### Booking Completion
+
+After the extras are selected and the booking process is completed:
+
+* The **Thank You for Booking** confirmation page displays the selected extras.
+* Outbound and homebound selections are clearly separated.
+* Totals are calculated correctly, ensuring both the traveler and the agent have full visibility of the chosen extras.
+
+<figure><img src="../../.gitbook/assets/image (312).png" alt=""><figcaption></figcaption></figure>
+
+***
 
 ### WB - Customer Center (Booking Confirmation)
 
@@ -69,11 +92,53 @@ This ensures the accuracy and reliability of our booking edit workflow.
 
 ***
 
-#### **Steps & Expected Results**
+## Managing Transport Extras in the Customer Center (Booking Confirmation)
 
-<table data-header-hidden><thead><tr><th width="72.33331298828125"></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Step</strong></td><td><strong>Action</strong></td><td><strong>Expected Result</strong></td></tr><tr><td>1</td><td>Open an <strong>existing booking</strong> that has extras set for <strong>both outbound and homebound</strong> directions.</td><td>The <strong>Edit Booking page</strong> is displayed.</td></tr><tr><td>2</td><td>Navigate to the <strong>"Economics" tab → WebBooking</strong> section.</td><td>The <strong>Booking Confirmation</strong> page is opened.</td></tr><tr><td>3</td><td>Proceed to the <strong>second page: “Tillaeg”</strong>, where optional extras are listed.</td><td>All extras categories configured for this booking are displayed.</td></tr><tr><td>4</td><td>Locate the <strong>extra category for Individual Transport</strong>.</td><td>Each <strong>passenger</strong> has two columns under this category:<br>- One for <strong>outbound</strong><br>- One for <strong>homebound</strong>.<br>Only the extras relevant for each direction are shown.</td></tr><tr><td>5</td><td>Modify or reselect transport extras as needed for the desired direction.</td><td>Selected extras are correctly <strong>saved</strong> to the booking.</td></tr><tr><td>6</td><td>If no extras are configured or valid for a specific direction:</td><td>That direction’s <strong>column/category is hidden</strong> entirely (not shown in the UI).</td></tr><tr><td>7</td><td>Check the <strong>summary and totals</strong> after changes are made.</td><td>All selected extras are <strong>listed</strong> in the summary and the <strong>totals</strong> reflect the updated selections accurately.</td></tr></tbody></table>
+The Customer Center allows users to review and adjust transport-related extras even after a booking has been created. Extras that are defined individually per transport direction (outbound and homebound) are displayed in a way that ensures clarity and flexibility for both the customer and the agent.
 
-<figure><img src="../../../.gitbook/assets/image (313).png" alt=""><figcaption></figcaption></figure>
+***
+
+### Accessing Booking Confirmation
+
+From an existing booking that already has extras configured for both directions, you can open the **Booking Confirmation** page via:
+
+* **Economics → WebBooking** in the booking edit view.
+
+This page mirrors the WebBooking flow and provides the same structure for extras management.
+
+***
+
+### Extras Display in the "Tillaeg" Section
+
+Within the **Extras (Tillaeg)** page:
+
+* All extras categories available for the booking are displayed.
+* For categories linked to **transport directions**, each passenger has **two dedicated columns**:
+  * One for outbound extras
+  * One for homebound extras
+* Only extras relevant to each direction are displayed.
+* If no products are defined for a given direction (or none are eligible), the category for that direction will **not be shown at all**.
+
+***
+
+### Updating Extras
+
+Users can add or change extras for passengers directly within this section. Once selections are made, the system ensures that:
+
+* Extras are properly saved to the booking.
+* The summary section updates automatically to reflect all selected extras.
+
+***
+
+### Booking Summary and Totals
+
+At the end of the confirmation process:
+
+* All selected extras are clearly listed in the **summary section**.
+* Outbound and homebound extras are separated for clarity.
+* Totals are calculated correctly based on the selections, ensuring pricing accuracy.
+
+<figure><img src="../../.gitbook/assets/image (313).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

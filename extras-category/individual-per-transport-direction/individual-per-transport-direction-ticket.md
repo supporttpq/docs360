@@ -54,13 +54,27 @@ Whether the ticket is printed from the **internal booking page** or from the **W
 
 ***
 
-### **Field and Section Explanations**
+### **Booking flow**
 
-<figure><img src="../../.gitbook/assets/image (314).png" alt=""><figcaption></figcaption></figure>
+* Open an exiting booking (that has already extras set for both directions)
+* Click on "Print ticket"
+* Open the downloaded ticket
+* Under "Specifikation af rejsebestilling" section, extras are displayed properly under dedicated extra category name split in two columns (one for outbound and one for homebound), with corresponding price (and totals)
 
-| **Section**                           | **Description**                                                                                                                                                                                                            |
-| ------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Specifikation af rejsebestilling**  | The main details area of the printed ticket. It lists selected extras, organized by category, with per-direction columns for outbound and homebound journeys, including their respective prices and the total.             |
-| **Forklaringer**                      | The explanation section of the ticket. It shows a written summary of each selected extra. For transport extras, it includes one paragraph for outbound and one for homebound, each specifying the **total number booked**. |
-| **Print Ticket (Backoffice)**         | Admin-accessible button used to generate and download the ticket from the internal DooBooking interface.                                                                                                                   |
-| **Print Ticket (WB Customer Center)** | Customer-facing ticket print functionality. The layout and data must match what is seen in backoffice.                                                                                                                     |
+<figure><img src="../../.gitbook/assets/image (322).png" alt=""><figcaption></figcaption></figure>
+
+&#x20;     Under "Forklaringer" extras are properly displayed with the total number booked, under dedicated extra category name split in two paragraphs (one for outbound and one for homebound)
+
+<figure><img src="../../.gitbook/assets/image (323).png" alt=""><figcaption></figcaption></figure>
+
+
+
+Web Booking flow
+
+* Go to WB customer center
+* Click on "Print ticket"
+
+<figure><img src="../../.gitbook/assets/image (324).png" alt=""><figcaption></figcaption></figure>
+
+* Under "Specifikation af rejsebestilling" section, extras are displayed properly under dedicated extra category name split in two columns (one for outbound and one for homebound), with corresponding price (and totals)  \
+  Under "Forklaringer" extras are properly displayed with the total number booked, under dedicated extra category name split in two paragraphs (one for outbound and one for homebound)
