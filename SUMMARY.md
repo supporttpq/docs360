@@ -352,9 +352,6 @@
   * [Teetime](extras-setup/page-13/teetime.md)
   * [Multiple product selection in product category](extras-setup/page-13/multiple-product-selection-in-product-category.md)
   * [Create an extra with stay days functionality and select it in bookings](extras-setup/page-13/create-an-extra-with-stay-days-functionality-and-select-it-in-bookings.md)
-  * [Individual per transport direction](extras-setup/page-13/individual-per-transport-direction/README.md)
-    * [Individual per transport direction Web Booking](extras-setup/page-13/individual-per-transport-direction/individual-per-transport-direction-web-booking.md)
-    * [Individual per transport direction - Ticket](extras-setup/page-13/individual-per-transport-direction/individual-per-transport-direction-ticket.md)
 
 ***
 
@@ -363,6 +360,9 @@
 * [Extras Category](extras-category/README.md)
   * [Extra Category Overview](extras-category/extra-category-overview.md)
   * [Extra Category Reporting](extras-category/extra-category-reporting.md)
+  * [Individual per transport direction](extras-category/individual-per-transport-direction/README.md)
+    * [Individual per transport direction Web Booking](extras-category/individual-per-transport-direction/individual-per-transport-direction-web-booking.md)
+    * [Individual per transport direction - Ticket](extras-category/individual-per-transport-direction/individual-per-transport-direction-ticket.md)
 * [Discounts/Supplements](discounts-supplements.md)
 * [Disc/Suppl Categories](disc-suppl-categories.md)
 * [Ticket Categories](ticket-categories.md)

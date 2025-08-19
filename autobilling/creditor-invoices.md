@@ -1,53 +1,70 @@
 # Creditor invoices
 
-Under the creditor's edit page, you can schedule when the invoices will be created.&#x20;
+The **Creditor Invoice** feature in Tourpaq allows you to configure invoicing schedules and manage invoice statuses for hotels, extras, supplements, and handling fees.
 
 <figure><img src="../.gitbook/assets/image (24) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-You can set:
+#### **Setting Invoice Schedules**
 
-* schedules for hotel,&#x20;
-* schedules for hotel before arrival,&#x20;
-* schedules for extras,&#x20;
-* schedules for supplements&#x20;
-* and schedules for handling.&#x20;
+You can create schedules for:
 
-Schedules can be set by clicking Add New Schedule, and you can choose to have invoices generated:&#x20;
+* **Hotels**
+* **Hotels (Before Arrival)**
+* **Extras**
+* **Supplements**
+* **Handling**
 
-* Daily&#x20;
-* Weekly, by selecting a specific day of the week.&#x20;
-* Monthly, by selecting a specific day of the month.&#x20;
-* Days after, by selecting the number of days after.&#x20;
+**Steps to Add a Schedule**
 
-Select the hotel.&#x20;
+1. Click **Add New Schedule**.
+2. Select the **interval**:
+   * **Daily**
+   * **Weekly** – select the day of the week.
+   * **Monthly** – select the day of the month.
+   * **Days After** – specify the number of days after a certain event (e.g., departure).
+3. Select the **hotel** (or relevant item).
+4. Click **Save**.
 
-Click on save&#x20;
+Repeat these steps to set up each schedule type. You can add multiple schedules by:
 
-You can set up the next schedule categories in the same way.&#x20;
+* Clicking **Add New Schedule**.
+* Choosing another schedule type and hotel.
+* Saving after all schedules are configured.
 
-* Click add new schedule&#x20;
-* Select the schedule interval and hotel&#x20;
-* Add new schedule&#x20;
-* Select another schedule type and hotel.&#x20;
+***
 
-After all schedules are set, click on Save.&#x20;
+#### **Invoice Statuses**
 
-The status of invoices can be:&#x20;
+Invoices can have the following statuses:
 
-* Pending - invoice status after it has been generated.&#x20;
-* Approved - invoice status after it has been approved by the creditor.&#x20;
-* Paid - invoice status after it has been paid. Only approved invoices can be paid.&#x20;
-* Regenerated - invoices can be regenerated.&#x20;
-* Archived - invoice status after it has been archived.&#x20;
+* **Pending** – Automatically assigned after the invoice is generated.
+* **Approved** – Set when the creditor approves the invoice.
+* **Paid** – Set when the approved invoice is marked as paid.
+* **Regenerated** – The invoice has been recreated (e.g., after corrections).
+* **Archived** – The invoice has been archived.
+* **Rejected** – The creditor has declined the invoice.
+* **Deleted** – The invoice has been removed.
 
-The invoice status can have the following flow:&#x20;
+***
 
-* Pending - Approved - Paid - Regenerate&#x20;
-* Pending - Approved - Regenerate&#x20;
-* Pending - Rejected - Regenerate&#x20;
-* Pending - Deleted&#x20;
-* Pending - Regenerate&#x20;
+#### **Status Flow Examples**
 
-To regenerate an invoice, go to the finance tab/invoice listing, select the invoice that you want to regenerate, and click the button to do this. Click on the OK button. The invoice will be regenerated.
+* **Pending → Approved → Paid → Regenerated**
+* **Pending → Approved → Regenerated**
+* **Pending → Rejected → Regenerated**
+* **Pending → Deleted**
+* **Pending → Regenerated**
+
+***
+
+#### **Regenerating an Invoice**
+
+To regenerate an invoice:
+
+1. Go to **Finance > Invoice Listing**.
+2. Select the invoice to regenerate.
+3. Click the **Regenerate** button.
+4. Confirm by clicking **OK**.\
+   The invoice will be regenerated and available in the list.
 
 <figure><img src="../.gitbook/assets/image (25) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

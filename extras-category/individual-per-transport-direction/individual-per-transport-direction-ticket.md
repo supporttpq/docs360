@@ -25,15 +25,38 @@ The purpose of this is to:
 
 ***
 
-### **Steps & Expected Results**
+### Ticket Printing with Transport Extras
 
-<table data-header-hidden><thead><tr><th width="69"></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Step</strong></td><td><strong>Action</strong></td><td><strong>Expected Result</strong></td></tr><tr><td>1</td><td>Open an <strong>existing booking</strong> with transport extras set for both directions.</td><td>The <strong>DooBooking page</strong> for the first step of the WB process is displayed.</td></tr><tr><td>2</td><td>Click <strong>“Print Ticket”</strong> from the internal booking page.</td><td>The <strong>ticket is downloaded</strong> (usually as a PDF file).</td></tr><tr><td>3</td><td>Open the <strong>downloaded ticket</strong> and review the content.</td><td>✅ Under <strong>"Specifikation af rejsebestilling"</strong>:<br>– Extras are listed under their <strong>category name</strong><br>– Information is split into <strong>two columns</strong>: outbound and homebound<br>– <strong>Prices</strong> for each direction are shown along with correct <strong>totals</strong><br><br>✅ Under <strong>"Forklaringer"</strong>:<br>– Extras appear under the same <strong>extra category name</strong><br>– The section is split into <strong>two paragraphs</strong> (one for outbound, one for homebound)<br>– Each shows the <strong>total number of extras booked</strong> per direction</td></tr><tr><td>4</td><td>Now go to the <strong>customer-facing WebBooking (WB) center</strong> and click <strong>“Print Ticket”</strong> from there.</td><td>✅ Under <strong>"Specifikation af rejsebestilling"</strong>:<br>– Extras are again shown under the <strong>correct category</strong><br>– Split into <strong>outbound/homebound</strong> columns<br>– <strong>Prices and totals</strong> match selections<br><br>✅ Under <strong>"Forklaringer"</strong>:<br>– Directional breakdown is respected<br>– Paragraphs and quantities match system selections</td></tr></tbody></table>
+When a booking includes **transport extras for both outbound and homebound directions**, these details are reflected consistently in the tickets generated from both the **internal booking system** and the **customer-facing WebBooking (WB) center**.
+
+#### Ticket Content
+
+The ticket displays transport extras in two main sections:
+
+**1. Specifikation af rejsebestilling**
+
+* Extras are grouped under their **respective category name**.
+* Information is organized into **two columns**: one for **outbound** and one for **homebound**.
+* Each column shows the **price per direction**, and the correct **totals** are calculated.
+
+**2. Forklaringer**
+
+* Extras appear again, grouped under the same category name.
+* The section is split into **two paragraphs**, one for outbound and one for homebound.
+* Each paragraph displays the **total number of extras** booked for that direction.
+
+#### Consistency Between Internal and Customer-Facing Tickets
+
+Whether the ticket is printed from the **internal booking page** or from the **WB center**, the same structure and information are displayed:
+
+* **Specifikation af rejsebestilling** always shows outbound and homebound extras in separate columns with accurate pricing and totals.
+* **Forklaringer** maintains the outbound/homebound split, ensuring clarity for the traveler.
 
 ***
 
 ### **Field and Section Explanations**
 
-<figure><img src="../../../.gitbook/assets/image (314).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (314).png" alt=""><figcaption></figcaption></figure>
 
 | **Section**                           | **Description**                                                                                                                                                                                                            |
 | ------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

@@ -1,19 +1,52 @@
 # How to set autobilling for hotels
 
-Autobilling settings for hotels in Tourpaq are done in every hotel in part.&#x20;
+In Tourpaq, **autobilling** for hotels is configured **individually for each hotel**. The settings are located in the **Autobilling** section of the **Hotel General** page.
 
-They are done in the autobilling section on the Hotel General page.&#x20;
+#### **Enabling Autobilling**
 
-<figure><img src="../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+* **Automatic Billing (Checkbox):** Activates autobilling for the selected hotel.
+* **Creditor:** A linked creditor is **mandatory** for autobilling to function.
 
-* The automatic billing checkbox activates the setting.&#x20;
-* A creditor is always required.&#x20;
-* The schedule can be done:
-  * daily,&#x20;
-  * weekly with the selection of the weekday,&#x20;
-  * monthly, selecting a day of the month,&#x20;
-  * and it can be set days after the departure.
-* Department code, account deposit, and the account debit are information that appears in the invoice.&#x20;
-* Schedules can also be made before the arrival of the booking at the hotel and have the same settings as before: daily, weekly, and monthly.&#x20;
-* Also, invoices can be generated in the past by setting the dates for which to generate the invoice.&#x20;
-* After everything has been set, click Save.
+<figure><img src="../.gitbook/assets/image (319).png" alt=""><figcaption></figcaption></figure>
+
+#### **Scheduling Options**
+
+Invoices can be generated on the following schedules:
+
+* **Daily**
+* **Weekly** – select the weekday.
+* **Monthly** – select the day of the month.
+* **Days After Departure** – generate invoices a set number of days after guest departure.
+
+***
+
+#### **Invoice Information Fields**
+
+The following fields appear on the generated invoice:
+
+* **Department Code**
+* **Account Deposit**
+* **Account Debit**
+
+***
+
+#### **Pre-Arrival Schedules**
+
+Invoices can also be scheduled **before the guest's arrival** at the hotel.\
+The same scheduling options apply:
+
+* Daily
+* Weekly
+* Monthly
+
+***
+
+#### **Generating Past Invoices**
+
+You can create invoices for **past periods** by entering the desired dates in the settings.
+
+***
+
+#### **Finalizing Settings**
+
+After all configurations are made, click **Save** to apply the changes.

@@ -63,7 +63,7 @@ The **Early Booking Cost Discount Rules** section within the **Room Costs** tab 
 
 To define and automate early booking discount conditions based on:
 
-* Arrival/booking dates
+* Stay booking dates
 * Room type
 * Board type
 * Pricing and deposit conditions
@@ -72,7 +72,7 @@ These configurations ensure proper cost calculation and promotional accuracy for
 
 ***
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (315).png" alt=""><figcaption></figcaption></figure>
 
 #### **Instructions**
 
@@ -93,7 +93,7 @@ These configurations ensure proper cost calculation and promotional accuracy for
 
 | **Field**               | **Description**                                                                                                                                            |
 | ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Arrival Start / End** | Defines the arrival date range for which the early booking discount is valid.                                                                              |
+| Stay **Start / End**    | Defines the stay date range for which the early booking discount is valid.                                                                                 |
 | **Booking Start / End** | Specifies when the booking must be made for the discount to apply.                                                                                         |
 | **Room**                | Allows selection of one or multiple room types.                                                                                                            |
 | **Board**               | Select the board type (e.g., Bed & Breakfast, Half Board, etc.) the discount applies to.                                                                   |
@@ -107,13 +107,14 @@ These configurations ensure proper cost calculation and promotional accuracy for
 | **Days of the Week**    | Select days of the week the discount is valid.                                                           ![](<../../../.gitbook/assets/image (1) (1).png>) |
 | **Min Days**            | Minimum number of days in advance the booking must be made to qualify for the discount.                                                                    |
 | **Deposit Date**        | The cutoff date for the deposit to be paid to validate the discount.                                                                                       |
-| **DDNBA**               | Deposit days no before arrival                                                                                                                             |
+| **DDNBA**               | Deposit days no before stay                                                                                                                                |
 | **OB**                  | Checkbox indicating if the rule applies to "On Booking"  - Deposit on Booking Final save                                                                   |
 | **Deposit %**           | Discount percentage that applies for the deposit payment.                                                                                                  |
 | **Send List Date**      | Date when the rate list or contract was sent, used for administrative tracking.                                                                            |
-| **SLDNBA**              | Send list days number before arrival                                                                                                                       |
+| **SLDNBA**              | Send list days number before arrival stay                                                                                                                  |
 | **EBP Discount**        | Customer Early Booking Discount                                                                                                                            |
 | **Contract**            | Displays the selected contract ID or name that the rule belongs to.                                                                                        |
+| From age/To age         | Specify an optional age range for the Early Booking Discount (Leave the field empty to accept any age).                                                    |
 
 There are two rules that apply. They cannot be applied at the same time and are governed by the **IS PERCENT** check box:
 
@@ -123,18 +124,18 @@ There are two rules that apply. They cannot be applied at the same time and are 
   * Per room - if the check box is used
 * Customer Early booking discount - the value inserted in this case is used in the calculation of the pricelist price. If this value is completed, the normal price will be taken into account when calculating the profit of the room on the booking, and the value for the price list will be taken into account when calculating the price Pricelist prices.
 
-<figure><img src="../../../.gitbook/assets/image (97).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (316).png" alt=""><figcaption></figcaption></figure>
 
 This rule can be combined with the **Stay and Pay cost rules** if the **S\&P** check box is used. Filters used:
 
-* Arrival Date Start and End
+* Stay Date Start and End
 * Booking Start and End date
 * Room
 * Days no before arrival The rest of the filters are used in **invoices** and will be explained there.
 
 Early Booking Discount with Board Type as a filter
 
-<figure><img src="../../../.gitbook/assets/image (301).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (317).png" alt=""><figcaption></figcaption></figure>
 
 In Hotel - Room Costs (Early Booking Cost Discount Rules)  it was added a new field called BOARD, containing all the Board Types defined for the company.
 
@@ -208,7 +209,7 @@ They are governed by two cases:
 
 Filters used:
 
-* Arrival Start and End date
+* Stay Start and End date
 * Booking Start and End date
 * Room
 * Period
@@ -217,7 +218,7 @@ Filters used:
 
 Special offers are rules setup by hotel owners capable of overriding any other cost rules setup in the hotels.
 
-<figure><img src="../../../.gitbook/assets/image (99).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (318).png" alt=""><figcaption></figcaption></figure>
 
 There are 4 rules:
 
@@ -240,8 +241,8 @@ If a cost rule includes a board type filter and all other rule conditions are me
 
 If a rule does **not** include a board type filter, it will only apply to passengers who have **no board type** selected.
 
-* Arrival start date
-* Arrival end date
+* Stay start date
+* Stay end date
 * Booking start date
 * Booking end date
 * Days before arrival
