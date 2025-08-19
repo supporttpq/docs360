@@ -1,10 +1,10 @@
 # Individual per transport direction Web Booking
 
-## **WB - Do Booking**
+## **Web Booking - Do Booking**
 
 #### **Overview**
 
-This page explains how to test the behavior of the **Individual Transport Extra Category** in the **WebBooking** flow of our travel booking system.&#x20;
+This page explains how to test the behaviour of the **Individual Transport Extra Category** in the **Web Booking** flow of our travel booking system.&#x20;
 
 #### **Purpose**
 
@@ -17,16 +17,16 @@ This ensures a smooth and intuitive experience for users selecting transport opt
 
 #### **Preconditions**
 
-* You must have access to the **DooBooking** page.
-* A **valid booking flow** (WB process) must be configured and operational.
+* You must have access to the **Do Booking** page.
+* A **valid booking flow** (Web Booking process) must be configured and operational.
 * At least one **extra category** for **individual transport** should be configured for both outbound and/or homebound directions.
 * The booking should support extras and the second step (TILLAEG) should be accessible.
 
 ***
 
-### Using Transport Extras in WebBooking (WB)
+### Using Transport Extras in Web Booking (WB)
 
-Transport-related extras can be configured **individually per direction** (outbound and homebound). This ensures that travelers can select and pay only for the services relevant to each part of their journey.
+Transport-related extras can be configured **individually per direction** (outbound and homebound). This ensures that travellers can select and pay only for the services relevant to each part of their journey.
 
 ***
 
@@ -40,9 +40,9 @@ Before using this functionality, make sure:
 
 ***
 
-## Behavior in DooBooking (WB)
+## Behaviour in Do Booking (Web Booking)
 
-When a customer makes a booking through the WebBooking (WB) center, extras behave as follows:
+When a customer makes a booking through the Web Booking, extras behave as follows:
 
 * On the **Extras (TILLAEG)** step, all available extra categories for the booking are displayed.
 * For categories linked to **individual transport directions**, each passenger sees **two separate columns**:
@@ -60,17 +60,17 @@ After the extras are selected and the booking process is completed:
 
 * The **Thank You for Booking** confirmation page displays the selected extras.
 * Outbound and homebound selections are clearly separated.
-* Totals are calculated correctly, ensuring both the traveler and the agent have full visibility of the chosen extras.
+* Totals are calculated correctly, ensuring both the traveller and the agent have full visibility of the chosen extras.
 
 <figure><img src="../../.gitbook/assets/image (312).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-### WB - Customer Center (Booking Confirmation)
+### Web Booking - Customer Center (Booking Confirmation)
 
 #### **Overview**
 
-The folowing informations describes the procedure for editing **individual transport extras** in an **existing booking** using the **WebBooking module**.
+The following information describes the procedure for editing **individual transport extras** in an **existing booking** using the **Web Booking module**.
 
 #### **Purpose**
 
@@ -87,7 +87,7 @@ This ensures the accuracy and reliability of our booking edit workflow.
   * Transport extras **already set** for both directions (outbound and homebound)
 * User must have access to:
   * The **Booking Edit** module
-  * The **WebBooking** section under the “Economics” tab
+  * The **Web Booking** section under the “Economics” tab
 * Transport extras must be correctly configured in the system for visibility
 
 ***
@@ -102,9 +102,9 @@ The Customer Center allows users to review and adjust transport-related extras e
 
 From an existing booking that already has extras configured for both directions, you can open the **Booking Confirmation** page via:
 
-* **Economics → WebBooking** in the booking edit view.
+* **Economics → Web Booking** in the booking edit view.
 
-This page mirrors the WebBooking flow and provides the same structure for extras management.
+This page mirrors the Web Booking flow and provides the same structure for extras management.
 
 ***
 
@@ -139,18 +139,3 @@ At the end of the confirmation process:
 * Totals are calculated correctly based on the selections, ensuring pricing accuracy.
 
 <figure><img src="../../.gitbook/assets/image (313).png" alt=""><figcaption></figcaption></figure>
-
-***
-
-### **Field and Page Descriptions**
-
-| **Field/Section**                | **Description**                                                                                                                |
-| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| **Edit Booking Page**            | The central interface used to review and modify an existing booking’s data.                                                    |
-| **Economics Tab → WebBooking**   | Tab used to access the WebBooking version of the booking, with all relevant data shown as the customer would see it.           |
-| **Tillaeg Page**                 | The second step/page in the WebBooking where **extras (tillegg)** are managed and selected.                                    |
-| **Individual Transport Extra**   | A category of optional extras allowing for transport to be selected for outbound and/or homebound directions.                  |
-| **Outbound / Homebound Columns** | Separate columns displayed per passenger, enabling extra selection by direction.                                               |
-| **Eligibility Rules**            | Rules that determine whether an extra is shown or hidden, based on factors like availability, passenger type, and travel date. |
-| **Summary Section**              | A panel showing selected extras, quantities, and associated costs after selections are made.                                   |
-| **Totals**                       | Financial breakdown of the selected extras, displaye                                                                           |
