@@ -241,12 +241,10 @@ If a cost rule includes a board type filter and all other rule conditions are me
 
 If a rule does **not** include a board type filter, it will only apply to passengers who have **no board type** selected.
 
-* Stay start date
-* Stay end date
-* Booking start date
-* Booking end date
+* Stay start date / Stay end date: Defines the stay date range for which the early booking discount is valid.
+* Booking start date / Booking end date: Specifies when the booking must be made for the discount to apply.
 * Days before arrival
-* Room
+* Room: Allows selection of one or multiple room types.
 * Price for each interval
 * Days of the week: Select days of the week the Special Offer is valid. (It is applied only when the rule typoe is set as Stay and Pay or Early booing;    &#x20;
 * Per day check box (if checked, the price will be applies per day, not per interval)
@@ -258,8 +256,7 @@ If a rule does **not** include a board type filter, it will only apply to passen
 * Per pax check box (if checked it applies to each passenger)
 * Percent check box (if checked it turns the value into a percent)
 * Period
-* From age
-* To age
+* From age / To age: Specify an optional age range for the Early Booking Discount (Leave the field empty to accept any age).
 * Stay (duration of the stay)
 * Pay (duration of the pay, works with the **Stay** filter)
 * Combine with **Early booking** - dictates if an EB rule will combine with an S\&P rule. If not, the EB rule wins, and S\&P is not taken into account.
