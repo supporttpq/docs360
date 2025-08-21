@@ -1,6 +1,64 @@
 # Payment Registration
 
-Applies for Administrator and Financial
+#### Overview
+
+The Payments section is designed to provide a comprehensive view and input interface for tracking and managing various types of payments made within the system. This includes payments made via cash, card, gift card, bank, and other methods associated with specific bookings, extra orders, and guides.
+
+***
+
+#### Purpose
+
+This module facilitates:
+
+* Viewing all recorded payments for selected criteria
+* Filtering and identifying payment records
+* Adding new payment entries associated with bookings, extra orders, and guides
+* Exporting payment data for reporting and audit purposes
+
+***
+
+#### Preconditions
+
+To access and use the Payments section:
+
+* The user must be logged into the system with the appropriate role/permissions
+* Payments must be recorded via the booking or services interface for them to be visible
+* Data must exist for the selected filters (e.g., payment date, booking reference)
+
+***
+
+#### Instructions
+
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+**Filtering Data**
+
+1. **Set Payment Start and End Dates** – Define the date range for displayed payments.
+2. **Departure Dates** – Optional filters for selecting trips by departure period.
+3. **Select Payment Method** – Choose from predefined types such as CARD, CASHIN, GIFT, etc.
+4. **Additional Filters** – Apply filters by:
+   * Debit/Credit
+   * Payment Purpose (e.g., All Payments, Booking Only)
+   * Guide
+   * Transport type
+   * GiftCard No
+   * Booking Reference
+5. Click **Display** to generate the list.
+
+**Adding Payments**
+
+1. Scroll to the top of the table and enter:
+   * **Payment No** – Usually auto-generated or manually entered
+   * **Payment Method** – Choose from the dropdown (e.g., BANKIN, CASHIN)
+   * **Payment Date** – Select from calendar picker
+   * **Dept Date**, **Booking**, **GiftCard No** – Optional fields to link payment
+   * **Extra Order**, **Amount**, **Comments** – Add payment context
+2. Ensure all mandatory fields are filled
+3. Click **Save** (if available) to commit the entry
+
+**Exporting Data**
+
+* Click the **Export** button in the top right corner to generate a report based on the currently displayed filter set
 
 Payment registration is a module that allows the making and viewing of payments.
 
@@ -10,7 +68,7 @@ From payment registration, it is possible to insert only booking payments. But i
 
 When making a new payment these are the steps:
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Click on "Create button"
 * Choose a method of payment

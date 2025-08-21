@@ -1,26 +1,31 @@
 # Pending payments DIBS transaction late response
 
-### Why was this needed <a href="#why-was-this-needed" id="why-was-this-needed"></a>
+### Purpose <a href="#why-was-this-needed" id="why-was-this-needed"></a>
 
-The DIBS e-payment platform sometimes does not provide a straightforward answer upon a transaction request: accepted and captured or declined.
-
-&#x20;Pending payment For a small fraction of the transactions, some hours are needed for the transaction analysis and status update. During this time, the booking information was possible to be lost from the temporary cache without this new behavior.
+The DIBS e-payment platform occasionally does not return an immediate and definitive transaction status (e.g., accepted, captured, or declined). For a small number of transactions, additional time—sometimes several hours—is required for transaction analysis and status updates. During this delay, without the implementation of this new behavior, there was a risk of losing booking information from the temporary cache.
 
 #### **Presentation video**
 
 {% embed url="https://www.youtube.com/watch?feature=youtu.be&v=UEM6nwMeSTw" %}
 
-### Details <a href="#details" id="details"></a>
+### **Handling Pending Payments in Tourpaq**
 
-To manage these situations, Tourpaq is using a temporary placed booking of status PENDPAY. This booking is blocking no hotel or transport allotment and exists only to hold information for the time when and if the transaction is accepted and the amount is captured from the customer's credit card.
+To manage delayed payment confirmations from the DIBS e-payment platform, Tourpaq creates a temporary booking with the status **PENDPAY**. This booking does not block any hotel or transport allotment and serves solely as a placeholder to retain booking information until the payment is either accepted and captured or declined.
 
-At that moment, a background service checks the new transaction status and verifies the available allotment in the Tourpaq system.
+Once the transaction is confirmed and the payment successfully captured from the customer's credit card, a background service in Tourpaq:
 
-If an allotment is available, the allotment is taken, and the booking is saved as an OK status booking. The customer will receive the **"Thank you for booking"** email, and all the usual behavior continues from this point on.
+1. **Checks the updated transaction status.**
+2. **Verifies available allotments** (hotel and transport).
+3. If allotment is available:
+   * The booking is finalized with status **OK**.
+   * The customer receives the _“Thank you for booking”_ confirmation email.
+   * The standard booking flow resumes.
+4. If no allotment is available:
+   * A note is added to the _Refund money_ tab in the Tourpaq Dashboard, since the payment has been captured.
+   * The brand administrator must manually refund the amount via the DIBS admin interface.
+   * The administrator should also register an **out/credit transaction** with the same amount on the booking to remove the transaction from the system.
 
-If allotment is not available anymore, the service will place a Tourpaq Dashboard note on the "Refund money" tab because the amount has been captured.
-
-At this point, the brand administrator needs to refund the amount from the DIBS admin interface and also take out the transaction from the system by inserting an out/credit transaction with the same value on the booking. Canceling the PENDPAY booking is optional but recommended for clarity in the statistical overview.
+While canceling the **PENDPAY** booking is optional, it is recommended to maintain clarity in statistical reports.
 
 <figure><img src=".gitbook/assets/web_booking_flow-1165f3dfba425adf63393a3ed21eed55.png" alt=""><figcaption></figcaption></figure>
 
@@ -28,17 +33,23 @@ Another option is to withdraw the money from the booking using a cash-out option
 
 For this to work, allotments have to be added in the system if the agency can obtain them from the hotel/transport, or another hotel/transport is used in the booking. In this case, contacting the client and informing him/her of the options is highly recommended.
 
-### Web Booking part <a href="#web-booking-part" id="web-booking-part"></a>
+### **Web Booking and Payment Processing via DIBS**
 
-When placing a "last-minute sale" booking, or if an agency always asks for a deposit before allowing customers themselves to place bookings, the DIBS payment platform becomes involved in the process.
+In certain scenarios—such as **last-minute sales** or when an agency **requires a deposit before allowing direct bookings**—the DIBS payment platform becomes an integral part of the web booking process.
 
-This occurs by having a take-off page in Tourpaq that sends DIBS needed details for the transaction and also a landing page to receive DIBS feedback on the action.
+This integration involves:
 
-When this feedback is "capture," it means that the transaction was successful and the amount was captured on the customer's credit card.
+* A **take-off page** in Tourpaq that sends all necessary transaction details to DIBS.
+* A **landing page** that receives feedback from DIBS regarding the transaction outcome.
 
-When the feedback is not instant (minutes or hours later) or incomplete (they confirm they have received the request but do not yet have a final status on it), the system will now place a pending payment status booking. This will not block hotel or transport allotment and also will not block seats in transport seating layout or hotel room layout (if any are chosen).
+If the feedback from DIBS is **"capture"**, it indicates that the payment was successful and the amount has been charged to the customer's credit card.
 
-For clear communication, the web booking is presenting the customer with a page that will state a customizable message for each agency. Usually explanatory text about not being able to confirm the booking yet until the final status of the transaction is received from DIBS (and that, when and if this will occur, the customer will receive the automatic email confirming the order).
+However, in cases where the feedback is **delayed** (arriving minutes or even hours later) or **incomplete** (DIBS confirms receipt of the transaction request but has not yet provided a final status), Tourpaq will now create a **pending payment status** booking. This booking:
+
+* Does **not block** hotel or transport allotment.
+* Does **not reserve** seats in the transport seating layout or hotel room layout, if selected.
+
+To ensure transparency, the web booking interface will display a **customizable message**—set per agency—to inform the customer that the booking is not yet confirmed. The message typically explains that the final confirmation depends on receiving a successful payment status from DIBS, and that, once confirmed, the customer will receive an automatic email confirming the booking.
 
 <figure><img src=".gitbook/assets/wb_pendpay_message_-_mozilla_firefox_2018-10-01_12.27.21-9ef5aa76480821ccba563c0a960e2d25.png" alt=""><figcaption></figcaption></figure>
 
@@ -46,39 +57,115 @@ Instead of sending the "Thank you for booking" email (it's not the case yet), To
 
 <figure><img src=".gitbook/assets/image (151).png" alt=""><figcaption></figcaption></figure>
 
-### Tourpaq Service part <a href="#tourpaq-service-part" id="tourpaq-service-part"></a>
+### **Tourpaq Service: Pending Payment Status Checker**
 
-The Pending Payment Status Checker service will take the process from where the Web Booking has left it. This happens by periodically (approximately every 2 hours) checking in chronological order the incomplete payments in the system against the DIBS platform.
+The **Pending Payment Status Checker** service continues the booking workflow initiated by the Web Booking module when a transaction remains incomplete. This service runs periodically—approximately every **2 hours**—and processes **incomplete payment transactions** in **chronological order**, checking their current status with the DIBS platform.
 
-Please note that some transactions never seem to get an update from the "pending" status; Tourpaq will set them as failed if nothing changes within 5 days since their placement.
+#### Handling Unresolved Transactions
 
-If a consistent update has occurred (either captured or declined), the service will either try to finalize the booking or set the transaction as failed.
+Some transactions may remain in a **"pending" state indefinitely**. To prevent stale data accumulation, Tourpaq will automatically **mark such transactions as failed** if no update is received within **5 days** of their creation.
 
-If the capture was successful, the system will check if hotel and transport allotment is still available. If yes, the system takes the needed allotment and saves the booking as OK, registering the transactions as successful.
+#### Processing Updated Transactions
 
-If no allotment is available anymore, the service will place a notice on the Tourpaq Office dashboard in the Refund Money tab because the amount was captured but the booking cannot be placed anymore.
+When a transaction receives a definitive update from DIBS (either **captured** or **declined**), the service takes the appropriate action:
 
-The customer can also receive an instant email explaining to him that, unfortunately, there were no rooms/seats available at the moment of the payment confirmation and he will, most likely, be contacted for a refund as soon as possible. This email type is named **"Captured money but no allotment"**.
+**1. If the transaction is captured:**
 
-Other notice types will appear in this tab, and you can read more about them in the Office section below.
+* The system checks if **hotel and transport allotment** is still available.
+  * **If allotment is available**:
+    * The system reserves the necessary allotment.
+    * The booking is finalized with status **OK**.
+    * The transaction is recorded as **successful**.
+  * **If allotment is no longer available**:
+    * A notice is placed in the **"Refund Money"** tab of the **Tourpaq Office Dashboard**, as the customer has been charged but the booking cannot be completed.
+    * An automated email of type **"Captured money but no allotment"** may be sent to the customer, explaining that no rooms or seats were available at the time of payment confirmation and that they will likely be contacted for a refund shortly.
 
-### Office part <a href="#office-part" id="office-part"></a>
+**2. If the transaction is declined:**
 
-Here you can see the pending payment bookings in the View All Bookings page and also edit them. However, they are not taken into consideration for the turnover/profit calculations.
+* The system marks the transaction and associated booking as **failed**, and no further action is taken.
 
-Please note! We do not recommend applying big changes on the PENDPAY booking; you can, however, do passenger/customer name corrections and extras management. Also, please do not cancel it before its listing in the Refund tab on the Dashboard.
+#### Additional Notices
 
-If you receive a payment for the booking in other ways than through DIBS (e.g., bank imports, cash, etc.), the booking will not leave the PENDPAY status; only a DIBS reply can make it become an OK status.
+Other notice types may also appear in the **Refund Money** tab, each indicating different issues related to payment and allotment processing. For a detailed explanation of these, refer to the **Office** section of the documentation.
 
-So, if you instantly need to obtain an OK booking for the customer, please manually set a new one in the system and link whatever payments you have to it. The PENDPAY one still needs to receive a final status from DIBS in order to reach a final status - OK — or a situation where an admin/sales agent will overview the outcome. The "Refund money" tab on the dashboard can present the following situations that need to be overviewed:
+### **Office: Managing PENDPAY Bookings**
 
-* Refund money - the amount was captured on the credit card, but the booking cannot be placed.
-  * At this point, the brand administrator needs to refund the amount from the DIBS admin interface and also take out the transaction from the system by inserting an out/credit transaction with the same value on the booking. Canceling the PENDPAY booking is optional but recommended for clarity in the statistical overview.
-  * Another option is to withdraw the money from the booking using a cash-out option, cancel the booking, and place another one. Then add the money to the new booking using a cash-in option with the cancelled booking number and transaction ID in the comment.
-* Check booking - when the service found that the capture was successful and was able to save the booking as OK. In these situations, please check in the internal comment of the booking if the customer had chosen transport seating or hotel layout (where the case) and manually set them on the booking. Also, please check the booking's overall integrity.
-* Timeout - no Dibs status update happened within the 5 days since the transaction was placed. We consider this a failed transaction, but please manually check it in the DIBS admin if that's the case. In this case the booking can be canceled. If the payment gets confirmed later than 5 days, please cancel the initial booking, place a new OK one, and inform Tourpaq Support to assign the initial payment to the new booking, or simply set a fictive payment to the new booking with a comment refference the real DIBS payment.
-* Tourpaq error - in case something went wrong with processing the payment transaction. Please inform Tourpaq Support of these situations, if they occur, and wait for an update.
+In the **Tourpaq Office**, all pending payment bookings (**PENDPAY**) can be viewed and edited from the **"View All Bookings"** page. However, note that these bookings are **excluded from turnover and profit calculations** until they are finalized.
 
-> 📝 **Note:** Please note!
+#### ⚠️ Important Recommendations
 
-Pending transactions older than 5 days are no longer checked for DIBS status change. They get automatically considered declined. - **A PENDPAY status booking cannot be set to OK by an admin** (however, passenger name changes are possible, etc.). Only the service that checks pending transactions can do that. If another action is needed to overcome this default one, please **consider creating a new booking** and working on that one.
+* **Avoid making major changes** to PENDPAY bookings.
+* You **may update customer or passenger names**, manage extras, or perform other minor edits.
+* **Do not cancel a PENDPAY booking** before it appears in the **"Refund Money"** tab on the dashboard.
+
+#### Behavior of PENDPAY Bookings
+
+* If a payment is received through **alternative methods** (e.g., bank import, cash), the booking will **remain in PENDPAY status**, as **only a response from DIBS** can finalize the transaction and change the status to **OK**.
+* If an immediate OK-status booking is required (e.g., due to cash or manual payment):
+  * Manually create a **new booking**.
+  * Link the received payment to the new booking.
+  * The original PENDPAY booking must still wait for a final DIBS status update to be resolved correctly.
+
+***
+
+#### **Refund Money Tab: Overview of Situations**
+
+The **Refund Money** tab on the dashboard highlights PENDPAY bookings that require administrative action. These include:
+
+**1. Refund Money**
+
+* The payment was **captured**, but the booking could not be completed (e.g., no allotment available).
+* Actions:
+  * The brand administrator must **refund the amount** using the **DIBS admin interface**.
+  * Record a matching **out/credit transaction** on the booking to balance the payment.
+  * Canceling the PENDPAY booking is **optional**, but **recommended** to maintain clean statistics.
+
+**Alternative Option:**
+
+* Withdraw the payment using a **cash-out transaction**.
+* Cancel the PENDPAY booking.
+* Create a **new OK-status booking**.
+* Apply the payment using a **cash-in transaction** with comments referencing the original booking and transaction ID.
+
+***
+
+**2. Check Booking**
+
+* The service **successfully completed the payment and finalized** the booking as **OK**.
+* Actions:
+  * Check the **internal comment** on the booking to verify if the customer selected specific **transport seating or hotel room layouts**.
+  * Manually assign those selections to the booking if needed.
+  * Review the overall **booking integrity**.
+
+***
+
+**3. Timeout**
+
+* No status update was received from DIBS **within 5 days** of the transaction.
+* The system considers this a **failed transaction**.
+* Actions:
+  * Manually **verify the status in the DIBS admin interface**.
+  * If the transaction remains unconfirmed, the booking may be **canceled**.
+  * If the payment is confirmed **after 5 days**:
+    * Cancel the original booking.
+    * Create a **new OK booking**.
+    * Either:
+      * Inform **Tourpaq Support** to reassign the original payment.
+      * Or add a **fictive payment** to the new booking with a comment referencing the original DIBS transaction.
+
+***
+
+**4. Tourpaq Error**
+
+* An error occurred in the Tourpaq system while processing the payment.
+* Actions:
+  * **Contact Tourpaq Support** and provide relevant booking details.
+  * Wait for guidance or a fix before taking further action.
+
+***
+
+#### 📝 Additional Notes
+
+* **Pending transactions older than 5 days are no longer checked** by the system. They are automatically marked as **declined**.
+* A **PENDPAY booking cannot be manually set to OK** by an admin. Only the **Pending Payment Status Checker service** can update the booking’s status based on DIBS responses.
+* If special handling is required, consider **creating a new booking** and managing the process there.

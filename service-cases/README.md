@@ -6,7 +6,7 @@ Tourpaq provides a service case management feature to handle customer complaints
 
 Service case management is available under the “Quality management” menu.
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Access to this feature means managing complaints quickly and easily, following an intuitive process, using a user-friendly interface, and having all information in one place.&#x20;
 

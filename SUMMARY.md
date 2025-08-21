@@ -103,12 +103,13 @@
 
 * [Payment Registration](finance/page-5.md)
 * [Payment File Import](finance/payment-file-import.md)
+* [Refund File Import](finance/refund-file-import.md)
 * [Method of Payment](finance/method-of-payment.md)
 
 ***
 
 * [Balance Administration](balance-administration.md)
-* [Export](export.md)
+* [Export - Scheduled Reports](export.md)
 * [Invoice](invoice.md)
 * [Gift Card Payments](gift-card-payments.md)
 * [Daily Export file](daily-export-file.md)
@@ -216,7 +217,8 @@
 
 * [All Transports](transport/all-transports.md)
 * [Transport](transport/transport/README.md)
-  * [Transport creation](transport/transport/page-8.md)
+  * [Transport creation](transport/transport/page-8/README.md)
+    * [Name change rule](transport/transport/page-8/name-change-rule.md)
   * [Transport Definition](transport/transport/transport-definition.md)
   * [Transport Matrix](transport/transport/transport-matrix.md)
   * [Allotments](transport/transport/allotments.md)
@@ -351,7 +353,6 @@
   * [Teetime](extras-setup/page-13/teetime.md)
   * [Multiple product selection in product category](extras-setup/page-13/multiple-product-selection-in-product-category.md)
   * [Create an extra with stay days functionality and select it in bookings](extras-setup/page-13/create-an-extra-with-stay-days-functionality-and-select-it-in-bookings.md)
-  * [Individual per transport direction](extras-setup/page-13/individual-per-transport-direction.md)
 
 ***
 
@@ -360,6 +361,9 @@
 * [Extras Category](extras-category/README.md)
   * [Extra Category Overview](extras-category/extra-category-overview.md)
   * [Extra Category Reporting](extras-category/extra-category-reporting.md)
+  * [Out / Home](extras-category/out-home/README.md)
+    * [Out/Home - Web Booking](extras-category/out-home/out-home-web-booking.md)
+    * [Out / Home - Ticket](extras-category/out-home/out-home-ticket.md)
 * [Discounts/Supplements](discounts-supplements.md)
 * [Disc/Suppl Categories](disc-suppl-categories.md)
 * [Ticket Categories](ticket-categories.md)

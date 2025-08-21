@@ -1,14 +1,23 @@
 # How to set autobilling for extras
 
-Those can be done on the extra general page in the automatic billing section.&#x20;
+Autobilling for **extras** is configured on the **Extra General** page, in the **Automatic Billing** section.
 
 <figure><img src="../.gitbook/assets/image (20) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* Write the department code.
-* the account debit and the account deposit. They're not mandatory, but they will be used in the invoice.&#x20;
-* Select the creditor. Selecting the creditor will also automatically make the extra use of the creditor currency.&#x20;
-* To activate, select the autobilling check box.&#x20;
-* You can set the schedule daily, weekly, or monthly, or days after the same as for a hotel.&#x20;
-* You can schedule in the past the same as for the hotel.&#x20;
-* Adding your schedule will use the schedule set and make a separate invoice.&#x20;
-* If unchecked, the extra will be invoiced in the hotel invoice.
+#### **Configuration Steps**
+
+1. **Department Code**\
+   Enter the department code to be shown on the invoice.
+2. **Account Debit / Account Deposit** _(Optional)_\
+   These fields are not mandatory, but if filled, they will appear on the generated invoice.
+3. **Select the Creditor**
+   * Mandatory for autobilling to work.
+   * The extra will automatically use the **creditor’s currency** once selected.
+4. **Activate Autobilling**\
+   Check the **Automatic Billing** checkbox to enable autobilling for this extra.
+5. **Set the Schedule**
+   * Options: **Daily**, **Weekly**, **Monthly**, or **Days After** (similar to hotel autobilling).
+   * You can also schedule invoices for **past dates** in the same way as for hotels.
+6. **Save the Settings**
+   * If autobilling is **enabled**, the extra will be invoiced **separately** according to the defined schedule.
+   * If autobilling is **disabled**, the extra will be included in the **hotel’s invoice**.

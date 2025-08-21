@@ -1,10 +1,12 @@
 # Payment File Import
 
-Applicable for Administrator and Financial
+### 📄 Overview
 
-<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+The **Payments** module provides functionalities to manually  import payments associated with bookings and customers. It includes a robust interface for registering new payments and a streamlined **Payment File Import** system for automating bank payments processing.
 
-This is a function that allows importing into the system the payments that have been made to the bank by the customers.
+***
+
+### 🎯 Purpose
 
 Each company in the system can choose a certain bank where its payments will be made.
 
@@ -21,3 +23,22 @@ The payment date is customizable within the interface, with the default set to t
 Each payment from the system has a certain “method of payment” associated with it. For the payments that come from the bank, a special method of payment will be needed.
 
 All the imported payments will appear in Payment Registration.
+
+***
+
+### 🧭 Instructions
+
+#### &#x20;**Payment File Import**
+
+1. Obtain the **payment file** from the bank (format varies per bank).
+2. Navigate to the **Payment File Import** section.
+3. Upload the file.
+
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+### 📌 Notes
+
+* Payment files are validated upon upload. Any unmatched or erroneous records will be flagged for review.
+
+
+

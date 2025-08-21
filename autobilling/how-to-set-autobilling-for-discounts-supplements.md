@@ -1,12 +1,21 @@
 # How to set autobilling for discounts/supplements
 
-For discounts/supplements, the auto billing is handled in the discount/supplement in the automatic billing section.&#x20;
+Autobilling for **discounts** and **supplements** is configured in the **Automatic Billing** section of each discount/supplement entry.
 
-<figure><img src="../.gitbook/assets/image (21) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (321).png" alt=""><figcaption></figcaption></figure>
 
-* The department code and account debit are used in the invoice and appear there.&#x20;
-* Set a creditor.&#x20;
-* Activate the checkbox for automatic billing.&#x20;
-* Set the schedule: daily, weekly, monthly, or days after.&#x20;
-* Using their own schedule will create a separate invoice for the discount and supplement.&#x20;
-* After that, click Save.
+#### **Configuration Steps**
+
+1. **Department Code**\
+   Enter the department code to be displayed on the invoice.
+2. **Account Debit**\
+   Enter the account debit number to be shown on the invoice.
+3. **Set the Creditor**\
+   Select the creditor to whom the invoice will be issued.
+4. **Activate Automatic Billing**\
+   Check the **Automatic Billing** checkbox to enable invoicing.
+5. **Set the Schedule**
+   * Options: **Daily**, **Weekly**, **Monthly**, or **Days After** (similar to hotels and extras).
+   * Using a dedicated schedule will create a **separate invoice** for the discount or supplement.
+6. **Save the Settings**\
+   Click **Save** to apply your autobilling configuration.
