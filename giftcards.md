@@ -48,7 +48,7 @@ Click on Payments tab to pay the gift card.&#x20;
 
 The gift card appears as being paid, and it can be used for bookings in the office or web booking.
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Click on card preview, and you can see a PDF file with the card. It contains the gift card information, the amount, an informative text and a custom text.
 
