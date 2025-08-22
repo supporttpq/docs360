@@ -4,10 +4,13 @@ The select offer email template of each agency is a custom-built template by Row
 
 The customer offer email contains the following section:
 
-* per brand header message (with dynamic variable option)&#x20;
+* per brand header message (with dynamic variable option - add "Message" variable)
+
+<figure><img src="../.gitbook/assets/image (327).png" alt=""><figcaption></figcaption></figure>
+
 * custom message that can be set for each particular customer&#x20;
 
-<figure><img src="../.gitbook/assets/image (270).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (328).png" alt=""><figcaption></figcaption></figure>
 
 * offer benefits from the agency
 
