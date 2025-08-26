@@ -129,26 +129,6 @@ Before creating a new payment method, ensure:
 | **Booking Gift Card Payment**             | When checked, it allows the gift card to be used for another agency besides the one for which it was created.                                  |
 | **Booking Gift Card Own Agency Payments** |                                                                                                                                                |
 
-{% columns %}
-{% column width="50%" %}
+5. **Save** the new payment method.
 
-{% endcolumn %}
-
-{% column width="50%" %}
-
-{% endcolumn %}
-{% endcolumns %}
-
-{% columns %}
-{% column %}
-**"Pay from home" Payment**
-{% endcolumn %}
-
-{% column %}
-
-{% endcolumn %}
-{% endcolumns %}
-
-1.
-2. **Save** the new payment method.\
-   It will be automatically associated with the **currently selected company** in the system.
+It will be automatically associated with the **currently selected company** in the system.
