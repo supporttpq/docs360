@@ -117,5 +117,38 @@ Before creating a new payment method, ensure:
     | **Active**                     | Enable this option if the method should be **available for use** in bookings or financial operations. |
 
     > ⚠️ **Note**: If selecting **VISA** as the card type and the customer pays using a **Visa/Dankort** on the **DIBS** platform, DIBS will treat this as a **VISA** transaction. As a result, the payment will be registered using the **VISA** payment method in Tourpaq, not the Visa/Dankort method.
-4. **Save** the new payment method.\
+
+
+4. Other useful fields:
+
+| **Field**                                 | **Description**                                                                                                                                |
+| ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| Is GDPR Sensitive                         | Anonymize the payment **type** for a booking of an anonymized customer for users logged with other account than "Administrator" or "Financial" |
+| **"Pay from home" Payment**               |                                                                                                                                                |
+| **Agent Machine Payment**                 | When checked, it allows guides to pay with the payment machine                                                                                 |
+| **Booking Gift Card Payment**             | When checked, it allows the gift card to be used for another agency besides the one for which it was created.                                  |
+| **Booking Gift Card Own Agency Payments** |                                                                                                                                                |
+
+{% columns %}
+{% column width="50%" %}
+
+{% endcolumn %}
+
+{% column width="50%" %}
+
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+**"Pay from home" Payment**
+{% endcolumn %}
+
+{% column %}
+
+{% endcolumn %}
+{% endcolumns %}
+
+1.
+2. **Save** the new payment method.\
    It will be automatically associated with the **currently selected company** in the system.
