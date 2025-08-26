@@ -2,7 +2,7 @@
 
 The **Company** page shown in your screenshot allows administrators to manage and update details for a company within the system. Here’s a breakdown of the available functions:
 
-<figure><img src="../.gitbook/assets/image (165).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (337).png" alt=""><figcaption></figcaption></figure>
 
 ### **Edit Company – Page Overview**
 

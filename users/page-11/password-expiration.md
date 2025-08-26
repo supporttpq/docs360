@@ -1,23 +1,51 @@
 # Password expiration
 
-This new feature allows you to set a number of days for a user password to be available, so the user is force to change his password.
+### **Overview / Purpose**
 
-### **How to set it?**
+To improve security and comply with best practices, Tourpaq allows administrators to set a **password validity period** for users. Once enabled, users are required to change their password after a defined number of days, ensuring stronger account protection.
 
-You can enable this features by going into the EditUser page for the user you want to make the change, and check the "Enable password valability days" checkbox.\ After that you have to insert the valability days. This will be calculated from the moment you enable the feature, and is reseted from the moment the user changes his password.
+***
+
+### **How It Works**
+
+* Administrators can enable password validity settings per user.
+* A **validity period** (number of days) is defined during configuration.
+* The system tracks the password age and enforces changes when the set time expires.
+* Notifications and redirects help guide the user through the renewal process.
+
+***
+
+### **Key Features / Functions**
+
+* **Enable Password Validity**:
+  * Go to **Edit User Page**
+  * Check **“Enable password validity days”**
+  * Enter the number of days (e.g., 30)
+* **Automatic Tracking**:
+  * The countdown starts from the moment the feature is enabled.
+  * The countdown resets each time the user successfully changes their password.
+* **User Alerts & Enforcement**:
+  * System notifications are triggered based on days remaining until expiration.
 
 <figure><img src="../../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
 
-**Scenarious**
+### **Examples / Scenarios**
 
-* If you have less then 10 days before your password expires. The system will send you an alert after you logged in.
+1. **Password expiration in more than 10 days**
+   * No alerts are shown.
+2. **Password expiration in less than 10 days**
+   * The user receives an **alert after logging in** to remind them that their password is about to expire.
 
 <figure><img src="../../.gitbook/assets/10_days-28e9f119cefa05cc22920bb8531e9fef.jpg" alt=""><figcaption></figcaption></figure>
 
-* You have less then 3 days before your password expires. The system redirect you to the change password page.
+3. **Password expiration in less than 3 days**
+   * The user is **redirected to the Change Password page** after login and must update the password.
 
 <figure><img src="../../.gitbook/assets/3_days-c28af95d0ce4d00aed320ee9a5569f7e.jpg" alt=""><figcaption></figcaption></figure>
 
-* Your password has expired. You will recieve a message on login, and you have to contact an administrator to change your password if you want to continue to use the application.
+4. **Password expired**
+
+* The user sees an **expiration message at login**.
+* The user must contact an **administrator** to reset the password before they can access the system again.
 
 <figure><img src="../../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure>

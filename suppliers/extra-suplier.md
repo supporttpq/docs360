@@ -1,34 +1,41 @@
-# Extra suplier
+# Extra supplier
 
-To set an extra supplier Go to User / Users&#x20;
+### **Overview / Purpose**
 
-Click on new user&#x20;
+Extra Suppliers represent providers of destination services, such as excursions, transfers, or other add-ons. They need an **Extra Supplier user type** to manage their offerings, receive notifications, and interact with bookings through the system.
 
-Set the user role as extra supplier&#x20;
+***
 
-Set the username&#x20;
+### **How It Works**
 
-Set the password&#x20;
+#### **1. Create Extra Supplier User**
 
-Set the first name and last name.&#x20;
+1. Navigate to **Users → Users**.
+2. Click **New User**.
+3. Fill in the user details:
+   * **Role:** Extra Supplier
+   * **Username**
+   * **Password**
+   * **First Name / Last Name**
+   * **Seller ID**
+   * **Agency**
+   * Any **additional permissions or settings** required for the role.
+4. Click **Save**.
 
-Set the seller ID&#x20;
+#### **2. Create Extra Supplier Record**
 
-Set the agency and set any additional settings required.&#x20;
+1. Go to **Users → Suppliers**.
+2. Click **Create New Supplier**.
+3. Fill in:
+   * **Supplier Name**
+   * **User ID** (link to the user created above)
+   * **Email** for receiving communication schedules
+   * **Reservation Department Email** (used for dynamic transfer confirmations, if required)
+4. Click **Save**.
 
-After that click on save.&#x20;
+#### **3. Assign Services**
 
-Go to Users / Suppliers&#x20;
-
-Click on new supplier&#x20;
-
-Set the name&#x20;
-
-Set the user ID&#x20;
-
-Set the email that will receive communication schedules.&#x20;
-
-Set the reservation department email that will be used for dynamic transfer confirmation if required.&#x20;
+* Once created, the Extra Supplier can manage lists of extras, tee times, or destination services as configured by the system administrator.
 
 <figure><img src="../.gitbook/assets/image (34) (1).png" alt=""><figcaption></figcaption></figure>
 

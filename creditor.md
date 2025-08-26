@@ -1,8 +1,20 @@
 # Creditor
 
-The main requirement to use Autobilling feature is to have a creditor created in the system.&#x20;
+### **Overview / Purpose**
 
-A creditor can be created in Tourpaq from Users/Creditors.
+The **Autobilling feature** in Tourpaq automates the process of generating invoices for suppliers, hotels, extras, and other services. To use this functionality, the system requires that at least one **creditor** is created and linked to the relevant supplier or service.
+
+### **How It Works**
+
+* **Creditors** act as financial entities representing the suppliers or partners that Tourpaq invoices on behalf of.
+* When Autobilling is triggered, the system uses the **creditor details** to generate invoices automatically.
+* Without a creditor, Autobilling cannot process or issue invoices.
+
+### **Notes**
+
+* To create a creditor, go to **Users → Creditors** and add the required details.
+* Always double-check creditor details (company name, financial data) to ensure invoices are generated correctly.
+* Each supplier that requires automated invoicing should be linked to its own creditor.
 
 <figure><img src=".gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
 

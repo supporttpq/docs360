@@ -317,7 +317,7 @@
   * [Company Setup](company/company-setup.md)
 * [Suppliers](suppliers/README.md)
   * [Hotel Supplier](suppliers/hotel-supplier.md)
-  * [Extra suplier](suppliers/extra-suplier.md)
+  * [Extra supplier](suppliers/extra-suplier.md)
 * [Hotel Manager](hotel-manager.md)
 * [Guides](guides/README.md)
   * [Guide Names](guides/guide-names.md)

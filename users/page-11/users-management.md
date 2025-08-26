@@ -1,10 +1,19 @@
 # Users Management
 
-### **Overview**
+## **Users Dashboard – User Management**
 
-This dashboard provides a comprehensive view of all users within the agency in system. It allows for easy management of user roles, permissions, login activity, and other administrative controls.
+### **Overview / Purpose**
 
-<figure><img src="../../.gitbook/assets/image (164).png" alt=""><figcaption></figcaption></figure>
+The **Users dashboard** provides a centralized view of all users within the agency or company. It enables administrators to manage user roles, permissions, login activity, and overall system access. This ensures secure and efficient control over who can perform specific actions in Tourpaq.
+
+### **How It Works**
+
+* All registered users are displayed in a **user table** with key information (username, role, company, last login, etc.).
+* Administrators can **search, filter, sort, and edit** users directly from this interface.
+* Actions like creating new users, blocking/unblocking, or assigning permissions are managed from the same page.
+* User access can be restricted temporarily (blocked) or permanently (deleted), depending on business and security needs.
+
+<figure><img src="../../.gitbook/assets/image (334).png" alt=""><figcaption></figcaption></figure>
 
 ### **User Table Fields**
 
@@ -22,37 +31,74 @@ This dashboard provides a comprehensive view of all users within the agency in s
 | **User Blocked**       | Checkbox indicating if the user is blocked.                                    |
 | **Actions**            | Icons to edit or delete the user profile.                                      |
 
-On the **Users page** (as shown in your image), you can perform a range of administrative tasks related to managing system users. Here’s a detailed breakdown of what you can do:
+### **Key Features / Functions**
 
-#### **Main Functions on the Users Page**
+#### 👥 **View All Users**
 
-1. **View All Users**
-   * See a list of all registered users in the system with key info like role, company, last login, and permissions.
-2. **Search & Filter Users**
-   * Filter by:
-     * Username, First Name, Last Name
-     * Signature, Role
-     * Show/Hide inactive or hidden users
-3. **Sort Columns**
-   * Sort users by different columns (e.g., Username, Last Login) to find information quickly.
-4. **Create New User**
-   * Use the **Create** button to add a new user with customized roles, permissions, and company associations.
-5. **Edit User Details**
-   * Click the **edit icon** next to a user to modify their:
-     * Name
-     * Role
-     * Rights
-     * Brand access
-     * Associated company or signature
-     * Block/unblock status
-6. **Assign/Modify Permissions**
-   * Grant or revoke specific rights (like editing bookings or viewing financial data).
-7. **Delete User**
-   * Permanently remove a user by clicking the **trash/delete icon** (if allowed).
-8. **Block/Unblock User**
-   * Temporarily prevent access by checking the **“User Blocked”** box.
-9. **View Login Activity**
-   * Check the **Last Login** field to monitor user activity or troubleshoot access issues.
-10. **Navigate Through Pages**
+* See a full list of active, inactive, or hidden users.
+* Each entry shows: username, full name, role, company, signature, permissions, and last login.
 
-* Use pagination controls at the bottom to browse multiple pages of users.
+#### 🔍 **Search & Filter Users**
+
+* Search by: username, first name, last name, signature, or role.
+* Toggle visibility for inactive or hidden users.
+* Apply filters to narrow down results quickly.
+
+#### ↕ **Sort Columns**
+
+* Reorder the user list by clicking on column headers (e.g., sort by **Username** or **Last Login**).
+
+#### ➕ **Create New User**
+
+* Add a new user with customized settings:
+  * Name and signature
+  * Role assignment
+  * Company or agency association
+  * Brand access
+  * Rights and permissions
+
+#### ✏️ **Edit User Details**
+
+* Update user information such as name, role, rights, or company.
+* Change brand access or signatures.
+* Adjust block/unblock status.
+
+#### 🔑 **Assign / Modify Permissions**
+
+* Grant or revoke access to specific actions (e.g., edit bookings, view payments, overbook transports).
+
+#### 🗑️ **Delete User**
+
+* Permanently remove a user (only possible if no dependent bookings or financial records exist).
+
+#### 🚫 **Block / Unblock User**
+
+* Blocked users remain in the system but cannot log in.
+* Useful for temporary suspensions or seasonal employees.
+
+#### 🕒 **View Login Activity**
+
+* Track the **Last Login** field to monitor user activity and troubleshoot access issues.
+
+#### 📄 **Pagination**
+
+* Navigate across multiple pages of users when the list is large.
+
+***
+
+### **Examples or Scenarios**
+
+* An **administrator** creates a new sales agent user, assigns them to a specific agency, and grants booking rights.
+* A **seasonal guide** finishes their contract, so the admin **blocks** their user account instead of deleting it.
+* A **financial manager** reviews the login history to check whether a team member accessed the system recently.
+* An **IT administrator** filters users by role to verify which accounts still have **administrator rights**.
+
+***
+
+### **Notes / Best Practices**
+
+* Always **assign the lowest necessary permissions** to reduce security risks.
+* Use **block/unblock** instead of deletion when a user may return later.
+* Regularly review **Last Login** data to identify inactive accounts and maintain system hygiene.
+* Deletion should only be used if the user has no linked bookings or financial records.
+* Consider role-based filtering to quickly audit which users have high-level access (Administrator, Financial, Super Admin).
