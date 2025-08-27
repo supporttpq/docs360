@@ -391,6 +391,7 @@
   * [Ticket texts](email-setup/tickets-attachments/ticket-texts.md)
 * [Dynamic E-mail/SMS Center](email-setup/page-14/README.md)
   * [Dynamic Email - Upload Image](email-setup/page-14/dynamic-email-upload-image.md)
+  * [Dynamic Email - Link Dialog](email-setup/page-14/dynamic-email-link-dialog.md)
 
 ***
 
