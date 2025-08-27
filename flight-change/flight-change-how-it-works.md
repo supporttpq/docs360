@@ -4,7 +4,7 @@
 
 1. When a change is made to a flight, the Flight Change Type field is automatically filled in (but can be edited later).
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. To save the changes made to the timetable, select the row(s) where changes were made, and 2 options now appear:
 

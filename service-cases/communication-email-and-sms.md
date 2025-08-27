@@ -4,7 +4,7 @@ The communication between agency and customer, regarding service cases, can be d
 
 There are dedicated buttons for that, on the service case editing page.
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 For the SMS to work, “SMS integration” needs to be enabled for the company from “Feature access” by a super admin. After that, complete required information in “SMS configuration” tab in System setup.
 
