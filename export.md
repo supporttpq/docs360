@@ -145,5 +145,7 @@ Initiates a **manual export** using the current filters and options selected, in
 #### Notes
 
 * Each schedule can run independently based on its frequency and enabled status.
-* Scheduled exports are genarated via filters used and needs to be downloaded  by pushing the button Get Lates Results
 * Use descriptive names for schedules to avoid confusion (e.g., “Weekly Cancellations Export”).
+* Each schedule is generated only once a day (the time is set by the Super Admin and is usually at night). The resulting file can be downloaded manually using the Get Latest Result button.
+* Each user only sees the schedulers defined by him/her (he/she cannot see other schedulers defined by other users).
+* The filters set do not affect already created schedulers. They can only be generated with the Export button, or to create a new scheduler using the filters.
