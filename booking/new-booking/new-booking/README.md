@@ -105,7 +105,7 @@ The **Booking panel** provides a quick summary of financial details, booking met
 
 * **Total amount** – The final selling price of the booking (after discounts).
 * **Normal Price** – The price, calculated using P prices (both adult and child). Discounts are not included.
-* **Discount** – Any reductions applied to the booking. Represents the difference between the Normal price and the Total amount.
+* **Discount** –Represents the discount from the normal price
 * **Selling price** – The actual price charged to the customer.
 * **Total Profit** – The margin earned after subtracting supplier costs from the selling price.
 
