@@ -28,7 +28,7 @@ Before using or configuring the Gift Card Payment method, ensure:
 * The **Gift Card Payment** method is marked as **active** and available for use.
 * The **Economic tab** is accessible in the **Edit Booking** view.
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Instructions: Using Gift Card Payment**
 

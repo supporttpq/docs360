@@ -128,7 +128,7 @@ Before defining rules in this screen:
 
 ### **Fields Explained**
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 | **Field**                  | **Description**                                                                     |
 | -------------------------- | ----------------------------------------------------------------------------------- |
@@ -197,7 +197,7 @@ The system will automatically calculate the correct price based on the rules def
 
 ### Field Descriptions
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 | Field                           | Description                                                                           |
 | ------------------------------- | ------------------------------------------------------------------------------------- |

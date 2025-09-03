@@ -29,4 +29,4 @@ All the Flight Change email templates will can use the following variables:
 | Arrival date   | Date; in local time at the arrival gateway   |
 | Arrival time   | Time; in local time at the arrival gateway   |
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

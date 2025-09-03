@@ -2,13 +2,13 @@
 
 VisitSun is an application designed for supporting the guests to have access to special features and information, to stay updated on any changes and to get inspired related to their bookings in order that the entire experience to be valuable. Application is available on both Android or IOS devices. Below, there is a picture with the application running on IOS:
 
-<figure><img src=".gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Guests can login using the booking number and the password provided.
 
 After login, guests are directed to a front page having a welcome quote.
 
-<figure><img src=".gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 From here, user can access available tabs in the application: Booking, Guide, Destination and VisitSun.
 
@@ -18,7 +18,7 @@ In this tab, user can access information about the booking.
 
 **Welcome screen** provide information about number of days before departure, an introduction text and latest news regarding the destination. Introduction text displayed on "Welcome screen" can be configured from Tourpaq Office logged as admin by accessing **Guest App->Settings->Edit Agency->General settings**
 
-<figure><img src=".gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In this section, there are also displayed notifications for insider tips. Notifications can be configured from **Guest App->Edit Agency->Manage VisitSun Settings->Notifications**.
 
@@ -34,7 +34,7 @@ In **Weather** tab, details about weather during stay days are shown. Weather AP
 
 Using **Upgrade your vacantion** tab, user can update the booking by adding products (like seating or baggage facilities) to his reservation from Customer Center. Products which can be booked here are defined in Tourpaq Office and description and photos for products available in the application can be configured in Tourpaq Office under **Extras Setup->Extras Categories** tab.
 
-<figure><img src=".gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Guide tab <a href="#guide-tab" id="guide-tab"></a>
 
@@ -46,7 +46,7 @@ Using **Chat** tab, user can start conversation with guides from the booking des
 
 In **Weekly activities** section, user will be able to see weekly activities defined from **Guest App->Weekly Activities**.
 
-<figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src=".gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
