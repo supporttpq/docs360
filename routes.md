@@ -14,7 +14,7 @@ To create a Route, the user must go to the **Transport** tab in the **Dashboard*
 
 The Route Dashboard allows the managing of the routes. They can be created, edited or deleted from there. A new route can be created by pressing the Create button on the right of the screen.
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Code: should be treated as any transport code with abreviations of the departure and arrival points
 * Route name: the name of the route
@@ -47,7 +47,7 @@ Pickup points are components of [Routes](https://docs.tourpaq.com/docs/documenta
 
 This is the place where routes are assigned to the transports.
 
-<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Multiple transports can follow a specific route and all the bookings made for these transports can or must choose a pickup point for each passenger.
 

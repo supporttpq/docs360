@@ -23,7 +23,7 @@ In the flight change system, it is straightforward to see which guests have not 
 
 If the guest fails to respond to the flight change, then the flight change is forwarded to a service mail that can take proper action (call the passenger, etc.).
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 🔍 Filter Section (Top Panel)
 
