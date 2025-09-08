@@ -148,7 +148,11 @@ Initiates a **manual export** using the current filters and options selected, in
 * Use descriptive names for schedules to avoid confusion (e.g., “Weekly Cancellations Export”).
 * Each schedule is generated only once a day (the time is set by the Super Admin and is usually at night). The resulting file can be downloaded manually using the Get Latest Result button.&#x20;
 
-The finance export file is generated each night but, the export is dependent on the schedule set, e.g daily, yes, then it is for this night, but if weekly it will take the export from that specific, day scheduled in the schedule. The Super Admin collaborates with the developer to determine the specific hour for scheduling tasks. Additionally, the scheduling of the Finance export file is separate from the time set for the scheduler. It is also worth noting that email addresses for the Finance Export can be configured in Setup / System Setup / General Information / Settings.&#x20;
+The finance export file is generated each night but, the export is dependent on the schedule set, e.g daily, yes, then it is for this night, but if weekly it will take the export from that specific, day scheduled in the schedule. The Super Admin collaborates with the developer to determine the specific hour for scheduling tasks.&#x20;
+
+### Daily export of  the Financial Export
+
+Additionally, the scheduling of the Finance export file is separate from the time set for the scheduler. It is also worth noting that email addresses for the Finance Export can be configured in Setup / System Setup / General Information / Settings.&#x20;
 
 <figure><img src=".gitbook/assets/image (352).png" alt=""><figcaption></figcaption></figure>
 
