@@ -1,25 +1,45 @@
 # Free room count behavior
 
-This feature handles the recalculation of the free hotel allotment number of a price list rule.&#x20;
+### Overview
 
-> **Please note!** Free room count value **will not be recomputed** on a pricelist that has no sale value set (any of the P1, P2, D1, etc..)
+This feature manages the **recalculation of the free hotel allotment** for price list rules. It ensures that the number of available rooms is updated correctly after changes such as allotment updates, bookings, cancellations, or manual triggers.
 
-If the number on the price list is not greater than 0, then the offer will be listed on the agency presentation site and cannot be booked on Web Booking or Office. In the same time, because of the large number of pricelist rules, they cannot all (re)compute this number instantly.
+### Purpose
 
-#### **That is why a queue is used in Tourpaq.**
+The recalculation is necessary to:
 
-When updating hotel allotment values, this queue collects all the price lists that should update the free room count. The system then starts recomputing the free room values of each. It can take several seconds or more minutes, depending on the extent of the updated interval and the number of transports and agencies of the company selling that room. The wait duration can be estimated between 2 and 15 minutes. If after 15 minutes the free room count in the price list rule is not recalculated, we can consider this a suspicious situation that needs to be investigated.
+* Keep the free room count accurate across the system.
+* Ensure agencies and web booking tools display the correct availability.
+* Prevent booking errors caused by outdated allotment values.
 
-**Exception from the queued recalculation**
+### Preconditions
 
-When placing a booking, canceling one, or replacing a room in a booking, the effect is updating the booked/free room allotment. This is visible in the edit hotel page, hotel allotment per day tab. \ This update should also trigger the pricelist rule free hotel room count number recalculation. \\
+* The price list rule must have a **sale value** set (e.g., P1, P2, D1).
+* If the price list value is not greater than 0:
+  * The offer will appear on the **agency presentation site**, but
+  * It **cannot be booked** via Web Booking or Office.
 
-At the moment, the exact price list rule that is being used/canceled/released by being replaced in the booking will be updated **instantly**. No queue is involved here. This means that the **exact same** price list rule can be booked seconds after.
+### Process
 
-> **Please note!** As of this document's date, other pricelist rules that sell the same hotel room as above (but with other transports) are not being instantly updated. They are still being recalculated via a queue and will take some time to be observed.
+#### Automatic Recalculation via Queue
 
-#### **Manual recalculation**
+* Tourpaq uses a **queue system** to handle free room recalculation.
+* When hotel allotments are updated, the affected price lists are placed in the queue.
+* The system processes them one by one, updating the free room values.
+* Processing time depends on the number of rules, agencies, and transports, typically taking **2–15 minutes**.
+* If recalculation takes **longer than 15 minutes**, it is considered suspicious and requires investigation.
 
-A manual recalculation of a price list rule's free room count values can be triggered by clicking on the magic wand icon highlighted below. The recalculation should be instant.
+#### Instant Recalculation on Bookings
+
+* When a booking is placed, canceled, or modified (e.g., replacing a room), the free/occupied allotment is updated **immediately** in the _Hotel Allotment per Day_ tab.
+* The corresponding price list rule is recalculated **instantly** (no queue).
+* This allows the same price list rule to be booked again within seconds.
+* ⚠️ Note: Other price list rules selling the same room (but with different transports) are **not** updated instantly. They still follow the queued process.
+
+### Manual Recalculation
+
+* Users can trigger a **manual recalculation** of a price list rule.
+* To do this, click on the **Magic Wand icon** (highlighted in the interface).
+* This recalculation is **instant**.
 
 <figure><img src=".gitbook/assets/image (64) (1).png" alt=""><figcaption></figcaption></figure>
