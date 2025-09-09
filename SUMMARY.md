@@ -189,7 +189,9 @@
   * [Agreed Allotment Stop Sale](stop-sales/agreed-allotment-stop-sale.md)
   * [Split the Stop Sale Rule](stop-sales/split-the-stop-sale-rule.md)
   * [Notification on Dashboard Stop Sale](stop-sales/notification-on-dashboard-stop-sale.md)
-* [Stop Sale Resort](stop-sale-resort.md)
+* [Close Out](close-out/README.md)
+  * [Create / Edit rule](close-out/create-edit-rule.md)
+  * [Enable / Disable rule](close-out/enable-disable-rule.md)
 * [Hotel Beds](hotel-beds.md)
 * [Hotel Bed Banks - FAQ](hotel-bed-banks-faq.md)
 * [Hotel combination](hotel-combination.md)
@@ -317,7 +319,7 @@
   * [Company Setup](company/company-setup.md)
 * [Suppliers](suppliers/README.md)
   * [Hotel Supplier](suppliers/hotel-supplier.md)
-  * [Extra suplier](suppliers/extra-suplier.md)
+  * [Extra supplier](suppliers/extra-suplier.md)
 * [Hotel Manager](hotel-manager.md)
 * [Guides](guides/README.md)
   * [Guide Names](guides/guide-names.md)
@@ -391,6 +393,7 @@
   * [Ticket texts](email-setup/tickets-attachments/ticket-texts.md)
 * [Dynamic E-mail/SMS Center](email-setup/page-14/README.md)
   * [Dynamic Email - Upload Image](email-setup/page-14/dynamic-email-upload-image.md)
+  * [Dynamic Email - Link Dialog](email-setup/page-14/dynamic-email-link-dialog.md)
 
 ***
 

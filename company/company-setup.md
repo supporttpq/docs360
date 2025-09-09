@@ -1,168 +1,167 @@
 # Company Setup
 
-A company can be created only by a Superadministrator user. Those who wish to create a new company are advised to contact Tourpaq Support. A company can be created in two ways:
+### **Overview / Purpose**
 
-### Manual Setup <a href="#manual-setup" id="manual-setup"></a>
+This section explains how companies, brands, and users are created and configured within Tourpaq. Proper setup ensures smooth booking operations, financial management, and role-based access control. Only Superadministrator users can create new companies, after which administrators and other roles manage brands and users for their company.
 
-Details of a company can be edited by an Administrator user. These are the fields that can be modified:
+***
 
-* Name of the company
-* Address of the company
-* Country
-* Postcode
-* IBAN
-* CVR
-* Phone
-* Fax
+### **How It Works**
 
-After this, a Brand and an Admin user type are required. These can be firstly created by the Superadministrator. But after the first Brand and Admin user have been created, any Admin user can create Brands and users for the company.
+#### **Company Creation**
+
+* **Superadministrator only:** Only a Superadministrator can create a new company. Users who need a new company should contact Tourpaq Support.
+* **Manual Setup:**
+  * Fill in basic company details: Name, Address, Country, Postcode, IBAN, CVR, Phone, Fax.
+  * After the company is created, a **Brand** and an **Admin user** must be created first.
+* **Automated Setup:**
+  * Minimal company and user info can be entered via API.
+  * At least one agency must be created, which automatically creates a WebUser and Windows Service user.
+* **Editing Company Info:** Once created, an Administrator can update company details (Name, Address, Country, Postcode, IBAN, CVR, Phone, Fax).
+
+***
+
+## **Manual Setup**
 
 #### **Brand Creation**
 
-The following fields are necessary for the brand to work properly:
+Each brand requires specific metadata for proper booking, ticketing, insurance, and web functionality.
 
-* General Tab
-  * Brand name
-  * Brand code
-  * Contact email address
-  * Booking IDs start from (this must be different from other brands) - number from which the bookings begin to be counted
-  * Booking IDs ends to (this must be different from other brands) - number at which the booking count ends
-  * Offer ID's start - number from which the offers begin to be counted
-  * Offer ID's ends - number at which the offers count ends
-  * Gift Card ID's start - number at which thegift cards count start
-  * Gift Card ID's end - number at which the gift cards count ends
-  * WebBooking link - link for the webbooking page
-  * Allow Cancel. Ins. changes - guests cannot make any more changes to insurances, x days after the booking has been created
-  * Stop Web changes - guests cannot make any changes to the bookings, x days before the departure
-* Ticket Tab
-  * Brand name
-  * Country
-  * Postcode
-  * Address
-  * CVR
-  * Phone
-  * Fax
-  * Bank
-  * Creditor number
-* Insurance Tab
-  * Insurance type
-  * Insurance agent username
-  * Insurance agent password
-  * Insurance agent code
-  * Insurance agency code
-  * Days no before/after departure - insurances are reported to the company x days before the departure
-  * Creditor number
+**General Tab:**
 
-Note!!! Information for Insurance Tab is taken from the insurance company.
+* Brand Name & Code
+* Contact Email
+* Booking IDs (Start / End)
+* Offer IDs (Start / End)
+* Gift Card IDs (Start / End)
+* WebBooking link
+* Booking restrictions (Cancel/Insurance changes, Stop Web changes)
+* Other: Bcc email, Terms & Conditions link, Voucher ID range, Hide included extras prices, Custom text per brand, Currency, Autocomplete passenger names from previous bookings
 
-Other fields:
+**Ticket Tab:**
 
-* General Tab
-  * Bcc e-mail address
-  * Website reset cache link - link to the presentation site that uses the Tourpaq API, used to reset the system cache
-  * Terms and Conditions page link
-  * Voucher IDs start from - number from which the voucher count starts
-  * Voucher IDs ends to - number at which the voucher count ends
-  * Hide included extras prices - hides the price of the extras "Add to basic price"; when active, it will disregard multiple selection categories
-  * Uses custom text - when a company has more brands, this allows each brand to have a different name for a product
-  * Currency
-  * Autocomplete passenger names from last booking - loads the names of passengers from the previous booking made by the same customer
-*   Ticket Tab
+* Brand Name, Country, Postcode, Address, CVR, Phone, Fax, Bank, Creditor number
+* IBAN, BIC/Swift, Hide Payment Plan
+* Customized Star (replaces default “Stars” header when filled)
 
-    * IBAN number
-    * Bic Code Swift Address
-    * Hide Payment Plan
-    * Customized Star – the text that replaces the default "Stars" header. This replacement occurs only when the Customized Stars field for the respective hotel is filled.&#x20;
+**Insurance Tab:**
+
+* Insurance Type, Agent Username, Password, Codes
+* Days before/after departure for reporting
+* Creditor number
+
+> Note: Insurance information is provided by the insurance company.
+
+*
 
     <figure><img src="../.gitbook/assets/customized-stars-header-122824a932809b8c5272a49b5b95b3cf.png" alt=""><figcaption></figcaption></figure>
 
-#### **User creation**
+#### **User Creation**
 
-Mandatory fields:
+Users are assigned roles with permissions tailored to their responsibilities.
 
-* UserName
-* Password
-* First Name
-* Last name
+**Mandatory Fields:**
+
+* Username, Password, First Name, Last Name
 * Seller ID in booking
-* User role
+* User Role
 
-Other fields:
+**Optional / Advanced Fields:**
 
 * Status
-* Enable password valability days - enables the usage of "Password valability days"
-* Password valability days - the user cannot use the password after a number of days
-* Phone - is used for 2FA
-* Email - where the user will receive emails and also used for 2FA
-* Use 'One Time Password' feature
-* Web user - necessary for companies that use the webbooking feature, allows for bookings to be used from internet by guests
-* VistSun User
-* Select Offer - Profile Picture - you can select profile picture for the user when an offer is sent
-* Exclude personal contact data from Select Offer - Agency contact data will be used instead!
-* Disable Two Factor - enable/disable the 2FA per user
+* Enable Password Validity Days (forces password change after a set number of days)
+* Phone & Email (used for 2FA)
+* One Time Password feature
+* WebUser access (for WebBooking)
+* VisitSun user
+* Profile picture for Select Offer
+* Exclude personal contact data from Select Offer
+* Disable 2FA
 
-Additional settings - allows and give some additional permission to the user depending on his role:
+**Additional Permissions (Role-Dependent):**
 
-* Allow to book stop sale transport
-* Allow to merge customers
-* Allow financial Export
-* Show personal details in financial export
-* Show personal details in hotel lists
-* Show personal details in extras lists
-* Show personal details in TeeTime lists
-* Show personal details in Flight Transfer lists
-* Allow to view Personal Data on Booking and VAB \[This also affects if you can view the Customer and Phone columns in VAB]
-* Allow to add special offers
-* Allow to add special cost
-* Allow to overbook transports
-* Allow to overbook hotels
-* Allow to show Profit Tab
-* Allow to login on multiple PCs
-* Allow to set LMS limit
-* Allow to overbook Generic Product
-* Allow to override Seating Rules
-* Allow to see all unpaid bookings
-* Hide as filter on lists: \[Hide this user in the lists throughout the system]
-* Ignore export departure date limit
-* Allow to view Internal Logs
-* Allow User To UnApprove ExtraOrder Refunds
+* Booking controls: stop sale transport, overbook transport/hotels, override seating rules, add special offers/costs
+* Customer & financial data: merge customers, financial exports, view personal data in bookings, show Profit Tab
+* System access: login on multiple PCs, set LMS limit, see unpaid bookings, ignore export departure date limit
+* Administrative: hide user from lists, view internal logs, unapprove extra order refunds
+
+***
+
+### **Key Features / Functions**
+
+* **Role-Based Access:** Users have permissions according to their roles (Admin, Sales, Financial, etc.)
+* **Booking & Web Integration:** Brands and users control booking IDs, WebBooking access, and ticket settings
+* **Financial & Insurance Management:** Each brand can manage insurance reporting, creditor numbers, and voucher IDs
+* **Security:** Password validity, 2FA, and user visibility settings maintain compliance and security
 
 <figure><img src="../.gitbook/assets/image (28) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### Automated Setup <a href="#automated-setup" id="automated-setup"></a>
+### **Notes / Best Practices**
 
-USERS -> Company -> New API
+* Ensure **ID ranges for bookings, offers, gift cards, and vouchers** do not overlap across brands.
+* First brand and admin must be created by a Superadmin; afterward, admins can manage additional brands and users.
+* Regularly review user permissions and brand settings to ensure GDPR compliance and operational accuracy.
+* Use password validity and 2FA settings to enhance security.
+* Update contact details, financial, and insurance info as needed to avoid operational issues.
 
-For Automated New Company creation, the user will only have to complete the following informations:
+## Automated Setup <a href="#automated-setup" id="automated-setup"></a>
+
+### **Overview / Purpose**
+
+The Automated Setup feature allows for quick creation of a new company, along with its initial user and agency, through a streamlined API process. This reduces manual entry and ensures that necessary default users (WebUser and Windows Service) are created automatically.
 
 <figure><img src="../.gitbook/assets/image (29) (1).png" alt=""><figcaption></figcaption></figure>
 
-* Company Information
-  * Company Name
-  * Company Type
-  * Country
-  * Currency
-  * PostCode
-* User details
-  * First Name
-  * Last Name
-  * User Name
-  * Email
-  * Password
+### **How It Works**
 
-After the Company details are completed, at least one agency should be created.
+1. Navigate to: **USERS → Company → New API**.
+2. Fill in the required **Company Information**:
+   * **Company Name**
+   * **Company Type**
+   * **Country**
+   * **Currency**
+   * **PostCode**
+3. Fill in the **User Details** for the first user:
+   * **First Name**
+   * **Last Name**
+   * **User Name**
+   * **Email**
+   * **Password**
+4. Once the company information is completed, at least **one agency** must be created for the company.
+5. Provide the **Agency Information**:
+   * **Agency Name**
+   * **Phone**
+   * **Email**
+   * **Address**
+   * **Theme** (website theme)
+6. Specify **Web Setup Options**:
+   * **Staging WebBooking & Web** – creates both a webbooking and presentation site
+   * **Staging WebBooking** – creates only a webbooking site
+7. After saving, the system automatically creates:
+   * A **WebUser**
+   * A **Windows Service user**
+
+These default users are ready for use and linked to the newly created company.
 
 <figure><img src="../.gitbook/assets/image (30) (1).png" alt=""><figcaption></figcaption></figure>
 
-In order to add a new Agency,the following informations should be completed:
+### **Key Features / Functions**
 
-* Agency Name
-* Phone
-* Email
-* Address
-* Theme - the website theme
-* Add WebSite/Details
-  * Staging WebBooking & Web - This option will create a webbooking and presentation site
-  * Staging WebBooking - This option will create only a webbooking site
+* Fully automated company, agency, and user creation.
+* Automatic creation of essential users (WebUser & Windows Service) without extra steps.
+* Supports initial web setup for WebBooking and presentation sites.
+* Reduces manual data entry and ensures consistency.
 
-After the settings are completed, a WEBUSER and a WINDOWS SERVICE user will be automatically created.
+***
+
+### **Examples / Scenarios**
+
+1. **New Travel Agency Setup:**
+   * Fill company details: “Torpak DK” type “Tour Operator,” currency “EUR,” country “Denmark.”
+   * Add first user: John Doe, username “jdoe,” email “jdoe@tpq.com.”
+   * Add agency: “Tourpaq Agency,” phone +45 12345678, theme “Modern.”
+   * Select **Staging WebBooking & Web** to set up both sites.
+   * Result: WebUser and Windows Service accounts are automatically created.
+2. **Only WebBooking Setup:**
+   * Follow the same steps but select **Staging WebBooking**.
+   * Result: Only WebBooking site is created; the presentation site is not generated.

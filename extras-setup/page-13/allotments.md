@@ -30,7 +30,7 @@ The next step is setting up the allotments.
 
 <figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-As long as the transport resource is selected, there is no need for a start and end date, these beeing defined by the transport fix quota. When setting the number of products (Al1/Al2/Al3/Al4), the user must take into account that the values will be summed up. For example, if, Al1=30, Al2=20, AI3=10 and the rest are 0, the total sum will be 60.
+When a transport has been selected in the Resource section, you can no longer enter start and end date. To define the start and end date, you first need to choose a transport, and then all fixed quotas for the given transport will be available in the drop-down menu in the 'Fix quota' field. Here you can now select the date period. When setting the number of products (Al1/Al2/Al3/Al4), the user must take into account that the values will be summed up. For example, if, Al1=30, Al2=20, AI3=10 and the rest are 0, the total sum will be 60.
 
 Note! The extra allotments are set up as the transport allotments. The allotment must be edited by an user or overbookings may happen.
 

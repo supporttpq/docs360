@@ -34,6 +34,48 @@ It is possible to define rules like below (using Hour set):
 
 Rules number 1,2 and 3 are overwritten by the last rule, the only difference is the e-mail address to which the communication files are sent. This method can also overwrite the previous selected methods of defining communication files.
 
+## **Communication Schedule – Handling Changed Passenger Seating After Departure**
+
+### **Overview / Purpose**
+
+This rule ensures that changes to passenger seating made **after departure** are still communicated to transport suppliers. It is specifically useful for **one-way homebound transports**, where new passengers may be added or existing ones removed after the outbound trip has already departed.
+
+<figure><img src="../../.gitbook/assets/image (350).png" alt=""><figcaption></figcaption></figure>
+
+### **How It Works**
+
+* Normally, communication schedules are set to capture bookings before departure.
+* For one-way homebound trips, bookings created after the outbound departure might be missed in the initial communication.
+* By creating a **communication scheduler with a -6 days offset**, the system can capture bookings made during the travel period and re-send updated lists to suppliers.
+* This ensures suppliers (e.g., Paxport) receive the latest **Passenger Name List (PNL)** with accurate seat assignments before the homebound departure.
+
+### **Key Features / Functions**
+
+* **Catches late bookings or seating changes** for passengers on one-way homebound transports.
+* **Re-sends communication** to suppliers so they always have the latest seating information.
+* Works in conjunction with existing outbound and homebound schedulers.
+
+### **Examples / Scenarios**
+
+* **Example 1:**
+  * Outbound: 01-07-2026
+  * Homebound: 07-07-2026
+  * A passenger books only a one-way home trip on 03-07-2025.
+  * Since the outbound list was sent earlier, the passenger would normally not appear.
+  * With a -6 days scheduler, the booking is captured and included in the updated PNL.
+* **Example 2:**
+  * A passenger cancels their homebound seat after departure.
+  * The updated communication ensures the transport supplier sees the removal in time.
+
+### **Notes / Best Practices**
+
+* Always set up the **-6 days before departure scheduler** for one-way homebound transports.
+* Coordinate with suppliers (e.g., Paxport) to confirm they accept and process re-sent lists.
+* Avoid overlapping or redundant schedulers that might generate duplicate messages.
+* Regularly test communication rules to ensure last-minute seating changes are reflected correctly.
+
+
+
 The reporting is managed by a **Windows Service** that is searching for schedulers every 9 minute. The schedulers are set up in the **Transport/Communication tab**
 
 **Fields**:

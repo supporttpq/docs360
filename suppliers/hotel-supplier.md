@@ -1,40 +1,68 @@
 # Hotel Supplier
 
-In order to function correctly, **Suppliers** need an unassigned **Supplier** user type.
+### **Overview / Purpose**
 
-To set up a hotel supplier go to Users / Users&#x20;
+Suppliers in Tourpaq represent external service providers, typically hotels, who manage allotments and bookings through the system. To function correctly, each supplier requires an unassigned **Supplier user type**, which allows them to log in, manage offerings, and receive communications.
 
-* Click on new user&#x20;
-* Set the user role as supplier&#x20;
-* Set username&#x20;
-* Setup a password&#x20;
-* Set the first name and the last name&#x20;
-* Set the seller ID&#x20;
-* Set the agencies for the supplier&#x20;
-* Give the additional roles required.&#x20;
-* After that click on save.&#x20;
+### **How It Works**
 
-Once the user is created, go to Users / Suppliers&#x20;
+#### **1. Create Supplier User**
 
-<figure><img src="../.gitbook/assets/image (31) (1).png" alt=""><figcaption></figcaption></figure>
+1. Navigate to **Users → Users**.
+2. Click **New User**.
+3. Fill in the user details:
+   * **Role:** Supplier
+   * **Username**
+   * **Password**
+   * **First Name / Last Name**
+   * **Seller ID**
+   * **Associated Agencies**
+4. Assign any **additional roles or permissions** required for the supplier.
+5. Click **Save**.
 
-* Click on Create new supplier&#x20;
-* Set the name&#x20;
-* Set the user ID&#x20;
-* Click on Save.&#x20;
+<figure><img src="../.gitbook/assets/image (339).png" alt=""><figcaption></figcaption></figure>
 
-The supplier has been created. After this, Go to hotel list&#x20;
+#### **2. Create Supplier Record**
 
-<figure><img src="../.gitbook/assets/image (32) (1).png" alt=""><figcaption></figcaption></figure>
+1. Go to **Users → Suppliers**.
+2. Click **Create New Supplier**.
+3. Fill in:
+   * **Supplier Name**
+   * **User ID** (link to the user created in the previous step)
+4. Click **Save**.
+5. The supplier record is now active in the system.
 
-* Select the hotel lists the supplier has access to and set schedulers for the hotel schedulers. These are the same as the communication email from the hotel.&#x20;
-* In handling tab a creditor and a schedule are required.&#x20;
+#### **3. Assign Hotels to Supplier**
 
-<figure><img src="../.gitbook/assets/image (33) (1).png" alt=""><figcaption></figcaption></figure>
+1. Navigate to **Hotel List**.
+2. Select hotels the supplier will manage.
+3. Set **Schedulers** (these are the emails used for hotel communications).
 
-* Set an account debit&#x20;
-* Then click on Save.&#x20;
-* The new prices are handling fees for each guest of a booking. They can be seen in the profit tab of the booking.&#x20;
+<figure><img src="../.gitbook/assets/image (340).png" alt=""><figcaption></figcaption></figure>
+
+4.  In the **Handling Tab**, set:
+
+    * **Creditor**
+    * **Schedule**
+    * **Account Debit**
+
+    &#x20;5\. Click **Save**.
+
+    > Handling fees configured here will appear in the **Profit Tab** of bookings.
+
+<figure><img src="../.gitbook/assets/image (341).png" alt=""><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../.gitbook/assets/image (342).png" alt=""><figcaption></figcaption></figure>
+
 * Hotels assigned to the supplier will be displayed in the list to be assigned as having handling if required.&#x20;
-* In general tab, The email is the email that receive communications and the reservation department emails are used for dynamic hotel confirmation.&#x20;
-* After all setting have been made, click update.
+
+<figure><img src="../.gitbook/assets/image (343).png" alt=""><figcaption></figcaption></figure>
+
+#### **4. General Settings**
+
+* In the **General Tab**, define:
+  * **Email:** For receiving supplier communications
+  * **Reservation Department Emails:** Used for dynamic hotel confirmations
+* Click **Update** to save all changes.

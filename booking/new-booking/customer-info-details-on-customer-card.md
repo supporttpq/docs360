@@ -3,7 +3,7 @@
 * To activate this feature, click on the setup menu system setup.
 * On the Settings menu, select **the Show details of customer** checkbox. This feature allows the user to view and edit details filed on the customer dialog on booking and customer center.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Click on Save.&#x20;
 * Click on booking menu/new booking.&#x20;

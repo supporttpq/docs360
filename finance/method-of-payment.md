@@ -30,7 +30,7 @@ Before configuring or using the Payment Types Module, ensure the following:
 
 ***
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Payment Type Categories**
 
@@ -117,5 +117,18 @@ Before creating a new payment method, ensure:
     | **Active**                     | Enable this option if the method should be **available for use** in bookings or financial operations. |
 
     > ⚠️ **Note**: If selecting **VISA** as the card type and the customer pays using a **Visa/Dankort** on the **DIBS** platform, DIBS will treat this as a **VISA** transaction. As a result, the payment will be registered using the **VISA** payment method in Tourpaq, not the Visa/Dankort method.
-4. **Save** the new payment method.\
-   It will be automatically associated with the **currently selected company** in the system.
+
+
+4. Other useful fields:
+
+| Checkbox                                  | **Description**                                                                                                                                                                                                      |
+| ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Is GDPR Sensitive                         | Anonymize the payment **type** for a booking of an anonymized customer for users logged with other account than "Administrator" or "Financial"                                                                       |
+| **"Pay from home" Payment**               | Allow to be used in the  Guide App for Extra Orders payments;                                                                                    ![](<../.gitbook/assets/image (1) (1) (1) (1).png>)                 |
+| **Agent Machine Payment**                 | When checked, it allows guides to pay with the payment machine; ![](<../.gitbook/assets/image (2) (1) (1).png>)                                                                                                      |
+| **Booking Gift Card Payment**             | When checked, it allows the gift card to be used for another agency besides the one for which it was created. (Used only  if "All brands" is selected for the giftcard); ![](<../.gitbook/assets/image (3) (1).png>) |
+| **Booking Gift Card Own Agency Payments** | Allows the gift card to be used only with on your own agency payments (Used when the All brands checkbox it is used on the Giftcard)                                                                                 |
+
+5. **Save** the new payment method.
+
+It will be automatically associated with the **currently selected company** in the system.

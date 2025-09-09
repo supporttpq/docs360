@@ -49,10 +49,10 @@ Allow the user to assign an extra to an agency. An extra can be assigned as foll
 
 Used to customize the appearance and description of the extra in booking flows or documentation.
 
-| Field           | Description                                                                                             |
-| --------------- | ------------------------------------------------------------------------------------------------------- |
-| **Name**        | Custom label to override the default extra name.                                                        |
-| **Description** | Rich text editor for detailed descriptions, highlights, or disclaimers. This can be shown to customers. |
+| Field           | Description                                                                                                                |
+| --------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| **Name**        | Custom label to override the default extra name.                                                                           |
+| **Description** | Rich text editor for detailed descriptions, highlights, or disclaimers. This text can be found in Guest APP and Guide APP. |
 
 ### Automatic Billing
 

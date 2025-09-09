@@ -34,7 +34,7 @@ If any of the fields are wrong, the user's profile will not be saved and an erro
 
 After the login will be made as it is now, the user will complete the username and password, and then a new pop-up will appear with the following text:
 
-<figure><img src=".gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (331).png" alt=""><figcaption></figcaption></figure>
 
 In this pop-up, we’ll have the following elements:
 
@@ -60,7 +60,7 @@ We will set the user email, and we will generate the QR code that will be used f
 
 **Note: This settings will be configured before activate the 2FA from system setup**
 
-<figure><img src=".gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (332).png" alt=""><figcaption></figcaption></figure>
 
 Install on your device (Android / iOS) the Google Authenticator app
 
@@ -93,4 +93,4 @@ After you install the app, you will have 2 possibilities to get your code:
 * fill the encoded key from the auth
 * click add
 
-<figure><img src=".gitbook/assets/step_2-0d9be1fff4c9b6f1bec157ac357fc1b7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (333).png" alt=""><figcaption></figcaption></figure>
