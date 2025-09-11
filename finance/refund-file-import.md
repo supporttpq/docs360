@@ -20,7 +20,7 @@ This section allows users to import **refund transactions** exported from **Busi
    * Dragging and dropping the file into the upload zone.
 4. Click the **Process** button to begin import.
 
-<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 🧩 Related Notes
 

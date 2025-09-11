@@ -132,7 +132,7 @@
 
 ***
 
-* [Generate Pricelist](generate-pricelist.md)
+* [Price List Generator](generate-pricelist.md)
 * [Price regulation rules](price-regulation-rules.md)
 * [Relational Price list](relational-price-list.md)
 * [Price List Custom Hotel days Service](price-list-custom-hotel-days-service.md)

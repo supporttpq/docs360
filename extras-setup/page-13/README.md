@@ -6,7 +6,7 @@ Extras are optional services/products that a customer can book; like transfer, c
 
 Brands
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 Allow the user to assign an extra to an agency. An extra can be assigned as follow:
 

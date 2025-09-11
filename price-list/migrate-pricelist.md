@@ -1,29 +1,46 @@
 # Migrate Pricelist
 
-The migrate price list function allows you to make a bulk copy of all pricelists from one agency to another. This can be done only between agencies of the same company.&#x20;
+### Overview
+
+The **Migrate Price List** function allows users to perform a **bulk copy of all price lists from one agency to another**. This operation can only be performed **between agencies within the same company**.
 
 To migrate pricelists, choose Migrate price list from the Price List menu.&#x20;
 
 <figure><img src="../.gitbook/assets/image (50) (1).png" alt=""><figcaption></figcaption></figure>
 
-* You need to select the source agency you want to migrate from using the “From brand” dropdown. All pricelists from this agency will be copied into the agency selected by the “To brand” dropdown, which will be the destination agency.&#x20;
-* The Set Tag option allows defining what tag will be set on all destination price pricelists. To do this, check the checkbox and select a tag from the dropdown. The selected tag will be set on all pricelists on the destination agency. How to define and use price list tags is presented in a separate video.&#x20;
-* The increase/decrease amount field allows you to specify a value that will be added to all price fields on destination pricelists. To increase prices, enter a positive number, and to decrease prices, enter a negative number. Note only already set prices on the destination will be affected by this.&#x20;
-* Increase/decrease percentage allows you to specify a percentage by which all price fields on destination pricelists will be changed. To add with a percentage, enter a positive number, and to decrease with that percentage, enter a negative number. Note only already set prices on the destination will be affected by this.&#x20;
+### Steps to Migrate Price Lists
 
-It is important to say that the increase/decrease amount and percentage fields can be used separately or together; in the latter case, the percentage will be applied and then the amount will be added.&#x20;
-
-* If you want to copy the max rooms fields from source pricelists into destination price lists, check the “copy max room” checkbox.&#x20;
-* By default, the migration also makes the necessary brand assignments on transports, hotels, resorts, extras, and discounts. That means the source brand will be assigned to all entities on which the source brand is assigned. If you do not want to change brand assignments on the destination mark, check the “copy only pricelists” checkbox.&#x20;
-
-An additional option that can be used in the “source agency” field that can be set on transport, resort, and destination in their general settings tab. By using the source agency, you specify that a transport, for example, is defined and controlled by that. This is useful when you want to migrate prices in both ways, from and to the same agency. By using the source agency field, you can migrate pricelists that are defined by that agency and avoid being overwritten when you migrate pricelists to that agency. Here you have the option to check if you want to migrate only from transports, resorts or destinations where the source agency is the one you selected in “From brand.”&#x20;
-
-* When ready, click the “Migrate Prices” button.&#x20;
-
-Migrations made in the past are logged so you can keep track of these actions. You also have the option to search through migrations by clicking the “Search Migrations” button.
+1. **Access the Feature**
+   * Select **Migrate Price List** from the **Price List** menu.
+2. **Select Source and Destination Agencies**
+   * **From Brand:** Choose the source agency from which price lists will be copied.
+   * **To Brand:** Select the destination agency that will receive the copied price lists.
+3. **Set Tag (Optional)**
+   * Enable the **Set Tag** checkbox and select a tag from the dropdown.
+   * The selected tag will be applied to all price lists in the destination agency.
+   * For more information on defining and using price list tags, refer to the related training video.
+4. **Adjust Prices (Optional)**
+   * **Increase/Decrease Amount:** Enter a value to be added or subtracted from all price fields on destination price lists. Positive numbers increase prices; negative numbers decrease prices. Only already set prices on the destination are affected.
+   * **Increase/Decrease Percentage:** Enter a percentage to adjust all price fields. Positive numbers increase prices; negative numbers decrease prices. Only already set prices on the destination are affected.
+   * **Note:** Amount and percentage can be applied **together**; the percentage is applied first, followed by the amount.
+5. **Copy Max Rooms (Optional)**
+   * Check the **Copy Max Room** checkbox to copy maximum room fields from source price lists to the destination.
+6. **Brand Assignments**
+   * By default, the migration also replicates brand assignments on **transports, hotels, resorts, extras, and discounts**.
+   * To copy only price lists without changing brand assignments, check **Copy Only Price Lists**.
+7. **Source Agency Filtering (Optional)**
+   * Certain entities (transports, resorts, destinations) can have a **Source Agency** assigned in their General Settings.
+   * Enable the option to migrate only those entities where the **source agency matches the selected From Brand**. This prevents overwriting prices when migrating between the same agencies.
+8. **Execute Migration**
+   * Click **Migrate Prices** to perform the bulk copy.
 
 <figure><img src="../.gitbook/assets/image (51) (1).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;Here you can filter by brands, users who performed the migration, and date of migration.&#x20;
+### Migration Log and Search
 
-The “Show hidden” button allows you to see migrations older than the number of days specified by “Hide filters” in System Setup.
+* All migrations are **logged** to track past actions.
+* To search through migrations, click **Search Migrations** and filter by:
+  * Brand
+  * User who performed the migration
+  * Date of migration
+* **Show Hidden:** Displays migrations older than the number of days specified in **System Setup → Hide Filters**.

@@ -12,7 +12,7 @@ SMTP settings define how Tourpaq sends emails to customers. This includes bookin
 * Administrators enter the provider’s account details into the system.
 * Once configured, all outgoing emails are sent using this SMTP connection.
 
-<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Key Features / Functions**
 

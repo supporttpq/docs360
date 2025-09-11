@@ -16,7 +16,7 @@ Each program is defined with a unique code, name, and validity interval.&#x20;
 * User must have permissions to view and manage daily programs.
 * Programs should be linked to relevant offers or packages where applicable.
 
-<figure><img src=".gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Filters
 
@@ -59,7 +59,7 @@ This information defines the availability of the program and ensures that it can
 
 ### Fields Description
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 | Field            | Description                                                | Notes                                           |
 | ---------------- | ---------------------------------------------------------- | ----------------------------------------------- |

@@ -6,7 +6,7 @@ The **Actions** tab allows administrators to perform **contract-level bulk actio
 
 ***
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -58,13 +58,13 @@ Displays a checklist of available sections that can be reimported:
 * Always verify results after reimport, especially in the **Rooms**, **Periods**, and **Costs** tabs.
 * A confirmation will appear if unsaved changes exist on the contract.
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Shere Tab
 
 * Export Hotel contract (PDF) - Allow to export the contract
 * Send Email - Offer the possibility to send created contract to supplier and also as many emails address you want. The supplier has the possibility to accept or reject hotel contract.
 
-<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
 To be able to use this function is required to create an email template for Hotel Contract, otherwise an warning will be displayed.

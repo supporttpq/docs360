@@ -8,64 +8,71 @@ This feature is available for the administrator user type.
 
 #### Create price lists <a href="#create-price-lists" id="create-price-lists"></a>
 
-Price lists can be created in the **Price list** tab, from **Create/Copy price list**. The first step is to choose the brand for which the price list will be available. Next, the transport is selected, followed by the transport's fix quota. And finally, the hotel and rooms that will use the price list.
+Price lists are created in the **Price List** tab by selecting **Create/Copy Price List**. The creation process involves the following steps:
 
-<figure><img src="../.gitbook/assets/image (35) (1) (1).png" alt=""><figcaption></figcaption></figure>
+1. **Select Brand** – Choose the brand for which the price list will be available.
+2. **Select Transport** – Choose the transport option for the price list.
+3. **Set Fix Quota** – Define the transport’s fixed quota.
+4. **Select Hotel** – Choose the hotel that will use the price list.
+5. **Select Rooms** – Specify the rooms to include in the price list.
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 #### Not created prices <a href="#not-created-prices" id="not-created-prices"></a>
 
-This feature enables the user to see if price lists were not created. This can be due to the fact that the fix quota does not cover the hotel allotment period or that some settings for the transport and hotel have been skipped.
+This feature allows users to identify **price lists that were not created**.
+
+* Common reasons for missing price lists include:
+  1. The **fix quota** does not cover the hotel allotment period.
+  2. Some required **settings for the transport or hotel** were skipped during price list creation.
 
 <figure><img src="../.gitbook/assets/image (36) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Copy price list <a href="#copy-price-list" id="copy-price-list"></a>
 
-This feature allows for price lists to be copied. This works only inside the brand. The first step is to select the transport, hotel, room, and date from which the price list will be copied. The next step is to select the transport, hotel, room, and date to which the prices will be copied. The Different Days case is used to define the difference in days between the price lists if the transport's fixed quota doesn't match or to extend the price list with the inserted number of days. Prices and discounts can also be changed from here with the use of the Change Discounts For Original Prices and PRICE DIFFERENCE sections.
+The **Copy Price List** feature allows users to duplicate price lists **within the same brand**.
 
-There are also check boxes that allow for the copying of prices from:
+#### Steps to Copy a Price List
 
-* a transport to all transports of the brand
-* a hotel to all hotels assigned to the transport
-* a room to all rooms of a hotel Before copying the prices, be sure you have checked every check box from the PRICE DIFFERENCE section, even if the values are 0. The process of copying prices is this one:
-* Copy prices
-* Save changed discounts
+1. **Select Source** – Choose the **Transport**, **Hotel**, **Room**, and **Date** from which the price list will be copied.
+2. **Select Destination** – Choose the **Transport**, **Hotel**, **Room**, and **Date** to which the prices will be copied.
+3. **Different Days** – Define the difference in days between the source and destination price lists. This is used if:
+   * The transport’s fixed quota does not match, or
+   * You want to extend the price list by a specific number of days.
+4. **Adjust Prices and Discounts** – Use the **Change Discounts for Original Prices** and **PRICE DIFFERENCE** sections to modify values as needed.
+5. **Copy Options** – Checkboxes allow copying prices from:
+   * A transport to all transports of the brand.
+   * A hotel to all hotels assigned to the transport.
+   * A room to all rooms of a hotel.
+6. **Important:** Before copying, ensure all checkboxes in the **PRICE DIFFERENCE** section are selected, even if values are 0.
+7. **Execute Copy** – Click **Copy Prices**.
+8. **Save Discounts** – Click **Save Changed Discounts** to finalize.
 
-<figure><img src="../.gitbook/assets/image (37) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-#### Price list overview <a href="#price-list-overview" id="price-list-overview"></a>
+### Field-by-Field Explanation
 
-The user can have a better overview of what price pricelists are defined on specifics, hotel, room, and transport by using a series of flexible filters.
+#### **Filters (Top Section)**
 
-This feature also has a link to the price list, meaning if the user clicks on the **View** button, he will be redirected to the price list and all selected filters will be loaded.
-
-<figure><img src="../.gitbook/assets/image (38) (1).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/image (39) (1).png" alt=""><figcaption></figcaption></figure>
-
-### Price list <a href="#price-list" id="price-list"></a>
-
-This is the actual price list. It is used to insert and change prices.
-
-Filters:
-
-* Brand - selects the brand
-* Arrival - selects arrival from which to filter transports
-* Transport - selects transports assigned to the brand
-* Hotels - selects hotels assigned to the transport
-* Rooms - selects rooms from the hotel
-* Fix quota - selects the period in which the transport makes the flights Other filters:
-* Date from
-* Date to
-* Show hotel discounts on top
-* Show only set prices
-* Hide zero FTA - hides pricelines with no transport allotments
-* Hide zero FHA - hides pricelines with no hotel allotments
+| Field              | Description                                                                                            |
+| ------------------ | ------------------------------------------------------------------------------------------------------ |
+| **Departure date** | Defines the travel date range for which prices should be displayed. Example: 03-03-2025 to 03-03-2025. |
+| **Resorts**        | Filters the results by specific resorts.                                                               |
+| **Transports**     | Filters by available transport options (e.g., flights, buses).                                         |
+| **Transport type** | Select transport categories (e.g., all seats, specific seat types).                                    |
+| **Hotels**         | Filters by hotel(s).                                                                                   |
+| **Allotment type** | Defines room allotment conditions (e.g., “All rooms”).                                                 |
+| **Room**           | Filters specific room categories.                                                                      |
+| **Fix quotas**     | Optionally restricts the view to fixed quota contracts.                                                |
+| **Display names**  | Toggles whether to show hotel names.                                                                   |
+| **Stay Length**    | Defines the length of stay (number of nights).                                                         |
+| **Checkboxes**     |                                                                                                        |
 
 A price list is blank when first created.
 
 <figure><img src="../.gitbook/assets/image (41) (1).png" alt=""><figcaption></figcaption></figure>
 
-then be The fields must then be filled manually by the user with the amounts calculated or required. Some fields are set to autofill based on a formula that takes into consideration the amounts already inserted. In the end, a price list should look like this:
+The fields must then be filled manually by the user with the amounts calculated or required. Some fields are set to autofill based on a formula that takes into consideration the amounts already inserted. In the end, a price list should look like this:
 
 <figure><img src="../.gitbook/assets/image (40) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -117,7 +124,7 @@ Fields:
 
 #### Tabs <a href="#tabs" id="tabs"></a>
 
-Below the filters are 3 tabs:
+Below the filters are the following tabs:
 
 **Prices -** Contains the actual pricelist
 

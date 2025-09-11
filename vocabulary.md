@@ -6,7 +6,7 @@ In the VisitSun mobile application, the **Vocabulary** section displays a series
 
 To create a new vocabulary, click on create and then:
 
-<figure><img src=".gitbook/assets/image (10) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (10) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Selecy Agency
 * Select Country
