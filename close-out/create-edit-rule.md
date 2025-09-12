@@ -14,7 +14,7 @@ A new rule is created by defining a set of criteria (such as start date, end dat
 
 ### **Key Features / Functions**
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Rule Creation**
 

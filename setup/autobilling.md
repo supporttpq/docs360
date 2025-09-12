@@ -126,7 +126,7 @@ The Invoice Generating Service is the basic invoice service and allows the follo
 
 Autobilling for hotels is enabled in the hotel's main tab.
 
-<figure><img src="../.gitbook/assets/image (88).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 All fields are mandatory in order for the autobilling feature to work.
 
@@ -146,7 +146,7 @@ When regenerating a hotel invoice, extras can appear on it if they have the same
 
 It can be set in the _Hotel/Deposit_ tab.
 
-<figure><img src="../.gitbook/assets/image (89).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 A deposit needs the following fields to be set:
 
@@ -163,7 +163,7 @@ A new function has been added here: **Special deposit rule**. It is used to prec
 
 It can be set from the room cost in the hotel tab.
 
-<figure><img src="../.gitbook/assets/image (90).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 Mandatory fields:
 
@@ -177,7 +177,7 @@ If there are problems with receiving the EBL by e-mail, use **Export/List** with
 
 Autobilling for extras can be enabled in the extra's main tab.
 
-<figure><img src="../.gitbook/assets/image (91).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 All fields are mandatory in order for the feature to work.
 
@@ -196,7 +196,7 @@ Works just like the **Hotel Early Booking**
 
 Autobilling for discounts/supplements can be enabled from their main tab.
 
-<figure><img src="../.gitbook/assets/image (92).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 All fields are mandatory in order for the feature to work.
 
@@ -220,11 +220,11 @@ All fields are mandatory in order for the feature to work.
 * Creditor
 * Automatic billing check box - if checked it allows the transfer to be invoiced; unchecked, the invoices will be disabled. The prices and costs have to be set. Also, transfer can be used as an extra, too. Note: Most of the settings are similar to the extra ones.
 
-&#x20; **Handling invoices​**
+**Handling invoices​**
 
 Autobilling for handling can be enabled from _Users/Suppliers/Handling_
 
-<figure><img src="../.gitbook/assets/image (93).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (363).png" alt=""><figcaption></figcaption></figure>
 
 All fields are mandatory for the feature to work.
 

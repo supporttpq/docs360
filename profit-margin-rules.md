@@ -6,7 +6,7 @@ Under **Price List → Profit Margin Rules**, users can define rules to set prof
 
 The Profit Margin Rules system is a comprehensive tool for managing pricing strategies and commission structures across different travel products, destinations, and customer segments. This interface allows you to create, modify, and monitor profit margin rules that automatically apply to bookings based on specific criteria such as destination, passenger type, travel dates, and accommodation preferences.
 
-<figure><img src=".gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Filtering and Searching
 
@@ -60,7 +60,7 @@ For **Transport Rules**, users must:
 
 The system will then update all price lists created with the selected transports. For example, a rule setting **PM1–PM4** for the interval **10.09.25 - 10.09.25** will apply to all price lists using transports **and** BLL-BCN-SES, covering all hotels at the corresponding destination for agency **TorpaqDK.**
 
-<figure><img src=".gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Resort Rules** can be created in three ways:
 
