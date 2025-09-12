@@ -16,7 +16,7 @@ Payment settings define how a brand handles transactions within Tourpaq. This in
   * **Special access settings** for last-minute sales, determining LMS eligibility.
 * The system uses these settings to validate payments and apply LMS rules automatically.
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Key Features / Functions**
 

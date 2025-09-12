@@ -14,7 +14,7 @@ This tool is essential for:
 * **Identifying and resolving failed bookings** quickly.
 * Ensuring that all customer reservations are fully validated before proceeding with final booking stages.
 
-<figure><img src=".gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 🧭 Interface Explanation & Instructions
 

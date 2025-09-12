@@ -16,7 +16,7 @@ Price lists are created in the **Price List** tab by selecting **Create/Copy Pri
 4. **Select Hotel** – Choose the hotel that will use the price list.
 5. **Select Rooms** – Specify the rooms to include in the price list.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 #### Not created prices <a href="#not-created-prices" id="not-created-prices"></a>
 
@@ -48,7 +48,7 @@ The **Copy Price List** feature allows users to duplicate price lists **within t
 7. **Execute Copy** – Click **Copy Prices**.
 8. **Save Discounts** – Click **Save Changed Discounts** to finalize.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Field-by-Field Explanation
 
