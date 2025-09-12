@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Tourpaq Web Booking - Technical documentation
 
 The Tourpaq Web Booking is a component of Tourpaq booking platform which allows the customers themselves to book travel packages, pay various amounts of their choice, print ticket or manage the products they have chosen for the holiday. The Web Booking application is using different themes for each Brand/Agency that uses it and also small customizable differences in behavior. One of the most important pages, and the entry point in the Web Booking application, is the DoBooking.aspx page. This is the page that receives the needed details by query string either by desktop browsers or by mobile applications.
