@@ -34,7 +34,7 @@ All the imported payments will appear in Payment Registration.
 2. Navigate to the **Payment File Import** section.
 3. Upload the file.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 📌 Notes
 
