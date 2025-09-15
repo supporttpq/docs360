@@ -74,3 +74,17 @@ Each transport displays a **control status value** that determines how many room
 * This feature is critical for **capacity planning** and ensuring correct allocation of hotel rooms per flight.
 * The status values should be monitored regularly, especially during peak booking periods, to avoid overselling.
 * Adjustments to allotments must be coordinated with both transport and hotel availability.
+
+### **Instructions for Use**
+
+1. Navigate to **Hotel → Allotment per Day** when setting up or editing a hotel.
+2. Select the **Period** (date range), **Room Type**, and optionally filter by **Week Days** to view or adjust availability.
+3. Click **Search** to display the daily allotment table.
+4. For each **date and room type**:
+   * Enter or adjust the number of rooms in **No.**, **Secured**, and **Guaranteed** fields.
+   * Verify the number of **Booked** and **Free** rooms (system-calculated).
+   * If applicable, set values for **Max**, **Extra**, and **PAX fields**.
+5. Use the checkboxes to select days and apply bulk actions if available.
+6. After making changes, click **Update** to save.
+7. Use **Allotment History** to review previous changes.
+8. To cancel changes without saving, click **Cancel**.
