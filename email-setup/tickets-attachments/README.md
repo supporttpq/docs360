@@ -1,26 +1,56 @@
 # Tickets attachments
 
-Applies for Administrator users
+### **Overview**
 
-This module allows the administrator of a Tourpaq company to set a certain document to be attached to the email that confirms the booking and sends the printed ticket. The module allows switching between the agencies of a company, and upload a different document to each agency.
+The **Ticket Attachments** module (available only to **Administrator** users) allows a Tourpaq company to attach additional documents to booking confirmation emails and printed tickets.
 
-The documents can be sent:
+Administrators can configure attachments per agency, ensuring that each agency may have its own set of documents included with the customer’s ticket.
 
-* as a separate file from the ticket
-  * Terms & Conditions PDF document that will be sent together with the ticket, as a separate attachment.
-* as part of the ticket file, at the end of the ticket
-  * Terms & Conditions PDF document that will be added to end of the ticket in the same file.
+***
 
-Also there are multiple types of possible documents attached to a booking ticket:
+### **Attachment Options**
 
-* for all bookings: the terms & conditions files mentioned above
-* scenario specific documents
-  * specific to a certain resort
-  * to a hotel
-  * to a specific hotel facility (with limitations)
-    * Effect: if a holiday is in a hotel that uses that particular facility (example: Poolbar), then a facility-specific document can be merged into the ticket explaining the rules of using the facility.
-    * Limitations:
-      * max 5 facility documents are merged. If the booking hotel contains more than 5 facilities that have attached documents to them, the system will not merge from 6th document upwards into the ticket, since it will produce a too large attachement and there is a risk of certain email platforms not receiving the important email (Thank you, BookingUpdated, etc.) at all.
-      * max 1 Mb per document
-      * the facility category to which the facility belongs to must be set to appear on the ticket.
-  * to a transport
+Documents can be sent in **two different ways**:
+
+1. **As a separate attachment**
+   * Example: A Terms & Conditions PDF is sent alongside the booking ticket as an individual file.
+2. **Merged into the ticket file**
+   * Example: A Terms & Conditions PDF is appended at the end of the ticket PDF as part of the same document.
+
+***
+
+### **Types of Documents That Can Be Attached**
+
+* **Global Attachments (all bookings)**
+  * Terms & Conditions documents apply to every booking.
+* **Scenario-Specific Attachments**
+  * Documents that apply only under specific booking scenarios.
+* **Resort-Specific Attachments**
+  * A file linked to a specific resort, attached automatically when that resort is part of the booking.
+* **Hotel-Specific Attachments**
+  * A file linked directly to a specific hotel.
+* **Facility-Specific Attachments**
+  * A document linked to a facility within a hotel (e.g., _Pool Bar Rules_).
+  * If a booking includes a hotel using that facility, the facility document is attached or merged.
+  * **Note:** A maximum of **5 facility documents** can be merged per ticket.
+* **Transport Attachments**
+  * A file linked to a specific transport (e.g., _charter flight rules_).
+
+***
+
+### **Limitations**
+
+To maintain email deliverability and prevent oversized attachments, the following restrictions apply:
+
+* **Maximum number of facility documents merged**: 5 per ticket.
+  * If more than 5 facilities have documents, only the first 5 will be merged.
+* **Maximum file size per document**: 1 MB.
+* **Facility visibility requirement**: The facility’s category must be configured to appear on the ticket; otherwise, its document will not be included.
+* **Risk of undelivered emails**: Oversized attachments may prevent important booking-related emails (_Thank You_, _Booking Updated_, etc.) from being delivered.
+
+***
+
+### **Effect in Practice**
+
+* Suppose a holiday booking includes a hotel with facilities (e.g., a Pool Bar, Spa, Kids' Club) that have rules or guidelines attached as documents. In that case, those files are automatically merged into the ticket or sent separately, depending on the administrator’s setup.
+* Customers receive all relevant documents **without requiring manual sending**, ensuring compliance with policies and improving transparency.

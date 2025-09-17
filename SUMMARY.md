@@ -391,18 +391,18 @@
 * [Tickets attachments](email-setup/tickets-attachments/README.md)
   * [Ticket Attachments](email-setup/tickets-attachments/ticket-attachments.md)
   * [Ticket texts](email-setup/tickets-attachments/ticket-texts.md)
+* [E-mail center](email-setup/e-mail-center.md)
 * [Dynamic E-mail/SMS Center](email-setup/page-14/README.md)
+  * [Setup for Dynamic E-mail/SMS Center](email-setup/page-14/setup-for-dynamic-e-mail-sms-center.md)
   * [Dynamic Email - Upload Image](email-setup/page-14/dynamic-email-upload-image.md)
   * [Dynamic Email - Link Dialog](email-setup/page-14/dynamic-email-link-dialog.md)
 
 ***
 
 * [E-mail/SMS Center Statistics](e-mail-sms-center-statistics.md)
-* [E-mail center](e-mail-center.md)
 * [Email Templates](email-templates.md)
 * [Warning notification rules](warning-notification-rules.md)
 * [Destination SMS Mappings](destination-sms-mappings.md)
-* [Setup for Dynamic E-mail/SMS Center](setup-for-dynamic-e-mail-sms-center.md)
 
 ## Setup
 
