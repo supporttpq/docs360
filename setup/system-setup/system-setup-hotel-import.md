@@ -28,12 +28,12 @@ Before configuring the **Hotel Import** settings:
 
 #### **Fields and Instructions**
 
-<figure><img src="../../.gitbook/assets/image (356).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (393).png" alt=""><figcaption></figcaption></figure>
 
 1. **Hotel Release Hour**
-   * **Description:** Specifies the default time when hotels are considered released in the system (e.g., for check-in availability).
+   * **Description:** Set the hour to use for imported hotel releases. If not set, a system default (07:00) will be used.
    * **Format:** 24-hour time (HH:MM)
-   * **Instruction:** Enter the default hour for hotel release. Example: `06:00` means that all hotels will be released at 6 AM.
+   * **Instruction:** Enter the default hour for the import hotel release. Example: `06:00` means that all imported hotels will be released at 6 AM.
 2. **Single Room Supplement Price**
    * **Description:** Defines the percentage increase in price applied to bookings of single rooms.
    * **Format:** Percentage (%)
@@ -46,6 +46,10 @@ Before configuring the **Hotel Import** settings:
    * **Description:** Specifies the percentage increase for including gala dinner events in hotel bookings.
    * **Format:** Percentage (%)
    * **Instruction:** Enter the default markup percentage for gala dinner pricing. Example: `2` means a 2% increase on the booking price when a gala dinner is included.
+5. Do not create extras for board basis
+
+* Description: Check this if no extras shall be created for board basis during the import of a hotel contract. This is relevant for companies that do not need the board basis extras.
+* Format: Checkbox
 
 ***
 
