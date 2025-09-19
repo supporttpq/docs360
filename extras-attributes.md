@@ -35,6 +35,10 @@ The next step is to complete the fields:&#x20;
   * Select rule&#x20;
   * Click on save&#x20;
 * Display rule: you can select:&#x20;
-  * display as stay days choices or&#x20;
-  * display default days.&#x20;
+  * display as stay days choices = shows the days the product to which the attribute is linked to as options.&#x20;
+  * display default days = allows only selecting the first day of the product (check-in date generally)
 * Click on Save
+
+{% hint style="info" %}
+Both the Validation Rule and the Display Rule are hardcoded, meaning they are predefined and cannot be modified by the customer. Any changes to these rules can only be made by a Tourpaq developer.
+{% endhint %}
