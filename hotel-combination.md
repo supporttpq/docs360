@@ -8,13 +8,13 @@ A hotel combination is like an itinerary of hotels where a customer stays two da
 
 You can add a new combination hotel in the same way a regular hotel is created, but make sure you check the Hotel Combination checkbox. In order to use the hotel in the booking, you should complete the next steps.
 
-<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Add hotel list and transport <a href="#add-hotel-list-and-transports" id="add-hotel-list-and-transports"></a>
 
 Under the Hotel Combination tab, you can define a list of hotels where the customer can stay. The order in which the hotels are added is important. The first hotel in the list is the first hotel where the customer will spend. You can add two or multiple hotels. Here can be added transports as well. This means that this hotel is available only for this transport.
 
-<figure><img src=".gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 If you select only one hotel in the list, then a checkbox will appear. If the checkbox is checked, then the hotel from the list will appear in the ticket; else, if it is not checked, then the main hotel will be the one to appear.
 

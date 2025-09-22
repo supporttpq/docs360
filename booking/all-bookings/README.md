@@ -31,24 +31,60 @@ To use this section effectively, make sure:
 
 #### **Instructions & Field Explanations**
 
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 **🧩 Booking & General Filters**
 
-| Field                             | Description                                                               |
-| --------------------------------- | ------------------------------------------------------------------------- |
-| **Brand**                         | Mandatory. The travel brand under which bookings are made.                |
-| **Pax no.**                       | Filter by number of passengers in a booking.                              |
-| **Booking Start Date / End Date** | Used together to filter by the booking creation period.                   |
-| **Dept Date From / To**           | Used in pairs to filter by the departure period.                          |
-| **Arrival Date From / To**        | Used in pairs to filter by the arrival period at the destination.         |
-| **Return From / To**              | Used in pairs to filter by return dates.                                  |
-| **All Bookings**                  | A toggle to retrieve all bookings regardless of filters.                  |
-| **Filter by Bonus Code**          | Filters bookings that have a specific bonus code applied.                 |
-| **User Owners**                   | Filters bookings made or managed by selected users.                       |
-| **Transports / Real Transports**  | Filters by transport types and specific assigned real transports.         |
-| **Hotels**                        | Filters by hotel names or assigned accommodations.                        |
-| **Status**                        | Filters by the current status of the booking (e.g., confirmed, canceled). |
-| **GDS Status**                    | Filters bookings based on their Global Distribution System status.        |
-| **Extra**                         | Additional filter criteria, depending on system configuration.            |
+| Field                            | Description                                                       | Example                                                                                                     |
+| -------------------------------- | ----------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| **Booking Period**               | Date range in which the booking was created.                      | `15-09-2025 – 21-09-2025`                                                                                   |
+| **Departure Period**             | Date range for the trip departure.                                | `Start: 19-09-2025`                                                                                         |
+| **Arrival Period**               | Date range for the trip arrival.                                  | `21-09-2025`                                                                                                |
+| **Return Period**                | Date range for return trips.                                      | `End: 29-09-2025`                                                                                           |
+| **Pax No.**                      | Search by number of passengers in a booking.                      | `3`                                                                                                         |
+| **Status**                       | Filter bookings by status (confirmed, canceled, pending, etc.).   | `OK`                                                                                                        |
+| **GDS Status**                   | Filter by GDS status if integrated.                               |  `GDSTKOK`                                                                                                  |
+| **Internal Comment**             | Search bookings based on internal notes.                          | `Voucher issued`                                                                                            |
+| **Bonus Code**                   | Filter by promotional or bonus codes used in booking.             | `SUMMER25`                                                                                                  |
+| **Hotels**                       | Filters by hotel names or assigned accommodations.                | `Grand Hotel Budapest`                                                                                      |
+| **Transports / Real Transports** | Filters by transport types and specific assigned real transports. |                                                                                                             |
+| **Extra**                        | Filter by Extra and a specific Extra Categories                   | <div><figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure></div> |
+| **Owners**                       | Filter bookings by the responsible agent or company.              | `RW/TPQ`                                                                                                    |
+
+***
+
+**Bookings Table (Main Section)**
+
+| Column             | Description                                                                                                                                                                                                                                                                                                                                                                                   |
+| ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Booking No.**    | Unique booking identification number.                                                                                                                                                                                                                                                                                                                                                         |
+| **Customer**       | Name of the customer or system automation                                                                                                                                                                                                                                                                                                                                                     |
+| **Transport**      | Transport type and code.                                                                                                                                                                                                                                                                                                                                                                      |
+| **Resort**         | Destination resort.                                                                                                                                                                                                                                                                                                                                                                           |
+| **Hotel**          | Hotel assigned to the booking.                                                                                                                                                                                                                                                                                                                                                                |
+| **Bkg. Date**      | Booking date                                                                                                                                                                                                                                                                                                                                                                                  |
+| Bk&#x67;**. Time** |  Booking time.                                                                                                                                                                                                                                                                                                                                                                                |
+| **Nights/No**      | Number of nights booked.                                                                                                                                                                                                                                                                                                                                                                      |
+| **Phone**          | Customer’s phone number.                                                                                                                                                                                                                                                                                                                                                                      |
+| **Pax No.**        | Number of passengers in the booking.                                                                                                                                                                                                                                                                                                                                                          |
+| **Owner**          | Responsible agent, user, or system owner of the booking.                                                                                                                                                                                                                                                                                                                                      |
+| **Departure**      | Departure date                                                                                                                                                                                                                                                                                                                                                                                |
+| Extras             | <p>List all extras that are associated with a booking.                                                                   </p><p>At mouse-over, a tool-tip is shown, where a table shows how the extras belong to what passenger and the full name of the extras.    The Extras column is available in the column selector. <img src="../../.gitbook/assets/image (2).png" alt=""></p><p> </p> |
+| ⋮                  | Column selector - add extra coulmns at the table                                                                                                                                                                                                                                                                                                                                              |
+
+***
+
+**Statistics Section (Bottom)**
+
+| Metric             | Description                                               | Example          |
+| ------------------ | --------------------------------------------------------- | ---------------- |
+| **Bookings**       | Total number of bookings in the filtered view.            | `72`             |
+| **Total Pax**      | Total passengers across all bookings.                     | `208`            |
+| **Pax / Booking**  | Average passengers per booking.                           | `2.9`            |
+| **Total Turnover** | Total revenue generated from the bookings.                | `DKK 539,773`    |
+| **Turnover / Pax** | Average revenue per passenger.                            | `DKK 2,595`      |
+| **Profit Total**   | Total profit (revenue minus costs) for filtered bookings. | `DKK -2,751,155` |
+| **Profit / Pax**   | Profit per passenger.                                     | `DKK -13,227`    |
 
 **🧼 Hide Filters Functionality**
 
