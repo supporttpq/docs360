@@ -14,7 +14,11 @@ The **All Transports** page provides a comprehensive overview of scheduled trans
 * **Flight No -** Search by flight or transport number.
 * **Weekdays -** Limit results to specific days of the week.
 * **Drop Arrival Country -** Filter based on arrival country.
-* **Transport Type -** Choose the type of service (Charter, Dynamic, Sys-real, System Transports or All Transport Types).
+* **Transport Type -** Choose the type of service (Charter, Dynamic, Sys-real, System Transports, or All Transport Types).
+  * Charter Transports - are transports using Fix Quotas to define all flights
+  * Dynamic Transports - uses Dynamic Itineraries for their legs. The legs may use Real Transport or use external providers (GDS)
+  * Sys-real Transports - are generated from a Transport Rule, and both legs use Real Transports
+  * System Transports - are generated from a Transport Rule, and at least one of the legs uses an external provider (GDS)&#x20;
 * **Transport Mode -** Additional filtering for transportation category (Boat, Bus, Car, Fly Train).
 * **Direction -** Options: Travel Home, Travel Out, or Both Ways.
 * **More Filters -** Access advanced filter options for precise data control.
