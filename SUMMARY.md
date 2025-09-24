@@ -219,8 +219,8 @@
 
 * [All Transports](transport/all-transports.md)
 * [Transport](transport/transport/README.md)
-  * [Transport creation](transport/transport/page-8/README.md)
-    * [Name change rule](transport/transport/page-8/name-change-rule.md)
+  * [Transport creation](transport/transport/transport-creation/README.md)
+    * [Name change rule](transport/transport/transport-creation/name-change-rule.md)
   * [Transport Definition](transport/transport/transport-definition.md)
   * [Transport Matrix](transport/transport/transport-matrix.md)
   * [Allotments](transport/transport/allotments.md)
