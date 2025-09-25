@@ -6,7 +6,7 @@ Once an offer has been sent, the customer has a certain amount of time until the
 
 Also, the sales agent has a certain amount of time to follow up on this offer. These intervals can be set in the company system set up by using these to fields The default offer availability days and the default offer follow-up days.&#x20;
 
-<figure><img src="../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 On each offer, these dates are being set automatically. They can also be adjusted manually if needed. An offer that is near its follow-up or expiration date appears on the Tourpaq dashboard, so the sales agent has the possibility to manage it more easily. The end goal for any offer proposal is being transformed into a booking order. Or it can be closed with a certain reason.&#x20;
 
@@ -56,8 +56,8 @@ Exporting offers ensures that users can:
 * Exported files typically include columns such as Offer No., Brand, Customer Type, Phone, Email, Create User, Create Date, Update Date, Status, and Status details
 * File format may vary depending on system configuration (Excel/CSV).
 
-<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 We also have the possibility to view statistics of all these offers per each sales agent. In here you will see only the sent offers and the success rate a sales agent has.
 
-<figure><img src="../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

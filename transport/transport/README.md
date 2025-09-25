@@ -4,7 +4,7 @@
 
 The **Transports** page is used to manage and view all available transport routes, including scheduled flights, buses, or other types of transport operations. This interface provides insight into departure/arrival points, airline info, reporting methods, and dynamic itinerary support.
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Filter Controls
 

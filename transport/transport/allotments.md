@@ -1,8 +1,19 @@
 # Allotments
 
-From this section, the places to sell will be managed.
+#### Overview
 
-The first step that must be done is to establish a selling period together with other relevant information for this period. This would be part of the information that must be stored:
+The **Allotments** section is used to manage the number of transport seats available for sale. Allotments ensure proper control over seat availability across different departure and return intervals, while preventing overbooking.
+
+#### Purpose
+
+The purpose of transport allotments is to:
+
+* Define selling periods and associated seat availability.
+* Configure price-related parameters (tax, pro rates, guaranteed seats).
+* Prevent overbooking by tracking available, booked, and free places.
+* Handle parent-child transport relationships where bookings affect multiple transports simultaneously.
+
+The first step that must be done is to establish a selling period, together with other relevant information for this period. This would be part of the information that must be stored:
 
 * Start date
 * End date
@@ -11,7 +22,7 @@ The first step that must be done is to establish a selling period together with 
 * Transport allotment price
 * Guaranteed seats
 * Tax
-* Pro rate I1(cost price for one seat that is not guaranteed)
+* Pro rate I1 (cost price for one seat that is not guaranteed)
 * Pro rate I2
 * Pro rate I3
 * Pro rate I4
@@ -26,15 +37,15 @@ Example:
 | ---------- | ---------- | ------ | ------------------ | ---------------- | ------------- | ------------ | ------------- | ------------- |
 | 05/05/2010 | 01/06/2010 | 255780 | 147                | 7                | 120           | 17           | 0             | 0             |
 
-Choosing a value for //Generate days number// mustn’t be possible if there are no correspondent interval definitions defined. A correspondent period interval is one that fulfills this condition:
+Choosing a value for Generate days number mustn’t be possible if there are no correspondent interval definitions defined. A correspondent period interval fulfills this condition:
 
-Period interval start date `<=` Start date && End date `<=`Period interval end date
+Period interval start date `<=` Start date & End date `<=`Period interval end date
 
-Considering the example from the previous section, only the values 7 and 14 can be used for //Generate days number//.
+Considering the example from the previous section, only the values 7 and 14 can be used for Generate days number.
 
-Another important aspect is that //Places number for I3// and //Places number for I4// cannot have a value greater than 0, as there are no correspondent intervals defined for I3 and I4.
+Another important aspect is that Places number for I3 and Places number for I4 cannot have a value greater than 0, as there are no corresponding intervals defined for I3 and I4.
 
-Time tables must also be defined for both //Transport out// and //Transport home// values and should fulfill this condition:
+Time tables must also be defined for both /Transport out// and Transport home values and should fulfill this condition:
 
 Start date from time table `<=` Start date && End date `<=`End date from time table
 
@@ -43,7 +54,7 @@ So the conditions for defining a selling period and generating allotments should
 * Interval periods defined (for defining a selling period)
 * Time tables defined (for generating allotments)
 
-Having a selling period established, //transport allotments// can be generated. //Transport allotments// will be used to prevent a place for being overbooked.
+Having a selling period established, /transport allotments can be generated. Transport allotments will be used to prevent a place for being overbooked.
 
 The following is an extract from the information that will be available for a transport allotment:
 
@@ -83,7 +94,7 @@ The following is an extract from the information that will be available for a tr
 | 19/05/2010     | 255780 | 147 | 17  | 0   | 0   | 0   | 0   | 0   | 0   | -80 |
 | 26/05/2010     | 255780 | 147 | 17  | 0   | 0   | 0   | 0   | 0   | 0   | -80 |
 
-In our case I1 means a period of 7 days.
+In our case, I1 means a period of 7 days.
 
 Let’s consider a booking that uses a transport from Billund to Varna having the previous allotments. The booking has 5 passengers.
 
@@ -96,7 +107,7 @@ Let’s consider a booking that uses a transport from Billund to Varna having th
 
 The number of booked places is reflected in the BO1 field for outbound transport and in the field BHT for homebound transport.
 
-Let’s consider now another booking with the same departure date, 2 passengers, but with period interval 2(the customer chooses to stay at the destination 2 weeks). This is how allotments will look after the booking is made:
+Let’s consider now another booking with the same departure date, 2 passengers, but with period interval 2 (the customer chooses to stay at the destination 2 weeks). This is how allotments will look after the booking is made:
 
 | Departure date | Price  | AO1 | AO2 | AO3 | AO4 | BO1 | BO2 | BO3 | BO4 | BHT | Tax |
 | -------------- | ------ | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -105,7 +116,7 @@ Let’s consider now another booking with the same departure date, 2 passengers,
 | 19/05/2010     | 255780 | 147 | 17  | 0   | 0   | 0   | 0   | 0   | 0   | 2   | -80 |
 | 26/05/2010     | 255780 | 147 | 17  | 0   | 0   | 0   | 0   | 0   | 0   | 0   | -80 |
 
-In case of **child transport**, when booking is created, alltoment is taken both from child transport but also from parent transports. If there are two different transports set, then the outbound allotment will be booked also from the parent transport allotment set, on that departure date, and the allotment for homebound will be booked also on the other parent transport set, for the return flight.
+In case of **child transport**, when a booking is created, alltoment is taken both from child transport but also from parent transport. If there are two different transport sets, then the outbound allotment will be booked also from the parent transport allotment set, on that departure date, and the allotment for homebound will be booked also on the other parent transport set, for the return flight.
 
 **Example**:
 

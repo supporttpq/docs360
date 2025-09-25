@@ -34,7 +34,7 @@ This feature is used by **travel coordinators, back-office staff, and product ma
 
 Step 3: Fields
 
-<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
 *   **Apply Filters**
 

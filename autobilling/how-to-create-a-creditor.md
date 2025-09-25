@@ -2,7 +2,7 @@
 
 To use the **Autobilling** feature in Tourpaq, a **creditor** must first be created in the system. This ensures that invoices can be correctly generated, sent, and exported for accounting purposes.
 
-<figure><img src="../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Steps to Create a Creditor**
 

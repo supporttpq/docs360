@@ -50,7 +50,7 @@ However, to **verify or adjust the setup**, follow these steps:
    * Check the inbox of the configured email addresses after the scheduled export.
    * The export file will usually be in `.CSV` or `.XLSX` format, depending on system configuration.
 
-<figure><img src=".gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Exported Data Fields**
 

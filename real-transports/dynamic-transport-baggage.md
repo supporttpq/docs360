@@ -1,16 +1,27 @@
 # Dynamic transport baggage
 
-The dynamic transport baggage allows the system to reserve also the baggage for a flight ( on ACH - Low Cost Carriers) and to display in the office if the flight contains already a baggage ( on 1G).
+### **Overview / Purpose**
 
-**How to activate the dynamic baggage?​**
+The **Dynamic Transport Baggage** feature allows the system to automatically reserve baggage for flights, particularly for **ACH / Low Cost Carriers**, and ensures that baggage information is visible in the Office interface (including 1G flights). This helps streamline booking management and ensures accurate pricing and inventory for flights.
 
-You can activate this new feature only for the dynamic transports. Go in "Legs" tab and check the box "Dynamic Baggage" from "General dynamic information" section. After that you have to update the flights for this transport, so the service could find and include the baggage also in the flight and in the price.
+### **How to Activate**
+
+1. Navigate to the **Legs** tab of the relevant dynamic transport.
+2. In the **General Dynamic Information** section, check the **Dynamic Baggage** checkbox.
+3. Update the flights for this transport.
+   * This allows the service to detect, include, and price baggage for each flight.
 
 <figure><img src="../.gitbook/assets/image (133).png" alt=""><figcaption></figcaption></figure>
 
-**How it works?​**
+### **How It Works**
 
-After the dynamic baggage is activated, the service will find the baggage price and quantity for earch airline, save it in memory and add it in the price of the flight. The price and the quantity will be displayed in the "Test search" from "Configure" -> "Leg" section and in the "View Flights" from "Fix Quota"
+* Once activated, the system automatically retrieves baggage information for each airline, including:
+  * **Price**
+  * **Quantity / Allowance**
+* This data is saved in memory and added to the flight price.
+* Baggage details are displayed in:
+  * **Test Search** (from `Configure -> Leg`)
+  * **View Flights** (from `Fix Quota`)
 
 **"Test Search"**
 
@@ -18,6 +29,13 @@ After the dynamic baggage is activated, the service will find the baggage price 
 
 **"View Flights"**
 
-When a booking is made, on take allotment the baggage price will be checked again. On the GDS tab, when the booking is created the baggage will be booked as a optional service and after it will be displayed in the "Successfully submited bookings" section.
+1. **Take Allotment**: Baggage prices are verified again when the booking is made.
+2. **GDS Tab**: Baggage is booked as an optional service when the booking is created.
+3. **Successfully Submitted Bookings**: The booked baggage is displayed in the Office system.
+4. **Load PNR**: Optional services, including baggage, are loaded again to ensure consistency.
 
-On "Load PNR" the optional services will be loaded again.
+### **Key Benefits**
+
+* Automatic baggage pricing and inventory management.
+* Reduces errors and manual input for low-cost carrier bookings.
+* Ensures baggage is accurately displayed for office users and bookings.

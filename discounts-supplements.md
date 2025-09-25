@@ -74,7 +74,7 @@ A manual discount/supplement will be manually chosen for a passenger; it can be 
 
 #### **Overview**
 
-<figure><img src=".gitbook/assets/image (13) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (13) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Discount or Suppl: choose between either discount or supplement behaviour
 * General/Specified: choose between the general or specificate behaviour
@@ -97,7 +97,7 @@ A manual discount/supplement will be manually chosen for a passenger; it can be 
 * Include in basic price: add the price of the supplement to the price of the room, while hiding it from the guest
 * Used for price adjust: if a discount/supplement is used for price adjustment it can not be removed by a user in WB
 
-<figure><img src=".gitbook/assets/image (14) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (14) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The entities having this checkbox active will:
 
@@ -129,7 +129,7 @@ The entities having this checkbox active will:
 
 Prices are defined for certain periods of time, periods that will consider the departure date of a booking. If defined here, this price will overrule the general price.
 
-<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In the Discount/supplements general window, go to the Prices tab and click on New Price.
 
@@ -154,7 +154,7 @@ Any value from these intervals will overwrite the general price. To avoid overwr
 
 Any discount/supplement can be removed from selling by creating a stop sale interval for it. To do that, just go to Stop sale interval tab.
 
-<figure><img src=".gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Click new interval
 * Set the start date and stop date for the interval in which the discount cannot be sold.
@@ -177,7 +177,7 @@ In the discount/supplement general window, go to Resources tab.
 
 Here we can select the resource type from the dropdown: destination, resort, hotel, room, transport, real transport, hotel categories
 
-<figure><img src=".gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (15) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Resources are used to limit the availability of discount/supplement to the selected entities.
 
@@ -200,7 +200,7 @@ After all these are set, click on save resources.
 
 On Discount/supplement General window, go to Photos tab:
 
-<figure><img src=".gitbook/assets/image (17) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (17) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Click on Add picture,
 * Click on browse,
@@ -225,7 +225,7 @@ There are two scenarios to use this feature:
 
 Other destinations or booking dates outside the discount setting will not have the product auto selected or free of charge.
 
-<figure><img src=".gitbook/assets/image (18) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (18) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Go to links tab.
 

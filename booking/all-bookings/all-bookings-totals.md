@@ -69,5 +69,5 @@ Set the filters to define which bookings to include in the totals:
 * You can combine filters to generate totals for a very specific segment (e.g., bookings for Resort A, departing in September, with Real Transport X).
 * Use **Saved Views** if you frequently check the same total-based report.
 
-<figure><img src="../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

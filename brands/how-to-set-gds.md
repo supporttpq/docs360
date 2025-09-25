@@ -12,7 +12,7 @@ GDS (Global Distribution System) settings allow administrators to configure **st
 * Texts can be **status-specific**, depending on the booking’s GDS status.
 * The system automatically displays the correct text to passengers and on tickets according to the current booking status.
 
-<figure><img src="../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Key Features / Functions**
 
