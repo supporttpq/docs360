@@ -1,19 +1,54 @@
 # Dynamic transport supplement
 
-The dynamic transport supplement allows the service to find the cheapest flight for a departure, even if the price is bigger then the maximum price set for that transport departure, converting the difference in a supplement added on passenger.
+### **Overview / Purpose**
 
-**How to activate the dynamic supplement?​**
+The **Dynamic Transport Supplement (DTS)** feature allows the system to secure the cheapest available flight for a departure, even if its price exceeds the maximum transport price set for that departure. Instead of blocking the booking, the price difference is automatically converted into a **supplement per passenger**, ensuring flexibility and accurate cost handling.
 
-You can activate this new feature only for the dynamic transports. Go in "Legs" tab and check the box "Dynamic Supplement" from "General dynamic information" section. After that you have to update the flights for this transport, so the service could find the cheapest flights ignoring the "Max return price per person from GDS".
+This prevents missed sales opportunities caused by strict maximum price limits while maintaining transparency in pricing.
 
-**How it works?​**
+### **How to Activate**
 
-After the option is selected, the service will find the cheapest flights for that transport, ignoring the max. price, and save those in database. When the user set this flight for a booking, click take allotment and save passengers, the system will add a dynamic supplement with code "DTS" from a category "DT", that represents the difference between the flight price and the maximum price set on departure/transport, on each passenger.
+* This feature applies **only to dynamic transports**.
 
-The supplement "DTS" must be specificate and permanent. The supplement "DTS" and the category "DT" are added manually for each company, and can't be deleted.
+1. Go to the **Legs** tab.
+2. In the **General Dynamic Information** section, check the **Dynamic Supplement** checkbox.
+3. Update the flights for the selected transport.
+   * This step ensures the service finds the cheapest flights while ignoring the "Max return price per person from GDS" restriction.
 
-DTS for Charter: -when we are using DTS for charter transport always Transport Cost will be 0, and DTS Cost = Transport Price.
+### **How It Works**
 
-DTS for Gds Transport: -when we are using Gds Transport, DTS is calculated raported to "Max return price per person from GDS:"
+1. After activation, the service scans for the cheapest flights linked to the transport, ignoring the maximum price limit.
+2. These flights are saved into the database.
+3. When a booking is created and passengers are saved via **Take Allotment**:
+   * A dynamic supplement (`DTS`) from category `DT` is automatically added per passenger.
+   * The supplement amount represents the **difference between the real flight price and the maximum set transport price**.
 
-Example: Max return price per person from GDS = 100 Gds real flight price is 1720 DKK. Transport Cost = 100 DKK (maximum value between Max return price per person from GDS and Gds real flight price) Dts Price => 1720 - 100 = 1620 DKK Dts Cost stored in AlternativeCost => 1720 - 100 = 1620 DKK TransportGDSCost from Passenger table = 100 DKK
+#### **Supplement Details**
+
+* **Code:** `DTS`
+* **Category:** `DT`
+* These values are **manually added per company** and are **mandatory** (cannot be deleted).
+
+### **Calculation Rules**
+
+#### **Charter Transport**
+
+* **Transport Cost = 0**
+* **DTS Cost = Real Transport Price**
+
+#### **GDS Transport**
+
+* DTS is calculated against the **Max return price per person from GDS**.
+* Example:
+  * Max return price per person (from GDS): **100 DKK**
+  * Real flight price: **1720 DKK**
+  * **Transport Cost = 100 DKK** (the defined maximum)
+  * **DTS Price = 1720 – 100 = 1620 DKK**
+  * **AlternativeCost = 1620 DKK**
+  * **Passenger Table → TransportGDSCost = 100 DKK**
+
+### **Key Benefits**
+
+* Ensures the cheapest flights are always available, even when above max. transport price.
+* Automatically balances costs with transparent supplements per passenger.
+* Works seamlessly with both **Charter** and **GDS** transports.
