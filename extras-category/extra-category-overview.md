@@ -19,8 +19,8 @@
 
 * **Display In Remember Extras**: multiple selection field; displays all brands; no selection behaves as select all.
 * **Use For Extras Statistic**: multiple selection field; displays all brands; no selection behaves as select all.
-* **Display In Hotel List**: multiple selection field; displays all brands; no selection behaves as select all; sets for which brands, the extras in this category, to be displayed in ALL [hotel lists](../export-1/lists.md#report-types-explained) that support extras.
-* **Hide as filter in list**: checkbox ; if enabled, hides the category in all lists throughout the system.
+* **Display In Hotel List**: multiple selection field; displays all brands; no selection behaves as select all; sets for which brands, the extras in this category, to be displayed in ALL [<mark style="background-color:red;">**hotel lists**</mark>](../export-1/lists.md#report-types-explained) <mark style="background-color:$primary;">(click on this link to see the full list)</mark> that support extras.
+* **Hide as filter in list**: checkbox; if enabled, hides the category in all lists throughout the system.
 
 <figure><img src="../.gitbook/assets/ExtraCategoryFilteringOptions-2da18c606917c5debf7b17ec23fcbf0b.png" alt=""><figcaption></figcaption></figure>
 
