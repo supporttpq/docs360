@@ -8,7 +8,7 @@ This feature enables the managing of passenger transfer between arrivals and res
 
 The first step in using this feature is to create a Transport Operator. This is done in **Transport/Flight transfer/Transport Operators**
 
-A new Transport Operator is defined with the **New Transport Operator** button on the right side of the screen.
+A new Transport Operator is defined with the **Create** button on the right side of the screen.
 
 ### Transport Operators​ <a href="#transport-operators" id="transport-operators"></a>
 
