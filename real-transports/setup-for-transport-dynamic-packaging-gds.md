@@ -1,6 +1,12 @@
 # Setup for Transport Dynamic Packaging (GDS)
 
-Transport Dynamic Packaging Anchored on Pricelist is connecting Tourpaq to the GDS system and enables it to book transport over GDS and sell it under an existing pricelist (fix price). This document specification describes how this feature works in Tourpaq.
+#### Overview
+
+The **Transport Dynamic Packaging Anchored on Pricelist** feature connects **Tourpaq** to the **GDS system**, allowing the system to book transport services through GDS while selling them under an existing **fixed-price pricelist**.
+
+#### Purpose
+
+This functionality ensures that transport bookings made via GDS can be seamlessly integrated into Tourpaq without disrupting predefined pricing structures. It provides a way to leverage the availability and flexibility of GDS while maintaining consistency with the company’s fixed price lists.
 
 ### General​ <a href="#general" id="general"></a>
 
