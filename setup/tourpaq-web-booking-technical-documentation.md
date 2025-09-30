@@ -1,5 +1,5 @@
 ---
-hidden: true
+noIndex: true
 ---
 
 # Tourpaq Web Booking - Technical documentation
