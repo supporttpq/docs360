@@ -1,24 +1,42 @@
 # Communication
 
-Communication is used to configure the sending of lists with bookings made for the hotel.
+### Overview
 
-<figure><img src="../../../.gitbook/assets/image (31) (1) (1).png" alt=""><figcaption></figcaption></figure>
+The **Communication** feature allows you to configure automated emails with booking lists for a specific hotel. These reports can be scheduled to run at regular intervals and sent directly to one or more email addresses.
+
+### Purpose
+
+This functionality ensures hotels and agencies receive timely updates about bookings. Automating report delivery eliminates manual report generation, improves communication, and helps partners plan arrivals and manage availability more efficiently.
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 In the communication tab,&#x20;
 
 * Click on Create&#x20;
 
-We need to select the following fields:&#x20;
+### Field Explanations
 
-* Interval specifies how often the scheduler, it will be sent. This could be daily, weekly, monthly or annually.&#x20;
-  * If Daily is chosen the scheduler will run every day.&#x20;
-  * If Weekly is chosen, the scheduler will run every week at a mandatory day specified right next to the interval drop down.&#x20;
-  * If Monthly is chosen, the scheduler will run every month on a day specified right next to the interval drop down.&#x20;
-  * If Annually is chosen, the scheduler will run every year on a day specified right next to interval drop down.&#x20;
-* Bookings made. Using this will cause the report to generate a report with all bookings made "x" days before. If you choose 7 a report will be generated with all bookings made in the last 7 days before.&#x20;
-* Days after - Using this will cause the report to generate a report with all bookings arriving on the hotel up to "x" days after. If you choose 7 a report will be generated with all bookings arriving in the next 7 days after the report is sent.
-* Hour indicates the time when the email is sent.&#x20;
-* Email fields, show the email that receives the list.&#x20;
-* Schedulers, allows the user to do view sent lists.&#x20;
-* Reporting, here we will see the type of list sent.&#x20;
-* Empty list, when is checked list will be sent even if they are empty.&#x20;
+* **Interval** – Defines how often the scheduler runs:
+  * **Daily** – The report is generated and sent every day.
+  * **Weekly** – The report is sent every week on the day specified next to the interval.
+  * **Monthly** – The report is sent every month on the day specified next to the interval.
+  * **Annually** – The report is sent every year on the day specified next to the interval.
+* **Bookings Made** – Generates a report with all bookings created within a set timeframe (e.g., choosing **7** includes all bookings made in the last 7 days).
+* **Days After** – Generates a report with all bookings scheduled to arrive within a given number of days after the report is sent (e.g., choosing **7** includes all arrivals in the next 7 days).
+* **Hour** – Specifies the exact time the email with the booking list is sent.
+* **Email** – Enter one or more email addresses to receive the booking report.
+* **Schedulers** – Displays an overview of all scheduled reports and their status.
+* **Reporting** – Select the Reporting Type&#x20;
+* **Empty List** – If checked, the report will still be sent even when no bookings are found.
+
+### Instructions of Use
+
+1. Go to the **Communication** tab.
+2. Click on **Create** to define a new scheduled report.
+3. Select the **Interval** (daily, weekly, monthly, annually) and, if needed, choose the specific day for weekly/monthly/annual schedules.
+4. Define the **Bookings Made** and/or **Days After** values depending on what kind of booking details you want included.
+5. Set the **Hour** for when the email should be sent.
+6. Enter one or more **Email addresses** to receive the report.
+7. (Optional) Check **Empty List** if you want the report to be sent even when there are no bookings.
+8. Save the scheduler.
+9. Use the **Schedulers** and **Reporting** sections to review scheduled tasks and the type of reports sent.

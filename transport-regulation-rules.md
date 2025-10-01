@@ -17,7 +17,7 @@ Transport Regulation Rules are used to:
 
 #### Page Structure
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 #### Table Columns
 

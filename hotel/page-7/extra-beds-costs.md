@@ -1,26 +1,51 @@
 # Extra Beds Costs
 
-Extra bed costs are discounts given by the hotel to the agency.&#x20;
+### Overview
 
-Extra bed costs will be applied only in 2 cases:
+Extra Bed Costs represent discounts provided by the hotel to the agency when extra beds are used. These discounts are applied under specific conditions and can be configured to cover multiple extra beds per booking.
 
-* extra beds are used
-* the cost prices are inserted per passenger
+### Purpose
 
-If the extra bed cost is not used, its value will be 0.
+This feature allows the agency to manage hotel-provided discounts for extra beds, ensuring accurate pricing and flexibility in bookings. It ensures that discounts are automatically applied when conditions are met, avoiding manual adjustments.
+
+### Conditions of Application
+
+Extra Bed Costs are applied only when:
+
+* Extra beds are used by passengers.
+* Cost prices are set **per passenger**.
+
+If these conditions are not met, the extra bed cost value will remain **0**.
 
 <figure><img src="../../.gitbook/assets/image (63) (1).png" alt=""><figcaption></figcaption></figure>
 
-* Set up the age of the passenger that will use the extra bed.&#x20;
-* Set the arrival start and end dates.
-* Set the booking start and end date.&#x20;
-* Set the cost. The first column, Cost Price, is universal.&#x20;
-* The price in the second column is for the second extra bed, if there is a second extra bed.&#x20;
-* Price third is for the third extra bed, if there is a third extra bed.&#x20;
-* Price fourth is for the fourth extra bed in case there is a fourth extra bed.&#x20;
-* PD  - is per day - if checked, this makes the value to be applied per day and not per interval.
-* NP - Normal Price - if checked, this makes the set value behave as a price, not a discount
-* % - Percent - the price is set as a percentage
-* Room type -  Set the room types
-* Period - the period&#x20;
-* EBD - Extra Bed discount - link to extra bed discount
+### Field Explanations
+
+* **Age** – Define the age of the passenger who will use the extra bed.
+* **Arrival Start / End Date** – Set the date range for valid guest arrivals.
+* **Booking Start / End Date** – Set the booking period during which the discount is applicable.
+* **Cost Columns**:
+  * **Cost Price** – Universal cost applied for the first extra bed.
+  * **Second / Third / Fourth Price** – Costs applied if there are multiple extra beds in the same room.
+* **PD (Per Day)** – If checked, the value is applied **per day** instead of per interval.
+* **NP (Normal Price)** – If checked, the value is treated as a **price**, not a discount.
+* **% (Percent)** – If checked, the cost is applied as a **percentage**.
+* **Room Type** – Select the room types to which the rule applies.
+* **Period** – Define the applicable period for the extra bed discount.
+* **EBD (Extra Bed Discount)** – Links the entry to the Extra Bed Discount configuration.
+
+### Instructions of Use
+
+1. Open the **Extra Bed Costs** configuration panel.
+2. Define the **age group** eligible for extra bed usage.
+3. Set the **arrival** and **booking date ranges**.
+4. Enter the **cost values** in the respective columns:
+   * Use the **Cost Price** column for the first extra bed.
+   * Use the additional columns for second, third, or fourth extra beds if needed.
+5. Configure discount behavior using the checkboxes:
+   * Enable **PD** for per-day application.
+   * Enable **NP** if treating the value as a price.
+   * Enable **%** if defining the value as a percentage.
+6. Assign the rule to specific **room types** and **periods**.
+7. Link to an **Extra Bed Discount (EBD)** if required.
+8. Save the configuration to activate the discount logic.
