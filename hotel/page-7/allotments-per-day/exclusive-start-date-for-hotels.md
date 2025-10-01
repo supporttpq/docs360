@@ -1,10 +1,22 @@
 # Exclusive start date for hotels
 
-To have access to this option, the "Room occupancy" feature must first be activated by a superadmin.
+### **Overview / Purpose**
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (2).png" alt=""><figcaption></figcaption></figure>
+The **Exclusive Start Date** feature allows agencies to reserve hotel rooms for guests on specific arrival days, **independent of transport**.\
+This is useful in cases where:
 
-The Exclusive start date option can be found in Hotel -> Allotment per day -> Search with Allotment Control. This feature allows an agency to reserve some rooms for guests on specific days, independent of the transport.\
+* A destination has multiple transports arriving on the same day.
+* Agencies want to reserve rooms for arrivals on a certain weekday (e.g., Friday), regardless of which transport the guests use.
+* Room reservations need to be managed by **stay duration** (e.g., reserving rooms for long stays vs. short stays).
+
+⚠️ **Note:** This option is only available if the **Room Occupancy** feature has been activated by a **superadmin**.
+
+### **How to Access**
+
+1. Navigate to: **Hotel → Allotment per day → Search with Allotment Control**.
+2. Locate the **Exclusive Start Date** option.
+
+This feature allows an agency to reserve some rooms for guests on specific days, independent of the transport.\
 A destination may have several transports during a week, and they need to reserve some rooms for the arrivals on Friday. The reservation must be independent of the transport, as they may have more than one arrival on the same day, and they do not care if the guests arrive via one or the other transport.
 
 The reservation of rooms is also needed based on the duration of the stay. They need this to reserve a few rooms for longer stays, or maybe the other way around.

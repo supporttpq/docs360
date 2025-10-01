@@ -6,7 +6,7 @@ This feature is available for the administrator user type.
 
 Mandatory fields:
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (403).png" alt=""><figcaption></figcaption></figure>
 
 * Code - hotel code
 * Name - hotel name
@@ -18,7 +18,7 @@ Without these fields, you cannot create the hotel.
 
 Other fields that are necessary for the hotel to work properly:
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (404).png" alt=""><figcaption></figcaption></figure>
 
 * Supplier - supplier of the hotel
 * Stars
@@ -49,9 +49,9 @@ This field allows you to set a custom star rating for the hotel. If specified, t
 
 The header text for the "Stars" column can also be customized, but only when the Customized Stars field is filled. This setting is located in Users → Brands → Ticket under the name "Customized Star".
 
-![!](https://docs.tourpaq.com/assets/images/customized-stars-ticket-79a66eb479e95b0411db857d7fa5c628.png)
+<figure><img src="../../.gitbook/assets/image (406).png" alt=""><figcaption></figcaption></figure>
 
-For autobilling feature please check [Autobilling](../../autobilling/)
+For the autobilling feature, please check [Autobilling](../../autobilling/)
 
 <figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -63,7 +63,7 @@ Brand assignment of a hotel is the next thing to do. A user can choose between t
 * only on internet
 * both in office and internet
 
-<figure><img src="../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (407).png" alt=""><figcaption></figcaption></figure>
 
 #### Room types <a href="#room-types" id="room-types"></a>
 
@@ -147,7 +147,9 @@ To use this feature, please contact Tourpaq Support.
 
 Adds numbers to the rooms of a hotel with a layout.
 
-**!!! Can only be used if the layout is used.**
+{% hint style="warning" %}
+**It can only be used if the layout is used.**
+{% endhint %}
 
 ### Communication <a href="#communication" id="communication"></a>
 

@@ -1,53 +1,116 @@
 # Releases
 
-In order for the automatic release of hotel rooms, the service needs to rely on hotel release rules that can be set by the company's administrator in the Tourpaq Office side of the application. The release rules that can be set are going to depend on a hotel; no rule can be applied to two or more hotels at the same time. Also, they must be able to apply the release rules at a certain provided date or prior to that date with a given amount of days.
+#### Overview
 
-There will be two types of release rules that can be set (thus two subtabs to list in the hotel releases tab) by the type of room release that they will provide:
+The **Hotel Release Rules** feature in Tourpaq Office enables administrators to automate the release of hotel rooms back to the supplier when they are no longer needed. The release process depends entirely on rules configured at the **company administrator level**.
 
-* general release rule: that can release all the rooms of a hotel at a certain date, or with a given number of days before a certain date;
-* specific release rule: that can release only one type of room at a time but can do this during a period of days that can be set along with the rule. This is the automatic equivalent of the previous rule type, only applied to a specific hotel room.
+Each rule applies only to a **single hotel**. Rules cannot be shared across multiple hotels. They can be set to trigger on a specific date or relative to a given number of days before that date.
 
-### General release rule <a href="#general-release-rule" id="general-release-rule"></a>
+#### Purpose
 
-A general hotel room release rule is that it must contain a release date, a number of days to make the release in advance, and an email address (of the hotel supplier) to send the release report email to.
+Hotel Release Rules serve the following objectives:
 
-### Specific release rule <a href="#specific-release-rule" id="specific-release-rule"></a>
+* Automate the release of unused hotel room allotments.
+* Notify hotel suppliers of released rooms through email reports.
+* Allow flexible configuration at both **general hotel level** and **room-specific level**.
+* Provide administrators and suppliers with reporting and log access for full transparency.
 
-A specific hotel room release rule should contain a period to function in, a period determined by a start date and end date, the specific room to be released, the number of days to make the release in advance, and the email address (of the hotel supplier) to send the report to.
+***
 
-Examples:
+#### Types of Release Rules
 
-Assuming that:
+Two types of rules can be created in the **Hotel Releases** tab. Each type is listed under its own subtab:
 
-* today's date is 15-05-2009;
-* Hotel “Grand Palace” has provided Tourpaq with the availability of booking three types of rooms: 1S, 2C, and 3F during the whole period of 01-04-2009 to 01-09-2009.
+**1. General Release Rule**
 
-Having this scenario in mind, here is how the Hotel Release Service should function for each release rule type.
+* Applies to **all room types** of a hotel.
+* Triggers on a specific date or a set number of days before that date.
+* Automatically generates a release report and sends it via email to the supplier.
 
-**General release rule** with start date set to 20-05-2009, number of days to make to release in advance is set to 5, and email address is set to “admin@grandpalacehotel.com”.
+**Required Fields:**
 
-When the service runs, the above rule should release all the rooms of the hotel (allotment bookings) for today, compute the number of rooms that were released, create a log file for these room releases (1S, 2C, 3F), and send an email to the admin.
+* **Release Date** – the fixed date when the release occurs.
+* **Number of Days in Advance** – defines how many days before the release date the action should occur.
+* **Email Address** – the supplier’s email address to receive the release report.
 
-**Notes:**
+**2. Specific Release Rule**
 
-* If the release rule is not supplied with a start date, then the rule should apply each day the service runs and will release all the rooms of the hotel for a date after 5 days from today.
-* If a release rule is not provided with a number of days, then the above logic remains the same, only that it considers the day number to be 0 (zero).
+* Applies to **a single room type** of a hotel.
+* Functions within a defined period (start date and end date).
+* Can release the specified room type repeatedly during the rule’s active period.
 
-**Specific release rule** with start date set to 01-05-2009, end date set to 01-06-2009, room type 2C, days number set to 3, and email address to “admin@grandpalacehotel.com”.
+**Required Fields:**
 
-When the service runs, the above rule should release the 2C room type for 18-05-2009, compute the number of rooms that were released, save a log file for the action, and send an email to the hotel supplier.
+* **Start Date** – date from which the rule becomes active.
+* **End Date** – date until which the rule remains active.
+* **Room Type** – the specific room category (e.g., 1S, 2C, 3F).
+* **Number of Days in Advance** – days prior to the booking date when the release will occur.
+* **Email Address** – supplier’s email address to receive the release report.
 
-**Notes:**
+***
 
-* If today's date is 27-05-2009, then the general release rule cannot release any rooms because the date prior by 5 days to 27-05-2009 is not 20-05-2009, as the rule states.
-* If today's date is 30-05-2009, then the specific release rule cannot release any rooms because computing 3 days after today, the date is not inside the release rule period.
+#### Examples
 
-The hotel supplier can log into a special Tourpaq Office supplier account and manage the rooms that have been set as “available for release”. By managing them, it should be understood that he/she can decide if the number of rooms that are available for release will be removed from the Tourpaq Booking System and reused in other ways.
+**Scenario Setup:**
 
-The supplier administration of hotel room releases must provide a filter to search by hotel, room types, and time periods.
+* Today’s date: **15-05-2009**.
+* Hotel “Grand Palace” has three room types (1S, 2C, 3F) available from **01-04-2009 to 01-09-2009**.
 
-The result of the hotel supplier's actions may be reviewed by the company administrator in the “Releases log” submenu under the Hotel Tourpaq menu. This will also allow the company admin to filter the history of releases made by the following criteria: suppliers, brands, hotels, room types, and periods.
+**General Release Rule**
 
-If a release rule is edited while still in effect, the new rule will start to take effect after the effects of the previous rule.
+* Rule: Release Date = 20-05-2009, Days in Advance = 5, Email = admin@grandpalacehotel.com.
+* Result: On 15-05-2009, all hotel rooms (1S, 2C, 3F) are released. A log file is created, and an email report is sent to the supplier.
 
-Example: A release rule of 10 days is changed to 4 days during the season. Since the rule already was in effect, the new rule will start 7 days after the editing, as the effects of the older rule are still there.
+Notes:
+
+* If no start date is provided, the rule executes daily, releasing rooms for dates X days ahead.
+* If no number of days is provided, the system defaults to **0 days** in advance.
+
+**Specific Release Rule**
+
+* Rule: Start Date = 01-05-2009, End Date = 01-06-2009, Room Type = 2C, Days in Advance = 3, Email = admin@grandpalacehotel.com.
+* Result: On 15-05-2009, the 2C room type is released for 18-05-2009. A log file is created, and a supplier email is sent.
+
+Notes:
+
+* On **27-05-2009**, the general release rule does not apply because the 5-day offset does not match 20-05-2009.
+* On **30-05-2009**, the specific rule does not apply because the release date (3 days later) falls outside the defined period.
+
+***
+
+#### Supplier Administration
+
+Hotel suppliers can log into their dedicated **Tourpaq Office supplier account** to manage rooms available for release. This allows them to decide whether released rooms should be:
+
+* Removed from the Tourpaq Booking System, or
+* Reused for other distribution channels.
+
+The supplier interface provides filters for:
+
+* Hotel
+* Room Type
+* Time Period
+
+***
+
+#### Release Logs
+
+Company administrators can review all release actions in the **Releases Log** submenu (under Hotel → Tourpaq). Logs may be filtered by:
+
+* Supplier
+* Brand
+* Hotel
+* Room Type
+* Period
+
+***
+
+#### Rule Editing Behavior
+
+If a release rule is modified while still in effect, the changes only take effect **after the previous configuration finishes its cycle**.
+
+**Example:**
+
+* Original rule: 10 days in advance.
+* Updated rule: 4 days in advance.
+* Result: The 10-day rule continues until its effect expires, after which the 4-day rule becomes active.

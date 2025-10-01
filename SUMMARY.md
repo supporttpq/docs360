@@ -150,6 +150,7 @@
 
 ## Hotel
 
+* [Hotels](hotel/hotels.md)
 * [Hotel creation](hotel/page-7/README.md)
   * [Create using wizard](hotel/page-7/create-using-wizard.md)
   * [Hotel allotments](hotel/page-7/hotel-allotments.md)
