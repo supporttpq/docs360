@@ -13,7 +13,7 @@ The _Photos_ section allows you to upload, manage, and organize images related t
 
 #### **Fields and Instructions**
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 1. **Image**
    * Displays the uploaded photo.

@@ -1,6 +1,6 @@
 # Add room cost rule with "Per Room Per Stay" type
 
-### ✅ Overview
+### Overview
 
 This page describes the **Hotel Room Cost Rule flow.** It explains each step a user must take to configure hotel costs, verify bookings, and ensure proper cost allocation and creditor integration.
 
@@ -8,7 +8,7 @@ The flow is used to define, apply, and validate **cost calculation rules** for h
 
 ***
 
-### 🎯 Purpose
+### Purpose
 
 The purpose of this feature is to:
 
@@ -21,7 +21,7 @@ This process is essential for financial accuracy in the platform and prevents is
 
 ***
 
-### ⚙️ Preconditions
+### Preconditions
 
 Before beginning this process:
 
@@ -33,7 +33,7 @@ Before beginning this process:
 
 ***
 
-### 🧩 Step-by-Step Instructions & Field Descriptions
+### Step-by-Step Instructions & Field Descriptions
 
 #### 1. **Access the Hotels Page**
 
@@ -73,7 +73,7 @@ Before beginning this process:
 
 #### 5. **Set Stay Type to Per Room Per Stay**
 
-* **Why it matters**: This rule type ignores the number of nights and calculates cost per stay.
+* **Why it matters**: This rule type ignores the number of nights and calculates the cost per stay.
 * **Expected**: A field called **Stay Days No** becomes visible.
 
 ***
@@ -101,7 +101,7 @@ Before beginning this process:
 
 #### 9. **Check Room Cost Row**
 
-* **Expected**: If the rule is per stay, the system will divide cost by number of days internally for calculation purposes.
+* **Expected**: If the rule is per stay, the system will divide the cost by the number of days internally for calculation purposes.
 
 ***
 
@@ -114,7 +114,7 @@ Before beginning this process:
 
 #### 11. **Check Invoice Total**
 
-* **Step**: Scroll to total under **Invoice Hotel Details Cost**.
+* **Step**: Scroll to the total under **Invoice Hotel Details Cost**.
 * **Expected**: Total reflects the rule-based cost.
 
 ***
@@ -122,8 +122,8 @@ Before beginning this process:
 #### 12. **Check Rule Details Popup**
 
 * **Step**: Click **Details** on the Room Cost row.
-* **Expected**: A popup appears showing the rule applied.
-* **Validation**: Ensure rule matches the one entered in hotel config.
+* **Expected**: A pop-up appears showing the rule applied.
+* **Validation**: Ensure the rule matches the one entered in the hotel config.
 
 ***
 
@@ -151,7 +151,7 @@ Before beginning this process:
 #### 16. **Return to Booking**
 
 * **Step**: Open the previously created booking again.
-* **Why**: To verify how the creditor affects cost display.
+* **Why**: To verify how the creditor affects the cost display.
 
 ***
 
@@ -170,32 +170,32 @@ Before beginning this process:
 #### 19–21. **Verify Room Cost with Currency Exchange**
 
 * **Expected**:
-  * Room Cost row shows converted cost.
-  * Invoice section reflects cost in creditor's currency.
+  * Room Cost row shows the converted cost.
+  * Invoice section reflects the cost in the creditor's currency.
   * Totals include accurate currency-exchanged values.
 
 ***
 
 #### 22. **Open Rule Details Again**
 
-* **Purpose**: Confirm rule and cost are **identical** to original rule but shown in the creditor's currency now.
+* **Purpose**: Confirm that the rule and cost are **identical** to the original rule, but shown in the creditor's currency now.
 
 ***
 
-### 🔍 Summary of Key Concepts
+### Summary of Key Concepts
 
 | Concept               | Description                                                                |
 | --------------------- | -------------------------------------------------------------------------- |
 | **Room Cost Rule**    | Defines how much a room costs per stay, per day, or per person.            |
-| **Stay Type**         | Determines cost calculation basis.                                         |
-| **Creditor**          | The entity we pay for the hotel – may use different currency.              |
+| **Stay Type**         | Determines the cost calculation basis.                                     |
+| **Creditor**          | The entity we pay for the hotel may use a different currency.              |
 | **Invoice Details**   | Shows costs calculated and broken down for payment/billing.                |
 | **Currency Handling** | Costs may be stored in local currency but invoiced in creditor’s currency. |
 
 ***
 
-### 🛠️ Troubleshooting Tips
+### Troubleshooting Tips
 
-* If totals don’t match, double-check rule period and occupancy.
+* If totals don’t match, double-check the rule period and occupancy.
 * If currency isn’t converted, confirm a creditor is assigned.
-* If booking status isn’t OK, verify availability or data entry.
+* If the booking status isn’t OK, verify availability or data entry.

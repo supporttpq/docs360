@@ -1,14 +1,12 @@
 # Add room cost rule with "Per Room Per Stay" with a specific stay days value
 
-### ✅ Overview
+### Overview
 
 This page outlines how to **configure and test hotel room cost rules** in the booking system. You'll learn how to define cost rules based on stay intervals, validate that they apply correctly to bookings, and observe how they respond to different travel intervals.
 
 The process is used to ensure that only **valid, matching cost rules** are applied to bookings and that mismatches result in no costs being allocated.
 
-***
-
-### 🎯 Purpose
+### Purpose
 
 The goal of this workflow is to:
 
@@ -18,9 +16,7 @@ The goal of this workflow is to:
 
 This testing is important to guarantee **financial accuracy** and **logic reliability** when travel agents or systems create real bookings.
 
-***
-
-### ⚙️ Preconditions
+### Preconditions
 
 Before beginning this test, ensure:
 
@@ -29,9 +25,7 @@ Before beginning this test, ensure:
 * You have permission to create and edit room cost rules.
 * The system has transport options with varying travel intervals.
 
-***
-
-### 🔄 Step-by-Step Instructions & Field Explanations
+### &#x20;Step-by-Step Instructions & Field Explanations
 
 #### 1. Access the **Hotel → Hotels** Page
 
@@ -177,19 +171,17 @@ Before beginning this test, ensure:
 
 ***
 
-### 🔍 Summary of Field Behavior
+### Summary of Field Behavior
 
 | Field / Action         | Behavior / Description                                              |
 | ---------------------- | ------------------------------------------------------------------- |
 | **Stay Type**          | Defines rule calculation method (Per Stay vs. Per Day)              |
 | **Stay Days No**       | Limits rule to bookings with this exact stay duration               |
 | **Transport Interval** | Defines arrival/departure match criteria                            |
-| **Room Cost Row**      | Appears in Hotel Cost if rule matches booking                       |
+| **Room Cost Row**      | Appears in Hotel Cost if the rule matches the booking               |
 | **Booking Profit**     | Reflects accurate margins only when a matching cost rule is applied |
 
-***
-
-### ✅ Outcome
+### Outcome
 
 By completing this process, you'll confirm that:
 
