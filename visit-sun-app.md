@@ -92,7 +92,7 @@ User can save photo or publish on social media.
 
 This tab offers the possibility to the user to check VisitSun special features like: Dine-around, In-room breakfast, Fast check-in or Room selection.
 
-<figure><img src=".gitbook/assets/image (20) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (20) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Dine Around** allow to guests to book lunch and/or dinner until the day before the latest one at a different hotel/restaurant than the one used on the booking from VisitSun group.
 

@@ -37,7 +37,7 @@ Extra Suppliers represent providers of destination services, such as excursions,
 
 * Once created, the Extra Supplier can manage lists of extras, tee times, or destination services as configured by the system administrator.
 
-<figure><img src="../.gitbook/assets/image (34) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (34) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Click on insert.&#x20;
 
@@ -45,7 +45,7 @@ Find the new supplier and edit it&#x20;
 
 Add the lists that the supplier has available and the product categories.&#x20;
 
-<figure><img src="../.gitbook/assets/image (35) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (35) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Set the extra schedulers. These are the same as the communication from Extras.&#x20;
 

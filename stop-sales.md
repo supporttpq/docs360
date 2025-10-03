@@ -53,7 +53,7 @@ In the "Stop Sale" page from the hotel menu, it can be seen that all the stop sa
 
 In the "Stop sales" page from the Hotel menu, it can be seen all the Stop Sales including the ignored ones. The Ignored "Stop sales" can be seen with a red background. Here you can disable/enable a stops sale. If you disable a stop sale, the Stop sale service filters out it so that the allotments of the Hotel can be changed.
 
-#### 🔍 Filters & Search
+#### Filters & Search
 
 At the top of the screen, a filtering panel is provided to refine the stop sale records:
 
@@ -67,7 +67,7 @@ At the top of the screen, a filtering panel is provided to refine the stop sale 
 * **More Filters**: Expands additional filter options.
 * **Clear**: Clears all selected filters.
 
-#### 📊 Data Table
+#### Data Table
 
 The main table displays a list of stop sale entries with the following columns:
 
@@ -91,7 +91,7 @@ The main table displays a list of stop sale entries with the following columns:
 
 ### **Stop sales in Supplier**
 
-<figure><img src=".gitbook/assets/image (71) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
 
 A supplier, if it has the "Allow to make stop sale" right activated, can see his stop sales in the "Agent" menu, "Stop sales list" page. A supplier can only disable/enable a service.
 
@@ -105,7 +105,7 @@ After a new stop sale is made, an email is sent to the company with the stop sal
 
 2. Each agency must create the **email template** for this from the email center.
 
-<figure><img src=".gitbook/assets/image (73) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
 
 ### **Stop Sale Room Reservation**
 
@@ -114,4 +114,4 @@ We'll add a stop sale option per hotel that will
 * Do not allow either the customer on web booking or the salesperson in the office to make room selection during the stop sale hours if they do not already have anything chosen.
 * Do not allow either the customer on web booking or the salesperson in the office to make changes to the room selection during the stop sale hours if they have already made the selection.
 
-<figure><img src=".gitbook/assets/image (74) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>

@@ -2,7 +2,7 @@
 
 Under this menu, reasons can be handled (defined, modified, or deleted) to use them on service cases.
 
-<figure><img src="../.gitbook/assets/image (27) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (27) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Here we have the list with all the defined reasons for complaint that can be used on service cases.
 

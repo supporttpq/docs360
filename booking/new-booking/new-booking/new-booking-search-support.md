@@ -54,18 +54,18 @@ Before using this screen, the following conditions must be met:
 | 20       | Click "+ More"                                      | More than 3 records for a hotel are shown                                                                                                                                                                     |                                                                                                                             |
 | 21       | Click "- Less"                                      | Display returns to 3 records per hotel                                                                                                                                                                        |                                                                                                                             |
 | 22       | Hover over eye icon in Hotels                       | Tooltip "View details" is displayed                                                                                                                                                                           | <div><figure><img src="../../../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure></div>         |
-| 23       | Select a hotel record                               | Buttons: "Create booking" and "Clear selected row" are shown                                                                                                                                                  | <div><figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure></div>             |
+| 23       | Select a hotel record                               | Buttons: "Create booking" and "Clear selected row" are shown                                                                                                                                                  | <div><figure><img src="../../../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure></div>         |
 | 24       | Click "Clear selected row"                          | Buttons disappear                                                                                                                                                                                             |                                                                                                                             |
 
 #### Creating a Booking
 
 When the **Create Booking** button is clicked, a new page will open, pre-filled with all previously selected information. From this point forward, the process for completing the booking follows the standard steps used for creating any new booking.
 
-<figure><img src="../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Instructions & Field Descriptions**
 
-<figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Search Filters (Top Section)**
 

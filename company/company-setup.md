@@ -94,7 +94,7 @@ Users are assigned roles with permissions tailored to their responsibilities.
 * **Financial & Insurance Management:** Each brand can manage insurance reporting, creditor numbers, and voucher IDs
 * **Security:** Password validity, 2FA, and user visibility settings maintain compliance and security
 
-<figure><img src="../.gitbook/assets/image (28) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (28) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Notes / Best Practices**
 
@@ -110,7 +110,7 @@ Users are assigned roles with permissions tailored to their responsibilities.
 
 The Automated Setup feature allows for quick creation of a new company, along with its initial user and agency, through a streamlined API process. This reduces manual entry and ensures that necessary default users (WebUser and Windows Service) are created automatically.
 
-<figure><img src="../.gitbook/assets/image (29) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (29) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **How It Works**
 
@@ -143,7 +143,7 @@ The Automated Setup feature allows for quick creation of a new company, along wi
 
 These default users are ready for use and linked to the newly created company.
 
-<figure><img src="../.gitbook/assets/image (30) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (30) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Key Features / Functions**
 

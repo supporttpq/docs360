@@ -6,7 +6,7 @@ This feature allows **Administrators, Agents, and Guides** to quickly locate a b
 
 <figure><img src="../.gitbook/assets/image (362).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (28) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (28) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **How It Works**
 

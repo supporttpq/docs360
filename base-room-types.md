@@ -1,44 +1,60 @@
 # Base room types
 
-This feature is used to define and insert room types in the system. Each hotel has a variety of room types available for selling. The room types are chosen from the assets B**ase room types** that should be inserted in the system by an administrator.
+### Overview
 
-To create a new room type, the user must go to **Hotel/Base room types** and click on the Create button.&#x20;
+The **Base Room Types** feature is used to define and insert room types into the system. Each hotel has a variety of room types available for sale. These room types are chosen from the predefined **Base Room Types**, which must first be set up in the system by an administrator.
 
-Fields that need to be filled:
+### Creating a New Room Type
 
-<figure><img src=".gitbook/assets/image (22) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+1. Navigate to **Hotel → Base Room Types**.
+2. Click the **Create** button.
+3. Complete the required fields described below.
 
-* Room code - room code in the system
-* Plaintext - room name
-* List Text - room name on export files
-* No. ordinary beds - number of beds, these beds will always pay the full price of the bed, they cannot receive extra bed discounts
-* Min no. beds - minim number of beds, used to establish the minimum number of guests in the room
-* Extra beds - number of normal extra beds; can receive extra bed discount
-* Extra beds child - number of extra beds for children; can receive extra bed discount
-* Start child age - starting age for children that can use the extra bed child
-* End child age - ending age for children that can use the extra bed child
-* Internet- base room type will be shown in the API or not. Allows the room to be sold on the website
-* Status - determines if the room is visible or hidden.
-* Is fictive - are used to allow the room to be sold as a one way room for one way hotels and one way seats under transport. I**n base room type** typically refers to a **virtual or non-physical room** that is used for **system configuration, planning, or logic purposes**, rather than representing an actual, bookable room in a hotel or property.
-* For one way - it is used only for oneways transport (it can be only one per company); it is used to make pricelist for oneways
-* Ignore in seats vs. beds will make the room not displayed and not to be counted in the seats vs. beds overview.
-* For "A La Carte" - is used for a la carte bookings
+### Field Descriptions
 
-#### Cost configuration <a href="#cost-configuration" id="cost-configuration"></a>
+<figure><img src=".gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
-* Cost beds - number of beds used to calculate cost price for this type of room taken into account by the hotel cost service
-* Extra beds cost - number of extra beds used to calculate cost price for this type of room taken into account by the hotel cost service
+#### General Information
 
-#### Hotel allotment <a href="#hotel-allotment" id="hotel-allotment"></a>
+* **Room Code** – Unique identifier for the room in the system.
+* **Plaintext** – Room name displayed in the system.
+* **List Text** – Room name displayed on export files.
+* **Internet** – Determines if the room is available via API (for website sales).
+* **Status** – Defines if the room type is visible or hidden in the system.
+* **Is Fictive** – Marks the room as a virtual/non-physical configuration, used for system logic or planning. Commonly applied for one-way hotels or one-way seats in transport.
+* **For One Way** – Used only for one-way transport. (Only one room type can be defined per company.) Enables pricelist creation for one-way trips.
+* **Ignore in Seats vs. Beds** – Excludes this room type from the **Seats vs. Beds** overview.
+* **For “A La Carte”** – Used for A La Carte bookings.
 
-This is a short list with all hotels and periods where allotments have been defined for this type of room
+#### Bed Configuration
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+* **No. Ordinary Beds** – Number of standard beds. These beds always pay full price and cannot receive extra bed discounts.
+* **Min No. Beds** – Minimum number of beds, used to enforce the minimum occupancy for this room.
+* **Extra Beds** – Number of additional beds for adults (eligible for extra bed discounts).
+* **Extra Beds Child** – Number of additional beds for children (eligible for extra bed discounts).
+* **Start Child Age** – Minimum age for children allowed to use extra child beds.
+* **End Child Age** – Maximum age for children allowed to use extra child beds.
 
-#### Child rooms <a href="#child-rooms" id="child-rooms"></a>
+#### Cost Configuration
 
-When adding a new room type for a hotel, the user has the option to customize the new room. From changing the name to changing the bed number and type.
+* **Cost Beds** – Number of beds considered in cost price calculations, used by the Hotel Cost Service.
+* **Extra Beds Cost** – Number of extra beds considered in cost price calculations, used by the Hotel Cost Service.
 
-<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+### Hotel Allotment
 
-<figure><img src=".gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+* Displays a summary of all hotels and defined periods where allotments exist for this room type.
+
+<figure><img src=".gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+
+#### Child Rooms
+
+When adding a new room type for a specific hotel, users can customize the configuration:
+
+<figure><img src=".gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+
+* Change the room name.
+* Adjust the number and type of beds.
+
+<figure><img src=".gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>

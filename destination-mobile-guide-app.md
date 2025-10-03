@@ -85,7 +85,7 @@ In the VisitSun mobile app, the effect will be that the excursion/product will c
 
 Another really important step in the process of setting up the excursion for the app is defining one or more price rules. That can be done per periods - meaning that you can have different adult or child prices for different periods. In order to do that one has to navigate to the **Extras -> Generic Product Price Rule** menu item (see the picture below).
 
-<figure><img src=".gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Creating a new price rule for an excursion**
 

@@ -24,6 +24,6 @@ Based on the type of the trip, the window will return results with one-way-out f
 
 After selecting the flights, transport will be displayed on the booking at transport details.
 
-<figure><img src="../.gitbook/assets/image (20) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (20) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The user can create the GDS normal booking from this point. GDS One Way Flight can be combined on a booking with charter, hotel-only, or normal one-way flights by simply adding them to the booking.

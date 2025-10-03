@@ -1,10 +1,22 @@
 # Notification on Dashboard Stop Sale
 
-| Steps                                                                                | Expected Results                                                                                                                                                                                                                                            |
-| ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1. Go to "Notifications" meu -> "Stop Sales"                                         | Notification page is displayed listing all notifications available in the system                                                                                                                                                                            |
-| <p>2. Under "Notification" section, go to "StopSales"<br>Filer date if necessary</p> | <p>Filter is set by default for stop sale on the next 2 weeks (from current date)<br>New "AGREED ALLOTMENT" column was added to display, if the case, the agreed allotment set on the rule<br>New filter "Only Agreed Allotment" checkbox is displayed.</p> |
-| 3. Press "Only Agreed Allotment" button                                              | Only stop sales rules that have agreed allotment set will be displayed.                                                                                                                                                                                     |
+### Overview
+
+The **Stop Sale Notifications** section in the Dashboard allows users to view and manage all system notifications related to Stop Sales. This ensures that upcoming or active Stop Sale rules are easily monitored.
+
+### Instructions
+
+1. **Access Notifications**
+   * Go to **Notifications → Stop Sales**.
+   * The **Notification page** is displayed, listing all Stop Sale notifications available in the system.
+2. **Filter Stop Sale Notifications**
+   * In the **Notification** section, select **Stop Sales**.
+   * By default, the filter is set to display Stop Sales for the next 2 weeks (from the current date).
+   * A new **AGREED ALLOTMENT** column is available, showing the agreed allotment set on each Stop Sale rule (if applicable).
+   * A new filter option, **Only Agreed Allotment**, is available.
+3. **Filter by Agreed Allotment**
+   * Check the **Only Agreed Allotment** checkbox.
+   * Only Stop Sale rules with an agreed allotment set will be displayed.
 
 <figure><img src="../.gitbook/assets/image (174).png" alt=""><figcaption><p>Step 1&#x26;2</p></figcaption></figure>
 

@@ -12,19 +12,19 @@ First, a user will enter their username and a password. Then, instead of immedia
 
 * **Super Administrator** This feature will be activated by a Super Admin from Users → Companies → Feature Access.
 
-<figure><img src=".gitbook/assets/image (36) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (36) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **System Setup** We'll add a new setting window in order to choose what 2FA methods will be used. It's recommended to select all methods. But, it will be up to you.
 
-<figure><img src=".gitbook/assets/image (37) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (37) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **User setup** We will set the user's email and password that will be used for authentication
 
-<figure><img src=".gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (38) (1).png" alt=""><figcaption></figcaption></figure>
 
 Two additional fields for input of mail address will be added to user profile interface. These two fields will (currently) only be in use for the 2FA authentication code in supplement to the existing functions of the 1st field. When the 2nd and or 3rd field is infilled, the 2FA email will be sent to these addresses also. When the field is empty, it will be ignored.
 
-<figure><img src=".gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (39) (1).png" alt=""><figcaption></figcaption></figure>
 
 If any of the fields are wrong, the user's profile will not be saved and an error "Email fields must be empty (including no spaces) or with recognized e-mail address format" will appear to the user.
 

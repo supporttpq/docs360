@@ -10,7 +10,7 @@ The system allows administrators to configure and manage currency rates used acr
 
 This feature provides flexibility in handling multi-currency operations by allowing rates to be created, updated, or removed, while defining default currencies at both **company** and **brand** levels.
 
-<figure><img src="../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (35) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Managing Currency Rates
 
@@ -32,7 +32,7 @@ This feature provides flexibility in handling multi-currency operations by allow
 
 Currency in Bookings
 
-<figure><img src="../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (36) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Totals Panel**
   * The totals are displayed in the currency of the selected brand (from the **Brand** dropdown in the top-left).

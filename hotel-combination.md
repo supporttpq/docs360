@@ -1,39 +1,71 @@
 # Hotel combination
 
-### What is a hotel combination? <a href="#what-is-hotel-combination" id="what-is-hotel-combination"></a>
+#### Overview
 
-A hotel combination is like an itinerary of hotels where a customer stays two days in one hotel and five in another during the holiday. The itinerary hotels (a list of hotels that are defined) are hotels that exist already in the Tourpaq system. This type of hotel is like a regular hotel except that it has no allotments; instead, it will rely on the allotments of the hotel defined in the itinerary.
+A **hotel combination** is a type of itinerary where a customer stays in multiple hotels during a single holiday. For example, a customer might spend two days in one hotel and five days in another. The hotels used in a combination must already exist in the **Tourpaq system**.
 
-### How to define a hotel combination? <a href="#how-to-define-a-hotel-combination" id="how-to-define-a-hotel-combination"></a>
+Unlike regular hotels, combination hotels **do not have their own allotments**. Instead, they rely on the allotments of the individual hotels defined in the itinerary.
 
-You can add a new combination hotel in the same way a regular hotel is created, but make sure you check the Hotel Combination checkbox. In order to use the hotel in the booking, you should complete the next steps.
+#### Purpose
 
-<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+The hotel combination feature allows agencies to offer multi-hotel packages, providing flexibility in designing holiday itineraries while maintaining accurate pricing and allotments from existing hotels.
 
-### Add hotel list and transport <a href="#add-hotel-list-and-transports" id="add-hotel-list-and-transports"></a>
+#### How to Define a Hotel Combination
 
-Under the Hotel Combination tab, you can define a list of hotels where the customer can stay. The order in which the hotels are added is important. The first hotel in the list is the first hotel where the customer will spend. You can add two or multiple hotels. Here can be added transports as well. This means that this hotel is available only for this transport.
+1.  **Create a New Hotel Combination**
 
-<figure><img src=".gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    * Add a new hotel in the same way as a regular hotel.
+    * Make sure to **check the "Hotel Combination"** checkbox.
 
-If you select only one hotel in the list, then a checkbox will appear. If the checkbox is checked, then the hotel from the list will appear in the ticket; else, if it is not checked, then the main hotel will be the one to appear.
+    <figure><img src=".gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+2.  **Add Hotel List and Transport**
 
-### Assign the rooms <a href="#assign-the-rooms" id="assign-the-rooms"></a>
+    * Navigate to the **Hotel Combination tab**.
 
-A hotel has multiple room types. Also, our hotel combination has room types, but these are not real; they are just some fake rooms. In reality the hotel room has one room for every regular hotel. You can map the rooms of the hotel combination with the regular hotel rooms in the Hotel Combination Room tab. In this section are two grids; one is mapping rooms. The rooms have to be close together as specification. In the second grid, you have many transports with many intervals mapped with hotels. For every combination, you have to add the number of days that the customer will spend in that hotel.
+    <figure><img src=".gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    * Define the list of hotels the customer will stay in. **The order matters**: the first hotel in the list is where the customer will start their stay.
+    * Multiple hotels can be added.
+    * Optionally, assign transports to the hotel combination; this restricts the combination to specific transport services.
 
-In the picture above is shown transport BLLPVK-A7-5A. This transport has 4 intervals: interval 1 has 7 days, interval 2 has 14 days, interval 3 has 21 days, and interval 4 has 28 days. A customer can book for interval 1, 4 days for hotel SIV150 and 3 days for hotel AGI150 during this 7-day holiday. Since interval 2 has 14 days, the customer can book 7 days in SIV150 and 7 days in AGI 150. The same things can be made for intervals 3 and 4 also. These values are presets, so the customer can’t choose how many days to stay in each hotel. Now that all is set, you can create a price list with the transport, hotel, and room. **Note:** If the price list is defined, you can’t change the transport, room, or hotel in the hotel combination. Also make sure you defined allotments for the itinerary hotels. The price list will not be created otherwise.
+    **Single-Hotel Option:**
 
-### What to do if the price list can’t be generated <a href="#what-to-do-if-the-price-list-cant-be-generated" id="what-to-do-if-the-price-list-cant-be-generated"></a>
+    * If only one hotel is in the list, a checkbox will appear.
+    * Checked: the hotel appears on the ticket.
+    * Unchecked: the main hotel appears instead.
+3.  **Assign Rooms**
 
-There are some situations where the price list can’t be generated. To find out what the problem is, you have to make sure you’ve completed the following verifications.
+    * Each hotel has multiple room types.
+    * Hotel combinations also have room types, but these are placeholders (“fake” rooms).
+    * Map the combination hotel rooms to the actual rooms in the **Hotel Combination Room tab**.
 
-### Regular hotel allotment <a href="#regular-hotel-allotment" id="regular-hotel-allotment"></a>
+    <figure><img src=".gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
-If we take our example where we have a combination hotel with two hotels, SIV150 and AGI150, in order to successfully create a price list, you have to navigate to Hotel -> Hotel (SIV150/AGI150) -> Allot. and check the list of allotments to see if a record with period, room, and allotment number complies with the price list requirements.
+    **Room Mapping Grids:**
 
-### Transport allotments <a href="#transport-allotments" id="transport-allotments"></a>
+    * **Grid 1:** Map combination rooms to regular hotel rooms. Rooms must match specifications closely.
+    * **Grid 2:** Map transports with intervals to hotels. Specify the number of days the customer will spend at each hotel per interval.
 
-There are cases where you want to create a price list for an interval, let's say for 07.06.2026, but the transport may not have an allotment on that date. In this case you have to add an allotment for that date and recreate the price list. You can add an allotment in a fixed quota.
+    **Example:**
+
+    * Transport **BLLPVK-A7-5A** has 4 intervals:
+      * Interval 1: 7 days
+      * Interval 2: 14 days
+      * Interval 3: 21 days
+      * Interval 4: 28 days
+    * A customer booking interval 1 could stay 4 days in **SIV150** and 3 days in **AGI150**.
+    * Interval 2 could split evenly: 7 days in each hotel.
+    * These day distributions are **predefined**; customers cannot change them.
+4. **Create Price List**
+   * Once rooms, hotels, and transports are defined, create a **price list** for the combination.
+   * **Important:** After the price list is created, you cannot change the hotels, rooms, or transport.
+   * Ensure allotments exist for the itinerary hotels; otherwise, the price list cannot be generated.
+
+#### Troubleshooting Price List Generation
+
+1. **Check Regular Hotel Allotments**
+   * Navigate to: `Hotel → Hotel (SIV150/AGI150) → Allot.`
+   * Verify that allotments exist for the required period, room, and quantity.
+2. **Check Transport Allotments**
+   * If creating a price list for a specific date (e.g., 07.06.2026) fails, the transport may not have an allotment on that date.
+   * Add an allotment in **Fixed Quota** and recreate the price list.

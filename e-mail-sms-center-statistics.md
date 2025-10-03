@@ -13,13 +13,13 @@ The purpose of this module is to:
 
 
 
-<figure><img src=".gitbook/assets/image (25) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (25) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * It also gives you the capability of analysing the total turnover made throughout the Dynamic E-Mail/SMS feature either for a given template/category nor an overall statistic.
 
 For a more concrete monitoring of the data, it also provides you a set of percentages, which show the opened, sent, failed or queued E-Mails or SMSes in raport to the total amount.
 
-<figure><img src=".gitbook/assets/image (26) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (26) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 You can preview the data either for the last week, last month, last year or you can insert your own predefined date intervals. All the reports shown in the interface are made in relation to E-mail / SMS template that has been set up in the Dynamic E-Mail/SMS Center.
 

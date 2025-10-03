@@ -2,7 +2,7 @@
 
 The Good to Know section is used by guides to provide customers with any type of information related to the resorts managed by that guide. These tips are configured in the Tourpaq Office when logged in as a guide or admin, using the **Guest App -> Good to Know** menu.
 
-<figure><img src=".gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (20) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Go to Guest App / Good to Know
 * Click on Create

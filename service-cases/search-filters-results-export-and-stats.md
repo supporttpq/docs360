@@ -39,7 +39,7 @@ Also, in the service case overview, you will be able to see all the services of 
 
 Also, we will find the all service case per customer in the customer details
 
-<figure><img src="../.gitbook/assets/image (21) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (21) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In the “Totals” section, statistics are displayed, referring to the results list.
 

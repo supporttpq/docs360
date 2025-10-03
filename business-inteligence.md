@@ -1,33 +1,38 @@
 # Business Inteligence
 
-Hotel Allotment Overview is a feature that shows bed numbers, rooms number, and guarantee rooms. You can find it here: **Hotel -> Business Inteligence.**
+#### Overview
 
-Also if there is a red background on a cell, that means in that date is a stop sale.
+The **Hotel Allotment Overview** is part of the **Business Intelligence** menu and provides a comprehensive view of hotel availability, including:
+
+* **Bed numbers**
+* **Room numbers**
+* **Guaranteed rooms**
+
+It can be accessed here:
+
+```
+Hotel → Business Intelligence → Allotment Overview
+```
+
+**Note:** Cells highlighted in **red** indicate a **stop sale** for that date.
 
 <figure><img src=".gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### Hotel Allotment Overview <a href="#hotel-allotment-overview" id="hotel-allotment-overview"></a>
+#### Filters
 
-* **Filters**
+You can refine the data using the following filters:
 
-5 filters can be used like below:
+1. **Hotel Code -** Searching by hotel code disables all other filters.
+2. **Transport -** Filter data by assigned transport.
+3. **Real Transport -** Filter by actual transport used.
+4. **Resort -** Filter by the resort where the hotel is located.
+5. **Hotel Name -** Filter by hotel name.
 
-1. **You can search by Hotel Code.** If you search by hotel, all filters are disabled.
-2. **You can filter by Transport**
-3. **You can filter by Real Transport**
-4. **You can filter by Resort.**
-5. **You can filter by Hotel Name**
+#### Allotment Information
 
-* **Bed Number**
-
-Bed Number will show you all bed numbers left for a period.
-
-* **Rooms Number**
-
-Rooms number will show all remaining rooms that can be sold in a period. Also you can filter by parent rooms only by checking **Show only parent room**.
-
-* **Guarantee Rooms**
-
-By checking this checkbox, you can view guaranteed room numbers below the allotment line of each room.
+1. **Bed Number -** Shows the number of beds available for the selected period.
+2. **Rooms Number -** Displays all rooms available for sale during the selected period.
+   * Optionally, check **Show only parent room** to filter parent rooms only.
+3. **Guarantee Rooms -** By checking the **Guarantee Rooms** box, guaranteed room numbers are displayed **below the allotment line** for each room.
 
 <figure><img src=".gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

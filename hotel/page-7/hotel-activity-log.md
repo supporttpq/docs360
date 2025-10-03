@@ -11,7 +11,7 @@ The **Activity Log** provides a detailed record of all changes made to room allo
 * Compare original values with new values for auditing purposes.
 * Provide a history of allotment modifications for troubleshooting or verification.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
 
 ### **Key Elements**
 
@@ -43,7 +43,7 @@ In addition to the Activity Log, the system provides **Allotment History** under
 * To access, click the **Allotment History** button.
 * This feature shows a chronological view of allotment changes for a specific day.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Overview**
 
@@ -59,7 +59,7 @@ The purpose of this screen is to:
 * Provide visibility into who made the changes, when, and what values were affected.
 * Support troubleshooting and reporting.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Fields Explanation**
 

@@ -252,7 +252,7 @@ A bonus code is a text code that allows a visitor to book a trip with a certain 
 
 Tourpaq system allows multiple discounts to use the same bonus code. If all discounts are available they will all be applied by using the bonus code. The discounts can also be set as not combinable with other discounts, this would lead in applying only the most advantageous discount for the current booking (not per passenger but on the entire booking).
 
-<figure><img src=".gitbook/assets/image (19) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (19) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 To set a coded discount, first set the code name, plain text, list text and bonus code name. The text chosen for the bonus code has to be between 4 and 20 characters long
 

@@ -18,7 +18,7 @@ Allow the user to assign an extra to an agency. An extra can be assigned as foll
 * hotel sale - can be sel only by a hotel agent
 * guide sale + internet sale + for sale - can be booked by a admin, guide or a WB
 
-<figure><img src="../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (28) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Overview:**
 

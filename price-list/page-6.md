@@ -44,7 +44,7 @@ Creating a price list is fairly easy. From the **Price List** tab, select "Creat
 * Select the rooms.
 * Click **Create new price list**
 
-<figure><img src="../.gitbook/assets/image (29) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (29) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Price List Search <a href="#price-list-search" id="price-list-search"></a>
 
@@ -147,7 +147,7 @@ Column titles are abbreviated to keep the table tidy. Most fields include **tool
 
 Price list history is a way to see the evolution in time of prices.
 
-<figure><img src="../.gitbook/assets/image (32) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (32) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 At the beginning of each row, there are tree icons:
 
@@ -157,7 +157,7 @@ At the beginning of each row, there are tree icons:
 
 ### Column Filters <a href="#column-filters" id="column-filters"></a>
 
-<figure><img src="../.gitbook/assets/image (33) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (33) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Column Filters** allow you to display specific portions of information from the Price List grid.
 
@@ -167,7 +167,7 @@ At the beginning of each row, there are tree icons:
 
 ### Discounts <a href="#discounts" id="discounts"></a>
 
-<figure><img src="../.gitbook/assets/image (34) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (34) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Relation PL & Related PL <a href="#relation-pl--related-pl" id="relation-pl--related-pl"></a>
 

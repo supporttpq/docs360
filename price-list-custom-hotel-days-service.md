@@ -12,7 +12,7 @@ The purpose of this feature is to:
 * Offer flexibility to customers who may not require a full transport + hotel package.
 * Allow for tailored availability and pricing, independent of transport schedules.
 
-<figure><img src=".gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (9) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 #### Instructions
 
@@ -33,7 +33,7 @@ Once created, the custom hotel days can be managed in the list view, where price
 
 ## **Define Rules for Price List – Field Explanations**
 
-<figure><img src=".gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (10) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 #### **Profit Margin**
 

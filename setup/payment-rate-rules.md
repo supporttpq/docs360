@@ -30,14 +30,14 @@ Tourpaq supports having a company/system "history" for deposit values in differe
 
     * **Please note!** If we enter a rule today, it will automatically set the rule with today's date.
 
-    <figure><img src="../.gitbook/assets/image (30).png" alt=""><figcaption><p>#1 / #2</p></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (30) (1).png" alt=""><figcaption><p>#1 / #2</p></figcaption></figure>
 
-    <figure><img src="../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (31) (1).png" alt=""><figcaption></figcaption></figure>
 * The behavior it produces is that all the bookings made up until **today INCLUDED** will use the deposit value (and due dates) in the relevant rule from #3.
 * Only starting from **tomorrow**, all bookings will use the default deposit value in field #1.
 * We can have multiple rules in the list from #2 and #3. They will affect bookings made within the date intervals determined by several deposit rules, like in example #3.
 
-<figure><img src="../.gitbook/assets/image (32).png" alt=""><figcaption><p>#3</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (32) (1).png" alt=""><figcaption><p>#3</p></figcaption></figure>
 
 📝 **Note:**
 
@@ -47,10 +47,10 @@ This deposit value can be **overwritten by**:
 
 * Agency specific deposit rules:
 
-<figure><img src="../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (33) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Each transport can use custom payment rules that **overwrite both the company setting and the agency** setting.
 
-<figure><img src="../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (34) (1).png" alt=""><figcaption></figcaption></figure>
 
 > 📝 **Note:** We do not currently have support for previous deposit values from rules set under agency and transport

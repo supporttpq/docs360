@@ -16,7 +16,7 @@ Price lists are created in the **Price List** tab by selecting **Create/Copy Pri
 4. **Select Hotel** – Choose the hotel that will use the price list.
 5. **Select Rooms** – Specify the rooms to include in the price list.
 
-<figure><img src="../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Not created prices <a href="#not-created-prices" id="not-created-prices"></a>
 
@@ -26,7 +26,7 @@ This feature allows users to identify **price lists that were not created**.
   1. The **fix quota** does not cover the hotel allotment period.
   2. Some required **settings for the transport or hotel** were skipped during price list creation.
 
-<figure><img src="../.gitbook/assets/image (36) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (36) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Copy price list <a href="#copy-price-list" id="copy-price-list"></a>
 
@@ -48,7 +48,7 @@ The **Copy Price List** feature allows users to duplicate price lists **within t
 7. **Execute Copy** – Click **Copy Prices**.
 8. **Save Discounts** – Click **Save Changed Discounts** to finalize.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Field-by-Field Explanation
 
@@ -74,7 +74,7 @@ A price list is blank when first created.
 
 The fields must then be filled manually by the user with the amounts calculated or required. Some fields are set to autofill based on a formula that takes into consideration the amounts already inserted. In the end, a price list should look like this:
 
-<figure><img src="../.gitbook/assets/image (40) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (40) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Fields:
 

@@ -8,7 +8,7 @@ It can be activated by a Super Administrator.
 
 After the activation, on Users -> Brands -> Edit Brand the Giftcard IDs interval should be completed.
 
-<figure><img src=".gitbook/assets/image (21) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (21) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Giftcard creation <a href="#giftcard-creation" id="giftcard-creation"></a>
 
