@@ -4,7 +4,7 @@ This page describes how to create a new Transport Supplier in the system. A Tran
 
 ***
 
-### 🧭 Navigation
+### Navigation
 
 To add a new Transport Supplier, go to:
 
@@ -12,29 +12,31 @@ To add a new Transport Supplier, go to:
 
 ***
 
-### 📝 Form Fields Overview
+### Form Fields Overview
 
 The form to create a new transport supplier includes the following mandatory and optional fields:
 
-#### 1. **Name** (Required)
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+#### 1. **Name** (Mandatory)
 
 * **Description**: The full name of the transport supplier.
 * **Example**: "TransCar", "BlueBus Logistics"
 
-#### 2. **Tour Operator** (Required)
+#### 2. **Tour Operator** (Mandatory)
 
 * **Description**: The tour operator associated with this transport supplier.
 
-#### 3. **Reporting Type** (Required)
+#### 3. **Reporting Type** (Not mandatory)
 
 * **Description**: Select the reporting used by the Transport Supplier.
 * **Action**: Select from the available options.
 
-#### 4. **Hide as filter on lists** (Required – Checkbox)
+#### 4. **Hide as filter on lists** (Not mandatory – Checkbox)
 
 * **Description**: When checked, this supplier will be hidden from lists.
 
-5\. **Status** (Required)
+#### 5. **Status** (Not mandatory)
 
 * **Options**:
   * **Visible**: Supplier is active and appear in to the main page with all Transports Suppliers
@@ -42,7 +44,7 @@ The form to create a new transport supplier includes the following mandatory and
 
 ***
 
-### ✅ Saving the Form
+### Saving the Form
 
 Once all required fields are completed:
 
@@ -52,7 +54,7 @@ Once all required fields are completed:
 
 ***
 
-### 📌 Notes
+### Notes
 
 * All fields marked with a red asterisk (\*) are **mandatory**.
 * Ensure the supplier is not duplicated in the system before creating a new entry.
