@@ -86,3 +86,32 @@ This section displays the details of the golf rounds added for the selected pass
 * **Request Date/Time** and **Confirmed Time** can differ depending on course availability.
 * Ensure all prices and times are confirmed before issuing final documentation to customers.
 * You can add multiple golf courses per booking (e.g., for multi-day trips).
+
+## **Golf Courses Extra Category**
+
+The **Extras Category** page is used to configure and manage extra services offered to customers — in this case, **Golf Courses**.\
+This configuration determines how the golf product behaves in the booking system, and which rules apply to it.
+
+Each extra category can be customized per brand and contains general, visual, and technical settings for booking, visibility, and integration.
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+### Example Workflow
+
+1. Go to **Extras → Categories →Create**.
+2. Set **Name** to _Golf Course_ and **List Name** to _Golf_.
+3. Assign **Code** as _Golf\_GRG_.
+4. Keep **Status** as _visible_ and **Behavior on Web** as _Step1: Always Show_.
+5. Select **Category Type** → _Golf_.
+6. Check **Accepts multiple product selection** to allow several rounds per passenger.
+7. Add a **Description** and upload an **Image** for better presentation in the web booking portal.
+8. Click **Save** to confirm.
+
+***
+
+### Notes
+
+* Always ensure the **Code** is unique before saving.
+* The **Behavior on Web** and **Accepts multiple product selection** options are essential for correct golf course behavior in the booking flow.
+* Use the **Sold Out Text** field to communicate availability clearly to customers.
+* The **Description** should be detailed and include rules, price inclusions, and restrictions.
