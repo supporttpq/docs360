@@ -23,7 +23,7 @@ When the feature is activated, a new section becomes available on the **Transpor
 * **Hours before departure** – Defines how many hours before departure the automatic seating process will run.
 * **Email address(es)** – One or multiple email addresses can be specified (separated by commas). After automatic seating is completed, a report is sent to the listed recipients according to the chosen reporting type.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Booking Page Indicators
 

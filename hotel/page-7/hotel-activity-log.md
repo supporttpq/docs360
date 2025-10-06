@@ -43,7 +43,7 @@ In addition to the Activity Log, the system provides **Allotment History** under
 * To access, click the **Allotment History** button.
 * This feature shows a chronological view of allotment changes for a specific day.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Overview**
 

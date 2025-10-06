@@ -59,7 +59,7 @@ This information defines the availability of the program and ensures that it can
 
 ### Fields Description
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 | Field            | Description                                                | Notes                                           |
 | ---------------- | ---------------------------------------------------------- | ----------------------------------------------- |
