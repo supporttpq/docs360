@@ -1,5 +1,7 @@
 # Golf Courses
 
+## Golf Couses Booking page
+
 ### Overview
 
 The **Golf Courses** page allows you to manage golf-related activities linked to a specific booking. It is used to assign passengers to golf rounds, define their handicaps and club numbers, and set up golf course reservations including prices and times.
