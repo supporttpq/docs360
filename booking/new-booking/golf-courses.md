@@ -19,7 +19,7 @@ This feature ensures that golf course participation and scheduling are accuratel
 * The booking must contain an **extra product** that uses a golf course reservation system.
 * The product must have pre-configured availability (time slots) in the system.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Instructions
 

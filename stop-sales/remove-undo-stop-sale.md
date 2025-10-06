@@ -31,7 +31,7 @@ If you temporarily marked a room or date range as unavailable using Stop Sale, �
 3. **Click “Edit”**\
    This opens the rule’s configuration. A **Remove or Split** section will appear beneath it.
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. **Enable the “Remove” option**\
    Initially, the **Remove** checkbox is disabled (while the rule is still active).\

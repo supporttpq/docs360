@@ -297,7 +297,8 @@
 
 ***
 
-* [Tee Time extras list](tee-time-extras-list.md)
+* [Tee Time extras list](tee-time-extras-list/README.md)
+  * [Golf Course Report](tee-time-extras-list/golf-course-report.md)
 * [Flight Transfer Export](flight-transfer-export.md)
 
 ## Users
