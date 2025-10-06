@@ -50,19 +50,32 @@ This feature is usually used for **products available at the destination** (e.g.
 *   **Change values selector -** checkbox - enable bulk editing. Allow to make changes to the following columns:
 
     * Allotment - change the actual allotment's value with a new value (+, -, or =) inserted in the Value field
-    *   Day - move the day (forward / backward) to another day.&#x20;
+      * **Day** – Moves all bookings from the selected day to another day. The new day can be either earlier or later in the schedule. Use this option to shift all bookings forward or backward to a different date as required.
 
-        &#x20;        \- The action is only enabled if all lines selected are from the same weekday.
+    There are two options available:
 
-        &#x20;        \- The weekdays offered are the next weekday(s) that are available for all lines. If Sunday is selected, then all Sunday lines must be followed by a Friday line to make it possible to select Friday.
+    1. **Move to weekday (forward)** – Move bookings to the next available weekday.
+    2. **Move to weekday (backward)** – Move bookings to a previous available weekday.
+
+    &#x20;        \- The system will only enable the action if all selected bookings meet the requirements. A list of available weekdays will appear.
+
+    &#x20;        \- Only weekdays that exist for **all selected lines** will be shown.
+
+    * Example: If you select Tuesday, then all Tuesday lines must be followed by a Friday line for Friday to be selectable.
+
+    &#x20;           \- Select the new weekday.
+
+    .
 
     <figure><img src="../../.gitbook/assets/image (415).png" alt=""><figcaption></figcaption></figure>
 
-    &#x20;        \- The bookings are only moved if the booking is eligible for the new date.
+    &#x20;        \- The system checks if all bookings are eligible to move.
 
-    &#x20;        \- The table is updated with the new figures (booked) after the bookings are moved.
+&#x20;                \- Once confirmed, bookings are reassigned to the new weekday.
 
-    * Block - all the selected lines will block the allotments
+&#x20;                 \- The table updates automatically, showing the new **Booked** figures
+
+* Block - all the selected lines will block the allotments
 * **Date** – Each row represents a date for which allotment is available.
 * **Day** – The day of the week is displayed automatically.
 * **Allotment** – Number of units available for that date.
@@ -164,7 +177,7 @@ When defining **Linked to Transport Allotments**, the system displays a table wi
 
 * Calculation for TOTAL OUT - The Total Out is calculated as a sum from the departures: TO = AI1 + AI2 + AI3 + AI4
 
-#### **Moove bookings**
+#### **Move bookings**
 
 The **Move Bookings** functionality allows you to transfer all bookings for an extra (e.g., excursion) from one weekday to another. This is useful when the planned day of an excursion changes and bookings must be rescheduled to a different weekday.
 
