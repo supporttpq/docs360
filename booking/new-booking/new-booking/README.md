@@ -37,7 +37,7 @@ Go to **Booking menu → Click on “New Booking”**
 #### Steps:
 
 1. **Choose the Brand.**
-2. **Insert the customer’s mobile number** to identify or create a customer. ![](<../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png>)
+2. **Insert the customer’s mobile number** to identify or create a customer. ![](<../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png>)
 3.  **Add Passenger Count** – Select the number of:
 
     * Adults

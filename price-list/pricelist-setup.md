@@ -48,7 +48,7 @@ The **Copy Price List** feature allows users to duplicate price lists **within t
 7. **Execute Copy** – Click **Copy Prices**.
 8. **Save Discounts** – Click **Save Changed Discounts** to finalize.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Field-by-Field Explanation
 

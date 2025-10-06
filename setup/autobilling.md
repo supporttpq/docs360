@@ -146,7 +146,7 @@ When regenerating a hotel invoice, extras can appear on it if they have the same
 
 It can be set in the _Hotel/Deposit_ tab.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 A deposit needs the following fields to be set:
 
