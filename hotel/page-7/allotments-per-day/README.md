@@ -16,35 +16,43 @@ The purpose of the Allotment per Day functionality is to:
 * Adjust daily availability to match contracts, demand, or sales limits.
 * Support smooth booking operations by providing clear visibility of inventory.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Field Descriptions**
 
-| Field                | Description                                                                                              |
-| -------------------- | -------------------------------------------------------------------------------------------------------- |
-| **Room**             | Indicates the room type or category being configured. Example formats: `1/1`, `1/2-SH`.                  |
-| **Date**             | The calendar date for which allotment is being defined.                                                  |
-| **Day**              | The day of the week for the selected date                                                                |
-| **No.**              | The number of rooms allocated.                                                                           |
-| **Secured**          | Number of rooms secured through a contract with the hotel. These rooms are guaranteed to be available.   |
-| **Guaranteed**       | Rooms that are financially guaranteed to the hotel, regardless of sales. Usually part of contracts.      |
-| **Book**             | Number of rooms already booked by customers for this date.                                               |
-| **Free**             | Remaining available rooms (calculated as allotment minus booked).                                        |
-| **Room Above  Book** | Number of shered rooms booked                                                                            |
-| Room Above Free      | Nomber of shered rooms free                                                                              |
-| R                    | True (green) if the room is released                                                                     |
-| For R                | Number of rooms available for release                                                                    |
-| Max                  | The maximum number of rooms                                                                              |
-| Extra                | Extra rooms number                                                                                       |
-| Pax 1 -4             | The maximum number of rooms with a max of  1 - 4 pax                                                     |
-| Min                  | The minimum stay                                                                                         |
-| Stay length          | Specifies how many rooms are allocated for a charter transport based on the selected number os stay days |
+| Field                   | Description                                                                                              |
+| ----------------------- | -------------------------------------------------------------------------------------------------------- |
+| **Room**                | Indicates the room type or category being configured. Example formats: `1/1`, `1/2-SH`.                  |
+| **Date**                | The calendar date for which allotment is being defined.                                                  |
+| **Day**                 | The day of the week for the selected date                                                                |
+| **No.**                 | The number of rooms allocated.                                                                           |
+| **Secured**             | Number of rooms secured through a contract with the hotel. These rooms are guaranteed to be available.   |
+| **Guaranteed**          | Rooms that are financially guaranteed to the hotel, regardless of sales. Usually part of contracts.      |
+| **Book**                | Number of rooms already booked by customers for this date.                                               |
+| **Free**                | Remaining available rooms (calculated as allotment minus booked).                                        |
+| **Room Above  Book**    | Number of shered rooms booked                                                                            |
+| Room Above Free         | Nomber of shered rooms free                                                                              |
+| R                       | True (green) if the room is released                                                                     |
+| For R                   | Number of rooms available for release                                                                    |
+| Max                     | The maximum number of rooms                                                                              |
+| Extra                   | Extra rooms number                                                                                       |
+| Pax 1, Pax2, Pax3, Pax4 | The maximum number of rooms with a max of  1 - 4 pax                                                     |
+| Min                     | The minimum stay                                                                                         |
+| Stay length             | Specifies how many rooms are allocated for a charter transport based on the selected number os stay days |
+
+{% hint style="warning" %}
+**PAX1, PAX2, PAX3, PAX4** – When you hover over these cells, a tooltip appears showing the number of booked rooms for each corresponding PAX category (PAX1, PAX2, PAX3, PAX4).
+
+
+{% endhint %}
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Note: If stop sales are enabled for a hotel on a certain date, a message ( yellow triangle near room) will be visible&#x20;
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
