@@ -12,7 +12,7 @@ The purpose of this functionality is to:
 * Provide an organized repository for documents associated with different brands or configurations.
 * Ensure team members have quick access to supporting files when managing route details.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Preconditions**
 
