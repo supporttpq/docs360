@@ -36,7 +36,7 @@ The next step is to complete the fields:&#x20;
 * Click on Save
 
 {% hint style="info" %}
-\*Both the Validation Rule and the Display Rule are hardcoded, meaning they are predefined and cannot be modified by the customer. Any changes to these rules can only be made by a Tourpaq developer.
+\*The Display Rules are hardcoded, meaning they are predefined and cannot be modified by the customer. Any changes to these rules can only be made by a Tourpaq developer.
 {% endhint %}
 
 [^1]: Please view the information at the bottom of the page
