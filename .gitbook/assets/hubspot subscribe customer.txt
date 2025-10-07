@@ -1,0 +1,6 @@
+{
+    "emailAddress": "tcaspilot@gmail.com",
+    "subscriptionId": 22593634,
+    "legalBasis": "NON_GDPR",
+    "legalBasisExplanation": ""
+}

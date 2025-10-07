@@ -30,15 +30,13 @@ The next step is to complete the fields:&#x20;
 * Appears on hotel list: the attribute will appear on hotel lists.&#x20;
 * Appears on extra list: selecting the checkbox, the attribute will appear on extra lists.&#x20;
 * Is mandatory: By checking this the user will be forced to set a value for this product attribute.&#x20;
-* Validation rules (it was used in the old webbooking for validating input attributes) - it will be removed from the new interface.
-  * Click on edit&#x20;
-  * Select rule&#x20;
-  * Click on save&#x20;
-* Display rule: you can select:&#x20;
+* Display rule[\* ](#user-content-fn-1)[^1]you can select:&#x20;
   * display as stay days choices = shows the days the product to which the attribute is linked to as options.&#x20;
   * display default days = allows only selecting the first day of the product (check-in date generally)
 * Click on Save
 
 {% hint style="info" %}
-Both the Validation Rule and the Display Rule are hardcoded, meaning they are predefined and cannot be modified by the customer. Any changes to these rules can only be made by a Tourpaq developer.
+\*The Display Rules are hardcoded, meaning they are predefined and cannot be modified by the customer. Any changes to these rules can only be made by a Tourpaq developer.
 {% endhint %}
+
+[^1]: Please view the information at the bottom of the page
