@@ -45,7 +45,7 @@ The **All Transports** page provides a comprehensive overview of scheduled trans
 * Click on column headers to **sort** (e.g., by Date, Cost).
 *   Click on the right three dots to add other columns to the table&#x20;
 
-    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 *   Use **checkboxes** on the left to select multiple transports for export.&#x20;
 
     <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
