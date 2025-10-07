@@ -65,7 +65,7 @@ Brand assignment of a hotel is the next thing to do. A user can choose between t
 
 <figure><img src="../../.gitbook/assets/image (407).png" alt=""><figcaption></figcaption></figure>
 
-#### Room types <a href="#room-types" id="room-types"></a>
+### Room types <a href="#room-types" id="room-types"></a>
 
 The **Room Types** tab defines the room configuration details for a specific accommodation. It allows users to set up and manage how rooms are categorized, how many beds they contain, and what rules apply to them (such as age restrictions or override options).\
 This section ensures that all room configurations are standardized and properly linked to the accommodation setup for bookings and pricing.
@@ -79,7 +79,7 @@ The purpose of this section is to:
 
 Accurate configuration here ensures that booking rules, pricing, and capacity limits are applied correctly in the system.
 
-### **Field Descriptions and Instructions**
+#### **Field Descriptions and Instructions**
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
@@ -138,7 +138,7 @@ If mistakes are made when adding a new room, you cannot delete the inserted room
 
 **Used for Custom Hotel days** - enable prices per day to be created for the room
 
-### **Usage Example**
+#### **Usage Example**
 
 1. Select **Room Type → Double Room**.
 2. Enter **Ordinary Bed Number → 2**.
