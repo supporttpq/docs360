@@ -1,9 +1,27 @@
 # Room costs
 
-It must be possible to insert cost prices per room for different periods of time. There will be 2 types of cost prices:
+### Overview
 
-* Per room
-* Per passenger
+Room Costs allow agencies to set and calculate the **cost price of hotel rooms** over specific periods. Costs can be defined either **per room** or **per passenger**, ensuring flexibility in managing different room configurations and pricing models.
+
+### Purpose
+
+* Enable entry of cost prices per room for defined time periods.
+* Support two pricing methods: **per room** and **per passenger**.
+* Accurately calculate total passenger costs, including extra charges.
+* Ensure transparent and fair cost allocation across bookings.
+
+### Cost Price Types
+
+1. **Per Room** – A fixed price for the entire room, divided among all passengers staying in that room.
+2. **Per Passenger** – A cost applied individually to each passenger, multiplied by the length of the stay.
+
+### Extra Prices
+
+In addition to room costs, **extra prices** can be applied:
+
+* **Per Passenger per Night** – Extra cost added to each passenger’s price per night of the stay.
+* **Per Room** – Extra cost applied per room, distributed equally among all passengers in the room.
 
 Example:
 
@@ -19,7 +37,7 @@ For a certain booking, we are interested in the cost price for each passenger. T
 The cost price will be calculated for each day of the period, like this:
 
 * for each of the 4 passengers from Room A: cost price = cost price \* trip length// = 200 x 7 = 1400
-* for each of the 3 passengers from Room B: cost price=(cost price \* trip length)/passengers number = (500 x 7) / 3 = 1167 (Per passenger is set to false; as we are interested in the cost price for one passenger, we divide the cost price by the number of passengers from the room)
+* for each of the 3 passengers from Room B: cost price = (cost price \* trip length) / passengers number = (500 x 7) / 3 = 1167 (Per passenger is set to false; as we are interested in the cost price for one passenger, we divide the cost price by the number of passengers from the room)
 
 From this section there will also be established the extra prices. There will be 2 types of extra prices:
 
@@ -41,7 +59,7 @@ For Passenger1 that stays in Room A, the value would be
 
 * Extra price per room for one passenger = (12 x 1)/4 = 3
 
-The total cost price for Passenger1 (and also for the others passengers from Room A) is obtained by adding all these 3 prices:
+The total cost price for Passenger1 (and also for the other passengers from Room A) is obtained by adding all these 3 prices:
 
 * Total cost for Passenger1 = 1400 + 700 + 7 = 2107
 

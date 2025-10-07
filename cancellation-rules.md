@@ -2,7 +2,7 @@
 
 When a booking is canceled, a cancellation fee is set for each passenger. Cancellation rules are applied for calculating this fee. The fee is calculated taking into account the remaining days left to departure.
 
-<figure><img src=".gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (26) (1).png" alt=""><figcaption></figcaption></figure>
 
 The system allows the defining of 4 different ranges for the number of days left to departure. When defining a range, the amount corresponding to the cancellation fee will also be set.
 
@@ -12,7 +12,7 @@ Include the cancellation insurance in the total check box if used; adds the **Ca
 
 Cancellation rules that are applied to a booking are set on the transport when it is created.
 
-<figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Cancellation fee on a booking is calculated as follows:
 

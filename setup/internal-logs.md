@@ -1,19 +1,41 @@
 # Internal logs
 
-Internal logs are a management tool available only to admins.&#x20;
+### **Overview / Purpose**
 
-It is found in Setup / Internal logs.&#x20;
+Internal Logs is a management tool designed for **administrative oversight** in Tourpaq. It allows administrators to track and review all actions performed by users in the system. This provides **accountability**, helps **troubleshoot issues**, and ensures compliance with internal processes.
 
-It is used to view actions performed by different users in Tourpaq.&#x20;
+<figure><img src="../.gitbook/assets/image (361).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (26) (1).png" alt=""><figcaption></figcaption></figure>
+***
 
-You can select the starting change date and then the end change date.&#x20;
+### **How It Works**
 
-We can filter:&#x20;
+* The Internal Logs tool is accessible via:\
+  **Setup → Internal Logs**
+* Once opened, you can specify a **date range** using the start and end dates to narrow down the actions you want to review.
+* Administrators can **filter actions** to quickly find relevant entries.
 
-* by agency,
-* by action type, whether it is in financial export, hotel list export, hotel communication, merge customer, resources of discount, resources of products, changes in room types, changes in hotel extra bed discounts, and many other activity types.&#x20;
-* Another filter is by users.&#x20;
+***
 
-This example displays all actions performed by any user.&#x20;
+### **Key Features / Functions**
+
+* **Date Range Selection:** Choose the period for which you want to view logs.
+* **Agency Filter:** Limit the logs to actions performed by users in specific agencies.
+* **Action Type Filter:** Filter by types of system actions, including but not limited to:
+  * Financial exports
+  * Hotel list exports
+  * Hotel communications
+  * Customer merges
+  * Changes in discounts or products
+  * Modifications to room types or hotel extra bed discounts
+* **User Filter:** View actions performed by specific users or all users.
+* **Comprehensive Activity Tracking:** The system logs most user activities, giving a complete picture of operational changes.
+
+***
+
+### **Notes / Best Practices**
+
+* Only **administrators** have access to Internal Logs.
+* Use filters to **narrow down results**; without filters, the system displays **all actions** performed by all users.
+* Regularly reviewing Internal Logs helps **identify errors or misuse**, maintain **data integrity**, and supports **internal audits**.
+* Exporting logs periodically can provide a historical record of system activity.

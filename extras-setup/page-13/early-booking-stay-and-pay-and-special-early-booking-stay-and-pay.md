@@ -128,25 +128,26 @@ Before defining rules in this screen:
 
 ### **Fields Explained**
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-| **Field**                  | **Description**                                                                     |
-| -------------------------- | ----------------------------------------------------------------------------------- |
-| **Stay Start**             | The first date when the stay must begin for the discount to apply.                  |
-| **Stay End**               | The last date when the stay must end for the discount to apply.                     |
-| **Booking Start**          | The first date when bookings must be made to qualify for the discount.              |
-| **Booking End**            | The last date when bookings can be made to qualify for the discount.                |
-| **Days of the Week**       | Restrict the discount to specific weekdays (e.g., only arrivals on Monday).         |
-| **From Age**               | Minimum passenger age required for the discount.                                    |
-| **To Age**                 | Maximum passenger age eligible for the discount.                                    |
-| **Price**                  | Discount value. Can represent a fixed amount or percentage (see _Is Percent_).      |
-| **Is Percent**             | Checkbox to indicate if the discount is a **percentage** instead of a fixed amount. |
-| **Days No Before Arrival** | Number of days before arrival that the booking must be made to qualify.             |
-| **S\&P** (Stay & Pay)      | Marks the rule as a **Stay-and-Pay promotion** instead of a standard discount.      |
-| **Send List Date**         | Defines when a list of bookings under this promotion should be sent.                |
-| **Deposit Date**           | Specific date by which a deposit must be paid.                                      |
-| **Deposit Percent**        | The percentage of the booking cost that must be paid as a deposit.                  |
-| **Rejected**               | Marks the rule as rejected.                                                         |
+| **Field**                  | **Description**                                                                                                                                                                        |
+| -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Stay Start**             | The first date when the stay must begin for the discount to apply.                                                                                                                     |
+| **Stay End**               | The last date when the stay must end for the discount to apply.                                                                                                                        |
+| **Booking Start**          | The first date when bookings must be made to qualify for the discount.                                                                                                                 |
+| **Booking End**            | The last date when bookings can be made to qualify for the discount.                                                                                                                   |
+| **Days of the Week**       | Restrict the discount to specific weekdays (e.g., only arrivals on Monday).                                                                                                            |
+| **From Age**               | Minimum passenger age required for the discount.                                                                                                                                       |
+| **To Age**                 | Maximum passenger age eligible for the discount.                                                                                                                                       |
+| **Price**                  | Discount value. Can represent a fixed amount or percentage (see _Is Percent_).                                                                                                         |
+| **Is Percent**             | Checkbox to indicate if the discount is a **percentage** instead of a fixed amount.                                                                                                    |
+| **Days No Before Arrival** | Number of days before arrival that the booking must be made to qualify.                                                                                                                |
+| **S\&P** (Stay & Pay)      | Marks the rule as a **Stay-and-Pay promotion** instead of a standard discount.                                                                                                         |
+| **Send List Date**         | Defines when a list of bookings under this promotion should be sent.                                                                                                                   |
+| **Deposit Date**           | Specific date by which a deposit must be paid.                                                                                                                                         |
+| **Deposit Percent**        | The percentage of the booking cost that must be paid as a deposit.                                                                                                                     |
+| Note                       | Add note to Special EB/SP - It will be visible in the Notification page , The Extras page  ![](<../../.gitbook/assets/image (364).png>)   ![](<../../.gitbook/assets/image (368).png>) |
+| **Rejected**               | Marks the rule as rejected.                                                                                                                                                            |
 
 ***
 
@@ -197,16 +198,17 @@ The system will automatically calculate the correct price based on the rules def
 
 ### Field Descriptions
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-| Field                           | Description                                                                           |
-| ------------------------------- | ------------------------------------------------------------------------------------- |
-| **Stay Start / Stay End**       | Period of stay during which the rule applies.                                         |
-| **Booking Start / Booking End** | Period when the booking must be made in order for the rule to apply.                  |
-| **Days of the Week**            | Select specific days of the week when the rule is valid (if restrictions apply).      |
-| **Stay Days**                   | Minimum/maximum number of nights required to benefit from the offer.                  |
-| **Pay Days**                    | Number of nights the customer will actually pay (e.g., 7 nights stay, 6 nights paid). |
-| **Days No Before Arrival**      | Number of days before arrival that the rule can be applied.                           |
-| **EB**                          | Checkbox to link the rule to an Early Booking campaign.                               |
-| **Contract**                    | Field to associate the rule with a specific contract.                                 |
-| **Rejected**                    | Marks the rule as rejected/deactivated (it will not apply).                           |
+| Field                           | Description                                                                                                                                                                                                      |
+| ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Stay Start / Stay End**       | Period of stay during which the rule applies.                                                                                                                                                                    |
+| **Booking Start / Booking End** | Period when the booking must be made in order for the rule to apply.                                                                                                                                             |
+| **Days of the Week**            | Select specific days of the week when the rule is valid (if restrictions apply).                                                                                                                                 |
+| **Stay Days**                   | Minimum/maximum number of nights required to benefit from the offer.                                                                                                                                             |
+| **Pay Days**                    | Number of nights the customer will actually pay (e.g., 7 nights stay, 6 nights paid).                                                                                                                            |
+| **Days No Before Arrival**      | Number of days before arrival that the rule can be applied.                                                                                                                                                      |
+| **EB**                          | Checkbox to link the rule to an Early Booking campaign.                                                                                                                                                          |
+| **Contract**                    | Field to associate the rule with a specific contract.                                                                                                                                                            |
+| Note                            | Add note to Special EB/SP - It will be visible in the Notification page , The Extras page   ![](<../../.gitbook/assets/image (365).png>)                            ![](<../../.gitbook/assets/image (367).png>) |
+| **Rejected**                    | Marks the rule as rejected/deactivated (it will not apply).                                                                                                                                                      |

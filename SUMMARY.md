@@ -32,6 +32,7 @@
   * [Hotel Room](booking/new-booking/hotel-room.md)
   * [Transport Seating](booking/new-booking/transport-seating.md)
   * [Tee Times](booking/new-booking/tee-times.md)
+  * [Golf Courses](booking/new-booking/golf-courses.md)
   * [Extra Orders](booking/new-booking/extra-orders.md)
   * [Conversation](booking/new-booking/conversation.md)
   * [Don't sent ticket option](booking/new-booking/dont-sent-ticket-option.md)
@@ -132,7 +133,7 @@
 
 ***
 
-* [Generate Pricelist](generate-pricelist.md)
+* [Price List Generator](generate-pricelist.md)
 * [Price regulation rules](price-regulation-rules.md)
 * [Relational Price list](relational-price-list.md)
 * [Price List Custom Hotel days Service](price-list-custom-hotel-days-service.md)
@@ -150,6 +151,7 @@
 
 ## Hotel
 
+* [Hotels](hotel/hotels.md)
 * [Hotel creation](hotel/page-7/README.md)
   * [Create using wizard](hotel/page-7/create-using-wizard.md)
   * [Hotel allotments](hotel/page-7/hotel-allotments.md)
@@ -192,6 +194,7 @@
 * [Close Out](close-out/README.md)
   * [Create / Edit rule](close-out/create-edit-rule.md)
   * [Enable / Disable rule](close-out/enable-disable-rule.md)
+* [Layout Elements](layout-elements.md)
 * [Hotel Beds](hotel-beds.md)
 * [Hotel Bed Banks - FAQ](hotel-bed-banks-faq.md)
 * [Hotel combination](hotel-combination.md)
@@ -219,8 +222,8 @@
 
 * [All Transports](transport/all-transports.md)
 * [Transport](transport/transport/README.md)
-  * [Transport creation](transport/transport/page-8/README.md)
-    * [Name change rule](transport/transport/page-8/name-change-rule.md)
+  * [Transport creation](transport/transport/transport-creation/README.md)
+    * [Name change rule](transport/transport/transport-creation/name-change-rule.md)
   * [Transport Definition](transport/transport/transport-definition.md)
   * [Transport Matrix](transport/transport/transport-matrix.md)
   * [Allotments](transport/transport/allotments.md)
@@ -233,7 +236,8 @@
 
 ***
 
-* [Transport Rules](transport-rules.md)
+* [Transport Rules](transport-rules/README.md)
+  * [Create Transport Rule](transport-rules/create-transport-rule.md)
 * [Transport Dashboard](transport-dashboard.md)
 * [Transport Price Control](transport-price-control.md)
 * [Transport Payment Rules](transport-payment-rules.md)
@@ -293,7 +297,8 @@
 
 ***
 
-* [Tee Time extras list](tee-time-extras-list.md)
+* [Tee Time extras list](tee-time-extras-list/README.md)
+  * [Golf Course Report](tee-time-extras-list/golf-course-report.md)
 * [Flight Transfer Export](flight-transfer-export.md)
 
 ## Users
@@ -391,18 +396,18 @@
 * [Tickets attachments](email-setup/tickets-attachments/README.md)
   * [Ticket Attachments](email-setup/tickets-attachments/ticket-attachments.md)
   * [Ticket texts](email-setup/tickets-attachments/ticket-texts.md)
+* [E-mail center](email-setup/e-mail-center.md)
 * [Dynamic E-mail/SMS Center](email-setup/page-14/README.md)
+  * [Setup for Dynamic E-mail/SMS Center](email-setup/page-14/setup-for-dynamic-e-mail-sms-center.md)
   * [Dynamic Email - Upload Image](email-setup/page-14/dynamic-email-upload-image.md)
   * [Dynamic Email - Link Dialog](email-setup/page-14/dynamic-email-link-dialog.md)
 
 ***
 
 * [E-mail/SMS Center Statistics](e-mail-sms-center-statistics.md)
-* [E-mail center](e-mail-center.md)
 * [Email Templates](email-templates.md)
 * [Warning notification rules](warning-notification-rules.md)
 * [Destination SMS Mappings](destination-sms-mappings.md)
-* [Setup for Dynamic E-mail/SMS Center](setup-for-dynamic-e-mail-sms-center.md)
 
 ## Setup
 
@@ -411,7 +416,25 @@
 * [Destination](setup/destination.md)
 * [Resorts](setup/resorts.md)
 * [Departure stat weeks](setup/departure-stat-weeks.md)
-* [System Setup](setup/system-setup.md)
+* [System Setup](setup/system-setup/README.md)
+  * [System Setup – General Information Settings](setup/system-setup/system-setup-general-information-settings.md)
+  * [System Setup – Payment Rate Rules](setup/system-setup/system-setup-payment-rate-rules.md)
+  * [System Setup – Radix Data](setup/system-setup/system-setup-radix-data.md)
+  * [System Setup – Currency](setup/system-setup/system-setup-currency.md)
+  * [System Setup – Deposit Rules](setup/system-setup/system-setup-deposit-rules.md)
+  * [System Setup – SMS Configuration (Twilio)](setup/system-setup/system-setup-sms-configuration-twilio.md)
+  * [System Setup – Mail Platform](setup/system-setup/system-setup-mail-platform.md)
+  * [System Setup – Auto Europe (Car Rental Integration)](setup/system-setup/system-setup-auto-europe-car-rental-integration.md)
+  * [System Setup – Hotel Providers](setup/system-setup/system-setup-hotel-providers.md)
+  * [System Setup – Hotel Import](setup/system-setup/system-setup-hotel-import.md)
+  * [System Setup – GDS Data](setup/system-setup/system-setup-gds-data.md)
+  * [System Setup – Inflight Service](setup/system-setup/system-setup-inflight-service.md)
+  * [System Setup – Firebase Configuration](setup/system-setup/system-setup-firebase-configuration.md)
+  * [System Setup – Travel Lengths](setup/system-setup/system-setup-travel-lengths.md)
+  * [System Setup – Two-Factor Authentication (2F Auth)](setup/system-setup/system-setup-two-factor-authentication-2f-auth.md)
+  * [System Setup – FTP Providers](setup/system-setup/system-setup-ftp-providers.md)
+  * [System Setup - Web Hook Configuration](setup/system-setup/web-hook-configuration.md)
+  * [System Setup – Flight Change Queue](setup/system-setup/system-setup-flight-change-queue.md)
 * [System Setup FTPs](setup/system-setup-ftps.md)
 * [System Setup Groups](setup/system-setup-groups.md)
 * [Creditor Currency Convertor](setup/creditor-currency-convertor.md)
@@ -419,7 +442,6 @@
 * [Global search](setup/global-search.md)
 * [Tourpaq Web Booking - Technical documentation](setup/tourpaq-web-booking-technical-documentation.md)
 * [Web service](setup/web-service.md)
-* [Web Hook Configuration](setup/web-hook-configuration.md)
 * [Payment rate rules](setup/payment-rate-rules.md)
 * [Price currency](setup/price-currency.md)
 * [Vouchers](setup/vouchers.md)

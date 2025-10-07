@@ -14,7 +14,7 @@ The Remove or Split functionality allows users to modify an existing Stop Sale r
 
 &#x20;    \- The default filter applies the current date to the Start/End date fields.
 
-<figure><img src="../.gitbook/assets/image (182).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -25,7 +25,7 @@ Step 1: Filter and Select Rule
 * Use the available filters to narrow down the list.
 * Select an enabled stop sale rule from the list.
 
-<figure><img src="../.gitbook/assets/image (183).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
 
 Step 2: Click Edit
 
@@ -46,12 +46,11 @@ Step 4: Specify Number of Records
 
 Step 5: Define Periods and Actions
 
-*   For each new row, configure:
+* For each new row, configure:
+  * Start/End Date: Define the period.
+  * Action: Choose between Remove or Agreed Allotment.
 
-    * Start/End Date: Define the period.
-    * Action: Choose between Remove or Agreed Allotment.
-
-    <figure><img src="../.gitbook/assets/image (184).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
 
 Validations:
 
@@ -92,7 +91,7 @@ Step 2: Check Log Records
 * Verify that Initial R. No and Final R. No reflect the setup.
 * Confirm the correct actions (Removed, Agreed Allotment) are shown.
 
-<figure><img src="../.gitbook/assets/image (186).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -112,7 +111,7 @@ Step 3: Check Allotment
 * The daily allotment for the selected room is displayed.
 * Allotment reflects updates based on the split rule setup.
 
-<figure><img src="../.gitbook/assets/image (187).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -126,13 +125,14 @@ Step 2: Apply Filters
 
 * Filter by date and room in accordance with the split rules.
 
-Step 3: Verify FHA
+Step 3: Verify FHA  (Free Hotel Allotment)
 
 * The FHA (Free Hotel Allotment) field is populated.
-* It reflects the available number of rooms:
-  * FHA = Final R. No - Booked Rooms
+*   It reflects the available number of rooms:
 
-<figure><img src="../.gitbook/assets/image (188).png" alt=""><figcaption></figcaption></figure>
+    * FHA = Final R. No - Booked Rooms
+
+    <figure><img src="../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

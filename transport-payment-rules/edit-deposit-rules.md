@@ -4,7 +4,7 @@
 
 The **Deposit Rules** tab allows administrators to configure custom deposit and payment rule entries based on booking and departure date ranges. This enables flexible financial planning for specific travel periods.
 
-### **1. Overview Table Columns**
+### **Overview Table Columns**
 
 | Field                    | Description                                                                                                          |
 | ------------------------ | -------------------------------------------------------------------------------------------------------------------- |
@@ -21,13 +21,13 @@ The **Deposit Rules** tab allows administrators to configure custom deposit and 
 | **Last Payment Due**     | Number of days before departure when the final payment is due.                                                       |
 | **Delete (🗑️ icon)**    | Removes the rule entry from the list.                                                                                |
 
-### **2. Actions**
+### **Actions**
 
 * **Create Button**: Adds a new row to define a custom deposit rule.
 * **Pagination**: Allows navigation through multiple rule entries.
 * **Company Tabs**: Deposit rules can be configured globally (_Entire Company_) or for specific travel brands/agencies (e.g., Primo Tours, Bravo Tours, etc.).
 
-### **3. Rule Application Logic**
+### **Rule Application Logic**
 
 * Rules are applied based on **booking and departure date range matches**.
 * When multiple rules overlap, priority may be determined by specificity (more exact match of both ranges).

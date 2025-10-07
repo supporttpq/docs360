@@ -1,3 +1,7 @@
+---
+noIndex: true
+---
+
 # Web service
 
 The web-service purpose would be to select information inserted from office – defined for a certain agency or company – to be displayed on web booking. The information will regard departures/arrivals gateways, hotels, products, etc.

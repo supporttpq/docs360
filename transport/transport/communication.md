@@ -1,116 +1,128 @@
 # Communication
 
-Communication is a windows service that has the purpose to sent information to various vendors. For example the flight information, where a list of passenger is periodically sent to the airline company.
+### Overview
 
-IMPORTANT: For each reporting type, there is a service that needs to be enabled. You have to contact Tourpaq Support to make sure that the specific service is enabled for the company.
+The **Communication Service** is a Windows service designed to send information from Tourpaq to various vendors (e.g., airlines, hotels, transport companies). A common use case is transmitting **flight information**, such as periodic passenger name lists (PNL), directly to the airline company.
 
-**Transport Reporting**
+### Purpose
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+The purpose of this service is to automate vendor communication, ensuring timely and accurate transfer of passenger and booking data. This reduces manual work, increases reliability, and ensures vendors receive the necessary information to deliver their services.
 
-Under Transport Settings the reporting type drop down list will decide how the reporting will be send. Tour operator cod is required for some reporting types.
+### Preconditions
 
-Transport Reporting is a way to communicate the passenger name list PNL to the airline company. There are more methods to sent the PNL. The reporting method type can be sent in Transport in Transport/General tab as a default or it can be overwrite in the Transport/Timetable tab. The reporting is managed by a Windows Service that is searching for schedulers every 9 minute. The schedulers are set up in the Transport/Communication tab
+* Each **reporting type** requires its corresponding service to be enabled.
+* To activate a reporting type, you must contact **Tourpaq Support** to ensure the service is enabled for your company.
 
-**Passenger Name List (Air)**
+### **Transport Reporting**
 
-Passenger Name list is a reporting type that sends a PDF file by email. The column are as follow:
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* Resort - The name of the resort where the passengers are staying.
-* Hotel - The name of the hotel where the passengers are staying.
-* First Name -
-* Last Name -
-* Gender - Gender of the passenger
-* Age - Age of the passenger if he is children
-* Phone - Customer phone number usually is the first passenger in the booking
-* Voucher - Booking No.
-* Catering - the value of the catering is ''MF'' if the passenger has catering otherwise is black
-* Seat Out - Number of the seat something like A03 for the outbound flight
-* Seat Home - Number of the seat for the inbound flight
+#### Configuration
 
-**Pick up list (Bus)**
+* Under **Transport Settings**, the **Reporting type** drop-down defines how passenger information will be sent.
+* Some reporting types require a **Tour Operator Code**.
+* A default reporting method can be set in **Transport → General tab**.
+* The method can be overridden per timetable in **Transport → Timetable tab**.
+* Reporting is managed by the **Communication Service**, which checks schedulers every **9 minutes**.
+* Schedulers are configured in **Transport → Communication tab**.
 
-Please check [Routes](https://docs.tourpaq.com/docs/documentation/routes/)
+***
 
-**Train**
+#### Passenger Name List (Air)
 
-**Paxport**
+The **Passenger Name List (PNL)** reporting type generates a **PDF file** that is sent via email to the airline.\
+The columns included are:
 
-Paxoprt is a file format for the Paxport PNL system. The file is a ASCII text file format and is sent by email. The file are grouped by a header.
+* **Resort** – Passenger’s resort.
+* **Hotel** – Passenger’s hotel.
+* **First Name / Last Name**
+* **Gender** – Passenger gender.
+* **Age** – Shown for children.
+* **Phone** – Customer phone number (usually the first passenger in booking).
+* **Voucher** – Booking number.
+* **Catering** – `"MF"` if the passenger has catering; otherwise blank.
+* **Seat Out** – Assigned outbound seat (e.g., A03).
+* **Seat Home** – Assigned inbound seat.
 
-* Tour Operator - The tour operator is set up in the \[\[Transport#General\_tab|General Tab]]
-* Outbound Departure Date
-* Outbound Flight Number
-* Inbound Departure Date
-* Inbound Flight Number
-* Inbound Airport Departure \[\[IATA]] code
-* Inbound Airport Arrival \[\[IATA]] code
-* Outbound Airport Arrival \[\[IATA]] code
-* First Name
-* Last Name
-* Gender
-* Booking No.
-* Passenger Remarks - This can be set in the \[\[Booking Page]]
-* Age - The age of the passenger
-* Outbound Seat Number -
-* Inbound Seat Number -
+***
 
-**Radixx**
+#### Pick-up List (Bus)
 
-**DAT**
+* Please refer to the **Routes** section for details.
 
-**Air Berlin**
+***
 
-**Inflight Service**
+#### Train Reporting
 
-Files from This Communication Contain the following Columns:
+* Similar to other transport types; configured in Transport Settings.
 
-* Booking Date
-* Booking No
-* Booking Version
-* Passenger Language Code (taken from customer country)
-* Passenger First Name
-* Passenger Last Name
-* Customer Gender
-* Passenger ID
-* Customer First Name
-* Customer Last Name
-* Customer Address
-* Customer Postcode
-* Customer Postal Address
-* Customer Country Code
-* Customer Phone
-* Customer Mobile Phone
-* Flight No Out
-* Departure Code Out
-* Arrival Code Out
-* Flight No Home
-* Departure Code Home
-* Arrival Code Home
-* Operator
-* Customer Email
-* Comments
+***
 
-**World Ticketing**
+#### Paxport Reporting
 
-This reporting type is used to communicate the \[\[PNL]] to Norwegian Airline
+The **Paxport** reporting type generates an **ASCII text file**, grouped by header, and sent via email.
 
-**AirSeven**
+**Fields included:**
 
-This reporting type sends pax names, gender, booking number and seat number. The list is divided into a few emails.
+* Tour Operator (from **Transport → General tab**)
+* Outbound Departure Date / Flight Number
+* Inbound Departure Date / Flight Number
+* IATA codes for departure and arrival airports
+* Passenger details: First Name, Last Name, Gender, Age, Booking No., Remarks
+* Outbound Seat Number / Inbound Seat Number
 
-**Hotel Reporting**
+***
 
-The sistem sends lists based on the interval used.
+#### Radixx / DAT / Air Berlin
 
-**Extras Reporting**
+* Specific file formats used for these vendors.
 
-**Extras Company Reporting**
+***
 
-//Main article:// \[\[Extras Company Reporting]]
+#### Inflight Service Reporting
 
-A list of passengers that purchased extras from a specific extras category are sent for ex. every day 4 days before arriving home from the trip.
+Files include detailed passenger and customer data, such as:
 
-**Supplier Reporting**
+* Booking Date / Booking No. / Booking Version
+* Passenger Name, Gender, Language Code
+* Customer Name, Address, Postcode, Country, Contact Info
+* Flight details (Outbound & Inbound)
+* Operator and Comments
 
-**Release Reporting**
+***
+
+#### World Ticketing
+
+* Used for sending PNL to **Norwegian Airlines**.
+
+***
+
+#### AirSeven
+
+* Sends passenger names, gender, booking number, and seat number.
+* The list is divided across several emails.
+
+***
+
+### Hotel Reporting
+
+* The system sends passenger lists to hotels based on configured intervals.
+
+***
+
+### Extras Reporting
+
+* Sends lists of passengers who purchased extras from specific categories.
+* Example: Daily reporting, 4 days before passengers return from their trip.
+
+***
+
+### Supplier Reporting
+
+* Handles reporting to suppliers depending on configured rules.
+
+***
+
+### Release Reporting
+
+* Used to manage and communicate release-related data (details vary by vendor setup).

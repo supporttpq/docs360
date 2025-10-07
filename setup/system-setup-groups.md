@@ -1,18 +1,33 @@
 # System Setup Groups
 
-Applies for Administrator
+### **Overview**
 
-A system setup group will belong to a certain destination and to a precise agency/brand. This will represent the group categories that can be used when booking a package from a certain resort destination. If the admin will try to add a second group rule, the module must not insert a new rule but update the existing one.
+The **System Setup Groups** module allows administrators to define and manage group categories for bookings. Each group is linked to a specific **destination** and **agency/brand**, enabling the system to apply special offers or conditions for groups traveling to a particular resort.
 
-For an administrator will be possible to:
+### **Purpose**
 
-1. View all the system setup groups from the system – that belong to his company
-2. Edit a system setup group
-3. Insert a new system setup group
-4. Delete a system setup group
+* Standardize group configurations across agencies and brands.
+* Apply minimum passenger requirements and special offers for group bookings.
+* Centralize management of group rules to prevent duplication and ensure consistency.
 
-The following is an extract of the information that should be available for each system setup group:
+### **Administrator Permissions**
 
-* Brand
-* Destination
-* Minimum number of passengers that can compose a group and benefit of group's special offers;
+Administrators can:
+
+1. **View** all system setup groups that belong to their company.
+2. **Edit** existing system setup groups.
+3. **Insert** new system setup groups.
+4. **Delete** system setup groups.
+
+### **Behavior Rules**
+
+* Each system setup group is uniquely tied to a **destination** and **agency/brand**.
+* If an administrator attempts to add a group rule that already exists, the module will **update the existing rule** instead of creating a duplicate.
+
+### **System Setup Group Fields**
+
+| **Field**                        | **Description**                                                                      |
+| -------------------------------- | ------------------------------------------------------------------------------------ |
+| **Brand**                        | The brand to which the group belongs.                                                |
+| **Destination**                  | The resort or destination associated with the group.                                 |
+| **Minimum Number of Passengers** | The minimum number of passengers required to qualify for the group’s special offers. |

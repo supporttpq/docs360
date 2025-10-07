@@ -2,7 +2,7 @@
 
 The first phase of the booking process on GDS flights is the same as for charter transport.
 
-<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 One take allotment button: a check is made to see if the flight already configured to be used for this transport and departure is still available and the price has not changed. If the price is higher, the user is asked if he continues or not. In case the flight is not available anymore, a new flight is searched and displayed to be approved by the user. After a booking is made, it goes to “GDS pending” status. In this phase, the GDS tab of the booking window can be used to submit the booking to the GDS provider. Some payment rules might be applied to restrict the user from submitting the booking to the GDS provider if some payment has not been made (different rules apply). When the same checks are on take allotment are made and submitting results from GDS is displayed to the user.
 

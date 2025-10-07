@@ -1,18 +1,18 @@
 # Periods – Hotel Contract Configuration
 
-#### Purpose
+### Purpose
 
 The **Periods** tab is where you define the stay intervals (start/end dates) and configure the room pricing and availability rules that apply for each specific time frame. It is essential for implementing seasonal pricing and allocation changes.
 
 ***
 
-#### Screenshot
+### Screenshot
 
-<figure><img src="../.gitbook/assets/image (288).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (410).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-#### Preconditions
+### Preconditions
 
 * Room types must be defined in the **Rooms** tab.
 * Board types (AI, BB, etc.) should be configured in advance.
@@ -20,7 +20,7 @@ The **Periods** tab is where you define the stay intervals (start/end dates) and
 
 ***
 
-#### Instructions – Fields and Definitions
+### Instructions – Fields and Definitions
 
 | Field                          | Description                                                                               |
 | ------------------------------ | ----------------------------------------------------------------------------------------- |
@@ -41,3 +41,29 @@ The **Periods** tab is where you define the stay intervals (start/end dates) and
 | **SP%**                        | Indicates whether the cost is percentage on top of the room cost                          |
 | **Stay Type**                  | Defines if the cost is **Per Pax**, **Per Room**, or **Per Pax Per Night**.               |
 | **Tr. Length**                 | Transport length reference (e.g., 5d = 5 days).                                           |
+
+### Notes (for internal use)
+
+#### Overview
+
+The **Notes** field within Hotel Contract Periods allows company administrators to record internal comments contract period. These notes are visible only within the Tourpaq Office system and are **not shared with hotel suppliers** or external partners.
+
+#### Purpose
+
+The Notes feature is designed to:
+
+* Provide internal context or reminders regarding specific contract periods.
+* Help colleagues and administrators track changes and maintain consistency in contract management.
+
+#### Field Explanation
+
+* **Notes (Internal Use Only)** – A free-text field where the administrator can enter comments, clarifications, or reminders related to the hotel contract period.
+  * **Visibility**: Notes are strictly internal.
+  * **Format**: Free text, no character limit (though concise entries are recommended).
+
+#### Instructions for Use
+
+1. Go to **Hotel Contract → Periods**.
+2. Locate the **Notes (Internal Use)** field.
+3. Enter the required comments or reminders (e.g., _“Supplier agreed to flexible release rules during peak season”_).
+4. Save the contract period. The note will now be stored internally and accessible to other administrators.

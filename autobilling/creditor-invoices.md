@@ -2,7 +2,7 @@
 
 The **Creditor Invoice** feature in Tourpaq allows you to configure invoicing schedules and manage invoice statuses for hotels, extras, supplements, and handling fees.
 
-<figure><img src="../.gitbook/assets/image (24) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (24) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Setting Invoice Schedules**
 
@@ -67,4 +67,4 @@ To regenerate an invoice:
 4. Confirm by clicking **OK**.\
    The invoice will be regenerated and available in the list.
 
-<figure><img src="../.gitbook/assets/image (25) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (25) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

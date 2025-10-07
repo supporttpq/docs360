@@ -1,6 +1,12 @@
 # Setup for Transport Dynamic Packaging (GDS)
 
-Transport Dynamic Packaging Anchored on Pricelist is connecting Tourpaq to the GDS system and enables it to book transport over GDS and sell it under an existing pricelist (fix price). This document specification describes how this feature works in Tourpaq.
+#### Overview
+
+The **Transport Dynamic Packaging Anchored on Pricelist** feature connects **Tourpaq** to the **GDS system**, allowing the system to book transport services through GDS while selling them under an existing **fixed-price pricelist**.
+
+#### Purpose
+
+This functionality ensures that transport bookings made via GDS can be seamlessly integrated into Tourpaq without disrupting predefined pricing structures. It provides a way to leverage the availability and flexibility of GDS while maintaining consistency with the company’s fixed price lists.
 
 ### General​ <a href="#general" id="general"></a>
 
@@ -12,9 +18,9 @@ GDS transports are available only if the transport is set to use dynamic itinera
 
 When using GDS flights, **Legs** need a general setting like this.
 
-<figure><img src="../.gitbook/assets/image (21) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (21) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The rest of the settings for configuring **Legs** are the same as those used for Real Transports
 
@@ -28,24 +34,24 @@ Every night the system is checking for the best flight available for each depart
 
 The flight found can be views under fix quota/view fligths:
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 When a **past reservation** is cancelled and the **associated flight is no longer active**, the system will automatically trigger the reactivation service to restore the flight. This ensures the booking change can be processed correctly.
 
 Before cancellation:
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 After the booking cancellation, the flight will be reactivated within a few seconds.
 
-<figure><img src="../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The system automatically reactivates past flights **only** when a change is made to a booking—such as adding or canceling passengers.
 
 * If the service is triggered manually from **Transport → Leg**, it will affect **only future flights**.
 * If the service is triggered directly from a **booking**, it will run **only for the specific departure**, regardless of whether the departure date is in the past or future.
 
-<figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Alternative flights​ <a href="#alternative-flights" id="alternative-flights"></a>
 

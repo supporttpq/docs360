@@ -4,7 +4,7 @@
 
 This page allows users to configure the payment schedule for travel bookings, including deposit and subsequent payment rules.
 
-### **Sections Overview**
+### **Overview**
 
 #### **1. Payment Rule Configuration**
 

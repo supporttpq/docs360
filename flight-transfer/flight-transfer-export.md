@@ -1,19 +1,27 @@
 # Flight Transfer Export
 
-Available to Admin and Guide user types.
+**Available to:** Admin and Guide user types
 
-Generates lists based on the data from Flight Transfer Settings
+### Overview
 
-Filters for exporting differ depending on the selected type of list to be exported.
+The **Flight Transfer Export** function enables users to generate reports based on data from the **Flight Transfer Settings**. These reports provide detailed information about flight-related transfers and can be exported in different formats depending on operational needs.
+
+### Purpose
+
+This feature supports both administrators and guides in managing and monitoring passenger transfers between flights and resorts. By exporting the relevant lists, users can ensure smooth coordination of transfers and accurate communication with transport operators.
+
+### Filters
+
+The available **filters** vary depending on the type of list selected for export. Each export type provides its own filtering options to tailor the output to the required data.
 
 ### Airport Plan Overview​ <a href="#airport-plan-overview" id="airport-plan-overview"></a>
 
-Generates a list which will contain (for homebounds and outbouns):
+Generates a list which will contain (for homebounds and outbounds):
 
 * departure date and agency
 * Legend detailed below
-* all airports/or the selected one from the filters with flights outbound and homebound
-* estimated time of arrival and departure for flights(A,B columns)
+* all airports/or the selected one from the filters, with flights outbound and homebound
+* estimated time of arrival and departure for flights(A, B columns)
 * flight number (C column)
 * IATA code (D column)
 * number of seats booked on the outbound/homebound flights (E column)
@@ -22,10 +30,10 @@ Generates a list which will contain (for homebounds and outbouns):
 * resorts columns with the total number of transfers assigned (starts with H and ends depending on the number of resorts)
 * arrival column with number of passengers with flight only without transfer booked (last Column)
 
-(Legend)The background is colored accordingly:
+(Legend) The background is colored accordingly:
 
-* green- if bus capacity is adequate/seating on a bus is smaller than allocation of a bus
-* red- if bus capacity is too low/seating on a bus is bigger than allocation of a bus
+* green- if bus capacity is adequate/seating on a bus is smaller than the allocation of a bus
+* red- if the bus capacity is too low/seating on a bus is bigger than the allocation of the bus
 * no background- if there are no buses assigned/no bus and allocation created so far
 * bold value- if buses are confirmed/confirmation is checked
 * underlined value- if all pax are seated/if there are still pax booked on a given flight/resort transfer
@@ -38,15 +46,15 @@ Filters:
 * Departure Date To
 * Arrivals
 
-<figure><img src="../.gitbook/assets/image (24) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (24) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Transfer Airport Report PDF/Excel​ <a href="#transfer-airport-report-pdfexcel" id="transfer-airport-report-pdfexcel"></a>
 
-Is a list of all transfers serving an airport, their load capacity and route plan. The list can be exported in PDF or Excell versions, is divided in 2 parts and contains:
+It is a list of all transfers serving an airport, their load capacity, and the route plan. The list can be exported in PDF or Excel versions, is divided into 2 parts, and contains:
 
 **Part 1 contains**:
 
-* Agency details (name, phone number, email adress)
+* Agency details (name, phone number, email address)
 * Arrival airport and date
 * ETD- estimated time of departure of the flight
 * ETA- estimated time of arrival of the flight
@@ -54,8 +62,8 @@ Is a list of all transfers serving an airport, their load capacity and route pla
 * Arrival- Outbound Flight number
 * Pax- total number of allocated pax on the corresponding flight having a flight transfer booked (extras on the booking selected)
 * Homebound Bus Schedule
-* Time of the flight arrival in the airport
-* Passengers with transfer and their route
+* Time of the flight arrival at the airport
+* Passengers with a transfer and their route
 * Passengers without transfer
 * Total number of passengers
 
@@ -63,9 +71,9 @@ Is a list of all transfers serving an airport, their load capacity and route pla
 
 **Part 2 contains**:
 
-* Bus details - name, number, time it leaves the home resort and time it return to it, route name
-* Route plan to the airport - resorts on the route and their stop times, flight number of the passengers, number of passengers to pick up from each resort
-* Route plan from the airport - resorts on the route and their stop times, flight number of the passengers, number of passengers to leave at each resort
+* Bus details - name, number, time it leaves the home resort, and time it returns to it, route name
+* Route plan to the airport - resorts on the route and their stop times, flight number of the passengers, and number of passengers to pick up from each resort
+* Route plan from the airport - resorts on the route and their stop times, flight number of the passengers, and number of passengers to leave at each resort
 * Bus company details - bus driver name, guide name, phone, email
 * Guides on the bus
 
@@ -77,11 +85,11 @@ Filters:
 * Arrivals
 * Resorts
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Transfer Bus Report​ <a href="#transfer-bus-report" id="transfer-bus-report"></a>
 
-Generates a list that gives an overview of the busses in the airport, either homebound or outbound.
+Generates a list that gives an overview of the buses in the airport, either homebound or outbound.
 
 Information is grouped by:
 
@@ -92,8 +100,8 @@ Information is grouped by:
 * Resort departure hour
 * Airport hour
 * Resort arrival hour
-* Passenger number on departure from resort
-* Passenger number on return to resort
+* Passenger number on departure from the resort
+* Passenger number on return to the passenger resort
 * Number of passengers per flight for each transfer
 * Cost per transfer
 
@@ -107,7 +115,7 @@ Filters:
 * Operators
 * Buses
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Flight Transfer Order​ <a href="#flight-transfer-order" id="flight-transfer-order"></a>
 
@@ -128,7 +136,7 @@ Filters:
 * Operators
 * Buses
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Transfer Seating/Pax PDF/Excel​ <a href="#transfer-seatingpax-pdfexcel" id="transfer-seatingpax-pdfexcel"></a>
 
@@ -154,7 +162,7 @@ Filters:
 * Operators
 * Buses
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Transfer Seating/Bus + Stop PDF/Excel​ <a href="#transfer-seatingbus--stop-pdfexcel" id="transfer-seatingbus--stop-pdfexcel"></a>
 
@@ -179,7 +187,7 @@ Filters:
 * Operators
 * Buses
 
-<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Transfer Seating/Bus + Pax PDF/Excel​ <a href="#transfer-seatingbus--pax-pdfexcel" id="transfer-seatingbus--pax-pdfexcel"></a>
 
@@ -203,7 +211,7 @@ Filters:
 * Operators
 * Buses
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Departure information​ <a href="#departure-information" id="departure-information"></a>
 
@@ -224,4 +232,4 @@ Filters:
 * Arrivals
 * Resorts
 
-<figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

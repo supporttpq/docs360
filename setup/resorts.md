@@ -4,7 +4,7 @@
 
 The **Resorts** interface provides a structured way to manage resorts associated with different arrival gateways. This system allows users to search, filter, and manage resort data efficiently.
 
-<figure><img src="../.gitbook/assets/image (21) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (370).png" alt=""><figcaption></figcaption></figure>
 
 ### Features
 
@@ -14,14 +14,27 @@ The **Resorts** interface provides a structured way to manage resorts associated
 * **Create New Entry:** A "Create" button allows users to add new resorts.
 * **Delete Functionality:** Each entry includes a trash bin icon for easy removal.
 
-### Column Breakdown
+### Column Explanation
 
-1. **Resort ID:** A unique identifier for each resort.
-2. **Plaintext:** The common name of the resort.
-3. **Code:** A unique code representing the resort.
-4. **Country:** The country where the resort is located.
-5. **Arrival:** The associated arrival gateway for the resort.
-6. **Actions:** A delete icon to remove an entry.
+* **Code**
+  * A short unique identifier for the resort (e.g., _BCN_, _TFS_, _Antalya_).
+  * Used internally in the system to reference the resort quickly.
+  * Often based on airport or city codes but can also be custom.
+* **Name**
+  * The full name of the resort (e.g., _Barcelona_, _Costa Adeje_, _Malaga_).
+  * This is the descriptive label shown to users and customers.
+* **Country**
+  * The country in which the resort is located (e.g., _Spanien_, _Romania_, _Thailand_).
+  * Ensures that resorts are categorized correctly geographically.
+* **Destination**
+  * Groups the resort into a broader travel destination category (e.g., _Valencia_, _Chania Dest_).
+  * Useful for package creation and filtering offers by larger travel areas.
+* **Arrival**
+  * The arrival airport or point of entry associated with the resort (e.g., _Barcelona_, _Varna_, _Bangkok_).
+  * Defines how travelers reach the resort and links it with transport routes.
+* **Delete (Trash Bin icon)**
+  * Allows the removal of a resort from the system.
+  * Deletion should be done carefully, as removing a resort can affect linked price lists, hotels, and packages.
 
 ### User Actions
 
@@ -32,7 +45,7 @@ The **Resorts** interface provides a structured way to manage resorts associated
 
 #### Filtering Resorts
 
-1. Select a specific resort from the **Select Resort** dropdown.
+1. Select a specific resort from the **Resort/ Destination/ Arrival** dropdown.
 2. The list updates to display only relevant entries.
 3. The **Show Hidden** toggle can be used to reveal hidden resorts.
 
@@ -48,18 +61,75 @@ The **Resorts** interface provides a structured way to manage resorts associated
 2. Click the trash bin icon under the "Actions" column.
 3. Confirm deletion if prompted.
 
-### Notes
+### Edit a resort
 
-* Resort IDs help maintain unique identification across multiple locations. To edit an already created resort, just click on the ID of the resort, a new page will be open and you can start to edit the resort details.
+<figure><img src="../.gitbook/assets/image (375).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;
+### Field Explanation
 
-<figure><img src="../.gitbook/assets/image (22) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+#### Left Section
 
-* The arrival gateway column ensures proper mapping between resorts and transportation hubs.
-* Hidden resorts can be managed using the **Show Hidden** toggle.
+* **Resort**\*
+  * Unique code for the resort (e.g., _CALETA-FUE_).
+  * Acts as the system identifier and must be unique.
+* **Name**\*
+  * The full name of the resort (e.g., _Caleta De Fuste_).
+  * This is the label displayed to users.
+* **Url-Alias**
+  * Defines the URL alias for the resort.
+  * Used for SEO-friendly links.
+* **Url Prefix Alias**
+  * Optional prefix for the resort URL.
+  * Helps structure URLs under a broader category (e.g., destination prefix).
+* **Arrival**\*
+  * The airport or point of arrival associated with the resort (e.g., _Fuerteventura Airport_).
+* **Alternative Country**
+  * Optional field if the resort belongs to a different country grouping than the default.
+* **Destination**
+  * Destination grouping that the resort belongs to (e.g., _Fuerte DEST_).
+  * Used for travel package creation and filtering.
+* **Sales Internet**
+  * Checkbox to enable the resort for online sales.
+* **Show alternating text on web**
+  * Displays alternate marketing text on the website if enabled.
+* **Teaser Text**
+  * Short promotional text shown in website teasers.
+* **Metadesc**
+  * Meta description for search engines (SEO).
+* **Keywords**
+  * SEO keywords related to the resort.
+* **Title**
+  * Title used for web/SEO purposes.
+* **Latitude / Longitude**
+  * Geographical coordinates of the resort.
+  * Useful for maps and geo-location features.
+* **Hide as filter on lists**
+  * If checked, the resort will not appear as a filter option in search/listing views.
+* **Show in Vab as Country**
+  * When using statistics in View All Bookings, resort will be considered country when grouping by country.
 
-This interface provides an intuitive way to manage resorts and their corresponding arrival gateways efficiently.
+***
+
+#### Right Section
+
+* **Status**
+  * Visibility status of the resort (e.g., _visible_).
+  * Controls whether the resort is visible or hidden.
+* **Source Agency**
+  * Defines which agency/brand the resort belongs to (e.g., _All brands_).
+* **Administration**
+  * Cost assigned for administration related to this resort.
+* **Destination cost**
+  * Cost applied for the specific destination.
+* **Handeling**
+  * Handling fee linked to the resort.
+* **Transfer**
+  * Cost of transfers (e.g., airport–hotel transfers).
+* **Miscellaneous**
+  * Additional costs that don’t fall under other categories.
+* **Description**
+  * Rich-text editor field where a full description of the resort can be added.
+  * Supports formatting, links, and images.
 
 ### Resort - Photos tab <a href="#resort---photos-tab" id="resort---photos-tab"></a>
 
@@ -67,12 +137,12 @@ Insert multiple photos in one step and sort them by drag and drop.
 
 Fields:
 
-* Title
-* Photo
-* Description
-* Main photo
+* Title - Picture name
+* Photo - Click to add photo(s)
+* Description - Short description&#x20;
+* Main photo - If it is checked, the selected picture will be made the main photo of the resort
 
-<figure><img src="../.gitbook/assets/insertResortPhotos-5fdb1cadfbe21144dca89d94d9877745.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (376).png" alt=""><figcaption></figcaption></figure>
 
 You can choose multiple images to be saved:
 

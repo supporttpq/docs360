@@ -1,54 +1,54 @@
 # Flight Transfer List
 
-Available to Admin user type.
+**Available to:** Admin user type
 
-Generates lists based on the data from Transfer Listing
+#### Overview
 
-Filters for exporting differ depending on the selected type of list to be exported.
+The **Transfer Reports** module allows administrators to generate and export various lists based on data from the **Transfer Listing**. Each report type is designed to provide a specific view of transfer operations and is available in either **PDF** or **Excel** formats, depending on the list.
 
-### Airport Plan Overview​ <a href="#airport-plan-overview" id="airport-plan-overview"></a>
+#### Purpose
 
-Generates a list for an airport and for a specific date
+These reports are primarily used to manage and monitor transfers at the airport, including passenger distribution, bus allocation, and operator assignments. The available filters differ depending on the selected report type, allowing administrators to extract only the relevant information.
 
-Filters:
+***
+
+#### Report Types and Filters
+
+**1. Airport Plan Overview**
+
+Generates a list for a selected airport and a specific date.\
+**Filters:**
 
 * Departure Date From
 * Departure Date To
 * Arrivals
 
-### Transfer Airport Resort PDF​ <a href="#transfer-airport-resort-pdf" id="transfer-airport-resort-pdf"></a>
+***
 
-Filters:
+**2. Transfer Airport Resort PDF**
 
-* Departure Date From
-* Arrivals
-* Resorts
-
-### Transfer Airport Resort Excel​ <a href="#transfer-airport-resort-excel" id="transfer-airport-resort-excel"></a>
-
-Filters:
+Generates a PDF list of transfers by airport and resort.\
+**Filters:**
 
 * Departure Date From
 * Arrivals
 * Resorts
 
-### Transfer Bus Report​ <a href="#transfer-bus-report" id="transfer-bus-report"></a>
+**3. Transfer Airport Resort Excel**
 
-Generates a list that gives an overview of the busses in the airport, either homebound or outbound.
-
-Filters:
+Generates an Excel list of transfers by airport and resort.\
+**Filters:**
 
 * Departure Date From
 * Arrivals
 * Resorts
-* Operators
-* Buses
 
-### Flight Transfer Order​ <a href="#flight-transfer-order" id="flight-transfer-order"></a>
+***
 
-Generates a list that contains information about the buses for a transfer operator for a certain date.
+**4. Transfer Bus Report**
 
-Filters:
+Provides an overview of buses at the airport, including **homebound** and **outbound** services.\
+**Filters:**
 
 * Departure Date From
 * Arrivals
@@ -56,9 +56,25 @@ Filters:
 * Operators
 * Buses
 
-### Transfer Seating/Pax PDF​ <a href="#transfer-seatingpax-pdf" id="transfer-seatingpax-pdf"></a>
+***
 
-Filters:
+**5. Flight Transfer Order**
+
+Generates a list with details of buses assigned to a specific transfer operator for a given date.\
+**Filters:**
+
+* Departure Date From
+* Arrivals
+* Resorts
+* Operators
+* Buses
+
+***
+
+**6. Transfer Seating/Pax PDF**
+
+Generates a passenger seating list in PDF format.\
+**Filters:**
 
 * Departure Date From
 * Outbound/Homebound
@@ -67,20 +83,10 @@ Filters:
 * Operators
 * Buses
 
-### Transfer Seating/Pax Excel​ <a href="#transfer-seatingpax-excel" id="transfer-seatingpax-excel"></a>
+**7. Transfer Seating/Pax Excel**
 
-Filters:
-
-* Departure Date From
-* Outbound/Homebound
-* Arrivals
-* Resorts
-* Operators
-* Buses
-
-### Transfer Seating/Bus + Stop PDF​ <a href="#transfer-seatingbus--stop-pdf" id="transfer-seatingbus--stop-pdf"></a>
-
-Filters:
+Generates a passenger seating list in Excel format.\
+**Filters:**
 
 * Departure Date From
 * Outbound/Homebound
@@ -89,20 +95,12 @@ Filters:
 * Operators
 * Buses
 
-### Transfer Seating/Bus + Stop Excel​ <a href="#transfer-seatingbus--stop-excel" id="transfer-seatingbus--stop-excel"></a>
+***
 
-Filters:
+**8. Transfer Seating/Bus + Stop PDF**
 
-* Departure Date From
-* Outbound/Homebound
-* Arrivals
-* Resorts
-* Operators
-* Buses
-
-### Transfer Seating/Bus + Pax PDF​ <a href="#transfer-seatingbus--pax-pdf" id="transfer-seatingbus--pax-pdf"></a>
-
-Filters:
+Generates a PDF seating list by bus, including stop details.\
+**Filters:**
 
 * Departure Date From
 * Outbound/Homebound
@@ -111,9 +109,10 @@ Filters:
 * Operators
 * Buses
 
-### Transfer Seating/Bus + Pax Excel​ <a href="#transfer-seatingbus--pax-excel" id="transfer-seatingbus--pax-excel"></a>
+**9. Transfer Seating/Bus + Stop Excel**
 
-Filters:
+Generates an Excel seating list by bus, including stop details.\
+**Filters:**
 
 * Departure Date From
 * Outbound/Homebound
@@ -122,7 +121,38 @@ Filters:
 * Operators
 * Buses
 
-### Departure information​ <a href="#departure-information" id="departure-information"></a>
+***
+
+**10. Transfer Seating/Bus + Pax PDF**
+
+Generates a PDF seating list by bus, including passenger details.\
+**Filters:**
+
+* Departure Date From
+* Outbound/Homebound
+* Arrivals
+* Resorts
+* Operators
+* Buses
+
+**11. Transfer Seating/Bus + Pax Excel**
+
+Generates an Excel seating list by bus, including passenger details.\
+**Filters:**
+
+* Departure Date From
+* Outbound/Homebound
+* Arrivals
+* Resorts
+* Operators
+* Buses
+
+***
+
+**12. Departure Information**
+
+Generates a departure overview list.\
+**Filters:**
 
 * Departure Return Date
 * Arrivals

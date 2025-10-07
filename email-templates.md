@@ -1,27 +1,42 @@
 # Email Templates
 
-Applies for Administrator
+### Overview
 
-The Email Center provides the administrator the means of setting the templates for various emails that can be sent from Tourpaq.
+The **E-mail Templates** module allows administrators to create, manage, and configure the content of all automated emails sent by the platform. Templates ensure consistent messaging, support dynamic content insertion, and can be tested before being sent to recipients.
 
-The following is an extract of the information that is available for each email type:
+### Purpose
 
-* the email address that sends the email;
-* the email from(name) that send the message;
-* activation status of the template;
-* email subject;
-* text editor that composes the content of the email and allows dynamic content to be placed inside through predefined constants.
+The purpose of the E-mail Templates module is to:
+
+* Standardize communication with customers.
+* Enable dynamic content through predefined placeholders.
+* Control which templates are active and ready for sending.
+* Provide a testing mechanism for email content and formatting.
 
 Most email templates are automatically sent by the system if certain conditions are met.
 
-The //Automated email notifications// service is intended to automatically send the emails defined in E-mail center section to the customers, hotel suppliers, or transport providers.
+The Automated email notifications service is intended to automatically send the emails defined in E-mail center section to the customers, hotel suppliers, or transport providers.
 
-The service is able to execute the following actions:
+The service can execute the following actions:
 
 * Select the e-mails that should be sent
 * Send them
 
 Note: If the customer’s email si not filled in, the email cannot be sent.
+
+### Field Explanation
+
+Each email template contains the following fields:
+
+| Field                        | Description                                                                                                                   |
+| ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| **Sender Email Address**     | The email address used to send the message.                                                                                   |
+| **Sender Name**              | The display name of the sender that appears in the recipient’s inbox.                                                         |
+| **Activation Status**        | Indicates whether the template is active (ready to send) or inactive.                                                         |
+| **Email Subject**            | The subject line of the email.                                                                                                |
+| **Email Body / Text Editor** | A rich text editor to compose the email. Supports dynamic placeholders to include customer-specific or booking-specific data. |
+
+### Types of Automatic Emails
 
 **1. Thank you for booking**
 

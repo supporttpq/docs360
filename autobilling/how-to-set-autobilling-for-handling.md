@@ -2,7 +2,7 @@
 
 Autobilling for **handling** is configured in the supplier settings.
 
-<figure><img src="../.gitbook/assets/image (22) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (22) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Configuration Steps**
 
@@ -20,7 +20,7 @@ Autobilling for **handling** is configured in the supplier settings.
 4. **Save Settings**
    * Click **Save**.
 
-<figure><img src="../.gitbook/assets/image (23) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (23) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Adding a Handling Price**
 

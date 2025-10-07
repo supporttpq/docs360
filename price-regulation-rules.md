@@ -79,7 +79,7 @@ The purpose of this rule is to:
 {% hint style="info" %}
 Note!  When a pricelist regulation rule is set , a pricelist history is automatically updated and it it is possible to be viewed that a service has run every time the price is adjusted according the pricelist regulation rule set.
 
-The feature to set price list goup/godown limits to be available needs to be configured in [System Setup](setup/system-setup.md)
+The feature to set price list goup/godown limits to be available needs to be configured in [System Setup](setup/system-setup/)
 
 <img src=".gitbook/assets/image (349).png" alt="" data-size="original">
 {% endhint %}

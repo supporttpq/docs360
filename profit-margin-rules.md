@@ -6,7 +6,7 @@ Under **Price List → Profit Margin Rules**, users can define rules to set prof
 
 The Profit Margin Rules system is a comprehensive tool for managing pricing strategies and commission structures across different travel products, destinations, and customer segments. This interface allows you to create, modify, and monitor profit margin rules that automatically apply to bookings based on specific criteria such as destination, passenger type, travel dates, and accommodation preferences.
 
-<figure><img src=".gitbook/assets/image (292).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 #### Filtering and Searching
 
@@ -58,9 +58,9 @@ For **Transport Rules**, users must:
 * Define **departure start** and **departure stop** intervals.
 * Set the profit margin values (**PM1–PM4**). Negative profit margins can be set, but this requires the "Use negative value in profit margin" company feature. Please contact an administrator for assistance.
 
-The system will then update all price lists created with the selected transports. For example, a rule setting **PM1–PM4** for the interval **01-11-2024 to 30-11-2024** will apply to all price lists using transports **CPH-CDG and** **CPH-CDG-X0 THU 4 PP**, covering all hotels at the corresponding destination for agency **Primo Tours**.
+The system will then update all price lists created with the selected transports. For example, a rule setting **PM1–PM4** for the interval **10.09.25 - 10.09.25** will apply to all price lists using transports **and** BLL-BCN-SES, covering all hotels at the corresponding destination for agency **TorpaqDK.**
 
-<figure><img src=".gitbook/assets/2019-09-09_1737-23153fec6eecbdceb04ae14eb07a0cad.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Resort Rules** can be created in three ways:
 
@@ -91,13 +91,13 @@ The same rule can be defined for different departure intervals.
 
 **Example:** Profit margin rules are defined below:
 
-<figure><img src=".gitbook/assets/2019-09-10_1045-b10635edae0419ba94a388515953b0aa.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (156).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (7) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 The value in the price list will be the sum of profit margins from Transport, Resort, and Hotel.
 
-<figure><img src=".gitbook/assets/image (157).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (8) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src=".gitbook/assets/image (158).png" alt=""><figcaption></figcaption></figure>
 

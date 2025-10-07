@@ -4,7 +4,7 @@ Attributes influence the behavior of the extra and allow guests to select a prod
 
 Example: A Ski rental product can have an attribute specifying the height of the guest so that the suppliers or the agency can know what length the ski equipment will be needed for the guest.
 
-<figure><img src=".gitbook/assets/image (21) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (21) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Users can choose one or more attributes for an extra.&#x20;
 
@@ -12,7 +12,7 @@ An attribute will appear automatically on the Ticket and in Customer Center.&#x2
 
 To setup an attribute go to Extra setup menu Click on Extra attribute.
 
-<figure><img src=".gitbook/assets/image (23) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (23) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The next step is to complete the fields:&#x20;
 
@@ -30,11 +30,15 @@ The next step is to complete the fields:&#x20;
 * Appears on hotel list: the attribute will appear on hotel lists.&#x20;
 * Appears on extra list: selecting the checkbox, the attribute will appear on extra lists.&#x20;
 * Is mandatory: By checking this the user will be forced to set a value for this product attribute.&#x20;
-* Validation rules:&#x20;
+* Validation rules (it was used in the old webbooking for validating input attributes) - it will be removed from the new interface.
   * Click on edit&#x20;
   * Select rule&#x20;
   * Click on save&#x20;
 * Display rule: you can select:&#x20;
-  * display as stay days choices or&#x20;
-  * display default days.&#x20;
+  * display as stay days choices = shows the days the product to which the attribute is linked to as options.&#x20;
+  * display default days = allows only selecting the first day of the product (check-in date generally)
 * Click on Save
+
+{% hint style="info" %}
+Both the Validation Rule and the Display Rule are hardcoded, meaning they are predefined and cannot be modified by the customer. Any changes to these rules can only be made by a Tourpaq developer.
+{% endhint %}

@@ -73,6 +73,10 @@ Before adding board supplements:
 2. Assign a **cost** per period and specify the **rooms** it applies to.
 3. Optionally, link supplements to **products** and assign codes for contract exports.
 
+Note: If in System Setup / [Hotel Import](../setup/system-setup/system-setup-hotel-import.md) is checked the option 'Do not create extras for board basis', the Board Basis will not be displayed in the menu and also the Extras from the Board Basis will not be created (display) in the imported hotel contract.
+
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
 ***
 
 ### Gala Dinner – Board Supplements

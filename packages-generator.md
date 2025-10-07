@@ -1,26 +1,66 @@
 # Packages Generator
 
-Packages are part of the à la carte feature and are used to generate a preset custom trip or circuit offer.&#x20;
+### Overview
 
-To create a package, go to the price list and click on package generator. Click on Create.&#x20;
+Packages are part of the **À la Carte** feature and are used to generate **preset custom trips or circuit offers**. They combine transports, hotels, and rooms into a ready-to-book package that can be offered to agencies and customers.
+
+### Purpose
+
+* To create multi-step trips that combine several transports and hotel stays.
+* To simplify the selling process by offering pre-built travel packages.
+* To allow agencies to market complex trips (e.g., multiple destinations, different hotels) as a single product.
+
+### Preconditions
+
+* Access to the **Price List** module.
+* All transports used must have **one-way seats**.
+* All selected hotels must already have a **Price List per Day** defined.
 
 <figure><img src=".gitbook/assets/image (59) (1).png" alt=""><figcaption></figcaption></figure>
 
-* Insert package name.&#x20;
-* Add the agency
-* Set the start date and end of booking dates
-* Set the interval for which the packages can be created
-* Set a discount if you wish
-* Click on add transport. Select the transport. Packages use only transports that have one-way seats.&#x20;
-* Select a hotel. All hotels need to have a price list in price list per day created. Select a room. Add how many nights the guests will stay at this hotel&#x20;
-* Add another transport. Select the transport. This transport will need to be used as a one-way home since the guests will be going to Palma, but the transport has the arrival point set as Crete.&#x20;
-* Add hotel. Since the hotels are the same as the ones before, this line needs to be removed, and click ignore filter by arrival. This feature will allow all hotels tied to both resorts to be shown. Select the hotel. Select the room. Select how many nights the guests will stay at this hotel and add transport.&#x20;
-* Since there is no return transport from Crete to Billund, a new search needs to be done. Change the number of nights to 4. There are several options for this transport. Let's choose the one going to Aarhus and use one-way home.&#x20;
+### Instructions
 
-Click on Save" and then Generate.&#x20;
+#### Step 1: Create a Package
+
+1. Go to **Price List > Package Generator**.
+2. Click **Create**.
+3. Fill in the package details:
+   * **Package Name**
+   * **Agency**
+   * **Booking Period** (start and end date)
+   * **Travel Interval** (the period during which packages can be created)
+   * **Discount** (optional)
+
+#### Step 2: Add Transports and Hotels
+
+1. **Add Transport** → Select a transport (must have one-way seats).
+2. **Select Hotel** → Choose a hotel with an existing price list.
+3. **Select Room** → Choose a room and set the number of nights.
+
+#### Step 3: Add Next Travel Segments
+
+1. Add another **Transport** for the next destination.
+   * Example: Guests travel to Palma, but the transport arrival is set as Crete.
+2. Add **Hotel** → If the hotel is already listed, remove duplicate lines.
+3. Click **Ignore Filter by Arrival** to display hotels tied to both resorts.
+4. Select hotel, room, and number of nights.
+
+#### Step 4: Return Transport
+
+* If no return transport exists (e.g., Crete → Billund), search again.
+* Adjust the number of nights (e.g., change to 4).
+* Select from available return transports (e.g., Crete → Aarhus).
+* Mark this as **One-way Home**.
+
+#### Step 5: Finalize
+
+1. Click **Save**.
+2. Click **Generate**.
 
 <figure><img src=".gitbook/assets/image (61) (1).png" alt=""><figcaption></figcaption></figure>
 
-View content allows seeing all entities used for this package, and generated packages shows every departure date of the transports and every hotel check-in date used in a package.&#x20;
+### Result / Usage
 
-Packages can be booked with the select offer feature.
+* **View Content** → Displays all entities used in the package (transports, hotels, rooms).
+* **Generated Packages** → Shows every departure date for transports and every hotel check-in date included.
+* Packages can be booked via the **Select Offer** feature.
