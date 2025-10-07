@@ -1,10 +1,10 @@
 # Golf Courses
 
-## Golf Couses Booking page
+## Golf Courses Booking page
 
 ### Overview
 
-The **Golf Courses** page allows you to manage golf-related activities linked to a specific booking. It is used to assign passengers to golf rounds, define their handicaps and club numbers, and set up golf course reservations including prices and times.
+The **Golf Courses** page allows you to manage golf-related activities linked to a specific booking. It is used to assign passengers to golf rounds, define their handicaps and club numbers, and set up golf course reservations, including prices and times.
 
 This feature ensures that golf course participation and scheduling are accurately recorded and communicated between the travel agency, the customer, and the golf provider.
 
@@ -107,8 +107,11 @@ The ticket shall list all information relevant to the golf booking, such as:
 
 ## **Golf Courses Extra Category**
 
-The **Extras Category** page is used to configure and manage extra services offered to customers — in this case, **Golf Courses**.\
-This configuration determines how the golf product behaves in the booking system, and which rules apply to it.
+The **Extras Category** page is used to configure and manage extra services offered to customers — in this case, **Golf Courses**.
+
+The **Type** defines the behaviour of the Extra. In this case, the **Type** must be set to **“Golf”**.
+
+Once the Type is defined as _Golf_, you can create one or more extra **categories** that use this type. The category determines how the Golf Extras are grouped and managed within the system. This configuration determines how the golf product behaves in the booking system and which rules apply to it.
 
 Each extra category can be customized per brand and contains general, visual, and technical settings for booking, visibility, and integration.
 
