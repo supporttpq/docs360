@@ -4,6 +4,62 @@
 
 A supplier can remove a hotel room from selling by creating a stop sale for that room. He can do that by going to the Stop Sale page and filling in the filters for that room and the period. The stop sale will run for each date and reduce the number of rooms available. It is not possible to make Stop Sale for secured and guaranteed rooms.&#x20;
 
+### **Overview**
+
+The **New Stop Sale** page allows users to create a stop sale for specific hotels and room types within a selected date range.\
+A _stop sale_ prevents new bookings for the specified period — it is typically used when a hotel reaches full occupancy or temporarily stops accepting reservations.
+
+### **Purpose**
+
+Use this function to:
+
+* Block sales for specific hotels or room types.
+* Control booking availability during peak demand, maintenance periods, or overbooking situations.
+* Ensure the system does not allow new reservations for dates under stop sale.
+
+### **How to Access**
+
+Navigate to:\
+**Stop Sales → Create New Stop Sale**
+
+### **Field Descriptions**
+
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+| **Field**      | **Description**                                                                                                                                                                                                                                                                                          |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Start date** | <p>Defines the first day of the stop sale period.<br>Use the calendar icon to select a date.</p>                                                                                                                                                                                                         |
+| **End date**   | <p>Defines the last day of the stop sale period.<br>The stop sale will be active from the <strong>Start date</strong> through the <strong>End date</strong>, inclusive.</p>                                                                                                                              |
+| **Brand**      | <p>Select the brand to which the stop sale applies.<br>If your system manages multiple brands, this allows precise control.<br>Default: <em>All brands</em>.</p>                                                                                                                                         |
+| **Hotel**      | <p>Select the hotel affected by the stop sale.<br>Hotels are listed by code and name.</p>                                                                                                                                                                                                                |
+| **Room Type**  | <p>Select one or multiple room types that will be blocked for sale.<br>If no room type is selected, the stop sale applies to the entire hotel.</p>                                                                                                                                                       |
+| **Note**       | <p>Add a comment describing the reason for the stop sale (e.g., <em>Fully booked</em>, <em>Maintenance</em>, <em>Renovation</em>).<br>Used for internal reference and reporting.      This field is optional and will respect the settings for the mandatory stop sale note set in the System Setup.</p> |
+
+***
+
+### **Example**
+
+To stop sales for **Inside Elounda** on **13 October 2025** for room type _DBL.VM_, fill the form as follows:
+
+| Field      | Value                              |
+| ---------- | ---------------------------------- |
+| Start date | 13-10-2025                         |
+| End date   | 13-10-2025                         |
+| Brand      | All brands                         |
+| Hotel      | 107754 – Inside Elounda            |
+| Room Type  | DBL.VM                             |
+| Note       | Fully booked for the selected date |
+
+Then click **Save** to create the stop sale.
+
+***
+
+### **Important Notes**
+
+* All fields marked with a red asterisk (\*) are mandatory.
+* If the **Note** field is left empty, an error message _“Note is required”_ will appear.
+* The stop sale is effective immediately after saving and will appear in the **Stop Sales Overview**.
+
 <figure><img src=".gitbook/assets/image (65) (1).png" alt=""><figcaption></figcaption></figure>
 
 If the guaranteed rooms are filled and are more than the booked rooms number, the available rooms number is reduced to the guaranteed rooms number. If the guaranteed rooms are not filled or the booked rooms number is bigger, the available rooms number is reduced to the booked rooms number.
