@@ -57,16 +57,16 @@ Then click **Save** to create the stop sale.
 ### **Important Notes**
 
 * All fields marked with a red asterisk (\*) are mandatory.
-* If the **Note** field is left empty, an error message _“Note is required”_ will appear.
+* If the **Note** field is left empty, and the setting from System Setup (Stop sale note mandatory) is checked,  an error message _“Note is required”_ will appear.
 * The stop sale is effective immediately after saving and will appear in the **Stop Sales Overview**.
 
-<figure><img src=".gitbook/assets/image (65) (1).png" alt=""><figcaption></figcaption></figure>
+\-----------------------------------------------------------------------------------------------------------------------
 
 If the guaranteed rooms are filled and are more than the booked rooms number, the available rooms number is reduced to the guaranteed rooms number. If the guaranteed rooms are not filled or the booked rooms number is bigger, the available rooms number is reduced to the booked rooms number.
 
 ### **Scenarios**
 
-| Available rooms before stop sale | Guarantied rooms number | Booked rooms Number | Available rooms after stop sale |
+| Available rooms before stop sale | Guaranteed rooms number | Booked rooms Number | Available rooms after stop sale |
 | -------------------------------- | ----------------------- | ------------------- | ------------------------------- |
 | 10                               | 5                       | 4                   | 5                               |
 | 10                               | 5                       | 6                   | 6                               |
