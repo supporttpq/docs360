@@ -37,6 +37,7 @@ The purpose of these settings is to:
 | **Max. Budget Select Offer**                | Sets the maximum budget threshold in Select Offer.                                         |
 | **Average Hotel Costs Day Numbers**         | Number of days used to calculate average hotel cost values for dashboard comparison.       |
 | **Cost Margin**                             | Defines the difference threshold used in dashboard reporting.                              |
+| Stop sale note mandatory                    | If checked, then the note for Hotel Stop Sale is mandatory.                                |
 | **Stop Sale Email**                         | Email address for receiving Stop Sale notifications.                                       |
 | **Disable Room Edit Days**                  | Restricts how many days before departure customers can edit room choices.                  |
 | **Ignore Transport Cost**                   | Excludes transport costs from Profit columns in the Price List.                            |
