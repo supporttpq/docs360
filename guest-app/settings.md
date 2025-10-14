@@ -14,7 +14,7 @@ To configure the settings for Guest app,&#x20;
 
 These are the texts for specific pages in the Guest App.&#x20;
 
-<figure><img src=".gitbook/assets/image (21) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (21) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * &#x20;Welcome screen text: Write the title and the description. This will appear when the customer first logs in with their booking in Guest App.&#x20;
 * Countdown Screen Text will be shown when some features in the guest app aren't available until later.&#x20;
@@ -23,7 +23,7 @@ These are the texts for specific pages in the Guest App.&#x20;
 * After this have been set, click on save.&#x20;
 * The available menus are the menus available to the guests before and after departure.&#x20;
 
-<figure><img src=".gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>
 
 * Click on Edit&#x20;
 * Set the menus that will be available as well as the options from the menus.&#x20;
@@ -35,7 +35,7 @@ These are the texts for specific pages in the Guest App.&#x20;
 * The weather API URL will show the weather in the app. Insert one if available
 * The notifications can be managed from this part. These notifications are for the guide part of the menu specifically, the weekly activities.&#x20;
 
-<figure><img src=".gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
 
 * The number of days before departure is the number of days before the departure of the booking when the guests will receive the notifications.&#x20;
 * Number of times per day are the number of times a guests will receive a notification.&#x20;
@@ -45,7 +45,7 @@ These are the texts for specific pages in the Guest App.&#x20;
 * All notifications follow the same pattern.&#x20;
 * KissCam overlays can be uploaded and will be used when the guests are making pictures through the app.
 
-<figure><img src=".gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
 
 * After everything has been set, click on Save.&#x20;
 * Hide facilities from the app can be activated or not and if activated will hide hotel facilities from the guests.

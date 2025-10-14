@@ -6,7 +6,7 @@
 
 ## Dashboard
 
-* [Dashboard](<README (1).md>)
+* [Dashboard](dashboard/dashboard.md)
 
 ## Notifications
 
@@ -76,7 +76,7 @@
 
 ## Customer
 
-* [Customers](customer/page-3.md)
+* [Customers](customer/customers.md)
 
 ***
 
@@ -93,7 +93,7 @@
 
 ## Tickets
 
-* [Print Tickets](tickets/page-4.md)
+* [Print Tickets](tickets/print-tickets.md)
 
 ***
 
@@ -102,7 +102,7 @@
 
 ## Finance
 
-* [Payment Registration](finance/page-5.md)
+* [Payment Registration](finance/payment-registration.md)
 * [Payment File Import](finance/payment-file-import.md)
 * [Refund File Import](finance/refund-file-import.md)
 * [Method of Payment](finance/method-of-payment.md)
@@ -127,7 +127,7 @@
 
 ## Price List
 
-* [Pricelist](price-list/page-6.md)
+* [Pricelist](price-list/pricelist.md)
 * [Pricelist Setup](price-list/pricelist-setup.md)
 * [Migrate Pricelist](price-list/migrate-pricelist.md)
 
@@ -273,13 +273,13 @@
 
 ## Quality
 
-* [Quality Management](quality/page-9/README.md)
-  * [Questionnaires - General](quality/page-9/questionnaires-schemas.md)
-  * [Questionnaires - Setup questions](quality/page-9/questionnaires-setup-questions.md)
-  * [Questionnaire - Resource](quality/page-9/questionnaire-resource.md)
-  * [Questionnaire - Display](quality/page-9/questionnaire-display.md)
-  * [Questionnaire Groups](quality/page-9/questionnaire-groups.md)
-  * [Questionnaire Results](quality/page-9/questionnaire-results.md)
+* [Quality Management](quality/quality-management/README.md)
+  * [Questionnaires - General](quality/quality-management/questionnaires-schemas.md)
+  * [Questionnaires - Setup questions](quality/quality-management/questionnaires-setup-questions.md)
+  * [Questionnaire - Resource](quality/quality-management/questionnaire-resource.md)
+  * [Questionnaire - Display](quality/quality-management/questionnaire-display.md)
+  * [Questionnaire Groups](quality/quality-management/questionnaire-groups.md)
+  * [Questionnaire Results](quality/quality-management/questionnaire-results.md)
 
 ***
 
@@ -293,7 +293,7 @@
 
 ## Export
 
-* [Export](export-1/page-10.md)
+* [Export](export-1/export.md)
 * [Lists](export-1/lists.md)
 * [Extras List](export-1/extras-list.md)
 
@@ -305,10 +305,10 @@
 
 ## Users
 
-* [Users](users/page-11/README.md)
-  * [Users Management](users/page-11/users-management.md)
-  * [User limited view](users/page-11/user-limited-view.md)
-  * [Password expiration](users/page-11/password-expiration.md)
+* [Users](users/users/README.md)
+  * [Users Management](users/users/users-management.md)
+  * [User limited view](users/users/user-limited-view.md)
+  * [Password expiration](users/users/password-expiration.md)
 
 ***
 
@@ -347,22 +347,22 @@
 * [Maps](maps.md)
 * [Weekly Activities](weekly-activities.md)
 * [Good to Know](good-to-know.md)
-* [Settings](page-12.md)
+* [Settings](guest-app/settings.md)
 
 ## Extras Setup
 
-* [Extras](extras-setup/page-13/README.md)
-  * [Prices](extras-setup/page-13/prices.md)
-  * [Resources](extras-setup/page-13/resources.md)
-  * [Allotments](extras-setup/page-13/allotments.md)
-  * [Sold out behaviour](extras-setup/page-13/sold-out-behaviour.md)
-  * [Extra package](extras-setup/page-13/extra-package.md)
-  * [Attributes](extras-setup/page-13/attributes.md)
-  * [Communication](extras-setup/page-13/communication.md)
-  * [Early booking/Stay and pay and Special Early Booking/Stay and pay](extras-setup/page-13/early-booking-stay-and-pay-and-special-early-booking-stay-and-pay.md)
-  * [Teetime](extras-setup/page-13/teetime.md)
-  * [Multiple product selection in product category](extras-setup/page-13/multiple-product-selection-in-product-category.md)
-  * [Create an extra with stay days functionality and select it in bookings](extras-setup/page-13/create-an-extra-with-stay-days-functionality-and-select-it-in-bookings.md)
+* [Extras](extras-setup/extras/README.md)
+  * [Prices](extras-setup/extras/prices.md)
+  * [Resources](extras-setup/extras/resources.md)
+  * [Allotments](extras-setup/extras/allotments.md)
+  * [Sold out behaviour](extras-setup/extras/sold-out-behaviour.md)
+  * [Extra package](extras-setup/extras/extra-package.md)
+  * [Attributes](extras-setup/extras/attributes.md)
+  * [Communication](extras-setup/extras/communication.md)
+  * [Early booking/Stay and pay and Special Early Booking/Stay and pay](extras-setup/extras/early-booking-stay-and-pay-and-special-early-booking-stay-and-pay.md)
+  * [Teetime](extras-setup/extras/teetime.md)
+  * [Multiple product selection in product category](extras-setup/extras/multiple-product-selection-in-product-category.md)
+  * [Create an extra with stay days functionality and select it in bookings](extras-setup/extras/create-an-extra-with-stay-days-functionality-and-select-it-in-bookings.md)
 
 ***
 
@@ -400,10 +400,10 @@
   * [Ticket Attachments](email-setup/tickets-attachments/ticket-attachments.md)
   * [Ticket texts](email-setup/tickets-attachments/ticket-texts.md)
 * [E-mail center](email-setup/e-mail-center.md)
-* [Dynamic E-mail/SMS Center](email-setup/page-14/README.md)
-  * [Setup for Dynamic E-mail/SMS Center](email-setup/page-14/setup-for-dynamic-e-mail-sms-center.md)
-  * [Dynamic Email - Upload Image](email-setup/page-14/dynamic-email-upload-image.md)
-  * [Dynamic Email - Link Dialog](email-setup/page-14/dynamic-email-link-dialog.md)
+* [Dynamic E-mail/SMS Center](email-setup/dynamic-e-mail-sms-center/README.md)
+  * [Setup for Dynamic E-mail/SMS Center](email-setup/dynamic-e-mail-sms-center/setup-for-dynamic-e-mail-sms-center.md)
+  * [Dynamic Email - Upload Image](email-setup/dynamic-e-mail-sms-center/dynamic-email-upload-image.md)
+  * [Dynamic Email - Link Dialog](email-setup/dynamic-e-mail-sms-center/dynamic-email-link-dialog.md)
 
 ***
 

@@ -171,7 +171,7 @@ At the beginning of each row, there are tree icons:
 
 ### Relation PL & Related PL <a href="#relation-pl--related-pl" id="relation-pl--related-pl"></a>
 
-These are covered in [Relation pricelist](page-6.md#relation-pl--related-pl)
+These are covered in [Relation pricelist](pricelist.md#relation-pl--related-pl)
 
 #### Also Update Prices on Transports <a href="#also-update-prices-on-transports" id="also-update-prices-on-transports"></a>
 

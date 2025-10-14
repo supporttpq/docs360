@@ -4,7 +4,7 @@
 
 The **Dashboard** is the default landing page in the Tourpaq Office application. Its purpose is to provide users—especially those in sales, operations, and management—with a **quick, centralized snapshot of system activity**, customer behavior, sales data, and operational metrics.
 
-<figure><img src=".gitbook/assets/image (242).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (242).png" alt=""><figcaption></figcaption></figure>
 
 This dashboard provides a comprehensive overview of the sales and customer activity. The data is segmented into various widgets, offering insights into bookings, destinations, revenue, top-performing entities, and operational alerts.
 
