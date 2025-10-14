@@ -1,6 +1,6 @@
 # Dashboard
 
-### 🧭 Overview
+### Overview
 
 The **Dashboard** is the default landing page in the Tourpaq Office application. Its purpose is to provide users—especially those in sales, operations, and management—with a **quick, centralized snapshot of system activity**, customer behavior, sales data, and operational metrics.
 
@@ -8,7 +8,7 @@ The **Dashboard** is the default landing page in the Tourpaq Office application.
 
 This dashboard provides a comprehensive overview of the sales and customer activity. The data is segmented into various widgets, offering insights into bookings, destinations, revenue, top-performing entities, and operational alerts.
 
-### 🎯 Purpose
+### Purpose
 
 The dashboard aggregates and visualizes critical business data from multiple modules (Bookings, Offers, Questionnaires, Service Cases, and Finance). This allows users to:
 
@@ -17,15 +17,15 @@ The dashboard aggregates and visualizes critical business data from multiple mod
 * React to service and support metrics
 * Identify top-performing products and problem areas
 
-### ✅ Preconditions
+### Preconditions
 
 * The user must have access to the dashboard page (depending on user role/permissions).
 * Real-time or near-real-time data must be available in the database.
 * System filters must be configured properly for user-specific views (e.g., agency or brand access).
 
-### 🛠️ How to Use the Dashboard
+### How to Use the Dashboard
 
-#### 🔍 Filter Controls
+#### Filter Controls
 
 These control the **scope of the data** shown in the dashboard widgets.
 
@@ -36,7 +36,7 @@ These control the **scope of the data** shown in the dashboard widgets.
 
 ***
 
-### 📦 Dashboard Widgets & Field Explanations
+### Dashboard Widgets & Field Explanations
 
 #### 🔹 Offers Section
 
@@ -93,9 +93,9 @@ Monitors customer engagement.
 
 ***
 
-### 💸 Sales Performance
+### Sales Performance
 
-#### 📌 Sales Overview
+#### Sales Overview
 
 | Field        | Description                                                                               |
 | ------------ | ----------------------------------------------------------------------------------------- |
@@ -116,7 +116,7 @@ Monitors customer engagement.
 
 ***
 
-### 🌍 Guest on Destinations
+### Guest on Destinations
 
 Tracks guest distribution by destination.
 
@@ -128,23 +128,23 @@ Tracks guest distribution by destination.
 
 ***
 
-### 🏖️ Destination & Accommodation Insights
+### Destination & Accommodation Insights
 
-#### 🥇 Top-Selling Resorts
+#### Top-Selling Resorts
 
 * Shows resorts with the most passengers booked.
 
-#### 🏨 Top-Selling Hotels
+#### Top-Selling Hotels
 
 * Highlights the most-booked hotels by total passengers.
 
-#### 📅 Top-Selling Days
+#### Top-Selling Days
 
 * Identifies the most popular booking dates (by number of passengers).
 
 ***
 
-### 💰 Financial Summary
+### Financial Summary
 
 | Field              | Description                                                               |
 | ------------------ | ------------------------------------------------------------------------- |
