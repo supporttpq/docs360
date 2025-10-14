@@ -2,11 +2,11 @@
 
 Real Transports can be found in **Transports/Real Transports**. They are a special case and as such are somewhat difficult to create.
 
-<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Just like any transport, the user has to write it's code and select the departure and arrival. Unlike any transport, it is imperative to select the **Reporting Type**. After the actions have been completed, the user can click the **Save** button and proceed to the next step.
 
-<figure><img src="../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 2. The next step is to configure the transport's timetable. This process has the same steps as a normal transport, as in filling star and end dates, departure and arrival times, but now is mandatory to fill the **Flight No.** case. To complete the action the user has to press **Insert**.
 

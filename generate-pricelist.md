@@ -10,7 +10,7 @@ The **Generate Price List Service** automatically creates price lists based on a
 * The transport must have the **same brand** as the one set for the price list generation rule. Set the brand in the **Transport** settings.
 * Only **future departures** are processed. Fix quotas with past departures are ignored.
 
-<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Steps to Add a Generation Rule
 

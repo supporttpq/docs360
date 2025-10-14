@@ -25,7 +25,7 @@ If no specific year interval is set for a brand, the system will apply the **Def
   * The first week begins on the selected start date.
   * The last week starts on the chosen end date.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Examples / Scenarios**
 

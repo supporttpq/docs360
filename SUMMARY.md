@@ -172,6 +172,7 @@
   * [Hotel Deposit](hotel/hotel-creation/hotel-deposit.md)
   * [Hotel Activity Log](hotel/hotel-creation/hotel-activity-log.md)
   * [Room cost](hotel/hotel-creation/room-cost/README.md)
+    * [Early Booking Cost Discount Rule – Deletion Behavior](hotel/hotel-creation/room-cost/early-booking-cost-discount-rule-deletion-behavior.md)
     * [Add room cost rule with "Per Room Per Stay" type](hotel/hotel-creation/room-cost/add-room-cost-rule-with-per-room-per-stay-type.md)
     * [Add room cost rule with "Per Room Per Stay" with a specific stay days value](hotel/hotel-creation/room-cost/add-room-cost-rule-with-per-room-per-stay-with-a-specific-stay-days-value.md)
   * [Room costs](hotel/hotel-creation/room-costs.md)

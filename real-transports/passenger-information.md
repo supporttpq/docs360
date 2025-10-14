@@ -33,7 +33,7 @@ Each brand can have its own passenger information messages and settings.
 
 ### **Fields Description**
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 | **Field**                  | **Description**                                                                                                                                                    |
 | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -69,13 +69,13 @@ For the transport **CPH–CHQ–RC7134**, a passenger message was created with t
 
 This means all passengers traveling on this route between **3 October 2025 – 31 October 2025**, whose bookings were created in the same period, will receive the message _“Test passenger info.”_
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 The text from Passenger information will also be visible on the ticket:
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
