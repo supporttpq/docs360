@@ -10,7 +10,25 @@ This page provides details on how to configure and manage attributes for the ext
 
 **Menu > Product > Extra > Attributes Tab**
 
-Users can choose one or more of the attributes defined in the [Extras Attributes](../../extras-attributes.md).
+Users can choose one or more of the attributes defined in the [Extras Attributes](../../extras-attributes.md). The limit number of resources that can be added is 100. If the number of resources of the same type exceeds this number, a warning message will appear at the bottom of the page.
+
+<figure><img src="../../.gitbook/assets/image (419).png" alt=""><figcaption></figcaption></figure>
+
+#### Workarounds
+
+It is recommended to analyze whether the configuration can be optimized before applying the change. The following workarounds can help reduce the number of resources and improve performance:
+
+* **Review unnecessary resources:**\
+  Check if some of the resources included in the filter are not actually needed. Remember that filtering is used to _restrict_ what matches.
+  * If there are **no hotels** listed in the resources, then **all hotels match**, meaning there is effectively no limitation.
+  * The same principle applies to other resource types (e.g., transports, resorts).
+* **Use as Excluded:**\
+  The **Exclude** option specifies that there is _no match_ for the listed resources. In some cases, it is more efficient to exclude a few items than to include many.
+* **Use Transport Supplier filtering:**\
+  In scenarios where many transports are listed individually, consider filtering by **Transport Supplier** instead. This can greatly simplify the setup and reduce the number of entries.
+* **Filter on a higher level:**\
+  Sometimes filtering can be done more efficiently at another level. For example, specifying a **number of arrivals** can be simpler and faster than defining filters for many individual resorts.
+* For extras used for transportation seating (SEAT products), the limitation has been removed.
 
 An attribute will appear automatically on the Ticket and in Customer Centre. It allows the guests to influence the behaviour of the extra or select a product that fits them. (Example: A Sky equipment product can have an attribute with the height of the guest so that the suppliers or the agency can know what lenght the sky equipment will be needed for the guest).
 
