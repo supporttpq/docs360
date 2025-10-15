@@ -2,34 +2,21 @@
 
 ### **Overview**
 
-The **Passenger Information** tab allows you to define messages or information that will be shown to passengers associated with a specific transport.\
-This information can include travel instructions, airport details, or destination-specific notes. It can be configured per **brand**, **transport**, and **date range**.
-
-***
+The **Passenger Information** section is used to define informational notes or errata that apply to bookings within specific stay periods.\
+These messages typically provide additional details for customers or internal staff — for example, **special conditions, restrictions, or exceptions** related to a booking.
 
 ### **Purpose**
 
-Use this feature to:
+* To communicate relevant information connected to bookings and stays (e.g., transport notes, exceptions, overlapping rules).
+* To ensure both passengers and staff are informed about important travel details.
+* To manage special conditions or exceptions within defined booking and stay periods.
 
-* Display important travel notes or reminders for passengers on selected transports.
-* Provide specific instructions valid for certain travel or booking periods.
-* Ensure passengers receive accurate and updated information through the booking system or communication channels.
-
-***
-
-### **How to Access**
-
-Go to:\
-**Transport → \[Select Transport] → Passenger Information**
-
-***
+The behavior and purpose of **Passenger Information for Real Transports** are similar to those used in **Charter Transports**.
 
 ### **Tabs**
 
 At the top, you can switch between different **brands.**\
 Each brand can have its own passenger information messages and settings.
-
-***
 
 ### **Fields Description**
 
@@ -69,7 +56,7 @@ For the transport **CPH–CHQ–RC7134**, a passenger message was created with t
 
 This means all passengers traveling on this route between **3 October 2025 – 31 October 2025**, whose bookings were created in the same period, will receive the message _“Test passenger info.”_
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 

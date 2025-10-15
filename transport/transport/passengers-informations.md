@@ -1,54 +1,25 @@
 # Passengers informations
 
-#### **Overview**
+### **Overview**
 
 The _Passenger Information_ section is used to define informational notes or errata that apply to bookings for specific stay periods. These messages typically provide additional details for customers or internal staff (e.g., special conditions, restrictions, or exceptions).
 
-#### **Purpose**
+### **Purpose**
 
 * To communicate relevant information related to bookings and stays (e.g., transport notes, exceptions, overlapping rules).
 * To ensure passengers and staff are aware of important details connected to their travel.
 * To manage conditions within specific booking and stay periods.
 
-#### **Fields Explanation**
+### **Tabs**
+
+At the top, you can switch between different **brands.**\
+Each brand can have its own passenger information messages and settings.
+
+### **Fields Explanation**
 
 <figure><img src="../../.gitbook/assets/image (399).png" alt=""><figcaption></figcaption></figure>
 
-#### **1. Stay From -** The start date of the hotel or travel stay period for which this information applies.
-
-* **Usage**: Notes will only apply if the passenger’s stay begins on or after this date.
-* **Example**: _29-10-2025_ → Information applies starting October 29, 2025.
-
-#### **2. Stay To -** The end date of the hotel or travel stay period for which this information applies.
-
-* **Usage**: Ensures the message is only relevant until this date.
-* **Example**: _29-10-2025_ → Information is valid up to October 29, 2025.
-
-#### **3. Booking Date From -** The earliest date when bookings must be made for the passenger's information to apply.
-
-* **Usage**: Prevents the rule from applying to earlier bookings.
-* **Example**: _04-06-2025_ → Only bookings made on or after June 4, 2025, are affected.
-
-#### **4. Booking Date To -** The latest date when bookings can be made for the information to apply.
-
-* **Usage**: Ensures the rule is limited to a certain booking period.
-* **Example**: _04-06-2025_ → Only bookings made up to June 4, 2025, are affected.
-
-#### **5. Information -** The actual message or note that will be displayed/associated with the booking.
-
-* **Usage**: Describes transport notes, errata, or booking conditions.
-* **Example values**:
-  * _Transport test_ → internal test note.
-  * _Transport errata def overlapping_ → indicates overlapping transport information.
-
-#### **6. Acknowledge -** Indicates whether this information must be confirmed (acknowledged) by the user or system.
-
-* **Values**:
-  * ✅ (Enabled) → Acknowledgement required; ensures the message is seen.
-  * ❌ (Disabled) → Acknowledgement not required.
-*   **Example**:&#x20;
-
-    <figure><img src="../../.gitbook/assets/image (400).png" alt=""><figcaption></figcaption></figure>
+<table data-header-hidden><thead><tr><th width="310.25"></th><th></th></tr></thead><tbody><tr><td><strong>Field</strong></td><td><strong>Description</strong></td></tr><tr><td><strong>Stay From</strong></td><td>The start date of the hotel or travel stay period for which this information applies.<strong>Usage:</strong> Notes will only apply if the passenger’s stay begins on or after this date . <strong>Example:</strong> <code>29-10-2025</code> → Information applies starting <strong>October 29, 2025</strong>.</td></tr><tr><td><strong>Stay To</strong></td><td>The end date of the hotel or travel stay period for which this information applies.<strong>Usage:</strong> Ensures the message is only relevant until this date.                                     <strong>Example:</strong> <code>29-10-2025</code> → Information is valid up to <strong>October 29, 2025</strong>.</td></tr><tr><td><strong>Booking Date From</strong></td><td>The earliest date when bookings must be made for the passenger’s information to apply.<strong>Usage:</strong> Prevents the rule from applying to earlier bookings.                  <strong>Example:</strong> <code>04-06-2025</code> → Only bookings made on or after <strong>June 4, 2025</strong>, are affected.</td></tr><tr><td><strong>Booking Date To</strong></td><td>The latest date when bookings can be made for the information to apply.<strong>Usage:</strong> Ensures the rule is limited to a certain booking period.                                    <strong>Example:</strong> <code>04-06-2025</code> → Only bookings made up to <strong>June 4, 2025</strong>, are affected.</td></tr><tr><td><strong>Information</strong></td><td>The actual message or note that will be displayed or associated with the booking.<strong>Usage:</strong> Describes transport notes, errata, or booking conditions.                      <strong>Example values:</strong>- <code>Transport test</code> → internal test note.- <code>Transport errata def overlapping</code> → indicates overlapping transport information.</td></tr><tr><td><strong>Acknowledge</strong></td><td>Indicates whether this information must be confirmed (acknowledged) by the user or system.                    <strong>Values:</strong>                                                                                          ✅ <strong>Enabled</strong> → Acknowledgement required; ensures the message is seen.                                                                    ❌ <strong>Disabled</strong> → Acknowledgement not required.       <strong>Example:</strong> If enabled, the user must confirm having read the note before continuing. <img src="../../.gitbook/assets/image.png" alt="" data-size="original"></td></tr></tbody></table>
 
 #### **Instructions for Use**
 
