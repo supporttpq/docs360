@@ -175,11 +175,11 @@ A discount/supplement could be universally available, or it could be available f
 
 In the discount/supplement general window, go to Resources tab.
 
-Here we can select the resource type from the dropdown: destination, resort, hotel, room, transport, real transport, hotel categories
+Here we can select the resource type from the dropdown: destination, resort, hotel, room, transport, real transport, or hotel categories.&#x20;
 
 <figure><img src=".gitbook/assets/image (15) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Resources are used to limit the availability of discount/supplement to the selected entities.
+Resources are used to limit the availability of discounts/supplements to the selected entities.
 
 * Destinations will limit the availability of the discount/supplement to the selected destinations.
 * Resorts will limit the availability of the discount/supplement to the selected resorts.
@@ -189,16 +189,32 @@ Resources are used to limit the availability of discount/supplement to the selec
 * Real Transport will limit the availability of the discount/supplement to the selected transports.
 * Hotel Categories will limit the availability of the discount/supplement to the selected hotel category
 
+The limit number of resources that can be added is 100. If the number of resources of the same type exceeds this number, a warning message will appear at the bottom of the page.
+
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+**Workarounds**
+
+It is recommended to analyze whether the configuration can be optimized before applying the change. The following workarounds can help reduce the number of resources and improve performance:
+
+* **Review unnecessary resources:** Check if some of the resources included in the filter are not actually needed. Remember that filtering is used to _restrict_ what matches.
+  * If there are **no hotels** listed in the resources, then **all hotels match**, meaning there is effectively no limitation.
+  * The same principle applies to other resource types (e.g., transports, resorts).
+* **Use as Excluded:** The **Exclude** option specifies that there is _no match_ for the listed resources. In some cases, it is more efficient to exclude a few items than to include many.
+* **Use Transport Supplier filtering:** In scenarios where many transports are listed individually, consider filtering by **Transport Supplier** instead. This can greatly simplify the setup and reduce the number of entries.
+* **Filter on a higher level:** Sometimes filtering can be done more efficiently at another level. For example, specifying a **number of arrivals** can be simpler and faster than defining filters for many individual resorts.
+* For RR discounts/supplements, the limitation has been removed.
+
 There are two rules (set from system setup ) when using resources:
 
-1. The first one is "AND". If used, it will limit the discount to all selected resources types. With this configuration the extra will be bookable If all the requirements are met on the booking.
+1. The first one is "AND". If used, it will limit the discount to all selected resources types. With this configuration, the extra will be bookable If all the requirements are met on the booking.
 2. The second rule is "OR". If that rule is active, the extra can be booked if only one of the requirements is met.
 
 After all these are set, click on save resources.
 
 #### Photos
 
-On Discount/supplement General window, go to Photos tab:
+On the Discount/Supplement General window, go to Photos tab:
 
 <figure><img src=".gitbook/assets/image (17) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

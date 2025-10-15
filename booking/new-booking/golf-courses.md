@@ -69,7 +69,7 @@ This section displays the details of the golf rounds added for the selected pass
 
 The ticket contains all relevant information for guests who have booked golf courses through the system.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The ticket shall list all information relevant to the golf booking, such as:
 
@@ -159,7 +159,7 @@ The purpose of this configuration is to:
 
 ### **Instructions and Field Explanations**
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Basic Setup Section**
 
