@@ -1,7 +1,7 @@
 ---
 description: >-
   The Generate Price List Service automatically creates price lists based on a
-  resort and transport.
+  resort or transport.
 ---
 
 # Price List Generator
@@ -46,16 +46,16 @@ By using this tool, users can efficiently maintain pricing structures across the
 
 ### **Table Columns**
 
-| **Column**              | **Description**                                                                                                                                                                                                                 |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Agency**              | The agency responsible for generating the price list (e.g., _Tourpaq DK_).                                                                                                                                                      |
-| **Arrival**             | The destination city where the transport arrives (e.g., _Chania_, _Barcelona_). Mandatory field                                                                                                                                 |
-| **Resort**              | The resort associated with the destination (e.g., _CHQ – Chania Resort_).                                                                                                                                                       |
-| **Hotel**               | The specific hotel included in the price list generation rule.                                                                                                                                                                  |
-| **Departure From / To** | Defines the valid departure date range for the transport or stay.                                                                                                                                                               |
-| **Transport**           | Shows the transport identifier or code (e.g., _BLL–CHQ–OLI+471b7671_).                                                                                                                                                          |
-| **Fix Quotas**          | Displays the date range for which the quota and prices are fixed. These are the validity periods for generated prices. Mandatory if a Transport is selected.                                                                    |
-| **Actions (Icons)**     | <p>- <strong>🖉 Edit</strong>: Opens the selected record for editing.<br>- <strong>🗑 Delete</strong>: Deletes the selected rule.<br>- <strong>↻ Regenerate</strong>: Recreates the price list using the existing settings.</p> |
+| **Column**              | **Description**                                                                                                                                                                                   |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Agency**              | The agency responsible for generating the price list (e.g., _Tourpaq DK_).                                                                                                                        |
+| **Arrival**             | The destination city where the transport arrives (e.g., _Chania_, _Barcelona_). Mandatory field                                                                                                   |
+| **Resort**              | The resort associated with the destination (e.g., _CHQ – Chania Resort_).                                                                                                                         |
+| **Hotel**               | The specific hotel included in the price list generation rule.                                                                                                                                    |
+| **Departure From / To** | Defines the valid departure date range for the transport or stay.                                                                                                                                 |
+| **Transport**           | Shows the transport identifier or code (e.g., _BLL–CHQ–OLI+471b7671_).                                                                                                                            |
+| **Fix Quotas**          | Displays the date range for which the quota and prices are fixed. These are the validity periods for generated prices. Mandatory if a Transport is selected.                                      |
+| **Actions (Icons)**     | <p>- <strong>🖉 Edit</strong>: Opens the selected record for editing.<br>- <strong>🗑 Delete</strong>: Deletes the selected rule.<br>- History: Shows what changes have been made to the rule</p> |
 
 ***
 
@@ -63,7 +63,7 @@ By using this tool, users can efficiently maintain pricing structures across the
 
 | **Button**                                 | **Function**                                                                                                                                                                                                             |
 | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Create**                                 | Opens a new line to create a **price list generation rule** manually. The user can define agency, resort, date ranges, and transport before saving.                                                                      |
+| **Create**                                 | Opens a new line to create a **price list generation rule** manually. The user can define agency, resort, date ranges, or transport before saving.                                                                       |
 | **Scheduled Rules to Generate Price List** | Opens an overview of **scheduled rules** that automatically trigger the generation of price lists according to pre-set conditions. This is the primary mechanism that allows **automatic mass creation** of price lists. |
 
 ***
