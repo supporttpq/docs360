@@ -126,7 +126,7 @@ The Invoice Generating Service is the basic invoice service and allows the follo
 
 Autobilling for hotels is enabled in the hotel's main tab.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 All fields are mandatory in order for the autobilling feature to work.
 
@@ -163,7 +163,7 @@ A new function has been added here: **Special deposit rule**. It is used to prec
 
 It can be set from the room cost in the hotel tab.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Mandatory fields:
 
@@ -177,7 +177,7 @@ If there are problems with receiving the EBL by e-mail, use **Export/List** with
 
 Autobilling for extras can be enabled in the extra's main tab.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 All fields are mandatory in order for the feature to work.
 

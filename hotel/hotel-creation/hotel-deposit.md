@@ -13,7 +13,7 @@ The _Deposit_ section is used to manage and track deposit rules and payments bet
 
 #### Fields and Explanations
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Filter Options (Top Section)**
 
