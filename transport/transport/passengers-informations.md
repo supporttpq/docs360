@@ -2,7 +2,7 @@
 
 ### **Overview**
 
-The _Passenger Information_ section is used to define informational notes or errata that apply to bookings for specific stay periods. These messages typically provide additional details for customers or internal staff (e.g., special conditions, restrictions, or exceptions).
+The **Passenger Information** section is used to define informational notes or errata that apply to bookings for specific stay periods. These messages typically provide additional details for customers or internal staff (**e.g., special conditions, restrictions, or exceptions**).
 
 ### **Purpose**
 
