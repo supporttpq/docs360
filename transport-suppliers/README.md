@@ -8,6 +8,9 @@ The Transport Supplier is used by the Transport and Real Transport to identify t
 
 * A common way to describe the communication, so all Transports that uses this supplier use the Transport Supplier communication
 * The Transport Supplier can be used in Resources in Extra to select the relevant extras (e.g. different baggage options for two different transport suppliers)
+*   If a Real Transport has a supplier selected in the General tab, and another supplier is set in the Departures tab, the latter will overwrite the one chosen in General.&#x20;
+
+    <figure><img src="../.gitbook/assets/image (421).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
