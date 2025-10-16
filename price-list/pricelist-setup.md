@@ -16,7 +16,7 @@ Price lists are created in the **Price List** tab by selecting **Create/Copy Pri
 4. **Select Hotel** – Choose the hotel that will use the price list.
 5. **Select Rooms** – Specify the rooms to include in the price list.
 
-<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Not created prices <a href="#not-created-prices" id="not-created-prices"></a>
 

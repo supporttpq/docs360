@@ -126,7 +126,7 @@ The Invoice Generating Service is the basic invoice service and allows the follo
 
 Autobilling for hotels is enabled in the hotel's main tab.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 All fields are mandatory in order for the autobilling feature to work.
 
@@ -177,7 +177,7 @@ If there are problems with receiving the EBL by e-mail, use **Export/List** with
 
 Autobilling for extras can be enabled in the extra's main tab.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 All fields are mandatory in order for the feature to work.
 
@@ -196,7 +196,7 @@ Works just like the **Hotel Early Booking**
 
 Autobilling for discounts/supplements can be enabled from their main tab.
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 All fields are mandatory in order for the feature to work.
 
