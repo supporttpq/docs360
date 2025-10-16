@@ -25,7 +25,7 @@ The **All Transports** page provides a comprehensive overview of scheduled trans
 * **Clear -** Reset all active filters.
 *   **Use Real Transports -** Shows only the real transports&#x20;
 
-    <figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 * **Save View -** Save the current filter setup as a reusable custom view.
 
 ### Table Columns
@@ -48,4 +48,4 @@ The **All Transports** page provides a comprehensive overview of scheduled trans
     <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 *   Use **checkboxes** on the left to select multiple transports for export.&#x20;
 
-    <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>

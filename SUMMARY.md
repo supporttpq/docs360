@@ -251,6 +251,7 @@
   * [Dynamic transport baggage](real-transports/dynamic-transport-baggage.md)
   * [Dynamic transport supplement](real-transports/dynamic-transport-supplement.md)
   * [Setup for Transport Dynamic Packaging (GDS)](real-transports/setup-for-transport-dynamic-packaging-gds.md)
+  * [Departures](real-transports/departures.md)
   * [Passenger Information](real-transports/passenger-information.md)
 * [Real Transport Dashboard](real-transport-dashboard.md)
 * [Transport Regulation Rules](transport-regulation-rules.md)

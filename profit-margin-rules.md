@@ -4,7 +4,28 @@ Under **Price List → Profit Margin Rules**, users can define rules to set prof
 
 ### Overview
 
-The Profit Margin Rules system is a comprehensive tool for managing pricing strategies and commission structures across different travel products, destinations, and customer segments. This interface allows you to create, modify, and monitor profit margin rules that automatically apply to bookings based on specific criteria such as destination, passenger type, travel dates, and accommodation preferences.
+The **Profit Margin Rule** feature defines how profit margins are calculated for different combinations of transport types, destinations, and stay lengths.\
+The feature introduces more flexibility, allowing agencies to configure profit margins at multiple levels — global, resort, and transport — with dynamic combinations of departure gateways and stay lengths.
+
+This enables the **automatic creation of a large number of price lists**, drastically **reducing manual work** and improving efficiency in price list generation and maintenance.
+
+### **Purpose**
+
+The purpose of this feature is to make the Profit Margin Rule system more adaptable to each agency’s by allowing multiple overlapping rule sets that can be stacked and combined.\
+This ensures that agencies can:
+
+* Define **global profit margins** for GDS or charter flights.
+* Apply **different margins** for specific **resorts** or **hotels**.
+* Create **transport-based rules** that vary by route and stay length.
+
+The result is a **flexible, automated, and scalable** system for defining profit margins that directly feeds into the **Price List Generator**.
+
+Using the profit margin rule, all agencies can:
+
+* Configure complex profit structures without duplicate entries.
+* Adjust margins easily for specific destinations, hotels, or routes.
+* Automatically generate accurate, up-to-date **price lists**.
+* Reduce manual maintenance through **flexible**, **reusable**, and **automated** rules.
 
 <figure><img src=".gitbook/assets/image (5) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
