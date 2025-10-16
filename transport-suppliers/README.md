@@ -20,19 +20,19 @@ The following example shows how a transport supplier is used for extra resources
 
 *   create a booking using a real transport (JPN-DYN)
 
-    <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (422).png" alt=""><figcaption></figcaption></figure>
 *   the transport use a real transport set in legs (BLLJPN) who have in General tab set one transport supplier (test3), and in Departures tab, for the specific departure (25.11.2025) have other transport supplier set (TransportSupplMel1).
 
-    <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1) (3).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (2) (3).png" alt=""><figcaption></figcaption></figure>
 *   use one extra who has as resources, transport supplier TranspportSupplMel1&#x20;
 
-    <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (3) (3).png" alt=""><figcaption></figcaption></figure>
 
 With all these details, the extra is available to be added in the booking. If it has as resource the supplier test3, the extra wasn't available to be added.
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (4).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

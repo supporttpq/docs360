@@ -1,8 +1,8 @@
-# Exclusive start date for hotels
+# Reserve rooms for stay lengths
 
 ### **Overview / Purpose**
 
-The **Exclusive Start Date** feature allows agencies to reserve hotel rooms for guests on specific arrival days, **independent of transport**.\
+The **Reserve rooms for stay length**s feature allows agencies to reserve hotel rooms for guests on specific arrival days, **independent of transport**.\
 This is useful in cases where:
 
 * A destination has multiple transports arriving on the same day.
@@ -14,18 +14,18 @@ This is useful in cases where:
 ### **How to Access**
 
 1. Navigate to: **Hotel → Allotment per day → Search with Allotment Control**.
-2. Locate the **Exclusive Start Date** option.
+2. Locate the R**eserve rooms for stay lengths** option.
 
 This feature allows an agency to reserve some rooms for guests on specific days, independent of the transport.\
 A destination may have several transports during a week, and they need to reserve some rooms for the arrivals on Friday. The reservation must be independent of the transport, as they may have more than one arrival on the same day, and they do not care if the guests arrive via one or the other transport.
 
 The reservation of rooms is also needed based on the duration of the stay. They need this to reserve a few rooms for longer stays, or maybe the other way around.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 | Headline      | Tooltip                                                                                                                                                                  |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| ROOM          | The hotel room                                                                                                                                                           |
+| ROOM          | The hotel room code                                                                                                                                                      |
 | DATE          | The date                                                                                                                                                                 |
 | DAY           | The day of the week                                                                                                                                                      |
 | NO.           | The number of rooms                                                                                                                                                      |
@@ -33,18 +33,30 @@ The reservation of rooms is also needed based on the duration of the stay. They 
 | GUARANTEED    | The number of guaranteed rooms                                                                                                                                           |
 | BOOK          | The number of rooms that are booked                                                                                                                                      |
 | FREE          | The number of available rooms                                                                                                                                            |
-| BOOK A1       | Booked rooms in the room above; see Shared Allotment                                                                                                                     |
-| FREE A1       | Free rooms in the room above; see Shared Allotment                                                                                                                       |
-| BOOK A2       | Booked rooms in the room above 2; see Shared Allotment                                                                                                                   |
-| FREE A2       | Free rooms in the room above 2; see Shared Allotment                                                                                                                     |
-| RELEASED      | True (green) if the room is released                                                                                                                                     |
-| FOR RELEASE   | The number of rooms available for release                                                                                                                                |
+| R             | True (green) if the room is released                                                                                                                                     |
+| FOR R         | The number of rooms available for release                                                                                                                                |
 | MAX           | The maximum number of rooms                                                                                                                                              |
 | EXTRA         | Extra rooms number                                                                                                                                                       |
 | PAX 1 - PAX 4 | The maximum number of rooms with a max of 1-4 pax                                                                                                                        |
+| MIN           | The minimum stay                                                                                                                                                         |
 | STAY LENGTH   | Specifies how many rooms are allocated for a charter transport based on the selected number of stay days                                                                 |
 | RESV          | <p>The reserved allotment. Use 0 to block allotment or a number to limit the number of allotments for the transport.<br>An empty cell does not add any restrictions.</p> |
 | BOOK          | The number of booked seats on the transport                                                                                                                              |
+
+{% hint style="warning" %}
+**STAY LENGTH (3, 7)**– When you hover over these cells, a tooltip appears showing the number of reserved rooms, booked rooms, available rooms and free rooms for each corresponding stay length.
+{% endhint %}
+
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+The tooltip for each cell displays detailed reservation data to make it easier to interpret the information behind the cell values.
+
+| **Value**     | **Explanation**                                                                                                                                                            |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Reserved**  | The number of rooms reserved for the current stay length. This is the same number shown in the cell, displayed in the tooltip for easier visibility.                       |
+| **Booked**    | The number of rooms booked with a stay length equal to the current stay length, or a multiple of it.                                                                       |
+| **Available** | The number of rooms still available from the total reserved rooms.                                                                                                         |
+| **Free**      | The number of rooms that are not reserved for any stay length and are free to book. “Free” indicates that it is possible to reserve additional rooms for this stay length. |
 
 For every possible duration (intervals for the eligible transports), it shall be possible to reserve a number of rooms for a specific arrival day. If there are three transports with arrival on Friday, and they represent durations of 5, 7, and 14 days, then we have the possibility to reserve rooms for this day for each duration.
 

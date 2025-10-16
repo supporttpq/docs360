@@ -30,8 +30,6 @@ The purpose of the Allotment per Day functionality is to:
 | **Guaranteed**          | Rooms that are financially guaranteed to the hotel, regardless of sales. Usually part of contracts.      |
 | **Book**                | Number of rooms already booked by customers for this date.                                               |
 | **Free**                | Remaining available rooms (calculated as allotment minus booked).                                        |
-| **Room Above  Book**    | Number of shered rooms booked                                                                            |
-| Room Above Free         | Nomber of shered rooms free                                                                              |
 | R                       | True (green) if the room is released                                                                     |
 | For R                   | Number of rooms available for release                                                                    |
 | Max                     | The maximum number of rooms                                                                              |
@@ -58,16 +56,44 @@ Note: If stop sales are enabled for a hotel on a certain date, a message ( yello
 
 ### Search with Allotment Control
 
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 #### **Functionality**
 
 When searching with **Allotment Control**:
 
 * The search is based on **departure date**.
 * Results display per transport, with columns for:
-  * **R (Rooms Allotted)** – The predefined room allotment set for the transport.
-  * **B (Rooms Booked)** – The number of rooms already booked for that transport.
+  * **RESV (Reserved allotment)** – The predefined room allotment set for the transport. Use 0 to block allotment or a number to limit the number of allotments for transport
+  * **BOOK (Booked Seats)** – The number of seats already booked for that transport.
 
 The columns together provide a quick overview of remaining availability.
+
+
+
+#### Stay Length
+
+The Stay length columns specify how many rooms are allocated for a charter transport based on the selected number of stay days.
+
+When a reservation is made for a specific **stay length**, the system also reserves rooms for stay lengths that are **multiples** of the original length.\
+This ensures that capacity management accounts for bookings that overlap across longer stay periods.
+
+{% hint style="warning" %}
+**STAY LENGTH (3, 7)**– When you hover over these cells, a tooltip appears showing the number of reserved rooms, booked rooms, available rooms and free rooms for each corresponding stay length.
+{% endhint %}
+
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+The tooltip for each cell displays detailed reservation data to make it easier to interpret the information behind the cell values.
+
+| **Value**     | **Explanation**                                                                                                                                                            |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Reserved**  | The number of rooms reserved for the current stay length. This is the same number shown in the cell, displayed in the tooltip for easier visibility.                       |
+| **Booked**    | The number of rooms booked with a stay length equal to the current stay length, or a multiple of it.                                                                       |
+| **Available** | The number of rooms still available from the total reserved rooms.                                                                                                         |
+| **Free**      | The number of rooms that are not reserved for any stay length and are free to book. “Free” indicates that it is possible to reserve additional rooms for this stay length. |
+
+
 
 #### **Room Control Status**
 
