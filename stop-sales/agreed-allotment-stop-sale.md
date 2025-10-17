@@ -70,7 +70,7 @@ Once your changes are saved, check that things have updated correctly:
   Under **Pricelist**, filter by the hotel, dates, and room type.\
   The **FHA (free-hotel-allotment)** is populated with available number of rooms according to the initial allotment set before the stop sale.
 
-<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Setup**
 

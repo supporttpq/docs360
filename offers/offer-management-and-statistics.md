@@ -56,7 +56,7 @@ Exporting offers ensures that users can:
 * Exported files typically include columns such as Offer No., Brand, Customer Type, Phone, Email, Create User, Create Date, Update Date, Status, and Status details
 * File format may vary depending on system configuration (Excel/CSV).
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 We also have the possibility to view statistics of all these offers per each sales agent. In here you will see only the sent offers and the success rate a sales agent has.
 

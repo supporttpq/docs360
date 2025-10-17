@@ -2,7 +2,7 @@
 
 Real Transports can be found in **Transports/Real Transports**. They are a special case and as such are somewhat difficult to create.
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 1. Just like any transport, the user has to write it's code and select the departure and arrival. Unlike any transport, it is imperative to select the **Reporting Type**. After the actions have been completed, the user can click the **Save** button and proceed to the next step.
 

@@ -30,7 +30,7 @@ By using this tool, users can efficiently maintain pricing structures across the
 
 ### **Filters and Fields**
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 | **Field / Control** | **Description**                                                                           |
 | ------------------- | ----------------------------------------------------------------------------------------- |
