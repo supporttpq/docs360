@@ -21,7 +21,7 @@ After inserting the booking number, all information regarding that booking will 
 * Rooms details
 * All tabs from the booking page
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Other information that can be completed by the service case user are:
 

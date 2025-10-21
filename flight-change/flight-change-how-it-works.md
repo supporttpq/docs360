@@ -8,7 +8,7 @@
 
 2. To save the changes made to the timetable, select the row(s) where changes were made, and 2 options now appear:
 
-<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Send Flight Change - The changes to the timetable are saved, and an email is sent to all bookings affected by the changes to the timetable.
 * Queue Flight Change - the changes in the timetable are saved and placed in the flight change queue with the change type set in the flight change type in the timetable

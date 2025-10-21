@@ -1,4 +1,4 @@
-# Business Inteligence
+# Business Intelligence
 
 #### Overview
 
@@ -8,6 +8,10 @@ The **Hotel Allotment Overview** is part of the **Business Intelligence** menu a
 * **Room numbers**
 * **Guaranteed rooms**
 
+{% hint style="warning" %}
+💡 **Tip:** To have results listed according to the filters set, make sure departure stat weeks are defined for the year(s) used. See here how: [Departure stat weeks](../setup/departure-stat-weeks.md)
+{% endhint %}
+
 It can be accessed here:
 
 ```
@@ -16,7 +20,7 @@ Hotel → Business Intelligence → Allotment Overview
 
 **Note:** Cells highlighted in **red** indicate a **stop sale** for that date.
 
-<figure><img src=".gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Filters
 
@@ -35,4 +39,4 @@ You can refine the data using the following filters:
    * Optionally, check **Show only parent room** to filter parent rooms only.
 3. **Guarantee Rooms -** By checking the **Guarantee Rooms** box, guaranteed room numbers are displayed **below the allotment line** for each room.
 
-<figure><img src=".gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

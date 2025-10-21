@@ -1,12 +1,35 @@
 # Transport Layouts
 
-Available for Administrator.
+#### **Overview**
 
-Can be found in **Transport/Layouts**.
+The **Layouts** page allows defining and managing airplane seating layouts.\
+Each layout represents a physical seat configuration for a specific airplane type or flight setup and contains one or more **Sections** representing different cabin areas (e.g., front, rear, business class).
 
 To properly use this, the Layout feature has to be enabled. To have this enabled, please contact Tourpaq Support.
 
-After the layout feature has been enabled, a series of standard transport layout elements will be uploaded in **Setup/Layout Elements**. These will be airplane parts such as head, tail, wings and some seat types. Other elements can be uploaded by the users if they require them.
+After the layout feature has been enabled, a series of standard transport layout elements will be uploaded in **Setup/Layout Elements**. These will be airplane parts such as head, tail, wings and some seat types. The users can upload other elements if they require them.
+
+#### **Fields and Elements**
+
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+| **Field / Element**           | **Description**                                                                                                                                                                         |
+| ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Name**                      | The name of the layout. It typically includes information such as capacity (number of passengers) and aircraft type or route. Example: _110 pax A7 BLLLPA_ or _LPA 89 sæder Malta Air_. |
+| **Type**                      | Defines the layout type. Currently, all layouts are of type **Airplane**, but this field allows support for other transport types (e.g., Bus, Train).                                   |
+| **Sections**                  | Displays the seat map sections created within the layout. Each section represents a specific cabin area with its own rows and seat configuration.                                       |
+| **Add Section**               | Button used to add a new section within the layout. A section defines the rows, seat numbering, and seat types available in that area.                                                  |
+| **Delete icon (🗑️)**         | Deletes the layout or section. A confirmation prompt appears before permanent removal.                                                                                                  |
+| **Create (top-right button)** | Opens a new blank layout for definition. Use this when setting up a new airplane configuration.                                                                                         |
+| **Show hidden**               | When enabled, displays layouts that are no longer active or have been marked as hidden. Useful for historical or seasonal configurations.                                               |
+
+***
+
+#### **Usage and Best Practices**
+
+* **Create a new layout** whenever a new aircraft type or seat configuration is introduced. &#x20;
+* **Seat types** used inside the layout sections are defined separately in **Seat List → Seat Types**.
+* Each layout can be linked to a specific **departure or airplane registration** in the **Transport setup**.
 
 ### Seating <a href="#seating" id="seating"></a>
 
@@ -22,7 +45,7 @@ In here the **Seat types** and the **Seat lists** are created.
 
 Seat list are generated from here according to the airplane specifications.
 
-<figure><img src=".gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Rows** – The number of rows in the seating arrangement.&#x20;
 * **Columns** – The number of columns in each row.&#x20;
@@ -186,7 +209,7 @@ This feature permits to limit the capacity of the customer to choose the seats i
 
 * **No empty seat should be left empty on the window.**
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **No seat should be left empty between two passengers on a row.**
 
