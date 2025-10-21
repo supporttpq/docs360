@@ -215,7 +215,7 @@
   * [Facilities - Hotel Contract Configuration](hotel-contracts/facilities-hotel-contract-configuration.md)
   * [Actions - Hotel Contract Configurations](hotel-contracts/actions-hotel-contract-configurations.md)
   * [Activity Log - Hotel Contract Configuration](hotel-contracts/activity-log-hotel-contract-configuration.md)
-* [Business Intelligence](business-inteligence/README.md)
+* [Business Intelligence – Allotment Overview](business-inteligence.md)
   * [Business Intelligence – Flights](business-inteligence/business-intelligence-flights.md)
   * [Business Intelligence – Accommodation](business-inteligence/business-intelligence-accommodation.md)
 * [Hotel and transfer confirmation e-mail to suppliers](hotel-and-transfer-confirmation-e-mail-to-suppliers.md)
