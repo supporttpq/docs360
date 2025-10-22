@@ -23,7 +23,7 @@ When the feature is activated, a new section becomes available on the **Transpor
 * **Hours before departure** – Defines how many hours before departure the automatic seating process will run.
 * **Email address(es)** – One or multiple email addresses can be specified (separated by commas). After automatic seating is completed, a report is sent to the listed recipients according to the chosen reporting type.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 #### Booking Page Indicators
 
@@ -32,7 +32,7 @@ On the booking page, passengers assigned through automatic seating are marked wi
 * The passenger’s name displayed in **shadowed text**.
 * **No seat supplement** – The seat supplement will not appear in the Customer Center or on the passenger’s ticket.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Manual Assignment – Keep Seat Price
 

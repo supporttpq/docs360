@@ -1,64 +1,58 @@
 # Passengers informations
 
-#### **Overview**
+### **Overview**
 
-The _Passenger Information_ section is used to define informational notes or errata that apply to bookings for specific stay periods. These messages typically provide additional details for customers or internal staff (e.g., special conditions, restrictions, or exceptions).
+The **Passenger Information** section is used to define informational notes or errata that apply to bookings for specific stay periods. These messages typically provide additional details for customers or internal staff (**e.g., special conditions, restrictions, or exceptions**).
 
-#### **Purpose**
+### **Purpose**
 
 * To communicate relevant information related to bookings and stays (e.g., transport notes, exceptions, overlapping rules).
 * To ensure passengers and staff are aware of important details connected to their travel.
 * To manage conditions within specific booking and stay periods.
 
-#### **Fields Explanation**
+### **Tabs**
+
+At the top, you can switch between different **brands.**\
+Each brand can have its own passenger information messages and settings.
+
+### **Fields Explanation**
 
 <figure><img src="../../.gitbook/assets/image (399).png" alt=""><figcaption></figcaption></figure>
 
-#### **1. Stay From -** The start date of the hotel or travel stay period for which this information applies.
+<table data-header-hidden><thead><tr><th width="310.25"></th><th></th></tr></thead><tbody><tr><td><strong>Field</strong></td><td><strong>Description</strong></td></tr><tr><td><strong>Stay From / Stay To</strong></td><td>Defines the date range for passenger stay. The message will apply only to passengers staying within this period.</td></tr><tr><td><strong>Booking Date From / To</strong></td><td>Defines the date range for when the booking was made. Only bookings created in this range will receive the message.              </td></tr><tr><td><strong>Information</strong></td><td>The message text that will be shown to passengers. Example: <em>“Please arrive at the airport 2 hours before departure.”</em></td></tr><tr><td><strong>Acknowledge</strong></td><td>Indicates whether the passenger must acknowledge or confirm they have read the information. When enabled (✔), the system requires confirmation from the passenger.</td></tr><tr><td><strong>Edit / Delete</strong></td><td>Use the pencil icon ✏️ to edit or the trash icon 🗑️ to delete an entry.</td></tr></tbody></table>
 
-* **Usage**: Notes will only apply if the passenger’s stay begins on or after this date.
-* **Example**: _29-10-2025_ → Information applies starting October 29, 2025.
+### **Buttons**
 
-#### **2. Stay To -** The end date of the hotel or travel stay period for which this information applies.
+| <p><br><strong>Button</strong></p> | **Action**                                                                                                                      |
+| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| **Create**                         | Opens a form to add a new passenger information entry. You can define the date ranges, message, and acknowledgment requirement. |
+| **Save / Update**                  | Saves changes to the selected brand and transport.                                                                              |
 
-* **Usage**: Ensures the message is only relevant until this date.
-* **Example**: _29-10-2025_ → Information is valid up to October 29, 2025.
+### **Example**
 
-#### **3. Booking Date From -** The earliest date when bookings must be made for the passenger's information to apply.
+For the transport **BLLCHQ-M1**, a passenger message was created with the following details:
 
-* **Usage**: Prevents the rule from applying to earlier bookings.
-* **Example**: _04-06-2025_ → Only bookings made on or after June 4, 2025, are affected.
+| **Field**         | **Value**               |
+| ----------------- | ----------------------- |
+| Stay From         | 20-10-2025              |
+| Stay To           | 31-10-2025              |
+| Booking Date From | 01-10-2025              |
+| Booking Date To   | 19-10-2025              |
+| Information       | Transport Erata Default |
+| Acknowledge       | Enabled ✔               |
 
-#### **4. Booking Date To -** The latest date when bookings can be made for the information to apply.
+This means all passengers traveling on this route between **20 October 2025 - 31 October 2025**, whose bookings were created in the same period, will receive the message _“Transport Erata Default.”_
 
-* **Usage**: Ensures the rule is limited to a certain booking period.
-* **Example**: _04-06-2025_ → Only bookings made up to June 4, 2025, are affected.
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### **5. Information -** The actual message or note that will be displayed/associated with the booking.
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* **Usage**: Describes transport notes, errata, or booking conditions.
-* **Example values**:
-  * _Transport test_ → internal test note.
-  * _Transport errata def overlapping_ → indicates overlapping transport information.
+The text from Passenger information will also be visible on the ticket:
 
-#### **6. Acknowledge -** Indicates whether this information must be confirmed (acknowledged) by the user or system.
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* **Values**:
-  * ✅ (Enabled) → Acknowledgement required; ensures the message is seen.
-  * ❌ (Disabled) → Acknowledgement not required.
-*   **Example**:&#x20;
+### **Notes**
 
-    <figure><img src="../../.gitbook/assets/image (400).png" alt=""><figcaption></figcaption></figure>
-
-#### **Instructions for Use**
-
-1. **Click “Create”** to define a new passenger information entry.
-2. **Fill in stay and booking dates** to specify the valid period.
-3. **Enter the information text** with clear and concise notes (e.g., transport conditions, exceptions).
-4. **Enable or disable acknowledgment** depending on whether users must confirm having seen the information.
-5. **Save** the configuration to apply it to the system.
-6. **Edit (pencil)** to update or **delete (bin)** to remove an entry when it is no longer relevant.
-
-{% hint style="info" %}
-It won’t be possible to define 2 records for periods of time that overlap.
-{% endhint %}
+* Different brands can have unique messages per transport and date range.
+* The system ensures passengers see only messages relevant to their booking.
+* You can define multiple records with overlapping or distinct date ranges for flexibility.

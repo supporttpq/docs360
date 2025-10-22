@@ -8,7 +8,7 @@ The **Transport Rules** module allows administrators to define and manage rules 
 
 The purpose of this functionality is to provide a flexible framework for handling route-specific transport regulations, enabling the system to apply pricing, restrictions, or special conditions automatically. By centralizing these rules, administrators ensure consistent application across bookings and departures.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 #### **Columns in the Transport Rules Table**
 

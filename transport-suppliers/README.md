@@ -8,12 +8,37 @@ The Transport Supplier is used by the Transport and Real Transport to identify t
 
 * A common way to describe the communication, so all Transports that uses this supplier use the Transport Supplier communication
 * The Transport Supplier can be used in Resources in Extra to select the relevant extras (e.g. different baggage options for two different transport suppliers)
+*   If a Real Transport has a supplier selected in the General tab, and another supplier is set in the Departures tab, the latter will overwrite the one chosen in General.&#x20;
+
+    <figure><img src="../.gitbook/assets/image (421).png" alt=""><figcaption></figcaption></figure>
+
+
+
+Example:
+
+The following example shows how a transport supplier is used for extra resources on real transport.
+
+*   create a booking using a real transport (JPN-DYN)
+
+    <figure><img src="../.gitbook/assets/image (422).png" alt=""><figcaption></figcaption></figure>
+*   the transport use a real transport set in legs (BLLJPN) who have in General tab set one transport supplier (test3), and in Departures tab, for the specific departure (25.11.2025) have other transport supplier set (TransportSupplMel1).
+
+    <figure><img src="../.gitbook/assets/image (1) (3).png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../.gitbook/assets/image (2) (3).png" alt=""><figcaption></figcaption></figure>
+*   use one extra who has as resources, transport supplier TranspportSupplMel1&#x20;
+
+    <figure><img src="../.gitbook/assets/image (3) (3).png" alt=""><figcaption></figcaption></figure>
+
+With all these details, the extra is available to be added in the booking. If it has as resource the supplier test3, the extra wasn't available to be added.
+
+<figure><img src="../.gitbook/assets/image (4) (4).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### 🔍 Filters and Controls
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 1. **Search by Name**
 
@@ -31,7 +56,7 @@ The Transport Supplier is used by the Transport and Real Transport to identify t
 
 <figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * unchecked, filtering is applied.
 

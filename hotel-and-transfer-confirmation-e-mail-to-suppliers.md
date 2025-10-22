@@ -12,20 +12,20 @@ The **Supplier Confirmation Emails** feature enables sending confirmation reques
 
 ### How It Works
 
-* The feature uses the [**Dynamic E-mail/SMS Center**](email-setup/page-14/) with a dedicated email template for supplier confirmations.
+* The feature uses the [**Dynamic E-mail/SMS Center**](email-setup/dynamic-e-mail-sms-center/) with a dedicated email template for supplier confirmations.
 * When a booking requires supplier confirmation, a **Send Confirmation** button appears on the booking.
 * Clicking the button sends the confirmation email to the supplier.
 
 ### Notes
 
-* A special email template must be configured in the [Dynamic E-mail/SMS Center](email-setup/page-14/) to use this feature.
+* A special email template must be configured in the [Dynamic E-mail/SMS Center](email-setup/dynamic-e-mail-sms-center/) to use this feature.
 * Only bookings marked as requiring confirmation will display the **Send Confirmation** button.
 
 <figure><img src=".gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 ### Setting up Confirmation E-mails <a href="#setting-up-confirmation-e-mails" id="setting-up-confirmation-e-mails"></a>
 
-Confirmation e-mails can be set up from [Dynamic E-mail/SMS Center](email-setup/page-14/) by using one of the two available confirmation e-mail types:
+Confirmation e-mails can be set up from [Dynamic E-mail/SMS Center](email-setup/dynamic-e-mail-sms-center/) by using one of the two available confirmation e-mail types:
 
 * Confirmation Transfer
 * Confirmation Hotel

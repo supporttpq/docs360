@@ -1,14 +1,16 @@
 # Seating Price Rules
 
-<figure><img src=".gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+### **Page Overview:**
 
 This page describes the functionality and usage of the Transport Seating Rules page. This page allows users to define and manage seating rules for different transportation types.
 
-### **Page Overview:**
-
-The page is designed with filter and action buttons at the top, followed by a data table displaying the seating rules.
+{% hint style="danger" %}
+Note: When there are more eleigible rules, the ssystem will choose the lowest rule from the table.
+{% endhint %}
 
 #### &#x20;**Data Table:**
+
+<figure><img src=".gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The data table displays the seating rules with the following columns:
 
@@ -22,7 +24,7 @@ The data table displays the seating rules with the following columns:
 * **DEPARTURE START:** The start date for the departure period.
 * **DEPARTURE END:** The end date for the departure period.
 * **AGENCY:** The agency associated with the rule.
-* **PRICE:** The price associated with the seating rule.
+* **PRICE:** The price related to the seating rule.
 * **ENABLED:** Indicates whether the rule is enabled or disabled.
 * **ORDER:** Allows users to change the order of the rules (using up and down arrow buttons).
 
@@ -33,5 +35,3 @@ The data table displays the seating rules with the following columns:
 * **Show Button:** Clicking this button applies any filters and displays the corresponding seating rules in the data table.
 * **Create Button:** Clicking this button allows users to create new seating rules.
 * **Up and Down Arrows in Order Column:** Users can change the order of the seating rules using these buttons.
-
-This documentation provides a general overview of the Transport Seating Rules page.&#x20;

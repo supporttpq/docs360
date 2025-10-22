@@ -1,12 +1,12 @@
 # Notification
 
-### 🧭 Overview
+### Overview
 
 The **Reservation Notifications** page is a system-level tool used to **monitor, review, and manage issues and alerts related to bookings**. It centralizes all system-generated warnings, errors, and informational messages to help users maintain data integrity and ensure smooth booking operations.
 
 <figure><img src="../.gitbook/assets/image (243).png" alt=""><figcaption></figcaption></figure>
 
-### 🎯 Purpose
+### Purpose
 
 This module is intended to:
 
@@ -19,7 +19,7 @@ By consolidating alerts by type and severity, this module supports **operational
 
 ***
 
-### ✅ Preconditions
+### Preconditions
 
 * Available only to users with permission to access booking administration and notifications.
 * Booking data must be up-to-date and error checking services should be running in the background.
@@ -27,7 +27,7 @@ By consolidating alerts by type and severity, this module supports **operational
 
 ***
 
-### 🧭 Page Structure
+### Page Structure
 
 #### 🔹 Left Panel: Notifications Menu (Categories)
 
@@ -48,7 +48,7 @@ The **left-side menu** organizes notifications by type. Each category shows a **
 
 ***
 
-#### 📋 Central Panel: Notification Table
+#### Central Panel: Notification Table
 
 This is the **main working area**, displaying **detailed alerts**. Columns include:
 
@@ -66,7 +66,7 @@ Each row represents a **single notification event**, tied to a specific booking.
 
 ***
 
-#### 🔄 Navigation & Pagination
+#### Navigation & Pagination
 
 * **Pagination Controls**: Located at the bottom of the table.
 * **Records Per Page Selector**: Choose how many notifications to display at once (e.g., 10, 25, 50).
@@ -74,7 +74,7 @@ Each row represents a **single notification event**, tied to a specific booking.
 
 ***
 
-### 🚩 Special Notes & Behaviors
+### Special Notes & Behaviors
 
 * Notifications **do not auto-resolve**—they must be handled and cleared through booking updates or internal processing.
 * System may **auto-refresh counters** periodically depending on configuration (e.g., every 30 minutes).

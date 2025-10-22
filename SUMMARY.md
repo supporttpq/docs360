@@ -6,7 +6,7 @@
 
 ## Dashboard
 
-* [Dashboard](<README (1).md>)
+* [Dashboard](dashboard/dashboard.md)
 
 ## Notifications
 
@@ -76,7 +76,7 @@
 
 ## Customer
 
-* [Customers](customer/page-3.md)
+* [Customers](customer/customers.md)
 
 ***
 
@@ -93,7 +93,7 @@
 
 ## Tickets
 
-* [Print Tickets](tickets/page-4.md)
+* [Print Tickets](tickets/print-tickets.md)
 
 ***
 
@@ -102,7 +102,7 @@
 
 ## Finance
 
-* [Payment Registration](finance/page-5.md)
+* [Payment Registration](finance/payment-registration.md)
 * [Payment File Import](finance/payment-file-import.md)
 * [Refund File Import](finance/refund-file-import.md)
 * [Method of Payment](finance/method-of-payment.md)
@@ -127,7 +127,7 @@
 
 ## Price List
 
-* [Pricelist](price-list/page-6.md)
+* [Pricelist](price-list/pricelist.md)
 * [Pricelist Setup](price-list/pricelist-setup.md)
 * [Migrate Pricelist](price-list/migrate-pricelist.md)
 
@@ -157,7 +157,7 @@
   * [Hotel allotments](hotel/hotel-creation/hotel-allotments.md)
   * [Hotel allotment overview](hotel/hotel-creation/hotel-allotment-overview.md)
   * [Allotments per day](hotel/hotel-creation/allotments-per-day/README.md)
-    * [Exclusive start date for hotels](hotel/hotel-creation/allotments-per-day/exclusive-start-date-for-hotels.md)
+    * [Reserve rooms for stay lengths](hotel/hotel-creation/allotments-per-day/reserve-rooms-for-stay-lengths.md)
   * [Releases](hotel/hotel-creation/releases/README.md)
     * [Hotel release - automation](hotel/hotel-creation/releases/hotel-release-automation.md)
     * [Hotel release - Reporting](hotel/hotel-creation/releases/hotel-release-reporting.md)
@@ -172,6 +172,7 @@
   * [Hotel Deposit](hotel/hotel-creation/hotel-deposit.md)
   * [Hotel Activity Log](hotel/hotel-creation/hotel-activity-log.md)
   * [Room cost](hotel/hotel-creation/room-cost/README.md)
+    * [Early Booking Cost Discount Rule – Deletion Behavior](hotel/hotel-creation/room-cost/early-booking-cost-discount-rule-deletion-behavior.md)
     * [Add room cost rule with "Per Room Per Stay" type](hotel/hotel-creation/room-cost/add-room-cost-rule-with-per-room-per-stay-type.md)
     * [Add room cost rule with "Per Room Per Stay" with a specific stay days value](hotel/hotel-creation/room-cost/add-room-cost-rule-with-per-room-per-stay-with-a-specific-stay-days-value.md)
   * [Room costs](hotel/hotel-creation/room-costs.md)
@@ -214,7 +215,9 @@
   * [Facilities - Hotel Contract Configuration](hotel-contracts/facilities-hotel-contract-configuration.md)
   * [Actions - Hotel Contract Configurations](hotel-contracts/actions-hotel-contract-configurations.md)
   * [Activity Log - Hotel Contract Configuration](hotel-contracts/activity-log-hotel-contract-configuration.md)
-* [Business Inteligence](business-inteligence.md)
+* [Business Intelligence – Allotment Overview](business-inteligence.md)
+  * [Business Intelligence – Flights](business-inteligence/business-intelligence-flights.md)
+  * [Business Intelligence – Accommodation](business-inteligence/business-intelligence-accommodation.md)
 * [Hotel and transfer confirmation e-mail to suppliers](hotel-and-transfer-confirmation-e-mail-to-suppliers.md)
 * [Seats vs Beds](seats-vs-beds.md)
 
@@ -250,6 +253,8 @@
   * [Dynamic transport baggage](real-transports/dynamic-transport-baggage.md)
   * [Dynamic transport supplement](real-transports/dynamic-transport-supplement.md)
   * [Setup for Transport Dynamic Packaging (GDS)](real-transports/setup-for-transport-dynamic-packaging-gds.md)
+  * [Departures](real-transports/departures.md)
+  * [Passenger Information](real-transports/passenger-information.md)
 * [Real Transport Dashboard](real-transport-dashboard.md)
 * [Transport Regulation Rules](transport-regulation-rules.md)
 * [Transport Layouts](transport-layouts.md)
@@ -257,6 +262,8 @@
   * [Transfer listing](flight-transfer/transfer-listing.md)
   * [Flight Transfer List](flight-transfer/flight-transfer-list.md)
   * [Flight Transfer Export](flight-transfer/flight-transfer-export.md)
+* [Seating](seating/README.md)
+  * [Seat Types](seating/seat-types.md)
 * [Seating Price Rules](seating-price-rules.md)
 * [Create citizen plane rules](create-citizen-plane-rules.md)
 * [Create citizen plane seats overview](create-citizen-plane-seats-overview.md)
@@ -271,13 +278,13 @@
 
 ## Quality
 
-* [Quality Management](quality/page-9/README.md)
-  * [Questionnaires - General](quality/page-9/questionnaires-schemas.md)
-  * [Questionnaires - Setup questions](quality/page-9/questionnaires-setup-questions.md)
-  * [Questionnaire - Resource](quality/page-9/questionnaire-resource.md)
-  * [Questionnaire - Display](quality/page-9/questionnaire-display.md)
-  * [Questionnaire Groups](quality/page-9/questionnaire-groups.md)
-  * [Questionnaire Results](quality/page-9/questionnaire-results.md)
+* [Quality Management](quality/quality-management/README.md)
+  * [Questionnaires - General](quality/quality-management/questionnaires-schemas.md)
+  * [Questionnaires - Setup questions](quality/quality-management/questionnaires-setup-questions.md)
+  * [Questionnaire - Resource](quality/quality-management/questionnaire-resource.md)
+  * [Questionnaire - Display](quality/quality-management/questionnaire-display.md)
+  * [Questionnaire Groups](quality/quality-management/questionnaire-groups.md)
+  * [Questionnaire Results](quality/quality-management/questionnaire-results.md)
 
 ***
 
@@ -291,7 +298,7 @@
 
 ## Export
 
-* [Export](export-1/page-10.md)
+* [Export](export-1/export.md)
 * [Lists](export-1/lists.md)
 * [Extras List](export-1/extras-list.md)
 
@@ -303,10 +310,10 @@
 
 ## Users
 
-* [Users](users/page-11/README.md)
-  * [Users Management](users/page-11/users-management.md)
-  * [User limited view](users/page-11/user-limited-view.md)
-  * [Password expiration](users/page-11/password-expiration.md)
+* [Users](users/users/README.md)
+  * [Users Management](users/users/users-management.md)
+  * [User limited view](users/users/user-limited-view.md)
+  * [Password expiration](users/users/password-expiration.md)
 
 ***
 
@@ -345,22 +352,22 @@
 * [Maps](maps.md)
 * [Weekly Activities](weekly-activities.md)
 * [Good to Know](good-to-know.md)
-* [Settings](page-12.md)
+* [Settings](guest-app/settings.md)
 
 ## Extras Setup
 
-* [Extras](extras-setup/page-13/README.md)
-  * [Prices](extras-setup/page-13/prices.md)
-  * [Resources](extras-setup/page-13/resources.md)
-  * [Allotments](extras-setup/page-13/allotments.md)
-  * [Sold out behaviour](extras-setup/page-13/sold-out-behaviour.md)
-  * [Extra package](extras-setup/page-13/extra-package.md)
-  * [Attributes](extras-setup/page-13/attributes.md)
-  * [Communication](extras-setup/page-13/communication.md)
-  * [Early booking/Stay and pay and Special Early Booking/Stay and pay](extras-setup/page-13/early-booking-stay-and-pay-and-special-early-booking-stay-and-pay.md)
-  * [Teetime](extras-setup/page-13/teetime.md)
-  * [Multiple product selection in product category](extras-setup/page-13/multiple-product-selection-in-product-category.md)
-  * [Create an extra with stay days functionality and select it in bookings](extras-setup/page-13/create-an-extra-with-stay-days-functionality-and-select-it-in-bookings.md)
+* [Extras](extras-setup/extras/README.md)
+  * [Prices](extras-setup/extras/prices.md)
+  * [Resources](extras-setup/extras/resources.md)
+  * [Allotments](extras-setup/extras/allotments.md)
+  * [Sold out behaviour](extras-setup/extras/sold-out-behaviour.md)
+  * [Extra package](extras-setup/extras/extra-package.md)
+  * [Attributes](extras-setup/extras/attributes.md)
+  * [Communication](extras-setup/extras/communication.md)
+  * [Early booking/Stay and pay and Special Early Booking/Stay and pay](extras-setup/extras/early-booking-stay-and-pay-and-special-early-booking-stay-and-pay.md)
+  * [Teetime](extras-setup/extras/teetime.md)
+  * [Multiple product selection in product category](extras-setup/extras/multiple-product-selection-in-product-category.md)
+  * [Create an extra with stay days functionality and select it in bookings](extras-setup/extras/create-an-extra-with-stay-days-functionality-and-select-it-in-bookings.md)
 
 ***
 
@@ -398,10 +405,10 @@
   * [Ticket Attachments](email-setup/tickets-attachments/ticket-attachments.md)
   * [Ticket texts](email-setup/tickets-attachments/ticket-texts.md)
 * [E-mail center](email-setup/e-mail-center.md)
-* [Dynamic E-mail/SMS Center](email-setup/page-14/README.md)
-  * [Setup for Dynamic E-mail/SMS Center](email-setup/page-14/setup-for-dynamic-e-mail-sms-center.md)
-  * [Dynamic Email - Upload Image](email-setup/page-14/dynamic-email-upload-image.md)
-  * [Dynamic Email - Link Dialog](email-setup/page-14/dynamic-email-link-dialog.md)
+* [Dynamic E-mail/SMS Center](email-setup/dynamic-e-mail-sms-center/README.md)
+  * [Setup for Dynamic E-mail/SMS Center](email-setup/dynamic-e-mail-sms-center/setup-for-dynamic-e-mail-sms-center.md)
+  * [Dynamic Email - Upload Image](email-setup/dynamic-e-mail-sms-center/dynamic-email-upload-image.md)
+  * [Dynamic Email - Link Dialog](email-setup/dynamic-e-mail-sms-center/dynamic-email-link-dialog.md)
 
 ***
 

@@ -64,13 +64,13 @@ Once your changes are saved, check that things have updated correctly:
   In the hotel’s edit page, filter by the same room and dates.\
   Main allotment is restored to the initial allotment before the stop sale.
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Pricelist**\
   Under **Pricelist**, filter by the hotel, dates, and room type.\
   The **FHA (free-hotel-allotment)** is populated with available number of rooms according to the initial allotment set before the stop sale.
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Setup**
 
