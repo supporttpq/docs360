@@ -4,7 +4,9 @@
 
 The **Destination SMS Mappings** module allows administrators to configure SMS and email templates used by the destination application. Properly defined templates ensure that automated communications, such as notifications for extra orders or bookings, are correctly sent to customers.
 
-> **Note:** Certain emails related to **Excursions, Arrivals, Hotels, and Resorts** may have their content overwritten by the destination application if custom text is not selected.
+{% hint style="warning" %}
+**Note:** The emails and SMS messages configured in this menu are sent automatically by default. For emails associated with **Excursions, Arrivals, Hotels, and Resorts**, the destination application may override the default content unless you choose to use custom text.
+{% endhint %}
 
 ### Purpose
 
