@@ -17,7 +17,7 @@ The hotel combination feature allows agencies to offer multi-hotel packages, pro
     * Add a new hotel in the same way as a regular hotel.
     * Make sure to **check the "Hotel Combination"** checkbox.
 
-    <figure><img src=".gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 2.  **Add Hotel List and Transport**
 
     * Navigate to the **Hotel Combination tab**.

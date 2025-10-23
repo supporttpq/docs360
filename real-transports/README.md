@@ -10,11 +10,11 @@ Real Transports can be found in **Transports/Real Transports**. They are a speci
 
 2. The next step is to configure the transport's timetable. This process has the same steps as a normal transport, as in filling star and end dates, departure and arrival times, but now is mandatory to fill the **Flight No.** case. To complete the action the user has to press **Insert**.
 
-<figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 3. The last step in creating a real transport is setting up it's allotments from **All.Manager**. The user will have to fill in the start and end dates, the number of days between flights, the number of seats and guaranteed seat, as well as the seat price. To complete this stage, the user has to press **Create** and after that **Generate**.
 
-<figure><img src="../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 

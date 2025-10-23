@@ -59,18 +59,18 @@ Once your changes are saved, check that things have updated correctly:
     * _Initial R.No_ =is the final R no after the stop sale was enabled
     * _Final R.No_ = is the initial allotment set before stop sale
 
-    <figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 * **Hotel → Allotment per Day tab**\
   In the hotel’s edit page, filter by the same room and dates.\
   Main allotment is restored to the initial allotment before the stop sale.
 
-<figure><img src="../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Pricelist**\
   Under **Pricelist**, filter by the hotel, dates, and room type.\
   The **FHA (free-hotel-allotment)** is populated with available number of rooms according to the initial allotment set before the stop sale.
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Setup**
 
