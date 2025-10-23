@@ -2,11 +2,25 @@
 
 ### Overview
 
-“A La Carte” Booking is a custom booking type in Tourpaq that allows users to create a booking without the need to initially select a transport, hotel, or passengers. It is intended for highly flexible, client-specific travel arrangements, offering full control over insurance, discounts, and other booking extras.
+A **GDS booking** refers to a reservation created or synchronized through a **Global Distribution System (GDS)**, such as _Amadeus_ or _Travelport_. These systems provide real-time access to flight schedules, seat availability, and prices from commercial airlines.
+
+When a booking in Tourpaq is connected to a GDS, the system automatically imports and maintains information such as the **PNR (Passenger Name Record)**, **ticket numbers**, and **flight details**. Any updates made in the GDS—such as changes in schedule, fare, or status—are automatically synchronized with the corresponding booking in Tourpaq.
+
+GDS bookings differ from **Charter** or **Own Transport** bookings, as they are governed by the airline’s rules and are managed externally through the GDS, rather than directly controlled by the tour operator. This type of booking is typically used for scheduled flights or complex itineraries where integration with airline systems is required.
 
 ### Purpose
 
-The purpose of this feature is to allow agents to build highly customized bookings, starting only with a customer profile. This enables booking agents to respond to very specific customer needs and preferences without relying on predefined pack
+The purpose of a **GDS booking** is to integrate Tourpaq with external airline systems through a **Global Distribution System (GDS)**, allowing the operator to manage **scheduled flight reservations** alongside charter and own transports within the same platform.
+
+This connection provides several key benefits:
+
+* **Real-time data exchange:** Flight times, seat availability, and fares are automatically retrieved and kept up to date through the GDS.
+* **Accurate pricing and ticketing:** Ensures that ticket prices, taxes, and fees match the airline’s data, reducing the risk of manual errors.
+* **Automatic synchronization:** Any change made by the airline (e.g., schedule changes, cancellations, rebookings) is reflected in Tourpaq.
+* **Centralized management:** Allows the operator to handle charter, own, and scheduled flight bookings in one system, simplifying reporting and customer handling.
+* **Compliance and traceability:** The GDS link ensures that booking data, ticket numbers, and fare rules are stored according to airline and IATA requirements.
+
+In summary, the **GDS booking** acts as the bridge between Tourpaq and the airline’s reservation systems, enabling a seamless and reliable workflow for scheduled flights.
 
 ### **New Booking**
 

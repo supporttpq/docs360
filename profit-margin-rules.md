@@ -121,7 +121,7 @@ For **Transport Rules**, users must:
 
 The system will then update all price lists created with the selected transports. For example, a rule setting **PM1–PM4** for the interval **17.10.25 - 31.10.25** will apply to all price lists using transports **and** B-AG, covering all hotels at the corresponding destination for agency **TorpaqDK.**
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Resort Rules** can be created in three ways:
 

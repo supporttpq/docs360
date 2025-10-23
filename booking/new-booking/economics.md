@@ -34,7 +34,7 @@ Before using this section:
 
 ***
 
-### 💳 **Payment Breakdown**
+### **Payment Breakdown**
 
 The payment process is divided into three stages:
 
@@ -58,14 +58,14 @@ The payment process is divided into three stages:
 
 ***
 
-### 💸 **Release Payment**
+### **Release Payment**
 
 * A checkbox or action to **allow money to be returned to the customer** (typically used in cancellation scenarios or manual refund cases).
 * Once enabled, it marks the booking as **eligible for refund** through the system.
 
 ***
 
-### 🌐 **Other Financial and Metadata Fields**
+### **Other Financial and Metadata Fields**
 
 | Field                 | Description                                                                           |
 | --------------------- | ------------------------------------------------------------------------------------- |
@@ -74,7 +74,7 @@ The payment process is divided into three stages:
 
 ***
 
-### 🕓 **Last Booking Update Info**
+### **Last Booking Update Info**
 
 This block provides traceability by showing:
 
@@ -84,7 +84,7 @@ This block provides traceability by showing:
 
 ***
 
-### 🏢 **Customer & Accounting Information**
+### **Customer & Accounting Information**
 
 | Field                            | Description                                                                |
 | -------------------------------- | -------------------------------------------------------------------------- |
@@ -93,7 +93,7 @@ This block provides traceability by showing:
 
 ***
 
-### 💵 **Payment Actions**
+### **Payment Actions**
 
 At the bottom or side of the section, you will find **links/buttons** for processing payments. These open a **new window** or modal to complete the transaction securely.
 
@@ -103,11 +103,11 @@ At the bottom or side of the section, you will find **links/buttons** for proces
 * **Gift Card** – Apply a gift voucher code.
 * **Cash** – Manual recording of a physical cash payment.
 
-> 🧩 _Note: These links rely on system configuration and open a secure pop-up for completing the transaction. Ensure pop-ups are not blocked in your browser._
+> &#x20;_Note: These links rely on system configuration and open a secure pop-up for completing the transaction. Ensure pop-ups are not blocked in your browser._
 
 ***
 
-#### ✅ Best Practices
+#### &#x20;Best Practices
 
 * Always verify due dates before initiating payment.
 * If refunding, confirm with a supervisor before activating **release payment**.

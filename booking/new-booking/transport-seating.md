@@ -57,7 +57,3 @@ The **Transport Seating** tab is used to manually or automatically assign airpla
 3. A new **column for seating** will appear in the booking details, showing the assigned seats.
 4. Click **Print Ticket**.
 5. Open the printed ticket – it now includes a new **Flight Reservation section**, listing the selected seats for both outbound and return flights.
-
-***
-
-#### **Use Cases**

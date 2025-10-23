@@ -26,12 +26,12 @@ This feature allows users to:
 
 #### **Instructions**
 
-**🔎 Accessing the Emails Section**
+**Accessing the Emails Section**
 
 1. Open the relevant booking.
 2. Navigate to the **Emails** tab or section within the booking details.
 
-**📋 Email Log Fields**
+**Email Log Fields**
 
 | Field            | Description                                                                                            |
 | ---------------- | ------------------------------------------------------------------------------------------------------ |
@@ -42,7 +42,7 @@ This feature allows users to:
 
 ***
 
-#### ❗ Notes
+#### Notes
 
 * This section is **read-only**. Emails **cannot be resent or modified** from this interface.
 * If no emails are listed, it may indicate a system issue or that no communications have been triggered yet.
