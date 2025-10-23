@@ -1,43 +1,72 @@
-# Export - Scheduled Reports
+# Export
 
-#### Overview
-
-The **Export** interface is used to generate and schedule automated export jobs for booking data, based on time filters and format preferences. This allows tour operators and system users to generate regular data exports without manual intervention.
-
-***
-
-#### Purpose
-
-To streamline the **periodic export** of booking data filtered by date and customized via user preferences, helping with operational tracking, reporting, and system integration (e.g., accounting, BI, auditing).
+The **Export** page allows users to generate and download booking-related data in Excel format.\
+It provides multiple export types and filtering options to include or exclude specific bookings and cost details.\
+Exports are generated as `.XLSX` files and can be used for analysis, accounting, or reporting purposes.
 
 ***
 
-<figure><img src=".gitbook/assets/image (310).png" alt=""><figcaption></figcaption></figure>
+#### **Export Types**
+
+There are **three export types** available:
+
+| **Export Type**      | **Description**                                                                                                                                                             |
+| -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Bookings (XLSX)**  | Exports all bookings within the selected booking or departure period, including general booking details.                                                                    |
+| **Discounts (XLSX)** | Exports information related to discounts applied to bookings. Useful for financial reconciliation and promotion analysis.                                                   |
+| **Cost (XLSX)**      | Exports all costs associated with bookings, including **Creditor information**. This report is typically used for cost control, supplier invoicing, and financial overview. |
 
 ***
 
-#### Preconditions
+#### **Fields and Filters**
 
-* The user must have export permissions.
-* At least one booking must exist in the system for the given filters.
-* Schedules can only be created by users with administrative or reporting roles.
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-#### Filters and Options
+| **Field**                                                      | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Export Type**                                                | Selects which type of data to export: _Bookings_, _Discounts_, or _Cost_.                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| **Booking start / Booking end**                                | Defines the range based on the **booking creation date**. Only bookings created between these dates are included.                                                                                                                                                                                                                                                                                                                                                                                 |
+| **Departure start / Departure end**                            | Filters bookings based on the **departure date**. Only bookings departing within this range are included.                                                                                                                                                                                                                                                                                                                                                                                         |
+| **Include Cancelled Bookings and Details**                     | When enabled, cancelled bookings and their related details will also be included in the export.                                                                                                                                                                                                                                                                                                                                                                                                   |
+| **Include Moved Bookings and Details**                         | Includes bookings that were moved to a different departure or travel period, along with their updated details.                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Include past bookings with changes in the departure period** | <p>Ensures that bookings with <strong>changes made after the departure date</strong> are included if the changes fall within the selected departure period.<br><strong>Tooltip:</strong> <em>This will include bookings where changes are made after the departure, and the changes are made in the departure period specified.</em><br><br>🔹 This option is <strong>available for Bookings and Cost exports</strong>.<br>🔸 This option is <strong>disabled for Discounts exports</strong>.</p> |
+| **More filters**                                               | Expands additional filtering options (if available).                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Clear**                                                      | Resets all filters and date selections.                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 
-**Date Range Filters**
+***
 
-* **Booking start / Booking end** – Filter based on when the booking was created.
-* **Departure start / Departure end** – Filter based on travel dates.
-* **More Filters** – Additional filters may be available (e.g., destination, supplier, sales channel).
+#### **Buttons and Actions**
 
-**Export Options**
+| **Button**         | **Description**                                                                                                               |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
+| **Export**         | Generates the export file based on the selected filters and export type. The exported file is downloaded in `.XLSX` format.   |
+| **Show Schedules** | Displays a list of all previously generated or scheduled exports. From here, users can monitor progress or re-download files. |
 
-* **Export for Mac OS** – Ensures file formatting compatibility with Mac systems.
-* **Compress as ZIP** – Delivers output as a `.zip` file.
-* **Include Cancelled Bookings and Details** – Adds bookings with status canceled.
-* **Include Moved Bookings and Details** – Adds rebooked bookings.
-* **Export Lite Version** – Strips out extended info for a simpler export.
-* **Export Generic Discounts** – Includes promotional or cross-product discounts.
+***
+
+#### **Usage Example**
+
+**Scenario:** Export booking and cost data for bookings created in September and October 2025, including changes after departure.
+
+1. Set **Export Type → Bookings (XLSX)** or **Cost (XLSX)**.
+2. Define **Booking start** and **Booking end** dates (e.g., 23-09-2025 to 23-10-2025).
+3. (Optional) Define **Departure start** and **Departure end**.
+4. Enable **Include past bookings with changes in the departure period** to capture all post-departure updates.
+5. Enable or disable _Canceled_ and _Moved_ bookings as needed.
+6. Click **Export** to generate the report.
+7. Use **Show Schedules** to view or download previous exports.
+
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption><p>Export Booking (XLSX)</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption><p>Export Cost (XLSX)</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption><p>Export Discounts (XLSX)</p></figcaption></figure>
 
 The data will contain information regarding each booking that corresponds to the given filters:
 
@@ -107,54 +136,3 @@ The data will contain information regarding each booking that corresponds to the
 * **Insurance cost -** Total cost of all types of insurance (travel, cancellation, etc.).
 * **Discounts/Supplements cost -** Total value of discounts and supplements applied.
 * **Hotel cost -** Total cost paid for the hotel accommodation.
-
-### Schedule Export
-
-In the Financial Export Schedule in Finance/ Export a schedule can be saved with a specific filter.&#x20;
-
-#### Export Scheduling Options
-
-<figure><img src=".gitbook/assets/image (311).png" alt=""><figcaption></figcaption></figure>
-
-Using the three buttons located next to the **Export** button, you can:
-
-* **View** all previously scheduled exports
-* **Create** new export schedules based on selected filters
-
-#### Schedules Table
-
-| Column            | Description                                                                                                                                                                      |
-| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Enabled**       | Toggle to activate or deactivate an export schedule. Schedules not used in 7 days are automatically disabled! For a schedule to be considered used click on "Get Latest Result!" |
-| **Description**   | Name of the export schedule (customizable).                                                                                                                                      |
-| **Schedule Type** | Frequency of export (e.g., _Once a day_, _Once a week_).                                                                                                                         |
-| **Day**           | For weekly exports, allows selection of day (e.g., Monday, Tuesday).                                                                                                             |
-
-🔘 **Create** – Adds a new schedule.\
-🗑️ **Trash Icon** – Deletes the schedule.\
-📄 **File Icon** – Get Lates Result and download the export
-
-***
-
-#### Export Button (Top Right)
-
-Initiates a **manual export** using the current filters and options selected, independent of the schedule.
-
-***
-
-#### Notes
-
-* Each schedule can run independently based on its frequency and enabled status.
-* Use descriptive names for schedules to avoid confusion (e.g., “Weekly Cancellations Export”).
-* Each schedule is generated only once a day (the time is set by the Super Admin and is usually at night). The resulting file can be downloaded manually using the Get Latest Result button.&#x20;
-
-The finance export file is generated each night but, the export is dependent on the schedule set, e.g daily, yes, then it is for this night, but if weekly it will take the export from that specific, day scheduled in the schedule. The Super Admin collaborates with the developer to determine the specific hour for scheduling tasks.&#x20;
-
-### Daily export of  the Financial Export
-
-Additionally, the scheduling of the Finance export file is separate from the time set for the scheduler. It is also worth noting that email addresses for the Finance Export can be configured in Setup / System Setup / General Information / Settings.&#x20;
-
-<figure><img src=".gitbook/assets/image (352).png" alt=""><figcaption></figcaption></figure>
-
-* Each user only sees the schedulers defined by him/her (he/she cannot see other schedulers defined by other users).
-* The filters set do not affect already created schedulers. They can only be generated with the Export button, or to create a new scheduler using the filters.
