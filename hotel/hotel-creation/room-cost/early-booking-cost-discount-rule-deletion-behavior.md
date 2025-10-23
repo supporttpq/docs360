@@ -43,6 +43,10 @@ This behavior occurs regardless of the invoice status and is part of the current
 
 **The information will no longer be available.**
 
+{% hint style="danger" %}
+Note: Be aware that even though the invoice data is deleted, the sum of the invoice remains. This is expected behavior.
+{% endhint %}
+
 ***
 
 **Expected Behavior**\
