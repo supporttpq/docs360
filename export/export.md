@@ -17,7 +17,7 @@ This functionality helps users save time and maintain consistency by:
 
 ### **Export Scheduling Options**
 
-<figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 Using the three buttons located next to the **Export** button, you can:
 
@@ -26,7 +26,7 @@ Using the three buttons located next to the **Export** button, you can:
 
 #### **Page Structure and Fields**
 
-<figure><img src=".gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 **Export Filters (Top Section)**
 
@@ -97,7 +97,7 @@ The finance export file is generated each night but, the export is dependent on 
 
 Additionally, the scheduling of the Finance export file is separate from the time set for the scheduler. It is also worth noting that email addresses for the Finance Export can be configured in Setup / System Setup / General Information / Settings.&#x20;
 
-<figure><img src=".gitbook/assets/image (352).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (352).png" alt=""><figcaption></figcaption></figure>
 
 * Each user only sees the schedulers defined by him/her (he/she cannot see other schedulers defined by other users).
 * The filters set do not affect already created schedulers. They can only be generated with the Export button, or to create a new scheduler using the filters.
