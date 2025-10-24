@@ -52,7 +52,7 @@ Before configuring seat layouts:
 
 **Column Descriptions**
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 | **Column**              | **Description**                                                                                |
 | ----------------------- | ---------------------------------------------------------------------------------------------- |
@@ -97,7 +97,7 @@ Before assigning seats:
 
 **Instructions**
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. **Open the Assign Seats view**\
    From the **Seat List**, click **Assign Seats** next to the layout you want to configure.

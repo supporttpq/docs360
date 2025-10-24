@@ -38,7 +38,7 @@ Go to **Booking menu → Click on “New Booking”**
 
 1.  **Choose the Brand.**
 
-    <figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 2. **Insert the customer’s mobile number** to identify or create a customer. ![](<../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 3.  **Add Passenger Count** – Select the number of:
 

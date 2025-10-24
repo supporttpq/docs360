@@ -76,7 +76,8 @@
 
 ## Customer
 
-* [Customers](customer/customers.md)
+* [Customers](customer/customers/README.md)
+  * [Customer Details](customer/customers/customer-details.md)
 
 ***
 
