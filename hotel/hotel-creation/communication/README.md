@@ -8,7 +8,7 @@ The **Communication** feature allows you to configure automated emails with book
 
 This functionality ensures hotels and agencies receive timely updates about bookings. Automating report delivery eliminates manual report generation, improves communication, and helps partners plan arrivals and manage availability more efficiently.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In the communication tab,&#x20;
 

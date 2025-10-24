@@ -70,7 +70,7 @@
   * [Offer template](offers/offer-template.md)
   * [Select text for Offers](offers/select-text-for-offers.md)
   * [Customer Offer SMS template](offers/customer-offer-sms-template.md)
-  * [Customer offer automatic flow](offers/customer-offer-automatic-flow.md)
+  * [Customer offers automatic flow](offers/customer-offer-automatic-flow.md)
 * [Campaign Statistics](campaign-statistics.md)
 * [Live Offer Confirmation](live-offer-confirmation.md)
 

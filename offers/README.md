@@ -2,7 +2,14 @@
 
 ### **Overview**
 
-The **Offers** page is a central hub for managing both offer proposals and incoming customer travel requests. It enables sales and support staff to efficiently track, organize, and act upon offers based on various filtering and status criteria.
+The **Offers** page provides an overview of all customer offers created in the system.\
+Each offer represents a proposed travel package that can be sent to a customer, followed up, or converted into a confirmed booking.
+
+The page allows users to:
+
+* Filter, view, and manage existing offers
+* Track offer status and follow-up actions
+* Create new offers
 
 ***
 
@@ -22,49 +29,59 @@ To provide a flexible and organized view of all travel-related offers, allowing:
 * Offers must be created either manually by an agent or through integrated customer interactions.
 * Customer and travel data should be available in the system for accurate filtering.
 
-<figure><img src="../.gitbook/assets/image (266).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-### **Search Filters**
+#### **Filters and Search Fields**
 
-The filter panel allows users to refine the view using multiple criteria:
-
-| **Filter Field**                     | **Description**                                                                 |
-| ------------------------------------ | ------------------------------------------------------------------------------- |
-| First Name / Last Name / Email       | Search for offers associated with specific customer data.                       |
-| **Status**                           | Filter offers based on lifecycle state (e.g., _Available_, _Unsent_, _Closed_). |
-| **Close Reason**                     | Choose from predefined reasons why an offer was closed.                         |
-| **Follow-up Start/End Date**         | Search offers with follow-up actions within a date range.                       |
-| **Customer Type**                    | Identify offers by the type of customer (e.g., _New_, _Returning_).             |
-| **Offer No.**                        | Locate a specific offer using its unique ID.                                    |
-| **Departure Date / Arrival / Hotel** | Search offers based on planned trip details.                                    |
+| **Field**                                     | **Description**                                                                                   |
+| --------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| **First name / Last name**                    | Search for offers by the customer’s first and/or last name.                                       |
+| **Email**                                     | Filter offers by the customer’s email address.                                                    |
+| **Created period (From / To)**                | Define a date range to display offers created within a specific time period.                      |
+| **Status**                                    | Filters by offer status (e.g., _Unsent_, _Available_,  _Expired_, _Sold, Closed_).                |
+| **Close reason**                              | Filters offer based on why they were closed                                                       |
+| **Follow-up start date / Follow-up end date** | Filters offer based on the follow-up period scheduled for the customer.                           |
+| **Customer type**                             | Filters based on customer type (e.g., _Customer_, _None, Ofertee_).                               |
+| **Offer no**                                  | Search for a specific offer using its unique Offer Number.                                        |
+| **Departure date / Arrival date**             | Filters offers according to the travel dates proposed in the offer.                               |
+| **Create user**                               | Filters by the user who created the offer.                                                        |
+| **Hotel**                                     | Filters offers by hotel name included in the proposal.                                            |
+| **Display names**                             | Toggles between showing internal system names.                                                    |
+| **Display / Clear**                           | **Display** applies the selected filters, while **Clear** resets all filters to show all results. |
+| **More filters**                              | Expands additional filtering options for detailed search.                                         |
 
 ***
 
-### **Offers Table**
+#### **Main Table Columns**
 
-Displays a real-time list of all offers matching selected filters. Each row contains:
+| **Column**           | **Description**                                                                                                                                                                                                                                                                   |
+| -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Offer No**         | Unique identifier automatically generated for each offer. Clickable to open the offer details.                                                                                                                                                                                    |
+| **Brand**            | Indicates the brand under which the offer was created (e.g., _Tourpaq DK_).                                                                                                                                                                                                       |
+| **Type**             | Defines who the offer is made for — usually _Customer_ or _Offertee_.                                                                                                                                                                                                             |
+| **Customer/Offeree** | Displays the name of the customer or contact person receiving the offer.                                                                                                                                                                                                          |
+| **Create User**      | The system user who created the offer.                                                                                                                                                                                                                                            |
+| **Create Date**      | The date the offer was initially created.                                                                                                                                                                                                                                         |
+| **Update User**      | The last user who modified the offer.                                                                                                                                                                                                                                             |
+| **Update Date**      | The last date the offer was updated.                                                                                                                                                                                                                                              |
+| **Follow-up Date**   | The scheduled date for the next follow-up with the customer.                                                                                                                                                                                                                      |
+| **Status**           | <p>Current status of the offer. Common values: </p><ul><li><em>Unsent</em>: Offer was created but not yet sent to the customer.</li><li><em>Expired</em>: Offer validity period has ended.</li><li><em>Sold</em>: Offer has been accepted and converted into a booking.</li></ul> |
+| **Status Details**   | Additional notes on the offer’s state, such as _Not sent to customer_ or _Expired on \[date]_. \|                                                                                                                                                                                 |
+| **Internal Comment** | Free-text field for internal notes visible only to office users.                                                                                                                                                                                                                  |
+| 🗑️ (Delete icon)    | Deletes the selected offer from the list (if user permissions allow)                                                                                                                                                                                                              |
 
-| **Field**              | **Description**                                              |
-| ---------------------- | ------------------------------------------------------------ |
-| **Offer No.**          | Unique identifier for the offer.                             |
-| **Brand**              | Tour company or brand managing the offer.                    |
-| **Type**               | Indicates whether it’s a customer request or offer proposal. |
-| **Customer / Offeree** | Name of the customer the offer is addressed to.              |
-| **Create User**        | The system user who created the offer.                       |
-| **Create Date**        | Date and time the offer was initially saved.                 |
-| **Update User**        | The user who last modified the offer.                        |
-| **Update Date**        | Date and time of the last update.                            |
-| **Follow-up Date**     | When a follow-up should occur.                               |
-| **Status**             | Current state of the offer (e.g., _Available_, _Not Sent_).  |
-| **Status Details**     | Additional information such as “Available until DD.MM.YYYY.” |
-| **Internal Comment**   | Internal notes for tracking offer reasoning or next steps.   |
+#### **Actions**
 
-### **Related Workflows**
+| **Action**                     | **Description**                                                                                              |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------ |
+| **Create**                     | Opens the “New Offer” form where users can define travel details, customer information, and pricing.         |
+| **Offers / Statistics toggle** | Switch between the list of offers and aggregated statistics (e.g., number of offers sent, conversion rates). |
 
-| **Workflow**                    | **Description**                                                                       |
-| ------------------------------- | ------------------------------------------------------------------------------------- |
-| **Creating a New Offer**        | Navigate to the Offer menu > Click "Create Offer" > Fill in customer and travel data. |
-| **Follow-Up Management**        | Set or adjust follow-up dates directly from the offer or the table view.              |
-| **Sending Offers to Customers** | Offers marked as “Not Sent” can be sent via email directly from the Offer view.       |
-| **Closing an Offer**            | Select a close reason and status manually when an offer is no longer active.          |
-| **Offer Conversion**            | Convert an active offer into a booking once accepted by the customer.                 |
+***
+
+#### **Typical Workflow**
+
+1. **Create** a new offer.
+2. **Send** it to the customer.
+3. **Follow up** using the scheduled follow-up date.
+4. If accepted, **convert the offer to a booking** (status becomes _Sold_).
