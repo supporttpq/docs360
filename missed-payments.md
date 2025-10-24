@@ -17,6 +17,12 @@ The **Missed Payment Page** contains information about payments that were not su
 ### **Table Columns:**
 
 * **ACTIONS:** Contains icons representing actions that can be performed on each payment record. From the visible icons, we can infer options like editing, viewing details, or possibly re-processing the payment.
+  * Hide the selected payments
+  * Retry to place booking
+  * Retry to place payment
+  * Move payment on another booking
+  * View Tourpaq booking offer
+  * View WebBooking offer
 * **PAYMENT NO:** A unique identifier for each payment.&#x20;
 * **PAYMENT METHODS:** Indicates the payment method used. In the example, it's "CARD".
 * **AMOUNT:** The value of the payment.
@@ -26,6 +32,6 @@ The **Missed Payment Page** contains information about payments that were not su
 * **PAYMENT STATUS:** Provides a more descriptive status, which is "Capture Completed" in the example, mirroring the status code.
 * **AGENCY:** The agency associated with the payment
 * **CUSTOMER:** The customer is involved in the payment.
-* **BOOKING#:** A booking or reference number.
+* **BOOKING ID:** A booking or reference number.
 * **PAYMENT DATE:** The date the payment was attempted.
 * **REASON:** This column is empty in the example, but it likely would contain the reason for the payment failure.
