@@ -37,7 +37,7 @@ See here how: [**Departure stat weeks**](../setup/departure-stat-weeks.md)
 
 #### **Field Descriptions and Sections**
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **1. Filters (Top Section)**
 

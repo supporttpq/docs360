@@ -24,14 +24,14 @@ Before using the _Allotment Overview_ report:
 3. The user must have access to the **Business Intelligence** module.
 
 {% hint style="warning" %}
-💡 **Tip:** To have results listed according to the filters set, make sure departure stat weeks are defined for the year(s) used. See here how: [Departure stat weeks](setup/departure-stat-weeks.md)
+💡 **Tip:** To have results listed according to the filters set, make sure departure stat weeks are defined for the year(s) used. See here how: [Departure stat weeks](../setup/departure-stat-weeks.md)
 {% endhint %}
 
 **Note:** Cells highlighted in **red** indicate a **stop sale** for that date.
 
 #### **Field Descriptions and Sections**
 
-<figure><img src=".gitbook/assets/image (427).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (427).png" alt=""><figcaption></figcaption></figure>
 
 **1. Filters (Top Section)**
 
@@ -72,4 +72,4 @@ The main section displays a **calendar-style grid** with rows representing hotel
    * Optionally, check **Show only parent room** to filter parent rooms only.
 3. **Guarantee Rooms -** By checking the **Guarantee Rooms** box, guaranteed room numbers are displayed **below the allotment line** for each room.
 
-<figure><img src=".gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
