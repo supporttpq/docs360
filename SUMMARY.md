@@ -242,6 +242,7 @@
   * [Passengers informations](transport/transport/passengers-informations.md)
   * [Transport Reporting](transport/transport/transport-reporting.md)
   * [Transport Allotment adjustment for Dynamic Transport](transport/transport/transport-allotment-adjustment-for-dynamic-transport.md)
+  * [Add Transport Wizard](transport/transport/add-transport-wizard.md)
 
 ***
 
