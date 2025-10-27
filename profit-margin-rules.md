@@ -167,3 +167,30 @@ Based on the profit margin value, prices are calculated.
 * **Manual Changes**: Any manual changes in the price list will overwrite values set by the rules.
 * **Rule Updates**: If a rule is later updated and scheduled, it will overwrite manually updated values in the price list.
 * **Automatic Scheduling**: A Resort Rule can be scheduled automatically when new price lists are created for hotels in that resort.
+
+### Behavior of the Profit Margin Value
+
+The **profit margin value** only changes when it is manually updated through the **Profit Margin Rule**.\
+When a new value is saved in the Profit Margin Rule, it **overrides** any manually edited profit margin previously entered in the **Price List**.
+
+If other changes are made — such as adding new entities (which generate new price lists) or updating hotel costs — these actions will **not** alter the profit margin value.\
+In these cases, the system will simply **recalculate the final price** based on the manually adjusted profit margin defined by the user.
+
+#### Example:&#x20;
+
+**An agency** uses a **Base Margin** defined through Profit Margin Rules, and then they manually adjust the profit margin directly in the Price List, and  they perform manual price adjustments for various purposes.
+
+In this case PM1 will be updated when:
+
+* The **Profit Margin** itself is adjusted (departures, stay, amount)
+* The **dates** are adjusted
+
+**PM1 will not be updated when:**
+
+* Adding a new **Transport**
+* Adding a new **Hotel**
+* Adding a new **Room**
+* Adjusting **Allotment**
+* Changing **Hotel Costs**
+* Changing **Transport Costs**
+* Editing **Discounts, Supplements, or Extras**
