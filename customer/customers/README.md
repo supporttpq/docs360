@@ -23,7 +23,7 @@ This page is designed to:
 
 The **“Find Customer”** feature enables precise filtering and retrieval of customer information. Users can search by one or multiple criteria.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Filters and Search Fields**
 
