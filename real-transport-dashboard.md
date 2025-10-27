@@ -1,43 +1,38 @@
 # Real Transport Dashboard
 
-This document describes the functionality and usage of the Real Transport Dashboard. This dashboard provides real-time information about transportation events, allowing users to filter and view data based on various criteria.
+#### Overview
 
-<figure><img src=".gitbook/assets/image (132).png" alt=""><figcaption></figcaption></figure>
+The **Real Transport Dashboard** provides an overview of all active and historical flight operations within a selected period. It allows users to monitor transport activities by departure and arrival locations, visualize flight capacity, and check the current booking situation for each departure.
 
-**Page Overview:**
+The dashboard displays key operational data, including flight numbers, routes, dates, allotments, sold and available seats, and scheduled departure/arrival times.
 
-The dashboard is designed with a filter section at the top, followed by a data display area.
+#### Purpose
 
-1. **Filter Section:** Allows users to specify criteria to narrow down the displayed data.
-2. **Data Display Area:** Presents the filtered transportation data in a user-friendly format.
+This page is designed to support the transport and operation teams in managing and verifying flight movements. It helps ensure accurate planning of seat allotments, identifies flights with remaining capacity, and provides quick access to detailed flight information when needed.
 
-### **Filter Section:**
+By filtering by date range, departure, or arrival location, users can easily narrow down the list to focus on specific routes or time periods.
 
-* **Departure:** A dropdown menu to select the departure location or point.
-* **Arrival:** A dropdown menu to select the arrival location or point.
-* **Date from:** A date picker to specify the starting date for the data range.
-* **Date to:** A date picker to specify the ending date for the data range.
-* **Departure Time:** A time picker to filter data by departure time.
-* **Arrival Time:** A time picker to filter data by arrival time.
-* **Period:** A field to specify a time period for filtering&#x20;
-* **Flight No:** A text field to filter data by flight number.
-* **Display:** A button that applies the selected filters and displays the corresponding data in the data display area.
-* **More filters:** A button that expands the filter section to reveal additional filtering options.
-* **Clear:** A button that clears all applied filters, resetting the dashboard to its default state.
+#### Field Descriptions
 
-**2. Data Display Area:**
+<figure><img src=".gitbook/assets/image (432).png" alt=""><figcaption></figcaption></figure>
 
-The data table displays the transportation data in a structured format with the following columns:
-
-* **TRANSPORT:** Transport code.
-* **FLIGHT NO :** The flight number.
-* **DEPARTURE:** The departure location or point.
-* **ARRIVAL:** The arrival location or point.
-* **DATE:** The date of the transportation event.
-* **ALLOTMENT: A** value representing a quantity or capacity.
-* SOLD: How many places are sold
-* **AVAILABLE:** Numerical value representing availability or remaining capacity.
-* **DEPARTURE TIME:** The departure time of the transportation event.
-* **ARRIVAL TIME:** The arrival time of the transportation event.
+| **Field**                       | **Description**                                                                                                                   |
+| ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| **Departure / Arrival filters** | Filters used to define which routes are displayed. Selecting a departure and/or arrival airport refines the results accordingly.  |
+| **Date from / Date to**         | Defines the reporting period for the displayed flights. Only flights within the selected dates are shown.                         |
+| **Display button**              | Loads the filtered results in the table according to the chosen filters and date range.                                           |
+| **+ More filters / Clear**      | Allows additional filtering options to be added or clears all active filters.                                                     |
+| Departure Time                  | Filters by departure hour                                                                                                         |
+| Arrival Time                    | Filters by Arrival hour                                                                                                           |
+| **Transport**                   | Displays the transport code that identifies each flight setup. The arrow icon allows expanding to view more detailed information. |
+| **Flight No**                   | The unique flight number assigned to the transport operation.                                                                     |
+| **Departure**                   | The airport or location from which the flight departs.                                                                            |
+| **Arrival**                     | The airport or location to which the flight arrives.                                                                              |
+| **Date**                        | The calendar date on which the flight is scheduled to depart.                                                                     |
+| **Allotment**                   | The total number of seats allocated for the flight.                                                                               |
+| **Sold**                        | The number of seats already booked on that flight.                                                                                |
+| **Available**                   | The number of remaining seats available for booking. Calculated as _Allotment – Sold_.                                            |
+| **Departure Time**              | The scheduled local time of departure from the origin airport.                                                                    |
+| **Arrival Time**                | The scheduled local time of arrival at the destination airport.                                                                   |
 
 This documentation provides a basic overview of the Real Transport Dashboard. For more detailed information on specific features or data fields, please refer to the system's user manual or contact the system administrator.
