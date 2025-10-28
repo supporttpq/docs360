@@ -2,7 +2,7 @@
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### ✅ Overview
+### Overview
 
 In the Tourpaq **Quality Management System**, the **Questionnaire Groups** section allows you to structure customer feedback questionnaires by themes or areas of interest. Each group corresponds to a **specific aspect of the customer's holiday experience**, enabling focused statistics and targeted quality improvements.
 
@@ -14,7 +14,7 @@ These groups form the **backbone of the feedback analysis system**, as they allo
 
 ***
 
-### 🧭 Purpose
+### Purpose
 
 * Group questions under a **common topic** for easier reporting.
 * Allow filtering of feedback based on a specific aspect of the experience.
@@ -22,7 +22,7 @@ These groups form the **backbone of the feedback analysis system**, as they allo
 
 ***
 
-### ⚙️ Interface Explanation
+### Interface Explanation
 
 | Column         | Description                                                                                                                           |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
@@ -31,7 +31,7 @@ These groups form the **backbone of the feedback analysis system**, as they allo
 
 ***
 
-### ✏️ Actions Available
+### Actions Available
 
 | Action                              | Description                                                                                |
 | ----------------------------------- | ------------------------------------------------------------------------------------------ |
@@ -40,7 +40,7 @@ These groups form the **backbone of the feedback analysis system**, as they allo
 
 ***
 
-### 🚦Preconditions
+### Preconditions
 
 * You must have **administrator permissions** to manage questionnaire groups.
 * Before creating questions, it’s recommended to **define all groups** needed for segmentation.

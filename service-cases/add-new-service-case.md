@@ -1,38 +1,59 @@
 # Add new Service Case
 
-In the “Service cases” menu, press “Create” button.
+#### **Overview**
+
+A **Service Case** can be created to log and manage customer complaints related to a specific booking.\
+This process ensures all relevant information is captured, and appropriate actions can be tracked until the case is resolved.
+
+#### **Steps to Create a New Service Case**
+
+1. Navigate to: **Quality Management → Service Cases**.
+2. Click the **Create** button.
+3. Complete the following fields:
 
 <figure><img src="../.gitbook/assets/image (232).png" alt=""><figcaption></figcaption></figure>
 
-* Select the brand – make sure the booking you’re going to use is on this brand
+* **Brand** – Select the brand that matches the booking.
 
 <figure><img src="../.gitbook/assets/image (233).png" alt=""><figcaption></figcaption></figure>
 
-* Insert the booking number on which the complaint was made.
+* **Booking Number** – Enter the booking number associated with the complaint.
 
 <figure><img src="../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-After inserting the booking number, all information regarding that booking will be automatically filled in in read only mode:
+After entering the booking number, the system automatically populates booking information in **read-only mode**, including:
 
-* Customer information – here we can edit only the email and phone number by pressing “Edit” button. This data will be saved only for the service case and does not change information on the booking.
-* Number of passengers, by age distribution
-* Destination information: flight, destination and hotel
-* Departure date
-* Rooms details
-* All tabs from the booking page
+* **Customer Information** – Name, email, and phone number (email and phone can be edited by clicking **Edit**; changes are saved only for this service case, not the original booking).
+* **Number of Passengers** – By age distribution.
+* **Destination Information** – Flight, destination, and hotel.
+* **Departure Date**
+* **Room Details**
+* **All other tabs from the booking page**
 
 <figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Other information that can be completed by the service case user are:
+**Service Case Information**
 
-* Service case date – completed by default with current date and editable
-* User that handles the service case – completed by default with user that is logged in, but field is editable
-* Reason for complaint – mandatory field. Multiple selection is possible. List of reasons can be managed from dedicated menu (Quality management / Service case reasons). Explained with more details separately.
-* Attachments – any type of file can be attached by pressing “Upload attachment” button and accessed afterwards; Please be aware that attachments can be added only to already saved service cases.
-* Compensation – if it is the case; Explained with more details separately.
-* Service case status – by default is set to new, but is editable. Status can be new, in progress, closed or waiting court.
-* Closing date – when the service case is closed
-* Closed by user – the user that closes that service case
-* Comments – section for different notes, remarks and other information
+* **Service Case Date** – Defaults to the current date; editable if necessary.
+* **User Handling the Case** – Defaults to the logged-in user; editable if another user will handle the case.
+* **Reason for Complaint** – Mandatory. Multiple selections allowed. The list of reasons is managed via:\
+  **Quality Management → Service Case Reasons**.
+* **Attachments** – Upload relevant files using the **Upload Attachment** button. Attachments can only be added to saved service cases.
+* **Compensation** – Optional field to document any compensation offered; see separate section for details.
+* **Service Case Status** – Defaults to **New**, but can be changed to:
+  * **New**
+  * **In Progress**
+  * **Closed**
+  * **Waiting Court**
+* **Closing Date** – Set when the service case is closed.
+* **Closed By User** – Records the user who closes the service case.
+* **Comments** – Free-text area for notes, remarks, or additional information related to the case.
 
 <figure><img src="../.gitbook/assets/image (234).png" alt=""><figcaption></figcaption></figure>
+
+#### **Usage Notes**
+
+* Always verify the **brand** and **booking number** to ensure the service case is linked correctly.
+* Mandatory fields (e.g., **Reason for Complaint**) must be completed before saving.
+* Attachments provide context and evidence for the service case; ensure they are added after saving the case.
+* Service case **status** should be updated throughout the resolution process to provide an accurate overview in reports and dashboards.

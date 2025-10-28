@@ -1,8 +1,13 @@
 # Compensation & Deduction
 
-Sometimes it’s necessary to compensate the customer for a complaint. And sometimes the compensation offered to the customer can be deducted from the direct responsible. Therefore, depending on who’s fault is it, proper way for compensation and deduction can be used.
+#### **Overview**
 
-The setup for compensation\&deduction is done in the dedicated section on the service case edit page.
+Compensation may be necessary when a customer lodges a complaint. In some cases, the compensation offered can also be **deducted from the responsible party** (e.g., hotel or agent).\
+The **Compensation & Deduction** functionality allows the agency to record and manage both compensation to the customer and deductions for responsible parties, ensuring proper tracking and finance integration.
+
+#### **Setup**
+
+The **Compensation & Deduction** section is available on the **service case edit page**.
 
 For compensation you need to:
 

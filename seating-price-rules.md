@@ -15,8 +15,8 @@ Note: When there are more eleigible rules, the ssystem will choose the lowest ru
 The data table displays the seating rules with the following columns:
 
 * **NAME:** The name or identifier of the seating rule.
-* **TRANSPORT:** The transport number or identifier associated with the rule.
-* **REAL TRANSPORT:** The real transport number or identifier.
+* **TRANSPORT:** The transport number or identifier associated with the rule. Choose transport, only when you have a charter transport -> Not Real Transport
+* **REAL TRANSPORT:** The real transport number or identifier. Choose Real Transport only when you have a chater transport that uses a Real Transport. Rules with transport selected will be ignored for these bookings.
 * **SEAT TYPE:** The type of seat associated with the rule.
 * **OUT/HOME:** Indicates whether the rule applies to outbound or homebound journeys.
 * **BOOKING START:** The start date for the booking period.
@@ -28,7 +28,7 @@ The data table displays the seating rules with the following columns:
 * **ENABLED:** Indicates whether the rule is enabled or disabled.
 * **ORDER:** Allows users to change the order of the rules (using up and down arrow buttons).
 
-**Navigation and Functionality:**
+#### **Navigation and Functionality:**
 
 * **Set Rules Button:** Clicking this button allows users to define new seating rules.
 * **Empty Set Rules Button:** Clicking this button clears or deletes existing seating rules.

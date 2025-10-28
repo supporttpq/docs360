@@ -1,12 +1,12 @@
 # Quality Management
 
-### ✅ Overview
+### Overview
 
 Tourpaq includes a built-in **quality management system** that helps measure and improve the quality of services provided to customers. This is done by collecting feedback from tourists through structured **questionnaires** sent after their stay. The collected data is analyzed and used to generate service quality statistics for continuous improvement.
 
 ***
 
-### 🎯 Purpose
+### Purpose
 
 The system is designed to:
 
@@ -17,7 +17,7 @@ The system is designed to:
 
 ***
 
-### 👤 Who Uses It?
+### Who Uses It?
 
 * **Quality Assurance teams**: to monitor customer satisfaction trends.
 * **Product Managers**: to evaluate suppliers (hotels, transport, guides).
@@ -25,9 +25,9 @@ The system is designed to:
 
 ***
 
-### ⚙️ Key Features
+### Key Features
 
-#### 🧾 Questionnaires
+#### Questionnaires
 
 * Custom questionnaires can be created and assigned.
 * Each questionnaire can be composed of multiple **questions**, grouped by **topic** or **point of interest**.
@@ -40,7 +40,7 @@ The system is designed to:
 
 ***
 
-#### 💬 Question Types
+#### Question Types
 
 * Single choice (e.g., rating from 1 to 5)
 * Multiple choice
@@ -48,7 +48,7 @@ The system is designed to:
 
 ***
 
-#### 📧 Email Trigger System
+#### Email Trigger System
 
 * **Automatic sending of questionnaires** by email after a configurable number of days post **arrival at destination**.
 * Email includes a link to the online questionnaire form.
@@ -56,7 +56,7 @@ The system is designed to:
 
 ***
 
-### 🔍 Questionnaire Setup
+### Questionnaire Setup
 
 | Section                  | Description                                                                         |
 | ------------------------ | ----------------------------------------------------------------------------------- |
@@ -68,7 +68,7 @@ The system is designed to:
 
 ***
 
-### 📈 Statistics & Analysis
+### Statistics & Analysis
 
 * Responses are **collected and stored** for further processing.
 * Reports can be **filtered by question group**, **travel period**, **hotel**, **guide**, etc.

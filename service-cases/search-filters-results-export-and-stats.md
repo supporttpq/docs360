@@ -1,48 +1,57 @@
 # Search filters, results, export & stats
 
-First page displays the overview of all service cases, filtered, by default, for departures on the ongoing year, in a revers chronological order of the service case creation date.
+#### **Overview**
 
-You can filter by:
+The **Service Case Overview** page provides a comprehensive view of all service cases, with filters to narrow down results and statistics to analyze cases. By default, the page shows service cases for **departures in the ongoing year**, sorted in **reverse chronological order** of creation.
 
-* Brand
-* Departure date Interval
-* Booking date Interval
-* Service case creation date interval
-* Booking number
-* Customer Last name
-* Country
-* Arrival airport
-* Resort
-* Hotel
-* Status of the service case
-* User who created the service cases.
-* Awaiting office response checkbox – if marked, will automatically clear other filters and display only the service cases that received an email from the customer (marked with a star on service case number)
+#### **Available Filters**
 
-In the “Service case overview” section, the results list is displayed, with the following information:
+Users can refine the list of service cases using the following criteria:
 
-* Case number – by clicking it, will open that service case page
-* Booking on which the service case is opened – by clicking it, will redirect on that booking page
-* Service case creation date
-* User – that created the service case
-* Customer name from the booking – by clicking it, a pop-up with the service case history on that customer is shown
+* **Brand**
+* **Departure Date Interval**
+* **Booking Date Interval**
+* **Service Case Creation Date Interval**
+* **Booking Number**
+* **Customer Last Name**
+* **Country**
+* **Arrival Airport**
+* **Resort**
+* **Hotel**
+* **Status of the Service Case**
+* **User Who Created the Service Case**
+* **Awaiting Office Response** – Checking this option automatically clears other filters and shows only service cases that received an email from the customer (marked with a star on the case number).
+
+#### **Service Case Results**
+
+The results table displays the following information for each case:
+
+* **Case Number** – Click to open the service case page.
+* **Booking** – Click to navigate to the associated booking page.
+* **Service Case Creation Date**
+* **User** – Creator of the service case.
+* **Customer Name** – Click to view a pop-up showing the customer’s service case history.
 
 <figure><img src="../.gitbook/assets/image (240).png" alt=""><figcaption></figcaption></figure>
 
-* Destination from the booking
-* Hotel from the booking
-* Departure date from the booking
-* Reason for the complaint
-* Status of the service case
-* Giftcard sent – if it is the case, for service cases that have compensations offered by giftcard.
+* **Destination** – From the booking.
+* **Hotel** – From the booking.
+* **Departure Date** – From the booking.
+* **Reason for Complaint**
+* **Status of the Service Case**
+* **Giftcard Sent** – Indicates if a gift card was issued for compensation.
 
-Also, in the service case overview, you will be able to see all the services of a customer just by clicking on the customer's name. From the newly opened pop-up, you can open in a separate page the case number or booking for which the service case was made.&#x20;
-
-Also, we will find the all service case per customer in the customer details
+> From the customer name pop-up, users can access all **service cases** and **bookings** related to that customer. Additionally, all service cases for a customer are available in the **Customer Details** page.
 
 <figure><img src="../.gitbook/assets/image (21) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-In the “Totals” section, statistics are displayed, referring to the results list.
+#### **Statistics**
 
-Also, the results list can be exported in a CSV file, by clicking on “Export” button.
+The **Totals** section displays summary statistics based on the filtered results, providing insights into complaint trends and service case metrics.
+
+#### **Export**
+
+* Users can export the results list to a **CSV file** by clicking the **Export** button.
+* Exported data includes all displayed fields, allowing for external reporting and analysis.
 
 <figure><img src="../.gitbook/assets/image (241).png" alt=""><figcaption></figcaption></figure>
