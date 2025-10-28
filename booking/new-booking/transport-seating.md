@@ -20,7 +20,7 @@ The **Transport Seating** tab is used to manually or automatically assign airpla
 * Passengers must already be added to the booking.
 * The transport (flight) must be set up with available seat data.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Instructions**
 
@@ -57,7 +57,3 @@ The **Transport Seating** tab is used to manually or automatically assign airpla
 3. A new **column for seating** will appear in the booking details, showing the assigned seats.
 4. Click **Print Ticket**.
 5. Open the printed ticket – it now includes a new **Flight Reservation section**, listing the selected seats for both outbound and return flights.
-
-***
-
-#### **Use Cases**

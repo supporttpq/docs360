@@ -28,7 +28,7 @@ Before using this section:
 
 #### **Instructions**
 
-**✏️ Editing Passenger Information**
+**Editing Passenger Information**
 
 1. **Navigate to the Booking Page** → Go to the **Passenger Details** tab.
 2. **Click on a Passenger** → This opens an editing form for that individual.
@@ -52,7 +52,7 @@ Before using this section:
 
 ***
 
-**📞 Adding an Emergency Contact**
+**Adding an Emergency Contact**
 
 1. **Within the passenger editing page**, click **Add** under the **Emergency Contact** section.
 2. Fill in the following fields:
@@ -63,7 +63,7 @@ Before using this section:
 
 ***
 
-#### ✅ Confirmation
+#### Confirmation
 
 Once saved:
 
@@ -72,7 +72,7 @@ Once saved:
 
 ***
 
-#### 🧠 Best Practices
+#### Best Practices
 
 * Always confirm the accuracy of **passport and insurance data**, especially before departure.
 * Ensure **emergency contacts** are reachable and understand their role.

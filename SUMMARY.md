@@ -70,13 +70,14 @@
   * [Offer template](offers/offer-template.md)
   * [Select text for Offers](offers/select-text-for-offers.md)
   * [Customer Offer SMS template](offers/customer-offer-sms-template.md)
-  * [Customer offer automatic flow](offers/customer-offer-automatic-flow.md)
+  * [Customer offers automatic flow](offers/customer-offer-automatic-flow.md)
 * [Campaign Statistics](campaign-statistics.md)
 * [Live Offer Confirmation](live-offer-confirmation.md)
 
 ## Customer
 
-* [Customers](customer/customers.md)
+* [Customers](customer/customers/README.md)
+  * [Customer Details](customer/customers/customer-details.md)
 
 ***
 
@@ -113,6 +114,7 @@
 * [Export](export/README.md)
   * [Export - Scheduled Reports](export/export.md)
 * [Invoice](invoice.md)
+* [Booking Date Manager](booking-date-manager.md)
 * [Gift Card Payments](gift-card-payments.md)
 * [Daily Export file](daily-export-file.md)
 * [Autobilling](autobilling/README.md)
@@ -134,13 +136,14 @@
 
 ***
 
-* [Price List Generator](generate-pricelist.md)
 * [Price regulation rules](price-regulation-rules.md)
-* [Relational Price list](relational-price-list.md)
-* [Price List Custom Hotel days Service](price-list-custom-hotel-days-service.md)
-* [Profit margin rules](profit-margin-rules.md)
-* [Packages Generator](packages-generator.md)
 * [Pricelist Tags](pricelist-tags.md)
+* [Price List Custom Hotel days Service](price-list-custom-hotel-days-service.md)
+* [Relational Price list](relational-price-list.md)
+* [Profit margin rules](profit-margin-rules.md)
+* [Live Offer Profit Margin](live-offer-profit-margin.md)
+* [Price List Generator](generate-pricelist.md)
+* [Packages Generator](packages-generator.md)
 * [Free room count behavior](free-room-count-behavior.md)
 * [2 x Child prices + Child price discount](2-x-child-prices-+-child-price-discount/README.md)
   * [How CH1P1 & CH2P1 is calcualated in Price List](2-x-child-prices-+-child-price-discount/how-ch1p1-and-ch2p1-is-calcualated-in-price-list.md)
@@ -197,8 +200,8 @@
   * [Create / Edit rule](close-out/create-edit-rule.md)
   * [Enable / Disable rule](close-out/enable-disable-rule.md)
 * [Layout Elements](layout-elements.md)
-* [Hotel Beds](hotel-beds.md)
-* [Hotel Bed Banks - FAQ](hotel-bed-banks-faq.md)
+* [Hotel Beds](hotel-beds/README.md)
+  * [Hotel Bed Banks - FAQ](hotel-beds/hotel-bed-banks-faq.md)
 * [Hotel combination](hotel-combination.md)
 * [Hotel Contracts](hotel-contracts/README.md)
   * [Hotel contract - General](hotel-contracts/hotel-contract-general.md)
@@ -216,10 +219,12 @@
   * [Facilities - Hotel Contract Configuration](hotel-contracts/facilities-hotel-contract-configuration.md)
   * [Actions - Hotel Contract Configurations](hotel-contracts/actions-hotel-contract-configurations.md)
   * [Activity Log - Hotel Contract Configuration](hotel-contracts/activity-log-hotel-contract-configuration.md)
-* [Business Intelligence – Allotment Overview](business-inteligence.md)
-  * [Business Intelligence – Flights](business-inteligence/business-intelligence-flights.md)
-  * [Business Intelligence – Accommodation](business-inteligence/business-intelligence-accommodation.md)
+* [Business Intelligenge](business-intelligenge/README.md)
+  * [Business Intelligence – Allotment Overview](business-intelligenge/business-inteligence.md)
+  * [Business Intelligence – Flights](business-intelligenge/business-intelligence-flights.md)
+  * [Business Intelligence – Accommodation](business-intelligenge/business-intelligence-accommodation.md)
 * [Hotel and transfer confirmation e-mail to suppliers](hotel-and-transfer-confirmation-e-mail-to-suppliers.md)
+* [Special Offers](special-offers.md)
 * [Seats vs Beds](seats-vs-beds.md)
 
 ## Transport
@@ -237,6 +242,7 @@
   * [Passengers informations](transport/transport/passengers-informations.md)
   * [Transport Reporting](transport/transport/transport-reporting.md)
   * [Transport Allotment adjustment for Dynamic Transport](transport/transport/transport-allotment-adjustment-for-dynamic-transport.md)
+  * [Add Transport Wizard](transport/transport/add-transport-wizard.md)
 
 ***
 

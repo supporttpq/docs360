@@ -116,8 +116,11 @@ Before creating a new payment method, ensure:
     | **Is Cash Payment?**           | Check if this method represents a **cash transaction**.                                               |
     | **Active**                     | Enable this option if the method should be **available for use** in bookings or financial operations. |
 
-    > ⚠️ **Note**: If selecting **VISA** as the card type and the customer pays using a **Visa/Dankort** on the **DIBS** platform, DIBS will treat this as a **VISA** transaction. As a result, the payment will be registered using the **VISA** payment method in Tourpaq, not the Visa/Dankort method.
 
+
+{% hint style="danger" %}
+**Note**: If selecting **VISA** as the card type and the customer pays using a **Visa/Dankort** on the **DIBS** platform, DIBS will treat this as a **VISA** transaction. As a result, the payment will be registered using the **VISA** payment method in Tourpaq, not the Visa/Dankort method.
+{% endhint %}
 
 4. Other useful fields:
 

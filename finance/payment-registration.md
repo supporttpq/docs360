@@ -29,7 +29,7 @@ To access and use the Payments section:
 
 #### Instructions
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Filtering Data**
 
@@ -54,7 +54,7 @@ To access and use the Payments section:
    * **Dept Date**, **Booking**, **GiftCard No** – Optional fields to link payment
    * **Extra Order**, **Amount**, **Comments** – Add payment context
 2. Ensure all mandatory fields are filled
-3. Click **Save** (if available) to commit the entry
+3. Click **Save** to commit the entry
 
 **Exporting Data**
 

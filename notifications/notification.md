@@ -2,7 +2,7 @@
 
 ### Overview
 
-The **Reservation Notifications** page is a system-level tool used to **monitor, review, and manage issues and alerts related to bookings**. It centralizes all system-generated warnings, errors, and informational messages to help users maintain data integrity and ensure smooth booking operations.
+The **Notifications** page is a system-level tool used to **monitor, review, and manage issues and alerts related to bookings**. It centralizes all system-generated warnings, errors, and informational messages to help users maintain data integrity and ensure smooth booking operations.
 
 <figure><img src="../.gitbook/assets/image (243).png" alt=""><figcaption></figcaption></figure>
 

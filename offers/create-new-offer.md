@@ -1,18 +1,18 @@
 # Create new offer
 
-### 📌 Overview
+### Overview
 
 The **Customer Offer** feature allows agents to build personalized travel offers for customers or prospects. Offers can be created directly from the **Office Management** module or while initiating a **New Booking**. They can include custom transport and hotel selections, upsell items, flexible passenger configurations, and tailored communication.
 
 ***
 
-### 🎯 Purpose
+### Purpose
 
 * To generate customized travel proposals for potential or existing customers.
 * To provide agents with a centralized view for selecting, editing, and reviewing offers.
 * To facilitate sending proposals via email and track offer status.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (5).png" alt=""><figcaption></figcaption></figure>
 
 The offer can be sent to an existing customer or to someone that doesn't yet exist in the system. We call this person an offeree or a potential customer. Mandatory info is their email address and first name.
 
@@ -25,9 +25,9 @@ The offer can be sent to an existing customer or to someone that doesn't yet exi
 
 Once a proposal is selected Relevant upsale proposals are presented. You can include them in the basket, increasing the offer total, or propose them as optional upgrades. You can include them in the basket, increasing the offer total, or propose them as optional upgrades. This Golfbag product can be selected and added in the basket And this meal flight product can be proposed as an optional upgrade without increasing the offer's total amount. Once the upsales are decided we need to update the price and save this offer in the basket&#x20;
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### 🧭 Instructions
+### Instructions
 
 #### Step 1: Accessing the Offer Builder
 
@@ -107,7 +107,7 @@ Click **Update Price** to reflect selections.
 
 <figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### 🔄 Post-Sending Options
+### Post-Sending Options
 
 From the Offer Overview:
 
@@ -122,7 +122,7 @@ After the success confirmation, an email sent date is visible for the offer.&#x2
 
 ***
 
-### 💡 Best Practices
+### &#x20;Best Practices
 
 * Always double-check passenger age before pricing
 * Use optional upsells to increase value and personalization

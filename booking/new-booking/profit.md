@@ -36,8 +36,18 @@ The **Profit** tab provides a clear breakdown of the financial outcome of a book
     | **Turnover** | The price paid by the customer for each item or service.                   |
     | **Cost**     | The internal cost associated with each item or service.                    |
     | **Profit**   | The calculated difference between Turnover and Cost.                       |
-3. **Edit Costs (if permitted):**
-   * You can update **cost values** manually in the table.
-   * Use the following buttons after editing:
-     * **Save for all** – saves changes made to all listed items.
-     * **Save individual** – saves changes only to a specific line or item.
+3.  **Edit Costs (if permitted):**
+
+    You can update Cost manually for the booking.
+
+    * To update cost for **all passengers**:
+      * Enter the new total cost (split across all passengers) in the emtpy field.
+      * Click **Save for all**
+      * Add a mandatory note
+      * Save changes.
+    * To update the Cost **individually for one or more passengers**:
+      * Click **Save individual**
+      * In the popup, select the passengers that should have new cost
+      * Enter the new cost per passenger and note (mandatory)
+      * Saves changes.
+    * Important: When editing Cost, all previous cost changes on all passengers will be overwritten for the specific Cost Category (Transport, Hotel, Extra etc). Only the most recent Cost change will apply for the Category!

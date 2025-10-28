@@ -1,5 +1,9 @@
 # Balance Administration
 
+### Overview
+
+The **Balance Administration** feature in Tourpaq is designed to streamline the management of financial transactions related to bookings, ensuring accurate tracking and reconciliation of payments, refunds, and balances.
+
 Applies for Administrator and Financial
 
 This module contains 5 other submodules:

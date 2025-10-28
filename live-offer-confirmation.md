@@ -1,12 +1,12 @@
 # Live Offer Confirmation
 
-### 📌 Overview
+### Overview
 
 The **Live Offer Confirmation** interface is used to **monitor and manage reservation confirmations** in real-time, especially after offers have been sent and accepted by customers. It provides detailed insight into whether each booking has been successfully processed by both the **travel provider** and **Tourpaq**.
 
 ***
 
-### 🎯 Purpose
+### Purpose
 
 This tool is essential for:
 
@@ -16,9 +16,9 @@ This tool is essential for:
 
 <figure><img src=".gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### 🧭 Interface Explanation & Instructions
+### Interface Explanation & Instructions
 
-#### 🔍 Booking Period Filters
+#### Booking Period Filters
 
 * **Start Date / End Date**
   * Set the period for which you want to see booking confirmations.
@@ -31,7 +31,7 @@ This tool is essential for:
 
 ***
 
-#### ✅ Reservation Status Filters (Checkboxes)
+#### Reservation Status Filters (Checkboxes)
 
 Use these checkboxes to filter the reservation list by status:
 
@@ -44,7 +44,7 @@ Use these checkboxes to filter the reservation list by status:
 
 ***
 
-#### 📊 Reservation Table Columns
+#### Reservation Table Columns
 
 Below the filter area, a table displays detailed booking entries:
 
@@ -68,7 +68,7 @@ Below the filter area, a table displays detailed booking entries:
 
 ***
 
-### 🔄 Workflow & Usage Tips
+### Workflow & Usage Tips
 
 1. **Use the date filters** to narrow down recent confirmations or troubleshoot specific date ranges.
 2. **Check "Failed Provider Reservation"** regularly to identify problems early.

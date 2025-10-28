@@ -2,7 +2,7 @@
 
 This section allows users to import **refund transactions** exported from **Business Central** directly into the system.
 
-#### 🧾 File Requirements
+#### File Requirements
 
 * Only files **exported from Business Central** are accepted.
 * **No header row** should be present in the file.
@@ -11,7 +11,7 @@ This section allows users to import **refund transactions** exported from **Busi
 
 ***
 
-#### 📥 Import Steps
+#### Import Steps
 
 1. Navigate to the **Refund File Import** page.
 2. Select the **Business Central** tab.
@@ -22,8 +22,12 @@ This section allows users to import **refund transactions** exported from **Busi
 
 <figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### 🧩 Related Notes
+#### Related Notes
 
 * Each line is automatically matched to a booking based on the **Booking Number**.
 * **Payment Code** must correspond to a refund-capable payment method already defined in the system.
 * Errors due to format mismatches or unmatched records will be shown after clicking **Process**.
+
+{% hint style="warning" %}
+Note: Only documents from exported from "Business Central" can be processed. Columns order should be: "PaymentCode; Date; BookingNo; Amount;Comment" - without header
+{% endhint %}

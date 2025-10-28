@@ -1,12 +1,12 @@
 # Payment File Import
 
-### 📄 Overview
+### Overview
 
 The **Payments** module provides functionalities to manually  import payments associated with bookings and customers. It includes a robust interface for registering new payments and a streamlined **Payment File Import** system for automating bank payments processing.
 
 ***
 
-### 🎯 Purpose
+### Purpose
 
 Each company in the system can choose a certain bank where its payments will be made.
 
@@ -26,7 +26,7 @@ All the imported payments will appear in Payment Registration.
 
 ***
 
-### 🧭 Instructions
+### Instructions
 
 #### &#x20;**Payment File Import**
 
@@ -34,9 +34,9 @@ All the imported payments will appear in Payment Registration.
 2. Navigate to the **Payment File Import** section.
 3. Upload the file.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### 📌 Notes
+### Notes
 
 * Payment files are validated upon upload. Any unmatched or erroneous records will be flagged for review.
 

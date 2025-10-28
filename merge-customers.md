@@ -1,18 +1,18 @@
 # Merge customers
 
-### 🔐 Availability
+### Availability
 
 This module is available **only for Administrator-type users**.
 
 ***
 
-### 📌 Purpose
+### Purpose
 
 The **Doublet Customer Management** tool identifies and processes **duplicate customer entries**, based on key matching criteria, and allows administrators to **merge**, **delete**, or **accept** these entries—helping maintain a clean and accurate customer database.
 
 ***
 
-### 🧮 Grouping Logic
+### Grouping Logic
 
 Customers are automatically grouped by one or more of the following matching criteria:
 
@@ -29,11 +29,11 @@ Once a customer is processed (merged, deleted, or accepted), it will no longer b
 
 ***
 
-### 🛠️ Operations on Doublets
+### Operations on Doublets
 
 There are **three types of actions** available for handling doublet customer groups:
 
-#### 1. ✅ Merging
+#### 1. Merging
 
 **🔹 Full Group Merge:**
 
@@ -54,7 +54,7 @@ There are **three types of actions** available for handling doublet customer gro
 
 ***
 
-#### 2. 🗑️ Deleting
+#### 2. Deleting
 
 **🔹 Full Group Delete:**
 
@@ -69,7 +69,7 @@ There are **three types of actions** available for handling doublet customer gro
 
 ***
 
-#### 3. ✔️ Accepting
+#### 3. Accepting
 
 **🔹 Full Group Accept:**
 
@@ -86,7 +86,7 @@ There are **three types of actions** available for handling doublet customer gro
 
 ***
 
-### 🏘️ Special Case: ZIP Code + Address Grouping
+### Special Case: ZIP Code + Address Grouping
 
 * Instead of deleting duplicates, this method **links** all customers in the group.
 * A **‘parent customer’** must be selected.
@@ -100,7 +100,7 @@ There are **three types of actions** available for handling doublet customer gro
 
 <figure><img src=".gitbook/assets/69d3b6e8-726a-421c-ba1c-b4ca7124becd.webp" alt=""><figcaption></figcaption></figure>
 
-### ⚠️ Performance Tips
+### Performance Tips
 
 * For large groups:
   * Perform **several subgroup operations** first.
@@ -109,14 +109,10 @@ There are **three types of actions** available for handling doublet customer gro
 
 ***
 
-### 📘 Summary Table
+### Summary Table
 
 | Action | Full Group                    | Subgroup                               |
 | ------ | ----------------------------- | -------------------------------------- |
 | Merge  | Merges all to 1, deletes rest | Merges selected to 1, deletes selected |
 | Delete | Deletes entire group          | Deletes only selected                  |
 | Accept | Keeps all, skips future match | Accepts selected, skips future match   |
-
-***
-
-Let me know if you'd like a PDF version or internal help page layout with screenshots!

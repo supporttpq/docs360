@@ -1,19 +1,19 @@
 # Campaign Statistics
 
-### 🔎 Overview
+### Overview
 
 The **Campaign Statistics Dashboard** offers a centralized interface to monitor and evaluate the **performance of marketing campaigns** across a selected time period. It consolidates data such as bookings, sales revenue, applied discounts, and ongoing campaign statuses—presented through visual graphs and summary cards for clarity and actionable insights.
 
 <figure><img src=".gitbook/assets/image (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-### 🗓️ 1. Date Interval Selection
+### &#x20;1. Date Interval Selection
 
 Use the **date range filter** to narrow down statistics and focus on a specific period.
 
 * **Function**: Filters all campaign statistics, graphs, and tables based on selected start and end dates.
 * **Example Range**: 01-03-2025 to 31-03-2025
 
-### 🧾 Campaign Summary Cards
+### Campaign Summary Cards
 
 Displayed at the **top of the dashboard**, these KPIs give a snapshot of overall campaign performance:
 
@@ -30,7 +30,7 @@ Displayed at the **top of the dashboard**, these KPIs give a snapshot of overall
 * ✅ _0 fully booked_
 * ❌ _0 deleted_&#x20;
 
-### 📈 Graph View – Booking Trends
+### &#x20;Graph View – Booking Trends
 
 * **Chart Type**: Line chart with shaded area for volume emphasis.
 * **X-Axis**: Dates within the selected range.
@@ -39,7 +39,7 @@ Displayed at the **top of the dashboard**, these KPIs give a snapshot of overall
   * Peaks in the chart indicate **high customer engagement days**.
   * Helps correlate **marketing push periods** (e.g., newsletters, promotions) with booking spikes.
 
-### 📋 Campaign Table View
+### &#x20;Campaign Table View
 
 A **tabular list** providing granular details about each campaign within the selected interval.\
 Includes key data such as:
@@ -67,16 +67,16 @@ Useful for comparing the **individual campaign performance** side-by-side.
 | **Total Discount**     | Total value of discounts given (43,200).                               |
 | **Total Profit**       | Profit generated after discounts (651,772.845).                        |
 
-### 🔍 Action Button – “View”
+### Action Button – “View”
 
 Each campaign row includes a **"View"** button:
 
 * Opens a **detailed analytics page** for that specific campaign.
 * Allows further breakdown by destination, customer segment, channel, and more.
 
-<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### 🧠 Conclusion
+### Conclusion
 
 The **Campaign Statistics Dashboard** enables marketing teams to:
 

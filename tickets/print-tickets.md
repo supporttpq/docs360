@@ -4,13 +4,13 @@
 
 <figure><img src="../.gitbook/assets/image (161).png" alt=""><figcaption></figcaption></figure>
 
-### 📌 Overview
+### Overview
 
 The **Print Tickets** interface allows users to **generate and send travel tickets** for a specific reservation. It is designed to offer flexible options for printing, emailing, or re-sending electronic tickets (E-tickets).
 
 ***
 
-### 🎯 Purpose
+### Purpose
 
 This module facilitates:
 
@@ -22,7 +22,7 @@ It is primarily used in back-office workflows by customer support, reservation a
 
 ***
 
-### ✅ Preconditions
+### Preconditions
 
 * A valid booking number must exist in the system.
 * The booking must be confirmed and contain travel components eligible for ticketing.
@@ -30,7 +30,7 @@ It is primarily used in back-office workflows by customer support, reservation a
 
 ***
 
-### 🧭 Fields and Options
+### Fields and Options
 
 | Field / Option        | Description                                                                                                                                          |
 | --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -45,7 +45,7 @@ It is primarily used in back-office workflows by customer support, reservation a
 
 ***
 
-### 🧪 Instructions for Use
+### Instructions for Use
 
 1. **Enter a valid Booking No**.
    * The system will auto-populate the customer name.
@@ -60,7 +60,7 @@ It is primarily used in back-office workflows by customer support, reservation a
 
 <figure><img src="../.gitbook/assets/image (162).png" alt=""><figcaption></figcaption></figure>
 
-### 📌 Overview
+### Overview
 
 The **Reprint Per Transport** module is a specialized tool for batch reprinting tickets based on transport segments. It allows users to filter bookings by transport-related criteria such as travel date, booking date, length of stay, and transport type, and to print all matching tickets in one go.
 
@@ -68,7 +68,7 @@ This feature is particularly useful for preparing grouped ticket printouts for a
 
 ***
 
-### 🎯 Purpose
+### Purpose
 
 * To reprint tickets for **multiple bookings tied to specific transports**.
 * To enable **bulk printing** based on departure, booking period, or travel duration.
@@ -76,7 +76,7 @@ This feature is particularly useful for preparing grouped ticket printouts for a
 
 ***
 
-### ✅ Preconditions
+### Preconditions
 
 * Transport data must be available and correctly assigned to bookings.
 * Tickets must have already been generated (this is a **reprint** tool, not initial issue).
@@ -84,7 +84,7 @@ This feature is particularly useful for preparing grouped ticket printouts for a
 
 ***
 
-### 🧭 Fields and Options
+### Fields and Options
 
 | Field                      | Description                                                                                                                                                                                          |
 | -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -97,7 +97,7 @@ This feature is particularly useful for preparing grouped ticket printouts for a
 
 ***
 
-### 🧪 Instructions for Use
+### Instructions for Use
 
 1. Open the **Reprint Per Transport** tab from the **Print Tickets** page.
 2. Use the **Booking period** and/or **Departure period** filters to narrow down the list of relevant bookings.

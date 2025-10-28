@@ -15,10 +15,10 @@ description: >-
 
 Users can apply multiple filters to view sent messages:
 
-* **SMS type** – Allows selection of the SMS type (e.g., confirmation, cancellation, payment notification).
+* **SMS type** – Allows selection of the SMS type (e.g. Booking SMS, Customer SMS, Dynamic SMS, Select Offer SMS, Flight Time Change ).
 * **Sent period** – Users can select a time range to filter SMS messages sent within that period.
 * **Phone number** – Enables searching for SMS messages sent to a specific phone number.
-* **Status** – Filters messages based on their status (e.g., sent, failed, delivered).
+* **Status** – Filters messages based on their status (e.g., sent, failed, received).
 * **More Filters** – Provides access to additional filters for more detailed searches.
 * **Clear** – Resets all active filters.
 * **Display** – Displays the results based on the selected filters.
@@ -30,9 +30,7 @@ Normally, this section would display a list of sent SMS messages with details su
 * **Recipient phone number**
 * **SMS type**
 * **Sending date and time**
-* **Message status (sent, failed, delivered, etc.)**
-
-In the provided screenshot, no records are displayed, meaning no SMS messages match the applied filters.
+* **Message status (sent, failed, queued, etc.)**
 
 ### **Usage and Purpose**
 

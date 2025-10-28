@@ -2,17 +2,22 @@
 
 ### **Overview**
 
-The **Booking History** section provides a full timeline of actions performed on a booking. It enables users to **track who made changes**, **what was changed**, and **when**—offering complete visibility into the life cycle of a booking.
+The **Booking History** tab provides a detailed log of all changes made to a specific booking.\
+Every modification—manual or automatic—is recorded with the responsible user, date, time, and the values before and after the change.\
+This ensures complete transparency and traceability across all booking activities.
 
 ***
 
 ### **Purpose**
 
-This feature is essential for:
+The purpose of the **History** view is to help users track:
 
-* Auditing booking modifications.
-* Tracing issues or confirming updates.
-* Ensuring transparency and accountability across teams.
+* Who made a change and when.
+* What data was modified (old and new values).
+* Which system component (engine) triggered the update — for example, API Core or a manual user action.
+
+It is a key tool for troubleshooting, auditing, and reviewing booking evolution over time.
+
 * Resolving customer support questions related to changes, payments, or cancellations.
 
 ***
@@ -25,40 +30,48 @@ This feature is essential for:
 
 ***
 
-### **Instructions for Use**
+### **Instructions**
 
-#### **🔎 Accessing Booking History**
+**Accessing the History Tab**
 
-1. Navigate to the **Booking Page**.
-2. Click on the **“Booking History”** tab or section.
-3. A chronological timeline will display all key events associated with the booking.
-
-***
-
-### **Field-by-Field Breakdown**
-
-| **Field**                | **Description**                                                                                                                     |
-| ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
-| **Booking Creator**      | The user who originally created the booking, with timestamp.                                                                        |
-| **Booking Details**      | Name of the service (e.g., hotel, flight), location, check-in/check-out or travel dates.                                            |
-| **Booking Date**         | The exact date the booking was placed.                                                                                              |
-| **Confirmation Number**  | A unique system-generated identifier for the booking. Use this for customer communication and system tracing.                       |
-| **Cost / Payment Info**  | Total amount paid, breakdown by taxes, fees, deposits, and balance due.                                                             |
-| **Status**               | The current state of the booking (e.g., _Confirmed_, _Pending_, _Cancelled_, _Refunded_).                                           |
-| **Modification History** | Shows what was changed (e.g., hotel swapped, passenger name edited, dates rescheduled), by whom, and when.                          |
-| **Cancellation Info**    | If applicable, includes the cancellation date, cancellation reason (if provided), and terms (e.g., penalty applied or full refund). |
+1. Open a booking from the booking overview or search results.
+2. Select the **History** tab at the top of the booking details screen.
+3. Use the search or expand/collapse options to view or filter the desired history entries.
 
 ***
 
-### ✅ What You Can Do
+**Available Columns**
 
-* Hover over modification entries for detailed tooltips.
-* Check user actions to monitor staff performance or error tracing.
-* Cross-reference status changes with payment updates for financial verification.
+| **Field**     | **Description**                                                                                     |
+| ------------- | --------------------------------------------------------------------------------------------------- |
+| **Date**      | The date when the change was made.                                                                  |
+| **Time**      | The exact time the modification occurred.                                                           |
+| **User**      | The name of the user or system that performed the change (e.g., _rowebtpq_, _APICore_).             |
+| **Version**   | Indicates the booking version affected by the change.                                               |
+| **Change**    | Describes what was modified (e.g., _Status change_, _Passenger name change_, _Room number update_). |
+| **Old Value** | The value before the modification.                                                                  |
+| **New Value** | The value after the modification.                                                                   |
+| **Passenger** | Displays which passenger the change relates to, when applicable.                                    |
+| **Engine**    | Identifies the source system of the change (for example, _APICore_).                                |
 
 ***
 
-### 🧠 Best Practices
+**Functions and Filters**
 
-* Encourage staff to **always log meaningful notes or comments** when modifying a booking.
-* Use the **confirmation number** when reaching out to vendors or internal support.
+* **Expand / Collapse all:**\
+  Expands or collapses all history entries for easier browsing.
+* **Search by text:**\
+  Allows searching for specific keywords, passengers, or change types.
+* **Terms History (sub-tab):**\
+  Shows all updates made to the booking’s terms and conditions.
+
+***
+
+#### **Example Use Case**
+
+**Scenario:**\
+A booking has an incorrect final price, and the user needs to verify when the change occurred.
+
+1. Open the **History** tab.
+2. Search for “Total change”.
+3. Review the **Old Value** and **New Value** columns to identify when the price was updated and by which user or system.
