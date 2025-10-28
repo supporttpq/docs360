@@ -29,7 +29,7 @@ To provide a flexible and organized view of all travel-related offers, allowing:
 * Offers must be created either manually by an agent or through integrated customer interactions.
 * Customer and travel data should be available in the system for accurate filtering.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Filters and Search Fields**
 
