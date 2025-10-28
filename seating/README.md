@@ -1,8 +1,8 @@
 # Seating
 
-#### Seat List
+### Seat List
 
-**Overview**
+#### **Overview**
 
 The **Seat List** page is used to define and manage seat layouts for different aircraft types. Each seat layout represents the configuration of seats used for a specific plane model, including the seat distribution per row and layout type.
 
@@ -10,7 +10,7 @@ This setup ensures that correct seat maps can be assigned to flights or transpor
 
 ***
 
-**Purpose**
+#### **Purpose**
 
 The **Seat List** allows system administrators to:
 
@@ -23,7 +23,7 @@ Seat layouts defined here are later used when configuring transport departures.
 
 ***
 
-**Preconditions**
+#### **Preconditions**
 
 Before configuring seat layouts:
 
@@ -33,7 +33,7 @@ Before configuring seat layouts:
 
 ***
 
-**Instructions**
+#### **Instructions**
 
 1. **Show Unused** – Toggle this option to display layouts that are no longer in active use.
 2. **Create** – Click to create a new seat layout. When creating, you must define:
@@ -62,9 +62,9 @@ Before configuring seat layouts:
 | **Assign Seats**        | Opens the seat map editor to define and assign seat numbers.                                   |
 | **🗑️**                 | Deletes the layout entry.                                                                      |
 
-#### Assign Seats
+### Assign Seats
 
-**Overview**
+#### **Overview**
 
 The **Assign Seats** page is used to configure the detailed seat map for a specific aircraft or transport layout.\
 Here, you define the exact seat numbering, row structure, and position of each seat within the plane, ensuring that the seat map matches the real-world configuration used by the airline or transport provider.
@@ -73,7 +73,7 @@ Once seats are assigned, this layout is used in **Transport → Departures** to 
 
 ***
 
-**Purpose**
+#### **Purpose**
 
 The purpose of this feature is to:
 
@@ -84,7 +84,7 @@ The purpose of this feature is to:
 
 ***
 
-**Preconditions**
+#### **Preconditions**
 
 Before assigning seats:
 
@@ -95,7 +95,7 @@ Before assigning seats:
 
 ***
 
-**Instructions**
+#### **Instructions**
 
 <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
