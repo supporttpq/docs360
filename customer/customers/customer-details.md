@@ -22,7 +22,7 @@ The **Customer Details View** is used to:
 
 #### **Sections Overview**
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The page is divided into three main areas:
 

@@ -28,7 +28,7 @@ This behavior occurs regardless of the invoice status and is part of the current
 3.  Navigate to the corresponding **hotel rule** used to generate that invoice.\
 
 
-    <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 4.  Delete the rule and confirm it has been successfully removed.\
 
 

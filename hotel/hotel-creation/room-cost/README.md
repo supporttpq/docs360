@@ -30,7 +30,7 @@ Room Cost Rules define the base value that the agency pays to the hotel for rese
 **Purpose**\
 The purpose of Room Cost Rules is to ensure accurate and flexible cost allocation in different booking scenarios. By applying configurable conditions, the system can adjust how costs are calculated and update them automatically when thresholds are reached.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **How It Works**
 
@@ -264,7 +264,7 @@ Hotel Extra Cost Rules define additional costs that the agency pays to hotels. T
 **Purpose**\
 The purpose of these rules is to ensure that hotel-related expenses beyond the base room cost are correctly accounted for. This provides a transparent view of the agency’s expenses and supports more precise profit analysis.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Types of Extra Cost Rules**
 

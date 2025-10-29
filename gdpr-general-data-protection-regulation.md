@@ -1,38 +1,72 @@
 # GDPR (General Data Protection Regulation)
 
-GDPR is a regulation in EU law on data protection and privacy for all individuals within the European Union (EU) and the European Economic Area (EEA). It also addresses the export of personal data. The Tourpaq system complies with this regulation, and the procedure of storing personal data is no longer valid. In the context of the Tourpaq system, this is done with a focus on customers **which had returned home from a trip since several days, which is configurable in the system**, \*\*if they do not have other bookings planned \*\* and also if **the customer has the newsletter option unchecked** in the Customer details window.
+**Overview**\
+The **General Data Protection Regulation (GDPR)** is an EU law governing data protection and privacy for individuals within the European Union (EU) and the European Economic Area (EEA). It also regulates the transfer of personal data outside these areas.\
+Tourpaq fully complies with GDPR requirements, ensuring secure and lawful handling of personal data.
+
+The Tourpaq system complies with this regulation, and the procedure of storing personal data is no longer valid. In the context of the Tourpaq system, this is done with a focus on customers **who have returned home from a trip for several days, which is configurable in the system**, \*\*if they do not have other bookings planned \*\* and also if **the customer has the newsletter option unchecked** in the Customer details window.
 
 So, for a certain customer which fulfills those conditions, the anonymisation can be performed automatically by running the service. Customers can be anonymized also instantly, in "Customer Center" by hitting the "Anonymize" button if **customer does not have active bookings in the future**. For using the anonymization functionality, an user with sysadmin role must be used.
 
+#### Purpose
+
+The GDPR module in Tourpaq ensures that personal data of customers who no longer have active or future bookings is anonymized or deleted according to configured settings.
+
+The anonymization process primarily targets **customers who have returned from a trip** and meet the following conditions:
+
+* They have **no future bookings**.
+* The **newsletter subscription** option is **unchecked** in the _Customer Details_ window.
+* A configurable number of days have passed since their return date.
+
 ### Continuous deletion <a href="#continuous-deletion" id="continuous-deletion"></a>
 
-This service can be used by a user with sysadmin rights. When this type of user is logged into Tourpaq, the **GDPR** Continuous Deletion settings can be accessed from the **Setup** menu:
+#### Access
+
+The Continuous Deletion settings are available under:\
+**Setup → GDPR → Continuous Deletion**
+
+Only users with **Sysadmin rights** can activate or modify these settings.
 
 <figure><img src=".gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
 
 GDPR- Continuous Deletion service settings allows to be activated in different ways depending on which information related to customer is needed to be anonymized. Settings below are relevant only when continuous deletion is choosed.
 
-#### **Activate continous deletion for customers that had returned home for more than the number of days set**
+#### Configuration Options
 
-Customers that had returned home and do not have other bookings in the future will be anonymized automatically by the service. This setting can be used also individually, as other settings below GDPR. When customer is anonymized, relevant data linked to him is removed or replaced with predefined text to suggest that he was anonymized. Related to a booking of a customer anonymized, following data will be affected:
+**1. Activate Continuous Deletion for Customers**
 
-* **Customer details** name, address (country and zip code are not replaced), e-mail, phone, secondary data from a customer is removed, customer details in customer center are changed also.
-* **Passenger details** name, passport no., nationality, insurance company, insurance police no., country, zipcode, city, address, transport comments, early startdate Gouda insurance, emergency contacts. Names are changed also in the booking overview.
-* **Emails or SMS** shown on the booking, in E-mails or SMS tab are deleted. The e-mail addresses are anonymized, this meaning that real e-mail addresses are replaced with addresses containg "Anonymized" word in it.
-* **Comments** shown on the booking are are deleted. In the comment boxes "Anonymized" word is placed in order to inform the user that this part was also anonymized.
-* **SSR** codes shown on the booking, if are selected, are removed after anonymization
-* **Profit** details are affected and the passenger names for which profit and cost is detailed are not displayed anymore.
-* **Transport seating** is also affected for a booking, the passenger real names are not shown when hovering with mouse over. Anonymized names are displayed.
-* **Tee times** is affected for a booking and it will not display the passenger real names. Anonymized names are shown.
-* **Payment type** for a booking of an anonymized customer will replace the payment type wity "GDPR Sensitive" text for users logged with other account than "Administrator" or "Financial". Before anonymization, the Payment type should be marked as GDPR Sensitive from "Method of Payment":
+Automatically anonymizes customers who have returned home more than the configured number of days ago **and have no future bookings**.\
+When a customer is anonymized, the following data is affected:
+
+* **Customer details:**\
+  Name, address (except country and ZIP code), email, phone, and secondary information.
+* **Passenger details:**\
+  Name, passport number, nationality, insurance details, address, emergency contacts.
+* **Emails and SMS:**\
+  All related records are deleted. Email addresses are replaced with anonymized placeholders.
+* **Comments:**\
+  Removed and replaced with the word “Anonymized.”
+* **SSR codes:**\
+  Deleted.
+* **Profit details:**\
+  Passenger names are hidden.
+* **Transport seating:**\
+  Passenger names replaced with anonymized names.
+* **Tee times:**\
+  Passenger names replaced with anonymized names.
+* **Payment type:**\
+  Replaced with “GDPR Sensitive” for non-administrator or non-financial users.\
+  (The payment type must first be marked as _GDPR Sensitive_ in _Method of Payment_.)
 
 <figure><img src=".gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
 
-* **Extras, discounts or supplements marked as highly sensitive** are also anonymized. For extras:
+* **Extras, discounts, and supplements:**\
+  Any marked as _Highly Sensitive_ are anonymized.
+  * For extras: a new category “GDPR Sensitive” appears in the booking overview.
 
 <figure><img src=".gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
 
-* for discounts and supplements
+* For discounts/supplements: displayed as “GDPR Sensitive” in the passenger grid.
 
 <figure><img src=".gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
 
@@ -40,41 +74,49 @@ When extras marked as highly sensitive are assigned to a passenger, after custom
 
 When discounts or supplements marked as highly sensitive are assigned to a passenger anonymized, those are shown are GDPR Sensitive in the passengers grid over a booking.
 
-Please note than when anonimyzing a customer, all related bookings to this customer are affected.
+{% hint style="warning" %}
+**Note:** When a customer is anonymized, **all related bookings** are affected.
+{% endhint %}
 
-#### **Activate deletion for SSR codes**
+**2. Activate Deletion for SSR Codes**
 
-&#x20;By activating this option, service will delete automatically SSR codes which are selected per passenger in the bookings. If only this option is selected together with the option for continuous deletion, then only SSR codes are deleted from the bookings in the range.
+Automatically deletes selected SSR codes for passengers within the specified date range.
 
-#### **Activate deletion for booking comments**&#x20;
+**3. Activate Deletion for Booking Comments**
 
-By activating this option, service will delete automatically booking comments added over the bookings in the range. The attachments added in the "Comments" tab are also removed.
+Automatically deletes comments and any attachments from bookings within the defined range.
 
-#### **Activate deletion for bonus codes only**&#x20;
+**4. Activate Deletion for Bonus Codes**
 
-By activating this option, service will delete automatically bonus codes which were added for all bookings in the range.
+Automatically deletes bonus codes added to bookings within the defined range.
 
-#### **Activate continuous deletion for excursion guest customer - that are older than the number of days set**
+**5. Activate Continuous Deletion for Excursion Guests**
 
-This option will anonymize the excursion guest customers (customers with bookings in Destination App and Visit Sun).
+Anonymizes excursion guest customers (e.g., Destination App and Visit Sun users) older than the configured number of days.
 
-#### **Activate deletion for highly sensitive extras or discounts**
+**6. Activate Deletion for Highly Sensitive Extras or Discounts**
 
-This option will anonymize discounts, supplements and extras marked as GDPR sensitive for all bookings of anonymized customer (see details above).
+Anonymizes extras, discounts, and supplements marked as _GDPR Sensitive_ for all bookings of anonymized customers.
 
-**Delete transport reporting files for departure dates that are older than the number of days set** By activating this option, transport reporting files will be automatically deleted, when departure date is older than the number of day set.
+**7. Delete Transport Reporting Files**
 
-**Delete extra reporting files and extra category reporting files that are older than the number of days set**
+Automatically deletes transport reporting files with departure dates older than the configured number of days.
 
-By activating this option, the extra reporting files are deleted.
+**8. Delete Extra Reporting Files**
 
-**Delete hotel reporting files that are older than the number of days set**
+Deletes extra and extra category reporting files older than the configured number of days.
 
-Automatic hotel lists can be set to be deleted by activating this option.
+**9. Delete Hotel Reporting Files**
 
-Information about all anonymized users is available under the Setup/GDPR, Log tab (when logged in with sysadmin account):
+Deletes automatically generated hotel lists older than the configured number of days.
 
 <figure><img src=".gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
+
+#### GDPR Log
+
+All anonymization activities are logged and can be reviewed under:\
+**Setup → GDPR → Log**\
+(Visible only when logged in as a Sysadmin user.)
 
 ### The right to be forgotten for customers and passengers <a href="#the-right-to-be-forgotten-for-customers-and-passengers" id="the-right-to-be-forgotten-for-customers-and-passengers"></a>
 
@@ -90,4 +132,7 @@ Data anonymized is data described also for service anonymization (customer and p
 
 Anonymisation can be triggered also for one **passenger** from a booking. Data for this particular passenger is anonymized: passengers, address, email address, phone, email, phone found in customer details and passenger details like nationality, passport no., insurance, address, emails, sms and tickets.
 
-<mark style="color:red;">**Important note: if a customer/passenger is anonymized, personal data cannot be recovered anymore.**</mark>
+{% hint style="warning" %}
+**Important:** Once anonymization is performed, **personal data cannot be recovered**.\
+All anonymized data will appear in relevant reports (transport, hotel, extra, etc.) as **Anonymized**.
+{% endhint %}

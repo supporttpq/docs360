@@ -82,7 +82,7 @@ This ensures that capacity management accounts for bookings that overlap across 
 **STAY LENGTH (3, 7)**– When you hover over these cells, a tooltip appears showing the number of reserved rooms, booked rooms, available rooms and free rooms for each corresponding stay length.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The tooltip for each cell displays detailed reservation data to make it easier to interpret the information behind the cell values.
 

@@ -113,7 +113,7 @@ Once we finish completing all the fields mentioned above, we click on **Save** a
 
 In order to do that, we will have to navigate under the **Extras -> Routes** page (see the picture below).
 
-<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 After you click insert, a route will be generated and you will be able to add **pickup points** (see picture below).
 

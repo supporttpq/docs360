@@ -1,16 +1,37 @@
 # Good to Know
 
-The Good to Know section is used by guides to provide customers with any type of information related to the resorts managed by that guide. These tips are configured in the Tourpaq Office when logged in as a guide or admin, using the **Guest App -> Good to Know** menu.
+#### Overview
+
+The **Good to Know** module allows guides and admins to create and manage informational notes about specific resorts. These notes are displayed in the **Guest App**, helping guests access useful tips, local recommendations, and general information about their destination during their stay.\
+Each entry can include a short description and optional image, making it easy to provide guests with engaging, relevant, and visually supported content.
+
+#### Purpose
+
+The purpose of the **Good to Know** feature is to enhance the guest experience by giving them quick access to important or interesting information about their resort or destination.\
+This can include:
+
+* Local customs or important reminders.
+* Practical information such as transportation details, nearby facilities, or emergency contacts.
+* Recommendations for restaurants, activities, or excursions.
+* Any other useful tips provided by the guide.
+
+It ensures that guests are well-informed and can enjoy a smoother, more enjoyable holiday experience.
 
 <figure><img src=".gitbook/assets/image (20) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* Go to Guest App / Good to Know
-* Click on Create
-* Set the agency - Choose the agency that the information is related to.
-* &#x20;Set the resort or resorts - Pick the resort  this info is about.&#x20;
-* &#x20;Set the title and then set the description - Give your info a title (a short name) and a description
-* Description - Short description of the resort
-* Images can be uploaded if required - You can add a picture if you want, but it's optional.
-* Click on save
+#### How to Use
 
-&#x20;The new information is shown in the list.
+1. **Go to:** `Guest App / Good to Know`
+2. **Click** **Create** to add a new entry.
+3. **Set the Agency:**
+   * Select the agency to which this information applies.
+4. **Select Resort(s):**
+   * Choose one or more resorts where this information will be visible.
+5. **Add a Title and Description:**
+   * **Title:** A short, clear name describing the topic.
+   * **Description:** A brief explanation or tip for guests.
+6. **Upload an Image (Optional):**
+   * You can attach a relevant picture to make the information more appealing.
+7. **Click Save:**
+   * The new entry will be saved and displayed in the list.
+   * The information becomes visible to guests in the **Guest App**, under the selected resort.
