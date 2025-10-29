@@ -115,7 +115,7 @@ Once the Type is defined as _Golf_, you can create one or more extra **categorie
 
 Each extra category can be customized per brand and contains general, visual, and technical settings for booking, visibility, and integration.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Example Workflow
 

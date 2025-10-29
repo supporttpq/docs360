@@ -33,7 +33,7 @@ After entering edit mode, a **Remove or Split** button will appear above the rec
 *   **Remove or Split**:\
     Press this button to reveal a new section below the main table, providing options to either remove or split the stop sale record.
 
-    <figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **3. Split Stop Sale Records**
 

@@ -30,7 +30,7 @@ Also the Extra category has to be se as a Teetime Category Type.
 
 Teetime products draw their cost and price from **Generic Product Price Rule**, any value inserted in the Price tab will be disregarded. But a price line is required to enable the product to be sold. The priceline should look like this:
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 It is similar with the seating setting.
 

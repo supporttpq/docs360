@@ -7,13 +7,13 @@ description: >-
 
 # Export
 
-### ✅ Overview
+### Overview
 
 Tourpaq Office supports exporting structured data for various business roles: hotel suppliers, guides, transport managers, and reporting personnel. Exports are generated in **Excel-compatible XML format** and are filtered based on **date intervals**, **transport**, **resorts**, **hotels**, and more.
 
 ***
 
-### 🎯 Purpose
+### Purpose
 
 The export module was designed to:
 
@@ -24,7 +24,7 @@ The export module was designed to:
 
 ***
 
-### ⚙️ Preconditions
+### Preconditions
 
 Before generating an export:
 
@@ -35,7 +35,7 @@ Before generating an export:
 
 ***
 
-### 🧩 Export Types & Explanation
+### Export Types & Explanation
 
 #### 1. **Hotel List Export**
 
@@ -134,7 +134,7 @@ Before generating an export:
 
 ***
 
-### 🔍 Export Filters (All Templates)
+### Export Filters (All Templates)
 
 | Filter                           | Description                                                                |
 | -------------------------------- | -------------------------------------------------------------------------- |
@@ -150,7 +150,7 @@ Before generating an export:
 
 ***
 
-### 📦 Notes & Special Behaviors
+### Notes & Special Behaviors
 
 * **Repeatable blocks**: Many exports (hotel, rooming, guide) are structured in repeatable XML blocks per hotel.
 * **Optional company fields**: Some exports include dynamic columns depending on company settings (e.g. VIP codes, party package names).
@@ -159,7 +159,7 @@ Before generating an export:
 
 ***
 
-### 🧠 Tips for Developers
+### Tips for Developers
 
 * Use XML templates with clear structure and schema validation.
 * Booking history module must track every relevant field for change logs to be accurate.

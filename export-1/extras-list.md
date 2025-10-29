@@ -1,6 +1,6 @@
 # Extras List
 
-### ✅ Overview
+### Overview
 
 The **Extras Lists Export Module** is used to generate exports related to **extras** (e.g., ski rental, extra services) for operational partners such as suppliers. These exports help suppliers manage service delivery based on confirmed bookings and extras ordered by passengers.
 
@@ -8,7 +8,7 @@ Exports can be generated in **Excel XML** or **PDF** format, in both **English a
 
 ***
 
-### 👤 Availability
+### Availability
 
 * **User Role**: **Administrator only**
 * **Locations in Office**:
@@ -20,7 +20,7 @@ Each of the above uses the same filter logic but may restrict the export to the 
 
 ***
 
-### 🎯 Purpose
+### Purpose
 
 This module allows administrators to:
 
@@ -31,7 +31,9 @@ This module allows administrators to:
 
 ***
 
-### ⚙️ Fields & Filters
+### Fields & Filters
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 | Field                  | Description                                                                           |
 | ---------------------- | ------------------------------------------------------------------------------------- |
@@ -39,15 +41,15 @@ This module allows administrators to:
 | **Report type**        | Select the export format (see below).                                                 |
 | **Arrival period**     | Filters bookings where **arrival** falls within the selected range.                   |
 | **Booking period**     | Filters bookings **created** during this date range.                                  |
-| **Compress as ZIP**    | When selected, export will be downloaded in **ZIP** format.                           |
 | **Categories**         | Filter extras by a predefined **category** (e.g., ski rentals, VIP, food).            |
 | **Extras**             | Multi-select field to filter by one or more specific **extras**.                      |
+| **Columns for export** | Only selected columns will appear in the output (active if "Select Columns" is used). |
 | **Display all extras** | Ignores selection and includes **all extras** related to the filtered bookings.       |
-| **Columns**            | Only selected columns will appear in the output (active if "Select Columns" is used). |
+| **Compress as ZIP**    | When selected, export will be downloaded in **ZIP** format.                           |
 
 ***
 
-### 🧾 Report Types
+### Report Types
 
 | Report Type                   | Description                                                                                 |
 | ----------------------------- | ------------------------------------------------------------------------------------------- |
@@ -60,20 +62,9 @@ This module allows administrators to:
 
 ***
 
-### 🧰 Buttons / UI Actions
+### How to Generate Extras Lists
 
-<figure><img src="../.gitbook/assets/image (24) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-| Button                 | Action                                                                        |
-| ---------------------- | ----------------------------------------------------------------------------- |
-| **Export**             | Generates the selected report using current filters                           |
-| **Columns for export** | Opens the **Columns** filter interface to customize which fields are exported |
-
-***
-
-### 🛠️ How to Generate Extras Lists
-
-#### ✅ Option 1: Centralized Export
+#### Option 1: Centralized Export
 
 **Navigation**: `Export → Extras Lists`
 
@@ -82,7 +73,7 @@ This module allows administrators to:
 
 ***
 
-#### ✅ Option 2: Supplier Communication Tab
+#### Option 2: Supplier Communication Tab
 
 **Navigation**: `Users → Suppliers → [Choose Supplier] → Communication`
 
@@ -92,7 +83,7 @@ This module allows administrators to:
 
 ***
 
-#### ✅ Option 3: Extra Setup Communication Tab
+#### Option 3: Extra Setup Communication Tab
 
 **Navigation**: `Extras Setup → Extras → [Choose Extra] → Communication`
 
