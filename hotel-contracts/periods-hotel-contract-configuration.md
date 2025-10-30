@@ -8,7 +8,7 @@ The **Periods** tab is where you define the stay intervals (start/end dates) and
 
 ### Screenshot
 
-<figure><img src="../.gitbook/assets/image (410).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (441).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -25,13 +25,13 @@ The **Periods** tab is where you define the stay intervals (start/end dates) and
 | Field                          | Description                                                                               |
 | ------------------------------ | ----------------------------------------------------------------------------------------- |
 | **Start Date / End Date**      | Defines the contract validity period. Multiple periods can be added for seasonal pricing. |
-| **R**                          | Realese                                                                                   |
+| **R**                          | Realese days                                                                              |
 | **CD**                         | Checkbox to activate cut down allotment                                                   |
-| ➕ **Add Icon**                 | Adds a new interval for the selected period.                                              |
+| ➕ **Add Interval**             | Adds a new interval for the selected period.                                              |
 | 🗑️ **Trash Icon (on period)** | Deletes the entire period.                                                                |
 | 🗑️ **Trash Icon (on row)**    | Deletes a specific interval.                                                              |
 | **Room Code**                  | Pulled from the **Rooms** tab; defines which room the row refers to.                      |
-| **Board**                      | Select the applicable board (meal plan) for this room/period.                             |
+| **Board**                      | Select the applicable board for this room/period.                                         |
 | **Allotments**                 | Number of rooms available for sale.                                                       |
 | **Guarantee**                  | Number of guaranteed rooms the agency commits to sell.                                    |
 | **Secured**                    | Number of secured rooms.                                                                  |
@@ -41,6 +41,7 @@ The **Periods** tab is where you define the stay intervals (start/end dates) and
 | **SP%**                        | Indicates whether the cost is percentage on top of the room cost                          |
 | **Stay Type**                  | Defines if the cost is **Per Pax**, **Per Room**, or **Per Pax Per Night**.               |
 | **Tr. Length**                 | Transport length reference (e.g., 5d = 5 days).                                           |
+| Add new period                 | Used to create a new period                                                               |
 
 ### Notes (for internal use)
 
