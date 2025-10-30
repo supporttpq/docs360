@@ -18,5 +18,5 @@ It supports users in:
 
 * **Dashboards & Reports:** View aggregated data presented in summary tables.
 * **Filters:** Customize results by date range, brand, destination, supplier, or other criteria.
-* **Export & Share:** Download or export reports for further analysis or presentation.
+* **Export:** Download or export reports for further analysis or presentation.
 * **Decision Support:** Provides insights for optimizing pricing strategies, marketing focus, and resource allocation.
