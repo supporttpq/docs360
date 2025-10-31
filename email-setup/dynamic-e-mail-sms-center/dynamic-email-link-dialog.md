@@ -4,8 +4,6 @@
 
 The **Link dialog** is used to insert or edit hyperlinks within text content. It allows you to define how a link appears, where it points, and how it should behave when clicked. The dialog is divided into three tabs: **Link Info**, **Target**, and **Upload**.
 
-***
-
 #### **Tabs & Their Functionality**
 
 <figure><img src="../../.gitbook/assets/image (347).png" alt=""><figcaption></figcaption></figure>
@@ -38,8 +36,6 @@ This tab controls the basic properties of the hyperlink.
 
 <figure><img src="../../.gitbook/assets/image (346).png" alt=""><figcaption></figcaption></figure>
 
-***
-
 **2. Target**
 
 This tab defines how the link should open when clicked.
@@ -51,8 +47,6 @@ This tab defines how the link should open when clicked.
   * **Parent Frame (\_parent)** – Opens link in the parent frame (if applicable).
   * **Topmost Window (\_top)** – Opens link in the full browser window.
 
-***
-
 **3. Upload**
 
 This tab allows direct file upload to the server and creates a link to the uploaded file.
@@ -60,8 +54,6 @@ This tab allows direct file upload to the server and creates a link to the uploa
 * **Choose File** → Select a file from your computer.
 * **Upload to Server** → Sends the file to the server.
 * Once uploaded, the system automatically fills in the file’s URL, making it linkable.
-
-***
 
 #### **Variables in Hyperlinks**
 

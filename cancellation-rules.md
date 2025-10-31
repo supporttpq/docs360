@@ -1,27 +1,44 @@
 # Cancellation Rules
 
-When a booking is canceled, a cancellation fee is set for each passenger. Cancellation rules are applied for calculating this fee. The fee is calculated taking into account the remaining days left to departure.
+#### Overview
+
+The **Cancellation Rules** section defines how cancellation fees are calculated when a booking or passenger is canceled. The system determines the fee based on the number of days remaining until the departure date.
+
+Administrators can configure up to four time ranges representing days left before departure. Each range can define either a fixed amount or a percentage of the passenger’s total price.
+
+It is also possible to include **Cancellation Insurance** in the total fee calculation, depending on whether the insurance is paid and whether it covers the cancellation.
+
+#### Purpose
+
+Cancellation rules ensure consistent and automated fee calculation for canceled bookings. They help travel companies:
+
+* Apply fair and transparent cancellation policies.
+* Adjust penalties based on how close the cancellation occurs to the departure date.
+* Integrate cancellation insurance coverage into the final fee.
 
 <figure><img src=".gitbook/assets/image (26) (1).png" alt=""><figcaption></figcaption></figure>
 
-The system allows the defining of 4 different ranges for the number of days left to departure. When defining a range, the amount corresponding to the cancellation fee will also be set.
+#### Instructions
 
-It is also possible to define a percentage instead of setting the amount (the percentage is taken from the total price of the passenger that is canceled).
+**1. Defining Cancellation Rules**
 
-Include the cancellation insurance in the total check box if used; adds the **Cancellation insurance** in the booking total
+1. Navigate to the **Cancellation Rules** setup page.
+2. Define up to **four ranges** for the number of days left to departure.
+3. For each range, specify either:
+   * A **fixed amount**, or
+   * A **percentage** (calculated from the total passenger price).
+4. (Optional) Select the checkbox **Include the cancellation insurance in the total** if the cancellation insurance amount should be added to the booking total.
 
-Cancellation rules that are applied to a booking are set on the transport when it is created.
+> **Note:** Cancellation rules are linked to the **transport** at the time it is created.
 
 <figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Cancellation fee on a booking is calculated as follows:
+**2. How the Cancellation Fee Is Calculated**
 
-If a cancellation insurance is paid, when cancelling the passengers we can opt that the cancellation insurance will cover or not cover the booking.
+* **If cancellation insurance is paid:**
+  * **Cover option selected:** The cancellation fee equals the amount of the cancellation insurance.
+  * **Does not cover option selected:** The fee includes both the cancellation insurance amount and the amount defined in the cancellation rules.
+* **If no cancellation insurance is paid:**
+  * Only the **Cover option** is available, and the cancellation fee will be based solely on the defined cancellation rule.
 
-If the cancellation insurance is paid and Cover option is selected when cancelling the booking, the amount of the cancellation fee will be the cancellation insurance.
-
-If the cancellation insurance is paid and Does not Cover option is selected when cancelling the booking, the cancellation fee will contain the price of the cancellation insurance and the amount set in cancellation rules.
-
-If the cancellation insurance is not paid only Cover option is available when cancelling the booking, and the amount of the cancellation fee will be the one stated in the cancellation rule.
-
-Infants do not get cancellation fee.
+> **Important:** Infants are exempt from cancellation fees.

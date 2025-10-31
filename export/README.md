@@ -20,7 +20,7 @@ There are **three export types** available:
 
 #### **Fields and Filters**
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 | **Field**                                                      | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -58,11 +58,11 @@ There are **three export types** available:
 
 <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (4) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (3) (1) (1).png" alt=""><figcaption><p>Export Booking (XLSX)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (3) (1) (1) (1).png" alt=""><figcaption><p>Export Booking (XLSX)</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (3) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption><p>Export Cost (XLSX)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (2).png" alt=""><figcaption><p>Export Cost (XLSX)</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 

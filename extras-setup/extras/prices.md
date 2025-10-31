@@ -1,61 +1,106 @@
 # Prices
 
-A extras can have one or more prices. The prices are defined based on some intervals. The interval can not overlap each other to prevent that there are some validation in place. There are three intervals as follow:
+#### Overview
+
+In **Tourpaq Office**, each **Extra** (such as insurance, car rental, excursions, or other optional services) can have one or more **price configurations**.\
+Prices are defined using specific **intervals** to ensure flexibility while maintaining data consistency. The system includes validation rules that prevent overlapping intervals.
+
+There are **three types of intervals** that determine when a price is applied:
+
+1. **Age From / To** – Applies the price based on the passenger’s age range.
+2. **Departure Date From / To** – Applies the price to bookings departing within a specific date range.
+3. **Booking Date From / To** – Applies the price to bookings made within a specific date range.
+
+Each interval defines the **conditions** under which the price is valid.
 
 <figure><img src="../../.gitbook/assets/image (5) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-* **Age From/To** - The price is applying for the passengers that has the age in interval.
-* **Departure Date From/To** - The Price is applying to passengers that have made the booking to depart in this interval.
-* **Booking Date From/To** - The Price is applying to passengers that have made the booking in this specific interval.
-* **Price** - The amount that the passenger will pay for this extras. The amount is in the local currency.
-* **Group Price** - Price for groups
-* **Cost Price** - The Amount that the agency will pay for this extras. If a creditor is selected the amount is in the creditor information other wise the amount is in the local currency.
-* **Days** - This extra is available for the specified number of days. For a booking with 7 stay days, if days parameter is set to 9 days or more, product will not be available for selection anymore.
-* **Margin** - Margin of profit when rent a car is checked in the extras configuration and defines the amount of money added in plus to the basic cost of the car.
-* **Max cost** - Defines the maximum cost that a car can have so that the agency can sell it.
-* **Per Day** - The price and cost is calculated per day. In case the Days is specified the price will be calculated based on this number otherwise the cost and price will be calculated based on the number of booked days.
-* **Contract - Name of the contract**
+#### Purpose
 
-The cost/price per day is calculated based on the formula: If Days is filled: `Price*Days=Extra_Price` If Days is empty: `Price*Booked_Days=Extra_Price`
+The **Extras / Prices** setup allows agencies to manage dynamic pricing for additional products or services associated with a booking.\
+By defining rules based on age, booking dates, and travel periods, the system ensures that every passenger pays the correct price according to their travel details.
+
+This helps:
+
+* Maintain consistent and accurate pricing across bookings.
+* Support promotional or seasonal offers.
+* Differentiate costs and profit margins across age groups, dates, and brands.
+
+#### How to Use
+
+**Define a Price for an Extra**
+
+1. **Open the Extra** from the list in Tourpaq Office.
+2. Navigate to the **Prices** section.
+3. Click **Create** or **Edit** to configure a new price rule.
+4.  Fill in the following fields:
+
+    | Field                        | Description                                                                                                               |
+    | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+    | **Age From / To**            | Sets the age range for which the price applies.                                                                           |
+    | **Departure Date From / To** | Defines the departure period covered by this price.                                                                       |
+    | **Booking Date From / To**   | Defines when the booking must be created for the price to apply.                                                          |
+    | **Price**                    | The amount paid by the passenger (in local currency).                                                                     |
+    | **Group Price**              | The group rate, if applicable.                                                                                            |
+    | **Cost Price**               | The agency’s cost for this extra (based on creditor or local currency).                                                   |
+    | **Days**                     | The number of days the extra is available. If the booking duration is shorter than this, the extra will not be available. |
+    | **Margin**                   | Defines the profit margin applied (especially for car rentals).                                                           |
+    | **Max Cost**                 | Sets the maximum car cost the agency can sell.                                                                            |
+    | **Per Day**                  | If enabled, the price and cost are calculated per day.                                                                    |
+    | **Contract**                 | References the contract name related to this price.                                                                       |
+5. Click **Save** once all details are completed.
+
+#### Price Calculation
+
+The total price per day is calculated using the following formula:
+
+* If **Days** is filled:\
+  `Extra_Price = Price × Days`
+* If **Days** is empty:\
+  `Extra_Price = Price × Booked_Days`
 
 ### Price per brand <a href="#price-per-brand" id="price-per-brand"></a>
 
-A new feature in Tourpaq that allows the setting of different prices for each brand. In order to use it please contact Tourpaq Support.
+Tourpaq supports defining different prices per brand.
 
-If only the default price is set, it will be applied to all agencies. If an agency price is set different of the default price, the agency price will be available only for the selected agency.
+* If only a **default price** is set, it applies to all agencies.
+* If a **brand-specific price** is added, that price will apply only to the selected agency or brand.
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Editing the price is only available for the default price. For the agency price the only editable fields are **Price**, **Group Price**, **Margin** and **Max cost**
+* Editing prices is available only for the **default** configuration; for agency-specific prices, only **Price**, **Group Price**, **Margin**, and **Max Cost** can be updated.
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
+To enable price-per-brand functionality, please contact **Tourpaq Support**.
+
 **Split prices**
 
-The split function can be used in case of stop sales as well as price and cost changes.
-
+The **Split** function allows dividing existing price or cost intervals — for example, when updating prices or managing stop sales.\
 Prices can be split by:
 
-* age
-* departure
-* booking date
+* **Age**
+* **Departure Date**
+* **Booking Date**
 
 <figure><img src="../../.gitbook/assets/image (3) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-When clicking on the Split button, an option will appear bellow the price lines to set the number of splits to be made
+**How to Split a Price:**
+
+1. Click on the **Split** button below the price lines.
+2. Choose how many splits you want to create.
 
 <figure><img src="../../.gitbook/assets/image (4) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
-If spliting by Departure or Booking date, the Date from of the first line is the original date and Date to is the new stop date.
-
-The second line will contain the new Date from and the Date to will be the original stopping date.
-
-It is advised to use the current day or next day Date to of the first line when splitting.
+3. Adjust the date or age intervals as needed:
+   * When splitting by **Departure** or **Booking Date**, set the **Date From** of the first line to the original start date and the **Date To** to the new stop date.
+   * The **second line** will automatically use the new **Date From** and original **Date To**.
+   * It’s recommended to use the **current day** or **next day** as the stop date for the first line.
 
 <figure><img src="../../.gitbook/assets/image (5) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
-After filling in the details, click on **Split**
+4. Click **Split** to confirm.
 
-The result will look like:
+After splitting, the system will display separate price lines for each new interval.
 
 <figure><img src="../../.gitbook/assets/image (6) (4).png" alt=""><figcaption></figcaption></figure>

@@ -1,17 +1,37 @@
 # Editing Cancellation Insurance
 
-After booking a trip, the customer might want to cancel the booking. Cancellation insurance is the amount the customer pays for this case.
+### Overview
 
-This form is used to configure cancellation insurance rules based on various criteria such as brand, destination, travel type, and pricing factors.
+After booking a trip, a customer may decide to cancel the booking. **Cancellation insurance** represents the amount paid by the customer to receive reimbursement for a portion of the total booking cost in case of cancellation.
 
-There are 4 ways to set the price for the cancellation insurance:
+This form is used to **configure the rules** for how cancellation insurance prices are calculated, based on various factors such as brand, destination, travel type, and pricing criteria.
 
-* Bulleted list item The first method would take into account the price that a passenger pays for the trip. It should be possible to insert 4 different ranges for the price. For instance: if the passenger’s price will fit in the first range, the cancellation insurance will have a value; if it fits in the second range, it will have another value, and so on.
-* Bulleted list item The second method would take into account the duration of the trip. It should also be possible to insert 4 different ranges for the duration.
-* Bulleted list item The third method would set the fee using a given percentage. In this case, the fee will be the percentage of the passenger’s price.
-* Bulleted list item The fourth method would take into account the transport mode.
+### Purpose
 
-If cancellation insurance is paid, when cancelling the passengers, we can opt that the cancellation insurance will cover it. In this case, the cancellation fee will be equal to the price of the cancellation insurance.
+The purpose of this configuration is to define flexible pricing rules for cancellation insurance. This ensures that insurance costs can be automatically adjusted according to different booking parameters—making the process consistent and reducing manual setup.
+
+### Instructions
+
+There are **four available methods** for defining the price of cancellation insurance:
+
+1. **Based on Passenger Price**
+   * The fee depends on the total amount the passenger pays for the trip.
+   * Up to **four different price ranges** can be defined.
+   * Example: If the passenger’s trip price falls within the first range, a specific fee applies; if it falls in the second range, another fee applies, and so on.
+2. **Based on Trip Duration**
+   * The fee depends on how long the trip lasts.
+   * Up to **four duration ranges** can be configured, each with a corresponding insurance fee.
+3. **Based on Percentage of Passenger Price**
+   * The insurance fee is calculated as a **percentage** of the total passenger price.
+   * Example: If the percentage is 5% and the trip price is €1000, the insurance fee will be €50.
+4. **Based on Transport Mode**
+   * The fee depends on the **type of transport** used (e.g., flight, bus, or ferry).
+
+**Cancellation Fee Application**
+
+When a booking is canceled and **cancellation insurance has been paid**, the user can choose whether the insurance **covers** the cancellation:
+
+* If the insurance **covers** the cancellation, the **cancellation fee** equals the **price of the cancellation insurance**.
 
 <figure><img src="../.gitbook/assets/image (219).png" alt=""><figcaption></figcaption></figure>
 

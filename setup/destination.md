@@ -57,3 +57,56 @@ A resort can have a destination associated with it.
 * Latitude and longitude values help define the exact location—this is especially useful for mapping and geo-based filtering.
 * Use **agency-specific details** when different agencies require unique naming or display settings.
 * Keep **Default Name** consistent for system-wide recognition, but adjust **List Name** for better readability in customer-facing views.
+
+### Passenger Information
+
+#### **Overview**
+
+The **Passenger Information** section, found under **Setup → Destination**, allows the user to define informational messages related to a specific destination.\
+These entries control what information is associated with that destination and can be used to provide guests with destination-specific notes such as arrival guidelines, service information, or important updates.
+
+Passenger Information is managed per destination and can include conditions based on **stay period** and **booking period**.
+
+#### **Purpose**
+
+The purpose of the **Passenger Information** page is to:
+
+* Manage destination-level informational content that can later be used in various parts of the system or shared with guests.
+* Define and control which information applies to passengers depending on their **travel dates** or **booking dates**.
+* Set up acknowledgment requirements for specific messages that guests or guides need to confirm.
+
+#### **Instructions**
+
+**Accessing Passenger Information**
+
+1. Go to **Setup → Destination**.
+2. Select the desired **destination** (e.g., _CHQ_).
+3. Open the **Passenger Information** tab.
+
+The list will display all entries configured for the selected destination.
+
+| **Column**                 | **Description**                                                                  |
+| -------------------------- | -------------------------------------------------------------------------------- |
+| **Stay From / Stay To**    | The travel period during which the information applies.                          |
+| **Booking Date From / To** | Optional booking date limits that define when the message is relevant.           |
+| **Information**            | The title or content reference of the passenger information.                     |
+| **Acknowledge**            | Indicates if the message must be acknowledged by the guest (checked = required). |
+| **Delete**                 | Removes the selected entry.                                                      |
+
+**Creating Passenger Information**
+
+1. Click **Create**.
+2. Complete the following fields:
+   * **Stay From / Stay To** – defines the period of stay when this message is valid.
+   * **Booking Date From / To** – limits the message visibility to bookings made in a specific timeframe.
+   * **Information** – enter or select the information to be displayed.
+   * **Acknowledge** – enable if passengers must confirm they have read the information.
+3. Click **Save** to store the configuration.
+
+#### **Example**
+
+In the provided example:
+
+* The destination **CHQ** has one passenger information entry titled **Dest Errata Def**.
+* It applies to stays from **28-10-2025** to **28-10-2025**.
+* The entry is not marked as _Acknowledged_, meaning passengers are not required to confirm it.
