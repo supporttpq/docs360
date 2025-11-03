@@ -6,69 +6,48 @@ The child profit margin is the same for both children.
 
 ## Children price adjustment on 'Price List' page
 
-### **Overview**
+#### **Overview**
 
-This document outlines the steps and expected behavior when enabling and validating the **Child Profit Margin** feature in the system. The scenario involves activating the feature as a super administrator and verifying its visibility and functionality in the **Price List** section when logged in as an administrator user.
+The **Child Profit Margin** feature allows companies to manage and display separate profit margins for child prices in the _Price List_. This functionality provides enhanced flexibility in yield management, ensuring that child pricing aligns with the overall profitability goals set by the company.
 
-### **Steps to Enable Child Profit Margin Feature**
-
-#### **1. Login as Super Administrator**
-
-* &#x20;Log into the system using a super administrator account.
-
-#### **2. Access  Company Details**
-
-* &#x20;Navigate to the **Companies** page and select  desired company.
-
-#### **3. Open Feature Access Tab**
-
-* Click on the **Feature Access** tab within the company settings.
-
-#### **4. Enable 'Child Profit Margin' in Yield Management**
-
-* Expand the **Yield Management** section and verify that the **Child Profit Margin** option is listed.
-
-#### **5. Activate and Save the Setting**
-
-* Check the **Child Profit Margin** option and click **Save**.
+The feature can only be activated by a **Super Administrator** and becomes visible for administrators after it is enabled at the company level.
 
 ***
 
-### **Steps to Verify Feature in Price List**
+#### **Feature Activation**
 
-#### **6. Login as  Administrator**
+To enable the Child Profit Margin functionality, a Super Administrator accesses the company’s configuration in the **Companies** section and opens the **Feature Access** tab.\
+Within the **Yield Management** category, the option **Child Profit Margin** is available. Once this option is activated and saved, it becomes applicable to the selected company.
 
-* &#x20;Log in using your user account.
-
-#### **7. Open Price List Page**
-
-* Navigate to the **Price List** page -  The **Price List** page is displayed.
-
-#### **8. Display Prices**
-
-* Populate all mandatory fields and click **Display -** The table is populated with price data.
-
-#### **9. Customize Table Columns**
-
-* Click the three-dot menu on the table header - A pop-up window with display options appears.
-
-#### **10. Validate Availability of Child-Related Options**
-
-* Check for the presence of the following options in the pop-up:
-  * `CHILD PRICES`
-  * `CHILD PRICES %`
-  * `CHILD PROFIT MARGIN`
-
-#### **11. Enable and Verify Table Columns**
-
-* Tick all three checkboxes and observe the table.
-* New columns are added:
-  * Price columns: `CH1`, `CH2`, `CH3`, `CH4`
-  * Percentage columns: `CH1%`, `CH2%`, `CH3%`, `CH4%`
-  * Profit margin columns: `CMP1`, `CMP2`, `CMP3`, `CMP4`
+After activation, the company’s Price List setup will include additional columns and configuration options related to child pricing.
 
 ***
 
-### **Conclusion**
+#### **Behavior in the Price List**
 
-This process enables the **Child Profit Margin** feature and confirms its visibility and correct rendering within the **Price List** interface. The newly displayed columns provide greater transparency and control over child pricing strategies for partner administrators.
+When an administrator logs in and accesses the **Price List** page, the standard price display can be extended with additional columns specific to child pricing.\
+By using the column visibility menu (available through the three-dot icon on the table header), administrators can enable the following options:
+
+* **CHILD PRICES**
+* **CHILD PRICES %**
+* **CHILD PROFIT MARGIN**
+
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (449).png" alt=""><figcaption></figcaption></figure></div>
+
+Once selected, the Price List table displays new columns that correspond to child-related pricing data:
+
+* **Price columns:** CH1P1, CH2P1
+* **Percentage columns:** CH1%,
+* **Profit margin columns:** CPM1
+
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (450).png" alt=""><figcaption></figcaption></figure></div>
+
+These columns provide detailed insight into how child prices and profit margins are calculated and applied. Both child prices share the same profit margin, ensuring consistent calculations across different occupancy configurations.
+
+***
+
+#### **Purpose and Benefits**
+
+The Child Profit Margin feature enhances transparency and control over child pricing strategies. It enables administrators to fine-tune child-related profit margins independently of adult prices, allowing for more accurate financial analysis and pricing optimization.
+
+By exposing detailed pricing components in the _Price List_, partner administrators gain better visibility of how discounts, occupancy rules, and yield management settings impact child profitability.
