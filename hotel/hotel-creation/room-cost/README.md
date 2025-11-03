@@ -80,19 +80,20 @@ Before early booking discounts can affect the selling price or appear in the pri
 
 **Purpose of the setting:**
 
-*
-* This setting must be **enabled** for Early Booking Discounts (EBD) rules to be **visible in the Price List** and to have an **actual impact on the guest price calculation**.&#x20;
+* The **User’s Discounted Cost** represents the calculated cost of a booking after applying all relevant discounts. This value takes into account **Room Discount**, **Early Booking**, and **Stay & Pay** offers. This calculation ensures that the **Discount via Profit Margin** reflects the final, accurate cost after all applicable reductions have been applied.
 
 
 
 <figure><img src="../../../.gitbook/assets/image (424).png" alt=""><figcaption></figcaption></figure>
+
+The above setting decide "HOW" the discount is applied. The Early Booking Discount has an impact on the price regardless of whether this checkbox is selected or not
 
 <figure><img src="../../../.gitbook/assets/image (423).png" alt=""><figcaption></figcaption></figure>
 
 * If this setting is **disabled**, EBD rules will still appear in the configuration screen but will **not be reflected** in the calculated prices or displayed to users in the price list.
 
 {% hint style="warning" %}
-Note that this checkbox will not trigger the service automatically; you will need to either have to change the cost in the hotel or change the Profit Margin in the price list, changing the price or saving on the price list will change the price as well.
+Note: This checkbox will not trigger the service automatically; you will need to either have to change the cost in the hotel or change the Profit Margin in the price list, changing the price or saving on the price list will change the price as well.
 
 Also, the profit margin service will not change the price instantly on modification; it may take up to 30 minutes for the price to be changed in the price list. This depends on how many tasks need to be processed by the service.
 {% endhint %}
