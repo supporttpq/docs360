@@ -70,7 +70,7 @@ The purpose of these rules is to automatically apply early booking discounts to 
 
 #### **System Setup Requirement**
 
-Before early booking discounts can affect the selling price or appear in the price list, a specific setting must be enabled in **System Setup**:
+Before early booking discounts appear in the price list, a specific setting must be enabled in **System Setup**:
 
 **Path:**\
 `System Setup → General → Settings`
