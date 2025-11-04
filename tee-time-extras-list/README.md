@@ -4,7 +4,7 @@
 
 The **Tee Time Export** feature in Tourpaq Office is used to generate structured reports related to golf tee time bookings. It allows users to filter and export data based on supplier, booking details, arrival periods, extras, and more. This tool is valuable for operational teams and golf course suppliers who manage tee time reservations.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -93,7 +93,7 @@ This tool is designed to:
 * After setting all filters and options, click **Export** to generate the file.
 * The file will be downloaded automatically in **.XLS**  / **PDF** format.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The export file include the following columns:
 

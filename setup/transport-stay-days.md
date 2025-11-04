@@ -17,7 +17,7 @@ Navigate to the **Transport Stay Days** section from the system’s setup or con
 
 **Page Layout**
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 | Column         | Description                                                      |
 | -------------- | ---------------------------------------------------------------- |

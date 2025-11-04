@@ -21,7 +21,7 @@ A destination may have several transports during a week, and they need to reserv
 
 The reservation of rooms is also needed based on the duration of the stay. They need this to reserve a few rooms for longer stays, or maybe the other way around.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 | Headline      | Tooltip                                                                                                                                                                  |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |

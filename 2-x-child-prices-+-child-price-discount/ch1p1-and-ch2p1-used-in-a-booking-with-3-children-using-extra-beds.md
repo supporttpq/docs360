@@ -1,96 +1,50 @@
 # CH1P1 & Ch2P1 used in a booking with 3 children using extra beds
 
-### **Overview**
+#### **Overview**
 
-This document describes the end-to-end validation flow for creating a booking with **2 adults and 3 children** where **each child benefits from an extra bed**. It verifies the consistency between the **booking total price** and the **Price List** calculation, using child-specific pricing columns (`CH1P1`, `CH2P1`).
-
-***
-
-### **Prerequisites**
-
-* Administrator login credentials&#x20;
-* A hotel offering **extra beds for all children**
-* Active and configured pricing fields:
-  * `P1` (adult price)
-  * `CH1P1`, `CH2P1` (child prices)
-  * `CH1D1`, `CH2D1` (child discounts)
-  * `CH1%`, `CMP1`, `PA1` (child price %, margin, and adjustments)
+This document describes how the system applies child pricing for bookings that include two adults and three children, where each child occupies an extra bed.\
+The scenario validates that the total booking amount correctly reflects the combined use of adult and child-specific pricing values from the Price List.\
+The calculation involves the standard adult price (P1) together with the configured child pricing values (**CH1P1** and **CH2P1**), ensuring that all cost components — including child discounts, profit margins, and adjustments — are accurately represented.
 
 ***
 
-### **Step-by-Step Test Case**
+#### **Purpose**
 
-#### **1. Login**
+The purpose of this validation is to confirm that the **Price List child pricing logic** is correctly applied when multiple children with extra beds are included in the same booking.\
+When the booking is created, the system automatically references the active price list entry (PLTA ID) and retrieves:
 
-* Log in as administrator.
+* **P1** – Price per adult
+* **CH1P1**, **CH2P1** – Child prices for the first and second extra beds
+* **CH1D1**, **CH2D1** – Associated discounts
+* **CH1%**, **CMP1**, **PA1** – Child price percentage, profit margin, and adjustment values
 
-#### **2. Start a New Booking**
-
-* Click the **New Booking** button and select a brand.
-
-#### **3. Add Passengers**
-
-* Set the number of passengers to **2 Adults** and **3 Children**.
-
-#### **4. Select Transport**
-
-* Click **Edit** in the transport section and select a transport.
-
-#### **5. Select Hotel**
-
-* Click **Edit** in the hotel section - The "Select Hotel" pop-up appears.
-
-#### **6. Choose Hotel with Extra Beds**
-
-* Choose a hotel that provides **an extra bed for each child**.
-
-#### **7. Complete Booking**
-
-* Fill in customer details, take allotment, and **save the booking**.
-* Booking is successfully created.
-
-#### **8. Note the Total Amount**
-
-* Record the **Total Amount** displayed in the booking summary.
+The platform ensures that these pricing components are used consistently in both the booking calculation and the price list view, maintaining transparent pricing alignment.
 
 ***
 
-### **Validate Price List Calculation**
+#### **Validation Result**
 
-#### **9. Open Price List**
+When the booking is completed for **2 adults and 3 children**, each with an extra bed:
 
-* Go to the **Price List** page.
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-#### **10. Apply Booking Filters**
+* The system calculates the total amount using the following formula without extras and insurance:\
+  **Total = (P1 × 2 Adults) + CH1P1 + CH2P1 + CH2P1**
 
-* Fill in the required fields using the data from Step 7, then click **Display**.
+**In our example, the total amount without extras and insurance = (1249 x 2) + 500 + 250 + 250 = 2498 + 1000 = 3498DKK.**&#x20;
 
-#### **11. Adjust Column View**
+**When we add the insurance and pickup point, the total amount = 2498 + (306 x 5) + (100 x 5) = 2498 + 1530 + 1000 = 5528 DKK**
 
-* Click the three-dot menu in the header, deselect `I2`, `I3`, and `I4`. Ensure **only `I1`** is ticked.
-* Only `I1` is displayed.
+* Each child occupying an extra bed is charged based on the corresponding child pricing logic:
+  * The **first child** uses **CH1P1**
+  * The **second and third children** use **CH2P1**
+*   The final **Total Amount** displayed in the booking matches the calculated total from the Price List.&#x20;
 
-#### **12. Enable Child Pricing Columns**
+    <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+* Any configured **discounts (CH1D1, CH2D1)** or **profit margins (CMP1)** are automatically included in the underlying price computation.
 
-* Tick the following fields:
-  * `CHILD 1 PRICES`
-  * `CHILD 2 PRICES`
-  * `CHILD 1 DISCOUNTS`
-  * `CHILD 2 DISCOUNTS`
-  * `CHILD PRICES %`
-  * `CHILD PROFIT MARGIN`
-  * `ADJUSTMENTS`
-* The following columns are added:
-  * `CH1P1`, `CH2P1`
-  * `CH1D1`, `CH2D1`
-  * `CH1%`, `CMP1`, `PA1`
+This confirms that:
 
-***
-
-### &#x20;**Validate Total Price Calculation**
-
-*   Verify that the **total amount from Step 8** is equal to:
-
-    ```
-    Total = (P1 × 2 Adults) + CH1P1 + CH2P1 + CH2P1
-    ```
+* The **Price List and booking modules** share identical calculation logic.
+* Multiple child passengers can correctly use repeated **CH2P1** pricing when applicable.
+* The displayed booking total remains consistent across all system views, ensuring pricing accuracy for both administrators and agents.
