@@ -66,7 +66,7 @@ At the top of the page, you can use several filters to search:
 
 1.  Click **Create** to add a new departure line.&#x20;
 
-    <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2.  Fill in the following fields:
 
     * **Type** – Select the type of departure (Daily / Weekly).

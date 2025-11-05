@@ -21,7 +21,7 @@ This feature ensures that golf course participation and scheduling are accuratel
 * The booking must contain an **extra product** that uses a golf course reservation system.
 * The product must have pre-configured availability (time slots) in the system.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Instructions
 
@@ -78,7 +78,7 @@ In the example above:
 
 The ticket contains all relevant information for guests who have booked golf courses through the system.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The ticket shall list all information relevant to the golf booking, such as:
 
@@ -124,7 +124,7 @@ Once the Type is defined as _Golf_, you can create one or more extra **categorie
 
 Each extra category can be customized per brand and contains general, visual, and technical settings for booking, visibility, and integration.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Example Workflow
 
@@ -168,7 +168,7 @@ The purpose of this configuration is to:
 
 ### **Instructions and Field Explanations**
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Basic Setup Section**
 
@@ -235,4 +235,4 @@ Additional technical or advanced options for internal configuration.
 The **Generic Product Price Rules** are used to define the **price per golf round**.\
 Each rule specifies how the price is calculated and applied to the corresponding golf course Extra.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
