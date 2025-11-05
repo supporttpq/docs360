@@ -101,6 +101,9 @@ The **Booking panel** provides a quick summary of financial details, booking met
 
 <figure><img src="../../../.gitbook/assets/image (464).png" alt=""><figcaption></figcaption></figure>
 
+This section provides an overview of the booking’s financial and status details.\
+At the top, the **Total amount** field highlights the total price (7.206), applied discount (300), and resulting total (6.906), along with the **Total Profit** value (-2.094).
+
 ### **Field Explanations**
 
 #### **Financial Summary (Green Area)**
