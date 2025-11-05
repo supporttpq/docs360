@@ -61,17 +61,39 @@ The second dropdown contains the timeframe options:
 
 In the third field, you need to insert the number of days to be taken from the first 2 options when the e-mail will be sent. The e-mail/SMS will be sent as soon as all requirements are met.
 
-{% hint style="info" %}
-<mark style="color:blue;">**IMPORTANT**</mark>**:**  Additional rules can be configured in the sending option, but you should be cautious when combining them. The system applies the AND condition between different rule types and the OR condition within the same rule type. A valid set of sending rules is illustrated in the following examples:
+{% hint style="danger" %}
+<mark style="color:blue;">**IMPORTANT**</mark><mark style="color:blue;">:</mark>  Additional rules can be configured in the sending option, but you should be cautious when combining them.&#x20;
+
+The system applies the AND condition between different rule types and the OR condition within the same rule type.&#x20;
+
+A valid set of sending rules is illustrated in the following examples:
 {% endhint %}
+
+* If there are used two or more different rule type, the system will use the AND condition and will sent an email/SMS for each rule type
 
 **Example:** An emailor SMS can be sent 60 days before the departure date AND 2 days after the booking date.
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-**Example:** An e-mail or SMS can be sent within 102, 103, or 104 days before the departure date.
+* &#x20;If it is set the same rule type it will be used the OR condition, and it will be sent only one email/SMS.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Example:&#x20;
+
+<figure><img src="../../.gitbook/assets/image (465).png" alt=""><figcaption></figcaption></figure>
+
+1.  **First Booking**:\
+    One booking is made more than 25 days before departure, and the email template is configured as follows:
+
+    * 20 days before departure
+    * 18 days before departure
+    * 16 days before departure
+    * 14 days before departure
+
+    In this case, the booking will receive **only one email** scheduled for 20 days before departure. It will not receive additional emails at 18, 16, or 14 days before departure.
+2. **Second Booking**:\
+   This booking is made 17 days before departure. With the same configuration, it will receive **only one email** scheduled for 16 days before departure. No additional email will be sent at 14 days before departure.
+
+&#x20;The system is designed to send **only one email per template configuration**, regardless of how many "when to send" conditions are added.
 
 ### Product and disc/suppl filters <a href="#product-and-discsuppl-filters" id="product-and-discsuppl-filters"></a>
 
