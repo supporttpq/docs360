@@ -99,23 +99,22 @@ Go to **Booking menu → Click on “New Booking”**
 
 The **Booking panel** provides a quick summary of financial details, booking metadata, and status indicators for a reservation. It is used by staff to monitor pricing, profitability, and the confirmation state of related services (hotel, transfer, etc.).
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (464).png" alt=""><figcaption></figcaption></figure>
 
 ### **Field Explanations**
 
 #### **Financial Summary (Green Area)**
 
 * **Total amount** – The final selling price of the booking (after discounts).
-* **Normal Price** – The price, calculated using P prices (both adult and child). Discounts are not included.
-* **Discount** –Represents the discount from the normal price
-* **Selling price** – The actual price charged to the customer.
+* **Price - Price without discounts, including extras, supplements etc.**
+* **Discount** –Represents the sum of discounts on the hotel, and the discounts added to each passenger.
 * **Total Profit** – The margin earned after subtracting supplier costs from the selling price.
 
 #### **Booking Details**
 
-* **Booking Number** – The unique identifier for the booking. In the example: `5585 + 1` (the `+1` indicate a sub-booking).
+* **Booking Number** – The unique identifier for the booking. In the example: 769394 `+ 1` (the `+1` indicate a sub-booking).
 * **Status** – The current state of the booking (e.g., _OK_, _Pending_, _Cancelled_).
-* **User** – The system user or agent who created/owns the booking. Example: `RWBTPO`.
+* **User** – The system user or agent who created/owns the booking. Example: WUSR.
 * **Added** – The date when the booking was created.
 * **Updated** – The date when the booking was last modified.
 
