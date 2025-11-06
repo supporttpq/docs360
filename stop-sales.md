@@ -2,7 +2,9 @@
 
 ### Definition <a href="#definition" id="definition"></a>
 
-A supplier can remove a hotel room from selling by creating a stop sale for that room. He can do that by going to the Stop Sale page and filling in the filters for that room and the period. The stop sale will run for each date and reduce the number of rooms available. It is not possible to make Stop Sale for secured and guaranteed rooms.&#x20;
+A supplier can remove a hotel room from selling by creating a stop sale for that room. He can do that by going to the Stop Sale page and filling in the filters for that room and the period. The stop sale will run for each date and reduce the number of rooms available.&#x20;
+
+**Important:** It is not possible to make Stop Sale for secured and guaranteed rooms.&#x20;
 
 ### **Overview**
 
