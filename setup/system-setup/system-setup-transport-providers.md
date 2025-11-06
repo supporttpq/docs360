@@ -133,7 +133,7 @@ This configuration establishes the technical connection parameters required to a
 4. **Save configuration**\
    After completing all fields, click **Save** to apply the setup. The system will now be able to interact with Paxport services for flight searches, bookings, and ancillary data retrieval.
 
-## _**Amadeus**_**&#x20;– Configuration Settings**
+### _**Amadeus**_**&#x20;– Configuration Settings**
 
 **Overview**
 
@@ -161,7 +161,7 @@ All fields must be filled with valid credentials provided by Amadeus or by the a
 * Credentials differ between **TEST** and **PRODUCTION** environments — ensure correct values before switching.
 * Any change in API Key or Secret requires saving the configuration and re-authenticating.
 
-## _**RailHub -**_**&#x20;Configuration Settings**
+### _**RailHub -**_**&#x20;Configuration Settings**
 
 **Overview**
 
