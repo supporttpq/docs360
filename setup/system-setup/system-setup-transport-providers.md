@@ -180,9 +180,9 @@ The purpose of the RailHub configuration module is to:
 
 By configuring these fields correctly, the system can communicate with RailHub to offer rail travel options to customers.
 
-***
-
 **Field Explanation**
+
+<figure><img src="../../.gitbook/assets/image (470).png" alt=""><figcaption></figcaption></figure>
 
 | **Field**                | **Description**                                                                                                                                                                                     |
 | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
