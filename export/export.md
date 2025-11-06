@@ -17,7 +17,7 @@ This functionality helps users save time and maintain consistency by:
 
 ### **Export Scheduling Options**
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (3).png" alt=""><figcaption></figcaption></figure>
 
 Using the three buttons located next to the **Export** button, you can:
 
@@ -26,7 +26,7 @@ Using the three buttons located next to the **Export** button, you can:
 
 #### **Page Structure and Fields**
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (3).png" alt=""><figcaption></figcaption></figure>
 
 **Export Filters (Top Section)**
 

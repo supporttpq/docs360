@@ -53,11 +53,11 @@ The **Profit** tab provides a clear breakdown of the financial outcome of a book
     * Important: When editing Cost, all previous cost changes on all passengers will be overwritten for the specific Cost Category (Transport, Hotel, Extra etc). Only the most recent Cost change will apply for the Category!
 4. **Detailed Hotel Cost Price Section**
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 Click on the blue info point to see detailed Hotel Cost Price (a new page opened).
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This section provides a detailed overview of the **hotel cost breakdown** for a specific booking. It displays daily and total pricing information for each guest, along with a cost summary for invoicing purposes.
 
@@ -85,7 +85,7 @@ This section helps administrators and accountants verify accurate hotel pricing 
 
 The **Cost Cache** tab provides a summarized breakdown of all cost components associated with each passenger in a booking. It helps users validate and compare cached versus current cost data to ensure price accuracy.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Key Columns:**
 

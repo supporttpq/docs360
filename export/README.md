@@ -64,9 +64,9 @@ There are **three export types** available:
 
 <figure><img src="../.gitbook/assets/image (4) (1) (1) (2).png" alt=""><figcaption><p>Export Cost (XLSX)</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (4).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption><p>Export Discounts (XLSX)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (5).png" alt=""><figcaption><p>Export Discounts (XLSX)</p></figcaption></figure>
 
 The data will contain information regarding each booking that corresponds to the given filters:
 
