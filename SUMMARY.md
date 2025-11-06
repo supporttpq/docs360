@@ -444,6 +444,7 @@
   * [System Setup – Auto Europe (Car Rental Integration)](setup/system-setup/system-setup-auto-europe-car-rental-integration.md)
   * [System Setup – Hotel Providers](setup/system-setup/system-setup-hotel-providers.md)
   * [System Setup – Hotel Import](setup/system-setup/system-setup-hotel-import.md)
+  * [System Setup - Transport Providers](setup/system-setup/system-setup-transport-providers.md)
   * [System Setup – GDS Data](setup/system-setup/system-setup-gds-data.md)
   * [System Setup – Inflight Service](setup/system-setup/system-setup-inflight-service.md)
   * [System Setup – Firebase Configuration](setup/system-setup/system-setup-firebase-configuration.md)
