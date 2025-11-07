@@ -8,7 +8,7 @@ The **Rooms** tab allows you to define and configure the room types included in 
 
 #### Screenshot
 
-<figure><img src="../.gitbook/assets/image (287).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -20,8 +20,6 @@ The **Rooms** tab allows you to define and configure the room types included in 
 | **Parent Room**           | Used to group variations of rooms under a base category. Select the parent room if this is a derivative room type.                                         |
 | **List Text Name**        | Name displayed in dropdowns and public-facing lists (e.g., "Dbl room (2-4 Pers.)").                                                                        |
 | **Name**                  | Internal reference name, often used in supplier communication.                                                                                             |
-| **Cost Beds**             | Number of beds priced by default (core occupancy).                                                                                                         |
-| **Cost Extra Beds**       | Number of extra beds priced separately.                                                                                                                    |
 | **Minimum** / **Maximum** | Minimum and maximum occupancy allowed for this room type.                                                                                                  |
 | **Max Extra**             | Maximum number of extra adults allowed.                                                                                                                    |
 | **Max Extra Child**       | Maximum number of children allowed in addition to base occupancy.                                                                                          |

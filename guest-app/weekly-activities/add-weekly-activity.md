@@ -36,7 +36,7 @@ This is where a user can define all parameters of the new weekly activity.
 
 **Weekly Activity Fields**
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 | **Field**         | **Description**                                                  |
 | ----------------- | ---------------------------------------------------------------- |

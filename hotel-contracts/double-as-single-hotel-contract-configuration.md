@@ -6,7 +6,7 @@ The **Double as Single** tab is used to define additional costs (or discounts) w
 
 ***
 
-<figure><img src="../.gitbook/assets/image (299).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -30,21 +30,19 @@ You can configure percentage adjustments for each defined **contract period**.
 
 This section lists all the **room types** and their parameters to manage base and derived rooms for occupancy and cost logic.
 
-| Field                           | Description                                                                                                                                    |
-| ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Room Code**                   | Internal system code for the room type.                                                                                                        |
-| **List Text Name**              | Display name used for dropdowns or customer-facing elements.                                                                                   |
-| **Name**                        | Room name or description.                                                                                                                      |
-| **Cost Beds**                   | Specify the number of beds used to calculate full pay for a room. If is left empty, Cost beds will be set to  Max - (extra beds + child beds)  |
-| **Cost Extra Beds**             | Extra beds cost                                                                                                                                |
-| **Minimum / Maximum**           | Allowed occupancy limits for the room.                                                                                                         |
-| **Max Extra / Max Extra Child** | Limits for additional adult or child guests.                                                                                                   |
-| **Room Above**                  | Parent room                                                                                                                                    |
-| **Parent Room**                 | Defines a fallback or inheritance relationship.                                                                                                |
-| **Delete Icon (🗑)**            | Removes the room entry from the list.                                                                                                          |
-| Period ID                       | Corresponds to the contract period (from the _Periods_ tab).                                                                                   |
-| Allotments                      | Number of rooms available for sale.                                                                                                            |
-| Guarantee                       | Number of guaranteed rooms the agency commits to sell.                                                                                         |
-| Stay Type                       | Defines if the cost is **Per Pax**, **Per Room**, or **Per Pax Per Night**.                                                                    |
-| Tr. Length                      | Transport length                                                                                                                               |
-| Cost                            | Amount charged to applicable guests.                                                                                                           |
+| Field                           | Description                                                                 |
+| ------------------------------- | --------------------------------------------------------------------------- |
+| **Room Code**                   | Internal system code for the room type.                                     |
+| **List Text Name**              | Display name used for dropdowns or customer-facing elements.                |
+| **Name**                        | Room name or description.                                                   |
+| **Minimum / Maximum**           | Allowed occupancy limits for the room.                                      |
+| **Max Extra / Max Extra Child** | Limits for additional adult or child guests.                                |
+| **Room Above**                  | Parent room                                                                 |
+| **Parent Room**                 | Defines a fallback or inheritance relationship.                             |
+| **Delete Icon (🗑)**            | Removes the room entry from the list.                                       |
+| Period ID                       | Corresponds to the contract period (from the _Periods_ tab).                |
+| Allotments                      | Number of rooms available for sale.                                         |
+| Guarantee                       | Number of guaranteed rooms the agency commits to sell.                      |
+| Stay Type                       | Defines if the cost is **Per Pax**, **Per Room**, or **Per Pax Per Night**. |
+| Tr. Length                      | Transport length                                                            |
+| Cost                            | Amount charged to applicable guests.                                        |
