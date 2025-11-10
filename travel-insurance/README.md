@@ -15,58 +15,92 @@ A travel insurance asset contains the full configuration required for system usa
 
 #### **General Information**
 
-* **Travel insurance name**
-* **Travel insurance code**
-* **Product code**\* – Used to map the insurance product in Tourpaq to the provider’s corresponding product
-* **Maximum number of covered days**
-* **Description**
-* **1 Year Availability** – Specifies whether the product can be purchased for year-long coverage
-* **Countries** – Defines the countries or regions covered by the insurance
+The **General** tab is the main configuration area for setting up an insurance product in the system. From here, you define the basic details, behaviour, availability, commission rules, pricing options, and insurance provider extensions.
 
-#### **Provider Extensions**
+The **General** tab contains all mandatory and optional settings that define how an insurance product behaves in the booking system. It covers:
 
-Depending on the insurance provider, different extensions are required.
+* Basic identification
+* Booking rules
+* Provider type (Gouda / Europæiske)
+* Country availability
+* Commission and pricing options
+* Provider-specific configuration (extensions)
+* Brand assignment
 
-### **Europæiske Extensions**
+This setup ensures that the insurance product appears correctly during the booking flow and that all calculations and integrations run as expected.
 
-These fields are completed only when the insurance corresponds to a Europæiske product.
+#### **Purpose**
 
-The extensions include:
+The purpose of the General tab is to:
 
-* Five insurance codes (1 to 5)
-* Trip type
+* Define the core identity and behaviour of an insurance product
+* Specify which customers can book it (age, country, resort conditions)
+* Assign integration settings for external providers (Gouda, Europæiske)
+* Control commission, deposit behaviour, and cancellation options
+* Connect the insurance product to selected brands
+
+This ensures the insurance behaves correctly across all booking channels.
+
+### **Field Explanation**&#x20;
+
+<figure><img src="../.gitbook/assets/image (473).png" alt=""><figcaption></figcaption></figure>
+
+#### **Brand Assignment (Top Section)**
+
+| **Field**                                          | **Description**                                                                                        |
+| -------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| **Tourpaq DK / SE / Live / Other brand dropdowns** | Assigns this insurance to one or more brands. If “Not assigned,” the brand cannot sell this insurance. |
+
+***
+
+### **General Information**
+
+| **Field**                           | **Description**                                                                                   |
+| ----------------------------------- | ------------------------------------------------------------------------------------------------- |
+| **Name**\*                          | Display name of the insurance (shown to users).                                                   |
+| **Resort**                          | Limits the insurance to specific resorts, or “All Resorts”.                                       |
+| **InsuranceID**\*                   | Internal identifier used for API calls and integrations.                                          |
+| **Product code**\*                  | Provider product code used in external systems (Gouda/Europæiske).                                |
+| **Max no. days**\*                  | Maximum number of travel days allowed for this insurance product.                                 |
+| **Price Infant**                    | Price for infant travellers, if applicable.                                                       |
+| **Add to deposit**                  | If enabled, the insurance price is added to the deposit calculation instead of the final invoice. |
+| **Cancellation insurance included** | If checked, cancellation coverage is included in this insurance.                                  |
+| **Annual insurance**                | Indicates whether this is a yearly insurance product rather than per-trip.                        |
+| **Priced Infant**                   | If enabled, infants are charged based on the “Price Infant” rule.                                 |
+| **Commission**                      | Percentage commission paid to the agency for selling the insurance.                               |
+| **Auto Select in Booking Window**   | Automatically selects this insurance by default in the booking flow.                              |
+| **Currency**                        | The currency used for this insurance product.                                                     |
+| **Types**                           | Selects the provider: **Europæiske** or **Gouda**. Determines which extensions become active.     |
+| **Country**                         | Defines which customer nationalities are allowed to book this insurance.                          |
+
+***
+
+### **Description Section**
+
+| **Field**                          | **Description**                                                                            |
+| ---------------------------------- | ------------------------------------------------------------------------------------------ |
+| **Description (Rich text editor)** | Text shown in customer-facing systems describing coverage, terms, and general information. |
 
 ***
 
 ### **Gouda Extensions**
 
-These fields are required for Gouda travel insurance assets.
+| **Field**            | **Description**                                                                                                                                                                                                            |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Cover**            | <p>Indicates whether the insurance applies to:</p><ul><li>A <strong>single person</strong>, or</li><li>A <strong>group</strong> (codes: <em>6, 10, 18</em>) — these group values are not sent directly to Gouda.</li></ul> |
+| **Tax**              | <p>The fee charged by Gouda for their services.<br>Default: <strong>1.1%</strong> of the insurance price.</p>                                                                                                              |
+| **Optionals**        | <p>Extra configuration field for Gouda integrations. </p><p>Additional cover options:</p><ol><li>Personal Property</li><li>Ski</li><li>Excess</li><li>Accident</li><li>Accident + Personal Property</li></ol>              |
+| **Product version**  | Indicates which Gouda product version is used.                                                                                                                                                                             |
+| **1 year available** | Enables 1-year coverage options if offered by Gouda.                                                                                                                                                                       |
 
-#### **- Cover**
+***
 
-Indicates whether the insurance applies to:
+### **Europæiske Extensions**&#x20;
 
-* A **single person**, or
-* A **group** (codes: _6, 10, 18_) — these group values are not sent directly to Gouda.
-
-#### &#x20;**- Tax**
-
-The fee charged by Gouda for their services.\
-Default: **1.1%** of the insurance price.
-
-#### **- Optionals**
-
-Additional cover options:
-
-1. Personal Property
-2. Ski
-3. Excess
-4. Accident
-5. Accident + Personal Property
-
-#### &#x20;**- Product Version**
-
-Indicates which Gouda product version is used.
+| **Field**               | **Description**                                                                         |
+| ----------------------- | --------------------------------------------------------------------------------------- |
+| **1–5 (option fields)** | Provider-specific values used by Europæiske for risk categories or benefit definitions. |
+| **Trip type**           | Identifies the trip category used by Europæiske (e.g., Single Trip, Multi-Trip).        |
 
 ***
 
@@ -148,6 +182,66 @@ The correspondent prices:
 | Bkg start date | Bkg end date | Sc. basic price adult | Sc. basid price child | Sc. adult price per day | Sc. child price per day | Eur. basic price adult | Eur. basic price child | Eur. adult price per day | Eur. child price per day | W. basic price adult | W. basic price child | W. adult price per day | W. child price per day |
 | -------------- | ------------ | --------------------- | --------------------- | ----------------------- | ----------------------- | ---------------------- | ---------------------- | ------------------------ | ------------------------ | -------------------- | -------------------- | ---------------------- | ---------------------- |
 | 01-12-2009     | 01-12-2011   | 0                     | 0                     | 0                       | 0                       | 350                    | 0                      | 350                      | 0                        | 0                    | 0                    | 0                      | 0                      |
+
+### **How It Works**
+
+#### **1. Define the Insurance Identity**
+
+You start by entering the core details (name, ID, product code). These fields tell the system and external providers what product this is.
+
+#### **2. Select Provider Type**
+
+Choosing **Gouda** or **Europæiske** determines which integration fields appear.\
+Each provider requires specific codes and settings.
+
+#### **3. Assign Brands**
+
+The insurance product must be assigned to one or more brands before it can be sold under those brands.
+
+#### **4. Configure Booking Behaviour**
+
+Options such as:
+
+* Auto-select in booking
+* Deposit behaviour
+* Cancellation included\
+  control how the product behaves in the customer-facing booking flow.
+
+#### **5. Set Age and Duration Rules**
+
+Fields like:
+
+* Max no. days
+* Price Infant
+* Infant handling\
+  ensure the product applies correctly to each traveller.
+
+#### **6. Set Commission Rules**
+
+Enter the commission percentage to define agency earnings.
+
+#### **7. Provider Integration Setup**
+
+Depending on provider:
+
+* Fill Gouda fields to enable Gouda risk and product mapping
+* Fill Europæiske fields for their product structure
+
+These values must match the provider’s documentation.
+
+#### **8. Country Availability**
+
+Choose which nationalities are allowed to book the product.\
+Example: Denmark, Bulgaria, Spain, Mallorca.
+
+***
+
+### **Notes**
+
+* Required fields (\*) must be filled before saving.
+* Changing provider type resets provider-specific fields.
+* Country selection must match legal coverage rules.
+* Brand assignment controls visibility across booking channels.
 
 ## **Date Period**&#x20;
 
