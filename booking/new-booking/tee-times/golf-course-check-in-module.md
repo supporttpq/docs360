@@ -12,8 +12,10 @@ The module consists of two components:
 
 The system integrates with the Tourpaq booking database and pulls relevant tee-time, player, and booking information.
 
+{% hint style="warning" %}
 The system is designed to work with parent products, child products, as well as standalone products.\
-The only requirement is that the product has the **TeeTime** category.
+The only requirement is that the product has the **Tee Time** category.
+{% endhint %}
 
 ***
 
