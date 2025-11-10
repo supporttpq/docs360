@@ -74,18 +74,20 @@ Indicates which Gouda product version is used.
 
 Insurance prices are inserted according to:
 
-* Insurance area (Scandinavia, Europe, World)
-* Age (adult/child)
+* Insurance area (Extended Europe, Europe, World)
+* Age (adult/child/senior)
 * Type of price (basic price or daily price)
 
 Each insurance must contain the following price inputs, per area:
 
-#### **Scandinavia**
+#### **Extended Europe**
 
 * Adult basic price
 * Adult price per day
 * Child basic price
 * Child price per day
+* Basic Price Senior
+* Senior day price
 
 #### **Europe**
 
@@ -93,6 +95,8 @@ Each insurance must contain the following price inputs, per area:
 * Adult price per day
 * Child basic price
 * Child price per day
+* Basic Price Senior
+* Senior day price
 
 #### **World**
 
@@ -100,6 +104,8 @@ Each insurance must contain the following price inputs, per area:
 * Adult price per day
 * Child basic price
 * Child price per day
+* Basic Price Senior
+* Senior day price
 
 ***
 
