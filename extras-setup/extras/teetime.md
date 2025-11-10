@@ -17,6 +17,35 @@ TeeTime helps agencies manage products that depend on time availability by:
 
 This ensures that availability is accurately reflected for both back-office users and customers booking through the web or mobile app.
 
+### Tee Time - Basic Setup Field
+
+<figure><img src="../../.gitbook/assets/image (488).png" alt=""><figcaption></figcaption></figure>
+
+| **Field Name**              | **Description**                                                                                                           |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| **Name**\*                  | The official name of the tee time product shown in the system and sales channels.                                         |
+| **List Name**\*             | The name used in product lists; helps categorize or display products more clearly.                                        |
+| **Code**\*                  | Unique identifier for the tee time product used internally and in integrations.                                           |
+| **Status**                  | Controls visibility (e.g., visible, hidden). Determines if the product appears in sales channels.                         |
+| **Stop sales hours**        | Number of hours before the tee time when bookings stop automatically.                                                     |
+| **Minimum length**          | Minimum allowed duration for the tee time (if applicable).                                                                |
+| **Contract Type**           | Defines the contract model associated with this tee time (e.g., allotment, guarantee etc ).                               |
+| **Days prices option**      | Controls how many days forward the system calculates or displays prices.                                                  |
+| **Allotment Type**          | Availability control type (e.g., Generic, Manua Linked to Transportl, ).                                                  |
+| **Extras Category**\*       | Classification for the product, identifying it as a tee time in reporting and pricing (e.g., “Tee tider”).                |
+| **Age**                     | Age rule for the product (if tee time pricing or access varies by age category).                                          |
+| **Period/Trip length**      | Allowed trip or period lengths for which the tee time is valid.                                                           |
+| **SSR Codes**               | Special Service Request codes used to pass additional information to suppliers or other systems. Supports multiple codes. |
+| **Select Supplier**         | Supplier providing the tee time service. Links the product to its provider.                                               |
+| **Round Rule**              | Select the round rule                                                                                                     |
+| **One-way (only)**          | If enabled, the product is restricted to **one-way** operations.                                                          |
+| **Currency**                | Currency in which the tee time is priced (e.g., EUR, USD).                                                                |
+| **Currency prices**         | When enabled, pricing uses the selected currency instead of the system base currency.                                     |
+| **Show supplier on ticket** | Displays supplier name on customer-facing documents such as vouchers or tickets.                                          |
+| **Display allotment**       | Shows the remaining number of tee time slots to the user (internal or external depending on configuration).               |
+
+
+
 **How to Use**
 
 **1. Create a TeeTime Product**
@@ -41,6 +70,23 @@ This ensures that availability is accurately reflected for both back-office user
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+### **Tee Time Rules**
+
+<figure><img src="../../.gitbook/assets/image (489).png" alt=""><figcaption></figcaption></figure>
+
+| **Field Name**            | **Description**                                                                                                                                                                              |
+| ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Pax limit**             | How many times this product can be booked for each passenger (per interval) (e.g., 4 players).                                                                                               |
+| **Latitude**              | Geographic latitude of the golf course; used for mapping and location services.                                                                                                              |
+| **Longitude**             | Geographic longitude of the golf course; used for mapping and location services.                                                                                                             |
+| **Product Parent ID**     | Used to link products that share the same allotment across multiple companies.                                                                                                               |
+| **TeeTime Pin**           | Unique system-generated identifier for the specific tee time slot; used self checkin module). If the product is a child of another product, the tee time pin will be changed for the parent. |
+| **Only first week(s)**    | Allow to select Tee Time only on the first (n) week(s).                                                                                                                                      |
+| **Limit Per Day**         | Maximum number of times this tee time can be booked per day (e.g., 1 = only once per day).                                                                                                   |
+| **Limit before hour**     | Restricts booking availability: **value = number of hours before**, plus an optional **cut-off time**. For example: “2 / 11:00” means bookings close _2 hours before 11:00_.                 |
+| **First available price** | When enabled, the system will automatically show the earliest available tee time price instead of the exact slot price.                                                                      |
+| **Requires confirmation** | Booking requires manual confirmation from staff or supplier before becoming valid.                                                                                                           |
 
 ### Prices <a href="#prices" id="prices"></a>
 
