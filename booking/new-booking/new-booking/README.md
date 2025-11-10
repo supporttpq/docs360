@@ -110,7 +110,7 @@ At the top, the **Total amount** field highlights the total price (7.206), appli
 
 * **Total amount** – The final selling price of the booking (after discounts).
 * **Price - Price without discounts, including extras, supplements etc.**
-* **Discount** –Represents the sum of discounts on the hotel, and the discounts added to each passenger.
+* **Discount** – The sum of discounts on the hotel, price list adjustment and the discounts added to each passenger.
 * **Total Profit** – The margin earned after subtracting supplier costs from the selling price.
 
 #### **Booking Details**
