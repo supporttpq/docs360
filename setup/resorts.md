@@ -153,3 +153,81 @@ In case of uploading more than one image, the title and the description field wi
 <figure><img src="../.gitbook/assets/editableFieldResortPhotos-e1c3c42024e4c0fa04085d5f64f25fdf.png" alt=""><figcaption></figcaption></figure>
 
 To order the list of photos, press and keep click on the specific row and move cursor up/down to the position desired. Release and then press save to store the ordered list.
+
+### Resort - Documents tab
+
+The **Documents** tab within the **Edit Resort** page allows users to manage and organize files or written content related to a specific resort. This ensures that each resort entry can have associated documentation such as guides, descriptions, or legal
+
+#### **Instructions**
+
+**Accessing the Tab**
+
+1. Open the **Resort** you wish to edit.
+2. Select the **Documents** tab from the top menu bar (next to _General_, _Photos_, _CMS_, etc.).
+
+**Adding a New Document**
+
+1. Click the **Add document** button on the right side of the page.
+2.  Enter the document name and add the document (only in PDF format).&#x20;
+
+    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+3. Save your changes.
+
+**Deleting a Document**
+
+* Press the **trash bin icon** next to a document name to remove it.
+
+### Passenger Information
+
+#### **Overview**
+
+The **Passenger Information** section, found under **Setup → Resorts**, allows the user to define informational messages related to a specific resort.\
+These entries control what information is associated with that resort and can be used to provide guests with resort-specific notes such as arrival guidelines, service information, or important updates.
+
+Passenger Information is managed per resort and can include conditions based on **stay period** and **booking period**.
+
+#### **Purpose**
+
+The purpose of the **Passenger Information** page is to:
+
+* Manage resort-level informational content that can later be used in various parts of the system or shared with guests.
+* Define and control which information applies to passengers depending on their **travel dates** or **booking dates**.
+* Set up acknowledgment requirements for specific messages that guests or guides need to confirm.
+
+#### **Instructions**
+
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+**Accessing Passenger Information**
+
+1. Go to **Setup → Resorts**.
+2. Select the desired resort (e.g., _CHQ_).
+3. Open the **Passenger Information** tab.
+
+The list will display all entries configured for the selected destination.
+
+| **Column**                 | **Description**                                                                  |
+| -------------------------- | -------------------------------------------------------------------------------- |
+| **Stay From / Stay To**    | The travel period during which the information applies.                          |
+| **Booking Date From / To** | Optional booking date limits that define when the message is relevant.           |
+| **Information**            | The title or content reference of the passenger information.                     |
+| **Acknowledge**            | Indicates if the message must be acknowledged by the guest (checked = required). |
+| **Delete**                 | Removes the selected entry.                                                      |
+
+**Creating Passenger Information**
+
+1. Click **Create**.
+2. Complete the following fields:
+   * **Stay From / Stay To** – defines the period of stay when this message is valid.
+   * **Booking Date From / To** – limits the message visibility to bookings made in a specific timeframe.
+   * **Information** – enter or select the information to be displayed.
+   * **Acknowledge** – enable if passengers must confirm they have read the information.
+3. Click **Save** to store the configuration.
+
+#### **Example**
+
+In the provided example:
+
+* The resort **CHQ** has one passenger information entry titled **Resort Errata Def**.
+* It applies to stays from **28-10-2025** to **28-11-2025**.
+* The entry is marked as _Acknowledged_, meaning passengers are required to confirm it.

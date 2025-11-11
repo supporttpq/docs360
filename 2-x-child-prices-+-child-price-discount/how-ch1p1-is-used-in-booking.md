@@ -1,109 +1,79 @@
 # How CH1P1 is used in booking
 
-### **Overview**
+#### **Overview**
 
-This document outlines the steps required to create a booking with child passengers, enable child-related price columns in the **Price List**, and validate the final **Total Amount** by comparing booking values with pricing breakdowns.
-
-***
-
-### **Prerequisites**
-
-* Administrator access
-* At least one hotel offering **extra bed** for children
-* Proper access to:
-  * Booking management
-  * Price List page
-  * Feature flags such as **Child Prices**, **Child Discounts**, **Child Profit Margin**, and **Adjustments**
+This document explains how the **CH1P1** value (child price) is applied within bookings that include child passengers. It covers the required setup, validation in the **Price List**, and how the total booking amount is derived by combining adult and child prices.
 
 ***
 
-### **Step-by-Step Instructions**
+#### **Prerequisites**
 
-#### **1. Login**
+To perform this validation, ensure the following conditions are met:
 
-* Log in using the administrator account.
-
-#### **2. Start New Booking**
-
-* Click the **New Booking** button and select a brand. - The brand is selected, and the new booking page is displayed.
-
-#### **3. Add Passengers**
-
-* In the **Passengers** section, select `2 Adults` and `1 Child`.
-
-#### **4. Select Transport**
-
-* Click the **Edit** button in the transport section and choose a transport.
-
-#### **5. Select Hotel**
-
-* Click the **Edit** button in the **Hotel** section.
-
-#### **6. Choose Hotel with Extra Bed**
-
-* Select a hotel that provides an **extra bed for a child**.
-
-#### **7. Complete Booking**
-
-* Fill in the **Customer Details**, take the allotment, and save the booking.
-
-#### **8. Note Total Amount**
-
-* Record the **Total Amount** shown in the booking confirmation.
+* The user has **Administrator** access.
+* At least one hotel in the system offers an **extra bed for children**.
+* Access is granted to both **Booking Management** and the **Price List** page.
+* The following feature flags are enabled:
+  * **Child Prices**
+  * **Child Discounts**
+  * **Child Profit Margin**
+  * **Adjustments**
 
 ***
 
-### **Verify Price List Data**
+#### **Booking Creation and Child Price Application**
 
-#### **9. Open Price List**
+A booking is created with one adult and one child, selecting a hotel that provides an extra bed option for children. Once the booking is completed and the allotment is taken, the system generates a **Total Amount** in the booking confirmation, which includes both adult and child pricing components.
 
-* Go to the **Price List** page.
+<figure><img src="../.gitbook/assets/image (453).png" alt=""><figcaption></figcaption></figure>
 
-#### **10. Populate Filters**
-
-* Fill in all required filters using the booking data from **Step 7**, then click **Display -** Search is performed.
-
-#### **11. Adjust Column Display**
-
-* Click the three-dot menu on the table header. Deselect `I2`, `I3`, and `I4`, and ensure only `I1` is ticked. - Column selector is updated to display only `I1`.
-
-#### **12. Enable Child Pricing Fields**
-
-* In the same pop-up, tick the following:
-  * `CHILD 1 PRICES`
-  * `CHILD 2 PRICES`
-  * `CHILD 1 DISCOUNTS`
-  * `CHILD 2 DISCOUNTS`
-  * `CHILD PRICES %`
-  * `CHILD PROFIT MARGIN`
-  * `ADJUSTMENTS`
-* The following columns are added to the table:
-  * `CH1P1`, `CH2P1` – child prices
-  * `CH1D1`, `CH2D1` – child discounts
-  * `CH1%` – child price percentage
-  * `CMP1` – child profit margin
-  * `PA1` – adjustments
+The child price component used in this calculation corresponds to the **CH1P1** column in the **Price List**.
 
 ***
 
-### **Validate Calculation**
+#### **Verifying CH1P1 in the Price List**
 
-#### **13. Compare Total Amount**
+To confirm that the booking values align with the pricing setup:
 
-*   Validate that the Total Amount from **Step 8** matches the following calculation:
+* Access the **Price List** page.
+* Filter results according to the hotel, travel dates, and booking details.
+* Enable the following columns for visibility:
+  * **CHILD 1 PRICES**
+  * **CHILD 2 PRICES**
+  * **CHILD 1 DISCOUNTS**
+  * **CHILD 2 DISCOUNTS**
+  * **CHILD PRICES %**
+  * **CHILD PROFIT MARGIN**
+  * **ADJUSTMENTS**
 
-    ```
-    Total Amount = P1 × Number of Adults + CH1P1
-    ```
+<figure><img src="../.gitbook/assets/image (454).png" alt=""><figcaption></figcaption></figure>
 
-    Where:
+The displayed table should now include columns such as **CH1P1**, **CH2P1**, **CH1D1**, **CH2D1**, **CH1%**, **CMP1**, and **PA1**, representing the child price, discounts, percentages, and related adjustments.
 
-    * `P1` = Price per adult
-    * `CH1P1` = Price for child 1
-* The total amount from the booking is consistent with the formula.
+<figure><img src="../.gitbook/assets/image (455).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-### **Conclusion**
+#### **Calculation Logic**
 
-This scenario ensures the correct linkage between **booking totals** and **price list breakdowns**, especially regarding child pricing. It validates both **data display** and **price calculation logic**, supporting reliable pricing transparency for agents and admins.
+The **Total Amount** displayed in the booking is calculated as:
+
+Total Amount = P1 × Number of Adults + CH1P1
+
+Ex: Total Amount = (5000 +306 (insurnace) + 100 (Pickup point) ) x 1 (no adults) + 500 (CH1P1) + 306 (insurance) + 100 (Pickup point) = 5406 x 1 + 906 = 6312 DKK&#x20;
+
+<figure><img src="../.gitbook/assets/image (456).png" alt=""><figcaption></figcaption></figure>
+
+Where:
+
+* **P1** represents the base price per adult.
+* **CH1P1** represents the price applied for the first child.
+
+This formula ensures that the system accurately reflects the pricing breakdown between adult and child passengers.
+
+***
+
+#### **Conclusion**
+
+The **CH1P1** value directly influences the total price of a booking containing child passengers. Verifying it in the **Price List** ensures consistency between backend pricing logic and the values displayed in bookings.\
+This setup guarantees transparency, helping administrators and agents validate that child pricing is applied correctly across all bookings.

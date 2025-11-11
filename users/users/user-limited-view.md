@@ -21,7 +21,7 @@ Two user types are responsible for controlling access permissions:
 
 ### **Key Features / Functions**
 
-#### 🛡️ **Super Administrator Restrictions**
+#### **Super Administrator Restrictions**
 
 Super administrators can restrict user access to the following areas:
 
@@ -46,7 +46,7 @@ Super administrators can restrict user access to the following areas:
 
 ***
 
-#### ⚙️ **Administrator Restrictions**
+#### **Administrator Restrictions**
 
 * Administrators have **limited access rights** to restrict user access.
 * Their control is focused only on **additional settings**, without full control over system-wide access like a super administrator.

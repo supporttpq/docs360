@@ -1,24 +1,36 @@
 # Communication (Email & SMS)
 
-The communication between agency and customer, regarding service cases, can be done via Email or SMS.
+#### **Overview**
 
-There are dedicated buttons for that, on the service case editing page.
+Communication between the agency and the customer regarding service cases can be conducted via **Email** or **SMS**.\
+Dedicated buttons on the **service case editing page** provide direct access to these tools, allowing messages to be sent and received while maintaining a full history in the service case.
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-For the SMS to work, “SMS integration” needs to be enabled for the company from “Feature access” by a super admin. After that, complete required information in “SMS configuration” tab in System setup.
+#### **SMS Communication**
 
-Also, the “SMS service” needs to be activated by a super admin.
+**Requirements:**
 
-The SMS tool opens a simple chat dialog, from where the user can send a message to the customer on the phone number saved. Also, when the customer replies, that message will be displayed in the same chat.
+* **SMS integration** must be enabled for the company via **Feature Access** by a super admin.
+* Complete the required configuration in the **SMS Configuration** tab under **System Setup**.
+* The **SMS Service** must be activated by a super admin.
+
+**Functionality:**
+
+* The SMS tool opens a **chat-style dialog**, where users can:
+  * Send messages directly to the customer using the phone number saved in the service case.
+  * View customer replies in the same chat interface.
+* All messages exchanged via SMS are automatically linked to the service case.
 
 <figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-For the email tool to work, it’s necessary to purchase a mail bee license key, accessing following link: [https://afterlogic.com/mailbee-net/email-components](https://afterlogic.com/mailbee-net/email-components)
+#### **Email Communication**
 
-“Mail Bee Platform” service must be activated by a super admin, for every brand.
+**Requirements:**
 
-After you have the key, complete the setup, going to Users menu/ Brands / Click on Edit and go to “Service case” tab and fill in all required information.
+* A **MailBee license key** must be purchased from: [MailBee Email Components](https://afterlogic.com/mailbee-net/email-components).
+* The **MailBee Platform service** must be activated by a super admin for each brand.
+* Complete the setup by going to: **Users → Brands → Edit → Service Case Tab**, and fill in the required information.
 
 <figure><img src="../.gitbook/assets/image (236).png" alt=""><figcaption></figcaption></figure>
 
@@ -35,3 +47,9 @@ If you need to get a certain email, to this email overview, just copy the servic
 All files that the customer will attach to an email sent, will be saved in the attachments section of the service case.
 
 <figure><img src="../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+#### **Usage Notes**
+
+* SMS and Email communications are fully integrated into the service case, providing a complete history for tracking and reporting.
+* Ensure all required setup steps are completed for SMS or Email functionality before attempting to send messages.
+* Attachments sent via email are automatically saved, eliminating the need for separate uploads.

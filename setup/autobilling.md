@@ -1,15 +1,23 @@
 # Autobilling
 
-The autobilling feature enables Tourpaq to generate invoices on behalf of creditors/suppliers. Invoice generation is done automatically based on a schedule defined for the hotels, extras, discounts, suppl,ements and handling and using the costs inserted in the system. The system can generate the following invoice types:
+**Overview**\
+The **Autobilling** feature allows Tourpaq to automatically generate invoices on behalf of creditors or suppliers. This automation streamlines the billing process and ensures invoices are created according to predefined schedules.
 
-* Hotel deposit invoice
-* Hotel early booking invoice
-* Hotel invoice
-* Extra invoice
-* Extra early booking invoice
-* Transfer invoice
-* Discount/Supplement invoice
-* Handling invoice
+**Purpose**\
+Autobilling reduces manual administrative work by automatically generating invoices for different cost types based on the data and costs already entered in the system.
+
+**Details**\
+Invoice generation occurs automatically according to the schedule defined for each product category, such as hotels, extras, discounts, supplements, and handling fees.\
+The system supports the generation of the following invoice types:
+
+* **Hotel deposit invoice**
+* **Hotel early booking invoice**
+* **Hotel invoice**
+* **Extra invoice**
+* **Extra early booking invoice**
+* **Transfer invoice**
+* **Discount/Supplement invoice**
+* **Handling invoice**
 
 ### Prerequisites​ <a href="#prerequisites" id="prerequisites"></a>
 

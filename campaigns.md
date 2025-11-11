@@ -1,5 +1,7 @@
 # Campaigns
 
+#### Overview
+
 Campaign is a feature in Tourpaq that allows the user to create a package of discounts and products according to a specific set of rules. Campaign feature can only be used with a campaign code.
 
 A Campaign can be created in office, from **Extra Setup**/**Campaign**.

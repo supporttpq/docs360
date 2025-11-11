@@ -2,24 +2,44 @@
 
 
 
-To set questions for the questionnaire, in the questionnaire,&#x20;
+#### **Overview**
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Within each **Questionnaire**, users can define the individual **questions** that will be presented to customers.\
+Each question can have different answer types, configurations, and display options.\
+These settings influence how responses are collected, displayed, and evaluated in the dashboard.
 
-* Go to questions&#x20;
-* Click on Create new question&#x20;
-* Write the question&#x20;
-* Select the answer type (either a choice answer, yes or no answer or a free text answer). A choice answer will allow the user to write the expected answers.&#x20;
-* More options can be added or removed.&#x20;
-* Multiple answers can be allowed. Each answer has a certain value depending on their positioning and the number of answers. The first answer has the highest value of points. Not used option will not have any value when the answers are totaled. It stands for I don't care The rank of the question shows the placement of the question in the questionnaire. Is the most representative question will make the answers to the question more valuable when calculating the answers of the questionnaire. The results of the question can be shown either as a pie or a bar on dashboard.&#x20;
-* Assigned - the type of user who has access to questionnaire results;
-* Questions can be set to be mandatory, requesting an answer before proceeding to a different question or not mandatory meaning they cannot guests aren't required to answer the question.&#x20;
-* Show "Not Used" option - if checked, allows adding a new answer option to the question, but the answer does not count in the statistics
-* Is inactive - if checked, hides the question from surveys
-* Rank - shows the order in which the questions appear in WB
-* Is most represenatative question - if checked, it makes that question one of the most important questions. It is usually at the end of the questionnaire.
-* Show on dashboard - graph display mode (pie / bar)
-* Another type is that yes or no answer and the free text answer that will allow the customers to write their own answers.&#x20;
-* Dashboard Group - groups questions according to a specific interest group. These groups are defined in Questionaire Groups
-* After a question has been set click on Save
-* Click on  a new question and also click on insert.
+#### **Purpose**
+
+* To define how feedback is collected within a questionnaire.
+* To customize question formats and determine how results are analyzed.
+* To structure questionnaire results for better data visualization and evaluation.
+
+#### **Instructions – Create a New Question**
+
+To configure questions for a questionnaire:
+
+1. Open the questionnaire where questions will be added.
+2. Go to the **Questions** tab.
+3. Click **Create New Question**.
+4. Fill in the required details as described in the table below.
+5. Click **Save**.
+6. To add another question, click **Insert** and repeat the process.
+
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+#### **Fields and Descriptions**
+
+| **Field / Option**                  | **Description**                                                                                                                                                                                                                                                                                                                    |
+| ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Question**                        | The text of the question that will be shown to customers.                                                                                                                                                                                                                                                                          |
+| **Answer Type**                     | <p>Defines the type of answer customers can provide:<br>• <strong>Choice Answer</strong> – Allows users to define multiple predefined answers.<br>• <strong>Yes/No Answer</strong> – Displays simple “Yes” or “No” options.<br>• <strong>Free Text Answer</strong> – Allows customers to enter a custom response.</p>              |
+| **Choice Answer Options**           | <p>When <em>Choice Answer</em> is selected, users can add or remove answer options. Each option is assigned a value based on its order.<br>• The <strong>first option</strong> has the <strong>highest point value</strong>.<br>• <strong>Not Used</strong> options have no point value and represent <em>“I don’t care.”</em></p> |
+| **Allow Multiple Answers**          | If enabled, customers can select more than one option for the question.                                                                                                                                                                                                                                                            |
+| **Rank**                            | Defines the display order of the question within the questionnaire (WB view).                                                                                                                                                                                                                                                      |
+| **Is Most Representative Question** | Marks the question as one of the most important. This increases its weight when calculating questionnaire results. Typically used for the final or summary question.                                                                                                                                                               |
+| **Show on Dashboard**               | Defines how the question’s results will be visualized on the dashboard — either as a **Pie Chart** or a **Bar Chart**.                                                                                                                                                                                                             |
+| **Assigned**                        | Specifies which type of user or department has access to view the questionnaire results.                                                                                                                                                                                                                                           |
+| **Mandatory**                       | If enabled, customers must answer the question before moving to the next one. If not selected, the question is optional.                                                                                                                                                                                                           |
+| **Show “Not Used” Option**          | Adds a “Not Used” answer to the question, which is ignored in statistical calculations.                                                                                                                                                                                                                                            |
+| **Is Inactive**                     | If checked, hides the question from the live questionnaire.                                                                                                                                                                                                                                                                        |
+| **Dashboard Group**                 | Assigns the question to a specific **Dashboard Group**, allowing related questions to be grouped under the same analysis area. Groups are predefined in **Questionnaire Groups**.                                                                                                                                                  |

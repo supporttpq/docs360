@@ -49,6 +49,8 @@ Allow the user to assign an extra to an agency. An extra can be assigned as foll
 
 Used to customize the appearance and description of the extra in booking flows or documentation.
 
+<figure><img src="../../.gitbook/assets/image (442).png" alt=""><figcaption></figcaption></figure>
+
 | Field           | Description                                                                                                                |
 | --------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | **Name**        | Custom label to override the default extra name.                                                                           |
@@ -57,6 +59,8 @@ Used to customize the appearance and description of the extra in booking flows o
 ### Automatic Billing
 
 Allows integration with internal billing and accounting systems for accurate cost tracking and supplier payouts.
+
+<figure><img src="../../.gitbook/assets/image (443).png" alt=""><figcaption></figcaption></figure>
 
 | Field                    | Description                                                                                    |
 | ------------------------ | ---------------------------------------------------------------------------------------------- |
@@ -74,6 +78,8 @@ Allows integration with internal billing and accounting systems for accurate cos
 
 These settings control how the extra behaves in the booking process and what logic or restrictions apply to its use.
 
+<figure><img src="../../.gitbook/assets/image (444).png" alt=""><figcaption></figcaption></figure>
+
 | Setting                                 | Description                                                                                                                 |
 | --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | **Autoselect in booking & offer**       | Automatically selects this extra during booking and in special offers. Useful for mandatory or strongly recommended extras. |
@@ -90,6 +96,8 @@ These settings control how the extra behaves in the booking process and what log
 ### &#x20;Other Settings
 
 These settings influence how the extra interacts with billing, privacy regulations, and system integrations.
+
+<figure><img src="../../.gitbook/assets/image (445).png" alt=""><figcaption></figcaption></figure>
 
 | Setting                      | Description                                                                                                                                |
 | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |

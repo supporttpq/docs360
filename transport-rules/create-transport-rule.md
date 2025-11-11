@@ -24,7 +24,7 @@ Transport rules are used to:
 * **Date To**\* – End date for the validity of the rule (mandatory).
 * **Departure**\* – Departure location (mandatory).
 * **Arrival**\* – Arrival location (mandatory).
-* **Stay Days** – Define stay duration (optional, tab).
+* **Stay Days** – Define stay duration (optional, tab). The values ​​displayed in this field are defined in Setup -> [Transport Stay Days](../setup/transport-stay-days.md).
 * **Allotment** – Configure allotment rules (optional, tab).
 
 #### Transportation

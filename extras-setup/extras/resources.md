@@ -1,6 +1,6 @@
 # Resources
 
-### Overview Tab
+### Overview&#x20;
 
 The resource tab is used to limit the availability of an extra. This is mainly due to the fact that certain products are available only to certain transports, destinations or hotels.
 

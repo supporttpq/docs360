@@ -1,31 +1,62 @@
 # Flight change
 
-A flight change is automatically generated when:
+#### **Overview**
 
-* The departure or arrival time is edited
-* The flight number is changed
+The **Flight Change System** automatically detects and manages updates to flight details such as departure times, arrival times, and flight numbers. It ensures passengers are notified about flight modifications and provides tracking for unconfirmed notifications.
 
-The flight change is identified as Tiny, Small, and Large depending on the flight time adjustments. The intervals are configurable.
+***
 
-The flight change is also identified as sooner or later, depending on the amount of time adjusted. A 10-minute delay is classified as tiny later.
+#### **Automatic Flight Change Generation**
 
-The flight change is queued in a flight change system, and they are manually released or dropped.
+A **flight change** is automatically created when any of the following occur:
 
-If the same flight is changed twice, then two flight changes are queued for the same flight, and it is a manual process to delete one of the flight changes.
+* The **departure time** or **arrival time** is edited.
+* The **flight number** is changed.
 
-The flight change system gives an overview of destination/flight changes, and there are several filtering possibilities.
+Each flight change is categorized by **magnitude** and **direction** based on the time adjustment.
 
-When a flight change is submitted to a guest (this is a carefully designed mail), the user can click a link to confirm the receipt.
+| **Category**             | **Description**                                                                                                       |
+| ------------------------ | --------------------------------------------------------------------------------------------------------------------- |
+| **Tiny / Small / Large** | Classification based on configurable time intervals.                                                                  |
+| **Sooner / Later**       | <p>Indicates whether the flight was moved earlier or delayed.<br>Example: A 10-minute delay → <em>Tiny Later</em></p> |
 
-If the user fails to confirm the receipt, the system will resend the flight change a couple of times and then try with an SMS asking the user to check mail and confirm.
+***
 
-In the flight change system, it is straightforward to see which guests have not yet confirmed the receipt of the flight change.
+#### **Queue Management**
 
-If the guest fails to respond to the flight change, then the flight change is forwarded to a service mail that can take proper action (call the passenger, etc.).
+* Each flight change is **queued** in the **Flight Change System**.
+* Flight changes must be **manually released or dropped** by the user.
+* If the **same flight is edited multiple times**, multiple flight changes are queued. The user must manually **delete duplicate entries**.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+***
 
-### 🔍 Filter Section (Top Panel)
+#### **Overview and Filtering**
+
+The system provides a detailed **overview of destinations and flight changes**, with **multiple filtering options** to help users manage and locate specific updates easily.
+
+***
+
+#### **Guest Communication Process**
+
+1. When a flight change is submitted, a **notification email** is sent to the guest.
+   * The email contains a **confirmation link** for the guest to acknowledge the change.
+2. If the guest **does not confirm receipt**, the system will:
+   * **Resend the email** several times.
+   * Then, **send an SMS reminder** asking the guest to check their email and confirm the change.
+3. Within the system, it is easy to identify guests who **have not yet confirmed** receipt.
+4. If no confirmation is received after multiple attempts, the flight change is **forwarded to a service email**, allowing the team to take further action (such as calling the passenger).
+
+***
+
+#### **Customer Outcome**
+
+* Ensures **transparent communication** with passengers regarding flight schedule updates.
+* Reduces **manual workload** by automating detection, notification, and follow-up processes.
+* Enables **efficient tracking and intervention** when guests fail to confirm flight changes.
+
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+### Filter Section (Top Panel)
 
 | Field Name            | Description                                                                  |
 | --------------------- | ---------------------------------------------------------------------------- |
@@ -47,7 +78,7 @@ If the guest fails to respond to the flight change, then the flight change is fo
 
 ***
 
-### 📋 Table Columns
+### Table Columns
 
 | Column Name           | Description                                                                                  |
 | --------------------- | -------------------------------------------------------------------------------------------- |

@@ -1,6 +1,6 @@
 # Questionnaire - Resource
 
-### ✅ Overview - Survey resources
+### Overview - Survey resources
 
 The **Survey Resources** tab in the Tourpaq "Welcome Home" questionnaire module allows administrators to control **where and when** a specific survey will be sent. Each entry defines a **resource mapping** between an agency, transport (optional), and time interval. This allows **precise targeting** of survey delivery based on travel context.
 
@@ -8,13 +8,13 @@ The **Survey Resources** tab in the Tourpaq "Welcome Home" questionnaire module 
 
 ***
 
-### 🧭 Purpose
+### Purpose
 
 To define **which travelers** (based on their agency, travel period, and transport) should receive the selected questionnaire, ensuring relevant and timely feedback collection.
 
 ***
 
-### 📋 Screen Elements
+### Screen Elements
 
 | Column          | Description                                                                                                                                                                                        |
 | --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -25,9 +25,9 @@ To define **which travelers** (based on their agency, travel period, and transpo
 
 ***
 
-### ➕ Actions
+### Actions
 
-#### 🟦 Create Button
+#### &#x20;Create Button
 
 * Opens a form to **add a new survey resource rule**.
 
@@ -44,7 +44,7 @@ To define **which travelers** (based on their agency, travel period, and transpo
 
 ***
 
-### 📌 Best Practices
+### Best Practices
 
 * Always define **non-overlapping intervals** to prevent multiple surveys from being sent to the same passenger.
 * If you work with multiple brands or transport types, use **multiple entries** to target them properly.
@@ -52,7 +52,7 @@ To define **which travelers** (based on their agency, travel period, and transpo
 
 
 
-### ✅ Overview - Question resources
+### Overview - Question resources
 
 The **Question Resources** section allows the admin to define specific **questions** included in the Welcome Home survey and how these questions behave in different booking contexts. This ensures that feedback is gathered in a relevant, personalized, and conditional manner.
 
@@ -60,7 +60,7 @@ Each row in this view maps a **question to a specific logic condition**, such as
 
 ***
 
-### 🧭 Purpose
+### Purpose
 
 * To manage and assign questions dynamically in a survey.
 * To define **conditional questions** that are shown only when certain criteria are met.
@@ -68,7 +68,7 @@ Each row in this view maps a **question to a specific logic condition**, such as
 
 ***
 
-### 📋 Interface Explanation
+### Interface Explanation
 
 | Column                | Description                                                                                                                                                      |
 | --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -80,9 +80,9 @@ Each row in this view maps a **question to a specific logic condition**, such as
 
 ***
 
-### 🛠️ Actions
+### Actions
 
-#### 🟦 Create Button
+#### Create Button
 
 Opens a form to add a new question resource. You’ll define:
 

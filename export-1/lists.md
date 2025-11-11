@@ -1,12 +1,12 @@
 # Lists
 
-### ✅ Overview
+### Overview
 
 The **Export/Lists module** in Tourpaq Office allows administrators to generate and schedule exports of booking-related data tailored to specific operational needs. The module supports multiple export types (hotel, passenger, rooming, guide, canceled bookings, and booking changes) and can be used **manually** or with **automated scheduling**.
 
 ***
 
-### 🎯 Purpose
+### Purpose
 
 The purpose of this module is to:
 
@@ -17,14 +17,14 @@ The purpose of this module is to:
 
 ***
 
-### 👤 Access & Availability
+### Access & Availability
 
 * **Role required**: Administrator
 * **Location in UI**: `Export → Lists`
 
 ***
 
-### ⚙️ Preconditions
+### Preconditions
 
 Before using this module:
 
@@ -35,29 +35,30 @@ Before using this module:
 
 ***
 
-### 🔍 Fields & Filters – Export Generation
+### Fields & Filters – Export Generation
 
-| Field               | Description                                                                                       |
-| ------------------- | ------------------------------------------------------------------------------------------------- |
-| **Brands**          | Select one or more brands (agencies) for which the export is generated.                           |
-| **Report type**     | Choose the export format (see Report Types below).                                                |
-| **Arrival period**  | Filters bookings based on **arrival at destination** date range.                                  |
-| **Booking period**  | Filters bookings based on **booking creation date**.                                              |
-| **Stay period**     | Filters bookings by actual **hotel stay period**.                                                 |
-|  Cancel **from**    | Limits **canceled bookings** to those canceled on or after the selected date.                     |
-| **Changes since**   | Filters bookings to show only those **changed** after the selected date. Used for “Changes List”. |
-| **Compress as ZIP** | When checked, the exported file will be compressed in `.zip` format.                              |
-| **Transport**       | Select one or more **transport options** (as defined in the booking).                             |
-| **Real transport**  | Filter by **real, physical transport services** (e.g., actual bus, flight identifiers).           |
-| **Country**         | Filter by one or more **destination countries**.                                                  |
-| **Resort**          | Select one or more **resorts** to include bookings from.                                          |
-| **Hotel**           | Filter by specific hotels.                                                                        |
-| **Room**            | Filter by room type or room codes.                                                                |
-| **Columns**         | If enabled via "Show columns", allows selection of specific fields to include in the export.      |
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+| Field                  | Description                                                                                       |
+| ---------------------- | ------------------------------------------------------------------------------------------------- |
+| **Report type**        | Choose the export format (see Report Types below).                                                |
+| **Arrival period**     | Filters bookings based on **arrival at destination** date range.                                  |
+| **Booking period**     | Filters bookings based on **booking creation date**.                                              |
+| **Stay period**        | Filters bookings by actual **hotel stay period**.                                                 |
+|  Cancel **from**       | Limits **canceled bookings** to those canceled on or after the selected date.                     |
+| **Changes since**      | Filters bookings to show only those **changed** after the selected date. Used for “Changes List”. |
+| **Transport**          | Select one or more **transport options** (as defined in the booking).                             |
+| **Real transport**     | Filter by **real, physical transport services** (e.g., actual bus, flight identifiers).           |
+| **Country**            | Filter by one or more **destination countries**.                                                  |
+| **Resort**             | Select one or more **resorts** to include bookings from.                                          |
+| **Hotel**              | Filter by specific hotels.                                                                        |
+| **Room**               | Filter by room type or room codes.                                                                |
+| **Columns for export** | Allows selection of specific fields to include in the export.                                     |
+| **Compress as ZIP**    | When checked, the exported file will be compressed in `.zip` format.                              |
 
 ***
 
-### 📄 Report Types Explained
+### Report Types Explained
 
 | Report Type             | Description                                                                                                                      |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
@@ -77,27 +78,27 @@ Before using this module:
 
 ***
 
-### 🗓️ Scheduled Export
+### Scheduled Export
 
 You can **automate exports** by setting up schedules.
 
 <figure><img src="../.gitbook/assets/image (23) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### 📌 Fields
+#### Fields
 
-| Field             | Description                                                                            |
-| ----------------- | -------------------------------------------------------------------------------------- |
-| **Enabled**       | When checked, the export schedule becomes active and will begin sending automatically. |
-| **Description**   | Textual description of the purpose or content of the export.                           |
-| **Schedule type** | Choose the recurrence:                                                                 |
-|                   | → Once per day                                                                         |
-|                   | → Once per week                                                                        |
-|                   | → Once per month                                                                       |
-| **Day**           |                                                                                        |
-|                   | → If **weekly**, choose day of the week (e.g., Monday).                                |
-|                   | → If **monthly**, choose a specific day (e.g., 15th).                                  |
+| Field             | Description                                                                                                                                                                                                     |
+| ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Enabled**       | When checked, the export schedule becomes active and will begin sending automatically. Schedules not used in 7 days are automatically disabled. For a schedule to be considered used click " Get Latest Result" |
+| **Description**   | Textual description of the purpose or content of the export.                                                                                                                                                    |
+| **Schedule type** | Choose the recurrence:                                                                                                                                                                                          |
+|                   | → Once per day                                                                                                                                                                                                  |
+|                   | → Once per week                                                                                                                                                                                                 |
+|                   | → Once per month                                                                                                                                                                                                |
+| **Day**           |                                                                                                                                                                                                                 |
+|                   | → If **weekly**, choose day of the week (e.g., Monday).                                                                                                                                                         |
+|                   | → If **monthly**, choose a specific day (e.g., 15th).                                                                                                                                                           |
 
-#### 📤 Behavior
+#### Behavior
 
 * Email is automatically sent to preconfigured recipients.
 * Uses same filters and report settings as the on-demand export.
@@ -105,11 +106,10 @@ You can **automate exports** by setting up schedules.
 
 ***
 
-### 🧰 UI Buttons / Actions
+### UI Buttons / Actions
 
 | Button             | Action                                                                                  |
 | ------------------ | --------------------------------------------------------------------------------------- |
 | **Export**         | Immediately generates an export file based on current filter and sends or downloads it. |
 | **Show schedules** | Displays existing scheduled exports and allows editing or creating new ones.            |
-| **Show columns**   | Reveals the optional column selector to customize which fields appear in the export.    |
 

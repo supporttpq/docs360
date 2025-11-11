@@ -20,20 +20,24 @@ The purpose of the Basic Setup configuration is to ensure that each transport is
 
 #### Instructions & Field Explanations
 
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+
 **1. Destination**
 
 Defines the basic route and transport identifiers.
 
-* **Code**: Unique identifier for the transport (e.g., BLL-MLA).
+* **Code**: Unique identifier for the transport (e.g., BLLTFS-A1).
 * **Return**: Code for the return route.
 * **Departure**: Departure airport/location.
 * **Arrival**: Arrival airport/location.
-* **Transport Mode**: Type of transport (e.g., Fly, Bus).
+* **Transport Mode**: Type of transport (e.g., Fly, Bus, Train).
 * **Cancellation Condition**: Defines the cancellation policy linked to this transport.
 
 ***
 
 **2. Customer Information**
+
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 **When transport is dynamic, this information needs to be set on the Real Transport entity.**
 
@@ -46,6 +50,8 @@ Controls text and allowances shown to customers.
 ***
 
 **3. Transportation**
+
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 Manages seat maps, airlines, and key operational rules.
 
@@ -64,6 +70,8 @@ Manages seat maps, airlines, and key operational rules.
 
 **4. Name Change Rule**
 
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
 Controls passenger name change options. When checked, the system will allow a passenger name change.
 
 * **Do Not Allow Name Change Office**: Restricts name changes in the office. This rule will apply after payment has been made.
@@ -73,6 +81,8 @@ Controls passenger name change options. When checked, the system will allow a pa
 ***
 
 **5. Automatic Seating**
+
+<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 Manages automatic seat assignment for passengers. When checked, the system will automatically distribute passengers into the airplane.
 
@@ -84,20 +94,18 @@ Manages automatic seat assignment for passengers. When checked, the system will 
 
 **6. Settings**
 
+<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
 Defines operational and financial settings for the transport.
 
 * **Tour operator**: Name of the responsible tour operator.
-* **Reporting type**: Defines the reporting category.
+* **Reporting type**: Defines the reporting type.
 * **Transport Supplier**: Supplier providing the transport service.
 * **Transport cost currency**: Currency for transport costs.
-* **Dynamic Itineraries**: Checkbox to allow dynamic itinerary creation. Setting for Real Transports and GDS
+* **Dynamic Itineraries**: When transport is dynamic, Dynamic Transport Supplement (DTS) needs to be set on the Leg entity.
 * **Use real transport allotments** (only if Dynamic itineraries are checked): Checkbox to enforce supplier allotments.
-* **Status**: Defines if the transport is visible or hidden.
-* **Hide as filter on lists**: Prevents transport from being used as a filter in searches.
-* **Outbound parent transport** - select a transport from which the created transport can draw seats. (**Example**: Transport1 departs from DepartureA, has a stop in PointB, and then goes to DestinationC. The two transports DepA-DestC and PointB-DestC, indeed, share the same transport seat allotment)The new created transport will share the alltoments and layout with the parent set for the outbound flight.
-*   **Homebound parent transport** - select a transport from which the created transport can draw seats. It can be a different transport for the homebound flight. (**Example**: P1: charter transport (7 days) that departs every Wednesday, (01.01.2025 - 31.12.2025), P2: charter transport (7 days) that departs every Saturday, (04.01.2025 - 27.12.2025), C1 - child transport having P1 outbound parent and P2 homebound parent - charter transport (3 days) that departs every Wednesday (homeboud is every Saturday) (01.01.2025 - 27.12.2025), C2 - child transport having P2 outbound parent and P1 homebound parent - charter transport (4 days) that departs every Saturday (homebound is every Wednesday) (04.01.2025 - 31.12.2025) ). Once "outbound parent transport" is set, is mandatory to have also a homebound parent. You cannot set one without the other. So if there are no different parent transports for outbound and homebound, just set the same one on both legs.&#x20;
-
-    <figure><img src="../../../.gitbook/assets/image (394).png" alt=""><figcaption></figcaption></figure>
+* **Status**: Defines if the transport is visible or hidden. For GDS Transport, if status is set as Hidden: Active flights will be removed and Brand should be set on "For Sale".
+* **Hide as filter on lists**: Prevents transport from being used as a filter in searches. Hide the transport in the lists throught the system.
 * **For A La Carte**: Makes transport available as a standalone option.
 * **Source Agency**: Defines the responsible sales agency.
 * **Payment rule**: Sets payment conditions for this transport.
@@ -106,6 +114,8 @@ Defines operational and financial settings for the transport.
 ***
 
 **7. Dynamic Transport Supplement**
+
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 Adds pricing flexibility by handling supplements dynamically.
 
@@ -260,14 +270,14 @@ Set the interval between flights.
 Used to set the date and time of the flights.
 
 * Out/Home - flight type
-* Start period
-* End period
+* Start date - date of the first flight
+* End date - the final date of the transport
 * Departure time (hour) – hour when the departure is
 * Arrival time (hours) - hour when the transport arrives at destinatio.n
 * Airline - Airline name
 * Flight number - flight number
-* Days - the transport arrives at the destination with a delay of x days from the departure date (eg: departure 01-05-2025 00:00, arrival 02-05-2025 00:00)
-* Land days (should be disabled for travel out)
+* +Days - the transport arrives at the destination with a delay of x days from the departure date (eg: departure 01-05-2025 00:00, arrival 02-05-2025 00:00)
+* +Land days (should be disabled for travel out)
 * Extra day out - controls hotel check-in days
 * FL - flinght changes (After changing time and date of a flight, check this and update; an e-mail will be sent to all bookings made on this flight that the flight hours have been changed. Requires **Flight change e-mail** template
 * Alternative Airport - this can be set for both Travel Out and Travel home lines and can change the returning airport. It will be shown on booking and ticket. (Example: Flight leaves from Billund to Antalya and returns to Billund, but the departure home airport will be Istanbul instead of Antalya).
@@ -303,11 +313,11 @@ The guarantee empty seats fields are linked to Empty seats feature, which you wi
 * One way out - number of seats for one way out
 * One way home - number of seats for one way home
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 To finish click on Insert and then Generate. The end result is:
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 or
 
@@ -351,8 +361,14 @@ This is done in the Transport from the Layout tab. Click on the layout tab.&#x20
 
 Select a fix quota. Click, display.&#x20;
 
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
 Seat layouts can be assigned for each departure and arrival flight in part. Seat layouts can be different from flight to flight, depending on the transport type used. We can assign for each departure date different layout type.&#x20;
 
 Click on the dropdown list and choose the desired layout.&#x20;
 
-Click save, and we see the seat type price. We do the same thing for the next departure date, and we can select another Layout type, different from the previously chosen one. Click save, and we can continue for the next departure date with a different layout type. Layouts can be changed, but the new layout needs to have the same or a higher number of seats than the existing layout.&#x20;
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+Click save, and we see the seat type price. We do the same thing for the next departure date, and we can select another Layout type, different from the previously chosen one.&#x20;
+
+Layouts can be changed, but the new layout needs to have the same or a higher number of seats than the existing layout.&#x20;

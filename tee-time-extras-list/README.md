@@ -1,14 +1,14 @@
 # Tee Time extras list
 
-### ✅ Overview
+### Overview
 
 The **Tee Time Export** feature in Tourpaq Office is used to generate structured reports related to golf tee time bookings. It allows users to filter and export data based on supplier, booking details, arrival periods, extras, and more. This tool is valuable for operational teams and golf course suppliers who manage tee time reservations.
 
-<figure><img src="../.gitbook/assets/image (25) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-### 🎯 Purpose
+### Purpose
 
 This tool is designed to:
 
@@ -19,23 +19,23 @@ This tool is designed to:
 
 ***
 
-### 👤 Availability
+### Availability
 
 * **User Role**: Administrator only
 * **Module Location**: `Export → Tee Time Export`
 
 ***
 
-### ⚙️ Main Sections & Field Explanations
+### Main Sections & Field Explanations
 
-#### 📌 Supplier Dropdown
+#### Supplier Dropdown
 
 * **Function**: Select a specific **golf supplier** or choose **All suppliers**.
 * **Use case**: Useful when generating reports for a single golf partner.
 
 ***
 
-#### 📌 Report Type Dropdown
+#### Report Type Dropdown
 
 * **Function**: Select the **format or version** of the report.
 * **Examples**: Excel report, PDF version, supplier-customized template.
@@ -43,14 +43,7 @@ This tool is designed to:
 
 ***
 
-#### 📌 More Filters Button
-
-* **Function**: Expands advanced filtering options for precise data selection.
-* **Use case**: When you need to narrow results by extras, categories, or specific dates.
-
-***
-
-### 🔍 Filtering Options
+### Filtering Options
 
 | Filter                               | Description                                                                                 |
 | ------------------------------------ | ------------------------------------------------------------------------------------------- |
@@ -61,9 +54,9 @@ This tool is designed to:
 
 ***
 
-### 🛠️ Customization Options
+### Customization Options
 
-#### 📌 Categories Section
+#### Categories Section
 
 * **Function**: Allows filtering by **specific extra categories**, such as:
   * Tee times
@@ -72,22 +65,20 @@ This tool is designed to:
 
 ***
 
-#### 📌 Extras Section
+#### Extras Section
 
 * **Function**: Lets you include or exclude specific extras from the export.
 * **Use case**: Export only tee times **with or without** particular items.
 
 ***
 
-#### 📌 Columns for Export Section
+#### Columns for Export Section
 
 * **Function**: Lets the user **customize the columns** that appear in the final export file.
-* **Use case**: Tailor the report to the recipient’s preferences or operational needs.
-* **How to use**: First click **"Select Columns"** to enable this customization.
 
 ***
 
-### 🧮 Action Button
+### Action Button
 
 | Button     | Description                                                                              |
 | ---------- | ---------------------------------------------------------------------------------------- |
@@ -95,7 +86,30 @@ This tool is designed to:
 
 ***
 
-### 🧠 Tips&#x20;
+### Export Button
+
+**Purpose:** Generates and downloads the export file based on your selected filters.
+
+* After setting all filters and options, click **Export** to generate the file.
+* The file will be downloaded automatically in **.XLS**  / **PDF** format.
+
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+The export file include the following columns:
+
+| Column                  | Description                                                                              |
+| ----------------------- | ---------------------------------------------------------------------------------------- |
+| **Date**                | The date when the tee time is scheduled.                                                 |
+| **Tee Time**            | The specific time slot available for booking (e.g., 08:00, 08:08, etc.).                 |
+| **Status**              | Indicates the availability of the slot (e.g., _Available_, _Reserved_).                  |
+| **Booking No**          | Displays the booking reference number if the tee time is already reserved.               |
+| **Hotel Name**          | Shows the hotel linked to the booking, if applicable.                                    |
+| **Agency**              | The agency that made or manages the booking.                                             |
+| **Name**                | The name of the customer or booking contact.                                             |
+| **Status (Booking)**    | Shows the booking state, such as _Confirmed_, _Pending_, or _Cancelled_.                 |
+| **Confirmed by Agency** | Indicates whether the booking has been confirmed by the agency managing the reservation. |
+
+### Tips&#x20;
 
 * Always double-check the **supplier** and **date filters** to ensure data relevance.
 * Use **“Display All Extras”** to prevent missing tee-time-related extras.

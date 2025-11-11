@@ -17,38 +17,38 @@ The **Users dashboard** provides a centralized view of all users within the agen
 
 ### **User Table Fields**
 
-| **Field**              | **Description**                                                                |
-| ---------------------- | ------------------------------------------------------------------------------ |
-| **Username**           | Unique identifier used by the user to log in.                                  |
-| **First Name**         | First name of the user.                                                        |
-| **Last Name**          | Last name of the user.                                                         |
-| **Seller Signature #** | Internal seller code or identifier.                                            |
-| **Company #**          | Associated company name or identifier.                                         |
-| **Role**               | Specifies user role (e.g., Guide, Administrator, Support, Sales, etc.).        |
-| **Rights**             | Permissions granted to the user (e.g., view, edit, delete specific resources). |
-| **Brands**             | Brands the user is affiliated with                                             |
-| **Last Login**         | Timestamp of the user's most recent login.                                     |
-| **User Blocked**       | Checkbox indicating if the user is blocked.                                    |
-| **Actions**            | Icons to edit or delete the user profile.                                      |
+| **Field**             | **Description**                                                                |
+| --------------------- | ------------------------------------------------------------------------------ |
+| **Username**          | Unique identifier used by the user to log in.                                  |
+| **First Name**        | First name of the user.                                                        |
+| **Last Name**         | Last name of the user.                                                         |
+| **Seller Signature**  | Internal seller code or identifier.                                            |
+| **Company**           | Associated company name or identifier.                                         |
+| **Role**              | Specifies user role (e.g., Guide, Administrator, Support, Sales, etc.).        |
+| **Rights**            | Permissions granted to the user (e.g., view, edit, delete specific resources). |
+| **Brands**            | Brands the user is affiliated with                                             |
+| **Last Login**        | Timestamp of the user's most recent login.                                     |
+| **User Blocked**      | Checkbox indicating if the user is blocked.                                    |
+| **Actions**           | Icons to delete the user profile.                                              |
 
 ### **Key Features / Functions**
 
-#### 👥 **View All Users**
+#### **View All Users**
 
 * See a full list of active, inactive, or hidden users.
 * Each entry shows: username, full name, role, company, signature, permissions, and last login.
 
-#### 🔍 **Search & Filter Users**
+#### **Search & Filter Users**
 
 * Search by: username, first name, last name, signature, or role.
 * Toggle visibility for inactive or hidden users.
 * Apply filters to narrow down results quickly.
 
-#### ↕ **Sort Columns**
+#### **Sort Columns** ↕&#x20;
 
 * Reorder the user list by clicking on column headers (e.g., sort by **Username** or **Last Login**).
 
-#### ➕ **Create New User**
+#### **Create New User**
 
 * Add a new user with customized settings:
   * Name and signature
@@ -57,30 +57,30 @@ The **Users dashboard** provides a centralized view of all users within the agen
   * Brand access
   * Rights and permissions
 
-#### ✏️ **Edit User Details**
+#### **Edit User Details**
 
 * Update user information such as name, role, rights, or company.
 * Change brand access or signatures.
 * Adjust block/unblock status.
 
-#### 🔑 **Assign / Modify Permissions**
+#### **Assign / Modify Permissions**
 
 * Grant or revoke access to specific actions (e.g., edit bookings, view payments, overbook transports).
 
-#### 🗑️ **Delete User**
+#### **Delete User** 🗑️
 
 * Permanently remove a user (only possible if no dependent bookings or financial records exist).
 
-#### 🚫 **Block / Unblock User**
+#### **Block / User** 🚫&#x20;
 
 * Blocked users remain in the system but cannot log in.
 * Useful for temporary suspensions or seasonal employees.
 
-#### 🕒 **View Login Activity**
+#### **View Login Activity**
 
 * Track the **Last Login** field to monitor user activity and troubleshoot access issues.
 
-#### 📄 **Pagination**
+#### **Pagination**
 
 * Navigate across multiple pages of users when the list is large.
 

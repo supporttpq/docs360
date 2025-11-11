@@ -2,7 +2,7 @@
 
 ### Overview
 
-The **Warning Notification Rules** module enables administrators to configure automated warning emails or SMS messages for users based on a set of predefined conditions. These warnings help ensure that critical issues within the platform—such as email delivery failures, GDS booking issues, or service errors—are promptly communicated to the appropriate personnel.
+The **Warning Notification Rules** module enables administrators to configure automated warning emails or SMS messages for users based on a set of predefined conditions. These warnings help ensure that critical issues within the platform—such as email delivery failures, GDS booking issues, or service errors— are promptly communicated to the appropriate personnel.
 
 Access: **E-mail Setup → Warning Notification Rules**
 

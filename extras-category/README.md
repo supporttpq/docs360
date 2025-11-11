@@ -1,6 +1,6 @@
 # Extras Category
 
-### 📌 Overview
+### Overview
 
 Applies to Administrator
 
@@ -8,9 +8,9 @@ Extras categories are mandatory in the extras definition process. So in order to
 
 The _Extras Category_ section provides administrators with a structured interface to manage optional services or items that can be added to bookings or reservations. These extras can range from luggage options to parking or VIP services, each with custom visibility and behavior settings.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### 📄 Fields&#x20;
+### Fields&#x20;
 
 | **Field Name**                 | **Description**                                                                              |
 | ------------------------------ | -------------------------------------------------------------------------------------------- |
@@ -21,9 +21,7 @@ The _Extras Category_ section provides administrators with a structured interfac
 | **Use for Extras Statistics**  | Determines if data on this extra is collected for statistical reporting.                     |
 | **Behavior on Web**            | Indicates how and when the extra is shown in the online booking interface.                   |
 
-### ✏️ Editing or Deleting an Extra
+### Editing or Deleting an Extra
 
 * **Edit**: Click the name of the extras. Anew page will open to edit the Rxtras Category
 * **Delete**: Click the trash icon. A confirmation pop-up ensures changes are intentional.
-
-### &#x20;<a href="#overview-setup---default-text" id="overview-setup---default-text"></a>

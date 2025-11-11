@@ -6,7 +6,7 @@ The **Company** page shown in your screenshot allows administrators to manage an
 
 ### **Edit Company – Page Overview**
 
-#### 📝 **Editable Fields:**
+#### **Editable Fields:**
 
 | **Field**           | **Description**                                                     |
 | ------------------- | ------------------------------------------------------------------- |
@@ -20,7 +20,7 @@ The **Company** page shown in your screenshot allows administrators to manage an
 | **Phone**           | Main contact phone number for the company.                          |
 | **Fax**             | Fax number (if applicable).                                         |
 
-#### ⚙️ **Functionality You Can Perform:**
+#### **Functionality You Can Perform:**
 
 1. **Edit Company Info**
    * Update any field with current or corrected information.

@@ -6,9 +6,21 @@ description: >-
 
 # Generic Product Price Rules
 
-This page allows administrators to define **pricing rules** for generic products based on **booking periods, allotments, agencies**, and other time-based or cost-based filters. These rules determine how and when a specific extra (product) is priced differently.
+#### Overview
 
-If there are two price rules with overlapping periods, then the most precise price rule wins. A price rule that selects only one brand wins over a price rule that selects more than one brand.(e.g.: if there are 2 price rules: one defined as "all brands" and the other one defined as "specific brand", and the intervals are overlapping, it will take the most specific one (the one set up on the brand))
+The **Generic Product Price Rules** page allows administrators to configure pricing logic for generic products (extras). These rules determine how product prices vary based on factors such as booking periods, allotments, agencies, and other time- or cost-based conditions.
+
+When multiple price rules overlap, the system automatically applies the most specific one. For example:
+
+* A rule defined for a **specific brand** takes priority over one defined for **all brands** within the same period.
+
+#### Purpose
+
+This functionality ensures accurate and flexible pricing for generic products by allowing companies to:
+
+* Adjust prices dynamically according to booking conditions.
+* Manage exceptions or brand-specific pricing.
+* Maintain consistent and automated pricing behavior across all extras.
 
 <figure><img src=".gitbook/assets/image (278).png" alt=""><figcaption></figcaption></figure>
 
@@ -28,7 +40,12 @@ If there are two price rules with overlapping periods, then the most precise pri
 | **Enabled**               | Checkbox to toggle the rule's activity (green = enabled).                                                                                                                                                                                                                                                                      |
 | **Order**                 | Use the arrows to prioritize or reorder rules (useful when multiple rules overlap).                                                                                                                                                                                                                                            |
 
-### Other Features
+**Interface Fields Explained**
 
-* **Show Disabled** – Toggle to reveal rules that have been disabled or paused.
-* **Create** – Button to add a new rule manually.
+* **Show Disabled:** Enables or disables the display of inactive or paused rules.
+* **Create:** Opens a new form to manually add a price rule for a generic product.
+
+**Additional Notes**
+
+* Always verify overlapping date ranges to ensure the correct rule is applied.
+* Use specific filters (e.g., brand or agency) whenever possible to achieve precise control over pricing behavior.

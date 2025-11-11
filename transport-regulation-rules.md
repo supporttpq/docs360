@@ -1,7 +1,5 @@
 # Transport Regulation Rules
 
-### Main page
-
 #### Overview
 
 The **Transport Regulation Rules** page allows administrators to define and manage rules that regulate transport offers, pricing adjustments, and capacity handling. These rules influence how transport offers are calculated, restricted, or adjusted based on parameters such as number of days, number of offers, load factor, and pricing percentages.

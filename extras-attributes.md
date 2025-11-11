@@ -1,6 +1,13 @@
 # Extras Attributes
 
-Attributes influence the behavior of the extra and allow guests to select a product that fits them.
+Attributes define additional properties of an extra and influence its behavior, allowing guests to select a product that best fits their needs. For example, a Ski Rental extra can have an attribute specifying the guest's height, helping suppliers or agencies determine the correct ski length. Attributes automatically appear on the **Ticket** and in **Customer Center**.
+
+#### Purpose
+
+* Enable customization of extras based on guest-specific criteria.
+* Ensure accurate information is collected for suppliers or internal use.
+* Improve visibility of extra details across vouchers, hotel lists, and extra lists.
+* Enforce mandatory selections when required.
 
 Example: A Ski rental product can have an attribute specifying the height of the guest so that the suppliers or the agency can know what length the ski equipment will be needed for the guest.
 

@@ -1,53 +1,80 @@
 # Service Cases
 
-Tourpaq provides a service case management feature to handle customer complaints in the best possible way, ensuring a great travel experience even after the customer is back home.
+#### **Overview**
 
-* The feature must be enabled for the company.
+The **Service Case Management** feature in Tourpaq helps handle customer complaints efficiently, ensuring that travelers have a positive experience even after returning from their trip.\
+It centralizes complaint handling in one interface, offering tools for tracking, responding, and analyzing customer issues.
 
-Service case management is available under the “Quality management” menu.
+> **Note:** This feature must be **enabled for the company** before it becomes available under **Quality Management → Service Cases**.
+
+***
+
+#### **Purpose**
+
+To provide a structured and efficient way of managing customer feedback and complaints by:
+
+* Streamlining communication between departments and customers.
+* Tracking the progress and resolution of each service case.
+* Generating statistics and exports for performance evaluation.
 
 <figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Access to this feature means managing complaints quickly and easily, following an intuitive process, using a user-friendly interface, and having all information in one place.&#x20;
+#### **Benefits**
 
-Service case management provides all means to assure client’s satisfaction and gives access to statistics for a clear overview.
+* Intuitive, user-friendly interface.
+* Centralized data storage with full case history.
+* Easy filtering and export options.
+* Built-in reporting and statistics for management insight.
 
-In the “Search service cases” section, you can use several filters to narrow your results list.&#x20;
+***
 
-All service cases are displayed, by default, for departures on the ongoing year, in a revers chronological order of the service case creation date.&#x20;
+#### **Search Service Cases**
 
-You can filter by:&#x20;
+You can locate and manage service cases using multiple filters.
 
-* Brand&#x20;
-* Departure date Interval&#x20;
-* Booking date Interval&#x20;
-* Service case creation date interval&#x20;
-* Booking number&#x20;
-* Customer name&#x20;
-* Country&#x20;
-* Arrival airport
-* Resort&#x20;
-* Hotel&#x20;
-* Status of the service case&#x20;
-* User who created the service cases.&#x20;
-* Awaiting office response checkbox – if marked, will automatically clear other filters and display only the service cases that received an email from the customer (marked with a star on service case number)&#x20;
+| **Filter Field**                        | **Description**                                                                                                                                                       |
+| --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Brand**                               | Filters cases by associated brand.                                                                                                                                    |
+| **Departure Date Interval**             | Limits results to bookings departing within the selected date range.                                                                                                  |
+| **Booking Date Interval**               | Filters based on when the booking was made.                                                                                                                           |
+| **Service Case Creation Date Interval** | Filters by when the service case was created.                                                                                                                         |
+| **Booking Number**                      | Searches for a specific booking related to a service case.                                                                                                            |
+| **Customer Name**                       | Filters results by the customer’s name.                                                                                                                               |
+| **Country**                             | Limits the results to customers from a specific country.                                                                                                              |
+| **Arrival Airport**                     | Filters service cases by the arrival airport from the booking.                                                                                                        |
+| **Resort**                              | Filters based on the resort specified in the booking.                                                                                                                 |
+| **Hotel**                               | Filters by hotel name.                                                                                                                                                |
+| **Status**                              | Shows service cases with a specific status (e.g., Open, In Progress, Closed).                                                                                         |
+| **User**                                | Filters cases by the user who created them.                                                                                                                           |
+| **Awaiting Office Response**            | When checked, this automatically clears all other filters and displays only cases that have received an email from the customer (marked with a ★ on the case number). |
 
-After setting the desired filters, press “Display”.&#x20;
+Once all filters are selected, click **Display** to view the results.
 
-In the “Service case overview” section, the results list is displayed, with the following information:&#x20;
+***
 
-* Case number – by clicking it, will open that service case page&#x20;
-* Booking on which the service case is opened – by clicking it, will redirect on that booking page&#x20;
-* Service case creation date&#x20;
-* User – that created the service case&#x20;
-* Customer name from the booking – by clicking it, a pop-up with the service case history on that customer is shown&#x20;
-* Destination from the booking&#x20;
-* Hotel from the booking&#x20;
-* Departure date from the booking&#x20;
-* Reason for the complaint&#x20;
-* Status of the service case&#x20;
+#### **Service Case Overview**
 
-In the “Totals” section, statistics are displayed, referring to the results list.&#x20;
+The **Service Case Overview** section lists all service cases matching your filter criteria.\
+By default, the system displays service cases for **departures within the current year**, sorted in **reverse chronological order** based on creation date.
 
-Also, the results list can be exported in a CSV file, by clicking on “Export” button.
+| **Field**          | **Description**                                                                |
+| ------------------ | ------------------------------------------------------------------------------ |
+| **Case Number**    | Click to open the full service case details.                                   |
+| **Booking**        | Shows the booking related to the service case. Click to open the booking page. |
+| **Creation Date**  | Displays the date when the service case was created.                           |
+| **User**           | The user who created the service case.                                         |
+| **Customer Name**  | Clicking opens a pop-up showing the service case history for that customer.    |
+| **Destination**    | Destination from the related booking.                                          |
+| **Hotel**          | Hotel from the related booking.                                                |
+| **Departure Date** | Departure date of the booking linked to the case.                              |
+| **Reason**         | The main reason for the customer complaint.                                    |
+| **Status**         | Current status of the service case.                                            |
+
+***
+
+#### **Totals & Export Options**
+
+At the bottom of the overview, a **Totals** section displays summary statistics related to the listed results (e.g., total number of cases, average resolution time).
+
+You can also export the full result list by clicking the **Export** button to download it as a **CSV file** for reporting or analysis.
 

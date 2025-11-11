@@ -22,31 +22,6 @@ The main purpose of Room Cost rules is to adjust hotel costs based on defined cr
   3. Some cost figures update only after the **Total Cost Service** recalculates.
   4. In the **Profit** tab, the hotel cost is displayed as a single value, with an information icon providing a detailed breakdown of how the cost was calculated.
 
-### Hotel extra cost rules <a href="#hotel-extra-cost-rules" id="hotel-extra-cost-rules"></a>
-
-**Overview**\
-Hotel Extra Cost Rules define additional costs that the agency pays to hotels. These rules are applied automatically to bookings when specific conditions are met. Both types of rules are always applied, ensuring that extra costs are accurately reflected in the booking’s financial calculations.
-
-**Purpose**\
-The purpose of these rules is to ensure that hotel-related expenses beyond the base room cost are correctly accounted for. This provides a transparent view of the agency’s expenses and supports more precise profit analysis.
-
-<figure><img src="../../../.gitbook/assets/image (94).png" alt=""><figcaption></figcaption></figure>
-
-**Types of Extra Cost Rules**
-
-1. **Extra price per passenger per night**
-   * Formula: _value × number of nights_
-2. **Extra price per room**
-   * Formula: _value × number of passengers in the room_
-
-**Filters for Applying Costs**\
-Extra costs are only applied when the following conditions are met:
-
-* **Age** – Define a start and end age range for which the cost applies.
-* **Stay/Arrival Period** – Limit the extra cost to bookings with arrivals within specific dates.
-* **Booking Period** – Apply the cost only if the booking is created within a defined date range.
-* **Room** – Restrict the cost to a specific room type.
-
 ### Room cost rules​ <a href="#room-cost-rules" id="room-cost-rules"></a>
 
 **Overview**\
@@ -55,14 +30,19 @@ Room Cost Rules define the base value that the agency pays to the hotel for rese
 **Purpose**\
 The purpose of Room Cost Rules is to ensure accurate and flexible cost allocation in different booking scenarios. By applying configurable conditions, the system can adjust how costs are calculated and update them automatically when thresholds are reached.
 
-<figure><img src="../../../.gitbook/assets/image (95).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **How It Works**
 
-* **Per Pax setting** (controlled by the _Per Pax_ checkbox):
-  * **Per Room** – if the checkbox is _unchecked_, the value in the **Price** field is applied once for each room.
-  * **Per Passenger** – if the checkbox is _checked_, the value in the **Price** field is applied individually to each passenger.
-  * 📝 _Note_: The price is calculated per day. It can either apply per passenger or be divided among all passengers sharing the room.
+* **Stay Type setting** (controlled by the _Stay Type_ dropdown):
+  * Per Room Per Night&#x20;
+    * 1\. the amount is split between the passengers in room.&#x20;
+    * 2\. the rule is applying per day for example: booking with arrival on the period 01-01-2025 - 06-01-2025 a rule can apply if is defined between 04-01-2025 - 09-01-2025 on the booking regardless of arrival date of the booking.
+  * Per PAX Per Room - the amount applies per PAX
+  * Per Room Per Stay &#x20;
+    * 1\. the amount is spited between PAX in room and between days to stay.&#x20;
+    * 2\. the rule is apply if arrival date is in stay interval
+* **Single Price** - If we have the amount set and we have a room with one passenger in room the single price will be added to the price of the rule.
 * **Extra Cost Included**:
   * The value entered in the **Extra Cost Included** field is subtracted from the **Price** value, but **only if** an Early Booking or an S\&P Rule cost is applied.
 
@@ -90,7 +70,7 @@ The purpose of these rules is to automatically apply early booking discounts to 
 
 #### **System Setup Requirement**
 
-Before early booking discounts can affect the selling price or appear in the price list, a specific setting must be enabled in **System Setup**:
+Before early booking discounts appear in the price list, a specific setting must be enabled in **System Setup**:
 
 **Path:**\
 `System Setup → General → Settings`
@@ -100,19 +80,20 @@ Before early booking discounts can affect the selling price or appear in the pri
 
 **Purpose of the setting:**
 
-*
-* This setting must be **enabled** for Early Booking Discounts (EBD) rules to be **visible in the Price List** and to have an **actual impact on the guest price calculation**.&#x20;
+* The **User’s Discounted Cost** represents the calculated cost of a booking after applying all relevant discounts. This value takes into account **Room Discount**, **Early Booking**, and **Stay & Pay** offers. This calculation ensures that the **Discount via Profit Margin** reflects the final, accurate cost after all applicable reductions have been applied.
 
 
 
 <figure><img src="../../../.gitbook/assets/image (424).png" alt=""><figcaption></figcaption></figure>
+
+The above setting decide "HOW" the discount is applied. The Early Booking Discount has an impact on the price regardless of whether this checkbox is selected or not
 
 <figure><img src="../../../.gitbook/assets/image (423).png" alt=""><figcaption></figcaption></figure>
 
 * If this setting is **disabled**, EBD rules will still appear in the configuration screen but will **not be reflected** in the calculated prices or displayed to users in the price list.
 
 {% hint style="warning" %}
-Note that this checkbox will not trigger the service automatically; you will need to either have to change the cost in the hotel or change the Profit Margin in the price list, changing the price or saving on the price list will change the price as well.
+Note: This checkbox will not trigger the service automatically; you will need to either have to change the cost in the hotel or change the Profit Margin in the price list, changing the price or saving on the price list will change the price as well.
 
 Also, the profit margin service will not change the price instantly on modification; it may take up to 30 minutes for the price to be changed in the price list. This depends on how many tasks need to be processed by the service.
 {% endhint %}
@@ -134,31 +115,31 @@ Also, the profit margin service will not change the price instantly on modificat
 
 #### **Grid Fields**
 
-| **Field**               | **Description**                                                                                                                                                                                                                                                                    |
-| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Stay **Start / End**    | Defines the stay date range for which the early booking discount is valid.                                                                                                                                                                                                         |
-| **Booking Start / End** | Specifies when the booking must be made for the discount to apply.                                                                                                                                                                                                                 |
-| Days of the Week        | Select days of the week the discount is valid.                                                           ![](<../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>) |
-| **Room**                | Allows selection of one or multiple room types.                                                                                                                                                                                                                                    |
-| **Board**               | Select the board type (e.g., Bed & Breakfast, Half Board, etc.) the discount applies to.                                                                                                                                                                                           |
-| From Age/to Age         | Defines the age interval for which the rule applies.                                                                                                                                                                                                                               |
-| **Price**               | The specific price code or rate this rule applies to.                                                                                                                                                                                                                              |
-| **BDNBA**               | Booking Days No Before Arrival.                                                                                                                                                                                                                                                    |
-| **IS %**                | Checkbox indicating if the discount is a percentage.                                                                                                                                                                                                                               |
-| **PR**                  | Checkbox for "Per Room" discount.                                                                                                                                                                                                                                                  |
-| **S\&P**                | Checkbox for "Stay & Pay" rules (e.g., Stay 7 Pay 6).                                                                                                                                                                                                                              |
-| E**BC**                 | Apply on Extra Bed Cost                                                                                                                                                                                                                                                            |
-| **BB**                  | Apply on Board basis                                                                                                                                                                                                                                                               |
-| **Min Days**            | Minimum number of days in advance the booking must be made to qualify for the discount.                                                                                                                                                                                            |
-| **Deposit Date**        | The cutoff date for the deposit to be paid to validate the discount.                                                                                                                                                                                                               |
-| **DDNBA**               | Deposit days no before stay                                                                                                                                                                                                                                                        |
-| **OB**                  | Checkbox indicating if the rule applies to "On Booking"  - Deposit on Booking Final save                                                                                                                                                                                           |
-| **Deposit %**           | Discount percentage that applies for the deposit payment.                                                                                                                                                                                                                          |
-| **Send List Date**      | Date when the rate list or contract was sent, used for administrative tracking.                                                                                                                                                                                                    |
-| **SLDNBA**              | Send list days number before arrival stay                                                                                                                                                                                                                                          |
-| **EBP Discount**        | Customer Early Booking Discount                                                                                                                                                                                                                                                    |
-| **Contract**            | Displays the selected contract ID or name that the rule belongs to.                                                                                                                                                                                                                |
-| Invoice List            | List of invoices created according t othe rule                                                                                                                                                                                                                                     |
+| **Field**               | **Description**                                                                                                                                                                                                                                                                                                                                                      |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Stay **Start / End**    | The early booking can be applicable in any day of the stay period example: booking stay period 01 Oct to 07 Oct and a rule with period 05 Oct to 30 Oct will apply on the days 05 Oct 06 Oct and 07 Oct                                                                                                                                                              |
+| **Booking Start / End** | Specifies when the booking must be made for the discount to apply.                                                                                                                                                                                                                                                                                                   |
+| Days of the Week        | Select the days of the week on which the discount is valid.   This has to coincide with the arrival date of the booking                                                        ![](<../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>) |
+| **Room**                | Allows selection of one or multiple room types.                                                                                                                                                                                                                                                                                                                      |
+| **Board**               | Select the board type (e.g., Bed & Breakfast, Half Board, etc.) the discount applies to. If the booking has a board type will look for a rule with board type; if there is none, it will settle with a rule that has no board type at all.                                                                                                                           |
+| From Age/to Age         | Defines the age interval for which the rule applies.                                                                                                                                                                                                                                                                                                                 |
+| **Price**               | The specific price code or rate this rule applies to.                                                                                                                                                                                                                                                                                                                |
+| **BDNBA**               | Booking Days No Before Arrival.                                                                                                                                                                                                                                                                                                                                      |
+| **IS %**                | If checked, then the amount will be a percentage calculated from the sum between Room Cost, Extra Included, Extra bed, and Stay & Pay, and this will be subtracted from this amount to calculate the cost.                                                                                                                                                           |
+| **PR**                  | Checkbox for "Per Room" discount. Will split the price between passengers in the room                                                                                                                                                                                                                                                                                |
+| **S\&P**                | Checkbox for "Stay & Pay" rules (e.g., Stay 7 Pay 6). If checked, it will allow the rule to combine with stay and pay rules; otherwise, it will exclude the S\&P rule from the cost.                                                                                                                                                                                 |
+| E**BC**                 | Apply on Extra Bed Cost                                                                                                                                                                                                                                                                                                                                              |
+| **BB**                  | Apply on Board basis                                                                                                                                                                                                                                                                                                                                                 |
+| **Min Days**            | Minimum number of days in advance the booking must be made to qualify for the discount.                                                                                                                                                                                                                                                                              |
+| **Deposit Date**        | The cutoff date for the deposit to be paid to validate the discount.                                                                                                                                                                                                                                                                                                 |
+| **DDNBA**               | Deposit days no before stay                                                                                                                                                                                                                                                                                                                                          |
+| **OB**                  | Checkbox indicating if the rule applies to "On Booking"  - Deposit on Booking Final save                                                                                                                                                                                                                                                                             |
+| **Deposit %**           | Discount percentage that applies for the deposit payment.                                                                                                                                                                                                                                                                                                            |
+| **Send List Date**      | Date when the rate list or contract was sent, used for administrative tracking.                                                                                                                                                                                                                                                                                      |
+| **SLDNBA**              | Send list days number before arrival stay                                                                                                                                                                                                                                                                                                                            |
+| **EBP Discount**        | Customer Early Booking Discount                                                                                                                                                                                                                                                                                                                                      |
+| **Contract**            | Displays the selected contract ID or name that the rule belongs to.                                                                                                                                                                                                                                                                                                  |
+| Invoice List            | List of invoices created according t othe rule                                                                                                                                                                                                                                                                                                                       |
 
 There are two rules that apply. They cannot be applied at the same time and are governed by the **IS PERCENT** check box:
 
@@ -275,6 +256,59 @@ Filters used:
 * Booking Start and End date
 * Room
 * Period
+
+### Hotel extra cost rules <a href="#hotel-extra-cost-rules" id="hotel-extra-cost-rules"></a>
+
+**Overview**\
+Hotel Extra Cost Rules define additional costs that the agency pays to hotels. These rules are applied automatically to bookings when specific conditions are met. Both types of rules are always applied, ensuring that extra costs are accurately reflected in the booking’s financial calculations.
+
+**Purpose**\
+The purpose of these rules is to ensure that hotel-related expenses beyond the base room cost are correctly accounted for. This provides a transparent view of the agency’s expenses and supports more precise profit analysis.
+
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+#### **Types of Extra Cost Rules**
+
+1. **Extra price per passenger per night**
+   * Formula: _value × number of nights_
+2. **Extra price per room**
+   * Formula: _value × number of passengers in the room_
+
+#### **Filters for Applying**
+
+&#x20;**Costs**Extra costs are only applied when the following conditions are met:
+
+* **Age** – Define a start and end age range for which the extra cost applies.
+* **Extra P/P/N (Extra Price/Pax/Night) -** This amount is multiplied by the number of nights and applicable guests
+* **Extra P/R (Extra Price/Room) -** This is a one-time charge per room, not dependent on stay duration
+* **Stay/Arrival Period** – Limit the extra cost to bookings with arrivals within specific dates.
+* **Booking Period** – Apply the cost only if the booking is created within a defined date range.
+* **Room** – Restrict the cost to a specific room type.
+
+#### Creating a New Rule
+
+1. Click the **"Create"** button (top right)
+2. Define the age range using FROM AGE and TO AGE fields
+3. Set either EXTRA P/P/N (per night) or EXTRA P/R (per room) or both
+4. Specify the stay period using STAY/ARRIVAL START and END dates
+5. Specify the booking period using BOOKING START and END dates
+6. Select the applicable room type or "All Rooms"
+7. Select the relevant contract if applicable
+8. Save the new rule
+
+#### Editing an Existing Rule
+
+1. Locate the rule you want to modify in the table
+2. Click on the row or edit icon (if available)
+3. Modify the required fields
+4. Ensure date ranges don't create conflicts with other rules
+5. Save changes
+
+#### Deleting a Rule
+
+1. Locate the rule in the table
+2. Click the **delete icon** (trash can) on the right side of the row
+3. Confirm the deletion when prompted
 
 ### Special offer cost​ <a href="#special-offer-cost" id="special-offer-cost"></a>
 

@@ -1,20 +1,31 @@
 # Discounts/Supplements
 
-Discount and supplements is a module from where discounts and supplements will be inserted for each company. A discount/supplement will be defined by the following information:
+#### Overview
 
-* Discount/supplement category
-* Specify if is general or specific
-* Specify if is permanent or manual
-* General price
-* Description
-* An option that will establish if the discount/supplements is linked to extras(products)
-* An option that will establish if the linked extras will be automatically selected( this option can be chosen only if the discount is linked to products and will establish if the chosen products will automatically be selected on web booking)
+The **Discounts and Supplements** module allows each company to define and manage discounts and supplements for passengers. These can be general or specific, permanent or manual, and optionally linked to products (extras). The module supports applying rules based on age, trip duration, transport, room type, departure/booking dates, and other criteria.
 
-The discount/supplement categories will be inserted from Assets Management Center.
+#### Purpose
 
-If a discount/supplement will be linked to a certain product, this should mean that the passenger will receive a discount equal to the product’s price.
+This module provides a flexible system to:
 
-Please note! ''Tourpaq does not provide stable support for having a passenger buying multiple supplements of the same supplement category. Though Tourpaq Office allows it, the Web Booking does not support it and leads to loss of supplements etc.''
+* Automatically or manually apply discounts and supplements to passengers.
+* Link discounts to extras, allowing automatic or optional selection in web bookings.
+* Ensure pricing rules are consistent across different periods, passenger types, and booking conditions.
+* Control availability based on destinations, resorts, hotels, transports, and room types.
+* Support bonus codes and campaign discounts.
+
+#### **Creating a Discount/Supplement**
+
+Each discount/supplement is defined with the following information:
+
+* **Category** – Assigned via the Assets Management Center.
+* **General or Specific** – Determines the selection criteria.
+* **Permanent or Manual** – Determines automatic application.
+* **Price and Description** – Define cost or discount amount.
+* **Linked to Extras** – Optional; allows discounts to be applied when a product is selected.
+* **Automatic Selection** – Optional; selects linked extras automatically in Web Booking.
+
+**Important:** Tourpaq does not reliably support multiple supplements from the same category in Web Booking.
 
 ### Discounts and supplements combinations in Tourpaq <a href="#discounts-and-supplements-combinations-in-tourpaq" id="discounts-and-supplements-combinations-in-tourpaq"></a>
 
@@ -129,7 +140,7 @@ The entities having this checkbox active will:
 
 Prices are defined for certain periods of time, periods that will consider the departure date of a booking. If defined here, this price will overrule the general price.
 
-<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In the Discount/supplements general window, go to the Prices tab and click on New Price.
 
@@ -191,7 +202,7 @@ Resources are used to limit the availability of discounts/supplements to the sel
 
 The limit number of resources that can be added is 100. If the number of resources of the same type exceeds this number, a warning message will appear at the bottom of the page.
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Workarounds**
 

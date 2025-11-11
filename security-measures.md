@@ -1,17 +1,25 @@
 # Security measures
 
-Starting with the 3.7 version, some new security measures have been implemented. Here is the list with those measures:
+Starting with **version 3.7**, several new **security improvements** have been implemented to enhance user data protection and system integrity.
 
-### Https connection[​](https://docs.tourpaq.com/docs/documentation/security-measures#https-connection) <a href="#https-connection" id="https-connection"></a>
+#### HTTPS Connection
 
-The login page has now a more secure connection.
+All login operations are now secured using the **HTTPS protocol**, ensuring that all communication between the client and server is **encrypted** and protected from interception or tampering.
 
-### MD5 encryption[​](https://docs.tourpaq.com/docs/documentation/security-measures#md5-encryption) <a href="#md5-encryption" id="md5-encryption"></a>
+#### MD5 Encryption
 
-Now our passwords are saved in the database encrypted in the MD5 structure.
+User passwords are now stored in the database using **MD5 encryption**, providing an additional layer of security by preventing the storage of plain-text credentials.
 
-### Password strength[​](https://docs.tourpaq.com/docs/documentation/security-measures#password-strenght) <a href="#password-strenght" id="password-strenght"></a>
+#### Password Strength Validation
 
-In the Edit User and Change Password (a new page that allows all the users to change the password) pages, in the password/new password region, we now display a message if the inserted password is too short, weak, good, or strong. The system will allow you to insert a strong, or at least a good, password.
+The **Edit User** and **Change Password** pages now include real-time password strength validation.\
+When a user enters a new password, the system displays an indicator showing whether the password is:
+
+* **Too short**
+* **Weak**
+* **Good**
+* **Strong**
+
+The system will only accept passwords rated as **Good** or **Strong**, ensuring better protection against unauthorized access.
 
 <figure><img src=".gitbook/assets/image (166).png" alt=""><figcaption></figcaption></figure>

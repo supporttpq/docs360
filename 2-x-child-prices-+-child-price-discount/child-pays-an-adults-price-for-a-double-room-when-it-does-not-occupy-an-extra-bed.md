@@ -1,106 +1,64 @@
 # Child pays an adult's price for a double room when it does not occupy an extra bed
 
-### **Overview**
+#### **Overview**
 
-This document describes the behavior of the system when a booking is created with **1 adult and 1 child** sharing a standard **double room**. It verifies that in such cases, the child is charged the **same rate as the adult**, regardless of child pricing configurations, and ensures this is consistently reflected in the **Price List** and **booking total**.
-
-***
-
-### **Prerequisites**
-
-* Administrator access&#x20;
-* Feature access enabled for:
-  * Child Prices
-  * Child Discounts
-  * Child Profit Margin
-  * Adjustments
-* At least one hotel with standard double room availability&#x20;
+This document explains the system behavior when a booking is made for one adult and one child sharing a **standard double room**. In such cases, the child is charged the same rate as the adult, regardless of any child pricing configurations. This ensures consistency between the **Price List** and the **booking total**.
 
 ***
 
-### **Booking Creation and Setup**
+#### **Prerequisites**
 
-#### **1. Login**
+To verify this behavior, the following conditions must be met:
 
-* Log in as administrator
-
-#### **2. Start a New Booking**
-
-* Click the **New Booking** button and select a brand.
-
-#### **3. Add Passengers**
-
-* Populate the **Passengers** section with:
-  * 1 Adult
-  * 1 Child
-
-#### **4. Select Transport**
-
-* **C**lick **Edit** in the transport section and select a transport - Transport is assigned.
-
-#### **5. Select Hotel**
-
-* Click **Edit** in the **Hotel** section - "Select Hotel" pop-up is displayed.
-
-#### **6. Choose Hotel with Standard Double Room**
-
-* Select a hotel that offers a **double room** -  Hotel is successfully selected.
-
-#### **7. Complete the Booking**
-
-* Fill in the **Customer Details**, take allotment, and save the booking. - Booking is successfully created.
-
-#### **8. Note Total Amount**
-
-* Record the **Total Amount** from the booking confirmation&#x20;
-
-#### **9. Verify Price Breakdown per Passenger**
-
-* Open the **Total pr. passenger** section in the booking details. The **child is charged the same price as the adult** (i.e., the standard adult price `P1` is applied to both passengers).
+* User has **Administrator** access.
+* The following features are enabled:
+  * **Child Prices**
+  * **Child Discounts**
+  * **Child Profit Margin**
+  * **Adjustments**
+* At least one hotel offers **standard double room** availability.
 
 ***
 
-### **Price List Verification**
+#### **Booking Setup and Pricing Behavior**
 
-#### **10. Open Price List**
+A booking is created for **1 adult and 1 child**, both assigned to a **standard double room**.\
+Since the child does not occupy an extra bed, the system automatically applies the **adult price (P1)** to both passengers.
 
-* Go to the **Price List** page - Price List is displayed.
+<figure><img src="../.gitbook/assets/image (457).png" alt=""><figcaption></figcaption></figure>
 
-#### **11. Apply Filters**
+Once the booking is saved and allotment is confirmed:
 
-* Use the booking data from **Step 7** to populate mandatory filters, then click **Display -** Price table is displayed.
+* The **Total Amount** in the booking confirmation reflects the same rate for both passengers.
+* In the **Total per passenger** section of the booking, both the adult and child show identical pricing.
+* The **CH1P1** (child price) column is not used in the total calculation.
 
-#### **12. Customize Column View**
+<figure><img src="../.gitbook/assets/image (458).png" alt=""><figcaption></figcaption></figure>
 
-* Click the three-dot menu in the header. Deselect:
-  * `I2`, `I3`, `I4`
-  * Ensure only `I1` is ticked.
-
-#### **13. Enable Child-Related Columns**
-
-* Tick the following in the same menu:
-  * `CHILD 1 PRICES`
-  * `CHILD 2 PRICES`
-  * `CHILD 1 DISCOUNTS`
-  * `CHILD 2 DISCOUNTS`
-  * `CHILD PRICES %`
-  * `CHILD PROFIT MARGIN`
-  * `ADJUSTMENTS`
-* The following columns are added:
-  * `CH1P1`, `CH2P1`
-  * `CH1D1`, `CH2D1`
-  * `CH1%`, `CMP1`, `PA1`
+This behavior ensures pricing alignment when no child-specific bed or discount applies.
 
 ***
 
-### **Validation of Pricing Behavior**
+#### **Price List Verification**
 
-#### **14. Check Use of CH1P1**
+In the **Price List** page:
 
-* Confirm whether `CH1P1` (Child Price 1) is considered in the total booking amount.
-* `CH1P1` is **not** taken into consideration when calculate the Booking's Price
+* Apply filters corresponding to the booking details.
+* Display columns related to child pricing:
+  * **CH1P1**, **CH2P1** (child prices)
+  * **CH1D1**, **CH2D1** (child discounts)
+  * **CH1%**, **CMP1**, **PA1**
 
-#### **15. Validate Use of P1 Only**
+The data confirms that **CH1P1** is **not used** in price computation for this type of booking.\
+Instead, the system consistently references **P1**, the adult base price, for both passengers.
 
-* Check the booking's price for both passengers (adult & child).&#x20;
-* The system uses the **P1 (adult price)** for **both the adult and the child**.
+***
+
+#### **Validation Result**
+
+When a child shares a **double room** without requiring an **extra bed**, the system treats the child as a second adult for pricing purposes.
+
+* **CH1P1 is ignored.**
+* **P1** is applied to both passengers.
+
+This logic ensures fair and predictable pricing in scenarios where a child shares standard accommodation space with an adult.

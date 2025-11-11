@@ -57,14 +57,17 @@ Administrators can:
 * Apply filters to define the target audience.
 * Track which templates have been sent.
 
-⚠️ **Caution**
+{% hint style="danger" %}
+⚠️ **Caution**&#x20;
 
 * Once an e-mail or SMS template is sent to a booking, it **cannot be resent**.
 * Editing an already sent template is **not recommended**, since a booking cannot receive more than one e-mail or SMS from the same template.
 * Always double-check message content and filters before sending.
+{% endhint %}
 
 ### **Usage Example**
 
 * An administrator creates a **Dynamic SMS template** to remind customers of their departure date.
 * A filter is set on **departure date = tomorrow**.
 * The system sends the SMS to all guests with departures scheduled for the next day.
+
