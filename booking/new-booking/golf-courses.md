@@ -232,7 +232,12 @@ Additional technical or advanced options for internal configuration.
 
 ### Prices
 
-The **Generic Product Price Rules** are used to define the **price per golf round**.\
-Each rule specifies how the price is calculated and applied to the corresponding golf course Extra.
+Golf product are priced using the Extras Prices. When this approach is used, golf rounds are priced directly through the standard extras price setup.
+
+### **Purpose**
+
+The purpose of this configuration is to simplify how golf rounds are priced for agencies, pricing can be fully managed within the **Extras Prices** tab of the golf Extra.
+
+This reduces complexity, shortens setup time, and ensures that pricing stays aligned with other standard extras.
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
