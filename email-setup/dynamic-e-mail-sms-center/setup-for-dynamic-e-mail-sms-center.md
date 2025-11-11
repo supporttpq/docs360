@@ -69,7 +69,7 @@ The system applies the AND condition between different rule types and the OR con
 A valid set of sending rules is illustrated in the following examples:
 {% endhint %}
 
-* If there are used two or more different rule type, the system will use the AND condition and will sent an email/SMS for each rule type
+* If there are used two or more different rule type, the system will use the AND condition and will sent an email/SMS for each rule type.
 
 **Example:** An emailor SMS can be sent 60 days before the departure date AND 2 days after the booking date.
 
