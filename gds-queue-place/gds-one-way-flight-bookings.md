@@ -1,11 +1,11 @@
 # GDS One way flight bookings
 
-#### **Overview**
+### **Overview**
 
 Tourpaq Office supports **GDS Transport** configured as **one-way flights**.\
 This functionality allows agencies to combine GDS one-way flights with other travel components such as **Charter**, **Hotel-only**, or **normal one-way flights** within the same booking.
 
-#### **Configuration**
+### **Configuration**
 
 1.  **Define GDS Transport**\
     To create a GDS one-way transport, start by defining a **GDS Transport** with **Dynamic Packaging** enabled.
@@ -30,7 +30,7 @@ This functionality allows agencies to combine GDS one-way flights with other tra
 
 <figure><img src="../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### **Searching for GDS One-Way Flights**
+### **Searching for GDS One-Way Flights**
 
 Once configuration is complete, GDS one-way flights can be searched directly from the **Booking page** using the **GDS tab**.
 
@@ -55,7 +55,7 @@ After selecting the flights, transport will be displayed on the booking at trans
 
 <figure><img src="../.gitbook/assets/image (20) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### **Creating a Booking**
+### **Creating a Booking**
 
 After selecting the desired flights:
 

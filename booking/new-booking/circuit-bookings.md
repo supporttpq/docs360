@@ -1,6 +1,6 @@
 # Circuit Bookings
 
-#### **Overview**
+### **Overview**
 
 Circuit bookings enable the creation of **customized multi-component trips** within a single booking. Unlike standard bookings that typically link one hotel and one transport, circuit bookings allow the user to combine:
 
@@ -9,7 +9,7 @@ Circuit bookings enable the creation of **customized multi-component trips** wit
 
 ***
 
-#### **Purpose**
+### **Purpose**
 
 * To provide greater flexibility in travel planning.
 * To accommodate multi-destination trips under one booking record.
@@ -17,7 +17,7 @@ Circuit bookings enable the creation of **customized multi-component trips** wit
 
 ***
 
-#### **Preconditions**
+### **Preconditions**
 
 * One-way transports must be enabled in the system.
 * Custom hotel days must be enabled for hotels.
@@ -28,7 +28,7 @@ Circuit bookings enable the creation of **customized multi-component trips** wit
 
 ***
 
-#### **Key Benefits**
+### **Key Benefits**
 
 * Combine multiple hotels within a single booking.
 * Manage hotels across different resorts or countries seamlessly.
