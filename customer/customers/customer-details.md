@@ -1,6 +1,6 @@
 # Customer Details
 
-#### **Overview**
+### **Overview**
 
 The **Customer Details View** provides a complete overview of an individual customer’s profile, bookings, and financial summary.\
 It is accessed by clicking the **Customer No** from the **Customer Page** list.\
@@ -8,7 +8,7 @@ This page is designed for reviewing, editing, and managing a customer’s person
 
 ***
 
-#### **Purpose**
+### **Purpose**
 
 The **Customer Details View** is used to:
 
@@ -20,7 +20,7 @@ The **Customer Details View** is used to:
 
 ***
 
-#### **Sections Overview**
+### **Sections Overview**
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -99,7 +99,7 @@ The right-hand section displays a **financial overview** summarizing the custome
 
 This section helps evaluate the customer’s overall financial value to the company.
 
-#### **Instructions**
+### **Instructions**
 
 1. Access the **Customer Details View** by clicking a **Customer No** on the _Customer Page_.
 2. Review or update customer data in the **Details** section.

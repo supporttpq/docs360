@@ -1,12 +1,12 @@
 # Customer Information Booking Flow
 
-### 📌 Purpose
+### Purpose
 
 This page describes expected system behavior for creating and editing bookings in a system that requires customer information acknowledgment for various components (transport, hotels, resorts, destinations, extras). The focus is on ensuring that all mandatory customer info is acknowledged before finalizing a booking.
 
 ***
 
-### 🆕 **New Booking Flow**
+### **New Booking Flow**
 
 #### Overview
 
@@ -31,7 +31,7 @@ A user creates a new booking and is required to acknowledge all mandatory custom
 
 ***
 
-### ✏️ **Edit Booking Flow**
+### **Edit Booking Flow**
 
 #### Overview
 
@@ -54,7 +54,7 @@ Modifying an existing booking may retrigger the need to acknowledge any changed 
 
 ***
 
-### ⚠️ Mandatory Acknowledgment Enforcement
+### Mandatory Acknowledgment Enforcement
 
 * **All customer information requiring acknowledgment is marked as mandatory**.
 * Users **cannot save or proceed** with the booking unless all checkboxes are checked.
@@ -64,7 +64,7 @@ Modifying an existing booking may retrigger the need to acknowledge any changed 
 
 ***
 
-### 🔁 Notes
+### Notes
 
 * The **"Passenger Information" pop-up** appears:
   * When allotment is taken.

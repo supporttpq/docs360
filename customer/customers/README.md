@@ -25,7 +25,7 @@ The **“Find Customer”** feature enables precise filtering and retrieval of c
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
-#### **Filters and Search Fields**
+### **Filters and Search Fields**
 
 At the top of the page, users can filter or search customers using the following fields:
 
@@ -51,7 +51,7 @@ Additional options:
 
 💡 **Tip:** Use multiple filters together to narrow down results efficiently.
 
-#### **Customer List (Table View)**
+### **Customer List (Table View)**
 
 After filters are applied, the lower section displays the customer records in a table format.
 

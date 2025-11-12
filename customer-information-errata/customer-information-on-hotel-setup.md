@@ -6,13 +6,13 @@ This document outlines managing customer-specific information on hotel setups vi
 
 ***
 
-### 📘 Purpose
+### Purpose
 
 To verify that customer information for tickets, booking dates, and room types can be added, edited, and managed per hotel, including default and brand-specific configurations.
 
 ***
 
-### 🧭 Test Case Steps and Descriptions
+### Test Case Steps and Descriptions
 
 #### 1. Navigate to Hotel Setup
 
@@ -93,7 +93,7 @@ To verify that customer information for tickets, booking dates, and room types c
 
 ***
 
-### 🔁 Brand-Specific Configuration
+### Brand-Specific Configuration
 
 #### 10. Managing Brand Tabs
 
@@ -114,7 +114,7 @@ Each hotel may have:
 
 ***
 
-### 🔍 Notes on Edge Cases
+### Notes on Edge Cases
 
 * **Booking Dates Null**: If booking dates are left null, the system compares only departure date rules.
 * **No Booking Date Set**: Allows broader application of rules without constraints on when the booking was made.
@@ -122,7 +122,7 @@ Each hotel may have:
 
 ***
 
-### ✅ Summary of Validations
+### Summary of Validations
 
 | Field            | Mandatory | Notes                                                   |
 | ---------------- | --------- | ------------------------------------------------------- |
