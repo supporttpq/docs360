@@ -1,6 +1,6 @@
 # View all bookings
 
-#### **Overview**
+### **Overview**
 
 The **View All Bookings** page allows users to display, filter, and analyze all booking records and associated statistics within the system. It is an essential tool for tracking operational data, managing departures and arrivals, and generating reports based on passenger or booking details.
 
@@ -8,7 +8,7 @@ This page is accessible from the **Booking menu → All Bookings**.
 
 ***
 
-#### **Purpose**
+### **Purpose**
 
 The purpose of the **View All Bookings** page is to:
 
@@ -19,7 +19,7 @@ The purpose of the **View All Bookings** page is to:
 
 ***
 
-#### **Preconditions**
+### **Preconditions**
 
 Before using the **View All Bookings** page:
 
@@ -29,7 +29,7 @@ Before using the **View All Bookings** page:
 
 ***
 
-#### **Instructions**
+### **Instructions**
 
 **🔹 Step 1: Access the Page**
 
@@ -75,7 +75,7 @@ You can filter by **one, several, or all** options in any category.
 
 ***
 
-#### ✅ Best Practices
+### Best Practices
 
 * Always double-check that a **Brand** is selected before displaying bookings or statistics.
 * Use complete date ranges to avoid filter errors.
