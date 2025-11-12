@@ -1,6 +1,6 @@
 # All bookings
 
-#### **Overview**
+### **Overview**
 
 The **All Bookings** tab is a key reporting and monitoring tool within the system. It allows users to access a detailed view of all bookings and extract statistics using a wide array of filters. Filters are grouped by purpose: booking retrieval, transport/hotel configuration, and statistical analysis.
 
@@ -8,7 +8,7 @@ This section is designed for both operational oversight and performance analytic
 
 ***
 
-#### **Purpose**
+### **Purpose**
 
 The goal of this feature is to:
 
@@ -18,7 +18,7 @@ The goal of this feature is to:
 
 ***
 
-#### **Preconditions**
+### **Preconditions**
 
 To use this section effectively, make sure:
 
@@ -29,11 +29,11 @@ To use this section effectively, make sure:
 
 ***
 
-#### **Instructions & Field Explanations**
+### **Instructions & Field Explanations**
 
 <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
-**🧩 Booking & General Filters**
+#### &#x20;**Booking & General Filters**
 
 | Field                            | Description                                                       | Example                                                                                                                                                                             |
 | -------------------------------- | ----------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -53,7 +53,7 @@ To use this section effectively, make sure:
 
 ***
 
-**Bookings Table (Main Section)**
+#### **Bookings Table (Main Section)**
 
 | Column             | Description                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -74,7 +74,7 @@ To use this section effectively, make sure:
 
 ***
 
-**Statistics Section (Bottom)**
+#### **Statistics Section (Bottom)**
 
 | Metric             | Description                                               | Example          |
 | ------------------ | --------------------------------------------------------- | ---------------- |
@@ -86,7 +86,7 @@ To use this section effectively, make sure:
 | **Profit Total**   | Total profit (revenue minus costs) for filtered bookings. | `DKK -2,751,155` |
 | **Profit / Pax**   | Profit per passenger.                                     | `DKK -13,227`    |
 
-**🧼 Hide Filters Functionality**
+#### &#x20;**Hide Filters Functionality**
 
 A feature designed to simplify the UI by hiding inactive filters.
 
@@ -102,7 +102,7 @@ A feature designed to simplify the UI by hiding inactive filters.
 
 <figure><img src="https://sonat.com/api/Document/Image/19670ef0-8b8a-4cda-8eb6-249681e07016/60a72aeb-a272-4428-a118-b6074b1b35b5/f3b2074c-944c-4260-a801-0a280f9da0af.webp?width=933" alt="" height="300" width="400"><figcaption></figcaption></figure>
 
-📊 **Statistics Filters and Tools**
+### **Statistics Filters and Tools**
 
 <figure><img src="https://sonat.com/api/Document/Image/19670ef0-8b8a-4cda-8eb6-249681e07016/60a72aeb-a272-4428-a118-b6074b1b35b5/5f9160ba-43aa-4d8f-9f35-bbbdc227a335.webp?width=1854" alt="" width="400"><figcaption></figcaption></figure>
 
@@ -121,7 +121,7 @@ All statistics are **per passenger** by default:
 | **Percentage**        | Total                                                  |
 | **Possible vs. Sold** | Total, Per Country                                     |
 
-**🛠 Additional Tools for Statistics**
+**Additional Tools for Statistics**
 
 | Tool                                       | Description                                                                  |
 | ------------------------------------------ | ---------------------------------------------------------------------------- |
