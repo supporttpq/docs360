@@ -1,12 +1,12 @@
 # E-mails
 
-#### **Overview**
+### **Overview**
 
 The **Emails** section provides a log of all system-generated emails sent for a specific booking. This includes confirmation emails, travel documents, reminders, and any other communication automatically dispatched by the system.
 
 ***
 
-#### **Purpose**
+### **Purpose**
 
 This feature allows users to:
 
@@ -16,7 +16,7 @@ This feature allows users to:
 
 ***
 
-#### **Preconditions**
+### **Preconditions**
 
 * The booking must be saved and contain at least one sent email.
 * System-generated emails must be enabled/configured.
@@ -24,7 +24,7 @@ This feature allows users to:
 
 ***
 
-#### **Instructions**
+### **Instructions**
 
 **Accessing the Emails Section**
 
@@ -42,7 +42,7 @@ This feature allows users to:
 
 ***
 
-#### Notes
+### Notes
 
 * This section is **read-only**. Emails **cannot be resent or modified** from this interface.
 * If no emails are listed, it may indicate a system issue or that no communications have been triggered yet.

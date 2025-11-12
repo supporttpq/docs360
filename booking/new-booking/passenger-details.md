@@ -6,7 +6,7 @@ The **Passenger Details** tab allows you to **edit individual passenger informat
 
 <figure><img src="https://sonat.com/api/Document/Image/19670ef0-8b8a-4cda-8eb6-249681e07016/60a72aeb-a272-4428-a118-b6074b1b35b5/b98fbdb0-fecc-48c3-a39a-6ba1572d32e8.webp?width=1864" alt="" width="900"><figcaption></figcaption></figure>
 
-#### **Purpose**
+### **Purpose**
 
 This section is designed to:
 
@@ -16,7 +16,7 @@ This section is designed to:
 
 ***
 
-#### **Preconditions**
+### **Preconditions**
 
 Before using this section:
 
@@ -26,7 +26,7 @@ Before using this section:
 
 ***
 
-#### **Instructions**
+### **Instructions**
 
 **Editing Passenger Information**
 
@@ -63,7 +63,7 @@ Before using this section:
 
 ***
 
-#### Confirmation
+### Confirmation
 
 Once saved:
 
@@ -72,7 +72,7 @@ Once saved:
 
 ***
 
-#### Best Practices
+### Best Practices
 
 * Always confirm the accuracy of **passport and insurance data**, especially before departure.
 * Ensure **emergency contacts** are reachable and understand their role.

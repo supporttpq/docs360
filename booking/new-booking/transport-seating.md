@@ -1,12 +1,12 @@
 # Transport Seating
 
-#### **Overview**
+### **Overview**
 
 The **Transport Seating** tab is used to manually or automatically assign airplane seats to passengers listed in a booking. It handles both outbound and return flights, ensuring that seat assignments appear clearly on the booking and printed ticket.
 
 ***
 
-#### **Purpose**
+### **Purpose**
 
 * To reserve specific airplane seats for each passenger in a booking.
 * To give agents the ability to match customer seating preferences.
@@ -14,7 +14,7 @@ The **Transport Seating** tab is used to manually or automatically assign airpla
 
 ***
 
-#### **Preconditions**
+### **Preconditions**
 
 * A booking must be created and saved.
 * Passengers must already be added to the booking.
@@ -22,7 +22,7 @@ The **Transport Seating** tab is used to manually or automatically assign airpla
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (6).png" alt=""><figcaption></figcaption></figure>
 
-#### **Instructions**
+### **Instructions**
 
 **🔹 Accessing the Tab**
 

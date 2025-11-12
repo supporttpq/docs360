@@ -1,6 +1,6 @@
 # Keep automatic discounts prices
 
-#### **Overview**
+### **Overview**
 
 When editing a booking, the system can handle prices for discounts, extras, and travel insurance in two different ways:
 
@@ -11,7 +11,7 @@ The behavior is controlled by a setting in the **Back Office** interface via a c
 
 ***
 
-#### **Keep Automatic Discount Prices Checkbox**
+### **Keep Automatic Discount Prices Checkbox**
 
 * Located on the **booking page** in the Back Office.
 * Labeled: **Keep automatic discount prices**
@@ -22,7 +22,7 @@ The behavior is controlled by a setting in the **Back Office** interface via a c
 
 ***
 
-#### **How It Works**
+### **How It Works**
 
 | Checkbox State  | System Behavior                                                                                                     |
 | --------------- | ------------------------------------------------------------------------------------------------------------------- |

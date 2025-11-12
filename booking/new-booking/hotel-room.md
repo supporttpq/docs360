@@ -1,12 +1,12 @@
 # Hotel Room
 
-#### **Overview**
+### **Overview**
 
 The **Hotel Room** tab allows you to assign specific rooms to a booking from the pool of available rooms at the selected hotel. This provides control over the exact room, floor, and room number assigned to the guest.
 
 ***
 
-#### **Purpose**
+### **Purpose**
 
 * To manually allocate a specific hotel room to a customer based on availability.
 * To ensure personalized room preferences (e.g., floor level, room number) are respected.
@@ -14,14 +14,14 @@ The **Hotel Room** tab allows you to assign specific rooms to a booking from the
 
 ***
 
-#### **Preconditions**
+### **Preconditions**
 
 * A hotel must already be selected for the booking.
 * Room availability must be set up for the hotel in the system.
 
 ***
 
-#### **Instructions**
+### **Instructions**
 
 1. **Open the Hotel Room Tab:**
    * Navigate to the desired booking.

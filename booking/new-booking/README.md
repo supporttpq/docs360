@@ -47,7 +47,7 @@ Navigate to the top-level menu and click on **Booking**. You will see the follow
 
 ***
 
-### 🧭 Navigation Reference
+### Navigation Reference
 
 | Section                 | Navigation Path                                  |
 | ----------------------- | ------------------------------------------------ |

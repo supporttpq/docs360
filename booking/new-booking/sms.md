@@ -1,12 +1,12 @@
 # SMS
 
-#### **Overview**
+### **Overview**
 
 The **SMS** tab provides a log of all SMS messages sent to the customer related to the booking. It allows team members to track communication history, confirm delivery, and review message content.
 
 ***
 
-#### **Purpose**
+### **Purpose**
 
 * Track all SMS notifications associated with the booking.
 * Ensure messages were sent successfully and to the correct number.
@@ -14,7 +14,7 @@ The **SMS** tab provides a log of all SMS messages sent to the customer related 
 
 ***
 
-#### **Preconditions**
+### **Preconditions**
 
 * The booking must have a valid customer phone number.
 * SMS messages must have been triggered via system processes or manual actions (e.g., booking confirmations, reminders).

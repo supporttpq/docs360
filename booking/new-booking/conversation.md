@@ -1,12 +1,12 @@
 # Conversation
 
-#### **Overview**
+### **Overview**
 
 The **Conversation History** tab displays all chat-based communications related to the current booking. This feature helps track direct interactions between the **Tourpaq user** (e.g., travel agent, customer service rep) and the **guest**.
 
 ***
 
-#### **Purpose**
+### **Purpose**
 
 * To **log** and **review** conversations for accountability and service continuity.
 * To ensure **all communications are documented** with time, sender, and status details.
@@ -14,7 +14,7 @@ The **Conversation History** tab displays all chat-based communications related 
 
 ***
 
-#### **Preconditions**
+### **Preconditions**
 
 * There must be an **existing booking**.
 * At least one **chat message** must have been exchanged between the Tourpaq user and the guest.
@@ -22,7 +22,7 @@ The **Conversation History** tab displays all chat-based communications related 
 
 ***
 
-#### **Field Descriptions**
+### **Field Descriptions**
 
 | **Field**     | **Description**                                                                   |
 | ------------- | --------------------------------------------------------------------------------- |
@@ -34,7 +34,7 @@ The **Conversation History** tab displays all chat-based communications related 
 
 ***
 
-#### **Instructions**
+### **Instructions**
 
 1. Go to the relevant booking.
 2. Click on the **Conversation History** tab.
@@ -44,4 +44,6 @@ The **Conversation History** tab displays all chat-based communications related 
    * When messages were read.
    * Which agent was assigned to or received guest replies.
 
-> 🔒 **Note**: This tab is read-only. Messages are logged automatically and cannot be edited or deleted.
+{% hint style="warning" %}
+**Note**: This tab is read-only. Messages are logged automatically and cannot be edited or deleted.
+{% endhint %}
