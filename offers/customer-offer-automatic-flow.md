@@ -33,7 +33,7 @@ This ensures timely follow-up and improves engagement without requiring manual i
 * The system keeps a **history of all emails sent**.
 * Scheduled emails that were canceled or unsent are displayed in **red**, providing a clear overview of pending and completed communications.
 
-#### **Customer Outcome**
+### **Customer Outcome**
 
 * **Automated Follow-Up:** Customers receive timely reminders about offers without manual intervention.
 * **Increased Engagement:** Multiple interval reminders (e.g., 3, 7, 14, 21 days) improve the likelihood of conversion.

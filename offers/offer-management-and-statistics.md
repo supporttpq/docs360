@@ -1,5 +1,7 @@
 # Offer management and statistics
 
+### Overview
+
 Once an offer has been sent, the customer has a certain amount of time until the offer expires.&#x20;
 
 <figure><img src="../.gitbook/assets/image (267).png" alt=""><figcaption></figcaption></figure>
