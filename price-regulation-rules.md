@@ -1,12 +1,12 @@
 # Price regulation rules
 
-#### **Overview**
+### **Overview**
 
 The **Price Regulation Rule** defines automatic pricing adjustments for offers in the system. It allows you to configure how prices should change based on time, number of offers, and predefined limits. This ensures competitive pricing while maintaining control over minimum values.
 
 ***
 
-#### **Purpose**
+### **Purpose**
 
 The purpose of this rule is to:
 
@@ -17,7 +17,7 @@ The purpose of this rule is to:
 
 ***
 
-#### **Preconditions**
+### **Preconditions**
 
 * The user must have permissions to create or edit price regulation rules.
 * A valid **Name** and **Code** must be provided.
@@ -25,7 +25,7 @@ The purpose of this rule is to:
 
 <figure><img src=".gitbook/assets/image (52) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### **Instructions**
+### **Instructions**
 
 1. Navigate to **Price Regulation Rules** in the system and select **Create/Edit Rule**.
 2. Fill in the fields as follows:

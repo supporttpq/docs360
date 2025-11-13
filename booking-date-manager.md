@@ -1,17 +1,17 @@
 # Booking Date Manager
 
-#### **Overview**
+### **Overview**
 
 The **Booking Date Manager** page provides an overview of all bookings within a selected time frame. It allows users to filter, view, and adjust booking dates for specific hotels and brands. The tool is particularly useful for managing booking periods and aligning them with the corresponding departure dates.
 
-#### **Purpose**
+### **Purpose**
 
 This page is designed to help travel operators easily monitor and modify booking-related information. It ensures that booking and departure dates are correctly aligned and allows the user to filter results based on various parameters, such as brand, date range, and hotel.\
 Administrators can use this page to quickly view all bookings made during a specific period and make necessary updates before saving the changes.
 
 ***
 
-#### **Fields and Filters**
+### **Fields and Filters**
 
 <figure><img src=".gitbook/assets/image (430).png" alt=""><figcaption></figcaption></figure>
 
@@ -50,7 +50,7 @@ Administrators can use this page to quickly view all bookings made during a spec
 
 ***
 
-#### **💡 Tip**
+### **💡 Tip**
 
 * To ensure accurate results, always set both **Booking start** and **Booking end** dates before pressing **Display**.
 * You can click on a **Booking No** to open a detailed view of that booking.

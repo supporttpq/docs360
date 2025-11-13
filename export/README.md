@@ -6,7 +6,7 @@ Exports are generated as `.XLSX` files and can be used for analysis, accounting,
 
 ***
 
-#### **Export Types**
+### **Export Types**
 
 There are **three export types** available:
 
@@ -18,7 +18,7 @@ There are **three export types** available:
 
 ***
 
-#### **Fields and Filters**
+### **Fields and Filters**
 
 <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -35,7 +35,7 @@ There are **three export types** available:
 
 ***
 
-#### **Buttons and Actions**
+### **Buttons and Actions**
 
 | **Button**         | **Description**                                                                                                               |
 | ------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
@@ -44,7 +44,7 @@ There are **three export types** available:
 
 ***
 
-#### **Usage Example**
+### **Usage Example**
 
 **Scenario:** Export booking and cost data for bookings created in September and October 2025, including changes after departure.
 
@@ -78,7 +78,7 @@ The data will contain information regarding each booking that corresponds to the
 * **Booking date -** The date when the booking was created.
 * **Booking status -** The current status of the booking (e.g., Confirmed, Cancelled, Pending).
 * **Booking total price -** The total price paid for the booking, including all products and services.
-* Customer No - The custumer's number.
+* Customer No - The customer's number.
 * Customer name - Name of the customer
 * **Customer e-mail -** The primary email address of the customer.
 * **Seller -** The individual or platform that made the booking.

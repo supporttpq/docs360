@@ -1,10 +1,10 @@
 # Price List Custom Hotel days Service
 
-#### Overview
+### Overview
 
 The **Price List Custom Hotel Days** feature allows the setup of hotel stays that are independent of a predefined transport package. Unlike standard price lists, this functionality provides flexibility for creating hotel-only stays or combinations that can be sold outside of fixed departure packages.
 
-#### Purpose
+### Purpose
 
 The purpose of this feature is to:
 
@@ -14,7 +14,7 @@ The purpose of this feature is to:
 
 <figure><img src=".gitbook/assets/image (9) (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### Instructions
+### Instructions
 
 1. Navigate to **Price List → Custom Hotel Days**.
 2. Click the **Create** button.
