@@ -1,12 +1,12 @@
 # How CH1P1 is used in booking
 
-#### **Overview**
+### **Overview**
 
 This document explains how the **CH1P1** value (child price) is applied within bookings that include child passengers. It covers the required setup, validation in the **Price List**, and how the total booking amount is derived by combining adult and child prices.
 
 ***
 
-#### **Prerequisites**
+### **Prerequisites**
 
 To perform this validation, ensure the following conditions are met:
 
@@ -21,7 +21,7 @@ To perform this validation, ensure the following conditions are met:
 
 ***
 
-#### **Booking Creation and Child Price Application**
+### **Booking Creation and Child Price Application**
 
 A booking is created with one adult and one child, selecting a hotel that provides an extra bed option for children. Once the booking is completed and the allotment is taken, the system generates a **Total Amount** in the booking confirmation, which includes both adult and child pricing components.
 
@@ -31,7 +31,7 @@ The child price component used in this calculation corresponds to the **CH1P1** 
 
 ***
 
-#### **Verifying CH1P1 in the Price List**
+### **Verifying CH1P1 in the Price List**
 
 To confirm that the booking values align with the pricing setup:
 
@@ -54,7 +54,7 @@ The displayed table should now include columns such as **CH1P1**, **CH2P1**, **C
 
 ***
 
-#### **Calculation Logic**
+### **Calculation Logic**
 
 The **Total Amount** displayed in the booking is calculated as:
 
@@ -73,7 +73,7 @@ This formula ensures that the system accurately reflects the pricing breakdown b
 
 ***
 
-#### **Conclusion**
+### **Conclusion**
 
 The **CH1P1** value directly influences the total price of a booking containing child passengers. Verifying it in the **Price List** ensures consistency between backend pricing logic and the values displayed in bookings.\
 This setup guarantees transparency, helping administrators and agents validate that child pricing is applied correctly across all bookings.

@@ -1,13 +1,13 @@
 # How CH1D1 & CH2D1 is calculated in Price List
 
-#### **Overview**
+### **Overview**
 
 This document explains how the child discount columns **CH1D1** and **CH2D1** are displayed and calculated in the **Price List** section.\
 It details the required configuration and the formulas used to compute the discount values for child passengers when child pricing and profit margin features are active.
 
 ***
 
-#### **Prerequisites**
+### **Prerequisites**
 
 To view and validate the child discount calculations, the user must:
 
@@ -20,7 +20,7 @@ To view and validate the child discount calculations, the user must:
 
 ***
 
-#### **Accessing Child Discount Columns**
+### **Accessing Child Discount Columns**
 
 Within the **Price List**, the user can customize the displayed table columns to include child-related pricing and discount data.\
 From the column selection menu, the following options should be enabled:
@@ -45,7 +45,7 @@ These represent the respective prices, discounts, percentages, profit margins, a
 
 ***
 
-#### **Calculation Logic**
+### **Calculation Logic**
 
 **CH1D1 Calculation**
 
@@ -67,7 +67,7 @@ This ensures that both child discounts are calculated consistently, reflecting t
 
 ***
 
-#### **Purpose and Usage**
+### **Purpose and Usage**
 
 The **CH1D1** and **CH2D1** columns allow administrators to validate how discounts for child passengers are derived from base hotel costs, early booking discounts, and profit margins.\
 This level of detail provides full transparency in the **Price List** and ensures pricing accuracy for family bookings involving children.

@@ -1,12 +1,12 @@
 # Child pays an adult's price for a double room when it does not occupy an extra bed
 
-#### **Overview**
+### **Overview**
 
 This document explains the system behavior when a booking is made for one adult and one child sharing a **standard double room**. In such cases, the child is charged the same rate as the adult, regardless of any child pricing configurations. This ensures consistency between the **Price List** and the **booking total**.
 
 ***
 
-#### **Prerequisites**
+### **Prerequisites**
 
 To verify this behavior, the following conditions must be met:
 
@@ -20,7 +20,7 @@ To verify this behavior, the following conditions must be met:
 
 ***
 
-#### **Booking Setup and Pricing Behavior**
+### **Booking Setup and Pricing Behavior**
 
 A booking is created for **1 adult and 1 child**, both assigned to a **standard double room**.\
 Since the child does not occupy an extra bed, the system automatically applies the **adult price (P1)** to both passengers.
@@ -39,7 +39,7 @@ This behavior ensures pricing alignment when no child-specific bed or discount a
 
 ***
 
-#### **Price List Verification**
+### **Price List Verification**
 
 In the **Price List** page:
 
@@ -54,7 +54,7 @@ Instead, the system consistently references **P1**, the adult base price, for bo
 
 ***
 
-#### **Validation Result**
+### **Validation Result**
 
 When a child shares a **double room** without requiring an **extra bed**, the system treats the child as a second adult for pricing purposes.
 

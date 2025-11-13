@@ -1,12 +1,12 @@
 # Missed Payments
 
-#### Overview
+### Overview
 
 The **Missed Payment** page provides an overview of payments that were not successfully processed or recorded in the system. It helps finance and support teams identify, investigate, and resolve failed payment attempts efficiently.
 
 This page displays all relevant details of failed or incomplete payments and provides tools to retry, move, or hide payments as needed.
 
-#### Purpose
+### Purpose
 
 The purpose of the **Missed Payment** page is to ensure that all unprocessed or failed payments are easily traceable and manageable within Tourpaq.\
 It helps agencies:
@@ -17,7 +17,7 @@ It helps agencies:
 
 <figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### Filtering Options
+### Filtering Options
 
 At the top of the page, several filters are available to narrow down payment results:
 
@@ -29,7 +29,7 @@ At the top of the page, several filters are available to narrow down payment res
 
 ***
 
-#### Payment List Table
+### Payment List Table
 
 The central table displays a list of all missed payments and their details.
 
@@ -49,7 +49,7 @@ The central table displays a list of all missed payments and their details.
 | **PAYMENT DATE**     | The date when the payment was attempted.                                                                                                                                                                                                        |
 | **REASON**           | Explains why the payment failed (if available).                                                                                                                                                                                                 |
 
-#### How It Works
+### How It Works
 
 When a payment fails to process or record correctly, it is automatically logged on the **Missed Payment** page.\
 From here, authorized users can:
