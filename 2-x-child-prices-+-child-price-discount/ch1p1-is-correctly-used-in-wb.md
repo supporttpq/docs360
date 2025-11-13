@@ -1,13 +1,13 @@
 # CH1P1 is correctly used in WB
 
-#### **Overview**
+### **Overview**
 
 This document describes the test scenario for validating that **child pricing data** — including **CH1P1**, **CH2P1**, **CH1D1**, **CH2D1**, and **CPM1** — from the **Price List** is correctly applied during the **web booking process**.\
 It ensures consistency between the **web booking price** and the **final price displayed in the Tourpaq application**.
 
 ***
 
-#### **Prerequisites**
+### **Prerequisites**
 
 * **Administrator access** to Tourpaq.
 * A **Price List entry (PLTA ID)** for a **double room with one extra bed**.
@@ -20,7 +20,7 @@ It ensures consistency between the **web booking price** and the **final price d
 
 ***
 
-#### **Price List Validation**
+### **Price List Validation**
 
 Access the **Price List** page and search for entries matching a **double room with one extra bed**.\
 Confirm that all relevant child pricing fields (**CH1P1**, **CH2P1**, **CH1D1**, **CH2D1**, **CPM1**) contain valid values.\
@@ -32,7 +32,7 @@ Once validated, open the **PLTA ID** in the web booking interface to begin the b
 
 ***
 
-#### **Web Booking Flow**
+### **Web Booking Flow**
 
 Start by adding customer (Rejsebestiller) information, followed by **2 adults and one child** in the **Rejsedeltagere** section.\
 When the prices are initially displayed:
@@ -56,7 +56,7 @@ After confirming and submitting the booking, decline any optional offers to comp
 
 ***
 
-#### **Validation in Tourpaq**
+### **Validation in Tourpaq**
 
 Copy the booking number from the **Kvittering** page and open it in the **Tourpaq application**.\
 The **Booking Details** page should reflect the same pricing as seen in the web booking.
@@ -71,7 +71,7 @@ This confirms that:
 
 ***
 
-#### **Conclusion**
+### **Conclusion**
 
 The test validates the correct implementation of **child pricing logic** in web bookings.\
 It confirms that the **CH1P1**, **CH2P1**, and **CPM1** fields directly influence pricing calculations, ensuring a consistent and transparent experience across both **web** and **back-office** environments.

@@ -1,13 +1,13 @@
 # How CH1P1 & CH2P1 are calculated in Price List
 
-#### **Overview**
+### **Overview**
 
 This document explains how the child pricing columns **CH1P1** and **CH2P1** are displayed and calculated in the **Price List** section.\
 The feature allows administrators to view detailed child pricing information and understand how child prices are derived based on hotel room costs, profit margins, and transport costs.
 
 ***
 
-#### **Accessing Child Price Columns**
+### **Accessing Child Price Columns**
 
 Within the **Price List**, administrators can customize the displayed columns to include child-related pricing data.\
 From the column selection menu (three-dot icon in the table header), users can enable the following columns:
@@ -30,7 +30,7 @@ These columns represent price values, applied discounts, percentage-based values
 
 ***
 
-#### **Calculation Logic**
+### **Calculation Logic**
 
 **CH1P1 Calculation**
 
@@ -50,7 +50,7 @@ Since both child prices share the same profit margin (CMP1), the resulting calcu
 
 ***
 
-#### **Purpose and Usage**
+### **Purpose and Usage**
 
 Displaying the **CH1P1** and **CH2P1** columns allows administrators to verify that child pricing aligns with the configured profit margins and cost rules.\
 This setup ensures accurate pricing representation for child passengers and supports better monitoring of profit structures within the **Price List** interface.

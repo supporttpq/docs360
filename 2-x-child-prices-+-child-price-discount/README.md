@@ -4,7 +4,7 @@ The 2 child prices are enabled by the feature "Child Profit Margin". The feature
 
 The child profit margin is the same for both children.
 
-## Children price adjustment on 'Price List' page
+### Children price adjustment on 'Price List' page
 
 #### **Overview**
 

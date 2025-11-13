@@ -1,6 +1,6 @@
 # CH1P1 & Ch2P1 used in a booking with 3 children using extra beds
 
-#### **Overview**
+### **Overview**
 
 This document describes how the system applies child pricing for bookings that include two adults and three children, where each child occupies an extra bed.\
 The scenario validates that the total booking amount correctly reflects the combined use of adult and child-specific pricing values from the Price List.\
@@ -8,7 +8,7 @@ The calculation involves the standard adult price (P1) together with the configu
 
 ***
 
-#### **Purpose**
+### **Purpose**
 
 The purpose of this validation is to confirm that the **Price List child pricing logic** is correctly applied when multiple children with extra beds are included in the same booking.\
 When the booking is created, the system automatically references the active price list entry (PLTA ID) and retrieves:
@@ -22,7 +22,7 @@ The platform ensures that these pricing components are used consistently in both
 
 ***
 
-#### **Validation Result**
+### **Validation Result**
 
 When the booking is completed for **2 adults and 3 children**, each with an extra bed:
 
