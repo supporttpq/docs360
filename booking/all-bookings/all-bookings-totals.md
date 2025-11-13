@@ -1,6 +1,6 @@
 # All bookings Totals
 
-#### **Overview**
+### **Overview**
 
 The **All Bookings Totals** section offers a summarized view of bookings based on various filters. It allows users to track the total number of bookings, passengers, and financial indicators like turnover and profit, across selected brands and periods.
 
@@ -8,7 +8,7 @@ This functionality is part of the **All Bookings** page and provides quick insig
 
 ***
 
-#### **Purpose**
+### **Purpose**
 
 The All Bookings Totals section is used to:
 
@@ -18,7 +18,7 @@ The All Bookings Totals section is used to:
 
 ***
 
-#### **Preconditions**
+### **Preconditions**
 
 To use **All Bookings Totals**, make sure:
 
@@ -29,7 +29,7 @@ To use **All Bookings Totals**, make sure:
 
 ***
 
-#### **Instructions**
+### **Instructions**
 
 **🔹 Step 1: Access the Page**
 

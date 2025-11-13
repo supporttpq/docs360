@@ -4,7 +4,7 @@ This page provides an overview of the electronic tickets (E-Tickets) generated a
 
 <figure><img src=".gitbook/assets/image (163).png" alt=""><figcaption></figcaption></figure>
 
-### **1.** Main elements of the page
+### Main elements of the page
 
 #### **a) Search filters**
 
@@ -37,7 +37,7 @@ The table displays essential details about each ticket submitted, including the 
 | **Failed Status**  | Displays any sending errors.                                                    |
 | **Status**         | Final status of the email (e.g. "sent", "failed").                              |
 
-### **2. Workflow**
+### **Workflow**
 
 1. Monitoring sent e-tickets
    * Users can quickly see which tickets have been sent and their status.
@@ -48,7 +48,7 @@ The table displays essential details about each ticket submitted, including the 
 3. Exporting and Reporting
    * The list of tickets can be exported for analysis or archiving.
 
-### **3. Possible problems and solutions**
+### **Possible problems and solutions**
 
 | Issue                        | Possible cause                                     | Solution                                            |
 | ---------------------------- | -------------------------------------------------- | --------------------------------------------------- |

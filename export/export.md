@@ -24,11 +24,11 @@ Using the three buttons located next to the **Export** button, you can:
 * **View** all previously scheduled exports
 * **Create** new export schedules based on selected filters
 
-#### **Page Structure and Fields**
+### **Page Structure and Fields**
 
 <figure><img src="../.gitbook/assets/image (9) (3).png" alt=""><figcaption></figcaption></figure>
 
-**Export Filters (Top Section)**
+#### **Export Filters (Top Section)**
 
 These filters define the base parameters for what will be included in the exported data.
 
@@ -42,7 +42,7 @@ These filters define the base parameters for what will be included in the export
 
 ***
 
-**Schedules Section**
+#### **Schedules Section**
 
 This table lists all configured automatic exports. Each row represents a schedule with customizable options.
 

@@ -1,12 +1,12 @@
 # Tee Times
 
-#### **Overview**
+### **Overview**
 
 The **Tee Times** tab allows agents to schedule product availability for specific times, enabling precise reservations for each passenger in a booking. This feature is particularly useful for extras like golf, spa, or activity sessions that operate in time slots.
 
 ***
 
-#### **Purpose**
+### **Purpose**
 
 * To define specific **date and time slots** for extra products.
 * To assign time-specific reservations to individual passengers.
@@ -14,7 +14,7 @@ The **Tee Times** tab allows agents to schedule product availability for specifi
 
 ***
 
-#### **Preconditions**
+### **Preconditions**
 
 * A booking must be created and saved with at least one passenger.
 * The booking must contain an **extra product** that uses a tee time reservation system.
@@ -22,7 +22,7 @@ The **Tee Times** tab allows agents to schedule product availability for specifi
 
 <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### **Instructions**
+### **Instructions**
 
 **🔹 Accessing the Tee Times Tab**
 

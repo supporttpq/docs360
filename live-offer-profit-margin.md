@@ -1,27 +1,27 @@
 # Live Offer Profit Margin
 
-#### **Overview**
+### **Overview**
 
 The **Live Offer Profit Margin** page allows users to view and manage profit margins applied to hotel offers generated through the Live Offer functionality.\
 This page ensures that each agency or brand has visibility and control over the margin applied to real-time hotel data received from external providers (such as BedBanks).
 
 Users can filter, edit, or create new profit margin entries that apply to hotels within specific destinations and travel dates.
 
-#### **Purpose**
+### **Purpose**
 
 The purpose of this page is to define how much profit margin is applied to hotel prices when Live Offers are created for customers.\
 These profit margins are typically added on top of the net price returned by external providers so that the final selling price shown to the customer reflects the agency’s revenue policy.
 
 ***
 
-#### **Tabs**
+### **Tabs**
 
 * **Hotel** – Displays live profit margins related to hotels.
 * **Transport** – Displays live profit margins related to a destination.
 
 ***
 
-#### **Filters and Controls**
+### **Filters and Controls**
 
 <figure><img src=".gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -38,7 +38,7 @@ These profit margins are typically added on top of the net price returned by ext
 | **Clear**                            | Removes all applied filters and reloads the full list.                                                                                             |
 | **Create**                           | Opens the form to create a new profit margin rule for hotels.                                                                                      |
 
-#### **Table Columns**
+### **Table Columns**
 
 | **Column**                           | **Description**                                                                                                                                                   |
 | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -53,7 +53,7 @@ These profit margins are typically added on top of the net price returned by ext
 | **Price**                            | Shows the current calculated prices according to the defined margin. Clicking **View Prices** opens a detailed view with net, margin, and total price breakdowns. |
 | **🗑️ (Delete icon)**                | Deletes the profit margin rule. This action removes the margin for the selected hotel and destination.                                                            |
 
-#### **Typical Workflow**
+### **Typical Workflow**
 
 1. **Filter** by agency, provider, or destination to locate existing profit margin rules.
 2. **View Prices** to verify the effect of the defined profit margin on current hotel offers.

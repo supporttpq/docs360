@@ -1,12 +1,12 @@
 # Payment Registration
 
-#### Overview
+### Overview
 
 The Payments section is designed to provide a comprehensive view and input interface for tracking and managing various types of payments made within the system. This includes payments made via cash, card, gift card, bank, and other methods associated with specific bookings, extra orders, and guides.
 
 ***
 
-#### Purpose
+### Purpose
 
 This module facilitates:
 
@@ -17,7 +17,7 @@ This module facilitates:
 
 ***
 
-#### Preconditions
+### Preconditions
 
 To access and use the Payments section:
 
@@ -27,11 +27,11 @@ To access and use the Payments section:
 
 ***
 
-#### Instructions
+### Instructions
 
 <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-**Filtering Data**
+#### **Filtering Data**
 
 1. **Set Payment Start and End Dates** – Define the date range for displayed payments.
 2. **Departure Dates** – Optional filters for selecting trips by departure period.
@@ -45,7 +45,7 @@ To access and use the Payments section:
    * Booking Reference
 5. Click **Display** to generate the list.
 
-**Adding Payments**
+#### **Adding Payments**
 
 1. Scroll to the top of the table and enter:
    * **Payment No** – Usually auto-generated or manually entered
@@ -56,7 +56,7 @@ To access and use the Payments section:
 2. Ensure all mandatory fields are filled
 3. Click **Save** to commit the entry
 
-**Exporting Data**
+#### **Exporting Data**
 
 * Click the **Export** button in the top right corner to generate a report based on the currently displayed filter set
 

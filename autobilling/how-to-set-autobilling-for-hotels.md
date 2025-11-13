@@ -2,14 +2,14 @@
 
 In Tourpaq, **autobilling** for hotels is configured **individually for each hotel**. The settings are located in the **Autobilling** section of the **Hotel General** page.
 
-#### **Enabling Autobilling**
+### **Enabling Autobilling**
 
 * **Automatic Billing (Checkbox):** Activates autobilling for the selected hotel.
 * **Creditor:** A linked creditor is **mandatory** for autobilling to function.
 
 <figure><img src="../.gitbook/assets/image (319).png" alt=""><figcaption></figcaption></figure>
 
-#### **Scheduling Options**
+### **Scheduling Options**
 
 Invoices can be generated on the following schedules:
 
@@ -20,7 +20,7 @@ Invoices can be generated on the following schedules:
 
 ***
 
-#### **Invoice Information Fields**
+### **Invoice Information Fields**
 
 The following fields appear on the generated invoice:
 
@@ -30,7 +30,7 @@ The following fields appear on the generated invoice:
 
 ***
 
-#### **Pre-Arrival Schedules**
+### **Pre-Arrival Schedules**
 
 Invoices can also be scheduled **before the guest's arrival** at the hotel.\
 The same scheduling options apply:

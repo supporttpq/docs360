@@ -1,13 +1,13 @@
 # Select text for Offers
 
-#### **Overview**
+### **Overview**
 
 The **Select Text for Offers** section allows you to manage and configure the text, images, templates, and automated communication related to customer offers.\
 This setup ensures that all branding, messaging, and automated reminders are consistent across offers and bookings.
 
 <figure><img src="../.gitbook/assets/image (272).png" alt=""><figcaption></figcaption></figure>
 
-#### **Configuration Options**
+### **Configuration Options**
 
 **1. Add Text from Brands**
 
@@ -99,7 +99,7 @@ When enabled, this option adds a **custom description** for included price extra
 
 > _Note: The selected template must support this feature to display the extra description correctly._
 
-#### **Customer Outcome**
+### **Customer Outcome**
 
 * **Consistent Branding:** All offers use standardized text, images, and layouts aligned with the agency’s brand.
 * **Improved Communication:** Automated email and reminder scheduling ensures customers receive timely and accurate updates.

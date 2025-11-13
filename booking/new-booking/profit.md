@@ -1,12 +1,12 @@
 # Profit
 
-#### **Overview**
+### **Overview**
 
 The **Profit** tab provides a clear breakdown of the financial outcome of a booking by comparing **turnover**, **costs**, and **profit**. It allows for insight into how much each component (e.g., room, transport, extras) contributes to the total earnings and expenses of the booking.
 
 ***
 
-#### **Purpose**
+### **Purpose**
 
 * Track and analyze the profitability of individual bookings.
 * Understand how much each product, service, or discount contributes to revenue and cost.
@@ -14,7 +14,7 @@ The **Profit** tab provides a clear breakdown of the financial outcome of a book
 
 ***
 
-#### **Preconditions**
+### **Preconditions**
 
 * The booking must be created with at least one product, room, or transport service.
 * User must have permission to access financial data and make adjustments (if applicable).
@@ -22,7 +22,7 @@ The **Profit** tab provides a clear breakdown of the financial outcome of a book
 
 <figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### **Instructions**
+### **Instructions**
 
 1. **Access the Profit Tab:**
    * Go to the desired booking.
@@ -57,7 +57,7 @@ The **Profit** tab provides a clear breakdown of the financial outcome of a book
 
 Click on the blue info point to see detailed Hotel Cost Price (a new page opened).
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This section provides a detailed overview of the **hotel cost breakdown** for a specific booking. It displays daily and total pricing information for each guest, along with a cost summary for invoicing purposes.
 
@@ -85,7 +85,7 @@ This section helps administrators and accountants verify accurate hotel pricing 
 
 The **Cost Cache** tab provides a summarized breakdown of all cost components associated with each passenger in a booking. It helps users validate and compare cached versus current cost data to ensure price accuracy.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Key Columns:**
 

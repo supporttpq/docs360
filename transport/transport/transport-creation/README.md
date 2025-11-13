@@ -20,7 +20,7 @@ The purpose of the Basic Setup configuration is to ensure that each transport is
 
 #### Instructions & Field Explanations
 
-<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **1. Destination**
 
@@ -37,7 +37,7 @@ Defines the basic route and transport identifiers.
 
 **2. Customer Information**
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 **When transport is dynamic, this information needs to be set on the Real Transport entity.**
 
@@ -51,7 +51,7 @@ Controls text and allowances shown to customers.
 
 **3. Transportation**
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 Manages seat maps, airlines, and key operational rules.
 
@@ -70,7 +70,7 @@ Manages seat maps, airlines, and key operational rules.
 
 **4. Name Change Rule**
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (4).png" alt=""><figcaption></figcaption></figure>
 
 Controls passenger name change options. When checked, the system will allow a passenger name change.
 
@@ -361,13 +361,13 @@ This is done in the Transport from the Layout tab. Click on the layout tab.&#x20
 
 Select a fix quota. Click, display.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 Seat layouts can be assigned for each departure and arrival flight in part. Seat layouts can be different from flight to flight, depending on the transport type used. We can assign for each departure date different layout type.&#x20;
 
 Click on the dropdown list and choose the desired layout.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Click save, and we see the seat type price. We do the same thing for the next departure date, and we can select another Layout type, different from the previously chosen one.&#x20;
 

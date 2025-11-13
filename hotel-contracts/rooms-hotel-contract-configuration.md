@@ -8,7 +8,7 @@ The **Rooms** tab allows you to define and configure the room types included in 
 
 #### Screenshot
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

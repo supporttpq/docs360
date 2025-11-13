@@ -1,6 +1,6 @@
 # Statistic in All bookings
 
-#### **Overview**
+### **Overview**
 
 The **Statistics** functionality in the **All Bookings** page of Tourpaq allows users to analyze booking and passenger data in various formats. It supports business decisions with insightful breakdowns such as profit per hotel, turnover by resort, or bookings per week.
 
@@ -8,7 +8,7 @@ This guide explains how to access and use the statistics tools effectively.
 
 <figure><img src="../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### **Purpose**
+### **Purpose**
 
 This feature helps users:
 
@@ -19,7 +19,7 @@ This feature helps users:
 
 ***
 
-#### **Preconditions**
+### **Preconditions**
 
 Before using statistics:
 
@@ -30,7 +30,7 @@ Before using statistics:
 
 ***
 
-#### **Instructions**
+### **Instructions**
 
 **🔹 Step 1: Navigate to All Bookings**
 
@@ -50,7 +50,7 @@ Before using statistics:
 
 ***
 
-#### 📊 **Types of Available Statistics**
+#### **Types of Available Statistics**
 
 **1. Passenger Statistics**
 
@@ -102,7 +102,7 @@ Compares availability vs. actual bookings:
 
 ***
 
-#### 🛠️ **Additional Tools**
+### **Additional Tools**
 
 | Tool                                       | Description                                                                                                                                                                                   |
 | ------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

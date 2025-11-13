@@ -1,10 +1,12 @@
 # Customer Information on Transport setup
 
+### Overview
+
 This page documents the procedure for testing the configuration and behavior of **Customer Information** setup within the **Transport module**. This feature allows companies to define important informational messages to be displayed to customers during the booking and ticketing process.
 
 ***
 
-### 📌 Purpose
+### Purpose
 
 To verify that customer information rules can be:
 
@@ -16,7 +18,7 @@ To verify that customer information rules can be:
 
 ***
 
-### 🗺️ Navigation Steps
+### Navigation Steps
 
 #### 1. **Access Transport Module**
 
@@ -41,7 +43,7 @@ To verify that customer information rules can be:
 
 ***
 
-### ➕ Creating a New Rule
+### Creating a New Rule
 
 #### 4. **Click "Create"**
 
@@ -66,7 +68,7 @@ To verify that customer information rules can be:
 
 ***
 
-### 💾 Saving and Cancelling
+### Saving and Cancelling
 
 #### 6. **Click "Save"**
 
@@ -80,7 +82,7 @@ To verify that customer information rules can be:
 
 ***
 
-### ✏️ Editing and Deleting Entries
+### Editing and Deleting Entries
 
 #### 8. **Edit an Entry**
 
@@ -94,7 +96,7 @@ To verify that customer information rules can be:
 
 ***
 
-### 🏷️ Brand-Specific Customization
+### Brand-Specific Customization
 
 #### 10. **Customize for Specific Brand**
 
@@ -106,7 +108,7 @@ To verify that customer information rules can be:
 
 ***
 
-### 📎 Notes
+### Notes
 
 * Each rule can be tied to a specific time interval for both departure and booking.
 * Acknowledgment ensures that the customer explicitly agrees to the displayed information.

@@ -31,7 +31,7 @@ To provide a flexible and organized view of all travel-related offers, allowing:
 
 <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (4).png" alt=""><figcaption></figcaption></figure>
 
-#### **Filters and Search Fields**
+### **Filters and Search Fields**
 
 | **Field**                                     | **Description**                                                                                   |
 | --------------------------------------------- | ------------------------------------------------------------------------------------------------- |
@@ -52,7 +52,7 @@ To provide a flexible and organized view of all travel-related offers, allowing:
 
 ***
 
-#### **Main Table Columns**
+### **Main Table Columns**
 
 | **Column**           | **Description**                                                                                                                                                                                                                                                                   |
 | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

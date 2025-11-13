@@ -1,13 +1,13 @@
 # Customer Offer SMS template
 
-#### **Overview**
+### **Overview**
 
 The **Customer Offer SMS Template** feature allows users to create predefined SMS templates used for customer communication.\
 These templates ensure consistency and save time when sending messages from the **Select Offer** view.
 
 <figure><img src="../.gitbook/assets/image (273).png" alt=""><figcaption></figcaption></figure>
 
-#### **Configuration Details**
+### **Configuration Details**
 
 | **Field / Section**     | **Description**                                                                                                                                                                  |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -37,7 +37,7 @@ When sent, the `[Message]` variable is replaced with the text entered by the use
 
 <figure><img src="../.gitbook/assets/image (275).png" alt=""><figcaption></figcaption></figure>
 
-#### **Customer Outcome**
+### **Customer Outcome**
 
 * **Efficiency:** Users can quickly send standardized SMS messages without typing them from scratch.
 * **Personalization:** Dynamic variables allow messages to be customized for each customer.

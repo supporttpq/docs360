@@ -1,12 +1,12 @@
 # Hotel Only Bookings
 
-#### **Overview**
+### **Overview**
 
 **Hotel Only Bookings** allow customers to book just a hotel stay without including scheduled transport services. This is facilitated by using a **car-type transport** as a placeholder in the booking system.
 
 ***
 
-#### **How It Works**
+### **How It Works**
 
 * A **car-type transport** is created and linked to any existing hotel.
 * This transport behaves like regular transport with:
@@ -18,14 +18,14 @@
 
 ***
 
-#### **Purpose**
+### **Purpose**
 
 * To offer hotel-only reservations in the system without requiring flight or bus bookings.
 * To maintain uniform booking and pricing processes by using the transport module as a flexible tool.
 
 ***
 
-#### **Key Points**
+### **Key Points**
 
 | Feature               | Description                                     |
 | --------------------- | ----------------------------------------------- |

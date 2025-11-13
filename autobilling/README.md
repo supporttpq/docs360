@@ -2,7 +2,7 @@
 
 The **Autobilling** feature allows Tourpaq to automatically generate invoices on behalf of creditors and suppliers. This automation is based on predefined schedules and cost data registered in the system, streamlining the invoicing process and reducing manual work.
 
-#### **Automated Invoice Generation**
+### **Automated Invoice Generation**
 
 Tourpaq generates invoices for the following components:
 
@@ -19,7 +19,7 @@ These invoices are generated based on configured billing schedules and use the c
 
 ***
 
-#### **Invoice Approval Workflow**
+### **Invoice Approval Workflow**
 
 Once an invoice is generated:
 
@@ -29,7 +29,7 @@ Once an invoice is generated:
 
 ***
 
-#### **Viewing Generated Invoices**
+### **Viewing Generated Invoices**
 
 All generated invoices are available under the **Finance > Invoice** menu in Tourpaq.
 
