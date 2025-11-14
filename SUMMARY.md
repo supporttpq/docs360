@@ -249,6 +249,7 @@
 
 * [Transport Rules](transport-rules/README.md)
   * [Create Transport Rule](transport-rules/create-transport-rule.md)
+  * [Edit Quota](transport-rules/edit-quota.md)
 * [Transport Dashboard](transport-dashboard.md)
 * [Transport Price Control](transport-price-control.md)
 * [Transport Payment Rules](transport-payment-rules.md)
