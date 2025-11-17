@@ -10,7 +10,7 @@ The purpose of this functionality is to provide a flexible framework for handlin
 
 <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-#### **Columns in the Transport Rules Table**
+### **Columns in the Transport Rules Table**
 
 1. **Code**
    * A unique identifier or label for the transport rule.
@@ -34,7 +34,7 @@ The purpose of this functionality is to provide a flexible framework for handlin
 
 ***
 
-#### **Other Elements in the Table**
+### **Other Elements in the Table**
 
 * **Pencil icon (✏️) -** Used to edit an existing transport rule.
 * **Trash bin icon (🗑️) -** Deletes the selected transport rule.

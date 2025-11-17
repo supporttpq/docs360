@@ -22,7 +22,7 @@ Before editing or creating a contract:
 * The user must have editing rights
 * Key contract information (creditor, contract type, and validity dates) should be available
 
-<figure><img src="../.gitbook/assets/image (286).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (497).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -56,5 +56,4 @@ Before editing or creating a contract:
 * **Child Price Age**: Age range for child pricing
 * **Child Ages for Extra Beds**: Age range eligible for extra bed discounts
 * **Auto Billing**: Check if automatic invoicing applies
-* **Bulk Guarantee Room**: Select this option if you want to create Room Cost based on deposits. Room Cost will be ignored. The value represents sum of total deposits divide by guarantee rooms. If first room has "Per Pax" checked, then value is divide by Minimum Number from that room
 * **Combine E.B. with S\&P**: Combine Early Booking discount with Stay & Pay logic
