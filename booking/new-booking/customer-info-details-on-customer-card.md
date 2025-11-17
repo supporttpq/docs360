@@ -29,15 +29,15 @@ This feature enables authorised users to view and edit detailed customer informa
 
 1.  Go to **System Setup → Settings** and enable the checkbox **Show details of customer**.
 
-    <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 2. Click **Save** to apply the change.
 3. Navigate to **Booking → New Booking**, and select the brand.
 4. Enter the customer’s phone number or identify the customer.
 5.  If no details exist yet, click the **Edit** button on the customer card to open the details field.
 
-    <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 6. Add or update the pertinent details for the customer.
 7.  Click **Save** on the booking screen. The details are now linked to the customer record.
 
-    <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 8. On each future booking for this customer, the details will display automatically on the card.
