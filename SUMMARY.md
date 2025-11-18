@@ -333,6 +333,7 @@
   * [How to set Payment settings](brands/how-to-set-payment-settings.md)
   * [How to set GDS](brands/how-to-set-gds.md)
   * [How to set SMTP Settings](brands/how-to-set-smtp-settings.md)
+  * [Select Offer Setup](brands/select-offer-setup.md)
   * [WebBooking Settings](brands/webbooking-settings/README.md)
     * [Images](brands/webbooking-settings/images.md)
     * [Trackers](brands/webbooking-settings/trackers.md)
