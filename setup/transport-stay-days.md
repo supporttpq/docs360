@@ -1,21 +1,21 @@
 # Transport Stay Days
 
-#### **Overview**
+### **Overview**
 
 The **Transport Stay Days** page allows users to define and manage the possible durations of stay linked to transport arrangements. Each entry represents a combination of a **name** and the corresponding **number of days**, used when configuring transport offers or packages.
 
-#### **Purpose**
+### **Purpose**
 
 This setup ensures that transport options automatically align with specific stay durations (e.g., weekend trips, one-week stays, or one-way transfers).\
 It standardizes stay lengths across the system, providing consistency when creating or managing travel packages.
 
-#### **Instructions**
+### **Instructions**
 
-**Accessing the Page**
+#### **Accessing the Page**
 
 Navigate to the **Transport Stay Days** section from the system’s setup or configuration area.
 
-**Page Layout**
+### **Page Layout**
 
 <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

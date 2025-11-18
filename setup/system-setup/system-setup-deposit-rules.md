@@ -1,6 +1,6 @@
 # System Setup – Deposit Rules
 
-#### **Overview**
+### **Overview**
 
 The Deposit Rules section in the System Setup module allows administrators to define and manage payment rules associated with bookings. These rules determine the amount and schedule of deposits, second payments, and final payments for bookings in the system. Each rule is tied to a specific booking date and can be enabled or disabled based on business requirements.
 
@@ -8,7 +8,7 @@ This feature ensures that payments are tracked correctly, helping to maintain ca
 
 ***
 
-#### **Purpose**
+### **Purpose**
 
 The purpose of Deposit Rules is to:
 
@@ -22,7 +22,7 @@ By using Deposit Rules, the finance team and booking agents can enforce payment 
 
 ***
 
-#### **Field Descriptions**
+### **Field Descriptions**
 
 <figure><img src="../../.gitbook/assets/image (355).png" alt=""><figcaption></figcaption></figure>
 
@@ -40,7 +40,7 @@ By using Deposit Rules, the finance team and booking agents can enforce payment 
 
 ***
 
-#### **Instructions for Use**
+### **Instructions for Use**
 
 1. Navigate to **System Setup → Deposit Rules**.
 2. Review the list of existing deposit rules. Each rule shows its booking date, payment values, due dates, and status.
