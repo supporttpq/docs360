@@ -76,6 +76,13 @@ Go to **Booking menu → Click on “New Booking”**
 5. Click **Select**.
 6. Click **Take Allotment** to lock the room for the booking.
 
+After the user selects **Take Allotment**, the system updates the Total Amount right away.\
+The calculation includes:
+
+* All applicable **discounts** and **supplements**
+* **Auto-selected extras,** and **all extras** added manually by the user for every passenger
+* **Passenger age** adjustments
+
 ***
 
 ### 🔹 4. Passenger Information
@@ -93,31 +100,42 @@ Go to **Booking menu → Click on “New Booking”**
    * Multiple discounts or supplements can be added simultaneously.
 4. Click **Save Passenger** to save changes.
 
+{% hint style="success" %}
+The Total Amount updates instantly whenever the user modifies any passenger-related information:
+
+* **Selecting or unselecting Supplements or Discounts** updates the Total Amount immediately.
+* **Selecting or unselecting Extras** updates the Total Amount immediately.
+* **Changing the passenger’s age** recalculates the price instantly based on the new age.
+{% endhint %}
+
 ***
 
 ### 🔹 5.  Booking Totals
 
 The **Booking panel** provides a quick summary of financial details, booking metadata, and status indicators for a reservation. It is used by staff to monitor pricing, profitability, and the confirmation state of related services (hotel, transfer, etc.).
 
-<figure><img src="../../../.gitbook/assets/image (464).png" alt=""><figcaption></figcaption></figure>
+The **Total Amount** always reflects the user’s latest selections. The price includes all eligible **discounts**, **supplements**, **auto-selected extras**, and any **age-based price adjustments**.
+
+The system continuously recalculates the Total Amount as the user interacts with the booking. The displayed price always reflects the current state of the booking and does not wait for **Save Passenger** or **Save** to trigger updates.
+
+<figure><img src="../../../.gitbook/assets/image (501).png" alt=""><figcaption></figcaption></figure>
 
 This section provides an overview of the booking’s financial and status details.\
-At the top, the **Total amount** field highlights the total price (7.206), applied discount (300), and resulting total (6.906), along with the **Total Profit** value (-2.094).
+At the top, the **Total amount** field highlights the total price (6.110), applied discount (2.000), and resulting total (4.110).
 
-### **Field Explanations**
+#### **Field Explanations**
 
 #### **Financial Summary (Green Area)**
 
 * **Total amount** – The final selling price of the booking (after discounts).
 * **Price - Price without discounts, including extras, supplements etc.**
 * **Discount** – The sum of discounts on the hotel, price list adjustment and the discounts added to each passenger.
-* **Total Profit** – The margin earned after subtracting supplier costs from the selling price.
 
 #### **Booking Details**
 
-* **Booking Number** – The unique identifier for the booking. In the example: 769394 `+ 1` (the `+1` indicate a sub-booking).
+* **Booking Number** – The unique identifier for the booking. In the example: 3633 `+ 1` (the `+1` indicates a sub-booking).
 * **Status** – The current state of the booking (e.g., _OK_, _Pending_, _Cancelled_).
-* **User** – The system user or agent who created/owns the booking. Example: WUSR.
+* **User** – The system user or agent who created/owns the booking. Example: RWBTPQ.
 * **Added** – The date when the booking was created.
 * **Updated** – The date when the booking was last modified.
 
@@ -135,6 +153,17 @@ At the top, the **Total amount** field highlights the total price (7.206), appli
 3. Send the ticket:
    * Click **Send Email** to send manually, or
    * Let the system auto-generate and send it.
+
+### **User Experience**
+
+Users always see the correct Total Amount without needing to save the passenger or the booking.\
+This live update behavior ensures:
+
+* Accurate and transparent pricing
+* Immediate feedback when modifying selections
+* A smoother and more predictable booking process
+
+The system provides a responsive and reliable pricing experience, matching the user’s actions in real time.
 
 ***
 
