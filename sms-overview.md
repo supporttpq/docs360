@@ -1,38 +1,61 @@
----
-description: >-
-  This page allows users to monitor and manage SMS messages sent to customers.
-  Here, users can check details about sent messages, the sending period, their
-  status, and other relevant information.
----
-
 # SMS Overview
 
-### **Main Elements of the Page**
+### **Overview**
 
-<figure><img src=".gitbook/assets/image (26) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>SMS overview</p></figcaption></figure>
+The **SMS Overview** page provides a complete log of all SMS messages sent from the system, including booking-related SMS notifications.\
+It allows staff to monitor message delivery, review communication history, and quickly troubleshoot cases where customers report not receiving an SMS.
 
-#### **a) Search Filters**
+***
 
-Users can apply multiple filters to view sent messages:
+### **Purpose**
 
-* **SMS type** – Allows selection of the SMS type (e.g. Booking SMS, Customer SMS, Dynamic SMS, Select Offer SMS, Flight Time Change ).
-* **Sent period** – Users can select a time range to filter SMS messages sent within that period.
-* **Phone number** – Enables searching for SMS messages sent to a specific phone number.
-* **Status** – Filters messages based on their status (e.g., sent, failed, received).
-* **More Filters** – Provides access to additional filters for more detailed searches.
-* **Clear** – Resets all active filters.
-* **Display** – Displays the results based on the selected filters.
+This page is designed to:
 
-#### **b) SMS Listing Area**
+* give operational and service teams **full visibility** over all outgoing SMS messages
+* check whether specific SMS messages were successfully delivered
+* search by booking, phone number, or date
+* ensure customers receive crucial travel information (e.g., departure reminders, delays, check-in info)
+* support compliance and auditing needs
 
-Normally, this section would display a list of sent SMS messages with details such as:
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-* **Recipient phone number**
-* **SMS type**
-* **Sending date and time**
-* **Message status (sent, failed, queued, etc.)**
+## **Filters**
 
-### **Usage and Purpose**
+The top section contains multiple filters that help refine the list of shown SMS messages.
+
+#### **Available Filters**
+
+| Filter               | Description                                                                  |
+| -------------------- | ---------------------------------------------------------------------------- |
+| **SMS type**         | Select the category of SMS (e.g., Booking SMS, Payment SMS, Operational SMS) |
+| **Sent period**      | Define a date range in which the SMS was sent                                |
+| **Phone number**     | Search by recipient phone number                                             |
+| **Status**           | Filter by status: Sent, Failed, Pending                                      |
+| **Departure period** | Filter based on the passenger’s departure date                               |
+| **Booking number**   | Search for SMS linked to a specific booking number                           |
+
+#### **Display / More Filters / Clear**
+
+* **Display** – Apply selected filters
+* **More Filters** – Show additional filter fields
+* **Clear** – Reset all filters to default
+
+***
+
+## **Table Overview**
+
+Each row represents a single SMS message.
+
+| Column              | Description                                      |
+| ------------------- | ------------------------------------------------ |
+| **Date Sent**       | Timestamp when the system sent the SMS           |
+| **To Phone Number** | The recipient’s phone number                     |
+| **Message**         | The SMS text (anonymized for GDPR protection)    |
+| **Status**          | Delivery status of the SMS                       |
+| **Booking**         | Booking number connected to the SMS              |
+| **Dept. Date**      | Passenger’s departure date linked to the message |
+
+### **Usage**&#x20;
 
 1. **Monitoring Sent Messages**
    * Users can check if an SMS was successfully delivered or encountered errors.

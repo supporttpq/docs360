@@ -63,7 +63,7 @@ The system provides a detailed **overview of destinations and flight changes**, 
 * Reduces **manual workload** by automating detection, notification, and follow-up processes.
 * Enables **efficient tracking and intervention** when guests fail to confirm flight changes.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Filter Section (Top Panel)
 
@@ -76,7 +76,7 @@ The system provides a detailed **overview of destinations and flight changes**, 
 | **Status**                     | Filters by the system status: _Queued_, _Sent_, _Resent First_, etc.        |
 | **Airline**                    | Filters by the airline operating the affected flight.                       |
 | **Booking**                    | Filters by booking reference number.                                        |
-| **Transport Type**             | Filters by the type of transport (e.g., Flight).                            |
+| **Transport Type**             | Filters by the type of transport (Transport, Real Transport).               |
 | **Transport**                  | Filters by the specific transport code (e.g., BCNJPN-A04).                  |
 | **Departure Date (Start–End)** | Filters by the date range of the flight’s departure.                        |
 | **Created Date**               | Filters by the date the change was created in the system.                   |

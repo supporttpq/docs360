@@ -54,7 +54,9 @@ It is primarily used in back-office workflows by customer support, reservation a
    * Select **Send E-Ticket** to email the ticket to the customer.
    * Optionally, enable **Copy to e-mail** and enter an **Alternative Email** to CC someone else.
 
-> ✅ Tip: Use the **Reprint Per Transport** tab if tickets are split by transport legs and need to be re-sent individually.
+{% hint style="warning" %}
+Tip: Use the **Reprint Per Transport** tab if tickets are split by transport legs and need to be re-sent individually.
+{% endhint %}
 
 ### Reprint Per Transport
 
