@@ -26,7 +26,7 @@ The platform ensures that these pricing components are used consistently in both
 
 When the booking is completed for **2 adults and 3 children**, each with an extra bed:
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 * The system calculates the total amount using the following formula without extras and insurance:\
   **Total = (P1 × 2 Adults) + CH1P1 + CH2P1 + CH2P1**

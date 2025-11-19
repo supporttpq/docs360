@@ -367,7 +367,7 @@ Seat layouts can be assigned for each departure and arrival flight in part. Seat
 
 Click on the dropdown list and choose the desired layout.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Click save, and we see the seat type price. We do the same thing for the next departure date, and we can select another Layout type, different from the previously chosen one.&#x20;
 
