@@ -1,20 +1,35 @@
 # Introduction
 
-### Purpose <a href="#purpose" id="purpose"></a>
+### **Overview**
 
-Transport Dynamic Packaging Anchored on Pricelist is connecting Tourpaq to the GDS system and enables it to book transport over GDS and sell it under an existing pricelist (fix price). This document specification describes how this feature works in Tourpaq.
+Real Transport provides a hybrid model that combines dynamic GDS availability with the stability of predefined pricelist prices. Instead of relying solely on preconfigured flights or guarantee seats, the system retrieves live transport options from the GDS and constructs valid round-trip combinations at the moment of booking.
 
-### Goals <a href="#goals" id="goals"></a>
+The feature allows Tourpaq to:
 
-1. eliminate empty leg flights
-2. lower costs on prorate seats and lower the need of using guarantee seats
-3. dynamically pack transport anchored on a pricelist
-4. enable the system to define round-trips and hotel combinations
+* Automatically retrieve available outbound and return flights from the GDS.
+* Match flights to the travel dates and city pairs defined in the pricelist.
+* Build complete travel packages that follow predefined business rules (minimum/maximum stay, hotel pairing, transport rules).
+* Sell GDS flights at the fixed prices specified in the pricelist, independent of the underlying flight cost.
+* Reduce reliance on empty-leg flights, minimize guaranteed seat usage, and optimize prorated seat purchasing.
 
-### Definitions <a href="#definitions" id="definitions"></a>
+By anchoring the dynamic transport to an existing pricelist, Tourpaq maintains commercial control and pricing consistency while gaining the flexibility and efficiency of real-time transport sourcing.
 
-City pair (Leg): any pair of valid airports IATA codes eg: BLL-AYT
+### **Purpose**
 
-Segment: direct flight
+Transport Dynamic Packaging Anchored on Pricelist integrates Tourpaq with the GDS system, enabling the system to dynamically book real-time transport options while selling them under an existing pricelist (fixed price).\
+This document describes how the feature works, how transport combinations are created, and how they interact with the Tourpaq booking and pricing structure.
 
-Flight: one or more segments linked to make up a travel between cities of a city pair
+### **Goals**
+
+The primary goals of Transport Dynamic Packaging Anchored on Pricelist are:
+
+* To eliminate empty-leg flights.
+* To reduce costs associated with prorated and guarantee seats.
+* To dynamically pack transport while maintaining fixed pricing.
+* To support round-trip creation and valid hotel combinations within a single booking flow.
+
+### **Definitions**
+
+* **City pair (Leg):** A pair of valid IATA airport codes representing a travel route (e.g., BLL–AYT).
+* **Segment:** A single direct flight.
+* **Flight:** One or more linked segments creating a complete journey between the airports of a city pair.

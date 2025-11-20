@@ -20,7 +20,7 @@ Real Transports can be found in **Transports/Real Transports**. They are a speci
 
 4. The only problem with a real transport is the fact that the user has to create one for outbound and one for homebound. So in the end the user wil have created 2 Real Transports for use on one Normal Transport.
 
-### Real Transport <a href="#real-transport" id="real-transport"></a>
+## Real Transport <a href="#real-transport" id="real-transport"></a>
 
 To properly use a real transport, the user must have a normal transport linked to it. A normal transport cannot be edited for this purpose. A new transport has to be created specifically for that purpose.
 
