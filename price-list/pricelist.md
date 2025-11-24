@@ -35,18 +35,18 @@ Its purpose is to:
 
 ### Create/copy price list <a href="#createcopy-price-list" id="createcopy-price-list"></a>
 
-Creating a price list is fairly easy. From the **Price List** tab, select "Create/Copy Price List."
+Creating a price list is straightforward. In the **Price List** tab, click **Create/Copy Price List** and follow the steps below:
 
-* Choose the brand for which the price list is created.
-* Select the transport.
-* Select the transport's fix quota.
-* Select the hotel.
-* Select the rooms.
-* Click **Create new price list**
+1. Choose the **brand** for which you want to create the price list.
+2. Select the **transport**.
+3. Select the **transport’s fixed quota**.
+4. Select the **hotel**.
+5. Choose the **rooms**.
+6. Click **Create new price list**.
 
 <figure><img src="../.gitbook/assets/image (29) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-When a customer is creating a price list, and they do not use PM rule, the price list will be generated but without any prices.
+When a user is creating a price list, and will not use PM rule, the price list will be generated but without any prices.
 
 The behaviour from the "Create new price list" action has multiple possible warning outputs:
 
