@@ -26,8 +26,7 @@ Fill in the **Relation name**.
 
 Choose the **Relation room**. This should be the same as the room selected. In our case, DD2+1B-DH-AGI150.
 
-After this, click on the **Create relation price** button in the upper right corner.\
-
+After this, click on the **Create relation price** button in the upper right corner.<br>
 
 > ⚠️ **CAUTION:**
 

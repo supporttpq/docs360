@@ -46,6 +46,20 @@ Creating a price list is fairly easy. From the **Price List** tab, select "Creat
 
 <figure><img src="../.gitbook/assets/image (29) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
+When a customer is creating a price list, and they do not use PM rule, the price list will be generated but without any prices.
+
+The behaviour from the "Create new price list" action has multiple possible warning outputs:
+
+* If no prices are created a warning message appears saying "Price list is generated, but no prices are created. Press display to see the generated price list."
+
+<figure><img src="../.gitbook/assets/image (502).png" alt=""><figcaption></figcaption></figure>
+
+* If some prices are generated (but not for all the possible selected combinations) a warning message appears saying "Price list is generated, but only some prices are created. Press display to see the generated price list."
+
+<figure><img src="../.gitbook/assets/image (503).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (504).png" alt=""><figcaption></figcaption></figure>
+
 ### Price List Search <a href="#price-list-search" id="price-list-search"></a>
 
 The search helps to find prices based on brands, Transport, Hotel, Room and the departure date interval. To get results The most basic search you can get is by choosing All Brands and Transport but for the best performance, try to fill most of the fields. The list of transports from the drop-down list is filtered based on the brand selection.
