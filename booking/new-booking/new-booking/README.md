@@ -1,10 +1,10 @@
 # New Booking
 
-### **Overview**
+## **Overview**
 
 The **New Booking** functionality in Tourpaq allows users to create a booking by selecting a brand, adding transport and hotel options, managing passengers, and customizing extras, discounts, and supplements. It also includes advanced tools such as **passenger import** and **package product handling**.
 
-### **Purpose**
+## **Purpose**
 
 This tool is designed to:
 
@@ -13,9 +13,7 @@ This tool is designed to:
 * Manage passenger data individually or via file import.
 * Apply complex product logic such as packages, extras, discounts, and insurance.
 
-***
-
-### **Preconditions**
+## **Preconditions**
 
 Before creating a booking, ensure:
 
@@ -25,56 +23,232 @@ Before creating a booking, ensure:
 
 <figure><img src="https://sonat.com/api/Document/Image/19670ef0-8b8a-4cda-8eb6-249681e07016/60a72aeb-a272-4428-a118-b6074b1b35b5/095769e7-32fd-4f22-8e55-e504ab071f34.webp?width=1915" alt="" width="900"><figcaption></figcaption></figure>
 
-### **Instructions**
+## **Instructions to** Create a New Booking
 
-***
+### **Navigation:**&#x20;
 
-### 🔹 1. Create a New Booking
-
-**Navigation:**\
 Go to **Booking menu → Click on “New Booking”**
 
-#### Steps:
+## Steps:
 
-1.  **Choose the Brand.**
+### **1. Choose the Brand.**
 
-    <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
-2. **Insert the customer’s mobile number** to identify or create a customer. ![](<../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
-3.  **Add Passenger Count** – Select the number of:
+<figure><img src="../../../.gitbook/assets/image (518).png" alt=""><figcaption></figcaption></figure>
 
-    * Adults
-    * Children
-    * Infants
+### **2. Customer details**&#x20;
 
-    <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (519).png" alt=""><figcaption></figcaption></figure>
 
-***
+**Insert the customer’s mobile number** to identify or create a customer.&#x20;
 
-### 🔹 2. Add Transport
+### 3. Passengers&#x20;
+
+<figure><img src="../../../.gitbook/assets/image (520).png" alt=""><figcaption></figcaption></figure>
+
+**Add Passenger Count** – Select the number of:
+
+* Adults
+* Children
+* Infants
+
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+### 4. Add Transport
+
+The **Select Transport** dialog allows the user to search for and select a transport (flight, bus, or other transport types) for the booking. It provides flexible filtering options and a detailed table showing all matching transport departures within the selected date range.
+
+#### **Filter Section**
+
+At the top of the dialog, users can refine the search using the following filters:
+
+#### **Date Range**
+
+* **From** – Start date for the search period.
+* **To** – End date for the search period.\
+  The system returns all transports departing between these two dates.
+
+#### **Gateways**
+
+* **Departure Gateway** – Filters transports that depart from a specific gateway/airport.
+* **Arrival Gateway** – Filters transports that arrive at a selected gateway/airport.
+
+#### **Transport Code**
+
+Input for narrowing results to a specific transport code (e.g., flight code).
+
+#### **Period**
+
+An optional field used for searching transports based on a predefined period. Used to get transports from a specific interval.
+
+#### **Additional Options**
+
+* **Search waitlist also** – Includes transports that have no available allotment and are in waitlist mode.
+* **Clear** – Resets all filters.
+
+#### **Search Button**
+
+Executes the search based on the selected filters.
+
+#### **Transport List Table**
+
+The lower section shows all matching transport departures. Each row represents a transport option and contains the following columns:
+
+| Column               | Description                                                     |
+| -------------------- | --------------------------------------------------------------- |
+| **Status**           | Visual indicator of availability (color bar).                   |
+| **Date**             | Departure date of the transport.                                |
+| **Day**              | Corresponding weekday (e.g., Monday).                           |
+| **Departure**        | Departure gateway/airport.                                      |
+| **Arrival**          | Arrival gateway/airport.                                        |
+| **Transport**        | Transport code (e.g., flight code).                             |
+| **Type**             | Transport type (e.g., C, D).                                    |
+| **Stay**             | Number of nights associated with that transport.                |
+| **ALI 1–ALI 4**      | Allotment capacity per allotment group.                         |
+| **OW OUT / OW HOME** | One-way out and one-way home availability.                      |
+| **ALL. EXT. PROD.**  | Allotment Extra Product (Hover to see the number of allotments) |
+| **Flight Number**    | Actual flight number (if applicable).                           |
+| **Stop Sale**        | Shows if stop sale is active for this transport.                |
+| **Select**           | Button used to choose this transport for the booking.           |
+
+The table supports vertical scrolling when many departures are available.
+
+#### **Selection**
+
+To choose a transport:
 
 1. Click on **Edit** in the Transport section.
+
+<figure><img src="../../../.gitbook/assets/image (514).png" alt=""><figcaption></figcaption></figure>
+
 2. **Select the Period** (departure/arrival range) to check availability.
 3. Click **Search** to retrieve available transports.
    * Each result includes **transport allotment** and a hoverable **popup** showing extra quotas.
-4. Select the **desired transport**.
-5. Set the **trip interval** (duration in days).
+4.  Select the **desired transport**.
 
-![](https://docs.tourpaq.com/assets/images/TransportSelection-5b73846c23a09de529f49fee092d6c1d.png?width=1917)
+    <figure><img src="../../../.gitbook/assets/image (516).png" alt=""><figcaption></figcaption></figure>
+5.  Set the **trip interval** (duration in days).&#x20;
 
+    <figure><img src="../../../.gitbook/assets/image (517).png" alt=""><figcaption></figcaption></figure>
 
+### 5. Add Hotel & Room
 
-![](https://docs.tourpaq.com/assets/images/TransportSelectionExtraPopUp-1cc416ad6d600130fcea3e1a7b7f752d.png?width=1918)
+The **Select Hotel** dialog provides the user with a filtered list of available hotels, allowing quick selection based on resort, hotel, star rating, pension type, and room availability. The interface uses a combination of dropdown filters, checkboxes, and a tabular overview to help users identify suitable hotel options efficiently.
 
-### 🔹 3. Add Hotel & Room
+<figure><img src="../../../.gitbook/assets/image (511).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+#### **Filter Options**
 
-1. Click on the **Hotel** section.
-2. Filter by **Resort** or **Hotel** if needed.
-3. Click **Search** to show available options.
-4. Choose the best **Room Type**.
-5. Click **Select**.
-6. Click **Take Allotment** to lock the room for the booking.
+The top section contains multiple filters:
+
+* **Resort** – Dropdown for selecting a specific resort or viewing _All Resorts_.
+* **Hotel** – Dropdown for selecting a specific hotel or viewing _All Hotels_.
+* **Stars** – Multi-select dropdown for filtering by hotel star rating.
+* **Pension** – Multi-select dropdown for filtering available board types.
+
+Additional checkboxes allow further control:
+
+* **Show only free rooms** – Displays only rooms with availability.
+* **Display all rooms** – Shows all rooms regardless of availability.
+* **Display Names** – Toggles between hotel names and internal codes.
+* **Display PriceList Hotel Names** – Shows the hotel names defined in the PriceList.
+
+#### **Hotel List Table**
+
+The main table lists hotels that match the selected filter criteria. Each row represents a hotel/room combination and displays the following information:
+
+| Column              | Description                                                                                                                  |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| **Status**          | Indicates availability status with color-coded icons.                                                                        |
+| **Hotel**           | Code or name of the hotel, depending on filter settings.                                                                     |
+| **Stars**           | Star classification displayed visually.                                                                                      |
+| **Resort**          | Code of the resort.                                                                                                          |
+| **Room**            | Room type or board type description.                                                                                         |
+| **MB / XB / XB CH** | Capacity fields and Extra Bed Rules (Minimum Beds, Possible Extra Beds adults/child, Possible Extra Beds for Children Only). |
+| **Avail.**          | Availability count for the selected period.                                                                                  |
+| **P1**              | Price per interval 1                                                                                                         |
+| **D1 / G1**         | Discount or group price per interval.                                                                                        |
+| **N, D, G**         | Selection options (checkboxes) for Normal Price, Discount Price, and Group Price.                                            |
+| **Magic Stick**     | Pencil icon allowing Reset Free Room Count                                                                                   |
+
+#### **Selection**
+
+A **Select** button in the top right corner becomes active when a hotel/room line is chosen.\
+The user can confirm the selection and return to the booking flow.
+
+<figure><img src="../../../.gitbook/assets/image (512).png" alt=""><figcaption></figcaption></figure>
+
+#### **Workflow: Selecting a Hotel**
+
+This workflow describes how a user interacts with the **Select Hotel** dialog to choose a hotel and room combination for a booking.
+
+#### **1. Open the Select Hotel Dialog**
+
+The dialog typically opens when the user clicks **Select Hotel**  in the booking flow.\
+The dialog appears as an overlay containing filtering options and a list of available hotels.
+
+#### **2. Apply Filters (Optional)**
+
+#### **2.1 Select Resort**
+
+* Open the **Resort** dropdown.
+* Choose a specific resort or keep **All Resorts** to view all options.
+
+#### **2.2 Select Hotel**
+
+* Open the **Hotel** dropdown.
+* Select a hotel or keep **All Hotels** to view all available hotels.
+
+#### **2.3 Filter by Stars**
+
+* Open the **Stars** multi-select dropdown.
+* Select one or more star ratings to narrow down the results.
+
+#### **2.4 Filter by Pension**
+
+* Open the **Pension** multi-select dropdown.
+* Choose one or more board types.
+
+#### **2.5 Additional Filter Settings**
+
+Use the checkboxes:
+
+* **Show only free rooms** – displays only hotel rooms with availability above zero.
+* **Display all rooms** – shows every room regardless of availability.
+* **Display Names** – toggles between hotel names and codes.
+* **Display PriceList Hotel Names** – shows hotel names as defined in the PriceList.
+
+#### **3. Review the Hotel List**
+
+The table updates automatically based on the filters. Each row displays key information:
+
+* Hotel name or code
+* Star rating
+* Resort
+* Room type or board type
+* Extra bed rules in hotel selection (MB, XB, XB CH)
+* Availability
+* Pricing indicators (P1, D1, G1)
+* Selection checkboxes (N, D, G)
+
+The user scrolls or reviews the list to find the desired option.
+
+#### **4. Select a Hotel and Room Combination**
+
+* Click on the desired row to highlight it.
+* The **Select** button becomes active once a selection is made.
+
+#### **5. Confirm the Selection**
+
+* Click **Select** in the upper-right corner of the dialog.
+* The dialog closes, and the selected hotel and room are applied to the booking.
+
+#### **6. Continue the Booking Process**
+
+After the hotel is selected, the user proceeds with the remaining steps of the booking flow, such as take allotment.
+
+#### 7. **Take Allotment** to lock the room for the booking
+
+<figure><img src="../../../.gitbook/assets/image (513).png" alt=""><figcaption></figcaption></figure>
 
 After the user selects **Take Allotment**, the system updates the Total Amount right away.\
 The calculation includes:
@@ -85,7 +259,7 @@ The calculation includes:
 
 ***
 
-### 🔹 4. Passenger Information
+### 6. Passenger Information
 
 <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -110,7 +284,7 @@ The Total Amount updates instantly whenever the user modifies any passenger-rela
 
 ***
 
-### 🔹 5.  Booking Totals
+### 7.  Booking Totals
 
 The **Booking panel** provides a quick summary of financial details, booking metadata, and status indicators for a reservation. It is used by staff to monitor pricing, profitability, and the confirmation state of related services (hotel, transfer, etc.).
 
@@ -150,7 +324,7 @@ The total profit is displayed when expanding the green area that shows the total
 * **Hotel Confirmed** – Marks whether the accommodation portion of the booking has been confirmed.
 * **Transfer Confirmed** – Marks whether the transport/transfer services have been confirmed.
 
-### 🔹 6. Finalize Booking
+### 8. Finalize Booking
 
 1. Review all details.
 2. Click **Save** to complete the booking.
@@ -158,7 +332,7 @@ The total profit is displayed when expanding the green area that shows the total
    * Click **Send Email** to send manually, or
    * Let the system auto-generate and send it.
 
-### **User Experience**
+## **User Experience**
 
 Users always see the correct Total Amount without needing to save the passenger or the booking.\
 This live update behavior ensures:
@@ -169,9 +343,7 @@ This live update behavior ensures:
 
 The system provides a responsive and reliable pricing experience, matching the user’s actions in real time.
 
-***
-
-### &#x20;  Import Passengers (Optional)
+## Import Passengers (Optional)
 
 You can import multiple passengers via an Excel file.
 
@@ -199,9 +371,7 @@ You can import multiple passengers via an Excel file.
 * Cancellation or travel insurance cannot be selected.
 * The category does not support multi-select (only first value used).
 
-***
-
-### **Static Columns**
+## **Static Columns**
 
 The columns **TITLE**, **F NAME**, **L NAME**, and **DATE OF BIRTH** **must always** be included in the import file and must match the exact names specified. The optional columns **CCL. INS.** and **INSURANCE** may be included if applicable but are not required.
 
@@ -214,7 +384,7 @@ The columns **TITLE**, **F NAME**, **L NAME**, and **DATE OF BIRTH** **must alwa
 | **CCL. INS.**     | The cancellation insurance for the passenger. This should be a value from a dropdown. |
 | **INSURANCE**     | The travel insurance code for the passenger. This should be a value from a dropdown.  |
 
-### **Dynamic Columns (Extras)**
+## **Dynamic Columns (Extras)**
 
 Dynamic columns allow additional optional information about passenger extras. Each dynamic column corresponds to an **Extras Category Name** (case-insensitive) and requires the corresponding **Extras Code** value.
 
@@ -230,7 +400,7 @@ Dynamic columns allow additional optional information about passenger extras. Ea
 | **EXTRAS\_CATEGORY2** | **EXTRAS\_CODE1, EXTRAS\_CODE2** |
 | **EXTRAS\_CATEGORY3** |                                  |
 
-### **Import Behavior**
+## **Import Behavior**
 
 1. **If the import fails:**
    * All changes to the passengers will be **reverted**.
@@ -254,7 +424,7 @@ An example file for importing passengers can include columns in the following fo
 | MR    | TBA1   | TBA1   | 19-11-1988    | 399       |           | MESS\_EX              | BAG-20, BAG-30, BAG-40 |
 | MS    | TBA2   | TBA2   | 03-01-1926    |           | AUS       |                       | BAG-20                 |
 
-### **Package products**
+## **Package products**
 
 When selecting a product that is flagged as a package for a passenger, all the products that are inside the package will be selected after saving the passenger, but with a price of 0, only the package will have the price set.
 
