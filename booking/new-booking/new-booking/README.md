@@ -118,10 +118,9 @@ The **Total Amount** always reflects the user’s latest selections. The price i
 
 The system continuously recalculates the Total Amount as the user interacts with the booking. The displayed price always reflects the current state of the booking and does not wait for **Save Passenger** or **Save** to trigger updates.
 
-<figure><img src="../../../.gitbook/assets/image (501).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (507).png" alt=""><figcaption></figcaption></figure>
 
-This section provides an overview of the booking’s financial and status details.\
-At the top, the **Total amount** field highlights the total price (6.110), applied discount (2.000), and resulting total (4.110).
+This section provides an overview of the booking’s financial and status details. At the top, the **Total amount** field highlights the total price (7.206), applied discount (300), and resulting total (6.906), along with the **Total Profit** value (-2.094).
 
 #### **Field Explanations**
 
@@ -130,6 +129,11 @@ At the top, the **Total amount** field highlights the total price (6.110), appli
 * **Total amount** – The final selling price of the booking (after discounts).
 * **Price - Price without discounts, including extras, supplements etc.**
 * **Discount** – The sum of discounts on the hotel, price list adjustment and the discounts added to each passenger.
+* **Total Profit** – The margin earned after subtracting supplier costs from the selling price.
+
+{% hint style="success" %}
+The total profit is displayed when expanding the green area that shows the total amount, and it will be shown after the full booking is saved.
+{% endhint %}
 
 #### **Booking Details**
 
