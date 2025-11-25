@@ -32,7 +32,7 @@ Before viewing or editing departures for real transports, ensure that:
 
 ### Page Layout
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (510).png" alt=""><figcaption></figcaption></figure>
 
 #### Filters and Tools
 
@@ -88,26 +88,28 @@ The Change Value Tool supports all columns marked as **Change value supported** 
 
 Below are the most common columns shown on the Real Transport Departures page.
 
-| Column                 | Description                                                                        |
-| ---------------------- | ---------------------------------------------------------------------------------- |
-| **Departure**          | The planned departure date                                                         |
-| **Flight Change Type** | Option for selecting a predefined flight change scenario                           |
-| **Day**                | Weekday of the departure                                                           |
-| **Departure Time**     | Planned time of departure                                                          |
-| **Arrival Time**       | Planned time of arrival                                                            |
-| **Airline**            | Airline operating the flight                                                       |
-| **Flight No**          | Flight number (editable)                                                           |
-| **Transport Supplier** | Supplier configuration                                                             |
-| **Seats**              | The total number of seats. Allotment seats are SEATS minus (GUAR SEATS + PR SEATS) |
-| **Allotment**          | Number of Allotments seats                                                         |
-| **Guaranteed**         | Guaranteed seats                                                                   |
-| **Pro Rate**           | Number of Pro Rate seats                                                           |
-| **Allotment Seat**     | Cost for one allotment seat                                                        |
-| **Guarantee Seat**     | Cost for one Guaranteed seat                                                       |
-| **PR Seat**            | Cost for one Pro Rtae seat                                                         |
-| **Tax**                | Tax amount per passenger                                                           |
-| **Load Factor (%)**    | Expected load factor, used for cost calculation                                    |
-| **Booked**             | Number of booked passengers                                                        |
+| Column                 | Description                                                                                                 |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------- |
+| **Departure**          | The planned departure date                                                                                  |
+| **Flight Change Type** | Option for selecting a predefined flight change scenario                                                    |
+| **Day**                | Weekday of the departure                                                                                    |
+| **Departure Time**     | Planned time of departure                                                                                   |
+| **Arrival Time**       | Planned time of arrival                                                                                     |
+| **Airline**            | Airline operating the flight                                                                                |
+| **Flight No**          | Flight number (editable)                                                                                    |
+| **Transport Supplier** | Supplier configuration                                                                                      |
+| **Seats**              | The total number of seats. Allotment seats are SEATS minus (GUARANTEED + PRO RATE)                          |
+| **Allotment**          | Number of Allotments seats                                                                                  |
+| **Guaranteed**         | Guaranteed seats                                                                                            |
+| **Pro Rate**           | Number of Pro Rate seats                                                                                    |
+| **Allotment Cost**     | Cost for one allotment seat                                                                                 |
+| **Guaranteed Cost**    | Cost for one Guaranteed seat                                                                                |
+| **Pro Rate Cost**      | Cost for one Pro Rate                                                                                       |
+| **Tax**                | Tax amount per passenger                                                                                    |
+| **Load Factor (%)**    | Expected load factor, used for cost calculation                                                             |
+| **Booked**             | Number of booked passengers                                                                                 |
+| PNR                    | PNR code support                                                                                            |
+| Booked Attached        | Number of booked seats in the parent transport. If checked, the departure is linked to the parent transport |
 
 Each field is inline editable unless specified as calculated (e.g SEATS).
 
