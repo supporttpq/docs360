@@ -106,7 +106,9 @@ The search helps to find prices based on brands, Transport, Hotel, Room and the 
 8. Under **Price Display Options**, check **Only Set Prices** to display confirmed rates only.
 9. Click **Display** to run the search.
 
-✅ The system displays all available TourpaqDK **→ FLY-RO transport → Hotel Marina → Double Room with Balcony → 7-night stays between 01–15 July 2025**, showing only confirmed prices.
+{% hint style="success" %}
+The system displays all available TourpaqDK **→ FLY-RO transport → Hotel Marina → Double Room with Balcony → 7-night stays between 01–15 July 2025**, showing only confirmed prices.
+{% endhint %}
 
 #### Transport and Hotel Selection Behavior
 
