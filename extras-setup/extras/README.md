@@ -4,7 +4,7 @@ Applies to Administrator
 
 Extras are optional services/products that a customer can book; like transfer, catering, pension, rental car, etc. This page allows users to create and configure various extras that can be associated with bookings or transport options.
 
-Brands
+#### Brands
 
 <figure><img src="../../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -15,7 +15,7 @@ Allow the user to assign an extra to an agency. An extra can be assigned as foll
 * internet sale - the extra can be booked only on WB
 * for sale + internet sale - can be booked both, office and WB
 * guide sale - can be booked only by a guide agent
-* hotel sale - can be sel only by a hotel agent
+* hotel sale - can be set only by a hotel agent
 * guide sale + internet sale + for sale - can be booked by a admin, guide or a WB
 
 <figure><img src="../../.gitbook/assets/image (28) (1).png" alt=""><figcaption></figcaption></figure>
@@ -83,7 +83,7 @@ These settings control how the extra behaves in the booking process and what log
 | Setting                                 | Description                                                                                                                 |
 | --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | **Autoselect in booking & offer**       | Automatically selects this extra during booking and in special offers. Useful for mandatory or strongly recommended extras. |
-| **Unremovable On WebBooking**           | Prevents customers from removing the extra themselves during online booking. Ideal for required services.                   |
+| **Unremovable On Web Booking**          | Prevents customers from removing the extra themselves during online booking. Ideal for required services.                   |
 | **Unremovable On Customer Center**      | Prevents removal by users in the customer self-service portal.                                                              |
 | **Auto Select in 'Select offer' popup** | If an offer selection popup appears, this extra is automatically pre-selected.                                              |
 | **Add price to deposit**                | Includes the price of this extra in the booking deposit calculation.                                                        |
