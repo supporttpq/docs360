@@ -55,7 +55,7 @@ These control the **scope of the data** shown in the dashboard widgets.
 
 ### Dashboard Widgets & Field Explanations
 
-#### 🔹 Offers Section
+#### Offers Section
 
 Tracks the effectiveness of quotes/offers sent to customers.
 
@@ -69,7 +69,7 @@ Tracks the effectiveness of quotes/offers sent to customers.
 
 ***
 
-#### 🔹 Service Cases Section
+#### Service Cases Section
 
 Tracks the health of customer support operations.
 
@@ -82,7 +82,7 @@ Tracks the health of customer support operations.
 
 ***
 
-#### 🔹 Questionnaires Section
+#### Questionnaires Section
 
 Provides feedback quantity collected from clients.
 
@@ -92,7 +92,7 @@ Provides feedback quantity collected from clients.
 
 ***
 
-#### 🔹 Customers Section
+#### Customers Section
 
 Monitors customer engagement.
 
@@ -104,7 +104,7 @@ Monitors customer engagement.
 
 ***
 
-#### 🔹 Notifications Section
+#### Notifications Section
 
 * A system-level alert for notable events or changes (not further detailed in this section).
 
@@ -120,7 +120,7 @@ Monitors customer engagement.
 | **Pax**      | Total number of passengers (can exceed bookings if bookings contain multiple passengers). |
 | **Change %** | Change compared to the previous equivalent time period (e.g., last week or month).        |
 
-#### 📊 Bar Chart (Performance Trends)
+#### Bar Chart (Performance Trends)
 
 * **X-Axis**: Weekly time periods (e.g., 17/3–23/3/2025)
 * **Y-Axis**: Quantity
@@ -172,4 +172,6 @@ Tracks guest distribution by destination.
 | **DB Total**       | Gross profit (Revenue – Direct Costs).                                    |
 | **Turnover Total** | Total gross revenue before costs are subtracted.                          |
 
-> ⚠️ **Note on Negative Values**: Financial values may sometimes be negative due to refunds, high cancellations, or cost spikes. Always cross-check with the finance module for full context.
+{% hint style="danger" %}
+&#x20;**Note on Negative Values**: Financial values may sometimes be negative due to refunds, high cancellations, or cost spikes. Always cross-check with the finance module for full context.
+{% endhint %}
