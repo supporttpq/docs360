@@ -69,7 +69,7 @@ The purpose of this rule is to:
 
 ***
 
-✅ **Best Practices for New Employees**
+&#x20;**Best Practices for New Employees**
 
 * Always set realistic **Lowest price** values to avoid unprofitable sales.
 * Use **Hours number** carefully—too small values may cause frequent price changes.
@@ -77,7 +77,7 @@ The purpose of this rule is to:
 * Double-check both **Amount** and **Amount (down)** to ensure they follow company pricing policies.
 
 {% hint style="info" %}
-Note!  When a pricelist regulation rule is set , a pricelist history is automatically updated and it it is possible to be viewed that a service has run every time the price is adjusted according the pricelist regulation rule set.
+Note!  When a pricelist regulation rule is set, a pricelist history is automatically updated, and it is possible to be viewed that a service has run every time the price is adjusted according the pricelist regulation rule set.
 
 The feature to set price list goup/godown limits to be available needs to be configured in [System Setup](setup/system-setup/)
 

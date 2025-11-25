@@ -91,7 +91,7 @@ Fields:
 * PP1 - PP4 {basic profit forecast of price per interval for 1 pax, PP1 = P1 - (transport + room costs) autofill field}
 * POWO (price for one way out transports, filled by user)
 * POWH (price for one way home transports, filled by user)
-* D1-D4 (discount price for 1 week, overwrites P1 in webbooking, filled by user)
+* D1-D4 (discount price for 1 week, overwrites P1 in web booking, filled by user)
 * PD1-PD4 {basic profit forecast of discount price per interval for 1 pax, PD1 `=` D1 - (transport + room costs), autofill field}
 * DPOWO (discount price for one way out transports, autofill field)
 * DPOWH (discount price for one way home transports, autofill field)
@@ -140,7 +140,7 @@ Filter categories:
 
 * Price - display prices per intervals, as well as PLTA ID (price list transport allotment ID)
 * Profit Price - display profit forecasts for prices per intervals
-* Disc price - diplay discount prices per intervals
+* Disc price - display discount prices per intervals
 * Profit disc. price - display profit forecasts for discount prices per intervals
 * Gr. prices - display group prices per intervals
 * Profit gr. prices - display profit forecasts for group prices per intervals

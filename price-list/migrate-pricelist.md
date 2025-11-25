@@ -41,6 +41,6 @@ To migrate pricelists, choose Migrate price list from the Price List menu.&#x20;
 * All migrations are **logged** to track past actions.
 * To search through migrations, click **Search Migrations** and filter by:
   * Brand
-  * User who performed the migration
+  * The user who performed the migration
   * Date of migration
 * **Show Hidden:** Displays migrations older than the number of days specified in **System Setup → Hide Filters**.
