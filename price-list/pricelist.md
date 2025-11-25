@@ -50,11 +50,11 @@ When a user is creating a price list, and will not use PM rule, the price list w
 
 The behaviour from the "Create new price list" action has multiple possible warning outputs:
 
-* If no prices are created a warning message appears saying "Price list is generated, but no prices are created. Press display to see the generated price list."
+* If no prices are created a warning message appears saying "The price lists were NOT created. Please check transport and hotel allotments and recreate the price lists"
 
 <figure><img src="../.gitbook/assets/image (502).png" alt=""><figcaption></figcaption></figure>
 
-* If some prices are generated (but not for all the possible selected combinations) a warning message appears saying "Price list is generated, but only some prices are created. Press display to see the generated price list."
+* If some prices are generated (but not for all the possible selected combinations) a warning message appears saying "The price lists were not created for ALL allotments. Press display to see the generated price list or check transport and hotel allotments and recreate the price list"
 
 <figure><img src="../.gitbook/assets/image (503).png" alt=""><figcaption></figcaption></figure>
 
