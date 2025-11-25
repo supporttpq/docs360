@@ -4,18 +4,18 @@
 
 <figure><img src="../../.gitbook/assets/image (412).png" alt=""><figcaption></figcaption></figure>
 
-#### Overview
+### Overview
 
 This feature is usually used for **products available at the destination** (e.g., excursions, events, or additional services). Extra allotments allow you to manage availability for these products independently from the main hotel or transport allotments.
 
-#### Functionality
+### Functionality
 
 * The user can generate allotments using a **simple generator**, making it easy to define when the product is available.
 * In the **booking module**, the system will display the product as **available** if:
   * The booking’s arrival and departure dates fall within the extra allotment period.
   * There is still allotment left (i.e., availability has not been fully consumed).
 
-#### How to Create Extra Allotments
+### How to Create Extra Allotments
 
 1. **Navigate to the Allotments Tab**
    * Go to: _Extras Setup → Extras_&#x20;
@@ -44,7 +44,7 @@ This feature is usually used for **products available at the destination** (e.g.
           * End date - date when the allotment will end
           * Allotment - how many allotments will be generated weekly
 
-    After all the fields are set - click to Genarate.
+    After all the fields are set - click to Generate.
 3. Allotments table view
 
 *   **Change values selector -** checkbox - enable bulk editing. Allow to make changes to the following columns:
@@ -95,13 +95,13 @@ This feature is usually used for **products available at the destination** (e.g.
 
 ## **Linked to transport Allotments**
 
-#### Overview
+### Overview
 
 **Linked to Transport Allotments** are used for **products available only on transport** (e.g., luggage, catering, onboard services). Unlike standard Extra Allotments, these are directly tied to a transport departure and can only be booked by passengers traveling on that specific transport.
 
 This ensures that products with limited supply or availability for certain departure dates are managed correctly.
 
-#### How It Works
+### How It Works
 
 * Allotments are linked to transport departure dates.
 * The system checks for availability based on the **departure interval** set for the transport.
@@ -109,7 +109,7 @@ This ensures that products with limited supply or availability for certain depar
   * The passenger is traveling on the linked transport.
   * Allotment is still available for the selected interval.
 
-#### Setup Instructions
+### Setup Instructions
 
 1. **Create a New Extra**
    * Go to: _Extras → Create New Extra_.
@@ -145,7 +145,7 @@ This ensures that products with limited supply or availability for certain depar
 
 Note! The extra allotments are set up as the transport allotments. The allotment must be edited by a user, or overbookings may happen.
 
-#### Interface and Fields
+### Interface and Fields
 
 When defining **Linked to Transport Allotments**, the system displays a table with all transport departures for the selected period.
 
