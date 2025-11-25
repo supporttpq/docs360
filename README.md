@@ -7,7 +7,7 @@ coverY: 0
 
 # Welcome to the Tourpaq Manual
 
-## 🧭 Overview
+## Overview
 
 Welcome to the official **Tourpaq Documentation**, your go-to resource for understanding, using, and mastering the Tourpaq travel management system. Whether you're a tour operator, travel agent, or system administrator, this manual will guide you through everything from basic setup to advanced features.
 
@@ -15,7 +15,7 @@ Tourpaq is designed to simplify and enhance your travel business operations. Wit
 
 ***
 
-## 📘 What You'll Find in This Documentation
+## What You'll Find in This Documentation
 
 * **Getting Started** – Learn how to access and set up your Tourpaq account.
 * **Core Modules** – Deep dive into key modules such as Booking, CRM, Product Management, and more.
@@ -26,7 +26,7 @@ Tourpaq is designed to simplify and enhance your travel business operations. Wit
 
 ***
 
-## 🎯 Who Should Use This Manual?
+## Who Should Use This Manual?
 
 This documentation is tailored for:
 
@@ -37,7 +37,7 @@ This documentation is tailored for:
 
 ***
 
-## 🚀 Let’s Get Started
+## Let’s Get Started
 
 Use the menu on the left to navigate through the sections. You can also search for specific topics using the search bar above.
 
