@@ -45,7 +45,7 @@ The **Hotel Providers** section manages integrations with external hotel bed ban
 
 ***
 
-## **SkiStar Integration**
+## **SkiStar Resort**
 
 ### &#x20;**Overview**
 
