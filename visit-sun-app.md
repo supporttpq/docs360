@@ -52,7 +52,7 @@ In **Weekly activities** section, user will be able to see weekly activities def
 
 Under **"Excursions"** (Udflugter) section, excursions which are defined in **Office->Extras** when logged-in as a guide will be available for booking. This can be done when accessing **Excursions(Udflugfter)** tab. For detailed information about how this type of an excursion/extras is created, please check [Destination - Mobile guide App](destination-mobile-guide-app.md)
 
-Remark: Excursions are displayed also according to stop sales hours setup on the extra. Details here: [Extras](broken-reference)
+Remark: Excursions are displayed also according to stop sales hours setup on the extra. Details here: [Extras](/broken/pages/TIP6vzJvgos2p86CBSrN)
 
 **Vouchers** section displays the hotel voucher or excursions which are already confirmed for that specific booking. Hotel vouchers displayed in this section are hotels with Issue Voucher option checked.
 

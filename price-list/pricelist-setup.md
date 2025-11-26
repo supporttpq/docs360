@@ -2,7 +2,7 @@
 
 This feature is available for the administrator user type.
 
-> More information on the effects can be found in [Broken link](broken-reference "mention") page
+> More information on the effects can be found in [Broken link](/broken/pages/jc50ozXeeKjwLpod8Fqn "mention") page
 
 ### Create/Copy price list <a href="#createcopy-price-list" id="createcopy-price-list"></a>
 
