@@ -36,6 +36,11 @@ Other fields that are necessary for the hotel to work properly:
 * For one way - a hotel used only for one-way transport
 * Extra Bed Discount Name - Name of the Extra Bed Discount on the ticket and in webbooking
 * Managed by Availpro - the hotel is using rooms and costs from Availpro
+*   Managed by SkiStar (available if SkiStar Sync is enabled for Company) - allow to **automatic daily synchronization** of allotment and cost prices for SkiStar accommodations.&#x20;
+
+    * SkiStar Resort ID - the resort id set in the SkiStar
+
+    <figure><img src="../../.gitbook/assets/image (526).png" alt=""><figcaption></figcaption></figure>
 * Hide as filter on lists - hides the hotel from filters on all lists in the system
 * Is VisitSun
 * Custom Hotel Days Booking - enables rooms to be set for Hotel Price Per Day option (A la carte) in **Room Types**
