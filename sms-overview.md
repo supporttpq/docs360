@@ -17,7 +17,7 @@ This page is designed to:
 * ensure customers receive crucial travel information (e.g., departure reminders, delays, check-in info)
 * support compliance and auditing needs
 
-<figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## **Filters**
 

@@ -40,7 +40,7 @@ When the booking is completed for **2 adults and 3 children**, each with an extr
   * The **second and third children** use **CH2P1**
 *   The final **Total Amount** displayed in the booking matches the calculated total from the Price List.&#x20;
 
-    <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 * Any configured **discounts (CH1D1, CH2D1)** or **profit margins (CMP1)** are automatically included in the underlying price computation.
 
 This confirms that:

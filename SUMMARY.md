@@ -115,6 +115,7 @@
 * [Export](export/README.md)
   * [Export - Scheduled Reports](export/export.md)
 * [Invoice](invoice.md)
+* [Guide Sales Ledger](guide-sales-ledger.md)
 * [Booking Date Manager](booking-date-manager.md)
 * [Gift Card Payments](gift-card-payments.md)
 * [Daily Export file](daily-export-file.md)

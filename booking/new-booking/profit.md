@@ -85,7 +85,7 @@ This section helps administrators and accountants verify accurate hotel pricing 
 
 The **Cost Cache** tab provides a summarized breakdown of all cost components associated with each passenger in a booking. It helps users validate and compare cached versus current cost data to ensure price accuracy.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Key Columns:**
 
