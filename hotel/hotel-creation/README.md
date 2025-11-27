@@ -48,13 +48,45 @@ Other fields that are necessary for the hotel to work properly:
 
 ### **Customized Stars**
 
+#### Overview
+
 This field allows you to set a custom star rating for the hotel. If specified, the custom rating will be displayed on the ticket instead of the standard star rating.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+When a brand defines its own values, these must override the default values. When no brand-specific value is provided, the system automatically falls back to the defaults configured in the Default tab.
+
+This ensures consistent and accurate representation of hotel rating information across all brands using the Elastic API.
+
+<figure><img src="../../.gitbook/assets/image (527).png" alt=""><figcaption></figcaption></figure>
 
 The header text for the "Stars" column can also be customized, but only when the Customized Stars field is filled. This setting is located in Users → Brands → Ticket under the name "Customized Star".
 
 <figure><img src="../../.gitbook/assets/image (406).png" alt=""><figcaption></figcaption></figure>
+
+#### **Specification**
+
+#### **1. Stars**
+
+* If a **brand-specific Stars** value is defined, this value will be synced to Elastic.
+* If the brand-specific Stars value is **empty or null**, the system will fall back to the **Stars value from the Default tab**.
+
+#### **2. Customized Stars**
+
+* If a **brand-specific Customized Stars** value is defined, this value will be synced to Elastic.
+
+<figure><img src="../../.gitbook/assets/image (528).png" alt=""><figcaption></figcaption></figure>
+
+* If the brand-specific Customized Stars value is **empty or null**, the system will use the **Customized Stars value from the Default tab**.
+
+<figure><img src="../../.gitbook/assets/image (529).png" alt=""><figcaption></figcaption></figure>
+
+#### **Summary**
+
+| Field                | Brand-Specific  Value Present | Brand-Specific Value Missing/Empty | Value Synced to Elastic |
+| -------------------- | ----------------------------- | ---------------------------------- | ----------------------- |
+| **Stars**            | Use brand-specific value      | Use Default Stars                  | Selected value          |
+| **Customized Stars** | Use brand-specific value      | Use Default Customized Stars       | Selected value          |
+
+### Automatiic Billing
 
 For the autobilling feature, please check [Autobilling](../../autobilling/)
 
