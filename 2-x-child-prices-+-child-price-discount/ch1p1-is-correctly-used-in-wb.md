@@ -61,7 +61,7 @@ After confirming and submitting the booking, decline any optional offers to comp
 Copy the booking number from the **Kvittering** page and open it in the **Tourpaq application**.\
 The **Booking Details** page should reflect the same pricing as seen in the web booking.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This confirms that:
 

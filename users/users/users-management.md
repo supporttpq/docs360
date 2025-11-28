@@ -13,7 +13,7 @@ The **Users dashboard** provides a centralized view of all users within the agen
 * Actions like creating new users, blocking/unblocking, or assigning permissions are managed from the same page.
 * User access can be restricted temporarily (blocked) or permanently (deleted), depending on business and security needs.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 ### **User Table Fields**
 
