@@ -33,7 +33,9 @@ By understanding each field, a user can analyze financial data, detect errors, c
 
 Before working with the Guide Sales Ledger, the following conditions must be met:
 
-1. You must have an **active Tourpaq user account** with access to  Guide Sales Ledger.
+1.  You must have an **active Tourpaq user account** (admin or guide) with access to  Guide Sales Ledger.      - For an Admin user to have access to the Guide Sales Ledger menu, after this feature has been activated, a SuperAdmin must grant certain permissions in the User section, to the user who wants to have access to the feature.&#x20;
+
+    <figure><img src=".gitbook/assets/image (530).png" alt=""><figcaption></figcaption></figure>
 2. Guide transactions (debit/credit entries) must already be added by the guides in the destination.
 3. Bookings, extras, and supplier mappings must be configured correctly in the system.
 4. You must know the **payment period** and **allotment period** you are reviewing.
@@ -95,25 +97,23 @@ Expanded rows show the Connected Extras and information about it.
 
 #### **Totals & Balances**
 
-At the bottom of the page, totals are grouped by currency:
+The **Sales Ledger** provides a consolidated financial overview of all debits, credits, and resulting balances grouped by currency. It helps users understand how much money has been charged (debit), refunded/credited (credit), and what the outstanding balance is for each currency and in total.
 
-#### **Totals shown include:**
+At the bottom of the page, totals are grouped by currency, and divided into three main categories repeated for each currency:
 
-* **Total Debit -** Total amount received from guests across all currencies.
-* **Total Credit -** Total refunded or deducted amounts.
-* **Total Balance -** Net result (Debit − Credit).
+* **Debit -** Sum of all debit transactions across all currencies converted into the base currency. Debits usually represent **charges**, **invoices**, or **amounts the customer must pay**.
+* **Credit -** Sum of all credits across all currencies, converted into the base currency. Credits usually represent **refunds**, **discounts**, or **payments received**.
+* **Balance - Total Debit – Total Credit**, shown in the base currency. Represents the **overall outstanding balance**.
 
-#### **Currency breakdowns:**
+Each currency operates independently in its own ledger line.
 
-* THB Debit / Credit / Balance
-* DKK Debit / Credit / Balance
-* EUR Debit / Credit / Balance
+#### Currency-Specific Fields
 
-Balances help determine:
+It shows the financial overview of all debits, credits and balances grouped by currency, each currency having the same field structure.
 
-* What the guide must hand in
-* What the company owes (in case of refunds)
-* Whether all payments are properly deposited and commissioned
+Example:
+
+<table><thead><tr><th width="175.75">Currency</th><th width="182.5">Debit</th><th width="219">Credit</th><th>Ballance</th></tr></thead><tbody><tr><td>THB (Thai Baht)</td><td>All debit transactions recorded in THB.</td><td>All credits/refunds/payments recorded in THB</td><td>THB Debit – THB Credit (in THB).</td></tr><tr><td>DKK (Danish Krone)</td><td>Charges recorded in DKK</td><td>Payments/credits recorded in DKK</td><td>Calculated balance in DKK</td></tr><tr><td>EUR (Euro)</td><td>Charges recorded in Euro</td><td>Payments/credits in Euro.</td><td>Balance remaining in Euro</td></tr></tbody></table>
 
 ### **2. Exporting Data**
 
@@ -161,7 +161,7 @@ Check:
 
 ### **Step 4 — Expand Extras**
 
-IShot the Extras information by opening detailed rows.
+Show more financial details of the Extra(s) by opening the details row.
 
 ### **Step 5 — Review Totals**
 
