@@ -63,7 +63,7 @@ Tourpaq manages access to its system using **user roles**, which define what eac
 * Access to extras lists, tee time lists, and destination guest lists.
 * Can block product allotments.
 
-#### 🔑 **Guide**
+#### 🔑 **Guide Team**
 
 * On-site resort staff managing tours and services.
 * Access to completed bookings, guest lists, tickets, payments.
@@ -72,8 +72,8 @@ Tourpaq manages access to its system using **user roles**, which define what eac
 
 #### 🔑 **Guide Master**
 
-* Supervises multiple guides.
-* Access to guide activity reports, destination reports, and service cases.
+* Supervises multiple guides teams.
+* Access to guide teams activity reports, destination reports, and service cases.
 * Can book extras on behalf of a destination.
 * Manages GuestApp backoffice (maps, activities, insider tips).
 
@@ -85,8 +85,8 @@ Tourpaq manages access to its system using **user roles**, which define what eac
 * An **Administrator** at a travel agency creates new bookings, manages hotels, and oversees payments for their company.
 * A **Sales agent** uses the system to sell trips, issue tickets, and process customer payments.
 * A **Supplier** logs in to adjust hotel room allotments when cancellations occur.
-* A **Guide** checks which guests are arriving today, prints tickets, and sends welcome push notifications via the Guest App.
-* A **Guide Master** reviews guide performance and updates destination info for travelers.
+* A **Guide Team** checks which guests are arriving today, prints tickets, and sends welcome push notifications via the Guest App.
+* A **Guide Master** reviews guide team performance and updates destination info for travelers.
 
 ***
 
@@ -96,5 +96,5 @@ Tourpaq manages access to its system using **user roles**, which define what eac
 * Remember: only **one Super Administrator** can exist in a system.
 * **User deletion restrictions**: accounts with bookings or payments cannot be deleted.
 * Use **additional rights** carefully, as they extend the power of lower-level roles (e.g., overbooking transports or hotels).
-* Guides and Suppliers should only have access to the agencies or destinations relevant to their work.
+* Guide Teams and Suppliers should only have access to the agencies or destinations relevant to their work.
 * Regularly review and update user roles to match business needs and security compliance.

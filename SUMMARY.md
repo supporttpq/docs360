@@ -349,7 +349,7 @@
   * [Hotel Supplier](suppliers/hotel-supplier.md)
   * [Extra supplier](suppliers/extra-suplier.md)
 * [Hotel Manager](hotel-manager.md)
-* [Guides](guides/README.md)
+* [Guide Team](guides/README.md)
   * [Guide Names](guides/guide-names.md)
   * [Guide Profiles](guides/guide-profiles.md)
 * [Transport Users](transport-users.md)

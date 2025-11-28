@@ -11,7 +11,7 @@ To improve security and comply with best practices, Tourpaq allows administrator
 * Administrators can enable password validity settings per user.
 * A **validity period** (number of days) is defined during configuration.
 * The system tracks the password age and enforces changes when the set time expires.
-* Notifications and redirects help guide the user through the renewal process.
+* Notifications and redirects help guide team the user through the renewal process.
 
 ***
 

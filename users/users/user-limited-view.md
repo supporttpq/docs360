@@ -57,7 +57,7 @@ Super administrators can restrict user access to the following areas:
 
 * A **super administrator** configures restrictions so sales agents cannot access the **Merge Customers** function to avoid unapproved customer data modifications.
 * An **administrator** prevents certain users from viewing personal data in the **Hotel list** to comply with GDPR rules.
-* A **seasonal guide** user is granted booking access but restricted from seeing personal information in **financial exports**.
+* A **seasonal guide team** user is granted booking access but restricted from seeing personal information in **financial exports**.
 
 ***
 
