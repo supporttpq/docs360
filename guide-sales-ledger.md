@@ -33,7 +33,7 @@ By understanding each field, a user can analyze financial data, detect errors, c
 
 Before working with the Guide Sales Ledger, the following conditions must be met:
 
-1.  You must have an **active Tourpaq user account** (admin or guide) with access to  Guide Sales Ledger.      - For an Admin user to have access to the Guide Sales Ledger menu, after this feature has been activated, a SuperAdmin must grant certain permissions in the User section, to the user who wants to have access to the feature.&#x20;
+1.  You must have an **active Tourpaq user account** (admin or guide) with access to  Guide Sales Ledger.      - For an Admin user to have access to the Guide Sales Ledger menu, after this feature has been activated, a System Administrator must grant certain permissions in the User section, to the user who wants to have access to the feature.&#x20;
 
     <figure><img src=".gitbook/assets/image (530).png" alt=""><figcaption></figcaption></figure>
 2. Guide transactions (debit/credit entries) must already be added by the guides in the destination.
