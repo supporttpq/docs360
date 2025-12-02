@@ -353,6 +353,7 @@
 * [Guide Teams](guides/README.md)
   * [Guide Names](guides/guide-names.md)
   * [Guide Profiles](guides/guide-profiles.md)
+  * [Guide Reminders](guides/guide-reminders.md)
   * [Guide Documents](guides/guide-documents.md)
 * [Transport Users](transport-users.md)
 * [Creditor](creditor.md)
