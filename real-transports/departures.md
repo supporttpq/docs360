@@ -32,7 +32,7 @@ Before viewing or editing departures for real transports, ensure that:
 
 ### Page Layout
 
-<figure><img src="../.gitbook/assets/image (510).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 #### Filters and Tools
 
@@ -102,9 +102,9 @@ Below are the most common columns shown on the Real Transport Departures page.
 | **Allotment**          | Number of Allotments seats                                                                                  |
 | **Guaranteed**         | Guaranteed seats                                                                                            |
 | **Pro Rate**           | Number of Pro Rate seats                                                                                    |
-| **Allotment Cost**     | Cost for one allotment seat                                                                                 |
-| **Guaranteed Cost**    | Cost for one Guaranteed seat                                                                                |
-| **Pro Rate Cost**      | Cost for one Pro Rate                                                                                       |
+| **Allotment**          | Cost for one allotment seat                                                                                 |
+| **Guaranteed**         | Cost for one Guaranteed seat                                                                                |
+| **Pro Rate**           | Cost for one Pro Rate                                                                                       |
 | **Tax**                | Tax amount per passenger                                                                                    |
 | **Load Factor (%)**    | Expected load factor, used for cost calculation                                                             |
 | **Booked**             | Number of booked passengers                                                                                 |
@@ -133,7 +133,7 @@ Useful for:
 
     * **Type** – Select the type of departure (Daily / Weekly).
 
-    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     * Frequency - If Daily is selected, insert the Every N days
 
