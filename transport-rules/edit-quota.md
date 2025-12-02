@@ -102,6 +102,16 @@ Same “value + booked / capacity” structure applies.
   * Select multiple rows
   * Select all
 
+#### Displaying Booked Seats per Stay Day in the Quota View
+
+The quota view on the Transport Rule page shows the **booked/total seats** for each stay-day cell. The _booked_ value reflects the number of seats reserved specifically for that stay day.
+
+<figure><img src="../.gitbook/assets/image (540).png" alt=""><figcaption></figcaption></figure>
+
+Each cell in the quota grid is linked to a **fixed quota** within a Sys-real transport, where the system retrieves the accurate booking information.
+
+To ensure accurate monitoring, the quota view is updated to display the booked seats **per stay day**, based on the data from the corresponding fix-quotas.
+
 ***
 
 ## **How It Works**

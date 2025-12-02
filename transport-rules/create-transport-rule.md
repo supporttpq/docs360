@@ -22,9 +22,18 @@ Transport rules are used to:
 * **Code**\* – Unique identifier for the transport rule (mandatory).
 * **Date From**\* – Start date for the validity of the rule (mandatory).
 * **Date To**\* – End date for the validity of the rule (mandatory).
+
+Users are allowed to modify the selected dates after the initial save, as long as the transports have not yet been generated.\
+This ensures flexibility during setup while still preserving data integrity once the generation process begins.
+
 * **Departure**\* – Departure location (mandatory).
 * **Arrival**\* – Arrival location (mandatory).
-* **Stay Days** – Define stay duration (optional, tab). The values ​​displayed in this field are defined in Setup -> [Transport Stay Days](../setup/transport-stay-days.md).
+* **Stay Days** – Define stay duration (optional, tab). The values ​​displayed in this field are defined in Setup -> [Transport Stay Days](../setup/transport-stay-days.md).&#x20;
+
+When a user clicks the **“+”** button to add new stay dates, the system automatically preselects the first available stay day from the drop-down list.
+
+This behavior allows users to repeatedly press **“+”** and quickly add all remaining stay days in sequence, creating a faster and more efficient workflow.
+
 * **Allotment** – Configure allotment rules (optional, tab).
 
 #### Transportation
