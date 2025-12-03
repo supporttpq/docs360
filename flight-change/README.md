@@ -63,7 +63,7 @@ The system provides a detailed **overview of destinations and flight changes**, 
 * Reduces **manual workload** by automating detection, notification, and follow-up processes.
 * Enables **efficient tracking and intervention** when guests fail to confirm flight changes.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Filter Section (Top Panel)
 

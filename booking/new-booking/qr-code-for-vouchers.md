@@ -34,7 +34,7 @@ This functionality aims to:
 
 1.  In the system setup configuration section, **enable Show QR-code in** vouchers.&#x20;
 
-    <figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2. Assign which voucher types or services should include QR-codes (e.g., extras, transfers, tours).
 3. Confirm that your voucher printing or emailing process supports QR-code graphics (ensure PDF generation, mobile friendly, etc).
 
@@ -44,4 +44,4 @@ This functionality aims to:
 2. Once booking is confirmed and fully paid,  the voucher is created and includes the QR-code.
 3.  The customer receives the voucher via email or download. Vouchers have the QR code generated for each person separately
 
-    <figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>

@@ -389,6 +389,7 @@
   * [Teetime](extras-setup/extras/teetime.md)
   * [Multiple product selection in product category](extras-setup/extras/multiple-product-selection-in-product-category.md)
   * [Create an extra with stay days functionality and select it in bookings](extras-setup/extras/create-an-extra-with-stay-days-functionality-and-select-it-in-bookings.md)
+  * [Gala Dinner](extras-setup/extras/gala-dinner.md)
 
 ***
 
