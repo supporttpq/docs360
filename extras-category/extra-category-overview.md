@@ -1,6 +1,8 @@
 # Extra Category Overview
 
-### Overview setup - Default text <a href="#overview-setup---default-text" id="overview-setup---default-text"></a>
+## Overview setup   <a href="#overview-setup---default-text" id="overview-setup---default-text"></a>
+
+### Default text <a href="#overview-setup---default-text" id="overview-setup---default-text"></a>
 
 * **Name**: text field; mandatory; product category name to be displayed in Tourpaq office, WebBooking and ticket.
 * **List name**: text field; mandatory; product category name for export lists.
@@ -15,7 +17,7 @@
 
 <figure><img src="../.gitbook/assets/ExtraCategoryCustomBrand-594461f051027d3ba8bb1f54ee2bc7e8.png" alt=""><figcaption></figcaption></figure>
 
-#### Filtering Options <a href="#filtering-options" id="filtering-options"></a>
+### Filtering Options <a href="#filtering-options" id="filtering-options"></a>
 
 * **Display In Remember Extras**: multiple selection field; displays all brands; no selection behaves as select all.
 * **Use For Extras Statistic**: multiple selection field; displays all brands; no selection behaves as select all.
@@ -24,7 +26,7 @@
 
 <figure><img src="../.gitbook/assets/image (545).png" alt=""><figcaption></figcaption></figure>
 
-#### Settings <a href="#settings" id="settings"></a>
+### Settings <a href="#settings" id="settings"></a>
 
 * **Code**: text field; mandatory; the code used for the category
 * **Sold Out Text**: text field; text used for pop-up in WebBooking and Customer Center
