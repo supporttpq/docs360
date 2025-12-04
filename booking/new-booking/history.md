@@ -34,6 +34,8 @@ It is a key tool for troubleshooting, auditing, and reviewing booking evolution 
 
 **Accessing the History Tab**
 
+<figure><img src="../../.gitbook/assets/image (551).png" alt=""><figcaption></figcaption></figure>
+
 1. Open a booking from the booking overview or search results.
 2. Select the **History** tab at the top of the booking details screen.
 3. Use the search or expand/collapse options to view or filter the desired history entries.

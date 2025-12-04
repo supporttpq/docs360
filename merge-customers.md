@@ -1,88 +1,125 @@
 # Merge customers
 
-### Availability
+The **Merge Customers** tool identifies and merges duplicate customer profiles across the platform. Duplicate entries may occur when bookings are created manually, imported from external sources, or submitted through different channels (web booking, sales agents, call center).
 
-This module is available **only for Administrator-type users**.
-
-***
-
-### Purpose
-
-The **Doublet Customer Management** tool identifies and processes **duplicate customer entries**, based on key matching criteria, and allows administrators to **merge**, **delete**, or **accept** these entries—helping maintain a clean and accurate customer database.
+Merging customers ensures clean CRM data, correct bonus points, and consistent contact details across all bookings.
 
 ***
 
-### Grouping Logic
+## **Overview**
 
-Customers are automatically grouped by one or more of the following matching criteria:
+At the top of the page, duplicates are automatically grouped based on three criteria:
 
-* 📞 **Phone Number**
-* 📧 **Email Address**
-* 🏠 **ZIP Code + Address**
+1. **Grouped customers by email address**
+2. **Grouped customers by telephone number**
+3. **Grouped customers by ZIP and Address**
 
-Within each group:
+Users can switch between categories using the tabs above the list.\
+The number of remaining groups is shown next to each tab (e.g. _34 remaining_).
 
-* You may **act on the entire group**.
-* Or you can create and manage **subgroups** (by selecting specific duplicates).
-
-Once a customer is processed (merged, deleted, or accepted), it will no longer be proposed in future doublet matches—even if newly created duplicates share the same data.
+Each group presents potential duplicates that can be reviewed and merged into a single main customer profile.
 
 ***
 
-### Operations on Doublets
+## **Table Explanation**
 
-There are **three types of actions** available for handling doublet customer groups:
+Each row represents a customer record within a detected duplicate group.
 
-#### 1. Merging
+#### **Columns**
 
-**🔹 Full Group Merge:**
+<figure><img src=".gitbook/assets/image (553).png" alt=""><figcaption></figcaption></figure>
 
-* **Step 1**: Select the **radio button** of the customer to **keep** as the main record.
-* **Step 2**: Click **Merge**.
-* ✅ All bookings from other duplicates are moved to this main customer.
-* ✅ Non-overlapping info (e.g., fax, alternate phone) is transferred to the main record.
-* ❌ Other customers in the group are **deleted** after the merge.
+| Column           | Description                                                                                                                             |
+| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| **Main**         | Radio button indicating which customer will be kept as the “main” profile when merging. Only one main record can be selected per group. |
+| **Subgroup**     | Checkbox to include customers in the merge operation. All selected records will be merged into the chosen Main customer.                |
+| **Cust ID**      | Unique customer ID in Tourpaq.                                                                                                          |
+| **Booking No**   | Shows if the customer is attached to existing bookings (important when deciding what to merge).                                         |
+| **Name**         | Registered customer name.                                                                                                               |
+| **Email**        | Customer email address used for grouping and verification.                                                                              |
+| **Day Phone**    | Primary phone number.                                                                                                                   |
+| **Gained Bonus** | Shows accumulated bonus points associated with the customer profile.                                                                    |
+| **P. Code**      | Postal code.                                                                                                                            |
+| **Place**        | City or locality.                                                                                                                       |
+| **Address**      | Full address.                                                                                                                           |
+| **News**         | Indicates if the customer is subscribed to newsletters (`✓`) or not (`×`).                                                              |
 
-**🔸 Subgroup Merge:**
-
-* **Step 1**: Use **checkboxes** to select duplicate customers.
-* **Step 2**: Inside the selected subgroup, pick one customer with the **radio button**.
-* **Step 3**: Click **Merge**.
-* ✅ Only the subgroup is processed.
-* ✅ The subgroup disappears from the merge proposal.
-* ❌ All selected customers are deleted **except** the one retained.
-
-***
-
-#### 2. Deleting
-
-**🔹 Full Group Delete:**
-
-* Click **Delete** without selecting anything.
-* ❌ Deletes **all customers** in the group.
-
-**🔸 Subgroup Delete:**
-
-* Select a **subset** using checkboxes.
-* Click **Delete**.
-* ❌ Only the selected customers are deleted.
+The tool displays all duplicate rows clearly so the user can verify differences across email, phone, name spelling, address, and bonus points before merging.
 
 ***
 
-#### 3. Accepting
+## **Actions Toolbar**
 
-**🔹 Full Group Accept:**
+Located in the top-right corner of the listing:
 
-* Click **Accept** without checking any boxes.
-* ✅ All customers are accepted **as separate valid entries**.
-* ✅ They won’t appear in future duplicate suggestions.
+#### **Delete All**
 
-**🔸 Subgroup Accept:**
+Deletes _all selected customers_ in the group.\
+Useful when all detected profiles are invalid test entries or data imports.
 
-* Use **checkboxes** to select a subgroup.
-* Click **Accept**.
-* ✅ Only selected customers are accepted.
-* ✅ Others may remain in the duplicate list.
+#### **Accept All**
+
+Marks all selected customers as “accepted” duplicates without merging.\
+They will be hidden from future duplicate detection.
+
+#### **Merge All**
+
+Merges all selected subgroup customers into the main customer selected in each group.
+
+***
+
+## **Merging Workflow**
+
+#### **1. Identify duplicates**
+
+The system pre-groups customers using email, phone, or address similarities.
+
+#### **2. Select a Main customer**
+
+Click the radio button under **Main** on the row you want to keep.
+
+#### **3. Select customers to merge**
+
+Use the checkboxes under **Subgroup** for every profile that should be merged into the Main.
+
+#### **4. Apply an action**
+
+Choose whether to:
+
+* **Merge All** – combine the subgroup records into the main profile
+* **Delete All** – remove invalid duplicate entries
+* **Accept All** – acknowledge the duplicates without merging
+
+***
+
+## **What Happens When Customers Are Merged**
+
+When merging:
+
+* All customer information (email, address, phone, newsletter preferences) is consolidated under the **main** customer.
+* All bookings linked to subgroup customers are automatically reassigned to the **main** customer.
+* Bonus points from subgroups are combined and added to the main profile.
+* Subgroup customer profiles are removed after merging.
+
+This ensures a unified, clean customer database.
+
+***
+
+## **Pagination**
+
+At the bottom of the list, users can navigate between pages of duplicate groups and adjust the number of lines displayed per page (10 / 25 / 50 / 100).
+
+***
+
+## **Summary**
+
+The **Merge Customers** page helps administrators:
+
+* Detect duplicate customer entries
+* Clean CRM data across web bookings and manual entries
+* Maintain consistent customer information
+* Ensure correct bonus point accumulation
+* Improve communication accuracy (email/SMS/newsletter)
 
 ***
 
