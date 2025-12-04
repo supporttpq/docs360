@@ -26,3 +26,26 @@ The "Invoice Hotel Payments" interface provides a detailed summary of hotel book
 * **DESCRIPTION:** Brief description of the transaction (e.g., Hotel Room Payment).
 * **INVOICE STATUS:** Displays the status of the invoice (e.g., Pending).
 * **BOOKING CLX:** Indicates whether the booking was canceled (YES/NO).
+
+#### **Usage Example** <a href="#usage-example" id="usage-example"></a>
+
+**Scenario:** Export Invoice Hotel Payments for bookings created in November  2025, including changes after departure.
+
+1. Define **Booking start** and **Booking end** dates (e.g., 04-11-2025 to 04-12-2025).
+2. Optional can be selected other filters depending what results you want to access.
+3. Click **Export** to generate the report.
+
+<figure><img src=".gitbook/assets/image (554).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (555).png" alt=""><figcaption></figcaption></figure>
+
+The data will contain information regarding each booking that corresponds to the given filters:
+
+* Invoice - Unique invoice number associated with the transaction.
+* Hotel - A code representing the booked hotel.
+* Creditor - Name of the creditor
+* Amount - Payment amount in the given currency
+* Currency - The transaction currency (DKK in this case)
+* Description - Brief description of the transaction (e.g., Hotel Room Payment)
+* Invoice Status - Displays the status of the invoice (e.g., Pending)
+*
