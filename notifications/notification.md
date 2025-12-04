@@ -44,13 +44,17 @@ The **left-side menu** organizes notifications by type. Each category shows a **
 | **Upsale**              | Opportunities or issues related to additional product sales.                      |
 | **Queue Management**    | Errors in background processing queues (e.g., confirmations, communication jobs). |
 
-> 🔔 **TIP**: The count next to each category helps **prioritize** which notifications to address first.
+{% hint style="warning" %}
+🔔 **TIP**:&#x20;
+
+The count next to each category helps **prioritize** which notifications to address first.
+{% endhint %}
 
 ***
 
 #### Central Panel: Notification Table
 
-This is the **main working area**, displaying **detailed alerts**. Columns include:
+This is the **main working area**, displaying **detailed alerts**. Depending on the notification type, the central panel may present different data fields. Some of the most commonly displayed information includes:
 
 | Column Name           | Description                                             |
 | --------------------- | ------------------------------------------------------- |
