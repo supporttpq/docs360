@@ -48,4 +48,3 @@ The data will contain information regarding each booking that corresponds to the
 * Currency - The transaction currency (DKK in this case)
 * Description - Brief description of the transaction (e.g., Hotel Room Payment)
 * Invoice Status - Displays the status of the invoice (e.g., Pending)
-*
