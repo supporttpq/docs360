@@ -21,6 +21,21 @@ Each group presents potential duplicates that can be reviewed and merged into a 
 
 ***
 
+### Grouping Logic <a href="#grouping-logic" id="grouping-logic"></a>
+
+Customers are automatically grouped by one or more of the following matching criteria:
+
+* 📞 **Phone Number**
+* 📧 **Email Address**
+* 🏠 **ZIP Code + Address**
+
+Within each group:
+
+* You may **act on the entire group**.
+* Or you can create and manage **subgroups** (by selecting specific duplicates).
+
+Once a customer is processed (merged, deleted, or accepted), it will no longer be proposed in future doublet matches—even if newly created duplicates share the same data.
+
 ## **Table Explanation**
 
 Each row represents a customer record within a detected duplicate group.
