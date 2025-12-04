@@ -32,25 +32,31 @@ Before using statistics:
 
 ### **Instructions**
 
-**🔹 Step 1: Navigate to All Bookings**
+The **Statistics** section provides an overview of booking performance, passenger distribution, revenue, and profitability. It is accessed through the All Bookings view and can be filtered to generate tailored reports.
 
-* Go to the **Booking** menu.
-* Click on **All Bookings**.
+#### How to Access Statistics
 
-**🔹 Step 2: Set Filters**
+**1. Navigate to All Bookings**
 
-* Choose a **Brand** (mandatory).
-* Optionally, apply filters like **Booking Dates**, **Arrival Dates**, **Transport**, **Hotels**, etc.
+* Open the **Booking** menu.
+* Select **All Bookings**.
+
+**2. Apply Filters**
+
+* Select a **Brand** (required).
+* Optionally refine the results using filters such as **Booking Dates**, **Arrival Dates**, **Transport**, **Hotels**, and others.
 * Click **Display** to apply the filters.
 
-**🔹 Step 3: Open Statistics**
+**3. Open the Statistics View**
 
 * Click the **Statistics** button.
-* You will see a default view showing **passenger distribution** by **week** and **month**.
+* The system will load a default overview showing passenger distribution per week and per month.
 
 ***
 
 #### **Types of Available Statistics**
+
+The Statistics module offers several types of analytical views designed to help evaluate booking patterns, turnover, and profitability.
 
 **1. Passenger Statistics**
 
