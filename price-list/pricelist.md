@@ -193,7 +193,11 @@ These are covered in [Relation pricelist](pricelist.md#relation-pl--related-pl)
 
 The fields are displayed only if the hotel is selected in the search form.
 
-This function is used to update the prices that share the same hotel but have different transports. Let's take, for example, transport T0 and the Transport T1 and each one has a price list with the same hotel, H0, so we have price lists T0\_H0 and T1\_H0. Let's say that the difference between the price in T0 and T1 is 100, so we set this value on the transport T1 in the column Transport Price (**TP**). When the price on the T0\_H0 is changed, we have the option to update the price on the T1\_H0 as well.
+This function is used to update the prices that share the same hotel but have different transports.&#x20;
+
+Example:
+
+Let's take transport T0 and the Transport T1 and each one has a price list with the same hotel, H0, so we have price lists T0\_H0 and T1\_H0.  The difference between the price in T0 and T1 is 100, so we set this value on the transport T1 in the column Transport Price (**TP**). When the price on the T0\_H0 is changed, we have the option to update the price on the T1\_H0 as well.
 
 `T1_H0_Price = T0_H0_Price + T1_H0_Transport_Price`
 
