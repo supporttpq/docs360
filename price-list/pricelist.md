@@ -1,10 +1,10 @@
 # Pricelist
 
-### Overview
+## Overview
 
 Hotel **Price List** is the place where prices are created or managed for particular packages. Usually a package contains a [Transport](../transport/transport/) and a [Room types](../base-room-types.md) Hotel but this is not necessarily the case. The price can be added based on interval, discounts, children, or groups, or it can be set for one way or round trip. Each package has a date assigned; this date is pointing to the departure date of the trip.
 
-### Purpose
+## Purpose
 
 A **Price List** is the foundation of how trips and offers are sold in Tourpaq.
 
@@ -31,7 +31,7 @@ Its purpose is to:
    * Price lists track **changes over time** (history log).
    * Manual recalculations or adjustments can be made when allotments or transport costs change.
 
-### How it Works
+## How it Works
 
 ### Create/copy price list <a href="#createcopy-price-list" id="createcopy-price-list"></a>
 
@@ -66,7 +66,7 @@ The search helps to find prices based on brands, Transport, Hotel, Room and the 
 
 <figure><img src="../.gitbook/assets/image (291).png" alt=""><figcaption></figcaption></figure>
 
-### Top Section (Filters related to Dates and Transport):
+#### Top Section (Filters related to Dates and Transport):
 
 * **Date From/To Fields**: Set the date range for price list queries (format  DD-MM-YYYY)
 * **Resorts Dropdown**: Select specific resorts to include in the price list
@@ -81,14 +81,14 @@ The search helps to find prices based on brands, Transport, Hotel, Room and the 
 * **Clear Button**: Reset all filter selections (shows "1" indicator, possibly indicating active filters)
 * **Stay Length Field**: Used to filter price lists for a specific stay length. It is possible to specify one stay, several stays or a range.
 
-### Price Display Options
+#### Price Display Options
 
 * **Hotel Disc on Top Checkbox**: Show hotel discounts prominently
 * **Only Set Prices Checkbox**: Display only confirmed/set prices
 * **Hide Zero FTA Checkbox**: Exclude zero-value FTA (likely "Free to Agent") rates
 * **Hide Zero PHA Checkbox**: Exclude zero-value PHA rates
 
-### View Management
+#### View Management
 
 * **Save View Button**: Preserve current filter configuration
 * **Update View Button**: Modify existing saved view
@@ -171,7 +171,7 @@ At the beginning of each row, there are tree icons:
 * Clear API Cache - by clicking the icon, you can clear the cache on the API for that particular prices
 * Free Rooms Count|Recalculate Free room count - you can recalculate on demand both transport and hotel allotment for current prices
 
-### Column Filters <a href="#column-filters" id="column-filters"></a>
+#### Column Filters <a href="#column-filters" id="column-filters"></a>
 
 <figure><img src="../.gitbook/assets/image (33) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -181,7 +181,7 @@ At the beginning of each row, there are tree icons:
 * Example: If **ALL PRICES (P1, P2, P3, P4)** is checked and **Interval 1** is selected as the active filter, only the **P1** column will be displayed in the table.
 * Columns **not grouped into intervals** are always shown by default.
 
-### Discounts <a href="#discounts" id="discounts"></a>
+#### Discounts <a href="#discounts" id="discounts"></a>
 
 <figure><img src="../.gitbook/assets/image (34) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
