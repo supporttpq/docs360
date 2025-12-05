@@ -4,9 +4,9 @@ This feature is available for the administrator user type.
 
 > More information on the effects can be found in [Broken link](/broken/pages/jc50ozXeeKjwLpod8Fqn "mention") page
 
-### Create/Copy price list <a href="#createcopy-price-list" id="createcopy-price-list"></a>
+## Create/Copy price list <a href="#createcopy-price-list" id="createcopy-price-list"></a>
 
-#### Create price lists <a href="#create-price-lists" id="create-price-lists"></a>
+### Create price lists <a href="#create-price-lists" id="create-price-lists"></a>
 
 Price lists are created in the **Price List** tab by selecting **Create/Copy Price List**. The creation process involves the following steps:
 
@@ -18,7 +18,7 @@ Price lists are created in the **Price List** tab by selecting **Create/Copy Pri
 
 <figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### Not created prices <a href="#not-created-prices" id="not-created-prices"></a>
+### Not created prices <a href="#not-created-prices" id="not-created-prices"></a>
 
 This feature allows users to identify **price lists that were not created**.
 
@@ -28,11 +28,11 @@ This feature allows users to identify **price lists that were not created**.
 
 <figure><img src="../.gitbook/assets/image (36) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### Copy price list <a href="#copy-price-list" id="copy-price-list"></a>
+## Copy price list <a href="#copy-price-list" id="copy-price-list"></a>
 
 The **Copy Price List** feature allows users to duplicate price lists **within the same brand**.
 
-#### Steps to Copy a Price List
+### Steps to Copy a Price List
 
 1. **Select Source** – Choose the **Transport**, **Hotel**, **Room**, and **Date** from which the price list will be copied.
 2. **Select Destination** – Choose the **Transport**, **Hotel**, **Room**, and **Date** to which the prices will be copied.
@@ -186,7 +186,7 @@ This alternative name will also appear on the ticket.
 
 In the office, the alternative name will replace the hotel name.
 
-### The P.CH (Price Change) option <a href="#the-pch-price-change-column" id="the-pch-price-change-column"></a>
+## The P.CH (Price Change) option <a href="#the-pch-price-change-column" id="the-pch-price-change-column"></a>
 
 The P. Ch. column stands for Price Change. This will adjust the price relative to what is currently in the column.
 
