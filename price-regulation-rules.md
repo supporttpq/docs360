@@ -1,12 +1,10 @@
 # Price regulation rules
 
-### **Overview**
+## **Overview**
 
 The **Price Regulation Rule** defines automatic pricing adjustments for offers in the system. It allows you to configure how prices should change based on time, number of offers, and predefined limits. This ensures competitive pricing while maintaining control over minimum values.
 
-***
-
-### **Purpose**
+## **Purpose**
 
 The purpose of this rule is to:
 
@@ -15,9 +13,7 @@ The purpose of this rule is to:
 * Ensure prices never go below defined minimum thresholds.
 * Reduce manual intervention when managing multiple offers.
 
-***
-
-### **Preconditions**
+## **Preconditions**
 
 * The user must have permissions to create or edit price regulation rules.
 * A valid **Name** and **Code** must be provided.
@@ -25,12 +21,12 @@ The purpose of this rule is to:
 
 <figure><img src=".gitbook/assets/image (52) (1).png" alt=""><figcaption></figcaption></figure>
 
-### **Instructions**
+## **Instructions**
 
 1. Navigate to **Price Regulation Rules** in the system and select **Create/Edit Rule**.
 2. Fill in the fields as follows:
 
-**Fields Explanation**
+### **Fields Explanation**
 
 * **Name \***
   * The descriptive name of the rule (e.g., _Weekend Discount Rule_).
@@ -67,16 +63,14 @@ The purpose of this rule is to:
    * Save the rule.
 4. The rule will now automatically regulate prices based on the defined triggers (time, offers, and limits).
 
-***
-
-&#x20;**Best Practices for New Employees**
+### &#x20;**Best Practices**&#x20;
 
 * Always set realistic **Lowest price** values to avoid unprofitable sales.
 * Use **Hours number** carefully—too small values may cause frequent price changes.
 * Clearly label rules using **Name** so they can be easily identified later.
 * Double-check both **Amount** and **Amount (down)** to ensure they follow company pricing policies.
 
-{% hint style="info" %}
+{% hint style="warning" %}
 Note!  When a pricelist regulation rule is set, a pricelist history is automatically updated, and it is possible to be viewed that a service has run every time the price is adjusted according the pricelist regulation rule set.
 
 The feature to set price list goup/godown limits to be available needs to be configured in [System Setup](setup/system-setup/)

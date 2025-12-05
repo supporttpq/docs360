@@ -1,14 +1,24 @@
 # Migrate Pricelist
 
-### Overview
+## **Overview**
 
-The **Migrate Price List** function allows users to perform a **bulk copy of all price lists from one agency to another**. This operation can only be performed **between agencies within the same company**.
+The _Migrate Pricelist_ function allows administrators to copy all price lists from one brand (agency) to another within the same company. It supports bulk migration, optional price adjustments, and optional updates to brand assignments, making it a powerful tool for onboarding new brands or synchronizing pricing across multiple brands.
 
 To migrate pricelists, choose Migrate price list from the Price List menu.&#x20;
 
 <figure><img src="../.gitbook/assets/image (50) (1).png" alt=""><figcaption></figcaption></figure>
 
-### Steps to Migrate Price Lists
+## **Purpose**
+
+The feature is designed to simplify and accelerate situations where:
+
+* A new brand is added and needs the same price structure as an existing one.
+* Price lists must be aligned across multiple brands.
+* Seasonal or strategic changes require bulk updates rather than manual edits.
+
+By automating the migration and allowing optional adjustments, the tool minimizes manual work and reduces the risk of errors.
+
+## Steps to Migrate Price Lists
 
 1. **Access the Feature**
    * Select **Migrate Price List** from the **Price List** menu.
@@ -36,7 +46,7 @@ To migrate pricelists, choose Migrate price list from the Price List menu.&#x20;
 
 <figure><img src="../.gitbook/assets/image (51) (1).png" alt=""><figcaption></figcaption></figure>
 
-### Migration Log and Search
+## Migration Log and Search
 
 * All migrations are **logged** to track past actions.
 * To search through migrations, click **Search Migrations** and filter by:
