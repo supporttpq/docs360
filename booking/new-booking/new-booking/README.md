@@ -424,14 +424,29 @@ The system will:
 ⚠ **Cancellation rules apply**\
 If cancellation rules or charges are configured for the brand, they will be applied automatically.
 
-⚠ **Non-refundable services**\
-Some services (like certain flight tickets or extras) may still generate cost even when cancelled.
-
 ⚠ **Manual actions may be needed**\
 If external systems (e.g., GDS, API) are used, check if manual cancellation is required outside Tourpaq.
 
-⚠ **Bonus codes / discounts**\
+⚠ **Bonus codes/discounts**\
 Removing a passenger may change eligibility for discounts, supplements, or bonuses. Recalculation happens automatically.
+
+### Cancellation rules
+
+When a booking is canceled, a cancellation fee is set for each passenger. Cancellation rules are applied for calculating this fee. The fee will is calculated taking into account the remaining days left to departure.
+
+<figure><img src="../../../.gitbook/assets/image (556).png" alt=""><figcaption></figcaption></figure>
+
+Cancellation fee on a booking is calculated as follows:
+
+If a cancellation insurance is paid, when cancelling the passengers we can opt that the cancellation insurance will cover or not cover the booking.
+
+If the cancellation insurance is paid and Cover option is selected when cancelling the booking, the amount of the cancellation fee will be the cancellation insurance.
+
+If the cancellation insurance is paid and Does not Cover option is selected when cancelling the booking, the cancellation fee will contain the price of the cancellation insurance and the amount set in cancellation rules.
+
+If the cancellation insurance is not paid only Cover option is available when cancelling the booking, and the amount of the cancellation fee will be the one stated in the cancellation rule.
+
+Infants do not get cancellation fee.
 
 ## **User Experience**
 
