@@ -332,6 +332,107 @@ The total profit is displayed when expanding the green area that shows the total
    * Click **Send Email** to send manually, or
    * Let the system auto-generate and send it.
 
+### 9. Cancel passenger or booking
+
+The **Cancel passenger or booking** button allows users to cancel an entire booking or remove individual passengers from a booking, depending on the situation. It is located at the bottom-right corner of the _Booking → Overview → Passengers_ section.
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+#### **Overview**
+
+This feature gives booking administrators full control over cancellations.\
+Depending on the configuration of the booking and the selected passenger, the system will:
+
+* Cancel **one or more passengers**, or
+* Cancel the **entire booking**, if all passengers are selected or if cancellation rules require a full cancellation.
+
+The function ensures that all transport, hotel, extras, and supplements connected to the passenger(s) are removed or recalculated correctly.
+
+#### **Purpose**
+
+The button is used when:
+
+* A traveler drops out of the trip
+* A booking needs to be partially canceled
+* A booking must be fully canceled, including all passengers and services
+
+#### **How It Works**
+
+#### 1. **Select Passenger(s)**
+
+Before canceling, verify which passengers are listed in the booking:
+
+* If **one passenger** is selected → the system cancels _only that passenger_
+* If **all passengers** are selected or the booking contains only one passenger → the system offers a **full booking cancellation**
+
+#### 2. **Click the Button**
+
+Click on the **Cancel passenger or booking** in the bottom-right corner.&#x20;
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+#### 3. **Choose the Cancellation Type**
+
+A dialog will appear asking:
+
+* **Cancel Passenger**
+* **Cancel Entire Booking**
+
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+The available options depend on the structure of the booking.
+
+#### 4. **Confirm Cancellation**
+
+The user must confirm in the final dialog.\
+After confirmation, Tourpaq:
+
+* Removes all services connected to the canceled passenger
+* Recalculates pricing
+
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+* Updates allotment, transport seats, extras, and commissions
+* Marks the booking or passenger as _Cancelled_
+
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+#### **Expected Behavior**
+
+#### **Cancel Passenger**
+
+The system will:
+
+* Remove all services (transport, hotel, extras, insurance, supplements) tied to the passenger
+* Update price calculations
+* Preserve remaining passengers and services
+* Update allotment and capacity
+* Keep booking active if at least one passenger remains
+
+#### **Cancel Entire Booking**
+
+The system will:
+
+* Remove all passengers and services
+* Release all allotments
+* Update all connected modules (Transport, Hotel, GDS, Extras, etc.)
+* Mark the booking as _Cancelled_
+* Trigger relevant notifications if configured
+
+#### **Warnings & Notes**
+
+⚠ **Cancellation rules apply**\
+If cancellation rules or charges are configured for the brand, they will be applied automatically.
+
+⚠ **Non-refundable services**\
+Some services (like certain flight tickets or extras) may still generate cost even when cancelled.
+
+⚠ **Manual actions may be needed**\
+If external systems (e.g., GDS, API) are used, check if manual cancellation is required outside Tourpaq.
+
+⚠ **Bonus codes / discounts**\
+Removing a passenger may change eligibility for discounts, supplements, or bonuses. Recalculation happens automatically.
+
 ## **User Experience**
 
 Users always see the correct Total Amount without needing to save the passenger or the booking.\

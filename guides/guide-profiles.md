@@ -26,7 +26,7 @@ The purpose of the **Guide Profiles** module is to:
 
 ***
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Instructions**
 
@@ -50,7 +50,7 @@ The purpose of the **Guide Profiles** module is to:
 
     * Click on the guide’s entry.
 
-    <figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     * Fill in or update the required details (Title, Description, Email, Phone, Emergency Phone).
     * Upload a profile photo if available.

@@ -78,7 +78,7 @@ Allows integration with internal billing and accounting systems for accurate cos
 
 These settings control how the extra behaves in the booking process and what logic or restrictions apply to its use.
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 | Setting                                 | Description                                                                                                                                                                                                                                                                                |
 | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
