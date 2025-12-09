@@ -392,7 +392,7 @@ After confirmation, Tourpaq:
 
 <figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-* Updates allotment, transport seats, extras, and commissions
+* Updates allotment, transport seats, extras, and commissions.&#x20;
 * Marks the booking or passenger as _Cancelled_
 
 <figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
@@ -406,7 +406,10 @@ The system will:
 * Remove all services (transport, hotel, extras, insurance, supplements) tied to the passenger
 * Update price calculations
 * Preserve remaining passengers and services
-* Update allotment and capacity
+* Update allotment and capacity. This step it requires manual intervention by the sales user in Edit passenger and then in Take allotment to update it manually.
+  * in the Passenger box, change the number of the passengers that filled in to the booking
+  * click on Take allotment
+  * save booking
 * Keep booking active if at least one passenger remains
 
 #### **Cancel Entire Booking**
