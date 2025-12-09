@@ -8,6 +8,22 @@ A single room supplement is an additional charge imposed when one guest occupies
 
 ### Overview
 
+The Single Room Supplement is an additional cost applied when a room intended for multiple occupants is used by only one passenger. The supplement exists as a standard _SINGLE_ supplement in Tourpaq.
+
+### **Preconditions**
+
+*   a supplement called **SINGLE** had to be created&#x20;
+
+    <figure><img src="../../../.gitbook/assets/image (546).png" alt=""><figcaption></figcaption></figure>
+*   **the SINGLE** supplement is set for sale&#x20;
+
+    <figure><img src="../../../.gitbook/assets/image (547).png" alt=""><figcaption></figcaption></figure>
+*   in the Hotel, in the Single Room Supplement tab, the Single supplement must meet all the settings created in this tab in order to be applied&#x20;
+
+    <figure><img src="../../../.gitbook/assets/image (549).png" alt=""><figcaption></figcaption></figure>
+
+### **Field Explanations**
+
 | **Column**          | **Description**                                                                                                                                                                                          |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Actions**         | Edit or manage the record (pencil icon opens the editing interface).                                                                                                                                     |

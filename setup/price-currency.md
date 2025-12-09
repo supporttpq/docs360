@@ -1,18 +1,18 @@
 # Price currency
 
-### Currency rate <a href="#currency-rate" id="currency-rate"></a>
+## Currency rate <a href="#currency-rate" id="currency-rate"></a>
 
-#### Overview
+### Overview
 
 The system allows administrators to configure and manage currency rates used across the company and its brands. Currency settings impact how totals and statistics are displayed in bookings, ensuring consistent reporting and calculations.
 
-#### Purpose
+### Purpose
 
 This feature provides flexibility in handling multi-currency operations by allowing rates to be created, updated, or removed, while defining default currencies at both **company** and **brand** levels.
 
 <figure><img src="../.gitbook/assets/image (35) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### Managing Currency Rates
+### Managing Currency Rates
 
 * **Create a Currency Rate**
   1. Navigate to **Setup → System Setup → Currency** tab.
@@ -20,7 +20,7 @@ This feature provides flexibility in handling multi-currency operations by allow
 * **Delete a Currency Rate**
   * In the same tab, select the rate and click **Delete**.
 
-#### Setting Default Currencies
+### Setting Default Currencies
 
 * **Company Currency**
   * Go to **System → System Setup → General Information**.
@@ -30,7 +30,7 @@ This feature provides flexibility in handling multi-currency operations by allow
   2. Click **Edit** next to the brand.
   3. Select the desired currency code from the **Currency** dropdown.
 
-Currency in Bookings
+### Currency in Bookings
 
 <figure><img src="../.gitbook/assets/image (36) (1).png" alt=""><figcaption></figcaption></figure>
 

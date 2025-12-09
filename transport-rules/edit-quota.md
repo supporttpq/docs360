@@ -27,7 +27,7 @@ It reduces manual workload and minimizes risk of allotment errors.
 
 ## **Field Explanation**
 
-<figure><img src="../.gitbook/assets/image (490).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **1. Change Values Tool**
 
@@ -37,6 +37,7 @@ Used to apply bulk changes across selected departures.
 | ------------- | --------------------------------------------------------------------------------------------- |
 | **Column**    | Selects which allotment field to update (e.g., OUT: 7D, OUT: Oneway, HOME: 7D, HOME: Oneway). |
 | **Operation** | Defines the action: **+** (add), **–** (subtract), **=** (set value).                         |
+| Weekday       | Select the weekday that will be updated                                                       |
 | **Value**     | The number to apply (e.g., +2 adds two seats).                                                |
 | **Run**       | Executes the operation on all selected rows.                                                  |
 
@@ -76,6 +77,7 @@ Icons:
 | -------------- | ------------------------------------------------------ |
 | **7D/14D/21D** | Allocated seats for the 7/14/21-day rotation outbound. |
 | **Oneway**     | Allocated seats for one-way outbound passengers.       |
+| **O/U**        | Over/Under Allotment                                   |
 
 Values are shown as:\
 **Entered value** + **Booked / Capacity** → e.g., _0 / 100_
@@ -101,6 +103,16 @@ Same “value + booked / capacity” structure applies.
   * Select single row
   * Select multiple rows
   * Select all
+
+#### Displaying Booked Seats per Stay Day in the Quota View
+
+The quota view on the Transport Rule page shows the **booked/total seats** for each stay-day cell. The _booked_ value reflects the number of seats reserved specifically for that stay day.
+
+<figure><img src="../.gitbook/assets/image (540).png" alt=""><figcaption></figcaption></figure>
+
+Each cell in the quota grid is linked to a **fixed quota** within a Sys-real transport, where the system retrieves the accurate booking information.
+
+To ensure accurate monitoring, the quota view is updated to display the booked seats **per stay day**, based on the data from the corresponding fix-quotas.
 
 ***
 

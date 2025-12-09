@@ -1,6 +1,6 @@
 # Prices
 
-#### Overview
+### Overview
 
 In **Tourpaq Office**, each **Extra** (such as insurance, car rental, excursions, or other optional services) can have one or more **price configurations**.\
 Prices are defined using specific **intervals** to ensure flexibility while maintaining data consistency. The system includes validation rules that prevent overlapping intervals.
@@ -15,7 +15,7 @@ Each interval defines the **conditions** under which the price is valid.
 
 <figure><img src="../../.gitbook/assets/image (5) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-#### Purpose
+### Purpose
 
 The **Extras / Prices** setup allows agencies to manage dynamic pricing for additional products or services associated with a booking.\
 By defining rules based on age, booking dates, and travel periods, the system ensures that every passenger pays the correct price according to their travel details.
@@ -26,7 +26,7 @@ This helps:
 * Support promotional or seasonal offers.
 * Differentiate costs and profit margins across age groups, dates, and brands.
 
-#### How to Use
+### How to Use
 
 **Define a Price for an Extra**
 
@@ -50,7 +50,7 @@ This helps:
     | **Contract**                 | References the contract name related to this price.                                                                       |
 5. Click **Save** once all details are completed.
 
-#### Price Calculation
+### Price Calculation
 
 The total price per day is calculated using the following formula:
 
@@ -74,7 +74,7 @@ Tourpaq supports defining different prices per brand.
 
 To enable price-per-brand functionality, please contact **Tourpaq Support**.
 
-**Split prices**
+#### **Split prices**
 
 The **Split** function allows dividing existing price or cost intervals — for example, when updating prices or managing stop sales.\
 Prices can be split by:
@@ -85,7 +85,7 @@ Prices can be split by:
 
 <figure><img src="../../.gitbook/assets/image (3) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-**How to Split a Price:**
+#### **How to Split a Price:**
 
 1. Click on the **Split** button below the price lines.
 2. Choose how many splits you want to create.

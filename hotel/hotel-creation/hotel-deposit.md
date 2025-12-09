@@ -73,4 +73,4 @@ Deposits are paid at a date agreed upon in the contract between companies/agenci
 
 A feature has been added: the **Special Deposit Rule**. It is used to pre-calculate the deposit amount for multiple deposit dates. It requires the allotments and costs of the rooms to be set in the hotel
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

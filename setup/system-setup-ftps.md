@@ -2,7 +2,7 @@
 
 The **FTPs Page** within the **System Setup** section allows administrators to configure and manage FTP (File Transfer Protocol) and FTPS (FTP Secure) connections used for file imports, exports, or automated data exchanges with external systems.
 
-### 🔧 Purpose
+### Purpose
 
 This page is used to:
 
@@ -12,9 +12,9 @@ This page is used to:
 
 ***
 
-### 📘 Page Overview
+### Page Overview
 
-#### 📄 Fields and Configuration Options
+#### Fields and Configuration Options
 
 | Field            | Description                                                                                                                                                                                                                                                          |
 | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -30,13 +30,13 @@ This page is used to:
 
 ***
 
-### ✅ Typical Use Cases
+### Typical Use Cases
 
 * Export PNL reports nightly to a transport operator via FTPS.
 
 ***
 
-### 🛠 How to Add a New FTP Configuration
+### How to Add a New FTP Configuration
 
 1. Navigate to **System Setup → FTPs**.
 2. Click on **“Create”**.

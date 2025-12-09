@@ -35,4 +35,4 @@ If a cell is displayed with a **red background**, it indicates a **Stop Sale** o
 
 <figure><img src="../../.gitbook/assets/image (15) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-\
+<br>

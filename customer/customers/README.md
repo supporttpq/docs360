@@ -21,7 +21,7 @@ This page is designed to:
 
 ### Customer Search
 
-The **“Find Customer”** feature enables precise filtering and retrieval of customer information. Users can search by one or multiple criteria.
+The **“Search Customer”** feature enables precise filtering and retrieval of customer information. Users can search by one or multiple criteria.
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
@@ -49,7 +49,9 @@ Additional options:
 * **More filters:** Expands the filtering section with additional fields.
 * **Clear:** Resets all applied filters.
 
+{% hint style="warning" %}
 💡 **Tip:** Use multiple filters together to narrow down results efficiently.
+{% endhint %}
 
 ### **Customer List (Table View)**
 

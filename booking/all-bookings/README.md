@@ -74,11 +74,37 @@ To use this section effectively, make sure:
 
 ***
 
+### **Toolbar Actions**
+
+<figure><img src="../../.gitbook/assets/image (550).png" alt=""><figcaption></figcaption></figure>
+
+#### **Display**
+
+Runs the search using the selected filter criteria.
+
+#### **More Filters**
+
+Expands additional filtering options.\
+A green badge indicates the number of active additional filters.
+
+#### **Clear**
+
+Resets all filters back to default.
+
+#### **Save View**
+
+Allows users to save the current filter configuration as a reusable view.\
+Ideal for daily workflows or functional teams (e.g., “Today’s Arrivals”).
+
+#### **Today’s Bookings**
+
+Shortcut button automatically filtering booking period as the current day. It will shows all the bookings made in the curent day.
+
 #### **Statistics Section (Bottom)**
 
 | Metric             | Description                                               | Example          |
 | ------------------ | --------------------------------------------------------- | ---------------- |
-| **Bookings**       | Total number of bookings in the filtered view.            | `72`             |
+| Bookings           | Total number of bookings in the filtered view.            | `72`             |
 | **Total Pax**      | Total passengers across all bookings.                     | `208`            |
 | **Pax / Booking**  | Average passengers per booking.                           | `2.9`            |
 | **Total Turnover** | Total revenue generated from the bookings.                | `DKK 539,773`    |

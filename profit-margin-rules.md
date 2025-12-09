@@ -30,7 +30,7 @@ Using the profit margin rule, all agencies can:
 * Automatically generate accurate, up-to-date **price lists**.
 * Reduce manual maintenance through **flexible**, **reusable**, and **automated** rules.
 
-<figure><img src=".gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5) (1) (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Instructions**
 
@@ -160,7 +160,7 @@ The value in the price list will be the sum of profit margins from Transport, Re
 
 <figure><img src=".gitbook/assets/image (3) (1) (1) (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (5) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5) (1) (1) (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Based on the profit margin value, prices are calculated.
 

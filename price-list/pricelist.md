@@ -1,10 +1,10 @@
 # Pricelist
 
-### Overview
+## Overview
 
 Hotel **Price List** is the place where prices are created or managed for particular packages. Usually a package contains a [Transport](../transport/transport/) and a [Room types](../base-room-types.md) Hotel but this is not necessarily the case. The price can be added based on interval, discounts, children, or groups, or it can be set for one way or round trip. Each package has a date assigned; this date is pointing to the departure date of the trip.
 
-### Purpose
+## Purpose
 
 A **Price List** is the foundation of how trips and offers are sold in Tourpaq.
 
@@ -31,20 +31,34 @@ Its purpose is to:
    * Price lists track **changes over time** (history log).
    * Manual recalculations or adjustments can be made when allotments or transport costs change.
 
-### How it Works
+## How it Works
 
 ### Create/copy price list <a href="#createcopy-price-list" id="createcopy-price-list"></a>
 
-Creating a price list is fairly easy. From the **Price List** tab, select "Create/Copy Price List."
+Creating a price list is straightforward. In the **Price List** tab, click **Create/Copy Price List** and follow the steps below:
 
-* Choose the brand for which the price list is created.
-* Select the transport.
-* Select the transport's fix quota.
-* Select the hotel.
-* Select the rooms.
-* Click **Create new price list**
+1. Choose the **brand** for which you want to create the price list.
+2. Select the **transport**.
+3. Select the **transport’s fixed quota**.
+4. Select the **hotel**.
+5. Choose the **rooms**.
+6. Click **Create new price list**.
 
 <figure><img src="../.gitbook/assets/image (29) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+When a user is creating a price list, and will not use PM rule, the price list will be generated but without any prices.
+
+The behaviour from the "Create new price list" action has multiple possible warning outputs:
+
+* If no prices are created a warning message appears saying "The price lists were NOT created. Please check transport and hotel allotments and recreate the price lists"
+
+<figure><img src="../.gitbook/assets/image (505).png" alt=""><figcaption></figcaption></figure>
+
+* If some prices are generated (but not for all the possible selected combinations) a warning message appears saying "The price lists were not created for ALL allotments. Press display to see the generated price list or check transport and hotel allotments and recreate the price list"
+
+<figure><img src="../.gitbook/assets/image (506).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (504).png" alt=""><figcaption></figcaption></figure>
 
 ### Price List Search <a href="#price-list-search" id="price-list-search"></a>
 
@@ -52,7 +66,7 @@ The search helps to find prices based on brands, Transport, Hotel, Room and the 
 
 <figure><img src="../.gitbook/assets/image (291).png" alt=""><figcaption></figcaption></figure>
 
-### Top Section (Filters related to Dates and Transport):
+#### Top Section (Filters related to Dates and Transport):
 
 * **Date From/To Fields**: Set the date range for price list queries (format  DD-MM-YYYY)
 * **Resorts Dropdown**: Select specific resorts to include in the price list
@@ -67,14 +81,14 @@ The search helps to find prices based on brands, Transport, Hotel, Room and the 
 * **Clear Button**: Reset all filter selections (shows "1" indicator, possibly indicating active filters)
 * **Stay Length Field**: Used to filter price lists for a specific stay length. It is possible to specify one stay, several stays or a range.
 
-### Price Display Options
+#### Price Display Options
 
 * **Hotel Disc on Top Checkbox**: Show hotel discounts prominently
 * **Only Set Prices Checkbox**: Display only confirmed/set prices
 * **Hide Zero FTA Checkbox**: Exclude zero-value FTA (likely "Free to Agent") rates
 * **Hide Zero PHA Checkbox**: Exclude zero-value PHA rates
 
-### View Management
+#### View Management
 
 * **Save View Button**: Preserve current filter configuration
 * **Update View Button**: Modify existing saved view
@@ -92,7 +106,9 @@ The search helps to find prices based on brands, Transport, Hotel, Room and the 
 8. Under **Price Display Options**, check **Only Set Prices** to display confirmed rates only.
 9. Click **Display** to run the search.
 
-✅ The system displays all available TourpaqDK **→ FLY-RO transport → Hotel Marina → Double Room with Balcony → 7-night stays between 01–15 July 2025**, showing only confirmed prices.
+{% hint style="success" %}
+The system displays all available TourpaqDK **→ FLY-RO transport → Hotel Marina → Double Room with Balcony → 7-night stays between 01–15 July 2025**, showing only confirmed prices.
+{% endhint %}
 
 #### Transport and Hotel Selection Behavior
 
@@ -155,7 +171,7 @@ At the beginning of each row, there are tree icons:
 * Clear API Cache - by clicking the icon, you can clear the cache on the API for that particular prices
 * Free Rooms Count|Recalculate Free room count - you can recalculate on demand both transport and hotel allotment for current prices
 
-### Column Filters <a href="#column-filters" id="column-filters"></a>
+#### Column Filters <a href="#column-filters" id="column-filters"></a>
 
 <figure><img src="../.gitbook/assets/image (33) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -165,7 +181,7 @@ At the beginning of each row, there are tree icons:
 * Example: If **ALL PRICES (P1, P2, P3, P4)** is checked and **Interval 1** is selected as the active filter, only the **P1** column will be displayed in the table.
 * Columns **not grouped into intervals** are always shown by default.
 
-### Discounts <a href="#discounts" id="discounts"></a>
+#### Discounts <a href="#discounts" id="discounts"></a>
 
 <figure><img src="../.gitbook/assets/image (34) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -177,7 +193,11 @@ These are covered in [Relation pricelist](pricelist.md#relation-pl--related-pl)
 
 The fields are displayed only if the hotel is selected in the search form.
 
-This function is used to update the prices that share the same hotel but have different transports. Let's take, for example, transport T0 and the Transport T1 and each one has a price list with the same hotel, H0, so we have price lists T0\_H0 and T1\_H0. Let's say that the difference between the price in T0 and T1 is 100, so we set this value on the transport T1 in the column Transport Price (**TP**). When the price on the T0\_H0 is changed, we have the option to update the price on the T1\_H0 as well.
+This function is used to update the prices that share the same hotel but have different transports.&#x20;
+
+Example:
+
+Let's take transport T0 and the Transport T1 and each one has a price list with the same hotel, H0, so we have price lists T0\_H0 and T1\_H0.  The difference between the price in T0 and T1 is 100, so we set this value on the transport T1 in the column Transport Price (**TP**). When the price on the T0\_H0 is changed, we have the option to update the price on the T1\_H0 as well.
 
 `T1_H0_Price = T0_H0_Price + T1_H0_Transport_Price`
 

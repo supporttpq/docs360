@@ -11,7 +11,7 @@ This type can be reviewed and manually edited if needed before proceeding.
    When a modification is made to a flight, the **Flight Change Type** field is automatically filled in based on the detected change (e.g., Tiny, Small, Large).\
    The user can manually adjust this field if necessary.
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. **Save the Timetable Changes**\
    Select the row(s) where changes were made. Two options will appear:

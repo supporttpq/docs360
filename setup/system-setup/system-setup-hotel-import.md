@@ -1,12 +1,12 @@
 # System Setup – Hotel Import
 
-#### **Overview**
+### **Overview**
 
 The **Hotel Import** section under the **System Setup** module allows the system administrator to configure default settings for hotel-related imports and pricing adjustments. These settings help standardize pricing calculations for single rooms, board supplements, and gala dinners, and define the default release hour for hotel bookings in the system.
 
 ***
 
-#### **Purpose**
+### **Purpose**
 
 The purpose of this section is to ensure that all hotel imports into the system follow consistent pricing rules and time standards. This helps:
 
@@ -16,7 +16,7 @@ The purpose of this section is to ensure that all hotel imports into the system 
 
 ***
 
-#### **Preconditions**
+### **Preconditions**
 
 Before configuring the **Hotel Import** settings:
 
@@ -26,7 +26,7 @@ Before configuring the **Hotel Import** settings:
 
 ***
 
-#### **Fields and Instructions**
+### **Fields and Instructions**
 
 <figure><img src="../../.gitbook/assets/image (393).png" alt=""><figcaption></figcaption></figure>
 
@@ -53,7 +53,7 @@ Before configuring the **Hotel Import** settings:
 
 ***
 
-#### **Instructions for Use**
+### **Instructions for Use**
 
 1. Navigate to **System Setup → Hotel Import**.
 2. Set the **Hotel Release Hour** according to company standards.

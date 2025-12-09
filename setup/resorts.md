@@ -170,7 +170,7 @@ The **Documents** tab within the **Edit Resort** page allows users to manage and
 1. Click the **Add document** button on the right side of the page.
 2.  Enter the document name and add the document (only in PDF format).&#x20;
 
-    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3. Save your changes.
 
 **Deleting a Document**
@@ -196,7 +196,7 @@ The purpose of the **Passenger Information** page is to:
 
 #### **Instructions**
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Accessing Passenger Information**
 

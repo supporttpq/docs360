@@ -34,8 +34,7 @@ Before using this screen, the following conditions must be met:
 | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | Login as user                                       | Login is performed successfully                                                                                                                                                                               |                                                                                                                             |
 | Click "New Booking" and select a Brand              | New booking page is displayed                                                                                                                                                                                 | <div><figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div> |
-| Click "Search" in the Passengers section            | Warning: _"You must configure the number of passengers in order to access the search!"_                                                                                                                       |                                                                                                                             |
-| Enter value for _Adults_ only, then click "Search"  | Search page is displayed                                                                                                                                                                                      | <div><figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div> |
+| Click "Search" in the Passengers section            | The Search page can be opened without filling in the number of passengers in the booking window.                                                                                                              |                                                                                                                             |
 | Click "Search" without entering travel criteria     | <p>Validation warnings:<br>– <em>Please select a departure...</em><br>– <em>Please select at least one of the following: arrival, resort or hotel!</em><br>– <em>Please fill in the departure dates!</em></p> | <div><figure><img src="../../../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure></div>     |
 | Fill in: Adults, Departures, Arrivals, Date From/To | Mandatory fields are populated                                                                                                                                                                                | <div><figure><img src="../../../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure></div>     |
 | Verify additional fields in Passengers section      | Fields shown: Child ages, Infants, Workflow, Display names checkbox, Travel Length, Resort, Hotel, Budget (max), Stars, Clear, Show availability                                                              |                                                                                                                             |
@@ -56,6 +55,52 @@ Before using this screen, the following conditions must be met:
 | Hover over eye icon in Hotels                       | Tooltip "View details" is displayed                                                                                                                                                                           | <div><figure><img src="../../../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure></div>         |
 | Select a hotel record                               | Buttons: "Create booking" and "Clear selected row" are shown                                                                                                                                                  | <div><figure><img src="../../../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure></div>         |
 | Click "Clear selected row"                          | Buttons disappear                                                                                                                                                                                             |                                                                                                                             |
+
+#### Relevant Prices Shown in Search Results
+
+When a search is performed, all displayed prices represent **relevant and accurate values** for the booking. Each price field has a specific definition:
+
+* **PRICE PA (Price per Adult)**
+
+Shows the **average discounted price per adult**, calculated from the booking’s discount price.
+
+* **PRICE PC (Price per Child)**
+
+Shows the **average discounted price per child**.\
+If the booking does not include children, this value is **0**.
+
+* **NORMAL PRICE**
+
+Displays the **full, undiscounted price** of the booking.\
+This amount still includes any **auto-selected supplements**, and matches the "normal price" shown on the presentation website.
+
+* **DISCOUNT**
+
+Shows the **total value of all discounts** applied to the booking.\
+This includes:
+
+1. The difference between P-price and D-price
+2. All additional discounts applied to the booking
+
+This value aligns with the discount information shown on the presentation website.
+
+* **DISCOUNT PRICE**
+
+Displays the **final discounted price** for the booking.\
+It includes:
+
+1. All discounts
+2. All supplements (including auto-selected ones)
+3. All required Extras
+4. Any relevant optional Extras
+
+This price matches the discounted booking price shown on the presentation website.
+
+{% hint style="danger" %}
+#### Important Note
+
+The key improvement in the Search page is the **updated and accurate DISCOUNT PRICE**, which ensures full consistency with the presentation site.
+{% endhint %}
 
 #### Creating a Booking
 

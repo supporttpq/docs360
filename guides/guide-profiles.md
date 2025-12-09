@@ -26,7 +26,7 @@ The purpose of the **Guide Profiles** module is to:
 
 ***
 
-<figure><img src="../.gitbook/assets/image (330).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Instructions**
 
@@ -36,19 +36,25 @@ The purpose of the **Guide Profiles** module is to:
    * **All Names** (dropdown to filter by name).
    * Use **Clear** to reset filters.
 3. **Review guide information** displayed in the table:
-   * **Guide**: The guide’s name (linked to the account).
-   * **Representative**: The representative associated with the guide.
+   * Team Member: The guide’s name (linked to the account).
+   * Guide Team: The Guide Team associated with the guide.
    * **Title**: The guide’s professional title (if set).
    * **Description**: Additional information about the guide.
    * **Email**: The guide’s contact email.
    * **Phone**: Primary contact number.
    * **Emergency Phone**: Secondary number for emergencies.
    * **Profile Image**: Optional image representing the guide.
-4. **To edit a guide profile**:
-   * Click on the guide’s entry.
-   * Fill in or update the required details (Title, Description, Email, Phone, Emergency Phone).
-   * Upload a profile photo if available.
-   * Save changes.
+4.  **To edit a guide profile**:&#x20;
+
+
+
+    * Click on the guide’s entry.
+
+    <figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+    * Fill in or update the required details (Title, Description, Email, Phone, Emergency Phone).
+    * Upload a profile photo if available.
+    * Save changes.
 5. **To create a new profile** (if a guide has no profile yet):
    * First ensure the guide exists in **Guide Names**.
    * Open **Guide Profiles** → click **Create New Profile** (if available).

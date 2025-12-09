@@ -2,11 +2,11 @@
 
 This feature is available for the administrator user type.
 
-> More information on the effects can be found in [Broken link](broken-reference "mention") page
+> More information on the effects can be found in [Broken link](/broken/pages/jc50ozXeeKjwLpod8Fqn "mention") page
 
-### Create/Copy price list <a href="#createcopy-price-list" id="createcopy-price-list"></a>
+## Create/Copy price list <a href="#createcopy-price-list" id="createcopy-price-list"></a>
 
-#### Create price lists <a href="#create-price-lists" id="create-price-lists"></a>
+### Create price lists <a href="#create-price-lists" id="create-price-lists"></a>
 
 Price lists are created in the **Price List** tab by selecting **Create/Copy Price List**. The creation process involves the following steps:
 
@@ -18,7 +18,7 @@ Price lists are created in the **Price List** tab by selecting **Create/Copy Pri
 
 <figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### Not created prices <a href="#not-created-prices" id="not-created-prices"></a>
+### Not created prices <a href="#not-created-prices" id="not-created-prices"></a>
 
 This feature allows users to identify **price lists that were not created**.
 
@@ -28,11 +28,11 @@ This feature allows users to identify **price lists that were not created**.
 
 <figure><img src="../.gitbook/assets/image (36) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### Copy price list <a href="#copy-price-list" id="copy-price-list"></a>
+## Copy price list <a href="#copy-price-list" id="copy-price-list"></a>
 
 The **Copy Price List** feature allows users to duplicate price lists **within the same brand**.
 
-#### Steps to Copy a Price List
+### Steps to Copy a Price List
 
 1. **Select Source** – Choose the **Transport**, **Hotel**, **Room**, and **Date** from which the price list will be copied.
 2. **Select Destination** – Choose the **Transport**, **Hotel**, **Room**, and **Date** to which the prices will be copied.
@@ -91,7 +91,7 @@ Fields:
 * PP1 - PP4 {basic profit forecast of price per interval for 1 pax, PP1 = P1 - (transport + room costs) autofill field}
 * POWO (price for one way out transports, filled by user)
 * POWH (price for one way home transports, filled by user)
-* D1-D4 (discount price for 1 week, overwrites P1 in webbooking, filled by user)
+* D1-D4 (discount price for 1 week, overwrites P1 in web booking, filled by user)
 * PD1-PD4 {basic profit forecast of discount price per interval for 1 pax, PD1 `=` D1 - (transport + room costs), autofill field}
 * DPOWO (discount price for one way out transports, autofill field)
 * DPOWH (discount price for one way home transports, autofill field)
@@ -140,7 +140,7 @@ Filter categories:
 
 * Price - display prices per intervals, as well as PLTA ID (price list transport allotment ID)
 * Profit Price - display profit forecasts for prices per intervals
-* Disc price - diplay discount prices per intervals
+* Disc price - display discount prices per intervals
 * Profit disc. price - display profit forecasts for discount prices per intervals
 * Gr. prices - display group prices per intervals
 * Profit gr. prices - display profit forecasts for group prices per intervals
@@ -186,7 +186,7 @@ This alternative name will also appear on the ticket.
 
 In the office, the alternative name will replace the hotel name.
 
-### The P.CH (Price Change) option <a href="#the-pch-price-change-column" id="the-pch-price-change-column"></a>
+## The P.CH (Price Change) option <a href="#the-pch-price-change-column" id="the-pch-price-change-column"></a>
 
 The P. Ch. column stands for Price Change. This will adjust the price relative to what is currently in the column.
 

@@ -4,7 +4,7 @@ Applies to Administrator
 
 Extras are optional services/products that a customer can book; like transfer, catering, pension, rental car, etc. This page allows users to create and configure various extras that can be associated with bookings or transport options.
 
-Brands
+#### Brands
 
 <figure><img src="../../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -15,7 +15,7 @@ Allow the user to assign an extra to an agency. An extra can be assigned as foll
 * internet sale - the extra can be booked only on WB
 * for sale + internet sale - can be booked both, office and WB
 * guide sale - can be booked only by a guide agent
-* hotel sale - can be sel only by a hotel agent
+* hotel sale - can be set only by a hotel agent
 * guide sale + internet sale + for sale - can be booked by a admin, guide or a WB
 
 <figure><img src="../../.gitbook/assets/image (28) (1).png" alt=""><figcaption></figcaption></figure>
@@ -30,7 +30,7 @@ Allow the user to assign an extra to an agency. An extra can be assigned as foll
 | **Status**                  | Visibility status. Set to `visible` to allow the extra to appear in search and bookings.                                                                                                                                                                                                                                                                                                                                                                   |
 | **Stop Sales Hours**        | Time before departure when this extra will no longer be available for booking.                                                                                                                                                                                                                                                                                                                                                                             |
 | **Minimum Length**          | Minimum number of days a trip must be to allow this extra.                                                                                                                                                                                                                                                                                                                                                                                                 |
-| **Contract Type**           | Specify the contract type (Allotment, Guarantee, Request, etc.).                                                                                                                                                                                                                                                                                                                                                                                           |
+| **Contract Type**           | Specify the contract type (Allotment, Guarantee, Request, FreeSell).                                                                                                                                                                                                                                                                                                                                                                                       |
 | **Days Prices Option**      | <p>Allows limiting the prices per day options presented to the web user. Default is <code>0</code> if no variation. Only works for prices declared with days!!!!!! If no Days are declared, the product will be removed!<br>Ex: stay days = 14<br>days price option = 1<br>price days = 7,14,21</p><p>price days >= stay days - X</p><p>7,14,21 >= 14 - 1 => 14,21</p>                                                                                     |
 | **Allotment Type**          | Is used to control the number of products available and the time they are available in. The choices are **Manual, Generic** and **Linked to transport**                                                                                                                                                                                                                                                                                                    |
 | **Extras Category**         | Categorize the extra (e.g., Meal, Transfer, Tour). This is required.                                                                                                                                                                                                                                                                                                                                                                                       |
@@ -78,18 +78,19 @@ Allows integration with internal billing and accounting systems for accurate cos
 
 These settings control how the extra behaves in the booking process and what logic or restrictions apply to its use.
 
-<figure><img src="../../.gitbook/assets/image (444).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
-| Setting                                 | Description                                                                                                                 |
-| --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| **Autoselect in booking & offer**       | Automatically selects this extra during booking and in special offers. Useful for mandatory or strongly recommended extras. |
-| **Unremovable On WebBooking**           | Prevents customers from removing the extra themselves during online booking. Ideal for required services.                   |
-| **Unremovable On Customer Center**      | Prevents removal by users in the customer self-service portal.                                                              |
-| **Auto Select in 'Select offer' popup** | If an offer selection popup appears, this extra is automatically pre-selected.                                              |
-| **Add price to deposit**                | Includes the price of this extra in the booking deposit calculation.                                                        |
-| **Add On All Pax**                      | Applies the extra to every passenger in the booking (e.g., insurance, meals).                                               |
-| **Add only one per room**               | Limits the extra to one per room regardless of the number of passengers.                                                    |
-| **Available to book (API)**             | Makes this extra accessible for bookings via external systems or integrations using the API.                                |
+| Setting                                 | Description                                                                                                                                                                                                                                                                                |
+| --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Autoselect in booking & offer**       | Automatically selects this extra during booking and in special offers. Useful for mandatory or strongly recommended extras. The product will already be selected by default in a new booking. When using this feature, please make sure the product does not have a discount linked to it. |
+| **Unremovable On Web Booking**          | Prevents customers from removing the extra themselves during online booking. Ideal for required services.                                                                                                                                                                                  |
+| **Unremovable On Customer Center**      | Prevents removal by users in the customer self-service portal.                                                                                                                                                                                                                             |
+| **Auto Select in 'Select offer' popup** | If an offer selection popup appears, this extra is automatically pre-selected.                                                                                                                                                                                                             |
+| **Add price to deposit**                | Includes the price of this extra in the booking deposit calculation.                                                                                                                                                                                                                       |
+| **Include in basic price**              | If checked, this will hide the extras from the view of the customer in Web Booking and Customer Centre. It will, however, increase the base price and affect the booking total.                                                                                                            |
+| **Add On All Pax**                      | If selected for one passenger in webbooking, the product will be automatically selected for all eligible pax of the booking; If removed, will be removed from all.                                                                                                                         |
+| **Add only one per room**               | Limits the extra to one per room regardless of the number of passengers.                                                                                                                                                                                                                   |
+| **Available to book (API)**             | Check whether a product should be shown as available to book in the Offer API, without adding it to the total.                                                                                                                                                                             |
 
 ***
 

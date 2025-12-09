@@ -13,7 +13,7 @@ The **Users dashboard** provides a centralized view of all users within the agen
 * Actions like creating new users, blocking/unblocking, or assigning permissions are managed from the same page.
 * User access can be restricted temporarily (blocked) or permanently (deleted), depending on business and security needs.
 
-<figure><img src="../../.gitbook/assets/image (334).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 ### **User Table Fields**
 
@@ -24,7 +24,7 @@ The **Users dashboard** provides a centralized view of all users within the agen
 | **Last Name**         | Last name of the user.                                                         |
 | **Seller Signature**  | Internal seller code or identifier.                                            |
 | **Company**           | Associated company name or identifier.                                         |
-| **Role**              | Specifies user role (e.g., Guide, Administrator, Support, Sales, etc.).        |
+| **Role**              | Specifies user role (e.g., Guide Teams, Administrator, Support, Sales, etc.).  |
 | **Rights**            | Permissions granted to the user (e.g., view, edit, delete specific resources). |
 | **Brands**            | Brands the user is affiliated with                                             |
 | **Last Login**        | Timestamp of the user's most recent login.                                     |
@@ -89,7 +89,7 @@ The **Users dashboard** provides a centralized view of all users within the agen
 ### **Examples or Scenarios**
 
 * An **administrator** creates a new sales agent user, assigns them to a specific agency, and grants booking rights.
-* A **seasonal guide** finishes their contract, so the admin **blocks** their user account instead of deleting it.
+* A **seasonal guide team** finishes their contract, so the admin **blocks** their user account instead of deleting it.
 * A **financial manager** reviews the login history to check whether a team member accessed the system recently.
 * An **IT administrator** filters users by role to verify which accounts still have **administrator rights**.
 

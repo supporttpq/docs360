@@ -33,6 +33,8 @@ This feature allows users to:
 
 **Email Log Fields**
 
+<figure><img src="../../.gitbook/assets/image (552).png" alt=""><figcaption></figcaption></figure>
+
 | Field            | Description                                                                                            |
 | ---------------- | ------------------------------------------------------------------------------------------------------ |
 | **Email Type**   | Describes the nature of the email (e.g., Booking Confirmation, Ticket Email, Payment Reminder).        |
