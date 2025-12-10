@@ -21,6 +21,7 @@
 * [New Booking](booking/new-booking/README.md)
   * [New Booking](booking/new-booking/new-booking/README.md)
     * [New Booking search support](booking/new-booking/new-booking/new-booking-search-support.md)
+    * [Edit Pas](booking/new-booking/new-booking/edit-pas.md)
   * [Economics](booking/new-booking/economics.md)
   * [Passenger details](booking/new-booking/passenger-details.md)
   * [History](booking/new-booking/history.md)
