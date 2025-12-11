@@ -1,4 +1,8 @@
-# Edit Pas
+---
+hidden: true
+---
+
+# Edit Passenger
 
 ## **Passengers Tab**
 
