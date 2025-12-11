@@ -392,7 +392,7 @@ After confirmation, Tourpaq:
 
 <figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-* Updates allotment, transport seats, extras, and commissions
+* Updates allotment, transport seats, extras, and commissions.  The allotment is **not** updated automatically. If the number of passengers in the booking is not manually reduced, Tourpaq will automatically insert a **TBA passenger** to occupy the seat or room left vacant by the cancelled guest. This ensures the booking maintains its original capacity, and the cancelled space is not released back into the available allotment. This step it requires manual intervention by the sales user in Edit passenger and then in Take allotment to update it manually.
 * Marks the booking or passenger as _Cancelled_
 
 <figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
@@ -406,7 +406,10 @@ The system will:
 * Remove all services (transport, hotel, extras, insurance, supplements) tied to the passenger
 * Update price calculations
 * Preserve remaining passengers and services
-* Update allotment and capacity
+* Update allotment and capacity. This step it requires manual intervention by the sales user in Edit passenger and then in Take allotment to update it manually.
+  * in the Passenger box, change the number of the passengers that filled in to the booking
+  * click on Take allotment
+  * save booking
 * Keep booking active if at least one passenger remains
 
 #### **Cancel Entire Booking**
@@ -444,9 +447,11 @@ If the cancellation insurance is paid and Cover option is selected when cancelli
 
 If the cancellation insurance is paid and Does not Cover option is selected when cancelling the booking, the cancellation fee will contain the price of the cancellation insurance and the amount set in cancellation rules.
 
-If the cancellation insurance is not paid only Cover option is available when cancelling the booking, and the amount of the cancellation fee will be the one stated in the cancellation rule.
-
 Infants do not get cancellation fee.
+
+You can also adjust the cancellation amount applied to the booking. This can be done by selecting **Edit Passenger** and then updating the value under **Total per passenger**. This allows you to manually modify the cancellation fee when needed.
+
+<figure><img src="../../../.gitbook/assets/image (557).png" alt=""><figcaption></figcaption></figure>
 
 ## **User Experience**
 
