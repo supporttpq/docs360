@@ -71,7 +71,6 @@ When all updates are completed:
 | **L. NAME**    | Last name/surname. Should match travel documents exactly.                                                                         |
 | **AGE**        | Age of the passenger at the time of travel. Used for price categories (Adult/Child/Infant). Auto-fills when birthdate is entered. |
 | **BIRTHDATE**  | Passenger’s date of birth. Determines age-based pricing and airline category.                                                     |
-| **NO**         |                                                                                                                                   |
 | **E-MAIL**     | Passenger email (optional). Usually used only for main traveler.                                                                  |
 | **PHONE**      | Passenger phone number (optional). Usually filled only for main traveler.                                                         |
 | **ADDRESS**    | Passenger address (optional). Typically stored for the main customer, not each pax.                                               |
@@ -117,7 +116,6 @@ This is essential because invoices, confirmations, travel documents, and operati
 | **L. NAME**    | Passenger last name. Read-only; matches booking passenger data.                                                                          |
 | **AGE**        | Passenger age used for pricing and category logic. Read-only.                                                                            |
 | **BIRTHDATE**  | Passenger birthdate. Read-only; ensures correct traveler classification.                                                                 |
-| **NO**         |                                                                                                                                          |
 | **E-MAIL**     | Email address for the selected passenger. Used for communication and ticket delivery.                                                    |
 | **PHONE**      | Passenger phone number. Used for SMS and contact purposes.                                                                               |
 | **ADDRESS**    | Passenger address. Usually filled for the main customer only.                                                                            |
