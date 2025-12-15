@@ -80,7 +80,7 @@ The Edit Passenger window is where you manage all traveler-related details in a 
 * Insurance
 
 {% hint style="info" %}
-For common questions and troubleshooting, see [Edit Passenger - FAQ](edit-passenger-faq.md).
+For common questions and troubleshooting, see [Edit Passenger - FAQ](/broken/spaces/ZCqO8EQ5P5Mioq1zbQAc/pages/DwNYivW4VDD9nAP3wVEG).
 {% endhint %}
 
 ***
