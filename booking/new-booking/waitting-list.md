@@ -1,33 +1,134 @@
 # Waitting list
 
-### **What is a waiting list**
+## Waiting list
 
-The notion of a waiting list (waitlist) has appeared in Tourpaq from the need to handle the situations when more customers are interested in placing a booking than there are available places (transport seats/hotel beds). Instead of losing customer interest in the area, a better approach is to keep a record of their interest (place a waitlist-type booking) and also be prepared for a best-case scenario where the hotel/transport supplements the places or existing bookings get canceled. In this situation, the bookings on the waitlist, in the order they were created, will be automatically processed to get an allotment. The details of this system behavior are described on this page.
+### Overview
 
-### **Making the settings**
+A **waiting list (waitlist)** booking is used when customers want to book a departure, but there are **not enough available places** (transport seats and/or hotel beds).
 
-The starting point is having a normal price list situation already in place: hotel allotment, transport allotment, and a price defined for a particular departure. The single setting to be made in order to activate waiting list behavior of this price list is checking the **Waitlist (WL)** checkbox on it (it can be found and activated by selecting the FLAGS option).
+Instead of losing the booking, Tourpaq can create a **waitlist booking** that:
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+* records the customer’s interest
+* does **not** reserve allotment immediately
+* is automatically converted into a normal booking if allotment becomes available later
 
-<figure><img src="../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+### When to use this
 
-### **The effects**
+Use the waitlist feature when you want to accept interest for fully booked departures and handle them fairly (first created → first processed).
 
-When dealing with a waitlist price, the system behaves as standard as long as there is enough allotment to cover the customer's needs. When the allotment ends, the system places a normal booking, excepting the allotment reservation and the booking status. No payment steps are in place when dealing with a waitlist booking, no email is sent to the customer, and the ticket clearly states that the booking is not a contract but a waiting list. The booking status will be **WL** instead of **OK,** and, from this point on, an automatic service will check allotment availability and will reserve allotments when possible. The booking status then gets set to **WLOK,** and the booking will appear on the main Office Dashboard to be managed by an admin/sales agent. Only after someone saves one more time the booking will then the status "**OK**, the customer will receive the Thank you for booking email and ticket, the payment rates and possibility will become active for the customer, etc.
+{% hint style="warning" %}
+A waitlist booking is **not a confirmed contract** until it becomes fully confirmed (see [Status lifecycle](waitting-list.md#status-lifecycle)).
+{% endhint %}
 
-### **In Tourpaq Office**
+### Preconditions
 
-<figure><img src="../../.gitbook/assets/image (247).png" alt=""><figcaption></figcaption></figure>
+Before you can use waiting list pricing, you must already have the normal setup for that departure:
 
-Because it is a special function, when placing a waitlist booking, the seller is warned in several ways that the booking will not be a standard type of booking. The first notice can be in the transport popup if all rooms for that departure are out of allotment and they are set as the waitlist. The transport may not appear unless you hit the "Search Waitlist also" button. Under the hotel popup, a new "heads up" sign is shown as a colored thick border around the room selection checkbox and a mouseover message. The most important check made to be sure the seller (and customer) is aware that they are operating in a waitlist scenario is when clicking the "Take allotment" button. A validation checkbox appears, and you cannot advance until you confirm this. The rest of the behavior is already explained above.
+* Transport allotment and/or hotel allotment configured
+* A valid price list for the departure
 
-### **In Tourpaq Web booking**
+### Configure a price as “Waitlist (WL)”
 
-<figure><img src="../../.gitbook/assets/image (248).png" alt=""><figcaption></figcaption></figure>
+To enable waiting list behavior, mark the relevant price as a waitlist price.
 
-The need to acknowledge the waitlist scenario is even greater in Web booking's case. The customers need to know and understand that they are not placing a firm order and that it is likely that they will not benefit from it. That is why a header message is listed on most pages of the Web Booking: landing page, confirmation page, and first page of the Customer Center login. The message has a default version and also can be customized for each brand. Generally, the texts that can be customized in Web Booking can be managed only by **Tourpaq Support**. Also, the payment step or payment option in the customer center is not present since the deal is not yet fully completed.
+{% stepper %}
+{% step %}
+### 1. Open the relevant price list entry
 
-### **Tips and tricks**
+Navigate to the price list entry for the departure where you want to allow waitlist bookings.
+{% endstep %}
 
-Please note that if a price has no allotment and also is not a waitlist, then the web booking will reject the booking attempt.
+{% step %}
+### 2. Enable the **Waitlist (WL)** flag
+
+Check the **Waitlist (WL)** checkbox under **FLAGS**.
+
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Enable Waitlist (WL) in the price list flags.</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Waitlist (WL) flag selected.</p></figcaption></figure>
+{% endstep %}
+{% endstepper %}
+
+### How it works
+
+#### Standard behavior (while allotment exists)
+
+If there is enough allotment to cover the customer’s needs, Tourpaq behaves as usual and creates a normal booking.
+
+#### Waitlist behavior (when allotment is missing)
+
+When allotment is **not** available and the price is marked as **Waitlist (WL)**, Tourpaq can still create the booking but will treat it as a waitlist booking:
+
+* No allotment is reserved at creation time
+* No payment steps are available yet
+* No “thank you for booking” email is sent yet
+* The booking clearly indicates it is a waitlist and not a confirmed contract
+
+### Status lifecycle
+
+Waitlist bookings move through the following statuses:
+
+* **WL** – Waitlist booking created (not confirmed)
+* **WLOK** – Allotment has become available and was reserved automatically; booking is now ready for an agent to finalize
+* **OK** – Booking finalized by an agent (normal booking behavior applies)
+
+{% hint style="info" %}
+Tourpaq periodically checks for new allotment and will process waitlist bookings in the **order they were created**.
+{% endhint %}
+
+#### What happens when the status becomes **WLOK**
+
+When a waitlist booking can be fulfilled, Tourpaq reserves the needed allotments and changes the booking to **WLOK**.
+
+At this point:
+
+* the booking appears on the Office Dashboard for action
+* an admin/sales agent must open the booking and **save it again** to finalize it
+
+Only after the booking is saved and becomes **OK**:
+
+* customer emails/tickets are sent (normal flow)
+* payment rates and payment options become active
+
+### In Tourpaq Office (Back Office)
+
+<figure><img src="../../.gitbook/assets/image (247).png" alt=""><figcaption><p>Waitlist indicators in Tourpaq Office.</p></figcaption></figure>
+
+When placing a waitlist booking in the Office:
+
+* Transport/hotel popups show additional warnings that you are selecting a waitlist scenario.
+* A transport may require using a button such as **Search Waitlist also** to display waitlist options.
+* When clicking **Take allotment**, a confirmation checkbox appears and you must acknowledge the waitlist scenario before continuing.
+
+### In Tourpaq WebBooking / Customer Center
+
+<figure><img src="../../.gitbook/assets/image (248).png" alt=""><figcaption><p>Waitlist messaging in WebBooking / Customer Center.</p></figcaption></figure>
+
+For WebBooking, clear customer communication is critical because the customer is self‑serving.
+
+Typical behavior:
+
+* A visible message/banner is shown on key pages (landing, confirmation, and Customer Center login).
+* The message can have a default version and a brand-specific version.
+* Payment steps are typically hidden because the booking is not confirmed yet.
+
+{% hint style="info" %}
+Brand-specific WebBooking texts may require assistance from **Tourpaq Support**, depending on your setup.
+{% endhint %}
+
+### Tips and troubleshooting
+
+#### WebBooking rejects a booking attempt
+
+If a price has **no allotment** and is **not** marked as **Waitlist (WL)**, WebBooking will reject the booking attempt.
+
+#### “Customer asks why they can’t pay yet”
+
+If the booking is still **WL** (waitlist):
+
+* payment is not available yet because the booking is not confirmed
+* the booking becomes payable only after it reaches **OK**
+
+#### “The booking is WLOK but nothing is sent to the customer”
+
+This is expected. An agent must open the booking and **save/finalize** it so it becomes **OK** and triggers the normal email/payment flow.
