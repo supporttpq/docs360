@@ -41,7 +41,7 @@ In the booking interface, in the passenger section, to be able to edit the infor
 
 After clicking the **Edit** button, a new window will open, allowing you to modify the information for each individual passenger.
 
-<figure><img src="../../../.gitbook/assets/image (559).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (563).png" alt=""><figcaption></figcaption></figure>
 
 #### **1. Editing an Existing Passenger**
 
@@ -107,7 +107,7 @@ This is essential because invoices, confirmations, travel documents, and operati
 
 ### **Field Description Table**
 
-<figure><img src="../../../.gitbook/assets/image (560).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (564).png" alt=""><figcaption></figcaption></figure>
 
 | **Field Name** | **Description**                                                                                                                          |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
