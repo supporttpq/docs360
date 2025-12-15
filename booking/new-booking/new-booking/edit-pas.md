@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Edit Passenger
 
 ## **Passengers Tab**
