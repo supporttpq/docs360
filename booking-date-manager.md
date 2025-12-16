@@ -55,3 +55,24 @@ Administrators can use this page to quickly view all bookings made during a spec
 * To ensure accurate results, always set both **Booking start** and **Booking end** dates before pressing **Display**.
 * You can click on a **Booking No** to open a detailed view of that booking.
 * If the system finds matching bookings, the total number (e.g., _Found 13 bookings_) will appear above the table.
+
+***
+
+### **FAQ**
+
+* **Do I need to set both Booking start and Booking end?**\
+  Yes. The page tip states you set both dates to ensure accurate results before selecting **Display**.
+* **What happens when I change the selected brand?**\
+  The page shows data for the selected brand. The **Brands** field description states all displayed data corresponds to the chosen brand.
+* **Are Departure start and Departure end required?**\
+  No. They are optional filters used to limit results by departure date.
+* **Can I change the original Booking Date?**\
+  This page documents editing **Alt. Booking Date**. It does not state that the original **Booking Date** field is editable.
+* **When are changes saved?**\
+  Changes are stored when you select **Save** after updating the alternative booking dates.
+* **How do I open the details for a specific booking?**\
+  Select the booking number in the **Booking No** column. The documentation states each booking number is clickable.
+* **What does “+ More filters / Clear” mean, and what does the number show?**\
+  It provides access to additional filters or clears active filters. The number shows how many filters are currently active.
+* **Why do I only see some bookings (and not all of them)?**\
+  The list only includes bookings that match your selected filters, especially the booking date range (bookings made on or after **Booking start** and on or before **Booking end**).
