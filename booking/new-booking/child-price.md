@@ -1,27 +1,58 @@
 # Child Price
 
-Child Price now works based on an option that can be activated/deactivated by a user that has super-admin rights. If you **DO NOT** activate this option, the prices will work the same as before. If you **DO** activate this option, how the child price gets calculated on a booking will be changed.
+### Overview
 
-You can find this option by logging in as a super-admin and then going under **Users** => **Companies** => **Choose Company** and going under **Feature Acces** tab
+Tourpaq can handle **child pricing** in two ways. Which behavior you get depends on a **feature setting** controlled by a **super-admin**.
+
+* If **Child Profit Margin** is **disabled**, child prices behave as they did previously.
+* If **Child Profit Margin** is **enabled**, Tourpaq will use **explicit child prices from the Price List** (when those prices are set).
+
+{% hint style="warning" %}
+Only users with **super-admin** rights can enable/disable this feature.
+{% endhint %}
+
+***
+
+### Enable or disable Child Profit Margin (super-admin)
+
+1. Log in as a **super-admin**.
+2. Go to **Users → Companies → (select company)**.
+3. Open the **Feature Access** tab.
 
 <figure><img src="../../.gitbook/assets/child-price-edit-company-feature-access-3af66fa9b2fe0fef68886d1b6f19bb90.png" alt=""><figcaption></figcaption></figure>
 
-Under the Yield **Management** card, we will find the check mark named **Child Profit Margin** that represents how the child price will be calculated on a booking.
+4. Under the **Yield Management** card, find **Child Profit Margin**.
 
 <figure><img src="../../.gitbook/assets/child-price-edit-company-option-668b781437a8509c7b7f34026ffa75f7.png" alt=""><figcaption></figcaption></figure>
 
-### HOW THE PRICE WILL BE CALCULATED WHEN THE OPTION IS ACTIVATED <a href="#how-the-price-will-be-calculated-when-the-option-is-activated" id="how-the-price-will-be-calculated-when-the-option-is-activated"></a>
+***
 
-If the option is checked and we have **SET** a child price on the price list that we want to use for our booking, the new price for the room will be represented by the value that was set on either "ChildPrice1," "ChildPrice2," "ChildPrice3," or "ChildPrice4," depending on what interval we use for our booking. If the option is checked but we **DO NOT** have a child price set, the system will work the same as before.
+### What changes when Child Profit Margin is enabled
 
-Booking with Child Price **NOT SET**:
+When **Child Profit Margin** is enabled:
+
+* If the Price List has a **child price set** (for the interval used in the booking), Tourpaq uses that value for the child.
+  * The relevant Price List fields are typically **ChildPrice1**, **ChildPrice2**, **ChildPrice3**, or **ChildPrice4** (depending on the interval).
+* If the feature is enabled **but no child price is set** in the Price List, Tourpaq falls back to the **old behavior**.
+
+#### Example: booking when child price is NOT set
 
 <figure><img src="../../.gitbook/assets/image (259).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (260).png" alt=""><figcaption></figcaption></figure>
 
-Booking with Child Price **SET**:
+#### Example: booking when child price IS set
 
 <figure><img src="../../.gitbook/assets/image (261).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (262).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+### Related documentation (recommended)
+
+If you need to validate or troubleshoot how child price values are derived and applied:
+
+* [**How CH1P1 is used in booking**](../../2-x-child-prices-+-child-price-discount/how-ch1p1-is-used-in-booking.md)
+* [**How CH1P1 & CH2P1 are calculated in Price List**](../../2-x-child-prices-+-child-price-discount/how-ch1p1-and-ch2p1-are-calculated-in-price-list.md)
+* [**How CH1D1 & CH2D1 is calculated in Price List**](../../2-x-child-prices-+-child-price-discount/how-ch1d1-and-ch2d1-is-calculated-in-price-list.md)

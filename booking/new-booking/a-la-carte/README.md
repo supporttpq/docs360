@@ -1,14 +1,43 @@
 # A la Carte
 
-### Feature
+### Overview
 
-"A la carte" is a feature that allows users the possibility to configure their own vacation using products predefined by the operator. The "a la carte" feature provides seven different types of bookings:
+**A la Carte** lets you build a trip from individual components that your organisation has preconfigured in Tourpaq (hotels, transports, price lists, and rules).\
+It is typically used when the trip does **not** fit a standard “fixed package” flow—for example when you need **custom hotel dates**, **one-way flights**, or **mixed itineraries**.
 
-* **Custom Hotel Days Booking,** which allows the user to search after check-in and check-out days in desired destinations. The system will calculate the price based on the rules in the system and provide offers to the user. The hotels available for this type of booking are special hotels with a special rule defined.
-* **Multiple One-Way Flights Booking,** which allows users to select the route where they want to fly. This will be an extension of the "Booking for two one-ways" and will allow booking of multiple one-way flights, which can be GDS or one-way charter flights.
-* **Hotel-only bookings are** already available in the system, and using this, the user is allowed to book only a hotel from a charter offer when having a specific price offer defined.
-* **Transport-only bookings** is a feature already available in the system and allows users to book only the transport for a charter offer.
-* **Circuit Bookings,** which allows the user to be able to book several flights and hotels in one booking if the arrival and departure dates are in synchronization with check-in and check-out dates.
-* **A la carte packages** are available for end users that book online, and they will have available selections as suggestions or starting points. Users are able to change some components in their selections in order to better fit their wishes.
-* **GDS One Way Flights Bookings** is a particular type of multiple flights described above and allows a combination of charter with GDS flights.
-* **Multiple transports in one room** is a feature that allows users the possibility to take two transport charters and to book a single room.
+A la Carte still uses the same core mechanisms as other bookings:
+
+* **Availability** comes from allotments/quotas.
+* **Prices** are calculated from configured price lists.
+* **Discounts and supplements** are applied according to your rules.
+
+{% hint style="info" %}
+If you cannot see A la Carte options in your Booking menu, your company/user may not have access to the feature, or the required setup (e.g., Custom Hotel Days hotels/rooms) is missing.
+{% endhint %}
+
+### Where to go next
+
+* [**General Description**](general-description.md) – What an A la Carte booking is in Tourpaq Office, and what needs to be configured before you can use it.
+* [**Packages**](packages.md) – How A la Carte packages are created and shown as starting points (primarily for web users via Select Offer).
+
+### A la Carte booking types
+
+Tourpaq supports the following A la Carte booking types:
+
+* **Custom Hotel Days booking (price per day)** – Search by **check-in** and **check-out** date (instead of fixed departure intervals). Requires hotels/rooms configured for Custom Hotel Days.
+  * Setup reference: [**Price List Custom Hotel days Service**](../../../price-list-custom-hotel-days-service.md)
+* **Multiple one-way flights booking** – Combine **multiple one-way flights** (charter and/or GDS) into a single booking.
+  * Read more: [**Multiple one way flights bookings**](../multiple-one-way-flights-bookings.md)
+  * Related: [**Booking for 2 One Ways**](../booking-for-2-one-ways.md)
+* **Hotel-only booking** – Create a booking with **only accommodation** (no scheduled transport).
+  * Read more: [**Hotel Only Bookings**](../hotel-only-bookings.md)
+* **Transport-only booking** – Create a booking with **only transport** (no hotel).
+  * Read more: [**Transport only Booking**](../transport-only-booking.md)
+* **Circuit booking** – Combine **multiple flights and hotels** in one itinerary, where arrival/departure dates align with hotel check-in/check-out dates.
+  * Read more: [**Circuit Bookings**](../circuit-bookings.md)
+* **A la Carte packages (suggested starting points)** – Predefined package suggestions (often used online) that users can start from and then adjust, depending on your rules.
+  * Read more: [**Packages**](packages.md)
+* **GDS one-way flights booking** – Search and book **one-way GDS flights** (Dynamic Packaging) and combine them with other components where supported.
+  * Read more: [**GDS One way flight bookings**](../../../gds-queue-place/gds-one-way-flight-bookings.md)
+* **Multiple transports in one room** – Let passengers share the **same room**, while travelling on **different transports**.
+  * Read more: [**Multiple transports one room bookings**](../multiple-transports-one-room-bookings.md)
