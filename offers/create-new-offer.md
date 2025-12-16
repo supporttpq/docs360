@@ -2,130 +2,242 @@
 
 ### Overview
 
-The **Customer Offer** feature allows agents to build personalized travel offers for customers or prospects. Offers can be created directly from the **Office Management** module or while initiating a **New Booking**. They can include custom transport and hotel selections, upsell items, flexible passenger configurations, and tailored communication.
+The **Customer Offer** feature lets you create a personalized travel proposal that you can send to a customer (or prospect). An offer typically contains **transport + hotel**, optional **upsells**, and a message to the customer.
+
+You can create an offer in two ways:
+
+* From **Office Management → New Offer**
+* While creating a **New Booking**, by opening the **Select Offer** popup
+
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (20).png" alt="Offer builder start screen"><figcaption><p>Start a new offer by selecting customer/offeree and travel search criteria.</p></figcaption></figure>
 
 ***
 
 ### Purpose
 
-* To generate customized travel proposals for potential or existing customers.
-* To provide agents with a centralized view for selecting, editing, and reviewing offers.
-* To facilitate sending proposals via email and track offer status.
+Use customer offers to:
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (20).png" alt=""><figcaption></figcaption></figure>
-
-The offer can be sent to an existing customer or to someone that doesn't yet exist in the system. We call this person an offeree or a potential customer. Mandatory info is their email address and first name.
-
-* You can choose to search charter trips&#x20;
-* We select the number of adults and the number of children, also mentioning their ages&#x20;
-* Then we select the departure airport&#x20;
-* the arrival airport, we can also narrow down by resort or hotel&#x20;
-* We can select a particular date or interval if needed and travel length if needed.&#x20;
-* We can now search In the results area, we can filter by specific transports and by hotels. If we select a particular transport, then the hotel room results are getting filtered.&#x20;
-
-Once a proposal is selected Relevant upsale proposals are presented. You can include them in the basket, increasing the offer total, or propose them as optional upgrades. You can include them in the basket, increasing the offer total, or propose them as optional upgrades. This Golfbag product can be selected and added in the basket And this meal flight product can be proposed as an optional upgrade without increasing the offer's total amount. Once the upsales are decided we need to update the price and save this offer in the basket&#x20;
-
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (4).png" alt=""><figcaption></figcaption></figure>
-
-### Instructions
-
-#### Step 1: Accessing the Offer Builder
-
-* **Option A:** Go to **Office Management → New Offer**.
-* **Option B:** Start a **New Booking**, then use the **Select Offer** popup to launch the Offer Builder.
+* Build and send travel proposals to **existing customers** or **new prospects**.
+* Compare multiple travel options before creating a booking.
+* Propose relevant add-ons (upsells) and communicate clearly with the customer.
 
 ***
 
-#### Step 2: Define Offeree (Customer)
+### Before you start
 
-* **Mandatory fields**:
-  * First Name
-  * Email address
-* The offer can be created for:
-  * **Existing customer** (searchable in the system)
-  * **New potential customer** ("offeree") not yet in the database
+* You need access to the **Offers** module.
+* At minimum, you need the recipient’s:
+  * **First name**
+  * **Email address**
+
+{% hint style="info" %}
+In Tourpaq, a prospect who is not yet created as a customer is often called an **offeree**.
+{% endhint %}
 
 ***
 
-#### Step 3: Define Search Criteria
+### Create an offer (step-by-step)
 
-* **Trip Type**: Choose charter trips
-* **Passengers**:
+{% stepper %}
+{% step %}
+### 1) Open the Offer Builder
+
+Choose one of the following:
+
+* **Office Management → New Offer**
+* **New Booking → Select Offer** (opens the Offer Builder)
+{% endstep %}
+
+{% step %}
+### 2) Select the recipient (customer/offeree)
+
+You can create an offer for:
+
+* **Existing customer**: search and select the customer in the system
+* **Offeree (new prospect)**: enter the details manually
+
+**Mandatory fields**:
+
+* **First name**
+* **Email address**
+{% endstep %}
+
+{% step %}
+### 3) Enter travel search criteria
+
+Fill in the travel criteria you want to search on:
+
+* **Trip type** (for example, _Charter trips_ — depending on your setup)
+* **Passengers**
   * Number of adults
-  * Number of children with age details
-* **Travel Parameters**:
-  * **Departure Airport**
-  * **Arrival Airport** (resort or hotel filtering optional)
-  * **Dates**: Exact or interval
-  * **Length of stay**: Optional
+  * Number of children and **their ages**
+* **Departure airport**
+* **Arrival airport**
+  * Optional: narrow down by **resort** or **hotel**
+* **Dates**
+  * Choose a specific date, or a date interval
+* Optional: **travel length** (stay duration)
+
+{% hint style="warning" %}
+Passenger ages affect availability and pricing. If a price looks wrong, double-check the children’s ages first.
+{% endhint %}
+{% endstep %}
+
+{% step %}
+### 4) Search, filter, and select a proposal
+
+1. Click **Search** to show matching options.
+2. Use the results filters to narrow down by:
+   * **Transport**
+   * **Hotel**
+
+{% hint style="info" %}
+When you select a specific **transport**, the list of available **hotel rooms** is filtered to only show rooms that match that transport and passenger setup.
+{% endhint %}
+
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (4).png" alt="Search results and filters"><figcaption><p>Search results with transport and hotel filters.</p></figcaption></figure>
+
+After selecting an option, review the offer details and price breakdown:
+
+* **Total basket amount** (total price)
+* **Trip details** (dates, duration, passenger setup)
+* **Price specification** (adult/child prices, discounts, totals)
+
+<figure><img src="../.gitbook/assets/image (223).png" alt="Offer details and price specification"><figcaption><p>Review travel details and the price specification before sending.</p></figcaption></figure>
+
+If you need a different option, you can typically:
+
+* Search again with different **dates** or **departure airports**
+* Adjust the **passenger configuration**
+* Show/hide details to focus on the items you need
+{% endstep %}
+
+{% step %}
+### 5) Add upsells (optional)
+
+For many proposals, Tourpaq suggests relevant **upsell items** (add-ons).
+
+You normally have two choices:
+
+* **Include in basket**: adds the upsell to the offer price immediately
+* **Propose as optional upgrade**: shows the upsell to the customer as an option, without changing the base offer total
+
+Example:
+
+* _Golfbag_ → included in basket (changes the total)
+* _Meal Flight_ → proposed as optional upgrade (does not change the base total)
+
+After you decide:
+
+1. Click **Update Price**
+2. Save the offer/basket changes
+
+<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Upsell selection"><figcaption><p>Add upsells to the basket or propose them as optional upgrades.</p></figcaption></figure>
+{% endstep %}
+
+{% step %}
+### 6) Add comments and finalize the offer
+
+Use **Offer Comments** to add an explanation for the customer (for example, why you recommend this hotel, what’s included, or what alternatives you can offer).
+
+{% hint style="info" %}
+Offer Comments are a good place to add a short summary in plain language—especially for new customers.
+{% endhint %}
+{% endstep %}
+
+{% step %}
+### 7) Send the offer to the customer
+
+1. Review the email content (hotel/resort, travel dates, trip summary, and total amount).
+2. Send the offer.
+
+What happens after sending:
+
+* A **success confirmation** appears.
+* The system logs the **email sent date**.
+* If **self-booking** is enabled for your setup, the customer email includes a **Booking** button/link.
+
+<figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Send offer"><figcaption><p>Send the offer and confirm it was delivered (sent date is logged).</p></figcaption></figure>
+{% endstep %}
+{% endstepper %}
 
 ***
 
-#### Step 4: Search & Select Offer
+### After sending (follow-up and updates)
 
-* Use the **search button** to list matching options
-* Filter results by:
-  * **Transport**
-  * **Hotel**
-* **Note**: Selecting a transport filters the available hotel room options
+From the offers overview you can:
 
-In this section, we can review the **total basket amount** and the **details of the selected offer**, including hotel, travel dates, duration, passenger structure, and pricing breakdown. The **“Price specification”** area clearly lists the individual cost components, such as prices for adults and children, any applied discounts (e.g., _Ekstra sengers rabatter_), and the **final total price**.
+* Find the offer again using filters (customer, email, dates, status)
+* Update details if the customer requests changes
+* Track status and follow-up
 
-Each offer can display a **custom explanatory text** in the **“Offer Comments”** field, where additional information can be added using the rich text editor. This allows for enhanced communication with the customer regarding the specifics of the offer.
+See:
 
-From here, users can:
-
-* **Search for offers with different dates or departure locations**
-* **Modify passenger configuration**, such as adding infants or changing the age distribution
-* **Show or hide offer details** for a clearer overview when managing multiple offers
-
-This flexible view supports both sales and customer service workflows by ensuring all relevant details are visible and editable in one place.
-
-<figure><img src="../.gitbook/assets/image (223).png" alt=""><figcaption></figcaption></figure>
-
-#### Step 5: Add Upsales (Optional)
-
-For the selected proposal, relevant upsell items are suggested:
-
-* **Include in basket**: Immediately increases total offer price
-* **Propose as optional upgrade**: Suggested but not included in base price
-  * Example:
-    * _Golfbag_ → included in basket
-    * _Meal Flight_ → optional upgrade
-
-Click **Update Price** to reflect selections.
-
-<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-#### Step 9: Send Offer to Customer
-
-* Review email content (hotel, resort, trip summary, total amount)
-* If **self-booking** is allowed, a **Booking Button** will appear in the email
-* Send the offer\
-  ✅ Success confirmation will appear\
-  📧 The email sent date will be logged in the system
-
-<figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-### Post-Sending Options
-
-From the Offer Overview:
-
-* Search offers by departure or date
-* Edit passenger configuration
-* Toggle visibility of offer details
-* Track customer interactions and responses
-
-The offer is being sent now to the customer's email.&#x20;
-
-After the success confirmation, an email sent date is visible for the offer.&#x20;
+* [Offers](./)
+* [Offer management and statistics](offer-management-and-statistics.md)
 
 ***
 
-### &#x20;Best Practices
+### Best practices
 
-* Always double-check passenger age before pricing
-* Use optional upsells to increase value and personalization
-* Add clear, personalized messages in the **Offer Comments**
-* Save multiple offers under one proposal for flexibility
+* Confirm **passenger ages** before sending (pricing depends on it).
+* Use **optional upsells** to increase value without changing the base price.
+* Write short, clear text in **Offer Comments** (what is included, why you recommend it, and next steps).
+* If you create multiple options, keep them in one proposal/basket so you can compare before sending.
 
+***
+
+### FAQ
+
+<details>
+
+<summary><strong>What is an “offeree”?</strong></summary>
+
+An **offeree** is a prospect who is not yet created as a customer in Tourpaq. You can still send an offer as long as you enter (at minimum) a **first name** and **email address**.
+
+</details>
+
+<details>
+
+<summary><strong>Why do hotel room options change when I select a transport?</strong></summary>
+
+Tourpaq filters hotel room results to match the selected **transport**, dates, and passenger setup. This helps ensure you only see combinations that are actually available.
+
+</details>
+
+<details>
+
+<summary><strong>Why is the price incorrect?</strong></summary>
+
+In most cases, pricing issues come from passenger setup—especially **children’s ages**. Re-check:
+
+* number of adults/children/infants
+* children’s ages
+* travel dates and travel length
+
+</details>
+
+<details>
+
+<summary><strong>What’s the difference between “Include in basket” and “Optional upgrade”?</strong></summary>
+
+* **Include in basket** adds the upsell to the offer total immediately.
+* **Optional upgrade** proposes the add-on to the customer without changing the base offer total.
+
+</details>
+
+<details>
+
+<summary><strong>Where can I see if an offer was sent?</strong></summary>
+
+Open the offer and look for the **email sent date**. You can also locate it from the [Offers](./) list using filters like customer email, status, or created period.
+
+</details>
+
+<details>
+
+<summary><strong>How long is an offer valid and when should I follow up?</strong></summary>
+
+Offer availability and follow-up timing depends on your company setup (default availability days and follow-up days). See [Offer management and statistics](offer-management-and-statistics.md) for details.
+
+</details>

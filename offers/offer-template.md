@@ -2,60 +2,127 @@
 
 ### Overview
 
-The Offer Template module in Tourpaq allows sales and back-office staff to create branded quotation documents or email offers for customers. These offers can be generated when speaking to a customer, customized with comments or follow-up dates, and sent directly from the system.
+An **Offer Template** defines the **layout and branded content** used when Tourpaq sends an offer to a customer (typically by email, and depending on your setup sometimes also as a printable document/PDF).
 
-The select offer email template of each agency is a custom-built template by Roweb.
+Offer templates help your team send offers that are consistent, easy to read, and aligned with your brand.
 
-### Instruction
+{% hint style="info" %}
+Offer templates are often customized per agency/brand. Your installation may look slightly different if your template was custom-built.
+{% endhint %}
 
-The customer offer email contains the following section:
+***
 
-* per brand header message (with dynamic variable option - add "Message" variable)
+### Purpose
 
-<figure><img src="../.gitbook/assets/image (327).png" alt=""><figcaption></figcaption></figure>
+Use offer templates to:
 
-* custom message that can be set for each particular customer&#x20;
+* Ensure customers receive a **clear and professional** offer email
+* Keep **branding and standard texts** consistent across the team
+* Combine system data (hotel, dates, passengers, price) with **friendly explanatory text**
 
-<figure><img src="../.gitbook/assets/image (328).png" alt=""><figcaption></figcaption></figure>
+***
 
-* offer benefits from the agency
+### Before you start
 
-<figure><img src="../.gitbook/assets/image (271).png" alt=""><figcaption></figcaption></figure>
+* You need access to the **Offers** module.
+* Template texts (header/footer, insurance texts, etc.) are typically configured per **Brand**.
 
-* individual offer/hotel comment inside the customer offer bundle&#x20;
+To manage the texts and images used in offers, see:
 
-<figure><img src="../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+* [Select text for Offers](select-text-for-offers.md)
 
-* Short information about resort/hotel information about accommodation and price&#x20;
-* information about what you can add extra to the offer&#x20;
+***
 
-<figure><img src="../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+### What the customer offer email typically contains
 
-* the insurance information&#x20;
+Below are the most common sections you will see in a customer offer email.
 
-<figure><img src="../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+#### 1) Brand header (intro)
 
-* per brand mail footer message
+A branded header usually contains your standard greeting/introduction.
 
-<figure><img src="../.gitbook/assets/image (21) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+* Some templates support placeholders (dynamic fields). In some setups, you can add a dynamic **Message** variable.
 
-### Field / Element Descriptions
+<figure><img src="../.gitbook/assets/image (327).png" alt="Offer email header"><figcaption><p>Example of a brand header/introduction section in the offer email.</p></figcaption></figure>
 
-| **Element**           | **Description**                                                           |
-| --------------------- | ------------------------------------------------------------------------- |
-| Offer Template Name   | The name of the layout or template used for the offer (branding, format). |
-| Customer              | The client to whom the offer is addressed.                                |
-| Travel Dates          | The start and end date of the proposed travel.                            |
-| Services Included     | List of travel services: hotels, transport, extras, etc.                  |
-| Pricing Breakdown     | Itemised pricing: base cost, margins, taxes.                              |
-| Comments / Follow-up  | Additional remarks, salesperson comments and follow-up date.              |
-| Status                | Current state of the offer: Open, Sent, Viewed, Accepted, Expired.        |
-| Send / Generate       | Action buttons to send the offer via email or generate PDF.               |
-| Conversion to Booking | Option to convert the offer into a booking if the customer accepts.       |
+#### 2) Personal message to the customer
 
-### Best Practices & Notes
+This is the part you adjust per customer (for example: “Here are the best options based on your request…”).
 
-* Use clear follow-up dates to track sales pipeline.
-* Make sure the template branding and layout are up to date.
-* Regularly review offer-to-booking conversion statistics to optimise templates.
-* Keep templates simple and tailored for the audience: focus on key services, pricing and benefits rather than full contract text.
+<figure><img src="../.gitbook/assets/image (328).png" alt="Custom customer message"><figcaption><p>Example of a personalized message included in the offer email.</p></figcaption></figure>
+
+#### 3) Your agency’s benefits / selling points
+
+Many templates include a short section describing why the customer should book with your agency (support, security, flexibility, etc.).
+
+<figure><img src="../.gitbook/assets/image (271).png" alt="Offer benefits"><figcaption><p>Example of an “agency benefits” section.</p></figcaption></figure>
+
+#### 4) Offer or hotel comments (per offer option)
+
+If the offer email includes multiple options (different hotels/rooms/dates), you can typically add a **comment per option**.
+
+Use this to explain:
+
+* why you recommend a specific hotel/room
+* what is included
+* important conditions the customer should notice
+
+<figure><img src="../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Offer/hotel comment"><figcaption><p>Example of a comment shown inside the customer offer bundle.</p></figcaption></figure>
+
+#### 5) Trip summary and price
+
+Most templates include:
+
+* Resort/hotel details
+* Stay dates and duration
+* A price summary (and what is included)
+
+<figure><img src="../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Trip information and extras"><figcaption><p>Example showing trip information, price summary, and possible extras.</p></figcaption></figure>
+
+#### 6) Optional extras (upsells)
+
+Templates often include a section showing what can be added (for example transfers, baggage, seat upgrades, activities, etc.).
+
+#### 7) Insurance information (if enabled)
+
+If your brand setup includes insurance texts/links, the offer email can show travel and/or cancellation insurance information.
+
+<figure><img src="../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Insurance information"><figcaption><p>Example of insurance information included in the offer email.</p></figcaption></figure>
+
+#### 8) Brand footer
+
+The footer usually contains standard contact information, disclaimers, and a signature.
+
+<figure><img src="../.gitbook/assets/image (21) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Offer email footer"><figcaption><p>Example of a brand footer section.</p></figcaption></figure>
+
+***
+
+### Field / element descriptions (common)
+
+These are common elements you may see when working with offer templates and customer offers:
+
+* **Offer Template Name**: The name of the template/layout (branding and structure).
+* **Customer**: The person receiving the offer.
+* **Travel dates**: The departure and return dates (or start/end of stay).
+* **Services included**: What the offer contains (transport, hotel, extras).
+* **Pricing breakdown**: How the price is built up (base price, additions, discounts).
+* **Comments / follow-up**: Notes, explanations, and the internal follow-up date.
+* **Status**: Where the offer is in the workflow (for example _Unsent_, _Available_, _Expired_, _Sold_, _Closed_).
+* **Send / Generate**: Actions for sending the offer (and in some setups generating a PDF/print view).
+* **Conversion to booking**: The option/workflow used when the customer accepts and the offer becomes a booking.
+
+***
+
+### Best practices
+
+* Keep the **personal message** short and clear:
+  * what you propose
+  * why you propose it
+  * what the customer should do next
+* Use **offer/hotel comments** to highlight important details (location, room type, special conditions).
+* Ensure **insurance text** is correct and compliant for your market.
+* Review the offer email regularly (especially after branding changes).
+
+{% hint style="info" %}
+If you need to change standard texts (header/footer/insurance/extras descriptions), those are normally managed in the brand offer text settings. See [Select text for Offers](select-text-for-offers.md).
+{% endhint %}
