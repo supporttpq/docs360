@@ -151,7 +151,7 @@ Filter categories:
 
     * P. Ch. - increase/decrease prices per interval
     * Hide average profit - hides average real profit per pax
-    * TP - transport price&#x20;
+    * TP - transport price�
 
     ⚠️ **Warning:** Values here change **Extra bed discount** (P1 - TP) \* - TP)\*X%=EBD
 
