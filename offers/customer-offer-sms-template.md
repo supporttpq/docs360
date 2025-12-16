@@ -1,45 +1,125 @@
 # Customer Offer SMS template
 
-### **Overview**
+### Overview
 
-The **Customer Offer SMS Template** feature allows users to create predefined SMS templates used for customer communication.\
-These templates ensure consistency and save time when sending messages from the **Select Offer** view.
+A **Customer Offer SMS template** is a reusable message format you can use when sending an SMS from an offer.
 
-<figure><img src="../.gitbook/assets/image (273).png" alt=""><figcaption></figcaption></figure>
+Instead of writing the full SMS every time, you create a template once (per Brand) and then only write the _custom_ part of the message when you send it.
 
-### **Configuration Details**
+<figure><img src="../.gitbook/assets/image (273).png" alt="Customer Offer SMS template settings"><figcaption></figcaption></figure>
 
-| **Field / Section**     | **Description**                                                                                                                                                                  |
-| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Location**            | The SMS template setup is located under **Brand Settings → Select Offer**.                                                                                                       |
-| **Purpose**             | Enables the creation of an SMS template that can be used directly from the **Select Offer** screen to contact customers.                                                         |
-| **Variables**           | The SMS template supports predefined placeholders (variables) that dynamically insert specific content when the message is sent.                                                 |
-| **\[Message] Variable** | This is the key variable in the template. When an SMS is sent from **Select Offer**, the text written in the message field replaces the `[Message]` placeholder in the template. |
-| **Usage**               | Once configured, the SMS can be sent directly from the **Select Offer** view to customers, using the predefined structure and variables.                                         |
+***
 
-<figure><img src="../.gitbook/assets/image (274).png" alt=""><figcaption></figcaption></figure>
+### Where to find it
 
-{% hint style="success" %}
-Note: There are several variables that can be inserted into the template. The most important one is the \[Message]
+In most setups, SMS templates for offers are configured per Brand:
+
+* **Brands → (select a Brand) → Select Offer → SMS configuration**
+
+{% hint style="info" %}
+If you have multiple brands, make sure you update the correct **Brand**, otherwise the wrong template may be used when sending offers.
 {% endhint %}
 
-#### **Example**
+***
 
-**Template Example:**
+### How it works
+
+The template can include placeholders (variables) that Tourpaq fills in automatically.
+
+The most important one is:
+
+* `[Message]` — this is the text you type when you send the SMS from the offer.
+
+When the SMS is sent:
+
+1. Tourpaq takes your SMS template.
+2. It replaces placeholders like `[CustomerFirstName]` and `[BrandName]`.
+3. It replaces `[Message]` with the text you wrote for this specific customer.
+
+<figure><img src="../.gitbook/assets/image (274).png" alt="SMS configuration and variables"><figcaption></figcaption></figure>
+
+{% hint style="success" %}
+If your template does **not** include `[Message]`, the custom text you type when sending may not appear in the outgoing SMS.
+{% endhint %}
+
+***
+
+### Create or update an SMS template
+
+{% stepper %}
+{% step %}
+### 1) Open the Brand’s Select Offer settings
+
+Go to:
+
+* **Brands → (select a Brand) → Select Offer**
+{% endstep %}
+
+{% step %}
+### 2) Find the SMS template field
+
+Locate the SMS template area in the Select Offer settings.
+
+Depending on your setup, you may be able to:
+
+* write/edit the SMS template directly
+* or select a predefined template
+{% endstep %}
+
+{% step %}
+### 3) Add placeholders
+
+Add the placeholders you want to use.
+
+At minimum, include:
+
+* `[Message]`
+
+Optionally include placeholders such as:
+
+* `[CustomerFirstName]`
+* `[BrandName]`
+{% endstep %}
+
+{% step %}
+### 4) Save and test
+
+Send a test SMS to an internal phone number to confirm:
+
+* the greeting text looks correct
+* placeholder values are inserted
+* the custom text you typed shows where `[Message]` is placed
+{% endstep %}
+{% endstepper %}
+
+***
+
+### Example
+
+Template example:
 
 ```
-Dear [CustomerFirstName],  
-[Message]  
+Dear [CustomerFirstName],
+[Message]
 Thank you for choosing [BrandName].
 ```
 
-When sent, the `[Message]` variable is replaced with the text entered by the user in the **Select Offer** message field.
+When you send the SMS from an offer, whatever you type in the offer’s message field replaces `[Message]`.
 
-<figure><img src="../.gitbook/assets/image (275).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (275).png" alt="Example of SMS template result"><figcaption></figcaption></figure>
 
-### **Customer Outcome**
+***
 
-* **Efficiency:** Users can quickly send standardized SMS messages without typing them from scratch.
-* **Personalization:** Dynamic variables allow messages to be customized for each customer.
-* **Consistency:** Ensures all communication aligns with the company’s tone and branding.
-* **Automation Readiness:** Simplifies future enhancements for automated SMS triggers linked to offers or booking workflows.
+### Tips for writing good offer SMS messages
+
+* Keep the SMS short and action-oriented.
+* Make the next step clear (for example: “Please check your email for the offer link”).
+* Avoid internal terms that customers won’t understand.
+* If you include links, verify they work on mobile.
+
+***
+
+### Related pages
+
+* [Select text for Offers](select-text-for-offers.md)
+* [Customer offers automatic flow](customer-offer-automatic-flow.md)

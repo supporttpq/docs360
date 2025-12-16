@@ -1,108 +1,202 @@
 # Select text for Offers
 
-### **Overview**
+### Overview
 
-The **Select Text for Offers** section allows you to manage and configure the text, images, templates, and automated communication related to customer offers.\
-This setup ensures that all branding, messaging, and automated reminders are consistent across offers and bookings.
+**Select text for Offers** is where you manage the **standard texts, images, and communication templates** used when sending offers to customers.
 
-<figure><img src="../.gitbook/assets/image (272).png" alt=""><figcaption></figcaption></figure>
+This is typically configured **per Brand**, so each brand can have its own logo, email header/footer, insurance texts, and reminder messages.
 
-### **Configuration Options**
-
-**1. Add Text from Brands**
-
-You can add predefined text from the **Brands** section directly in the **Select Offer** tab.\
-This helps maintain brand consistency across all customer offers.
+<figure><img src="../.gitbook/assets/image (272).png" alt="Select text for Offers / Select Offer settings"><figcaption></figcaption></figure>
 
 ***
 
-**2. Template Images**
+### Where to find it
 
-Dedicated sections allow you to upload and manage visual elements associated with the offer:
+In most setups, you will find these settings under:
 
-| **Image Type**             | **Description**                                          |
-| -------------------------- | -------------------------------------------------------- |
-| **Logo**                   | Used for branding in offer emails and PDFs.              |
-| **Trip Safety Image**      | Displayed in offers that include safety-related content. |
-| **More Experiences Image** | Highlights additional experience options.                |
-| **Web Banner Image**       | Used on web-based offer presentations.                   |
+* **Brands → (select a Brand) → Select Offer**
 
-***
-
-**3. Close Reasons**
-
-A configurable list of **reasons for closing an offer**, each with an explanatory text description.\
-These are displayed when an offer is manually or automatically closed.
+{% hint style="info" %}
+If you work with multiple brands, make sure you are editing the **correct Brand** before updating texts and images.
+{% endhint %}
 
 ***
 
-**4. Email and Text Templates**
+### What this setup affects
 
-A collection of templates used for **customer communication** via email or text message.
+The content you configure here is reused in customer communication such as:
 
-Includes fields for:
+* **Offer emails** (including header/footer and general information text)
+* **Offer reminder emails/SMS** (automatic follow-ups)
+* Customer-facing sections in the offer like:
+  * **Travel insurance / cancellation insurance information**
+  * **Trip safety text**
+  * **More experiences / optional add-ons text**
 
-* **General Available Product Text**
-* **Mail Header / Mail Footer**
-* **Unavailability Custom Message**
-* **Additional informational texts**
-
-Some email bodies include **personalization placeholders**, such as:\
-`[CustomerFirstName]`, `[DepartureDate]`, or `[OfferLink]`.
-
-***
-
-**5. Insurance and Experience Texts**
-
-Dedicated sections for standard informational messages:
-
-| **Section**                | **Purpose**                               |
-| -------------------------- | ----------------------------------------- |
-| **Travel Insurance**       | Text related to travel insurance details. |
-| **Cancellation Insurance** | Covers cancellation policy information.   |
-| **More Experiences Text**  | Describes optional add-ons or excursions. |
-
-These texts appear automatically in the relevant parts of the offer.
+For an explanation of how offer layouts work, see [Offer template](offer-template.md).
 
 ***
 
-**6. Booking and Offer Emails**
+### What you can configure
 
-Includes predefined templates related to:
+#### 1) Brand texts (standard content)
 
-* **New Booking**
-* **New Offer**
-* **All Bookings**
+These texts help ensure your team writes consistent, professional messages across all offers.
 
-A standard **Offer Email** contains:
+Common fields include:
 
-* **Subject:** “Important information regarding your trip offer”
-* **Body:** Personalized customer message outlining offer details and next steps.
+* **Mail subject** (default subject when sending an offer)
+* **Mail header** (your greeting/introduction)
+* **Mail footer** (signature, contact details, disclaimers)
+* **General available product text** (general information shown with the offer)
+* **Unavailability custom message** (shown if an option becomes unavailable)
+
+{% hint style="info" %}
+Keep the header/footer fairly stable. Consultants can still add a personal message when creating an offer.
+{% endhint %}
+
+#### 2) Placeholders (personalization)
+
+Many text fields support placeholders (dynamic fields) so messages can be personalized automatically.
+
+Examples you may see:
+
+* `[CustomerFirstName]`
+* `[DepartureDate]`
+* `[OfferLink]`
+
+{% hint style="warning" %}
+Only supported placeholders will work. If a placeholder is written incorrectly (or not supported), it may appear as plain text in the email.
+{% endhint %}
+
+#### 3) Template images
+
+Upload the images that are shown in your offer layout, for example:
+
+* **Logo** (brand identity)
+* **Trip safety image**
+* **More experiences image**
+* **Web banner / included image** (depends on your template)
+
+{% hint style="warning" %}
+Image support depends on your offer template. Some templates do not display all image types. If an image looks stretched or cropped, check the recommended sizes in the field tooltip and upload a correctly sized image.
+{% endhint %}
+
+#### 4) Close reasons (why an offer was closed)
+
+Close reasons are used when an offer is closed manually or automatically.
+
+Set these up so consultants can select a clear explanation, such as:
+
+* Customer booked elsewhere
+* No availability
+* Price too high
+* Customer did not respond
+
+Add a short description per reason so reports and internal follow-up remain consistent.
+
+#### 5) Insurance and informational texts
+
+If your offer template shows insurance and information sections, you can maintain standard texts for:
+
+* **Travel insurance**
+* **Cancellation insurance**
+* **Trip safety text**
+* **More experiences text**
+
+Use these fields for the content you want to be the same for all customers (policy notes, links, and legal/compliance wording).
+
+#### 6) Reminder emails and SMS (automatic follow-up)
+
+You can automate reminders so customers receive follow-ups without manual work.
+
+Typical settings include:
+
+* **Email reminder schedule days**
+  * Enter multiple values separated by commas (example: `3,7,14,21`)
+  * Each number is the day offset your system uses to send reminders (based on your configuration)
+* **Enable auto schedule** (turns on automatic sending)
+* **Enable auto schedule close** (closes the offer after the last scheduled reminder)
+* **Mail reminder subject/body**
+* **SMS reminder body**
+
+To learn how the scheduler behaves after an offer is booked (for example, canceling remaining reminders), see [Customer offers automatic flow](customer-offer-automatic-flow.md).
+
+#### 7) Display extra description (optional)
+
+If enabled, Tourpaq can show a **custom description** for included price extras in the customer offer.
+
+{% hint style="info" %}
+This requires an offer template that supports extra descriptions. If nothing changes in the customer email, the template may not include that section.
+{% endhint %}
 
 ***
 
-**7. Email Reminder Scheduling**
+### Recommended setup flow (for new installations)
 
-The reminder functionality automates customer notifications related to offers and bookings.
+{% stepper %}
+{% step %}
+### 1) Pick the Brand you are configuring
 
-| **Field**                        | **Description**                                                                                                                                   |
-| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Email Reminder Schedule Days** | Defines the number of days before or after an event (e.g., offer expiration, booking confirmation, or travel date) when a reminder email is sent. |
-| **Enable Auto Schedule**         | Automatically schedules and sends reminder emails based on predefined rules. Ensures timely customer updates without manual input.                |
-| **Enable Auto Schedule Close**   | Automatically closes offers after the final scheduled reminder email is sent.                                                                     |
+Confirm you are editing the correct brand before you change texts or upload images.
+{% endstep %}
+
+{% step %}
+### 2) Upload images first
+
+Upload your logo and any images used by your offer template, then preview the result to ensure nothing is cropped or stretched.
+{% endstep %}
+
+{% step %}
+### 3) Add the standard offer texts
+
+Fill in:
+
+* Mail subject
+* Mail header
+* Mail footer
+* General available product text
+
+Use placeholders where relevant.
+{% endstep %}
+
+{% step %}
+### 4) Configure close reasons
+
+Add a small set of reasons your team will actually use. Avoid having too many similar reasons.
+{% endstep %}
+
+{% step %}
+### 5) Configure reminders (optional)
+
+If you want automated follow-ups:
+
+1. Enter schedule days (for example `3,7,14`)
+2. Enable auto schedule
+3. Write reminder email/SMS texts
+4. Decide whether offers should auto-close after the last reminder
+{% endstep %}
+
+{% step %}
+### 6) Test by sending an offer to yourself
+
+Create a test offer and send it to an internal email address to verify:
+
+* branding and layout
+* placeholder values
+* images
+* insurance texts (if shown)
+* reminder text formatting
+
+See [Create new offer](create-new-offer.md) if you need help creating a test offer.
+{% endstep %}
+{% endstepper %}
 
 ***
 
-**8. Display Extra Description**
+### Tips for clear customer communication
 
-When enabled, this option adds a **custom description** for included price extras in the offer presentation.
-
-> _Note: The selected template must support this feature to display the extra description correctly._
-
-### **Customer Outcome**
-
-* **Consistent Branding:** All offers use standardized text, images, and layouts aligned with the agency’s brand.
-* **Improved Communication:** Automated email and reminder scheduling ensures customers receive timely and accurate updates.
-* **Operational Efficiency:** Reduces manual work for consultants by automating reminders and offer closures.
-* **Enhanced Customer Experience:** Personalized, well-structured messages make offers easier to understand and more engaging.
-* **Flexibility and Control:** Agencies can customize every element — from text and imagery to scheduling and closing logic — to match their communication strategy.
+* Write in short paragraphs and use bullet lists when possible.
+* Avoid internal terms (for example, “offeree”) in customer-facing texts.
+* Keep the next step obvious (for example: “Click the link in this email to view your offer”).
+* Review and update standard texts when you change branding or contact details.
