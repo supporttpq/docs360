@@ -2,132 +2,261 @@
 
 ### Overview
 
-This document outlines managing customer-specific information on hotel setups via a back-office interface. It includes step-by-step instructions, expected results, validation rules, and guidance on interacting with the “Passengers Information” tab.
+Use **Passenger Information** on a hotel to add **customer-facing messages** that apply when a guest books that hotel (optionally limited by **travel dates**, **booking dates**, and **room type**).
+
+Typical use cases:
+
+* Renovations, pool closures, or seasonal facilities
+* Local tourist tax information
+* Check-in/check-out rules
+* Mandatory terms the customer must acknowledge before booking can be completed
+
+{% hint style="info" %}
+You configure these messages per hotel in the back office:
+
+**Hotel → Hotels → open a hotel → Passenger Information**
+{% endhint %}
 
 ***
 
-### Purpose
+### What the customer sees
 
-To verify that customer information for tickets, booking dates, and room types can be added, edited, and managed per hotel, including default and brand-specific configurations.
+Depending on your setup, the **Information for customer** text can be shown in one or more places:
 
-***
+* In the booking flow in Tourpaq Office (for example when taking allotment)
+* In WebBooking, typically in the final confirmation/summary step
+* On customer documents (for example ticket/voucher), depending on your configuration
 
-### Test Case Steps and Descriptions
-
-#### 1. Navigate to Hotel Setup
-
-* Go to the **"Hotel" menu → "Hotels" -** A list of all hotels configured in the system is displayed.
+If **Acknowledge** is enabled, the booking flow requires the user/customer to confirm the message before they can proceed.
 
 ***
 
-#### 2. Select a Specific Hotel
+### Before you start
 
-* Click on the hotel for which customer info should be defined. - The hotel’s **edit page** is shown and  the **"Passengers Information"** tab becomes visible.
+Make sure:
 
-***
-
-#### 3. Open the “Passengers Information” Tab
-
-* Displays a paginated list (25 entries per page) of all existing customer information rules.
-* If there are no rules, a message **"There are no entries to show"** is shown.
-* Sorting is available, showing the newest entry on top.
-* Each row includes an **edit** and **delete** button.
-* A **"Default text"** tab and additional tabs for each brand with custom text enabled are available.
+* The hotel already has the relevant **room types** configured (the rule must be linked to a room type).
+* You have permission to edit hotel setup.
 
 ***
 
-#### 4. Add a New Rule
+### Add customer information to a hotel
 
-* Click the **"Create"** button.&#x20;
-* A form opens for defining a new rule.
+{% stepper %}
+{% step %}
+### 1) Open the hotel
 
-***
+1. Go to **Hotel → Hotels**.
+2. Click the hotel you want to maintain.
 
-#### 5. Fill in Customer Rule Data
+You are now on the hotel edit page.
+{% endstep %}
 
-**Required Fields**:
+{% step %}
+### 2) Open **Passenger Information**
 
-* **From / To (Departure Dates)**: Define the range for departure.
-* **Booking Date From / To**: Optional date fields to limit based on booking date.
-* **Information for Customer**: Text field displayed on ticket, WB, or booking page (input via pop-up).
-* **Acknowledge Checkbox**: Requires customer confirmation; has an info tooltip.
-* **Room Type**: Drop-down list showing all room types defined for the hotel.
+1. Open the **Passenger Information** tab.
 
-**Validation Notes**:
+You will see a list of existing rules:
 
-* “To” must be greater than “From”.
-* Date validation is based on combinations of departure date, booking date, and room type.
-* Overlapping rules with identical parameters are restricted.
-* Two rules may exist for the same period if they apply to **different room types**.
+* The list is paginated (25 entries per page).
+* If there are no rules, you’ll see **There are no entries to show**.
+* Newer entries are shown first.
+{% endstep %}
 
-***
+{% step %}
+### 3) Choose where the text should apply (Default vs brand)
 
-#### 6. Save the Rule
+At the top you can typically switch between:
 
-* Click the **"Save"** button.
-* Entry is saved and a confirmation message appears.
-* If validation fails, a warning message is displayed.
+* **Default text**: applies across brands
+* **Brand tabs**: only available if the hotel/brand is configured to use custom text
 
-***
+Select the tab you want to edit before creating a new rule.
+{% endstep %}
 
-#### 7. Cancel Creation
+{% step %}
+### 4) Create the rule
 
-**Action**:
+1. Click **Create**.
+2. Fill in the rule fields.
 
-* After editing, click **"Cancel" -** The entry is not saved and is removed from the list.
+#### Fields explained
 
-***
+* **From / To (travel dates)**
+  * Defines the travel period where the message applies.
+  * **To** must be after **From**.
+* **Booking Date From / To** (optional)
+  * Limits the message to bookings created within a specific booking period.
+  * Leave empty if booking date should not matter.
+* **Room type**
+  * Select which room type the message applies to.
+* **Information for customer**
+  * The message shown to the user/customer.
+  * Enter the text in the pop-up editor (multi-line supported).
+* **Acknowledge**
+  * If enabled, the message becomes mandatory to confirm.
+  * The UI shows an info tooltip describing the requirement.
+{% endstep %}
 
-#### 8. Edit Existing Rule
+{% step %}
+### 5) Save
 
-* Click the **"Edit"** button on a specific rule. - Fields become editable. You can update all values.
+1. Click **Save**.
 
-***
+Expected result:
 
-#### 9. Delete a Rule
+* The rule is saved and appears in the list.
+* A confirmation message is shown.
 
-* Click the **"Delete"** button.
-* Confirm in the pop-up dialog.\
-  **Expected Result**:
-* Rule is deleted upon confirmation.
-
-***
-
-### Brand-Specific Configuration
-
-#### 10. Managing Brand Tabs
-
-Each hotel may have:
-
-* **"Default text"**: Shared rule across all brands.
-* **Brand-specific tabs**: For hotels where **“Use custom text”** is enabled per brand.
-
-**Actions**:
-
-* Select a brand tab.
-* Click **Edit** on the existing entry.
-* Save after editing.
-
-**Expected Result**:
-
-* Customized rules are applied and saved per brand.
+If the rule breaks validation rules, you will see a warning message and the rule will not be saved.
+{% endstep %}
+{% endstepper %}
 
 ***
 
-### Notes on Edge Cases
+### Edit or delete an existing rule
 
-* **Booking Dates Null**: If booking dates are left null, the system compares only departure date rules.
-* **No Booking Date Set**: Allows broader application of rules without constraints on when the booking was made.
-* **Multiple Room Types**: Allows flexibility by separating rules for each room category.
+#### Edit
+
+1. In **Passenger Information**, find the rule.
+2. Click **Edit**.
+3. Update the fields.
+4. Click **Save**.
+
+#### Delete
+
+1. Click **Delete** on the rule.
+2. Confirm deletion in the pop-up dialog.
 
 ***
 
-### Summary of Validations
+### Validation rules (important)
 
-| Field            | Mandatory | Notes                                                   |
-| ---------------- | --------- | ------------------------------------------------------- |
-| From/To (Depart) | Yes       | "To" must be after "From"                               |
-| Booking Dates    | Optional  | Valid only against same rule set                        |
-| Info for Ticket  | Yes       | Opens pop-up to enter multi-line text                   |
-| Acknowledge      | Yes       | User must check to proceed; tooltip provided            |
-| Room Type        | Yes       | Allows differentiating rules per accommodation category |
+Tourpaq validates the rule before saving:
+
+* **From/To is required**, and **To** must be later than **From**.
+* **Booking dates are optional.** If you leave booking dates empty, the rule is evaluated only by travel dates (and room type).
+* **Room type is required.**
+* **Duplicate/overlapping rules are restricted** when they have the same combination of:
+  * travel dates
+  * booking dates
+  * room type
+
+You can create two rules for the same travel period if they apply to **different room types**.
+
+***
+
+### Brand-specific configuration
+
+Some hotels support different text per brand.
+
+* **Default text** is the shared baseline.
+* A **brand tab** lets you maintain a brand-specific version.
+
+To update brand-specific content:
+
+1. Select the brand tab.
+2. Edit or create rules the same way as in **Default text**.
+3. Save.
+
+***
+
+### Troubleshooting
+
+#### I can’t save my rule
+
+Check these common causes:
+
+* **To** date is earlier than (or the same as) **From**.
+* A rule already exists that overlaps with the same travel/booking period and room type.
+* A required field is missing (especially **From/To**, **Room type**, or **Information for customer**).
+
+#### I don’t see a brand tab
+
+Brand tabs only appear when **custom text** is enabled for that hotel/brand.
+
+***
+
+### See also
+
+* [Hotels](../hotel/hotels.md)
+* [Hotel Web](../hotel/hotel-creation/hotel-web.md) (general hotel text shown online)
+* [Customer Information Booking Flow](customer-information-booking-flow.md) (how acknowledgements are enforced during booking)
+
+***
+
+### FAQ
+
+<details>
+
+<summary><strong>What is the difference between “Passenger Information” and “Customer Info” on the hotel Web tab?</strong></summary>
+
+* **Passenger Information** (this page) controls conditional, rule-based messages shown during booking (and potentially on documents), and can require acknowledgment.
+* **Customer Info** on the hotel’s **Web** tab is general hotel text used for online presentation and/or vouchers depending on configuration. See: [Hotel Web](../hotel/hotel-creation/hotel-web.md)
+
+If you’re unsure which one to use, choose **Passenger Information** when the message must apply only for certain dates or room types, or when it must be acknowledged.
+
+</details>
+
+<details>
+
+<summary><strong>Should I always enable “Acknowledge”?</strong></summary>
+
+Enable **Acknowledge** when:
+
+* The message is a mandatory condition (for example construction notice, local tax, special check-in requirements).
+* You want to ensure the user/customer actively confirms they have read it.
+
+Leave it disabled for purely informational notes.
+
+</details>
+
+<details>
+
+<summary><strong>When should I use booking dates?</strong></summary>
+
+Use **Booking Date From/To** when the message depends on when the booking was created.
+
+Example: “Bookings made before 1 May include free dinner.”
+
+If the message should apply to everyone traveling in a period (regardless of booking date), leave booking dates empty.
+
+</details>
+
+<details>
+
+<summary><strong>Can I create the same message for multiple room types?</strong></summary>
+
+Yes, but you must create a separate rule per **room type**.
+
+</details>
+
+<details>
+
+<summary><strong>Why does Tourpaq prevent overlapping rules?</strong></summary>
+
+Overlapping rules with identical conditions can lead to ambiguity about which message should apply. The system therefore restricts duplicates/overlaps for the same combination of travel period, booking period, and room type.
+
+</details>
+
+<details>
+
+<summary><strong>What happens if booking dates are empty?</strong></summary>
+
+If booking dates are empty, the rule is evaluated using only:
+
+* Travel dates (From/To)
+* Room type
+
+</details>
+
+<details>
+
+<summary><strong>I deleted a rule by mistake—can I restore it?</strong></summary>
+
+There is no in-page “undo”. Recreate the rule manually with the same dates, room type, and text.
+
+If you need audit/history for who changed what and when, check whether your setup includes an activity log for hotel configuration.
+
+</details>
