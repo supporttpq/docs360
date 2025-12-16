@@ -16,7 +16,7 @@
 
 * [All bookings](booking/all-bookings/README.md)
   * [View all bookings](booking/all-bookings/view-all-bookings.md)
-  * [Statistic in All bookings](booking/all-bookings/statistic-in-all-bookings.md)
+  * [Statistics in All bookings](booking/all-bookings/statistic-in-all-bookings.md)
   * [All bookings Totals](booking/all-bookings/all-bookings-totals.md)
 * [New Booking](booking/new-booking/README.md)
   * [New Booking](booking/new-booking/new-booking/README.md)

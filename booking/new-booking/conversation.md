@@ -2,48 +2,58 @@
 
 ### **Overview**
 
-The **Conversation History** tab displays all chat-based communications related to the current booking. This feature helps track direct interactions between the **Tourpaq user** (e.g., travel agent, customer service rep) and the **guest**.
+The **Conversation** (sometimes shown as **Conversation History**) tab displays the message log connected to the current booking. It helps you trace communication between a **guest** and your organization’s **Tourpaq users** (agents/support).
+
+Use this tab when you need to:
+
+* Review what was communicated with the guest earlier.
+* Identify which user handled the dialog.
+* Confirm timestamps, message content, and read status.
 
 ***
 
 ### **Purpose**
 
-* To **log** and **review** conversations for accountability and service continuity.
-* To ensure **all communications are documented** with time, sender, and status details.
-* To allow team members to **follow up** based on prior discussions with the guest.
+* Log and review booking-related conversations for service continuity.
+* Provide an auditable history of communication (who said what and when).
+* Support internal handover when multiple users work on the same booking.
 
 ***
 
 ### **Preconditions**
 
-* There must be an **existing booking**.
-* At least one **chat message** must have been exchanged between the Tourpaq user and the guest.
-* Messaging must be **enabled and supported** for the brand or booking flow used.
+* A booking must exist.
+* At least one message must have been exchanged for the booking.
+* Messaging must be enabled for the relevant brand/setup (availability can vary by implementation).
+
+{% hint style="info" %}
+If this tab is empty, it usually means that no message thread exists for the booking yet, or that messaging is not enabled for the brand/channel used.
+{% endhint %}
 
 ***
 
-### **Field Descriptions**
+### **How to use this tab**
 
-| **Field**     | **Description**                                                                   |
-| ------------- | --------------------------------------------------------------------------------- |
-| **Sent date** | The exact **date and time** the message was sent to or from the system.           |
-| **From**      | Indicates **who sent the message** — either the Tourpaq user or the guest.        |
-| **Message**   | Displays the **full content of the message** exchanged.                           |
-| **Read day**  | The **date and time** the message was read by the recipient (if available).       |
-| **Taken by**  | Shows the **Tourpaq user who received the message**, useful for internal routing. |
-
-***
-
-### **Instructions**
-
-1. Go to the relevant booking.
-2. Click on the **Conversation History** tab.
-3. Review the message entries listed chronologically.
-4. Use this tab to verify:
-   * Who sent/received each message.
-   * When messages were read.
-   * Which agent was assigned to or received guest replies.
+1. Open the relevant booking.
+2. Go to **Conversation** / **Conversation History**.
+3. Review the entries in chronological order.
+4. Use the log to verify:
+   * Who sent each message.
+   * Whether/when it was read.
+   * Which Tourpaq user was assigned to the incoming message (if applicable).
 
 {% hint style="warning" %}
-**Note**: This tab is read-only. Messages are logged automatically and cannot be edited or deleted.
+This tab is typically **read-only**. Messages are logged automatically and cannot be edited or deleted.
 {% endhint %}
+
+***
+
+### **Field descriptions**
+
+| Field         | Description                                                                                                                                                |
+| ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Sent date** | Date/time when the message was sent.                                                                                                                       |
+| **From**      | The sender of the message (guest or Tourpaq user).                                                                                                         |
+| **Message**   | The message text/content.                                                                                                                                  |
+| **Read day**  | Date/time when the recipient read the message. This can be empty if read receipts are not available for the channel or if the message has not been opened. |
+| **Taken by**  | The Tourpaq user who received/was assigned the message (useful when routing is enabled and multiple users can handle the same booking).                    |

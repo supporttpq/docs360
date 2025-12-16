@@ -9,35 +9,50 @@ description: >-
 
 ### **Overview**
 
-In addition, administrators can configure specific texts that will be automatically included on printed tickets generated during the booking process.
+On this page, administrators can configure **ticket texts** – reusable pieces of text that are automatically printed on customer tickets when the booking meets certain conditions.
+
+Use ticket texts for things like legal information, special conditions, extra fees, or important instructions that must always appear on specific types of tickets.
 
 ### **Purpose**
 
-* Ensure that customers receive **timely SMS notifications** related to their bookings.
-* Provide agencies with the ability to **customize printed tickets** by attaching specific texts to defined booking conditions (e.g., booking period, room type).
-* Maintain consistency and accuracy of communication with customers.
+Ticket texts help you:
 
-### **Administrator Capabilities**
+* Provide customers with **clear written information** directly on their tickets (e.g. terms, conditions, extra charges).
+* Allow agencies to **customize printed tickets** based on defined booking conditions (such as booking period, product, or room type).
+* Maintain **consistent and accurate communication** across all tickets, without having to rewrite the same messages each time.
 
-Administrators can perform the following actions on this page:
+### **Administrator capabilities**
 
-* **Use an existing text template** – Apply predefined ticket texts to bookings.
-* **Edit an existing text** – Modify the content, dates, or conditions of a stored ticket text.
-* **Insert a new text** – Create and configure a new text to be used in tickets.
-* **Delete a text** – Remove a text that is no longer relevant or valid.
+From this page, administrators can:
 
-### **Ticket Text Attributes**
+* **Use an existing text template** – Apply a predefined ticket text to the relevant bookings.
+* **Edit an existing text** – Update the content, valid dates, or conditions for an existing ticket text.
+* **Insert a new text** – Create and configure a new ticket text to be included on tickets.
+* **Delete a text** – Remove texts that are no longer needed or valid.
 
-Each ticket text entry includes the following information:
+### **Ticket text attributes**
 
-* **Text Type** – The category or purpose of the text (e.g., information, terms & conditions, cancellation notes).
-* **Identification Code**&#x20;
-* **Date Interval**&#x20;
-* **Text Content** – The actual message that will appear on the printed ticket.
+Each ticket text entry contains the following fields:
 
-### **Usage Example**
+* **Text type** – The category or purpose of the text (for example: information, terms & conditions, cancellation rules, special fees).
+* **Identification code** – An internal code used to identify or reference this text. This helps distinguish it from other texts with similar content.
+* **Date interval** – The start and end dates that define when this text is active. The text will only be printed on tickets for bookings within this date range.
+* **Text content** – The actual message that will appear on the printed ticket.
 
-* A hotel agency wants to add a note about **seasonal resort fees**.
-* The administrator creates a new ticket text, sets the **date interval** to cover the summer season, links it to the relevant **room type**, and enters the explanatory message.
-* When bookings are confirmed for that room and date range, the message will be automatically included on the printed ticket.
+### **Usage example**
 
+* A hotel agency wants to add a note about **seasonal resort fees** that only applies during the summer.
+* The administrator creates a new ticket text, sets the **date interval** to cover the summer season, links it to the relevant **room type** or product, and writes a short explanatory message.
+* For any booking that matches those conditions (date range and room type), the system automatically includes this message on the printed ticket.
+
+### **Best practices for ticket texts**
+
+{% hint style="info" %}
+When creating ticket texts, keep the following recommendations in mind:
+
+* **Be concise and clear** – Use simple language and keep the text as short as possible while still being precise.
+* **Avoid duplication** – Reuse existing ticket texts where you can, instead of creating very similar new ones.
+* **Use meaningful identification codes** – Choose codes that make it easy to understand the purpose of the text (for example: `SUMMER_FEE_2025`).
+* **Review dates regularly** – Periodically check date intervals so that outdated texts are either updated or deleted.
+* **Test before going live** – Always test with a sample booking to ensure the text appears on the right tickets and under the correct conditions.
+{% endhint %}

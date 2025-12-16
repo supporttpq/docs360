@@ -2,85 +2,115 @@
 
 ### **Overview**
 
-The **View All Bookings** page allows users to display, filter, and analyze all booking records and associated statistics within the system. It is an essential tool for tracking operational data, managing departures and arrivals, and generating reports based on passenger or booking details.
+The **View All Bookings** page lets you **search, filter, and review bookings** across one or more brands. From here you can quickly see who is travelling when, check key details, and move on to statistics or totals if needed.
 
-This page is accessible from the **Booking menu → All Bookings**.
+You access this page from **Booking → All Bookings**.
 
 ***
 
 ### **Purpose**
 
-The purpose of the **View All Bookings** page is to:
+Use **View All Bookings** to:
 
-* Provide a centralized view of all bookings in the system.
-* Allow advanced filtering by booking attributes such as dates, transports, hotels, users, and more.
-* Generate statistics per passenger across different business metrics.
-* Enable users to save specific filter combinations for future reporting and easy reuse.
+* See a centralized list of all bookings that match your filters.
+* Apply advanced filters on **dates, transports, hotels, users, brands**, and more.
+* Prepare the data set that will be used in **Statistics** and **Totals** views.
+* Save filter combinations as **views** so you can reuse them for recurring reporting.
 
 ***
 
 ### **Preconditions**
 
-Before using the **View All Bookings** page:
+Before using **View All Bookings**, make sure that:
 
-* You must be logged in with an active account that has access rights to view bookings.
-* A **Brand** must be selected for the filters and statistics to function properly.
-* Filters that work in date ranges (like Booking Start/End or Departure From/To) must be used **in pairs**.
+* You are logged in with an account that has permission to view bookings.
+* At least one **Brand** is selected – otherwise no bookings or statistics will be shown.
+* Date range filters (for example **Booking Start/End** or **Departure From/To**) are used **as pairs** with both **From** and **To** filled in.
+
+{% hint style="info" %}
+If you get no results, first check that a **Brand** is selected and that any date filters you use have **both** a start and an end date.
+{% endhint %}
 
 ***
 
-### **Instructions**
+### **How to use View All Bookings**
 
-**🔹 Step 1: Access the Page**
+#### 1. Open the page
 
-* Go to the top navigation menu.
-* Click on **Booking**.
-* Select **All Bookings**.
+* Go to **Booking → All Bookings**.
+* Select the **Brand** you want to work with.
 
-**🔹 Step 2: Apply Filters**
+#### 2. Set your filters
 
-Filters help narrow down the results. Here's what each filter does:
+Filters narrow down which bookings are shown.
 
-| **Filter Name**              | **Description**                                                              |
-| ---------------------------- | ---------------------------------------------------------------------------- |
-| **Brands**                   | Choose a specific brand or select all. This is required to display results.  |
-| **Booking Start & End Date** | Shows bookings created in this period. Must be used together.                |
-| **Departure Date From & To** | Filters bookings based on the departure interval. Used as a pair.            |
-| **Arrival Date From & To**   | Filters based on the arrival date range. Used as a pair.                     |
-| **Return From & To**         | Filters bookings by return dates. Used as a pair.                            |
-| **All Bookings**             | Select to override filters and view all bookings.                            |
-| **Filter by Bonus Code**     | Filters bookings with a specific bonus code applied.                         |
-| **User Owners**              | Filters bookings by the users who created or own them.                       |
-| **Transports**               | Filters by types of transport (bus, flight, etc.).                           |
-| **Real Transports**          | Filters by specific real transport entries assigned to bookings.             |
-| **Hotels**                   | Filters bookings by assigned hotels.                                         |
-| **Status**                   | Filters by booking status such as Confirmed, Pending, or Canceled.           |
-| **GDS Status**               | Filters based on the status of GDS (Global Distribution System) integration. |
+| **Filter name**              | **Description**                                                               |
+| ---------------------------- | ----------------------------------------------------------------------------- |
+| **Brands**                   | Select one or more brands. **Required** to display any results.               |
+| **Booking Start & End Date** | Shows bookings created in this period. Must be used together.                 |
+| **Departure Date From & To** | Filters bookings by departure date range. Must be used as a pair.             |
+| **Arrival Date From & To**   | Filters bookings by arrival date range. Must be used as a pair.               |
+| **Return From & To**         | Filters bookings by return date range. Must be used as a pair.                |
+| **All Bookings**             | Ignores date ranges and shows **all** bookings for the selected brand(s).     |
+| **Filter by Bonus Code**     | Shows only bookings where a specific bonus code was used.                     |
+| **User Owners**              | Filters bookings by the users/owners responsible for the booking.             |
+| **Transports**               | Filters by transport (for example flight, bus) used in the booking.           |
+| **Real Transports**          | Filters by specific real transport departures linked to bookings.             |
+| **Hotels**                   | Shows only bookings with the selected hotel(s).                               |
+| **Status**                   | Filters by booking status, for example **OK**, **Pending**, or **Cancelled**. |
+| **GDS Status**               | Filters by Global Distribution System (GDS) status, if GDS is used.           |
 
-You can filter by **one, several, or all** options in any category.
+You can combine **one, several, or all** filters as needed.
 
-> ℹ️ **Important:** For the date filters to work properly, they must be applied as complete pairs (e.g., both “from” and “to” values filled in).
+#### 3. Display the results
 
-**🔹 Step 3: Use Hidden Filter Options (Optional)**
+* After setting your filters, click **Display**.
+* The bookings list is updated to show only bookings that match your criteria.
+* Click a **Booking No.** in the list to open that booking.
 
-* Use the **Hide Filters** function to simplify the filter panel.
-* Hidden filters will still be included if **“Select All”** is checked in a category.
+#### 4. Save a view (optional)
+
+If you use the same filter combination regularly, you can save it as a view:
+
+1. Set your filters and click **Display** so the list matches what you want to reuse.
+2. Click **Save View** in the toolbar at the top of the page.
+3. Enter a name (for example, `Today's arrivals` or `Last week – Brand DK`) and confirm.
+
+Next time, select this saved view from the list to automatically re‑apply the same filters.
+
+#### 5. Manage saved views (rename or delete)
+
+To change or remove an existing saved view:
+
+<figure><img src="../../.gitbook/assets/image (561).png" alt=""><figcaption></figcaption></figure>
+
+1. In the views bar, click the **three dots (⋯)** button to open **Manage Views**.
+2. In the **Manage Views** dialog:
+   * **Rename a view** by editing its name directly in the text field.
+   * **Delete a view** by clicking the **trash can** icon on the row.
+   * (Optional) Use **Multiple delete** if you want to remove several views at once.
+3. Click **Save** to apply your changes.
+
+***
+
+### **Hide filters (optional)**
+
+If you work with many filters, you can hide the ones you rarely use:
+
+* Use **Hide filters** to collapse less-used filters and keep the panel clean.
+* A hidden filter is still included when you choose **Select all** inside that filter.
 * To show a hidden filter temporarily, use the **Show hidden** checkbox on that filter.
-* You can also hide filters globally (based on inactivity) via the **System Setup → Hide Filter** field.
+* Administrators can also hide filters automatically based on inactivity using **System Setup → Hide Filter**.
 
-**🔹 Step 4: Save the View**
-
-* After setting the desired filters, click **Save View** to reuse the same filter set later.
-* This is useful for recurring reports or operational checks.
+For a more detailed description of all filters and statistics tools, see [All bookings](./).
 
 ***
 
-### Best Practices
+### **Best practices**
 
-* Always double-check that a **Brand** is selected before displaying bookings or statistics.
-* Use complete date ranges to avoid filter errors.
-* When using filters across categories (e.g., Hotel + Transport + User), use **Display** to preview results before going to **Statistics**.
-* If filters look cluttered, use the **Hide Filters** option to simplify the interface without affecting results.
+* Always confirm that a **Brand** is selected before clicking **Display** or **Statistics**.
+* Use complete **date ranges** (both From and To) to avoid empty or misleading results.
+* Start with **few filters** when troubleshooting (for example, looking for a missing booking), then narrow down.
+* If the filter area feels cluttered, use **Hide filters** to focus only on what you need.
 
 <figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
