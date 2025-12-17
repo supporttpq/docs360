@@ -55,3 +55,20 @@ Before using or configuring the Gift Card Payment method, ensure:
 * This icon helps distinguish gift card transactions from regular cash payments at a glance.
 
 <figure><img src=".gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+### **FAQ**
+
+* **How is Gift Card Payment different from Cash Payment?**\
+  It is used to represent a company-issued gift card/voucher, but it behaves like a cash payment for accounting and processing.
+* **Why is “Is Cash Payment?” checked if it is not physical cash?**\
+  The setup uses the same cash-payment accounting/processing logic, even though the transaction represents a voucher-based payment.
+* **Where do I see that a booking was paid with a gift card?**\
+  When Gift Card Payment is registered, an icon appears in **Edit Booking → Economic tab**.
+* **Do I need special access to use this payment method?**\
+  You need access to the **Economic tab** in **Edit Booking**. Creating/configuring the method requires access to **Admin Panel → Financial Settings → Payment Methods**.
+* **Which accounts should I use for Debit Account and Credit Account?**\
+  The documentation specifies using the same **Debit Account** and **Credit Account** as Cash Payment.
+* **Should I enable Online, Bank import, Dankort, or similar flags?**\
+  No. The setup instructions state these flags are left unchecked.

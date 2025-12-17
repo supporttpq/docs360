@@ -2,131 +2,162 @@
 
 ### Overview
 
-The Payments section is designed to provide a comprehensive view and input interface for tracking and managing various types of payments made within the system. This includes payments made via cash, card, gift card, bank, and other methods associated with specific bookings, extra orders, and guides.
+**Payment Registration** is where you can **view payments** recorded in Tourpaq and **manually register new booking payments**.
+
+You can see:
+
+* **Booking payments** (payments connected to a specific booking)
+* **Guide payments** (payments handled by guides)
+
+{% hint style="info" %}
+You can **only create booking payments** in Payment Registration. **Guide payments are view-only** here.
+{% endhint %}
+
+### What you can do
+
+* Filter and review payment records
+* Register a new payment on a booking
+* Export payment results for reporting or audits
+
+### Before you start
+
+* You must be logged in with the required permissions (typically **Financial** or **Administrator**)
+* To register a payment, you need the **booking number/reference** and the **amount**
+* If you need to import many bank payments, use [Payment File Import](payment-file-import.md)
+* If a payment method is missing, check [Method of Payment](method-of-payment.md)
 
 ***
 
-### Purpose
+### View and filter payments
 
-This module facilitates:
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Payment Registration filters and results"><figcaption></figcaption></figure>
 
-* Viewing all recorded payments for selected criteria
-* Filtering and identifying payment records
-* Adding new payment entries associated with bookings, extra orders, and guides
-* Exporting payment data for reporting and audit purposes
+1. Set **Payment start date** and **Payment end date**.
+2. (Optional) Set **Departure start date** and/or **Departure end date**.
+3. (Optional) Select a **Payment method** (for example `CARD`, `CASHIN`, `BANKIN`, `GIFT`).
+4. (Optional) Use additional filters such as:
+   * **Debit/Credit**
+   * **Payment purpose** (for example _All Payments_ or _Booking Only_)
+   * **Guide**
+   * **Transport**
+   * **GiftCard No**
+   * **Booking reference/number**
+5. Click **Display** to load the results.
+
+{% hint style="warning" %}
+**Booking vs. guide payments:**
+
+* If you select a **Guide** (or **All guides**), Tourpaq shows **guide payments** (and booking-related filters may be hidden).
+* If you filter by **Booking**, **Departure dates**, or other booking-related values, Tourpaq shows **booking payments**.
+
+A payment is either a **booking payment** _or_ a **guide payment**—not both.
+{% endhint %}
+
+<details>
+
+<summary>How “empty” date filters work</summary>
+
+Leaving a date field empty means “don’t filter by this date”.
+
+* **Payment start date empty**
+  * If **Payment end date** is set, you’ll get payments **before** the end date.
+  * If **Payment end date** is also empty, Tourpaq will **not** filter by payment date.
+* **Payment end date empty**
+  * If **Payment start date** is set, you’ll get payments **after** the start date.
+  * If **Payment start date** is also empty, Tourpaq will **not** filter by payment date.
+* **Departure start/end date empty** works the same way for the departure date filter.
+
+Example:
+
+* Payment start date = `26.03.2025`
+* Payment end date = `31.03.2025`
+* Departure end date = `30.04.2025`
+
+This shows payments made between `26.03.2025` and `31.03.2025` for bookings departing **before** `30.04.2025`.
+
+</details>
 
 ***
 
-### Preconditions
+### Register a new booking payment
 
-To access and use the Payments section:
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Create payment form"><figcaption></figcaption></figure>
 
-* The user must be logged into the system with the appropriate role/permissions
-* Payments must be recorded via the booking or services interface for them to be visible
-* Data must exist for the selected filters (e.g., payment date, booking reference)
+{% stepper %}
+{% step %}
+### Open the create form
+
+Click **Create**.
+{% endstep %}
+
+{% step %}
+### Fill in the payment details
+
+Enter the key fields:
+
+* **Method of payment** (for example `BANKIN` or `CASHIN`)
+* **Payment date**
+* **Booking number/reference**
+* **Amount**
+
+Optional (only if relevant):
+
+* **GiftCard No**
+* **Extra order**
+* **Comments** (recommended so it’s easier to understand the payment later)
+{% endstep %}
+
+{% step %}
+### Save
+
+Click **Save** to register the payment.
+{% endstep %}
+{% endstepper %}
+
+{% hint style="info" %}
+If you don’t see your new payment in the list right away, adjust your **payment date filters** and click **Display** again.
+{% endhint %}
 
 ***
 
-### Instructions
+### Export payments
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+1. Apply the filters you want.
+2. Click **Export** to export the **currently displayed** results.
 
-#### **Filtering Data**
+***
 
-1. **Set Payment Start and End Dates** – Define the date range for displayed payments.
-2. **Departure Dates** – Optional filters for selecting trips by departure period.
-3. **Select Payment Method** – Choose from predefined types such as CARD, CASHIN, GIFT, etc.
-4. **Additional Filters** – Apply filters by:
-   * Debit/Credit
-   * Payment Purpose (e.g., All Payments, Booking Only)
-   * Guide
-   * Transport type
-   * GiftCard No
-   * Booking Reference
-5. Click **Display** to generate the list.
+### FAQ
 
-#### **Adding Payments**
+#### 1. Can I register guide payments here?
 
-1. Scroll to the top of the table and enter:
-   * **Payment No** – Usually auto-generated or manually entered
-   * **Payment Method** – Choose from the dropdown (e.g., BANKIN, CASHIN)
-   * **Payment Date** – Select from calendar picker
-   * **Dept Date**, **Booking**, **GiftCard No** – Optional fields to link payment
-   * **Extra Order**, **Amount**, **Comments** – Add payment context
-2. Ensure all mandatory fields are filled
-3. Click **Save** to commit the entry
+No. Payment Registration is used to **create booking payments**. Guide payments can be **viewed** here when you filter by **Guide**, but they are not created in this module.
 
-#### **Exporting Data**
+#### 2. I selected a guide and now I can’t filter by booking number—why?
 
-* Click the **Export** button in the top right corner to generate a report based on the currently displayed filter set
+When you filter by **Guide**, Tourpaq switches to **guide payments**, which are not connected to a booking in the same way, so booking-related filters may be hidden.
 
-Payment registration is a module that allows the making and viewing of payments.
+#### 3. What dates should I use if I can’t find a payment?
 
-The payments inserted in the system can be either booking payments or guide payments. Booking payments are made for a certain booking. Guide payments are made by a guide for a certain destination.
+Start by widening **Payment start date** and **Payment end date**, then click **Display**. If it’s tied to a booking, also check your **Departure** date filters.
 
-From payment registration, it is possible to insert only booking payments. But it is possible to view both booking and guide payments.
+#### 4. What’s the difference between Debit and Credit?
 
-When making a new payment these are the steps:
+* **Debit** typically means money coming **into** the company (a payment received).
+* **Credit** typically means money going **out** (for example a refund).
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+If you’re unsure, confirm with your finance setup.
 
-* Click on "Create button"
-* Choose a method of payment
-* Choose the payment date
-* Insert the booking number for which the payment is made
-* Insert the paid amount
-* Insert a comment
-* Save the payment
+#### 5. Where do imported bank payments show up?
 
-It is also possible to view all the payments from the system by using certain search filters:
+After a successful import, they appear in this list.
 
-* Payment start date
-* Payment end date
-* Departure start date
-* Departure end date
-* Payment method – it will be selected from all the payment methods that have been inserted in the system for the current company; it should also be possible to select no payment method
-* Debit/Credit payment type – the possible values will be Debit, Credit, no value
-* Booking number – the booking number will be filled in
-* Guide – it will be selected from all the guides that have been inserted in the system for the current company; it should also be possible to select “all guides” or “no guide”
-* Giftcard number
-* Resort (this filter should appear only when a guide or “all guides” is selected) – it will be selected from all the resorts in the system for the current company; it should also be possible to select no resort
-* Transport
+See [Payment File Import](payment-file-import.md).
 
-These are the default values:
+#### 6. A payment method is missing from the dropdown—what should I do?
 
-* Payment start date – today date
-* Payment end date – today date
-* Departure start date – no selected date
-* Departure end date – no selected date
-* Payment method – no payment method selected
-* Debit/Credit payment type – no selected type
-* Booking number – no inserted number
-* Guide – no guide selected
-* Resort – no resort selected
+Ask an Admin/Financial user to add or activate it in [Method of Payment](method-of-payment.md).
 
-When a date is left empty (no selected date), it will mean that the filter shouldn’t be taken into account.
+#### 7. Does Export include all payments in the system?
 
-Let’s consider these filters in order to understand how this should work:
-
-* Payment start date = 26.03.2025
-* Payment end date = 31.03.2025
-* Departure start date = no selected date
-* Departure end date =  30.04.2025
-
-All the payments for bookings with departure dates before 30.04.2025 that are made after the 1st should be displayed.
-
-Below are all the cases when the filters shouldn’t be taken into account:
-
-* Payment start date empty - if Payment end date value is filled in, all the records with payment date before the Payment end date value will be returned; if the Payment end date is left empty, the Payment date filter won’t be taken into account
-* Payment end date empty – if Payment start date value is filled in, all the records with payment date after the Payment start date value will be returned; if the Payment start date is left empty, the Payment date filter won’t be taken into account
-* Departure start date – if Departure end date value is filled in, all the payments done for bookings with departure date before the Departure end date value will be returned; if the Departure end date is left empty, the Departure date filter won’t be taken into account
-* Departure end date – if Departure start date value is filled in, all the payments done for bookings with departure date after the Departure start date value will be returned; if the Departure end date is left empty, the Departure date filter won’t be taken into account
-* Payment method – if no payment method is selected, the Payment method filter will not be taken into account
-* Debit/Credit – if no type selected, the Debit/Credit filter will not be taken into account
-* Booking number – if no number is filled in, there will be returned the payments for all the bookings
-* Guide – if no guide is selected, the filter won’t be taken into account
-* Resort – if no resort selected, the Resort filter won’t be taken into account
-
-If at least one of the filters, departure start date, departure end date, or booking number, is filled in, then the guide payments won’t be taken into account. That’s because these filters are linked to a booking, but not to a group of passengers (for which the guide payments are made).
-
-The reverse situation happens when a value is selected for guides (“all guides” or a certain guide); in this case, the booking payments won’t be taken into account. Even more, in this case, the filter for booking number should disappear, as a payment can be either a booking or a guide payment.
+No. Export uses the **current filters** and exports only the results you have displayed.

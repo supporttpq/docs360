@@ -168,3 +168,115 @@ The **Merge Customers** page helps administrators:
 | Merge  | Merges all to 1, deletes rest | Merges selected to 1, deletes selected |
 | Delete | Deletes entire group          | Deletes only selected                  |
 | Accept | Keeps all, skips future match | Accepts selected, skips future match   |
+
+***
+
+### FAQ
+
+<details>
+
+<summary><strong>What’s the difference between “Merge All”, “Accept All”, and “Delete All”?</strong></summary>
+
+* **Merge All**: combines the selected customers into the selected **Main** customer. Bookings and bonus points are consolidated to the Main, and the merged (subgroup) customer profiles are removed.
+* **Accept All**: keeps the customer profiles as-is, but marks them as handled so they are **hidden from future duplicate detection**.
+* **Delete All**: removes the selected customer profiles entirely.
+
+</details>
+
+<details>
+
+<summary><strong>Do I have to merge the entire group?</strong></summary>
+
+No. You can:
+
+* select a **Main** customer
+* choose only some customers in **Subgroup**
+
+Then run **Merge All** to merge only the selected subgroup into the Main.
+
+</details>
+
+<details>
+
+<summary><strong>What happens to bookings when I merge customers?</strong></summary>
+
+All bookings connected to the selected subgroup customers are automatically reassigned to the **Main** customer during the merge.
+
+</details>
+
+<details>
+
+<summary><strong>What happens to bonus points when I merge customers?</strong></summary>
+
+Bonus points from the selected subgroup customers are **combined** and added to the **Main** customer.
+
+</details>
+
+<details>
+
+<summary><strong>Can I undo a merge?</strong></summary>
+
+There is no “undo” action in the merge workflow.
+
+{% hint style="warning" %}
+Before merging, double-check that you selected the correct **Main** customer and that the **Subgroup** selection only includes records you intend to consolidate.
+{% endhint %}
+
+If you merged the wrong records, you typically need to correct the data manually (and, if relevant in your setup, recreate missing customer information).
+
+</details>
+
+<details>
+
+<summary><strong>Why did a duplicate group disappear after I clicked Accept/Merge/Delete?</strong></summary>
+
+Once a customer is processed (merged, deleted, or accepted), Tourpaq treats it as **handled** and it will not be proposed again in future duplicate matches—even if new records share the same email/phone/address.
+
+</details>
+
+<details>
+
+<summary><strong>When should I use the ZIP Code + Address grouping instead of a normal merge?</strong></summary>
+
+Use **ZIP Code + Address** grouping when multiple customers should be connected to the same household/address, but you **do not** want to consolidate all bookings into a single profile.
+
+In this scenario:
+
+* you select a **parent customer**
+* other customers become **linked doublets**
+* bonuses/rewards are redirected to the parent, while linked customers keep their own bookings
+
+</details>
+
+<details>
+
+<summary><strong>Why do I have to choose a “parent customer” when there are future bookings?</strong></summary>
+
+For ZIP Code + Address grouping, Tourpaq requires a stable “main” reference for future handling.
+
+If any customer in the group has **future bookings**, one of those customers must be chosen as the **parent**.
+
+</details>
+
+<details>
+
+<summary><strong>What should I do if a group is very large (performance/handling)?</strong></summary>
+
+For large groups, it is usually faster and safer to:
+
+1. merge in **smaller subgroups** first
+2. finish with a final group-level action
+
+This helps you keep control and reduces the risk of selecting the wrong records.
+
+</details>
+
+<details>
+
+<summary><strong>Who typically has access to the Merge Customers tool?</strong></summary>
+
+Access is usually limited to users with customer-management permissions (often **Administrators**).
+
+If you don’t see the menu item, it may be due to your role/permissions.
+
+</details>

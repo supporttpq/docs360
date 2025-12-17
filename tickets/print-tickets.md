@@ -1,108 +1,172 @@
 # Print Tickets
 
-### Send Ticket
+### Print Tickets
+
+Use **Print Tickets** when you need to generate a ticket PDF for a single booking—either to print it, save it, or send it as an e-ticket email to the customer.
 
 <figure><img src="../.gitbook/assets/image (161).png" alt=""><figcaption></figcaption></figure>
 
-### Overview
+***
 
-The **Print Tickets** interface allows users to **generate and send travel tickets** for a specific reservation. It is designed to offer flexible options for printing, emailing, or re-sending electronic tickets (E-tickets).
+### What you can do on this page
+
+* **Print** a ticket for a specific booking.
+* **Send an e-ticket by email** to the customer.
+* **Send a copy to an alternative email address** (for example, a colleague or a group leader).
+* **Reprint tickets in bulk per transport** (tab at the top).
 
 ***
 
-### Purpose
+### Before you start
 
-This module facilitates:
+* You need a **valid booking number**.
+* The booking should be **confirmed** and contain products that generate a ticket.
+* You must have access rights to use ticket actions.
 
-* Quick generation of printable tickets for travelers.
-* Sending E-tickets to customers via email.
-* Reprinting tickets per transport when needed (via the tab at the top).
-
-It is primarily used in back-office workflows by customer support, reservation agents, or ticketing coordinators.
-
-***
-
-### Preconditions
-
-* A valid booking number must exist in the system.
-* The booking must be confirmed and contain travel components eligible for ticketing.
-* User must have permissions to access and execute ticketing actions.
-
-***
-
-### Fields and Options
-
-| Field / Option        | Description                                                                                                                                          |
-| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Booking No**        | Enter the unique booking number for which the ticket is to be printed or sent. The system will auto-fill the customer field if the booking is valid. |
-| **Customer**          | Read-only field showing the customer name linked to the booking. Populated automatically based on the Booking No.                                    |
-| **Print One Ticket**  | When checked, only one ticket will be printed for the whole booking                                                                                  |
-| **Send E-Ticket**     | If checked, the ticket will be sent via email to the customer associated with the booking.                                                           |
-| **Copy to e-mail**    | When enabled, the system will also send a copy of the E-ticket to the email address entered in the “Alternative Email” field.                        |
-| **Alternative Email** | Optional field to specify an alternative email address for ticket delivery                                                                           |
-
-
-
-***
-
-### Instructions for Use
-
-1. **Enter a valid Booking No**.
-   * The system will auto-populate the customer name.
-2. **Choose ticket delivery options**:
-   * Check **Print One Ticket** if only one combined ticket is needed.
-   * Select **Send E-Ticket** to email the ticket to the customer.
-   * Optionally, enable **Copy to e-mail** and enter an **Alternative Email** to CC someone else.
-
-{% hint style="warning" %}
-Tip: Use the **Reprint Per Transport** tab if tickets are split by transport legs and need to be re-sent individually.
+{% hint style="info" %}
+If you only need to check whether a ticket email was sent (and whether it failed), use [E-tickets Overview](../e-tickets-overview.md).
 {% endhint %}
 
-### Reprint Per Transport
+***
+
+### Send or print a ticket (single booking)
+
+{% stepper %}
+{% step %}
+### 1) Enter the booking number
+
+In **Booking No**, enter the booking number.
+
+* If the booking is valid, **Customer** is filled in automatically.
+* If the customer is not filled in, re-check the booking number and that you have access to the booking.
+{% endstep %}
+
+{% step %}
+### 2) Choose what you want to do
+
+Select the options that match your task:
+
+* **Print One Ticket**
+  * Prints **one combined ticket** for the whole booking (instead of separate tickets where applicable).
+* **Send E-Ticket**
+  * Sends the ticket by email to the **customer email address on the booking**.
+* **Copy to e-mail**
+  * Sends an extra copy to the email entered in **Alternative Email**.
+* **Alternative Email**
+  * Optional. Use when the copy should go to a different recipient (e.g., tour leader, agent, or internal inbox).
+{% endstep %}
+
+{% step %}
+### 3) Generate / send
+
+Complete the action (print or send) using the page’s available action button(s).
+
+{% hint style="warning" %}
+If you are sending an e-ticket and the customer does not receive it, verify the email address on the booking and check your email log in [E-tickets Overview](../e-tickets-overview.md).
+{% endhint %}
+{% endstep %}
+{% endstepper %}
+
+***
+
+### Reprint Per Transport (bulk)
+
+Use **Reprint Per Transport** when you need to print or reprint tickets for **many bookings** connected to specific transports (for example, upcoming departures).
 
 <figure><img src="../.gitbook/assets/image (162).png" alt=""><figcaption></figcaption></figure>
 
-### Overview
+#### When this is useful
 
-The **Reprint Per Transport** module is a specialized tool for batch reprinting tickets based on transport segments. It allows users to filter bookings by transport-related criteria such as travel date, booking date, length of stay, and transport type, and to print all matching tickets in one go.
+* Preparing printed ticket packs for **airport/station check-in**.
+* Printing tickets for a **specific departure date range**.
+* Reprinting after changes (for example, updated meeting points, timing, or other ticket content).
 
-This feature is particularly useful for preparing grouped ticket printouts for airport or station check-ins, charter operations, or tour departures.
+#### Requirements
+
+* Bookings must have **transport data** assigned.
+* Tickets must already exist (this is primarily a **reprint** workflow).
+
+#### Filters (what they mean)
+
+* **Booking period**: filters by when the booking was created.
+* **Departure period**: filters by the actual departure date.
+* **Length**: filters by travel duration (if used in your setup).
+* **Transports**: select one or more transports/routes to include.
+
+#### Bulk reprint steps
+
+{% stepper %}
+{% step %}
+### 1) Open the tab
+
+Open **Reprint Per Transport** from the top of the **Print Tickets** page.
+{% endstep %}
+
+{% step %}
+### 2) Narrow down the bookings
+
+Set **Booking period** and/or **Departure period**.
+
+Optionally choose **Length** if you want to limit the results further.
+{% endstep %}
+
+{% step %}
+### 3) Select the transport(s)
+
+Click **Transports** and select the transport(s) you want to print tickets for.
+{% endstep %}
+
+{% step %}
+### 4) Print
+
+Click **Print** to generate the tickets for all matching bookings.
+{% endstep %}
+{% endstepper %}
 
 ***
 
-### Purpose
+### FAQ
 
-* To reprint tickets for **multiple bookings tied to specific transports**.
-* To enable **bulk printing** based on departure, booking period, or travel duration.
-* To support **operational readiness** for outbound/inbound logistics.
+#### Why can’t I send the e-ticket?
 
-***
+Common reasons:
 
-### Preconditions
+* The booking is not confirmed yet.
+* You do not have the required access rights.
 
-* Transport data must be available and correctly assigned to bookings.
-* Tickets must have already been generated (this is a **reprint** tool, not initial issue).
-* User must have access rights to print or manage ticketing actions.
+#### The customer didn’t receive the e-ticket—what should I check?
 
-***
+* Confirm the **email address on the booking** is correct.
+* Check **spam/junk** on the customer side.
+* Look up the email in [E-tickets Overview](../e-tickets-overview.md) to see whether it was **sent**, **failed**, or **not sent**.
 
-### Fields and Options
+#### What’s the difference between “Send E-Ticket” and “Copy to e-mail”?
 
-| Field                      | Description                                                                                                                                                                                          |
-| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Booking period**         | Filters bookings by the date range when they were created. Useful for reprinting tickets only for recent or specific sales periods. Format: `Start - End`.                                           |
-| **Departure period**       | Filters bookings by the actual travel departure date range. Ideal for targeting upcoming or specific departures.                                                                                     |
-| **Length**                 | Allows selection of travel duration (in nights/days) to further filter bookings. Dropdown menu with standard travel lengths.                                                                         |
-| **Transports**             | Opens a modal to select one or more **transport routes**, such as outbound flights, bus transfers, or return legs. The selected transports will determine which tickets are included for reprinting. |
-| **No transports selected** | Placeholder message until a transport is selected. Changes dynamically based on user input.                                                                                                          |
-| **Print (button)**         | Executes the print job for all bookings that match the above filters. The result is a batch of tickets prepared for printing or saving as PDF.                                                       |
+* **Send E-Ticket** sends the ticket to the **customer email** stored on the booking.
+* **Copy to e-mail** sends an extra copy to the address you type in **Alternative Email**.
 
-***
+#### Should I use “Print One Ticket”?
 
-### Instructions for Use
+Use **Print One Ticket** when you want a **single combined PDF** for the whole booking (useful for families/groups).
 
-1. Open the **Reprint Per Transport** tab from the **Print Tickets** page.
-2. Use the **Booking period** and/or **Departure period** filters to narrow down the list of relevant bookings.
-3. Optionally, select a **Length** of stay to filter further.
-4. Click on **Select transports** and choose the desired transport(s).
-5. Once filters are applied, click the **Print** button in the top-right corner.
+If you need tickets separated (for example, per transport leg or operational handling), leave it unchecked.
+
+#### I need tickets only for one transport leg—what should I do?
+
+Use the **Reprint Per Transport** tab and filter by the relevant transport. This is the easiest way to reprint tickets for a specific outbound/return leg.
+
+#### My browser doesn’t download/open the ticket PDF—what can I do?
+
+* Allow **pop-ups** for Tourpaq (some browsers open the PDF in a new tab/window).
+* Try downloading the PDF instead of opening it in-browser.
+* If you use a company network, check whether a browser security policy is blocking downloads.
+
+#### Does the ticket reflect recent booking changes?
+
+Yes—when you print/send a ticket, Tourpaq generates it from the booking’s current data. If you updated the booking (names, dates, products, etc.), reprint/resend the ticket to share the latest version.
+
+#### Do ticket attachments also get sent when I send an e-ticket?
+
+Yes—if your email template includes a ticket PDF, any configured ticket attachments will be included as well.
+
+If you are an administrator and need to configure attachments, see [Tickets attachments](../email-setup/tickets-attachments/).

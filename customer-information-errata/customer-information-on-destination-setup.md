@@ -1,95 +1,245 @@
 # Customer Information on Destination setup
 
+{% hint style="info" %}
+**How to access:** **Setup → Destinations** → open a destination → **Passenger Information**.
+
+This is where you define destination-specific messages shown to the customer (and/or the booking user) in the booking flow and on customer-facing outputs.
+{% endhint %}
+
 ### Overview
 
-This documentation explains how to configure and manage customer-specific information that appears on tickets and other booking-related outputs, based on the **destination** selected. It provides detailed explanations of the setup process, validation rules, and brand-specific customization.
+Use **Passenger Information** on a destination to add important destination-specific text (often called _Customer information/errata_) that should appear on:
+
+* **Tickets**
+* **WebBooking (WB)**
+* The **booking flow / booking confirmation** screens
+
+You can also require the message to be **acknowledged** before the booking can be completed.
 
 ### Purpose
 
-To ensure that destination-based customer information is accurately displayed across customer-facing outputs and acknowledged by the end-user when required.
+Make sure customers (and staff) see the right information for the selected destination, for the correct travel period—and (optionally) confirm they have read it.
 
 ### Preconditions
 
-* The user has administrative access to the back-office.
-* Destinations are already defined within the system.
-* Brands have "Use custom text" enabled if brand-specific text is required.
+* You have **administrative access** to Tourpaq Office.
+* The destination already exists in **Setup → Destinations**.
+* If you want brand-specific wording, the brand must have **Use custom text** enabled.
 
-### Navigation Path
+### Navigation path
 
-**Setup → Destinations → Passenger Information tab**
+**Setup → Destinations → (open destination) → Passenger Information**
 
 ***
 
-### Step-by-Step Instructions
+### How it works (what you see on the Passenger Information tab)
 
-#### Step 1: Access Destinations
+On the **Passenger Information** tab you’ll typically see:
 
-* Navigate to **Setup → Destinations -** The system displays a list of all destinations defined for the company.
+* A list of existing rules/entries (or **“There are no entries to show”** if none exist)
+* **Create**, **Edit**, and **Delete** actions
+* Pagination (25 rows per page)
+* A **Default text** tab
+* One tab per brand (only for brands where **Use custom text** is enabled)
 
-#### Step 2: Select a Destination
+#### Default text vs. brand-specific text
 
-* Click on the destination you wish to configure - The destination edit page is displayed.
+* **Default text** is the “base” message.
+* Brand tabs let you **override only the message text** for that brand, while keeping the same date logic.
 
-#### Step 3: Go to "Passenger Information" Tab
+***
 
-* All existing rules are listed.
-* If no rules exist, the message **"There are no entries to show"** appears.
-* The tab includes a **pagination system** (25 entries per page) and is sorted with the latest entry on top.
-* Each entry includes **Edit** and **Delete** options.
-* A **Default Text** tab is available to define global rules.
-* Brands with **"Use custom text"** enabled will have a dedicated tab for rule customization.
+### Create a new destination message
 
-#### Step 4: Press "Create"
+{% stepper %}
+{% step %}
+### Open the destination
 
-* A form appears to define a new customer information rule, with **Save** and **Cancel** options.
+1. Go to **Setup → Destinations**.
+2. Click the destination you want to configure.
 
-#### Step 5: Fill in Rule Data
+You are now on the destination edit page.
+{% endstep %}
 
-| Field                                  | Type            | Description                                                                                                       |
-| -------------------------------------- | --------------- | ----------------------------------------------------------------------------------------------------------------- |
-| From (departure date)                  | Date (required) | Start interval for departure date.                                                                                |
-| To (departure date)                    | Date (required) | End interval for departure date.                                                                                  |
-| Booking date from                      | Date (optional) | Start of the booking date interval.                                                                               |
-| Booking date to                        | Date (optional) | End of the booking date interval.                                                                                 |
-| Information for the customer on ticket | Text            | Info displayed on the ticket, WB, and booking page. Opens in separate pop-up.                                     |
-| Acknowledge                            | Checkbox        | If enabled, the user must acknowledge the message during checkout and booking flow. Tooltip explains its purpose. |
+{% step %}
+### Go to Passenger Information
 
-<figure><img src="../.gitbook/assets/image (22) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Open the **Passenger Information** tab to view existing entries.
+{% endstep %}
 
-**Validation Notes:**
+{% step %}
+### Click Create
 
-* **Date Interval Rules**:
-  * "To" must be later than "From".
-  * Booking dates are optional, but rules using them are validated differently.
-* **Overlapping Validation**:
-  * Prevents multiple overlapping rules.
-  * Rules with NULL booking dates are compared only to other NULL booking date rules.
-  * Rules with set booking dates are only compared against other rules with set booking dates.
+Click **Create** to add a new entry.
 
-#### Step 6: Press "Save"
+A form opens with **Save** and **Cancel**.
+{% endstep %}
 
-* Entry is saved.
-* A success message confirms the action.
-* If validations fail, an explicit **warning message** appears.
+{% step %}
+### Fill in the rule fields
 
-#### Step 7: Press "Cancel" (after Step 5)
+#### Travel period (required)
 
-* Entry is discarded.
-* No data is saved.
+* **From**: start date of the period where the message applies
+* **To**: end date of the period where the message applies
 
-#### Step 8: Press "Edit" on an Entry  - The rule is opened in **edit mode,** and all fields are editable.
+#### Booking date period (optional)
 
-#### Step 9: Press "Delete" on an Entry
+* **Booking date from**: only show/apply the message for bookings created on/after this date
+* **Booking date to**: only show/apply the message for bookings created on/before this date
 
-* A confirmation dialog appears.
-* Upon confirmation, the entry is removed and a success message is displayed.
+#### Message text
 
-#### Step 10: Brand-Specific Configuration
+* **Information for the customer on ticket**: the text shown on ticket/WB/booking screens (opens in a pop-up editor)
 
-1. Navigate to a specific brand tab.
-2. Press "Edit" on an entry.
+#### Acknowledgement
 
-* All entries defined on "Default text" tab are displayed
-* Only "Information for customer on ticket" is enabled and can be edited. The information can be customized on each brand.
+* **Acknowledge** (checkbox): when enabled, the user/customer must actively confirm the message during the booking flow.
 
-3. Press "Save - Value is saved on that specific brand
+<figure><img src="../.gitbook/assets/image (22) (1) (1) (1).png" alt="Passenger Information on Destination"><figcaption></figcaption></figure>
+
+{% hint style="warning" %}
+If you enable **Acknowledge**, the booking flow will block completion until all required messages are confirmed.
+{% endhint %}
+{% endstep %}
+
+{% step %}
+### Save
+
+Click **Save**.
+
+* If the entry is valid, you’ll see a success message.
+* If something is wrong, you’ll see a warning/error explaining what needs to be fixed.
+{% endstep %}
+{% endstepper %}
+
+***
+
+### Validation rules (important)
+
+#### Date range checks
+
+* **To** must be later than **From**.
+
+#### Overlap checks (to avoid conflicting messages)
+
+The system prevents multiple entries that cover the **same period**.
+
+* Entries **without booking-date limits** are compared only with other entries that also have **no booking-date limits**.
+* Entries **with booking-date limits** are compared only with other entries that also have **booking-date limits**.
+
+{% hint style="info" %}
+If you need two different messages, place them in **non-overlapping periods** (for example split the travel period into two ranges).
+{% endhint %}
+
+***
+
+### Edit or delete an existing entry
+
+#### Edit
+
+1. Click **Edit** on the entry.
+2. Update the fields.
+3. Click **Save**.
+
+#### Delete
+
+1. Click **Delete** on the entry.
+2. Confirm the deletion.
+
+The entry is removed and a success message is shown.
+
+***
+
+### Brand-specific configuration (override the text per brand)
+
+Use this when the **same rule** (same dates) should have different wording for different brands.
+
+1. Open the destination’s **Passenger Information** tab.
+2. Go to the relevant **brand tab**.
+3. Click **Edit** on the entry.
+
+You will see the rules from **Default text**, but only **Information for the customer on ticket** is editable.
+
+4. Update the text and click **Save**.
+
+***
+
+### FAQ
+
+<details>
+
+<summary><strong>Where will the destination message be shown?</strong></summary>
+
+It can be shown on **tickets**, in **WebBooking**, and in parts of the **booking/confirmation flow**.
+
+If **Acknowledge** is enabled, the booking flow will require an explicit confirmation (checkbox) before continuing.
+
+</details>
+
+<details>
+
+<summary><strong>What’s the difference between “Default text” and a brand tab?</strong></summary>
+
+* **Default text** is the standard message.
+* A **brand tab** lets you override the message wording for that brand only (the date periods and rule logic stay the same).
+
+</details>
+
+<details>
+
+<summary><strong>When should I use “Booking date from/to”?</strong></summary>
+
+Use booking-date limits when the message should only apply to bookings created during a certain sales period (for example: “This applies to bookings made after 1 Jan”).
+
+If you want the message to apply to _all_ bookings for a travel period, leave booking dates empty.
+
+</details>
+
+<details>
+
+<summary><strong>I can’t save my entry. What should I check first?</strong></summary>
+
+Most save issues are caused by:
+
+* **To** being earlier than (or equal to) **From**
+* The new entry **overlaps** an existing entry in a way the system does not allow
+
+Adjust the dates (or split the period) and try again.
+
+</details>
+
+<details>
+
+<summary><strong>Can I have multiple destination messages for the same travel period?</strong></summary>
+
+Not if they overlap. The system blocks overlapping rules to prevent conflicting information.
+
+If you need multiple messages, consider:
+
+* Combining them into one message, or
+* Splitting the travel period into smaller non-overlapping ranges
+
+</details>
+
+<details>
+
+<summary><strong>I edited the text on a brand tab, but I still see the default text. Why?</strong></summary>
+
+Common causes:
+
+* The brand does not have **Use custom text** enabled
+* You edited the wrong brand tab
+* The output you’re checking is tied to a different brand than expected
+
+If you’re unsure which brand the booking uses, verify the booking’s brand first.
+
+</details>
+
+<details>
+
+<summary><strong>What happens if I enable “Acknowledge”?</strong></summary>
+
+The message becomes mandatory to confirm during the booking flow. The user/customer must check the confirmation checkbox(es) before they can proceed.
+
+</details>
