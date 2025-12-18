@@ -1,34 +1,107 @@
 # Remove pax on outbound or homebound only
 
-### **Overview**
+### Overview
 
-This page shows the correct behavior of the "No-show" functionality when removing a passenger (pax) from either the outbound or homebound segment of a trip within a booking. The functionality allows setting a passenger as a "No-show" for a specific flight without altering the rest of the booking and ensures consistent data handling even when transport changes occur.
+### What this does (and does not do)
 
-### **Purpose**
+**No-show does:**
 
-The purpose of this page is to ensure that:
+In Tourpaq Office, you set this on the booking’s **Travel plan** per passenger and per flight line.
 
-* The "No-show" checkbox can be individually set per passenger and flight segment.
-* The state of the "No-show" checkbox remains unchanged when editing the booking (as long as the transport for the passenger remains unchanged).
-* When a transport is changed, the system treats the change as new data and the "No-show" setting is cleared accordingly.
+Example: the passenger travels outbound, but not homebound.
 
-### **Preconditions**
+Use **No-show** when a passenger should be removed from **one direction only**.
 
-* Access to the booking module is required.
-* A booking must either already exist or be created for testing.
-* The user must have access rights to view and modify travel plans.
+* Mark a passenger as not travelling on a specific flight line.
+* Let you mark outbound and homebound independently.
 
-### **Test Steps and Expected Results**
+**No-show does not:**
 
-| **Steps**                                                                                  | **Expected Results**                                                                                                                                                                                                                         |                                                                                                                                    |
-| ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| 1. Create a new booking or edit an existing one                                            | The edit page of the booking is displayed.                                                                                                                                                                                                   | <div><figure><img src="../../../.gitbook/assets/image (264).png" alt=""><figcaption></figcaption></figure></div>                   |
-| 2. In the "Details" part, go to the **Travelplan** tab                                     | A new **"No-show"** column appears with a checkbox for each line in the travel plan. The default state is **not enabled**. Each line shows flight data per passenger, allowing the "No-show" status to be independently set for each flight. | <div><figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure></div> |
-| 3. Set the **"No-show"** checkbox for the desired passenger and flight                     | The checkbox is set. No "Save" action is required. It's also not necessary to edit the passenger individually to enable "No-show".                                                                                                           | <div><figure><img src="../../../.gitbook/assets/image (2) (1) (3).png" alt=""><figcaption></figcaption></figure></div>             |
-| 4. Edit the booking without changing the transport for the passenger                       | The already set **"No-show"** checkbox remains set and unchanged.                                                                                                                                                                            | <div><figure><img src="../../../.gitbook/assets/image (4) (3).png" alt=""><figcaption></figcaption></figure></div>                 |
-| 5. Edit the booking with a change in transport (e.g., flight date, transport, or interval) | The **"No-show"** checkbox will be cleared, treating the transport as new data.                                                                                                                                                              | <div><figure><img src="../../../.gitbook/assets/image (6) (3).png" alt=""><figcaption></figcaption></figure></div>                 |
+* Remove the passenger from the booking entirely.
+* Automatically carry over if you change the passenger’s transport.
 
-### **Notes**
+{% hint style="info" %}
+Terminology:
 
-* This page ensures that the **No-show** status is preserved under stable transport conditions.
-* Transport updates are treated as a new context for the passenger, and therefore previous "No-show" flags are removed to reflect the updated itinerary.
+* **Pax** = passenger.
+* **Outbound** = travelling out.
+* **Homebound** = travelling back home.
+{% endhint %}
+
+***
+
+### Before you start
+
+* You can open and edit bookings in Tourpaq Office.
+* You have permission to edit the booking’s **Travel plan**.
+
+***
+
+### Mark a passenger as No-show for outbound or homebound
+
+{% stepper %}
+{% step %}
+### 1. Open the booking
+
+Open an existing booking (or create one).
+
+Make sure the booking is in **edit** mode.
+
+<figure><img src="../../../.gitbook/assets/image (264).png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
+
+{% step %}
+### 2. Go to the Travel plan
+
+In **Details**, open the **Travel plan** tab.
+
+You will see a **No-show** column with a checkbox per travel line.
+
+Each line is tied to a **passenger + flight segment**.
+
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
+
+{% step %}
+### 3. Set No-show on the specific line
+
+Tick **No-show** for the passenger on the outbound or homebound line you need.
+
+The change is saved immediately.
+
+You do not need to open the passenger screen first.
+
+<figure><img src="../../../.gitbook/assets/image (2) (1) (3).png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
+
+{% step %}
+### 4. Verify it stays set when you only edit other booking data
+
+Edit the booking, but keep the passenger’s transport unchanged.
+
+The No-show checkbox stays set.
+
+<figure><img src="../../../.gitbook/assets/image (4) (3).png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
+
+{% step %}
+### 5. Know when No-show is reset
+
+If you change the passenger’s transport data, No-show is cleared.
+
+Common changes:
+
+* Changing flight date or interval
+* Switching transport/flight
+
+This happens because the system treats the updated transport as **new travel data**.
+
+<figure><img src="../../../.gitbook/assets/image (6) (3).png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
+{% endstepper %}
+
+### Notes&#x20;
+
+* No-show is set **per line**. One passenger can be No-show outbound only.
+* No-show stays set until the transport line changes.
+* If you change transport, re-check No-show afterwards if still needed.
