@@ -141,3 +141,34 @@ For configuration of automated messages and related alerts, see:
 * [Notification on Dashboard Stop Sale](../stop-sales/notification-on-dashboard-stop-sale.md) – specific behavior of **Stop Sales** notifications on the Dashboard.
 * [Service Case – Notification](../service-cases/notification.md) – notifications related to customer **Service Cases** and new incoming e-mails.
 * [Customer information (errata)](../customer-information-errata/) – how special guest notifications are shown based on stay and booking periods.
+
+
+
+### **FAQ**
+
+#### I see a Stop Sales notification. Where do I handle it?
+
+In both cases, fix the root cause in the booking or setup.
+
+* **Error Bkg**: something failed during save or processing.
+* **Warnings**: something looks off, but may still be bookable.
+
+#### What’s the difference between “Error Bkg” and “Warnings”?
+
+A booking with the status "Error Booking" represents a booking that is not finalized (some changes still need to be made to it), while status "Warnings" represent bookings that have the status OK, and which warn you that there is a problem with that booking (travel insurance was not sent, etc.)
+
+#### What should I prioritize first?
+
+Example: **Unpaid Bkg** and **Warnings** at the same time.
+
+Yes. One booking can trigger multiple issues at once.
+
+#### Can the same booking show up under multiple categories?
+
+1. Save the booking changes.
+2. Go back to **Notifications**.
+3. Refresh the list or wait for the next update cycle.
+
+Notifications clear when the underlying issue is gone and the checks rerun.
+
+***
