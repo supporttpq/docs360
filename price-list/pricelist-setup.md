@@ -208,20 +208,6 @@ When **Difference from Price** is checked, after Run, discount values are calcul
 
 ### FAQ
 
-This FAQ helps administrators understand how to use Pricelist Setup to create, copy, and maintain price lists in Tourpaq.
-
-***
-
-#### What is Pricelist Setup?
-
-Pricelist Setup is the admin interface used to create and manage price lists for transport and hotel combinations.
-
-#### Who can access Pricelist Setup?
-
-Only users with administrator permissions can access and use this feature.
-
-***
-
 #### How do I create a new price list?
 
 Use Create or Copy Price List, then select brand, transport, fix quota, hotel, and the rooms to include.
@@ -230,15 +216,9 @@ Use Create or Copy Price List, then select brand, transport, fix quota, hotel, a
 
 This usually happens when fix quotas do not cover the hotel allotment period or required data is missing.
 
-***
-
 #### Can I copy an existing price list?
 
 Yes. You can copy prices from an existing price list within the same brand.
-
-#### What is the Different Days option?
-
-It offsets the destination departure date by a number of days compared to the source date.
 
 #### What copy scopes are available?
 
@@ -248,8 +228,6 @@ You can copy prices from one transport to all brand transports, from one hotel t
 
 All checkboxes in the Price Difference section should be selected, even if the values are zero.
 
-***
-
 #### What filters are available in Pricelist Setup?
 
 You can filter by departure date, resort, transport, transport type, hotel, allotment type, room, fix quota, hotel name, and stay length.
@@ -257,8 +235,6 @@ You can filter by departure date, resort, transport, transport type, hotel, allo
 #### Why do no rows appear after filtering?
 
 Common causes are missing brand context, incorrect date range, or no price lists created for the selected criteria.
-
-***
 
 #### What information is shown in the price list grid?
 
