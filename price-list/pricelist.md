@@ -224,3 +224,50 @@ This function allows prices to be **automatically recalculated when the Transpor
 * Example: If **P1** was previously updated using the **Also Update Prices on Transports** tool, and the **Transport Price** is modified, **P1** will be recalculated accordingly based on the price list for that transport.
 
 ![!](https://docs.tourpaq.com/assets/images/updatePriceBasedOnTransport-b76eb367aade9faa3c6b2428cdd5760c.png)
+
+### **FAQ**
+
+**What is a Price List in Tourpaq?**\
+A price list defines how tour packages are priced in Tourpaq. It combines transport, hotel room types, and other conditions (discounts, child rates, groups) with a departure date to set the selling price and control availability. Without a valid price list, even if seats and rooms are available, the product cannot be booked.&#x20;
+
+**Why is a pricelist important?**\
+It is the foundation for selling trips through agencies, web booking, and the office. It links prices with allotments so that available seats and rooms can actually be sold.&#x20;
+
+**How do I create a new price list?**\
+You create a price list by choosing a brand, transport option, a fixed quota, hotel, and rooms. After those selections, you can create the new price list.&#x20;
+
+**What happens if no prices are generated?**\
+If no prices are created during the process, the system will warn you. This often happens when transport and hotel allotments are missing or not properly set, and the price list creation must be reviewed.&#x20;
+
+**How can I find existing price lists?**\
+Use the search tools at the top of the price list page. You can filter by brand, transport, hotel, room type, date range, and other criteria.&#x20;
+
+**What filters are available when searching price lists?**\
+You can filter by date range, resorts, transport, transport type, hotel, allotment type, room type, fix quotas, and display options like showing only non-zero prices.&#x20;
+
+**What does the price list display show?**\
+After displaying search results, you see columns like PLTA ID, hotel, room code, departure date, stay length, allotment counts (hotel and transport), and defined prices (P1–P4, child prices, etc.).&#x20;
+
+**What is PLTA ID?**\
+PLTA ID is the unique identifier for each price list entry. It encodes transport, hotel, room, and date combination.&#x20;
+
+**Can prices be recalculated?**
+
+Yes. You can trigger recalculation actions, for example when free rooms or allotments change and prices need to be aligned again.
+
+**How are child prices shown?**\
+Child prices are included in the grid with specific columns. These may be based on extra bed discounts or other configured rules.&#x20;
+
+**What tools are available in the price list interface?**\
+You can view history, recalculate free rooms, adjust prices, and apply filters for different columns.&#x20;
+
+**Can I link or update prices across transports?**\
+Yes. There’s a function to update prices based on transport or to also update prices on related transports when you make a change.&#x20;
+
+**Is there a history of price changes?**
+
+Yes. Each price list entry has a history view that shows previous price changes and updates.
+
+**Why do I not see any results?**
+
+Most often, the brand filter is missing, the date range is incorrect, or there are no price lists created for the selected criteria.
