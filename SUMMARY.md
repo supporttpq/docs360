@@ -365,7 +365,7 @@
 
 ## Guest App
 
-* [Destination - Mobile Guide App](destination-mobile-guide-app.md)
+* [Guide App](destination-mobile-guide-app.md)
 * [Visit Sun App](visit-sun-app.md)
 * [Vocabulary](vocabulary.md)
 * [Insider Tips](insider-tips.md)
