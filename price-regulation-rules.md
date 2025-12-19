@@ -83,3 +83,20 @@ To use the price list rules, after you have activated the feature and the servic
 <figure><img src=".gitbook/assets/image (53) (1).png" alt=""><figcaption></figcaption></figure>
 
 Click Save.
+
+### **FAQ**
+
+1. **What is a price regulation rule?**\
+   A price regulation rule is a set of conditions that tells Tourpaq when to automatically raise or lower offer prices based on time and offer count, while protecting minimum price limits.&#x20;
+2. **Why do I need a code and a name for each rule?**\
+   The name makes the rule easy to recognize, and the code ensures the rule is uniquely tracked by the system.&#x20;
+3. **What does “Hours number” mean?**\
+   This is the number of hours after which the system will trigger a price increase or decrease.&#x20;
+4. **How do minimum price fields work?**\
+   These fields define the lowest prices the system can set — the rule will never reduce prices below these values.&#x20;
+5. **How often does a rule run?**\
+   The rule runs continuously, checking the conditions you set. When the hours and offer count conditions are met, the system adjusts prices automatically.&#x20;
+6. **Can I prevent rules from lowering prices too much?**\
+   Yes, you set minimum price values (lowest price fields) to protect against underpricing.&#x20;
+7. **Where do I see the price changes?**\
+   After a rule runs, the price list history logs the automatic changes so you can review what happened and when.&#x20;
