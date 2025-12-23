@@ -14,7 +14,7 @@ This tool ensures that pricing strategies remain consistent, flexible, and autom
 
 ### **Purpose**
 
-The purpose of this feature is to make the Profit Margin Rule system more adaptable to each agency’s by allowing multiple overlapping rule sets that can be stacked and combined.\
+The purpose of this feature is to make the Profit Margin Rule system more adaptable to each agency by allowing multiple overlapping rule sets that can be stacked and combined.\
 This ensures that agencies can:
 
 * Define **global profit margins** for GDS or charter flights.
@@ -43,7 +43,7 @@ Use the filters to narrow down the list of rules displayed below.
 * **Departures / Arrivals:** Filter rules by departure or arrival locations.
 * **Resorts:** Select a specific resort if you want to see only rules for that destination.
 * **Passenger Type:** Choose the type of passenger (e.g., Adult, Child) that the rule applies to.
-* **Stay Length:** Filter by the length of stay defined in the rule. Used to filter rules for a specific steay length. Valid imput "7", "6-8", "7,14"
+* **Stay Length:** Filter by the length of stay defined in the rule. Used to filter rules for a specific stay length. Valid input: `7`, `6-8`, `7,14`.
 * **Show older:** When enabled, displays Profit Margin rules with departure in the past.
 * **Show codes:** Displays system codes instead of names, useful for internal references.
 * **Transports / Hotels (Edit buttons):** Allows you to select specific transport or hotel references to filter results.
@@ -54,23 +54,23 @@ Use the filters to narrow down the list of rules displayed below.
 
 Each row represents an existing profit margin rule. The table contains the following columns:
 
-| Field                                 | Description                                                                                                                                                                                                                                                                                                       |
-| ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Agency**                            | The travel agency to which the profit margin rule applies. Mandatory                                                                                                                                                                                                                                              |
-| **Rule**                              | Type of rule (e.g., Resort, Transport). Defines the scope of the profit margin. Mandatory                                                                                                                                                                                                                         |
-| **Passenger**                         | Indicates which passenger type the rule targets (e.g., Adult, Child). Mandatory                                                                                                                                                                                                                                   |
-| **Arrival**                           | The arrival destination or city for which the rule is valid. Mandatory                                                                                                                                                                                                                                            |
-| **Resort (Optional)**                 | Specific resort linked to the profit margin rule.                                                                                                                                                                                                                                                                 |
-| **Hotel (Optional)**                  | The hotel associated with the rule, if applicable.                                                                                                                                                                                                                                                                |
-| **Transport Type**                    | Specifies the mode of transport (e.g., Charter, Dynamic, Sy-real, System).                                      <mark style="color:$info;background-color:red;">Note: When a Transport type is selected, the Transport field will be populated with all transports related to the selected Transport type.</mark> |
-| **Transport (Optional)**              | Select the specific transport line that the rule applies to.                                                                                                                                                                                                                                                      |
-| **Departure Start / Stop (Optional)** | Date range during which this rule is active.                                                                                                                                                                                                                                                                      |
-| **Stay (Optional)**                   | Length of stay in days covered by the rule. Support multiple stay lengths.                                                                                                                                                                                                                                        |
-| **PM1 – PM4**                         | Actual profit margin                                                                                                                                                                                                                                                                                              |
-| **Is Percent**                        | Indicates whether the profit margin values (PM1–PM4) are percentages (✔️) or fixed amounts (❌).                                                                                                                                                                                                                   |
-| **Edit (✏️ icon)**                    | Opens the rule for editing.                                                                                                                                                                                                                                                                                       |
-| **History (📄 icon)**                 | Shows the history on the specific rule made                                                                                                                                                                                                                                                                       |
-| **Delete (🗑️ icon)**                 | Removes the selected rule permanently.                                                                                                                                                                                                                                                                            |
+| Field                                 | Description                                                                                                                                                                                            |
+| ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Agency**                            | The travel agency to which the profit margin rule applies. Mandatory                                                                                                                                   |
+| **Rule**                              | Type of rule (e.g., Resort, Transport). Defines the scope of the profit margin. Mandatory                                                                                                              |
+| **Passenger**                         | Indicates which passenger type the rule targets (e.g., Adult, Child). Mandatory                                                                                                                        |
+| **Arrival**                           | The arrival destination or city for which the rule is valid. Mandatory                                                                                                                                 |
+| **Resort (Optional)**                 | Specific resort linked to the profit margin rule.                                                                                                                                                      |
+| **Hotel (Optional)**                  | The hotel associated with the rule, if applicable.                                                                                                                                                     |
+| **Transport Type**                    | Specifies the mode of transport (e.g., Charter, Dynamic, Sy-real, System). When a transport type is selected, the **Transport** field is populated with all transports related to that transport type. |
+| **Transport (Optional)**              | Select the specific transport line that the rule applies to.                                                                                                                                           |
+| **Departure Start / Stop (Optional)** | Date range during which this rule is active.                                                                                                                                                           |
+| **Stay (Optional)**                   | Length of stay in days covered by the rule. Supports multiple stay lengths.                                                                                                                            |
+| **PM1 – PM4**                         | Actual profit margin                                                                                                                                                                                   |
+| **Is Percent**                        | Indicates whether the profit margin values (PM1–PM4) are percentages (✔️) or fixed amounts (❌).                                                                                                        |
+| **Edit (✏️ icon)**                    | Opens the rule for editing.                                                                                                                                                                            |
+| **History (📄 icon)**                 | Shows the change history for the rule                                                                                                                                                                  |
+| **Delete (🗑️ icon)**                 | Removes the selected rule permanently.                                                                                                                                                                 |
 
 **Additional Actions**
 
@@ -100,9 +100,7 @@ The system will automatically apply these margins to all bookings that match the
 2. Update the necessary fields in the edit dialog
 3. Save changes and verify they appear correctly in the grid
 
-
-
-The Profit Margin functionality support more than one profit margin per rule, providing greater flexibility for agency configurations.
+The Profit Margin functionality supports more than one profit margin per rule, providing greater flexibility for agency configurations.
 
 Each combination of Departure and Stay is unique within the Profit Margin section.
 
@@ -119,7 +117,7 @@ For **Transport Rules**, users must:
 * Set the profit margin values (**PM1–PM4**) using the button Add Profit Margin rule. Negative profit margins can be set, but this requires the "Use negative value in profit margin" company feature. Please contact an administrator for assistance.
 * Also, here it is possible to add a Departure location and the stay length.
 
-The system will then update all price lists created with the selected transports. For example, a rule setting **PM1–PM4** for the interval **17.10.25 - 31.10.25** will apply to all price lists using transports **and** B-AG, covering all hotels at the corresponding destination for agency **TorpaqDK.**
+The system will then update all price lists created with the selected transports. For example, a rule setting **PM1–PM4** for the interval **17.10.25 - 31.10.25** will apply to all price lists using transports **and** B-AG, covering all hotels at the corresponding destination for agency **Tourpaq DK.**
 
 <figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -132,7 +130,7 @@ The system will then update all price lists created with the selected transports
 3. **Hotel-Specific Rule**\
    Applies to price lists created with selected hotels for the chosen brand.
 
-STAY: The stay length of interval 1.  If a hotel is specified, in the case of two matching rules (overlap), the most precise rule wins (if there is a rule with no stay and a rule that matches with stay, then the rule with stay is used).
+STAY: The stay length of interval 1. If a hotel is specified, in the case of two matching rules (overlap), the most precise rule wins (if there is a rule with no stay and a rule that matches with stay, then the rule with stay is used).
 
 **Profit Margin Calculation:**\
 For a given brand and departure interval, the profit margin (**PM**) is calculated as:\
@@ -176,9 +174,9 @@ When a new value is saved in the Profit Margin Rule, it **overrides** any manual
 If other changes are made — such as adding new entities (which generate new price lists) or updating hotel costs — these actions will **not** alter the profit margin value.\
 In these cases, the system will simply **recalculate the final price** based on the manually adjusted profit margin defined by the user.
 
-#### Example:&#x20;
+#### Example:
 
-**An agency** uses a **Base Margin** defined through Profit Margin Rules, and then they manually adjust the profit margin directly in the Price List, and  they perform manual price adjustments for various purposes.
+**An agency** uses a **Base Margin** defined through Profit Margin Rules, and then they manually adjust the profit margin directly in the Price List, and they perform manual price adjustments for various purposes.
 
 In this case PM1 will be updated when:
 
@@ -194,3 +192,24 @@ In this case PM1 will be updated when:
 * Changing **Hotel Costs**
 * Changing **Transport Costs**
 * Editing **Discounts, Supplements, or Extras**
+
+### FAQ
+
+1. **What’s the difference between Profit Margin Rules and editing the Price List manually?**\
+   Profit Margin Rules write profit margins into price lists automatically. Manual edits override the value until a rule writes it again.
+2. **How does Tourpaq handle overlapping rules?**\
+   The most specific match wins. Hotel-specific beats resort-specific, which beats “all resorts” for the destination. A stay-specific rule beats a rule without stay when both match.
+3. **What do PM1–PM4 mean?**\
+   They are four separate profit margin fields on the rule. Tourpaq applies them to the corresponding profit margin fields in the generated price lists.
+4. **Can I set profit margin as a percentage instead of an amount?**\
+   Yes. Enable **Is Percent** to interpret PM1–PM4 as percentages. Disable it to treat them as fixed amounts.
+5. **Can I set negative profit margins?**\
+   Yes, but only if the company feature **Use negative value in profit margin** is enabled. Ask an administrator if you can’t enter negative values.
+6. **How do I enter stay lengths?**\
+   Use a single value (`7`), a range (`6-8`), or a list (`7,14`). The same formats are used in filters and in rule definitions.
+7. **When do Profit Margin Rules update existing price lists?**\
+   When you save a rule, it is scheduled to update matching price lists. The rule scope decides which price lists are affected.
+8. **Why didn’t the profit margin change after I changed costs or added hotels/transports?**\
+   Cost changes and new entities trigger price recalculation, not margin changes. Margins change only when you edit Profit Margin Rules or edit the price list manually.
+9. **How do I see who changed a rule and when?**\
+   Click the **History** (📄) icon on the rule row to see a change log.
