@@ -4,13 +4,47 @@
 
 The **Hotels** page allows administrators to manage the list of hotels available in the system. Each hotel entry can be linked to a resort, supplier, and other identifying details. These records form the foundation for building hotel contracts, assigning bookings, and integrating with suppliers or bed banks.
 
-### Purpose
+{% hint style="info" %}
+This feature is intended for **administrator** users.
+{% endhint %}
+
+### Common tasks
 
 This module ensures all hotel-related information is standardized and available for booking management, reporting, and integrations with external suppliers (e.g., bed banks, Tourpaq Supplier).
 
+### Purpose
+
+{% stepper %}
+{% step %}
+### Find a hotel
+
+Use **Hotel**, **Destination**, and **Resort** filters.
+
+Enable **Show hidden** to include hotels not available for selection.
+{% endstep %}
+
+{% step %}
+### Create a hotel
+
+Use **Create using wizard** for the fastest setup.
+
+Use **Create** if you want a blank hotel record first.
+
+Next: [Hotel creation](hotel-creation/) or [Create using wizard](hotel-creation/create-using-wizard.md).
+{% endstep %}
+
+{% step %}
+### Maintain an existing hotel
+
+Use **Edit** to update master data.
+
+Use **Hide** (via the hotel status) to stop it showing in selection lists.
+{% endstep %}
+{% endstepper %}
+
 ### Page Structure
 
-<figure><img src="../.gitbook/assets/image (402).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (402).png" alt="Hotels list page showing filters, table, and actions"><figcaption><p>Hotels list: filters, results table, and actions.</p></figcaption></figure>
 
 #### Filters
 
@@ -20,7 +54,7 @@ At the top of the page, filters help narrow down the list of hotels:
 * **Destination** – Filter hotels by destination.
 * **Resort** – Filter hotels by resort.
 * **Display only Bed Banks** – When selected, only hotels provided by bed banks are shown.
-* **Show hidden** – Displays hotels marked as hidden.
+* **Show hidden** – Includes hotels marked as hidden (not selectable in most flows).
 * **Clear** – Resets all applied filters.
 
 #### Table Columns
@@ -35,11 +69,24 @@ At the top of the page, filters help narrow down the list of hotels:
 * **Phone** – The hotel’s contact phone number.
 * **Fax** – The hotel’s fax number (optional).
 * **Order No.** – Internal ordering or sorting number.
-* **Bed Bank** – Indicates if the hotel is linked to a bed bank system.
+* **Bed Bank** – Indicates the hotel originates from, or is linked to, a bed bank integration.
 
 #### Actions
 
-* **Create using wizard** – Launches a step-by-step wizard for setting up a new hotel with required fields and configuration.
-* **Create** – Opens a blank form to create a new hotel entry.
-* **Edit (pencil icon)** – Allows modification of hotel details.
-* **Delete (trash icon)** – Permanently removes the hotel from the system.
+* **Create using wizard** – Creates a hotel with the minimum required data in one flow. See [Create using wizard](hotel-creation/create-using-wizard.md).
+* **Create** – Opens a blank hotel form. See [Hotel creation](hotel-creation/).
+* **Edit (pencil icon)** – Updates hotel details (supplier, status, fields used in booking and web).
+* **Delete (trash icon)** – Permanently removes the hotel.
+
+{% hint style="warning" %}
+Delete is destructive. It can break reporting, contracts, and historical references.
+
+If the hotel should stop being used, **hide it** instead.
+{% endhint %}
+
+### Related pages
+
+* [Hotel creation](hotel-creation/)
+* [Create using wizard](hotel-creation/create-using-wizard.md)
+* [Facilities](../facilities.md)
+* [Hotel Contracts](../hotel-contracts/)
