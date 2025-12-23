@@ -22,7 +22,7 @@ Packages are part of the **À la Carte** feature and are used to generate **pres
 
 #### Step 1: Create a Package
 
-1. Go to **Price List > Package Generator**.
+1. Go to **Price List → Packages Generator**.
 2. Click **Create**.
 3. Fill in the package details:
    * **Package Name**
@@ -64,3 +64,69 @@ Packages are part of the **À la Carte** feature and are used to generate **pres
 * **View Content** → Displays all entities used in the package (transports, hotels, rooms).
 * **Generated Packages** → Shows every departure date for transports and every hotel check-in date included.
 * Packages can be booked via the **Select Offer** feature.
+
+### FAQ
+
+<details>
+
+<summary><strong>How is the discount applied?</strong></summary>
+
+The discount is applied to the total package price generated for the suggestion. The exact impact depends on your price rules and configured supplements/discounts.
+
+</details>
+
+<details>
+
+<summary><strong>Can I change a package after I generate it?</strong></summary>
+
+You can edit the package rule and generate again. If old generated results are still present, remove them first (if your UI has that option).
+
+</details>
+
+<details>
+
+<summary><strong>Why does my package not show up in Select Offer?</strong></summary>
+
+Check the **Agency**, **Booking Period**, and **Travel Interval** first. Then confirm the underlying transports and hotel prices exist for those dates.
+
+</details>
+
+<details>
+
+<summary><strong>What does “Ignore Filter by Arrival” do?</strong></summary>
+
+It widens the hotel search. You can then pick hotels tied to both the “expected” arrival resort and the transport’s configured arrival.
+
+</details>
+
+<details>
+
+<summary><strong>Why can’t I select a hotel or room?</strong></summary>
+
+The hotel must have a valid **Price List per Day** for the period. The selected room must exist in that price list for the same dates.
+
+</details>
+
+<details>
+
+<summary><strong>Why do I need one-way seats on transports?</strong></summary>
+
+Packages Generator builds multi-leg trips. Each leg is treated as a one-way transport segment.
+
+</details>
+
+<details>
+
+<summary><strong>Where do I find Packages Generator in Tourpaq Office?</strong></summary>
+
+Go to **Price List → Packages Generator**.
+
+</details>
+
+<details>
+
+<summary><strong>What is the difference between a “package” and “generated packages”?</strong></summary>
+
+The package is the setup rule you create (name, dates, segments, discount). Generated packages are the actual date-based suggestions created from that rule.
+
+</details>
