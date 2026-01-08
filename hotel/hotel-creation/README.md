@@ -261,3 +261,35 @@ Please check [Hotel Reporting](communication/hotel-reporting.md)
 ### Deposit <a href="#deposit" id="deposit"></a>
 
 This feature works with [Autobilling](../../autobilling/)
+
+## **FAQ – Hotel creation**
+
+**What user role can create hotels?**\
+Only administrators can create hotels.
+
+**What fields are mandatory to create a hotel?**\
+Mandatory fields are Code, Name, Resort, Contract type, and Standard room. Without these, the hotel is not saved.&#x20;
+
+**Does supplier information matter?**\
+Supplier is not mandatory but is required for hotel setup to work properly. [l](https://manual.tourpaq.com/hotel/hotel-creation)
+
+**What is “Standard room”?**\
+Standard room is the hotel’s main room type and is required for creation.&#x20;
+
+**Can I remove a room type once added?**\
+You cannot delete a room after adding it. It will remain until it has allotments and prices.
+
+**What does the Override option do for rooms?**\
+Override creates a hotel-specific version of a base room type that you can edit. It does not remove the original room type.
+
+**How does “Hide room” work?**\
+Hide room makes the room not visible if it has no allotments.&#x20;
+
+**What is a shared allotment?**\
+Shared allotment uses one room’s allotments for another room. Only the primary room has real allotments.
+
+**What fields control child and extra bed pricing behavior?**\
+Child price ages define the age group for child pricing. Child ages for extra bed set ages for children on an extra bed; outside that group, adult extra bed pricing applies.&#x20;
+
+**Can I change hotel visibility on lists and filters?**\
+Yes. The Hide as filter on lists setting hides the hotel from all system filters
