@@ -1,116 +1,162 @@
 # Releases
 
-#### Overview
+### Overview
 
-The **Hotel Release Rules** feature in Tourpaq Office enables administrators to automate the release of hotel rooms back to the supplier when they are no longer needed. The release process depends entirely on rules configured at the **company administrator level**.
+Hotel release rules automate when rooms are released back to the supplier.
 
-Each rule applies only to a **single hotel**. Rules cannot be shared across multiple hotels. They can be set to trigger on a specific date or relative to a given number of days before that date.
+Rules are configured by **company administrators**.
 
-#### Purpose
+Each rule belongs to **one hotel**.
 
-Hotel Release Rules serve the following objectives:
+Rules cannot be reused across hotels.
 
-* Automate the release of unused hotel room allotments.
-* Notify hotel suppliers of released rooms through email reports.
-* Allow flexible configuration at both **general hotel level** and **room-specific level**.
-* Provide administrators and suppliers with reporting and log access for full transparency.
+{% hint style="info" %}
+Dates in the examples use the format **DD-MM-YYYY**.
+{% endhint %}
 
-***
+#### Related pages
 
-#### Types of Release Rules
+* [Hotel release - automation](hotel-release-automation.md)
+* [Hotel release - Reporting](hotel-release-reporting.md)
 
-Two types of rules can be created in the **Hotel Releases** tab. Each type is listed under its own subtab:
+### Purpose
 
-**1. General Release Rule**
+* Release unused room allotments on time.
+* Email suppliers a release report.
+* Support both hotel-wide and room-specific rules.
+* Keep a log for auditing.
 
-* Applies to **all room types** of a hotel.
-* Triggers on a specific date or a set number of days before that date.
-* Automatically generates a release report and sends it via email to the supplier.
+### Types of release rules
 
-**Required Fields:**
+Two rule types exist in the **Releases** tab.
 
-* **Release Date** – the fixed date when the release occurs.
-* **Number of Days in Advance** – defines how many days before the release date the action should occur.
-* **Email Address** – the supplier’s email address to receive the release report.
+#### 1) General release rule (hotel-wide)
 
-**2. Specific Release Rule**
+* Applies to **all room types** in the hotel.
+* Triggers on a specific release date, with an optional lead time.
+* Sends a release report to the email in the rule.
 
-* Applies to **a single room type** of a hotel.
-* Functions within a defined period (start date and end date).
-* Can release the specified room type repeatedly during the rule’s active period.
+**Required fields**
 
-**Required Fields:**
+* **Release date**
+* **Number of days in advance**
+* **Email address**
 
-* **Start Date** – date from which the rule becomes active.
-* **End Date** – date until which the rule remains active.
-* **Room Type** – the specific room category (e.g., 1S, 2C, 3F).
-* **Number of Days in Advance** – days prior to the booking date when the release will occur.
-* **Email Address** – supplier’s email address to receive the release report.
+#### 2) Specific release rule (room type)
 
-***
+* Applies to **one room type**.
+* Works within a start and end period.
+* Can execute repeatedly during the active period.
 
-#### Examples
+**Required fields**
 
-**Scenario Setup:**
+* **Start date**
+* **End date**
+* **Room type** (e.g., `1S`, `2C`, `3F`)
+* **Number of days in advance**
+* **Email address**
 
-* Today’s date: **15-05-2009**.
-* Hotel “Grand Palace” has three room types (1S, 2C, 3F) available from **01-04-2009 to 01-09-2009**.
+### How “days in advance” is evaluated
 
-**General Release Rule**
+Treat **days in advance** as the lead time.
 
-* Rule: Release Date = 20-05-2009, Days in Advance = 5, Email = admin@grandpalacehotel.com.
-* Result: On 15-05-2009, all hotel rooms (1S, 2C, 3F) are released. A log file is created, and an email report is sent to the supplier.
+* A value of `0` means “release on the same day.”
+* A value of `5` means “release 5 days before the target date.”
 
-Notes:
+### Examples
 
-* If no start date is provided, the rule executes daily, releasing rooms for dates X days ahead.
-* If no number of days is provided, the system defaults to **0 days** in advance.
+#### Scenario setup
 
-**Specific Release Rule**
+* Today: **15-05-2009**
+* Hotel “Grand Palace” has room types `1S`, `2C`, `3F`
+* Inventory period: **01-04-2009** to **01-09-2009**
 
-* Rule: Start Date = 01-05-2009, End Date = 01-06-2009, Room Type = 2C, Days in Advance = 3, Email = admin@grandpalacehotel.com.
-* Result: On 15-05-2009, the 2C room type is released for 18-05-2009. A log file is created, and a supplier email is sent.
+#### General release rule
 
-Notes:
+* Rule: Release date `20-05-2009`, days in advance `5`, email `admin@grandpalacehotel.com`
+* Result: On **15-05-2009**, all rooms (`1S`, `2C`, `3F`) are released.
+* A log entry is created.
+* A report email is sent.
 
-* On **27-05-2009**, the general release rule does not apply because the 5-day offset does not match 20-05-2009.
-* On **30-05-2009**, the specific rule does not apply because the release date (3 days later) falls outside the defined period.
+{% hint style="info" %}
+If **days in advance** is blank, the system defaults to **0**.
+{% endhint %}
 
-***
+#### Specific release rule
 
-#### Supplier Administration
+* Rule: Start `01-05-2009`, end `01-06-2009`, room `2C`, days in advance `3`, email `admin@grandpalacehotel.com`
+* Result: On **15-05-2009**, room type `2C` is released for **18-05-2009**.
+* A log entry is created.
+* A report email is sent.
 
-Hotel suppliers can log into their dedicated **Tourpaq Office supplier account** to manage rooms available for release. This allows them to decide whether released rooms should be:
+### Supplier administration
 
-* Removed from the Tourpaq Booking System, or
-* Reused for other distribution channels.
+Suppliers can review and manage released rooms in their Tourpaq supplier login.
 
-The supplier interface provides filters for:
+They can decide if released rooms should be:
 
-* Hotel
-* Room Type
-* Time Period
+* removed from Tourpaq bookings, or
+* reused for other channels.
 
-***
+Common filters:
 
-#### Release Logs
+* hotel
+* room type
+* time period
 
-Company administrators can review all release actions in the **Releases Log** submenu (under Hotel → Tourpaq). Logs may be filtered by:
+### Release logs
 
-* Supplier
-* Brand
-* Hotel
-* Room Type
-* Period
+Administrators can review release actions in **Releases Log** (Hotel → Tourpaq).
 
-***
+Filters include:
 
-#### Rule Editing Behavior
+* supplier
+* brand
+* hotel
+* room type
+* period
 
-If a release rule is modified while still in effect, the changes only take effect **after the previous configuration finishes its cycle**.
+### Rule editing behavior
 
-**Example:**
+Edits to an active rule take effect **after the current cycle completes**.
 
-* Original rule: 10 days in advance.
-* Updated rule: 4 days in advance.
-* Result: The 10-day rule continues until its effect expires, after which the 4-day rule becomes active.
+Example:
+
+* Old rule: `10` days in advance
+* New rule: `4` days in advance
+* Result: `10` continues until it expires, then `4` starts.
+
+### FAQ
+
+#### Who can create or change release rules?
+
+Company administrators.
+
+#### Can I reuse the same rule for multiple hotels?
+
+No. Each rule belongs to one hotel.
+
+#### What’s the difference between a general and a specific rule?
+
+* **General** releases all room types for a hotel.
+* **Specific** releases one room type within a period.
+
+#### What does “days in advance” mean?
+
+It’s the lead time.
+
+`3` means the release runs 3 days before the target date.
+
+#### Who receives the release email?
+
+The email address saved on the rule that triggered the release.
+
+#### Where can I see what was released?
+
+Use **Releases Log** (Hotel → Tourpaq).
+
+Filter by hotel and period for quick checks.
+
+#### Do suppliers have to accept the release?
+
+Suppliers can decide how to handle released rooms in their supplier login.
