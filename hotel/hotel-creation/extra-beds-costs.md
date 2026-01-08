@@ -2,18 +2,22 @@
 
 ### Overview
 
-Extra Bed Costs represent discounts provided by the hotel to the agency when extra beds are used. These discounts are applied under specific conditions and can be configured to cover multiple extra beds per booking.
+Extra Bed Costs are hotel cost adjustments used when passengers occupy extra beds.\
+They are typically used as discounts from the hotel to the agency.\
+You can also treat the value as a normal price, depending on your checkbox settings.
 
 ### Purpose
 
-This feature allows the agency to manage hotel-provided discounts for extra beds, ensuring accurate pricing and flexibility in bookings. It ensures that discounts are automatically applied when conditions are met, avoiding manual adjustments.
+Use this to manage hotel-provided extra bed costs in a consistent way.\
+It reduces manual corrections in bookings.\
+It also supports multiple extra beds in the same room.
 
 ### Conditions of Application
 
 Extra Bed Costs are applied only when:
 
 * Extra beds are used by passengers.
-* Cost prices are set **per passenger**.
+* Room cost prices are set **per passenger**.
 
 If these conditions are not met, the extra bed cost value will remain **0**.
 
@@ -25,14 +29,14 @@ If these conditions are not met, the extra bed cost value will remain **0**.
 * **Arrival Start / End Date** – Set the date range for valid guest arrivals.
 * **Booking Start / End Date** – Set the booking period during which the discount is applicable.
 * **Cost Columns**:
-  * **Cost Price** – Universal cost applied for the first extra bed.
-  * **Second / Third / Fourth Price** – Costs applied if there are multiple extra beds in the same room.
+  * **Cost Price** – Value applied for the first extra bed.
+  * **Second / Third / Fourth Price** – Values applied for additional extra beds in the same room.
 * **PD (Per Day)** – If checked, the value is applied **per day** instead of per interval.
-* **NP (Normal Price)** – If checked, the value is treated as a **price**, not a discount.
-* **% (Percent)** – If checked, the cost is applied as a **percentage**.
+* **NP (Normal Price)** – If checked, the value is treated as a **price** (supplement), not a discount.
+* **% (Percent)** – If checked, the value is treated as a **percentage**.
 * **Room Type** – Select the room types to which the rule applies.
 * **Period** – Define the applicable period for the extra bed discount.
-* **EBD (Extra Bed Discount)** – Links the entry to the Extra Bed Discount configuration.
+* **EBD (Extra Bed Discount)** – Links the entry to the [Discount Extra Beds](discount-extra-beds.md) configuration.
 
 ### Instructions of Use
 
