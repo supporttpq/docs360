@@ -30,7 +30,7 @@ Use **Create using wizard** for the fastest setup.
 
 Use **Create** if you want a blank hotel record first.
 
-Next: [Hotel creation](hotel-creation/) or [Create using wizard](hotel-creation/create-using-wizard.md).
+Next: [Hotel creation](hotel-creation/) or [Create using wizard](hotel-creation/create-using-the-wizard.md).
 {% endstep %}
 
 {% step %}
@@ -73,7 +73,7 @@ At the top of the page, filters help narrow down the list of hotels:
 
 #### Actions
 
-* **Create using wizard** – Creates a hotel with the minimum required data in one flow. See [Create using wizard](hotel-creation/create-using-wizard.md).
+* **Create using wizard** – Creates a hotel with the minimum required data in one flow. See [Create using wizard](hotel-creation/create-using-the-wizard.md).
 * **Create** – Opens a blank hotel form. See [Hotel creation](hotel-creation/).
 * **Edit (pencil icon)** – Updates hotel details (supplier, status, fields used in booking and web).
 * **Delete (trash icon)** – Permanently removes the hotel.
@@ -87,6 +87,6 @@ If the hotel should stop being used, **hide it** instead.
 ### Related pages
 
 * [Hotel creation](hotel-creation/)
-* [Create using wizard](hotel-creation/create-using-wizard.md)
+* [Create using wizard](hotel-creation/create-using-the-wizard.md)
 * [Facilities](../facilities.md)
 * [Hotel Contracts](../hotel-contracts/)

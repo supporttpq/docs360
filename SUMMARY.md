@@ -160,7 +160,7 @@
 
 * [Hotels](hotel/hotels.md)
 * [Hotel creation](hotel/hotel-creation/README.md)
-  * [Create using wizard](hotel/hotel-creation/create-using-wizard.md)
+  * [Create using the wizard](hotel/hotel-creation/create-using-the-wizard.md)
   * [Hotel allotments](hotel/hotel-creation/hotel-allotments.md)
   * [Hotel allotment overview](hotel/hotel-creation/hotel-allotment-overview.md)
   * [Allotments per day](hotel/hotel-creation/allotments-per-day/README.md)
