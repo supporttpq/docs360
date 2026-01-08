@@ -1,60 +1,66 @@
 # Hotel Web
 
-### **Overview**
+### Overview
 
-The **Hotel / Web** page in **Tourpaq Office** allows users to manage and update hotel information that is displayed on the public website.\
-This page provides direct control over the text and details visible to end customers, ensuring that descriptions, facilities, and other relevant information are accurate and aligned with each brand’s marketing standards.
+The **Hotel Web** area in **Tourpaq Office** controls what customers see online. It also controls what is shown in offers, tickets, and vouchers.
 
-The page is typically used by product or content managers to maintain hotel descriptions, add customer-relevant details, and structure the online presentation of each property.
+Use it to keep text, facilities, and customer-facing notes up to date per brand.
 
-This page can be found in **Hotel/Hotels**. Select a hotel and acces **Overview/Web**.
+You can find it in **Hotel > Hotels**. Select a hotel, then open **Overview > Web**.
 
-### **Purpose**
+### Purpose
 
-The purpose of this page is to:
+Use this page to:
 
-* Manage hotel content used in online catalogs and offers.
-* Customize the text for different brands or markets.
-* Ensure consistency between internal data (such as facilities and categories) and the information shown to end users.
-* Edit or localize content for specific brands when a hotel is shared across multiple brands.
+* Maintain hotel text for the website, offers, tickets, and vouchers.
+* Write brand-specific content when the same hotel is sold under multiple brands.
+* Keep customer-facing data consistent with internal setup (facilities, categories, etc.).
 
-### **Page Sections and Fields**
+### Sections and fields
 
 <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### **Brand Tabs**
+#### Brand tabs
 
-At the top, each **brand** has its own tab (e.g., _TourpaqDk)_\
-These tabs allow editing of hotel text per brand.\
-When switching brands, the content fields below will update to show that brand’s version of the hotel description and related text.
+Each **brand** has its own tab (for example, _TourpaqDK_). Switching the tab changes which text is edited and displayed.
 
-**Text Sections**
+#### Text fields
 
-| Field                            | Description                                                                                                                                                                                                                                                             |
-| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Short Description**            | A short text summary of the hotel. It’s typically shown on listing pages or search results.                                                                                                                                                                             |
-| **Customer Info**                | Internal notes that may be shown to customers or used for special messages. Is used when the voucher is generated.                                                                                                                                                      |
-| **HTML Description**             | The main content for the hotel page. It supports HTML formatting for headings, bold text, and links. It is used in Ticket, Website, and Offer. In Offer, an attribute "\[SelectOfferEmailSummary]" can be set, and only the text up to the attribute will be displayed. |
-| **Alternative HTML Description** | Optional description text used for specific brands or alternative layouts.                                                                                                                                                                                              |
-| **Internal Notes**               | It is used in Offer and Create Booking when the hotel popup is opened.                                                                                                                                                                                                  |
-| **Sold Out Dates**               | It is used in Offer and Create Booking when the hotel pop-up is opened.                                                                                                                                                                                                 |
+* **Short description**
+  * Short summary for lists and search results.
+* **Customer info**
+  * Customer-facing text shown when a voucher is generated.
+* **HTML description**
+  * Main hotel description.
+  * Used on the website, in tickets, and in offers.
+  * Add the marker `[SelectOfferEmailSummary]` if you want offers to show only the text above it.
+* **Alternative HTML description**
+  * Optional text used for certain brands or layouts.
+* **Internal notes**
+  * Internal text shown in **Offer** and **Create Booking** when the hotel pop-up is opened.
+* **Sold-out dates**
+  * Informational text shown in **Offer** and **Create Booking** when the hotel pop-up is opened.
 
 ***
 
-**Expandable Panels (Right Side)**
+#### Right-side panels (expandable)
 
-| Panel                            | Description                                                                                          |
-| -------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| **General Settings**             | Contains general data about the hotel (e.g., construction year, nr of floors, no, of beds,etc).      |
-| **Hotel Facilities**             | Checklist or list of available amenities (pool, Wi-Fi, restaurant, etc.) that appear on the website. |
-| **Customer Opinion**             | Section for customer reviews, ratings, or testimonial text.                                          |
-| **Hotel Categories**             | Defines the type or category of the hotel (e.g.,, adults-only).                                      |
-| **Hotel Customer Notifications** | Used to add alerts or important messages displayed to customers when viewing the hotel.              |
-| **Open all**                     | Expands all collapsible panels for easier bulk editing.                                              |
+* **General settings**
+  * Basic hotel facts like construction year, number of floors, and number of beds.
+* **Hotel facilities**
+  * Amenities shown on the website (pool, Wi‑Fi, restaurant, etc.).
+* **Customer opinion**
+  * Reviews, ratings, or testimonial text.
+* **Hotel categories**
+  * Hotel type (for example, adults-only).
+* **Hotel customer notifications**
+  * Alerts shown to customers on the hotel.
+* **Open all**
+  * Expands all panels for faster editing.
 
-### Short Description <a href="#short-description" id="short-description"></a>
+### Short description <a href="#short-description" id="short-description"></a>
 
-Used in Web Site
+Shown on the website. It is typically used in lists and search results.
 
 <figure><img src="../../.gitbook/assets/shortDescription-92c79329dbc217a5ef0b9bb93fe1e7de.png" alt=""><figcaption></figcaption></figure>
 
@@ -62,19 +68,19 @@ Used in Web Site
 
 ### Customer Info <a href="#customer-info" id="customer-info"></a>
 
-Is used when the voucher is generated.
+Shown when a voucher is generated.
 
 <figure><img src="../../.gitbook/assets/customerInfo-04b2ae888b1369510cbf56d2c86f5ee3.png" alt=""><figcaption></figcaption></figure>
 
 ### HTML Description <a href="#html-description" id="html-description"></a>
 
-It is used in Ticket, Website, and Offer. In Offer, an attribute "\[SelectOfferEmailSummary]" can be set, and only the text up to the attribute will be displayed.
+Used on the website, in tickets, and in offers. In offers, you can add the marker `[SelectOfferEmailSummary]`. Only the text above the marker will be displayed.
 
 <figure><img src="../../.gitbook/assets/htmlDescription-daaeafe00b68ce0b55abbd099a7afab6.png" alt=""><figcaption></figcaption></figure>
 
 ### Alternative HTML Description <a href="#alternative-html-description" id="alternative-html-description"></a>
 
-After hotel facility you can set an alternative description
+Optional description for specific brands or layouts.
 
 <figure><img src="../../.gitbook/assets/alternativeHtmlDesc-d36cb0fc379f71fbcc99ad2b1ba1be9d.png" alt=""><figcaption></figcaption></figure>
 
@@ -82,7 +88,7 @@ After hotel facility you can set an alternative description
 
 ### Internal Notes <a href="#internal-notes" id="internal-notes"></a>
 
-It is used in Offer and Create Booking when the hotel popup is opened.
+Shown in **Offer** and **Create Booking** when the hotel pop-up is opened.
 
 <figure><img src="../../.gitbook/assets/Untitled (2) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -90,8 +96,76 @@ It is used in Offer and Create Booking when the hotel popup is opened.
 
 ### Sold-Out Dates <a href="#sold-out-dates" id="sold-out-dates"></a>
 
-It is used in Offer and Create Booking when the hotel popup is opened.
+Shown in **Offer** and **Create Booking** when the hotel pop-up is opened. This is informational text. It does not block sales.
 
 <figure><img src="../../.gitbook/assets/Untitled (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/soldOutUse-817314e445a9b01d8448d11a41d559c2.png" alt=""><figcaption></figcaption></figure>
+
+### FAQ
+
+<details>
+
+<summary>Where do I find the Hotel Web page?</summary>
+
+Go to **Hotel > Hotels**. Select the hotel. Open **Overview > Web**.
+
+</details>
+
+<details>
+
+<summary>Why do I see different text per brand?</summary>
+
+Each brand has its own tab. Text you enter is saved per brand.
+
+</details>
+
+<details>
+
+<summary>Which field is shown on the website hotel page?</summary>
+
+Use **HTML description**. Use **Short description** for lists and search results.
+
+</details>
+
+<details>
+
+<summary>What does <code>[SelectOfferEmailSummary]</code> do?</summary>
+
+It is a marker used in offers. Only the text above the marker is shown in the offer summary.
+
+</details>
+
+<details>
+
+<summary>Where is “Customer info” shown?</summary>
+
+It is shown when a voucher is generated.
+
+</details>
+
+<details>
+
+<summary>Are “Internal notes” visible to customers?</summary>
+
+No. They are shown internally in **Offer** and **Create Booking**.
+
+</details>
+
+<details>
+
+<summary>Do “Sold-out dates” prevent bookings?</summary>
+
+No. They are informational only.
+
+To block sales, use [Stop Sales](../../stop-sales.md) or [Close Out](../../close-out/).
+
+</details>
+
+<details>
+
+<summary>How do I control which facilities show online?</summary>
+
+Use the **Hotel facilities** panel on the right. You also need a facilities template on the hotel. See [Facilities](../../facilities.md).
+
+</details>
