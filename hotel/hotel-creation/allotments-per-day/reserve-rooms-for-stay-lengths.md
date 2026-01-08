@@ -1,55 +1,73 @@
 # Reserve rooms for stay lengths
 
-### **Overview / Purpose**
+### Overview
 
-The **Reserve rooms for stay length**s feature allows agencies to reserve hotel rooms for guests on specific arrival days, **independent of transport**.\
-This is useful in cases where:
+Use **Reserve rooms for stay lengths** to reserve rooms on an arrival day.
+
+It is **independent of transport**.
+
+Use it when:
 
 * A destination has multiple transports arriving on the same day.
 * Agencies want to reserve rooms for arrivals on a certain weekday (e.g., Friday), regardless of which transport the guests use.
 * Room reservations need to be managed by **stay duration** (e.g., reserving rooms for long stays vs. short stays).
 
-⚠️ **Note:** This option is only available if the **Room Occupancy** feature has been activated by a **superadmin**.
+{% hint style="warning" %}
+This option requires **Room Occupancy** to be enabled by a **superadmin**.
+{% endhint %}
 
-### **How to Access**
+### How to access
 
-1. Navigate to: **Hotel → Allotment per day → Search with Allotment Control**.
-2. Locate the R**eserve rooms for stay lengths** option.
+1. Go to **Hotel → Allotment per day**.
+2. Open **Search with Allotment Control**.
+3. Find **Reserve rooms for stay lengths**.
 
-This feature allows an agency to reserve some rooms for guests on specific days, independent of the transport.\
-A destination may have several transports during a week, and they need to reserve some rooms for the arrivals on Friday. The reservation must be independent of the transport, as they may have more than one arrival on the same day, and they do not care if the guests arrive via one or the other transport.
+{% hint style="info" %}
+If you need the basics of the daily allotment screen first, see [Allotments per day](./).
+{% endhint %}
 
-The reservation of rooms is also needed based on the duration of the stay. They need this to reserve a few rooms for longer stays, or maybe the other way around.
+### How it works
+
+You reserve rooms for an **arrival day** and a **stay length**.
+
+This lets you “hold back” rooms for specific durations.
+
+Example:
+
+* Friday arrivals exist for 5, 7, and 14 nights.
+* You can reserve rooms separately for each duration.
 
 <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-| Headline      | Tooltip                                                                                                                                                                  |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| ROOM          | The hotel room code                                                                                                                                                      |
-| DATE          | The date                                                                                                                                                                 |
-| DAY           | The day of the week                                                                                                                                                      |
-| NO.           | The number of rooms                                                                                                                                                      |
-| SECURED       | The number of secured rooms                                                                                                                                              |
-| GUARANTEED    | The number of guaranteed rooms                                                                                                                                           |
-| BOOK          | The number of rooms that are booked                                                                                                                                      |
-| FREE          | The number of available rooms                                                                                                                                            |
-| R             | True (green) if the room is released                                                                                                                                     |
-| FOR R         | The number of rooms available for release                                                                                                                                |
-| MAX           | The maximum number of rooms                                                                                                                                              |
-| EXTRA         | Extra rooms number                                                                                                                                                       |
-| PAX 1 - PAX 4 | The maximum number of rooms with a max of 1-4 pax                                                                                                                        |
-| MIN           | The minimum stay                                                                                                                                                         |
-| STAY LENGTH   | Specifies how many rooms are allocated for a charter transport based on the selected number of stay days                                                                 |
-| RESV          | <p>The reserved allotment. Use 0 to block allotment or a number to limit the number of allotments for the transport.<br>An empty cell does not add any restrictions.</p> |
-| BOOK          | The number of booked seats on the transport                                                                                                                              |
+### Fields
+
+| Column           | Meaning                                                                                                      |
+| ---------------- | ------------------------------------------------------------------------------------------------------------ |
+| ROOM             | Room type / code.                                                                                            |
+| DATE             | Date of arrival.                                                                                             |
+| DAY              | Weekday.                                                                                                     |
+| NO.              | Total rooms allocated for the date.                                                                          |
+| SECURED          | Rooms secured by contract.                                                                                   |
+| GUARANTEED       | Rooms guaranteed financially.                                                                                |
+| BOOK             | Rooms booked for the date.                                                                                   |
+| FREE             | Rooms still available (`NO. - BOOK`).                                                                        |
+| R                | True (green) if the room is released.                                                                        |
+| FOR R            | Rooms available for release.                                                                                 |
+| MAX              | Max rooms allowed.                                                                                           |
+| EXTRA            | Extra rooms.                                                                                                 |
+| PAX 1 - PAX 4    | Max rooms by occupancy (1–4 pax).                                                                            |
+| MIN              | Minimum stay (nights).                                                                                       |
+| STAY LENGTH      | Columns where you reserve rooms per stay length.                                                             |
+| RESV             | Reserved allotment per transport. Use `0` to block sales for that transport. Leave empty for no extra limit. |
+| BOOK (transport) | Seats booked on the transport (shown in the transport columns).                                              |
 
 {% hint style="warning" %}
-**STAY LENGTH (3, 7)**– When you hover over these cells, a tooltip appears showing the number of reserved rooms, booked rooms, available rooms and free rooms for each corresponding stay length.
+**Stay length (3, 7)**: Hover a cell to see reserved, booked, available, and free rooms for that stay length.
 {% endhint %}
 
 <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-The tooltip for each cell displays detailed reservation data to make it easier to interpret the information behind the cell values.
+The tooltip helps you interpret what the cell value actually means.
 
 | **Value**     | **Explanation**                                                                                                                                                            |
 | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -58,9 +76,49 @@ The tooltip for each cell displays detailed reservation data to make it easier t
 | **Available** | The number of rooms still available from the total reserved rooms.                                                                                                         |
 | **Free**      | The number of rooms that are not reserved for any stay length and are free to book. “Free” indicates that it is possible to reserve additional rooms for this stay length. |
 
-For every possible duration (intervals for the eligible transports), it shall be possible to reserve a number of rooms for a specific arrival day. If there are three transports with arrival on Friday, and they represent durations of 5, 7, and 14 days, then we have the possibility to reserve rooms for this day for each duration.
+{% hint style="info" %}
+Stay length reservations are applied per eligible transport interval.
 
-#### Add values for departure intervals and check if the booking availability updates
+They also consider **multiples** of a stay length when counting bookings.
+{% endhint %}
+
+### Reserve rooms (workflow)
+
+{% stepper %}
+{% step %}
+### Open the screen
+
+Go to **Hotel → Allotment per day**.
+
+Open **Search with Allotment Control**.
+{% endstep %}
+
+{% step %}
+### Pick date and room
+
+Select the arrival **Date** and **Room**.
+
+Run the search.
+{% endstep %}
+
+{% step %}
+### Enter stay length reservations
+
+In the **Stay length** columns, enter how many rooms you want reserved.
+
+Use this when you need to protect long stays or short stays.
+{% endstep %}
+
+{% step %}
+### Save
+
+Click **Update**.
+{% endstep %}
+{% endstepper %}
+
+<details>
+
+<summary>Validation checklist: booking availability updates as expected</summary>
 
 | Step                                                                           | Expected Results                                                                                                                                                                                                                                                                                                                         |
 | ------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -91,3 +149,72 @@ For every possible duration (intervals for the eligible transports), it shall be
 | Select a transport with the same length as the one used                        | The transport selected should appear in the booking menu                                                                                                                                                                                                                                                                                 |
 | Select the hotel used for the allotment                                        | The options should be available for booking                                                                                                                                                                                                                                                                                              |
 | In the Hotel tab, check the number of available rooms                          | The number of available rooms should be the one of free rooms                                                                                                                                                                                                                                                                            |
+
+</details>
+
+### FAQ
+
+<details>
+
+<summary>When should I use stay length reservations?</summary>
+
+Use it when availability must be protected by **arrival weekday** and **duration**.
+
+Typical cases are mixed durations arriving on the same day.
+
+</details>
+
+<details>
+
+<summary>Does this depend on the selected transport?</summary>
+
+No.
+
+You reserve rooms for an arrival day.
+
+Guests can arrive on any transport that day.
+
+</details>
+
+<details>
+
+<summary>Why does <strong>Booked</strong> count “multiples” of the stay length?</summary>
+
+It avoids overlaps.
+
+Example: a 14-night booking also consumes capacity relevant for 7-night “buckets”.
+
+</details>
+
+<details>
+
+<summary>What does <strong>Free</strong> mean in the stay length tooltip?</summary>
+
+It is capacity not reserved for any stay length.
+
+It can still be booked.
+
+It also means you can reserve more rooms for that stay length.
+
+</details>
+
+<details>
+
+<summary>I can’t see or edit the stay length columns. Why?</summary>
+
+Common causes:
+
+* **Room Occupancy** is not enabled for your company.
+* No eligible transport intervals exist for the date/market setup.
+
+</details>
+
+<details>
+
+<summary>What’s the difference between <strong>RESV</strong> and stay length reservations?</summary>
+
+**RESV** limits sales per **transport**.
+
+Stay length reservations allocate rooms per **duration** on the arrival day.
+
+</details>
