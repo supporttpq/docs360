@@ -83,16 +83,6 @@ When a customer changes a passenger’s age and saves the passenger details:
 * Pricing is recalculated before the booking continues
 * The customer always sees the correct price based on age rules
 
-### Acceptance Criteria
-
-The solution is considered complete when:
-
-* The system first checks for a hotel-specific child age limit
-* If none exists, the brand-level child age limit is used
-* Child Price (CH) is applied only when the passenger age is within the allowed range
-* Pricing is recalculated whenever passenger age is entered or modified
-* The Child Profit Margin company feature continues to function without regression
-
 ### Result
 
 This ensures accurate pricing and cost calculation.\
