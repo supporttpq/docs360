@@ -19,11 +19,11 @@ Only users with **super-admin** rights can enable/disable this feature.
 2. Go to **Users → Companies → (select company)**.
 3. Open the **Feature Access** tab.
 
-<figure><img src="../../.gitbook/assets/child-price-edit-company-feature-access-3af66fa9b2fe0fef68886d1b6f19bb90.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/child-price-edit-company-feature-access-3af66fa9b2fe0fef68886d1b6f19bb90.png" alt=""><figcaption></figcaption></figure>
 
 4. Under the **Yield Management** card, find **Child Profit Margin**.
 
-<figure><img src="../../.gitbook/assets/child-price-edit-company-option-668b781437a8509c7b7f34026ffa75f7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/child-price-edit-company-option-668b781437a8509c7b7f34026ffa75f7.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -37,15 +37,15 @@ When **Child Profit Margin** is enabled:
 
 #### Example: booking when child price is NOT set
 
-<figure><img src="../../.gitbook/assets/image (259).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (259).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (260).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (260).png" alt=""><figcaption></figcaption></figure>
 
 #### Example: booking when child price IS set
 
-<figure><img src="../../.gitbook/assets/image (261).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (261).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (262).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (262).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -53,6 +53,6 @@ When **Child Profit Margin** is enabled:
 
 If you need to validate or troubleshoot how child price values are derived and applied:
 
-* [**How CH1P1 is used in booking**](../../2-x-child-prices-+-child-price-discount/how-ch1p1-is-used-in-booking.md)
-* [**How CH1P1 & CH2P1 are calculated in Price List**](../../2-x-child-prices-+-child-price-discount/how-ch1p1-and-ch2p1-are-calculated-in-price-list.md)
-* [**How CH1D1 & CH2D1 is calculated in Price List**](../../2-x-child-prices-+-child-price-discount/how-ch1d1-and-ch2d1-is-calculated-in-price-list.md)
+* [**How CH1P1 is used in booking**](../../../2-x-child-prices-+-child-price-discount/how-ch1p1-is-used-in-booking.md)
+* [**How CH1P1 & CH2P1 are calculated in Price List**](../../../2-x-child-prices-+-child-price-discount/how-ch1p1-and-ch2p1-are-calculated-in-price-list.md)
+* [**How CH1D1 & CH2D1 is calculated in Price List**](../../../2-x-child-prices-+-child-price-discount/how-ch1d1-and-ch2d1-is-calculated-in-price-list.md)
