@@ -13,7 +13,7 @@ Use this to manage hotel-provided extra bed costs consistently. This reduces man
 Extra bed costs apply only when:
 
 * Extra beds are used by passengers.
-* Room costs are calculated **per passenger**.
+* Cost prices are calculated **per passenger**.
 
 If these conditions are not met, the extra bed cost value stays **0**.
 
