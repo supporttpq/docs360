@@ -42,4 +42,5 @@
 * **Stop default product selection for all passengers in WB**: checkbox; if set, will apply to all brands.
 * **Accepts multiple product selection**: checkbox; if set, will apply to all brands; This allows the category to display multiple selection for the products defined. If unchecked, bookings with multiple products selected will appear to have only one selected.
 * **Sold Out Behaviour**: checkbox; this will enable the sold-out behaviour for the products in the category.
+* **One product must be selected**: checkbox; when is selected, the user is forced to select an extra in the booking flow. This is relevant in combination with extras where Auto-selected is used.&#x20;
 * **Out/Home**: checkbox; used for individual transports, to distinguish between out and home products.
