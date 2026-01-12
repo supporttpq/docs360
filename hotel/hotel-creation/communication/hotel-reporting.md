@@ -20,7 +20,7 @@ This feature helps hotels maintain efficient communication with suppliers by ens
 * **Reporting** – Defines the type of list/report to be generated.
 * **Empty List** – If checked, a report will be sent even when no bookings exist for the selected interval.
 
-### Instructions of Use
+### Instructions for Use
 
 1. Go to the **Hotel Reporting** tab.
 2. Click **Create** to set up a new scheduled report.
