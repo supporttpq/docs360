@@ -44,7 +44,7 @@ See [Single Room Cost](single-room-cost.md).
   * **Fixed price**
   * **Percentage of room cost**
 
-See [Single Room Suplement](single-room-suplement.md).
+See [Single Room Suplement](single-room-supplement.md).
 
 ### Benefits for agencies
 
@@ -59,7 +59,7 @@ See [Single Room Suplement](single-room-suplement.md).
 **A:** It must be enabled **per company**. If you don’t have access, ask your system admin.
 
 **Q: What’s the difference between “Single Room Cost” and “Single Room Supplement”?**\
-**A:** Both are used for single occupancy pricing, but they are configured in different places and can behave differently. Use the setup that matches your pricing model. See [Single Room Cost](single-room-cost.md) and [Single Room Suplement](single-room-suplement.md).
+**A:** Both are used for single occupancy pricing, but they are configured in different places and can behave differently. Use the setup that matches your pricing model. See [Single Room Cost](single-room-cost.md) and [Single Room Suplement](single-room-supplement.md).
 
 **Q: How do I block an invalid bed/room setup from being booked?**\
 **A:** Use [Room Restriction](room-restriction.md) to define the allowed combinations.

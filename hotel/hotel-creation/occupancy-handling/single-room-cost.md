@@ -83,10 +83,10 @@ Use a percentage when it should scale with the room cost.
 
 No single-occupancy cost is added for that room type.
 
-#### What’s the difference between “Single Room Cost” and “Single Room Suplement”?
+#### What’s the difference between “Single Room Cost” and “Single Room Supplement”?
 
 **Single Room Cost** adds cost in the Room Cost setup.
 
-[Single Room Suplement](single-room-suplement.md) applies the standard `SINGLE` supplement.
+[Single Room Supplement](single-room-supplement.md) applies the standard `SINGLE` supplement.
 
 Use the one that matches your setup and pricing model.
