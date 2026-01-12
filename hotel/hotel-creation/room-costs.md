@@ -2,67 +2,100 @@
 
 ### Overview
 
-Room Costs allow agencies to set and calculate the **cost price of hotel rooms** over specific periods. Costs can be defined either **per room** or **per passenger**, ensuring flexibility in managing different room configurations and pricing models.
+Room costs let you define the **cost price** your agency pays for hotel rooms. You can set costs for specific date ranges. Costs can be calculated **per room** or **per passenger**.
 
 ### Purpose
 
-* Enable entry of cost prices per room for defined time periods.
-* Support two pricing methods: **per room** and **per passenger**.
-* Accurately calculate total passenger costs, including extra charges.
-* Ensure transparent and fair cost allocation across bookings.
+* Set cost prices for rooms over defined time periods.
+* Support two calculation methods: **per room** and **per passenger**.
+* Add optional extra costs on top of the base room cost.
+* Allocate costs consistently across passengers and bookings.
 
 ### Cost Price Types
 
-1. **Per Room** – A fixed price for the entire room, divided among all passengers staying in that room.
-2. **Per Passenger** – A cost applied individually to each passenger, multiplied by the length of the stay.
+1. **Per room**
+   * A fixed cost for the room.
+   * The system splits it across the room occupants.
+2. **Per passenger**
+   * A cost applied to each passenger.
+   * The system multiplies it by the stay length.
 
 ### Extra Prices
 
-In addition to room costs, **extra prices** can be applied:
+You can add **extra prices** on top of the base room cost. These extras can depend on passenger age and date filters.
 
 * **Per Passenger per Night** – Extra cost added to each passenger’s price per night of the stay.
 * **Per Room** – Extra cost applied per room, distributed equally among all passengers in the room.
 
-Example:
+### Worked example
 
-Let’s consider Room A, a room with 2 ordinary beds and 2 extra beds, and Room B a room with 3 ordinary beds.
+Room A has 2 ordinary beds and 2 extra beds. Room B has 3 ordinary beds.
 
-| Start period | End period | Room type  | Price | Per passenger |
-| ------------ | ---------- | ---------- | ----- | ------------- |
-| 01/01/2011   | 31/01/2011 | //Room A// | 200   | True          |
-| 01/01/2011   | 31/01/2011 | //Room B// | 500   | False         |
+| Start period | End period | Room type | Price | Per passenger |
+| ------------ | ---------- | --------- | ----- | ------------- |
+| 01/01/2011   | 31/01/2011 | _Room A_  | 200   | True          |
+| 01/01/2011   | 31/01/2011 | _Room B_  | 500   | False         |
 
-For a certain booking, we are interested in the cost price for each passenger. Taking the example given above, let’s suppose we have a booking for which the transport arrives at the destination in January 2011. The booking has 7 passengers with 4 passengers (Passenger1 and Passenger2, Passenger3, Passenger4) in Room A and 3 passengers (Passenger5, Passenger6, Passenger7) in Room B. Let’s also suppose that the trip’s length is 7 days (for the next 2 sections, we will consider this example as a default one)
+Assume a booking in January 2011 with a 7-night stay. The booking has 7 passengers:
 
-The cost price will be calculated for each day of the period, like this:
+* Room A: 4 passengers (Passenger1–Passenger4)
+* Room B: 3 passengers (Passenger5–Passenger7)
 
-* for each of the 4 passengers from Room A: cost price = cost price \* trip length// = 200 x 7 = 1400
-* for each of the 3 passengers from Room B: cost price = (cost price \* trip length) / passengers number = (500 x 7) / 3 = 1167 (Per passenger is set to false; as we are interested in the cost price for one passenger, we divide the cost price by the number of passengers from the room)
+#### Base room cost per passenger
 
-From this section there will also be established the extra prices. There will be 2 types of extra prices:
+* Room A is **per passenger**:
+  * Cost per passenger = `200 × 7 = 1400`
+* Room B is **per room**:
+  * Total room cost = `500 × 7 = 3500`
+  * Cost per passenger = `3500 ÷ 3 ≈ 1166.67` (rounded by currency rules)
 
-* Per passenger per night
-* Per room
+#### Extra prices
 
-Let’s suppose we have these values inserted:
+Assume this extra price setup:
 
 | Start age | End age | Extra price/night/passenger | Extra price/room |
 | --------- | ------- | --------------------------- | ---------------- |
 | 0         | 50      | 100                         | 12               |
 
-If Passenger1’s age is between 0 and 50 years
+If Passenger1 is 0–50 years old:
 
-* Extra price per night per passenger = extra price x trip length = 100 x 7 = 700. There is one Room A booked for this trip. The value for the second extra price would be calculated like this:
-* Extra price per room for one passenger = (extra room price x booked rooms number) / passengers number from the booked room
+* Extra price per night per passenger = `100 × 7 = 700`
+* Extra price per room per passenger:
+  * Extra room price total = `12 × 1 room = 12`
+  * Extra per passenger = `12 ÷ 4 = 3`
 
-For Passenger1 that stays in Room A, the value would be
+#### Total cost for Passenger1
 
-* Extra price per room for one passenger = (12 x 1)/4 = 3
+Passenger1 stays in Room A:
 
-The total cost price for Passenger1 (and also for the other passengers from Room A) is obtained by adding all these 3 prices:
+* Total cost = `1400 + 700 + 3 = 2103`
 
-* Total cost for Passenger1 = 1400 + 700 + 7 = 2107
-
-The conclusion would be that for each passenger the cost price is calculated like this:
+#### Summary formula
 
 * Total cost price = cost price + extra price per night per passenger + extra price per room for one passenger
+
+### Related pages
+
+* [Room cost](room-cost/)
+
+### FAQ
+
+#### What’s the difference between **per room** and **per passenger**?
+
+**Per room** applies once per room and is split across occupants. **Per passenger** applies to each passenger individually.
+
+#### Why do passengers in the same room sometimes get different costs?
+
+Age filters can apply different extra prices per passenger. Board type rules can also impact cost in some setups.
+
+#### How does the system split a per-room cost?
+
+It splits the room cost evenly across room occupants. The split is recalculated if room occupancy changes.
+
+#### Why does my number look “rounded”?
+
+Splits can create decimals. Rounding depends on your currency settings and where totals are displayed.
+
+#### I changed a room cost setup, but the booking didn’t update. Why?
+
+Some totals update only after cost/profit recalculation runs. Re-open the booking and check the cost breakdown after recalculation.
