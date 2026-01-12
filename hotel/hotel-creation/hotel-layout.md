@@ -24,7 +24,7 @@ To make Hotel Layout available (the **Hotel Room** tab in Office and room select
 
 {% stepper %}
 {% step %}
-### 1) Create the room reservation supplement
+### Create the room reservation supplement
 
 Create a supplement used for room selection.\
 It is added automatically when a room is selected in the layout.
@@ -46,7 +46,7 @@ The **price** is set per **room number** later.
 {% endstep %}
 
 {% step %}
-### 2) Add backgrounds and layout elements
+### Add backgrounds and layout elements
 
 Open **Hotel → Layout Elements** (see [Layout Elements](../../layout-elements.md)).
 
@@ -71,7 +71,7 @@ Use transparent images for room icons. It makes availability colors visible.
 {% endstep %}
 
 {% step %}
-### 3) Configure room numbers and generate allotments
+### Configure room numbers and generate allotments
 
 Define the “real” rooms for the hotel’s room types.
 
@@ -104,7 +104,7 @@ Allotment color meanings:
 {% endstep %}
 
 {% step %}
-### 4) Build the hotel layout
+### Build the hotel layout
 
 Open the hotel and go to the **Layout** tab.\
 Click **Create Layout**.
@@ -126,7 +126,7 @@ To add rooms and decor:
 {% endstep %}
 
 {% step %}
-### 5) Link room numbers to room elements
+### Link room numbers to room elements
 
 Assign real room numbers to **Room** elements on the layout:
 
@@ -137,7 +137,7 @@ Assign real room numbers to **Room** elements on the layout:
 {% endstep %}
 
 {% step %}
-### 6) Use Hotel Layout in a booking
+### Use Hotel Layout in a booking
 
 In Office bookings, the **Hotel Room** tab shows the layout and available rooms.
 
