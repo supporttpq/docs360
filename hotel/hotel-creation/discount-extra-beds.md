@@ -40,8 +40,7 @@ This reduces manual adjustments and ensures accurate price calculations in the b
 11. Create - Adds new discount line.
 12. Removed Discounts - Shows previously removed rules for audit or restoration.
 
-    <figure><img src="../../.gitbook/assets/image (509).png" alt=""><figcaption></figcaption></figure>
-
+<figure><img src="../../.gitbook/assets/image (509).png" alt=""><figcaption></figcaption></figure>
 
 13. Show All - Displays all discount rows regardless of filtering.
 
