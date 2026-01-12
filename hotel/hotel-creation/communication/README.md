@@ -2,41 +2,108 @@
 
 ### Overview
 
-The **Communication** feature allows you to configure automated emails with booking lists for a specific hotel. These reports can be scheduled to run at regular intervals and sent directly to one or more email addresses.
+The **Communication** tab lets you schedule booking-list emails for a hotel.\
+The system generates the list automatically and sends it to your recipients.
 
 ### Purpose
 
-This functionality ensures hotels and agencies receive timely updates about bookings. Automating report delivery eliminates manual report generation, improves communication, and helps partners plan arrivals and manage availability more efficiently.
+This keeps hotels and agencies updated without manual exports.\
+It helps partners plan arrivals and manage availability.
 
 <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-In the communication tab,&#x20;
-
-* Click on Create&#x20;
+{% hint style="info" %}
+This tab uses the same scheduler logic as [Hotel reporting](hotel-reporting.md).
+{% endhint %}
 
 ### Field Explanations
 
-* **Interval** – Defines how often the scheduler runs:
+* **Interval** – How often the report is sent:
   * **Daily** – The report is generated and sent every day.
-  * **Weekly** – The report is sent every week on the day specified next to the interval.
-  * **Monthly** – The report is sent every month on the day specified next to the interval.
-  * **Annually** – The report is sent every year on the day specified next to the interval.
-* **Bookings Made** – Generates a report with all bookings created within a set timeframe (e.g., choosing **7** includes all bookings made in the last 7 days).
-* **Days After** – Generates a report with all bookings scheduled to arrive within a given number of days after the report is sent (e.g., choosing **7** includes all arrivals in the next 7 days).
-* **Hour** – Specifies the exact time the email with the booking list is sent.
-* **Email** – Enter one or more email addresses to receive the booking report.
-* **Schedulers** – Displays an overview of all scheduled reports and their status.
-* **Reporting** – Select the Reporting Type&#x20;
-* **Empty List** – If checked, the report will still be sent even when no bookings are found.
+  * **Weekly** – Sent every week on the selected weekday.
+  * **Monthly** – Sent every month on the selected day.
+  * **Annually** – Sent every year on the selected date.
+* **Bookings Made** – Bookings created in the last **X** days.
+* **Days After** – Bookings arriving in the next **X** days.
+* **Hour** – The time the email is sent.
+* **E-mail** – One or more recipient email addresses.
+* **Schedulers** – Overview of all schedulers and their status.
+* **Reporting** – The report format/type to generate.
+* **Empty List** – Send the email even when the list is empty.
 
-### Instructions of Use
+Examples:
 
-1. Go to the **Communication** tab.
-2. Click on **Create** to define a new scheduled report.
-3. Select the **Interval** (daily, weekly, monthly, annually) and, if needed, choose the specific day for weekly/monthly/annual schedules.
-4. Define the **Bookings Made** and/or **Days After** values depending on what kind of booking details you want included.
-5. Set the **Hour** for when the email should be sent.
-6. Enter one or more **Email addresses** to receive the report.
-7. (Optional) Check  the **Empty List** if you want the report to be sent even when there are no bookings.
-8. Save the scheduler.
-9. Use the **Schedulers** and **Reporting** sections to review scheduled tasks and the type of reports sent.
+* **Bookings Made = 7** sends bookings created in the last 7 days.
+* **Days After = 7** sends arrivals in the next 7 days.
+
+{% hint style="warning" %}
+**Bookings Made** and **Days After** are mutually exclusive.\
+Set one of them, not both.
+{% endhint %}
+
+### How to use
+
+{% stepper %}
+{% step %}
+### 1. Create a scheduler
+
+1. Open the hotel and go to **Communication**.
+2. Click **Create**.
+{% endstep %}
+
+{% step %}
+### 2. Configure what to send
+
+1. Select an **Interval**.
+2. Set either **Bookings Made** or **Days After**.
+3. Select the **Reporting** type.
+{% endstep %}
+
+{% step %}
+### 3. Set recipients and timing
+
+1. Choose the **Hour**.
+2. Add one or more **E-mail** recipients.
+3. Optional: enable **Empty List**.
+{% endstep %}
+
+{% step %}
+### 4. Save and monitor
+
+1. Save the scheduler.
+2. Use **Schedulers** to review status and history.
+{% endstep %}
+{% endstepper %}
+
+### FAQ
+
+#### Can I send the report to more than one email address?
+
+Yes. Add multiple addresses in **E-mail**.
+
+#### What’s the difference between **Bookings Made** and **Days After**?
+
+* **Bookings Made** targets recently created bookings.
+* **Days After** targets upcoming arrivals.
+
+#### Can I use **Bookings Made** and **Days After** together?
+
+No. Choose one. They filter different report types.
+
+#### Why did I receive an empty report?
+
+You likely enabled **Empty List**.\
+Disable it to skip empty sends.
+
+#### Where can I see what was sent earlier?
+
+Open **Schedulers** and review the scheduler history and status.
+
+#### How do I stop the emails from being sent?
+
+Disable or delete the scheduler in **Schedulers**.
+
+#### The report is not sent. What should I check?
+
+Check **Schedulers** for errors and last run time.\
+Also verify the recipient email addresses are correct.
