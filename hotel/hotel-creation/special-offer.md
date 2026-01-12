@@ -13,7 +13,7 @@ There are 4 rules:
 * Early booking
 * Stay and pay
 
-### 🔹 Interface Description
+### Interface Description
 
 #### Filters & Controls
 
@@ -25,7 +25,7 @@ There are 4 rules:
   * `Unlock Service`: Enables editing locked fields.
   * `Create`: Add a new special offer.
 
-### 🔹 Special Offers Table Columns
+### Special Offers Table Columns
 
 | Column Name                     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -61,7 +61,7 @@ There are 4 rules:
 | R                               | Rejected                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | **Author**                      | Username of the person who created or modified the offer.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 
-### 🔹 Notes & Best Practices
+### Notes & Best Practices
 
 * Always review the **Approved** status before assuming the offer is live.
 * Ensure **Booking** and **Arrival** windows do not overlap incorrectly.
