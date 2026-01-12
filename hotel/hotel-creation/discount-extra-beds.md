@@ -2,76 +2,71 @@
 
 ### Overview
 
-The **Extra Bed Discounts** feature allows administrators to define discounts specifically for rooms with extra beds. These discounts can be applied to children or adults depending on age and can be customized for multiple extra beds per room.
+The **Extra Bed Discounts** feature lets administrators define discounts for passengers using **extra beds**.
 
-### **Purpose**
+You can target both children and adults using age rules. You can also define different discounts per extra bed (up to four).
 
-The purpose of the **Discount Extra Beds** section is to:
+### Purpose
 
-* Offer flexible discounting options for additional bed usage
-* Automate price reductions for extra occupants
-* Allow discounts that vary by age, stay period, booking period, or room type
-* Support multiple transports and stay periods
-* Ensure consistency across seasons and product configurations
+Use this to:
 
-This reduces manual adjustments and ensures accurate price calculations in the booking engine.
+* Discount passengers who occupy extra beds.
+* Automate price reductions based on rules.
+* Vary discounts by age, stay dates, booking dates, room type, transport, and period.
+* Keep pricing consistent across seasons and configurations.
+
+This reduces manual corrections and keeps booking totals consistent.
+
+{% hint style="info" %}
+Extra-bed discounts are only applied when a passenger is actually assigned to an extra bed in the room allocation.
+{% endhint %}
 
 <figure><img src="../../.gitbook/assets/image (508).png" alt=""><figcaption></figcaption></figure>
 
 ### Field Explanations
 
-1. **Age** – The age of the guest for which the discount is applied. Typically used for children.
-2. **Start Date / End Date** – The validity period during which the discount is applied.
-3. **Booking Start / End Date -** Booking interval. Only bookings created within the set interval will be applied the extra bed discount
-4. **Discount Values**
-   * **1st Column** – Discount applied to the first extra bed.
-   * **2nd Column** – Discount applied to the second extra bed in a room (optional).
-   * **3rd Column** – Discount applied to the third extra bed in a room (optional).
-5. **Percent Checkbox** – When checked, the discount is applied as a percentage (e.g., 10%).
-6. **Discount Type Options**
-   * **FHC** – Extra bed discount calculated from profit (works with Price Margin Service).
-   * **H (Hidden)** – The average discount per passenger per room is added to each passenger in the room.
-   * **HP (Hotel Price)** – Percentage applied from the hotel price.
-   * **PD (Per Day)** – When checked, the discount value is applied per day instead of per interval.
-7. **Room Type** – Select the room(s) for which the discount applies.
-8. **Transports** – Select transport(s) to which the discount may apply.
-9. **Period** – Defines the transport intervals or periods for which the discount is valid.
-10. Delete Icon - Removes the discount line.
-11. Create - Adds new discount line.
-12. Removed Discounts - Shows previously removed rules for audit or restoration.
+* **Age** – The passenger age the rule applies to. Often used for child discounts.
+* **Start Date / End Date** – Stay dates where the discount is valid.
+* **Booking Start / End Date** – Booking dates where the rule is valid. Only bookings created in this interval will receive the discount.
+* **Discount columns** – Discount values per extra bed:
+  * **1st** – First extra bed
+  * **2nd** – Second extra bed (optional)
+  * **3rd** – Third extra bed (optional)
+  * **4th** – Fourth extra bed (optional)
+* **% (Percent)** – Apply the values as percentages (example: `10` = 10%).
+* **Discount type**
+  * **FHC** – Calculated from profit (works with Price Margin Service).
+  * **H (Hidden)** – Distributes the average discount per passenger in the room.
+  * **HP (Hotel Price)** – Percentage calculated from the hotel price.
+* **PD (Per Day)** – Apply the discount per day instead of per interval.
+* **Room Type** – Room types the rule applies to.
+* **Transports** – Transports the rule applies to.
+* **Period** – The period the rule applies to.
+* **Delete** – Removes the discount row.
+* **Create** – Adds a new discount row.
+* **Removed Discounts** – Shows removed rules for audit or restoration.
 
 <figure><img src="../../.gitbook/assets/image (509).png" alt=""><figcaption></figcaption></figure>
 
-13. Show All - Displays all discount rows regardless of filtering.
+* **Show All** – Displays all discount rows, regardless of filtering.
 
 ***
 
 ### Instructions for Use
 
 1. Navigate to the **Extra Bed Discounts** section in the Hotel Menu.
-2. Click **Create** to create a new discount entry.
-3. **Define age ranges -** Set the age interval(s) that qualify for the extra bed discounts (e.g., children 2–11 years).
-4. **Set valid stay dates -** These are the dates when the discounted stay must occur.
-5. **Set booking dates -** Fields allowing discounts only for bookings created between specific dates.
-6. **Enter discount values -** You can specify:
-   * **Discount 1st Extra Bed**
-   * **Discount 2nd Extra Bed**
-   * **Discount 3rd Extra Bed**
-   * **Discount 4th Extra Bed**
-   * Optionally mark discount as **percentage** (%).
-7. **Select the discount type option -** Choose whether the discount applies to:
-   * **FHC** – Extra bed discount calculated from profit (works with Price Margin Service).
-   * **H (Hidden)** – The average discount per passenger per room is added to each passenger in the room.
-   * **HP (Hotel Price)** – Percentage applied from the hotel price.
-   * **PD (Per Day)** – When checked, the discount value is applied per day instead of per interval.
-8. **Select Room Types -** Discount rules can be limited to specific rooms or applied to all rooms.
-9. **Select Transports -** Each discount rule can be tied to one or more transport codes.
-10. **Choose Period -** Select which price period the discount belongs to.
-11. Save the discount. It will now be applied automatically when the booking meets the defined criteria.
+2. Click **Create**.
+3. Set the **Age** rule (example: 2–11 years).
+4. Set **Start Date / End Date** for the stay.
+5. Set **Booking Start / End Date** (optional).
+6. Enter discount values for the relevant extra beds (1st–4th).
+7. Choose **%**, **PD**, and **Discount type** as needed.
+8. Select the **Room Type**, **Transports**, and **Period** filters.
+9. Save.
 
 Once configured, the system automatically calculates and applies the appropriate discount when a booking meets all criteria.
 
-### **Example Use Case**
+### Example use case
 
 A hotel gives the following discounts for children:
 
@@ -83,5 +78,46 @@ A hotel gives the following discounts for children:
 * Valid for all room types
 * Assigned to **Period 1**
 
+***
 
+### FAQ
 
+#### Why is my extra bed discount not applied?
+
+Check these items:
+
+* The passenger is assigned to an **extra bed** in the room.
+* The passenger’s **age** matches the rule.
+* Stay dates match **Start Date / End Date**.
+* Booking date matches **Booking Start / End Date** (if set).
+* **Room Type**, **Transport**, and **Period** match the booking.
+
+#### What’s the difference between **%** and a fixed value?
+
+* Use **%** to discount by a percentage (example: `10` = 10%).
+* Leave **%** unchecked to discount by a fixed amount (currency).
+
+#### What does **PD (Per Day)** do?
+
+**PD** applies the discount **per day** of the stay.\
+Without **PD**, the discount is applied per interval.
+
+#### How do I discount the 2nd, 3rd, or 4th extra bed?
+
+Fill in the corresponding discount columns.\
+Leave unused columns empty if you only support fewer beds.
+
+#### What are **FHC**, **H (Hidden)**, and **HP**?
+
+* **FHC**: Calculates discount from profit. It is used with Price Margin Service.
+* **H (Hidden)**: Spreads the discount across passengers in the room.
+* **HP**: Calculates discount as a percentage of the hotel price.
+
+#### How do I restore a discount I deleted?
+
+Open **Removed Discounts** and restore the rule from there.
+
+#### How is this different from Extra Bed Costs?
+
+* **Discount Extra Beds** changes the **customer price** (discount).
+* [Extra Beds Costs](extra-beds-costs.md) changes the **hotel cost** side (what you pay the supplier).
