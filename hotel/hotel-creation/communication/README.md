@@ -37,6 +37,6 @@ In the communication tab,&#x20;
 4. Define the **Bookings Made** and/or **Days After** values depending on what kind of booking details you want included.
 5. Set the **Hour** for when the email should be sent.
 6. Enter one or more **Email addresses** to receive the report.
-7. (Optional) Check **Empty List** if you want the report to be sent even when there are no bookings.
+7. (Optional) Check  the **Empty List** if you want the report to be sent even when there are no bookings.
 8. Save the scheduler.
 9. Use the **Schedulers** and **Reporting** sections to review scheduled tasks and the type of reports sent.
