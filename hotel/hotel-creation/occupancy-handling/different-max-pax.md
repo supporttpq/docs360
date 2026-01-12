@@ -32,31 +32,31 @@ After changing values, click **Update** (marked as `1` in the screenshot) to sav
 
 {% stepper %}
 {% step %}
-### Open the allotment view
+#### Open the allotment view
 
 Go to **Hotel → Allotments per Day**.
 {% endstep %}
 
 {% step %}
-### Select the room type
+#### Select the room type
 
 Pick the room type you want to manage.
 {% endstep %}
 
 {% step %}
-### Set Max Pax configurations
+#### Set Max Pax configurations
 
 Define the Max Pax value for each configuration you want to sell.
 {% endstep %}
 
 {% step %}
-### Allocate rooms per day
+#### Allocate rooms per day
 
 In **Allotments per Day**, set how many rooms are available per configuration per day.
 {% endstep %}
 
 {% step %}
-### Save
+#### Save
 
 Click **Update** to apply the changes.
 {% endstep %}
