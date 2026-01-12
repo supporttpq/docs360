@@ -25,7 +25,7 @@ Extra-bed discounts are only applied when a passenger is actually assigned to an
 
 ### Field Explanations
 
-* **Age** – The passenger age the rule applies to. Often used for child discounts.
+* **Age** – The passenger age the rule applies to.
 * **Start Date / End Date** – Stay dates where the discount is valid.
 * **Booking Start / End Date** – Booking dates where the rule is valid. Only bookings created in this interval will receive the discount.
 * **Discount columns** – Discount values per extra bed:
