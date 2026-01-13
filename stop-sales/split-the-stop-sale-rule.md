@@ -2,142 +2,157 @@
 
 ### Overview
 
-The Remove or Split functionality allows users to modify an existing Stop Sale rule by either removing it entirely or splitting it into multiple distinct periods. This process provides greater flexibility in managing room allotments and sale restrictions.
+Use **Split** to turn one Stop Sale rule into multiple date periods. Each period becomes its own Stop Sale entry.
 
-***
+This is useful when you only want to remove or reopen availability for part of a long range.
 
-### Accessing the Stop Sales Page
+### When to use it
 
-1. Navigate to the Hotel menu.
-2. Select Stop Sales.
-3. The Stop Sales page will be displayed, listing all defined rules.
+* Remove (undo) a Stop Sale for only part of the original period.
+* Apply **Agreed Allotment** for only some dates.
+* Keep rules easier to read and maintain.
 
-&#x20;    \- The default filter applies the current date to the Start/End date fields.
+{% hint style="info" %}
+Only **enabled** rules can be removed or split.
+{% endhint %}
+
+### Access the Stop Sales page
+
+1. Go to **Hotel → Stop Sales**.
+2. The Stop Sales list shows all rules.
+3. The default filter uses today’s date for **Start/End**.
 
 <figure><img src="../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
 
-***
+### Split a Stop Sale rule
 
-### Steps to Remove or Split a Stop Sale Rule
+{% stepper %}
+{% step %}
+### Filter and select a rule
 
-Step 1: Filter and Select Rule
-
-* Use the available filters to narrow down the list.
-* Select an enabled stop sale rule from the list.
+1. Use filters to narrow down the list.
+2. Select an **enabled** Stop Sale rule.
 
 <figure><img src="../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
 
-Step 2: Click Edit
+{% step %}
+### Open the rule in edit mode
 
-* Click the Edit button corresponding to the selected rule.
-* A "Remove or Split" button will appear.
+Click **Edit** (pencil icon) for the selected rule. This shows the **Remove or Split** button.
+{% endstep %}
 
-Step 3: Initiate Remove or Split
+{% step %}
+### Open “Remove or Split”
 
-* Click on the "Remove or Split" button.
-* A new section titled "Remove or Split Stop Sale" appears beneath the rule.
+Click **Remove or Split**. A section called **Remove or Split Stop Sale** opens under the rule.
+{% endstep %}
 
-Step 4: Specify Number of Records
+{% step %}
+### Choose how many split records you want
 
-* Enter the desired number of splits in the "Record number to split stop sale in" field.
-* The interface will generate that number of rows for user input.
-  * Each row will default to the Start/End dates of the original rule.
-  * All rows will have the Enabled checkbox marked by default.
+Enter the number in **“Record number to split stop sale in”**. Tourpaq creates that many rows.
 
-Step 5: Define Periods and Actions
+Each row starts with the original **Start/End** dates. Each row starts as **Enabled**.
+{% endstep %}
 
-* For each new row, configure:
-  * Start/End Date: Define the period.
-  * Action: Choose between Remove or Agreed Allotment.
+{% step %}
+### Define each period and action
+
+For each row, set:
+
+* **Start/End Date**: the period.
+* **Action**: **Remove** or **Agreed Allotment**.
 
 <figure><img src="../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
 
-Validations:
+{% step %}
+### Split or cancel
 
-* The split periods must fully cover the date range of the original rule.
-* No overlapping periods are allowed among the split entries.
+* Click **Split** to apply changes.
+* Click **Cancel** to discard changes.
 
-Step 6: Execute or Cancel
+If validations fail, Tourpaq shows an error and does not save.
+{% endstep %}
+{% endstepper %}
 
-* Click Split to apply the changes.
-* If validations pass:
-  * Rule is updated and saved.
-  * The section closes.
-  * The page refreshes, displaying each split rule as an individual entry.
-* If validations fail:
-  * An error message is displayed.
-  * The changes are not saved.
-* Alternatively, click Cancel to discard changes and close the section.
+### Validations
 
-***
+* Split periods must fully cover the original date range.
+* Split periods must not overlap.
 
 ### Post-Split Behavior
 
-* Once split, each resulting rule behaves as a standalone entry.
-* They can be edited or removed independently.
-
-***
+After splitting, each new rule is independent. You can edit or remove each rule separately.
 
 ### Check Results in Stop Sales Logs
 
-Step 1: View Logs
+After splitting, confirm each new rule in the logs.
 
-* After executing the split (Step 7 above), click View Details for each new rule.
-* The Stop Sales Logs page is displayed.
-  * Filters are automatically applied based on the rule's period and room.
-
-Step 2: Check Log Records
-
-* Verify that Initial R. No and Final R. No reflect the setup.
-* Confirm the correct actions (Removed, Agreed Allotment) are shown.
+1. Click **View details** for each new rule.
+2. The **Stop Sales Logs** page opens with filters prefilled.
+3. Check **Initial r.No** and **Final r.No**.
+4. Confirm the expected action is shown (Removed / Agreed Allotment).
 
 <figure><img src="../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
 
-***
+### Check results in Allotment per Day
 
-### &#x20;Check Results in Allotment per Day on Hotel
-
-Step 1: Access Hotel Edit Page
-
-* After completing the split, go to the Hotel Edit Page.
-
-Step 2: Open "Allotment per Day" Tab
-
-* Navigate to the Allotment per Day tab.
-* Apply filters for the dates and room involved in the split.
-
-Step 3: Check Allotment
-
-* The daily allotment for the selected room is displayed.
-* Allotment reflects updates based on the split rule setup.
+1. Open the hotel in edit mode.
+2. Go to **Allotment per Day**.
+3. Filter on the same room and dates.
+4. Confirm daily allotment matches the split setup.
 
 <figure><img src="../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
 
-***
-
 ### Check Results in Pricelist
 
-Step 1: Access Pricelist
+1. Go to **Pricelist → Pricelist**.
+2. Filter by room and date to match each split rule.
+3. Check **FHA** (Free Hotel Allotment).
 
-* After splitting the stop sale rule, go to Pricelist Menu -> Pricelist.
+Formula: `FHA = Final r.No - Booked rooms`.
 
-Step 2: Apply Filters
-
-* Filter by date and room in accordance with the split rules.
-
-Step 3: Verify FHA  (Free Hotel Allotment)
-
-* The FHA (Free Hotel Allotment) field is populated.
-*   It reflects the available number of rooms:
-
-    * FHA = Final R. No - Booked Rooms
-
-    <figure><img src="../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
-
-***
+<figure><img src="../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
 
 ### Notes
 
-* Only enabled rules can be modified using Remove or Split.
-* The system ensures data integrity through strict validation checks.
-* This feature is crucial for dynamic rate and availability management.
+* Use splitting to apply different actions across one original date range.
+* Start verification in **Stop Sales Logs**.
+
+### FAQ
+
+#### Can I split a disabled Stop Sale rule?
+
+No. The rule must be **enabled** to split it.
+
+#### Can I create gaps in the split periods?
+
+No. The split periods must fully cover the original date range.
+
+#### Can split periods overlap?
+
+No. Overlaps are blocked by validation.
+
+#### What is the difference between **Remove** and **Agreed Allotment** in a split row?
+
+* **Remove** undoes the Stop Sale for that period.
+* **Agreed Allotment** keeps the Stop Sale, but reopens limited availability.
+
+See:
+
+* [Remove (Undo) Stop Sale](remove-undo-stop-sale.md)
+* [Agreed Allotment Stop Sale](agreed-allotment-stop-sale.md)
+
+#### Does splitting change existing bookings?
+
+No. It changes availability calculations for the dates and room.
+
+#### How do I “undo” a split?
+
+There is no merge button. Edit the split rules or recreate one new rule covering the full period.
+
+#### Where should I verify results first?
+
+Start with **Stop Sales Logs → View details**. Then check **Allotment per Day** and **Pricelist**.
