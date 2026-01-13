@@ -1,15 +1,19 @@
 # Facilities
 
+## Main page
+
 ### Overview
 
-Use **Hotel → Facilities** to define the facility master data used across hotels.
+The **Hotel Facilities** page is used to manage and categorize all facilities and amenities available at hotels in our system. Each facility can be configured to determine how it is displayed on the web and app, whether it is required, and additional attributes like type and maximum characters.
 
-Facilities control:
+This page is accessible under the **Hotel Management** module and is essential for ensuring that hotel data is accurately presented to clients and internal teams.
 
-* What guests see on the website and in the Guest App.
-* What can be used as filters on the website.
-* What fields are mandatory when a hotel uses a facilities template.
-* Optional API flags (for example **All Inclusive** and **Swimming Pool**).
+### **Purpose**
+
+* **Centralize Facility Management**: Maintain a single source of truth for hotel facilities.
+* **Custom Display Options**: Control which facilities are visible on the web, app, or both.
+* **Data Consistency**: Ensure all required fields are completed and formatted correctly.
+* **Categorization**: Organize facilities into categories such as `HotelFacilities`, `Pension`, `Distance`, or `Rooms` for easier filtering and reporting.
 
 ### Where to use it
 
@@ -31,12 +35,44 @@ Hotels must have a **Facilities template** selected on the hotel before you can 
 
 There are four tabs:
 
-* **Facilities**: Create and maintain facility definitions.
+* **Facilities**: list of facilities. Create and maintain facility definitions.
 * **Categories**: Group facilities for display on web/offers/tickets.
 * **Templates**: Bundle facilities into reusable sets for hotels.
 * **Name for Feeds**: Optional naming used by external feeds/integrations.
 
-### Facilities <a href="#facilities" id="facilities"></a>
+### **Fields Overview**
+
+| Field                                       | Purpose                                                                            | Instructions                                                                                                                                                                                                                                              |
+| ------------------------------------------- | ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <p><strong>Name</strong></p><p></p>         | The name of the facility.                                                          | <p>Enter a clear, descriptive name for the facility. Example: “WiFi”, “Mini Market”, or “Outdoor Yoga”. Names should be concise yet descriptive.</p><p><br></p>                                                                                           |
+| <p><strong>Category</strong></p><p><br></p> | <p>Defines the type or classification of the facility.</p><p><br></p>              | Select an appropriate category such as `HotelFacilities`, `Pension`, `Rooms`, or `Distance`. This helps organize and filter facilities.                                                                                                                   |
+| **Required**                                | Specifies whether this facility must be completed when adding or updating a hotel. | ✔ = required, ✖ = optional. Check the box if the facility is mandatory.                                                                                                                                                                                   |
+| **Filter on Web**                           | Determines if the facility can be used as a filter option on the website.          | ✔ = users can filter hotels based on this facility. ✖ = cannot be used as a filter.                                                                                                                                                                       |
+| **Show on Web**                             | Controls whether the facility is displayed on the website.                         | ✔ = facility visible to web users, ✖ = hidden. Useful for internal or optional facilities.                                                                                                                                                                |
+| **Show in App**                             | Controls whether the facility is displayed in the mobile app.                      | ✔ = visible in app, ✖ = hidden. Useful for facilities not relevant to app users.                                                                                                                                                                          |
+| **Max Chars**                               | Maximum number of characters allowed for this field (if applicable).               | Enter a numeric limit for text fields, e.g., 150 characters for long descriptions. Leave blank if not applicable.                                                                                                                                         |
+| **Type**                                    | Determines the type of data that can be entered for the facility.                  | Options include: • `Text` – free text • `Multiline text` – multiple lines • `Message` – short notification • `Time` – specific time • `Activity` – activity description • `Date` – calendar date • `Yes/No` – binary selection • `Integer` – numeric only |
+| **Flag on Web**                             | Indicates if this facility should have a special flag or highlight on the website. | ✔ = facility flagged on web (special attention). ✖ = no flag. Usually used for promotional or highlighted services.                                                                                                                                       |
+| **Delete (trash icon)**                     | Allows removal of the facility from the system.                                    | Click the trash icon to delete the facility. This action is permanent and should be used carefully.                                                                                                                                                       |
+
+**Example Workflow**
+
+1. **Creating a New Facility**
+   * Click **Create** in the top-right corner.
+   * Enter the **Name** and select the **Category**.
+   * Configure whether it is **Required**, visible on **Web/App**, and if it should **Filter** or **Flag** on web.
+   * Choose the **Type** based on the nature of the data.
+   * Set **Max Chars** if needed.
+   * Save the facility.
+2. **Editing an Existing Facility**
+   * Click the facility name.
+   * Update any relevant fields.
+   * Save changes to apply.
+3. **Deleting a Facility**
+   * Click the **trash icon** next to the facility.
+   * Confirm deletion.
+
+## Facilities <a href="#facilities" id="facilities"></a>
 
 ### Overview
 
@@ -52,12 +88,6 @@ The **Facilities** tab allows administrators to define and manage hotel faciliti
 A new facility can be defined in the **Facilities** tab by pressing the "Create" button in the upper right corner of the screen.
 
 <figure><img src=".gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
-
-### Create, edit, and delete
-
-* **Create**: Click **Create**, fill the fields, then save.
-* **Edit**: Open the facility, update fields, then save.
-* **Delete**: Click the **trash icon**, then confirm.
 
 {% hint style="danger" %}
 There can be a maximum of **5 facility documents** on a ticket.
@@ -124,7 +154,7 @@ Use these only if your web/API integration expects them.
 4. Select the template on the hotel (see [Hotel creation](hotel/hotel-creation/)).
 5. Fill facility values on the hotel in **Web** (see [Hotel Web](hotel/hotel-creation/hotel-web.md)).
 
-### Categories
+## Categories
 
 <figure><img src=".gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
@@ -156,7 +186,7 @@ Use these only if your web/API integration expects them.
 * **Show on Ticket** – Displays this category on the customer’s travel ticket.
 * **Show on Select Offer** – Displays this category in the booking offer.
 
-### Templates <a href="#templates" id="templates"></a>
+## Templates <a href="#templates" id="templates"></a>
 
 ### Overview
 
