@@ -27,7 +27,7 @@ It reduces manual workload and minimizes risk of allotment errors.
 
 ## **Field Explanation**
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **1. Change Values Tool**
 

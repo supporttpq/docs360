@@ -403,6 +403,7 @@
   * [Out / Home](extras-category/out-home/README.md)
     * [Out/Home - Web Booking](extras-category/out-home/out-home-web-booking.md)
     * [Out / Home - Ticket](extras-category/out-home/out-home-ticket.md)
+  * [One product must be selected](extras-category/one-product-must-be-selected.md)
 * [Discounts/Supplements](discounts-supplements.md)
 * [Disc/Suppl Categories](disc-suppl-categories.md)
 * [Ticket Categories](ticket-categories.md)
