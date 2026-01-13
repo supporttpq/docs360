@@ -214,7 +214,7 @@ Use these only if your web/API integration expects them.
 * **Name** – Defines the template’s name.
 * **Facilities** – A multi-select field to choose from existing facilities that will be bundled into the template.
 
-### Name for Feeds
+## Name for Feeds
 
 Use this tab only if you send hotel content to external systems (feeds/partners).
 
