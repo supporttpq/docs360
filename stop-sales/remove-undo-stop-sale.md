@@ -1,65 +1,101 @@
 # Remove (Undo) Stop Sale
 
-#### Overview
+### Overview
 
-This feature allows you to reverse a previously applied **Stop Sale** rule for a hotel room (i.e. re-enable availability that had been blocked).
+Use **Remove (Undo)** to remove a Stop Sale rule and restore availability.
 
-#### Purpose
+### Purpose
 
-If you temporarily marked a room or date range as unavailable using Stop Sale, “Remove (Undo) Stop Sale” restores its original allotment and availability. Use it when you no longer want to block bookings for those rooms/dates.
+Remove a Stop Sale when the restriction is no longer needed. Tourpaq restores the original allotment and availability for the same dates.
 
-#### Field & Section Explanations
+### When to use it
 
-| Name / Section              | What It Does / Notes                                                                                                          |
-| --------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| **Stop Sales List**         | Shows all active Stop Sale rules in your system, filtered by current dates by default.                                        |
-| **Edit button**             | Opens the rule so you can apply changes (remove or split).                                                                    |
-| **Remove or Split section** | Appears when editing a rule. Here you can choose to fully remove or modify part of the stop sale.                             |
-| **Remove checkbox**         | When selected, undoes the Stop Sale entirely and restores the original allotments. (Initially disabled while rule is active.) |
-| **Info button (tooltip)**   | Hover to see explanation: _“This will remove the Stop Sale and enable the initial allotment.”_                                |
+* The hotel/room should be sellable again.
+* The supplier lifted a restriction.
+* A Stop Sale was created by mistake.
 
-***
+{% hint style="info" %}
+You remove Stop Sales from **Hotel → Stop Sales**. Start from [Edit Stop Sale](edit-stop-sale.md) if you are unsure which rule to edit.
+{% endhint %}
 
-#### Instructions: How to Use Remove (Undo) Stop Sale
+### Key fields and sections
 
-1. **Navigate to the Stop Sales page**\
-   Go to **Hotel → Stop Sales** from the main menu.\
-   The page displays all defined Stop Sale rules, filtered by current dates by default.
-2. **Find the rule you want to undo**\
-   Use filters (e.g. date range, room type) if necessary to narrow down the list.\
-   Select an **enabled** Stop Sale rule to edit.
-3. **Click “Edit”**\
-   This opens the rule’s configuration. A **Remove or Split** section will appear beneath it.
+* **Stop Sales list**: Shows Stop Sale rules. It is filtered by current dates by default.
+* **Edit** (pencil icon): Opens the rule in edit mode.
+* **Remove or Split**: Expands the section where you can remove or split the rule.
+* **Remove** checkbox: Removes the Stop Sale and restores the original allotment.
+* **Info** (tooltip): Explains what Remove does.
+
+### Remove a Stop Sale
+
+Only want to undo part of the date range? Use [Split the Stop Sale Rule](split-the-stop-sale-rule.md).
+
+{% stepper %}
+{% step %}
+### Open the rule in edit mode
+
+1. Go to **Hotel → Stop Sales**.
+2. Find the rule you want to undo.
+3. Click **Edit** (pencil icon).
 
 <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-4. **Enable the “Remove” option**\
-   Initially, the **Remove** checkbox is disabled (while the rule is still active).\
-   Once editable, check the **Remove** box.
+{% hint style="info" %}
+Only **enabled** rules can be removed or split.
+{% endhint %}
+{% endstep %}
+
+{% step %}
+### Open “Remove or Split”
+
+Click **Remove or Split**. The section opens under the rule.
+{% endstep %}
+
+{% step %}
+### Select “Remove”
+
+Check the **Remove** box. If the checkbox is disabled, you are not in edit mode yet.
+{% endstep %}
+
+{% step %}
+### Save or cancel
+
+Click **Save** to apply the removal. Click **Cancel** to discard changes.
 
 <figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
+{% endstepper %}
 
-5. **Save your changes**\
-   Click **Save**.\
-   The rule is updated, the “Remove or Split” section closes, and the rule returns to non-edit mode.
-6. **(Optional) Cancel changes**\
-   If you press **Cancel** instead of Save, no updates are made, and the section closes without changes.
+### Verify availability was restored
 
-***
+After you save, check these spots:
 
-#### What to Check After Removing the Stop Sale
+* **Stop Sales Logs → View details**
+  * `Initial r.No`: the record number created when the Stop Sale was enabled.
+  * `Final r.No`: the original allotment record number restored after removal.
+* **Hotel → Allotment per Day** (same room and dates)
+  * Allotment values should match the pre-Stop Sale values.
+* **Pricelist** (same hotel, room type, and dates)
+  * `FHA` (free-hotel-allotment) should show the restored availability.
 
-Once you’ve undone the Stop Sale, verify that everything reverted as expected:
+### FAQ
 
-* **Stop Sales Logs**\
-  Go to **Stop Sales Logs → View details**.\
-  You should see entries:
-  * _Initial r.No_ = the final record number used when Stop Sale was first enabled
-  * _Final r.No_ = the original allotment number before the Stop Sale
-* **Hotel — Allotment per Day tab**\
-  Open the hotel’s edit page, and go to **Allotment per Day**.\
-  Filter by the room and dates you were working on.\
-  The allotment values should reflect the pre-Stop Sale values.
-* **Pricelist**\
-  In the **Pricelist**, filter by hotel, dates, and room type.\
-  The FHA (free-hotel-allotment) field should now display the original number of available rooms, as it did before the Stop Sale was applied.
+#### Why is the “Remove” checkbox disabled?
+
+The rule is not in edit mode yet. Click **Edit** first, then open **Remove or Split**.
+
+#### Is “Disable” the same as “Remove (Undo)”?
+
+No. **Disable** stops applying the rule going forward. **Remove (Undo)** restores the original allotment that the Stop Sale replaced.
+
+#### Does removing a Stop Sale change existing bookings?
+
+No. It changes availability calculations for the dates and rooms covered by the rule.
+
+#### Can I undo a removal?
+
+Not directly. Create a new Stop Sale for the same period if you need to block sales again.
+
+#### Where should I verify the result first?
+
+Start with **Stop Sales Logs**. Then check **Allotment per Day** and **Pricelist**.
