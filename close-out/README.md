@@ -2,7 +2,9 @@
 
 ### Overview
 
-The **Close Out** functionality is used to restrict availability for specific transports, destinations, resorts, hotels, or room types within a selected time period. This ensures that no new bookings can be made for the defined combinations once a close-out rule is applied.
+**Close Out** restricts availability for selected transports, destinations, resorts, hotels, and room types within a date range.
+
+When a Close Out rule is enabled, the system sets **Free Hotel Allotment (FHA)** to `0` for the matching hotels/rooms. This blocks new bookings for those combinations.
 
 ### Purpose
 
@@ -11,54 +13,58 @@ This feature is used by **travel coordinators, back-office staff, and product ma
 * Define and review **Close Out rules** that affect sales and availability.
 * Filter and identify rules by date range, transport, destination, hotel, or room type.
 * Confirm when and by whom rules were created.
-* Quickly enable/disable rules or edit them when required.
+* Enable/disable rules, or adjust them when needed.
 
 ### Preconditions
 
 * The user must have access rights to the **Hotel → Close Out** menu.
-* Close-out rules should be created carefully, as they may override availability settings in other modules.
-* Relevant transport, hotel, or room type must already exist in the system.
+* Create rules carefully. They can block sales across many products.
+* The relevant transport/hotel/room types must exist in the system.
 
-### **Step-by-Step Instructions**
+### Step-by-step
 
-#### **Step 1: Access Close Out**
+#### Step 1: Open Close Out
 
 * Navigate to the **Hotel menu**.
-* Confirm that the **Close Out** option is displayed right below **Stop Sales**.
+* Select **Close Out** (below **Stop Sales**).
 
-#### **Step 2: Open Close Out Page**
+#### Step 2: Understand what you see
 
-* Click on **Close Out**. - The **Close Out page** opens, showing all defined rules.
-* Each rule has a dedicated **Edit** button.
-* Rules are created on **company level** (not per brand).
+The list shows existing rules.
 
-Step 3: Fields
+Each rule has an **Edit** action.
+
+Rules are created on **company level** (not per brand).
+
+#### Step 3: Filter the list
 
 <figure><img src="../.gitbook/assets/image (11) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
-*   **Apply Filters**
+Fill in filters, then click **Display**.
 
-    Fill in the required fields to refine search:
+Common filters:
 
-    * **Start date** (default today)
-    * **End Date** (default one year ahead)
-    * **Transport type** (multi-select)
-    * **Transports** (multi-select, with options: _Select all_, _Show hidden_, _Show code_; default display by name; _Show code_ displays only code)
-    * **Destination** (multi-select, options: _Select all_, _Show code_)
-    * **Resort** (multi-select, options: _Select all_, _Show hidden_, _Show code_)
-    * **Hotel** (multi-select, options: _Select all_, _Show hidden_, _Show code_)
-    * **Room type** (multi-select, options: _Select all_, _Show hidden_, _Show code_)
-* Display Results
+* **Start date** (default today)
+* **End date** (default one year ahead)
+* **Transport type** (multi-select)
+* **Transports** (multi-select)
+  * Options include _Select all_, _Show hidden_, and _Show code_.
+* **Destination** (multi-select)
+* **Resort** (multi-select)
+* **Hotel** (multi-select)
+* **Room type** (multi-select)
+
+#### Step 4: Results table columns
 
 | **Field/Option**          | **Description**                                                            |
 | ------------------------- | -------------------------------------------------------------------------- |
 | **Start Date / End Date** | Date interval for rule validity (departure date range).                    |
 | **Transport Type**        | Filters rules by type of transport (e.g., charter, dynamic).               |
-| **Transports**            | Specific transports where rule applies;                                    |
-| **Destination**           | Destination filtering                                                      |
-| **Resorts**               | Filter by resort                                                           |
-| **Hotels**                | Filter by hotel;                                                           |
-| **Room Type**             | Filter by specific room types;                                             |
+| **Transports**            | Specific transports where the rule applies.                                |
+| **Destination**           | Destination filter.                                                        |
+| **Resorts**               | Resort filter.                                                             |
+| **Hotels**                | Hotel filter.                                                              |
+| **Room Type**             | Room type filter.                                                          |
 | **Note**                  | Additional description set on the rule (truncated, full text on hover).    |
 | **Enabled**               | Shows whether the rule is active.                                          |
 | **Created / Created By**  | Date, time, and user who created the rule. Username links to user details. |
@@ -66,17 +72,57 @@ Step 3: Fields
 | **Clear Button**          | Removes all applied filters and reloads full list.                         |
 | **Pagination**            | Navigates results (25 rules per page by default).                          |
 
-#### **Step 4: Explore/Sort Results (Optional)**
+#### Step 5: Sort and paginate (optional)
 
 * Navigate through multiple pages using **pagination**.
 * Sort results by **Start Date** or **End Date** (ascending/descending).
 
-#### **Step 5: Clear Filters**&#x20;
+#### Step 6: Clear filters
 
 * Click **Clear** to reset all filter inputs.
 
 ### Notes
 
-* Each rule is displayed in the list with details such as **Start Date, End Date, Transport, Destination, Resort, Hotel, Room Type, Note, Status (Enabled/Disabled), Created Date, and Created By**.
-* Rules can be enabled/disabled or edited later if adjustments are needed.
-* Filtering by **brand** is not available, as close-outs are created on company level.
+* Filtering by **brand** is not available. Close Outs are created on company level.
+* Changes can take up to \~2 minutes to reach price lists.
+
+### Related tasks
+
+* [Create / Edit rule](create-edit-rule.md)
+* [Enable / Disable rule](enable-disable-rule.md)
+
+### FAQ
+
+#### Does Close Out cancel existing bookings?
+
+No. Close Out blocks **new** bookings by cutting FHA to `0`. Existing bookings stay unchanged.
+
+#### How long does it take for a rule to apply?
+
+Usually \~2 minutes. It depends on background processing and price list updates.
+
+#### What’s the difference between Close Out and Stop Sales?
+
+Close Out blocks sales by setting **FHA to `0`** for the matched scope.
+
+Stop Sales reduces day-by-day availability in the hotel allotment flow. It can also be brand-specific.
+
+#### Why can’t I filter or create Close Out rules per brand?
+
+Close Out rules are stored and applied at **company level** only.
+
+#### I enabled a rule, but bookings are still possible. Why?
+
+Common causes:
+
+* The price list update has not finished yet (wait \~2 minutes).
+* The rule scope does not match the booking (transport/resort/hotel/room type).
+* Availability is coming from another setup outside FHA (depends on configuration).
+
+#### Can I create a rule only for a room type?
+
+Not by itself. Room types are tied to a hotel, so the rule must include at least one of:
+
+* Transport, destination, resort, or hotel
+
+Start with a narrow scope first. Expand only if needed.
