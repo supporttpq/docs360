@@ -1,6 +1,6 @@
 # Business Intelligence – Accommodation
 
-#### **Overview**
+### **Overview**
 
 The _Business Intelligence – Accommodation_ report shows hotel allotment capacity and sales by week for a travel period.\
 Use it to track available vs. sold rooms, compare allotment types, and follow booking pace over time.
@@ -10,7 +10,7 @@ Results show weekly capacity utilization and sales progression trends.
 
 ***
 
-#### **Purpose**
+### **Purpose**
 
 The purpose of this page is to:
 
@@ -21,7 +21,7 @@ The purpose of this page is to:
 
 ***
 
-#### **Preconditions**
+### **Preconditions**
 
 Before using the _Accommodation_ Business Intelligence report, make sure:
 
@@ -37,7 +37,7 @@ Setup guide: [Departure stat weeks](../setup/departure-stat-weeks.md)
 
 ***
 
-#### **Field Descriptions and Sections**
+### **Field Descriptions and Sections**
 
 <figure><img src="../.gitbook/assets/image (4) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -94,24 +94,24 @@ Setup guide: [Departure stat weeks](../setup/departure-stat-weeks.md)
 
 ***
 
-#### **How to use this report**
+### **How to use this report**
 
 {% stepper %}
 {% step %}
-### Set your filters
+#### Set your filters
 
 Select **Country**, **Resort**, **Hotel**, and **Date Period**.\
 Use **Room** if you want a single room type.
 {% endstep %}
 
 {% step %}
-### Generate results
+#### Generate results
 
 Click **Display** to refresh the report.
 {% endstep %}
 
 {% step %}
-### Review sales pace
+#### Review sales pace
 
 Compare **Sold %** with **Sold % 1W–4W**.\
 This shows if sales are accelerating or slowing down.
@@ -120,7 +120,7 @@ This shows if sales are accelerating or slowing down.
 
 ***
 
-#### **FAQ**
+### **FAQ**
 
 <details>
 
