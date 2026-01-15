@@ -6,13 +6,13 @@ description: >-
 
 # Business Intelligence
 
-#### **Overview**
+### **Overview**
 
 **Business Intelligence (BI)** gives you reporting across Tourpaq modules. Use it to track sales, bookings, revenue, and capacity.
 
 **Business Intelligence** reports read data from modules like **Bookings**, **Transport**, and **Hotels**. You scope the report using filters, then generate results.
 
-#### **Purpose**
+### **Purpose**
 
 Use **Business Intelligence** to:
 
@@ -21,7 +21,7 @@ Use **Business Intelligence** to:
 * Spot issues early, like stop sales, overbooking risk, or slow sales velocity.
 * Export results for analysis and sharing.
 
-#### **Key functions**
+### **Key functions**
 
 * **Reports:** Each **Business Intelligence** page focuses on a business area (flights, accommodation, allotments).
 * **Filters:** Narrow results by date period and relevant dimensions (brand, resort, hotel, etc.).
@@ -33,35 +33,35 @@ Use **Business Intelligence** to:
 * [Business Intelligence – Flights](business-intelligence-flights.md)
 * [Business Intelligence – Accommodation](business-intelligence-accommodation.md)
 
-#### **Common workflow**
+### **Common workflow**
 
 {% stepper %}
 {% step %}
-### Pick the report
+#### Pick the report
 
 Open the **Business Intelligence** report that matches your question.
 {% endstep %}
 
 {% step %}
-### Set filters
+#### Set filters
 
 Select the date period first. Then add filters like brand, resort, hotel, transport, or supplier.
 {% endstep %}
 
 {% step %}
-### Generate results
+#### Generate results
 
 Click **Display** to refresh the report.
 {% endstep %}
 
 {% step %}
-### Export (optional)
+#### Export (optional)
 
 Export the results if you need to share or do deeper analysis.
 {% endstep %}
 {% endstepper %}
 
-#### **FAQ**
+### **FAQ**
 
 **Why is the report empty?**
 
