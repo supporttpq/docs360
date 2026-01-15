@@ -1,12 +1,12 @@
 # Business Intelligence – Allotment Overview
 
-#### **Overview**
+### **Overview**
 
 The _Business Intelligence – Allotment Overview_ page shows hotel allotment availability and usage for a selected period.\
 It helps you monitor remaining capacity per hotel and room type in a day-by-day grid.\
 Use it to spot sold-out dates, stop sales, and capacity risks early.
 
-#### **Purpose**
+### **Purpose**
 
 The purpose of this report is to:
 
@@ -15,7 +15,7 @@ The purpose of this report is to:
 * Provide an overview of total commitments and remaining capacities at a glance.
 * Assist in monitoring bed and room utilization for operational and commercial planning.
 
-#### **Preconditions**
+### **Preconditions**
 
 Before using the _Allotment Overview_ report:
 
@@ -30,11 +30,11 @@ See how to set them up here: [Departure stat weeks](../setup/departure-stat-week
 
 **Note:** Cells highlighted in **red** indicate a **stop sale** for that date.
 
-#### **Field Descriptions and Sections**
+### **Field Descriptions and Sections**
 
 <figure><img src="../.gitbook/assets/image (427).png" alt=""><figcaption></figcaption></figure>
 
-**1. Filters (Top Section)**
+#### **1. Filters (Top Section)**
 
 * **Transport:** Defines the transport code associated with the departure and arrival combination. Example: `BLLCHQ-A7-7M`.
 * **Real Transport:** Allows selection of a specific real transport (actual flight or transfer connection) used in the calculation.
@@ -66,7 +66,7 @@ Each cell shows remaining capacity for that date. The value is shown as **beds**
 | **Highlighted Cells (Red)** | Indicates a **stop sale** for that date.                                                                    |
 | **“Sum ALL” Rows**          | Aggregated totals for each hotel across the selected date range.                                            |
 
-#### **Allotment information**
+### **Allotment information**
 
 1. **Beds No:** Shows the number of beds available for the selected period.
 2. **Rooms No:** Shows the number of rooms available for the selected period.
@@ -77,7 +77,7 @@ Each cell shows remaining capacity for that date. The value is shown as **beds**
 
 ***
 
-#### **FAQ**
+### **FAQ**
 
 <details>
 
