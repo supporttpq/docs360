@@ -22,7 +22,7 @@ Use it to:
 Daily values typically come from your generated allotment periods. Set those on [Hotel allotments](../hotel-allotments.md).
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (572).png" alt=""><figcaption></figcaption></figure>
 
 ### Fields
 
@@ -48,7 +48,7 @@ Daily values typically come from your generated allotment periods. Set those on 
 **PAX1, PAX2, PAX3, PAX4** – When you hover over these cells, a tooltip appears showing the number of booked rooms for each corresponding PAX category (PAX1, PAX2, PAX3, PAX4).
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (573).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 If a **Stop Sale** exists for a date, you will see a yellow warning icon next to the room. Stop sales are configured in [Stop Sales](../../../stop-sales.md).
@@ -58,7 +58,7 @@ If a **Stop Sale** exists for a date, you will see a yellow warning icon next to
 
 ### Search with allotment control
 
-<figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (575).png" alt=""><figcaption></figcaption></figure>
 
 Use this search when you need availability split by transport departures.
 
@@ -113,6 +113,20 @@ Each transport displays a **control status value** that determines how many room
 * This feature is critical for **capacity planning** and ensuring correct allocation of hotel rooms per flight.
 * The status values should be monitored regularly, especially during peak booking periods, to avoid overselling.
 * Adjustments to allotments must be coordinated with both transport and hotel availability.
+
+### Search with Stay Lenghts
+
+<figure><img src="../../../.gitbook/assets/image (576).png" alt=""><figcaption></figcaption></figure>
+
+The **Search with Stay Length** option is used to filter hotel allotment data based on the selected stay duration.
+
+When **Search with Stay Length** is used:
+
+* The search **does not include Transport allotments**
+* Only **hotel-related allotments and controls** are shown
+* Results reflect availability based on the defined stay length rules
+
+This helps users focus strictly on hotel availability without mixing transport data into the results.
 
 ### How to update daily allotments
 
