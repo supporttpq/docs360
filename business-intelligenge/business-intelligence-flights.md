@@ -1,6 +1,6 @@
 # Business Intelligence – Flights
 
-#### **Overview**
+### **Overview**
 
 The _Business Intelligence – Flights_ report shows flight capacity and sales by week for a travel period.\
 Use it to track sold seats, remaining capacity, and sales pace over time.\
@@ -11,7 +11,7 @@ Results show how much of the total capacity is sold per week.
 
 ***
 
-#### **Purpose**
+### **Purpose**
 
 The purpose of this page is to:
 
@@ -22,7 +22,7 @@ The purpose of this page is to:
 
 ***
 
-#### **Preconditions**
+### **Preconditions**
 
 Before using the _Flights_ Business Intelligence report, make sure:
 
@@ -38,7 +38,7 @@ Setup guide: [Departure stat weeks](../setup/departure-stat-weeks.md)
 
 ***
 
-#### **Field Descriptions and Sections**
+### **Field Descriptions and Sections**
 
 <figure><img src="../.gitbook/assets/image (3) (1) (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -83,24 +83,24 @@ Setup guide: [Departure stat weeks](../setup/departure-stat-weeks.md)
 
 ***
 
-#### **How to use this report**
+### **How to use this report**
 
 {% stepper %}
 {% step %}
-### Set your filters
+#### Set your filters
 
 Pick **Departures**, **Arrivals**, and a **Date Period**.\
 Use **More filters** if you need **Transport mode** or **Transport type**.
 {% endstep %}
 
 {% step %}
-### Generate results
+#### Generate results
 
 Click **Display** to refresh the report.
 {% endstep %}
 
 {% step %}
-### Drill down by week
+#### Drill down by week
 
 Use the arrow (›) on a **Week No** row to expand details.
 {% endstep %}
@@ -108,7 +108,7 @@ Use the arrow (›) on a **Week No** row to expand details.
 
 ***
 
-#### **FAQ**
+### **FAQ**
 
 <details>
 
