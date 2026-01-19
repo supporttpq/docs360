@@ -228,7 +228,7 @@
   * [Business Intelligence – Allotment Overview](business-intelligenge/business-inteligence.md)
   * [Business Intelligence – Flights](business-intelligenge/business-intelligence-flights.md)
   * [Business Intelligence – Accommodation](business-intelligenge/business-intelligence-accommodation.md)
-* [Hotel and transfer confirmation e-mail to suppliers](hotel-and-transfer-confirmation-e-mail-to-suppliers.md)
+* [Hotel and transfer confirmation emails to suppliers](hotel-and-transfer-confirmation-e-mail-to-suppliers.md)
 * [Special Offers](special-offers.md)
 * [Seats vs Beds](seats-vs-beds.md)
 
