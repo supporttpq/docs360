@@ -61,3 +61,21 @@ If you need to validate or troubleshoot how child price values are derived and a
 * [**How CH1P1 is used in booking**](../../../2-x-child-prices-+-child-price-discount/how-ch1p1-is-used-in-booking.md)
 * [**How CH1P1 & CH2P1 are calculated in Price List**](../../../2-x-child-prices-+-child-price-discount/how-ch1p1-and-ch2p1-are-calculated-in-price-list.md)
 * [**How CH1D1 & CH2D1 is calculated in Price List**](../../../2-x-child-prices-+-child-price-discount/how-ch1d1-and-ch2d1-is-calculated-in-price-list.md)
+
+### FAQ
+
+Q: What happens if a child turns 12 during the trip?
+
+* A: Pricing is usually calculated based on the age at the time of departure. However, check the specific hotel contract rules, as some suppliers may require adult pricing if the age category changes during the stay.
+
+Q: Can I manually change the child price after it has been calculated?
+
+* A: Yes. You can use the "Manual Price" field or apply a specific discount code to adjust the final amount.
+
+Q: Why is the system charging a child as an adult?
+
+* A: This usually happens if the date of birth is missing, incorrect, or if the child is the second person in a double room (depending on the hotel's "Single + Child" policy).
+
+Q: Does the child price include an extra bed?
+
+* A: The system displays whether the price refers to an "Extra Bed" or "Sharing Bed" based on the room configuration selected in the 'Accommodations' tab.
