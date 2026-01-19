@@ -30,6 +30,9 @@ It does **not** change or affect:
 
 ### Child Age Determination Logic
 
+The age limits defined at the hotel level determine whether the **Child Price** from the price list applies to a booking.\
+If no age limits are configured for the hotel, the system uses the **Max Child Age** defined in the brand settings to calculate the child price.
+
 When calculating whether **Child Price (CH)** applies, the system determines the maximum allowed child age using the following order:
 
 1.  **Hotel-level child age limit**
@@ -40,7 +43,6 @@ When calculating whether **Child Price (CH)** applies, the system determines the
     <figure><img src="../../../.gitbook/assets/image (565).png" alt=""><figcaption></figcaption></figure>
 
     * If set, this value always takes priority
-    * The age set for the specific hotel is defining if Child Price from Price List is valid for a booking. If no age is set in hotel settings, the child price is based on Max Child Age from brand settings.
 2.  **Brand-level child age limit (fallback)**
 
     <figure><img src="../../../.gitbook/assets/image (566).png" alt=""><figcaption></figcaption></figure>
