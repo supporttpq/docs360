@@ -1,22 +1,25 @@
 # Special Offers
 
-### **Overview**
+### Overview
 
-The **Special Offers** page provides an overview of all active and upcoming promotional offers applied to hotels and room types. These offers may include early booking discounts, room cost adjustments, or seasonal promotions.\
-Users can search, filter, and export special offers for specific hotels, resorts, or periods.
+The Special Offers page lists active and upcoming promotions for hotels and room types. Common examples are early booking discounts, room cost rules, and seasonal pricing.
 
-#### **Purpose**
+Use filters to narrow results by resort, hotel, dates, and stars. Export results to CSV or PDF when you need to share or validate pricing.
 
-The purpose of this page is to allow users to:
+### Purpose
 
-* View existing special offers configured for hotels.
-* Filter offers based on booking or departure periods.
-* Analyze discount rules and validity intervals.
-* Export offers for reporting or verification purposes.
+Use this page to:
 
-This feature ensures that sales and operations teams have full visibility into the pricing strategies and conditions applied to hotel rooms.
+* Review special offers configured for hotels and rooms.
+* Filter offers by booking period and travel period.
+* Validate rule coverage, validity intervals, and overlaps.
+* Export offers for reporting or verification.
 
-#### **Field Description**
+### Related pages
+
+* [Special Offer](hotel/hotel-creation/special-offer.md) (create and edit rules)
+
+### Field description
 
 <figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -45,45 +48,34 @@ This feature ensures that sales and operations teams have full visibility into t
 | **Bkg From / Bkg To**          | Booking period defining when reservations must be made to qualify for the offer. |
 | **Days Number Before Arrival** | Minimum number of days before arrival required to benefit from the offer.        |
 | **Room**                       | The room type(s) covered by the special offer.                                   |
-| **Price**                      | The main promotional price or discount applied to the room.                      |
-| **2nd / 3rd / 4th**            | Additional pricing columns for extra persons in the room                         |
+| **Price**                      | The promotional price or discount applied to the room.                           |
+| **2nd / 3rd / 4th**            | Additional pricing columns for extra persons in the room.                        |
 
-#### **Instructions**
+### Instructions
 
-**1. Filtering Special Offers**
+#### Filtering special offers
 
 1. Select the desired filters (offer type, resort, hotel, booking period, etc.).
 2. Click **Display** to update the results table.
 3. Use **+ More Filters** for advanced filtering options.
-4. To reset your search, press **Clear**.
+4. To reset your search, click **Clear**.
 
-***
+#### Viewing results
 
-**2. Viewing Results**
+Each row represents a promotional rule. Use the columns to confirm dates, room coverage, and price values.
 
-The table displays a list of all special offers that match the selected filters.\
-Each row represents a distinct promotional rule with details about validity periods, rooms, and pricing.
+Check overlaps when multiple rules target the same room and period.
 
-Use the columns to:
-
-* Verify if promotions overlap.
-* Check that the booking and stay periods align.
-* Confirm pricing and rule types per room category.
-
-***
-
-**3. Exporting Data**
+#### Exporting data
 
 Two export options are available:
 
 * **Export CSV** – Generates a CSV file for analysis in Excel or other spreadsheet tools.
 * **Export PDF** – Creates a formatted PDF report suitable for printing or sharing.
 
-If **Semicolon for Export** is checked, the exported CSV will use “;” instead of “,” as a separator — useful for regional settings like Europe.
+If **Semicolon for Export** is checked, the exported CSV will use `;` instead of `,`. This is useful for locales where Excel expects semicolons.
 
-***
-
-#### **How to Use – Example**
+### How to use (example)
 
 To review all _Early Booking_ offers for 4-star hotels:
 
@@ -93,9 +85,51 @@ To review all _Early Booking_ offers for 4-star hotels:
 4. Press **Display** to show the results.
 5. Export the table as **PDF** or **CSV** for reporting.
 
-***
+### Tips
 
-#### **Tips**
+{% hint style="info" %}
+* Avoid overlapping date ranges for the same room and rule type.
+* Use PDF for quick sharing. Use CSV for deeper checks.
+{% endhint %}
 
-💡 _When multiple offers apply to the same room, verify that the date ranges do not overlap to avoid pricing conflicts._\
-💡 _Use the “Export PDF” option for quick sharing with management or external partners._
+### FAQ
+
+#### 1. Why don’t I see the offer I expected?
+
+Check these first:
+
+* Your filters (Type, Resort, Hotel, Stars) match the offer.
+* Your **Booking Period** and **Departure Period** cover the offer dates.
+* Try removing date filters, then narrow down.
+
+#### 2. What is the difference between booking period and departure period?
+
+* **Booking Period** controls _when_ the reservation must be created.
+* **Departure Period** controls _when_ the stay/travel happens.
+
+Both must match for an offer to be eligible.
+
+#### 3. How do I create or edit a special offer?
+
+Use the setup screen on the hotel contract: [Special Offer](hotel/hotel-creation/special-offer.md).
+
+This overview page is mainly for searching, validating, and exporting.
+
+#### 4. Why does my CSV look “broken” in Excel (everything in one column)?
+
+Your Excel import settings do not match the CSV delimiter.
+
+* Use **Semicolon for Export** if Excel expects `;`.
+* Otherwise, keep it unchecked to export with `,`.
+
+#### 5. What do “Price”, “2nd”, “3rd”, and “4th” mean?
+
+They are price/discount values per occupancy position. Extra columns are often used for extra persons in the same room.
+
+If your offer is per room, some columns can be blank.
+
+#### 6. What happens if two offers overlap?
+
+Overlaps can cause unexpected pricing. Validate overlap in this list, then review the rule setup and stacking options.
+
+If you need more detail, check: [Special Offer](hotel/hotel-creation/special-offer.md).
