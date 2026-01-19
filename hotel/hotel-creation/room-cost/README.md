@@ -96,7 +96,7 @@ Before early booking discounts appear in the price list, a specific setting must
 
 <figure><img src="../../../.gitbook/assets/image (424).png" alt=""><figcaption></figcaption></figure>
 
-This setting decides **how** discounted cost is handled. Early Booking rules can still be configured without it.
+This setting decides **how** discounted cost is handled. Early Booking rules can still be configured without it. Uses discounted into account Room Discount Early Booking and Stay\&Pay for calculating Discount via Profit Margin
 
 <figure><img src="../../../.gitbook/assets/image (423).png" alt=""><figcaption></figcaption></figure>
 
