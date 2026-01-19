@@ -1,30 +1,30 @@
 # Transport creation
 
-### Basic Setup
+### Basic setup
 
 #### Overview
 
-The **Basic Setup** screen is used to configure transport routes between departure and arrival locations. It defines the essential travel details, customer information, operational rules, and system settings that control how transport is managed, reported, and sold.
+The **Basic setup** screen configures transport routes between departure and arrival locations. It defines travel details, customer info, operational rules, and system settings.
 
 #### Purpose
 
-The purpose of the Basic Setup configuration is to ensure that each transport is set up correctly for sales, reporting, and operational handling. It allows the system to manage passenger details, supplier connections, seating distribution, and financial rules in a consistent way.
+Use Basic setup to ensure each transport is configured for sales, reporting, and operations. It controls passenger details, supplier connections, seating, and financial rules.
 
 #### Preconditions
 
 * The transport route (departure and arrival airports/codes) must be defined.
 * Related master data (suppliers, agencies, reporting rules, payment rules, etc.) must exist in the system.
-* User must have sufficient permissions to configure or update transport setups.
+* You must have permission to create or update transports.
 
 ***
 
-#### Instructions & Field Explanations
+#### Instructions & field explanations
 
 <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 **1. Destination**
 
-Defines the basic route and transport identifiers.
+Defines the route and core identifiers.
 
 * **Code**: Unique identifier for the transport (e.g., BLLTFS-A1).
 * **Return**: Code for the return route.
@@ -39,13 +39,15 @@ Defines the basic route and transport identifiers.
 
 <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
-**When transport is dynamic, this information needs to be set on the Real Transport entity.**
+{% hint style="info" %}
+If the transport uses **Dynamic itineraries**, set customer-facing information on the **Real Transport**.
+{% endhint %}
 
 Controls text and allowances shown to customers.
 
 * **Info Customer 1, 2, 3**: Customizable text fields for passenger information.
 * **Text to add on ticket**: Extra text to be printed on tickets.
-* **Show Baggage Allowance**: Checkbox to display baggage allowance on customer-facing documents.  If checked, luggage allowance information is shown on the ticket as extra columns in transport itineraries.
+* **Show Baggage Allowance**: Displays baggage allowance on customer-facing documents. If enabled, the ticket shows luggage allowance as extra columns in the itinerary.
 
 ***
 
@@ -55,15 +57,15 @@ Controls text and allowances shown to customers.
 
 Manages seat maps, airlines, and key operational rules.
 
-* **Seat map** (only if transport layout is enabled): Link to the seating layout. Allows guest to select their seats
-* **Airline** (only if Transport mode is FLY): The Airline operating the transport.
+* **Seat map** (only if transport layout is enabled): Link to the seating layout. It lets guests select seats.
+* **Airline** (only if Transport mode is **FLY**): Airline operating the transport.
 * **Transport Type**: Specifies transport category.
 * **Pickup point required**: Marks if pickup point selection is mandatory.
 * **Show on dashboard**: Checkbox to display transport on the system dashboard.
 * **Travel Length Correction**: Adjusts travel length (in days).
-* **Shift check-in date by +/- days**: Allows shifting the check-in date, controls checking days in the hotel.
+* **Shift check-in date by +/- days**: Shifts the hotel check-in date.
 * **Hotel nights correction +/- days**: Adjusts the number of hotel nights linked to transport.
-* **Estimated seats sale percentage**: Forecast of seat sales in %.
+* **Estimated seat sales percentage**: Forecast of seat sales (%).
 * **Free Sell**: Marks transport as available without allotments.
 
 ***
@@ -72,9 +74,9 @@ Manages seat maps, airlines, and key operational rules.
 
 <figure><img src="../../../.gitbook/assets/image (5) (4).png" alt=""><figcaption></figcaption></figure>
 
-Controls passenger name change options. When checked, the system will allow a passenger name change.
+Controls passenger name change options. When enabled, the system allows passenger name changes.
 
-* **Do Not Allow Name Change Office**: Restricts name changes in the office. This rule will apply after payment has been made.
+* **Do Not Allow Name Change Office**: Restricts name changes in Office. This rule applies after payment.
 * **Do Not Allow Name Change Web**: Restricts name changes in online bookings.
 * **Name change deadline (days before departure)**: Defines how many days before departure the system will allow a passenger name change.
 
@@ -84,10 +86,10 @@ Controls passenger name change options. When checked, the system will allow a pa
 
 <figure><img src="../../../.gitbook/assets/image (6) (6).png" alt=""><figcaption></figcaption></figure>
 
-Manages automatic seat assignment for passengers. When checked, the system will automatically distribute passengers into the airplane.
+Manages automatic seat assignment for passengers. When enabled, the system distributes passengers into the aircraft automatically.
 
 * **Use Automatic Seating**: Checkbox to enable automatic seat distribution.
-* **Hour before departure**: Defines when seats should be automatically assigned. How many hours before departure the system will automatically place the passengers into the airplane.
+* **Hour before departure**: Defines when seats are assigned. Seats are assigned this many hours before departure.
 * **Email address(es)**: Recipients of automatic seating notifications (can add multiple email addresses, separated by a comma).
 
 ***
@@ -102,10 +104,10 @@ Defines operational and financial settings for the transport.
 * **Reporting type**: Defines the reporting type.
 * **Transport Supplier**: Supplier providing the transport service.
 * **Transport cost currency**: Currency for transport costs.
-* **Dynamic Itineraries**: When transport is dynamic, Dynamic Transport Supplement (DTS) needs to be set on the Leg entity.
+* **Dynamic Itineraries**: For dynamic transports, set the Dynamic Transport Supplement (DTS) on the **Leg**.
 * **Use real transport allotments** (only if Dynamic itineraries are checked): Checkbox to enforce supplier allotments.
-* **Status**: Defines if the transport is visible or hidden. For GDS Transport, if status is set as Hidden: Active flights will be removed and Brand should be set on "For Sale".
-* **Hide as filter on lists**: Prevents transport from being used as a filter in searches. Hide the transport in the lists throught the system.
+* **Status**: Sets the transport as **Visible** or **Hidden**. For GDS transports: if you set status to **Hidden**, active flights are removed. Your brand should be set to **For Sale**.
+* **Hide as filter on lists**: Prevents the transport from being used as a filter in searches. It hides the transport in lists across the system.
 * **For A La Carte**: Makes transport available as a standalone option.
 * **Source Agency**: Defines the responsible sales agency.
 * **Payment rule**: Sets payment conditions for this transport.
@@ -119,23 +121,23 @@ Defines operational and financial settings for the transport.
 
 Adds pricing flexibility by handling supplements dynamically.
 
-* **Dynamic Supplement**: when checked, the transport price will be added as a supplement to guests in the booking (needs DTS supplement)
+* **Dynamic Supplement**: When enabled, the transport price is added as a supplement in the booking. Requires a DTS supplement.
 
 ### Brands <a href="#brands" id="brands"></a>
 
-Select a brand for the transport
+Select one or more brands for the transport.
 
 <figure><img src="../../../.gitbook/assets/image (395).png" alt=""><figcaption></figcaption></figure>
 
-### Infant <a href="#interval-def" id="interval-def"></a>
+### Infant <a href="#infant" id="infant"></a>
 
 <figure><img src="../../../.gitbook/assets/image (396).png" alt=""><figcaption></figcaption></figure>
 
-#### **Overview**
+#### Overview
 
-The _Infant_ section is used to configure pricing and allotments for infant passengers in relation to specific departure and booking periods. This ensures proper management of infant availability, pricing, and rules across bookings.
+Use the _Infant_ section to configure pricing and allotments for infant passengers. Rules apply for specific departure and booking periods.
 
-#### **Purpose**
+#### Purpose
 
 * To define infant pricing based on travel and booking periods.
 * To set allotments (maximum availability) for infants on a given departure period.
@@ -143,108 +145,132 @@ The _Infant_ section is used to configure pricing and allotments for infant pass
 
 This setup helps the booking system manage reservations efficiently and ensures accurate pricing and capacity control for infants.
 
-#### **Fields Explanation**
+#### Fields
 
-#### **1. Departure From -** The start date of the travel period for which the rule applies.
+#### 1. Departure from
+
+Start date of the travel period where the rule applies.
 
 * **Usage**: Only bookings with departure dates on or after this date will be affected.
 * **Example**: _01-09-2025_ → Rules apply starting from September 1, 2025.
 
-#### **2. Departure To -** The last date of the travel period for which the rule applies.
+#### 2. Departure to
+
+End date of the travel period where the rule applies.
 
 * **Usage**: Ensures the configuration is valid only up to this date.
 * **Example**: _30-09-2025_ → Rules apply until September 30, 2025.
 
-#### **3. Booking Date From -** The earliest date when bookings for infants can be made.
+#### 3. Booking date from
+
+Earliest date when infant bookings can use this rule.
 
 * **Usage**: Prevents the rule from applying to earlier bookings.
 * **Example**: _01-07-2025_ → Infant bookings are valid starting from July 1, 2025.
 
-#### **4. Booking Date To -** The last date when bookings for infants can be made.
+#### 4. Booking date to
+
+Last date when infant bookings can use this rule.
 
 * **Usage**: Blocks infant pricing/allotment after this date.
 * **Example**: _31-08-2025_ → Infant bookings must be made before or on August 31, 2025.
 
-#### **5. Infant Price -** The price charged for an infant passenger (usually under 2 years old).
+#### 5. Infant price
+
+Price charged for an infant passenger (often under 2 years old).
 
 * **Usage**: Defines how much the customer pays for adding an infant to the booking.
 * **Example**: _300_ → Infant price is 300 (currency depends on system setup).
 
-#### **,6. Check Infant Allotment -** Maximum infant allotment that can be booked on each departure. Setting it to 0 will not allow infant seats to be booked
+#### 6. Check infant allotment
+
+Enables allotment checking for infants. If enabled and the infant allotment is 0, infants cannot be booked.
 
 * **Values**:
   * ✅ (Enabled) → Infant bookings are limited to available allotments.
   * ❌ (Disabled) → No allotment restrictions; any number of infants can be booked.
 * **Example**: _❌_ → Infant allotment is not enforced.
 
-#### **7. Infant Total Allotment -** Maximum number of infants allowed within the defined departure and booking period.
+#### 7. Infant total allotment
+
+Maximum number of infants allowed within the defined departure and booking period.
 
 * **Usage**: Controls capacity to prevent overbooking of infants.
 * **Example**: _5_ → Only 5 infants can be booked for this period.
 
-#### **Instructions for Use**
+#### Instructions
 
 1. **Click “Create”** to define a new infant rule.
 2. **Fill in all required fields**: departure dates, booking dates, infant price, and allotments.
 3. **Enable or disable allotment checking** depending on business rules.
 4. **Save** the configuration to activate it for bookings.
-5. **Edit or delete** existing rules as needed using the edit (pencil) or delete (bin) icons.
+5. **Edit or delete** existing rules using the edit (pencil) or delete (bin) icons.
 
+### Passenger information
 
+#### Overview
 
-### **Passenger Information**
+Use Passenger information to define notes (errata) that apply to bookings for specific stay periods. These messages are shown to customers or internal staff.
 
-#### **Overview**
-
-The _Passenger Information_ section is used to define informational notes or errata that apply to bookings for specific stay periods. These messages typically provide additional details for customers or internal staff (e.g., special conditions, restrictions, or exceptions).
-
-#### **Purpose**
+#### Purpose
 
 * To communicate relevant information related to bookings and stays (e.g., transport notes, exceptions, overlapping rules).
 * To ensure passengers and staff are aware of important details connected to their travel.
 * To manage conditions within specific booking and stay periods.
 
-#### **Fields Explanation**
+#### Fields
 
 <figure><img src="../../../.gitbook/assets/image (399).png" alt=""><figcaption></figcaption></figure>
 
-#### **1. Stay From -** The start date of the hotel or travel stay period for which this information applies.
+#### 1. Stay from
+
+Start date of the stay period where this information applies.
 
 * **Usage**: Notes will only apply if the passenger’s stay begins on or after this date.
 * **Example**: _29-10-2025_ → Information applies starting October 29, 2025.
 
-#### **2. Stay To -** The end date of the hotel or travel stay period for which this information applies.
+#### 2. Stay to
+
+End date of the stay period where this information applies.
 
 * **Usage**: Ensures the message is only relevant until this date.
 * **Example**: _29-10-2025_ → Information is valid up to October 29, 2025.
 
-#### **3. Booking Date From -** The earliest date when bookings must be made for the passenger's information to apply.
+#### 3. Booking date from
+
+Earliest booking date where this information applies.
 
 * **Usage**: Prevents the rule from applying to earlier bookings.
 * **Example**: _04-06-2025_ → Only bookings made on or after June 4, 2025, are affected.
 
-#### **4. Booking Date To -** The latest date when bookings can be made for the information to apply.
+#### 4. Booking date to
+
+Latest booking date where this information applies.
 
 * **Usage**: Ensures the rule is limited to a certain booking period.
 * **Example**: _04-06-2025_ → Only bookings made up to June 4, 2025, are affected.
 
-#### **5. Information -** The actual message or note that will be displayed/associated with the booking.
+#### 5. Information
+
+The message or note that will be displayed or associated with the booking.
 
 * **Usage**: Describes transport notes, errata, or booking conditions.
 * **Example values**:
   * _Transport test_ → internal test note.
   * _Transport errata def overlapping_ → indicates overlapping transport information.
 
-#### **6. Acknowledge -** Indicates whether this information must be confirmed (acknowledged) by the user or system.
+#### 6. Acknowledge
+
+Indicates whether the information must be acknowledged by the user.
 
 * **Values**:
   * ✅ (Enabled) → Acknowledgement required; ensures the message is seen.
   * ❌ (Disabled) → Acknowledgement not required.
-*   **Example**:&#x20;
+*   **Example**:
 
     <figure><img src="../../../.gitbook/assets/image (400).png" alt=""><figcaption></figcaption></figure>
 
-#### **Instructions for Use**
+#### Instructions
 
 1. **Click “Create”** to define a new passenger information entry.
 2. **Fill in stay and booking dates** to specify the valid period.
@@ -253,15 +279,15 @@ The _Passenger Information_ section is used to define informational notes or err
 5. **Save** the configuration to apply it to the system.
 6. **Edit (pencil)** to update or **delete (bin)** to remove an entry when it is no longer relevant.
 
-### Interval Definition <a href="#interval-def" id="interval-def"></a>
+### Interval definition <a href="#interval-def" id="interval-def"></a>
 
 Set the interval between flights.
 
-* Interval - from 1-4
-* Date From - start date
-* Date To - end date
-* Days - days between the flights
-* API Text - It's used in setting the fix quota. Multiple intervals can be set.
+* **Interval**: 1–4
+* **Date From**: Start date
+* **Date To**: End date
+* **Days**: Days between flights
+* **API Text**: Used when setting fix quota. You can create multiple intervals.
 
 <figure><img src="../../../.gitbook/assets/image (397).png" alt=""><figcaption></figcaption></figure>
 
@@ -269,18 +295,18 @@ Set the interval between flights.
 
 Used to set the date and time of the flights.
 
-* Out/Home - flight type
-* Start date - date of the first flight
-* End date - the final date of the transport
-* Departure time (hour) – hour when the departure is
-* Arrival time (hours) - hour when the transport arrives at destinatio.n
-* Airline - Airline name
-* Flight number - flight number
-* +Days - the transport arrives at the destination with a delay of x days from the departure date (eg: departure 01-05-2025 00:00, arrival 02-05-2025 00:00)
-* +Land days (should be disabled for travel out)
-* Extra day out - controls hotel check-in days
-* FL - flinght changes (After changing time and date of a flight, check this and update; an e-mail will be sent to all bookings made on this flight that the flight hours have been changed. Requires **Flight change e-mail** template
-* Alternative Airport - this can be set for both Travel Out and Travel home lines and can change the returning airport. It will be shown on booking and ticket. (Example: Flight leaves from Billund to Antalya and returns to Billund, but the departure home airport will be Istanbul instead of Antalya).
+* **Out/Home**: Flight type
+* **Start date**: Date of the first flight
+* **End date**: Final date of the transport
+* **Departure time (hour)**: Departure time
+* **Arrival time (hour)**: Arrival time at destination
+* **Airline**: Airline name
+* **Flight number**: Flight number
+* **+Days**: Arrival is delayed by _x_ days from the departure date. Example: depart `01-05-2025 00:00`, arrive `02-05-2025 00:00`.
+* **+Land days**: Should be disabled for travel out.
+* **Extra day out**: Controls hotel check-in day logic.
+* **FL**: Flight change notification. After changing time/date, enable **FL** and update. An email is sent to all bookings on the flight. Requires the **Flight change e-mail** template.
+* **Alternative Airport**: Can be set on both Travel Out and Travel Home lines. It changes the return airport shown on booking and ticket. Example: Outbound Billund → Antalya, but return departs from Istanbul.
 
 <figure><img src="../../../.gitbook/assets/image (189).png" alt=""><figcaption></figcaption></figure>
 
@@ -288,34 +314,32 @@ Used to set the date and time of the flights.
 
 Used to generate and divide the places on the transport between flights and intervals.
 
-* Start Date - is the date of the first departure, and next departures will be generated every number of days defined by the value selected in Period (or interval) dropdown
-* End Date
-* Place Number - number of seats in the transport (Place number = I1 + I2 + I3 + I4 + One way out)
-* Period - sets trip length
-* Override Period - is used to generate departure dates using the same interval, but with a gap of x days between departures
-* Simple cost - is used to calculate transport cost per passenger (superadmin setting; when active removes Transport All Price, Guaranteed Seats, Tax and ProRate columns)
-* Transport All. Price - is the cost for guarantee seats. The value should be the total cost of the guaranteed seats. In this case, you also fill the Guarantee seats field.
-* Guaranteed seats - the number of seats that will be paid whether they are booked or not
-* Tax - is an additional cost you pay per seat sold
-* ProRate1
-* ProRate2
-* ProRate3
-* ProRate4
-* I1 - number of seats for interval 1
-* I2 - number of seats for interval 2
-* I3 - number of seats for interval 3
-* I4 - number of seats for interval 4
+* **Start date**: Date of the first departure. Next departures are generated based on the selected **Period** (or **Interval**).
+* **End date**: Last date included in generation.
+* **Place number**: Total seats in the transport. `Place number = I1 + I2 + I3 + I4 + One way out`
+* **Period**: Trip length.
+* **Override period**: Generates departure dates using the same interval, but with a gap of _x_ days.
+* **Simple cost**: Calculates transport cost per passenger (superadmin setting). When enabled, it removes **Transport All Price**, **Guaranteed Seats**, **Tax**, and **ProRate** columns.
+* **Transport All. Price**: Cost for guaranteed seats. Enter the total cost, then fill **Guaranteed seats**.
+* **Guaranteed seats**: Seats you pay for, whether booked or not.
+* **Tax**: Additional cost per sold seat.
+* **ProRate1–4**: ProRate costs for intervals 1–4.
+* **I1–I4**: Seat allotment for intervals 1–4.
 
-When using Pro Rate allotment, which means you pay for seat sold you fill the pro rate cost for each interval. If you are not using 4 intervals, fill only what is needed. I1, I2, I3 and I4 is allotment available for each interval. In case you want to sell one-ways fill allotment for one-way out and one-way home. Note that sum of values from this 6 fields must equal value from place number field.
+If you use **ProRate**, you pay per sold seat. Enter a ProRate cost for each interval you use.
 
-The guarantee empty seats fields are linked to Empty seats feature, which you will be presented in a different video. If you use it, here you can define how many seats will the system block to be sold only as empty seats. You can do this for each interval including for one way.
+`I1–I4` define the seat allotment per interval. If you sell one-way seats, also fill **One way out** and **One way home**.
 
-* One way out - number of seats for one way out
-* One way home - number of seats for one way home
+The sum of `I1 + I2 + I3 + I4 + One way out` must match **Place number**.
+
+The **guaranteed empty seats** fields are linked to the Empty Seats feature. If you use it, define how many seats the system blocks for sale as empty seats. You can set this per interval and for one-way.
+
+* **One way out**: Number of seats for one-way outbound.
+* **One way home**: Number of seats for one-way homebound.
 
 <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-To finish click on Insert and then Generate. The end result is:
+Click **Insert**, then **Generate**. The end result is:
 
 <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -323,52 +347,117 @@ or
 
 <figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-This depends on the simple cost being active or not. In fix quota you can control the number of seats to be sold, costs, etc. For more information please check [Transport](../) and [Transport dashboard](../../../transport-dashboard.md).
+This depends on whether **Simple cost** is enabled. In Fix quota you control seats for sale, costs, and intervals. For more context, see [Transport](../) and [Transport dashboard](../../../transport-dashboard.md).
 
-In case of a **child transport** creation (that has one or two different transports set as outbound and homebound parent transport) fix quota definitionThatThatends on the fixquotas ,of the parent transports. The start and end date must be included in the corresponding dates from the parent transports. Otherwise, fix quota will not be generated.
+For **child transports** (with one or two parent transports for outbound/homebound), fix quota generation depends on the parent transports. Your Fix quota **Start date** and **End date** must be within the parents’ date ranges. Otherwise, fix quota will not be generated.
 
 <figure><img src="../../../.gitbook/assets/ChildTransportFixQuota-90a88a655e66bee5d547c3cb9be26636.png" alt=""><figcaption></figcaption></figure>
 
-To view departure in a fix quota, click the view button. Here you can view the generated departures. You can change values for each departure.&#x20;
+To view generated departures, click **View**. You can edit values per departure.
 
-You have allotment in the green columns, the booked seats in yellow columns, free seats in red colored columns and costs in blue columns. On each departure, the sum of allotment out total must be equal to the sum of allotment for intervals 1, 2,3,4, one way out, and guarantee empty seats for intervals 1,2,3, and 4.&#x20;
+Column colors:
 
-Allotment home total is calculated as the sum of allotment home charter, one-way home, and guarantee empty seats home. You can view booked seats: total booked seats outbound and of each interval, including one-way out and also booked seats on return, total,layoutr, and one-way home.&#x20;
+* **Green**: Allotment
+* **Yellow**: Booked seats
+* **Red**: Free seats
+* **Blue**: Costs
 
-Free seats are shown in red columns: total free seats on outbound and for each interval, including one-way out and also free seats on return: total, charter, and one-way home.&#x20;
+Key checks and calculations:
 
-The empty seats –definition. That ends is a check to ensure that you do not allocate more seats on outbound than the number of seats available on return.&#x20;
+* **Allotment Out Total** must equal the sum of `I1–I4 + One way out + Guaranteed empty seats (I1–I4)`.
+* **Allotment Home Total** is calculated from **Allotment Home Charter + One-way home + Guaranteed empty seats home**.
+* The **Empty seats** check ensures you do not allocate more outbound seats than you can cover on return.
+* The difference column compares **Allotment Home Charter** with the summed outbound interval allotments shifted by 1–4 weeks (interval 1–4).
 
-The column displays the difference between the Allotment Home Charter column and the sum of Allotment Out for interval 1 from one week before, Allotment Out for interval 2 from two weeks before, Allotment Out for interval 3 from three weeks before, and Allotment Out for interval 4 from 4 weeks before.&#x20;
+Costs:
 
-Insert the allotment for each interval and for each departure day.&#x20;
+* **Price** is the total cost for guaranteed seats.
+* **ProRate1–4** are costs per interval.
+* **Tax** is an extra cost per sold seat.
+* **Passenger handling** is an additional handling cost.
 
-The price column is the total cost price for guarantee seats.&#x20;
+PNR:
 
-The pro rate fields are the costs for each interval.&#x20;
+* Use **PNR** to store a reserved PNR. You can set one PNR per interval.
 
-You also have a tax per seat sold and a passenger handling cost.&#x20;
-
-In case you have a reserved PNR, you can use the PNR field to store it. You can set a PNR for each interval where you have allotment.&#x20;
-
-If you do not use one way's fill out 0 one allotment total.
+If you don’t sell one-way seats, set **One way out** and **One way home** to `0`.
 
 ### Layout <a href="#layout" id="layout"></a>
 
 Used for seating passengers in bookings. Available only if the agency transport layout service is activated.
 
-This is done in the Transport from the Layout tab. Click on the layout tab.&#x20;
+Open the transport and go to the **Layout** tab.
 
-Select a fix quota. Click, display.&#x20;
+Select a fix quota, then click **Display**.
 
 <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-Seat layouts can be assigned for each departure and arrival flight in part. Seat layouts can be different from flight to flight, depending on the transport type used. We can assign for each departure date different layout type.&#x20;
+Seat layouts can be assigned per departure date and per direction (out/home). Layouts can differ between flights, depending on the transport type.
 
-Click on the dropdown list and choose the desired layout.&#x20;
+Use the dropdown to choose the desired layout.
 
 <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
-Click save, and we see the seat type price. We do the same thing for the next departure date, and we can select another Layout type, different from the previously chosen one.&#x20;
+Click **Save** to apply the layout and show seat type pricing. Repeat for the next departure date if you need a different layout.
 
-Layouts can be changed, but the new layout needs to have the same or a higher number of seats than the existing layout.&#x20;
+You can change layouts, but the new layout must have the same or a higher number of seats than the existing layout.
+
+### FAQ
+
+<details>
+
+<summary>Why can’t I select a <strong>Seat map</strong>?</summary>
+
+Most common causes:
+
+* Transport layout service is not enabled for your agency.
+* No layouts exist in [Transport Layouts](../../../transport-layouts.md).
+* You haven’t assigned a layout to the departure date under **Layout**.
+
+</details>
+
+<details>
+
+<summary>Why didn’t <strong>Fix quota</strong> generate any departures?</summary>
+
+Check these first:
+
+* **Start date** / **End date** are set, and the range is valid.
+* Your **Interval definition** exists and matches the dates you want to generate.
+* **Period** and/or **Override period** are set as expected.
+* For **child transports**, the date range is within the parent transports’ ranges.
+
+</details>
+
+<details>
+
+<summary>Where do I set customer-facing text when using <strong>Dynamic itineraries</strong>?</summary>
+
+Set it on the **Real Transport**. That includes baggage allowance info and ticket text fields.
+
+</details>
+
+<details>
+
+<summary>What’s the difference between <strong>Dynamic itineraries</strong> and <strong>Dynamic Supplement</strong>?</summary>
+
+* **Dynamic itineraries** controls how the system builds the itinerary (legs, GDS vs real transport).
+* **Dynamic Supplement** adds the transport price as a supplement in the booking.
+
+</details>
+
+<details>
+
+<summary>How do I send a flight time change email?</summary>
+
+Update the relevant line in **Timetable**, then enable **FL** and save/update. This requires the **Flight change e-mail** template.
+
+</details>
+
+### Related pages
+
+* [Transport](../)
+* [Add Transport Wizard](../add-transport-wizard.md)
+* [Transport Definition](../transport-definition.md)
+* [Transport Dashboard](../../../transport-dashboard.md)
+* [Transport Layouts](../../../transport-layouts.md)
