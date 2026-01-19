@@ -4,7 +4,12 @@
 
 Tourpaq can handle **child pricing** in two ways. Which behavior you get depends on a **feature setting** controlled by a **super-admin**.
 
-* If **Child Profit Margin** is **disabled**, the child prices will work the same as before (it will be calculated like an extra bed discount).
+* If **Child Profit Margin** is **disabled**, the child prices will work the same as before (it will be calculated like an extra bed discount).&#x20;
+
+<figure><img src="../../../.gitbook/assets/image (577).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (578).png" alt=""><figcaption></figcaption></figure>
+
 * If **Child Profit Margin** is **enabled**, Tourpaq will use **explicit child prices from the Price List** (when those prices are set).
 
 {% hint style="warning" %}
