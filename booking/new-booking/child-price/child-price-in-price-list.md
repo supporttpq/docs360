@@ -40,6 +40,7 @@ When calculating whether **Child Price (CH)** applies, the system determines the
     <figure><img src="../../../.gitbook/assets/image (565).png" alt=""><figcaption></figcaption></figure>
 
     * If set, this value always takes priority
+    * The age set for the specific hotel is defining if Child Price from Price List is valid for a booking. If no age is set in hotel settings, the child price is based on Max Child Age from brand settings.
 2.  **Brand-level child age limit (fallback)**
 
     <figure><img src="../../../.gitbook/assets/image (566).png" alt=""><figcaption></figcaption></figure>
