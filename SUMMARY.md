@@ -345,7 +345,7 @@
     * [Trackers](brands/webbooking-settings/trackers.md)
     * [Styles](brands/webbooking-settings/styles.md)
     * [Validate Phone Number](brands/webbooking-settings/validate-phone-number.md)
-  * [Hubspot](brands/hubspot.md)
+  * [HubSpot](brands/hubspot.md)
 * [Company](company/README.md)
   * [Company Setup](company/company-setup.md)
 * [Suppliers](suppliers/README.md)

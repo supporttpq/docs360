@@ -1,60 +1,82 @@
-# Hubspot
+# HubSpot
 
-### **Overview**
+### Overview
 
-The **HubSpot** section under _Brands Settings_ is used to connect Tourpaq with a company’s HubSpot account.\
-This integration allows automatic synchronization of customer and booking data between the Tourpaq system and HubSpot CRM for marketing, reporting, or customer management purposes.
+The HubSpot section in **Brand settings** connects Tourpaq to a HubSpot account.
 
-***
+It syncs customers and bookings to HubSpot for marketing and reporting.
 
-### **Purpose**
+### What you can do here
 
-The purpose of this page is to:
+* Connect Tourpaq to HubSpot using a **license key**.
+* Define which HubSpot **subscriptions** Tourpaq can manage.
 
-* Establish the link between Tourpaq and HubSpot using an **API License Key**.
-* Manage HubSpot **subscriptions** related to specific data sync processes (e.g., contact updates, booking imports, or campaign tracking).
+If it’s set up correctly, Tourpaq updates HubSpot automatically.
 
-A correct setup ensures that all customer information from Tourpaq is accessible and updated in HubSpot without manual export/import work.
+### Access
 
-***
+1. Navigate to **Users → Brands → Select an agency → HubSpot**.
+2. Open the **HubSpot** tab.
 
-### **Instructions**
+You will find it next to other brand integrations.
 
-#### **Access**
-
-1. Navigate to **Users → Brands → Select an agency -> HubSpot**.
-2. The HubSpot tab appears next to other configuration areas (e.g., _GDS, XML Feed, Business Central_).
-
-***
-
-#### **Fields Description**
+### Field reference
 
 <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-| **Field**         | **Description**                                                                                                                                                                                                                                                                                                                              |
-| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **License Key**   | <p>Enter the API key provided by HubSpot. This key authorizes Tourpaq to send and receive data securely.<br>🔹 <em>Format</em>: A long alphanumeric string (e.g., <code>f9d3e4b2-xxxx-xxxx-xxxx-9c14c62e1a10</code>).<br>🔹 <em>Required</em>: Yes — the integration won’t work without it.</p>                                              |
-| **Subscriptions** | <p>HubSpot subscription name splitted by ; where the customer will be added.                             Enter the specific HubSpot subscription(s) used for synchronization.<br>These define which events or data sets will be synced (for example: <em>Customer Creation</em>, <em>Booking Update</em>, or <em>Lead Conversion</em>). </p> |
-|                   |                                                                                                                                                                                                                                                                                                                                              |
+#### License Key
 
-***
+Enter the HubSpot key/token Tourpaq should use for API calls.
 
-#### **How to Set Up**
+🔹 _Format_: A long alphanumeric string (e.g., `f9d3e4b2-xxxx-xxxx-xxxx-9c14c62e1a10`).&#x20;
 
-For the Hubspot integration to start working, you need to add "Brand Code" on each Brand in Tourpaq:
+🔹 _Required_: Yes — the integration won’t work without it.
+
+#### Subscriptions
+
+Enter HubSpot subscription names separated by `;` (semicolon).
+
+Tourpaq uses these to decide which customers it may subscribe.
+
+Example:
+
+`Customer Creation;Booking Update`
+
+{% hint style="info" %}
+Some HubSpot portals no longer support legacy API keys. If that’s your case, use a Private App token instead (if Tourpaq is configured to accept it).
+{% endhint %}
+
+### Setup
+
+{% stepper %}
+{% step %}
+### Add Brand Code
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-Brand Code will be the prefix for bookings added to Hubspot using the integration.
+Set a **Brand Code** for each brand.
 
-Then, add the License Key and Subscriptions for each brand in Tourpaq (in Hubspot-tab).
+Tourpaq uses this code as a prefix in HubSpot booking data.
+{% endstep %}
+
+{% step %}
+### Add HubSpot credentials and subscriptions
 
 <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-First, we make a request to HubSpot to retrieve all eligible subscriptions for a given email address:
+Add the **License Key** and **Subscriptions** for the brand.
+{% endstep %}
+{% endstepper %}
 
-`https://api.hubapi.com/communication-preferences/v3/status/email/tcaspilot@gmail.com`\
-Response JSON: _"hubspot all Subscription by email.txt"_
+### Subscription lookup and subscribe calls (example)
+
+Tourpaq make a request to HubSpot to retrieve all eligible subscriptions for a given email address:
+
+Example request:
+
+`https://api.hubapi.com/communication-preferences/v3/status/email/<email>`
+
+Example response:
 
 {% file src="../.gitbook/assets/hubspot all Subscription by email .txt" %}
 
@@ -62,97 +84,62 @@ Next, the system checks if any subscriptions listed under the **HubSpot** tab in
 
 If a match is found, the system verifies whether the customer should be subscribed, and if so, it makes the following request:
 
-`https://api.hubapi.com/communication-preferences/v3/subscribe`\
-Request body: _"hubspot subscribe customer.txt"_
+`https://api.hubapi.com/communication-preferences/v3/subscribe`
+
+Example request body:
 
 {% file src="../.gitbook/assets/hubspot subscribe customer.txt" %}
 
 Once connected, data synchronization will occur automatically according to the system’s scheduled sync jobs or configured triggers.
 
-***
+### Data sync behavior
 
-### **How it work**
+#### What Tourpaq sends per booking
 
-#### 1. What information is sent to HubSpot per booking
+Tourpaq sends booking data to HubSpot.
 
-For each booking, the system sends a structured set of booking-related data to HubSpot. This typically includes:
+This typically includes:
 
-**Booking identification**
+* Booking identifiers and status
+* Main customer details (name, email, phone)
+* Travel details (dates, destination, hotel, transport)
+* Financial totals (amounts, discounts, currency)
+* Metadata (brand, sales channel)
 
-* Booking number
-* Booking status
-* Booking creation date
-* Brand / owner
+The exact mapping depends on your HubSpot setup.
 
-**Customer information**
+#### When Tourpaq creates or updates bookings in HubSpot
 
-* Main customer name
-* Email address
-* Phone number (if available)
-* Customer ID (internal reference)
+**Creates** a new HubSpot booking/deal when:
 
-**Booking content**
+* the booking is completed in Office or Web Booking
+* the booking is in a valid state (not a draft)
 
-* Travel period (departure and return dates)
-* Destination
-* Hotel name and room type
-* Number of passengers (adults, children, infants)
-* Transport details (if applicable)
+**Updates** an existing booking/deal when key data changes, for example:
 
-**Financial data**
+* status changes (confirmed, cancelled)
+* passenger details change
+* travel details change (dates, hotel, transport)
+* price or discount changes
+* payment values change (if synced)
 
-* Total booking amount
-* Discounts
-* Paid amount / outstanding amount (if supported)
-* Currency
+#### Sync frequency
 
-**Operational metadata**
+The sync typically runs on a schedule.
 
-* Sales channel (Office / Web booking)
-* Booking source
-* Assigned user or agency (if applicable)
+It commonly runs **hourly**, per agency configuration.
 
-The exact field mapping depends on the HubSpot object configuration (Deal, Contact, or Custom Object).
+### Implementation notes (advanced)
 
-***
+<details>
 
-#### 2. When bookings are created or updated in HubSpot
+<summary>Customer details mapping</summary>
 
-#### Booking creation
+Tourpaq maps customer contact details from the booking into a HubSpot contact.
 
-A booking is **created in HubSpot** when:
-
-* A new booking is successfully completed in the Booking Engine (Office or Web)
-* The booking reaches a valid, confirmed state (not a draft)
-
-At this point:
-
-* A Deal (or booking object) is created
-* The booking is linked to the customer contact (created or reused)
-
-***
-
-#### Booking updates
-
-A booking is **updated in HubSpot** when one of the following events occurs:
-
-* Booking status changes (for example confirmed, cancelled)
-* Passenger data is modified
-* Travel details are changed (dates, hotel, transport)
-* Total price or discount changes
-* Payment-related values are updated (if synced)
-
-Updates are event-driven and only triggered when relevant booking data changes.
-
-The service runs hourly (each agency can set this period as they wish), for all bookings created/updated during that hour. Tourpaq sends the following details to Hubspot for each booking:
-
-* customer details;
+It also applies brand-specific flags and sets the HubSpot owner.
 
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
-
-This method populates a HubSpotUser object with data from a booking and sets brand-specific flags based on the agency.
-
-Here is what details are sent, step by step.
 
 1. Copies customer details\
    The first part maps personal and contact information from the booking object to the HubSpotUser:
@@ -170,6 +157,13 @@ This ensures the HubSpot contact is created with the same data as the booking cu
 * sets a contact flag to "true" for the matching brand
 * assigns the HubSpot owner (ownerID) to the corresponding brand owner field
 
+For example:
+
+* AgencyID 163 marks the user as a Nortlander DK contact and sets NortlanderDKOwner
+* AgencyID 58 marks the user as a Primo Tours contact and sets PrimoToursOwner
+
+Each case represents a different brand or agency, and only one case is applied.
+
 3. Result\
    After the method runs, the crtUser object is fully prepared:
 
@@ -177,13 +171,17 @@ This ensures the HubSpot contact is created with the same data as the booking cu
 * it is linked to exactly one agency brand
 * it has the correct HubSpot owner assigned for that brand
 
-The method does not return anything. It mutates the crtUser object in place so it can be saved or sent to HubSpot afterward.
+</details>
 
-* booking details:
+<details>
+
+<summary>Booking/deal details mapping</summary>
+
+Tourpaq creates or updates a HubSpot deal/custom object with financial and travel data.
+
+It also sets transport flags and flight details (when available).
 
 <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
-
-The booking details that are sent to hubspot are:&#x20;
 
 1. Create and populate the deal\
    A new CustomDeal instance is created and most fields are filled directly from the booking object:
@@ -238,11 +236,52 @@ This likely indicates that these services are not booked or not applicable by de
 * is linked to a contact and owner
 * contains complete financial, travel, and customer data
 
-### **Tips**
+</details>
 
-* Keep your **License Key** private — it grants full API access to your HubSpot account.
-* If you encounter sync issues, verify that the key has not expired or been revoked in HubSpot.
-* Each booking sends identification, customer, travel, and financial data to HubSpot
-* Bookings are created in HubSpot when they are completed and confirmed
-* Bookings are updated whenever key booking data changes
-* The sync is automatic and event-based, not manual
+### Tips
+
+* Keep the **License Key** private.
+* If sync fails, rotate the key/token in HubSpot first.
+* Validate subscriptions exist in HubSpot before adding them in Tourpaq.
+* Use consistent Brand Codes. Avoid changing them mid-season.
+
+### FAQ
+
+#### Where do I get the License Key?
+
+Create it in HubSpot, then paste it into the brand’s HubSpot tab in Tourpaq.
+
+The exact location depends on whether you use legacy API keys or Private Apps.
+
+#### How do I enter multiple subscriptions?
+
+Separate them with `;` (semicolon).
+
+Example: `Customer Creation;Booking Update`.
+
+#### What happens if Subscriptions is empty?
+
+Tourpaq cannot match subscriptions for the customer.
+
+That often means it will skip subscribing the customer.
+
+#### Why are some bookings not created in HubSpot?
+
+Common causes:
+
+* missing/invalid key
+* missing Brand Code
+* booking is still a draft or not in a valid state
+* sync job has not run yet
+
+#### Does Tourpaq create new contacts, or update existing ones?
+
+It typically reuses an existing contact when email matches.
+
+Otherwise it creates a new contact.
+
+#### How often does the sync run?
+
+Many setups run hourly.
+
+Your agency can configure the interval.
