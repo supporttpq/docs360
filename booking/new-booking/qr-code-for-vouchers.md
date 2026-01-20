@@ -53,7 +53,7 @@ What happens after scanning (for example, whether it opens a page, validates, or
 1. Go to **System Setup**.
 2. Enable **Show QR-code in vouchers**.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Click **Save**.
 {% endstep %}
@@ -71,7 +71,7 @@ See: [Vouchers](../../setup/vouchers.md)
 
 Once vouchers are generated, open/download a voucher and confirm the QR code is visible.
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 {% endstepper %}
 

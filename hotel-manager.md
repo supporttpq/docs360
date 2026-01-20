@@ -16,7 +16,7 @@ This functionality helps maintain accurate contact and operational data for hote
 
 #### **Page Structure**
 
-<figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 | **Column**          | **Description**                                                                                            |
 | ------------------- | ---------------------------------------------------------------------------------------------------------- |
@@ -35,7 +35,7 @@ This functionality helps maintain accurate contact and operational data for hote
 2. Fill in the required details in the creation form (e.g., Name, City, Country, Email, URL).
 3. Save the entry to add the new manager to the list.
 
-<figure><img src=".gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### &#x20;Fields and Descriptions
 

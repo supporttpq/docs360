@@ -35,7 +35,7 @@ Your file must follow these rules:
 
 ### Import a refund file (Business Central)
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt="Refund File Import (Business Central)"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt="Refund File Import (Business Central)"><figcaption></figcaption></figure>
 
 {% stepper %}
 {% step %}

@@ -9,7 +9,7 @@ You can create an offer in two ways:
 * From **Office Management → New Offer**
 * While creating a **New Booking**, by opening the **Select Offer** popup
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (23).png" alt="Offer builder start screen"><figcaption><p>Start a new offer by selecting customer/offeree and travel search criteria.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (24).png" alt="Offer builder start screen"><figcaption><p>Start a new offer by selecting customer/offeree and travel search criteria.</p></figcaption></figure>
 
 ***
 
@@ -95,7 +95,7 @@ Passenger ages affect availability and pricing. If a price looks wrong, double-c
 When you select a specific **transport**, the list of available **hotel rooms** is filtered to only show rooms that match that transport and passenger setup.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (6).png" alt="Search results and filters"><figcaption><p>Search results with transport and hotel filters.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (7).png" alt="Search results and filters"><figcaption><p>Search results with transport and hotel filters.</p></figcaption></figure>
 
 After selecting an option, review the offer details and price breakdown:
 
@@ -132,7 +132,7 @@ After you decide:
 1. Click **Update Price**
 2. Save the offer/basket changes
 
-<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Upsell selection"><figcaption><p>Add upsells to the basket or propose them as optional upgrades.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Upsell selection"><figcaption><p>Add upsells to the basket or propose them as optional upgrades.</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -157,7 +157,7 @@ What happens after sending:
 * The system logs the **email sent date**.
 * If **self-booking** is enabled for your setup, the customer email includes a **Booking** button/link.
 
-<figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Send offer"><figcaption><p>Send the offer and confirm it was delivered (sent date is logged).</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Send offer"><figcaption><p>Send the offer and confirm it was delivered (sent date is logged).</p></figcaption></figure>
 {% endstep %}
 {% endstepper %}
 

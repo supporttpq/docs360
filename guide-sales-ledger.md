@@ -35,7 +35,7 @@ Before working with the Guide Sales Ledger, the following conditions must be met
 
 1.  You must have an **active Tourpaq user account** (admin or guide) with access to  Guide Sales Ledger.      - For an Admin user to have access to the Guide Sales Ledger menu, after this feature has been activated, a System Administrator must grant certain permissions in the User section, to the user who wants to have access to the feature. The Guide Sales Ledgedr activation permission is in the Finance menu.&#x20;
 
-    <figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 2. Guide transactions (debit/credit entries) must already be added by the guides in the destination.
 3. Bookings, extras, and supplier mappings must be configured correctly in the system.
 4. You must know the **payment period** and **allotment period** you are reviewing.
@@ -43,7 +43,7 @@ Before working with the Guide Sales Ledger, the following conditions must be met
 
 ## **How It Works**
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **1. Select Filters**&#x20;
 
@@ -121,7 +121,7 @@ The **Export** button (top right corner) downloads the data in XLSX format.
 
 The export includes:
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * All displayed columns
 * Raw values (no rounding)

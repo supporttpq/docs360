@@ -29,7 +29,7 @@ There are **four methods** available for setting the price of the cancellation i
 4. **Based on Transport Mode**
    * The insurance fee is determined by the **type of transport** selected for the booking (e.g., flight, bus, train).
 
-<figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### External Cancellation <a href="#external-cancellation" id="external-cancellation"></a>
 

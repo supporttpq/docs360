@@ -8,7 +8,7 @@ The **Rooms** tab is where you define the room types included in the contract. T
 
 ### Screenshot
 
-<figure><img src="../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

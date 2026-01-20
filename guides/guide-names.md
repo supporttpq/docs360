@@ -16,7 +16,7 @@ This section ensures that guides team are properly registered in the system, mak
 * Information for the guide team (name, company, login credentials) must be available.
 * Each guide team must have a **unique username**.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Instructions**
 
@@ -32,7 +32,7 @@ This section ensures that guides team are properly registered in the system, mak
 
 * Click **Create**.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Fill in all mandatory fields (User Name, Password, First/Last Name).
 * Save the entry.

@@ -43,7 +43,7 @@ Before you click **Take Allotment**:
 1. Locate the field where you can enter the **booking number to copy passengers from**.
 2. Enter the **original booking number**.
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Enter the original booking number before clicking <strong>Take Allotment</strong>.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Enter the original booking number before clicking <strong>Take Allotment</strong>.</p></figcaption></figure>
 {% endstep %}
 
 {% step %}

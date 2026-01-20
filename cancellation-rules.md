@@ -31,7 +31,7 @@ Cancellation rules ensure consistent and automated fee calculation for canceled 
 
 > **Note:** Cancellation rules are linked to the **transport** at the time it is created.
 
-<figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **2. How the Cancellation Fee Is Calculated**
 
