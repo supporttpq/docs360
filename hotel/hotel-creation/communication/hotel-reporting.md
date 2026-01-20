@@ -68,4 +68,4 @@ Open **Schedulers**. It shows existing schedules and send history.
 
 Check the **Email** address for typos. Ask them to check spam or quarantine. Then verify the schedule exists and is saved.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Hotel Reporting scheduler setup screen"><figcaption><p>Hotel Reporting scheduler setup.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Hotel Reporting scheduler setup screen"><figcaption><p>Hotel Reporting scheduler setup.</p></figcaption></figure>

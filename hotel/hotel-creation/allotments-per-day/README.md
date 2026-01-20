@@ -89,7 +89,7 @@ For the full workflow, see [Reserve rooms for stay lengths](reserve-rooms-for-st
 **STAY LENGTH (3, 7)** – Hover a cell to see reserved, booked, available, and free rooms.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The tooltip for each cell displays detailed reservation data to make it easier to interpret the information behind the cell values.
 
@@ -169,7 +169,7 @@ When a hotel is managed by **SkiStar**, each hotel represents one house or apart
 * If the unit is available, allotment is always `1`.
 * If the unit is not available, allotment is `0`.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### FAQ
 
