@@ -145,6 +145,12 @@ In case of a parent-child transport, the same layout can be shared between them.
 
 That means seat selected on a booking created with child transport will be displayed as occupied on a booking created with parent transport and vice-versa.
 
+This rule it will apply in the case that are used a parent transport is used with 2 child transports.
+
+{% hint style="info" %}
+Automatic Seating should be enabled for each of the child transports.
+{% endhint %}
+
 ### Empty seats <a href="#empty-seats" id="empty-seats"></a>
 
 Transport seating empty seats feature allows the customer to reserve extra seats on a plane. It can be activated from SuperAdmin.
