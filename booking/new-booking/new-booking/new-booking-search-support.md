@@ -73,7 +73,7 @@ Fill the main fields (Adults, Departures, Arrivals, Date From/To), then click **
 
 Flights and hotels load as two result grids.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
