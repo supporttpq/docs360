@@ -1,24 +1,21 @@
 # Editable releases in Allotment per Day
 
-### **Overview** <a href="#overview" id="overview"></a>
+### Overview
 
-The **Allotment per Day** screen is part of the hotel configuration module. It is used to define and monitor the number of rooms available (allotment) for each room type on a daily basis. This ensures that booking agents and the system know exactly how many rooms can be sold or held on specific dates.
+**Allotment per Day** lets you override hotel release values per room and date.
 
-This section is essential for managing availability, avoiding overbookings, and ensuring accurate tracking of room inventory.
+Use it when release deadlines change late, or when a release must be undone.
 
-### **Purpose** <a href="#purpose" id="purpose"></a>
+### Purpose
 
-The purpose of the Allotment per Day functionality is to:
+Use editable releases to:
 
-* View and adjust room availability per day and room type
-* Define secured and guaranteed allotments with the hotel.
-* Track how many rooms are already booked and how many remain free.
-* Execute, undo or correct releases on a daily basis
-* Override contract-level release rules when needed
-* Restore released rooms if a release is revoked
-* Support smooth booking operations by providing clear visibility of inventory.
+* Change the **DAYS** value per date (release deadline).
+* Undo a release by unchecking **R**.
+* Restore rooms (fully or partially) using **AR** and **SR**.
+* Override contract-level release settings for specific dates.
 
-Release handling here is especially important because release changes often happen late and need immediate correction without changing the original contract.
+This is operational tooling. It avoids changing the underlying contract.
 
 <figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -32,89 +29,79 @@ The screen is divided into three main areas:
 
 ### 1. Search and control area
 
-Period - Defines the date range shown in the table. Only days within this range are displayed.
-
-Room Type - Filters the view to a specific room type. Leave empty to see all room types.
-
-Week Days - Optional filter to show only selected weekdays.
-
-Search - Loads the allotment data based on the selected filters.
-
-Search with Stay Length - Searches based on stay length logic. This search does **not** include transports.
-
-Search with Allotment Control - Searches using full allotment control logic and **includes transports**.
-
-Display Names - Toggles between internal codes and readable names.
-
-Save - Saves all changes made in the table.
-
-Cancel - Discards unsaved changes.
-
-Allotment History - Opens the change log for this hotel and period.
+* **Period**: Date range shown in the table.
+* **Room Type**: Filter by one room type. Leave blank for all.
+* **Week Days**: Optional weekday filter.
+* **Search**: Loads allotment data for the selected filters.
+* **Search with Stay Length**: Applies stay-length logic. This search does **not** include transports.
+* **Search with Allotment Control**: Includes full allotment control logic and **includes transports**.
+* **Display Names**: Toggles between internal codes and readable names.
+* **Save**: Saves changes.
+* **Cancel**: Discards unsaved changes.
+* **Allotment History**: Opens the change log for this hotel and period.
 
 ### 2. Allotment table – common columns
 
-Room Type - The room category this row belongs to.
+These columns are standard availability data:
 
-Date - The specific arrival date.
-
-Day - Day of the week for the date.
-
-NO. - Total number of rooms defined for this room type and date.
-
-Secured - Rooms that are secured and not automatically released.
-
-Guaranteed - Rooms guaranteed to the hotel, regardless of sales.
-
-Book - Number of rooms already booked.
-
-Free - Available rooms that can still be sold.
+* **Room Type**: Room category for the row.
+* **Date**: Arrival date.
+* **Day**: Day of week.
+* **No.**: Total rooms allocated for that date.
+* **Secured**: Secured rooms. Not automatically released.
+* **Guaranteed**: Rooms you pay for, regardless of sales.
+* **Book**: Rooms already booked.
+* **Free**: Rooms available to sell.
 
 ### 3. RELEASE section
 
-The **RELEASE** headline groups all release-related columns. These columns always have a grey background to separate them from availability data.
+The **RELEASE** header groups all release-related columns.
+
+These columns have a grey background to separate them from availability data.
 
 Release handling here applies to **daily releases only**.
 
-DAYS - The number of days before arrival when the release is executed.
+#### Field reference (release columns)
+
+**DAYS**: Days before arrival when the release is executed.
 
 * Initial value comes from the Release rule in the contract
 * Editable if a release rule exists
 * Empty and not editable if no release rule is defined
 * Can be changed to extend or shorten the release deadline
 
-R - Indicates whether the release has been executed.
+**R**: Release executed flag.
 
 * Checked: the release is executed
 * Unchecked: the release is not executed or has been undone
-* Removing the checkmark **undoes the release** and makes AR and SR editable
+* Unchecking **undoes the release** and makes **AR** and **SR** editable
 
-AR (Allotment Released) - Number of **allotment rooms** that were released.
-
-* Filled automatically when a release is executed
-* Editable only when undoing a release
-* Used to control how many allotment rooms are restored
-
-SR (Secured Released) - Number of **secured rooms** that were released.
+**AR (Allotment Released)**: Number of **allotment rooms** released.
 
 * Filled automatically when a release is executed
 * Editable only when undoing a release
-* Used to control how many secured rooms are restored
+* Controls how many allotment rooms are restored
 
-Pax columns (PAX1, PAX2, PAX3, PAX4) - The maximum number of rooms with a max of 1 - 4 pax
+**SR (Secured Released)**: Number of **secured rooms** released.
+
+* Filled automatically when a release is executed
+* Editable only when undoing a release
+* Controls how many secured rooms are restored
+
+**PAX1–PAX4**: Max rooms by occupancy (1–4 pax).
 
 * Used for pax-based control and limits per room.
 
-MIN - The minimum stay
+**MIN**: Minimum stay (nights).
 
 ### How to work with releases
 
 #### Execute a release
 
-1. Ensure DAYS has the correct value
-2. Wait until the system executes the release automatically (supported for Daily" releases only). Please see [hotel-release-reporting.md](../releases/hotel-release-reporting.md "mention")
-3. The R checkbox becomes checked
-4. AR and SR are filled with released numbers
+1. Ensure **DAYS** has the correct value.
+2. Wait for the automated daily release to run. See [Hotel release - Reporting](../releases/hotel-release-reporting.md).
+3. Confirm the **R** checkbox becomes checked.
+4. Confirm **AR** and **SR** are filled with released values.
 
 ### Release logic
 
@@ -126,10 +113,10 @@ MIN - The minimum stay
 
 #### Undo a release
 
-1. Uncheck the R checkbox
-2. Edit DAYS if a new release deadline is needed
-3. Adjust AR and SR to define how many rooms are restored
-4. Save changes
+1. Uncheck **R**.
+2. Edit **DAYS** if you need a new release deadline.
+3. Adjust **AR** and **SR** to control how many rooms to restore.
+4. Click **Save**.
 
 By default, undoing a release restores all released rooms unless adjusted.
 
@@ -141,9 +128,9 @@ By default, undoing a release restores all released rooms unless adjusted.
 
 The Change Value tool can be used to:
 
-* Edit DAYS for multiple rows
-* Uncheck R for multiple rows
-* Adjust AR and SR for multiple rows
+* Edit **DAYS** for multiple rows
+* Uncheck **R** for multiple rows
+* Adjust **AR** and **SR** for multiple rows
 
 This is useful when correcting releases across many dates or room types.
 
@@ -156,7 +143,7 @@ This is useful when correcting releases across many dates or room types.
 All changes made to release data in Allotment per Day are logged.
 
 * Activity name: **Release update**
-* Includes changes to DAYS, R, AR and SR
+* Includes changes to **DAYS**, **R**, **AR**, and **SR**
 * Used for auditing and troubleshooting
 
 ***
@@ -169,3 +156,58 @@ Release columns are visible and editable only if the user or supplier has:
 * Access to Release management
 
 Without both rights, release data is hidden or read-only.
+
+### FAQ
+
+<details>
+
+<summary>Why is <strong>DAYS</strong> empty or not editable?</summary>
+
+There is no release rule on the contract for that room/date.
+
+In that case, Tourpaq has nothing to override at day level.
+
+</details>
+
+<details>
+
+<summary>What happens when I uncheck <strong>R</strong>?</summary>
+
+You undo the release for that room/date.
+
+Tourpaq restores rooms by default.
+
+You can then fine-tune the restoration using **AR** and **SR**.
+
+</details>
+
+<details>
+
+<summary>Can I restore only some rooms after undoing a release?</summary>
+
+Yes.
+
+Uncheck **R**, then edit **AR** and **SR** to restore a partial amount.
+
+</details>
+
+<details>
+
+<summary>Does editing releases change the hotel contract?</summary>
+
+No.
+
+It only overrides release values per day in **Allotment per Day**.
+
+</details>
+
+<details>
+
+<summary>Why can’t I see the release columns?</summary>
+
+Your user (or supplier login) lacks one of these permissions:
+
+* **Allotment per Day**
+* **Release management**
+
+</details>
