@@ -391,6 +391,7 @@
   * [Extra package](extras-setup/extras/extra-package.md)
   * [Attributes](extras-setup/extras/attributes.md)
   * [Communication](extras-setup/extras/communication.md)
+  * [Notes](extras-setup/extras/notes.md)
   * [Early booking/Stay and pay and Special Early Booking/Stay and pay](extras-setup/extras/early-booking-stay-and-pay-and-special-early-booking-stay-and-pay.md)
   * [Teetime](extras-setup/extras/teetime.md)
   * [Multiple product selection in product category](extras-setup/extras/multiple-product-selection-in-product-category.md)
