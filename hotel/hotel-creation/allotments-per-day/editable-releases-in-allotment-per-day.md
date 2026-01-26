@@ -17,7 +17,7 @@ Use editable releases to:
 
 This is operational tooling. It avoids changing the underlying contract.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Screen structure
 
@@ -124,7 +124,7 @@ By default, undoing a release restores all released rooms unless adjusted.
 
 ### Bulk updates (Change Value tool)
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 The Change Value tool can be used to:
 

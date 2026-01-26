@@ -2,7 +2,7 @@
 
 VisitSun is an application designed for supporting the guests to have access to special features and information, to stay updated on any changes and to get inspired related to their bookings in order that the entire experience to be valuable. Application is available on both Android or IOS devices. Below, there is a picture with the application running on IOS:
 
-<figure><img src=".gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Guests can login using the booking number and the password provided.
 

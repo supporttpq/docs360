@@ -20,13 +20,13 @@ Use Basic setup to ensure each transport is configured for sales, reporting, and
 
 #### Instructions & field explanations
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 **1. Destination**
 
 Defines the route and core identifiers.
 
-* **Code**: Unique identifier for the transport (e.g., BLLTFS-A1).
+* **Code**: Unique identifier for the transport (e.g., BLL-TFS-2).
 * **Return**: Code for the return route.
 * **Departure**: Departure airport/location.
 * **Arrival**: Arrival airport/location.
@@ -291,6 +291,21 @@ Set the interval between flights.
 
 <figure><img src="../../../.gitbook/assets/image (397).png" alt=""><figcaption></figcaption></figure>
 
+### Notes <a href="#timetable" id="timetable"></a>
+
+Offer the posibility to the user to add a note related to a specific transport. Used for internal documentation
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+A free-text field used only internally.
+
+Use this field to:
+
+* Document special agreements or exceptions
+* Leave operational notes for colleagues
+
+These notes are not visible to customers and do not affect booking logic.
+
 ### Timetable <a href="#timetable" id="timetable"></a>
 
 Used to set the date and time of the flights.
@@ -337,7 +352,7 @@ The **guaranteed empty seats** fields are linked to the Empty Seats feature. If 
 * **One way out**: Number of seats for one-way outbound.
 * **One way home**: Number of seats for one-way homebound.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Click **Insert**, then **Generate**. The end result is:
 
