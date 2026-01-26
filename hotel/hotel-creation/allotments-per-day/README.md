@@ -26,23 +26,23 @@ Daily values typically come from your generated allotment periods. Set those on 
 
 ### Fields
 
-| Field           | Description                                                           |
-| --------------- | --------------------------------------------------------------------- |
-| **Room**        | The room type / category. Example formats: `1/1`, `1/2-SH`.           |
-| **Date**        | The calendar date for which allotment is being defined.               |
-| **Day**         | The day of week.                                                      |
-| **No.**         | Total rooms allocated for that date.                                  |
-| **Secured**     | Rooms secured by contract. The hotel commits to allocate these rooms. |
-| **Guaranteed**  | Rooms you guarantee financially, even if unsold.                      |
-| **Book**        | Rooms already booked for that date.                                   |
-| **Free**        | Rooms still available (`No. - Book`).                                 |
-| **R**           | True (green) when the room is released. See [Releases](../releases/). |
-| **For R**       | Rooms available for release.                                          |
-| **Max**         | Maximum rooms allowed.                                                |
-| **Extra**       | Extra rooms.                                                          |
-| **PAX 1–4**     | Max rooms by occupancy (1–4 pax).                                     |
-| **Min**         | Minimum stay in nights.                                               |
-| **Stay length** | Rooms allocated per charter transport, based on selected stay days.   |
+| Field           | Description                                                                                                       |
+| --------------- | ----------------------------------------------------------------------------------------------------------------- |
+| **Room**        | The room type / category. Example formats: `1/1`, `1/2-SH`.                                                       |
+| **Date**        | The calendar date for which allotment is being defined.                                                           |
+| **Day**         | The day of week.                                                                                                  |
+| **No.**         | Total rooms allocated for that date.                                                                              |
+| **Secured**     | Rooms secured by contract. The hotel commits to allocate these rooms.                                             |
+| **Guaranteed**  | Rooms you guarantee financially, even if unsold.                                                                  |
+| **Book**        | Rooms already booked for that date.                                                                               |
+| **Free**        | Rooms still available (`No. - Book`).                                                                             |
+| **R**           | True (green) when the room/date is marked as released. You can edit this flag here. See [Releases](../releases/). |
+| **For R**       | Rooms available for release. You can edit this value here to adjust the release quantity.                         |
+| **Max**         | Maximum rooms allowed.                                                                                            |
+| **Extra**       | Extra rooms.                                                                                                      |
+| **PAX 1–4**     | Max rooms by occupancy (1–4 pax).                                                                                 |
+| **Min**         | Minimum stay in nights.                                                                                           |
+| **Stay length** | Rooms allocated per charter transport, based on selected stay days.                                               |
 
 {% hint style="warning" %}
 **PAX1, PAX2, PAX3, PAX4** – When you hover over these cells, a tooltip appears showing the number of booked rooms for each corresponding PAX category (PAX1, PAX2, PAX3, PAX4).
@@ -159,6 +159,40 @@ Check **Book** and **Free** for sanity.
 Click **Update** to save.
 
 Click **Cancel** to discard changes.
+{% endstep %}
+{% endstepper %}
+
+### How to edit releases (manual adjustment)
+
+Use this when you need to override the automated release result for specific dates.
+
+{% stepper %}
+{% step %}
+### Open the screen
+
+Go to **Hotel → Allotment per Day**.
+{% endstep %}
+
+{% step %}
+### Search the dates and room types
+
+Select **Period** and **Room Type**.
+
+Click **Search**.
+{% endstep %}
+
+{% step %}
+### Adjust release status and quantity
+
+Edit **R** to mark/unmark as released.
+
+Edit **For R** to control how many rooms are available for release.
+{% endstep %}
+
+{% step %}
+### Save
+
+Click **Update**.
 {% endstep %}
 {% endstepper %}
 
