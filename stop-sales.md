@@ -27,7 +27,7 @@ Navigate to **Stop Sales → Create New Stop Sale**.
 5. Add a **Note** (optional unless required).
 6. Click **Save**.
 
-<figure><img src=".gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Fields
 

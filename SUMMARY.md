@@ -166,6 +166,7 @@
   * [Hotel allotment overview](hotel/hotel-creation/hotel-allotment-overview.md)
   * [Allotments per day](hotel/hotel-creation/allotments-per-day/README.md)
     * [Reserve rooms for stay lengths](hotel/hotel-creation/allotments-per-day/reserve-rooms-for-stay-lengths.md)
+    * [Editable releases in Allotment per Day](hotel/hotel-creation/allotments-per-day/editable-releases-in-allotment-per-day.md)
   * [Releases](hotel/hotel-creation/releases/README.md)
     * [Hotel release - automation](hotel/hotel-creation/releases/hotel-release-automation.md)
     * [Hotel release - Reporting](hotel/hotel-creation/releases/hotel-release-reporting.md)

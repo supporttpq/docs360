@@ -39,7 +39,7 @@ By providing a structured and controlled environment for guide documentation, th
 
 Each entry in the table includes the following fields:
 
-<figure><img src="../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Photo** – Displays a preview image or a placeholder if no image is uploaded.
 * **Agency** – Shows the agency to which the document belongs.

@@ -37,7 +37,7 @@ Example:
 * Friday arrivals exist for 5, 7, and 14 nights.
 * You can reserve rooms separately for each duration.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Fields
 
@@ -65,7 +65,7 @@ Example:
 **Stay length (3, 7)**: Hover a cell to see reserved, booked, available, and free rooms for that stay length.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The tooltip helps you interpret what the cell value actually means.
 

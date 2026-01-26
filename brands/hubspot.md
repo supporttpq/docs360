@@ -22,7 +22,7 @@ You will find it next to other brand integrations.
 
 ### Field reference
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### License Key
 
@@ -62,7 +62,7 @@ Tourpaq uses this code as a prefix in HubSpot booking data.
 {% step %}
 ### Add HubSpot credentials and subscriptions
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Add the **License Key** and **Subscriptions** for the brand.
 {% endstep %}
@@ -139,7 +139,7 @@ Tourpaq maps customer contact details from the booking into a HubSpot contact.
 
 It also applies brand-specific flags and sets the HubSpot owner.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Copies customer details\
    The first part maps personal and contact information from the booking object to the HubSpotUser:
@@ -181,7 +181,7 @@ Tourpaq creates or updates a HubSpot deal/custom object with financial and trave
 
 It also sets transport flags and flight details (when available).
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Create and populate the deal\
    A new CustomDeal instance is created and most fields are filled directly from the booking object:

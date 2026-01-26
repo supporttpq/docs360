@@ -22,31 +22,22 @@ Use it to:
 Daily values typically come from your generated allotment periods. Set those on [Hotel allotments](../hotel-allotments.md).
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (572).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ### Fields
 
-| Field           | Description                                                                                                       |
-| --------------- | ----------------------------------------------------------------------------------------------------------------- |
-| **Room**        | The room type / category. Example formats: `1/1`, `1/2-SH`.                                                       |
-| **Date**        | The calendar date for which allotment is being defined.                                                           |
-| **Day**         | The day of week.                                                                                                  |
-| **No.**         | Total rooms allocated for that date.                                                                              |
-| **Secured**     | Rooms secured by contract. The hotel commits to allocate these rooms.                                             |
-| **Guaranteed**  | Rooms you guarantee financially, even if unsold.                                                                  |
-| **Book**        | Rooms already booked for that date.                                                                               |
-| **Free**        | Rooms still available (`No. - Book`).                                                                             |
-| **R**           | True (green) when the room/date is marked as released. You can edit this flag here. See [Releases](../releases/). |
-| **For R**       | Rooms available for release. You can edit this value here to adjust the release quantity.                         |
-| **Max**         | Maximum rooms allowed.                                                                                            |
-| **Extra**       | Extra rooms.                                                                                                      |
-| **PAX 1–4**     | Max rooms by occupancy (1–4 pax).                                                                                 |
-| **Min**         | Minimum stay in nights.                                                                                           |
-| **Stay length** | Rooms allocated per charter transport, based on selected stay days.                                               |
+<table><thead><tr><th width="224">Field</th><th>Description</th></tr></thead><tbody><tr><td><strong>Room Type</strong></td><td>The room type / category. Example formats: <code>2/2 + 2B</code>, <code>1/2-mel10</code>.</td></tr><tr><td><strong>Date</strong></td><td>The calendar date for which allotment is being defined.</td></tr><tr><td><strong>Day</strong></td><td>The day of week.</td></tr><tr><td><strong>No.</strong></td><td>Total rooms allocated for that date.</td></tr><tr><td><strong>Secured</strong></td><td>The number of secured rooms</td></tr><tr><td><strong>Guaranteed</strong></td><td>The number of guaranteed rooms</td></tr><tr><td><strong>Book</strong></td><td>Rooms already booked for that date.</td></tr><tr><td><strong>Free</strong></td><td>Rooms still available (<code>No. - Book</code>).</td></tr><tr><td><strong>Days</strong></td><td>The number of days before arrival, the release is executed (only daily releases).<br>The cell is empty if no release rules are defined.<br>The cell is editable, allowing the release days to be ed</td></tr><tr><td><strong>R</strong></td><td><p>If the release is executed, the box is checked, and the release can be undone by removing the checkmark. </p><p>When a release is undone, edit DAYS with the new deadline and update AR and SR to make rooms available.</p></td></tr><tr><td><strong>AR</strong></td><td>The number of allotment rooms released.<br>Edit AR when a release is undone to adjust the number of rooms moved back.</td></tr><tr><td><strong>SR</strong></td><td>The number of secured rooms released.<br>Edit SR when a release is undone to adjust the number of rooms moved back.</td></tr><tr><td><strong>PAX 1–4</strong></td><td>Max rooms by occupancy (1–4 pax).</td></tr><tr><td><strong>Min</strong></td><td>Minimum stay in nights.</td></tr><tr><td><strong>Stay length</strong></td><td>Rooms allocated per charter transport, based on selected stay days.</td></tr></tbody></table>
 
 {% hint style="warning" %}
 **PAX1, PAX2, PAX3, PAX4** – When you hover over these cells, a tooltip appears showing the number of booked rooms for each corresponding PAX category (PAX1, PAX2, PAX3, PAX4).
 {% endhint %}
+
+### Editable releases in Allotment per Day
+
+The releases can be edited directly in **Allotment per Day**, at room and date level. eleases are managed **per room and per day**, directly in **Hotel > Allotment per Day**.\
+The **RELEASE** section groups all release-related columns and overrides the release defined in the contract.
+
+It is designed to handle frequent operational changes such as extending, shortening, executing, or revoking releases after they have already been applied.
 
 <figure><img src="../../../.gitbook/assets/image (573).png" alt=""><figcaption></figcaption></figure>
 
@@ -89,7 +80,7 @@ For the full workflow, see [Reserve rooms for stay lengths](reserve-rooms-for-st
 **STAY LENGTH (3, 7)** – Hover a cell to see reserved, booked, available, and free rooms.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The tooltip for each cell displays detailed reservation data to make it easier to interpret the information behind the cell values.
 
@@ -203,7 +194,7 @@ When a hotel is managed by **SkiStar**, each hotel represents one house or apart
 * If the unit is available, allotment is always `1`.
 * If the unit is not available, allotment is `0`.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### FAQ
 
