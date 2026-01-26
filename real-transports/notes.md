@@ -1,25 +1,76 @@
 # Notes
 
-#### Purpose
+### Overview
 
-The primary purpose of the Notes section in Real Transport is to maintain an informal yet essential audit trail of route-specific decisions, temporary changes, and local airport conditions that affect the CPH-SZG route.
+The **Notes** tab is an internal log for a single **Real Transport** route.\
+Use it to capture decisions, exceptions, and short-lived operational context.
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-#### Field Breakdown
+### Purpose
 
-* Internal Notes Workspace: A free-text area (currently displaying "text for internal notes") designed for rapid documentation.
-* Contextual Tabs: While Notes is the active area, it exists alongside General, Departures, Communication, Passenger Information, Documents, and Layout to provide a full 360-degree view of the transport route.
+* Keep a lightweight audit trail for day-to-day operations.
+* Share context between colleagues working the same route.
 
-***
+{% hint style="info" %}
+Notes are internal. They are not shown to customers or external agents.
+{% endhint %}
 
-#### 4. Instructions&#x20;
+### Fields
 
-When working in the Notes section of a Real Transport route, follow these standards:
+* **Internal notes**: Free-text area for rapid documentation.\
+  Treat the default placeholder text as a prompt to add real content.
+* Use Notes to explain _why_ something changed for the transport.
 
-1. Check Before Acting: Before modifying a departure or a passenger requirement, check the Notes tab to see if a colleague has already documented a pending change or a known issue.
-2. Documenting "Real Transport" Events:
-   * Airport Issues: Note any specific handling delays at CPH or SZG.
-   * Rule Explanations: If a Transport Rule (like the BLL\_AYT example previously seen) impacts this route, explain the relationship here.
-   * Testing: As seen in the interface, use this for "test" notes when verifying system behavior before going live.
-3. Formatting: Start every note with the date and your initials to ensure the team knows who to contact for follow-up questions.
+### Working standards
+
+When writing notes for a Real Transport route, follow these standards:
+
+1. **Check before acting**\
+   Before changing departures, rules, or passenger requirements, scan the latest notes first.
+2. **Document operational events**\
+   Use short, scannable bullets. Include details that help someone act fast.
+   * Airport or handling issues (delays, local constraints, ground handling changes).
+   * Supplier changes (times, flight numbers, seat allocation, cost inputs).
+   * Rule interactions (what changed, and which rule(s) it affects).
+   * Testing notes (what was tested and the outcome).
+3. **Use a consistent format**\
+   Start each entry with a date and initials. Add a one-line summary.
+
+{% code title="Recommended note format" %}
+```
+2026-01-26 - AB - Supplier confirmed new departure time +15 min.
+- Applied to departures from 2026-02-01.
+- Flight change queued and sent.
+```
+{% endcode %}
+
+### FAQ
+
+#### Who can see Notes?
+
+Notes are intended for internal users working in Tourpaq Office.\
+They are route-specific and live with the Real Transport record.
+
+#### Do Notes affect pricing, availability, or booking logic?
+
+No. Notes do not change system behavior by themselves.\
+They document the reason behind changes made elsewhere.
+
+#### Are Notes shown to passengers or printed on tickets?
+
+No. Use **Passenger Information** for messages that passengers must see.\
+Use Notes for internal context only.
+
+#### What should I write when I make a departure change?
+
+Write the **what**, **why**, and **scope**:
+
+* What changed (time, flight number, seats, supplier, costs).
+* Why it changed (supplier request, GDS mismatch, operational issue).
+* Scope (date range, affected brands, whether flight change was queued/sent).
+
+#### Should I delete old notes?
+
+Usually no. Old notes are valuable as an audit trail.\
+If the list gets noisy, add a closing line like “Resolved” with a date.
