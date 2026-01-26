@@ -26,36 +26,6 @@ Dates in the examples use the format **DD-MM-YYYY**.
 * Support both hotel-wide and room-specific rules.
 * Keep a log for auditing.
 
-### Types of release rules
-
-Two rule types exist in the **Releases** tab.
-
-#### 1) General release rule (hotel-wide)
-
-* Applies to **all room types** in the hotel.
-* Triggers on a specific release date, with an optional lead time.
-* Sends a release report to the email in the rule.
-
-**Required fields**
-
-* **Release date**
-* **Number of days in advance**
-* **Email address**
-
-#### 2) Specific release rule (room type)
-
-* Applies to **one room type**.
-* Works within a start and end period.
-* Can execute repeatedly during the active period.
-
-**Required fields**
-
-* **Start date**
-* **End date**
-* **Room type** (e.g., `1S`, `2C`, `3F`)
-* **Number of days in advance**
-* **Email address**
-
 ### How “days in advance” is evaluated
 
 Treat **days in advance** as the lead time.
