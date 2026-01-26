@@ -273,6 +273,7 @@
   * [Setup for Transport Dynamic Packaging (GDS)](real-transports/setup-for-transport-dynamic-packaging-gds.md)
   * [Departures](real-transports/departures.md)
   * [Passenger Information](real-transports/passenger-information.md)
+  * [Notes](real-transports/notes.md)
 * [Real Transport Dashboard](real-transport-dashboard.md)
 * [Factor Matrix Template](factor-matrix-template.md)
 * [Transport Regulation Rules](transport-regulation-rules.md)
