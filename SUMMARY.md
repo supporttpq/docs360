@@ -257,6 +257,7 @@
   * [Create Transport Rule](transport-rules/create-transport-rule.md)
   * [Edit Transport Rule](transport-rules/edit-transport-rule.md)
   * [Edit Quota](transport-rules/edit-quota.md)
+  * [Notes](transport-rules/notes.md)
   * [Transport Rules for Hotel Only](transport-rules/transport-rules-for-hotel-only.md)
 * [Transport Dashboard](transport-dashboard.md)
 * [Transport Price Control](transport-price-control.md)
