@@ -26,30 +26,23 @@ Daily values typically come from your generated allotment periods. Set those on 
 
 ### Fields
 
-<table><thead><tr><th width="224">Field</th><th>Description</th></tr></thead><tbody><tr><td><strong>Room Type</strong></td><td>The room type / category. Example formats: <code>2/2 + 2B</code>, <code>1/2-mel10</code>.</td></tr><tr><td><strong>Date</strong></td><td>The calendar date for which allotment is being defined.</td></tr><tr><td><strong>Day</strong></td><td>The day of week.</td></tr><tr><td><strong>No.</strong></td><td>Total rooms allocated for that date.</td></tr><tr><td><strong>Secured</strong></td><td>The number of secured rooms</td></tr><tr><td><strong>Guaranteed</strong></td><td>The number of guaranteed rooms</td></tr><tr><td><strong>Book</strong></td><td>Rooms already booked for that date.</td></tr><tr><td><strong>Free</strong></td><td>Rooms still available (<code>No. - Book</code>).</td></tr><tr><td><strong>Days</strong></td><td>The number of days before arrival, the release is executed (only daily releases).<br>The cell is empty if no release rules are defined.<br>The cell is editable, allowing the release days to be ed</td></tr><tr><td><strong>R</strong></td><td><p>If the release is executed, the box is checked, and the release can be undone by removing the checkmark. </p><p>When a release is undone, edit DAYS with the new deadline and update AR and SR to make rooms available.</p></td></tr><tr><td><strong>AR</strong></td><td>The number of allotment rooms released.<br>Edit AR when a release is undone to adjust the number of rooms moved back.</td></tr><tr><td><strong>SR</strong></td><td>The number of secured rooms released.<br>Edit SR when a release is undone to adjust the number of rooms moved back.</td></tr><tr><td><strong>PAX 1–4</strong></td><td>Max rooms by occupancy (1–4 pax).</td></tr><tr><td><strong>Min</strong></td><td>Minimum stay in nights.</td></tr><tr><td><strong>Stay length</strong></td><td>Rooms allocated per charter transport, based on selected stay days.</td></tr></tbody></table>
+<table><thead><tr><th width="224">Field</th><th>Description</th></tr></thead><tbody><tr><td><strong>Room Type</strong></td><td>The room type / category. Example formats: <code>2/2 + 2B</code>, <code>1/2-mel10</code>.</td></tr><tr><td><strong>Date</strong></td><td>The calendar date for which allotment is being defined.</td></tr><tr><td><strong>Day</strong></td><td>The day of week.</td></tr><tr><td><strong>No.</strong></td><td>Total rooms allocated for that date.</td></tr><tr><td><strong>Secured</strong></td><td>The number of secured rooms</td></tr><tr><td><strong>Guaranteed</strong></td><td>The number of guaranteed rooms</td></tr><tr><td><strong>Book</strong></td><td>Rooms already booked for that date.</td></tr><tr><td><strong>Free</strong></td><td>Rooms still available (<code>No. - Book</code>).</td></tr><tr><td><strong>Days</strong></td><td>The number of days before arrival, the release is executed (only daily releases).<br>The cell is empty if no release rules are defined.<br>The cell is editable, allowing the release days to be ed</td></tr><tr><td><strong>R</strong></td><td><p>If the release is executed, the box is checked, and the release can be undone by removing the checkmark. </p><p>When a release is undone, edit DAYS with the new deadline and update AR and SR to make rooms available.</p></td></tr><tr><td><strong>AR</strong></td><td>If the release is executed, the box is checked, and the release can be undone by removing the checkmark.<br>When a release is undone, edit DAYS with the new deadline and update AR and SR to make rooms available.</td></tr><tr><td><strong>SR</strong></td><td>The number of secured rooms released.<br>Edit SR when a release is undone to adjust the number of rooms moved back.</td></tr><tr><td><strong>PAX 1–4</strong></td><td>Max rooms by occupancy (1–4 pax).</td></tr><tr><td><strong>Min</strong></td><td>Minimum stay in nights.</td></tr><tr><td><strong>Stay length</strong></td><td>Rooms allocated per charter transport, based on selected stay days.</td></tr></tbody></table>
 
 {% hint style="warning" %}
 **PAX1, PAX2, PAX3, PAX4** – When you hover over these cells, a tooltip appears showing the number of booked rooms for each corresponding PAX category (PAX1, PAX2, PAX3, PAX4).
 {% endhint %}
 
-### Editable releases in Allotment per Day
-
-The releases can be edited directly in **Allotment per Day**, at room and date level. eleases are managed **per room and per day**, directly in **Hotel > Allotment per Day**.\
-The **RELEASE** section groups all release-related columns and overrides the release defined in the contract.
-
-It is designed to handle frequent operational changes such as extending, shortening, executing, or revoking releases after they have already been applied.
-
-<figure><img src="../../../.gitbook/assets/image (573).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (580).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 If a **Stop Sale** exists for a date, you will see a yellow warning icon next to the room. Stop sales are configured in [Stop Sales](../../../stop-sales.md).
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (581).png" alt=""><figcaption></figcaption></figure>
 
 ### Search with allotment control
 
-<figure><img src="../../../.gitbook/assets/image (575).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (582).png" alt=""><figcaption></figcaption></figure>
 
 Use this search when you need availability split by transport departures.
 
@@ -77,10 +70,10 @@ When you reserve rooms for a stay length, Tourpaq also reserves multiples of it.
 For the full workflow, see [Reserve rooms for stay lengths](reserve-rooms-for-stay-lengths.md).
 
 {% hint style="warning" %}
-**STAY LENGTH (3, 7)** – Hover a cell to see reserved, booked, available, and free rooms.
+**STAY LENGTH (7)** – Hover a cell to see reserved, booked, available, and free rooms.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (583).png" alt=""><figcaption></figcaption></figure>
 
 The tooltip for each cell displays detailed reservation data to make it easier to interpret the information behind the cell values.
 
