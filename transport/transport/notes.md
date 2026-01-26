@@ -1,45 +1,90 @@
 ---
-description: >-
-  This documentation page focuses on the Notes section within the Transport
-  module. Below are the details you'll need to understand and use this tab
-  effectively.
+description: Add internal notes to a transport route for context and traceability.
 ---
 
 # Notes
 
-### 1. Overview
+### Overview
 
-The Transport -> Notes section is a sub-component of the route configuration interface (in this example, Billund - Tenerife). It functions as an internal registry where team members can add contextual information regarding a specific transport route that doesn't fit into standard fields like pricing, schedules, or inventory.
+The **Notes** tab belongs to a specific route configuration (example: _Billund → Tenerife_).
 
-### 2. Purpose
+Use it to store internal context that does not belong in structured fields. Examples include pricing exceptions, operational quirks, and decisions made.
 
-The primary goal of this tab is internal communication and traceability.
+### When to use Notes
 
-* Centralizing Information: It prevents important details from being lost in emails or external chat threads.
-* Historical Context: It provides colleagues who manage the route in the future with a history of decisions or specific route peculiarities.
-* Operational Alerts: It serves as a space to record exceptions or special rules agreed upon with transport partners.
+Use Notes for:
 
-### 3. Field Descriptions
+* agreements with airlines or suppliers
+* exceptions for this route
+* why a setting was changed
+* known operational issues and workarounds
+
+{% hint style="info" %}
+Notes are internal. They are not shown to customers or external agents.
+{% endhint %}
+
+### Field: Internal notes
 
 <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-#### Field: Internal notes
+This is a free-text field for your team.
 
-This is a free-text area designated exclusively for the agency's internal use.
+#### What to write
 
-What to enter here:
+* **Contract details:** special clauses, deadlines, allotment rules, or cut-offs.
+* **Recurring issues:** delays, schedule instability, baggage quirks, or common support cases.
+* **Change log:** what changed and why.
+  * Example: `2026-03-10 AB: Increased quota for Tourpaq DK due to Easter demand.`
+* **Ticketing instructions:** requirements the operations team must follow.
 
-* Specific Contractual Details: Note if there are special clauses with the airline for this specific route.
-* Recurring Issues: If a route frequently experiences known delays or schedule changes, mention them here to alert the support team.
-* Configuration Changes: If you have adjusted settings in some tabs, it is helpful to write a brief note explaining why (e.g., "Increased quota for Tourpaq DK due to high Easter demand").
-* Ticketing Instructions: Specific deadlines or requirements for issuing tickets that the operations team needs to be aware of.
+#### What not to write
 
-> Pro Tip: Information entered in Internal notes is NOT visible to end customers or external agents in the booking.
+* Personal data that is not required for operations.
+* Content that should live in a contract, SLA, or a ticketing system.
 
 ***
 
-#### Best Practices
+### Best practices
 
-1. Sign Your Notes: While the system may track logs, it is helpful to add your initials and the date at the end of a note for quick reference.
-2. Be Concise: Keep information clear and easy to scan for your colleagues.
-3. Keep it Current: If a note is no longer relevant (e.g., a resolved technical issue), remove it or update it to avoid cluttering the workspace.
+1. **Sign and date** notes for quick traceability.
+2. **Keep it scannable.** Prefer short bullets over long paragraphs.
+3. **Keep it current.** Update or remove outdated notes.
+
+### FAQ
+
+<details>
+
+<summary>Are Notes visible to customers?</summary>
+
+No. Notes are internal and only visible to users with access to route configuration.
+
+</details>
+
+<details>
+
+<summary>When should I use <strong>Passenger information</strong> instead of Notes?</summary>
+
+Use **Passenger information** when the message should be shown to passengers or printed on tickets. Use **Notes** when the information is internal only.
+
+</details>
+
+<details>
+
+<summary>Should I store files in Notes?</summary>
+
+No. Use the **Documents** tab for files. Use Notes for short, searchable text context.
+
+</details>
+
+<details>
+
+<summary>What format works best for Notes?</summary>
+
+Start with a date and initials, then add short bullets. Example: `2026-03-10 AB: Increased quota due to Easter demand.`
+
+</details>
+
+### Related pages
+
+* [Documents](documents.md)
+* [Passengers informations](passengers-informations.md)
