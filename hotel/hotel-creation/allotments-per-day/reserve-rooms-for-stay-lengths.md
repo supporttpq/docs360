@@ -2,11 +2,9 @@
 
 ### Overview
 
-Use **Reserve rooms for stay lengths** to reserve rooms on an arrival day.
+The **Reserve rooms for stay length**s feature allows agencies to reserve hotel rooms for guests on specific arrival days, **independent of transport**.&#x20;
 
-It is **independent of transport**.
-
-Use it when:
+This is useful in cases where:
 
 * A destination has multiple transports arriving on the same day.
 * Agencies want to reserve rooms for arrivals on a certain weekday (e.g., Friday), regardless of which transport the guests use.
@@ -79,6 +77,20 @@ For each possible duration (based on the eligible transport intervals), rooms ca
 The **Free Hotel Allotment (FHA)** in the price list represents the total of **Available** plus **Free** rooms.
 
 <figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+* After changes are made, the system may require up to one minute to update and display the new values.
+* Updates to the price list, including **Free Hotel Allotment (FHA)** values, may take a few minutes to be reflected in the system.
+{% endhint %}
+
+In Tourpaq there is a service called FRC (free room count) that runs between 2 minutes and up to several hours, depending on how many tasks are in the database.&#x20;
+
+Depending on the FRC and the Elastic search engine, it depends on how long before a setting takes effect when attempting to make a reservation:
+
+* in office takes effect immediately&#x20;
+* in site you have to wait for price list update (only after running FRC + Elastic).
+
+
 
 ### Reserve rooms (workflow)
 
