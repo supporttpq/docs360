@@ -14,29 +14,22 @@ Keep notes short and searchable.
 Notes are internal. They are not shown to customers or external agents.
 {% endhint %}
 
-### Field: Internal notes
-
 <figure><img src="../.gitbook/assets/image (584).png" alt=""><figcaption></figcaption></figure>
 
-This is a free-text field for your team.
+* This is a free-text field for your team.
+* Write clear, actionable information.
+* Start with date + initials.
+* Avoid customer-specific information.
+* Use **Save** after editing. The field may not auto-save.
 
-#### What to write
+### Recommended note format
 
-* **Change log:** what changed and why.
-  * Example: `2026-01-26 CP: Increased quota by 10% for the summer peak.`
-* **Decisions:** why you picked a specific setup or naming.
-* **Operational context:** known issues, workarounds, or handover notes.
-
-#### What not to write
-
-* Customer-facing messages.
-* Personal data that is not required for operations.
-
-### Best practices
-
-1. **Date and sign** notes (ISO date + initials).
-2. **Keep it scannable.** Use bullets. Avoid long paragraphs.
-3. **Keep it current.** Remove outdated context.
+```
+[YYYY-MM-DD - Initials]
+Change:
+Reason:
+Impact (optional):
+```
 
 ### FAQ
 
@@ -61,16 +54,6 @@ Anyone who can access the transport rule can read its Notes.
 <summary>Should I use Notes as an audit log?</summary>
 
 Use Notes for quick context. Do not rely on them as a full audit trail.
-
-</details>
-
-<details>
-
-<summary>What’s a good Notes format?</summary>
-
-Start with a date and initials, then add one sentence.
-
-Example: `2026-01-26 CP: Renamed rule to match the naming standard.`
 
 </details>
 

@@ -1,3 +1,7 @@
+---
+description: Add internal notes to an extra for context and traceability.
+---
+
 # Notes
 
 ### Overview
@@ -20,32 +24,14 @@ Common use cases:
 * **Change log**: Why a price, resource, or allotment was changed.
 * **Team instructions**: What to do during cancellations, re-bookings, or manual handling.
 
-### Field guide
-
 <figure><img src="../../.gitbook/assets/image (585).png" alt=""><figcaption></figcaption></figure>
-
-Use the UI elements above the text area to confirm you are writing in the right place.
-
-**A. Product Identification (Header)**
-
-* Product Name: `20kg Bagage inkl max 5kg håndbagage`
-* System Code: `XBAG_JTD_S_20KG`
-
-**B. Brands Context**
-
-Above the notes field, you will see various brand divisions (e.g., _Tourpaq DK_, _Tourpaq SE_, _Tourpaq Live_).
-
-* Status Indicators: For example, "For sale+Int" on _Tourpaq DK_ means the product is active for that specific Brand.
-* Instruction: Notes are usually shared across brands. If your note only applies to one Brand, start the note with the brand name (for example: `Tourpaq SE:`).
-
-**C. The "Enter notes..." Text Area**
 
 * Input Type: Free-form text.
 * Usage Instructions:
   1. **Be concise**: Write clear, actionable information.
   2. **Timestamp entries**: Start with date + initials.
   3. **Keep it product-level**: Avoid customer-specific information.
-  4. **Save your changes**: Use **Save**/**Update** after editing. The field may not auto-save.
+  4. **Save your changes**: Use **Save** after editing. The field may not auto-save.
 
 #### Recommended note format
 
@@ -90,7 +76,7 @@ Start the note with the brand name (for example `Tourpaq SE:`) so it’s clear.
 
 Avoid:
 
-* Passenger PII (names, passports, phone numbers, emails)
+* Passenger personal data (names, passports, phone numbers, emails)
 * Payment details
 * Anything that belongs in a booking-specific service case
 
@@ -102,7 +88,7 @@ Avoid:
 
 Most often, the page wasn’t saved.
 
-After editing the Notes text area, click **Save** or **Update** on the page.
+After editing the Notes text area, click **Save.**
 
 </details>
 
