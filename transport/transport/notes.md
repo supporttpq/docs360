@@ -23,7 +23,7 @@ Use Notes for:
 Notes are internal. They are not shown to customers or external agents.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 * This is a free-text field for your team.
 * Write clear, actionable information.

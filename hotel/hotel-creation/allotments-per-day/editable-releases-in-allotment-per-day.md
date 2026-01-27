@@ -17,9 +17,9 @@ Use editable releases to:
 
 This is operational tooling. It avoids changing the underlying contract.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### Screen structure
+### Fields
 
 The screen is divided into three main areas:
 
@@ -124,7 +124,7 @@ By default, undoing a release restores all released rooms unless adjusted.
 
 ### Bulk updates (Change Value tool)
 
-<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The Change Value tool can be used to:
 
@@ -138,7 +138,7 @@ This is useful when correcting releases across many dates or room types.
 
 ### Activity log
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 All changes made to release data in Allotment per Day are logged.
 
