@@ -2,14 +2,14 @@
 
 ### Overview
 
-The **Reserve rooms for stay length**s feature allows agencies to reserve hotel rooms for guests on specific arrival days, **independent of transport**.&#x20;
+The **Reserve rooms for stay lengths** feature allows agencies to reserve hotel rooms for guests on specific arrival days, **independent of transport**.
 
 This is useful in cases where:
 
 * A destination has multiple transports arriving on the same day.
 * Agencies want to reserve rooms for arrivals on a certain weekday (e.g., Friday), regardless of which transport the guests use.
 * Room reservations need to be managed by **stay duration** (e.g., reserving rooms for long stays vs. short stays).
-* The agency protects the rooms from being booked in between their normal charter flights, thus using the rooms every day.
+* The agency protects the rooms from being booked between its normal charter flights, thus using the rooms every day.
 
 {% hint style="warning" %}
 This option requires **Room Occupancy** to be enabled by a **superadmin**.
@@ -18,7 +18,7 @@ This option requires **Room Occupancy** to be enabled by a **superadmin**.
 ### How to access
 
 1. Go to **Hotel → Allotment per day**.
-2. Open **Search with Stay Lenght**.
+2. Open **Search with Stay Length**.
 3. Find **Reserve rooms for stay lengths**.
 
 {% hint style="info" %}
@@ -45,16 +45,16 @@ This lets you “hold back” rooms for specific durations.
 | GUARANTEED    | The number of guaranteed rooms                                                                                                                                                                                                |
 | BOOK          | Rooms booked for the date.                                                                                                                                                                                                    |
 | FREE          | Rooms still available (`NO. - BOOK`).                                                                                                                                                                                         |
-| DAYS          | <p>The number of days before arrival, the release is executed (only daily releases).<br>The cell is empty if no release rules are defined.<br>The cell is editable, allowing the release days to be edited.</p>             |
+| DAYS          | <p>The number of days before arrival, the release is executed (only daily releases).<br>The cell is empty if no release rules are defined.<br>The cell is editable, allowing the release days to be edited.</p>               |
 | R             | <p>If the release is executed, the box is checked, and the release can be undone by removing the checkmark.</p><p>When a release is undone, edit DAYS with the new deadline and update AR and SR to make rooms available.</p> |
-| AR            | <p>The number of allotment rooms released. </p><p>Edit AR when a release is undone to adjust the number of rooms moved back.</p>                                                                                              |
-| SR            | <p>The number of secured rooms released.<br>Edit SR when a release is undone to adjust the number of rooms moved back</p>                                                                                                    |
+| AR            | <p>The number of allotment rooms released.</p><p>Edit AR when a release is undone to adjust the number of rooms moved back.</p>                                                                                               |
+| SR            | <p>The number of secured rooms released.<br>Edit SR when a release is undone to adjust the number of rooms moved back.</p>                                                                                                    |
 | PAX 1 - PAX 4 | Max rooms by occupancy (1–4 pax).                                                                                                                                                                                             |
 | MIN           | Minimum stay (nights).                                                                                                                                                                                                        |
 | STAY LENGTH   | Columns where you reserve rooms per stay length.                                                                                                                                                                              |
 
 {% hint style="warning" %}
-**Stay length (5,6,7,8)**: Hover a cell to see reserved, booked, available, and free rooms for that stay length.
+**Stay length (5, 6, 7, 8)**: Hover a cell to see reserved, booked, available, and free rooms for that stay length.
 {% endhint %}
 
 <figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
@@ -72,7 +72,7 @@ The tooltip helps you interpret what the cell value actually means.
 Stay length reservations are applied per eligible transport interval.
 {% endhint %}
 
-For each possible duration (based on the eligible transport intervals), rooms can be reserved for a specific arrival day. For example, if three transports arrive on Friday with durations of 5,6,7, and 8 days, rooms can be reserved for that Friday separately for each duration.
+For each possible duration (based on the eligible transport intervals), rooms can be reserved for a specific arrival day. For example, if three transports arrive on Friday with durations of 5, 6, 7, and 8 days, rooms can be reserved for that Friday separately for each duration.
 
 The **Free Hotel Allotment (FHA)** in the price list represents the total of **Available** plus **Free** rooms.
 
@@ -83,14 +83,12 @@ The **Free Hotel Allotment (FHA)** in the price list represents the total of **A
 * Updates to the price list, including **Free Hotel Allotment (FHA)** values, may take a few minutes to be reflected in the system.
 {% endhint %}
 
-In Tourpaq there is a service called FRC (free room count) that runs between 2 minutes and up to several hours, depending on how many tasks are in the database.&#x20;
+In Tourpaq, there is a service called FRC (free room count) that runs between 2 minutes and up to several hours, depending on how many tasks are in the database.
 
-Depending on the FRC and the Elastic search engine, it depends on how long before a setting takes effect when attempting to make a reservation:
+How long a change takes to apply depends on FRC and the Elastic search engine:
 
-* in office takes effect immediately&#x20;
-* in site you have to wait for price list update (only after running FRC + Elastic).
-
-
+* In Office, it takes effect immediately.
+* On Site, you must wait for the price list update (only after running FRC + Elastic).
 
 ### Reserve rooms (workflow)
 
@@ -106,7 +104,7 @@ Go to **Hotel → Allotment per day**.
 
 Select the arrival **Date** and **Room**.
 
-Run the **Search with Stay Lenghts**
+Run the **Search with Stay Length**.
 {% endstep %}
 
 {% step %}
@@ -121,3 +119,51 @@ Use this when you need to protect long stays or short stays.
 ### Save
 {% endstep %}
 {% endstepper %}
+
+### FAQ
+
+<details>
+
+<summary>Why can’t I see “Reserve rooms for stay lengths”?</summary>
+
+This option requires **Room Occupancy** to be enabled by a **superadmin**.
+
+</details>
+
+<details>
+
+<summary>What does a stay length cell value represent?</summary>
+
+It is the number of rooms **reserved** for that arrival day and stay length.
+
+Hover the cell to see reserved, booked, available, and free rooms.
+
+</details>
+
+<details>
+
+<summary>Does this depend on transport?</summary>
+
+You reserve rooms independently of transport selection.
+
+Tourpaq still evaluates eligible transport intervals to determine valid stay lengths.
+
+</details>
+
+<details>
+
+<summary>Why do I need to wait before I see the effect on Site?</summary>
+
+Office updates apply immediately.
+
+Site availability depends on price list updates after FRC + Elastic.
+
+</details>
+
+<details>
+
+<summary>Why is the “Booked rooms” number higher than expected?</summary>
+
+Booked rooms include bookings with a stay length equal to the current stay length, or a multiple of it.
+
+</details>
