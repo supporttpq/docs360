@@ -29,7 +29,7 @@ If you need the basics of the daily allotment screen first, see [Allotments per 
 
 You reserve rooms for an **arrival day** and a **stay length**.
 
-This lets you “hold back” rooms for specific durations.
+This lets you reserve rooms for specific durations.
 
 <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
@@ -74,6 +74,12 @@ Stay length reservations are applied per eligible transport interval.
 
 For each possible duration (based on the eligible transport intervals), rooms can be reserved for a specific arrival day. For example, if three transports arrive on Friday with durations of 5, 6, 7, and 8 days, rooms can be reserved for that Friday separately for each duration.
 
+{% hint style="info" %}
+**Important:** When a room is reserved for a specific stay length and arrival day, for example a **7-day stay**, the room is also considered reserved for **any multiple of that stay length** (such as 14 or 21 days).
+
+The same rule applies to the **number of booked rooms**. The booked value reflects not only the exact stay length, but also all multiples of that stay length.
+{% endhint %}
+
 The **Free Hotel Allotment (FHA)** in the price list represents the total of **Available** plus **Free** rooms.
 
 <figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
@@ -89,36 +95,6 @@ How long a change takes to apply depends on FRC and the Elastic search engine:
 
 * In Office, it takes effect immediately.
 * On Site, you must wait for the price list update (only after running FRC + Elastic).
-
-### Reserve rooms (workflow)
-
-{% stepper %}
-{% step %}
-### Open the screen
-
-Go to **Hotel → Allotment per day**.
-{% endstep %}
-
-{% step %}
-### Pick date and room
-
-Select the arrival **Date** and **Room**.
-
-Run the **Search with Stay Length**.
-{% endstep %}
-
-{% step %}
-### Enter stay length reservations
-
-In the **Stay length** columns, enter how many rooms you want reserved.
-
-Use this when you need to protect long stays or short stays.
-{% endstep %}
-
-{% step %}
-### Save
-{% endstep %}
-{% endstepper %}
 
 ### FAQ
 
