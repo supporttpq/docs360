@@ -193,6 +193,10 @@ In this case PM1 will be updated when:
 * Changing **Transport Costs**
 * Editing **Discounts, Supplements, or Extras**
 
+{% hint style="danger" %}
+At this moment, the system allows for handling different profit margins (percentage and amount - based rules). It is recommended to use the same profit margin type when creating a rule for correct calculation.
+{% endhint %}
+
 ### FAQ
 
 1. **What’s the difference between Profit Margin Rules and editing the Price List manually?**\
