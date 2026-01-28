@@ -12,7 +12,7 @@ Tourpaq supports only a limited set of updates coming from Amadeus. While name u
 
 Examples of unsupported changes include:
 
-* Changing title (for example MR to MRS)
+* Changing titles (for example MR to MRS)
 * Changing the number of passengers
 
 In these cases, the recommended workflow is to disconnect the PNR, perform the required adjustments independently in both systems, and then reassign the PNR to the booking.
@@ -58,42 +58,40 @@ The booking returns to a standard editable state, similar to a non-GDS booking.
 
 1. Open the booking in Tourpaq
 2. Go to the GDS tab
-3.  Click **Disconnect PNR**&#x20;
+3.  Click **Disconnect PNR**
 
     <figure><img src="../../.gitbook/assets/image (589).png" alt=""><figcaption></figcaption></figure>
-4.  Confirm the action&#x20;
+4.  Confirm the action
 
     <figure><img src="../../.gitbook/assets/image (590).png" alt=""><figcaption></figcaption></figure>
 5. Apply the required changes:
    * Update passengers or titles in Tourpaq
-   *   Apply corresponding changes in Amadeus if needed&#x20;
+   *   Apply corresponding changes in Amadeus if needed
 
        <figure><img src="../../.gitbook/assets/image (591).png" alt=""><figcaption></figcaption></figure>
-
-
-6. Save the booking after the changes were made.
-7.  Reassign the PNR to the booking and continue the synchronization.&#x20;
+6. Save the booking after making the changes.
+7.  Reassign the PNR to the booking and continue the synchronization.
 
     <figure><img src="../../.gitbook/assets/image (592).png" alt=""><figcaption></figcaption></figure>
 
-For a PNR to be assigned to Amadeus it must:
+For a PNR to be assigned to Amadeus, it must meet these criteria:
 
 * have the same number of passengers
 * have the same number of passengers per gender
 * have the same departure and arrival
 * have the same departure date and arrival date
 
-If one of these criteria is not eligible then the system will display an error message.
+If one of these criteria is not met, the system will display an error message.
 
-Example: In the original booking, there are 2 MR passenger:&#x20;
+Example: In the original booking, there are 2 MR passengers:
 
 <figure><img src="../../.gitbook/assets/image (593).png" alt=""><figcaption></figcaption></figure>
 
-and we cheanged one of them with a MS passenger
+And we changed one of them to an MS passenger:
 
 <figure><img src="../../.gitbook/assets/image (594).png" alt=""><figcaption></figcaption></figure>
 
-when we will try to asign the PNR we will receive an warning message and the PNR will not be assigned:&#x20;
+When we try to assign the PNR, we will receive a warning message and the PNR will not be assigned:
 
 <figure><img src="../../.gitbook/assets/image (595).png" alt=""><figcaption></figcaption></figure>
 
@@ -105,17 +103,36 @@ when we will try to asign the PNR we will receive an warning message and the PNR
 
 ### Cancel booking in Amadeus
 
-To cancel a booking in Amadeus we need to follow some steps:
+To cancel a booking in Amadeus, follow these steps:
 
 * Open the booking in **Tourpaq**
 * Go to the **GDS tab**
-*   Assign the **PNR Code**&#x20;
+*   Assign the **PNR Code**
 
     <figure><img src="../../.gitbook/assets/image (597).png" alt=""><figcaption></figcaption></figure>
-*   Click on **Cancel Booking**&#x20;
+*   Click on **Cancel Booking**
 
     <figure><img src="../../.gitbook/assets/image (596).png" alt=""><figcaption></figcaption></figure>
+* Confirm the action
 
+### FAQ
 
-* Confirm the acion
+#### Does disconnecting a PNR cancel anything in Amadeus?
 
+No. Disconnecting only removes the link in Tourpaq. The Amadeus PNR stays unchanged.
+
+#### Can I reconnect the same PNR later?
+
+Yes. Reassign the PNR from the booking’s **GDS** tab. The PNR must match the criteria listed above.
+
+#### What changes can I make in Tourpaq after disconnecting?
+
+You can edit passenger details, adjust passenger count, change titles, and cancel the Tourpaq booking without affecting the Amadeus PNR.
+
+#### Why can’t I reassign the PNR after changing titles?
+
+Reassignment requires the same passenger count and the same passenger distribution per gender. If these do not match, Tourpaq blocks reassignment.
+
+#### Will Tourpaq keep syncing with Amadeus after disconnect?
+
+No. Tourpaq stops receiving GDS updates until the PNR is reassigned.
