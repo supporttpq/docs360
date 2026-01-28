@@ -52,7 +52,7 @@ Create the booking like a normal booking. Pick transport, accommodation, and pas
 
 Submit from the **GDS** tab in the booking.
 
-See: [Submit a GDS Booking](submit-a-gds-booking.md).
+See: [Submit a GDS Booking](submit-a-gds-booking/).
 {% endstep %}
 
 {% step %}
