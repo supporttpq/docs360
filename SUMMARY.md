@@ -246,7 +246,7 @@
   * [Automatic Seating](transport/transport/automatic-seating.md)
   * [Communication](transport/transport/communication.md)
   * [Documents](transport/transport/documents.md)
-  * [Passengers informations](transport/transport/passengers-informations.md)
+  * [Passenger information](transport/transport/passengers-informations.md)
   * [Notes](transport/transport/notes.md)
   * [Transport Reporting](transport/transport/transport-reporting.md)
   * [Transport Allotment adjustment for Dynamic Transport](transport/transport/transport-allotment-adjustment-for-dynamic-transport.md)

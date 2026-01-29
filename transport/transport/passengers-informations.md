@@ -1,4 +1,4 @@
-# Passengers informations
+# Passenger information
 
 ### **Overview**
 
@@ -12,14 +12,14 @@ The **Passenger Information** section is used to define informational notes or e
 
 ### **Tabs**
 
-At the top, you can switch between different **brands.**\
+At the top, you can switch between different **brands**.\
 Each brand can have its own passenger information messages and settings.
 
 ### **Fields Explanation**
 
 <figure><img src="../../.gitbook/assets/image (399).png" alt=""><figcaption></figcaption></figure>
 
-<table data-header-hidden><thead><tr><th width="310.25"></th><th></th></tr></thead><tbody><tr><td><strong>Field</strong></td><td><strong>Description</strong></td></tr><tr><td><strong>Stay From / Stay To</strong></td><td>Defines the date range for passenger stay. The message will apply only to passengers staying within this period.</td></tr><tr><td><strong>Booking Date From / To</strong></td><td>Defines the date range for when the booking was made. Only bookings created in this range will receive the message.              </td></tr><tr><td><strong>Information</strong></td><td>The message text that will be shown to passengers. Example: <em>“Please arrive at the airport 2 hours before departure.”</em></td></tr><tr><td><strong>Acknowledge</strong></td><td>Indicates whether the passenger must acknowledge or confirm they have read the information. When enabled (✔), the system requires confirmation from the passenger.</td></tr><tr><td><strong>Edit / Delete</strong></td><td>Use the pencil icon ✏️ to edit or the trash icon 🗑️ to delete an entry.</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="310.25"></th><th></th></tr></thead><tbody><tr><td><strong>Field</strong></td><td><strong>Description</strong></td></tr><tr><td><strong>Stay From / Stay To</strong></td><td>Defines the stay date range. The message applies only to passengers staying within this period.</td></tr><tr><td><strong>Booking Date From / To</strong></td><td>Defines the booking creation date range. Only bookings created in this range will receive the message.</td></tr><tr><td><strong>Information</strong></td><td>The message text that will be shown to passengers. Example: <em>“Please arrive at the airport 2 hours before departure.”</em></td></tr><tr><td><strong>Acknowledge</strong></td><td>Indicates whether the passenger must acknowledge or confirm they have read the information. When enabled (✔), the system requires confirmation from the passenger.</td></tr><tr><td><strong>Edit / Delete</strong></td><td>Use the pencil icon ✏️ to edit or the trash icon 🗑️ to delete an entry.</td></tr></tbody></table>
 
 ### **Buttons**
 
@@ -32,22 +32,22 @@ Each brand can have its own passenger information messages and settings.
 
 For the transport **BLLCHQ-M1**, a passenger message was created with the following details:
 
-| **Field**         | **Value**               |
-| ----------------- | ----------------------- |
-| Stay From         | 20-10-2025              |
-| Stay To           | 31-10-2025              |
-| Booking Date From | 01-10-2025              |
-| Booking Date To   | 19-10-2025              |
-| Information       | Transport Erata Default |
-| Acknowledge       | Enabled ✔               |
+| **Field**         | **Value**                |
+| ----------------- | ------------------------ |
+| Stay From         | 20-10-2025               |
+| Stay To           | 31-10-2025               |
+| Booking Date From | 01-10-2025               |
+| Booking Date To   | 19-10-2025               |
+| Information       | Transport Errata Default |
+| Acknowledge       | Enabled ✔                |
 
-This means all passengers traveling on this route between **20 October 2025 - 31 October 2025**, whose bookings were created in the same period, will receive the message _“Transport Erata Default.”_
+This means all passengers traveling on this route between **20 October 2025 - 31 October 2025**, whose bookings were created between **01 October 2025 - 19 October 2025**, will receive the message _“Transport Errata Default.”_
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-The text from Passenger information will also be visible on the ticket:
+The text from Passenger Information will also be visible on the ticket:
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -56,3 +56,17 @@ The text from Passenger information will also be visible on the ticket:
 * Different brands can have unique messages per transport and date range.
 * The system ensures passengers see only messages relevant to their booking.
 * You can define multiple records with overlapping or distinct date ranges for flexibility.
+
+### FAQ
+
+**Where is the message shown to the passenger?**\
+It is shown to the passenger during the booking flow (depending on your setup) and it is also printed on the ticket.
+
+**What does Acknowledge do?**\
+When enabled, the passenger must confirm they have read the message before continuing.
+
+**Can I create multiple messages for the same transport?**\
+Yes. You can create multiple records with different or overlapping date ranges.
+
+**Why don’t I see my message on a booking?**\
+Most often, the booking date or stay dates are outside the ranges you configured, or you are viewing a different brand.
