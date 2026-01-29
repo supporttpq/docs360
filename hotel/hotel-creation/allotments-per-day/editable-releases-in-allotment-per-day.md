@@ -17,7 +17,7 @@ Use editable releases to:
 
 This is operational tooling. It avoids changing the underlying contract.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Fields
 

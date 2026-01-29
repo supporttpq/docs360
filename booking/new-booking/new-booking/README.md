@@ -240,7 +240,9 @@ After the user selects **Take Allotment**, the system updates the **Total Amount
     5. Categories with the **same order number**\
        Sorted alphabetically&#x20;
 
-    \- If the "Order extras in the booking window" option is not enabled in the system setup, the extras will be arranged according to the old ordering (before transportation, there will be all products that are not related to the hotel or transportation)
+    \- _If the "Order extras in the booking window" option is not enabled in the system setup, the new extras will be arranged according to the old ordering :_&#x20;
+
+    <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 3. Add **Discounts/Supplements**:
    * Click **Show/Hide Discount/Supplements**.
    * Click **Add Discount/Supplement**.
@@ -314,7 +316,7 @@ The **Total Profit** is displayed when expanding the green area that shows the T
 
 The **Cancel passenger or booking** button allows users to cancel an entire booking or remove individual passengers from a booking, depending on the situation. It is located at the bottom-right corner of the **Booking → Overview → Passengers** section.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Overview**
 
@@ -344,7 +346,7 @@ Use this button when:
 
 Click **Cancel passenger or booking** in the bottom-right corner.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **3. Choose the cancellation type**
 
