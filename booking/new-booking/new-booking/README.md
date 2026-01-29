@@ -240,7 +240,7 @@ After the user selects **Take Allotment**, the system updates the **Total Amount
     5. Categories with the **same order number**\
        Sorted alphabetically&#x20;
 
-    \- _If the "Order extras in the booking window" option is not enabled in the system setup, the new extras will be arranged according to the old ordering :_&#x20;
+    \- If the "Order extras in the booking window" option is not enabled in the system setup, the new extras will be arranged according to the old ordering :&#x20;
 
     <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 3. Add **Discounts/Supplements**:
