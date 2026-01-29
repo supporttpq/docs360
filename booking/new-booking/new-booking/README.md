@@ -215,40 +215,45 @@ After the user selects **Take Allotment**, the system updates the **Total Amount
 <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Edit **Passenger details**:
-   * Gender, First Name, Last Name, Age.
-2.  Add **Extras**:
+   *   Gender, First Name, Last Name, Age.
 
-    * Per passenger, or use the yellow **C** icon to apply extras to all eligible passengers.
-    * If the "Order extras in the booking window" option is activated in the system setup, the extras will be sorted according to the Category Order value.
+       *   Add **Extras**:
 
-    <figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+           * Per passenger, or use the yellow **C** icon to apply extras to all eligible passengers.
+             * If the "Order extras in the booking window" option is activated in the system setup, the extras will be sorted according to the Category Order value.
+
+           <figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
-    #### Sorting rules
+           #### Sorting rules
 
-    Categories are sorted as follows:
+           Categories are sorted as follows:
 
-    1. Categories with **Category order booking < 10**\
-       Displayed before TRANSPORT
-    2. Categories with **Category order booking between 10 and 19**\
-       Displayed before HOTEL and ROOM
-    3. Categories with **Category order booking ≥ 20**\
-       Displayed after HOTEL and ROOM
-    4. Categories **without a Category order booking value**\
-       Displayed last
-    5. Categories with the **same order number**\
-       Sorted alphabetically&#x20;
+           1. Categories with **Category order booking < 10**\
+              Displayed before TRANSPORT
+           2. Categories with **Category order booking between 10 and 19**\
+              Displayed before HOTEL and ROOM
+           3. Categories with **Category order booking ≥ 20**\
+              Displayed after HOTEL and ROOM
+           4. Categories **without a Category order booking value**\
+              Displayed last
+           5. Categories with the **same order number**\
+              Sorted alphabetically&#x20;
 
-    \- If the "Order extras in the booking window" option is not enabled in the system setup, the new extras will be arranged according to the old ordering :&#x20;
+           &#x20;  &#x20;
 
-    <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
-3. Add **Discounts/Supplements**:
+           * &#x20;If the "Order extras in the booking window" option is not enabled in the system setup, the new extras will be arranged according to the old ordering :&#x20;
+
+       <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+
+2. Add **Discounts/Supplements**:
    * Click **Show/Hide Discount/Supplements**.
    * Click **Add Discount/Supplement**.
    * Select available options for one or all passengers.
    * Multiple discounts or supplements can be added simultaneously.
-4. Click **Save Passenger** to save changes.
+3. Click **Save Passenger** to save changes.
 
 {% hint style="success" %}
 The **Total Amount** updates instantly whenever the user modifies any passenger-related information:
