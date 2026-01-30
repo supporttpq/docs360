@@ -141,6 +141,16 @@ See [Allotments per day](../allotments-per-day/).
 * Allotment per Day values override the release defined in the contract
 * Releases can be adjusted quickly at room and day level
 
+### How does the release work (value calculations)
+
+This section documents the system behavior during the "Release" execution, comparing the pre-release state and the post-release state.
+
+<figure><img src="../../../.gitbook/assets/image (598).png" alt=""><figcaption><p>Before Release</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (599).png" alt=""><figcaption><p>After Release</p></figcaption></figure>
+
+<table><thead><tr><th width="148.7777099609375">Field</th><th width="149.77783203125">Before Release</th><th width="140.3333740234375">After Release</th><th>Formula after release</th></tr></thead><tbody><tr><td>NO</td><td>100</td><td>10</td><td>= Max(Book vs Guarantee)</td></tr><tr><td>SECURED</td><td>20</td><td>10</td><td></td></tr><tr><td>GUARANTEED</td><td>0</td><td>0</td><td></td></tr><tr><td>BOOK</td><td>10</td><td>10</td><td></td></tr><tr><td>AR</td><td>0</td><td>90</td><td>= NO Before release - NO After release</td></tr><tr><td>SR</td><td>0</td><td>10 </td><td>= Min(Secured vs NO After release)</td></tr></tbody></table>
+
 ### FAQ
 
 #### Who can create or change release rules?
