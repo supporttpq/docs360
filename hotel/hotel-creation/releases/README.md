@@ -151,6 +151,27 @@ This section documents the system behavior during the "Release" execution, compa
 
 <table><thead><tr><th width="135.4443359375">Field</th><th width="100.888916015625">Before Release</th><th width="101.4444580078125">After Release</th><th>Formula after release</th></tr></thead><tbody><tr><td>NO</td><td>100</td><td>10</td><td>= Max(Book vs Guarantee)</td></tr><tr><td>SECURED</td><td>20</td><td>10</td><td>= Min(Secured vs NO After Release)</td></tr><tr><td>GUARANTEED</td><td>0</td><td>0</td><td>Remain unchanged</td></tr><tr><td>BOOK</td><td>10</td><td>10</td><td>Remain unchanged</td></tr><tr><td>AR</td><td>0</td><td>90</td><td>= NO Before release - NO After release</td></tr><tr><td>SR</td><td>0</td><td>10 </td><td>= Secured Before release - Secured After release)</td></tr></tbody></table>
 
+### Release Behavior When Editing DAYS
+
+When editing the **DAYS** value for a release, some of the affected dates may already be in the past. In this situation, the system will not clear the release checkbox if Current Date + custom days is earlier than the allotment date.&#x20;
+
+As a result, those past dates remain marked as released. Only dates that fall after the calculated release threshold will have the **Release** flag removed.
+
+**Example:**
+
+* Today’s date is **February 2**.
+*   All February dates are set to be unreleased, and the release period is changed to 7 **days**.&#x20;
+
+    <figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+*   According to the general rule, releases would normally start from **Current day (February 2)+ 30 days**.&#x20;
+
+    <figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+*   However, February has a custom release configuration, so the system instead applies **February 2 + 7 days**, which results in February **9**.&#x20;
+
+    <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+Because the release calculation uses **February 2 + 7 days (February 9)** due to the custom configuration, any dates **before February 9** will remain marked as released. Only dates **from February 9 onward** will have the **Release** flag removed.
+
 ### FAQ
 
 #### Who can create or change release rules?

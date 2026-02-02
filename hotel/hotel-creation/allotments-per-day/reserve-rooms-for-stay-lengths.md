@@ -31,7 +31,7 @@ You reserve rooms for an **arrival day** and a **stay length**.
 
 This lets you reserve rooms for specific durations.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Fields
 
@@ -57,7 +57,7 @@ This lets you reserve rooms for specific durations.
 **Stay length (5, 6, 7, 8)**: Hover a cell to see reserved, booked, available, and free rooms for that stay length.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The tooltip helps you interpret what the cell value actually means.
 
