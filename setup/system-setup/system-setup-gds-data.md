@@ -34,7 +34,7 @@ The **GDS Data** section configures Tourpaq to integrate with Global Distributio
 
 | **Setting**                                    | **Description**                                            |
 | ---------------------------------------------- | ---------------------------------------------------------- |
-| **Use Division PNR by Classes**                | Divide bookings by classes to optimize pricing.            |
+| **Use Division PNR by Classes**                | Divides bookings by class to optimize pricing.             |
 | **Don’t Update DTS on Create GDS Reservation** | Prevents changes to DTS when a GDS reservation is created. |
 
 ***
@@ -44,3 +44,45 @@ The **GDS Data** section configures Tourpaq to integrate with Global Distributio
 * All fields are mandatory for proper GDS integration.
 * Incorrect credentials or configuration may prevent bookings or ticket generation.
 * Administrators should verify all settings before enabling GDS operations.
+
+### **FAQ**
+
+<details>
+
+<summary><strong>What is a PNR?</strong></summary>
+
+PNR stands for **Passenger Name Record**.
+
+It is the booking record stored in the GDS.
+
+</details>
+
+<details>
+
+<summary><strong>Which settings are most critical to verify first?</strong></summary>
+
+Start with the provider credentials (**User / Password**, **Branch**, **PCC**) and the **Queue Number**.
+
+These commonly cause authentication and ticketing failures.
+
+</details>
+
+<details>
+
+<summary><strong>Why don’t I see ticket numbers on printed tickets?</strong></summary>
+
+Enable **Show Ticket Number on Ticket**.
+
+Also confirm the booking has been ticketed in the provider.
+
+</details>
+
+<details>
+
+<summary><strong>What does “Days Number for Ticketing” control?</strong></summary>
+
+It controls how many days after reservation creation ticketing is allowed.
+
+After that window, ticketing may be blocked by process or policy.
+
+</details>

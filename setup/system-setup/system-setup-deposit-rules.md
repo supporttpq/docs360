@@ -1,55 +1,123 @@
 # System Setup – Deposit Rules
 
-### **Overview**
+### Overview
 
-The Deposit Rules section in the System Setup module allows administrators to define and manage payment rules associated with bookings. These rules determine the amount and schedule of deposits, second payments, and final payments for bookings in the system. Each rule is tied to a specific booking date and can be enabled or disabled based on business requirements.
+Deposit Rules control **how much** customers must pay and **when** they must pay it.
 
-This feature ensures that payments are tracked correctly, helping to maintain cash flow, reduce booking cancellations, and provide clear guidelines for customer payments.
+Use them to set deposit amounts, optional second payments, and final payment deadlines.
 
-***
+Go to **Setup → System Setup → Deposit Rules**.
 
-### **Purpose**
+{% hint style="warning" %}
+Changes apply to new bookings and can affect payment reminders, exports, and cash flow.
 
-The purpose of Deposit Rules is to:
+Test changes on a safe booking flow when possible.
+{% endhint %}
 
-* Define the deposit amount (fixed value or percentage) required at the time of booking.
-* Set the second payment value and due date if applicable.
-* Control the timing of the final payment.
-* Enable or disable rules based on current policies.
-* Ensure consistent application of payment terms across bookings.
+### Purpose
 
-By using Deposit Rules, the finance team and booking agents can enforce payment schedules automatically, reducing errors and improving customer experience.
+Use Deposit Rules to:
 
-***
+* Define the deposit as a fixed amount or a percentage.
+* Set a second payment (optional) and its due date.
+* Define the final payment deadline (relative to departure).
+* Enable/disable rules without deleting them.
+* Keep payment terms consistent across bookings.
 
-### **Field Descriptions**
+### Screenshot
 
 <figure><img src="../../.gitbook/assets/image (355).png" alt=""><figcaption></figcaption></figure>
 
-| Field                    | Description                                                                                                                                                                      |
-| ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Booking Date**         | The date for which this deposit rule is applicable. This typically corresponds to the booking creation or start date of a package.                                               |
-| **Deposit Value**        | The fixed amount required as the first deposit at booking.                                                                                                                       |
-| **Deposit Percentage**   | The percentage of the total booking cost required as a deposit. Used when deposits are calculated as a percentage instead of a fixed value.                                      |
-| **Second Payment Value** | The amount required as the second payment, if applicable.                                                                                                                        |
-| **Disabled**             | Indicates if the rule is currently active or inactive. A green check (✔) means active, while a red cross (✖) means disabled. Disabled rules will not be applied to new bookings. |
-| **Deposit Due**          | The number of days after booking that the deposit must be paid.                                                                                                                  |
-| **Second Payment Due**   | The number of days after booking that the second payment must be paid.                                                                                                           |
-| **Last Payment Due**     | The number of days before the departure date that the last payment must be completed.                                                                                            |
-| **Delete (Trash Icon)**  | Allows administrators to delete a specific deposit rule. Use this with caution, as deleted rules cannot be recovered.                                                            |
+### Field descriptions
 
-***
+| Field                    | Description                                                                                                           |
+| ------------------------ | --------------------------------------------------------------------------------------------------------------------- |
+| **Booking Date**         | The booking date the rule applies to.                                                                                 |
+| **Deposit Value**        | Fixed deposit amount due at booking (or by the deposit due date).                                                     |
+| **Deposit Percentage**   | Deposit percentage of the booking total (used instead of Deposit Value).                                              |
+| **Second Payment Value** | The amount required as the second payment, if applicable.                                                             |
+| **Disabled**             | Turns the rule off. Disabled rules are not applied to new bookings.                                                   |
+| **Deposit Due**          | Days after booking when the deposit must be paid.                                                                     |
+| **Second Payment Due**   | Days after booking when the second payment must be paid.                                                              |
+| **Last Payment Due**     | Days before departure when the final payment must be completed.                                                       |
+| **Delete (Trash Icon)**  | Allows administrators to delete a specific deposit rule. Use this with caution, as deleted rules cannot be recovered. |
 
-### **Instructions for Use**
+### How to use
 
-1. Navigate to **System Setup → Deposit Rules**.
-2. Review the list of existing deposit rules. Each rule shows its booking date, payment values, due dates, and status.
-3. To **create a new deposit rule**, click the **Create** button in the top-right corner. Enter the following:
-   * Booking Date
-   * Deposit Value or Deposit Percentage
-   * Second Payment Value (if applicable)
-   * Payment due periods (Deposit, Second Payment, Last Payment)
-   * Set the rule as active or disabled
-4. To **edit an existing rule**, click the respective row or an "Edit" button if available (depending on system implementation).
-5. To **delete a rule**, click the trash icon at the end of the row. Confirm deletion to remove it permanently.
-6. Ensure all payment values and percentages are correct before saving. Incorrect rules can cause booking issues or payment discrepancies.
+1. Go to **Setup → System Setup → Deposit Rules**.
+2. Review existing rules (booking date, values, due dates, and status).
+3. To create a rule, click **Create** and enter:
+   * **Booking Date**
+   * **Deposit Value** or **Deposit Percentage**
+   * **Second Payment Value** (optional)
+   * Due dates: **Deposit Due**, **Second Payment Due**, **Last Payment Due**
+   * Set **Disabled** as needed
+4. To edit a rule, open the rule row and update the values.
+5. To delete a rule, click the trash icon and confirm.
+
+{% hint style="info" %}
+Prefer disabling old rules over deleting them.
+
+It keeps history clearer and avoids accidental loss.
+{% endhint %}
+
+### Related settings
+
+* [System Setup – Payment Rate Rules](system-setup-payment-rate-rules.md)
+* [System Setup – General Information Settings](system-setup-general-information-settings.md)
+
+### Troubleshooting
+
+* **Payments are not split as expected:** Check the configured [Payment Rate Rules](system-setup-payment-rate-rules.md).
+* **The rule doesn’t apply to new bookings:** Ensure it is not **Disabled**, and confirm the **Booking Date** rule match.
+* **Due dates look wrong:** Verify day offsets (after booking vs before departure).
+
+### FAQ
+
+<details>
+
+<summary><strong>What’s the difference between Deposit Rules and Payment Rate Rules?</strong></summary>
+
+Deposit Rules define **amounts/percentages** and **due dates**.
+
+Payment Rate Rules define **how many payments** are used (one, two, or three).
+
+</details>
+
+<details>
+
+<summary><strong>Do changes apply to existing bookings?</strong></summary>
+
+Typically, changes are intended for new bookings going forward.
+
+Validate on a test booking and confirm your operational process before changing live rules.
+
+</details>
+
+<details>
+
+<summary><strong>Should I use Deposit Value or Deposit Percentage?</strong></summary>
+
+Use **Deposit Percentage** when the deposit should scale with the booking total.
+
+Use **Deposit Value** when you want a fixed amount.
+
+</details>
+
+<details>
+
+<summary><strong>What does “Last Payment Due” mean?</strong></summary>
+
+It’s the number of days **before departure** when the final payment must be completed.
+
+</details>
+
+<details>
+
+<summary><strong>Should I delete old rules?</strong></summary>
+
+Usually no.
+
+Disable old rules instead, unless you are sure you do not need them.
+
+</details>
