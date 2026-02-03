@@ -1,107 +1,293 @@
 # Web Booking API flow
 
-Bellow is described the flow that should be used to implement the **Web Booking** page using API
+### Overview
 
-#### Request token[​](https://docs.tourpaq.com/docs/documentation/web-booking-api-flow#request-token) <a href="#request-token" id="request-token"></a>
+This page lists the usual API calls behind a web booking flow.
 
-The Token can be requested by calling /api/token using POST method.
+Follow the steps in order.
 
-Here is an example of the request token method using Fiddler:
+{% hint style="warning" %}
+Never expose your API **client secret** in a browser or mobile app.
 
-`POST` [`https://api.tourpaq.com/api/token`](https://api.tourpaq.com/api/token) `HTTP/1.1 User-Agent: Fiddler Host: api.tourpaq.com Accept: application/json, text/javascript,`` `_`/`_`; q=0.01 Content-Type: application/x-www-form-urlencoded; charset=UTF-8 Authorization: Basic Ym9va2luZy50b3VycGFxLmRrOjRkMjBlMDVlNDZmNmU0YjhlZGE5NWYzNDRlZGUxMGI1 Content-Length: 75 Origin: nullgrant_type=password&scope=read&username=myUsername&password=password123`
+Keep it on your server.
+{% endhint %}
 
-The response would be:
+### Flow in short
 
-"access\_token":"TM5yqqOSncppNvS0U8y6iH\_tP6u3Zl ... oXIy\_JRnZ2v2dEw", "token\_type":"bearer", "expires\_in":1799, "refresh\_token":"9cfc12729b8f4d85a4a078fdae204387"
+1. Request a token (log in).
+2. Request an offer (price and availability).
+3. Get the passenger list (and set names).
+4. Load postal codes (required to save).
+5. Load products and supplements.
+6. Save the booking.
 
-The request parameters:
+#### Request token <a href="#request-token" id="request-token"></a>
 
-* **grant\_type** - The type of authentication in this case **password** is implemented this indicate that a **username** and **password** is required.
-* **scope** - Is not really implemented. There are no restriction on this filed just pass the **read** it might be implemented in the future.
-* **username** - The username of the user
-* **password** - the password of the user
+Request a token by calling `/api/token` with `POST`.
 
-The Authorization Header must be sent using Basic realm and the value should be a base64 Encoded value which is composed by **client\_id** and **secret** separated by colon (:). Note that the client\_id and secret should not be stored on the client side for other to see. The best approach would be to request the token on the server side.
+You will use the returned `access_token` in later calls.
 
-`booking.tourpaq.dk:5ad20e05e46f6e4b8eda95f344eca10b5`
+For more details about authentication, see [Restful API authentication](../restful-api-authentication.md).
 
-The response is containing the following fields:
+Example request (placeholders):
 
-* **access\_token** - Is the token that will be used to authorize the other calls to the api
-* **token\_type** - Is the realm of the Authorization.
-* **expires\_in** - the Token expires in 1799 seconds.
-* **refresh\_token** - since the token it expires so fast this token can be used to get a new access token without passing the username and password every 30 minutes. This token must be held secured on the server side.
+```
+POST https://api.tourpaq.com/api/token
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Authorization: Basic <base64(client_id:secret)>
 
-#### Refresh Token[​](https://docs.tourpaq.com/docs/documentation/web-booking-api-flow#refresh-token) <a href="#refresh-token" id="refresh-token"></a>
+grant_type=password&scope=read&username=<username>&password=<password>
+```
 
-The access token expires every 20 minutes and is not sliding expiration. the best practice would be to save the refresh token obtained from request token call on the client session an use that to authenticate the user again . After login retry the call. This way the user will not have to type the user and password again. When the Access Token is expired you will receive and 401 unauthorized response. In this case a new Access Token should be requested. Here is an example of doing that:
+Example response:
 
-This is the 401 Unauthorized response
+```json
+{
+  "access_token": "<access_token>",
+  "token_type": "bearer",
+  "expires_in": 1799,
+  "refresh_token": "<refresh_token>"
+}
+```
+
+Request parameters:
+
+* **grant\_type** - Authentication type. `password` requires username and password.
+* **scope** - Not currently enforced. Use `read`.
+* **username** - The user name.
+* **password** - The password.
+
+The Authorization header uses Basic authentication.
+
+It is a Base64-encoded value built from `client_id:secret`.
+
+Do not store the client secret on the client side.
+
+Example format:
+
+`client_id:secret`
+
+Response fields:
+
+* **access\_token** - Token used to authorize other API calls.
+* **token\_type** - Authorization scheme (usually `bearer`).
+* **expires\_in** - Token lifetime in seconds.
+* **refresh\_token** - Used to request a new access token. Store it securely.
+
+#### Refresh token <a href="#refresh-token" id="refresh-token"></a>
+
+The access token expires after a short time.
+
+When it expires, the API returns `401 Unauthorized`.
+
+Use the `refresh_token` to request a new access token.
+
+Store refresh tokens securely.
+
+This is the `401 Unauthorized` response:
 
 `HTTP/1.1 401 Unauthorized Content-Type: application/json; charset=utf-8 Server: Microsoft-IIS/7.5 WWW-Authenticate: Bearer X-Powered-By: ASP.NET Date: Wed, 01 Apr 2015 07:54:55 GMT Content-Length: 163`
 
 In order to get a new access token:
 
-`POST` [`https://api.tourpaq.com/api/token`](https://api.tourpaq.com/api/token) `HTTP/1.1 User-Agent: Fiddler Host: api.tourpaq.com Accept: application/json, text/javascript,`` `_`/`_`; q=0.01 Content-Type: application/x-www-form-urlencoded; charset=UTF-8 Authorization: Basic Ym9va2luZy50b3VycGFxLmRrOjRkMjBlMDVlNDZmNmU0YjhlZGE5NWYzNDRlZGUxMGI1 Content-Length: 75 Origin: nullgrant_type=refresh_token&scope=read&refresh_token=9cfc12729b8f4d85a4a078fdae204387`
+```
+POST https://api.tourpaq.com/api/token
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Authorization: Basic <base64(client_id:secret)>
 
-#### Request offer[​](https://docs.tourpaq.com/docs/documentation/web-booking-api-flow#request-offer) <a href="#request-offer" id="request-offer"></a>
+grant_type=refresh_token&scope=read&refresh_token=<refresh_token>
+```
 
-The offer request will provide with general information about the trip package.
+#### Request offer <a href="#request-offer" id="request-offer"></a>
 
-This ordinary call to request offer:
+The offer call returns general information about the trip package.
+
+Example offer request:
 
 `GET` [`https://api.tourpaq.com/api/offers?pltaIDs=1241703&roomNo=1&priceType=1&periodID=1&adultNo=1&childNo=2&infantNo=1&childrenAges=9`](https://api.tourpaq.com/api/offers?pltaIDs=1241703\&roomNo=1\&priceType=1\&periodID=1\&adultNo=1\&childNo=2\&infantNo=1\&childrenAges=9) `HTTP/1.1 User-Agent: Fiddler AbsoluteLinks: true Accept: application/hal+json Authorization: Bearer mWHMYrMnLW ... U-GUVneEDsxYLUgWCYdcw Host: api.tourpaq.com`
 
-You can found more information about this call [https://api.tourpaq.com/help/api/offers](https://api.tourpaq.com/help/api/offers)
+You can find more information about this call here:
 
-1. pltaIDs is offer unique identifier. This can be a single integer or a list of integers separated by comma. In case the pltaIDs is a single integer value the following parameters will be a single integer value: roomNo, priceType, adultNo, childNo, infantNo. In case the pltaIDs has a list of integers (ex. 23,26 ) then the parameters roomNo, priceType, adultNo, childNo, infantNo will have a list of integers with the same length as pltaIDs parameter.
+https://api.tourpaq.com/help/api/offers
 
-Ex. a. pltaIDs=1241703,1241783\&roomNo=1,1\&priceType=1,1\&periodID=1\&adultNo=2,2\&childNo=0,1\&infantNo=1,0& childrenAges=9,1 b. pltaIDs=1241703,1241784\&roomNo=1,1\&priceType=1,1\&periodID=1\&adultNo=1,2\&childNo=2,1\&infantNo=1,0\&childrenAges=4,3,1|9
+`pltaIDs` is the offer identifier.
 
-In the example a. there are two room types one room each type (roomNo=1,1), each room has two adults (adultNo=2,2), only the second room has a child (childNo=0,1) and only the first room has one infant(infantNo=1,0) since there is just one child.
+It can be one value or a list of values separated by commas.
 
-In the example b. the childrenAges are split by a pipe to point out the room where the children will stay. The call will respond with a notificationStatus witch will be success, warning or error. The call will provide information about transport int filed help:transportavailability and for the hotel room in help:priceavailability.
+If `pltaIDs` is a list (for example `23,26`), these parameters must also be lists with the same number of values:
 
-#### Passenger distribution in rooms[​](https://docs.tourpaq.com/docs/documentation/web-booking-api-flow#passenger-distribution-in-rooms) <a href="#passenger-distribution-in-rooms" id="passenger-distribution-in-rooms"></a>
+* `roomNo`
+* `priceType`
+* `adultNo`
+* `childNo`
+* `infantNo`
 
-This call can be made asynchronous with offer call and it provides a list of passengers distributed in rooms based on query string. This list can be modified with real names. Products and supplements can be added or removed form individual passenger afterward the booking can be saved.
+Examples:
+
+*   Example A (two offers, one child in room 2):
+
+    ```
+    pltaIDs=1241703,1241783&roomNo=1,1&priceType=1,1&periodID=1&adultNo=2,2&childNo=0,1&infantNo=1,0&childrenAges=9,1
+    ```
+*   Example B (children split by room using `|`):
+
+    ```
+    pltaIDs=1241703,1241784&roomNo=1,1&priceType=1,1&periodID=1&adultNo=1,2&childNo=2,1&infantNo=1,0&childrenAges=4,3,1|9
+    ```
+
+In example (a), there are two room types.
+
+Each room has two adults.
+
+Only the second room has a child.
+
+Only the first room has an infant.
+
+In example (b), `childrenAges` uses `|` to separate children by room.
+
+The response includes a `notificationStatus` field that can be `success`, `warning`, or `error`.
+
+#### Passenger distribution in rooms <a href="#passenger-distribution-in-rooms" id="passenger-distribution-in-rooms"></a>
+
+This call returns a list of passengers distributed into rooms.
+
+You can call it at the same time as the offer call.
+
+You can then:
+
+* replace placeholder passenger names with real names
+* add or remove products and supplements per passenger
+* save the booking
 
 `GET` [`https://api.tourpaq.com/api/passengers?pltaIDs=1241703&roomNo=1&priceType=1&periodID=1&adultNo=1&childNo=2&infantNo=1&childrenAges=9,1&distribute=Manual`](https://api.tourpaq.com/api/passengers?pltaIDs=1241703\&roomNo=1\&priceType=1\&periodID=1\&adultNo=1\&childNo=2\&infantNo=1\&childrenAges=9,1\&distribute=Manual) `HTTP/1.1 User-Agent: Fiddler Host: api.tourpaq.com AbsoluteLinks: true Accept: application/hal+json Authorization: Bearer CS0V03QVH8 ... yNCFCUcZEbG8DL4U9qFXS`
 
-More information about this call can be found at: [https://api.tourpaq.com/help/api/wb-passengers](https://api.tourpaq.com/help/api/wb-passengers)
+More information:
 
-#### Postal codes[​](https://docs.tourpaq.com/docs/documentation/web-booking-api-flow#postal-codes) <a href="#postal-codes" id="postal-codes"></a>
+https://api.tourpaq.com/help/api/wb-passengers
 
-In order to save the booking postal code is mandatory. This call provide a list of postal codes. This call can be cached.
+#### Postal codes <a href="#postal-codes" id="postal-codes"></a>
+
+Postal code is required to save a booking.
+
+This call provides a list of postal codes.
+
+You can usually cache this response.
 
 `GET` [`https://api.tourpaq.com/api/postcode/countries`](https://api.tourpaq.com/api/postcode/countries) `HTTP/1.1 User-Agent: Fiddler AbsoluteLinks: true Accept: application/hal+json Authorization: Bearer CS0V03QVH8HBeECL ... CUcZEbG8DL4U9qFXS Host: api.tourpaq.com`
 
-More information about this call can be found at: [https://api.tourpaq.com/help/api/postalcode-countries](https://api.tourpaq.com/help/api/postalcode-countries)
+More information:
 
-#### Products[​](https://docs.tourpaq.com/docs/documentation/web-booking-api-flow#products) <a href="#products" id="products"></a>
+https://api.tourpaq.com/help/api/postalcode-countries
 
-Available product for current booking configuration
+#### Products <a href="#products" id="products"></a>
+
+Available products for the current booking configuration.
 
 `GET` [`https://api.tourpaq.com/api/relevantProduct?pltaIDs=1241703&roomNo=1&priceType=1&periodID=1&adultNo=1&childNo=2&infantNo=1&childrenAges=9,1`](https://api.tourpaq.com/api/relevantProduct?pltaIDs=1241703\&roomNo=1\&priceType=1\&periodID=1\&adultNo=1\&childNo=2\&infantNo=1\&childrenAges=9,1) `HTTP/1.1 User-Agent: Fiddler AbsoluteLinks: true Accept: application/hal+json Authorization: Bearer 4L6-8EyfvS ... ZNOW4-L4 Host: api.tourpaq.com`
 
-More information about this call can be found at: [https://api.tourpaq.com/help/api/wbrelevantproduct](https://api.tourpaq.com/help/api/wbrelevantproduct)
+More information:
 
-#### Supplements[​](https://docs.tourpaq.com/docs/documentation/web-booking-api-flow#supplements) <a href="#supplements" id="supplements"></a>
+https://api.tourpaq.com/help/api/wbrelevantproduct
 
-Available supplement for current booking configuration
+#### Supplements <a href="#supplements" id="supplements"></a>
+
+Available supplements for the current booking configuration.
 
 `GET` [`https://api.tourpaq.com/api/relevantSupplement?pltaIDs=1241703&roomNo=1&priceType=1&periodID=1&adultNo=1&childNo=2&infantNo=1&childrenAges=9,1`](https://api.tourpaq.com/api/relevantSupplement?pltaIDs=1241703\&roomNo=1\&priceType=1\&periodID=1\&adultNo=1\&childNo=2\&infantNo=1\&childrenAges=9,1) `HTTP/1.1 User-Agent: Fiddler AbsoluteLinks: true Accept: application/hal+json Authorization: Bearer 4L6-8EyfvSkhsF9M ... OW4-L4 Host: api.tourpaq.com`
 
-More information about this call can be found at: [https://api.tourpaq.com/help/api/svrelevantsupplement](https://api.tourpaq.com/help/api/svrelevantsupplement)
+More information:
 
-#### Save booking with no payment[​](https://docs.tourpaq.com/docs/documentation/web-booking-api-flow#save-booking-with-no-payment) <a href="#save-booking-with-no-payment" id="save-booking-with-no-payment"></a>
+https://api.tourpaq.com/help/api/svrelevantsupplement
 
-Save the booking or pending the booking to be saved after payment confirmation. In this case no payment is required so the booking will be saved on the spot.
+#### Save booking with no payment <a href="#save-booking-with-no-payment" id="save-booking-with-no-payment"></a>
 
-More information about this call can be found at: [https://api.tourpaq.com/help/api/attemptToSaveBooking](https://api.tourpaq.com/help/api/attemptToSaveBooking) Information about how the filed RawBookingJson can be constructed can be found here [https://api.tourpaq.com/Help/ResourceModel?modelName=BookingInformationRequestBody](https://api.tourpaq.com/Help/ResourceModel?modelName=BookingInformationRequestBody) The passenger filed can be filled from the response of the api/passengers call
+Use this call to save the booking right away when no payment is needed.
 
-`POST` [`https://api.tourpaq.com/api/attemptToSaveBooking/`](https://api.tourpaq.com/api/attemptToSaveBooking/) `HTTP/1.1 Connection: keep-alive Content-Length: 17542 Content-Type: application/json; charset=UTF-8 Accept: application/hal+json Accept-Language: da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7 Authorization: Bearer VREXm6eXsq8DU0weM77w ... nSVsJh5ipvTe1FWbA Host: api.tourpaq.com{ \"SaveTemporaryJson": true, "RawBookingJson": "{ "booking\" : \{ \"isLoaded\" : true, \"isSuccessfulyGenerated\" : true, \"adults\" : 2, \"children\" : 0, \"infants\" : 0, \"outboundTrAllId\" : 62199, \"homeboundTrAllId\" : 62200, \"periodId\" : 1, \"pltaID\" : [{ \"pltaId\" : 1422223, \"roomName\" : \"1-værelses lejlighed (2 personer)\", // truncated ... \} ], \"customer\" : { \"firstName\" : \"Olav\", \"lastName\" : \"Nygaard\", // truncated ... }, \"bonusCode\" : \"\", \"giftCardCode\" : \"\", \"passengers\" : [{ \"uniquePaxHash\" : \"NThlZTM3NGItZjU5OS00ZGVmLTlkZjEtOWI2MTE3NGRhMWU4\", \"ID\" : 0, \"index\" : 0, // truncated ... \"roomDetails\" : { \"isLocked\" : false, \"departureDate\" : \"2018-01-27T00:00:00\", // truncated ... }, \"extraBed\" : { \"discount\" : 0, // truncated ... }, \"transfer\" : { \"hasTransfer\" : false, // truncated ... }, \"pickupPoint\" : { \"nameWithPrice\" : \"undefined (NaN:NaN) - kr. \" }, \"selectedGenericAllotmentBindIDs\" : [], \"travelInsurance\" : { \"ID\" : 57, \"price\" : 0, // truncated ... }, \"cancellationInsurance\" : { \"hasCancelInsurance\" : false, // truncated ... }, \"travelAndCancellationInsurancesTotal\" : 0, \"selectedProducts\" : [{ \"isVisible\" : true, \"bindID\" : \"MzI5MzoyMDUxMDo=\", // truncated ... } ], \"selectedSupplements\" : [{ \"name\" : \"Olie- og Valutajusteringer\", // truncated ... } ], \"selectedDiscounts\" : [{ \"ID\" : 5017, // truncated ... } ], \"passengerRoomDiscount\" : { \"quantity\" : 1, // truncated ... }, \"additionalStuffPriceAccumulated\" : 199, \"totalIncludedInBasePriceProducts\" : 0, \"autoSelectedSupplementTotal\" : 181, \"total\" : 6499, \"selectedSeats\" : [], \"selectedAllotments\" : [], \"campaignDefinitionProductArray\" : [] }, { // truncated - passenger 2 ... } ], // truncated - passenger 2 ... \"saveBookingLink\" : \"/api/bookings/139\", \"waitListApproval\" : false, \"selectedCreditCardForPaymentForLogPurposes\" : \"\", }, \"payment\" : \"\" }" }`
+More information:
+
+* https://api.tourpaq.com/help/api/attemptToSaveBooking
+* https://api.tourpaq.com/Help/ResourceModel?modelName=BookingInformationRequestBody
+
+The passenger data can be filled from the `/api/passengers` response.
+
+Example request (headers only):
+
+```
+POST https://api.tourpaq.com/api/attemptToSaveBooking
+Content-Type: application/json; charset=UTF-8
+Authorization: Bearer <access_token>
+```
+
+{% hint style="warning" %}
+This call includes personal data (names, contact details, etc.).
+
+Avoid logging request bodies in plain text.
+{% endhint %}
 
 Flow on a single page Application
 
 ![!](https://docs.tourpaq.com/assets/images/webbooingload-db98adb0698c6da3281a8372d9919df9.png)
+
+### Related pages
+
+* [Restful API authentication](../restful-api-authentication.md)
+
+### FAQ
+
+<details>
+
+<summary><strong>Why do I get <code>401 Unauthorized</code>?</strong></summary>
+
+Most often, the access token expired.
+
+Refresh the token, then retry the call.
+
+</details>
+
+<details>
+
+<summary><strong>What is <code>pltaIDs</code>?</strong></summary>
+
+It is the offer identifier used to request pricing and availability.
+
+</details>
+
+<details>
+
+<summary><strong>Why do I need postal codes?</strong></summary>
+
+Postal code is required when you save a booking.
+
+Load postal codes before saving.
+
+</details>
+
+<details>
+
+<summary><strong>How do I handle multiple rooms in one call?</strong></summary>
+
+Use comma-separated lists for parameters like `pltaIDs`, `roomNo`, and passenger counts.
+
+Use `|` in `childrenAges` to split children by room.
+
+</details>
+
+<details>
+
+<summary><strong>Is it safe to store the client secret in a web app?</strong></summary>
+
+No.
+
+Keep the client secret on your server.
+
+</details>
+
+<details>
+
+<summary><strong>Where can I see all parameters and response fields for an endpoint?</strong></summary>
+
+Use the API help pages linked under each section.
+
+They list the full input and output for each endpoint.
+
+</details>

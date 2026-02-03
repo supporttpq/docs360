@@ -1,244 +1,382 @@
 # Autobilling
 
-**Overview**\
-The **Autobilling** feature allows Tourpaq to automatically generate invoices on behalf of creditors or suppliers. This automation streamlines the billing process and ensures invoices are created according to predefined schedules.
+### Overview
 
-**Purpose**\
-Autobilling reduces manual administrative work by automatically generating invoices for different cost types based on the data and costs already entered in the system.
+Autobilling creates supplier invoices automatically.
 
-**Details**\
-Invoice generation occurs automatically according to the schedule defined for each product category, such as hotels, extras, discounts, supplements, and handling fees.\
-The system supports the generation of the following invoice types:
+It uses the costs you already entered in Tourpaq.
 
-* **Hotel deposit invoice**
-* **Hotel early booking invoice**
-* **Hotel invoice**
-* **Extra invoice**
-* **Extra early booking invoice**
-* **Transfer invoice**
-* **Discount/Supplement invoice**
-* **Handling invoice**
+It follows the schedules you set per hotel, extra, transfer, and more.
 
-### Prerequisites​ <a href="#prerequisites" id="prerequisites"></a>
+### What Autobilling can invoice
 
-**Invoice services​**
+Autobilling can create invoices for:
 
-There are four services that must be activated in order for the autobilling feature to work.
+* **Hotel deposit**
+* **Hotel early booking**
+* **Hotel**
+* **Extras** (products)
+* **Extra early booking**
+* **Transfers**
+* **Discounts and supplements**
+* **Handling**
 
-**IGS (Invoice Generating Service)​**
+### Before you start
 
-* Runs every 30 minutes
-* Any company wishing to use this service must contact Tourpaq Support
+You need two things:
 
-**EBL (Early Booking List)​**
+1. The required background services must be enabled.
+2. You must set up at least one creditor (supplier).
 
-* Runs once every 24 hours, usually at 12:00 AM, server time
-* Any company wishing to use this service must contact Tourpaq Support
+#### Required services
 
-**HDI (Hotel Deposit Invoice)​**
+These services run in the background.
 
-* Runs every 30 minutes after the EBL has run, but it will stop at 00:00 AM, server time
-* Runs only if EBL service is activated
-* Any company wishing to use this service must contact Tourpaq Support
-* Runs once every 24 hours, usually at 12:00 AM, server time
-* Any company wishing to use this service must contact Tourpaq Support
+Most companies need Tourpaq Support to enable them.
 
-**Creditors​**
+* **IGS (Invoice Generating Service)**
+  * Runs about every **30 minutes**.
+  * Creates invoices based on your Autobilling settings.
+* **EBL (Early Booking List)**
+  * Runs **once per day** (often around **00:00** server time).
+  * Sends the early booking list email (if you use early booking invoicing).
+* **HDI (Hotel Deposit Invoice)**
+  * Runs about every **30 minutes** after EBL has run.
+  * Runs only if **EBL** is enabled.
 
-Another requirement for the Autobilling feature is also the use of a creditor.
+{% hint style="info" %}
+If you are unsure whether these services are enabled, contact Tourpaq Support.
+{% endhint %}
+
+### Creditor setup&#x20;
+
+Autobilling needs a creditor.
+
+A creditor is the supplier that receives the invoice email.
 
 <figure><img src="../.gitbook/assets/image (83).png" alt=""><figcaption></figcaption></figure>
 
-A creditor can be created in Tourpaq from _Users/Creditors_. All the following fields must be filled in order for the feature to work correctly:
+A creditor is created in **Users → Creditors**.
 
-* Creditor Name
-* Email
-* Swift Code
-* Iban Number
-* Account credit
-* Creditor Number
-* Currency
-* Automatic check box - if checked, the system will generate invoices automatically.
-* Approval interval (in days) - the time limit for the creditor to approve or reject the invoice
-* Payment days - the time limit for the agency to pay the invoice after the creditor has approved it
-* Invoice as PDF - invoice is sent in a PDF format
+Fill in all required fields.
 
-In the e-mail field, more than one e-mail address can be inserted, like in the print screen (e.g., [mail@domain.dk](mailto:mail@domain.dk); mail2@domain.com), allowing for more than one receiver of the e-mails.
+These fields matter most for Autobilling:
 
-**Destination settings** - selected agency details will appear on the Liquidation export list from the Guide user assigned to the resort and agency.
+* **Name** and **Email**
+* **Currency**
+* **Account credit**
+* **Automatic** (must be enabled to allow Autobilling)
+* **Approval interval (days)** (how long the supplier has to approve or reject)
+* **Payment days** (how long you have to pay after approval)
+* **Invoice as PDF** (sends invoices as a PDF attachment)
 
-The schedules tabs provide an overview of all entities (hotels, hotel before arrival, extras, discounts, supplements and handling) that are invoiced on the current creditor. You can manage schedules and add new entities to a schedule from the ones that are assigned to the current creditor. To assign an entity (hotels, extras, discounts, supplements and handling) from the entity edit screen, select the creditor in the autobilling box. Here you can also set a schedule and fill in the account codes used in the accounting file.
+You can add multiple email addresses in the email field.
+
+Separate them with `;` (for example `a@company.com; b@company.com`).
+
+#### Creditor schedules
+
+The creditor includes schedule tabs.
+
+They show what hotels, extras, and other items will be invoiced for that creditor.
+
+To add an item to Autobilling:
+
+* Open the hotel/extra/discount/handling.
+* Select the **Creditor** in its Autobilling settings.
+* Select the **Schedule** for when invoices should be created.
 
 <figure><img src="../.gitbook/assets/autobilling11-88a0b1b636b2adf09b0f444e4257838f.png" alt=""><figcaption></figcaption></figure>
 
-Creditors don't work for products assigned to multiple brands when the brands have different currencies.
+{% hint style="warning" %}
+If a product is used across multiple brands, Autobilling may not work if the brands use different currencies.
+{% endhint %}
 
-**E-mails​**
+### Email setup
 
-Another requirement in order for the invoice services to run is the setting of a special e-mail to be sent from Tourpaq to the creditors. This can be done from _Setup/E-mail center_. Two email types have to be created for this:
+Autobilling sends emails to creditors.
 
-* Creditor Invoice
-* Early Booking Rooming List
+Set this up in **Setup → E-mail center**.
 
-The system generates invoices for the bookings that have arrived since the last invoice. An e-mail is sent to the creditor with the invoice and the approve/reject link, and the invoice is attached.
+Create these email types:
 
-**Viewing of invoices​**
+* **Creditor Invoice**
+* **Early Booking Rooming List**
 
-Only administrators and financial users have access to this feature. Invoices are managed by **Finance**.
+The creditor receives an email with:
 
-Actions that can be done:
+* the invoice attached, and
+* an approve/reject link (if enabled in your setup).
 
-* Status changes:
-* Approved
-* Rejected
-* Paid
-* Archived
-* Download invoice in PDF or XML format
-* Regenerate invoice
+### Where to view invoices
+
+Invoices are managed in **Finance**.
+
+Access is typically limited to admin and finance users.
+
+Common actions:
+
+* Change status (Approved, Rejected, Paid, Archived)
+* Download invoice (PDF, and sometimes XML)
+* Regenerate an invoice
 
 <figure><img src="../.gitbook/assets/image (84).png" alt=""><figcaption></figcaption></figure>
 
-**Invoice status​**
+### Invoice statuses
 
-All invoices have to go through different statuses before being finally paid. Here are the steps:
+Invoices usually follow this flow:
 
-* Pending - invoice status after it has been generated
-* Approved - invoice status after it has been approved by the creditor
-* Paid - invoice status after it has been paid. Only approved invoices can be paid.
+* **Pending**: the invoice was created and is waiting for approval.
+* **Approved**: the supplier approved it.
+* **Paid**: you marked it as paid.
 
 <figure><img src="../.gitbook/assets/image (85).png" alt=""><figcaption></figcaption></figure>
 
-* Regenerated - invoices can be regenerated
+Other statuses you may see:
+
+* **Regenerated**: the invoice was rebuilt after a change.
 
 <figure><img src="../.gitbook/assets/image (86).png" alt=""><figcaption></figcaption></figure>
 
-* Archived - invoice status after it has been archived
+* **Archived**: the invoice was archived for record-keeping.
 
 <figure><img src="../.gitbook/assets/image (87).png" alt=""><figcaption></figcaption></figure>
 
-**Invoice status changes​**
+{% hint style="info" %}
+If you change the creditor on a hotel, regenerating an invoice can reflect that change.
+{% endhint %}
 
-These are the status changes of the invoices.
+### Autobilling setup
 
-<figure><img src="../.gitbook/assets/autobilling15-ddb4214275956e96d2188786bfcdf348.jpg" alt=""><figcaption></figcaption></figure>
+You enable Autobilling per item (hotel, extra, discount, etc.).
 
-regeneratedInvoices can be regenerated in the past.
+Each item has an Autobilling section where you set:
 
-Also, if a creditor is changed on a hotel, regenerating an invoice will take this into account.
+* whether it should be invoiced,
+* who the creditor is, and
+* when invoices should be created.
 
-### Autobilling Setup​ <a href="#autobilling-setup" id="autobilling-setup"></a>
+#### Hotel invoices
 
-The Invoice Generating Service is the basic invoice service and allows the following costs to be invoiced:
-
-**Hotel invoices​**
-
-Autobilling for hotels is enabled in the hotel's main tab.
+Enable Autobilling on the hotel’s main tab.
 
 <figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-All fields are mandatory in order for the autobilling feature to work.
+These fields are required:
 
-* Automatic billing check box - if checked it allows the hotel to be invoiced; unchecked, the invoices will be disabled
-* Schedule - when the invoices are generated. It can be set to send invoices on a daily/weekly/monthly basis. It is recommended that the weekly feature be used.
-* Account debit
-* Creditor
-* Account deposit
-* Department code
-* Schedule before arrival (allows for the invoices to be sent in advance according to the rules set: daily, weekly-weekdays, monthly-days of the month) Also, the room costs for the hotel and other costs have to be set.
+* **Automatic billing** (turns invoicing on/off)
+* **Schedule** (daily/weekly/monthly). Weekly is common.
+* **Creditor**
+* **Account debit**
+* **Account deposit** (if you use hotel deposits)
+* **Department code**
+* **Schedule before arrival** (optional). Sends invoices in advance.
 
-**Hotel combinations** are also invoiced, but the settings are done on the hotels that make up the combination. Also, in the invoice, bookings made with a hotel combination will be shown as bookings made at the hotel under the combination.
+{% hint style="info" %}
+For hotel invoices to make sense, room costs and other costs must be set on the hotel.
+{% endhint %}
 
-When regenerating a hotel invoice, extras can appear on it if they have the same settings as the hotel in the Autobilling box. The only condition for this is to not have **"Add Own Schedule"** activated.
+Hotel combinations can also be invoiced.
+
+Set Autobilling on the hotels that are part of the combination.
+
+On the invoice, a booking made with a combination is shown under one of those hotels.
+
+If you regenerate a hotel invoice, extras can appear on it.
+
+This happens when the extra uses the same Autobilling settings as the hotel.
+
+It also requires **Add own schedule** to be turned off for the extra.
 
 ### Hotel Deposit​ <a href="#hotel-deposit" id="hotel-deposit"></a>
 
-It can be set in the _Hotel/Deposit_ tab.
+Set this in the **Hotel → Deposit** tab.
 
 <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-A deposit needs the following fields to be set:
+A deposit requires:
 
-* Deposit date - the date on which the invoice is generated
-* Payment type - it's an autofill field
-* Amount - the amount paid
-* Payback date - the date when the payment is made At the final payment, the deposit is deducted from the hotel invoice only if it's in the paid status.
+* **Deposit date**: when the deposit invoice is created.
+* **Payment type**: auto-filled by the system.
+* **Amount**: the deposit amount.
+* **Payback date**: when the deposit is paid back or deducted.
 
-Deposits are paid at a date agreed upon in the contract between companies/agencies and creditors
+The deposit is deducted from the final hotel invoice only when it is marked as **Paid**.
 
-A new function has been added here: **Special deposit rule**. It is used to precalculate the deposit amount for more deposit dates. It requires allotments and costs of the rooms to be set in the hotel.
+Deposit timing is usually agreed in the supplier contract.
+
+**Special deposit rule** can pre-calculate deposit amounts for multiple deposit dates.
+
+It requires room allotments and costs to be set on the hotel.
 
 ### Hotel Early Booking​ <a href="#hotel-early-booking" id="hotel-early-booking"></a>
 
-It can be set from the room cost in the hotel tab.
+Set this from the hotel’s room cost settings.
 
 <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Mandatory fields:
+Required fields:
 
-* Send list date - sends an Early Rooming List email at the preset date
-* Deposit date - the date at when an invoice is generated with the booked rooms and also when the percent has to be paid
-* Deposit percent It is deducted from the following hotel invoices.
+* **Send list date**: sends the Early Rooming List email.
+* **Deposit date**: creates an invoice for booked rooms.
+* **Deposit percent**: the percent to pay now.
 
-If there are problems with receiving the EBL by e-mail, use **Export/List** with //Rooming list// as a report type, and the filters should be taken from the **Hotel/Room cost and** Early booking cost-discount rules.
+The early booking deposit is deducted from later hotel invoices.
 
-**Extra invoices**
+If the early booking list email does not arrive, you can use **Export → List** with report type **Rooming list**.
 
-Autobilling for extras can be enabled in the extra's main tab.
+Use the same filters as your early booking room cost rules.
+
+#### Extra invoices
+
+Enable Autobilling on the extra’s main tab.
 
 <figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-All fields are mandatory in order for the feature to work.
+These fields are required:
 
-* Department code
-* Account debit
-* Add own schedule check box - if left unchecked, the extra invoice will be generated along with the hotel invoice; if checked, a separate invoice will be generated, containing only the extra
-* Schedule - when the invoices are generated. It can be set to send invoices on a daily/weekly/monthly basis. It is recommended that the weekly feature be used.
-* Select creditor
-* Automatic billing check box - if checked it allows the extra to be invoiced; unchecked, the invoices will be disabled Also, the prices and costs have to be set. Note: most of the settings are similar to the hotel ones.
+* **Automatic billing**
+* **Creditor**
+* **Department code**
+* **Account debit**
+* **Schedule**
+* **Add own schedule**
+  * Off: the extra is invoiced together with the hotel invoice (when possible).
+  * On: the extra gets its own separate invoice.
+
+{% hint style="info" %}
+For extras, both prices and costs must be set.
+{% endhint %}
 
 ### Extra Early Booking <a href="#extra-early-booking" id="extra-early-booking"></a>
 
-Works just like the **Hotel Early Booking**
+Works the same way as **Hotel Early Booking**.
 
-**Discount/Supplement invoices​**
+#### Discount and supplement invoices
 
-Autobilling for discounts/supplements can be enabled from their main tab.
+Enable Autobilling on the discount/supplement’s main tab.
 
 <figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-All fields are mandatory in order for the feature to work.
+These fields are required:
 
-* Department code
-* Account debit
-* Add own schedule check box - if left unchecked, the discount/supplement invoice will be generated along with the hotel invoice; if checked, a separate invoice will be generated, containing only the discount/supplement
-* Schedule - when the invoices are generated. It can be set to send invoices on a daily/weekly/monthly basis. It is recommended that the weekly feature be used.
-* Creditor
-* Automatic billing check box - if checked it allows the discount/supplement to be invoiced; unchecked, the invoices will be disabled Also, the prices and costs have to be set. Note: Most of the settings are similar to the extra ones.
+* **Automatic billing**
+* **Creditor**
+* **Department code**
+* **Account debit**
+* **Schedule**
+* **Add own schedule**
+  * Off: can be invoiced together with the hotel invoice.
+  * On: gets its own invoice.
 
-**Transfer invoices​**
+Prices and costs must also be set.
 
-Autobilling for transfer can be enabled from _Transport/Transfer prices_.
+#### Transfer invoices
 
-All fields are mandatory in order for the feature to work.
+Enable Autobilling for transfers in **Transport → Transfer prices**.
 
-* Department code
-* Account debit
-* Add own schedule check box - if left unchecked, the transfer invoice will be generated along with the hotel invoice; if checked, a separate invoice will be generated, containing only the transfer
-* Schedule - when the invoices are generated. It can be set to send invoices on a daily/weekly/monthly basis. It is recommended that the weekly feature be used.
-* Creditor
-* Automatic billing check box - if checked it allows the transfer to be invoiced; unchecked, the invoices will be disabled. The prices and costs have to be set. Also, transfer can be used as an extra, too. Note: Most of the settings are similar to the extra ones.
+These fields are required:
 
-**Handling invoices​**
+* **Automatic billing**
+* **Creditor**
+* **Department code**
+* **Account debit**
+* **Schedule**
+* **Add own schedule**
 
-Autobilling for handling can be enabled from _Users/Suppliers/Handling_
+Prices and costs must also be set.
+
+#### Handling invoices
+
+Enable Autobilling for handling in **Users → Suppliers → Handling**.
 
 <figure><img src="../.gitbook/assets/image (363).png" alt=""><figcaption></figcaption></figure>
 
-All fields are mandatory for the feature to work.
+These fields are required:
 
-* Creditor
-* Account debit
-* Add own schedule check box - if left unchecked, the handling invoice will be generated along with the hotel invoice; if checked, a separate invoice will be generated, containing only the handling..
-* Schedule - when the invoices are generated. It can be set to send invoices on a daily/weekly/monthly basis. It is recommended that the weekly feature be used. For the feature to work, costs are also required. They can set it in the same tab, but only if a hotel is assigned to the supplier.
+* **Creditor**
+* **Account debit**
+* **Schedule**
+* **Add own schedule**
 
-If a supplier is removed from a hotel and the invoice is regenerated, the handling for that hotel will be removed from the invoice. Likewise, if the invoice contains only that hotel, the invoice will receive the deleted status.
+Costs are also required.
+
+In many setups, handling costs can be set only when a hotel is assigned to the supplier.
+
+If a supplier is removed from a hotel and you regenerate the invoice, handling for that hotel is removed.
+
+If the invoice only contained that hotel, it may be marked as **Deleted**.
+
+### Related pages
+
+* [How to create a creditor](../autobilling/how-to-create-a-creditor.md)
+* [Creditor invoices](../autobilling/creditor-invoices.md)
+
+### FAQ
+
+<details>
+
+<summary><strong>Why is Autobilling not creating invoices?</strong></summary>
+
+Most common reasons:
+
+* The background services are not enabled.
+* The item (hotel/extra/transfer/etc.) does not have **Automatic billing** enabled.
+* No **Creditor** is selected on the item.
+* Prices or costs are missing on the item.
+
+</details>
+
+<details>
+
+<summary><strong>Can I send invoices to more than one email address?</strong></summary>
+
+Yes.
+
+Add multiple email addresses in the creditor email field.
+
+Separate them with `;`.
+
+</details>
+
+<details>
+
+<summary><strong>What does “Add own schedule” do?</strong></summary>
+
+It decides whether an item is invoiced together with the hotel invoice.
+
+If enabled, the item gets its own separate invoice.
+
+</details>
+
+<details>
+
+<summary><strong>What do the invoice statuses mean?</strong></summary>
+
+* **Pending**: created and waiting for approval.
+* **Approved**: approved by the supplier.
+* **Paid**: marked as paid in Finance.
+* **Regenerated**: rebuilt after a change.
+* **Archived**: stored for record-keeping.
+
+</details>
+
+<details>
+
+<summary><strong>Can I regenerate an invoice after changes?</strong></summary>
+
+Yes, if you have access to Finance invoice actions.
+
+Regeneration is often used after cost corrections or supplier changes.
+
+</details>
+
+<details>
+
+<summary><strong>Why do hotel combination bookings show as a different hotel on the invoice?</strong></summary>
+
+Hotel combinations are invoiced using the hotels inside the combination.
+
+That is why the invoice shows the underlying hotel.
+
+</details>

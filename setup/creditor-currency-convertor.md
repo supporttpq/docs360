@@ -67,7 +67,7 @@ Enable the rule so conversion is applied.
 {% hint style="info" %}
 Exchange rates are configured separately.
 
-See [Price currency](price-currency.md) if you need to maintain currency rates.
+See [Currency rates](price-currency.md) if you need to maintain currency rates.
 {% endhint %}
 
 ### Hotel currency converter trigger <a href="#hotel-currency-convertor-trigger" id="hotel-currency-convertor-trigger"></a>
@@ -142,7 +142,7 @@ Activate only entries that match your intended workflow and accounting rules.
 
 Rates are maintained in the currency setup.
 
-See [Price currency](price-currency.md).
+See [Currency rates](price-currency.md).
 
 </details>
 

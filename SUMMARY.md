@@ -484,7 +484,7 @@
 * [Tourpaq Web Booking - Technical documentation](setup/tourpaq-web-booking-technical-documentation.md)
 * [Web service](setup/web-service.md)
 * [Payment rate rules](setup/payment-rate-rules.md)
-* [Price currency](setup/price-currency.md)
+* [Currency rates](setup/price-currency.md)
 * [Vouchers](setup/vouchers.md)
 * [Autobilling](setup/autobilling.md)
 * [Web Booking API flow](setup/web-booking-api-flow.md)
