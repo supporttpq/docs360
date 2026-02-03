@@ -205,3 +205,41 @@ Difference from Price -> This option is available only for Discount columns. Thi
 <figure><img src="../.gitbook/assets/image (47) (1).png" alt=""><figcaption></figcaption></figure>
 
 When **Difference from Price** is checked, after Run, discount values are calculated by decreasing the price with the value set. If Price P1=2000 and D1=200 and Difference from Price is checked, after Run, PD1=2000-200=1800. Only after Save, new values are saved in the PriceList.
+
+### FAQ
+
+#### How do I create a new price list?
+
+Use Create or Copy Price List, then select brand, transport, fix quota, hotel, and the rooms to include.
+
+#### Why is a price list not created?
+
+This usually happens when fix quotas do not cover the hotel allotment period or required data is missing.
+
+#### Can I copy an existing price list?
+
+Yes. You can copy prices from an existing price list within the same brand.
+
+#### What copy scopes are available?
+
+You can copy prices from one transport to all brand transports, from one hotel to all hotels on a transport, or from one room to all rooms of a hotel.
+
+#### What must be selected before copying prices?
+
+All checkboxes in the Price Difference section should be selected, even if the values are zero.
+
+#### What filters are available in Pricelist Setup?
+
+You can filter by departure date, resort, transport, transport type, hotel, allotment type, room, fix quota, hotel name, and stay length.
+
+#### Why do no rows appear after filtering?
+
+Common causes are missing brand context, incorrect date range, or no price lists created for the selected criteria.
+
+#### What information is shown in the price list grid?
+
+The grid shows hotel, room, departure date, free hotel and transport allotments, selling prices (P1–P4), child prices, group prices, discounts, and profit-related fields.
+
+#### How are child prices calculated?
+
+Child prices can be entered directly or calculated as a percentage of the adult price using CH% col

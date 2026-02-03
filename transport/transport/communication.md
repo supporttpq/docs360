@@ -2,7 +2,7 @@
 
 ### Overview
 
-The **Communication Service** is a Windows service designed to send information from Tourpaq to various vendors (e.g., airlines, hotels, transport companies). A common use case is transmitting **flight information**, such as periodic passenger name lists (PNL), directly to the airline company.
+The **Communication Service** is a Windows service designed to send information from Tourpaq to various vendors (e.g., airlines, hotels, transport companies). A common use case is transmitting **flight information**, such as periodic passenger name lists (PNL), directly to the airline.
 
 ### Purpose
 
@@ -15,7 +15,7 @@ The purpose of this service is to automate vendor communication, ensuring timely
 
 ### **Transport Reporting**
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Configuration
 
@@ -23,7 +23,7 @@ The purpose of this service is to automate vendor communication, ensuring timely
 * Some reporting types require a **Tour Operator Code**.
 * A default reporting method can be set in **Transport → General tab**.
 * The method can be overridden per timetable in **Transport → Timetable tab**.
-* Reporting is managed by the **Communication Service**, which checks schedulers every **9 minutes**.
+* Reporting is managed by the **Communication Service**, which checks the schedulers every **9 minutes**.
 * Schedulers are configured in **Transport → Communication tab**.
 
 ***
@@ -36,31 +36,31 @@ The columns included are:
 * **Resort** – Passenger’s resort.
 * **Hotel** – Passenger’s hotel.
 * **First Name / Last Name**
-* **Gender** – Passenger gender.
+* **Gender** – Passenger’s gender.
 * **Age** – Shown for children.
-* **Phone** – Customer phone number (usually the first passenger in booking).
+* **Phone** – Customer phone number (usually the first passenger in the booking).
 * **Voucher** – Booking number.
 * **Catering** – `"MF"` if the passenger has catering; otherwise blank.
 * **Seat Out** – Assigned outbound seat (e.g., A03).
-* **Seat Home** – Assigned inbound seat.
+* **Seat Home** – Assigned homebound seat.
 
 ***
 
 #### Pick-up List (Bus)
 
-* Please refer to the **Routes** section for details.
+* See [Routes](../../routes.md) for details.
 
 ***
 
 #### Train Reporting
 
-* Similar to other transport types; configured in Transport Settings.
+* Similar to other transport types. Configure it under **Transport Settings**.
 
 ***
 
 #### Paxport Reporting
 
-The **Paxport** reporting type generates an **ASCII text file**, grouped by header, and sent via email.
+The **Paxport** reporting type generates an **ASCII text file**, grouped by headers, and sent via email.
 
 **Fields included:**
 
@@ -126,3 +126,23 @@ Files include detailed passenger and customer data, such as:
 ### Release Reporting
 
 * Used to manage and communicate release-related data (details vary by vendor setup).
+
+### FAQ
+
+**Does every reporting type work out of the box?**\
+No. Each reporting type requires the corresponding service to be enabled. Contact **Tourpaq Support** to activate it for your company.
+
+**Where do I set the default reporting type for a transport?**\
+Set it in **Transport → General tab**. You can override it per timetable in **Transport → Timetable tab**.
+
+**How often does the Communication Service send/check reports?**\
+It checks the schedulers every **9 minutes**. Actual sending depends on your scheduler configuration.
+
+**What are schedulers, and where do I configure them?**\
+Schedulers control when a report is generated and sent. Configure them in **Transport → Communication tab**.
+
+**What is sent for Passenger Name List (PNL)?**\
+A PDF sent by email, containing passenger and flight details (including seats, if assigned).
+
+**Which reporting type should I choose (PNL vs Paxport vs vendor-specific formats)?**\
+Choose the one required by your vendor. Some vendors expect a PDF (PNL). Others require a specific file format (e.g., Paxport ASCII or Radixx/DAT formats).

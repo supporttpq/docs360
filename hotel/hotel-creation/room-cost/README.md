@@ -1,50 +1,60 @@
 # Room cost
 
-**Overview**\
-Room Cost rules allow you to define additional cost conditions for a specific hotel. These rules provide flexibility in how costs are applied, ensuring accurate pricing and profit calculations across different booking scenarios.
+### Overview
 
-**Purpose**\
-The main purpose of Room Cost rules is to adjust hotel costs based on defined criteria, such as travel dates, booking dates, and room types. This ensures that costs are distributed correctly per passenger or per room, supporting both fair allocation and transparent profit reporting.
+Room Cost rules let you define hotel cost conditions per hotel. They keep cost and profit calculations consistent across bookings.
 
-**How it works**
+### Purpose
 
-* Rules can be applied to:
-  * A specific hotel
-  * A departure date range
+Use Room Cost rules to adjust hotel costs by rules and date windows. This supports correct allocation and reliable profit reporting.
+
+### How it works
+
+* Rules can target:
+  * A single hotel
+  * A departure (stay) date range
   * A booking date range
-  * A single room type or all room types linked to the hotel
-* Cost calculation options:
-  * **Per passenger** – cost applies individually to each traveler
-  * **Per room** – cost is applied once per room and divided among its occupants
-* Testing a rule:
-  1. Create a booking with the selected hotel and room type.
-  2. Open the **Profit** tab to view real-time calculations of cost and profit.
-  3. Some cost figures update only after the **Total Cost Service** recalculates.
-  4. In the **Profit** tab, the hotel cost is displayed as a single value, with an information icon providing a detailed breakdown of how the cost was calculated.
+  * One room type or all room types for the hotel
+* Costs can be calculated:
+  * **Per passenger**: applied to each passenger
+  * **Per room**: applied once per room and split across occupants
+
+#### Test a rule
+
+1. Create a booking using the hotel and room type.
+2. Open the **Profit** tab to see cost and profit.
+3. Some values update after **Total Cost Service** recalculates.
+4. Use the info icon to see the cost breakdown.
 
 ### Room cost rules​ <a href="#room-cost-rules" id="room-cost-rules"></a>
 
-**Overview**\
-Room Cost Rules define the base value that the agency pays to the hotel for reserved rooms. These rules establish how costs are calculated (per room or per passenger), whether extra cost adjustments apply, and how costs may change when a certain number of rooms are sold.
+#### Overview
 
-**Purpose**\
-The purpose of Room Cost Rules is to ensure accurate and flexible cost allocation in different booking scenarios. By applying configurable conditions, the system can adjust how costs are calculated and update them automatically when thresholds are reached.
+Room Cost Rules define the base cost your agency pays the hotel. They define how cost is calculated and when it changes.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+#### Purpose
 
-**How It Works**
+Use Room Cost Rules to keep hotel costs correct across scenarios. Use thresholds to switch cost after a number of rooms are sold.
 
-* **Stay Type setting** (controlled by the _Stay Type_ dropdown):
-  * Per Room Per Night&#x20;
-    * 1\. the amount is split between the passengers in room.&#x20;
-    * 2\. the rule is applying per day for example: booking with arrival on the period 01-01-2025 - 06-01-2025 a rule can apply if is defined between 04-01-2025 - 09-01-2025 on the booking regardless of arrival date of the booking.
-  * Per PAX Per Room - the amount applies per PAX
-  * Per Room Per Stay &#x20;
-    * 1\. the amount is spited between PAX in room and between days to stay.&#x20;
-    * 2\. the rule is apply if arrival date is in stay interval
-* **Single Price** - If we have the amount set and we have a room with one passenger in room the single price will be added to the price of the rule.
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+#### How it works
+
+* **Stay Type** (from the _Stay Type_ dropdown):
+  * **Per Room Per Night**
+    * The amount is split between passengers in the room.
+    * The rule applies per night within the stay period.
+    * It can apply on overlapping days within the booking.
+  * **Per PAX Per Room**
+    * The amount applies per passenger.
+  * **Per Room Per Stay**
+    * The amount is split across passengers and stay days.
+    * The rule applies when arrival is inside the stay interval.
+* **Single Price**
+  * Adds an extra amount when a room has exactly one passenger.
 * **Extra Cost Included**:
-  * The value entered in the **Extra Cost Included** field is subtracted from the **Price** value, but **only if** an Early Booking or an S\&P Rule cost is applied.
+  * Subtracts **Extra Cost Included** from **Price**.
+  * This happens only when Early Booking or Stay & Pay applies.
 
 **Filters**\
 Rules can be restricted based on the following conditions:
@@ -56,17 +66,17 @@ Rules can be restricted based on the following conditions:
 **Changing Costs Based on Number of Rooms Sold**\
 It is possible to adjust room costs dynamically using the **Up to rooms** and **Price2** fields:
 
-* If a threshold is set in the **Up to rooms** column, once that number of rooms is booked, the system automatically switches to the new cost defined in the **Price2** column.
+* If **Up to rooms** is set, the system switches to **Price2** after the threshold.
 
 ### Early booking cost-discount rules​ <a href="#early-booking-cost-discount-rules" id="early-booking-cost-discount-rules"></a>
 
 #### **Overview**
 
-The **Early Booking Cost Discount Rules** section within the **Room Costs** tab allows you to configure and manage early booking discounts for hotels. These rules apply when bookings are made a set number of days in advance, offering discounted rates to incentivize early reservations.
+Use **Early Booking Cost Discount Rules** to discount hotel costs. The discount applies when a booking is made far enough in advance.
 
 #### **Purpose**
 
-The purpose of these rules is to automatically apply early booking discounts to the selected rooms, board types, and date periods, ensuring consistent and accurate price calculation in the system and towards the customer.
+Apply consistent early booking discounts by room, board, and date range. This supports accurate price calculation and profit reporting.
 
 #### **System Setup Requirement**
 
@@ -80,20 +90,20 @@ Before early booking discounts appear in the price list, a specific setting must
 
 **Purpose of the setting:**
 
-* The **User’s Discounted Cost** represents the calculated cost of a booking after applying all relevant discounts. This value takes into account **Room Discount**, **Early Booking**, and **Stay & Pay** offers. This calculation ensures that the **Discount via Profit Margin** reflects the final, accurate cost after all applicable reductions have been applied.
-
-
+* Controls how the discounted cost is used in price calculations.
+* Includes Room Discount, Early Booking, and Stay & Pay reductions.
+* Ensures profit margin discount reflects the final discounted cost.
 
 <figure><img src="../../../.gitbook/assets/image (424).png" alt=""><figcaption></figcaption></figure>
 
-The above setting decide "HOW" the discount is applied. The Early Booking Discount has an impact on the price regardless of whether this checkbox is selected or not
+This setting decides **how** discounted cost is handled. Early Booking rules can still be configured without it. Uses discounted into account Room Discount Early Booking and Stay\&Pay for calculating Discount via Profit Margin
 
 <figure><img src="../../../.gitbook/assets/image (423).png" alt=""><figcaption></figcaption></figure>
 
-* If this setting is **disabled**, EBD rules will still appear in the configuration screen but will **not be reflected** in the calculated prices or displayed to users in the price list.
+* If this setting is **disabled**, rules still show in the screen. They do **not** affect calculated prices in the price list.
 
 {% hint style="warning" %}
-Note: This checkbox will not trigger the service automatically; you will need to either have to change the cost in the hotel or change the Profit Margin in the price list, changing the price or saving on the price list will change the price as well.
+This checkbox will not trigger the service automatically; you will need to either have to change the cost in the hotel or change the Profit Margin in the price list, changing the price or saving on the price list will change the price as well.
 
 Also, the profit margin service will not change the price instantly on modification; it may take up to 30 minutes for the price to be changed in the price list. This depends on how many tasks need to be processed by the service.
 {% endhint %}
@@ -104,87 +114,93 @@ Also, the profit margin service will not change the price instantly on modificat
 
 #### **Filters Section**
 
-* **Contract**: Dropdown to select the contract for which you want to define early booking rules.
+* **Contract**: Select the contract you want to configure.
 * **Show all**: Checkbox to display all existing rules.
-* **+ More Filters**: Allows advanced filtering options (not fully visible in the screenshot).
-* **Clear**: Resets all filters and fields.
-* Room Code:  Select a specific room code to define EBD
-* Period: Select the interval
-* Booking date
-* Departure date
+* **+ More Filters**: Shows more filters.
+* **Clear**: Resets filters and fields.
+* **Room Code**: Select a room code.
+* **Period**: Select the period.
+* **Booking date**: Filter by booking dates.
+* **Departure date**: Filter by departure/stay dates.
 
 #### **Grid Fields**
 
-| **Field**               | **Description**                                                                                                                                                                                                                                                                                                                                                                                                  |
-| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Stay **Start / End**    | The early booking can be applicable in any day of the stay period example: booking stay period 01 Oct to 07 Oct and a rule with period 05 Oct to 30 Oct will apply on the days 05 Oct 06 Oct and 07 Oct                                                                                                                                                                                                          |
-| **Booking Start / End** | Specifies when the booking must be made for the discount to apply.                                                                                                                                                                                                                                                                                                                                               |
-| Days of the Week        | Select the days of the week on which the discount is valid.   This has to coincide with the arrival date of the booking                                                        ![](<../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>) |
-| **Room**                | Allows selection of one or multiple room types.                                                                                                                                                                                                                                                                                                                                                                  |
-| **Board**               | Select the board type (e.g., Bed & Breakfast, Half Board, etc.) the discount applies to. If the booking has a board type will look for a rule with board type; if there is none, it will settle with a rule that has no board type at all.                                                                                                                                                                       |
-| From Age/to Age         | Defines the age interval for which the rule applies.                                                                                                                                                                                                                                                                                                                                                             |
-| **Price**               | The specific price code or rate this rule applies to.                                                                                                                                                                                                                                                                                                                                                            |
-| **BDNBA**               | Booking Days No Before Arrival.                                                                                                                                                                                                                                                                                                                                                                                  |
-| **IS %**                | If checked, then the amount will be a percentage calculated from the sum between Room Cost, Extra Included, Extra bed, and Stay & Pay, and this will be subtracted from this amount to calculate the cost.                                                                                                                                                                                                       |
-| **PR**                  | Checkbox for "Per Room" discount. Will split the price between passengers in the room                                                                                                                                                                                                                                                                                                                            |
-| **S\&P**                | Checkbox for "Stay & Pay" rules (e.g., Stay 7 Pay 6). If checked, it will allow the rule to combine with stay and pay rules; otherwise, it will exclude the S\&P rule from the cost.                                                                                                                                                                                                                             |
-| E**BC**                 | Apply on Extra Bed Cost                                                                                                                                                                                                                                                                                                                                                                                          |
-| **BB**                  | Apply on Board basis                                                                                                                                                                                                                                                                                                                                                                                             |
-| **Min Days**            | Minimum number of days in advance the booking must be made to qualify for the discount.                                                                                                                                                                                                                                                                                                                          |
-| **Deposit Date**        | The cutoff date for the deposit to be paid to validate the discount.                                                                                                                                                                                                                                                                                                                                             |
-| **DDNBA**               | Deposit days no before stay                                                                                                                                                                                                                                                                                                                                                                                      |
-| **OB**                  | Checkbox indicating if the rule applies to "On Booking"  - Deposit on Booking Final save                                                                                                                                                                                                                                                                                                                         |
-| **Deposit %**           | Discount percentage that applies for the deposit payment.                                                                                                                                                                                                                                                                                                                                                        |
-| **Send List Date**      | Date when the rate list or contract was sent, used for administrative tracking.                                                                                                                                                                                                                                                                                                                                  |
-| **SLDNBA**              | Send list days number before arrival stay                                                                                                                                                                                                                                                                                                                                                                        |
-| **EBP Discount**        | Customer Early Booking Discount                                                                                                                                                                                                                                                                                                                                                                                  |
-| **Contract**            | Displays the selected contract ID or name that the rule belongs to.                                                                                                                                                                                                                                                                                                                                              |
-| Invoice List            | List of invoices created according t othe rule                                                                                                                                                                                                                                                                                                                                                                   |
+| **Field**               | **Description**                                                                                                                                                 |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Stay **Start / End**    | The rule can apply on overlapping stay days. Example: stay 01–07 Oct, rule 05–30 Oct applies on 05–07 Oct.                                                      |
+| **Booking Start / End** | Specifies when the booking must be made for the discount to apply.                                                                                              |
+| Days of the Week        | Restricts the rule to arrivals on selected weekdays. This has to coincide with the arrival date of the booking. ![](<../../../.gitbook/assets/image (569).png>) |
+| **Room**                | Allows selection of one or multiple room types.                                                                                                                 |
+| **Board**               | Board type filter. If the booking has a board, the system looks for a matching board rule first. If none exists, it can use a rule without board.               |
+| From Age/to Age         | Defines the age interval for which the rule applies.                                                                                                            |
+| **Price**               | The specific price code or rate this rule applies to.                                                                                                           |
+| **BDNBA**               | Booking Days No Before Arrival.                                                                                                                                 |
+| **IS %**                | Treats **Price** as a percent of (Room Cost + Extra Included + Extra Bed + Stay & Pay). The result is subtracted.                                               |
+| **PR**                  | Per-room discount. Splits the discount across passengers in the room.                                                                                           |
+| **S\&P**                | Allows this rule to combine with Stay & Pay. If unchecked, Stay & Pay is excluded from cost.                                                                    |
+| E**BC**                 | Apply on Extra Bed Cost                                                                                                                                         |
+| **BB**                  | Apply on Board basis                                                                                                                                            |
+| **Min Days**            | Minimum number of days in advance the booking must be made to qualify for the discount.                                                                         |
+| **Deposit Date**        | The cutoff date for the deposit to be paid to validate the discount.                                                                                            |
+| **DDNBA**               | Deposit days no before stay                                                                                                                                     |
+| **OB**                  | Applies on booking final save (deposit on booking).                                                                                                             |
+| **Deposit %**           | Discount percentage that applies for the deposit payment.                                                                                                       |
+| **Send List Date**      | Date when the rate list or contract was sent, used for administrative tracking.                                                                                 |
+| **SLDNBA**              | Send list days number before arrival stay                                                                                                                       |
+| **EBP Discount**        | Customer Early Booking Discount                                                                                                                                 |
+| **Contract**            | Displays the selected contract ID or name that the rule belongs to.                                                                                             |
+| **Invoice List**        | Invoices created according to the rule.                                                                                                                         |
 
-There are two rules that apply. They cannot be applied at the same time and are governed by the **IS PERCENT** check box:
+#### Percent vs fixed value
 
-* Percent - the value inserted in the PRICE case is used as a percent of the total value if the check box is used
-* Price - the value inserted in the PRICE case is used as it is if the check box is not used. Also, this rule has two additional exceptions because of the **PER ROOM** check box:
-  * Per passenger - if the check box is not used
-  * Per room - if the check box is used
-* Customer Early booking discount - the value inserted in this case is used in the calculation of the pricelist price. If this value is completed, the normal price will be taken into account when calculating the profit of the room on the booking, and the value for the price list will be taken into account when calculating the price Pricelist prices.
+Only one of these applies at a time. It is controlled by **IS %**.
+
+* **Percent**: **Price** is treated as a percentage.
+* **Fixed value**: **Price** is treated as a value.
+  * If **PR** is unchecked, it is per passenger.
+  * If **PR** is checked, it is per room.
+* **EBP Discount** affects the selling price in the price list. Profit can still use the “normal” price for cost/profit comparison.
 
 <figure><img src="../../../.gitbook/assets/image (316).png" alt=""><figcaption></figcaption></figure>
 
-This rule can be combined with the **Stay and Pay cost rules** if the **S\&P** check box is used. Filters used:
+This rule can combine with **Stay and Pay cost rules** if **S\&P** is checked.
+
+Filters used:
 
 * Stay Date Start and End
 * Booking Start and End date
 * Room
-* Days no before arrival The rest of the filters are used in **invoices** and will be explained there.
+* Days no before arrival
+
+Other fields are used for invoices and are explained elsewhere.
 
 Early Booking Discount with Board Type as a filter
 
 <figure><img src="../../../.gitbook/assets/image (317).png" alt=""><figcaption></figcaption></figure>
 
-In Hotel - Room Costs (Early Booking Cost Discount Rules)  it was added a new field called BOARD, containing all the Board Types defined for the company.
+The Early Booking Cost Discount Rules include a **Board** field. It contains board types defined for the company.
 
-When saving a booking, the cost rules that will be added to the hotel cost calculation will also be filtered by the board types chosen by the passengers.
+When you save a booking, cost rules are filtered by passenger board type.
 
-A board type is set on a product (Basic setup - Board Supplements), so for a passenger to select a board type they should select a product that has the required board type.
+Board type comes from the product (Basic setup → Board Supplements). Passengers pick board type by selecting a matching product.
 
-If a rule meets all the requirements for a booking, including the board type filter, then the system will also check that every passenger in the room will have the same board type (mixing board types on a passenger will return no rules with board type filters).
+If a board filter is used, all passengers in the room must match it. Mixed board types in the same room will not match board-filtered rules.
 
-If a rule meets all the requirements for a booking but it has no board type filter, it will be applied only to passengers that have no board type selected.
+If a rule has no board filter, it applies only to passengers without board type.
 
 ### Stay and Pay cost rules
 
 #### **Overview**
 
-The **Stay and Pay Cost Rules** screen is part of the **Room Costs** module, and it allows configuration of promotional offers where guests pay for fewer nights than they stay — commonly referred to as "Stay X, Pay Y" deals (e.g., Stay 7 nights, Pay only 6).
+Stay and Pay Cost Rules support “Stay X, Pay Y” deals. Example: stay 7 nights and pay 6.
 
 #### **Purpose**
 
-This functionality provides flexible discounting for long stays, encouraging longer bookings while automatically adjusting the price based on the defined “stay” and “pay” conditions.
+Encourage longer stays by lowering cost on specific nights. The system recalculates cost using the stay/pay definition.
 
 #### **System Setup Requirement**
 
-Before Stay\&Pay cost rules  can affect the selling price or appear in the price list, a specific setting must be enabled in **System Setup**:
+Stay & Pay must be enabled to affect the selling price and the price list.
 
 **Path:**\
 `System Setup → General → Settings`
@@ -194,20 +210,19 @@ Before Stay\&Pay cost rules  can affect the selling price or appear in the price
 
 **Purpose of the setting:**
 
-* This setting must be **enabled** for Stay & Pay  (S\&P) rules to be **visible in the Price List** and to have an **actual impact on the guest price calculation**.&#x20;
-
-
+* Enables Stay & Pay rules in the price list.
+* Makes them affect guest price calculation.
 
 <figure><img src="../../../.gitbook/assets/image (424).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (423).png" alt=""><figcaption></figcaption></figure>
 
-* If this setting is **disabled**, S\&P rules will still appear in the configuration screen, but will **not be reflected** in the calculated prices or displayed to users in the price list.
+* If disabled, rules still show in configuration. They do not affect price list calculations.
 
 {% hint style="warning" %}
-Note that this checkbox will not trigger the service automatically; you will need to either have to change the cost in the hotel or change the Profit Margin in the price list, changing the price or saving on the price list will change the price as well.
+This checkbox does not trigger recalculation jobs. Change hotel cost or profit margin to trigger updates.
 
-Also, the profit margin service will not change the price instantly on modification; it may take up to 30 minutes for the price to be changed in the price list. This depends on how many tasks need to be processed by the service.
+Price updates can take up to 30 minutes. Timing depends on service load.
 {% endhint %}
 
 #### Field Explanation
@@ -237,18 +252,19 @@ Also, the profit margin service will not change the price instantly on modificat
 | **Booking Start / End** | Defines the window in which the booking must be made for the rule to be valid. |
 | **Days of the Week**    | Restrict the rule to stays that start on specific days (e.g., Mon-Fri).        |
 | **Room**                | Dropdown to select one or more room types the rule applies to.                 |
-| **Period**              | Select a system-defined period                                                 |
+| **Period**              | Select a system-defined period.                                                |
 | **Stay Days No**        | Number of nights the guest must stay to qualify for the promotion.             |
 | **Pay Days No**         | Number of nights the guest actually pays for.                                  |
-| **EB**                  | Checkbox to indicate if this is combined with Early Booking                    |
+| **EB**                  | Allows combination with Early Booking.                                         |
 | **Contract**            | Dropdown to associate this rule with a specific contract.                      |
 | **Trash Icon**          | Allows deletion of a specific rule.                                            |
 | **Save**                | Commits all newly added or updated rules to the database/system.               |
 
-They are governed by two cases:
+#### Validation rules
 
-* Stay days no.
-* Pay days no. The company uses the room for several days and can pay for a lesser amount of days. The number inserted in the **Pay days no.** cannot be greater than **the Stay days no.**, and both must be greater than 0.
+* **Stay days no.** must be greater than 0.
+* **Pay days no.** must be greater than 0.
+* **Pay days no.** cannot be greater than **Stay days no.**
 
 Filters used:
 
@@ -265,43 +281,44 @@ Hotel Extra Cost Rules define additional costs that the agency pays to hotels. T
 **Purpose**\
 The purpose of these rules is to ensure that hotel-related expenses beyond the base room cost are correctly accounted for. This provides a transparent view of the agency’s expenses and supports more precise profit analysis.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Types of Extra Cost Rules**
 
 1. **Extra price per passenger per night**
    * Formula: _value × number of nights_
 2. **Extra price per room**
-   * Formula: _value × number of passengers in the room_
+   * One-time cost per room.
+   * The system distributes the cost across room occupants.
 
 #### **Filters for Applying**
 
-&#x20;**Costs**Extra costs are only applied when the following conditions are met:
+Extra costs are applied only when these conditions are met:
 
 * **Age** – Define a start and end age range for which the extra cost applies.
-* **Extra P/P/N (Extra Price/Pax/Night) -** This amount is multiplied by the number of nights and applicable guests
-* **Extra P/R (Extra Price/Room) -** This is a one-time charge per room, not dependent on stay duration
+* **Extra P/P/N (Extra Price/Pax/Night)** – Multiplied by the number of nights and applicable guests.
+* **Extra P/R (Extra Price/Room)** – One-time charge per room, not per night.
 * **Stay/Arrival Period** – Limit the extra cost to bookings with arrivals within specific dates.
 * **Booking Period** – Apply the cost only if the booking is created within a defined date range.
 * **Room** – Restrict the cost to a specific room type.
 
 #### Creating a New Rule
 
-1. Click the **"Create"** button (top right)
-2. Define the age range using FROM AGE and TO AGE fields
-3. Set either EXTRA P/P/N (per night) or EXTRA P/R (per room) or both
-4. Specify the stay period using STAY/ARRIVAL START and END dates
-5. Specify the booking period using BOOKING START and END dates
-6. Select the applicable room type or "All Rooms"
-7. Select the relevant contract if applicable
-8. Save the new rule
+1. Click **Create** (top right).
+2. Set **From age** and **To age**.
+3. Set **Extra P/P/N**, **Extra P/R**, or both.
+4. Set **Stay/Arrival Start** and **Stay/Arrival End**.
+5. Set **Booking Start** and **Booking End**.
+6. Select a **Room** (or **All Rooms**).
+7. Select a **Contract**, if needed.
+8. Save the rule.
 
 #### Editing an Existing Rule
 
 1. Locate the rule you want to modify in the table
 2. Click on the row or edit icon (if available)
 3. Modify the required fields
-4. Ensure date ranges don't create conflicts with other rules
+4. Ensure date ranges don’t conflict with other rules
 5. Save changes
 
 #### Deleting a Rule
@@ -375,6 +392,42 @@ There are four types of rules available:
 
 ### Partial mind map of Hotel Cost rule interactions <a href="#partial-mindmap-of-hotel-cost-rule-interractions" id="partial-mindmap-of-hotel-cost-rule-interractions"></a>
 
-This is a mind map trying to cover the various interactions between hotel
+This mind map highlights common interactions between hotel cost rules.
 
 <figure><img src="../../../.gitbook/assets/image (100).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+### FAQ
+
+#### Why doesn’t my Room Cost rule apply?
+
+Most misses come from date filters. Check stay dates, booking dates, and room type first.
+
+#### What’s the difference between **Per room** and **Per passenger**?
+
+**Per room** applies once per room and is split across occupants. **Per passenger** applies to each passenger individually.
+
+#### Why did the price list not update after I changed a rule?
+
+Rule edits do not trigger recalculation jobs automatically. Price list updates can take up to 30 minutes.
+
+#### Why do I see the hotel cost as one value in Profit?
+
+The Profit tab shows a single total by default. Use the info icon for the detailed breakdown.
+
+#### What does **Extra Cost Included** do?
+
+It reduces the base **Price** value. It only applies when EB or S\&P cost applies.
+
+#### Why is my Early Booking rule with **Board** not applied?
+
+All passengers in the same room must have the same board type. Mixed board types will not match board-filtered rules.
+
+#### Can Early Booking and Stay & Pay combine?
+
+Yes, if the relevant “combine” checkbox is enabled in the rule. Otherwise, one discount can override the other.
+
+#### What happens if a day becomes **0 cost** due to discounts?
+
+Cost will never go below 0. Additional discounts keep it at 0.

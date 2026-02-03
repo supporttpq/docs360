@@ -2,46 +2,100 @@
 
 ### Overview
 
-The **Departure Gateways** interface provides a structured list of airport gateways for departures. This system allows users to manage and categorize various departure locations efficiently. The interface includes search, sorting, and management functionalities.
+The **Departure Gateways** page lists departure airports and gateways used in Tourpaq.
+
+Use it to maintain clean master data for transports, bookings, and reporting.
 
 <figure><img src="../.gitbook/assets/image (20) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### Features
+### What you can do
 
-* **Search and Filter:** A search bar enables users to quickly find specific departure gateways.
-* **Sortable Columns:** Users can sort data by IATA code, name, or country.
-* **Create New Entry:** A "Create" button allows users to add new departure gateways.
-* **Delete Functionality:** Each entry includes a trash bin icon for easy deletion.
+* **Search** gateways by keyword.
+* **Sort** by IATA code, name, or country.
+* **Create** new gateways.
+* **Delete** gateways you no longer need.
 
-### Column Breakdown
+### Columns
 
-1. **IATA Code:** The official three-letter airport code (e.g., BLL for Billund).
-2. **Name:** The full airport name or commonly used location name.
-3. **Country:** The country where the departure gateway is located.
-4. **Actions:** A delete icon to remove an entry from the system.
+1. **IATA Code**: The three-letter airport code (for example `BLL` for Billund).
+2. **Name**: The airport or location name.
+3. **Country**: The country the gateway belongs to.
+4. **Actions**: Delete the row.
 
-### User Actions
+### Common tasks
 
 #### Searching for a Departure Gateway
 
-1. Use the search bar at the top to enter a keyword.
-2. The table dynamically updates to display matching results.
+1. Type a keyword in the search field.
+2. Review the filtered list.
 
 #### Creating a New Entry
 
 1. Click on the **Create** button.
-2. Enter the required details (IATA code, name, country, etc.).
-3. Save the entry to add it to the list.
+2. Fill in **IATA code**, **name**, and **country**.
+3. Save.
 
 #### Deleting an Entry
 
 1. Locate the departure gateway to remove.
-2. Click the trash bin icon under the "Actions" column.
-3. Confirm deletion if prompted.
+2. Click the trash icon under **Actions**.
+3. Confirm if prompted.
 
 ### Notes
 
-* Some locations might have a placeholder IATA code (e.g., "ZZZ") to represent special cases like non-standard flights.
-* Country names are displayed in their respective language variations (e.g., "Spanien" for Spain).
+* Some setups use placeholder IATA codes like `ZZZ` for special cases.
+* Country names can appear in local language variants (for example `Spanien`).
 
-This interface provides an intuitive way to manage departure gateways effectively.
+{% hint style="warning" %}
+Deleting a gateway can affect transports or data that reference it.\
+If your system blocks deletion, the gateway is likely in use.
+{% endhint %}
+
+### FAQ
+
+<details>
+
+<summary>What should I enter as <strong>IATA code</strong>?</summary>
+
+Use the airport’s official three-letter IATA code.
+
+Some companies also use `ZZZ` for non-standard locations.
+
+</details>
+
+<details>
+
+<summary>Why are country names shown in different languages?</summary>
+
+Country names come from your system’s country list.
+
+That list can include localized spellings (for example `Spanien`).
+
+</details>
+
+<details>
+
+<summary>I can’t delete a gateway. Why?</summary>
+
+Most common reasons:
+
+* You don’t have permission to delete master data.
+* The gateway is referenced by transports, bookings, or rules.
+
+If it is still needed for history, keep it and stop using it going forward.
+
+</details>
+
+<details>
+
+<summary>Can I create a gateway for a non-airport departure?</summary>
+
+Yes, if your workflow needs it.
+
+Use a clear name and follow your internal convention for the code.
+
+</details>
+
+### Related pages
+
+* [Arrival Gateways](arrival-gateways.md)

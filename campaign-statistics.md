@@ -6,7 +6,7 @@ The **Campaign Statistics Dashboard** offers a centralized interface to monitor 
 
 <figure><img src=".gitbook/assets/image (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-### &#x20;1. Date Interval Selection
+### 1. Date Interval Selection
 
 Use the **date range filter** to narrow down statistics and focus on a specific period.
 
@@ -28,9 +28,9 @@ Displayed at the **top of the dashboard**, these KPIs give a snapshot of overall
 
 * 🔛 _1 campaign open_
 * ✅ _0 fully booked_
-* ❌ _0 deleted_&#x20;
+* ❌ _0 deleted_
 
-### &#x20;Graph View – Booking Trends
+### Graph View – Booking Trends
 
 * **Chart Type**: Line chart with shaded area for volume emphasis.
 * **X-Axis**: Dates within the selected range.
@@ -39,7 +39,7 @@ Displayed at the **top of the dashboard**, these KPIs give a snapshot of overall
   * Peaks in the chart indicate **high customer engagement days**.
   * Helps correlate **marketing push periods** (e.g., newsletters, promotions) with booking spikes.
 
-### &#x20;Campaign Table View
+### Campaign Table View
 
 A **tabular list** providing granular details about each campaign within the selected interval.\
 Includes key data such as:
@@ -74,7 +74,7 @@ Each campaign row includes a **"View"** button:
 * Opens a **detailed analytics page** for that specific campaign.
 * Allows further breakdown by destination, customer segment, channel, and more.
 
-<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Conclusion
 

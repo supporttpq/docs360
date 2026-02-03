@@ -1,111 +1,159 @@
 # Agreed Allotment Stop Sale
 
-#### Overview
+### Overview
 
-The **Agreed Allotment Stop Sale** lets you partially adjust the blocked availability by defining an “agreed allotment” — effectively reducing (but not fully removing) the stop sale impact.
+Use **Agreed Allotment** to reopen _some_ availability while a Stop Sale is still in place.
 
-#### Purpose
+It reduces the impact of the Stop Sale without removing it.
 
-When you don’t want to fully lift a stop sale but still want to reactivate some portions of availability, this feature allows you to agree on an allotment number. The room’s new total allotment becomes the previous final allotment plus the agreed allotment.
+### When to use it
 
-In short: **you’re reopening some capacity** without completely turning off the stop sale.
+* You want to keep a Stop Sale active.
+* You need to sell a limited number of rooms anyway.
+* You agreed a fixed allotment with the supplier for a blocked period.
 
-#### Field & Section Explanations
+If you want to fully restore availability, use [Remove (Undo) Stop Sale](remove-undo-stop-sale.md).
 
-| Name / Section                        | What It Means / Behavior                                                                             |
-| ------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| **Filter / Stop Sales List**          | Lists all existing stop sale rules. Filter by date or room type to find the rule you want to adjust. |
-| **Edit button**                       | Allows you to modify a stop sale rule.                                                               |
-| **Remove or Split section**           | Appears during edit mode; here’s where you add or amend the “agreed allotment”.                      |
-| **Enabled checkbox**                  | Toggles whether the rule is active. Must be unchecked to enable editing of the agreed allotment.     |
-| **Agreed Allotment field / checkbox** | Lets you input the number of rooms you want to “agree” to open under this stop sale.                 |
-| **Save / Cancel buttons**             | Save applies your changes; Cancel discards them.                                                     |
+### How it works
 
-#### Instructions: How to Use Agreed Allotment Stop Sale
+The system increases the Stop Sale’s _final_ allotment by your agreed amount.
 
-1. **Go to Stop Sales**\
-   From the main menu: **Hotel → Stop Sales**.\
-   The page lists all defined stop sale rules (default filtered to current dates).
-2. **Find your rule**\
-   Use filters (dates, rooms, status) to locate the stop sale rule you want to adjust.\
-   Make sure it’s an **enabled** rule.
-3. **Click “Edit”**\
-   The rule enters edit mode. A **Remove or Split** section appears underneath.
+Formula: `new final allotment = current final allotment + agreed allotment`.
+
+Example: if the Stop Sale reduces final allotment to `0` and you set `5`, you reopen `5`.
+
+### Key fields and sections
+
+| Name / section               | Meaning / behavior                                                                |
+| ---------------------------- | --------------------------------------------------------------------------------- |
+| **Filter / Stop Sales list** | Shows existing Stop Sale rules. Filter by dates, room type, or status.            |
+| **Edit** (pencil icon)       | Opens the rule in edit mode.                                                      |
+| **Remove or Split**          | Expands a section under the rule. This is where you set agreed allotment.         |
+| **Enabled**                  | Turns the rule on or off. You must uncheck it to edit the agreed allotment value. |
+| **Agreed Allotment**         | Number of rooms you reopen under this Stop Sale.                                  |
+| **Save / Cancel**            | Save applies the changes. Cancel discards them.                                   |
+
+### Set an agreed allotment
+
+{% hint style="info" %}
+Start from [Edit Stop Sale](edit-stop-sale.md) if you are unsure how to open **Remove or Split**.
+{% endhint %}
+
+{% stepper %}
+{% step %}
+### Open the rule in edit mode
+
+1. Go to **Hotel → Stop Sales**.
+2. Find the Stop Sale rule you want to adjust.
+3. Click **Edit** (pencil icon).
 
 <figure><img src="../.gitbook/assets/image (176).png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
 
-4. **Disable the rule temporarily**\
-   Uncheck the **Enabled** box (this unlocks the agreed allotment field).
+{% step %}
+### Unlock the Agreed Allotment field
+
+Uncheck **Enabled**. This unlocks the agreed allotment input.
 
 <figure><img src="../.gitbook/assets/image (177).png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
 
+{% step %}
+### Set the agreed allotment and save
 
+1. Enter the **Agreed Allotment** value.
+2. Click **Save**.
 
-5. **Enter the Agreed Allotment**\
-   In the **Agreed Allotment** field, type the number of rooms you want reopened under the rule.
-6. **Save your changes**\
-   Click **Save**.\
-   The rule is updated, the edit section closes, and the rule returns to non-edit mode.
-7. **(Or) Cancel changes**\
-   If you click **Cancel** instead, no changes are applied and the section closes.
+Use **Cancel** to discard changes.
+{% endstep %}
+{% endstepper %}
 
-#### What to Verify After Setting Agreed Allotment
+### Verify the result
 
-Once your changes are saved, check that things have updated correctly:
+After you save, verify the same hotel, room, and date range in these places:
 
-*   **Stop Sales Logs → View details**\
-    You should see:
+* **Stop Sales Logs → View details**
+  * The log should reflect the agreed allotment adjustment.
+  * `Final r.No` should increase by the agreed allotment compared to `Initial r.No`.
 
-    * _Initial R.No_ =is the final R no after the stop sale was enabled
-    * _Final R.No_ = is the initial allotment set before stop sale
+<figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
-* **Hotel → Allotment per Day tab**\
-  In the hotel’s edit page, filter by the same room and dates.\
-  Main allotment is restored to the initial allotment before the stop sale.
+* **Hotel → Allotment per Day**
+  * Filter on the same room and dates.
+  * You should see the reopened capacity reflected in allotment.
 
-<figure><img src="../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* **Pricelist**\
-  Under **Pricelist**, filter by the hotel, dates, and room type.\
-  The **FHA (free-hotel-allotment)** is populated with available number of rooms according to the initial allotment set before the stop sale.
+* **Pricelist**
+  * Filter by hotel, room type, and dates.
+  * `FHA` (free-hotel-allotment) should reflect the reopened rooms minus bookings.
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-**Setup**
+### FAQ
 
-| Steps                                                                                          | Expected Results                                                                                                                                                                                |
-| ---------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1. Go to "Hotel" menu -> "Stop Sales"                                                          | <p>Stop sales page is displayed<br>All stop sales defined in the system are listed with filter on "Start/End date" set as current date by default</p>                                           |
-| 2. Filter the list if necessary to bring the desired stop sale rule and choose an enabled one. | Result list is displayed according to filters used                                                                                                                                              |
-| 3. Press "Edit" button                                                                         | New "Remove or Split" button is displayed.                                                                                                                                                      |
-| 4. Press "Remove or Split"                                                                     | <p>A new dedicated section is displayed underneath.<br>"Add the new agreed allotment. The total allotment for this room will now be previous FINAL ALLOTMENT + new ENABLED  ALLOTMENT"     </p> |
-| 5. Uncheck "Enabled" checkbox                                                                  | "Agreed Allotment" checkbox becomes enabled/editable                                                                                                                                            |
-| 6. Set the "Agreed Allotment"                                                                  | Value is set                                                                                                                                                                                    |
-| 7. Press "Save" button                                                                         | Rule is updated and saved. Remove and split section is closed. Rule is not in edit mode anymore                                                                                                 |
-| 8. After step 6 press "Cancel"                                                                 | Updates are not saved. Remove and split section is closed.                                                                                                                                      |
+#### Is Agreed Allotment the same as removing the Stop Sale?
 
-**Check results in Stop sales logs**
+No. Removing restores the original availability for the full period.
 
-| Steps                                          | Expected Results                                                                                                                      |
-| ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| 1. After step 7 in setup, press "View details" | Stop sales logs page is displayed, having the filters automatically set by default for the period and room set on the rule            |
-| 2. Check records                               | Initial r.No is the final R no before stop sale was enabled, and Final r. no is final R no before stop sale was enabled+agreed value. |
+Agreed allotment keeps the Stop Sale but reopens a limited number of rooms.
 
-**Check results in Allotment per day on hotel**
+#### Why do I have to uncheck **Enabled** to edit the agreed allotment?
 
-| Steps                                                                                          | Expected Results                                                                      |
-| ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| 1. After step 7 in setup, go to hotel edit page                                                | Edit page of the hotel is displayed                                                   |
-| 2. Go to "Allotment per day" tab and filter the dates and room according to stop sale rule set | Allotment per day for the room is displayed                                           |
-| 3. Check allotment                                                                             | Main allotment is updated to new final r no (booked rooms/guranteed+agreed allotment) |
+The rule must be temporarily inactive to change its allotment impact.
 
-**Check results in Pricelist**
+#### What happens if I set Agreed Allotment to `0`?
 
-| Steps                                                        | Expected Results                                                                                                  |
-| ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
-| 1. After step 7 in setup, go to Pricelist menu -> Pricelist  | Edit page of the hotel is displayed                                                                               |
-| 2. Filter the dates and room according to stop sale rule set | Corresponding pricelists are listed                                                                               |
-| 3. Check FHA                                                 | FHA is populated with available number of rooms according to new agreed allotment set (final R no - booked rooms) |
+You reopen nothing. The Stop Sale impact stays the same.
 
-<figure><img src="../.gitbook/assets/image3.png" alt=""><figcaption></figcaption></figure>
+#### Can I use Agreed Allotment for only part of the date range?
+
+Yes. Split the rule first, then set agreed allotment only on the relevant period.
+
+Use [Split the Stop Sale Rule](split-the-stop-sale-rule.md).
+
+#### Where should I verify the change first?
+
+Start with **Stop Sales Logs**. Then check **Allotment per Day** and **Pricelist**.
+
+<details>
+
+<summary>Test case reference (setup and expected results)</summary>
+
+#### Setup
+
+| Step                                | Expected result                                                 |
+| ----------------------------------- | --------------------------------------------------------------- |
+| Go to **Hotel → Stop Sales**        | The Stop Sales list is shown. Start/End dates default to today. |
+| Filter and select the relevant rule | The list updates based on your filters.                         |
+| Click **Edit**                      | **Remove or Split** becomes available for that rule.            |
+| Open **Remove or Split**            | The dedicated section is shown under the rule.                  |
+| Uncheck **Enabled**                 | **Agreed Allotment** becomes editable.                          |
+| Set **Agreed Allotment**            | The value is entered.                                           |
+| Click **Save**                      | Rule is updated. The section closes.                            |
+| Click **Cancel**                    | No changes are saved. The section closes.                       |
+
+#### Check results in Stop Sales Logs
+
+| Step                                | Expected result                                                 |
+| ----------------------------------- | --------------------------------------------------------------- |
+| Click **View details** after saving | Logs open with filters prefilled for the rule’s room and dates. |
+| Check the records                   | `Final r.No` should equal `Initial r.No + agreed allotment`.    |
+
+#### Check results in Allotment per Day
+
+| Step                                                              | Expected result                                                                          |
+| ----------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| Open the hotel edit page                                          | The hotel edit page is shown.                                                            |
+| Go to **Allotment per Day** and filter by the rule dates and room | Daily allotment rows are shown for that room and period.                                 |
+| Check allotment                                                   | Allotment reflects the reopened rooms (agreed allotment), minus booked/guaranteed rooms. |
+
+#### Check results in Pricelist
+
+| Step                              | Expected result                                                                                  |
+| --------------------------------- | ------------------------------------------------------------------------------------------------ |
+| Go to **Pricelist → Pricelist**   | The pricelist page is shown.                                                                     |
+| Filter by the rule dates and room | Matching price list rows are shown.                                                              |
+| Check `FHA`                       | `FHA` reflects availability after the agreed allotment adjustment (`final r.No - booked rooms`). |
+
+</details>

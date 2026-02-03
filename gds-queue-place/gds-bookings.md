@@ -2,29 +2,344 @@
 
 ### Overview
 
-A **GDS booking** refers to a reservation created or synchronized through a **Global Distribution System (GDS)**, such as _Amadeus_ or _Travelport_. These systems provide real-time access to flight schedules, seat availability, and prices from commercial airlines.
+A **GDS booking** is a booking where flight segments are created or synchronized through a **Global Distribution System (GDS)** (for example **Amadeus** or **Travelport**).
 
-When a booking in Tourpaq is connected to a GDS, the system automatically imports and maintains information such as the **PNR (Passenger Name Record)**, **ticket numbers**, and **flight details**. Any updates made in the GDS—such as changes in schedule, fare, or status—are automatically synchronized with the corresponding booking in Tourpaq.
+Tourpaq keeps key data in sync, like:
 
-GDS bookings differ from **Charter** or **Own Transport** bookings, as they are governed by the airline’s rules and are managed externally through the GDS, rather than directly controlled by the tour operator. This type of booking is typically used for scheduled flights or complex itineraries where integration with airline systems is required.
+* **PNR (Passenger Name Record)**
+* segment statuses (HK/XX/etc.)
+* ticket numbers (when ticketed)
+* flight details (times, flight number, airline)
+
+GDS bookings follow airline rules. They behave differently than **Charter** or **Own Transport**.
 
 ### Purpose
 
-The purpose of a **GDS booking** is to integrate Tourpaq with external airline systems through a **Global Distribution System (GDS)**, allowing the operator to manage **scheduled flight reservations** alongside charter and own transports within the same platform.
+Use GDS bookings to manage scheduled flights in Tourpaq. Keep reservations and ticketing aligned with the airline system.
 
-This connection provides several key benefits:
+### Preconditions
 
-* **Real-time data exchange:** Flight times, seat availability, and fares are automatically retrieved and kept up to date through the GDS.
-* **Accurate pricing and ticketing:** Ensures that ticket prices, taxes, and fees match the airline’s data, reducing the risk of manual errors.
-* **Automatic synchronization:** Any change made by the airline (e.g., schedule changes, cancellations, rebookings) is reflected in Tourpaq.
-* **Centralized management:** Allows the operator to handle charter, own, and scheduled flight bookings in one system, simplifying reporting and customer handling.
-* **Compliance and traceability:** The GDS link ensures that booking data, ticket numbers, and fare rules are stored according to airline and IATA requirements.
+* GDS is configured for the brand/company.
+* The user has permissions to create and submit bookings.
+* The transport is set up for GDS / dynamic packaging (if applicable).
 
-In summary, the **GDS booking** acts as the bridge between Tourpaq and the airline’s reservation systems, enabling a seamless and reliable workflow for scheduled flights.
+Related setup pages:
 
-### **New Booking**
+* [System Setup – GDS Data](../setup/system-setup/system-setup-gds-data.md)
+* [Setup for Transport Dynamic Packaging (GDS)](../real-transports/setup-for-transport-dynamic-packaging-gds.md)
+* [How to set GDS](../brands/how-to-set-gds.md)
+
+### Status lifecycle (typical)
+
+Exact statuses depend on provider and setup. These are the common ones you will see in Tourpaq.
+
+* **GDS Pending**: booking created in Tourpaq, ready to be submitted.
+* **Hold and Confirmed** (example): segments confirmed in the GDS, but not ticketed.
+* **TicketOK**: ticketed (common for low-cost carriers).
+* **Canceled**: canceled by user, airline, or the GDS provider.
+
+### Typical workflow
+
+{% stepper %}
+{% step %}
+### 1. Create the booking
+
+Create the booking like a normal booking. Pick transport, accommodation, and passenger details.
+{% endstep %}
+
+{% step %}
+### 2. Submit to GDS
+
+Submit from the **GDS** tab in the booking.
+
+See: [Submit a GDS Booking](submit-a-gds-booking/).
+{% endstep %}
+
+{% step %}
+### 3. Handle queue exceptions
+
+If the booking ends up in the queue, re-place it from the queue view.
+
+See: [GDS Queue Place](./).
+{% endstep %}
+{% endstepper %}
+
+### What gets synchronized (and when)
+
+Tourpaq will typically pull updates from the GDS when:
+
+* you submit a booking
+* you refresh / reopen the booking (depending on setup)
+* scheduled background checks run (provider and configuration dependent)
+
+Common synchronized fields:
+
+* PNR
+* segment statuses
+* ticket numbers
+* flight times and flight numbers
+
+{% hint style="warning" %}
+Airlines can cancel unticketed PNRs after the ticketing limit. This is especially important for providers like Galileo.
+{% endhint %}
+
+### Troubleshooting checklist
+
+#### Booking is stuck in **GDS Pending**
+
+* Check payment rules. Submission can be blocked by missing payment.
+* Re-submit from the **GDS** tab.
+* Check the queue page if it was moved to the queue.
+
+#### Price changed since selection
+
+* Confirm the higher price in the UI, or pick another flight.
+* Re-run the pre-submit checks before you submit.
+
+#### Booking is in the queue and “Place Bookings” does nothing
+
+* Verify balance is paid (if required by your flow).
+* Verify credentials / queue configuration for the provider.
+* If status never changes, escalate to support with booking number + timestamp.
+
+<details>
+
+<summary>Legacy content (general booking spec and older notes)</summary>
+
+A customer must be identified by his phone number – meaning that if his information has already been inserted in the system, by filling in the phone number his data must be displayed automatically. If by mistake there is more than one customer with the same phone number, it should appear a window (customers window) where the customers with that phone number will be displayed and the desired one can be chosen.
+
+It must also be possible for the customers window to be opened by pressing a link where all the customers (that belong to the agent’s company) will be displayed.
+
+When making a new booking, there will be 2 ways to choose the customer: either by inserting the information for a new one (the fields will be empty by default) or by choosing one from customers window.
+
+When inserting the data for a new customer, the following fields must be required (meaning that if the fields are not filled in, the customer mustn’t be saved):
+
+### Typical workflow
+
+But this stage will not be reached if the booking hasn’t first been saved. And in order to be saved, there are some conditions that must be fulfilled:
+
+### Purpose
+
+If any of these conditions is not fulfilled, the booking mustn’t be saved.
+
+The following should happen when a booking is saved for the first time:
+
+* The booking status will be Error – this status will illustrate that the process is not finished yet
+* The seats will be taken from the transport allotment
+* The selected room/rooms will be booked and this will be illustrated in the correspondent hotel rooms allotments
+
+After the allotments are taken, the next step must be done:
+
+**7. Fill in the passengers information.** This is the data that must be inserted for each of the passengers:
+
+Use GDS bookings to manage scheduled flights inside Tourpaq while keeping data aligned with the airline system.
+
+The following information must be required for each passenger (meaning that if the fields are not filled in, an error message must be displayed and the passengers mustn’t be saved):
+
+### Preconditions
+
+* GDS is configured for the brand/company.
+* The user has permissions to create and submit bookings.
+* The transport is set up for GDS / dynamic packaging (if applicable).
+
+Related setup pages:
+
+### Status lifecycle (typical)
+
+Other sections that should be in booking page:
+
+* [System Setup – GDS Data](../setup/system-setup/system-setup-gds-data.md)
+* [Setup for Transport Dynamic Packaging (GDS)](../real-transports/setup-for-transport-dynamic-packaging-gds.md)
+* [How to set GDS](../brands/how-to-set-gds.md)
+
+In this section, information regarding payments rates and due dates will be displayed:
+
+Exact statuses depend on provider and setup. These are the common ones you will see in Tourpaq.
+
+### Status lifecycle (typical)
+
+### Typical workflow
+
+From this section should also be possible to make payment by card – it should be a link that when pressed is must open a new window from where the payment can be done.
+
+Exact statuses depend on provider and setup. These are the common ones you will see in Tourpaq.
+
+From this section, it should be possible to add extra products for each passenger (besides the ones that are added from passengers details. It should be possible to add a product for all passengers or for a certain one.
+
+* **GDS Pending**: booking created in Tourpaq, ready to be submitted.
+* **Hold and Confirmed** (example): segments confirmed in the GDS, but not ticketed.
+* **TicketOK**: ticketed (often used for low-cost carriers).
+* **Canceled**: canceled by user, airline, or the GDS provider.
+
+c) Passengers details
+
+1\. Create the booking in TourpaqCreate the booking like a normal booking. Pick transport, accommodation, and passenger details.If the flight is GDS-backed, Tourpaq will prepare the GDS submission.2. Take allotment / validate flight and priceTourpaq checks the flight is still available. Tourpaq checks the price has not changed.If something changed, you must confirm or pick alternatives.3. Submit the booking to the GDS providerUse the GDS tab in the booking.See: Submit a GDS Booking.4. Ticketing (provider-dependent)Low-cost carriers often go straight to TicketOK.Some providers require a separate ticketing step and deadline handling.5. If a booking ends up in the queueUse the queue view to re-place bookings that did not complete automatically.See: GDS Queue Place.
+
+### What gets synchronized (and when)
+
+d) History
+
+In this section will be displayed all the changes and important information regarding a booking, like:
+
+Tourpaq will typically pull updates from the GDS when:
+
+* you submit a booking
+* you refresh / reopen the booking (depending on setup)
+* scheduled background checks run (provider and configuration dependent)
+
+Common synchronized fields:
+
+* PNR
+* segment statuses
+* ticket numbers
+* flight times and flight numbers
+
+{% hint style="warning" %}
+Airlines can cancel unticketed PNRs after the ticketing limit. This is especially important for providers like Galileo.
+{% endhint %}
+
+### Troubleshooting checklist
+
+g) SSR
+
+### **View all bookings**
 
 Applies for Administrator and Agent
+
+This function must give the possibility to display all the bookings from the system, bookings that belong to the agency/agencies on which the logged-in user has the rights to operate.
+
+Filtering the data will also be possible, and these would be the filters:
+
+#### Booking is stuck in **GDS Pending**
+
+#### Booking is stuck in **GDS Pending**
+
+* Check payment rules. Submission can be blocked by missing payment.
+* Re-submit from the **GDS** tab.
+* Check the queue page if it was moved to the queue.
+
+#### Price changed since selection
+
+It will also be possible to sort the displayed bookings by:
+
+#### Booking is in the queue and “Place Bookings” does nothing
+
+### **Find faster booking**
+
+* Confirm the higher price in the UI, or pick another flight.
+* Re-run “Take Allotment” checks before you submit.
+
+#### Booking is in the queue and “Place Bookings” does nothing
+
+* Verify balance is paid (if required by your flow).
+* Verify credentials / queue configuration for the provider.
+* If status never changes, escalate to support with booking number + timestamp.
+
+### Preconditions
+
+For the infants, only the age, first name and last name must be filled in. The values for room and travel insurance will be automatically selected (no room or travel insurance is needed for an infant).
+
+* GDS is configured for the brand/company.
+* The user has permissions to create and submit bookings.
+* The transport is set up for GDS / dynamic packaging (if applicable).
+
+### Status lifecycle (typical)
+
+Other sections that should be in booking page:
+
+a) Economics
+
+In this section, information regarding payments rates and due dates will be displayed:
+
+Exact statuses depend on provider and setup. These are the common ones you will see in Tourpaq.
+
+* **GDS Pending**: booking created in Tourpaq, ready to be submitted.
+* **Hold and Confirmed** (example): segments confirmed in the GDS, but not ticketed.
+* **TicketOK**: ticketed (often used for low-cost carriers).
+* **Canceled**: canceled by user, airline, or the GDS provider.
+
+### Typical workflow
+
+From this section should also be possible to make payment by card – it should be a link that when pressed is must open a new window from where the payment can be done.
+
+1\. Create the booking in TourpaqCreate the booking like a normal booking. Pick transport, accommodation, and passenger details.If the flight is GDS-backed, Tourpaq will prepare the GDS submission.2. Take allotment / validate flight and priceTourpaq checks the flight is still available. Tourpaq checks the price has not changed.If something changed, you must confirm or pick alternatives.3. Submit the booking to the GDS providerUse the GDS tab in the booking.See: Submit a GDS Booking.4. Ticketing (provider-dependent)Low-cost carriers often go straight to TicketOK.Some providers require a separate ticketing step and deadline handling.5. If a booking ends up in the queueUse the queue view to re-place bookings that did not complete automatically.See: GDS Queue Place.
+
+From this section, it should be possible to add extra products for each passenger (besides the ones that are added from passengers details. It should be possible to add a product for all passengers or for a certain one.
+
+There should be displayed only the products that match the booking date, departure date, destination, resort, hotel or transport together with their price.
+
+c) Passengers details
+
+From this section extra information for each passenger will be inserted:
+
+### What gets synchronized (and when)
+
+d) History
+
+In this section will be displayed all the changes and important information regarding a booking, like:
+
+Tourpaq will typically pull updates from the GDS when:
+
+* you submit a booking
+* you refresh / reopen the booking (depending on setup)
+* scheduled background checks run (provider and configuration dependent)
+
+Common synchronized fields:
+
+* PNR
+* segment statuses
+* ticket numbers
+* flight times and flight numbers
+
+{% hint style="warning" %}
+Airlines can cancel unticketed PNRs after the ticketing limit. This is especially important for providers like Galileo.
+{% endhint %}
+
+### Troubleshooting checklist
+
+g) SSR
+
+### **View all bookings**
+
+Applies for Administrator and Agent
+
+This function must give the possibility to display all the bookings from the system, bookings that belong to the agency/agencies on which the logged-in user has the rights to operate.
+
+Filtering the data will also be possible, and these would be the filters:
+
+#### Booking is stuck in **GDS Pending**
+
+* Check payment rules. Submission can be blocked by missing payment.
+* Re-submit from the **GDS** tab.
+* Check the queue page if it was moved to the queue.
+
+#### Price changed since selection
+
+* Confirm the higher price in the UI, or pick another flight.
+* Re-run “Take Allotment” checks before you submit.
+
+It will also be possible to sort the displayed bookings by:
+
+#### Booking is in the queue and “Place Bookings” does nothing
+
+### **Find faster booking**
+
+Applies for Administrator and Agent
+
+* Verify balance is paid (if required by your flow).
+* Verify credentials / queue configuration for the provider.
+* If status never changes, escalate to support with booking number + timestamp.
+
+***
+
+#### Legacy notes
+
+If you are looking for the current booking UI documentation, start here:
+
+* [New Booking](../booking/new-booking/new-booking/)
+* [All bookings](../booking/all-bookings/)
+
+### New booking (legacy)
 
 New booking function shall give the possibility to make a new booking. The workflow will be as follows:
 
@@ -68,9 +383,9 @@ This is the information that should be displayed for each transport allotment:
 * Arrival - Arrival airport
 * Transport code
 * AO1 - Allotment out for interval 1
-* AO2 -  Allotment out for interval 2
-* AO3 -  Allotment out for interval 3
-* AO4 -  Allotment out for interval 4
+* AO2 - Allotment out for interval 2
+* AO3 - Allotment out for interval 3
+* AO4 - Allotment out for interval 4
 * Flight number
 
 Departure start date should have as a default value today’s date and Departure end date today’s date plus 3 weeks. If the logged in user makes other choices for these filters, these new values should be restored next time he makes a booking and opens the transports window.
@@ -412,3 +727,5 @@ This function must give the possibility to find a booking using the following fi
 * Booking date after
 
 All the bookings that correspond to the inserted filters will be displayed.
+
+</details>

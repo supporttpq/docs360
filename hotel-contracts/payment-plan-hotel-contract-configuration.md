@@ -2,54 +2,120 @@
 
 ### Overview
 
-The **Payment Plan** section allows users to define multiple payment milestones for a hotel contract. Each payment
+The **Payment Plan** tab lets you define payment milestones for a hotel contract.
+
+Each row is one planned payment (for example: deposit, installment, or payback).
+
+This helps financial tracking and forecasting. It also supports more accurate settlement with the hotel.
 
 ***
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+### Screenshot
+
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-### Field NameDescription
+### Purpose
 
-{% columns %}
-{% column width="50%" %}
-**Field Name**
+Use Payment Plan to:
 
-**Deposit Date**
+* Document when payments are due.
+* Track expected paybacks (if any).
+* Keep payment schedules consistent for reporting and exports.
 
+***
 
+### Preconditions
 
-**Payback Date**
+Before you set up a payment plan:
 
+* The hotel contract already exists.
+* You know the payment dates and amounts agreed with the supplier.
 
+***
 
-**Tot Amount**
+### Fields
 
+| Field            | Description                                                                                                        |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------ |
+| **Deposit Date** | Date when the payment is made. Use format `DD-MM-YYYY`.                                                            |
+| **Payback Date** | Optional date for when the payment is returned or reconciled.                                                      |
+| **Tot Amount**   | Amount for this payment milestone, in the contract currency. This is input manually or pulled from contract terms. |
+| **Currency**     | Currency used for the payment. This is typically fixed per contract.                                               |
+| **Year**         | Year used to group payment plans in the **Hotel Contract export**.                                                 |
 
+***
 
-**Currency**
+### How it works
 
+{% stepper %}
+{% step %}
+### Add a payment milestone
 
+Add a new row for each planned payment.
 
-**Year**
-{% endcolumn %}
+Use one row per due date.
+{% endstep %}
 
-{% column %}
-**Description**
+{% step %}
+### Fill in dates and amount
 
-The date when the payment is initially made (input format: DD-MM-YYYY).
+Set **Deposit Date** and **Tot Amount**.
 
-The date when the payment is expected to be returned or reconciled. This is optional and shown as a calendar input.
+Set **Payback Date** only when you expect a payback.
+{% endstep %}
 
-The total monetary value of the payment. This is input manually or pulled from contract terms.
+{% step %}
+### Set the grouping year
 
-The currency of the transaction (e.g., EUR). Currently fixed per contract.
+Pick **Year** to control how plans are grouped in the Hotel Contract export.
 
-Represents the year after which the grouping is done. This is selected from a dropdown list. It is used for grouping the plans in the Hotel Contract export
-{% endcolumn %}
-{% endcolumns %}
+Keep this consistent across similar contracts.
+{% endstep %}
+{% endstepper %}
 
+***
 
+### Tips
 
-This section is crucial for financial tracking, forecasting, and ensuring accurate settlements between the travel agency and the hotel.
+{% hint style="info" %}
+If you change payment plans on an active contract, align with finance first. It can affect follow-up, exports, and reconciliation workflows.
+{% endhint %}
+
+* Keep milestone amounts easy to reconcile (avoid unnecessary split lines).
+* Leave **Payback Date** empty unless you have a defined payback event.
+
+***
+
+### Related workflows
+
+* [Hotel contract - General](hotel-contract-general.md)
+* [Rooms – Hotel Contract Configuration](rooms-hotel-contract-configuration.md)
+* [Periods – Hotel Contract Configuration](periods-hotel-contract-configuration.md)
+
+***
+
+### FAQ
+
+**Can I add multiple payment milestones?**\
+Yes. Add one row per payment date.
+
+**What date format should I use?**\
+Use `DD-MM-YYYY`.
+
+**When should I use “Payback Date”?**\
+Use it when a payment is expected to be returned or reconciled later.\
+If not relevant, leave it empty.
+
+**Does “Tot Amount” have to match the contract total?**\
+Not necessarily. It depends on your process and what you want to track.\
+Finance typically expects the plan to reconcile against supplier settlement.
+
+**Why can’t I change the currency here?**\
+Currency is usually fixed per contract to avoid mixed-currency settlement.\
+If you need a different currency, update the contract setup.
+
+**What does the “Year” field control?**\
+It controls grouping in the Hotel Contract export.\
+Use it to keep payment plans organized across reporting periods.

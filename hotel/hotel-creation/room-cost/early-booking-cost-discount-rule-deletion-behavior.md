@@ -1,49 +1,86 @@
 # Early Booking Cost Discount Rule – Deletion Behavior
 
-**Overview**
+### Overview
 
-When an **Early Booking Cost Discount Rule** is deleted from a hotel, the related information in the **autobilling invoice** (specifically in the _EarlyBookingDepositInvoiceLine_ table) is also deleted.\
-This behavior occurs regardless of the invoice status and is part of the current Tourpaq implementation logic.
+Deleting an **Early Booking Cost Discount Rule** on a hotel also deletes the related autobilling invoice data stored in the `EarlyBookingDepositInvoiceLine` table.
 
-***
+This happens regardless of invoice status. This is current Tourpaq behavior.
 
-**Behavior Details**
+### What happens when you delete the rule
 
-* The deletion of an **Early Booking Cost Discount Rule** triggers a **cascading delete** in Tourpaq.
-* This cascade removes the related data from the **EarlyBookingDepositInvoiceLine** table.
-* The behavior is **not linked to the autobilling process** or the invoice’s status — it is handled entirely within the **Tourpaq system logic**.
+* Tourpaq triggers a **cascading delete**.
+* Tourpaq removes the related rows from `EarlyBookingDepositInvoiceLine`.
+* This behavior is **not** driven by the autobilling job. It is handled by Tourpaq system logic.
 
-***
+### Impact
 
-**Steps to Reproduce**&#x20;
-
-1.  Search for an **Early Booking Deposit Invoice**.<br>
-
-    <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-2.  Download the invoice and confirm that the Early Booking Discount information is present.<br>
-
-    <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-3.  Navigate to the corresponding **hotel rule** used to generate that invoice.<br>
-
-    <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-4.  Delete the rule and confirm it has been successfully removed.<br>
-
-    <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-    <figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-5.  Download the same invoice again.
-
-    <figure><img src="../../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-
-
-**The information will no longer be available.**
+* The invoice will no longer show the Early Booking Discount details.
+* The invoice total may still remain unchanged after deletion.
 
 {% hint style="danger" %}
-Note: Be aware that even though the invoice data is deleted, the sum of the invoice remains. This is expected behavior.
+Even if the Early Booking Discount details are removed, the invoice sum can remain the same. This is expected in the current implementation.
 {% endhint %}
 
-***
+### Steps to reproduce
 
-**Expected Behavior**\
-Deleting a rule removes its related invoice data to maintain data consistency.<br>
+{% stepper %}
+{% step %}
+### Find an Early Booking Deposit invoice
+
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
+
+{% step %}
+### Download the invoice and verify the discount details exist
+
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
+
+{% step %}
+### Open the hotel rule that generated the invoice
+
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
+
+{% step %}
+### Delete the rule
+
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
+
+{% step %}
+### Download the same invoice again
+
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+The Early Booking Discount details are no longer available.
+{% endstep %}
+{% endstepper %}
+
+### Expected behavior (current design)
+
+Deleting a rule deletes its related invoice data to keep the data model consistent.
+
+### FAQ
+
+#### Does deleting the rule change the invoice amount?
+
+Not always. The Early Booking Discount details can be removed while the invoice total remains unchanged.
+
+#### Does the invoice status matter?
+
+No. The cascade runs regardless of invoice status.
+
+#### Is this related to the autobilling job?
+
+No. The deletion is triggered by the rule deletion itself, not by autobilling.
+
+#### Can I restore the deleted discount details?
+
+There is no self-service restore in the UI. If you need the historical lines back, contact Tourpaq support and provide the invoice number and hotel rule context.
+
+#### How can I avoid losing the details?
+
+Download and archive the invoice before deleting the rule. Avoid deleting rules that have already been used for invoicing unless you are sure you do not need the historical details.

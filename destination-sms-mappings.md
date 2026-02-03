@@ -22,9 +22,30 @@ The purpose of Destination SMS Mappings is to:
 
 <figure><img src=".gitbook/assets/image (108).png" alt=""><figcaption></figcaption></figure>
 
-| Type                                     | Description                                                                                                             |
-| ---------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| **Order**                                | Sent when an extra order is purchased. Includes the message and the extra order ticket.                                 |
-| **Cancel Order**                         | Sent when a service cancels an extra order that was already paid. Notifies the customer of the cancellation.            |
-| **Payment Confirmation**                 | Sent when an extra order is placed but the payment is not yet confirmed.                                                |
-| **Excursion / Arrival / Hotel / Resort** | Sent from the destination application. If no custom text is selected, the default text defined in the template is used. |
+### Field Explanation
+
+#### Template Name (required)
+
+* Internal name of the SMS template
+* Used for identification in the back office only
+* Should clearly describe the purpose of the SMS
+
+Example:\
+`Arrival information - Resort SMS`
+
+#### Template For
+
+Defines **when** the SMS template can be used.
+
+Available options:
+
+* **Order -** Used for general booking or order-related messages
+* **Excursion -** Used for excursion-related communication
+* **Arrival -** Used for arrival-day information, welcome messages, or practical details
+* **Hotel -** Used for hotel-related messages, such as check-in info or reminders
+* **Resort -** Used for destination or resort-wide messages
+* **Pending payment notification -** Used to remind customers about unpaid or partially paid bookings
+* **Cancel order -** Used when a booking or order is canceled
+* **Flight Change -** Used to notify customers about flight schedule changes
+
+The selected value determines where the template is available and which triggers can use it.

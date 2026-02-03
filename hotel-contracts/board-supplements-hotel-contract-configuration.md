@@ -1,135 +1,164 @@
 # Board Supplements - Hotel Contract Configuration
 
-### Board Supplements
+### Overview
 
-#### 🧾 **Overview**
+Use **Board Supplements** to add board-related extras to a hotel contract. These supplements allow different pricing or availability based on the guest’s age, board type, or other custom criteria.
 
-The **Board Supplements** tab it is used to configure additional board options for a hotel contract. These supplements allow different pricing or availability based on the guest’s age, board type, or other custom criteria.
+Typical examples are All-Inclusive upgrades and mandatory dinner supplements.
 
-***
+### Purpose
 
-#### 🎯 **Purpose**
+Use this tab to:
 
-To define **extra board-related charges** or **variations** applicable to hotel guests beyond the default board package, such as upgrades to All-Inclusive or Half-Board, including conditions like age restrictions or specific categories (e.g., child, adult).
+* Add extra board charges on top of the default board.
+* Control eligibility by age range.
+* Link the supplement to an **Extra Category** and optional **Product**.
 
-***
-
-#### ✅ **Preconditions**
-
-Before adding board supplements:
-
-1. The hotel contract must already be created.
-2. The standard **Board Types** must be set up in the system.
-3. The relevant **periods and room types** should be configured to ensure supplements are aligned with the valid stay dates.
+### Screenshot
 
 <figure><img src="../.gitbook/assets/image (289).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-#### 🛠️ **Instructions & Field Descriptions**
+### Preconditions
 
-| **Field**                   | **Description**                                                                                                                        |
-| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| **BOARD**                   | Dropdown to select the base board type. This indicates the board level the supplement is related to.                                   |
-| **FROM / TO (AGE)**         | Define the applicable **age range** for the supplement. Guests whose age falls within this range will be eligible for this supplement. |
-| **EXTRA CATEGORY**          | Select extra category.                                                                                                                 |
-| **PRODUCT**                 | A dropdown to associate a **specific product or service** (e.g., "All-Inclusive Upgrade") offered as a supplement.                     |
-| **NAME**                    | Internal or display **name of the supplement** (e.g., AI for All-Inclusive). Helps in identifying the supplement in listings.          |
-| **CODE**                    | Unique **code identifier** for the supplement, often used for internal reference.                                                      |
-| **CLEAR (✕)**               | This icon clears the row’s input fields, allowing a quick reset without deletion.                                                      |
-| **TRASH BIN ICON (🗑️)**    | Permanently deletes the row from the list of supplements. Use with caution.                                                            |
-| **ADD SUPPLEMENT (Button)** | Once the row is filled out, press this to **save** the supplement. New rows can be added with each click.                              |
+Before you start:
+
+1. The hotel contract exists and is open for editing.
+2. Board types (AI, HB, etc.) are configured in the system.
+3. Periods and room types are set up. This keeps costs consistent.
 
 ***
 
-### Board Basis - Board Supplememts
+### Board Supplements (extras)
 
-#### **Overview**
+Use this section to create supplement rows.
 
-**Board Basis**: Define supplements per board type and age category.
+| Field               | Description                                                             |
+| ------------------- | ----------------------------------------------------------------------- |
+| **Board**           | Base board type the supplement relates to.                              |
+| **From / To (Age)** | Eligible age range. Guests outside the range do not get the supplement. |
+| **Extra Category**  | Category used for reporting and grouping.                               |
+| **Product**         | Optional. Link the supplement to a product/service.                     |
+| **Name**            | Display or internal name. Keep it short and recognizable.               |
+| **Code**            | Unique reference code. Used in exports and contract references.         |
+| **Clear (×)**       | Clears the row input without deleting anything.                         |
+| 🗑️ **Delete**      | Deletes the row.                                                        |
+| **Add supplement**  | Saves the row.                                                          |
+
+***
+
+### Board Basis (cost per period)
+
+Use **Board Basis** when you need a supplement cost per **period**.
 
 <figure><img src="../.gitbook/assets/image (295).png" alt=""><figcaption></figcaption></figure>
 
-#### Fields and Definitions
+#### Fields
 
-| Field              | Description                                                                                                                   |
-| ------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| **Board Type**     | Select the board for which the supplement applies (e.g., AI - All Inclusive, HB - Half Board).                                |
-| **From / To Age**  | Define the age range for which this supplement cost is valid (e.g., 3 to 5 years).                                            |
-| **Extra Category** | Select the extra category                                                                                                     |
-| **Product**        | Select a related product/service if this supplement is linked to one                                                          |
-| **Name**           | Internal or display **name of the supplement** (e.g., AI for All-Inclusive). Helps in identifying the supplement in listings. |
-| **Code**           | Reference code used for exports, contracts, or internal tracking.                                                             |
-| **Clear (×)**      | Removes the entry row.                                                                                                        |
-| **Period ID**      | Indicates the validity period for the cost. These IDs map to the ones defined in the **Periods** tab.                         |
-| **Cost**           | Amount charged as supplement for the specified board, age, and period.                                                        |
-| **Rooms**          | Room codes where this supplement applies.                                                                                     |
+| Field              | Description                                                        |
+| ------------------ | ------------------------------------------------------------------ |
+| **Board Type**     | Board the supplement applies to (for example AI, HB).              |
+| **From / To Age**  | Age range for this supplement cost.                                |
+| **Extra Category** | Category used for grouping and reporting.                          |
+| **Product**        | Optional. Link to a product/service.                               |
+| **Name**           | Display or internal name.                                          |
+| **Code**           | Reference code used for exports and tracking.                      |
+| **Period ID**      | Period the cost belongs to. It maps to IDs in the **Periods** tab. |
+| **Cost**           | Supplement amount for this board + age + period.                   |
+| **Rooms**          | Room codes where the supplement applies.                           |
+| **Clear (×)**      | Clears the row input.                                              |
 
-***
+#### How it works
 
-#### How It Works
+1. Pick a **Board Type** and **age range**.
+2. Add a **Cost** for each relevant **Period ID**.
+3. Limit the row to specific **Rooms** when needed.
 
-1. For each **board type**, define supplements by **age range** and **period**.
-2. Assign a **cost** per period and specify the **rooms** it applies to.
-3. Optionally, link supplements to **products** and assign codes for contract exports.
+{% hint style="info" %}
+If you do not see **Board Basis**, check **System Setup →** [System Setup – Hotel Import](../setup/system-setup/system-setup-hotel-import.md).
 
-Note: If in System Setup / [Hotel Import](../setup/system-setup/system-setup-hotel-import.md) is checked the option 'Do not create extras for board basis', the Board Basis will not be displayed in the menu and also the Extras from the Board Basis will not be created (display) in the imported hotel contract.
+If **Do not create extras for board basis** is enabled, the Board Basis menu is hidden.
+
+It also prevents Board Basis extras from being created during hotel contract import.
+{% endhint %}
 
 <figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-### Gala Dinner – Board Supplements
+### Gala Dinner
 
-#### Purpose
+Use **Gala Dinner** for mandatory or optional event supplements.
 
-The **Gala Dinner** tab is used to configure mandatory or optional special occasion supplements, such as New Year’s Eve or Christmas dinners. These supplements are often age-dependent and may vary by board type, extra category, or product association.
-
-***
+Common cases are New Year’s Eve and Christmas dinners.
 
 <figure><img src="../.gitbook/assets/image (297).png" alt=""><figcaption></figcaption></figure>
 
-***
+#### Fields
 
-#### Fields and Descriptions
+| Field                     | Description                                         |
+| ------------------------- | --------------------------------------------------- |
+| **Board Type**            | Board type the dinner applies to (for example AIP). |
+| **Age From / To**         | Eligible age range.                                 |
+| **Extra Category**        | Category used for grouping and reporting.           |
+| **Product**               | Optional. Product associated with the dinner.       |
+| **Name**                  | Display name of the event.                          |
+| **Code**                  | Reference code for exports and contract tracking.   |
+| **Start Date / End Date** | Date range for the event. Often a single day.       |
+| **Cost**                  | Amount charged to eligible guests.                  |
+| **Clear (×)**             | Clears the row input.                               |
+| 🗑️ **Delete**            | Deletes the row.                                    |
 
-| Field                     | Description                                                                        |
-| ------------------------- | ---------------------------------------------------------------------------------- |
-| **Board Type**            | Select the board type the gala dinner applies to (e.g., AIP – All Inclusive Plus). |
-| **Age From / To**         | Define the age range of guests this cost applies to.                               |
-| **Extra Category**        | Tag the supplement for categorization (e.g., "Pension").                           |
-| **Product**               | Associate a product with the gala dinner (e.g., "All Inclusive").                  |
-| **Name**                  | Display name of the gala dinner event (e.g., "All Inclusive").                     |
-| **Code**                  | Internal or contractual reference code (e.g., "AI MANA").                          |
-| **Start Date / End Date** | Define the date(s) for the dinner (e.g., 17-12-2025).                              |
-| **Cost**                  | Amount charged to applicable guests.                                               |
-| **Clear (×)**             | Clears the entry from the row.                                                     |
-| **Delete (🗑️)**          | Removes the row from the list.                                                     |
-
-***
-
-#### How to Add a Gala Dinner
+#### How to add a gala dinner
 
 1. Click **Add Gala Dinner**.
-2. Select a **Board Type**.
-3. Define the **age range** to apply the supplement.
-4. Select an **Extra Category** and **Product**.
-5. The **Name** and **Code is autocompleted**.
-6. Choose a **Start** and **End Date** (usually a single day).
-7. Specify the **Cost**.
-8. Save the entry. The system will apply this charge during bookings matching the criteria.
-
-***
-
-#### Related Workflows
-
-* The **Gala Dinner** supplement is automatically added to the price during booking creation if the stay includes the defined date.
-* Supplements are visible in pricing breakdowns, exports, and customer invoices depending on system configuration.
-
-***
+2. Select **Board Type**.
+3. Set **Age From / To**.
+4. Select **Extra Category** and optional **Product**.
+5. Confirm **Name** and **Code** (auto-filled).
+6. Set **Start Date / End Date**.
+7. Enter **Cost**.
+8. Save.
 
 #### Tips
 
-* Use meaningful **codes** for easy contract reference.
-* Multiple gala dinners can be added for different dates or age categories.
+* Use stable **codes**. They show up in exports.
+* Add separate rows for different ages or dates.
 
+***
+
+### Related workflows
+
+* [Hotel contract - General](hotel-contract-general.md): Contract header settings and child age ranges.
+* [Rooms – Hotel Contract Configuration](rooms-hotel-contract-configuration.md): Room codes referenced by Board Basis.
+* [Periods – Hotel Contract Configuration](periods-hotel-contract-configuration.md): Period IDs used for Board Basis costs.
+* [Extra Beds Cost – Hotel Contract Configuration](extra-beds-cost-hotel-contract-configuration.md): Often configured alongside board and age rules.
+
+***
+
+### FAQ
+
+**What’s the difference between “Board Supplements” and “Board Basis”?**\
+Board Supplements are the supplement definitions (board, age, category, product).\
+Board Basis is where you assign costs per **Period ID**.
+
+**Why is the Board Basis menu missing?**\
+A system setting can hide it.\
+Check **System Setup →** [System Setup – Hotel Import](../setup/system-setup/system-setup-hotel-import.md).
+
+**How does the system evaluate age ranges?**\
+It uses the guest’s age in the booking context.\
+If the age is outside the range, the row is ignored.
+
+**Can I apply a supplement to only some rooms?**\
+Yes. Use the **Rooms** field in Board Basis.\
+Limit it when only certain room codes include the board option.
+
+**What’s the difference between Clear and Delete?**\
+**Clear (×)** resets the input fields. It does not remove saved rows.\
+🗑️ **Delete** removes the row from the contract.
+
+**Can I add multiple supplements for the same board type?**\
+Yes. Use separate rows.\
+Keep age ranges and codes distinct to avoid conflicts.

@@ -1,8 +1,8 @@
-# Destination - Mobile Guide App
+# Guide App
 
 <figure><img src=".gitbook/assets/destinationapp-993f7b8a83693173287fae9f3939457a.png" alt=""><figcaption></figcaption></figure>
 
-Destination Mobile App is a new feature used to track down guides activity, help them coordinate with each other, create complaints regarding the local environment, support the customer directly through the chat, export passengers lists in multiple formats and so on.
+The Guide App is a new feature used to track guides' activity, help them coordinate with each other, create complaints regarding the local environment, support customers directly through chat, and export passenger lists in multiple formats, among other features.
 
 ### **Login Screen**
 
@@ -12,7 +12,7 @@ This is the first screen the guide will encounter when using the app. As shown i
 
 ### **User Session**
 
-The user session expires by default in 30 minutes from the last user action. In order to change this value the admin must change the "Destination API Token" value from the Edit Brand General tab. The newly set value will be used in order to make the session expire and stop notification from sending after the set value from the last user action. The sending of notifications will be stopped by a service, a slight delay might occur.
+The user session expires by default in 30 minutes from the last user action. To change this value, the admin must modify the "Destination API Token" value in the Edit Brand General tab. The newly set value will be used in order to make the session expire and stop notification from sending after the set value from the last user action. The sending of notifications will be stopped by a service, a slight delay might occur.
 
 **The unit of measure for the value is minutes.**
 
@@ -29,6 +29,8 @@ The list of available menus is available right after the login request succeeds.
 <mark style="background-color:red;">**IMPORTANT NOTE:**</mark> <mark style="background-color:red;"></mark><mark style="background-color:red;">Only guides can add products and make them available in the application.</mark>
 
 <figure><img src=".gitbook/assets/image (279).png" alt=""><figcaption></figcaption></figure>
+
+In order to be made available in the application, the extra must have selected a category of type **Tours** (General info).
 
 In order to be made available in the application, the extra must have selected a category of type **Tours** (General info).
 
@@ -91,7 +93,7 @@ Another really important step in the process of setting up the excursion for the
 
 In order to create a new price rule, one has to click on the **New** button in the right corner of the page mentioned previously. Pressing the **New** button will generate a new entry to the **Price Rules** table and we will have to configure it properly (see picture below).
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (3).png" alt=""><figcaption></figcaption></figure>
 
 In order to properly understand how the price rules work in the process of setting up an excursion, we will provide a summary description of each field seen above:
 
@@ -113,7 +115,7 @@ Once we finish completing all the fields mentioned above, we click on **Save** a
 
 In order to do that, we will have to navigate under the **Extras -> Routes** page (see the picture below).
 
-<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 After you click insert, a route will be generated and you will be able to add **pickup points** (see picture below).
 
@@ -131,7 +133,9 @@ In here, you will have to fill the following fields:
 * **Departure hour** - the hour when the guests will move on with their excursion,
 * **Return hour** - the hour when the guests will finish the excursion
 
+{% hint style="warning" %}
 <mark style="color:red;">IMPORTANT:</mark> There are also some more tabs under the Route, but for this type of extras, we should not take all of them into consideration. The remaining one that should be taken into consideration is the "Brands" tab. In here, we assign an agency to the currently defined route and mark it as for sale.
+{% endhint %}
 
 **Set up guide payment**
 
@@ -217,7 +221,7 @@ After setting the excursion up, we can proceed to the next stage: the one of boo
 
 ![!](https://docs.tourpaq.com/assets/images/55-f4fe0b97ccc6779a3e8784668d4048d4.png)
 
-**Note:** When ordering excursions from Destination app or Guest App the workflow is as follows: Allotment is taken but order is pending status (these orders do not appear in the system).
+**Note:** When ordering excursions from Guide App or Guest App the workflow is as follows: Allotment is taken but order is pending status (these orders do not appear in the system).
 
 If payment approved, the order is set to status OK. If payment rejected, the allotment is restored and order is canceled. If payment not finalized (for any reason) the allotment is set back after 10 minutes. If pending payment, a pending payment is sent to the customer. As we get the notification on the status two scenarios may occur:
 

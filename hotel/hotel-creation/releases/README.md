@@ -1,116 +1,214 @@
 # Releases
 
-#### Overview
+### Overview
 
-The **Hotel Release Rules** feature in Tourpaq Office enables administrators to automate the release of hotel rooms back to the supplier when they are no longer needed. The release process depends entirely on rules configured at the **company administrator level**.
+Hotel release rules automate when rooms are released back to the supplier.
 
-Each rule applies only to a **single hotel**. Rules cannot be shared across multiple hotels. They can be set to trigger on a specific date or relative to a given number of days before that date.
+Rules are configured by **company administrators**.
 
-#### Purpose
+Each rule belongs to **one hotel**.
 
-Hotel Release Rules serve the following objectives:
+Rules cannot be reused across hotels.
 
-* Automate the release of unused hotel room allotments.
-* Notify hotel suppliers of released rooms through email reports.
-* Allow flexible configuration at both **general hotel level** and **room-specific level**.
-* Provide administrators and suppliers with reporting and log access for full transparency.
+{% hint style="info" %}
+Dates in the examples use the format **DD-MM-YYYY**.
+{% endhint %}
 
-***
+#### Related pages
 
-#### Types of Release Rules
+* [Hotel release - automation](hotel-release-automation.md)
+* [Hotel release - Reporting](hotel-release-reporting.md)
 
-Two types of rules can be created in the **Hotel Releases** tab. Each type is listed under its own subtab:
+### Purpose
 
-**1. General Release Rule**
+* Release unused room allotments on time.
+* Email suppliers a release report.
+* Support both hotel-wide and room-type rules.
+* Keep a log for auditing.
 
-* Applies to **all room types** of a hotel.
-* Triggers on a specific date or a set number of days before that date.
-* Automatically generates a release report and sends it via email to the supplier.
+### How “days in advance” is evaluated
 
-**Required Fields:**
+Treat **days in advance** as the lead time.
 
-* **Release Date** – the fixed date when the release occurs.
-* **Number of Days in Advance** – defines how many days before the release date the action should occur.
-* **Email Address** – the supplier’s email address to receive the release report.
+* A value of `0` means “release on the same day.”
+* A value of `5` means “release 5 days before the target date.”
 
-**2. Specific Release Rule**
+### When a release runs
 
-* Applies to **a single room type** of a hotel.
-* Functions within a defined period (start date and end date).
-* Can release the specified room type repeatedly during the rule’s active period.
+Releases are executed by the daily release automation.
 
-**Required Fields:**
+The automation runs **once per day** per company.
 
-* **Start Date** – date from which the rule becomes active.
-* **End Date** – date until which the rule remains active.
-* **Room Type** – the specific room category (e.g., 1S, 2C, 3F).
-* **Number of Days in Advance** – days prior to the booking date when the release will occur.
-* **Email Address** – supplier’s email address to receive the release report.
+Each rule can therefore trigger **at most once per day**.
 
-***
+#### Single-day rule (specific target date)
 
-#### Examples
+Use this when you want a release tied to **one target date**.
 
-**Scenario Setup:**
+The rule triggers on:
 
-* Today’s date: **15-05-2009**.
-* Hotel “Grand Palace” has three room types (1S, 2C, 3F) available from **01-04-2009 to 01-09-2009**.
+`target date - days in advance`
 
-**General Release Rule**
+Example: target date `20-05-2026` with `5` days in advance triggers on `15-05-2026`.
 
-* Rule: Release Date = 20-05-2009, Days in Advance = 5, Email = admin@grandpalacehotel.com.
-* Result: On 15-05-2009, all hotel rooms (1S, 2C, 3F) are released. A log file is created, and an email report is sent to the supplier.
+#### Period rule (runs once per day in a period)
 
-Notes:
+Use this when you want releases evaluated **daily** within a **start/end** period.
 
-* If no start date is provided, the rule executes daily, releasing rooms for dates X days ahead.
-* If no number of days is provided, the system defaults to **0 days** in advance.
+On each daily run, Tourpaq releases the target date that matches the rule’s lead time.
 
-**Specific Release Rule**
+Example: a rule with `3` days in advance evaluated on `15-05-2026` targets `18-05-2026`.
 
-* Rule: Start Date = 01-05-2009, End Date = 01-06-2009, Room Type = 2C, Days in Advance = 3, Email = admin@grandpalacehotel.com.
-* Result: On 15-05-2009, the 2C room type is released for 18-05-2009. A log file is created, and a supplier email is sent.
+### Examples
 
-Notes:
+#### Scenario setup
 
-* On **27-05-2009**, the general release rule does not apply because the 5-day offset does not match 20-05-2009.
-* On **30-05-2009**, the specific rule does not apply because the release date (3 days later) falls outside the defined period.
+* Today: **15-05-2026**
+* Hotel “Grand Palace” has room types `1S`, `2C`, `3F`
+* Inventory period: **01-04-2026** to **01-09-2026**
 
-***
+#### Hotel-wide release rule (all room types)
 
-#### Supplier Administration
+* Rule: Release date `20-05-2026`, days in advance `5`, email `admin@grandpalacehotel.com`
+* Result: On **15-05-2026**, all rooms (`1S`, `2C`, `3F`) are released.
+* A log entry is created.
+* A report email is sent.
 
-Hotel suppliers can log into their dedicated **Tourpaq Office supplier account** to manage rooms available for release. This allows them to decide whether released rooms should be:
+{% hint style="info" %}
+If **days in advance** is blank, the system defaults to **0**.
+{% endhint %}
 
-* Removed from the Tourpaq Booking System, or
-* Reused for other distribution channels.
+#### Room-type release rule (within a period)
 
-The supplier interface provides filters for:
+* Rule: Start `01-05-2026`, end `01-06-2026`, room `2C`, days in advance `3`, email `admin@grandpalacehotel.com`
+* Result: On **15-05-2026**, room type `2C` is released for **18-05-2026**.
+* A log entry is created.
+* A report email is sent.
 
-* Hotel
-* Room Type
-* Time Period
+### Supplier administration
 
-***
+Suppliers can review and manage released rooms in their Tourpaq supplier login.
 
-#### Release Logs
+They can decide if released rooms should be:
 
-Company administrators can review all release actions in the **Releases Log** submenu (under Hotel → Tourpaq). Logs may be filtered by:
+* removed from Tourpaq bookings, or
+* reused for other channels.
 
-* Supplier
-* Brand
-* Hotel
-* Room Type
-* Period
+Common filters:
 
-***
+* hotel
+* room type
+* time period
 
-#### Rule Editing Behavior
+### Release logs
 
-If a release rule is modified while still in effect, the changes only take effect **after the previous configuration finishes its cycle**.
+Administrators can review release actions in **Releases Log** (Hotel → Tourpaq).
+
+Filters include:
+
+* supplier
+* brand
+* hotel
+* room type
+* period
+
+### Rule editing behavior
+
+Edits to an active rule take effect **after the current cycle completes**.
+
+Example:
+
+* Old rule: `10` days in advance
+* New rule: `4` days in advance
+* Result: `10` continues until it expires, then `4` starts.
+
+### Editing releases in Allotment per Day
+
+You can adjust release results per room type and date in **Hotel → Allotment per Day**.
+
+This feature allows releases to be edited directly in **Allotment per Day**, at room and date level, using the same workflow as allotment corrections.
+
+It is designed to handle frequent operational changes such as extending, shortening, executing, or revoking releases after they have already been applied.
+
+See [Allotments per day](../allotments-per-day/).
+
+### Release logic
+
+* When a release is executed, the system stores how many **allotment** and **secured** rooms were released
+* When a release is revoked:
+  * Rooms are restored by default
+  * Allotment room released (AR) and Secured room released (SR) become editable to allow partial restoration
+* Allotment per Day values override the release defined in the contract
+* Releases can be adjusted quickly at room and day level
+
+### How does the release work (value calculations)
+
+This section documents the system behavior during the "Release" execution, comparing the pre-release state and the post-release state.
+
+<figure><img src="../../../.gitbook/assets/image (598).png" alt=""><figcaption><p>Before Release</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (599).png" alt=""><figcaption><p>After Release</p></figcaption></figure>
+
+<table><thead><tr><th width="135.4443359375">Field</th><th width="100.888916015625">Before Release</th><th width="101.4444580078125">After Release</th><th>Formula after release</th></tr></thead><tbody><tr><td>NO</td><td>100</td><td>10</td><td>= Max(Book vs Guarantee)</td></tr><tr><td>SECURED</td><td>20</td><td>10</td><td>= Min(Secured vs NO After Release)</td></tr><tr><td>GUARANTEED</td><td>0</td><td>0</td><td>Remain unchanged</td></tr><tr><td>BOOK</td><td>10</td><td>10</td><td>Remain unchanged</td></tr><tr><td>AR</td><td>0</td><td>90</td><td>= NO Before release - NO After release</td></tr><tr><td>SR</td><td>0</td><td>10 </td><td>= Secured Before release - Secured After release)</td></tr></tbody></table>
+
+### Release Behavior When Editing DAYS
+
+When editing the **DAYS** value for a release, some of the affected dates may already be in the past. In this situation, the system will not clear the release checkbox if Current Date + custom days is earlier than the allotment date.&#x20;
+
+As a result, those past dates remain marked as released. Only dates that fall after the calculated release threshold will have the **Release** flag removed.
 
 **Example:**
 
-* Original rule: 10 days in advance.
-* Updated rule: 4 days in advance.
-* Result: The 10-day rule continues until its effect expires, after which the 4-day rule becomes active.
+* Today’s date is **February 2**.
+*   All February dates are set to be unreleased, and the release period is changed to 7 **days**.&#x20;
+
+    <figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+*   According to the general rule, releases would normally start from **Current day (February 2)+ 30 days**.&#x20;
+
+    <figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+*   However, February has a custom release configuration, so the system instead applies **February 2 + 7 days**, which results in February **9**.&#x20;
+
+    <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+Because the release calculation uses **February 2 + 7 days (February 9)** due to the custom configuration, any dates **before February 9** will remain marked as released. Only dates **from February 9 onward** will have the **Release** flag removed.
+
+### FAQ
+
+#### Who can create or change release rules?
+
+Company administrators.
+
+#### Can I reuse the same rule for multiple hotels?
+
+No. Each rule belongs to one hotel.
+
+#### What’s the difference between a hotel-wide rule and a room-type rule?
+
+* **Hotel-wide** releases all room types for a hotel.
+* **Room-type** releases one room type (typically within a period).
+
+#### Can a release run multiple times per day?
+
+No.
+
+The release automation runs **once per day** per company.
+
+#### What does “days in advance” mean?
+
+It’s the lead time.
+
+`3` means the release runs 3 days before the target date.
+
+#### Who receives the release email?
+
+The email address saved on the rule that triggered the release.
+
+#### Where can I see what was released?
+
+Use **Releases Log** (Hotel → Tourpaq).
+
+Filter by hotel and period for quick checks.
+
+#### Do suppliers have to accept the release?
+
+Suppliers can decide how to handle released rooms in their supplier login.

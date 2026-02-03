@@ -4,29 +4,57 @@
 
 ### Overview
 
-The **All Transports** page provides a comprehensive overview of scheduled transport operations. Users can filter, review, and analyze transport records, including departures, arrivals, seat usage, and costs.
+The **All Transports** page gives you an overview of scheduled transports. You can filter, review, and analyze departures, arrivals, seat usage, and costs.
+
+### Typical workflow
+
+{% stepper %}
+{% step %}
+### Set your date range
+
+Use **Transport Date (Start – End)** first. It usually reduces the result set the most.
+{% endstep %}
+
+{% step %}
+### Narrow down the list
+
+Add filters like **Departure / Arrival**, **Transport Type**, and **Weekdays**.
+{% endstep %}
+
+{% step %}
+### Review and adjust columns
+
+Sort by column headers and add extra columns if needed.
+{% endstep %}
+
+{% step %}
+### Export selected transports
+
+Use the left-side checkboxes to select rows, then run your export action.
+{% endstep %}
+{% endstepper %}
 
 ### Filters & Controls
 
-* **Transport -** Filter transports by transport code.
-* **Transport Date (Start - End) -** Select a specific date range to narrow down the results.
-* **Departure / Arrival -** Filter by departure and arrival points.
-* **Flight No -** Search by flight or transport number.
-* **Weekdays -** Limit results to specific days of the week.
-* **Arrival Country -** Filter based on arrival country.
-* **Transport Type -** Choose the type of service (Charter, Dynamic, Sys-real, System Transports, or All Transport Types).
-  * Charter Transports - are transports using Fix Quotas to define all flights
-  * Dynamic Transports - uses Dynamic Itineraries for their legs. The legs may use Real Transport or use external providers (GDS)
-  * Sys-real Transports - are generated from a Transport Rule, and both legs use Real Transports
-  * System Transports - are generated from a Transport Rule, and at least one of the legs uses an external provider (GDS)&#x20;
-* **Transport Mode -** Additional filtering for transportation category (Boat, Bus, Car, Fly Train).
-* **Direction -** Options: Travel Home, Travel Out, or Both Ways.
-* **More Filters -** Access advanced filter options for precise data control.
-* **Clear -** Reset all active filters.
-*   **Use Real Transports -** Shows only the real transports&#x20;
+* **Transport:** Filter by transport code.
+* **Transport Date (Start – End):** Select a date range.
+* **Departure / Arrival:** Filter by departure and arrival points.
+* **Flight No:** Search by flight or transport number.
+* **Weekdays:** Limit results to specific weekdays.
+* **Arrival Country:** Filter by arrival country.
+* **Transport Type:** Filter by how the transport is generated and priced.
+  * **Charter transports:** Use **Fix Quotas** to define flights.
+  * **Dynamic transports:** Use dynamic itineraries. Legs can use real transports and/or external providers (GDS).
+  * **Sys-real transports:** Generated from a transport rule. Both legs use real transports.
+  * **System transports:** Generated from a transport rule. At least one leg uses an external provider (GDS).
+* **Transport Mode:** Filter by category (Boat, Bus, Car, Flight/Train).
+* **Direction:** Travel Home, Travel Out, or Both Ways.
+* **More Filters:** Open advanced filters.
+* **Clear:** Reset all filters.
+*   **Use Real Transports:** Show only real transports.
 
     <figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
-* **Save View -** Save the current filter setup as a reusable custom view.
+* **Save View:** Save the current filters as a reusable custom view.
 
 ### Table Columns
 
@@ -34,18 +62,79 @@ The **All Transports** page provides a comprehensive overview of scheduled trans
 | ------------- | --------------------------------------------------------------------- |
 | **Date**      | The scheduled date of the transport.                                  |
 | **Transport** | The transport code.                                                   |
-| **Dep. Time** | Departure time                                                        |
-| **Arr. Time** | Arrival time                                                          |
+| **Dep. Time** | Departure time.                                                       |
+| **Arr. Time** | Arrival time.                                                         |
 | **Seats**     | Total number of available seats for the transport.                    |
-| **GES**       | Guarantee empty seats                                                 |
-| **AOT**       | Allotment seats total                                                 |
+| **GES**       | Guaranteed empty seats.                                               |
+| **AOT**       | Allotment seats total.                                                |
 | **BOT**       | Booked seats total – total passengers with reservations.              |
-| **Cost**      | Cost of the transport, shown in the local currency (e.g., DKK - kr.). |
+| **Cost**      | Cost of the transport, shown in the local currency (e.g., DKK (kr.)). |
 
-* Click on column headers to **sort** (e.g., by Date, Cost).
-*   Click on the right three dots to add other columns to the table&#x20;
+* Click column headers to **sort** (for example, Date or Cost).
+*   Click the three dots on the right to add columns.
 
     <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
-*   Use **checkboxes** on the left to select multiple transports for export.&#x20;
+*   Use the left-side **checkboxes** to select transports for export.
 
     <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+
+### FAQ
+
+<details>
+
+<summary>What’s the difference between <strong>Transport Type</strong> and <strong>Transport Mode</strong>?</summary>
+
+* **Transport Type** describes how the transport is generated (charter/dynamic/system).
+* **Transport Mode** is the physical category (boat/bus/car/flight/train).
+
+</details>
+
+<details>
+
+<summary>What does <strong>Use Real Transports</strong> mean?</summary>
+
+It filters the list to only show transports backed by **Real Transports**.
+
+This is useful when you want to exclude transports generated by rules or external providers.
+
+</details>
+
+<details>
+
+<summary>Why do I see no results?</summary>
+
+Common causes:
+
+* The **Transport Date (Start – End)** range is too narrow.
+* Filters like **Departure / Arrival** or **Transport** don’t match any records.
+* You are filtering on a **Transport Type** that is not used in that period.
+
+</details>
+
+<details>
+
+<summary>What do <strong>GES</strong>, <strong>AOT</strong>, and <strong>BOT</strong> stand for?</summary>
+
+* **GES**: guaranteed empty seats.
+* **AOT**: allotment seats total.
+* **BOT**: booked seats total (passengers with reservations).
+
+If your numbers look off, verify the active filters and date range first.
+
+</details>
+
+<details>
+
+<summary>Which currency is used for <strong>Cost</strong>?</summary>
+
+Cost is shown in the transport’s local currency.
+
+Example: `DKK (kr.)`.
+
+</details>
+
+### Related pages
+
+* [Transport](transport/)
+* [Transport Definition](transport/transport-definition.md)
+* [Transport Matrix](transport/transport-matrix.md)

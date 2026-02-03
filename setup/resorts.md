@@ -2,70 +2,86 @@
 
 ### Overview
 
-The **Resorts** interface provides a structured way to manage resorts associated with different arrival gateways. This system allows users to search, filter, and manage resort data efficiently.
+The **Resorts** page lets you create and maintain resorts used in bookings, hotels, price lists, and reporting.
+
+Each resort is typically linked to an **arrival gateway** and can also be grouped under a **destination**.
 
 <figure><img src="../.gitbook/assets/image (370).png" alt=""><figcaption></figcaption></figure>
 
-### Features
+### What you can do
 
-* **Search Functionality:** A search bar allows users to quickly find specific resorts.
-* **Filtering Options:** Users can filter by selecting a specific resort from the dropdown.
-* **Show Hidden:** A toggle option enables the display of hidden resorts.
-* **Create New Entry:** A "Create" button allows users to add new resorts.
-* **Delete Functionality:** Each entry includes a trash bin icon for easy removal.
+* **Search** resorts by keyword.
+* **Filter** by resort, destination, or arrival.
+* **Show hidden** resorts.
+* **Create** new resorts.
+* **Delete** resorts (if they are not in use).
 
 ### Column Explanation
 
 * **Code**
-  * A short unique identifier for the resort (e.g., _BCN_, _TFS_, _Antalya_).
-  * Used internally in the system to reference the resort quickly.
-  * Often based on airport or city codes but can also be custom.
+  * A short unique identifier for the resort (for example `_BCN_`, `_TFS_`).
+  * Often based on airport or city codes, but it can be custom.
 * **Name**
   * The full name of the resort (e.g., _Barcelona_, _Costa Adeje_, _Malaga_).
-  * This is the descriptive label shown to users and customers.
+  * Shown to users and customers.
 * **Country**
   * The country in which the resort is located (e.g., _Spanien_, _Romania_, _Thailand_).
-  * Ensures that resorts are categorized correctly geographically.
+  * Used for geographic grouping and reporting.
 * **Destination**
   * Groups the resort into a broader travel destination category (e.g., _Valencia_, _Chania Dest_).
-  * Useful for package creation and filtering offers by larger travel areas.
+  * Useful for packaging and filtering by larger areas.
 * **Arrival**
   * The arrival airport or point of entry associated with the resort (e.g., _Barcelona_, _Varna_, _Bangkok_).
-  * Defines how travelers reach the resort and links it with transport routes.
+  * Used to link the resort to transport routes.
 * **Delete (Trash Bin icon)**
   * Allows the removal of a resort from the system.
   * Deletion should be done carefully, as removing a resort can affect linked price lists, hotels, and packages.
 
-### User Actions
+{% hint style="warning" %}
+Deleting a resort can affect data that references it.\
+If deletion is blocked, the resort is likely in use.
+{% endhint %}
 
-#### Searching for a Resort
+### Common tasks
 
-1. Use the search bar at the top to enter a resort name or keyword.
-2. The table dynamically updates to show matching results.
+{% stepper %}
+{% step %}
+### Search for a resort
 
-#### Filtering Resorts
+1. Type a keyword in the search field.
+2. Review the filtered list.
+{% endstep %}
+
+{% step %}
+### Filter resorts
 
 1. Select a specific resort from the **Resort/ Destination/ Arrival** dropdown.
-2. The list updates to display only relevant entries.
-3. The **Show Hidden** toggle can be used to reveal hidden resorts.
+2. Enable **Show hidden** if needed.
+3. Review the filtered list.
+{% endstep %}
 
-#### Creating a New Entry
+{% step %}
+### Create a resort
 
 1. Click on the **Create** button.
-2. Enter the required details (Resort ID, name, code, country, arrival gateway, etc.).
-3. Save the entry to add it to the list.
+2. Fill in the required fields (resort code, name, country, arrival).
+3. Save.
+{% endstep %}
 
-#### Deleting an Entry
+{% step %}
+### Delete a resort
 
 1. Locate the resort to remove.
-2. Click the trash bin icon under the "Actions" column.
-3. Confirm deletion if prompted.
+2. Click the trash bin icon under **Actions**.
+3. Confirm if prompted.
+{% endstep %}
+{% endstepper %}
 
 ### Edit a resort
 
 <figure><img src="../.gitbook/assets/image (375).png" alt=""><figcaption></figcaption></figure>
 
-### Field Explanation
+### Fields (edit resort)
 
 #### Left Section
 
@@ -75,10 +91,10 @@ The **Resorts** interface provides a structured way to manage resorts associated
 * **Name**\*
   * The full name of the resort (e.g., _Caleta De Fuste_).
   * This is the label displayed to users.
-* **Url-Alias**
+* **URL alias**
   * Defines the URL alias for the resort.
   * Used for SEO-friendly links.
-* **Url Prefix Alias**
+* **URL prefix alias**
   * Optional prefix for the resort URL.
   * Helps structure URLs under a broader category (e.g., destination prefix).
 * **Arrival**\*
@@ -95,7 +111,7 @@ The **Resorts** interface provides a structured way to manage resorts associated
 * **Teaser Text**
   * Short promotional text shown in website teasers.
 * **Metadesc**
-  * Meta description for search engines (SEO).
+  * Meta description used for search engines (SEO).
 * **Keywords**
   * SEO keywords related to the resort.
 * **Title**
@@ -105,8 +121,8 @@ The **Resorts** interface provides a structured way to manage resorts associated
   * Useful for maps and geo-location features.
 * **Hide as filter on lists**
   * If checked, the resort will not appear as a filter option in search/listing views.
-* **Show in Vab as Country**
-  * When using statistics in View All Bookings, resort will be considered country when grouping by country.
+* **Show in VAB as Country**
+  * In **View All Bookings** statistics, treat the resort as a “country” grouping option.
 
 ***
 
@@ -121,7 +137,7 @@ The **Resorts** interface provides a structured way to manage resorts associated
   * Cost assigned for administration related to this resort.
 * **Destination cost**
   * Cost applied for the specific destination.
-* **Handeling**
+* **Handling**
   * Handling fee linked to the resort.
 * **Transfer**
   * Cost of transfers (e.g., airport–hotel transfers).
@@ -133,14 +149,14 @@ The **Resorts** interface provides a structured way to manage resorts associated
 
 ### Resort - Photos tab <a href="#resort---photos-tab" id="resort---photos-tab"></a>
 
-Insert multiple photos in one step and sort them by drag and drop.
+Upload multiple photos and sort them by drag-and-drop.
 
 Fields:
 
-* Title - Picture name
-* Photo - Click to add photo(s)
-* Description - Short description&#x20;
-* Main photo - If it is checked, the selected picture will be made the main photo of the resort
+* **Title**: Picture name.
+* **Photo**: Click to add photo(s).
+* **Description**: Short description.
+* **Main photo**: If enabled, the selected photo becomes the resort’s main photo.
 
 <figure><img src="../.gitbook/assets/image (376).png" alt=""><figcaption></figcaption></figure>
 
@@ -148,17 +164,17 @@ You can choose multiple images to be saved:
 
 <figure><img src="../.gitbook/assets/uploadingResortPhotos-7d42121311b31492fe6b45a4c30330e3.png" alt=""><figcaption></figcaption></figure>
 
-In case of uploading more than one image, the title and the description field will be saved for each photo with the same values. After save, these fields can be edited from inside the list.
+If you upload multiple images at once, **Title** and **Description** are saved with the same values for each image. You can edit them later in the list.
 
 <figure><img src="../.gitbook/assets/editableFieldResortPhotos-e1c3c42024e4c0fa04085d5f64f25fdf.png" alt=""><figcaption></figcaption></figure>
 
-To order the list of photos, press and keep click on the specific row and move cursor up/down to the position desired. Release and then press save to store the ordered list.
+To reorder photos, click and hold a row, drag it to the right position, then click **Save**.
 
 ### Resort - Documents tab
 
-The **Documents** tab within the **Edit Resort** page allows users to manage and organize files or written content related to a specific resort. This ensures that each resort entry can have associated documentation such as guides, descriptions, or legal
+The **Documents** tab lets you store resort-specific files (for example guides, descriptions, or legal documents).
 
-#### **Instructions**
+#### Instructions
 
 **Accessing the Tab**
 
@@ -168,7 +184,7 @@ The **Documents** tab within the **Edit Resort** page allows users to manage and
 **Adding a New Document**
 
 1. Click the **Add document** button on the right side of the page.
-2.  Enter the document name and add the document (only in PDF format).&#x20;
+2.  Enter a document name and upload the file (**PDF only**).
 
     <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3. Save your changes.
@@ -204,7 +220,7 @@ The purpose of the **Passenger Information** page is to:
 2. Select the desired resort (e.g., _CHQ_).
 3. Open the **Passenger Information** tab.
 
-The list will display all entries configured for the selected destination.
+The list will display all entries configured for the selected resort.
 
 | **Column**                 | **Description**                                                                  |
 | -------------------------- | -------------------------------------------------------------------------------- |
@@ -231,3 +247,69 @@ In the provided example:
 * The resort **CHQ** has one passenger information entry titled **Resort Errata Def**.
 * It applies to stays from **28-10-2025** to **28-11-2025**.
 * The entry is marked as _Acknowledged_, meaning passengers are required to confirm it.
+
+### FAQ
+
+<details>
+
+<summary>What’s the difference between <strong>Destination</strong> and <strong>Resort</strong>?</summary>
+
+* A **destination** is a higher-level grouping (area/region).
+* A **resort** is a specific place inside a destination and is typically linked to an arrival gateway.
+
+</details>
+
+<details>
+
+<summary>Why can’t I find a resort in lists or filters?</summary>
+
+Check these first:
+
+* The resort **Status** is not set to hidden.
+* **Show hidden** is enabled (if the resort is hidden).
+* **Hide as filter on lists** is not enabled.
+
+</details>
+
+<details>
+
+<summary>Can I delete a resort?</summary>
+
+Only if it is not referenced by other data (for example hotels, price lists, or bookings).
+
+If you want to stop using it, prefer setting **Status** to hidden instead.
+
+</details>
+
+<details>
+
+<summary>How do I set the main photo for a resort?</summary>
+
+On the **Photos** tab, enable **Main photo** on the image you want as the primary picture, then save.
+
+</details>
+
+<details>
+
+<summary>Why do all uploaded photos get the same title and description?</summary>
+
+When uploading multiple photos in one operation, the system applies the same **Title** and **Description** to each image.
+
+Edit individual rows afterwards if you need unique values.
+
+</details>
+
+<details>
+
+<summary>How do I show a destination/resort message only for specific travel dates?</summary>
+
+Use **Passenger Information** and set **Stay From/To** (and optionally **Booking Date From/To**).
+
+Enable **Acknowledge** if you need confirmation.
+
+</details>
+
+### Related pages
+
+* [Destination](destination.md)
+* [Arrival Gateways](arrival-gateways.md)

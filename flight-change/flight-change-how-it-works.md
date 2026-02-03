@@ -11,12 +11,12 @@ This type can be reviewed and manually edited if needed before proceeding.
    When a modification is made to a flight, the **Flight Change Type** field is automatically filled in based on the detected change (e.g., Tiny, Small, Large).\
    The user can manually adjust this field if necessary.
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. **Save the Timetable Changes**\
    Select the row(s) where changes were made. Two options will appear:
 
-<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 | **Option**              | **Description**                                                                                                                                                               |
 | ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -27,7 +27,7 @@ This type can be reviewed and manually edited if needed before proceeding.
    After saving or queuing the changes, go to the[ **Flight Change**](./) menu to continue processing.
    * Select one or more flight changes (only those **in the queue**) and send the corresponding notification using the **Send Email** or **Send SMS** buttons.
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;   4\. **Drop a Flight Change (Optional)**
 

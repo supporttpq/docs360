@@ -1,8 +1,20 @@
+---
+description: >-
+  Configure FTP/SFTP connections for automated file exchange with external
+  providers.
+---
+
 # System Setup – FTP Providers
 
 ### Overview
 
 The **FTP Providers** section in **System Setup** is used to configure FTP (File Transfer Protocol) connections for various services. This setup enables the system to securely exchange files (such as booking data, manifests, or reports) with external providers through FTP servers. Each provider (e.g., Inflight Service FTP, Airshoppen FTP, Paxport FTP) can be configured separately.
+
+{% hint style="warning" %}
+FTP usernames and passwords are sensitive.
+
+Restrict access and rotate credentials if you suspect exposure.
+{% endhint %}
 
 ### Purpose
 
@@ -22,7 +34,7 @@ The purpose of this configuration is to establish automated file transfers betwe
 
 * **Description:** The password paired with the username for FTP login.
 * **Purpose:** Provides secure authentication for file transfer.
-* **Instruction:** Enter the password exactly as provided. Use the eye icon to reveal if necessary.
+* **Instruction:** Enter the password exactly as provided. Use the eye icon to reveal it if necessary.
 
 #### 3. **Host Address**
 
@@ -46,7 +58,7 @@ The purpose of this configuration is to establish automated file transfers betwe
 
 * **Description:** The communication port used to connect to the FTP server.
 * **Default Value:** `21` (standard FTP port).
-* **Instruction:** Enter the port number if the provider specifies a custom one. Otherwise, leave as `21`.
+* **Instruction:** Enter the port number if the provider specifies a custom one. Otherwise, leave it as `21`.
 
 #### 7. **Secure FTP**
 
@@ -62,7 +74,7 @@ The purpose of this configuration is to establish automated file transfers betwe
 
 ### Instructions for Configuration
 
-1. Navigate to **System Setup > FTP Providers**.
+1. Navigate to **Setup → System Setup → FTP Providers**.
 2. Select the appropriate tab for the provider you need to configure (e.g., _Inflight Service FTP_).
 3. Fill in the required fields:
    * **Username** and **Password** as provided by the FTP provider.
@@ -111,3 +123,57 @@ The purpose of this configuration is to establish automated file transfers betwe
 
 ✅ **Tips:**\
 Always confirm the required FTP details (username, password, host, port, folder, security requirements) directly with the provider before making changes. If an error persists after checking all fields, escalate the issue to the IT/security team.
+
+### FAQ
+
+<details>
+
+<summary><strong>What’s the difference between FTP, FTPS, and SFTP?</strong></summary>
+
+**FTP** is unencrypted.
+
+**FTPS** is FTP over SSL/TLS.
+
+**SFTP** is a different protocol that runs over SSH (usually port `22`).
+
+</details>
+
+<details>
+
+<summary><strong>What does “Secure FTP” enable?</strong></summary>
+
+It enables encrypted file transfer.
+
+Depending on your provider, this may mean **SFTP** or **FTPS**.
+
+</details>
+
+<details>
+
+<summary><strong>Which port should I use?</strong></summary>
+
+Use the port provided by the provider.
+
+Common defaults are `21` (FTP/FTPS) and `22` (SFTP).
+
+</details>
+
+<details>
+
+<summary><strong>How do I test that the configuration works?</strong></summary>
+
+Enable the configuration and trigger the relevant export/import flow.
+
+Then confirm the file appears in the expected folder on the provider side.
+
+</details>
+
+<details>
+
+<summary><strong>Why do files land in the wrong folder?</strong></summary>
+
+Usually the folder path is wrong or uses the wrong format.
+
+Confirm the exact path with the provider and mirror it exactly.
+
+</details>

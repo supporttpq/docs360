@@ -2,27 +2,92 @@
 
 ### Overview
 
-The "Different Max Pax" feature is accessible via **Hotel → Allotment Per Day**. It enables users to define distinct maximum occupancy levels for the same room type, allowing for improved room allocation and availability management.
+**Different Max Pax** is available in **Hotel → Allotments per Day**.
+
+It lets you sell the same room type with different maximum occupancies (Max Pax). Each occupancy option gets its own daily allotment.
 
 ### Purpose
 
-This functionality is designed to provide flexibility in managing room availability, ensuring you can optimize occupancy and efficiently handle various room configurations depending on daily demand and operational requirements.
+* Split a room type into multiple sellable occupancies.
+* Control availability per day for each occupancy.
+* Improve allocation when demand changes day by day.
 
 <figure><img src="../../../.gitbook/assets/image (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
-The number of available rooms can be adjusted daily in the Allotments per Day tab, allowing you to set the availability for each configuration on a per-day basis.
+### How it works
+
+* One room type can have multiple Max Pax configurations.
+* Each configuration has its own allotment count per day.
+* You decide how many rooms to “allocate” to each configuration each day.
+
+The number of available rooms can be adjusted daily in the **Allotments per Day** tab. Set availability per configuration, per day.
 
 <figure><img src="../../../.gitbook/assets/image (2) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
-After modifying the configuration (as shown in the example below), you'll need to click the update button (labeled with 1 in the image above) to save the changes.
+After changing values, click **Update** (marked as `1` in the screenshot) to save.
 
 <figure><img src="../../../.gitbook/assets/image (2) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Instructions for Use
 
-1. Navigate to **Hotel → Allotment Per Day** in the main menu.
-2. Select the desired room type and define the maximum occupancy (Max Pax) for each configuration as required.
-3. In the **Allotments per Day** tab, adjust the number of available rooms on a per-day basis to reflect current availability for each configuration.
-4. Once you’ve made the necessary changes, click the **Update** button (indicated as "1" in the reference image) to save your adjustments.
+{% stepper %}
+{% step %}
+#### Open the allotment view
 
-This process ensures that room allocations remain accurate and up-to-date, supporting both operational needs and guest satisfaction.
+Go to **Hotel → Allotments per Day**.
+{% endstep %}
+
+{% step %}
+#### Select the room type
+
+Pick the room type you want to manage.
+{% endstep %}
+
+{% step %}
+#### Set Max Pax configurations
+
+Define the Max Pax value for each configuration you want to sell.
+{% endstep %}
+
+{% step %}
+#### Allocate rooms per day
+
+In **Allotments per Day**, set how many rooms are available per configuration per day.
+{% endstep %}
+
+{% step %}
+#### Save
+
+Click **Update** to apply the changes.
+{% endstep %}
+{% endstepper %}
+
+{% hint style="warning" %}
+The configurations share the same underlying physical room pool. Make sure the sum of configuration allotments does not exceed your real inventory.
+{% endhint %}
+
+{% hint style="info" %}
+Different Max Pax controls _occupancy and availability_. Use [Room Restriction](room-restriction.md) to control _allowed bed combinations_.
+{% endhint %}
+
+### FAQ
+
+#### What is “Different Max Pax” used for?
+
+To sell the same room type with different occupancies. Example: a room can be sold as Max Pax 2 or Max Pax 3.
+
+#### Do I need to click Update after every change?
+
+Yes. Changes are not saved until you click **Update**.
+
+#### Why did availability disappear for one configuration?
+
+You likely set the daily allotment for that configuration to `0`. Check the specific day and configuration row.
+
+#### Does this change prices?
+
+No. Pricing is still controlled by your room costs and price rules.
+
+#### Is this the same as Room Restriction?
+
+No. Different Max Pax sets occupancy and availability. Room Restriction blocks specific bed combinations.

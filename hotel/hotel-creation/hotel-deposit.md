@@ -1,21 +1,29 @@
+---
+description: Manage hotel deposits and payback against invoices.
+---
+
 # Hotel Deposit
 
-#### **Overview**
+### Overview
 
-The _Deposit_ section is used to manage and track deposit rules and payments between the hotel and the system. Deposits ensure that a financial commitment is secured for reservations and can be linked to invoices and repayment terms. This module provides an overview of all deposits, amounts, dates, and repayment status.
+The **Deposit** section tracks deposit agreements with a hotel supplier.
 
-#### **Purpose**
+It helps you register deposits, link them to invoices, and track payback/deductions.
+
+Where to find it: **Hotel → Deposit**.
+
+### Purpose
 
 * To record and manage hotel deposit agreements.
 * To track payment dates, amounts, and repayment obligations.
 * To connect deposits with invoices for proper financial reconciliation.
 * To provide transparency on outstanding and completed financial obligations.
 
-#### Fields and Explanations
+### Screen overview
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-**Filter Options (Top Section)**
+#### Filters (top section)
 
 1. **Deposit Date From / To**
    * Filters deposits by their effective start and end dates.
@@ -24,53 +32,87 @@ The _Deposit_ section is used to manage and track deposit rules and payments bet
    * Filters by invoice issue dates.
    * Helps match deposits against issued invoices.
 3. **Invoice No**
-   * Search deposits linked to a specific invoice number.
-4. **Display / Clear Buttons**
+   * Searches deposits linked to a specific invoice number.
+4. **Display / Clear**
    * **Display** → Applies the chosen filters.
    * **Clear** → Resets filters to show all deposits.
 
 ***
 
-**Deposits Table**
+#### Deposits table
 
-1. **Deposit Date -** The date the deposit is registered.
+1. **Deposit Date** – The date the deposit is registered.
    * Example: _01-11-2025_.
-2. **Payment Type -** The category of the deposit (e.g., _NormalDeposit_).
-3. **Amount -** The value of the deposit for that entry.
+2. **Payment Type** – The deposit type (for example, _NormalDeposit_).
+3. **Amount** – The amount for this deposit entry.
    * Example: _500_.
-4. **Total Amount -** Sum of deposits recorded.
-   * Ensures visibility of the overall financial commitment.
-5. **Payback Date - T**he date when the payment is made. At the final payment, the deposit is deducted from the hotel invoice, only if it's in the paid status.
+4. **Total Amount** – Total of all deposit entries in the list.
+5. **Payback Date** – Planned payback date.
+   * On the final payment, the deposit can be deducted from the hotel invoice.
+   * The deposit must be in **Paid** status.
    * Example: _30-11-2025_.
-6. **Payback On -** The system field to indicate when repayment occurred (if applicable).
-7. **Invoice No -** Links the deposit to a specific invoice, if one has been issued.
-8. **Deduction -** Field where deductions from the deposit can be entered.
-   * Used to record amounts subtracted for costs or adjustments.
-9. **Delete (Trash Icon) -** Removes a deposit entry.
-   * Use carefully, as financial records may need to be retained for audit purposes.
+6. **Payback On** – Actual payback date/time (set when payback happens).
+7. **Invoice No** – Links the deposit to a specific invoice (if available).
+8. **Deduction** – Amount deducted from the deposit (costs, corrections, adjustments).
+9. **Delete (trash icon)** – Deletes the deposit entry.
+
+{% hint style="warning" %}
+Be careful with deletions. Your accounting or audit process may require keeping deposit history.
+{% endhint %}
 
 ***
 
-**Invoices Section (Bottom Table)**
+#### Invoices section (bottom table)
 
-1. **Date - D**ate of the invoice related to the deposit.
-2. **Deposit Paid -** Amount paid by the customer as a deposit.
-3. **Deposit Payback -** Amount refunded or adjusted back to the customer.
-4. **Rest Payment -** Remaining balance to be paid after deducting deposit and adjustments.
-5. **Invoice No -** Reference number of the linked invoice.
-6. **Archived -** Indicates whether the invoice record is archived.
-7. **Status -** Shows the current processing status of the invoice.
+1. **Date** – Invoice date linked to the deposit.
+2. **Deposit Paid** – Amount paid by the customer as a deposit.
+3. **Deposit Payback** – Amount refunded or adjusted back to the customer.
+4. **Rest Payment** – Remaining balance to be paid after deducting deposit and adjustments.
+5. **Invoice No** – Reference number of the linked invoice.
+6. **Archived** – Indicates whether the invoice record is archived.
+7. **Status** – Shows the current processing status of the invoice.
 
 ***
 
-**Buttons & Options**
+#### Actions
 
 * **New Deposit** → Add a standard deposit entry.
-* **New Special Deposit Rule** → Create a custom rule (e.g., different amounts, exceptions, or conditions).
+* **New Special Deposit Rule** → Create multiple deposit dates and amounts from a rule.
 * **Archived also (dropdown)** → Controls whether archived invoices are visible.
 
-Deposits are paid at a date agreed upon in the contract between companies/agencies and creditors
+### How it works (typical flow)
 
-A feature has been added: the **Special Deposit Rule**. It is used to pre-calculate the deposit amount for multiple deposit dates. It requires the allotments and costs of the rooms to be set in the hotel
+1. Agree deposit terms with the hotel supplier (date, amount, payback logic).
+2. Register the deposit with **New Deposit** (or use **New Special Deposit Rule**).
+3. Link the deposit to the relevant invoice when available.
+4. When final payment is processed, the deposit can be deducted from the hotel invoice.
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Deposits are typically paid on the date agreed in the supplier contract.
+
+### Special Deposit Rule
+
+Use **Special Deposit Rule** to pre-calculate deposit amounts across multiple deposit dates.
+
+Prerequisites:
+
+* Room **allotments** are set for the hotel.
+* Room **costs** are set for the hotel.
+
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+### FAQ
+
+**Q: What’s the difference between “Payback Date” and “Payback On”?**\
+**A:** **Payback Date** is the planned date. **Payback On** is the actual date/time when it happened.
+
+**Q: Why isn’t the deposit deducted from the hotel invoice?**\
+**A:** The deposit must be in **Paid** status. The deduction happens on the final payment run.
+
+**Q: I created a Special Deposit Rule, but the amounts look wrong. Why?**\
+**A:** The rule uses the hotel’s room allotments and room costs. Missing data changes the calculation.
+
+**Q: What does “Archived also” do?**\
+**A:** It toggles whether archived invoices appear in the invoice list at the bottom.
+
+**Q: Can I delete a deposit entry?**\
+**A:** Yes, via the trash icon. Confirm your internal audit/accounting requirements first.

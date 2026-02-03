@@ -2,51 +2,59 @@
 
 ### Overview
 
-The **Arrival Gateways** interface provides a structured list of airport gateways, allowing users to manage and categorize various arrival destinations. The interface includes filtering, searching, and management functionalities.
+**Arrival Gateways** is a reference list of airports used as arrival points. Use it to search, sort, create, and delete arrival gateways.
 
 <figure><img src="../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Features
 
-* **Search and Filter:** A search bar allows users to quickly locate specific arrival gateways.
-* **Sortable Columns:** Columns can be sorted based on various parameters such as IATA code, plaintext location, or area insurance.
-* **Create New Entry:** A "Create" button enables users to add new arrival gateways.
-* **Delete Functionality:** Each entry has a delete icon (trash bin) to remove it from the list.
+* **Search:** Find gateways by typing in the search bar.
+* **Sorting:** Sort by columns like IATA code, Plaintext, and Insurance area.
+* **Create:** Add a new gateway with the **Create** button.
+* **Delete:** Remove a gateway using the trash bin icon.
 
 ### Column Breakdown
 
-1. **IATA Code:** The official three-letter airport code (e.g., PMI for Palma - Mallorca).
-2. **Plaintext:** The full airport name or common destination name.
-3. **Plaintext (Not Flight):** A simplified version of the destination name.
-4. **Area Insurance:** Categorization of the location under specific insurance areas (e.g., Europe, Extended Europe, World).
-5. **Actions:** A delete icon to remove entries from the system.
+1. **IATA Code:** The three-letter airport code (for example, `PMI`).
+2. **Plaintext:** The display name for the gateway.
+3. **Plaintext (Not Flight):** The display name used in contexts not tied to flights.
+4. **Insurance area:** Classification used for insurance reporting (for example, Europe).
+5. **Actions:** Delete the gateway.
 
-### User Actions
+### Common tasks
 
-#### Searching for an Arrival Gateway
+{% stepper %}
+{% step %}
+### Search for a gateway
 
-1. Use the search bar at the top to enter a keyword.
-2. The table dynamically updates to show matching results.
+1. Type in the search bar.
+2. Review the filtered list.
+{% endstep %}
 
-#### Creating a New Entry
+{% step %}
+### Create a gateway
 
 1. Click on the **Create** button.
-2. Enter the necessary details (IATA code, name, area, etc.).
-3. Save the entry to add it to the list.
+2. Enter the required fields.
+3. Save.
+{% endstep %}
 
-#### Deleting an Entry
+{% step %}
+### Delete a gateway
 
-1. Locate the arrival gateway you want to remove.
-2. Click the trash bin icon under the "Actions" column.
+1. Find the gateway in the list.
+2. Click the trash bin icon in **Actions**.
 3. Confirm deletion if prompted.
+{% endstep %}
+{% endstepper %}
 
 ### Notes
 
-1. "Extended Europe" indicates destinations that are not part of the standard European classification but are still considered within an extended coverage area.
+* **Insurance area** values are company-defined. They can differ by brand.
+* **Extended Europe** usually means “Europe + extra covered countries”. The exact list depends on your insurance setup.
+* **World** typically means destinations outside your European insurance areas.
 
-"**Extended Europe**" in the context of **insurance**, particularly **travel or car insurance**, refers to a broader geographic coverage area than just the countries of the **European Union (EU)** or the **European Economic Area (EEA)**.
-
-#### What is "Extended Europe"?
+**What is "Extended Europe"?**
 
 It typically includes:
 
@@ -61,14 +69,54 @@ It typically includes:
 
 So "Extended Europe" is a **marketing or practical term** used by insurers to indicate you're covered in **more countries than just the EU**.
 
-#### When would "Extended Europe" be relevant?
+**When would "Extended Europe" be relevant?**
 
 * If you're traveling or driving beyond Scandinavia into **non-EU Eastern Europe** or **Turkey**
 * If you want broader coverage that includes **less typical destinations** within Europe.
 
-
-
-2. "World" signifies destinations outside of the European insurance coverage.
-3. Some locations are categorized differently based on insurance policies.
+1. "World" signifies destinations outside of the European insurance coverage.
+2. Some locations are categorized differently based on insurance policies.
 
 This interface is designed to streamline airport gateway management efficiently and intuitively.
+
+### FAQ
+
+<details>
+
+<summary><strong>What’s the difference between “Plaintext” and “Plaintext (Not Flight)”?</strong></summary>
+
+Use **Plaintext** as the standard display name. Use **Plaintext (Not Flight)** when the system needs a name outside flight contexts.
+
+</details>
+
+<details>
+
+<summary><strong>What is the “Insurance area” used for?</strong></summary>
+
+It groups gateways for insurance-related logic and reporting. The available values come from your configuration.
+
+</details>
+
+<details>
+
+<summary><strong>Can I reuse the same IATA code for multiple gateways?</strong></summary>
+
+Arrival gateways are typically unique per IATA code. If you need multiple names, prefer adjusting the display fields instead.
+
+</details>
+
+<details>
+
+<summary><strong>What happens if I delete an arrival gateway?</strong></summary>
+
+The gateway is removed from the list. Anything referencing it may fail or need remapping. If you are unsure, validate dependencies first.
+
+</details>
+
+<details>
+
+<summary><strong>Do you support placeholder IATA codes (for example, <code>ZZZ</code>)?</strong></summary>
+
+Some setups use placeholder codes for non-standard airports or manual handling. If you use placeholders, keep the naming consistent across arrival and departure gateways.
+
+</details>

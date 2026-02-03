@@ -1,12 +1,28 @@
+---
+description: >-
+  Configure and enforce two-factor authentication (SMS, email, or authenticator
+  app) for Tourpaq users.
+---
+
 # System Setup – Two-Factor Authentication (2F Auth)
 
 ### Overview
 
 The **2F Auth (Two-Factor Authentication)** section of the **System Setup** allows administrators to configure and enforce additional security layers for user logins. By enabling these options, users are required to verify their identity with a second authentication factor besides their regular password, making the system more secure against unauthorized access.
 
+Go to **Setup → System Setup → Two-Factor Authentication (2F Auth)**.
+
+{% hint style="warning" %}
+Enabling 2FA can lock users out if their phone/email is not correct.
+
+Validate contact data and test with a pilot user first.
+{% endhint %}
+
 ### Purpose
 
-The purpose of this section is to ensure that user accounts are protected with enhanced login security. Two-Factor Authentication (2FA) reduces the risk of compromised accounts, as attackers would need access not only to the user’s password but also to their secondary authentication method (SMS, email, or authenticator app).
+This section protects user accounts with enhanced login security.
+
+Two-Factor Authentication (2FA) reduces account takeover risk because an attacker needs both the password and a second factor (SMS, email, or an authenticator app).
 
 ### Fields & Options
 
@@ -46,6 +62,52 @@ The purpose of this section is to ensure that user accounts are protected with e
    * Inform users about the activation of 2FA.
    * Provide them with setup instructions (e.g., how to download an authenticator app or ensure they have access to their registered email/phone).
 
-***
+{% hint style="info" %}
+Once enabled, users will always be required to use 2FA at login.
 
-✅ **Note:** Once these options are activated, users will **always** be required to use 2FA at login. It is recommended to choose at least one method that is most suitable for your organization’s workflow.
+Pick at least one method that fits your workflow and support capacity.
+{% endhint %}
+
+### FAQ
+
+<details>
+
+<summary><strong>Which 2FA method should we choose?</strong></summary>
+
+Use **Authenticator App** if you want the strongest option and offline support.
+
+Use **Email** if users always have email access.
+
+Use **SMS** if you already manage validated mobile numbers and SMS delivery.
+
+</details>
+
+<details>
+
+<summary><strong>Can we enable more than one method?</strong></summary>
+
+Yes. You can enable multiple methods.
+
+This can help users if one channel is unavailable.
+
+</details>
+
+<details>
+
+<summary><strong>What should we check before enabling 2FA?</strong></summary>
+
+Verify each user has the correct email and/or phone number.
+
+Then test with a pilot user before rolling out to everyone.
+
+</details>
+
+<details>
+
+<summary><strong>What happens if a user can’t receive their code?</strong></summary>
+
+They may be blocked from logging in.
+
+Your admin/support team must update the user’s contact details or switch to another method.
+
+</details>

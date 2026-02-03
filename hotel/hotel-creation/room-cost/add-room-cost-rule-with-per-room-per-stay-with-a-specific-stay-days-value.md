@@ -2,189 +2,156 @@
 
 ### Overview
 
-This page outlines how to **configure and test hotel room cost rules** in the booking system. You'll learn how to define cost rules based on stay intervals, validate that they apply correctly to bookings, and observe how they respond to different travel intervals.
+This page shows how to create a **Per Room Per Stay** room cost rule that only applies to a **specific stay length**.
 
-The process is used to ensure that only **valid, matching cost rules** are applied to bookings and that mismatches result in no costs being allocated.
+You will also test both outcomes:
+
+* A booking where the stay length **matches** the rule.
+* A booking where the stay length **does not match** the rule.
 
 ### Purpose
 
-The goal of this workflow is to:
+Use this workflow to:
 
-* Ensure that room cost rules apply **only** when booking intervals match their configured periods.
-* Validate that rule changes take effect without system errors.
-* Confirm that the system correctly **includes or excludes costs** based on input data.
+* Ensure the rule applies **only** when the stay length matches **Stay Days No**.
+* Verify that the cost line appears in **Profit → Hotel Cost** when it should.
+* Verify that the cost line is **not** added when the stay length does not match.
 
-This testing is important to guarantee **financial accuracy** and **logic reliability** when travel agents or systems create real bookings.
+This protects your margins and supplier costs from bad rule matches.
 
 ### Preconditions
 
-Before beginning this test, ensure:
+Before you start:
 
 * You have access to the **Hotel** and **Booking** modules.
-* A hotel is available in the system.
 * You have permission to create and edit room cost rules.
-* The system has transport options with varying travel intervals.
+* You have a test setup where you can create bookings with **different stay lengths**.
 
-### &#x20;Step-by-Step Instructions & Field Explanations
+{% hint style="info" %}
+**Per Room Per Stay** is a fixed cost per stay.
 
-#### 1. Access the **Hotel → Hotels** Page
+Tourpaq can still split the value across stay days internally for allocation and reporting.
+{% endhint %}
 
-* **Action**: Open the Hotels section from the main navigation.
-* **Expected**: A list of all configured hotels appears.
-* **Purpose**: Begin the room cost configuration.
+### Create and test a rule with **Stay Days No**
 
-***
+{% stepper %}
+{% step %}
+### Open the hotel
 
-#### 2. Select a Hotel
+1. Go to **Hotel → Hotels**.
+2. Select the hotel you want to test.
+3. Open **Room Costs**.
+{% endstep %}
 
-* **Action**: Click on a hotel name.
-* **Expected**: The hotel details page opens.
+{% step %}
+### Create the room cost rule
 
-***
+1. Click **Create** (or **+**).
+2. Fill the rule fields your setup requires, for example:
+   * Cost value and currency
+   * Validity period (start/end)
+   * Room type
+   * Transport interval (if used in your setup)
+3. Set **Stay Type** to **Per Room Per Stay**.
 
-#### 3. Click on the **Room Costs** Section
+When you select **Per Room Per Stay**, **Stay Days No** becomes available.
+{% endstep %}
 
-* **Action**: Navigate to the "Room Costs" tab within hotel details.
-* **Expected**: All existing room cost rules are shown.
+{% step %}
+### Set the stay-length filter
 
-***
+1. In **Stay Days No**, enter a value (example: `5`).
+2. Click the **Save** icon.
 
-#### 4. Click on **Create**
+The rule now matches only bookings with this exact stay length.
+{% endstep %}
 
-* **Action**: Click the "Create" or "+" button.
-* **Expected**: A new row for a rule appears.
+{% step %}
+### Test: booking where the stay length matches
 
-***
+1. Create a new booking that matches the **Stay Days No** value.
+2. Confirm the booking status is **OK**.
+3. Open **Profit → Hotel Cost**.
+4. Verify there is a **Room Cost** line.
 
-#### 5. Add Details for the Rule
+Note: the value may look divided by days in the cost view.
+{% endstep %}
 
-* **Action**: Enter:
-  * Cost value
-  * Currency
-  * Validity period (start and end dates)
-  * Room type
-  * Transport interval
-* **Expected**: The entered values appear in the respective fields.
+{% step %}
+### Test: booking where the stay length does not match
 
-***
+1. Go back to the hotel’s **Room Costs**.
+2. Edit the same rule.
+3. Change **Stay Days No** to a different value.
+4. Click the **Save** icon.
+5. Create a new booking with a stay length that does **not** match the updated value.
+6. Open **Profit → Hotel Cost**.
+7. Verify there is **no Room Cost** line.
+{% endstep %}
+{% endstepper %}
 
-#### 6. For **Stay Type**, Select **Per Room Per Stay**
+### Key fields and behavior
 
-* **Explanation**: This rule type applies one total cost regardless of the number of nights.
-* **Expected**: A new field called **Stay Days No** becomes visible.
+* **Stay Type**
+  * Controls the calculation basis.
+  * **Per Room Per Stay** is one fixed cost for the whole stay.
+* **Stay Days No**
+  * Adds an **exact stay-length requirement**.
+  * If it is set to `5`, only 5-day stays match.
+* **Room Cost line (Profit → Hotel Cost)**
+  * Appears only when the rule matches the booking.
+  * May be distributed across stay days internally.
 
-***
+### Troubleshooting
 
-#### 7. In the **Stay Days No** Field, Enter a Value
+If the cost does not show up:
 
-* **Action**: Enter a number (e.g., 5 for a 5-day rule).
-* **Expected**: Value is shown in the input.
+* Check the rule’s **validity period**.
+* Check room type and transport interval filters.
+* Verify the booking stay length matches **Stay Days No** exactly.
+* If you edited the rule after creating the booking, create a **new** test booking.
 
-***
+### FAQ
 
-#### 8. Click on the **Save Icon**
+#### What does **Stay Days No** measure?
 
-* **Action**: Click the disk or save icon to commit the rule.
-* **Expected**: A success notification appears.
+It is the stay length your setup uses for matching.
 
-***
+In most setups, it follows the booking’s arrival/departure interval.
 
-#### 9. Create a New Booking Using a Transport Option with an Interval That Matches the Rule
+If you are unsure, confirm by creating a booking and checking which stay length it reports.
 
-* **Action**: Make a booking where the stay duration equals the `Stay Days No` defined earlier.
-* **Expected**: Booking status is set to **OK**.
-* **Why**: The rule should match this booking.
+#### Why does a per-stay cost look like a per-day value in Hotel Cost?
 
-***
+Tourpaq can distribute a per-stay value across days internally.
 
-#### 10. Click on **Profit**
+This supports allocation, reporting, and totals.
 
-* **Action**: Open the booking and go to the **Profit** tab.
-* **Expected**: Profit breakdown is displayed.
+#### Does changing the rule update existing bookings?
 
-***
+Usually no.
 
-#### 11. Click on **Hotel Cost**
+Test changes on a **new booking** unless your process explicitly recalculates costs.
 
-* **Action**: Go to the **Hotel Cost** section.
-* **Expected**: All hotel-related cost lines are visible.
+#### Can I support multiple stay lengths?
 
-***
+Yes.
 
-#### 12. Check the **Room Cost** Row
+Create one rule per stay length and set **Stay Days No** on each rule.
 
-* **Expected**: Cost is correctly divided by the number of days for internal calculations.
+#### The booking is **OK**, but there is no Room Cost line. Why?
 
-***
+Most misses are caused by filters.
 
-#### 13. Return to the Hotel Details Page
+Re-check:
 
-* **Action**: Go back to the selected hotel.
-* **Purpose**: To update the existing rule for additional testing.
+* validity period
+* room type
+* transport interval
+* **Stay Days No** match
 
-***
+### Related pages
 
-#### 14. Click on the **Room Costs** Section Again
-
-* **Action**: Return to the same rule configuration page.
-* **Expected**: Room cost rules are visible.
-
-***
-
-#### 15. Edit the Existing Rule
-
-* **Action**: Change the **Stay Days No** to a **different value**.
-* **Expected**: Input updates visibly.
-
-***
-
-#### 16. Click on the **Save Icon**
-
-* **Action**: Save the updated rule.
-* **Expected**: A success alert is displayed.
-
-***
-
-#### 17. Create a New Booking with a **Different Interval**
-
-* **Action**: Make a new booking with a stay length that **does NOT match** the updated `Stay Days No`.
-* **Expected**: Booking status is still **OK**, but the cost rule should not apply.
-
-***
-
-#### 18. Click on **Profit**
-
-* **Action**: Open the profit details for the new booking.
-* **Expected**: The profit section loads correctly.
-
-***
-
-#### 19. Click on **Hotel Cost**
-
-* **Expected**: Hotel cost section opens.
-
-***
-
-#### 20. Check the **Room Cost** Row
-
-* **Expected**: **No cost is listed** — the rule does not apply due to interval mismatch.
-
-***
-
-### Summary of Field Behavior
-
-| Field / Action         | Behavior / Description                                              |
-| ---------------------- | ------------------------------------------------------------------- |
-| **Stay Type**          | Defines rule calculation method (Per Stay vs. Per Day)              |
-| **Stay Days No**       | Limits rule to bookings with this exact stay duration               |
-| **Transport Interval** | Defines arrival/departure match criteria                            |
-| **Room Cost Row**      | Appears in Hotel Cost if the rule matches the booking               |
-| **Booking Profit**     | Reflects accurate margins only when a matching cost rule is applied |
-
-### Outcome
-
-By completing this process, you'll confirm that:
-
-* Room cost rules apply only under valid conditions.
-* Changes to rules dynamically affect future bookings.
-* The system prevents mismatched rules from affecting cost calculations.
+* [Add room cost rule with "Per Room Per Stay" type](add-room-cost-rule-with-per-room-per-stay-type.md)
+* [Room cost](./)

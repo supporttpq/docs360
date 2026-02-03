@@ -2,78 +2,129 @@
 
 ### Overview
 
-The **Hotel Release Reporting Scheduler** is a set of configurable rules that are executed periodically by a Windows service. The scheduler automates the release of hotel rooms according to the rules defined in Tourpaq Office, ensuring timely notifications to suppliers and proper management of allotments.
+The **Hotel Release Reporting Scheduler** is a set of configurable rules that are executed periodically by a Windows service.&#x20;
+
+The scheduler automates the release of hotel rooms according to the rules defined in Tourpaq Office, ensuring timely notifications to suppliers and proper management of allotments.
 
 ### Purpose
 
-The scheduler allows administrators to:
+Use the scheduler to:
 
-* Automate hotel room release reports on a daily, weekly, monthly, or annual basis.
-* Ensure consistent and timely execution of release rules.
-* Reduce manual work for hotel release management.
+* send release lists daily, weekly, monthly, or annually
+* ensure release rules run consistently
+* reduce manual work
 
-### How to Add a New Rule
+#### Related pages
 
-To configure a release reporting rule for a hotel:
+* [Releases](./)
+* [Hotel release - automation](hotel-release-automation.md)
 
-1. Navigate to **Dashboard → Hotel → Release Tab → Scheduler**.
-2. Click **Add Record** to create a new scheduler row.
-3. Enter the required details for the scheduler (hotel, dates, frequency, etc.).
-4. Click **Insert** to save the new scheduler row.
-5. To modify an existing scheduler row, edit the row directly in the grid and click **Update** to save changes.
+### Create or edit a scheduler rule
 
-| Column name         | Column type | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| ------------------- | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Interval            | enumeration | <p>Interval specifies how often the scheduler it will be send.</p><ul><li>If <strong>Daily</strong> is chosen the scheduler will run every day. Next to interval drop down is a date field and if chosen it will run the scheduler not before that date.</li><li>If <strong>Weekly</strong> the scheduler will run every week at a mandatory day specified right next to the interval drop down.</li><li>If <strong>Monthly</strong> is chosen the scheduler will run every month on a day specified right next to interval drop down.</li><li>If <strong>Annually</strong> is chosen the scheduler will run every year on a day specified right next to interval drop down.</li></ul> |
-| Days After          | number      | The value specifies the number of days after the release date. Ex.: If the scheduler is set to be sent every Friday (10.01.2014) and the Days after is 7 days then the the release will be made in the interval 10.01.2014 to 17.01.2014.                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| Hour                | time        | The hour when the hotel allotment list will be send. The field is mandatory                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| Email               | text        | The email address that will receive the list.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| Room                | enumeration | Is a dynamic list of room assigned to the current hotel. If not chosen the rule will apply for all rooms.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| Start Period        | date        | The allotment will be released not before the Start Period.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| End Period          | date        | The allotment will be released not after the End Period.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| Cut Down Allotments | check box   | If On the available rooms will set equal with booked rooms and free rooms will be zero. Otherwise the room availability will not be modified.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+To configure a rule for a hotel:
+
+1. Go to **Dashboard → Hotel → Releases → Scheduler**.
+2. Click **Add Record**.
+3. Fill in the scheduler fields.
+4. Click **Insert**.
+5. Edit existing rows inline and click **Update**.
+
+{% hint style="info" %}
+Dates in the screenshots use the format **DD.MM.YYYY**.
+{% endhint %}
+
+### Field reference
+
+| Field                   | What it controls                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Interval**            | <p>How often the scheduler runs. </p><ul><li>If <strong>Daily</strong> is chosen the scheduler will run every day. Next to interval drop down is a date field and if chosen it will run the scheduler not before that date.</li><li>If <strong>Weekly</strong> the scheduler will run every week at a mandatory day specified right next to the interval drop down.</li><li>If <strong>Monthly</strong> is chosen the scheduler will run every month on a day specified right next to interval drop down.</li><li>If <strong>Annually</strong> is chosen the scheduler will run every year on a day specified right next to interval drop down.</li></ul> |
+| **Days**                | <p>How many days are included in the exported interval after the run date. Example: Run date <strong>10.01.2026</strong> + <code>7</code> means the interval <strong>10.01.2026 → 17.01.2026</strong>. </p><p>*Note: If Daily is selected, the field is disabled (read only)</p>                                                                                                                                                                                                                                                                                                                                                                          |
+| **Hour**                | When the list is sent. This field is mandatory.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| **Email**               | Who receives the list.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Room**                | Optional filter for a specific room type. Leave blank to include all room types.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| **Start Period**        | Do not include allotments before this date.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| **End Period**          | Do not include allotments after this date.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| **Cut Down Allotments** | If enabled, the system sets **Available rooms = Booked rooms** and **Free rooms = 0** for the affected period. If disabled, availability is not modified.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 
 ### Scheduler Types
 
-**1. Daily Release Scheduler**
-
+{% tabs %}
+{% tab title="Daily" %}
 <figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* Runs **every day** starting from the first execution date.
-* Example:
-  * Service first runs on **24.03.2025** for interval **24.03.2025 – 31.03.2025**.
-  * The rule’s allowed interval is **27.03.2025 – 31.03.2025**, so only dates **27 – 31.03.2025** are released.
+* Runs every day starting from the first execution date.
 
+Example:
 
+* Service runs on **24.03.2025**.
+* Interval from **Days After** is **24.03.2025 → 31.03.2025**.
+* Rule period is **27.03.2025 → 31.03.2025**.
+* Result: only **27.03.2025 → 31.03.2025** is included.
+{% endtab %}
 
-2. Weekly Release Scheduler
-
+{% tab title="Weekly" %}
 <figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* Runs **once a week** on a specific day of the week.
+* Runs once per week.
+* You must choose the weekday.
 * Useful for hotels that want to release rooms on a consistent weekly schedule.
+{% endtab %}
 
-
-
-3. Monthly Release Scheduler
-
+{% tab title="Monthly" %}
 <figure><img src="../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* Runs **once a month** on a specific day of the month.
+* Runs once per month.
+* You must choose the day of month.
 * Ideal for monthly batch updates of hotel room availability.
+{% endtab %}
 
-
-
-4. Annual Release Scheduler
-
+{% tab title="Annually" %}
 <figure><img src="../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* Runs **once a year** for the entire specified start–end period.
-* 📝 **Note:** In annual mode, the **“Days after”** field is ignored.
+* Runs once per year.
+* It covers the configured **Start Period** and **End Period**.
 
-#### Notes
+{% hint style="info" %}
+In annual mode, **Days After** is ignored.
+{% endhint %}
+{% endtab %}
+{% endtabs %}
 
-* Each scheduler is linked to a **specific hotel** and cannot apply to multiple hotels simultaneously.
-* Scheduler execution is handled by the Windows service; administrators only need to configure rules in Tourpaq Office.
-* Logs and reports for each run are generated automatically and can be reviewed for auditing purposes.
+### Notes and limitations
 
+* Each scheduler row belongs to one hotel.
+* The scheduler only runs if the Windows service is running.
+* Use the release logs to audit what was sent and when.
+
+### FAQ
+
+#### Does this scheduler release rooms, or only send a report?
+
+It sends a scheduled release list.
+
+If **Cut Down Allotments** is enabled, it also updates availability.
+
+#### Can one scheduler rule cover multiple hotels?
+
+No. Each row is linked to one hotel.
+
+#### Which email address receives the release list?
+
+The address entered in the **Email** field for that scheduler row.
+
+#### What time does the list get sent?
+
+The **Hour** value in the scheduler row.
+
+#### Why are some dates missing from the exported interval?
+
+The exported interval is limited by:
+
+* **Start Period** and **End Period**
+* any period constraints on the underlying release rules
+
+#### What’s the difference between this and “Hotel release - automation”?
+
+Automation identifies rooms to release and marks allotments as **Suitable for release**.
+
+This scheduler controls when release lists are sent and over which date interval.

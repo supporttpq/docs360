@@ -2,45 +2,97 @@
 
 ### Overview
 
-The **Room Restriction** feature allows hotels to control which bed combinations are allowed for each room type. This ensures that only supported room configurations can be booked, preventing invalid or undesired occupancy setups.
+**Room Restriction** lets you block specific bed combinations for a room type. It prevents unsupported occupancy setups in bookings and offers.
 
 ### Purpose
 
-* Customize bed availability per room type.
-* Control occupancy rules and prevent unsupported combinations from being offered.
-* Maintain consistency between the hotel’s actual room setup and what is available for booking.
+* Control which bed combinations can be sold for each room type.
+* Prevent unsupported combinations from being bookable.
+* Keep the booking flow aligned with the real room setup.
 
-### How It Works
+### Where to find it
 
-* A **Restrictions** section is added to the **Hotel Room Types** settings.
-* The section lists all possible bed configurations for the room type, including:
-  * Ordinary beds
-  * Extra beds
-  * Extra child beds
-* Users can **disable specific combinations** by selecting the **restriction checkbox**.
-* Restricted combinations will **not be available** for booking or offers.
+Go to **Hotel → Room Types → Edit**. Scroll to the **Restrictions** section.
+
+<figure><img src="../../../.gitbook/assets/image (3) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+### How it works
+
+* The **Restrictions** list shows all bed combinations for the room type.
+* Each row represents one combination.
+* Select the **Restriction** checkbox to disable that row.
+* Disabled combinations are not available in bookings or offers.
+
+### What a combination can include
+
+* Ordinary beds
+* Extra beds
+* Extra child beds
 
 #### Example
 
-For a room with:
+Room setup:
 
 * 2 ordinary beds
 * 1 extra bed
 * 1 extra child bed
 
-The hotel can restrict certain combinations (e.g., 2 ordinary beds + 1 extra child bed only) to prevent invalid booking scenarios.
-
-This ensures that hotels can customize bed availability per room type and control occupancy rules.
-
-As well as in the Hotel Room under Hotel → Room Types → Edit.
-
-<figure><img src="../../../.gitbook/assets/image (3) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+You can allow only specific combinations. Example: allow `2 ordinary + 1 extra child` only. Then restrict every other combination.
 
 ### Instructions for Use
 
-1. Navigate to **Hotel → Room Types**.
-2. Select a room and click **Edit**.
-3. Scroll to the **Restrictions** section.
-4. Review the list of all possible bed configurations.
-5. Select the **restriction checkbox** for any combinations that should not be bookable.
-6. Save the changes.
+{% stepper %}
+{% step %}
+#### Open the room type
+
+Go to **Hotel → Room Types**. Select the room type, then click **Edit**.
+{% endstep %}
+
+{% step %}
+#### Review combinations
+
+Scroll to **Restrictions**. Review the list of combinations.
+{% endstep %}
+
+{% step %}
+#### Block combinations
+
+Select the **Restriction** checkbox for combinations you want to block.
+{% endstep %}
+
+{% step %}
+#### Save
+
+Save the room type.
+{% endstep %}
+{% endstepper %}
+
+{% hint style="info" %}
+Room Restriction blocks combinations. It does not change prices or room costs.
+{% endhint %}
+
+{% hint style="info" %}
+Use [Different Max Pax](different-max-pax.md) to sell the same room type with different occupancies.
+{% endhint %}
+
+### FAQ
+
+#### What happens when I restrict a combination?
+
+The combination stops showing up in bookings and offers. It is treated as not sellable.
+
+#### Does Room Restriction change availability (allotments)?
+
+No. Allotments stay the same, but fewer combinations are eligible.
+
+#### Does this affect pricing?
+
+No. Pricing is controlled by room costs and price rules.
+
+#### A bed combination is missing. What should I check?
+
+Check if the combination is restricted. Also check if the room type setup supports that combination.
+
+#### How do I reset and allow all combinations?
+
+Clear all **Restriction** checkboxes. Then save the room type.

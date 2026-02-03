@@ -1,129 +1,193 @@
 # Hotel Layout
 
-### Description <a href="#description" id="description"></a>
+### Overview
 
-Hotel Layout is a feature that allows the user to define a floor-plan of a hotel with active-elements (rooms) and décor elements (logos/icons, anything basically). These floor-plans will be used in back office for assigning a passenger to a specific room in a hotel as well as in webbooking where the customer can choose the room he wants to be booked for him and pay an extra fee for this (Room selection supplement)
+Hotel Layout lets you build a hotel floor plan with:
 
-### Workflow <a href="#workflow" id="workflow"></a>
+* **Active elements** (rooms you can book).
+* **Decor elements** (icons/logos, facilities, etc.).
 
-For the Hotel Layout to be active on booking, i.e. the "Hotel Room"-tab to be available in Booking in Office and available in WebBooking, we have the following requirements:
+The layout is used in:
 
-* Create Supplement and add Hotel as resource on Supplement
-* Add Layout Elements and Backgrounds
-* Configure Room Numbers and allotment for Room Numbers on Hotel
-* Setup Layout on Hotel using background and elements
-* Add Room Numbes to Room Icons on Hotel Layout
+* **Office (Back office)**: assign a passenger to a specific room.
+* **WebBooking**: let the customer pick a room and pay a supplement.
 
-#### **Create the supplement**
+### Prerequisites
 
-Create the "room reservation" supplement. This supplement will automatically be added when a room is selected in the layout, and it has to be configured like this:
+To make Hotel Layout available (the **Hotel Room** tab in Office and room selection in WebBooking), you must:
 
-* Discount/Suppl Code: RR
-  * _Important! The Code "RR" connects the supplement to Room Reservation._
-* Discount or Suppl: Supplement
-* General/Specified: General
-* Fixed/Manual: Manual
-* Available for first pass: Checked
-* In "Resources"-tab, add the hotels that should use Room Reservation.
+* Create the **room reservation** supplement and add the hotel as a resource.
+* Add **backgrounds** and **layout elements**.
+* Configure **room numbers** and generate **allotments** for them.
+* Build the hotel layout using the background and elements.
+* Link **room numbers** to the room elements on the layout.
 
-This supplement will be used on multiple hotels. The price for the Room Reservation is defined for each Room Number in a later step.
+{% stepper %}
+{% step %}
+### Create the room reservation supplement
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Create a supplement used for room selection.\
+It is added automatically when a room is selected in the layout.
 
-#### **Add elements to be used on the layout**
+Configure it like this:
 
-This can be done from "Hotel-> Layout Elements"
+* **Discount/Suppl Code**: `RR`
+  * The code `RR` connects the supplement to Room Reservation.
+* **Discount or Suppl**: Supplement
+* **General/Specified**: General
+* **Fixed/Manual**: Manual
+* **Available for first pax**: enabled
+* In the **Resources** tab, add the hotels that should support room reservation.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+This supplement is reused across hotels.\
+The **price** is set per **room number** later.
 
-&#x20;We will start by adding a new hotel background and then some elements to be placed on it.
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (8).png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
 
-The Background is added from tab "Backgrounds".
+{% step %}
+### Add backgrounds and layout elements
 
-Then add Layout Elements in tab "Elements"
+Open **Hotel → Layout Elements** (see [Layout Elements](../../layout-elements.md)).
 
-Make sure that Backgrounds and Layout Elements are added in correct pixel sizes, so that the elements fit on the background. No scaling of images are done in Tourpaq.&#x20;
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-There are 3 element types relevant for Hotel Layout:
+Add a background in the **Backgrounds** tab.\
+Add elements in the **Elements** tab.
 
-* Element type "Room icon" is used to associate a room number with a room type from the hotel
-* Element type "Room" is used to add a Room-element to the hotel layout from Hotel "Layout" tab.
-* Element type "Decor" is used to add decorations, e.g. toilets, pool, beach, bar etc.
+{% hint style="warning" %}
+Use the correct pixel sizes. Tourpaq does not scale images.
+{% endhint %}
 
-To make it visible, when a room is reserved on a booking, please use images with transparent background.&#x20;
+Element types:
 
-#### **Configure the room numbers**
+* **Room icon**: connects a room number to a room type.
+* **Room**: a placeable room element on the layout.
+* **Decor**: non-bookable decoration (toilet, pool, bar, etc.).
 
-We now need to define “real” rooms for the room types of this hotel.
+{% hint style="info" %}
+Use transparent images for room icons. It makes availability colors visible.
+{% endhint %}
+{% endstep %}
 
-For this, we first define some room numbers from the tab "Room numbers", sub-tab "Room numbers". We do this by inserting a start value (for example:1) and an end value (for example:7). Numbers from 1 to 7 will be generated.&#x20;
+{% step %}
+### Configure room numbers and generate allotments
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Define the “real” rooms for the hotel’s room types.
 
-We associate a room type of the hotel with a room number from the tab "Room numbers", subtab "Room Icons". For this, we need to insert add a Layout Element of type "Room Icon" to the Room Number.
+1. Go to **Room numbers → Room numbers**.
+2. Enter a start and end value (example: `1` to `7`).
+3. Save to generate room numbers.
 
-In our example below, room number 1 is of type 2/22-H between the 1st of March and 31st of March. The elements from the drop down list "Room Icon" are layout elements of type "Room icon". Based on the record defined in subtab "Room Icons", allotments will be generated.&#x20;
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-We can see the generated allotments in subtab "Allotments". The prices  and availabililties for each date can be updated. Availabilities&#x20;
+Then connect room numbers to room types:
+
+1. Go to **Room numbers → Room Icons**.
+2. Add a layout element of type **Room icon** to each room number.
+
+Based on the **Room Icons** setup, Tourpaq generates room allotments.\
+You can view and update them in **Room numbers → Allotments**.
+
+Update:
+
+* **Availability** per date.
+* **Price** (the `RR` supplement price) per date.
 
 <figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-The colors have the following meanings:
+Allotment color meanings:
 
-* yellow - room have already been booked
-* green - room is available
-* red - room is unavailable
+* **Yellow**: already booked
+* **Green**: available
+* **Red**: unavailable
+{% endstep %}
 
-### Setup Layout on Hotel
+{% step %}
+### Build the hotel layout
 
-Afterwards, in the Hotel we want a Layout. For this, we go to the “Layout” tab and then click “Create Layout”
+Open the hotel and go to the **Layout** tab.\
+Click **Create Layout**.
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-On this screen we can create multiple sections of a hotel (e.g. one section per floor).&#x20;
+You can create multiple sections (for example, one per floor).\
+Pick a background by clicking the background image.
 
-Adding a background is as simple as clicking the background image.
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+To add rooms and decor:
 
-Now, for adding other elements (rooms and décor), we click them, and they appear in the top-left corner of the background image. Then, we can drag and drop them to the correct placement on the background image.
+1. Click an element.
+2. It appears in the top-left corner.
+3. Drag and drop it into place.
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
 
+{% step %}
+### Link room numbers to room elements
 
+Assign real room numbers to **Room** elements on the layout:
 
-We assign “Real” room numbers to "Room"-type icons on the layout by right-clicking a room where we get the option to choose the Room Number.
-
-
+1. Right-click a room element.
+2. Choose the room number.
 
 <figure><img src="../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
 
-#### **Creating and editing a booking**
+{% step %}
+### Use Hotel Layout in a booking
 
-The "Hotel Room" tab in booking shows us the layout and the possibility to select the room we want for this booking. If we have multiple room types, or more rooms of the same kind, it will show them all in the list in left column.
+In Office bookings, the **Hotel Room** tab shows the layout and available rooms.
+
+If you have multiple room types (or multiple rooms of the same type), they appear in the left list.
 
 <figure><img src="../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-By clicking room names in the list on the left, we select the room type we want to book.
+Workflow:
 
-Clicking an available room on the Hotel Layout, we can select the actual room numbers for this booking.
+1. Select a room type from the left list.
+2. Click an available room in the layout.
+3. Save.
 
-After selcting a room number and saving, the supplement (and cost for the actual room number) will be added to the first passenger on the booking.
+After saving, Tourpaq adds the `RR` supplement (and the price for the selected room number) to the **first passenger** on the booking.
 
-The background color on the Room Number indicates, if the Room Number is available on the booking:
+Availability colors in the layout:
 
-* <mark style="color:green;">Green</mark>: Available for the booking
-* <mark style="color:yellow;">Yellow</mark>: Room Number is added to this booking
-* <mark style="color:red;">Red</mark>: Not available
+* <mark style="color:green;">Green</mark>: available for the booking
+* <mark style="color:yellow;">Yellow</mark>: already selected on this booking
+* <mark style="color:red;">Red</mark>: not available
 
-If you do not see any background colors, your image used as Room Icon might not have transparent background.
+{% hint style="info" %}
+If you don’t see colors, your Room Icon image is probably not transparent.
+{% endhint %}
+{% endstep %}
+{% endstepper %}
 
-#### **Hotel layout for hotel combination**
+### Hotel layout in hotel combinations
 
-For hotel combination, layouts are available from combined hotels, if they have this feature set.
+Hotel combinations can show layouts from the combined hotels (if the feature is enabled on those hotels).
 
-To utilize this feature, hotel combinations must be assigned to the Room Supplement resources from the Room Resevation Supplement..
+To use room selection in a hotel combination, make sure the **hotel combination** is included in the **Resources** list on the `RR` supplement.
 
-#### **Please be aware**
+### FAQ
 
-\*Is it possible to see Hotel Layout section, but when you access it there is an warning message: "No information was found". \*This is happens because first time when you open webbooking, the system checks only the basic conditions(hotel has layout, there is defined supplement per company, LMS etc.), and only when you access hotel layout all the validations are made. \*We chose this workflow because will take a lot of time to validate hotel layout on first call, when webbooking is accessed for the first time.
+**Q: I can see the Hotel Layout section in WebBooking, but it shows “No information was found”. Why?**\
+**A:** WebBooking only checks basic conditions on first load (layout exists, supplement exists, etc.).\
+Full validation runs when you open the Hotel Layout section. This avoids slow initial loading.
+
+**Q: Can Tourpaq scale my background and icons?**\
+**A:** No. Use correct pixel sizes for both backgrounds and elements.
+
+**Q: Why don’t I see any availability colors on the room icons?**\
+**A:** Your Room Icon image likely lacks transparency. Use a transparent background.
+
+**Q: What connects the room selection supplement to Hotel Layout?**\
+**A:** The supplement code must be `RR`.
+
+**Q: Where do I set the price for choosing a specific room?**\
+**A:** In **Room numbers → Allotments**, per room number and date. This becomes the `RR` supplement cost.
+
+**Q: Why isn’t the “Hotel Room” tab available in Office bookings?**\
+**A:** One of the prerequisites is missing. Usually the `RR` supplement resource assignment, room numbers, or the layout-room linking.

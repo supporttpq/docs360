@@ -5,7 +5,7 @@
 The first phase of the **GDS flight booking process** follows the same logic as for **Charter Transport**.\
 The process ensures that flight availability, pricing, and ticketing rules are correctly handled through the integrated GDS system.
 
-<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Booking Phase**
 

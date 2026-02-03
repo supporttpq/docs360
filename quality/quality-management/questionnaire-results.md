@@ -15,7 +15,7 @@ To provide an overview of passenger feedback, helping travel agencies and brands
 * Identify service areas needing improvement.
 *
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Dashboard Structure**
 
@@ -27,7 +27,7 @@ To provide an overview of passenger feedback, helping travel agencies and brands
 | **Examples of Questions & Average Scores** | <p>• <strong>Airport Experience:</strong> 4.39<br>• <strong>In-Flight Service:</strong> 4.36<br>• <strong>In-Flight Food:</strong> 4.01<br>• <strong>Hotel Room Standard:</strong> 4.19</p>                                                                                                                                                                                                                                                  |
 | **Display & Dashboard Controls**           | <p>Tools to modify or navigate between views:<br>• <strong>Dashboard</strong> – Returns to the main dashboard overview.<br>• <strong>Display</strong> – Changes visualization format (e.g., pie chart, bar graph).</p>                                                                                                                                                                                                                       |
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Usage Notes**
 

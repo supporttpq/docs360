@@ -1,93 +1,145 @@
 # Reserve rooms for stay lengths
 
-### **Overview / Purpose**
+### Overview
 
-The **Reserve rooms for stay length**s feature allows agencies to reserve hotel rooms for guests on specific arrival days, **independent of transport**.\
+The **Reserve rooms for stay lengths** feature allows agencies to reserve hotel rooms for guests on specific arrival days, **independent of transport**.
+
 This is useful in cases where:
 
 * A destination has multiple transports arriving on the same day.
 * Agencies want to reserve rooms for arrivals on a certain weekday (e.g., Friday), regardless of which transport the guests use.
 * Room reservations need to be managed by **stay duration** (e.g., reserving rooms for long stays vs. short stays).
-
-⚠️ **Note:** This option is only available if the **Room Occupancy** feature has been activated by a **superadmin**.
-
-### **How to Access**
-
-1. Navigate to: **Hotel → Allotment per day → Search with Allotment Control**.
-2. Locate the R**eserve rooms for stay lengths** option.
-
-This feature allows an agency to reserve some rooms for guests on specific days, independent of the transport.\
-A destination may have several transports during a week, and they need to reserve some rooms for the arrivals on Friday. The reservation must be independent of the transport, as they may have more than one arrival on the same day, and they do not care if the guests arrive via one or the other transport.
-
-The reservation of rooms is also needed based on the duration of the stay. They need this to reserve a few rooms for longer stays, or maybe the other way around.
-
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-| Headline      | Tooltip                                                                                                                                                                  |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| ROOM          | The hotel room code                                                                                                                                                      |
-| DATE          | The date                                                                                                                                                                 |
-| DAY           | The day of the week                                                                                                                                                      |
-| NO.           | The number of rooms                                                                                                                                                      |
-| SECURED       | The number of secured rooms                                                                                                                                              |
-| GUARANTEED    | The number of guaranteed rooms                                                                                                                                           |
-| BOOK          | The number of rooms that are booked                                                                                                                                      |
-| FREE          | The number of available rooms                                                                                                                                            |
-| R             | True (green) if the room is released                                                                                                                                     |
-| FOR R         | The number of rooms available for release                                                                                                                                |
-| MAX           | The maximum number of rooms                                                                                                                                              |
-| EXTRA         | Extra rooms number                                                                                                                                                       |
-| PAX 1 - PAX 4 | The maximum number of rooms with a max of 1-4 pax                                                                                                                        |
-| MIN           | The minimum stay                                                                                                                                                         |
-| STAY LENGTH   | Specifies how many rooms are allocated for a charter transport based on the selected number of stay days                                                                 |
-| RESV          | <p>The reserved allotment. Use 0 to block allotment or a number to limit the number of allotments for the transport.<br>An empty cell does not add any restrictions.</p> |
-| BOOK          | The number of booked seats on the transport                                                                                                                              |
+* The agency protects the rooms from being booked between its normal charter flights, thus using the rooms every day.
 
 {% hint style="warning" %}
-**STAY LENGTH (3, 7)**– When you hover over these cells, a tooltip appears showing the number of reserved rooms, booked rooms, available rooms and free rooms for each corresponding stay length.
+This option requires **Room Occupancy** to be enabled by a **superadmin**.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+### How to access
 
-The tooltip for each cell displays detailed reservation data to make it easier to interpret the information behind the cell values.
+1. Go to **Hotel → Allotment per day**.
+2. Open **Search with Stay Length**.
+3. Find **Reserve rooms for stay lengths**.
 
-| **Value**     | **Explanation**                                                                                                                                                            |
-| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Reserved**  | The number of rooms reserved for the current stay length. This is the same number shown in the cell, displayed in the tooltip for easier visibility.                       |
-| **Booked**    | The number of rooms booked with a stay length equal to the current stay length, or a multiple of it.                                                                       |
-| **Available** | The number of rooms still available from the total reserved rooms.                                                                                                         |
-| **Free**      | The number of rooms that are not reserved for any stay length and are free to book. “Free” indicates that it is possible to reserve additional rooms for this stay length. |
+{% hint style="info" %}
+If you need the basics of the daily allotment screen first, see [Allotments per day](./).
+{% endhint %}
 
-For every possible duration (intervals for the eligible transports), it shall be possible to reserve a number of rooms for a specific arrival day. If there are three transports with arrival on Friday, and they represent durations of 5, 7, and 14 days, then we have the possibility to reserve rooms for this day for each duration.
+### How it works
 
-#### Add values for departure intervals and check if the booking availability updates
+You reserve rooms for an **arrival day** and a **stay length**.
 
-| Step                                                                           | Expected Results                                                                                                                                                                                                                                                                                                                         |
-| ------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Access the **Hotels→Hotel** page                                               | The list displaying all available hotels should open                                                                                                                                                                                                                                                                                     |
-| Select a hotel from the list and access the **Allotment per Day** page         | The page should open with the allotments available for the current date                                                                                                                                                                                                                                                                  |
-| Select a date and Room and click on **Search with All. Control**               | <p>The list containing all available allotments for the date and room type selected should appear<br><br><em><strong>A column available for each transport should appear with allotment inputs for each departure date</strong></em><br><br><br></p>                                                                                     |
-| Add a value for one of the departure days in a specific interval               | <p>The value should appear in the selected input<br><br><img src="https://tourpaq.youtrack.cloud/api/files/8-94884?sign=MTc0NzUyNjQwMDAwMHwxLTMyNnw4LTk0ODg0fE85Y1hab2ZZSXVmaWxQelJoWGJhR3Bvb3V2aEtHX3doaDQ0N0F2YlUyY0kNCg&#x26;updated=1747300918548" alt="image.png"></p>                                                              |
-| Click on **Update**                                                            | A success popup should appear and the value should be saved                                                                                                                                                                                                                                                                              |
-| Click on **New booking**                                                       | The booking creation menu should open                                                                                                                                                                                                                                                                                                    |
-| Select a transport with a different length                                     | <p>The departure length of each transport should appear in the booking menu<br><img src="https://tourpaq.youtrack.cloud/api/files/8-94885?sign=MTc0NzUyNjQwMDAwMHwxLTMyNnw4LTk0ODg1fExWbnAzWTBtTlc3WWlUbURkUVgwMTh4UjhycVQ4c0loOUNTTUo0RzExSk0NCg&#x26;updated=1747302678724" alt="image1.png"></p>                                      |
-| Select the hotel used for the allotment                                        | The options should be available for booking                                                                                                                                                                                                                                                                                              |
-| In the Hotel tab, check the number of available rooms                          | <p>The number should have the free allotment value without the selected rooms reserved for the travel length<br><br><img src="https://tourpaq.youtrack.cloud/api/files/8-94893?sign=MTc0NzUyNjQwMDAwMHwxLTMyNnw4LTk0ODkzfHJ2eEE2OW4yLVJLSDZZUUdUZ3hUc1lhaU1vT3V2WU1vUkJBdEtSN051dTANCg&#x26;updated=1747304624909" alt="image3.png"></p> |
-| Edit the number of rooms and passengers to be greater than the value available | The number should change                                                                                                                                                                                                                                                                                                                 |
-| Click on **Take Allotment**                                                    | <p>A warning should appear, stopping the booking from saving<br><br><img src="https://tourpaq.youtrack.cloud/api/files/8-94895?sign=MTc0NzUyNjQwMDAwMHwxLTMyNnw4LTk0ODk1fFNuWjFrbTlOWk9ibDB3aW5wbUF3S3lmYk9YeXkwdUZHRzRSbkV4T3p2Nm8NCg&#x26;updated=1747304711549" alt="image5.png"></p>                                                 |
-| Click on **Edit** in the Transport tab                                         | The list of transports should open                                                                                                                                                                                                                                                                                                       |
-| Select a transport with the same length as the one used                        | The transport selected should appear in the booking menu                                                                                                                                                                                                                                                                                 |
-| Select the hotel used for the allotment                                        | The options should be available for booking                                                                                                                                                                                                                                                                                              |
-| In the Hotel tab, check the number of available rooms                          | <p>The number of available rooms should be the one of free rooms<br><br><img src="https://tourpaq.youtrack.cloud/api/files/8-94910?sign=MTc0NzUyNjQwMDAwMHwxLTMyNnw4LTk0OTEwfHRENlQwN3FpM1lTY25qTjhvRG14VWZMUnc3cWRwUm5rZkhRaVdKRzNRZ0kNCg&#x26;updated=1747308508449" alt="image6.png"></p>                                             |
-| Return to the hotel menu                                                       | The hotel details page should open                                                                                                                                                                                                                                                                                                       |
-| Access the **Allotment per Day** tab                                           | The allotment tab should open                                                                                                                                                                                                                                                                                                            |
-| Enter the date and room used for the booking                                   | The details should be available                                                                                                                                                                                                                                                                                                          |
-| Add the value of free rooms to one of the departure days                       | The value should appear in the input                                                                                                                                                                                                                                                                                                     |
-| Click on **New booking**                                                       | The booking creation menu should open                                                                                                                                                                                                                                                                                                    |
-| Select a transport with a different length from the one used                   | The selected option should appear in the menu                                                                                                                                                                                                                                                                                            |
-| Click on the **Edit** button on the hotel tab                                  | A list of all available hotels should appear                                                                                                                                                                                                                                                                                             |
-| Check if the room is available for booking                                     | The room shouldn't be available for booking                                                                                                                                                                                                                                                                                              |
-| Click on **Edit** in the Transport tab                                         | The list of transports should open                                                                                                                                                                                                                                                                                                       |
-| Select a transport with the same length as the one used                        | The transport selected should appear in the booking menu                                                                                                                                                                                                                                                                                 |
-| Select the hotel used for the allotment                                        | The options should be available for booking                                                                                                                                                                                                                                                                                              |
-| In the Hotel tab, check the number of available rooms                          | The number of available rooms should be the one of free rooms                                                                                                                                                                                                                                                                            |
+This lets you reserve rooms for specific durations.
+
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+### Fields
+
+| Column        | Meaning                                                                                                                                                                                                                       |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ROOM TYPE     | Room type / code.                                                                                                                                                                                                             |
+| DATE          | Date of arrival.                                                                                                                                                                                                              |
+| DAY           | Weekday.                                                                                                                                                                                                                      |
+| NO.           | Total rooms allocated for the date.                                                                                                                                                                                           |
+| SECURED       | The number of secured rooms                                                                                                                                                                                                   |
+| GUARANTEED    | The number of guaranteed rooms                                                                                                                                                                                                |
+| BOOK          | Rooms booked for the date.                                                                                                                                                                                                    |
+| FREE          | Rooms still available (`NO. - BOOK`).                                                                                                                                                                                         |
+| DAYS          | <p>The number of days before arrival, the release is executed (only daily releases).<br>The cell is empty if no release rules are defined.<br>The cell is editable, allowing the release days to be edited.</p>               |
+| R             | <p>If the release is executed, the box is checked, and the release can be undone by removing the checkmark.</p><p>When a release is undone, edit DAYS with the new deadline and update AR and SR to make rooms available.</p> |
+| AR            | <p>The number of allotment rooms released.</p><p>Edit AR when a release is undone to adjust the number of rooms moved back.</p>                                                                                               |
+| SR            | <p>The number of secured rooms released.<br>Edit SR when a release is undone to adjust the number of rooms moved back.</p>                                                                                                    |
+| PAX 1 - PAX 4 | Max rooms by occupancy (1–4 pax).                                                                                                                                                                                             |
+| MIN           | Minimum stay (nights).                                                                                                                                                                                                        |
+| STAY LENGTH   | Columns where you reserve rooms per stay length.                                                                                                                                                                              |
+
+{% hint style="warning" %}
+**Stay length (5, 6, 7, 8)**: Hover a cell to see reserved, booked, available, and free rooms for that stay length.
+{% endhint %}
+
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+The tooltip helps you interpret what the cell value actually means.
+
+| **Value**           | **Explanation**                                                                                                                                                            |
+| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Reserved rooms**  | The number of rooms reserved for the current stay length. This is the same number shown in the cell, displayed in the tooltip for easier visibility.                       |
+| **Booked rooms**    | The number of rooms booked with a stay length equal to the current stay length, or a multiple of it.                                                                       |
+| **Available rooms** | The number of rooms still available from the total reserved rooms.                                                                                                         |
+| **Free rooms**      | The number of rooms that are not reserved for any stay length and are free to book. “Free” indicates that it is possible to reserve additional rooms for this stay length. |
+
+{% hint style="info" %}
+Stay length reservations are applied per eligible transport interval.
+{% endhint %}
+
+For each possible duration (based on the eligible transport intervals), rooms can be reserved for a specific arrival day. For example, if three transports arrive on Friday with durations of 5, 6, 7, and 8 days, rooms can be reserved for that Friday separately for each duration.
+
+{% hint style="info" %}
+**Important:** When a room is reserved for a specific stay length and arrival day, for example a **7-day stay**, the room is also considered reserved for **any multiple of that stay length** (such as 14 or 21 days).
+
+The same rule applies to the **number of booked rooms**. The booked value reflects not only the exact stay length, but also all multiples of that stay length.
+{% endhint %}
+
+The **Free Hotel Allotment (FHA)** in the price list represents the total of **Available** plus **Free** rooms.
+
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+* After changes are made, the system may require up to one minute to update and display the new values.
+* Updates to the price list, including **Free Hotel Allotment (FHA)** values, may take a few minutes to be reflected in the system.
+{% endhint %}
+
+In Tourpaq, there is a service called FRC (free room count) that runs between 2 minutes and up to several hours, depending on how many tasks are in the database.
+
+How long a change takes to apply depends on FRC and the Elastic search engine:
+
+* In Office, it takes effect immediately.
+* On Site, you must wait for the price list update (only after running FRC + Elastic).
+
+### FAQ
+
+<details>
+
+<summary>Why can’t I see “Reserve rooms for stay lengths”?</summary>
+
+This option requires **Room Occupancy** to be enabled by a **superadmin**.
+
+</details>
+
+<details>
+
+<summary>What does a stay length cell value represent?</summary>
+
+It is the number of rooms **reserved** for that arrival day and stay length.
+
+Hover the cell to see reserved, booked, available, and free rooms.
+
+</details>
+
+<details>
+
+<summary>Does this depend on transport?</summary>
+
+You reserve rooms independently of transport selection.
+
+Tourpaq still evaluates eligible transport intervals to determine valid stay lengths.
+
+</details>
+
+<details>
+
+<summary>Why do I need to wait before I see the effect on Site?</summary>
+
+Office updates apply immediately.
+
+Site availability depends on price list updates after FRC + Elastic.
+
+</details>
+
+<details>
+
+<summary>Why is the “Booked rooms” number higher than expected?</summary>
+
+Booked rooms include bookings with a stay length equal to the current stay length, or a multiple of it.
+
+</details>

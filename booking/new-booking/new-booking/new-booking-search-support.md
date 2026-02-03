@@ -1,118 +1,211 @@
 # New Booking search support
 
-### **Overview**
+### Overview
 
 The **Search** page is the starting point for creating a new booking in the Tourpaq Office system. It enables users to search and match available **flights** and **hotels** based on specific travel criteria, such as departure dates, destination, hotel, budget, and stay duration. The page combines filtering and sorting tools with live availability data to help tour operators quickly identify matching options and initiate a booking.
 
 ***
 
-### **Purpose**
+### Purpose
 
-The purpose of this interface is to:
+This interface helps you:
 
 * Provide travel package suggestions based on user-defined filters.
-* Display all possible **flights** and **hotels** combinations.
+* Display all possible **flight + hotel** combinations.
 * Enable direct booking initiation from matching hotel results.
 * Compare availability, stay durations, pricing, and discounts efficiently.
 
 ***
 
-### **Preconditions**
+### Preconditions
 
 Before using this screen, the following conditions must be met:
 
-* A Tourpaq Office user account with booking rights must be used.
+* You must be signed in with a Tourpaq Office account that has booking rights.
 * Price lists and allotments must be configured for the hotels and transports to return availability.
-* System date and departure data should be up to date.
-* Custom workflows must be defined if you want to filter by different booking flows (e.g., Charter & Dynamic).
+* System dates and departure data should be up to date.
+* Workflows must be configured if you want to filter by workflow (for example, **Charter & Dynamic**).
 
 ***
 
-### **Workflow and Expected Results**
+### Workflow and expected results
 
-| **Action**                                          | **Expected Result**                                                                                                                                                                                           | Example                                                                                                                     |
-| --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| Login as user                                       | Login is performed successfully                                                                                                                                                                               |                                                                                                                             |
-| Click "New Booking" and select a Brand              | New booking page is displayed                                                                                                                                                                                 | <div><figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div> |
-| Click "Search" in the Passengers section            | The Search page can be opened without filling in the number of passengers in the booking window.                                                                                                              |                                                                                                                             |
-| Click "Search" without entering travel criteria     | <p>Validation warnings:<br>– <em>Please select a departure...</em><br>– <em>Please select at least one of the following: arrival, resort or hotel!</em><br>– <em>Please fill in the departure dates!</em></p> | <div><figure><img src="../../../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure></div>     |
-| Fill in: Adults, Departures, Arrivals, Date From/To | Mandatory fields are populated                                                                                                                                                                                | <div><figure><img src="../../../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure></div>     |
-| Verify additional fields in Passengers section      | Fields shown: Child ages, Infants, Workflow, Display names checkbox, Travel Length, Resort, Hotel, Budget (max), Stars, Clear, Show availability                                                              |                                                                                                                             |
-| Click "Search"                                      | Flights and Hotels lists are displayed                                                                                                                                                                        | <div><figure><img src="../../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure></div>         |
-| Verify columns in _Flights_ section                 | Columns: Departure, Arrival, Date, Day, Transport, Interval 1–4                                                                                                                                               |                                                                                                                             |
-| Check if columns in _Flights_ section are sortable  | All listed columns are sortable                                                                                                                                                                               |                                                                                                                             |
-| Select a flight row                                 | "Clear selected row" button appears                                                                                                                                                                           | <div><figure><img src="../../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure></div>         |
-| Click "Clear selected row"                          | Row is unselected, button disappears                                                                                                                                                                          |                                                                                                                             |
-| Click "+ Filters" in Flights section                | Filters displayed: Departure, Arrival, Date from, Date to                                                                                                                                                     | <div><figure><img src="../../../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure></div>         |
-| Verify "- Filters" view in Flights                  | Contains "Clear" button                                                                                                                                                                                       |                                                                                                                             |
-| Verify columns in _Hotels_ section                  | Columns: Hotel, Stars, Resort, Int., Stay, Room type, Avail., Date, Price PA, Price PC, Normal Price, Discount, Discount Price                                                                                |                                                                                                                             |
-| Click "+ Filters" in Hotels section                 | Filters displayed: Hotel categories, Hotel facilities, Board supplement                                                                                                                                       | <div><figure><img src="../../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure></div>         |
-| Verify "- Filters" view in Hotels                   | Checkboxes: Show only free rooms, Price per pax incl. extras; also contains "Clear" button                                                                                                                    |                                                                                                                             |
-| Verify display mode buttons in Hotels section       | Buttons: "Pagination & Sorting" (default), "More/Less"                                                                                                                                                        |                                                                                                                             |
-| Switch to "More/Less"                               | Pagination removed, sorting disabled                                                                                                                                                                          |                                                                                                                             |
-| Click "+ More"                                      | More than 3 records for a hotel are shown                                                                                                                                                                     |                                                                                                                             |
-| Click "- Less"                                      | Display returns to 3 records per hotel                                                                                                                                                                        |                                                                                                                             |
-| Hover over eye icon in Hotels                       | Tooltip "View details" is displayed                                                                                                                                                                           | <div><figure><img src="../../../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure></div>         |
-| Select a hotel record                               | Buttons: "Create booking" and "Clear selected row" are shown                                                                                                                                                  | <div><figure><img src="../../../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure></div>         |
-| Click "Clear selected row"                          | Buttons disappear                                                                                                                                                                                             |                                                                                                                             |
+{% stepper %}
+{% step %}
+### Start a new booking
 
-#### Relevant Prices Shown in Search Results
+1. Click **New Booking**.
+2. Select a **Brand**.
 
-When a search is performed, all displayed prices represent **relevant and accurate values** for the booking. Each price field has a specific definition:
+New booking page is displayed.
 
-* **PRICE PA (Price per Adult)**
+<figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
 
-Shows the **average discounted price per adult**, calculated from the booking’s discount price.
+{% step %}
+### Open Search
 
-* **PRICE PC (Price per Child)**
+In the **Passengers** section, click **Search**.
 
-Shows the **average discounted price per child**.\
-If the booking does not include children, this value is **0**.
+The Search page can be opened without filling in the number of passengers in the booking window.
+{% endstep %}
 
-* **NORMAL PRICE**
+{% step %}
+### Enter travel criteria (required)
 
-Displays the **full, undiscounted price** of the booking.\
-This amount still includes any **auto-selected supplements**, and matches the "normal price" shown on the presentation website.
+Required inputs:
 
-* **DISCOUNT**
+* **Departure**
+* At least one of **Arrival**, **Resort**, or **Hotel**
+* **Date from** and **Date to**
 
-Shows the **total value of all discounts** applied to the booking.\
-This includes:
+If something is missing, you will see validation warnings.
 
-1. The difference between P-price and D-price
-2. All additional discounts applied to the booking
+<figure><img src="../../../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
 
-This value aligns with the discount information shown on the presentation website.
+{% step %}
+### Run the search
 
-* **DISCOUNT PRICE**
+Fill the main fields (Adults, Departures, Arrivals, Date From/To), then click **Search**.
 
-Displays the **final discounted price** for the booking.\
-It includes:
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-1. All discounts
-2. All supplements (including auto-selected ones)
-3. All required Extras
-4. Any relevant optional Extras
+Flights and hotels load as two result grids.
 
-This price matches the discounted booking price shown on the presentation website.
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
 
-{% hint style="danger" %}
-#### Important Note
+{% step %}
+### Review flight results (top grid)
 
-The key improvement in the Search page is the **updated and accurate DISCOUNT PRICE**, which ensures full consistency with the presentation site.
+You can sort all visible flight columns.
+
+Common columns:
+
+* Departure, Arrival, Date, Day
+* Transport
+* Interval 1–4
+
+Select a flight row to enable **Clear selected row**.
+
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+Use **+ Filters** for flight filters.
+
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
+
+{% step %}
+### Review hotel results (bottom grid)
+
+Hotel rows show hotel, stay, availability, and prices.
+
+Use **+ Filters** for advanced hotel filters.
+
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+You can switch the display mode:
+
+* **Pagination & Sorting** (default)
+* **More/Less** (no pagination, no sorting)
+
+Hover the eye icon to see **View details**.
+
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
+
+{% step %}
+### Create the booking
+
+Select a hotel row to show actions.
+
+You will see **Create booking** and **Clear selected row**.
+
+<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
+{% endstepper %}
+
+### Search results overview
+
+The Search page is split into two main result sections: **Flights** and **Hotels**. Both sections are driven by the criteria selected at the top of the page.
+
+### Flights section
+
+The Flights section shows available transports that match the search.
+
+**Displayed information**
+
+* Departure airport
+* Arrival airport
+* Date and weekday
+* Transport code
+* Interval 1–4&#x20;
+
+**Behavior**
+
+* Only transports matching the selected travel dates and route are shown
+* Selecting a flight limits hotel results to hotels compatible with that transport
+
+***
+
+### Hotels section
+
+The Hotels section lists available hotel rooms that match the search and selected flight.
+
+**Displayed information**
+
+* Hotel - Hotel code
+* Stars - Star rating
+* Resort
+* Int - Interval
+* Stay - Stay length (nights)
+* Room type
+* Avail - Available rooms
+* Date -  Departure date
+* Board - Board type which is included in the price
+* Price per person
+* Normal price - The price without discount (P price), The price includes the price of any selected board
+* Discount
+* Final discounted price and currency - The price with discount (D price). The price includes the price of any selected board.
+
+**Pricing**
+
+* Price per person is calculated based on passengers, stay length, and pricing rules
+* Discounted prices are highlighted
+* Normal price is shown with strikethrough when a discount applies
+
+***
+
+### Pagination and sorting
+
+* Both Flights and Hotels support pagination
+* Results can be sorted by column headers
+* “Pagination & Sorting” toggle controls how results are grouped and displayed
+
+***
+
+### Key behavior notes
+
+* Flights act as a filter for Hotels
+* Hotel availability and pricing update dynamically based on passenger data
+* Only bookable combinations are shown
+
+{% hint style="info" %}
+**Important:** The Search page uses an updated **Discount price** calculation. The value should match the presentation site.
 {% endhint %}
 
 #### Creating a Booking
 
-When the **Create Booking** button is clicked, a new page will open, pre-filled with all previously selected information. From this point forward, the process for completing the booking follows the standard steps used for creating any new booking.
+When you click **Create booking**, a new page opens. It is pre-filled with the selected flight and hotel. From there, you complete the booking using the standard booking flow.
 
 <figure><img src="../../../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
 
-### **Instructions & Field Descriptions**
+### Instructions and field descriptions
 
 <figure><img src="../../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### **Search Filters (Top Section)**
+#### Search filters (top section)
 
 | **Field**                 | **Description**                                                                                                                           |
 | ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
@@ -123,16 +216,15 @@ When the **Create Booking** button is clicked, a new page will open, pre-filled 
 | **Date from / Date to**   | The date range within which travel must begin.                                                                                            |
 | **Travel length**         | Filters by stay duration (e.g., 1–7 days, 7–14 days).                                                                                     |
 | **Resort / Hotel**        | Refines results by destination resort or specific hotel code.                                                                             |
-| **Rooms no.**             | Filters hotels that support a specific number of rooms.                                                                                   |
+| **Board**                 | Filters hotels that support a specific board type                                                                                         |
 | **Budget (max)**          | Filters hotels based on the maximum price per person.                                                                                     |
 | **Stars**                 | Filters based on hotel star rating.                                                                                                       |
 | **Clear**                 | Resets all filters to default.                                                                                                            |
-| **Show availability**     | Ensures only results with actual availability are shown.                                                                                  |
 | **Search (Button)**       | Executes the search using the defined filters.                                                                                            |
 
 ***
 
-#### **Flights Table (Top Grid)**
+#### Flights table (top grid)
 
 This section lists flights that match the search criteria:
 
@@ -147,7 +239,7 @@ This section lists flights that match the search criteria:
 
 ***
 
-#### **Hotels Table (Bottom Grid)**
+#### Hotels table (bottom grid)
 
 This grid displays hotel options based on the search:
 
@@ -160,12 +252,12 @@ This grid displays hotel options based on the search:
 | **Stay**                     | Number of nights included in the hotel stay.                                                                              |
 | **Room Type**                | Description of the available room(s), including bed configuration.                                                        |
 | **Avail.**                   | Remaining available rooms for the selected date.                                                                          |
-| **Date**                     | Check-in date for the hotel stay.                                                                                         |
-| **Price P.A.**               | Price per adult (typically in local currency).                                                                            |
-| **Price P.C.**               | Price per child.                                                                                                          |
-| **Normal Price**             | Regular price without discounts (struck-through if discounted).                                                           |
+| **Date**                     | Departure Date                                                                                                            |
+| **Board**                    | Board type which is included in the price                                                                                 |
+| **Price Per Person**         | Price per Person                                                                                                          |
+| **Normal Price**             | The price without discount (P price), The price includes the price of any selected board                                  |
 | **Discount**                 | Applied discount amount.                                                                                                  |
-| **Discount Price**           | Final price after discounts.                                                                                              |
+| **Discount Price**           | The price with discount (D price). The price includes the price of any selected board.                                    |
 | **Create booking (tooltip)** | Appears on hover over a hotel row. Clicking it initiates the booking process for the selected flight + hotel combination. |
 
 Additional UI Elements:
@@ -173,13 +265,124 @@ Additional UI Elements:
 * **+ Filters**: Allows advanced filtering for both flights and hotels.
 * **Clear selected row**: Deselects a previously selected hotel row.
 * **Pagination & Sorting**: Toggle between paginated view and sorting/filtering controls.
-* **More/Less**: Expands or collapses additional hotels with the same filters category
+* **More/Less**: Expands or collapses additional results for the same hotel.
 
 ***
 
-### **Next Steps After Search**
+### Next steps after search
 
 1. Select the preferred **flight** from the upper table.
 2. Choose a suitable **hotel** row.
 3. Hover over the row to reveal the **Create booking** button.
 4. Click **Create booking** to proceed with booking creation using the selected transport and hotel offer.
+
+***
+
+### FAQ
+
+#### Why do I get validation messages when I click **Search**?
+
+You are missing one or more mandatory inputs:
+
+* **Departure**
+* At least one of **Arrival**, **Resort**, or **Hotel**
+* **Date from** and **Date to**
+
+Fill those fields, then run the search again.
+
+#### What does **Show availability** do?
+
+It hides options that have no availability right now.
+
+Use it when you want only bookable results.
+
+Disable it when you are troubleshooting setup.
+
+#### Why are no flights or hotels shown?
+
+Most cases are configuration-related:
+
+* No valid price list for the period.
+* No allotment (or it is sold out) for the selected criteria.
+* Filters are too strict (stars, resort/hotel, workflow, travel length, budget).
+
+Try widening filters and disable **Show availability** to verify setup.
+
+#### What does **Display names** do?
+
+It toggles between internal codes and display-friendly names.
+
+Use it if you need to match what customers see.
+
+#### What does **Interval (Int.)** mean in the results?
+
+It groups flights and hotels that can be combined together. It is typically tied to allotment or week groups.
+
+If a hotel line shows `Int. 2`, it is meant to match flights in the same interval group.
+
+#### What’s the difference between **Pagination & Sorting** and **More/Less**?
+
+* **Pagination & Sorting**: paging is on and sorting is enabled.
+* **More/Less**: paging is off and sorting is disabled.
+
+Use **More/Less** when you want to expand the same hotel quickly.
+
+#### Why can’t I click **Create booking**?
+
+Common reasons:
+
+* You have not selected a flight row (required in most setups).
+* The selected hotel line has no availability.
+* Your user role does not have rights to create bookings for the selected brand/workflow.
+
+#### Why is **Price PC** shown as `0`?
+
+It means the search is currently pricing without children.
+
+Add child ages in **Passengers** to get a child price.
+
+#### What’s the difference between **Normal price** and **Discount price**?
+
+* **Normal price** is the undiscounted total. It can still include auto-selected supplements.
+* **Discount price** is the final total after discounts. It includes relevant extras and supplements.
+
+#### Why does **Price PA / Price PC** look “too low” compared to totals?
+
+Price PA/PC are averages per passenger type.
+
+They are derived from the booking totals.
+
+Totals can also include supplements and extras.
+
+#### How do I reset all filters quickly?
+
+Use **Clear** in the filter area.
+
+If you opened **+ Filters**, use its **Clear** button too.
+
+#### Can I select multiple arrivals?
+
+Yes. You can select multiple **Arrivals**.
+
+This broadens transport matches and package combinations.
+
+#### Why does changing **Travel length** remove results?
+
+Travel length must match what is configured in the price list.
+
+If no products exist for that stay length, you will get no results.
+
+#### Why does switching **Workflow** remove results?
+
+Workflow filters the set of allowed transports and hotels.
+
+If that workflow is not configured for the selected brand/period, results can disappear.
+
+#### Why does **Discount price** differ from the presentation site?
+
+The **Discount price** in Search should match the presentation site when:
+
+* Brand, workflow, travel length, and passenger ages match.
+* Auto-selected supplements and required extras are configured consistently.
+
+If you still see a mismatch, the usual cause is different product/rule configuration between channels.

@@ -6,20 +6,16 @@ This page describes the **Hotel Room Cost Rule flow.** It explains each step a u
 
 The flow is used to define, apply, and validate **cost calculation rules** for hotel bookings — ensuring consistency across invoicing, profit margins, and multi-currency accounting.
 
-***
-
 ### Purpose
 
-The purpose of this feature is to:
+Use this workflow to:
 
 * Define how room costs are calculated for a hotel (per stay, per day, etc.)
-* Ensure those costs are applied correctly to bookings
-* Confirm the system calculates totals and currency conversions as expected
-* Link hotel costs to creditors for accurate payment tracking
+* Confirm costs are applied correctly to bookings
+* Validate totals and currency conversion
+* Link the hotel to a creditor for correct supplier payment tracking
 
-This process is essential for financial accuracy in the platform and prevents issues with supplier payouts and client billing.
-
-***
+This prevents mismatched costs in Profit and invoicing.
 
 ### Preconditions
 
@@ -27,175 +23,133 @@ Before beginning this process:
 
 * A hotel must already exist in the system.
 * You must have permission to create and edit room cost rules.
-* You should understand how bookings are structured in the system.
-* Currency exchange rates should be available (for creditor validation).
-* The user must have access to both the **Hotel module** and **Booking module**.
+* You need access to both the **Hotel** and **Booking** modules.
+* Currency exchange rates must exist if the creditor uses another currency.
 
-***
+### Create and validate a **Per Room Per Stay** rule
 
-### Step-by-Step Instructions & Field Descriptions
+{% hint style="info" %}
+Per Room Per Stay is a **fixed cost per stay**. Tourpaq can still split the value across stay days internally for reporting and allocation.
+{% endhint %}
 
-#### 1. **Access the Hotels Page**
+{% stepper %}
+{% step %}
+### Open the hotel
 
-* **Step**: Navigate to `Hotel → Hotels`.
-* **Expected**: The hotel list is displayed.
-* **Purpose**: Begin by selecting the hotel for which you'll define or validate cost rules.
+1. Go to `Hotel → Hotels`.
+2. Select the relevant hotel.
+{% endstep %}
 
-***
+{% step %}
+### Create the room cost rule
 
-#### 2. **Select a Hotel**
+1. Open **Room Costs**.
+2. Click **Create**.
+3. Fill the rule fields:
+   * **Stay Type**: `Per Room Per Stay`
+   * **Stay/Arrival period**: the dates the rule should match
+   * **Room type**: pick a room or use all rooms (if supported)
+   * **Price/Cost** and **Currency**
+   * Any occupancy filters your setup uses
 
-* **Step**: Choose a hotel from the list.
-* **Expected**: The hotel detail page opens.
-* **Tip**: Use filters to quickly find the hotel you need.
+When you select **Per Room Per Stay**, **Stay Days No** becomes available.
+{% endstep %}
 
-***
+{% step %}
+### Create a booking that matches the rule
 
-#### 3. **Go to Room Costs**
+1. Create a test booking using the same hotel, room type, and stay dates.
+2. Confirm booking status is **OK**.
+{% endstep %}
 
-* **Step**: Click on **Room Costs** section.
-* **Expected**: A list of room cost rules (if any) appears.
+{% step %}
+### Verify the cost on the booking
 
-***
+1. Open the booking.
+2. Go to **Profit**.
+3. Open **Hotel Cost**.
 
-#### 4. **Create a New Rule**
+Verify:
 
-* **Step**: Click **Create**.
-* **Expected**: A blank row appears where new data can be entered.
-* **Fields** to fill include:
-  * **Stay Type** (e.g., Per Room Per Stay)
-  * **Validity Period** (arrival date range)
-  * **Cost** (amount)
-  * **Currency** (local or creditor)
-  * **Occupancy Conditions**
+* The **Room Cost** line exists.
+* The value matches your rule logic.
+* The cost can appear split across days, even for a per-stay rule.
+{% endstep %}
 
-***
+{% step %}
+### Verify invoice preview values
 
-#### 5. **Set Stay Type to Per Room Per Stay**
+In the invoice preview (hotel cost details):
 
-* **Why it matters**: This rule type ignores the number of nights and calculates the cost per stay.
-* **Expected**: A field called **Stay Days No** becomes visible.
+* The room cost should match the rule.
+* Totals should align with the calculated room cost.
+{% endstep %}
 
-***
+{% step %}
+### Assign a creditor and re-check currency
 
-#### 6. **Create a Booking Matching the Rule**
+1. Go back to the hotel details.
+2. Select a **Creditor** (the payee).
+3. Click **Save**.
+4. Re-open the booking.
+5. Re-check **Profit → Hotel Cost**.
 
-* **Step**: Make a test booking using the selected room and date range.
-* **Expected**: Booking is created and appears with status **OK**.
+If the creditor uses another currency, verify the cost is shown in the creditor currency and totals are converted correctly.
+{% endstep %}
+{% endstepper %}
 
-***
+### Related pages
 
-#### 7. **Check Booking Profit**
+* [Room cost](./)
+* [Add room cost rule with "Per Room Per Stay" with a specific stay days value](add-room-cost-rule-with-per-room-per-stay-with-a-specific-stay-days-value.md)
 
-* **Step**: Click **Profit** in the booking.
-* **Expected**: Booking margin and cost structure are shown.
+### Summary of Key Concepts <a href="#summary-of-key-concepts" id="summary-of-key-concepts"></a>
 
-***
+**Room Cost Rule -** Defines how much a room costs per stay, per day, or per person.
 
-#### 8. **Check Hotel Cost Breakdown**
+**Stay Type -** Determines the cost calculation basis.
 
-* **Step**: Click **Hotel Cost**.
-* **Expected**: Displays cost line items from the hotel rule.
+**Creditor -** The entity we pay for the hotel may use a different currency.
 
-***
+**Invoice Details -** Shows costs calculated and broken down for payment/billing.
 
-#### 9. **Check Room Cost Row**
-
-* **Expected**: If the rule is per stay, the system will divide the cost by the number of days internally for calculation purposes.
-
-***
-
-#### 10. **Verify Room Cost in Invoice Hotel Details Cost**
-
-* **Step**: Look at the invoice preview section.
-* **Expected**: Room cost value here should match the one defined in the hotel’s rule.
-
-***
-
-#### 11. **Check Invoice Total**
-
-* **Step**: Scroll to the total under **Invoice Hotel Details Cost**.
-* **Expected**: Total reflects the rule-based cost.
-
-***
-
-#### 12. **Check Rule Details Popup**
-
-* **Step**: Click **Details** on the Room Cost row.
-* **Expected**: A pop-up appears showing the rule applied.
-* **Validation**: Ensure the rule matches the one entered in the hotel config.
-
-***
-
-#### 13. **Return to Hotel Details**
-
-* **Step**: Go back to the hotel’s main page.
-* **Why**: To configure the creditor (payee) for the hotel.
-
-***
-
-#### 14. Select **a Creditor**
-
-* **Step**: Select a creditor entity (organization that receives payment).
-* **Expected**: Selected creditor appears in the input.
-
-***
-
-#### 15. **Save Changes**
-
-* **Step**: Click **Save**.
-* **Expected**: Hotel creditor is saved.
-
-***
-
-#### 16. **Return to Booking**
-
-* **Step**: Open the previously created booking again.
-* **Why**: To verify how the creditor affects the cost display.
-
-***
-
-#### 17. **Re-check Profit**
-
-* **Expected**: Profit page reloads with updated cost logic.
-
-***
-
-#### 18. **Re-check Hotel Cost**
-
-* **Expected**: Costs now reflect **creditor’s currency** (if different).
-
-***
-
-#### 19–21. **Verify Room Cost with Currency Exchange**
-
-* **Expected**:
-  * Room Cost row shows the converted cost.
-  * Invoice section reflects the cost in the creditor's currency.
-  * Totals include accurate currency-exchanged values.
-
-***
-
-#### 22. **Open Rule Details Again**
-
-* **Purpose**: Confirm that the rule and cost are **identical** to the original rule, but shown in the creditor's currency now.
-
-***
-
-### Summary of Key Concepts
-
-| Concept               | Description                                                                |
-| --------------------- | -------------------------------------------------------------------------- |
-| **Room Cost Rule**    | Defines how much a room costs per stay, per day, or per person.            |
-| **Stay Type**         | Determines the cost calculation basis.                                     |
-| **Creditor**          | The entity we pay for the hotel may use a different currency.              |
-| **Invoice Details**   | Shows costs calculated and broken down for payment/billing.                |
-| **Currency Handling** | Costs may be stored in local currency but invoiced in creditor’s currency. |
-
-***
+**Currency Handling -** Costs may be stored in local currency but invoiced in creditor’s currency.
 
 ### Troubleshooting Tips
 
-* If totals don’t match, double-check the rule period and occupancy.
-* If currency isn’t converted, confirm a creditor is assigned.
-* If the booking status isn’t OK, verify availability or data entry.
+* If the rule does not apply, check stay dates, booking dates, and room type filters.
+* If totals do not match, verify occupancy filters and overlapping date windows.
+* If you changed the rule after creating the booking, re-open the booking after recalculation runs.
+* If currency is not converted, confirm the hotel has a creditor and exchange rates exist.
+* If booking status is not **OK**, fix availability or required data first.
+
+### FAQ
+
+#### When should I use **Per Room Per Stay**?
+
+Use it when the supplier charges a fixed amount for the whole stay.\
+Example: a cleaning fee or a flat package cost.
+
+#### What is **Stay Days No** on a per-stay rule?
+
+It limits when the rule applies.\
+If you set it, the booking stay length must match that value.
+
+#### Why is the per-stay cost shown “per day” in Hotel Cost?
+
+Tourpaq can distribute the per-stay value across stay days internally.\
+This supports allocation, reporting, and totals.
+
+#### Why do I see different currencies before and after assigning a creditor?
+
+Before you assign a creditor, costs can show in the rule currency.\
+After you assign a creditor, costs can be shown in the creditor currency.
+
+#### The rule matches, but I still see no hotel cost. Why?
+
+Most misses come from filters. Check:
+
+* stay period overlap
+* room type selection
+* booking date window (if used)
+* required fields saved on the rule row

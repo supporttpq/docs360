@@ -15,7 +15,7 @@ Transport Regulation Rules are used to:
 
 #### Page Structure
 
-<figure><img src=".gitbook/assets/image (5) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Table Columns
 
@@ -56,7 +56,7 @@ The purpose of this function is to ensure that pricing remains dynamic and consi
 
 Each rule contains **two sets of fields**, which define how the system applies price adjustments.
 
-<figure><img src=".gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **General fields** (used for going prices UP) :&#x20;
 

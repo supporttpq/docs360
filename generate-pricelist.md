@@ -30,7 +30,7 @@ By using this tool, users can efficiently maintain pricing structures across the
 
 ### **Filters and Fields**
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 | **Field / Control** | **Description**                                                                           |
 | ------------------- | ----------------------------------------------------------------------------------------- |
@@ -95,11 +95,11 @@ Rows with a **red background** indicate records that are scheduled rules to gene
 ### **Steps to Add a Generation Rule**
 
 1. Click on **Create** to add a new rule
-2. Define all necessary fields (departure, arrival, resort, transport, and date range)  – After defining the basic resort and transport, save the rule to continue.
+2. Define all necessary fields (departure, arrival, resort, transport, and date range) – After defining the basic resort and transport, save the rule to continue.
 3. **Select Fix Quota** – Choose any available fix quota. Each fix quota is unique, and an interval can be set for it.
    * The **new interval** must be included within the parent fix quota.
 4. **Add Rule to System** – Once added, the rule is active.
-5. **Generate Price List** – The system will generate price lists for the current combination&#x20;
+5. **Generate Price List** – The system will generate price lists for the current combination
 
 {% hint style="warning" %}
 **This feature doesn't create prices; it only creates pricelists.**
@@ -122,3 +122,56 @@ Rows with a **red background** indicate records that are scheduled rules to gene
 * Avoid overlapping date ranges to prevent pricing conflicts.
 * Schedule updates ahead of major sales periods or seasonal rollouts.
 * Maintain clear naming conventions for transports and resorts to simplify tracking.
+
+***
+
+### FAQ
+
+#### What does the Price List Generator create?
+
+It creates **price lists** (the price list entries/structures).\
+It does **not** create the selling prices inside the price list.
+
+#### What do I need to fill in to create a generation rule?
+
+At minimum:
+
+* **Agency**
+* **Arrival**
+* **Resort**
+* **Departure from/to**
+
+If you select a **Transport**, you must also select **Fix Quotas**.
+
+#### What is a Fix Quota and why is it required?
+
+Fix Quota defines the **validity period** used when generating price lists for a transport.\
+Your rule interval must be within the parent Fix Quota interval.
+
+#### Why is a row highlighted in red?
+
+Red rows are **scheduled rules**.\
+They are queued and waiting for the generator service to run.
+
+#### When will a scheduled rule run?
+
+Rules are typically queued when **hotel allotment is generated or extended**.\
+The row stays red until the service has processed it.
+
+#### How do I verify the generator worked?
+
+1. Set the same filters (arrival/resort/transport/date range).
+2. Click **Display**.
+3. Confirm the expected records exist.
+
+#### Does generating a price list overwrite existing prices?
+
+The generator creates the **price list entries** for the selected combinations.\
+Avoid overlapping date ranges to reduce unexpected results.
+
+#### I saved a rule, but nothing happens. What should I check?
+
+* The rule is still red (queued) and the service has not run yet.
+* The date range is valid and not overlapping existing rules.
+* The Fix Quota interval contains your rule interval.
+* Required hotel/transport setup and allotments exist.

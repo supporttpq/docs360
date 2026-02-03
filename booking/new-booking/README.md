@@ -150,7 +150,7 @@ Use the following pages for detailed explanations of specific parts of the New B
 * [**Multiple transports one room bookings**](multiple-transports-one-room-bookings.md) – Bookings where passengers use different transports but stay in the same room.
 * [**Hotel Only Bookings**](hotel-only-bookings.md) – Create bookings without transport.
 * [**Transport only Booking**](transport-only-booking.md) – Create bookings with transport but no hotel.
-* [**Child Price**](child-price.md) – Behaviour of child pricing in bookings.
+* [**Child Price**](child-price/) – Behaviour of child pricing in bookings.
 * [**A la Carte**](a-la-carte/) – A la carte booking options and packages.
 * [**Remove pax on outbound or homebound only**](remove-pax-on-outbound-or-homebound-only/) – Special handling when a passenger travels only one way.
 

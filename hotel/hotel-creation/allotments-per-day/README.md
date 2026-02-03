@@ -1,88 +1,79 @@
 # Allotments per day
 
-### **Overview**
+### Overview
 
-The **Allotment per Day** screen is part of the hotel configuration module. It is used to define and monitor the number of rooms available (allotment) for each room type on a daily basis. This ensures that booking agents and the system know exactly how many rooms can be sold or held on specific dates.
+Use **Allotments per day** to set room availability per date and room type.
 
-This section is essential for managing availability, avoiding overbookings, and ensuring accurate tracking of room inventory.
+It shows what is allocated, booked, and still free.
 
-### **Purpose**
+This is the daily “inventory control” screen for hotels.
 
-The purpose of the Allotment per Day functionality is to:
+### Purpose
+
+Use it to:
 
 * Allocate a daily number of rooms for each room type.
 * Define secured and guaranteed allotments with the hotel.
 * Track how many rooms are already booked and how many remain free.
 * Adjust daily availability to match contracts, demand, or sales limits.
-* Support smooth booking operations by providing clear visibility of inventory.
+* Avoid overselling by keeping availability accurate.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+{% hint style="info" %}
+Daily values typically come from your generated allotment periods. Set those on [Hotel allotments](../hotel-allotments.md).
+{% endhint %}
 
-### **Field Descriptions**
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-| Field                   | Description                                                                                              |
-| ----------------------- | -------------------------------------------------------------------------------------------------------- |
-| **Room**                | Indicates the room type or category being configured. Example formats: `1/1`, `1/2-SH`.                  |
-| **Date**                | The calendar date for which allotment is being defined.                                                  |
-| **Day**                 | The day of the week for the selected date                                                                |
-| **No.**                 | The number of rooms allocated.                                                                           |
-| **Secured**             | Number of rooms secured through a contract with the hotel. These rooms are guaranteed to be available.   |
-| **Guaranteed**          | Rooms that are financially guaranteed to the hotel, regardless of sales. Usually part of contracts.      |
-| **Book**                | Number of rooms already booked by customers for this date.                                               |
-| **Free**                | Remaining available rooms (calculated as allotment minus booked).                                        |
-| R                       | True (green) if the room is released                                                                     |
-| For R                   | Number of rooms available for release                                                                    |
-| Max                     | The maximum number of rooms                                                                              |
-| Extra                   | Extra rooms number                                                                                       |
-| Pax 1, Pax2, Pax3, Pax4 | The maximum number of rooms with a max of  1 - 4 pax                                                     |
-| Min                     | The minimum stay                                                                                         |
-| Stay length             | Specifies how many rooms are allocated for a charter transport based on the selected number os stay days |
+### Fields
+
+<table><thead><tr><th width="224">Field</th><th>Description</th></tr></thead><tbody><tr><td><strong>Room Type</strong></td><td>The room type / category. Example formats: <code>2/2 + 2B</code>, <code>1/2-mel10</code>.</td></tr><tr><td><strong>Date</strong></td><td>The calendar date for which allotment is being defined.</td></tr><tr><td><strong>Day</strong></td><td>The day of week.</td></tr><tr><td><strong>No.</strong></td><td>Total rooms allocated for that date.</td></tr><tr><td><strong>Secured</strong></td><td>The number of secured rooms</td></tr><tr><td><strong>Guaranteed</strong></td><td>The number of guaranteed rooms</td></tr><tr><td><strong>Book</strong></td><td>Rooms already booked for that date.</td></tr><tr><td><strong>Free</strong></td><td>Rooms still available (<code>No. - Book</code>).</td></tr><tr><td><strong>Days</strong></td><td>The number of days before arrival, the release is executed (only daily releases).<br>The cell is empty if no release rules are defined.<br>The cell is editable, allowing the release days to be ed</td></tr><tr><td><strong>R</strong></td><td><p>If the release is executed, the box is checked, and the release can be undone by removing the checkmark. </p><p>When a release is undone, edit DAYS with the new deadline and update AR and SR to make rooms available.</p></td></tr><tr><td><strong>AR</strong></td><td><p>The number of allotment rooms released. </p><p>Edit AR when a release is undone to adjust the number of rooms moved back.</p></td></tr><tr><td><strong>SR</strong></td><td>The number of secured rooms released.<br>Edit SR when a release is undone to adjust the number of rooms moved back.</td></tr><tr><td><strong>PAX 1–4</strong></td><td>Max rooms by occupancy (1–4 pax).</td></tr><tr><td><strong>Min</strong></td><td>Minimum stay in nights.</td></tr><tr><td><strong>Stay length</strong></td><td>Rooms allocated per charter transport, based on selected stay days.</td></tr></tbody></table>
 
 {% hint style="warning" %}
 **PAX1, PAX2, PAX3, PAX4** – When you hover over these cells, a tooltip appears showing the number of booked rooms for each corresponding PAX category (PAX1, PAX2, PAX3, PAX4).
-
-
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (580).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-Note: If stop sales are enabled for a hotel on a certain date, a message ( yellow triangle near room) will be visible&#x20;
+If a **Stop Sale** exists for a date, you will see a yellow warning icon next to the room. Stop sales are configured in [Stop Sales](../../../stop-sales.md).
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (581).png" alt=""><figcaption></figcaption></figure>
 
+### Search with allotment control
 
+<figure><img src="../../../.gitbook/assets/image (582).png" alt=""><figcaption></figcaption></figure>
 
-### Search with Allotment Control
+Use this search when you need availability split by transport departures.
 
-<figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
-
-#### **Functionality**
+#### Functionality
 
 When searching with **Allotment Control**:
 
 * The search is based on **departure date**.
 * Results display per transport, with columns for:
-  * **RESV (Reserved allotment)** – The predefined room allotment set for the transport. Use 0 to block allotment or a number to limit the number of allotments for transport
-  * **BOOK (Booked Seats)** – The number of seats already booked for that transport.
+  * **RESV (Reserved allotment)** – Rooms reserved for that transport.
+  * **BOOK** – What is already booked on that transport.
 
 The columns together provide a quick overview of remaining availability.
 
-
-
-#### Stay Length
-
-The Stay length columns specify how many rooms are allocated for a charter transport based on the selected number of stay days.
-
-When a reservation is made for a specific **stay length**, the system also reserves rooms for stay lengths that are **multiples** of the original length.\
-This ensures that capacity management accounts for bookings that overlap across longer stay periods.
-
-{% hint style="warning" %}
-**STAY LENGTH (3, 7)**– When you hover over these cells, a tooltip appears showing the number of reserved rooms, booked rooms, available rooms and free rooms for each corresponding stay length.
+{% hint style="info" %}
+If **RESV** is empty, no extra transport limit applies. Use `0` to block sales for that transport.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+#### Stay length
+
+Stay length columns reserve rooms for specific trip durations.
+
+When you reserve rooms for a stay length, Tourpaq also reserves multiples of it. Example: reserving 7 days impacts 14 days too.
+
+For the full workflow, see [Reserve rooms for stay lengths](reserve-rooms-for-stay-lengths.md).
+
+{% hint style="warning" %}
+**STAY LENGTH (7)** – Hover a cell to see reserved, booked, available, and free rooms.
+{% endhint %}
+
+<figure><img src="../../../.gitbook/assets/image (583).png" alt=""><figcaption></figcaption></figure>
 
 The tooltip for each cell displays detailed reservation data to make it easier to interpret the information behind the cell values.
 
@@ -93,9 +84,7 @@ The tooltip for each cell displays detailed reservation data to make it easier t
 | **Available** | The number of rooms still available from the total reserved rooms.                                                                                                         |
 | **Free**      | The number of rooms that are not reserved for any stay length and are free to book. “Free” indicates that it is possible to reserve additional rooms for this stay length. |
 
-
-
-#### **Room Control Status**
+#### Room control status
 
 Each transport displays a **control status value** that determines how many rooms can be sold:
 
@@ -103,31 +92,168 @@ Each transport displays a **control status value** that determines how many room
 * **0** → No rooms can be sold on this transport.
 * **1+** → The exact maximum number of rooms that can be sold for the specified transport and interval.
 
-#### **Usage Notes**
+#### Usage notes
 
 * This feature is critical for **capacity planning** and ensuring correct allocation of hotel rooms per flight.
 * The status values should be monitored regularly, especially during peak booking periods, to avoid overselling.
 * Adjustments to allotments must be coordinated with both transport and hotel availability.
 
-### **Instructions for Use**
+### Search with Stay Lenghts
 
-1. Navigate to **Hotel → Allotment per Day** when setting up or editing a hotel.
-2. Select the **Period** (date range), **Room Type**, and optionally filter by **Week Days** to view or adjust availability.
-3. Click **Search** to display the daily allotment table.
-4. For each **date and room type**:
-   * Enter or adjust the number of rooms in **No.**, **Secured**, and **Guaranteed** fields.
-   * Verify the number of **Booked** and **Free** rooms (system-calculated).
-   * If applicable, set values for **Max**, **Extra**, and **PAX fields**.
-5. Use the checkboxes to select days and apply bulk actions if available.
-6. After making changes, click **Update** to save.
-7. Use **Allotment History** to review previous changes.
-8. To cancel changes without saving, click **Cancel**.
+<figure><img src="../../../.gitbook/assets/image (576).png" alt=""><figcaption></figcaption></figure>
+
+The **Search with Stay Length** option is used to filter hotel allotment data based on the selected stay duration.
+
+When **Search with Stay Length** is used:
+
+* The search **does not include Transport allotments**
+* Only **hotel-related allotments and controls** are shown
+* Results reflect availability based on the defined stay length rules
+
+This helps users focus strictly on hotel availability without mixing transport data into the results.
+
+### How to update daily allotments
+
+{% stepper %}
+{% step %}
+### Open the screen
+
+Go to **Hotel → Allotment per Day**.
+{% endstep %}
+
+{% step %}
+### Search the dates you need
+
+Select **Period**, **Room Type**, and optional **Week Days**.
+
+Click **Search**.
+{% endstep %}
+
+{% step %}
+### Edit the values
+
+Update **No.**, **Secured**, and **Guaranteed** as needed.
+
+Check **Book** and **Free** for sanity.
+{% endstep %}
+
+{% step %}
+### Save or revert
+
+Click **Update** to save.
+
+Click **Cancel** to discard changes.
+{% endstep %}
+{% endstepper %}
+
+### How to edit releases (manual adjustment)
+
+Use this when you need to override the automated release result for specific dates.
+
+{% stepper %}
+{% step %}
+### Open the screen
+
+Go to **Hotel → Allotment per Day**.
+{% endstep %}
+
+{% step %}
+### Search the dates and room types
+
+Select **Period** and **Room Type**.
+
+Click **Search**.
+{% endstep %}
+
+{% step %}
+### Adjust release status and quantity
+
+Edit **R** to mark/unmark as released.
+
+Edit **For R** to control how many rooms are available for release.
+{% endstep %}
+
+{% step %}
+### Save
+
+Click **Update**.
+{% endstep %}
+{% endstepper %}
 
 ### SkiStar Allotment per Day
 
-When a hotel is Managed by Ski Star, each of these hotels represents a unique house/apartment. In these conditions, the allotment of each accommodation can be set in 2 ways:
+When a hotel is managed by **SkiStar**, each hotel represents one house or apartment. Availability is therefore binary per unit.
 
-* if the accommodation unit is available, then the number of allotments (free allotments) will be allways set to 1;
-* if the accommodation unit is not available , the allotment is set to 0
+* If the unit is available, allotment is always `1`.
+* If the unit is not available, allotment is `0`.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+### FAQ
+
+<details>
+
+<summary>What’s the difference between <strong>No.</strong>, <strong>Secured</strong>, and <strong>Guaranteed</strong>?</summary>
+
+**No.** is what you plan to sell for that date.
+
+**Secured** is what the hotel commits to allocate.
+
+**Guaranteed** is what you pay for even if unsold.
+
+</details>
+
+<details>
+
+<summary>Why is <strong>Free</strong> lower than expected?</summary>
+
+Start with the basics: **Free = No. - Book**.
+
+Then check **Stop Sales**, **releases**, and any transport limits.
+
+</details>
+
+<details>
+
+<summary>I can’t sell a room, but <strong>Free</strong> is positive. Why?</summary>
+
+Common causes:
+
+* Stop sale on the date. See [Stop Sales](../../../stop-sales.md).
+* Room is released or release rules limit sales. See [Releases](../releases/).
+* Transport-level limits in **Search with allotment control** (status `0` or a low number).
+* Minimum stay restrictions (**Min**).
+
+</details>
+
+<details>
+
+<summary>What does the <strong>R</strong> column mean?</summary>
+
+It indicates release status for that room/date.
+
+Released rooms can behave differently depending on your release setup.
+
+</details>
+
+<details>
+
+<summary>When should I use “Search with allotment control”?</summary>
+
+Use it when you need availability per transport departure.
+
+It helps you spot transport-specific limits and stay-length reservations.
+
+</details>
+
+<details>
+
+<summary>How do stay length reservations affect availability?</summary>
+
+They reserve rooms for specific trip durations.
+
+Multiples are also reserved to avoid overlaps.
+
+See [Reserve rooms for stay lengths](reserve-rooms-for-stay-lengths.md).
+
+</details>
