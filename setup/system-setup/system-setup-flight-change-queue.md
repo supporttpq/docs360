@@ -2,62 +2,70 @@
 
 ### Overview
 
-The **Flight Change Configuration** section allows administrators to define thresholds and notifications for flight schedule changes. These settings classify flight time changes into categories (Tiny, Small, Large), trigger alerts, and set pre-departure warning rules.
+The **Flight Change Configuration** section lets admins define thresholds and notifications for flight schedule changes.
 
-This ensures that both the system and relevant staff are aware of schedule modifications early, helping maintain accurate communication with passengers and providers.
+The system classifies changes as **Tiny**, **Small**, or **Large**. It can also send alerts and trigger extra warnings close to departure.
 
 ### Purpose
 
-The purpose of this configuration is to:
+Use this configuration to:
 
 * Categorize flight schedule changes by duration.
 * Notify designated staff when changes occur.
 * Define a timeframe for warnings before flight departure.
 
-By standardizing thresholds, the system can automatically detect and classify changes, improving efficiency and reducing human error.
+Standardized thresholds reduce manual checks and missed changes.
 
 ***
 
-### Fields & Options
+### Fields and options
 
 <figure><img src="../../.gitbook/assets/image (359).png" alt=""><figcaption></figcaption></figure>
 
-#### 1. **Earlier (minutes)**
+Each change category (Tiny/Small/Large) has its own **Earlier** and **Later** threshold. Thresholds are in minutes.
 
-* **Description:** Defines how many minutes earlier a flight can shift for each change category.
-* **Example:**
-  * _Tiny:_ 10 minutes earlier
-  * _Small:_ 20 minutes earlier
-  * _Large:_ 60 minutes earlier
+#### 1. Earlier (minutes)
 
-#### 2. **Later (minutes)**
+Defines how many minutes _earlier_ a flight can move and still be classified in each category.
 
-* **Description:** Defines how many minutes later a flight can shift for each change category.
-* **Example:**
-  * _Tiny:_ 20 minutes later
-  * _Small:_ 30 minutes later
-  * _Large:_ 70 minutes later
+Example:
 
-#### 3. **Warning – Email**
+* Tiny: 10 minutes earlier
+* Small: 20 minutes earlier
+* Large: 60 minutes earlier
 
-* **Description:** The email address that receives flight change alerts.
-* **Instruction:** Enter the email of the responsible person/team (e.g., operations, customer service).
+#### 2. Later (minutes)
 
-#### 4. **Warning – Before Departure**
+Defines how many minutes _later_ a flight can move and still be classified in each category.
 
-* **Description:** Defines the timeframe (in hours) before departure when the system should issue a warning.
-* **Example:** `5 hours` – warnings will be triggered for changes detected within 5 hours of departure.
+Example:
+
+* Tiny: 20 minutes later
+* Small: 30 minutes later
+* Large: 70 minutes later
+
+#### 3. Warning – Email
+
+The email address that receives flight change alerts.
+
+Enter a shared inbox if possible (for example operations or customer service).
+
+#### 4. Warning – Before Departure (hours)
+
+Defines how close to departure the system should apply the “before departure” warning logic.
+
+Example: `5` means “within 5 hours of departure”.
 
 ***
 
 ### Instructions for Configuration
 
-1. Navigate to **System Setup > Flight Change Queue > Flight Change Configuration**.
-2. Define thresholds for **Tiny, Small, and Large** flight changes by setting the _Earlier_ and _Later_ values in minutes.
-   * Example: A flight leaving 15 minutes earlier than planned falls under _Small Change_ if “Tiny” is up to 10 minutes.
-3. Enter the **Email address** of the person or department responsible for handling change notifications.
-4. Set the **Before Departure (hours)** value to determine how close to departure changes should trigger special warnings.
-5. Save the configuration.
+1. Go to **Setup → System Setup → Flight Change Queue → Flight Change Configuration**.
+2. Set **Earlier** and **Later** thresholds for **Tiny**, **Small**, and **Large**.
+   * Example: If Tiny is up to 10 minutes earlier, then 15 minutes earlier becomes Small.
+3. Enter the **Warning – Email** recipient.
+4. Set **Warning – Before Departure (hours)**.
+5. Save.
 
 Once saved, the system will automatically classify flight time changes and notify the specified contact by email.
 
@@ -65,27 +73,72 @@ Once saved, the system will automatically classify flight time changes and notif
 
 ### Troubleshooting Guide
 
-#### 1. **Not Receiving Flight Change Emails**
+#### 1. Not receiving flight change emails
 
 * **Cause:** Incorrect or inactive email address entered.
-* **Solution:** Verify the email address field and confirm the recipient’s inbox can receive system messages.
+* **Solution:** Verify the address and confirm the inbox can receive system emails.
 
-#### 2. **Flight Changes Not Classified Correctly**
+#### 2. Flight changes are not classified correctly
 
 * **Cause:** Incorrect thresholds set in _Earlier_ or _Later_ fields.
 * **Solution:** Review and adjust minute values to match company policy.
 
-#### 3. **Warnings Not Triggered Before Departure**
+#### 3. “Before departure” warnings are not triggered
 
 * **Cause:** _Before Departure_ value set too high or too low.
 * **Solution:** Adjust hours to a practical timeframe (e.g., 5 hours ensures timely action).
 
-#### 4. **Overlapping Categories**
+#### 4. Overlapping categories
 
 * **Cause:** Inconsistent configuration (e.g., Tiny later = 20 min, Small earlier = 20 min).
-* **Solution:** Ensure ranges do not overlap between Tiny, Small, and Large.
+* **Solution:** Ensure Tiny < Small < Large for both Earlier and Later.
 
 ***
 
-✅ **Tips:**\
-Start with company-standard values (Tiny: 10–20 min, Small: 20–30 min, Large: 60–70 min) and only adjust if instructed by management. Always test by simulating a flight change after configuration.
+{% hint style="info" %}
+Start with company-standard values (for example Tiny: 10–20 min, Small: 20–30 min, Large: 60–70 min).
+
+Test after changes by simulating a flight update in a non-production environment if possible.
+{% endhint %}
+
+### FAQ
+
+<details>
+
+<summary><strong>Do I have to configure both Earlier and Later?</strong></summary>
+
+Yes. Flights can move both earlier and later.
+
+Configure both so the system can classify changes consistently in both directions.
+
+</details>
+
+<details>
+
+<summary><strong>Should the thresholds be higher for Large than for Small and Tiny?</strong></summary>
+
+Yes. Keep thresholds increasing from Tiny → Small → Large.
+
+That avoids overlaps and unexpected classification.
+
+</details>
+
+<details>
+
+<summary><strong>What does “Warning – Before Departure” actually control?</strong></summary>
+
+It defines a time window (in hours) before departure.
+
+Changes detected inside that window can trigger extra warning behavior.
+
+</details>
+
+<details>
+
+<summary><strong>What email should I use for “Warning – Email”?</strong></summary>
+
+Use an inbox that is monitored during operating hours.
+
+A shared mailbox usually works better than a single person.
+
+</details>

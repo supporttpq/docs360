@@ -4,173 +4,195 @@ noIndex: true
 
 # Web service
 
-The web-service purpose would be to select information inserted from office – defined for a certain agency or company – to be displayed on web booking. The information will regard departures/arrivals gateways, hotels, products, etc.
+### Overview
 
-The v3.0 release of the Tourpaq included a new feature, a new popup in booking page that supports a more complex offers search in the system. This feature could be better done by consuming the web-service (GetHotels), which has already provided this type of functionality. However, some changes have been done in order to support all the requirements for this feature (filtering by multiple hotels, departures, countries, surcharges, prices etc).
+This web service is used to show Tourpaq data in Web Booking.
+
+It returns the information you normally set up in Office, such as:
+
+* departure and arrival airports
+* destinations (resorts)
+* hotels
+* extras (products)
+* travel lengths (how many days/nights)
+
+The service can also be used by other parts of Tourpaq that need to search offers, for example advanced search screens.
 
 ### Security <a href="#security" id="security"></a>
 
-Regarding the security, each API consumer is given a username and password they have to use in order to have access to the methods. This user has to be set as “Web User” from back-office application. Another important thing, the user is able to make requests only using its assigned agencies to the methods that have in request the AgencyID field. The consumer will use basic authentication when he will call any method from API.
+To use the service, you need a username and password.
+
+That user must be marked as a **Web User** in the back office.
+
+Access is limited:
+
+* The user can only request data for the agencies/brands they are assigned to.
+* For calls that include `AgencyID`, the service checks that the user is allowed to use it.
+
+The service uses **Basic Authentication** (username + password sent with the request).
 
 ### Methods Description <a href="#methods-description" id="methods-description"></a>
 
-Forward down are explained the web-methods exposed by the web-service.
+Below is a short description of the methods exposed by the service.
 
 ### GetDepartures <a href="#getdepartures" id="getdepartures"></a>
 
-This method should return all departure gateways for an agency.
+Returns all departure airports (gateways) for the selected agency.
 
-The following is an extract from the information that should be available for a departure:
+Typical fields returned:
 
-* Name: string
-* IATA: string
-* Country: string
-* CountryCode: string
+* Name
+* IATA code
+* Country
+* Country code
 
 ### GetDeparturesFromResort <a href="#getdeparturesfromresort" id="getdeparturesfromresort"></a>
 
-This method should return all departure gateways for an agency when the client knows the ResortID (a resort is often called destination, but is not the same as Arrival)
+Returns the possible departure airports for an agency, when you already know the `ResortID`.
+
+Note: A **resort** is often called a destination, but it is not the same as an **arrival airport**.
 
 ### GetDestinations <a href="#getdestinations" id="getdestinations"></a>
 
-A web method for taking all arrival gateways for an agency is also necessary. Information like the following should be available for an arrival:
+Returns all arrival airports (gateways) for an agency.
 
-* Name: string
-* IATA: string
-* Country: string
-* CountryCode: string
+Typical fields returned:
+
+* Name
+* IATA code
+* Country
+* Country code
 
 ### GetCountries <a href="#getcountries" id="getcountries"></a>
 
-Is similar to GetDestinations, but it will return the countries where the transports arrive. It searches for the transports defined in system that have the specified Departure from Request, and returns the transport arrival’s country.
+Similar to **GetDestinations**, but returns only the countries that have arrivals for the selected departure.
+
+It looks at transports set up in the system and returns the arrival country.
 
 If DepartureID = 0 then it will return all countries for which there are defined transports for that agency.
 
 ### GetResorts <a href="#getresorts" id="getresorts"></a>
 
-Returns the resorts depending on the request, and these conditions should be fulfilled:
+Returns resorts based on the request filters.
+
+These conditions must be met:
 
 * existence of a transport for the given agency ID;
-* this transport should be enabled for internet sales
-* if Country > 0, then we filter the transports to those that arrive in that country
-* for all the transports arrivals, the correspondent resorts are put in the response
+* the transport must be enabled for internet sales
+* if `Country > 0`, only arrivals in that country are used
+* resorts linked to those arrivals are returned
 
 ### GetResortByID <a href="#getresortbyid" id="getresortbyid"></a>
 
-This web-method exposes information about a resort. The following is an extract from the information that should be available for a resort:
+Returns details for one resort (`ResortID`).
 
-* Name: string
-* Code: string
-* Description: string
-* NumberOfRestaurantsAndBars: integer
-* Shopping: string
-* Attraction: string
-* TeaserText: string
-* Array of //Picture//(this type will be described in the next chapter: Methods Description)
-* MetaDescription: //MetaDescription// (this type will be described in the next chapter: Methods Description)
-* GeoLocation: GeoLocation (this type will be described in the next chapter: Methods Description)
+Typical fields returned:
+
+* Name
+* Code
+* Description
+* Number of restaurants and bars
+* Shopping
+* Attractions
+* Teaser text
+* Pictures
+* Meta description
+* Geo location
 
 ### GetTravelLengths <a href="#gettravellengths" id="gettravellengths"></a>
 
-For each transport we take the afferent interval periods, corresponding to the parameters specified in request. The client should have the possibility to filter them by an agency ID, departure, country, resort and departure date. The following is an extract from the information that should be available in response for an interval period(an array):
+Returns the available stay lengths for transports that match your filters.
 
-* Nights: integer (number of nights spent at hotel)
-* Days: integer (trip total duration)
-* TravelModeID: integer (ID to identify the transport mode: FLY, BUS, TRAIN)
-* IntervalID: integer (possible values: 1,2,3,4)
-* Name: string
+You can filter by agency, departure, country, resort, and departure date.
+
+Typical fields returned for each travel length:
+
+* Nights (hotel nights)
+* Days (total trip days)
+* Travel mode (for example flight, bus, train)
+* Interval ID (typically 1–4)
+* Name
 
 ### GetTravelLengthsForTransportAll <a href="#gettravellengthsfortransportall" id="gettravellengthsfortransportall"></a>
 
-This web method should do the same as the previous one, with the only difference that it is used when the requester holds a PriceListTransportAllotment ID (this ID identifies a transport departure for a specific date, a hotel room and a price).
+Same as **GetTravelLengths**, but used when you already have a `PriceListTransportAllotmentID`.
 
 ### GetTravelLengthByID <a href="#gettravellengthbyid" id="gettravellengthbyid"></a>
 
-The response from GetTravelLengths/GetTravelLengthsForTransportAll contains also an ID: TravelLengthID. That ID will be useful for this web method to get information about a specific interval period. The response for this method is similar to GetTravelLengths response.
+Returns one travel length by `TravelLengthID`.
+
+The response is similar to **GetTravelLengths**.
 
 ### GetHotelByID <a href="#gethotelbyid" id="gethotelbyid"></a>
 
-Using this web method, the client can get information about a specific hotel when he holds a HotelID. This is an extract from the information available in response:
+Returns hotel details for one `HotelID`.
 
-* HotelID: integer
-* Name: string
-* Code: string
-* ResortID: integer (using this ID, the hotel’s resort can be identified)
-* CountryID: integer
-* ResortName: string (resort’s name)
-* Address: string
-* Phone: string
-* Email: string
-* Description: string
-* GoogleDescription: string
-* HtmlDescription: string
-* Array of Picture
-* MetaDescription: MetaDescription
-* GeoLocation: GeoLocation
-* Distances: Distances (this type will be described in the next chapter: 3.2.39.2)
-* Facilities: Facilities (this type will be described in the next chapter: 3.2.39.2)
+Typical fields returned:
+
+* Hotel ID, name, and code
+* Resort and country
+* Address and contact details
+* Descriptions (short and HTML)
+* Pictures
+* Meta description
+* Geo location
+* Distances
+* Facilities
 
 ### GetProducts <a href="#getproducts" id="getproducts"></a>
 
-By using this web-method, a user should be able to get all the products (extras) from the system, based on the filters specified in request. These are the fields that can filter the products:
+Returns extras (products) based on filters.
 
-* AgencyID: integer – return the products for a specific brand
-* ArrivalID: integer – return the products available for the arrival with this ID
-* ResortID: integer – the products available for the resort with this ID
-* HotelID: integer – the products available for the hotel with this ID
-* Catering: Boolean – the products of catering type
-* Pension: Boolean – the products of pension type
+You can filter by:
 
-This is an extract from the information available in response (consisting in an array of Product):
+* Agency/brand
+* Arrival, resort, or hotel
+* Catering type
+* Pension type
 
-* Name: string – product name
-* Code: string – product code
-* Description: string – product description
-* VipProduct: Boolean – the product is of “vip” type
-* PartyPackage: Boolean - the product is of “party package” type
-* Pension: Boolean – the product is of “pension” type
-* Catering: Boolean – the product is of “catering” type
-* Array of Price:
-  * DateFrom: date –the product is available for bookings that are made starting with this date
-  * DateTo: date - the product is available for bookings that are made earlier than this date
-  * Price: integer – product price
-  * GroupPrice: integer – product group price
+Typical fields returned per product:
+
+* Name, code, and description
+* Flags such as VIP / party package / pension / catering
+* Prices with:
+  * booking date from/to
+  * price and group price
 
 ### GetHotelDiscounts <a href="#gethoteldiscounts" id="gethoteldiscounts"></a>
 
 In Tourpaq System, in the Hotel section are defined the extra beds discounts. The user should be able to get all the discounts for a given hotel starting from a given departure date.
 
-This is an extract from the information available in response:
+Typical fields returned:
 
-* Discount: integer – this is the value of the discount
-* Age: integer – the discount is available only for this category of age
-* IntervalID: integer – the discount is available only if the trip has this duration
-* Percent: Boolean – if this field’s value is “true”, then the “Discount” value is a percent
+* Discount value
+* Age group
+* Interval ID
+* Percent flag (whether the discount is a percentage)
 
 ### GetAvailableDays <a href="#getavailabledays" id="getavailabledays"></a>
 
-By using this web-method, the user will be able to get the dates for which excursions are available (being given a start date and a maximum end date) – there are more filters that will be taken into account. This can be useful to highlight these days in a calendar, so the customers can make a better selection in the search form. If the selection from the search form changes, the returned dates will also change. If for example the end-user changes the departure, the method should return only those dates for which trips are available from the new selected departure.
+Returns the dates where trips/excursions are available.
 
-* These are the fields that can be specified in the request:
-* DepartureID: integer
-* CountryID: integer
-* ResortID: integer
-* DepartureDate: date
-* MaxDepartureDate: date
-* AdultsNumber: integer
-* ChildrenNumber: integer
-* ChildrenAges: array of integer
-* AgencyID: integer
-* IntervalID: integer
-* TransportHotel: Boolean
+This is useful for calendars, so customers only see dates that can be booked.
+
+If the search selection changes (for example departure airport), the returned dates change too.
+
+Typical request fields include:
+
+* Departure, country, resort
+* Start date and end date
+* Adults, children, and child ages
+* Agency/brand
+* Interval ID
+* Transport-hotel flag
 
 ### GetTransportAllotments <a href="#gettransportallotments" id="gettransportallotments"></a>
 
-This web-method should return all the transport allotments that correspond to the given filters; these transport allotments should have the departure date greater than a given date and lower than another given date.
+Returns transport departures that match your filters and date range.
 
 If there is no allotment returned, it will return the transport allotment with the lowest departure date from future that matches those filters for a wider period.
 
-These are the filters that the user can specify in request:
+Typical request filters:
 
 * AgencyID: integer
 * DepartureID: integer
@@ -182,14 +204,18 @@ These are the filters that the user can specify in request:
 * ChildrenNumber: integer
 * ChildrenAges: array of integer
 
-This is an extract from the information that will be available in response:
+Typical response fields:
 
-* EarliestDepartureDate: date (if not allotments is returned, this will be the first departure date that matches the request; if the user will re-call the web-method with this date as DepartureDate, then it should return no allotments)
-* TransportAllotments: TransportAllotment \_ TransportAllotment: integer \_ DepartureDate: date \_ Departure: string (departure name) \_ Arrival: string (arrival name) \_ Airline: string \_ Array of Interval: \_ IntervalID(period interval): integer \_ Nights: integer(the number of nights spent by the passengers at the hotel)
+* Earliest departure date (the next matching departure, if none are found in the requested range)
+* A list of transport allotments (departures), including:
+  * departure date
+  * departure and arrival names
+  * airline (if relevant)
+  * intervals and number of nights
 
 ### GetHotelsByAllotment <a href="#gethotelsbyallotment" id="gethotelsbyallotment"></a>
 
-After getting information from the system using GetTransportAllotments web-method, the user can call this method in order to take information about the hotels with available rooms. The most important filters the user should specify in the request are:
+After you call **GetTransportAllotments**, you can use this method to list hotels with available rooms for a specific departure.
 
 * AgencyID: integer
 * ResortID: integer
@@ -199,19 +225,24 @@ After getting information from the system using GetTransportAllotments web-metho
 * ChildrenNumber: integer
 * DepartureDate: date
 
-The response will contain an array of “Hotel” (custom type). More information about this type will be described in the next chapter (3.2.39.2). This type will also contain information (prices, rooms, flight information, discounts etc.) about a predetermined number of allotments (e.g. 3 allotments). This information will be stored in an object - Prices of type PriceInformation. Please refer to chapter 3.2.39.2 in order to see more details about this custom type.
+The response contains a list of hotels, including a limited set of price/departure options (often 3 departures per hotel).
 
 ### GetHotels <a href="#gethotels" id="gethotels"></a>
 
-This method is similar to the previous one because the response is the same, as structure (not as values). In other words, the response contains an array of “HotelInfo” - a custom type that will be described next chapter (3.2.39.2). This type will also contain information (prices, rooms, flight information, discounts etc.) about a predetermined number of allotments (e.g. 3 allotments). This information will be stored in an object - Prices of type PriceInformation. To see more details about this custom type, please refer to chapter 3.2.39.2.
+Similar to **GetHotelsByAllotment**, but designed for broader search.
+
+The response includes:
+
+* hotel information
+* prices and availability for a limited number of departures (often 3)
 
 > 💡 **Remarks:**
 
-* **IntArrayAsString** is actually the string type, this notation is a convention in this document, for simplicity, to highlight that it should be an array of integers separated by comma
-* If a field of type IntArrayAsString is empty or null, then by convention we consider that this filter is ignored (an empty array)
-* Only the underlined fields are mandatory.
+* Some filters are provided as a list of IDs in one field (comma-separated).
+* If such a field is empty, the service treats it as “no filter”.
+* Required fields depend on your setup and use case.
 
-The followings are the most important fields that will be taken in consideration for a request:
+Common request fields:
 
 * Departures: String (int IDs separated by comma)
 * Countries: (int IDs separated by comma)
@@ -241,9 +272,11 @@ The followings are the most important fields that will be taken in consideration
 
 ### GetHotelPrices <a href="#gethotelprices" id="gethotelprices"></a>
 
-This method gets prices information about a given hotel (when the caller has a HotelID). It is similar to GetHotels, excepting that GetHotels returns information regarding only the first 3 allotments (and about the hotel), while GetHotelPrices returns all the allotments (paged).
+Returns prices for one hotel (`HotelID`).
 
-In other words, after calling this method, the response will contain an array of PriceInformation, a custom type where is stored information (prices, rooms, flight information, discounts etc.) about each of the allotments. To see more details about this custom type, please refer to chapter 3.2.39.2. The request is similar to that of GetHotels. In addition, a new field should be given, HotelID. Also, here we don’t have the OptionalFilters field.
+Unlike **GetHotels**, this method can return all departures for the hotel (paged).
+
+The request is similar to **GetHotels**, but also includes `HotelID`.
 
 ### GetHotDeals <a href="#gethotdeals" id="gethotdeals"></a>
 
@@ -312,7 +345,7 @@ Using this method you are able to log in the system the visits for an array of t
 
 ### Methods Responses <a href="#methods-responses" id="methods-responses"></a>
 
-In this chapter will be enumerated the custom types that are used in some of the methods reponses.
+This section lists the main data types returned by the service.
 
 ### Picture <a href="#picture" id="picture"></a>
 
@@ -327,7 +360,7 @@ In this chapter will be enumerated the custom types that are used in some of the
 
 ### GeoLocation <a href="#geolocation" id="geolocation"></a>
 
-This type contains information about geo location:
+Location details:
 
 * Latitude: decimal
 * Longitude: decimal
@@ -335,7 +368,7 @@ This type contains information about geo location:
 
 ### Distances <a href="#distances" id="distances"></a>
 
-This type contains information about distances from hotel:
+Distances from the hotel (values depend on setup):
 
 * Center: integer
 * Pool: integer
@@ -343,7 +376,7 @@ This type contains information about distances from hotel:
 * Airport: integer
 * Pub: integer
 
-### HotelFacilites <a href="#hotelfacilites" id="hotelfacilites"></a>
+### Hotel facilities <a href="#hotelfacilites" id="hotelfacilites"></a>
 
 These facilities will be used for describing a hotel.
 
@@ -417,3 +450,60 @@ This type contains information regarding a room type from a hotel. This is an ex
 * ExtraChildBedNumber: integer – the number of extra beds for children
 * RoomsCount: integer – the number of available rooms for the given type
 * PaxDistribution (an array of RoomPax): this field gives information about the distribution of passengers in rooms. This distribution is automatically done if it is not already specified in request (this is possible in GetHotels). A RoomPax specifies for a room number how many adults and the ages of the children that stay in it
+
+***
+
+### FAQ
+
+<details>
+
+<summary><strong>Who is this web service for?</strong></summary>
+
+It is for systems that need to show Tourpaq offers and content outside Office.
+
+The most common case is Web Booking.
+
+</details>
+
+<details>
+
+<summary><strong>How do I get access?</strong></summary>
+
+You need a service user (username + password).
+
+The user must be set as a **Web User** and assigned to the right agencies/brands.
+
+</details>
+
+<details>
+
+<summary><strong>What is the difference between arrival, destination, and resort?</strong></summary>
+
+* **Arrival** usually means the arrival airport.
+* **Resort** is the destination area where hotels are located.
+* A resort is often called a “destination” in everyday language.
+
+</details>
+
+<details>
+
+<summary><strong>Why do I get empty results?</strong></summary>
+
+Common reasons:
+
+* You are using an `AgencyID` the user is not assigned to.
+* There are no transports/offers that match the filters.
+* Internet sales is not enabled for the relevant transports/hotels.
+* Your date range is too narrow.
+
+</details>
+
+<details>
+
+<summary><strong>Which method should I start with?</strong></summary>
+
+Most flows start with departures/countries/resorts, then transport departures, then hotels.
+
+If you already know the departure you want, start with **GetTransportAllotments**.
+
+</details>

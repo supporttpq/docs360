@@ -4,55 +4,158 @@ noIndex: true
 
 # Tourpaq Web Booking - Technical documentation
 
-The Tourpaq Web Booking is a component of Tourpaq booking platform which allows the customers themselves to book travel packages, pay various amounts of their choice, print ticket or manage the products they have chosen for the holiday. The Web Booking application is using different themes for each Brand/Agency that uses it and also small customizable differences in behavior. One of the most important pages, and the entry point in the Web Booking application, is the DoBooking.aspx page. This is the page that receives the needed details by query string either by desktop browsers or by mobile applications.
+### Overview
 
-The detailed description of each of the required parameters is found bellow. An important note is to be made on the validity of the entire group of parameters. In case a test made to check the integrity of the parameters fails, then the booking attempt is denied, a message is listed to the customer and an email with details is sent to the webmaster.
+Tourpaq Web Booking is the online booking page where customers can:
 
-Here is an example of web booking entry point URL. The domain address is usually represented by "\[agencyBrandName].webbooking.tourpaq.com". Also a staging test environment should exist for each Web Booking implementation at “staging.\[agencyBrandName].webbooking.tourpaq.com” with the comment that the staging database is usually an older (and cleaned) copy of the live database, but no longer than 2-3 weeks old.
+* book a trip
+* pay (full or partial, depending on setup)
+* print tickets
+* manage selected extras
+
+Each brand/agency can have its own design and a few behavior differences.
+
+The entry point is **DoBooking.aspx**. This page receives booking details through the link (the URL parameters).
+
+Below you’ll find an explanation of each parameter.
+
+Tourpaq validates the full set of parameters. If something is wrong, the booking is blocked and the customer sees a message. An email with details can also be sent to the configured mailbox.
+
+### Environments (live and staging)
+
+Typical domains:
+
+* Live: `[agencyBrandName].webbooking.tourpaq.com`
+* Staging: `staging.[agencyBrandName].webbooking.tourpaq.com`
+
+Staging is usually a copy of live data. It can be up to 2–3 weeks behind and may be cleaned.
 
 ### Parameter description <a href="#parameter-description" id="parameter-description"></a>
 
-[https://primotours.webbooking.tourpaq.com/DoBooking.aspx](https://primotours.webbooking.tourpaq.com/DoBooking.aspx) **?pltaID=84042\&p=1\&rno=3\&pt=2\&a=6\&c=1\&aa=14\&ca=3\&f=1\&fd=12\&ft=1**
+Example URL:
 
-| Name        | Meaning                                                                                                                                                                                         | Accepted values (required unless stated otherwise)                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **pltaID**  | “Price list transport allotment id” - Provides most of the needed information: departure date, duration, return, hotel room, base price etc.                                                    | Only positive integer values of PriceListTransportAllotmentIDs belonging to the current agency. **Fails** the integrity test if the departure is in the past or sooner than minimum limit set on agency, requested price is set to zero and other possible reasons. Please see second table for details on such scenarios.                                                                                                                                                         |
-| **p**       | “Period” – states the holiday duration                                                                                                                                                          | Only integer values within “1,2,3,4, 100, 101” representing the 4 intervals that a price can be defined on plus the one way transport modes - fly out and fly home. If the URL will contain both periods 100 and 101, that means we are dealing with a Custom Trip, with each flight unbound by a particular rule from the other flight. Example of standard intervals: Interval 1 might be 7 days, all the other Intervals 2, 3, 4 can only be multiples of I1 - 14, 21, 28 days. |
-| **rno**     | “Room numbers” – self-explanatory with the observation that the Web Booking can currently book only one type of room per booking. No bookings with 2 different types can be made.               | Only integer values greater than 0. **Fails** if the booking passenger no. is greater than the maximum beds in the rooms or if the minimum beds to be occupied in rooms is lower than the passenger no.                                                                                                                                                                                                                                                                            |
-| **pt**      | “Price type” – states if the price should be a group price (3), discount (2) or normal price (1)                                                                                                | Only integer values within “1,2,3”                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| **a**       | “Number of adults”                                                                                                                                                                              | Positive integers                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| **c**       | “Number of children”                                                                                                                                                                            | Only integers (can be 0) – in combination with adults no. determines the passenger total of the booking. **Fails** if the passenger no does not fall within the maximal or minimal number of beds.                                                                                                                                                                                                                                                                                 |
-| **aa**      | “Adult ages” – accepts values such as “15,17,17”. In the above example’s scenario it will mean that 3 adults will be considered 99 years of age and 3 adults will have the provided ages.       | //Optional//. Expects string of integer positive values delimited by comma.                                                                                                                                                                                                                                                                                                                                                                                                        |
-| **ca**      | “Children ages” – requires to contain the same number of ages as the “c” parameter states in this case ages will not be set to a default age as in “aa”s case.                                  | **Fails** if “c” is 0 and “ca” provides values or if “c” is greater than 0 and “ca” does not provide the same number of ages delimited by comma.                                                                                                                                                                                                                                                                                                                                   |
-| **db**      | “Discount bonus code” – states if the booking benefits from a bonus code campaign.                                                                                                              | //Optional// - can be string insensitive with minimum 5 chars and maximum 20 chars except 12(which is used for giftcard codes). If not valid, no discount gets applied.                                                                                                                                                                                                                                                                                                            |
-| **f**       | “Booking should be financed” – “1” meaning the payment of the booking will be made by a financial society in rates. Not possible if the departure is in the next 21 days from the booking date. | //Optional//. Accepts only values of “0” or “1”.                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| **fd**      | “Financing duration in months” – each of the agencies has an accepted interval of financing months. For example a value within “0,12,24,36,48,60,72”                                            | //Optional only if// “f” is 0 or not provided. **Fails** if the value is not inside the accepted interval for the current agency and financing type.                                                                                                                                                                                                                                                                                                                               |
-| **ft**      | “Financing type” – currently there are 3 types of financing. Example: first 6 months pay nothing and continue paying rates afterwards, fixed rate, dynamic rate etc.                            | //Optional only if// “f” is 0 or not provided. **Fails** if value is not “1”, “2”, “3” or “4”                                                                                                                                                                                                                                                                                                                                                                                      |
-| **offerNo** | “OfferNo” – Representing the OfferHash from \[dbo].\[CustomerOffer]                                                                                                                             | Optional parameter                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| **uh**      | “UserHash” – Representing the encoded userID of the sales agent that sent an offer to the customer                                                                                              | Optional parameter                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+`https://primotours.webbooking.tourpaq.com/DoBooking.aspx?pltaID=84042&p=1&rno=3&pt=2&a=6&c=1&aa=14&ca=3&f=1&fd=12&ft=1`
 
-A more complex scenario of the Web Booking URL is the one with multiple room types such as: [https://primotours.webbooking.tourpaq.com/DoBooking.aspx](https://primotours.webbooking.tourpaq.com/DoBooking.aspx) **?pltaID=84042,84572\&p=1\&rno=3,1\&pt=2,1\&a=6,2\&c=1,1\&aa=14\&ca=3,7\&f=1\&fd=12\&ft=1**\ The above integrity rules still apply, only that most of the parameters need a dual value, or multiple value according to the situation, if the booking should have 3,4 or more room types bought.
+| Name        | Meaning                                                                                        | Accepted values (required unless stated otherwise)                                                                                                                                                     |
+| ----------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **pltaID**  | The trip ID used as the basis for the offer (departure, return, hotel room, base price, etc.). | Positive integer(s) for the current agency/brand. The booking is rejected if the ID is not valid or is not allowed (for example: departure is in the past, too close to departure, or the price is 0). |
+| **p**       | Stay length code (how long the trip is).                                                       | Integer value in `1,2,3,4,100,101`. Values `1–4` are the standard intervals. `100` and `101` are used for one-way/custom setups.                                                                       |
+| **rno**     | Number of rooms of each room type.                                                             | Integer(s) greater than 0. The booking is rejected if the passenger count does not fit the room(s) (too many or too few beds).                                                                         |
+| **pt**      | Price type.                                                                                    | `1` = normal, `2` = discounted, `3` = group price.                                                                                                                                                     |
+| **a**       | Number of adults.                                                                              | Positive integer(s).                                                                                                                                                                                   |
+| **c**       | Number of children.                                                                            | Integer(s), can be `0`. Must match the room capacity rules together with adults.                                                                                                                       |
+| **aa**      | Adult ages (optional).                                                                         | Comma-separated list of ages. If you provide fewer ages than the number of adults, the missing ones are treated as `99`.                                                                               |
+| **ca**      | Children ages.                                                                                 | Must contain the same number of ages as `c`. Comma-separated for single-room setups. For multi-room setups, split by room using \`                                                                     |
+| **db**      | Bonus code (optional).                                                                         | 5–20 characters. Codes with length 12 are typically reserved for gift cards. If the code is not valid, no bonus is applied.                                                                            |
+| **f**       | Financing (optional).                                                                          | `0` or `1`. Financing is typically not allowed if departure is within the next 21 days.                                                                                                                |
+| **fd**      | Financing duration (months).                                                                   | Used for financed bookings. Allowed values depend on the agency setup (for example `12,24,36,...`).                                                                                                    |
+| **ft**      | Financing type.                                                                                | Used for financed bookings. Allowed values depend on the agency setup (for example `1–4`).                                                                                                             |
+| **offerNo** | Offer number (optional).                                                                       | Used when a booking is opened from an offer.                                                                                                                                                           |
+| **uh**      | User hash (optional).                                                                          | Identifies the agent who sent the offer link.                                                                                                                                                          |
 
-<div align="left"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjExR/NCNwAABUFJREFUWEe1WEtvW0UUvknaqkWlUEBdsa0EiAUSvwGxROIfwAoVAcqCPUhNHNsxdRALXqmglRAVoqgVlAYqBN0FNi1t7HttI7shrU1LHNtxkIgTH853zsz4+pmH8Uhf7tx758758p3HzNgjIu9+uUBXC2/QXPYJmkmPM7yRIro0RrGU9s/knqRvl1+jB+U/mQp53kq1QPPB0zTjT9A0D4iYgaMGbFl7U75HZzPPUImF8a7ceZ3ihkTMDB41YqlxijCJiPEG7qHYlZVT5CUyx5RI6lDXh/0Q8w/Tz39N0u9r83Szco5uVj+l29XP6VblLN2onqNfSm9TLFCjmFvARmdSB7rmiqYPOq8kM8fJw+RRebD72LldOU/NJnuc0aRN+N7dEzVom6831s8LiegSvhmnqcC4iElijqi54h0IAfHUEfLwYK+uqjXvKxkhpAAJ/os/8mCjuUrx9ISoInHChMQW3GUUAVyfCUaXJkCImTm2u0NlM89Gt9S4IdG0ZEwrN/IcI+YbGOOkQV+9ASJjIZUUiCMhhE6Y9U4o1BdUFm5NEOP+NunVPKbCxjWZFyoheOG6cCCDUGtOG9z7JHSr8hkT4NiBdWEAdUIK8TMEu4QCkzjN13iaFRG39bLVQWivuP73O9BDFQG06/po1x+8a8bDmBqEuzTIe8MRsox3q9LVe6+q4WZDjFtC1GSVDKnv777i4gZKwVXiMhM3vWy1uazz5SB8sfICGzVuUg7SV1Lav7D8ooyVWtSRWZ2wJIF9uezD3ElYNa1FpEWI6OPsSTNe3YVY6kdqaEKJ9CGXXSiE0rgQ2dTHNZE+bMaHCSGzzH0IQxMC/mkUjXHbjAu51beKxlUaP/Ybm/KdGJoQJihtLIoSLTc1WDWld2/jV1d7JKDFIMgwQsbD89n+vgn51a/ZtFFFeBhy3PzaVzJGqrJZOqL+2OhiCFhcTRjz6iY0JbTN7+KhseomKGWrdeudYmhCmPzH0qSYd7Jws8XyWnHS7SBEKVZH4okx3bZkKLoI7bUOYUP3ZfFltq1bDyHFsJl34e5LbtPXS5FODK0QMF94TnjYtiUxpO6bzz/fRWikhRGxkMw+wqY1oEUgk2F4Nsc7P1W9leYjJSS1hdepP9a/UzaGGJCr/9Dzm0EY3mVM5jRPkgwepp+Kb9Fvq7O0WH5P+rOZh3p+07kZC2N4hVDwsGBiIrOiwyWR9AHZN0t2wUViqHd1DmN4hbBhxyRm454MjtEcqxVeGtp3hEB/YkMTQi3BDjAZPOriCFmWq13i0+9jbcrYYI7wBr6fYm2E7LEWD5Gqg7IhDIzP1S4LGY1nrklchrL1y265cGM75oQdnDDkHRNECNgq7mGw3c2FP9oJs5mjUpntCtakf4UZjkOJ7BG3WwTEhoHciy1Wil3u7JpDZMhlfJjjl/aYMgjxpXE64x9lGpuqDv+RK9KfIZnW45RqCU0HfBLhviaAnu1xRTkRQuhANjtgJ8i4YIz89YtKAmykSG9TZv2ScVn3mmUBVexyBds2MxFjTiGJIxnUPxssENA42qAiB/VvmAbWtAYFtYtyPu8cb5WxkMKKKz/XPtvkfwKnW28uOCFFDnG0lxMsJpvyNXjxgwWKpDup7gAcHq0qUEv2Snw/lz1BHn6owgMnm/loEFwgmquct6CCf9C5QsaF+u3QHx+UiBZRFNqFO2+SVyqv0Ce5p2Si3cYQgBjBJHqv/6lVqD8RhbxnQvYetj/KPUvFSp7kJ72VtTwtLJ+i94PjPGl3dvzfQJaCfIRPLx/4j9MCe6m4tsxUyPsPEiJBxYwnODoAAAAASUVORK5CYII=" alt="!" height="36" width="36"></div>
+### Multiple room types (comma-separated values)
 
-As of February 2016, the children distribution in rooms by their age can be obtained precisely in the URL. For this, the children ages need to be split into room iterations as well as all the other multiplied parameters, only that the separator for them must be the pipeline "|". **DoBooking.aspx?pltaID=729932,729961\&p=1\&rno=2,1\&pt=2,2\&a=4,1\&c=1,2\&aa=\&ca=9|12,5**
+Some setups support booking more than one room type in the same booking. In that case, most parameters must contain the same number of comma-separated values.
 
-> Doubling is either accepted on **ALL parameters** (except p-period) or doubling is accepted on **NO parameter**. URL like this is not supported: //pltaID=1767430\&p=1\&rno=2\&pt=1\&a=4&//**c=2,2\&aa=\&ca=4,1|5,0**
+Example:
 
-> Please note that the URL parameter structure from Web Booking can be used in Office also as: [http://staging-booking.tourpaq.com/BookingEngine/EditBooking/Booking.aspx?pltaID=](http://staging-booking.tourpaq.com/BookingEngine/EditBooking/Booking.aspx?pltaID=).....
+`https://primotours.webbooking.tourpaq.com/DoBooking.aspx?pltaID=84042,84572&p=1&rno=3,1&pt=2,1&a=6,2&c=1,1&aa=14&ca=3,7&f=1&fd=12&ft=1`
+
+### Children ages per room (using `|`)
+
+If you use multiple rooms and you want to control which child stays in which room, split child ages by room using `|`.
+
+Example:
+
+`DoBooking.aspx?pltaID=729932,729961&p=1&rno=2,1&pt=2,2&a=4,1&c=1,2&aa=&ca=9|12,5`
+
+{% hint style="warning" %}
+If you use comma-separated values, use them consistently.
+
+Either you provide multiple values for the relevant parameters, or you provide single values. Mixing formats is not supported.
+{% endhint %}
+
+{% hint style="info" %}
+In some setups, the same URL parameter structure can also be used in Office for testing.
+{% endhint %}
 
 ***
 
-'' No longer the case with Faster Web Booking. Detailed warning message is presented on the spot.''
+### Validation errors
 
-### Error page interpretation <a href="#error-page-interpretation" id="error-page-interpretation"></a>
+In Faster Web Booking, a detailed warning is shown on screen when something is wrong.
 
-'' No longer the case with Faster Web Booking. Detailed warning message is presented on the spot.''
+<details>
 
-In case you do encounter an integrity fail situation, you will be redirected to a page such as [http://primotours.webbooking.tourpaq.com/Error.aspx?e=0\&salg=0](http://primotours.webbooking.tourpaq.com/Error.aspx?e=0\&salg=0)
+<summary>Legacy: Error.aspx parameters (older setups)</summary>
 
-| Name                                                                                                                                                                                                                                                                                                                          | Meaning                                                                                                                                                                                                                                                                                 | Accepted/possible values                                                                                                                                                                                                                                                  |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **e**                                                                                                                                                                                                                                                                                                                         | This represents the error type you encounter.The main situations when a booking attempt can be rejected have been split into several major categories.                                                                                                                                  | Values here are set by the system and can be anything from 1, 2, 3 until any current category number we have reached at some point in time.                                                                                                                               |
-| **salg**                                                                                                                                                                                                                                                                                                                      | This parameter was named similar to the one in the presentation site for easy remembering. This was required so the visitors do not see the technical reasons themselves. In order to set this, please copy paste the window url to a new browser window and set this parameter to "1". | Values can be "0" which is set by default and "1" which will provide some more details on the reason why the booking was rejected. Example: //Error: Parameter configuration was incorrect (or requested price is zero) (or the plta is generated for a different agency) |
-| Used parameters: pltaID=202628\&p=1\&rno=1\&pt=2\&a=2\&c=0\&aa=\&ca=8\&f=0\&fd=12\&ft=1.// When receiving this, please check each possible scenario described as from the most likely to the least likely one. If settings are right please contact Tourpaq Support with providing these details and any other relevant ones. |                                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                           |
+In older setups, a validation error could redirect to a page like:
+
+`http://primotours.webbooking.tourpaq.com/Error.aspx?e=0&salg=0`
+
+| Name     | Meaning                              | Possible values                      |
+| -------- | ------------------------------------ | ------------------------------------ |
+| **e**    | Error category number.               | Set by the system (varies).          |
+| **salg** | Shows extra details when set to `1`. | `0` (default) or `1` (more details). |
+
+If you need support, include the full Error URL and the parameters you used.
+
+</details>
+
+### FAQ
+
+<details>
+
+<summary><strong>What is the easiest way to build a correct Web Booking link?</strong></summary>
+
+Start from a working example for the same brand/agency.
+
+Change only one thing at a time (for example `pltaID`).
+
+</details>
+
+<details>
+
+<summary><strong>Why is a booking link rejected?</strong></summary>
+
+Common reasons:
+
+* The departure date is in the past.
+* The departure is too close to travel date (minimum limit).
+* Passenger count does not fit the room(s).
+* `c` and `ca` don’t match (number of children and child ages).
+* The selected trip ID does not belong to the current brand/agency.
+
+</details>
+
+<details>
+
+<summary><strong>How should I format multiple room types?</strong></summary>
+
+Use comma-separated values for the parameters that relate to each room type.
+
+Keep the same number of values across those parameters.
+
+</details>
+
+<details>
+
+<summary><strong>How do I split children ages per room?</strong></summary>
+
+Use `|` (pipe) inside `ca`.
+
+Each side of the pipe represents one room.
+
+</details>
+
+<details>
+
+<summary><strong>What should I send to support if something fails?</strong></summary>
+
+Send:
+
+* the full URL you used
+* whether you tested on live or staging
+* screenshots of the message shown to the customer
+
+</details>

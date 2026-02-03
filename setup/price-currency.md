@@ -1,43 +1,131 @@
-# Price currency
+# Currency rates
 
-## Currency rate <a href="#currency-rate" id="currency-rate"></a>
+## Currency rates
 
 ### Overview
 
-The system allows administrators to configure and manage currency rates used across the company and its brands. Currency settings impact how totals and statistics are displayed in bookings, ensuring consistent reporting and calculations.
+Currency rates decide how amounts are converted and shown across Tourpaq.
+
+They affect totals and statistics in bookings.
+
+This matters when you use more than one currency.
 
 ### Purpose
 
-This feature provides flexibility in handling multi-currency operations by allowing rates to be created, updated, or removed, while defining default currencies at both **company** and **brand** levels.
+Use this page to:
+
+* Add, edit, or delete currency rates.
+* Choose a default currency for the company.
+* Choose a currency per brand.
 
 <figure><img src="../.gitbook/assets/image (35) (1).png" alt=""><figcaption></figcaption></figure>
 
-### Managing Currency Rates
+{% hint style="warning" %}
+Changing currency rates can change totals in bookings and reports.
 
-* **Create a Currency Rate**
-  1. Navigate to **Setup → System Setup → Currency** tab.
-  2. Click **Add**, enter the new rate, and press **Save**.
-* **Delete a Currency Rate**
-  * In the same tab, select the rate and click **Delete**.
+Update rates carefully. Then double-check a known booking or report.
+{% endhint %}
 
-### Setting Default Currencies
+### Manage currency rates
+
+Go to **Setup → System Setup → Currency**.
+
+* **Add a rate**
+  1. Click **Add**.
+  2. Enter the currency and rate.
+  3. Click **Save**.
+* **Edit a rate**
+  1. Select the rate in the list.
+  2. Update the value.
+  3. Click **Save**.
+* **Delete a rate**
+  1. Select the rate in the list.
+  2. Click **Delete**.
+
+### Set default currencies
 
 * **Company Currency**
-  * Go to **System → System Setup → General Information**.
-  * Choose the company’s default currency from the **Default Currency** dropdown.
+  * Go to **Setup → System Setup → General Information**.
+  * Select a value in **Default Currency**.
 * **Brand Currency**
   1. Navigate to **Users → Brands**.
   2. Click **Edit** next to the brand.
-  3. Select the desired currency code from the **Currency** dropdown.
+  3. Select a value in the **Currency** dropdown.
 
 ### Currency in Bookings
 
 <figure><img src="../.gitbook/assets/image (36) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Totals Panel**
-  * The totals are displayed in the currency of the selected brand (from the **Brand** dropdown in the top-left).
-  * If **All Brands** is selected, totals are converted into the **Company Currency** and shown with the company’s currency code.
+  * Totals are shown in the currency of the selected **Brand** (top-left).
+  * If you select **All Brands**, totals are converted to the **company currency**.
 * **Statistics Panel**
-  * Open the **Statistics** tab under **View All Bookings & Statistics**.
-  * If **Additional Sales per Seller / Turnover** is checked, totals appear in the selected brand’s currency.
-  * If **All Brands** is selected, totals are converted into the **Company Currency**.
+  * Open **All bookings → View All Bookings & Statistics → Statistics**.
+  * With **Additional Sales per Seller / Turnover** enabled, totals follow the selected brand’s currency.
+  * With **All Brands** selected, totals are converted to the **company currency**.
+
+### Related page
+
+* [System Setup – Currency](system-setup/system-setup-currency.md)
+
+### FAQ
+
+<details>
+
+<summary><strong>Why do my totals change when I select “All Brands”?</strong></summary>
+
+Because Tourpaq shows combined totals in the company’s default currency.
+
+It converts amounts before adding them up.
+
+</details>
+
+<details>
+
+<summary><strong>Where do I change the company’s default currency?</strong></summary>
+
+Go to **Setup → System Setup → General Information**.
+
+Update **Default Currency**.
+
+</details>
+
+<details>
+
+<summary><strong>Can each brand use its own currency?</strong></summary>
+
+Yes.
+
+Go to **Users → Brands**, edit the brand, and set **Currency**.
+
+</details>
+
+<details>
+
+<summary><strong>I can’t see the Currency tab. What’s wrong?</strong></summary>
+
+You may not have access to **Setup → System Setup**.
+
+Ask an admin in your company to check your permissions.
+
+</details>
+
+<details>
+
+<summary><strong>What should I check after changing a currency rate?</strong></summary>
+
+Open a booking you know well and compare the totals.
+
+Then check a report that uses currency conversion.
+
+</details>
+
+<details>
+
+<summary><strong>What happens if a currency rate is missing?</strong></summary>
+
+Tourpaq may not be able to convert amounts correctly.
+
+Add the missing currency rate, then re-check totals and reports.
+
+</details>

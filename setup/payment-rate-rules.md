@@ -1,56 +1,226 @@
 # Payment rate rules
 
-## Payment rate rules
+### Overview
 
-* Deposit value - amount of the first payment per passenger
-* Deposit percentage - When is set, deposit is calculated based on percentage from base price(without other extras/supplement). Payment simulation will use deposit value!
-* Second payment value
-* Deposit due - number of days after booking the deposit must be paid
-* Second payment due - number of days before departure the second payment must be paid
-* Last payment due - number of days before departure the last payment must be paid
+Payment rate rules control **when** customers must pay and **how much** is due at each step.
 
-### Exception rules: <a href="#exception-rules" id="exception-rules"></a>
+They usually split the total into:
 
-* If second payment due date / rest of payment due date < booking date + deposit due, then second payment due date / rest of payment due date = booking date + 2, except if departure date < booking date + 14
-* If departure date < booking date + 14, then second payment due date / rest of payment due date = booking date + 1, except if departure date < booking date + 3
-* If departure date < booking date + 3, then second payment due date / rest of payment due date = booking date
-*
-  * If second payment due date < deposit due date, then second payment due date = deposit due date
-  * If rest of payment due date < second payment due date, then rest of payment due date = second payment due date
+* a **deposit** (first payment)
+* a **second payment**
+* a **final payment** (the rest)
 
-> 📝 **Note:** the deposit value will be higher since the Cancellation Insurance will also be included, and certain products may be set to be paid within the deposit payment.
+### Main fields (what they mean)
 
-**Supporting payment rules in the past (specific date intervals)**
+* **Deposit value**
+  * The deposit amount per passenger.
+* **Deposit percentage**
+  * If set, the deposit can be calculated as a percentage of the base price.
+  * Base price means “without extras and supplements”.
+  * Note: payment simulation uses the **deposit value**.
+* **Second payment value**
+  * A fixed amount due as the second payment (if used in your setup).
+* **Deposit due**
+  * How many days after booking the deposit must be paid.
+* **Second payment due**
+  * How many days before departure the second payment must be paid.
+* **Last payment due**
+  * How many days before departure the final payment must be paid.
 
-Tourpaq supports having a company/system "history" for deposit values in different booking date intervals/seasons. When updating a booking within a specific interval (changing the passenger structure, updating products, etc) the system will recalculate the payment rates/deposit according to the corresponding deposit default value (and other rule attributes).
+### Exception rules (when dates are too close) <a href="#exception-rules" id="exception-rules"></a>
 
-* Current default deposit per passenger value (and due dates) will continue to be used from field #1.
-* We added a new field named "Deposit percentage", When is set, deposit is calculated based on percentage from base price(without other extras/supplement).Payment simulation will use deposit value!
-*   We have a setting tab named "Deposit rules" where previous deposit default values can be entered.
+Sometimes the trip is booked close to the departure date. In those cases, Tourpaq moves payment due dates forward to avoid impossible deadlines.
+
+The simplified logic is:
+
+* If departure is **within 3 days** of booking:
+  * second and final payments are due **immediately** (same day as booking).
+* If departure is **within 14 days** of booking:
+  * second and final payments are due **1 day after booking**.
+* Otherwise, if the planned second/final payment would be due **before** the deposit deadline:
+  * second and final payments are due **2 days after booking**.
+
+Tourpaq also enforces the correct order of payments:
+
+* The second payment due date cannot be earlier than the deposit due date.
+* The final payment due date cannot be earlier than the second payment due date.
+
+{% hint style="info" %}
+**Note:** the deposit value will be higher since the Cancellation Insurance will also be included, and certain products may be set to be paid within the deposit payment.
+{% endhint %}
+
+### Keeping old rules for past bookings (date intervals)
+
+Tourpaq can store a “history” of deposit rules by booking date.
+
+This is useful when deposit levels change by season. If you later update an older booking, Tourpaq can recalculate using the rule that applied for that booking period.
+
+Key points:
+
+* The current default deposit and due dates come from the main fields (shown as **#1** in the screenshots).
+*   The **Deposit rules** tab lets you add older default deposit values for earlier booking periods.
 
     * **Please note!** If we enter a rule today, it will automatically set the rule with today's date.
 
     <figure><img src="../.gitbook/assets/image (30) (1).png" alt=""><figcaption><p>#1 / #2</p></figcaption></figure>
 
     <figure><img src="../.gitbook/assets/image (31) (1).png" alt=""><figcaption></figcaption></figure>
-* The behavior it produces is that all the bookings made up until **today INCLUDED** will use the deposit value (and due dates) in the relevant rule from #3.
-* Only starting from **tomorrow**, all bookings will use the default deposit value in field #1.
-* We can have multiple rules in the list from #2 and #3. They will affect bookings made within the date intervals determined by several deposit rules, like in example #3.
+
+How the rules apply:
+
+* Bookings made **up to and including today** follow the relevant rule in the list (**#3**).
+* Bookings made **from tomorrow** use the current default values (**#1**).
+* You can have multiple rules covering different booking date intervals.
 
 <figure><img src="../.gitbook/assets/image (32) (1).png" alt=""><figcaption><p>#3</p></figcaption></figure>
 
-📝 **Note:**
+{% hint style="info" %}
+Deposit history is available for the company default rules.
+{% endhint %}
 
-* We now have a "history" for the System/Company default deposit values.
+### What can override the company default
 
-This deposit value can be **overwritten by**:
+The company default can be overridden by:
 
-* Agency specific deposit rules:
+* **Agency-specific** deposit rules:
 
 <figure><img src="../.gitbook/assets/image (33) (1).png" alt=""><figcaption></figcaption></figure>
 
-* Each transport can use custom payment rules that **overwrite both the company setting and the agency** setting.
+* **Transport-specific** payment rules (overrides both company and agency):
 
 <figure><img src="../.gitbook/assets/image (34) (1).png" alt=""><figcaption></figcaption></figure>
 
-> 📝 **Note:** We do not currently have support for previous deposit values from rules set under agency and transport
+{% hint style="warning" %}
+History for past deposit values is not currently supported for agency and transport rules.
+{% endhint %}
+
+### FAQ
+
+<details>
+
+<summary><strong>What is the difference between deposit value and deposit percentage?</strong></summary>
+
+**Deposit value** is a fixed amount per passenger.
+
+**Deposit percentage** can calculate the deposit as a percentage of the base price.
+
+</details>
+
+<details>
+
+<summary><strong>Why did Tourpaq move the payment due dates?</strong></summary>
+
+Because the trip was booked close to departure.
+
+Tourpaq avoids due dates that fall before the booking date or before the deposit deadline.
+
+</details>
+
+<details>
+
+<summary><strong>Why is the deposit higher than expected?</strong></summary>
+
+Some items can be included in the deposit.
+
+For example, cancellation insurance and certain products may be required in the first payment.
+
+</details>
+
+<details>
+
+<summary><strong>Do agency or transport rules also support “history” by date?</strong></summary>
+
+Not currently.
+
+Only the company default deposit rules support history by booking date intervals.
+
+</details>
+
+<details>
+
+<summary><strong>Which rule is used if there are company, agency, and transport rules?</strong></summary>
+
+Tourpaq uses the most specific rule:
+
+* Transport rule overrides agency and company.
+* Agency rule overrides company.
+* Company rule is the fallback.
+
+</details>
+
+<details>
+
+<summary><strong>What does “Deposit due / Second payment due / Last payment due” measure?</strong></summary>
+
+They are deadlines measured in days.
+
+* **Deposit due** is counted from the booking date.
+* **Second payment due** and **Last payment due** are counted back from the departure date.
+
+</details>
+
+<details>
+
+<summary><strong>What is the “booking date” used in these rules?</strong></summary>
+
+It is the booking date shown on the booking in Tourpaq.
+
+If you are unsure, open a booking and check the booking date there.
+
+</details>
+
+<details>
+
+<summary><strong>Does a customer have to pay exactly on the due date?</strong></summary>
+
+No. The due date is a deadline.
+
+Customers can usually pay earlier.
+
+</details>
+
+<details>
+
+<summary><strong>Can we use deposit + final payment only (no second payment)?</strong></summary>
+
+Yes, in many setups.
+
+Set the second payment value to `0` (or leave it unused), then verify with a test booking that the plan looks as expected.
+
+</details>
+
+<details>
+
+<summary><strong>What happens if we change the booking (passengers, extras, or dates)?</strong></summary>
+
+Tourpaq can recalculate the payment plan.
+
+Always re-check the payment plan after you save changes, especially when you change passengers or travel dates.
+
+</details>
+
+<details>
+
+<summary><strong>Why does “Deposit percentage” not match what the customer sees?</strong></summary>
+
+Some setups calculate the deposit from a percentage, but still show or simulate payments using the deposit value.
+
+If you use deposit percentage, test a booking end-to-end to confirm the amounts shown to the customer.
+
+</details>
+
+<details>
+
+<summary><strong>How can I test new payment rules safely?</strong></summary>
+
+Use a staging/test environment if you have one.
+
+Create a test booking with:
+
+* a departure date far in the future
+* a departure date within 14 days
+* a departure date within 3 days
+
+Then confirm the due dates match the exception rules.
+
+</details>

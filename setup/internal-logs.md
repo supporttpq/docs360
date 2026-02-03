@@ -1,41 +1,123 @@
 # Internal logs
 
-### **Overview / Purpose**
+### Overview
 
-Internal Logs is a management tool designed for **administrative oversight** in Tourpaq. It allows administrators to track and review all actions performed by users in the system. This provides **accountability**, helps **troubleshoot issues**, and ensures compliance with internal processes.
+Internal logs show a history of what people did in Tourpaq.
+
+Use it when you need to see who changed something. It also helps you understand what happened and when.
 
 <figure><img src="../.gitbook/assets/image (361).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-### **How It Works**
+### Where to find it
 
-* The Internal Logs tool is accessible via:\
-  **Setup → Internal Logs**
-* Once opened, you can specify a **date range** using the start and end dates to narrow down the actions you want to review.
-* Administrators can **filter actions** to quickly find relevant entries.
+Go to **Setup → Internal Logs**.
 
-***
-
-### **Key Features / Functions**
-
-* **Date Range Selection:** Choose the period for which you want to view logs.
-* **Agency Filter:** Limit the logs to actions performed by users in specific agencies.
-* **Action Type Filter:** Filter by types of system actions, including but not limited to:
-  * Financial exports
-  * Hotel list exports
-  * Hotel communications
-  * Customer merges
-  * Changes in discounts or products
-  * Modifications to room types or hotel extra bed discounts
-* **User Filter:** View actions performed by specific users or all users.
-* **Comprehensive Activity Tracking:** The system logs most user activities, giving a complete picture of operational changes.
+Only admins can open this page.
 
 ***
 
-### **Notes / Best Practices**
+### How to use it
 
-* Only **administrators** have access to Internal Logs.
-* Use filters to **narrow down results**; without filters, the system displays **all actions** performed by all users.
-* Regularly reviewing Internal Logs helps **identify errors or misuse**, maintain **data integrity**, and supports **internal audits**.
-* Exporting logs periodically can provide a historical record of system activity.
+{% stepper %}
+{% step %}
+### Pick a time period
+
+Choose a **start date** and **end date**.
+
+This is the fastest way to narrow results.
+{% endstep %}
+
+{% step %}
+### Add filters (optional)
+
+Filter by:
+
+* **Agency/Brand** (only show actions for one part of the business)
+* **User** (only show actions by one person)
+* **Action type** (only show a certain kind of activity)
+{% endstep %}
+
+{% step %}
+### Review the list
+
+Look for the item you need.
+
+Use the date and the username to confirm what happened.
+{% endstep %}
+{% endstepper %}
+
+***
+
+### What you can look up
+
+Internal logs can include many types of actions, for example:
+
+* Exports (financial files, hotel lists)
+* Hotel messages sent from the system
+* Customer merges
+* Changes to discounts or products
+* Changes to room types or extra bed discounts
+
+{% hint style="info" %}
+If you get too many results, start with a shorter date range.
+
+Then add a user filter.
+{% endhint %}
+
+### Tips
+
+* Use Internal logs when a colleague says “I didn’t change it”.
+* Check the date range first if you see no results.
+* Export the list if you need to share it internally.
+
+### FAQ
+
+<details>
+
+<summary><strong>Who can see Internal logs?</strong></summary>
+
+Only admins can access Internal logs.
+
+</details>
+
+<details>
+
+<summary><strong>Why don’t I see any results?</strong></summary>
+
+Your date range may be too narrow.
+
+Try a wider range and clear extra filters.
+
+</details>
+
+<details>
+
+<summary><strong>Why do I see so many entries?</strong></summary>
+
+Internal logs can record a lot of activity.
+
+Filter by **user** and a shorter date range.
+
+</details>
+
+<details>
+
+<summary><strong>Can I undo a change from Internal logs?</strong></summary>
+
+No. Internal logs are read-only.
+
+To fix something, change it back in the relevant screen.
+
+</details>
+
+<details>
+
+<summary><strong>Should we check Internal logs regularly?</strong></summary>
+
+Yes, if you often troubleshoot issues.
+
+It can also help you spot unusual activity early.
+
+</details>

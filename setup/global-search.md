@@ -1,47 +1,110 @@
 # Global search
 
-### **Overview / Purpose**
+### Overview
 
-This feature allows **Administrators, Agents, and Guides** to quickly locate a booking or a customer from anywhere in the system. It is designed to **save time** by providing fast access to booking details or customer profiles without navigating through multiple menus.
+Global search helps you find a **booking** or a **customer** from anywhere in Tourpaq.
+
+It saves time because you don’t need to open several menus first.
 
 <figure><img src="../.gitbook/assets/image (362).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (28) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### **How It Works**
+### How to use it
 
-* The search bar is accessible from any page in Tourpaq.
-* Users can search by:
-  * **Booking number** – retrieves the specific booking.
-  * **Customer name** – search by first or last name to locate bookings associated with a customer.
-* The results displayed depend on the **agency filter** selected:
-  * **Single Agency Selected:** Searches are limited to bookings for that agency only.
-  * **All Brands Selected:** Searches across all bookings for the company.
-* After entering the booking number or customer name:
-  * Press **Enter** or click **Go**.
-  * If a booking is found, the system redirects the user directly to the **booking page**.
+You can use the search bar from any page.
+
+{% stepper %}
+{% step %}
+### Choose what you want to search in
+
+Check the selected **Brand/Agency** first:
+
+* If you selected a single brand/agency, search is limited to that one.
+* If you selected **All Brands**, search looks across the whole company.
+{% endstep %}
+
+{% step %}
+### Type what you know
+
+You can search by:
+
+* **Booking number** (fastest and most precise)
+* **Customer name** (first name or last name)
+{% endstep %}
+
+{% step %}
+### Run the search
+
+Press **Enter** or click **Go**.
+
+If Tourpaq finds a match, it opens the booking or customer right away.
+{% endstep %}
+{% endstepper %}
 
 ***
 
-### **Key Features / Functions**
+### What it’s good for
 
-* Search by **booking number** for instant access to booking details.
-* Search by **first or last name** to locate customer bookings.
-* Agency-level filtering ensures searches are scoped appropriately.
-* Works across the system, accessible from any page for efficiency.
-
-***
-
-### **Examples / Scenarios**
-
-* **Scenario 1:** An agent wants to quickly pull up booking #123456; they type the number and press Enter, immediately accessing the booking details.
-* **Scenario 2:** A guide needs to check all bookings for a customer named “John Doe” in their assigned resort. Selecting their agency and searching the name will display the relevant bookings.
-* **Scenario 3:** An administrator wants to see all bookings across the company for a customer; selecting “All Brands” allows them to view every booking linked to that customer.
+* Jump straight to a booking when you have the booking number.
+* Find bookings linked to a customer name.
+* Avoid “wrong results” by using the correct brand/agency selection.
 
 ***
 
-### **Notes / Best Practices**
+### Examples
 
-* Ensure the correct **agency or brand filter** is selected to avoid incomplete search results.
-* Only bookings **accessible to the user’s role and agency** will appear in the results.
-* For large companies with many bookings, using specific identifiers like booking numbers is faster than customer name searches.
+* Find booking `123456`: type `123456` and press Enter.
+* Find a customer called “John Doe”: type `John` or `Doe`.
+* Search across the whole company: select **All Brands** first.
+
+***
+
+### Tips
+
+* Start with a **booking number** when you have it.
+* If you search by name, try only the last name first.
+* If you can’t find something, check if you selected the right **Brand/Agency**.
+* You will only see bookings you have permission to access.
+
+### FAQ
+
+<details>
+
+<summary><strong>Why can’t I find a booking I know exists?</strong></summary>
+
+Most common reasons:
+
+* You selected the wrong **Brand/Agency**.
+* You don’t have access to that booking.
+* The booking number was typed incorrectly.
+
+</details>
+
+<details>
+
+<summary><strong>Why do I get too many results when I search by name?</strong></summary>
+
+Some names are common.
+
+Try a booking number instead, or use a more specific name search.
+
+</details>
+
+<details>
+
+<summary><strong>What should I select: one brand or “All Brands”?</strong></summary>
+
+Select one brand if you know where the booking belongs.
+
+Use **All Brands** if you are not sure.
+
+</details>
+
+<details>
+
+<summary><strong>Does Global search show everything in Tourpaq?</strong></summary>
+
+No. It only shows what you have permission to see.
+
+</details>
