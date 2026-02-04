@@ -230,7 +230,7 @@ Configure if the system should automatically generate invoices or charges for th
 
 | Field                | Description                                                                    |
 | -------------------- | ------------------------------------------------------------------------------ |
-| **Rounds**           | Maximum number of rounds for one booking.                                      |
+| **Rounds**           | Maximum number of rounds for one booking. Valid numbers are 1 to 99            |
 | **Product Child ID** | Use a ProductID if you want to reuse generated allotment from another product. |
 
 **Behaviour Settings**
