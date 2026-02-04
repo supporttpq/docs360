@@ -2,59 +2,73 @@
 
 ### Overview
 
-The **Ticket Attachments** page is used to manage PDF documents that are automatically attached to tickets sent via email. This feature ensures that agencies can provide passengers with relevant conditions and supplementary information for each booking.
+Use **Ticket Attachments** to add PDF documents to tickets sent by email. These PDFs often include terms, conditions, or other important information.
 
-This page is intended for back-office users responsible for configuring ticket email delivery and legal/conditions documents.
+This page is mainly for administrators who manage ticket emails and documents.
+
+For the full module overview, see [Tickets attachments](./).
 
 ### Access
 
 * Path: **E-mail Setup → Ticket Attachments**
-* Note: The page is **agency-specific**, meaning the agency must be selected before making changes.
+* Note: Settings are **agency-specific**. Select the right agency before you change anything.
 
 {% hint style="warning" %}
-Because Ticket Attachments is **agency-specific**, always confirm that you have selected the correct agency before uploading or changing documents. Changes made here apply only to the selected agency.
+Always check the selected agency before you upload or replace documents. Your changes apply only to that agency.
 {% endhint %}
 
 ### Purpose
 
-* Allows agencies to attach specific **conditions PDF documents** to tickets.
-* Ensures compliance and provides clear communication to travelers.
-* Supports different attachment rules depending on the **transport type**.
+You can use this page to:
 
-### Transport Type Tabs
+* Attach **PDF documents** to tickets.
+* Make sure customers get the right information every time.
+* Use different documents for different **transport types**.
+
+### Words used on this page
+
+Some labels match what you see in the system. Here is what they mean in plain language:
+
+* **Transport**: how the customer travels, like a flight or transfer.
+* **GDS**: an external flight booking system used by some suppliers.
+* **Real transport**: a transport you manage directly in Tourpaq.
+* **Transport Rule**: a rule that creates transports automatically.
+* **Fix Quotas**: a fixed number of seats you control.
+* **Dynamic itinerary**: a trip built from live supplier data.
+
+### Tabs by transport type
 
 The page includes **five tabs**, each corresponding to a transport type:
 
 1. **All Transports**
-   * Documents applied to **all types of transports**, regardless of category.
+   * Default documents for **all** transport types.
 2. **Charter Transports**
-   * For transports defined using **Fix Quotas** for flights.
-   * Attachments apply specifically to charter flights.
+   * Charter flights that use **Fix Quotas**.
 3. **Dynamic Transports**
-   * For transports that use **Dynamic Itineraries**.
-   * Itineraries may include **real transports** or **external providers (GDS)**.
+   * Trips built from a dynamic itinerary.
+   * These can use real transports or external suppliers like **GDS**.
 4. **System Transports**
-   * Generated from a **Transport Rule**.
-   * At least one of the itinerary legs uses an **external provider (GDS)**.
+   * Created from a **Transport Rule**.
+   * At least one trip part uses an external supplier like **GDS**.
 5. **Sys-real Transports**
-   * Generated from a **Transport Rule**.
-   * Both itinerary legs use **real transports**.
+   * Created from a **Transport Rule**.
+   * Both trip parts use **real transports**.
 
-The Ticket Attachments page shows all configured documents per transport type:
+Each tab shows which documents are set up for that transport type:
 
 <figure><img src="../../.gitbook/assets/image (302).png" alt="Ticket Attachments overview screen."><figcaption><p>Ticket Attachments overview for an agency.</p></figcaption></figure>
 
 #### All Transports
 
-If a document is uploaded for a specific document type in **All Transports**, it will be set as the default for all other sections.
+If you upload a document in **All Transports**, it becomes the default. Other tabs use that default unless you override it.
 
 <figure><img src="../../.gitbook/assets/image (303).png" alt="All Transports tab configuration."><figcaption><p>All Transports tab, showing default documents for all transport types.</p></figcaption></figure>
 
-### How Ticket Attachments work
+### How it works
 
 * Attachments must be uploaded as **PDF files**.
-* Agencies can define **different documents per transport type**, ensuring passengers receive the correct terms and conditions.
-* Attachments are automatically included when tickets are generated and sent.
+* You can set **different documents per transport type**.
+* Documents are included automatically when you generate and send a ticket.
 
 ### Typical setup (step-by-step)
 
@@ -65,61 +79,60 @@ Use this flow when configuring ticket attachments for an agency:
 #### 1. Open the Ticket Attachments page
 
 * Go to **E-mail Setup → Ticket Attachments**.
-* Make sure the correct **agency** is selected at the top of the screen.
+* Select the correct **agency** at the top of the page.
 {% endstep %}
 
 {% step %}
 #### 2. Configure defaults in "All Transports"
 
-* In the **All Transports** tab, upload the standard **conditions PDF** documents that should apply to all transports by default.
-* Decide for each document type whether it should be:
-  * Sent as a **separate attachment**, or
-  * **Appended to the end of the ticket** in the same PDF file.
-* These documents will be used as defaults for the other transport-type tabs unless specifically overridden.
+* Open the **All Transports** tab.
+* Upload the standard PDFs you want on most tickets.
+* For each document type, choose how it is delivered:
+  * **Separate attachment** in the email, or
+  * **Added to the end of the ticket PDF**.
+* These documents become the default for the other tabs.
 {% endstep %}
 
 {% step %}
 #### 3. Adjust documents per transport type (optional)
 
 * Switch to the specific tabs (**Charter Transports**, **Dynamic Transports**, **System Transports**, **Sys-real Transports**).
-* For each tab where you need different conditions:
-  * Upload the transport-specific **conditions PDFs**.
-  * Choose whether they are sent as separate attachments or appended to the ticket.
-* Any document added here overrides the **All Transports** default for that transport type.
+* Upload different PDFs where you need different rules.
+* Choose separate vs added to the ticket.
+* Anything you upload here overrides the **All Transports** default.
 {% endstep %}
 
 {% step %}
 #### 4. Review existing attachments
 
-* Check that each tab shows the expected documents and types (separate vs appended).
-* Download documents where needed to verify that the correct version is configured.
+* Check each tab for the expected documents.
+* Download a document to confirm it is the right version.
 {% endstep %}
 
 {% step %}
 #### 5. Verify by generating a ticket
 
-* Create or use a test booking that matches the relevant transport type.
-* Generate and send a ticket to confirm that:
-  * The **right PDF(s)** are attached or appended.
-  * The behavior matches your expectations per transport type.
+* Create a test booking that matches the transport type.
+* Generate and send a ticket.
+* Confirm the right PDFs are included.
 {% endstep %}
 {% endstepper %}
 
 ### Best practices
 
-* Prefer configuring shared documents in **All Transports** and override them only in specific tabs when necessary.
-* Use clear, descriptive file names (for example, including language and validity period) so it is easy to see which version is active.
-* Coordinate changes with your legal or compliance team before replacing conditions documents.
-* After updating any attachment, repeat the **Verify by generating a ticket** step to ensure emails still behave as expected.
+* Set shared documents in **All Transports** first. Override only when needed.
+* Use clear file names. Include language and valid dates when relevant.
+* Agree changes with the right owner before replacing official documents.
+* After any change, generate a test ticket again.
 
 ### Managing attachments
 
 #### Upload an attachment
 
-You can upload:
+You can upload a PDF that is:
 
-* A **conditions PDF document** that will be sent together with the ticket as a separate attachment.
-* A **conditions PDF document** that will be added to the end of the ticket in the same file.
+* Sent as a **separate attachment**, or
+* **Added to the end** of the ticket PDF.
 
 <figure><img src="../../.gitbook/assets/image (304).png" alt="Upload dialog for ticket attachments."><figcaption><p>Uploading conditions documents to be attached to tickets.</p></figcaption></figure>
 
@@ -128,3 +141,45 @@ You can upload:
 You can download existing documents for review or reuse.
 
 <figure><img src="../../.gitbook/assets/image (305).png" alt="Download option for ticket attachments."><figcaption><p>Downloading existing ticket attachment documents.</p></figcaption></figure>
+
+### FAQ
+
+<details>
+
+<summary>Do my changes affect all agencies?</summary>
+
+No. Ticket Attachments are set per agency. Your changes apply only to the selected agency.
+
+</details>
+
+<details>
+
+<summary>What file type can I upload?</summary>
+
+PDF only.&#x20;
+
+</details>
+
+<details>
+
+<summary>What is the difference between “separate attachment” and “added to the ticket”?</summary>
+
+Separate attachment means the customer receives another PDF file in the email. Added to the ticket means the pages are appended to the ticket PDF.
+
+</details>
+
+<details>
+
+<summary>Why does a document show in “All Transports” but not in another tab?</summary>
+
+All Transports sets the default. Other tabs can override the default with their own documents.
+
+</details>
+
+<details>
+
+<summary>How do I make sure customers get the new document?</summary>
+
+Generate a test ticket and send it to yourself. Previously sent tickets will not change automatically.
+
+</details>
