@@ -43,12 +43,13 @@ When calculating whether **Child Price (CH)** applies, the system determines the
     <figure><img src="../../../.gitbook/assets/image (565).png" alt=""><figcaption></figcaption></figure>
 
     * If set, this value always takes priority
-2.  **Brand-level child age limit (fallback)**
+2. **Brand-level child age limit (fallback)**&#x20;
 
-    <figure><img src="../../../.gitbook/assets/image (566).png" alt=""><figcaption></figcaption></figure>
+*   Defined in `User  > Brands > Other Settings`&#x20;
 
-    * Used only if the hotel has no child age configured
-    * Ensures pricing still works for hotels without a specific rule
+    <figure><img src="../../../.gitbook/assets/image (601).png" alt=""><figcaption></figcaption></figure>
+* Used only if the hotel has no child age configured
+* Ensures pricing still works for hotels without a specific rule
 
 ### Pricing Rules
 
