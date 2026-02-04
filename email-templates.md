@@ -2,435 +2,640 @@
 
 ### Overview
 
-The **E-mail Templates** module allows administrators to create, manage, and configure the content of all automated emails sent by the platform. Templates ensure consistent messaging, support dynamic content insertion, and can be tested before being sent to recipients.
+Use **Email Templates** to create and manage automated emails sent by the system.
+
+Templates keep your messages consistent. They can also insert booking details automatically.
+
+### Where to manage templates
+
+Most template work is done in the [E-mail center](email-setup/e-mail-center.md).
 
 ### Purpose
 
-The purpose of the E-mail Templates module is to:
+Use email templates to:
 
 * Standardize communication with customers.
-* Enable dynamic content through predefined placeholders.
-* Control which templates are active and ready for sending.
-* Provide a testing mechanism for email content and formatting.
+* Insert booking details using placeholders.
+* Decide which templates are active.
+* Test templates before using them.
 
-Most email templates are automatically sent by the system if certain conditions are met.
+Most templates are sent automatically when the right conditions are met.
 
-The Automated email notifications service is intended to automatically send the emails defined in E-mail center section to the customers, hotel suppliers, or transport providers.
+Automated emails can be sent to customers, hotel suppliers, or transport providers.
 
-The service can execute the following actions:
+The system does two things:
 
-* Select the e-mails that should be sent
-* Send them
+* Picks the emails that should be sent.
+* Sends them.
 
-Note: If the customer’s email si not filled in, the email cannot be sent.
+{% hint style="warning" %}
+If a recipient does not have an email address, the email cannot be sent.
+{% endhint %}
 
-### Field Explanation
+### Template fields
 
-Each email template contains the following fields:
+Each template has these fields:
 
-| Field                        | Description                                                                                                                   |
-| ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| **Sender Email Address**     | The email address used to send the message.                                                                                   |
-| **Sender Name**              | The display name of the sender that appears in the recipient’s inbox.                                                         |
-| **Activation Status**        | Indicates whether the template is active (ready to send) or inactive.                                                         |
-| **Email Subject**            | The subject line of the email.                                                                                                |
-| **Email Body / Text Editor** | A rich text editor to compose the email. Supports dynamic placeholders to include customer-specific or booking-specific data. |
+* **Sender email address**: The “from” email address.
+* **Sender name**: The name shown in the inbox.
+* **Activation status**: Active sends. Inactive blocks sending.
+* **Email subject**: The subject line.
+* **Email body**: The message text.
 
-### Types of Automatic Emails
+{% hint style="info" %}
+**Placeholders** are short codes in the text.
 
-**1. Thank you for booking**
+The system replaces them with real data when sending.
+{% endhint %}
 
-This e-mail is sent to the customer after a booking is made. E-ticket is attached. The conditions that must be fulfilled by a booking in order to be sent are:
+### Common automatic emails
 
-* The e-mail should have not been sent before to the customer
-* The booking’s status must be ok
-* The booking must not be a last minute booking
-* If the booking is made through the Web Booking component of Tourpaq, the email must be sent with a small delay(as the customers should have time to finish the process of making a booking)
-* Departure date must not be in the past
+These are some of the most used templates:
 
-**2. Reservation cancelled**
+* Booking confirmation (thank you for booking)
+* Booking cancelled
+* Payment pre-reminder and payment reminder
+* Deposit received and payment received
+* Insurance information missing
+* Welcome home and welcome home reminder
+* Flight changes
+* Hotel and supplier reporting emails
 
-This e-mail is sent to the customer after a booking is cancelled. E-ticket is attached. The conditions that must be fulfilled by a booking in order to be selected are:
+### Full list of automatic emails
 
-* The e-mail should have not been sent before to the customer
-* The booking’s status must be cancelled
-* Departure date must not be in the past
+The list below is long by design. Many emails follow similar rules.
 
-**3. Payment preminder**
+<details>
 
-This e-mail is sent with 3 days before payment due date and not earlier than day after booking. Hash-key-link to credit card payment is sent – no login is required. The conditions that must be fulfilled by a booking in order to be selected are:
+<summary>General rules used by many templates</summary>
 
-* The e-mail should have not been sent before to the customer
-* The booking’s status is ok
-* The booking must not be a last minute booking
-* Departure date must not be in the past
-* Second payment or Rest of payment rates are not paid
+Many templates share these rules:
 
-**4. Payment reminder**
+* The same email is usually sent only once per booking.
+* Booking status must match the email type.
+* Departure date must not be in the past.
+* Some emails are not sent for last-minute bookings.
 
-This e-mail is sent 3 days after payment due date. The conditions that must be fulfilled by a booking in order to be selected are:
+Exact behavior can vary by setup and brand.
 
-* The e-mail should have not been sent before to the customer
-* The booking’s status must be ok
-* The booking must not be a last booking minute
-* Departure date must not be in the past
-* The rest of money the customer needs to pay for any of the payment rates must be greater than a tolerance amount established from System setup
+</details>
 
-**5. Booking cancelled in 48 hours**
+<details>
 
-This e-mail is sent to all bookings with missing payments and outstanding balances on due date + 7. The conditions that must be fulfilled by a booking in order to be selected are:
+<summary>1–12: Booking, cancellation, payment, insurance, and questionnaires</summary>
 
-* The e-mail should have not been sent before to the customer
-* The booking’s status must be ok
-* The booking must not be a last booking minute
-* Departure date must not be in the past
-* Deposit, Second payment or Rest of payment rates are not paid
+#### 1. Thank you for booking
 
-**6. Deposit received**
+Sent after a booking is created. An e-ticket is attached.
 
-This e-mail is sent to all bookings for which the deposit has been paid(Deposit has to be greater than 0). The conditions that must be fulfilled by a booking in order to be selected are:
+Typical conditions:
 
-* The e-mail should not have been sent before to the customer
-* The booking’s status must be ok
-* The booking must not be a last minute booking
-* Departure date must not be in the past
+* The email has not been sent before.
+* Booking status is **OK**.
+* Not a last-minute booking.
+* Departure date is not in the past.
 
-**7. Insurance information missing**
+If the booking is made in Web Booking, the email can be delayed slightly.
 
-This e-mail is sent 14 days after booking has been made to all the bookings with no insurance and no insurance information. Hash-key-link to passenger details page must be sent – no login required. The conditions that must be fulfilled by a booking in order to be selected are:
+#### 2. Reservation cancelled
 
-* The e-mail should not have been sent before to the customer
-* The booking’s status is ok
-* The booking must not be a last minute booking
-* Departure date must not be in the past
+Sent after a booking is cancelled. An e-ticket is attached.
 
-**8. Insurance information still missing**
+Typical conditions:
 
-This e-mail should be sent 10 days after Insurance information missing mail has been sent if insurance information is still missing. E-ticket is attached. The conditions that must be fulfilled by a booking in order to be selected are:
+* The email has not been sent before.
+* Booking status is **Cancelled**.
+* Departure date is not in the past.
 
-* The e-mail should not have been sent before to the customer
-* The booking’s status is ok
-* The booking must not be a last minute booking
-* Departure date must not be in the past
-* Insurance information missing e-mail has been sent
+#### 3. Payment pre-reminder
 
-**9. Second payment received**
+Sent **3 days before** the payment due date. Not earlier than the day after booking.
 
-This e-mail is sent automatically to all bookings for which the second payment rate has been paid(Second payment must be greater than 0). The conditions that must be fulfilled by a booking in order to be selected are:
+It can include a secure card payment link. Login is not required.
 
-* The e-mail should not have been sent before to the customer
-* The booking’s status must be ok
-* The booking must not be a last minute booking
-* Departure date must not be in the past
+Typical conditions:
 
-**10. Full payment received**
+* The email has not been sent before.
+* Booking status is **OK**.
+* Not a last-minute booking.
+* Departure date is not in the past.
+* A required payment is still unpaid.
 
-This e-mail is sent automatically to all bookings for which the Rest of payment rate has been paid(Rest ofpayment must be greater than 0). The conditions that must be fulfilled by a booking in order to be selected are:
+#### 4. Payment reminder
 
-* The e-mail should not have been sent before to the customer
-* The booking’s status must be ok
-* The booking must not be a last minute booking
-* Departure date must not be in the past
+Sent **3 days after** the payment due date.
 
-**11. Welcome home**
+Typical conditions:
 
-This e-mail should be sent one day after return day to all passengers. Hash-key-link to questionnaire page must be sent – no login required. The conditions that must be fulfilled by a booking in order to be selected are:
+* The email has not been sent before.
+* Booking status is **OK**.
+* Not a last-minute booking.
+* Departure date is not in the past.
+* Outstanding balance is above your tolerance setting.
 
-* The e-mail should not have been sent before to the customer
-* The booking’s status must be ok
-* Departure date must not be in the past
+#### 5. Booking cancelled in 48 hours
 
-**12. Reporting Schedule Communication**
+Sent to bookings with missing payments and outstanding balances.
 
-This e-mail is sent automatically by Transport passenger automate reporting service(for more details please refer to Transport passenger automate reporting specification)
+Typical conditions:
 
-**13. Thank you for your LMS booking**
+* The email has not been sent before.
+* Booking status is **OK**.
+* Not a last-minute booking.
+* Departure date is not in the past.
+* One or more payment rates are unpaid.
 
-This e-mail is sent automatically to the last minute bookings. E-ticket is attached. The conditions that must be fulfilled by a booking in order to be selected are:
+#### 6. Deposit received
 
-* The e-mail should not have been sent before to the customer
-* The booking’s status must be ok
-* Departure date must not be in the past
+Sent when a deposit payment is received.
 
-If the booking is not fully paid, payment preminder body text must be added to the e-mail with has-key-link to credit card. If it has been paid, payment confirmation must be added. Insurance information body must be added if necessary.
+Typical conditions:
 
-**14. Booking updated**
+* Deposit is greater than 0.
+* The email has not been sent before.
+* Booking status is **OK**.
+* Not a last-minute booking.
+* Departure date is not in the past.
 
-This e-mail is sent when a change is made to a booking. \ Especially the changes that imply a booking total value update, adding a product, changing the passenger distribution in rooms etc. (For instance, if only editing passengers and updating their age/Date of birth, without having impact on product selection, the email will not be sent, even if the booking version also increases.)\ The conditions that must be fulfilled by a booking in order to be selected are:
+#### 7. Insurance information missing
 
-* The e-mail should have not been sent before
-* The booking’s status must be ok
-* Departure date must not be in the past
+Sent **14 days after booking** when insurance details are missing.
 
-**15. Hotel release**
+It can include a secure passenger details link. Login is not required.
 
-This e-mail is sent automatically by Hotel release automation service(for more details please refer to Hotel release automation specification)
+Typical conditions:
 
-**16. Flight Changes**
+* The email has not been sent before.
+* Booking status is **OK**.
+* Not a last-minute booking.
+* Departure date is not in the past.
 
-This e-mail is sent to the customer when a flight change is made. The conditions that must be fulfilled by a booking in order to be selected are:
+#### 8. Insurance information still missing
 
-* The e-mail should have not been sent before
-* The booking’s status must be ok
-* Departure date must not be in the past
+Sent **10 days after** “Insurance information missing”.
 
-**17. Welcome Home Reminder**
+Typical conditions:
 
-This e-mail is sent one week after return day if at least one passenger from the booking hasn’t filled in the questionnaire. Hash-key-link to questionnaire page is sent – no login required. The conditions that must be fulfilled by a booking in order to be selected are:
+* The email has not been sent before.
+* Booking status is **OK**.
+* Not a last-minute booking.
+* Departure date is not in the past.
+* “Insurance information missing” has already been sent.
 
-* The e-mail should not have been sent before to the customer
-* The booking’s status must be ok
-* Departure date must not be in the past
+#### 9. Second payment received
 
-**18. Seat Email Reminder**
+Sent when the second payment is received.
 
-This e-mail is sent to the customer with 60 days before departure to announce him that the seats can be reserved from the transport. If there are less than 60 days and more than 1 day to departure, e-mail should be sent 12 hours after booking is made. The conditions that must be fulfilled by a booking in order to be selected are:
+Typical conditions:
 
-* The e-mail has not been sent before
-* The booking’s status must be ok
-* Departure date must not be in the past
+* Second payment is greater than 0.
+* The email has not been sent before.
+* Booking status is **OK**.
+* Not a last-minute booking.
+* Departure date is not in the past.
 
-**19. Financial Export**
+#### 10. Full payment received
 
-This email is sent according to settings made for each agency of the company and contains information about bookings made in a specific interval.
+Sent when the remaining balance is paid.
 
-**20. Questionnaire After Deposit Paid**
+Typical conditions:
 
-This email is sent after the customer has paid the deposit. The conditions that must be fulfilled by a booking in order to be selected are:
+* Remaining payment is greater than 0.
+* The email has not been sent before.
+* Booking status is **OK**.
+* Not a last-minute booking.
+* Departure date is not in the past.
 
-* booking is departing in future
-* booking is OK
-* e-mail has not been sent yet
-* //Thank you for booking// email sent
-* deposit has been FULLY paid in the last 24hrs
+#### 11. Welcome home
 
-**21. Wait list booking**
+Sent **one day after return day**.
 
-This e-mail is sent when the allotment has been fully booked, but the company/agency allows more bookings to be made on it without allotment in the hope of getting more allotment from the hotel. The conditions that must be fulfilled by a booking in order to be selected are:
+It can include a secure questionnaire link. Login is not required.
 
-* booking departs in the future
-* email has not been already sent
-* booking is WaitList
-* booking update is older than 20 minutes (for webbooking)
+Typical conditions:
 
-**22. Vouchers Generated**
+* The email has not been sent before.
+* Booking status is **OK**.
+* Departure date is not in the past.
 
-This email is sent after the Vouchers for a booking have been generated. The conditions that must be fulfilled by a booking in order to be selected are:
+#### 12. Reporting schedule communication
 
-* booking departs in the future
-* this kind of mail is not already sent
-* booking is OK
-* date is close to departure (set in system setup)
-* product attributes have been set
+Sent by automated transport passenger reporting.
 
-**23. Attributes are missing**
+</details>
 
-This email is sent when the guest haven't filled in all attributes required by a booked product. The conditions that must be fulfilled by a booking in order to be selected are:
+<details>
 
-* booking departs in future
-* such email has not been sent
-* booking is fully paid
-* there are less than 30 days left till departure
+<summary>13–24: Last-minute bookings, booking changes, reminders, exports, wait list, vouchers</summary>
 
-**24. Creditor Invoice**
+#### 13. Thank you for your LMS booking
 
-This e-mail is sent to creditors and contains financial information regarding hotels and products assigned to the creditor.
+Sent for last-minute bookings. An e-ticket is attached.
 
-**25. Hotel Reporting**
+If the booking is not fully paid:
 
-This e-mail is send based on intervals set in the Communication tab of the hotel, information in the file is filtered based on the selected options.
+* Payment pre-reminder text can be added.
+* A secure card payment link can be included.
 
-**26. Extras Reporting**
+If it is fully paid, a payment confirmation can be added.
 
-This e-mail is send based on intervals set in the Communication tab of the extra, information in the file is filtered based on the selected options.
+Insurance information text can also be added if needed.
 
-**27. Supplier Extras Reporting**
+#### 14. Booking updated
 
-This e-mail is send based on intervals set in the supplier, information in the file is filtered based on the selected options.
+Sent when a booking changes in a way that affects the total.
 
-**28. Documents Uploaded**
+Examples include adding a product or changing room distribution.
 
-This e-mail is sent to all eligible bookings when a document is uploaded for a transport, hotel or product. The conditions that must be fulfilled by a booking in order to be selected are:
+Typical conditions:
 
-* booking departs in the future
+* The email has not been sent before.
+* Booking status is **OK**.
+* Departure date is not in the past.
 
-**29. Email sent from view all bookings**
+#### 15. Hotel release
 
-This email can be sent by an admin or seller from View all Bookings tab of the system to the bookings displayed according to the filters set. It is mostly used to inform customers of changes or promotions.
+Sent by hotel release automation.
 
-**30. Email sent from Customer Export**
+#### 16. Flight changes
 
-This email can be sent by an admin or seller from Customer Export part of the system to all bookings displayed according to the filters set. It is mostly used to inform customers of promotions.
+Sent when a flight change is made.
 
-**31. Request more rooms**
+Typical conditions:
 
-This e-mail can be sent from **Dashboard** to hotels when more rooms are required. It becomes available to be sent when there are no more free rooms of a type in the hotel.
+* The email has not been sent before.
+* Booking status is **OK**.
+* Departure date is not in the past.
 
-**32. Early booking rooming list**
+#### 17. Welcome home reminder
 
-There are 2 e-mails sent in this case according to the settings made by the user in the hotel:
+Sent **one week after return day** if a questionnaire is still missing.
 
-* an e-mail containing a rooming list to the supplier
-* an invoice with financial to the creditor
+It can include a secure questionnaire link. Login is not required.
 
-**33. Extras Category Reporting**
+Typical conditions:
 
-This e-mail is send based on intervals set in the Communication tab of the extra category, information in the file is filtered based on the selected options.
+* The email has not been sent before.
+* Booking status is **OK**.
+* Departure date is not in the past.
 
-**34. Pending payment notification**
+#### 18. Seat email reminder
 
-Sometimes DIBS needs more time to analyse the transaction and decide upon a status (\~2-24-72 hours). The customer will receive this email informing that we must wait for a status on the payment.
+Sent to let the customer know seats can be reserved.
 
-**35. Captured money but no allotment**
+Typical timing:
 
-Sometimes two customers compete for a last allotment, both in DIBS payment pages, one faster taking it and the slower one also successfully paying but no allotment being available anymore. This email informs on what has happened and that, most probbably, a refund will occur soon.
+* 60 days before departure, or
+* 12 hours after booking for short lead times
 
-**36. Individual Payment Email**
+#### 19. Financial export
 
-This e-mail is sent from the booking page to all passengers that have their email submited. A link is sent in the email, directing the customers to a separate customer center where they can pay their passenger total.
+Sent based on settings per agency. It covers bookings in a specific interval.
 
-**37. Destination Email**
+#### 20. Questionnaire after deposit paid
 
-This e-mail is used to define a template for the Destination or Guest app mobile app. It can be used in the app in multiple ways:
+Sent after the deposit is paid.
 
-* Order - type of e-mail or SMS message sent after the customer books an excursion
-* Excursion - type of e-mail or SMS message sent to the customers that booked a specific excursion
-* Arrival - type of e-mail or SMS messages sent to the customers that arrived / will arrive at the hotel on a specific date
-* Hotel - type of e-mail or SMS messages sent to the customers that are staying at a specific hotel
+Typical conditions:
 
-**38. Hotel Contract**
+* Booking departs in the future.
+* Booking status is **OK**.
+* Email has not been sent yet.
+* “Thank you for booking” email has been sent.
+* Deposit was fully paid in the last 24 hours.
 
-This e-mail is sent to the suppliers e-mail adress or other e-mail adresses with the contact attached and a link through which the contract can be aproved or rejected
+#### 21. Wait list booking
 
-**Email template with ticket attachment:**
+Sent when allotment is full, but wait list bookings are allowed.
 
-\*Thank you for booking \*Reservation canceled \*Insurance information still missing \*Full payment received \*Thank you for your LMS booking \*Booking updated \*Flight Changes Email \*Wait list booking
+Typical conditions:
 
-**39. Product Reservation Email**
+* Booking departs in the future.
+* Booking status is **WaitList**.
+* Email has not been sent before.
+* Booking update is older than 20 minutes (Web Booking).
 
-This e-mail is sent to the passenger that bought a parking extra.
+#### 22. Vouchers generated
 
-**When should it be sent?**
+Sent after vouchers are generated.
 
-* Booking is fully paid
-* Must be successfully reported to APCOA
-* Latest report to APCOA is made more than 20 min
-* Parking extra to be booked
-* VRN to be completed
-* 30 days before departure
+Typical conditions:
 
-40. **Special Offer Rejected** &#x20;
+* Booking departs in the future.
+* Booking status is **OK**.
+* Email has not been sent before.
+* Departure is close (configured in system setup).
+* Product attributes are filled in.
 
-This email is sent when a hotel's special offer is rejected, from the Notifications menu.
+#### 23. Attributes are missing
 
-41. **Quotation list**
+Sent when required product attributes are missing.
 
-A quotation list email is a message containing a detailed list of products or services with their respective prices, quantities, and terms, sent to a potential customer. It's used to provide a comprehensive overview of the pricing and details of a potential purchase, helping the customer make an informed decisio
+Typical conditions:
 
-42. **Stop sales introduction**&#x20;
+* Booking departs in the future.
+* Email has not been sent before.
+* Booking is fully paid.
+* Departure is within 30 days.
 
-This email is sent when a new stop sale is created.
+#### 24. Creditor invoice
 
-43. **Mail Platform for SmS -** Sent to notify the guest of different informations
-44. **Dynamic Email / SMS**&#x20;
+Sent to creditors with financial information for hotels and products.
 
-It can be used to notify the guests of their departure date, to welcome them to the trip location, to welcome them home, to make them aware of certain products they can book etc.
+</details>
 
-45. **Confirmation Hotel**&#x20;
+<details>
 
-&#x20;A hotel confirmation email acknowledges a reservation, providing essential details like dates, room type, and booking number. It also includes the hotel's address, contact information, payment status, and any relevant policies.&#x20;
+<summary>25–35: Reporting, documents, manual sends, payments waiting, and edge cases</summary>
 
-Alongside the e-mail template, a Hotel Confirmation e-mail will also need the following in order to work properly:
+#### 25. Hotel reporting
 
-* **Supplier** selected for the hotel
-* **Reservation Dept Email** field filled in the hotel
-* **Contract type** of the hotel to be set as either **Allotment** or **Request**
+Sent based on intervals set in the hotel’s **Communication** tab.
 
-**!!! If the hotel doesn't have the Reservation Dept Email field filled, the e-mail will be not be sent**
+#### 26. Extras reporting
 
-46. **Confirmation Transfer**
+Sent based on intervals set in the extra’s **Communication** tab.
 
-&#x20;An email sent to verify and confirm the details of a scheduled transfer, such as the movement of a person, item, or service from one location to another. It typically includes information like the date, time, locations, names involved, and any relevant logistical or contact details. This type of email serves to ensure mutual understanding and agreement between the involved parties.
+#### 27. Supplier extras reporting
 
-To set up the **Transfer Confirmation email** the required settings are:
+Sent based on intervals set on the supplier.
 
-* An extra that will act as transfer
-* Supplier for the extra
-* **Contract type** must be **Allotment** or **Request**
-* Category type has to be Transfer
+#### 28. Documents uploaded
 
-47. **Seats vs. Beds Reporting**
+Sent when a document is uploaded for a transport, hotel, or product.
 
-This email is sent according to a scheduler set on communication. Attached to this email is a Seats vs beds report.
+Typical conditions:
 
-48. **Giftcard Email**
+* Booking departs in the future.
 
-This email is sent automatically after the Giftcard is paid.
+#### 29. Email sent from View all bookings
 
-49. **Time Share fee created notification**
+Sent manually by an admin or seller to filtered bookings.
 
-<mark style="color:red;">No longer used.</mark>
+It is often used for changes or promotions.
 
-50. **Select offer SMS**
+#### 30. Email sent from Customer Export
 
-This SMS is sent to inform  the customer about the offer that he requested. It is sent manually, and can contain a personalized message set in in the Brands menu / Select Offer.
+Sent manually by an admin or seller to filtered bookings.
 
-51. **Time share fee reminder**
+It is often used for promotions.
 
-<mark style="color:red;">No longer used</mark>
+#### 31. Request more rooms
 
-52. **Time share fee preminder**
+Sent to hotels from the **Dashboard** when more rooms are needed.
 
-<mark style="color:red;">No longer used</mark>
+#### 32. Early booking rooming list
 
-53. **Car Registration**
+Can include two emails, depending on settings:
 
-This email is sent to passengers who have a product with the attribute "car registration"
+* A rooming list email to the supplier.
+* A financial invoice email to the creditor.
 
-54. **Full Individual Payment Received**
+#### 33. Extras category reporting
 
-**This email is sent when the passengr made a full ammount paid by "Individual payment"**
+Sent based on intervals set in the extra category’s **Communication** tab.
 
-55. **Deposit received per passenger**
+#### 34. Pending payment notification
 
-**This email is sent when the deposit is paid by "Individual payment"**
+Sometimes the payment provider (DIBS) needs more time.
 
-**New Variables that work ONLY on this template.**
+This email tells the customer to wait for a final status.
 
-* \[ConfirmationCode] - Confirmation code from APCOA
-* \[CarRegistration] - Car licence plate
-* \[Product] - Product name
-* \[EntryDateTime] - Entry date will be calculated as Departure date - 2h
-* \[ExitDateTime] - Exit date will be calculated as Departure date + 1h
+#### 35. Captured money but no allotment
 
-56. Flight Change Default
+This can happen when two customers pay at the same time.
 
-Sent to customer when flight has been changed with e-ticket attached
+One gets the last allotment. The other pays successfully too.
 
-57. Flight Change Flight Number
+This email explains the situation. A refund may follow.
 
-Sent to customer when flight has been changed with e-ticket attached
+</details>
 
-58. Flight Change Large Earlier
+<details>
 
-Sent to customer when flight has been changed with e-ticket attached
+<summary>36–46: Individual payments, guest app templates, and confirmations</summary>
 
-59. Flight Change Large Later
+#### 36. Individual payment email
 
-Sent to customer when flight has been changed with e-ticket attached
+Sent from the booking page to passengers with an email address.
 
-60. Flight Change Small Earlier
+It includes a link to a customer center for individual payment.
 
-Sent to customer when flight has been changed with e-ticket attached
+#### 37. Destination email
 
-61. Flight Change Small Later
+Used by the Destination or Guest app.
 
-Sent to customer when flight has been changed with e-ticket attached
+It can be used for:
 
-62. Flight Change Tiny Earlier
+* Order confirmation
+* Excursion messages
+* Arrival messages
+* Hotel stay messages
 
-Sent to customer when flight has been changed with e-ticket attached
+#### 38. Hotel contract
 
-63. Flight Change Tiny Later
+Sent with a contract attached and a link to approve or reject.
 
-Sent to customer when flight has been changed with e-ticket attached
+Important notes:
+
+* Supplier must be selected for the hotel.
+* The hotel must have **Reservation Dept Email** filled in.
+* Contract type must be **Allotment** or **Request**.
+
+If Reservation Dept Email is missing, the email will not be sent.
+
+#### Email templates with ticket attachment
+
+Common examples:
+
+* Thank you for booking
+* Reservation cancelled
+* Insurance information still missing
+* Full payment received
+* Thank you for your LMS booking
+* Booking updated
+* Flight changes
+* Wait list booking
+
+#### 39. Product reservation email
+
+Sent to a passenger who bought a parking extra.
+
+Typical conditions:
+
+* Booking is fully paid.
+* Reporting to APCOA succeeded.
+* Latest APCOA report is older than 20 minutes.
+* VRN (vehicle registration) is completed.
+* Sent 30 days before departure.
+
+#### 40. Special offer rejected
+
+Sent when a hotel’s special offer is rejected from **Notifications**.
+
+#### 41. Quotation list
+
+Sent to a potential customer with a detailed price list.
+
+#### 42. Stop sales introduction
+
+Sent when a new stop sale is created.
+
+#### 43. Mail platform for SMS
+
+Sent to notify guests with general information.
+
+#### 44. Dynamic Email / SMS
+
+Used for messages like reminders, welcomes, and product tips.
+
+#### 45. Confirmation hotel
+
+Confirms a hotel reservation with dates, room type, and booking number.
+
+It can also include address, contact details, and payment status.
+
+To work correctly, you usually need:
+
+* Supplier selected for the hotel.
+* **Reservation Dept Email** filled in on the hotel.
+* Contract type set to **Allotment** or **Request**.
+
+#### 46. Confirmation transfer
+
+Confirms a scheduled transfer with date, time, and locations.
+
+Typical setup requirements:
+
+* An extra that acts as the transfer.
+* A supplier for the extra.
+* Contract type is **Allotment** or **Request**.
+* Category type is **Transfer**.
+
+</details>
+
+<details>
+
+<summary>47–63: Reporting, gift cards, deprecated templates, and flight change variants</summary>
+
+#### 47. Seats vs. beds reporting
+
+Sent based on a communication scheduler. A report is attached.
+
+#### 48. Gift card email
+
+Sent automatically after the gift card is paid.
+
+#### 49. Time share fee created notification
+
+No longer used.
+
+#### 50. Select offer SMS
+
+Sent manually to inform the customer about a requested offer.
+
+The text can be configured under **Brands → Select Offer**.
+
+#### 51–52. Time share fee reminder / pre-reminder
+
+No longer used.
+
+#### 53. Car registration
+
+Sent to passengers with a product requiring car registration.
+
+#### 54. Full individual payment received
+
+Sent when a passenger completes a full individual payment.
+
+#### 55. Deposit received per passenger
+
+Sent when a deposit is paid through individual payment.
+
+This template supports special placeholders only used here:
+
+* `[ConfirmationCode]`: confirmation code from APCOA
+* `[CarRegistration]`: car license plate
+* `[Product]`: product name
+* `[EntryDateTime]`: departure date minus 2 hours
+* `[ExitDateTime]`: departure date plus 1 hour
+
+#### 56–63. Flight change templates
+
+Different flight change templates can be used based on the type of change:
+
+* Default
+* Flight number
+* Large earlier / large later
+* Small earlier / small later
+* Tiny earlier / tiny later
+
+These are sent when a flight changes. An e-ticket can be attached.
+
+</details>
+
+### Related pages
+
+* [E-mail center](email-setup/e-mail-center.md)
+* [Dynamic E-mail/SMS Center](email-setup/dynamic-e-mail-sms-center/)
+
+### FAQ
+
+<details>
+
+<summary>Where do I edit automated email templates?</summary>
+
+Use the [E-mail center](email-setup/e-mail-center.md).
+
+</details>
+
+<details>
+
+<summary>Why wasn’t an email sent?</summary>
+
+Common reasons:
+
+* The template is inactive.
+* The recipient has no email address.
+* The booking does not meet the template rules.
+* The booking date or status is not eligible.
+
+</details>
+
+<details>
+
+<summary>Can I test an email before it goes to customers?</summary>
+
+Yes. Use the template testing options in the E-mail center.
+
+</details>
+
+<details>
+
+<summary>What are placeholders?</summary>
+
+They are short codes in the email text.
+
+The system replaces them with real values during sending.
+
+</details>
+
+<details>
+
+<summary>Why do I see a placeholder code in a sent email?</summary>
+
+Most often, the placeholder is incorrect or the booking data is missing.
+
+Test the template again and check the required booking fields.
+
+</details>
+
+<details>
+
+<summary>Can I change a live template safely?</summary>
+
+Make small changes and test them first.
+
+If possible, copy the template and test the copy.
+
+</details>
