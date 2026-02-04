@@ -2,48 +2,64 @@
 
 ### Overview
 
-The **New Email Template** feature within the Dynamic E-mail/SMS Center allows users to create customizable email or SMS templates that can be sent automatically based on specific booking conditions, events, or customer interactions. Templates can include personalized information and support various triggers to enhance communication with guests.
+Use this page to set up **dynamic email or SMS templates**. You can send them automatically to bookings that match your rules and filters.
 
 ### Purpose
 
 This feature is designed to:
 
-* Automate guest communication for different scenarios (e.g., booking confirmation, trip reminders, promotions).
-* Ensure consistent messaging across email and SMS channels.
-* Reduce manual workload by allowing predefined templates to be sent dynamically based on filters and triggers.
+* Send automatic messages for common situations (confirmations, reminders, promotions).
+* Keep the wording consistent across email and SMS.
+* Reduce manual work by sending messages based on rules and filters.
 
-### General <a href="#general" id="general"></a>
+### General
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="New template setup screen for Dynamic E-mail/SMS Center."><figcaption></figcaption></figure>
 
-Dynamic communication types:
+### Access
 
-* &#x20;Dynamic E-mail/SMS
-* Confirmation Transfer
-* Confirmation Hotel
+Open **E-mail Setup → Dynamic E-mail/SMS Center**, then choose **New Email Template**.
 
-To set up a dynamic e-mail/sms, the user needs to first select a brand from the brand selection dropdown in the upper left corner of the window.
+### Template types
 
-* Template Name: Insert the name of the template
-* Template type: Select the template type
-* Active: When checked, the template will be used to send e-mails or SMS to bookings.
-* Hidden: When checked, the template will not be visible in the Dynamic E-mail/SMS Dashboard.
-* Hour to Send: Insert the time the e-mails/SMS will be sent. May have a 20-minute delay. (If left blank, will be sent as soon as requirements are met.)
-* Attach ticket: A booking ticket will be attached to the e-mail. (available for e-mail template)
-* From name: Insert the name of the sender. (available for e-mail template)
-* From e-mail: Insert the sending e-mail address - MUST BE A VALID ONE. (available for e-mail template)
-* Reply to: Insert the address that will receive the replies, if any - MUST BE A VALID ONE. (available for e-mail template)
-* BCC: Insert the BCC address/addresses - MUST BE A VALID ONE. (available for e-mail template)
-* Customers who have bought: selected category(es) from booking
-* Customers who have not bought: selected category(es) from booking
+You can create different template types, such as:
 
-For confirmation templates, please check the [Hotel and transfer the confirmation e-mail to the suppliers](../../hotel-and-transfer-confirmation-e-mail-to-suppliers.md).
+* **Dynamic Email/SMS**
+* **Confirmation Transfer**
+* **Confirmation Hotel**
 
-### Sending Options <a href="#sending-options" id="sending-options"></a>
+If you are setting up confirmation templates, also read [Hotel and transfer confirmation emails to suppliers](../../hotel-and-transfer-confirmation-e-mail-to-suppliers.md).
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (23).png" alt=""><figcaption></figcaption></figure>
+### Required first step: select a brand
 
-From these fields, the sending configuration can be set:
+Before you edit anything, select the correct **brand** in the top-left dropdown.
+
+#### Basic template settings
+
+* **Template name**: a clear name you can recognize later.
+* **Template type**: the kind of message you are setting up.
+* **Active**: allows the template to be used for sending.
+* **Hidden**: hides the template from the Dynamic E-mail/SMS Dashboard list.
+* **Hour to send**: the time the email/SMS should be sent. Sending can be delayed by up to about 20 minutes. If you leave it blank, it is sent as soon as all rules match.
+
+#### Email-only settings
+
+* **Attach ticket**: attaches the booking ticket to the email.
+* **From name**: sender name shown to the customer.
+* **From e-mail**: sender email address. Use a real address.
+* **Reply to**: where replies should go. Use a real address.
+* **BCC**: email addresses that should receive a copy. Use real addresses.
+
+#### Optional product filters
+
+* **Customers who have bought**: include bookings that bought selected categories.
+* **Customers who have not bought**: exclude bookings that bought selected categories.
+
+### Sending options
+
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (23).png" alt="Sending options and rule builder for a dynamic template."><figcaption></figcaption></figure>
+
+Use these fields to decide **when** the message should be sent.
 
 The first dropdown contains the primary sending options for the template:
 
@@ -59,25 +75,28 @@ The second dropdown contains the timeframe options:
 * Before
 * After
 
-In the third field, you need to insert the number of days to be taken from the first 2 options when the e-mail will be sent. The e-mail/SMS will be sent as soon as all requirements are met.
+In the third field, enter the number of days. The email/SMS is sent as soon as all requirements are met.
 
 {% hint style="danger" %}
-<mark style="color:blue;">**IMPORTANT**</mark><mark style="color:blue;">:</mark>  Additional rules can be configured in the sending option, but you should be cautious when combining them.&#x20;
+**Important**
 
-The system applies the AND condition between different rule types and the OR condition within the same rule type.&#x20;
+You can add more than one sending rule. Be careful when you combine rules.
 
-A valid set of sending rules is illustrated in the following examples:
+* If you use **different rule types**, the booking must match **all** of them.
+* If you use the **same rule type** more than once, the booking matches if **any** of them apply.
+
+The examples below show how this works.
 {% endhint %}
 
-* If there are used two or more different rule type, the system will use the AND condition and will sent an email/SMS for each rule type.
+* If you use two or more different rule types, the booking must match all of them. The message is still sent only once.
 
-**Example:** An emailor SMS can be sent 60 days before the departure date AND 2 days after the booking date.
+**Example:** Send an email or SMS **60 days before departure** and **2 days after booking date**.
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (3).png" alt=""><figcaption></figcaption></figure>
 
-* &#x20;If it is set the same rule type it will be used the OR condition, and it will be sent only one email/SMS.
+* If you set the same rule type more than once, the booking matches any of them. The system still sends only one message.
 
-Example:&#x20;
+Example:
 
 <figure><img src="../../.gitbook/assets/image (465).png" alt=""><figcaption></figcaption></figure>
 
@@ -93,83 +112,200 @@ Example:&#x20;
 2. **Second Booking**:\
    This booking is made 17 days before departure. With the same configuration, it will receive **only one email** scheduled for 16 days before departure. No additional email will be sent at 14 days before departure.
 
-&#x20;The system is designed to send **only one email per template configuration**, regardless of how many "when to send" conditions are added.
+The system sends **only one message per template**, even if you add several “when to send” conditions.
 
-### Product and disc/suppl filters <a href="#product-and-discsuppl-filters" id="product-and-discsuppl-filters"></a>
+### Product and discount/supplement filters
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Product and discount/supplement filters for dynamic templates."><figcaption></figcaption></figure>
 
-Using these fields, the number of bookings that will receive the e-mail can be filtered by bought or not-bought products and disc/suppl.
+Use these fields to filter bookings based on what they bought. “Disc/suppl” means **discounts and supplements**.
 
-#### **Product Resourser**
+#### Product Resourcer
 
 **Default set-up**
 
-If multiple products are selected in the filters for bought, a booking that has bought at least one of the products or disc/suppl will receive the e-mail/sms.
+If you select multiple items in **Customers who have bought**, a booking qualifies if it bought **at least one** of them.
 
-If multiple products are selected in the filters for not bought, a booking that has bought at least one of the products or disc/suppl will not receive the e-mail/sms.
+If you select multiple items in **Customers who have not bought**, a booking is excluded if it bought **at least one** of them.
 
-**Product Resourser With And** - This setup will change the described behavior from "OR" to "AND".
+**Product Resourcer With And** changes the “at least one” behavior to “all of them”.
 
-If multiple products are selected in the filters for bought, a booking that has bought all of the products or disc/suppl will receive the e-mail/sms.
+If you select multiple items in **Customers who have bought**, a booking qualifies only if it bought **all** of them.
 
-If multiple products are selected in the filters for not bought, a booking that has bought at least one of the products or disc/suppl will receive the e-mail/sms.
+If you select multiple items in **Customers who have not bought**, a booking is excluded if it bought **at least one** of them.
 
 For example, the email will be sent out as follows:
 
-![!](https://docs.tourpaq.com/assets/images/email_center_bought_or_not-2d059498dd98bfbfdb95f18ad94222f1.png)
+![Example of bought/not bought filter logic](https://docs.tourpaq.com/assets/images/email_center_bought_or_not-2d059498dd98bfbfdb95f18ad94222f1.png)
 
-Note: 1 - the email is sent; 0 - the email is NOT sent
+Note: `1` means the email is sent. `0` means it is not sent.
 
-### Message content <a href="#message-content" id="message-content"></a>
+### Message content
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Message editor for a dynamic template."><figcaption></figcaption></figure>
 
-These are the text cases. They work just like the regular **E-mail Center** and have the same features.
+The message editor works like the regular **E-mail Center**.
 
-For inserting links to the customer center, the process is the following:
+#### Add a link to the Customer Center
 
-Write the text that will have the link in the back, for example //here//, select it, and click on the circled button from the screenshot.
+Write the link text (for example, “Open your booking”). Select it. Then click the link button shown in the screenshot.
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Add link button in the message editor."><figcaption></figcaption></figure>
 
-Next, in the URL, insert the \[Hash-key-link] and select the other protocol
+In the URL field, insert the `[Hash-key-link]`. Select the other protocol, as shown in the screenshot.
 
-<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Link settings with Hash-key-link placeholder."><figcaption></figcaption></figure>
 
-### **Date filters**
+### Date filters
 
-<figure><img src="../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Date filter section for bookings."><figcaption></figcaption></figure>
 
-These fields allow the user to filter the receiving bookings by booking, departure, arrival, and return dates.
+Use these fields to filter bookings by booking, departure, arrival, and return dates.
 
-### **Destination filters**
+### Destination filters
 
-<figure><img src="../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Destination and transport filters for bookings."><figcaption></figcaption></figure>
 
-These fields allow the user to filter the received bookings by hotel, room, transport, real transport, resort, arriving airport, and count received **filters**
+Use these fields to filter bookings by hotel, room, transport, real transport, resort, arrival airport, and more.
 
-**The Resource filters** tab is a new addition to the **Dynamic E-mail/SMS** feature, allowing the users to send product links to the guests through which said products can be booked with minimal effort from the guest.
+### Resource filters (product links)
 
-Product categories and products are selected from the Resource filters tab.
+Use **Resource filters** to send clickable product links to guests. Guests can add the product to their booking with very little effort.
 
-<figure><img src="../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Resource filters selection for product links."><figcaption></figcaption></figure>
 
-A new variable has been created for this in the e-mail body.
+When you use Resource filters, a special variable becomes available in the email body.
 
-<figure><img src="../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Variable for inserting product links into the email body."><figcaption></figcaption></figure>
 
-This variable can be linked to a photo or phrase/word that upon being clicked, will send the guest to the CC. In CC a message will appear informing the guest that product have been added to the booking and he needs to save the booking. Upon save the product will be added to the booking.
+You can attach this variable to a button, text, or image. When the guest clicks it, they are taken to the Customer Center. They will see a message that the product is added. They must save the booking to confirm it.
 
-If multiple links are sent through the e-mail, only the product from the clicked link will be booked.
+If you send several links, only the clicked link is applied.
 
 **There can be only one link per category.**
 
-**If multiple products are selected for one category, for multiple selection category, all products will be booked; if a normal category is involved, then the cheapest product will be booked.**
+**If you select multiple products in a category:**
+
+* For a **multi-select** category, all selected products are added.
+* For a **single-select** category, the cheapest selected product is added.
 
 {% hint style="danger" %}
-&#x20;<mark style="color:red;">**Caution:**</mark>
+**Caution**
 
 * An email or SMS template that has been sent to a booking cannot be resent.
-* Please be careful when creating a template. If mistakes are made during the creation of a template, editing is not advised since a booking cannot receive more than on email or SMS from 1 template.
+* Be careful when creating a template. If you make a mistake, avoid editing the same template. A booking can receive a template only once.
 {% endhint %}
+
+### FAQ
+
+<details>
+
+<summary>Can I resend the same template to the same booking?</summary>
+
+No. A booking can receive a template only once. Create a new template if you need to send a corrected message.
+
+</details>
+
+<details>
+
+<summary>What happens if I leave “Hour to Send” blank?</summary>
+
+The message is sent as soon as all rules and filters match.
+
+</details>
+
+<details>
+
+<summary>Why can there be a delay after the selected time?</summary>
+
+Sending can be delayed by up to about 20 minutes. This is normal.
+
+</details>
+
+<details>
+
+<summary>I added several “when to send” rules. Will the booking get several messages?</summary>
+
+No. The system sends only one message per template. The extra rules only decide when that one message should be sent.
+
+</details>
+
+<details>
+
+<summary>What is the difference between email and SMS templates?</summary>
+
+Email templates can include a subject and a message body. SMS templates are meant for short messages.
+
+</details>
+
+<details>
+
+<summary>Why does my product filter include more bookings than I expected?</summary>
+
+In the default setup, “Customers who have bought” matches if the booking bought at least one selected item. Switch to “Product Resourcer With And” if you want “all selected items”.
+
+</details>
+
+<details>
+
+<summary>Where do I select the brand?</summary>
+
+Use the brand dropdown in the top-left corner of the setup screen. Always check it before you save or activate a template.
+
+</details>
+
+<details>
+
+<summary>What does “Hidden” do?</summary>
+
+Hidden removes the template from the dashboard list. Use it to keep the list clean.
+
+</details>
+
+<details>
+
+<summary>Why is my email missing sender details?</summary>
+
+Email templates need sender details. Fill in **From name** and **From e-mail**.
+
+</details>
+
+<details>
+
+<summary>Why is my link not working?</summary>
+
+Make sure the URL contains the exact `[Hash-key-link]` text. Also make sure you selected the correct protocol in the link dialog.
+
+</details>
+
+<details>
+
+<summary>How many product links can I add per category?</summary>
+
+Only one link per category can be used.
+
+</details>
+
+<details>
+
+<summary>Can I attach the ticket to an SMS?</summary>
+
+No. Ticket attachments are available for email templates only.
+
+</details>
+
+<details>
+
+<summary>What does “Attach ticket” do?</summary>
+
+It adds the booking ticket PDF to the email.
+
+</details>
+
+<details>
+
+<summary>What does “Customers who have not bought” mean?</summary>
+
+It is an exclude filter. If a booking bought something from the selected categories, it will not receive the message.
+
+</details>

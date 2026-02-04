@@ -4,34 +4,44 @@
 
 The **E-mail Center** is the place where administrators set up and maintain all **automated email templates** used by the system.
 
-From here you can create, edit, and test email templates so that all communication sent to customers is **consistent, professional, and up to date**.
+From here you can create, edit, and test templates. This keeps customer emails consistent and up to date.
 
 ### Purpose
 
 The E-mail Center is used to:
 
-* Define and maintain templates for all automated emails sent by the platform.
-* Insert **dynamic content** (for example booking details) using predefined constants.
-* Test email templates before they are sent to real customers.
-* Control the **sender details** and **activation status** for each template.
+* Create and maintain templates for automated emails.
+* Insert booking details using built-in placeholders.
+* Test emails before you send them to customers.
+* Control sender details and whether a template is active.
+
+### Access
+
+Open **E-mail Setup → E-mail center** in the back office.
 
 ### Template fields
 
 For each email template, you can configure the following fields:
 
-* **Sender email address** – The email address that appears as the sender. This is where replies will be sent if the customer responds.
-* **Sender name** – The display name that appears in the recipient’s inbox (for example: your brand or company name).
-* **Activation status** – Controls whether this template is **active** (emails can be sent) or **inactive** (emails will not be sent using this template).
+* **Sender email address** – The “from” email address. Replies go to this address.
+* **Sender name** – The “from” name shown in the inbox.
+* **Activation status** – **Active** sends emails. **Inactive** blocks emails.
 * **Email subject** – The subject line of the email.
-* **Email body (text editor)** – A rich text editor where you write the content of the email. Here you can include dynamic placeholders (predefined constants) that the system will automatically replace with the correct values when sending (such as customer name, booking number, dates, etc.).
+* **Email body (text editor)** – The message content. You can add placeholders like customer name or booking number.
+
+{% hint style="info" %}
+Placeholders are short codes the system replaces automatically.
+
+For example, a booking number placeholder becomes the real booking number.
+{% endhint %}
 
 ### Types of automatic emails
 
-The platform can send many different types of automated emails. Typical examples include:
+The system can send many types of automated emails. Common examples include:
 
 * Thank You for Booking
 * Reservation Canceled
-* Payment Preminder
+* Payment Pre-reminder
 * Payment Reminder
 * Booking Canceled in 48 Hours
 * Deposit Received
@@ -60,8 +70,8 @@ The platform can send many different types of automated emails. Typical examples
 * Quotation List
 * Stop Sales Introduction
 * Extras Category Reporting
-* **Pending Payment Notification** – Sent when DIBS needs additional time (approx. 2–72 hours) to process a transaction.
-* **Captured Money But No Allotment** – Sent when a payment is successfully processed, but the requested allotment is no longer available (often followed by a refund).
+* **Pending Payment Notification** – Sent when the payment provider (DIBS) needs more time. This usually takes 2–72 hours.
+* **Captured Money But No Allotment** – Sent when payment succeeds, but availability is gone. A refund often follows.
 
 ### Step-by-step: configure an email template
 
@@ -69,7 +79,7 @@ The platform can send many different types of automated emails. Typical examples
 {% step %}
 #### 1. Open the E-mail Center
 
-Go to the **E-mail Center** module in the back office.
+Open **E-mail Setup → E-mail center**.
 {% endstep %}
 
 {% step %}
@@ -95,7 +105,7 @@ Set:
 
 * Enter a clear, descriptive **email subject**.
 * In the **email body**, write the content of the message.
-* Insert any required **dynamic placeholders** (predefined constants) where you want booking- or customer-specific data to appear.
+* Add placeholders where you want details filled in automatically.
 {% endstep %}
 
 {% step %}
@@ -113,8 +123,9 @@ Set:
 * Send the test email and then check your inbox.
 * Verify that:
   * The sender, subject, and content look correct.
-  * All dynamic placeholders are replaced with the expected values.
-* When you are satisfied, set the template to **active** so it is used by the system triggers.
+  * All placeholders are replaced with the expected values.
+* When you are satisfied, set the template to **active**.
+* The system will then use it automatically.
 {% endstep %}
 {% endstepper %}
 
@@ -125,7 +136,49 @@ To keep email communication reliable and professional, follow these recommendati
 
 * **Use recognizable sender details** – Choose a sender name and email that clearly represent your company or brand.
 * **Keep subjects clear and specific** – Make it obvious what the email is about (for example: _"Booking confirmation – \[Booking Number]"_).
-* **Review dynamic content carefully** – Always test changes to constants and placeholders so that emails do not contain missing or incorrect values.
+* **Test placeholders** – Send a test email and check the details.
 * **Avoid unnecessary changes to live templates** – When possible, clone or copy a template, adjust it, test it, and then switch over.
 * **Test after major system changes** – If booking flows or payment providers change, re-test the key email templates (confirmation, payment, cancellation, etc.).
 {% endhint %}
+
+### FAQ
+
+<details>
+
+<summary>Why didn’t my email send?</summary>
+
+Check that the template is set to **Active**. Then check you are testing the right email type.
+
+</details>
+
+<details>
+
+<summary>Why do I see strange codes in my email?</summary>
+
+Those are placeholders. The system fills them in when sending real emails. If they stay as codes, the placeholder is wrong or data is missing.
+
+</details>
+
+<details>
+
+<summary>Who receives replies to automated emails?</summary>
+
+Replies go to the sender email address in the template. Use an inbox your team actually monitors.
+
+</details>
+
+<details>
+
+<summary>How do I safely change a live template?</summary>
+
+Copy the template first, if your setup allows it. Test the copy. Then switch to the updated version.
+
+</details>
+
+<details>
+
+<summary>Why did the customer not receive the email?</summary>
+
+Ask them to check spam or junk folders first. Then send a test to the same domain, if possible. Keep attachments small to improve delivery.
+
+</details>
