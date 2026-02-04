@@ -74,6 +74,35 @@ Allows integration with internal billing and accounting systems for accurate cos
 | **Automatic Billing**    | Enable automated billing upon booking.                                                       |
 | **Schedule in the Past** | Allows scheduling billing for past dates (use with caution).                                 |
 
+### Golf Course&#x20;
+
+<figure><img src="../../.gitbook/assets/image (602).png" alt=""><figcaption></figcaption></figure>
+
+This section is shown **only when an Extra is configured with the type&#x20;**_**Golf**_.\
+If the Extra has a different type, this section is not displayed.
+
+#### Rounds
+
+Defines how many golf rounds are included in this extra.
+
+* Numeric value
+* Represents the maximum number of rounds for one booking. Valid number are 1 to 99
+* Used by the system when calculating and validating the golf product in the booking
+
+Example:\
+If **Rounds = 5**, the guest is entitled to five rounds of golf.
+
+#### Product Parent ID
+
+Internal identifier that links this golf extra to its parent product in Tourpaq.
+
+* Used internally by the system to connect related products
+* Fill Product ID when you want to use genarated allotment from another Product.
+
+#### Important
+
+These fields are **only relevant for Extras of type Golf** and are ignored for all other Extra types.
+
 ### Behaviour Settings
 
 These settings control how the extra behaves in the booking process and what logic or restrictions apply to its use.
