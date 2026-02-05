@@ -79,7 +79,7 @@ If deletion is blocked, the resort is likely in use.
 
 ### Edit a resort
 
-<figure><img src="../.gitbook/assets/image (375).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (604).png" alt=""><figcaption></figcaption></figure>
 
 ### Fields (edit resort)
 
@@ -108,14 +108,6 @@ If deletion is blocked, the resort is likely in use.
   * Checkbox to enable the resort for online sales.
 * **Show alternating text on web**
   * Displays alternate marketing text on the website if enabled.
-* **Teaser Text**
-  * Short promotional text shown in website teasers.
-* **Metadesc**
-  * Meta description used for search engines (SEO).
-* **Keywords**
-  * SEO keywords related to the resort.
-* **Title**
-  * Title used for web/SEO purposes.
 * **Latitude / Longitude**
   * Geographical coordinates of the resort.
   * Useful for maps and geo-location features.
@@ -133,16 +125,14 @@ If deletion is blocked, the resort is likely in use.
   * Controls whether the resort is visible or hidden.
 * **Source Agency**
   * Defines which agency/brand the resort belongs to (e.g., _All brands_).
-* **Administration**
-  * Cost assigned for administration related to this resort.
-* **Destination cost**
-  * Cost applied for the specific destination.
-* **Handling**
-  * Handling fee linked to the resort.
-* **Transfer**
-  * Cost of transfers (e.g., airport–hotel transfers).
-* **Miscellaneous**
-  * Additional costs that don’t fall under other categories.
+* **Teaser Text**
+  * Short promotional text shown in website teasers.
+* **Metadesc**
+  * Meta description used for search engines (SEO).
+* **Keywords**
+  * SEO keywords related to the resort.
+* **Title**
+  * Title used for web/SEO purposes.
 * **Description**
   * Rich-text editor field where a full description of the resort can be added.
   * Supports formatting, links, and images.
