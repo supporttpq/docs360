@@ -16,7 +16,60 @@ For each leg, you define **filters**. The filters apply to both **GDS** and **re
 
 * Click **Search** to preview which options match your filters.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (605).png" alt=""><figcaption></figcaption></figure>
+
+### Field descriptions and instructions
+
+#### Route information
+
+* **Departure -** Fixed departure airport for this transport (read-only).
+* **Arrival -** Fixed arrival airport for this transport (read-only).
+
+#### Time information
+
+* **Departure preferred time -** Optional target departure time.&#x20;
+* **Departure earliest time -** Earliest allowed departure time.&#x20;
+* **Departure latest time -** Latest allowed departure time.&#x20;
+
+#### Travel limitations
+
+* **Maximum stops number -** Maximum number of stops allowed.
+* **Maximum travel time (h) -** Maximum total journey duration in hours, including connections.
+* **Maximum connection time (min) -** Maximum allowed layover time between legs, in minutes.
+
+#### Cabin configuration
+
+* **Permitted Cabins -** Cabins that are allowed (for example Economy, Business). Only selected cabins will be returned.
+* **Preferred Cabins -** Cabins that should be prioritized when available, but not strictly enforced.
+
+#### Connection points
+
+* **Permitted connection points -** Cities or airports where connections are allowed.\
+  Use **Add** to define CITY and/or AIRPORT.
+* **Prohibited connection points -** Cities or airports where connections are not allowed.<br>
+
+#### Carrier rules
+
+* **Permitted carriers -** Airlines that are allowed for this transport.
+* **Excluded carriers -** Airlines that must never be used.
+
+#### Booking rules
+
+* **Booking Classes**<br>
+
+### Test Search Options
+
+These fields are used **only for testing** and do not affect the saved configuration directly.
+
+* **Search type -** Defines the test search direction, for example One Way.
+* **Max result number -**&#x4D;aximum number of results returned by the test search.
+* **Pax number -** Number of passengers used in the test search.
+* **Date -** Travel date used for the test search.
+* **Test Search Button -** Executes a live search using the current Fix Quotas configuration.
+
+{% hint style="info" %}
+Always run a test search before saving, especially when using filters like carriers, cabins, or connection limits.
+{% endhint %}
 
 * Click **Save** to store your filters.
 * Click **Update flight data** to fetch flight data using the saved filters. The selection logic is described in [Flight search](transport-definition.md#flight-search).
