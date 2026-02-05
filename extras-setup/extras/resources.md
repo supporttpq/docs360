@@ -44,19 +44,22 @@ This behavior is available by default to all the other companies in the system. 
 
 ### **Resources Overview:**
 
-| Resource Type           | Description                                                |
-| ----------------------- | ---------------------------------------------------------- |
-| **Arrivals**            | Shows which arrival was added as resources                 |
-| **Resorts**             | Specifies the resorts associated as resources              |
-| **Hotels**              | Specifies the hotels associated as resources               |
-| **Transports**          | Specifies the transports associated as resources           |
-| **Rooms**               | Associates the room types as resources                     |
-| **Real transports**     | Specifies the real transports associated as resources      |
-| **Arrival airport**     | Specifies the arrival airports associated as resources     |
-| **Destinations**        | Specifies the destinationss associated as resources        |
-| **Transport Suppliers** | Specifies the transport supplierss associated as resources |
+| Resource Type           | Description                                                                                                          |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| **Arrivals**            | Shows which arrival was added as resources                                                                           |
+| **Resorts**             | Specifies the resorts associated as resources                                                                        |
+| **Hotels**              | Specifies the hotels associated as resources                                                                         |
+| **Transport Modes**     | Allow the resource to distinguish between different transport modes (Bus, Car, Fly, Train)                           |
+| **Transport Types**     | Allow the resource to distinguish between different types of Transport (Charter, Dynamic, SysReal, System Transport) |
+| **Transports**          | Specifies the transports associated as resources                                                                     |
+| **Rooms**               | Associates the room types as resources                                                                               |
+| **Real transports**     | Specifies the real transports associated as resources                                                                |
+| **Arrival airport**     | Specifies the arrival airports associated as resources                                                               |
+| **Destinations**        | Specifies the destinationss associated as resources                                                                  |
+| **Transport Suppliers** | Specifies the transport supplierss associated as resources                                                           |
+| **Use as excluded**     | If checked, then the extras are eligible for all except the ones listed!                                             |
 
-Each section has an **Edit** button allowing detailed configuration for that specific resource.
+Each section has an **Edit** button allowing detailed configuration for that specific resource.&#x20;
 
 ***
 
