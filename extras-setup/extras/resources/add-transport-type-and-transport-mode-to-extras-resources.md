@@ -16,6 +16,10 @@ This enables:
 * Differentiating between Charter, GDS, and other system transports
 * Distinguishing between flight-based and non-flight-based dynamic transports
 
+### Screenshot
+
+<figure><img src="../../../.gitbook/assets/image (603).png" alt=""><figcaption></figcaption></figure>
+
 ### **Transport Type**
 
 Transport Type limits an extra so it is available only when the booking contains a matching transport type.
