@@ -2,52 +2,60 @@
 
 ### Overview
 
-Extras can be linked to transport resources to control when and how they are available during booking. To support selling products such as golf bags, infant prices, or seating on Dynamic Packages without triggering ancillaries in Amadeus, Extras Resources now support filtering by **Transport Type** and **Transport Mode**.
+You can link an **Extra** to a transport resource. This controls when the extra is shown during booking.
 
-This allows precise control over which extras apply to which transport scenarios.
+Extras Resources now support two filters:
+
+* **Transport Type**
+* **Transport Mode**
+
+Use these filters to limit an extra.
+
+Only show it for certain kinds of transport.
+
+### Access
+
+* Open **Extras Setup → Extras**.
+* Open your extra.
+* Go to **Resources**.
 
 ### Purpose
 
 Transport Type and Transport Mode allow you to control **when an extra is available**, based on the transport used in the booking.
 
-This enables:
-
-* Selling extras on Dynamic Packages without sending ancillaries to Amadeus
-* Differentiating between Charter, GDS, and other system transports
-* Distinguishing between flight-based and non-flight-based dynamic transports
+This is useful when selling extras such as golf bags, infant prices, or seat selection on Dynamic Packages, while ensuring that these extras are not handled as ancillaries in Amadeus.
 
 ### Screenshot
 
 <figure><img src="../../../.gitbook/assets/image (603).png" alt=""><figcaption></figcaption></figure>
 
-### **Transport Type**
+### Transport Type
 
-Transport Type limits an extra so it is available only when the booking contains a matching transport type.
+Transport Type limits an extra to bookings that use a specific transport type.
 
-If the transport in the booking does not match the selected Transport Type, the extra is not offered.
+If the booking does not match your selection, the extra is not shown.
 
-Example
+#### Example
 
 * Transfer used only for Charter\
   Transport Type = Sys-Real
 * Transfer used only for GDS flights\
   Transport Type = System
 
-### **Transport Mode**
+### Transport Mode
 
-Transport Mode adds an additional filter for dynamic transports.\
-It allows you to distinguish between different types of transport, such as flights or car-based transport.
+Transport Mode is an extra filter for dynamic transports. It helps you separate flights from other transport modes.
 
-Transport Mode is evaluated only when the selected Transport Type supports dynamic behavior.
+Transport Mode is only checked when the chosen Transport Type supports it.
 
-Supported Values
+#### Supported values
 
-* FLY
+* FLY (flight)
 * CAR
 * BUS
 * TRAIN
 
-Example
+#### Example
 
 * **Transfer only for Charter**
   * Transport Type = Sys-Real
@@ -55,24 +63,81 @@ Example
   * Transport Type = System
   * Transport Mode = FLY
 
-### How to Configure Transport Type and Mode for an Extra
+### How to set Transport Type and Transport Mode
 
-1. Go to **Extras Setup > Extras**.
-2. Open the extra you want to configure.
-3. Navigate to the **Resources** section.
-4. Use the **Transport Type** filter to select one or more transport types.
-5. If needed, use the **Transport Mode** filter to further limit availability.
-6. Save the extra.
+1. Go to **Extras Setup → Extras**.
+2. Open the extra you want to change.
+3. Go to **Resources**.
+4. Select one or more **Transport Type** values.
+5. Optional: select one or more **Transport Mode** values.
+6. Click **Save**.
 
 ### Using Excluded Values
 
-Both Transport Type and Transport Mode support **Use as Excluded**.
+Both filters support **Use as Excluded**.
 
-When enabled, the extra will be available for all transport types or modes **except** the selected ones.
+Turn it on to exclude what you selected. The extra will be available for everything **except** those values.
+
+#### Example
+
+* You do not want an extra to show for flights.
+  * Transport Mode = FLY
+  * Use as Excluded = enabled
 
 ### Important Notes
 
 * Both filters support multiple selections.
-* If no Transport Type is selected, the extra is available for all transport types.
-* Transport Mode has no effect unless a compatible Transport Type is selected.
-* These settings help prevent extras from being sent as ancillaries in Amadeus.
+* If you leave **Transport Type** empty, the extra can be used with all transport types.
+* **Transport Mode** does nothing unless the selected Transport Type supports it.
+* These filters can help avoid sending extras to Amadeus.
+
+### FAQ
+
+<details>
+
+<summary>What happens if I do not select a Transport Type?</summary>
+
+The extra stays available for all transport types.
+
+</details>
+
+<details>
+
+<summary>Can I select more than one Transport Type or Mode?</summary>
+
+Yes. The extra will be available when the booking matches any selected value.
+
+</details>
+
+<details>
+
+<summary>What does “Use as Excluded” do?</summary>
+
+It flips the logic. The extra will be available for everything except the values you selected.
+
+</details>
+
+<details>
+
+<summary>I expected the extra to show up, but it does not. What should I check?</summary>
+
+Check these items:
+
+* The booking uses a transport that matches your Transport Type.
+* If you set Transport Mode, the booking also matches that mode.
+* You saved the extra after making changes.
+
+</details>
+
+<details>
+
+<summary>Does this change existing bookings?</summary>
+
+No. These filters control what is offered during booking and changes. They do not add or remove extras in existing bookings.
+
+</details>
+
+### Related pages
+
+* [Extras](../)
+* [Resources](./)
