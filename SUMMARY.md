@@ -386,7 +386,8 @@
 
 * [Extras](extras-setup/extras/README.md)
   * [Prices](extras-setup/extras/prices.md)
-  * [Resources](extras-setup/extras/resources.md)
+  * [Resources](extras-setup/extras/resources/README.md)
+    * [Add Transport Type and Transport Mode to Extras Resources](extras-setup/extras/resources/add-transport-type-and-transport-mode-to-extras-resources.md)
   * [Allotments](extras-setup/extras/allotments.md)
   * [Sold out behaviour](extras-setup/extras/sold-out-behaviour.md)
   * [Extra package](extras-setup/extras/extra-package.md)
