@@ -78,4 +78,22 @@ The system allows users to extend the season by adjusting the start or end dates
 * **Extending the beginning of the season:** Users can add earlier weeks if the season starts sooner than originally planned.
 
 When extending an existing season by adding only a few additional weeks, the system will **reuse the same fix-quota**.\
-However, if a completely new season period is added, the system will **generate a new fix-quota**.
+However, if a completely new season period is added, the system will **generate a new fixed quota**.
+
+### Automatic Extension of Generated Quotas
+
+Transport Rules can be configured far in advance to support long-term planning, including GDS transports defined several years ahead. To avoid unnecessary system load, generated quotas are limited in range and extended automatically over time.
+
+#### How It Works
+
+*   Transport Rules may be defined with dates far in the future.
+
+    <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+*   The system generates quotas only for the **next 500 days**.
+
+    <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+* A background service runs **once per week** and automatically extends the generated quotas, ensuring that quotas always exist up to **500 days ahead** of the current date.
+* This automatic extension applies **only to Dynamic and CAR Transport Rules**.
+* The 500-day limit is aligned with the existing limit used by the **price list generator**.
+
+If a Transport Rule has valid dates and allotment defined in the future, the service ensures that its quotas continue to be extended without manual intervention.
