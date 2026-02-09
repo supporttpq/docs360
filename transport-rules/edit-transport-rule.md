@@ -88,12 +88,93 @@ Transport Rules can be configured far in advance to support long-term planning, 
 
 *   Transport Rules may be defined with dates far in the future.
 
-    <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 *   The system generates quotas only for the **next 500 days**.
 
-    <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 * A background service runs **once per week** and automatically extends the generated quotas, ensuring that quotas always exist up to **500 days ahead** of the current date.
 * This automatic extension applies **only to Dynamic and CAR Transport Rules**.
 * The 500-day limit is aligned with the existing limit used by the **price list generator**.
 
 If a Transport Rule has valid dates and allotment defined in the future, the service ensures that its quotas continue to be extended without manual intervention.
+
+### Add season Support
+
+#### Overview
+
+Transport Rules support multiple seasons within the same rule. This allows long term planning while keeping a single Transport Rule and consistent names for both the rule itself and all generated transports.
+
+Each season represents a specific date period with its own pricing and travel configuration.
+
+#### Purpose
+
+The goal of season support is to address daily operational challenges and allow transport configurations to vary over time without duplicating Transport Rules.
+
+This makes it possible to:
+
+* Manage multiple seasonal setups under one Transport Rule
+* Keep generated transport names consistent
+* Adjust prices, stay days, and directions per season
+
+#### How It Works
+
+A single Transport Rule can contain several **date periods (seasons)**.
+
+\
+For each season, the following can be configured independently:
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+* **Start date**
+* **End date**
+* **Infant price**
+* **Outbound settings**
+* **Homebound settings**
+* **Stay days**
+
+Date periods must not overlap.
+
+#### Page Structure
+
+When opening a Transport Rule, the **General** tab is always shown by default.
+
+The page is divided into two main sections:
+
+**Top Section: Global Configuration**
+
+This section contains settings that apply to the Transport Rule regardless of season.
+
+It includes:
+
+* Code
+* Departure
+* Arrival
+* Transportation
+
+The **Settings** section contain:
+
+* Status  (Visible/Hidden)
+* Hide as filter on list - select the checkbox to hide the transport from the lists in the system
+* Cancelation Condition
+
+**Bottom Section: Season-Specific Configuration**
+
+The lower part of the page contains all data that varies per season.
+
+**Date Period Table**
+
+A table lists all configured date periods:
+
+* Date periods are sorted with the **oldest at the top**
+* New date periods are added at the **bottom**
+* Date periods must **not overlap**
+
+**Managing Date Periods**
+
+* A date period can be **deleted** only if it is newly created and no data has been generated yet.
+* The **Edit Quota** button opens the quota editor for the selected period.
+* The **Edit Quota** button is shown only when a quota exists for that period.
+
+When a new season is added, it is configured on the same Transport Rule page. The system reuses the **same transports** from the previous season and generates a **new fixed quota** for the newly created season.
+
+This means the system does not create new transports for each season. Instead, it keeps the existing transport and adds a new fixed quota that applies only to the new season.
