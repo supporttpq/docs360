@@ -37,10 +37,12 @@ Before you edit anything, select the correct **brand** in the top-left dropdown.
 #### Basic template settings
 
 * **Template name**: a clear name you can recognize later.
+* **Email Type:** allow yo create different email type.
 * **Template type**: the kind of message you are setting up.
 * **Active**: allows the template to be used for sending.
 * **Hidden**: hides the template from the Dynamic E-mail/SMS Dashboard list.
 * **Hour to send**: the time the email/SMS should be sent. Sending can be delayed by up to about 20 minutes. If you leave it blank, it is sent as soon as all rules match.
+* **Product Resourser With And:** when checked, the system finds all bookings with all resources purchased / not purchased
 
 #### Email-only settings
 
@@ -57,7 +59,7 @@ Before you edit anything, select the correct **brand** in the top-left dropdown.
 
 ### Sending options
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (24).png" alt="Sending options and rule builder for a dynamic template."><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (25).png" alt="Sending options and rule builder for a dynamic template."><figcaption></figcaption></figure>
 
 Use these fields to decide **when** the message should be sent.
 
@@ -164,9 +166,53 @@ Use these fields to filter bookings by booking, departure, arrival, and return d
 
 ### Destination filters
 
-<figure><img src="../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Destination and transport filters for bookings."><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-Use these fields to filter bookings by hotel, room, transport, real transport, resort, arrival airport, and more.
+Dynamic Emails can be configured to vary their content based on departure/arrival details and transport characteristics. This makes it possible to deliver highly targeted emails, such as departure specific instructions or airport related information.
+
+Dynamic Emails can be filtered so that a specific email template is sent only when defined booking, destination, or transport conditions are met. Filters are combined to precisely control when an email is triggered.
+
+**Destination Filters**
+
+Destination filters define **where** the booking applies. You can filter Dynamic Emails by:
+
+* **Countries**
+* **Departures** (departure airports or locations)
+* **Arrivals**
+* **Resorts**
+* **Hotels**
+
+This allows, for example, sending different emails based on the departure airport or destination hotel.
+
+**Transport Filters**
+
+Transport-related filters define **how** the customer is traveling:
+
+* **Transports**
+* **Real Transports**
+* **Transport Suppliers**
+* **Transport Modes**
+* **Transport Types**
+
+These filters make it possible to distinguish between different suppliers, charter vs GDS flights, or system vs external transports.
+
+**How Filtering Works**
+
+* Filters are **inclusive**. If a filter is set, the booking must match it for the email to be sent.
+* Multiple filters can be combined to create highly specific rules.
+* If a filter category is left empty, it does not restrict the email.
+
+**Typical Use Case**
+
+You can configure different Dynamic Email variants such as:
+
+* One email for passengers departing from Airport A with Supplier X
+* Another email for Airport A with Supplier Y
+* A third email for Airport B with Supplier X
+
+This is especially useful for departure-specific information, such as parking instructions or airline-specific details.
+
+These filtering options ensure that customers receive only the most relevant communication for their exact booking context.
 
 ### Resource filters (product links)
 
