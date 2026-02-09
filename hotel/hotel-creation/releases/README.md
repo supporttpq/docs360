@@ -102,15 +102,18 @@ Common filters:
 
 ### Release logs
 
-Administrators can review release actions in **Releases Log** (Hotel → Tourpaq).
+Administrators can review release actions in **Activity Log** (Hotel → Tourpaq).
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 Filters include:
 
-* supplier
-* brand
-* hotel
-* room type
 * period
+* room
+* activity type
+  * create hotel allotment
+  * update hotel allotment
+  * update release info
 
 ### Rule editing behavior
 
@@ -163,12 +166,12 @@ As a result, those past dates remain marked as released. Only dates that fall af
 *   All February dates are set to be unreleased, and the release period is changed to 7 **days**.&#x20;
 
     <figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
-*   According to the general rule, releases would normally start from **Current day (February 2)+ 30 days**.&#x20;
+*   According to the rule set is the **Release** tab, the releases would normally start from **Current day (February 2)+ 30 days**.&#x20;
 
-    <figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 *   However, February has a custom release configuration, so the system instead applies **February 2 + 7 days**, which results in February **9**.&#x20;
 
-    <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 Because the release calculation uses **February 2 + 7 days (February 9)** due to the custom configuration, any dates **before February 9** will remain marked as released. Only dates **from February 9 onward** will have the **Release** flag removed.
 
