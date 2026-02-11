@@ -38,16 +38,16 @@ Transport Rule names can be edited at any time. Renaming a Transport Rule will a
 
 To maintain data consistency, the system does not allow two Transport Rules to share the same name.
 
-<figure><img src="../.gitbook/assets/image (535).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (609).png" alt=""><figcaption></figcaption></figure>
 
 **Example:**\
-If a Transport Rule was initially created as **BLLPMI1A**, but the correct naming should be **BLLPMI1A-TR**, updating the rule name will also rename all associated generated transports accordingly.
+If a Transport Rule was initially created as CPHCHQ7A, but the correct naming should be CPHCHQ7&#x41;**-TR**, updating the rule name will also rename all associated generated transports accordingly.
 
 #### Auto-Selecting Stay Days When Adding New Entries
 
 When a user clicks the **“+”** button to add new stay dates, the system automatically preselects the first available stay day from the drop-down list.
 
-<figure><img src="../.gitbook/assets/image (536).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (608).png" alt=""><figcaption></figcaption></figure>
 
 This behavior allows users to repeatedly press **“+”** and quickly add all remaining stay days in sequence, creating a faster and more efficient workflow.
 
@@ -55,7 +55,7 @@ This behavior allows users to repeatedly press **“+”** and quickly add all r
 
 In the Stay Days table, an additional column is introduced to display the name of the generated transport associated with each stay day.
 
-<figure><img src="../.gitbook/assets/image (537).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (610).png" alt=""><figcaption></figcaption></figure>
 
 The transport name it is a clickable link. Selecting this link opens the corresponding generated transport in a new browser tab, allowing users to review or manage it without losing their place in the current view.
 

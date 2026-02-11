@@ -15,7 +15,7 @@ Transport rules are used to:
 
 ### Field Explanation
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (611).png" alt=""><figcaption></figcaption></figure>
 
 #### General
 
@@ -38,12 +38,17 @@ This behavior allows users to repeatedly press **“+”** and quickly add all r
 
 #### Transportation
 
+<figure><img src="../.gitbook/assets/image (612).png" alt=""><figcaption></figcaption></figure>
+
 * **Pick-up point required** – If checked, the booking must include a pick-up point.
 * **Travel Length Correction +/-** – Adjust the travel duration by a specified number of days.
 * **Shift check-in date +/-** – Shifts the hotel check-in date forward or backward.
 * **Hotel nights correction +/-** – Adjust the total number of hotel nights based on transport.
+* Transport mode - Select from the dropdown the transportation mode
 
 #### Price Information
+
+<figure><img src="../.gitbook/assets/image (613).png" alt=""><figcaption></figcaption></figure>
 
 * **Infant price** – Set the price for infants.
 * **Payment Rule** – Select a payment rule applicable to this transport.
@@ -52,12 +57,37 @@ This behavior allows users to repeatedly press **“+”** and quickly add all r
 #### Outbound
 
 * **Transport Type** – Select the transport type for the outbound journey (Real transport / External provider).
+* Depending on the selected transport type, the system offers several fields, such as:
+  *   Real Transport&#x20;
+
+      <figure><img src="../.gitbook/assets/image (614).png" alt=""><figcaption></figcaption></figure>
+
+
+
+      * Transport type - Specifies the type of transport to which the rule applies
+      * Alternative airport - Defines whether alternative arrival airports are allowed.
+      * Real Transport - Allow to select a real transport.
+  *   External Provider&#x20;
+
+      <figure><img src="../.gitbook/assets/image (615).png" alt=""><figcaption></figcaption></figure>
+
+      * Transport type - Specifies the type of transport to which the rule applies
+      * Alternative airport - Defines whether alternative arrival airports are allowed.
+      * Provider - Specifies the transport provider (e.g. Paxport API, Travelport API, Amadeus API, Railhub Provider).
+      * Max stops number - Defines the maximum number of stopovers allowed for the outbound journey.
+      * Max connection time (min) - Specifies the maximum allowed connection time between segments, in minutes.
+      * Max travel time (hours) - Defines the maximum total duration of the outbound journey.
+      * Max Price - Sets the maximum allowed price for the outbound transport.
+      * Baggage - Checkbox indicating whether baggage inclusion is required.
 
 #### Homebound
 
 * **Transport Type** – Select the transport type for the return journey (Real transport / External provider).
+* the same fields are available as for outbound&#x20;
 
 #### Settings
+
+<figure><img src="../.gitbook/assets/image (616).png" alt=""><figcaption></figcaption></figure>
 
 * **Status** – Defines the rule’s visibility in the system (e.g., Visible / Hidden).
 * **Hide as filter on lists** – If checked, this rule will not appear as a filter option in lists.
