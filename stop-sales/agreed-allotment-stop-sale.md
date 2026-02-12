@@ -88,7 +88,7 @@ After you save, verify the same hotel, room, and date range in these places:
   * Filter by hotel, room type, and dates.
   * `FHA` (free-hotel-allotment) should reflect the reopened rooms minus bookings.
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### FAQ
 

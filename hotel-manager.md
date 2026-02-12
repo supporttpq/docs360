@@ -16,7 +16,7 @@ This functionality helps maintain accurate contact and operational data for hote
 
 #### **Page Structure**
 
-<figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 | **Column**          | **Description**                                                                                            |
 | ------------------- | ---------------------------------------------------------------------------------------------------------- |
