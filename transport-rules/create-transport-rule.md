@@ -38,13 +38,16 @@ This behavior allows users to repeatedly press **“+”** and quickly add all r
 
 #### Transportation
 
-<figure><img src="../.gitbook/assets/image (612).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (622).png" alt=""><figcaption></figcaption></figure>
 
 * **Pick-up point required** – If checked, the booking must include a pick-up point.
 * **Travel Length Correction +/-** – Adjust the travel duration by a specified number of days.
 * **Shift check-in date +/-** – Shifts the hotel check-in date forward or backward.
 * **Hotel nights correction +/-** – Adjust the total number of hotel nights based on transport.
-* Transport mode - Select from the dropdown the transportation mode
+* **Transport mode** - Select from the dropdown the transportation mode
+*   **Alternative flight number** - Set the number of alternative flights for every transport set in the rule. The filter can be edited and take effect after the transport was genarated.
+
+    <figure><img src="../.gitbook/assets/image (623).png" alt=""><figcaption></figcaption></figure>
 
 #### Price Information
 
