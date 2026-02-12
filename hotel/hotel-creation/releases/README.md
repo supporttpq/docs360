@@ -175,6 +175,67 @@ As a result, those past dates remain marked as released. Only dates that fall af
 
 Because the release calculation uses **February 2 + 7 days (February 9)** due to the custom configuration, any dates **before February 9** will remain marked as released. Only dates **from February 9 onward** will have the **Release** flag removed.
 
+### Editable hotel release - days in the past
+
+Administrator users can edit the **Hotel Release (Days)** directly from the **Allotment per Day** tab, including for dates that are already in the past.
+
+The system recalculates the release status based on the following formula:
+
+**Release Date = Allotment Date − Release Days**
+
+If the calculated Release Date is **earlier than or equal to the current date**, the release is considered performed and the **“R” checkbox** will automatically be ticked again when saving.
+
+#### Example Scenario
+
+* **Current date:** 05.02.2026
+* **Allotment date:** 07.02.2026
+* The Release checkbox is manually removed in the “R” column.
+* The Days value is then modified and saved.
+
+#### Case 1: Days = 3
+
+Release Date = 07.02.2026 − 3 days = 04.02.2026
+
+Since 04.02.2026 is earlier than the current date (05.02.2026), the release has already been performed.
+
+When saving, the system automatically ticks the **“R” checkbox** again.
+
+Any value greater than 3 days will produce the same result because the calculated release date will still be in the past.
+
+#### Case 2: Days = 2
+
+Release Date = 07.02.2026 − 2 days = 05.02.2026
+
+Since the release date is equal to the current date, the release is considered performed.
+
+When saving, the system automatically ticks the **“R” checkbox** again.
+
+Any value greater than 2 days will also trigger automatic release because the calculated release date will be in the past.
+
+#### Case 3: Days = 1
+
+Release Date = 07.02.2026 − 1 day = 06.02.2026
+
+Since 06.02.2026 is later than the current date, the release has not yet been performed.
+
+When saving, the **“R” checkbox remains unticked**.
+
+The release will be performed the following day.
+
+#### Case 4: Days = 0
+
+Release Date = 07.02.2026 − 0 days = 07.02.2026
+
+Since 07.02.2026 is later than the current date, the release has not yet been performed.
+
+When saving, the **“R” checkbox remains unticked**.
+
+The release will be performed on the allotment date.
+
+{% hint style="info" %}
+The system does not allow a manual override of release logic when the calculated release date is already in the past. In such cases, the release status is automatically enforced to maintain data consistency.
+{% endhint %}
+
 ### FAQ
 
 #### Who can create or change release rules?
