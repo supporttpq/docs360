@@ -23,14 +23,14 @@ Transport rules are used to:
 * **Date From**\* – Start date for the validity of the rule (mandatory).
 * **Date To**\* – End date for the validity of the rule (mandatory).
 
-Users are allowed to modify the selected dates after the initial save, as long as the transports have not yet been generated.\
+Users can modify the selected dates after the initial save, as long as the transports have not yet been generated.\
 This ensures flexibility during setup while still preserving data integrity once the generation process begins.
 
 * **Departure**\* – Departure location (mandatory).
 * **Arrival**\* – Arrival location (mandatory).
-* **Stay Days** – Define stay duration (optional, tab). The values ​​displayed in this field are defined in Setup -> [Transport Stay Days](../setup/transport-stay-days.md).&#x20;
+* **Stay Days** – Define stay duration (optional, tab). The values displayed in this field are defined in Setup -> [Transport Stay Days](../setup/transport-stay-days.md).
 
-When a user clicks the **“+”** button to add new stay dates, the system automatically preselects the first available stay day from the drop-down list.
+When a user clicks the **“+”** button to add new stay days, the system automatically preselects the first available stay day from the drop-down list.
 
 This behavior allows users to repeatedly press **“+”** and quickly add all remaining stay days in sequence, creating a faster and more efficient workflow.
 
@@ -44,8 +44,8 @@ This behavior allows users to repeatedly press **“+”** and quickly add all r
 * **Travel Length Correction +/-** – Adjust the travel duration by a specified number of days.
 * **Shift check-in date +/-** – Shifts the hotel check-in date forward or backward.
 * **Hotel nights correction +/-** – Adjust the total number of hotel nights based on transport.
-* **Transport mode** - Select from the dropdown the transportation mode
-*   **Alternative flight number** - Set the number of alternative flights for every transport set in the rule. The filter can be edited and take effect after the transport was genarated.
+* **Transport mode** – Select the transport mode from the drop-down list.
+*   **Alternative flight number** – Set the number of alternative flights for each transport set in the rule. The filter can be edited and takes effect after the transport has been generated.
 
     <figure><img src="../.gitbook/assets/image (623).png" alt=""><figcaption></figcaption></figure>
 
@@ -61,22 +61,20 @@ This behavior allows users to repeatedly press **“+”** and quickly add all r
 
 * **Transport Type** – Select the transport type for the outbound journey (Real transport / External provider).
 * Depending on the selected transport type, the system offers several fields, such as:
-  *   Real Transport&#x20;
+  *   Real Transport
 
       <figure><img src="../.gitbook/assets/image (614).png" alt=""><figcaption></figcaption></figure>
 
-
-
       * Transport type - Specifies the type of transport to which the rule applies
       * Alternative airport - Defines whether alternative arrival airports are allowed.
-      * Real Transport - Allow to select a real transport.
-  *   External Provider&#x20;
+      * Real Transport - Allows you to select a real transport.
+  *   External Provider
 
       <figure><img src="../.gitbook/assets/image (615).png" alt=""><figcaption></figcaption></figure>
 
       * Transport type - Specifies the type of transport to which the rule applies
       * Alternative airport - Defines whether alternative arrival airports are allowed.
-      * Provider - Specifies the transport provider (e.g. Paxport API, Travelport API, Amadeus API, Railhub Provider).
+      * Provider - Specifies the transport provider (e.g., Paxport API, Travelport API, Amadeus API, Railhub Provider).
       * Max stops number - Defines the maximum number of stopovers allowed for the outbound journey.
       * Max connection time (min) - Specifies the maximum allowed connection time between segments, in minutes.
       * Max travel time (hours) - Defines the maximum total duration of the outbound journey.
@@ -86,7 +84,7 @@ This behavior allows users to repeatedly press **“+”** and quickly add all r
 #### Homebound
 
 * **Transport Type** – Select the transport type for the return journey (Real transport / External provider).
-* the same fields are available as for outbound&#x20;
+* The same fields are available as for outbound.
 
 #### Settings
 
@@ -95,3 +93,25 @@ This behavior allows users to repeatedly press **“+”** and quickly add all r
 * **Status** – Defines the rule’s visibility in the system (e.g., Visible / Hidden).
 * **Hide as filter on lists** – If checked, this rule will not appear as a filter option in lists.
 * **Cancelation condition**\* – Select the cancellation condition that applies to this transport rule (mandatory).
+
+### FAQ
+
+#### Can I change **Date From** / **Date To** after saving?
+
+Yes. You can edit the dates until transports have been generated.
+
+#### Where do the **Stay Days** values come from?
+
+They are maintained in Setup -> **Transport Stay Days**.
+
+#### Why does clicking **“+”** in **Stay Days** preselect a value?
+
+It speeds up setup. You can add stay days quickly in sequence.
+
+#### What does **Pick-up point required** enforce?
+
+It forces the booking flow to include a pick-up point.
+
+#### Why can’t I find the rule in list filters?
+
+Check **Status** and **Hide as filter on lists**.
