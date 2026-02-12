@@ -58,6 +58,8 @@ Required inputs:
 * **Departure**
 * At least one of **Arrival**, **Resort**, or **Hotel**
 * **Date from** and **Date to**
+* **Board**&#x20;
+* **Budget (max)**
 
 If something is missing, you will see validation warnings.
 
@@ -99,7 +101,7 @@ Use **+ Filters** for flight filters.
 {% step %}
 ### Review hotel results (bottom grid)
 
-Hotel rows show hotel, stay, availability, and prices.
+Hotel rows show hotel, stay, availability, board,and prices.
 
 Use **+ Filters** for advanced hotel filters.
 
@@ -164,14 +166,12 @@ The Hotels section lists available hotel rooms that match the search and selecte
 * Avail - Available rooms
 * Date -  Departure date
 * Board - Board type which is included in the price
-* Price per person
 * Normal price - The price without discount (P price), The price includes the price of any selected board
 * Discount
 * Final discounted price and currency - The price with discount (D price). The price includes the price of any selected board.
 
 **Pricing**
 
-* Price per person is calculated based on passengers, stay length, and pricing rules
 * Discounted prices are highlighted
 * Normal price is shown with strikethrough when a discount applies
 
@@ -254,7 +254,6 @@ This grid displays hotel options based on the search:
 | **Avail.**                   | Remaining available rooms for the selected date.                                                                          |
 | **Date**                     | Departure Date                                                                                                            |
 | **Board**                    | Board type which is included in the price                                                                                 |
-| **Price Per Person**         | Price per Person                                                                                                          |
 | **Normal Price**             | The price without discount (P price), The price includes the price of any selected board                                  |
 | **Discount**                 | Applied discount amount.                                                                                                  |
 | **Discount Price**           | The price with discount (D price). The price includes the price of any selected board.                                    |
@@ -335,24 +334,10 @@ Common reasons:
 * The selected hotel line has no availability.
 * Your user role does not have rights to create bookings for the selected brand/workflow.
 
-#### Why is **Price PC** shown as `0`?
-
-It means the search is currently pricing without children.
-
-Add child ages in **Passengers** to get a child price.
-
 #### What’s the difference between **Normal price** and **Discount price**?
 
 * **Normal price** is the undiscounted total. It can still include auto-selected supplements.
 * **Discount price** is the final total after discounts. It includes relevant extras and supplements.
-
-#### Why does **Price PA / Price PC** look “too low” compared to totals?
-
-Price PA/PC are averages per passenger type.
-
-They are derived from the booking totals.
-
-Totals can also include supplements and extras.
 
 #### How do I reset all filters quickly?
 
