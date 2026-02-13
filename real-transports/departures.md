@@ -1,120 +1,118 @@
 # Departures
 
-### **Overview**
+### Overview
 
-The **Departures** section under _Real Transports_ displays all scheduled departures connected to a real (operational) transport setup.\
-It provides detailed information such as departure dates, times, airlines, seat capacity, and related suppliers.\
-This view ensures that all departures linked to the real transport are correctly defined and synchronized with the system data.
+**Departures** (under _Real Transports_) shows every planned departure for a specific real transport.
 
-Each row represents **one specific departure** with all relevant data: times, airline, flight number, provider, seats, costs, taxes, load factor, and more.\
-Bulk-edit tools allow operational users to update a full season in a few seconds.
+Each row is one departure. It includes the date, times, airline, flight number, seats, prices, and status.
 
-### **Purpose**
+You can edit one row at a time. You can also update many rows at once.
 
-The purpose of this page is to manage all real (operational) departures associated with a transport route.\
-It allows users to review, verify, and adjust departure details to match actual transport operations and seat availability.
+### Purpose
 
-### **Preconditions**
+Use this page to keep departures correct and up to date.
 
-Before viewing or editing departures for real transports, ensure that:
+This helps your bookings match what the supplier will actually operate.
 
-* The **Real Transport** has already been created and connected to a Transport Rule.
-* The **Airline** and **Transport Supplier** exists in the system.
-* Departure details (time, day, seats, and prices) are confirmed with the supplier.
+### Before you start
 
-#### **Instructions**
+Make sure these are in place:
 
-**Viewing Departures**
+* The **Real Transport** is created and linked to a Transport Rule.
+* The **Airline** and **Transport Supplier** exist in the system.
+* You have confirmed times, seats, and prices with the supplier.
 
-* Open **Transports → Real Transports → Departures**.
-* The list displays all departures for the selected real transport.
-* Use **Show Older** to include past departures in the view.
+### View departures
 
-### Page Layout
+1. Open **Transports → Real Transports → Departures**.
+2. Review the list for the selected real transport.
+3. Turn on **Show Older** if you also need past departures.
+
+### Page layout
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-#### Filters and Tools
+#### Filters and tools
 
-At the top of the page, you can use several filters to search:
+Use these filters at the top of the page:
 
-* **Date / End** – Define the period for which departures are displayed.
-* **Week Days** – Filter by specific days of the week (multiple selection option).
+* **Date / End** – Choose the date range to display.
+* **Week Days** – Filter by day of the week (you can pick more than one).
 * **Flight No** – Search by flight number.
-* **Show Older** – Include older departures in the list.
+* **Show Older** – Include departures from the past.
 * **Clear** – Reset all filters.
-* **Run** – Execute the selected filter.
+* **Run** – Apply the filters.
 
-#### Buttons
+#### Buttons and actions
 
 * **Create** – Opens a new line to create a departure manually.
-* **Send Flight Change** – Sends updated flight data to connected systems. Sending a Flight Change will also save any modifications made to the selected timetables.
-* **Queue Flight Change** – Queues flight changes for later processing. Queuing a Flight Change will also save any modifications made to the selected timetables.
+* **Send Flight Change** – Sends updated flight details to connected systems. It also saves your edits.
+* **Queue Flight Change** – Saves your edits and puts the change in a queue for later processing.
 
-### **Row Selector**
+### Select rows (row selector)
 
 Located on the left of the table.
 
 * You can select **one**, **many**, or **all** departures.
-* Header shows **“N of M selected”**.
-* **Select All** allows bulk operations across the entire result set.
+* The header shows **“N of M selected”**.
+* **Select All** selects all rows in the current result set.
 
 Row selection is required for:
 
-* Bulk editing
+* Updating many rows at once
 * Running the **Change Value** tool
-* Bulk operations for flight changes
+* Sending or queueing flight changes
 
-### **Change Value Tool**
+### Change Value tool (update many rows)
 
-A powerful mass-edit tool used for changing values on multiple rows at once.
+Use **Change Value** when you need the same change on several departures.
 
-#### **Available Options**
+#### Available options
 
 * **Column**: Choose which column to update
-* **Operation**: Add, subtract, replace
+* **Operation**: Add, subtract, or replace
 * **Value**: Numerical or text, depending on the field
 * Press **Run** to apply the change to all selected rows
 
-#### **Examples**
+#### Examples
 
 * Add +10 to PR Seat
 * Replace Airline with “Airseven”
 * Subtract 5 minutes from Departure Time
 
-The Change Value Tool supports all columns marked as **Change value supported** in the functional
+Some columns do not support Change Value. Those fields must be edited per row.
 
-### **Table Columns**
+### Table columns
 
-Below are the most common columns shown on the Real Transport Departures page.
+These are the most common columns on this page.
 
-| Column                 | Description                                                                                                                                                                          |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Departure**          | The planned departure date                                                                                                                                                           |
-| **Flight Change Type** | Option for selecting a predefined flight change scenario                                                                                                                             |
-| **Day**                | Weekday of the departure                                                                                                                                                             |
-| **Departure Time**     | Planned time of departure                                                                                                                                                            |
-| **Arrival Time**       | Planned time of arrival                                                                                                                                                              |
-| **Airline**            | Airline operating the flight                                                                                                                                                         |
-| **Flight No**          | Flight number (editable)                                                                                                                                                             |
-| **Transport Supplier** | Supplier configuration                                                                                                                                                               |
-| **Seats**              | The total number of seats. Allotment seats are SEATS minus (GUARANTEED + PRO RATE)                                                                                                   |
-| **Allotment**          | Number of Allotments seats                                                                                                                                                           |
-| **Guaranteed**         | Guaranteed seats                                                                                                                                                                     |
-| **Pro Rate**           | Number of Pro Rate seats                                                                                                                                                             |
-| **Allotment**          | Cost for one allotment seat                                                                                                                                                          |
-| **Guaranteed**         | Cost for one Guaranteed seat                                                                                                                                                         |
-| **Pro Rate**           | Cost for one Pro Rate                                                                                                                                                                |
-| **Tax**                | Tax amount per passenger                                                                                                                                                             |
-| **Load Factor (%)**    | Expected load factor, used for cost calculation                                                                                                                                      |
-| **Booked**             | Number of booked passengers                                                                                                                                                          |
-| **PNR**                | PNR code support                                                                                                                                                                     |
-| **Booked Attached**    | Number of booked seats in the parent transport. If checked, the departure is linked to the parent transport                                                                          |
-| **Stop Sale**          | If checked, then the departure is no longer available for sale. Existing bookings on the departure are not affected. If STOP is checked, then prevent further bookings on this date. |
+| Column                 | Description                                                                                   |
+| ---------------------- | --------------------------------------------------------------------------------------------- |
+| **Departure**          | The planned departure date                                                                    |
+| **Flight Change Type** | Option for selecting a predefined flight change scenario                                      |
+| **Day**                | Weekday of the departure                                                                      |
+| **Departure Time**     | Planned time of departure                                                                     |
+| **Arrival Time**       | Planned time of arrival                                                                       |
+| **Airline**            | Airline operating the flight                                                                  |
+| **Flight No**          | Flight number (editable)                                                                      |
+| **Transport Supplier** | Supplier configuration                                                                        |
+| **Seats**              | Total seats on the departure. Allotment seats = Seats − (Guaranteed + Pro Rate).              |
+| **Allotment (seats)**  | Seats available as allotment seats                                                            |
+| **Guaranteed (seats)** | Seats you have guaranteed with the supplier                                                   |
+| **Pro Rate (seats)**   | Seats handled as pro rate seats                                                               |
+| **Allotment cost**     | Cost per allotment seat                                                                       |
+| **Guaranteed cost**    | Cost per guaranteed seat                                                                      |
+| **Pro Rate cost**      | Cost per pro rate seat                                                                        |
+| **Tax**                | Tax amount per passenger                                                                      |
+| **Load Factor (%)**    | Expected percentage of seats that will be filled                                              |
+| **Booked**             | Number of booked passengers                                                                   |
+| **PNR**                | Booking reference (PNR), if used for this departure                                           |
+| **Booked Attached**    | If enabled, the departure is linked to the parent transport                                   |
+| **Stop Sale**          | If enabled, no new bookings can be made on this departure. Existing bookings are not changed. |
 
-Each field is inline editable unless specified as calculated (e.g SEATS).
+You can edit most fields directly in the table. Some fields may be locked.
 
-### **Sorting**
+### Sorting
 
 Columns marked as **sortable** can be clicked to reorder departures:
 
@@ -127,31 +125,62 @@ Useful for:
 * Sorting by date
 * Finding high load factor departures
 
-## **Create  Departures**
+### Create departures
 
-1. Click **Create** to add a new departure line.&#x20;
-2.  Fill in the following fields:
+1. Click **Create** to add a new departure.
+2.  Fill in the fields below. Fields marked with `*` are required.
 
-    * **Type** – Select the type of departure (Daily / Weekly).
+    * **Type** – Select **Daily** or **Weekly**.
 
     <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-    * Frequency - If Daily is selected, insert the Every N days
-
-    &#x20;                          \- If Weekly is selected, then insert the number of weeks and choose a specific day(s)
-
-    * **Period -** Define the period for departures.
-    * **Seats** – This section manages seat allocation and pricing:
-      * **Guaranteed seats**\* – input for the number of guaranteed seats.
-      * **Guaranteed seat cost**\* – input for the cost for a single guaranteed seat.
-      * **Allotment seats** – input for allotment seats.
-      * **Allotment seat cost** – input for the  cost for a single allotment seat.
-    * **Flight Info** – Set the Airline, Flight number and the Transport supplier
+    * **Frequency**
+      * If **Daily**: set **Every N days**.
+      * If **Weekly**: set **Every N weeks**, then select the weekday(s).
+    * **Period** – Set the date period you want to create departures for.
+    * **Seats and pricing**
+      * **Guaranteed seats** `*` – Number of guaranteed seats.
+      * **Guaranteed seat cost** `*` – Cost per guaranteed seat.
+      * **Allotment seats** – Number of allotment seats.
+      * **Allotment seat cost** – Cost per allotment seat.
+    * **Flight info**
       * **Airline** – Airline operating the flight.
-      * **Flight no**\* – input field for flight number.
-      * **Transport Supplier** – Supplier responsible for the real transport.
-      * **Departure / Arrival Time** – Scheduled times for take-off and landing.
-      * **Add days** – numeric input for adjusting arrival date.
-      * **Class** – input field for class.
-      * Departure time UTC icon - shows information about Departure /Arrival time UTC, and Flight time.
-3. Save the changes.
+      * **Flight no** `*` – Flight number.
+      * **Transport Supplier** – The supplier responsible for the transport.
+      * **Departure / Arrival Time** – Planned take-off and landing times.
+      * **Add days** – Add days to the arrival date (for overnight flights).
+      * **Class** – Travel class, if used.
+      * **Departure time UTC** icon – Shows the UTC times and flight time.
+3. Click **Save** to store the departure.
+
+### FAQ
+
+#### What is the difference between “Send Flight Change” and “Queue Flight Change”?
+
+**Send Flight Change** sends the update right away.
+
+**Queue Flight Change** saves the update and sends it later.
+
+#### What does “Stop Sale” do?
+
+It blocks new bookings on that departure.
+
+It does not cancel existing bookings.
+
+#### How do I update many departures at once?
+
+Select the rows you want to change.
+
+Then use **Change Value** to apply one change to all selected rows.
+
+#### Why can’t I edit some fields?
+
+Some fields may be calculated or controlled by other settings.
+
+If a field is locked, edit the related setup instead.
+
+#### What does “Add days” mean?
+
+It shifts the arrival date forward by the number of days you enter.
+
+Use it for overnight flights where arrival is the next day.
