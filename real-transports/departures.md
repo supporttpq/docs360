@@ -86,29 +86,29 @@ Some columns do not support Change Value. Those fields must be edited per row.
 
 These are the most common columns on this page.
 
-| Column                 | Description                                                                                   |
-| ---------------------- | --------------------------------------------------------------------------------------------- |
-| **Departure**          | The planned departure date                                                                    |
-| **Flight Change Type** | Option for selecting a predefined flight change scenario                                      |
-| **Day**                | Weekday of the departure                                                                      |
-| **Departure Time**     | Planned time of departure                                                                     |
-| **Arrival Time**       | Planned time of arrival                                                                       |
-| **Airline**            | Airline operating the flight                                                                  |
-| **Flight No**          | Flight number (editable)                                                                      |
-| **Transport Supplier** | Supplier configuration                                                                        |
-| **Seats**              | Total seats on the departure. Allotment seats = Seats − (Guaranteed + Pro Rate).              |
-| **Allotment (seats)**  | Seats available as allotment seats                                                            |
-| **Guaranteed (seats)** | Seats you have guaranteed with the supplier                                                   |
-| **Pro Rate (seats)**   | Seats handled as pro rate seats                                                               |
-| **Allotment cost**     | Cost per allotment seat                                                                       |
-| **Guaranteed cost**    | Cost per guaranteed seat                                                                      |
-| **Pro Rate cost**      | Cost per pro rate seat                                                                        |
-| **Tax**                | Tax amount per passenger                                                                      |
-| **Load Factor (%)**    | Expected percentage of seats that will be filled                                              |
-| **Booked**             | Number of booked passengers                                                                   |
-| **PNR**                | Booking reference (PNR), if used for this departure                                           |
-| **Booked Attached**    | If enabled, the departure is linked to the parent transport                                   |
-| **Stop Sale**          | If enabled, no new bookings can be made on this departure. Existing bookings are not changed. |
+| Column                 | Description                                                                                                          |
+| ---------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| **Departure**          | The planned departure date                                                                                           |
+| **Flight Change Type** | Option for selecting a predefined flight change scenario                                                             |
+| **Day**                | Weekday of the departure                                                                                             |
+| **Departure Time**     | Planned time of departure                                                                                            |
+| **Arrival Time**       | Planned time of arrival                                                                                              |
+| **Airline**            | Airline operating the flight                                                                                         |
+| **Flight No**          | Flight number (editable)                                                                                             |
+| **Transport Supplier** | Supplier configuration                                                                                               |
+| **Seats**              | Total seats on the departure. Allotment seats = Seats − (Guaranteed + Pro Rate).                                     |
+| **Allotment (seats)**  | Seats available as allotment seats                                                                                   |
+| **Guaranteed (seats)** | Seats you have guaranteed with the supplier                                                                          |
+| **Pro Rate (seats)**   | Seats handled as pro rate seats                                                                                      |
+| **Allotment cost**     | Cost per allotment seat                                                                                              |
+| **Guaranteed cost**    | Cost per guaranteed seat                                                                                             |
+| **Pro Rate cost**      | Cost per pro rate seat                                                                                               |
+| **Tax**                | Tax amount per passenger                                                                                             |
+| **Load Factor (%)**    | Expected percentage of seats that will be filled                                                                     |
+| **Booked**             | Number of booked passengers                                                                                          |
+| **PNR**                | Booking reference (PNR), if used for this departure                                                                  |
+| **Booked Attached**    | If enabled, the departure is linked to the parent transport                                                          |
+| **Stop Sale**          | If checked, then the departure is no longer available for sale. Existing bookings on the departure are not affected. |
 
 You can edit most fields directly in the table. Some fields may be locked.
 
@@ -163,7 +163,7 @@ Useful for:
 
 #### What does “Stop Sale” do?
 
-It blocks new bookings on that departure.
+It blocks the departure, is no longer available for sale
 
 It does not cancel existing bookings.
 
