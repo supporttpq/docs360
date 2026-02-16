@@ -13,7 +13,7 @@ There are **three types of intervals** that determine when a price is applied:
 
 Each interval defines the **conditions** under which the price is valid.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ### Purpose
 
@@ -32,7 +32,7 @@ This helps:
 
 1. **Open the Extra** from the list in Tourpaq Office.
 2. Navigate to the **Prices** section.
-3. Click **Create** or **Edit** to configure a new price rule.
+3. Click **Create** to configure a new price rule.
 4.  Fill in the following fields:
 
     | Field                        | Description                                                                                                               |
@@ -66,11 +66,11 @@ Tourpaq supports defining different prices per brand.
 * If only a **default price** is set, it applies to all agencies.
 * If a **brand-specific price** is added, that price will apply only to the selected agency or brand.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 * Editing prices is available only for the **default** configuration; for agency-specific prices, only **Price**, **Group Price**, **Margin**, and **Max Cost** can be updated.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 To enable price-per-brand functionality, please contact **Tourpaq Support**.
 
@@ -83,24 +83,23 @@ Prices can be split by:
 * **Departure Date**
 * **Booking Date**
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 #### **How to Split a Price:**
 
 1. Click on the **Split** button below the price lines.
-2. Choose how many splits you want to create.
+2.  Choose how many splits you want to create.
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+3.  Adjust the date or age intervals as needed:
 
-3. Adjust the date or age intervals as needed:
-   * When splitting by **Departure** or **Booking Date**, set the **Date From** of the first line to the original start date and the **Date To** to the new stop date.
-   * The **second line** will automatically use the new **Date From** and original **Date To**.
-   * It’s recommended to use the **current day** or **next day** as the stop date for the first line.
+    * When splitting by **Departure** or **Booking Date**, set the **Date From** of the first line to the original start date and the **Date To** to the new stop date.
+    * The **second line** will automatically use the new **Date From** and original **Date To**.
+    * It’s recommended to use the **current day** or **next day** as the stop date for the first line.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
-
+    <figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 4. Click **Split** to confirm.
 
 After splitting, the system will display separate price lines for each new interval.
 
-<figure><img src="../../.gitbook/assets/image (6) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
