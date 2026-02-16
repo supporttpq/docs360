@@ -14,7 +14,7 @@ Use **Legs** to define how the itinerary is built.
 
 In the "Choose provider" menu, there is the possibility of making 3 different configurations depending on the type of provider chosen, as follows:
 
-**Own database -** If on the tabs of legs on the tabs of choose providers you have own database checked, in the general tab -> configure, only the test and real transport code fields will be displayed.
+**Own Database -** If on the tabs of legs on the tabs of choose providers you have own database checked, in the general tab -> configure, only the test and real transport code fields will be displayed.
 
 <figure><img src="../../.gitbook/assets/image (629).png" alt=""><figcaption></figcaption></figure>
 
