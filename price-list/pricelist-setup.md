@@ -61,7 +61,7 @@ The **Copy Price List** feature allows users to duplicate price lists **within t
 | **Transports**     | Filters by available transport options (e.g., flights, buses).                                         |
 | **Transport type** | Select transport categories (e.g., all seats, specific seat types).                                    |
 | **Hotels**         | Filters by hotel(s).                                                                                   |
-| **Allotment type** | Defines room allotment conditions (e.g., “All rooms”).                                                 |
+| **Allotment type** | Choose between the allotment types: All rooms, Allotment, orGuarantee/Secured.                         |
 | **Room**           | Filters specific room categories.                                                                      |
 | **Fix quotas**     | Optionally restricts the view to fixed quota contracts.                                                |
 | **Display names**  | Toggles whether to show hotel names.                                                                   |
@@ -74,7 +74,7 @@ A price list is blank when first created.
 
 The fields must then be filled manually by the user with the amounts calculated or required. Some fields are set to autofill based on a formula that takes into consideration the amounts already inserted. In the end, a price list should look like this:
 
-<figure><img src="../.gitbook/assets/image (40) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (632).png" alt=""><figcaption></figcaption></figure>
 
 Fields:
 
@@ -82,45 +82,102 @@ Fields:
   * Show/Hide History (details the changes that have been made to that price line)
   * Reset this pricelist in API v4.1
   * Recalculate the Free Hotel Allotment value
+* PLTA ID - pricelist unique identifier
 * Hotel (autofill field)
 * Room (autofill field)
 * Dept date (autofill field, departure date for bookings made with this room)
+* Stays - stay days
 * FHA (Free Hotel Allotment, autofill field, if the value is 0, but the hotel has allotments, please use Recalculate the Free Hotel Allotment value)
 * FTA (Free Transport Allotment, autofill field)
 * P1 - P4 (price fields for intervals, filled by user)
 * PP1 - PP4 {basic profit forecast of price per interval for 1 pax, PP1 = P1 - (transport + room costs) autofill field}
 * POWO (price for one way out transports, filled by user)
 * POWH (price for one way home transports, filled by user)
-* D1-D4 (discount price for 1 week, overwrites P1 in web booking, filled by user)
-* PD1-PD4 {basic profit forecast of discount price per interval for 1 pax, PD1 `=` D1 - (transport + room costs), autofill field}
-* DPOWO (discount price for one way out transports, autofill field)
-* DPOWH (discount price for one way home transports, autofill field)
 * G1 - G4 (group price, user filled field)
 * PG1 - PG4 {basic profit forecast of group price per interval for 1 pax, PG1 `=` G1 - (transport + hotel cost), autofill field}
 * GPOWO (group price for one way out transports, filled by user)
 * GPOWH (group price for one way home transports, filled by user)
-* CH1-CH4 (child price, acts as an extra bed discount, overrides extra bed discount)
+* D1-D4 (discount price for 1 week, overwrites P1 in web booking, filled by user)
+* PD1-PD4 {basic profit forecast of discount price per interval for 1 pax, PD1 `=` D1 - (transport + room costs), autofill field}
+* DPOWO (discount price for one way out transports, autofill field)
+* DPOWH (discount price for one way home transports, autofill field)
+* CH1P1-CH1P4 (child price per interval 1-4)
+* PCH1P1 - PCH2P1 - Child price 1/2+ profit forecast for P1
 * CH1% - CH4% (calculates the CH based on a percentage from P prices)
 * DEBD check box - Disable extra bed discount - if checked, disables extra bed discount for all price types: P1-P4 and D1-D4
-* DEBDD check box (Disable extra bed discount for discount price - if checked, disables extra bed discount only for D1-D4 prices)
-* CHOWO (child price for one way out)
-* CHOWH (child price for one way home)
+* DEBDPD check box (Disable extra bed discount for discount price - if checked, disables extra bed discount only for D1-D4 prices)
+* CPOWO (child price for one way out)
+* CPOWH (child price for one way home)
+* CPM1- CPM4 - Child profit margin interval 1-4
 * M1-M4 (maximum rooms per transport)
 * PM1-PM4 (profit margin for P prices)
 * PM% (transforms the value from PM in percentage)
+* PA1-PA4 - price adjustment interval 1
+* C1PA - Child 1 price adjustment
+* C2PA - Child 2+ price adjustment
 * WL checkbox (waitlist behavior)
 * HD checkbox (hot deal list)
+* FB - facebook checkbox
 * NFIS checkbox (not for internet sale)
-* P CH check box (used to change - increase/decrease - prices)
-* PL. R. RULE check box (if checked, enables price regulation rules)
+* 1W - Booked one week before&#x20;
+* 2W - Booked two weeks before
 * PL. REG. RULE. (select between price regulation rules)
 * TR R Rule (transport regulation rule)
 * LOWP1-LOWP4 (lowest regulation price)
-* GR
-* TP (transport price)
+* GR - Guarantee room
+* GS - Guarantee seats
+* TP - transport price (Value here changes Extra Bed discount as: (P1-TP)\*X%=Ex Bed Discount) (only for percent rules)
 * TAG CH (tag change)
 * TAG
 * STATUS
+* HNI1 - HNI4 - Hotel name interval 1-4
+
+{% hint style="info" %}
+### Room Type Display Logic for Allotment Filter
+
+#### Principle
+
+The type shown in filters must reflect the **effective allotment that will be consumed next**, not only the technical configuration.
+
+This ensures that the filter behavior matches operational reality and user expectations.
+
+### Functional Rule
+
+#### 1. Guarantee / Secured Allotment Has Priority
+
+If both **Guarantee/Secured allotment** and **Allotment** exist for the same room type, the system consumes:
+
+1. Guarantee/Secured allotment first
+2. Allotment after guarantee is exhausted
+
+#### 2. Display Rule in Filters
+
+**Case A: Guarantee Allotment Still Available**
+
+If Guarantee/Secured allotment > 0:
+
+* The room type is treated as **Guarantee**
+* It shall NOT appear when filtering by **Allotment**
+* It shall appear when filtering by **Guarantee**
+
+Reason: The next booking will consume guarantee allotment.
+
+**Case B: Guarantee Allotment Fully Consumed**
+
+If Guarantee/Secured allotment = 0 and Allotment > 0:
+
+* The room type is treated as **Allotment**
+* It shall appear when filtering by **Allotment**
+* It shall no longer be considered Guarantee
+
+Reason: The next booking will consume allotment.
+
+### Rationale
+
+The filter must reflect the **current effective selling logic**, not just the configured allotment types.
+
+This ensures that users selecting the Allotment filter only see rooms that will actually consume allotment.
+{% endhint %}
 
 #### Tabs <a href="#tabs" id="tabs"></a>
 
@@ -134,7 +191,7 @@ Below the filters are the following tabs:
 
 **Column filters -** Allows the user to filter among the columns shown in prices. All unchecked filters will be displayed in **PRICES**
 
-<figure><img src="../.gitbook/assets/image (43) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (633).png" alt=""><figcaption></figcaption></figure>
 
 Filter categories:
 
@@ -164,23 +221,11 @@ Filter categories:
   * Facebook
 * OW Prices - display one way price filters
 
-#### Children prices as a percentage <a href="#children-prices-as-a-percentage" id="children-prices-as-a-percentage"></a>
-
-Along with fixed children's prices, the system allows the user to calculate these prices based on a percentage of the adult price. This will make price updates much easier. Simply insert a value in the **CH1 %** column, and that value will be converted into a percentage of the amount from **P1**.
-
-<figure><img src="../.gitbook/assets/image (44) (1).png" alt=""><figcaption></figcaption></figure>
-
-> A passenger will get the Child Price ONLY if:
-
-* Passenger title is CHD
-* Passenger's age is validated against the Child Price age under the Hotel
-* Passenger occupies an extra bed
-
 #### Alternative hotel name <a href="#alternative-hotel-name" id="alternative-hotel-name"></a>
 
 A handy improvement is being able to customize hotel name for specific departures.
 
-<figure><img src="../.gitbook/assets/image (45) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (634).png" alt=""><figcaption></figcaption></figure>
 
 This alternative name will also appear on the ticket.
 
