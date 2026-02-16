@@ -12,17 +12,23 @@ Use **Legs** to define how the itinerary is built.
 
 <figure><img src="../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-*   if on the tabs of legs on the tabs of choose providers you have owndatabase checked, in the general tab-> configure only the test and real transport code fields will be displayed
+In the "Choose provider" menu, there is the possibility of making 3 different configurations depending on the type of provider chosen, as follows:
 
-    <figure><img src="../../.gitbook/assets/image (625).png" alt=""><figcaption></figcaption></figure>
-*   if on choose provider we have only external api (amadeus, paxport, railhub or travelport) then we will display all the fields except real transport code&#x20;
+**Own database -** If on the tabs of legs on the tabs of choose providers you have own database checked, in the general tab -> configure, only the test and real transport code fields will be displayed.
 
-    <figure><img src="../../.gitbook/assets/image (626).png" alt=""><figcaption></figcaption></figure>
-*   and in the last case if we have both external api and owndatabase on the chosen provider then all the fields will be displayed&#x20;
+<figure><img src="../../.gitbook/assets/image (629).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../.gitbook/assets/image (627).png" alt=""><figcaption></figcaption></figure>
+**External API** - If an External API is selected in the Choose provider tab (Amadeus, Paxport, Railhub, or Travelport), then all fields are displayed except the Real Transport code.&#x20;
 
-For each leg, you define **filters**. The filters apply to both **GDS** and **real transports**.
+<figure><img src="../../.gitbook/assets/image (630).png" alt=""><figcaption></figcaption></figure>
+
+**Own Database + External API** - If we have both an external API and Own Database on the chosen provider, then all the fields will be displayed.
+
+<figure><img src="../../.gitbook/assets/image (631).png" alt=""><figcaption></figcaption></figure>
+
+<img src="../../.gitbook/assets/file.excalidraw.svg" alt="" class="gitbook-drawing">
+
+For each leg, you define **filters**. The filters apply to **GDS** **transports**.
 
 * Click **Search** to preview which options match your filters.
 
