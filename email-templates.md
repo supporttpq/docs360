@@ -552,14 +552,6 @@ Sent when a passenger completes a full individual payment.
 
 Sent when a deposit is paid through individual payment.
 
-This template supports special placeholders only used here:
-
-* `[ConfirmationCode]`: confirmation code from APCOA
-* `[CarRegistration]`: car license plate
-* `[Product]`: product name
-* `[EntryDateTime]`: departure date minus 2 hours
-* `[ExitDateTime]`: departure date plus 1 hour
-
 #### 56–63. Flight change templates
 
 Different flight change templates can be used based on the type of change:
