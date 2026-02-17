@@ -47,6 +47,28 @@ Select the **Brand** under which the booking should be created.
 
 Insert the customer’s **mobile number** to identify an existing customer or create a new one.
 
+When a new customer is created, and in Brands settings:
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+* "Mandatory DOB in Passenger Details in BackOffice" is enabled → Date of Birth is required.
+* "Mandatory email in Passenger Details in BackOffice" is enabled → email field is required.
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+* Booking cannot proceed until required fields are completed.
+
+When:
+
+* A Date of Birth is entered in Customer Details
+* And the booking is saved
+
+Then:
+
+*   The DOB is automatically inserted into the lead passenger row in the Pax grid.&#x20;
+
+    <figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
 ***
 
 #### Step 3 – Passengers
@@ -215,45 +237,57 @@ After the user selects **Take Allotment**, the system updates the **Total Amount
 <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Edit **Passenger details**:
-   *   Gender, First Name, Last Name, Age.
 
-       *   Add **Extras**:
+* Gender, First Name, Last Name, Age.&#x20;
 
-           * Per passenger, or use the yellow **C** icon to apply extras to all eligible passengers.
-             * If the "Order extras in the booking window" option is activated in the system setup, the extras will be sorted according to the Category Order value.
+{% hint style="info" %}
+When:
 
-           <figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+* A Date of Birth is entered in Customer Details
+* And the booking is saved
 
+Then:
 
+* The DOB is automatically inserted into the lead passenger row in the Pax grid.
+{% endhint %}
 
-           #### Sorting rules
+* Add **Extras**:
+  * Per passenger, or use the yellow **C** icon to apply extras to all eligible passengers.
+    * If the "Order extras in the booking window" option is activated in the system setup, the extras will be sorted according to the Category Order value.
 
-           Categories are sorted as follows:
-
-           1. Categories with **Category order booking < 10**\
-              Displayed before TRANSPORT
-           2. Categories with **Category order booking between 10 and 19**\
-              Displayed before HOTEL and ROOM
-           3. Categories with **Category order booking ≥ 20**\
-              Displayed after HOTEL and ROOM
-           4. Categories **without a Category order booking value**\
-              Displayed last
-           5. Categories with the **same order number**\
-              Sorted alphabetically&#x20;
-
-           &#x20;  &#x20;
-
-           * &#x20;If the "Order extras in the booking window" option is not enabled in the system setup, the new extras will be arranged according to the old ordering :&#x20;
-
-       <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
-2. Add **Discounts/Supplements**:
+
+#### Sorting rules
+
+Categories are sorted as follows:
+
+1. Categories with **Category order booking < 10**\
+   Displayed before TRANSPORT
+2. Categories with **Category order booking between 10 and 19**\
+   Displayed before HOTEL and ROOM
+3. Categories with **Category order booking ≥ 20**\
+   Displayed after HOTEL and ROOM
+4. Categories **without a Category order booking value**\
+   Displayed last
+5. Categories with the **same order number**\
+   Sorted alphabetically&#x20;
+
+&#x20;  &#x20;
+
+* &#x20;If the "Order extras in the booking window" option is not enabled in the system setup, the new extras will be arranged according to the old ordering :&#x20;
+
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+
+
+1. Add **Discounts/Supplements**:
    * Click **Show/Hide Discount/Supplements**.
    * Click **Add Discount/Supplement**.
    * Select available options for one or all passengers.
    * Multiple discounts or supplements can be added simultaneously.
-3. Click **Save Passenger** to save changes.
+2. Click **Save Passenger** to save changes.
 
 {% hint style="success" %}
 The **Total Amount** updates instantly whenever the user modifies any passenger-related information:
@@ -321,7 +355,7 @@ The **Total Profit** is displayed when expanding the green area that shows the T
 
 The **Cancel passenger or booking** button allows users to cancel an entire booking or remove individual passengers from a booking, depending on the situation. It is located at the bottom-right corner of the **Booking → Overview → Passengers** section.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Overview**
 
@@ -351,7 +385,7 @@ Use this button when:
 
 Click **Cancel passenger or booking** in the bottom-right corner.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **3. Choose the cancellation type**
 
@@ -360,7 +394,7 @@ A dialog will appear asking you to choose between:
 * **Cancel Passenger**
 * **Cancel Entire Booking**
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The available options depend on the structure of the booking.
 
@@ -371,7 +405,7 @@ After confirming, Tourpaq:
 * Removes all services connected to the cancelled passenger(s).
 * Recalculates pricing.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Updates allotment, transport seats, extras, and commissions.
   * The allotment is **not** updated automatically. If the number of passengers in the booking is not manually reduced, Tourpaq will automatically insert a **TBA passenger** to occupy the seat or room left vacant by the cancelled guest. This ensures the booking maintains its original capacity, and the cancelled space is not released back into the available allotment.
