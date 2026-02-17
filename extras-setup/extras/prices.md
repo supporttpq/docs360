@@ -13,7 +13,7 @@ There are **three types of intervals** that determine when a price is applied:
 
 Each interval defines the **conditions** under which the price is valid.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Purpose
 
@@ -66,13 +66,17 @@ Tourpaq supports defining different prices per brand.
 * If only a **default price** is set, it applies to all agencies.
 * If a **brand-specific price** is added, that price will apply only to the selected agency or brand.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* Editing prices is available only for the **default** configuration; for agency-specific prices, only **Price**, **Group Price**, **Margin**, and **Max Cost** can be updated.
+* Editing prices is available only for the **default** configuration; for agency-specific prices, only **Price**, **Group Price**, **Margin**, and **Max Cost** can be updated. The system supports editing prices across multiple rows within the same view and saving all changes in a single operation.
 
 <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 To enable price-per-brand functionality, please contact **Tourpaq Support**.
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+To optimize production workflow, users can perform multiple price corrections or updates at the same time and save everything with one click, instead of saving each row individually.
 
 #### **Split prices**
 

@@ -61,7 +61,7 @@ The **Copy Price List** feature allows users to duplicate price lists **within t
 | **Transports**     | Filters by available transport options (e.g., flights, buses).                                         |
 | **Transport type** | Select transport categories (e.g., all seats, specific seat types).                                    |
 | **Hotels**         | Filters by hotel(s).                                                                                   |
-| **Allotment type** | Choose between the allotment types: All rooms, Allotment, orGuarantee/Secured.                         |
+| **Allotment type** | Choose between the allotment types: All rooms, Allotment, or Guarantee/Secured.                        |
 | **Room**           | Filters specific room categories.                                                                      |
 | **Fix quotas**     | Optionally restricts the view to fixed quota contracts.                                                |
 | **Display names**  | Toggles whether to show hotel names.                                                                   |
