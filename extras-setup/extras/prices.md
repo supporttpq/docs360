@@ -68,11 +68,13 @@ Tourpaq supports defining different prices per brand.
 
 <figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* Editing prices is available only for the **default** configuration; for agency-specific prices, only **Price**, **Group Price**, **Margin**, and **Max Cost** can be updated. The system supports editing prices across multiple rows within the same view and saving all changes in a single operation.
+* Editing prices is available only for the **default** configuration; for agency-specific prices, only **Price**, **Group Price**, **Margin**, and **Max Cost** can be updated.&#x20;
+
+To enable price-per-brand functionality, please contact **Tourpaq Support**.
 
 <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-To enable price-per-brand functionality, please contact **Tourpaq Support**.
+* The system supports editing prices across multiple rows within the same view and saving all changes in a single operation.
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
