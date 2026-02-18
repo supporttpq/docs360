@@ -20,7 +20,7 @@ Incorrect configuration can result in overlapping booking numbers or inconsisten
 
 ### Instructions
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **1. Access the Section**
 
@@ -190,7 +190,7 @@ Uploaded images are automatically applied to all tickets for the selected brand.
 
 ### Insurance
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The **Insurance** section under Brands > General controls the integration between Tourpaq and the selected insurance provider.
 

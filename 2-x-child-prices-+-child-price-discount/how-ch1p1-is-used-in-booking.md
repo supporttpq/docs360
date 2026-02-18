@@ -42,15 +42,14 @@ To confirm that the booking values align with the pricing setup:
   * **CHILD 2 PRICES**
   * **CHILD 1 DISCOUNTS**
   * **CHILD 2 DISCOUNTS**
-  * **CHILD PRICES %**
   * **CHILD PROFIT MARGIN**
   * **ADJUSTMENTS**
 
-<figure><img src="../.gitbook/assets/image (454).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-The displayed table should now include columns such as **CH1P1**, **CH2P1**, **CH1D1**, **CH2D1**, **CH1%**, **CMP1**, and **PA1**, representing the child price, discounts, percentages, and related adjustments.
+The displayed table should now include columns such as **CH1P1**, **CH2P1**, **CH1D1**, **CH2D1**, **CMP1**, and **CH1PA, CH2PA**, representing the child price, discounts, percentages, and related adjustments.
 
-<figure><img src="../.gitbook/assets/image (455).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -67,7 +66,7 @@ Ex: Total Amount = (5000 +306 (insurnace) + 100 (Pickup point) ) x 1 (no adults)
 Where:
 
 * **P1** represents the base price per adult.
-* **CH1P1** represents the price applied for the first child.
+* **CH1P1** represents the price applied for the first child on the interval 1.
 
 This formula ensures that the system accurately reflects the pricing breakdown between adult and child passengers.
 
