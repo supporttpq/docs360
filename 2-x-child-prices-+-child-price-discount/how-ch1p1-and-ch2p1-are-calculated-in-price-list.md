@@ -12,7 +12,8 @@ The feature allows administrators to view detailed child pricing information and
 Within the **Price List**, administrators can customize the displayed columns to include child-related pricing data.\
 From the column selection menu (three-dot icon in the table header), users can enable the following columns:
 
-* **CHILD 1 PRICES** and **CHILD 2 PRICES**
+* **CHILD 1 PRICES** and **CHILD 2+ PRICES**
+* **CHILD PROFIT PRICES**&#x20;
 * **CHILD 1 DISCOUNTS** and **CHILD 2 DISCOUNTS**
 * **CHILD PROFIT MARGIN**
 * **ADJUSTMENTS**
