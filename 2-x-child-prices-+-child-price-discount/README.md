@@ -29,20 +29,25 @@ When an administrator logs in and accesses the **Price List** page, the standard
 By using the column visibility menu (available through the three-dot icon on the table header), administrators can enable the following options:
 
 * **CHILD PRICES**
-* **CHILD PRICES %**
+* **CHILD PROFIT PRICES**
 * **CHILD PROFIT MARGIN**
+* **CHILD ADJUSTMENTS**
+* **CHILD DISCOUNTS**
+* **CHILD PROFIT DISCOUNT PRICES**
 
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (449).png" alt=""><figcaption></figcaption></figure></div>
+<figure><img src="../.gitbook/assets/image (635).png" alt=""><figcaption></figcaption></figure>
 
 Once selected, the Price List table displays new columns that correspond to child-related pricing data:
 
 * **Price columns:** CH1P1, CH2P1
-* **Percentage columns:** CH1%,
+* **Adjustment columns:** CH1PA, CH2PA
 * **Profit margin columns:** CPM1
+* **Discount columns:** CH1D1, CH2D1
+* Profit discount prices columns: CH1PD1, CH2PD1
 
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (450).png" alt=""><figcaption></figcaption></figure></div>
+<figure><img src="../.gitbook/assets/image (637).png" alt=""><figcaption></figcaption></figure>
 
-These columns provide detailed insight into how child prices and profit margins are calculated and applied. Both child prices share the same profit margin, ensuring consistent calculations across different occupancy configurations.
+These columns provide detailed insight into how child prices and profit margins are calculated and applied.&#x20;
 
 ***
 

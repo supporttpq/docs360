@@ -14,7 +14,6 @@ From the column selection menu (three-dot icon in the table header), users can e
 
 * **CHILD 1 PRICES** and **CHILD 2 PRICES**
 * **CHILD 1 DISCOUNTS** and **CHILD 2 DISCOUNTS**
-* **CHILD PRICES %**
 * **CHILD PROFIT MARGIN**
 * **ADJUSTMENTS**
 
