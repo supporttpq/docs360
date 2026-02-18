@@ -16,7 +16,7 @@ When the booking is created, the system automatically references the active pric
 * **P1** – Price per adult
 * **CH1P1**, **CH2P1** – Child prices for the first and second extra beds
 * **CH1D1**, **CH2D1** – Associated discounts
-* **CH1%**, **CMP1**, **PA1** – Child price percentage, profit margin, and adjustment values
+* **CMP1**, **PA1** – Child price percentage, profit margin, and adjustment values
 
 The platform ensures that these pricing components are used consistently in both the booking calculation and the price list view, maintaining transparent pricing alignment.
 
