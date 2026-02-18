@@ -16,17 +16,17 @@ From the column selection menu (three-dot icon in the table header), users can e
 * **CHILD PROFIT PRICES**&#x20;
 * **CHILD 1 DISCOUNTS** and **CHILD 2 DISCOUNTS**
 * **CHILD PROFIT MARGIN**
-* **ADJUSTMENTS**
+* **CHILD ADJUSTMENTS**
 
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (447).png" alt=""><figcaption></figcaption></figure></div>
+<figure><img src="../.gitbook/assets/image (640).png" alt=""><figcaption></figcaption></figure>
 
 When activated, the table will display a series of child pricing columns, including:\
-**CH1P1**, **CH2P1**, **CH1D1**, **CH2D1**, **CH1%**, **CMP1**, and **PA1**.
+**CH1P1**, **CH2P1**, **CH1D1**, **CH2D1**, , **CPM1, PCH1P1, PCH2P1, CH1PD1, CH2PD1, CH1PA, CH2PA.**
 
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (448).png" alt=""><figcaption></figcaption></figure></div>
+<figure><img src="../.gitbook/assets/image (641).png" alt=""><figcaption></figcaption></figure>
 
 \
-These columns represent price values, applied discounts, percentage-based values, profit margins, and adjustments relevant to the selected room type and travel package.
+These columns represent price values, applied discounts, profit margins, and adjustments relevant to the selected room type and travel package.
 
 ***
 
@@ -38,7 +38,7 @@ The column **CH1P1** represents the calculated price for the first child and fol
 
 **CH1P1 = (Room Cost from the hotel × Number of nights) + CMP1 + Transport Cost**
 
-This ensures the child price reflects the total room cost across the stay period, combined with the applied profit margin and any associated transport cost.
+This ensures the child's price reflects the total room cost across the stay period, combined with the applied profit margin and any associated transport cost.
 
 **CH2P1 Calculation**
 
