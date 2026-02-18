@@ -40,6 +40,44 @@ The column **CH1P1** represents the calculated price for the first child and fol
 
 This ensures the child's price reflects the total room cost across the stay period, combined with the applied profit margin and any associated transport cost.
 
+Example:
+
+Room cost = 50 Euro /pax/night = 373.5 DKK /pax/night&#x20;
+
+<figure><img src="../.gitbook/assets/image (642).png" alt=""><figcaption></figcaption></figure>
+
+Number of nights  = 7
+
+CPM1 = 100 DKK&#x20;
+
+<figure><img src="../.gitbook/assets/image (643).png" alt=""><figcaption></figcaption></figure>
+
+Transport cost = 13094 DKK&#x20;
+
+<figure><img src="../.gitbook/assets/image (644).png" alt=""><figcaption></figcaption></figure>
+
+**CH1P1 = (Room Cost from the hotel × Number of nights) + CMP1 + Transport Cost = (373.5 \* 7) + 100 + 13094 = 15849 DKK**
+
+If child adjusment it is used (CH1PA),  the CH1P1 it will be calculate with the same formula, but it will be added the child adjusment. This field accept both positive and negative value:
+
+* Positive Adjustment for CH1PA
+
+**CH1P1 = (Room Cost from the hotel × Number of nights) + CMP1 + Transport Cost + CH1PA**&#x20;
+
+<figure><img src="../.gitbook/assets/image (645).png" alt=""><figcaption></figcaption></figure>
+
+Child prices (CH1P1,CH1P2,CH1P1, CH2P2) are increased with CPA values. CPA triggers costs so will change the prices considering the cost. If there is no cost, then PA have no effect. PM is not mandatory to be set, if PA is set will trigger PMS and will calculate considering PM=0
+
+**Adjustment set to 0** (CPA=0), if the PLTA has no PM set, will be ignored, so the prices will remain the same. Otherwise main price (CH1/2P1) is modified according to cost and PM.
+
+* Negative Adjustment
+
+**CH1P1 = (Room Cost from the hotel × Number of nights) + CMP1 + Transport Cost**&#x20;
+
+**CH1D1 = CH1P1 - CH1PA**
+
+<figure><img src="../.gitbook/assets/image (646).png" alt=""><figcaption></figcaption></figure>
+
 **CH2P1 Calculation**
 
 The column **CH2P1** follows the same calculation logic as CH1P1:
