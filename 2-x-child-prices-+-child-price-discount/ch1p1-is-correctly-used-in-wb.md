@@ -16,6 +16,7 @@ It ensures consistency between the **web booking price** and the **final price d
   * **CH2P1** – Child 2 Price
   * **CH1D1**, **CH2D1** – Child Discounts
   * **CPM1** – Child Profit Margin
+  * **CH1PA, CH2PA** - Child Price Adjustment
 * Access to both the **Web Booking** page and the **Tourpaq App**.
 
 ***
@@ -26,7 +27,7 @@ Access the **Price List** page and search for entries matching a **double room w
 Confirm that all relevant child pricing fields (**CH1P1**, **CH2P1**, **CH1D1**, **CH2D1**, **CPM1**) contain valid values.\
 If **CPM1** is empty, enter the correct value and save.
 
-<figure><img src="../.gitbook/assets/image (459).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (656).png" alt=""><figcaption></figcaption></figure>
 
 Once validated, open the **PLTA ID** in the web booking interface to begin the booking process.
 
@@ -37,22 +38,21 @@ Once validated, open the **PLTA ID** in the web booking interface to begin the b
 Start by adding customer (Rejsebestiller) information, followed by **2 adults and one child** in the **Rejsedeltagere** section.\
 When the prices are initially displayed:
 
-*   Both passengers temporarily reflect the **adult price (P1)**.&#x20;
+* Both passengers temporarily reflect the **adult price (P1)**.&#x20;
 
-    <figure><img src="../.gitbook/assets/image (460).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (652).png" alt=""><figcaption></figcaption></figure>
+
 * The **Rabat** field then applies the corresponding **child discount**, automatically adjusting the total.\
   The discount label clearly identifies it as a **child discount**.
 
 Continue through the booking by selecting **insurance options** (Forsikring, Afbestillingsforsikring) and proceeding to the **Summary (Opsummering)** page.&#x20;
 
-<figure><img src="../.gitbook/assets/image (461).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (654).png" alt=""><figcaption></figcaption></figure>
 
 \
 After confirming and submitting the booking, decline any optional offers to complete the process and generate the **receipt (Kvittering)** page.
 
-<figure><img src="../.gitbook/assets/image (462).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/image (463).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (655).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

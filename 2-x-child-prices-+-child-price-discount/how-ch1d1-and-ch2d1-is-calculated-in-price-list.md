@@ -29,16 +29,15 @@ From the column selection menu, the following options should be enabled:
 * **CHILD 2 PRICES**
 * **CHILD 1 DISCOUNTS**
 * **CHILD 2 DISCOUNTS**
-* **CHILD PRICES %**
 * **CHILD PROFIT MARGIN**
 * **ADJUSTMENTS**
 
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (451).png" alt=""><figcaption></figcaption></figure></div>
+<figure><img src="../.gitbook/assets/image (649).png" alt=""><figcaption></figcaption></figure>
 
 Once enabled, the table displays additional columns such as:\
-**CH1P1**, **CH2P1**, **CH1D1**, **CH2D1**, **CH1%**, **CMP1**, and **PA1**.
+**CH1P1**, **CH2P1**, **CH1D1**, **CH2D1**, **CMP1**, and **CH1PA, CH2PA**
 
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (452).png" alt=""><figcaption></figcaption></figure></div>
+<figure><img src="../.gitbook/assets/image (650).png" alt=""><figcaption></figcaption></figure>
 
 \
 These represent the respective prices, discounts, percentages, profit margins, and applied adjustments for child passengers.
@@ -51,7 +50,9 @@ These represent the respective prices, discounts, percentages, profit margins, a
 
 The **CH1D1** column represents the discount-adjusted value for the first child and is calculated as:
 
-**CH1D1 = (Extra Bed Cost Price from the hotel × Number of nights) - Early Booking Discount + CMP1 + Transport Cost + (-PA1)**
+**CH1D1 = (Extra Bed Cost Price from the hotel × Number of nights) - Early Booking Discount + CMP1 + Transport Cost + (-CH1PA)**
+
+<figure><img src="../.gitbook/assets/image (647).png" alt=""><figcaption></figcaption></figure>
 
 This formula takes into account the total extra bed cost over the entire stay, applies the early booking discount, and factors in the profit margin, transport cost, and any negative or positive price adjustments.
 
@@ -61,7 +62,9 @@ This formula takes into account the total extra bed cost over the entire stay, a
 
 The **CH2D1** column follows a similar structure but applies the second child’s extra bed cost:
 
-**CH2D1 = (Extra Bed Cost Price 2ND from the hotel × Number of nights) - Early Booking Discount + CMP1 + Transport Cost + (-PA1)**
+**CH2D1 = (Extra Bed Cost Price 2ND from the hotel × Number of nights) - Early Booking Discount + CMP1 + Transport Cost + (-CH2PA)**
+
+<figure><img src="../.gitbook/assets/image (648).png" alt=""><figcaption></figcaption></figure>
 
 This ensures that both child discounts are calculated consistently, reflecting their respective extra bed costs and applied pricing rules.
 
