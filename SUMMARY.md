@@ -175,6 +175,7 @@
   * [Discount Extra Beds](hotel/hotel-creation/discount-extra-beds.md)
   * [Extra Beds Costs](hotel/hotel-creation/extra-beds-costs.md)
   * [Hotel Web](hotel/hotel-creation/hotel-web.md)
+  * [Passenger Information](hotel/hotel-creation/passenger-information.md)
   * [Communication](hotel/hotel-creation/communication/README.md)
     * [Hotel reporting](hotel/hotel-creation/communication/hotel-reporting.md)
   * [Special Offer](hotel/hotel-creation/special-offer.md)
