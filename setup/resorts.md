@@ -202,7 +202,7 @@ The purpose of the **Passenger Information** page is to:
 
 #### **Instructions**
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 **Accessing Passenger Information**
 
@@ -235,10 +235,20 @@ The list will display all entries configured for the selected resort.
 In the provided example:
 
 * The resort **CHQ** has one passenger information entry titled **Resort Errata Def**.
-* It applies to stays from **28-10-2025** to **28-11-2025**.
+* It applies to stays from **28-10-2025** to **28-10-2026 and 01-02-2026 to 28-02-2026**
 * The entry is marked as _Acknowledged_, meaning passengers are required to confirm it.
 
-### FAQ
+{% hint style="info" %}
+#### Passenger information allows overlapping periods <a href="#passenger-information-allows-overlapping-periods" id="passenger-information-allows-overlapping-periods"></a>
+
+Ex: If fixed info is made for the entire season (28.10.25 - 28.10.26) - Resort errata Def, and another info is made for a short period (01.02.26 - 28.02.26) - Resort overlapp periods. Even if the periods overlap, the system will allow and displayed both on the ticket.
+{% endhint %}
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+### <sup>FAQ</sup>
 
 <details>
 
