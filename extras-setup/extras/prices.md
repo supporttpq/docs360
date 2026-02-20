@@ -13,7 +13,7 @@ There are **three types of intervals** that determine when a price is applied:
 
 Each interval defines the **conditions** under which the price is valid.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Purpose
 
@@ -66,13 +66,13 @@ Tourpaq supports defining different prices per brand.
 * If only a **default price** is set, it applies to all agencies.
 * If a **brand-specific price** is added, that price will apply only to the selected agency or brand.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Editing prices is available only for the **default** configuration; for agency-specific prices, only **Price**, **Group Price**, **Margin**, and **Max Cost** can be updated.&#x20;
 
 To enable price-per-brand functionality, please contact **Tourpaq Support**.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * The system supports editing prices across multiple rows within the same view and saving all changes in a single operation.
 
@@ -89,7 +89,7 @@ Prices can be split by:
 * **Departure Date**
 * **Booking Date**
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **How to Split a Price:**
 
