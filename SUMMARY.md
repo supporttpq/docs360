@@ -398,6 +398,7 @@
   * [Communication](extras-setup/extras/communication.md)
   * [Notes](extras-setup/extras/notes.md)
   * [Early booking/Stay and pay and Special Early Booking/Stay and pay](extras-setup/extras/early-booking-stay-and-pay-and-special-early-booking-stay-and-pay.md)
+  * [Passenger information](extras-setup/extras/passenger-information.md)
   * [Teetime](extras-setup/extras/teetime.md)
   * [Multiple product selection in product category](extras-setup/extras/multiple-product-selection-in-product-category.md)
   * [Create an extra with stay days functionality and select it in bookings](extras-setup/extras/create-an-extra-with-stay-days-functionality-and-select-it-in-bookings.md)
