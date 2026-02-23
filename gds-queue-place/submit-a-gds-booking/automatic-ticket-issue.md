@@ -27,7 +27,7 @@ By issuing tickets closer to the ticketing time limit, financial flexibility is 
 
 #### Navigation
 
-Setup → System Setup → Transport Providers → Amadeus tab ->Automatic ticket issuing
+Setup → System Setup → Transport Providers → Amadeus tab → Automatic ticket issuing
 
 <figure><img src="../../.gitbook/assets/image (667).png" alt=""><figcaption></figcaption></figure>
 
@@ -46,19 +46,69 @@ When disabled:
 
 ### Operational Flow
 
-1.  Reservation exists in Amadeus.&#x20;
+1.  Reservation exists in Amadeus.
 
     <figure><img src="../../.gitbook/assets/image (663).png" alt=""><figcaption></figcaption></figure>
-2.  The deposit must be paid.&#x20;
+2.  The deposit must be paid.
 
     <figure><img src="../../.gitbook/assets/image (665).png" alt=""><figcaption></figcaption></figure>
-3.  The ticketing deadline is registered.&#x20;
+3.  The ticketing deadline is registered.
 
     <figure><img src="../../.gitbook/assets/image (664).png" alt=""><figcaption></figcaption></figure>
 4. The system runs a daily ticket-issuing service.
 5. If the deadline threshold is met and the booking is eligible:
-   *   The ticket is issued.&#x20;
+   *   The ticket is issued.
 
        <figure><img src="../../.gitbook/assets/image (666).png" alt=""><figcaption></figcaption></figure>
 6. For same-day deadlines after the daily run:
-   * System still issues tickets automatically if paid.
+   * The system still issues tickets automatically if the booking is paid.
+
+### FAQ
+
+<details>
+
+<summary><strong>Which bookings are eligible for automatic ticket issuing?</strong></summary>
+
+Bookings must be handled through **Amadeus** and have a registered ticketing deadline.
+
+The booking must also meet your company’s eligibility rules (for example, deposit paid).
+
+</details>
+
+<details>
+
+<summary><strong>How often does the service run?</strong></summary>
+
+It runs **once per day**.
+
+Ticket issuing is triggered when the deadline threshold is met.
+
+</details>
+
+<details>
+
+<summary><strong>What happens if the deposit is not paid?</strong></summary>
+
+The booking will not be ticketed automatically.
+
+Once the deposit is paid, it becomes eligible for the next run (or same-day handling).
+
+</details>
+
+<details>
+
+<summary><strong>What does “same-day deadlines after the daily run” mean?</strong></summary>
+
+It means a ticketing deadline can occur later the same day, after the scheduled run.
+
+In that case, the system can still issue the ticket automatically when the booking is paid.
+
+</details>
+
+<details>
+
+<summary><strong>Can we still issue tickets manually?</strong></summary>
+
+Yes. Disabling automatic ticket issuing means ticketing must be handled manually.
+
+</details>
