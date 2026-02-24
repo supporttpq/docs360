@@ -24,14 +24,14 @@ Correct configuration ensures consistency between operational setup and customer
 
 Below is a description of each section visible in the Web Customer Center.
 
-<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 1. Party Package
 
 **Purpose**\
 Used to describe what is included in a party package or special themed package.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **What to include**
 
@@ -48,7 +48,7 @@ Displayed in the booking flow when a party package is selected. Helps customers 
 **Purpose**\
 Explains how transfers work for the selected destination or product.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **What to include**
 
@@ -68,7 +68,7 @@ Always verify operational accuracy with the transport setup.
 **Purpose**\
 Describes the standard travel insurance offered in the booking flow.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **What to include**
 
@@ -81,7 +81,7 @@ Describes the standard travel insurance offered in the booking flow.
 **Purpose**\
 Explains the cancellation protection product.
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **What to include**
 
@@ -113,7 +113,7 @@ Encourages upselling and clarifies how excursions are handled.
 **Purpose**\
 Defines instructions regarding pickup locations for transfers or tours.
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 **What to include**
 
@@ -128,7 +128,7 @@ Reduces confusion at arrival or excursion departure.
 
 This section controls how extras are automatically selected during booking.
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 Available options:
 
