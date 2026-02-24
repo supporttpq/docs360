@@ -246,7 +246,7 @@ Ex: If fixed info is made for the entire season (28.10.25 - 28.10.26) - Resort e
 
 <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### <sup>FAQ</sup>
 

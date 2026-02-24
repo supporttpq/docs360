@@ -51,7 +51,7 @@ This table displays all configured passenger information entries for the selecte
 Ex: If fixed info is made for the entire season (01.05.26 - 31.08.26) - Reception closed at night, and another info is made for a short period (01.05.26 - 30.06.26) - Pool closed for May - June. Even if the periods overlapping, the system will allow and displayed both on the ticket.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
