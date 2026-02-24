@@ -86,12 +86,39 @@ This feature is usually used for **products available at the destination** (e.g.
 
 * Use **Start date / End date** filters to display specific periods.
 * Use **Week Days** to filter by specific days (e.g., only Saturdays).
-* Use **Show hidden** if some allotments are hidden from the list.
+* Use **Show hidden** if some allotments are hidden from the list. If **“Show hidden”** is checked:
+  * All dates are displayed, including normally hidden ones.
+  *   This applies only when no date range filter is active.&#x20;
+
+      <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 * **Display / Clear** allows you to manage the current view.
 
 5. **Save & Apply**
 
 * Any changes made (e.g., adjusting allotment numbers or blocking dates) will be saved automatically and reflected in the booking system.
+*   The data displayed in the list are showing in chronological order, thus avoiding the reduced risk of selecting outdated allocations.&#x20;
+
+    * The oldest valid date appears at the top of the list.
+
+    <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+
+
+    * All dates in the past are automatically hidden. Users cannot view or select expired dates unless specific conditions apply.
+*   **Date Range Overrides "Show Hidden" -** If a **date range** is specified in the filter, this overrides the “Show hidden” option.&#x20;
+
+
+
+    <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+
+
+| Scenario                         | Result                             |
+| -------------------------------- | ---------------------------------- |
+| No filter, Show hidden unchecked | Future dates only, ascending order |
+| No filter, Show hidden checked   | All dates shown, ascending order   |
+| Date range selected              | Only dates within range shown      |
+| Date range selected              | “Show hidden” disabled             |
 
 ## **Linked to transport Allotments**
 
