@@ -13,16 +13,14 @@ These can be configured by accessing the Extras Setup -> Extras. To be able to u
 
 <figure><img src="../.gitbook/assets/image (8) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
-***
-
 #### 2. **Configure Board Supplements**
 
-* &#x20;Open the **Board Supplements** tab - A `Board Type` dropdown and a checkbox for **All guests in one room share the same board type** appear.
+* &#x20;Open the **Board Supplements** tab - `Board Type` and `Board Basis Filter` dropdown appear.
 
 <figure><img src="../.gitbook/assets/image (9) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Select a **Board Type**. - The selected type appears with `Code` and `List name`.
-* Check the **All guests...** checkbox -  The checkbox is selected.
+* **Board basis filter -** Filter is used on Board Supplements to specify which Board Basis should be on the Room for the Board Supplement to be available.  <br>
 
 #### 3. **Save Extra and Configure Prices**
 
