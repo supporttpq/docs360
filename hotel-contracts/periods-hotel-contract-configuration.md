@@ -4,7 +4,7 @@
 
 Use the **Periods** tab to define seasonal contract periods.
 
-Each period contains rows for room/board combinations.
+Each period contains rows for room/board basis combinations.
 
 Rows control allotment, release, minimum stay, and cost.
 
@@ -12,7 +12,7 @@ Rows control allotment, release, minimum stay, and cost.
 
 ### Screenshot
 
-<figure><img src="../.gitbook/assets/image (441).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (672).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -35,7 +35,7 @@ Rows control allotment, release, minimum stay, and cost.
 | 🗑️ **Trash Icon (on period)** | Deletes the entire period.                                                                   |
 | 🗑️ **Trash Icon (on row)**    | Deletes a specific interval.                                                                 |
 | **Room Code**                  | Room reference from the **Rooms** tab. Each row applies to one room code.                    |
-| **Board**                      | Board basis for this row (for example BB, HB, AI).                                           |
+| **Board Basis**                | Board basis for this row (for example, BB, HB, AI).                                          |
 | **Allotments**                 | Number of rooms available for sale in this period.                                           |
 | **Guarantee**                  | Number of guaranteed rooms you commit to sell (if applicable).                               |
 | **Secured**                    | Number of secured rooms (if applicable).                                                     |
