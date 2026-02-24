@@ -129,6 +129,29 @@ These settings influence how the extra interacts with billing, privacy regulatio
 
 ***
 
+### Board Supplement
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+This section is shown **only when an Extra is configured with the type Pension**.\
+If the Extra has a different type, this section is not displayed.
+
+#### Fields Description
+
+**Board type**
+
+Dropdown field that defines the target board for this supplement.
+
+Example:
+
+* HB – Half Board
+
+When selected, the Extra is treated as a supplement related to that board type. This means the system understands that the Extra modifies or upgrades the board basis of the room.
+
+**Board basis filter**
+
+Filter is used on Board Supplements to specify which Board Basis should be on the Room for the Board Supplement to be available.
+
 ### FAQ
 
 #### 1. Why can’t I see the extra when I try to book it?
