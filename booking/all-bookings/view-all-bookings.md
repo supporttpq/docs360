@@ -26,15 +26,15 @@ layout:
 
 The **View all bookings** page is your main **booking search** view inside **Tourpaq Office → All bookings**. Use it to **search, filter, and review bookings** across one or more brands.
 
-From this booking list, you can open booking details and continue into [Statistics in All bookings](statistic-in-all-bookings.md) or [All bookings Totals](all-bookings-totals.md) for reporting.
+From this booking list, you can open booking details and continue to [Statistics in All bookings](statistic-in-all-bookings.md) or [All bookings Totals](all-bookings-totals.md) for reporting.
 
-You access this page from **Booking → All Bookings**.
+Access this page from **Booking → All Bookings**.
 
 ***
 
 ### **Purpose**
 
-Use **View All Bookings** to:
+Use **View all bookings** to:
 
 * Work with a centralized **All bookings list** for the selected brand(s).
 * Apply **booking filters** on **dates, transports, hotels, users, brands**, and status.
@@ -45,11 +45,11 @@ Use **View All Bookings** to:
 
 ### **Preconditions**
 
-Before using **View All Bookings**, make sure that:
+Before using **View all bookings**, make sure that:
 
 * You are logged in with an account that has permission to view bookings.
 * At least one **Brand** is selected – otherwise no bookings or statistics will be shown.
-* Date range filters (for example **Booking Start/End** or **Departure From/To**) are used **as pairs** with both **From** and **To** filled in.
+* Date range filters (for example **Booking Start/End** or **Departure From/To**) must be used **as pairs**, with both **From** and **To** filled in.
 
 {% hint style="info" %}
 If you get no results, first check that a **Brand** is selected and that any date filters you use have **both** a start and an end date.
@@ -123,7 +123,7 @@ If you work with many filters, you can hide the ones you rarely use:
 
 * Use **Hide filters** to collapse less-used filters and keep the panel clean.
 * A hidden filter is still included when you choose **Select all** inside that filter.
-* To show a hidden filter temporarily, use the **Show hidden** checkbox on that filter.
+* To show a hidden filter temporarily, use the **Show hidden** checkbox for that filter.
 * Administrators can also hide filters automatically based on inactivity using **System Setup → Hide Filter**.
 
 For a more detailed description of all filters and statistics tools, see [All bookings](./).
@@ -134,7 +134,23 @@ For a more detailed description of all filters and statistics tools, see [All bo
 
 * Always confirm that a **Brand** is selected before clicking **Display** or opening **Statistics**.
 * Use complete **date ranges** (both From and To) to avoid empty or misleading results.
-* Start with **few filters** when troubleshooting (for example, looking for a missing booking), then narrow down.
+* Start with **a few filters** when troubleshooting (for example, looking for a missing booking), then narrow down.
 * If the filter area feels cluttered, use **Hide filters** to focus only on what you need.
 
 <figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="View all bookings filter panel and booking list"><figcaption><p>View all bookings: filters on top, booking list below.</p></figcaption></figure>
+
+***
+
+### **FAQ**
+
+#### Why do I get no results?
+
+In most cases, no **Brand** is selected. Also check that any date filter has both **From** and **To** filled in.
+
+#### Why do some date filters require both From and To?
+
+These filters are designed to work as a range. If you set only one side, the system won’t apply the filter.
+
+#### Who can create, rename, or delete saved views?
+
+Saved views are typically tied to your user. If you can’t save or manage views, check your role permissions.
