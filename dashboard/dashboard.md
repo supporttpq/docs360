@@ -1,16 +1,24 @@
+---
+description: >-
+  Tourpaq Office dashboard overview. Learn widgets, filters, KPIs, and how to
+  monitor bookings, offers, customers, and financial performance.
+---
+
 # Dashboard
 
 ### Overview
 
-The **Dashboard** is the default landing page in the Tourpaq Office application. Its purpose is to provide users—especially those in sales, operations, and management—with a **quick, centralized snapshot of system activity**, customer behavior, sales data, and operational metrics.
+The **Dashboard** is the default landing page in Tourpaq Office. It gives sales, operations, and managers a fast overview of activity, trends, and alerts.
 
 <div data-with-frame="true"><figure><img src="../.gitbook/assets/image (242).png" alt=""><figcaption></figcaption></figure></div>
 
-This dashboard provides a comprehensive overview of the sales and customer activity. The data is segmented into various widgets, offering insights into bookings, destinations, revenue, top-performing entities, and operational alerts.
+The dashboard is split into widgets. They summarize bookings, destinations, revenue, top performers, and operational warnings.
 
 ### Purpose
 
-The dashboard aggregates and visualizes critical business data from multiple modules (Bookings, Offers, Questionnaires, Service Cases, and Finance). This allows users to:
+The dashboard aggregates data from key modules like **Bookings**, **Offers**, **Questionnaires**, **Service Cases**, and **Finance**.
+
+Use it to:
 
 * Track sales performance at a glance
 * Monitor customer and destination trends
@@ -19,20 +27,20 @@ The dashboard aggregates and visualizes critical business data from multiple mod
 
 ### Preconditions
 
-* The user must have access to the dashboard page (depending on user role/permissions).
-* Real-time or near-real-time data must be available in the database.
-* System filters must be configured properly for user-specific views (e.g., agency or brand access).
+* You must have access to the Dashboard (role and permissions).
+* Data must be available in the database (near real time).
+* Filters must be configured for your scope (for example, agency or brand access).
 
 ### How to Use the Dashboard
 
 #### Filter Controls
 
-These control the **scope of the data** shown in the dashboard widgets.
+Filters control the **scope** of data shown in the widgets.
 
-* **Booking Period**: Select a date range to view bookings created during that period.
-* **Users**: Filter the data to reflect actions made by selected users.
+* **Booking Period**: Select a date range for bookings created in that period.
+* **Users**: Filter data to actions made by selected users.
 * **Brands**: Choose one or more brands to limit the report to specific company identities.
-* **Clear**: Resets all filters and reloads default data.
+* **Clear**: Reset all filters and reload the default view.
 
 ***
 
@@ -40,7 +48,7 @@ These control the **scope of the data** shown in the dashboard widgets.
 
 #### Offers Section
 
-Tracks the effectiveness of quotes/offers sent to customers.
+Tracks the effectiveness of quotes and offers sent to customers.
 
 | Field            | Description                                                                    |
 | ---------------- | ------------------------------------------------------------------------------ |
@@ -67,7 +75,7 @@ Tracks the health of customer support operations.
 
 #### Questionnaires Section
 
-Provides feedback quantity collected from clients.
+Shows the amount of feedback collected from clients.
 
 | Field     | Description                                                                     |
 | --------- | ------------------------------------------------------------------------------- |
@@ -89,7 +97,7 @@ Monitors customer engagement.
 
 #### Notifications Section
 
-* A system-level alert for notable events or changes (not further detailed in this section).
+* System alerts for notable events or changes (not detailed in this section).
 
 ***
 
@@ -97,11 +105,11 @@ Monitors customer engagement.
 
 #### Sales Overview
 
-| Field        | Description                                                                               |
-| ------------ | ----------------------------------------------------------------------------------------- |
-| **Bookings** | Total number of confirmed bookings.                                                       |
-| **Pax**      | Total number of passengers (can exceed bookings if bookings contain multiple passengers). |
-| **Change %** | Change compared to the previous equivalent time period (e.g., last week or month).        |
+| Field        | Description                                                                        |
+| ------------ | ---------------------------------------------------------------------------------- |
+| **Bookings** | Total number of confirmed bookings.                                                |
+| **Pax**      | Total passengers (PAX). This can exceed bookings.                                  |
+| **Change %** | Change compared to the previous equivalent time period (e.g., last week or month). |
 
 #### Bar Chart (Performance Trends)
 
@@ -116,9 +124,9 @@ Monitors customer engagement.
 
 ***
 
-### Guest on Destinations
+### Guests by destination
 
-Tracks guest distribution by destination.
+Tracks passenger distribution by destination.
 
 | Field        | Description                           |
 | ------------ | ------------------------------------- |
@@ -156,5 +164,5 @@ Tracks guest distribution by destination.
 | **Turnover Total** | Total gross revenue before costs are subtracted.                          |
 
 {% hint style="danger" %}
-&#x20;**Note on Negative Values**: Financial values may sometimes be negative due to refunds, high cancellations, or cost spikes. Always cross-check with the finance module for full context.
+**Note on Negative Values**: Financial values may sometimes be negative due to refunds, high cancellations, or cost spikes. Always cross-check with the finance module for full context.
 {% endhint %}
