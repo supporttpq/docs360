@@ -10,7 +10,7 @@
 
 ## Notifications
 
-* [Notification](notifications/notification.md)
+* [Notifications](notifications/notification.md)
 
 ## Booking
 

@@ -1,10 +1,34 @@
-# Notification
+---
+description: >-
+  Monitor and resolve booking alerts in Tourpaq Office. Review unpaid bookings,
+  overbookings, errors, warnings, and Stop Sales notifications.
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+---
+
+# Notifications
 
 ### Overview
 
-The **Notifications** page is a system-level tool used to **monitor, review, and manage issues and alerts related to bookings**. It centralizes all system-generated warnings, errors, and informational messages to help users maintain data integrity and ensure smooth booking operations.
+The **Notifications** module in **Tourpaq Office** helps you monitor and resolve **booking alerts**. It centralizes system warnings, booking errors, and operational messages so your team can keep bookings accurate.
 
-Open the **Notifications** module from the main navigation to see a consolidated list of issues across bookings and products.
+Use it to track common issues like **unpaid bookings**, **overbookings**, and **Stop Sales** conflicts.
+
+Open **Notifications** from the main navigation to see a consolidated list of issues across bookings and products.
 
 <figure><img src="../.gitbook/assets/image (243).png" alt="Notifications overview"><figcaption><p>Notifications overview – categories on the left, detailed list in the center.</p></figcaption></figure>
 
@@ -12,10 +36,10 @@ Open the **Notifications** module from the main navigation to see a consolidated
 
 This module is intended to:
 
-* Provide **real-time visibility** into booking-related issues
-* **Highlight critical problems** such as unpaid or overbooked reservations
-* **Assist users in troubleshooting and resolving errors**
-* Help ensure **reservation completeness and accuracy**
+* Provide fast visibility into booking-related issues and system warnings
+* Highlight critical problems such as **unpaid bookings** and **overbookings**
+* Help users troubleshoot and resolve booking errors (**Error Bkg**)
+* Improve booking completeness and day-to-day operations
 
 By consolidating alerts by type and severity, this module supports **operational efficiency and customer satisfaction**.
 
@@ -31,7 +55,7 @@ By consolidating alerts by type and severity, this module supports **operational
 
 ### Page Structure
 
-#### 🔹 Left Panel: Notifications Menu (Categories)
+#### Left panel: Notification categories
 
 The **left-side menu** organizes notifications by type. Each category shows a **counter** for active issues.
 
@@ -48,14 +72,12 @@ The **left-side menu** organizes notifications by type. Each category shows a **
 | **Queue Management**    | Errors in background processing queues (for example, confirmations or communication jobs).     |
 
 {% hint style="warning" %}
-🔔 **TIP**
-
-Use the counters next to each category to **prioritize** which notifications to address first (for example, start with **Error Bkg** and **Overbkg**, then move on to **Unpaid Bkg** and **Warnings**).
+Use the counters to prioritize. Start with **Error Bkg** and **Overbkg**. Then handle **Unpaid Bkg** and **Warnings**.
 {% endhint %}
 
 ***
 
-#### Central Panel: Notification Table
+#### Center panel: Notifications list (table)
 
 This is the **main working area**, displaying **detailed alerts**. Depending on the notification type, the central panel may present different data fields. Some of the most commonly displayed information includes:
 
@@ -73,7 +95,7 @@ Each row represents a **single notification event**, tied to a specific booking.
 
 ***
 
-#### Filters, Sorting & Navigation
+#### Filters, sorting, and navigation
 
 * **Pagination controls** are located at the bottom of the table to move between pages of results.
 * A **records-per-page selector** lets you choose how many notifications to display at once (for example, 10, 25, 50).
@@ -82,9 +104,9 @@ Each row represents a **single notification event**, tied to a specific booking.
 
 ***
 
-### Working With Notifications
+### How to resolve notifications
 
-Use the Notifications page as your **daily control center** for booking quality:
+Use Notifications as your daily control center for booking quality and exception handling.
 
 {% stepper %}
 {% step %}
@@ -123,10 +145,10 @@ For **Stop Sales** notifications, you can use the dedicated workflow described i
 
 ***
 
-### Special Notes & Behaviors
+### Behavior and refresh
 
-* Notifications **do not auto-resolve**—they must be handled and cleared through booking updates or internal processing.
-* The system may **auto-refresh counters and lists** periodically depending on configuration (for example, every 30 minutes).
+* Notifications clear after you fix the root cause and the system checks run again.
+* Counters and lists may auto-refresh depending on configuration (for example, every 30 minutes).
 * The presence of **multiple notification types for a single booking** is possible (for example, a booking can appear under both **Unpaid Bkg** and **Warnings**).
 * In some environments, **notification acknowledgment** features may be enabled to track who resolved which notification and when.
 
@@ -142,33 +164,38 @@ For configuration of automated messages and related alerts, see:
 * [Service Case – Notification](../service-cases/notification.md) – notifications related to customer **Service Cases** and new incoming e-mails.
 * [Customer information (errata)](../customer-information-errata/) – how special guest notifications are shown based on stay and booking periods.
 
+### FAQ
 
+#### Where do I handle Stop Sales notifications?
 
-### **FAQ**
+Fix the root cause in booking setup or booking data.
 
-#### I see a Stop Sales notification. Where do I handle it?
-
-In both cases, fix the root cause in the booking or setup.
-
-* **Error Bkg**: something failed during save or processing.
-* **Warnings**: something looks off, but may still be bookable.
+Use [Notification on Dashboard Stop Sale](../stop-sales/notification-on-dashboard-stop-sale.md) for the recommended Stop Sales workflow.
 
 #### What’s the difference between “Error Bkg” and “Warnings”?
 
-A booking with the status "Error Booking" represents a booking that is not finalized (some changes still need to be made to it), while status "Warnings" represent bookings that have the status OK, and which warn you that there is a problem with that booking (travel insurance was not sent, etc.)
+* **Error Bkg**: The booking is not finalized. Something failed during save or processing.
+* **Warnings**: The booking status is OK. Something still needs attention. Example: travel insurance not sent.
+
+#### Can one booking show up under multiple categories?
+
+Yes. One booking can trigger multiple notifications.
 
 #### What should I prioritize first?
 
-Example: **Unpaid Bkg** and **Warnings** at the same time.
+Start with issues that can block operations.
 
-Yes. One booking can trigger multiple issues at once.
+1. **Error Bkg**
+2. **Overbkg**
+3. **Unpaid Bkg**
+4. **Warnings**
 
-#### Can the same booking show up under multiple categories?
+#### How do notifications disappear after I fix a booking?
 
 1. Save the booking changes.
 2. Go back to **Notifications**.
 3. Refresh the list or wait for the next update cycle.
 
-Notifications clear when the underlying issue is gone and the checks rerun.
+Notifications clear when the issue is fixed and the checks rerun.
 
 ***

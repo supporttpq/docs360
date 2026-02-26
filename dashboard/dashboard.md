@@ -1,7 +1,23 @@
 ---
 description: >-
   Use the Tourpaq Office Dashboard to track bookings, offers, customers, service
-  cases, and financial KPIs with widgets and filters.
+  cases, and financial
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
 ---
 
 # Dashboard
