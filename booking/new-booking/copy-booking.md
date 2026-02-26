@@ -1,4 +1,7 @@
 ---
+description: >-
+  Copy passengers from an existing booking into a new booking draft in Tourpaq
+  Office. Follow the steps, checks, and FAQ to avoid mistakes.
 layout:
   width: default
   title:
@@ -21,7 +24,11 @@ layout:
 
 ### Overview
 
-The **Copy Booking** feature lets you create a **new booking** and **copy passenger information** from an existing booking. This is useful when you:
+The **Copy Booking** feature in **Tourpaq Office** lets you create a **new booking** and **copy passengers** from an existing booking.
+
+People often search for this as **duplicate booking** or **clone booking**. In Tourpaq, it focuses on copying the **passenger list**.
+
+This is useful when you:
 
 * recreate a similar booking for the same travellers
 * reschedule a trip and want to avoid retyping passenger names
@@ -29,18 +36,26 @@ The **Copy Booking** feature lets you create a **new booking** and **copy passen
 
 It saves time and reduces manual errors.
 
+### Key terms (search keywords)
+
+* **Copy Booking**: copy passengers into a new booking draft
+* **Booking number**: the original booking you copy from
+* **New Booking**: where you create the new booking draft
+* **Take Allotment**: step where seats/beds are reserved and the copy happens
+* **Reschedule / moved booking**: common scenario where you copy passengers first
+
 ### Before you start
 
 Make sure you have:
 
 * the **booking number** you want to copy passengers from
-* created a **new booking draft** with the correct number of passengers, transport and hotel selection ready
+* created a **new booking draft** with the correct number of passengers, plus **transport** and **hotel** selected
 
 {% hint style="info" %}
 After copying, always review the passenger details to ensure names, titles, birthdates, and contact details are still correct.
 {% endhint %}
 
-### Copy passengers into a new booking
+### Copy passengers to a new booking
 
 {% stepper %}
 {% step %}
@@ -82,6 +97,12 @@ The passengers from the original booking are now copied into the new booking.
 {% endstep %}
 {% endstepper %}
 
+### What gets copied (and what does not)
+
+Typically, **Copy Booking** copies the passenger rows from the original booking into the new booking.
+
+Always verify your new booking setup. Don’t assume other parts of the booking are carried over (for example: pricing, extras, documents, or payment state).
+
 ### What to check after copying
 
 After passengers are copied, verify:
@@ -93,7 +114,19 @@ After passengers are copied, verify:
 
 To edit passenger details, use [Edit Passenger](new-booking/edit-pas.md).
 
-### Troubleshooting
+### FAQ
+
+#### Can I copy passengers without creating a new booking first?
+
+No. Start in **Booking → New Booking** and build the new booking draft first.
+
+Then enter the original booking number **before** you click **Take Allotment**.
+
+#### Does Copy Booking copy transport, hotel, and extras too?
+
+You select **transport and hotel** in the new booking draft.
+
+Copy Booking then copies the **passenger list** from the original booking. Always review the booking before saving and sending anything.
 
 #### I don’t see the “copy booking number” field
 
@@ -110,3 +143,9 @@ This field typically appears in the new booking flow **before** taking allotment
 #### Passengers copied, but something looks wrong
 
 Open **Edit Passenger** and correct the details before sending documents or taking payment.
+
+#### When should I use Copy Booking vs Moved booking?
+
+Use **Copy Booking** to quickly reuse the passenger list.
+
+Use **Moved booking** when you are rescheduling and want to link the old and new bookings. See [Moved Booking](moved-booking.md).
