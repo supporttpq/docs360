@@ -1,12 +1,20 @@
+---
+description: >-
+  Use Tourpaq Office New Booking Search to find flight and hotel availability,
+  compare package combinations, and create a booking from search results.
+---
+
 # New Booking search support
 
-### Overview
+### **Overview**
 
-The **Search** page is the starting point for creating a new booking in the Tourpaq Office system. It enables users to search and match available **flights** and **hotels** based on specific travel criteria, such as departure dates, destination, hotel, budget, and stay duration. The page combines filtering and sorting tools with live availability data to help tour operators quickly identify matching options and initiate a booking.
+The **New Booking Search** page in **Tourpaq Office** helps you find bookable **flight + hotel** combinations. Use it as an **availability search** for transports and hotels. You can filter by departure/arrival, dates, travel length, board, budget, and stars. Then create a booking from the matching results.
+
+Use this page when you need fast **package search** support, or when a booking returns no results in the New Booking window.
 
 ***
 
-### Purpose
+### **Purpose**
 
 This interface helps you:
 
@@ -17,12 +25,12 @@ This interface helps you:
 
 ***
 
-### Preconditions
+### **Preconditions**
 
 Before using this screen, the following conditions must be met:
 
-* You must be signed in with a Tourpaq Office account that has booking rights.
-* Price lists and allotments must be configured for the hotels and transports to return availability.
+* You must be signed in to **Tourpaq Office** with rights to create bookings.
+* Price lists and allotments must exist for the hotels and transports to return **availability**.
 * System dates and departure data should be up to date.
 * Workflows must be configured if you want to filter by workflow (for example, **Charter & Dynamic**).
 
@@ -37,9 +45,9 @@ Before using this screen, the following conditions must be met:
 1. Click **New Booking**.
 2. Select a **Brand**.
 
-New booking page is displayed.
+The New Booking page is displayed.
 
-<figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1).png" alt="New Booking page in Tourpaq Office"><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -58,12 +66,12 @@ Required inputs:
 * **Departure**
 * At least one of **Arrival**, **Resort**, or **Hotel**
 * **Date from** and **Date to**
-* **Board**&#x20;
+* **Board**
 * **Budget (max)**
 
 If something is missing, you will see validation warnings.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Validation warnings on New Booking Search page"><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -71,11 +79,11 @@ If something is missing, you will see validation warnings.
 
 Fill the main fields (Adults, Departures, Arrivals, Date From/To), then click **Search**.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Search filters for flights and hotels in New Booking Search"><figcaption></figcaption></figure>
 
 Flights and hotels load as two result grids.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Search results showing flights (top) and hotels (bottom)"><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -101,7 +109,7 @@ Use **+ Filters** for flight filters.
 {% step %}
 ### Review hotel results (bottom grid)
 
-Hotel rows show hotel, stay, availability, board,and prices.
+Hotel rows show hotel, stay, availability, board, and prices.
 
 Use **+ Filters** for advanced hotel filters.
 
@@ -142,7 +150,7 @@ The Flights section shows available transports that match the search.
 * Arrival airport
 * Date and weekday
 * Transport code
-* Interval 1–4&#x20;
+* Interval 1–4
 
 **Behavior**
 
@@ -164,7 +172,7 @@ The Hotels section lists available hotel rooms that match the search and selecte
 * Stay - Stay length (nights)
 * Room type
 * Avail - Available rooms
-* Date -  Departure date
+* Date - Departure date
 * Board - Board type which is included in the price
 * Normal price - The price without discount (P price), The price includes the price of any selected board
 * Discount

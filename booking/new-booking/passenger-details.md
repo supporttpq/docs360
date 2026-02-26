@@ -1,19 +1,26 @@
+---
+description: >-
+  Update passenger details in Tourpaq Office bookings. Manage travel documents,
+  nationality, insurance, transport comments (SSR/assistance notes), and
+  emergency contacts per traveller.
+---
+
 # Passenger details
 
-### Overview
+### **Overview**
 
-The **Passenger details** tab allows you to edit **individual passenger information** and add **emergency contacts** directly within a booking. This ensures that all critical travel data is accurate and up to date, supporting safe and personalized travel experiences.
+The **Passenger details** tab in **Tourpaq Office** lets you update **per-traveller** information inside a booking. Use it for **travel documents** (passport/ID and expiry), nationality, insurance details, and operational notes such as **transport comments** (special assistance / SSR-style notes). You can also add **emergency contacts** per passenger.
 
-<figure><img src="https://sonat.com/api/Document/Image/19670ef0-8b8a-4cda-8eb6-249681e07016/60a72aeb-a272-4428-a118-b6074b1b35b5/b98fbdb0-fecc-48c3-a39a-6ba1572d32e8.webp?width=1864" alt="" width="900"><figcaption></figcaption></figure>
+<figure><img src="https://sonat.com/api/Document/Image/19670ef0-8b8a-4cda-8eb6-249681e07016/60a72aeb-a272-4428-a118-b6074b1b35b5/b98fbdb0-fecc-48c3-a39a-6ba1572d32e8.webp?width=1864" alt="Passenger details tab showing passport/ID, insurance, transport comments, and emergency contact fields" width="900"><figcaption><p>Passenger details tab.</p></figcaption></figure>
 
 ***
 
-### Purpose
+### **Purpose**
 
 The Passenger details tab is designed to:
 
 * Capture complete identification and contact information for each traveller.
-* Store important details for travel documentation, insurance and health‑related notes.
+* Store important details for travel documentation, insurance, and operational notes.
 * Provide emergency contact information to be used in case of incidents during the trip.
 
 ***

@@ -1,8 +1,31 @@
+---
+description: >-
+  Assign and manage seat allocation in Tourpaq Office bookings. Select outbound
+  and return flight seats per passenger, save assignments, and print tickets
+  with seat numbers.
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+---
+
 # Transport Seating
 
 ### **Overview**
 
-The **Transport Seating** tab is used to manually (or, where supported, automatically) assign airplane seats to passengers in a booking. It supports both outbound and return flights and ensures that seat assignments are visible on the booking and on the printed ticket.
+The **Transport Seating** tab in **Tourpaq Office** is used to manage **seat allocation** for flights in a booking. Assign airplane seats per passenger manually (or automatically, if enabled). It supports both outbound and return flights and prints seat numbers on tickets.
 
 ***
 
@@ -29,7 +52,7 @@ If you cannot select seats, the issue is often related to setup. See:
 * [**Automatic Seating**](../../transport/transport/automatic-seating.md) (if you rely on automatic placement)
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (22).png" alt="Transport Seating tab showing seat map and passenger seat assignments for a booking"><figcaption></figcaption></figure>
 
 ### **Instructions**
 

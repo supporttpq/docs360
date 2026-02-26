@@ -1,10 +1,17 @@
+---
+description: >-
+  Edit passenger (pax) details in Tourpaq Office bookings. Update names,
+  birthdate/age, add or remove passengers, and manage customer contact data and
+  email/SMS recipients.
+---
+
 # Edit Passenger
 
 ## **Passengers Tab**
 
 ### **Overview**
 
-The **Edit Passenger** window allows users to view, add, modify, and manage passenger information for a booking. Each passenger (Pax) represents one traveler attached to the booking, and their details are essential for tickets, documents, rooming, transport, and reporting.
+The **Edit Passenger** window in **Tourpaq Office** lets you manage **passenger (pax) details** for a booking. Update names, title, birthdate/age, and contact data. This data is used for **tickets and travel documents**, rooming, transport seating, insurance, and reporting.
 
 The window is divided into two tabs:
 
@@ -16,7 +23,7 @@ The window is divided into two tabs:
 The Edit Passenger window serves to:
 
 * Maintain accurate passenger names and personal information
-* Ensure the correct age and birthdate are used for price calculations (child, infant, senior, etc.)
+* Ensure the correct **birthdate** and **age** are used for price logic (adult/child/infant)
 * Add or remove passengers as needed
 * Update contact details when required
 * Support booking modifications during or after the sales process
@@ -33,11 +40,11 @@ Accurate passenger data is essential for:
 
 In the booking interface, in the passenger section, to be able to edit the information of each passenger in the booking, you must click the Edit button.
 
-<figure><img src="../../../.gitbook/assets/image (558).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (558).png" alt="Edit button in booking passenger section"><figcaption></figcaption></figure>
 
 After clicking the **Edit** button, a new window will open, allowing you to modify the information for each individual passenger.
 
-<figure><img src="../../../.gitbook/assets/image (563).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (563).png" alt="Edit Passenger window with passenger rows"><figcaption></figcaption></figure>
 
 #### **1. Editing an Existing Passenger**
 
@@ -107,7 +114,7 @@ This is essential because invoices, confirmations, travel documents, and operati
 
 ### **Field Description Table**
 
-<figure><img src="../../../.gitbook/assets/image (564).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (564).png" alt="Customer Data tab showing email and SMS recipients"><figcaption></figcaption></figure>
 
 | **Field Name** | **Description**                                                                                                                          |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
@@ -132,10 +139,6 @@ The **Customer Data** tab centralizes control of booking communications and cust
 * Maintain clean and accurate communication settings for each booking
 
 ## Edit Passenger - FAQ
-
-This FAQ complements the [Passengers Tab](edit-pas.md) documentation and focuses on common questions when editing travelers and customer contact details during booking creation.
-
-### Passengers tab (traveler details)
 
 #### What’s the difference between a **passenger (pax)** and the **customer**?
 
@@ -198,7 +201,7 @@ If you are removing passengers after services have been allocated (seats, rooms,
 
 #### Can I send confirmations/documents to more than one person?
 
-Yes—enable **EMAIL** (and/or **SMS**) for additional passengers who should receive the same messa
+Yes—enable **EMAIL** (and/or **SMS**) for additional passengers who should receive the same message as the customer.
 
 #### What should I do if the wrong person is receiving messages?
 

@@ -1,8 +1,15 @@
+---
+description: >-
+  Tourpaq Office golf course check-in module for tee times. Guests check in at a
+  kiosk/tablet, while staff use the Master Module to manage tee-time attendance
+  and reduce no-shows.
+---
+
 # Golf Course Check-In Module
 
-### Overview
+### **Overview**
 
-The **Golf Course Check‑In** module allows guests to confirm their arrival for booked **tee times** using a simple on‑site kiosk (tablet). This helps optimize tee-time usage, reduce no‑shows, and provide a smoother experience for both guests and golf‑club staff.
+The **Golf Course Check‑In** module in **Tourpaq Office** lets guests confirm arrival for booked **tee times** using a simple on‑site **check-in kiosk** (tablet). It helps optimize tee-time usage, reduce no‑shows, and give golf-club staff a live view of attendance.
 
 The module has two components:
 
@@ -34,13 +41,13 @@ The purpose of the check‑in module is to:
 
 ### 1. Customer Check‑In Flow (Kiosk)
 
-<figure><img src="../../../.gitbook/assets/image (474).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (474).png" alt="Customer check-in kiosk flow for tee times (screens overview)"><figcaption></figcaption></figure>
 
 #### Screen 1 – Booking number entry
 
 **Purpose:** Identify the booking for today’s tee time(s).
 
-<figure><img src="../../../.gitbook/assets/image (475).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (475).png" alt="Kiosk screen: enter booking number to check in for today&#x27;s tee times"><figcaption></figcaption></figure>
 
 **Elements**
 

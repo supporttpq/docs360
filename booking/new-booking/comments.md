@@ -1,8 +1,15 @@
+---
+description: >-
+  Add booking comments in Tourpaq Office. Write internal notes, ticket text for
+  customers, guide/airport list messages, and upload PDF ticket attachments or
+  internal attachments.
+---
+
 # Comments
 
 ### **Overview**
 
-The **Comments** section is used to capture notes and documents related to a booking. These comments and attachments can target different audiences – from internal staff only, to customer-facing information, guide instructions, and finance-related notes.
+The **Comments** section in **Tourpaq Office** is where you add **booking comments** and PDF attachments. Use it for **internal notes**, **customer-facing ticket text**, guide/airport list messages, and finance notes. You can also upload **ticket attachments** (PDF) and internal attachments.
 
 ***
 
@@ -20,7 +27,7 @@ The **Comments** section is used to capture notes and documents related to a boo
 * You must be inside an existing booking to add or view comments.
 * Attachments must be PDF files before you upload them.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (60).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (60).png" alt="Comments tab in a booking showing comment types and attachments"><figcaption></figcaption></figure>
 
 ### **Instructions & Field Descriptions**
 

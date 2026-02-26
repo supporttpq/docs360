@@ -1,8 +1,31 @@
+---
+description: >-
+  Use the Tourpaq Office “Don’t Send Ticket” option to suppress automatic
+  booking update emails when saving changes on OK bookings. Prevent multiple
+  ticket/update emails during edits.
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+---
+
 # Don't sent ticket option
 
 ### **Overview**
 
-The **“Don’t Send Ticket”** checkbox is a control on the booking page used to **suppress the automatic “Booking updated / Update booking” email** that can be triggered when you save changes on a confirmed booking.
+The **“Don’t Send Ticket”** checkbox in **Tourpaq Office** is used to **suppress the automatic “Booking updated / Update booking” email** that can be triggered when you save changes on a confirmed (OK) booking.
 
 This is useful when you need to make several internal adjustments and want to avoid sending multiple emails (often with ticket/documents) to the customer.
 
@@ -22,7 +45,7 @@ This is useful when you need to make several internal adjustments and want to av
 * You must make a change that would normally trigger a booking update email (for example: adding a product or changing booking-relevant details).
 * You must have permission to edit the booking.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (19).png" alt="Don’t Send Ticket checkbox on the booking page"><figcaption></figcaption></figure>
 
 ***
 

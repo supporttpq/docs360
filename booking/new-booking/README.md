@@ -1,8 +1,31 @@
+---
+description: >-
+  Create a new booking in Tourpaq Office. Search transports and hotels, add
+  passengers and extras, review economics (price/cost/profit), then confirm and
+  send emails or SMS.
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+---
+
 # New Booking
 
 ### **Overview**
 
-The **New Booking** section in Tourpaq is used to create a **new reservation from scratch** for a customer or group. From here you can search for available **transports**, **hotels**, and **extras**, add **passengers**, and review the **economics** (price, costs, profit) before confirming the booking.
+The **New Booking** section in **Tourpaq Office** is used to **create a booking** (a new reservation) from scratch for a customer or group. You can search available **transports**, **hotels**, and **extras**, add **passengers**, and review **economics** (price, cost, profit) before you confirm the booking.
 
 This page is the **landing page** for all documentation related to creating and managing a new booking. Use the sub‑pages in this section for detailed explanations of each area (Economics, Passenger details, E‑mails, Comments, etc.).
 
@@ -12,10 +35,10 @@ This page is the **landing page** for all documentation related to creating and 
 
 The New Booking functionality is designed to:
 
-* Allow agents to create **new bookings manually** (phone, email, agency, internal sales).
-* Support different booking types: **package**, **hotel only**, **transport only**, and bookings with **extras**.
+* Let agents and back office users **create bookings manually** (phone, email, agency, internal sales).
+* Support common booking types: **package booking**, **hotel-only booking**, **transport-only booking**, and bookings with **extras**.
 * Provide entry points to detailed views such as **Economics**, **Passenger details**, **History**, and more.
-* Ensure bookings are created with complete and correct data before tickets, vouchers, and communications are sent.
+* Ensure booking data is complete before **tickets**, **vouchers**, and customer communications are sent.
 
 ***
 
@@ -157,7 +180,7 @@ Use the following pages for detailed explanations of specific parts of the New B
 #### Other booking‑related tools
 
 * [**Conversation**](conversation.md) – Conversation/history related to a booking.
-* [**Don't sent ticket option**](/broken/spaces/ZCqzVJEAfJB0xT0ODRb) – Configuration and usage of the "do not send ticket" option.
+* [**Don't sent ticket option**](dont-sent-ticket-option.md) – Configuration and usage of the "do not send ticket" option.
 * [**Coded discount booking**](coded-discount-booking.md) – Using coded discounts when creating a booking.
 
 ***

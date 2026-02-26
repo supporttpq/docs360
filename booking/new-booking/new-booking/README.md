@@ -1,27 +1,54 @@
+---
+description: >-
+  Step-by-step guide to the Tourpaq Office New Booking screen. Select brand,
+  search transport and hotel availability, take allotment, add passengers and
+  extras, then save the booking.
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+---
+
 # New Booking
 
-### Overview
+### **Overview**
 
-The **New Booking** functionality in Tourpaq allows users to create a booking by selecting a brand, adding transport and hotel options, managing passengers, and customizing extras, discounts, and supplements. It also includes advanced tools such as **passenger import** and **package product handling**.
+The **New Booking** screen in **Tourpaq Office** (BackOffice) is used to **create a new booking** from scratch. You select a **Brand**, search **transport availability** and **hotel/room availability**, then add passengers, extras, discounts, and supplements.
 
-### Purpose
+Use this page as the detailed, step-by-step **booking creation workflow**. For the section overview and links to related topics, see the main [New Booking](../) page.
+
+### **Purpose**
 
 This tool is designed to:
 
 * Create new bookings from scratch.
-* Assign transport, accommodation, and optional services.
-* Manage passenger data individually or via file import.
-* Apply complex product logic such as packages, extras, discounts, and insurance.
+* Search and select **transport departures** and **hotel rooms** based on availability.
+* Assign accommodation, board type, and optional services (extras, insurance).
+* Manage passenger data in the booking window or via **passenger import**.
+* Apply product logic such as **packages**, **discounts/supplements**, and price rules.
 
-### Preconditions
+### **Preconditions**
 
 Before creating a booking, ensure:
 
 * You are logged in with permission to create bookings.
-* All relevant products (transport, hotels, extras) are configured and active in the system.
+* All relevant products (transport, hotels, room types, extras) are configured and active.
+* Allotments and price lists exist for the selected Brand and travel period.
 * You have customer data ready.
 
-<figure><img src="https://sonat.com/api/Document/Image/19670ef0-8b8a-4cda-8eb6-249681e07016/60a72aeb-a272-4428-a118-b6074b1b35b5/095769e7-32fd-4f22-8e55-e504ab071f34.webp?width=1915" alt="" width="900"><figcaption></figcaption></figure>
+<figure><img src="https://sonat.com/api/Document/Image/19670ef0-8b8a-4cda-8eb6-249681e07016/60a72aeb-a272-4428-a118-b6074b1b35b5/095769e7-32fd-4f22-8e55-e504ab071f34.webp?width=1915" alt="Tourpaq Office New Booking screen" width="900"><figcaption><p>New Booking screen (Tourpaq Office).</p></figcaption></figure>
 
 ***
 
@@ -35,7 +62,7 @@ Go to **Booking → New Booking**.
 
 #### Step 1 – Choose the Brand
 
-<figure><img src="../../../.gitbook/assets/image (518).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (518).png" alt="Select Brand in New Booking"><figcaption></figcaption></figure>
 
 Select the **Brand** under which the booking should be created.
 
@@ -65,7 +92,7 @@ When:
 
 Then:
 
-*   The DOB is automatically inserted into the lead passenger row in the Pax grid.&#x20;
+*   The DOB is automatically inserted into the lead passenger row in the Pax grid.
 
     <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -87,7 +114,7 @@ Set the **number of passengers**:
 
 #### Step 4 – Add transport
 
-The **Select Transport** dialog allows the user to search for and select a transport (flight, bus, or other transport types) for the booking. It provides flexible filtering options and a detailed table showing all matching transport departures within the selected date range.
+The **Select Transport** dialog is your **transport availability search**. Use it to find and select a transport (flight, bus, or other transport types) for the booking. It supports filters and a result table with departures in the selected date range.
 
 **Filter section**
 
@@ -164,7 +191,7 @@ The table supports vertical scrolling when many departures are available.
 
 #### Step 5 – Add hotel & room
 
-The **Select Hotel** dialog provides the user with a filtered list of available hotels, allowing quick selection based on resort, hotel, star rating, pension type, and room availability. The interface uses a combination of dropdown filters, checkboxes, and a tabular overview to help users identify suitable hotel options efficiently.
+The **Select Hotel** dialog is your **hotel and room availability** search. Use it to filter hotels by resort, star rating, board type (pension), and room availability. Then select a hotel/room line and **take allotment**.
 
 <figure><img src="../../../.gitbook/assets/image (511).png" alt=""><figcaption></figcaption></figure>
 
@@ -238,7 +265,7 @@ After the user selects **Take Allotment**, the system updates the **Total Amount
 
 1. Edit **Passenger details**:
 
-* Gender, First Name, Last Name, Age.&#x20;
+* Gender, First Name, Last Name, Age.
 
 {% hint style="info" %}
 When:
@@ -257,8 +284,6 @@ Then:
 
 <figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-
-
 #### Sorting rules
 
 Categories are sorted as follows:
@@ -272,15 +297,11 @@ Categories are sorted as follows:
 4. Categories **without a Category order booking value**\
    Displayed last
 5. Categories with the **same order number**\
-   Sorted alphabetically&#x20;
+   Sorted alphabetically
 
-&#x20;  &#x20;
-
-* &#x20;If the "Order extras in the booking window" option is not enabled in the system setup, the new extras will be arranged according to the old ordering :&#x20;
+* If the "Order extras in the booking window" option is not enabled in the system setup, the new extras will be arranged according to the old ordering :
 
 <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-
 
 1. Add **Discounts/Supplements**:
    * Click **Show/Hide Discount/Supplements**.

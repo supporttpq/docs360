@@ -1,8 +1,31 @@
+---
+description: >-
+  View the booking SMS log in Tourpaq Office. See sent SMS messages, recipient
+  phone number, delivery status, and the exact message text for confirmations
+  and reminders.
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+---
+
 # SMS
 
 ### **Overview**
 
-The **SMS** tab provides a log of all SMS messages sent to the customer in relation to the booking. It allows team members to track communication history, confirm that messages were sent, and review the exact text that the customer received.
+The **SMS** tab in **Tourpaq Office** shows the **booking SMS log**. It lists all SMS messages sent to the customer for that booking, including recipient phone number, send time, delivery status, and the exact message text.
 
 ***
 
@@ -19,7 +42,7 @@ The **SMS** tab provides a log of all SMS messages sent to the customer in relat
 * The booking must have at least one valid customer phone number.
 * SMS messages must have been triggered by system processes or manual actions (for example, booking confirmations, reminders).
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="SMS tab showing sent SMS messages, phone number, status, and message content"><figcaption></figcaption></figure>
 
 ### **Instructions**
 

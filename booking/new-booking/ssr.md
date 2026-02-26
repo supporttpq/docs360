@@ -1,8 +1,15 @@
+---
+description: >-
+  Add airline SSR (Special Service Request) codes in Tourpaq Office bookings.
+  Assign passenger requests like meals, wheelchair assistance, medical needs,
+  and special baggage for reporting to airlines.
+---
+
 # SSR - Special Service Requests for Airlines
 
 ### **Overview**
 
-**SSR (Special Service Request) codes** are standardized codes used in communication with airlines to indicate specific services or requirements for a passenger. These can cover, for example, meal preferences, mobility assistance, medical needs, or special baggage (such as sports equipment).
+**SSR (Special Service Request) codes** are standardized airline codes used in **Tourpaq Office** to report passenger-specific requirements to airlines. SSRs can cover meal preferences, wheelchair or mobility assistance, medical needs, and special baggage (for example sports equipment).
 
 ***
 
@@ -37,7 +44,7 @@
 4. **Save the changes**
    * When the correct code has been selected, click **Save** to apply the changes.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (23).png" alt="SSR tab in Tourpaq Office booking with SSR code drop-down list"><figcaption></figcaption></figure>
 
 #### **Important Notes**
 

@@ -1,10 +1,17 @@
+---
+description: >-
+  Manage golf course bookings in Tourpaq Office. Mark golf passengers, enter
+  handicap (HCP), add rounds, set requested and confirmed tee times, and print
+  tickets with golf details.
+---
+
 # Golf Courses
 
 ## Golf Courses
 
 ### Overview
 
-The **Golf Courses** page allows you to manage golf-related activities linked to a booking. It is used to:
+The **Golf Courses** page in **Tourpaq Office** lets you manage **golf extras** linked to a booking. Use it to mark which passengers play golf, enter handicap (**HCP**) and club numbers, add **golf rounds**, and maintain **requested vs confirmed tee times** for the golf provider.
 
 * Mark which passengers are playing golf.
 * Maintain player details such as handicap (**HCP**) and club number.
@@ -93,7 +100,7 @@ In the example shown on the page:
 
 The ticket contains relevant information for guests who have booked golf courses through the system.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (4).png" alt="Ticket example showing golf course rounds and requested/confirmed tee times"><figcaption></figcaption></figure>
 
 Typically, the ticket includes:
 

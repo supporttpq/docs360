@@ -1,14 +1,20 @@
+---
+description: >-
+  Use Tourpaq Office All bookings Totals to see booking-level totals for
+  bookings, passengers, turnover, and profit based on your filters.
+---
+
 # All bookings Totals
 
 ### **Overview**
 
-The **All bookings Totals** section gives you a **summarized, booking‑level overview** based on your current filters in [All bookings](./).
+The **All bookings Totals** view in **Tourpaq Office** gives you a fast **booking totals report**. It shows **booking-level totals** based on your current filters in [All bookings](./).
 
 It shows:
 
 * Total number of **bookings**
 * Total number of **passengers**
-* Aggregated **turnover** and **profit** (if enabled)
+* Aggregated **turnover** and **profit** totals (if enabled)
 
 This functionality is part of the **All bookings** page and is designed for a quick, high‑level view of booking volume and business performance. For more detailed, per‑passenger analytics, use [**Statistics in All bookings**](statistic-in-all-bookings.md).
 
@@ -19,7 +25,7 @@ This functionality is part of the **All bookings** page and is designed for a qu
 Use **All bookings Totals** to:
 
 * Summarize booking data across custom‑defined filters.
-* Quickly check totals for **bookings**, **passengers**, and optionally **turnover/profit**.
+* Quickly check totals for **bookings**, **passengers**, and optionally **turnover/profit** for reporting.
 * Analyze booking behavior by **period**, **transport**, **hotel**, **status**, and more.
 * Get a compact overview before drilling down into individual bookings or statistics.
 
@@ -111,7 +117,7 @@ Date‑based filters (**Booking**, **Departure**, **Arrival**) must always be us
   * **Totals** = high‑level aggregated counts/sums.
   * **Statistics** = per‑passenger breakdowns and averages (profit, turnover, passengers per country/hotel, etc.).
 
-<figure><img src="../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="All bookings Totals overview"><figcaption><p>Example of the Totals overview for a filtered set of bookings.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="All bookings Totals view showing bookings, passengers, turnover, and profit totals"><figcaption><p>Totals overview for a filtered set of bookings.</p></figcaption></figure>
 
 ***
 

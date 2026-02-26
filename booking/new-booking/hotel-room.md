@@ -1,8 +1,31 @@
+---
+description: >-
+  Assign and manage hotel room allocation in Tourpaq Office bookings. Select an
+  available room number, save the assignment, and print tickets with room
+  details.
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+---
+
 # Hotel Room
 
 ### **Overview**
 
-The **Hotel Room** tab allows you to assign specific rooms to a booking from the pool of available rooms at the selected hotel. This gives you control over the exact room, floor, and room number that will be allocated to the guest.
+The **Hotel Room** tab in **Tourpaq Office** lets you manage **hotel room allocation** for a booking. Assign a specific room from the hotel’s available room pool. This gives you control over the exact **room number** (and often floor/room placement) that will be allocated to the guest.
 
 ***
 
@@ -39,7 +62,7 @@ The **Hotel Room** tab allows you to assign specific rooms to a booking from the
    * Click **Print Ticket**.
    * The assigned **room number** is printed on the ticket so that both the customer and the hotel can see the exact room assignment.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (59).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (59).png" alt="Hotel Room tab showing available (green) rooms to assign to a booking"><figcaption></figcaption></figure>
 
 ***
 
@@ -47,7 +70,7 @@ The **Hotel Room** tab allows you to assign specific rooms to a booking from the
 
 #### **Is it mandatory to assign a specific room number?**
 
-This depends on your company’s procedures. The system allows you to assign a room when you need a **specific** room number. If your company does not require pre‑assignment, the hotel can typically allocate a room on arrival according to its own processes.&#x20;
+This depends on your company’s procedures. The system allows you to assign a room when you need a **specific** room number. If your company does not require pre‑assignment, the hotel can typically allocate a room on arrival according to its own processes.
 
 ***
 

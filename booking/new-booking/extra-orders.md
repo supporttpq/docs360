@@ -1,10 +1,17 @@
+---
+description: >-
+  Manage extra orders in Tourpaq Office bookings. Review post-booking add-ons
+  like excursions, check payment confirmation, open order details, and handle
+  refunds. Includes linked service cases.
+---
+
 # Extra Orders
 
-<figure><img src="../../.gitbook/assets/image (306).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (306).png" alt="Extra Orders tab showing extra order list and linked service cases"><figcaption></figcaption></figure>
 
 ### **Overview**
 
-The **Extra Orders** tab shows **additional purchases and transactions** connected to a booking (for example: excursions, upgrades, or other extra services). The same view also includes the **Service Cases** section, where you can see any **support cases/tickets** registered for the booking.
+The **Extra Orders** tab in **Tourpaq Office** shows **post-booking add-ons** and transactions connected to a booking (for example excursions, upgrades, and extra services). The same view also includes **Service Cases**, where you can review support cases linked to the booking.
 
 Use this page when you need to:
 
@@ -47,7 +54,7 @@ Use this page when you need to:
 
 <figure><img src="../../.gitbook/assets/image (308).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (309).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (309).png" alt="Extra order details view showing itemized products and amounts"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 If you cannot see **Book** or **View Refunds**, it usually means either (1) your user role does not have permission, or (2) the selected payment method/provider does not support the action from this view.

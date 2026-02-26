@@ -1,14 +1,36 @@
+---
+description: >-
+  Learn how to use Tourpaq Office All bookings Statistics to report on
+  passengers, turnover, profit, capacity, and compare two periods.
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+---
+
 # Statistics in All bookings
 
 ### **Overview**
 
-The **Statistics** functionality in the [All bookings](./) page of Tourpaq lets you analyze booking and passenger data in different ways. You can see, for example, **profit per hotel**, **turnover per resort**, or **passengers per week**.
+The **Statistics** view in **Tourpaq Office** (Booking → [All bookings](./)) is your built-in **booking statistics** and **booking analytics** report. Use it to analyze **passengers**, **turnover**, **profit**, and **capacity** across hotels, resorts, destinations, sellers, and time periods.
 
 This guide explains **how to access Statistics**, which types of statistics exist, and **when to use each of them**.
 
-All statistics in this view are calculated **per passenger**.
+All statistics in this view are calculated **per passenger**. For booking-level totals (bookings, passengers, turnover, profit), use [**All bookings Totals**](all-bookings-totals.md).
 
-<figure><img src="../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Statistics view in All bookings (Tourpaq Office)"><figcaption><p>Statistics in All bookings.</p></figcaption></figure>
 
 ***
 
@@ -16,8 +38,8 @@ All statistics in this view are calculated **per passenger**.
 
 Use the **Statistics** view to:
 
-* Get an overview of booking trends by **passenger**, **location**, and **time**.
-* Analyze financial data such as **profit**, **turnover**, and **sales performance**.
+* Report on booking trends by **passenger**, **location**, and **time**.
+* Analyze financial KPIs such as **profit**, **turnover**, and **sales performance**.
 * Compare booking activity between **two different periods**.
 * Identify key performance indicators across **hotels**, **sellers**, and **destinations**.
 
@@ -31,7 +53,7 @@ Before using Statistics, make sure:
 
 * You have access to the **All bookings** page under the **Booking** menu.
 * At least one **Brand** is selected – no statistics can be generated without a brand.
-* All relevant **filters** are applied in **All bookings** _before_ you open Statistics.
+* All relevant **booking filters** are applied in **All bookings** _before_ you open Statistics.
 * You have clicked **Display** to refresh the data, and then clicked the **Statistics** button.
 * Date filters that work in pairs (e.g. _Booking period_, _Departure period_, _Arrival period_) are used with **both** `from` and `to` dates.
 
@@ -84,7 +106,7 @@ If no statistics are shown, first check that a **Brand** is selected, that all d
 
 ### **Types of Available Statistics**
 
-The Statistics module offers several types of analytical views designed to help you evaluate booking patterns, turnover, and profitability.
+The Statistics module offers several types of **All bookings statistics** designed to help you evaluate passenger volume, booking patterns, turnover, and profitability.
 
 #### Summary – when to use which statistics
 
@@ -229,8 +251,8 @@ This usually happens because one of the key preconditions is not met:
 
 * No **Brand** is selected.
 * A date filter (Booking/Departure/Arrival) is missing either the **from** or **to** date.
-* You may have intervals defined but at least one booking in the result has departure date not falling into a defined weekly interval;
-* The booking departures in your search are over 12 months across.
+* You have weekly intervals defined, but at least one booking has a departure date outside those intervals.
+* Your filtered departures span more than **12 months**.
 * You changed filters but did not click **Display** before opening **Statistics**.
 
 Check these points, click **Display** again in **All bookings**, and then reopen the **Statistics** view.

@@ -1,8 +1,31 @@
+---
+description: >-
+  View the booking conversation log in Tourpaq Office. Review guest messages,
+  agent replies, timestamps, read status, and who handled the thread for support
+  and auditing.
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+---
+
 # Conversation
 
 ### **Overview**
 
-The **Conversation** (sometimes shown as **Conversation History**) tab displays the message log connected to the current booking. It helps you trace communication between a **guest** and your organization’s **Tourpaq users** (agents/support).
+The **Conversation** (sometimes shown as **Conversation History**) tab in **Tourpaq Office** displays the **booking communication log**. It helps you trace messages between a **guest** and your organization’s Tourpaq users (agents/support), including timestamps and read status.
 
 Use this tab when you need to:
 

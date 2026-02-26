@@ -1,8 +1,15 @@
+---
+description: >-
+  Use the Tourpaq Office Profit tab to analyze booking profitability. Compare
+  turnover vs cost per component, review margin, and adjust internal costs
+  (hotel, transport, extras) when needed.
+---
+
 # Profit
 
 ### **Overview**
 
-The **Profit** tab provides a detailed breakdown of the financial outcome of a booking by comparing **turnover**, **costs**, and **profit**. It shows how each component (for example, room, transport, extras, discounts) contributes to the total revenue and expenses of the booking.
+The **Profit** tab in **Tourpaq Office** provides a detailed breakdown of **booking profitability** by comparing **turnover**, **cost**, and **profit (margin)**. It shows how each component (room, transport, extras, discounts/supplements) contributes to total revenue and expenses.
 
 ***
 
@@ -89,11 +96,11 @@ The **Profit** tab provides a detailed breakdown of the financial outcome of a b
 
 ***
 
-### **Cost Cache Tab Overview**
+### **Cost Cache tab overview**
 
 The **Cost Cache** tab shows a summarised breakdown of all cost components associated with each passenger in a booking. It is used to validate and compare **cached** cost data against the current calculation, ensuring that prices are consistent and up to date.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (2) (1) (1).png" alt="Cost Cache tab showing cached hotel, transport, product, and insurance costs per passenger"><figcaption></figcaption></figure>
 
 #### **Key columns**
 
