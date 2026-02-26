@@ -1,7 +1,7 @@
 ---
 description: >-
-  Tourpaq Office dashboard overview. Learn widgets, filters, KPIs, and how to
-  monitor bookings, offers, customers, and financial performance.
+  Use the Tourpaq Office Dashboard to track bookings, offers, customers, service
+  cases, and financial KPIs with widgets and filters.
 ---
 
 # Dashboard
