@@ -1,3 +1,10 @@
+---
+description: >-
+  Offer email template structure in Tourpaq Office. Covers header, message,
+  comments, trip summary, extras, insurance, footer, and where to maintain
+  standard texts per brand.
+---
+
 # Offer template
 
 ### Overview
@@ -126,3 +133,55 @@ These are common elements you may see when working with offer templates and cust
 {% hint style="info" %}
 If you need to change standard texts (header/footer/insurance/extras descriptions), those are normally managed in the brand offer text settings. See [Select text for Offers](select-text-for-offers.md).
 {% endhint %}
+
+### FAQ
+
+<details>
+
+<summary><strong>Where do I change the standard header/footer texts used in offer emails?</strong></summary>
+
+These texts are usually managed in your brand’s offer text settings.
+
+See [Select text for Offers](select-text-for-offers.md).
+
+</details>
+
+<details>
+
+<summary><strong>Why does our offer email look different from this documentation?</strong></summary>
+
+Offer templates are often customized per brand/agency.
+
+Your installation may use a custom-built template with different sections or wording.
+
+</details>
+
+<details>
+
+<summary><strong>Can I add a personal message per customer?</strong></summary>
+
+Yes.
+
+Most templates include a personal message section that the agent edits per offer.
+
+</details>
+
+<details>
+
+<summary><strong>Can we add dynamic fields or placeholders?</strong></summary>
+
+In many setups, yes.
+
+Support depends on how your template is built (for example a dynamic **Message** variable).
+
+</details>
+
+<details>
+
+<summary><strong>Where do option-specific comments show up?</strong></summary>
+
+If the offer contains multiple options, comments are typically shown per option inside the offer bundle.
+
+Use them to explain what’s included and why you recommend a specific hotel/room.
+
+</details>

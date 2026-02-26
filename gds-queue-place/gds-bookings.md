@@ -1,3 +1,10 @@
+---
+description: >-
+  Manage flight bookings synchronized with a GDS (Amadeus/Travelport). Covers
+  PNR sync, status lifecycle, submitting to GDS, queue handling, and
+  troubleshooting.
+---
+
 # GDS Bookings
 
 ### Overview

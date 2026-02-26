@@ -1,8 +1,30 @@
+---
+description: >-
+  Transport reporting impact of No-show (pax removed outbound/homebound). Covers
+  scheduler types (Both Ways, Outbound, Homebound, OutHome) and expected report
+  output.
+---
+
 # Remove pax on outbound or homebound only, Transport Reporting Impact
 
 ### Overview
 
-This documentation outlines how the system handles bookings marked with **"No-show"** in various transport reporting types. It details the steps to generate the reports and describes the expected results depending on the scheduler type used.
+This page explains how **No-show** affects **transport reporting**.
+
+Reporting behavior depends on the transport **scheduler type** (Both Ways / Outbound / Homebound / OutHome).
+
+### Key terms (search keywords)
+
+* **No-show**
+* **remove pax outbound only**
+* **remove pax homebound only**
+* **transport reporting**
+* **Transport → Communication** (schedulers)
+* **Both Ways scheduler**
+* **Outbound scheduler**
+* **Homebound scheduler**
+* **OutHome scheduler**
+* **one-way out / one-way home**
 
 ***
 
@@ -95,3 +117,61 @@ To ensure accurate reporting of transport bookings while excluding or treating d
 
 * Ensure that the **departure date** selected includes the time frame where **"No-show"** bookings exist.
 * “No-show” passengers are excluded from reporting where appropriate to maintain accuracy in passenger manifests.
+
+### FAQ
+
+<details>
+
+<summary><strong>Why does a No-show passenger show as a one-way passenger in the report?</strong></summary>
+
+Some scheduler types treat “No-show on one direction” as the passenger still travelling on the other direction.
+
+Example: With **Both Ways**, a pax marked No-show on outbound can appear as **one-way homebound**.
+
+</details>
+
+<details>
+
+<summary><strong>Why is a passenger not listed at all?</strong></summary>
+
+Most common reasons:
+
+* Pax is **No-show on both directions**.
+* The report is generated for a departure date that does not match the pax travel line.
+* The scheduler type excludes No-show cases (common for Outbound/Homebound schedulers).
+* It is a **one-way booking** where the pax is No-show (excluded by the rules above).
+
+</details>
+
+<details>
+
+<summary><strong>Which scheduler types can turn No-show into one-way in reporting?</strong></summary>
+
+* **Both Ways scheduler** can convert No-show on one direction into the opposite one-way.
+* **OutHome scheduler** lists No-show outbound as **one-way out** and No-show homebound as **one-way home**.
+
+**Outbound** and **Homebound** schedulers typically exclude No-show passengers for their direction.
+
+</details>
+
+<details>
+
+<summary><strong>Where do I check which scheduler type a transport uses?</strong></summary>
+
+Open the transport, then go to **Communication**.
+
+All schedulers configured for that transport are listed there.
+
+</details>
+
+<details>
+
+<summary><strong>How can I reproduce and verify the behavior?</strong></summary>
+
+1. Pick a transport with known No-show cases.
+2. In **Communication**, select the scheduler you want to test.
+3. Set **No start** so the report generates.
+4. Generate using a departure date where the No-show travel lines exist.
+5. Compare the output against the rules for that scheduler type.
+
+</details>

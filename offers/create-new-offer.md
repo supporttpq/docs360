@@ -1,3 +1,10 @@
+---
+description: >-
+  Create and send a customer offer in Tourpaq Office. Select customer/offeree,
+  search transport and hotel options, review pricing, add upsells, write
+  comments, and send the offer email.
+---
+
 # Create new offer
 
 ### Overview

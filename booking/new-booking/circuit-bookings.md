@@ -34,16 +34,6 @@ Unlike a standard booking with one hotel and a return transport, a circuit booki
 
 ***
 
-### Key terms (search keywords)
-
-* **Circuit booking**: one booking with multiple hotels and multiple transport legs
-* **Multi-destination booking**: itinerary across multiple resorts/countries
-* **Multi-hotel booking**: several hotel stays in one booking
-* **One-way flights**: separate out/home legs instead of a round trip
-* **Custom hotel days**: hotel stay lengths that don’t follow a fixed package
-
-***
-
 ### Purpose
 
 * To provide greater flexibility in travel planning.

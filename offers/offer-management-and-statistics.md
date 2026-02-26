@@ -1,3 +1,10 @@
+---
+description: >-
+  Manage sent offers in Tourpaq Office with follow-up and expiration dates.
+  Learn default timing setup, converting offers to bookings, exporting offers,
+  and using Statistics to track success rate.
+---
+
 # Offer management and statistics
 
 ### Overview

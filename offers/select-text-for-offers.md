@@ -1,3 +1,10 @@
+---
+description: >-
+  Manage brand-specific offer texts, images, placeholders, and reminder
+  email/SMS templates in Tourpaq Office. Configure headers/footers, insurance
+  texts, close reasons, and follow-up schedules.
+---
+
 # Select text for Offers
 
 ### Overview
@@ -6,7 +13,7 @@
 
 This is typically configured **per Brand**, so each brand can have its own logo, email header/footer, insurance texts, and reminder messages.
 
-<figure><img src="../.gitbook/assets/image (272).png" alt="Select text for Offers / Select Offer settings"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (272).png" alt="Select text for Offers / Select Offer settings"><figcaption><p>Brand settings for offer texts, images, placeholders, and reminders.</p></figcaption></figure>
 
 ***
 
@@ -200,3 +207,57 @@ See [Create new offer](create-new-offer.md) if you need help creating a test off
 * Avoid internal terms (for example, “offeree”) in customer-facing texts.
 * Keep the next step obvious (for example: “Click the link in this email to view your offer”).
 * Review and update standard texts when you change branding or contact details.
+
+### FAQ
+
+<details>
+
+<summary><strong>Why didn’t my changes show up in the offer email?</strong></summary>
+
+Most common causes:
+
+* You edited the wrong **Brand**.
+* The offer template your brand uses does not display that specific field.
+* You’re testing with an old offer draft. Create a new test offer and send it again.
+
+</details>
+
+<details>
+
+<summary><strong>Why do placeholders show as plain text (for example <code>[CustomerFirstName]</code>)?</strong></summary>
+
+Only supported placeholders are replaced.
+
+Check spelling and bracket format. Unsupported placeholders will appear as plain text.
+
+</details>
+
+<details>
+
+<summary><strong>How do reminder schedule days work?</strong></summary>
+
+Enter comma-separated offsets like `3,7,14`.
+
+Each number is a day offset used by your reminder scheduler, based on your setup.
+
+</details>
+
+<details>
+
+<summary><strong>Why is the logo/image stretched or cropped?</strong></summary>
+
+Image rendering depends on the offer template.
+
+Check the recommended sizes in the field tooltip, then upload an image with the correct dimensions.
+
+</details>
+
+<details>
+
+<summary><strong>Do we have to use automatic reminders?</strong></summary>
+
+No.
+
+You can keep reminders disabled and follow up manually, using offer follow-up dates and your sales process.
+
+</details>

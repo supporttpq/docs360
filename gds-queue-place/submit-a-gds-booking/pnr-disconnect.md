@@ -1,3 +1,10 @@
+---
+description: >-
+  Disconnect a Tourpaq booking from its Amadeus PNR to regain editability.
+  Covers when to use it, workflow steps, reassignment criteria, and cancellation
+  handling.
+---
+
 # PNR Disconnect
 
 #### Overview
@@ -33,7 +40,7 @@ Use this feature when:
 * Booking
 * GDS tab
 
-<figure><img src="../../.gitbook/assets/image (588).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (588).png" alt="GDS tab in a booking showing the PNR Disconnect action"><figcaption><p>Find <strong>Disconnect PNR</strong> in the booking’s GDS tab.</p></figcaption></figure>
 
 #### Functionality
 
@@ -60,19 +67,19 @@ The booking returns to a standard editable state, similar to a non-GDS booking.
 2. Go to the GDS tab
 3.  Click **Disconnect PNR**
 
-    <figure><img src="../../.gitbook/assets/image (589).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (589).png" alt="Disconnect PNR button in the GDS tab"><figcaption><p>Click <strong>Disconnect PNR</strong>.</p></figcaption></figure>
 4.  Confirm the action
 
-    <figure><img src="../../.gitbook/assets/image (590).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (590).png" alt="Confirmation dialog for disconnecting the PNR"><figcaption><p>Confirm the disconnect action.</p></figcaption></figure>
 5. Apply the required changes:
    * Update passengers or titles in Tourpaq
    *   Apply corresponding changes in Amadeus if needed
 
-       <figure><img src="../../.gitbook/assets/image (591).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../.gitbook/assets/image (591).png" alt="Amadeus change example after PNR disconnect"><figcaption><p>Apply the same structural changes in Amadeus if required.</p></figcaption></figure>
 6. Save the booking after making the changes.
 7.  Reassign the PNR to the booking and continue the synchronization.
 
-    <figure><img src="../../.gitbook/assets/image (592).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (592).png" alt="Reassign PNR action in the GDS tab"><figcaption><p>Reassign the PNR after both systems match again.</p></figcaption></figure>
 
 For a PNR to be assigned to Amadeus, it must meet these criteria:
 
@@ -85,15 +92,15 @@ If one of these criteria is not met, the system will display an error message.
 
 Example: In the original booking, there are 2 MR passengers:
 
-<figure><img src="../../.gitbook/assets/image (593).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (593).png" alt="Original booking passenger list with two MR passengers"><figcaption><p>Example: original booking has two MR passengers.</p></figcaption></figure>
 
 And we changed one of them to an MS passenger:
 
-<figure><img src="../../.gitbook/assets/image (594).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (594).png" alt="Updated passenger list after changing one passenger title to MS"><figcaption><p>After changing a title, passenger distribution per gender changes.</p></figcaption></figure>
 
 When we try to assign the PNR, we will receive a warning message and the PNR will not be assigned:
 
-<figure><img src="../../.gitbook/assets/image (595).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (595).png" alt="Warning message when PNR reassignment criteria are not met"><figcaption><p>PNR reassignment is blocked if criteria don’t match.</p></figcaption></figure>
 
 #### Important notes
 
@@ -109,10 +116,10 @@ To cancel a booking in Amadeus, follow these steps:
 * Go to the **GDS tab**
 *   Assign the **PNR Code**
 
-    <figure><img src="../../.gitbook/assets/image (597).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (597).png" alt="Assign PNR code field in GDS tab"><figcaption><p>Assign the PNR code in the GDS tab.</p></figcaption></figure>
 *   Click on **Cancel Booking**
 
-    <figure><img src="../../.gitbook/assets/image (596).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (596).png" alt="Cancel Booking button in the GDS tab"><figcaption><p>Cancel Booking sends the cancellation to Amadeus.</p></figcaption></figure>
 * Confirm the action
 
 ### FAQ

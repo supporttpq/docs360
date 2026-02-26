@@ -16,13 +16,6 @@ description: >-
 
 This is also used for **open-jaw** style trips, where outbound and return are different transports.
 
-### Key terms (search keywords)
-
-* **2 one-way flights**: outbound + homebound in one booking
-* **One-way out / one-way home**: OW OUT / OW HOME availability
-* **Open-jaw booking**: return flight is not the same as outbound
-* **Shadow passenger**: the duplicated passenger row used to separate the two flights
-
 ### Preconditions
 
 Before you start:
@@ -107,3 +100,62 @@ In exports, passengers can appear **twice** due to the two flight legs.
 In [Lists](../../export-1/lists.md), passengers are grouped by flight departure/arrival dates for guide lists.
 
 <figure><img src="../../.gitbook/assets/image (250).png" alt="Export list grouped by flight departure and arrival dates for a guide list"><figcaption><p>Export lists: passengers are grouped per flight leg for guide lists.</p></figcaption></figure>
+
+### FAQ
+
+<details>
+
+<summary><strong>When should I use a 2 one-way booking?</strong></summary>
+
+Use it when outbound and homebound are **different transports**.
+
+Typical cases:
+
+* **Open** trips (outbound and return are not the same route).
+* You want to sell **one-way seat allotment** on both legs (OW OUT + OW HOME).
+
+</details>
+
+<details>
+
+<summary><strong>Why do passengers show up twice?</strong></summary>
+
+Because the booking contains **two flight legs**.
+
+Tourpaq duplicates each passenger into a **shadow passenger** row.
+
+This lets the system separate services and pricing per leg (outbound vs homebound).
+
+</details>
+
+<details>
+
+<summary><strong>Do products, supplements, and discounts apply to both legs?</strong></summary>
+
+Not automatically.
+
+They can be applied **per leg**, because each passenger exists as a normal row + a shadow row.
+
+If something looks “missing” on one flight, check which passenger row the product was added to.
+
+</details>
+
+<details>
+
+<summary><strong>Why is the homebound one-way flight selection limited?</strong></summary>
+
+The homebound leg is typically constrained by your **gateway rules**.
+
+Example: If the booking departs from Billund, the return is usually required back to Billund.
+
+</details>
+
+<details>
+
+<summary><strong>Why are passengers doubled in exports?</strong></summary>
+
+Many exports are **leg-based**.
+
+That means one booking with two one-way flights can produce **two rows per passenger** (one per leg).
+
+</details>

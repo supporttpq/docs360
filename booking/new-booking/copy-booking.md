@@ -36,14 +36,6 @@ This is useful when you:
 
 It saves time and reduces manual errors.
 
-### Key terms (search keywords)
-
-* **Copy Booking**: copy passengers into a new booking draft
-* **Booking number**: the original booking you copy from
-* **New Booking**: where you create the new booking draft
-* **Take Allotment**: step where seats/beds are reserved and the copy happens
-* **Reschedule / moved booking**: common scenario where you copy passengers first
-
 ### Before you start
 
 Make sure you have:

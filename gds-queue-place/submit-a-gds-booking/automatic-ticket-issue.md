@@ -1,3 +1,10 @@
+---
+description: >-
+  Automatically issue Amadeus GDS e-tickets based on ticketing deadlines and
+  payment status. Covers setup path, daily service behavior, eligibility rules,
+  and operational flow.
+---
+
 # Automatic ticket issue
 
 ### Overview
@@ -29,7 +36,7 @@ By issuing tickets closer to the ticketing time limit, financial flexibility is 
 
 Setup → System Setup → Transport Providers → Amadeus tab → Automatic ticket issuing
 
-<figure><img src="../../.gitbook/assets/image (667).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (667).png" alt="System Setup → Transport Providers → Amadeus showing Automatic ticket issuing toggle"><figcaption><p>Enable Automatic ticket issuing in System Setup → Transport Providers → Amadeus.</p></figcaption></figure>
 
 #### Behavior
 
@@ -48,18 +55,18 @@ When disabled:
 
 1.  Reservation exists in Amadeus.
 
-    <figure><img src="../../.gitbook/assets/image (663).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (663).png" alt=""><figcaption><p>Reservation is created and visible in Amadeus.</p></figcaption></figure>
 2.  The deposit must be paid.
 
-    <figure><img src="../../.gitbook/assets/image (665).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (665).png" alt=""><figcaption><p>Deposit/payment status must meet eligibility rules.</p></figcaption></figure>
 3.  The ticketing deadline is registered.
 
-    <figure><img src="../../.gitbook/assets/image (664).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (664).png" alt=""><figcaption><p>Ticketing deadline (time limit) is stored for the reservation.</p></figcaption></figure>
 4. The system runs a daily ticket-issuing service.
 5. If the deadline threshold is met and the booking is eligible:
    *   The ticket is issued.
 
-       <figure><img src="../../.gitbook/assets/image (666).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../.gitbook/assets/image (666).png" alt="Ticket issued automatically after deadline threshold is met and booking is paid"><figcaption><p>When eligible and within threshold, the ticket is issued automatically.</p></figcaption></figure>
 6. For same-day deadlines after the daily run:
    * The system still issues tickets automatically if the booking is paid.
 

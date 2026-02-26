@@ -1,3 +1,10 @@
+---
+description: >-
+  Child Price (CH) in the Price List uses hotel and brand max child age limits.
+  Learn the Child Profit Margin scope, CH eligibility validation, and Office/Web
+  booking recalculation behavior.
+---
+
 # Child Price in Price List
 
 ### Overview
@@ -40,14 +47,14 @@ When calculating whether **Child Price (CH)** applies, the system determines the
     * Defined in:\
       `Hotel > Basic Setup > Additional Settings`
 
-    <figure><img src="../../../.gitbook/assets/image (565).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (565).png" alt="Hotel Basic Setup → Additional Settings showing the hotel-level child age limit"><figcaption><p>Hotel-level child age limit (takes priority over brand fallback).</p></figcaption></figure>
 
     * If set, this value always takes priority
-2. **Brand-level child age limit (fallback)**&#x20;
+2. **Brand-level child age limit (fallback)**
 
-*   Defined in `User  > Brands > Other Settings`&#x20;
+*   Defined in `User > Brands > Other Settings`
 
-    <figure><img src="../../../.gitbook/assets/image (601).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (601).png" alt="Brand settings showing the Max Child Age fallback used when hotel child age limit is not set"><figcaption><p>Brand max child age fallback (used only if the hotel has no child age limit).</p></figcaption></figure>
 * Used only if the hotel has no child age configured
 * Ensures pricing still works for hotels without a specific rule
 
@@ -89,27 +96,66 @@ When a customer changes a passenger’s age and saves the passenger details:
 
 ### Result
 
-This ensures accurate pricing and cost calculation.\
-It also protects expected profit margins.\
+This ensures accurate pricing and cost calculation. It also protects expected profit margins.\
 Hotels without a defined child age policy are still supported.
 
 ### FAQ
 
-**When is Child Price (CH) applied?**\
-Child Price is applied only when the passenger’s age is less than or equal to the allowed child age limit.
+<details>
 
-**Which child age limit does the system use?**\
-Tourpaq first checks the child age limit defined on the hotel.\
-If no hotel value exists, the system uses the maximum child age defined on the brand.
+<summary><strong>When is Child Price (CH) applied?</strong></summary>
 
-**What happens if a passenger is older than the allowed child age?**\
-The Child Price is not applied. The passenger is priced as an adult.
+Child Price is applied only when the passenger’s age is **less than or equal to** the allowed child age limit.
 
-**When is pricing recalculated?**\
-Pricing is recalculated whenever a passenger’s age is entered or changed and the passenger details are saved, both in Office Booking and Web Booking.
+</details>
 
-**Does this affect all child pricing setups?**\
-No. This behavior applies only to companies using the Child Profit Margin feature. Other child pricing models are not impacted.
+<details>
 
-**Do agents need to manually update prices after changing an age?**\
-No. The system automatically recalculates pricing when passenger details are saved.
+<summary><strong>Which child age limit does the system use?</strong></summary>
+
+Tourpaq checks in this order:
+
+1. Hotel-level child age limit
+2. Brand-level max child age (fallback)
+
+</details>
+
+<details>
+
+<summary><strong>What happens if a passenger is older than the allowed child age?</strong></summary>
+
+Child Price is not applied.
+
+The passenger is priced as an adult, even if CH exists in the Price List.
+
+</details>
+
+<details>
+
+<summary><strong>When is pricing recalculated?</strong></summary>
+
+Whenever a passenger’s age is entered or changed and passenger details are saved.
+
+This applies to both **Office Booking** and **Web Booking**.
+
+</details>
+
+<details>
+
+<summary><strong>Does this affect all child pricing setups?</strong></summary>
+
+No.
+
+This behavior applies only to companies using **Child Profit Margin**.
+
+</details>
+
+<details>
+
+<summary><strong>Do agents need to manually update prices after changing an age?</strong></summary>
+
+No.
+
+The system automatically recalculates pricing when passenger details are saved.
+
+</details>

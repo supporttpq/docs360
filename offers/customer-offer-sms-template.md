@@ -1,3 +1,10 @@
+---
+description: >-
+  Configure offer SMS templates per brand in Tourpaq Office. Use placeholders
+  like [Message], test messages, and ensure the correct brand template is used
+  when sending customer offers.
+---
+
 # Customer Offer SMS template
 
 ### Overview
@@ -6,7 +13,7 @@ A **Customer Offer SMS template** is a reusable message format you can use when 
 
 Instead of writing the full SMS every time, you create a template once (per Brand) and then only write the _custom_ part of the message when you send it.
 
-<figure><img src="../.gitbook/assets/image (273).png" alt="Customer Offer SMS template settings"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (273).png" alt="Customer Offer SMS template settings"><figcaption><p>SMS template settings are configured per brand under Select Offer.</p></figcaption></figure>
 
 ***
 
@@ -36,7 +43,7 @@ When the SMS is sent:
 2. It replaces placeholders like `[CustomerFirstName]` and `[BrandName]`.
 3. It replaces `[Message]` with the text you wrote for this specific customer.
 
-<figure><img src="../.gitbook/assets/image (274).png" alt="SMS configuration and variables"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (274).png" alt="SMS configuration and variables"><figcaption><p>Placeholders (variables) are replaced when the SMS is sent.</p></figcaption></figure>
 
 {% hint style="success" %}
 If your template does **not** include `[Message]`, the custom text you type when sending may not appear in the outgoing SMS.
@@ -106,7 +113,7 @@ Thank you for choosing [BrandName].
 
 When you send the SMS from an offer, whatever you type in the offer’s message field replaces `[Message]`.
 
-<figure><img src="../.gitbook/assets/image (275).png" alt="Example of SMS template result"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (275).png" alt="Example of SMS template result"><figcaption><p>Example output: the text you type replaces <code>[Message]</code>.</p></figcaption></figure>
 
 ***
 
@@ -123,3 +130,59 @@ When you send the SMS from an offer, whatever you type in the offer’s message 
 
 * [Select text for Offers](select-text-for-offers.md)
 * [Customer offers automatic flow](customer-offer-automatic-flow.md)
+
+### FAQ
+
+<details>
+
+<summary><strong>Why didn’t my custom text show up in the SMS?</strong></summary>
+
+Your template must include `[Message]`.
+
+If `[Message]` is missing, the text you type when sending may not appear.
+
+</details>
+
+<details>
+
+<summary><strong>Why do placeholders show as plain text?</strong></summary>
+
+Only supported placeholders are replaced.
+
+Check spelling and bracket format. Unsupported placeholders remain as plain text.
+
+</details>
+
+<details>
+
+<summary><strong>Why is the wrong SMS template used?</strong></summary>
+
+Templates are configured per **Brand**.
+
+If you edit the wrong brand (or send the offer under another brand), the outgoing SMS can use a different template.
+
+</details>
+
+<details>
+
+<summary><strong>How should I test changes safely?</strong></summary>
+
+Send a test SMS to an internal number.
+
+Verify:
+
+* placeholder values are inserted
+* the text you typed appears where `[Message]` is placed
+* the SMS length is reasonable
+
+</details>
+
+<details>
+
+<summary><strong>Can I include links in the SMS?</strong></summary>
+
+Yes.
+
+Keep the message short and test the link on mobile.
+
+</details>

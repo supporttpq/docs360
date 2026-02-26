@@ -1,3 +1,10 @@
+---
+description: >-
+  Submit GDS bookings from the GDS tab in Tourpaq Office. Covers Take Allotment
+  checks, GDS Pending, low-cost carriers (TicketOK), and Galileo ticketing
+  limits and payment rules.
+---
+
 # Submit a GDS Booking
 
 ### **Overview**
@@ -5,7 +12,7 @@
 The first phase of the **GDS flight booking process** follows the same logic as for **Charter Transport**.\
 The process ensures that flight availability, pricing, and ticketing rules are correctly handled through the integrated GDS system.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Booking with GDS transport showing Take Allotment and GDS Pending flow"><figcaption><p>GDS booking flow starts like charter: Take Allotment validates availability and price.</p></figcaption></figure>
 
 ### **Booking Phase**
 
@@ -35,7 +42,7 @@ When submission is initiated, the same checks made during the â€œTake Allotmentâ
 If the selected flight belongs to a **low-cost carrier**, the booking automatically moves to T**icketOK** status.\
 In this case, the **ticket is generated directly by the airline**, and no further submission or ticketing step is required.
 
-![!](https://docs.tourpaq.com/assets/images/7-999dd91587d10624ff9fcebbe27de7e1.png)
+<figure><img src="https://docs.tourpaq.com/assets/images/7-999dd91587d10624ff9fcebbe27de7e1.png" alt="Low-cost carrier booking automatically set to TicketOK"><figcaption><p>Low-cost carriers typically move straight to <strong>TicketOK</strong>.</p></figcaption></figure>
 
 #### **Galileo Flights**
 
@@ -48,7 +55,7 @@ For **Galileo flights**, an additional **ticketing step** is required.
 Unlike other GDS bookings, **submission to Galileo** can be done **without waiting for payment**.\
 However, **ticket requests** are only allowed **after payment has been received**. Once payment is registered, the user can use the **GDS tab** to send the ticket request.
 
-![!](https://docs.tourpaq.com/assets/images/8-eec6d592779e58b0e1b5a14ba4bd4ab2.png)
+<figure><img src="https://docs.tourpaq.com/assets/images/8-eec6d592779e58b0e1b5a14ba4bd4ab2.png" alt="Galileo GDS booking showing ticketing step and ticketing limit behavior"><figcaption><p>Galileo flights require a separate ticketing step and enforce a ticketing limit.</p></figcaption></figure>
 
 ### **Expected Behavior**
 

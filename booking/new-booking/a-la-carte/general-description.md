@@ -1,3 +1,9 @@
+---
+description: >-
+  A la Carte booking flow in Tourpaq Office: create New A La Carte Booking,
+  resolve ERROR→OK, then add hotels/transports. Includes admin setup notes.
+---
+
 # General Description
 
 ### Overview
@@ -12,14 +18,6 @@ If you do not see **Booking → New A La Carte Booking**, ask an admin.
 
 ### Before you start
 
-***
-
-{% hint style="info" %}
-Some discounts and supplements are rule-based.
-
-Those values may be **locked** in the interface.
-{% endhint %}
-
 * Start with **only a customer**.
 * The customer becomes **Passenger 1** automatically.
 * Add **insurance**, **discounts**, and **supplements**.
@@ -31,7 +29,11 @@ You start with a **customer** and add trip components later.
 
 An **A la Carte booking** lets you create a booking with **minimal details**.
 
-***
+{% hint style="info" %}
+Some discounts and supplements are rule-based.
+
+Those values may be **locked** in the interface.
+{% endhint %}
 
 ### Who is this for?
 

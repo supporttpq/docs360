@@ -1,3 +1,9 @@
+---
+description: >-
+  Monitor bookings stuck in the GDS queue. Review status and balances, then use
+  Place Bookings to resubmit reservations for processing.
+---
+
 # GDS Queue Place
 
 This page displays reservations that are in the queue for processing in the GDS (Global Distribution System). These reservations have not been automatically completed and require either additional verification or manual action to be placed correctly.
@@ -6,8 +12,8 @@ This page displays reservations that are in the queue for processing in the GDS 
 
 ### Page Elements
 
-\
-a) **Main Table—Booking List**\
+\
+a) **Main Table—Booking List**\
 The table contains essential information about each booking in the queue, with the following columns:
 
 * Booking—Unique identifier of the booking in the system.
@@ -19,10 +25,8 @@ The table contains essential information about each booking in the queue, with t
 * Balance—The difference between the booking total and the amount paid. A balance other than “0” indicates an outstanding payment.
 * Last Update—The date the booking was last modified.
 
-&#x20;**b) “Place Bookings” button**\
-&#x20;This button, located at the top right of the page, allows users to retry bookings that are in the queue. This can be a solution to resubmit bookings to the GDS after any issues have been corrected.
-
-
+**b) “Place Bookings” button**\
+This button, located at the top right of the page, allows users to retry bookings that are in the queue. This can be a solution to resubmit bookings to the GDS after any issues have been corrected.
 
 ### **Workflow**
 
@@ -38,6 +42,6 @@ The table contains essential information about each booking in the queue, with t
 
 | Issue                                 | Possible cause                           | Recommended solution                             |
 | ------------------------------------- | ---------------------------------------- | ------------------------------------------------ |
-| QueueBooking remains in GDS Queue     |  Lack of confirmation from supplier      | Manually check and resubmit booking              |
+| QueueBooking remains in GDS Queue     | Lack of confirmation from supplier       | Manually check and resubmit booking              |
 | Balance remaining in “Balance” column | Payment not fully processed              | Check payments and contact customer if necessary |
 | Status unchanged after resubmission   | Technical error or synchronization issue | Contact IT support team for assistance           |
