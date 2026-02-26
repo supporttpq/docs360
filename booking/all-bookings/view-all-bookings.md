@@ -1,8 +1,32 @@
+---
+description: >-
+  Use Tourpaq Office View all bookings to search the All bookings list, apply
+  booking filters, save views, and open booking details for reporting.
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+---
+
 # View all bookings
 
 ### **Overview**
 
-The **View All Bookings** page lets you **search, filter, and review bookings** across one or more brands. From here you can quickly see who is travelling when, check key details, and move on to statistics or totals if needed.
+The **View all bookings** page is your main **booking search** view inside **Tourpaq Office → All bookings**. Use it to **search, filter, and review bookings** across one or more brands.
+
+From this booking list, you can open booking details and continue into [Statistics in All bookings](statistic-in-all-bookings.md) or [All bookings Totals](all-bookings-totals.md) for reporting.
 
 You access this page from **Booking → All Bookings**.
 
@@ -12,10 +36,10 @@ You access this page from **Booking → All Bookings**.
 
 Use **View All Bookings** to:
 
-* See a centralized list of all bookings that match your filters.
-* Apply advanced filters on **dates, transports, hotels, users, brands**, and more.
-* Prepare the data set that will be used in **Statistics** and **Totals** views.
-* Save filter combinations as **views** so you can reuse them for recurring reporting.
+* Work with a centralized **All bookings list** for the selected brand(s).
+* Apply **booking filters** on **dates, transports, hotels, users, brands**, and status.
+* Prepare the filtered result set used by **Statistics** and **Totals**.
+* Save filter combinations as **saved views** for recurring **booking reporting**.
 
 ***
 
@@ -38,11 +62,11 @@ If you get no results, first check that a **Brand** is selected and that any dat
 #### 1. Open the page
 
 * Go to **Booking → All Bookings**.
-* Select the **Brand** you want to work with.
+* Select the **Brand** you want to work with (required).
 
 #### 2. Set your filters
 
-Filters narrow down which bookings are shown.
+Filters narrow down which bookings are shown in the booking list.
 
 | **Filter name**              | **Description**                                                               |
 | ---------------------------- | ----------------------------------------------------------------------------- |
@@ -66,7 +90,7 @@ You can combine **one, several, or all** filters as needed.
 
 * After setting your filters, click **Display**.
 * The bookings list is updated to show only bookings that match your criteria.
-* Click a **Booking No.** in the list to open that booking.
+* Click a **Booking No.** (booking number) in the list to open booking details.
 
 #### 4. Save a view (optional)
 
@@ -82,7 +106,7 @@ Next time, select this saved view from the list to automatically re‑apply the 
 
 To change or remove an existing saved view:
 
-<figure><img src="../../.gitbook/assets/image (561).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (561).png" alt="Manage Views dialog in All bookings"><figcaption><p>Manage saved views in All bookings.</p></figcaption></figure>
 
 1. In the views bar, click the **three dots (⋯)** button to open **Manage Views**.
 2. In the **Manage Views** dialog:
@@ -108,9 +132,9 @@ For a more detailed description of all filters and statistics tools, see [All bo
 
 ### **Best practices**
 
-* Always confirm that a **Brand** is selected before clicking **Display** or **Statistics**.
+* Always confirm that a **Brand** is selected before clicking **Display** or opening **Statistics**.
 * Use complete **date ranges** (both From and To) to avoid empty or misleading results.
 * Start with **few filters** when troubleshooting (for example, looking for a missing booking), then narrow down.
 * If the filter area feels cluttered, use **Hide filters** to focus only on what you need.
 
-<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="View all bookings filter panel and booking list"><figcaption><p>View all bookings: filters on top, booking list below.</p></figcaption></figure>
