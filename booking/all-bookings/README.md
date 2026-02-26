@@ -1,7 +1,23 @@
 ---
 description: >-
-  Search, filter, and analyze bookings in Tourpaq Office. Use saved views, KPIs,
+  Search, filter, and analyze bookings in Tourpaq Office. Use saved views,
   statistics, turnover, profit, and totals for reporting.
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
 ---
 
 # All bookings
