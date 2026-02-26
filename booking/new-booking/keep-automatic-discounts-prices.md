@@ -1,13 +1,36 @@
-# Keep automatic discounts prices
+---
+description: >-
+  Control repricing when editing bookings in Tourpaq Office. Keep or recalculate
+  automatic discount, extras, and travel insurance prices using the “Keep
+  automatic discount prices” checkbox.
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+---
 
-## Keep automatic discount prices
+# Keep automatic discount prices
+
+## Keep automatic discount prices (prevent repricing on booking edits)
 
 ### Overview
 
-When you **edit an existing booking**, Tourpaq can either:
+When you **edit an existing booking** in **Tourpaq Office**, the system can either:
 
-* **Keep the original prices** (so the customer keeps the same discount/extra/insurance prices as when the booking was created), or
-* **Recalculate prices** using the **current** prices in the system.
+* **Keep the original prices** for automatic items (price lock), or
+* **Recalculate (reprice)** using the **current** prices and rules.
 
 This behavior is controlled by the checkbox **Keep automatic discount prices** on the booking.
 
@@ -25,31 +48,41 @@ If you allow recalculation, the booking total can change. Make sure this matches
 
 ### Where to find it
 
-On the **booking page** (Back Office), locate the checkbox:
+On the **booking page** in **Tourpaq Office** (Back Office), locate the checkbox:
 
 * **Keep automatic discount prices**
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (54).png" alt=""><figcaption><p>Checkbox on the booking page (Back Office).</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (54).png" alt="Booking page in Tourpaq Office showing the “Keep automatic discount prices” checkbox"><figcaption><p>Checkbox on the booking page.</p></figcaption></figure>
 
 ### How it works
 
 #### If the checkbox is checked
 
-Tourpaq will **keep the original prices** for discounts, extras, and insurance—even if those prices have changed in your price lists since the booking was created.
+Tourpaq Office will **keep the original prices** for discounts, extras, and insurance. This applies even if price lists changed after booking creation.
 
 Use this when you want to:
 
 * Preserve the customer’s agreed price
-* Avoid unexpected price differences when making small edits (names, contact details, comments, etc.)
+* Avoid unexpected price differences during small edits (names, contact details, comments)
 
 #### If the checkbox is unchecked
 
-Tourpaq will **refresh prices** for discounts, extras, and insurance when you modify the booking.
+Tourpaq Office will **refresh prices** for discounts, extras, and insurance when you modify the booking. This is a **reprice** of automatic items.
 
 Use this when you want to:
 
 * Ensure the booking matches the **latest** pricing rules and rates
-* Intentionally reprice after changes (for example if internal policy requires “current price”)
+* Intentionally reprice after changes (for example if policy requires “current price”)
+
+### Common use cases (when to keep vs reprice)
+
+* **Keep prices**: admin fixes and corrections.
+  * Name corrections.
+  * Updating email/phone.
+  * Internal comments.
+* **Reprice**: you want today’s prices.
+  * Adding an extra where current pricing should apply.
+  * Applying new discount rules after a policy change.
 
 ### Recommended workflow
 
@@ -79,7 +112,7 @@ After saving, review the booking totals to confirm the result matches what you i
 
 ### When this setting does not apply
 
-In some changes, Tourpaq will **always update prices** (regardless of checkbox state) because the booking has effectively been rebuilt:
+In some changes, Tourpaq Office will **always update prices** (regardless of checkbox state). This happens because the booking was effectively rebuilt:
 
 * Changing the **departure date**
 * Changing the **transport**
