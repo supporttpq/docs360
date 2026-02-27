@@ -31,7 +31,7 @@ Below is a description of each section visible in the Web Customer Center.
 **Purpose**\
 Used to describe what is included in a party package or special themed package.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **What to include**
 
