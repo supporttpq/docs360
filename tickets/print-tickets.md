@@ -1,6 +1,12 @@
+---
+description: >-
+  Print or email ticket PDFs in Tourpaq Office. Send a single e-ticket, copy to
+  an alternative email, or bulk reprint tickets per transport.
+---
+
 # Print Tickets
 
-### Print Tickets
+### Overview
 
 Use **Print Tickets** when you need to generate a ticket PDF for a single booking—either to print it, save it, or send it as an e-ticket email to the customer.
 

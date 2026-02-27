@@ -7,8 +7,6 @@ description: >-
 
 # Moved Booking
 
-## Moved booking (reschedule / rebook)
-
 ### Overview
 
 The **Moved booking** feature in **Tourpaq Office** is used when a customer’s trip must be **rescheduled**. This is also called **moving a booking** or **rebooking**.
@@ -103,6 +101,26 @@ Moving a booking links the two bookings, but it does not automatically transfer 
 
 * [Copy Booking](copy-booking.md)
 * [New Booking](new-booking/)
+
+### FAQ
+
+#### Do I move the original booking, or do I edit it?
+
+Use **Moved booking** when the itinerary changes so much that editing becomes messy.
+
+Create a new booking and link them. Then keep the new booking as the active one.
+
+#### Does “Moved” automatically cancel suppliers or reverse payments?
+
+No.
+
+Moved is primarily a **status + linkage** between bookings. Always verify supplier actions and payment handling in your own workflow.
+
+#### Should I send documents again on the new booking?
+
+Often yes.
+
+If the itinerary changed, reprint/resend documents from the new booking to avoid outdated information.
 
 ### Troubleshooting
 

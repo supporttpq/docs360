@@ -292,3 +292,39 @@ For a more detailed, totals‑focused explanation, see [All bookings Totals](all
 4. Click **Display** to see the booking results.
 5. Review the **statistics bar** for a quick overview.
 6. Click **Statistics** to view a detailed analytical breakdown by passengers, profit, turnover, and more.
+
+***
+
+### FAQ
+
+#### Why do I get no results?
+
+Most cases are filter-related:
+
+* No **Brand** selected.
+* Only one side of a date range is filled (From/To).
+* You filtered on a transport/hotel/status that does not exist in the period.
+
+#### Can I save my filters for daily reuse?
+
+Yes. Use **Save View** after you have the results you want.
+
+Use view names that match your workflow, like `Today’s arrivals` or `Last week – Brand DK`.
+
+#### Why is Profit negative?
+
+Profit is calculated as **turnover – cost** for the filtered bookings.
+
+Common causes of negative profit:
+
+* Missing or wrong **cost prices** on hotel/transport/extras.
+* Bookings created before cost rules were finalized.
+* Manual adjustments that override cost values.
+
+To drill down, open a booking and check **Profit** and **Economics**.
+
+#### How do I export a passenger/rooming list after filtering?
+
+Use the **Export → Lists** module after you have confirmed your period/transport/hotel scope.
+
+Make sure your filters match the intended operational output (for example, outbound vs homebound lists).

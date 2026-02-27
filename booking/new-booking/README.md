@@ -164,7 +164,7 @@ Use the following pages for detailed explanations of specific parts of the New B
 
 #### Special booking behaviours
 
-* [**Waitting list**](waitting-list.md) – How waiting lists work in bookings.
+* [**Waiting list (WL)**](waitting-list.md) – How waiting lists work in bookings.
 * [**Moved Booking**](moved-booking.md) – Moving a booking to another departure, hotel, etc.
 * [**Copy Booking**](copy-booking.md) – Copying an existing booking.
 * [**Circuit Bookings**](circuit-bookings.md) – Handling circuit or round‑trip bookings.

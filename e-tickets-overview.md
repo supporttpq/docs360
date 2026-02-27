@@ -1,3 +1,10 @@
+---
+description: >-
+  Monitor e-ticket emails in Tourpaq Office. Search by booking or email, check
+  delivery status (sent/opened/failed), preview messages, and export logs for
+  operations.
+---
+
 # E-tickets Overview
 
 ### **Overview**
@@ -29,7 +36,7 @@ It centralizes all communication around e-tickets into a single page.
 
 <figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-## **Filters**
+### Filters
 
 The filter section allows you to narrow down the list of emails.
 
@@ -56,7 +63,7 @@ The **Display** button shows/hides additional advanced filter fields.\
 
 ***
 
-## **Table Overview**
+### Table overview
 
 Each row represents one e-ticket email sent to a customer.
 
@@ -77,7 +84,7 @@ Each row represents one e-ticket email sent to a customer.
 
 ***
 
-## **Opening an E-Ticket (Preview)**
+### Opening an e-ticket (preview)
 
 Click on **any row** to open a preview of the actual e-ticket email that was sent.
 
@@ -90,7 +97,7 @@ This is useful for:
 
 ***
 
-## **Export**
+### Export
 
 In the top-right corner, the **Export** button allows you to download the entire filtered list in Excel format.
 
@@ -103,7 +110,7 @@ Useful for:
 
 ***
 
-## **Summary**
+### Summary
 
 The **E-Tickets Overview** provides:
 
@@ -133,4 +140,3 @@ It is an essential tool for customer service and departure operations.
 | The email was not opened.    | The customer has not checked it out yet.           | Contacting the customer for confirmation            |
 | "failed" status when sending | Invalid email address or technical problem         | Checking and correcting the address, then resending |
 | Email is not confirmed.      | The customer did not complete the required action. | Sending a reminder or contacting the customer       |
-

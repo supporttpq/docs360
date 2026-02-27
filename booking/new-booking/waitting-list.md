@@ -7,8 +7,6 @@ description: >-
 
 # Waiting list (WL)
 
-## Waiting list (WL) / waitlist bookings
-
 ### Overview
 
 Use **Waiting list (WL)** when a customer wants to book, but availability is sold out. This usually means there are not enough **transport seats** and/or **hotel beds** in allotment.
@@ -146,3 +144,35 @@ If the booking is still **WL** (waitlist):
 #### “The booking is WLOK but nothing is sent to the customer”
 
 This is expected. An agent must open the booking and **save/finalize** it so it becomes **OK** and triggers the normal email/payment flow.
+
+***
+
+### FAQ
+
+#### Can the customer pay while the booking is WL?
+
+Usually no.
+
+WL is not confirmed, so payment steps are typically disabled until the booking becomes **OK**.
+
+#### What triggers WL → WLOK?
+
+Tourpaq periodically checks whether enough allotment is available.
+
+When allotment becomes available, Tourpaq reserves it and changes the booking to **WLOK**.
+
+#### What triggers WLOK → OK?
+
+An agent must open the booking and **save/finalize** it.
+
+This is the step that typically enables normal emails, documents, and payments.
+
+#### How is priority decided if multiple WL bookings exist?
+
+Waitlist processing is typically handled in **creation order** (first created → first processed).
+
+#### Can I cancel a WL booking?
+
+Yes. Treat it like a normal booking record.
+
+Be clear internally that WL is not confirmed, so supplier handling and cancellation costs depend on your setup.

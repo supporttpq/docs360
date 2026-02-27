@@ -14,6 +14,7 @@
 
 ## Booking
 
+* [Booking overview](booking/booking-overview.md)
 * [All bookings](booking/all-bookings/README.md)
   * [View all bookings](booking/all-bookings/view-all-bookings.md)
   * [Statistics in All bookings](booking/all-bookings/statistic-in-all-bookings.md)
@@ -37,7 +38,7 @@
   * [Golf Courses](booking/new-booking/golf-courses.md)
   * [Extra Orders](booking/new-booking/extra-orders.md)
   * [Conversation](booking/new-booking/conversation.md)
-  * [Don't sent ticket option](booking/new-booking/dont-sent-ticket-option.md)
+  * [Don’t send ticket option](booking/new-booking/dont-sent-ticket-option.md)
   * [Coded discount booking](booking/new-booking/coded-discount-booking.md)
   * [Customer info / Details on customer card](booking/new-booking/customer-info-details-on-customer-card.md)
   * [QR code for vouchers](booking/new-booking/qr-code-for-vouchers.md)
