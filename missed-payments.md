@@ -1,16 +1,39 @@
+---
+description: >-
+  Find failed payment attempts in Tourpaq Office. Filter by agency, payment
+  method, and date. Retry placement, move payments to the right booking, or hide
+  entries.
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+---
+
 # Missed Payments
 
 ### Overview
 
 The **Missed Payments** page lists payment attempts that were **not successfully processed or recorded** in Tourpaq. It helps finance and support teams find these payments, understand what happened, and take action (for example: retry, move, or hide entries).
 
-<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Missed Payments list with filters and actions"><figcaption><p>Missed Payments: find failed payment attempts, then retry placement, move the payment to the correct booking, or hide the entry.</p></figcaption></figure>
 
 ### What this page is for
 
 Use this page to:
 
-* **Detect** failed payment captures or mismatched transactions
+* **Detect** failed payment captures or mismatched transactions (payment gateway status issues)
 * **Investigate** the payment details (method, amount, transaction code, status)
 * **Correct** the situation by retrying the booking/payment or moving the payment to the correct booking
 * **Keep the list tidy** by hiding entries that are no longer relevant
@@ -38,8 +61,8 @@ Each row is one missed payment attempt.
 The **ACTIONS** column contains icons you can use to manage a payment entry:
 
 * **Hide** the payment entry
-* **Retry to place booking**
-* **Retry to place payment**
+* **Retry place booking**
+* **Retry place payment**
 * **Move payment** to another booking
 * **View Tourpaq booking offer**
 * **View WebBooking offer**
@@ -86,6 +109,8 @@ Use the icons in **ACTIONS** to retry, move, view offers, or hide the entry.
 ### What happens after an issue is resolved
 
 When a payment is corrected, it moves out of the “missed” category and appears in the appropriate financial overview.
+
+For booking payments, you typically find it in [Payment Registration](finance/payment-registration.md) after it is registered.
 
 ***
 

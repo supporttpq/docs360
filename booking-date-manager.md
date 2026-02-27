@@ -1,19 +1,31 @@
+---
+description: >-
+  View and manage booking dates in Tourpaq Office. Filter bookings by brand,
+  booking period, departure period, and hotel, then update the alternative
+  booking date and save changes.
+---
+
 # Booking Date Manager
 
-### **Overview**
+### Overview
 
-The **Booking Date Manager** page provides an overview of all bookings within a selected time frame. It allows users to filter, view, and adjust booking dates for specific hotels and brands. The tool is particularly useful for managing booking periods and aligning them with the corresponding departure dates.
+**Booking Date Manager** in Tourpaq Office helps you find bookings in a date range and update **Alt. Booking Date**.
 
-### **Purpose**
+Use it when you need to align booking period reporting with departure periods, brands, and hotels.
 
-This page is designed to help travel operators easily monitor and modify booking-related information. It ensures that booking and departure dates are correctly aligned and allows the user to filter results based on various parameters, such as brand, date range, and hotel.\
-Administrators can use this page to quickly view all bookings made during a specific period and make necessary updates before saving the changes.
+### Purpose
+
+Use this page to:
+
+* Filter bookings by **brand**, **booking period**, **departure period**, and **hotel**
+* Review booking date and departure date per booking
+* Update **Alt. Booking Date** and save changes
 
 ***
 
-### **Fields and Filters**
+### Fields and filters
 
-<figure><img src=".gitbook/assets/image (430).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (430).png" alt="Booking Date Manager filters and booking list"><figcaption><p>Filter bookings by brand, booking period, departure period, and hotel. Update Alt. Booking Date and save changes.</p></figcaption></figure>
 
 | **Field**                  | **Description**                                                                                                                                           |
 | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -28,7 +40,7 @@ Administrators can use this page to quickly view all bookings made during a spec
 
 ***
 
-#### **Table Columns**
+#### Table columns
 
 | **Column**            | **Description**                                                                                                    |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------ |
@@ -41,16 +53,16 @@ Administrators can use this page to quickly view all bookings made during a spec
 
 ***
 
-#### **Buttons and Actions**
+#### Buttons and actions
 
 | **Button / Action**     | **Description**                                                                                                                                                            |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Save**                | After making any updates to the alternative booking dates, press **Save** to confirm and store the changes.                                                                |
+| **Save**                | After updating **Alt. Booking Date**, select **Save** to store the changes.                                                                                                |
 | **Pagination controls** | Located at the bottom of the page. They allow users to navigate between pages of booking records and adjust the number of bookings displayed per page (e.g., 25 per page). |
 
 ***
 
-### **💡 Tip**
+### Tip
 
 * To ensure accurate results, always set both **Booking start** and **Booking end** dates before pressing **Display**.
 * You can click on a **Booking No** to open a detailed view of that booking.
@@ -58,21 +70,21 @@ Administrators can use this page to quickly view all bookings made during a spec
 
 ***
 
-### **FAQ**
+### FAQ
 
 * **Do I need to set both Booking start and Booking end?**\
-  Yes. The page tip states you set both dates to ensure accurate results before selecting **Display**.
+  Yes. Set both dates before selecting **Display**.
 * **What happens when I change the selected brand?**\
-  The page shows data for the selected brand. The **Brands** field description states all displayed data corresponds to the chosen brand.
+  The list updates to show bookings for that brand.
 * **Are Departure start and Departure end required?**\
   No. They are optional filters used to limit results by departure date.
 * **Can I change the original Booking Date?**\
-  This page documents editing **Alt. Booking Date**. It does not state that the original **Booking Date** field is editable.
+  No. This page is for editing **Alt. Booking Date**.
 * **When are changes saved?**\
-  Changes are stored when you select **Save** after updating the alternative booking dates.
+  Changes are stored when you select **Save** after updating **Alt. Booking Date**.
 * **How do I open the details for a specific booking?**\
-  Select the booking number in the **Booking No** column. The documentation states each booking number is clickable.
+  Select the booking number in the **Booking No** column.
 * **What does “+ More filters / Clear” mean, and what does the number show?**\
-  It provides access to additional filters or clears active filters. The number shows how many filters are currently active.
+  &#xNAN;**+ More filters** opens more filter options. **Clear** resets all filters. The number shows how many filters are active.
 * **Why do I only see some bookings (and not all of them)?**\
-  The list only includes bookings that match your selected filters, especially the booking date range (bookings made on or after **Booking start** and on or before **Booking end**).
+  The list shows only bookings that match your filters, especially your booking date range.

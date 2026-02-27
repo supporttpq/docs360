@@ -1,16 +1,23 @@
+---
+description: >-
+  Import refund transactions from Business Central into Tourpaq Office Finance.
+  Validate PaymentCode and BookingNo, then process refunds without manual entry.
+---
+
 # Refund File Import
 
 ### Overview
 
-**Refund File Import** lets you import **refund transactions** exported from **Business Central** into Tourpaq.
+**Refund File Import** lets you import **refund transactions** exported from **Business Central** into **Tourpaq Office Finance**.
 
-This is useful when refunds are created in Business Central and you want them registered in Tourpaq without manual entry.
+Use it when refunds are created in Business Central and you want them registered in Tourpaq without manual entry.
 
 ***
 
 ### Before you start
 
 * You must have a refund file **exported from Business Central**.
+* You must have the required permissions (typically **Financial** or **Administrator**).
 * The **PaymentCode** in the file must match a payment method in Tourpaq that is used for refunds.
   * If you are missing a payment method, see [Method of Payment](method-of-payment.md).
 
@@ -25,6 +32,7 @@ Only files exported from **Business Central** can be processed in this import.
 Your file must follow these rules:
 
 * **No header row** (the first row must be data).
+* **Semicolon-separated values** with this exact delimiter: `;`
 * **Column order** must be exactly:
 
 `PaymentCode ; Date ; BookingNo ; Amount ; Comment`
@@ -35,7 +43,7 @@ Your file must follow these rules:
 
 ### Import a refund file (Business Central)
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Refund File Import (Business Central)"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Refund File Import (Business Central)"><figcaption><p>Import Business Central refund transactions into Tourpaq using the required PaymentCode and BookingNo file format.</p></figcaption></figure>
 
 {% stepper %}
 {% step %}

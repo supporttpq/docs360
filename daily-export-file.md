@@ -1,14 +1,39 @@
+---
+description: >-
+  Daily financial export emailed as CSV/XLSX. Configure recipients and enable
+  Daily Export to share booking and passenger data for reconciliation, ERP, and
+  BI.
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+---
+
 # Daily Export file
 
-### **Overview**
+### Overview
 
-The **Daily Export File** is an automated feature that allows administrators and financial users to export **detailed booking data** from the system on a regular basis. The export is configured via a system-level setting and sent to one or more predefined email addresses.
+The **Daily Export file** is an automated daily **financial export** of booking and passenger data from Tourpaq Office.
+
+The export is enabled in system settings and sent to one or more configured email recipients.
 
 This export supports operational reporting, financial reconciliation, and data integration with external tools such as ERP systems or BI dashboards.
 
 ***
 
-### **Purpose**
+### Purpose
 
 The Daily Export File provides:
 
@@ -18,7 +43,7 @@ The Daily Export File provides:
 
 ***
 
-### **Preconditions**
+### Preconditions
 
 Before using this feature, ensure the following:
 
@@ -31,13 +56,13 @@ Before using this feature, ensure the following:
 
 ***
 
-### **Instructions**
+### Instructions
 
 Once enabled and configured, the Daily Export File will run **automatically** based on system-defined triggers (typically scheduled overnight). No manual steps are required after setup.
 
 However, to **verify or adjust the setup**, follow these steps:
 
-#### 🛠 Step-by-Step Configuration
+#### Step-by-step configuration
 
 1. **Enable the Export**
    * Confirm that the `Daily Export` setting is active in `SystemRegister`.
@@ -48,15 +73,15 @@ However, to **verify or adjust the setup**, follow these steps:
    * Save the configuration.
 3. **Review Export Results**
    * Check the inbox of the configured email addresses after the scheduled export.
-   * The export file will usually be in `.CSV` or `.XLSX` format, depending on system configuration.
+   * The export file is typically `.CSV` or `.XLSX`, depending on your setup.
 
-<figure><img src=".gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Daily Export email recipient configuration"><figcaption><p>Configure recipient emails for the Daily Export file in System Setup (Financial Export email addresses).</p></figcaption></figure>
 
-### **Exported Data Fields**
+### Exported data fields
 
 The Daily Export contains one row per **passenger** and includes comprehensive booking, customer, and cost-related data. Below is a list of all fields:
 
-#### 🧾 **Booking Information**
+#### Booking information
 
 * Booking number
 * Booking date
@@ -69,10 +94,10 @@ The Daily Export contains one row per **passenger** and includes comprehensive b
 * Departure date
 * Arrival home date
 
-#### 👨‍👩‍👧‍👦 **Passenger Information**
+#### Passenger information
 
 * Adults number
-* Children’s number
+* Children number
 * Infants number
 * Seats
 * First name
@@ -84,7 +109,7 @@ The Daily Export contains one row per **passenger** and includes comprehensive b
 * Extra bed discount
 * Cancellation fee
 
-#### 🏨 **Accommodation Details**
+#### Accommodation details
 
 * Hotel code
 * Resort code
@@ -93,9 +118,9 @@ The Daily Export contains one row per **passenger** and includes comprehensive b
 * Room price
 * Hotel cost
 
-#### 📞 **Customer Contact Information**
+#### Customer contact information
 
-* Customer e-mail
+* Customer email
 * Customer postcode
 * Customer fax
 * Customer phone number
@@ -103,7 +128,7 @@ The Daily Export contains one row per **passenger** and includes comprehensive b
 * Customer city
 * Customer address
 
-#### 💼 **Additional Services and Products**
+#### Additional services and products
 
 * Has cancellation insurance
 * Cancellation insurance price
@@ -123,7 +148,7 @@ The Daily Export contains one row per **passenger** and includes comprehensive b
 * Car product price
 * Other products
 
-#### 💰 **Cost Breakdown**
+#### Cost breakdown
 
 * Transport cost
 * Transfer cost
@@ -134,5 +159,5 @@ The Daily Export contains one row per **passenger** and includes comprehensive b
 * Car cost
 * Other products cost
 * Insurance cost
-* Discounts/Supplements
-* Discounts/Supplements cost
+* Discounts/supplements
+* Discounts/supplements cost

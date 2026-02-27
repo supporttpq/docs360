@@ -1,27 +1,64 @@
+---
+description: >-
+  Configure payment methods (payment types) in Tourpaq Office Finance. Set
+  debit/credit, online payment, bank import, gift card, and guide payment flags
+  for correct reporting and reconciliation.
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+---
+
 # Method of Payment
 
-### **Overview**
+### Overview
 
-The **Payment Types Module** is a core administrative and financial feature of the system, designed to manage and categorize all payment methods accepted within the platform. This module enables the insertion and classification of various **payment types**, ensuring consistent tracking and reporting of financial transactions across bookings, agents, and customers.
+**Method of Payment** (also called **Payment Types**) is where you manage the **payment methods** used across Tourpaq Office Finance.
 
-Each time a payment is recorded in the system, a **payment type** must be specified to indicate how the transaction was carried out (e.g., via bank transfer, card, online payment, etc.).
+Every payment in Tourpaq uses a **payment code** (payment type). This controls how transactions are tracked for **reporting**, **reconciliation**, and imports.
+
+Related modules:
+
+* [Payment Registration](payment-registration.md)
+* [Payment File Import](payment-file-import.md)
+* [Refund File Import](refund-file-import.md)
+
+Common examples:
+
+* Bank transfer payments (bank import)
+* Card and online payments (for example DIBS)
+* Cash payments
+* Gift card payments
+* Refund payment methods (credit)
 
 ***
 
-### **Purpose**
+### Purpose
 
 The purpose of this module is to:
 
-* Define and maintain the list of accepted **payment types** in the system.
-* Differentiate between **debit** and **credit** transactions for accurate accounting.
-* Ensure traceability of all payments made by customers, agents, and guides.
-* Identify and flag special types of payments (e.g., bank imports, gift cards).
+* Define and maintain the list of accepted **payment methods** (payment types).
+* Separate **debit** (money in) from **credit** (money out / refund).
+* Support automation like **bank payment import** and online payment flows.
+* Keep payments consistent across bookings, guides, and exports.
 
 ***
 
-### **Preconditions**
+### Preconditions
 
-Before configuring or using the Payment Types Module, ensure the following:
+Before configuring payment methods, ensure the following:
 
 * You have access rights as either an **Administrator** or **Financial** user role.
 * You understand the financial flow within your department or company (i.e., which payment types are considered debit vs. credit).
@@ -30,23 +67,25 @@ Before configuring or using the Payment Types Module, ensure the following:
 
 ***
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+![Method of Payment (payment types) list](<../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
-### **Payment Type Categories**
+_Payment methods (payment types) define how payments are recorded and reported in Tourpaq Office._
+
+### Payment type categories
 
 There are two main categories of payments:
 
-#### 1. **Debit Payments**
+#### 1. Debit payments
 
 * Represent transactions where money is **received** by the company.
 
-#### 2. **Credit Payments**
+#### 2. Credit payments
 
 * Represent transactions where money is **given** or refunded.
 
 ***
 
-### **Special Payment Types**
+### Special payment types
 
 The following payment types should be specially categorized and identified due to their source or behavior:
 
@@ -61,11 +100,9 @@ The following payment types should be specially categorized and identified due t
 
 These special payment methods may affect reporting, reconciliation, or automation and should be flagged accordingly.
 
-
-
 ### Create a new payment method
 
-### **Overview**
+#### Overview
 
 This section explains how to define and insert a new **payment method** into the system. Each payment method determines how a financial transaction is recorded, processed, and reported—whether it's a cash payment, an online transaction, or an import from a bank file.
 
@@ -73,7 +110,7 @@ This process is **applicable for users with Administrator or Financial access**.
 
 ***
 
-### **Purpose**
+#### Purpose
 
 Creating a well-defined payment method ensures:
 
@@ -84,7 +121,7 @@ Creating a well-defined payment method ensures:
 
 ***
 
-### **Preconditions**
+#### Preconditions
 
 Before creating a new payment method, ensure:
 
@@ -94,9 +131,11 @@ Before creating a new payment method, ensure:
 * You are aware of any **system integrations** that may affect the method (e.g., DIBS, bank import, Dankort).
 * The payment method is **relevant to the company** you are currently working under in the system.
 
-<figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+![Create a new payment method form](<../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
-### **Instructions: Create a New Payment Method**
+_Create a payment method with a payment code, debit/credit type, and flags for online payments and imports._
+
+### Instructions: Create a new payment method
 
 1. **Navigate to**: `Admin Panel > Financial Settings > Payment Methods`
 2. **Click** the **"Add New Payment Method"** button.
@@ -116,21 +155,33 @@ Before creating a new payment method, ensure:
     | **Is Cash Payment?**           | Check if this method represents a **cash transaction**.                                               |
     | **Active**                     | Enable this option if the method should be **available for use** in bookings or financial operations. |
 
-
-
 {% hint style="danger" %}
 **Note**: If selecting **VISA** as the card type and the customer pays using a **Visa/Dankort** on the **DIBS** platform, DIBS will treat this as a **VISA** transaction. As a result, the payment will be registered using the **VISA** payment method in Tourpaq, not the Visa/Dankort method.
 {% endhint %}
 
 4. Other useful fields:
 
-| Checkbox                                  | **Description**                                                                                                                                                                                                                                                                                                      |
-| ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Is GDPR Sensitive                         | Anonymize the payment **type** for a booking of an anonymized customer for users logged with other account than "Administrator" or "Financial"                                                                                                                                                                       |
-| **"Pay from home" Payment**               | Allow to be used in the  Guide App for Extra Orders payments;                                                                                    ![](<../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)         |
-| **Agent Machine Payment**                 | When checked, it allows guides to pay with the payment machine; ![](<../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)                                                                                                                                  |
-| **Booking Gift Card Payment**             | When checked, it allows the gift card to be used for another agency besides the one for which it was created. (Used only  if "All brands" is selected for the giftcard); ![](<../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1).png>)                                 |
-| **Booking Gift Card Own Agency Payments** | Allows the gift card to be used only with on your own agency payments (Used when the All brands checkbox it is used on the Giftcard)                                                                                                                                                                                 |
+| Checkbox                                  | **Description**                                                                                                                            |
+| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| Is GDPR Sensitive                         | Anonymize the payment **type** on anonymized customers for users with a role other than **Administrator** or **Financial**.                |
+| **"Pay from home" payment**               | Allow this payment method in the **Guide App** for Extra Orders payments.                                                                  |
+| **Agent machine payment**                 | Allow guides to register payments using a payment terminal (POS).                                                                          |
+| **Booking gift card payment**             | Allow the gift card to be used for an agency other than the one it was created for (used when **All brands** is enabled on the gift card). |
+| **Booking gift card own agency payments** | Allow the gift card to be used only for your own agency payments (used when **All brands** is enabled on the gift card).                   |
+
+#### Checkbox screenshots
+
+![Pay from home payment checkbox](<../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+
+_“Pay from home” payment: enable the method for Guide App Extra Orders payments._
+
+![Agent machine payment checkbox](<../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+
+_Agent machine payment: enable the payment terminal (POS) option for guides._
+
+![Booking gift card payment checkbox](<../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+
+_Booking gift card payment: allow gift cards across agencies when All brands is enabled._
 
 5. **Save** the new payment method.
 
