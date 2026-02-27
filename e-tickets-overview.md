@@ -1,46 +1,30 @@
 ---
 description: >-
-  Monitor e-ticket emails in Tourpaq Office. Search by booking or email, check
-  delivery status (sent/opened/failed), preview messages, and export logs for
-  operations.
+  Track and troubleshoot e-ticket emails in Tourpaq Office. Search by booking
+  number or email address, verify delivery status (sent/opened/failed), preview
+  messages, and export e-ticket logs.
 ---
 
 # E-tickets Overview
 
-### **Overview**
+### Overview
 
-The **E-Tickets Overview** page provides a complete summary of all e-ticket emails that have been generated and sent to customers.\
-It allows operational staff and customer service teams to easily:
+Use **E-tickets Overview** to track ticket email delivery in **Tourpaq Office**. This page is your email log for e-tickets. Use it to troubleshoot “ticket not received” cases before departure.
 
-* search for specific bookings
-* check whether a ticket was sent
-* view open/failed/successful deliveries
-* re-send or review e-mails
-* diagnose issues before departure
+Common tasks:
 
-This module is essential for ensuring that all travelers receive their flight tickets on time.
+* Search by **booking number** or **email address**.
+* Check status like **Sent**, **Opened**, **Failed**, or **Not Sent**.
+* Preview what was sent to the customer.
+* Export the filtered list for operations and audits.
 
-***
-
-### **Purpose**
-
-The page is designed to:
-
-* give teams **full visibility** over all e-ticket communication
-* provide **quick search tools** for finding customers who did not receive their ticket
-* display **delivery tracking**: sent, opened, confirmed, failed
-* allow filtering by **transport**, **email type**, **date**, **status**, or **customer information**
-* allow export for audits or operational follow-ups
-
-It centralizes all communication around e-tickets into a single page.
-
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Tourpaq Office E-tickets Overview page showing e-ticket email list, filters, and delivery status columns"><figcaption><p>E-tickets Overview in Tourpaq Office. Use it to monitor e-ticket email delivery status and troubleshoot failed or missing ticket emails.</p></figcaption></figure>
 
 ### Filters
 
-The filter section allows you to narrow down the list of emails.
+Use filters to narrow down the e-ticket email log. Combine filters to find a specific customer fast.
 
-#### **Available Filters**
+#### Available filters
 
 | Filter                                  | Description                                                                          |
 | --------------------------------------- | ------------------------------------------------------------------------------------ |
@@ -58,8 +42,7 @@ All filters can be used simultaneously.
 
 #### **Display / More Filters**
 
-The **Display** button shows/hides additional advanced filter fields.\
-**Clear** resets all filters.
+The **Display** button shows or hides additional filter fields. **Clear** resets all filters.
 
 ***
 
@@ -84,22 +67,22 @@ Each row represents one e-ticket email sent to a customer.
 
 ***
 
-### Opening an e-ticket (preview)
+### Preview an e-ticket email
 
-Click on **any row** to open a preview of the actual e-ticket email that was sent.
+Click any row to open a preview of the e-ticket email. This helps when you need to confirm the content and recipient.
 
 This is useful for:
 
 * customer support calls
 * checking if information was correct
 * verifying branding or attachments
-* confirming content before re-sending
+* confirming content before sending again (if your workflow allows it)
 
 ***
 
 ### Export
 
-In the top-right corner, the **Export** button allows you to download the entire filtered list in Excel format.
+Use **Export** to download the filtered list in Excel format.
 
 Useful for:
 
@@ -110,33 +93,54 @@ Useful for:
 
 ***
 
-### Summary
+### Troubleshooting checklist
 
-The **E-Tickets Overview** provides:
+If a customer says they did not receive the ticket email:
 
-* full visibility of all customer ticket emails
-* powerful filtering for operational checks
-* delivery tracking (sent/opened/failed)
-* email previews for troubleshooting
-* export for reporting and audit
+1. Search the booking number or the customer email address.
+2. Check **Status** and any **Failed Status** reason.
+3. Verify the email address on the booking.
+4. Ask the customer to check spam/junk folders.
+5. Export the list if you need to escalate to IT/support.
 
-It is an essential tool for customer service and departure operations.
+{% hint style="info" %}
+For printing or sending a ticket PDF from a booking, use [Print Tickets](tickets/print-tickets.md).
+{% endhint %}
 
-### **Workflow**
+***
 
-1. Monitoring sent e-tickets
-   * Users can quickly see which tickets have been sent and their status.
-   * Specific tickets can be searched for using the available filters.
-2. Identifying and handling issues
-   * If an email has a "failed" status, you can check the email address and resend it manually.
-   * If a customer did not receive the email, you can check whether it was opened and acknowledged.
-3. Exporting and Reporting
-   * The list of tickets can be exported for analysis or archiving.
+### FAQ
 
-### **Possible problems and solutions**
+#### What does each status mean?
 
-| Issue                        | Possible cause                                     | Solution                                            |
-| ---------------------------- | -------------------------------------------------- | --------------------------------------------------- |
-| The email was not opened.    | The customer has not checked it out yet.           | Contacting the customer for confirmation            |
-| "failed" status when sending | Invalid email address or technical problem         | Checking and correcting the address, then resending |
-| Email is not confirmed.      | The customer did not complete the required action. | Sending a reminder or contacting the customer       |
+* **Sent**: Tourpaq sent the email to the recipient’s mail server.
+* **Opened**: The recipient opened the email (tracking must be enabled).
+* **Confirmed**: The customer completed a confirmation step (if used in your setup).
+* **Failed**: The email was rejected or could not be delivered.
+* **Not Sent**: No email was sent for that booking/email type in the period.
+
+#### The status is **Failed**. What should I do?
+
+Open the row and read **Failed Status**. Then verify the customer email address on the booking.
+
+If the address is correct, export the list and escalate to IT/support.
+
+#### The status is **Sent**, but the customer did not receive it. What now?
+
+Ask the customer to check spam/junk and any quarantine folder. Then confirm the recipient address matches the booking.
+
+If you need to send the ticket again, use [Print Tickets](tickets/print-tickets.md).
+
+#### I can’t find the booking in the list. Why?
+
+Most often, your filters exclude it. Clear filters, then search by **booking number**.
+
+Also verify the booking has a ticket email generated for the selected **Email Type**.
+
+#### Why do I see **Opened** on some emails, but not on others?
+
+Open tracking can be blocked by the customer’s email client. Some corporate mail systems also strip tracking pixels.
+
+#### What does **Hide Confirmed** do?
+
+It removes rows where the customer already confirmed reading. Use it for pre-departure checks to focus on missing confirmations.
