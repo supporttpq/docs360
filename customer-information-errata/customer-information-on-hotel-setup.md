@@ -1,8 +1,15 @@
+---
+description: >-
+  Add hotel customer information (errata) in Tourpaq Office. Show guest notices
+  by travel/booking dates and room type on tickets/WebBooking, with optional
+  acknowledgment.
+---
+
 # Customer Information on Hotel setup
 
 ### Overview
 
-Use **Passenger Information** on a hotel to add **customer-facing messages** that apply when a guest books that hotel (optionally limited by **travel dates**, **booking dates**, and **room type**).
+Use **Passenger Information** on a hotel to add **customer information (errata)** and **guest notifications**. These messages apply when a guest books the hotel. You can limit them by **travel dates**, **booking dates**, and **room type**.
 
 Typical use cases:
 
@@ -12,7 +19,7 @@ Typical use cases:
 * Mandatory terms the customer must acknowledge before booking can be completed
 
 {% hint style="info" %}
-You configure these messages per hotel in the back office:
+You configure these messages per hotel in Tourpaq Office (back office):
 
 **Hotel → Hotels → open a hotel → Passenger Information**
 {% endhint %}
@@ -24,8 +31,8 @@ You configure these messages per hotel in the back office:
 Depending on your setup, the **Information for customer** text can be shown in one or more places:
 
 * In the booking flow in Tourpaq Office (for example when taking allotment)
-* In WebBooking, typically in the final confirmation/summary step
-* On customer documents (for example ticket/voucher), depending on your configuration
+* In Tourpaq WebBooking, typically in the final confirmation/summary step
+* On customer documents (for example tickets/vouchers), depending on your configuration
 
 If **Acknowledge** is enabled, the booking flow requires the user/customer to confirm the message before they can proceed.
 
@@ -168,7 +175,7 @@ To update brand-specific content:
 
 Check these common causes:
 
-* **To** date is earlier than (or the same as) **From**.
+* **To** is earlier than (or the same as) **From**.
 * A rule already exists that overlaps with the same travel/booking period and room type.
 * A required field is missing (especially **From/To**, **Room type**, or **Information for customer**).
 

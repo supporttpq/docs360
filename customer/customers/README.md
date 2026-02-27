@@ -1,19 +1,42 @@
+---
+description: >-
+  Search and manage customer records in Tourpaq Office. Filter customers, open
+  profiles, send email/SMS, export lists, and segment by newsletter status.
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+---
+
 # Customers
 
 {% hint style="info" %}
-**Permissions:** This module is typically available to **Administrators** (or users with equivalent customer-management rights).
+**Permissions:** This customer management (CRM) module is typically available to **Administrators** (or users with equivalent customer-management rights).
 {% endhint %}
 
 ### Overview
 
-The **Customers** page is your starting point for finding and working with customer records in Tourpaq.
+The **Customers** page is your starting point for customer search and CRM work in Tourpaq Office.
 
 From here you can:
 
-* Search and filter the customer database
-* Open a customer profile to view or update details
-* Select one or more customers to **send email/SMS** or **export** a list
-* Check whether a customer is subscribed to your newsletter
+* Search and filter customer records (CRM database)
+* Open a customer profile to view or update contact details
+* Select one or more customers to **send email or SMS**, or **export** a list
+* Export a customer list (often to Excel, depending on setup)
+* Check newsletter subscription and communication consent
 
 ***
 
@@ -43,11 +66,11 @@ Select customers using the checkbox column, then choose an action such as **Send
 
 ### Search and filter customers
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (3).png" alt="Customer search and filters"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (3).png" alt="Customer search and filters"><figcaption><p>Customer search and filter panel in Tourpaq Office (CRM).</p></figcaption></figure>
 
 #### Quick search
 
-* **Search Customer** searches across customer records (for example name, email, or phone — depending on your configuration).
+* **Search Customer** searches across customer CRM records (for example name, email, or phone — depending on your configuration).
 
 #### Common filters
 
@@ -87,7 +110,7 @@ Depending on your setup, you may also see additional filter areas such as **User
 
 * **More filters**: shows additional filter fields.
 * **Clear**: resets all filters back to default.
-* **Display**: switches how results are displayed (for example list view), depending on your configuration.
+* **Display**: changes how results are shown (for example, list view), depending on your configuration.
 
 {% hint style="warning" %}
 If you get too many results, add **one more filter** (for example Country + Last Name) instead of scrolling through the full list.
@@ -105,7 +128,7 @@ After you search, the results appear in a table.
 * **Customer Name**: full name.
 * **Email / Phone**: primary contact information.
 * **Country / Zip Code / City**: location details.
-* **Newsletter**: indicates whether the customer is subscribed (the icon shown depends on your configuration).
+* **Newsletter**: indicates newsletter subscription status (the icon shown depends on your configuration).
 
 #### Selecting customers
 
@@ -119,14 +142,14 @@ Once you have results (and have selected one or more customers), you may have ac
 
 * **Send Email**: send a message to the selected customers.
 * **Send SMS**: send a text message to the selected customers.
-* **Export**: export the current list (usually to Excel; available formats depend on your configuration).
+* **Export**: export the filtered customer list (usually to Excel; available formats depend on your configuration).
 * **Show Schedules**: generate a list based on predefined schedules/filters (if your organization uses scheduled customer lists).
 
-<figure><img src="../../.gitbook/assets/2470fd6d-6824-48f2-a602-c842aa595538.webp" alt="Customer actions toolbar"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2470fd6d-6824-48f2-a602-c842aa595538.webp" alt="Customer actions toolbar"><figcaption><p>Customer actions toolbar for bulk email, SMS, and export.</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/b7376cb3-642c-4cf1-9bfc-a3049420504c.webp" alt="Export options"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/b7376cb3-642c-4cf1-9bfc-a3049420504c.webp" alt="Export options"><figcaption><p>Export options for the filtered customer list (formats depend on setup).</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/c0b00615-8a2b-4b45-9461-da8d7f6ba29b.webp" alt="Scheduled lists"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/c0b00615-8a2b-4b45-9461-da8d7f6ba29b.webp" alt="Scheduled lists"><figcaption><p>Scheduled customer lists (Show Schedules) for predefined segments.</p></figcaption></figure>
 
 ***
 
@@ -134,8 +157,8 @@ Once you have results (and have selected one or more customers), you may have ac
 
 * **Sort the list:** click a column header (for example _Customer Name_ or _City_) to sort.
 * **No results:** click **Clear** and try again with fewer filters.
-* **Newsletter segmentation:** use the **Newsletter** column/filter to build a list for campaigns.
-* **Data quality:** if you find duplicates, use the **Merge customers** tool (if available to your role) to keep your customer database clean.
+* **Newsletter segmentation:** use the **Newsletter** column/filter to build campaign lists.
+* **Data quality:** if you find duplicates, use **Merge customers** to clean CRM data.
 
 ***
 

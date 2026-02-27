@@ -1,18 +1,25 @@
+---
+description: >-
+  Configure resort-level customer information (errata) in Tourpaq Office. Set
+  travel/booking periods, guest messages for tickets/WebBooking, and required
+  acknowledgment in the booking flow.
+---
+
 # Customer Information on Resort setup
 
 {% hint style="info" %}
 **How to access:** **Setup → Resorts** → open a resort → **Passenger Information**.
 
-This is where you define resort-specific messages shown to the customer (and/or booking user) in the booking flow and on customer-facing outputs.
+This is where you define resort-specific **customer information** (errata) and **guest notifications** shown in the booking flow and on customer-facing outputs.
 {% endhint %}
 
 ### Overview
 
-Use **Passenger Information** on a resort to add important resort-specific text (often called _Customer information/errata_) that should appear on:
+Use **Passenger Information** on a resort to add resort-specific messages (often called **Customer information / errata**) that appear on:
 
 * **Tickets**
-* **WebBooking (WB)**
-* The **booking flow / booking confirmation** screens
+* **WebBooking**
+* The **booking flow** and **booking confirmation** screens
 
 You can also make the message **mandatory to acknowledge** before the booking can be completed.
 
@@ -30,7 +37,7 @@ Ensure customers (and staff) see the right information for the selected **resort
 
 **Setup → Resorts → (open resort) → Passenger Information**
 
-<figure><img src="../.gitbook/assets/image (23) (1).png" alt="Passenger Information tab on a resort"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (23) (1).png" alt="Resort Passenger Information tab for customer information (errata) messages"><figcaption><p>Passenger Information on a resort: manage guest notifications shown in the booking flow, tickets, and WebBooking.</p></figcaption></figure>
 
 ***
 
@@ -92,11 +99,11 @@ A form opens with **Save** and **Cancel**.
 
 #### Message text
 
-* **Information for customer on ticket**: the text shown on ticket/WB/booking screens (opens in a pop-up editor)
+* **Information for customer on ticket**: the text shown on tickets, WebBooking, and booking screens (opens in a pop-up editor)
 
 #### Acknowledgement
 
-* **Acknowledge** (checkbox): when enabled, the user/customer must actively confirm the message during the booking flow.
+* **Acknowledge** (checkbox): when enabled, the user/customer must actively confirm the message during the booking flow (checkout).
 
 {% hint style="warning" %}
 If you enable **Acknowledge**, the booking flow will block completion until all required messages are confirmed.

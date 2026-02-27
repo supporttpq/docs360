@@ -1,18 +1,25 @@
-# Customer Information on Transport setup
+---
+description: >-
+  Configure transport-level customer information (errata) in Tourpaq Office. Add
+  guest notifications for tickets/WebBooking, set travel/booking periods, and
+  require acknowledgment in checkout.
+---
+
+# Customer Information on Transport Setup
 
 {% hint style="info" %}
 **How to access:** **Transport → Transports** → open a transport → **Passenger Information**.
 
-This is where you define transport-specific messages shown to the customer (and/or booking user) in the booking flow and on customer-facing outputs.
+This is where you define transport-specific **customer information** (errata) and **guest notifications** shown in the booking flow and on customer-facing outputs.
 {% endhint %}
 
 ### Overview
 
-Use **Passenger Information** on a transport to add important transport-specific text (often called _Customer information/errata_) that should appear on:
+Use **Passenger Information** on a transport to add transport-specific messages (often called **Customer information / errata**) that appear on:
 
 * **Tickets**
-* **WebBooking (WB)**
-* The **booking flow / booking confirmation** screens
+* **WebBooking**
+* The **booking flow** and **booking confirmation** screens
 
 You can also make the message **mandatory to acknowledge** before the booking can be completed.
 
@@ -38,11 +45,10 @@ On the **Passenger Information** tab you’ll typically see:
 
 * A list of existing rules/entries (or **“There are no entries to show”** if none exist)
 * **Create**, **Edit**, and **Delete** actions
-* Pagination (25 rows per page)
 * A **Default text** tab
 * One tab per brand (only for brands where **Use custom text** is enabled)
 
-<figure><img src="../.gitbook/assets/image (24) (1).png" alt="Passenger Information tab on a transport"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (24) (1).png" alt="Transport Passenger Information tab for customer information (errata) messages"><figcaption><p>Passenger Information on a transport: manage guest notifications shown in the booking flow, tickets, and WebBooking.</p></figcaption></figure>
 
 #### Default text vs. brand-specific text
 
@@ -92,11 +98,11 @@ A form opens with **Save** and **Cancel**.
 
 #### Message text
 
-* **Information for customer on ticket**: the text shown on ticket/WB/booking screens (opens in a pop-up editor)
+* **Information for customer on ticket**: the text shown on tickets, WebBooking, and booking screens (opens in a pop-up editor)
 
 #### Acknowledgement
 
-* **Acknowledge** (checkbox): when enabled, the user/customer must actively confirm the message during the booking flow.
+* **Acknowledge** (checkbox): when enabled, the user/customer must actively confirm the message during the booking flow (checkout).
 
 {% hint style="warning" %}
 If you enable **Acknowledge**, the booking flow will block completion until all required messages are confirmed.

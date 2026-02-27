@@ -1,18 +1,25 @@
+---
+description: >-
+  Configure destination customer information (errata) in Tourpaq Office. Set
+  travel and booking periods, guest messages for tickets/WebBooking, and
+  required acknowledgment.
+---
+
 # Customer Information on Destination setup
 
 {% hint style="info" %}
 **How to access:** **Setup → Destinations** → open a destination → **Passenger Information**.
 
-This is where you define destination-specific messages shown to the customer (and/or the booking user) in the booking flow and on customer-facing outputs.
+This is where you define destination-specific **customer information** (errata) and **guest notifications** shown in the booking flow and on customer-facing outputs.
 {% endhint %}
 
 ### Overview
 
-Use **Passenger Information** on a destination to add important destination-specific text (often called _Customer information/errata_) that should appear on:
+Use **Passenger Information** on a destination to add destination-specific messages (often called **Customer information / errata**) that appear on:
 
 * **Tickets**
-* **WebBooking (WB)**
-* The **booking flow / booking confirmation** screens
+* **WebBooking**
+* The **booking flow** and **booking confirmation** screens
 
 You can also require the message to be **acknowledged** before the booking can be completed.
 
@@ -94,9 +101,9 @@ A form opens with **Save** and **Cancel**.
 
 #### Acknowledgement
 
-* **Acknowledge** (checkbox): when enabled, the user/customer must actively confirm the message during the booking flow.
+* **Acknowledge** (checkbox): when enabled, the user/customer must actively confirm the message during the booking flow (checkout).
 
-<figure><img src="../.gitbook/assets/image (22) (1) (1) (1).png" alt="Passenger Information on Destination"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (22) (1) (1) (1).png" alt="Destination Passenger Information: create customer information (errata) rule with travel and booking periods"><figcaption><p>Create a destination customer information notice (errata): set travel period, optional booking period, text, and acknowledgment.</p></figcaption></figure>
 
 {% hint style="warning" %}
 If you enable **Acknowledge**, the booking flow will block completion until all required messages are confirmed.

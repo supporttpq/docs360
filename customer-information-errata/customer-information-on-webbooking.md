@@ -1,44 +1,120 @@
+---
+description: >-
+  How customer information (errata) is shown and acknowledged in Tourpaq
+  WebBooking and Customer Center during checkout and when editing extras.
+---
+
 # Customer Information on WebBooking
 
-This documentation outlines the steps for creating a new booking and editing an existing booking in the DooBooking system, focusing on how customer information is set, confirmed, and validated.
+Customer information (errata) can be shown in **Tourpaq WebBooking (WB)** and **Customer Center**. When **Acknowledge** is enabled on a rule, the guest must confirm each notice before continuing.
 
-### **New Booking (Doo Booking)**
+### New booking (Tourpaq WebBooking)
 
-This section describes the steps to create a new booking using the DooBooking system.
+Customer information is typically shown at the **summary/confirmation** step in WebBooking. Each information line appears with a mandatory checkbox.
 
-#### **Steps and Explanations**
+{% hint style="info" %}
+The labels in the examples below may appear in Danish, depending on your setup:
 
-| Step | Description                                                                                                                                             | Expected Results                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1    | Go to the “Do booking” section. Begin in WB "Rejsedeltagere" using a PLTA with customer information pre-filled (including departure and booking dates). | The DooBooking page is displayed.                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| 2    | Insert required data: - Customer details - Passenger details                                                                                            | Data is correctly inserted into the system.                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| 3    | Click on the "Fortsæt" button.                                                                                                                          | The page redirects to the second step/page titled **"Tillæg"**.                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| 4    | Complete the necessary data in the "Tillæg" step/page. Choose any extras (ensure one extra has a customer info set).                                    | The data is selected successfully.                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| 5    | Click "Fortsæt".                                                                                                                                        | The page redirects to the third step/page titled **"Opsummering"**. Under the Confirmation section **"Godkend oplysningerne og bestil rejsen"**, a new **"Passenger Informations"** section appears listing all customer info set on each entity: Hotel (room)ResortDestinationExtra Each information line is displayed with a checkbox. **Important:** All checkboxes must be checked (mandatory) for the **"Bestil Rejse"** (Book Trip) button to be enabled. Otherwise, the button remains disabled. |
-| 6    | Click "Bestil Rejse".                                                                                                                                   | The page redirects to the **"ThankYouForBooking"** page. Booking is successfully created.                                                                                                                                                                                                                                                                                                                                                                                                               |
+* **Fortsæt** = Continue
+* **Tillæg** = Extras
+* **Opsummering** = Summary
+* **Bestil Rejse** = Book trip
+{% endhint %}
+
+{% stepper %}
+{% step %}
+### 1) Start a booking in WebBooking
+
+Open the WebBooking flow and go to the traveller step (for example **Rejsedeltagere**).
+
+**Expected result:** the booking flow is ready for customer and passenger input.
+{% endstep %}
+
+{% step %}
+### 2) Enter customer and passenger details
+
+Fill in the required fields.
+
+**Expected result:** the data is saved on the current step, and you can continue.
+{% endstep %}
+
+{% step %}
+### 3) Continue to Extras (Tillæg)
+
+Click **Fortsæt** to continue. Select extras, if relevant.
+
+**Expected result:** extras are selected (for testing, include an extra with customer information).
+{% endstep %}
+
+{% step %}
+### 4) Review Summary (Opsummering) and acknowledge notices
+
+Click **Fortsæt** to open **Opsummering**.
+
+In the confirmation area (for example **Godkend oplysningerne og bestil rejsen**), a **Passenger Information** section appears. It lists all customer information notices for the booking, for example from:
+
+* destination
+* resort
+* hotel / room type
+* transport
+* extras
+
+**Expected result:** each notice is shown with a checkbox. All checkboxes must be selected before **Bestil Rejse** is enabled.
+{% endstep %}
+
+{% step %}
+### 5) Complete the booking
+
+Click **Bestil Rejse**.
+
+**Expected result:** the booking is created and the confirmation page is shown (for example **ThankYouForBooking**).
+{% endstep %}
+{% endstepper %}
 
 ***
 
-### **Edit Booking (Customer Center / Booking Confirmation)**
+### Edit booking (Customer Center / booking confirmation)
 
 This section outlines how to edit a booking from the Customer Center.\
-**Important:** This only applies to **extras**. You **cannot** edit transport or hotel details via the Customer Center.
+**Important:** This applies to **extras only**. You cannot edit transport or hotel details via Customer Center.
 
-#### **Steps and Explanations**
+{% stepper %}
+{% step %}
+### 1) Go to Extras (Tillæg)
 
-| Step | Description                                       | Expected Results                                                                                                                                                                                                                                                                                                                                    |
-| ---- | ------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1    | Navigate to the second page **"Tillæg"**.         | The **Tillæg** page is displayed.                                                                                                                                                                                                                                                                                                                   |
-| 2    | Edit an extra that contains customer information. | The desired extra is selected.                                                                                                                                                                                                                                                                                                                      |
-| 3    | Click on "Gem" (Save).                            | A new **"Passenger Information"** popup appears, displaying all customer info related to the selected extra(s). Each line of info has a checkbox. **Important:** All checkboxes must be checked for the popup to disappear and for the changes to be saved. Once confirmed: The extra is added to the booking.The page redirects to the first step. |
+Open the booking in Customer Center and navigate to **Tillæg**.
+
+**Expected result:** the extras page is shown.
+{% endstep %}
+
+{% step %}
+### 2) Change extras
+
+Add or edit an extra that has customer information configured.
+
+**Expected result:** the selected extra changes are staged for saving.
+{% endstep %}
+
+{% step %}
+### 3) Save and acknowledge the popup
+
+Click **Gem** (Save).
+
+A **Passenger Information** popup appears with the customer information notices for the selected extra(s).
+
+**Expected result:** all checkboxes must be selected before the popup closes and the changes are saved. After confirmation, the flow returns to the first step.
+{% endstep %}
+{% endstepper %}
 
 ***
 
-### **Key Notes**
+### Key notes (validation behavior)
 
-* All information lines in confirmation steps are **mandatory** to be checked.
-* Editing is **limited to extras** only; changes to transport or hotel bookings are **not allowed** in the Customer Center.
-* The booking workflow has **three primary steps**:
-  1. **Data Entry**
-  2. **Extras Selection (Tillæg)**
-  3. **Summary & Confirmation (Opsummering)**&#x20;
+* Customer information checkboxes are **mandatory** when acknowledgment is enabled.
+* WebBooking typically blocks completion until all required notices are confirmed.
+* Customer Center edits are **limited to extras**. Transport and hotel changes are not supported there.
+
+### See also
+
+* [Customer information (errata)](./)
+* [Customer Information Booking Flow](customer-information-booking-flow.md)
