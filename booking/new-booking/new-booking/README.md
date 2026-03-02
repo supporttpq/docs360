@@ -499,6 +499,84 @@ The system provides a responsive and reliable pricing experience, matching the u
 
 #### Import passengers (optional)
 
+The Passenger Import functionality support improved flexibility and efficiency when managing large groups.
+
+The system:
+
+* Allow importing fewer passengers than the total number of passengers in the booking
+* Support specifying ski rental and other day-based extras directly in the Excel import file
+* Allow removal of automatically assigned extras during import
+* Reduce the need for manual adjustments, such as adding placeholder passengers.
+
+#### Specification
+
+#### 1. Support for Day-Based Extras (e.g. Ski Rental)
+
+The import file support specifying extras that include a number of days.
+
+These are extras configured in **Prices** with defined “days”.
+
+Behavior:
+
+* The Excel file allow specifying:
+  * Extra name or identifier
+  * Number of days (if applicable)
+* The system assign the extra to the passenger with the correct number of days
+* The pricing logic follow the configured extra rules
+
+This enables specifying ski rental and similar products directly during import.
+
+<figure><img src="../../../.gitbook/assets/image (676).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+#### 2. Support for Removing Selected Extras per Passenger
+
+The import file support removal of extras at passenger level.
+
+Behavior:
+
+* If the Excel file contains **"N/A"** in the Extra column for a passenger:
+  * All selected products within the specified Extra Category will be removed for that passenger
+* This applies even if the extra was automatically added to the booking
+
+<figure><img src="../../../.gitbook/assets/image (677).png" alt=""><figcaption></figcaption></figure>
+
+Example use case:
+
+* Baggage is automatically added to the first two passengers
+* A passenger doesn't need baggage
+* Excel file specifies "N/A" in Bagage category
+* System removes the Bagage for that passenger
+
+This gives full control over passenger-level extra allocation.
+
+***
+
+#### 3. Import with Fewer Lines Than Booking Passengers
+
+The system supports importing a file where the number of rows is lower than the number of passengers in the booking.
+
+Behavior:
+
+* If the import file contains **X rows**
+* The data applied to the **top X passengers** in the booking
+* Remaining passengers remain unchanged
+
+<figure><img src="../../../.gitbook/assets/image (678).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+#### 4. Group Growth Scenario Support
+
+It must be possible to:
+
+* Create a booking with a larger reserved group size
+* Import only the currently confirmed passengers
+* Add additional passengers later via subsequent imports
+
+***
+
 You can import multiple passengers via an **Excel file**.
 
 **Accepted file format**
@@ -562,11 +640,7 @@ Common warnings include:
 
 An example file for importing passengers can include columns in the following format:
 
-|       |        |        |               |           |           |                       |                        |
-| ----- | ------ | ------ | ------------- | --------- | --------- | --------------------- | ---------------------- |
-| TITLE | F NAME | L NAME | DATE OF BIRTH | CCL. INS. | INSURANCE | Morgenmad på værelset | BAGGAGE                |
-| MR    | TBA1   | TBA1   | 19-11-1988    | 399       |           | MESS\_EX              | BAG-20, BAG-30, BAG-40 |
-| MS    | TBA2   | TBA2   | 03-01-1926    |           | AUS       |                       | BAG-20                 |
+<table><thead><tr><th width="82.4444580078125"></th><th width="93.5555419921875"></th><th width="99.111083984375"></th><th width="118"></th><th width="78"></th><th></th><th width="153.5555419921875"></th><th></th></tr></thead><tbody><tr><td>TITLE</td><td>F NAME</td><td>L NAME</td><td>DATE OF BIRTH</td><td>CCL. INS.</td><td>INSURANCE</td><td>Multiple-EC</td><td>BAGGAGE</td></tr><tr><td>MR</td><td>TBA1</td><td>TBA1</td><td>19-11-1988</td><td>399</td><td>X</td><td>Multiple-P1 [4D], Multiple-P1 [3D]</td><td>BAG-20</td></tr><tr><td>MS</td><td>TBA2</td><td>TBA2</td><td>03-01-1926</td><td></td><td></td><td>Multiple-P1 [3D]</td><td>N/A</td></tr></tbody></table>
 
 #### Package products
 
