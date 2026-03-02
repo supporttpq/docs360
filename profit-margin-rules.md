@@ -44,7 +44,7 @@ Use the filters to narrow down the list of rules displayed below.
 * **Resorts:** Select a specific resort if you want to see only rules for that destination.
 * **Passenger Type:** Choose the type of passenger (e.g., Adult, Child) that the rule applies to.
 * **Stay Length:** Filter by the length of stay defined in the rule. Used to filter rules for a specific stay length. Valid input: `7`, `6-8`, `7,14`.
-* **Show older:** When enabled, displays Profit Margin rules with departure in the past.
+* **Show older:** When enabled, displays Profit Margin rules with **Departure Stop date** in the past.
 * **Show codes:** Displays system codes instead of names, useful for internal references.
 * **Transports / Hotels (Edit buttons):** Allows you to select specific transport or hotel references to filter results.
 * **Display:** Applies the selected filters to show the corresponding rules.
