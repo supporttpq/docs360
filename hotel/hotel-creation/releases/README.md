@@ -59,9 +59,11 @@ On each daily run, Tourpaq releases the target date that matches the rule’s le
 
 &#x20;\- Example: a rule with `3` days in advance evaluated on `15-05-2026` targets `18-05-2026`.
 
+{% hint style="info" %}
 If current day + number of days (Days) < Start period => rule is ignored.
 
 * Example: a rule with 1 day in advance with a start period on `01-05-2026`, and the current day is `02-03-2026`, the rule will be ignored
+{% endhint %}
 
 ### Examples
 
