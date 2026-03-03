@@ -159,7 +159,7 @@ Ex: If fixed info is made for the entire season (28.10.25 - 28.10.26) - Dest err
 
 * The entrys is marked as _Acknowledged_, meaning passengers are required to confirm it.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

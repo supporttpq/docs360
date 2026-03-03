@@ -18,7 +18,7 @@ Use allotments to manage hotel contracts by setting aside a fixed number of room
 
 ### Fields
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Period Start** – The start date of the allotment validity.
 * **Period Stop** – The end date of the allotment validity.

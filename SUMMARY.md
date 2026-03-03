@@ -455,7 +455,9 @@
 
 ## Setup
 
-* [Arrival Gateways](setup/arrival-gateways.md)
+* [Arrival Gateways](setup/arrival-gateways/README.md)
+  * [Create New Arrival](setup/arrival-gateways/create-new-arrival.md)
+  * [Edit Existing Arrival](setup/arrival-gateways/edit-existing-arrival.md)
 * [Departure Gateways](setup/departure-gateways.md)
 * [Destination](setup/destination.md)
 * [Resorts](setup/resorts.md)

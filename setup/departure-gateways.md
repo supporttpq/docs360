@@ -98,4 +98,4 @@ Use a clear name and follow your internal convention for the code.
 
 ### Related pages
 
-* [Arrival Gateways](arrival-gateways.md)
+* [Arrival Gateways](arrival-gateways/)

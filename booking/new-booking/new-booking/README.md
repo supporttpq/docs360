@@ -81,7 +81,7 @@ When a new customer is created, and in Brands settings:
 * "Mandatory DOB in Passenger Details in BackOffice" is enabled → Date of Birth is required.
 * "Mandatory email in Passenger Details in BackOffice" is enabled → email field is required.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 * Booking cannot proceed until required fields are completed.
 

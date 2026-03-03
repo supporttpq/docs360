@@ -4,7 +4,7 @@
 
 **Arrival Gateways** is a reference list of airports used as arrival points. Use it to search, sort, create, and delete arrival gateways.
 
-<figure><img src="../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Features
 
