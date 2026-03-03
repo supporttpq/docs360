@@ -49,7 +49,7 @@ To confirm that the booking values align with the pricing setup:
 
 The displayed table should now include columns such as **CH1P1**, **CH2P1**, **CH1D1**, **CH2D1**, **CMP1**, and **CH1PA, CH2PA**, representing the child price, discounts, percentages, and related adjustments.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

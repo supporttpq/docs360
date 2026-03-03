@@ -18,13 +18,13 @@ Use allotments to manage hotel contracts by setting aside a fixed number of room
 
 ### Fields
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Period Start** – The start date of the allotment validity.
 * **Period Stop** – The end date of the allotment validity.
 * **Room** – The room type (e.g., Double Room, Suite, Family Room) defined in the system.
 * **Min. Stay** – Minimum nights required for booking this room. `0` means no restriction.
-* **Board Type** – The default board type for the room. The board price is included in the room cost.
+* **Board Basis** – The default board type for the room. The board price is included in the room cost.
 * **No.** – The total number of rooms available in the allotment for the defined period.
 * **Secured** – Number of rooms contractually secured from the hotel.
 * **Guaranteed** – Number of rooms financially guaranteed (must be paid even if unsold).
