@@ -6,7 +6,7 @@ The **Departure Gateways** page lists departure airports and gateways used in To
 
 Use it to maintain clean master data for transports, bookings, and reporting.
 
-<figure><img src="../.gitbook/assets/image (20) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (20) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### What you can do
 
@@ -98,4 +98,4 @@ Use a clear name and follow your internal convention for the code.
 
 ### Related pages
 
-* [Arrival Gateways](arrival-gateways/)
+* [Arrival Gateways](../arrival-gateways/)
