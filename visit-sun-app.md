@@ -1,6 +1,6 @@
-# Visit Sun App
+# Guest App
 
-VisitSun is an application designed for supporting the guests to have access to special features and information, to stay updated on any changes and to get inspired related to their bookings in order that the entire experience to be valuable. Application is available on both Android or IOS devices. Below, there is a picture with the application running on IOS:
+Guest App is an application designed for supporting the guests to have access to special features and information, to stay updated on any changes and to get inspired related to their bookings in order that the entire experience to be valuable. Application is available on both Android or IOS devices. Below, there is a picture with the application running on IOS:
 
 <figure><img src=".gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -10,7 +10,7 @@ After login, guests are directed to a front page having a welcome quote.
 
 <figure><img src=".gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-From here, user can access available tabs in the application: Booking, Guide, Destination and VisitSun.
+From here, user can access available tabs in the application: Booking, Guide, Destination and Guest App.
 
 ### Booking tab <a href="#booking-tab" id="booking-tab"></a>
 
@@ -20,7 +20,7 @@ In this tab, user can access information about the booking.
 
 <figure><img src=".gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-In this section, there are also displayed notifications for insider tips. Notifications can be configured from **Guest App->Edit Agency->Manage VisitSun Settings->Notifications**.
+In this section, there are also displayed notifications for insider tips. Notifications can be configured from **Guest App->Edit Agency->Manage Guest App Settings->Notifications**.
 
 Also, **push notifications** sent by the guides (from Tourpaq Office -> Guide-> View all bookings -> "Send push notifications") are received on the app, if logged in with a booking that a push notification was sent to. If the notification pup-up is clicked, the app is opened and the message is displayed and stored under **"Today's updates"**
 
@@ -88,19 +88,19 @@ User can save photo or publish on social media.
 
 <figure><img src=".gitbook/assets/image (11) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### VisitSun <a href="#visitsun" id="visitsun"></a>
+### Guest App <a href="#guest-app" id="guest-app"></a>
 
-This tab offers the possibility to the user to check VisitSun special features like: Dine-around, In-room breakfast, Fast check-in or Room selection.
+This tab offers the possibility to the user to check Guest App special features like: Dine-around, In-room breakfast, Fast check-in or Room selection.
 
 <figure><img src=".gitbook/assets/image (20) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-**Dine Around** allow to guests to book lunch and/or dinner until the day before the latest one at a different hotel/restaurant than the one used on the booking from VisitSun group.
+**Dine Around** allow to guests to book lunch and/or dinner until the day before the latest one at a different hotel/restaurant than the one used on the booking from Guest App group.
 
-* Hotels from VisitSun group has to be configured by admin under Edit Hotel by checking "Is VisitSun" option.
+* Hotels from Guest App group has to be configured by admin under Edit Hotel by checking "Is Guest App" option.
 * Admin can configure also in Edit Hotel, "Allowed dine arounds per week" from Edit Hotel.
 * There is necessary that Extras Category- Dine around should be defined when logged-in as an admin from Office from **Extras Setup->Extras Category**.
-* After logged-in as a supplier which is a Visit Sun User or as an admin
-* (should be the supplier from the hotel), in Office can be defined new product for Dine Around from **Agent->Visit Sun Products**.
+* After logged-in as a supplier which is a Guest App User or as an admin
+* (should be the supplier from the hotel), in Office can be defined new product for Dine Around from **Agent->Guest App Products**.
 
 <figure><img src=".gitbook/assets/image (12) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -109,7 +109,7 @@ This tab offers the possibility to the user to check VisitSun special features l
 <figure><img src=".gitbook/assets/image (13) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * It can be defined only one product for each hotel. Also, supplier can upload suggestive photos which are shown in the application from the Photos tab.
-* In the application, accessing the **Dine Around** section, guests can select Dine Around to another hotel from that resort which is in the Visit Sun group.
+* In the application, accessing the **Dine Around** section, guests can select Dine Around to another hotel from that resort which is in the Guest App group.
 
 Photo,hotel name, product, date and remaining allotments are displayed here.
 
@@ -120,7 +120,7 @@ Booked products "Dine Around" type are displayed on Booked tab and can be also r
 **In Room Breakfast** allow guests to order breakfast in room two times per week during his stay.
 
 * For configuring this (check "Dine Around" product configuration), the extras category "In Room Breakfast" has to be defined when logged-in as admin from Office **Extras Setup->Extras Category**.
-* Hotels from VisitSun group has to be configured by admin under Edit Hotel by checking "Is VisitSun" option.
+* Hotels from Guest App group has to be configured by admin under Edit Hotel by checking "Is Guest App" option.
 * Admin can configure also in Edit Hotel, "Allowed in-room breakfasts per week" from Edit Hotel.
 * Next step is to define the product "In Room Breakfast" when logged-in as a supplier. The resource on the "In Room Breakfast" product should be the hotel from the booking and the allotments should be generated here. "In Room Breakfast" product is available for reservation in the app.:
 

@@ -26,7 +26,7 @@ The list of available menus is available right after the login request succeeds.
 
 **Configuring an extra**
 
-<mark style="background-color:red;">**IMPORTANT NOTE:**</mark> <mark style="background-color:red;"></mark><mark style="background-color:red;">Only guides can add products and make them available in the application.</mark>
+<mark style="background-color:red;">**IMPORTANT NOTE:**</mark> <mark style="background-color:red;">Only guides can add products and make them available in the application.</mark>
 
 <figure><img src=".gitbook/assets/image (279).png" alt=""><figcaption></figcaption></figure>
 
@@ -77,11 +77,11 @@ After filling in the settings we wanted we proceed to the next step - saving the
 
 **Have the excursion(product) still listed in the app as read only mode**
 
-If allotment is generated with 0 availability, or after the allotment runs out, the product can still be listed in the VisitSun mobile app if it is set as bellow:
+If allotment is generated with 0 availability, or after the allotment runs out, the product can still be listed in the Guest App if it is set as bellow:
 
 <figure><img src=".gitbook/assets/image (284).png" alt=""><figcaption></figcaption></figure>
 
-In the VisitSun mobile app, the effect will be that the excursion/product will continue to be listed, but no buy button will be available.
+In the Guest App, the effect will be that the excursion/product will continue to be listed, but no buy button will be available.
 
 #### **Setting the selling price(s) for an excursion**
 

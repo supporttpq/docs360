@@ -2,7 +2,7 @@
 
 #### **Overview**
 
-The **Maps** section allows users to configure interactive resort maps that are displayed in the **VisitSun mobile app** under the **Destination → Maps** tab.\
+The **Maps** section allows users to configure interactive resort maps that are displayed in the **Guest App** under the **Destination → Maps** tab.\
 Through this feature, guests can view an interactive map of their current booking resort and explore **points of interest** such as hotels, attractions, meeting points, or local landmarks.
 
 Maps are configured and managed from **Tourpaq Office → Guest App → Maps** by users with **Guide** or **Admin** access.
@@ -39,7 +39,7 @@ A **Create** button is available in the top-right corner to add new maps.
 1.  Click **Create** to define a new map or select an existing one from the list.
 
     <figure><img src=".gitbook/assets/image (437).png" alt=""><figcaption></figcaption></figure>
-2.  In the map editor:&#x20;
+2.  In the map editor:
 
     * Click on the map to drop a **point of interest (POI)**.
     * Fill in the **Location Details** the descripson.
@@ -51,7 +51,7 @@ A **Create** button is available in the top-right corner to add new maps.
 
 #### **Guest App Display**
 
-In the **VisitSun mobile app**, guests can access the configured map under:
+In the **Guest App**, guests can access the configured map under:
 
 > **Destination → Maps**
 
