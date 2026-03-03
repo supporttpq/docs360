@@ -121,26 +121,26 @@ After creating the new rule:
 
 ## FAQ
 
-### What does Live Offer Profit Margin control?
+#### What does Live Offer Profit Margin control?
 
-It controls the **profit margin (markup)** applied to **Live Offer hotel prices** returned by external providers.
+It controls the **profit margin** applied to **Live Offer hotel prices** returned by external providers.
 
-### Does this change the provider net price?
+#### Does this change the provider net price?
 
 No. It adds a margin on top of the net price to create the selling price.
 
-### Can I set margins per hotel or star rating?
+#### Can I set margins per hotel or star rating?
 
 Yes. You can scope a rule by **country**, **destination**, **hotel** (optional), and **star rating** (optional).
 
-### How do I validate that a rule works?
+#### How do I validate that a rule works?
 
 Use **View Prices** on the rule list to review net price, margin, and total price breakdowns.
 
-### How do I stop using a margin rule?
+#### How do I stop using a margin rule?
 
 Delete the rule, or adjust its **Departure Start/Stop** so it no longer matches your sale period.
 
-### Who can create or edit Live Offer margins?
+#### Who can create or edit Live Offer margins?
 
 Users with access to the **Live Offer Profit Margin** page and permission to create/edit rules.
