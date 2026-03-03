@@ -1,14 +1,25 @@
+---
+description: >-
+  Bulk copy Tourpaq Office price lists between brands. Apply tags, price
+  adjustments, max rooms, and optional brand assignment updates. View migration
+  log and search.
+---
+
 # Migrate Pricelist
 
-## **Overview**
+## Overview
 
-The _Migrate Pricelist_ function allows administrators to copy all price lists from one brand (agency) to another within the same company. It supports bulk migration, optional price adjustments, and optional updates to brand assignments, making it a powerful tool for onboarding new brands or synchronizing pricing across multiple brands.
+Only administrators can use **Migrate Pricelist**.
 
-To migrate pricelists, choose Migrate price list from the Price List menu.&#x20;
+Use it to bulk copy **Tourpaq Office Price Lists (pricelists)** from one **brand** to another in the same company.
+
+It copies the full price list setup, including PLTA lines (per departure), intervals (P1–P4), discounts (D1–D4), tags, and optional maximum room values.
+
+To migrate price lists, select **Migrate Price List** from the **Price List** menu.
 
 <figure><img src="../.gitbook/assets/image (50) (1).png" alt=""><figcaption></figcaption></figure>
 
-## **Purpose**
+## Purpose
 
 The feature is designed to simplify and accelerate situations where:
 
@@ -16,31 +27,33 @@ The feature is designed to simplify and accelerate situations where:
 * Price lists must be aligned across multiple brands.
 * Seasonal or strategic changes require bulk updates rather than manual edits.
 
-By automating the migration and allowing optional adjustments, the tool minimizes manual work and reduces the risk of errors.
+This reduces manual work and limits copy/paste errors.
 
-## Steps to Migrate Price Lists
+## Steps to migrate price lists
 
 1. **Access the Feature**
    * Select **Migrate Price List** from the **Price List** menu.
-2. **Select Source and Destination Agencies**
-   * **From Brand:** Choose the source agency from which price lists will be copied.
-   * **To Brand:** Select the destination agency that will receive the copied price lists.
+2. **Select source and destination brands**
+   * **From Brand**: The source brand to copy price lists from.
+   * **To Brand**: The destination brand to copy price lists to.
 3. **Set Tag (Optional)**
    * Enable the **Set Tag** checkbox and select a tag from the dropdown.
-   * The selected tag will be applied to all price lists in the destination agency.
-   * For more information on defining and using price list tags, refer to the related training video.
+   * The tag is applied to all migrated price list rows in the destination brand.
+   * See also: [Pricelist Tags](../pricelist-tags.md).
 4. **Adjust Prices (Optional)**
-   * **Increase/Decrease Amount:** Enter a value to be added or subtracted from all price fields on destination price lists. Positive numbers increase prices; negative numbers decrease prices. Only already set prices on the destination are affected.
-   * **Increase/Decrease Percentage:** Enter a percentage to adjust all price fields. Positive numbers increase prices; negative numbers decrease prices. Only already set prices on the destination are affected.
-   * **Note:** Amount and percentage can be applied **together**; the percentage is applied first, followed by the amount.
+   * **Increase/Decrease Amount**: Adds/subtracts a fixed value on destination price fields. Positive increases. Negative decreases.
+   * **Increase/Decrease Percentage**: Adjusts destination price fields by percentage. Positive increases. Negative decreases.
+   * Only prices that already exist on the destination are adjusted.
+   * **Order**: Percentage is applied first. Amount is applied second.
 5. **Copy Max Rooms (Optional)**
-   * Check the **Copy Max Room** checkbox to copy maximum room fields from source price lists to the destination.
+   * Enable **Copy Max Room** to copy max room fields (M1–M4) from source to destination.
 6. **Brand Assignments**
-   * By default, the migration also replicates brand assignments on **transports, hotels, resorts, extras, and discounts**.
-   * To copy only price lists without changing brand assignments, check **Copy Only Price Lists**.
+   * By default, the migration also replicates brand assignments for **transports, hotels, resorts, extras, and discounts**.
+   * Enable **Copy Only Price Lists** to migrate price lists without changing brand assignments.
 7. **Source Agency Filtering (Optional)**
-   * Certain entities (transports, resorts, destinations) can have a **Source Agency** assigned in their General Settings.
-   * Enable the option to migrate only those entities where the **source agency matches the selected From Brand**. This prevents overwriting prices when migrating between the same agencies.
+   * Some entities (transports, resorts, destinations) can have a **Source Agency** in General Settings.
+   * Enable this option to migrate only entities where **Source Agency = From Brand**.
+   * Use this to avoid overwriting data when brands share the same underlying setup.
 8. **Execute Migration**
    * Click **Migrate Prices** to perform the bulk copy.
 
@@ -55,31 +68,31 @@ By automating the migration and allowing optional adjustments, the tool minimize
   * Date of migration
 * **Show Hidden:** Displays migrations older than the number of days specified in **System Setup → Hide Filters**.
 
-## **FAQ**&#x20;
+## FAQ
 
 **What does Migrate Pricelist do?**\
-It copies all price lists from one brand (agency) to another brand within the same company.&#x20;
+It copies price lists from one brand to another within the same company.
 
 **Who can use this feature?**\
-Administrators can use Migrate Pricelist.&#x20;
+Only administrators.
 
 **Can I adjust prices during migration?**\
-Yes. You can apply an amount or percentage increase or decrease to prices during migration.&#x20;
+Yes. You can apply an amount and/or percentage change during migration.
 
 **Does migration change brand assignments for transports and hotels?**\
-By default it does. You can choose to copy only price lists without changing brand assignments.&#x20;
+Yes, by default. Enable **Copy Only Price Lists** to avoid changing brand assignments.
 
 **Can I apply tags to destination price lists?**\
-Yes. You can optionally set a tag that will be applied to all destination price lists.&#x20;
+Yes. Use **Set Tag** to apply a tag to migrated price list rows.
 
 **What happens to “max rooms” values?**\
-You can choose to copy maximum room values from source price lists to destination price lists.&#x20;
+Enable **Copy Max Room** to copy max room values from the source price list.
 
 **Is there a log of migrations?**\
-Yes. All migrations are logged, and you can search migrations by brand, user, or date.&#x20;
+Yes. All migrations are logged. You can search by brand, user, or date.
 
 **Can migration selectively include only certain source data?**\
-Yes. You can filter so that only entities with a specific source agency assignment are migrated.&#x20;
+Yes. You can filter by **Source Agency** to migrate only selected entities.
 
 **Does migration create new price structures automatically?**\
-No. It copies existing price lists from the source brand; it does not generate new prices beyond optional adjustments.&#x20;
+No. It copies existing price lists. It does not generate new pricing rules or structures.

@@ -1,27 +1,53 @@
+---
+description: >-
+  Define Tourpaq Office profit margin rules (markup) for price lists. Set
+  PM1–PM4 by resort or transport, passenger type, dates, and stay length. Rules
+  feed the Price List Generator.
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+---
+
 # Profit margin rules
 
-Under **Price List → Profit Margin Rules**, users can define rules to set profit margin values in price lists.
+Under **Price List → Profit Margin Rules**, you define rules that write **profit margin (markup)** values into **Tourpaq Office price lists**.
 
 ### Overview
 
-The **Profit Margin Rule** feature defines how profit margins are calculated for different combinations of transport types, destinations, and stay lengths.\
-The feature introduces more flexibility, allowing agencies to configure profit margins at multiple levels — global, resort, and transport — with dynamic combinations of departure gateways and stay lengths.
+Profit Margin Rules control how profit is applied across combinations of:
 
-This enables the **automatic creation of a large number of price lists**, drastically **reducing manual work** and improving efficiency in price list generation and maintenance.
+* Brand (agency)
+* Passenger type (adult/child)
+* Destination/resort/hotel
+* Transport type and transport
+* Departure period and stay length
 
-The **Profit Margin Rules** page allows you to define and manage profit margin settings across different destinations, transports, and agencies. These rules determine how much profit is applied to bookings based on specific parameters such as resort, passenger type, and travel period.\
-This tool ensures that pricing strategies remain consistent, flexible, and automatically applied within the system.
+These rules feed the **Price List Generator** and reduce manual price list maintenance.
+
+In generated price lists, profit margins are stored as **PM1–PM4**.
 
 ### **Purpose**
 
-The purpose of this feature is to make the Profit Margin Rule system more adaptable to each agency by allowing multiple overlapping rule sets that can be stacked and combined.\
-This ensures that agencies can:
+Profit Margin Rules are designed for stacking and overrides. This lets you:
 
 * Define **global profit margins** for GDS or charter flights.
 * Apply **different margins** for specific **resorts** or **hotels**.
 * Create **transport-based rules** that vary by route and stay length.
 
-The result is a **flexible, automated, and scalable** system for defining profit margins that directly feeds into the **Price List Generator**.
+This produces a scalable setup that directly feeds into the [Price List Generator](generate-pricelist.md).
 
 Using the profit margin rule, all agencies can:
 
@@ -81,7 +107,7 @@ Each row represents an existing profit margin rule. The table contains the follo
 
 #### **Creating New Rules**
 
-If Tourpaq DK wants to apply a 15% profit margin for Adult passengers traveling to Salzburg between 23-10-2029 and 23-10-2029, you would:
+If a brand wants to apply a 15% profit margin for adult passengers traveling to Salzburg on `23-10-2029`, you would:
 
 1. Click **Create**.
 2. Select _Agency_: Tourpaq DK.
@@ -96,11 +122,11 @@ The system will automatically apply these margins to all bookings that match the
 
 #### **Editing Existing Rules**
 
-1. Click the **edit icon (pencil)** next to the rule you want to modify
-2. Update the necessary fields in the edit dialog
-3. Save changes and verify they appear correctly in the grid
+1. Click the **edit icon (pencil)** next to the rule you want to modify.
+2. Update the required fields in the edit dialog.
+3. Save changes and verify they appear correctly in the grid.
 
-The Profit Margin functionality supports more than one profit margin per rule, providing greater flexibility for agency configurations.
+Profit Margin Rules support multiple profit margins per rule, which increases flexibility.
 
 Each combination of Departure and Stay is unique within the Profit Margin section.
 
@@ -114,10 +140,13 @@ For **Transport Rules**, users must:
 
 * Select the Agency, Rule (Transport), Passenger, Arrival, Transport
 * Define **departure start** and **departure stop** intervals.
-* Set the profit margin values (**PM1–PM4**) using the button Add Profit Margin rule. Negative profit margins can be set, but this requires the "Use negative value in profit margin" company feature. Please contact an administrator for assistance.
+* Set profit margin values (**PM1–PM4**) using **Add Profit Margin rule**.
+  * Negative profit margins require the company feature **Use negative value in profit margin**. Contact an administrator if needed.
 * Also, here it is possible to add a Departure location and the stay length.
 
-The system will then update all price lists created with the selected transports. For example, a rule setting **PM1–PM4** for the interval **17.10.25 - 31.10.25** will apply to all price lists using transports **and** B-AG, covering all hotels at the corresponding destination for agency **Tourpaq DK.**
+The system then updates all price lists created with the selected transports.
+
+Example: A rule setting **PM1–PM4** for **17.10.25–31.10.25** applies to all price lists using the selected transports (including `B-AG`). It covers all hotels at the matching destination for the selected agency.
 
 <figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -130,7 +159,9 @@ The system will then update all price lists created with the selected transports
 3. **Hotel-Specific Rule**\
    Applies to price lists created with selected hotels for the chosen brand.
 
-STAY: The stay length of interval 1. If a hotel is specified, in the case of two matching rules (overlap), the most precise rule wins (if there is a rule with no stay and a rule that matches with stay, then the rule with stay is used).
+**STAY**: The stay length for interval 1.
+
+If two rules overlap, the most specific rule wins. If one rule has **STAY** and the other does not, the stay-specific rule is used.
 
 **Profit Margin Calculation:**\
 For a given brand and departure interval, the profit margin (**PM**) is calculated as:\
@@ -154,7 +185,7 @@ The same rule can be defined for different departure intervals.
 
 <figure><img src=".gitbook/assets/image (4) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-The value in the price list will be the sum of profit margins from Transport, Resort, and Hotel.
+The value in the price list is the sum of profit margins from Transport, Resort, and Hotel.
 
 <figure><img src=".gitbook/assets/image (3) (1) (1) (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -178,7 +209,7 @@ In these cases, the system will simply **recalculate the final price** based on 
 
 **An agency** uses a **Base Margin** defined through Profit Margin Rules, and then they manually adjust the profit margin directly in the Price List, and they perform manual price adjustments for various purposes.
 
-In this case PM1 will be updated when:
+In this case, PM1 is updated when:
 
 * The **Profit Margin** itself is adjusted (departures, stay, amount)
 * The **dates** are adjusted
@@ -194,7 +225,9 @@ In this case PM1 will be updated when:
 * Editing **Discounts, Supplements, or Extras**
 
 {% hint style="danger" %}
-At this moment, the system allows for handling different profit margins (percentage and amount - based rules). It is recommended to use the same profit margin type when creating a rule for correct calculation.
+Currently, the system supports both percentage-based and amount-based profit margins.
+
+Use the same margin type within a rule to avoid incorrect calculations.
 {% endhint %}
 
 ### FAQ

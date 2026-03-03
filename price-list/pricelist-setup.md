@@ -1,34 +1,66 @@
+---
+description: >-
+  Set up Tourpaq Office price lists. Create/copy by brand, transport, fix quota,
+  hotel, and room. Manage PLTA lines, P1–P4, discounts, and allotment filters.
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+---
+
 # Pricelist Setup
 
-This feature is available for the administrator user type.
+Only administrators can access **Pricelist Setup**.
 
-> More information on the effects can be found in [Broken link](/broken/pages/jc50ozXeeKjwLpod8Fqn "mention") page
+See also: [Pricelist](pricelist.md).
 
-## Create/Copy price list <a href="#createcopy-price-list" id="createcopy-price-list"></a>
+## Overview
 
-### Create price lists <a href="#create-price-lists" id="create-price-lists"></a>
+Use **Pricelist Setup** to:
 
-Price lists are created in the **Price List** tab by selecting **Create/Copy Price List**. The creation process involves the following steps:
+* Create new **Tourpaq Office price lists** for a transport + hotel + room combination.
+* Copy prices and discounts across departures and related price lists.
+* Maintain price list lines (PLTA) with prices, discounts, child prices, and one-way prices.
+* Filter by **allotment type** (Allotment vs Guarantee/Secured) and selling logic.
+
+## Create or copy a price list
+
+### Create price lists
+
+Create price lists in the **Price List** tab. Click **Create/Copy Price List**.
 
 1. **Select Brand** – Choose the brand for which the price list will be available.
 2. **Select Transport** – Choose the transport option for the price list.
-3. **Set Fix Quota** – Define the transport’s fixed quota.
+3. **Set Fix Quota** – Select the transport’s fixed quota.
 4. **Select Hotel** – Choose the hotel that will use the price list.
 5. **Select Rooms** – Specify the rooms to include in the price list.
 
 <figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### Not created prices <a href="#not-created-prices" id="not-created-prices"></a>
+### Not created prices (missing price lists)
 
-This feature allows users to identify **price lists that were not created**.
+Use **Not created prices** to identify **missing price lists** for selected criteria.
 
-* Common reasons for missing price lists include:
-  1. The **fix quota** does not cover the hotel allotment period.
-  2. Some required **settings for the transport or hotel** were skipped during price list creation.
+Common reasons:
+
+1. The **fix quota** does not cover the hotel allotment period.
+2. Required **transport or hotel setup** is missing (for example, allotments).
 
 <figure><img src="../.gitbook/assets/image (36) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-## Copy price list <a href="#copy-price-list" id="copy-price-list"></a>
+## Copy a price list
 
 The **Copy Price List** feature allows users to duplicate price lists **within the same brand**.
 
@@ -36,7 +68,7 @@ The **Copy Price List** feature allows users to duplicate price lists **within t
 
 1. **Select Source** – Choose the **Transport**, **Hotel**, **Room**, and **Date** from which the price list will be copied.
 2. **Select Destination** – Choose the **Transport**, **Hotel**, **Room**, and **Date** to which the prices will be copied.
-3. **Different Days** – Define the difference in days between the source and destination price lists. This is used if:
+3. **Different Days** – Set the day offset between source and destination. Use this if:
    * The transport’s fixed quota does not match, or
    * You want to extend the price list by a specific number of days.
 4. **Adjust Prices and Discounts** – Use the **Change Discounts for Original Prices** and **PRICE DIFFERENCE** sections to modify values as needed.
@@ -44,7 +76,7 @@ The **Copy Price List** feature allows users to duplicate price lists **within t
    * A transport to all transports of the brand.
    * A hotel to all hotels assigned to the transport.
    * A room to all rooms of a hotel.
-6. **Important:** Before copying, ensure all checkboxes in the **PRICE DIFFERENCE** section are selected, even if values are 0.
+6. **Important:** Select all checkboxes in **PRICE DIFFERENCE**, even when values are `0`.
 7. **Execute Copy** – Click **Copy Prices**.
 8. **Save Discounts** – Click **Save Changed Discounts** to finalize.
 
@@ -52,105 +84,76 @@ The **Copy Price List** feature allows users to duplicate price lists **within t
 
 ### Field-by-Field Explanation
 
-#### **Filters (Top Section)**
+#### Filters (top section)
 
-| Field              | Description                                                                                            |
-| ------------------ | ------------------------------------------------------------------------------------------------------ |
-| **Departure date** | Defines the travel date range for which prices should be displayed. Example: 03-03-2025 to 03-03-2025. |
-| **Resorts**        | Filters the results by specific resorts.                                                               |
-| **Transports**     | Filters by available transport options (e.g., flights, buses).                                         |
-| **Transport type** | Select transport categories (e.g., all seats, specific seat types).                                    |
-| **Hotels**         | Filters by hotel(s).                                                                                   |
-| **Allotment type** | Choose between the allotment types: All rooms, Allotment, or Guarantee/Secured.                        |
-| **Room**           | Filters specific room categories.                                                                      |
-| **Fix quotas**     | Optionally restricts the view to fixed quota contracts.                                                |
-| **Display names**  | Toggles whether to show hotel names.                                                                   |
-| **Stay Length**    | Defines the length of stay (number of nights).                                                         |
-| **Checkboxes**     |                                                                                                        |
+* **Departure date**: Travel date range to display. Example: `03-03-2025` to `03-03-2025`.
+* **Resorts**: Filter by resort.
+* **Transports**: Filter by transport (flight, bus, etc.).
+* **Transport type**: Filter by transport/seat type.
+* **Hotels**: Filter by hotel.
+* **Allotment type**: All rooms, Allotment, or Guarantee/Secured.
+* **Room**: Filter by room type.
+* **Fix quotas**: Limit results to a fixed quota contract.
+* **Display names**: Show hotel names in the grid.
+* **Stay Length**: Nights/stay length filter.
 
 A price list is blank when first created.
 
 <figure><img src="../.gitbook/assets/image (41) (1).png" alt=""><figcaption></figcaption></figure>
 
-The fields must then be filled manually by the user with the amounts calculated or required. Some fields are set to autofill based on a formula that takes into consideration the amounts already inserted. In the end, a price list should look like this:
+You must then enter the required values. Some fields auto-fill based on formulas and existing values. A filled price list looks like this:
 
 <figure><img src="../.gitbook/assets/image (632).png" alt=""><figcaption></figcaption></figure>
 
-Fields:
+#### Price list grid fields (PLTA lines)
 
-* Optional tools, to be used only when needed
-  * Show/Hide History (details the changes that have been made to that price line)
-  * Reset this pricelist in API v4.1
-  * Recalculate the Free Hotel Allotment value
-* PLTA ID - pricelist unique identifier
-* Hotel (autofill field)
-* Room (autofill field)
-* Dept date (autofill field, departure date for bookings made with this room)
-* Stays - stay days
-* FHA (Free Hotel Allotment, autofill field, if the value is 0, but the hotel has allotments, please use Recalculate the Free Hotel Allotment value)
-* FTA (Free Transport Allotment, autofill field)
-* P1 - P4 (price fields for intervals, filled by user)
-* PP1 - PP4 {basic profit forecast of price per interval for 1 pax, PP1 = P1 - (transport + room costs) autofill field}
-* POWO (price for one way out transports, filled by user)
-* POWH (price for one way home transports, filled by user)
-* G1 - G4 (group price, user filled field)
-* PG1 - PG4 {basic profit forecast of group price per interval for 1 pax, PG1 `=` G1 - (transport + hotel cost), autofill field}
-* GPOWO (group price for one way out transports, filled by user)
-* GPOWH (group price for one way home transports, filled by user)
-* D1-D4 (discount price for 1 week, overwrites P1 in web booking, filled by user)
-* PD1-PD4 {basic profit forecast of discount price per interval for 1 pax, PD1 `=` D1 - (transport + room costs), autofill field}
-* DPOWO (discount price for one way out transports, autofill field)
-* DPOWH (discount price for one way home transports, autofill field)
-* CH1P1-CH1P4 (child price per interval 1-4)
-* PCH1P1 - PCH2P1 - Child price 1/2+ profit forecast for P1
-* CH1% - CH4% (calculates the CH based on a percentage from P prices)
-* DEBD check box - Disable extra bed discount - if checked, disables extra bed discount for all price types: P1-P4 and D1-D4
-* DEBDPD check box (Disable extra bed discount for discount price - if checked, disables extra bed discount only for D1-D4 prices)
-* CPOWO (child price for one way out)
-* CPOWH (child price for one way home)
-* CPM1- CPM4 - Child profit margin interval 1-4
-* M1-M4 (maximum rooms per transport)
-* PM1-PM4 (profit margin for P prices)
-* PM% (transforms the value from PM in percentage)
-* PA1-PA4 - price adjustment interval 1
-* C1PA - Child 1 price adjustment
-* C2PA - Child 2+ price adjustment
-* WL checkbox (waitlist behavior)
-* HD checkbox (hot deal list)
-* FB - facebook checkbox
-* NFIS checkbox (not for internet sale)
-* 1W - Booked one week before&#x20;
-* 2W - Booked two weeks before
-* PL. REG. RULE. (select between price regulation rules)
-* TR R Rule (transport regulation rule)
-* LOWP1-LOWP4 (lowest regulation price)
-* GR - Guarantee room
-* GS - Guarantee seats
-* TP - transport price (Value here changes Extra Bed discount as: (P1-TP)\*X%=Ex Bed Discount) (only for percent rules)
-* TAG CH (tag change)
-* TAG
-* STATUS
-* HNI1 - HNI4 - Hotel name interval 1-4
+* **Tools (row icons)**:
+  * **Show/Hide History**: See changes for the price list line.
+  * **Reset price list in API v4.1**: Clears cached price list data.
+  * **Recalculate FHA**: Recalculates Free Hotel Allotment (FHA) on demand.
+* **PLTA ID**: Unique identifier for the price list line.
+* **Hotel / Room / Dep. date / Stays**: Context fields. Mostly auto-filled.
+* **FHA / FTA**: Free Hotel Allotment and Free Transport Allotment. Auto-filled.
+* **P1–P4**: Selling prices per interval. Entered manually unless rules fill them.
+* **PP1–PP4**: Profit forecast for P1–P4. Auto-calculated.
+* **D1–D4**: Discount prices (used in web booking when configured). Entered manually.
+* **PD1–PD4**: Profit forecast for D1–D4. Auto-calculated.
+* **G1–G4 / PG1–PG4**: Group prices and profit forecast.
+* **CH1P1–CH1P4**: Child prices per interval.
+* **CH%**: Calculates child prices as a percentage of P prices.
+* **POWO / POWH**: One-way outbound / homebound prices.
+* **GPOWO / GPOWH / CPOWO / CPOWH / DPOWO / DPOWH**: One-way group/child/discount fields.
+* **DEBD / DEBDPD**: Disable extra bed discount (all price types, or discount only).
+* **CPM1–CPM4**: Child profit margin per interval.
+* **M1–M4**: Max rooms per transport per interval.
+* **PM1–PM4 / PM%**: Profit margin values and percentage.
+* **PA1–PA4 / C1PA / C2PA**: Price adjustments (adult/child).
+* **WL / HD / FB / NFIS**: Waitlist, hot deal, Facebook, not for internet sale.
+* **1W / 2W**: Booked one week / two weeks before.
+* **PL. REG. RULE. / TR R Rule / LOWP1–LOWP4**: Price regulation and transport regulation rule fields.
+* **GR / GS**: Guarantee room / guarantee seats flags.
+* **TP (Transport Price)**: Used by percent-based extra bed discount rules. It affects the base used for discount calculations.
+* **TAG / TAG CH / STATUS / HNI1–HNI4**: Operational tagging and hotel name interval fields.
 
 {% hint style="info" %}
-### Room Type Display Logic for Allotment Filter
+#### Room type display logic for the Allotment filter
 
-#### Principle
+**Principle**
 
 The type shown in filters must reflect the **effective allotment that will be consumed next**, not only the technical configuration.
 
 This ensures that the filter behavior matches operational reality and user expectations.
 
-### Functional Rule
+**Functional rule**
 
-#### 1. Guarantee / Secured Allotment Has Priority
+**1) Guarantee/Secured allotment has priority**
 
 If both **Guarantee/Secured allotment** and **Allotment** exist for the same room type, the system consumes:
 
 1. Guarantee/Secured allotment first
 2. Allotment after guarantee is exhausted
 
-#### 2. Display Rule in Filters
+**2) Display rule in filters**
 
 **Case A: Guarantee Allotment Still Available**
 
@@ -172,24 +175,24 @@ If Guarantee/Secured allotment = 0 and Allotment > 0:
 
 Reason: The next booking will consume allotment.
 
-### Rationale
+**Rationale**
 
 The filter must reflect the **current effective selling logic**, not just the configured allotment types.
 
 This ensures that users selecting the Allotment filter only see rooms that will actually consume allotment.
 {% endhint %}
 
-#### Tabs <a href="#tabs" id="tabs"></a>
+### Tabs
 
 Below the filters are the following tabs:
 
-**Prices -** Contains the actual pricelist
+**Prices** – Contains the price list grid (PLTA lines).
 
-**Discounts -** Contains discounts from the hotel
+**Discounts** – Contains discounts inherited from the hotel.
 
 <figure><img src="../.gitbook/assets/image (42) (1).png" alt=""><figcaption></figcaption></figure>
 
-**Column filters -** Allows the user to filter among the columns shown in prices. All unchecked filters will be displayed in **PRICES**
+**Column filters** – Controls which columns show in **Prices**. Unchecked fields are hidden.
 
 <figure><img src="../.gitbook/assets/image (633).png" alt=""><figcaption></figcaption></figure>
 
@@ -208,9 +211,9 @@ Filter categories:
 
     * P. Ch. - increase/decrease prices per interval
     * Hide average profit - hides average real profit per pax
-    * TP - transport price�
+    * TP - transport price
 
-    ⚠️ **Warning:** Values here change **Extra bed discount** (P1 - TP) \* - TP)\*X%=EBD
+    ⚠️ **Warning:** Some extra bed discount setups use **TP (Transport Price)** as input. Validate your results after edits.
 
     * GR - guarantee rooms
     * GS - guarantee seats
@@ -221,41 +224,42 @@ Filter categories:
   * Facebook
 * OW Prices - display one way price filters
 
-#### Alternative hotel name <a href="#alternative-hotel-name" id="alternative-hotel-name"></a>
+### Alternative hotel name
 
-A handy improvement is being able to customize hotel name for specific departures.
+You can set an **alternative hotel name** for specific departures.
 
 <figure><img src="../.gitbook/assets/image (634).png" alt=""><figcaption></figcaption></figure>
 
-This alternative name will also appear on the ticket.
+The alternative name also appears on the ticket.
 
-In the office, the alternative name will replace the hotel name.
+In Tourpaq Office, it replaces the standard hotel name.
 
-## The P.CH (Price Change) option <a href="#the-pch-price-change-column" id="the-pch-price-change-column"></a>
+## P. Ch. (Price Change)
 
-The P. Ch. column stands for Price Change. This will adjust the price relative to what is currently in the column.
+The **P. Ch.** column adjusts values relative to the current price in a column.
 
 <figure><img src="../.gitbook/assets/image (46) (1).png" alt=""><figcaption></figcaption></figure>
 
-When something is selected in this column, another set of options will appear in the upper section.
+When you select a row in **P. Ch.**, more options appear at the top.
 
-Pr. Change -> sets the column to be modified
+* **Pr. Change**: Column to modify.
+* **Value**: Value to add to the current value.
+  * Example: If `P1 = 1000` and `Value = 200`, then `P1` becomes `1200`.
+* **Run**: Applies the change in the grid. Running again applies the change again.
 
-Value -> sets the value that is added to the current value in the selected column. (Example: P1 is 1000 and you set 200, P1 will be set to 1200)
-
-Run -> makes the change take effect in the interface. Repeated pressing will increase/decrease prices again.
-
-Difference from Price -> This option is available only for Discount columns. This makes discount values modify relative to P in the period (example: D1 is relative to P1, D2 is relative to P2 , etc.).
+**Difference from Price** is only available for discount columns. It makes discount values relative to the matching P column (D1→P1, D2→P2, etc.).
 
 <figure><img src="../.gitbook/assets/image (47) (1).png" alt=""><figcaption></figcaption></figure>
 
-When **Difference from Price** is checked, after Run, discount values are calculated by decreasing the price with the value set. If Price P1=2000 and D1=200 and Difference from Price is checked, after Run, PD1=2000-200=1800. Only after Save, new values are saved in the PriceList.
+When **Difference from Price** is checked, **Run** calculates discount values by subtracting the configured value from the matching P price.
+
+Example: If `P1 = 2000` and `Value = 200`, then `D1 = 1800` after **Run**. Click **Save** to persist changes.
 
 ### FAQ
 
 #### How do I create a new price list?
 
-Use Create or Copy Price List, then select brand, transport, fix quota, hotel, and the rooms to include.
+Use **Create/Copy Price List**, then select brand, transport, fix quota, hotel, and rooms.
 
 #### Why is a price list not created?
 
@@ -271,7 +275,7 @@ You can copy prices from one transport to all brand transports, from one hotel t
 
 #### What must be selected before copying prices?
 
-All checkboxes in the Price Difference section should be selected, even if the values are zero.
+All checkboxes in **Price Difference** should be selected, even if the values are zero.
 
 #### What filters are available in Pricelist Setup?
 
@@ -287,4 +291,4 @@ The grid shows hotel, room, departure date, free hotel and transport allotments,
 
 #### How are child prices calculated?
 
-Child prices can be entered directly or calculated as a percentage of the adult price using CH% col
+Child prices can be entered directly. They can also be calculated as a percentage of adult prices using **CH%** columns.
