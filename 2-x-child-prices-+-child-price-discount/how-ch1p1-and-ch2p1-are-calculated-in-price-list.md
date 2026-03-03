@@ -1,94 +1,141 @@
+---
+description: >-
+  Understand how Tourpaq Office calculates child prices CH1P1 and CH2P1 in the
+  Price List, including room cost per night, number of nights, transport cost,
+  and child profit margin (CPM).
+---
+
 # How CH1P1 & CH2P1 are calculated in Price List
 
-### **Overview**
+## Overview
 
-This document explains how the child pricing columns **CH1P1** and **CH2P1** are displayed and calculated in the **Price List** section.\
-The feature allows administrators to view detailed child pricing information and understand how child prices are derived based on hotel room costs, profit margins, and transport costs.
+This page explains how **CH1P1** and **CH2P1** are displayed and calculated in **Tourpaq Office → Price List**.
 
-***
+These fields show **child selling prices** per interval (for example P1).
 
-### **Accessing Child Price Columns**
+The calculation uses:
 
-Within the **Price List**, administrators can customize the displayed columns to include child-related pricing data.\
-From the column selection menu (three-dot icon in the table header), users can enable the following columns:
+* **Hotel room cost** (per pax, per night)
+* **Number of nights** (stay length)
+* **Transport cost**
+* **Child profit margin** (`CPM1`)
+
+## Show child price columns in Price List
+
+In **Price List**, open the column visibility menu (three-dot icon in the table header).
+
+Enable the relevant child column groups, for example:
 
 * **CHILD 1 PRICES** and **CHILD 2+ PRICES**
-* **CHILD PROFIT PRICES**&#x20;
+* **CHILD PROFIT PRICES**
 * **CHILD 1 DISCOUNTS** and **CHILD 2 DISCOUNTS**
 * **CHILD PROFIT MARGIN**
 * **CHILD ADJUSTMENTS**
 
 <figure><img src="../.gitbook/assets/image (640).png" alt=""><figcaption></figcaption></figure>
 
-When activated, the table will display a series of child pricing columns, including:\
-**CH1P1**, **CH2P1**, **CH1D1**, **CH2D1**, , **CPM1, PCH1P1, PCH2P1, CH1PD1, CH2PD1, CH1PA, CH2PA.**
+Common child fields you will see after enabling the column groups:
+
+* **Child prices**: `CH1P1`, `CH2P1`
+* **Child profit margin**: `CPM1`
+* **Child adjustments**: `CH1PA`, `CH2PA`
+* **Child discount prices**: `CH1D1`, `CH2D1`
+* **Child profit discount prices**: `CH1PD1`, `CH2PD1`
 
 <figure><img src="../.gitbook/assets/image (641).png" alt=""><figcaption></figcaption></figure>
 
-\
-These columns represent price values, applied discounts, profit margins, and adjustments relevant to the selected room type and travel package.
+{% hint style="info" %}
+You only need `CH1P1`, `CH2P1`, and `CPM1` to validate the base child price calculation.
 
-***
+Discount fields (`CH…D…`) are covered separately.
+{% endhint %}
 
-### **Calculation Logic**
+## Calculation logic (CH1P1 and CH2P1)
 
-**CH1P1 Calculation**
+### Base formula
 
-The column **CH1P1** represents the calculated price for the first child and follows this formula:
+Both child price fields follow the same structure:
 
-**CH1P1 = (Room Cost from the hotel × Number of nights) + CMP1 + Transport Cost**
+`CHxP1 = (Hotel room cost per pax per night × nights) + CPM1 + transport cost`
 
-This ensures the child's price reflects the total room cost across the stay period, combined with the applied profit margin and any associated transport cost.
+Where:
 
-Example:
+* `CHxP1` is either `CH1P1` or `CH2P1`
+* `CPM1` is the **child profit margin** for interval 1
 
-Room cost = 50 Euro /pax/night = 373.5 DKK /pax/night&#x20;
+This ensures the child price reflects the stay cost plus margin and transport.
+
+### Example
+
+Room cost = 50 EUR per pax per night = 373.5 DKK per pax per night
 
 <figure><img src="../.gitbook/assets/image (642).png" alt=""><figcaption></figcaption></figure>
 
-Number of nights  = 7
+Nights = 7
 
-CPM1 = 100 DKK&#x20;
+CPM1 = 100 DKK
 
 <figure><img src="../.gitbook/assets/image (643).png" alt=""><figcaption></figcaption></figure>
 
-Transport cost = 13094 DKK&#x20;
+Transport cost = 13094 DKK
 
 <figure><img src="../.gitbook/assets/image (644).png" alt=""><figcaption></figcaption></figure>
 
-**CH1P1 = (Room Cost from the hotel × Number of nights) + CMP1 + Transport Cost = (373.5 \* 7) + 100 + 13094 = 15849 DKK**
+`CH1P1 = (373.5 × 7) + 100 + 13094 = 15849 DKK`
 
-If child adjusment it is used (CH1PA),  the CH1P1 it will be calculate with the same formula, but it will be added the child adjusment. This field accept both positive and negative value:
+### Child adjustments (CH1PA / CH2PA)
 
-* Positive Adjustment for CH1PA
+If you use child adjustments, they are added to the same base formula.
 
-**CH1P1 = (Room Cost from the hotel × Number of nights) + CMP1 + Transport Cost + CH1PA**&#x20;
+`CH1P1 = (room cost × nights) + CPM1 + transport cost + CH1PA`
+
+`CH2P1 = (room cost × nights) + CPM1 + transport cost + CH2PA`
+
+`CH1PA` and `CH2PA` accept **positive or negative** values.
 
 <figure><img src="../.gitbook/assets/image (645).png" alt=""><figcaption></figcaption></figure>
 
-Child prices (CH1P1,CH1P2,CH1P1, CH2P2) are increased with CPA values. CPA triggers costs so will change the prices considering the cost. If there is no cost, then PA have no effect. PM is not mandatory to be set, if PA is set will trigger PMS and will calculate considering PM=0
+{% hint style="info" %}
+Adjustments can trigger price recalculation logic that depends on underlying cost data.
 
-**Adjustment set to 0** (CPA=0), if the PLTA has no PM set, will be ignored, so the prices will remain the same. Otherwise main price (CH1/2P1) is modified according to cost and PM.
+If required costs are missing, adjustments may not behave as expected.
+{% endhint %}
 
-* Negative Adjustment
+## Purpose and usage
 
-**CH1P1 = (Room Cost from the hotel × Number of nights) + CMP1 + Transport Cost**&#x20;
+Use `CH1P1` and `CH2P1` to validate that:
 
-**CH1D1 = CH1P1 - CH1PA**
+* Child prices follow the configured **child profit margin** (`CPM1`).
+* Room cost and stay length are applied correctly.
+* Transport cost is included as expected.
 
-<figure><img src="../.gitbook/assets/image (646).png" alt=""><figcaption></figcaption></figure>
+## FAQ
 
-**CH2P1 Calculation**
+#### What are CH1P1 and CH2P1?
 
-The column **CH2P1** follows the same calculation logic as CH1P1:
+They are child selling prices in the Price List for interval 1 (P1).
 
-**CH2P1 = (Room Cost from the hotel × Number of nights) + CMP1 + Transport Cost**
+CH1 typically represents child 1. CH2 represents child 2+.
 
-Since both child prices share the same profit margin (CMP1), the resulting calculation ensures consistency and transparency across child pricing configurations.
+#### Do CH1P1 and CH2P1 use different profit margins?
 
-***
+No. Both use the same child profit margin field for the interval (for example `CPM1`).
 
-### **Purpose and Usage**
+#### Where do I enable the CH1/CH2 columns?
 
-Displaying the **CH1P1** and **CH2P1** columns allows administrators to verify that child pricing aligns with the configured profit margins and cost rules.\
-This setup ensures accurate pricing representation for child passengers and supports better monitoring of profit structures within the **Price List** interface.
+Open the Price List grid’s column visibility menu (three dots).
+
+Enable the **CHILD …** column groups.
+
+#### Why are CH1P1 / CH2P1 blank or 0?
+
+Common causes:
+
+* Missing hotel cost data for the period.
+* Missing transport cost data.
+* The company feature for child profit margin is not enabled.
+* The price list entry is not fully created for the date range.
+
+#### Do child adjustments (CH1PA/CH2PA) affect CH1P1/CH2P1?
+
+Yes. They are added to the base formula and can be positive or negative.

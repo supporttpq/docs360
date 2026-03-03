@@ -1,177 +1,187 @@
 ---
 description: >-
-  The Generate Price List Service automatically creates price lists based on a
-  resort or transport.
+  Generate Tourpaq Office price lists with manual or scheduled rules by resort,
+  hotel, transport, departure dates, and fix quotas.
 ---
 
 # Price List Generator
 
-### **Overview**
+## Overview
 
-The **Generate Price List** page allows users to create, view, and manage scheduled or manually generated price lists for different destinations, transports, and hotels.\
-This functionality is essential for maintaining accurate and consistent pricing across all travel products in the system.
+Use **Price List Generator** (Generate Price List service) to create **Tourpaq Office price lists** in bulk.
 
-Importantly, this feature **enables the automatic creation of large numbers of price lists**, ensuring that pricing updates are performed systematically across multiple destinations and date ranges — **significantly reducing manual work** and minimizing the risk of human error.
+It creates price list entries based on **resort** or **transport** rules.
 
-***
-
-### **Purpose**
-
-The purpose of this page is to:
-
-* Automate the creation of price lists for different markets, destinations, and transports.
-* Provide visibility over all existing and scheduled price generation rules.
-* Ensure that all active transport and accommodation combinations have valid pricing for the defined periods.
-* **Reduce repetitive manual tasks** by allowing bulk and scheduled price generation based on configurable rules.
-
-By using this tool, users can efficiently maintain pricing structures across the entire product portfolio without needing to manually update each route or resort.
-
-***
-
-### **Filters and Fields**
-
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-| **Field / Control** | **Description**                                                                           |
-| ------------------- | ----------------------------------------------------------------------------------------- |
-| **Departure from**  | Select the **departure start date**                                                       |
-| **Departure to**    | Select the **departure end date**                                                         |
-| **Arrivals**        | Filter by a specific **arrival point.**                                                   |
-| **Resorts**         | Choose one or more **resorts** for which the price list should be displayed or generated. |
-| **Transports**      | Filter by a specific **transport**.                                                       |
-| **Display**         | After setting filters, click this button to display matching entries in the list below.   |
-| **Clear**           | Resets all applied filters and displays all available records.                            |
-
-***
-
-### **Table Columns**
-
-| **Column**              | **Description**                                                                                                                                                                                   |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Agency**              | The agency responsible for generating the price list (e.g., _Tourpaq DK_).                                                                                                                        |
-| **Arrival**             | The destination city where the transport arrives (e.g., _Chania_, _Barcelona_). Mandatory field                                                                                                   |
-| **Resort**              | The resort associated with the destination (e.g., _CHQ – Chania Resort_).                                                                                                                         |
-| **Hotel**               | The specific hotel included in the price list generation rule.                                                                                                                                    |
-| **Departure From / To** | Defines the valid departure date range for the transport or stay.                                                                                                                                 |
-| **Transport**           | Shows the transport identifier or code (e.g., _BLL–CHQ–OLI+471b7671_).                                                                                                                            |
-| **Fix Quotas**          | Displays the date range for which the quota and prices are fixed. These are the validity periods for generated prices. Mandatory if a Transport is selected.                                      |
-| **Actions (Icons)**     | <p>- <strong>🖉 Edit</strong>: Opens the selected record for editing.<br>- <strong>🗑 Delete</strong>: Deletes the selected rule.<br>- History: Shows what changes have been made to the rule</p> |
-
-***
-
-### **Buttons**
-
-| **Button**                                 | **Function**                                                                                                                                                                                                             |
-| ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Create**                                 | Opens a new line to create a **price list generation rule** manually. The user can define agency, resort, date ranges, or transport before saving.                                                                       |
-| **Scheduled Rules to Generate Price List** | Opens an overview of **scheduled rules** that automatically trigger the generation of price lists according to pre-set conditions. This is the primary mechanism that allows **automatic mass creation** of price lists. |
-
-***
-
-### **Highlighted Rows**
-
-Rows with a **red background** indicate records that are scheduled rules to generate pricelists. Each rule is scheduled when allotment from Hotel is generated or extended.
-
-***
-
-### **Edit a rule**
-
-1. **Filter the records:**
-   * Use the filters (Departure from, Resort, Transports, etc.) to narrow the list of relevant entries.
-   * Click **Display** to show results.
-2. **Review existing price list rules:**
-   * Check if a rule already exists for the required date range.
-   * Look for outdated or overlapping periods.
-3. **Edit a rule:**
-   * Click on the Pencil on the left, on the line you want to edit
-   * Click on Fix Quota to define Price List rules
-   * Save the rule.
-4. **Generate or regenerate price lists:**
-   * Click on the Save icon on the left to save the rule
-   * The new rule will be placed in the schedule queue, waiting for the service to run. (The rule will be on the red background until the service has run, and the rule will become active).
-5. **Verify fixed quotas:**
-   * Ensure the **Fix Quotas** dates align with the season or travel period you want to price.
-
-### **Steps to Add a Generation Rule**
-
-1. Click on **Create** to add a new rule
-2. Define all necessary fields (departure, arrival, resort, transport, and date range) – After defining the basic resort and transport, save the rule to continue.
-3. **Select Fix Quota** – Choose any available fix quota. Each fix quota is unique, and an interval can be set for it.
-   * The **new interval** must be included within the parent fix quota.
-4. **Add Rule to System** – Once added, the rule is active.
-5. **Generate Price List** – The system will generate price lists for the current combination
+Use it when you set up new seasons, extend allotments, or add new hotel/transport combinations.
 
 {% hint style="warning" %}
-**This feature doesn't create prices; it only creates pricelists.**
+This feature creates **price lists** (entries/structures).
+
+It does **not** calculate or create the selling prices inside the price list (P1–P4, D1–D4, etc.).
 {% endhint %}
 
-***
+## What it’s used for
 
-### **Key Benefits**
+Use Price List Generator to:
 
-* **Automatic generation** of multiple price lists across destinations and date ranges.
-* **Reduced manual work** for administrators and pricing managers.
-* **Increased accuracy** by minimizing manual input and ensuring consistent price coverage.
-* **Faster seasonal updates**, as recurring rules handle repetitive price list creation.
+* Generate missing price lists for a destination, resort, hotel, or transport.
+* Create **scheduled rules** that run automatically when hotel allotment is generated or extended.
+* Reduce manual work when you need many price lists created consistently.
+* Keep coverage across departure periods, resorts, and transports.
 
-***
+### Prerequisites
 
-### **Best Practices**
+You need:
 
-* Regularly review scheduled rules to ensure they reflect current transport and hotel combinations.
-* Avoid overlapping date ranges to prevent pricing conflicts.
-* Schedule updates ahead of major sales periods or seasonal rollouts.
-* Maintain clear naming conventions for transports and resorts to simplify tracking.
+* Access rights to the price list / setup modules.
+* Hotel and transport setup in place (including allotments and fix quotas).
 
-***
+## Filters
 
-### FAQ
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Price List Generator filters and results list"><figcaption><p>Filter and display existing or scheduled price list generation rules.</p></figcaption></figure>
 
-#### What does the Price List Generator create?
+Use the filters to find existing rules and validate what the generator will create.
 
-It creates **price lists** (the price list entries/structures).\
-It does **not** create the selling prices inside the price list.
+* **Departure from**: Departure start date.
+* **Departure to**: Departure end date.
+* **Arrivals**: Filter by arrival point.
+* **Resorts**: Filter by one or more resorts.
+* **Transports**: Filter by transport (optional).
+* **Display**: Show matching rules in the list.
+* **Clear**: Reset filters and show all rules.
 
-#### What do I need to fill in to create a generation rule?
+## Result columns
+
+Each row is a **price list generation rule**.
+
+* **Agency**: The agency/brand context for the rule. Example: `Tourpaq DK`.
+* **Arrival**: Arrival destination. Required.
+* **Resort**: Resort for which the price lists are generated.
+* **Hotel**: Hotel included in the rule (optional, depending on your setup).
+* **Departure From / To**: Departure date range covered by the rule.
+* **Transport**: Transport code/identifier (optional).
+* **Fix Quotas**:
+  * Validity period used when generating price lists for a transport.
+  * Required if **Transport** is selected.
+* **Actions**:
+  * **Edit**: Open the rule for editing.
+  * **Delete**: Delete the rule.
+  * **History**: View changes made to the rule.
+
+## Actions and buttons
+
+* **Create**: Add a new price list generation rule.
+* **Scheduled Rules to Generate Price List**: View the list of scheduled rules.
+
+## Scheduled rules (red rows)
+
+Rows with a **red background** are **scheduled rules**.
+
+They are queued and will run when **hotel allotment is generated or extended**.
+
+The row stays red until the service has processed it.
+
+## Create a generation rule
+
+1. Click **Create**.
+2. Fill in the required fields:
+   * **Agency**
+   * **Arrival**
+   * **Resort**
+   * **Departure from** / **Departure to**
+3. Optional: Select **Transport** (and hotel, if relevant in your setup).
+4. Click **Save**.
+5. If you selected **Transport**, open **Fix Quota** and select the correct fix quota interval.
+6. Click **Save** again to queue the rule.
+
+## Edit a rule
+
+1. Use filters to find the rule.
+2. Click **Edit** on the row.
+3. Update fields and fix quota interval as needed.
+4. Click **Save**.
+5. If the row turns red, it is queued and waiting for the service.
+
+## Verify the generator ran
+
+1. Set the same filters (arrival/resort/transport/departure range).
+2. Click **Display**.
+3. Confirm the expected rules and date ranges exist.
+4. Confirm queued rules are no longer red after the service run.
+
+## Key benefits
+
+* Automatic generation of many price lists across date ranges and destinations.
+* Less manual work for administrators and pricing managers.
+* Better consistency across resorts, hotels, and transports.
+* Faster seasonal rollouts when allotments change.
+
+## Best practices
+
+* Review scheduled rules regularly.
+* Avoid overlapping departure date ranges.
+* Align rule intervals with the correct **fix quota** periods.
+* Keep transport and resort naming consistent for easier searching.
+
+## FAQ
+
+### What does Price List Generator create?
+
+It creates **price lists** (entries/structures).
+
+It does **not** create selling prices inside the price list.
+
+### What do I need to fill in to create a generation rule?
 
 At minimum:
 
 * **Agency**
 * **Arrival**
 * **Resort**
-* **Departure from/to**
+* **Departure from** / **Departure to**
 
 If you select a **Transport**, you must also select **Fix Quotas**.
 
-#### What is a Fix Quota and why is it required?
+### What is a fix quota, and why is it required?
 
-Fix Quota defines the **validity period** used when generating price lists for a transport.\
-Your rule interval must be within the parent Fix Quota interval.
+A fix quota defines the **validity period** used when generating price lists for a transport.
 
-#### Why is a row highlighted in red?
+Your rule interval must be within the parent fix quota interval.
 
-Red rows are **scheduled rules**.\
+### Why is a row highlighted in red?
+
+Red rows are **scheduled rules**.
+
 They are queued and waiting for the generator service to run.
 
-#### When will a scheduled rule run?
+### When will a scheduled rule run?
 
-Rules are typically queued when **hotel allotment is generated or extended**.\
+Rules are typically queued when **hotel allotment is generated or extended**.
+
 The row stays red until the service has processed it.
 
-#### How do I verify the generator worked?
+### How do I verify the generator worked?
 
 1. Set the same filters (arrival/resort/transport/date range).
 2. Click **Display**.
 3. Confirm the expected records exist.
 
-#### Does generating a price list overwrite existing prices?
+### Does generating a price list overwrite existing prices?
 
-The generator creates the **price list entries** for the selected combinations.\
+The generator creates the **price list entries** for the selected combinations.
+
 Avoid overlapping date ranges to reduce unexpected results.
 
-#### I saved a rule, but nothing happens. What should I check?
+### I saved a rule, but nothing happens. What should I check?
 
 * The rule is still red (queued) and the service has not run yet.
-* The date range is valid and not overlapping existing rules.
+* The date range is valid and does not overlap existing rules.
 * The Fix Quota interval contains your rule interval.
 * Required hotel/transport setup and allotments exist.
+
+## Related pages
+
+* [Pricelist](price-list/pricelist.md)
+* [Pricelist Setup](price-list/pricelist-setup.md)
+* [Profit margin rules](profit-margin-rules.md)
+* [Price regulation rules](price-regulation-rules.md)
