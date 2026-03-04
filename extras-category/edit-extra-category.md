@@ -35,7 +35,11 @@ Proper configuration ensures:
 
 ### Section-by-Section Field Explanation
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+{% hint style="info" %}
+Some texts and settings can be customized per active brand.
+{% endhint %}
+
+<figure><img src="../.gitbook/assets/image (687).png" alt=""><figcaption></figcaption></figure>
 
 #### A. General Information
 
