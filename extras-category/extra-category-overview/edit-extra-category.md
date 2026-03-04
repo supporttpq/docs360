@@ -36,10 +36,10 @@ Proper configuration ensures:
 ### Section-by-Section Field Explanation
 
 {% hint style="info" %}
-Some texts and settings can be customized per active brand.
+Texts from general settings can be customized per active brand.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (687).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (688).png" alt=""><figcaption></figcaption></figure>
 
 #### A. General Information
 
