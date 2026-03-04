@@ -28,7 +28,8 @@ This ensures flexibility during setup while still preserving data integrity once
 
 * **Departure**\* – Departure location (mandatory).
 * **Arrival**\* – Arrival location (mandatory).
-* **Stay Days** – Define stay duration (optional, tab). The values displayed in this field are defined in Setup -> [Transport Stay Days](../setup/transport-stay-days.md).
+* **Stay Days\*** – Define stay duration (mandatory). The values displayed in this field are defined in Setup -> [Transport Stay Days](../setup/transport-stay-days.md).
+* **Cancelation condition\*** - Select the cancellation condition that applies to this transport rule (mandatory).
 
 When a user clicks the **“+”** button to add new stay days, the system automatically preselects the first available stay day from the drop-down list.
 
@@ -92,7 +93,6 @@ This behavior allows users to repeatedly press **“+”** and quickly add all r
 
 * **Status** – Defines the rule’s visibility in the system (e.g., Visible / Hidden).
 * **Hide as filter on lists** – If checked, this rule will not appear as a filter option in lists.
-* **Cancelation condition**\* – Select the cancellation condition that applies to this transport rule (mandatory).
 
 ### FAQ
 
