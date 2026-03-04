@@ -31,7 +31,7 @@ This feature is typically used for:
 * Transfer services
 * Homebound or outbound extras management
 
-<figure><img src="../.gitbook/assets/image (683).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (683).png" alt=""><figcaption></figcaption></figure>
 
 The Communication tab contains:
 

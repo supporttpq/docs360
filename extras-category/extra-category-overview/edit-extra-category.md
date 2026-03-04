@@ -39,11 +39,11 @@ Proper configuration ensures:
 Some texts and settings can be customized per active brand.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (687).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (687).png" alt=""><figcaption></figcaption></figure>
 
 #### A. General Information
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 **Name** - Internal name of the extras category.
 
@@ -77,7 +77,7 @@ Some texts and settings can be customized per active brand.
 
 #### B. Filtering Options
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;**Display in Remember Extras** - Allows this category to appear in the "Remember Extras" functionality.
 
@@ -89,7 +89,7 @@ Some texts and settings can be customized per active brand.
 
 #### C. Settings
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 This section controls operational logic.
 

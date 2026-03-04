@@ -10,7 +10,7 @@ Allowing users to deselect all options can result in invalid selections, incorre
 
 This feature ensures that a valid extra option is always selected when required.
 
-See also: [Extra Category Overview](extra-category-overview.md).
+See also: [Extra Category Overview](extra-category-overview/).
 
 ### Purpose
 
