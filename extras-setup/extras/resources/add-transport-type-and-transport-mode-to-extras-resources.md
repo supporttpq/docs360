@@ -29,19 +29,6 @@ This is useful when selling extras such as golf bags, infant prices, or seat sel
 
 <figure><img src="../../../.gitbook/assets/image (603).png" alt=""><figcaption></figcaption></figure>
 
-### Transport Type
-
-Transport Type limits an extra to bookings that use a specific transport type.
-
-If the booking does not match your selection, the extra is not shown.
-
-#### Example
-
-* Transfer used only for Charter\
-  Transport Type = Sys-Real
-* Transfer used only for GDS flights\
-  Transport Type = System
-
 ### Transport Mode
 
 Transport Mode is an extra filter for dynamic transports. It helps you separate flights from other transport modes.
@@ -62,6 +49,28 @@ Transport Mode is only checked when the chosen Transport Type supports it.
 * **Transfer only for GDS / Dynamic Flight**
   * Transport Type = System
   * Transport Mode = FLY
+
+### Transport Type
+
+Transport Type limits an extra to bookings that use a specific transport type.
+
+If the booking does not match your selection, the extra is not shown.
+
+#### Supported values
+
+* Charter Transports
+* Dynamic transports
+* Sys-real Transports
+* System Transports
+
+#### Example
+
+* Transfer used only for Charter\
+  Transport Type = Sys-Real
+* Transfer used only for GDS flights\
+  Transport Type = System
+
+
 
 ### How to set Transport Type and Transport Mode
 
