@@ -90,7 +90,7 @@ This feature is usually used for **products available at the destination** (e.g.
   * All dates are displayed, including normally hidden ones.
   *   This applies only when no date range filter is active.&#x20;
 
-      <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 * **Display / Clear** allows you to manage the current view.
 
 5. **Save & Apply**
@@ -100,7 +100,7 @@ This feature is usually used for **products available at the destination** (e.g.
 
     * The oldest valid date appears at the top of the list.
 
-    <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -109,7 +109,7 @@ This feature is usually used for **products available at the destination** (e.g.
 
 
 
-    <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

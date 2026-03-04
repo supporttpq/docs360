@@ -14,22 +14,34 @@ This feature allows travel companies to offer financial protection to customers 
 
 There are **four methods** available for setting the price of the cancellation insurance:
 
-1. **Based on Passenger Price**
-   * The insurance fee is determined by the total amount the passenger pays for the trip.
-   * Up to **four price ranges** can be defined.
-   * Example:
-     * If the passenger’s trip price fits within the first range, a specific fee is applied.
-     * If it falls into the second range, a different fee is used, and so on.
-2. **Based on Trip Duration**
-   * The insurance fee is determined by the length of the trip.
-   * Up to **four duration ranges** can be defined, each with its own insurance fee.
-3. **Based on Percentage of Passenger Price**
-   * The fee is calculated as a **percentage** of the passenger’s total trip price.
-   * Example: If the percentage is 5% and the trip price is €1000, the insurance fee will be €50.
-4. **Based on Transport Mode**
-   * The insurance fee is determined by the **type of transport** selected for the booking (e.g., flight, bus, train).
+1.  **Related to basic price**&#x20;
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+    * The insurance fee is determined by the total amount the passenger pays for the trip.
+    * Up to **four price ranges** can be defined.
+    * Example:
+      * If the passenger’s trip price fits within the first range, a specific fee is applied.
+      * If it falls into the second range, a different fee is used, and so on.
+2.  **Related to lenght of travel**&#x20;
+
+    <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+* The insurance fee is determined by the length of the trip.
+* Up to **four duration ranges** can be defined, each with its own insurance fee.
+
+3.  **Based on Percentage of Basic Price**&#x20;
+
+    <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+* The fee is calculated as a **percentage** of the passenger’s total trip price.
+* Example: If the percentage is 5% and the trip price is €1000, the insurance fee will be €50.
+
+4. **Related to transport type**&#x20;
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+* The insurance fee is determined by the **type of transport** selected for the booking (e.g., flight, bus, train).
 
 #### External Cancellation <a href="#external-cancellation" id="external-cancellation"></a>
 
