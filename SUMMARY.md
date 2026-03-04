@@ -412,6 +412,8 @@
 * [Custom Choices](custom-choices.md)
 * [Extras Category](extras-category/README.md)
   * [Extra Category Overview](extras-category/extra-category-overview.md)
+  * [Edit Extra Category](extras-category/edit-extra-category.md)
+  * [Communication Tab](extras-category/communication-tab.md)
   * [Extra Category Reporting](extras-category/extra-category-reporting.md)
   * [Out / Home](extras-category/out-home/README.md)
     * [Out/Home - Web Booking](extras-category/out-home/out-home-web-booking.md)
