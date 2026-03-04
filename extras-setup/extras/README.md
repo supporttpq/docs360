@@ -183,7 +183,7 @@ The Clone Extras feature is used to:
 
 2.  Click “Clone” - Select the **Clone** option&#x20;
 
-    <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 3.  Select the code for the new Extras&#x20;
 
     <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
