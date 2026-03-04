@@ -33,7 +33,7 @@ Allow the user to assign an extra to an agency. An extra can be assigned as foll
 | **Contract Type**           | Specify the contract type (Allotment, Guarantee, Request, FreeSell).                                                                                                                                                                                                                                                                                                                                                                          |
 | **Days Prices Option**      | <p>Allows limiting the prices per day options presented to the web user. Default is <code>0</code> if no variation. Only works for prices declared with days!!!!!! If no Days are declared, the product will be removed!<br>Ex: stay days = 14<br>days price option = 1<br>price days = 7,14,21</p><p>price days >= stay days - X</p><p>7,14,21 >= 14 - 1 => 14,21</p>                                                                        |
 | **Allotment Type**          | Is used to control the number of products available and the time they are available in. The choices are **Manual, Generic** and **Linked to transport**                                                                                                                                                                                                                                                                                       |
-| **Extras Category**         | Categorize the extra (e.g., Meal, Transfer, Tour). This is required.                                                                                                                                                                                                                                                                                                                                                                          |
+| **Extras Category**         | Categorize the extra (e.g., Meal, Transfer, Tour). The user can choose from the dropdown one of the categories created in the Extras Category. This is required.                                                                                                                                                                                                                                                                              |
 | **Age**                     | Define the applicable age group (e.g., Adult, Child, Infant).                                                                                                                                                                                                                                                                                                                                                                                 |
 | **Period/Trip Length**      | Limit availability by trip length interval.                                                                                                                                                                                                                                                                                                                                                                                                   |
 | **SSR Codes**               | Assigns a SSR code to the extra and when chosen in a booking, the SSR code is reported to the transport company, thus keeping an evidence of passengers                                                                                                                                                                                                                                                                                       |
@@ -124,7 +124,7 @@ These settings influence how the extra interacts with billing, privacy regulatio
 | **Issue Voucher**            | Enables the generation of a voucher for the extra.                                                                                         |
 | **GDPR Sensitive**           | Flags the extra as containing GDPR-relevant data. Triggers data protection measures.                                                       |
 | **Content Type**             | Used to classify the extra as a specific content asset, useful in API or content-driven environments.                                      |
-| **Package Type**             | Treats the extra as a package rather than a standalone item. May impact how it's displayed or billed.                                      |
+| **Package Type**             | Treats the extra as a package rather than a standalone item. May impact how it's displayed or billed. Activate the Package Content tab     |
 | **Use Stay Dates in Prices** | Prices are calculated based on the customer’s actual stay dates rather than fixed pricing. Helpful for seasonal or dynamic pricing models. |
 
 ***
@@ -151,6 +151,66 @@ When selected, the Extra is treated as a supplement related to that board type. 
 **Board basis filter**
 
 Filter is used on Board Supplements to specify which Board Basis should be on the Room for the Board Supplement to be available.
+
+### Clone Extras
+
+The **Clone** functionality allows you to duplicate an existing extra configuration and reuse it for another product, period, or brand.
+
+Instead of creating a new extra from scratch, cloning copies:
+
+* Core configuration (Overview, Basic Setup)
+* Prices
+* Allotment
+* Resources
+
+This reduces manual work and ensures consistency across products.
+
+{% hint style="info" %}
+After cloning has been done, the new extra must be reassigned to a Brand and the rest of the settings that were not cloned must be redone.
+{% endhint %}
+
+The Clone Extras feature is used to:
+
+* Create similar extras quickly
+* Reuse seasonal configurations
+* Copy extras to another accommodation
+* Duplicate pricing structures
+* Maintain standardized setup across brands
+
+#### How to Clone an Extra
+
+&#x20;1\. Locate the Existing Extra - Navigate to: Extras → Search → Open the extra you want to duplicate.
+
+2.  Click “Clone” - Select the **Clone** option&#x20;
+
+    <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+3.  Select the code for the new Extras&#x20;
+
+    <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+4.  Define Clone Settings&#x20;
+
+    <figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+You need to:
+
+* Enter a new Name
+* Assign to another category
+* Adjust validity dates
+* Update brand assignment
+* Modify price if needed
+
+4. Save - Confirm creation of the cloned extra.
+5. Review Configuration
+
+Important:
+
+* Verify pricing
+* Check validity dates
+* Confirm category
+* Test booking flow
+* Review communication rules
+
+***
 
 ### FAQ
 
