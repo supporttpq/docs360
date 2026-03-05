@@ -137,16 +137,16 @@
 
 ## Price List
 
-* [Pricelist](price-list/pricelist.md)
-* [Pricelist Setup](price-list/pricelist-setup.md)
-* [Migrate Pricelist](price-list/migrate-pricelist.md)
+* [Price List](price-list/pricelist.md)
+* [Price List Setup](price-list/pricelist-setup.md)
+* [Migrate Price List](price-list/migrate-pricelist.md)
 
 ***
 
 * [Price regulation rules](price-regulation-rules.md)
-* [Pricelist Tags](pricelist-tags.md)
+* [Price List Tags](pricelist-tags.md)
 * [Price List Custom Hotel days Service](price-list-custom-hotel-days-service.md)
-* [Relational Price list](relational-price-list.md)
+* [Relational Price List](relational-price-list.md)
 * [Profit margin rules](profit-margin-rules.md)
 * [Live Offer Profit Margin](live-offer-profit-margin.md)
 * [Price List Generator](generate-pricelist.md)

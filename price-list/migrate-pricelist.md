@@ -5,7 +5,7 @@ description: >-
   log and search.
 ---
 
-# Migrate Pricelist
+# Migrate Price List
 
 ## Overview
 
@@ -39,7 +39,7 @@ This reduces manual work and limits copy/paste errors.
 3. **Set Tag (Optional)**
    * Enable the **Set Tag** checkbox and select a tag from the dropdown.
    * The tag is applied to all migrated price list rows in the destination brand.
-   * See also: [Pricelist Tags](../pricelist-tags.md).
+   * See also: [Price List Tags](../pricelist-tags.md).
 4. **Adjust Prices (Optional)**
    * **Increase/Decrease Amount**: Adds/subtracts a fixed value on destination price fields. Positive increases. Negative decreases.
    * **Increase/Decrease Percentage**: Adjusts destination price fields by percentage. Positive increases. Negative decreases.

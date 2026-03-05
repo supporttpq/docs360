@@ -97,6 +97,7 @@ Each transport displays a **control status value** that determines how many room
 * This feature is critical for **capacity planning** and ensuring correct allocation of hotel rooms per flight.
 * The status values should be monitored regularly, especially during peak booking periods, to avoid overselling.
 * Adjustments to allotments must be coordinated with both transport and hotel availability.
+* The MAX setting is applied per room type, allowing you to control availability individually for each room. If you want to restrict availability for a shared room type (e.g., a single room), you must also define a MAX value for that room. Otherwise, it may remain bookable as long as availability exists in the higher-level room category (shared room).
 
 ### Search with Stay Lenghts
 

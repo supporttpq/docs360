@@ -21,11 +21,11 @@ layout:
     visible: true
 ---
 
-# Pricelist
+# Price List
 
 ## Overview
 
-The **Price List** (pricelist) is where you create and maintain selling prices in **Tourpaq Office**.
+The **Price List** is where you create and maintain selling prices in **Tourpaq Office**.
 
 Most packages combine a [Transport](../transport/transport/) with a hotel [Base room type](../base-room-types.md), plus rules like discounts, child rates, group pricing, and stay length (intervals). Each price list line is tied to a **departure date** and controls what can be sold.
 
@@ -222,7 +222,7 @@ At the beginning of each row, there are tree icons:
 
 ### Relation PL & Related PL <a href="#relation-pl--related-pl" id="relation-pl--related-pl"></a>
 
-These are covered in [Relation pricelist](pricelist.md#relation-pl--related-pl)
+These are covered in [Relational price list](../relational-price-list.md)
 
 #### Also Update Prices on Transports <a href="#also-update-prices-on-transports" id="also-update-prices-on-transports"></a>
 
@@ -265,7 +265,7 @@ This function allows prices to be **automatically recalculated when the Transpor
 **What is a Price List in Tourpaq?**\
 A price list defines how tour packages are priced in Tourpaq. It combines transport, hotel room types, and other conditions (discounts, child rates, groups) with a departure date to set the selling price and control availability. Without a valid price list, even if seats and rooms are available, the product cannot be booked.
 
-**Why is a pricelist important?**\
+**Why is a Price List important?**\
 It is the foundation for selling trips through agencies, web booking, and the office. It links prices with allotments so that available seats and rooms can actually be sold.
 
 **How do I create a new price list?**\

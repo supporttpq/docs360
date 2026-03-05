@@ -5,7 +5,7 @@ description: >-
   without changing prices.
 ---
 
-# Pricelist Tags
+# Price List Tags
 
 ## Overview
 
@@ -52,13 +52,13 @@ The selected offers are now tagged. They can be filtered or highlighted on the w
 
 ### **FAQ**
 
-**What are pricelist tags?**\
-Pricelist tags are labels you can assign to specific offers (price list lines) to help identify and filter them.
+**What are price list tags?**\
+Price list tags are labels you can assign to specific offers (price list lines) to help identify and filter them.
 
-**Why would I use a pricelist tag?**\
+**Why would I use a price list tag?**\
 Tags make selected offers easier to identify and can be used for custom filtering on the website.
 
-**Who can create pricelist tags?**\
+**Who can create price list tags?**\
 Any user with access to the Price List menu can create tags.
 
 **Do I need price lists before I use tags?**\

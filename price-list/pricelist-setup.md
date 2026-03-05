@@ -20,11 +20,11 @@ layout:
     visible: true
 ---
 
-# Pricelist Setup
+# Price List Setup
 
 Only administrators can access **Pricelist Setup**.
 
-See also: [Pricelist](pricelist.md).
+See also: [Price List](pricelist.md).
 
 ## Overview
 
