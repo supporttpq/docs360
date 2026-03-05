@@ -21,13 +21,17 @@ layout:
     visible: true
 ---
 
-# Don't sent ticket option
+# Don’t send ticket option
 
 ### **Overview**
 
-The **“Don’t Send Ticket”** checkbox in **Tourpaq Office** is used to **suppress the automatic “Booking updated / Update booking” email** that can be triggered when you save changes on a confirmed (OK) booking.
+The **“Don’t Send Ticket”** checkbox is a control on the booking page used to **suppress the automatic “Booking updated / Update booking” email** that can be triggered when you save changes on a confirmed booking.
 
 This is useful when you need to make several internal adjustments and want to avoid sending multiple emails (often with ticket/documents) to the customer.
+
+{% hint style="info" %}
+If “Don’t send ticket” is selected on a new booking before saving the booking for the first time, the customer will not receive the “Thank you for booking” email.
+{% endhint %}
 
 ***
 
@@ -51,21 +55,21 @@ This is useful when you need to make several internal adjustments and want to av
 
 ### **Field description**
 
-| Field                 | Description                                                                                                                                                                                             |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Don’t Send Ticket** | When checked, the system will **not send the automatic booking update email** when you save the booking. The checkbox typically appears **only after you make a change** on a booking in **OK** status. |
+| Field                 | Description                                                                                                                                                                                                                                                                                                  |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Don’t Send Ticket** | <p>When checked, the system will <strong>not send the automatic booking update email</strong> when you save the booking. </p><p>Note: If “Don’t send ticket” is selected on a new booking before saving the booking for the first time, the customer will not receive the “Thank you for booking” email.</p> |
 
 ***
 
 ### **Behavior & logic**
 
-1. The checkbox is shown **only after a change is detected** on a booking in **OK** status.
-2. If you **check** the box and then **Save**, the system suppresses the automatic **Booking updated / Update booking** email for that save.
-3. If you **do not check** the box, the booking update email can be sent automatically (depending on your email configuration and what was changed).
-4. After saving:
-   * The checkbox is **reset**.
-   * You must check it again for any later changes where you also want to suppress the update email.
-5. This option **does not affect flight change emails** (those are handled separately and are sent as normal).
+1. If you **check** the “Don’t send ticket” box and then **Save**, the system does not send an automatic email.
+2. After saving:
+
+* The check box is **reset**.
+* You must check it again for any later changes where you also want to suppress the update email.
+
+3. This option **does not affect flight change emails** (those are handled separately and are sent as normal).
 
 {% hint style="warning" %}
 This setting is about **email sending**. It does **not** undo or prevent the booking changes themselves, and it does not “lock” ticket generation.
@@ -75,12 +79,13 @@ This setting is about **email sending**. It does **not** undo or prevent the boo
 
 ### **How to use**
 
-1. Open a booking in **OK** status.
+1. Create or open an existing booking.
 2. Make your changes.
-3. When the **Don’t Send Ticket** checkbox appears, decide whether the customer should be notified right now.
-4. If you do **not** want an automatic update email to be sent:
-   * Check **Don’t Send Ticket**.
-5. Click **Save**.
+3. If you do **not** want an automatic email to be sent:&#x20;
+
+* Check **Don’t Send Ticket.**
+
+4. Click **Save.**
 
 #### Verify what was sent
 
