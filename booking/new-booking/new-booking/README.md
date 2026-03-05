@@ -367,8 +367,11 @@ The **Total Profit** is displayed when expanding the green area that shows the T
 1. Review all booking details (transport, hotel, passengers, extras, economics).
 2. Click **Save** to complete the booking.
 3. Send the ticket:
-   * Click **Send Email** to send manually, or
-   * Let the system auto-generate and send it, depending on your setup.
+   * If you have configured a ‘Thank you for booking’ email the system will automatically send. In the Email Center, you have the option to delay sending an email.
+
+{% hint style="warning" %}
+Note: If “Don’t send ticket” is selected on a new booking before saving the booking for the first time, the customer will not receive the “Thank you for booking” email.
+{% endhint %}
 
 ***
 
