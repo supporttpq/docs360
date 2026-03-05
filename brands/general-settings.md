@@ -365,16 +365,16 @@ For other ticket versions, this section is not displayed and no visual customiza
 
 This functionality allows configuration of the visual identity of the generated ticket. The settings defined here control colors, images, icons and typography used in the final ticket output. All changes apply to newly generated tickets after saving the configuration.
 
-### Purpose
+#### Purpose
 
 The purpose of Ticket Customization is to:
 
 * Align the ticket design with the customer’s branding guidelines
 * Provide flexibility for different client templates
 
-mproper configuration may lead to unreadable tickets or inconsistent brand presentation. Always validate changes in a test booking before deploying to production.
+Improper configuration may lead to unreadable tickets or inconsistent brand presentation. Always validate changes in a test booking before deploying to production.
 
-### Field-by-Field Explanation
+#### Field-by-Field Explanation
 
 <figure><img src="../.gitbook/assets/image (689).png" alt=""><figcaption></figcaption></figure>
 
