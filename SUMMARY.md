@@ -145,7 +145,7 @@
 
 * [Price regulation rules](price-regulation-rules.md)
 * [Price List Tags](pricelist-tags.md)
-* [Price List Custom Hotel days Service](price-list-custom-hotel-days-service.md)
+* [Price List Custom Hotel Days](price-list-custom-hotel-days-service.md)
 * [Relational Price List](relational-price-list.md)
 * [Profit margin rules](profit-margin-rules.md)
 * [Live Offer Profit Margin](live-offer-profit-margin.md)
