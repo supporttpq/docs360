@@ -72,40 +72,91 @@ It is possible to adjust room costs dynamically using the **Up to rooms** and **
 
 #### **Overview**
 
-Use **Early Booking Cost Discount Rules** to discount hotel costs. The discount applies when a booking is made far enough in advance.
+The **Early Booking Cost Discount Rules** page allows the creation of rules that reduce hotel costs when bookings are made within a defined **advance booking window**.
+
+The rule applies when the following conditions are met:
+
+* The **stay period** matches the configured dates.
+* The **booking date** falls within the allowed booking window.
+* The rule conditions such as **room type**, **board**, **days of week**, and **passenger age** match the booking details.
+
+The discount is applied **to the hotel cost**, not directly to the selling price. However, because selling prices may be calculated from hotel costs (for example through **Profit Margin rules**), the Early Booking discount can indirectly influence the final price presented to the guest.
 
 #### **Purpose**
 
-Apply consistent early booking discounts by room, board, and date range. This supports accurate price calculation and profit reporting.
+Early Booking Cost Discount Rules provide a structured method for:
+
+* Offering **lower hotel costs for early bookings**
+* Supporting **seasonal sales strategies**
+* Adjusting costs depending on **room type, board type, or booking period**
+* Maintaining consistent pricing behavior across contracts and price lists
+
+This functionality is commonly used for promotions where bookings made before a defined deadline receive discounted hotel costs.
 
 #### **System Setup Requirement**
 
-Before early booking discounts appear in the price list, a specific setting must be enabled in **System Setup**:
+The following configuration must exist before Early Booking Cost Discount Rules can function correctly:
 
-**Path:**\
-`System Setup → General → Settings`
+1. **Room Cost Rules** must already be defined for the hotel.
+2. **Board Supplements** must be configured if board filtering will be used.
+3. The **System Setup setting** controlling how discounted costs are used in price calculation must be understood and configured correctly.
 
-**Setting name:**\
-✅ **Use Early Booking and Stay and Pay for Discount**
+Path to system setting: **System Setup → General → Settings**
 
-**Purpose of the setting:**
-
-* Controls how the discounted cost is used in price calculations.
-* Includes Room Discount, Early Booking, and Stay & Pay reductions.
-* Ensures profit margin discount reflects the final discounted cost.
+Setting name: **Use Early Booking and Stay and Pay for Discount**
 
 <figure><img src="../../../.gitbook/assets/image (424).png" alt=""><figcaption></figcaption></figure>
 
-This setting decides **how** discounted cost is handled. Early Booking rules can still be configured without it. Uses discounted into account Room Discount Early Booking and Stay\&Pay for calculating Discount via Profit Margin
+This setting enables the system to automatically apply an **Early Booking Discount (EBD)** within the Price List.
+
+When the option is configured and active, the system performs the following actions:
+
+1. **Creates a discounted price** in the Price List for the defined period.
+2. **Adds a discount line in the booking**, clearly showing the **EBD reduction granted to the guest**.
+
+As a result, the guest price is calculated based on the discounted value, while the booking interface transparently displays the **EBD discount line**, making it clear that the reduced price is due to the Early Booking promotion.
+
+This mechanism ensures both:
+
+* **Correct price calculation in the Price List**, and
+* **Clear visibility of the discount granted to the guest in the booking details**.
+
+**Purpose of the setting:**
+
+This setting determines how **discounted hotel costs** are reflected in the **Price List** and guest pricing.
+
+When the setting is enabled:
+
+* Early Booking discounts are used when calculating **discount lines in the price list**
+* The system can display a **visible Early Booking discount** to the guest
+* The final price calculation reflects all cost reductions including:
+  * **Room Discount**
+  * **Early Booking**
+  * **Stay & Pay**
+
+In practice, this means the price list can show a **discounted selling price and a discount line** that represents the Early Booking Discount offered to the guest.
 
 <figure><img src="../../../.gitbook/assets/image (423).png" alt=""><figcaption></figcaption></figure>
 
-* If this setting is **disabled**, rules still show in the screen. They do **not** affect calculated prices in the price list.
+When the setting is disabled:
+
+* The Early Booking rule still **reduces the hotel cost**.
+* If **Profit Margin rules** are used to calculate the selling price from the cost, the final selling price may still become lower because the cost has decreased.
+* However, the system will **not create a visible Early Booking discount line** in the price list.
+
+This setting therefore controls **how the discount is presented**, not whether the cost reduction itself exists.
 
 {% hint style="warning" %}
-This checkbox will not trigger the service automatically; you will need to either have to change the cost in the hotel or change the Profit Margin in the price list, changing the price or saving on the price list will change the price as well.
+Changes to Early Booking Cost Discount Rules may require recalculation before they appear in the price list.
 
-Also, the profit margin service will not change the price instantly on modification; it may take up to 30 minutes for the price to be changed in the price list. This depends on how many tasks need to be processed by the service.
+Recalculation can be triggered by:
+
+* Updating the **hotel cost**
+* Updating the **Profit Margin rule**
+* Saving or recalculating the **Price List**
+
+The **Profit Margin service** processes price updates asynchronously.\
+Price list updates may take **up to 30 minutes**, depending on the number of tasks currently being processed by the service.,
 {% endhint %}
 
 #### Field Explanation
