@@ -52,7 +52,8 @@ The following conditions must exist before Stay and Pay Cost Rules can function 
 1. A **Hotel** must be configured.
 2. **Room Cost Rules** must exist for the hotel.
 3. **Room Types** must be configured in the contract.
-4. The system behavior for displaying discounts in the **Price List** depends on a configuration in System Setup.
+
+#### System Setup Behavior for Early Booking and Stay and Pay for Discount
 
 Path to system setting: **System Setup → General → Settings**
 
@@ -60,10 +61,7 @@ Setting name: **Use Early Booking and Stay and Pay for Discount**
 
 **Purpose of the setting:**
 
-This setting controls **how Stay and Pay discounts are represented in the price list and guest pricin**
-
-* Enables Stay & Pay rules in the price list.
-* Makes them affect guest price calculation.
+The setting **Use Early Booking and Stay and Pay for Discount** uses discounted cost that also takes into account Room Discount Early Booking and Stay an Pay for calculating Discount via Profit Margin
 
 <figure><img src="../../../.gitbook/assets/image (424).png" alt=""><figcaption></figcaption></figure>
 

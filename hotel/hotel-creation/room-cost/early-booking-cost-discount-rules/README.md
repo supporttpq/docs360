@@ -6,9 +6,13 @@ description: >-
 
 # Early Booking Cost Discount Rules
 
-### Early booking cost-discount rules​ <a href="#early-booking-cost-discount-rules" id="early-booking-cost-discount-rules"></a>
+### Introduction
 
-#### **Overview**
+The **Early Booking Cost Discount Rules** page is part of the **Hotel Contract → Room Costs** configuration in **Tourpaq Office**. It defines rules that reduce the **hotel cost** when a booking is made sufficiently in advance.
+
+These rules influence how hotel costs are calculated during the booking process and may also affect the final selling price depending on the pricing configuration used in Tourpaq.
+
+### **Overview**
 
 The **Early Booking Cost Discount Rules** page allows the creation of rules that reduce hotel costs when bookings are made within a defined **advance booking window**.
 
@@ -20,7 +24,7 @@ The rule applies when the following conditions are met:
 
 The discount is applied **to the hotel cost**, not directly to the selling price. However, because selling prices may be calculated from hotel costs (for example through **Profit Margin rules**), the Early Booking discount can indirectly influence the final price presented to the guest.
 
-#### **Purpose**
+### **Purpose**
 
 Early Booking Cost Discount Rules provide a structured method for:
 
@@ -31,58 +35,64 @@ Early Booking Cost Discount Rules provide a structured method for:
 
 This functionality is commonly used for promotions where bookings made before a defined deadline receive discounted hotel costs.
 
-#### **System Setup Requirement**
+### **System Setup Requirement**
 
-The following configuration must exist before Early Booking Cost Discount Rules can function correctly:
+System Setup → General → Settings -> Use Early Booking and Stay and Pay for Discount
 
-1. **Room Cost Rules** must already be defined for the hotel.
-2. **Board Supplements** must be configured if board filtering will be used.
-3. The **System Setup setting** controlling how discounted costs are used in price calculation must be understood and configured correctly.
+The setting **Use Early Booking and Stay and Pay for Discount** uses discounted cost that also takes into account Room Discount Early Booking and Stay an Pay for calculating Discount via Profit Margin
 
-Path to system setting: **System Setup → General → Settings**
+EBD rules always affect the **hotel cost** when their conditions are met.
 
-Setting name: **Use Early Booking and Stay and Pay for Discount**
+The setting only determines **how the discount is reflected in the selling price and how it is displayed to the guest**.
+
+
 
 <figure><img src="../../../../.gitbook/assets/image (424).png" alt=""><figcaption></figcaption></figure>
 
-This setting enables the system to automatically apply an **Early Booking Discount (EBD)** within the Price List.
+#### Behavior When the Setting is Enabled
 
-When the option is configured and active, the system performs the following actions:
+When **Use Early Booking and Stay and Pay for Discount** is enabled, the system explicitly represents the Early Booking Discount in the pricing structure.
 
-1. **Creates a discounted price** in the Price List for the defined period.
-2. **Adds a discount line in the booking**, clearly showing the **EBD reduction granted to the guest**.
+The system performs the following actions:
 
-As a result, the guest price is calculated based on the discounted value, while the booking interface transparently displays the **EBD discount line**, making it clear that the reduced price is due to the Early Booking promotion.
+* Creates a **discounted selling price** in the **Price List** for the applicable period.
+* Generates a **separate Early Booking Discount line** in the booking calculation.
+* Displays the **EBD discount line in the e-ticket**, making the discount clearly visible to the guest.
 
-This mechanism ensures both:
+As a result:
 
-* **Correct price calculation in the Price List**, and
-* **Clear visibility of the discount granted to the guest in the booking details**.
+* The selling price reflects the **discounted value**.
+* The booking shows a **transparent breakdown** of the discount granted.
+* Guests can clearly see that the reduced price is due to an **Early Booking promotion**.
 
-**Purpose of the setting:**
+Example system behavior:
 
-This setting determines how **discounted hotel costs** are reflected in the **Price List** and guest pricing.
+Base Price → Early Booking Discount → Final Guest Price
 
-When the setting is enabled:
-
-* Early Booking discounts are used when calculating **discount lines in the price list**
-* The system can display a **visible Early Booking discount** to the guest
-* The final price calculation reflects all cost reductions including:
-  * **Room Discount**
-  * **Early Booking**
-  * **Stay & Pay**
-
-In practice, this means the price list can show a **discounted selling price and a discount line** that represents the Early Booking Discount offered to the guest.
+This configuration is commonly used when the agency wants the Early Booking promotion to be **clearly visible in guest-facing documents**.
 
 <figure><img src="../../../../.gitbook/assets/image (423).png" alt=""><figcaption></figcaption></figure>
 
-When the setting is disabled:
+#### Behavior When the Setting is Disabled
 
-* The Early Booking rule still **reduces the hotel cost**.
-* If **Profit Margin rules** are used to calculate the selling price from the cost, the final selling price may still become lower because the cost has decreased.
-* However, the system will **not create a visible Early Booking discount line** in the price list.
+When **Use Early Booking and Stay and Pay for Discount** is disabled, Early Booking Cost Discount Rules still apply to the **hotel cost**.
 
-This setting therefore controls **how the discount is presented**, not whether the cost reduction itself exists.
+The system behaves as follows:
+
+* The **hotel cost is reduced** during the Early Booking period.
+* If **Profit Margin rules** calculate the selling price based on cost, the **guest selling price becomes lower** because the underlying cost is reduced.
+* However, the system **does not create a visible Early Booking discount line**.
+
+As a result:
+
+* Guests still receive the **benefit of the lower price**.
+* The discount is **not explicitly displayed** in the booking or e-ticket.
+
+Example system behavior:
+
+Reduced Cost → Profit Margin Calculation → Lower Final Guest Price
+
+In this configuration, the Early Booking promotion is **embedded in the calculated price**, rather than displayed as a separate discount.
 
 {% hint style="warning" %}
 Changes to Early Booking Cost Discount Rules may require recalculation before they appear in the price list.
@@ -96,6 +106,21 @@ Recalculation can be triggered by:
 The **Profit Margin service** processes price updates asynchronously.\
 Price list updates may take **up to 30 minutes**, depending on the number of tasks currently being processed by the service.,
 {% endhint %}
+
+### Practical Example
+
+Two Tourpaq environments may behave differently depending on the setting:
+
+**Environment with the setting enabled:**
+
+* Discounted price created in the **Price List**
+* **EBD discount line visible** in booking and e-ticket
+
+**Environment with the setting disabled:**
+
+* Hotel cost still reduced during the EBD period
+* Selling price becomes lower through **Profit Margin calculation**
+* **No visible discount line** shown to the guest
 
 #### Field Explanation
 
