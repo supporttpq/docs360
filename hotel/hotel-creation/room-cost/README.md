@@ -165,42 +165,58 @@ Price list updates may take **up to 30 minutes**, depending on the number of tas
 
 #### **Filters Section**
 
-* **Contract**: Select the contract you want to configure.
-* **Show all**: Checkbox to display all existing rules.
-* **+ More Filters**: Shows more filters.
-* **Clear**: Resets filters and fields.
-* **Room Code**: Select a room code.
-* **Period**: Select the period.
-* **Booking date**: Filter by booking dates.
+The filter section allows the list of Early Booking rules to be narrowed to specific contracts, rooms, or periods.
+
+* **Contract**: Dropdown used to select the **hotel contract** for which Early Booking rules are displayed or created. Only rules associated with the selected contract will appear in the grid.
+* **Show all**: Checkbox that displays **all existing rules**, including those that may not match the current filters. This is useful when reviewing all rules configured for a contract.
+*   **+ More Filters**: Expands the filter section and displays additional filtering options such as:
+
+    * Room Code
+    * Period
+    * Booking Date
+    * Departure Date
+
+    These filters help locate specific rules in contracts containing large numbers of cost rules.
+* **Clear**: Resets all filters and displays the default rule list.
+*   **Room Code**: Filter used to display rules related to a specific **room type** configured in the hotel contract. Room types are defined in:
+
+    **Hotel → Room Types**
+* **Period**: Filters rules based on the **stay period** defined in the rule.&#x20;
+* **Booking date**: Filters rules based on the **booking window** defined in the rule. This allows identification of rules that apply when bookings are made within certain date ranges.
 * **Departure date**: Filter by departure/stay dates.
+* **Create:** Button used to create a new **Early Booking Cost Discount Rule**. Selecting this option adds a new row in the grid where all rule parameters can be defined.
 
 #### **Grid Fields**
 
-| **Field**               | **Description**                                                                                                                                                 |
-| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Stay **Start / End**    | The rule can apply on overlapping stay days. Example: stay 01–07 Oct, rule 05–30 Oct applies on 05–07 Oct.                                                      |
-| **Booking Start / End** | Specifies when the booking must be made for the discount to apply.                                                                                              |
-| Days of the Week        | Restricts the rule to arrivals on selected weekdays. This has to coincide with the arrival date of the booking. ![](<../../../.gitbook/assets/image (569).png>) |
-| **Room**                | Allows selection of one or multiple room types.                                                                                                                 |
-| **Board**               | Board type filter. If the booking has a board, the system looks for a matching board rule first. If none exists, it can use a rule without board.               |
-| From Age/to Age         | Defines the age interval for which the rule applies.                                                                                                            |
-| **Price**               | The specific price code or rate this rule applies to.                                                                                                           |
-| **BDNBA**               | Booking Days No Before Arrival.                                                                                                                                 |
-| **IS %**                | Treats **Price** as a percent of (Room Cost + Extra Included + Extra Bed + Stay & Pay). The result is subtracted.                                               |
-| **PR**                  | Per-room discount. Splits the discount across passengers in the room.                                                                                           |
-| **S\&P**                | Allows this rule to combine with Stay & Pay. If unchecked, Stay & Pay is excluded from cost.                                                                    |
-| E**BC**                 | Apply on Extra Bed Cost                                                                                                                                         |
-| **BB**                  | Apply on Board basis                                                                                                                                            |
-| **Min Days**            | Minimum number of days in advance the booking must be made to qualify for the discount.                                                                         |
-| **Deposit Date**        | The cutoff date for the deposit to be paid to validate the discount.                                                                                            |
-| **DDNBA**               | Deposit days no before stay                                                                                                                                     |
-| **OB**                  | Applies on booking final save (deposit on booking).                                                                                                             |
-| **Deposit %**           | Discount percentage that applies for the deposit payment.                                                                                                       |
-| **Send List Date**      | Date when the rate list or contract was sent, used for administrative tracking.                                                                                 |
-| **SLDNBA**              | Send list days number before arrival stay                                                                                                                       |
-| **EBP Discount**        | Customer Early Booking Discount                                                                                                                                 |
-| **Contract**            | Displays the selected contract ID or name that the rule belongs to.                                                                                             |
-| **Invoice List**        | Invoices created according to the rule.                                                                                                                         |
+The grid displays all Early Booking Cost Discount Rules configured for the selected hotel contract.
+
+Each column defines conditions or parameters that control when the rule applies.
+
+| **Field**                | **Description**                                                                                                                                                                                                                                                                                             |
+| ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Stay** **Start / End** | Defines the **first stay date/**&#x74;he **last stay date** for which the Early Booking rule is valid. Bookings with arrival dates **before this date/after this date** will not match the rule. The rule can apply to overlapping stay days. Example: stay 01–07 Oct, rule 05–30 Oct applies on 05–07 Oct. |
+| **Booking Start / End**  | Specifies when the booking must be made for the discount to apply.                                                                                                                                                                                                                                          |
+| Days of the Week         | Restricts the rule to arrivals on selected weekdays. This has to coincide with the arrival date of the booking. If no value is selected, the rule applies to **all days**.![](<../../../.gitbook/assets/image (569).png>)                                                                                   |
+| **Room**                 | <p>Defines the <strong>room types</strong> to which the rule applies.</p><p>Room types must exist in:</p><p><strong>Hotel → Room Types</strong></p><p>Selecting <strong>Selected all</strong> means the rule applies to every configured room type.</p>                                                     |
+| **Board**                | Board type filter. If the booking has a board, the system looks for a matching board rule first. If none exists, it can use a rule without board.                                                                                                                                                           |
+| From Age/to Age          | Defines the age interval for which the rule applies.                                                                                                                                                                                                                                                        |
+| **Price**                | <p>Defines the <strong>discount value</strong> applied to the hotel cost.</p><p>How this value is interpreted depends on the <strong>IS %</strong> field.</p>                                                                                                                                               |
+| **BDNBA**                | <p>Defines whether the rule should consider <strong>booking days before arrival</strong>.</p><p>This value may be used together with booking date filters to restrict the rule based on how many days in advance the booking is made.</p>                                                                   |
+| **IS %**                 | Treats **Price** as a percent of (Room Cost + Extra Included + Extra Bed + Stay & Pay). The result is subtracted.                                                                                                                                                                                           |
+| **PR**                   | <p>Defines whether the value is applied <strong>per room</strong> or <strong>per passenger</strong>.</p><ul><li>Enabled → discount applied <strong>per room</strong></li><li>Disabled → discount applied <strong>per passenger</strong></li></ul>                                                           |
+| **S\&P**                 | <p>Indicates whether the rule can <strong>combine with Stay and Pay Cost Rules</strong>.</p><p>If enabled, both rules may be applied during cost calculation.</p><p>Stay and Pay rules are configured under:</p><p><strong>Room Costs → Stay and Pay Cost Rules</strong></p>                                |
+| E**BC**                  | Apply on Extra Bed Cost                                                                                                                                                                                                                                                                                     |
+| **BB**                   | Internal indicator used to identify rules that interact with board-based configurations.                                                                                                                                                                                                                    |
+| **Min Days**             | <p>Defines the <strong>minimum number of days before arrival</strong> required for the rule to apply.</p><p>If a booking is created fewer days before arrival than defined here, the rule will not apply.</p>                                                                                               |
+| **Deposit Date**         | The cutoff date for the deposit to be paid to validate the discount.                                                                                                                                                                                                                                        |
+| **DDNBA**                | Defines the **days before arrival** used for deposit-related conditions.                                                                                                                                                                                                                                    |
+| **OB**                   | Applies on booking final save (deposit on booking).                                                                                                                                                                                                                                                         |
+| **DEPOSIT %**            | Discount percentage that applies for the deposit payment.                                                                                                                                                                                                                                                   |
+| **Send List Date**       | Date when the rate list or contract was sent, used for administrative tracking.                                                                                                                                                                                                                             |
+| **SLDNBA**               | Send list days number before arrival stay                                                                                                                                                                                                                                                                   |
+| **EBP Discount**         | Customer Early Booking Discount                                                                                                                                                                                                                                                                             |
+| **Contract**             | <p>Displays the contract associated with the rule.</p><p>This helps identify the rule when multiple contracts exist for the same hotel.</p>                                                                                                                                                                 |
+| **Invoice List**         | <p>Displays the invoice processing status for the rule.</p><p>The message <strong>“Rule not run by service”</strong> indicates that the background service responsible for applying the rule has not yet processed it.</p>                                                                                  |
 
 #### Percent vs fixed value
 
@@ -241,25 +257,63 @@ If a rule has no board filter, it applies only to passengers without board type.
 
 ### Stay and Pay cost rules
 
+#### Introduction
+
+The **Stay and Pay Cost Rules** page is part of the **Hotel → Room Costs** configuration in **Tourpaq Office**. It allows the definition of promotions where a guest stays a certain number of nights but pays for fewer nights.
+
+This functionality supports common hotel promotions such as **“Stay 7 nights, Pay 6”** or **“Stay 14 nights, Pay 12.”**
+
+Stay and Pay Cost Rules work together with several other Tourpaq components:
+
+* **Room Cost Rules** (base hotel costs)
+* **Early Booking Cost Discount Rules**
+* **Price Lists**
+* **Profit Margin rules**
+* **Hotel Contracts**
+
+These components together determine the **final hotel cost and selling price** used in bookings and price lists.
+
 #### **Overview**
 
-Stay and Pay Cost Rules support “Stay X, Pay Y” deals. Example: stay 7 nights and pay 6.
+**Stay and Pay Cost Rules** define cost reductions based on the length of stay.\
+When a booking satisfies the configured conditions, the system recalculates the hotel cost so that only the configured **Pay Days No** are charged even though the guest stays longer.
+
+Example:
+
+* **Stay Days No:** 7
+* **Pay Days No:** 6
+
+The booking stays for **7 nights**, but the hotel cost is calculated as **6 nights**.
+
+The cost reduction occurs at the **hotel cost level**. If the selling price is calculated using **Profit Margin rules**, the reduced cost may also produce a **lower selling price toward the guest**.
 
 #### **Purpose**
 
-Encourage longer stays by lowering cost on specific nights. The system recalculates cost using the stay/pay definition.
+Stay and Pay Cost Rules are used to:
+
+* Encourage **longer stays**
+* Support hotel promotions defined in contracts
+* Automate cost recalculation based on stay length
+* Maintain consistent pricing across bookings and price lists
+
+This functionality allows promotional hotel deals to be implemented directly within the Tourpaq cost calculation system.
 
 #### **System Setup Requirement**
 
-Stay & Pay must be enabled to affect the selling price and the price list.
+The following conditions must exist before Stay and Pay Cost Rules can function correctly:
 
-**Path:**\
-`System Setup → General → Settings`
+1. A **Hotel** must be configured.
+2. **Room Cost Rules** must exist for the hotel.
+3. **Room Types** must be configured in the contract.
+4. The system behavior for displaying discounts in the **Price List** depends on a configuration in System Setup.
 
-**Setting name:**\
-✅ **Use Early Booking and Stay and Pay for Discount**
+Path to system setting: **System Setup → General → Settings**
+
+Setting name: **Use Early Booking and Stay and Pay for Discount**
 
 **Purpose of the setting:**
+
+This setting controls **how Stay and Pay discounts are represented in the price list and guest pricin**
 
 * Enables Stay & Pay rules in the price list.
 * Makes them affect guest price calculation.
@@ -268,7 +322,31 @@ Stay & Pay must be enabled to affect the selling price and the price list.
 
 <figure><img src="../../../.gitbook/assets/image (423).png" alt=""><figcaption></figcaption></figure>
 
-* If disabled, rules still show in configuration. They do not affect price list calculations.
+When the setting is enabled:
+
+* The price list may display a **discount line** representing the Stay and Pay promotion.
+* The discount can appear as a **visible reduction toward the guest price**.
+* The system considers Stay and Pay together with other discounts such as:
+  * **Early Booking**
+  * **Room Discounts**
+
+When the setting is disabled:
+
+* Stay and Pay rules still **reduce the calculated hotel cost**.
+* If the selling price is calculated from cost using **Profit Margin rules**, the final selling price toward the guest may still become **lower because the underlying cost has decreased**.
+* However, the system will **not create a visible Stay and Pay discount line in the price list**.
+
+The setting therefore controls **how the discount is presented in the price list**, not whether the rule affects cost calculation.
+
+#### Price List Recalculation
+
+Changes to Stay and Pay Cost Rules may require price recalculation before appearing in the price list.
+
+Recalculation can occur when:
+
+* **Hotel costs are modified**
+* **Profit Margin rules are updated**
+* The **Price List** is saved or recalculated
 
 {% hint style="warning" %}
 This checkbox does not trigger recalculation jobs. Change hotel cost or profit margin to trigger updates.
@@ -278,38 +356,43 @@ Price updates can take up to 30 minutes. Timing depends on service load.
 
 #### Field Explanation
 
-<figure><img src="../../../.gitbook/assets/image (426).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (711).png" alt=""><figcaption></figcaption></figure>
 
 #### **Top Filter Section**
 
-| **Field**          | **Description**                                                     |
-| ------------------ | ------------------------------------------------------------------- |
-| **Contract**       | Dropdown to select the applicable contract.                         |
-| **Show All**       | Checkbox to show all existing stay and pay rules.                   |
-| **+ More Filters** | Expands additional filter options.                                  |
-| **Clear**          | Clears all selected filters.                                        |
-| **Room Code**      | Dropdown to filter rules for a specific room type.                  |
-| **Period**         | Dropdown to filter by periods.                                      |
-| **Booking Date**   | Date filter to find rules within specific booking date ranges.      |
-| **Departure Date** | Date filter to search for rules active for certain departure dates. |
-| **Display**        | Applies all filters and shows matching records.                     |
-| **Clear**          | Clears the results from the grid.                                   |
+| **Field**          | **Description**                                                                                                                                                                                                                                                                                                                                                     |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Contract**       | Dropdown used to select the **hotel contract** for which Stay and Pay rules are displayed.                                                                                                                                                                                                                                                                          |
+| **Show All**       | <p>Checkbox that displays <strong>all configured Stay and Pay rules</strong>, including rules that may not match the current filters.</p><p>This option is useful when reviewing the complete rule configuration for a contract.</p>                                                                                                                                |
+| **+ More Filters** | <p>Expands the filter section and displays additional filtering options.</p><p>These include filters for:</p><ul><li><strong>Room Type</strong></li><li><strong>Period</strong></li><li><strong>Booking date</strong></li><li><strong>Departure date</strong></li></ul><p>These filters help locate specific rules in contracts containing many configurations.</p> |
+| **Clear**          | Resets all filters and returns the grid to the default display.                                                                                                                                                                                                                                                                                                     |
+| **Room Type**      | <p>The dropdown is used to filter rules by <strong>room type</strong>.</p><p>Room types originate from the configuration in:</p><p><strong>Hotel → Room Types</strong></p>                                                                                                                                                                                          |
+| **Period**         | <p>Dropdown used to filter rules by <strong>period number</strong>.</p><p>Periods are used within hotel to define seasonal or contractual cost ranges.</p>                                                                                                                                                                                                          |
+| **Booking Date**   | <p>Date selector used to filter rules based on the <strong>booking date range</strong> defined in the rule.</p><p>This filter helps locate rules that apply only to bookings made within a certain period.</p>                                                                                                                                                      |
+| **Departure Date** | <p>Date selector used to filter rules by <strong>stay date</strong>.</p><p>This allows quick identification of rules that apply to specific travel periods.</p>                                                                                                                                                                                                     |
+| **Display**        | Button that applies the selected filters and refreshes the grid results.                                                                                                                                                                                                                                                                                            |
+| **Clear**          | Resets the filter fields to their default state.                                                                                                                                                                                                                                                                                                                    |
 
 #### **Rule Configuration Grid**
 
-| **Field**               | **Description**                                                                |
-| ----------------------- | ------------------------------------------------------------------------------ |
-| **Stay Start / End**    | Defines the check-in (stay) period the rule applies to.                        |
-| **Booking Start / End** | Defines the window in which the booking must be made for the rule to be valid. |
-| **Days of the Week**    | Restrict the rule to stays that start on specific days (e.g., Mon-Fri).        |
-| **Room**                | Dropdown to select one or more room types the rule applies to.                 |
-| **Period**              | Select a system-defined period.                                                |
-| **Stay Days No**        | Number of nights the guest must stay to qualify for the promotion.             |
-| **Pay Days No**         | Number of nights the guest actually pays for.                                  |
-| **EB**                  | Allows combination with Early Booking.                                         |
-| **Contract**            | Dropdown to associate this rule with a specific contract.                      |
-| **Trash Icon**          | Allows deletion of a specific rule.                                            |
-| **Save**                | Commits all newly added or updated rules to the database/system.               |
+The grid displays all configured **Stay and Pay Cost Rules**.
+
+Each row represents a rule defining when and how the Stay and Pay cost reduction applies.
+
+| **Field**               | **Description**                                                                                                                                                                                                                                                                                                                     |
+| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Stay Start / End**    | Defines the check-in (stay) period the rule applies to.                                                                                                                                                                                                                                                                             |
+| **Booking Start / End** | Defines the window in which the booking must be made for the rule to be valid.                                                                                                                                                                                                                                                      |
+| **Days of the Week**    | <p>Dropdown that restricts the rule to specific <strong>arrival days</strong>.</p><p>Examples include:</p><ul><li>Only weekend arrivals</li><li>Only weekday arrivals</li></ul><p>If <strong>Selected all</strong> is chosen, the rule applies to arrivals on any day of the week.</p>                                              |
+| **ROOM TYPE**           | Defines which **room types** are eligible for the Stay and Pay rule. Selecting **Selected all** applies the rule to all configured room types.                                                                                                                                                                                      |
+| **Period**              | <p>Defines the <strong>period number</strong> in which the rule applies.</p><p>Periods correspond to seasonal cost configurations within the hotel contract.</p>                                                                                                                                                                    |
+| **Stay Days No**        | <p>Defines the <strong>number of nights the guest must stay</strong> for the rule to apply.</p><p>Example:</p><ul><li><strong>Stay Days No:</strong> 7</li></ul><p>The guest must stay <strong>7 nights</strong> to qualify.</p>                                                                                                    |
+| **Pay Days No**         | <p>Defines the <strong>number of nights that will be charged</strong>.</p><p>Example:</p><ul><li><strong>Pay Days No:</strong> 6</li></ul><p>Although the guest stays <strong>7 nights</strong>, the cost will be calculated as <strong>6 nights</strong>.</p>                                                                      |
+| **EB**                  | <p>Checkbox indicating whether the Stay and Pay rule can be <strong>combined with Early Booking rules</strong>.</p><p>When enabled, both promotions may apply together if their conditions are satisfied.</p><p>Early Booking rules are configured under:</p><p><strong>Room Costs → Early Booking Cost Discount Rules</strong></p> |
+| **Contract**            | <p>Displays the <strong>contract identifier</strong> associated with the rule.</p><p>This column is helpful when multiple contracts exist for the same hotel.</p>                                                                                                                                                                   |
+| **Trash Icon**          | <p>Icon used to <strong>remove the rule</strong> from the configuration.</p><p>Deleting a rule removes it from future cost calculations but does not modify historical bookings.</p>                                                                                                                                                |
+| **Save**                | Commits all newly added or updated rules to the database/system.                                                                                                                                                                                                                                                                    |
+| **Create**              | <p>Button used to <strong>create a new Stay and Pay Cost Rule</strong>.</p><p>Selecting this option adds a new row in the grid where rule parameters can be configured.</p>                                                                                                                                                         |
 
 #### Validation rules
 
