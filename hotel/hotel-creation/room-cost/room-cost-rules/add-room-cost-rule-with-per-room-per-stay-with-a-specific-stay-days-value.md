@@ -154,4 +154,4 @@ Re-check:
 ### Related pages
 
 * [Add room cost rule with "Per Room Per Stay" type](add-room-cost-rule-with-per-room-per-stay-type.md)
-* [Room cost](./)
+* [Room cost](../)

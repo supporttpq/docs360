@@ -100,7 +100,7 @@ If the creditor uses another currency, verify the cost is shown in the creditor 
 
 ### Related pages
 
-* [Room cost](./)
+* [Room cost](../)
 * [Add room cost rule with "Per Room Per Stay" with a specific stay days value](add-room-cost-rule-with-per-room-per-stay-with-a-specific-stay-days-value.md)
 
 ### Summary of Key Concepts <a href="#summary-of-key-concepts" id="summary-of-key-concepts"></a>
