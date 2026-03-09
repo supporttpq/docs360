@@ -1,34 +1,104 @@
 # Room cost
 
+### Introduction
+
+The **Room Cost Rules** page is located in **Hotel Contract → Room Costs** in **Tourpaq Office**. This functionality defines the **base hotel cost structure** used during booking cost calculation.
+
+Room Cost Rules are a central component of the Tourpaq pricing architecture. They determine the base hotel cost before other adjustments such as:
+
+* **Early Booking Cost Discount Rules**
+* **Stay and Pay Cost Rules**
+* **Hotel Extra Cost Rules**
+* **Profit Margin rules**
+* **Price List calculations**
+
+Because many Tourpaq pricing mechanisms depend on the base hotel cost, Room Cost Rules play an important role in maintaining consistent cost calculations and reliable financial reporting across bookings.
+
 ### Overview
 
-Room Cost rules let you define hotel cost conditions per hotel. They keep cost and profit calculations consistent across bookings.
+**Room Cost Rules** define the base hotel cost conditions per hotel contract. These rules determine how the cost of a room is calculated for bookings depending on specific rule conditions.
+
+Each rule can define:
+
+* The **hotel** to which the cost applies
+* The **stay period** for which the cost is valid
+* The **booking period** during which the rule applies
+* The **room type** affected by the rule
+* Whether the cost is applied **per passenger** or **per room**
+
+During booking creation or recalculation, Tourpaq evaluates the configured Room Cost Rules and determines the correct cost based on the booking details.
 
 ### Purpose
 
-Use Room Cost rules to adjust hotel costs by rules and date windows. This supports correct allocation and reliable profit reporting.
+The purpose of Room Cost Rules is to ensure that **hotel costs are calculated consistently across all bookings**.
 
-### How it works
+These rules support:
 
-* Rules can target:
-  * A single hotel
-  * A departure (stay) date range
-  * A booking date range
-  * One room type or all room types for the hotel
-* Costs can be calculated:
-  * **Per passenger**: applied to each passenger
-  * **Per room**: applied once per room and split across occupants
+* Accurate **hotel cost allocation**
+* Reliable **profit margin calculations**
+* Consistent pricing across **contracts and price lists**
+* Correct financial reporting for hotel bookings
 
-#### Test a rule
+Because other pricing mechanisms operate on top of the base hotel cost, Room Cost Rules act as the **foundation of the hotel pricing structure** in Tourpaq.
 
-1. Create a booking using the hotel and room type.
-2. Open the **Profit** tab to see cost and profit.
-3. Some values update after **Total Cost Service** recalculates.
-4. Use the info icon to see the cost breakdown.
+### How Room Cost Rules Work
+
+Room Cost Rules determine the base hotel cost using rule conditions.
+
+A rule can target:
+
+* A **single hotel contract**
+* A **departure (stay) date range**
+* A **booking date range**
+* A **specific room type**
+* **All room types** within the contract
+
+Costs can be calculated in two ways:
+
+#### - Per passenger
+
+The cost is applied **to each passenger in the room**.
+
+Example:
+
+Cost per passenger: 100\
+Passengers: 2
+
+Total room cost: 200
+
+#### - Per room
+
+The cost is applied **once per room** regardless of the number of occupants.
+
+Tourpaq internally distributes the cost across passengers for calculation and reporting purposes.
+
+### Testing a Room Cost Rule
+
+Room Cost Rules can be verified using a booking test.
+
+Recommended procedure:
+
+1. Create a **booking** using the relevant hotel and room type.
+2. Open the **Profit tab** in the booking.
+3. Review the **hotel cost and profit values**.
+4. Use the **information icon** to view the cost breakdown.
+
+Some values may update after the **Total Cost Service** recalculates the booking.
+
+The recalculation service runs asynchronously, meaning that cost updates may not appear immediately after modifying a rule.
 
 #### Important Notes
 
-* If the calculated cost for a particular day is **0** (for example, due to a _Stay 7, Pay 5_ rule), applying an additional discount (EB or otherwise) will not result in a negative value—the cost will remain **0**.
+Certain rule interactions may influence the final calculated cost.
+
+If the calculated cost for a particular day becomes **0**, additional discounts cannot reduce the value below zero.
+
+Example:
+
+A **Stay 7, Pay 5** rule results in zero cost for two nights.\
+If an **Early Booking Discount** or other discount is applied to those nights, the cost remains **0** and will not become negative.
+
+This behavior prevents invalid negative hotel cost values.
 
 ### Partial mind map of Hotel Cost rule interactions <a href="#partial-mindmap-of-hotel-cost-rule-interractions" id="partial-mindmap-of-hotel-cost-rule-interractions"></a>
 
