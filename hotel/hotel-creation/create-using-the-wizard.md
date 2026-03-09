@@ -1,4 +1,10 @@
-# Create using wizard
+---
+description: >-
+  Create a new hotel in the Tourpaq Office with the Add Hotel Wizard. Add
+  required hotel details, room types, and brand assignments in one setup flow.
+---
+
+# Create using the wizard
 
 ### Overview
 
