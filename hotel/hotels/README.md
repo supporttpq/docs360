@@ -1,3 +1,9 @@
+---
+description: >-
+  Search and manage hotel records in Tourpaq Office for booking, contract, web,
+  and supplier setup.
+---
+
 # Hotels
 
 ### Overview
@@ -30,7 +36,7 @@ Use **Create using wizard** for the fastest setup.
 
 Use **Create** if you want a blank hotel record first.
 
-Next: [Hotel creation](hotel-creation/) or [Create using wizard](hotel-creation/create-using-the-wizard.md).
+Next: [Hotel creation](../hotel-creation/) or [Create using wizard](../hotel-creation/create-using-the-wizard.md).
 {% endstep %}
 
 {% step %}
@@ -44,7 +50,7 @@ Use **Hide** (via the hotel status) to stop it showing in selection lists.
 
 ### Page Structure
 
-<figure><img src="../.gitbook/assets/image (402).png" alt="Hotels list page showing filters, table, and actions"><figcaption><p>Hotels list: filters, results table, and actions.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (402).png" alt="Hotels list page showing filters, table, and actions"><figcaption><p>Hotels list: filters, results table, and actions.</p></figcaption></figure>
 
 #### Filters
 
@@ -73,8 +79,8 @@ At the top of the page, filters help narrow down the list of hotels:
 
 #### Actions
 
-* **Create using wizard** – Creates a hotel with the minimum required data in one flow. See [Create using wizard](hotel-creation/create-using-the-wizard.md).
-* **Create** – Opens a blank hotel form. See [Hotel creation](hotel-creation/).
+* **Create using wizard** – Creates a hotel with the minimum required data in one flow. See [Create using wizard](../hotel-creation/create-using-the-wizard.md).
+* **Create** – Opens a blank hotel form. See [Hotel creation](../hotel-creation/).
 * **Edit (pencil icon)** – Updates hotel details (supplier, status, fields used in booking and web).
 * **Delete (trash icon)** – Permanently removes the hotel.
 
@@ -86,7 +92,7 @@ If the hotel should stop being used, **hide it** instead.
 
 ### Related pages
 
-* [Hotel creation](hotel-creation/)
-* [Create using wizard](hotel-creation/create-using-the-wizard.md)
-* [Facilities](../facilities.md)
-* [Hotel Contracts](../hotel-contracts/)
+* [Hotel creation](../hotel-creation/)
+* [Create using wizard](../hotel-creation/create-using-the-wizard.md)
+* [Facilities](../../facilities.md)
+* [Hotel Contracts](../../hotel-contracts/)

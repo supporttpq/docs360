@@ -187,7 +187,7 @@ Brand tabs only appear when **custom text** is enabled for that hotel/brand.
 
 ### See also
 
-* [Hotels](../hotel/hotels.md)
+* [Hotels](../hotel/hotels/)
 * [Hotel Web](../hotel/hotel-creation/hotel-web.md) (general hotel text shown online)
 * [Customer Information Booking Flow](customer-information-booking-flow.md) (how acknowledgements are enforced during booking)
 

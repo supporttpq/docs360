@@ -1,3 +1,9 @@
+---
+description: >-
+  Manage hotel release rules in Tourpaq Office. Automate room allotment
+  releases, supplier release emails, and release log tracking.
+---
+
 # Releases
 
 ### Overview

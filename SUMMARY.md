@@ -162,9 +162,11 @@
 
 ## Hotel
 
-* [Hotels](hotel/hotels.md)
+* [Hotels](hotel/hotels/README.md)
+  * [Hotels list page](hotel/hotels/hotels-list-page.md)
 * [Hotel creation](hotel/hotel-creation/README.md)
   * [Create using the wizard](hotel/hotel-creation/create-using-the-wizard.md)
+  * [General tab](hotel/hotel-creation/general-tab.md)
   * [Hotel allotments](hotel/hotel-creation/hotel-allotments.md)
   * [Hotel allotment overview](hotel/hotel-creation/hotel-allotment-overview.md)
   * [Allotments per day](hotel/hotel-creation/allotments-per-day/README.md)
