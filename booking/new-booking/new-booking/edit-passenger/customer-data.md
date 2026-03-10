@@ -1,45 +1,140 @@
+---
+description: >-
+  Manage booking contact details in Tourpaq Office. Set the main
+  customer/contact person and choose which passengers receive booking emails and
+  SMS notifications from the Customer Data tab.
+---
+
 # Customer Data
 
-### **Overview**
+### Overview
 
-The **Customer Data** tab provides an overview of all passengers included in the booking and allows the user to specify which traveler is the _main customer/contact person_ and who should receive notifications (SMS and Email).
+The **Customer Data** tab in **Tourpaq Office** controls **booking communication recipients**. You use it to pick the **main customer/contact person** and decide who receives **booking emails** and **SMS notifications**.
 
-While the **Passengers** tab focuses on personal details (names, birthdates, ages), the **Customer Data** tab defines **customer-level communication and identification attributes**.
+This view is available in the **Edit Passenger** window from a booking.
 
-This view is available within the Edit Passenger modal window opened from the booking details page.
+While **Passengers** focuses on personal details (name, birthdate, age), **Customer Data** defines **customer-level contact details and message distribution**.
 
-### **Purpose**
+{% hint style="info" %}
+Need the full flow? See [Edit Passenger](./).
+{% endhint %}
 
-The Customer Data tab supports the following objectives:
+### When to use it
 
-* Assign which passenger(s) should receive **SMS notifications** and **email communication**.
-* Ensure correct contact details for the primary customer.
-* Provide a centralized overview of travelers’ communication preferences.
+Use **Customer Data** when you need to:
 
-This is essential because invoices, confirmations, travel documents, and operational messages are generally sent only to the selected primary customer and/or travelers opted in for communication.
+* Change who receives confirmations, travel documents, and updates.
+* Add an extra recipient for the same emails/SMS as the customer.
+* Ensure the booking has correct customer contact details (email/phone/address).
 
-### **Field Description Table**
+This matters because invoices, confirmations, travel documents, and operational messages are typically sent to the selected **Customer** and any passengers opted in for **EMAIL**/**SMS**.
+
+### Quick workflow (recommended)
+
+{% stepper %}
+{% step %}
+### Open Customer Data
+
+Open the booking, click **Edit** in the passenger section, then open **Customer Data**.
+{% endstep %}
+
+{% step %}
+### Set the main customer/contact person
+
+Check **CUSTOMER** on the passenger who owns the booking communication.
+{% endstep %}
+
+{% step %}
+### Select recipients for Email and SMS
+
+Use **EMAIL** and **SMS** to send the same messages to additional passengers.
+{% endstep %}
+
+{% step %}
+### Save
+
+Click **Save Changes** in the Edit Passenger window.
+{% endstep %}
+{% endstepper %}
+
+### Fields
 
 <figure><img src="../../../../.gitbook/assets/image (564).png" alt="Customer Data tab showing email and SMS recipients"><figcaption></figcaption></figure>
 
-| **Field Name** | **Description**                                                                                                                          |
-| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| **TITLE**      | Passenger's title (Mr., Mrs., Chd, Inf, etc.). Display only; not editable here.                                                          |
-| **F. NAME**    | Passenger first name. Synced from passenger list; read-only in this tab.                                                                 |
-| **L. NAME**    | Passenger last name. Read-only; matches booking passenger data.                                                                          |
-| **AGE**        | Passenger age used for pricing and category logic. Read-only.                                                                            |
-| **BIRTHDATE**  | Passenger birthdate. Read-only; ensures correct traveler classification.                                                                 |
-| **E-MAIL**     | Email address for the selected passenger. Used for communication and ticket delivery.                                                    |
-| **PHONE**      | Passenger phone number. Used for SMS and contact purposes.                                                                               |
-| **ADDRESS**    | Passenger address. Usually filled for the main customer only.                                                                            |
-| **CUSTOMER**   | Marks the passenger as the **contracting customer**. For a passenger with an email and phone number, a customer will be created.         |
-| **SMS**        | When checked, the passenger will receive SMS notifications for the booking. Passenger agreement to receive the same SMS as the customer. |
-| **EMAIL**      | When checked, the passenger will receive email communication (documents, confirmation, updates) same as the customer.                    |
+| Field         | What it means                                                                                                                                             |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **TITLE**     | Passenger title (Mr., Mrs., Chd, Inf, etc.). Read-only here.                                                                                              |
+| **F. NAME**   | First name. Read-only here.                                                                                                                               |
+| **L. NAME**   | Last name. Read-only here.                                                                                                                                |
+| **AGE**       | Passenger age used for pricing logic. Read-only here.                                                                                                     |
+| **BIRTHDATE** | Birthdate used for passenger classification. Read-only here.                                                                                              |
+| **E-MAIL**    | Email address used for booking communication and document delivery.                                                                                       |
+| **PHONE**     | Phone number used for SMS and contact.                                                                                                                    |
+| **ADDRESS**   | Address for the passenger. Usually stored for the main customer.                                                                                          |
+| **CUSTOMER**  | Sets the passenger as the booking’s **main customer/contact person**. If the passenger has email and phone, Tourpaq can create/update a customer profile. |
+| **SMS**       | Sends the same booking SMS as the customer to this passenger.                                                                                             |
+| **EMAIL**     | Sends the same booking emails as the customer to this passenger.                                                                                          |
+
+{% hint style="warning" %}
+Avoid adding unnecessary sensitive data. Follow your organization’s GDPR and data-retention rules.
+{% endhint %}
 
 ### Summary
 
-The **Customer Data** tab centralizes control of booking communications and customer identification. It is essential to:
+Use **Customer Data** to control **who is the booking customer** and **who receives emails and SMS**. Keep contact details correct to avoid missed confirmations, invoices, and travel documents.
 
-* Ensure email/phone details are correct
-* Select who receives **SMS** and **Email** notifications same as the customer
-* Maintain clean and accurate communication settings for each booking
+### FAQ
+
+<details>
+
+<summary><strong>What’s the difference between </strong><em><strong>Customer</strong></em><strong> and </strong><em><strong>Passengers</strong></em><strong>?</strong></summary>
+
+Passengers are the travellers on the booking.\
+The **Customer** is the main contracting/contact person who typically receives booking documents and messages.
+
+</details>
+
+<details>
+
+<summary><strong>Can I send booking emails/SMS to more than one person?</strong></summary>
+
+Yes. Set the main person using **CUSTOMER**.\
+Then enable **EMAIL** and/or **SMS** on other passengers to send them the same messages.
+
+</details>
+
+<details>
+
+<summary><strong>Why are some fields read-only here?</strong></summary>
+
+Name, title, age, and birthdate are managed in the **Passengers** tab.\
+Customer Data focuses on communication and customer identification.
+
+</details>
+
+<details>
+
+<summary><strong>What if the wrong person is receiving confirmations and documents?</strong></summary>
+
+Open **Customer Data** and move the **CUSTOMER** flag to the correct passenger.\
+Adjust **EMAIL**/**SMS** checkboxes for any extra recipients.\
+Then click **Save Changes**.
+
+</details>
+
+<details>
+
+<summary><strong>Does marking a passenger as CUSTOMER create a CRM customer record?</strong></summary>
+
+Often, yes. If the passenger has enough contact info (typically **email** and **phone**), Tourpaq can create or update the customer profile used in CRM.
+
+</details>
+
+<details>
+
+<summary><strong>I updated email/phone, but messages still go to the old address. What should I check?</strong></summary>
+
+Make sure you clicked **Save Changes** in the Edit Passenger window.\
+If documents were already generated/sent, you may need to regenerate or resend them, depending on your ticket/email flow.
+
+</details>
