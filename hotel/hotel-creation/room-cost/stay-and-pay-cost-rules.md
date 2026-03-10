@@ -47,41 +47,35 @@ This functionality allows promotional hotel deals to be implemented directly wit
 
 ### **System Setup**
 
-The following conditions must exist before Stay and Pay Cost Rules can function correctly:
-
-1. A **Hotel** must be configured.
-2. **Room Cost Rules** must exist for the hotel.
-3. **Room Types** must be configured in the contract.
-
-#### System Setup Behavior for Early Booking and Stay and Pay for Discount
-
-Path to system setting: **System Setup → General → Settings**
-
-Setting name: **Use Early Booking and Stay and Pay for Discount**
-
-**Purpose of the setting:**
+**System Setup → General → Settings ->** **Use Early Booking and Stay and Pay for Discount**
 
 The setting **Use Early Booking and Stay and Pay for Discount** uses discounted cost that also takes into account Room Discount Early Booking and Stay an Pay for calculating Discount via Profit Margin
 
 <figure><img src="../../../.gitbook/assets/image (424).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (713).png" alt=""><figcaption></figcaption></figure>
+#### Behavior when the setting is enabled
 
-When the setting is enabled:
+When **Use Early Booking and Stay and Pay for Discount** is enabled, the system explicitly represents the Stay and Pay in the pricing structure.
 
-* The price list may display a **discount line** representing the Stay and Pay promotion.
+* The price list display a **discount line** representing the Stay and Pay promotion for the applicable period
 * The discount can appear as a **visible reduction toward the guest price**.
-* The system considers Stay and Pay together with other discounts such as:
+* The system considers Stay and Pay together with other discounts, such as:
   * **Early Booking**
   * **Room Discounts**
 
-When the setting is disabled:
+This configuration is commonly used when the agency wants the Stay and Pay promotion to be **clearly visible in guest-facing documents**.
+
+<figure><img src="../../../.gitbook/assets/image (713).png" alt=""><figcaption></figcaption></figure>
+
+#### Behavior when the setting is disabled
+
+When **Use Early Booking and Stay and Pay for Discount** is disabled, Stay and Pay Cost Rules still apply to the **hotel cost**.
 
 * Stay and Pay rules still **reduce the calculated hotel cost**.
 * If the selling price is calculated from cost using **Profit Margin rules**, the final selling price toward the guest may still become **lower because the underlying cost has decreased**.
 * However, the system will **not create a visible Stay and Pay discount line in the price list**.
 
-The setting therefore controls **how the discount is presented in the price list**, not whether the rule affects cost calculation.
+The setting therefore, controls **how the discount is presented in the price list**, not whether the rule affects cost calculation.
 
 #### Price List Recalculation
 

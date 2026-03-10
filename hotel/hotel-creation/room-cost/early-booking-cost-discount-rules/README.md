@@ -49,7 +49,7 @@ The setting only determines **how the discount is reflected in the selling price
 
 <figure><img src="../../../../.gitbook/assets/image (424).png" alt=""><figcaption></figcaption></figure>
 
-#### Behavior When the Setting is Enabled
+#### Behavior when the Setting is Enabled
 
 When **Use Early Booking and Stay and Pay for Discount** is enabled, the system explicitly represents the Early Booking Discount in the pricing structure.
 
@@ -73,7 +73,7 @@ This configuration is commonly used when the agency wants the Early Booking prom
 
 <figure><img src="../../../../.gitbook/assets/image (712).png" alt=""><figcaption></figcaption></figure>
 
-#### Behavior When the Setting is Disabled
+#### Behavior when the Setting is Disabled
 
 When **Use Early Booking and Stay and Pay for Discount** is disabled, Early Booking Cost Discount Rules still apply to the **hotel cost**.
 
