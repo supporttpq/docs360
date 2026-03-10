@@ -104,7 +104,7 @@ After passengers are copied, verify:
 * room allocation (if relevant)
 * who is marked as the **main customer/contact** (email/phone)
 
-To edit passenger details, use [Edit Passenger](new-booking/edit-pas.md).
+To edit passenger details, use [Edit Passenger](new-booking/edit-passenger/).
 
 ### FAQ
 

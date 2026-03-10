@@ -132,7 +132,7 @@ Use the following pages for detailed explanations of specific parts of the New B
 
 * [**New Booking**](new-booking/) – Main New Booking screen, search, and selection of transports and hotels.
 * [**New Booking search support**](new-booking/new-booking-search-support.md) – Details on the search behaviour and options in the New Booking screen.
-* [**Edit Passenger**](new-booking/edit-pas.md) – How to update passenger information within a booking.
+* [**Edit Passenger**](new-booking/edit-passenger/) – How to update passenger information within a booking.
 
 #### Financials and performance
 

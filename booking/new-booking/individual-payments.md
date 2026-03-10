@@ -49,7 +49,7 @@ Only passengers with an email address entered will receive the individual paymen
 ### 1. Add or verify passenger email addresses
 
 1. Open the relevant booking.
-2. Click [**Edit Passenger**](new-booking/edit-pas.md).
+2. Click [**Edit Passenger**](new-booking/edit-passenger/).
 3. Go to the **Customer Data** tab.
 4. In the **E-mail** column, enter the email address for each passenger who should receive the payment link.
 
