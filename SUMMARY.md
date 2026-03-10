@@ -2,7 +2,12 @@
 
 ## Tourpaq Manual
 
-* [Welcome to the Tourpaq Manual](README.md)
+* [GETTING STARTED WITH TOURPAQ](README.md)
+  * [What is Tourpaq?](tourpaq-manual/readme/what-is-tourpaq.md)
+  * [First Login & Account Setup](tourpaq-manual/readme/first-login-and-account-setup.md)
+  * [Key Concepts](tourpaq-manual/readme/key-concepts.md)
+  * [Navigate the System](tourpaq-manual/readme/navigate-the-system.md)
+  * [Your Learning Path by Role](tourpaq-manual/readme/your-learning-path-by-role.md)
 
 ## Dashboard
 

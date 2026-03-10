@@ -1,62 +1,29 @@
 ---
 description: >-
-  Official Tourpaq Office manual for tour operators and travel agencies. Learn
-  booking, CRM, reporting, integrations, and admin setup.
+  This section is your starting point. Whether you're logging in for the first
+  time or onboarding a new team member, follow these pages in order and you'll
+  be up and running in no time.
 noIndex: true
+icon: rocket-launch
 cover: .gitbook/assets/Tourpaq Logo (1).jpg
 coverY: 0
 ---
 
-# Welcome to the Tourpaq Manual
+# GETTING STARTED WITH TOURPAQ
 
-### Overview
+### What's in this section?
 
-Welcome to the official **Tourpaq Office manual**. Use it to set up Tourpaq and run day-to-day operations. This guide covers everything from first-time setup to advanced workflows.
-
-Tourpaq is travel management software for tour operators and travel agencies. It supports bookings, customers (CRM), suppliers, finance, reporting, and integrations.
-
-***
-
-### Quick links
-
-Start here if you want fast navigation:
-
-* [Dashboard](dashboard/dashboard.md)
-* [New Booking](booking/new-booking/)
-* [All bookings](booking/all-bookings/)
-* [Customers](customer/customers/)
-* [Finance](/broken/spaces/ZCqO8EQ5P5Mioq1zbQAc/pages/GfUk3NwtgvLKChzP9P5o)
-* [Business Intelligence](business-intelligenge/)
-* [Export](export-1/export.md)
-* [Users](users/users/)
-* [System Setup](setup/system-setup/)
+| Page                           | What you'll learn                                            |
+| ------------------------------ | ------------------------------------------------------------ |
+| 1. What is Tourpaq?            | A plain-language overview of the platform                    |
+| 2. First Login & Account Setup | How to log in, set your password, and configure your profile |
+| 3. Key Concepts                | The core terms and building blocks you'll see everywhere     |
+| 4. Navigate the System         | A tour of the main menu and where to find things             |
+| 5. Your Learning Path by Role  | A recommended reading path based on your job                 |
 
 ***
 
-### What you’ll find in this manual
+{% hint style="info" %}
+**New to Tourpaq?** Start with page 1 and work through in order. It takes about 15 minutes and will save you a lot of confusion later.&#x20;
+{% endhint %}
 
-* **Getting started**: Access, setup, and core concepts.
-* **Core modules**: Bookings, customers, hotels, transport, extras, offers, and tickets.
-* **Roles and permissions**: Control access, limit views, and manage user security.
-* **Reporting and exports**: BI reports and operational exports for suppliers and guides.
-* **Integrations and technical setup**: Email/SMS, FTP, webhooks, APIs, and other services.
-* **Troubleshooting**: Common issues, expected behavior, and configuration checks.
-
-***
-
-### Who this manual is for
-
-* **New users** who need a clean onboarding path
-* **Operations and sales teams** working with bookings and suppliers
-* **Admins and IT** handling configuration, access, and integrations
-* **Managers** tracking performance through reporting and KPIs
-
-***
-
-### Get started
-
-Use the left menu to browse modules. Use search to jump straight to a feature, screen, or workflow.
-
-***
-
-If you need help, contact your Tourpaq support team. Include screenshots and the booking number when relevant.
