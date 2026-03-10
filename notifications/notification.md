@@ -110,28 +110,28 @@ Use Notifications as your daily control center for booking quality and exception
 
 {% stepper %}
 {% step %}
-### 1. Select a category
+#### Select a category
 
 1. In the left panel, click the notification category you want to review (for example, **Unpaid Bkg** or **Overbkg**).
 2. The central table is refreshed to show only notifications of that type.
 {% endstep %}
 
 {% step %}
-### 2. Review the list
+#### Review the list
 
 1. Scan the **Error Description**, **Departure Date**, and **Balance** (if available) to understand the impact.
 2. Use sorting (for example, sort by **Departure Date**) to focus on the most urgent cases first.
 {% endstep %}
 
 {% step %}
-### 3. Open and fix the related booking
+#### Open and fix the related booking
 
 1. Use the **Booking No** (and, where applicable, the **Customer** name) to locate and open the corresponding booking in **All bookings** or another booking view.
 2. Correct the underlying issue (for example, update payments, fix product selection, or adjust allotment/Stop Sales rules).
 {% endstep %}
 
 {% step %}
-### 4. Refresh and verify
+#### Refresh and verify
 
 1. After saving the booking, return to the **Notifications** page.
 2. Refresh the list or wait for the next automatic update.
