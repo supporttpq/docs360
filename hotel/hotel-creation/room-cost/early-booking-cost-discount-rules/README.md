@@ -35,7 +35,7 @@ Early Booking Cost Discount Rules provide a structured method for:
 
 This functionality is commonly used for promotions where bookings made before a defined deadline receive discounted hotel costs.
 
-### **System Setup Requirement**
+### **System Setup**&#x20;
 
 System Setup → General → Settings -> Use Early Booking and Stay and Pay for Discount
 
@@ -71,7 +71,7 @@ Base Price → Early Booking Discount → Final Guest Price
 
 This configuration is commonly used when the agency wants the Early Booking promotion to be **clearly visible in guest-facing documents**.
 
-<figure><img src="../../../../.gitbook/assets/image (423).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (712).png" alt=""><figcaption></figcaption></figure>
 
 #### Behavior When the Setting is Disabled
 

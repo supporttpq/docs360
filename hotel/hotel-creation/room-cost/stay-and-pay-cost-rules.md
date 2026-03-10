@@ -4,7 +4,7 @@ description: Configure cost reductions based on stay length, such as Stay 7 Pay 
 
 # Stay and Pay Cost Rules
 
-#### Introduction
+### Introduction
 
 The **Stay and Pay Cost Rules** page is part of the **Hotel → Room Costs** configuration in **Tourpaq Office**. It allows the definition of promotions where a guest stays a certain number of nights but pays for fewer nights.
 
@@ -20,7 +20,7 @@ Stay and Pay Cost Rules work together with several other Tourpaq components:
 
 These components together determine the **final hotel cost and selling price** used in bookings and price lists.
 
-#### **Overview**
+### **Overview**
 
 **Stay and Pay Cost Rules** define cost reductions based on the length of stay.\
 When a booking satisfies the configured conditions, the system recalculates the hotel cost so that only the configured **Pay Days No** are charged even though the guest stays longer.
@@ -34,7 +34,7 @@ The booking stays for **7 nights**, but the hotel cost is calculated as **6 nigh
 
 The cost reduction occurs at the **hotel cost level**. If the selling price is calculated using **Profit Margin rules**, the reduced cost may also produce a **lower selling price toward the guest**.
 
-#### **Purpose**
+### **Purpose**
 
 Stay and Pay Cost Rules are used to:
 
@@ -45,7 +45,7 @@ Stay and Pay Cost Rules are used to:
 
 This functionality allows promotional hotel deals to be implemented directly within the Tourpaq cost calculation system.
 
-#### **System Setup Requirement**
+### **System Setup**
 
 The following conditions must exist before Stay and Pay Cost Rules can function correctly:
 
@@ -65,7 +65,7 @@ The setting **Use Early Booking and Stay and Pay for Discount** uses discounted 
 
 <figure><img src="../../../.gitbook/assets/image (424).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (423).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (713).png" alt=""><figcaption></figcaption></figure>
 
 When the setting is enabled:
 
