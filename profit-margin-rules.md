@@ -103,7 +103,7 @@ Each row represents an existing profit margin rule. The table contains the follo
 * **Create** — Opens a new page to create a profit margin rule. You can define all required parameters such as agency, destination, dates, and profit values.
 * **Scheduled Rules** — Indicates that a rule is planned to take effect in the future, replacing the current one.
 
-### **Example Use Case**
+### **Example Scenario**
 
 #### **Creating New Rules**
 

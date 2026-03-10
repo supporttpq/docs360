@@ -486,6 +486,8 @@ You can also adjust the cancellation amount applied to the booking. This can be 
 
 ***
 
+<img src="../../../.gitbook/assets/file.excalidraw (1).svg" alt="" class="gitbook-drawing">
+
 ### Live price updates (user experience)
 
 Users always see the correct **Total Amount** without needing to save the passenger or the booking. This live update behavior ensures:
