@@ -9,11 +9,32 @@ description: >-
 
 The **Hotels** list page is the entry point for hotel master data in Tourpaq Office. It is used to find hotel records, create new hotels, and open existing hotels for setup work that continues in [Hotel creation](../hotel-creation/), [Hotel Contracts](../../hotel-contracts/), [Facilities](../../facilities.md), and [Hotel reporting](../hotel-creation/communication/hotel-reporting.md).
 
+### Navigation
+
+**Menu path**
+
+Open **Hotel** → **Hotels**.
+
+**Related entry points**
+
+* **Global search** can be used to jump to a hotel, then continue in **Edit** from this list. See [Global search](../../setup/global-search.md).
+* Hotel records shown here are the same entities used in booking workflows. See [Booking overview](../../booking/booking-overview.md).
+
 ### Requirements
 
 * Access to the **Hotel** module.
 * Administrator permissions for **Create using wizard**, **Create**, **Edit**, and **Delete**.
 * Existing setup data for **Destination**, **Resort**, and usually **Supplier** before new hotel creation starts.
+
+### Interface overview
+
+The page is split into three areas:
+
+* **Filters** at the top for narrowing the hotel set.
+* A **result table** showing core hotel master data as columns.
+* **Actions** for creating, editing, or deleting a hotel record.
+
+The result table is the fastest way to validate that the correct hotel is selected before continuing with contract setup, room setup, web content, or supplier work.
 
 ### Overview
 
@@ -37,7 +58,39 @@ Accurate data here affects:
 * website and API hotel display
 * operational and financial reporting
 
-### Instructions
+### Configuration steps
+
+{% stepper %}
+{% step %}
+### Find the correct hotel record
+
+Set filters such as **Hotel**, **Destination**, and **Resort**.
+
+Validate the match using **Code**, **Name**, **Resort**, and **Supplier** in the result table.
+{% endstep %}
+
+{% step %}
+### Create a new hotel record (when required)
+
+Select **Create using wizard** for guided setup.
+
+Select **Create** for manual setup.
+
+Continue with room types, brand assignment, and web configuration in [Hotel creation](../hotel-creation/).
+{% endstep %}
+
+{% step %}
+### Continue with downstream hotel setup
+
+Maintain contracts and commercial setup in [Hotel Contracts](../../hotel-contracts/).
+
+Maintain facilities and related display metadata in [Facilities](../../facilities.md).
+
+Validate operational output in [Hotel reporting](../hotel-creation/communication/hotel-reporting.md).
+{% endstep %}
+{% endstepper %}
+
+### Daily workflow (common)
 
 {% stepper %}
 {% step %}
@@ -65,6 +118,25 @@ Use **Delete** only when the hotel must be removed permanently.
 
 <figure><img src="../../.gitbook/assets/image (402).png" alt="Hotels list page showing filters, table, and actions"><figcaption><p>Hotels list page with filters, result columns, and actions.</p></figcaption></figure>
 
+### System behavior
+
+**Filtering**
+
+* Filters narrow the result list only.
+* **Clear** removes active filters and refreshes the list.
+* **Display only Bed Banks** limits the view to bed bank-linked hotels. These hotels typically relate to provider and import setup in [System Setup – Hotel Providers](../../setup/system-setup/system-setup-hotel-providers/) and [System Setup – Hotel Import](../../setup/system-setup/system-setup-hotel-import.md).
+
+**Hidden hotels**
+
+* **Show hidden** includes hotels that are excluded from normal selection.
+* Hidden hotels can still exist in historical bookings and operational reporting. See [All bookings](../../booking/all-bookings/).
+
+**Create/Edit/Delete**
+
+* **Create using wizard** and **Create** produce the same hotel entity. Differences are the data entry flow and required completeness at the first save.
+* **Edit** opens the hotel record where changes can affect booking selection, contract logic, web display, exports, and reporting.
+* **Delete** removes the hotel master record. Deletion can break references in contracts, integrations, and reporting. Hiding the hotel is often safer when the hotel must stop appearing operationally.
+
 ### Fields on the Hotels list page
 
 #### Filters
@@ -73,47 +145,35 @@ Use **Delete** only when the hotel must be removed permanently.
 
 Filters the list by hotel record.
 
-This field is not mandatory.
-
 Use this field to find a specific hotel before editing master data, contracts, room setup, or web content. The hotel selected here is the same hotel entity used later in [Hotel creation](../hotel-creation/), [Hotel Contracts](../../hotel-contracts/), and booking flows.
 
 **Destination**
 
 Filters hotels by destination.
 
-This field is not mandatory.
-
-This filter is useful when several resorts belong to the same destination. It relates to destination-based hotel setup and makes hotel searches faster before work continues in contracts, web, or reporting.
+This filter is useful when several resorts belong to the same destination. It relates to destination structure used throughout Tourpaq, including setup data in [Destination](../../setup/destination.md) and resort assignment maintained in [Hotel creation](../hotel-creation/).
 
 **Resort**
 
 Filters hotels by resort.
 
-This field is not mandatory.
-
-This filter is commonly used before contract work, allotment work, and resort-level hotel maintenance. The selected resort is part of the hotel master data and affects booking selection, grouping, and reporting.
+This filter is commonly used before contract work, allotment work, and resort-level hotel maintenance. The selected resort is part of the hotel master data and affects booking selection, grouping, and reporting. Resort setup is maintained in [Resorts](../../setup/resorts.md).
 
 **Display only Bed Banks**
 
 Shows only hotels that come from, or are linked to, a bed bank source.
 
-This field is not mandatory.
-
-Use this checkbox when checking imported or integrated accommodation content. It relates directly to supplier integrations, contract model handling, and the **Bed Bank** indication in the result list.
+Use this checkbox when checking imported or integrated accommodation content. It relates directly to provider/import setup in [System Setup – Hotel Providers](../../setup/system-setup/system-setup-hotel-providers/) and [System Setup – Hotel Import](../../setup/system-setup/system-setup-hotel-import.md), and to the **Bed Bank** indication in the result list.
 
 **Show hidden**
 
 Includes hotels that are hidden from normal selection.
-
-This field is not mandatory.
 
 This filter relates to the hotel **Status** maintained in [Hotel creation](../hotel-creation/). Hidden hotels are usually excluded from daily selection flows, but still matter for history, reporting, and controlled maintenance.
 
 **Clear**
 
 Removes the active filters.
-
-This control is not mandatory.
 
 Use it before starting a new search or when switching from one hotel maintenance task to another.
 
@@ -123,7 +183,7 @@ Use it before starting a new search or when switching from one hotel maintenance
 
 Shows the hotel code.
 
-This value is a core identifier in Tourpaq. It is used for internal reference, hotel maintenance, integrations, reporting, and API-based hotel output. For new hotels, the code is created during [Hotel creation](../hotel-creation/) or [Create using the wizard](../hotel-creation/create-using-the-wizard.md).
+This value is a core identifier in Tourpaq. It is used for internal reference, hotel maintenance, integrations, reporting, exports, and API-based hotel output. For new hotels, the code is created during [Hotel creation](../hotel-creation/) or [Create using the wizard](../hotel-creation/create-using-the-wizard.md).
 
 **Name**
 
@@ -141,7 +201,7 @@ This field connects the hotel to destination structure in Tourpaq. It affects se
 
 Shows the supplier connected to the hotel.
 
-This field is important for supplier communication, hotel reporting, invoicing, and integration-based hotel handling. It becomes especially relevant when the hotel is part of supplier workflows such as confirmations, reporting, or autobilling-related processes.
+This field is important for supplier communication, hotel reporting, invoicing, and integration-based hotel handling. It becomes especially relevant when the hotel is part of supplier workflows such as confirmations and reporting. Supplier master data is maintained under [Suppliers](../../suppliers/), including [Hotel Supplier](../../suppliers/hotel-supplier.md).
 
 **Address**
 
@@ -177,7 +237,7 @@ This field is optional in practice, but still documented because it is part of t
 
 Shows the internal order number for the hotel.
 
-This field relates to hotel sorting and API output. In hotel setup, **Order No.** is used for the order of hotels sent to the website or other downstream consumers.
+This field relates to hotel sorting and downstream output. In hotel setup, **Order No.** is used for controlling the order in website lists or other consumers that read hotel master data.
 
 **Bed Bank**
 
@@ -217,6 +277,21 @@ This action is not mandatory and should be used with caution. Deleting a hotel c
 If the hotel has historical importance, related setup, or reporting value, hiding the hotel is usually the safer option.
 {% endhint %}
 
+### Examples
+
+**Example: Find an imported bed bank hotel for troubleshooting**
+
+1. Enable **Display only Bed Banks**.
+2. Narrow the list with **Destination** and **Resort**.
+3. Validate **Bed Bank** and **Supplier** in the result table.
+4. Open with **Edit** and continue with provider/import investigation in [System Setup – Hotel Providers](../../setup/system-setup/system-setup-hotel-providers/) or [System Setup – Hotel Import](../../setup/system-setup/system-setup-hotel-import.md).
+
+**Example: Locate a hidden hotel for controlled maintenance**
+
+1. Enable **Show hidden**.
+2. Filter by **Hotel** or **Resort**.
+3. Open with **Edit** and verify whether the hotel should remain hidden due to historical bookings. Reporting validation can be done in [All bookings](../../booking/all-bookings/) and [Hotel reporting](../hotel-creation/communication/hotel-reporting.md).
+
 ### Related pages
 
 * [Hotel creation](../hotel-creation/)
@@ -224,3 +299,8 @@ If the hotel has historical importance, related setup, or reporting value, hidin
 * [Facilities](../../facilities.md)
 * [Hotel Contracts](../../hotel-contracts/)
 * [Hotel reporting](../hotel-creation/communication/hotel-reporting.md)
+* [Destination](../../setup/destination.md)
+* [Resorts](../../setup/resorts.md)
+* [Suppliers](../../suppliers/)
+* [System Setup – Hotel Providers](../../setup/system-setup/system-setup-hotel-providers/)
+* [System Setup – Hotel Import](../../setup/system-setup/system-setup-hotel-import.md)
