@@ -93,7 +93,7 @@ This checkbox does not trigger recalculation jobs. Change hotel cost or profit m
 Price updates can take up to 30 minutes. Timing depends on service load.
 {% endhint %}
 
-#### Field Explanation
+### Field Explanation
 
 <figure><img src="../../../.gitbook/assets/image (711).png" alt=""><figcaption></figcaption></figure>
 

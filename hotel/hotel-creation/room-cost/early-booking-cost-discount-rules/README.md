@@ -122,7 +122,7 @@ Two Tourpaq environments may behave differently depending on the setting:
 * Selling price becomes lower through **Profit Margin calculation**
 * **No visible discount line** shown to the guest
 
-#### Field Explanation
+### Field Explanation
 
 <figure><img src="../../../../.gitbook/assets/image (425).png" alt=""><figcaption></figcaption></figure>
 
