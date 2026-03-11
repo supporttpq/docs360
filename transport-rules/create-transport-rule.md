@@ -61,31 +61,45 @@ This behavior allows users to repeatedly press **“+”** and quickly add all r
 #### Outbound
 
 * **Transport Type** – Select the transport type for the outbound journey (Real transport / External provider).
-* Depending on the selected transport type, the system offers several fields, such as:
-  *   Real Transport
+*   Depending on the selected transport type, the system offers several fields, such as:
 
-      <figure><img src="../.gitbook/assets/image (614).png" alt=""><figcaption></figcaption></figure>
+    *   Real Transport
 
-      * Transport type - Specifies the type of transport to which the rule applies
-      * Alternative airport - Defines whether alternative arrival airports are allowed.
-      * Real Transport - Allows you to select a real transport.
-  *   External Provider
+        <figure><img src="../.gitbook/assets/image (614).png" alt=""><figcaption></figcaption></figure>
 
-      <figure><img src="../.gitbook/assets/image (615).png" alt=""><figcaption></figcaption></figure>
+        * Transport type - Specifies the type of transport to which the rule applies
+        * Alternative airport - Defines whether alternative arrival airports are allowed.
+        * Real Transport - Allows you to select a real transport.
+    *   External Provider
 
-      * Transport type - Specifies the type of transport to which the rule applies
-      * Alternative airport - Defines whether alternative arrival airports are allowed.
-      * Provider - Specifies the transport provider (e.g., Paxport API, Travelport API, Amadeus API, Railhub Provider).
-      * Max stops number - Defines the maximum number of stopovers allowed for the outbound journey.
-      * Max connection time (min) - Specifies the maximum allowed connection time between segments, in minutes.
-      * Max travel time (hours) - Defines the maximum total duration of the outbound journey.
-      * Max Price - Sets the maximum allowed price for the outbound transport.
-      * Baggage - Checkbox indicating whether baggage inclusion is required.
+        <figure><img src="../.gitbook/assets/image (615).png" alt=""><figcaption></figcaption></figure>
+
+        * Transport type - Specifies the type of transport to which the rule applies
+        * Alternative airport - Defines whether alternative arrival airports are allowed.
+        * Provider - Specifies the transport provider (e.g., Paxport API, Travelport API, Amadeus API, Railhub Provider).
+        * Max stops number - Defines the maximum number of stopovers allowed for the outbound journey.
+        * Max connection time (min) - Specifies the maximum allowed connection time between segments, in minutes.
+        * Max travel time (hours) - Defines the maximum total duration of the outbound journey.
+        * Max Price - Sets the maximum allowed price for the outbound transport.
+        * Baggage - Checkbox indicating whether baggage inclusion is required.
+
+
+
+{% hint style="info" %}
+Max stops number, Max connection time, Max travel time, Max price and Baggage field became editable only after the transports have been generated.
+{% endhint %}
 
 #### Homebound
 
 * **Transport Type** – Select the transport type for the return journey (Real transport / External provider).
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 * The same fields are available as for outbound.
+
+{% hint style="info" %}
+Max stops number, Max connection time, Max travel time fields became editable only after the transports have been generated.
+{% endhint %}
 
 #### Settings
 
