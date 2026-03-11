@@ -71,7 +71,7 @@ Base Price → Early Booking Discount → Final Guest Price
 
 This configuration is commonly used when the agency wants the Early Booking promotion to be **clearly visible in guest-facing documents**.
 
-<figure><img src="../../../../.gitbook/assets/image (712).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (716).png" alt=""><figcaption></figcaption></figure>
 
 #### Behavior when the Setting is Disabled
 
