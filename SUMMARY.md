@@ -16,6 +16,7 @@
 ## Dashboard
 
 * [Dashboard](dashboard/dashboard.md)
+* [TROUBLESHOOTING](dashboard/troubleshooting.md)
 
 ## Notifications
 

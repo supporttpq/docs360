@@ -54,10 +54,6 @@ The meal plan included with a hotel stay. Common board types:
 
 A confirmed reservation in Tourpaq for one or more passengers. A booking contains transport, accommodation, extras, passenger details, economics, and payment records. Each booking is assigned a unique **booking number**.
 
-#### Booking Date Manager
-
-A tool used to manage and adjust booking-related dates, such as travel dates or payment deadlines, in bulk or per booking.
-
 #### Brand
 
 A distinct sales identity or tour operator label within your organisation. All products, pricing, hotels, transports, and bookings are linked to a Brand. An organisation may run multiple Brands targeting different markets or using different trade names.
@@ -465,7 +461,3 @@ The online customer-facing booking engine integrated with Tourpaq. Customers boo
 #### Web Service
 
 An integration endpoint that allows external systems to interact with Tourpaq data programmatically. Configured under **Setup → Web Service**.
-
-***
-
-_Last updated: March 2026_ _For corrections or missing terms, contact your Tourpaq administrator or documentation team._
