@@ -2,6 +2,7 @@
 description: >-
   A reference guide to the terms, abbreviations, and concepts you'll encounter
   throughout the Tourpaq system. Terms are listed alphabetically.
+noIndex: true
 icon: book-open
 ---
 
