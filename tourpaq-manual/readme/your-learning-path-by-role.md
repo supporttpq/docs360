@@ -73,5 +73,5 @@ Your focus is hotel setup, contracts, availability, and room management.
 ***
 
 {% hint style="success" %}
-**Done with Getting Started?** Head to the section most relevant to your role and dive in. And remember — if you're ever stuck on a term, the Glossary has you covered.&#x20;
+**Done with Getting Started?** Head to the section most relevant to your role and dive in. And remember — if you're ever stuck on a term, the [Glossary](../../setup/glossary.md) has you covered.&#x20;
 {% endhint %}
