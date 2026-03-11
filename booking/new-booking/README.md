@@ -1,8 +1,5 @@
 ---
-description: >-
-  Create a new booking in Tourpaq Office. Search transports and hotels, add
-  passengers and extras, review economics (price/cost/profit), then confirm and
-  send emails or SMS.
+description: Create a new reservation from scratch — step by step.
 layout:
   width: default
   title:
@@ -25,226 +22,207 @@ layout:
 
 ### **Overview**
 
-The **New Booking** section in **Tourpaq Office** is used to **create a booking** (a new reservation) from scratch for a customer or group. You can search available **transports**, **hotels**, and **extras**, add **passengers**, and review **economics** (price, cost, profit) before you confirm the booking.
+The **New Booking** section covers everything needed to build a reservation manually in Tourpaq. From the initial search for available transport and accommodation, through adding passengers and extras, reviewing economics, and confirming the booking — every step is documented here.
 
-This page is the **landing page** for all documentation related to creating and managing a new booking. Use the sub‑pages in this section for detailed explanations of each area (Economics, Passenger details, E‑mails, Comments, etc.).
+This page is the section index. It gives you an orientation of the full New Booking workflow and maps out every sub-page so you can jump directly to the area you need.
+
+{% hint style="info" %}
+**Looking for an existing booking?** Go to [All Bookings](https://manual.tourpaq.com/booking/all-bookings) to search, filter, and open bookings that have already been created.&#x20;
+{% endhint %}
 
 ***
 
 ### **Purpose**
 
-The New Booking functionality is designed to:
+The New Booking functionality is designed to support agents and internal users who create reservations manually — for example, in response to phone enquiries, email requests, agency sales, or special cases that cannot be handled through the self-service web booking engine.
 
-* Let agents and back office users **create bookings manually** (phone, email, agency, internal sales).
-* Support common booking types: **package booking**, **hotel-only booking**, **transport-only booking**, and bookings with **extras**.
-* Provide entry points to detailed views such as **Economics**, **Passenger details**, **History**, and more.
-* Ensure booking data is complete before **tickets**, **vouchers**, and customer communications are sent.
+It supports all booking configurations: standard packages, hotel-only, transport-only, a la carte, circuit trips, group bookings, and more.
 
 ***
 
 ### **Preconditions**
 
-Before using **New Booking**, make sure:
+Before creating a new booking, make sure the following are in place:
 
-* You are logged in with a **user role** that has access to create and edit bookings.
-* A relevant **Brand** is selected (if required by your setup) so that the correct prices, transports, and hotels are available.
-* Core data is configured for the Brand, such as:
-  * **Transports** (flights, buses, etc.)
-  * **Hotels** and **room types**
-  * **Price lists** and **discounts/supplements**
-  * **Extras** (transfers, insurances, activities, etc.)
+* You are logged in with a user role that has permission to **create and edit bookings**. Contact your administrator if the New Booking option is not visible or accessible.
+* The correct **Brand** is selected. Prices, hotels, transports, and extras are all Brand-specific — selecting the wrong Brand will produce incorrect or empty search results.
+* The following data must be configured in the system before a booking can be created:
+  * Active **Transports** (flights, buses, etc.) with available seats
+  * **Hotels** with valid room types and allotment
+  * A valid **Price List** covering the intended travel period
+  * **Extras** configured if the customer requires add-ons
 
-{% hint style="info" %}
-If you cannot find any departures, hotels, or prices when searching in **New Booking**, first check that you selected the **correct Brand**, dates, and that valid **price lists** exist for the period.
+{% hint style="warning" %}
+If you search for departures or hotels and nothing appears, the most common cause is a missing or expired **Price List** for the selected Brand and travel period. Check [Price List](https://manual.tourpaq.com/price-list/pricelist) before contacting support.
 {% endhint %}
 
 ***
 
-### **Quick start**
+### New Booking Workflow
 
-{% stepper %}
-{% step %}
-### 1. Open **New Booking**
+The standard workflow for creating a new booking follows these six steps:
 
-1. Go to **Booking → New Booking**.
-2. If prompted, select the **Brand** you want to book under.
-3. Confirm that you are in the correct **sales environment** (e.g. test vs production, if applicable).
-{% endstep %}
+#### Step 1 — Open New Booking
 
-{% step %}
-### 2. Search for travel options
-
-1. Enter the basic search criteria, such as:
-   * Departure **gateway** / airport
-   * **Destination** / resort or hotel area
-   * **Travel dates** (outbound and return)
-   * Number of **adults**, **children**, and **infants**
-2. Start the search to see available **transports** and **accommodations**.
-3. Adjust dates or number of passengers if no suitable options appear.
-{% endstep %}
-
-{% step %}
-### 3. Select transport and accommodation
-
-1. Choose the desired **outbound** and (if relevant) **return** transport.
-2. Select a **hotel**, **room type**, and **board type** according to the customer’s request.
-3. Verify that the selected combination is available and that the **price** looks correct.
-{% endstep %}
-
-{% step %}
-### 4. Add passengers and details
-
-1. Add all **passengers** with names and required personal details (age, date of birth, etc., depending on your rules).
-2. Assign passengers to the **rooms** and **seats** where relevant.
-3. Open **Passenger details** to add additional information (e.g. contact details or special needs) if needed.
-{% endstep %}
-
-{% step %}
-### 5. Add extras and review economics
-
-1. Add any **extras** (insurance, transfers, activities, equipment, etc.) requested by the customer.
-2. Open **Economics** to review:
-   * Total **price** to the customer
-   * Underlying **costs**
-   * Calculated **profit** / margin
-3. Adjust components (hotel, transport, extras, discounts) if the price or profit needs to be changed within your rules.
-{% endstep %}
-
-{% step %}
-### 6. Confirm and save the booking
-
-1. Check that all required data is entered (passenger details, travel components, payment terms, etc.).
-2. Save / confirm the booking.
-3. Note the **booking number** and, if needed, proceed to:
-   * Send **tickets / confirmations** via the **E‑mails** section.
-   * Add **comments** or internal notes.
-   * Review **History** for an audit trail.
-{% endstep %}
-{% endstepper %}
+1. Go to **Booking → New Booking** in the left sidebar
+2. Confirm the correct **Brand** is selected at the top of the screen
+3. You are now on the main booking creation screen
 
 ***
 
-### **Key areas in New Booking (sub‑pages)**
+#### Step 2 — Search for travel options
 
-Use the following pages for detailed explanations of specific parts of the New Booking flow:
+Enter the basic search criteria:
 
-#### Core booking flow
+* **Departure gateway** — where the customer is travelling from
+* **Destination** — resort, area, or specific hotel
+* **Travel dates** — outbound and return
+* **Passengers** — number of adults, children, and infants
 
-* [**New Booking**](new-booking/) – Main New Booking screen, search, and selection of transports and hotels.
-* [**New Booking search support**](new-booking/new-booking-search-support.md) – Details on the search behaviour and options in the New Booking screen.
-* [**Edit Passenger**](new-booking/edit-passenger/) – How to update passenger information within a booking.
+Click **Search** to see available transport and accommodation options. If no results appear, try widening the dates or destination, and verify that a valid Price List exists for the period.
 
-#### Financials and performance
+***
 
-* [**Economics**](economics.md) – Price, cost, and profit overview for a booking.
-* [**Profit**](profit.md) – Detailed profit handling and views per booking.
-* [**Individual payments**](individual-payments.md) – Manage payments per passenger or per booking.
-* [**Keep automatic discounts prices**](keep-automatic-discounts-prices.md) – Control behaviour when automatic discounts are recalculated.
+#### Step 3 — Select transport and accommodation
 
-#### Passenger and booking information
+From the search results:
 
-* [**Passenger details**](passenger-details.md) – Detailed personal data and options per passenger.
-* [**Customer info / Details on customer card**](customer-info-details-on-customer-card.md) – How customer information is displayed and managed.
-* [**History**](history.md) – Log of changes and actions related to the booking.
-* [**Comments**](comments.md) – Internal notes on the booking.
+1. Choose the **outbound transport** (and return transport if applicable)
+2. Select the **hotel**, **room type**, and **board type**
+3. Verify the selected combination is available and that the **price looks correct**
+
+***
+
+#### Step 4 — Add passengers and details
+
+1. Add all **passengers** with their required personal data (name, date of birth, etc.)
+2. Assign passengers to **rooms** and **seats** where relevant
+3. Open **Passenger Details** to add contact information or special needs
+
+***
+
+#### Step 5 — Add extras and review economics
+
+1. Add any **extras** requested by the customer — insurance, transfers, activities, equipment, etc.
+2. Open **Economics** to review:
+   * Total **price** charged to the customer
+   * Underlying **supplier costs**
+   * Calculated **profit / margin**
+3. Adjust components if the price or profit needs to change within your permitted rules
+
+***
+
+#### Step 6 — Confirm and save
+
+1. Verify all required data is complete — passenger details, travel components, payment terms
+2. Save and confirm the booking
+3. Note the **Booking Number** assigned by the system
+4. Proceed to send **tickets and confirmation** via the E-mails tab
+5. Add any internal **Comments** or notes as needed
+
+***
+
+### Sub-Pages in This Section
+
+#### Core Booking Flow
+
+| Page                                                                                    | What it covers                                                          |
+| --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| [New Booking — Main Screen](https://manual.tourpaq.com/booking/new-booking/new-booking) | The primary search and selection screen — transport, hotel, room, board |
+| [Economics](https://manual.tourpaq.com/booking/new-booking/economics)                   | Full price, cost, and profit breakdown per booking                      |
+| [Passenger Details](https://manual.tourpaq.com/booking/new-booking/passenger-details)   | Personal data, contact info, and options per traveller                  |
+| [History](https://manual.tourpaq.com/booking/new-booking/history)                       | Full audit log of all changes and actions on a booking                  |
+
+***
 
 #### Communication
 
-* [**E‑mails**](e-mails.md) – Sending and tracking booking‑related emails.
-* [**SMS**](sms.md) – Sending and managing SMS messages linked to the booking.
-* [**QR code for vouchers**](qr-code-for-vouchers.md) – Configuration and use of QR codes on vouchers.
-
-#### Services and allocation
-
-* [**Hotel Room**](hotel-room.md) – Managing hotel room allocation within a booking.
-* [**Transport Seating**](transport-seating.md) – Assign and manage seats for transports.
-* [**Tee Times**](tee-times/) – Handle tee time bookings and related modules.
-* [**Golf Courses**](golf-courses.md) – Manage golf course information related to bookings.
-* [**Extra Orders**](extra-orders.md) – Manage additional extras ordered through or after the booking.
-
-#### Special booking behaviours
-
-* [**Waiting list (WL)**](waitting-list.md) – How waiting lists work in bookings.
-* [**Moved Booking**](moved-booking.md) – Moving a booking to another departure, hotel, etc.
-* [**Copy Booking**](copy-booking.md) – Copying an existing booking.
-* [**Circuit Bookings**](circuit-bookings.md) – Handling circuit or round‑trip bookings.
-* [**Booking for 2 One Ways**](booking-for-2-one-ways.md) – Creating bookings that consist of two separate one‑way transports.
-* [**Multiple one way flights bookings**](multiple-one-way-flights-bookings.md) – Handling bookings with more complex one‑way combinations.
-* [**Multiple transports one room bookings**](multiple-transports-one-room-bookings.md) – Bookings where passengers use different transports but stay in the same room.
-* [**Hotel Only Bookings**](hotel-only-bookings.md) – Create bookings without transport.
-* [**Transport only Booking**](transport-only-booking.md) – Create bookings with transport but no hotel.
-* [**Child Price**](child-price/) – Behaviour of child pricing in bookings.
-* [**A la Carte**](a-la-carte/) – A la carte booking options and packages.
-* [**Remove pax on outbound or homebound only**](remove-pax-on-outbound-or-homebound-only/) – Special handling when a passenger travels only one way.
-
-#### Other booking‑related tools
-
-* [**Conversation**](conversation.md) – Conversation/history related to a booking.
-* [**Don't sent ticket option**](dont-sent-ticket-option.md) – Configuration and usage of the "do not send ticket" option.
-* [**Coded discount booking**](coded-discount-booking.md) – Using coded discounts when creating a booking.
+| Page                                                                                               | What it covers                                                |
+| -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| [E-mails](https://manual.tourpaq.com/booking/new-booking/e-mails)                                  | Send and track booking confirmation emails and tickets        |
+| [SMS](https://manual.tourpaq.com/booking/new-booking/sms)                                          | Send and manage SMS messages linked to a booking              |
+| [Comments](https://manual.tourpaq.com/booking/new-booking/comments)                                | Internal notes visible only to agents — not sent to customers |
+| [Conversation](https://manual.tourpaq.com/booking/new-booking/conversation)                        | Full communication thread attached to a booking               |
+| [Don't Send Ticket Option](https://manual.tourpaq.com/booking/new-booking/dont-sent-ticket-option) | Suppress ticket sending for specific bookings                 |
 
 ***
 
-### **FAQ**
+#### Financials
 
-#### **1. When should I use New Booking instead of WebBooking?**
-
-Use **New Booking** when an **agent** or **internal user** is creating or adjusting a booking manually (e.g. phone or email requests, partner agency sales, special cases). Use **WebBooking** when the **customer books themselves** through your online booking engine.
-
-***
-
-#### **2. Why do I see no available departures or hotels for the dates I search?**
-
-Common reasons:
-
-* The selected **Brand** has no valid **price lists** or **allotments** for the chosen period.
-* The **dates** fall outside configured **travel lengths** or allowed stay durations.
-* The **gateway**, **destination**, or **hotel** filters are too restrictive.
-
-Try widening the search (dates, destination, or number of passengers). If nothing appears, check your **Transport**, **Hotel**, and **Price list** setup or contact your administrator.
+| Page                                                                                                              | What it covers                                                           |
+| ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| [Profit](https://manual.tourpaq.com/booking/new-booking/profit)                                                   | Detailed profit view and margin handling per booking                     |
+| [Individual Payments](https://manual.tourpaq.com/booking/new-booking/individual-payments)                         | Register and manage payments per passenger or per booking                |
+| [Keep Automatic Discounts Prices](https://manual.tourpaq.com/booking/new-booking/keep-automatic-discounts-prices) | Control whether automatic discounts recalculate when a booking is edited |
+| [Coded Discount Booking](https://manual.tourpaq.com/booking/new-booking/coded-discount-booking)                   | Apply a promotional code at the time of booking                          |
 
 ***
 
-#### **3. The price looks wrong or is 0 – what should I check?**
+#### Services & Allocation
 
-* Confirm the correct **Brand** is selected.
-* Verify that there is a valid **price list** and **room/transport price** for the chosen period and configuration.
-* Check whether **discounts/supplements** or **special rules** affect the final price.
-* Open **Economics** to see how the price is calculated and which components are missing or zero.
-
-If prices still look incorrect, contact your internal support or pricing team.
-
-***
-
-#### **4. Can I use New Booking to edit an existing booking?**
-
-No. Use [**All bookings**](../all-bookings/) to:
-
-1. Search for the booking by booking number, customer, or filters.
-2. Open the **booking details**.
-3. Edit transports, hotels, passengers, extras, etc., using the relevant sub‑pages (Economics, Passenger details, Hotel Room, Transport Seating, etc.).
+| Page                                                                                                                              | What it covers                                                          |
+| --------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| [Hotel Room](https://manual.tourpaq.com/booking/new-booking/hotel-room)                                                           | Hotel room assignment and management within a booking                   |
+| [Transport Seating](https://manual.tourpaq.com/booking/new-booking/transport-seating)                                             | Assign and manage passenger seats on a transport                        |
+| [SSR — Special Service Requests](https://manual.tourpaq.com/booking/new-booking/ssr)                                              | Airline special requests: wheelchair, meal preferences, bassinets, etc. |
+| [Extra Orders](https://manual.tourpaq.com/booking/new-booking/extra-orders)                                                       | Add and manage extras ordered during or after booking creation          |
+| [Tee Times](https://manual.tourpaq.com/booking/new-booking/tee-times)                                                             | Golf tee time booking and scheduling                                    |
+| [Golf Courses](https://manual.tourpaq.com/booking/new-booking/golf-courses)                                                       | Golf course information linked to a booking                             |
+| [QR Code for Vouchers](https://manual.tourpaq.com/booking/new-booking/qr-code-for-vouchers)                                       | Generate and configure QR codes on vouchers for destination check-in    |
+| [Customer Info / Details on Customer Card](https://manual.tourpaq.com/booking/new-booking/customer-info-details-on-customer-card) | View and manage customer profile data from within a booking             |
 
 ***
 
-#### **5. How do I handle group bookings with many passengers?**
+#### Special Booking Types & Behaviours
 
-For larger groups:
-
-* Carefully define the **number of passengers** and **room distribution** from the start.
-* Use **Passenger details** to maintain clear information for each traveller.
-* Consider using **Copy Booking** for similar group configurations.
-* Use **Economics** to check overall profitability of the group booking.
-
-Your organisation may also have specific procedures or products for group bookings—follow those internal guidelines where applicable.
+| Page                                                                                                                                | What it covers                                                           |
+| ----------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| [Waiting List](https://manual.tourpaq.com/booking/new-booking/waitting-list)                                                        | Place a booking on hold pending availability confirmation                |
+| [Moved Booking](https://manual.tourpaq.com/booking/new-booking/moved-booking)                                                       | Move a booking to a different departure, hotel, or date                  |
+| [Copy Booking](https://manual.tourpaq.com/booking/new-booking/copy-booking)                                                         | Duplicate an existing booking as a starting point for a new one          |
+| [Circuit Bookings](https://manual.tourpaq.com/booking/new-booking/circuit-bookings)                                                 | Multi-destination round-trip itineraries                                 |
+| [Booking for 2 One Ways](https://manual.tourpaq.com/booking/new-booking/booking-for-2-one-ways)                                     | Two separate one-way transports combined in a single booking             |
+| [Multiple One Way Flights Bookings](https://manual.tourpaq.com/booking/new-booking/multiple-one-way-flights-bookings)               | More complex combinations of one-way flight legs                         |
+| [Multiple Transports One Room Bookings](https://manual.tourpaq.com/booking/new-booking/multiple-transports-one-room-bookings)       | Passengers using different transports but sharing the same accommodation |
+| [Hotel Only Bookings](https://manual.tourpaq.com/booking/new-booking/hotel-only-bookings)                                           | Accommodation without transport                                          |
+| [Transport Only Booking](https://manual.tourpaq.com/booking/new-booking/transport-only-booking)                                     | Transport without accommodation                                          |
+| [Child Price](https://manual.tourpaq.com/booking/new-booking/child-price)                                                           | How child pricing rules are applied within a booking                     |
+| [A la Carte](https://manual.tourpaq.com/booking/new-booking/a-la-carte)                                                             | Fully custom package with individually priced components                 |
+| [Remove Pax on Outbound or Homebound Only](https://manual.tourpaq.com/booking/new-booking/remove-pax-on-outbound-or-homebound-only) | Remove a passenger from only one leg of a two-way booking                |
 
 ***
 
-#### **6. What is the best way to document special requests or internal notes?**
+### FAQ
 
-Use the **Comments** sub‑page on the booking to:
+**Q: When should I use New Booking instead of Web Booking?** Use **New Booking** when an agent or internal user is creating or managing a reservation manually — for example, bookings received by phone, email, or through a partner agency, or any case requiring special handling. Use **Web Booking** when the customer is booking directly through the online booking engine.
 
-* Add **internal notes** that are not visible to the customer.
-* Document **special agreements** or exceptions.
-* Leave information for colleagues who might handle the booking later.
+***
 
-For requests that must appear to suppliers or customers, use the relevant fields in **Passenger details**, **Hotel Room**, **Transport Seating**, or dedicated **SSR (Special Service Requests)** pages.
+**Q: Why do I see no available departures or hotels when I search?** The most common reasons are: the selected **Brand** has no valid Price List for the chosen period; the departure dates fall outside the configured travel lengths; or the gateway, destination, or passenger count filters are too restrictive. Start by widening the search, then check the [Price List](https://manual.tourpaq.com/price-list/pricelist) configuration if nothing appears.
+
+***
+
+**Q: The price is showing as 0 or looks wrong — what should I check?** Open **Economics** to see the full price breakdown and identify which components are missing or zero. Confirm the correct Brand is selected, verify a valid Price List exists for the period, and check whether any discount or supplement rules are affecting the price unexpectedly. See [Economics](https://manual.tourpaq.com/booking/new-booking/economics) for details.
+
+***
+
+**Q: Can I use New Booking to edit an existing booking?** No. New Booking is only for creating new reservations. To edit an existing booking, find it in [All Bookings](https://manual.tourpaq.com/booking/all-bookings) and open it from there. All editing is done within the booking's own sub-pages.
+
+***
+
+**Q: How do I handle a large group booking?** Define the number of passengers and room distribution carefully from the start. Use [Passenger Details](https://manual.tourpaq.com/booking/new-booking/passenger-details) to maintain clear records for each traveller. Use [Economics](https://manual.tourpaq.com/booking/new-booking/economics) to verify group profitability. Consider using [Copy Booking](https://manual.tourpaq.com/booking/new-booking/copy-booking) for similar group configurations.
+
+***
+
+**Q: Where do I add internal notes about a booking?** Use the [Comments](https://manual.tourpaq.com/booking/new-booking/comments) sub-page. Comments are internal only — they are never visible to the customer and do not appear on tickets, vouchers, or confirmation emails.
+
+***
+
+### Related Pages
+
+* [All Bookings](https://manual.tourpaq.com/booking/all-bookings) — search and manage existing bookings
+* [Booking Overview](https://manual.tourpaq.com/booking) — introduction to the full Booking section
+* [Price List](https://manual.tourpaq.com/price-list/pricelist) — the pricing foundation required before bookings can be created
+* [Customers](https://manual.tourpaq.com/customer/customers) — customer profiles linked to bookings
+* [Notifications](https://manual.tourpaq.com/notifications/notification) — monitor booking errors and warnings after saving
+* [Extras Setup](https://manual.tourpaq.com/extras-setup/extras) — configure the extras available to add to bookings

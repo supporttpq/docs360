@@ -1,121 +1,137 @@
 ---
 description: >-
-  Use Tourpaq Office All bookings Totals to see booking-level totals for
-  bookings, passengers, turnover, and profit based on your filters.
+  A fast, aggregated summary of booking counts, passenger volumes, turnover, and
+  profit for any filtered set of bookings.
 ---
 
 # All bookings Totals
 
-### **Overview**
+### Overview
 
-The **All bookings Totals** view in **Tourpaq Office** gives you a fast **booking totals report**. It shows **booking-level totals** based on your current filters in [All bookings](./).
+**All Bookings Totals** provides a high-level financial and operational summary based on the filters currently active in All Bookings. Where Statistics breaks data down per passenger across multiple dimensions, Totals keeps things simple — giving you the headline numbers for the filtered booking set at a glance.
 
-It shows:
-
-* Total number of **bookings**
-* Total number of **passengers**
-* Aggregated **turnover** and **profit** totals (if enabled)
-
-This functionality is part of the **All bookings** page and is designed for a quick, high‑level view of booking volume and business performance. For more detailed, per‑passenger analytics, use [**Statistics in All bookings**](statistic-in-all-bookings.md).
-
-***
-
-### **Purpose**
-
-Use **All bookings Totals** to:
-
-* Summarize booking data across custom‑defined filters.
-* Quickly check totals for **bookings**, **passengers**, and optionally **turnover/profit** for reporting.
-* Analyze booking behavior by **period**, **transport**, **hotel**, **status**, and more.
-* Get a compact overview before drilling down into individual bookings or statistics.
-
-***
-
-### **Preconditions**
-
-To use **All bookings Totals** effectively, make sure:
-
-* You have access to the **All bookings** page under the **Booking** menu.
-* At least one **Brand** is selected (either all brands or one specific brand).
-* You apply at least one **date filter pair** (e.g. **Booking period**, **Departure period**, or **Arrival period** with both `from` and `to` dates).
-* You click **Display** in **All bookings** to refresh the result list.
-
-The Totals section shows **aggregated values** (counts and sums). For **per‑passenger averages and detailed breakdowns**, use [Statistics in All bookings](statistic-in-all-bookings.md).
+It answers questions like: _"How many bookings and passengers do we have for this departure period?"_ or _"What is the total turnover and profit for this hotel across the summer season?"_
 
 {% hint style="info" %}
-If totals show `0` or appear empty, first check that a **Brand** is selected and that all date filters you use have both **from** and **to** dates. Then click **Display** again.
+**Need per-passenger breakdowns by country, resort, or hotel?** Use [Statistics in All Bookings](https://manual.tourpaq.com/booking/all-bookings/statistic-in-all-bookings) instead.&#x20;
 {% endhint %}
 
 ***
 
-### **Quick start**
+### Purpose
 
-{% stepper %}
-{% step %}
-### 1. Open **All bookings**
+Use All Bookings Totals to:
 
-1. Go to **Booking → All bookings**.
-2. Select at least one **Brand**.
-3. Make sure you have the necessary access rights to see financial data (if you want turnover/profit).
-{% endstep %}
-
-{% step %}
-### 2. Apply filters for the totals
-
-1. Set at least one **date period**:
-   * **Booking period** – when the booking was created, or
-   * **Departure period** – when the trip starts, or
-   * **Arrival period** – when customers arrive at the destination.
-2. Always use date filters as **pairs** (`from` + `to`).
-3. Optionally add more filters such as **Owner**, **Transport**, **Real Transport**, **Hotel**, or **Status**.
-{% endstep %}
-
-{% step %}
-### 3. Click **Display** and read the totals
-
-1. Click **Display** in **All bookings**.
-2. At the bottom (or in the relevant totals area), review the **Totals**:
-   * Total **bookings**
-   * Total **passengers**
-   * **Turnover** and **profit** aggregates (if enabled).
-3. Adjust filters and click **Display** again to update the totals.
-{% endstep %}
-{% endstepper %}
+* Get a quick **aggregated count** of bookings and passengers for a filtered segment
+* Review **total turnover and profit** for a specific period, brand, hotel, or transport
+* Validate data before exporting or reporting
+* Compare filter segments rapidly without navigating to the full Statistics view
 
 ***
 
-### **Filters for Totals**
+### Preconditions
 
-Use filters in **All bookings** to control which bookings are included in the totals.
+Before using All Bookings Totals, ensure the following:
 
-| Filter Type          | Description                                                                                        |
-| -------------------- | -------------------------------------------------------------------------------------------------- |
-| **Brand**            | Select one or more brands to include. At least one brand must be selected.                         |
-| **Booking period**   | `From` and `To` dates for when the bookings were **created**.                                      |
-| **Departure period** | `From` and `To` dates for when trips **depart**.                                                   |
-| **Arrival period**   | `From` and `To` dates for when customers **arrive** at the destination.                            |
-| **Owner**            | Filter by booking owner/creator (e.g. a user, office, or agency).                                  |
-| **Transports**       | Filter by planned transport services (e.g. specific flights or routes).                            |
-| **Real transports**  | Filter by actual assigned transport services (real flights, buses, etc.).                          |
-| **Hotels**           | Filter by the hotel or accommodation linked to the booking.                                        |
-| **Status**           | Filter by booking status (e.g. **OK**, **Cancelled**, **Error**, **Locked** – depending on setup). |
+* You have access to **Booking → All Bookings**
+* At least one **Brand** is selected
+* You have applied at least one **date filter pair** (`From` + `To`) — Booking Period, Departure Period, or Arrival Period
+* You have clicked **Display** in All Bookings — Totals reads from the current filtered result set
 
 {% hint style="warning" %}
-Date‑based filters (**Booking**, **Departure**, **Arrival**) must always be used as **complete pairs** (`from` and `to`) to give valid totals.
+Totals update **only after** you click **Display** in All Bookings. If you change filters, always click Display again before reading the Totals to ensure you are seeing current data.&#x20;
 {% endhint %}
 
 ***
 
-### **Notes & best practices**
+### How to Use All Bookings Totals
 
-* The **Totals** update **only after** you click **Display** in **All bookings**.
-* Combine filters to focus on a specific segment, for example:
-  * All bookings for **Resort A** departing in **September** on a specific **Real Transport**.
-  * All bookings with **Status = OK** for a given **hotel** and **brand**.
-* Use **Saved Views** in All bookings if you often check the same totals (e.g. “This week’s sales”, “Monthly overview per brand”).
-* Compare **All bookings Totals** with **Statistics**:
-  * **Totals** = high‑level aggregated counts/sums.
-  * **Statistics** = per‑passenger breakdowns and averages (profit, turnover, passengers per country/hotel, etc.).
+#### Step 1 — Open All Bookings and select a Brand
+
+Go to **Booking → All Bookings** and select at least one Brand.
+
+***
+
+#### Step 2 — Apply filters
+
+Set the filters that define the segment you want to summarise. At minimum, set one complete date pair:
+
+| Goal                                    | Recommended filter           |
+| --------------------------------------- | ---------------------------- |
+| Sales performance in a period           | Booking Period (From + To)   |
+| Operational load for a departure window | Departure Period (From + To) |
+| In-destination planning                 | Arrival Period (From + To)   |
+| Revenue from a specific hotel           | Hotels + any date pair       |
+| Agent performance                       | Owners + any date pair       |
+
+You can combine multiple filters for more granular totals — for example, all confirmed (Status = OK) bookings for a specific hotel departing in a given month.
+
+***
+
+#### Step 3 — Click Display
+
+Click **Display** in All Bookings to execute the search. The totals for the filtered set appear at the bottom of the page (or in the Totals area, depending on your screen layout).
+
+***
+
+#### Step 4 — Read the Totals
+
+Review the aggregated figures shown:
+
+* **Bookings** — total number of bookings in the filtered set
+* **Passengers** — total number of passengers across those bookings
+* **Turnover** — total gross revenue before costs
+* **Profit** — total net profit (revenue minus costs). May be negative in periods with high cancellations or refunds
+
+***
+
+#### Step 5 — Adjust and compare
+
+Change filters and click Display again to update the Totals for a different segment. Use **Saved Views** to quickly switch between common filter combinations.
+
+***
+
+### Field Reference
+
+#### Totals Metrics
+
+| Metric         | Description                                                                                                                                                                              |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Bookings**   | Total number of bookings in the current filtered result set                                                                                                                              |
+| **Passengers** | Total number of passengers across all filtered bookings. One booking may contain multiple passengers                                                                                     |
+| **Turnover**   | Total gross revenue from all filtered bookings before any costs are deducted                                                                                                             |
+| **Profit**     | Total net profit: Revenue minus all costs (direct and indirect). A negative value indicates the filtered set is running at a loss — common in periods with high cancellations or refunds |
+
+***
+
+#### Filters That Drive Totals
+
+| Filter                           | Description                                                                     |
+| -------------------------------- | ------------------------------------------------------------------------------- |
+| **Brand**                        | Required. Select one or more Brands                                             |
+| **Booking Period**               | Date range for when bookings were created. Must be a complete pair              |
+| **Departure Period**             | Date range for outbound travel dates. Must be a complete pair                   |
+| **Arrival Period**               | Date range for arrival at destination. Must be a complete pair                  |
+| **Hotels**                       | Limit totals to bookings for specific hotels                                    |
+| **Transports / Real Transports** | Limit totals to bookings on specific transports                                 |
+| **Owners**                       | Limit totals to bookings owned by specific agents or users                      |
+| **Status**                       | Limit totals to bookings of a specific status (e.g. OK only, or Cancelled only) |
+
+{% hint style="warning" %}
+Date filters (**Booking**, **Departure**, **Arrival**) must always be used as complete pairs — both `From` and `To` must be filled in. An incomplete pair will return empty or incorrect totals.&#x20;
+{% endhint %}
+
+***
+
+### Totals vs. Statistics — When to Use Which
+
+|                          | All Bookings Totals             | Statistics in All Bookings                                 |
+| ------------------------ | ------------------------------- | ---------------------------------------------------------- |
+| **What it shows**        | Aggregated counts and sums      | Per-passenger averages and breakdowns                      |
+| **Calculation basis**    | Per booking                     | Per passenger                                              |
+| **Best for**             | Quick volume and revenue checks | Detailed analysis by country, hotel, resort                |
+| **Breakdowns available** | None — headline figures only    | Country, arrival, resort, hotel                            |
+| **Additional tools**     | None                            | Compare Statistics, Booking Date Stats, Seller Performance |
 
 <figure><img src="../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="All bookings Totals view showing bookings, passengers, turnover, and profit totals"><figcaption><p>Totals overview for a filtered set of bookings.</p></figcaption></figure>
 
@@ -123,82 +139,38 @@ Date‑based filters (**Booking**, **Departure**, **Arrival**) must always be us
 
 ### **FAQ**
 
-#### **1. Why do the totals show 0 even though I know there are bookings?**
-
-This is usually caused by one of the following:
-
-* No **Brand** is selected.
-* A **date filter** (Booking/Departure/Arrival) is missing either the `from` or `to` date.
-* You changed filters but did not click **Display** again in **All bookings**.
-
-Verify these points, click **Display**, and check the Totals again.
+**Q: Why do the Totals show 0 even though I know there are bookings?** The three most common causes are: no Brand selected, a date filter with only one date filled in (`From` without `To`, or vice versa), or filters were changed but Display was not clicked again. Verify these points, click Display, and check the Totals again.
 
 ***
 
-#### **2. Are totals calculated per booking or per passenger?**
-
-Totals focus on **aggregated booking data**:
-
-* **Bookings** = total number of bookings in the filtered view.
-* **Passengers** = total number of passengers across those bookings.
-* **Turnover/Profit** = sums across all included bookings.
-
-For per‑passenger statistics and averages (e.g. **Average Turnover per passenger**, **Profit per passenger**), use [**Statistics in All bookings**](statistic-in-all-bookings.md).
+**Q: Are totals calculated per booking or per passenger?** Totals show **booking-level aggregates** — the total count of bookings, the total count of passengers, and the sum of turnover and profit across all filtered bookings. For per-passenger averages and breakdowns, use [Statistics in All Bookings](https://manual.tourpaq.com/booking/all-bookings/statistic-in-all-bookings).
 
 ***
 
-#### **3. Which date filter should I use for Totals – Booking, Departure, or Arrival?**
-
-Use the date filter that matches your question:
-
-* **Booking period** – when customers made the booking (useful for **sales/campaign analysis**).
-* **Departure period** – when trips depart (useful for **operational load** and departure‑based reports).
-* **Arrival period** – when customers arrive at the destination (useful for **in‑destination planning**).
-
-You can combine them, but each date type must be used as a **full pair** (`from` + `to`).
+**Q: Which date filter should I use — Booking, Departure, or Arrival?** Use **Booking Period** when you want to know how much was sold in a given period (sales analysis). Use **Departure Period** when you want to know the operational volume for a given travel window. Use **Arrival Period** for destination-based planning. All three can be combined, but each must be a complete pair.
 
 ***
 
-#### **4. Why do totals differ from the numbers I see in Statistics?**
-
-Differences often come from:
-
-* **Different focus**: Totals show **overall counts/sums**, while Statistics often shows **per‑passenger** averages and breakdowns.
-* **Different filters**: If filters (Brand, Status, Hotel, Transport, etc.) are not exactly the same, the results will differ.
-* **Different date periods**: For example, Totals filtered by **Booking period** vs Statistics filtered by **Arrival period**.
-
-Align filters and date periods between **All bookings Totals** and **Statistics** to compare results correctly.
+**Q: Why do my Totals differ from Statistics?** The two views use different calculation methods. Totals are aggregated sums across all bookings. Statistics figures are calculated per passenger and may show averages rather than totals. Also check that the filters and date periods are identical between the two views — even a small difference in Brand or Status filter can produce different results.
 
 ***
 
-#### **5. I do not see turnover or profit in my totals – why?**
-
-Possible reasons:
-
-* Your **user role/permissions** does not allow viewing financial data.
-* Turnover/profit display may be **disabled** in your company’s configuration.
-
-Contact your **Tourpaq administrator** if you believe you should have access to these financial totals.
+**Q: I cannot see Turnover or Profit in my Totals — why?** Your user role may not include permission to view financial data, or financial totals may be disabled in your organisation's configuration. Contact your Tourpaq administrator if you believe you should have access.
 
 ***
 
-#### **6. Can I export the totals to Excel or another format?**
-
-If export is enabled for your environment, you may see an **Export** or **Excel** option on the **All bookings** page or related reports. Use this to download the results based on your current filters.
-
-If no export option is visible, ask your **Tourpaq administrator** or support contact whether exports are available for your user.
+**Q: Can I export Totals to Excel?** If export is enabled for your environment, an **Export** or **Excel** button will be available on the All Bookings page. If no such option is visible, contact your Tourpaq administrator to check whether exports are available for your user role.
 
 ***
 
-#### **7. When should I use All bookings Totals vs Statistics in All bookings?**
+**Q: When should I use Totals instead of Statistics?** Use Totals when you need a fast headline figure — total bookings, passengers, and revenue for a filtered segment — without needing per-passenger breakdowns. Use Statistics when you need to understand performance by country, resort, hotel, or arrival period, or when you need to compare two time periods.
 
-Use **All bookings Totals** when you need:
+***
 
-* A **quick, aggregated overview** of bookings, passengers, turnover, and profit.
-* A simple check of **volume and revenue** for a filtered segment.
+### Related Pages
 
-Use [**Statistics in All bookings**](statistic-in-all-bookings.md) when you need:
-
-* **Per‑passenger** statistics and averages.
-* Detailed breakdowns by **country, arrival date, resort, or hotel**.
-* Tools like **Compare Statistics**, **Booking Date Statistics**, or **Additional Sales per Seller**.
+* [All Bookings](https://manual.tourpaq.com/booking/all-bookings) — parent page and filter reference
+* [View All Bookings](https://manual.tourpaq.com/booking/all-bookings/view-all-bookings) — filter setup, saved views, and bookings table
+* [Statistics in All Bookings](https://manual.tourpaq.com/booking/all-bookings/statistic-in-all-bookings) — per-passenger analytics and breakdowns
+* [Dashboard](https://manual.tourpaq.com/dashboard/dashboard) — real-time financial and sales summary without manual filtering
+* [Finance → Payment Registration](https://manual.tourpaq.com/finance/payment-registration) — authoritative financial records for individual bookings
