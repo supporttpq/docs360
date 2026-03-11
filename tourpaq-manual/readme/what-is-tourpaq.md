@@ -28,7 +28,9 @@ Think of it as the central hub that connects your **products**, **customers**, *
 
 Tourpaq is organised around **Brands**. A Brand represents a distinct travel company or sales channel (e.g. different tour operator labels under the same group). Most data — price lists, hotels, transports, bookings — is linked to a specific Brand.
 
-\{% hint style="warning" %\} **Always check your Brand** before creating or searching for data. If you're looking at the wrong Brand, you won't see the right hotels, prices, or bookings. \{% endhint %\}
+{% hint style="warning" %}
+**Always check your Brand** before creating or searching for data. If you're looking at the wrong Brand, you won't see the right hotels, prices, or bookings.&#x20;
+{% endhint %}
 
 ***
 
@@ -36,7 +38,7 @@ Tourpaq is organised around **Brands**. A Brand represents a distinct travel com
 
 Tourpaq is used by several different roles within a travel organisation:
 
-* **Tour Operators / Booking Agents** — Create bookings, manage customers, handle communication
+* **Booking Agents** — Create bookings, manage customers, handle communication
 * **System Administrators** — Configure the system, manage users and brands, set up integrations
 * **Finance Teams** — Register payments, handle refunds, monitor profitability
 * **Hotel Managers / Suppliers** — View contracts, availability, and confirmations
