@@ -12,11 +12,11 @@
 ***
 
 * [GLOSSARY](glossary.md)
+* [TROUBLESHOOTING](troubleshooting.md)
 
 ## Dashboard
 
 * [Dashboard](dashboard/dashboard.md)
-* [TROUBLESHOOTING](dashboard/troubleshooting.md)
 
 ## Notifications
 
