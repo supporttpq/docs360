@@ -9,6 +9,10 @@
   * [Navigate the System](tourpaq-manual/readme/navigate-the-system.md)
   * [Your Learning Path by Role](tourpaq-manual/readme/your-learning-path-by-role.md)
 
+***
+
+* [GLOSSARY](glossary.md)
+
 ## Dashboard
 
 * [Dashboard](dashboard/dashboard.md)
