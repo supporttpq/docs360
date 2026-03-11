@@ -2,16 +2,13 @@
 
 ## Tourpaq Manual
 
-* [Getting Started with Tourpaq](README.md)
+* [Welcome to the Tourpaq Manual](README.md)
+* [Getting Started with Tourpaq](<README (1).md>)
   * [What is Tourpaq?](tourpaq-manual/readme/what-is-tourpaq.md)
   * [First Login & Account Setup](tourpaq-manual/readme/first-login-and-account-setup.md)
   * [Key Concepts](tourpaq-manual/readme/key-concepts.md)
   * [Navigate the System](tourpaq-manual/readme/navigate-the-system.md)
   * [Your Learning Path by Role](tourpaq-manual/readme/your-learning-path-by-role.md)
-
-***
-
-* [Welcome to the Tourpaq Manual](welcome-to-the-tourpaq-manual.md)
 
 ## Dashboard
 
@@ -522,5 +519,5 @@
 * [Vouchers](setup/vouchers.md)
 * [Autobilling](setup/autobilling.md)
 * [Web Booking API flow](setup/web-booking-api-flow.md)
-* [GLOSSARY](setup/glossary.md)
-* [TROUBLESHOOTING](setup/troubleshooting.md)
+* [Glossary](setup/glossary.md)
+* [Troubleshooting](setup/troubleshooting.md)
