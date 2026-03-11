@@ -386,7 +386,9 @@ The most common cause of empty search results is a missing or expired price list
 3. Check the booking status filter — cancelled bookings may be excluded by default
 4. Try exporting with all filters cleared to see if data appears, then narrow down from there
 
-\{% hint style="warning" %\} If you are using the **Legacy Daily Export v1 format**, note that this is deprecated as of v3.1.0 and will be removed in v3.3.0. Migrate to the v2 format as soon as possible. \{% endhint %\}
+{% hint style="warning" %}
+If you are using the **Legacy Daily Export v1 format**, note that this is deprecated as of v3.1.0 and will be removed in v3.3.0. Migrate to the v2 format as soon as possible.&#x20;
+{% endhint %}
 
 ***
 
