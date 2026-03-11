@@ -3,6 +3,7 @@ description: >-
   Having trouble? This page covers the most common issues users encounter in
   Tourpaq, organised by module. Each issue includes a clear cause and
   step-by-step fix.
+noIndex: true
 icon: hammer-brush
 ---
 
