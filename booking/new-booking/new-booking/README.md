@@ -721,3 +721,16 @@ Compare:
 * Any office‑only products or rules.
 
 If everything matches but the price still differs, contact your internal pricing or system administrator to review the configuration.
+
+### **Related pages**
+
+Use these pages when you need to go beyond the initial booking draft:
+
+* [New Booking (overview)](../) — Section entry point and related booking flows.
+* [New Booking search support](new-booking-search-support.md) — Extra help for transport/hotel search and selection.
+* [Edit Passenger](edit-passenger/) — Add/remove passengers and update pax data after saving.
+* [Economics](../economics.md) — Deposits, instalments, payment status, refunds, and payment methods.
+* [Print Tickets](../../../tickets/print-tickets.md) — Print/email ticket PDFs and bulk reprint.
+* [Don’t send ticket option](../dont-sent-ticket-option.md) — Avoid sending automatic update emails while editing.
+* [Waiting list (WL)](../waitting-list.md) — Handle sold-out departures/rooms with WL/WLOK statuses.
+* [Cancellation Rules](../../../cancellation-rules.md) — How cancellation fees are calculated and applied.
