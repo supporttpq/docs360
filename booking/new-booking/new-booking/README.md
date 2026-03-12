@@ -933,194 +933,144 @@ Then:
 **Step 5: Search and Select Transport**
 
 1. Locate the Transport section in the booking interface
-2. Click the **Edit** button in the Transport section
+2.  Click the **Edit** button in the Transport section&#x20;
+
+    <figure><img src="../../../.gitbook/assets/image (514).png" alt=""><figcaption></figcaption></figure>
 3. The Select Transport dialog opens
 4. Configure search filters:&#x20;
 
 &#x20;            a. Set **From** date by clicking the date picker and selecting the earliest acceptable departure date&#x20;
 
-&#x20;            b. Set **To** date by clicking the date picker and selecting the latest acceptable departure date c. Optional: Select **Departure Gateway** from dropdown to filter by origin airport d. Optional: Select **Arrival Gateway** from dropdown to filter by destination airport e. Optional: Enter **Transport code** to search for specific transport f. Optional: Check **Search waitlist also** to include sold-out transports
+&#x20;            b. Set **To** date by clicking the date picker and selecting the latest acceptable departure date
 
-1. Click the **Search** button to execute the search
-2. Review search results in the transport list table:
-3. Check **Date** column for departure date
-4. Review **ALI 1-4** columns for available allotment
-5. Check **Status** column color indicator for availability level
-6. Review **Flight Number** if airline transport
-7. Verify **Stop Sale** column shows no stop sale indicator
-8. Select the desired transport by clicking the **Select** button in the appropriate row
-9. The Select Transport dialog closes
-10. Transport details populate in the Transport section
-11. Set the **Trip Interval** (stay duration in days) in the field provided
-12. System calculates return date based on departure + interval
+&#x20;            c. Optional: Select **Departure Gateway** from dropdown to filter by origin airport&#x20;
 
-The **Select Transport** dialog is your **transport availability search**. Use it to find and select a transport (flight, bus, or other transport types) for the booking. It supports filters and a result table with departures in the selected date range.
+&#x20;            d. Optional: Select **Arrival Gateway** from dropdown to filter by destination airport&#x20;
 
-**Filter section**
+&#x20;            e. Optional: Enter **Transport code** to search for specific transport&#x20;
 
-At the top of the dialog, users can refine the search using the following filters:
+&#x20;            f. Optional: Check **Search waitlist also** to include sold-out transports
 
-**Date range**
+5. Click the **Search** button to execute the search
+6. Review search results in the transport list table:
 
-* **From** – Start date for the search period.
-* **To** – End date for the search period.
+* Check **Date** column for departure date
+* Review **ALI 1-4** columns for available allotment
+* Check **Status** column color indicator for availability level
+* Review **Flight Number** if airline transport&#x20;
+* Verify **Stop Sale** column shows no stop sale indicator
 
-The system returns all transports departing between these two dates.
-
-**Gateways**
-
-* **Departure Gateway** – Filters transports that depart from a specific gateway/airport.
-* **Arrival Gateway** – Filters transports that arrive at a selected gateway/airport.
-
-**Transport code**
-
-* Input for narrowing results to a specific transport code (e.g., flight code).
-
-**Period**
-
-* Optional field used for searching transports based on a predefined period/interval.
-
-**Additional options**
-
-* **Search waitlist also** – Includes transports that have no available allotment and are in waitlist mode.
-* **Clear** – Resets all filters.
-
-**Search button**
-
-* Executes the search based on the selected filters.
-
-**Transport list table**
-
-The lower section shows all matching transport departures. Each row represents a transport option and contains the following columns:
-
-| Column               | Description                                                      |
-| -------------------- | ---------------------------------------------------------------- |
-| **Status**           | Visual indicator of availability (color bar).                    |
-| **Date**             | Departure date of the transport.                                 |
-| **Day**              | Corresponding weekday (e.g., Monday).                            |
-| **Departure**        | Departure gateway/airport.                                       |
-| **Arrival**          | Arrival gateway/airport.                                         |
-| **Transport**        | Transport code (e.g., flight code).                              |
-| **Type**             | Transport type (e.g., C, D).                                     |
-| **Stay**             | Number of nights associated with that transport.                 |
-| **ALI 1–ALI 4**      | Allotment capacity per allotment group.                          |
-| **OW OUT / OW HOME** | One-way out and one-way home availability.                       |
-| **ALL. EXT. PROD.**  | Allotment Extra Product (hover to see the number of allotments). |
-| **Flight Number**    | Actual flight number (if applicable).                            |
-| **Stop Sale**        | Shows if stop sale is active for this transport.                 |
-| **Select**           | Button used to choose this transport for the booking.            |
-
-The table supports vertical scrolling when many departures are available.
-
-**Selecting a transport**
-
-1.  Click **Edit** in the **Transport** section.
-
-    <figure><img src="../../../.gitbook/assets/image (514).png" alt=""><figcaption></figcaption></figure>
-2. Select the **Period** (departure/arrival range) to check availability.
-3. Click **Search** to retrieve available transports.
-   * Each result includes **transport allotment** and a hoverable popup showing extra quotas.
-4.  Select the desired **transport**.
+7.  Select the desired transport by clicking the **Select** button in the appropriate row&#x20;
 
     <figure><img src="../../../.gitbook/assets/image (516).png" alt=""><figcaption></figcaption></figure>
-5.  Set the **trip interval** (duration in days).
+8. The Select Transport dialog closes
+9. Transport details populate in the Transport section
+10. Set the **Trip Interval** (stay duration in days) in the field provided&#x20;
 
     <figure><img src="../../../.gitbook/assets/image (517).png" alt=""><figcaption></figcaption></figure>
+11. System calculates return date based on departure + interval
 
 ***
 
-#### Step 5 – Add hotel & room
+**Step 6: Search and Select Hotel**
 
-The **Select Hotel** dialog is your **hotel and room availability** search. Use it to filter hotels by resort, star rating, board type (pension), and room availability. Then select a hotel/room line and **take allotment**.
+1. Locate the Hotel section below Transport
+2. Click the **Select Hotel** button
+3.  The Select Hotel dialog opens&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (511).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (511).png" alt=""><figcaption></figcaption></figure>
+4.  Configure search filters:
 
-**Filter options**
+    a. Optional: Select **Resort** from dropdown to filter by resort area
 
-The top section contains multiple filters:
+    b. Optional: Select specific **Hotel** from dropdown if hotel is known
 
-* **Resort** – Dropdown for selecting a specific resort or viewing _All Resorts_.
-* **Hotel** – Dropdown for selecting a specific hotel or viewing _All Hotels_.
-* **Stars** – Multi-select dropdown for filtering by hotel star rating.
-* **Pension** – Multi-select dropdown for filtering available board types.
+    c. Optional: Select one or more **Stars** ratings from multi-select dropdown
 
-Additional checkboxes allow further control:
+    d. Optional: Select one or more **Pension** (board types) from multi-select dropdown
 
-* **Show only free rooms** – Displays only rooms with availability.
-* **Display all rooms** – Shows all rooms regardless of availability.
-* **Display Names** – Toggles between hotel names and internal codes.
-* **Display PriceList Hotel Names** – Shows the hotel names defined in the price list.
+    e. Optional: Check **Show only free rooms** to display only available inventory
 
-**Hotel list table**
+    f. Optional: Check **Display Names** to show hotel names instead of codes
+5. Review search results in the hotel list table:
 
-The main table lists hotels that match the selected filter criteria. Each row represents a hotel/room combination and displays the following information:
+* Check **Hotel** column for property identification
+* Review **Stars** column for quality rating
+* Check **Room** column for room type and board type
+* Review **Avail.** column to verify sufficient availability
+* Check **MB/XB/XB CH** columns for room capacity
+* Review **P1** column for base price
+* Check **D1/G1** columns for discount/group pricing if applicable
 
-| Column              | Description                                                                       |
-| ------------------- | --------------------------------------------------------------------------------- |
-| **Status**          | Indicates availability status with color-coded icons.                             |
-| **Hotel**           | Code or name of the hotel, depending on filter settings.                          |
-| **Stars**           | Star classification displayed visually.                                           |
-| **Resort**          | Code of the resort.                                                               |
-| **Room**            | Room type or board type description.                                              |
-| **MB / XB / XB CH** | Capacity fields and extra bed rules (Minimum Beds, Extra Beds Adults/Children).   |
-| **Avail.**          | Availability count for the selected period.                                       |
-| **P1**              | Price per interval 1.                                                             |
-| **D1 / G1**         | Discount or group price per interval.                                             |
-| **N, D, G**         | Selection options (checkboxes) for Normal Price, Discount Price, and Group Price. |
-| **Magic Stick**     | Pencil icon allowing reset of free room count.                                    |
+6. Select pricing tier by clicking the appropriate radio button:
 
-A **Select** button in the top-right corner becomes active when a hotel/room line is chosen. The user can confirm the selection and return to the booking flow.
+* **N** for Normal Price
+* **D** for Discount Price
+* **G** for Group Price
 
-<figure><img src="../../../.gitbook/assets/image (512).png" alt=""><figcaption></figcaption></figure>
+7.  Click the **Select** button to choose the hotel/room combination&#x20;
 
-**Workflow – selecting a hotel**
+    <figure><img src="../../../.gitbook/assets/image (512).png" alt=""><figcaption></figcaption></figure>
+8. The Select Hotel dialog closes
+9. Hotel details populate in the Hotel section
 
-1. Open the **Select Hotel** dialog by clicking **Select Hotel** in the booking.
-2. (Optional) Apply filters:
-   * Resort
-   * Hotel
-   * Stars
-   * Pension
-   * Availability and display options
-3. Review the filtered hotel list and scroll if needed.
-4. Click the desired hotel/room line to highlight it.
-5. Click **Select** in the upper-right corner of the dialog.
-6. Continue the booking process and proceed to **Take allotment**.
+**Step 7: Take Allotment**
 
-**Take allotment**
+1. Review selected Transport and Hotel details for accuracy
+2. Locate the **Take Allotment** button
+3.  Click the **Take Allotment** button&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (513).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (513).png" alt=""><figcaption></figcaption></figure>
+4. System performs the following operations:
 
-After the user selects **Take Allotment**, the system updates the **Total Amount** immediately. The calculation includes:
+* Reserves transport seats from available allotment
+* Reserves hotel rooms from available allotment
+* Calculates base pricing from Price List
+* Applies auto-selected extras if configured
+* Calculates total booking price
+* Updates **Total Amount** in Booking Totals panel
 
-* All applicable **discounts** and **supplements**.
-* **Auto-selected extras** and all extras added manually by the user for every passenger.
-* **Passenger age** adjustments.
+5. Verify Total Amount displays in the Booking Totals panel&#x20;
+6. The passenger information grid becomes active for editing
 
 ***
 
-#### Step 6 – Passenger information
+**Step 8: Enter Passenger Information**&#x20;
 
 <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-1. Edit **Passenger details**:
+For each passenger row in the passenger grid:
 
-* Gender, First Name, Last Name, Age.
+1. Select **Gender/Title** from dropdown (e.g., MR, MS, MRS)
+2. Enter **First Name** in text field (lead passenger may auto-populate from Customer Details)
+3. Enter **Last Name** in text field (lead passenger may auto-populate from Customer Details)
+4. Enter **Date of Birth** using date picker in DD-MM-YYYY format
+5. System automatically calculates passenger age and applies appropriate pricing category
+6. Select **Extras** from dropdown columns:
 
-{% hint style="info" %}
-When:
+a. Click dropdown in Extras Category column
 
-* A Date of Birth is entered in Customer Details
-* And the booking is saved
+b. Select desired extra from list (e.g., Insurance, Baggage, Transfer)
 
-Then:
+c. Repeat for each Extras Category as needed
 
-* The DOB is automatically inserted into the lead passenger row in the Pax grid.
-{% endhint %}
+d. Optional: Use yellow "C" icon to copy extras to all eligible passengers
 
-* Add **Extras**:
-  * Per passenger, or use the yellow **C** icon to apply extras to all eligible passengers.
-    * If the "Order extras in the booking window" option is activated in the system setup, the extras will be sorted according to the Category Order value.
+7. Optional: Add Discounts/Supplements:&#x20;
+
+a. Click **Show/Hide Discount/Supplements** button
+
+b. Click **Add Discount/Supplement** button&#x20;
+
+c. Select applicable discounts or supplements from dialog&#x20;
+
+d. Click OK to apply selections
+
+8. Verify Total Amount updates as extras and discounts are added
+9. Click **Save Passenger** button for the passenger row
+10. Repeat steps 1-9 for each additional passenger
+
+If the "Order extras in the booking window" option is activated in the system setup, the extras will be sorted according to the Category Order value.
 
 <figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -1143,13 +1093,6 @@ Categories are sorted as follows:
 
 <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-1. Add **Discounts/Supplements**:
-   * Click **Show/Hide Discount/Supplements**.
-   * Click **Add Discount/Supplement**.
-   * Select available options for one or all passengers.
-   * Multiple discounts or supplements can be added simultaneously.
-2. Click **Save Passenger** to save changes.
-
 {% hint style="success" %}
 The **Total Amount** updates instantly whenever the user modifies any passenger-related information:
 
@@ -1162,30 +1105,37 @@ All changes are reflected immediately in the price.
 
 ***
 
-#### Step 7 – Booking totals
-
-The **Booking panel** provides a quick summary of financial details, booking metadata, and status indicators for a reservation. It is used by staff to monitor pricing, profitability, and the confirmation state of related services (hotel, transfer, etc.).
-
-The **Total Amount** always reflects the user’s latest selections. The price includes all eligible **discounts**, **supplements**, **auto-selected extras**, and any **age-based price adjustments**.
-
-The system continuously recalculates the Total Amount as the user interacts with the booking. The displayed price always reflects the current state of the booking and does not wait for **Save Passenger** or **Save** to trigger updates.
+**Step 9: Review Booking Totals**
 
 <figure><img src="../../../.gitbook/assets/image (507).png" alt=""><figcaption></figcaption></figure>
 
-**Field explanations**
+1. Locate the Booking Totals panel on the right side
+2. Click the green Total Amount section to expand details
+3. Review the following financial information:
 
-**Financial summary (green area)**
+* **Total Amount**: Final customer price after all discounts
+* **Price**: Base price before discounts
+* **Discount**: Total discount value applied
+* **Total Profit**: Margin earned (displayed after booking is saved)
 
-* **Total amount** – The final selling price of the booking (after discounts).
-* **Price** – Price without discounts, including extras, supplements, etc.
-* **Discount** – The sum of discounts on the hotel, price list adjustments, and the discounts added to each passenger.
-* **Total Profit** – The margin earned after subtracting supplier costs from the selling price.
+4. Verify pricing is correct and meets expectations
+5. Review booking metadata:
+
+* **Status**: Verify shows appropriate state
+* **User**: Confirms logged-in user as booking creator
+
+6. Optional: Check flags as needed:
+
+* **Is Group Booking**: Check if this is a group reservation
+* **Remember Extras**: Check to save extra preferences
+* **Hotel Confirmed**: Check when hotel confirmation received
+* **Transfer Confirmed**: Check when transport confirmation received
 
 {% hint style="success" %}
 The **Total Profit** is displayed when expanding the green area that shows the Total Amount, and it will be shown after the full booking is saved.
 {% endhint %}
 
-**Booking details**
+7. **Booking details**
 
 * **Booking Number** – The unique identifier for the booking. Example: `3633 + 1` (the `+1` indicates a sub-booking).
 * **Status** – The current state of the booking (e.g., _OK_, _Pending_, _Cancelled_).
@@ -1193,21 +1143,43 @@ The **Total Profit** is displayed when expanding the green area that shows the T
 * **Added** – The date when the booking was created.
 * **Updated** – The date when the booking was last modified.
 
-**Flags (checkbox options)**
-
-* **Is Group Booking** – Indicates if the booking is part of a group reservation.
-* **Remember Extras** – Ensures that selected extras are saved for future modifications.
-* **Hotel Confirmed** – Marks whether the accommodation portion of the booking has been confirmed.
-* **Transfer Confirmed** – Marks whether the transport/transfer services have been confirmed.
-
 ***
 
-#### Step 8 – Finalize booking
+**Step 10: Finalize and Save Booking**
 
-1. Review all booking details (transport, hotel, passengers, extras, economics).
-2. Click **Save** to complete the booking.
-3. Send the ticket:
-   * If you have configured a ‘Thank you for booking’ email the system will automatically send. In the Email Center, you have the option to delay sending an email.
+1. Review all booking details one final time:
+
+* Brand selection correct
+* Customer details complete and accurate
+* Transport departure and stay duration correct
+* Hotel and room type correct
+* All passenger names and dates of birth accurate
+* Extras, discounts, supplements correctly applied
+* Total Amount acceptable
+
+2. Locate the **Save** button at the bottom of the screen
+3. Click the **Save** button
+4. System performs validation:
+
+* Checks all mandatory fields are completed
+* Validates passenger data meets requirements
+* Confirms allotment is still available&#x20;
+
+5. If validation succeeds:
+
+* Booking is saved to database
+* Booking Number is generated and displayed
+* Allotment is consumed from inventory
+* Booking status is set to OK
+* Email notification is sent (if configured and "Don't send ticket" is not selected)
+* New Booking screen closes
+* User is returned to main booking list or dashboard
+
+6. If validation fails:
+
+* Error messages display indicating issues
+* Correct identified issues
+* Click Save again
 
 {% hint style="warning" %}
 Note: If “Don’t send ticket” is selected on a new booking before saving the booking for the first time, the customer will not receive the “Thank you for booking” email.
@@ -1215,114 +1187,148 @@ Note: If “Don’t send ticket” is selected on a new booking before saving th
 
 ***
 
-#### Step 9 – Cancel passenger or booking
+### Cancelling a Passenger
 
-The **Cancel passenger or booking** button allows users to cancel an entire booking or remove individual passengers from a booking, depending on the situation. It is located at the bottom-right corner of the **Booking → Overview → Passengers** section.
+This procedure describes how to remove a passenger from an existing booking without cancelling the entire booking.
+
+**Step 1: Access Existing Booking**
+
+1. Navigate to **Booking → All Bookings** or use booking search
+2. Locate the booking requiring passenger cancellation
+3. Click the booking to open booking details
+4. Navigate to the **Overview** tab if not already displayed
+
+**Step 2: Select Passenger for Cancellation**
+
+1. Locate the Passengers section in the booking overview
+2. Review the passenger grid showing all travelers
+3. Click the checkbox next to the passenger(s) to be cancelled
+4. Verify the correct passenger is selected (check name and details)
+5. Do not select all passengers unless full booking cancellation is intended
+
+**Step 3: Initiate Cancellation**
 
 <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-**Overview**
+1. Locate the **Cancel passenger or booking** button in the bottom-right corner of the Passengers section
+2.  Click the **Cancel passenger or booking** button&#x20;
 
-This feature gives booking administrators full control over cancellations. Depending on the configuration of the booking and the selected passenger, the system will:
+    <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+3. Cancellation dialog appears with options
 
-* Cancel **one or more passengers**, or
-* Cancel the **entire booking**, if all passengers are selected or if cancellation rules require a full cancellation.
+**Step 4: Choose Cancellation Type**
 
-The function ensures that all transport, hotel, extras, and supplements connected to the passenger(s) are removed or recalculated correctly.
+1. In the cancellation dialog, review available options:
 
-**Purpose**
-
-Use this button when:
-
-* A traveler drops out of the trip.
-* A booking needs to be partially canceled.
-* A booking must be fully canceled, including all passengers and services.
-
-**How it works**
-
-**1. Select passenger(s)**
-
-* If one passenger is selected → the system cancels only that passenger.
-* If all passengers are selected or the booking contains only one passenger → the system offers a **full booking cancellation**.
-
-**2. Click the button**
-
-Click **Cancel passenger or booking** in the bottom-right corner.
-
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-**3. Choose the cancellation type**
-
-A dialog will appear asking you to choose between:
-
-* **Cancel Passenger**
-* **Cancel Entire Booking**
+* **Cancel Passenger**: Removes only selected passenger(s)
+* **Cancel Entire Booking**: Removes all passengers and services
 
 <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-The available options depend on the structure of the booking.
+2. Select **Cancel Passenger** option
+3.  System displays cancellation confirmation dialog&#x20;
 
-**4. Confirm cancellation**
+    <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-After confirming, Tourpaq:
-
-* Removes all services connected to the cancelled passenger(s).
-* Recalculates pricing.
-
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-* Updates allotment, transport seats, extras, and commissions.
-  * The allotment is **not** updated automatically. If the number of passengers in the booking is not manually reduced, Tourpaq will automatically insert a **TBA passenger** to occupy the seat or room left vacant by the cancelled guest. This ensures the booking maintains its original capacity, and the cancelled space is not released back into the available allotment.
-  * This step requires manual intervention by the sales user in **Edit Passenger** and then **Take Allotment** to update it.
-* Marks the booking or passenger as _Cancelled_.
-
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-**Expected behavior**
-
-**Cancel passenger**
-
-The system will:
-
-* Remove all services (transport, hotel, extras, insurance, supplements) tied to the passenger.
-* Update price calculations.
-* Preserve remaining passengers and services.
-* Require manual allotment update:
-  * In the **Passenger** box, change the number of passengers in the booking.
-  * Click **Take Allotment**.
-  * Save the booking.
-* Keep the booking active if at least one passenger remains.
-
-**Cancel entire booking**
-
-The system will:
-
-* Remove all passengers and services.
-* Release all allotments.
-* Update all connected modules (Transport, Hotel, GDS, Extras, etc.).
-* Mark the booking as _Cancelled_.
-* Trigger relevant notifications if configured.
-
-**Warnings & notes**
-
-* **Cancellation rules apply** – If cancellation rules or charges are configured for the brand, they will be applied automatically.
-* **Manual actions may be needed** – If external systems (e.g., GDS, API) are used, check if manual cancellation is required outside Tourpaq.
-* **Bonus codes/discounts** – Removing a passenger may change eligibility for discounts, supplements, or bonuses. Recalculation happens automatically.
-
-**Cancellation rules**
-
-When a booking is cancelled, a **cancellation fee** is set for each passenger. Cancellation rules are applied for calculating this fee. The fee is calculated taking into account the remaining days left to departure.
+**Step 5: Configure Cancellation Details**
 
 <figure><img src="../../../.gitbook/assets/image (556).png" alt=""><figcaption></figcaption></figure>
 
-* If cancellation insurance is paid, when cancelling the passengers you can choose whether the insurance **covers** the booking or **does not cover** the booking.
-* If cancellation insurance is paid and **Cover** is selected, the amount of the cancellation fee will be the cancellation insurance.
-* If cancellation insurance is paid and **Does not cover** is selected, the cancellation fee will contain the price of the cancellation insurance and the amount set in cancellation rules.
-* Infants do not get a cancellation fee.
+1. Review cancellation information displayed:
 
-You can also adjust the cancellation amount applied to the booking. This can be done by selecting **Edit Passenger** and then updating the value under **Total per passenger**. This allows you to manually modify the cancellation fee when needed.
+* Passenger name and details
+* Current booking value
+* Applicable cancellation fee
 
-<figure><img src="../../../.gitbook/assets/image (557).png" alt=""><figcaption></figcaption></figure>
+2. If cancellation insurance is paid:&#x20;
+
+a. System prompts: "Does cancellation insurance cover this cancellation?"&#x20;
+
+b. Select **Cover** if insurance will cover the cancellation fee&#x20;
+
+c. Select **Does not cover** if insurance does not apply
+
+3. System calculates cancellation fee based on:
+
+* Days remaining until departure
+* Cancellation rules configured for the Brand
+* Insurance coverage selection
+
+4. Review calculated cancellation fee amount&#x20;
+
+**Step 6: Confirm Cancellation**
+
+1. Verify cancellation details are correct
+2. Click **Confirm** button in the cancellation dialog
+3. System processes passenger cancellation:
+
+* Removes all services tied to the cancelled passenger (transport, hotel, extras, insurance)
+* Applies cancellation fee to the passenger
+* Updates booking pricing calculations
+* Marks passenger row as "Cancelled"
+* Updates booking history log
+
+4. Cancellation dialog closes
+5.  Passenger grid updates showing cancelled passenger with strikethrough or cancelled indicator&#x20;
+
+    <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+Allotment is NOT automatically released
+{% endhint %}
+
+**Step 7: Adjust Allotment (Manual Step Required)**
+
+1. Navigate to **Edit Passenger** section in the booking
+2. Update the passenger count fields:
+
+* Reduce **Adults** count if adult was cancelled
+* Reduce **Children** count if child was cancelled
+* Reduce **Infants** count if infant was cancelled
+
+3. Click **Take Allotment** button
+4. System recalculates allotment based on new passenger count
+5. Previous allotment space is released back to inventory
+6. Without this step, a TBA passenger automatically occupies the cancelled passenger's space
+
+**Step 8: Finalize Cancellation**
+
+1. Review updated booking totals:
+
+* Total Amount adjusted for cancellation fee
+* Remaining passengers still included
+
+2. Optional: Add internal comment documenting cancellation reason
+3. Click **Save** button to save booking changes
+4. System updates:
+
+* Booking history with cancellation event
+* Financial records with cancellation fee
+* Customer record with cancellation note
+
+5. Optional: Initiate refund process if applicable (navigate to Economics tab)
+
+**Step 9: Adjust Cancellation Fee (Optional)**
+
+1. If manual adjustment of cancellation fee is required:&#x20;
+
+a. Click **Edit Passenger** button for the cancelled passenger row&#x20;
+
+b. Locate the **Total per passenger** field&#x20;
+
+c. Enter the corrected cancellation fee amount&#x20;
+
+d. Click **Save Passenger**
+
+2. Total Amount updates with adjusted cancellation fee
+
+**Step 10: Document and Communicate**
+
+1. Navigate to **Comments** tab
+2. Add comment documenting the cancellation and reason
+3. Optional: Navigate to **E-mails** tab
+4. Send cancellation notification to customer if configured
+5. Verify customer communication is complete
 
 ***
 
@@ -1514,6 +1520,150 @@ You can modify the products that are inside the package in **Edit Product Page �
 
 ***
 
+### Example
+
+This section provides practical scenarios demonstrating the New Booking workflow with realistic data.
+
+#### Standard Family Package Booking
+
+**Scenario:** A family of four (2 adults, 2 children) wants to book a week-long package holiday to Mallorca departing on July 15, 2025. They require travel insurance and airport transfers.
+
+**Data:**
+
+* **Brand:** Tourpaq DK
+* **Customer:** Maria Gonzalez, mobile +45612345678, email maria.gonzalez@email.com
+* **Passengers:**
+  * Adult 1: Maria Gonzalez, DOB 05-08-1985 (Lead)
+  * Adult 2: Carlos Gonzalez, DOB 12-03-1983
+  * Child 1: Sofia Gonzalez, DOB 20-06-2015 (age 10)
+  * Child 2: Diego Gonzalez, DOB 14-09-2018 (age 6)
+* **Transport:** Flight SH4521, July 15, 2025, Departing Billund (BLL) to Palma de Mallorca (PMI)
+* **Hotel:** Hotel Mar Azul, 4-star, Room Type: Family Room, Board: Half Board
+* **Trip Duration:** 7 nights
+* **Extras:** Travel Insurance for all passengers, Airport Transfer for all passengers
+
+**Step-by-Step Process:**
+
+1. **Brand Selection:**
+
+* Selected Brand: Tourpaq DK
+* All products and pricing now filtered for SunHolidays brand
+
+2. **Customer Details:**
+
+* Entered mobile: +45612345678
+* System found existing customer record
+* Auto-populated: Maria Gonzalez, maria.gonzalez@email.com
+* DOB verified: 05-08-1985
+
+3. **Passenger Configuration:**
+
+* Set Adults: 2
+* Set Children: 2
+* Set Infants: 0
+* Total: 4 passengers
+
+4. **Transport Selection:**
+
+* Clicked Edit Transport
+* Set search dates: From 15-07-2025, To 15-07-2025
+* Departure Gateway: BLL (Billund)
+* Arrival Gateway: PMI (Palma de Mallorca)
+* Clicked Search
+* Results showed: SH4521, July 15, 2025, Departure BLL 06:00, Arrival PMI 09:30
+* ALI 1 showed: 45 seats available
+* Clicked Select for SH4521
+* Set Trip Interval: 7 nights
+* System calculated return: July 22, 2025
+
+5. **Hotel Selection:**
+
+* Clicked Select Hotel
+* Filter: Resort = Playa de Palma, Stars = 4-star, Pension = Half Board
+* Results showed: Hotel Mar Azul, Family Room - Half Board
+* Avail: 12 rooms
+* P1 (7 nights): €1,850 per person (adult)
+* Selected pricing: N (Normal Price)
+* Clicked Select
+
+6. **Take Allotment:**
+
+* Clicked Take Allotment button
+* System reserved: 4 seats on SH4521, 1 Family Room at Hotel Mar Azul
+* Total Amount calculated: €6,320
+* Breakdown:
+  * 2 Adults @ €1,850 = €3,700
+  * 2 Children @ €925 (50% of adult) = €1,850
+  * Transport included in package
+  * Hotel included in package
+  * Subtotal: €5,550
+* Passenger grid activated for editing
+
+7. **Passenger Information Entry:**
+
+* **Passenger 1 (Lead):**
+  * Title: MS (auto-selected)
+  * First Name: Maria (auto-populated)
+  * Last Name: Gonzalez (auto-populated)
+  * DOB: 05-08-1985 (auto-populated from Customer Details)
+  * Extras: Selected "Travel Insurance Standard" from Insurance column
+  * Extras: Selected "Airport Transfer Return" from Transfer column
+* **Passenger 2:**
+  * Title: MR
+  * First Name: Carlos
+  * Last Name: Gonzalez
+  * DOB: 12-03-1983
+  * Extras: Used yellow "C" icon to copy Insurance and Transfer to all passengers
+* **Passenger 3:**
+  * Title: CHD - F
+  * First Name: Sofia
+  * Last Name: Gonzalez
+  * DOB: 20-06-2015
+  * System automatically calculated age: 10 years (Child category)
+  * Extras: Insurance and Transfer auto-applied from copy operation
+* **Passenger 4:**
+  * Title: CHD - M
+  * First Name: Diego
+  * Last Name: Gonzalez
+  * DOB: 14-09-2018
+  * System automatically calculated age: 6 years (Child category)
+  * Extras: Insurance and Transfer auto-applied from copy operation
+
+8. Clicked Save Passenger
+9. **Review Booking Totals:**
+
+* Expanded Total Amount section
+* Total Amount: €6,680 (increased from €6,320 after extras added)
+* Price: €6,920
+* Discount: €240 (early booking discount from Price List)
+* Extras breakdown:
+  * Travel Insurance: €45 per person × 4 = €180
+  * Transfer: €25 per person × 4 = €100
+* Calculation verification:
+  * Package base: €5,550
+  * Extras: €280
+  * Gross total: €5,830
+  * Early booking discount: €240 (applied automatically by Price List)
+  * Final Total Amount: €6,680
+
+10. **Finalize Booking:**
+
+* Reviewed all details for accuracy
+* Clicked Save button
+* System validated all required fields
+* Validation passed
+* Booking saved successfully
+* Booking Number generated: 45892
+* Status set to: OK
+* Automatic "Thank you for booking" email sent to maria.gonzalez@email.com
+* Email included:
+  * Booking confirmation number 45892
+  * Flight details SH4521 departing July 15
+  * Hotel Mar Azul, Family Room, Half Board, 7 nights
+  * Total Amount: €6,680
+  * Payment instructions
+* Booking appears in All Bookings list
+
 ### FAQ
 
 #### 1. Why can’t I find any transports or hotels for my dates?
@@ -1564,13 +1714,101 @@ If everything matches but the price still differs, contact your internal pricing
 
 ### **Related pages**
 
-Use these pages when you need to go beyond the initial booking draft:
+The New Booking functionality integrates with and relates to numerous other modules in Tourpaq Office. The following pages provide additional information for specific booking scenarios and post-booking operations:
 
-* [New Booking (overview)](../) — Section entry point and related booking flows.
-* [New Booking search support](new-booking-search-support.md) — Extra help for transport/hotel search and selection.
-* [Edit Passenger](edit-passenger/) — Add/remove passengers and update pax data after saving.
-* [Economics](../economics.md) — Deposits, instalments, payment status, refunds, and payment methods.
-* [Print Tickets](../../../tickets/print-tickets.md) — Print/email ticket PDFs and bulk reprint.
-* [Don’t send ticket option](../dont-sent-ticket-option.md) — Avoid sending automatic update emails while editing.
-* [Waiting list (WL)](../waitting-list.md) — Handle sold-out departures/rooms with WL/WLOK statuses.
-* [Cancellation Rules](../../../cancellation-rules.md) — How cancellation fees are calculated and applied.
+**Core Booking Pages:**
+
+* [**New Booking (Overview)**](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/new-booking) - Section entry point with links to all booking-related subtopics and features
+* [**New Booking Search Support**](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/new-booking/new-booking/new-booking-search-support) - Detailed guidance on transport and hotel search functionality, advanced filters, and search optimization techniques
+* [**All Bookings**](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/all-bookings) - Comprehensive booking search, filtering, and management interface for viewing existing bookings
+* [**Booking Overview**](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/booking-overview) - High-level introduction to the booking module structure and functionality
+
+**Passenger Management:**
+
+* [**Edit Passenger**](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/new-booking/new-booking/edit-passenger) - Procedures for adding, removing, or modifying passenger details after booking creation
+* [**Passenger Details**](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/new-booking/passenger-details) - Complete reference for passenger data requirements, validation rules, and travel document specifications
+
+**Financial Operations:**
+
+* [**Economics**](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/new-booking/economics) - Payment processing, deposits, installment schedules, refunds, payment methods, and financial status tracking
+* [**Profit**](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/new-booking/profit) - Profit margin calculations, cost breakdowns, and financial analysis for bookings
+* [**Payment Registration**](https://tourpaq.gitbook.io/staging-tourpaq-docs/finance/payment-registration) - Manual payment entry and payment record management
+* [**Method of Payment**](https://tourpaq.gitbook.io/staging-tourpaq-docs/finance/method-of-payment) - Configuration and usage of payment methods (credit card, bank transfer, etc.)
+
+**Communication and Documentation:**
+
+* [**E-mails**](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/new-booking/e-mails) - Booking-related email history, resending confirmations, and email communication management
+* [**Print Tickets**](https://tourpaq.gitbook.io/staging-tourpaq-docs/tickets/print-tickets) - Generate, print, and email booking confirmations and travel tickets
+* [**E-tickets Overview**](https://tourpaq.gitbook.io/staging-tourpaq-docs/e-tickets-overview) - Electronic ticketing functionality and ticket delivery methods
+* [**SMS**](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/new-booking/sms) - SMS communication with customers including booking confirmations and updates
+* [**Comments**](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/new-booking/comments) - Internal booking notes and comment management for staff communication
+
+**Booking Options and Features:**
+
+* [**Don't Send Ticket Option**](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/new-booking/dont-sent-ticket-option) - Suppress automatic email notifications during booking modifications
+* [**Waiting List (WL)**](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/new-booking/waitting-list) - Managing sold-out bookings with WL and WLOK statuses, waitlist confirmation procedures
+* [**Copy Booking**](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/new-booking/copy-booking) - Duplicate existing bookings for repeat customers or similar travel arrangements
+* [**Moved Booking**](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/new-booking/moved-booking) - Transfer bookings to different dates, transports, or hotels
+* [**Coded Discount Booking**](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/new-booking/coded-discount-booking) - Apply promotional codes and campaign discounts to bookings
+
+**Specialized Booking Types:**
+
+* [**Hotel Only Bookings**](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/new-booking/hotel-only-bookings) - Creating accommodation-only reservations without transport
+* [**Transport Only Booking**](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/new-booking/transport-only-booking) - Flight-only or bus-only bookings without accommodation
+* [**Circuit Bookings**](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/new-booking/circuit-bookings) - Multi-destination itineraries with multiple hotel stops
+* [**Booking for 2 One Ways**](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/new-booking/booking-for-2-one-ways) - Bookings with different outbound and return routes
+* [**Multiple One Way Flights Bookings**](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/new-booking/multiple-one-way-flights-bookings) - Complex flight combinations with multiple one-way segments
+* [**Multiple Transports One Room Bookings**](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/new-booking/multiple-transports-one-room-bookings) - Multiple flight segments with single accommodation
+
+**Extras and Services:**
+
+* [**A la Carte**](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/new-booking/a-la-carte) - Individual service selection and customization options
+* [**Extra Orders**](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/new-booking/extra-orders) - Additional services and product ordering post-booking
+* [**Individual Payments**](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/new-booking/individual-payments) - Split payment options for group bookings with individual passenger payments
+* [**Keep Automatic Discount Prices**](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/new-booking/keep-automatic-discounts-prices) - Maintaining promotional pricing through booking modifications
+
+**Special Configurations:**
+
+* [**Child Price**](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/new-booking/child-price) - Child pricing rules, age thresholds, and calculation methods
+* [**Remove Pax on Outbound or Homebound Only**](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/new-booking/remove-pax-on-outbound-or-homebound-only) - Partial transport bookings for passengers with different travel requirements
+* [**Hotel Room**](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/new-booking/hotel-room) - Room allocation, bed configuration, and room assignment details
+* [**Transport Seating**](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/new-booking/transport-seating) - Seat assignment and seating preferences for flights and buses
+
+**Golf-Specific Features (if applicable):**
+
+* [**Tee Times**](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/new-booking/tee-times) - Golf course tee time reservations linked to bookings
+* [**Golf Courses**](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/new-booking/golf-courses) - Golf course selection and golf package management
+
+**Airline and Special Requests:**
+
+* [**SSR - Special Service Requests for Airlines**](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/new-booking/ssr) - Airline special requests (meal preferences, wheelchair assistance, etc.)
+* [**QR Code for Vouchers**](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/new-booking/qr-code-for-vouchers) - QR code generation for digital voucher verification
+
+**History and Tracking:**
+
+* [**History**](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/new-booking/history) - Complete booking modification history and audit trail
+* [**Conversation**](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/new-booking/conversation) - Customer conversation history and communication log
+
+**Customer Information:**
+
+* [**Customer Info / Details on Customer Card**](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/new-booking/customer-info-details-on-customer-card) - Detailed customer profile information and preferences
+* [**Customers**](https://tourpaq.gitbook.io/staging-tourpaq-docs/customer/customers) - Customer database management and customer record maintenance
+
+**Pricing and Discounts:**
+
+* [**Price List**](https://tourpaq.gitbook.io/staging-tourpaq-docs/price-list/pricelist) - Price list configuration, seasonal pricing, and rate management
+* [**Cancellation Rules**](https://tourpaq.gitbook.io/staging-tourpaq-docs/cancellation-rules) - Cancellation fee calculation rules and time-based fee structures
+* [**Discounts/Supplements**](https://tourpaq.gitbook.io/staging-tourpaq-docs/discounts-supplements) - Configuration of discount and supplement products
+* [**Campaigns**](https://tourpaq.gitbook.io/staging-tourpaq-docs/campaigns) - Promotional campaign setup and campaign-based pricing
+
+**Product Configuration:**
+
+* [**Extras**](https://tourpaq.gitbook.io/staging-tourpaq-docs/extras-setup/extras) - Extras product configuration including insurance, transfers, and ancillary services
+* [**Cancellation Insurance**](https://tourpaq.gitbook.io/staging-tourpaq-docs/cancellation-insurance) - Cancellation insurance products and coverage rules
+* [**Travel Insurance**](https://tourpaq.gitbook.io/staging-tourpaq-docs/travel-insurance) - Travel insurance products and policy details
+* [**Board Type**](https://tourpaq.gitbook.io/staging-tourpaq-docs/board-type) - Board basis configuration (Bed & Breakfast, Half Board, Full Board, All Inclusive)
+
+**System Configuration:**
+
+* [**Brands**](https://tourpaq.gitbook.io/staging-tourpaq-docs/brands) - Brand configuration including settings, permissions, and business rules
+* [**System Setup**](https://tourpaq.gitbook.io/staging-tourpaq-docs/setup/system-setup) - Core system configuration affecting booking behavior and workflows
