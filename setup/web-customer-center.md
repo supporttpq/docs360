@@ -31,7 +31,7 @@ Below is a description of each section visible in the Web Customer Center.
 **Purpose**\
 Used to describe what is included in a party package or special themed package.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **What to include**
 
@@ -48,7 +48,7 @@ Displayed in the booking flow when a party package is selected. Helps customers 
 **Purpose**\
 Explains how transfers work for the selected destination or product.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **What to include**
 
@@ -68,7 +68,7 @@ Always verify operational accuracy with the transport setup.
 **Purpose**\
 Describes the standard travel insurance offered in the booking flow.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **What to include**
 
@@ -153,3 +153,50 @@ Used when:
 
 * Premium upgrade strategy is desired
 * Upsell optimization is a priority
+
+## Add an Image to a Section in Web Customer Center
+
+**Overview**\
+In the Web Customer Center, each section (for example Party Package, Transfer, Insurance, Tours, etc.) can contain an image. This image is displayed to customers and helps visually represent the service or product offered in that section.
+
+**Purpose**\
+Adding an image improves the presentation of the section and helps customers quickly understand the type of service associated with it.
+
+***
+
+#### Steps to Add an Image
+
+1. Open **Web Customer Center**.
+2. Locate the section where you want to add an image (for example, _Party Package_, _Transfer_, _Insurance_).
+3.  Click the **Edit icon (pencil)** on the right side of the section.&#x20;
+
+    <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+4.  In the edit window:&#x20;
+
+    * Locate the **Image Upload** field.
+    * Click **Upload** or **Choose File**.
+    * Select the image from your computer.
+
+    <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+5. Save the changes.
+
+After saving, the image will be associated with that section and will be displayed in the Web Customer Center interface.
+
+***
+
+#### Supported Image Formats
+
+The system only accepts the following file formats:
+
+* **.jpg**
+* **.gif**
+* **.png**
+* **.bmp**
+
+If a file with a different format is uploaded, the system will display the following warning message:
+
+> **This file format is not supported. Please upload an image file with one of the following extensions: jpg, gif, png, bmp.**
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+In this case, the file will not be uploaded and the user must select a supported image format before saving.
