@@ -38,16 +38,16 @@ Transport Rule names can be edited at any time. Renaming a Transport Rule will a
 
 To maintain data consistency, the system does not allow two Transport Rules to share the same name.
 
-<figure><img src="../.gitbook/assets/image (609).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 **Example:**\
-If a Transport Rule was initially created as `CPHCHQ7A`, but the correct naming should be `CPHCHQ7A-TR`, updating the rule name will also rename all associated generated transports accordingly.
+If a Transport Rule was initially created as `CPH_CHQ`, but the correct naming should be `CPH_CHQ_T1`, updating the rule name will also rename all associated generated transports accordingly.
 
 #### Auto-Selecting Stay Days When Adding New Entries
 
 When a user clicks the **“+”** button to add new stay days, the system automatically preselects the first available stay day from the drop-down list.
 
-<figure><img src="../.gitbook/assets/image (608).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 This behavior allows users to repeatedly press **“+”** and quickly add all remaining stay days in sequence, creating a faster and more efficient workflow.
 
@@ -55,15 +55,15 @@ This behavior allows users to repeatedly press **“+”** and quickly add all r
 
 In the Stay Days table, an additional column is introduced to display the name of the generated transport associated with each stay day.
 
-<figure><img src="../.gitbook/assets/image (610).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 The transport name is a clickable link. Selecting this link opens the corresponding generated transport in a new browser tab, allowing users to review or manage it without losing their place in the current view.
 
-<figure><img src="../.gitbook/assets/image (538).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 After the new Stay Days have been added, click the "Generate" button at the bottom right of the screen to generate eligible transports for them.
 
-<figure><img src="../.gitbook/assets/image (539).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 #### Editing Dates Before Transport Generation
 
@@ -89,9 +89,10 @@ Transport Rules can be configured far in advance to support long-term planning, 
 *   Transport Rules may be defined with dates far in the future.
 
     <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-*   The system generates quotas only for the **next 500 days**.
+* The system generates quotas only for the **next 500 days**.
 
-    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+
 * A background service runs **once per week** and automatically extends the generated quotas, ensuring that quotas always exist up to **500 days ahead** of the current date.
 * This automatic extension applies **only to Dynamic and CAR Transport Rules**.
 * The 500-day limit is aligned with the existing limit used by the **price list generator**.
@@ -122,6 +123,8 @@ A single Transport Rule can contain several **date periods (seasons)**. For each
 
 <figure><img src="../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
+For every season, the following shall be specified:
+
 * **Start date**
 * **End date**
 * **Infant price**
@@ -129,11 +132,13 @@ A single Transport Rule can contain several **date periods (seasons)**. For each
 * **Homebound settings**
 * **Stay days**
 
-Date periods must not overlap.
+{% hint style="warning" %}
+Date periods must not overlap. If date periods are overlapping, you will not be able to save it, and the date box that makes the overlap will be marked red.&#x20;
+{% endhint %}
+
+<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 #### Page Structure
-
-When opening a Transport Rule, the **General** tab is always shown by default.
 
 The page is divided into two main sections:
 
@@ -150,9 +155,11 @@ It includes:
 
 The **Settings** section contains:
 
-* Status (Visible/Hidden)
-* Hide as filter on list - select the checkbox to hide the transport from the lists in the system
-* Cancelation Condition
+* **Status** – Defines the rule’s visibility in the system (e.g., Visible / Hidden).
+* **Hide as filter on lists** – If checked, this rule will not appear as a filter option in lists.
+* **Cancelation condition\*** - Select the cancellation condition that applies to this transport rule (mandatory).
+* **Payment Rule** – Select a payment rule applicable to this transport.
+* **Use change rule service** – If checked, activates the change rule service for this transp
 
 **Bottom Section: Season-Specific Configuration**
 

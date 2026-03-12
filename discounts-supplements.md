@@ -85,7 +85,7 @@ A manual discount/supplement will be manually chosen for a passenger; it can be 
 
 #### **Overview**
 
-<figure><img src=".gitbook/assets/image (13) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (13) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Discount or Suppl: choose between either discount or supplement behaviour
 * General/Specified: choose between the general or specificate behaviour

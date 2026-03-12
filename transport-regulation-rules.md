@@ -129,7 +129,7 @@ First, the service will just apply the rule set on schedule. Then the same servi
 
 **Very important:** the service will consider only transports with "Use Change Rule Service" set.
 
-<figure><img src=".gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * If the rule is not set, it will be set up.
 * If a rule is already set, it will be changed (if the case) with the first rule (from all the existing ones) that meets the conditions.

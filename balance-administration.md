@@ -122,7 +122,7 @@ GDS payments help you reconcile costs for **Global Distribution System (GDS)** b
 
 Review ticket cost prices, airlines, and passenger details.
 
-<figure><img src=".gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="GDS payments list"><figcaption><p>GDS payments: review ticket cost prices, PNR, airlines, and passenger details for reconciliation.</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="GDS payments list"><figcaption><p>GDS payments: review ticket cost prices, PNR, airlines, and passenger details for reconciliation.</p></figcaption></figure>
 
 1. **Filter the Data:**
    * Use **Departure Period** and **Booking Period** filters to narrow down transactions.

@@ -22,7 +22,7 @@ For compensation you need to:
 
 \~ mandatory “account” and “branch” fields need to be completed; the information from these two fields is automatically transferred in the Economic tab of the booking, in the corresponding fields, and "Release payment" is activated.
 
-<figure><img src="../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 \~ If the compensation amount is modified, SCD discount will be also updated on the booking.
 

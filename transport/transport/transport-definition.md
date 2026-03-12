@@ -10,7 +10,7 @@ Use **Legs** to define how the itinerary is built.
 
 * A **leg** is one segment in the itinerary. It connects a departure city to an arrival city.
 
-<figure><img src="../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In the "Choose provider" menu, there is the possibility of making 3 different configurations depending on the type of provider chosen, as follows:
 

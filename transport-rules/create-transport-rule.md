@@ -15,7 +15,7 @@ Transport rules are used to:
 
 ### Field Explanation
 
-<figure><img src="../.gitbook/assets/image (611).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 #### General
 
@@ -30,6 +30,8 @@ This ensures flexibility during setup while still preserving data integrity once
 * **Arrival**\* – Arrival location (mandatory).
 * **Stay Days\*** – Define stay duration (mandatory). The values displayed in this field are defined in Setup -> [Transport Stay Days](../setup/transport-stay-days.md).
 * **Cancelation condition\*** - Select the cancellation condition that applies to this transport rule (mandatory).
+* **Payment Rule** – Select a payment rule applicable to this transport.
+* **Use change rule service** – If checked, activates the change rule service for this transport.
 
 When a user clicks the **“+”** button to add new stay days, the system automatically preselects the first available stay day from the drop-down list.
 
@@ -39,7 +41,7 @@ This behavior allows users to repeatedly press **“+”** and quickly add all r
 
 #### Transportation
 
-<figure><img src="../.gitbook/assets/image (622).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Pick-up point required** – If checked, the booking must include a pick-up point.
 * **Travel Length Correction +/-** – Adjust the travel duration by a specified number of days.
@@ -52,11 +54,9 @@ This behavior allows users to repeatedly press **“+”** and quickly add all r
 
 #### Price Information
 
-<figure><img src="../.gitbook/assets/image (613).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 * **Infant price** – Set the price for infants.
-* **Payment Rule** – Select a payment rule applicable to this transport.
-* **Use change rule service** – If checked, activates the change rule service for this transport.
 
 #### Outbound
 
@@ -93,7 +93,7 @@ Max stops number, Max connection time, Max travel time, Max price and Baggage fi
 
 * **Transport Type** – Select the transport type for the return journey (Real transport / External provider).
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 * The same fields are available as for outbound.
 
@@ -103,10 +103,13 @@ Max stops number, Max connection time, Max travel time fields became editable on
 
 #### Settings
 
-<figure><img src="../.gitbook/assets/image (616).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 * **Status** – Defines the rule’s visibility in the system (e.g., Visible / Hidden).
 * **Hide as filter on lists** – If checked, this rule will not appear as a filter option in lists.
+* **Cancelation condition\*** - Select the cancellation condition that applies to this transport rule (mandatory).
+* **Payment Rule** – Select a payment rule applicable to this transport.
+* **Use change rule service** – If checked, activates the change rule service for this transport.
 
 ### FAQ
 

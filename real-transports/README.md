@@ -16,7 +16,7 @@ Real Transports can be found in **Transports/Real Transports**. They are a speci
 
 <figure><img src="../.gitbook/assets/image (10) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 4. The only problem with a real transport is the fact that the user has to create one for outbound and one for homebound. So in the end the user wil have created 2 Real Transports for use on one Normal Transport.
 

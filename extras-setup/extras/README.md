@@ -131,7 +131,7 @@ These settings influence how the extra interacts with billing, privacy regulatio
 
 ### Board Supplement
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (3).png" alt=""><figcaption></figcaption></figure>
 
 This section is shown **only when an Extra is configured with the type Pension**.\
 If the Extra has a different type, this section is not displayed.
@@ -183,13 +183,13 @@ The Clone Extras feature is used to:
 
 2.  Click “Clone” - Select the **Clone** option&#x20;
 
-    <figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3.  Select the code for the new Extras&#x20;
 
-    <figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 4.  Define Clone Settings&#x20;
 
-    <figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 You need to:
 

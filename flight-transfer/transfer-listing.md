@@ -63,7 +63,7 @@ They are defined on a resort basis. Each **Stop** can have one or more hotels as
 
 Likewise, a **Resort** can have more than 1 **Stop**
 
-<figure><img src="../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 When adding a hotel, you have to also select the direction. This can be
 
@@ -71,7 +71,7 @@ When adding a hotel, you have to also select the direction. This can be
 * Homebound
 * Both
 
-<figure><img src="../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 It is recommended if you have more than 1 **Stop** per resort to give them different names in order to differentiate them.
 

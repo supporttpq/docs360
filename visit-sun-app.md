@@ -102,11 +102,11 @@ This tab offers the possibility to the user to check Guest App special features 
 * After logged-in as a supplier which is a Guest App User or as an admin
 * (should be the supplier from the hotel), in Office can be defined new product for Dine Around from **Agent->Guest App Products**.
 
-<figure><img src=".gitbook/assets/image (12) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (12) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Please make sure that product have a resourcer on that hotel and allotments are generated from "Generate Allotment". In the picture below, it is shown an basic example of "Dine Around" product configuration.
 
-<figure><img src=".gitbook/assets/image (13) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (13) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * It can be defined only one product for each hotel. Also, supplier can upload suggestive photos which are shown in the application from the Photos tab.
 * In the application, accessing the **Dine Around** section, guests can select Dine Around to another hotel from that resort which is in the Guest App group.

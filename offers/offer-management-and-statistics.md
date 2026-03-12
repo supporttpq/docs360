@@ -173,4 +173,4 @@ You will typically see:
 * **Sent offers** (not drafts/unsent)
 * **Success rate** (conversion performance)
 
-<figure><img src="../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Offer statistics"><figcaption><p>Statistics view showing sent offers and success rate per sales agent.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Offer statistics"><figcaption><p>Statistics view showing sent offers and success rate per sales agent.</p></figcaption></figure>

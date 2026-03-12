@@ -188,7 +188,7 @@ If mistakes are made when adding a new room, you cannot delete the inserted room
 
 Generate the number of rooms available at the hotel and the period in which they can be used.
 
-<figure><img src="../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 To finish the process, press Insert, followed by Generate.
 
