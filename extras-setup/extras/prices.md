@@ -76,7 +76,7 @@ To enable price-per-brand functionality, please contact **Tourpaq Support**.
 
 * The system supports editing prices across multiple rows within the same view and saving all changes in a single operation.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 To optimize production workflow, users can perform multiple price corrections or updates at the same time and save everything with one click, instead of saving each row individually.
 
@@ -103,7 +103,7 @@ Prices can be split by:
     * The **second line** will automatically use the new **Date From** and original **Date To**.
     * It’s recommended to use the **current day** or **next day** as the stop date for the first line.
 
-    <figure><img src="../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 4. Click **Split** to confirm.
 
 After splitting, the system will display separate price lines for each new interval.

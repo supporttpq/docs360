@@ -2,7 +2,7 @@
 noIndex: true
 ---
 
-# Relational Price list
+# Relational Price List
 
 Available for Admin users.
 
@@ -54,7 +54,7 @@ After setting up the base room and relation, click on the **Update new price lis
 
 <figure><img src=".gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Price list configuration[​](https://docs.tourpaq.com/docs/documentation/relation-pricelist#price-list-configuration) <a href="#price-list-configuration" id="price-list-configuration"></a>
 
@@ -88,7 +88,7 @@ The settings are saved using the **Save Relation PL** in the upper right corner.
 
 To see the prices, the base room will need prices first. The rest of the rooms will have their prices set in about 2 minutes from the moment the price list is saved.
 
-<figure><img src=".gitbook/assets/image (8) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This is the result of the relation price list.
 

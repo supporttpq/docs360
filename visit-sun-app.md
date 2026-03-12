@@ -18,7 +18,7 @@ In this tab, user can access information about the booking.
 
 **Welcome screen** provide information about number of days before departure, an introduction text and latest news regarding the destination. Introduction text displayed on "Welcome screen" can be configured from Tourpaq Office logged as admin by accessing **Guest App->Settings->Edit Agency->General settings**
 
-<figure><img src=".gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In this section, there are also displayed notifications for insider tips. Notifications can be configured from **Guest App->Edit Agency->Manage Guest App Settings->Notifications**.
 
@@ -48,7 +48,7 @@ In **Weekly activities** section, user will be able to see weekly activities def
 
 <figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Under **"Excursions"** (Udflugter) section, excursions which are defined in **Office->Extras** when logged-in as a guide will be available for booking. This can be done when accessing **Excursions(Udflugfter)** tab. For detailed information about how this type of an excursion/extras is created, please check [Destination - Mobile guide App](destination-mobile-guide-app.md)
 
@@ -58,7 +58,7 @@ Remark: Excursions are displayed also according to stop sales hours setup on the
 
 <figure><img src=".gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (8) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (8) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Destination tab <a href="#destination-tab" id="destination-tab"></a>
 

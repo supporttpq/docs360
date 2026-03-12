@@ -156,7 +156,7 @@ Write the link text (for example, “Open your booking”). Select it. Then clic
 
 In the URL field, insert the `[Hash-key-link]`. Select the other protocol, as shown in the screenshot.
 
-<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Link settings with Hash-key-link placeholder."><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Link settings with Hash-key-link placeholder."><figcaption></figcaption></figure>
 
 ### Date filters
 

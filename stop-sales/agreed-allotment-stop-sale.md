@@ -76,7 +76,7 @@ After you save, verify the same hotel, room, and date range in these places:
   * The log should reflect the agreed allotment adjustment.
   * `Final r.No` should increase by the agreed allotment compared to `Initial r.No`.
 
-<figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Hotel → Allotment per Day**
   * Filter on the same room and dates.

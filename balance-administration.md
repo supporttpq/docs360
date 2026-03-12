@@ -160,7 +160,7 @@ Review ticket cost prices, airlines, and passenger details.
 
 The refund process allows users to return payments to customers when there is a negative balance in the system.
 
-<figure><img src=".gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Refund payments list"><figcaption><p>Refund payments: start refunds for bookings marked with Release payment.</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Refund payments list"><figcaption><p>Refund payments: start refunds for bookings marked with Release payment.</p></figcaption></figure>
 
 1. (Optional) Filter by **Seller**.
 2. (Optional) Enable **Show release payment only**.

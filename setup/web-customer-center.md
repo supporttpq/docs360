@@ -24,14 +24,14 @@ Correct configuration ensures consistency between operational setup and customer
 
 Below is a description of each section visible in the Web Customer Center.
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 1. Party Package
 
 **Purpose**\
 Used to describe what is included in a party package or special themed package.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **What to include**
 
@@ -48,7 +48,7 @@ Displayed in the booking flow when a party package is selected. Helps customers 
 **Purpose**\
 Explains how transfers work for the selected destination or product.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **What to include**
 
@@ -68,7 +68,7 @@ Always verify operational accuracy with the transport setup.
 **Purpose**\
 Describes the standard travel insurance offered in the booking flow.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **What to include**
 
@@ -81,7 +81,7 @@ Describes the standard travel insurance offered in the booking flow.
 **Purpose**\
 Explains the cancellation protection product.
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **What to include**
 
@@ -128,7 +128,7 @@ Reduces confusion at arrival or excursion departure.
 
 This section controls how extras are automatically selected during booking.
 
-<figure><img src="../.gitbook/assets/image (6) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 Available options:
 
@@ -170,14 +170,14 @@ Adding an image improves the presentation of the section and helps customers qui
 2. Locate the section where you want to add an image (for example, _Party Package_, _Transfer_, _Insurance_).
 3.  Click the **Edit icon (pencil)** on the right side of the section.&#x20;
 
-    <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 4.  In the edit window:&#x20;
 
     * Locate the **Image Upload** field.
     * Click **Upload** or **Choose File**.
     * Select the image from your computer.
 
-    <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 5. Save the changes.
 
 After saving, the image will be associated with that section and will be displayed in the Web Customer Center interface.
@@ -197,6 +197,6 @@ If a file with a different format is uploaded, the system will display the follo
 
 > **This file format is not supported. Please upload an image file with one of the following extensions: jpg, gif, png, bmp.**
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 In this case, the file will not be uploaded and the user must select a supported image format before saving.

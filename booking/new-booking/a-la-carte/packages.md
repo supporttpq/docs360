@@ -50,7 +50,7 @@ Click **Create** and fill in:
 
 <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Packages Generator: create a new package rule.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Packages Generator rule fields: agency, date interval, interval type, and discount"><figcaption><p>Rule fields define agency, sales period, interval type, and optional discount.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Packages Generator rule fields: agency, date interval, interval type, and discount"><figcaption><p>Rule fields define agency, sales period, interval type, and optional discount.</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
