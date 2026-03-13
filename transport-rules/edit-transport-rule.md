@@ -159,7 +159,7 @@ The **Settings** section contains:
 * **Hide as filter on lists** – If checked, this rule will not appear as a filter option in lists.
 * **Cancelation condition\*** - Select the cancellation condition that applies to this transport rule (mandatory).
 * **Payment Rule** – Select a payment rule applicable to this transport.
-* **Use change rule service** – If checked, activates the change rule service for this transp
+* **Use change rule service** – If checked, activates the change rule service for this transport
 
 **Bottom Section: Season-Specific Configuration**
 
