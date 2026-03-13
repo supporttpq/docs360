@@ -31,7 +31,7 @@ Below is a description of each section visible in the Web Customer Center.
 **Purpose**\
 Used to describe what is included in a party package or special themed package.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **What to include**
 
@@ -170,7 +170,7 @@ Adding an image improves the presentation of the section and helps customers qui
 2. Locate the section where you want to add an image (for example, _Party Package_, _Transfer_, _Insurance_).
 3.  Click the **Edit icon (pencil)** on the right side of the section.&#x20;
 
-    <figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 4.  In the edit window:&#x20;
 
     * Locate the **Image Upload** field.

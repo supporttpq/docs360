@@ -33,7 +33,7 @@ For a product to be set as **package**, you need to check the option inside **Ed
 
 You can modify the products that are inside the package in **Edit Product Page → Package Content** tab.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Warning messages**
 

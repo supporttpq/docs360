@@ -32,7 +32,7 @@ The goal is to:
 
 ### 1. **Extras – New “Include In Basic Price” Option**
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 **Location - Extras Setup → Extras → Behaviour Settings**
 
@@ -55,7 +55,7 @@ When checked:
 
 ### 2. **Extras Category – New “Hide for Customers” Option**
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Location - Extras Setup → Extras Category → Settings box**
 

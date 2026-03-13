@@ -41,7 +41,7 @@ This behavior allows users to repeatedly press **“+”** and quickly add all r
 
 #### Transportation
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Pick-up point required** – If checked, the booking must include a pick-up point.
 * **Travel Length Correction +/-** – Adjust the travel duration by a specified number of days.
@@ -112,6 +112,21 @@ Important Notes
 * The synchronization only applies to transports **generated from the Transport Rule**.
 * Updating the rule ensures all related transports remain aligned with the latest pricing configuration.
 {% endhint %}
+
+When a transport is generated from a Transport Rule, the system creates a corresponding **infant price configuration** on the transport.
+
+The dates from the Transport Rule are mapped to the infant price configuration as follows:
+
+| Transport Rule      | Generated Transport Infant Price |
+| ------------------- | -------------------------------- |
+| Date From           | Departure From                   |
+| Date To             | Departure To                     |
+| Today (system date) | Booking From                     |
+| Date To             | Booking To                       |
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+This mapping ensures that the infant price is valid for the entire transport rule period.
 
 #### Outbound
 
