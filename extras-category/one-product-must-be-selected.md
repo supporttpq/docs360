@@ -76,7 +76,7 @@ If the selected extra has no availability (for example due to allotment), the bo
 
 * When the extra category "Gala Dinner" has the option enabled:
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * And an extra in that category is available for booking:
 

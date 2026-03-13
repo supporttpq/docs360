@@ -67,7 +67,7 @@ Only passengers with an email address entered will receive the individual paymen
 
 <figure><img src="../../.gitbook/assets/image (246).png" alt="Booking page: Individual payment button"><figcaption><p>Send the email from the booking page.</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Individual payment email send dialog"><figcaption><p>Confirm the send action (dialog may vary by setup).</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Individual payment email send dialog"><figcaption><p>Confirm the send action (dialog may vary by setup).</p></figcaption></figure>
 {% endstep %}
 
 {% step %}

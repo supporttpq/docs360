@@ -139,7 +139,7 @@ After you decide:
 1. Click **Update Price**
 2. Save the offer/basket changes
 
-<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Upsell selection"><figcaption><p>Add upsells to the basket or propose them as optional upgrades.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Upsell selection"><figcaption><p>Add upsells to the basket or propose them as optional upgrades.</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -164,7 +164,7 @@ What happens after sending:
 * The system logs the **email sent date**.
 * If **self-booking** is enabled for your setup, the customer email includes a **Booking** button/link.
 
-<figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Send offer"><figcaption><p>Send the offer and confirm it was delivered (sent date is logged).</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Send offer"><figcaption><p>Send the offer and confirm it was delivered (sent date is logged).</p></figcaption></figure>
 {% endstep %}
 {% endstepper %}
 

@@ -44,7 +44,7 @@ Before working with the Guide Sales Ledger:
 * You must have an active Tourpaq Office user with **Financial** permissions (or admin access).
 * A System Administrator must enable access to **Guide Sales Ledger** in user permissions.
 
-<figure><img src=".gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Guide Sales Ledger permission in Finance menu"><figcaption><p>Enable Guide Sales Ledger in user permissions (Finance) to access the report.</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Guide Sales Ledger permission in Finance menu"><figcaption><p>Enable Guide Sales Ledger in user permissions (Finance) to access the report.</p></figcaption></figure>
 
 * Guide transactions (debit/credit entries) must already exist for the period.
 * Bookings, extras, and supplier mappings must be configured correctly.

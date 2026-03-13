@@ -76,7 +76,7 @@ To enable price-per-brand functionality, please contact **Tourpaq Support**.
 
 * The system supports editing prices across multiple rows within the same view and saving all changes in a single operation.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 To optimize production workflow, users can perform multiple price corrections or updates at the same time and save everything with one click, instead of saving each row individually.
 
@@ -96,16 +96,16 @@ Prices can be split by:
 1. Click on the **Split** button below the price lines.
 2.  Choose how many splits you want to create.
 
-    <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3.  Adjust the date or age intervals as needed:
 
     * When splitting by **Departure** or **Booking Date**, set the **Date From** of the first line to the original start date and the **Date To** to the new stop date.
     * The **second line** will automatically use the new **Date From** and original **Date To**.
     * It’s recommended to use the **current day** or **next day** as the stop date for the first line.
 
-    <figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 4. Click **Split** to confirm.
 
 After splitting, the system will display separate price lines for each new interval.
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

@@ -94,7 +94,7 @@ See: [Vouchers](../../setup/vouchers.md)
 
 Once vouchers are generated, open/download a voucher and confirm the QR code is visible.
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Voucher PDF showing the QR code on the voucher"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Voucher PDF showing the QR code on the voucher"><figcaption></figcaption></figure>
 {% endstep %}
 {% endstepper %}
 

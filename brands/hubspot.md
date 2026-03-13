@@ -52,7 +52,7 @@ Some HubSpot portals no longer support legacy API keys. If that’s your case, u
 {% step %}
 ### Add Brand Code
 
-<figure><img src="../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Set a **Brand Code** for each brand.
 

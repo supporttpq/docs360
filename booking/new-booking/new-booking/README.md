@@ -83,7 +83,7 @@ Before creating a booking, the following prerequisites must be satisfied:
 
 The New Booking screen is organized into distinct functional sections that follow the booking creation workflow from top to bottom.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 **Main Interface Sections:**
 
@@ -283,7 +283,7 @@ This section provides comprehensive descriptions of all fields available in the 
 
 #### Transport Search Results Table Columns
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Status Column**
 
@@ -418,7 +418,7 @@ This section provides comprehensive descriptions of all fields available in the 
 
 #### Hotel Search Dialog Filter Fields
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Resort**
 
@@ -604,7 +604,7 @@ This section provides comprehensive descriptions of all fields available in the 
 
 #### Take Allotment Button
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Take Allotment**
 
@@ -616,7 +616,7 @@ This section provides comprehensive descriptions of all fields available in the 
 
 #### Passenger Information Grid
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 The passenger grid contains one row per passenger. Each row includes multiple fields for passenger details, extras selection, and pricing.
 
@@ -716,7 +716,7 @@ The passenger grid contains one row per passenger. Each row includes multiple fi
 
 #### Booking Totals Panel
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 The Booking Totals panel is located on the right side of the screen and displays financial and metadata information for the booking.
 
@@ -883,7 +883,7 @@ This part covers the complete workflow for creating a typical package booking wi
 1. Enter the customer's mobile number in the **Mobile Number** field
 2.  Press Tab or click outside the field to trigger customer lookup&#x20;
 
-    <figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 3. If customer exists:
    * Customer details (name, email, DOB) auto-populate
    * Verify the details are correct
@@ -894,9 +894,9 @@ This part covers the complete workflow for creating a typical package booking wi
    * Enter **Email** address (mandatory if Brand configuration requires it)
    * Enter **Date of Birth** in DD-MM-YYYY format (mandatory if Brand configuration requires it)
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Booking cannot proceed until required fields are completed.
 
@@ -909,7 +909,7 @@ Then:
 
 *   The DOB is automatically inserted into the lead passenger row in the Pax grid.
 
-    <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -1072,7 +1072,7 @@ d. Click OK to apply selections
 
 If the "Order extras in the booking window" option is activated in the system setup, the extras will be sorted according to the Category Order value.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Sorting rules
 
@@ -1271,7 +1271,7 @@ c. Select **Does not cover** if insurance does not apply
 4. Cancellation dialog closes
 5.  Passenger grid updates showing cancelled passenger with strikethrough or cancelled indicator&#x20;
 
-    <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Allotment is NOT automatically released

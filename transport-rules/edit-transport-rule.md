@@ -38,7 +38,7 @@ Transport Rule names can be edited at any time. Renaming a Transport Rule will a
 
 To maintain data consistency, the system does not allow two Transport Rules to share the same name.
 
-<figure><img src="../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Example:**\
 If a Transport Rule was initially created as `CPH_CHQ`, but the correct naming should be `CPH_CHQ_T1`, updating the rule name will also rename all associated generated transports accordingly.
@@ -47,7 +47,7 @@ If a Transport Rule was initially created as `CPH_CHQ`, but the correct naming s
 
 When a user clicks the **“+”** button to add new stay days, the system automatically preselects the first available stay day from the drop-down list.
 
-<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This behavior allows users to repeatedly press **“+”** and quickly add all remaining stay days in sequence, creating a faster and more efficient workflow.
 
@@ -55,7 +55,7 @@ This behavior allows users to repeatedly press **“+”** and quickly add all r
 
 In the Stay Days table, an additional column is introduced to display the name of the generated transport associated with each stay day.
 
-<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The transport name is a clickable link. Selecting this link opens the corresponding generated transport in a new browser tab, allowing users to review or manage it without losing their place in the current view.
 
@@ -121,7 +121,7 @@ This makes it possible to:
 
 A single Transport Rule can contain several **date periods (seasons)**. For each season, the following can be configured independently:
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 For every season, the following shall be specified:
 

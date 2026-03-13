@@ -70,7 +70,7 @@ In practice, moving a booking usually starts by creating a new booking and copyi
 
 Click **OK** in the confirmation dialog.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Confirmation dialog for moving a booking"><figcaption><p>Confirm the move action.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Confirmation dialog for moving a booking"><figcaption><p>Confirm the move action.</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -81,7 +81,7 @@ After confirmation:
 * The **original booking** status becomes **Moved**.
 * The booking is now clearly marked as rescheduled.
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Booking details showing status Moved after rescheduling"><figcaption><p>The original booking is now marked as Moved.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Booking details showing status Moved after rescheduling"><figcaption><p>The original booking is now marked as Moved.</p></figcaption></figure>
 {% endstep %}
 {% endstepper %}
 
