@@ -99,7 +99,7 @@ Use the **Booking No** in the notification row to locate the affected booking. O
 After saving the fix, return to the Notifications page and refresh the list. If the underlying issue has been resolved, the notification will no longer appear. If it persists, the fix was incomplete — review the booking again.
 
 {% hint style="warning" %}
-&#x20;Notifications do **not** clear automatically the moment you save a booking. The system reruns its checks periodically. Allow a few minutes after saving before verifying.&#x20;
+&#x20;Notifications are not automatically cleared when you save a reservation. The system reruns its checks periodically, every 30 minutes.
 {% endhint %}
 
 ***
