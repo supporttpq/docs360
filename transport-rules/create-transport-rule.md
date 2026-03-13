@@ -56,7 +56,62 @@ This behavior allows users to repeatedly press **“+”** and quickly add all r
 
 <figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* **Infant price** – Set the price for infants.
+* **Infant price** – Defines the transport price that will be applied to passengers categorized as **infants**.
+  * Currency follows the system or transport currency configuration.
+  * The price is automatically copied to all transports generated from the rule.
+
+**Overview**
+
+The **Infant Price** field allows the user to define a fixed transport price for infants within a **Transport Rule**.\
+This value is automatically applied to all transports generated from the rule.
+
+The price is stored on the generated transport as an **infant price entry**, which defines the booking validity period and the departure validity period for the infant transport cost.
+
+This ensures that infant transport pricing is consistently applied across all transports created from the rule.
+
+**Purpose**
+
+The purpose of the **Infant Price** setting is to automate infant transport pricing so that:
+
+* every transport generated from a **Transport Rule** automatically receives the correct infant price
+* pricing remains synchronized if the **Transport Rule** is later modified
+* manual pricing adjustments on each transport are not required
+
+This guarantees consistent pricing and reduces the risk of configuration errors.
+
+**System Behavior**
+
+**A. When a Transport Rule is created**
+
+When a new **Transport Rule** is saved:
+
+1. The system generates transports according to the configured rule.
+2. The **Infant Price** defined in the rule is automatically added to each generated transport.
+
+**B.** **When a Transport Rule is updated**
+
+If the **Transport Rule** is updated, the system synchronizes the **Infant Price** across all transports generated from that rule.
+
+The following updates are applied automatically:
+
+* **Infant Price change**
+  * If the **Infant Price** value is modified, the price is updated for all generated transports.
+* **Date period change**
+  * If **Date From** is modified, the **Departure From** value on the infant price of generated transports is updated.
+  * If **Date To** is modified:
+    * **Departure To** is updated
+    * **Booking To** is updated.
+
+**C. Extended date period**
+
+* If the rule period is extended, newly generated transports will also receive the configured infant price.
+
+{% hint style="info" %}
+Important Notes
+
+* The synchronization only applies to transports **generated from the Transport Rule**.
+* Updating the rule ensures all related transports remain aligned with the latest pricing configuration.
+{% endhint %}
 
 #### Outbound
 
