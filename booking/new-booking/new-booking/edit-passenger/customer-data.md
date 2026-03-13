@@ -1,23 +1,37 @@
 ---
 description: >-
-  Manage booking contact details in Tourpaq Office. Set the main
-  customer/contact person and choose which passengers receive booking emails and
-  SMS notifications from the Customer Data tab.
+  The Customer Data tab controls who receives booking communications. Use this
+  tab to set the main customer contact and choose which passengers get emails
+  and SMS messages.
 ---
 
 # Customer Data
 
 ### Overview
 
-The **Customer Data** tab in **Tourpaq Office** controls **booking communication recipients**. You use it to pick the **main customer/contact person** and decide who receives **booking emails** and **SMS notifications**.
-
-This view is available in the **Edit Passenger** window from a booking.
-
-While **Passengers** focuses on personal details (name, birthdate, age), **Customer Data** defines **customer-level contact details and message distribution**.
+Customer Data manages communication settings for the booking. The main tasks are selecting the primary customer contact and enabling email/SMS delivery to other passengers. The primary customer receives all booking confirmations, invoices, and travel documents. Additional passengers can be opted in to receive copies of the same communications.
 
 {% hint style="info" %}
 Need the full flow? See [Edit Passenger](./).
 {% endhint %}
+
+### Purpose
+
+Use Customer Data to:
+
+* Designate the main customer contact for the booking
+* Control who receives booking emails (confirmations, tickets, invoices)
+* Control who receives booking SMS messages
+* Update customer contact information (email, phone, address)
+* Ensure communications reach the right people
+
+### Requirements
+
+Before using Customer Data:
+
+* Booking must be saved and accessible
+* User must have permission to edit bookings
+* At least one passenger must exist in the booking
 
 ### When to use it
 
@@ -138,3 +152,24 @@ Make sure you clicked **Save Changes** in the Edit Passenger window.\
 If documents were already generated/sent, you may need to regenerate or resend them, depending on your ticket/email flow.
 
 </details>
+
+### Related Pages
+
+**Core Customer Pages:**
+
+* [Edit Passenger](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/new-booking/new-booking/edit-passenger) - Passengers tab for managing traveler details
+* [Customers](https://tourpaq.gitbook.io/staging-tourpaq-docs/customer/customers) - Customer database management
+* [Customer Info / Details on Customer Card](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/new-booking/customer-info-details-on-customer-card) - Detailed customer profile
+
+**Communication Pages:**
+
+* [E-mails](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/new-booking/e-mails) - Booking email history and management
+* [SMS](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/new-booking/sms) - Booking SMS history and management
+* [Email Center](https://tourpaq.gitbook.io/staging-tourpaq-docs/email-setup/e-mail-center) - Email template configuration
+* [Dynamic E-mail/SMS Center](https://tourpaq.gitbook.io/staging-tourpaq-docs/email-setup/dynamic-e-mail-sms-center) - Advanced communication workflows
+
+**Booking Management:**
+
+* [New Booking](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/new-booking/new-booking) - Initial booking creation
+* [Booking Overview](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/booking-overview) - Main booking interface
+* [All Bookings](https://tourpaq.gitbook.io/staging-tourpaq-docs/booking/all-bookings) - Booking search and access
