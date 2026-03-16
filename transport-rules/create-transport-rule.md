@@ -128,6 +128,10 @@ The dates from the Transport Rule are mapped to the infant price configuration a
 
 This mapping ensures that the infant price is valid for the entire transport rule period.
 
+If the **Infant Price** is removed from the **Transport Rule**, the system automatically deletes the **auto-generated Infant Price configuration** on the generated transport to keep it aligned with the rule configuration.
+
+The **Infant Price** can be edited directly on a specific transport. However, any subsequent update made in the **Transport Rule** will override the value defined on the transport.
+
 #### Outbound
 
 * **Transport Type** – Select the transport type for the outbound journey (Real transport / External provider).
