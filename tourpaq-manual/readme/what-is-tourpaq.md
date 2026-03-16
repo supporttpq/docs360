@@ -1,3 +1,9 @@
+---
+description: >-
+  Learn what Tourpaq is and how the platform connects booking, pricing,
+  transport, finance, and customer operations for travel teams.
+---
+
 # What is Tourpaq?
 
 ### Overview
@@ -29,7 +35,7 @@ Think of it as the central hub that connects your **products**, **customers**, *
 Tourpaq is organised around **Brands**. A Brand represents a distinct travel company or sales channel (e.g. different tour operator labels under the same group). Most data — price lists, hotels, transports, bookings — is linked to a specific Brand.
 
 {% hint style="warning" %}
-**Always check your Brand** before creating or searching for data. If you're looking at the wrong Brand, you won't see the right hotels, prices, or bookings.&#x20;
+**Always check your Brand** before creating or searching for data. If you're looking at the wrong Brand, you won't see the right hotels, prices, or bookings.
 {% endhint %}
 
 ***

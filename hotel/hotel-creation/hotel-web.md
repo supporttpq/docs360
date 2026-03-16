@@ -1,3 +1,9 @@
+---
+description: >-
+  Manage hotel web content, descriptions, facilities, and customer-facing texts
+  shown on websites, offers, tickets, and vouchers.
+---
+
 # Hotel Web
 
 ### Overview

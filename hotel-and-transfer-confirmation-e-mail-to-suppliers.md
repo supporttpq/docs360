@@ -1,3 +1,9 @@
+---
+description: >-
+  Send hotel and transfer confirmation emails to suppliers, manage template
+  setup, and track supplier response requirements.
+---
+
 # Hotel and transfer confirmation emails to suppliers
 
 ### Overview

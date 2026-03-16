@@ -1,3 +1,9 @@
+---
+description: >-
+  Upload and manage hotel photos and documents used on the website, offers, and
+  booking flows in Tourpaq.
+---
+
 # Photos & Documents
 
 ### Overview

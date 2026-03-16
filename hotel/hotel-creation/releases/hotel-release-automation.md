@@ -1,3 +1,9 @@
+---
+description: >-
+  Automate hotel room releases and supplier notifications based on release
+  rules, booking status, and travel timing in Tourpaq.
+---
+
 # Hotel release - automation
 
 ### Overview

@@ -1,4 +1,8 @@
 ---
+description: >-
+  Link parent and child price lists to derive room prices automatically using
+  relation rules, formulas, currencies, and cross-brand pricing logic in
+  Tourpaq.
 noIndex: true
 ---
 

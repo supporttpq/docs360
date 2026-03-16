@@ -1,3 +1,9 @@
+---
+description: >-
+  Create and configure hotels in Tourpaq, including room types, allotments,
+  brands, web content, costs, and communication settings.
+---
+
 # Hotel creation
 
 This feature is available for the administrator user type.
@@ -28,7 +34,7 @@ Other fields that are necessary for the hotel to work properly:
 * Facilities template - select a facility template from those available, which will allow the setting of the facilities available in the hotel from **the Web** tab. more information is available at [Facilities](../../facilities.md)
 * Hotel combination - allows for 2 or more hotels to be combined into 1, drawing room allotments from the hotels selected. for more information, please check [Hotel Combination](../../hotel-combination.md)
 * Child price ages - age interval that benefits from the child price from the price list
-* Child ages for extra bed - age interval for children when taking into account the "extra bed child" from the room; if the age is outside of the interval, children will use an adult extra bed (overrides the age set in the base room type). If nothing is set, the child's ages for extra beds are not taken into consideration.&#x20;
+* Child ages for extra bed - age interval for children when taking into account the "extra bed child" from the room; if the age is outside of the interval, children will use an adult extra bed (overrides the age set in the base room type). If nothing is set, the child's ages for extra beds are not taken into consideration.
 * Adult hotel - sets an age limit preventing guests to book if there is a passenger with the age below limit
 * Order No. - Tourpaq API, order of the hotels sent to the website
 * Customise room offer priority - The checkbox allows the user to decide whether they want to use a personalized priority of room types (i.e., by orderId) or let the API decide automatically based on the room configuration (i.e., by number of beds).
@@ -36,7 +42,7 @@ Other fields that are necessary for the hotel to work properly:
 * For one way - a hotel used only for one-way transport
 * Extra Bed Discount Name - Name of the Extra Bed Discount on the ticket and in webbooking
 * Managed by Availpro - the hotel is using rooms and costs from Availpro
-*   Managed by SkiStar (available if SkiStar Sync is enabled for Company) - allow to **automatic daily synchronization** of allotment and cost prices for SkiStar accommodations.&#x20;
+*   Managed by SkiStar (available if SkiStar Sync is enabled for Company) - allow to **automatic daily synchronization** of allotment and cost prices for SkiStar accommodations.
 
     * SkiStar Resort ID - the resort id set in the SkiStar
 
@@ -81,10 +87,10 @@ The header text for the "Stars" column can also be customized, but only when the
 
 #### **Summary**
 
-| Field                | Brand-Specific  Value Present | Brand-Specific Value Missing/Empty | Value Synced to Elastic |
-| -------------------- | ----------------------------- | ---------------------------------- | ----------------------- |
-| **Stars**            | Use brand-specific value      | Use Default Stars                  | Selected value          |
-| **Customized Stars** | Use brand-specific value      | Use Default Customized Stars       | Selected value          |
+| Field                | Brand-Specific Value Present | Brand-Specific Value Missing/Empty | Value Synced to Elastic |
+| -------------------- | ---------------------------- | ---------------------------------- | ----------------------- |
+| **Stars**            | Use brand-specific value     | Use Default Stars                  | Selected value          |
+| **Customized Stars** | Use brand-specific value     | Use Default Customized Stars       | Selected value          |
 
 ### Automatiic Billing
 
@@ -198,7 +204,7 @@ Used to sell the same room under different settings and prices. The shared allot
 
 <figure><img src="../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Two room types are needed in the hotel for this feature.&#x20;
+Two room types are needed in the hotel for this feature.
 
 **Warning!** Only the room above will have real allotment, the other room taking allotment from this one.
 
@@ -268,13 +274,13 @@ This feature works with [Autobilling](../../autobilling/)
 Only administrators can create hotels.
 
 **What fields are mandatory to create a hotel?**\
-Mandatory fields are Code, Name, Resort, Contract type, and Standard room. Without these, the hotel is not saved.&#x20;
+Mandatory fields are Code, Name, Resort, Contract type, and Standard room. Without these, the hotel is not saved.
 
 **Does supplier information matter?**\
 Supplier is not mandatory but is required for hotel setup to work properly. [l](https://manual.tourpaq.com/hotel/hotel-creation)
 
 **What is “Standard room”?**\
-Standard room is the hotel’s main room type and is required for creation.&#x20;
+Standard room is the hotel’s main room type and is required for creation.
 
 **Can I remove a room type once added?**\
 You cannot delete a room after adding it. It will remain until it has allotments and prices.
@@ -283,13 +289,13 @@ You cannot delete a room after adding it. It will remain until it has allotments
 Override creates a hotel-specific version of a base room type that you can edit. It does not remove the original room type.
 
 **How does “Hide room” work?**\
-Hide room makes the room not visible if it has no allotments.&#x20;
+Hide room makes the room not visible if it has no allotments.
 
 **What is a shared allotment?**\
 Shared allotment uses one room’s allotments for another room. Only the primary room has real allotments.
 
 **What fields control child and extra bed pricing behavior?**\
-Child price ages define the age group for child pricing. Child ages for extra bed set ages for children on an extra bed; outside that group, adult extra bed pricing applies.&#x20;
+Child price ages define the age group for child pricing. Child ages for extra bed set ages for children on an extra bed; outside that group, adult extra bed pricing applies.
 
 **Can I change hotel visibility on lists and filters?**\
 Yes. The Hide as filter on lists setting hides the hotel from all system filters
