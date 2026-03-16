@@ -20,7 +20,7 @@ Use **SMS Overview** to monitor outgoing SMS messages in **Tourpaq Office**. Thi
 * Verify **SMS delivery status** (Sent / Failed / Pending).
 * Review SMS communication history for support, operations, and audits.
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Tourpaq Office SMS Overview page showing filters and an SMS delivery log with statuses and booking references"><figcaption><p>SMS Overview in Tourpaq Office. Use it to search SMS history and check SMS delivery status for a booking.</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Tourpaq Office SMS Overview page showing filters and an SMS delivery log with statuses and booking references"><figcaption><p>SMS Overview in Tourpaq Office. Use it to search SMS history and check SMS delivery status for a booking.</p></figcaption></figure>
 
 {% hint style="info" %}
 If you need the SMS log for a single booking, use the booking **SMS** tab: [SMS](booking/new-booking/sms.md).

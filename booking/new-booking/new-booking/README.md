@@ -283,7 +283,7 @@ This section provides comprehensive descriptions of all fields available in the 
 
 #### Transport Search Results Table Columns
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Status Column**
 
@@ -418,7 +418,7 @@ This section provides comprehensive descriptions of all fields available in the 
 
 #### Hotel Search Dialog Filter Fields
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Resort**
 
@@ -604,7 +604,7 @@ This section provides comprehensive descriptions of all fields available in the 
 
 #### Take Allotment Button
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Take Allotment**
 
@@ -616,7 +616,7 @@ This section provides comprehensive descriptions of all fields available in the 
 
 #### Passenger Information Grid
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The passenger grid contains one row per passenger. Each row includes multiple fields for passenger details, extras selection, and pricing.
 
@@ -894,7 +894,7 @@ This part covers the complete workflow for creating a typical package booking wi
    * Enter **Email** address (mandatory if Brand configuration requires it)
    * Enter **Date of Birth** in DD-MM-YYYY format (mandatory if Brand configuration requires it)
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -909,7 +909,7 @@ Then:
 
 *   The DOB is automatically inserted into the lead passenger row in the Pax grid.
 
-    <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -1208,12 +1208,12 @@ This procedure describes how to remove a passenger from an existing booking with
 
 **Step 3: Initiate Cancellation**
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Locate the **Cancel passenger or booking** button in the bottom-right corner of the Passengers section
 2.  Click the **Cancel passenger or booking** button&#x20;
 
-    <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3. Cancellation dialog appears with options
 
 **Step 4: Choose Cancellation Type**
@@ -1271,7 +1271,7 @@ c. Select **Does not cover** if insurance does not apply
 4. Cancellation dialog closes
 5.  Passenger grid updates showing cancelled passenger with strikethrough or cancelled indicator&#x20;
 
-    <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Allotment is NOT automatically released

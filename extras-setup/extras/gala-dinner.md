@@ -32,7 +32,7 @@ The goal is to:
 
 ### 1. **Extras – New “Include In Basic Price” Option**
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Location - Extras Setup → Extras → Behaviour Settings**
 
@@ -55,7 +55,7 @@ When checked:
 
 ### 2. **Extras Category – New “Hide for Customers” Option**
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Location - Extras Setup → Extras Category → Settings box**
 
@@ -85,7 +85,7 @@ When an extra has “Include in Basic Price” enabled:
 
 ### 4. Use Stay dates in prices
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The **Use Stay dates in prices** option is available in the **Basic setup** tab when configuring an **Extra** such as a **Gala Dinner**. This option controls how the system interprets the date periods defined in the **Prices** tab.
 
@@ -99,9 +99,9 @@ When enabled, the system evaluates the **stay dates of the booking** against the
 
 **Behavior when enabled**
 
-<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * The correct price is selected based on the **stay period**, not the departure date.
 * The extra will be applied only when the guest is **present at the hotel during the event date**.
@@ -132,13 +132,13 @@ To configure Gala Dinner so the guest pays for it but **does not see it as a sep
 
 1.  Create an Extra for the Gala Dinner.&#x20;
 
-    <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2.  Check **Include In Basic Price** on the Extra.&#x20;
 
     <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3.  Assign the Extra to a category dedicated for Gala Dinner.
 
-    <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 4.  Enable **Hide on Ticket** on the Gala Dinner category.&#x20;
 
     <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
