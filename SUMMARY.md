@@ -278,6 +278,7 @@
   * [Edit Quota](transport-rules/edit-quota.md)
   * [Notes](transport-rules/notes.md)
   * [Transport Rules for Hotel Only](transport-rules/transport-rules-for-hotel-only.md)
+  * [Transport Rule Weekdays Support](transport-rules/transport-rule-weekdays-support.md)
 * [Transport Dashboard](transport-dashboard.md)
 * [Transport Price Control](transport-price-control.md)
 * [Transport Payment Rules](transport-payment-rules.md)

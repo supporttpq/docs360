@@ -32,7 +32,7 @@ The goal is to:
 
 ### 1. **Extras – New “Include In Basic Price” Option**
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Location - Extras Setup → Extras → Behaviour Settings**
 
@@ -55,7 +55,7 @@ When checked:
 
 ### 2. **Extras Category – New “Hide for Customers” Option**
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Location - Extras Setup → Extras Category → Settings box**
 
@@ -85,7 +85,7 @@ When an extra has “Include in Basic Price” enabled:
 
 ### 4. Use Stay dates in prices
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 The **Use Stay dates in prices** option is available in the **Basic setup** tab when configuring an **Extra** such as a **Gala Dinner**. This option controls how the system interprets the date periods defined in the **Prices** tab.
 
@@ -99,9 +99,9 @@ When enabled, the system evaluates the **stay dates of the booking** against the
 
 **Behavior when enabled**
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 * The correct price is selected based on the **stay period**, not the departure date.
 * The extra will be applied only when the guest is **present at the hotel during the event date**.

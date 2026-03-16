@@ -82,7 +82,7 @@ The same rule applies to the **number of booked rooms**. The booked value reflec
 
 The **Free Hotel Allotment (FHA)** in the price list represents the total of **Available** plus **Free** rooms.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 * After changes are made, the system may require up to one minute to update and display the new values.

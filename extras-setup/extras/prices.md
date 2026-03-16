@@ -96,7 +96,7 @@ Prices can be split by:
 1. Click on the **Split** button below the price lines.
 2.  Choose how many splits you want to create.
 
-    <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3.  Adjust the date or age intervals as needed:
 
     * When splitting by **Departure** or **Booking Date**, set the **Date From** of the first line to the original start date and the **Date To** to the new stop date.
