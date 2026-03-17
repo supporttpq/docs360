@@ -26,22 +26,20 @@ To properly use a real transport, the user must have a normal transport linked t
 
 **These settings also apply to GDS.**
 
-1. The user creates the transport as usual, with a significant change. He will check the case for **Dynamic Itineraries**.
+1.  The user creates the transport as usual, with a significant change. He will check the case for **Dynamic Itineraries**.&#x20;
 
-<figure><img src="../.gitbook/assets/image (12) (2).png" alt=""><figcaption></figcaption></figure>
-
+    <figure><img src="../.gitbook/assets/image (717).png" alt=""><figcaption></figcaption></figure>
 2. For this step, the user must create an interval and assign the transport to a brand.
-3. This step creates the link between a normal and real transports. For this, the user has to go to **Legs** and click on **New Leg** button.
+3.  This step creates the link between a normal and real transports. For this, the user has to go to **Legs** and click on **New Leg** button.&#x20;
 
-<figure><img src="../.gitbook/assets/image (13) (2).png" alt=""><figcaption></figcaption></figure>
-
+    <figure><img src="../.gitbook/assets/image (718).png" alt=""><figcaption></figcaption></figure>
 4. Next the user has to set the departure and arrival, as well as the days between flights and click **Save**
 
 <figure><img src="../.gitbook/assets/image (125).png" alt=""><figcaption></figcaption></figure>
 
 This action has to be repeated but with the departure and arrival places inversed. So that in the end it will look like this.
 
-<figure><img src="../.gitbook/assets/image (14) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (719).png" alt=""><figcaption></figcaption></figure>
 
 5. Another thing the user has to do is check the **OwnDatabase** and **OneWay** boxes and then click **Save**.
 
@@ -49,11 +47,11 @@ This action has to be repeated but with the departure and arrival places inverse
 
 6. Last thing to do in this section is to setup the flights. Press the **Configure** button, select the departure date and then press **Test Search**
 
-<figure><img src="../.gitbook/assets/image (129).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (720).png" alt=""><figcaption></figcaption></figure>
 
 The **Test Search** will display all available real transports flights. The user can narrow them down if they are too many, using the filters.&#x20;
 
-<figure><img src="../.gitbook/assets/image (16) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (721).png" alt=""><figcaption></figcaption></figure>
 
 After the user has found the real transport it wanted, the settings can be saved. The same thing must be done for the second leg.
 
