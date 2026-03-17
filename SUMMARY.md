@@ -3,6 +3,12 @@
 ## Tourpaq Manual
 
 * [Welcome to the Tourpaq Manual](README.md)
+* [Getting Started with Tourpaq](<README (1).md>)
+  * [What is Tourpaq?](tourpaq-manual/readme/what-is-tourpaq.md)
+  * [First Login & Account Setup](tourpaq-manual/readme/first-login-and-account-setup.md)
+  * [Key Concepts](tourpaq-manual/readme/key-concepts.md)
+  * [Navigate the System](tourpaq-manual/readme/navigate-the-system.md)
+  * [Your Learning Path by Role](tourpaq-manual/readme/your-learning-path-by-role.md)
 
 ## Dashboard
 
@@ -10,10 +16,11 @@
 
 ## Notifications
 
-* [Notification](notifications/notification.md)
+* [Notifications](notifications/notification.md)
 
 ## Booking
 
+* [Booking overview](booking/booking-overview.md)
 * [All bookings](booking/all-bookings/README.md)
   * [View all bookings](booking/all-bookings/view-all-bookings.md)
   * [Statistics in All bookings](booking/all-bookings/statistic-in-all-bookings.md)
@@ -21,7 +28,9 @@
 * [New Booking](booking/new-booking/README.md)
   * [New Booking](booking/new-booking/new-booking/README.md)
     * [New Booking search support](booking/new-booking/new-booking/new-booking-search-support.md)
-    * [Edit Passenger](booking/new-booking/new-booking/edit-pas.md)
+    * [Edit Passenger](booking/new-booking/new-booking/edit-passenger/README.md)
+      * [Customer Data](booking/new-booking/new-booking/edit-passenger/customer-data.md)
+    * [Transport Search Displays Departure Without Return Date (Known Limitation)](booking/new-booking/new-booking/transport-search-displays-departure-without-return-date-known-limitation.md)
   * [Economics](booking/new-booking/economics.md)
   * [Passenger details](booking/new-booking/passenger-details.md)
   * [History](booking/new-booking/history.md)
@@ -37,13 +46,13 @@
   * [Golf Courses](booking/new-booking/golf-courses.md)
   * [Extra Orders](booking/new-booking/extra-orders.md)
   * [Conversation](booking/new-booking/conversation.md)
-  * [Don't sent ticket option](booking/new-booking/dont-sent-ticket-option.md)
+  * [Don’t send ticket option](booking/new-booking/dont-sent-ticket-option.md)
   * [Coded discount booking](booking/new-booking/coded-discount-booking.md)
   * [Customer info / Details on customer card](booking/new-booking/customer-info-details-on-customer-card.md)
   * [QR code for vouchers](booking/new-booking/qr-code-for-vouchers.md)
   * [Individual payments](booking/new-booking/individual-payments.md)
-  * [Keep automatic discounts prices](booking/new-booking/keep-automatic-discounts-prices.md)
-  * [Waitting list](booking/new-booking/waitting-list.md)
+  * [Keep automatic discount prices](booking/new-booking/keep-automatic-discounts-prices.md)
+  * [Waiting list (WL)](booking/new-booking/waitting-list.md)
   * [Moved Booking](booking/new-booking/moved-booking.md)
   * [Copy Booking](booking/new-booking/copy-booking.md)
   * [Circuit Bookings](booking/new-booking/circuit-bookings.md)
@@ -67,6 +76,7 @@
   * [GDS Bookings](gds-queue-place/gds-bookings.md)
   * [Submit a GDS Booking](gds-queue-place/submit-a-gds-booking/README.md)
     * [PNR Disconnect](gds-queue-place/submit-a-gds-booking/pnr-disconnect.md)
+    * [Automatic ticket issue](gds-queue-place/submit-a-gds-booking/automatic-ticket-issue.md)
   * [GDS One way flight bookings](gds-queue-place/gds-one-way-flight-bookings.md)
 * [Offers](offers/README.md)
   * [Create new offer](offers/create-new-offer.md)
@@ -89,12 +99,12 @@
 * [Customer information (errata)](customer-information-errata/README.md)
   * [Customer Information on Destination setup](customer-information-errata/customer-information-on-destination-setup.md)
   * [Customer Information on Resort setup](customer-information-errata/customer-information-on-resort-setup.md)
-  * [Customer Information on Transport setup](customer-information-errata/customer-information-on-transport-setup.md)
+  * [Customer Information on Transport Setup](customer-information-errata/customer-information-on-transport-setup.md)
   * [Customer Information on Hotel setup](customer-information-errata/customer-information-on-hotel-setup.md)
   * [Customer Information on Extra setup](customer-information-errata/customer-information-on-extra-setup.md)
   * [Customer Information on WebBooking](customer-information-errata/customer-information-on-webbooking.md)
   * [Customer Information Booking Flow](customer-information-errata/customer-information-booking-flow.md)
-  * [Customer Information display on Ticket](customer-information-errata/customer-information-display-on-ticket.md)
+  * [Customer Information displayed on the Ticket](customer-information-errata/customer-information-displayed-on-the-ticket.md)
 
 ## Tickets
 
@@ -135,16 +145,16 @@
 
 ## Price List
 
-* [Pricelist](price-list/pricelist.md)
-* [Pricelist Setup](price-list/pricelist-setup.md)
-* [Migrate Pricelist](price-list/migrate-pricelist.md)
+* [Price List](price-list/pricelist.md)
+* [Price List Setup](price-list/pricelist-setup.md)
+* [Migrate Price List](price-list/migrate-pricelist.md)
 
 ***
 
 * [Price regulation rules](price-regulation-rules.md)
-* [Pricelist Tags](pricelist-tags.md)
-* [Price List Custom Hotel days Service](price-list-custom-hotel-days-service.md)
-* [Relational Price list](relational-price-list.md)
+* [Price List Tags](pricelist-tags.md)
+* [Price List Custom Hotel Days](price-list-custom-hotel-days-service.md)
+* [Relational Price List](relational-price-list.md)
 * [Profit margin rules](profit-margin-rules.md)
 * [Live Offer Profit Margin](live-offer-profit-margin.md)
 * [Price List Generator](generate-pricelist.md)
@@ -156,13 +166,15 @@
   * [How CH1P1 is used in booking](2-x-child-prices-+-child-price-discount/how-ch1p1-is-used-in-booking.md)
   * [Child pays an adult's price for a double room when it does not occupy an extra bed](2-x-child-prices-+-child-price-discount/child-pays-an-adults-price-for-a-double-room-when-it-does-not-occupy-an-extra-bed.md)
   * [CH1P1 is correctly used in WB](2-x-child-prices-+-child-price-discount/ch1p1-is-correctly-used-in-wb.md)
-  * [CH1P1 & Ch2P1 used in a booking with 3 children using extra beds](2-x-child-prices-+-child-price-discount/ch1p1-and-ch2p1-used-in-a-booking-with-3-children-using-extra-beds.md)
+  * [CH1P1 & CH2P1 used in a booking with 3 children using extra beds](2-x-child-prices-+-child-price-discount/ch1p1-and-ch2p1-used-in-a-booking-with-3-children-using-extra-beds.md)
 
 ## Hotel
 
-* [Hotels](hotel/hotels.md)
+* [Hotels](hotel/hotels/README.md)
+  * [Hotels list page](hotel/hotels/hotels-list-page.md)
 * [Hotel creation](hotel/hotel-creation/README.md)
   * [Create using the wizard](hotel/hotel-creation/create-using-the-wizard.md)
+  * [General tab](hotel/hotel-creation/general-tab.md)
   * [Hotel allotments](hotel/hotel-creation/hotel-allotments.md)
   * [Hotel allotment overview](hotel/hotel-creation/hotel-allotment-overview.md)
   * [Allotments per day](hotel/hotel-creation/allotments-per-day/README.md)
@@ -175,6 +187,7 @@
   * [Discount Extra Beds](hotel/hotel-creation/discount-extra-beds.md)
   * [Extra Beds Costs](hotel/hotel-creation/extra-beds-costs.md)
   * [Hotel Web](hotel/hotel-creation/hotel-web.md)
+  * [Passenger Information](hotel/hotel-creation/passenger-information.md)
   * [Communication](hotel/hotel-creation/communication/README.md)
     * [Hotel reporting](hotel/hotel-creation/communication/hotel-reporting.md)
   * [Special Offer](hotel/hotel-creation/special-offer.md)
@@ -182,9 +195,15 @@
   * [Hotel Deposit](hotel/hotel-creation/hotel-deposit.md)
   * [Hotel Activity Log](hotel/hotel-creation/hotel-activity-log.md)
   * [Room cost](hotel/hotel-creation/room-cost/README.md)
-    * [Early Booking Cost Discount Rule – Deletion Behavior](hotel/hotel-creation/room-cost/early-booking-cost-discount-rule-deletion-behavior.md)
-    * [Add room cost rule with "Per Room Per Stay" type](hotel/hotel-creation/room-cost/add-room-cost-rule-with-per-room-per-stay-type.md)
-    * [Add room cost rule with "Per Room Per Stay" with a specific stay days value](hotel/hotel-creation/room-cost/add-room-cost-rule-with-per-room-per-stay-with-a-specific-stay-days-value.md)
+    * [Room Cost Rules](hotel/hotel-creation/room-cost/room-cost-rules/README.md)
+      * [Add room cost rule with "Per Room Per Stay" type](hotel/hotel-creation/room-cost/room-cost-rules/add-room-cost-rule-with-per-room-per-stay-type.md)
+      * [Add room cost rule with "Per Room Per Stay" with a specific stay days value](hotel/hotel-creation/room-cost/room-cost-rules/add-room-cost-rule-with-per-room-per-stay-with-a-specific-stay-days-value.md)
+    * [Early Booking Cost Discount Rules](hotel/hotel-creation/room-cost/early-booking-cost-discount-rules/README.md)
+      * [Early Booking Cost Discount Rule – Deletion Behavior](hotel/hotel-creation/room-cost/early-booking-cost-discount-rules/early-booking-cost-discount-rule-deletion-behavior.md)
+    * [Stay and Pay Cost Rules](hotel/hotel-creation/room-cost/stay-and-pay-cost-rules.md)
+    * [Hotel Extra Cost Rules](hotel/hotel-creation/room-cost/hotel-extra-cost-rules.md)
+    * [Special Offer Cost Rules](hotel/hotel-creation/room-cost/special-offer-cost-rules.md)
+    * [Room Cost Rule Interactions and FAQ](hotel/hotel-creation/room-cost/room-cost-rule-interactions-and-faq.md)
   * [Room costs](hotel/hotel-creation/room-costs.md)
   * [Occupancy / Handling](hotel/hotel-creation/occupancy-handling/README.md)
     * [Different Max Pax](hotel/hotel-creation/occupancy-handling/different-max-pax.md)
@@ -260,6 +279,7 @@
   * [Edit Quota](transport-rules/edit-quota.md)
   * [Notes](transport-rules/notes.md)
   * [Transport Rules for Hotel Only](transport-rules/transport-rules-for-hotel-only.md)
+  * [Transport Rule Weekdays Support](transport-rules/transport-rule-weekdays-support.md)
 * [Transport Dashboard](transport-dashboard.md)
 * [Transport Price Control](transport-price-control.md)
 * [Transport Payment Rules](transport-payment-rules.md)
@@ -272,7 +292,8 @@
   * [Dynamic transport baggage](real-transports/dynamic-transport-baggage.md)
   * [Dynamic transport supplement](real-transports/dynamic-transport-supplement.md)
   * [Setup for Transport Dynamic Packaging (GDS)](real-transports/setup-for-transport-dynamic-packaging-gds.md)
-  * [Departures](real-transports/departures.md)
+  * [Departures](real-transports/departures/README.md)
+    * [Add Base Cost on Real Transports](real-transports/departures/add-base-cost-on-real-transports.md)
   * [Passenger Information](real-transports/passenger-information.md)
   * [Notes](real-transports/notes.md)
 * [Real Transport Dashboard](real-transport-dashboard.md)
@@ -335,11 +356,13 @@
   * [Users Management](users/users/users-management.md)
   * [User limited view](users/users/user-limited-view.md)
   * [Password expiration](users/users/password-expiration.md)
+  * [Onboard a new employee (Tourpaq Office access)](users/users/onboard-a-new-employee-tourpaq-office-access.md)
 
 ***
 
 * [Brands](brands/README.md)
   * [How to add a new Brand](brands/how-to-add-a-new-brand.md)
+  * [General Settings](brands/general-settings.md)
   * [How to set Payment settings](brands/how-to-set-payment-settings.md)
   * [How to set GDS](brands/how-to-set-gds.md)
   * [How to set SMTP Settings](brands/how-to-set-smtp-settings.md)
@@ -372,7 +395,7 @@
 ## Guest App
 
 * [Guide App](destination-mobile-guide-app.md)
-* [Visit Sun App](visit-sun-app.md)
+* [Guest App](visit-sun-app.md)
 * [Vocabulary](vocabulary.md)
 * [Insider Tips](insider-tips.md)
 * [Maps](maps.md)
@@ -386,14 +409,17 @@
 
 * [Extras](extras-setup/extras/README.md)
   * [Prices](extras-setup/extras/prices.md)
-  * [Resources](extras-setup/extras/resources.md)
+  * [Resources](extras-setup/extras/resources/README.md)
+    * [Add Transport Modes and Transport Types to Extras Resources](extras-setup/extras/resources/add-transport-modes-and-transport-types-to-extras-resources.md)
   * [Allotments](extras-setup/extras/allotments.md)
   * [Sold out behaviour](extras-setup/extras/sold-out-behaviour.md)
   * [Extra package](extras-setup/extras/extra-package.md)
   * [Attributes](extras-setup/extras/attributes.md)
   * [Communication](extras-setup/extras/communication.md)
+  * [Package Content](extras-setup/extras/package-content.md)
   * [Notes](extras-setup/extras/notes.md)
   * [Early booking/Stay and pay and Special Early Booking/Stay and pay](extras-setup/extras/early-booking-stay-and-pay-and-special-early-booking-stay-and-pay.md)
+  * [Passenger information](extras-setup/extras/passenger-information.md)
   * [Teetime](extras-setup/extras/teetime.md)
   * [Multiple product selection in product category](extras-setup/extras/multiple-product-selection-in-product-category.md)
   * [Create an extra with stay days functionality and select it in bookings](extras-setup/extras/create-an-extra-with-stay-days-functionality-and-select-it-in-bookings.md)
@@ -404,7 +430,9 @@
 * [Extras Attributes](extras-attributes.md)
 * [Custom Choices](custom-choices.md)
 * [Extras Category](extras-category/README.md)
-  * [Extra Category Overview](extras-category/extra-category-overview.md)
+  * [Extra Category Overview](extras-category/extra-category-overview/README.md)
+    * [Edit Extra Category](extras-category/extra-category-overview/edit-extra-category.md)
+    * [Communication Tab](extras-category/extra-category-overview/communication-tab.md)
   * [Extra Category Reporting](extras-category/extra-category-reporting.md)
   * [Out / Home](extras-category/out-home/README.md)
     * [Out/Home - Web Booking](extras-category/out-home/out-home-web-booking.md)
@@ -448,8 +476,12 @@
 
 ## Setup
 
-* [Arrival Gateways](setup/arrival-gateways.md)
-* [Departure Gateways](setup/departure-gateways.md)
+* [Arrival Gateways](setup/arrival-gateways/README.md)
+  * [Create New Arrival](setup/arrival-gateways/create-new-arrival.md)
+  * [Edit Existing Arrival](setup/arrival-gateways/edit-existing-arrival.md)
+* [Departure Gateways](setup/departure-gateways/README.md)
+  * [Create New Departure Gateway](setup/departure-gateways/create-new-departure-gateway.md)
+  * [Edit Existing Departure Gateway](setup/departure-gateways/edit-existing-departure-gateway.md)
 * [Destination](setup/destination.md)
 * [Resorts](setup/resorts.md)
 * [Departure stat weeks](setup/departure-stat-weeks.md)
@@ -477,6 +509,7 @@
   * [System Setup – Flight Change Queue](setup/system-setup/system-setup-flight-change-queue.md)
 * [System Setup FTPs](setup/system-setup-ftps.md)
 * [System Setup Groups](setup/system-setup-groups.md)
+* [Web Customer Center](setup/web-customer-center.md)
 * [Creditor Currency Converter](setup/creditor-currency-convertor.md)
 * [Internal logs](setup/internal-logs.md)
 * [Transport Stay Days](setup/transport-stay-days.md)
@@ -488,3 +521,5 @@
 * [Vouchers](setup/vouchers.md)
 * [Autobilling](setup/autobilling.md)
 * [Web Booking API flow](setup/web-booking-api-flow.md)
+* [Glossary](setup/glossary.md)
+* [Troubleshooting](setup/troubleshooting.md)

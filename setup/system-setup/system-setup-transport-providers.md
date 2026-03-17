@@ -32,26 +32,27 @@ The **Transport Providers** section includes several tabs, such as:
 
 ### General tab
 
-<figure><img src="../../.gitbook/assets/image (466).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-| **Field**                                      | **Description**                                                                                                                                                                                        |
-| ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Currency**                                   | Defines the currency used for transport transactions. Example: _EUR_.                                                                                                                                  |
-| **Price change margin**                        | The percentage margin applied when a price change occurs (e.g., 50%).                                                                                                                                  |
-| **Payment rule**                               | Sets the rule for payment processing (e.g., _Normal deposit + GDS cost_). Determines how deposits and GDS-related fees are applied.                                                                    |
-| **Card Owner**                                 | Name of the cardholder used for automated payments or API-based transactions.                                                                                                                          |
-| **Card Type**                                  | Type of payment card used (e.g., _VISA_, _MasterCard_).                                                                                                                                                |
-| **Card Number**                                | Stores the payment card number used for automated processes. Clicking **Change** allows updating card details.                                                                                         |
-| **Expiration Date (Year / Month)**             | Defines the card’s expiration date. Both _Year_ and _Month_ are required.                                                                                                                              |
-| **CVC**                                        | The card security code used for transaction validation.                                                                                                                                                |
-| **Days number for check PNR**                  | Indicates how many days before departure the system should check PNR (Passenger Name Record) information.                                                                                              |
-| **Show TicketNo on Ticket**                    | Displays the GDS ticket number on printed tickets.                                                                                                                                                     |
-| **Time frame before departure**                | Minutes before departure when a flight can be removed from a booking (when booking date equals departure date).                                                                                        |
-| **Transport selection rule**                   | Determines the logic for selecting transport offers, e.g., _Cached flight/winning deal_.                                                                                                               |
-| **Don’t update DTS on Create GDS Reservation** | If enabled, DTS (Data Transport System) is not updated when the GDS reservation is created.                                                                                                            |
-| **Default Provider**                           | Defines which transport provider is used by default (e.g., _Paxport API_).                                                                                                                             |
-| **Early arrival limit**                        | If the arrival time for departure is before the limit, then the guest needs the hotel on the day before the arrival date, adding one extra day (+DAYS) to the stay. This applies only to new bookings. |
-| **Late departure limit**                       | If the return departure time is after the limit, the guest needs one extra hotel night (LAND DAYS). This adds one extra day to the stay. Applies only to new bookings.                                 |
+| **Field**                                         | **Description**                                                                                                                                                                                        |
+| ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Currency**                                      | Defines the currency used for transport transactions. Example: _EUR_.                                                                                                                                  |
+| **Price change margin**                           | The percentage margin applied when a price change occurs (e.g., 50%).                                                                                                                                  |
+| **Payment rule**                                  | Sets the rule for payment processing (e.g., _Normal deposit + GDS cost_). Determines how deposits and GDS-related fees are applied.                                                                    |
+| **Card Owner**                                    | Name of the cardholder used for automated payments or API-based transactions.                                                                                                                          |
+| **Card Type**                                     | Type of payment card used (e.g., _VISA_, _MasterCard_).                                                                                                                                                |
+| **Card Number**                                   | Stores the payment card number used for automated processes. Clicking **Change** allows updating card details.                                                                                         |
+| **Expiration Date (Year / Month)**                | Defines the card’s expiration date. Both _Year_ and _Month_ are required.                                                                                                                              |
+| **CVC**                                           | The card security code used for transaction validation.                                                                                                                                                |
+| **Submit GDS reservation made in Tourpaq Office** | <p>If checked, GDS reservations made in Tourpaq Office will automatically be submitted.<br>(Note: This uses the SubmitGDS service).</p>                                                               |
+| **Days number for check PNR**                     | Indicates how many days before departure the system should check PNR (Passenger Name Record) information.                                                                                              |
+| **Show TicketNo on Ticket**                       | Displays the GDS ticket number on printed tickets.                                                                                                                                                     |
+| **Time frame before departure**                   | Minutes before departure when a flight can be removed from a booking (when booking date equals departure date).                                                                                        |
+| **Transport selection rule**                      | Determines the logic for selecting transport offers, e.g., _Cached flight/winning deal_.                                                                                                               |
+| **Don’t update DTS on Create GDS Reservation**    | If enabled, DTS (Data Transport System) is not updated when the GDS reservation is created.                                                                                                            |
+| **Default Provider**                              | Defines which transport provider is used by default (e.g., _Paxport API_).                                                                                                                             |
+| **Early arrival limit**                           | If the arrival time for departure is before the limit, then the guest needs the hotel on the day before the arrival date, adding one extra day (+DAYS) to the stay. This applies only to new bookings. |
+| **Late departure limit**                          | If the return departure time is after the limit, the guest needs one extra hotel night (LAND DAYS). This adds one extra day to the stay. Applies only to new bookings.                                 |
 
 {% hint style="warning" %}
 If you store card details here, follow your internal compliance rules.
@@ -155,17 +156,18 @@ All fields must be filled with valid credentials provided by Amadeus or by the a
 
 **Fields**
 
-<figure><img src="../../.gitbook/assets/image (469).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (661).png" alt=""><figcaption></figcaption></figure>
 
-| **Field**              | **Description**                                                                                                                     |
-| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| **API Key**            | The authentication key provided by Amadeus. Required to authorize all API requests.                                                 |
-| **API Secret**         | The secret token paired with the API Key. Used to generate secure authentication tokens. Must remain confidential.                  |
-| **Target**             | Identifier for the Amadeus environment (test or production). Determines which Amadeus system the platform communicates with.        |
-| **URL**                | The endpoint address for the Amadeus API services. Defines where requests are sent (e.g., test or live environment).                |
-| **Office ID**          | The Amadeus office identifier assigned to your agency. Required for creating PNRs and other booking-related actions.                |
-| **Duty Code**          | Code defining the agent’s permission level within Amadeus. Often matches the Office ID.                                             |
-| **Use Instant Search** | Enables the Amadeus Instant Search method for faster flight availability responses. When disabled, standard search is used instead. |
+| **Field**                    | **Description**                                                                                                                     |
+| ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| **API Key**                  | The authentication key provided by Amadeus. Required to authorize all API requests.                                                 |
+| **API Secret**               | The secret token paired with the API Key. Used to generate secure authentication tokens. Must remain confidential.                  |
+| **Target**                   | Identifier for the Amadeus environment (test or production). Determines which Amadeus system the platform communicates with.        |
+| **URL**                      | The endpoint address for the Amadeus API services. Defines where requests are sent (e.g., test or live environment).                |
+| **Office ID**                | The Amadeus office identifier assigned to your agency. Required for creating PNRs and other booking-related actions.                |
+| **Duty Code**                | Code defining the agent’s permission level within Amadeus. Often matches the Office ID.                                             |
+| **Use Instant Search**       | Enables the Amadeus Instant Search method for faster flight availability responses. When disabled, standard search is used instead. |
+| **Automatic ticket issuing** | Enables automated issuing of e-tickets for GDS bookings handled through Amadeus.                                                    |
 
 **Usage notes**
 

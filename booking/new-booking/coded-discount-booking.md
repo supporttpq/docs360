@@ -1,15 +1,22 @@
+---
+description: >-
+  Apply a coded discount (bonus code / discount code) in Tourpaq Office New
+  Booking. Enter the code to add a discount or supplement and verify the updated
+  total price in Economics.
+---
+
 # Coded discount booking
 
 ### **Overview**
 
-This page explains how to apply a **coded discount** (also referred to as a **bonus code**) during the booking process.
+This page explains how to apply a **coded discount** (also referred to as a **bonus code** or **discount code**) during the booking process in **Tourpaq Office**.
 
 A bonus code is predefined in the system and can:
 
 * Apply a **discount** (reduce the price), or
 * Apply a **supplement** (increase the price), depending on the configured rules.
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (1).png" alt="Discount/Supplement Bonus Code field in New Booking"><figcaption></figcaption></figure>
 
 ***
 

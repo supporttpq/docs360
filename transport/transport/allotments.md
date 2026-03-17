@@ -1,10 +1,10 @@
 # Allotments
 
-#### Overview
+### Overview
 
 The **Allotments** section is used to manage the number of transport seats available for sale. Allotments ensure proper control over seat availability across different departure and return intervals, while preventing overbooking.
 
-#### Purpose
+### Purpose
 
 The purpose of transport allotments is to:
 
@@ -131,7 +131,7 @@ This is how the allotment is booked for each case:
 
 <figure><img src="../../.gitbook/assets/image-5ea6d85585845348a393ecdb2a2cd848.png" alt=""><figcaption></figcaption></figure>
 
-#### FAQ
+### FAQ
 
 **What is “Generate days number”?**\
 It’s the interval length (in days) used to generate departure dates inside a selling period. You can only pick values that match defined period intervals (for example, 7 or 14).

@@ -1,3 +1,9 @@
+---
+description: >-
+  Manage hotel release rules in Tourpaq Office. Automate room allotment
+  releases, supplier release emails, and release log tracking.
+---
+
 # Releases
 
 ### Overview
@@ -57,7 +63,13 @@ Use this when you want releases evaluated **daily** within a **start/end** perio
 
 On each daily run, Tourpaq releases the target date that matches the rule’s lead time.
 
-Example: a rule with `3` days in advance evaluated on `15-05-2026` targets `18-05-2026`.
+&#x20;\- Example: a rule with `3` days in advance evaluated on `15-05-2026` targets `18-05-2026`.
+
+{% hint style="info" %}
+If current day + number of days (Days) < Start period => rule is ignored.
+
+* Example: a rule with 1 day in advance with a start period on `01-05-2026`, and the current day is `02-03-2026`, the rule will be ignored
+{% endhint %}
 
 ### Examples
 
@@ -102,15 +114,18 @@ Common filters:
 
 ### Release logs
 
-Administrators can review release actions in **Releases Log** (Hotel → Tourpaq).
+Administrators can review release actions in **Activity Log** (Hotel → Tourpaq).
+
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Filters include:
 
-* supplier
-* brand
-* hotel
-* room type
 * period
+* room
+* activity type
+  * create hotel allotment
+  * update hotel allotment
+  * update release info
 
 ### Rule editing behavior
 
@@ -162,15 +177,76 @@ As a result, those past dates remain marked as released. Only dates that fall af
 * Today’s date is **February 2**.
 *   All February dates are set to be unreleased, and the release period is changed to 7 **days**.&#x20;
 
-    <figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
-*   According to the general rule, releases would normally start from **Current day (February 2)+ 30 days**.&#x20;
+    <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+*   According to the rule set is the **Release** tab, the releases would normally start from **Current day (February 2)+ 30 days**.&#x20;
 
-    <figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 *   However, February has a custom release configuration, so the system instead applies **February 2 + 7 days**, which results in February **9**.&#x20;
 
-    <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Because the release calculation uses **February 2 + 7 days (February 9)** due to the custom configuration, any dates **before February 9** will remain marked as released. Only dates **from February 9 onward** will have the **Release** flag removed.
+
+### Editable hotel release - days in the past
+
+Administrator users can edit the **Hotel Release (Days)** directly from the **Allotment per Day** tab, including for dates that are already in the past.
+
+The system recalculates the release status based on the following formula:
+
+**Release Date = Allotment Date − Release Days**
+
+If the calculated Release Date is **earlier than or equal to the current date**, the release is considered performed and the **“R” checkbox** will automatically be ticked again when saving.
+
+#### Example Scenario
+
+* **Current date:** 05.02.2026
+* **Allotment date:** 07.02.2026
+* The Release checkbox is manually removed in the “R” column.
+* The Days value is then modified and saved.
+
+#### Case 1: Days = 3
+
+Release Date = 07.02.2026 − 3 days = 04.02.2026
+
+Since 04.02.2026 is earlier than the current date (05.02.2026), the release has already been performed.
+
+When saving, the system automatically ticks the **“R” checkbox** again.
+
+Any value greater than 3 days will produce the same result because the calculated release date will still be in the past.
+
+#### Case 2: Days = 2
+
+Release Date = 07.02.2026 − 2 days = 05.02.2026
+
+Since the release date is equal to the current date, the release is considered performed.
+
+When saving, the system automatically ticks the **“R” checkbox** again.
+
+Any value greater than 2 days will also trigger automatic release because the calculated release date will be in the past.
+
+#### Case 3: Days = 1
+
+Release Date = 07.02.2026 − 1 day = 06.02.2026
+
+Since 06.02.2026 is later than the current date, the release has not yet been performed.
+
+When saving, the **“R” checkbox remains unticked**.
+
+The release will be performed the following day.
+
+#### Case 4: Days = 0
+
+Release Date = 07.02.2026 − 0 days = 07.02.2026
+
+Since 07.02.2026 is later than the current date, the release has not yet been performed.
+
+When saving, the **“R” checkbox remains unticked**.
+
+The release will be performed on the allotment date.
+
+{% hint style="info" %}
+The system does not allow a manual override of release logic when the calculated release date is already in the past. In such cases, the release status is automatically enforced to maintain data consistency.
+{% endhint %}
 
 ### FAQ
 

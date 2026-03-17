@@ -1,23 +1,31 @@
+---
+description: >-
+  Reconcile guide payments and settlements in Tourpaq Office Finance. Filter by
+  payment period, guide, resort, and payment method. Review debits/credits,
+  extras, and export XLSX for accounting.
+---
+
 # Guide Sales Ledger
 
-The _Guide Sales Ledger_ provides an overview of all payments registered by guides during the selected period. The page consolidates all guide transactions, including debit, credit, commission status, and settlement status, making it easier to validate and reconcile guide-related financial activity.
+The **Guide Sales Ledger** is a finance report for **guide payments**.
 
-This page is typically used by accounting teams, destination managers, and administrators responsible for guide settlements.
+Use it to reconcile what guides collected, what was refunded, and what must be settled for **guide settlement**.
 
-## **Overview**
+It is typically used by finance teams, destination managers, and administrators.
 
-The **Guide Sales Ledger** is a financial reporting module used to track and validate all payments, sales, and extras recorded by guides within a selected time period.\
-It consolidates **debits, credits, extras sold, payment methods, resort activity, and guide performance** into a single interface.
+### Overview
 
-This tool is essential for:
+The report consolidates **debits**, **credits**, **extras**, **payment methods**, and **resort activity** for a selected period.
 
-* Verifying guide transactions
-* Reconciling amounts handed in by guides
-* Checking extras sold per guide
-* Tracking revenue per resort
-* Auditing financial activity for a selected period
+Use it to:
 
-## **Purpose**
+* Verify guide transactions
+* Reconcile amounts handed in by guides
+* Check extras sold per guide
+* Track revenue per resort
+* Audit guide-related financial activity
+
+### Purpose
 
 The purpose of the Guide Sales Ledger is to ensure:
 
@@ -27,39 +35,45 @@ The purpose of the Guide Sales Ledger is to ensure:
 * **Support for accounting and commission validation**
 * **Monitoring of guide performance and operational activity**
 
-By understanding each field, a user can analyze financial data, detect errors, confirm sales, and communicate efficiently with guides and accounting staff.
+You can use the fields to find missing references, validate amounts, and spot abnormal activity.
 
-## **Preconditions**
+### Preconditions
 
-Before working with the Guide Sales Ledger, the following conditions must be met:
+Before working with the Guide Sales Ledger:
 
-1.  You must have an **active Tourpaq user account** (admin or guide) with access to  Guide Sales Ledger.      - For an Admin user to have access to the Guide Sales Ledger menu, after this feature has been activated, a System Administrator must grant certain permissions in the User section, to the user who wants to have access to the feature. The Guide Sales Ledgedr activation permission is in the Finance menu.&#x20;
+* You must have an active Tourpaq Office user with **Financial** permissions (or admin access).
+* A System Administrator must enable access to **Guide Sales Ledger** in user permissions.
 
-    <figure><img src=".gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-2. Guide transactions (debit/credit entries) must already be added by the guides in the destination.
-3. Bookings, extras, and supplier mappings must be configured correctly in the system.
-4. You must know the **payment period** and **allotment period** you are reviewing.
-5. Familiarity with basic financial terms (debit, credit, balance) is recommended.
+<figure><img src=".gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Guide Sales Ledger permission in Finance menu"><figcaption><p>Enable Guide Sales Ledger in user permissions (Finance) to access the report.</p></figcaption></figure>
 
-## **How It Works**
+* Guide transactions (debit/credit entries) must already exist for the period.
+* Bookings, extras, and supplier mappings must be configured correctly.
+* You must know the **payment period** you are reviewing.
+* Familiarity with debit/credit/balance helps.
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+### How it works
 
-### **1. Select Filters**&#x20;
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Guide Sales Ledger filters and results table"><figcaption><p>Filter guide transactions by payment period, guide, resort, and payment method.</p></figcaption></figure>
+
+### 1. Select filters
 
 Users can apply filters to narrow down results:
 
-|                                 |                                                                                                                                                                    |
-| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Payment Period                  | Defines when the payment was registered by the guide.                                                                                                              |
-| <p></p><p>Allotment Period </p> | Optional filter matching payments with specific departure date ranges.                                                                                             |
-| Guide                           | Select a specific guide or guide team.                                                                                                                             |
-| Resorts                         | Limit the view to one or more resorts.                                                                                                                             |
-| **Payment Methods**             | <p></p><p>The payment method used. Examples:</p><ul><li><strong>CHSING</strong> – Cash in guider</li><li><strong>OTHOUTG</strong> – Other refunds guider</li></ul> |
-| **Display**                     | **Display** applies filters                                                                                                                                        |
-| **Clear**                       | **Clear** resets all filters to default                                                                                                                            |
+|                     |                                                                                                 |
+| ------------------- | ----------------------------------------------------------------------------------------------- |
+| Payment Period      | Defines when the payment was registered by the guide.                                           |
+| Allotment Period    | Optional filter matching payments with specific departure date ranges.                          |
+| Guide               | Select a specific guide or guide team.                                                          |
+| Resorts             | Limit the view to one or more resorts.                                                          |
+| **Payment Methods** | The payment method used. Examples: `CHSING` (cash in, guide), `OTHOUTG` (other refunds, guide). |
+| **Display**         | Applies filters.                                                                                |
+| **Clear**           | Resets all filters to default.                                                                  |
 
-#### **Table Columns Explained**
+{% hint style="info" %}
+If you need to **create** a booking payment (not guide payment), use [Payment Registration](finance/payment-registration.md).
+{% endhint %}
+
+#### Table columns explained
 
 | Column                     | Description                                                                                             |
 | -------------------------- | ------------------------------------------------------------------------------------------------------- |
@@ -77,25 +91,26 @@ Users can apply filters to narrow down results:
 | **Ad.**                    | Number of adults in the booking                                                                         |
 | **Ch.**                    | Number of children in the booking                                                                       |
 | **Tr.Code**                | Transaction Code                                                                                        |
-| **Comm.**                  | Commited                                                                                                |
+| **Comm.**                  | Committed                                                                                               |
 | **Dep.Paid**               | Deposit Paid                                                                                            |
 | **Guide Payment Comments** | Any comments added by guide or system                                                                   |
 | **Resort**                 | The resort where the payment was recorded                                                               |
 | **M.O.User**               | Manual Overview User - the name of the user who handles negative extra orders, for credit transactions. |
 
-#### **Row Details**
+#### Row details
 
-Each row can be expanded using the **▸** icon on the left.\
-Expanded rows show the Connected Extras and information about it.
+Each row can be expanded using the **▸** icon on the left.
 
-* Name of the extras
+Expanded rows show connected extras and details.
+
+* Extra name
 * Allotment date
-* Number of the adults & children
-* Price per adult & children
-* Name of the Creditor
-* Name of the Supplier
+* Number of adults and children
+* Price per adult and child
+* Creditor name
+* Supplier name
 
-#### **Totals & Balances**
+#### Totals and balances
 
 The **Sales Ledger** provides a consolidated financial overview of all debits, credits, and resulting balances grouped by currency. It helps users understand how much money has been charged (debit), refunded/credited (credit), and what the outstanding balance is for each currency and in total.
 
@@ -109,19 +124,22 @@ Each currency operates independently in its own ledger line.
 
 #### Currency-Specific Fields
 
-It shows the financial overview of all debits, credits and balances grouped by currency, each currency having the same field structure.
+Totals are grouped by currency. Each currency has the same structure:
 
 Example:
 
-<table><thead><tr><th width="175.75">Currency</th><th width="182.5">Debit</th><th width="219">Credit</th><th>Ballance</th></tr></thead><tbody><tr><td>THB (Thai Baht)</td><td>All debit transactions recorded in THB.</td><td>All credits/refunds/payments recorded in THB</td><td>THB Debit – THB Credit (in THB).</td></tr><tr><td>DKK (Danish Krone)</td><td>Charges recorded in DKK</td><td>Payments/credits recorded in DKK</td><td>Calculated balance in DKK</td></tr><tr><td>EUR (Euro)</td><td>Charges recorded in Euro</td><td>Payments/credits in Euro.</td><td>Balance remaining in Euro</td></tr></tbody></table>
+* **Currency**: for example THB, DKK, EUR.
+* **Debit**: all debit transactions in that currency.
+* **Credit**: all credit/refund transactions in that currency.
+* **Balance**: debit minus credit in that currency.
 
-### **2. Exporting Data**
+### 2. Exporting data
 
 The **Export** button (top right corner) downloads the data in XLSX format.
 
 The export includes:
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Guide Sales Ledger export to XLSX"><figcaption><p>Export the filtered Guide Sales Ledger results to XLSX for accounting and reconciliation.</p></figcaption></figure>
 
 * All displayed columns
 * Raw values (no rounding)
@@ -133,46 +151,44 @@ This file can be used for:
 * Accounting
 * Auditing
 
-## **Typical Flow for Using the Guide Sales Ledger**
+### Typical flow
 
-A simple workflow to follow:
+{% stepper %}
+{% step %}
+### Select payment period
 
-### **Step 1 — Select Payment Period**
+Choose the dates where the guide payments were registered.
+{% endstep %}
 
-Choose the dates where the guide payments were recorded.
+{% step %}
+### Narrow down filters
 
-### **Step 2 — Narrow Down Filters**
+Filter by **Guide**, **Resort**, and **Payment method**.
 
-Filter by:
+Use **Allotment period** if you need to match a departure date range.
+{% endstep %}
 
-* Guide
-* Resort
-* Payment Method
-* Allotment Period (optional)
+{% step %}
+### Review transactions
 
-### **Step 3 — Review Transactions**
+Check debit/credit values, commission status, deposit status, and payment method.
+{% endstep %}
 
-Check:
+{% step %}
+### Expand extras
 
-* Debit and credit values
-* Commission status
-* Deposit status
-* Payment method
+Open the details row to review connected extras, suppliers, and prices.
+{% endstep %}
 
-### **Step 4 — Expand Extras**
+{% step %}
+### Review totals
 
-Show more financial details of the Extra(s) by opening the details row.
+Validate that totals and balances match the expected settlement per currency.
+{% endstep %}
 
-### **Step 5 — Review Totals**
+{% step %}
+### Export
 
-Validate that:
-
-* Totals match guides' delivered
-* Balances are consistent with reports
-
-### **Step 6 — Export**
-
-Use the **Export** button for:
-
-* Bookkeeping
-* Internal audit
+Export to XLSX for bookkeeping and internal audit.
+{% endstep %}
+{% endstepper %}

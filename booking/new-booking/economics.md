@@ -1,12 +1,21 @@
+---
+description: >-
+  Manage booking payments in Tourpaq Office Economics. Track deposit and
+  instalments, due dates, payment status, refunds (Release payment), and take
+  card, gift card, or cash payments.
+---
+
 # Economics
 
-### Overview
+### **Overview**
 
-The **Economics** section provides a comprehensive financial summary and transaction tools for a selected booking. It displays **payment stages, due dates, refund options**, and **booking metadata** such as internet access credentials, update history, and account data. Additionally, it serves as a gateway to initiate payments through various methods.
+The **Economics** tab in **Tourpaq Office** is the booking’s **payment overview**. Use it to track **deposit** and other **payment instalments**, monitor **due dates** and payment status, and flag a booking for **refund** using **Release payment**.
+
+It also contains finance-related booking metadata (account/branch references, update history, web access password) and shortcuts to take **card**, **gift card**, or **cash** payments (if enabled).
 
 ***
 
-### Purpose
+### **Purpose**
 
 This section helps users:
 
@@ -19,7 +28,7 @@ This section helps users:
 
 ***
 
-### Preconditions
+### **Preconditions**
 
 Before using this section:
 
@@ -30,7 +39,7 @@ Before using this section:
 
 ***
 
-### Using Economics
+### **Using Economics**
 
 #### Payment breakdown
 
@@ -132,7 +141,7 @@ In the Economics area you will find **links/buttons** for processing payments. T
 * Ensure the customer's **email** and **phone** are updated to avoid web access issues (e.g. for Internet password use).
 * Use the **last update info** to trace who made financial changes if there are questions or disputes.
 
-<figure><img src="https://sonat.com/api/Document/Image/19670ef0-8b8a-4cda-8eb6-249681e07016/60a72aeb-a272-4428-a118-b6074b1b35b5/055f9e6a-1e8f-4b00-a685-f03c27defc33.webp?width=1864" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://sonat.com/api/Document/Image/19670ef0-8b8a-4cda-8eb6-249681e07016/60a72aeb-a272-4428-a118-b6074b1b35b5/055f9e6a-1e8f-4b00-a685-f03c27defc33.webp?width=1864" alt="Economics tab showing deposit, instalments, due dates, and payment actions"><figcaption><p>Economics: payment stages, due dates, and payment actions.</p></figcaption></figure>
 
 ***
 

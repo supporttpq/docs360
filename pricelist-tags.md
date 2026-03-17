@@ -1,10 +1,17 @@
-# Pricelist Tags
+---
+description: >-
+  Create and apply Tourpaq Office price list tags to label and filter price list
+  lines (offers). Use TAG and TAG CH columns to highlight offers on your website
+  without changing prices.
+---
+
+# Price List Tags
 
 ## Overview
 
-**Price list tags** let you label specific offers (price list lines).
+**Price list tags** let you label specific offers (price list lines / PLTA rows).
 
-You can then use these labels to filter offers and highlight them on the website.
+Use tags to filter offers and highlight selected offers on your website.
 
 ## Purpose
 
@@ -21,7 +28,7 @@ You can then use these labels to filter offers and highlight them on the website
 
 ### Step 1: Create a New Tag
 
-1. Go to **Price List > Price List Tag**.
+1. Go to **Price List → Price List Tag**.
 2. Click **New Tag**.
 3. Enter a **Name** for the new tag.
 4. Click **Save Tag**.
@@ -34,7 +41,7 @@ You can then use these labels to filter offers and highlight them on the website
 2. Filter to the offers you want (transport, hotel, room, dates, etc.).
 3. Click **Display**.
 4. Open **Column Filters**.
-5. Select the checkbox **TAG CH** and click **Display** again.
+5. Enable **TAG CH** (and/or **TAG**) and click **Display** again.
 6. From the displayed results, select one or more offers.
 7. Set the **TAG** value to the tag you want.
 8. Click **Save**.
@@ -45,13 +52,13 @@ The selected offers are now tagged. They can be filtered or highlighted on the w
 
 ### **FAQ**
 
-**What are pricelist tags?**\
-Pricelist tags are labels you can assign to specific offers to help identify and filter offers.
+**What are price list tags?**\
+Price list tags are labels you can assign to specific offers (price list lines) to help identify and filter them.
 
-**Why would I use a pricelist tag?**\
+**Why would I use a price list tag?**\
 Tags make selected offers easier to identify and can be used for custom filtering on the website.
 
-**Who can create pricelist tags?**\
+**Who can create price list tags?**\
 Any user with access to the Price List menu can create tags.
 
 **Do I need price lists before I use tags?**\
@@ -61,10 +68,10 @@ Yes. You must have at least one price list with transport, hotel, and room alrea
 Tags allow offers to be filtered or highlighted differently on the website.
 
 **Can tags be applied to multiple offers at once?**\
-Yes. You can select multiple offers and assign a tag to all of them.&#x20;
+Yes. You can select multiple offers and assign a tag to all of them.
 
 **Will tags change pricing values?**\
-No. Tags are labels only; they do not change pricing values. (_Not explicitly documented but inferred from purpose_)&#x20;
+No. Tags are labels only. They do not change pricing values.
 
 **Are tags mandatory for filtering?**\
-Tags are optional. Filters can be used without tags unless you need custom tagging filters. (_Not explicitly documented but inferred from purpose_)
+Tags are optional. Use them when you need a custom label-based filter.

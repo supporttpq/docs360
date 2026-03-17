@@ -1,26 +1,34 @@
+---
+description: >-
+  Print and email ticket PDFs in Tourpaq Office. Send an e-ticket for one
+  booking, copy to another email address, or bulk reprint tickets per transport
+  and departure period.
+---
+
 # Print Tickets
 
-### Print Tickets
+### Overview
 
-Use **Print Tickets** when you need to generate a ticket PDF for a single booking—either to print it, save it, or send it as an e-ticket email to the customer.
+Use **Print Tickets** to generate a ticket PDF for a booking. Print it, download it, or send it as an e-ticket email. Use **Reprint Per Transport** for bulk ticket printing by transport and departure period.
 
-<figure><img src="../.gitbook/assets/image (161).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (161).png" alt="Tourpaq Office Print Tickets page with Booking No field and actions for printing and sending ticket PDFs"><figcaption><p>Print Tickets in Tourpaq Office. Use it to print or email a ticket PDF (e-ticket) for a single booking.</p></figcaption></figure>
 
 ***
 
 ### What you can do on this page
 
-* **Print** a ticket for a specific booking.
-* **Send an e-ticket by email** to the customer.
-* **Send a copy to an alternative email address** (for example, a colleague or a group leader).
-* **Reprint tickets in bulk per transport** (tab at the top).
+* **Print** a ticket PDF for a specific booking.
+* **Send an e-ticket email** with the ticket PDF to the customer.
+* **Copy the e-ticket to another email address** (for example, a colleague or a group leader).
+* **Bulk reprint ticket PDFs per transport** in **Reprint Per Transport**.
 
 ***
 
 ### Before you start
 
 * You need a **valid booking number**.
-* The booking should be **confirmed** and contain products that generate a ticket.
+* The booking should be **confirmed**.
+* The booking must include products that generate a ticket.
 * You must have access rights to use ticket actions.
 
 {% hint style="info" %}
@@ -35,7 +43,7 @@ If you only need to check whether a ticket email was sent (and whether it failed
 {% step %}
 ### 1) Enter the booking number
 
-In **Booking No**, enter the booking number.
+In **Booking No**, enter the booking number (booking reference).
 
 * If the booking is valid, **Customer** is filled in automatically.
 * If the customer is not filled in, re-check the booking number and that you have access to the booking.
@@ -59,7 +67,7 @@ Select the options that match your task:
 {% step %}
 ### 3) Generate / send
 
-Complete the action (print or send) using the page’s available action button(s).
+Complete the action using the page’s button(s). Tourpaq generates the ticket PDF from the booking’s current data.
 
 {% hint style="warning" %}
 If you are sending an e-ticket and the customer does not receive it, verify the email address on the booking and check your email log in [E-tickets Overview](../e-tickets-overview.md).
@@ -71,9 +79,9 @@ If you are sending an e-ticket and the customer does not receive it, verify the 
 
 ### Reprint Per Transport (bulk)
 
-Use **Reprint Per Transport** when you need to print or reprint tickets for **many bookings** connected to specific transports (for example, upcoming departures).
+Use **Reprint Per Transport** when you need to print or reprint tickets for **many bookings**. This workflow groups results by transport and departure period.
 
-<figure><img src="../.gitbook/assets/image (162).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (162).png" alt="Tourpaq Office Reprint Per Transport tab with filters for booking period, departure period, length, and transport selection"><figcaption><p>Reprint Per Transport. Bulk reprint ticket PDFs by transport, booking period, and departure period.</p></figcaption></figure>
 
 #### When this is useful
 

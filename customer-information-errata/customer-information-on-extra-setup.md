@@ -1,18 +1,25 @@
+---
+description: >-
+  Configure extra-level customer information (errata) in Tourpaq Office. Add
+  guest notices for excursions/transfers on tickets/WebBooking, with
+  travel/booking periods and optional acknowledgment.
+---
+
 # Customer Information on Extra setup
 
 {% hint style="info" %}
 **How to access:** **Extras Setup → Extras** → open an extra → **Passengers Information**.
 
-Use this area to add **customer information / errata** for an extra, optionally limited by travel dates and booking dates.
+Use this area to add **customer information / errata** (guest notifications) for an extra, optionally limited by travel dates and booking dates.
 {% endhint %}
 
 ### Overview
 
-You can add **Passenger Information** rules to an **extra** so that important messages are shown during booking (and in some setups on documents).
+You can add **Passenger Information** rules to an **extra** so important messages are shown during booking. In some setups, the message also appears on tickets/vouchers.
 
 Typical use cases:
 
-* Important conditions or restrictions for an excursion/transfer
+* Conditions or restrictions for an excursion or transfer
 * What’s included/not included in an extra
 * Meeting point / meeting time information
 * Mandatory terms the customer must acknowledge before the booking can be completed
@@ -145,7 +152,7 @@ If the message should apply to everyone traveling in the period, leave booking d
 
 Common reasons:
 
-* **To** date is earlier than (or the same as) **From**.
+* **To** is earlier than (or the same as) **From**.
 * Your new rule overlaps an existing rule in a way that isn’t allowed.
 * A required field is missing (especially the message text).
 

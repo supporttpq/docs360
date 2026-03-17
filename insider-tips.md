@@ -2,7 +2,7 @@
 
 #### Overview
 
-The **Insider Tips** feature allows guides and admins to share personalized advice, recommendations, or local insights with guests through the **VisitSun mobile app**.\
+The **Insider Tips** feature allows guides and admins to share personalized advice, recommendations, or local insights with guests through the **Guest App**.\
 These tips are configured in **Tourpaq Office**, under **Guest App → Insider Tips**, and once created, they appear in the **Insider Tips** section of the app.\
 This functionality helps enhance the guest experience by offering valuable, experience-based information directly from local guides or the travel agency.
 
@@ -37,7 +37,7 @@ By offering this information digitally, guests can easily access relevant insigh
 6. **Upload an Image (Optional):**
    * Add a photo to visually support the information, if relevant.
 7. **Click Save:**
-   * The new tip will appear in the list and will be visible to guests in the VisitSun app under the **Insider Tips** section.
+   * The new tip will appear in the list and will be visible to guests in the Guest App under the **Insider Tips** section.
 
 ***
 

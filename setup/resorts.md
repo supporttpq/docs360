@@ -79,7 +79,7 @@ If deletion is blocked, the resort is likely in use.
 
 ### Edit a resort
 
-<figure><img src="../.gitbook/assets/image (375).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (604).png" alt=""><figcaption></figcaption></figure>
 
 ### Fields (edit resort)
 
@@ -108,14 +108,6 @@ If deletion is blocked, the resort is likely in use.
   * Checkbox to enable the resort for online sales.
 * **Show alternating text on web**
   * Displays alternate marketing text on the website if enabled.
-* **Teaser Text**
-  * Short promotional text shown in website teasers.
-* **Metadesc**
-  * Meta description used for search engines (SEO).
-* **Keywords**
-  * SEO keywords related to the resort.
-* **Title**
-  * Title used for web/SEO purposes.
 * **Latitude / Longitude**
   * Geographical coordinates of the resort.
   * Useful for maps and geo-location features.
@@ -133,16 +125,14 @@ If deletion is blocked, the resort is likely in use.
   * Controls whether the resort is visible or hidden.
 * **Source Agency**
   * Defines which agency/brand the resort belongs to (e.g., _All brands_).
-* **Administration**
-  * Cost assigned for administration related to this resort.
-* **Destination cost**
-  * Cost applied for the specific destination.
-* **Handling**
-  * Handling fee linked to the resort.
-* **Transfer**
-  * Cost of transfers (e.g., airport–hotel transfers).
-* **Miscellaneous**
-  * Additional costs that don’t fall under other categories.
+* **Teaser Text**
+  * Short promotional text shown in website teasers.
+* **Metadesc**
+  * Meta description used for search engines (SEO).
+* **Keywords**
+  * SEO keywords related to the resort.
+* **Title**
+  * Title used for web/SEO purposes.
 * **Description**
   * Rich-text editor field where a full description of the resort can be added.
   * Supports formatting, links, and images.
@@ -212,7 +202,7 @@ The purpose of the **Passenger Information** page is to:
 
 #### **Instructions**
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Accessing Passenger Information**
 
@@ -245,10 +235,20 @@ The list will display all entries configured for the selected resort.
 In the provided example:
 
 * The resort **CHQ** has one passenger information entry titled **Resort Errata Def**.
-* It applies to stays from **28-10-2025** to **28-11-2025**.
+* It applies to stays from **28-10-2025** to **28-10-2026 and 01-02-2026 to 28-02-2026**
 * The entry is marked as _Acknowledged_, meaning passengers are required to confirm it.
 
-### FAQ
+{% hint style="info" %}
+#### Passenger information allows overlapping periods <a href="#passenger-information-allows-overlapping-periods" id="passenger-information-allows-overlapping-periods"></a>
+
+Ex: If fixed info is made for the entire season (28.10.25 - 28.10.26) - Resort errata Def, and another info is made for a short period (01.02.26 - 28.02.26) - Resort overlapp periods. Even if the periods overlap, the system will allow and displayed both on the ticket.
+{% endhint %}
+
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+### <sup>FAQ</sup>
 
 <details>
 
@@ -312,4 +312,4 @@ Enable **Acknowledge** if you need confirmation.
 ### Related pages
 
 * [Destination](destination.md)
-* [Arrival Gateways](arrival-gateways.md)
+* [Arrival Gateways](arrival-gateways/)

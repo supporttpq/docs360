@@ -1,3 +1,10 @@
+---
+description: >-
+  Automate offer follow-ups with scheduled reminder emails and SMS. Configure
+  schedules per brand, enable Send Schedule Email/SMS on offers, and
+  verify/cancel reminders in Email History.
+---
+
 # Customer offers automatic flow
 
 ### Overview
@@ -27,7 +34,7 @@ Go to:
 
 This is the same area where you manage offer texts, images, and templates. See [Select text for Offers](select-text-for-offers.md).
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (31).png" alt="Automatic offer reminder settings in Brand → Select Offer"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (55).png" alt="Automatic offer reminder settings in Brand → Select Offer"><figcaption><p>Brand settings for reminder schedule days and email/SMS reminder templates.</p></figcaption></figure>
 
 ***
 
@@ -70,7 +77,7 @@ You may see these as checkboxes in the Brand setup and/or when working with the 
 
 ### Use automatic reminders on an offer
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (1).png" alt="Enable scheduled email/SMS reminders on an offer"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (16).png" alt="Enable scheduled email/SMS reminders on an offer"><figcaption><p>Enable Send Schedule Email and/or Send Schedule SMS on the offer.</p></figcaption></figure>
 
 {% stepper %}
 {% step %}
@@ -113,7 +120,7 @@ Open **Email History** to confirm which reminders are queued/sent.
 
 ### Email History (how to read it)
 
-<figure><img src="../.gitbook/assets/image (276).png" alt="Email history showing sent and canceled scheduled emails"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (276).png" alt="Email history showing sent and canceled scheduled emails"><figcaption><p>Email History shows sent reminders and canceled scheduled messages.</p></figcaption></figure>
 
 Email History helps you verify what happened:
 
@@ -148,3 +155,61 @@ Make sure your SMS template includes the `[Message]` placeholder. See [Customer 
 * **Less manual work** (reminders happen automatically).
 * **Better overview** of communication through Email History.
 * **Fewer duplicate messages**, because reminders are canceled when the offer turns into a booking.
+
+### FAQ
+
+<details>
+
+<summary><strong>Are reminders sent automatically when I create an offer?</strong></summary>
+
+No.
+
+You send the initial offer manually. Reminders are scheduled only after:
+
+* the brand schedule is configured, and
+* **Send Schedule Email/SMS** is enabled on the offer.
+
+</details>
+
+<details>
+
+<summary><strong>What do “Email reminder schedule days” mean?</strong></summary>
+
+They are comma-separated day offsets like `3,7,14`.
+
+Each value is a reminder point (commonly counted from when the offer is sent).
+
+</details>
+
+<details>
+
+<summary><strong>Why are no reminders being sent?</strong></summary>
+
+Check these first:
+
+* schedule days are filled (`3,7,14` etc.)
+* reminder subject/body (and SMS body) is filled
+* **Send Schedule Email/SMS** is enabled on the offer
+* you edited the correct **Brand**
+
+</details>
+
+<details>
+
+<summary><strong>What happens to scheduled reminders if the customer books?</strong></summary>
+
+Remaining scheduled reminders are typically **canceled automatically** when the offer is converted to a booking.
+
+Verify in **Email History**.
+
+</details>
+
+<details>
+
+<summary><strong>Why is the SMS missing the text I typed?</strong></summary>
+
+Your SMS template must include the `[Message]` placeholder.
+
+See [Customer Offer SMS template](customer-offer-sms-template.md).
+
+</details>

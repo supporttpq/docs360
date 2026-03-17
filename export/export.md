@@ -1,34 +1,61 @@
+---
+description: >-
+  Schedule automatic Excel (XLSX) exports in Tourpaq Office. Create recurring
+  booking/cost reports (daily, weekly, monthly), manage schedules, and download
+  the latest export result.
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+---
+
 # Export - Scheduled Reports
 
-### **Overview**
+### Overview
 
-The **Export – Schedules** allows users to configure and manage automatic data exports from the system. Exports can be scheduled to run at specific intervals (daily, weekly, or monthly), using predefined filters such as booking or departure dates. The purpose of this page is to automate report generation and distribution, ensuring that data is consistently updated and available without manual export actions.
+**Export schedules** let you automate recurring **Excel (XLSX) exports** from Tourpaq Office.
 
-### **Purpose**
+Schedule booking, discount, cost, or finance reports to run **daily**, **weekly**, or **monthly**, based on your export filters (booking and departure periods).
+
+This is used for **scheduled reports** and **recurring exports** without manual downloads.
+
+### Purpose
 
 This functionality helps users save time and maintain consistency by:
 
 * Automating repetitive export tasks.
-* Ensuring data reports (e.g., bookings, departures) are generated regularly.
-* Allowing different configurations for various reporting needs (e.g., last week, last month, custom ranges).
-* Managing and monitoring all scheduled exports from a single view.
+* Generating updated reports on a fixed schedule (daily/weekly/monthly).
+* Supporting common periods like yesterday, last 7 days, last week, and last month.
+* Keeping all scheduled exports in one place for monitoring and download.
 
 ***
 
-### **Export Scheduling Options**
+### Export scheduling options
 
-<figure><img src="../.gitbook/assets/image (8) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (3).png" alt="Export schedules actions next to the Export button"><figcaption><p>Use schedules to view existing exports, create a new schedule, and manage recurring XLSX reports.</p></figcaption></figure>
 
-Using the three buttons located next to the **Export** button, you can:
+Using the buttons next to **Export**, you can:
 
 * **View** all previously scheduled exports
 * **Create** new export schedules based on selected filters
 
-### **Page Structure and Fields**
+### Page structure and fields
 
-<figure><img src="../.gitbook/assets/image (9) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (3).png" alt="Export filters and schedules table"><figcaption><p>Top: export filters. Bottom: the schedules table where you enable, configure, and download scheduled exports.</p></figcaption></figure>
 
-#### **Export Filters (Top Section)**
+#### Export filters (top section)
 
 These filters define the base parameters for what will be included in the exported data.
 
@@ -42,38 +69,38 @@ These filters define the base parameters for what will be included in the export
 
 ***
 
-#### **Schedules Section**
+#### Schedules section
 
 This table lists all configured automatic exports. Each row represents a schedule with customizable options.
 
-| Column                          | Description                                                                                                                                                                                  |
-| ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Enabled**                     | Checkbox to activate or deactivate the schedule. Only enabled schedules will run automatically.                                                                                              |
-| **Description**                 | A user-defined name or label for the schedule (e.g., “test15Mel”). Useful for identifying different exports.                                                                                 |
-| **Schedule Type**               | Defines how often the export runs. Options include:• **Once a day**• **Once a week**• **Once a month**                                                                                       |
-| **Departure**                   | Specifies which departure period the export will cover. Options include:• **Custom**• **Last month**• **Last week**• **Last 7 days**• **Yesterday**                                          |
-| **Day**                         | Defines the exact day or frequency when the export should occur.Examples:• For monthly schedules: day of the month (1–31).• For weekly schedules: a specific weekday (e.g., Monday, Friday). |
-| **Get Latest Result (🗎 icon)** | Opens or downloads the latest generated export file for this schedule.                                                                                                                       |
-| **Delete (🗑️ icon)**           | Removes the selected schedule.                                                                                                                                                               |
+| Column                          | Description                                                                                                             |
+| ------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| **Enabled**                     | Checkbox to activate or deactivate the schedule. Only enabled schedules will run automatically.                         |
+| **Description**                 | A user-defined name or label for the schedule (e.g., “test15Mel”). Useful for identifying different exports.            |
+| **Schedule Type**               | How often the export runs: **Once a day**, **Once a week**, or **Once a month**.                                        |
+| **Departure**                   | Which departure period the export covers: **Custom**, **Yesterday**, **Last 7 days**, **Last week**, or **Last month**. |
+| **Day**                         | When the export runs. Monthly schedules use a day of month (1–31). Weekly schedules use a weekday (for example Monday). |
+| **Get Latest Result (🗎 icon)** | Opens or downloads the latest generated export file for this schedule.                                                  |
+| **Delete (🗑️ icon)**           | Removes the selected schedule.                                                                                          |
 
 ***
 
-### **Export Button (Top Right)**
+### Export button (top right)
 
 Initiates a **manual export** using the current filters and options selected, independent of the schedule.
 
-#### **Instructions**
+### Instructions
 
 1. **Add a New Schedule**
    * Click on the last empty row in the schedule list.
    * Enter a **Description** (e.g., “Monthly Booking Export”).
    * Choose a **Schedule Type** (daily, weekly, monthly).
-   * Define the **Departure** period:&#x20;
-     * Custom - use the filters set in the general field without Export Type.  The export will generate 2 different exports (one for Booking and one for Cost);
-     * Yesterday - will generate an export from the previous day before the day when the scheduler was created;
-     * Last 7 days - Used for weekly reports, exporting the last 7 days
-     * Last week -  Used for weekly reports, exporting the previous week
-     * Last month - Used for monthly reports, exporting last month.
+   * Define the **Departure** period:
+     * **Custom**: use the filters you set in the top section. Depending on your setup, Custom schedules can generate separate exports (for example Bookings and Cost).
+     * **Yesterday**: export for the previous day.
+     * **Last 7 days**: rolling 7-day export.
+     * **Last week**: previous calendar week export.
+     * **Last month**: previous calendar month export.
    * Select the appropriate **Day** for the export.
    * Check **Enabled** to activate it.
 2. **Disable or Delete a Schedule**
@@ -84,20 +111,23 @@ Initiates a **manual export** using the current filters and options selected, in
 
 ***
 
-#### **Notes**
+### Notes
 
 * Only **enabled** schedules will run automatically.
 * You can manage multiple schedules for different purposes (e.g., weekly sales, monthly statistics).
 * Ensure your selected **Export Type** supports the desired data format.
-* Each schedule is generated only once a day (the time is set by the Super Admin and is usually at night). The resulting file can be downloaded manually using the Get Latest Result button.
+* Schedules are generated once per day at a time set by the Super Admin (usually at night).
+* Download the latest scheduled file using **Get Latest Result**.
 
-The finance export file is generated each night but, the export is dependent on the schedule set, e.g daily, yes, then it is for this night, but if weekly it will take the export from that specific, day scheduled in the schedule. The Super Admin collaborates with the developer to determine the specific hour for scheduling tasks.&#x20;
+The exact runtime is configured centrally. It can vary by environment and setup.
 
-### Daily export of  the Financial Export
+### Daily finance export file
 
-Additionally, the scheduling of the Finance export file is separate from the time set for the scheduler. It is also worth noting that email addresses for the Finance Export can be configured in Setup / System Setup / General Information / Settings.&#x20;
+Some setups generate a separate **Finance export file** on a fixed nightly run.
 
-<figure><img src="../.gitbook/assets/image (352).png" alt=""><figcaption></figcaption></figure>
+Email recipients for the finance export can be configured in `Setup → System Setup → General Information → Settings`.
 
-* Each user only sees the schedulers defined by him/her (he/she cannot see other schedulers defined by other users).
-* The filters set do not affect already created schedulers. They can only be generated with the Export button, or to create a new scheduler using the filters.
+<figure><img src="../.gitbook/assets/image (352).png" alt="Finance export schedule configuration"><figcaption><p>Finance export configuration: recipients and scheduling are maintained separately from Export schedules.</p></figcaption></figure>
+
+* Each user only sees the schedules they created.
+* Changing filters does not update existing schedules. Create a new schedule if the filters change.

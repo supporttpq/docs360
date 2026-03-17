@@ -1,42 +1,33 @@
 # Dynamic Email - Link Dialog
 
-#### **Overview**
+### Overview
 
-The **Link dialog** is used to insert or edit hyperlinks within text content. It allows you to define how a link appears, where it points, and how it should behave when clicked. The dialog is divided into three tabs: **Link Info**, **Target**, and **Upload**.
+Use the **Link dialog** to add a link in your email text. You can also use it to edit an existing link.
 
-#### **Tabs & Their Functionality**
+You control three things:
 
-<figure><img src="../../.gitbook/assets/image (347).png" alt=""><figcaption></figcaption></figure>
+* what the link text looks like,
+* where the link goes, and
+* how it opens when someone clicks it.
 
-**1. Link Info (default tab)**
+<figure><img src="../../.gitbook/assets/image (347).png" alt="Link dialog with tabs: Link Info, Target, Upload."><figcaption></figcaption></figure>
 
-This tab controls the basic properties of the hyperlink.
+### Link Info tab
 
-* **Display Text**
-  * The visible text in the editor that will be clickable.
-  * Example: _Testlink_.
-* **Link Type**
-  * Defines the kind of link being created.
-  * Options include:
-    * **URL** (standard web address)
-    * **Anchor** (linking to a location within the same page/document)
-    * **E-mail** (creates a clickable email address link).
-* **Protocol**
-  * Defines the link’s protocol (e.g., `http://`, `https://`, `ftp://`).
-  * When inserting **variables** as hyperlinks, select **\<other>**.
-    * This ensures the system interprets the variable correctly instead of treating it as a standard web URL.
-    * Example: If inserting a confirmation variable like `(`\[Hash-key-link]`)`, the correct setup is:
-      * **Protocol:** `<other>`
-      * **URL:** \[Hash-key-link]
-* **URL**
-  * The actual destination of the hyperlink.
-  * Can be a standard web link (e.g., `https://example.com`) or a system variable (e.g., `(`\[Hash-key-link]`)`).
-* **Browse Server**
-  * Opens the file browser to link to files or media already uploaded to the system.
+This is the main tab. You will use it for most links.
 
-<figure><img src="../../.gitbook/assets/image (346).png" alt=""><figcaption></figcaption></figure>
+* **Display Text**: the clickable text people see. Example: `Open booking`.
+* **Link Type**:
+  * **URL**: a normal web address.
+  * **Anchor**: a jump to a place in the same content.
+  * **E-mail**: a clickable email address.
+* **Protocol**: the start of the address, like `https://`.
+* **URL**: the address the link should open.
+* **Browse Server**: pick a file or image you already uploaded.
 
-**2. Target**
+<figure><img src="../../.gitbook/assets/image (346).png" alt="Link Info settings with fields like Protocol, URL, and Browse Server."><figcaption></figcaption></figure>
+
+### Target tab
 
 This tab defines how the link should open when clicked.
 
@@ -47,23 +38,68 @@ This tab defines how the link should open when clicked.
   * **Parent Frame (\_parent)** – Opens link in the parent frame (if applicable).
   * **Topmost Window (\_top)** – Opens link in the full browser window.
 
-**3. Upload**
+### Upload tab
 
-This tab allows direct file upload to the server and creates a link to the uploaded file.
+Use this tab to upload a file and link to it.
 
-* **Choose File** → Select a file from your computer.
-* **Upload to Server** → Sends the file to the server.
-* Once uploaded, the system automatically fills in the file’s URL, making it linkable.
+1. Click **Choose File** and select the file.
+2. Click **Upload to Server**.
+3. After upload, the link address is filled in for you.
 
-#### **Variables in Hyperlinks**
+### Using placeholders (variables) as links
 
-In some cases, you may need to insert system variables (placeholders) as hyperlinks.
+Some links are not normal web addresses. They are **placeholders** that the system replaces when sending. A common example is the customer link: `[Hash-key-link]`.
 
-* Example: `(confirmation link)` or `(unsubscribe link)`.
-* **Important:** Always set **Protocol** to **\<other>** when using variables.
-  * This prevents the editor from trying to force a standard `http://` or `https://` prefix, which would break the variable.
-* Correct setup for a variable hyperlink:
-  * **Display Text:** Confirmation Link
-  * **Link Type:** URL
-  * **Protocol:** \<other>
-  * **URL:** (\[Hash-key-link])
+{% hint style="info" %}
+When you use a placeholder as a link, set **Protocol** to .
+
+This prevents the editor from adding `https://` in front of the placeholder.
+{% endhint %}
+
+Use these settings:
+
+* **Link Type**: `URL`
+* **Protocol**: `<other>`
+* **URL**: `[Hash-key-link]`
+
+### FAQ
+
+<details>
+
+<summary>What does “Protocol” mean?</summary>
+
+It is the start of the link address. Most web links use `https://`.
+
+If you are using a placeholder like `[Hash-key-link]`, choose `<other>`.
+
+</details>
+
+<details>
+
+<summary>When should I use “New Window (_blank)”?</summary>
+
+Use it when you want the link to open in a new tab.
+
+This helps the reader keep the email page open.
+
+</details>
+
+<details>
+
+<summary>My placeholder link does not work. What is the usual reason?</summary>
+
+Most of the time, **Protocol** was not set to `<other>`.
+
+Set **Protocol** to `<other>` and keep the URL exactly as `[Hash-key-link]`.
+
+</details>
+
+<details>
+
+<summary>Can I link to a file I uploaded?</summary>
+
+Yes. Use the **Upload** tab to upload the file.
+
+Or use **Browse Server** if the file is already there.
+
+</details>

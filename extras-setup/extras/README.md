@@ -6,7 +6,7 @@ Extras are optional services/products that a customer can book; like transfer, c
 
 #### Brands
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Allow the user to assign an extra to an agency. An extra can be assigned as follow:
 
@@ -33,7 +33,7 @@ Allow the user to assign an extra to an agency. An extra can be assigned as foll
 | **Contract Type**           | Specify the contract type (Allotment, Guarantee, Request, FreeSell).                                                                                                                                                                                                                                                                                                                                                                          |
 | **Days Prices Option**      | <p>Allows limiting the prices per day options presented to the web user. Default is <code>0</code> if no variation. Only works for prices declared with days!!!!!! If no Days are declared, the product will be removed!<br>Ex: stay days = 14<br>days price option = 1<br>price days = 7,14,21</p><p>price days >= stay days - X</p><p>7,14,21 >= 14 - 1 => 14,21</p>                                                                        |
 | **Allotment Type**          | Is used to control the number of products available and the time they are available in. The choices are **Manual, Generic** and **Linked to transport**                                                                                                                                                                                                                                                                                       |
-| **Extras Category**         | Categorize the extra (e.g., Meal, Transfer, Tour). This is required.                                                                                                                                                                                                                                                                                                                                                                          |
+| **Extras Category**         | Categorize the extra (e.g., Meal, Transfer, Tour). The user can choose from the dropdown one of the categories created in the Extras Category. This is required.                                                                                                                                                                                                                                                                              |
 | **Age**                     | Define the applicable age group (e.g., Adult, Child, Infant).                                                                                                                                                                                                                                                                                                                                                                                 |
 | **Period/Trip Length**      | Limit availability by trip length interval.                                                                                                                                                                                                                                                                                                                                                                                                   |
 | **SSR Codes**               | Assigns a SSR code to the extra and when chosen in a booking, the SSR code is reported to the transport company, thus keeping an evidence of passengers                                                                                                                                                                                                                                                                                       |
@@ -74,13 +74,42 @@ Allows integration with internal billing and accounting systems for accurate cos
 | **Automatic Billing**    | Enable automated billing upon booking.                                                       |
 | **Schedule in the Past** | Allows scheduling billing for past dates (use with caution).                                 |
 
+### Golf Course&#x20;
+
+<figure><img src="../../.gitbook/assets/image (602).png" alt=""><figcaption></figcaption></figure>
+
+This section is shown **only when an Extra is configured with the type&#x20;**_**Golf**_.\
+If the Extra has a different type, this section is not displayed.
+
+#### Rounds
+
+Defines how many golf rounds are included in this extra.
+
+* Numeric value
+* Represents the maximum number of rounds for one booking. Valid number are 1 to 99
+* Used by the system when calculating and validating the golf product in the booking
+
+Example:\
+If **Rounds = 5**, the guest is entitled to five rounds of golf.
+
+#### Product Parent ID
+
+Internal identifier that links this golf extra to its parent product in Tourpaq.
+
+* Used internally by the system to connect related products
+* Fill Product ID when you want to use genarated allotment from another Product.
+
+#### Important
+
+These fields are **only relevant for Extras of type Golf** and are ignored for all other Extra types.
+
 ### Behaviour Settings
 
 These settings control how the extra behaves in the booking process and what logic or restrictions apply to its use.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="307.3333740234375">Setting</th><th>Description</th></tr></thead><tbody><tr><td><strong>Autoselect in booking &#x26; offer</strong></td><td>Automatically selects this extra during booking and in special offers. Useful for mandatory or strongly recommended extras. The product will already be selected by default in a new booking. When using this feature, please make sure the product does not have a discount linked to it.</td></tr><tr><td><strong>Unremovable On Web Booking</strong></td><td>Prevents customers from removing the extra themselves during online booking. Ideal for required services.</td></tr><tr><td><strong>Unremovable On Customer Center</strong></td><td>Prevents removal by users in the customer self-service portal.</td></tr><tr><td><strong>Add price to deposit</strong></td><td>Includes the price of this extra in the booking deposit calculation.</td></tr><tr><td><strong>Include in basic price</strong></td><td>If checked, this will hide the extras from the view of the customer in Web Booking and Customer Centre. It will, however, increase the base price and affect the booking total.</td></tr><tr><td><strong>Add On All Pax</strong></td><td>If selected for one passenger in webbooking, the product will be automatically selected for all eligible pax of the booking; If removed, will be removed from all.</td></tr><tr><td><strong>Add only one per room</strong></td><td>Limits the extra to one per room regardless of the number of passengers.</td></tr><tr><td><strong>Available to book (API)</strong></td><td>Check whether a product should be shown as available to book in the Offer API, without adding it to the total.</td></tr></tbody></table>
+<table><thead><tr><th width="307.3333740234375">Setting</th><th>Description</th></tr></thead><tbody><tr><td><strong>Autoselect in booking &#x26; offer</strong></td><td>Automatically selects this extra during booking and in special offers. Useful for mandatory or strongly recommended extras. The product will already be selected by default in a new booking. When using this feature, please make sure the product does not have a discount linked to it.</td></tr><tr><td><strong>Unremovable On Web Booking</strong></td><td>Prevents customers from removing the extra themselves during online booking. Ideal for required services.</td></tr><tr><td><strong>Unremovable On Customer Center</strong></td><td>Prevents removal by users in the customer self-service portal.</td></tr><tr><td><strong>Add price to deposit</strong></td><td>Includes the price of this extra in the booking deposit calculation.</td></tr><tr><td><strong>Include in basic price</strong></td><td>If checked, this will include the price of the extra in the basic prices of the booking.<br>This is often used in combination with "Autoselect in booking &#x26; offer.</td></tr><tr><td><strong>Add On All Pax</strong></td><td>If selected for one passenger in webbooking, the product will be automatically selected for all eligible pax of the booking; If removed, will be removed from all.</td></tr><tr><td><strong>Add only one per room</strong></td><td>Limits the extra to one per room regardless of the number of passengers.</td></tr><tr><td><strong>Available to book (API)</strong></td><td>Check whether a product should be shown as available to book in the Offer API, without adding it to the total.</td></tr></tbody></table>
 
 ***
 
@@ -95,8 +124,91 @@ These settings influence how the extra interacts with billing, privacy regulatio
 | **Issue Voucher**            | Enables the generation of a voucher for the extra.                                                                                         |
 | **GDPR Sensitive**           | Flags the extra as containing GDPR-relevant data. Triggers data protection measures.                                                       |
 | **Content Type**             | Used to classify the extra as a specific content asset, useful in API or content-driven environments.                                      |
-| **Package Type**             | Treats the extra as a package rather than a standalone item. May impact how it's displayed or billed.                                      |
+| **Package Type**             | Treats the extra as a package rather than a standalone item. May impact how it's displayed or billed. Activate the Package Content tab     |
 | **Use Stay Dates in Prices** | Prices are calculated based on the customer’s actual stay dates rather than fixed pricing. Helpful for seasonal or dynamic pricing models. |
+
+***
+
+### Board Supplement
+
+<figure><img src="../../.gitbook/assets/image (10) (3).png" alt=""><figcaption></figcaption></figure>
+
+This section is shown **only when an Extra is configured with the type Pension**.\
+If the Extra has a different type, this section is not displayed.
+
+#### Fields Description
+
+**Board type**
+
+Dropdown field that defines the target board for this supplement.
+
+Example:
+
+* HB – Half Board
+
+When selected, the Extra is treated as a supplement related to that board type. This means the system understands that the Extra modifies or upgrades the board basis of the room.
+
+**Board basis filter**
+
+Filter is used on Board Supplements to specify which Board Basis should be on the Room for the Board Supplement to be available.
+
+### Clone Extras
+
+The **Clone** functionality allows you to duplicate an existing extra configuration and reuse it for another product, period, or brand.
+
+Instead of creating a new extra from scratch, cloning copies:
+
+* Core configuration (Overview, Basic Setup)
+* Prices
+* Allotment
+* Resources
+
+This reduces manual work and ensures consistency across products.
+
+{% hint style="info" %}
+After cloning has been done, the new extra must be reassigned to a Brand and the rest of the settings that were not cloned must be redone.
+{% endhint %}
+
+The Clone Extras feature is used to:
+
+* Create similar extras quickly
+* Reuse seasonal configurations
+* Copy extras to another accommodation
+* Duplicate pricing structures
+* Maintain standardized setup across brands
+
+#### How to Clone an Extra
+
+&#x20;1\. Locate the Existing Extra - Navigate to: Extras → Search → Open the extra you want to duplicate.
+
+2.  Click “Clone” - Select the **Clone** option&#x20;
+
+    <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+3.  Select the code for the new Extras&#x20;
+
+    <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+4.  Define Clone Settings&#x20;
+
+    <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+You need to:
+
+* Enter a new Name
+* Assign to another category
+* Adjust validity dates
+* Update brand assignment
+* Modify price if needed
+
+4. Save - Confirm creation of the cloned extra.
+5. Review Configuration
+
+Important:
+
+* Verify pricing
+* Check validity dates
+* Confirm category
+* Test booking flow
+* Review communication rules
 
 ***
 

@@ -1,12 +1,19 @@
+---
+description: >-
+  Export booking data, discounts, and costs to Excel (XLSX) in Tourpaq Office.
+  Filter by booking/departure periods, include cancelled or moved bookings, and
+  manage scheduled exports.
+---
+
 # Export
 
-The **Export** page allows users to generate and download booking-related data in Excel format.\
-It provides multiple export types and filtering options to include or exclude specific bookings and cost details.\
-Exports are generated as `.XLSX` files and can be used for analysis, accounting, or reporting purposes.
+Use **Export** to generate **Excel exports** (`.XLSX`) from Tourpaq Office.
+
+Export types include **Bookings**, **Discounts**, and **Cost**. Use exports for reporting, reconciliation, and accounting.
 
 ***
 
-### **Export Types**
+### Export types
 
 There are **three export types** available:
 
@@ -18,33 +25,35 @@ There are **three export types** available:
 
 ***
 
-### **Fields and Filters**
+### Fields and filters
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (3) (1) (1) (1).png" alt="Export filters and export type selection"><figcaption><p>Export filters: choose export type, set booking/departure date ranges, and control what is included in the Excel report.</p></figcaption></figure>
 
-| **Field**                                                      | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Export Type**                                                | Selects which type of data to export: _Bookings_, _Discounts_, or _Cost_.                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| **Booking start / Booking end**                                | Defines the range based on the **booking creation date**. Only bookings created between these dates are included.                                                                                                                                                                                                                                                                                                                                                                                 |
-| **Departure start / Departure end**                            | Filters bookings based on the **departure date**. Only bookings departing within this range are included.                                                                                                                                                                                                                                                                                                                                                                                         |
-| **Include Cancelled Bookings and Details**                     | When enabled, cancelled bookings and their related details will also be included in the export.                                                                                                                                                                                                                                                                                                                                                                                                   |
-| **Include Moved Bookings and Details**                         | Includes bookings that were moved to a different departure or travel period, along with their updated details.                                                                                                                                                                                                                                                                                                                                                                                    |
-| **Include past bookings with changes in the departure period** | <p>Ensures that bookings with <strong>changes made after the departure date</strong> are included if the changes fall within the selected departure period.<br><strong>Tooltip:</strong> <em>This will include bookings where changes are made after the departure, and the changes are made in the departure period specified.</em><br><br>🔹 This option is <strong>available for Bookings and Cost exports</strong>.<br>🔸 This option is <strong>disabled for Discounts exports</strong>.</p> |
-| **More filters**                                               | Expands additional filtering options (if available).                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| **Clear**                                                      | Resets all filters and date selections.                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| **Field**                                                      | **Description**                                                                                                                                                                                                              |
+| -------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Export Type**                                                | Selects which type of data to export: _Bookings_, _Discounts_, or _Cost_.                                                                                                                                                    |
+| **Booking start / Booking end**                                | Defines the range based on the **booking creation date**. Only bookings created between these dates are included.                                                                                                            |
+| **Departure start / Departure end**                            | Filters bookings based on the **departure date**. Only bookings departing within this range are included.                                                                                                                    |
+| **Include Cancelled Bookings and Details**                     | When enabled, cancelled bookings and their related details will also be included in the export.                                                                                                                              |
+| **Include Moved Bookings and Details**                         | Includes bookings that were moved to a different departure or travel period, along with their updated details.                                                                                                               |
+| **Include past bookings with changes in the departure period** | Include bookings where edits were made **after departure**, as long as the change date falls within the selected departure period. Available for **Bookings** and **Cost** exports. Not available for **Discounts** exports. |
+| **More filters**                                               | Expands additional filtering options (if available).                                                                                                                                                                         |
+| **Clear**                                                      | Resets all filters and date selections.                                                                                                                                                                                      |
 
 ***
 
-### **Buttons and Actions**
+### Buttons and actions
 
 | **Button**         | **Description**                                                                                                               |
 | ------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
 | **Export**         | Generates the export file based on the selected filters and export type. The exported file is downloaded in `.XLSX` format.   |
 | **Show Schedules** | Displays a list of all previously generated or scheduled exports. From here, users can monitor progress or re-download files. |
 
+For recurring exports, see [Export - Scheduled Reports](export.md).
+
 ***
 
-### **Usage Example**
+### Usage example
 
 **Scenario:** Export booking and cost data for bookings created in September and October 2025, including changes after departure.
 
@@ -52,21 +61,25 @@ There are **three export types** available:
 2. Define **Booking start** and **Booking end** dates (e.g., 23-09-2025 to 23-10-2025).
 3. (Optional) Define **Departure start** and **Departure end**.
 4. Enable **Include past bookings with changes in the departure period** to capture all post-departure updates.
-5. Enable or disable _Canceled_ and _Moved_ bookings as needed.
+5. Enable or disable _Cancelled_ and _Moved_ bookings as needed.
 6. Click **Export** to generate the report.
 7. Use **Show Schedules** to view or download previous exports.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (4) (1).png" alt="Bookings export filters"><figcaption><p>Bookings export (XLSX): filter by booking period and departure period.</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (3) (1) (1) (1) (1).png" alt=""><figcaption><p>Export Booking (XLSX)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (3) (1) (1) (1) (1).png" alt="Bookings export output"><figcaption><p>Bookings export (XLSX): example output.</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (3).png" alt="Cost export filters"><figcaption><p>Cost export (XLSX): export booking costs and creditor details for cost control and supplier invoicing.</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (2).png" alt=""><figcaption><p>Export Cost (XLSX)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (2).png" alt="Cost export output"><figcaption><p>Cost export (XLSX): example output.</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (7) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (4).png" alt="Discounts export filters"><figcaption><p>Discounts export (XLSX): export discount lines for reconciliation and promotion analysis.</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (6) (5).png" alt=""><figcaption><p>Export Discounts (XLSX)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (5).png" alt="Discounts export output"><figcaption><p>Discounts export (XLSX): example output.</p></figcaption></figure>
+
+***
+
+### Export file columns
 
 The data will contain information regarding each booking that corresponds to the given filters:
 
@@ -78,16 +91,16 @@ The data will contain information regarding each booking that corresponds to the
 * **Booking date -** The date when the booking was created.
 * **Booking status -** The current status of the booking (e.g., Confirmed, Cancelled, Pending).
 * **Booking total price -** The total price paid for the booking, including all products and services.
-* Customer No - The customer's number.
-* Customer name - Name of the customer
-* **Customer e-mail -** The primary email address of the customer.
+* **Customer No -** The customer number.
+* **Customer name -** Name of the customer.
+* **Customer email -** The primary email address of the customer.
 * **Seller -** The individual or platform that made the booking.
 * **Agent -** The travel agent or representative involved in the booking, if any.
 * **Transport code -** A code identifying the mode or provider of transport.
 * **Travel length -** The total duration of the trip in days.
 * **Hotel code -** A code representing the booked hotel.
 * **Resort code -** A code identifying the resort associated with the hotel.
-* **Destination** - The booking destination of the travelers
+* **Destination** - The booking destination of the travelers.
 * **Room code -** A code for the specific room type booked.
 * **Room price -** The cost of the room per booking or per night, depending on context.
 * **Rooms number -** The number of rooms included in the booking.
@@ -108,7 +121,7 @@ The data will contain information regarding each booking that corresponds to the
 * **Transfer price -** The price paid for transfer services.
 * **Travel insurance type -** The type or tier of travel insurance selected.
 * **Travel insurance price -** The price of the travel insurance policy.
-* **VIP product—**&#x53;pecifies if a VIP product or service was included.
+* **VIP product -** Specifies if a VIP product or service was included.
 * **VIP product price -** The cost associated with the VIP product.
 * **Party package product -** Indicates if a party package was added to the booking.
 * **Party package product price -** The price of the party package product.

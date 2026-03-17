@@ -1,8 +1,15 @@
+---
+description: >-
+  Enable and use Customer details on the customer card in Tourpaq Office. Edit
+  and save customer information (Details field) directly from a booking for
+  reuse in future bookings.
+---
+
 # Customer info / Details on customer card
 
 ### Overview
 
-When enabled, **Customer details on customer card** lets authorized users view and edit extra customer information **directly from the customer card inside a booking**.
+When enabled, **Customer details on customer card** lets authorized users view and edit extra **customer information** **directly from the customer card inside a booking** in **Tourpaq Office**.
 
 The information entered in the **Details** area is saved on the **customer record** and will be shown again the next time the same customer is used in a booking.
 
@@ -49,7 +56,7 @@ Be careful with what you store in the **Details** field. Follow your organizatio
 2. Enable **Show details of customer**.
 3. Click **Save**.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="System Setup setting: Show details of customer"><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -65,7 +72,7 @@ Be careful with what you store in the **Details** field. Follow your organizatio
 1. On the customer card, click **Edit**.
 2. Enter/update the **Details** content.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Customer card in booking: Edit customer details field"><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -74,7 +81,7 @@ Be careful with what you store in the **Details** field. Follow your organizatio
 1. Click **Save** on the booking.
 2. Re-open the booking (or open a new booking for the same customer) and confirm the Details are shown.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Customer Details field saved and visible on the customer card"><figcaption></figcaption></figure>
 {% endstep %}
 {% endstepper %}
 

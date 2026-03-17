@@ -20,7 +20,7 @@ Use Basic setup to ensure each transport is configured for sales, reporting, and
 
 #### Instructions & field explanations
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **1. Destination**
 
@@ -30,6 +30,7 @@ Defines the route and core identifiers.
 * **Return**: Code for the return route.
 * **Departure**: Departure airport/location.
 * **Arrival**: Arrival airport/location.
+* **Alternative Arrival**: Used for choosing an alternative airport for arrival
 * **Transport Mode**: Type of transport (e.g., Fly, Bus, Train).
 * **Cancellation Condition**: Defines the cancellation policy linked to this transport.
 
@@ -117,7 +118,7 @@ Defines operational and financial settings for the transport.
 
 **7. Dynamic Transport Supplement**
 
-<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (4).png" alt=""><figcaption></figcaption></figure>
 
 Adds pricing flexibility by handling supplements dynamically.
 
@@ -295,7 +296,7 @@ Set the interval between flights.
 
 Offer the posibility to the user to add a note related to a specific transport. Used for internal documentation
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 A free-text field used only internally.
 
@@ -308,22 +309,24 @@ These notes are not visible to customers and do not affect booking logic.
 
 ### Timetable <a href="#timetable" id="timetable"></a>
 
+<figure><img src="../../../.gitbook/assets/image (680).png" alt=""><figcaption></figcaption></figure>
+
 Used to set the date and time of the flights.
 
 * **Out/Home**: Flight type
 * **Start date**: Date of the first flight
 * **End date**: Final date of the transport
+* **Flight change type**: Flight change notification. After changing time/date, enable **FL** and update. An email is sent to all bookings on the flight. Requires the **Flight change e-mail** template.
 * **Departure time (hour)**: Departure time
 * **Arrival time (hour)**: Arrival time at destination
+* **Transport code**: The code of the flight defined in the general settings as code/return code
 * **Airline**: Airline name
 * **Flight number**: Flight number
 * **+Days**: Arrival is delayed by _x_ days from the departure date. Example: depart `01-05-2025 00:00`, arrive `02-05-2025 00:00`.
 * **+Land days**: Should be disabled for travel out.
 * **Extra day out**: Controls hotel check-in day logic.
-* **FL**: Flight change notification. After changing time/date, enable **FL** and update. An email is sent to all bookings on the flight. Requires the **Flight change e-mail** template.
 * **Alternative Airport**: Can be set on both Travel Out and Travel Home lines. It changes the return airport shown on booking and ticket. Example: Outbound Billund → Antalya, but return departs from Istanbul.
-
-<figure><img src="../../../.gitbook/assets/image (189).png" alt=""><figcaption></figcaption></figure>
+* **Transport supplier**: Select the transport supplier per flight.
 
 ### Fix quota <a href="#fix-quota" id="fix-quota"></a>
 
@@ -352,15 +355,15 @@ The **guaranteed empty seats** fields are linked to the Empty Seats feature. If 
 * **One way out**: Number of seats for one-way outbound.
 * **One way home**: Number of seats for one-way homebound.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (3).png" alt=""><figcaption></figcaption></figure>
 
 Click **Insert**, then **Generate**. The end result is:
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 or
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This depends on whether **Simple cost** is enabled. In Fix quota you control seats for sale, costs, and intervals. For more context, see [Transport](../) and [Transport dashboard](../../../transport-dashboard.md).
 

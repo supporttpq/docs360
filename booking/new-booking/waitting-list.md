@@ -1,20 +1,32 @@
-# Waitting list
+---
+description: >-
+  Create and manage waitlist bookings in Tourpaq Office when seats or beds are
+  sold out. Learn how WL and WLOK statuses work and how waitlist bookings become
+  confirmed (OK) when allotment is available.
+---
 
-## Waiting list
+# Waiting list (WL)
 
 ### Overview
 
-A **waiting list (waitlist)** booking is used when customers want to book a departure, but there are **not enough available places** (transport seats and/or hotel beds).
+Use **Waiting list (WL)** when a customer wants to book, but availability is sold out. This usually means there are not enough **transport seats** and/or **hotel beds** in allotment.
 
-Instead of losing the booking, Tourpaq can create a **waitlist booking** that:
+Instead of losing the sale, Tourpaq Office can create a **waitlist booking** that:
 
 * records the customer’s interest
-* does **not** reserve allotment immediately
-* is automatically converted into a normal booking if allotment becomes available later
+* does **not** reserve allotment immediately (no seats/beds are taken)
+* can be converted automatically when allotment becomes available later
+
+### Key terms (common searches)
+
+* **WL**: waitlist booking created. Not confirmed.
+* **WLOK**: allotment reserved. Agent must finalize.
+* **OK**: booking confirmed. Normal emails and payments apply.
+* **Allotment**: the available **seats** (transport) and **beds** (hotel) used for availability.
 
 ### When to use this
 
-Use the waitlist feature when you want to accept interest for fully booked departures and handle them fairly (first created → first processed).
+Use waiting list to accept interest for fully booked departures. Tourpaq processes waitlist bookings fairly (first created → first processed).
 
 {% hint style="warning" %}
 A waitlist booking is **not a confirmed contract** until it becomes fully confirmed (see [Status lifecycle](waitting-list.md#status-lifecycle)).
@@ -22,7 +34,7 @@ A waitlist booking is **not a confirmed contract** until it becomes fully confir
 
 ### Preconditions
 
-Before you can use waiting list pricing, you must already have the normal setup for that departure:
+Before you can create waitlist bookings, you need the normal setup for the departure:
 
 * Transport allotment and/or hotel allotment configured
 * A valid price list for the departure
@@ -43,9 +55,9 @@ Navigate to the price list entry for the departure where you want to allow waitl
 
 Check the **Waitlist (WL)** checkbox under **FLAGS**.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Enable Waitlist (WL) in the price list flags.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Price list entry flags showing the Waitlist (WL) checkbox"><figcaption><p>Enable Waitlist (WL) in the price list flags.</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Waitlist (WL) flag selected.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Waitlist (WL) flag selected in a Tourpaq price list"><figcaption><p>Waitlist (WL) flag selected.</p></figcaption></figure>
 {% endstep %}
 {% endstepper %}
 
@@ -53,7 +65,7 @@ Check the **Waitlist (WL)** checkbox under **FLAGS**.
 
 #### Standard behavior (while allotment exists)
 
-If there is enough allotment to cover the customer’s needs, Tourpaq behaves as usual and creates a normal booking.
+If there is enough allotment, Tourpaq behaves as usual. It creates a normal booking.
 
 #### Waitlist behavior (when allotment is missing)
 
@@ -78,7 +90,7 @@ Tourpaq periodically checks for new allotment and will process waitlist bookings
 
 #### What happens when the status becomes **WLOK**
 
-When a waitlist booking can be fulfilled, Tourpaq reserves the needed allotments and changes the booking to **WLOK**.
+When a waitlist booking can be fulfilled, Tourpaq reserves the needed allotments. The booking status changes to **WLOK**.
 
 At this point:
 
@@ -92,7 +104,7 @@ Only after the booking is saved and becomes **OK**:
 
 ### In Tourpaq Office (Back Office)
 
-<figure><img src="../../.gitbook/assets/image (247).png" alt=""><figcaption><p>Waitlist indicators in Tourpaq Office.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (247).png" alt="Tourpaq Office booking view showing waitlist indicators (WL/WLOK)"><figcaption><p>Waitlist indicators in Tourpaq Office.</p></figcaption></figure>
 
 When placing a waitlist booking in the Office:
 
@@ -102,7 +114,7 @@ When placing a waitlist booking in the Office:
 
 ### In Tourpaq WebBooking / Customer Center
 
-<figure><img src="../../.gitbook/assets/image (248).png" alt=""><figcaption><p>Waitlist messaging in WebBooking / Customer Center.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (248).png" alt="WebBooking and Customer Center messaging for waitlist bookings"><figcaption><p>Waitlist messaging in WebBooking / Customer Center.</p></figcaption></figure>
 
 For WebBooking, clear customer communication is critical because the customer is self‑serving.
 
@@ -132,3 +144,35 @@ If the booking is still **WL** (waitlist):
 #### “The booking is WLOK but nothing is sent to the customer”
 
 This is expected. An agent must open the booking and **save/finalize** it so it becomes **OK** and triggers the normal email/payment flow.
+
+***
+
+### FAQ
+
+#### Can the customer pay while the booking is WL?
+
+Usually no.
+
+WL is not confirmed, so payment steps are typically disabled until the booking becomes **OK**.
+
+#### What triggers WL → WLOK?
+
+Tourpaq periodically checks whether enough allotment is available.
+
+When allotment becomes available, Tourpaq reserves it and changes the booking to **WLOK**.
+
+#### What triggers WLOK → OK?
+
+An agent must open the booking and **save/finalize** it.
+
+This is the step that typically enables normal emails, documents, and payments.
+
+#### How is priority decided if multiple WL bookings exist?
+
+Waitlist processing is typically handled in **creation order** (first created → first processed).
+
+#### Can I cancel a WL booking?
+
+Yes. Treat it like a normal booking record.
+
+Be clear internally that WL is not confirmed, so supplier handling and cancellation costs depend on your setup.

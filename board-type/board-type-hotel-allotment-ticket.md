@@ -2,7 +2,7 @@
 
 To be able to use the board type in hotel allotment, you should have defined one or more board types in Extras.&#x20;
 
-<figure><img src="../.gitbook/assets/image (8) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 For every allotment, it shall be possible to specify the default BOARD type. The possible options are the ones defined for the company.
 
@@ -23,15 +23,15 @@ The next guide describes how to create a room allotment with a specific board ty
    → A new row appears for inputting allotment details.
 2. **Enter the required details**
    * Room type, capacity, date range, etc.
-3. **For the “Board” field**, select a board type from the dropdown\
+3. **For the “Board Basis” field**, select a board type from the dropdown\
    → The board type (e.g., _All Inclusive_, _Summer board_) created earlier should be available in the list.
 
-<figure><img src="../.gitbook/assets/image (5) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (673).png" alt=""><figcaption></figcaption></figure>
 
 4. **Click the Save icon**\
    → The new allotment is saved and the board type appears correctly in the allotment row.
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (674).png" alt=""><figcaption></figcaption></figure>
 
 ### Step 3: Configure Pricing and Create a Booking
 

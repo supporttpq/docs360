@@ -1,12 +1,20 @@
+---
+description: >-
+  Use Tourpaq Office New Booking Search to find flight and hotel availability,
+  compare package combinations, and create a booking from search results.
+---
+
 # New Booking search support
 
-### Overview
+### **Overview**
 
-The **Search** page is the starting point for creating a new booking in the Tourpaq Office system. It enables users to search and match available **flights** and **hotels** based on specific travel criteria, such as departure dates, destination, hotel, budget, and stay duration. The page combines filtering and sorting tools with live availability data to help tour operators quickly identify matching options and initiate a booking.
+The **New Booking Search** page in **Tourpaq Office** helps you find bookable **flight + hotel** combinations. Use it as an **availability search** for transports and hotels. You can filter by departure/arrival, dates, travel length, board, budget, and stars. Then create a booking from the matching results.
+
+Use this page when you need fast **package search** support, or when a booking returns no results in the New Booking window.
 
 ***
 
-### Purpose
+### **Purpose**
 
 This interface helps you:
 
@@ -17,12 +25,12 @@ This interface helps you:
 
 ***
 
-### Preconditions
+### **Preconditions**
 
 Before using this screen, the following conditions must be met:
 
-* You must be signed in with a Tourpaq Office account that has booking rights.
-* Price lists and allotments must be configured for the hotels and transports to return availability.
+* You must be signed in to **Tourpaq Office** with rights to create bookings.
+* Price lists and allotments must exist for the hotels and transports to return **availability**.
 * System dates and departure data should be up to date.
 * Workflows must be configured if you want to filter by workflow (for example, **Charter & Dynamic**).
 
@@ -37,9 +45,9 @@ Before using this screen, the following conditions must be met:
 1. Click **New Booking**.
 2. Select a **Brand**.
 
-New booking page is displayed.
+The New Booking page is displayed.
 
-<figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1).png" alt="New Booking page in Tourpaq Office"><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -58,10 +66,12 @@ Required inputs:
 * **Departure**
 * At least one of **Arrival**, **Resort**, or **Hotel**
 * **Date from** and **Date to**
+* **Board**
+* **Budget (max)**
 
 If something is missing, you will see validation warnings.
 
-<figure><img src="../../../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Validation warnings on New Booking Search page"><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -69,11 +79,11 @@ If something is missing, you will see validation warnings.
 
 Fill the main fields (Adults, Departures, Arrivals, Date From/To), then click **Search**.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Search filters for flights and hotels in New Booking Search"><figcaption></figcaption></figure>
 
 Flights and hotels load as two result grids.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Search results showing flights (top) and hotels (bottom)"><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -89,21 +99,21 @@ Common columns:
 
 Select a flight row to enable **Clear selected row**.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Use **+ Filters** for flight filters.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
 ### Review hotel results (bottom grid)
 
-Hotel rows show hotel, stay, availability, and prices.
+Hotel rows show hotel, stay, availability, board, and prices.
 
 Use **+ Filters** for advanced hotel filters.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 You can switch the display mode:
 
@@ -112,7 +122,7 @@ You can switch the display mode:
 
 Hover the eye icon to see **View details**.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -122,7 +132,7 @@ Select a hotel row to show actions.
 
 You will see **Create booking** and **Clear selected row**.
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 {% endstepper %}
 
@@ -140,7 +150,7 @@ The Flights section shows available transports that match the search.
 * Arrival airport
 * Date and weekday
 * Transport code
-* Interval 1–4&#x20;
+* Interval 1–4
 
 **Behavior**
 
@@ -162,16 +172,14 @@ The Hotels section lists available hotel rooms that match the search and selecte
 * Stay - Stay length (nights)
 * Room type
 * Avail - Available rooms
-* Date -  Departure date
+* Date - Departure date
 * Board - Board type which is included in the price
-* Price per person
 * Normal price - The price without discount (P price), The price includes the price of any selected board
 * Discount
 * Final discounted price and currency - The price with discount (D price). The price includes the price of any selected board.
 
 **Pricing**
 
-* Price per person is calculated based on passengers, stay length, and pricing rules
 * Discounted prices are highlighted
 * Normal price is shown with strikethrough when a discount applies
 
@@ -203,7 +211,7 @@ When you click **Create booking**, a new page opens. It is pre-filled with the s
 
 ### Instructions and field descriptions
 
-<figure><img src="../../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Search filters (top section)
 
@@ -254,7 +262,6 @@ This grid displays hotel options based on the search:
 | **Avail.**                   | Remaining available rooms for the selected date.                                                                          |
 | **Date**                     | Departure Date                                                                                                            |
 | **Board**                    | Board type which is included in the price                                                                                 |
-| **Price Per Person**         | Price per Person                                                                                                          |
 | **Normal Price**             | The price without discount (P price), The price includes the price of any selected board                                  |
 | **Discount**                 | Applied discount amount.                                                                                                  |
 | **Discount Price**           | The price with discount (D price). The price includes the price of any selected board.                                    |
@@ -335,24 +342,10 @@ Common reasons:
 * The selected hotel line has no availability.
 * Your user role does not have rights to create bookings for the selected brand/workflow.
 
-#### Why is **Price PC** shown as `0`?
-
-It means the search is currently pricing without children.
-
-Add child ages in **Passengers** to get a child price.
-
 #### What’s the difference between **Normal price** and **Discount price**?
 
 * **Normal price** is the undiscounted total. It can still include auto-selected supplements.
 * **Discount price** is the final total after discounts. It includes relevant extras and supplements.
-
-#### Why does **Price PA / Price PC** look “too low” compared to totals?
-
-Price PA/PC are averages per passenger type.
-
-They are derived from the booking totals.
-
-Totals can also include supplements and extras.
 
 #### How do I reset all filters quickly?
 

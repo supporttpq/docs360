@@ -1,56 +1,140 @@
+---
+description: >-
+  Tourpaq Office booking flow for customer information (errata) acknowledgment.
+  Learn when the Passenger Information popup appears and what blocks saving.
+---
+
 # Customer Information Booking Flow
 
 ### Purpose
 
-This page describes expected system behavior for creating and editing bookings in a system that requires customer information acknowledgment for various components (transport, hotels, resorts, destinations, extras). The focus is on ensuring that all mandatory customer info is acknowledged before finalizing a booking.
+This page describes expected behavior when **customer information (errata)** requires acknowledgment in the **Tourpaq Office booking flow**. It focuses on when the **Passenger Information** popup appears, and what blocks saving. It applies to messages configured on transport, hotels/rooms, resorts, destinations, and extras.
 
 ***
 
-### **New Booking Flow**
+### New booking flow (Office)
 
 #### Overview
 
-A user creates a new booking and is required to acknowledge all mandatory customer information related to selected services. Booking cannot be completed unless all such information is reviewed and confirmed.
+When a user creates a new booking, they must acknowledge all mandatory customer information linked to the selected services. The booking cannot be completed until all required checkboxes are confirmed.
 
-#### Steps & Expected Results
+#### Steps and expected results
 
-| **Step** | **Action**                                                             | **Expected Result**                                                                                                    |
-| -------- | ---------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| 1        | Create a new booking by pressing “New booking”                         | Booking Edit page is displayed                                                                                         |
-| 2        | Insert required data (number of passengers, customer details)          | Data is properly saved                                                                                                 |
-| 3        | Choose the transport (with customer info that requires acknowledgment) | Transport is selected                                                                                                  |
-| 4        | Choose a hotel (with customer info that requires acknowledgment)       | Hotel/room is selected and passengers are auto-allocated                                                               |
-| 5        | Press “Take allotment”                                                 | Passenger Info pop-up appears listing customer info (Hotel, Resort, Destination); checkboxes must be marked to proceed |
-| 6        | Acknowledge all displayed info                                         | Checkboxes are marked                                                                                                  |
-| 6.1      | Press “Save”                                                           | Info is saved and pop-up closed                                                                                        |
-| 7        | Select extra service(s) with mandatory info                            | Extra is selected                                                                                                      |
-| 7.1      | Press “Save Passengers”                                                | Pop-up with extra-related info appears, checkboxes must be marked                                                      |
-| 8        | Acknowledge extra service info                                         | Checkboxes are marked                                                                                                  |
-| 8.1      | Press “Save”                                                           | Info saved and pop-up closed                                                                                           |
-| 9        | Press final “Save”                                                     | Booking saved with “OK” status                                                                                         |
+{% stepper %}
+{% step %}
+### 1) Create a new booking
+
+Click **New booking**.
+
+**Expected result:** the Booking Edit page opens.
+{% endstep %}
+
+{% step %}
+### 2) Enter required data
+
+Enter passenger counts and customer details.
+
+**Expected result:** the data is saved, and you can continue selecting services.
+{% endstep %}
+
+{% step %}
+### 3) Select transport (if it has mandatory customer information)
+
+Select a transport that has customer information configured with **Acknowledge** enabled.
+
+**Expected result:** the transport is selected.
+{% endstep %}
+
+{% step %}
+### 4) Select hotel/room (if it has mandatory customer information)
+
+Select a hotel and room type that has customer information configured with **Acknowledge** enabled.
+
+**Expected result:** the hotel/room is selected and passengers are allocated (auto-allocation may apply).
+{% endstep %}
+
+{% step %}
+### 5) Take allotment and acknowledge messages
+
+Click **Take allotment**.
+
+**Expected result:** the **Passenger Information** popup appears. It lists customer information notices from items like:
+
+* hotel / room type
+* resort
+* destination
+
+All checkboxes must be selected to proceed.
+{% endstep %}
+
+{% step %}
+### 6) Add extras and acknowledge extra notices
+
+Select extra services with mandatory customer information. Click **Save Passengers**.
+
+**Expected result:** the Passenger Information popup appears again for the selected extra(s). All checkboxes must be selected to save.
+{% endstep %}
+
+{% step %}
+### 7) Save the booking
+
+Click the final **Save**.
+
+**Expected result:** the booking is saved with **OK** status.
+{% endstep %}
+{% endstepper %}
 
 ***
 
-### **Edit Booking Flow**
+### Edit booking flow (Office)
 
 #### Overview
 
-Modifying an existing booking may retrigger the need to acknowledge any changed or newly required customer information, especially when editing hotels, allocating passengers, or adding extras.
+Editing an existing booking can retrigger acknowledgments. This typically happens when hotels/rooms change, passengers are reallocated, or extras are added.
 
-#### Steps & Expected Results
+#### Steps and expected results
 
-| **Step** | **Action**                                | **Expected Result**                                                                                 |
-| -------- | ----------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| 1        | Edit an existing booking                  | Booking Edit page is displayed                                                                      |
-| 2        | Edit hotel option or allocate passengers  | Data is saved                                                                                       |
-| 3        | Press “Take allotment”                    | Passenger Info pop-up appears with updated hotel/resort/destination info; checkboxes must be marked |
-| 4        | Acknowledge all displayed info            | Checkboxes are marked                                                                               |
-| 4.1      | Press “Save”                              | Info is saved and pop-up closed                                                                     |
-| 5        | Press “Edit Passengers” and select extras | Extra is selected                                                                                   |
-| 5.1      | Press “Save Passengers”                   | Pop-up with extra-related info appears; checkboxes must be marked                                   |
-| 6        | Acknowledge extra service info            | Checkboxes are marked                                                                               |
-| 6.1      | Press “Save”                              | Info saved and pop-up closed                                                                        |
-| 7        | Press final “Save”                        | Booking saved with “OK” status                                                                      |
+{% stepper %}
+{% step %}
+### 1) Open an existing booking
+
+Open the booking in edit mode.
+
+**Expected result:** the Booking Edit page opens.
+{% endstep %}
+
+{% step %}
+### 2) Change hotel/room or reallocate passengers
+
+Edit the hotel option and/or allocate passengers.
+
+**Expected result:** you’re required to re-take allotment before saving.
+{% endstep %}
+
+{% step %}
+### 3) Take allotment and acknowledge updated notices
+
+Click **Take allotment**.
+
+**Expected result:** the **Passenger Information** popup appears with updated hotel/resort/destination notices. All checkboxes must be selected to proceed.
+{% endstep %}
+
+{% step %}
+### 4) Edit extras and acknowledge extra notices
+
+Click **Edit Passengers**, select extras, then click **Save Passengers**.
+
+**Expected result:** the Passenger Information popup appears for extra-related notices. All checkboxes must be selected to save.
+{% endstep %}
+
+{% step %}
+### 5) Save the booking
+
+Click the final **Save**.
+
+**Expected result:** the booking is saved with **OK** status.
+{% endstep %}
+{% endstepper %}
 
 ***
 
@@ -69,4 +153,9 @@ Modifying an existing booking may retrigger the need to acknowledge any changed 
 * The **"Passenger Information" pop-up** appears:
   * When allotment is taken.
   * When editing passengers or extras.
-* All check-box items in the pop-up represent **mandatory terms** and must be confirmed before proceeding.
+* All checkbox items in the pop-up are **mandatory terms** and must be confirmed before proceeding.
+
+### See also
+
+* [Customer information (errata)](./)
+* [Customer Information on WebBooking](customer-information-on-webbooking.md)

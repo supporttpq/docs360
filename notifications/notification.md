@@ -1,174 +1,185 @@
-# Notification
+---
+description: Your daily control centre for booking alerts, errors, and system warnings.
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+---
+
+# Notifications
 
 ### Overview
 
-The **Notifications** page is a system-level tool used to **monitor, review, and manage issues and alerts related to bookings**. It centralizes all system-generated warnings, errors, and informational messages to help users maintain data integrity and ensure smooth booking operations.
+The **Notifications** page is a centralised monitoring tool that collects and displays all system-generated alerts related to bookings, products, payments, and operational processes. Instead of discovering problems one booking at a time, agents and administrators can open this page and immediately see every issue that needs attention — organised by type and severity.
 
-Open the **Notifications** module from the main navigation to see a consolidated list of issues across bookings and products.
+Notifications are generated automatically by the system based on background checks. They do not resolve themselves — each one must be investigated and fixed at the source before it disappears from the list.
 
 <figure><img src="../.gitbook/assets/image (243).png" alt="Notifications overview"><figcaption><p>Notifications overview – categories on the left, detailed list in the center.</p></figcaption></figure>
 
 ### Purpose
 
-This module is intended to:
+The Notifications module exists to help teams:
 
-* Provide **real-time visibility** into booking-related issues
-* **Highlight critical problems** such as unpaid or overbooked reservations
-* **Assist users in troubleshooting and resolving errors**
-* Help ensure **reservation completeness and accuracy**
+* Spot and resolve **booking errors** before they affect customers or operations
+* Track **unpaid bookings** and outstanding balances at a glance
+* Identify and fix **overbooking situations** across hotels, rooms, and transports
+* Stay on top of **Stop Sales violations**, queue errors, and upsell opportunities
+* Maintain overall **data quality and reservation accuracy** across the platform
 
-By consolidating alerts by type and severity, this module supports **operational efficiency and customer satisfaction**.
+It is particularly valuable for operations managers and senior agents who need a daily system health check without opening individual bookings one by one.
 
 ***
 
 ### Preconditions
 
-* Available only to users with permission to access booking administration and notifications.
-* Booking data should be up to date and error-checking services must be running in the background.
-* Some notifications (for example, **overbookings** or **Stop Sales**) rely on system configuration thresholds (such as allotment and agreed allotment).
+Before using the Notifications page, ensure the following:
+
+* You are logged in with a user role that has **access to booking administration and notifications**. If the Notifications page is not visible in your sidebar, contact your system administrator to review your permissions under [Users](https://manual.tourpaq.com/users/users).
+* Background error-checking services are running correctly. If no notifications appear at all and you expect them, contact your administrator to verify that system checks are active.
+* Allotment thresholds and Stop Sales rules must be correctly configured for overbooking and Stop Sales notifications to fire accurately. See [Stop Sales](https://manual.tourpaq.com/stop-sales) and [Hotel Contracts](https://manual.tourpaq.com/hotel-contracts).
 
 ***
 
-### Page Structure
+### How to Use the Notifications Page
 
-#### 🔹 Left Panel: Notifications Menu (Categories)
+#### Step 1 — Open Notifications
 
-The **left-side menu** organizes notifications by type. Each category shows a **counter** for active issues.
-
-| Category                | Description                                                                                    |
-| ----------------------- | ---------------------------------------------------------------------------------------------- |
-| **Unpaid Bkg**          | Reservations with outstanding payments.                                                        |
-| **Overbkg**             | Overbookings at various levels (Homebound, Hotels, Rooms, Outbound).                           |
-| **Error Bkg**           | Errors that occurred while saving or updating a booking.                                       |
-| **Warnings**            | General warnings that don’t block the booking but may need attention.                          |
-| **Hotel Special Offer** | Issues related to hotel-based special offers (for example, rejected or inconsistent offers).   |
-| **Extra Special Offer** | Issues related to special offers on extras.                                                    |
-| **Upsale**              | Opportunities or issues related to additional product sales.                                   |
-| **Stop Sales**          | Notifications related to active or upcoming Stop Sale rules and their agreed allotment status. |
-| **Queue Management**    | Errors in background processing queues (for example, confirmations or communication jobs).     |
-
-{% hint style="warning" %}
-🔔 **TIP**
-
-Use the counters next to each category to **prioritize** which notifications to address first (for example, start with **Error Bkg** and **Overbkg**, then move on to **Unpaid Bkg** and **Warnings**).
-{% endhint %}
+Click **Notifications** in the left sidebar. The page opens with the full list of active notifications across all categories.
 
 ***
 
-#### Central Panel: Notification Table
+#### Step 2 — Select a category
 
-This is the **main working area**, displaying **detailed alerts**. Depending on the notification type, the central panel may present different data fields. Some of the most commonly displayed information includes:
-
-| Column Name           | Description                                             |
-| --------------------- | ------------------------------------------------------- |
-| **Booking No**        | Unique identifier of the affected reservation.          |
-| **Departure Date**    | The date of travel associated with the booking.         |
-| **Customer**          | Full name of the lead passenger or customer.            |
-| **Booking Total**     | Total value of the reservation (all included services). |
-| **Paid Amount**       | Amount already paid by the customer.                    |
-| **Balance**           | Remaining unpaid amount.                                |
-| **Error Description** | Human-readable explanation of the issue or error.       |
-
-Each row represents a **single notification event**, tied to a specific booking.
-
-***
-
-#### Filters, Sorting & Navigation
-
-* **Pagination controls** are located at the bottom of the table to move between pages of results.
-* A **records-per-page selector** lets you choose how many notifications to display at once (for example, 10, 25, 50).
-* Clicking on **column headers** allows sorting by fields such as **Booking No**, **Departure Date**, or **Customer**.
-* Depending on your configuration, additional **filters** (for example, by departure period or destination) may be available at the top of the list to narrow down results.
-
-***
-
-### Working With Notifications
-
-Use the Notifications page as your **daily control center** for booking quality:
-
-{% stepper %}
-{% step %}
-### 1. Select a category
-
-1. In the left panel, click the notification category you want to review (for example, **Unpaid Bkg** or **Overbkg**).
-2. The central table is refreshed to show only notifications of that type.
-{% endstep %}
-
-{% step %}
-### 2. Review the list
-
-1. Scan the **Error Description**, **Departure Date**, and **Balance** (if available) to understand the impact.
-2. Use sorting (for example, sort by **Departure Date**) to focus on the most urgent cases first.
-{% endstep %}
-
-{% step %}
-### 3. Open and fix the related booking
-
-1. Use the **Booking No** (and, where applicable, the **Customer** name) to locate and open the corresponding booking in **All bookings** or another booking view.
-2. Correct the underlying issue (for example, update payments, fix product selection, or adjust allotment/Stop Sales rules).
-{% endstep %}
-
-{% step %}
-### 4. Refresh and verify
-
-1. After saving the booking, return to the **Notifications** page.
-2. Refresh the list or wait for the next automatic update.
-3. Confirm that the notification has disappeared or changed status as expected.
-{% endstep %}
-{% endstepper %}
+In the **left panel**, click the notification category you want to review. The central table immediately refreshes to show only notifications of that type. The number displayed next to each category name is the count of active, unresolved notifications in that category.
 
 {% hint style="info" %}
-For **Stop Sales** notifications, you can use the dedicated workflow described in [Notification on Dashboard Stop Sale](../stop-sales/notification-on-dashboard-stop-sale.md) to filter by **Only Agreed Allotment** and focus on the most business-critical rules.
+**Recommended daily priority order:**
+
+* **Overbkg** — overbooking situations that may affect customers
+* **Unpaid Bkg** — outstanding balances requiring follow-up
+* **Warnings** — non-blocking issues that still need attention
+* **Stop Sales / Queue Management** — operational and configuration issues
 {% endhint %}
 
 ***
 
-### Special Notes & Behaviors
+#### Step 3 — Review the notification list
 
-* Notifications **do not auto-resolve**—they must be handled and cleared through booking updates or internal processing.
-* The system may **auto-refresh counters and lists** periodically depending on configuration (for example, every 30 minutes).
-* The presence of **multiple notification types for a single booking** is possible (for example, a booking can appear under both **Unpaid Bkg** and **Warnings**).
-* In some environments, **notification acknowledgment** features may be enabled to track who resolved which notification and when.
+In the central panel, scan the table for the most urgent items. Use column headers to sort the list — for example, sort by **Departure Date** to prioritise upcoming trips, or by **Balance** to focus on the largest outstanding payments first.
+
+Use the **records-per-page selector** at the bottom to control how many rows are shown, and the **pagination controls** to navigate through the full list.
+
+***
+
+#### Step 4 — Open and resolve the booking
+
+Use the **Booking No** in the notification row to locate the affected booking. Open it via [All Bookings](https://manual.tourpaq.com/booking/all-bookings) and correct the underlying issue — for example:
+
+* Register a missing payment for an **Unpaid Bkg**
+* Adjust allotment or move a passenger for an **Overbkg**
+* Fix missing or invalid data for an **Error Bkg**
+* Review and update product rules for **Warnings**
 
 ***
 
-### Related Topics
+#### Step 5 — Verify the notification is cleared
 
-For configuration of automated messages and related alerts, see:
+After saving the fix, return to the Notifications page and refresh the list. If the underlying issue has been resolved, the notification will no longer appear. If it persists, the fix was incomplete — review the booking again.
 
-* [Warning notification rules](../warning-notification-rules.md) – configure which system warnings are sent and to whom.
-* [Email Templates](../email-templates.md) – manage the content of automated e-mails triggered by booking events.
-* [Notification on Dashboard Stop Sale](../stop-sales/notification-on-dashboard-stop-sale.md) – specific behavior of **Stop Sales** notifications on the Dashboard.
-* [Service Case – Notification](../service-cases/notification.md) – notifications related to customer **Service Cases** and new incoming e-mails.
-* [Customer information (errata)](../customer-information-errata/) – how special guest notifications are shown based on stay and booking periods.
-
-
-
-### **FAQ**
-
-#### I see a Stop Sales notification. Where do I handle it?
-
-In both cases, fix the root cause in the booking or setup.
-
-* **Error Bkg**: something failed during save or processing.
-* **Warnings**: something looks off, but may still be bookable.
-
-#### What’s the difference between “Error Bkg” and “Warnings”?
-
-A booking with the status "Error Booking" represents a booking that is not finalized (some changes still need to be made to it), while status "Warnings" represent bookings that have the status OK, and which warn you that there is a problem with that booking (travel insurance was not sent, etc.)
-
-#### What should I prioritize first?
-
-Example: **Unpaid Bkg** and **Warnings** at the same time.
-
-Yes. One booking can trigger multiple issues at once.
-
-#### Can the same booking show up under multiple categories?
-
-1. Save the booking changes.
-2. Go back to **Notifications**.
-3. Refresh the list or wait for the next update cycle.
-
-Notifications clear when the underlying issue is gone and the checks rerun.
+{% hint style="warning" %}
+&#x20;Notifications are not automatically cleared when you save a reservation. The system reruns its checks periodically, every 30 minutes.
+{% endhint %}
 
 ***
+
+### Field Reference
+
+#### Left Panel — Notification Categories
+
+| Category                | Description                                                                                                                                                  |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Unpaid Bkg**          | Bookings with outstanding payments — the customer owes a balance that has not been registered                                                                |
+| **Overbkg**             | Overbooking situations, broken down by type: Homebound transport, Hotels, Rooms, and Outbound transport                                                      |
+| **Error Bkg**           | Bookings that encountered a system error during saving or processing and are in an incomplete or invalid state                                               |
+| **Warnings**            | Bookings in a valid state but with a condition that requires attention — for example, travel insurance was not sent, or a special service request is missing |
+| **Hotel Special Offer** | Issues related to hotel special offers — for example, an offer that was applied incorrectly or is inconsistent with contract conditions                      |
+| **Extra Special Offer** | Issues with special offers on extras — similar to Hotel Special Offer but for extra products                                                                 |
+| **Upsale**              | Alerts related to upsell opportunities or upsell products that have an issue requiring review                                                                |
+| **Stop Sales**          | Bookings or products affected by an active Stop Sales rule, including cases where agreed allotment has been exceeded                                         |
+| **Queue Management**    | Errors in background processing queues — for example, failed confirmation sends, communication jobs, or automated processing tasks                           |
+
+***
+
+#### Central Panel — Notification Table
+
+The columns displayed depend on the selected category. The most commonly shown fields are:
+
+| Column                | Description                                                                                                                                      |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Booking No**        | The unique identifier of the affected booking. Use this to locate the booking in [All Bookings](https://manual.tourpaq.com/booking/all-bookings) |
+| **Departure Date**    | The outbound travel date associated with the booking. Use this to prioritise time-sensitive cases                                                |
+| **Customer**          | Full name of the lead passenger or primary customer on the booking                                                                               |
+| **Booking Total**     | The total value of the reservation, including all travel components and extras                                                                   |
+| **Paid Amount**       | The amount already registered as paid by the customer                                                                                            |
+| **Balance**           | The remaining unpaid amount. A positive value means money is still owed                                                                          |
+| **Error Description** | A plain-language description of the issue or error detected by the system                                                                        |
+
+***
+
+#### Navigation Controls
+
+| Control              | Description                                                                                                               |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| **Column headers**   | Click any column header to sort the list ascending or descending by that field                                            |
+| **Records per page** | Selector at the bottom of the table — choose 10, 25, or 50 rows per page                                                  |
+| **Pagination**       | Navigate between pages of results using the Previous / Next controls at the bottom                                        |
+| **Filters**          | Where available, use filters at the top of the list to narrow results by departure period, destination, or other criteria |
+
+***
+
+### FAQ
+
+**Q: What is the difference between Error Bkg and Warnings?** An **Error Bkg** means the booking is in an incomplete or invalid state — something failed during saving or processing and the booking may not be fully confirmed. A **Warning** means the booking is technically valid and confirmed, but a condition exists that needs attention — for example, travel insurance was not sent, or a required document is missing. Errors are more urgent than warnings.
+
+***
+
+**Q: Can the same booking appear under multiple categories at the same time?** Yes. A single booking can trigger notifications in multiple categories simultaneously — for example, a booking could appear under both **Unpaid Bkg** (because a payment is missing) and **Warnings** (because travel insurance was not sent). Each issue must be resolved independently.
+
+***
+
+**Q: What should I tackle first each day?** Start with **Error Bkg** — these represent bookings in an invalid state that may cause downstream problems. Then move to **Overbkg** — these can directly affect customers if not resolved before departure. Follow with **Unpaid Bkg**, then **Warnings**, and finally the remaining categories.
+
+***
+
+**Q: I fixed a booking but the notification is still showing — why?** The system reruns its background checks on a periodic cycle. After saving a fix, wait a few minutes and then refresh the Notifications page. If the notification persists after several minutes, the fix may be incomplete — review the booking again to ensure the root cause was fully addressed.
+
+***
+
+**Q: How do I handle Stop Sales notifications?** A Stop Sales notification means a booking exists for a product that is currently under a Stop Sales restriction, or that agreed allotment has been exceeded. Review the affected booking and the Stop Sales configuration. See [Stop Sales](https://manual.tourpaq.com/stop-sales) for full details on how to manage Stop Sales rules and their allotment settings.
+
+***
+
+**Q: I can't see the Notifications page in my sidebar — why?** Your user role may not include access to the Notifications module. Contact your system administrator and ask them to review your permissions under [Users](https://manual.tourpaq.com/users/users).
+
+***
+
+### Related Pages
+
+* [Warning Notification Rules](https://manual.tourpaq.com/warning-notification-rules) — configure which system warnings are generated and who receives them
+* [Stop Sales](https://manual.tourpaq.com/stop-sales) — manage Stop Sales rules linked to Stop Sales notifications
+* [All Bookings](https://manual.tourpaq.com/booking/all-bookings) — find and open bookings referenced in notifications
+* [Service Cases](https://manual.tourpaq.com/service-cases) — manage customer service issues that may also generate notifications
+* [Customer Information (Errata)](https://manual.tourpaq.com/customer-information-errata) — notifications related to customer errata based on booking and stay periods
+* [Email Templates](https://manual.tourpaq.com/email-templates) — manage automated email content triggered by booking events

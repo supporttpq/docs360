@@ -34,7 +34,7 @@ Board Types represent different service packages offered by hotels. These may in
 
 ### Actions
 
-* **Create**: Click the `Create` button (top right) to add a new board type. You will need to provide values for at least the `Name``, Code and ListName` fields.
+* **Create**: Click the `Create` button (top right) to add a new board type. You will need to provide values for at least the `Name, Code and ListName` fields.
 * **Delete**: Use the trash icon next to a board type to remove it. Deletion is only possible if the board type is not referenced in existing contracts or configurations.
 
 ### Use in System

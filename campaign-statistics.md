@@ -1,10 +1,16 @@
+---
+description: >-
+  Monitor campaign performance with bookings, pax, sales, discounts, and status
+  over time.
+---
+
 # Campaign Statistics
 
 ### Overview
 
 The **Campaign Statistics Dashboard** offers a centralized interface to monitor and evaluate the **performance of marketing campaigns** across a selected time period. It consolidates data such as bookings, sales revenue, applied discounts, and ongoing campaign statuses—presented through visual graphs and summary cards for clarity and actionable insights.
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (2).png" alt="Campaign Statistics dashboard overview with KPI cards and chart."><figcaption><p>Campaign Statistics dashboard overview (KPI cards + booking trend chart).</p></figcaption></figure>
 
 ### 1. Date Interval Selection
 
@@ -74,7 +80,7 @@ Each campaign row includes a **"View"** button:
 * Opens a **detailed analytics page** for that specific campaign.
 * Allows further breakdown by destination, customer segment, channel, and more.
 
-<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (6).png" alt="Campaign table view with View button per campaign row."><figcaption><p>Campaign table with per-campaign drill-down via <strong>View</strong>.</p></figcaption></figure>
 
 ### Conclusion
 
@@ -85,3 +91,55 @@ The **Campaign Statistics Dashboard** enables marketing teams to:
 * Make **data-driven adjustments** to active or future marketing efforts
 
 The combination of **summary metrics**, **trend graphs**, and **drill-down tables** ensures a **holistic view** of campaign health and efficiency.
+
+### FAQ
+
+<details>
+
+<summary>What controls the numbers shown on the dashboard?</summary>
+
+Everything is filtered by the selected **date interval**.
+
+If the range changes, all KPI cards, charts, and the campaign table update.
+
+</details>
+
+<details>
+
+<summary>Do “Total Bookings” and “Pax Count” include all campaigns, or only open ones?</summary>
+
+They include campaigns shown in the list for the selected period.
+
+Use the campaign **Status** in the table to see if a campaign is open, deleted, or fully booked.
+
+</details>
+
+<details>
+
+<summary>Why do “Total Sales”, “Total Discount”, and “Total Profit” not match what I see elsewhere?</summary>
+
+Most mismatches come from using a different date range.
+
+Also check if the other report uses another aggregation level (booking date vs departure date).
+
+</details>
+
+<details>
+
+<summary>What is the difference between “Discounts Applied” and “Total DB”?</summary>
+
+**Discounts Applied** is the total value of discounts granted in bookings.
+
+**Total DB** reflects direct budget tracked for campaigns (if used in your setup).
+
+</details>
+
+<details>
+
+<summary>What does “Campaigns Running” mean?</summary>
+
+It is a quick status split of campaigns in the selected period.
+
+It helps you see how many are still open vs completed or removed.
+
+</details>

@@ -1,29 +1,38 @@
+---
+description: >-
+  Track SMS messages in Tourpaq Office. Search by booking number or phone
+  number, filter by sent/departure period, and check delivery status
+  (sent/failed/pending).
+---
+
 # SMS Overview
 
-### **Overview**
+### Overview
 
-The **SMS Overview** page provides a complete log of all SMS messages sent from the system, including booking-related SMS notifications.\
-It allows staff to monitor message delivery, review communication history, and quickly troubleshoot cases where customers report not receiving an SMS.
+Use **SMS Overview** to monitor outgoing SMS messages in **Tourpaq Office**. This is the central SMS log for booking and operational notifications. Use it to troubleshoot “SMS not received” before departure.
 
 ***
 
-### **Purpose**
+### What you can do on this page
 
-This page is designed to:
+* Search the SMS log by **booking number** or **phone number**.
+* Filter by **sent period** and **departure period**.
+* Verify **SMS delivery status** (Sent / Failed / Pending).
+* Review SMS communication history for support, operations, and audits.
 
-* give operational and service teams **full visibility** over all outgoing SMS messages
-* check whether specific SMS messages were successfully delivered
-* search by booking, phone number, or date
-* ensure customers receive crucial travel information (e.g., departure reminders, delays, check-in info)
-* support compliance and auditing needs
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Tourpaq Office SMS Overview page showing filters and an SMS delivery log with statuses and booking references"><figcaption><p>SMS Overview in Tourpaq Office. Use it to search SMS history and check SMS delivery status for a booking.</p></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+{% hint style="info" %}
+If you need the SMS log for a single booking, use the booking **SMS** tab: [SMS](booking/new-booking/sms.md).
+{% endhint %}
 
-## **Filters**
+***
 
-The top section contains multiple filters that help refine the list of shown SMS messages.
+### Filters
 
-#### **Available Filters**
+Use filters to narrow down the list of SMS messages. Combine filters to find one customer fast.
+
+#### Available filters
 
 | Filter               | Description                                                                  |
 | -------------------- | ---------------------------------------------------------------------------- |
@@ -34,7 +43,7 @@ The top section contains multiple filters that help refine the list of shown SMS
 | **Departure period** | Filter based on the passenger’s departure date                               |
 | **Booking number**   | Search for SMS linked to a specific booking number                           |
 
-#### **Display / More Filters / Clear**
+#### Display / More Filters / Clear
 
 * **Display** – Apply selected filters
 * **More Filters** – Show additional filter fields
@@ -42,7 +51,7 @@ The top section contains multiple filters that help refine the list of shown SMS
 
 ***
 
-## **Table Overview**
+### Table overview
 
 Each row represents a single SMS message.
 
@@ -50,16 +59,33 @@ Each row represents a single SMS message.
 | ------------------- | ------------------------------------------------ |
 | **Date Sent**       | Timestamp when the system sent the SMS           |
 | **To Phone Number** | The recipient’s phone number                     |
-| **Message**         | The SMS text (anonymized for GDPR protection)    |
+| **Message**         | The SMS text (may be anonymized for GDPR)        |
 | **Status**          | Delivery status of the SMS                       |
 | **Booking**         | Booking number connected to the SMS              |
 | **Dept. Date**      | Passenger’s departure date linked to the message |
 
-### **Usage**&#x20;
+***
 
-1. **Monitoring Sent Messages**
-   * Users can check if an SMS was successfully delivered or encountered errors.
-2. **Managing Delivery Errors**
-   * If an SMS was not delivered, the user can take corrective actions, such as manually resending it or verifying the phone number.
-3. **Exporting Data**
-   * If this functionality is available, users can download reports on sent SMS messages for further analysis.
+### Troubleshooting checklist
+
+If a customer says they did not receive an SMS:
+
+1. Search by **booking number** or **phone number**.
+2. Check the **Status** (Sent / Failed / Pending).
+3. Verify the phone number format and country code in the booking/customer data.
+4. Check whether the correct **SMS type** template was used.
+5. Export the filtered list if you need to escalate to IT/support.
+
+### FAQ
+
+#### Why is the SMS text anonymized?
+
+Some setups mask message text to protect personal data. This supports GDPR and internal privacy policies.
+
+#### What does **Pending** mean?
+
+The SMS is queued and not confirmed as delivered yet. Refresh later or narrow the sent period to confirm the final status.
+
+#### Can I resend an SMS from this page?
+
+That depends on your setup and permissions. If resending is not available here, resend via the booking flow or your SMS tool.

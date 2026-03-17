@@ -1,3 +1,10 @@
+---
+description: >-
+  Export booking lists and operational reports from Tourpaq Office. Filter by
+  dates, transport, hotel, and report type, then export manually or schedule
+  automated delivery.
+---
+
 # Lists
 
 ### Overview
@@ -37,7 +44,7 @@ Before using this module:
 
 ### Fields & Filters – Export Generation
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 | Field                  | Description                                                                                       |
 | ---------------------- | ------------------------------------------------------------------------------------------------- |
@@ -45,7 +52,7 @@ Before using this module:
 | **Arrival period**     | Filters bookings based on **arrival at destination** date range.                                  |
 | **Booking period**     | Filters bookings based on **booking creation date**.                                              |
 | **Stay period**        | Filters bookings by actual **hotel stay period**.                                                 |
-|  Cancel **from**       | Limits **canceled bookings** to those canceled on or after the selected date.                     |
+| Cancel **from**        | Limits **canceled bookings** to those canceled on or after the selected date.                     |
 | **Changes since**      | Filters bookings to show only those **changed** after the selected date. Used for “Changes List”. |
 | **Transport**          | Select one or more **transport options** (as defined in the booking).                             |
 | **Real transport**     | Filter by **real, physical transport services** (e.g., actual bus, flight identifiers).           |
@@ -112,4 +119,3 @@ You can **automate exports** by setting up schedules.
 | ------------------ | --------------------------------------------------------------------------------------- |
 | **Export**         | Immediately generates an export file based on current filter and sends or downloads it. |
 | **Show schedules** | Displays existing scheduled exports and allows editing or creating new ones.            |
-

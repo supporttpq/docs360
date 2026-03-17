@@ -1,8 +1,32 @@
+---
+description: >-
+  Import a bank payment file to automatically register booking payments in
+  Tourpaq Office, validate matching, and reconcile in Payment Registration.
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+---
+
 # Payment File Import
 
 ### Overview
 
-**Payment File Import** lets you import a payment file from your bank so Tourpaq can register payments on the correct bookings automatically.
+**Payment File Import** lets you import a **bank payment file** so Tourpaq Office can **register booking payments automatically**.
+
+This helps with **bank reconciliation** and reduces manual payment entry.
 
 After the import, the payments are visible in [Payment Registration](payment-registration.md).
 
@@ -12,7 +36,7 @@ After the import, the payments are visible in [Payment Registration](payment-reg
 
 Use Payment File Import when you receive payments through the bank and want to avoid registering each payment manually.
 
-Although the file format depends on your bank, the import normally needs these values for each payment line:
+Although the file format depends on your bank, each payment line normally needs:
 
 * A **booking identifier** (for example booking number/reference)
 * A **payment date**
@@ -23,6 +47,7 @@ Although the file format depends on your bank, the import normally needs these v
 ### Before you start
 
 * Make sure you have the **payment file** from your bank.
+* Make sure the file contains the **booking reference/identifier** Tourpaq expects.
 * Confirm that a payment method exists for bank imports (for example **BANKIN**).
   * If you do not see a suitable method, ask an Admin/Financial user to configure it in [Method of Payment](method-of-payment.md).
 * You must have the required permissions (typically **Financial** or **Administrator**).
@@ -35,7 +60,7 @@ Your bank (or your finance setup) should provide the **specification** that expl
 
 ### Import a payment file
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Payment File Import screen"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Payment File Import screen"><figcaption><p>Upload a bank payment file to import booking payments and validate matching.</p></figcaption></figure>
 
 {% stepper %}
 {% step %}
@@ -80,7 +105,7 @@ Open [Payment Registration](payment-registration.md) and search by payment date 
 
 ### Notes
 
-* Imported payments are validated on import. Any unmatched or erroneous records are flagged for review.
+* Imported payments are validated during import. Any unmatched or erroneous lines are flagged for review.
 * The payment date used can depend on your bank file and setup. If your import source uses an **accounting date**, Tourpaq may use that date instead of today.
 
 ***
@@ -112,3 +137,5 @@ Imported payments should use a dedicated payment method (commonly something like
 #### 6. Can I use Payment File Import for refunds?
 
 Not usually. Refunds are typically handled through a separate refund process/file (depending on your setup). If you have a refund import feature available, use that instead.
+
+If your company uses refund imports, see [Refund File Import](refund-file-import.md).

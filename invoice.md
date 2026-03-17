@@ -1,20 +1,23 @@
 ---
-description: Invoice listing
+description: >-
+  Manage supplier invoices in Tourpaq Office Finance. Search and filter the
+  invoice list, download invoice PDF/XML and accounting files, archive invoices,
+  and pay invoices (permissions required).
 ---
 
 # Invoice
 
-### Invoice dashboard (Invoice list)
+### Invoice dashboard (invoice list)
 
-Use the **Invoice** page to find invoices, check where they are in the process (pending/approved/rejected), and download or take actions like **archive** or **pay**.
+Use the **Invoice** page to find supplier invoices, check status (**Pending**, **Approved**, **Rejected**), and take actions like **download**, **archive**, or **pay**.
 
-<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Invoice list with filters and status columns"><figcaption><p>Invoice list: filter by date range, invoice number, creditor, and status. Then download, archive, or pay invoices.</p></figcaption></figure>
 
 ### What you can do here
 
 * **Search and filter** invoices by date range, invoice number, creditor, status, and more.
 * **Open an invoice** from the list.
-* **Download** invoice files (PDF / XML) and related **accounting** exports.
+* **Download** invoice files (PDF/XML) and related **accounting** exports.
 * **Archive** invoices to remove them from your day-to-day view.
 * **Pay** invoices (if your user role has access).
 

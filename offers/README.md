@@ -1,3 +1,10 @@
+---
+description: >-
+  Manage customer travel offers in Tourpaq Office. Search and filter offers,
+  track status and follow-up dates, create and send offers, and convert accepted
+  offers into bookings.
+---
+
 # Offers
 
 ### Overview

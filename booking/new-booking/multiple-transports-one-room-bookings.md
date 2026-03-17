@@ -1,22 +1,42 @@
+---
+description: >-
+  Book one hotel room with multiple transports in Tourpaq Office. Learn
+  prerequisites, Allocate Passengers, Merge rooms by type, and how allotment and
+  transport assignment behave.
+---
+
 # Multiple transports one room bookings
 
 ### Overview
 
-In Tourpaq, in general, the transport and hotel are bundled into a single product, it is therefore not possible to take two different transports and book one room. With this feature you can select two different transports and merge the rooms of the same type and the same hotel.
+In Tourpaq, transport and hotel are usually bundled as one package.
+
+That normally prevents booking **two different transports** into **one hotel room**.
+
+With the **Multiple Transports** feature, you can select multiple transports and then **merge rooms by type** in **Allocate Passengers**.
 
 {% hint style="info" %}
 It is only available if the "Multiple Transports" feature is enabled. Contact Tourpaq support if needed.
 {% endhint %}
 
-### **Purpose**&#x20;
+### Purpose
 
 This page provides guidance on handling hotel bookings where **multiple guests share one room but arrive via different transports**.
 
 A typical example includes **one booking for one room**, where **one guest arrives by car and another by plane**. Despite their different transport arrangements, all guests are registered under the same room reservation.
 
-### Scenarios:
+### Preconditions
 
-#### Example 1: Guest with different transports in same room
+Before you start, make sure:
+
+* The **Multiple Transports** feature is enabled.
+* The selected transports have the **same arrival** and are on the **same interval/period**.
+* You select the **same hotel**.
+* To merge into one room, passengers must be on the **same room type** (for example `Double`).
+
+### Scenarios
+
+#### Example 1: Different transports, same room type (merge into one room)
 
 We'll choose two different transports with
 
@@ -27,7 +47,7 @@ and the **same** hotel with the **same** room type.
 
 <figure><img src="../../.gitbook/assets/image (202).png" alt=""><figcaption></figcaption></figure>
 
-**Next, on the&#x20;**_**Allocate Passengers**_**&#x20;screen, the rooms will be merged by pressing the "Merge rooms by type" button.**
+Next, in **Allocate Passengers**, merge the rooms by pressing **Merge rooms by type**.
 
 <figure><img src="../../.gitbook/assets/image (203).png" alt=""><figcaption></figcaption></figure>
 
@@ -39,11 +59,11 @@ This is essential for scenarios where a **one room booking** includes guests **a
 
 Now, the room is successfully merged, and two passengers from two different transports are able to stay in the same room.
 
-Note: _Only one room is taken from the allotment of the hotel_
+Note: Only **one room** is taken from the hotel allotment.
 
 ***
 
-#### Example 2: Guest with same transport in different room
+#### Example 2: Same transport, different room type (no merge)
 
 The first steps as in example 1.
 
@@ -51,25 +71,29 @@ Add another passenger who uses a transport with the same arrival as the 2 existi
 
 <figure><img src="../../.gitbook/assets/image (254).png" alt=""><figcaption></figcaption></figure>
 
-Next, on the Allocate Passengers screen, allocate the 3rd passenger and save.&#x20;
+Next, in **Allocate Passengers**, allocate the 3rd passenger and save.
 
 <figure><img src="../../.gitbook/assets/image (199).png" alt=""><figcaption></figcaption></figure>
 
-At this point, the room has been successfully merged, allowing two passengers from the same transport to have different room. However, it is essential that the user specify which transport the room should be assigned to.
+At this point, passengers can be in different room types.
+
+You must also specify **which transport** each room should be assigned to.
 
 ***
 
-#### Example 3 - Guest with different transports in different room
+#### Example 3: Different transports, different room types (merge by room type groups)
 
 The first step is the same as it was in the previous example; the difference now comes in the second step, when we will add another 2 passengers who will use different transports with the same arrival, in the same period, same hotel, but in different rooms.
 
 <figure><img src="../../.gitbook/assets/image (200).png" alt=""><figcaption></figcaption></figure>
 
-Next, on the Allocate Passengers screen, the booth room type will be merged by pressing the "Merge rooms by type" button.
+Next, in **Allocate Passengers**, merge both room types by pressing **Merge rooms by type**.
 
 <figure><img src="../../.gitbook/assets/image (201).png" alt=""><figcaption></figcaption></figure>
 
-At this point, the room has been successfully merged, allowing two passengers from different transports to be in different rooms. However, it is essential that the user specify which transport the room should be assigned to.
+At this point, passengers from different transports can be in different rooms.
+
+You must specify **which transport** each room should be assigned to.
 
 When one or more rooms are merged, this will be indicated on the booking page using an info point.
 

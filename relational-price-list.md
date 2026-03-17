@@ -1,8 +1,12 @@
 ---
+description: >-
+  Link parent and child price lists to derive room prices automatically using
+  relation rules, formulas, currencies, and cross-brand pricing logic in
+  Tourpaq.
 noIndex: true
 ---
 
-# Relational Price list
+# Relational Price List
 
 Available for Admin users.
 
@@ -16,7 +20,7 @@ A relational price list can be created from **Price list / Create price list**.
 
 A room has to be chosen to act as the base room of the relation.
 
-<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (2).png" alt=""><figcaption></figcaption></figure>
 
 In the example, we have used DD2+1B-DH-AGI150.
 
@@ -36,7 +40,7 @@ After this, click on the **Create relation price** button in the upper right cor
 
 For setting up relation price lists between rooms, first you have to display the rooms. You will notice 2 columns in the right part of the screen named **Base Room Price** and **Relation Price**. These columns allow the user to manage the price lists for the hotel.
 
-<figure><img src=".gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Base Room Price** is the room that will provide the price for the price list of the room type.
 
@@ -52,21 +56,21 @@ DJU21-H-PP-AGI150 will provide the base price for EXJU21-PP-H-AGI150 according t
 
 After setting up the base room and relation, click on the **Update new price list** button. It is located in the upper right corner.
 
-<figure><img src=".gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Price list configuration[​](https://docs.tourpaq.com/docs/documentation/relation-pricelist#price-list-configuration) <a href="#price-list-configuration" id="price-list-configuration"></a>
 
 When entering the price list, after selecting all desired filters (⚠️ **Warning:** Price list relation is available only if the hotel is also chosen!!!!) \*\*, after clicking on the **Display** button, you will see 2 new tabs called **Relation PL** and \*\*Related PL\*\*
 
-<figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Relation PL[​](https://docs.tourpaq.com/docs/documentation/relation-pricelist#relation-pl) <a href="#relation-pl" id="relation-pl"></a>
 
 At this moment only **Relation PL** is of interest. To configure it, click on **View**
 
-<figure><img src=".gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 For a relation price list to be in use, it has to be activated. That is done from the **ACTIVE** column check box.
 
@@ -88,7 +92,7 @@ The settings are saved using the **Save Relation PL** in the upper right corner.
 
 To see the prices, the base room will need prices first. The rest of the rooms will have their prices set in about 2 minutes from the moment the price list is saved.
 
-<figure><img src=".gitbook/assets/image (8) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This is the result of the relation price list.
 

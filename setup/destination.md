@@ -116,6 +116,8 @@ The purpose of the **Passenger Information** page is to:
 
 #### Instructions
 
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+
 **Accessing Passenger Information**
 
 1. Go to **Setup → Destination**.
@@ -147,8 +149,19 @@ The list will display all entries configured for the selected destination.
 In the provided example:
 
 * The destination **CHQ** has one passenger information entry titled **Dest Errata Def**.
-* It applies to stays from **28-10-2025** to **28-10-2025**.
-* The entry is not marked as _Acknowledged_, meaning passengers are not required to confirm it.
+* It applies to stays from **28-10-2025** to **28-10-2026** and to stays from **01-02-2026** to **28-02-2026**.&#x20;
+
+{% hint style="info" %}
+#### Passenger information allows overlapping periods <a href="#passenger-information-allows-overlapping-periods" id="passenger-information-allows-overlapping-periods"></a>
+
+Ex: If fixed info is made for the entire season (28.10.25 - 28.10.26) - Dest errata Def, and another info is made for a short period (01.02.26 - 28.02.26) - Destination passenger information overlap period. Even if the periods overlapping, the system will allow and displayed both on the ticket.
+{% endhint %}
+
+* The entrys is marked as _Acknowledged_, meaning passengers are required to confirm it.
+
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### FAQ
 

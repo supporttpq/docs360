@@ -1,48 +1,55 @@
+---
+description: >-
+  Deduplicate Tourpaq Office CRM customer records. Find duplicates by email,
+  phone, or address, then merge, accept, or delete customer profiles while
+  keeping bookings and bonus points consistent.
+---
+
 # Merge customers
 
-The **Merge Customers** tool identifies and merges duplicate customer profiles across the platform. Duplicate entries may occur when bookings are created manually, imported from external sources, or submitted through different channels (web booking, sales agents, call center).
+The **Merge customers** tool helps you deduplicate customer profiles in Tourpaq Office CRM. Duplicates often come from manual entry, imports, or multiple sales channels (web booking, call center, agents).
 
-Merging customers ensures clean CRM data, correct bonus points, and consistent contact details across all bookings.
+Merging customers keeps your customer database clean and improves reporting quality. It also helps keep bonus points, bookings, and contact details consistent.
 
 ***
 
-## **Overview**
+### Overview
 
 At the top of the page, duplicates are automatically grouped based on three criteria:
 
-1. **Grouped customers by email address**
-2. **Grouped customers by telephone number**
-3. **Grouped customers by ZIP and Address**
+1. **Email address**
+2. **Phone number**
+3. **ZIP code + address**
 
 Users can switch between categories using the tabs above the list.\
 The number of remaining groups is shown next to each tab (e.g. _34 remaining_).
 
-Each group presents potential duplicates that can be reviewed and merged into a single main customer profile.
+Each group contains potential duplicates that you can review and merge into a single main customer profile.
 
 ***
 
-### Grouping Logic <a href="#grouping-logic" id="grouping-logic"></a>
+### Grouping logic
 
 Customers are automatically grouped by one or more of the following matching criteria:
 
-* 📞 **Phone Number**
-* 📧 **Email Address**
-* 🏠 **ZIP Code + Address**
+* **Phone number**
+* **Email address**
+* **ZIP code + address**
 
 Within each group:
 
 * You may **act on the entire group**.
 * Or you can create and manage **subgroups** (by selecting specific duplicates).
 
-Once a customer is processed (merged, deleted, or accepted), it will no longer be proposed in future doublet matches—even if newly created duplicates share the same data.
+Once a customer is processed (merged, deleted, or accepted), it will no longer be proposed in future duplicate matches, even if newly created customers share the same data.
 
-## **Table Explanation**
+### Table explanation
 
 Each row represents a customer record within a detected duplicate group.
 
 #### **Columns**
 
-<figure><img src=".gitbook/assets/image (553).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (553).png" alt="Duplicate customer group table with main selection and subgroup checkboxes"><figcaption><p>Duplicate customer group table: choose the main profile and select which duplicates to merge.</p></figcaption></figure>
 
 | Column           | Description                                                                                                                             |
 | ---------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
@@ -59,13 +66,13 @@ Each row represents a customer record within a detected duplicate group.
 | **Address**      | Full address.                                                                                                                           |
 | **News**         | Indicates if the customer is subscribed to newsletters (`✓`) or not (`×`).                                                              |
 
-The tool displays all duplicate rows clearly so the user can verify differences across email, phone, name spelling, address, and bonus points before merging.
+The table helps you compare duplicates before merging (email, phone, spelling, address, newsletter status, and bonus points).
 
 ***
 
-## **Actions Toolbar**
+### Actions toolbar
 
-Located in the top-right corner of the listing:
+Located in the top-right of the list:
 
 #### **Delete All**
 
@@ -83,7 +90,7 @@ Merges all selected subgroup customers into the main customer selected in each g
 
 ***
 
-## **Merging Workflow**
+### Merge workflow
 
 #### **1. Identify duplicates**
 
@@ -101,13 +108,13 @@ Use the checkboxes under **Subgroup** for every profile that should be merged in
 
 Choose whether to:
 
-* **Merge All** – combine the subgroup records into the main profile
-* **Delete All** – remove invalid duplicate entries
-* **Accept All** – acknowledge the duplicates without merging
+* **Merge All** – combine the selected records into the main profile
+* **Delete All** – remove invalid duplicate records
+* **Accept All** – mark duplicates as handled without merging
 
 ***
 
-## **What Happens When Customers Are Merged**
+### What happens when customers are merged
 
 When merging:
 
@@ -120,15 +127,9 @@ This ensures a unified, clean customer database.
 
 ***
 
-## **Pagination**
+### Summary
 
-At the bottom of the list, users can navigate between pages of duplicate groups and adjust the number of lines displayed per page (10 / 25 / 50 / 100).
-
-***
-
-## **Summary**
-
-The **Merge Customers** page helps administrators:
+The **Merge customers** page helps administrators:
 
 * Detect duplicate customer entries
 * Clean CRM data across web bookings and manual entries
@@ -138,19 +139,19 @@ The **Merge Customers** page helps administrators:
 
 ***
 
-### Special Case: ZIP Code + Address Grouping
+### Special case: ZIP code + address grouping
 
 * Instead of deleting duplicates, this method **links** all customers in the group.
-* A **‘parent customer’** must be selected.
+* A **parent customer** must be selected.
   * All **bonuses and rewards** are redirected to the parent.
   * Linked duplicates still retain **their bookings**.
 * On the **parent customer page**, you can:
-  * View links to the doublets.
-* On the **doublet customer page**, a link to the parent is also available.
+  * View links to the linked duplicates.
+* On each linked duplicate customer page, a link to the parent is also available.
 
 📌 **Important:** If any customers in the group have **future bookings**, one of them must become the **parent** during the merge.
 
-<figure><img src=".gitbook/assets/69d3b6e8-726a-421c-ba1c-b4ca7124becd.webp" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/69d3b6e8-726a-421c-ba1c-b4ca7124becd.webp" alt="ZIP code and address grouping with parent customer selection"><figcaption><p>ZIP code + address grouping: select a parent customer to link household profiles.</p></figcaption></figure>
 
 ### Performance Tips
 
@@ -158,16 +159,6 @@ The **Merge Customers** page helps administrators:
   * Perform **several subgroup operations** first.
   * Follow up with a **final group-level action**.
 * You can manually **edit customer details** for more refined control before merging.
-
-***
-
-### Summary Table
-
-| Action | Full Group                    | Subgroup                               |
-| ------ | ----------------------------- | -------------------------------------- |
-| Merge  | Merges all to 1, deletes rest | Merges selected to 1, deletes selected |
-| Delete | Deletes entire group          | Deletes only selected                  |
-| Accept | Keeps all, skips future match | Accepts selected, skips future match   |
 
 ***
 

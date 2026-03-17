@@ -26,7 +26,7 @@ The list of available menus is available right after the login request succeeds.
 
 **Configuring an extra**
 
-<mark style="background-color:red;">**IMPORTANT NOTE:**</mark> <mark style="background-color:red;"></mark><mark style="background-color:red;">Only guides can add products and make them available in the application.</mark>
+<mark style="background-color:red;">**IMPORTANT NOTE:**</mark> <mark style="background-color:red;">Only guides can add products and make them available in the application.</mark>
 
 <figure><img src=".gitbook/assets/image (279).png" alt=""><figcaption></figcaption></figure>
 
@@ -77,11 +77,11 @@ After filling in the settings we wanted we proceed to the next step - saving the
 
 **Have the excursion(product) still listed in the app as read only mode**
 
-If allotment is generated with 0 availability, or after the allotment runs out, the product can still be listed in the VisitSun mobile app if it is set as bellow:
+If allotment is generated with 0 availability, or after the allotment runs out, the product can still be listed in the Guest App if it is set as bellow:
 
 <figure><img src=".gitbook/assets/image (284).png" alt=""><figcaption></figcaption></figure>
 
-In the VisitSun mobile app, the effect will be that the excursion/product will continue to be listed, but no buy button will be available.
+In the Guest App, the effect will be that the excursion/product will continue to be listed, but no buy button will be available.
 
 #### **Setting the selling price(s) for an excursion**
 
@@ -93,7 +93,7 @@ Another really important step in the process of setting up the excursion for the
 
 In order to create a new price rule, one has to click on the **New** button in the right corner of the page mentioned previously. Pressing the **New** button will generate a new entry to the **Price Rules** table and we will have to configure it properly (see picture below).
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (18).png" alt=""><figcaption></figcaption></figure>
 
 In order to properly understand how the price rules work in the process of setting up an excursion, we will provide a summary description of each field seen above:
 
@@ -115,7 +115,7 @@ Once we finish completing all the fields mentioned above, we click on **Save** a
 
 In order to do that, we will have to navigate under the **Extras -> Routes** page (see the picture below).
 
-<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 After you click insert, a route will be generated and you will be able to add **pickup points** (see picture below).
 

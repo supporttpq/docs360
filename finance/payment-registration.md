@@ -1,8 +1,32 @@
+---
+description: >-
+  Manually register booking payments, filter payment records, and export payment
+  reports in Tourpaq Office Finance.
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+---
+
 # Payment Registration
 
 ### Overview
 
-**Payment Registration** is where you can **view payments** recorded in Tourpaq and **manually register new booking payments**.
+**Payment Registration** is the Tourpaq Office **Finance** screen for **payment records**.
+
+Use it to **find payments**, **reconcile booking balances**, and **manually register booking payments**.
 
 You can see:
 
@@ -15,22 +39,23 @@ You can **only create booking payments** in Payment Registration. **Guide paymen
 
 ### What you can do
 
-* Filter and review payment records
-* Register a new payment on a booking
-* Export payment results for reporting or audits
+* Filter and review payment records in the payment list
+* Register a new payment on a booking (manual payment entry)
+* Export payment results for reporting, reconciliation, or audits
 
 ### Before you start
 
 * You must be logged in with the required permissions (typically **Financial** or **Administrator**)
 * To register a payment, you need the **booking number/reference** and the **amount**
 * If you need to import many bank payments, use [Payment File Import](payment-file-import.md)
+* If you need to import many refunds, use [Refund File Import](refund-file-import.md)
 * If a payment method is missing, check [Method of Payment](method-of-payment.md)
 
 ***
 
 ### View and filter payments
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Payment Registration filters and results"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (13).png" alt="Payment Registration filters and results"><figcaption><p>Filter payment records and review results in Payment Registration.</p></figcaption></figure>
 
 1. Set **Payment start date** and **Payment end date**.
 2. (Optional) Set **Departure start date** and/or **Departure end date**.
@@ -81,7 +106,7 @@ This shows payments made between `26.03.2025` and `31.03.2025` for bookings depa
 
 ### Register a new booking payment
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Create payment form"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Create payment form"><figcaption><p>Create a manual booking payment with method, date, booking reference, and amount.</p></figcaption></figure>
 
 {% stepper %}
 {% step %}
@@ -120,10 +145,12 @@ If you don’t see your new payment in the list right away, adjust your **paymen
 
 ***
 
-### Export payments
+### Export payments (payment report)
 
 1. Apply the filters you want.
 2. Click **Export** to export the **currently displayed** results.
+
+This export is your payment report for the selected filters.
 
 ***
 

@@ -1,3 +1,9 @@
+---
+description: >-
+  Manage hotel web content, descriptions, facilities, and customer-facing texts
+  shown on websites, offers, tickets, and vouchers.
+---
+
 # Hotel Web
 
 ### Overview
@@ -18,7 +24,7 @@ Use this page to:
 
 ### Sections and fields
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Brand tabs
 

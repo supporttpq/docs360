@@ -38,7 +38,7 @@ Rules are created on **company level** (not per brand).
 
 #### Step 3: Filter the list
 
-<figure><img src="../.gitbook/assets/image (11) (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11) (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 Fill in filters, then click **Display**.
 

@@ -1,10 +1,17 @@
+---
+description: >-
+  Manage golf course bookings in Tourpaq Office. Mark golf passengers, enter
+  handicap (HCP), add rounds, set requested and confirmed tee times, and print
+  tickets with golf details.
+---
+
 # Golf Courses
 
 ## Golf Courses
 
 ### Overview
 
-The **Golf Courses** page allows you to manage golf-related activities linked to a booking. It is used to:
+The **Golf Courses** page in **Tourpaq Office** lets you manage **golf extras** linked to a booking. Use it to mark which passengers play golf, enter handicap (**HCP**) and club numbers, add **golf rounds**, and maintain **requested vs confirmed tee times** for the golf provider.
 
 * Mark which passengers are playing golf.
 * Maintain player details such as handicap (**HCP**) and club number.
@@ -58,7 +65,7 @@ This section displays the golf rounds added for the selected passengers.
 | Field                 | Purpose                                                                 | Instructions                                                                                                                                            |
 | --------------------- | ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Golf Course**       | Name of the golf course where the round will be played.                 | Automatically populated when you add a course.                                                                                                          |
-| **Round**             | Identifies the specific round (for example, Round 1, Round 2).          | Valid round numbers are `1–10`. Use the **plus icon (+)** to add a round, or the **trash icon (🗑)** to delete a round.                                 |
+| **Round**             | Identifies the specific round (for example, Round 1, Round 2).          | Valid round numbers are `1–99`. Use the **plus icon (+)** to add a round, or the **trash icon (🗑)** to delete a round.                                 |
 | **Passenger**         | Displays which passenger is assigned to the golf round.                 | Automatically linked to passengers with **Golf** enabled in the list above.                                                                             |
 | **Price (DKK)**       | The cost per passenger or round.                                        | Shows the price per round per passenger. The total is calculated automatically at the bottom.                                                           |
 | **Request Date/Time** | The time the customer requests to play the round.                       | Select the requested date and time. Use the **copy icon** to assign the same requested time to multiple passengers/rounds.                              |
@@ -93,7 +100,7 @@ In the example shown on the page:
 
 The ticket contains relevant information for guests who have booked golf courses through the system.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (7).png" alt="Ticket example showing golf course rounds and requested/confirmed tee times"><figcaption></figcaption></figure>
 
 Typically, the ticket includes:
 
@@ -138,7 +145,7 @@ The **Extras Category** configuration controls how golf extras are grouped and b
 
 Once the type is set to **Golf**, you can create one or more categories that use this type.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Example workflow
 
@@ -181,7 +188,7 @@ This configuration is used to:
 
 ### **Instructions and field explanations**
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (8).png" alt=""><figcaption></figcaption></figure>
 
 #### **Basic setup section**
 
@@ -230,7 +237,7 @@ Configure if the system should automatically generate invoices or charges for th
 
 | Field                | Description                                                                    |
 | -------------------- | ------------------------------------------------------------------------------ |
-| **Rounds**           | Maximum number of rounds for one booking.                                      |
+| **Rounds**           | Maximum number of rounds for one booking. Valid numbers are 1 to 99            |
 | **Product Child ID** | Use a ProductID if you want to reuse generated allotment from another product. |
 
 **Behaviour Settings**
@@ -251,7 +258,7 @@ Golf products are priced using **Extras Prices** when this pricing model is used
 
 This approach allows pricing to be fully managed within the **Extras Prices** tab of the golf extra, reducing setup complexity and keeping pricing aligned with other standard extras.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

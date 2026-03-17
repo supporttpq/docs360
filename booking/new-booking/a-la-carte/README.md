@@ -1,8 +1,15 @@
+---
+description: >-
+  A la Carte in Tourpaq Office builds flexible trips from hotels and transports.
+  Includes Custom Hotel Days, one-way flights, hotel-only, transport-only,
+  circuit bookings, and GDS.
+---
+
 # A la Carte
 
 ### Overview
 
-**A la Carte** lets you build a trip from individual components that your organisation has preconfigured in Tourpaq (hotels, transports, price lists, and rules).\
+**A la Carte** lets you build a **flexible trip** from individual components that your organisation has preconfigured in Tourpaq (hotels, transports, price lists, and rules).\
 It is typically used when the trip does **not** fit a standard “fixed package” flow—for example when you need **custom hotel dates**, **one-way flights**, or **mixed itineraries**.
 
 A la Carte still uses the same core mechanisms as other bookings:

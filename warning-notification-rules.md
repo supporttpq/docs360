@@ -2,79 +2,191 @@
 
 ### Overview
 
-The **Warning Notification Rules** module enables administrators to configure automated warning emails or SMS messages for users based on a set of predefined conditions. These warnings help ensure that critical issues within the platform—such as email delivery failures, GDS booking issues, or service errors— are promptly communicated to the appropriate personnel.
+Use **Warning Notification Rules** to send automatic warning messages to your team.
 
-Access: **E-mail Setup → Warning Notification Rules**
+Warnings can be sent by **email** or **SMS**.
+
+They help you react faster when something important goes wrong. For example, when an email fails to send or a booking task fails.
+
+### Access
+
+Open **E-mail Setup → Warning Notification Rules**.
 
 ### Purpose
 
-The purpose of the Warning Notification Rules module is to:
+Use this feature to:
 
-* Notify users about system issues, errors, or important changes automatically.
-* Provide real-time alerts for operational issues, reducing response time.
-* Ensure that warnings are targeted to the relevant user(s) based on configured rules.
+* Notify users about problems and important changes automatically.
+* Reduce response time by alerting the right people immediately.
+* Avoid missed issues by using clear rules for who gets what.
 
 ### Tabs Overview
 
-The module contains three main tabs:
+You will see three tabs:
 
-1. **Warning Notification Rules** – Configure the conditions that trigger warnings.
-2. **Warning Contacts** – Define which users or groups receive warnings.
-3. **Warning Sent from E-mail** – Track and review previously sent warning notifications.
+1. **Warning Notification Rules**: choose which warnings are sent, and when.
+2. **Warning Contacts**: choose who receives warnings.
+3. **Warning Sent from E-mail**: choose the sender address shown in warning emails.
 
-#### Warning Contacts <a href="#warning-contacts" id="warning-contacts"></a>
+#### Warning Contacts
 
-In here a user can be created that will receive the warning e-mails or SMS.
+Create contacts that can receive warning emails or SMS messages.
 
-<figure><img src=".gitbook/assets/image (78).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (78).png" alt="Warning Contacts list."><figcaption><p>Warning contacts list.</p></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (79).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (79).png" alt="Add or edit a warning contact."><figcaption><p>Add or edit a warning contact.</p></figcaption></figure>
 
-#### Warning sent from e-mail <a href="#warning-sent-from-e-mail" id="warning-sent-from-e-mail"></a>
+#### Warning Sent from E-mail
 
-In here the sending e-mail address can be personalized. All e-mails will appear as sent from the address inserted.
+Set which sender email address is shown on warning emails.
 
-<figure><img src=".gitbook/assets/image (80).png" alt=""><figcaption></figcaption></figure>
+All warning emails will appear to come from this address.
 
-#### Warning Notification Rules <a href="#warning-notification-rules" id="warning-notification-rules"></a>
+<figure><img src=".gitbook/assets/image (80).png" alt="Set sender email address for warnings."><figcaption><p>Choose the sender email address.</p></figcaption></figure>
 
-In here rules can be set for each user regarding what notification types he can receive.
+#### Warning Notification Rules
 
-<figure><img src=".gitbook/assets/image (81).png" alt=""><figcaption></figcaption></figure>
+Set rules for which warning types each contact should receive.
 
-<figure><img src=".gitbook/assets/image (82).png" alt=""><figcaption></figcaption></figure>
+You can also control how often a warning is sent.
+
+<figure><img src=".gitbook/assets/image (81).png" alt="Warning notification rules list."><figcaption><p>Rules list.</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (82).png" alt="Edit a warning rule."><figcaption><p>Edit a rule.</p></figcaption></figure>
 
 ### Types of Warnings
 
-Below is a categorized list of common warnings and their purpose:
+Warning names match what you see in the system.
 
-| Warning                                                                                  | Description                                                                                                                               |
-| ---------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| **Informational**                                                                        | General information alerts.                                                                                                               |
-| **HotelReporting Service – SMTP Error**                                                  | Alerts when an email fails to send from Hotel Communication.                                                                              |
-| **HotelReporting Service – Other Errors**                                                | Alerts for other types of errors in Hotel Reporting.                                                                                      |
-| **ExtraReporting Service – SMTP Error**                                                  | Alerts when an email fails to send from Extra Communication.                                                                              |
-| **ExtraReporting Service – Other Errors**                                                | Alerts for other types of errors in Extra Reporting.                                                                                      |
-| **TransportReporting Service – FTP / SMTP / Other Errors**                               | Alerts when emails or FTP operations fail in Transport Communication.                                                                     |
-| **Mailer Helper – Error**                                                                | Alerts when the mail sending helper encounters an error.                                                                                  |
-| **Services Watcher – Warning**                                                           | General service monitoring warnings.                                                                                                      |
-| **Update GDS status from TKQ to TKOK Service**                                           | Notifies when a GDS booking status has changed from TKQ to TKOK.                                                                          |
-| **Unable to configure GDS flight / Unable to check PNR / Unable to change Time Changes** | Alerts for issues with GDS flight configuration or Travelport reservations.                                                               |
-| **ExtraSupplierReporting Service – SMTP / Other Errors**                                 | Alerts when emails from Extra Supplier Communication fail.                                                                                |
-| **No Running GDS flights Service**                                                       | Alerts when the Flight Configuration service for GDS transports fails to run.                                                             |
-| **Unable to submit WebBooking to Travelport**                                            | Alerts when webbooking GDS submissions fail.                                                                                              |
-| **FewerGDSFlight**                                                                       | Warns when a Dynamic Transport has 10% fewer flights than the previous day.                                                               |
-| **QueuemanagementGDS**                                                                   | Alerts about GDS bookings needing attention due to Travelport time changes.                                                               |
-| **Success to change Time Changes / Success to submit WebBooking**                        | Confirms successful flight changes or webbooking submissions to Travelport.                                                               |
-| **Failed to send email due to missing attachment**                                       | Warns when emails with tickets fail to send due to missing files.                                                                         |
-| **Unable to Generate Price List Per Day**                                                | Alerts when price lists used for ALC settings fail to be generated.                                                                       |
-| **Bookings in Error Status**                                                             | Sends email for bookings remaining in error status for over 1 hour.                                                                       |
-| **Connected Hotel Error**                                                                | Alerts if there is no response from D-Edge API; repeated every 6 hours if unresolved, also displayed in Dashboard/Notifications/Warnings. |
+Some warnings include terms like **SMTP**, **FTP**, or **GDS**.
+
+These are technical names used by the system. You can still use them safely as labels.
+
+<details>
+
+<summary>Common terms used in warning names</summary>
+
+* **SMTP**: email sending.
+* **FTP**: file transfer between systems.
+* **GDS**: flight booking connection (for example Travelport).
+* **PNR**: a booking reference used for flight reservations.
+
+</details>
+
+#### Common warning groups
+
+These are common examples:
+
+* **Informational**
+  * General information alerts.
+* **Email sending problems**
+  * Hotel reporting email failed to send (SMTP error).
+  * Extra reporting email failed to send (SMTP error).
+  * Missing attachment when sending ticket emails.
+* **Reporting problems**
+  * Hotel reporting errors (other errors).
+  * Extra reporting errors (other errors).
+  * Transport reporting errors (FTP, SMTP, or other errors).
+  * Extra supplier reporting errors (SMTP or other errors).
+* **GDS and flight-related warnings**
+  * GDS status changed (for example TKQ → TKOK).
+  * Unable to configure GDS flight, check PNR, or apply time changes.
+  * Unable to submit Web Booking to Travelport.
+  * Fewer GDS flights than yesterday (for dynamic transport).
+  * Queue management warnings for GDS bookings.
+  * Success messages for time changes or submissions (used as confirmations).
+* **Other system warnings**
+  * Mail helper errors.
+  * Service watcher warnings.
+  * Unable to generate a price list per day.
+  * Bookings staying in error status for more than 1 hour.
+  * Connected hotel errors (no response from the hotel connection).
+
+{% hint style="info" %}
+If you are unsure which warning to enable, start with email failures and booking errors.
+{% endhint %}
 
 ### Instructions for Use
 
-1. Navigate to **E-mail Setup → Warning Notification Rules**.
-2. **Configure Warning Rules**: Define conditions that trigger notifications, including the type of warning and frequency.
-3. **Set Warning Contacts**: Assign users or groups who should receive notifications.
-4. **Monitor Sent Warnings**: Use the “Warning Sent from E-mail” tab to track sent warnings and verify successful delivery.
-5. Adjust rules as needed to ensure critical issues are properly reported without causing notification overload.
+{% stepper %}
+{% step %}
+#### 1. Choose who should receive warnings
+
+Open **Warning Contacts**. Add one or more recipients.
+{% endstep %}
+
+{% step %}
+#### 2. Set the sender email address
+
+Open **Warning Sent from E-mail**. Set the sender address for warning emails.
+{% endstep %}
+
+{% step %}
+#### 3. Turn on the warnings you need
+
+Open **Warning Notification Rules**.
+
+Pick the warning types you want. Set how often they can be sent.
+{% endstep %}
+
+{% step %}
+#### 4. Review and adjust
+
+If people get too many messages, reduce the warning list or lower the frequency.
+{% endstep %}
+{% endstepper %}
+
+### FAQ
+
+<details>
+
+<summary>Who should receive warning notifications?</summary>
+
+Send warnings to the people who can act on them.
+
+Usually this is an administrator, an operations inbox, or a small support group.
+
+</details>
+
+<details>
+
+<summary>Should I use email, SMS, or both?</summary>
+
+Use **email** for most warnings.
+
+Use **SMS** only for urgent issues that need fast attention.
+
+</details>
+
+<details>
+
+<summary>Why am I getting too many warnings?</summary>
+
+This usually happens when:
+
+* Too many warning types are enabled, or
+* The frequency is set too high.
+
+Start small. Enable only the warnings you truly need.
+
+</details>
+
+<details>
+
+<summary>Why is a warning email not being delivered?</summary>
+
+First check that the contact has a valid email address.
+
+Then check that your sender address is set and the warning rule is enabled.
+
+</details>
+
+<details>
+
+<summary>Can I use a shared inbox for warnings?</summary>
+
+Yes. This is often the best choice.
+
+Use an inbox your team monitors during business hours.
+
+</details>

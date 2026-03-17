@@ -2,7 +2,7 @@
 
 #### Overview
 
-The **Vocabulary** feature in the **VisitSun mobile application** provides guests with a helpful list of basic words and expressions they can use during their vacation.\
+The **Vocabulary** feature in the **Guest App** provides guests with a helpful list of basic words and expressions they can use during their vacation.\
 These keywords are configured in **Tourpaq Office**, under **Guest App → Vocabulary**, when logged in as a guide or admin.\
 The displayed vocabulary depends on the **country** associated with the guest’s booking, ensuring that the provided terms are relevant to the destination.
 
@@ -31,7 +31,7 @@ Typical examples include:
    * **Key:** The word or phrase in the guest’s language.
    * **Value:** The translation or local equivalent.
 6. **Click Save:**
-   * The new vocabulary entry will be displayed in the list and automatically shown in the VisitSun app for guests traveling to the selected country.
+   * The new vocabulary entry will be displayed in the list and automatically shown in the Guest App for guests traveling to the selected country.
 
 <figure><img src=".gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

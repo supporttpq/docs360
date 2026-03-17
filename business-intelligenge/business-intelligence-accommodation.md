@@ -1,3 +1,9 @@
+---
+description: >-
+  Analyze hotel and accommodation performance in Tourpaq, including occupancy,
+  allotment usage, and stay trends.
+---
+
 # Business Intelligence – Accommodation
 
 ### **Overview**

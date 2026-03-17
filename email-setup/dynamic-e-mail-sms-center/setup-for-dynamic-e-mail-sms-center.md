@@ -14,7 +14,7 @@ This feature is designed to:
 
 ### General
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="New template setup screen for Dynamic E-mail/SMS Center."><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="New template setup screen for Dynamic E-mail/SMS Center."><figcaption></figcaption></figure>
 
 ### Access
 
@@ -37,10 +37,12 @@ Before you edit anything, select the correct **brand** in the top-left dropdown.
 #### Basic template settings
 
 * **Template name**: a clear name you can recognize later.
+* **Email Type:** allow yo create different email type.
 * **Template type**: the kind of message you are setting up.
 * **Active**: allows the template to be used for sending.
 * **Hidden**: hides the template from the Dynamic E-mail/SMS Dashboard list.
 * **Hour to send**: the time the email/SMS should be sent. Sending can be delayed by up to about 20 minutes. If you leave it blank, it is sent as soon as all rules match.
+* **Product Resourser With And:** when checked, the system finds all bookings with all resources purchased / not purchased
 
 #### Email-only settings
 
@@ -57,7 +59,7 @@ Before you edit anything, select the correct **brand** in the top-left dropdown.
 
 ### Sending options
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (23).png" alt="Sending options and rule builder for a dynamic template."><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (47).png" alt="Sending options and rule builder for a dynamic template."><figcaption></figcaption></figure>
 
 Use these fields to decide **when** the message should be sent.
 
@@ -92,7 +94,7 @@ The examples below show how this works.
 
 **Example:** Send an email or SMS **60 days before departure** and **2 days after booking date**.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (7).png" alt=""><figcaption></figcaption></figure>
 
 * If you set the same rule type more than once, the booking matches any of them. The system still sends only one message.
 
@@ -116,7 +118,7 @@ The system sends **only one message per template**, even if you add several “w
 
 ### Product and discount/supplement filters
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Product and discount/supplement filters for dynamic templates."><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Product and discount/supplement filters for dynamic templates."><figcaption></figcaption></figure>
 
 Use these fields to filter bookings based on what they bought. “Disc/suppl” means **discounts and supplements**.
 
@@ -142,7 +144,7 @@ Note: `1` means the email is sent. `0` means it is not sent.
 
 ### Message content
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Message editor for a dynamic template."><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Message editor for a dynamic template."><figcaption></figcaption></figure>
 
 The message editor works like the regular **E-mail Center**.
 
@@ -150,11 +152,11 @@ The message editor works like the regular **E-mail Center**.
 
 Write the link text (for example, “Open your booking”). Select it. Then click the link button shown in the screenshot.
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Add link button in the message editor."><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Add link button in the message editor."><figcaption></figcaption></figure>
 
 In the URL field, insert the `[Hash-key-link]`. Select the other protocol, as shown in the screenshot.
 
-<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Link settings with Hash-key-link placeholder."><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Link settings with Hash-key-link placeholder."><figcaption></figcaption></figure>
 
 ### Date filters
 
@@ -164,9 +166,53 @@ Use these fields to filter bookings by booking, departure, arrival, and return d
 
 ### Destination filters
 
-<figure><img src="../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Destination and transport filters for bookings."><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Use these fields to filter bookings by hotel, room, transport, real transport, resort, arrival airport, and more.
+Dynamic Emails can be configured to vary their content based on departure/arrival details and transport characteristics. This makes it possible to deliver highly targeted emails, such as departure specific instructions or airport related information.
+
+Dynamic Emails can be filtered so that a specific email template is sent only when defined booking, destination, or transport conditions are met. Filters are combined to precisely control when an email is triggered.
+
+**Destination Filters**
+
+Destination filters define **where** the booking applies. You can filter Dynamic Emails by:
+
+* **Countries**
+* **Departures** (departure airports or locations)
+* **Arrivals**
+* **Resorts**
+* **Hotels**
+
+This allows, for example, sending different emails based on the departure airport or destination hotel.
+
+**Transport Filters**
+
+Transport-related filters define **how** the customer is traveling:
+
+* **Transports**
+* **Real Transports**
+* **Transport Suppliers**
+* **Transport Modes**
+* **Transport Types**
+
+These filters make it possible to distinguish between different suppliers, charter vs GDS flights, or system vs external transports.
+
+**How Filtering Works**
+
+* Filters are **inclusive**. If a filter is set, the booking must match it for the email to be sent.
+* Multiple filters can be combined to create highly specific rules.
+* If a filter category is left empty, it does not restrict the email.
+
+**Typical Use Case**
+
+You can configure different Dynamic Email variants such as:
+
+* One email for passengers departing from Airport A with Supplier X
+* Another email for Airport A with Supplier Y
+* A third email for Airport B with Supplier X
+
+This is especially useful for departure-specific information, such as parking instructions or airline-specific details.
+
+These filtering options ensure that customers receive only the most relevant communication for their exact booking context.
 
 ### Resource filters (product links)
 
@@ -176,7 +222,7 @@ Use **Resource filters** to send clickable product links to guests. Guests can a
 
 When you use Resource filters, a special variable becomes available in the email body.
 
-<figure><img src="../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Variable for inserting product links into the email body."><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Variable for inserting product links into the email body."><figcaption></figcaption></figure>
 
 You can attach this variable to a button, text, or image. When the guest clicks it, they are taken to the Customer Center. They will see a message that the product is added. They must save the booking to confirm it.
 

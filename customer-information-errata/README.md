@@ -1,36 +1,63 @@
+---
+description: >-
+  Configure customer information notices (special conditions) shown to guests
+  during the booking flow. Covers examples, guest acknowledgment, and rules for
+  stay period and booking period applicability.
+---
+
 # Customer information (errata)
 
-### Special Conditions and Guest Notifications
+### Customer information notices (special conditions)
 
-In certain cases, it is necessary to inform guests about specific conditions related to a destination, resort, transport service, hotel, room, or additional service (extra). These notifications may serve as general information or may require explicit acknowledgment from the guest.
+Use **Customer information** to show **guest notifications** and **special conditions** during the booking flow. These notices can be informational, or require guest acknowledgment at checkout.
 
-### **Examples of Special Conditions**
+Typical use cases include destination rules, operational transport notes, hotel/room restrictions, or extra service details.
 
-* **Destinations**: Legal requirements such as visa regulations or local taxes.
-* **Transport**: Operational details, e.g., a technical stop for refueling.
-* **Hotels**: Notices of ongoing renovations or temporary service limitations.
-* **Rooms**: Restrictions such as air conditioning not being available during certain periods.
-* **Extras**: Practical details, e.g., an excursion with a meeting point at the harbor or a requirement to bring personal items like water.
+### Examples
 
-### **Guest Acknowledgment**
+Common examples:
 
-When the information has a potential impact on the guest experience and acknowledgment is required, the notice will be displayed during the checkout process for the guest to review and confirm.
+* **Destinations**: visa requirements, local taxes, entry rules.
+* **Transport**: technical stop, refueling, check-in requirements, baggage notes.
+* **Hotels**: renovations, temporary facility closures, service limitations.
+* **Rooms**: restricted AC periods, view obstructions, construction noise.
+* **Extras**: meeting point, required items, age/fitness requirements.
 
-For bookings made via telephone, the relevant information will be presented to the sales staff, who are authorized to confirm the acknowledgment on behalf of the guest.
+### Guest acknowledgment (checkout confirmation)
 
-### **Conditional Relevance**
+If the notice can affect the guest experience, require acknowledgment. The guest must confirm it during checkout (Tourpaq Web Booking / Customer Center, depending on setup).
 
-Some notifications may only apply to specific bookings. For example, if additional noise is expected at a hotel during a defined period and this was not yet documented at the time of booking, only guests who booked prior to the update will need to be informed.
+For phone bookings, the notice is shown to the agent. The agent can confirm the acknowledgment on the guest’s behalf.
 
-### Specification
+### Conditional relevance (when the notice is shown)
 
-Customer notifications must respect the defined **start and end dates**, meaning the information should only be shown to bookings where the guest’s stay **overlaps** with this date range. A booking is considered eligible if any part of the guest’s stay falls within the specified start and end dates.
+Notices do not always apply to every booking. Example: hotel noise during a specific date range, added after some guests booked. Only affected bookings should see the notification.
 
-In addition, some notifications may only apply to bookings made within a specific **booking period**. In such cases, the information must only be displayed for bookings **created** within the defined booking start and end dates.
+### Rules (stay period + booking period)
+
+Notices must respect the configured **start** and **end** dates. Show the notice only if the guest’s stay **overlaps** the validity period. Any overlap counts as eligible.
+
+Optionally, you can also limit the notice to a **booking period**. In that case, show the notice only for bookings **created** within that booking start/end date range.
 
 To summarize:
 
-* **Stay Period Condition**: The notification is shown if the guest’s stay intersects with the defined validity period.
-* **Booking Period Condition**: The notification is shown only if the booking was made within the specified booking period.
+* **Stay period condition**: show it when the stay intersects the validity period.
+* **Booking period condition**: show it only when the booking creation date is in range.
 
-Both conditions may apply, and the information shall be displayed only when all relevant criteria are met.
+Both conditions can apply. Show the notice only when all configured criteria are met.
+
+### Where to configure customer information
+
+Add customer information notices on the relevant object:
+
+* [Customer Information on Destination setup](customer-information-on-destination-setup.md)
+* [Customer Information on Resort setup](customer-information-on-resort-setup.md)
+* [Customer Information on Transport setup](customer-information-on-transport-setup.md)
+* [Customer Information on Hotel setup](customer-information-on-hotel-setup.md)
+* [Customer Information on Extra setup](customer-information-on-extra-setup.md)
+
+To understand exactly how it appears to users:
+
+* [Customer Information Booking Flow](customer-information-booking-flow.md)
+* [Customer Information on WebBooking](customer-information-on-webbooking.md)
+* [Customer Information display on Ticket](customer-information-displayed-on-the-ticket.md)

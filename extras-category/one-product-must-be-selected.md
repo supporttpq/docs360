@@ -10,7 +10,7 @@ Allowing users to deselect all options can result in invalid selections, incorre
 
 This feature ensures that a valid extra option is always selected when required.
 
-See also: [Extra Category Overview](extra-category-overview.md).
+See also: [Extra Category Overview](extra-category-overview/).
 
 ### Purpose
 
@@ -76,12 +76,12 @@ If the selected extra has no availability (for example due to allotment), the bo
 
 * When the extra category "Gala Dinner" has the option enabled:
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * And an extra in that category is available for booking:
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * If a user tries to make a booking where the extra must be selected, it will be blocked at **Take Allotment**:
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

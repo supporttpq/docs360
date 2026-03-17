@@ -1,8 +1,31 @@
+---
+description: >-
+  Assign tee times and time-slot reservations in Tourpaq Office bookings. Select
+  a date and available time, assign passengers, take allotment, and save the
+  booking.
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+---
+
 # Tee Times
 
 ### **Overview**
 
-The **Tee Times** tab is used to assign a specific **date and time slot** to passengers for time-based extras (for example, golf tee times or other activities that run in fixed time slots). This makes it possible to reserve the correct time for each passenger and keep the booking aligned with availability.
+The **Tee Times** tab in **Tourpaq Office** is used to create a **tee time booking** (time-slot reservation) for time-based extras. Typical use cases are **golf tee times** and activities that run in fixed time slots. Assign a specific date and time per passenger, then reserve the slot using **Take Allotment**.
 
 ***
 
@@ -20,7 +43,7 @@ The **Tee Times** tab is used to assign a specific **date and time slot** to pas
 * The booking must include an **extra** that supports tee-time/time-slot reservations.
 * Time slots must be configured for the product in the system (otherwise no available times will be shown).
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (8).png" alt="Tee Times tab showing available time slots and passenger assignment"><figcaption></figcaption></figure>
 
 ### **Instructions**
 

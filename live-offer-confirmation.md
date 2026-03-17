@@ -1,3 +1,9 @@
+---
+description: >-
+  Track real-time reservation confirmations from both provider and Tourpaq and
+  resolve failures fast.
+---
+
 # Live Offer Confirmation
 
 ### Overview
@@ -14,7 +20,7 @@ This tool is essential for:
 * **Identifying and resolving failed bookings** quickly.
 * Ensuring that all customer reservations are fully validated before proceeding with final booking stages.
 
-<figure><img src=".gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Live Offer Confirmation screen showing booking period filters, status checkboxes, and reservation list."><figcaption><p>Live Offer Confirmation overview (filters + reservation status list).</p></figcaption></figure>
 
 ### Interface Explanation & Instructions
 
@@ -74,3 +80,61 @@ Below the filter area, a table displays detailed booking entries:
 2. **Check "Failed Provider Reservation"** regularly to identify problems early.
 3. **Confirm both Tourpaq and Provider statuses** to ensure full booking validation.
 4. **Sort by Booking Date or Total** to prioritize high-value or recent reservations.
+
+### FAQ
+
+<details>
+
+<summary>What’s the difference between <strong>Provider Reservation</strong> and <strong>Tourpaq Reservation</strong>?</summary>
+
+**Provider Reservation** is the confirmation from the external supplier.
+
+**Tourpaq Reservation** is the internal confirmation that Tourpaq finished processing the booking.
+
+</details>
+
+<details>
+
+<summary>A booking is <strong>Tourpaq Pending Reservation</strong>. What should I do?</summary>
+
+Wait a short time and refresh the list.
+
+If it stays pending, check if the booking also has a provider issue.
+
+Escalate with the booking number and reservation ID if needed.
+
+</details>
+
+<details>
+
+<summary>A booking is <strong>Failed Provider Reservation</strong>. Can I still proceed?</summary>
+
+No.
+
+Treat it as not confirmed with the supplier.
+
+Resolve the supplier failure first, before issuing final documents.
+
+</details>
+
+<details>
+
+<summary>What does <strong>Transaction Status</strong> mean?</summary>
+
+It shows whether payment was captured successfully.
+
+Payment success does not guarantee supplier confirmation.
+
+</details>
+
+<details>
+
+<summary>Why do I see “success” on one side and “failed” on the other?</summary>
+
+The two confirmations are separate steps.
+
+A supplier can confirm while Tourpaq is still processing, or Tourpaq can confirm while the supplier later fails.
+
+Use the page to spot these mismatches fast.
+
+</details>

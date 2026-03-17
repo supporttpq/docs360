@@ -1,194 +1,231 @@
+---
+description: >-
+  Search, filter, manage, and analyse every booking in Tourpaq from a single
+  screen.
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+---
+
 # All bookings
 
 ### **Overview**
 
-The **All Bookings** tab is the central place for **finding, filtering, and analyzing bookings** in Tourpaq. From here you can:
+**All Bookings** is the central search and management hub for existing reservations. It allows agents, operations staff, finance teams, and managers to find any booking quickly, review its details, and drill into statistical and financial reports — all within a single, highly filterable interface.
 
-* See a list of all bookings matching your filters.
-* Quickly check key KPIs (bookings, passengers, turnover, profit).
-* Open a booking directly from the list.
-* Jump into more detailed statistics and totals.
+Whether you are looking for one specific booking by number, reviewing today's departures, analysing last month's sales performance, or checking outstanding balances, All Bookings is your starting point.
 
-Filters are grouped by purpose:
-
-* **Booking retrieval** – who booked, when, and for which brand.
-* **Transport / hotel configuration** – which flights, resorts, and hotels are included.
-* **Analysis** – statistics per passenger, profit, turnover, and more.
-
-This section supports both daily operations and management reporting for **agents, operations, finance, and management**.
-
-For detailed sub‑features, see:
-
-* [View all bookings](view-all-bookings.md)
-* [Statistic in All bookings](statistic-in-all-bookings.md)
-* [All bookings Totals](all-bookings-totals.md)
+{% hint style="info" %}
+**Need to create a new booking?** All Bookings is for managing existing reservations. To create a new one, go to [New Booking](https://manual.tourpaq.com/booking/new-booking).&#x20;
+{% endhint %}
 
 ***
 
 ### **Purpose**
 
-The goal of **All Bookings** is to let you:
+All Bookings is designed to support three distinct use cases:
 
-* Retrieve, view, and analyze bookings based on precise criteria.
-* Generate statistics such as **profit**, **turnover**, **booking trends**, and **customer distributions**.
-* Work faster with **saved views** and **hideable filters** that keep the interface clean.
+**Daily operations** — Agents use it to quickly locate a specific booking, check its status, and open it for editing or communication.
+
+**Management reporting** — Managers use the Statistics and Totals views to analyse booking volumes, turnover, profit, and trends across brands, destinations, hotels, and periods.
+
+**Finance reconciliation** — Finance teams use filters like Status, Owner, and Booking Period combined with the Totals view to verify revenue, outstanding balances, and profitability per segment.
 
 ***
 
 ### **Preconditions**
 
-To use this section effectively, make sure:
+Before using All Bookings, ensure the following:
 
-* You are logged in with an account that has appropriate access rights.
-* You select at least one **Brand** before displaying bookings or statistics.
-* Date filters that work in pairs (e.g., _Booking Start_ & _Booking End_) are **used together**.
-* All statistics are calculated **per passenger**, and **a brand must be selected**.
+* You are logged in with a user role that has access to the Booking module. Contact your administrator if All Bookings is not visible in your sidebar.
+* You must select at least one **Brand** before clicking Display — without a Brand selected, no results will load.
+* Date range filters that work in pairs (e.g. Booking Start + Booking End) must always be filled in together. Leaving one half of a pair empty will not return the expected results.
+* Statistics views require a Brand to be selected and Display to be clicked first before the Statistics button becomes active.
 
-{% hint style="info" %}
-If no results appear, first check that a **Brand** is selected and that both dates are filled in for any date range you use.
+{% hint style="warning" %}
+If no bookings appear after clicking Display, the first thing to check is whether a **Brand** has been selected. This is the most common cause of empty results.&#x20;
 {% endhint %}
 
 ***
 
-### **Quick start**
+### **Common use cases**
 
-{% stepper %}
-{% step %}
-#### 1. Open **All Bookings**
-
-* Go to **Booking → All Bookings**.
-* Select the **Brand** you want to work with.
-{% endstep %}
-
-{% step %}
-#### 2. Apply filters and display
-
-* Set the **Booking Period** or **Departure/Arrival/Return Periods**.
-* Optionally filter by **Hotel**, **Transport**, **Owner**, **Bonus Code**, etc.
-* Click **Display** to load the bookings list.
-{% endstep %}
-
-{% step %}
-#### 3. Analyze and drill down
-
-* Review the bookings in the **table** and open any booking by clicking its **Booking No.**
-* Use the **statistics bar** at the bottom for quick KPIs.
-* Click **Statistics** to open detailed reports (see [Statistic in All bookings](statistic-in-all-bookings.md)).
-{% endstep %}
-{% endstepper %}
+* Find bookings by **brand**, **booking period**, and **travel dates** (departure/arrival/return).
+* Track **arrivals** and **departures** for operations.
+* Report **turnover** and **profit** by hotel, resort, transport, or owner.
+* Compare periods using booking statistics and totals.
 
 ***
 
-### **Instructions & Field Explanations**
+### How to Use All Bookings
+
+#### Step 1 — Open All Bookings
+
+Go to **Booking → All Bookings** in the left sidebar. The page opens with an empty filter panel and no results loaded — results only appear after you apply filters and click **Display**.
+
+***
+
+#### Step 2 — Select a Brand
+
+In the **Brands** filter, select one or more Brands you want to search within. This is mandatory — no data will load without it.
+
+***
+
+#### Step 3 — Apply filters
+
+Set the filters that match what you are looking for. You do not need to fill in every filter — use only what is relevant to your query. The most common filter combinations are:
+
+* **Find a specific booking** → Booking No. only
+* **Today's new bookings** → click **Today's Bookings** shortcut
+* **All bookings for a departure period** → Departure Period (Start + End)
+* **Bookings for a specific hotel** → Hotels filter
+* **All bookings by a specific agent** → Owners filter
+* **Cancelled bookings in a period** → Status = Cancelled + Booking Period
+
+{% hint style="info" %}
+Use the **More Filters** button to access additional filter options not shown by default. A green badge on the button indicates how many additional filters are currently active.&#x20;
+{% endhint %}
+
+***
+
+#### Step 4 — Click Display
+
+Click the **Display** button to execute the search. The bookings table loads with all reservations matching your filter criteria. The statistics bar at the bottom of the page immediately shows summary totals for the filtered result set.
+
+***
+
+#### Step 5 — Work with the results
+
+From the results table you can:
+
+* **Open a booking** by clicking its **Booking No.** in the first column
+* **Sort the list** by clicking any column header
+* **Adjust visible columns** using the column selector (⋮) on the right side of the table header
+* **Navigate pages** of results using the pagination controls at the bottom
+* **View a quick financial summary** in the statistics bar below the table
+
+***
+
+#### Step 6 — Access Statistics or Totals
+
+For deeper analysis, use the additional views available after clicking Display:
+
+* Click **Statistics** to open a detailed breakdown by passengers, turnover, profit, and more
+* Click **Totals** to see a cost and profit summary for the filtered bookings
+* See [Statistics in All Bookings](https://manual.tourpaq.com/booking/all-bookings/statistic-in-all-bookings) and [All Bookings Totals](https://manual.tourpaq.com/booking/all-bookings/all-bookings-totals) for full details on these views
+
+***
+
+#### Step 7 — Save a View (optional)
+
+If you run the same filter combination regularly, click **Save View** to save it as a named shortcut. Saved views appear as quick-access options so you don't need to rebuild the same filters every session. Examples of useful saved views: _Today's Arrivals_, _This Week's Departures_, _Brand X — Hotel Y Performance_.
+
+***
+
+### Field Reference
 
 <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### **Booking & General Filters**
+#### Toolbar Buttons
 
-These filters control **which bookings** are shown.
-
-| Field                            | Description                                                                   | Example                                                                                                                                                                             |
-| -------------------------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Brands**                       | Brand(s) included in the search. **At least one brand is required.**          | `Tourpaq DK`                                                                                                                                                                        |
-| **Booking Period**               | Date range in which the booking was created.                                  | `15-09-2025 – 21-09-2025`                                                                                                                                                           |
-| **Departure Period**             | Date range for the trip departure.                                            | `Start: 19-09-2025`                                                                                                                                                                 |
-| **Arrival Period**               | Date range for the trip arrival.                                              | `21-09-2025`                                                                                                                                                                        |
-| **Return Period**                | Date range for return trips.                                                  | `End: 29-09-2025`                                                                                                                                                                   |
-| **Pax No.**                      | Search by number of passengers in a booking.                                  | `3`                                                                                                                                                                                 |
-| **Status**                       | Filter bookings by status (e.g., _OK_, _Cancelled_, _Error_, _Locked_).       | `OK`                                                                                                                                                                                |
-| **GDS Status**                   | Filter by GDS status if you use a Global Distribution System integration.     | `GDSTKOK`                                                                                                                                                                           |
-| **Internal Comment**             | Search bookings based on internal notes.                                      | `Voucher issued`                                                                                                                                                                    |
-| **Bonus Code**                   | Filter by promotional or bonus codes used in bookings.                        | `SUMMER25`                                                                                                                                                                          |
-| **Hotels**                       | Filter by hotel names or assigned accommodations.                             | `Grand Hotel Budapest`                                                                                                                                                              |
-| **Transports / Real Transports** | Filter by transport types and specific real transports assigned to bookings.  | `Flight DK123`                                                                                                                                                                      |
-| **Extra**                        | Filter by extras and/or a specific extra category.                            | <div><figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div> |
-| **Owners**                       | Filter bookings by the responsible agent, user, or company (booking “owner”). | `RW/TPQ`                                                                                                                                                                            |
-| **All Bookings**                 | Ignores date ranges and shows **all** bookings for the selected brand(s).     | _Checked_                                                                                                                                                                           |
-
-> **Tip:** Use as few filters as possible when troubleshooting (e.g., searching for a missing booking), then add more filters to narrow down the result set.
+| Button               | Description                                                                                       |
+| -------------------- | ------------------------------------------------------------------------------------------------- |
+| **Display**          | Executes the search using the current filters and loads the bookings table                        |
+| **More Filters**     | Expands additional filter options. A green badge shows the number of active additional filters    |
+| **Clear**            | Resets all filters to their default empty state                                                   |
+| **Save View**        | Saves the current filter combination as a named reusable view                                     |
+| **Today's Bookings** | Shortcut that sets the Booking Period to today and immediately loads bookings created today       |
+| **Statistics**       | Opens the Statistics view for the current filter result set. Requires Display to be clicked first |
+| **Totals**           | Opens the Totals / Cost and Profit view. Requires Display to be clicked first                     |
 
 ***
 
-#### **Bookings Table (Main Section)**
+#### Booking & General Filters
 
-The table lists all bookings that match your filters.
-
-| Column                  | Description                                                                                                                                                                                                                                                                                                                                                        |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Booking No.**         | Unique booking identification number. Click to open the **booking details** page.                                                                                                                                                                                                                                                                                  |
-| **Customer**            | Name of the customer or system automation related to the booking.                                                                                                                                                                                                                                                                                                  |
-| **Transport**           | Transport type and code.                                                                                                                                                                                                                                                                                                                                           |
-| **Resort**              | Destination resort.                                                                                                                                                                                                                                                                                                                                                |
-| **Hotel**               | Hotel assigned to the booking.                                                                                                                                                                                                                                                                                                                                     |
-| **Bkg. Date**           | Date when the booking was created.                                                                                                                                                                                                                                                                                                                                 |
-| **Bkg. Time**           | Time when the booking was created.                                                                                                                                                                                                                                                                                                                                 |
-| **Nights/No**           | Number of nights booked.                                                                                                                                                                                                                                                                                                                                           |
-| **Phone**               | Customer’s phone number.                                                                                                                                                                                                                                                                                                                                           |
-| **Pax No.**             | Number of passengers in the booking.                                                                                                                                                                                                                                                                                                                               |
-| **Owner**               | Responsible agent, user, or system owner of the booking.                                                                                                                                                                                                                                                                                                           |
-| **Departure**           | Departure date for the trip.                                                                                                                                                                                                                                                                                                                                       |
-| **Extras**              | <p>Lists all extras associated with the booking.</p><p>Hover to see a tooltip with a table showing which extras belong to which passenger and the full extra names. The <strong>Extras</strong> column can be turned on from the column selector.</p><p><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""></p> |
-| **⋮ (Column selector)** | Opens the column selector so you can show or hide additional columns in the table.                                                                                                                                                                                                                                                                                 |
-
-***
-
-### **Toolbar Actions**
-
-<figure><img src="../../.gitbook/assets/image (550).png" alt=""><figcaption></figcaption></figure>
-
-#### **Display**
-
-Runs the search using the currently selected filter criteria and refreshes the bookings list.
-
-#### **More Filters**
-
-Expands additional filtering options.
-
-* A green badge indicates the **number of active additional filters**.
-
-#### **Clear**
-
-Resets all filters back to their default (empty) state.
-
-#### **Save View**
-
-Saves the current combination of filters as a **reusable view**.
-
-* Useful for daily workflows such as **“Today’s arrivals”**, **“Last week’s sales”**, or **“Brand X / Hotel Y performance”**.
-
-#### **Today’s Bookings**
-
-Shortcut that automatically sets the **Booking Period** to today and displays all bookings created **today**.
-
-#### **Statistics Bar (Bottom)**
-
-At the bottom of the page, a statistics bar shows a quick summary for the filtered bookings:
-
-| Metric             | Description                                               | Example          |
-| ------------------ | --------------------------------------------------------- | ---------------- |
-| **Bookings**       | Total number of bookings in the filtered view.            | `72`             |
-| **Total Pax**      | Total passengers across all bookings.                     | `208`            |
-| **Pax / Booking**  | Average number of passengers per booking.                 | `2.9`            |
-| **Total Turnover** | Total revenue generated from the bookings.                | `DKK 539,773`    |
-| **Turnover / Pax** | Average revenue per passenger.                            | `DKK 2,595`      |
-| **Profit Total**   | Total profit (revenue minus costs) for filtered bookings. | `DKK -2,751,155` |
-| **Profit / Pax**   | Profit per passenger.                                     | `DKK -13,227`    |
-
-> For an in‑depth breakdown of these numbers, use the **Statistics** button and see [Statistic in All bookings](statistic-in-all-bookings.md).
+| Filter                           | Description                                                                                                                         | Example                   |
+| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| **Brands**                       | Select one or more Brands. **Required** — no results load without a Brand selected                                                  | `Tourpaq DK`              |
+| **Booking Period**               | Date range in which the booking was created. Must be filled as a pair (start + end)                                                 | `01/03/2026 – 31/03/2026` |
+| **Departure Period**             | Date range for the outbound travel date. Must be filled as a pair                                                                   | `Start: 01/06/2026`       |
+| **Arrival Period**               | Date range for the arrival date at destination                                                                                      | `01/06/2026`              |
+| **Return Period**                | Date range for the return travel date                                                                                               | `End: 15/06/2026`         |
+| **Booking No.**                  | Search by the unique booking identifier                                                                                             | `123456`                  |
+| **Customer**                     | Search by customer name                                                                                                             | `Jensen`                  |
+| **Pax No.**                      | Filter by number of passengers in the booking                                                                                       | `2`                       |
+| **Status**                       | Filter by booking status: OK, Cancelled, Error, Warning, Locked, Waiting List                                                       | `OK`                      |
+| **GDS Status**                   | Filter by GDS ticketing status for airline bookings processed via a Global Distribution System                                      | `GDSTKOK`                 |
+| **Internal Comment**             | Search bookings containing specific text in internal comments                                                                       | `Group leader`            |
+| **Bonus Code**                   | Filter by promotional or bonus codes applied at booking time                                                                        | `SUMMER26`                |
+| **Hotels**                       | Filter by hotel name or hotel assignment                                                                                            | `Grand Hotel`             |
+| **Transports / Real Transports** | Filter by transport code or specific real transport assignments                                                                     | `SK1234`                  |
+| **Extra**                        | Filter by extra type and/or extra category                                                                                          | `Travel Insurance`        |
+| **Owners**                       | Filter by the agent, user, or company responsible for the booking                                                                   | `RW/TPQ`                  |
+| **All Bookings**                 | When checked, ignores all date range filters and returns all bookings for the selected Brand(s). Use with caution on large datasets | _(checkbox)_              |
 
 ***
 
-### **Hide Filters Functionality**
+#### Bookings Table Columns
 
-The **Hide filters** feature helps keep the interface clean by hiding filters you rarely use.
+| Column                  | Description                                                                                                                                                   |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Booking No.**         | Unique booking identifier. Click to open the full booking details page                                                                                        |
+| **Customer**            | Name of the lead customer or the system process that created the booking                                                                                      |
+| **Transport**           | Transport type and code assigned to the booking                                                                                                               |
+| **Resort**              | Destination resort                                                                                                                                            |
+| **Hotel**               | Hotel assigned to the booking                                                                                                                                 |
+| **Bkg. Date**           | The date the booking was created                                                                                                                              |
+| **Bkg. Time**           | The time the booking was created                                                                                                                              |
+| **Nights / No.**        | Number of nights included in the accommodation                                                                                                                |
+| **Phone**               | Customer's phone number                                                                                                                                       |
+| **Pax No.**             | Total number of passengers on the booking                                                                                                                     |
+| **Owner**               | The agent or user account responsible for the booking                                                                                                         |
+| **Departure**           | Outbound travel date                                                                                                                                          |
+| **Status**              | Current booking status (OK, Error, Warning, Cancelled, etc.)                                                                                                  |
+| **Extras**              | Extras attached to the booking. Hover over the cell to see a tooltip listing each extra per passenger. This column can be toggled via the column selector (⋮) |
+| **⋮ (Column selector)** | Opens the column visibility panel — toggle additional columns on or off to customise your table view                                                          |
 
-| Option                               | Description                                                                                                                                                                             |
-| ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Hide filters**                     | Hides all inactive or unused filters for cleaner navigation.                                                                                                                            |
-| **Show hidden**                      | Checkbox on each filter – temporarily reveals or hides that specific filter.                                                                                                            |
-| **Choose all**                       | Selects all items in a filter, including hidden ones.                                                                                                                                   |
-| **Hide as filter on lists**          | Manually hide specific filters, for example a transport you no longer want to see as a filter option.                                                                                   |
-| **System Setup → Hide Filter input** | Global setting that automatically hides outdated filters (e.g., transports or users) based on inactivity (number of days). Example: `10` hides transports not used in the last 10 days. |
+***
+
+#### Statistics Bar (Bottom of Page)
+
+The statistics bar appears below the table immediately after Display is clicked. It shows a real-time summary of the filtered result set.
+
+| Metric             | Description                                                                                            |
+| ------------------ | ------------------------------------------------------------------------------------------------------ |
+| **Bookings**       | Total number of bookings in the filtered result set                                                    |
+| **Total Pax**      | Total number of passengers across all filtered bookings                                                |
+| **Pax / Booking**  | Average number of passengers per booking. Formula: `Total Pax ÷ Bookings`                              |
+| **Total Turnover** | Total gross revenue from all filtered bookings before costs are deducted                               |
+| **Turnover / Pax** | Average revenue per passenger. Formula: `Total Turnover ÷ Total Pax`                                   |
+| **Profit Total**   | Net profit across all filtered bookings. May be negative in periods with high cancellations or refunds |
+| **Profit / Pax**   | Average net profit per passenger. Formula: `Profit Total ÷ Total Pax`                                  |
+
+***
+
+#### Hide Filters Functionality
+
+For teams with many configured transports, hotels, or users, the filter dropdowns can become long and hard to navigate. The Hide Filters feature keeps these lists manageable.
+
+| Control                              | Description                                                                                                                                                                                                                                               |
+| ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Hide Filters**                     | Hides all inactive or rarely used filter options to reduce visual clutter                                                                                                                                                                                 |
+| **Show Hidden**                      | Checkbox on individual filter items — reveals or hides that specific item from the filter list                                                                                                                                                            |
+| **Choose All**                       | Selects all items in a filter dropdown, including any that are currently hidden                                                                                                                                                                           |
+| **Hide as Filter on Lists**          | Manually marks a specific item (e.g. a transport or user) as hidden so it no longer appears in filter dropdowns                                                                                                                                           |
+| **System Setup → Hide Filter Input** | A system-level setting (configured by administrators under System Setup) that automatically hides filter items that have not been active for a defined number of days. For example, setting this to `10` hides any transport not used in the last 10 days |
 
 <figure><img src="https://sonat.com/api/Document/Image/19670ef0-8b8a-4cda-8eb6-249681e07016/60a72aeb-a272-4428-a118-b6074b1b35b5/ec44a3d0-8810-4253-b486-355b314877ba.webp?width=898" alt="" height="200"><figcaption></figcaption></figure>
 
@@ -196,21 +233,15 @@ The **Hide filters** feature helps keep the interface clean by hiding filters yo
 
 ***
 
-### **Statistics Filters and Tools**
+### Statistics Views
 
-<figure><img src="https://sonat.com/api/Document/Image/19670ef0-8b8a-4cda-8eb6-249681e07016/60a72aeb-a272-4428-a118-b6074b1b35b5/5f9160ba-43aa-4d8f-9f35-bbbdc227a335.webp?width=1854" alt="" width="400"><figcaption></figcaption></figure>
+After clicking Display, three additional analysis views are available. All statistics are calculated **per passenger** by default.
 
-**Important:**
+<figure><img src="https://sonat.com/api/Document/Image/19670ef0-8b8a-4cda-8eb6-249681e07016/60a72aeb-a272-4428-a118-b6074b1b35b5/5f9160ba-43aa-4d8f-9f35-bbbdc227a335.webp?width=1854" alt="" width="563"><figcaption></figcaption></figure>
 
-* To access statistics, you must **select a Brand** and set your filters.
-* Click **Display** to refresh the list.
-* Then click **Statistics** to open the Statistics view.
+#### Available Statistics Types
 
-All statistics are **per passenger** by default.
-
-#### **Available Statistics Types**
-
-| Category              | Levels                                                 |
+| Category              | Available breakdowns                                   |
 | --------------------- | ------------------------------------------------------ |
 | **Passengers**        | Total, Per Country, Per Arrival, Per Resort, Per Hotel |
 | **Average Turnover**  | Total, Per Country, Per Arrival, Per Resort            |
@@ -219,18 +250,20 @@ All statistics are **per passenger** by default.
 | **Percentage**        | Total                                                  |
 | **Possible vs. Sold** | Total, Per Country                                     |
 
-#### **Additional Tools for Statistics**
+#### **A**Additional Analysis Tools
 
-| Tool                                       | Description                                                                  |
-| ------------------------------------------ | ---------------------------------------------------------------------------- |
-| **Totals / Cost and Profit**               | Displays overall cost vs. profit based on selected filters.                  |
-| **Additional Sales per Seller / Turnover** | Shows extra sales generated by individual sellers.                           |
-| **Booking Date Statistic**                 | Breaks down bookings by creation date, per day or per week.                  |
-| **Compare Statistics**                     | Adds a secondary filter set (Booking, Departure, Arrival) to compare trends. |
-
-For detailed examples, screenshots, and recommended usage, see [Statistic in All bookings](statistic-in-all-bookings.md).
+| Tool                                       | Description                                                                                                                                             |
+| ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Totals / Cost and Profit**               | Shows overall cost vs. profit for the filtered bookings. See [All Bookings Totals](https://manual.tourpaq.com/booking/all-bookings/all-bookings-totals) |
+| **Additional Sales per Seller / Turnover** | Breaks down extra sales and turnover by individual agent or seller                                                                                      |
+| **Booking Date Statistic**                 | Groups bookings by their creation date, per day or per week — useful for identifying sales peaks and quiet periods                                      |
+| **Compare Statistics**                     | Adds a secondary filter set (Booking Period, Departure, Arrival) so you can compare two different periods side by side                                  |
 
 ![](https://docs.tourpaq.com/assets/images/vab2-2ae8937c8c58496300b15fff0f0dbbf8.jpg?width=1857)
+
+{% hint style="info" %}
+For screenshots and detailed usage examples of each statistics type, see [Statistics in All Bookings](https://manual.tourpaq.com/booking/all-bookings/statistic-in-all-bookings).&#x20;
+{% endhint %}
 
 ***
 
@@ -257,3 +290,41 @@ For a more detailed, totals‑focused explanation, see [All bookings Totals](all
 4. Click **Display** to see the booking results.
 5. Review the **statistics bar** for a quick overview.
 6. Click **Statistics** to view a detailed analytical breakdown by passengers, profit, turnover, and more.
+
+***
+
+### FAQ
+
+**Q: I applied filters and clicked Display but no bookings appeared — why?** The most common cause is a missing Brand selection — select at least one Brand and try again. If a Brand is selected, check that your date range filters are filled in as pairs (both start and end dates). Also verify that the Status filter isn't set to a value that excludes the bookings you're looking for. Click **Clear** to reset all filters and start fresh.
+
+***
+
+**Q: Can I see cancelled bookings in All Bookings?** Yes. Set the **Status** filter to `Cancelled` and click Display. By default, when no status filter is applied, all statuses including cancelled bookings are returned, but if you have a saved view with a status filter active this may exclude them.
+
+***
+
+**Q: How do I find a booking if I only know the customer's name?** Enter the customer name (or partial name) in the **Customer** filter, select a Brand, and click Display. You can search with partial names — for example, entering `Jensen` will return all bookings with "Jensen" in the customer name.
+
+***
+
+**Q: The statistics bar shows a negative Profit Total — is something wrong?** Not necessarily. A negative profit in a filtered period is common when the period includes a high volume of cancellations, refunds, or bookings with costs that exceed revenue. Cross-reference with the [Finance module](https://manual.tourpaq.com/finance/payment-registration) and the Totals view for a full breakdown before drawing conclusions.
+
+***
+
+**Q: What is the difference between Booking Period and Departure Period?** **Booking Period** filters by when the booking was _created_ in the system. **Departure Period** filters by when the customer _travels_. Use Booking Period for sales analysis (e.g. "how many bookings did we take last month?") and Departure Period for operational planning (e.g. "who is departing next week?").
+
+***
+
+**Q: How do I save a filter combination I use every day?** Apply your filters and click **Save View**. Give the view a descriptive name (e.g. "This Week's Departures") and save it. It will appear as a shortcut the next time you open All Bookings so you can load it with one click.
+
+***
+
+### Related Pages
+
+* [Booking Overview](https://manual.tourpaq.com/booking) — introduction to the full Booking section
+* [New Booking](https://manual.tourpaq.com/booking/new-booking) — create a new reservation from scratch
+* [Statistics in All Bookings](https://manual.tourpaq.com/booking/all-bookings/statistic-in-all-bookings) — detailed guide to the Statistics view
+* [All Bookings Totals](https://manual.tourpaq.com/booking/all-bookings/all-bookings-totals) — cost and profit totals breakdown
+* [Notifications](https://manual.tourpaq.com/notifications/notification) — monitor booking errors and warnings
+* [Export](https://manual.tourpaq.com/export-1/export) — export filtered booking data for external reporting
+* [Finance → Payment Registration](https://manual.tourpaq.com/finance/payment-registration) — register and track payments for individual bookings

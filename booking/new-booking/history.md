@@ -1,23 +1,30 @@
+---
+description: >-
+  Use the Tourpaq Office booking History tab to review the audit trail. See who
+  changed what and when, including old/new values, passengers, and the source
+  engine (user, web, API).
+---
+
 # History
 
-### Overview
+### **Overview**
 
-The **History** tab provides a detailed log of all changes made to a specific booking. Every modification—manual or automatic—is recorded with the responsible user, date, time, and the values **before** and **after** the change. This ensures complete transparency and traceability across all booking activities.
+The **History** tab in **Tourpaq Office** is the booking **change log** and **audit trail**. It records every booking update (manual or automatic) with user, date/time, and **old vs new values**. Use it to trace changes to passengers, prices, status, rooms, and services.
 
-<figure><img src="../../.gitbook/assets/image (551).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (551).png" alt="Booking History tab showing change log with old and new values"><figcaption><p>Booking change log (History).</p></figcaption></figure>
 
 ***
 
-### Purpose
+### **Purpose**
 
 The History view helps you:
 
 * See **who** made a change and **when**.
 * Understand **what** was modified (old and new values).
-* Identify **which system component** (engine) triggered the update – for example, a manual user action or an API integration.
+* Identify **which system component** (engine) triggered the update (office user, web booking, API/integration).
 * Resolve customer support questions related to **price changes**, **cancellations**, **name corrections**, or other edits.
 
-It is a key tool for **troubleshooting**, **auditing** and reviewing how a booking has evolved over time.
+It is a key tool for **troubleshooting**, **auditing**, and support investigations.
 
 ***
 

@@ -1,14 +1,21 @@
+---
+description: >-
+  View the booking email log in Tourpaq Office. See sent confirmations, tickets
+  and travel documents, vouchers, and payment reminder emails with sent date,
+  address, and message content.
+---
+
 # E-mails
 
-### Overview
+### **Overview**
 
-The **E‑mails** tab provides a log of all system‑generated e‑mails sent for a specific booking. This includes booking confirmations, tickets and travel documents, payment reminders and any other automatic communication related to the booking.
+The **E‑mails** tab in **Tourpaq Office** shows the **booking email log** for a specific booking. It lists system-generated emails such as **booking confirmations**, **tickets/travel documents**, **vouchers** (if applicable), and **payment reminders**.
 
-<figure><img src="../../.gitbook/assets/image (552).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (552).png" alt="E-mails tab showing a log of sent booking emails"><figcaption></figcaption></figure>
 
 ***
 
-### Purpose
+### **Purpose**
 
 The E‑mails tab helps you:
 
@@ -64,7 +71,7 @@ Each row in the E‑mails tab represents one e‑mail sent for the booking.
   * Verify that the customer’s address is correct in **Customer information**.
   * Consult your e‑mail logs / E‑mail center or contact IT / system support.
 
-<figure><img src="https://sonat.com/api/Document/Image/19670ef0-8b8a-4cda-8eb6-249681e07016/60a72aeb-a272-4428-a118-b6074b1b35b5/ef1bc44c-bc67-48ac-838b-ff608f3455b6.webp?width=1860" alt="" width="900"><figcaption></figcaption></figure>
+<figure><img src="https://sonat.com/api/Document/Image/19670ef0-8b8a-4cda-8eb6-249681e07016/60a72aeb-a272-4428-a118-b6074b1b35b5/ef1bc44c-bc67-48ac-838b-ff608f3455b6.webp?width=1860" alt="View e-mail details showing recipient, sent time, and delivered message content" width="900"><figcaption><p>View e-mail content from the booking email log.</p></figcaption></figure>
 
 ***
 

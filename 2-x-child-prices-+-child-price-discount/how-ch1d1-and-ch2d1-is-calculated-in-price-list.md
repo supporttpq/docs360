@@ -1,73 +1,125 @@
+---
+description: >-
+  How Tourpaq Office calculates CH1D1/CH2D1 child discount prices in Price List
+  using extra bed cost, nights, early booking discount, CPM1, transport cost,
+  and adjustments.
+---
+
 # How CH1D1 & CH2D1 is calculated in Price List
 
-### **Overview**
+## Overview
 
-This document explains how the child discount columns **CH1D1** and **CH2D1** are displayed and calculated in the **Price List** section.\
-It details the required configuration and the formulas used to compute the discount values for child passengers when child pricing and profit margin features are active.
+This page explains how **CH1D1** and **CH2D1** are displayed and calculated in **Tourpaq Office → Price List**.
 
-***
+These fields are the **child discount prices** for interval 1 (D1).
 
-### **Prerequisites**
+The calculation depends on:
 
-To view and validate the child discount calculations, the user must:
+* **Extra bed cost** from the hotel (child cost price)
+* **Number of nights** (stay length)
+* **Early booking discount** (if configured)
+* **Child profit margin** (`CPM1`)
+* **Transport cost**
+* **Child adjustments** (`CH1PA`, `CH2PA`)
+
+## Prerequisites
+
+To view and validate the child discount calculations, you need:
 
 * Have **Administrator** access.
-* Have the following features enabled:
-  * **Child Prices**
-  * **Child Discounts**
-  * **Child Profit Margin**
-  * **Adjustments**
+* Have the company feature **Child Profit Margin** enabled (Super Administrator action).
+* Enable the relevant child columns in the Price List grid.
 
-***
+## Show child discount columns in Price List
 
-### **Accessing Child Discount Columns**
+In **Price List**, open the column visibility menu (three-dot icon in the table header).
 
-Within the **Price List**, the user can customize the displayed table columns to include child-related pricing and discount data.\
-From the column selection menu, the following options should be enabled:
+Enable these column groups:
 
 * **CHILD 1 PRICES**
-* **CHILD 2 PRICES**
+* **CHILD 2+ PRICES**
 * **CHILD 1 DISCOUNTS**
 * **CHILD 2 DISCOUNTS**
-* **CHILD PRICES %**
 * **CHILD PROFIT MARGIN**
 * **ADJUSTMENTS**
 
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (451).png" alt=""><figcaption></figcaption></figure></div>
+<figure><img src="../.gitbook/assets/image (649).png" alt=""><figcaption></figcaption></figure>
 
-Once enabled, the table displays additional columns such as:\
-**CH1P1**, **CH2P1**, **CH1D1**, **CH2D1**, **CH1%**, **CMP1**, and **PA1**.
+Common fields used when validating the discount calculation:
 
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (452).png" alt=""><figcaption></figcaption></figure></div>
+* **Child prices**: `CH1P1`, `CH2P1`
+* **Child discount prices**: `CH1D1`, `CH2D1`
+* **Child profit margin**: `CPM1`
+* **Child adjustments**: `CH1PA`, `CH2PA`
 
-\
-These represent the respective prices, discounts, percentages, profit margins, and applied adjustments for child passengers.
+<figure><img src="../.gitbook/assets/image (650).png" alt=""><figcaption></figcaption></figure>
 
-***
+## Calculation logic
 
-### **Calculation Logic**
-
-**CH1D1 Calculation**
+### CH1D1 (child 1 discount price)
 
 The **CH1D1** column represents the discount-adjusted value for the first child and is calculated as:
 
-**CH1D1 = (Extra Bed Cost Price from the hotel × Number of nights) - Early Booking Discount + CMP1 + Transport Cost + (-PA1)**
+`CH1D1 = (extra bed cost × nights) - early booking discount + CPM1 + transport cost - CH1PA`
 
-This formula takes into account the total extra bed cost over the entire stay, applies the early booking discount, and factors in the profit margin, transport cost, and any negative or positive price adjustments.
+<figure><img src="../.gitbook/assets/image (647).png" alt=""><figcaption></figcaption></figure>
 
-***
+This formula uses the hotel’s extra bed cost for the full stay.
 
-**CH2D1 Calculation**
+It then applies early booking discount logic and adds margin and transport cost.
+
+`CH1PA` is included as an adjustment input and can be positive or negative.
+
+### CH2D1 (child 2+ discount price)
 
 The **CH2D1** column follows a similar structure but applies the second child’s extra bed cost:
 
-**CH2D1 = (Extra Bed Cost Price 2ND from the hotel × Number of nights) - Early Booking Discount + CMP1 + Transport Cost + (-PA1)**
+`CH2D1 = (extra bed cost (2nd) × nights) - early booking discount + CPM1 + transport cost - CH2PA`
 
-This ensures that both child discounts are calculated consistently, reflecting their respective extra bed costs and applied pricing rules.
+<figure><img src="../.gitbook/assets/image (648).png" alt=""><figcaption></figcaption></figure>
 
-***
+This ensures both discount prices follow the same logic, but can use different extra bed cost inputs.
 
-### **Purpose and Usage**
+## Purpose and usage
 
-The **CH1D1** and **CH2D1** columns allow administrators to validate how discounts for child passengers are derived from base hotel costs, early booking discounts, and profit margins.\
-This level of detail provides full transparency in the **Price List** and ensures pricing accuracy for family bookings involving children.
+Use `CH1D1` and `CH2D1` to validate that child discount prices:
+
+* Use the correct extra bed cost and stay length.
+* Apply early booking discount as expected.
+* Include the configured margin (`CPM1`) and transport cost.
+
+{% hint style="info" %}
+`CH1D1` / `CH2D1` are discount prices (D1).
+
+They are not the same as `CH1P1` / `CH2P1` (P1).
+{% endhint %}
+
+## FAQ
+
+#### What are CH1D1 and CH2D1?
+
+They are the **child discount prices** in the Price List for interval 1 (D1).
+
+CH1 is child 1. CH2 is child 2+.
+
+#### What is the difference between CH1P1 and CH1D1?
+
+`CH1P1` is the child selling price for P1.
+
+`CH1D1` is the child discount price for D1, using discount logic.
+
+#### Why are CH1D1 / CH2D1 blank or 0?
+
+Common causes:
+
+* Child profit margin feature is not enabled for the company.
+* You did not enable the child discount columns in the grid.
+* Missing hotel extra bed cost data for the period.
+* Missing early booking discount setup for the stay dates.
+* Missing transport cost data for the transport/date.
+
+#### Do CH1PA / CH2PA affect CH1D1 / CH2D1?
+
+Yes. Adjustments are included in the discount price calculation inputs.
+
+They can be positive or negative.

@@ -38,16 +38,16 @@ Transport Rule names can be edited at any time. Renaming a Transport Rule will a
 
 To maintain data consistency, the system does not allow two Transport Rules to share the same name.
 
-<figure><img src="../.gitbook/assets/image (535).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Example:**\
-If a Transport Rule was initially created as **BLLPMI1A**, but the correct naming should be **BLLPMI1A-TR**, updating the rule name will also rename all associated generated transports accordingly.
+If a Transport Rule was initially created as `CPH_CHQ`, but the correct naming should be `CPH_CHQ_T1`, updating the rule name will also rename all associated generated transports accordingly.
 
 #### Auto-Selecting Stay Days When Adding New Entries
 
-When a user clicks the **“+”** button to add new stay dates, the system automatically preselects the first available stay day from the drop-down list.
+When a user clicks the **“+”** button to add new stay days, the system automatically preselects the first available stay day from the drop-down list.
 
-<figure><img src="../.gitbook/assets/image (536).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This behavior allows users to repeatedly press **“+”** and quickly add all remaining stay days in sequence, creating a faster and more efficient workflow.
 
@@ -55,15 +55,15 @@ This behavior allows users to repeatedly press **“+”** and quickly add all r
 
 In the Stay Days table, an additional column is introduced to display the name of the generated transport associated with each stay day.
 
-<figure><img src="../.gitbook/assets/image (537).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-The transport name it is a clickable link. Selecting this link opens the corresponding generated transport in a new browser tab, allowing users to review or manage it without losing their place in the current view.
+The transport name is a clickable link. Selecting this link opens the corresponding generated transport in a new browser tab, allowing users to review or manage it without losing their place in the current view.
 
-<figure><img src="../.gitbook/assets/image (538).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
-After the new Stay Days have been added, to generate eligible transports for them, click the "Generate" button at the bottom right of the screen.
+After the new Stay Days have been added, click the "Generate" button at the bottom right of the screen to generate eligible transports for them.
 
-<figure><img src="../.gitbook/assets/image (539).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 #### Editing Dates Before Transport Generation
 
@@ -77,5 +77,130 @@ The system allows users to extend the season by adjusting the start or end dates
 * **Extending the end of the season:** Users can add additional weeks at the end if the season is prolonged.
 * **Extending the beginning of the season:** Users can add earlier weeks if the season starts sooner than originally planned.
 
-When extending an existing season by adding only a few additional weeks, the system will **reuse the same fix-quota**.\
-However, if a completely new season period is added, the system will **generate a new fix-quota**.
+When extending an existing season by adding only a few additional weeks, the system will **reuse the same fixed quota**.\
+However, if a completely new season period is added, the system will **generate a new fixed quota**.
+
+### Automatic Extension of Generated Quotas
+
+Transport Rules can be configured far in advance to support long-term planning, including GDS transports defined several years ahead. To avoid unnecessary system load, generated quotas are limited in range and extended automatically over time.
+
+#### How It Works
+
+*   Transport Rules may be defined with dates far in the future.
+
+    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+* The system generates quotas only for the **next 500 days**.
+
+<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+
+* A background service runs **once per week** and automatically extends the generated quotas, ensuring that quotas always exist up to **500 days ahead** of the current date.
+* This automatic extension applies **only to Dynamic and CAR Transport Rules**.
+* The 500-day limit is aligned with the existing limit used by the **price list generator**.
+
+If a Transport Rule has valid dates and allotment defined in the future, the service ensures that its quotas continue to be extended without manual intervention.
+
+### Add Season Support
+
+#### Overview
+
+Transport Rules support multiple seasons within the same rule. This allows long-term planning while keeping a single Transport Rule and consistent names for both the rule itself and all generated transports.
+
+Each season represents a specific date period with its own pricing and travel configuration.
+
+#### Purpose
+
+The goal of season support is to address daily operational challenges and allow transport configurations to vary over time without duplicating Transport Rules.
+
+This makes it possible to:
+
+* Manage multiple seasonal setups under one Transport Rule
+* Keep generated transport names consistent
+* Adjust prices, stay days, and directions per season
+
+#### How It Works
+
+A single Transport Rule can contain several **date periods (seasons)**. For each season, the following can be configured independently:
+
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+For every season, the following shall be specified:
+
+* **Start date**
+* **End date**
+* **Infant price**
+* **Outbound settings**
+* **Homebound settings**
+* **Stay days**
+
+{% hint style="warning" %}
+Date periods must not overlap. If date periods are overlapping, you will not be able to save it, and the date box that makes the overlap will be marked red.&#x20;
+{% endhint %}
+
+<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+
+#### Page Structure
+
+The page is divided into two main sections:
+
+**Top Section: Global Configuration**
+
+This section contains settings that apply to the Transport Rule regardless of season.
+
+It includes:
+
+* Code
+* Departure
+* Arrival
+* Transportation
+
+The **Settings** section contains:
+
+* **Status** – Defines the rule’s visibility in the system (e.g., Visible / Hidden).
+* **Hide as filter on lists** – If checked, this rule will not appear as a filter option in lists.
+* **Cancelation condition\*** - Select the cancellation condition that applies to this transport rule (mandatory).
+* **Payment Rule** – Select a payment rule applicable to this transport.
+* **Use change rule service** – If checked, activates the change rule service for this transport
+
+**Bottom Section: Season-Specific Configuration**
+
+The lower part of the page contains all data that varies per season.
+
+**Date Period Table**
+
+A table lists all configured date periods:
+
+* Date periods are sorted with the **oldest at the top**
+* New date periods are added at the **bottom**
+* Date periods must **not overlap**
+
+**Managing Date Periods**
+
+* A date period can be **deleted** only if it is newly created and no data has been generated yet.
+* The **Edit Quota** button opens the quota editor for the selected period.
+* The **Edit Quota** button is shown only when a quota exists for that period.
+
+When a new season is added, it is configured on the same Transport Rule page. The system reuses the **same transports** from the previous season and generates a **new fixed quota** for the newly created season.
+
+This means the system does not create new transports for each season. Instead, it keeps the existing transport and adds a new fixed quota that applies only to the new season.
+
+### FAQ
+
+#### Can two Transport Rules have the same name?
+
+No. Transport Rule names must be unique.
+
+#### What happens when I rename a Transport Rule?
+
+The system renames all previously generated transports based on that rule.
+
+#### Can I change stay days or dates after saving?
+
+Yes, as long as transports have not been generated yet.
+
+#### Why can’t date periods overlap?
+
+Overlaps would create ambiguous season logic. The system blocks it.
+
+#### Why do quotas only exist 500 days ahead?
+
+To reduce system load. A weekly background service extends quotas automatically.

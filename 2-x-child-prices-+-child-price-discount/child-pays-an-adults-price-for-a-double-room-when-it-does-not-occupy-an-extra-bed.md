@@ -1,3 +1,7 @@
+---
+noIndex: true
+---
+
 # Child pays an adult's price for a double room when it does not occupy an extra bed
 
 ### **Overview**

@@ -43,13 +43,19 @@ For the transport **BLLCHQ-M1**, a passenger message was created with the follow
 
 This means all passengers traveling on this route between **20 October 2025 - 31 October 2025**, whose bookings were created between **01 October 2025 - 19 October 2025**, will receive the message _“Transport Errata Default.”_
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 The text from Passenger Information will also be visible on the ticket:
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+#### Passenger information allows overlapping periods <a href="#passenger-information-allows-overlapping-periods" id="passenger-information-allows-overlapping-periods"></a>
+
+Ex: If fixed info is made for a specific period (01.02.26 - 15.05.26) - transport errata def overlapping, and another info is made for a short period (01.05.26 - 17.05.26) - Transport Errata Default. Even if the periods overlap, the system will allow and display both on the ticket.
+{% endhint %}
 
 ### **Notes**
 

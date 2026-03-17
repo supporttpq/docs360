@@ -1,3 +1,10 @@
+---
+description: >-
+  View and edit a customer profile (customer card) in Tourpaq Office. See
+  contact details, bookings and activity history, plus turnover/profit totals
+  and key CRM metrics.
+---
+
 # Customer Details
 
 {% hint style="info" %}
@@ -8,19 +15,19 @@
 
 ### Overview
 
-The **Customer Details** page shows everything Tourpaq knows about a single customer in one place:
+The **Customer Details** page is the customer profile (customer card) in Tourpaq Office CRM. It shows everything Tourpaq knows about one customer in one place:
 
 * Contact details (name, email, phone, address)
-* Activity and history (bookings, offers, service cases, etc.)
-* A financial summary (turnover, profit, pax counts, and breakdowns)
+* Activity and history (bookings, offers, service cases, and more)
+* Totals and CRM metrics (turnover, profit, pax counts, and breakdowns)
 
-Use this page when you need to verify customer information, update contact details, or understand the customer’s booking history and value.
+Use this page to verify customer data, update contact details, and understand booking history and customer value.
 
 ***
 
 ### Page layout
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (3) (1).png" alt="Customer Details layout"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (3) (1).png" alt="Customer Details layout"><figcaption><p>Customer profile (customer card) layout: contact details, history, and totals.</p></figcaption></figure>
 
 The page is typically split into three areas:
 
@@ -100,7 +107,7 @@ The center panel contains expandable sections. What you see here depends on your
 Shows the customer’s bookings in a list/table.
 
 * **BKG. No** is usually clickable and opens the booking
-* Use the available **filters** to narrow the booking list (for example to find upcoming departures)
+* Use the available **filters** to narrow the booking list (for example, to find upcoming departures)
 
 #### Other sections you may see
 

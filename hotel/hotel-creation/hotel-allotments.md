@@ -18,13 +18,13 @@ Use allotments to manage hotel contracts by setting aside a fixed number of room
 
 ### Fields
 
-<figure><img src="../../.gitbook/assets/image (409).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Period Start** – The start date of the allotment validity.
 * **Period Stop** – The end date of the allotment validity.
 * **Room** – The room type (e.g., Double Room, Suite, Family Room) defined in the system.
 * **Min. Stay** – Minimum nights required for booking this room. `0` means no restriction.
-* **Board** – The default board type for the room. The board price is included in the room cost.
+* **Board Basis** – The default board type for the room. The board price is included in the room cost.
 * **No.** – The total number of rooms available in the allotment for the defined period.
 * **Secured** – Number of rooms contractually secured from the hotel.
 * **Guaranteed** – Number of rooms financially guaranteed (must be paid even if unsold).
@@ -37,23 +37,23 @@ Use allotments to manage hotel contracts by setting aside a fixed number of room
 
 Click **Save** to store your changes.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (668).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 Rooms cannot be used in bookings until the allotment is **generated**.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (669).png" alt=""><figcaption></figcaption></figure>
 
 The **Extend** button lets you extend the same allotment line without creating a new row. Enter a new **Period Stop** date and click **Extend**.
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (670).png" alt=""><figcaption></figcaption></figure>
 
 #### Hotel allotment control
 
 Hotel room availability can be limited per transport. This is set on the transport’s price list rule.
 
-<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Example:
 
@@ -69,7 +69,7 @@ Other transports use their own limit. If no limit is set, sales follow the allot
 
 Use **Generate All** to generate every allotment line in one action. This is useful when a hotel has many lines to generate.
 
-<figure><img src="../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (671).png" alt=""><figcaption></figcaption></figure>
 
 Click **Generate All**, then click **OK** to confirm.
 

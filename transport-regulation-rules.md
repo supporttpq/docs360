@@ -15,7 +15,7 @@ Transport Regulation Rules are used to:
 
 #### Page Structure
 
-<figure><img src=".gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Table Columns
 
@@ -56,7 +56,7 @@ The purpose of this function is to ensure that pricing remains dynamic and consi
 
 Each rule contains **two sets of fields**, which define how the system applies price adjustments.
 
-<figure><img src=".gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **General fields** (used for going prices UP) :&#x20;
 
@@ -82,7 +82,7 @@ Each rule contains **two sets of fields**, which define how the system applies p
 
 Load factor is calculated based on the defined Factor Matrix, under Transport -> Factor Matrix tab. Here user can define the load factor based on weeks for a transport. Load Factor for a certain transport is calculated behind and can be checked into Transport->Transport Price Control on the Load Factor tab.
 
-<figure><img src=".gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Based on the load factor, the price regulation rules can be set. A rule can be assigned for a departure of a transport under Fix Quota:
 
@@ -129,7 +129,7 @@ First, the service will just apply the rule set on schedule. Then the same servi
 
 **Very important:** the service will consider only transports with "Use Change Rule Service" set.
 
-<figure><img src=".gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * If the rule is not set, it will be set up.
 * If a rule is already set, it will be changed (if the case) with the first rule (from all the existing ones) that meets the conditions.

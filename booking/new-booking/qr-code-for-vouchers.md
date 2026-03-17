@@ -1,8 +1,31 @@
+---
+description: >-
+  Add scannable QR codes to vouchers in Tourpaq Office. Enable the voucher QR
+  setting, generate vouchers, and scan QR codes for fast voucher lookup and
+  on-site validation.
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+---
+
 # QR code for vouchers
 
-### Overview
+### **Overview**
 
-The **QR code for vouchers** feature adds a scannable QR code to vouchers. This makes it easier for staff, guides, and suppliers to identify a voucher quickly (for example from a printed voucher or a guest’s phone), without manually typing voucher references.
+The **QR code for vouchers** feature in **Tourpaq Office** adds a scannable **voucher QR code** to generated vouchers. This helps staff, guides, and suppliers look up vouchers faster (printed or on a guest’s phone) without manual entry of voucher references.
 
 {% hint style="info" %}
 QR codes appear **only on vouchers that have been generated**. Voucher generation is controlled by your voucher rules and timing (see [Vouchers](../../setup/vouchers.md)).
@@ -53,7 +76,7 @@ What happens after scanning (for example, whether it opens a page, validates, or
 1. Go to **System Setup**.
 2. Enable **Show QR-code in vouchers**.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="System Setup setting: Show QR-code in vouchers"><figcaption></figcaption></figure>
 
 3. Click **Save**.
 {% endstep %}
@@ -71,7 +94,7 @@ See: [Vouchers](../../setup/vouchers.md)
 
 Once vouchers are generated, open/download a voucher and confirm the QR code is visible.
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Voucher PDF showing the QR code on the voucher"><figcaption></figcaption></figure>
 {% endstep %}
 {% endstepper %}
 
@@ -118,10 +141,10 @@ See: [Vouchers](../../setup/vouchers.md)
 
 #### 3. Are QR codes created per booking or per passenger?
 
-They are created per passenger. Vouchers have the QR code generated for each person separately
+It depends on your voucher setup. In many setups, vouchers (and QR codes) are created **per passenger**. In other setups, QR codes can be generated per voucher document.
 
 ***
 
-#### 6. Do QR codes also appear on tickets?
+#### 4. Do QR codes also appear on tickets?
 
-Yes. The QR codes appear on tickts.
+Depending on your setup, QR codes can also appear on tickets. Verify by previewing/printing a ticket after vouchers are generated.

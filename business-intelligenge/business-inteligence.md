@@ -1,3 +1,9 @@
+---
+description: >-
+  Monitor hotel allotment availability, stop sales, and daily bed or room
+  capacity across transports, resorts, and hotels.
+---
+
 # Business Intelligence – Allotment Overview
 
 ### **Overview**

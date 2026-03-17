@@ -1,3 +1,9 @@
+---
+description: >-
+  View hotel allotment totals, usage, and remaining room availability across
+  dates, rooms, and transports in Tourpaq.
+---
+
 # Hotel allotment overview
 
 ### Overview

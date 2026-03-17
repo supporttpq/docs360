@@ -1,3 +1,9 @@
+---
+description: >-
+  Upload and manage hotel photos and documents used on the website, offers, and
+  booking flows in Tourpaq.
+---
+
 # Photos & Documents
 
 ### Overview
@@ -26,7 +32,7 @@ If you need to attach documents to a specific booking, use [Comments](../../book
 
 ### Fields
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. **Image**
    * Displays the uploaded photo.
