@@ -378,18 +378,24 @@ Improper configuration may lead to unreadable tickets or inconsistent brand pres
 
 <figure><img src="../.gitbook/assets/image (689).png" alt=""><figcaption></figcaption></figure>
 
-1\. Faded Color - Secondary gradient color used in the ticket background. It works together with the Main Color to create the gradient effect in Version 3.\
+#### **1. Faded Color**&#x20;
+
+&#x20;Secondary gradient color used in the ticket background. It works together with the Main Color to create the gradient effect in Version 3.\
 Used for visual depth and background transitions. It usually represents a lighter tone of the primary brand color.
 
 <figure><img src="../.gitbook/assets/image (690).png" alt=""><figcaption></figcaption></figure>
 
-2\. Main Color - Primary brand color used in headers, highlight areas, buttons and key visual sections of the ticket. Defines the dominant visual identity of the ticket.
+#### 2. Main Color
+
+Primary brand color used in headers, highlight areas, buttons and key visual sections of the ticket. Defines the dominant visual identity of the ticket.
 
 <figure><img src="../.gitbook/assets/image (691).png" alt=""><figcaption></figcaption></figure>
 
 Important: The Main Color directly impacts visibility of headings and structural blocks.
 
-3\. Customer Info Image - Main decorative image displayed in the Customer Information section of the ticket.&#x20;
+#### 3. Customer Info Image&#x20;
+
+Main decorative image displayed in the Customer Information section of the ticket.&#x20;
 
 <figure><img src="../.gitbook/assets/image (692).png" alt=""><figcaption></figcaption></figure>
 
@@ -403,7 +409,9 @@ Important: The Main Color directly impacts visibility of headings and structural
 
 Best practice: Use compressed images optimized for PDF output to avoid large file size.
 
-4\. Customer Info Decorator Image - Small decorative graphical element displayed near the Customer Information section. Enhances visual appearance without affecting core content.
+#### 4. Customer Info Decorator Image
+
+&#x20;Small decorative graphical element displayed near the Customer Information section. Enhances visual appearance without affecting core content.
 
 <figure><img src="../.gitbook/assets/image (693).png" alt=""><figcaption></figcaption></figure>
 
@@ -415,7 +423,9 @@ Best practice: Use compressed images optimized for PDF output to avoid large fil
 
 Typical usage: lines, abstract shapes, light branding accents.
 
-5\. Hotel Star Representation - Icon used to represent full hotel star classification. Defines how hotel rating stars appear visually on the ticket.
+#### 5. Hotel Star Representation&#x20;
+
+Icon used to represent full hotel star classification. Defines how hotel rating stars appear visually on the ticket.
 
 <figure><img src="../.gitbook/assets/image (694).png" alt=""><figcaption></figcaption></figure>
 
@@ -427,7 +437,9 @@ Typical usage: lines, abstract shapes, light branding accents.
 
 Note: The system repeats this icon based on the hotel’s star rating.
 
-6\. Hotel Half Star Representation - Icon used when hotel rating includes a half star (e.g. 3.5 stars). Ensures accurate graphical representation of non-integer ratings.
+#### 6. Hotel Half Star Representation&#x20;
+
+&#x20;Icon used when hotel rating includes a half star (e.g. 3.5 stars). Ensures accurate graphical representation of non-integer ratings.
 
 <figure><img src="../.gitbook/assets/image (695).png" alt=""><figcaption></figcaption></figure>
 
@@ -439,7 +451,9 @@ Note: The system repeats this icon based on the hotel’s star rating.
 
 Consistency between full and half star icons is mandatory.
 
-7\. Font Type - Defines the font file format used in the ticket.
+#### 7. Font Type&#x20;
+
+Defines the font file format used in the ticket.
 
 **Available Option:**
 
@@ -458,7 +472,9 @@ Controls typography rendering in the generated document.
 2. Ensure uploaded font files match the selected format.
 3. Confirm licensing rights before using commercial fonts.
 
-8\. Regular Font File - Font file used for standard text (paragraphs, passenger names, descriptions).\
+#### 8. Regular Font File&#x20;
+
+Font file used for standard text (paragraphs, passenger names, descriptions).\
 Defines readability and base typography of the ticket.
 
 <figure><img src="../.gitbook/assets/image (697).png" alt=""><figcaption></figcaption></figure>
@@ -471,7 +487,9 @@ Defines readability and base typography of the ticket.
 
 Important: If the font lacks character support, some languages may render incorrectly.
 
-9\. Bold Font File - Font file used for headings and emphasized text.&#x20;
+#### 9. Bold Font File
+
+Font file used for headings and emphasized text.&#x20;
 
 <figure><img src="../.gitbook/assets/image (698).png" alt=""><figcaption></figcaption></figure>
 
