@@ -139,7 +139,6 @@
   * [How to set autobilling for discounts/supplements](autobilling/how-to-set-autobilling-for-discounts-supplements.md)
   * [How to set autobilling for handling](autobilling/how-to-set-autobilling-for-handling.md)
   * [Creditor invoices](autobilling/creditor-invoices.md)
-  * [Creditor invoices](autobilling/creditor-invoices-1.md)
 * [Missed Payments](missed-payments.md)
 * [Invoice Hotel Payments](invoice-hotel-payments.md)
 * [Pending payments DIBS transaction late response](pending-payments-dibs-transaction-late-response.md)

@@ -310,7 +310,7 @@ If the invoice only contained that hotel, it may be marked as **Deleted**.
 ### Related pages
 
 * [How to create a creditor](../autobilling/how-to-create-a-creditor.md)
-* [Creditor invoices](../autobilling/creditor-invoices.md)
+* [Creditor invoices](/broken/spaces/ZCqO8EQ5P5Mioq1zbQAc/pages/4s99n9tnxOnwBgwPREUc)
 
 ### FAQ
 
