@@ -181,7 +181,7 @@ Avoid overlapping date ranges to reduce unexpected results.
 
 ## Related pages
 
-* [Pricelist](price-list/pricelist.md)
-* [Pricelist Setup](price-list/pricelist-setup.md)
+* [Price List](price-list/pricelist.md)
+* [Price List Setup](price-list/pricelist-setup.md)
 * [Profit margin rules](profit-margin-rules.md)
 * [Price regulation rules](price-regulation-rules.md)

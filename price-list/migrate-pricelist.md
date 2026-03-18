@@ -9,9 +9,9 @@ description: >-
 
 ## Overview
 
-Only administrators can use **Migrate Pricelist**.
+Only administrators can use **Migrate Price List**.
 
-Use it to bulk copy **Tourpaq Office Price Lists (pricelists)** from one **brand** to another in the same company.
+Use it to bulk copy **Tourpaq Office Price Lists (price lists)** from one **brand** to another in the same company.
 
 It copies the full price list setup, including PLTA lines (per departure), intervals (P1–P4), discounts (D1–D4), tags, and optional maximum room values.
 
@@ -70,7 +70,7 @@ This reduces manual work and limits copy/paste errors.
 
 ## FAQ
 
-**What does Migrate Pricelist do?**\
+**What does Migrate Price List do?**\
 It copies price lists from one brand to another within the same company.
 
 **Who can use this feature?**\
