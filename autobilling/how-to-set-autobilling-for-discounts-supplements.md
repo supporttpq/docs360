@@ -25,9 +25,14 @@ layout:
 
 ### Overview
 
-Autobilling for discounts and supplements automates **supplier invoices** for booking adjustments.
+This page explains how to configure Autobilling for **discounts and supplements** so that the system automatically includes them in supplier invoicing when they apply to bookings.
 
-Each discount or supplement can be invoiced on its own schedule. This helps with supplier settlement and finance reconciliation.
+Discounts and supplements adjust the net price of bookings. They can be invoiced:
+
+* together with related services (hotel, extras, transfers), or
+* as **separate billing items**, depending on configuration.
+
+Autobilling ensures consistent invoicing of all applied pricing adjustments.
 
 ***
 
@@ -41,52 +46,157 @@ The purpose of this configuration is to:
 
 By enabling autobilling, the system ensures that every discount or supplement is invoiced automatically, according to its defined billing frequency.
 
+### Prerequisites
+
+Before configuring Autobilling for discounts and supplements:
+
+* **Autobilling services** must be active (IGS, etc.)
+* A valid **Creditor** must be configured
+* Pricing rules including discounts/supplements must exist
+* Booking flow must include the applicable pricing adjustments
+* Email templates for invoices must be configured
+
+### Configuration
+
+#### 1 Access
+
+Navigate to: `Pricing → Discounts & Supplements → Main Tab`
+
+***
+
+#### 2 Enable Autobilling
+
+In the discount or supplement configuration:
+
+* Enable **Autobilling**
+* Select associated **Creditor**
+* Define **Schedule**
+* Set required accounting codes
+
 <figure><img src="../.gitbook/assets/image (321).png" alt="Discounts and supplements automatic billing settings"><figcaption><p>Discounts/Supplements → Automatic Billing: link a creditor, set codes, and schedule invoice generation.</p></figcaption></figure>
 
-### How it works
+#### 3 Required Fields
 
-When autobilling is activated for a **discount** or **supplement**, the system:
+| Field                     | Description                 | Impact                                                                                     |
+| ------------------------- | --------------------------- | ------------------------------------------------------------------------------------------ |
+| Automatic Billing         | Enables invoice generation  | Activates Autobilling for this pricing item                                                |
+| Creditor                  | Supplier receiving invoices | Determines invoice recipient                                                               |
+| Schedule                  | Timing of invoice runs      | Controls batching frequency                                                                |
+| Account Debit             | Financial account reference | Used in exports and reporting                                                              |
+| Department Code           | Internal financial grouping | Helps categorization                                                                       |
+| Apply With Related Entity | Determines grouping         | Controls whether discount/supplement is combined with service invoice or billed separately |
 
-1. Uses the configured **creditor** to generate the invoice.
-2. Applies the specified **Department code** and **Account debit** to the invoice.
-3. Follows the defined **invoice schedule** (daily, weekly, monthly, or days after service).
-4. Creates a **separate invoice** for each discount or supplement using its dedicated schedule.
+### System Behavior
 
-If autobilling is **disabled**, no automatic invoices are generated, and the discount/supplement remains unbilled until manual processing.
+#### 1 Invoice Inclusion Logic
 
-***
+Once enabled, discounts and supplements are included automatically in invoices according to the configuration:
 
-### Instructions
+**If “Apply With Related Entity” is enabled:**
 
-#### **Access Configuration**
+* the discount or supplement is included on the invoice for the related service (hotel, extra, transfer, etc.)
 
-Navigate to:\
-**Discounts / Supplements → Automatic Billing section**
+**If disabled:**
 
-#### **Configure Autobilling Settings**
-
-| **Field**             | **Description**                                                                                                                                                                                                    |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Department Code**   | Enter the department code to be shown on the invoice.                                                                                                                                                              |
-| **Account Debit**     | Specify the account debit number that should appear on the invoice.                                                                                                                                                |
-| **Creditor**          | Select the creditor to whom the invoice will be issued. This field is mandatory for autobilling.                                                                                                                   |
-| **Automatic Billing** | _(Checkbox)_ Activate this option to enable automatic invoicing for the discount or supplement.                                                                                                                    |
-| **Schedule**          | Choose how often invoices are generated: **Daily**, **Weekly**, **Monthly**, or **Days After** (same as hotels and extras). Using a dedicated schedule ensures a separate invoice for this discount or supplement. |
-
-#### **Save Configuration**
-
-Click **Save** to apply and activate autobilling for the selected discount or supplement.
+* a **separate invoice item or separate invoice** may be generated for the pricing adjustment
 
 ***
 
-### **Result**
+#### 2 Data Source
 
-Once configured:
+Values used in invoice calculations are taken from:
 
-* The system automatically generates and sends invoices to the selected creditor according to the chosen schedule.
-* Each discount or supplement is invoiced independently, ensuring accurate supplier settlements and financial transparency.
+* the booking’s applied pricing (discount/supplement value)
+* the pricing rule definitions
+* cost configuration (if applicable)
 
 ***
+
+#### 3 Timing
+
+Invoices for discounts and supplements are generated on the schedule defined in the configuration. The frequency depends on system settings (e.g., hourly, daily) and cannot be manually triggered outside those schedules.
+
+***
+
+#### 4 Regeneration Behavior
+
+When an invoice is regenerated:
+
+* updated pricing adjustments are re‑evaluated
+* changes in discount or supplement value are applied retroactively
+* invoice lines may be added or removed
+
+***
+
+### Example Scenario
+
+#### Example 1 – Combined Billing
+
+**Configuration:**
+
+* Discount: Early Booking
+* Apply With Related Entity: Enabled
+
+**Flow:**
+
+1. Booking includes an early booking discount
+2. Price adjustment is applied during pricing
+3. Autobilling runs on schedule
+4. Discount is included in related service invoice
+
+**Result:**
+
+* hotel invoice includes discount amount
+
+***
+
+#### Example 2 – Separate Billing
+
+**Configuration:**
+
+* Supplement: Late Check‑in Fee
+* Apply With Related Entity: Disabled
+
+**Flow:**
+
+1. Booking includes supplement
+2. System runs Autobilling
+3. System generates a separate invoice for the supplement
+
+**Result:**
+
+* supplement appears on its own financial document
+
+***
+
+### Edge Cases
+
+* If **No Creditor is set:** discount/supplement will not be invoiced
+* If **Schedule is missing or paused:** no invoices are generated
+* If **Discount/Supplement values change after invoice generation:** regeneration updates invoice values
+* If **Related entity configuration changes:** invoice grouping may differ after regeneration
+
+***
+
+### Troubleshooting
+
+| Symptom                             | Likely Cause                                    | Resolution                  |
+| ----------------------------------- | ----------------------------------------------- | --------------------------- |
+| Discounts not appearing on invoices | “Apply With Related Entity” disabled or missing | Check configuration         |
+| Supplements not invoiced            | Creditor not set                                | Assign appropriate creditor |
+| Separate invoices not created       | Schedule not configured                         | Define schedule             |
+| Wrong financial values              | Pricing rules outdated                          | Review pricing rule setup   |
+
+***
+
+### Related Pages
+
+* Autobilling
+* How to Create a Creditor
+* How to Set Autobilling for Hotels
+* How to Set Autobilling for Extras
+* Pricing Rules
+* Finance → Invoices
 
 ### FAQ
 
