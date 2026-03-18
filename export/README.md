@@ -7,9 +7,59 @@ description: >-
 
 # Export
 
-Use **Export** to generate **Excel exports** (`.XLSX`) from Tourpaq Office.
+### Overview
 
-Export types include **Bookings**, **Discounts**, and **Cost**. Use exports for reporting, reconciliation, and accounting.
+The Export module allows users to extract operational and financial data from the system into external files for reporting, supplier communication, integrations, or offline processing.
+
+Exports typically include:
+
+* bookings and passengers
+* hotel and rooming lists
+* transport and transfers
+* guides and operational data
+* financial or reporting datasets
+
+Exports are used both internally (analysis, reporting) and externally (suppliers, partners, accounting systems).
+
+***
+
+### Business Context
+
+In a tour operator environment, large volumes of data must be shared across stakeholders:
+
+* suppliers need arrival and rooming lists
+* guides need passenger lists
+* finance teams need structured datasets
+* management needs reporting extracts
+
+Manual data extraction leads to:
+
+* inconsistencies
+* outdated information
+* operational delays
+
+The Export module ensures:
+
+* standardized data output
+* repeatable export formats
+* alignment between system data and external processes
+
+***
+
+### When to Use
+
+**Use Export when:**
+
+* data must be shared externally (supplier, guide, partner)
+* reporting is required outside the system
+* integrations require structured files
+* operational teams need lists (arrival, pax, etc.)
+
+**Do NOT use when:**
+
+* real-time access is available (use dashboards instead)
+* data is incomplete or not validated
+* exports are used as a workaround for missing configuration
 
 ***
 
@@ -53,7 +103,7 @@ For recurring exports, see [Export - Scheduled Reports](export.md).
 
 ***
 
-### Usage example
+### Example Scenario
 
 **Scenario:** Export booking and cost data for bookings created in September and October 2025, including changes after departure.
 
@@ -149,3 +199,11 @@ The data will contain information regarding each booking that corresponds to the
 * **Insurance cost -** Total cost of all types of insurance (travel, cancellation, etc.).
 * **Discounts/Supplements cost -** Total value of discounts and supplements applied.
 * **Hotel cost -** Total cost paid for the hotel accommodation.
+
+### Best Practices
+
+* Always validate filters before export
+* Use consistent export formats across teams
+* Avoid manual editing of exported data
+* Archive exports for audit purposes
+* Align exports with operational workflows
