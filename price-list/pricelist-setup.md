@@ -22,13 +22,13 @@ layout:
 
 # Price List Setup
 
-Only administrators can access **Pricelist Setup**.
+Only administrators can access **Price List Setup**.
 
 See also: [Price List](pricelist.md).
 
 ## Overview
 
-Use **Pricelist Setup** to:
+Use **Price List Setup** to:
 
 * Create new **Tourpaq Office price lists** for a transport + hotel + room combination.
 * Copy prices and discounts across departures and related price lists.
@@ -277,7 +277,7 @@ You can copy prices from one transport to all brand transports, from one hotel t
 
 All checkboxes in **Price Difference** should be selected, even if the values are zero.
 
-#### What filters are available in Pricelist Setup?
+#### What filters are available in Price List Setup?
 
 You can filter by departure date, resort, transport, transport type, hotel, allotment type, room, fix quota, hotel name, and stay length.
 

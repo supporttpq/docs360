@@ -29,7 +29,7 @@ Use **Business Intelligence** to:
 
 #### **Reports in this section**
 
-* [Business Intelligence – Allotment Overview](business-inteligence.md)
+* [Business Intelligence – Allotment Overview](../business-intelligence/business-intelligence.md)
 * [Business Intelligence – Flights](business-intelligence-flights.md)
 * [Business Intelligence – Accommodation](business-intelligence-accommodation.md)
 

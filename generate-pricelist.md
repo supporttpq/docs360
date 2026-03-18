@@ -38,7 +38,7 @@ You need:
 
 ## Filters
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (1).png" alt="Price List Generator filters and results list"><figcaption><p>Filter and display existing or scheduled price list generation rules.</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (2).png" alt="Price List Generator filters and results list"><figcaption><p>Filter and display existing or scheduled price list generation rules.</p></figcaption></figure>
 
 Use the filters to find existing rules and validate what the generator will create.
 
@@ -181,7 +181,7 @@ Avoid overlapping date ranges to reduce unexpected results.
 
 ## Related pages
 
-* [Pricelist](price-list/pricelist.md)
-* [Pricelist Setup](price-list/pricelist-setup.md)
+* [Price List](price-list/pricelist.md)
+* [Price List Setup](price-list/pricelist-setup.md)
 * [Profit margin rules](profit-margin-rules.md)
 * [Price regulation rules](price-regulation-rules.md)
