@@ -25,9 +25,9 @@ layout:
 
 ### Overview
 
-Autobilling for handling generates supplier invoices for handling charges (fees) linked to bookings.
+Handling refers to services associated with bookings that are not tied directly to hotel rooms, transfers, or extras — for example processing fees, documentation fees, service charges, or other non‑standard supplier‑based charges.
 
-You configure it on the supplier profile. You also decide whether handling is invoiced separately or included on the hotel invoice.
+This page explains how to configure the system to automatically generate invoices for handling items using Autobilling.
 
 ***
 
@@ -39,9 +39,31 @@ It provides flexibility to:
 * Automatically bill handling services using their own schedule, or
 * Combine handling charges with the hotel’s main invoice.
 
-<figure><img src="../.gitbook/assets/image (22) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Supplier handling autobilling settings"><figcaption><p>Supplier → Handling: link a creditor, set account debit and schedule, and control handling invoice behavior.</p></figcaption></figure>
+### Prerequisites
 
-### How it works
+Before enabling Autobilling for handling:
+
+‑ Handling categories or items must be defined\
+‑ The handling item must be linked to a creditor (supplier)\
+‑ Accounting codes (account debit / department code) must be configured\
+‑ Autobilling services must be active (IGS, EBL, etc.)\
+‑ Email templates must be set up for invoice sending
+
+Without these, handling invoices will not be generated correctly.
+
+***
+
+### Configuration
+
+#### 1 Access
+
+Navigate to: `Users → Suppliers -> Handling`
+
+***
+
+#### 2 Enable Autobilling
+
+<figure><img src="../.gitbook/assets/image (22) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Supplier handling autobilling settings"><figcaption><p>Supplier → Handling: link a creditor, set account debit and schedule, and control handling invoice behavior.</p></figcaption></figure>
 
 When **Automatic Billing** is enabled in the supplier’s handling configuration, Tourpaq:
 
@@ -51,23 +73,9 @@ When **Automatic Billing** is enabled in the supplier’s handling configuration
 
 ***
 
-### Instructions
-
-#### **Configure Handling Autobilling**
-
-| **Step**                          | **Action**                                                                                 |
-| --------------------------------- | ------------------------------------------------------------------------------------------ |
-| **1. Access Supplier Settings**   | Navigate to **Users → Suppliers** and select the desired supplier.                         |
-| **2. Open Handling Section**      | Scroll to the **Handling** tab in the supplier profile.                                    |
-| **3. Select a Creditor**          | Choose the creditor to whom invoices for handling will be issued.                          |
-| **4. Set Account Debit**          | Enter the account debit number to be displayed on the invoice.                             |
-| **5. Define Schedule**            | Choose the billing frequency: **Daily**, **Weekly**, **Monthly**, or **Days After**.       |
-| **6. Determine Invoice Behavior** | Add Own Schedule checked = invoiced separately. Unchecked = included on the hotel invoice. |
-| **7. Save Configuration**         | Click **Save** to apply the autobilling settings.                                          |
+#### **Add a Handling Price**
 
 <figure><img src="../.gitbook/assets/image (23) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Handling price configuration"><figcaption><p>Add a handling price so Autobilling has an amount to invoice.</p></figcaption></figure>
-
-#### **Add a Handling Price**
 
 | **Step**                        | **Action**                                                        |
 | ------------------------------- | ----------------------------------------------------------------- |
