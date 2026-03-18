@@ -26,7 +26,7 @@ In the "Choose provider" menu, there is the possibility of making 3 different co
 
 <figure><img src="../../.gitbook/assets/image (631).png" alt=""><figcaption></figcaption></figure>
 
-<img src="../../.gitbook/assets/file.excalidraw (1) (1).svg" alt="" class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (1) (1) (1).svg" alt="" class="gitbook-drawing">
 
 For each leg, you define **filters**. The filters apply to **GDS** **transports**.
 

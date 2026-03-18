@@ -55,33 +55,75 @@ Using the buttons next to **Export**, you can:
 
 <figure><img src="../.gitbook/assets/image (9) (3).png" alt="Export filters and schedules table"><figcaption><p>Top: export filters. Bottom: the schedules table where you enable, configure, and download scheduled exports.</p></figcaption></figure>
 
-#### Export filters (top section)
+#### Export filters&#x20;
 
-These filters define the base parameters for what will be included in the exported data.
+#### Export Configuration (Top Section)
 
-| Field                               | Description                                                                       |
-| ----------------------------------- | --------------------------------------------------------------------------------- |
-| **Export Type**                     | Defines the format and type of data to export. Example: **Bookings (XLSX)**.      |
-| **Booking Start / Booking End**     | Specifies the booking date range to include in the export.                        |
-| **Departure Start / Departure End** | Specifies the departure date range (optional filters).                            |
-| **+ More filters / Clear**          | Additional filtering options can be added; the “Clear” button resets all filters. |
-| **Export**                          | Runs the export immediately based on the current filters.                         |
+Used for:
+
+* manual export
+* defining filters for scheduled exports
+
+Fields:
+
+| Field                                                      | Description                          |
+| ---------------------------------------------------------- | ------------------------------------ |
+| Export Type                                                | Defines dataset (e.g. Bookings XLSX) |
+| Booking Start / End                                        | Filters by booking creation date     |
+| Departure Start / End                                      | Filters by travel date               |
+| More Filters                                               | Additional filtering options         |
+| Include Cancelled Bookings and Details                     | Includes cancelled bookings          |
+| Include Moved Bookings and Details                         | Includes rebooked bookings           |
+| Include past bookings with changes in the departure period | Tracks historical updates            |
 
 ***
 
 #### Schedules section
 
-This table lists all configured automatic exports. Each row represents a schedule with customizable options.
+Used to configure automated exports.
 
-| Column                          | Description                                                                                                             |
-| ------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| **Enabled**                     | Checkbox to activate or deactivate the schedule. Only enabled schedules will run automatically.                         |
-| **Description**                 | A user-defined name or label for the schedule (e.g., “test15Mel”). Useful for identifying different exports.            |
-| **Schedule Type**               | How often the export runs: **Once a day**, **Once a week**, or **Once a month**.                                        |
-| **Departure**                   | Which departure period the export covers: **Custom**, **Yesterday**, **Last 7 days**, **Last week**, or **Last month**. |
-| **Day**                         | When the export runs. Monthly schedules use a day of month (1–31). Weekly schedules use a weekday (for example Monday). |
-| **Get Latest Result (🗎 icon)** | Opens or downloads the latest generated export file for this schedule.                                                  |
-| **Delete (🗑️ icon)**           | Removes the selected schedule.                                                                                          |
+Each row represents a **scheduled export configuration**.
+
+Each schedule contains:
+
+| Column        | Description        | Behavior                             |
+| ------------- | ------------------ | ------------------------------------ |
+| Enabled       | Activates schedule | If unchecked → export will not run   |
+| Description   | Custom name        | Should describe purpose              |
+| Schedule Type | Frequency          | Monthly / Weekly / Daily             |
+| Departure     | Time filter logic  | Defines data window (e.g. Last week) |
+| Day           | Execution day      | Depends on schedule type             |
+
+#### Schedule Types
+
+**Daily**
+
+* Runs every day
+* Uses selected **Departure filter**
+
+**Weekly**
+
+* Runs once per week
+* Requires **Day selection** (e.g. Wednesday)
+
+**Monthly**
+
+* Runs once per month
+* Uses selected **Day (1–31)**
+
+#### Departure Filter Logic
+
+This field defines **what data is included**, not when it runs.
+
+Examples:
+
+| Value       | Meaning                  |
+| ----------- | ------------------------ |
+| Last month  | Data from previous month |
+| Last week   | Data from previous week  |
+| Last 7 days | Rolling window           |
+| Yesterday   | One-day snapshot         |
+| Custom      | Manual date logic        |
 
 ***
 
@@ -120,6 +162,79 @@ Initiates a **manual export** using the current filters and options selected, in
 * Download the latest scheduled file using **Get Latest Result**.
 
 The exact runtime is configured centrally. It can vary by environment and setup.
+
+### Example Scenarios
+
+#### Scenario 1 — Weekly Finance Report
+
+* Schedule Type: Weekly
+* Day: Monday
+* Departure: Last week
+
+Result:
+
+* weekly dataset for accounting
+
+***
+
+#### Scenario 2 — Daily Operational Tracking
+
+* Schedule Type: Daily
+* Departure: Yesterday
+
+Result:
+
+* daily snapshot of bookings
+
+***
+
+#### Scenario 3 — Monthly Reporting
+
+* Schedule Type: Monthly
+* Day: 1
+* Departure: Last month
+
+Result:
+
+* full monthly dataset
+
+***
+
+<img src="../.gitbook/assets/file.excalidraw.svg" alt="Manual vs Schedule Export " class="gitbook-drawing">
+
+### Common Mistakes
+
+* Confusing **Departure** with execution date
+* Forgetting to click **Save**
+* Not enabling schedule
+* Using wrong filters → incorrect exports
+* Not checking auto-disabled schedules
+
+{% hint style="warning" %}
+Schedules not used for **7 days are automatically disabled**
+{% endhint %}
+
+***
+
+### Troubleshooting
+
+| Issue             | Cause                | Solution          |
+| ----------------- | -------------------- | ----------------- |
+| No file generated | Schedule disabled    | Enable schedule   |
+| Wrong data        | Incorrect filters    | Review filters    |
+| Empty export      | No data in period    | Adjust date range |
+| Schedule stopped  | Auto-disabled        | Re-enable         |
+| Missing bookings  | Filters exclude them | Check options     |
+
+***
+
+### Best Practices
+
+* Use clear descriptions (e.g. “Weekly Finance Export”)
+* Validate filters before saving
+* Use “Last week” instead of fixed dates
+* Monitor schedules weekly
+* Avoid duplicate schedules
 
 ### Daily finance export file
 
