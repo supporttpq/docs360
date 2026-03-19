@@ -1,7 +1,7 @@
 ---
 description: Your daily control centre for booking alerts, errors, and system warnings.
 icon: bell
-cover: ../.gitbook/assets/Notification.gif
+cover: ../.gitbook/assets/Notification (1).gif
 coverY: 0
 layout:
   width: default
