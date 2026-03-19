@@ -1,7 +1,13 @@
 ---
 description: Your daily control centre for booking alerts, errors, and system warnings.
+icon: bell
+cover: ../.gitbook/assets/download.png
+coverY: 0
 layout:
   width: default
+  cover:
+    visible: true
+    size: hero
   title:
     visible: true
   description:
@@ -99,7 +105,7 @@ Use the **Booking No** in the notification row to locate the affected booking. O
 After saving the fix, return to the Notifications page and refresh the list. If the underlying issue has been resolved, the notification will no longer appear. If it persists, the fix was incomplete — review the booking again.
 
 {% hint style="warning" %}
-&#x20;Notifications are not automatically cleared when you save a reservation. The system reruns its checks periodically, every 30 minutes.
+Notifications are not automatically cleared when you save a reservation. The system reruns its checks periodically, every 30 minutes.
 {% endhint %}
 
 ***
