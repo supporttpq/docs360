@@ -47,12 +47,15 @@ Common examples:
 
 ### Purpose
 
-The purpose of this module is to:
+The Method of Payment module defines, controls, and governs all payment types used within Tourpaq Office Finance. This documentation establishes standardized procedures for creating, maintaining, and reviewing payment methods to ensure:
 
-* Define and maintain the list of accepted **payment methods** (payment types).
-* Separate **debit** (money in) from **credit** (money out / refund).
-* Support automation like **bank payment import** and online payment flows.
-* Keep payments consistent across bookings, guides, and exports.
+* Accurate financial classification and reporting
+* Compliance with internal controls, accounting standards, and regulatory requirements
+* Proper segregation of duties
+* Consistent handling of payments across bookings, guides, agents, and integrations
+* Reliable reconciliation and auditability
+
+This document forms part of the organization’s financial control framework.
 
 ***
 
@@ -70,6 +73,29 @@ Before configuring payment methods, ensure the following:
 ![Method of Payment (payment types) list](<../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 _Payment methods (payment types) define how payments are recorded and reported in Tourpaq Office._
+
+## **Responsibilities**
+
+#### **Roles**
+
+| Role                             | Responsibilities                                                                                  |
+| -------------------------------- | ------------------------------------------------------------------------------------------------- |
+| **Administrator**                | Create, modify, deactivate payment methods; assign accounting codes; configure integration flags. |
+| **Financial User**               | Validate accounting mappings; review payment method usage; support reconciliation.                |
+| **Finance Manager / Controller** | Approve creation or modification of payment methods; ensure alignment with accounting policies.   |
+| **Internal Audit / Compliance**  | Periodically review configuration, access rights, and audit trails.                               |
+
+#### **Approval Workflow**
+
+All changes to payment methods must follow this workflow:
+
+1. **Request** submitted by Administrator or Financial User
+2. **Review** by Finance Manager
+3. **Approval** documented and stored (ticket, email, or change log)
+4. **Implementation** by Administrator
+5. **Post‑implementation validation** by Financial User
+
+No payment method may be created or modified without documented approval.
 
 ### Payment type categories
 
@@ -186,3 +212,41 @@ _Booking gift card payment: allow gift cards across agencies when All brands is 
 5. **Save** the new payment method.
 
 It will be automatically associated with the **currently selected company** in the system.
+
+## **Integration & Automation Controls**
+
+#### **Online Payment Gateways**
+
+Payment methods flagged as online must:
+
+* Match gateway configuration
+* Use correct accounting codes
+* Be tested before activation
+
+#### **Bank Imports**
+
+Payment methods used for bank imports must:
+
+* Match bank file codes
+* Support reconciliation rules
+* Be validated during monthly close
+
+#### **Error Handling**
+
+Any failed import or mismatched payment type must be:
+
+1. Logged
+2. Investigated
+3. Corrected
+4. Documented
+
+## **Deactivation of Payment Methods**
+
+A payment method may be deactivated only when:
+
+* It is no longer used operationally
+* All open transactions are resolved
+* Finance Manager approves deactivation
+* Audit logs capture the change
+
+Deactivated methods must remain visible for audit purposes but unavailable for new transactions.
