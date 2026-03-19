@@ -200,7 +200,7 @@ Result:
 
 ***
 
-<img src="../.gitbook/assets/file.excalidraw.svg" alt="Manual vs Schedule Export " class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (1).svg" alt="Manual vs Schedule Export " class="gitbook-drawing">
 
 ### Common Mistakes
 

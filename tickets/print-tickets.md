@@ -9,9 +9,13 @@ description: >-
 
 ### Overview
 
-Use **Print Tickets** to generate a ticket PDF for a booking. Print it, download it, or send it as an e-ticket email. Use **Reprint Per Transport** for bulk ticket printing by transport and departure period.
+The Print Tickets feature allows users to generate and print customer-facing booking documents, including travel details, passenger information, and attached documents.
 
 <figure><img src="../.gitbook/assets/image (161).png" alt="Tourpaq Office Print Tickets page with Booking No field and actions for printing and sending ticket PDFs"><figcaption><p>Print Tickets in Tourpaq Office. Use it to print or email a ticket PDF (e-ticket) for a single booking.</p></figcaption></figure>
+
+{% hint style="info" %}
+Printed tickets represent the final customer document and may include both system-generated data and manually added content.
+{% endhint %}
 
 ***
 
@@ -24,12 +28,32 @@ Use **Print Tickets** to generate a ticket PDF for a booking. Print it, download
 
 ***
 
-### Before you start
+### Purpose
 
-* You need a **valid booking number**.
-* The booking should be **confirmed**.
-* The booking must include products that generate a ticket.
-* You must have access rights to use ticket actions.
+This feature is used to:
+
+* provide customers with booking confirmation documents
+* include travel details and instructions
+* attach additional documents (PDFs) to tickets
+* validate customer-facing information before travel
+
+***
+
+### Access & Preconditions
+
+#### Requirements
+
+* A booking must exist
+* Booking must contain at least one product (hotel, transport, etc.)
+* Optional: comments and attachments configured
+
+{% hint style="warning" %}
+Tickets cannot display content that has not been configured or saved in the booking.
+{% endhint %}
+
+#### Navigation
+
+Use a **code block** in GitBook: Booking > Open Booking > Tickets / Print
 
 {% hint style="info" %}
 If you only need to check whether a ticket email was sent (and whether it failed), use [E-tickets Overview](../e-tickets-overview.md).

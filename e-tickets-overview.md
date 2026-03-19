@@ -20,6 +20,31 @@ Common tasks:
 
 <figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Tourpaq Office E-tickets Overview page showing e-ticket email list, filters, and delivery status columns"><figcaption><p>E-tickets Overview in Tourpaq Office. Use it to monitor e-ticket email delivery status and troubleshoot failed or missing ticket emails.</p></figcaption></figure>
 
+{% hint style="info" %}
+E-tickets are automatically generated and attached to system emails sent to customers after booking or booking updates
+{% endhint %}
+
+### Purpose
+
+The E-Ticket system is designed to:
+
+* provide customers with a complete overview of their booking
+* serve as the official travel document
+* centralize all travel-related information
+* support digital access via customer login (“My Ticket”)
+
+### Access & Preconditions
+
+#### Requirements
+
+* A confirmed booking must exist
+* Customer email must be defined
+* Email templates must be active
+
+{% hint style="warning" %}
+If the customer email is missing, the e-ticket cannot be delivered
+{% endhint %}
+
 ### Filters
 
 Use filters to narrow down the e-ticket email log. Combine filters to find a specific customer fast.
@@ -92,6 +117,94 @@ Useful for:
 * sharing with airline or support teams
 
 ***
+
+### Ticket Generation
+
+#### Trigger Events
+
+E-tickets are generated automatically when:
+
+* a booking is confirmed
+* a booking is updated
+* a booking is cancelled
+* specific system emails are triggered
+
+{% hint style="info" %}
+Ticket generation is tied to the automated email system.
+{% endhint %}
+
+***
+
+#### Email Integration
+
+E-tickets are attached to system emails such as:
+
+* booking confirmation
+* booking update
+* cancellation notification
+* payment-related emails
+
+{% hint style="warning" %}
+If email templates are disabled, tickets will not be sent automatically.
+{% endhint %}
+
+***
+
+### Ticket Content
+
+#### Included Data
+
+**Booking**
+
+* Booking number
+* Travel dates
+* Destination
+
+**Customer**
+
+* Name
+* Contact details
+
+**Passengers**
+
+* Names
+* Passenger types
+
+**Products**
+
+* Hotel
+* Transport
+* Transfers
+* Extras
+
+***
+
+#### Additional Content
+
+* Customer-facing comments
+* Travel instructions
+* Conditions documents (PDF)
+
+{% hint style="info" %}
+Ticket content combines system-generated data with manually configured content.
+{% endhint %}
+
+***
+
+### Attachments
+
+* PDF documents can be attached to tickets
+* Attachments may:
+  * be included as separate files
+  * be appended to the ticket document
+
+{% hint style="info" %}
+Attachments are commonly used for terms and conditions or travel instructions.
+{% endhint %}
+
+{% hint style="warning" %}
+Only PDF files are supported for ticket attachments.
+{% endhint %}
 
 ### Troubleshooting checklist
 
