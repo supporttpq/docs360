@@ -11,7 +11,38 @@ description: >-
 
 Use **SMS Overview** to monitor outgoing SMS messages in **Tourpaq Office**. This is the central SMS log for booking and operational notifications. Use it to troubleshoot “SMS not received” before departure.
 
+{% hint style="info" %}
+SMS functionality is integrated via an external provider (e.g. Twilio) and must be configured before use.
+{% endhint %}
+
 ***
+
+### Purpose
+
+The SMS feature is used to:
+
+* send real-time communication to customers
+* automate notifications (confirmations, reminders, alerts)
+* support quick, direct interaction without email
+* improve response time and engagement
+
+***
+
+### Access & Preconditions
+
+#### Requirements
+
+* SMS integration must be enabled by a super admin
+* SMS service must be activated for the company
+* Valid customer phone number must exist
+
+{% hint style="info" %}
+SMS communication is available in modules like service cases and offers.
+{% endhint %}
+
+{% hint style="warning" %}
+If SMS integration or configuration is missing, messages cannot be sent.
+{% endhint %}
 
 ### What you can do on this page
 
