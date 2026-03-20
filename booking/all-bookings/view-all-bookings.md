@@ -133,6 +133,56 @@ To rename or delete an existing saved view:
 
 ***
 
+### Step 8 - Booking Selection (Checkbox Column)
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+#### 1. Bookings Selection (Checkbox Column)
+
+The **first column** contains checkboxes that allow users to select bookings.
+
+#### Functions
+
+* **Select individual bookings** by ticking the checkbox next to the booking.
+* **Select multiple bookings** for bulk actions.
+* **Select all bookings in the filtered results** using the top checkbox.
+
+Example:
+
+* Selecting 5 bookings allows sending an email or SMS to all selected customers at once.
+
+***
+
+#### 2. Bulk Action Menu
+
+Above the booking table, the following actions are available:
+
+#### Send Email
+
+Allows sending an email to all selected bookings.
+
+Typical use cases:
+
+* Sending travel documents
+* Sending booking confirmations
+* Sending reminders or updates
+
+***
+
+#### Send SMS
+
+Allows sending SMS notifications to customers associated with the selected bookings.
+
+Typical use cases:
+
+* Travel reminders
+* Flight updates
+* Urgent notifications
+
+{% hint style="info" %}
+If multiple sms are queued with the same message and destination, only the first one is sent. The others are marked as sent, but remain queued.
+{% endhint %}
+
 ### Field Reference
 
 #### Filter Fields

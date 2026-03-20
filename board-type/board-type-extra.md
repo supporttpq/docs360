@@ -17,7 +17,7 @@ These can be configured by accessing the Extras Setup -> Extras. To be able to u
 
 * &#x20;Open the **Board Supplements** tab - `Board Type` and `Board Basis Filter` dropdown appear.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Select a **Board Type**. - The selected type appears with `Code` and `List name`.
 * **Board basis filter -** Filter is used on Board Supplements to specify which Board Basis should be on the Room for the Board Supplement to be available.  <br>
