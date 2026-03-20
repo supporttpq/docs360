@@ -34,8 +34,10 @@ Use this page when you need to:
 
 ### **Preconditions**
 
-* You must have access to the **Booking details** view and the **Extra Orders** tab.
+* You must have access to the **Booking details** view and the **Extra Orders** tab.(Admin or Guide user type)
 * At least one **extra order** or **service case** must exist for data to be shown.
+* At least one guide must be assigned to the resort on the booking.
+* The extra used for the extra order must have the resort on the booking assigned in the resource table.
 * Refund handling requires that transactions are processed through an integrated **payment system** and that your user has the required permissions.
 
 ***

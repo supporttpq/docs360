@@ -269,3 +269,142 @@ For these extras, the allotment total and calculation are also displayed on the 
 ### **One way usage**
 
 For ONE-WAY flights, another extra is required, as extras are not available for ONE-WAYS unless a specific action is taken, an action that will invalidate the extra for CHARTER flights.
+
+## Generic Allotment
+
+### Overview
+
+The **Generic allotment type** for Extras is used when availability is **not managed per specific date, departure, or resource**, but instead controlled at a more general level.
+
+It is a flexible configuration intended for Extras that do not require strict inventory tracking per instance.
+
+## Purpose
+
+The purpose of Generic Allotment is to:
+
+* Control **availability of extras**
+* Prevent **overbooking**
+* Manage **time-based capacity**
+* Support operational planning (e.g., transport, events, guides)
+
+### How to Create Generic Allotments
+
+**1. Create a Product**
+
+1. Go to **Extras Setup → Extras**.
+2. Create a new extra as usual.
+3.  In the **Allotment Type** field, select **Generic Allotment Type**. This enables the Generic Allotments Tab.&#x20;
+
+    <figure><img src="../../.gitbook/assets/image (723).png" alt=""><figcaption></figcaption></figure>
+
+
+4.  In the **Resources** tab, add as a resource, the resorts for which you want the defined extra to be used as an extra order.&#x20;
+
+    <figure><img src="../../.gitbook/assets/image (730).png" alt=""><figcaption></figcaption></figure>
+
+
+
+2. **Generic Allotment**
+
+The **Generic Allotment** page allows configuration of **availability per time slot**.
+
+Each row represents a **specific date and time**, with:
+
+* Total available capacity
+* Number of already booked units
+* Ability to block availability
+
+This ensures that bookings cannot exceed the defined capacity.
+
+<figure><img src="../../.gitbook/assets/image (724).png" alt=""><figcaption></figcaption></figure>
+
+### **Fields Explained**
+
+|                         |                                                                                                                                                                                                                                                                                                                                                                                                          |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Available months        | <p>List displayed on the left side containing months for which allotments exist.</p><p>Each item represents a <strong>month with configured time slots</strong>.</p>                                                                                                                                                                                                                                     |
+| Generate New Allotments | <p>Button used to <strong>generate allotment time slots</strong> for a selected period.</p><p>This typically opens a configuration where:</p><ul><li>Date range is defined</li><li>Time intervals are created</li><li>Default capacity is assigned</li></ul><p>This is the primary way to initialize allotment data.</p>                                                                                 |
+| DATE                    | <p>Displays the <strong>exact date and time</strong> of the allotment slot.</p><p>Example:</p><ul><li>01-09-2026 09:30</li><li>01-09-2026 10:00</li></ul><p>This defines when the extra (e.g., excursion or event) takes place.</p>                                                                                                                                                                      |
+| TOTAL ALLOTMENTS        | <p>Defines the <strong>maximum capacity</strong> for that specific time slot.</p><ul><li>Editable field</li><li>Represents total available units (e.g., seats, tickets)</li></ul><p>Example:</p><ul><li>Value: 30 → Maximum 30 allotments allowed for that time slot</li></ul><p>This value directly controls <strong>availability in bookings</strong>.</p>                                             |
+| BOOKED ALLOTMENTS       | <p>Displays the <strong>number of units already booked</strong> for that time slot.</p><ul><li>Automatically updated by the system</li><li>Not editable manually</li></ul><p>Example:</p><ul><li>Value: 0 → No bookings yet</li><li>Value: 15 → 15 units already reserved</li></ul><p>This field reflects <strong>real-time consumption</strong> of the allotment.</p>                                   |
+| Lock Icon (🔒)          | <p>Indicates that the <strong>booked allotments are blocked</strong></p><p>Meaning:</p><ul><li>Existing bookings cannot be modified in a way that violates the allotment</li><li>Prevents inconsistencies between bookings and availability</li></ul><p>This is a system-controlled indicator.</p>                                                                                                       |
+| Block                   | <p></p><p>Action link used to <strong>block the specific time slot</strong>.</p><p>When activated:</p><ul><li>The time slot becomes <strong>unavailable for booking</strong></li><li>No new bookings can be created for that slot</li><li>Existing bookings remain unchanged</li></ul><p>This is useful for:</p><ul><li>Operational closures</li><li>Maintenance</li><li>Supplier restrictions</li></ul> |
+
+**Daily Allotments**
+
+* **Frequency** – Number of days in the recurring availability pattern.
+* **Daily Frequency** – Defines when during the day bookings can be made:
+  * At specific fixed times, or
+  * Every _X_ minutes within a defined hourly range.
+* **Duration** – Total time span during which the product is available (01.03.2026 - 30.09.2026).
+* **Allotment** – Number of available items per slot (e.g., is set to 30 and frequency is 30 minutes).
+
+<figure><img src="../../.gitbook/assets/image (725).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (726).png" alt=""><figcaption></figcaption></figure>
+
+#### Weekly allotments <a href="#weekly-allotments" id="weekly-allotments"></a>
+
+The only change from **Daily allotments** is
+
+*   Frequency - this time it is in weeks and not days, with the additional selection of days of the week in which the product is available&#x20;
+
+    <figure><img src="../../.gitbook/assets/image (727).png" alt=""><figcaption></figcaption></figure>
+
+If **All Days** is checked, allotments are created for the entire week.
+
+* When a guest departs midweek, only the first valid day of the allotment will be shown in the Guest App. _(Example: if allotment is generated for the whole week and the departure is on Tuesday → only Tuesday’s slots appear.)_
+
+<figure><img src="../../.gitbook/assets/image (728).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (729).png" alt=""><figcaption></figcaption></figure>
+
+## Behavior and Logic
+
+### Capacity Control
+
+* Bookings consume allotment from **TOTAL ALLOTMENTS**
+* When **BOOKED ALLOTMENTS = TOTAL ALLOTMENTS**, the slot is fully booked
+* No further bookings are allowed
+
+### Editing Allotments
+
+* Increasing **TOTAL ALLOTMENTS** increases availability
+* Decreasing it below **BOOKED ALLOTMENTS** may cause conflicts and is typically restricted
+
+### Time-Based Allocation
+
+Each row is independent:
+
+* Different time slots can have different capacities
+* Allows fine control per departure or event time
+
+### Interaction with Bookings
+
+When a booking includes this extra:
+
+* The system checks available allotment for the selected **date and time**
+* If capacity exists → booking is allowed
+* If full → booking is blocked or alternative slot must be selected
+
+<figure><img src="../../.gitbook/assets/image (731).png" alt=""><figcaption><p>Book an Extra Order in the booking flow</p></figcaption></figure>
+
+## Example
+
+An excursion operates multiple times per day:
+
+* 09:30 → 30 seats
+* 10:00 → 30 seats
+* 10:30 → 30 seats
+
+If there are bookings that are at the destination on 01.09.2026 and there is an excursion that operates between 09.30 - 10.00, the first 30 people who buy this excursion will use the allotment of the extra and after that:
+
+* That slot becomes **fully booked**
+* Other slots remain available for the next intervals
+
+## Key Notes
+
+* Generic Allotment is used when availability is **not room-based**
+* It is essential for **time-slot-based services**
+* It ensures **operational control and prevents overbooking**
+* It works independently from hotel allotments but integrates with booking logic
