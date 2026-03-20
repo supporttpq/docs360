@@ -298,8 +298,13 @@ The purpose of Generic Allotment is to:
     <figure><img src="../../.gitbook/assets/image (723).png" alt=""><figcaption></figcaption></figure>
 
 
+4.  In the **Resources** tab, add as a resource, the resorts for which you want the defined extra to be used as an extra order.&#x20;
 
-**2.Generic Allotment**
+    <figure><img src="../../.gitbook/assets/image (730).png" alt=""><figcaption></figcaption></figure>
+
+
+
+2. **Generic Allotment**
 
 The **Generic Allotment** page allows configuration of **availability per time slot**.
 
@@ -381,6 +386,8 @@ When a booking includes this extra:
 * The system checks available allotment for the selected **date and time**
 * If capacity exists → booking is allowed
 * If full → booking is blocked or alternative slot must be selected
+
+<figure><img src="../../.gitbook/assets/image (731).png" alt=""><figcaption><p>Book an Extra Order in the booking flow</p></figcaption></figure>
 
 ## Example
 
