@@ -97,20 +97,68 @@ The **Create new price list** action can show different warnings:
 
 ### Price List Search <a href="#price-list-search" id="price-list-search"></a>
 
-The search helps to find prices based on brands, Transport, Hotel, Room and the departure date interval. To get results The most basic search you can get is by choosing All Brands and Transport but for the best performance, try to fill most of the fields. The list of transports from the drop-down list is filtered based on the brand selection.
+The **Price List Search** section allows users to filter, view, and bulk update pricing configurations across hotels, rooms, transports, and allotments.
 
-<figure><img src="../.gitbook/assets/image (291).png" alt=""><figcaption></figcaption></figure>
+This functionality is designed for high-volume price management, supporting granular filtering and batch operations.
 
-#### Top Section (Filters related to Dates and Transport):
+#### Overview
+
+Use this page to:
+
+* Filter price list entries based on multiple criteria
+* Perform bulk price updates
+* Maintain pricing consistency across large datasets
+
+<figure><img src="../.gitbook/assets/image (732).png" alt=""><figcaption></figcaption></figure>
+
+#### Search Filters
+
+The search panel provides multiple filters to narrow down the pricing scope.
 
 * **Date From/To Fields**: Set the date range for price list queries (format DD-MM-YYYY)
-* **Resorts Dropdown**: Select specific resorts to include in the price list
+
+{% hint style="info" %}
+When changing the **Brand**, the system preserves the selected **Date Interval** and **Arrival Interval** filters.
+{% endhint %}
+
+{% hint style="warning" %}
+Prices outside the selected interval will not be affected by bulk operations.
+{% endhint %}
+
+* **Resorts Dropdown**: Select specific resorts to include in the price list.
 * **Transports Dropdown**: Configure transport options with code format
+
+{% hint style="info" %}
+Only transports associated with the selected resort are displayed.
+
+Example: If resort BCN is selected, only transports linked to BCN will be available.
+{% endhint %}
+
+<figure><img src="../.gitbook/assets/image (733).png" alt=""><figcaption></figcaption></figure>
+
 * **Transport Type Dropdown**: Filter by transport categories
-* **Hotels Dropdown**: Select specific hotels
+* **Hotels Dropdown**: Select specific hotels. Allows selecting one or multiple hotels.
 * **Allotment Type Dropdown**: Select the allotment type
 * **Room Dropdown**: Select a specific room type
+
+{% hint style="info" %}
+When **All hotels** is selected, it is possible to select multiple room types across hotels.
+
+This enables bulk price updates across a broader selection.
+{% endhint %}
+
+<figure><img src="../.gitbook/assets/image (734).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="warning" %}
+Room availability depends on the selected hotels and date interval.
+{% endhint %}
+
 * **Fix Quotas Dropdown**: Select a transport fix quota
+
+{% hint style="info" %}
+Only **Fix Quotas** within the selected date interval are available.
+{% endhint %}
+
 * **Display Names Checkbox**: Toggle to show hotel names in results
 * **Display Checkbox**: Toggle to show the price list results
 * **Clear Button**: Reset all filter selections (shows "1" indicator, possibly indicating active filters)
@@ -153,8 +201,9 @@ The system displays all available TourpaqDK **→ FLY-RO transport → Hotel Mar
   * If a specific brand is chosen, only transports assigned to that brand will appear.
   * Transports are assigned to brands via **Transport → Brands Tab | Brands Tab → Edit Transport**.
   * Transports marked as **hidden** will not appear in the drop-down list. Transport visibility can be managed in **Transport → General Tab → General**.
+  * If a specific resort is chosen, only transports associated with the selected resort are displayed.
 * **Transport Selection Effects:**
-  * Once a transport is selected, the **Fix Quota** field is automatically populated in the multiple selection view.
+  * Once a transport is selected, the **Fix Quota** field is automatically populated within the selected date interval.
   * The **Hotels** drop-down is filtered to display only hotels associated with the selected transport’s price list.
   * Hotels marked as **hidden** will not appear. Visibility can be configured in **Hotel → Hotel Tab → General Tab**.
 * **Hotel Selection Effects:**
@@ -193,6 +242,37 @@ Column titles are abbreviated to keep the table tidy. Most fields include **tool
 | **P4**        | Price for Interval 4.                                                                                                                                                                                                                                                                                                                            |
 | **CH1**       | Child Price Interval 1 – Price for a child occupying an extra bed. Calculated using an extra bed discount applied to the Grundprins (base price).                                                                                                                                                                                                |
 | **Status**    | <p>Guarantee Availability of the PLTA (Transport + Hotel). Possible statuses:<br>- <strong>GREEN</strong> – Both transport and hotel have guaranteed allotments.<br>- <strong>YELLOW</strong> – One of transport or hotel lacks Guarantee Availability.<br>- <strong>PINK</strong> – Neither transport nor hotel has Guarantee Availability.</p> |
+
+### Change Price Functionality <a href="#price-list-history" id="price-list-history"></a>
+
+<figure><img src="../.gitbook/assets/image (735).png" alt=""><figcaption></figcaption></figure>
+
+The Change Price tool allows bulk modification of pricing values.
+
+#### Operation Types
+
+Supported operations:
+
+* **+** Increase value
+* **-** Decrease value
+* **=** Replace value
+
+#### Negative Value Support
+
+{% hint style="info" %}
+When using the **"=" (Replace)** operation, the system accepts **negative values**.
+{% endhint %}
+
+{% hint style="warning" %}
+Negative values will overwrite existing prices. Use carefully, especially in live environments.
+{% endhint %}
+
+**Use cases:**
+
+* Applying corrections in PM1
+* Setting negative pricing for adjustments or special scenarios
+
+<figure><img src="../.gitbook/assets/image (736).png" alt=""><figcaption></figcaption></figure>
 
 ### Price List History <a href="#price-list-history" id="price-list-history"></a>
 
