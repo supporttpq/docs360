@@ -224,6 +224,7 @@
 * [Close Out](close-out/README.md)
   * [Create / Edit rule](close-out/create-edit-rule.md)
   * [Enable / Disable rule](close-out/enable-disable-rule.md)
+* [Releases/Stop Sales Log](releases-stop-sales-log.md)
 * [Layout Elements](layout-elements.md)
 * [Hotel Beds](hotel-beds/README.md)
   * [Hotel Bed Banks - FAQ](hotel-beds/hotel-bed-banks-faq.md)
