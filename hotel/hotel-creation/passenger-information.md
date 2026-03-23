@@ -46,7 +46,7 @@ This table displays all configured passenger information entries for the selecte
 | **Save / Update** | Saves changes to the selected brand and transport.                                                                              |
 
 {% hint style="info" %}
-### Passenger information allows overlapping periods
+#### Passenger information allows overlapping periods
 
 Ex: If fixed info is made for the entire season (01.05.26 - 31.08.26) - Reception closed at night, and another info is made for a short period (01.05.26 - 30.06.26) - Pool closed for May - June. Even if the periods overlapping, the system will allow and displayed both on the ticket.
 {% endhint %}

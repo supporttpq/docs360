@@ -169,7 +169,7 @@ For 2FA behavior and required user data fields, see:
 
 {% stepper %}
 {% step %}
-### 1) Choose role and access scope
+#### 1) Choose role and access scope
 
 Define the minimum access level:
 
@@ -181,7 +181,7 @@ Reference: [Users and Roles in Tourpaq](./).
 {% endstep %}
 
 {% step %}
-### 2) Open Users Management
+#### 2) Open Users Management
 
 Open:
 
@@ -191,7 +191,7 @@ Locate the Create action.
 {% endstep %}
 
 {% step %}
-### 3) Create the user profile
+#### 3) Create the user profile
 
 Enter identity and login fields:
 
@@ -215,7 +215,7 @@ Save the user.
 {% endstep %}
 
 {% step %}
-### 4) Apply GDPR access limitations (when required)
+#### 4) Apply GDPR access limitations (when required)
 
 If the role should not expose personal data, apply limited visibility settings.
 
@@ -223,7 +223,7 @@ Reference: [User limited view](user-limited-view.md).
 {% endstep %}
 
 {% step %}
-### 5) Configure password policy (when required)
+#### 5) Configure password policy (when required)
 
 Enable password expiration on the user profile:
 
@@ -235,7 +235,7 @@ Reference: [Password expiration](password-expiration.md).
 {% endstep %}
 
 {% step %}
-### 6) Configure 2FA (when required)
+#### 6) Configure 2FA (when required)
 
 If 2FA is enabled for the company, ensure the user profile contains valid contact data.
 
@@ -243,7 +243,7 @@ Reference: [2 Factor Authentication](../../2-factor-authentication.md).
 {% endstep %}
 
 {% step %}
-### 7) Verify first login and adjust access
+#### 7) Verify first login and adjust access
 
 After first login, verify:
 

@@ -82,7 +82,7 @@ Use layouts to design the aircraft interior and seat positions.
 
 {% stepper %}
 {% step %}
-### Create the layout
+#### Create the layout
 
 Open **Transport Layouts** and click **Create**.
 
@@ -90,7 +90,7 @@ Open **Transport Layouts** and click **Create**.
 {% endstep %}
 
 {% step %}
-### Add a section
+#### Add a section
 
 Name the section and select a **seat list**.
 
@@ -100,7 +100,7 @@ You can also copy an existing layout.
 {% endstep %}
 
 {% step %}
-### Place seats and elements
+#### Place seats and elements
 
 Use **Place automatically** to generate a standard section.\
 Then tweak it in the editor.
@@ -111,7 +111,7 @@ Drag and drop elements to reposition them.
 {% endstep %}
 
 {% step %}
-### Adjust aircraft shape (nose/tail)
+#### Adjust aircraft shape (nose/tail)
 
 The aircraft width is defined by the nose and tail widths.\
 Keep nose and tail at the same width and roughly aligned on the same axis.

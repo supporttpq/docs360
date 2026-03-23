@@ -71,7 +71,7 @@ What happens after scanning (for example, whether it opens a page, validates, or
 
 {% stepper %}
 {% step %}
-### 1. Enable QR codes on vouchers
+#### 1. Enable QR codes on vouchers
 
 1. Go to **System Setup**.
 2. Enable **Show QR-code in vouchers**.
@@ -82,7 +82,7 @@ What happens after scanning (for example, whether it opens a page, validates, or
 {% endstep %}
 
 {% step %}
-### 2. Ensure vouchers will be generated
+#### 2. Ensure vouchers will be generated
 
 Confirm that the booking and product setup meet the voucher generation rules (status OK, fully paid, Issue Voucher + Supplier, and correct timing).
 
@@ -90,7 +90,7 @@ See: [Vouchers](../../setup/vouchers.md)
 {% endstep %}
 
 {% step %}
-### 3. Verify on a voucher
+#### 3. Verify on a voucher
 
 Once vouchers are generated, open/download a voucher and confirm the QR code is visible.
 

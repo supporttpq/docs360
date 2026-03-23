@@ -52,7 +52,7 @@ Terminology:
 
 {% stepper %}
 {% step %}
-### 1. Open the booking
+#### 1. Open the booking
 
 Open an existing booking (or create one).
 
@@ -62,7 +62,7 @@ Make sure the booking is in **edit** mode.
 {% endstep %}
 
 {% step %}
-### 2. Go to the Travel plan
+#### 2. Go to the Travel plan
 
 In **Details**, open the **Travel plan** tab.
 
@@ -74,7 +74,7 @@ Each line is tied to a **passenger + flight segment**.
 {% endstep %}
 
 {% step %}
-### 3. Set No-show on the specific line
+#### 3. Set No-show on the specific line
 
 Tick **No-show** for the passenger on the outbound or homebound line you need.
 
@@ -86,7 +86,7 @@ You do not need to open the passenger screen first.
 {% endstep %}
 
 {% step %}
-### 4. Verify it stays set when you only edit other booking data
+#### 4. Verify it stays set when you only edit other booking data
 
 Edit the booking, but keep the passenger’s transport unchanged.
 
@@ -96,7 +96,7 @@ The No-show checkbox stays set.
 {% endstep %}
 
 {% step %}
-### 5. Know when No-show is reset
+#### 5. Know when No-show is reset
 
 If you change the passenger’s transport data, No-show is cleared.
 

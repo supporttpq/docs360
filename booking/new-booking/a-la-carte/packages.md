@@ -32,13 +32,13 @@ Go to **Price List → Packages Generator**.
 
 {% stepper %}
 {% step %}
-### 1. Open Packages Generator
+#### 1. Open Packages Generator
 
 Navigate to **Price List → Packages Generator**.
 {% endstep %}
 
 {% step %}
-### 2. Create a new rule
+#### 2. Create a new rule
 
 Click **Create** and fill in:
 
@@ -54,7 +54,7 @@ Click **Create** and fill in:
 {% endstep %}
 
 {% step %}
-### 3. Save the rule
+#### 3. Save the rule
 
 Click **Save**.
 

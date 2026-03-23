@@ -48,13 +48,13 @@ Before configuring Extra Beds Cost, ensure that:
 
 {% stepper %}
 {% step %}
-### Create the rule header
+#### Create the rule header
 
 Pick **Category**, set **Age – From/To**, and set **Rank – From/To**.
 {% endstep %}
 
 {% step %}
-### Choose calculation type
+#### Choose calculation type
 
 Decide if the cost is **Per Pax/Day**.
 
@@ -64,13 +64,13 @@ Enable **% (Percentage)** if it should follow the room price.
 {% endstep %}
 
 {% step %}
-### Scope it to rooms
+#### Scope it to rooms
 
 Select a specific **Room**, or choose **All rooms**.
 {% endstep %}
 
 {% step %}
-### Enter costs per period
+#### Enter costs per period
 
 Fill the **Cost** column for each **Period ID** row you want active.
 {% endstep %}

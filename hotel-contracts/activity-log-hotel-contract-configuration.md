@@ -34,7 +34,7 @@ Before accessing the Activity Log:
 
 {% stepper %}
 {% step %}
-### Open the Activity Log
+#### Open the Activity Log
 
 1. Go to the **Hotel Contract** module.
 2. Open the contract you want to review.
@@ -42,7 +42,7 @@ Before accessing the Activity Log:
 {% endstep %}
 
 {% step %}
-### Filter and display results
+#### Filter and display results
 
 1. Select the **date period** (top left).
 2. Optional: select a specific **user** from the dropdown.

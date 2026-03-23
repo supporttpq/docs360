@@ -50,7 +50,7 @@ That normally means you use **separate price lists**.
 
 {% stepper %}
 {% step %}
-### 1. Configure the transport (interval + timetable)
+#### 1. Configure the transport (interval + timetable)
 
 Set up the transport as usual.
 
@@ -62,7 +62,7 @@ Verify the transport supports one-way booking by having one-way allotment fields
 {% endstep %}
 
 {% step %}
-### 2. Create and generate Fix quota with OW OUT / OW HOME allotments
+#### 2. Create and generate Fix quota with OW OUT / OW HOME allotments
 
 In **Fix quota**, define:
 
@@ -75,7 +75,7 @@ Then generate the departures.
 {% endstep %}
 
 {% step %}
-### 3. Create the One Way Hotel (fictive hotel)
+#### 3. Create the One Way Hotel (fictive hotel)
 
 Create a dedicated hotel used only for one-way price lists.
 
@@ -88,7 +88,7 @@ Rules:
 {% endstep %}
 
 {% step %}
-### 4. Assign a room type to the One Way Hotel
+#### 4. Assign a room type to the One Way Hotel
 
 The One Way Hotel must have at least one room type.
 
@@ -96,7 +96,7 @@ The One Way Hotel must have at least one room type.
 {% endstep %}
 
 {% step %}
-### 5. Create a pricelist between transport and One Way Hotel
+#### 5. Create a pricelist between transport and One Way Hotel
 
 From **Create/Copy pricelist**, create a price list between:
 
@@ -109,7 +109,7 @@ If you need general pricelist context, see [Pricelist Setup](../../price-list/pr
 {% endstep %}
 
 {% step %}
-### 6. Set one-way prices (POWO/POWH and related fields)
+#### 6. Set one-way prices (POWO/POWH and related fields)
 
 Set pricing values for one-way out vs one-way home in the pricelist:
 

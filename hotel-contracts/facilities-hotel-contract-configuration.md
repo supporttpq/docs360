@@ -8,7 +8,7 @@ Facilities are typically used for on-screen display and supplier/customer-facing
 
 ### Screenshot
 
-<figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -27,19 +27,19 @@ You can only select **one template per contract**.
 
 {% stepper %}
 {% step %}
-### Choose a facility template
+#### Choose a facility template
 
 Pick the template that matches the hotel and contract scope.
 {% endstep %}
 
 {% step %}
-### Review the facilities
+#### Review the facilities
 
 Verify that key facilities are included (for example Wi‑Fi, pool, parking).
 {% endstep %}
 
 {% step %}
-### Save the contract
+#### Save the contract
 
 Save after changing the template. This applies the facilities to the contract.
 {% endstep %}

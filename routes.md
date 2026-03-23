@@ -61,7 +61,7 @@ This is the place where routes are assigned to the transports.
 
 Multiple transports can follow a specific route, and all the bookings made for these transports can or must choose a pickup point for each passenger.
 
-The check box "Pickup point required", when checked, does not allow the booking to be saved if a pickup point is not selected for each passenger.&#x20;
+The check box "Pickup point required", when checked, does not allow the booking to be saved if a pickup point is not selected for each passenger.
 
 <figure><img src=".gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -95,4 +95,4 @@ To activate this feature, you have to check the Destination Route from Transport
 
 Also, after you have updated the route with this change, in the Pickup points tab, you will find a new column named Hotels. The main purpose of this new column is to define what hotels are included in a pickup point.
 
-<figure><img src=".gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>

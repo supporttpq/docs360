@@ -5,11 +5,11 @@ description: >-
   be up and running in no time.
 noIndex: true
 icon: rocket-launch
-cover: .gitbook/assets/Tourpaq Logo (1).jpg
+cover: .gitbook/assets/Tourpaq Logo (1) (1).jpg
 coverY: 0
 ---
 
-# GETTING STARTED WITH TOURPAQ
+# Getting Started with Tourpaq
 
 ### What's in this section?
 
@@ -24,6 +24,5 @@ coverY: 0
 ***
 
 {% hint style="info" %}
-**New to Tourpaq?** Start with page 1 and work through in order. It takes about 15 minutes and will save you a lot of confusion later.&#x20;
+**New to Tourpaq?** Start with page 1 and work through in order. It takes about 15 minutes and will save you a lot of confusion later.
 {% endhint %}
-

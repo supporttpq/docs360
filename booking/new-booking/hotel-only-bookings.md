@@ -37,7 +37,7 @@ But it does **not** represent an actual scheduled service:
 
 {% stepper %}
 {% step %}
-### 1. Create a car-type transport
+#### 1. Create a car-type transport
 
 Create a transport with **Transport mode/type = Car**.
 
@@ -47,7 +47,7 @@ See [Transport creation](../../transport/transport/transport-creation/) if you n
 {% endstep %}
 
 {% step %}
-### 2. Create Fix quota (allotment)
+#### 2. Create Fix quota (allotment)
 
 Create a **Fix quota** on the car transport.
 
@@ -55,7 +55,7 @@ This controls how many “hotel-only” bookings can be made per departure/check
 {% endstep %}
 
 {% step %}
-### 3. Create a pricelist between the car transport and the hotel
+#### 3. Create a pricelist between the car transport and the hotel
 
 Create a pricelist for:
 

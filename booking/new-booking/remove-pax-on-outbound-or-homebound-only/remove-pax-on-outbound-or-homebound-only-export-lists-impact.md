@@ -39,7 +39,7 @@ When you export lists that include passengers, the output should exclude passeng
 
 {% stepper %}
 {% step %}
-### 1) Create a test case
+#### 1) Create a test case
 
 Pick a booking with at least one passenger.
 
@@ -47,7 +47,7 @@ Set No-show outbound or homebound for that passenger.
 {% endstep %}
 
 {% step %}
-### 2) Export the relevant list
+#### 2) Export the relevant list
 
 Go to **Export → Lists**.
 
@@ -55,7 +55,7 @@ Pick the report type you want to validate (Passenger list, Transfer list, etc.).
 {% endstep %}
 
 {% step %}
-### 3) Verify the output
+#### 3) Verify the output
 
 Confirm that the passenger is excluded only on the direction where No-show is set.
 {% endstep %}

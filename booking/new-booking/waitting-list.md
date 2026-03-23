@@ -45,13 +45,13 @@ To enable waiting list behavior, mark the relevant price as a waitlist price.
 
 {% stepper %}
 {% step %}
-### 1. Open the relevant price list entry
+#### 1. Open the relevant price list entry
 
 Navigate to the price list entry for the departure where you want to allow waitlist bookings.
 {% endstep %}
 
 {% step %}
-### 2. Enable the **Waitlist (WL)** flag
+#### 2. Enable the **Waitlist (WL)** flag
 
 Check the **Waitlist (WL)** checkbox under **FLAGS**.
 

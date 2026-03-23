@@ -34,14 +34,14 @@ Per Room Per Stay is a **fixed cost per stay**. Tourpaq can still split the valu
 
 {% stepper %}
 {% step %}
-### Open the hotel
+#### Open the hotel
 
 1. Go to `Hotel → Hotels`.
 2. Select the relevant hotel.
 {% endstep %}
 
 {% step %}
-### Create the room cost rule
+#### Create the room cost rule
 
 1. Open **Room Costs**.
 2. Click **Create**.
@@ -56,14 +56,14 @@ When you select **Per Room Per Stay**, **Stay Days No** becomes available.
 {% endstep %}
 
 {% step %}
-### Create a booking that matches the rule
+#### Create a booking that matches the rule
 
 1. Create a test booking using the same hotel, room type, and stay dates.
 2. Confirm booking status is **OK**.
 {% endstep %}
 
 {% step %}
-### Verify the cost on the booking
+#### Verify the cost on the booking
 
 1. Open the booking.
 2. Go to **Profit**.
@@ -77,7 +77,7 @@ Verify:
 {% endstep %}
 
 {% step %}
-### Verify invoice preview values
+#### Verify invoice preview values
 
 In the invoice preview (hotel cost details):
 
@@ -86,7 +86,7 @@ In the invoice preview (hotel cost details):
 {% endstep %}
 
 {% step %}
-### Assign a creditor and re-check currency
+#### Assign a creditor and re-check currency
 
 1. Go back to the hotel details.
 2. Select a **Creditor** (the payee).

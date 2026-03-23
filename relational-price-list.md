@@ -92,7 +92,7 @@ The settings are saved using the **Save Relation PL** in the upper right corner.
 
 To see the prices, the base room will need prices first. The rest of the rooms will have their prices set in about 2 minutes from the moment the price list is saved.
 
-<figure><img src=".gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This is the result of the relation price list.
 

@@ -65,7 +65,7 @@ If you only need to check whether a ticket email was sent (and whether it failed
 
 {% stepper %}
 {% step %}
-### 1) Enter the booking number
+#### 1) Enter the booking number
 
 In **Booking No**, enter the booking number (booking reference).
 
@@ -74,7 +74,7 @@ In **Booking No**, enter the booking number (booking reference).
 {% endstep %}
 
 {% step %}
-### 2) Choose what you want to do
+#### 2) Choose what you want to do
 
 Select the options that match your task:
 
@@ -89,7 +89,7 @@ Select the options that match your task:
 {% endstep %}
 
 {% step %}
-### 3) Generate / send
+#### 3) Generate / send
 
 Complete the action using the page’s button(s). Tourpaq generates the ticket PDF from the booking’s current data.
 
@@ -129,13 +129,13 @@ Use **Reprint Per Transport** when you need to print or reprint tickets for **ma
 
 {% stepper %}
 {% step %}
-### 1) Open the tab
+#### 1) Open the tab
 
 Open **Reprint Per Transport** from the top of the **Print Tickets** page.
 {% endstep %}
 
 {% step %}
-### 2) Narrow down the bookings
+#### 2) Narrow down the bookings
 
 Set **Booking period** and/or **Departure period**.
 
@@ -143,13 +143,13 @@ Optionally choose **Length** if you want to limit the results further.
 {% endstep %}
 
 {% step %}
-### 3) Select the transport(s)
+#### 3) Select the transport(s)
 
 Click **Transports** and select the transport(s) you want to print tickets for.
 {% endstep %}
 
 {% step %}
-### 4) Print
+#### 4) Print
 
 Click **Print** to generate the tickets for all matching bookings.
 {% endstep %}

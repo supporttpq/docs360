@@ -51,7 +51,7 @@ After copying, always review the passenger details to ensure names, titles, birt
 
 {% stepper %}
 {% step %}
-### 1. Start a new booking
+#### 1. Start a new booking
 
 1. Go to **Booking → New Booking**.
 2. Insert the **number of passengers**.
@@ -62,7 +62,7 @@ At this point, you are ready to take allotment.
 {% endstep %}
 
 {% step %}
-### 2. Enter the booking number to copy from
+#### 2. Enter the booking number to copy from
 
 Before you click **Take Allotment**:
 
@@ -73,7 +73,7 @@ Before you click **Take Allotment**:
 {% endstep %}
 
 {% step %}
-### 3. Take allotment and confirm
+#### 3. Take allotment and confirm
 
 1. Click **Take Allotment**.
 2. When prompted with the confirmation message (for example: “Are you sure you want to copy the passengers?”), click **OK**.
@@ -82,7 +82,7 @@ The passengers from the original booking are now copied into the new booking.
 {% endstep %}
 
 {% step %}
-### 4. Save passengers and save the booking
+#### 4. Save passengers and save the booking
 
 1. Click **Save Passengers**.
 2. Click **Save Booking** to complete the booking.

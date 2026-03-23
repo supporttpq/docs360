@@ -40,7 +40,7 @@ Before using this screen, the following conditions must be met:
 
 {% stepper %}
 {% step %}
-### Start a new booking
+#### Start a new booking
 
 1. Click **New Booking**.
 2. Select a **Brand**.
@@ -51,7 +51,7 @@ The New Booking page is displayed.
 {% endstep %}
 
 {% step %}
-### Open Search
+#### Open Search
 
 In the **Passengers** section, click **Search**.
 
@@ -59,7 +59,7 @@ The Search page can be opened without filling in the number of passengers in the
 {% endstep %}
 
 {% step %}
-### Enter travel criteria (required)
+#### Enter travel criteria (required)
 
 Required inputs:
 
@@ -75,7 +75,7 @@ If something is missing, you will see validation warnings.
 {% endstep %}
 
 {% step %}
-### Run the search
+#### Run the search
 
 Fill the main fields (Adults, Departures, Arrivals, Date From/To), then click **Search**.
 
@@ -87,7 +87,7 @@ Flights and hotels load as two result grids.
 {% endstep %}
 
 {% step %}
-### Review flight results (top grid)
+#### Review flight results (top grid)
 
 You can sort all visible flight columns.
 
@@ -99,7 +99,7 @@ Common columns:
 
 Select a flight row to enable **Clear selected row**.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 Use **+ Filters** for flight filters.
 
@@ -107,7 +107,7 @@ Use **+ Filters** for flight filters.
 {% endstep %}
 
 {% step %}
-### Review hotel results (bottom grid)
+#### Review hotel results (bottom grid)
 
 Hotel rows show hotel, stay, availability, board, and prices.
 
@@ -126,7 +126,7 @@ Hover the eye icon to see **View details**.
 {% endstep %}
 
 {% step %}
-### Create the booking
+#### Create the booking
 
 Select a hotel row to show actions.
 

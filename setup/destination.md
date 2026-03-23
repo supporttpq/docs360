@@ -21,7 +21,7 @@ This keeps bookings, reporting, and availability logic aligned with the correct 
 
 {% stepper %}
 {% step %}
-### Fill in the core fields
+#### Fill in the core fields
 
 At minimum, fill in:
 
@@ -32,7 +32,7 @@ At minimum, fill in:
 {% endstep %}
 
 {% step %}
-### (Optional) Add geographic and web fields
+#### (Optional) Add geographic and web fields
 
 Use these when you need mapping, SEO, or integration support:
 
@@ -42,7 +42,7 @@ Use these when you need mapping, SEO, or integration support:
 {% endstep %}
 
 {% step %}
-### **Customizable Fields:**
+#### **Customizable Fields:**
 
 * **Default Name**
 * **List Name**
@@ -51,7 +51,7 @@ Use these when you need mapping, SEO, or integration support:
 {% endstep %}
 
 {% step %}
-### Save
+#### Save
 
 Click **Save** to create the destination.
 {% endstep %}
@@ -149,10 +149,10 @@ The list will display all entries configured for the selected destination.
 In the provided example:
 
 * The destination **CHQ** has one passenger information entry titled **Dest Errata Def**.
-* It applies to stays from **28-10-2025** to **28-10-2026** and to stays from **01-02-2026** to **28-02-2026**.&#x20;
+* It applies to stays from **28-10-2025** to **28-10-2026** and to stays from **01-02-2026** to **28-02-2026**.
 
 {% hint style="info" %}
-#### Passenger information allows overlapping periods <a href="#passenger-information-allows-overlapping-periods" id="passenger-information-allows-overlapping-periods"></a>
+**Passenger information allows overlapping periods**
 
 Ex: If fixed info is made for the entire season (28.10.25 - 28.10.26) - Dest errata Def, and another info is made for a short period (01.02.26 - 28.02.26) - Destination passenger information overlap period. Even if the periods overlapping, the system will allow and displayed both on the ticket.
 {% endhint %}

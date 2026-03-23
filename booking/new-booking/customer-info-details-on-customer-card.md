@@ -50,7 +50,7 @@ Be careful with what you store in the **Details** field. Follow your organizatio
 
 {% stepper %}
 {% step %}
-### 1. Enable the feature
+#### 1. Enable the feature
 
 1. Go to **System Setup → Settings**.
 2. Enable **Show details of customer**.
@@ -60,14 +60,14 @@ Be careful with what you store in the **Details** field. Follow your organizatio
 {% endstep %}
 
 {% step %}
-### 2. Open a booking and identify the customer
+#### 2. Open a booking and identify the customer
 
 1. Go to **Booking → New Booking** (or open an existing booking).
 2. Select the customer (for example by entering the phone number, depending on your workflow).
 {% endstep %}
 
 {% step %}
-### 3. Edit the customer card details
+#### 3. Edit the customer card details
 
 1. On the customer card, click **Edit**.
 2. Enter/update the **Details** content.
@@ -76,7 +76,7 @@ Be careful with what you store in the **Details** field. Follow your organizatio
 {% endstep %}
 
 {% step %}
-### 4. Save and verify
+#### 4. Save and verify
 
 1. Click **Save** on the booking.
 2. Re-open the booking (or open a new booking for the same customer) and confirm the Details are shown.

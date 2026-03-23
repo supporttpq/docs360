@@ -125,7 +125,7 @@ This section provides comprehensive descriptions of all fields available in the 
 * **Field Type:** Text input (phone number format)
 * **Mandatory:** Yes
 * **Description:** Primary customer contact number used for customer identification and communication. The system searches existing customers by mobile number. If no match is found, a new customer record is created.
-* **Format Requirements:** Accepts international format with country code prefix.&#x20;
+* **Format Requirements:** Accepts international format with country code prefix.
 * **System Behavior:** On blur, the system queries the Customer database. If a match is found, customer details auto-populate. If no match exists, the interface enables creation of a new customer record.
 * **Related Functionality:** Links to Customer Management module. Triggers customer history lookup. Affects SMS notification delivery and customer communication preferences.
 
@@ -170,7 +170,7 @@ This section provides comprehensive descriptions of all fields available in the 
 **Adults**
 
 * **Field Type:** Numeric input spinner
-* **Mandatory:** Yes&#x20;
+* **Mandatory:** Yes
 * **Description:** Number of adult passengers (typically age 12+, exact threshold defined in Brand configuration). Determines pricing calculation, allotment consumption, and passenger grid rows.
 * **Value Range:** Minimum 1, Maximum defined by system configuration (typically 99).
 * **System Behavior:** Changing this value recalculates pricing, updates passenger grid rows, and validates against available allotment. Adult count affects room allocation logic and transport seat assignment.
@@ -350,7 +350,7 @@ This section provides comprehensive descriptions of all fields available in the 
 **ALI 1, ALI 2, ALI 3, ALI 4 Columns**
 
 * **Field Type:** Numeric display
-* **Mandatory:** Display & selector&#x20;
+* **Mandatory:** Display & selector
 * **Description:** Allotment capacity per allotment group. Shows available seats/capacity for up to four different allotment categories.
 * **System Behavior:** Displays current available allotment from Allotment Management system. Values decrease as bookings consume inventory.
 * **Related Functionality:** Links to Allotment Groups configuration. Real-time inventory display updated as bookings are created.
@@ -881,7 +881,7 @@ This part covers the complete workflow for creating a typical package booking wi
 **Step 3: Enter Customer Details**
 
 1. Enter the customer's mobile number in the **Mobile Number** field
-2.  Press Tab or click outside the field to trigger customer lookup&#x20;
+2.  Press Tab or click outside the field to trigger customer lookup
 
     <figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 3. If customer exists:
@@ -911,8 +911,6 @@ Then:
 
     <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-
-
 5. Verify all mandatory fields are completed (indicated by system validation)
 
 ***
@@ -933,23 +931,23 @@ Then:
 **Step 5: Search and Select Transport**
 
 1. Locate the Transport section in the booking interface
-2.  Click the **Edit** button in the Transport section&#x20;
+2.  Click the **Edit** button in the Transport section
 
     <figure><img src="../../../.gitbook/assets/image (514).png" alt=""><figcaption></figcaption></figure>
 3. The Select Transport dialog opens
-4. Configure search filters:&#x20;
+4. Configure search filters:
 
-&#x20;            a. Set **From** date by clicking the date picker and selecting the earliest acceptable departure date&#x20;
+a. Set **From** date by clicking the date picker and selecting the earliest acceptable departure date
 
-&#x20;            b. Set **To** date by clicking the date picker and selecting the latest acceptable departure date
+b. Set **To** date by clicking the date picker and selecting the latest acceptable departure date
 
-&#x20;            c. Optional: Select **Departure Gateway** from dropdown to filter by origin airport&#x20;
+c. Optional: Select **Departure Gateway** from dropdown to filter by origin airport
 
-&#x20;            d. Optional: Select **Arrival Gateway** from dropdown to filter by destination airport&#x20;
+d. Optional: Select **Arrival Gateway** from dropdown to filter by destination airport
 
-&#x20;            e. Optional: Enter **Transport code** to search for specific transport&#x20;
+e. Optional: Enter **Transport code** to search for specific transport
 
-&#x20;            f. Optional: Check **Search waitlist also** to include sold-out transports
+f. Optional: Check **Search waitlist also** to include sold-out transports
 
 5. Click the **Search** button to execute the search
 6. Review search results in the transport list table:
@@ -957,15 +955,15 @@ Then:
 * Check **Date** column for departure date
 * Review **ALI 1-4** columns for available allotment
 * Check **Status** column color indicator for availability level
-* Review **Flight Number** if airline transport&#x20;
+* Review **Flight Number** if airline transport
 * Verify **Stop Sale** column shows no stop sale indicator
 
-7.  Select the desired transport by clicking the **Select** button in the appropriate row&#x20;
+7.  Select the desired transport by clicking the **Select** button in the appropriate row
 
     <figure><img src="../../../.gitbook/assets/image (516).png" alt=""><figcaption></figcaption></figure>
 8. The Select Transport dialog closes
 9. Transport details populate in the Transport section
-10. Set the **Trip Interval** (stay duration in days) in the field provided&#x20;
+10. Set the **Trip Interval** (stay duration in days) in the field provided
 
     <figure><img src="../../../.gitbook/assets/image (517).png" alt=""><figcaption></figcaption></figure>
 11. System calculates return date based on departure + interval
@@ -976,7 +974,7 @@ Then:
 
 1. Locate the Hotel section below Transport
 2. Click the **Select Hotel** button
-3.  The Select Hotel dialog opens&#x20;
+3.  The Select Hotel dialog opens
 
     <figure><img src="../../../.gitbook/assets/image (511).png" alt=""><figcaption></figcaption></figure>
 4.  Configure search filters:
@@ -1008,7 +1006,7 @@ Then:
 * **D** for Discount Price
 * **G** for Group Price
 
-7.  Click the **Select** button to choose the hotel/room combination&#x20;
+7.  Click the **Select** button to choose the hotel/room combination
 
     <figure><img src="../../../.gitbook/assets/image (512).png" alt=""><figcaption></figcaption></figure>
 8. The Select Hotel dialog closes
@@ -1018,7 +1016,7 @@ Then:
 
 1. Review selected Transport and Hotel details for accuracy
 2. Locate the **Take Allotment** button
-3.  Click the **Take Allotment** button&#x20;
+3.  Click the **Take Allotment** button
 
     <figure><img src="../../../.gitbook/assets/image (513).png" alt=""><figcaption></figcaption></figure>
 4. System performs the following operations:
@@ -1030,12 +1028,12 @@ Then:
 * Calculates total booking price
 * Updates **Total Amount** in Booking Totals panel
 
-5. Verify Total Amount displays in the Booking Totals panel&#x20;
+5. Verify Total Amount displays in the Booking Totals panel
 6. The passenger information grid becomes active for editing
 
 ***
 
-**Step 8: Enter Passenger Information**&#x20;
+**Step 8: Enter Passenger Information**
 
 <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -1056,13 +1054,13 @@ c. Repeat for each Extras Category as needed
 
 d. Optional: Use yellow "C" icon to copy extras to all eligible passengers
 
-7. Optional: Add Discounts/Supplements:&#x20;
+7. Optional: Add Discounts/Supplements:
 
 a. Click **Show/Hide Discount/Supplements** button
 
-b. Click **Add Discount/Supplement** button&#x20;
+b. Click **Add Discount/Supplement** button
 
-c. Select applicable discounts or supplements from dialog&#x20;
+c. Select applicable discounts or supplements from dialog
 
 d. Click OK to apply selections
 
@@ -1163,7 +1161,7 @@ The **Total Profit** is displayed when expanding the green area that shows the T
 
 * Checks all mandatory fields are completed
 * Validates passenger data meets requirements
-* Confirms allotment is still available&#x20;
+* Confirms allotment is still available
 
 5. If validation succeeds:
 
@@ -1211,9 +1209,9 @@ This procedure describes how to remove a passenger from an existing booking with
 <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Locate the **Cancel passenger or booking** button in the bottom-right corner of the Passengers section
-2.  Click the **Cancel passenger or booking** button&#x20;
+2.  Click the **Cancel passenger or booking** button
 
-    <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3. Cancellation dialog appears with options
 
 **Step 4: Choose Cancellation Type**
@@ -1226,7 +1224,7 @@ This procedure describes how to remove a passenger from an existing booking with
 <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Select **Cancel Passenger** option
-3.  System displays cancellation confirmation dialog&#x20;
+3.  System displays cancellation confirmation dialog
 
     <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -1240,11 +1238,11 @@ This procedure describes how to remove a passenger from an existing booking with
 * Current booking value
 * Applicable cancellation fee
 
-2. If cancellation insurance is paid:&#x20;
+2. If cancellation insurance is paid:
 
-a. System prompts: "Does cancellation insurance cover this cancellation?"&#x20;
+a. System prompts: "Does cancellation insurance cover this cancellation?"
 
-b. Select **Cover** if insurance will cover the cancellation fee&#x20;
+b. Select **Cover** if insurance will cover the cancellation fee
 
 c. Select **Does not cover** if insurance does not apply
 
@@ -1254,7 +1252,7 @@ c. Select **Does not cover** if insurance does not apply
 * Cancellation rules configured for the Brand
 * Insurance coverage selection
 
-4. Review calculated cancellation fee amount&#x20;
+4. Review calculated cancellation fee amount
 
 **Step 6: Confirm Cancellation**
 
@@ -1269,7 +1267,7 @@ c. Select **Does not cover** if insurance does not apply
 * Updates booking history log
 
 4. Cancellation dialog closes
-5.  Passenger grid updates showing cancelled passenger with strikethrough or cancelled indicator&#x20;
+5.  Passenger grid updates showing cancelled passenger with strikethrough or cancelled indicator
 
     <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -1310,13 +1308,13 @@ Allotment is NOT automatically released
 
 **Step 9: Adjust Cancellation Fee (Optional)**
 
-1. If manual adjustment of cancellation fee is required:&#x20;
+1. If manual adjustment of cancellation fee is required:
 
-a. Click **Edit Passenger** button for the cancelled passenger row&#x20;
+a. Click **Edit Passenger** button for the cancelled passenger row
 
-b. Locate the **Total per passenger** field&#x20;
+b. Locate the **Total per passenger** field
 
-c. Enter the corrected cancellation fee amount&#x20;
+c. Enter the corrected cancellation fee amount
 
 d. Click **Save Passenger**
 

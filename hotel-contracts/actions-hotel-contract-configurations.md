@@ -49,19 +49,19 @@ Use this tab to reimport selected sections. Only the selected sections are updat
 
 {% stepper %}
 {% step %}
-### Select sections
+#### Select sections
 
 Tick the sections you want to refresh.
 {% endstep %}
 
 {% step %}
-### Start the reimport
+#### Start the reimport
 
 Click **Reimport Hotel Contract**.
 {% endstep %}
 
 {% step %}
-### Verify the result
+#### Verify the result
 
 Check the relevant tabs after the reimport. Focus on **Rooms**, **Periods**, and **Costs**.
 {% endstep %}

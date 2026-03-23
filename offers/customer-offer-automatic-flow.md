@@ -81,7 +81,7 @@ You may see these as checkboxes in the Brand setup and/or when working with the 
 
 {% stepper %}
 {% step %}
-### 1) Configure the Brand reminder settings
+#### 1) Configure the Brand reminder settings
 
 In **Brand → Select Offer**:
 
@@ -91,7 +91,7 @@ In **Brand → Select Offer**:
 {% endstep %}
 
 {% step %}
-### 2) Create and send the initial offer
+#### 2) Create and send the initial offer
 
 Create an offer and send it to the customer.
 
@@ -99,7 +99,7 @@ If you need help creating an offer, see [Create new offer](create-new-offer.md).
 {% endstep %}
 
 {% step %}
-### 3) Enable scheduled reminders (email and/or SMS)
+#### 3) Enable scheduled reminders (email and/or SMS)
 
 On the offer, enable:
 
@@ -110,7 +110,7 @@ This schedules the reminders according to the days you configured for the Brand.
 {% endstep %}
 
 {% step %}
-### 4) Verify reminders in Email History
+#### 4) Verify reminders in Email History
 
 Open **Email History** to confirm which reminders are queued/sent.
 {% endstep %}

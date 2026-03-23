@@ -36,7 +36,7 @@ Tourpaq typically uses these values for:
 
 {% stepper %}
 {% step %}
-### Update pax averages for a year
+#### Update pax averages for a year
 
 1. Select the **Year value** you want to edit.
 2. Update **Pax average** per month.
@@ -44,7 +44,7 @@ Tourpaq typically uses these values for:
 {% endstep %}
 
 {% step %}
-### Use decimals for more accuracy (optional)
+#### Use decimals for more accuracy (optional)
 
 If your business tracks fractional averages, use decimals (for example, `2.35`).
 {% endstep %}

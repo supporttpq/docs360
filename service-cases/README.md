@@ -17,7 +17,7 @@ To provide a structured and efficient way of managing customer feedback and comp
 * Tracking the progress and resolution of each service case.
 * Generating statistics and exports for performance evaluation.
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 #### **Benefits**
 
@@ -77,4 +77,3 @@ By default, the system displays service cases for **departures within the curren
 At the bottom of the overview, a **Totals** section displays summary statistics related to the listed results (e.g., total number of cases, average resolution time).
 
 You can also export the full result list by clicking the **Export** button to download it as a **CSV file** for reporting or analysis.
-

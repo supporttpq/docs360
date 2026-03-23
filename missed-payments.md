@@ -88,19 +88,19 @@ The **ACTIONS** column contains icons you can use to manage a payment entry:
 
 {% stepper %}
 {% step %}
-### 1) Find the payment entry
+#### 1) Find the payment entry
 
 Use **Agency**, **Payment Method**, and **Payment Start / Payment End** to narrow the list.
 {% endstep %}
 
 {% step %}
-### 2) Review the payment details
+#### 2) Review the payment details
 
 Check fields like **Payment No**, **Transaction Code**, **Status Code**, **Payment Status**, **Booking ID**, and **Reason**.
 {% endstep %}
 
 {% step %}
-### 3) Choose the next action
+#### 3) Choose the next action
 
 Use the icons in **ACTIONS** to retry, move, view offers, or hide the entry.
 {% endstep %}

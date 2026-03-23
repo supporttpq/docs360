@@ -60,7 +60,7 @@ On the **Passenger Information** tab you’ll typically see:
 
 {% stepper %}
 {% step %}
-### Open the destination
+#### Open the destination
 
 1. Go to **Setup → Destinations**.
 2. Click the destination you want to configure.
@@ -69,13 +69,13 @@ You are now on the destination edit page.
 {% endstep %}
 
 {% step %}
-### Go to Passenger Information
+#### Go to Passenger Information
 
 Open the **Passenger Information** tab to view existing entries.
 {% endstep %}
 
 {% step %}
-### Click Create
+#### Click Create
 
 Click **Create** to add a new entry.
 
@@ -83,23 +83,23 @@ A form opens with **Save** and **Cancel**.
 {% endstep %}
 
 {% step %}
-### Fill in the rule fields
+#### Fill in the rule fields
 
-#### Travel period (required)
+**Travel period (required)**
 
 * **From**: start date of the period where the message applies
 * **To**: end date of the period where the message applies
 
-#### Booking date period (optional)
+**Booking date period (optional)**
 
 * **Booking date from**: only show/apply the message for bookings created on/after this date
 * **Booking date to**: only show/apply the message for bookings created on/before this date
 
-#### Message text
+**Message text**
 
 * **Information for the customer on ticket**: the text shown on ticket/WB/booking screens (opens in a pop-up editor)
 
-#### Acknowledgement
+**Acknowledgement**
 
 * **Acknowledge** (checkbox): when enabled, the user/customer must actively confirm the message during the booking flow (checkout).
 
@@ -111,7 +111,7 @@ If you enable **Acknowledge**, the booking flow will block completion until all 
 {% endstep %}
 
 {% step %}
-### Save
+#### Save
 
 Click **Save**.
 

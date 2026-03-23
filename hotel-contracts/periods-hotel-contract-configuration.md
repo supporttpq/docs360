@@ -59,25 +59,25 @@ Rows control allotment, release, minimum stay, and cost.
 
 {% stepper %}
 {% step %}
-### Create the date range
+#### Create the date range
 
 Add a period with **Start Date** and **End Date**.
 {% endstep %}
 
 {% step %}
-### Add rows for rooms and boards
+#### Add rows for rooms and boards
 
 Use **Add interval** to add rows for each room/board combination.
 {% endstep %}
 
 {% step %}
-### Set availability rules
+#### Set availability rules
 
 Fill **Allotments**, **R**, **Min Stay**, and any guarantee fields you use.
 {% endstep %}
 
 {% step %}
-### Set costs
+#### Set costs
 
 Enter **Cost**, plus optional **Single Cost** and **Stay Type**.
 {% endstep %}

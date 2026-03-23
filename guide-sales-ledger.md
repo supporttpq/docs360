@@ -155,13 +155,13 @@ This file can be used for:
 
 {% stepper %}
 {% step %}
-### Select payment period
+#### Select payment period
 
 Choose the dates where the guide payments were registered.
 {% endstep %}
 
 {% step %}
-### Narrow down filters
+#### Narrow down filters
 
 Filter by **Guide**, **Resort**, and **Payment method**.
 
@@ -169,25 +169,25 @@ Use **Allotment period** if you need to match a departure date range.
 {% endstep %}
 
 {% step %}
-### Review transactions
+#### Review transactions
 
 Check debit/credit values, commission status, deposit status, and payment method.
 {% endstep %}
 
 {% step %}
-### Expand extras
+#### Expand extras
 
 Open the details row to review connected extras, suppliers, and prices.
 {% endstep %}
 
 {% step %}
-### Review totals
+#### Review totals
 
 Validate that totals and balances match the expected settlement per currency.
 {% endstep %}
 
 {% step %}
-### Export
+#### Export
 
 Export to XLSX for bookkeeping and internal audit.
 {% endstep %}

@@ -55,7 +55,7 @@ If your template does **not** include `[Message]`, the custom text you type when
 
 {% stepper %}
 {% step %}
-### 1) Open the Brand’s Select Offer settings
+#### 1) Open the Brand’s Select Offer settings
 
 Go to:
 
@@ -63,7 +63,7 @@ Go to:
 {% endstep %}
 
 {% step %}
-### 2) Find the SMS template field
+#### 2) Find the SMS template field
 
 Locate the SMS template area in the Select Offer settings.
 
@@ -74,7 +74,7 @@ Depending on your setup, you may be able to:
 {% endstep %}
 
 {% step %}
-### 3) Add placeholders
+#### 3) Add placeholders
 
 Add the placeholders you want to use.
 
@@ -89,7 +89,7 @@ Optionally include placeholders such as:
 {% endstep %}
 
 {% step %}
-### 4) Save and test
+#### 4) Save and test
 
 Send a test SMS to an internal phone number to confirm:
 

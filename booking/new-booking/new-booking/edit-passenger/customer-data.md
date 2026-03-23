@@ -47,25 +47,25 @@ This matters because invoices, confirmations, travel documents, and operational 
 
 {% stepper %}
 {% step %}
-### Open Customer Data
+#### Open Customer Data
 
 Open the booking, click **Edit** in the passenger section, then open **Customer Data**.
 {% endstep %}
 
 {% step %}
-### Set the main customer/contact person
+#### Set the main customer/contact person
 
 Check **CUSTOMER** on the passenger who owns the booking communication.
 {% endstep %}
 
 {% step %}
-### Select recipients for Email and SMS
+#### Select recipients for Email and SMS
 
 Use **EMAIL** and **SMS** to send the same messages to additional passengers.
 {% endstep %}
 
 {% step %}
-### Save
+#### Save
 
 Click **Save Changes** in the Edit Passenger window.
 {% endstep %}

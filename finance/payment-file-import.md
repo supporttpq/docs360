@@ -64,7 +64,7 @@ Your bank (or your finance setup) should provide the **specification** that expl
 
 {% stepper %}
 {% step %}
-### Get the payment file from your bank
+#### Get the payment file from your bank
 
 Download/export the payment file in the format your company uses.
 
@@ -72,13 +72,13 @@ If you are unsure which format to use, check the bank’s export options or ask 
 {% endstep %}
 
 {% step %}
-### Open Payment File Import
+#### Open Payment File Import
 
 Go to **Finance → Payment File Import**.
 {% endstep %}
 
 {% step %}
-### Upload the file
+#### Upload the file
 
 1. Select the file.
 2. Upload/import it.
@@ -87,7 +87,7 @@ Tourpaq validates the file during the upload/import.
 {% endstep %}
 
 {% step %}
-### Review validation results
+#### Review validation results
 
 If Tourpaq flags errors (for example missing booking reference or invalid amount), correct the file and upload again.
 
@@ -95,7 +95,7 @@ When the file is accepted, the payments are created in Tourpaq.
 {% endstep %}
 
 {% step %}
-### Verify the imported payments
+#### Verify the imported payments
 
 Open [Payment Registration](payment-registration.md) and search by payment date range and payment method (for example **BANKIN**) to confirm the payments are listed.
 {% endstep %}

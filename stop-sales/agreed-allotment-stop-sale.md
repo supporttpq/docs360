@@ -41,7 +41,7 @@ Start from [Edit Stop Sale](edit-stop-sale.md) if you are unsure how to open **R
 
 {% stepper %}
 {% step %}
-### Open the rule in edit mode
+#### Open the rule in edit mode
 
 1. Go to **Hotel → Stop Sales**.
 2. Find the Stop Sale rule you want to adjust.
@@ -51,7 +51,7 @@ Start from [Edit Stop Sale](edit-stop-sale.md) if you are unsure how to open **R
 {% endstep %}
 
 {% step %}
-### Unlock the Agreed Allotment field
+#### Unlock the Agreed Allotment field
 
 Uncheck **Enabled**. This unlocks the agreed allotment input.
 
@@ -59,7 +59,7 @@ Uncheck **Enabled**. This unlocks the agreed allotment input.
 {% endstep %}
 
 {% step %}
-### Set the agreed allotment and save
+#### Set the agreed allotment and save
 
 1. Enter the **Agreed Allotment** value.
 2. Click **Save**.
@@ -88,7 +88,7 @@ After you save, verify the same hotel, room, and date range in these places:
   * Filter by hotel, room type, and dates.
   * `FHA` (free-hotel-allotment) should reflect the reopened rooms minus bookings.
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### FAQ
 
@@ -120,7 +120,7 @@ Start with **Stop Sales Logs**. Then check **Allotment per Day** and **Pricelist
 
 <summary>Test case reference (setup and expected results)</summary>
 
-#### Setup
+**Setup**
 
 | Step                                | Expected result                                                 |
 | ----------------------------------- | --------------------------------------------------------------- |
@@ -133,14 +133,14 @@ Start with **Stop Sales Logs**. Then check **Allotment per Day** and **Pricelist
 | Click **Save**                      | Rule is updated. The section closes.                            |
 | Click **Cancel**                    | No changes are saved. The section closes.                       |
 
-#### Check results in Stop Sales Logs
+**Check results in Stop Sales Logs**
 
 | Step                                | Expected result                                                 |
 | ----------------------------------- | --------------------------------------------------------------- |
 | Click **View details** after saving | Logs open with filters prefilled for the rule’s room and dates. |
 | Check the records                   | `Final r.No` should equal `Initial r.No + agreed allotment`.    |
 
-#### Check results in Allotment per Day
+**Check results in Allotment per Day**
 
 | Step                                                              | Expected result                                                                          |
 | ----------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
@@ -148,7 +148,7 @@ Start with **Stop Sales Logs**. Then check **Allotment per Day** and **Pricelist
 | Go to **Allotment per Day** and filter by the rule dates and room | Daily allotment rows are shown for that room and period.                                 |
 | Check allotment                                                   | Allotment reflects the reopened rooms (agreed allotment), minus booked/guaranteed rooms. |
 
-#### Check results in Pricelist
+**Check results in Pricelist**
 
 | Step                              | Expected result                                                                                  |
 | --------------------------------- | ------------------------------------------------------------------------------------------------ |

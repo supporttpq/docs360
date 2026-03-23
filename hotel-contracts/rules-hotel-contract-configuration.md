@@ -41,7 +41,7 @@ The tab has two areas:
 
 {% stepper %}
 {% step %}
-### Maintain the rule definitions
+#### Maintain the rule definitions
 
 Go to **Hotel → Hotel Contract Rules**.
 
@@ -49,7 +49,7 @@ Create a new rule or update an existing one.
 {% endstep %}
 
 {% step %}
-### Attach the rule to the contract
+#### Attach the rule to the contract
 
 Open the hotel contract.
 
