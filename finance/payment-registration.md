@@ -55,7 +55,7 @@ You can **only create booking payments** in Payment Registration. **Guide paymen
 
 ### View and filter payments
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (16).png" alt="Payment Registration filters and results"><figcaption><p>Filter payment records and review results in Payment Registration.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (17).png" alt="Payment Registration filters and results"><figcaption><p>Filter payment records and review results in Payment Registration.</p></figcaption></figure>
 
 1. Set **Payment start date** and **Payment end date**.
 2. (Optional) Set **Departure start date** and/or **Departure end date**.

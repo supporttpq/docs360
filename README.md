@@ -1,5 +1,6 @@
 ---
 description: Recent Tourpaq releases, fixes, improvements, and documentation updates.
+noIndex: true
 icon: sparkles
 ---
 
@@ -46,19 +47,30 @@ Updates are deployed continuously and documented here as they go live.
 
 ### Release symbols
 
-* 🔴 **Breaking** — Existing configuration or workflow must be updated before use.
 * 🟡 **Changed** — Behaviour of an existing feature has changed.
 * 🟢 **New** — New feature or page added.
-* 🔵 **Improved** — Enhancement to an existing feature.
+* 🔵 **Improved** — Enhancement / Update to an existing feature.
 * ⚪ **Fixed** — Bug fix or correction.
 * 📄 **Docs** — Documentation added or updated with no product change.
 
 ### Recent release history
 
 {% updates format="full" %}
-{% update date="2026-03-01" tags="tourpaq-v15.0" %}
-## 2026-03
+{% update date="2026-03-23" %}
+## Tourpaq v15.1
 
+* 🟢 **Add booking interval support in Discount Extra bed**. See [Discount Extra Bed](hotel/hotel-creation/#discexbeds)
+* 🔵[Autobilling](autobilling/)
+* 🔵 [Ticket](/broken/pages/cst8PihqkIPBa2PBX4jt)
+* 🔵 **How to create and use Extras generic allotment**. See [Generic Allotment](extras-setup/extras/allotments.md#generic-allotment)
+* 🔵 **Improvments on search price list**. See [Price List](price-list/pricelist.md#price-list-search)
+* 🟢 **What's new**: page tracks recent Tourpaq releases and documentation updates. See [What's new](./)
+{% endupdate %}
+
+{% update date="2026-03-17" tags="tourpaq-v15.0" %}
+## 2026-03 (Tourpaq v15.0)
+
+* 🟢 **Transport Rules: automatic extension of transport rules. See** [edit-transport-rule.md](transport-rules/edit-transport-rule.md "mention")
 * 🔵 **Hotel release automation** now flags unused allotments as **Suitable for release** and emails suppliers automatically. See [Hotel release - automation](hotel/hotel-creation/releases/hotel-release-automation.md).
 * 🔵 **Transport Rule Weekdays Support** adds weekday-based generation for transport rules that use two external providers. See [Transport Rule Weekdays Support](transport-rules/transport-rule-weekdays-support.md).
 * 🔵 **Hotel release rules** were expanded with clearer day-level release logic, release-status recalculation, and editable past-date handling. See [Releases](hotel/hotel-creation/releases/).
@@ -66,8 +78,8 @@ Updates are deployed continuously and documented here as they go live.
 * 📄 A known transport-search edge case is now documented: departures can appear without a valid return date in specific rule-extension scenarios. See [Transport Search Displays Departure Without Return Date (Known Limitation)](booking/new-booking/new-booking/transport-search-displays-departure-without-return-date-known-limitation.md).
 {% endupdate %}
 
-{% update date="2026-02-01" %}
-## 2026-02
+{% update date="2026-02-03" %}
+## 2026-02 (Tourpaq v14.9)
 
 * 🟢 **Automatic ticket issue** was added for Amadeus GDS bookings, including deadline-based daily ticketing for eligible paid reservations. See [Automatic ticket issue](gds-queue-place/submit-a-gds-booking/automatic-ticket-issue.md).
 * 🟢 **Individual payments** was added, allowing separate payment links per passenger on the same booking. See [Individual payments](booking/new-booking/individual-payments.md).
@@ -76,13 +88,6 @@ Updates are deployed continuously and documented here as they go live.
 * 🔵 **No-show handling** was clarified for both transport reporting and export lists, improving operational consistency for outbound and homebound removals. See [Remove pax on outbound or homebound only, Transport Reporting Impact](booking/new-booking/remove-pax-on-outbound-or-homebound-only/remove-pax-on-outbound-or-homebound-only-transport-reporting-impact.md) and [Remove pax on outbound or homebound only, Export lists impact](booking/new-booking/remove-pax-on-outbound-or-homebound-only/remove-pax-on-outbound-or-homebound-only-export-lists-impact.md).
 * 🔵 **Customer details on customer card** improves in-booking customer maintenance by saving reusable customer details directly from the booking flow. See [Customer info / Details on customer card](booking/new-booking/customer-info-details-on-customer-card.md).
 * 📄 Ticket errata placement across ticket versions is now documented. See [Customer Information displayed on the Ticket](customer-information-errata/customer-information-displayed-on-the-ticket.md).
-{% endupdate %}
-
-{% update date="2026-01-01" %}
-## 2026-01
-
-* 🟢 **Hotel Release Reporting Scheduler** was added for scheduled release-list delivery with daily, weekly, monthly, and annual intervals. See [Hotel release - Reporting](hotel/hotel-creation/releases/hotel-release-reporting.md).
-* 🟢 **Editable releases in Allotment per Day** was added, allowing day-level override of **DAYS**, **R**, **AR**, and **SR** values without changing the hotel contract. See [Editable releases in Allotment per Day](hotel/hotel-creation/allotments-per-day/editable-releases-in-allotment-per-day.md).
 {% endupdate %}
 {% endupdates %}
 
