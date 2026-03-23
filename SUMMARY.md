@@ -2,7 +2,8 @@
 
 ## Tourpaq Manual
 
-* [Welcome to the Tourpaq Manual](README.md)
+* [What's new](README.md)
+* [Welcome to the Tourpaq Manual](<README (2).md>)
 * [Getting Started with Tourpaq](<README (1).md>)
   * [What is Tourpaq?](tourpaq-manual/readme/what-is-tourpaq.md)
   * [First Login & Account Setup](tourpaq-manual/readme/first-login-and-account-setup.md)
