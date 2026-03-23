@@ -20,11 +20,11 @@ layout:
     visible: true
 ---
 
-# View all bookings
+# All bookings
 
 ### **Overview**
 
-**View All Bookings** is the main list view within the All Bookings page. It is where you apply filters, run your search, and get a matching list of bookings to work with. Every other feature in the All Bookings section — Statistics, Totals, Saved Views — is built on top of the filter set you configure here.
+**All Bookings** is the main list view within the All Bookings page. It is where you apply filters, run your search, and get a matching list of bookings to work with. Every other feature in the All Bookings section — Statistics, Totals, Saved Views — is built on top of the filter set you configure here.
 
 Think of it as your search engine for bookings. The more precisely you filter, the more focused and useful your results will be.
 
@@ -32,7 +32,7 @@ Think of it as your search engine for bookings. The more precisely you filter, t
 
 ### **Purpose**
 
-Use View All Bookings to:
+Use All Bookings to:
 
 * Locate a specific booking by number, customer name, hotel, transport, or any combination of criteria
 * Build a filtered dataset that drives the **Statistics** and **Totals** views
@@ -43,7 +43,7 @@ Use View All Bookings to:
 
 ### **Preconditions**
 
-Before using View All Bookings, ensure the following:
+Before using All Bookings, ensure the following:
 
 * You are logged in with a user role that has access to the Booking module
 * At least one **Brand** is selected — no results will load without a Brand
@@ -55,7 +55,7 @@ If no results appear after clicking **Display**, the first thing to check is whe
 
 ***
 
-### How to Use View All Bookings
+### How to Use All Bookings
 
 #### Step 1 — Open the page
 
