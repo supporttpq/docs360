@@ -51,7 +51,7 @@ In practice, moving a booking usually starts by creating a new booking and copyi
 1. Create the **new booking** that the customer will travel on.
 2. Copy passengers from the original booking (so names and traveller details don’t have to be re-entered).
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (20).png" alt="Create a new booking and copy passengers from the original booking"><figcaption><p>Create the new booking and copy passengers from the original booking.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (21).png" alt="Create a new booking and copy passengers from the original booking"><figcaption><p>Create the new booking and copy passengers from the original booking.</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -70,7 +70,7 @@ In practice, moving a booking usually starts by creating a new booking and copyi
 
 Click **OK** in the confirmation dialog.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Confirmation dialog for moving a booking"><figcaption><p>Confirm the move action.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Confirmation dialog for moving a booking"><figcaption><p>Confirm the move action.</p></figcaption></figure>
 {% endstep %}
 
 {% step %}

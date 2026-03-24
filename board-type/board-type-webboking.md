@@ -14,7 +14,7 @@
 
 * Use one of the created board types to create a hotel allotment - Allotment should be created successfully.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 #### 3. Create a Price List for the Allotment
 

@@ -296,6 +296,7 @@
   * [Setup for Transport Dynamic Packaging (GDS)](real-transports/setup-for-transport-dynamic-packaging-gds.md)
   * [Departures](real-transports/departures/README.md)
     * [Add Base Cost on Real Transports](real-transports/departures/add-base-cost-on-real-transports.md)
+    * [Add LAND-Days to Real Transports (Offset Handling)](real-transports/departures/add-land-days-to-real-transports-offset-handling.md)
   * [Passenger Information](real-transports/passenger-information.md)
   * [Notes](real-transports/notes.md)
 * [Real Transport Dashboard](real-transport-dashboard.md)
