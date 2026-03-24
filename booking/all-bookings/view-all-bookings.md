@@ -135,7 +135,7 @@ To rename or delete an existing saved view:
 
 ### Step 8 - Booking Selection (Checkbox Column)
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 1. Bookings Selection (Checkbox Column)
 

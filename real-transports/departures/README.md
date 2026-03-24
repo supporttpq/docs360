@@ -30,7 +30,7 @@ Make sure these are in place:
 
 ### Page layout
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 #### Filters and tools
 
@@ -94,7 +94,11 @@ These are the most common columns on this page.
 | **Departure Time**     | Planned time of departure                                                                                                                                                                                                                                                            |
 | **Arrival Time**       | Planned time of arrival                                                                                                                                                                                                                                                              |
 | **Airline**            | Airline operating the flight                                                                                                                                                                                                                                                         |
+| **Stop Sale**          | If checked, then the departure is no longer available for sale. Existing bookings on the departure are not affected.                                                                                                                                                                 |
+| **Days**               | If the arrival passed midnight, specify the number of days added                                                                                                                                                                                                                     |
+| **Offset**             | Is used to adjust hotel check-in or hotel check-out. For an outbound, the offset determines the hotel check-in, and for a homebound, the check-out is adjusted. A positive value adjusts the check-in/out later, and a negative value adjusts the check-in/out earlier.              |
 | **Flight No**          | Flight number (editable)                                                                                                                                                                                                                                                             |
+| **Class**              | Flight class                                                                                                                                                                                                                                                                         |
 | **Transport Supplier** | Supplier configuration                                                                                                                                                                                                                                                               |
 | **Seats**              | Total seats on the departure. Allotment seats = Seats − (Guaranteed + Pro Rate).                                                                                                                                                                                                     |
 | **Allotment (seats)**  | Seats available as allotment seats                                                                                                                                                                                                                                                   |
@@ -109,7 +113,6 @@ These are the most common columns on this page.
 | **Booked**             | Number of booked passengers                                                                                                                                                                                                                                                          |
 | **PNR**                | Booking reference (PNR), if used for this departure                                                                                                                                                                                                                                  |
 | **Booked Attached**    | If enabled, the departure is linked to the parent transport                                                                                                                                                                                                                          |
-| **Stop Sale**          | If checked, then the departure is no longer available for sale. Existing bookings on the departure are not affected.                                                                                                                                                                 |
 
 You can edit most fields directly in the table. Some fields may be locked.
 
@@ -133,7 +136,7 @@ Useful for:
 
     * **Type** – Select **Daily** or **Weekly**.
 
-    <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     * **Frequency**
       * If **Daily**: set **Every N days**.
