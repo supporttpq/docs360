@@ -15,7 +15,7 @@ Transport rules are used to:
 
 ### Field Explanation
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### General
 
@@ -41,7 +41,7 @@ This behavior allows users to repeatedly press **“+”** and quickly add all r
 
 #### Transportation
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Pick-up point required** – If checked, the booking must include a pick-up point.
 * **Travel Length Correction +/-** – Adjust the travel duration by a specified number of days.
@@ -54,7 +54,7 @@ This behavior allows users to repeatedly press **“+”** and quickly add all r
 
 #### Price Information
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Infant price** – Defines the transport price that will be applied to passengers categorized as **infants**.
   * Currency follows the system or transport currency configuration.
@@ -124,7 +124,7 @@ The dates from the Transport Rule are mapped to the infant price configuration a
 | Today (system date) | Booking From                     |
 | Date To             | Booking To                       |
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This mapping ensures that the infant price is valid for the entire transport rule period.
 
@@ -177,7 +177,7 @@ Max stops number, Max connection time, Max travel time fields became editable on
 
 #### Settings
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Status** – Defines the rule’s visibility in the system (e.g., Visible / Hidden).
 * **Hide as filter on lists** – If checked, this rule will not appear as a filter option in lists.
