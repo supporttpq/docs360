@@ -261,7 +261,11 @@ Example: Export bookings for a specific departure period to generate a report.
 
 #### Statistics Bar (Bottom of Page)
 
-The statistics bar appears below the table immediately after Display is clicked. It shows a real-time summary of the filtered result set.
+The statistics bar appears below the table immediately after Display is clicked, is available for the following user types: Administrator, Guide and Guide Master. It shows a real-time summary of the filtered result set.
+
+<figure><img src="../../.gitbook/assets/image (742).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (741).png" alt=""><figcaption></figcaption></figure>
 
 | Metric             | Description                                                                                            |
 | ------------------ | ------------------------------------------------------------------------------------------------------ |

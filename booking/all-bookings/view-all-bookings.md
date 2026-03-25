@@ -222,6 +222,30 @@ If multiple sms are queued with the same message and destination, only the first
 
 ***
 
+**Statistics Bar (Bottom of Page)**
+
+The statistics bar appears below the table immediately after Display is clicked. It shows a real-time summary of the filtered result set. This list is used to monitor late changes to arrivals, often spotted by a change in the totals.
+
+{% hint style="info" %}
+The statistics bar is available for thefollowing user types: Administrator, Guide and Guide Master
+{% endhint %}
+
+<figure><img src="../../.gitbook/assets/image (743).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (744).png" alt=""><figcaption></figcaption></figure>
+
+| Metric             | Description                                                                                            |
+| ------------------ | ------------------------------------------------------------------------------------------------------ |
+| **Bookings**       | Total number of bookings in the filtered result set                                                    |
+| **Total Pax**      | Total number of passengers across all filtered bookings                                                |
+| **Pax / Booking**  | Average number of passengers per booking. Formula: `Total Pax ÷ Bookings`                              |
+| **Total Turnover** | Total gross revenue from all filtered bookings before costs are deducted                               |
+| **Turnover / Pax** | Average revenue per passenger. Formula: `Total Turnover ÷ Total Pax`                                   |
+| **Profit Total**   | Net profit across all filtered bookings. May be negative in periods with high cancellations or refunds |
+| **Profit / Pax**   | Average net profit per passenger. Formula: `Profit Total ÷ Total Pax`                                  |
+
+***
+
 #### Hide Filters
 
 For teams with large numbers of transports, hotels, or users configured, filter dropdowns can become difficult to navigate. The Hide Filters functionality keeps these lists clean.
