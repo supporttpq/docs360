@@ -13,7 +13,6 @@ The system must allow administrators to:
 
 * Create a new arrival destination
 * Define transport and geographical details
-* Configure timezone and GMT offset
 * Assign insurance area
 * Control availability for online booking
 

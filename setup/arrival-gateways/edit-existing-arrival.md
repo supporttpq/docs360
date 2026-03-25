@@ -12,7 +12,6 @@ Changes apply to all future bookings. Existing bookings will retain previously s
 The system must allow:
 
 * Updating arrival details
-* Adjusting timezone and GMT offsets
 * Changing insurance area mapping
 * Enabling or disabling online availability
 * Maintaining data integrity for historical bookings
