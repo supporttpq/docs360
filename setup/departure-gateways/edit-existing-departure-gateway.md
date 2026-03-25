@@ -28,6 +28,8 @@ Setup → Destinations → Departure Gateways
 
 ### Editable Fields
 
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
 IATA Code - Can be modified if necessary.
 
 Important:\
@@ -58,15 +60,6 @@ Used for:
 
 Incorrect values may result in wrong distance calculations.
 
-GMT Offset - Standard UTC offset.
-
-GMT Offset Summertime - Daylight saving time offset. These must match the selected timezone.\
-Incorrect configuration may result in:
-
-* Wrong departure time handling
-* Incorrect duration calculations
-* Transfer timing errors&#x20;
-
 TimeZone - Changing timezone affects:
 
 * Departure time calculations
@@ -95,6 +88,5 @@ Before editing:
 * Check whether the gateway is used in active or upcoming bookings
 * Verify integration dependencies
 * Confirm timezone accuracy
-* Ensure GMT offsets match daylight saving rules
 
 Incorrect changes may affect operational planning.

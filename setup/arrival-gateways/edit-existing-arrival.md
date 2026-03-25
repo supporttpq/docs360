@@ -37,7 +37,7 @@ Setup → Destinations → Arrivals
 
 ### Editable Fields
 
-<figure><img src="../../.gitbook/assets/image (681).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 IATA Code - Can be updated if necessary.
 
@@ -51,8 +51,6 @@ Plain Text (not flight) - Can be adjusted if the arrival represents a non-airpor
 Country - Can be updated if initially configured incorrectly. May impact insurance and reporting.
 
 Latitude / Longitude - Should be updated if mapping or transfer calculations require correction. Incorrect coordinates may affect transfer routing or distance-based logic.&#x20;
-
-GMT Offset / GMT Offset Summertime - Must match the selected timezone. Incorrect configuration may result in wrong arrival time calculations.
 
 TimeZone - Changing timezone affects:
 
@@ -75,7 +73,6 @@ URL Alias - Can be modified for web booking or routing adjustments.
 Before editing an existing arrival:
 
 * Verify whether the arrival is already used in active bookings
-* Confirm timezone and GMT values carefully
 * Validate insurance mapping impact
 * Ensure integrations depending on IATA code are considered
 

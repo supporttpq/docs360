@@ -38,7 +38,7 @@ This feature ensures that all creditor-related billing is performed on time and 
 
 📋 _Creditor invoice schedules overview — Finance → Autobilling_
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Configure invoice schedules for hotels, extras, supplements, and handling.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Configure invoice schedules for hotels, extras, supplements, and handling.</p></figcaption></figure>
 
 ***
 
@@ -166,7 +166,7 @@ The regenerated invoice will appear in the list with updated data and a Pending 
 
 🔄 _Regenerate invoice action — Finance → Invoice list_
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Regenerate an invoice from Finance → Invoice when costs or booking values changed.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Regenerate an invoice from Finance → Invoice when costs or booking values changed.</p></figcaption></figure>
 
 ***
 
