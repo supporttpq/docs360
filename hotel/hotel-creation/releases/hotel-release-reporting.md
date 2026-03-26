@@ -61,26 +61,24 @@ Dates in the screenshots use the format **DD.MM.YYYY**.
 
 ### Booking Cancellation Handling
 
+#### Overview
+
+When a booking is cancelled, the system must respect any active **release rules** applied to the room. This ensures that released rooms are not returned to sale incorrectly.
+
+***
+
 #### Behavior
 
-* When a booking is cancelled:
-  * if it used **AR or SR**, the rooms are marked as **released**
-  * if a release is already active:
-    * the room **does not return to sale**
+* If a booking is cancelled and the room is under an active **release**, the room is **not returned to free sale**.
+* Instead, the system updates the internal counters as follows:
+  * The **AR/SR (Allotment / Secured Room) counts are increased**
+  * The number of **free rooms remains unchanged**
 
-{% hint style="warning" %}
-Cancelled rooms are not automatically reintroduced into availability if a release applies.
-{% endhint %}
+***
 
-#### Inventory Adjustment Rules
+#### Result
 
-* On cancellation:
-  * **increase AR/SR counts**
-  * **do not increase free rooms**
-
-{% hint style="info" %}
-The inventory is restored at contract level (AR/SR), but not at sellable level.
-{% endhint %}
+Cancelled rooms that fall under a release period remain unavailable for new bookings, preserving the integrity of the release logic and preventing unintended resale.
 
 ### Screenshot
 
