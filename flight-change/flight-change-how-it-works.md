@@ -27,7 +27,7 @@ This type can be reviewed and manually edited if needed before proceeding.
    After saving or queuing the changes, go to the[ **Flight Change**](./) menu to continue processing.
    * Select one or more flight changes (only those **in the queue**) and send the corresponding notification using the **Send Email** or **Send SMS** buttons.
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 &#x20;   4\. **Drop a Flight Change (Optional)**
 
