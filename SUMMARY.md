@@ -360,6 +360,7 @@
   * [User limited view](users/users/user-limited-view.md)
   * [Password expiration](users/users/password-expiration.md)
   * [Onboard a new employee (Tourpaq Office access)](users/users/onboard-a-new-employee-tourpaq-office-access.md)
+  * [Support User Role (GDPR Compliance)](users/users/support-user-role-gdpr-compliance.md)
 
 ***
 
