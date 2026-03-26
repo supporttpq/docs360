@@ -4,7 +4,33 @@
 
 The **Hotel Release Reporting Scheduler** is a set of configurable rules that are executed periodically by a Windows service.&#x20;
 
+The **Hotel Release** functionality controls when rooms from allotment and secured inventory are withdrawn from sale.
+
+{% hint style="info" %}
+A release determines when reserved inventory (allotment or secured rooms) is no longer available for booking.
+{% endhint %}
+
+#### Core Rule
+
+* When a **release is activated**, all rooms from:
+  * allotment rooms (AR)
+  * secured rooms (SR)\
+    must be removed from sale.
+* The system prevent any further sales of these rooms after the release is triggered.
+
 The scheduler automates the release of hotel rooms according to the rules defined in Tourpaq Office, ensuring timely notifications to suppliers and proper management of allotments.
+
+### Core Behavior
+
+{% hint style="danger" %}
+A release overrides availability.
+{% endhint %}
+
+* When a **release is activated**:
+  * all **allotment rooms (AR)** and **secured rooms (SR)** are removed from sale
+* These rooms:
+  * remain in inventory
+  * but are **no longer bookable**
 
 ### Purpose
 
@@ -33,24 +59,90 @@ To configure a rule for a hotel:
 Dates in the screenshots use the format **DD.MM.YYYY**.
 {% endhint %}
 
-### Field reference
+### Booking Cancellation Handling
+
+#### Behavior
+
+* When a booking is cancelled:
+  * if it used **AR or SR**, the rooms are marked as **released**
+  * if a release is already active:
+    * the room **does not return to sale**
+
+{% hint style="warning" %}
+Cancelled rooms are not automatically reintroduced into availability if a release applies.
+{% endhint %}
+
+#### Inventory Adjustment Rules
+
+* On cancellation:
+  * **increase AR/SR counts**
+  * **do not increase free rooms**
+
+{% hint style="info" %}
+The inventory is restored at contract level (AR/SR), but not at sellable level.
+{% endhint %}
+
+### Screenshot
+
+<figure><img src="../../../.gitbook/assets/image (745).png" alt=""><figcaption></figcaption></figure>
+
+### Release Tab – UI Enhancements and Filtering
+
+#### 1. “Show all” Filter
+
+* &#x20;**“Show all”  -** checkbox
+
+**Behavior**
+
+* Unchecked (default): show only **active dates**
+* Checked: show all records
+
+***
+
+#### 2. Period Filter
+
+* Name: **Period**
+* Behavior: period selector
+  * includes standard future presets (e.g. next week, next month)
+
+**Logic**
+
+* When a period is selected: display only releases that **impact the selected period**
+
+### Release Configuration
+
+#### Dynamic Interval Column
+
+![](<../../../.gitbook/assets/image (746).png>)
+
+The second column changes depending on the selected **INTERVAL**:
+
+| Interval | Column Name  | Description                                              |
+| -------- | ------------ | -------------------------------------------------------- |
+| DAILY    | DATE         | Release triggers once on a specific date                 |
+| WEEKLY   | WEEKDAY      | Release triggers on a specific weekday across the period |
+| MONTHLY  | DAY-OF-MONTH | Release triggers on a specific day each month            |
+| ANNUALLY | DATE         | Release triggers once per year on a specific date        |
+
+### Field definitions
 
 | Field                   | What it controls                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Interval**            | <p>How often the scheduler runs. </p><ul><li>If <strong>Daily</strong> is chosen the scheduler will run every day. Next to interval drop down is a date field and if chosen it will run the scheduler not before that date.</li><li>If <strong>Weekly</strong> the scheduler will run every week at a mandatory day specified right next to the interval drop down.</li><li>If <strong>Monthly</strong> is chosen the scheduler will run every month on a day specified right next to interval drop down.</li><li>If <strong>Annually</strong> is chosen the scheduler will run every year on a day specified right next to interval drop down.</li></ul> |
-| **Days**                | <p>How many days are included in the exported interval after the run date. Example: Run date <strong>10.01.2026</strong> + <code>7</code> means the interval <strong>10.01.2026 → 17.01.2026</strong>. </p><p>*Note: If Daily is selected, the field is disabled (read only)</p>                                                                                                                                                                                                                                                                                                                                                                          |
-| **Hour**                | When the list is sent. This field is mandatory.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| **Email**               | Who receives the list.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| **Room**                | Optional filter for a specific room type. Leave blank to include all room types.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| **Start Period**        | Do not include allotments before this date.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| **End Period**          | Do not include allotments after this date.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| **Cut Down Allotments** | If enabled, the system sets **Available rooms = Booked rooms** and **Free rooms = 0** for the affected period. If disabled, availability is not modified.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| **Days**                | <p><strong>For DAILY:</strong></p><ul><li>Tooltip: Number of days before the release is activated.<br>After creation, the value can be adjusted in “Allotment per Day”.</li></ul><p><strong>For NON-DAILY:</strong></p><ul><li>Tooltip: Number of days before the release is activated.</li></ul>                                                                                                                                                                                                                                                                                                                                                         |
+| **Hour**                | <p>Time of day when the release is activated.<br>If an email is configured, it is sent at this time.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **Email**               | <p>If an email address is defined, a “Hotel Release” email is sent listing affected rooms and dates.<br>Requires a configured “Hotel Release” template in Email Center for the first agency.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| **Room Type**           | The room type(s) affected by the release.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| **From Date**           | The first date when the release can be activated.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| **To Date**             | The last date when the release can be activated.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| **Cut Down Allotments** | <p>If enabled, rooms are removed from sale after the release.<br>Email sending is independent of this setting.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **Clone**               | Enables a Clone button to duplicate existing release lines.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 
 ### Scheduler Types
 
 {% tabs %}
 {% tab title="Daily" %}
-<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (747).png" alt=""><figcaption></figcaption></figure>
 
 * Runs every day starting from the first execution date.
 
@@ -63,7 +155,7 @@ Example:
 {% endtab %}
 
 {% tab title="Weekly" %}
-<figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (748).png" alt=""><figcaption></figcaption></figure>
 
 * Runs once per week.
 * You must choose the weekday.
@@ -71,7 +163,7 @@ Example:
 {% endtab %}
 
 {% tab title="Monthly" %}
-<figure><img src="../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (749).png" alt=""><figcaption></figcaption></figure>
 
 * Runs once per month.
 * You must choose the day of month.
@@ -79,7 +171,7 @@ Example:
 {% endtab %}
 
 {% tab title="Annually" %}
-<figure><img src="../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (750).png" alt=""><figcaption></figcaption></figure>
 
 * Runs once per year.
 * It covers the configured **Start Period** and **End Period**.

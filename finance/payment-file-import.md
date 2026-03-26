@@ -103,6 +103,10 @@ Open [Payment Registration](payment-registration.md) and search by payment date 
 
 ***
 
+### File Import Explained
+
+
+
 ### Notes
 
 * Imported payments are validated during import. Any unmatched or erroneous lines are flagged for review.
