@@ -62,10 +62,10 @@ You can **only create booking payments** in Payment Registration. **Guide paymen
 3. (Optional) Select a **Payment method** (for example `CARD`, `CASHIN`, `BANKIN`, `GIFT`).
 4. (Optional) Use additional filters such as:
    * **Debit/Credit**
-   * **Payment purpose** (for example _All Payments_ or _Booking Only_)
-   * **Guide**
-   * **Transport**
-   * **GiftCard No**
+   * **Payment for** (it can be choose: _All Payments,_ _Booking Only, Extra Orders only or Gift Card only_)
+   * **Guide** (select All guides or one specific guide)
+   * **Transport** (select All transports or one specific transport)
+   * **Gift Card No** (search for a specific gift card number)
    * **Booking reference/number**
 5. Click **Display** to load the results.
 
