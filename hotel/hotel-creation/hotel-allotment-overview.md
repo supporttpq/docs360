@@ -109,7 +109,7 @@ Enable the `Guarantee Rooms` checkbox.
 
 Also verify the hotel allotment has guaranteed values set.
 
-See [Hotel allotments](hotel-allotments.md).
+See [Hotel allotments](hotel-allotments/).
 
 </details>
 
