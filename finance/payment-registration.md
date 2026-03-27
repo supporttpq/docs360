@@ -47,7 +47,7 @@ You can **only create booking payments** in Payment Registration. **Guide paymen
 
 * You must be logged in with the required permissions (typically **Financial** or **Administrator**)
 * To register a payment, you need the **booking number/reference** and the **amount**
-* If you need to import many bank payments, use [Payment File Import](payment-file-import.md)
+* If you need to import many bank payments, use [Payment File Import](payment-file-import/)
 * If you need to import many refunds, use [Refund File Import](refund-file-import.md)
 * If a payment method is missing, check [Method of Payment](method-of-payment.md)
 
@@ -179,7 +179,7 @@ If you’re unsure, confirm with your finance setup.
 
 After a successful import, they appear in this list.
 
-See [Payment File Import](payment-file-import.md).
+See [Payment File Import](payment-file-import/).
 
 #### 6. A payment method is missing from the dropdown—what should I do?
 

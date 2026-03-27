@@ -32,7 +32,7 @@ Every payment in Tourpaq uses a **payment code** (payment type). This controls h
 Related modules:
 
 * [Payment Registration](payment-registration.md)
-* [Payment File Import](payment-file-import.md)
+* [Payment File Import](payment-file-import/)
 * [Refund File Import](refund-file-import.md)
 
 Common examples:

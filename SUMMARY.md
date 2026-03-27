@@ -119,7 +119,8 @@
 ## Finance
 
 * [Payment Registration](finance/payment-registration.md)
-* [Payment File Import](finance/payment-file-import.md)
+* [Payment File Import](finance/payment-file-import/README.md)
+  * [File Import Format](finance/payment-file-import/file-import-format.md)
 * [Refund File Import](finance/refund-file-import.md)
 * [Method of Payment](finance/method-of-payment.md)
 
