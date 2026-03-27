@@ -107,3 +107,7 @@ To configure a Europeiske external cancellation insurance:
 * **Europe ID** – Identifies and maps the cancellation insurance product from Europeiske to the Tourpaq system.
 * **Name** – The name of the product as displayed in the web booking interface.
 * **Trip Type** – Specifies the type of trip (e.g., charter, dynamic package, or scheduled transport) for which the cancellation insurance applies.
+
+{% hint style="info" %}
+In order to be able to track the data sent via the API, there is a log for the data sent to Gouda and Europæiske (travel insurance and cancellation), These logs can be checked in the Internal Logs page of Setup
+{% endhint %}

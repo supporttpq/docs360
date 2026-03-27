@@ -6,7 +6,7 @@ Internal logs show a history of what people did in Tourpaq.
 
 Use it when you need to see who changed something. It also helps you understand what happened and when.
 
-<figure><img src="../.gitbook/assets/image (361).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (361).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
