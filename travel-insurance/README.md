@@ -234,6 +234,12 @@ These values must match the provider’s documentation.
 Choose which nationalities are allowed to book the product.\
 Example: Denmark, Bulgaria, Spain, Mallorca.
 
+
+
+{% hint style="info" %}
+In order to be able to track the data sent via the API, there is a log for the data sent to Gouda and Europæiske (travel insurance and cancellation), These logs can be checked in the [Internal Logs](../setup/internal-logs/insurance-payload-log-gouda-and-europaeiske.md) page of Setup
+{% endhint %}
+
 ***
 
 ### **Notes**
