@@ -190,7 +190,7 @@ Transport-related filters define **how** the customer is traveling:
 
 * **Transports**
 * **Real Transports**
-* **Transport Suppliers**
+* **Transport Suppliers (only supported for Charter Transport)**
 * **Transport Modes**
 * **Transport Types**
 
