@@ -122,7 +122,7 @@ The saved view will appear as a quick-access shortcut each time you open All Boo
 
 To rename or delete an existing saved view:
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. In the views bar, click the **three dots (⋯)** button to open **Manage Views**
 2. In the dialog that opens:
@@ -135,7 +135,7 @@ To rename or delete an existing saved view:
 
 ### Step 8 - Booking Selection (Checkbox Column)
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 1. Bookings Selection (Checkbox Column)
 
