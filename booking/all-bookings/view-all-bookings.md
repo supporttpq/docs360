@@ -122,7 +122,7 @@ The saved view will appear as a quick-access shortcut each time you open All Boo
 
 To rename or delete an existing saved view:
 
-<figure><img src="../../.gitbook/assets/image (561).png" alt="Manage Views dialog in All bookings"><figcaption><p>Manage saved views in All bookings.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 1. In the views bar, click the **three dots (⋯)** button to open **Manage Views**
 2. In the dialog that opens:
@@ -135,7 +135,7 @@ To rename or delete an existing saved view:
 
 ### Step 8 - Booking Selection (Checkbox Column)
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 1. Bookings Selection (Checkbox Column)
 
@@ -187,6 +187,8 @@ If multiple sms are queued with the same message and destination, only the first
 
 #### Filter Fields
 
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
 | Filter                           | Description                                                                          | Notes                                                |
 | -------------------------------- | ------------------------------------------------------------------------------------ | ---------------------------------------------------- |
 | **Brands**                       | One or more Brands to search within                                                  | Required — no results without a Brand                |
@@ -199,6 +201,7 @@ If multiple sms are queued with the same message and destination, only the first
 | **Status**                       | Booking status filter: OK, Cancelled, Error, Warning, Locked, Waiting List           | Leave blank to return all statuses                   |
 | **GDS Status**                   | GDS ticketing status for airline bookings                                            | Only relevant if GDS integration is active           |
 | **Bonus Code**                   | Promotional or bonus code applied at booking                                         |                                                      |
+| **Room types**                   | Filter by room types                                                                 |                                                      |
 | **Hotels**                       | Filter by hotel assignment                                                           |                                                      |
 | **Transports / Real Transports** | Filter by transport code or specific real transport                                  |                                                      |
 | **Extra**                        | Filter by extra type or extra category                                               |                                                      |
