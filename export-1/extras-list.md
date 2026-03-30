@@ -89,3 +89,43 @@ This module allows administrators to:
 
 * Auto-filters by selected extra.
 * Used when working with a specific extra service.
+
+***
+
+### FAQ
+
+#### Which report type should be used for suppliers who only need a readable document?
+
+Use **Extra List PDF (DE)** or **Extra List PDF (EN)**.
+
+Choose the language that matches the supplier workflow.
+
+#### When should **Extra List PDF with Costs** be used?
+
+Use it for accounting, reconciliation, or supplier price validation.
+
+It includes the extra prices in the exported document.
+
+#### What does **Display all extras** do?
+
+It ignores the selection in **Extras**.
+
+The export then includes all extras that match the other active filters.
+
+#### Why are expected extras missing from the export?
+
+Check **Supplier**, **Arrival period**, **Booking period**, **Categories**, and **Extras** first.
+
+Missing results are usually caused by filters that are too narrow.
+
+#### What is the difference between exporting from **Export → Extras Lists** and from a supplier or extra record?
+
+The export logic is the same.
+
+The difference is that the supplier or extra context can already prefilter the result.
+
+#### When should **Compress as ZIP** be used?
+
+Use it when the file is large or will be sent by email.
+
+This reduces file size and helps avoid attachment limits.

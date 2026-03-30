@@ -114,8 +114,6 @@ The export file include the following columns:
 | REQUEST (Date & Time)   | Request time                    |
 | CONFIRMED (Date & Time) | Confirmed time                  |
 
-
-
 ***
 
 ### Example Workflow
@@ -134,3 +132,43 @@ The export file include the following columns:
 * The exported file can be shared with suppliers or used for performance tracking.
 * Always verify the selected date range before export to avoid incomplete data.
 * The **Edit** buttons allow full control of what is included in the final report.
+
+***
+
+### FAQ
+
+#### Which supplier should be selected when a report is needed for one golf course only?
+
+Select that specific supplier in **Supplier**.
+
+This limits the export to bookings linked to that golf course partner.
+
+#### What does **Display all Extras** do?
+
+It includes all extras that match the other active filters.
+
+Use it when golf-related services may be stored as separate extras.
+
+#### Why are expected golf bookings missing from the export?
+
+Check **Supplier**, **Arrival Period**, **Booking Period**, **Categories**, and **Extras** first.
+
+Missing rows are usually caused by filters that are too narrow.
+
+#### When should **Compress as ZIP** be used?
+
+Use it when the export file is large or must be sent by email.
+
+This reduces file size and helps avoid attachment limits.
+
+#### What does **Use old export** do?
+
+It enables the legacy export format.
+
+Use it only when compatibility with an older downstream workflow or partner format is required.
+
+#### Can the exported columns be customized?
+
+Yes.
+
+Use **Columns for Export** to decide which fields appear in the output file.

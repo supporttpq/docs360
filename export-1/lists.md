@@ -119,3 +119,49 @@ You can **automate exports** by setting up schedules.
 | ------------------ | --------------------------------------------------------------------------------------- |
 | **Export**         | Immediately generates an export file based on current filter and sends or downloads it. |
 | **Show schedules** | Displays existing scheduled exports and allows editing or creating new ones.            |
+
+***
+
+### FAQ
+
+#### Which report type should be used for hotel reception?
+
+Use **Rooming list**.
+
+It includes passenger-level details, room context, and travel information needed by hotel staff.
+
+#### Which report type should be used for destination staff or guides?
+
+Use **Guide list**.
+
+It includes contact details, transfer information, comments, and selected extras.
+
+#### Why are some bookings missing from the export?
+
+Check the active filters first.
+
+The most common causes are date ranges, hotel or resort filters, transport filters, or the selected report type.
+
+#### When should **Changes since** be used?
+
+Use **Changes since** only with **Changes List**.
+
+It limits the result to bookings changed after the selected date.
+
+#### Why are canceled bookings not included?
+
+Canceled bookings are excluded from standard operational lists.
+
+Use **Ccl. Bookings List** when canceled bookings must be exported.
+
+#### When should **Compress as ZIP** be used?
+
+Use it when the export file is large or sent by email.
+
+This helps reduce file size and avoid attachment size limits.
+
+#### Why did a scheduled export stop running?
+
+Schedules not used for 7 days are automatically disabled.
+
+Use **Get Latest Result** regularly to keep the schedule active.

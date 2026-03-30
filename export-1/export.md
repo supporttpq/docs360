@@ -166,3 +166,59 @@ Before generating an export:
 * Pay attention to status transitions: `ERROR` ↔ `OK` define inclusion/exclusion in exports.
 * Many exports share structure logic (inherit or reuse parsers where possible).
 * Data anomalies usually stem from edge cases in booking status transitions or outdated rules.
+
+***
+
+### FAQ
+
+#### Which export should be used for hotel reception or room allocation?
+
+Use the **Rooming List Export**.
+
+It includes passenger-level details, room context, and arrival/departure information needed by hotel operations.
+
+#### Which export should be used for guides or destination staff?
+
+Use the **Guide List Export**.
+
+It adds transfer data, insurance details, contact information, comments, and selected supplements.
+
+#### Why are canceled bookings missing from standard exports?
+
+Canceled bookings are normally excluded from standard operational exports.
+
+Use the **Canceled Booking Export** when canceled bookings must be reviewed separately.
+
+#### When should **Changes From** be used?
+
+Use **Changes From** for the **Bookings Change List Export**.
+
+It limits the result to bookings changed on or after the selected date, based on booking history.
+
+#### Can bookings in `ERROR` status appear in an export?
+
+Yes, but only in specific cases.
+
+This mainly applies to change tracking or status transitions where a booking moved between `ERROR` and `OK`.
+
+#### Why does an export contain fewer bookings than expected?
+
+Check the active filters first.
+
+The most common causes are date intervals, hotel or resort filters, transport filters, or a mismatch between booking date and stay date.
+
+#### When should ZIP compression be used?
+
+Use ZIP compression when the export file is large or sent by email.
+
+This reduces file size and helps avoid attachment size limits.
+
+***
+
+### Related pages
+
+* [Lists](lists.md) — Export booking lists with filters, report types, and scheduling support.
+* [Export - Scheduled Reports](../export/export.md) — Configure recurring export delivery.
+* [Extras List](extras-list.md) — Export supplier-facing extra service data.
+* [Flight Transfer Export](../flight-transfer-export.md) — Export transfer-related transport data.
+* [Golf Course Report](../tee-time-extras-list/golf-course-report.md) — Export tee time and golf-related operational data.
