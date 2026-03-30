@@ -197,7 +197,7 @@ Example: Export bookings for a specific departure period to generate a report.
 
 ### Field Reference
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (761).png" alt=""><figcaption></figcaption></figure>
 
 #### Toolbar Buttons
 
@@ -230,6 +230,7 @@ Example: Export bookings for a specific departure period to generate a report.
 | **Internal Comment**             | Search bookings containing specific text in internal comments                                                                       | `Group leader`            |
 | **Bonus Code**                   | Filter by promotional or bonus codes applied at booking time                                                                        | `SUMMER26`                |
 | **Hotels**                       | Filter by hotel name or hotel assignment                                                                                            | `Grand Hotel`             |
+| **Room Types**                   | Filter by room type. If a hotel is selected, filtering will be done by the room types of the selected hotel.                        | `2/22`                    |
 | **Transports / Real Transports** | Filter by transport code or specific real transport assignments                                                                     | `SK1234`                  |
 | **Extra**                        | Filter by extra type and/or extra category                                                                                          | `Travel Insurance`        |
 | **Owners**                       | Filter by the agent, user, or company responsible for the booking                                                                   | `RW/TPQ`                  |
@@ -246,6 +247,7 @@ Example: Export bookings for a specific departure period to generate a report.
 | **Transport**           | Transport type and code assigned to the booking                                                                                                               |
 | **Resort**              | Destination resort                                                                                                                                            |
 | **Hotel**               | Hotel assigned to the booking                                                                                                                                 |
+| **Room Type**           | Room type and code assigned to the booking                                                                                                                    |
 | **Bkg. Date**           | The date the booking was created                                                                                                                              |
 | **Bkg. Time**           | The time the booking was created                                                                                                                              |
 | **Nights / No.**        | Number of nights included in the accommodation                                                                                                                |
