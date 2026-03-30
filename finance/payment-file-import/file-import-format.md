@@ -78,7 +78,7 @@ Note on amount encoding: amounts are stored as integers in the smallest currency
 
 <table data-header-hidden><thead><tr><th width="109.5555419921875"></th><th></th></tr></thead><tbody><tr><td>FI08</td><td>Batch Summary · Trimmed length: 53 characters · Appears once after last FI03</td></tr></tbody></table>
 
-The FI08 record closes the payment batch. It provides control totals that can be used to verify the integrity of all FI03 records: the total record count and the total of all amounts.&#x20;
+The FI08 record closes the payment batch. It provides control totals that can be used to verify the integrity of all FI03 records: the total record count and the total of all amounts.
 
 {% hint style="info" %}
 The importer does not currently read this record, but it should be used for reconciliation.
@@ -94,10 +94,10 @@ FI0808204022600000000132000000068752200000000000000000
 
 <table data-header-hidden><thead><tr><th width="112.888916015625"></th><th></th></tr></thead><tbody><tr><td>FI09</td><td>File Trailer · Trimmed length: 53 characters · Appears once, last line</td></tr></tbody></table>
 
-The FI09 record is the file-level footer. It repeats the creditor identification from FI01 and provides a final record count covering the entire file.&#x20;
+The FI09 record is the file-level footer. It repeats the creditor identification from FI01 and provides a final record count covering the entire file.
 
 {% hint style="info" %}
-Can be used as a second-level integrity check, independent of the batch summary in FI08.&#x20;
+Can be used as a second-level integrity check, independent of the batch summary in FI08.
 {% endhint %}
 
 **Example line:**
@@ -131,3 +131,84 @@ FI09 0 45801012 0032479081 0000000000 1 0000000132
 ```
 
 Spaces have been inserted between fields in the annotated sample above for readability only. The actual file contains no spaces between fields — every field is contiguous.
+
+## 8. FAQ
+
+#### Which lines matter for the Tourpaq import?
+
+The import logic mainly depends on:
+
+* **FI02** for creditor validation
+* **FI03** for individual payment data
+
+**FI08** and **FI09** are useful for reconciliation and integrity checks, but the importer does not currently use them to create payments.
+
+#### Which FI03 fields must be correct for a payment to import properly?
+
+The most important fields are:
+
+* **BookingNo**
+* **PayerID**
+* **TrackingCode**
+* **AccountingDate**
+* **Amount**
+* **DateCustomerPaid**
+
+If one of these values is malformed, the payment may fail validation, import incorrectly, or be hard to reconcile afterward.
+
+#### Which date is used as the payment date in Tourpaq?
+
+That depends on the import setup.
+
+This file contains both:
+
+* **DateCustomerPaid**
+* **AccountingDate**
+
+In many finance flows, **AccountingDate** is the value used for posting and reconciliation. Validation should still include both dates because they describe different stages of the transaction.
+
+#### Can BookingNo and PayerID contain different values?
+
+Partly.
+
+**BookingNo** is the first 12 characters of **PayerID**. The last 3 characters in **PayerID** are a suffix sequence. If the first 12 characters do not match the intended booking reference, the payment may be linked incorrectly or rejected by downstream validation.
+
+#### Why is the Amount field 15 characters long?
+
+The file stores the amount as a zero-padded integer in the smallest currency unit.
+
+Example:
+
+* `000000000099600` = `99600` øre = **996.00**
+
+The importer divides the raw value by **100** before storing the final payment amount.
+
+#### Can FI08 and FI09 be ignored?
+
+They should not be ignored during file validation.
+
+Even though the importer does not currently parse them into payments, they help confirm:
+
+* the expected number of payment records
+* the expected grand total
+* the file-level consistency of the import source
+
+These checks are useful when investigating missing or duplicated payments.
+
+#### What is the safest way to test a modified PBS file?
+
+Validate the file in this order:
+
+1. Confirm the **FI02 CreditorNumber** matches the expected test setup.
+2. Confirm each edited **FI03** line keeps its fixed-width length.
+3. Confirm **BookingNo**, **PayerID**, dates, and **Amount** still sit at the correct positions.
+4. Recalculate **FI08** and **FI09** totals if the test process depends on reconciliation.
+5. Import the file and verify the result in payment registration.
+
+## Related pages
+
+* [Payment File Import](./) — import the bank file and validate payment lines.
+* [Payment Registration](../payment-registration.md) — review imported payments after processing.
+* [Refund File Import](../refund-file-import.md) — handle imported refund transactions instead of incoming payments.
+* [Method of Payment](../method-of-payment.md) — configure the payment method used for bank imports.
+* [Balance Administration](../../balance-administration.md) — reconcile balances after payment import.
