@@ -97,3 +97,5 @@ Use the **sidebar** on the left to navigate between sections, or press **`Ctrl +
 {% hint style="success" %}
 **Ready to begin?** Head to [Getting Started](https://manual.tourpaq.com/getting-started) if you're new, or use the sidebar to jump straight to the module you need.&#x20;
 {% endhint %}
+
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-cover data-type="image">Cover image</th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Quick Start</td><td><a href=".gitbook/assets/images (3).jpeg">images (3).jpeg</a></td><td><a href="tourpaq-manual/readme/first-login-and-account-setup.md">first-login-and-account-setup.md</a></td></tr><tr><td></td><td></td><td></td></tr></tbody></table>
