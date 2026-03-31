@@ -179,9 +179,20 @@ Where:
 Once added, rules are scheduled to update the profit margins.\
 The same rule can be defined for different departure intervals.
 
-**Example:** Profit margin rules are defined below:
+**Example:** Profit margin rules are defined below, and the logic is as follows:
+
+* You place/modify a rule
+* The profit margin rule becomes pink
+* The system calculates the PM1 on the affected PLTAS
 
 <figure><img src=".gitbook/assets/image (2) (1) (1) (1) (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+* Afterwards, the system calculates P1 in relation to PM1.
+* The pink disappears when both calculations are completed.
+
+{% hint style="warning" %}
+Before the system calculates P1 in relation to PM1, a period of time must be waited until the service runs, depending on how much is set by the super administrator (the calculation is not done immediately).
+{% endhint %}
 
 <figure><img src=".gitbook/assets/image (4) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
