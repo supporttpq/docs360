@@ -43,7 +43,7 @@ Texts from general settings can be customized per active brand.
 
 #### A. General Information
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Name** - Internal name of the extras category.
 
@@ -77,7 +77,7 @@ Texts from general settings can be customized per active brand.
 
 #### B. Filtering Options
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;**Display in Remember Extras** - Allows this category to appear in the "Remember Extras" functionality.
 
@@ -89,7 +89,7 @@ Texts from general settings can be customized per active brand.
 
 #### C. Settings
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 This section controls operational logic.
 
@@ -117,6 +117,8 @@ Category Type - Assign to a category type
 Ticket Category - Connects extras to ticketing logic
 
 * **Default:** None
+
+Round Rule -  If a round rule is specified, then it is applied to the price before it is used in a booking. If the price is a per-day price, the round rule is applied after the full price for the booking is calculated.
 
 Hide for Customer - If checked, this will hide the extras on the ticket, in webbooking, and in customer center. This is often combined with " Include in Basic Price", which is set on the Extras.
 
