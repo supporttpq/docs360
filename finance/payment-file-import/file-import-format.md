@@ -185,7 +185,7 @@ The importer divides the raw value by **100** before storing the final payment a
 
 #### Can FI08 and FI09 be ignored?
 
-They should not be ignored during file validation.
+They should not be ignored during file validation. In the test environment, these can be ignored in generating the payment file.
 
 Even though the importer does not currently parse them into payments, they help confirm:
 
@@ -201,9 +201,8 @@ Validate the file in this order:
 
 1. Confirm the **FI02 CreditorNumber** matches the expected test setup.
 2. Confirm each edited **FI03** line keeps its fixed-width length.
-3. Confirm **BookingNo**, **PayerID**, dates, and **Amount** still sit at the correct positions.
-4. Recalculate **FI08** and **FI09** totals if the test process depends on reconciliation.
-5. Import the file and verify the result in payment registration.
+3. Confirm **BookingNo**, **PayerID**, **Dates**, and **Amount** still sit at the correct positions.
+4. Import the file and verify the result in payment registration.
 
 ## Related pages
 
