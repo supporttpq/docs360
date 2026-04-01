@@ -88,6 +88,7 @@
   * [Customer offers automatic flow](offers/customer-offer-automatic-flow.md)
 * [Campaign Statistics](campaign-statistics.md)
 * [Live Offer Confirmation](live-offer-confirmation.md)
+* [Opera Integration (Tourpaq → PMS)](opera-integration-tourpaq-pms.md)
 
 ## Customer
 
