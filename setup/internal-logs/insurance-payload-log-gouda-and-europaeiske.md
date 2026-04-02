@@ -57,9 +57,7 @@ Access is provided via:
 
 ### Interface Overview
 
-<figure><img src="../../.gitbook/assets/image (756).png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../.gitbook/assets/image (772).png" alt=""><figcaption></figcaption></figure>
 
 The interface consists of two main sections:
 
@@ -70,6 +68,7 @@ Located at the top of the page:
 * **Date period** – defines the time interval for logs
 * **Select user** – filters logs by user
 * **Select type** – filters by entity type (e.g. _InsuranceHistory_)
+* **Filter type ID** - filters by Key ID
 * **Display** – loads results
 * **Clear** – resets filters
 * **Export** – downloads the result set
@@ -104,7 +103,7 @@ Each log entry contains the following fields:
 #### - Insurance Booking date: Date when the insurance product was added to the booking.
 
 * Reflects when insurance became active in the booking
-* May differ from booking creation date
+* May differ from the booking creation date
 
 #### -  Type of insurance: Defines the insurance category (Travel Insurance)
 
@@ -163,7 +162,7 @@ The system will automatically generate log entries.
 * A log entry is created each time a payload is sent to Gouda or Europæiske
 * Applies to both Travel and Cancellation insurance
 * Logs are stored in Elastic
-* Data retention is minimum **12 weeks**
+* Data retention is a minimum of **12 weeks**
 * Logs are read-only and cannot be modified
 
 If transmission fails:
