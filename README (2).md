@@ -12,7 +12,7 @@ This manual covers everything you need to use, configure, and manage the **Tourp
 Whether you're a booking agent handling daily reservations, a system administrator setting up the platform, or a finance manager tracking payments and profitability, this manual has a dedicated section for you.
 
 {% hint style="info" %}
-**New to Tourpaq?** Start with the [Getting Started](https://manual.tourpaq.com/getting-started) section. It takes about 15 minutes and will give you a solid foundation before diving into any specific module.
+**New to Tourpaq?** Start with the [Getting Started](<README (1).md>) section. It takes about 15 minutes and will give you a solid foundation before diving into any specific module.
 {% endhint %}
 
 ***
