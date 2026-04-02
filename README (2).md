@@ -51,7 +51,7 @@ Use the **sidebar** on the left to navigate between sections, or press **`Ctrl +
 
 | Section                                                                           | What it covers                                                          |
 | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| 🚀 [Getting Started](https://manual.tourpaq.com/getting-started)                  | First login, key concepts, system navigation, role-based learning paths |
+| 🚀 [Getting Started](<README (1).md>)                                             | First login, key concepts, system navigation, role-based learning paths |
 | 📊 [Dashboard](https://manual.tourpaq.com/dashboard/dashboard)                    | Sales overview, widgets, filters, and KPI explanations                  |
 | 🔔 [Notifications](https://manual.tourpaq.com/notifications/notification)         | System alerts and notification management                               |
 | 📋 [Booking](https://manual.tourpaq.com/booking/all-bookings)                     | Creating, editing, and managing all booking types                       |
