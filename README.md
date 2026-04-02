@@ -56,7 +56,7 @@ Updates are deployed continuously and documented here as they go live.
 ### Recent release history
 
 {% updates format="full" %}
-{% update date="2026-04-02" %}
+{% update date="2026-04-27" %}
 ## 2026-04 (Documentation updates)
 
 * 📄 **What's new** was added to track recent Tourpaq releases and documentation updates. See [What's new](./).
@@ -64,6 +64,15 @@ Updates are deployed continuously and documented here as they go live.
 * 📄 **Allotments** was updated with manual allotments, linked-to-transport allotments, and generic allotment guidance for Extras. See [Allotments](extras-setup/extras/allotments.md).
 * 📄 **Print Tickets** was updated with clearer single-booking and bulk reprint workflows. See [Print Tickets](tickets/print-tickets.md).
 * 📄 **Autobilling** was updated with prerequisites, invoice generation flow, lifecycle states, and troubleshooting. See [Autobilling](autobilling/).
+* 🟢 Editable board hotel allotment. See [Hotel Allotment](hotel/hotel-creation/hotel-allotments/editable-board.md).
+* 🟢 Log for Gouda & Europeiske insurance. See [Internal Logs](setup/internal-logs/insurance-payload-log-gouda-and-europaeiske.md).
+* 🟢 Land days to Real Transports. [See Real Transport - Departures](real-transports/departures/add-land-days-to-real-transports-offset-handling.md).
+* 🟢 Releases/Stop Sales Log. See [Releases/Stop Sales Log](releases-stop-sales-log.md).
+* 🔵 Hotel Release reporting. See [Hotel release - Reporting](hotel/hotel-creation/releases/hotel-release-reporting.md).
+* 🔵 Remove GMT Offset. See [Arrival Gateway](setup/arrival-gateways/) & [Departure Gateway](setup/departure-gateways/).&#x20;
+* 🔵 Improvement to the new price list. See [Price List](price-list/pricelist.md#price-list-search).
+* 🔵 Add code/name where missing in fields/tables. See [Special Offers](special-offers.md) & [Flight change](flight-change/).
+* 🔵 Rounding on Extras & Discount/Supplements. See the [Extras Category](extras-category/) & [Discounts/Supplements Categories ](disc-suppl-categories.md)
 {% endupdate %}
 
 {% update date="2026-03-17" tags="tourpaq-v15.0" %}
