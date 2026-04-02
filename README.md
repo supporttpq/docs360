@@ -1,7 +1,7 @@
 ---
 description: Recent Tourpaq releases, fixes, improvements, and documentation updates.
 noIndex: true
-icon: sparkles
+icon: burst-new
 ---
 
 # What's new
@@ -56,21 +56,20 @@ Updates are deployed continuously and documented here as they go live.
 ### Recent release history
 
 {% updates format="full" %}
-{% update date="2026-03-23" %}
-## Tourpaq v15.1
+{% update date="2026-04-02" %}
+## 2026-04 (Documentation updates)
 
-* 🟢 **Add booking interval support in Discount Extra bed**. See [Discount Extra Bed](hotel/hotel-creation/#discexbeds)
-* 🔵[Autobilling](autobilling/)
-* 🔵 [Ticket](/broken/pages/cst8PihqkIPBa2PBX4jt)
-* 🔵 **How to create and use Extras generic allotment**. See [Generic Allotment](extras-setup/extras/allotments.md#generic-allotment)
-* 🔵 **Improvments on search price list**. See [Price List](price-list/pricelist.md#price-list-search)
-* 🟢 **What's new**: page tracks recent Tourpaq releases and documentation updates. See [What's new](./)
+* 📄 **What's new** was added to track recent Tourpaq releases and documentation updates. See [What's new](./).
+* 📄 **Price List** was updated with clearer search behavior, display logic, and bulk pricing guidance. See [Price List](price-list/pricelist.md).
+* 📄 **Allotments** was updated with manual allotments, linked-to-transport allotments, and generic allotment guidance for Extras. See [Allotments](extras-setup/extras/allotments.md).
+* 📄 **Print Tickets** was updated with clearer single-booking and bulk reprint workflows. See [Print Tickets](tickets/print-tickets.md).
+* 📄 **Autobilling** was updated with prerequisites, invoice generation flow, lifecycle states, and troubleshooting. See [Autobilling](autobilling/).
 {% endupdate %}
 
 {% update date="2026-03-17" tags="tourpaq-v15.0" %}
 ## 2026-03 (Tourpaq v15.0)
 
-* 🟢 **Transport Rules: automatic extension of transport rules. See** [edit-transport-rule.md](transport-rules/edit-transport-rule.md "mention")
+* 🟢 **Transport Rules** added automatic extension support for transport rules. See [Edit Transport Rule](transport-rules/edit-transport-rule.md).
 * 🔵 **Hotel release automation** now flags unused allotments as **Suitable for release** and emails suppliers automatically. See [Hotel release - automation](hotel/hotel-creation/releases/hotel-release-automation.md).
 * 🔵 **Transport Rule Weekdays Support** adds weekday-based generation for transport rules that use two external providers. See [Transport Rule Weekdays Support](transport-rules/transport-rule-weekdays-support.md).
 * 🔵 **Hotel release rules** were expanded with clearer day-level release logic, release-status recalculation, and editable past-date handling. See [Releases](hotel/hotel-creation/releases/).
