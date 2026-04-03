@@ -36,7 +36,7 @@ Setup → Destinations → Arrivals
 
 ### Editable Fields
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 IATA Code - Can be updated if necessary.
 

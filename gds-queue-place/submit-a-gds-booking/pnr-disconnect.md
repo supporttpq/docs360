@@ -122,6 +122,46 @@ To cancel a booking in Amadeus, follow these steps:
     <figure><img src="../../.gitbook/assets/image (596).png" alt="Cancel Booking button in the GDS tab"><figcaption><p>Cancel Booking sends the cancellation to Amadeus.</p></figcaption></figure>
 * Confirm the action
 
+### PNR Visibility in All Bookings
+
+#### Overview
+
+The **PNR (Passenger Name Record)** assigned to a booking remains visible in the **All Bookings** view at all times.
+
+***
+
+#### Behavior
+
+* The **PNRS** column continues to display the assigned PNR as usual.
+* The PNR remains visible even if:
+  * The **booking is cancelled**
+  * The **PNR is disconnected** from the booking
+
+This ensures consistent access to PNR information regardless of booking status.
+
+***
+
+#### Purpose
+
+Keeping the PNR visible allows users to quickly access and reference PNR details, even for cancelled or disconnected bookings, without needing additional lookup steps.
+
+***
+
+#### Example
+
+A cancelled booking will still display its associated PNR in the **All Bookings** list, just like an active booking. This provides continuity and simplifies follow-up actions or investigations.
+
+***
+
+#### Screenshot
+
+Add a screenshot showing:
+
+* The **All Bookings** list
+* A **cancelled booking** with a visible PNR
+
+
+
 ### FAQ
 
 #### Does disconnecting a PNR cancel anything in Amadeus?

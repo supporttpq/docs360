@@ -34,7 +34,7 @@ Go to:
 
 This is the same area where you manage offer texts, images, and templates. See [Select text for Offers](select-text-for-offers.md).
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (67).png" alt="Automatic offer reminder settings in Brand → Select Offer"><figcaption><p>Brand settings for reminder schedule days and email/SMS reminder templates.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (68).png" alt="Automatic offer reminder settings in Brand → Select Offer"><figcaption><p>Brand settings for reminder schedule days and email/SMS reminder templates.</p></figcaption></figure>
 
 ***
 
@@ -77,7 +77,7 @@ You may see these as checkboxes in the Brand setup and/or when working with the 
 
 ### Use automatic reminders on an offer
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (22).png" alt="Enable scheduled email/SMS reminders on an offer"><figcaption><p>Enable Send Schedule Email and/or Send Schedule SMS on the offer.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (23).png" alt="Enable scheduled email/SMS reminders on an offer"><figcaption><p>Enable Send Schedule Email and/or Send Schedule SMS on the offer.</p></figcaption></figure>
 
 {% stepper %}
 {% step %}
