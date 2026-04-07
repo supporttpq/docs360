@@ -62,7 +62,7 @@ The **Hotel Room** tab in **Tourpaq Office** lets you manage **hotel room alloca
    * Click **Print Ticket**.
    * The assigned **room number** is printed on the ticket so that both the customer and the hotel can see the exact room assignment.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (78).png" alt="Hotel Room tab showing available (green) rooms to assign to a booking"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (79).png" alt="Hotel Room tab showing available (green) rooms to assign to a booking"><figcaption></figcaption></figure>
 
 ***
 

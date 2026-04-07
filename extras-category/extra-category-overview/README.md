@@ -89,7 +89,7 @@ The available options in the dropdown are identical to those defined in:
 
 * **Setup > System Setup > Settings > Profit margin round rule**
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### How to Configure a New Extras Category
 

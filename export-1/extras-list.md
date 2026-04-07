@@ -33,7 +33,7 @@ This module allows administrators to:
 
 ### Fields & Filters
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 | Field                  | Description                                                                           |
 | ---------------------- | ------------------------------------------------------------------------------------- |
@@ -78,8 +78,8 @@ This module allows administrators to:
 **Navigation**: `Users → Suppliers → [Choose Supplier] → Communication`
 
 * Automatically filters by selected supplier.
-* Additional filters like dates and brand can be applied.
-* Used to quickly generate extras reports for that specific supplier.
+* Additional filters, such as dates and brand, can be applied.
+* Used to generate extra reports for that specific supplier quickly.
 
 ***
 

@@ -53,7 +53,7 @@ Only passengers with an email address entered will receive the individual paymen
 3. Go to the **Customer Data** tab.
 4. In the **E-mail** column, enter the email address for each passenger who should receive the payment link.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (30).png" alt="Edit Passenger: add passenger email addresses under Customer Data"><figcaption><p>Enter an email address for each passenger who should receive an individual payment email.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (31).png" alt="Edit Passenger: add passenger email addresses under Customer Data"><figcaption><p>Enter an email address for each passenger who should receive an individual payment email.</p></figcaption></figure>
 
 5. Click **Save Changes**.
 {% endstep %}
@@ -67,7 +67,7 @@ Only passengers with an email address entered will receive the individual paymen
 
 <figure><img src="../../.gitbook/assets/image (246).png" alt="Booking page: Individual payment button"><figcaption><p>Send the email from the booking page.</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (7).png" alt="Individual payment email send dialog"><figcaption><p>Confirm the send action (dialog may vary by setup).</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (8).png" alt="Individual payment email send dialog"><figcaption><p>Confirm the send action (dialog may vary by setup).</p></figcaption></figure>
 {% endstep %}
 
 {% step %}

@@ -18,7 +18,7 @@ Common tasks:
 * Preview what was sent to the customer.
 * Export the filtered list for operations and audits.
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (2).png" alt="Tourpaq Office E-tickets Overview page showing e-ticket email list, filters, and delivery status columns"><figcaption><p>E-tickets Overview in Tourpaq Office. Use it to monitor e-ticket email delivery status and troubleshoot failed or missing ticket emails.</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (3).png" alt="Tourpaq Office E-tickets Overview page showing e-ticket email list, filters, and delivery status columns"><figcaption><p>E-tickets Overview in Tourpaq Office. Use it to monitor e-ticket email delivery status and troubleshoot failed or missing ticket emails.</p></figcaption></figure>
 
 {% hint style="info" %}
 E-tickets are automatically generated and attached to system emails sent to customers after booking or booking updates
