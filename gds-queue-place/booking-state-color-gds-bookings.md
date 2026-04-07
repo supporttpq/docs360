@@ -20,7 +20,7 @@ This functionality is used in combination with:
 GDS bookings are marked with a **colored dot** corresponding to their booking status.\
 The color is consistent across all supported pages and reflects the real-time status of the booking.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>All Bookings State Color</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>All Bookings State Color</p></figcaption></figure>
 
 ***
 
