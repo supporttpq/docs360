@@ -155,17 +155,79 @@ Example:
 
 #### 2. Bulk Action Menu
 
+**Overview**
+
+This functionality enables sending emails to a large number of bookings directly from the **All Bookings** page. It is designed for high-volume scenarios, especially critical situations where rapid communication is required.
+
 Above the booking table, the following actions are available:
 
 #### Send Email
 
-Allows sending an email to all selected bookings.
+Bulk Selection and Sending
+
+* Users can select **one booking**, **different bookings,** or **all bookings** from the _All Bookings_ page
+* A single **Send Email** action applies to the entire selection
+
+<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 Typical use cases:
 
 * Sending travel documents
 * Sending booking confirmations
 * Sending reminders or updates
+
+#### Step-by-step interaction
+
+1. **Select bookings**
+   * Users select multiple bookings using the checkboxes in the list
+2. **Trigger action**
+   * Click **Send email** (highlighted on the left side of the image)
+3. **Send Email modal opens**
+   * The pop-up contains:
+     * Subject field
+     * Rich text editor for email body
+     * Attachment option (bottom left)
+     * **“Don’t send attachments” checkbox (bottom right)**
+     * Send button
+
+#### Checkbox: “Don’t send attachments”
+
+* **Location:**\
+  Bottom-right corner of the Send Email popup (visible in image)
+* **Behavior:**
+  * When checked:
+    * Attachments are excluded from emails
+      * Sending speed increases significantly
+* **Tooltip text:**
+
+> If enabled, emails will be sent faster. This is especially useful when sending large volumes (e.g. 1,000+ emails) in a short time.
+
+* **Functional Behavior**
+  * With attachments
+    * Emails include selected files
+    * Larger payload → slower delivery
+  * Without attachments
+    * Attachments are skipped
+    * Smaller payload → faster processing and delivery
+
+#### Example Scenario
+
+* User selects 11,000 bookings
+* Opens Send Email modal
+* Enables **Don’t send attachments**
+* Clicks **Send email**
+
+**Expected result:**
+
+* Emails are processed in parallel
+* Delivery completed within 30–60 minutes
+* No need for manual batching
+
+<img src="../../.gitbook/assets/file.excalidraw (6).svg" alt="" class="gitbook-drawing">
+
+***
+
+#### Send SMS
 
 ***
 
