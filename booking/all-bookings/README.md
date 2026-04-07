@@ -137,7 +137,7 @@ If you run the same filter combination regularly, click **Save View** to save it
 
 #### Step 8 - Booking Selection (Checkbox Column)
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 1. Bookings Selection (Checkbox Column)
 
@@ -170,7 +170,7 @@ Bulk Selection and Sending
 * Users can select **one booking**, **different bookings,** or **all bookings** from the _All Bookings_ page
 * A single **Send Email** action applies to the entire selection
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 Typical use cases:
 
@@ -361,11 +361,11 @@ For teams with many configured transports, hotels, or users, the filter dropdown
 
 After clicking Display, three additional analysis views are available. All statistics are calculated **per passenger** by default.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Available Statistics Types
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 | Category              | Available breakdowns                                   |
 | --------------------- | ------------------------------------------------------ |
@@ -376,7 +376,7 @@ After clicking Display, three additional analysis views are available. All stati
 | **Percentage**        | Total                                                  |
 | **Possible vs. Sold** | Total, Per Country                                     |
 
-#### **A**Additional Analysis Tools
+#### Additional Analysis Tools
 
 | Tool                                       | Description                                                                                                                                             |
 | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- |

@@ -6,7 +6,7 @@ The **Actions** tab lets you run **contract-level bulk actions**. You can reimpo
 
 ***
 
-<figure><img src="../.gitbook/assets/image (8) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -84,7 +84,7 @@ Check the relevant tabs after the reimport. Focus on **Rooms**, **Periods**, and
 * Always verify results after reimport, especially in the **Rooms**, **Periods**, and **Costs** tabs.
 * A confirmation will appear if unsaved changes exist on the contract.
 
-<figure><img src="../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Share tab
 

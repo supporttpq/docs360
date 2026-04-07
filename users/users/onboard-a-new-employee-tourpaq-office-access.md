@@ -64,7 +64,7 @@ Common actions:
 * Set **User Blocked** to prevent login.
 * Delete a user (only when deletion rules allow it).
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1).png" alt="Users Management list with user identity, role, brands, and block/delete controls"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1).png" alt="Users Management list with user identity, role, brands, and block/delete controls"><figcaption></figcaption></figure>
 
 #### User profile (create/edit)
 
