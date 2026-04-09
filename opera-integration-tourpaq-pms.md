@@ -2,6 +2,9 @@
 
 ## Overview
 
+Opera is a portal (Leisure & Hospitality Service) in which a hotel must be managed (rooms, allotment, etc.), as well as a booking system.\
+Each room in the Opera has a certain state: ready for accommodation, if the room is clean, if it needs room service, etc.
+
 The Opera integration connects Tourpaq with **Oracle Opera PMS**, enabling synchronization of hotels, allotments, extras, bookings, and customer data.
 
 This integration ensures that availability, pricing elements, and reservations created in Tourpaq are correctly reflected in Opera, while maintaining a clear mapping between the two systems.
@@ -54,12 +57,28 @@ If a hotel is not marked as Managed by Opera, the integration will not correctly
 
 #### Overview
 
-Opera allotments must be mapped to Tourpaq hotel and room structures.
+Opera allotments must be mapped to Tourpaq hotel and room structures.&#x20;
 
-#### Mapping Logic
+Allotments, in Tourpaq, per hotel, are synchronized through a service called Bad Bank Service. Depending on the hotel's settings, this service pulls all the allotments related to the hotel connected to the opera
 
-* Opera Room Types → Tourpaq Room Types
-* Opera Rate/Inventory → Tourpaq Allotment
+#### Allotments (Inventory)
+
+In Opera, there are 3 types of inventory:
+
+*   Block -> defines the rooms that can be bought with/without transport;&#x20;
+
+    <figure><img src=".gitbook/assets/image (775).png" alt=""><figcaption></figcaption></figure>
+* Room
+*   House -> represents the total number of rooms we have in a hotel&#x20;
+
+    <figure><img src=".gitbook/assets/image (774).png" alt=""><figcaption></figcaption></figure>
+
+For each individual room, there are other rooms assigned. The Bad Bank service looks at Opera every day and notices if it has a shortage or availability.\
+The first time he searches the House, then on the individual room. If the latter is 0 or negative, the NO value from Hotel Allotment in Tourpaq will be updated.
+
+<figure><img src=".gitbook/assets/image (776).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (778).png" alt=""><figcaption></figcaption></figure>
 
 #### Behavior
 
@@ -192,6 +211,16 @@ The **Bed Bank tab** contains Opera-specific booking data required for synchroni
 If any required mapping is missing, the booking may fail during export.
 {% endhint %}
 
+<figure><img src=".gitbook/assets/image (773).png" alt=""><figcaption></figcaption></figure>
+
+In order for a booking to be sent to Opera, the credentials and an endpoint, which are used to communicate with Opera, are manually added to the Config system.
+
+**Disable Opera Connect**
+
+<figure><img src=".gitbook/assets/image (780).png" alt=""><figcaption></figcaption></figure>
+
+Disable Opera Connect checkbox from the booking page, is used when changes are made on Booking, to be communicated to Opera. The checkbox appears only if there are communication settings with Opera.
+
 ### Blocks – Mapping from Transport
 
 #### Overview
@@ -228,6 +257,8 @@ Passengers in Tourpaq must be mapped to Opera Profiles. Defines how passengers a
   * Email
   * Phone
   * Unique identifier
+
+<figure><img src=".gitbook/assets/image (779).png" alt=""><figcaption></figcaption></figure>
 
 #### Behavior
 
