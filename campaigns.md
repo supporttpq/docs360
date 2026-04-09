@@ -164,6 +164,34 @@ Adult passengers receive discounts. Adult age based on age larger than the "Chil
 
 Child passengers receive discounts. Child age based on the "Child price age" from the hotel; fallback is the agency Max child age.
 
+#### Examples
+
+#### Case 1: 2+1 (Child above hotel age)
+
+**Current**
+
+* Pricing: treated as ADT ✅
+* Discounts: treated as CHD ❌
+
+**Expected**
+
+* Passenger treated as **ADT everywhere**
+* Discounts/Supplements applied using **ADT logic**
+
+***
+
+#### Case 2: 1+1 (Child age 11, but full-paying)
+
+**Current**
+
+* Pricing: treated as ADT ✅
+* Discounts: only ADT gets a discount ❌
+
+**Expected**
+
+* Both passengers were treated as **ADT**
+* Both receive the **ADT discount**
+
 ### Discount Limit <a href="#discount-limit" id="discount-limit"></a>
 
 There are 2 types of discount limits
@@ -273,7 +301,9 @@ Campaign can be used in bookings like any other bonus code.
 
 After the allotment has been taken and the passenger details have been set, the Campaign code can be inserted into the Bonus code case.
 
-!!!Please note that the extras selected may be overwriten by the extras assigned to the campaign.
+{% hint style="warning" %}
+Please note that the extras selected may be overwritten by the extras assigned to the campaign.
+{% endhint %}
 
 After the bonus code has been entered, click outside of the Bonus code case to validate the campaign code, if the code is valid it will remain in the case.
 
