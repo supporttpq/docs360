@@ -89,7 +89,7 @@ Texts from general settings can be customized per active brand.
 
 #### C. Settings
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (781).png" alt=""><figcaption></figcaption></figure>
 
 This section controls operational logic.
 
@@ -98,7 +98,7 @@ Code - Unique short identifier.
 * **Purpose:** Used internally and for system integrations.
 * **Example:** `AKT`
 
-Sold Out Text - Text for pop up in webbooking and customer center
+Sold Out Text - Text for pop-up in web booking and customer center
 
 * **Example:** `No availability for selected dates.`
 
@@ -148,6 +148,10 @@ Link to column in transport - Shows allotment for “linked to transport” extr
 * **Checkbox**
 
 Show description & photo opened in WebBooking - Automatically expands description and image in booking flow.
+
+* **Checkbox**
+
+All stay days must be available - If selected, the extra is only eligible if it is available for the full booking period. Available only for Pension & Gala dinner extras category.
 
 * **Checkbox**
 
