@@ -67,7 +67,7 @@ Your company setup can define default values used when offers are sent:
 * **Default offer availability days**
 * **Default offer follow-up days**
 
-<figure><img src="../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Default offer availability days and follow-up days"><figcaption><p>Default offer availability and follow-up settings in company setup.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Default offer availability days and follow-up days"><figcaption><p>Default offer availability and follow-up settings in company setup.</p></figcaption></figure>
 
 {% hint style="warning" %}
 If you don’t have permission to change these defaults, ask your system administrator.
@@ -173,4 +173,4 @@ You will typically see:
 * **Sent offers** (not drafts/unsent)
 * **Success rate** (conversion performance)
 
-<figure><img src="../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Offer statistics"><figcaption><p>Statistics view showing sent offers and success rate per sales agent.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Offer statistics"><figcaption><p>Statistics view showing sent offers and success rate per sales agent.</p></figcaption></figure>

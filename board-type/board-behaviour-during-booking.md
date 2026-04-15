@@ -66,7 +66,7 @@ To support automatic upgrade/downgrade scenarios, board types must be ordered.
 
 * Move arrows are located between List Name and the delete (trash) icon
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 **Tooltip**
 
@@ -84,9 +84,9 @@ To support automatic upgrade/downgrade scenarios, board types must be ordered.
 
 #### New Option: All stay days must be available
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Location**
 
@@ -151,7 +151,7 @@ Some hotels have different board basis depending on the period (e.g. BB → HB)
   * main board basis
   *   supplements for differences
 
-      <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 4: Validate**
 
@@ -171,13 +171,11 @@ If NO valid combination is found:
 
 ***
 
-### Booking Behaviour
-
-If the user selects a combination:
-
 #### Ticket Display
 
-* The system displays the main board (highest order)
+*   The system displays the main board (highest order)&#x20;
+
+    <figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 #### Pricing
 
@@ -185,11 +183,13 @@ If the user selects a combination:
   * includes all supplements
   * is aggregated into the base booking price
 
+<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+
 ***
 
 ### Hotel Contract Import
 
-During import,the Board Supplements must automatically be set with:
+During import, the Board Supplements must automatically be set with:
 
 * "All stay days must be available" = TRUE
 
@@ -201,37 +201,61 @@ During import,the Board Supplements must automatically be set with:
 
 An extra is considered a board supplement if:
 
-* Category type = Pension
-* "Use Stay days in prices" is enabled
+* Category type = Pension&#x20;
+*   "Use Stay days in prices" is enabled
+
+    <figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+
+*   In the Prices tab, use the "Per day" checkbox marked&#x20;
+
+    <figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 #### Action
 
 * All such extras:
   * will be automatically updated:
-    * "All stay days must be available" = TRUE
+    *   "All stay days must be available" = TRUE&#x20;
+
+        <figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 ### Example Scenario
 
 #### Input
 
 * Booking: 7 nights
-* Hotel:
-  * days 1–3: BB
-  * days 4–7: HB
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+*   Hotel:
+
+    * days 1–3: BB
+    * days 4–7: HB
+
+    <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 * Board Types order:
   * HB (top)
   * BB
 
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+
 #### Output
 
-* The system:
-  * selects HB as the main board
-  * adds supplements for days 1–3
+*   The system:
+
+    * selects HB as the main board
+    * adds supplements for days 1–3&#x20;
+
+    <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 #### Result
 
 * Customer sees:
-  * HB for the entire stay
+  *   HB for the entire stay&#x20;
+
+      <figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 * Price:
   * includes upgrade supplements
 

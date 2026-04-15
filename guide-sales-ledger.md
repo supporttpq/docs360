@@ -44,7 +44,7 @@ Before working with the Guide Sales Ledger:
 * You must have an active Tourpaq Office user with **Financial** permissions (or admin access).
 * A System Administrator must enable access to **Guide Sales Ledger** in user permissions.
 
-<figure><img src=".gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Guide Sales Ledger permission in Finance menu"><figcaption><p>Enable Guide Sales Ledger in user permissions (Finance) to access the report.</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Guide Sales Ledger permission in Finance menu"><figcaption><p>Enable Guide Sales Ledger in user permissions (Finance) to access the report.</p></figcaption></figure>
 
 * Guide transactions (debit/credit entries) must already exist for the period.
 * Bookings, extras, and supplier mappings must be configured correctly.
@@ -53,7 +53,7 @@ Before working with the Guide Sales Ledger:
 
 ### How it works
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (4).png" alt="Guide Sales Ledger filters and results table"><figcaption><p>Filter guide transactions by payment period, guide, resort, and payment method.</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (5).png" alt="Guide Sales Ledger filters and results table"><figcaption><p>Filter guide transactions by payment period, guide, resort, and payment method.</p></figcaption></figure>
 
 ### 1. Select filters
 
@@ -139,7 +139,7 @@ The **Export** button (top right corner) downloads the data in XLSX format.
 
 The export includes:
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (5).png" alt="Guide Sales Ledger export to XLSX"><figcaption><p>Export the filtered Guide Sales Ledger results to XLSX for accounting and reconciliation.</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (6).png" alt="Guide Sales Ledger export to XLSX"><figcaption><p>Export the filtered Guide Sales Ledger results to XLSX for accounting and reconciliation.</p></figcaption></figure>
 
 * All displayed columns
 * Raw values (no rounding)

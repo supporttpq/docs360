@@ -6,7 +6,7 @@ The **Actions** tab lets you run **contract-level bulk actions**. You can reimpo
 
 ***
 
-<figure><img src="../.gitbook/assets/image (8) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -84,7 +84,7 @@ Check the relevant tabs after the reimport. Focus on **Rooms**, **Periods**, and
 * Always verify results after reimport, especially in the **Rooms**, **Periods**, and **Costs** tabs.
 * A confirmation will appear if unsaved changes exist on the contract.
 
-<figure><img src="../.gitbook/assets/image (9) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Share tab
 
@@ -93,7 +93,7 @@ Use this tab to share the contract with external recipients.
 * **Export hotel contract (PDF)**: Exports the contract as a PDF file.
 * **Send email**: Sends the contract to the supplier. You can add multiple email addresses. The supplier can accept or reject the contract.
 
-<figure><img src="../.gitbook/assets/image (11) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 To use **Send email**, you must create an email template for **Hotel Contract**. Otherwise, the system shows a warning.

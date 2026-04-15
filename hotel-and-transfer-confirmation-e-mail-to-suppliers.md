@@ -29,7 +29,7 @@ This helps you validate bookings before you finalize them.
 * You must configure a confirmation template in the [Dynamic E-mail/SMS Center](email-setup/dynamic-e-mail-sms-center/).
 * Only bookings flagged as requiring confirmation show **Send confirmation**.
 
-<figure><img src=".gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Set up confirmation email templates
 

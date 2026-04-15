@@ -41,7 +41,7 @@ Balance Administration includes these submodules:
 
 ### Unregistered payments
 
-<figure><img src=".gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Unregistered payments list"><figcaption><p>Unregistered payments: payment lines missing a booking number (Booking No).</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Unregistered payments list"><figcaption><p>Unregistered payments: payment lines missing a booking number (Booking No).</p></figcaption></figure>
 
 Unregistered payments are payment lines without a **Booking No**.
 
@@ -63,7 +63,7 @@ When you assign the payment to a booking, it moves to [Payment Registration](fin
 
 ### Negative balances
 
-<figure><img src=".gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Negative balances list"><figcaption><p>Negative balances: bookings with an overpayment that may require a refund.</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Negative balances list"><figcaption><p>Negative balances: bookings with an overpayment that may require a refund.</p></figcaption></figure>
 
 This list shows bookings where the customer likely paid **too much**.
 
@@ -94,7 +94,7 @@ Refund approval is controlled by **Release payment** on the booking.
 
 ### Unpaid bookings
 
-<figure><img src=".gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Unpaid bookings list"><figcaption><p>Unpaid bookings: bookings with outstanding balance based on payment due dates.</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Unpaid bookings list"><figcaption><p>Unpaid bookings: bookings with outstanding balance based on payment due dates.</p></figcaption></figure>
 
 This list shows bookings that are **not fully paid**.
 
@@ -122,7 +122,7 @@ GDS payments help you reconcile costs for **Global Distribution System (GDS)** b
 
 Review ticket cost prices, airlines, and passenger details.
 
-<figure><img src=".gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="GDS payments list"><figcaption><p>GDS payments: review ticket cost prices, PNR, airlines, and passenger details for reconciliation.</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="GDS payments list"><figcaption><p>GDS payments: review ticket cost prices, PNR, airlines, and passenger details for reconciliation.</p></figcaption></figure>
 
 1. **Filter the Data:**
    * Use **Departure Period** and **Booking Period** filters to narrow down transactions.
@@ -160,7 +160,7 @@ Review ticket cost prices, airlines, and passenger details.
 
 The refund process allows users to return payments to customers when there is a negative balance in the system.
 
-<figure><img src=".gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Refund payments list"><figcaption><p>Refund payments: start refunds for bookings marked with Release payment.</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Refund payments list"><figcaption><p>Refund payments: start refunds for bookings marked with Release payment.</p></figcaption></figure>
 
 1. (Optional) Filter by **Seller**.
 2. (Optional) Enable **Show release payment only**.

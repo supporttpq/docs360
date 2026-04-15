@@ -43,7 +43,7 @@ Texts from general settings can be customized per active brand.
 
 #### A. General Information
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Name** - Internal name of the extras category.
 
@@ -77,7 +77,7 @@ Texts from general settings can be customized per active brand.
 
 #### B. Filtering Options
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;**Display in Remember Extras** - Allows this category to appear in the "Remember Extras" functionality.
 
@@ -151,9 +151,13 @@ Show description & photo opened in WebBooking - Automatically expands descriptio
 
 * **Checkbox**
 
-All stay days must be available - If selected, the extra is only eligible if it is available for the full booking period. Available only for Pension & Gala dinner extras category.
+All stay days must be available - If selected, the extra is only eligible if it is available for the full booking period.&#x20;
 
 * **Checkbox**
+
+{% hint style="info" %}
+Available only for the Pension & Gala Dinner extras category.
+{% endhint %}
 
 Stop default product selection for all passengers in WB - Prevents automatic selection of extras for all passengers.
 
