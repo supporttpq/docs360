@@ -11,7 +11,7 @@ description: >-
 
 Use the **Invoice** page to find supplier invoices, check status (**Pending**, **Approved**, **Rejected**), and take actions like **download**, **archive**, or **pay**.
 
-<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Invoice list with filters and status columns"><figcaption><p>Invoice list: filter by date range, invoice number, creditor, and status. Then download, archive, or pay invoices.</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Invoice list with filters and status columns"><figcaption><p>Invoice list: filter by date range, invoice number, creditor, and status. Then download, archive, or pay invoices.</p></figcaption></figure>
 
 ### What you can do here
 

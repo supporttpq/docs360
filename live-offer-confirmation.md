@@ -20,7 +20,7 @@ This tool is essential for:
 * **Identifying and resolving failed bookings** quickly.
 * Ensuring that all customer reservations are fully validated before proceeding with final booking stages.
 
-<figure><img src=".gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (1).png" alt="Live Offer Confirmation screen showing booking period filters, status checkboxes, and reservation list."><figcaption><p>Live Offer Confirmation overview (filters + reservation status list).</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (2).png" alt="Live Offer Confirmation screen showing booking period filters, status checkboxes, and reservation list."><figcaption><p>Live Offer Confirmation overview (filters + reservation status list).</p></figcaption></figure>
 
 ### Interface Explanation & Instructions
 

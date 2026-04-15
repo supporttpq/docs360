@@ -61,7 +61,7 @@ The templates for Hotel, Excursion, Arrival and Resort (Called 'Destination' in 
 
 <br>
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 ### FAQ
 

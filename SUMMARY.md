@@ -463,6 +463,7 @@
   * [Board Type - Hotel allotment / Ticket](board-type/board-type-hotel-allotment-ticket.md)
   * [Board Type - Extra](board-type/board-type-extra.md)
   * [Board Type - Webboking](board-type/board-type-webboking.md)
+  * [Board Behaviour During Booking](board-type/board-behaviour-during-booking.md)
 
 ## Email Setup
 
