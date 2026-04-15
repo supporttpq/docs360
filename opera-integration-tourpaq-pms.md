@@ -15,6 +15,17 @@ This page describes how the integration is configured and how data flows from To
 &#x20;This documentation describes the integration strictly from the Tourpaq perspective.
 {% endhint %}
 
+## Prerequisites (Tourpaq Side)
+
+Before using the integration, ensure:
+
+* Hotels are correctly flagged as **Managed by Opera**
+* Room types are mapped
+* Extras categories are configured and mapped
+* Transport blocks are linked to Opera blocks
+* Required fields in the booking are available
+* Customer data is properly structured.&#x20;
+
 ## Scope of Integration
 
 The integration covers:
@@ -322,17 +333,6 @@ The integration logs:
   * Verifying successful synchronization
   * Debugging mapping issues
 
-## Prerequisites (Tourpaq Side)
-
-Before using the integration, ensure:
-
-* Hotels are correctly flagged as **Managed by Opera**
-* Room types are mapped
-* Extras categories are configured and mapped
-* Transport blocks are linked to Opera blocks
-* Required fields in the booking are available
-* Customer data is properly structured.&#x20;
-
 ## Best Practices
 
 * Always validate mappings before go-live
@@ -352,15 +352,9 @@ Before using the integration, ensure:
 
 This structure can be reused for other PMS integrations:
 
-1. Overview
-2. Scope
-3. Hotel Mapping
-4. Availability / Allotment
-5. Extras Mapping
-6. Booking Integration
-7. Customer Mapping
-8. Blocks / Inventory Control
-9. Logging & Monitoring
-10. Prerequisites
-11. Best Practices
+✔ Clear and standardized PMS integration framework\
+✔ All key components covered and detailed\
+✔ Reusable structure for future integrations\
+✔ Supports scalability and consistency\
+✔ Guided by prerequisites & best practices
 
