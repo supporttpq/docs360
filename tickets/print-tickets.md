@@ -129,13 +129,13 @@ Use **Reprint Per Transport** when you need to print or reprint tickets for **ma
 
 {% stepper %}
 {% step %}
-### 1) Open the tab
+#### 1) Open the tab
 
 Open **Reprint Per Transport** from the top of the **Print Tickets** page.
 {% endstep %}
 
 {% step %}
-### 2) Narrow down the bookings
+#### 2) Narrow down the bookings
 
 Set **Booking period** and/or **Departure period**.
 
@@ -143,13 +143,13 @@ Optionally choose **Length** if you want to limit the results further.
 {% endstep %}
 
 {% step %}
-### 3) Select the transport(s)
+#### 3) Select the transport(s)
 
 Click **Transports** and select the transport(s) you want to print tickets for.
 {% endstep %}
 
 {% step %}
-### 4) Print
+#### 4) Print
 
 Click **Print** to generate the tickets for all matching bookings.
 {% endstep %}
