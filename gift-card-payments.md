@@ -53,7 +53,7 @@ Before using or configuring the Gift Card Payment method, ensure:
 * The **Gift Card Payment** method is marked as **active** and available for use.
 * The **Economics tab** is accessible in **Edit Booking**.
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (33).png" alt="Gift card payment method setup in payment methods"><figcaption><p>Configure a Gift Card payment method in Payment Methods (debit type, active, and cash-processing flags as required by your setup).</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (34).png" alt="Gift card payment method setup in payment methods"><figcaption><p>Configure a Gift Card payment method in Payment Methods (debit type, active, and cash-processing flags as required by your setup).</p></figcaption></figure>
 
 ### Instructions: set up Gift Card Payments
 

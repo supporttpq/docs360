@@ -370,7 +370,8 @@
 
 * [Brands](brands/README.md)
   * [How to add a new Brand](brands/how-to-add-a-new-brand.md)
-  * [General Settings](brands/general-settings.md)
+  * [General Settings](brands/general-settings/README.md)
+    * [Ticket V3](brands/general-settings/ticket-v3.md)
   * [How to set Payment settings](brands/how-to-set-payment-settings.md)
   * [How to set GDS](brands/how-to-set-gds.md)
   * [How to set SMTP Settings](brands/how-to-set-smtp-settings.md)
