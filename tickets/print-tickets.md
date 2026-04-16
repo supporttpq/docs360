@@ -65,7 +65,7 @@ If you only need to check whether a ticket email was sent (and whether it failed
 
 {% stepper %}
 {% step %}
-### 1) Enter the booking number
+#### 1) Enter the booking number
 
 In **Booking No**, enter the booking number (booking reference).
 
@@ -74,7 +74,7 @@ In **Booking No**, enter the booking number (booking reference).
 {% endstep %}
 
 {% step %}
-### 2) Choose what you want to do
+#### 2) Choose what you want to do
 
 Select the options that match your task:
 
@@ -89,7 +89,7 @@ Select the options that match your task:
 {% endstep %}
 
 {% step %}
-### 3) Generate / send
+#### 3) Generate/send
 
 Complete the action using the page’s button(s). Tourpaq generates the ticket PDF from the booking’s current data.
 
