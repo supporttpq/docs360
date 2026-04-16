@@ -70,7 +70,7 @@ Before configuring payment methods, ensure the following:
 
 ***
 
-![Method of Payment (payment types) list](<../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![Method of Payment (payment types) list](<../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 _Payment methods (payment types) define how payments are recorded and reported in Tourpaq Office._
 
@@ -157,7 +157,7 @@ Before creating a new payment method, ensure:
 * You are aware of any **system integrations** that may affect the method (e.g., DIBS, bank import, Dankort).
 * The payment method is **relevant to the company** you are currently working under in the system.
 
-![Create a new payment method form](<../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![Create a new payment method form](<../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 _Create a payment method with a payment code, debit/credit type, and flags for online payments and imports._
 

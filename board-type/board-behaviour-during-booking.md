@@ -84,9 +84,9 @@ To support automatic upgrade/downgrade scenarios, board types must be ordered.
 
 #### New Option: All stay days must be available
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Location**
 
@@ -151,7 +151,7 @@ Some hotels have different board basis depending on the period (e.g. BB → HB)
   * main board basis
   *   supplements for differences
 
-      <figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 4: Validate**
 
@@ -204,12 +204,12 @@ An extra is considered a board supplement if:
 * Category type = Pension&#x20;
 *   "Use Stay days in prices" is enabled
 
-    <figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 *   In the Prices tab, use the "Per day" checkbox marked&#x20;
 
-    <figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Action
 
@@ -217,7 +217,7 @@ An extra is considered a board supplement if:
   * will be automatically updated:
     *   "All stay days must be available" = TRUE&#x20;
 
-        <figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Example Scenario
 
@@ -225,14 +225,14 @@ An extra is considered a board supplement if:
 
 * Booking: 7 nights
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 *   Hotel:
 
     * days 1–3: BB
     * days 4–7: HB
 
-    <figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 * Board Types order:
   * HB (top)
   * BB
@@ -246,9 +246,9 @@ An extra is considered a board supplement if:
     * selects HB as the main board
     * adds supplements for days 1–3&#x20;
 
-    <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Result
 

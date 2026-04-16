@@ -88,7 +88,7 @@ See [Profit margin rules](../../profit-margin-rules.md).
 
 #### What it looks like in Office
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Transport-only booking example in Tourpaq Office"><figcaption><p>Transport-only booking in Tourpaq Office.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Transport-only booking example in Tourpaq Office"><figcaption><p>Transport-only booking in Tourpaq Office.</p></figcaption></figure>
 
 #### What it looks like on the ticket
 
