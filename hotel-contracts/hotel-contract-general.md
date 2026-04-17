@@ -24,7 +24,7 @@ Before you create or edit a contract:
 
 ### Screenshot
 
-<figure><img src="../.gitbook/assets/image (497).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -47,7 +47,7 @@ The General tab is split into a left panel (**Hotel**) and a right panel (**Cont
 * **Address**, **Phone**, **Email**: Hotel contact details.
 * **Release Email**: Email address used for release-related communication.
 * **Resort**: Resort/destination for the hotel.
-* **Stars**: Hotel star rating.
+* **Rating**: Hotel rating.
 * **Supplier**: Supplier account linked to the hotel.
 * **Code**: Internal hotel code.
 * **Web**: Optional website link.
