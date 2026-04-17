@@ -155,10 +155,7 @@ A cancelled booking will still display its associated PNR in the **All Bookings*
 
 #### Screenshot
 
-Add a screenshot showing:
-
-* The **All Bookings** list
-* A **cancelled booking** with a visible PNR
+<figure><img src="../../.gitbook/assets/image (786).png" alt=""><figcaption></figcaption></figure>
 
 
 
