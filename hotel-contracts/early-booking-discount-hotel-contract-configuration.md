@@ -29,6 +29,8 @@ Before configuring early booking discounts:
 
 ### Fields
 
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 | Field                   | Description                                                                                                                                                                    |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Cost Discount**       | Discount amount. Use a fixed value (for example `50`) or a percentage (when **%** is checked).                                                                                 |
