@@ -16,7 +16,7 @@ Use this tab to:
 
 ### Screenshot
 
-<figure><img src="../.gitbook/assets/image (289).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (787).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -32,6 +32,8 @@ Before you start:
 
 ### Board Supplements (extras)
 
+<figure><img src="../.gitbook/assets/image (790).png" alt=""><figcaption></figcaption></figure>
+
 Use this section to create supplement rows.
 
 | Field               | Description                                                             |
@@ -44,7 +46,7 @@ Use this section to create supplement rows.
 | **Code**            | Unique reference code. Used in exports and contract references.         |
 | **Clear (×)**       | Clears the row input without deleting anything.                         |
 | 🗑️ **Delete**      | Deletes the row.                                                        |
-| **Add supplement**  | Saves the row.                                                          |
+| **Add Supplement**  | Saves the row.                                                          |
 
 ***
 
@@ -52,22 +54,23 @@ Use this section to create supplement rows.
 
 Use **Board Basis** when you need a supplement cost per **period**.
 
-<figure><img src="../.gitbook/assets/image (295).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (789).png" alt=""><figcaption></figcaption></figure>
 
 #### Fields
 
-| Field              | Description                                                        |
-| ------------------ | ------------------------------------------------------------------ |
-| **Board Type**     | Board the supplement applies to (for example AI, HB).              |
-| **From / To Age**  | Age range for this supplement cost.                                |
-| **Extra Category** | Category used for grouping and reporting.                          |
-| **Product**        | Optional. Link to a product/service.                               |
-| **Name**           | Display or internal name.                                          |
-| **Code**           | Reference code used for exports and tracking.                      |
-| **Period ID**      | Period the cost belongs to. It maps to IDs in the **Periods** tab. |
-| **Cost**           | Supplement amount for this board + age + period.                   |
-| **Rooms**          | Room codes where the supplement applies.                           |
-| **Clear (×)**      | Clears the row input.                                              |
+| Field                 | Description                                                        |
+| --------------------- | ------------------------------------------------------------------ |
+| **Board Type**        | Board the supplement applies to (for example AI, HB).              |
+| **From / To Age**     | Age range for this supplement cost.                                |
+| **Extra Category**    | Category used for grouping and reporting.                          |
+| **Product**           | Optional. Link to a product/service.                               |
+| **Name**              | Display or internal name.                                          |
+| **Code**              | Reference code used for exports and tracking.                      |
+| **Add new age range** | Add a new line for the same board type with new age range.         |
+| **Period ID**         | Period the cost belongs to. It maps to IDs in the **Periods** tab. |
+| **Cost**              | Supplement amount for this board + age + period.                   |
+| **Rooms**             | Room codes where the supplement applies.                           |
+| **Clear (×)**         | Clears the row input.                                              |
 
 #### How it works
 

@@ -29,6 +29,8 @@ Before you configure **Extra Cost**:
 
 ### Fields
 
+<figure><img src="../.gitbook/assets/image (792).png" alt=""><figcaption></figcaption></figure>
+
 | Field                    | Description                                                                                                           |
 | ------------------------ | --------------------------------------------------------------------------------------------------------------------- |
 | **Type**                 | The extra cost type. Example: Final Cleaning or Resort Fee. Selected from a dropdown of predefined types.             |

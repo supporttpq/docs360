@@ -30,6 +30,8 @@ Before configuring Extra Beds Cost, ensure that:
 
 ### Fields
 
+<figure><img src="../.gitbook/assets/image (791).png" alt=""><figcaption></figcaption></figure>
+
 | Field              | Description                                                                                                         |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------- |
 | **Category**       | Defines the guest type for which the extra bed cost applies (e.g., Infant, Child, Adult).                           |
