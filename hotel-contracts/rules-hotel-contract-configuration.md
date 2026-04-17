@@ -74,7 +74,7 @@ Add the rule and save the contract.
 ### Related workflows
 
 * [Remarks - Hotel Contract Configuration](remarks-hotel-contract-configuration.md): Add printable text to the Contract PDF.
-* [Hotel contract - General](hotel-contract-general.md): Create and manage the contract header.
+* [Hotel contract - General](hotel-contract-contract-name.md): Create and manage the contract header.
 
 ***
 

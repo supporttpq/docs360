@@ -133,7 +133,7 @@ Common cases are New Year’s Eve and Christmas dinners.
 
 ### Related workflows
 
-* [Hotel contract - General](hotel-contract-general.md): Contract header settings and child age ranges.
+* [Hotel contract - General](hotel-contract-contract-name.md): Contract header settings and child age ranges.
 * [Rooms – Hotel Contract Configuration](rooms-hotel-contract-configuration.md): Room codes referenced by Board Basis.
 * [Periods – Hotel Contract Configuration](periods-hotel-contract-configuration.md): Period IDs used for Board Basis costs.
 * [Extra Beds Cost – Hotel Contract Configuration](extra-beds-cost-hotel-contract-configuration.md): Often configured alongside board and age rules.

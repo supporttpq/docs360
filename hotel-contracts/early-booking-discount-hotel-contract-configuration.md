@@ -100,7 +100,7 @@ If you want Early Booking to stack with Stay & Pay, ensure both the rule and the
 
 ### Related workflows
 
-* [Hotel contract - General](hotel-contract-general.md)
+* [Hotel contract - General](hotel-contract-contract-name.md)
 * [Rooms – Hotel Contract Configuration](rooms-hotel-contract-configuration.md)
 * [Periods – Hotel Contract Configuration](periods-hotel-contract-configuration.md)
 * [Stay & Pay - Hotel Contract Configuration](stay-and-pay-hotel-contract-configuration.md)

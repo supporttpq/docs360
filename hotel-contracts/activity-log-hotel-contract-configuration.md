@@ -82,7 +82,7 @@ Before accessing the Activity Log:
 
 ### Related pages
 
-* [Hotel contract - General](hotel-contract-general.md)
+* [Hotel contract - General](hotel-contract-contract-name.md)
 * [Rules - Hotel Contract Configuration](rules-hotel-contract-configuration.md)
 * [Hotel Activity Log](../hotel/hotel-creation/hotel-activity-log.md) (hotel allotment changes, not contract changes)
 

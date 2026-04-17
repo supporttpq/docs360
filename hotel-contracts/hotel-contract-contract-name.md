@@ -1,8 +1,8 @@
-# Hotel contract - General
+# Hotel contract - Contract Name
 
 ### Overview
 
-The **Edit Hotel Contract** page is where you create and maintain a hotel contract. You define contract terms, validity periods, pricing rules, and any extra costs.
+The **Contract Name** page is where you create and maintain a hotel contract. You define contract terms, validity periods, pricing rules, and any extra costs.
 
 ### What you configure here
 

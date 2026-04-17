@@ -235,7 +235,7 @@
   * [Hotel Bed Banks - FAQ](hotel-beds/hotel-bed-banks-faq.md)
 * [Hotel combination](hotel-combination.md)
 * [Hotel Contracts](hotel-contracts/README.md)
-  * [Hotel contract - General](hotel-contracts/hotel-contract-general.md)
+  * [Hotel contract - Contract Name](hotel-contracts/hotel-contract-contract-name.md)
   * [Rooms – Hotel Contract Configuration](hotel-contracts/rooms-hotel-contract-configuration.md)
   * [Periods – Hotel Contract Configuration](hotel-contracts/periods-hotel-contract-configuration.md)
   * [Board Supplements - Hotel Contract Configuration](hotel-contracts/board-supplements-hotel-contract-configuration.md)

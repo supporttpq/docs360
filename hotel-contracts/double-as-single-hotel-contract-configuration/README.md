@@ -73,7 +73,7 @@ It also shows period-based allotment and cost fields.
 
 ### Related workflows
 
-* [Hotel contract - General](../hotel-contract-general.md)
+* [Hotel contract - General](../hotel-contract-contract-name.md)
 * [Rooms – Hotel Contract Configuration](../rooms-hotel-contract-configuration.md)
 * [Periods – Hotel Contract Configuration](../periods-hotel-contract-configuration.md)
 * [Board Basis Inheritance Rule](board-basis-inheritance-rule.md)

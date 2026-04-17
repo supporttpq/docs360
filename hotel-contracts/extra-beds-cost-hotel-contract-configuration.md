@@ -94,7 +94,7 @@ Avoid overlapping age ranges for the same **Category** and **Room** selection. O
 
 ### Related workflows
 
-* [Hotel contract - General](hotel-contract-general.md)
+* [Hotel contract - General](hotel-contract-contract-name.md)
 * [Rooms – Hotel Contract Configuration](rooms-hotel-contract-configuration.md)
 * [Periods – Hotel Contract Configuration](periods-hotel-contract-configuration.md)
 

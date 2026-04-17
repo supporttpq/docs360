@@ -57,7 +57,7 @@ Save after changing the template. This applies the facilities to the contract.
 
 ### Related workflows
 
-* [Hotel contract - General](hotel-contract-general.md)
+* [Hotel contract - General](hotel-contract-contract-name.md)
 * [Actions - Hotel Contract Configurations](actions-hotel-contract-configurations.md) (includes reimport options for Facilities)
 
 ***

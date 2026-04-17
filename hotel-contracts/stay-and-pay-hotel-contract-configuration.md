@@ -117,7 +117,7 @@ If you use **EB**, make sure your Early Booking setup also allows the combinatio
 
 ### Related workflows
 
-* [Hotel contract - General](hotel-contract-general.md)
+* [Hotel contract - General](hotel-contract-contract-name.md)
 * [Rooms – Hotel Contract Configuration](rooms-hotel-contract-configuration.md)
 * [Periods – Hotel Contract Configuration](periods-hotel-contract-configuration.md)
 * [Early Booking Discount – Hotel Contract Configuration](early-booking-discount-hotel-contract-configuration.md)

@@ -132,7 +132,7 @@ This approach enables contract staff to store draft agreements without blocking 
 
 * Verify rooms in [Rooms – Hotel Contract Configuration](rooms-hotel-contract-configuration.md).
 * Verify periods and seasonal setup in [Periods – Hotel Contract Configuration](periods-hotel-contract-configuration.md).
-* Review general contract settings in [Hotel contract - General](hotel-contract-general.md).
+* Review general contract settings in [Hotel contract - General](hotel-contract-contract-name.md).
 
 ### FAQ
 

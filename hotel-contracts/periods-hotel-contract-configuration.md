@@ -132,7 +132,7 @@ Keep notes short. Write what changed and why.
 
 * [Rooms – Hotel Contract Configuration](rooms-hotel-contract-configuration.md): Room codes must exist before you add period rows.
 * [Board Supplements - Hotel Contract Configuration](board-supplements-hotel-contract-configuration.md): Supplements often reference period logic and room codes.
-* [Hotel contract - General](hotel-contract-general.md): Contract header settings can impact period behavior.
+* [Hotel contract - General](hotel-contract-contract-name.md): Contract header settings can impact period behavior.
 
 ***
 
