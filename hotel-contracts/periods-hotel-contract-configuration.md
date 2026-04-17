@@ -30,7 +30,6 @@ Rows control allotment, release, minimum stay, and cost.
 | ------------------------------ | -------------------------------------------------------------------------------------------- |
 | **Start Date / End Date**      | Defines the date range for a contract period. Add multiple periods for seasonal pricing.     |
 | **R (Release days)**           | Realease day                                                                                 |
-| **CD (Cut-down allotment)**    | Enables cut-down behavior for allotments in this period (if used by your setup).             |
 | ➕ **Add Interval**             | Adds a new interval for the selected period.                                                 |
 | 🗑️ **Trash Icon (on period)** | Deletes the entire period.                                                                   |
 | 🗑️ **Trash Icon (on row)**    | Deletes a specific interval.                                                                 |
