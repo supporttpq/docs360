@@ -23,7 +23,7 @@ Where to find it: **Hotel → Activity Log**.
 
 * **Change Date** – Filter by when the change was made (example: `27-02-2025` → `27-03-2025`).
 * **Room** – Filter by a room code (example: `D21`).
-* **Activity Type** – Filter by the type of action (example: updates, releases).
+* **Activity Type** – Filter by the type of action (example: updates, releases, hotel photo).
 * **Search** – Run the search with the selected filters.
 * **Clear** – Reset filters back to default values.
 
@@ -48,7 +48,7 @@ For a day-by-day view, use **Allotment History** in **Allotments per day**.
 * Click **Allotment History**.
 * Review the chronological list of create/update/delete actions.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (31).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (32).png" alt=""><figcaption></figcaption></figure>
 
 #### What you’ll see
 
@@ -93,6 +93,82 @@ It shows when allotments were created, updated, or deleted, and what changed.
 4. Review the **Activity Log** rows to track changes.
 5. Use **Clear** to reset filters and start a new search.
 6. For a day-by-day view, use **Allotments per day → Allotment History**.
+
+## Photo Tracking in Hotel Activity Log
+
+### Overview
+
+This feature introduces visibility into hotel photo changes within the Activity Log. It allows administrators to track what was modified, when, and by whom, ensuring full auditability of photo-related updates.
+
+***
+
+### Customer Outcome
+
+Hotel administrators gain transparency over photo management by being able to:
+
+* Monitor all photo-related changes
+* Identify exactly what was modified
+* Track user activity related to photo updates
+* Maintain a clear history of image configurations
+
+***
+
+### Expected Behavior
+
+#### Activity Filter Extension
+
+* A new option, **"Hotel Photo"** has been added to the **Activity filter**
+* When selected, the Activity Log will display only photo-related changes
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+***
+
+#### Logged Photo Attributes
+
+The system log changes for the following photo properties:
+
+* Image (upload, replace, delete)
+* Image Title
+* Description
+* Brands
+* Is Main Photo (flag)
+* Room Type
+
+***
+
+#### Change Details Display
+
+* All changes must be reflected in the **PROPERTY NAME** column
+* Each log entry indicates:
+  * What field was changed
+  * Previous value
+  * New value
+
+**Example**
+
+| ACTIVITY | PROPERTY NAME | OLD VALUE     | NEW VALUE        |
+| -------- | ------------- | ------------- | ---------------- |
+| Photos   | Image Title   | "Pool View"   | "Main Pool View" |
+| Photos   | Is Main Photo | No            | Yes              |
+| Photos   | Room Type     | Standard Room | Deluxe Room      |
+
+***
+
+### UI Behavior
+
+* The Activity Log UI:
+  * Support filtering by **Photos**
+  * Display entries consistently with other activity types
+  * Maintain sorting and pagination behavior
+
+***
+
+### Notes
+
+* Each field change should generate a separate log entry
+* Bulk updates should result in multiple entries (one per changed field)
+* Image replacement should be treated as a change in the **Image** field
 
 ### FAQ
 

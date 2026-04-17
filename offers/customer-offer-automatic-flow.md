@@ -34,7 +34,7 @@ Go to:
 
 This is the same area where you manage offer texts, images, and templates. See [Select text for Offers](select-text-for-offers.md).
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (79).png" alt="Automatic offer reminder settings in Brand → Select Offer"><figcaption><p>Brand settings for reminder schedule days and email/SMS reminder templates.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (80).png" alt="Automatic offer reminder settings in Brand → Select Offer"><figcaption><p>Brand settings for reminder schedule days and email/SMS reminder templates.</p></figcaption></figure>
 
 ***
 

@@ -12,7 +12,7 @@ Each page has a specific role and the header (ticket number + version) is repeat
 
 ## Page 1 – Booking Overview & Flight Information
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Booking Header
 
@@ -88,7 +88,7 @@ If the number of passengers exceeds the page limit, the list continues on the ne
 
 ## Page 2 – Passenger List (Continuation)
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Passenger List
 
