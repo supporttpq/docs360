@@ -106,16 +106,17 @@ Change filters and click Display again to update the Totals for a different segm
 
 #### Filters That Drive Totals
 
-| Filter                           | Description                                                                     |
-| -------------------------------- | ------------------------------------------------------------------------------- |
-| **Brand**                        | Required. Select one or more Brands                                             |
-| **Booking Period**               | Date range for when bookings were created. Must be a complete pair              |
-| **Departure Period**             | Date range for outbound travel dates. Must be a complete pair                   |
-| **Arrival Period**               | Date range for arrival at destination. Must be a complete pair                  |
-| **Hotels**                       | Limit totals to bookings for specific hotels                                    |
-| **Transports / Real Transports** | Limit totals to bookings on specific transports                                 |
-| **Owners**                       | Limit totals to bookings owned by specific agents or users                      |
-| **Status**                       | Limit totals to bookings of a specific status (e.g. OK only, or Cancelled only) |
+| Filter                           | Description                                                                                       |
+| -------------------------------- | ------------------------------------------------------------------------------------------------- |
+| **Brand**                        | Required. Select one or more Brands                                                               |
+| **Booking Period**               | Date range for when bookings were created. Must be a complete pair                                |
+| **Departure Period**             | Date range for outbound travel dates. Must be a complete pair                                     |
+| **Arrival Period**               | Date range for arrival at destination. Must be a complete pair                                    |
+| **Hotels**                       | Limit totals to bookings for specific hotels                                                      |
+| **Room Types**                   | Limit totals to bookings for a specific room types. Works only if at least one hotel is selected. |
+| **Transports / Real Transports** | Limit totals to bookings on specific transports                                                   |
+| **Owners**                       | Limit totals to bookings owned by specific agents or users                                        |
+| **Status**                       | Limit totals to bookings of a specific status (e.g. OK only, or Cancelled only)                   |
 
 {% hint style="warning" %}
 Date filters (**Booking**, **Departure**, **Arrival**) must always be used as complete pairs — both `From` and `To` must be filled in. An incomplete pair will return empty or incorrect totals.&#x20;
@@ -133,7 +134,7 @@ Date filters (**Booking**, **Departure**, **Arrival**) must always be used as co
 | **Breakdowns available** | None — headline figures only    | Country, arrival, resort, hotel                            |
 | **Additional tools**     | None                            | Compare Statistics, Booking Date Stats, Seller Performance |
 
-<figure><img src="../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="All bookings Totals view showing bookings, passengers, turnover, and profit totals"><figcaption><p>Totals overview for a filtered set of bookings.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (794).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
