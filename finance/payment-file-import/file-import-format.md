@@ -4,6 +4,68 @@
 
 _FI\_payments\_17\_03\_2026.PBS · 132 payment records · Total: 687,522.00_
 
+### Official Format Reference
+
+The structure presented in this documentation is based on the FI payment format (128-character format).
+
+{% hint style="info" %}
+The official reference specification is: **"Systemvejledning for FI-advisering (128-karakter format)"**&#x20;
+
+This document can be obtained from your payment provider (e.g. Mastercard Payment Services), depending on your agreement with them.
+{% endhint %}
+
+{% hint style="warning" %}
+Availability and exact specifications may vary depending on the provider implementation.
+{% endhint %}
+
+### Dependency on System Configuration
+
+The supported file format is directly linked to the system configuration.
+
+{% hint style="warning" %}
+Before importing any payment file, ensure that the correct input type is configured.
+{% endhint %}
+
+#### Related Setting
+
+**System Setup → General Settings → Input Payments Type**
+
+<figure><img src="../../.gitbook/assets/image (797).png" alt=""><figcaption></figcaption></figure>
+
+* This setting defines which file formats are supported
+* Different banks/providers may require different formats
+* The system parses the file based on this configuration
+
+{% hint style="info" %}
+Selecting an incorrect **Input Payments Type** may result in:
+
+* Failed imports
+* Incorrect parsing of payment lines
+* Missing or misinterpreted transactions
+{% endhint %}
+
+### Workflow Summary
+
+To ensure a successful payment import, follow this sequence:
+
+1. Configure **Input Payments Type** in:
+   * System Setup → General Settings
+2. Verify that the file matches the expected provider format\
+   (e.g. FI 128-character format)
+3. Import the file via:
+   * **Finance → Payment File Import**
+4. The system processes the file based on the selected configuration
+
+### Notes
+
+{% hint style="warning" %}
+If you are unsure which format to use, contact your bank or payment provider before attempting the import.
+{% endhint %}
+
+{% hint style="info" %}
+The format described in this section should be used as a reference guide, not as a substitute for the official provider specification.
+{% endhint %}
+
 ## 1. File Overview
 
 <figure><img src="../../.gitbook/assets/image (760).png" alt=""><figcaption></figcaption></figure>
@@ -11,6 +73,13 @@ _FI\_payments\_17\_03\_2026.PBS · 132 payment records · Total: 687,522.00_
 A PBS file is a fixed-width ASCII text file produced by the PBS (Pengeinstitutternes BetalingsService) Danish payment clearing system. Each line is a fixed-length record identified by a 4-character record type prefix. Lines are terminated with CR+LF (Windows line endings).
 
 This specific file — FI\_payments\_17\_03\_2026.PBS — contains 136 lines total and represents payments collected on behalf of creditor 45801012 and processed on 17 March 2026.
+
+This section describes the expected structure of supported payment import files.\
+The exact format depends on the selected **Input Payments Type** and the bank or payment provider configuration.
+
+{% hint style="info" %}
+The file format described below is provided for informational purposes only.
+{% endhint %}
 
 ### 1.1 Record Type Summary
 
