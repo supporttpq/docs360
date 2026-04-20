@@ -12,7 +12,7 @@ Each page has a specific role and the header (ticket number + version) is repeat
 
 ## Page 1 – Booking Overview & Flight Information
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Booking Header
 
@@ -88,7 +88,7 @@ If the number of passengers exceeds the page limit, the list continues on the ne
 
 ## Page 2 – Passenger List (Continuation)
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Passenger List
 
@@ -106,7 +106,7 @@ This page only appears when there are more passengers than can fit on Page 1.
 
 ## Page 3 – Accommodation & Payment
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Accommodation
 
@@ -147,7 +147,7 @@ Missing payment deadlines may impact the validity of the booking.
 
 ## Page 4 – Price Specification (Passengers 1–3)
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Price Breakdown per Passenger
 
@@ -179,7 +179,7 @@ Only selected services are displayed. If extras (e.g. transfer or checked baggag
 
 ## Page 5 – Price Specification (Summary & Remaining Passengers)
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Included in Base Price
 
@@ -205,7 +205,7 @@ Same structure as previous page:
 
 ## Page 6 – Hotel Information (Part 1)
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Hotel Details
 

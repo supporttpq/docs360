@@ -121,7 +121,7 @@ Note: A discount line cannot have more than 1 rule for each interval (if percent
 
 `Extras Setup → Campaigns → Discount Calculation`
 
-<figure><img src=".gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Per booking discount**
 

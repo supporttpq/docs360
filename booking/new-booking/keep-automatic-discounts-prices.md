@@ -52,7 +52,7 @@ On the **booking page** in **Tourpaq Office** (Back Office), locate the checkbox
 
 * **Keep automatic discount prices**
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (84).png" alt="Booking page in Tourpaq Office showing the “Keep automatic discount prices” checkbox"><figcaption><p>Checkbox on the booking page.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (85).png" alt="Booking page in Tourpaq Office showing the “Keep automatic discount prices” checkbox"><figcaption><p>Checkbox on the booking page.</p></figcaption></figure>
 
 ### How it works
 
