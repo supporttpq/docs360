@@ -21,13 +21,12 @@ This reduces manual corrections and keeps booking totals consistent.
 Extra-bed discounts are only applied when a passenger is actually assigned to an extra bed in the room allocation.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (508).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (796).png" alt=""><figcaption></figcaption></figure>
 
 ### Field Explanations
 
-* **Age** – The passenger age the rule applies to.
+* **Age** – The passenger's age to which the rule applies to.
 * **Start Date / End Date** – Stay dates where the discount is valid.
-* **Booking Start / End Date** – Booking dates where the rule is valid. Only bookings created in this interval will receive the discount.
 * **Discount columns** – Discount values per extra bed:
   * **1st** – First extra bed
   * **2nd** – Second extra bed (optional)
@@ -38,7 +37,7 @@ Extra-bed discounts are only applied when a passenger is actually assigned to an
   * **FHC** – Calculated from profit (works with Price Margin Service).
   * **H (Hidden)** – Distributes the average discount per passenger in the room.
   * **HP (Hotel Price)** – Percentage calculated from the hotel price.
-* **PD (Per Day)** – Apply the discount per day instead of per interval.
+  * **PD (Per Day)** – Apply the discount per day instead of per interval.
 * **Room Type** – Room types the rule applies to.
 * **Transports** – Transports the rule applies to.
 * **Period** – The period the rule applies to.
