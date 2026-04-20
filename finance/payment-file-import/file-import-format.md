@@ -14,7 +14,7 @@ This document can be obtained from your payment provider (e.g., Mastercard Payme
 Availability and exact specifications may vary depending on the provider implementation.
 {% endhint %}
 
-## 1. File Overview
+## File Overview
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
@@ -27,11 +27,11 @@ The exact format depends on the selected **Input Payments Type** and the bank or
 The file format described below is provided for informational purposes only.
 {% endhint %}
 
-### 1.1 Record Type Summary
+### Record Type Summary
 
 <table><thead><tr><th width="133.6666259765625" align="center">Record Type</th><th width="106.2222900390625" align="center">Length</th><th width="171.77783203125" align="center">Name</th><th valign="middle">Purpose</th></tr></thead><tbody><tr><td align="center">FI01</td><td align="center">58</td><td align="center"><strong>File Header</strong></td><td valign="middle">Identifies the creditor and file creation timestamp. Validated once per file.</td></tr><tr><td align="center">FI02</td><td align="center">65</td><td align="center"><strong>Batch Header</strong></td><td valign="middle">Batch-level metadata. The C# import code validates the creditor number from this line.</td></tr><tr><td align="center">FI03</td><td align="center">113</td><td align="center"><strong>Payment Record</strong></td><td valign="middle">One line per individual payment. Contains all fields extracted by the importer.</td></tr><tr><td align="center">FI08</td><td align="center">53</td><td align="center"><strong>Batch Summary</strong></td><td valign="middle">Closing totals for the batch: record count and grand total amount.</td></tr><tr><td align="center">FI09</td><td align="center">53</td><td align="center"><strong>File Trailer</strong></td><td valign="middle">File-level footer confirming creditor identity and total record count.</td></tr></tbody></table>
 
-## 2. FI01 — File Header
+### FI01 — File Header
 
 <table data-header-hidden><thead><tr><th width="199.5555419921875"></th><th></th></tr></thead><tbody><tr><td>FI01</td><td>File Header · Trimmed length: 58 characters · Appears once, first line</td></tr></tbody></table>
 
@@ -45,7 +45,7 @@ FI010458010120032479081 000000000020260324112701P
 For the testing environment, this line doesn't need to be modified.
 {% endhint %}
 
-## 3. FI02 — Batch Header
+### FI02 — Batch Header
 
 <table data-header-hidden><thead><tr><th width="134"></th><th></th></tr></thead><tbody><tr><td>FI02</td><td>Batch Header · Trimmed length: 65 characters · Appears once, second line</td></tr></tbody></table>
 
@@ -63,7 +63,7 @@ FI020820402267780000207443300000000000000000000000020260324112701
 
 <table><thead><tr><th width="104.5555419921875">Position</th><th width="95.5555419921875">Length</th><th width="163.1112060546875">Field Name</th><th width="143.1112060546875">Example</th><th>Description</th></tr></thead><tbody><tr><td>[0 : 4]</td><td>4</td><td>RecordType</td><td>FI02</td><td>Literal record identifier. Always 'FI02'.</td></tr><tr><td>[5 : 13]</td><td>8</td><td>CreditorNumber</td><td>82040226</td><td>Creditor/batch identifier used for validation. Compared against the system-stored creditor number by the C# importer.</td></tr></tbody></table>
 
-## 4. FI03 — Payment Record
+### FI03 — Payment Record
 
 <table data-header-hidden><thead><tr><th width="112.8887939453125"></th><th></th></tr></thead><tbody><tr><td>FI03</td><td>Payment Record · Trimmed length: 113 characters · Repeats once per payment (132 records)</td></tr></tbody></table>
 
@@ -87,7 +87,7 @@ Note on overlapping fields: PayerID (positions 19–34, 15 chars) and BookingNo 
 Note on amount encoding: amounts are stored as integers in the smallest currency unit (øre for DKK, eurocents for EUR). The value 000000000099600 = 99,600 øre = 996.00 DKK. Always divide the raw field by 100 to obtain the decimal amount.
 {% endhint %}
 
-## 5. FI08 — Batch Summary
+### FI08 — Batch Summary
 
 <table data-header-hidden><thead><tr><th width="109.5555419921875"></th><th></th></tr></thead><tbody><tr><td>FI08</td><td>Batch Summary · Trimmed length: 53 characters · Appears once after last FI03</td></tr></tbody></table>
 
@@ -103,7 +103,7 @@ The importer does not currently read this record, but it should be used for reco
 FI0808204022600000000132000000068752200000000000000000
 ```
 
-## 6. FI09 — File Trailer
+### FI09 — File Trailer
 
 <table data-header-hidden><thead><tr><th width="112.888916015625"></th><th></th></tr></thead><tbody><tr><td>FI09</td><td>File Trailer · Trimmed length: 53 characters · Appears once, last line</td></tr></tbody></table>
 
@@ -119,7 +119,7 @@ Can be used as a second-level integrity check, independent of the batch summary 
 FI090458010120032479081 0000000000100000000132
 ```
 
-## 7. Annotated File Sample
+## Annotated File Sample
 
 The table below shows the first six lines of FI\_payments\_17\_03\_2026.PBS with key fields annotated.
 
@@ -145,7 +145,7 @@ FI09 0 45801012 0032479081 0000000000 1 0000000132
 
 Spaces have been inserted between fields in the annotated sample above for readability only. The actual file contains no spaces between fields — every field is contiguous.
 
-## 8. FAQ
+## FAQ
 
 #### Which lines matter for the Tourpaq import?
 
