@@ -60,7 +60,7 @@ The interface consists of:
 
 ### Field Description – Filters
 
-<table><thead><tr><th width="154.5555419921875"></th><th width="272.2222900390625"></th><th></th></tr></thead><tbody><tr><td>Room Type</td><td>Dropdown used to filter rules by room type</td><td><ul><li>Optional</li><li>Linked to hotel room configuration</li></ul></td></tr><tr><td>Period</td><td>Dropdown used to filter rules by contract period.</td><td><ul><li>Optional</li><li>Related to seasonal pricing</li></ul></td></tr><tr><td> Booking Date</td><td>Date filter for booking creation period.</td><td><ul><li>Optional</li><li>Affects rule visibility</li></ul></td></tr><tr><td>Departure Date</td><td>Date filter for travel period.</td><td><ul><li>Optional</li><li>Used to validate applicable rules</li></ul></td></tr><tr><td>Display</td><td>Applies selected filters and loads results</td><td></td></tr><tr><td>Clear</td><td>Resets all filters</td><td></td></tr></tbody></table>
+<table><thead><tr><th width="154.5555419921875"></th><th width="272.2222900390625"></th><th></th></tr></thead><tbody><tr><td>Room Type</td><td>Dropdown used to filter rules by room type</td><td><ul><li>Optional</li><li>Linked to hotel room configuration</li></ul></td></tr><tr><td>Period</td><td>Dropdown used to filter rules by contract period.</td><td><ul><li>Optional</li><li>Related to seasonal pricing</li></ul></td></tr><tr><td>Booking Date</td><td>Date filter for booking creation period.</td><td><ul><li>Optional</li><li>Affects rule visibility</li></ul></td></tr><tr><td>Departure Date</td><td>Date filter for travel period.</td><td><ul><li>Optional</li><li>Used to validate applicable rules</li></ul></td></tr><tr><td>Display</td><td>Applies selected filters and loads results</td><td></td></tr><tr><td>Clear</td><td>Resets all filters</td><td></td></tr></tbody></table>
 
 ### Configuration Grid
 
@@ -74,9 +74,9 @@ The interface consists of:
 * **Discount 1 -** The discount for the first extra bed. If C is checked, then it is the fixed cost of the extra bed.
   * **Second / Third / Fourth Discount** – The discount for the second/third/fourth extra bed. If C is checked, then it is the fixed cost of the extra bed.
 * **PD (Per Pax/Day)** – If checked, the value is applied per day. If unchecked, the value is applied per interval.
-* **C -** Unchecked: The DISCOUNT is a discount of the room cost, and the extra bed cost is the room cost reduced by the DISCOUNT.  \
+* **C -** Unchecked: The DISCOUNT is a discount of the room cost, and the extra bed cost is the room cost reduced by the DISCOUNT.\
   Checked: The DISCOUNT is the fixed cost of the extra bed.
-* **% (Percent)** – Treats the value as a **percentage** (example: `10` = 10%).&#x20;
+* **% (Percent)** – Treats the value as a **percentage** (example: `10` = 10%).
   * If checked, the DISCOUNT is a percentage.
   * If unchecked, the DISCOUNT is an amount.
 * **Room Type** – Select the room types the rule applies to.
@@ -239,3 +239,10 @@ When a rule is created under **Extra Bed Cost** and the **EBD (Link to Extra Bed
 * The **"H" (Hidden)** flag is automatically enabled and cannot be changed
 
 This behavior prevents users from controlling visibility of the generated discount.
+
+### Related pages
+
+* [Discount Extra Beds](discount-extra-beds.md) — Configure the customer-price discount side that can be linked through **EBD**.
+* [Room cost](room-cost/) — Review the base hotel cost logic that extra bed costs build on.
+* [Extra Beds Cost – Hotel Contract Configuration](../../hotel-contracts/extra-beds-cost-hotel-contract-configuration.md) — See the contract-level setup page for this same configuration area.
+* [Room Cost Rule Interactions and FAQ](room-cost/room-cost-rule-interactions-and-faq.md) — Check how room cost rules interact with other hotel cost rules.
