@@ -58,6 +58,54 @@ Your bank (or your finance setup) should provide the **specification** that expl
 
 ***
 
+### Dependency on System Configuration
+
+The supported file format is directly linked to the system configuration.
+
+{% hint style="warning" %}
+Before importing any payment file, ensure that the correct input type is configured.
+{% endhint %}
+
+#### Related Setting
+
+**System Setup → General Settings → Input Payments Type**
+
+<figure><img src="../../.gitbook/assets/image (797).png" alt=""><figcaption></figcaption></figure>
+
+* This setting defines which file formats are supported
+* Different banks/providers may require different formats
+* The system parses the file based on this configuration
+
+{% hint style="info" %}
+Selecting an incorrect **Input Payments Type** may result in:
+
+* Failed imports
+* Incorrect parsing of payment lines
+* Missing or misinterpreted transactions
+{% endhint %}
+
+### Workflow Summary
+
+To ensure a successful payment import, follow this sequence:
+
+1. Configure **Input Payments Type** in:
+   * System Setup → General Settings
+2. Verify that the file matches the expected provider format\
+   (e.g. FI 128-character format)
+3. Import the file via:
+   * **Finance → Payment File Import**
+4. The system processes the file based on the selected configuration
+
+### Notes
+
+{% hint style="warning" %}
+If you are unsure which format to use, contact your bank or payment provider before attempting the import.
+{% endhint %}
+
+{% hint style="info" %}
+The format described in this section should be used as a reference guide, not as a substitute for the official provider specification.
+{% endhint %}
+
 ### Import a payment file
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (4).png" alt="Payment File Import screen"><figcaption><p>Upload a bank payment file to import booking payments and validate matching.</p></figcaption></figure>
@@ -83,7 +131,15 @@ Go to **Finance → Payment File Import**.
 1. Select the file.
 2. Upload/import it.
 
+<figure><img src="../../.gitbook/assets/image (798).png" alt=""><figcaption></figcaption></figure>
+
 Tourpaq validates the file during the upload/import.
+{% endstep %}
+
+{% step %}
+### Process the file
+
+<figure><img src="../../.gitbook/assets/image (799).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
