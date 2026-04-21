@@ -17,7 +17,7 @@ Setup → Destinations → Departure Gateways → Create
 
 ### Required Fields
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 IATA Code - Three-letter airport code, for example OSL, ARN, CPH. Must be unique in the system. Used in flight matching and integrations.
 

@@ -20,7 +20,7 @@ This functionality is used in combination with:
 GDS bookings are marked with a **colored dot** corresponding to their booking status.\
 The color is consistent across all supported pages and reflects the real-time status of the booking.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>All Bookings State Color</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>All Bookings State Color</p></figcaption></figure>
 
 ***
 
@@ -124,7 +124,7 @@ The feature is automatically enabled and applied across all relevant pages.
 * Display: Brown dot
 * Interpretation: Booking is not confirmed yet
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -134,7 +134,7 @@ The feature is automatically enabled and applied across all relevant pages.
 * Display: Pink dot
 * Interpretation: Booking is confirmed
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -144,7 +144,7 @@ The feature is automatically enabled and applied across all relevant pages.
 * Display: Light green dot
 * Interpretation: Ticketing is completed
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

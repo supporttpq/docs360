@@ -16,7 +16,7 @@ Availability and exact specifications may vary depending on the provider impleme
 
 ## File Overview
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This specific file — FI\_payments\_17\_03\_2026.PBS — contains 136 lines total and represents payments collected on behalf of creditor 45801012 and processed on 17 March 2026.
 
@@ -99,9 +99,8 @@ The importer does not currently read this record, but it should be used for reco
 
 **Example line:**
 
-```
-FI0808204022600000000132000000068752200000000000000000
-```
+<pre><code><a data-footnote-ref href="#user-content-fn-1">FI0808204022600000000132000000068752200000000000000000</a>
+</code></pre>
 
 ### FI09 — File Trailer
 
@@ -224,3 +223,5 @@ Validate the file in this order:
 * [Refund File Import](../refund-file-import.md) — handle imported refund transactions instead of incoming payments.
 * [Method of Payment](../method-of-payment.md) — configure the payment method used for bank imports.
 * [Balance Administration](../../balance-administration.md) — reconcile balances after payment import.
+
+[^1]: 
