@@ -11,6 +11,8 @@ Where to find it: **Hotel → Activity Log**.
 ### What you can do
 
 * Monitor allotment and room availability changes.
+* View updated release info.
+* Monitor when a photo was added and what changes were made in the [Photos](photos-and-documents.md) tab
 * Identify who made the change and when.
 * Compare previous and new values for auditing.
 * Investigate issues by reviewing the change trail.
@@ -40,7 +42,7 @@ Each row represents one logged action:
 * **New Value** – Value after the change (example: `10`).
 * **Description** – Extra context, if available.
 
-### Allotment history (per day)
+## Allotment history (per day)
 
 For a day-by-day view, use **Allotment History** in **Allotments per day**.
 
@@ -50,7 +52,7 @@ For a day-by-day view, use **Allotment History** in **Allotments per day**.
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (38).png" alt=""><figcaption></figcaption></figure>
 
-#### What you’ll see
+### What you’ll see
 
 The **Allotment History** screen is a detailed audit trail of allotment changes.
 
@@ -106,7 +108,7 @@ This feature introduces visibility into hotel photo changes within the Activity 
 
 Hotel administrators gain transparency over photo management by being able to:
 
-* Monitor all photo-related changes
+* Monitor all photo-related changes made in [Photos](photos-and-documents.md)
 * Identify exactly what was modified
 * Track user activity related to photo updates
 * Maintain a clear history of image configurations
@@ -124,19 +126,19 @@ Hotel administrators gain transparency over photo management by being able to:
 
 ***
 
-#### Logged Photo Attributes
+#### Logged Photo Attributes (Property Name)
 
-The system log changes for the following photo properties:
+The system log changes for the following photo properties made in the [Hotel -> Photos](photos-and-documents.md) tab
 
 * Image (upload, delete)
-* Image Title - name of the photo added in Photos tab
-* Description (shows all the information regarding the hotel photo changes)
+* Image Title - name of the photo added in the [Photos](photos-and-documents.md) tab
+* Description - text that describes the photo in the [Photos](photos-and-documents.md) tab.
 * Is Main Photo (flag) - true/false
 * Room Type - room type id
 * Order ID - shows the position of the photo
 * File Name - name of the inserted photo
 * Hotel ID - hotel id
-* Insert Date - date when the changes are made for the photo
+* Insert Date - date when the photo was uploaded
 
 {% hint style="info" %}
 All changes recorded in the Activity Log will also be available in the **Internal Logs** menu, under **Setup → Internal Logs → Hotel Photo**. &#x20;
@@ -167,7 +169,7 @@ All changes recorded in the Activity Log will also be available in the **Interna
 ### UI Behavior
 
 * The Activity Log UI:
-  * Support filtering by **Photos**
+  * Support filtering by **Photos, Change date, Room type**
   * Display entries consistently with other activity types
   * Maintain sorting and pagination behavior
 
