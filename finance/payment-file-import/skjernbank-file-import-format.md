@@ -1,4 +1,4 @@
-# File Import Format
+# SkjernBank File Import Format
 
 ## Official Format Reference
 
@@ -16,7 +16,7 @@ Availability and exact specifications may vary depending on the provider impleme
 
 ## File Overview
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 This specific file — FI\_payments\_17\_03\_2026.PBS — contains 136 lines total and represents payments collected on behalf of creditor 45801012 and processed on 17 March 2026.
 

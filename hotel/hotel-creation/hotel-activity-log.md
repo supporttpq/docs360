@@ -48,7 +48,7 @@ For a day-by-day view, use **Allotment History** in **Allotments per day**.
 * Click **Allotment History**.
 * Review the chronological list of create/update/delete actions.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (36).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (37).png" alt=""><figcaption></figcaption></figure>
 
 #### What you’ll see
 
@@ -120,7 +120,7 @@ Hotel administrators gain transparency over photo management by being able to:
 * A new option, **"Hotel Photo"** has been added to the **Activity filter**
 * When selected, the Activity Log will display only photo-related changes
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -128,12 +128,21 @@ Hotel administrators gain transparency over photo management by being able to:
 
 The system log changes for the following photo properties:
 
-* Image (upload, replace, delete)
-* Image Title
-* Description
-* Brands
-* Is Main Photo (flag)
-* Room Type
+* Image (upload, delete)
+* Image Title - name of the photo added in Photos tab
+* Description (shows all the information regarding the hotel photo changes)
+* Is Main Photo (flag) - true/false
+* Room Type - room type id
+* Order ID - shows the position of the photo
+* File Name - name of the inserted photo
+* Hotel ID - hotel id
+* Insert Date - date when the changes are made for the photo
+
+{% hint style="info" %}
+All changes recorded in the Activity Log will also be available in the **Internal Logs** menu, under **Setup → Internal Logs → Hotel Photo**. &#x20;
+{% endhint %}
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -147,11 +156,11 @@ The system log changes for the following photo properties:
 
 **Example**
 
-| ACTIVITY | PROPERTY NAME | OLD VALUE     | NEW VALUE        |
-| -------- | ------------- | ------------- | ---------------- |
-| Photos   | Image Title   | "Pool View"   | "Main Pool View" |
-| Photos   | Is Main Photo | No            | Yes              |
-| Photos   | Room Type     | Standard Room | Deluxe Room      |
+| ACTIVITY | PROPERTY NAME | OLD VALUE       | NEW VALUE        |
+| -------- | ------------- | --------------- | ---------------- |
+| Photos   | Title         | "Pool View"     | "Main Pool View" |
+| Photos   | Is Main Photo | False           | True             |
+| Photos   | Room Type     | 20773 (room id) | 11810            |
 
 ***
 
