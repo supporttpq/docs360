@@ -68,7 +68,7 @@ A **colored dot** is displayed next to or within booking-related rows in tables.
 
 The following color scheme is applied:
 
-<table><thead><tr><th width="161.22222900390625">Status</th><th width="120.333251953125">Color</th><th></th><th>Meaning</th></tr></thead><tbody><tr><td><strong>PENDING</strong></td><td>Brown</td><td><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt="" data-size="original"></td><td>Booking is not yet confirmed</td></tr><tr><td><strong>HK</strong></td><td>Pink</td><td><img src="../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt="" data-size="original"></td><td>Booking is confirmed (holding confirmed status)</td></tr><tr><td><strong>TKOK</strong></td><td>Light green</td><td><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt="" data-size="original"></td><td>Ticketing is confirmed and completed</td></tr><tr><td><strong>OK</strong></td><td>Green</td><td><img src="../.gitbook/assets/image (6) (1) (1).png" alt="" data-size="original"></td><td>Booking OK</td></tr><tr><td><strong>ERR</strong></td><td>Yellow</td><td><img src="../.gitbook/assets/image (7) (1) (1).png" alt="" data-size="original"></td><td>Error</td></tr><tr><td><strong>CXL</strong></td><td>Red</td><td><img src="../.gitbook/assets/image (8) (1) (1).png" alt="" data-size="original"></td><td>Cancelled</td></tr><tr><td><strong>TKQ</strong></td><td>Light pink</td><td><img src="../.gitbook/assets/image (9) (1).png" alt="" data-size="original"></td><td></td></tr></tbody></table>
+<table><thead><tr><th width="161.22222900390625">Status</th><th width="120.333251953125">Color</th><th></th><th>Meaning</th></tr></thead><tbody><tr><td><strong>PENDING</strong></td><td>Brown</td><td><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt="" data-size="original"></td><td>Booking is not yet confirmed</td></tr><tr><td><strong>HK</strong></td><td>Purple</td><td><img src="../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt="" data-size="original"></td><td>Booking is confirmed (holding confirmed status)</td></tr><tr><td><strong>TKOK</strong></td><td>Light green</td><td><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt="" data-size="original"></td><td>Ticketing is confirmed and completed</td></tr><tr><td><strong>OK</strong></td><td>Green</td><td><img src="../.gitbook/assets/image (6) (1) (1).png" alt="" data-size="original"></td><td>Booking OK</td></tr><tr><td><strong>ERR</strong></td><td>Yellow</td><td><img src="../.gitbook/assets/image (7) (1) (1).png" alt="" data-size="original"></td><td>Error</td></tr><tr><td><strong>CXL</strong></td><td>Red</td><td><img src="../.gitbook/assets/image (8) (1) (1).png" alt="" data-size="original"></td><td>Cancelled</td></tr><tr><td><strong>TKQ</strong></td><td>Light purple</td><td><img src="../.gitbook/assets/image (9) (1).png" alt="" data-size="original"></td><td></td></tr></tbody></table>
 
 ***
 
@@ -131,7 +131,7 @@ The feature is automatically enabled and applied across all relevant pages.
 #### Example 2 – Confirmed Booking
 
 * Status: HK
-* Display: Pink dot
+* Display: Purple dot
 * Interpretation: Booking is confirmed
 
 <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
