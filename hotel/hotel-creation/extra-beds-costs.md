@@ -27,17 +27,17 @@ The page allows configuration of **rule-based pricing for extra beds**, ensuring
 * Hotel must be configured with Room Types
 * Contract Periods must exist
 * Pricing logic must be enabled for extra beds
-* User must have access to hotel contract configuration
+* User must have access to the hotel contract configuration
 
 ### Navigation
 
-Hotel → Contracts → Select Hotel → **Extra Beds Costs**
+Hotel → Select Hotel → **Extra Beds Costs**
 
 ### Conditions of Application
 
 Extra bed costs apply only when:
 
-* Extra beds are used by passengers.
+* Passengers use extra beds.
 * Cost prices are calculated **per passenger**.
 
 If these conditions are not met, the extra bed cost value stays **0**.
