@@ -179,7 +179,6 @@ All changes recorded in the Activity Log will also be available in the **Interna
 
 * Each field change should generate a separate log entry
 * Bulk updates should result in multiple entries (one per changed field)
-* Image replacement should be treated as a change in the **Image** field
 
 ### FAQ
 
