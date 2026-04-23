@@ -12,7 +12,9 @@ Each record type (FI01–FI09) has a fixed-length structure and must follow stri
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-### Header – FI01
+### FI01 — File Header
+
+<table data-header-hidden><thead><tr><th width="199.5555419921875"></th><th></th></tr></thead><tbody><tr><td>FI01</td><td>File Header · Trimmed length: 58 characters · Appears once, first line</td></tr></tbody></table>
 
 **Example:**
 
@@ -20,24 +22,15 @@ Each record type (FI01–FI09) has a fixed-length structure and must follow stri
 FI0101308881000314947100000000000000000000020260417065901P
 ```
 
-{% hint style="warning" %}
-The **Creditor Number** must be replaced with a unique number from your test agency when testing File Import.
-{% endhint %}
-
-**Decoding:**
-
-| Position | Length | Description     | Value    |
-| -------- | ------ | --------------- | -------- |
-| 0–3      | 4      | Record Type     | FI01     |
-| 5–12     | 8      | Creditor Number | 01308881 |
-
 {% hint style="info" %}
-The Creditor number for each agency can be found in User -> Brands-> Select agency -> General -> Ticket.&#x20;
+For the testing environment, this line doesn't need to be modified.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+### FI02 — Batch Header
 
-### 2. Account Information – FI02
+<table data-header-hidden><thead><tr><th width="134"></th><th></th></tr></thead><tbody><tr><td>FI02</td><td>Batch Header · Trimmed length: 65 characters · Appears once, second line</td></tr></tbody></table>
+
+The FI02 record describes the payment batch. The import code uses this record to verify that the file belongs to the correct creditor — if the creditor number extracted from this line does not match the system's expected value, the import is rejected with an error.
 
 **Example:**
 
@@ -45,13 +38,21 @@ The Creditor number for each agency can be found in User -> Brands-> Select agen
 FI020861492065301000090278400000000000000000000000020260417065901
 ```
 
+<table><thead><tr><th width="104.5555419921875">Position</th><th width="95.5555419921875">Length</th><th width="163.1112060546875">Field Name</th><th width="143.1112060546875">Example</th><th>Description</th></tr></thead><tbody><tr><td>[0 : 4]</td><td>4</td><td>RecordType</td><td>FI02</td><td>Literal record identifier. Always 'FI02'.</td></tr><tr><td>[5 : 13]</td><td>8</td><td>CreditorNumber</td><td>82040226</td><td>Creditor/batch identifier used for validation. Compared against the system-stored creditor number by the C# importer.</td></tr></tbody></table>
+
 {% hint style="info" %}
-For the testing environment, this line doesn't need to be modified.
+From the **FI02** line, in the test environment, only the **Creditor Number** field can be modified, located at position **\[5,13]**.
 {% endhint %}
+
+{% hint style="info" %}
+The Creditor number for each agency can be found in **User -> Brands-> Select agency -> General -> Ticket**. &#x20;
+{% endhint %}
+
+<figure><img src="../../.gitbook/assets/image (801).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-### 3. Transaction – FI03
+### FI03 — Payment Record
 
 **Example:**
 
@@ -86,7 +87,7 @@ The **Amount** field is stored without decimals. Always divide by 100 to get the
 The **Booking Number** is extracted as a subset of the **Payer ID** field.
 {% endhint %}
 
-### 4. Summary / Totals – FI08
+### FI08 — Batch Summary
 
 **Example:**
 
@@ -104,7 +105,7 @@ This record contains aggregated totals for validation purposes.
 
 ***
 
-### 5. Footer – FI09
+### FI09 — File Trailer
 
 **Example:**
 
