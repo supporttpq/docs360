@@ -63,6 +63,12 @@ FI020820402267780000207443300000000000000000000000020260324112701
 
 <table><thead><tr><th width="104.5555419921875">Position</th><th width="95.5555419921875">Length</th><th width="163.1112060546875">Field Name</th><th width="143.1112060546875">Example</th><th>Description</th></tr></thead><tbody><tr><td>[0 : 4]</td><td>4</td><td>RecordType</td><td>FI02</td><td>Literal record identifier. Always 'FI02'.</td></tr><tr><td>[5 : 13]</td><td>8</td><td>CreditorNumber</td><td>82040226</td><td>Creditor/batch identifier used for validation. Compared against the system-stored creditor number by the C# importer.</td></tr></tbody></table>
 
+{% hint style="info" %}
+The Creditor number for each agency can be found in **User -> Brands-> Select agency -> General -> Ticket**.&#x20;
+{% endhint %}
+
+<figure><img src="../../.gitbook/assets/image (802).png" alt=""><figcaption></figcaption></figure>
+
 ### FI03 — Payment Record
 
 <table data-header-hidden><thead><tr><th width="112.8887939453125"></th><th></th></tr></thead><tbody><tr><td>FI03</td><td>Payment Record · Trimmed length: 113 characters · Repeats once per payment (132 records)</td></tr></tbody></table>
