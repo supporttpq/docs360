@@ -147,11 +147,12 @@ Some hotels have different board basis depending on the period (e.g. BB → HB)
 
 **Step 3: Build a combination**
 
-* Create a combination:
-  * main board basis
-  *   supplements for differences
+*   Create a combination:
 
-      <figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    * main board basis
+    * supplements for differences
+
+    <figure><img src="../.gitbook/assets/image (803).png" alt=""><figcaption></figcaption></figure>
 
 **Step 4: Validate**
 
@@ -179,11 +180,12 @@ If NO valid combination is found:
 
 #### Pricing
 
-* The price:
-  * includes all supplements
-  * is aggregated into the base booking price
+*   The price:
 
-<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+    * includes all supplements
+    * is aggregated into the base booking price
+
+    <figure><img src="../.gitbook/assets/image (804).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -225,7 +227,7 @@ An extra is considered a board supplement if:
 
 * Booking: 7 nights
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (805).png" alt=""><figcaption></figcaption></figure>
 
 *   Hotel:
 
@@ -248,7 +250,7 @@ An extra is considered a board supplement if:
 
     <figure><img src="../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (806).png" alt=""><figcaption></figcaption></figure>
 
 #### Result
 
