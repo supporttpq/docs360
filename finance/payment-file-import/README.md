@@ -26,6 +26,14 @@ layout:
 
 **Payment File Import** lets you import a **bank payment file** so Tourpaq Office can **register booking payments automatically**.
 
+This is a function that allows importing in the system the payments that have been made to the bank by the customers.
+
+{% hint style="info" %}
+Each company in the system can choose a certain bank where its payments will be made.
+{% endhint %}
+
+The bank will provide a file with payments together with the specification for importing them in the system.
+
 This helps with **bank reconciliation** and reduces manual payment entry.
 
 After the import, the payments are visible in [Payment Registration](../payment-registration.md).
@@ -48,7 +56,7 @@ Although the file format depends on your bank, each payment line normally needs:
 
 * Make sure you have the **payment file** from your bank.
 * Make sure the file contains the **booking reference/identifier** Tourpaq expects.
-* Confirm that a payment method exists for bank imports (for example **BANKIN**).
+* Each payment from the system has a certain “method of payment” associated. For the payments that come from the bank, a special method of payment will be needed.
   * If you do not see a suitable method, ask an Admin/Financial user to configure it in [Method of Payment](../method-of-payment.md).
 * You must have the required permissions (typically **Financial** or **Administrator**).
 
@@ -170,27 +178,25 @@ Open [Payment Registration](../payment-registration.md) and search by payment da
 
 #### 1. Where do imported payments show up?
 
-Imported payments appear in [Payment Registration](../payment-registration.md).
+All the imported payments appear in [Payment Registration](../payment-registration.md).
 
 #### 2. What information must the bank file contain?
 
-At minimum, Tourpaq needs a **booking identifier**, a **payment date**, and an **amount** for each payment line.
+At a minimum, Tourpaq needs a **booking identifier**, a **payment date**, and an **amount** for each payment line.
 
 #### 3. Why does the import fail with “booking not found” (or similar)?
 
-Usually the booking identifier in the file does not match what Tourpaq expects (wrong booking number, missing reference, extra characters, etc.). Confirm the correct identifier format with your bank export specification or your finance administrator.
+Usually, the booking identifier in the file does not match what Tourpaq expects (e.g., the wrong booking number, a missing reference, extra characters, etc.). Confirm the correct identifier format with your bank export specification or your finance administrator.
+
+Ex: If the booking number is not correct in the import file, in this case, when processing the file from the bank, the message "Payments with no correspondent bookings found" will appear, and it will also appear in Balance Administration, where the correct booking number can be added and after saving it will disappear from here.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (800).png" alt=""><figcaption></figcaption></figure>
 
 #### 4. Which payment method is used for imported payments?
 
-Imported payments should use a dedicated payment method (commonly something like **BANKIN**). If it is missing, it must be configured in [Method of Payment](../method-of-payment.md).
+Imported payments should use a dedicated payment method. If it is missing, it must be configured in [Method of Payment](../method-of-payment.md).
 
-#### 5. I imported the file, but I can’t see the payments—what should I check?
-
-* Expand your **payment date** range in Payment Registration.
-* Filter by the expected **payment method** (for example **BANKIN**).
-* Confirm that the import did not flag validation errors.
-
-#### 6. Can I use Payment File Import for refunds?
+#### 5. Can I use Payment File Import for refunds?
 
 Not usually. Refunds are typically handled through a separate refund process/file (depending on your setup). If you have a refund import feature available, use that instead.
 
