@@ -23,13 +23,11 @@ Use these settings to:
 * Automate reminders, vouchers, and notifications.
 * Keep behavior consistent across brands and agencies.
 
-### Screenshot
-
-<figure><img src="../../.gitbook/assets/image (579).png" alt="General Information settings in System Setup"><figcaption><p>General Information settings</p></figcaption></figure>
-
 ### Available settings
 
 #### 1. Section: General Information (Left Column)
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 This section controls core financial logic, reminder timing, and export formats.
 
@@ -50,6 +48,8 @@ This section controls core financial logic, reminder timing, and export formats.
 | **Vouchers Generation**              | Number of days before departure when vouchers are generated.                                            |
 
 #### 2. Section: Settings (Right Column)
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 This area contains global preferences, voucher display rules, and profit margin behavior.
 
@@ -93,6 +93,8 @@ This area contains global preferences, voucher display rules, and profit margin 
 | **Enable new firebase credentials**                        | If checked, the chat and guest app Firebase credentials will be used for the new credential setup.                                                                                                            |
 
 #### 3. Section: Other Settings (Bottom Area)
+
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 This section covers default age rules, offer follow-up defaults, and a few integrations.
 

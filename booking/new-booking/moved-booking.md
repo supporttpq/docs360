@@ -51,7 +51,7 @@ In practice, moving a booking usually starts by creating a new booking and copyi
 1. Create the **new booking** that the customer will travel on.
 2. Copy passengers from the original booking (so names and traveller details don’t have to be re-entered).
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (36).png" alt="Create a new booking and copy passengers from the original booking"><figcaption><p>Create the new booking and copy passengers from the original booking.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (37).png" alt="Create a new booking and copy passengers from the original booking"><figcaption><p>Create the new booking and copy passengers from the original booking.</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -62,7 +62,7 @@ In practice, moving a booking usually starts by creating a new booking and copyi
 3. Enter the **new booking number** (the booking you created in Step 1).
 4. Click **Mark as moved** to confirm.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (18).png" alt="Mark as Moved dialog: enter the new booking number to link bookings"><figcaption><p>Link the original booking to the new booking number.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (19).png" alt="Mark as Moved dialog: enter the new booking number to link bookings"><figcaption><p>Link the original booking to the new booking number.</p></figcaption></figure>
 {% endstep %}
 
 {% step %}

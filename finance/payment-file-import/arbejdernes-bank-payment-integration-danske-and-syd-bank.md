@@ -10,7 +10,7 @@ Each record type (FI01–FI09) has a fixed-length structure and must follow stri
 
 ### File Overview
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 ### FI01 — File Header
 
