@@ -144,7 +144,22 @@ Prices are defined for certain periods of time, periods that will consider the d
 
 `Extras Setup → Discounts / Supplements → Prices`
 
-<figure><img src=".gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+The price of a discount/supplement can be configured in 2 ways:
+
+*   for all passengers&#x20;
+
+    <figure><img src=".gitbook/assets/image (808).png" alt=""><figcaption></figcaption></figure>
+*   for children/adults in the hotel&#x20;
+
+    <figure><img src=".gitbook/assets/image (809).png" alt=""><figcaption></figcaption></figure>
+
+
+
+{% hint style="warning" %}
+You can never add a price for a discount/supplement for all passengers and for children/adults in the hotel at the same time.&#x20;
+{% endhint %}
+
+<figure><img src=".gitbook/assets/image (810).png" alt=""><figcaption></figcaption></figure>
 
 #### Table Overview
 
@@ -231,7 +246,9 @@ Any value from these intervals will overwrite the general price. To avoid overwr
 
 ***
 
-**BP % -** sets the price as a percentage of the basic price&#x20;
+**BP % -** sets the price as a percentage of the basic price. When BP% is selected, the price value cannot exceed 100.
+
+<figure><img src=".gitbook/assets/image (811).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -247,6 +264,10 @@ Any value from these intervals will overwrite the general price. To avoid overwr
 
 * ✏️ Edit → Modify price row
 * 🗑 Delete → Remove price row
+
+{% hint style="warning" %}
+When the Per Day checkbox is selected, BP% is automatically unavailable. You cannot have both options selected at the same time because if they were selected, at some point, it is possible that the discount would be higher than the initial price, and the booking to which the discount is applied would have a negative price.
+{% endhint %}
 
 #### How It Works
 
