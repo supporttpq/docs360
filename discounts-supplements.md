@@ -39,10 +39,10 @@ Each discount/supplement is defined with the following information:
 
 #### **General discount/supplements**
 
-A general discount/supplement will be chosen manually for each passenger of a booking. It will be chosen from a range of discount/supplements that must fulfill the following conditions:
+A general discount/supplement will be chosen manually for each passenger of a booking. It will be chosen from a range of discounts/supplements that must fulfill the following conditions:
 
-* If any price is defined, the booking’s departure date must be in the interval departure start date and departure end date; if booking start date and booking end date are filled in for that price, the booking date must be in the defined interval
-* If any filter is chosen(destination, resort or hotel) it must correspond to the booking’s destination, resort or hotel
+* If any price is defined, the booking’s departure date must be in the interval departure start date and departure end date; if the booking start date and the booking end date are filled in for that price, the booking date must be in the defined interval
+* If any filter is chosen(destination, resort or hotel), it must correspond to the booking’s destination, resort, or hotel
 * It must be assigned to the booking’s agency Even if you define a general discount/supplement as "permanent", it will not be applied automatically(it must be specific + permanent in order to be applied automatically)
 
 #### **Specific discount/supplements**
@@ -88,12 +88,12 @@ A manual discount/supplement will be manually chosen for a passenger; it can be 
 <figure><img src=".gitbook/assets/image (13) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Discount or Suppl: choose between either discount or supplement behaviour
-* General/Specified: choose between the general or specificate behaviour
+* General/Specified: choose between the general or specific behaviour
 * Fixed/Manual: choose between manual or fixed behaviour
 * Price type: choose between normal, discount, group or manual prices
-* Age: choose the gender of the guest that will benefit from the discount or supplement
-* Period/Trip length: choose in which interval is the discount or supplement available
-* Status: choose if anyone ca see the disc/suppl in Tourpaq
+* Age: choose the gender of the guest who will benefit from the discount or supplement
+* Period/Trip length: choose the interval in which the discount or supplement is available
+* Status: choose if anyone can see the disc/suppl in Tourpaq
 * Currency: choose the currency of the price
 * Category: choose the category of the disc/suppl
 * Dept.date Start: set the departure dates from which the disc/suppl is available
@@ -180,7 +180,7 @@ Each row defines a **price rule** for a discount or supplement, based on:
 * **Child age from hotel** → Applies only to children based on hotel age
   *   The child's age is set at the hotel: `Hotel Setup → Basic Setup → Additional settings`&#x20;
 
-      <figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 * **Adult age from hotel** → Applies only to adults based on hotel age
 
 **Tooltip (Info Icon)**
@@ -290,10 +290,12 @@ A price rule is applied only if **all conditions match**:
 
 #### Row 2 (Adult age from hotel)
 
-* Price: 4000 EUR
+* Price: 50 DKK
 * Applies only to:
   * Passengers classified as **Adult**
   * Based on the hotel child's age
+
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -301,13 +303,37 @@ A price rule is applied only if **all conditions match**:
 
 * Price: 2000 EUR
 * Applies only to:
-  * Passengers classified as **Child**
+  * Passengers classified as **Child**&#x20;
+
+### **How is the discount/supplement applied in bookings**
+
+1. **If the discount/supplement is set as Manual** and the Price is set for Adult in the hotel and Child from the hotel, the discount/supplement will be added manually to the booking like this
+
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+*   on the booking page, after assigning passengers, click on "Show/Hide all Disc/Suppl -> Add Disc/Suppl.&#x20;
+
+    <figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+*   A new page opens where you can add all the discounts/supplements available for the booking.
+
+    <figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+
+*   Select the discount/supplement. If a discount has a defined price for both children in the hotel and adults in the hotel, the same discount will appear on this page, but twice, specific to each type of passenger (child/adult).&#x20;
+
+    <figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+### --------------------------------------------------------------------------------------------------------------------------------------------
 
 ### Stop Sale Intervals
 
 Any discount/supplement can be removed from selling by creating a stop sale interval for it. To do that, just go to Stop sale interval tab.
 
-<figure><img src=".gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Click new interval
 * Set the start date and stop date for the interval in which the discount cannot be sold.
@@ -344,7 +370,7 @@ Resources are used to limit the availability of discounts/supplements to the sel
 
 The limit number of resources that can be added is 100. If the number of resources of the same type exceeds this number, a warning message will appear at the bottom of the page.
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (25).png" alt=""><figcaption></figcaption></figure>
 
 **Workarounds**
 

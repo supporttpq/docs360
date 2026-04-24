@@ -32,7 +32,7 @@ All figures in this view are calculated **per passenger**, not per booking. This
 **Need booking-level totals (counts, turnover, profit) rather than per-passenger breakdowns?** Use [All Bookings Totals](https://manual.tourpaq.com/booking/all-bookings/all-bookings-totals) instead.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
