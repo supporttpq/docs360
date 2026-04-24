@@ -1,6 +1,6 @@
 # Hotel Activity Log
 
-### Overview
+### DescriptionOverview
 
 The **Activity Log** is an audit view of changes to hotel room allotments.
 
@@ -74,11 +74,13 @@ It shows when allotments were created, updated, or deleted, and what changed.
 
 1. **Change Date** – The exact timestamp when the change occurred (e.g., 21-08-2025 15:52:04).
 2. **Period** – The booking/allotment period the change applies to (e.g., 02-10-2025).
-3. **Room Code** – Identifier of the room type (e.g., 31BR).
+3. **Room Code** – Identifier of the room type (e.g., 31BR).&#x20;
 4. **Activity** – Type of action performed:
-   * _Create Hotel Allotment_ – A new allotment was created.
-   * _Update Hotel Allotment_ – An existing allotment was modified.
-   * _Delete Hotel Allotment_ – An allotment was removed.
+
+* _Create Hotel Allotment_ – A new allotment was created.
+* _Update Hotel Allotment_ – An existing allotment was modified.
+* _Delete Hotel Allotment_ – An allotment was removed.
+
 5. **User** – The system user who performed the action (e.g., rowebtpq).
 6. **Property Name** – The specific field within the allotment that was modified (e.g., Date, RoomsNo, MinStay).
 7. **Original Value** – The previous value before the change.
@@ -122,7 +124,22 @@ Hotel administrators gain transparency over photo management by being able to:
 * A new option, **"Hotel Photo"** has been added to the **Activity filter**
 * When selected, the Activity Log will display only photo-related changes
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (807).png" alt=""><figcaption></figcaption></figure>
+
+#### Table columns
+
+1. **Change Date** – The exact timestamp when the change occurred (e.g., 24-04-2026 15:52:04).
+2. **User** – The system user who performed the action (e.g., rowebtpq).
+3. **Activity** – Type of action performed: _Hotel Photo._
+4. **Room Code** – Identifier of the room type (e.g., 31BR). &#x20;
+5. **Property Name** – The specific field within the allotment that was modified (_e.g., HotelPhotoID, Title, Description, etc )._
+6. **Original Value** – The previous value before the change.
+7. **New Value** – The updated value after the change.
+8. **Description** – Extra context.
+
+{% hint style="warning" %}
+If an update (Description) is made for one of the agencies in the Photos tab or an agency is deselected in the Default text tab, then the Hotel Photo Activity Log will show this change, but it will not show which camera the change was made on.
+{% endhint %}
 
 ***
 
