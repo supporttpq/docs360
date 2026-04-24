@@ -1,10 +1,10 @@
 # Discounts/Supplements
 
-#### Overview
+## Overview
 
 The **Discounts and Supplements** module allows each company to define and manage discounts and supplements for passengers. These can be general or specific, permanent or manual, and optionally linked to products (extras). The module supports applying rules based on age, trip duration, transport, room type, departure/booking dates, and other criteria.
 
-#### Purpose
+## Purpose
 
 This module provides a flexible system to:
 
@@ -14,7 +14,7 @@ This module provides a flexible system to:
 * Control availability based on destinations, resorts, hotels, transports, and room types.
 * Support bonus codes and campaign discounts.
 
-#### **Creating a Discount/Supplement**
+## **Creating a Discount/Supplement**
 
 Each discount/supplement is defined with the following information:
 
@@ -27,7 +27,7 @@ Each discount/supplement is defined with the following information:
 
 **Important:** Tourpaq does not reliably support multiple supplements from the same category in Web Booking.
 
-### Discounts and supplements combinations in Tourpaq <a href="#discounts-and-supplements-combinations-in-tourpaq" id="discounts-and-supplements-combinations-in-tourpaq"></a>
+## Discounts and supplements combinations in Tourpaq <a href="#discounts-and-supplements-combinations-in-tourpaq" id="discounts-and-supplements-combinations-in-tourpaq"></a>
 
 (Please set them as you will see them here, as other combinations are not defined or supported in Tourpaq)
 
