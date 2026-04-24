@@ -27,7 +27,7 @@ Use these settings to:
 
 #### 1. Section: General Information (Left Column)
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 This section controls core financial logic, reminder timing, and export formats.
 
@@ -49,7 +49,7 @@ This section controls core financial logic, reminder timing, and export formats.
 
 #### 2. Section: Settings (Right Column)
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This area contains global preferences, voucher display rules, and profit margin behavior.
 
@@ -94,7 +94,7 @@ This area contains global preferences, voucher display rules, and profit margin 
 
 #### 3. Section: Other Settings (Bottom Area)
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 This section covers default age rules, offer follow-up defaults, and a few integrations.
 

@@ -12,7 +12,7 @@ description: >-
 The first phase of the **GDS flight booking process** follows the same logic as for **Charter Transport**.\
 The process ensures that flight availability, pricing, and ticketing rules are correctly handled through the integrated GDS system.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Booking with GDS transport showing Take Allotment and GDS Pending flow"><figcaption><p>GDS booking flow starts like charter: Take Allotment validates availability and price.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Booking with GDS transport showing Take Allotment and GDS Pending flow"><figcaption><p>GDS booking flow starts like charter: Take Allotment validates availability and price.</p></figcaption></figure>
 
 ### **Booking Phase**
 
