@@ -52,7 +52,7 @@ If you cannot select seats, the issue is often related to setup. See:
 * [**Automatic Seating**](../../transport/transport/automatic-seating.md) (if you rely on automatic placement)
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (41).png" alt="Transport Seating tab showing seat map and passenger seat assignments for a booking"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (42).png" alt="Transport Seating tab showing seat map and passenger seat assignments for a booking"><figcaption></figcaption></figure>
 
 ### **Instructions**
 

@@ -55,9 +55,9 @@ Navigate to the price list entry for the departure where you want to allow waitl
 
 Check the **Waitlist (WL)** checkbox under **FLAGS**.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (8).png" alt="Price list entry flags showing the Waitlist (WL) checkbox"><figcaption><p>Enable Waitlist (WL) in the price list flags.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (9).png" alt="Price list entry flags showing the Waitlist (WL) checkbox"><figcaption><p>Enable Waitlist (WL) in the price list flags.</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Waitlist (WL) flag selected in a Tourpaq price list"><figcaption><p>Waitlist (WL) flag selected.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Waitlist (WL) flag selected in a Tourpaq price list"><figcaption><p>Waitlist (WL) flag selected.</p></figcaption></figure>
 {% endstep %}
 {% endstepper %}
 

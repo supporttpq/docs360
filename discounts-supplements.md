@@ -180,7 +180,7 @@ Each row defines a **price rule** for a discount or supplement, based on:
 * **Child age from hotel** → Applies only to children based on hotel age
   *   The child's age is set at the hotel: `Hotel Setup → Basic Setup → Additional settings`&#x20;
 
-      <figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 * **Adult age from hotel** → Applies only to adults based on hotel age
 
 **Tooltip (Info Icon)**
@@ -188,7 +188,7 @@ Each row defines a **price rule** for a discount or supplement, based on:
 > If a passenger type is specified, the discount/supplement applies only to that passenger type.\
 > Child/Adult is determined using the hotel child price age (fallback: agency max child age).
 
-\--------------------------------------------------------------------------------------------------------
+***
 
 **START AGE / END AGE -** Defines the age interval for the rule.
 
@@ -196,7 +196,7 @@ Each row defines a **price rule** for a discount or supplement, based on:
 
 **Ignored when:** PASSENGER = Child/Adult age from hotel
 
-\--------------------------------------------------------------------------------------------------------
+***
 
 **DEPT. START DATE / DEPT. END DATE -** Defines the **departure (travel) period** when the rule is valid.
 
@@ -280,7 +280,7 @@ A price rule is applied only if **all conditions match**:
 
 #### Example
 
-#### Row 1 (PASSENGER = All)
+PASSENGER = All
 
 * Age: 31–120
 * Price: 4000 EUR
@@ -288,18 +288,18 @@ A price rule is applied only if **all conditions match**:
 
 ***
 
-#### Row 2 (Adult age from hotel)
+#### Adult age from the hotel
 
 * Price: 50 DKK
 * Applies only to:
   * Passengers classified as **Adult**
   * Based on the hotel child's age
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-#### Row 3 (Child age from hotel)
+#### Child age from hotel
 
 * Price: 2000 EUR
 * Applies only to:
@@ -309,31 +309,64 @@ A price rule is applied only if **all conditions match**:
 
 1. **If the discount/supplement is set as Manual** and the Price is set for Adult in the hotel and Child from the hotel, the discount/supplement will be added manually to the booking like this
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 *   on the booking page, after assigning passengers, click on "Show/Hide all Disc/Suppl -> Add Disc/Suppl.&#x20;
 
-    <figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 *   A new page opens where you can add all the discounts/supplements available for the booking.
 
-    <figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 *   Select the discount/supplement. If a discount has a defined price for both children in the hotel and adults in the hotel, the same discount will appear on this page, but twice, specific to each type of passenger (child/adult).&#x20;
 
-    <figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+
+2. **If the discount/supplement is set to Automatic,** the discount/supplement will be added automatically to the booking, like this
+
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+*   on the booking page, after assigning passengers, click on "Show/Hide all Disc/Suppl and you will see that the discount/supplement is already added to the booking&#x20;
+
+    <figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+
+*   &#x20;All Automatic discounts will not appear selectable in the add discount/supplement window, as they are already assigned to the booking.
+
+    <figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="warning" %}
+When the discount/supplement is set to be applied automatically, and the Rounding rule is set on the category, the discount/supplement rounding rule will be applied. The discount will be rounded down, and the supplement will be rounded up.
+{% endhint %}
+
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+
+If, at some point, something changes in the booking that may influence the discount/supplement price (Ex, a passenger's age changes), for the price to be automatically updated in the booking, we must use (uncheck) the "Keep automatic discount prices" checkbox, and resave the passengers. After resaving, the system automatically recalculates the new discount/supplement price.&#x20;
+
+<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+When a discount/supplement is part of a campaign, to apply it to a booking, insert the campaign code in the "Disc/Suppl Bonus Code" field when the booking is in Edit passenger. After entering the code, click Save Passengers, and the discount will be applied to the booking.
+
+<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
-### --------------------------------------------------------------------------------------------------------------------------------------------
+***
 
 ### Stop Sale Intervals
 
-Any discount/supplement can be removed from selling by creating a stop sale interval for it. To do that, just go to Stop sale interval tab.
+Any discount/supplement can be removed from the sell by creating a stop-sale interval for it. To do that, just go to Stop sale interval tab.
 
-<figure><img src=".gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Click new interval
 * Set the start date and stop date for the interval in which the discount cannot be sold.
@@ -370,7 +403,7 @@ Resources are used to limit the availability of discounts/supplements to the sel
 
 The limit number of resources that can be added is 100. If the number of resources of the same type exceeds this number, a warning message will appear at the bottom of the page.
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (25).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (26).png" alt=""><figcaption></figcaption></figure>
 
 **Workarounds**
 

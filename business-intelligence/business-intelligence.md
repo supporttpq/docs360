@@ -79,7 +79,7 @@ Each cell shows remaining capacity for that date. The value is shown as **beds**
    * Optionally, check **Show only parent room** to filter parent rooms only.
 3. **Guarantee Rooms:** When enabled, guaranteed room numbers are displayed **below the allotment line** for each room.
 
-<figure><img src="../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

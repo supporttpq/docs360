@@ -51,7 +51,7 @@ In practice, moving a booking usually starts by creating a new booking and copyi
 1. Create the **new booking** that the customer will travel on.
 2. Copy passengers from the original booking (so names and traveller details don’t have to be re-entered).
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (39).png" alt="Create a new booking and copy passengers from the original booking"><figcaption><p>Create the new booking and copy passengers from the original booking.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (40).png" alt="Create a new booking and copy passengers from the original booking"><figcaption><p>Create the new booking and copy passengers from the original booking.</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -62,7 +62,7 @@ In practice, moving a booking usually starts by creating a new booking and copyi
 3. Enter the **new booking number** (the booking you created in Step 1).
 4. Click **Mark as moved** to confirm.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (21).png" alt="Mark as Moved dialog: enter the new booking number to link bookings"><figcaption><p>Link the original booking to the new booking number.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (22).png" alt="Mark as Moved dialog: enter the new booking number to link bookings"><figcaption><p>Link the original booking to the new booking number.</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -70,7 +70,7 @@ In practice, moving a booking usually starts by creating a new booking and copyi
 
 Click **OK** in the confirmation dialog.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (1).png" alt="Confirmation dialog for moving a booking"><figcaption><p>Confirm the move action.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (2).png" alt="Confirmation dialog for moving a booking"><figcaption><p>Confirm the move action.</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -81,7 +81,7 @@ After confirmation:
 * The **original booking** status becomes **Moved**.
 * The booking is now clearly marked as rescheduled.
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Booking details showing status Moved after rescheduling"><figcaption><p>The original booking is now marked as Moved.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Booking details showing status Moved after rescheduling"><figcaption><p>The original booking is now marked as Moved.</p></figcaption></figure>
 {% endstep %}
 {% endstepper %}
 

@@ -19,7 +19,7 @@ By combining these elements, the system can generate accurate seat maps and clea
 
 #### Fields Overview
 
-<figure><img src=".gitbook/assets/image (9) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (9) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 | Field                   | Purpose                                                                                | Instructions                                                                                                                                      |
 | ----------------------- | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |

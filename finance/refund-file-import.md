@@ -43,7 +43,7 @@ Your file must follow these rules:
 
 ### Import a refund file (Business Central)
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Refund File Import (Business Central)"><figcaption><p>Import Business Central refund transactions into Tourpaq using the required PaymentCode and BookingNo file format.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Refund File Import (Business Central)"><figcaption><p>Import Business Central refund transactions into Tourpaq using the required PaymentCode and BookingNo file format.</p></figcaption></figure>
 
 {% stepper %}
 {% step %}

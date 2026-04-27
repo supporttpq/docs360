@@ -35,7 +35,7 @@ Room allocation is now available even when:
 
 * No hotel is selected
 
-<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 **System behavior:**
 
@@ -50,7 +50,7 @@ Room allocation is now available even when:
 
 The **Rooms No** field controls how many rooms are included in the allocation.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Rules:**
 
@@ -70,7 +70,7 @@ The **Rooms No** field controls how many rooms are included in the allocation.
 Room allocation becomes active only when Rooms No is set.&#x20;
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -89,7 +89,7 @@ Each room includes:
 * Child ages must be valid (non-empty if children exist)
 * Allocation is used directly in search filtering
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -171,7 +171,7 @@ Validation is enforced before search execution.
   * All hotels matching this distribution
   * Valid transport + stay combinations
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Example 2:
 
@@ -188,5 +188,5 @@ Validation is enforced before search execution.
   * All rooms distribution for the specific hotel
   * Valid transport + stay combinations
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
