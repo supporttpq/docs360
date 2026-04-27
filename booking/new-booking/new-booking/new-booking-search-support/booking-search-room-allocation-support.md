@@ -50,7 +50,7 @@ Room allocation is now available even when:
 
 The **Rooms No** field controls how many rooms are included in the allocation.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Rules:**
 

@@ -49,7 +49,7 @@ This section controls core financial logic, reminder timing, and export formats.
 
 #### 2. Section: Settings (Right Column)
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This area contains global preferences, voucher display rules, and profit margin behavior.
 

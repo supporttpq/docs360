@@ -105,15 +105,21 @@ Display names - when checked will display the names of the products, rooms, hote
   * Per extra
   * Per room
 * Requirements:
-  * Age (from-to): insert the age interval of the passengers elligible for the discount (2-12; 15-20)
-  * Rank (from-to): insert the passengers that will acctually receive the discount (if the rank is set 3-4, only the 3rd and 4th passengers that have the required age will receive the discount)
+  * Age (from-to): insert the age interval of the passengers eligible for the discount (2-12; 15-20)
+  * Rank (from-to): insert the passengers that will actually receive the discount (if the rank is set 3-4, only the 3rd and 4th passengers that have the required age will receive the discount)&#x20;
   * Select supplement: select the supplement (only for per supplement discounts)
-* Interval 1-4: for each trip period 3 discount rules can be inserted:
-  * % (percentage): the passenger will receive a discount based on a percentage of the Room price
-  * Discount: the passenger will receive a fixed amount as a discount
-  * Fixed price: the passenger will pay a fixed amount, regardless of the room price (Room price - fixed price = discount)
+  * Interval 1-4: for each trip period 3 discount rules can be inserted:
+    * % (percentage): the passenger will receive a discount based on a percentage of the Room price
+      * Discount: the passenger will receive a fixed amount as a discount
+      * Fixed price: the passenger will pay a fixed amount, regardless of the room price (Room price - fixed price = discount)
 
-Note: A discount line cannot have more than 1 rule for each interval (if percentage has been decided for the first interval, fixed price and discount rules cannot be used anymore for that interval and line) All intervals must be filled.
+{% hint style="warning" %}
+If the Rank is set from 0 to 0, then the campaign will not apply to any passenger
+{% endhint %}
+
+{% hint style="info" %}
+A discount line cannot have more than 1 rule for each interval (if a percentage has been decided for the first interval, fixed price and discount rules cannot be used anymore for that interval and line) All intervals must be filled.
+{% endhint %}
 
 ### Discount Calculation
 
@@ -123,21 +129,10 @@ Note: A discount line cannot have more than 1 rule for each interval (if percent
 
 <figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* **Per booking discount**
-
-Only the first passenger receives the discount according to the requirements set
-
-* **Per person Adult discount**
-
-Adult passengers receive discounts. The passenger is set to MR/MRS in the booking.
-
-* **Per person Child discount**
-
-Child passengers receive discounts. The passenger is set to CHILD in the booking.
-
-* **Per extra**
-
-All passengers receive discounts for the eligible and selected extras.
+* **Per booking discount:** Only the first passenger receives the discount according to the requirements set
+* **Per person Adult discount:** Adult passengers receive discounts. The passenger is set to MR/MRS in the booking.
+* **Per person Child discount:** Child passengers receive discounts. The passenger is set to CHILD in the booking.
+* **Per extra:** All passengers receive discounts for the eligible and selected extras.
 
 The extra percentage discount is calculated as a percentage from the total price of the extras available in the campaign for the passenger.
 
@@ -145,24 +140,24 @@ The extra discount gives the inserted amount as a discount regardless of the tot
 
 The fixed price discount gives discounts depending on the total price of the extras:
 
-* If the inserted amount is greater than the total price of the extra, the discount will be the total price of the extra.
-* If the inserted amount is lower than the total price of the extra, the discount will be the difference between the total price of the extra and the inserted amount.
+&#x20;      \- If the inserted amount is greater than the total price of the extra, the discount will be the total price of the extra.
 
-**Per room discount**
+&#x20;     \- If the inserted amount is lower than the total price of the extra, the discount will be the difference between the total price of the extra and the inserted amount.
 
-First passengers in the room receive discounts according to the requirements set. The rank refers to the room, and not the passenger.
+* **Per room discount:** First passengers in the room receive discounts according to the requirements set. The rank refers to the room, and not the passenger.
 
 A campaign setup should look like this (this is an example, as the campaign can be setup in many ways, depending on the needs):
 
 <figure><img src=".gitbook/assets/image (21) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* **Per Person Adult age from the hotel**
+* **Per Person Adult age from the hotel:** Adult passengers receive discounts. Adult age based on age larger than the "Child price age" from the hotel; fallback is the agency Max child age.
+* **Per Person Child age from the hotel:** Child passengers receive discounts. Child age based on the "Child price age" from the hotel; fallback is the agency's max child age.
 
-Adult passengers receive discounts. Adult age based on age larger than the "Child price age" from the hotel; fallback is the agency Max child age.
+{% hint style="info" %}
+If there are multiple discounts that are valid for a passenger, then the first one in the list is applied.
+{% endhint %}
 
-* **Per Person Child age from the hotel**
-
-Child passengers receive discounts. Child age based on the "Child price age" from the hotel; fallback is the agency Max child age.
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 #### Examples
 
