@@ -22,7 +22,7 @@ layout:
 
 # All bookings
 
-### .**Overview**
+### **Overview**
 
 **All Bookings** is the central search and management hub for existing reservations. It allows agents, operations staff, finance teams, and managers to find any booking quickly, review its details, and drill into statistical and financial reports — all within a single, highly filterable interface.
 
