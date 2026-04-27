@@ -24,6 +24,9 @@ This interface helps you:
 * Display all possible **flight + hotel** combinations.
 * Enable direct booking initiation from matching hotel results.
 * Compare availability, stay durations, pricing, and discounts efficiently.
+* Search using the **room allocation directly.**
+* Avoid manual hotel-by-hotel filtering.
+* Handle **family and mixed occupancy bookings faster.**
 
 ***
 
@@ -81,11 +84,52 @@ If something is missing, you will see validation warnings.
 
 Fill the main fields (Adults, Departures, Arrivals, Date From/To), then click **Search**.
 
+Room allocation is available even when no hotel is selected
+
 <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Search filters for flights and hotels in New Booking Search"><figcaption></figcaption></figure>
+
+The **Rooms No** field controls how many rooms are included in the allocation.**Rules:**
+
+* Always editable
+* Minimum value: 1
+* Changing the value:
+  * Dynamically updates room rows
+
+**Behavior:**
+
+| Value      | Result                   |
+| ---------- | ------------------------ |
+| 0 or empty | Room allocation disabled |
+| ≥ 1        | Room allocation enabled  |
+
+{% hint style="success" %}
+Room allocation becomes active only when Rooms No is set.&#x20;
+{% endhint %}
+
+<figure><img src="../../../../.gitbook/assets/image (812).png" alt=""><figcaption></figcaption></figure>
 
 Flights and hotels load as two result grids.
 
 <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Search results showing flights (top) and hotels (bottom)"><figcaption></figcaption></figure>
+
+Filters only results that match:
+
+* Occupancy distribution
+* Room configuration
+
+When the user clicks **Search**:
+
+The system evaluates:
+
+* Room allocation
+* Passenger distribution
+* Travel dates
+* Transport
+* Board
+
+**Result:**
+
+* Only valid combinations matching the allocation are returned
 {% endstep %}
 
 {% step %}
@@ -142,9 +186,80 @@ You will see **Create booking** and **Clear selected row**.
 
 The Search page is split into two main result sections: **Flights** and **Hotels**. Both sections are driven by the criteria selected at the top of the page.
 
+{% hint style="info" %}
+Only valid combinations matching the allocation are returned
+{% endhint %}
+
+### Search filter & UI Behavior
+
+<figure><img src="../../../../.gitbook/assets/image (818).png" alt=""><figcaption></figcaption></figure>
+
+**Filters:**
+
+* Adults: Defines the number of adult passengers included in the search.
+* Child ages: Specifies the ages of children for price calculation and availability. Each age is typically used to determine child pricing rules per supplier.
+* Infants: Defines the number of infants included in the search. Infants may not occupy a bed and are often priced differently or not at all.
+* Workflow: Allows selection of the booking workflow type.\
+  Example: **Charter & Dynamic**
+* Display names: When enabled, the system shows descriptive names instead of codes for certain entities (e.g., airports, hotels, resorts).
+* Departures: Defines the departure location. (Example: **BLL**). Typically represents an airport or departure point code used in the system.
+* Arrivals: Defines the arrival destination. The field allows selection of one or multiple arrival destinations, depending on configuration.
+* Date from: Start date of the travel period.
+* Date to: End date of the travel period. These two fields define the overall travel window used for availability search.
+* Travel length: Defines the trip duration range (Example: **1–7 days**).  Used to filter offers matching the selected stay length.
+* Resort: Filters results by specific resort. Can be used to narrow down availability within a destination area.&#x20;
+* Hotel: Filters results by specific hotel selection.\
+  Example: **BCN\_HO** (hotel code or internal identifier).
+* Rooms no.: Defines the number of rooms required for the booking.&#x20;
+* Board: Defines the meal plan type.&#x20;
+* Budget (max): Sets the maximum price limit for the search.\
+  Results exceeding this value are excluded.&#x20;
+* Stars: Filters hotels by category rating (star rating).&#x20;
+* Show availability: Toggles whether real-time availability is included in the search results.
+
+#### Room allocation section
+
+Each room has its own configuration block:
+
+**Room:** Selects room type or category.
+
+**Adults:** Number of adults assigned to that specific room.
+
+**Child ages:** Ages of children assigned to the room.\
+Used for pricing and occupancy rules.
+
+**Infants:** Number of infants assigned to the room.
+
+This section allows detailed per-room passenger distribution, which affects availability and pricing results.
+
+#### UI Behavior
+
+* Rooms No → always editable
+* Room rows → dynamically generated
+* Room column:
+  * Disabled when no hotel is selected
+  * Enabled when the hotel is selected
+* Allocation fields:
+  * Always visible when Rooms No ≥ 1
+
+***
+
+#### Validation Rules <a href="#validation-rules" id="validation-rules"></a>
+
+| Rule               | Behavior              |
+| ------------------ | --------------------- |
+| Rooms No not set   | Disable allocation    |
+| Passenger mismatch | Show validation error |
+| Missing child ages | Block search          |
+| Invalid occupancy  | Exclude results       |
+
+Validation is enforced before search execution.
+
 ### Flights section
 
 The Flights section shows available transports that match the search.
+
+<figure><img src="../../../../.gitbook/assets/image (816).png" alt=""><figcaption></figcaption></figure>
 
 **Displayed information**
 
@@ -165,6 +280,8 @@ The Flights section shows available transports that match the search.
 
 The Hotels section lists available hotel rooms that match the search and selected flight.
 
+<figure><img src="../../../../.gitbook/assets/image (815).png" alt=""><figcaption></figcaption></figure>
+
 **Displayed information**
 
 * Hotel - Hotel code
@@ -184,6 +301,48 @@ The Hotels section lists available hotel rooms that match the search and selecte
 
 * Discounted prices are highlighted
 * Normal price is shown with strikethrough when a discount applies
+
+***
+
+###
+
+***
+
+#### Example Scenarios <a href="#example-scenarios" id="example-scenarios"></a>
+
+**Example 1**
+
+**Input:**
+
+* Rooms No: 2
+* Room 1: 1 adult + 1 child (age 4)
+* Room 2: 1 adult + 1 child (age 8)
+* No hotel selected
+
+**Result:**
+
+* System returns:
+  * All hotels matching this distribution
+  * Valid transport + stay combinations
+
+<figure><img src="../../../../.gitbook/assets/image (813).png" alt=""><figcaption></figcaption></figure>
+
+**Example 2:**
+
+**Input:**
+
+* Hotel selected: BCN\_HO
+* Rooms No: 2
+* Room 1 (2BR): 1 adult + 1 child (age 4)
+* Room 2 (2/22): 1 adult + 1 child (age 8)
+
+**Result:**
+
+* System returns:
+  * All rooms distribution for the specific hotel
+  * Valid transport + stay combinations
+
+<figure><img src="../../../../.gitbook/assets/image (814).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -278,7 +437,7 @@ Additional UI Elements:
 
 ***
 
-### Next steps after search
+### Next steps after the search
 
 1. Select the preferred **flight** from the upper table.
 2. Choose a suitable **hotel** row.
