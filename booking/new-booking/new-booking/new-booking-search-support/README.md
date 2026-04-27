@@ -190,72 +190,7 @@ The Search page is split into two main result sections: **Flights** and **Hotels
 Only valid combinations matching the allocation are returned
 {% endhint %}
 
-### Search filter & UI Behavior
-
-<figure><img src="../../../../.gitbook/assets/image (818).png" alt=""><figcaption></figcaption></figure>
-
-**Filters:**
-
-* Adults: Defines the number of adult passengers included in the search.
-* Child ages: Specifies the ages of children for price calculation and availability. Each age is typically used to determine child pricing rules per supplier.
-* Infants: Defines the number of infants included in the search. Infants may not occupy a bed and are often priced differently or not at all.
-* Workflow: Allows selection of the booking workflow type.\
-  Example: **Charter & Dynamic**
-* Display names: When enabled, the system shows descriptive names instead of codes for certain entities (e.g., airports, hotels, resorts).
-* Departures: Defines the departure location. (Example: **BLL**). Typically represents an airport or departure point code used in the system.
-* Arrivals: Defines the arrival destination. The field allows selection of one or multiple arrival destinations, depending on configuration.
-* Date from: Start date of the travel period.
-* Date to: End date of the travel period. These two fields define the overall travel window used for availability search.
-* Travel length: Defines the trip duration range (Example: **1–7 days**).  Used to filter offers matching the selected stay length.
-* Resort: Filters results by specific resort. Can be used to narrow down availability within a destination area.&#x20;
-* Hotel: Filters results by specific hotel selection.\
-  Example: **BCN\_HO** (hotel code or internal identifier).
-* Rooms no.: Defines the number of rooms required for the booking.&#x20;
-* Board: Defines the meal plan type.&#x20;
-* Budget (max): Sets the maximum price limit for the search.\
-  Results exceeding this value are excluded.&#x20;
-* Stars: Filters hotels by category rating (star rating).&#x20;
-* Show availability: Toggles whether real-time availability is included in the search results.
-
-#### Room allocation section
-
-Each room has its own configuration block:
-
-**Room:** Selects room type or category.
-
-**Adults:** Number of adults assigned to that specific room.
-
-**Child ages:** Ages of children assigned to the room.\
-Used for pricing and occupancy rules.
-
-**Infants:** Number of infants assigned to the room.
-
-This section allows detailed per-room passenger distribution, which affects availability and pricing results.
-
-#### UI Behavior
-
-* Rooms No → always editable
-* Room rows → dynamically generated
-* Room column:
-  * Disabled when no hotel is selected
-  * Enabled when the hotel is selected
-* Allocation fields:
-  * Always visible when Rooms No ≥ 1
-
-***
-
-#### Validation Rules <a href="#validation-rules" id="validation-rules"></a>
-
-| Rule               | Behavior              |
-| ------------------ | --------------------- |
-| Rooms No not set   | Disable allocation    |
-| Passenger mismatch | Show validation error |
-| Missing child ages | Block search          |
-| Invalid occupancy  | Exclude results       |
-
-Validation is enforced before search execution.
-
-### Flights section
+#### Flights section
 
 The Flights section shows available transports that match the search.
 
@@ -276,7 +211,7 @@ The Flights section shows available transports that match the search.
 
 ***
 
-### Hotels section
+#### Hotels section
 
 The Hotels section lists available hotel rooms that match the search and selected flight.
 
@@ -301,10 +236,6 @@ The Hotels section lists available hotel rooms that match the search and selecte
 
 * Discounted prices are highlighted
 * Normal price is shown with strikethrough when a discount applies
-
-***
-
-###
 
 ***
 
@@ -390,6 +321,29 @@ When you click **Create booking**, a new page opens. It is pre-filled with the s
 | **Stars**                 | Filters based on hotel star rating.                                                                                                       |
 | **Clear**                 | Resets all filters to default.                                                                                                            |
 | **Search (Button)**       | Executes the search using the defined filters.                                                                                            |
+
+#### UI Behavior
+
+* Rooms No → always editable
+* Room rows → dynamically generated
+* Room column:
+  * Disabled when no hotel is selected
+  * Enabled when the hotel is selected
+* Allocation fields:
+  * Always visible when Rooms No ≥ 1
+
+***
+
+#### Validation Rules <a href="#validation-rules" id="validation-rules"></a>
+
+| Rule               | Behavior              |
+| ------------------ | --------------------- |
+| Rooms No not set   | Disable allocation    |
+| Passenger mismatch | Show validation error |
+| Missing child ages | Block search          |
+| Invalid occupancy  | Exclude results       |
+
+Validation is enforced before search execution.
 
 ***
 
