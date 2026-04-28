@@ -57,11 +57,9 @@ Available options:
 * **Cancel order**: SMS is sent when you cancel an extra order.
 * **Flight Change**: SMS is sent when the transport has a flight schedule change.
 
-The templates for Hotel, Excursion, Arrival and Resort (Called 'Destination' in the Guide APP) are displayed like this in the Guide APP.
+The templates for Hotel, Excursion, Arrival, and Resort (Called 'Destination' in the Guide APP) are displayed like this in the Guide APP.
 
-<br>
-
-<figure><img src=".gitbook/assets/image (5) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/guide app menu.png" alt=""><figcaption></figcaption></figure>
 
 ### FAQ
 
