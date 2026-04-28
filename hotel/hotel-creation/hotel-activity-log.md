@@ -74,7 +74,7 @@ It shows when allotments were created, updated, or deleted, and what changed.
 
 1. **Change Date** – The exact timestamp when the change occurred (e.g., 21-08-2025 15:52:04).
 2. **Period** – The booking/allotment period the change applies to (e.g., 02-10-2025).
-3. **Room Code** – Identifier of the room type (e.g., 31BR).&#x20;
+3. **Room Code** – Identifier of the room type (e.g., 31BR).
 4. **Activity** – Type of action performed:
 
 * _Create Hotel Allotment_ – A new allotment was created.
@@ -131,7 +131,7 @@ Hotel administrators gain transparency over photo management by being able to:
 1. **Change Date** – The exact timestamp when the change occurred (e.g., 24-04-2026 15:52:04).
 2. **User** – The system user who performed the action (e.g., rowebtpq).
 3. **Activity** – Type of action performed: _Hotel Photo._
-4. **Room Code** – Identifier of the room type (e.g., 31BR). &#x20;
+4. **Room Code** – Identifier of the room type (e.g., 31BR). If the photo is not assigned for a specific room type, the room code will be named _Unspecified_
 5. **Property Name** – The specific field within the allotment that was modified (_e.g., HotelPhotoID, Title, Description, etc )._
 6. **Original Value** – The previous value before the change.
 7. **New Value** – The updated value after the change.
@@ -153,12 +153,13 @@ The system log changes for the following photo properties made in the [Hotel -> 
 * Is Main Photo (flag) - true/false
 * Room Type - room type id
 * Order ID - shows the position of the photo
-* File Name - name of the inserted photo
+* File Name - unique name of the inserted photo in the system
 * Hotel ID - hotel id
+* Original File Name - name of the photo&#x20;
 * Insert Date - date when the photo was uploaded
 
 {% hint style="info" %}
-All changes recorded in the Activity Log will also be available in the **Internal Logs** menu, under **Setup → Internal Logs → Hotel Photo**. &#x20;
+All changes recorded in the Activity Log will also be available in the **Internal Logs** menu, under **Setup → Internal Logs → Hotel Photo**.
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
