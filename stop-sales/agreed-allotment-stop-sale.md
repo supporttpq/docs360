@@ -41,7 +41,7 @@ Start from [Edit Stop Sale](edit-stop-sale.md) if you are unsure how to open **R
 
 {% stepper %}
 {% step %}
-#### Open the rule in edit mode
+**Open the rule in edit mode**
 
 1. Go to **Hotel → Stop Sales**.
 2. Find the Stop Sale rule you want to adjust.
@@ -51,7 +51,7 @@ Start from [Edit Stop Sale](edit-stop-sale.md) if you are unsure how to open **R
 {% endstep %}
 
 {% step %}
-#### Unlock the Agreed Allotment field
+**Unlock the Agreed Allotment field**
 
 Uncheck **Enabled**. This unlocks the agreed allotment input.
 
@@ -59,7 +59,7 @@ Uncheck **Enabled**. This unlocks the agreed allotment input.
 {% endstep %}
 
 {% step %}
-#### Set the agreed allotment and save
+**Set the agreed allotment and save**
 
 1. Enter the **Agreed Allotment** value.
 2. Click **Save**.
@@ -88,7 +88,7 @@ After you save, verify the same hotel, room, and date range in these places:
   * Filter by hotel, room type, and dates.
   * `FHA` (free-hotel-allotment) should reflect the reopened rooms minus bookings.
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### FAQ
 

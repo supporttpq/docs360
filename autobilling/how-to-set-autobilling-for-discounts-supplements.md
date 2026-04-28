@@ -73,7 +73,7 @@ In the discount or supplement configuration:
 * Define **Schedule**
 * Set required accounting codes
 
-<figure><img src="../.gitbook/assets/image (321).png" alt="Discounts and supplements automatic billing settings"><figcaption><p>Discounts/Supplements → Automatic Billing: link a creditor, set codes, and schedule invoice generation.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (320).png" alt="Discounts and supplements automatic billing settings"><figcaption><p>Discounts/Supplements → Automatic Billing: link a creditor, set codes, and schedule invoice generation.</p></figcaption></figure>
 
 #### 3 Required Fields
 

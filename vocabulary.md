@@ -17,7 +17,7 @@ Typical examples include:
 * Common phrases (“How much does it cost?”, “Where is the beach?”)
 * Emergency or transport-related words (“Hospital”, “Taxi”, “Airport”)
 
-<figure><img src=".gitbook/assets/image (15) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### How to Use
 

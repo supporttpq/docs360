@@ -28,7 +28,7 @@ Only **enabled** rules can be removed or split.
 
 {% stepper %}
 {% step %}
-#### Filter and select a rule
+**Filter and select a rule**
 
 1. Use filters to narrow down the list.
 2. Select an **enabled** Stop Sale rule.
@@ -37,19 +37,19 @@ Only **enabled** rules can be removed or split.
 {% endstep %}
 
 {% step %}
-#### Open the rule in edit mode
+**Open the rule in edit mode**
 
 Click **Edit** (pencil icon) for the selected rule. This shows the **Remove or Split** button.
 {% endstep %}
 
 {% step %}
-#### Open “Remove or Split”
+**Open “Remove or Split”**
 
 Click **Remove or Split**. A section called **Remove or Split Stop Sale** opens under the rule.
 {% endstep %}
 
 {% step %}
-#### Choose how many split records you want
+**Choose how many split records you want**
 
 Enter the number in **“Record number to split stop sale in”**. Tourpaq creates that many rows.
 
@@ -57,18 +57,18 @@ Each row starts with the original **Start/End** dates. Each row starts as **Enab
 {% endstep %}
 
 {% step %}
-#### Define each period and action
+**Define each period and action**
 
 For each row, set:
 
 * **Start/End Date**: the period.
 * **Action**: **Remove** or **Agreed Allotment**.
 
-<figure><img src="../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
-#### Split or cancel
+**Split or cancel**
 
 * Click **Split** to apply changes.
 * Click **Cancel** to discard changes.

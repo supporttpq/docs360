@@ -28,7 +28,7 @@ Go to **Hotel → Single Room Supplement**.
     <figure><img src="../../../.gitbook/assets/image (547).png" alt=""><figcaption></figcaption></figure>
 *   The rule in **Hotel → Single Room Supplement** matches the booking.
 
-    <figure><img src="../../../.gitbook/assets/image (549).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (548).png" alt=""><figcaption></figcaption></figure>
 
 ### How it works
 
@@ -62,25 +62,25 @@ When you add the first rule for a hotel, Tourpaq can auto-create missing data:
 
 {% stepper %}
 {% step %}
-#### Open Single Room Supplement
+**Open Single Room Supplement**
 
 Go to **Hotel → Single Room Supplement**.
 {% endstep %}
 
 {% step %}
-#### Confirm the `SINGLE` supplement is sellable
+**Confirm the `SINGLE` supplement is sellable**
 
 Make sure `SINGLE` exists and is set **For sale**.
 {% endstep %}
 
 {% step %}
-#### Create the rule
+**Create the rule**
 
 Click **Create** and set dates, age range, room type, and value.
 {% endstep %}
 
 {% step %}
-#### Save and test
+**Save and test**
 
 Save the hotel.
 

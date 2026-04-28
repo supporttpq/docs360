@@ -46,16 +46,16 @@ In practice, moving a booking usually starts by creating a new booking and copyi
 
 {% stepper %}
 {% step %}
-#### 1. Create the new booking and copy passengers
+**1. Create the new booking and copy passengers**
 
 1. Create the **new booking** that the customer will travel on.
 2. Copy passengers from the original booking (so names and traveller details don’t have to be re-entered).
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (40).png" alt="Create a new booking and copy passengers from the original booking"><figcaption><p>Create the new booking and copy passengers from the original booking.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Create a new booking and copy passengers from the original booking"><figcaption><p>Create the new booking and copy passengers from the original booking.</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
-#### 2. Mark the original booking as moved
+**2. Mark the original booking as moved**
 
 1. Go back to the **original booking**.
 2. Click **Mark as Moved**.
@@ -66,7 +66,7 @@ In practice, moving a booking usually starts by creating a new booking and copyi
 {% endstep %}
 
 {% step %}
-#### 3. Confirm the action
+**3. Confirm the action**
 
 Click **OK** in the confirmation dialog.
 
@@ -74,7 +74,7 @@ Click **OK** in the confirmation dialog.
 {% endstep %}
 
 {% step %}
-#### 4. Verify the result
+**4. Verify the result**
 
 After confirmation:
 

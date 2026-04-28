@@ -20,7 +20,7 @@ Use Basic setup to ensure each transport is configured for sales, reporting, and
 
 #### Instructions & field explanations
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 **1. Destination**
 
@@ -269,7 +269,7 @@ Indicates whether the information must be acknowledged by the user.
   * ❌ (Disabled) → Acknowledgement not required.
 *   **Example**:
 
-    <figure><img src="../../../.gitbook/assets/image (400).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (398).png" alt=""><figcaption></figcaption></figure>
 
 #### Instructions
 
@@ -296,7 +296,7 @@ Set the interval between flights.
 
 Offer the posibility to the user to add a note related to a specific transport. Used for internal documentation
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 A free-text field used only internally.
 
@@ -309,7 +309,7 @@ These notes are not visible to customers and do not affect booking logic.
 
 ### Timetable <a href="#timetable" id="timetable"></a>
 
-<figure><img src="../../../.gitbook/assets/image (680).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (679).png" alt=""><figcaption></figcaption></figure>
 
 Used to set the date and time of the flights.
 

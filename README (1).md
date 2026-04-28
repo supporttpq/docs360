@@ -5,7 +5,7 @@ description: >-
   be up and running in no time.
 noIndex: true
 icon: rocket-launch
-cover: .gitbook/assets/Tourpaq Logo (1) (1).jpg
+cover: .gitbook/assets/Tourpaq Logo.jpg
 coverY: 0
 ---
 
@@ -22,5 +22,5 @@ coverY: 0
 | 5. Your Learning Path by Role  | A recommended reading path based on your job                 |
 
 {% hint style="info" %}
-**New to Tourpaq?** Start with page [1](tourpaq-manual/readme/what-is-tourpaq.md) and work through in order. It takes about 15 minutes and will save you a lot of confusion later.&#x20;
+**New to Tourpaq?** Start with page [1](tourpaq-manual/readme/what-is-tourpaq.md) and work through in order. It takes about 15 minutes and will save you a lot of confusion later.
 {% endhint %}

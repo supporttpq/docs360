@@ -32,13 +32,13 @@ Only want to undo part of the date range? Use [Split the Stop Sale Rule](split-t
 
 {% stepper %}
 {% step %}
-#### Open the rule in edit mode
+**Open the rule in edit mode**
 
 1. Go to **Hotel → Stop Sales**.
 2. Find the rule you want to undo.
 3. Click **Edit** (pencil icon).
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Only **enabled** rules can be removed or split.
@@ -46,19 +46,19 @@ Only **enabled** rules can be removed or split.
 {% endstep %}
 
 {% step %}
-#### Open “Remove or Split”
+**Open “Remove or Split”**
 
 Click **Remove or Split**. The section opens under the rule.
 {% endstep %}
 
 {% step %}
-#### Select “Remove”
+**Select “Remove”**
 
 Check the **Remove** box. If the checkbox is disabled, you are not in edit mode yet.
 {% endstep %}
 
 {% step %}
-#### Save or cancel
+**Save or cancel**
 
 Click **Save** to apply the removal. Click **Cancel** to discard changes.
 

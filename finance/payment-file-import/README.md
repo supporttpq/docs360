@@ -116,11 +116,11 @@ The format described in this section should be used as a reference guide, not as
 
 ### Import a payment file
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (9).png" alt="Payment File Import screen"><figcaption><p>Upload a bank payment file to import booking payments and validate matching.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (50).png" alt="Payment File Import screen"><figcaption><p>Upload a bank payment file to import booking payments and validate matching.</p></figcaption></figure>
 
 {% stepper %}
 {% step %}
-### Get the payment file from your bank
+#### Get the payment file from your bank
 
 Download/export the payment file in the format your company uses.
 
@@ -128,13 +128,13 @@ If you are unsure which format to use, check the bank’s export options or ask 
 {% endstep %}
 
 {% step %}
-### Open Payment File Import
+#### Open Payment File Import
 
 Go to **Finance → Payment File Import**.
 {% endstep %}
 
 {% step %}
-### Upload the file
+#### Upload the file
 
 1. Select the file.
 2. Upload/import it.
@@ -145,13 +145,13 @@ Tourpaq validates the file during the upload/import.
 {% endstep %}
 
 {% step %}
-### Process the file
+#### Process the file
 
 <figure><img src="../../.gitbook/assets/image (799).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
-### Review validation results
+#### Review validation results
 
 If Tourpaq flags errors (for example missing booking reference or invalid amount), correct the file and upload again.
 
@@ -159,7 +159,7 @@ When the file is accepted, the payments are created in Tourpaq.
 {% endstep %}
 
 {% step %}
-### Verify the imported payments
+#### Verify the imported payments
 
 Open [Payment Registration](../payment-registration.md) and search by payment date range and payment method (for example **BANKIN**) to confirm the payments are listed.
 {% endstep %}
@@ -188,7 +188,7 @@ At a minimum, Tourpaq needs a **booking identifier**, a **payment date**, and an
 
 Usually, the booking identifier in the file does not match what Tourpaq expects (e.g., the wrong booking number, a missing reference, extra characters, etc.). Confirm the correct identifier format with your bank export specification or your finance administrator.
 
-Ex: If the booking number is not correct in the import file, in this case, when processing the file from the bank, the message "Payments with no correspondent bookings found" will appear, and it will also appear in Balance Administration, where the correct booking number can be added and after saving it will disappear from here.&#x20;
+Ex: If the booking number is not correct in the import file, in this case, when processing the file from the bank, the message "Payments with no correspondent bookings found" will appear, and it will also appear in Balance Administration, where the correct booking number can be added and after saving it will disappear from here.
 
 <figure><img src="../../.gitbook/assets/image (800).png" alt=""><figcaption></figcaption></figure>
 

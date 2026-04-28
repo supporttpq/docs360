@@ -223,7 +223,7 @@ Typical use cases:
 * Delivery completed within 30–60 minutes
 * No need for manual batching
 
-<img src="../../.gitbook/assets/file.excalidraw (6).svg" alt="" class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw.svg" alt="" class="gitbook-drawing">
 
 ***
 
@@ -295,7 +295,7 @@ The statistics bar appears below the table immediately after Display is clicked.
 The statistics bar is available for thefollowing user types: Administrator, Guide and Guide Master
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (743).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (742).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (744).png" alt=""><figcaption></figcaption></figure>
 

@@ -171,7 +171,7 @@ Accurate configuration here ensures that booking rules, pricing, and capacity li
 * **Instruction:** Tick the checkbox if you need to override existing rules or capacity settings.
 * **Use Case:** For special accommodations or exceptions that differ from the general setup.
 
-<figure><img src="../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The new room will not be displayed in the room dropdown
 

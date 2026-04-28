@@ -76,7 +76,7 @@ You can see that a service ran each time prices were adjusted according to the c
 
 The feature that enables **price list go up / go down limits** must be configured in [System Setup](setup/system-setup/).
 
-<img src=".gitbook/assets/image (349).png" alt="" data-size="original">
+<img src=".gitbook/assets/image (348).png" alt="" data-size="original">
 {% endhint %}
 
 ### Apply the rule in a price list

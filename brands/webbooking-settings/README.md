@@ -2,7 +2,7 @@
 
 This page explains each field and option available in the **Web Booking Settings** configuration panel.
 
-<figure><img src="../../.gitbook/assets/image (159) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (159).png" alt=""><figcaption></figcaption></figure>
 
 ### General Fields
 

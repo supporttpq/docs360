@@ -96,7 +96,7 @@ Use **Gala Dinner** for mandatory or optional event supplements.
 
 Common cases are New Year’s Eve and Christmas dinners.
 
-<figure><img src="../.gitbook/assets/image (297).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (296).png" alt=""><figcaption></figcaption></figure>
 
 #### Fields
 
