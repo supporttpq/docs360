@@ -32,18 +32,18 @@ Before configuring Extra Beds Cost, ensure that:
 
 <figure><img src="../.gitbook/assets/image (791).png" alt=""><figcaption></figcaption></figure>
 
-| Field              | Description                                                                                                                                                                                                  |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Category**       | Defines the guest type for which the extra bed cost applies (e.g., Infant, Child, Adult).                                                                                                                    |
-| **Age – From/To**  | Age range where this rule applies. Keep ranges unique for the same room selection to avoid conflicts.                                                                                                        |
-| **Rank – From/To** | Which extra bed(s) this rule covers. `1–1` = first extra bed. `1–2` = first and second extra beds.                                                                                                           |
-| **Per Pax/Day**    | If checked, applies per person per day. If unchecked, applies once per interval/period row.                                                                                                                  |
-| **Cost**           | <p>Unchecked: The DISCOUNT/COST is a discount of the room cost, and the extra bed cost is the room cost reduced by the DISCOUNT/COST.
-<br>Checked: The DISCOUNT/COST is the fixed cost of the extra bed.</p> |
-| **% (Percentage)** | If checked, the cost will be applied as a percentage of the room price instead of a fixed amount.                                                                                                            |
-| **Room**           | Specifies the room type(s) to which this extra bed cost applies. Selecting “All rooms” applies it globally.                                                                                                  |
-| **Period ID**      | Displays the period(s) from the contract to which the cost rule applies. Each row corresponds to a contract period.                                                                                          |
-| **Discount/Cost**  | The actual cost value in the selected currency (e.g., USD). Can vary per period.                                                                                                                             |
+| Field                                                                     | Description                                                                                                                        |
+| ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| **Category**                                                              | Defines the guest type for which the extra bed cost applies (e.g., Infant, Child, Adult).                                          |
+| **Age – From/To**                                                         | Age range where this rule applies. Keep ranges unique for the same room selection to avoid conflicts.                              |
+| **Rank – From/To**                                                        | Which extra bed(s) this rule covers. `1–1` = first extra bed. `1–2` = first and second extra beds.                                 |
+| **Per Pax/Day**                                                           | If checked, applies per person per day. If unchecked, applies once per interval/period row.                                        |
+| **Cost**                                                                  | Unchecked: The DISCOUNT/COST is a discount of the room cost, and the extra bed cost is the room cost reduced by the DISCOUNT/COST. |
+| <p><br>Checked: The DISCOUNT/COST is the fixed cost of the extra bed.</p> |                                                                                                                                    |
+| **% (Percentage)**                                                        | If checked, the cost will be applied as a percentage of the room price instead of a fixed amount.                                  |
+| **Room**                                                                  | Specifies the room type(s) to which this extra bed cost applies. Selecting “All rooms” applies it globally.                        |
+| **Period ID**                                                             | Displays the period(s) from the contract to which the cost rule applies. Each row corresponds to a contract period.                |
+| **Discount/Cost**                                                         | The actual cost value in the selected currency (e.g., USD). Can vary per period.                                                   |
 
 ***
 
@@ -51,13 +51,13 @@ Before configuring Extra Beds Cost, ensure that:
 
 {% stepper %}
 {% step %}
-#### Create the rule header
+**Create the rule header**
 
 Pick **Category**, set **Age – From/To**, and set **Rank – From/To**.
 {% endstep %}
 
 {% step %}
-#### Choose calculation type
+**Choose calculation type**
 
 Decide if the cost is **Per Pax/Day**.
 
@@ -67,13 +67,13 @@ Enable **% (Percentage)** if it should follow the room price.
 {% endstep %}
 
 {% step %}
-### Scope it to the rooms
+#### Scope it to the rooms
 
 Select a specific **Room**, or choose **All rooms**.
 {% endstep %}
 
 {% step %}
-#### Enter costs per period
+**Enter costs per period**
 
 Fill the **Cost** column for each **Period ID** row you want active.
 {% endstep %}

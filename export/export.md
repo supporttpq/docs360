@@ -55,7 +55,7 @@ Using the buttons next to **Export**, you can:
 
 <figure><img src="../.gitbook/assets/image (9) (3).png" alt="Export filters and schedules table"><figcaption><p>Top: export filters. Bottom: the schedules table where you enable, configure, and download scheduled exports.</p></figcaption></figure>
 
-#### Export filters&#x20;
+#### Export filters
 
 #### Export Configuration (Top Section)
 
@@ -200,7 +200,7 @@ Result:
 
 ***
 
-<img src="../.gitbook/assets/file.excalidraw (1) (1).svg" alt="Manual vs Schedule Export " class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (1) (1).svg" alt="Manual vs Schedule Export" class="gitbook-drawing">
 
 ### Common Mistakes
 
@@ -242,7 +242,7 @@ Some setups generate a separate **Finance export file** on a fixed nightly run.
 
 Email recipients for the finance export can be configured in `Setup → System Setup → General Information → Settings`.
 
-<figure><img src="../.gitbook/assets/image (352).png" alt="Finance export schedule configuration"><figcaption><p>Finance export configuration: recipients and scheduling are maintained separately from Export schedules.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (351).png" alt="Finance export schedule configuration"><figcaption><p>Finance export configuration: recipients and scheduling are maintained separately from Export schedules.</p></figcaption></figure>
 
 * Each user only sees the schedules they created.
 * Changing filters does not update existing schedules. Create a new schedule if the filters change.

@@ -14,7 +14,7 @@ Real Transports can be found in **Transports/Real Transports**. They are a speci
 
 3. The last step in creating a real transport is setting up it's allotments from **All.Manager**. The user will have to fill in the start and end dates, the number of days between flights, the number of seats and guaranteed seat, as well as the seat price. To complete this stage, the user has to press **Create** and after that **Generate**.
 
-<figure><img src="../.gitbook/assets/image (10) (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (11) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
@@ -26,11 +26,11 @@ To properly use a real transport, the user must have a normal transport linked t
 
 **These settings also apply to GDS.**
 
-1.  The user creates the transport as usual, with a significant change. He will check the case for **Dynamic Itineraries**.&#x20;
+1.  The user creates the transport as usual, with a significant change. He will check the case for **Dynamic Itineraries**.
 
     <figure><img src="../.gitbook/assets/image (717).png" alt=""><figcaption></figcaption></figure>
 2. For this step, the user must create an interval and assign the transport to a brand.
-3.  This step creates the link between a normal and real transports. For this, the user has to go to **Legs** and click on **New Leg** button.&#x20;
+3.  This step creates the link between a normal and real transports. For this, the user has to go to **Legs** and click on **New Leg** button.
 
     <figure><img src="../.gitbook/assets/image (718).png" alt=""><figcaption></figcaption></figure>
 4. Next the user has to set the departure and arrival, as well as the days between flights and click **Save**
@@ -49,7 +49,7 @@ This action has to be repeated but with the departure and arrival places inverse
 
 <figure><img src="../.gitbook/assets/image (720).png" alt=""><figcaption></figcaption></figure>
 
-The **Test Search** will display all available real transports flights. The user can narrow them down if they are too many, using the filters.&#x20;
+The **Test Search** will display all available real transports flights. The user can narrow them down if they are too many, using the filters.
 
 <figure><img src="../.gitbook/assets/image (721).png" alt=""><figcaption></figcaption></figure>
 

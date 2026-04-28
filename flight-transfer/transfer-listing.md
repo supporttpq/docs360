@@ -113,7 +113,7 @@ When an Airport is selected, the system will automatically load the first **Tran
 
 After the plan has been created, it can be expanded from the blue arrow at the front of the line. From there you can plan the route of the bus in detail and manage the passengers that are loaded and unloaded into it along the way.
 
-<figure><img src="../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The feature was developed with the resort as the point of departure. As such the first column is the **Homebound** column, used for planning the route from the resorts to the airport. The **Outbound** column is used to plan the route from the airport to the resorts.
 

@@ -54,7 +54,7 @@ When calculating whether **Child Price (CH)** applies, the system determines the
 
 *   Defined in `User > Brands > Other Settings`
 
-    <figure><img src="../../../.gitbook/assets/image (601).png" alt="Brand settings showing the Max Child Age fallback used when hotel child age limit is not set"><figcaption><p>Brand max child age fallback (used only if the hotel has no child age limit).</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (600).png" alt="Brand settings showing the Max Child Age fallback used when hotel child age limit is not set"><figcaption><p>Brand max child age fallback (used only if the hotel has no child age limit).</p></figcaption></figure>
 * Used only if the hotel has no child age configured
 * Ensures pricing still works for hotels without a specific rule
 

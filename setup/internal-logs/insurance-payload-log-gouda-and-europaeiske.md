@@ -18,8 +18,8 @@ The log enables traceability of insurance communication and is primarily used fo
 
 The Insurance Payload Log stores structured records of all payloads sent to:
 
-* Gouda&#x20;
-* Europæiske&#x20;
+* Gouda
+* Europæiske
 
 The log captures key booking and travel data along with the result of the API transmission.
 
@@ -36,7 +36,7 @@ The log captures key booking and travel data along with the result of the API tr
 
 ### Requirements
 
-*   Insurance provider configured under **Brands → General → Insurance**&#x20;
+*   Insurance provider configured under **Brands → General → Insurance**
 
     <figure><img src="../../.gitbook/assets/image (757).png" alt=""><figcaption></figcaption></figure>
 * Active bookings with Travel or Cancellation insurance
@@ -51,7 +51,7 @@ This log is **available in Setup -> Internal Logs -> Insurance Hystory (Type)**
 Access is provided via:
 
 * **Elastic (logging platform)**
-* Available to **Tourpaq Support**&#x20;
+* Available to **Tourpaq Support**
 
 ***
 
@@ -105,7 +105,7 @@ Each log entry contains the following fields:
 * Reflects when insurance became active in the booking
 * May differ from the booking creation date
 
-#### -  Type of insurance: Defines the insurance category (Travel Insurance)
+#### - Type of insurance: Defines the insurance category (Travel Insurance)
 
 * Determines which API endpoint and logic are used
 
@@ -142,9 +142,9 @@ No direct configuration is required for the log itself.
 To ensure logging works correctly:
 
 1.  Configure insurance provider under:\
-    **Brands → General → Insurance**&#x20;
+    **Brands → General → Insurance**
 
-    <figure><img src="../../.gitbook/assets/image (758).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (757).png" alt=""><figcaption></figcaption></figure>
 2. Ensure valid credentials are entered:
    * Insurance Agent Username
    * Insurance Agent Password

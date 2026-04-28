@@ -16,25 +16,25 @@ Use it to create, edit, and maintain transport codes for flights, buses, and mor
 Need departures, seat totals, and cost analysis for a date range? Use [**All Transports**](../all-transports.md).
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Transport list showing codes, departure/arrival, airline, and reporting type."><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Transport list showing codes, departure/arrival, airline, and reporting type."><figcaption></figcaption></figure>
 
 ### Typical workflow
 
 {% stepper %}
 {% step %}
-#### Filter the list
+**Filter the list**
 
 Use **Code**, **Departure**, and **Arrival** to narrow results fast.
 {% endstep %}
 
 {% step %}
-#### Open a transport
+**Open a transport**
 
 Click a **Code** to open the transport for editing.
 {% endstep %}
 
 {% step %}
-#### Create a new transport
+**Create a new transport**
 
 Use **Create** for manual setup, or **Create using wizard** for guided setup.
 {% endstep %}

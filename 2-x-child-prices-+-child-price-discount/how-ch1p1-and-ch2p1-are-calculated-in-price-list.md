@@ -42,7 +42,7 @@ Common child fields you will see after enabling the column groups:
 * **Child discount prices**: `CH1D1`, `CH2D1`
 * **Child profit discount prices**: `CH1PD1`, `CH2PD1`
 
-<figure><img src="../.gitbook/assets/image (641).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (637).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 You only need `CH1P1`, `CH2P1`, and `CPM1` to validate the base child price calculation.

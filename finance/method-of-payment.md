@@ -197,7 +197,7 @@ _Create a payment method with a payment code, debit/credit type, and flags for o
 
 #### Checkbox screenshots
 
-![Pay from home payment checkbox](<../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png>)
+![Pay from home payment checkbox](<../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 _“Pay from home” payment: enable the method for Guide App Extra Orders payments._
 

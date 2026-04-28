@@ -43,7 +43,7 @@ Enable these column groups:
 * **CHILD PROFIT MARGIN**
 * **ADJUSTMENTS**
 
-<figure><img src="../.gitbook/assets/image (649).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (635).png" alt=""><figcaption></figcaption></figure>
 
 Common fields used when validating the discount calculation:
 
@@ -52,7 +52,7 @@ Common fields used when validating the discount calculation:
 * **Child profit margin**: `CPM1`
 * **Child adjustments**: `CH1PA`, `CH2PA`
 
-<figure><img src="../.gitbook/assets/image (650).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (637).png" alt=""><figcaption></figcaption></figure>
 
 ## Calculation logic
 

@@ -27,13 +27,13 @@ If a limit is hit, the booking gets extra hotel nights.
 
 {% stepper %}
 {% step %}
-#### Configure the limits
+**Configure the limits**
 
 Go to **Setup → System Setup → Transport Providers**.
 
 Set **Early arrival limit** and **Late departure limit**.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (53).png" alt=""><figcaption></figcaption></figure>
 
 **Early arrival limit**
 
@@ -49,7 +49,7 @@ The extra night is added **after** the original last hotel night.
 {% endstep %}
 
 {% step %}
-#### Create a booking with a GDS transport
+**Create a booking with a GDS transport**
 
 Create a booking using a transport that books flights via GDS.
 

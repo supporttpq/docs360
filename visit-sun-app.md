@@ -46,7 +46,7 @@ Using **Chat** tab, user can start conversation with guides from the booking des
 
 In **Weekly activities** section, user will be able to see weekly activities defined from **Guest App->Weekly Activities**.
 
-<figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src=".gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -68,7 +68,7 @@ Remark: Excursions are displayed also according to stop sales hours setup on the
 
 * **Vocabulary** section display a series of key words to be used by the guest during his vacation. Words are defined in Tourpaq Office from **Guest App-> Vocabulary** when logged in as guide or admin and are displayed in the application based on the country in which user travels.
 
-<figure><img src=".gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src=".gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

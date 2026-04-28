@@ -174,7 +174,7 @@ If NO valid combination is found:
 
 #### Ticket Display
 
-*   The system displays the main board (highest order)&#x20;
+*   The system displays the main board (highest order)
 
     <figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
@@ -203,13 +203,11 @@ During import, the Board Supplements must automatically be set with:
 
 An extra is considered a board supplement if:
 
-* Category type = Pension&#x20;
+* Category type = Pension
 *   "Use Stay days in prices" is enabled
 
     <figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-
-*   In the Prices tab, use the "Per day" checkbox marked&#x20;
+*   In the Prices tab, use the "Per day" checkbox marked
 
     <figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -217,7 +215,7 @@ An extra is considered a board supplement if:
 
 * All such extras:
   * will be automatically updated:
-    *   "All stay days must be available" = TRUE&#x20;
+    *   "All stay days must be available" = TRUE
 
         <figure><img src="../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -246,18 +244,18 @@ An extra is considered a board supplement if:
 *   The system:
 
     * selects HB as the main board
-    * adds supplements for days 1–3&#x20;
+    * adds supplements for days 1–3
 
-    <figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (806).png" alt=""><figcaption></figcaption></figure>
 
 #### Result
 
 * Customer sees:
-  *   HB for the entire stay&#x20;
+  *   HB for the entire stay
 
-      <figure><img src="../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 * Price:
   * includes upgrade supplements
 

@@ -20,7 +20,7 @@ Incorrect configuration can result in overlapping booking numbers or inconsisten
 
 ### Instructions
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **1. Access the Section**
 
@@ -213,7 +213,7 @@ Incorrect configuration may result in failed insurance bookings or missing confi
 
 **Insurance Provider**
 
-&#x20;**- Europaeiske / Gouda**\
+**- Europaeiske / Gouda**\
 Select the insurance provider linked to the brand agreement.\
 This determines which API and credentials will be used.
 
@@ -270,7 +270,7 @@ This section allows you to:
 
 **Web Booking Link -** URL used for staging enviroment booking
 
-**Confirmation Link**&#x20;
+**Confirmation Link**
 
 **Website Reset Cache Link -** URL used to reset website cache.
 
@@ -314,15 +314,15 @@ This section allows you to:
 
 **Ignore Transport Cost -** If set to TRUE, transport cost is excluded from pricing calculation.
 
-**Min Price Per Child For Selling Price -** Minimum allowed selling price for child passengers.&#x20;
+**Min Price Per Child For Selling Price -** Minimum allowed selling price for child passengers.
 
-**Hide included extras prices -** Hides individual prices for included extras in booking view.&#x20;
+**Hide included extras prices -** Hides individual prices for included extras in booking view.
 
 **Show adjustment prices on booking -** Displays price adjustments (manual corrections) in booking details.
 
 #### 6. Insurance & Web Control
 
-**Make cancellation insurance mandatory -** Forces customers to add cancellation insurance.&#x20;
+**Make cancellation insurance mandatory -** Forces customers to add cancellation insurance.
 
 **Force web deposit -** Requires deposit payment during web booking.
 
@@ -330,7 +330,7 @@ This section allows you to:
 
 **Mandatory DOB in Passenger Details in BackOffice -** Date of Birth becomes required field when creating a new customer in Office, and DOB will be auto-filled in the passenger overview.
 
-&#x20;**Mandatory email in Passenger Details in BackOffice -** Email becomes required field when a new customer is created in Office&#x20;
+**Mandatory email in Passenger Details in BackOffice -** Email becomes required field when a new customer is created in Office
 
 **Ask for default adult age in BackOffice -** Prompts user to enter adult age if not provided.
 
@@ -338,7 +338,7 @@ This section allows you to:
 
 #### 8. Communication Settings
 
-**Send SMS from -** Set the number that the receiver will see as the sender of the SMS (only for Compaya Provider)&#x20;
+**Send SMS from -** Set the number that the receiver will see as the sender of the SMS (only for Compaya Provider)
 
 **Ask customer to opt in newsletter -** Shows newsletter opt-in checkbox in booking flow.
 
@@ -350,9 +350,9 @@ This section allows you to:
 
 #### 10. Offers & API Integration
 
-**Uses Restful Offer API -** Checks whether the agency uses the RESTful Offer API.&#x20;
+**Uses Restful Offer API -** Checks whether the agency uses the RESTful Offer API.
 
-**Rate Code -** Used for rate mapping with external systems.&#x20;
+**Rate Code -** Used for rate mapping with external systems.
 
 **Destination API Token -** Delete user tokens after X minutes. The default value is 30 minutes if not set.
 

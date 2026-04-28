@@ -95,4 +95,4 @@ To activate this feature, you have to check the Destination Route from Transport
 
 Also, after you have updated the route with this change, in the Pickup points tab, you will find a new column named Hotels. The main purpose of this new column is to define what hotels are included in a pickup point.
 
-<figure><img src=".gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>

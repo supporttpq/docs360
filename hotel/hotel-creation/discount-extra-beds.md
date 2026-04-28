@@ -21,7 +21,7 @@ This reduces manual corrections and keeps booking totals consistent.
 Extra-bed discounts are only applied when a passenger is actually assigned to an extra bed in the room allocation.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (796).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (795).png" alt=""><figcaption></figcaption></figure>
 
 ### Field Explanations
 

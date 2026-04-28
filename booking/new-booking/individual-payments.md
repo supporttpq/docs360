@@ -46,7 +46,7 @@ Only passengers with an email address entered will receive the individual paymen
 
 {% stepper %}
 {% step %}
-#### 1. Add or verify passenger email addresses
+**1. Add or verify passenger email addresses**
 
 1. Open the relevant booking.
 2. Click [**Edit Passenger**](new-booking/edit-passenger/).
@@ -59,19 +59,19 @@ Only passengers with an email address entered will receive the individual paymen
 {% endstep %}
 
 {% step %}
-#### 2. Send the “Individual payment” email from the booking
+**2. Send the “Individual payment” email from the booking**
 
 1. Go back to the booking page.
 2. Click the **Individual payment** button.
 3. Tourpaq Office sends one email per passenger with an email address.
 
-<figure><img src="../../.gitbook/assets/image (246).png" alt="Booking page: Individual payment button"><figcaption><p>Send the email from the booking page.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (245).png" alt="Booking page: Individual payment button"><figcaption><p>Send the email from the booking page.</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (5).png" alt="Individual payment email send dialog"><figcaption><p>Confirm the send action (dialog may vary by setup).</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
-#### 3. What the passenger receives
+**3. What the passenger receives**
 
 Each passenger with an email address will receive an email containing:
 

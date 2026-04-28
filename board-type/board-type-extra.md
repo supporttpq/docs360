@@ -15,12 +15,12 @@ These can be configured by accessing the Extras Setup -> Extras. To be able to u
 
 #### 2. **Configure Board Supplements**
 
-* &#x20;Open the **Board Supplements** tab - `Board Type` and `Board Basis Filter` dropdown appear.
+* Open the **Board Supplements** tab - `Board Type` and `Board Basis Filter` dropdown appear.
 
 <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Select a **Board Type**. - The selected type appears with `Code` and `List name`.
-* **Board basis filter -** Filter is used on Board Supplements to specify which Board Basis should be on the Room for the Board Supplement to be available.  <br>
+* **Board basis filter -** Filter is used on Board Supplements to specify which Board Basis should be on the Room for the Board Supplement to be available.<br>
 
 #### 3. **Save Extra and Configure Prices**
 
@@ -44,7 +44,7 @@ These can be configured by accessing the Extras Setup -> Extras. To be able to u
 <figure><img src="../.gitbook/assets/image (10) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Check the price - The price should match the one set in the extras menu.
-* Click **Save Passengers**&#x20;
+* Click **Save Passengers**
 * Check if supplements are included in the total price.
 * Click **Save**.
 
@@ -64,7 +64,7 @@ These can be configured by accessing the Extras Setup -> Extras. To be able to u
 * Return to the booking and click **Edit Passengers -** Passenger details are editable.
 * Select another **Pension extra -** The list shows extras for other board types as well.
 
-<figure><img src="../.gitbook/assets/image (13) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Click **Save Passengers -** Passenger data is saved.
 * Click **Save -** Booking is saved with **OK** status.

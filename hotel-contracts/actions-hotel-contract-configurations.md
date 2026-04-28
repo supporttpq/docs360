@@ -49,19 +49,19 @@ Use this tab to reimport selected sections. Only the selected sections are updat
 
 {% stepper %}
 {% step %}
-#### Select sections
+**Select sections**
 
 Tick the sections you want to refresh.
 {% endstep %}
 
 {% step %}
-#### Start the reimport
+**Start the reimport**
 
 Click **Reimport Hotel Contract**.
 {% endstep %}
 
 {% step %}
-#### Verify the result
+**Verify the result**
 
 Check the relevant tabs after the reimport. Focus on **Rooms**, **Periods**, and **Costs**.
 {% endstep %}
@@ -93,7 +93,7 @@ Use this tab to share the contract with external recipients.
 * **Export hotel contract (PDF)**: Exports the contract as a PDF file.
 * **Send email**: Sends the contract to the supplier. You can add multiple email addresses. The supplier can accept or reject the contract.
 
-<figure><img src="../.gitbook/assets/image (11) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 To use **Send email**, you must create an email template for **Hotel Contract**. Otherwise, the system shows a warning.

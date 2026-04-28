@@ -20,7 +20,7 @@
 
 *   Assign a price list to the hotel allotment - Allotment should be available with pricing.
 
-    <figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (2) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (5) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 #### 4. Access the Web Booking
 

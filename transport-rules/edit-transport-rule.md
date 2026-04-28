@@ -47,7 +47,7 @@ If a Transport Rule was initially created as `CPH_CHQ`, but the correct naming s
 
 When a user clicks the **“+”** button to add new stay days, the system automatically preselects the first available stay day from the drop-down list.
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 This behavior allows users to repeatedly press **“+”** and quickly add all remaining stay days in sequence, creating a faster and more efficient workflow.
 

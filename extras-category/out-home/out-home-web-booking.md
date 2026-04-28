@@ -138,4 +138,4 @@ At the end of the confirmation process:
 * Outbound and homebound extras are separated for clarity.
 * Totals are calculated correctly based on the selections, ensuring pricing accuracy.
 
-<figure><img src="../../.gitbook/assets/image (312) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (312).png" alt=""><figcaption></figcaption></figure>

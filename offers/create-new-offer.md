@@ -47,7 +47,7 @@ In Tourpaq, a prospect who is not yet created as a customer is often called an *
 
 {% stepper %}
 {% step %}
-#### 1) Open the Offer Builder
+**1) Open the Offer Builder**
 
 Choose one of the following:
 
@@ -56,7 +56,7 @@ Choose one of the following:
 {% endstep %}
 
 {% step %}
-#### 2) Select the recipient (customer/offeree)
+**2) Select the recipient (customer/offeree)**
 
 You can create an offer for:
 
@@ -70,7 +70,7 @@ You can create an offer for:
 {% endstep %}
 
 {% step %}
-#### 3) Enter travel search criteria
+**3) Enter travel search criteria**
 
 Fill in the travel criteria you want to search on:
 
@@ -91,7 +91,7 @@ Passenger ages affect availability and pricing. If a price looks wrong, double-c
 {% endstep %}
 
 {% step %}
-#### 4) Search, filter, and select a proposal
+**4) Search, filter, and select a proposal**
 
 1. Click **Search** to show matching options.
 2. Use the results filters to narrow down by:
@@ -120,7 +120,7 @@ If you need a different option, you can typically:
 {% endstep %}
 
 {% step %}
-#### 5) Add upsells (optional)
+**5) Add upsells (optional)**
 
 For many proposals, Tourpaq suggests relevant **upsell items** (add-ons).
 
@@ -139,11 +139,11 @@ After you decide:
 1. Click **Update Price**
 2. Save the offer/basket changes
 
-<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (1).png" alt="Upsell selection"><figcaption><p>Add upsells to the basket or propose them as optional upgrades.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Upsell selection"><figcaption><p>Add upsells to the basket or propose them as optional upgrades.</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
-#### 6) Add comments and finalize the offer
+**6) Add comments and finalize the offer**
 
 Use **Offer Comments** to add an explanation for the customer (for example, why you recommend this hotel, what’s included, or what alternatives you can offer).
 
@@ -153,7 +153,7 @@ Offer Comments are a good place to add a short summary in plain language—espec
 {% endstep %}
 
 {% step %}
-#### 7) Send the offer to the customer
+**7) Send the offer to the customer**
 
 1. Review the email content (hotel/resort, travel dates, trip summary, and total amount).
 2. Send the offer.

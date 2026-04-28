@@ -112,7 +112,7 @@ Generates an overview of buses in the airport, either **homebound** or **outboun
 * Number of passengers per flight for each transfer
 * Cost per transfer
 
-<figure><img src=".gitbook/assets/ftr13-4e3a0bdcee6bba1279b3627c740e401b (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/ftr13-4e3a0bdcee6bba1279b3627c740e401b.png" alt=""><figcaption></figcaption></figure>
 
 Filters:
 
