@@ -1,5 +1,6 @@
 ---
 description: New Booking → Search
+noIndex: true
 ---
 
 # Booking Search – Room Allocation Support
