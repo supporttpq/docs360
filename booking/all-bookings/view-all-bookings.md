@@ -225,12 +225,6 @@ Typical use cases:
 
 <img src="../../.gitbook/assets/file.excalidraw.svg" alt="" class="gitbook-drawing">
 
-***
-
-#### Send SMS
-
-***
-
 #### Send SMS
 
 Allows sending SMS notifications to customers associated with the selected bookings.
