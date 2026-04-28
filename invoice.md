@@ -29,7 +29,7 @@ What you can see and do may depend on your permissions. If you don’t see **Pay
 
 {% stepper %}
 {% step %}
-### 1) Choose a date range
+#### 1) Choose a date range
 
 Set **From date** and **To date** to control which invoices appear in the list.
 
@@ -37,7 +37,7 @@ Set **From date** and **To date** to control which invoices appear in the list.
 {% endstep %}
 
 {% step %}
-### 2) Add optional filters (if needed)
+#### 2) Add optional filters (if needed)
 
 Use one or more of these filters to narrow the results:
 
@@ -49,7 +49,7 @@ Use one or more of these filters to narrow the results:
 {% endstep %}
 
 {% step %}
-### 3) Display results
+#### 3) Display results
 
 Select **Display** to apply your filters.
 
@@ -57,7 +57,7 @@ Select **Display** to apply your filters.
 {% endstep %}
 
 {% step %}
-### 4) Open the invoice
+#### 4) Open the invoice
 
 In the results table, select the invoice number in **INV.NO** to open it.
 {% endstep %}

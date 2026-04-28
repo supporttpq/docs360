@@ -22,7 +22,7 @@ When a user creates a new booking, they must acknowledge all mandatory customer 
 
 {% stepper %}
 {% step %}
-### 1) Create a new booking
+#### 1) Create a new booking
 
 Click **New booking**.
 
@@ -30,7 +30,7 @@ Click **New booking**.
 {% endstep %}
 
 {% step %}
-### 2) Enter required data
+#### 2) Enter required data
 
 Enter passenger counts and customer details.
 
@@ -38,7 +38,7 @@ Enter passenger counts and customer details.
 {% endstep %}
 
 {% step %}
-### 3) Select transport (if it has mandatory customer information)
+#### 3) Select transport (if it has mandatory customer information)
 
 Select a transport that has customer information configured with **Acknowledge** enabled.
 
@@ -46,7 +46,7 @@ Select a transport that has customer information configured with **Acknowledge**
 {% endstep %}
 
 {% step %}
-### 4) Select hotel/room (if it has mandatory customer information)
+#### 4) Select hotel/room (if it has mandatory customer information)
 
 Select a hotel and room type that has customer information configured with **Acknowledge** enabled.
 
@@ -54,7 +54,7 @@ Select a hotel and room type that has customer information configured with **Ack
 {% endstep %}
 
 {% step %}
-### 5) Take allotment and acknowledge messages
+#### 5) Take allotment and acknowledge messages
 
 Click **Take allotment**.
 
@@ -68,7 +68,7 @@ All checkboxes must be selected to proceed.
 {% endstep %}
 
 {% step %}
-### 6) Add extras and acknowledge extra notices
+#### 6) Add extras and acknowledge extra notices
 
 Select extra services with mandatory customer information. Click **Save Passengers**.
 
@@ -76,7 +76,7 @@ Select extra services with mandatory customer information. Click **Save Passenge
 {% endstep %}
 
 {% step %}
-### 7) Save the booking
+#### 7) Save the booking
 
 Click the final **Save**.
 
@@ -96,7 +96,7 @@ Editing an existing booking can retrigger acknowledgments. This typically happen
 
 {% stepper %}
 {% step %}
-### 1) Open an existing booking
+#### 1) Open an existing booking
 
 Open the booking in edit mode.
 
@@ -104,7 +104,7 @@ Open the booking in edit mode.
 {% endstep %}
 
 {% step %}
-### 2) Change hotel/room or reallocate passengers
+#### 2) Change hotel/room or reallocate passengers
 
 Edit the hotel option and/or allocate passengers.
 
@@ -112,7 +112,7 @@ Edit the hotel option and/or allocate passengers.
 {% endstep %}
 
 {% step %}
-### 3) Take allotment and acknowledge updated notices
+#### 3) Take allotment and acknowledge updated notices
 
 Click **Take allotment**.
 
@@ -120,7 +120,7 @@ Click **Take allotment**.
 {% endstep %}
 
 {% step %}
-### 4) Edit extras and acknowledge extra notices
+#### 4) Edit extras and acknowledge extra notices
 
 Click **Edit Passengers**, select extras, then click **Save Passengers**.
 
@@ -128,7 +128,7 @@ Click **Edit Passengers**, select extras, then click **Save Passengers**.
 {% endstep %}
 
 {% step %}
-### 5) Save the booking
+#### 5) Save the booking
 
 Click the final **Save**.
 

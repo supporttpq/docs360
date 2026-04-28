@@ -46,7 +46,7 @@ Before you configure **Extra Cost**:
 
 {% stepper %}
 {% step %}
-### Choose what the cost represents
+#### Choose what the cost represents
 
 Select a **Type** that matches the fee.
 
@@ -54,7 +54,7 @@ Use a dedicated type when you need separate reporting.
 {% endstep %}
 
 {% step %}
-### Scope it to rooms
+#### Scope it to rooms
 
 Pick a specific **Room**.
 
@@ -62,7 +62,7 @@ Use **All rooms** only when the fee is always the same.
 {% endstep %}
 
 {% step %}
-### Limit it by age (optional)
+#### Limit it by age (optional)
 
 Set **From / To (Age)** when the fee depends on guest age.
 
@@ -70,7 +70,7 @@ Leave the range broad when it applies to everyone.
 {% endstep %}
 
 {% step %}
-### Set the amount per period
+#### Set the amount per period
 
 Use the **Period ID** rows to set the fee by season.
 

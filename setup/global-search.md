@@ -16,7 +16,7 @@ You can use the search bar from any page.
 
 {% stepper %}
 {% step %}
-### Choose what you want to search in
+#### Choose what you want to search in
 
 Check the selected **Brand/Agency** first:
 
@@ -25,7 +25,7 @@ Check the selected **Brand/Agency** first:
 {% endstep %}
 
 {% step %}
-### Type what you know
+#### Type what you know
 
 You can search by:
 
@@ -34,7 +34,7 @@ You can search by:
 {% endstep %}
 
 {% step %}
-### Run the search
+#### Run the search
 
 Press **Enter** or click **Go**.
 

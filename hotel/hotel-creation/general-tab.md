@@ -40,25 +40,25 @@ Accurate setup here reduces booking errors and keeps hotel behavior consistent a
 
 {% stepper %}
 {% step %}
-### Enter the mandatory fields
+#### Enter the mandatory fields
 
 Complete **Code**, **Name**, **Resort**, **Contract type**, and **Standard room**.
 {% endstep %}
 
 {% step %}
-### Complete the operational fields
+#### Complete the operational fields
 
 Review supplier, visibility, pricing, child-age, voucher, and integration settings.
 {% endstep %}
 
 {% step %}
-### Save the hotel record
+#### Save the hotel record
 
 Save the hotel after the required setup is complete.
 {% endstep %}
 
 {% step %}
-### Continue in related hotel areas
+#### Continue in related hotel areas
 
 Maintain rooms, contracts, costs, facilities, web content, and communication in the related hotel pages.
 {% endstep %}

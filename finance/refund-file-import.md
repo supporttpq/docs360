@@ -47,19 +47,19 @@ Your file must follow these rules:
 
 {% stepper %}
 {% step %}
-### Open Refund File Import
+#### Open Refund File Import
 
 Go to **Finance → Refund File Import**.
 {% endstep %}
 
 {% step %}
-### Choose the import source
+#### Choose the import source
 
 Select the **Business Central** tab.
 {% endstep %}
 
 {% step %}
-### Upload the file
+#### Upload the file
 
 Upload the file by:
 
@@ -68,13 +68,13 @@ Upload the file by:
 {% endstep %}
 
 {% step %}
-### Process the import
+#### Process the import
 
 Click **Process** to start the import.
 {% endstep %}
 
 {% step %}
-### Review the result
+#### Review the result
 
 If Tourpaq finds formatting issues or cannot match a line (for example BookingNo not found or an unknown PaymentCode), you will see error messages after you click **Process**.
 

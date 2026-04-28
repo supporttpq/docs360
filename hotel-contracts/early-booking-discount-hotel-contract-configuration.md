@@ -53,7 +53,7 @@ Before configuring early booking discounts:
 
 {% stepper %}
 {% step %}
-### Set what you want to discount
+#### Set what you want to discount
 
 Use **Room** to discount room cost.
 
@@ -61,7 +61,7 @@ Leave **Room** empty to discount a **board supplement** instead.
 {% endstep %}
 
 {% step %}
-### Limit it to the right dates
+#### Limit it to the right dates
 
 Set **Stay (Start/End)** to define the travel window.
 
@@ -69,7 +69,7 @@ Set **Booking (Start/End)** to define when the booking must be created.
 {% endstep %}
 
 {% step %}
-### Add eligibility rules (optional)
+#### Add eligibility rules (optional)
 
 Use **Min Days**, **Week Days**, and **Days Before** to narrow eligibility.
 
@@ -77,7 +77,7 @@ Only add rules you actually need.
 {% endstep %}
 
 {% step %}
-### Validate with a test booking
+#### Validate with a test booking
 
 Create a booking that matches the stay and booking windows.
 

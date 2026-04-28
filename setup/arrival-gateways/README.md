@@ -25,14 +25,14 @@
 
 {% stepper %}
 {% step %}
-### Search for a gateway
+#### Search for a gateway
 
 1. Type in the search bar.
 2. Review the filtered list.
 {% endstep %}
 
 {% step %}
-### Create a gateway
+#### Create a gateway
 
 1. Click on the **Create** button.
 2. Enter the required fields.
@@ -40,7 +40,7 @@
 {% endstep %}
 
 {% step %}
-### Delete a gateway
+#### Delete a gateway
 
 1. Find the gateway in the list.
 2. Click the trash bin icon in **Actions**.

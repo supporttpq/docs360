@@ -46,7 +46,7 @@ Those values may be **locked** in the interface.
 
 {% stepper %}
 {% step %}
-### 1. Open the A la Carte booking flow
+#### 1. Open the A la Carte booking flow
 
 Go to **Booking → New A La Carte Booking**.
 
@@ -56,7 +56,7 @@ That customer is also **Passenger 1**.
 {% endstep %}
 
 {% step %}
-### 2. Select or create the customer
+#### 2. Select or create the customer
 
 You can either:
 
@@ -69,7 +69,7 @@ Then click **Save**.
 {% endstep %}
 
 {% step %}
-### 3. Add insurance, discounts, and supplements
+#### 3. Add insurance, discounts, and supplements
 
 1. Review **travel insurance**.
 2. Add allowed **discounts** and **supplements**.
@@ -77,7 +77,7 @@ Then click **Save**.
 {% endstep %}
 
 {% step %}
-### 4. Save the booking
+#### 4. Save the booking
 
 1. Click **Save** to create the booking.
 2. The booking reopens in **edit mode** after saving.
@@ -85,7 +85,7 @@ Then click **Save**.
 {% endstep %}
 
 {% step %}
-### 5. Add the trip components (next step)
+#### 5. Add the trip components (next step)
 
 After the booking exists, add the travel items you need.
 

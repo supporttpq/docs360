@@ -51,7 +51,7 @@ Make sure:
 
 {% stepper %}
 {% step %}
-### 1) Open the hotel
+#### 1) Open the hotel
 
 1. Go to **Hotel → Hotels**.
 2. Click the hotel you want to maintain.
@@ -60,7 +60,7 @@ You are now on the hotel edit page.
 {% endstep %}
 
 {% step %}
-### 2) Open **Passenger Information**
+#### 2) Open **Passenger Information**
 
 1. Open the **Passenger Information** tab.
 
@@ -72,7 +72,7 @@ You will see a list of existing rules:
 {% endstep %}
 
 {% step %}
-### 3) Choose where the text should apply (Default vs brand)
+#### 3) Choose where the text should apply (Default vs brand)
 
 At the top you can typically switch between:
 
@@ -83,12 +83,12 @@ Select the tab you want to edit before creating a new rule.
 {% endstep %}
 
 {% step %}
-### 4) Create the rule
+#### 4) Create the rule
 
 1. Click **Create**.
 2. Fill in the rule fields.
 
-#### Fields explained
+**Fields explained**
 
 * **From / To (travel dates)**
   * Defines the travel period where the message applies.
@@ -107,7 +107,7 @@ Select the tab you want to edit before creating a new rule.
 {% endstep %}
 
 {% step %}
-### 5) Save
+#### 5) Save
 
 1. Click **Save**.
 

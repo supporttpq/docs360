@@ -45,14 +45,14 @@ Set one of them, not both.
 
 {% stepper %}
 {% step %}
-### 1. Create a scheduler
+#### 1. Create a scheduler
 
 1. Open the hotel and go to **Communication**.
 2. Click **Create**.
 {% endstep %}
 
 {% step %}
-### 2. Configure what to send
+#### 2. Configure what to send
 
 1. Select an **Interval**.
 2. Set either **Bookings Made** or **Days After**.
@@ -60,7 +60,7 @@ Set one of them, not both.
 {% endstep %}
 
 {% step %}
-### 3. Set recipients and timing
+#### 3. Set recipients and timing
 
 1. Choose the **Hour**.
 2. Add one or more **E-mail** recipients.
@@ -68,7 +68,7 @@ Set one of them, not both.
 {% endstep %}
 
 {% step %}
-### 4. Save and monitor
+#### 4. Save and monitor
 
 1. Save the scheduler.
 2. Use **Schedulers** to review status and history.

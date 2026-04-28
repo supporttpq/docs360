@@ -39,7 +39,7 @@ Weeks start on the system’s week start day (often Monday).
 
 {% stepper %}
 {% step %}
-### Create a brand-specific year definition
+#### Create a brand-specific year definition
 
 1. Select the brand in the agency selector.
 2. Set **Year value**.
@@ -48,7 +48,7 @@ Weeks start on the system’s week start day (often Monday).
 {% endstep %}
 
 {% step %}
-### Set a default interval
+#### Set a default interval
 
 1. Select the brand you want to use as the default baseline.
 2. Enable **Set as default interval**.

@@ -34,7 +34,7 @@ The generator then expands your rule into **generated packages** per departure d
 
 {% stepper %}
 {% step %}
-### Create a package
+#### Create a package
 
 1. Go to **Price List → Packages Generator**.
 2. Click **Create**.
@@ -47,7 +47,7 @@ The generator then expands your rule into **generated packages** per departure d
 {% endstep %}
 
 {% step %}
-### Add the first travel segment
+#### Add the first travel segment
 
 1. **Add Transport** → Select a transport (must have one-way seats).
 2. **Select Hotel** → Choose a hotel with an existing price list.
@@ -56,7 +56,7 @@ The generator then expands your rule into **generated packages** per departure d
 {% endstep %}
 
 {% step %}
-### Add the next segment(s)
+#### Add the next segment(s)
 
 1. Add another **Transport** for the next destination.
 2. Add the next **Hotel** and **Room**, then set nights.
@@ -65,7 +65,7 @@ The generator then expands your rule into **generated packages** per departure d
 {% endstep %}
 
 {% step %}
-### Add the homebound leg
+#### Add the homebound leg
 
 1. Add the return transport.
 2. If the expected route does not exist, search again and pick an available homebound.
@@ -74,7 +74,7 @@ The generator then expands your rule into **generated packages** per departure d
 {% endstep %}
 
 {% step %}
-### Generate packages
+#### Generate packages
 
 1. Click **Save**.
 2. Click **Generate**.

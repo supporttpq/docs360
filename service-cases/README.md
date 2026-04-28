@@ -77,4 +77,3 @@ By default, the system displays service cases for **departures within the curren
 At the bottom of the overview, a **Totals** section displays summary statistics related to the listed results (e.g., total number of cases, average resolution time).
 
 You can also export the full result list by clicking the **Export** button to download it as a **CSV file** for reporting or analysis.
-

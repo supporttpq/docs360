@@ -127,25 +127,25 @@ Exporting offers is useful for reporting and analysis outside Tourpaq (for examp
 
 {% stepper %}
 {% step %}
-### 1) Open the Offers page
+#### 1) Open the Offers page
 
 Go to the Offers module and make sure you see the offers list.
 {% endstep %}
 
 {% step %}
-### 2) Apply filters (optional)
+#### 2) Apply filters (optional)
 
 If you only want to export a subset (for example a specific period or a specific agent), apply filters first.
 {% endstep %}
 
 {% step %}
-### 3) Export
+#### 3) Export
 
 Open the menu (three dots) and select **Export**.
 {% endstep %}
 
 {% step %}
-### 4) Save the file
+#### 4) Save the file
 
 The system generates a file based on your current filter results.
 {% endstep %}

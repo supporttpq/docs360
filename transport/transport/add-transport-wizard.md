@@ -53,7 +53,7 @@ Fields marked with `*` are required.
 
 {% stepper %}
 {% step %}
-### Create the transport
+#### Create the transport
 
 Fill in the required fields:
 
@@ -69,7 +69,7 @@ If needed, set **Travel Length Correction**.
 {% endstep %}
 
 {% step %}
-### Set the operating period and repetition
+#### Set the operating period and repetition
 
 Set:
 
@@ -78,7 +78,7 @@ Set:
 {% endstep %}
 
 {% step %}
-### Assign brands and save
+#### Assign brands and save
 
 Assign the relevant **Brands**.
 

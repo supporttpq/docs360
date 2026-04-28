@@ -22,7 +22,7 @@ Only admins can open this page.
 
 {% stepper %}
 {% step %}
-### Pick a time period
+#### Pick a time period
 
 Choose a **start date** and **end date**.
 
@@ -30,7 +30,7 @@ This is the fastest way to narrow results.
 {% endstep %}
 
 {% step %}
-### Add filters (optional)
+#### Add filters (optional)
 
 Filter by:
 
@@ -40,7 +40,7 @@ Filter by:
 {% endstep %}
 
 {% step %}
-### Review the list
+#### Review the list
 
 Look for the item you need.
 

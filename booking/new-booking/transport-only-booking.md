@@ -50,7 +50,7 @@ If you are also using **one-way bookings** (OW OUT / OW HOME), see:
 
 {% stepper %}
 {% step %}
-### 1. Enable “Transport Hotel” on the hotel
+#### 1. Enable “Transport Hotel” on the hotel
 
 On the hotel, open the **Web** tab.
 
@@ -60,7 +60,7 @@ Enable **Transport Hotel**.
 {% endstep %}
 
 {% step %}
-### 2. Create a fictive room type
+#### 2. Create a fictive room type
 
 Create a room type used only for transport-only bookings.
 
@@ -72,7 +72,7 @@ One-way flights typically require **Is Fictive** plus the additional one-way rel
 {% endstep %}
 
 {% step %}
-### 3. Set a non-zero cost if you use Profit Margin Rules
+#### 3. Set a non-zero cost if you use Profit Margin Rules
 
 A fictive room often does not need a cost.
 

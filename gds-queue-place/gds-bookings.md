@@ -49,13 +49,13 @@ Exact statuses depend on provider and setup. These are the common ones you will 
 
 {% stepper %}
 {% step %}
-### 1. Create the booking
+#### 1. Create the booking
 
 Create the booking like a normal booking. Pick transport, accommodation, and passenger details.
 {% endstep %}
 
 {% step %}
-### 2. Submit to GDS
+#### 2. Submit to GDS
 
 Submit from the **GDS** tab in the booking.
 
@@ -63,7 +63,7 @@ See: [Submit a GDS Booking](submit-a-gds-booking/).
 {% endstep %}
 
 {% step %}
-### 3. Handle queue exceptions
+#### 3. Handle queue exceptions
 
 If the booking ends up in the queue, re-place it from the queue view.
 
@@ -121,11 +121,11 @@ When making a new booking, there will be 2 ways to choose the customer: either b
 
 When inserting the data for a new customer, the following fields must be required (meaning that if the fields are not filled in, the customer mustn’t be saved):
 
-### Typical workflow
+#### Typical workflow
 
 But this stage will not be reached if the booking hasn’t first been saved. And in order to be saved, there are some conditions that must be fulfilled:
 
-### Purpose
+#### Purpose
 
 If any of these conditions is not fulfilled, the booking mustn’t be saved.
 
@@ -143,7 +143,7 @@ Use GDS bookings to manage scheduled flights inside Tourpaq while keeping data a
 
 The following information must be required for each passenger (meaning that if the fields are not filled in, an error message must be displayed and the passengers mustn’t be saved):
 
-### Preconditions
+#### Preconditions
 
 * GDS is configured for the brand/company.
 * The user has permissions to create and submit bookings.
@@ -151,7 +151,7 @@ The following information must be required for each passenger (meaning that if t
 
 Related setup pages:
 
-### Status lifecycle (typical)
+#### Status lifecycle (typical)
 
 Other sections that should be in booking page:
 
@@ -163,9 +163,9 @@ In this section, information regarding payments rates and due dates will be disp
 
 Exact statuses depend on provider and setup. These are the common ones you will see in Tourpaq.
 
-### Status lifecycle (typical)
+#### Status lifecycle (typical)
 
-### Typical workflow
+#### Typical workflow
 
 From this section should also be possible to make payment by card – it should be a link that when pressed is must open a new window from where the payment can be done.
 
@@ -182,7 +182,7 @@ c) Passengers details
 
 1\. Create the booking in TourpaqCreate the booking like a normal booking. Pick transport, accommodation, and passenger details.If the flight is GDS-backed, Tourpaq will prepare the GDS submission.2. Take allotment / validate flight and priceTourpaq checks the flight is still available. Tourpaq checks the price has not changed.If something changed, you must confirm or pick alternatives.3. Submit the booking to the GDS providerUse the GDS tab in the booking.See: Submit a GDS Booking.4. Ticketing (provider-dependent)Low-cost carriers often go straight to TicketOK.Some providers require a separate ticketing step and deadline handling.5. If a booking ends up in the queueUse the queue view to re-place bookings that did not complete automatically.See: GDS Queue Place.
 
-### What gets synchronized (and when)
+#### What gets synchronized (and when)
 
 d) History
 
@@ -205,11 +205,11 @@ Common synchronized fields:
 Airlines can cancel unticketed PNRs after the ticketing limit. This is especially important for providers like Galileo.
 {% endhint %}
 
-### Troubleshooting checklist
+#### Troubleshooting checklist
 
 g) SSR
 
-### **View all bookings**
+#### **View all bookings**
 
 Applies for Administrator and Agent
 
@@ -217,32 +217,32 @@ This function must give the possibility to display all the bookings from the sys
 
 Filtering the data will also be possible, and these would be the filters:
 
-#### Booking is stuck in **GDS Pending**
+**Booking is stuck in GDS Pending**
 
-#### Booking is stuck in **GDS Pending**
+**Booking is stuck in GDS Pending**
 
 * Check payment rules. Submission can be blocked by missing payment.
 * Re-submit from the **GDS** tab.
 * Check the queue page if it was moved to the queue.
 
-#### Price changed since selection
+**Price changed since selection**
 
 It will also be possible to sort the displayed bookings by:
 
-#### Booking is in the queue and “Place Bookings” does nothing
+**Booking is in the queue and “Place Bookings” does nothing**
 
-### **Find faster booking**
+#### **Find faster booking**
 
 * Confirm the higher price in the UI, or pick another flight.
 * Re-run “Take Allotment” checks before you submit.
 
-#### Booking is in the queue and “Place Bookings” does nothing
+**Booking is in the queue and “Place Bookings” does nothing**
 
 * Verify balance is paid (if required by your flow).
 * Verify credentials / queue configuration for the provider.
 * If status never changes, escalate to support with booking number + timestamp.
 
-### Preconditions
+#### Preconditions
 
 For the infants, only the age, first name and last name must be filled in. The values for room and travel insurance will be automatically selected (no room or travel insurance is needed for an infant).
 
@@ -250,7 +250,7 @@ For the infants, only the age, first name and last name must be filled in. The v
 * The user has permissions to create and submit bookings.
 * The transport is set up for GDS / dynamic packaging (if applicable).
 
-### Status lifecycle (typical)
+#### Status lifecycle (typical)
 
 Other sections that should be in booking page:
 
@@ -265,7 +265,7 @@ Exact statuses depend on provider and setup. These are the common ones you will 
 * **TicketOK**: ticketed (often used for low-cost carriers).
 * **Canceled**: canceled by user, airline, or the GDS provider.
 
-### Typical workflow
+#### Typical workflow
 
 From this section should also be possible to make payment by card – it should be a link that when pressed is must open a new window from where the payment can be done.
 
@@ -279,7 +279,7 @@ c) Passengers details
 
 From this section extra information for each passenger will be inserted:
 
-### What gets synchronized (and when)
+#### What gets synchronized (and when)
 
 d) History
 
@@ -302,11 +302,11 @@ Common synchronized fields:
 Airlines can cancel unticketed PNRs after the ticketing limit. This is especially important for providers like Galileo.
 {% endhint %}
 
-### Troubleshooting checklist
+#### Troubleshooting checklist
 
 g) SSR
 
-### **View all bookings**
+#### **View all bookings**
 
 Applies for Administrator and Agent
 
@@ -314,22 +314,22 @@ This function must give the possibility to display all the bookings from the sys
 
 Filtering the data will also be possible, and these would be the filters:
 
-#### Booking is stuck in **GDS Pending**
+**Booking is stuck in GDS Pending**
 
 * Check payment rules. Submission can be blocked by missing payment.
 * Re-submit from the **GDS** tab.
 * Check the queue page if it was moved to the queue.
 
-#### Price changed since selection
+**Price changed since selection**
 
 * Confirm the higher price in the UI, or pick another flight.
 * Re-run “Take Allotment” checks before you submit.
 
 It will also be possible to sort the displayed bookings by:
 
-#### Booking is in the queue and “Place Bookings” does nothing
+**Booking is in the queue and “Place Bookings” does nothing**
 
-### **Find faster booking**
+#### **Find faster booking**
 
 Applies for Administrator and Agent
 
@@ -339,14 +339,14 @@ Applies for Administrator and Agent
 
 ***
 
-#### Legacy notes
+**Legacy notes**
 
 If you are looking for the current booking UI documentation, start here:
 
 * [New Booking](../booking/new-booking/new-booking/)
 * [All bookings](../booking/all-bookings/)
 
-### New booking (legacy)
+#### New booking (legacy)
 
 New booking function shall give the possibility to make a new booking. The workflow will be as follows:
 
@@ -655,7 +655,7 @@ f) Comments From this section is should be possible to insert the following comm
 
 g) SSR
 
-### **View all bookings**
+#### **View all bookings**
 
 Applies for Administrator and Agent
 
@@ -705,7 +705,7 @@ It will also be possible to sort the displayed bookings by:
 * Departure date
 * Passengers number
 
-### **Find faster booking**
+#### **Find faster booking**
 
 Applies for Administrator and Agent
 

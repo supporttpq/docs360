@@ -4,7 +4,7 @@
 
 #### **Overview**
 
-This page explains how to test the behavior of the **Individual Transport Extra Category** in the **Web Booking** flow of our travel booking system.&#x20;
+This page explains how to test the behavior of the **Individual Transport Extra Category** in the **Web Booking** flow of our travel booking system.
 
 #### **Purpose**
 
@@ -34,9 +34,9 @@ Transport-related extras can be configured **individually per direction** (outbo
 
 Before using this functionality, make sure:
 
-* The **extra category** and corresponding **extra items** are properly defined&#x20;
+* The **extra category** and corresponding **extra items** are properly defined
 * The extra is correctly configured to be available on bookings (brand, resources, prices, and availability are set).
-* A booking has been created with extras defined for **both outbound and homebound directions**&#x20;
+* A booking has been created with extras defined for **both outbound and homebound directions**
 
 ***
 
@@ -138,4 +138,4 @@ At the end of the confirmation process:
 * Outbound and homebound extras are separated for clarity.
 * Totals are calculated correctly based on the selections, ensuring pricing accuracy.
 
-<figure><img src="../../.gitbook/assets/image (313).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (312) (1).png" alt=""><figcaption></figcaption></figure>

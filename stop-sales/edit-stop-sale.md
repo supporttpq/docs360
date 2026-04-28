@@ -22,7 +22,7 @@ The purpose of the _Edit Stop Sale_ functionality is to:
 
 {% stepper %}
 {% step %}
-### Open the rule in edit mode
+#### Open the rule in edit mode
 
 1. Go to **Hotel → Stop Sales**.
 2. Find the rule you want to change.
@@ -36,7 +36,7 @@ Only enabled rules can be removed or split.
 {% endstep %}
 
 {% step %}
-### Open “Remove or Split”
+#### Open “Remove or Split”
 
 Click **Remove or Split** above the rule. This opens an extra section under the list.
 
@@ -44,7 +44,7 @@ Click **Remove or Split** above the rule. This opens an extra section under the 
 {% endstep %}
 
 {% step %}
-### Choose what you want to do
+#### Choose what you want to do
 
 You have two common paths:
 
@@ -58,7 +58,7 @@ Use these pages for the detailed flow:
 {% endstep %}
 
 {% step %}
-### Save or cancel
+#### Save or cancel
 
 Click **Save** to apply changes. Click **Cancel** to discard changes.
 {% endstep %}

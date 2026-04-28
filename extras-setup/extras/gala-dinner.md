@@ -73,7 +73,7 @@ When checked:
 
 > _If checked, this will hide the extras on the e-ticket. This is supported by e-ticket version 3 only._
 
-### 3. **Booking Engine**&#x20;
+### 3. **Booking Engine**
 
 #### **Behavior**
 
@@ -130,7 +130,7 @@ When enabled, the system evaluates the **stay dates of the booking** against the
 
 To configure Gala Dinner so the guest pays for it but **does not see it as a separate charge**:
 
-1.  Create an Extra for the Gala Dinner.&#x20;
+1.  Create an Extra for the Gala Dinner.
 
     <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (4).png" alt=""><figcaption></figcaption></figure>
 2.  Check **Include In Basic Price** on the Extra.&#x20;

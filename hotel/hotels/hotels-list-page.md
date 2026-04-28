@@ -62,7 +62,7 @@ Accurate data here affects:
 
 {% stepper %}
 {% step %}
-### Find the correct hotel record
+#### Find the correct hotel record
 
 Set filters such as **Hotel**, **Destination**, and **Resort**.
 
@@ -70,7 +70,7 @@ Validate the match using **Code**, **Name**, **Resort**, and **Supplier** in the
 {% endstep %}
 
 {% step %}
-### Create a new hotel record (when required)
+#### Create a new hotel record (when required)
 
 Select **Create using wizard** for guided setup.
 
@@ -80,7 +80,7 @@ Continue with room types, brand assignment, and web configuration in [Hotel crea
 {% endstep %}
 
 {% step %}
-### Continue with downstream hotel setup
+#### Continue with downstream hotel setup
 
 Maintain contracts and commercial setup in [Hotel Contracts](../../hotel-contracts/).
 
@@ -94,19 +94,19 @@ Validate operational output in [Hotel reporting](../hotel-creation/communication
 
 {% stepper %}
 {% step %}
-### Filter the list
+#### Filter the list
 
 Use **Hotel**, **Destination**, **Resort**, **Display only Bed Banks**, and **Show hidden** to narrow the result set.
 {% endstep %}
 
 {% step %}
-### Review the matching hotels
+#### Review the matching hotels
 
 Check the table columns to confirm the correct hotel, resort, supplier, and integration type.
 {% endstep %}
 
 {% step %}
-### Continue with the next task
+#### Continue with the next task
 
 Use **Create using wizard** or **Create** for new setup.
 

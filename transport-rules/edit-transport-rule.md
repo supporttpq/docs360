@@ -133,7 +133,7 @@ For every season, the following shall be specified:
 * **Stay days**
 
 {% hint style="warning" %}
-Date periods must not overlap. If date periods are overlapping, you will not be able to save it, and the date box that makes the overlap will be marked red.&#x20;
+Date periods must not overlap. If date periods are overlapping, you will not be able to save it, and the date box that makes the overlap will be marked red.
 {% endhint %}
 
 <figure><img src="../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>

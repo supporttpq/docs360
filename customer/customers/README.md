@@ -44,19 +44,19 @@ From here you can:
 
 {% stepper %}
 {% step %}
-### Find the customer
+#### Find the customer
 
 Use **Search Customer** for a quick lookup, or use filters (name, email, phone, city, etc.) to narrow the results.
 {% endstep %}
 
 {% step %}
-### Open the customer profile
+#### Open the customer profile
 
 Click **Customer No** to open the customer’s full profile (contact details, bookings, totals, and history).
 {% endstep %}
 
 {% step %}
-### Take action (optional)
+#### Take action (optional)
 
 Select customers using the checkbox column, then choose an action such as **Send Email**, **Send SMS**, or **Export**.
 {% endstep %}

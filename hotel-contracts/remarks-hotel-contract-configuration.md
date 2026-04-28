@@ -32,7 +32,7 @@ Keep Remarks short. Long blocks make the PDF harder to scan.
 
 {% stepper %}
 {% step %}
-### Add your text
+#### Add your text
 
 Go to **Hotel Contract → Remarks**.
 
@@ -40,13 +40,13 @@ Enter your text in **Remarks**.
 {% endstep %}
 
 {% step %}
-### Save the contract
+#### Save the contract
 
 Save the hotel contract to persist the Remarks text.
 {% endstep %}
 
 {% step %}
-### Export the Contract PDF
+#### Export the Contract PDF
 
 Generate the Contract PDF.
 

@@ -23,7 +23,7 @@ The labels in the examples below may appear in Danish, depending on your setup:
 
 {% stepper %}
 {% step %}
-### 1) Start a booking in WebBooking
+#### 1) Start a booking in WebBooking
 
 Open the WebBooking flow and go to the traveller step (for example **Rejsedeltagere**).
 
@@ -31,7 +31,7 @@ Open the WebBooking flow and go to the traveller step (for example **Rejsedeltag
 {% endstep %}
 
 {% step %}
-### 2) Enter customer and passenger details
+#### 2) Enter customer and passenger details
 
 Fill in the required fields.
 
@@ -39,7 +39,7 @@ Fill in the required fields.
 {% endstep %}
 
 {% step %}
-### 3) Continue to Extras (Tillæg)
+#### 3) Continue to Extras (Tillæg)
 
 Click **Fortsæt** to continue. Select extras, if relevant.
 
@@ -47,7 +47,7 @@ Click **Fortsæt** to continue. Select extras, if relevant.
 {% endstep %}
 
 {% step %}
-### 4) Review Summary (Opsummering) and acknowledge notices
+#### 4) Review Summary (Opsummering) and acknowledge notices
 
 Click **Fortsæt** to open **Opsummering**.
 
@@ -63,7 +63,7 @@ In the confirmation area (for example **Godkend oplysningerne og bestil rejsen**
 {% endstep %}
 
 {% step %}
-### 5) Complete the booking
+#### 5) Complete the booking
 
 Click **Bestil Rejse**.
 
@@ -80,7 +80,7 @@ This section outlines how to edit a booking from the Customer Center.\
 
 {% stepper %}
 {% step %}
-### 1) Go to Extras (Tillæg)
+#### 1) Go to Extras (Tillæg)
 
 Open the booking in Customer Center and navigate to **Tillæg**.
 
@@ -88,7 +88,7 @@ Open the booking in Customer Center and navigate to **Tillæg**.
 {% endstep %}
 
 {% step %}
-### 2) Change extras
+#### 2) Change extras
 
 Add or edit an extra that has customer information configured.
 
@@ -96,7 +96,7 @@ Add or edit an extra that has customer information configured.
 {% endstep %}
 
 {% step %}
-### 3) Save and acknowledge the popup
+#### 3) Save and acknowledge the popup
 
 Click **Gem** (Save).
 

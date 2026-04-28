@@ -20,17 +20,17 @@
 
 *   Assign a price list to the hotel allotment - Allotment should be available with pricing.
 
-    <figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (2) (2).png" alt=""><figcaption></figcaption></figure>
 
 #### 4. Access the Web Booking
 
-*   Open the web booking platform&#x20;
+*   Open the web booking platform
 
     <figure><img src="../.gitbook/assets/image (5) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 #### 5. Add Passenger Details
 
-*   Enter details for passengers.&#x20;
+*   Enter details for passengers.
 
     <figure><img src="../.gitbook/assets/image (6) (1) (2).png" alt=""><figcaption></figcaption></figure>
 

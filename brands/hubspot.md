@@ -28,7 +28,7 @@ You will find it next to other brand integrations.
 
 Enter the HubSpot key/token Tourpaq should use for API calls.
 
-🔹 _Format_: A long alphanumeric string (e.g., `f9d3e4b2-xxxx-xxxx-xxxx-9c14c62e1a10`).&#x20;
+🔹 _Format_: A long alphanumeric string (e.g., `f9d3e4b2-xxxx-xxxx-xxxx-9c14c62e1a10`).
 
 🔹 _Required_: Yes — the integration won’t work without it.
 
@@ -50,7 +50,7 @@ Some HubSpot portals no longer support legacy API keys. If that’s your case, u
 
 {% stepper %}
 {% step %}
-### Add Brand Code
+#### Add Brand Code
 
 <figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -60,7 +60,7 @@ Tourpaq uses this code as a prefix in HubSpot booking data.
 {% endstep %}
 
 {% step %}
-### Add HubSpot credentials and subscriptions
+#### Add HubSpot credentials and subscriptions
 
 <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (9).png" alt=""><figcaption></figcaption></figure>
 

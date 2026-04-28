@@ -88,7 +88,7 @@ Use this when you want to:
 
 {% stepper %}
 {% step %}
-### 1. Open the booking and decide your intent
+#### 1. Open the booking and decide your intent
 
 Before changing anything, decide:
 
@@ -97,14 +97,14 @@ Before changing anything, decide:
 {% endstep %}
 
 {% step %}
-### 2. Set the checkbox
+#### 2. Set the checkbox
 
 * Check **Keep automatic discount prices** to **lock in** the existing prices.
 * Uncheck it to **recalculate** to the current prices.
 {% endstep %}
 
 {% step %}
-### 3. Save and verify the totals
+#### 3. Save and verify the totals
 
 After saving, review the booking totals to confirm the result matches what you intended.
 {% endstep %}

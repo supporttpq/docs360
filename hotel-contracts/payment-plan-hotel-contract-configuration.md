@@ -50,7 +50,7 @@ Before you set up a payment plan:
 
 {% stepper %}
 {% step %}
-### Add a payment milestone
+#### Add a payment milestone
 
 Add a new row for each planned payment.
 
@@ -58,7 +58,7 @@ Use one row per due date.
 {% endstep %}
 
 {% step %}
-### Fill in dates and amount
+#### Fill in dates and amount
 
 Set **Deposit Date** and **Tot Amount**.
 
@@ -66,7 +66,7 @@ Set **Payback Date** only when you expect a payback.
 {% endstep %}
 
 {% step %}
-### Set the grouping year
+#### Set the grouping year
 
 Pick **Year** to control how plans are grouped in the Hotel Contract export.
 

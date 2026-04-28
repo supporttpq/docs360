@@ -61,7 +61,7 @@ This is the place where routes are assigned to the transports.
 
 Multiple transports can follow a specific route, and all the bookings made for these transports can or must choose a pickup point for each passenger.
 
-The check box "Pickup point required", when checked, does not allow the booking to be saved if a pickup point is not selected for each passenger.&#x20;
+The check box "Pickup point required", when checked, does not allow the booking to be saved if a pickup point is not selected for each passenger.
 
 <figure><img src=".gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (4).png" alt=""><figcaption></figcaption></figure>
 
