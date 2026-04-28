@@ -27,7 +27,7 @@ If a limit is hit, the booking gets extra hotel nights.
 
 {% stepper %}
 {% step %}
-### Configure the limits
+#### Configure the limits
 
 Go to **Setup → System Setup → Transport Providers**.
 
@@ -49,7 +49,7 @@ The extra night is added **after** the original last hotel night.
 {% endstep %}
 
 {% step %}
-### Create a booking with a GDS transport
+#### Create a booking with a GDS transport
 
 Create a booking using a transport that books flights via GDS.
 

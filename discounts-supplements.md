@@ -387,7 +387,7 @@ A discount/supplement could be universally available, or it could be available f
 
 In the discount/supplement general window, go to Resources tab.
 
-Here we can select the resource type from the dropdown: destination, resort, hotel, room, transport, real transport, or hotel categories.&#x20;
+Here we can select the resource type from the dropdown: destination, resort, hotel, room, transport, real transport, or hotel categories.
 
 <figure><img src=".gitbook/assets/image (15) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -474,7 +474,7 @@ In Discount/supplement general window, go to Brands tab and choose the brand tha
 
 #### Bonus code
 
-A coded discount or bonus code discount is a discount given to guests during a campaign when they use a certain code during the booking process.&#x20;
+A coded discount or bonus code discount is a discount given to guests during a campaign when they use a certain code during the booking process.
 
 A bonus code is a text code that allows a visitor to book a trip with a certain discount as a campaign action. The text chosen for the bonus code has to be longer than 4 (including) characters and shorter than 20 (including) but NOT 12 characters. The 12 character lenght is reserved for giftcard codes that can be added in the Web Booking through the same field - this lenght rule is needed to differentiate between the two code types.
 

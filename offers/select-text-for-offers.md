@@ -143,19 +143,19 @@ This requires an offer template that supports extra descriptions. If nothing cha
 
 {% stepper %}
 {% step %}
-### 1) Pick the Brand you are configuring
+#### 1) Pick the Brand you are configuring
 
 Confirm you are editing the correct brand before you change texts or upload images.
 {% endstep %}
 
 {% step %}
-### 2) Upload images first
+#### 2) Upload images first
 
 Upload your logo and any images used by your offer template, then preview the result to ensure nothing is cropped or stretched.
 {% endstep %}
 
 {% step %}
-### 3) Add the standard offer texts
+#### 3) Add the standard offer texts
 
 Fill in:
 
@@ -168,13 +168,13 @@ Use placeholders where relevant.
 {% endstep %}
 
 {% step %}
-### 4) Configure close reasons
+#### 4) Configure close reasons
 
 Add a small set of reasons your team will actually use. Avoid having too many similar reasons.
 {% endstep %}
 
 {% step %}
-### 5) Configure reminders (optional)
+#### 5) Configure reminders (optional)
 
 If you want automated follow-ups:
 
@@ -185,7 +185,7 @@ If you want automated follow-ups:
 {% endstep %}
 
 {% step %}
-### 6) Test by sending an offer to yourself
+#### 6) Test by sending an offer to yourself
 
 Create a test offer and send it to an internal email address to verify:
 

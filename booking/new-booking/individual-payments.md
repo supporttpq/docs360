@@ -46,7 +46,7 @@ Only passengers with an email address entered will receive the individual paymen
 
 {% stepper %}
 {% step %}
-### 1. Add or verify passenger email addresses
+#### 1. Add or verify passenger email addresses
 
 1. Open the relevant booking.
 2. Click [**Edit Passenger**](new-booking/edit-passenger/).
@@ -59,7 +59,7 @@ Only passengers with an email address entered will receive the individual paymen
 {% endstep %}
 
 {% step %}
-### 2. Send the “Individual payment” email from the booking
+#### 2. Send the “Individual payment” email from the booking
 
 1. Go back to the booking page.
 2. Click the **Individual payment** button.
@@ -71,7 +71,7 @@ Only passengers with an email address entered will receive the individual paymen
 {% endstep %}
 
 {% step %}
-### 3. What the passenger receives
+#### 3. What the passenger receives
 
 Each passenger with an email address will receive an email containing:
 

@@ -59,7 +59,7 @@ Use this flow when you need a **multi-leg itinerary** with **multiple hotel stay
 
 {% stepper %}
 {% step %}
-### 1. Create a new booking draft
+#### 1. Create a new booking draft
 
 Start in [New Booking](new-booking/).
 
@@ -67,7 +67,7 @@ Set passengers first. Then build the itinerary.
 {% endstep %}
 
 {% step %}
-### 2. Add the first transport leg (one-way)
+#### 2. Add the first transport leg (one-way)
 
 Select the outbound **one-way transport** for the first destination.
 
@@ -75,7 +75,7 @@ Confirm dates and gateways. This sets the first leg of the route.
 {% endstep %}
 
 {% step %}
-### 3. Add the first hotel stay (custom hotel days)
+#### 3. Add the first hotel stay (custom hotel days)
 
 Select the hotel for destination 1.
 
@@ -83,7 +83,7 @@ Set the stay length using **custom hotel days**.
 {% endstep %}
 
 {% step %}
-### 4. Add the next transport leg + hotel stay (repeat)
+#### 4. Add the next transport leg + hotel stay (repeat)
 
 Add the “middle” one-way leg to the next destination.
 
@@ -91,7 +91,7 @@ Then add the next hotel stay with the correct nights.
 {% endstep %}
 
 {% step %}
-### 5. Add the final return leg and save
+#### 5. Add the final return leg and save
 
 Add the last one-way leg back to the home gateway.
 

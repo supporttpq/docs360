@@ -62,31 +62,31 @@ You can create invoice schedules for:
 
 {% stepper %}
 {% step %}
-### Add New Schedule
+#### Add New Schedule
 
 Click **Add New Schedule** to start creating a new schedule.
 {% endstep %}
 
 {% step %}
-### Select interval type
+#### Select interval type
 
 Choose one of: **Daily** (every day), **Weekly** (select weekday), **Monthly** (select day of month), or **Days After** (number of days after an event, e.g. after departure).
 {% endstep %}
 
 {% step %}
-### Select entity
+#### Select entity
 
 Choose the applicable hotel, extra, supplement, or handling entry.
 {% endstep %}
 
 {% step %}
-### Save configuration
+#### Save configuration
 
 Click **Save** to apply the new schedule.
 {% endstep %}
 
 {% step %}
-### Add additional schedules
+#### Add additional schedules
 
 _Optional._ Repeat the process to configure multiple schedules as needed.
 {% endstep %}
@@ -134,31 +134,31 @@ Regeneration allows you to recreate an invoice in case of data corrections, supp
 
 {% stepper %}
 {% step %}
-### Open invoice list
+#### Open invoice list
 
 Navigate to **Finance → Invoice**.
 {% endstep %}
 
 {% step %}
-### Select invoice
+#### Select invoice
 
 Locate and select the invoice that needs to be regenerated.
 {% endstep %}
 
 {% step %}
-### Click Regenerate
+#### Click Regenerate
 
 Press the **Regenerate** button in the invoice action toolbar.
 {% endstep %}
 
 {% step %}
-### Confirm action
+#### Confirm action
 
 Click **OK** in the confirmation dialog to proceed.
 {% endstep %}
 
 {% step %}
-### Verify new invoice
+#### Verify new invoice
 
 The regenerated invoice will appear in the list with updated data and a Pending status.
 {% endstep %}

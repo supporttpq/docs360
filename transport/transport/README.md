@@ -22,19 +22,19 @@ Need departures, seat totals, and cost analysis for a date range? Use [**All Tra
 
 {% stepper %}
 {% step %}
-### Filter the list
+#### Filter the list
 
 Use **Code**, **Departure**, and **Arrival** to narrow results fast.
 {% endstep %}
 
 {% step %}
-### Open a transport
+#### Open a transport
 
 Click a **Code** to open the transport for editing.
 {% endstep %}
 
 {% step %}
-### Create a new transport
+#### Create a new transport
 
 Use **Create** for manual setup, or **Create using wizard** for guided setup.
 {% endstep %}

@@ -50,7 +50,7 @@ Before you start:
 
 {% stepper %}
 {% step %}
-### Set the booking and stay windows
+#### Set the booking and stay windows
 
 Use **Booking Period** to define when the booking must be made.
 
@@ -58,7 +58,7 @@ Use **Stay Period** to define when the stay must happen.
 {% endstep %}
 
 {% step %}
-### Choose scope
+#### Choose scope
 
 Select **Room** to target specific room types.
 
@@ -66,7 +66,7 @@ Select **Week Days** to restrict by arrival weekday.
 {% endstep %}
 
 {% step %}
-### Set the deal
+#### Set the deal
 
 Set **Stay Days No** and **Pay Days No**.
 
@@ -74,7 +74,7 @@ Example: `7` and `6` gives “stay 7, pay 6”.
 {% endstep %}
 
 {% step %}
-### Validate with a test booking
+#### Validate with a test booking
 
 Create a booking that matches the booking and stay windows.
 

@@ -110,13 +110,13 @@ This shows payments made between `26.03.2025` and `31.03.2025` for bookings depa
 
 {% stepper %}
 {% step %}
-### Open the create form
+#### Open the create form
 
 Click **Create**.
 {% endstep %}
 
 {% step %}
-### Fill in the payment details
+#### Fill in the payment details
 
 Enter the key fields:
 
@@ -133,7 +133,7 @@ Optional (only if relevant):
 {% endstep %}
 
 {% step %}
-### Save
+#### Save
 
 Click **Save** to register the payment.
 {% endstep %}

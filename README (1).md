@@ -5,7 +5,7 @@ description: >-
   be up and running in no time.
 noIndex: true
 icon: rocket-launch
-cover: .gitbook/assets/Tourpaq Logo (1).jpg
+cover: .gitbook/assets/Tourpaq Logo (1) (1).jpg
 coverY: 0
 ---
 

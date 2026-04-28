@@ -37,7 +37,7 @@ Tourpaq can still split the value across stay days internally for allocation and
 
 {% stepper %}
 {% step %}
-### Open the hotel
+#### Open the hotel
 
 1. Go to **Hotel → Hotels**.
 2. Select the hotel you want to test.
@@ -45,7 +45,7 @@ Tourpaq can still split the value across stay days internally for allocation and
 {% endstep %}
 
 {% step %}
-### Create the room cost rule
+#### Create the room cost rule
 
 1. Click **Create** (or **+**).
 2. Fill the rule fields your setup requires, for example:
@@ -59,7 +59,7 @@ When you select **Per Room Per Stay**, **Stay Days No** becomes available.
 {% endstep %}
 
 {% step %}
-### Set the stay-length filter
+#### Set the stay-length filter
 
 1. In **Stay Days No**, enter a value (example: `5`).
 2. Click the **Save** icon.
@@ -68,7 +68,7 @@ The rule now matches only bookings with this exact stay length.
 {% endstep %}
 
 {% step %}
-### Test: booking where the stay length matches
+#### Test: booking where the stay length matches
 
 1. Create a new booking that matches the **Stay Days No** value.
 2. Confirm the booking status is **OK**.
@@ -79,7 +79,7 @@ Note: the value may look divided by days in the cost view.
 {% endstep %}
 
 {% step %}
-### Test: booking where the stay length does not match
+#### Test: booking where the stay length does not match
 
 1. Go back to the hotel’s **Room Costs**.
 2. Edit the same rule.

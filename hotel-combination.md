@@ -38,7 +38,7 @@ Create and verify room mappings and allotments before generating the price list.
 
 {% stepper %}
 {% step %}
-### 1) Create the combination hotel
+#### 1) Create the combination hotel
 
 Create the hotel like a normal hotel.
 
@@ -48,7 +48,7 @@ Enable **Hotel Combination**.
 {% endstep %}
 
 {% step %}
-### 2) Add itinerary hotels and (optional) transports
+#### 2) Add itinerary hotels and (optional) transports
 
 Open the **Hotel Combination** tab.
 
@@ -60,7 +60,7 @@ Add the hotels the customer will stay in.
 
 Optional: assign transports. This limits the combination to the selected transports.
 
-#### Single-hotel combinations
+**Single-hotel combinations**
 
 If you add only one hotel, you may see a ticket option:
 
@@ -69,17 +69,17 @@ If you add only one hotel, you may see a ticket option:
 {% endstep %}
 
 {% step %}
-### 3) Map combination rooms to real hotel rooms
+#### 3) Map combination rooms to real hotel rooms
 
 Open the **Hotel Combination Room** tab.
 
 <figure><img src=".gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### Grid 1: room mapping
+**Grid 1: room mapping**
 
 Map each placeholder room on the combination to a room on each itinerary hotel. Match room specs as closely as possible (beds, occupancy, etc.).
 
-#### Grid 2: interval split (transport → hotel days)
+**Grid 2: interval split (transport → hotel days)**
 
 For each transport interval, define how many nights belong to each hotel.
 
@@ -94,7 +94,7 @@ Transport `BLLPVK-A7-5A` has 4 intervals: 7 / 14 / 21 / 28 nights.
 {% endstep %}
 
 {% step %}
-### 4) Create the price list
+#### 4) Create the price list
 
 Once hotels, rooms, and transports are defined, create a **price list** for the combination.
 

@@ -41,25 +41,25 @@ The page is typically split into three areas:
 
 {% stepper %}
 {% step %}
-### Confirm you’re looking at the right person
+#### Confirm you’re looking at the right person
 
 Check the **name**, **email**, and **phone** first. If anything looks wrong, verify the customer number from the booking or from the [Customers](./) list.
 {% endstep %}
 
 {% step %}
-### Update contact details (if needed)
+#### Update contact details (if needed)
 
 Edit the fields in the **Customer information** panel and click **Update** to save.
 {% endstep %}
 
 {% step %}
-### Review bookings and related history
+#### Review bookings and related history
 
 Expand **Bookings** (and other panels like **Service Cases**) to see what is connected to the customer.
 {% endstep %}
 
 {% step %}
-### Check totals
+#### Check totals
 
 Use the **Totals summary** panel to understand turnover/profit and booking counts.
 {% endstep %}

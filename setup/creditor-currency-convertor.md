@@ -44,7 +44,7 @@ These fields are required when you create a converter rule:
 
 {% stepper %}
 {% step %}
-### Find the new entry
+#### Find the new entry
 
 Change a creditor on a hotel/extra/discount supplement.
 
@@ -52,13 +52,13 @@ If the currency changes, a new entry is created here.
 {% endstep %}
 
 {% step %}
-### Review the From/To currencies
+#### Review the From/To currencies
 
 Confirm the currencies match what you intended.
 {% endstep %}
 
 {% step %}
-### Activate the rule
+#### Activate the rule
 
 Enable the rule so conversion is applied.
 {% endstep %}

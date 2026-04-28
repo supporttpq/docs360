@@ -122,25 +122,25 @@ Deleting an offer removes it from the list. Only delete offers if your company p
 
 {% stepper %}
 {% step %}
-### Create an offer
+#### Create an offer
 
 Create a new offer and fill in customer/offeree, travel details, and pricing.
 {% endstep %}
 
 {% step %}
-### Send the offer
+#### Send the offer
 
 Send the offer to the customer (usually by email) once the content is correct.
 {% endstep %}
 
 {% step %}
-### Follow up
+#### Follow up
 
 Set and use the **Follow-up Date** to keep track of when to contact the customer.
 {% endstep %}
 
 {% step %}
-### Convert to booking
+#### Convert to booking
 
 If the customer accepts, convert the offer into a booking (the status typically becomes **Sold**).
 {% endstep %}

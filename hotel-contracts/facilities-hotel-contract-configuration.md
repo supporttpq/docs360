@@ -27,19 +27,19 @@ You can only select **one template per contract**.
 
 {% stepper %}
 {% step %}
-### Choose a facility template
+#### Choose a facility template
 
 Pick the template that matches the hotel and contract scope.
 {% endstep %}
 
 {% step %}
-### Review the facilities
+#### Review the facilities
 
 Verify that key facilities are included (for example Wi‑Fi, pool, parking).
 {% endstep %}
 
 {% step %}
-### Save the contract
+#### Save the contract
 
 Save after changing the template. This applies the facilities to the contract.
 {% endstep %}

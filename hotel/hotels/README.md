@@ -239,7 +239,7 @@ Deletion can impact reporting and historical references.
 
 {% stepper %}
 {% step %}
-### Find and validate a hotel
+#### Find and validate a hotel
 
 Set **Hotel**, **Destination**, and **Resort** filters.
 
@@ -247,7 +247,7 @@ Validate the correct record via **Code**, **Name**, **Resort**, and **Supplier**
 {% endstep %}
 
 {% step %}
-### Create a hotel record
+#### Create a hotel record
 
 Select **Create using wizard** or **Create**.
 
@@ -255,7 +255,7 @@ Continue setup in [Hotel creation](../hotel-creation/).
 {% endstep %}
 
 {% step %}
-### Continue downstream setup
+#### Continue downstream setup
 
 Configure commercial logic in [Hotel Contracts](../../hotel-contracts/).
 

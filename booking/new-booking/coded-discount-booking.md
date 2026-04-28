@@ -43,7 +43,7 @@ Bonus codes are commonly managed as part of **Campaigns**. See: [Campaigns](../.
 
 {% stepper %}
 {% step %}
-### 1. Create the booking as usual
+#### 1. Create the booking as usual
 
 1. Go to **Booking → New Booking**.
 2. Select the correct **Brand**.
@@ -53,7 +53,7 @@ Bonus codes are commonly managed as part of **Campaigns**. See: [Campaigns](../.
 {% endstep %}
 
 {% step %}
-### 2. Enter the bonus code
+#### 2. Enter the bonus code
 
 1. Locate the **Discount/Supplement Bonus Code** field.
 2. Enter the code.
@@ -63,7 +63,7 @@ If the code is valid, the system applies the related discount/supplement and rec
 {% endstep %}
 
 {% step %}
-### 3. Verify the result
+#### 3. Verify the result
 
 1. Confirm that the booking total changed as expected.
 2. Open [Economics](economics.md) to verify how the discount/supplement affects:
@@ -73,7 +73,7 @@ If the code is valid, the system applies the related discount/supplement and rec
 {% endstep %}
 
 {% step %}
-### 4. Save the booking
+#### 4. Save the booking
 
 Save the booking to store the applied bonus code and the resulting price adjustment.
 {% endstep %}

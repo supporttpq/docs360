@@ -14,7 +14,7 @@ The **Stop Sale Notifications** section in the Dashboard allows users to view an
 
 {% stepper %}
 {% step %}
-### Open Stop Sale notifications
+#### Open Stop Sale notifications
 
 1. Go to **Notifications → Stop Sales**.
 2. The **Notifications** page opens with the Stop Sales list.
@@ -23,7 +23,7 @@ The **Stop Sale Notifications** section in the Dashboard allows users to view an
 {% endstep %}
 
 {% step %}
-### Understand the default list and columns
+#### Understand the default list and columns
 
 * The default date filter shows Stop Sales for the next **2 weeks** (from today).
 * The **Agreed Allotment** column shows the agreed allotment value on the rule (if set).
@@ -34,7 +34,7 @@ If you need older or future periods, expand the date range in the filters.
 {% endstep %}
 
 {% step %}
-### Filter to only rules with Agreed Allotment
+#### Filter to only rules with Agreed Allotment
 
 1. Enable **Only Agreed Allotment**.
 2. The list updates to show only rules with an agreed allotment value.

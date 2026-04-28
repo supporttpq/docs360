@@ -145,7 +145,7 @@ Save is blocked until all mandatory fields are valid, including **Rooms** and **
 
 {% stepper %}
 {% step %}
-### Open the wizard
+#### Open the wizard
 
 Open **Hotel** → **Hotels**.
 
@@ -153,7 +153,7 @@ Select **Create using wizard**.
 {% endstep %}
 
 {% step %}
-### Enter hotel details
+#### Enter hotel details
 
 Complete **Code**, **Name**, **Resort**, **Stars**, and **Contract type**.
 
@@ -161,7 +161,7 @@ Complete **Resort Name** only when an extra label is needed.
 {% endstep %}
 
 {% step %}
-### Add room types and select the default room
+#### Add room types and select the default room
 
 In **Rooms**, select **Edit** and add at least one room type.
 
@@ -169,7 +169,7 @@ Select **Standard room** from the added room types.
 {% endstep %}
 
 {% step %}
-### Assign brands
+#### Assign brands
 
 Set the brand availability in the brand assignment area.
 
@@ -177,7 +177,7 @@ Ensure the target sales channel is enabled for the brand where the hotel must be
 {% endstep %}
 
 {% step %}
-### Save and continue with full setup
+#### Save and continue with full setup
 
 Select **Save**.
 

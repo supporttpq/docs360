@@ -14,25 +14,25 @@ The **All Transports** page gives you an overview of scheduled transports. You c
 
 {% stepper %}
 {% step %}
-### Set your date range
+#### Set your date range
 
 Use **Transport Date (Start – End)** first. It usually reduces the result set the most.
 {% endstep %}
 
 {% step %}
-### Narrow down the list
+#### Narrow down the list
 
 Add filters like **Departure / Arrival**, **Transport Type**, and **Weekdays**.
 {% endstep %}
 
 {% step %}
-### Review and adjust columns
+#### Review and adjust columns
 
 Sort by column headers and add extra columns if needed.
 {% endstep %}
 
 {% step %}
-### Export selected transports
+#### Export selected transports
 
 Use the left-side checkboxes to select rows, then run your export action.
 {% endstep %}

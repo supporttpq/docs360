@@ -2,9 +2,9 @@
 
 This page explains each field and option available in the **Web Booking Settings** configuration panel.
 
-<figure><img src="../../.gitbook/assets/image (160).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (159) (1).png" alt=""><figcaption></figcaption></figure>
 
-### &#x20;General Fields
+### General Fields
 
 * **Extra Bed Information**: Optional field to enter any additional information related to extra beds during booking.
 * **Footer Text**: Text displayed in the footer of the web booking page.
@@ -12,7 +12,7 @@ This page explains each field and option available in the **Web Booking Settings
 * **Page Title**: The title of the web page, shown on the browser tab.
 * **Chat Check Link**: (Optional) Link to a chat service health check.
 * **Chat Link**: Link to the customer support chat widget.\
-  &#xNAN;_&#x45;xample: "https://messenger.providesupport.com/messenger/primotours.html"_
+  \&#xNAN;_Example: "https://messenger.providesupport.com/messenger/primotours.html"_
 * **Info Mail To**: Email address where general inquiries are sent.
 
 ### Email Settings
@@ -26,17 +26,17 @@ This page explains each field and option available in the **Web Booking Settings
 ### External Links
 
 * **Financing Info Link**: Link to information about financing options.\
-  &#xNAN;_&#x45;xample: "http://www.primotours.dk/info/værd-at-vide/finansiering"_
+  \&#xNAN;_Example: "http://www.primotours.dk/info/værd-at-vide/finansiering"_
 * **Trust Pilot Source**: URL to fetch Trustpilot reviews or ratings.\
-  &#xNAN;_&#x45;xample: "https://vjmphp.dk/primotours/webbooking\_trustpilot.php"_
+  \&#xNAN;_Example: "https://vjmphp.dk/primotours/webbooking\_trustpilot.php"_
 
 ### Offer Settings
 
 * **Offer Box Style**: Select style for the offer display (Default selected).
 * **Date Format**: Defines the date and time format.\
-  &#xNAN;_&#x45;xample: "DD.MM.YYYY HH:mm"_
+  \&#xNAN;_Example: "DD.MM.YYYY HH:mm"_
 
-### &#x20;Display Options
+### Display Options
 
 | Option                                        | Description                                                                     |
 | --------------------------------------------- | ------------------------------------------------------------------------------- |

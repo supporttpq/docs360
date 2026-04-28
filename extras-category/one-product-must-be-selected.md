@@ -27,19 +27,19 @@ Enable this setting on the **extras category**.
 
 {% stepper %}
 {% step %}
-### Open the extras category
+#### Open the extras category
 
 Go to `Extras Setup > Extras Category`, then open the relevant category.
 {% endstep %}
 
 {% step %}
-### Enable the option
+#### Enable the option
 
 Enable **One product must be selected**.
 {% endstep %}
 
 {% step %}
-### Save and test
+#### Save and test
 
 Create a test booking and verify you can only switch between options.
 {% endstep %}
