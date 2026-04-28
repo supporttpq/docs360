@@ -20,11 +20,11 @@ layout:
     visible: true
 ---
 
-# View all bookings
+# All bookings
 
 ### **Overview**
 
-**View All Bookings** is the main list view within the All Bookings page. It is where you apply filters, run your search, and get a matching list of bookings to work with. Every other feature in the All Bookings section — Statistics, Totals, Saved Views — is built on top of the filter set you configure here.
+**All Bookings** is the main list view within the All Bookings page. It is where you apply filters, run your search, and get a matching list of bookings to work with. Every other feature in the All Bookings section — Statistics, Totals, Saved Views — is built on top of the filter set you configure here.
 
 Think of it as your search engine for bookings. The more precisely you filter, the more focused and useful your results will be.
 
@@ -32,7 +32,7 @@ Think of it as your search engine for bookings. The more precisely you filter, t
 
 ### **Purpose**
 
-Use View All Bookings to:
+Use All Bookings to:
 
 * Locate a specific booking by number, customer name, hotel, transport, or any combination of criteria
 * Build a filtered dataset that drives the **Statistics** and **Totals** views
@@ -43,7 +43,7 @@ Use View All Bookings to:
 
 ### **Preconditions**
 
-Before using View All Bookings, ensure the following:
+Before using All Bookings, ensure the following:
 
 * You are logged in with a user role that has access to the Booking module
 * At least one **Brand** is selected — no results will load without a Brand
@@ -55,7 +55,7 @@ If no results appear after clicking **Display**, the first thing to check is whe
 
 ***
 
-### How to Use View All Bookings
+### How to Use All Bookings
 
 #### Step 1 — Open the page
 
@@ -122,7 +122,7 @@ The saved view will appear as a quick-access shortcut each time you open All Boo
 
 To rename or delete an existing saved view:
 
-<figure><img src="../../.gitbook/assets/image (561).png" alt="Manage Views dialog in All bookings"><figcaption><p>Manage saved views in All bookings.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. In the views bar, click the **three dots (⋯)** button to open **Manage Views**
 2. In the dialog that opens:
@@ -133,9 +133,123 @@ To rename or delete an existing saved view:
 
 ***
 
+#### Step 8 - Booking Selection (Checkbox Column)
+
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+#### 1. Bookings Selection (Checkbox Column)
+
+The **first column** contains checkboxes that allow users to select bookings.
+
+#### Functions
+
+* **Select individual bookings** by ticking the checkbox next to the booking.
+* **Select multiple bookings** for bulk actions.
+* **Select all bookings in the filtered results** using the top checkbox.
+
+Example:
+
+* Selecting 5 bookings allows sending an email or SMS to all selected customers at once.
+
+***
+
+#### 2. Bulk Action Menu
+
+**Overview**
+
+This functionality enables sending emails to a large number of bookings directly from the **All Bookings** page. It is designed for high-volume scenarios, especially critical situations where rapid communication is required.
+
+Above the booking table, the following actions are available:
+
+#### Send Email
+
+Bulk Selection and Sending
+
+* Users can select **one booking**, **different bookings,** or **all bookings** from the _All Bookings_ page
+* A single **Send Email** action applies to the entire selection
+
+<figure><img src="../../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+Typical use cases:
+
+* Sending travel documents
+* Sending booking confirmations
+* Sending reminders or updates
+
+#### Step-by-step interaction
+
+1. **Select bookings**
+   * Users select multiple bookings using the checkboxes in the list
+2. **Trigger action**
+   * Click **Send email** (highlighted on the left side of the image)
+3. **Send Email modal opens**
+   * The pop-up contains:
+     * Subject field
+     * Rich text editor for email body
+     * Attachment option (bottom left)
+     * **“Don’t send attachments” checkbox (bottom right)**
+     * Send button
+
+#### Checkbox: “Don’t send attachments”
+
+* **Location:**\
+  Bottom-right corner of the Send Email popup (visible in image)
+* **Behavior:**
+  * When checked:
+    * Attachments are excluded from emails
+      * Sending speed increases significantly
+* **Tooltip text:**
+
+> If enabled, emails will be sent faster. This is especially useful when sending large volumes (e.g. 1,000+ emails) in a short time.
+
+* **Functional Behavior**
+  * With attachments
+    * Emails include selected files
+    * Larger payload → slower delivery
+  * Without attachments
+    * Attachments are skipped
+    * Smaller payload → faster processing and delivery
+
+#### Example Scenario
+
+* User selects 11,000 bookings
+* Opens Send Email modal
+* Enables **Don’t send attachments**
+* Clicks **Send email**
+
+**Expected result:**
+
+* Emails are processed in parallel
+* Delivery completed within 30–60 minutes
+* No need for manual batching
+
+<img src="../../.gitbook/assets/file.excalidraw (6).svg" alt="" class="gitbook-drawing">
+
+***
+
+#### Send SMS
+
+***
+
+#### Send SMS
+
+Allows sending SMS notifications to customers associated with the selected bookings.
+
+Typical use cases:
+
+* Travel reminders
+* Flight updates
+* Urgent notifications
+
+{% hint style="info" %}
+If multiple sms are queued with the same message and destination, only the first one is sent. The others are marked as sent, but remain queued.
+{% endhint %}
+
 ### Field Reference
 
 #### Filter Fields
+
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 | Filter                           | Description                                                                          | Notes                                                |
 | -------------------------------- | ------------------------------------------------------------------------------------ | ---------------------------------------------------- |
@@ -149,6 +263,7 @@ To rename or delete an existing saved view:
 | **Status**                       | Booking status filter: OK, Cancelled, Error, Warning, Locked, Waiting List           | Leave blank to return all statuses                   |
 | **GDS Status**                   | GDS ticketing status for airline bookings                                            | Only relevant if GDS integration is active           |
 | **Bonus Code**                   | Promotional or bonus code applied at booking                                         |                                                      |
+| **Room types**                   | Filter by room types                                                                 |                                                      |
 | **Hotels**                       | Filter by hotel assignment                                                           |                                                      |
 | **Transports / Real Transports** | Filter by transport code or specific real transport                                  |                                                      |
 | **Extra**                        | Filter by extra type or extra category                                               |                                                      |
@@ -169,6 +284,30 @@ To rename or delete an existing saved view:
 | **Today's Bookings** | Shortcut that sets the Booking Period to today and immediately loads results                   |
 | **Statistics**       | Opens the Statistics analysis view for the current result set                                  |
 | **Totals**           | Opens the Totals / Cost and Profit view for the current result set                             |
+
+***
+
+**Statistics Bar (Bottom of Page)**
+
+The statistics bar appears below the table immediately after Display is clicked. It shows a real-time summary of the filtered result set. This list is used to monitor late changes to arrivals, often spotted by a change in the totals.
+
+{% hint style="info" %}
+The statistics bar is available for thefollowing user types: Administrator, Guide and Guide Master
+{% endhint %}
+
+<figure><img src="../../.gitbook/assets/image (743).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (744).png" alt=""><figcaption></figcaption></figure>
+
+| Metric             | Description                                                                                            |
+| ------------------ | ------------------------------------------------------------------------------------------------------ |
+| **Bookings**       | Total number of bookings in the filtered result set                                                    |
+| **Total Pax**      | Total number of passengers across all filtered bookings                                                |
+| **Pax / Booking**  | Average number of passengers per booking. Formula: `Total Pax ÷ Bookings`                              |
+| **Total Turnover** | Total gross revenue from all filtered bookings before costs are deducted                               |
+| **Turnover / Pax** | Average revenue per passenger. Formula: `Total Turnover ÷ Total Pax`                                   |
+| **Profit Total**   | Net profit across all filtered bookings. May be negative in periods with high cancellations or refunds |
+| **Profit / Pax**   | Average net profit per passenger. Formula: `Profit Total ÷ Total Pax`                                  |
 
 ***
 

@@ -43,7 +43,7 @@ Texts from general settings can be customized per active brand.
 
 #### A. General Information
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Name** - Internal name of the extras category.
 
@@ -77,7 +77,7 @@ Texts from general settings can be customized per active brand.
 
 #### B. Filtering Options
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;**Display in Remember Extras** - Allows this category to appear in the "Remember Extras" functionality.
 
@@ -89,7 +89,7 @@ Texts from general settings can be customized per active brand.
 
 #### C. Settings
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (781).png" alt=""><figcaption></figcaption></figure>
 
 This section controls operational logic.
 
@@ -98,7 +98,7 @@ Code - Unique short identifier.
 * **Purpose:** Used internally and for system integrations.
 * **Example:** `AKT`
 
-Sold Out Text - Text for pop up in webbooking and customer center
+Sold Out Text - Text for pop-up in web booking and customer center
 
 * **Example:** `No availability for selected dates.`
 
@@ -118,13 +118,28 @@ Ticket Category - Connects extras to ticketing logic
 
 * **Default:** None
 
+Round Rule -  If a round rule is specified, then it is applied to the price before it is used in a booking. If the price is a per-day price, the round rule is applied after the full price for the booking is calculated.
+
 Hide for Customer - If checked, this will hide the extras on the ticket, in webbooking, and in customer center. This is often combined with " Include in Basic Price", which is set on the Extras.
 
 * **Checkbox**
 
-Category Order - Setting this will influence order of categories in webbooking. Two categories of equal order number will be ordered alphabetical between them. The smaller the number, the higher the category will appear in the list.
+Category Order - Setting this will influence the order of categories in webbooking. Two categories of equal order number will be ordered alphabetically between them. The smaller the number, the higher the category will appear in the list.
 
-Category Order Booking - Setting this will influence order of categories in the booking window. Two categories of equal order number will be ordered alphabetical between them. 0 to 9 are located leftmost, then Transport, 10 to 19 before Hotel, and then the rest.
+Category Order Booking - Setting this will influence the order of categories in the booking window. Two categories of equal order number will be ordered alphabetically between them. 0 to 9 are located leftmost, then Transport, 10 to 19 before Hotel, and then the rest.
+
+Category order e-ticket - Setting this influences the order of the categories on e-ticket. Two categories of equal order number will be ordered alphabetically between them.\
+This takes effect if "Order extras on e-ticket" is set in System Setup.
+
+{% hint style="info" %}
+This is only supported on ticket version 3.
+{% endhint %}
+
+If "Order extras on e-ticket" is checked, the extras shall be sorted according to the Category Order value on the e-ticket under price specification.
+
+{% hint style="warning" %}
+The Extra category order does not affect the order of Travel Insurance and Cancellation Insurance.
+{% endhint %}
 
 Days after booking category locks -  Number of days after booking when changes are no longer allowed.
 
@@ -135,6 +150,14 @@ Link to column in transport - Shows allotment for “linked to transport” extr
 Show description & photo opened in WebBooking - Automatically expands description and image in booking flow.
 
 * **Checkbox**
+
+All stay days must be available - If selected, the extra is only eligible if it is available for the full booking period.&#x20;
+
+* **Checkbox**
+
+{% hint style="info" %}
+Available only for the Pension & Gala Dinner extras category.
+{% endhint %}
 
 Stop default product selection for all passengers in WB - Prevents automatic selection of extras for all passengers.
 

@@ -29,6 +29,8 @@ Before you configure **Extra Cost**:
 
 ### Fields
 
+<figure><img src="../.gitbook/assets/image (792).png" alt=""><figcaption></figcaption></figure>
+
 | Field                    | Description                                                                                                           |
 | ------------------------ | --------------------------------------------------------------------------------------------------------------------- |
 | **Type**                 | The extra cost type. Example: Final Cleaning or Resort Fee. Selected from a dropdown of predefined types.             |
@@ -92,7 +94,7 @@ Keep age ranges unique per **Type + Room**. Overlaps can create conflicts.
 
 ### Related workflows
 
-* [Hotel contract - General](hotel-contract-general.md)
+* [Hotel contract - General](hotel-contract-contract-name.md)
 * [Rooms – Hotel Contract Configuration](rooms-hotel-contract-configuration.md)
 * [Periods – Hotel Contract Configuration](periods-hotel-contract-configuration.md)
 * [Extra Beds Cost – Hotel Contract Configuration](extra-beds-cost-hotel-contract-configuration.md)

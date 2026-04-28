@@ -99,7 +99,7 @@ Use the **Booking No** in the notification row to locate the affected booking. O
 
 After saving the fix, return to the Notifications page and refresh the list. If the underlying issue has been resolved, the notification will no longer appear. If it persists, the fix was incomplete — review the booking again.
 
-<img src="../.gitbook/assets/file.excalidraw.svg" alt="" class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (1).svg" alt="" class="gitbook-drawing">
 
 {% hint style="warning" %}
 Notifications are not automatically cleared when you save a reservation. The system checks for updates every 30 minutes.

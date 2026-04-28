@@ -4,7 +4,7 @@
 
 The **Tee Time Export** feature in Tourpaq Office is used to generate structured reports related to golf tee time bookings. It allows users to filter and export data based on supplier, booking details, arrival periods, extras, and more. This tool is valuable for operational teams and golf course suppliers who manage tee time reservations.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -74,7 +74,7 @@ This tool is designed to:
 
 #### Columns for Export Section
 
-* **Function**: Lets the user **customize the columns** that appear in the final export file.
+* **Function**: Let the user **customize the columns** that appear in the final export file.
 
 ***
 
@@ -91,11 +91,11 @@ This tool is designed to:
 **Purpose:** Generates and downloads the export file based on your selected filters.
 
 * After setting all filters and options, click **Export** to generate the file.
-* The file will be downloaded automatically in **.XLS**  / **PDF** format.
+* The file will be downloaded automatically in **.XLS** / **PDF** format.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-The export file include the following columns:
+The export file includes the following columns:
 
 | Column                  | Description                                                                              |
 | ----------------------- | ---------------------------------------------------------------------------------------- |
@@ -109,9 +109,49 @@ The export file include the following columns:
 | **Status (Booking)**    | Shows the booking state, such as _Confirmed_, _Pending_, or _Cancelled_.                 |
 | **Confirmed by Agency** | Indicates whether the booking has been confirmed by the agency managing the reservation. |
 
-### Tips&#x20;
+### Tips
 
 * Always double-check the **supplier** and **date filters** to ensure data relevance.
 * Use **“Display All Extras”** to prevent missing tee-time-related extras.
 * For recurring supplier needs, confirm the preferred **report format** (e.g., PDF, Excel).
 * Use **ZIP compression** when sending large reports by email or uploading to portals.
+
+***
+
+### FAQ
+
+#### Which supplier should be selected when a report is needed for one golf partner only?
+
+Select that specific supplier in **Supplier**.
+
+This limits the result to bookings linked to that golf partner.
+
+#### What does **Display All Extras** do?
+
+It includes all extras that match the other active filters.
+
+Use it when tee-time-related services might be stored as separate extras.
+
+#### Why are expected tee time bookings missing from the export?
+
+Check **Supplier**, **Arrival Period**, **Booking Period**, **Categories**, and **Extras** first.
+
+Missing rows are usually caused by filters that are too narrow.
+
+#### When should **Compress as ZIP** be used?
+
+Use it when the file is large or must be sent by email.
+
+This reduces file size and helps avoid attachment limits.
+
+#### Which report type should be used for a standard tee time export?
+
+Use the supplier-specific or Excel-based report configured in **Report Type**.
+
+The available choices depend on the supplier setup in Tourpaq Office.
+
+#### Can the exported columns be customized?
+
+Yes.
+
+Use **Columns for Export** to decide which fields appear in the output file.

@@ -2,7 +2,8 @@
 
 ## Tourpaq Manual
 
-* [Welcome to the Tourpaq Manual](README.md)
+* [What's new](README.md)
+* [Welcome to the Tourpaq Manual](<README (2).md>)
 * [Getting Started with Tourpaq](<README (1).md>)
   * [What is Tourpaq?](tourpaq-manual/readme/what-is-tourpaq.md)
   * [First Login & Account Setup](tourpaq-manual/readme/first-login-and-account-setup.md)
@@ -22,12 +23,13 @@
 
 * [Booking overview](booking/booking-overview.md)
 * [All bookings](booking/all-bookings/README.md)
-  * [View all bookings](booking/all-bookings/view-all-bookings.md)
+  * [All bookings](booking/all-bookings/view-all-bookings.md)
   * [Statistics in All bookings](booking/all-bookings/statistic-in-all-bookings.md)
   * [All bookings Totals](booking/all-bookings/all-bookings-totals.md)
 * [New Booking](booking/new-booking/README.md)
   * [New Booking](booking/new-booking/new-booking/README.md)
-    * [New Booking search support](booking/new-booking/new-booking/new-booking-search-support.md)
+    * [New Booking search support](booking/new-booking/new-booking/new-booking-search-support/README.md)
+      * [Booking Search – Room Allocation Support](booking/new-booking/new-booking/new-booking-search-support/booking-search-room-allocation-support.md)
     * [Edit Passenger](booking/new-booking/new-booking/edit-passenger/README.md)
       * [Customer Data](booking/new-booking/new-booking/edit-passenger/customer-data.md)
     * [Transport Search Displays Departure Without Return Date (Known Limitation)](booking/new-booking/new-booking/transport-search-displays-departure-without-return-date-known-limitation.md)
@@ -78,6 +80,7 @@
     * [PNR Disconnect](gds-queue-place/submit-a-gds-booking/pnr-disconnect.md)
     * [Automatic ticket issue](gds-queue-place/submit-a-gds-booking/automatic-ticket-issue.md)
   * [GDS One way flight bookings](gds-queue-place/gds-one-way-flight-bookings.md)
+  * [Booking State Color – GDS Bookings](gds-queue-place/booking-state-color-gds-bookings.md)
 * [Offers](offers/README.md)
   * [Create new offer](offers/create-new-offer.md)
   * [Offer management and statistics](offers/offer-management-and-statistics.md)
@@ -87,6 +90,7 @@
   * [Customer offers automatic flow](offers/customer-offer-automatic-flow.md)
 * [Campaign Statistics](campaign-statistics.md)
 * [Live Offer Confirmation](live-offer-confirmation.md)
+* [Opera Integration (Tourpaq → PMS)](opera-integration-tourpaq-pms.md)
 
 ## Customer
 
@@ -118,7 +122,9 @@
 ## Finance
 
 * [Payment Registration](finance/payment-registration.md)
-* [Payment File Import](finance/payment-file-import.md)
+* [Payment File Import](finance/payment-file-import/README.md)
+  * [SkjernBank File Import Format](finance/payment-file-import/skjernbank-file-import-format.md)
+  * [Arbejdernes Bank Payment Integration (Danske & Syd Bank)](finance/payment-file-import/arbejdernes-bank-payment-integration-danske-and-syd-bank.md)
 * [Refund File Import](finance/refund-file-import.md)
 * [Method of Payment](finance/method-of-payment.md)
 
@@ -175,7 +181,8 @@
 * [Hotel creation](hotel/hotel-creation/README.md)
   * [Create using the wizard](hotel/hotel-creation/create-using-the-wizard.md)
   * [General tab](hotel/hotel-creation/general-tab.md)
-  * [Hotel allotments](hotel/hotel-creation/hotel-allotments.md)
+  * [Hotel allotments](hotel/hotel-creation/hotel-allotments/README.md)
+    * [Editable Board](hotel/hotel-creation/hotel-allotments/editable-board.md)
   * [Hotel allotment overview](hotel/hotel-creation/hotel-allotment-overview.md)
   * [Allotments per day](hotel/hotel-creation/allotments-per-day/README.md)
     * [Reserve rooms for stay lengths](hotel/hotel-creation/allotments-per-day/reserve-rooms-for-stay-lengths.md)
@@ -224,12 +231,13 @@
 * [Close Out](close-out/README.md)
   * [Create / Edit rule](close-out/create-edit-rule.md)
   * [Enable / Disable rule](close-out/enable-disable-rule.md)
+* [Releases/Stop Sales Log](releases-stop-sales-log.md)
 * [Layout Elements](layout-elements.md)
 * [Hotel Beds](hotel-beds/README.md)
   * [Hotel Bed Banks - FAQ](hotel-beds/hotel-bed-banks-faq.md)
 * [Hotel combination](hotel-combination.md)
 * [Hotel Contracts](hotel-contracts/README.md)
-  * [Hotel contract - General](hotel-contracts/hotel-contract-general.md)
+  * [Hotel contract - Contract Name](hotel-contracts/hotel-contract-contract-name.md)
   * [Rooms – Hotel Contract Configuration](hotel-contracts/rooms-hotel-contract-configuration.md)
   * [Periods – Hotel Contract Configuration](hotel-contracts/periods-hotel-contract-configuration.md)
   * [Board Supplements - Hotel Contract Configuration](hotel-contracts/board-supplements-hotel-contract-configuration.md)
@@ -294,6 +302,7 @@
   * [Setup for Transport Dynamic Packaging (GDS)](real-transports/setup-for-transport-dynamic-packaging-gds.md)
   * [Departures](real-transports/departures/README.md)
     * [Add Base Cost on Real Transports](real-transports/departures/add-base-cost-on-real-transports.md)
+    * [Add LAND-Days to Real Transports (Offset Handling)](real-transports/departures/add-land-days-to-real-transports-offset-handling.md)
   * [Passenger Information](real-transports/passenger-information.md)
   * [Notes](real-transports/notes.md)
 * [Real Transport Dashboard](real-transport-dashboard.md)
@@ -357,12 +366,16 @@
   * [User limited view](users/users/user-limited-view.md)
   * [Password expiration](users/users/password-expiration.md)
   * [Onboard a new employee (Tourpaq Office access)](users/users/onboard-a-new-employee-tourpaq-office-access.md)
+  * [Support User Role (GDPR Compliance)](users/users/support-user-role-gdpr-compliance.md)
 
 ***
 
 * [Brands](brands/README.md)
   * [How to add a new Brand](brands/how-to-add-a-new-brand.md)
-  * [General Settings](brands/general-settings.md)
+  * [General Settings](brands/general-settings/README.md)
+    * [Ticket V3 - Structure](brands/general-settings/ticket-v3-structure/README.md)
+      * [Ticket V3 - Ticket Customization](brands/general-settings/ticket-v3-structure/ticket-v3-ticket-customization.md)
+      * [Ticket V3 - Dynamic flights](brands/general-settings/ticket-v3-structure/ticket-v3-dynamic-flights.md)
   * [How to set Payment settings](brands/how-to-set-payment-settings.md)
   * [How to set GDS](brands/how-to-set-gds.md)
   * [How to set SMTP Settings](brands/how-to-set-smtp-settings.md)
@@ -455,6 +468,7 @@
   * [Board Type - Hotel allotment / Ticket](board-type/board-type-hotel-allotment-ticket.md)
   * [Board Type - Extra](board-type/board-type-extra.md)
   * [Board Type - Webboking](board-type/board-type-webboking.md)
+  * [Board Behaviour During Booking](board-type/board-behaviour-during-booking.md)
 
 ## Email Setup
 
@@ -511,7 +525,8 @@
 * [System Setup Groups](setup/system-setup-groups.md)
 * [Web Customer Center](setup/web-customer-center.md)
 * [Creditor Currency Converter](setup/creditor-currency-convertor.md)
-* [Internal logs](setup/internal-logs.md)
+* [Internal logs](setup/internal-logs/README.md)
+  * [Insurance Payload Log (Gouda & Europæiske)](setup/internal-logs/insurance-payload-log-gouda-and-europaeiske.md)
 * [Transport Stay Days](setup/transport-stay-days.md)
 * [Global search](setup/global-search.md)
 * [Tourpaq Web Booking - Technical documentation](setup/tourpaq-web-booking-technical-documentation.md)

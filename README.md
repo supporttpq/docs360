@@ -1,99 +1,117 @@
 ---
-description: Your complete reference guide for the Tourpaq Travel Management System.
+description: Recent Tourpaq releases, fixes, improvements, and documentation updates.
 noIndex: true
+icon: burst-new
 ---
 
-# Welcome to the Tourpaq Manual
+# What's new
+
+This page tracks recent Tourpaq releases and documentation updates.
+
+It complements [Welcome to the Tourpaq Manual](<README (2).md>) and [Getting Started with Tourpaq](<README (1).md>) by showing what changed most recently.
 
 ### Overview
 
-This manual covers everything you need to use, configure, and manage the **Tourpaq platform** — from creating your first booking to configuring advanced pricing rules, integrations, and exports.
+Recent changes are grouped by monthly version.
 
-Whether you're a booking agent handling daily reservations, a system administrator setting up the platform, or a finance manager tracking payments and profitability, this manual has a dedicated section for you.
+Each entry shows whether the update is new, changed, improved, fixed, breaking, or documentation-only.
 
-{% hint style="info" %}
-**New to Tourpaq?** Start with the [Getting Started](https://manual.tourpaq.com/getting-started) section. It takes about 15 minutes and will give you a solid foundation before diving into any specific module.
-{% endhint %}
+### Purpose
 
-***
+This page gives new employees and existing teams one place to review recent Tourpaq changes.
 
-### What is Tourpaq?
+It also links each release item to the relevant manual page for full details.
 
-**Tourpaq** is a travel management platform built specifically for **tour operators**. It provides an integrated environment for managing the full lifecycle of a travel product:
+### Navigation
 
-| Stage              | What Tourpaq helps you do                                             |
-| ------------------ | --------------------------------------------------------------------- |
-| 🏗️ **Setup**      | Configure hotels, transports, price lists, and brands                 |
-| 📋 **Sell**        | Create bookings, send offers, and manage customers                    |
-| 💰 **Finance**     | Register payments, issue invoices, and track profitability            |
-| 📤 **Operate**     | Export rooming lists, passenger manifests, and supplier confirmations |
-| 📊 **Analyse**     | Monitor sales performance, service cases, and quality metrics         |
-| 📧 **Communicate** | Send automated and manual emails and SMS to customers and suppliers   |
+This page is placed at the top of the manual sidebar.
 
-***
+The newest month appears first.
 
-### How to use this manual
+### Interface overview
 
-The manual is organised to follow the **Tourpaq sidebar** — the same menu you see in the application. Each page documents a specific screen, module, or feature and follows a consistent structure:
+Each monthly release section includes:
 
-* **Overview** — what the feature is, explained in plain language
-* **Purpose** — why it exists and who uses it
-* **Preconditions** — what needs to be in place before you use it
-* **How-to** — step-by-step instructions
-* **Field Reference** — every field, button, and option explained
-* **FAQ** — answers to the most common questions
+* a monthly version label
+* a release symbol
+* a short summary
+* a link to the relevant page
 
-Use the **sidebar** on the left to navigate between sections, or press **`Ctrl + K`** (Windows) / **`⌘ + K`** (Mac) to search across the entire manual.
+### How versioning works
 
-***
+Tourpaq releases follow a date-based versioning model (`YYYY-MM`).
 
-### What's in this manual?
+There are no major or minor version numbers.
 
-| Section                                                                           | What it covers                                                          |
-| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| 🚀 [Getting Started](https://manual.tourpaq.com/getting-started)                  | First login, key concepts, system navigation, role-based learning paths |
-| 📊 [Dashboard](https://manual.tourpaq.com/dashboard/dashboard)                    | Sales overview, widgets, filters, and KPI explanations                  |
-| 🔔 [Notifications](https://manual.tourpaq.com/notifications/notification)         | System alerts and notification management                               |
-| 📋 [Booking](https://manual.tourpaq.com/booking/all-bookings)                     | Creating, editing, and managing all booking types                       |
-| 👤 [Customer](https://manual.tourpaq.com/customer/customers)                      | Customer profiles, merging, and errata                                  |
-| 🎫 [Tickets](https://manual.tourpaq.com/tickets/print-tickets)                    | E-tickets, print tickets, and SMS overview                              |
-| 💰 [Finance](https://manual.tourpaq.com/finance/payment-registration)             | Payments, refunds, invoices, and autobilling                            |
-| 🏷️ [Price List](https://manual.tourpaq.com/price-list/pricelist)                 | Pricing setup, rules, generators, and margin control                    |
-| 🏨 [Hotel](https://manual.tourpaq.com/hotel/hotels)                               | Hotel setup, contracts, availability, and room management               |
-| ✈️ [Transport](https://manual.tourpaq.com/transport/all-transports)               | Flights, routes, seating, and transport rules                           |
-| ✅ [Quality](https://manual.tourpaq.com/quality/quality-management)                | Service cases and quality management                                    |
-| 📤 [Export](https://manual.tourpaq.com/export-1/export)                           | All export types and list configurations                                |
-| 👥 [Users](https://manual.tourpaq.com/users/users)                                | User roles, brands, suppliers, and security                             |
-| 🌍 [Guest App](https://manual.tourpaq.com/guest-app/destination-mobile-guide-app) | Mobile destination guide content management                             |
-| ⚙️ [Extras Setup](https://manual.tourpaq.com/extras-setup/extras)                 | Extras, insurance, discounts, and campaigns                             |
-| 📧 [Email Setup](https://manual.tourpaq.com/email-setup/e-mail-center)            | Email and SMS templates and automation                                  |
-| 🔧 [Setup](https://manual.tourpaq.com/setup/system-setup)                         | System configuration, gateways, currencies, and integrations            |
-| 📖 [Glossary](https://manual.tourpaq.com/glossary)                                | Definitions of all Tourpaq-specific terms                               |
-| 🛠️ [Troubleshooting](https://manual.tourpaq.com/troubleshooting)                 | Common issues and how to resolve them                                   |
+Updates are deployed continuously and documented here as they go live.
 
-***
+### Release symbols
 
-### Who is this manual for?
+* 🟡 **Changed** — Behaviour of an existing feature has changed.
+* 🟢 **New** — New feature or page added.
+* 🔵 **Improved** — Enhancement / Update to an existing feature.
+* ⚪ **Fixed** — Bug fix or correction.
+* 📄 **Docs** — Documentation added or updated with no product change.
 
-| Role                            | Recommended starting point                                                                                                                                                                             |
-| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 🧑‍💼 **Booking Agent**         | [Getting Started → Learning Path](https://manual.tourpaq.com/getting-started/learning-path) → [New Booking](https://manual.tourpaq.com/booking/new-booking)                                            |
-| ⚙️ **System Administrator**     | [Getting Started → Learning Path](https://manual.tourpaq.com/getting-started/learning-path) → [Users](https://manual.tourpaq.com/users/users) → [Setup](https://manual.tourpaq.com/setup/system-setup) |
-| 💰 **Finance / Accounting**     | [Getting Started → Learning Path](https://manual.tourpaq.com/getting-started/learning-path) → [Finance](https://manual.tourpaq.com/finance/payment-registration)                                       |
-| 🏨 **Hotel Manager / Supplier** | [Getting Started → Learning Path](https://manual.tourpaq.com/getting-started/learning-path) → [Hotel](https://manual.tourpaq.com/hotel/hotels)                                                         |
+### Recent release history
 
-***
+{% updates format="full" %}
+{% update date="2026-04-27" %}
+## 2026-04 (Documentation updates)
 
-### Need help?
+* 📄 **What's new** was added to track recent Tourpaq releases and documentation updates. See [What's new](./).
+* 📄 **Price List** was updated with clearer search behavior, display logic, and bulk pricing guidance. See [Price List](price-list/pricelist.md).
+* 📄 **Allotments** was updated with manual allotments, linked-to-transport allotments, and generic allotment guidance for Extras. See [Allotments](extras-setup/extras/allotments.md).
+* 📄 **Print Tickets** was updated with clearer single-booking and bulk reprint workflows. See [Print Tickets](tickets/print-tickets.md).
+* 📄 **Autobilling** was updated with prerequisites, invoice generation flow, lifecycle states, and troubleshooting. See [Autobilling](autobilling/).
+* 🟢 Editable board hotel allotment. See [Hotel Allotment](hotel/hotel-creation/hotel-allotments/editable-board.md).
+* 🟢 Log for Gouda & Europeiske insurance. See [Internal Logs](setup/internal-logs/insurance-payload-log-gouda-and-europaeiske.md).
+* 🟢 Land days to Real Transports. [See Real Transport - Departures](real-transports/departures/add-land-days-to-real-transports-offset-handling.md).
+* 🟢 Releases/Stop Sales Log. See [Releases/Stop Sales Log](releases-stop-sales-log.md).
+* 🟢 Support user role. See [Users - Support User Role](users/users/support-user-role-gdpr-compliance.md)
+* 🟢 Payment file import/File import format. See [File import format](finance/payment-file-import/skjernbank-file-import-format.md).
+* 🔵 Hotel Release reporting. See [Hotel release - Reporting](hotel/hotel-creation/releases/hotel-release-reporting.md).
+* 🔵 Remove GMT Offset. See [Arrival Gateway](setup/arrival-gateways/) & [Departure Gateway](setup/departure-gateways/).&#x20;
+* 🔵 Improvement to the new price list. See [Price List](price-list/pricelist.md#price-list-search).
+* 🔵 Add code/name where missing in fields/tables. See [Special Offers](special-offers.md) & [Flight change](flight-change/).
+* 🔵 Rounding on Extras & Discount/Supplements. See the [Extras Category](extras-category/) & [Discounts/Supplements Categories](disc-suppl-categories.md).
+* 🔵 Add a new Room Types filter in All bookings. See [All Bookings](booking/all-bookings/).
+* 🔵 Display Bookings and Total Pax for guide/guidemaster users in All Bookings. See [All Bookings](booking/all-bookings/).
+* 🔵 Payment registration new filtering. See [Payment registration](finance/payment-registration.md).
+{% endupdate %}
 
-| Channel                 | Details                                                           |
-| ----------------------- | ----------------------------------------------------------------- |
-| 📧 **Email Support**    | [support@tourpaq.com](mailto:support@tourpaq.com)                 |
-| 🌐 **Tourpaq Website**  | [tourpaq.com](https://www.tourpaq.com)                            |
-| 🛠️ **Troubleshooting** | [Troubleshooting Hub](https://manual.tourpaq.com/troubleshooting) |
+{% update date="2026-03-17" tags="tourpaq-v15.0" %}
+## 2026-03 (Tourpaq v15.0)
 
-***
+* 🟢 **Transport Rules** added automatic extension support for transport rules. See [Edit Transport Rule](transport-rules/edit-transport-rule.md).
+* 🔵 **Hotel release automation** now flags unused allotments as **Suitable for release** and emails suppliers automatically. See [Hotel release - automation](hotel/hotel-creation/releases/hotel-release-automation.md).
+* 🔵 **Transport Rule Weekdays Support** adds weekday-based generation for transport rules that use two external providers. See [Transport Rule Weekdays Support](transport-rules/transport-rule-weekdays-support.md).
+* 🔵 **Hotel release rules** were expanded with clearer day-level release logic, release-status recalculation, and editable past-date handling. See [Releases](hotel/hotel-creation/releases/).
+* 📄 **Onboard a new employee (Tourpaq Office access)** was added to support user creation, role assignment, brand scope, and security setup. See [Onboard a new employee (Tourpaq Office access)](users/users/onboard-a-new-employee-tourpaq-office-access.md).
+* 📄 A known transport-search edge case is now documented: departures can appear without a valid return date in specific rule-extension scenarios. See [Transport Search Displays Departure Without Return Date (Known Limitation)](booking/new-booking/new-booking/transport-search-displays-departure-without-return-date-known-limitation.md).
+{% endupdate %}
 
-{% hint style="success" %}
-**Ready to begin?** Head to [Getting Started](https://manual.tourpaq.com/getting-started) if you're new, or use the sidebar to jump straight to the module you need.&#x20;
-{% endhint %}
+{% update date="2026-02-03" %}
+## 2026-02 (Tourpaq v14.9)
+
+* 🟢 **Automatic ticket issue** was added for Amadeus GDS bookings, including deadline-based daily ticketing for eligible paid reservations. See [Automatic ticket issue](gds-queue-place/submit-a-gds-booking/automatic-ticket-issue.md).
+* 🟢 **Individual payments** was added, allowing separate payment links per passenger on the same booking. See [Individual payments](booking/new-booking/individual-payments.md).
+* 🟢 **QR code for vouchers** was added for faster voucher lookup and on-site validation. See [QR code for vouchers](booking/new-booking/qr-code-for-vouchers.md).
+* 🔵 **Keep automatic discount prices** improves booking-edit handling by making price lock vs reprice behavior explicit for discounts, extras, and travel insurance. See [Keep automatic discount prices](booking/new-booking/keep-automatic-discounts-prices.md).
+* 🔵 **No-show handling** was clarified for both transport reporting and export lists, improving operational consistency for outbound and homebound removals. See [Remove pax on outbound or homebound only, Transport Reporting Impact](booking/new-booking/remove-pax-on-outbound-or-homebound-only/remove-pax-on-outbound-or-homebound-only-transport-reporting-impact.md) and [Remove pax on outbound or homebound only, Export lists impact](booking/new-booking/remove-pax-on-outbound-or-homebound-only/remove-pax-on-outbound-or-homebound-only-export-lists-impact.md).
+* 🔵 **Customer details on customer card** improves in-booking customer maintenance by saving reusable customer details directly from the booking flow. See [Customer info / Details on customer card](booking/new-booking/customer-info-details-on-customer-card.md).
+* 📄 Ticket errata placement across ticket versions is now documented. See [Customer Information displayed on the Ticket](customer-information-errata/customer-information-displayed-on-the-ticket.md).
+{% endupdate %}
+{% endupdates %}
+
+### Example
+
+A release entry marked **🟢 New** means a new feature or workflow became available in that month.
+
+A release entry marked **📄 Docs** means the manual changed, but the product behavior did not.
+
+### Related pages
+
+* [Welcome to the Tourpaq Manual](<README (2).md>)
+* [Getting Started with Tourpaq](<README (1).md>)
+* [Onboard a new employee (Tourpaq Office access)](users/users/onboard-a-new-employee-tourpaq-office-access.md)

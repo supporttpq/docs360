@@ -12,7 +12,7 @@ This helps financial tracking and forecasting. It also supports more accurate se
 
 ### Screenshot
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (793).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -43,7 +43,6 @@ Before you set up a payment plan:
 | **Payback Date** | Optional date for when the payment is returned or reconciled.                                                      |
 | **Tot Amount**   | Amount for this payment milestone, in the contract currency. This is input manually or pulled from contract terms. |
 | **Currency**     | Currency used for the payment. This is typically fixed per contract.                                               |
-| **Year**         | Year used to group payment plans in the **Hotel Contract export**.                                                 |
 
 ***
 
@@ -90,7 +89,7 @@ If you change payment plans on an active contract, align with finance first. It 
 
 ### Related workflows
 
-* [Hotel contract - General](hotel-contract-general.md)
+* [Hotel contract - General](hotel-contract-contract-name.md)
 * [Rooms – Hotel Contract Configuration](rooms-hotel-contract-configuration.md)
 * [Periods – Hotel Contract Configuration](periods-hotel-contract-configuration.md)
 

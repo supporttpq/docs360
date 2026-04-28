@@ -29,6 +29,8 @@ Before configuring early booking discounts:
 
 ### Fields
 
+<figure><img src="../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
 | Field                   | Description                                                                                                                                                                    |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Cost Discount**       | Discount amount. Use a fixed value (for example `50`) or a percentage (when **%** is checked).                                                                                 |
@@ -98,7 +100,7 @@ If you want Early Booking to stack with Stay & Pay, ensure both the rule and the
 
 ### Related workflows
 
-* [Hotel contract - General](hotel-contract-general.md)
+* [Hotel contract - General](hotel-contract-contract-name.md)
 * [Rooms – Hotel Contract Configuration](rooms-hotel-contract-configuration.md)
 * [Periods – Hotel Contract Configuration](periods-hotel-contract-configuration.md)
 * [Stay & Pay - Hotel Contract Configuration](stay-and-pay-hotel-contract-configuration.md)

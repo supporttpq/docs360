@@ -17,7 +17,7 @@ Setup → Destinations → Departure Gateways → Create
 
 ### Required Fields
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 IATA Code - Three-letter airport code, for example OSL, ARN, CPH. Must be unique in the system. Used in flight matching and integrations.
 
@@ -40,10 +40,6 @@ Latitude / Longitude - Geographical coordinates of the airport.
 
 Internet (Checkbox) - If enabled Departure gateway is available for online booking.
 
-GMT Offset - Standard time offset from UTC.
-
-GMT Offset Summertime - Offset during daylight saving time.
-
 These values must correspond with the selected timezone.
 
 URL Alias - Used for web routing or SEO friendly URLs if applicable. Optional unless required by web configuration.&#x20;
@@ -59,7 +55,6 @@ When saved:
 
 ### Best Practice
 
-* Always verify timezone and GMT offsets
 * Use official IATA codes
 * Add coordinates if transfer calculations depend on distance
 * Keep naming consistent with airline standards

@@ -47,7 +47,7 @@ You can **only create booking payments** in Payment Registration. **Guide paymen
 
 * You must be logged in with the required permissions (typically **Financial** or **Administrator**)
 * To register a payment, you need the **booking number/reference** and the **amount**
-* If you need to import many bank payments, use [Payment File Import](payment-file-import.md)
+* If you need to import many bank payments, use [Payment File Import](payment-file-import/)
 * If you need to import many refunds, use [Refund File Import](refund-file-import.md)
 * If a payment method is missing, check [Method of Payment](method-of-payment.md)
 
@@ -55,17 +55,17 @@ You can **only create booking payments** in Payment Registration. **Guide paymen
 
 ### View and filter payments
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (14).png" alt="Payment Registration filters and results"><figcaption><p>Filter payment records and review results in Payment Registration.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (49).png" alt="Payment Registration filters and results"><figcaption><p>Filter payment records and review results in Payment Registration.</p></figcaption></figure>
 
 1. Set **Payment start date** and **Payment end date**.
 2. (Optional) Set **Departure start date** and/or **Departure end date**.
 3. (Optional) Select a **Payment method** (for example `CARD`, `CASHIN`, `BANKIN`, `GIFT`).
 4. (Optional) Use additional filters such as:
    * **Debit/Credit**
-   * **Payment purpose** (for example _All Payments_ or _Booking Only_)
-   * **Guide**
-   * **Transport**
-   * **GiftCard No**
+   * **Payment for** (it can be choose: _All Payments,_ _Booking Only, Extra Orders only or Gift Card only_)
+   * **Guide** (select All guides or one specific guide)
+   * **Transport** (select All transports or one specific transport)
+   * **Gift Card No** (search for a specific gift card number)
    * **Booking reference/number**
 5. Click **Display** to load the results.
 
@@ -106,7 +106,7 @@ This shows payments made between `26.03.2025` and `31.03.2025` for bookings depa
 
 ### Register a new booking payment
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Create payment form"><figcaption><p>Create a manual booking payment with method, date, booking reference, and amount.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (1).png" alt="Create payment form"><figcaption><p>Create a manual booking payment with method, date, booking reference, and amount.</p></figcaption></figure>
 
 {% stepper %}
 {% step %}
@@ -179,7 +179,7 @@ If you’re unsure, confirm with your finance setup.
 
 After a successful import, they appear in this list.
 
-See [Payment File Import](payment-file-import.md).
+See [Payment File Import](payment-file-import/).
 
 #### 6. A payment method is missing from the dropdown—what should I do?
 

@@ -72,7 +72,7 @@ This tells the reader to open the contract in Tourpaq to view the Notes.
 
 ### Related workflows
 
-* [Hotel contract - General](hotel-contract-general.md): Where you create and maintain the full contract.
+* [Hotel contract - General](hotel-contract-contract-name.md): Where you create and maintain the full contract.
 * [Periods – Hotel Contract Configuration](periods-hotel-contract-configuration.md): Also contains internal-only Notes (but period-specific).
 
 ***

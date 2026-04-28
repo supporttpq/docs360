@@ -48,16 +48,20 @@ Defines **when** the template can be used.
 
 Available options:
 
-* **Order**: general booking or order messages.
-* **Excursion**: excursion-related messages.
-* **Arrival**: arrival-day info, welcome messages, and practical details.
-* **Hotel**: hotel messages, like check-in info or reminders.
-* **Resort**: destination or resort-wide messages.
-* **Pending payment notification**: reminders for unpaid or partly paid bookings.
-* **Cancel order**: messages when an order is cancelled.
-* **Flight Change**: flight schedule change messages.
+* **Order**: General booking or order messages. SMS is sent when you book an extra order.
+* **Excursion**: Excursion-related messages. SMS is sent from Guide APP > SMS > Excursion.
+* **Arrival**: Arrival-day info, welcome messages, and practical details. SMS is sent from Guide APP > SMS > Arrival (will filter the bookings by arrival date).
+* **Hotel**: Hotel messages, like check-in info or reminders. SMS is sent from Guide APP > SMS > Hotel.
+* **Resort**: Destination or resort-wide messages. SMS is sent from Guide APP > SMS > Resort.
+* **Pending payment notification**: Reminders for unpaid or partly paid bookings. If the extra order payment is not confirmed, the payment provider will send the transaction back to 'in pending' status, and the customer will receive this SMS.
+* **Cancel order**: SMS is sent when you cancel an extra order.
+* **Flight Change**: SMS is sent when the transport has a flight schedule change.
 
-The selected value determines where the template is available and which triggers can use it.
+The templates for Hotel, Excursion, Arrival and Resort (Called 'Destination' in the Guide APP) are displayed like this in the Guide APP.
+
+<br>
+
+<figure><img src=".gitbook/assets/image (5) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### FAQ
 

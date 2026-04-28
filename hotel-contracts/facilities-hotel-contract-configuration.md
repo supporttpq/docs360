@@ -8,7 +8,7 @@ Facilities are typically used for on-screen display and supplier/customer-facing
 
 ### Screenshot
 
-<figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -57,7 +57,7 @@ Save after changing the template. This applies the facilities to the contract.
 
 ### Related workflows
 
-* [Hotel contract - General](hotel-contract-general.md)
+* [Hotel contract - General](hotel-contract-contract-name.md)
 * [Actions - Hotel Contract Configurations](actions-hotel-contract-configurations.md) (includes reimport options for Facilities)
 
 ***

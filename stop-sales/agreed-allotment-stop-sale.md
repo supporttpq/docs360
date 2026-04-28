@@ -76,19 +76,19 @@ After you save, verify the same hotel, room, and date range in these places:
   * The log should reflect the agreed allotment adjustment.
   * `Final r.No` should increase by the agreed allotment compared to `Initial r.No`.
 
-<figure><img src="../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Hotel → Allotment per Day**
   * Filter on the same room and dates.
   * You should see the reopened capacity reflected in allotment.
 
-<figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Pricelist**
   * Filter by hotel, room type, and dates.
   * `FHA` (free-hotel-allotment) should reflect the reopened rooms minus bookings.
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### FAQ
 

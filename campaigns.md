@@ -105,58 +105,93 @@ Display names - when checked will display the names of the products, rooms, hote
   * Per extra
   * Per room
 * Requirements:
-  * Age (from-to): insert the age interval of the passengers elligible for the discount (2-12; 15-20)
-  * Rank (from-to): insert the passengers that will acctually receive the discount (if the rank is set 3-4, only the 3rd and 4th passengers that have the required age will receive the discount)
+  * Age (from-to): insert the age interval of the passengers eligible for the discount (2-12; 15-20)
+  * Rank (from-to): insert the passengers that will actually receive the discount (if the rank is set 3-4, only the 3rd and 4th passengers that have the required age will receive the discount)&#x20;
   * Select supplement: select the supplement (only for per supplement discounts)
-* Interval 1-4: for each trip period 3 discount rules can be inserted:
-  * % (percentage): the passenger will receive a discount based on a percentage of the Room price
-  * Discount: the passenger will receive a fixed amount as a discount
-  * Fixed price: the passenger will pay a fixed amount, regardless of the room price (Room price - fixed price = discount)
+  * Interval 1-4: for each trip period 3 discount rules can be inserted:
+    * % (percentage): the passenger will receive a discount based on a percentage of the Room price
+      * Discount: the passenger will receive a fixed amount as a discount
+      * Fixed price: the passenger will pay a fixed amount, regardless of the room price (Room price - fixed price = discount)
 
-Note: A discount line cannot have more than 1 rule for each interval (if percentage has been decided for the first interval, fixed price and discount rules cannot be used anymore for that interval and line) All intervals must be filled.
+{% hint style="warning" %}
+If the Rank is set from 0 to 0, then the campaign will not apply to any passenger
+{% endhint %}
+
+{% hint style="info" %}
+A discount line cannot have more than 1 rule for each interval (if a percentage has been decided for the first interval, fixed price and discount rules cannot be used anymore for that interval and line) All intervals must be filled.
+{% endhint %}
 
 ### Discount Calculation
 
-* **Per booking discount**
+#### Navigation
 
-Only the first passenger receives the discount according to the requirements set
+`Extras Setup → Campaigns → Discount Calculation`
 
-* **Per person Adult discount**
+<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Adult passengers receive discounts according to the requirements set
-
-* **Per person Child discount**
-
-Child passengers receive discounts according to the requirements set
-
-* **Per extra**
-
-All passengers receive discounts according to the requirements set.
+* **Per booking discount:** Only the first passenger receives the discount according to the requirements set
+* **Per person Adult discount:** Adult passengers receive discounts. The passenger is set to MR/MRS in the booking.
+* **Per person Child discount:** Child passengers receive discounts. The passenger is set to CHILD in the booking.
+* **Per extra:** All passengers receive discounts for the eligible and selected extras.
 
 The extra percentage discount is calculated as a percentage from the total price of the extras available in the campaign for the passenger.
 
 The extra discount gives the inserted amount as a discount regardless of the total price of the extras.
 
-The fixed price discount gives discounts depending on the total price of the extra:
+The fixed price discount gives discounts depending on the total price of the extras:
 
-* If the inserted amount is greater than the total price of the extra, the discount will be the total price of the extra.
-* If the inserted amount is lower than the total price of the extra, the discount will be the difference between the total price of the extra and the inserted amount.
+&#x20;      \- If the inserted amount is greater than the total price of the extra, the discount will be the total price of the extra.
 
+&#x20;     \- If the inserted amount is lower than the total price of the extra, the discount will be the difference between the total price of the extra and the inserted amount.
 
-
-* **Per room discount**
-
-First passengers in the room receive discounts according to the requirements set. The rank refers to the room, and not the passenger.
+* **Per room discount:** First passengers in the room receive discounts according to the requirements set. The rank refers to the room, and not the passenger.
 
 A campaign setup should look like this (this is an example, as the campaign can be setup in many ways, depending on the needs):
 
 <figure><img src=".gitbook/assets/image (21) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
+* **Per Person Adult age from the hotel:** Adult passengers receive discounts. Adult age based on age larger than the "Child price age" from the hotel; fallback is the agency Max child age.
+* **Per Person Child age from the hotel:** Child passengers receive discounts. Child age based on the "Child price age" from the hotel; fallback is the agency's max child age.
+
+{% hint style="info" %}
+If there are multiple discounts that are valid for a passenger, then the first one in the list is applied.
+{% endhint %}
+
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+#### Examples
+
+#### Case 1: 2+1 (Child above hotel age)
+
+**Current**
+
+* Pricing: treated as ADT ✅
+* Discounts: treated as CHD ❌
+
+**Expected**
+
+* Passenger treated as **ADT everywhere**
+* Discounts/Supplements applied using **ADT logic**
+
+***
+
+#### Case 2: 1+1 (Child age 11, but full-paying)
+
+**Current**
+
+* Pricing: treated as ADT ✅
+* Discounts: only ADT gets a discount ❌
+
+**Expected**
+
+* Both passengers were treated as **ADT**
+* Both receive the **ADT discount**
+
 ### Discount Limit <a href="#discount-limit" id="discount-limit"></a>
 
 There are 2 types of discount limits
 
-* Per Booking - Discount amount given to all pax on the booking will not be greater then the set value
+* Per Booking - Discount amount given to all pax on the booking will not be greater than the set value
 * Per Pax - Discount amount given to a pax will not be greater then the set value
 
 They can be used separately or combined.
@@ -173,14 +208,14 @@ More than one product can be selected.
 
 The user will receive the discount after inserting the code and selecting the product the discount will apply to.
 
-When selecting the product for which the discount will be applied, the product will also be selected automatically, both in office and webbooking.
+When selecting the product for which the discount will be applied, the product will also be selected automatically, both in the office and web booking.
 
 The only exception is the seating product:
 
-* In office you will need to first select the seating, save the booking and after that insert the code and select the benefit.
-* In webbooking you will need to insert the code, select the product for the discount, then select the seating in transport layout pop-up.
+* In the office, you will need to first select the seating, save the booking, and after that insert the code and select the benefit.
+* In web booking, you will need to insert the code, select the product for the discount, then select the seating in transport layout pop-up.
 
-**Special cases regarding combination of campaign features**
+**Special cases regarding the combination of campaign features**
 
 Combining some features of the campaign will result in various behaviours as explained below.
 
@@ -194,13 +229,13 @@ Combining some features of the campaign will result in various behaviours as exp
 * +Add one to each "x" pax = all campaign discounts are removed from the booking if the extra is removed from any pax
 * Per adult / Per Child discount
 * +basic extra = discount is removed only if the extra is removed from the first pax of the booking
-* +Add to basic price = if the extra is removed from a pax, then that pax will loose the discount
+* +Add to basic price = if the extra is removed from a pax, then that pax will lose the discount
 * +Add only one per room = all campaign discounts are removed from the booking if the extra is removed from any pax
 * +Add only to lead pax = all campaign discounts are removed from the booking if the extra is removed from lead pax
 * +Add one to each "x" pax = all campaign discounts are removed from the booking if the extra is removed from any pax
 * Pr extra
 
-1.Select all
+1\. Select all
 
 a) basic - discount is removed from pax
 
@@ -261,7 +296,9 @@ Campaign can be used in bookings like any other bonus code.
 
 After the allotment has been taken and the passenger details have been set, the Campaign code can be inserted into the Bonus code case.
 
-!!!Please note that the extras selected may be overwriten by the extras assigned to the campaign.
+{% hint style="warning" %}
+Please note that the extras selected may be overwritten by the extras assigned to the campaign.
+{% endhint %}
 
 After the bonus code has been entered, click outside of the Bonus code case to validate the campaign code, if the code is valid it will remain in the case.
 

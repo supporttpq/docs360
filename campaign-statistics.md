@@ -80,7 +80,7 @@ Each campaign row includes a **"View"** button:
 * Opens a **detailed analytics page** for that specific campaign.
 * Allows further breakdown by destination, customer segment, channel, and more.
 
-<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (6).png" alt="Campaign table view with View button per campaign row."><figcaption><p>Campaign table with per-campaign drill-down via <strong>View</strong>.</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (17).png" alt="Campaign table view with View button per campaign row."><figcaption><p>Campaign table with per-campaign drill-down via <strong>View</strong>.</p></figcaption></figure>
 
 ### Conclusion
 

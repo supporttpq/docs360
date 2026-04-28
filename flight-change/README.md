@@ -63,14 +63,14 @@ The system provides a detailed **overview of destinations and flight changes**, 
 * Reduces **manual workload** by automating detection, notification, and follow-up processes.
 * Enables **efficient tracking and intervention** when guests fail to confirm flight changes.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (737).png" alt=""><figcaption></figcaption></figure>
 
 ### Filter Section (Top Panel)
 
 | **Filter Field**               | **Description**                                                             |
 | ------------------------------ | --------------------------------------------------------------------------- |
-| **Departure Gateway**          | Filters by the airport where the flight or transport segment departs.       |
-| **Arrival Gateway**            | Filters by the airport where the flight arrives.                            |
+| **Departure**                  | Filters by the airport where the flight or transport segment departs.       |
+| **Arrival**                    | Filters by the airport where the flight arrives.                            |
 | **Flight No.**                 | Filters changes related to a specific flight number.                        |
 | **Type of Change**             | Filters by the type of schedule change (e.g., later, earlier, large, tiny). |
 | **Status**                     | Filters by the system status: _Queued_, _Sent_, _Resent First_, etc.        |

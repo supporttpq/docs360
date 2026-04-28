@@ -17,7 +17,7 @@ System implementations should accommodate these variations to ensure accurate ha
 
 The **Board Types** section allows system administrators or product managers to configure and maintain the list of board types available in the system. These types are used to define the meal and service options associated with a room booking at a hotel.
 
-<figure><img src="../.gitbook/assets/image (16) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Overview
 
@@ -25,17 +25,18 @@ Board Types represent different service packages offered by hotels. These may in
 
 ### UI Elements
 
-| Column       | Description                                                  |
-| ------------ | ------------------------------------------------------------ |
-| **Name**     | Display name of the board type, shown in system  (mandatory) |
-| **Code**     | Unique system identifier (mandatory).                        |
-| **ListName** | Label displayed in selection lists (mandatory)               |
-| **HTMLText** | Optional. Can store HTML-formatted content for rich display. |
+| Column       | Description                                                                                                                                                                                    |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Name**     | Display name of the board type, shown in system  (mandatory)                                                                                                                                   |
+| **Code**     | Unique system identifier (mandatory).                                                                                                                                                          |
+| **ListName** | Label displayed in selection lists (mandatory)                                                                                                                                                 |
+| **Order**    | <p>The order of Board types is used when the system must automatically downgrade or upgrade a board type.<br>The topmost board type will be considered the highest order (most expensive).</p> |
 
 ### Actions
 
 * **Create**: Click the `Create` button (top right) to add a new board type. You will need to provide values for at least the `Name, Code and ListName` fields.
 * **Delete**: Use the trash icon next to a board type to remove it. Deletion is only possible if the board type is not referenced in existing contracts or configurations.
+* **Ordering:** The order of Board types is used when the system automatically downgrades or upgrades a board type.
 
 ### Use in System
 

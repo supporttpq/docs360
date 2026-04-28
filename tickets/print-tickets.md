@@ -89,7 +89,7 @@ Select the options that match your task:
 {% endstep %}
 
 {% step %}
-#### 3) Generate / send
+#### 3) Generate/send
 
 Complete the action using the page’s button(s). Tourpaq generates the ticket PDF from the booking’s current data.
 

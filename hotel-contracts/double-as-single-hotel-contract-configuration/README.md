@@ -6,7 +6,7 @@ The **Double as Single** tab is used to define additional costs (or discounts) w
 
 ### Screenshot
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (19).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -73,7 +73,7 @@ It also shows period-based allotment and cost fields.
 
 ### Related workflows
 
-* [Hotel contract - General](../hotel-contract-general.md)
+* [Hotel contract - General](../hotel-contract-contract-name.md)
 * [Rooms – Hotel Contract Configuration](../rooms-hotel-contract-configuration.md)
 * [Periods – Hotel Contract Configuration](../periods-hotel-contract-configuration.md)
 * [Board Basis Inheritance Rule](board-basis-inheritance-rule.md)

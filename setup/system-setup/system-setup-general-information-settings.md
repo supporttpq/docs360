@@ -23,13 +23,11 @@ Use these settings to:
 * Automate reminders, vouchers, and notifications.
 * Keep behavior consistent across brands and agencies.
 
-### Screenshot
-
-<figure><img src="../../.gitbook/assets/image (579).png" alt="General Information settings in System Setup"><figcaption><p>General Information settings</p></figcaption></figure>
-
 ### Available settings
 
 #### 1. Section: General Information (Left Column)
+
+<figure><img src="../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This section controls core financial logic, reminder timing, and export formats.
 
@@ -50,6 +48,8 @@ This section controls core financial logic, reminder timing, and export formats.
 | **Vouchers Generation**              | Number of days before departure when vouchers are generated.                                            |
 
 #### 2. Section: Settings (Right Column)
+
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This area contains global preferences, voucher display rules, and profit margin behavior.
 
@@ -85,12 +85,16 @@ This area contains global preferences, voucher display rules, and profit margin 
 | **Lock Managed by AvailPro hotels on booking**             | Managed by AvailPro hotels will be blocked from being changed on existing bookings.                                                                                                                           |
 | **Show Room prices on financial export for canceled pax**  | Financial export contains the room price when showing canceled pax with the cancellation fee.                                                                                                                 |
 | **Order extras in the booking window**                     | When checked, the Extras in the booking window will be sorted according to the "Category order booking" set in the Extras Category.                                                                           |
+| **Order extras on e-ticket**                               | When checked, the Extras in the e-ticket will be sorted according to the "Category order booking" set in the Extras Category. <mark style="color:red;">This is only supported on the ticket version 3.</mark> |
+| **Enable multiple cancellation insurance**                 | Enable multiple overlaping cancellation insurance per destination.                                                                                                                                            |
 | **Enable highlight rows on Booking**                       | Passengers' rows will be highlighted when selected.                                                                                                                                                           |
 | **Hotel Contract Logo**                                    | If a logo is selected, it will override the agency logo from the hotel contract.                                                                                                                              |
 | **Show customer chat on guide login**                      | If checked, the guides will have access to all the customer chat features on their login.                                                                                                                     |
 | **Enable new firebase credentials**                        | If checked, the chat and guest app Firebase credentials will be used for the new credential setup.                                                                                                            |
 
 #### 3. Section: Other Settings (Bottom Area)
+
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This section covers default age rules, offer follow-up defaults, and a few integrations.
 

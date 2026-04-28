@@ -236,3 +236,58 @@ Filters:
 * Departure Return Date
 * Arrivals
 * Resorts
+
+***
+
+### FAQ
+
+#### Which export should be used for airport-wide transfer planning?
+
+Use **Airport Plan Overview**.
+
+It gives a combined view of flights, seat usage, booked transfers, and resort distribution.
+
+#### Which export should be used for a transport operator?
+
+Use **Flight Transfer Order**.
+
+It focuses on operator-specific transfer details, bus data, and outbound or homebound flight information.
+
+#### Which export should be used to see passenger seating by bus?
+
+Use **Transfer Seating/Bus + Pax PDF/Excel**.
+
+It groups passengers by bus and includes booking, resort, hotel, and flight details.
+
+#### Which export should be used to review stop-based loading?
+
+Use **Transfer Seating/Bus + Stop PDF/Excel**.
+
+It groups the result by stops and assigned bookings.
+
+#### Why are passengers missing from a transfer export?
+
+Check the active filters first.
+
+The most common causes are **Arrivals**, **Resorts**, **Operators**, **Buses**, or the selected **Outbound/Homebound** direction.
+
+#### Why do some passengers appear without transfer allocation?
+
+Those passengers usually have a flight but no transfer extra booked.
+
+This is especially visible in airport planning and airport report outputs.
+
+#### When should PDF be used instead of Excel?
+
+Use PDF for printable operational handouts.
+
+Use Excel when sorting, filtering, or further analysis is needed.
+
+***
+
+### Related pages
+
+* [Flight Transfer](flight-transfer/) — Overview of flight transfer setup and linked transfer tools.
+* [Transfer listing](flight-transfer/transfer-listing.md) — Review transfer data in a list view before exporting.
+* [Flight Transfer List](flight-transfer/flight-transfer-list.md) — Work with transfer lists related to flight transfer operations.
+* [Lists](export-1/lists.md) — Export other operational booking lists from the Export module.

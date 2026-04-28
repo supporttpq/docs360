@@ -5,7 +5,7 @@
 The **TeeTime List** tool allows you to generate export files containing information about golf course bookings.\
 It is designed for reporting, analysis, and communication with golf course suppliers. You can filter bookings by supplier, period, and category, and export the results in Excel format.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -87,7 +87,6 @@ It is designed for reporting, analysis, and communication with golf course suppl
 | ---------------------- | ------------------------------------------------------------------------------------------ |
 | **Display all Extras** | Includes all extras linked to the bookings in the export.                                  |
 | **Compress as ZIP**    | Packages the exported Excel file into a ZIP archive. Useful when exporting large datasets. |
-| **Use old export**     | Enables the legacy export format (for compatibility with older systems).                   |
 
 ***
 
@@ -98,7 +97,7 @@ It is designed for reporting, analysis, and communication with golf course suppl
 * After setting all filters and options, click **Export** to generate the file.
 * The file will be downloaded automatically in **.XLS** format.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (37).png" alt=""><figcaption></figcaption></figure>
 
 The export file include the following columns:
 
@@ -113,8 +112,6 @@ The export file include the following columns:
 | ROUND                   | Round number                    |
 | REQUEST (Date & Time)   | Request time                    |
 | CONFIRMED (Date & Time) | Confirmed time                  |
-
-
 
 ***
 
@@ -134,3 +131,37 @@ The export file include the following columns:
 * The exported file can be shared with suppliers or used for performance tracking.
 * Always verify the selected date range before export to avoid incomplete data.
 * The **Edit** buttons allow full control of what is included in the final report.
+
+***
+
+### FAQ
+
+#### Which supplier should be selected when a report is needed for one golf course only?
+
+Select that specific supplier in **Supplier**.
+
+This limits the export to bookings linked to that golf course partner.
+
+#### What does **Display all Extras** do?
+
+It includes all extras that match the other active filters.
+
+Use it when golf-related services may be stored as separate extras.
+
+#### Why are expected golf bookings missing from the export?
+
+Check **Supplier**, **Arrival Period**, **Booking Period**, **Categories**, and **Extras** first.
+
+Missing rows are usually caused by filters that are too narrow.
+
+#### When should **Compress as ZIP** be used?
+
+Use it when the export file is large or must be sent by email.
+
+This reduces file size and helps avoid attachment limits.
+
+#### Can the exported columns be customized?
+
+Yes.
+
+Use **Columns for Export** to decide which fields appear in the output file.

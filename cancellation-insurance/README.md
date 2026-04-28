@@ -12,7 +12,7 @@ This feature allows travel companies to offer financial protection to customers 
 
 #### General Settings
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Brand**\* - Select the brand to which this cancellation insurance rule will apply. Mandatory field.
 
@@ -20,7 +20,7 @@ This feature allows travel companies to offer financial protection to customers 
 
 **Booking start**\* - Set the start date when the cancellation insurance becomes valid. Only bookings made after this date will be covered.
 
-**Booking end**\* - Set the end date after which the cancellation insurance will no longer apply.
+**Booking to**\* - Set the end date after which the cancellation insurance will no longer apply.
 
 **Type of rule -** Determines how the cancellation insurance is calculated.&#x20;
 
@@ -53,7 +53,7 @@ There are **four methods** available for setting the price of the cancellation i
 
 1.  **Related to basic price**&#x20;
 
-    <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     * The insurance fee is determined by the total amount the passenger pays for the trip.
     * Up to **four price ranges** can be defined.
@@ -62,21 +62,21 @@ There are **four methods** available for setting the price of the cancellation i
       * If it falls into the second range, a different fee is used, and so on.
 2.  **Related to lenght of travel**&#x20;
 
-    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * The insurance fee is determined by the length of the trip.
 * Up to **four duration ranges** can be defined, each with its own insurance fee.
 
 3.  **Based on Percentage of Basic Price**&#x20;
 
-    <figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * The fee is calculated as a **percentage** of the passenger’s total trip price.
 * Example: If the percentage is 5% and the trip price is €1000, the insurance fee will be €50.
 
 4. **Related to transport type**&#x20;
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * The insurance fee is determined by the **type of transport** selected for the booking (e.g., flight, bus, train).
 
@@ -107,3 +107,7 @@ To configure a Europeiske external cancellation insurance:
 * **Europe ID** – Identifies and maps the cancellation insurance product from Europeiske to the Tourpaq system.
 * **Name** – The name of the product as displayed in the web booking interface.
 * **Trip Type** – Specifies the type of trip (e.g., charter, dynamic package, or scheduled transport) for which the cancellation insurance applies.
+
+{% hint style="info" %}
+In order to be able to track the data sent via the API, there is a log for the data sent to Gouda and Europæiske (travel insurance and cancellation), These logs can be checked in the [Internal Logs](../setup/internal-logs/insurance-payload-log-gouda-and-europaeiske.md) page of Setup
+{% endhint %}

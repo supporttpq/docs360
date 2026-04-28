@@ -44,7 +44,7 @@ Create the hotel like a normal hotel.
 
 Enable **Hotel Combination**.
 
-<figure><img src=".gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (10) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -52,7 +52,7 @@ Enable **Hotel Combination**.
 
 Open the **Hotel Combination** tab.
 
-<figure><img src=".gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (11) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Add the hotels the customer will stay in.
 
@@ -73,7 +73,7 @@ If you add only one hotel, you may see a ticket option:
 
 Open the **Hotel Combination Room** tab.
 
-<figure><img src=".gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Grid 1: room mapping**
 

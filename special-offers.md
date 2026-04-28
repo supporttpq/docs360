@@ -21,18 +21,18 @@ Use this page to:
 
 ### Field description
 
-<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Filter Section**
 
 | **Field**                          | **Description**                                                                                     |
 | ---------------------------------- | --------------------------------------------------------------------------------------------------- |
-| **Select Type**                    | Defines the offer category to display. Examples: _Early Booking_, _Room Cost_, etc.                 |
-| **Select Resort**                  | Filters offers by resort. Only hotels belonging to the selected resort will be listed.              |
-| **Select Hotel**                   | Filters results to a specific hotel. Useful for reviewing offers configured for one property.       |
+| **Type**                           | Defines the offer category to display. Examples: _Early Booking_, _Room Cost_, etc.                 |
+| **Resort**                         | Filters offers by resort. Only hotels belonging to the selected resort will be listed.              |
+| **Hotel**                          | Filters results to a specific hotel. Useful for reviewing offers configured for one property.       |
 | **Booking Period (From / To)**     | Defines the reservation period in which bookings must be made to qualify for the offer.             |
 | **Departure Period (Start / End)** | Defines the actual travel or stay period during which the offer applies.                            |
-| **Select Stars**                   | Filters hotels by their official star rating (e.g., 3★, 4★, 5★).                                    |
+| **Stars**                          | Filters hotels by their official star rating (e.g., 3★, 4★, 5★).                                    |
 | **Semicolon for Export**           | When checked, exported CSV files will use semicolons (;) instead of commas (,) as field separators. |
 | **Display**                        | Refreshes the results list according to the selected filters.                                       |
 | **+ More Filters**                 | Expands additional filter criteria, if available.                                                   |
@@ -43,7 +43,7 @@ Use this page to:
 | **Column**                     | **Description**                                                                  |
 | ------------------------------ | -------------------------------------------------------------------------------- |
 | **Rule Type**                  | Type of promotion (e.g., _Early Booking_, _Room Cost_).                          |
-| **Hotel**                      | Code of the hotel where the offer is applied.                                    |
+| **Hotel**                      | Code and name of the hotel where the offer is applied.                           |
 | **From Date / To Date**        | The arrival period during which the offer is active.                             |
 | **Bkg From / Bkg To**          | Booking period defining when reservations must be made to qualify for the offer. |
 | **Days Number Before Arrival** | Minimum number of days before arrival required to benefit from the offer.        |
@@ -80,7 +80,7 @@ If **Semicolon for Export** is checked, the exported CSV will use `;` instead of
 To review all _Early Booking_ offers for 4-star hotels:
 
 1. Select **Type → Early Booking**.
-2. Set **Select Stars → 4**.
+2. Set **Stars → 4**.
 3. Define a **Booking Period** and **Departure Period** if needed.
 4. Press **Display** to show the results.
 5. Export the table as **PDF** or **CSV** for reporting.

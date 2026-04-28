@@ -14,7 +14,7 @@ Use **Rules** for reusable contract terms. Use **Remarks** for one-off text prin
 
 ### Screenshot
 
-<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -59,7 +59,7 @@ Add the rule and save the contract.
 {% endstep %}
 {% endstepper %}
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -74,7 +74,7 @@ Add the rule and save the contract.
 ### Related workflows
 
 * [Remarks - Hotel Contract Configuration](remarks-hotel-contract-configuration.md): Add printable text to the Contract PDF.
-* [Hotel contract - General](hotel-contract-general.md): Create and manage the contract header.
+* [Hotel contract - General](hotel-contract-contract-name.md): Create and manage the contract header.
 
 ***
 

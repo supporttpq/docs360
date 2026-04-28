@@ -33,7 +33,7 @@ When a booking is canceled and **cancellation insurance has been paid**, the use
 
 * If the insurance **covers** the cancellation, the **cancellation fee** equals the **price of the cancellation insurance**.
 
-<figure><img src="../.gitbook/assets/image (617).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Main Configuration**
 
@@ -42,7 +42,7 @@ When a booking is canceled and **cancellation insurance has been paid**, the use
 | **Brand**\*               | Select the brand to which this cancellation insurance rule will apply. Mandatory field.                                                                                                                                                                                                                                 |
 | **Arr. dest**\*           | Choose the arrival destination (e.g., Dubai). This is the location where the customer is traveling to. Mandatory field.                                                                                                                                                                                                 |
 | **Booking start**\*       | Set the start date when the cancellation insurance becomes valid. Only bookings made after this date will be covered.                                                                                                                                                                                                   |
-| **Booking end**\*         | Set the end date after which the cancellation insurance will no longer apply.                                                                                                                                                                                                                                           |
+| **Booking to**\*          | Set the end date after which the cancellation insurance will no longer apply.                                                                                                                                                                                                                                           |
 | **Type of rule**          | <p>Determines how the cancellation insurance is calculated. Options may include:<br>- <strong>Related to basic price</strong><br>- <strong>Related to transport type</strong><br>- <strong>Related to length of travel                                                         - Percentage of basic price</strong></p> |
 | **Commision**             | The commission is the percentage of the price that is used to calculate the cost (what is paid to the insurance company).                                                                                                                                                                                               |
 | **Currency**              | Defines the currency used in all related price inputs (e.g., DKK - Danish Krone).                                                                                                                                                                                                                                       |

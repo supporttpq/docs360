@@ -33,7 +33,7 @@ Typical examples include:
 6. **Click Save:**
    * The new vocabulary entry will be displayed in the list and automatically shown in the Guest App for guests traveling to the selected country.
 
-<figure><img src=".gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Example: English–Danish Vocabulary
 

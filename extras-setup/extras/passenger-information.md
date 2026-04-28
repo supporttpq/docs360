@@ -21,7 +21,7 @@ The purpose of this page is to:
 * Control when specific information appears (based on stay dates or booking dates).
 * Maintain brand-specific messaging if needed.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 | Field / Button      | Description                                                         |
 | ------------------- | ------------------------------------------------------------------- |
@@ -107,4 +107,4 @@ Ex: If fixed info is made for the entire season (31.12.25 - 31.12.26) - Extra cu
 
 Passenger information on the ticket:
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

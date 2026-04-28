@@ -1,10 +1,10 @@
 # Discounts/Supplements
 
-#### Overview
+## Overview
 
 The **Discounts and Supplements** module allows each company to define and manage discounts and supplements for passengers. These can be general or specific, permanent or manual, and optionally linked to products (extras). The module supports applying rules based on age, trip duration, transport, room type, departure/booking dates, and other criteria.
 
-#### Purpose
+## Purpose
 
 This module provides a flexible system to:
 
@@ -14,7 +14,7 @@ This module provides a flexible system to:
 * Control availability based on destinations, resorts, hotels, transports, and room types.
 * Support bonus codes and campaign discounts.
 
-#### **Creating a Discount/Supplement**
+## **Creating a Discount/Supplement**
 
 Each discount/supplement is defined with the following information:
 
@@ -27,7 +27,7 @@ Each discount/supplement is defined with the following information:
 
 **Important:** Tourpaq does not reliably support multiple supplements from the same category in Web Booking.
 
-### Discounts and supplements combinations in Tourpaq <a href="#discounts-and-supplements-combinations-in-tourpaq" id="discounts-and-supplements-combinations-in-tourpaq"></a>
+## Discounts and supplements combinations in Tourpaq <a href="#discounts-and-supplements-combinations-in-tourpaq" id="discounts-and-supplements-combinations-in-tourpaq"></a>
 
 (Please set them as you will see them here, as other combinations are not defined or supported in Tourpaq)
 
@@ -39,10 +39,10 @@ Each discount/supplement is defined with the following information:
 
 #### **General discount/supplements**
 
-A general discount/supplement will be chosen manually for each passenger of a booking. It will be chosen from a range of discount/supplements that must fulfill the following conditions:
+A general discount/supplement will be chosen manually for each passenger of a booking. It will be chosen from a range of discounts/supplements that must fulfill the following conditions:
 
-* If any price is defined, the booking’s departure date must be in the interval departure start date and departure end date; if booking start date and booking end date are filled in for that price, the booking date must be in the defined interval
-* If any filter is chosen(destination, resort or hotel) it must correspond to the booking’s destination, resort or hotel
+* If any price is defined, the booking’s departure date must be in the interval departure start date and departure end date; if the booking start date and the booking end date are filled in for that price, the booking date must be in the defined interval
+* If any filter is chosen(destination, resort or hotel), it must correspond to the booking’s destination, resort, or hotel
 * It must be assigned to the booking’s agency Even if you define a general discount/supplement as "permanent", it will not be applied automatically(it must be specific + permanent in order to be applied automatically)
 
 #### **Specific discount/supplements**
@@ -77,7 +77,7 @@ A permanent discount/supplement will automatically be applied for a passenger an
 
 ![!](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjExR/NCNwAABUFJREFUWEe1WEtvW0UUvknaqkWlUEBdsa0EiAUSvwGxROIfwAoVAcqCPUhNHNsxdRALXqmglRAVoqgVlAYqBN0FNi1t7HttI7shrU1LHNtxkIgTH853zsz4+pmH8Uhf7tx758758p3HzNgjIu9+uUBXC2/QXPYJmkmPM7yRIro0RrGU9s/knqRvl1+jB+U/mQp53kq1QPPB0zTjT9A0D4iYgaMGbFl7U75HZzPPUImF8a7ceZ3ihkTMDB41YqlxijCJiPEG7qHYlZVT5CUyx5RI6lDXh/0Q8w/Tz39N0u9r83Szco5uVj+l29XP6VblLN2onqNfSm9TLFCjmFvARmdSB7rmiqYPOq8kM8fJw+RRebD72LldOU/NJnuc0aRN+N7dEzVom6831s8LiegSvhmnqcC4iElijqi54h0IAfHUEfLwYK+uqjXvKxkhpAAJ/os/8mCjuUrx9ISoInHChMQW3GUUAVyfCUaXJkCImTm2u0NlM89Gt9S4IdG0ZEwrN/IcI+YbGOOkQV+9ASJjIZUUiCMhhE6Y9U4o1BdUFm5NEOP+NunVPKbCxjWZFyoheOG6cCCDUGtOG9z7JHSr8hkT4NiBdWEAdUIK8TMEu4QCkzjN13iaFRG39bLVQWivuP73O9BDFQG06/po1x+8a8bDmBqEuzTIe8MRsox3q9LVe6+q4WZDjFtC1GSVDKnv777i4gZKwVXiMhM3vWy1uazz5SB8sfICGzVuUg7SV1Lav7D8ooyVWtSRWZ2wJIF9uezD3ElYNa1FpEWI6OPsSTNe3YVY6kdqaEKJ9CGXXSiE0rgQ2dTHNZE+bMaHCSGzzH0IQxMC/mkUjXHbjAu51beKxlUaP/Ybm/KdGJoQJihtLIoSLTc1WDWld2/jV1d7JKDFIMgwQsbD89n+vgn51a/ZtFFFeBhy3PzaVzJGqrJZOqL+2OhiCFhcTRjz6iY0JbTN7+KhseomKGWrdeudYmhCmPzH0qSYd7Jws8XyWnHS7SBEKVZH4okx3bZkKLoI7bUOYUP3ZfFltq1bDyHFsJl34e5LbtPXS5FODK0QMF94TnjYtiUxpO6bzz/fRWikhRGxkMw+wqY1oEUgk2F4Nsc7P1W9leYjJSS1hdepP9a/UzaGGJCr/9Dzm0EY3mVM5jRPkgwepp+Kb9Fvq7O0WH5P+rOZh3p+07kZC2N4hVDwsGBiIrOiwyWR9AHZN0t2wUViqHd1DmN4hbBhxyRm454MjtEcqxVeGtp3hEB/YkMTQi3BDjAZPOriCFmWq13i0+9jbcrYYI7wBr6fYm2E7LEWD5Gqg7IhDIzP1S4LGY1nrklchrL1y265cGM75oQdnDDkHRNECNgq7mGw3c2FP9oJs5mjUpntCtakf4UZjkOJ7BG3WwTEhoHciy1Wil3u7JpDZMhlfJjjl/aYMgjxpXE64x9lGpuqDv+RK9KfIZnW45RqCU0HfBLhviaAnu1xRTkRQuhANjtgJ8i4YIz89YtKAmykSG9TZv2ScVn3mmUBVexyBds2MxFjTiGJIxnUPxssENA42qAiB/VvmAbWtAYFtYtyPu8cb5WxkMKKKz/XPtvkfwKnW28uOCFFDnG0lxMsJpvyNXjxgwWKpDup7gAcHq0qUEv2Snw/lz1BHn6owgMnm/loEFwgmquct6CCf9C5QsaF+u3QHx+UiBZRFNqFO2+SVyqv0Ce5p2Si3cYQgBjBJHqv/6lVqD8RhbxnQvYetj/KPUvFSp7kJ72VtTwtLJ+i94PjPGl3dvzfQJaCfIRPLx/4j9MCe6m4tsxUyPsPEiJBxYwnODoAAAAASUVORK5CYII=) **Please note!** Do not use in the same supplement category both a permanent and a manual item. The system does not support this scenario. Please create special categories for the manual/optional supplements.
 
-### Manual discount/supplements <a href="#manual-discountsupplements" id="manual-discountsupplements"></a>
+## Manual discount/supplements <a href="#manual-discountsupplements" id="manual-discountsupplements"></a>
 
 A manual discount/supplement will be manually chosen for a passenger; it can be either general or specific.
 
@@ -85,15 +85,15 @@ A manual discount/supplement will be manually chosen for a passenger; it can be 
 
 #### **Overview**
 
-<figure><img src=".gitbook/assets/image (13) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (13) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Discount or Suppl: choose between either discount or supplement behaviour
-* General/Specified: choose between the general or specificate behaviour
+* General/Specified: choose between the general or specific behaviour
 * Fixed/Manual: choose between manual or fixed behaviour
 * Price type: choose between normal, discount, group or manual prices
-* Age: choose the gender of the guest that will benefit from the discount or supplement
-* Period/Trip length: choose in which interval is the discount or supplement available
-* Status: choose if anyone ca see the disc/suppl in Tourpaq
+* Age: choose the gender of the guest who will benefit from the discount or supplement
+* Period/Trip length: choose the interval in which the discount or supplement is available
+* Status: choose if anyone can see the disc/suppl in Tourpaq
 * Currency: choose the currency of the price
 * Category: choose the category of the disc/suppl
 * Dept.date Start: set the departure dates from which the disc/suppl is available
@@ -127,7 +127,7 @@ The entities having this checkbox active will:
 * Generic service: allows to change the name of the discount/supplement. This type of discount has to be General/Manual and it can be combined with a "Not Combine with disc." discount. Also, the name inserted when the discount is used on a booking will be shown on the ticket
 * Linked to extras: allows the discount/supplement to be linked to a product; will be given only if the product is selected in a booking (not compatible with bonus code). This discount gives an entire extra price discount.
 * Automatically select extras:
-* On room list: will appear on rooming list
+* On room list: will appear on the rooming list
 * Only one book/person:
 * Available for first passenger in room: only the first passenger in the room will receive the disc/suppl
 * Don't display in Api:
@@ -136,36 +136,237 @@ The entities having this checkbox active will:
 * Not combine with disc: if checked, the disc/suppl will not allow any other disc/suppl in the booking
 * Not combine with extra bed disc: if checked, the disc/suppl wil not allow the extra bed discount to be given, also this rule applies to child price(CH1 in pricelist). Discount will remove all extra beds from the booking even if it is applied to only one pax.
 
-#### Prices
+### Prices
 
 Prices are defined for certain periods of time, periods that will consider the departure date of a booking. If defined here, this price will overrule the general price.
 
-<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (7).png" alt=""><figcaption></figcaption></figure>
+#### Navigation
 
-In the Discount/supplements general window, go to the Prices tab and click on New Price.
+`Extras Setup → Discounts / Supplements → Prices`
 
-* Set the age limits.
-* Set the departure start date and departure end date.
-* Set the booking start date and the booking end date.
-* Next, set the price of the discount/supplement. This price is overwritten by prices L1 to L4
-  * Price L1 is the price for interval 1 of the transport
-  * Price L2 is the price for interval 2
-  * Price L3 is the price for interval 3
-  * Price L4 is the price for interval 4
+The price of a discount/supplement can be configured in 2 ways:
 
-Any value from these intervals will overwrite the general price. To avoid overwriting the price, just let the prices for intervals empty (not 0).
+*   for all passengers&#x20;
 
-* Then, set the general cost price for the discount/supplement and cost price for each interval.
-* Per day check box sets the price for each stay day and will be placed as a total on the booking.
-* DUD(days until departure) – this will prevent the discount to be applied on a booking, if the booking is created with the given number of days before departure date.
-* BP% - sets the price as a percentage of the basic price
-* CD - date when the price was created
+    <figure><img src=".gitbook/assets/image (808).png" alt=""><figcaption></figcaption></figure>
+*   for children/adults in the hotel&#x20;
 
-#### Stop Sale Intervals
+    <figure><img src=".gitbook/assets/image (809).png" alt=""><figcaption></figcaption></figure>
 
-Any discount/supplement can be removed from selling by creating a stop sale interval for it. To do that, just go to Stop sale interval tab.
 
-<figure><img src=".gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="warning" %}
+You can never add a price for a discount/supplement for all passengers and for children/adults in the hotel at the same time.&#x20;
+{% endhint %}
+
+<figure><img src=".gitbook/assets/image (810).png" alt=""><figcaption></figcaption></figure>
+
+#### Table Overview
+
+Each row defines a **price rule** for a discount or supplement, based on:
+
+* Passenger type
+* Age
+* Travel dates
+* Booking dates
+
+#### Columns:&#x20;
+
+**PASSENGER** - Defines which passenger type the rule applies to.
+
+**Values:**
+
+* **All** → Applies to all passengers (uses age interval)
+* **Child age from hotel** → Applies only to children based on hotel age
+  *   The child's age is set at the hotel: `Hotel Setup → Basic Setup → Additional settings`&#x20;
+
+      <figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+* **Adult age from hotel** → Applies only to adults based on hotel age
+
+**Tooltip (Info Icon)**
+
+> If a passenger type is specified, the discount/supplement applies only to that passenger type.\
+> Child/Adult is determined using the hotel child price age (fallback: agency max child age).
+
+***
+
+**START AGE / END AGE -** Defines the age interval for the rule.
+
+**Applies only when:** PASSENGER = **All**
+
+**Ignored when:** PASSENGER = Child/Adult age from hotel
+
+***
+
+**DEPT. START DATE / DEPT. END DATE -** Defines the **departure (travel) period** when the rule is valid.
+
+* DEPT. START DATE → First valid departure date
+* DEPT. END DATE → Last valid departure date
+
+***
+
+**BKG. DATE FROM / BKG. DATE TO -** Defines the **booking period** when the rule can be applied.
+
+* BKG. DATE FROM → First booking date
+* BKG. DATE TO → Last booking date
+
+***
+
+**PRICE** - Base selling price for the discount/supplement.
+
+* Applied per rule
+* Currency shown (e.g., EUR)
+
+***
+
+**PRICE L1 / L2 / L3 / L4 -** Prices for interval 1/2/3/4
+
+Any value from these intervals will overwrite the general price. To avoid overwriting the price, just let the prices for intervals be empty (not 0).
+
+***
+
+**COST PRICE -** Internal cost value for the discount/supplement.
+
+***
+
+**COST L1 / L2 / L3 / L4 -** Cost per intervals
+
+***
+
+**PER DAY -** Defines if the price is applied **per day**.
+
+**Values:**
+
+* Enabled → Price applied for each stay day and will be placed as a total on the booking.
+* Disabled → Price applied once
+
+***
+
+**DUD** (days until departure) – this will prevent the discount from being applied to a booking if the booking is created with the given number of days before the departure date.
+
+***
+
+**BP % -** sets the price as a percentage of the basic price. When BP% is selected, the price value cannot exceed 100.
+
+<figure><img src=".gitbook/assets/image (811).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+**CD -** date when the price was created
+
+***
+
+**CONTRACT** - Defines which contract the price rule belongs to.
+
+***
+
+#### Actions (Icons)
+
+* ✏️ Edit → Modify price row
+* 🗑 Delete → Remove price row
+
+{% hint style="warning" %}
+When the Per Day checkbox is selected, BP% is automatically unavailable. You cannot have both options selected at the same time because if they were selected, at some point, it is possible that the discount would be higher than the initial price, and the booking to which the discount is applied would have a negative price.
+{% endhint %}
+
+#### How It Works
+
+A price rule is applied only if **all conditions match**:
+
+1. Passenger type matches (PASSENGER)
+2. Age matches (if applicable)
+3. Travel date is within DEPT range
+4. Booking date is within the BKG range
+
+#### Example
+
+PASSENGER = All
+
+* Age: 31–120
+* Price: 4000 EUR
+* Applies broadly using age filtering
+
+***
+
+#### Adult age from the hotel
+
+* Price: 50 DKK
+* Applies only to:
+  * Passengers classified as **Adult**
+  * Based on the hotel child's age
+
+<figure><img src=".gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+#### Child age from hotel
+
+* Price: 2000 EUR
+* Applies only to:
+  * Passengers classified as **Child**&#x20;
+
+### **How is the discount/supplement applied in bookings**
+
+1. **If the discount/supplement is set as Manual** and the Price is set for Adult in the hotel and Child from the hotel, the discount/supplement will be added manually to the booking like this
+
+<figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+
+*   on the booking page, after assigning passengers, click on "Show/Hide all Disc/Suppl -> Add Disc/Suppl.&#x20;
+
+    <figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+*   A new page opens where you can add all the discounts/supplements available for the booking.
+
+    <figure><img src=".gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+
+
+*   Select the discount/supplement. If a discount has a defined price for both children in the hotel and adults in the hotel, the same discount will appear on this page, but twice, specific to each type of passenger (child/adult).&#x20;
+
+    <figure><img src=".gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+
+2. **If the discount/supplement is set to Automatic,** the discount/supplement will be added automatically to the booking, like this
+
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+*   on the booking page, after assigning passengers, click on "Show/Hide all Disc/Suppl and you will see that the discount/supplement is already added to the booking&#x20;
+
+    <figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+
+*   &#x20;All Automatic discounts will not appear selectable in the add discount/supplement window, as they are already assigned to the booking.
+
+    <figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="warning" %}
+When the discount/supplement is set to be applied automatically, and the Rounding rule is set on the category, the discount/supplement rounding rule will be applied. The discount will be rounded down, and the supplement will be rounded up.
+{% endhint %}
+
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+
+If, at some point, something changes in the booking that may influence the discount/supplement price (Ex, a passenger's age changes), for the price to be automatically updated in the booking, we must use (uncheck) the "Keep automatic discount prices" checkbox, and resave the passengers. After resaving, the system automatically recalculates the new discount/supplement price.&#x20;
+
+<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+When a discount/supplement is part of a campaign, to apply it to a booking, insert the campaign code in the "Disc/Suppl Bonus Code" field when the booking is in Edit passenger. After entering the code, click Save Passengers, and the discount will be applied to the booking.
+
+<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+### Stop Sale Intervals
+
+Any discount/supplement can be removed from the sell by creating a stop-sale interval for it. To do that, just go to Stop sale interval tab.
+
+<figure><img src=".gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Click new interval
 * Set the start date and stop date for the interval in which the discount cannot be sold.
@@ -202,7 +403,7 @@ Resources are used to limit the availability of discounts/supplements to the sel
 
 The limit number of resources that can be added is 100. If the number of resources of the same type exceeds this number, a warning message will appear at the bottom of the page.
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (27).png" alt=""><figcaption></figcaption></figure>
 
 **Workarounds**
 

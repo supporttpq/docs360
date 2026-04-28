@@ -13,7 +13,6 @@ The system must allow administrators to:
 
 * Create a new arrival destination
 * Define transport and geographical details
-* Configure timezone and GMT offset
 * Assign insurance area
 * Control availability for online booking
 
@@ -33,7 +32,7 @@ Setup → Destinations → Arrivals → Create New
 
 ### Field Specifications
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **IATA Code -** Official three-letter airport code. Required when the arrival represents an airport.
 
@@ -46,10 +45,6 @@ Country - Select the country where the arrival is located. Used for reporting an
 Latitude - Geographical latitude. Used for map integrations and transfer calculations.&#x20;
 
 Longitude - Geographical longitude. Used together with latitude for location-based services.&#x20;
-
-GMT Offset - Standard time offset from UTC.
-
-GMT Offset Summertime - Offset during daylight saving time.&#x20;
 
 TimeZone - Select the applicable timezone. Required for correct arrival time calculations.&#x20;
 
@@ -69,7 +64,6 @@ Before saving:
 * Country and TimeZone must be selected
 * Insurance area must be assigned
 * Coordinates should be verified for accuracy
-* GMT offsets must match timezone
 
 ### Impact
 
@@ -77,7 +71,7 @@ Creating a new arrival:
 
 * Makes it selectable in bookings
 * Enables correct time calculations
-* Connects destination to insurance rules
+* Connects the destination to insurance rules
 * Supports transfer and operational planning
 
 Incorrect configuration may result in time miscalculations or booking inconsistencies.

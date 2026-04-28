@@ -43,7 +43,7 @@ Open **Hotel** → **Hotels**.
 
 Select **Create using wizard**.
 
-<figure><img src="../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1).png" alt="Add Hotel Wizard entry and form"><figcaption><p>Add Hotel Wizard.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1).png" alt="Add Hotel Wizard entry and form"><figcaption><p>Add Hotel Wizard.</p></figcaption></figure>
 
 ### Interface overview
 

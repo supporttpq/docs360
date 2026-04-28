@@ -75,7 +75,7 @@ Below is a visual representation of the Hotel Contract List interface:
 
 ### Related pages
 
-* [Hotel contract - General](hotel-contract-general.md)
+* [Hotel contract - General](hotel-contract-contract-name.md)
 * [Rooms – Hotel Contract Configuration](rooms-hotel-contract-configuration.md)
 * [Periods – Hotel Contract Configuration](periods-hotel-contract-configuration.md)
 * [Board Supplements - Hotel Contract Configuration](board-supplements-hotel-contract-configuration.md)

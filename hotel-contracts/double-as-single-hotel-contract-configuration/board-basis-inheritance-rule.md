@@ -106,7 +106,7 @@ This prevents missing or inconsistent board basis after import.
 
 ### Related workflows
 
-* [Hotel contract - General](../hotel-contract-general.md)
+* [Hotel contract - General](../hotel-contract-contract-name.md)
 * [Rooms – Hotel Contract Configuration](../rooms-hotel-contract-configuration.md)
 * [Double as Single – Hotel Contract Configuration](./)
 * [Board Type](../../board-type/)

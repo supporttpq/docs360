@@ -135,9 +135,127 @@ If you run the same filter combination regularly, click **Save View** to save it
 
 ***
 
+#### Step 8 - Booking Selection (Checkbox Column)
+
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+#### 1. Bookings Selection (Checkbox Column)
+
+The **first column** contains checkboxes that allow users to select bookings.
+
+#### Functions
+
+* **Select individual bookings** by ticking the checkbox next to the booking.
+* **Select multiple bookings** for bulk actions.
+* **Select all bookings in the filtered results** using the top checkbox.
+
+Example:
+
+* Selecting 5 bookings allows sending an email or SMS to all selected customers at once.
+
+***
+
+#### 2. Bulk Action Menu
+
+**Overview**
+
+This functionality enables sending emails to a large number of bookings directly from the **All Bookings** page. It is designed for high-volume scenarios, especially critical situations where rapid communication is required.
+
+Above the booking table, the following actions are available:
+
+#### Send Email
+
+Bulk Selection and Sending
+
+* Users can select **one booking**, **different bookings,** or **all bookings** from the _All Bookings_ page
+* A single **Send Email** action applies to the entire selection
+
+<figure><img src="../../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+Typical use cases:
+
+* Sending travel documents
+* Sending booking confirmations
+* Sending reminders or updates
+
+#### Step-by-step interaction
+
+1. **Select bookings**
+   * Users select multiple bookings using the checkboxes in the list
+2. **Trigger action**
+   * Click **Send email** (highlighted on the left side of the image)
+3. **Send Email modal opens**
+   * The pop-up contains:
+     * Subject field
+     * Rich text editor for email body
+     * Attachment option (bottom left)
+     * **“Don’t send attachments” checkbox (bottom right)**
+     * Send button
+
+#### Checkbox: “Don’t send attachments”
+
+* **Location:**\
+  Bottom-right corner of the Send Email popup (visible in image)
+* **Behavior:**
+  * When checked:
+    * Attachments are excluded from emails
+      * Sending speed increases significantly
+* **Tooltip text:**
+
+> If enabled, emails will be sent faster. This is especially useful when sending large volumes (e.g. 1,000+ emails) in a short time.
+
+* **Functional Behavior**
+  * With attachments
+    * Emails include selected files
+    * Larger payload → slower delivery
+  * Without attachments
+    * Attachments are skipped
+    * Smaller payload → faster processing and delivery
+
+#### Example Scenario
+
+* User selects 11,000 bookings
+* Opens Send Email modal
+* Enables **Don’t send attachments**
+* Clicks **Send email**
+
+**Expected result:**
+
+* Emails are processed in parallel
+* Delivery completed within 30–60 minutes
+* No need for manual batching
+
+<img src="../../.gitbook/assets/file.excalidraw.svg" alt="" class="gitbook-drawing">
+
+***
+
+#### Send SMS
+
+Allows sending SMS notifications to customers associated with the selected bookings.
+
+Typical use cases:
+
+* Travel reminders
+* Flight updates
+* Urgent notifications
+
+{% hint style="info" %}
+If multiple sms are queued with the same message and destination, only the first one is sent. The others are marked as sent, but remain queued.
+{% endhint %}
+
+***
+
+#### Export
+
+Exports the selected bookings into a file for reporting or analysis.
+
+Example: Export bookings for a specific departure period to generate a report.
+
+***
+
 ### Field Reference
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (761).png" alt=""><figcaption></figcaption></figure>
 
 #### Toolbar Buttons
 
@@ -170,6 +288,7 @@ If you run the same filter combination regularly, click **Save View** to save it
 | **Internal Comment**             | Search bookings containing specific text in internal comments                                                                       | `Group leader`            |
 | **Bonus Code**                   | Filter by promotional or bonus codes applied at booking time                                                                        | `SUMMER26`                |
 | **Hotels**                       | Filter by hotel name or hotel assignment                                                                                            | `Grand Hotel`             |
+| **Room Types**                   | Filter by room type. If a hotel is selected, filtering will be done by the room types of the selected hotel.                        | `2/22`                    |
 | **Transports / Real Transports** | Filter by transport code or specific real transport assignments                                                                     | `SK1234`                  |
 | **Extra**                        | Filter by extra type and/or extra category                                                                                          | `Travel Insurance`        |
 | **Owners**                       | Filter by the agent, user, or company responsible for the booking                                                                   | `RW/TPQ`                  |
@@ -186,6 +305,7 @@ If you run the same filter combination regularly, click **Save View** to save it
 | **Transport**           | Transport type and code assigned to the booking                                                                                                               |
 | **Resort**              | Destination resort                                                                                                                                            |
 | **Hotel**               | Hotel assigned to the booking                                                                                                                                 |
+| **Room Type**           | Room type and code assigned to the booking                                                                                                                    |
 | **Bkg. Date**           | The date the booking was created                                                                                                                              |
 | **Bkg. Time**           | The time the booking was created                                                                                                                              |
 | **Nights / No.**        | Number of nights included in the accommodation                                                                                                                |
@@ -201,7 +321,11 @@ If you run the same filter combination regularly, click **Save View** to save it
 
 #### Statistics Bar (Bottom of Page)
 
-The statistics bar appears below the table immediately after Display is clicked. It shows a real-time summary of the filtered result set.
+The statistics bar appears below the table immediately after Display is clicked, is available for the following user types: Administrator, Guide and Guide Master. It shows a real-time summary of the filtered result set.
+
+<figure><img src="../../.gitbook/assets/image (742).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (741).png" alt=""><figcaption></figcaption></figure>
 
 | Metric             | Description                                                                                            |
 | ------------------ | ------------------------------------------------------------------------------------------------------ |
@@ -237,9 +361,11 @@ For teams with many configured transports, hotels, or users, the filter dropdown
 
 After clicking Display, three additional analysis views are available. All statistics are calculated **per passenger** by default.
 
-<figure><img src="https://sonat.com/api/Document/Image/19670ef0-8b8a-4cda-8eb6-249681e07016/60a72aeb-a272-4428-a118-b6074b1b35b5/5f9160ba-43aa-4d8f-9f35-bbbdc227a335.webp?width=1854" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Available Statistics Types
+
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 | Category              | Available breakdowns                                   |
 | --------------------- | ------------------------------------------------------ |
@@ -250,7 +376,7 @@ After clicking Display, three additional analysis views are available. All stati
 | **Percentage**        | Total                                                  |
 | **Possible vs. Sold** | Total, Per Country                                     |
 
-#### **A**Additional Analysis Tools
+#### Additional Analysis Tools
 
 | Tool                                       | Description                                                                                                                                             |
 | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- |

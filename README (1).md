@@ -21,8 +21,6 @@ coverY: 0
 | 4. Navigate the System         | A tour of the main menu and where to find things             |
 | 5. Your Learning Path by Role  | A recommended reading path based on your job                 |
 
-***
-
 {% hint style="info" %}
-**New to Tourpaq?** Start with page 1 and work through in order. It takes about 15 minutes and will save you a lot of confusion later.
+**New to Tourpaq?** Start with page [1](tourpaq-manual/readme/what-is-tourpaq.md) and work through in order. It takes about 15 minutes and will save you a lot of confusion later.&#x20;
 {% endhint %}
