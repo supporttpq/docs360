@@ -189,35 +189,28 @@ If NO valid combination is found:
 
 ***
 
-### Hotel Contract Import
-
-During import, the Board Supplements must automatically be set with:
-
-* "All stay days must be available" = TRUE
-
-***
-
 ### Backward Compatibility
 
 #### Identify Existing Board Supplements
 
-An extra is considered a board supplement if:
+To preserve existing Board Supplement behavior after this update, all previously configured Board Supplements must be updated to enable **“All stay days must be available.”** at the **Extras Category** level.
 
-* Category type = Pension
-*   "Use Stay days in prices" is enabled
+This update applies only to extras that meet both of the following conditions:
 
-    <figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+* The extra uses an Extras Category with type **“Pension”**
+* The setting **“Use Stay days in prices”** is enabled
+
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
 *   In the Prices tab, use the "Per day" checkbox marked
 
     <figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### Action
+{% hint style="warning" %}
+The option **“All stay days must be available”** is configured on the **Extras Category.**
+{% endhint %}
 
-* All such extras:
-  * will be automatically updated:
-    *   "All stay days must be available" = TRUE
-
-        <figure><img src="../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/All stay days must be available.png" alt=""><figcaption></figcaption></figure>
 
 ### Example Scenario
 
