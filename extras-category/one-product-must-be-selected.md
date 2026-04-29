@@ -27,19 +27,19 @@ Enable this setting on the **extras category**.
 
 {% stepper %}
 {% step %}
-#### Open the extras category
+**Open the extras category**
 
 Go to `Extras Setup > Extras Category`, then open the relevant category.
 {% endstep %}
 
 {% step %}
-#### Enable the option
+**Enable the option**
 
 Enable **One product must be selected**.
 {% endstep %}
 
 {% step %}
-#### Save and test
+**Save and test**
 
 Create a test booking and verify you can only switch between options.
 {% endstep %}
@@ -68,20 +68,25 @@ When **One product must be selected** is enabled for an extras category:
 
 This ensures that a valid selection always exists.
 
-{% hint style="warning" %}
-If the selected extra has no availability (for example due to allotment), the booking can be blocked when confirming allotment.
-{% endhint %}
+#### Booking flow
 
-**Example: booking blocked at Take Allotment when “One product must be selected” is enabled**
+* When the extra category has the option enabled:
 
-* When the extra category "Gala Dinner" has the option enabled:
-
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/One product must be selected.png" alt=""><figcaption></figcaption></figure>
 
 * And an extra in that category is available for booking:
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/29.04.2026_16.34.27_REC.png" alt=""><figcaption></figcaption></figure>
 
-* If a user tries to make a booking where the extra must be selected, it will be blocked at **Take Allotment**:
+<figure><img src="../.gitbook/assets/29.04.2026_16.35.29_REC.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+* The system ensures that the user is never presented with an empty selection.
+
+<figure><img src="../.gitbook/assets/29.04.2026_16.37.15_REC.png" alt=""><figcaption></figcaption></figure>
+
+* If no Extra is marked as **Auto-select**, the system will automatically select the **first Extra in the list**.
+* While understanding this option is enabled, the user cannot remove the selected Extra. The selection can only be changed by choosing a different Extra from the list.
+
+{% hint style="info" %}
+These rules apply consistently in both the **Booking flow** and the **Webbooking**
+{% endhint %}
