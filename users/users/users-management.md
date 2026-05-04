@@ -17,19 +17,19 @@ The **Users dashboard** provides a centralized view of all users within the agen
 
 ### **User Table Fields**
 
-| **Field**             | **Description**                                                                |
-| --------------------- | ------------------------------------------------------------------------------ |
-| **Username**          | Unique identifier used by the user to log in.                                  |
-| **First Name**        | First name of the user.                                                        |
-| **Last Name**         | Last name of the user.                                                         |
-| **Seller Signature**  | Internal seller code or identifier.                                            |
-| **Company**           | Associated company name or identifier.                                         |
-| **Role**              | Specifies user role (e.g., Guide Teams, Administrator, Support, Sales, etc.).  |
-| **Rights**            | Permissions granted to the user (e.g., view, edit, delete specific resources). |
-| **Brands**            | Brands the user is affiliated with                                             |
-| **Last Login**        | Timestamp of the user's most recent login.                                     |
-| **User Blocked**      | Checkbox indicating if the user is blocked.                                    |
-| **Actions**           | Icons to delete the user profile.                                              |
+| **Field**            | **Description**                                                                                 |
+| -------------------- | ----------------------------------------------------------------------------------------------- |
+| **Username**         | Unique identifier used by the user to log in.                                                   |
+| **First Name**       | First name of the user.                                                                         |
+| **Last Name**        | Last name of the user.                                                                          |
+| **Seller Signature** | Internal seller code or identifier. It is defined in **Edit User** as **Seller ID in booking.** |
+| **Company**          | Associated company name or identifier.                                                          |
+| **Role**             | Specifies user role (e.g., Guide Teams, Administrator, Support, Sales, etc.).                   |
+| **Rights**           | Permissions granted to the user (e.g., view, edit, delete specific resources).                  |
+| **Brands**           | Brands the user is affiliated with                                                              |
+| **Last Login**       | Timestamp of the user's most recent login.                                                      |
+| **User Blocked**     | Checkbox indicating if the user is blocked.                                                     |
+| **Actions**          | Icons to delete the user profile.                                                               |
 
 ### **Key Features / Functions**
 
@@ -44,7 +44,7 @@ The **Users dashboard** provides a centralized view of all users within the agen
 * Toggle visibility for inactive or hidden users.
 * Apply filters to narrow down results quickly.
 
-#### **Sort Columns** ↕&#x20;
+#### **Sort Columns** ↕
 
 * Reorder the user list by clicking on column headers (e.g., sort by **Username** or **Last Login**).
 
@@ -71,7 +71,7 @@ The **Users dashboard** provides a centralized view of all users within the agen
 
 * Permanently remove a user (only possible if no dependent bookings or financial records exist).
 
-#### **Block / User** 🚫&#x20;
+#### **Block / User** 🚫
 
 * Blocked users remain in the system but cannot log in.
 * Useful for temporary suspensions or seasonal employees.
