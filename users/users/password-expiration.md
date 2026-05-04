@@ -39,10 +39,9 @@ To improve security and comply with best practices, Tourpaq allows administrator
 <figure><img src="../../.gitbook/assets/10_days-28e9f119cefa05cc22920bb8531e9fef.jpg" alt=""><figcaption></figcaption></figure>
 
 3. **Password expiration in less than 3 days**
-   * The user is **redirected to the Change Password page** after login and must update the password.
+   *   The user is **redirected to the Change Password page** after login and must update the password.&#x20;
 
-<figure><img src="../../.gitbook/assets/3_days-c28af95d0ce4d00aed320ee9a5569f7e.jpg" alt=""><figcaption></figcaption></figure>
-
+       <figure><img src="../../.gitbook/assets/change pass.png" alt=""><figcaption></figcaption></figure>
 4. **Password expired**
 
 * The user sees an **expiration message at login**.
