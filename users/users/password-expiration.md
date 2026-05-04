@@ -29,15 +29,14 @@ To improve security and comply with best practices, Tourpaq allows administrator
 
 <figure><img src="../../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
 
-### **Examples / Scenarios**
+### **Examples/Scenarios**
 
 1. **Password expiration in more than 10 days**
    * No alerts are shown.
 2. **Password expiration in less than 10 days**
-   * The user receives an **alert after logging in** to remind them that their password is about to expire.
+   *   The user receives an **alert after logging in** to remind them that their password is about to expire.&#x20;
 
-<figure><img src="../../.gitbook/assets/10_days-28e9f119cefa05cc22920bb8531e9fef.jpg" alt=""><figcaption></figcaption></figure>
-
+       <figure><img src="../../.gitbook/assets/pass warning 9 days.png" alt=""><figcaption></figcaption></figure>
 3. **Password expiration in less than 3 days**
    *   The user is **redirected to the Change Password page** after login and must update the password.&#x20;
 
@@ -45,6 +44,6 @@ To improve security and comply with best practices, Tourpaq allows administrator
 4. **Password expired**
 
 * The user sees an **expiration message at login**.
-* The user must contact an **administrator** to reset the password before they can access the system again.
+*   The user must contact an **administrator** to reset the password before they can access the system again.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/pass expired.png" alt=""><figcaption></figcaption></figure>
