@@ -20,14 +20,20 @@ To improve security and comply with best practices, Tourpaq allows administrator
 * **Enable Password Validity**:
   * Go to **Edit User Page**
   * Check **“Enable password validity days”**
-  * Enter the number of days (e.g., 30)
+  * Enter the number of days (e.g., 30)&#x20;
 * **Automatic Tracking**:
   * The countdown starts from the moment the feature is enabled.
   * The countdown resets each time the user successfully changes their password.
 * **User Alerts & Enforcement**:
-  * System notifications are triggered based on days remaining until expiration.
+  * System notifications are triggered based on the days remaining until expiration.
 
 <figure><img src="../../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
+
+### Notes
+
+* If **Enable password validity days** is not checked, the password does not expire based on user-specific configuration.
+* **Fixed password validity days** may be controlled at system level and can override manual values.
+* These settings directly impact authentication behavior and security compliance policies.
 
 ### **Examples/Scenarios**
 
