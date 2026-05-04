@@ -15,6 +15,12 @@ The **Users dashboard** provides a centralized view of all users within the agen
 
 <figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
+### Field Description – Filters (Top Section)
+
+<figure><img src="../../.gitbook/assets/users filters.png" alt=""><figcaption></figcaption></figure>
+
+<table><thead><tr><th width="172.75">Field Name</th><th width="275.75">Description</th><th>Notes / System Impact</th></tr></thead><tbody><tr><td>Username</td><td>Filter by username</td><td>Supports search and dropdown selection</td></tr><tr><td>First name</td><td>Filter by first name</td><td>Free text search</td></tr><tr><td>Last name</td><td>Filter by last name</td><td>Free text search</td></tr><tr><td>Signature</td><td>Filter by seller signature</td><td>Used for identifying booking ownership. Represents the Seller ID in the booking. It is defined when a user is created and is used in <strong>All Bookings</strong> in the <strong>Owne</strong>r filter ((show code checkbox must be checked) </td></tr><tr><td>Role</td><td>Filter by user role</td><td>Useful for role-based audits</td></tr><tr><td>Show hidden</td><td>Include hidden users in results</td><td>Shows inactive/hidden users. For a user to have hidden status, and no longer appear across the system, the status must be set to Hidden in Edit User.</td></tr><tr><td>Display</td><td>Applies filters</td><td>Refreshes the list</td></tr><tr><td>Clear</td><td>Resets filters</td><td>Clears all filter inputs</td></tr><tr><td>Create</td><td>Creates a new user</td><td>Opens <strong>Create User</strong> page</td></tr></tbody></table>
+
 ### **User Table Fields**
 
 | **Field**            | **Description**                                                                                 |
@@ -102,3 +108,7 @@ The **Users dashboard** provides a centralized view of all users within the agen
 * Regularly review **Last Login** data to identify inactive accounts and maintain system hygiene.
 * Deletion should only be used if the user has no linked bookings or financial records.
 * Consider role-based filtering to quickly audit which users have high-level access (Administrator, Financial, Super Admin).
+* The **Rights** column directly reflects the permissions configured in **Edit User → Additional Settings**.
+* The **Role** defines default permissions, while **Rights** shows overrides and extensions.
+* The **Brands** column restricts access to specific brand environments, impacting bookings, exports, and configuration visibility.
+* The **User Blocked** checkbox provides quick access control without deleting the user.
