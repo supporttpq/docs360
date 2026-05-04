@@ -362,6 +362,7 @@
 
 * [Users](users/users/README.md)
   * [Users Management](users/users/users-management.md)
+  * [Edit User](users/users/edit-user.md)
   * [User limited view](users/users/user-limited-view.md)
   * [Password expiration](users/users/password-expiration.md)
   * [Onboard a new employee (Tourpaq Office access)](users/users/onboard-a-new-employee-tourpaq-office-access.md)
