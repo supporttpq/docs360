@@ -36,13 +36,14 @@ The following information is considered **personal data** and must be protected:
 
 The **Support role** has:
 
-* Full functional access equivalent to Administrator
+* Full functional access equivalent to Administrator, except that the support role cannot see any personal data
 * Access to configuration, bookings, transports, hotels, and system setup
 
 However:
 
 * All personal data is **anonymized**
 * Certain sections containing sensitive or exported data are **restricted**
+* Extended visibility in **Paxgrid**, allowing access to key booking information while maintaining anonymization of sensitive data.
 
 ***
 
@@ -99,6 +100,38 @@ This prevents:
 
 ***
 
+### Visible Information in the booking page
+
+The following fields are fully visible (not anonymized):
+
+* **Age**
+* **Extras**
+* **Discounts**
+* **Supplements**
+
+***
+
+#### Anonymized Information
+
+The following sections are visible but **anonymized**:
+
+* **Economics**
+* **Passenger Details**
+* **SSR**
+* **Profit**
+* **Extra Orders**
+
+***
+
+#### Profit Access
+
+* The **Profit menu** remains **clickable** for Support Users.
+* Support Users are allowed to **access and view profit data**, even though it is anonymized in the Paxgrid overview.
+
+***
+
+This setup ensures that Support Users can effectively assist with bookings while maintaining appropriate data protection and controlled access to sensitive information.
+
 ### Expected System Behavior
 
 * Support users can navigate and operate the system normally
@@ -117,7 +150,7 @@ This prevents:
 Support user opens a booking:
 
 * Can view structure, pricing, services
-*   Cannot see passenger names or contact details&#x20;
+*   Cannot see passenger names or contact details
 
     <figure><img src="../../.gitbook/assets/image (754).png" alt=""><figcaption></figcaption></figure>
 
@@ -136,7 +169,7 @@ Support user investigates transport or hotel setup:
 
 Support user tries to access email logs:
 
-*   Access is denied&#x20;
+*   Access is denied
 
     <figure><img src="../../.gitbook/assets/image (755).png" alt=""><figcaption></figcaption></figure>
 
@@ -145,7 +178,7 @@ Support user tries to access email logs:
 ### Scenario 4 - All Bookings
 
 * Support user has access to the All Bookings page
-*   Can not see customer details (Name, Surname, phone). &#x20;
+*   Can not see customer details (Name, Surname, phone).
 
     <figure><img src="../../.gitbook/assets/image (753).png" alt=""><figcaption></figcaption></figure>
 
