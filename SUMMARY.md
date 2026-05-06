@@ -297,7 +297,6 @@
 * [Real Transports](real-transports/README.md)
   * [Introduction](real-transports/introduction.md)
   * [Dynamic transport baggage](real-transports/dynamic-transport-baggage.md)
-  * [Dynamic transport supplement](real-transports/dynamic-transport-supplement.md)
   * [Setup for Transport Dynamic Packaging (GDS)](real-transports/setup-for-transport-dynamic-packaging-gds.md)
   * [Departures](real-transports/departures/README.md)
     * [Add Base Cost on Real Transports](real-transports/departures/add-base-cost-on-real-transports.md)

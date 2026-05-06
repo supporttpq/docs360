@@ -8,17 +8,17 @@ Real Transports can be found in **Transports/Real Transports**. They are a speci
 
 <figure><img src="../.gitbook/assets/image (7) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-2. The next step is to configure the transport's timetable. This process has the same steps as a normal transport, as in filling star and end dates, departure and arrival times, but now is mandatory to fill the **Flight No.** case. To complete the action the user has to press **Insert**.
+2. The next step is to configure the transport's timetable. This process has the same steps as a normal transport, as in filling star and end dates, departure and arrival times, but now is mandatory to fill the **Flight No.** case. To complete the action, the user has to press **Insert**.
 
 <figure><img src="../.gitbook/assets/image (8) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
-3. The last step in creating a real transport is setting up it's allotments from **All.Manager**. The user will have to fill in the start and end dates, the number of days between flights, the number of seats and guaranteed seat, as well as the seat price. To complete this stage, the user has to press **Create** and after that **Generate**.
+3. The last step in creating a real transport is setting up it's allotments from **All.Manager**. The user will have to fill in the start and end dates, the number of days between flights, the number of seats, and guaranteed seat, as well as the seat price. To complete this stage, the user has to press **Create,** and after that, **Generate**.
 
 <figure><img src="../.gitbook/assets/image (9) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (11) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
-4. The only problem with a real transport is the fact that the user has to create one for outbound and one for homebound. So in the end the user wil have created 2 Real Transports for use on one Normal Transport.
+4. The only problem with a real transport is the fact that the user has to create one for outbound and one for homebound. So in the end, the user will have created 2 Real Transports for use on one Normal Transport.
 
 ## Real Transport <a href="#real-transport" id="real-transport"></a>
 
@@ -45,15 +45,15 @@ This action has to be repeated but with the departure and arrival places inverse
 
 <figure><img src="../.gitbook/assets/image (15) (2).png" alt=""><figcaption></figcaption></figure>
 
-6. Last thing to do in this section is to setup the flights. Press the **Configure** button, select the departure date and then press **Test Search**
+6. The last thing to do in this section is to setup the flights. Press the **Configure** button, select the departure date and then press **Test Search**
 
 <figure><img src="../.gitbook/assets/image (720).png" alt=""><figcaption></figcaption></figure>
 
-The **Test Search** will display all available real transports flights. The user can narrow them down if they are too many, using the filters.
+The **Test Search** will display all available real transport flights. The user can narrow them down if there are too many, using the filters.
 
 <figure><img src="../.gitbook/assets/image (721).png" alt=""><figcaption></figcaption></figure>
 
-After the user has found the real transport it wanted, the settings can be saved. The same thing must be done for the second leg.
+After the user has found the real transport they wanted, the settings can be saved. The same thing must be done for the second leg.
 
 And lastly, after all these have been made, the user has to press **Update Flight Data** for both legs.
 
