@@ -62,7 +62,7 @@ Manages seat maps, airlines, and key operational rules.
 * **Airline** (only if Transport mode is **FLY**): Airline operating the transport.
 * **Transport Type**: Specifies transport category.
 * **Pickup point required**: Marks if pickup point selection is mandatory.
-* **Show on dashboard**: Checkbox to display transport on the system dashboard.
+* **Show on dashboard**: A checkbox to display transport on the system dashboard.
 * **Travel Length Correction**: Adjusts travel length (in days).
 * **Shift check-in date by +/- days**: Shifts the hotel check-in date.
 * **Hotel nights correction +/- days**: Adjusts the number of hotel nights linked to transport.
@@ -77,9 +77,9 @@ Manages seat maps, airlines, and key operational rules.
 
 Controls passenger name change options. When enabled, the system allows passenger name changes.
 
-* **Do Not Allow Name Change Office**: Restricts name changes in Office. This rule applies after payment.
+* **Do Not Allow Name Change Office**: Restricts name changes in the Office. This rule applies after payment.
 * **Do Not Allow Name Change Web**: Restricts name changes in online bookings.
-* **Name change deadline (days before departure)**: Defines how many days before departure the system will allow a passenger name change.
+* **Name change deadline (days before departure)**: Specifies how many days before departure the system allows a passenger name change.
 
 ***
 
@@ -105,7 +105,7 @@ Defines operational and financial settings for the transport.
 * **Reporting type**: Defines the reporting type.
 * **Transport Supplier**: Supplier providing the transport service.
 * **Transport cost currency**: Currency for transport costs.
-* **Dynamic Itineraries**: For dynamic transports, set the Dynamic Transport Supplement (DTS) on the **Leg**.
+* **Dynamic Itineraries**
 * **Use real transport allotments** (only if Dynamic itineraries are checked): Checkbox to enforce supplier allotments.
 * **Status**: Sets the transport as **Visible** or **Hidden**. For GDS transports: if you set status to **Hidden**, active flights are removed. Your brand should be set to **For Sale**.
 * **Hide as filter on lists**: Prevents the transport from being used as a filter in searches. It hides the transport in lists across the system.
@@ -115,14 +115,6 @@ Defines operational and financial settings for the transport.
 * **Use Change Rule Service**: Enforces system change rules for bookings.
 
 ***
-
-**7. Dynamic Transport Supplement**
-
-<figure><img src="../../../.gitbook/assets/image (8) (4).png" alt=""><figcaption></figcaption></figure>
-
-Adds pricing flexibility by handling supplements dynamically.
-
-* **Dynamic Supplement**: When enabled, the transport price is added as a supplement in the booking. Requires a DTS supplement.
 
 ### Brands <a href="#brands" id="brands"></a>
 

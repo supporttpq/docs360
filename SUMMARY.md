@@ -297,7 +297,6 @@
 * [Real Transports](real-transports/README.md)
   * [Introduction](real-transports/introduction.md)
   * [Dynamic transport baggage](real-transports/dynamic-transport-baggage.md)
-  * [Dynamic transport supplement](real-transports/dynamic-transport-supplement.md)
   * [Setup for Transport Dynamic Packaging (GDS)](real-transports/setup-for-transport-dynamic-packaging-gds.md)
   * [Departures](real-transports/departures/README.md)
     * [Add Base Cost on Real Transports](real-transports/departures/add-base-cost-on-real-transports.md)
@@ -362,6 +361,7 @@
 
 * [Users](users/users/README.md)
   * [Users Management](users/users/users-management.md)
+  * [Edit User](users/users/edit-user.md)
   * [User limited view](users/users/user-limited-view.md)
   * [Password expiration](users/users/password-expiration.md)
   * [Onboard a new employee (Tourpaq Office access)](users/users/onboard-a-new-employee-tourpaq-office-access.md)

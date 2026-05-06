@@ -47,17 +47,24 @@ Updates are deployed continuously and documented here as they go live.
 
 ### Release symbols
 
-* 🟡 **Changed** — Behaviour of an existing feature has changed.
 * 🟢 **New** — New feature or page added.
 * 🔵 **Improved** — Enhancement / Update to an existing feature.
-* ⚪ **Fixed** — Bug fix or correction.
 * 📄 **Docs** — Documentation added or updated with no product change.
 
 ### Recent release history
 
+
+
 {% updates format="full" %}
+{% update date="2026-06-09" %}
+## 2026-06 (Tourpaq v15.2)
+
+* 🔵 Extra Category - Display in Hotel List filter
+* 🔵 Extra Category - One product must be selected
+{% endupdate %}
+
 {% update date="2026-04-27" %}
-## 2026-04 (Documentation updates)
+## 2026-04 (Tourpaq v15.1)
 
 * 📄 **What's new** was added to track recent Tourpaq releases and documentation updates. See [What's new](./).
 * 📄 **Price List** was updated with clearer search behavior, display logic, and bulk pricing guidance. See [Price List](price-list/pricelist.md).
@@ -71,7 +78,7 @@ Updates are deployed continuously and documented here as they go live.
 * 🟢 Support user role. See [Users - Support User Role](users/users/support-user-role-gdpr-compliance.md)
 * 🟢 Payment file import/File import format. See [File import format](finance/payment-file-import/skjernbank-file-import-format.md).
 * 🔵 Hotel Release reporting. See [Hotel release - Reporting](hotel/hotel-creation/releases/hotel-release-reporting.md).
-* 🔵 Remove GMT Offset. See [Arrival Gateway](setup/arrival-gateways/) & [Departure Gateway](setup/departure-gateways/).&#x20;
+* 🔵 Remove GMT Offset. See [Arrival Gateway](setup/arrival-gateways/) & [Departure Gateway](setup/departure-gateways/).
 * 🔵 Improvement to the new price list. See [Price List](price-list/pricelist.md#price-list-search).
 * 🔵 Add code/name where missing in fields/tables. See [Special Offers](special-offers.md) & [Flight change](flight-change/).
 * 🔵 Rounding on Extras & Discount/Supplements. See the [Extras Category](extras-category/) & [Discounts/Supplements Categories](disc-suppl-categories.md).

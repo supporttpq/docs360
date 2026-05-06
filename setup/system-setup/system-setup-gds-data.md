@@ -32,10 +32,9 @@ The **GDS Data** section configures Tourpaq to integrate with Global Distributio
 
 ### **Transport Selection Rules**
 
-| **Setting**                                    | **Description**                                            |
-| ---------------------------------------------- | ---------------------------------------------------------- |
-| **Use Division PNR by Classes**                | Divides bookings by class to optimize pricing.             |
-| **Don’t Update DTS on Create GDS Reservation** | Prevents changes to DTS when a GDS reservation is created. |
+| **Setting**                     | **Description**                                |
+| ------------------------------- | ---------------------------------------------- |
+| **Use Division PNR by Classes** | Divides bookings by class to optimize pricing. |
 
 ***
 

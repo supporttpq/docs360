@@ -20,32 +20,36 @@ To improve security and comply with best practices, Tourpaq allows administrator
 * **Enable Password Validity**:
   * Go to **Edit User Page**
   * Check **“Enable password validity days”**
-  * Enter the number of days (e.g., 30)
+  * Enter the number of days (e.g., 30)&#x20;
 * **Automatic Tracking**:
   * The countdown starts from the moment the feature is enabled.
   * The countdown resets each time the user successfully changes their password.
 * **User Alerts & Enforcement**:
-  * System notifications are triggered based on days remaining until expiration.
+  * System notifications are triggered based on the days remaining until expiration.
 
 <figure><img src="../../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
 
-### **Examples / Scenarios**
+### Notes
+
+* If **Enable password validity days** is not checked, the password does not expire based on user-specific configuration.
+* **Fixed password validity days** may be controlled at system level and can override manual values.
+* These settings directly impact authentication behavior and security compliance policies.
+
+### **Examples/Scenarios**
 
 1. **Password expiration in more than 10 days**
    * No alerts are shown.
 2. **Password expiration in less than 10 days**
-   * The user receives an **alert after logging in** to remind them that their password is about to expire.
+   *   The user receives an **alert after logging in** to remind them that their password is about to expire.&#x20;
 
-<figure><img src="../../.gitbook/assets/10_days-28e9f119cefa05cc22920bb8531e9fef.jpg" alt=""><figcaption></figcaption></figure>
-
+       <figure><img src="../../.gitbook/assets/pass warning 9 days.png" alt=""><figcaption></figcaption></figure>
 3. **Password expiration in less than 3 days**
-   * The user is **redirected to the Change Password page** after login and must update the password.
+   *   The user is **redirected to the Change Password page** after login and must update the password.&#x20;
 
-<figure><img src="../../.gitbook/assets/3_days-c28af95d0ce4d00aed320ee9a5569f7e.jpg" alt=""><figcaption></figcaption></figure>
-
+       <figure><img src="../../.gitbook/assets/change pass.png" alt=""><figcaption></figcaption></figure>
 4. **Password expired**
 
 * The user sees an **expiration message at login**.
-* The user must contact an **administrator** to reset the password before they can access the system again.
+*   The user must contact an **administrator** to reset the password before they can access the system again.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/pass expired.png" alt=""><figcaption></figcaption></figure>
