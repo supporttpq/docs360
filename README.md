@@ -1,49 +1,26 @@
 ---
 description: Recent Tourpaq releases, fixes, improvements, and documentation updates.
-noIndex: true
+hidden: true
 icon: burst-new
 ---
 
 # What's new
 
-This page tracks recent Tourpaq releases and documentation updates.
+{% columns %}
+{% column %}
+## Tourpaq Release May 2026
 
-It complements [Welcome to the Tourpaq Manual](<README (2).md>) and [Getting Started with Tourpaq](<README (1).md>) by showing what changed most recently.
+New features, performance improvments and automation enhancements to help you work faster
 
-### Overview
+<a href="./#recent-release-history" class="button primary" data-icon="book-open">See What's New -></a>
+{% endcolumn %}
 
-Recent changes are grouped by monthly version.
+{% column %}
+<figure><img src=".gitbook/assets/screencapture-staging-bookingx-tourpaq.png" alt=""><figcaption></figcaption></figure>
+{% endcolumn %}
+{% endcolumns %}
 
-Each entry shows whether the update is new, changed, improved, fixed, breaking, or documentation-only.
 
-### Purpose
-
-This page gives new employees and existing teams one place to review recent Tourpaq changes.
-
-It also links each release item to the relevant manual page for full details.
-
-### Navigation
-
-This page is placed at the top of the manual sidebar.
-
-The newest month appears first.
-
-### Interface overview
-
-Each monthly release section includes:
-
-* a monthly version label
-* a release symbol
-* a short summary
-* a link to the relevant page
-
-### How versioning works
-
-Tourpaq releases follow a date-based versioning model (`YYYY-MM`).
-
-There are no major or minor version numbers.
-
-Updates are deployed continuously and documented here as they go live.
 
 ### Release symbols
 
@@ -53,9 +30,103 @@ Updates are deployed continuously and documented here as they go live.
 
 ### Recent release history
 
+```plaintext
+timeline
+    title Product Updates
 
+    2025-06 : New Price List Views
+            : Save / Update view support
+            : Manage Views dialog
+```
+
+## Changelog
+
+```mermaid
+timeline
+    title Recent Updates
+
+    v2.3.0 : Added multiple delete for saved views
+            : Improved export filters
+
+    v2.4.0 : Added agency-based extras filtering
+
+    v2.5.0 : Travelport integration released
+```
 
 {% updates format="full" %}
+{% update date="2026-05-08" tags="v15.2" %}
+##
+
+
+
+```mermaid
+timeline
+    title Product Updates
+
+    2025-01 : Initial release
+            : Basic booking flow
+
+    2025-03 : Added Travelport integration
+            : Introduced Rooming List XML export
+
+    2025-06 : New Price List Views
+            : Save / Update view support
+            : Manage Views dialog
+
+    2025-09 : Performance improvements
+```
+{% endupdate %}
+{% endupdates %}
+
+{% columns %}
+{% column width="25%" %}
+<details>
+
+<summary>All time</summary>
+
+
+
+</details>
+{% endcolumn %}
+
+{% column width="25%" %}
+<details>
+
+<summary>All categories</summary>
+
+<i class="fa-group-arrows-rotate" style="color:$primary;">:group-arrows-rotate:</i> New updates
+
+<i class="fa-dochub" style="color:violet;">:dochub:</i> Docs
+
+<i class="fa-integral" style="color:$warning;">:integral:</i> Integration
+
+<i class="fa-file-import" style="color:$success;">:file-import:</i>Improvments
+
+</details>
+{% endcolumn %}
+
+{% column width="25%" %}
+<details>
+
+<summary>All modules</summary>
+
+
+
+</details>
+{% endcolumn %}
+
+{% column %}
+<p align="center"><button type="button" class="button primary" data-action="search" data-icon="magnifying-glass">Search updates…</button></p>
+{% endcolumn %}
+{% endcolumns %}
+
+{% updates format="full" %}
+{% update date="2026-05-08" %}
+##
+
+
+{% endupdate %}
+
 {% update date="2026-06-09" %}
 ## 2026-06 (Tourpaq v15.2)
 
