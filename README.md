@@ -1,6 +1,7 @@
 ---
 description: Recent Tourpaq releases, fixes, improvements, and documentation updates.
 hidden: true
+noIndex: true
 icon: burst-new
 ---
 
