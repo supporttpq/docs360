@@ -2,8 +2,7 @@
 
 ## Tourpaq Manual
 
-* [What's new](README.md)
-* [Welcome to the Tourpaq Manual](<README (2).md>)
+* [Welcome to the Tourpaq Manual](README.md)
 * [Getting Started with Tourpaq](<README (1).md>)
   * [What is Tourpaq?](tourpaq-manual/readme/what-is-tourpaq.md)
   * [First Login & Account Setup](tourpaq-manual/readme/first-login-and-account-setup.md)
@@ -537,3 +536,4 @@
 * [Web Booking API flow](setup/web-booking-api-flow.md)
 * [Glossary](setup/glossary.md)
 * [Troubleshooting](setup/troubleshooting.md)
+* [What's new](setup/readme.md)
