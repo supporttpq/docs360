@@ -32,7 +32,7 @@ New features, performance improvments and automation enhancements to help you wo
 
 {% columns %}
 {% column width="25%" %}
-<details>
+<details open>
 
 <summary>All time</summary>
 
@@ -46,12 +46,20 @@ New features, performance improvments and automation enhancements to help you wo
 
 <summary>All categories</summary>
 
+<i class="fa-group-arrows-rotate" style="color:$primary;">:group-arrows-rotate:</i> New updates
+
+<i class="fa-dochub" style="color:violet;">:dochub:</i> Docs
+
+<i class="fa-integral" style="color:$warning;">:integral:</i> Integration
+
+<i class="fa-file-import" style="color:$success;">:file-import:</i>Improvments
+
 
 
 </details>
 {% endcolumn %}
 
-{% column %}
+{% column width="25%" %}
 <details>
 
 <summary>All modules</summary>
