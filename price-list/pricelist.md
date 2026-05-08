@@ -193,6 +193,103 @@ Only **Fix Quotas** within the selected date interval are available.
 The system displays all available TourpaqDK **→ FLY-RO transport → Hotel Marina → Double Room with Balcony → 7-night stays between 01–15 July 2025**, showing only confirmed prices.
 {% endhint %}
 
+### Save / Update View
+
+The Price List page supports saving custom table views.\
+This allows users to quickly reuse the same filters, column setup, and display configuration without reconfiguring the page each time.
+
+#### Accessing the View Menu
+
+The view actions are available from the options menu in the top-right corner of the page.
+
+To open the menu:
+
+1. Click the three-dot menu button.
+2. Select one of the available actions:
+   * **Save View**
+   * **Update View**
+   * **Export**
+
+<figure><img src="../.gitbook/assets/save_update PL.png" alt=""><figcaption></figcaption></figure>
+
+#### Save View
+
+The **Save View** action creates a new reusable view based on the current page configuration.
+
+The saved view stores:
+
+* Selected filters
+* Selected transports
+* Hotel and room filters
+* Table configuration
+* Visible columns
+* Other active display settings
+
+After saving:
+
+* The new view appears in the view tabs area above the table.
+* Users can switch between saved views directly from the tabs.
+
+Example:\
+`Automaiton`, `all-cols-test`, and `JPN` are saved views.
+
+#### Update View
+
+The **Update View** action updates the currently selected saved view with the latest page configuration.
+
+Use this when:
+
+* Filters were changed
+* Columns were adjusted
+* Display settings were modified
+* The existing saved view should reflect the new setup
+
+Behavior:
+
+* Only the currently active view is updated.
+* The view name remains unchanged.
+* The updated configuration becomes the default layout for that saved view.
+
+#### Manage Views
+
+<figure><img src="../.gitbook/assets/manage views pl.png" alt=""><figcaption></figcaption></figure>
+
+Existing saved views can also be renamed or deleted.
+
+To manage views:
+
+1. In the views bar, click the three dots (`⋯`) button.
+2. Select **Manage Views**.
+
+In the dialog that opens:
+
+* Rename a view by editing its name in the text field.
+* Delete a single view using the trash can icon on its row.
+* Use **Multiple delete** to remove several views at once.
+* Click **Save** to apply the changes.
+
+#### View Tabs
+
+Saved views are displayed as tabs above the results table.
+
+Behavior:
+
+* Clicking a tab loads the saved configuration.
+* The active view is highlighted.
+* Users can quickly switch between different working layouts.
+
+#### Typical Use Cases
+
+Examples of saved views:
+
+* Transport-specific pricing setups
+* Market-specific layouts
+* Hotel-specific configurations
+* QA/testing views
+* Operational pricing workflows
+
+This feature helps reduce repetitive filtering and improves workflow efficiency for users working with large pricing datasets.
+
 #### Transport and Hotel Selection Behavior
 
 * **All Brands Selected:**
