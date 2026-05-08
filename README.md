@@ -37,7 +37,7 @@ New features, performance improvments and automation enhancements to help you wo
 fsadmvslmdl
 
 {% code overflow="wrap" %}
-```mermaid
+```mmd
 :::mermaid
 timeline
     title What's New Timeline
