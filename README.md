@@ -32,11 +32,12 @@ New features, performance improvments and automation enhancements to help you wo
 
 {% updates format="full" %}
 {% update date="2026-05-08" tags="v15.2" %}
-## <i class="fa-group-arrows-rotate">:group-arrows-rotate:</i> Test <a href="#docs" id="docs"></a>
+##
 
 fsadmvslmdl
 
-```rst
+{% code overflow="wrap" %}
+```mermaid
 :::mermaid
 timeline
     title What's New Timeline
@@ -46,8 +47,8 @@ Reconciliation : v2.36.0
 Enhenchements  : v2.35.0
     2026-05-10 : fixed issue
 ::: 
-
 ```
+{% endcode %}
 {% endupdate %}
 {% endupdates %}
 
