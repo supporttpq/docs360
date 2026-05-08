@@ -6,6 +6,20 @@ icon: burst-new
 
 # What's new
 
+{% columns %}
+{% column %}
+## Tourpaq Release May 2026
+
+New features, performance improvments and automation enhancements to help you work faster
+
+<a href="./#recent-release-history" class="button primary">See What's New -></a>
+{% endcolumn %}
+
+{% column %}
+<figure><img src=".gitbook/assets/screencapture-staging-bookingx-tourpaq.png" alt=""><figcaption></figcaption></figure>
+{% endcolumn %}
+{% endcolumns %}
+
 This page tracks recent Tourpaq releases and documentation updates.
 
 It complements [Welcome to the Tourpaq Manual](<README (2).md>) and [Getting Started with Tourpaq](<README (1).md>) by showing what changed most recently.
