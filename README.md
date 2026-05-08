@@ -30,6 +30,27 @@ New features, performance improvments and automation enhancements to help you wo
 
 ### Recent release history
 
+{% updates format="full" %}
+{% update date="2026-05-08" tags="v15.2" %}
+## <i class="fa-group-arrows-rotate">:group-arrows-rotate:</i> Test <a href="#docs" id="docs"></a>
+
+fsadmvslmdl
+
+```rst
+:::mermaid
+timeline
+    title What's New Timeline
+    2026-05-20 : Auto paymnt
+Reconciliation : v2.36.0
+    2026-05-15 : Hotel Contarct Search
+Enhenchements  : v2.35.0
+    2026-05-10 : fixed issue
+::: 
+
+```
+{% endupdate %}
+{% endupdates %}
+
 {% columns %}
 {% column width="25%" %}
 <details>
@@ -53,10 +74,6 @@ New features, performance improvments and automation enhancements to help you wo
 <i class="fa-integral" style="color:$warning;">:integral:</i> Integration
 
 <i class="fa-file-import" style="color:$success;">:file-import:</i>Improvments
-
-<code class="expression">Integration</code>
-
-
 
 </details>
 {% endcolumn %}
