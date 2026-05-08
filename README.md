@@ -32,7 +32,7 @@ New features, performance improvments and automation enhancements to help you wo
 
 {% columns %}
 {% column width="25%" %}
-<details open>
+<details>
 
 <summary>All time</summary>
 
@@ -54,6 +54,8 @@ New features, performance improvments and automation enhancements to help you wo
 
 <i class="fa-file-import" style="color:$success;">:file-import:</i>Improvments
 
+<code class="expression">Integration</code>
+
 
 
 </details>
@@ -70,7 +72,7 @@ New features, performance improvments and automation enhancements to help you wo
 {% endcolumn %}
 
 {% column %}
-<button type="button" class="button primary" data-action="search" data-icon="magnifying-glass">Search updates…</button>
+<p align="center"><button type="button" class="button primary" data-action="search" data-icon="magnifying-glass">Search updates…</button></p>
 {% endcolumn %}
 {% endcolumns %}
 
