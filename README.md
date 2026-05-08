@@ -36,19 +36,16 @@ New features, performance improvments and automation enhancements to help you wo
 
 fsadmvslmdl
 
-{% code overflow="wrap" %}
-```mmd
-:::mermaid
-timeline
+<pre class="language-mmd" data-overflow="wrap"><code class="lang-mmd"><strong>```mermaid
+</strong>timeline
     title What's New Timeline
     2026-05-20 : Auto paymnt
 Reconciliation : v2.36.0
     2026-05-15 : Hotel Contarct Search
 Enhenchements  : v2.35.0
     2026-05-10 : fixed issue
-::: 
-```
-{% endcode %}
+``` 
+</code></pre>
 {% endupdate %}
 {% endupdates %}
 
