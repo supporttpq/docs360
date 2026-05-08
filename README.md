@@ -12,7 +12,7 @@ icon: burst-new
 
 New features, performance improvments and automation enhancements to help you work faster
 
-<a href="./#recent-release-history" class="button primary">See What's New -></a>
+<a href="./#recent-release-history" class="button primary" data-icon="book-open">See What's New -></a>
 {% endcolumn %}
 
 {% column %}
@@ -20,44 +20,7 @@ New features, performance improvments and automation enhancements to help you wo
 {% endcolumn %}
 {% endcolumns %}
 
-This page tracks recent Tourpaq releases and documentation updates.
 
-It complements [Welcome to the Tourpaq Manual](<README (2).md>) and [Getting Started with Tourpaq](<README (1).md>) by showing what changed most recently.
-
-### Overview
-
-Recent changes are grouped by monthly version.
-
-Each entry shows whether the update is new, changed, improved, fixed, breaking, or documentation-only.
-
-### Purpose
-
-This page gives new employees and existing teams one place to review recent Tourpaq changes.
-
-It also links each release item to the relevant manual page for full details.
-
-### Navigation
-
-This page is placed at the top of the manual sidebar.
-
-The newest month appears first.
-
-### Interface overview
-
-Each monthly release section includes:
-
-* a monthly version label
-* a release symbol
-* a short summary
-* a link to the relevant page
-
-### How versioning works
-
-Tourpaq releases follow a date-based versioning model (`YYYY-MM`).
-
-There are no major or minor version numbers.
-
-Updates are deployed continuously and documented here as they go live.
 
 ### Release symbols
 
@@ -67,9 +30,49 @@ Updates are deployed continuously and documented here as they go live.
 
 ### Recent release history
 
+{% columns %}
+{% column width="25%" %}
+<details>
 
+<summary>All time</summary>
+
+
+
+</details>
+{% endcolumn %}
+
+{% column width="25%" %}
+<details>
+
+<summary>All categories</summary>
+
+
+
+</details>
+{% endcolumn %}
+
+{% column %}
+<details>
+
+<summary>All modules</summary>
+
+
+
+</details>
+{% endcolumn %}
+
+{% column %}
+<button type="button" class="button primary" data-action="search" data-icon="magnifying-glass">Search updates…</button>
+{% endcolumn %}
+{% endcolumns %}
 
 {% updates format="full" %}
+{% update date="2026-05-08" %}
+##
+
+
+{% endupdate %}
+
 {% update date="2026-06-09" %}
 ## 2026-06 (Tourpaq v15.2)
 
