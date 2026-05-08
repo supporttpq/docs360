@@ -1,6 +1,6 @@
 ---
 description: Recent Tourpaq releases, fixes, improvements, and documentation updates.
-noIndex: true
+hidden: true
 icon: burst-new
 ---
 
@@ -30,22 +30,51 @@ New features, performance improvments and automation enhancements to help you wo
 
 ### Recent release history
 
+```plaintext
+timeline
+    title Product Updates
+
+    2025-06 : New Price List Views
+            : Save / Update view support
+            : Manage Views dialog
+```
+
+## Changelog
+
+```mermaid
+timeline
+    title Recent Updates
+
+    v2.3.0 : Added multiple delete for saved views
+            : Improved export filters
+
+    v2.4.0 : Added agency-based extras filtering
+
+    v2.5.0 : Travelport integration released
+```
+
 {% updates format="full" %}
 {% update date="2026-05-08" tags="v15.2" %}
 ##
 
-fsadmvslmdl
 
-<pre class="language-mmd" data-overflow="wrap"><code class="lang-mmd"><strong>```mermaid
-</strong>timeline
-    title What's New Timeline
-    2026-05-20 : Auto paymnt
-Reconciliation : v2.36.0
-    2026-05-15 : Hotel Contarct Search
-Enhenchements  : v2.35.0
-    2026-05-10 : fixed issue
-``` 
-</code></pre>
+
+```mermaid
+timeline
+    title Product Updates
+
+    2025-01 : Initial release
+            : Basic booking flow
+
+    2025-03 : Added Travelport integration
+            : Introduced Rooming List XML export
+
+    2025-06 : New Price List Views
+            : Save / Update view support
+            : Manage Views dialog
+
+    2025-09 : Performance improvements
+```
 {% endupdate %}
 {% endupdates %}
 
