@@ -137,7 +137,7 @@ If no offers are available, the system displays:
 
 > There are no entries to show!
 
-The section also supports the `Show Older` option for viewing older offers.
+The section also supports the `Show Older` option for viewing older offers. If checked, offers with homebound in the past will be shown.
 
 ***
 
