@@ -27,7 +27,7 @@ Use this page to verify customer data, update contact details, and understand bo
 
 ### Page layout
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (3) (1).png" alt="Customer Details layout"><figcaption><p>Customer profile (customer card) layout: contact details, history, and totals.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/customers.png" alt=""><figcaption></figcaption></figure>
 
 The page is typically split into three areas:
 
@@ -41,25 +41,25 @@ The page is typically split into three areas:
 
 {% stepper %}
 {% step %}
-#### Confirm you’re looking at the right person
+**Confirm you’re looking at the right person**
 
 Check the **name**, **email**, and **phone** first. If anything looks wrong, verify the customer number from the booking or from the [Customers](./) list.
 {% endstep %}
 
 {% step %}
-#### Update contact details (if needed)
+**Update contact details (if needed)**
 
 Edit the fields in the **Customer information** panel and click **Update** to save.
 {% endstep %}
 
 {% step %}
-#### Review bookings and related history
+**Review bookings and related history**
 
 Expand **Bookings** (and other panels like **Service Cases**) to see what is connected to the customer.
 {% endstep %}
 
 {% step %}
-#### Check totals
+**Check totals**
 
 Use the **Totals summary** panel to understand turnover/profit and booking counts.
 {% endstep %}
@@ -67,7 +67,7 @@ Use the **Totals summary** panel to understand turnover/profit and booking count
 
 ***
 
-### Customer information (left panel)
+## Customer information (left panel)
 
 This panel contains the customer’s contact details and internal indicators. It commonly has two tabs:
 
@@ -98,7 +98,7 @@ These fields are often used for reporting or internal workflows:
 
 ***
 
-### Customer activity & history (center panel)
+## Customer activity & history (center panel)
 
 The center panel contains expandable sections. What you see here depends on your setup.
 
@@ -119,9 +119,65 @@ Shows the customer’s bookings in a list/table.
 
 You can expand/collapse sections individually. If available, use **Close all** to collapse everything and reduce clutter.
 
+### Booking Features
+
+**Filters** - The `Filters` button allows filtering the booking list.
+
+**Show Older** - The `Show Older` option displays older or archived bookings for the customer. If checked, bookings with homebound in the past will be shown.
+
+**Pagination** - Pagination controls allow navigation between booking pages and selection of the number of entries displayed per page.
+
 ***
 
-### Totals summary (right panel)
+### Offers Section
+
+Displays customer-related offers.
+
+If no offers are available, the system displays:
+
+> There are no entries to show!
+
+The section also supports the `Show Older` option for viewing older offers.
+
+***
+
+### Service Cases Section
+
+Displays service cases associated with the customer.
+
+This section can contain:
+
+* Open service cases
+* Closed service cases
+* Customer support-related records
+
+***
+
+### Bonus Packages Section
+
+Displays bonus packages assigned to the customer.
+
+Examples may include:
+
+* Loyalty packages
+* Campaign bonuses
+* Promotional packages
+
+***
+
+### Catalog Orders Section
+
+Displays catalog orders related to the customer.
+
+This section may contain:
+
+* Printed catalog requests
+* Marketing material orders
+* Campaign catalog distributions
+
+***
+
+## Totals summary (right panel)
 
 This panel is a financial and volume overview based on the customer’s bookings.
 
