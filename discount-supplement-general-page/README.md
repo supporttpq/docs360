@@ -55,7 +55,7 @@ The purpose of this page is to:
 
 ## 📸 Screenshot – Discounts/Supplements Overview
 
-<figure><img src=".gitbook/assets/Disc overvier.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Disc overvier.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -70,7 +70,7 @@ The page is divided into two main areas:
 
 ## 📸 Screenshot – Filter Section
 
-<figure><img src=".gitbook/assets/disc filter section.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/disc filter section.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -106,7 +106,7 @@ The page is divided into two main areas:
 
 ## 📸 Screenshot – Discounts/Supplements List
 
-<figure><img src=".gitbook/assets/disc list.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/disc list.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
