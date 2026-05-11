@@ -1,14 +1,14 @@
 # Resources
 
-### Overview&#x20;
+### Overview
 
 The resource tab is used to limit the availability of an extra. This is mainly due to the fact that certain products are available only to certain transports, destinations or hotels.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The limit number of resources that can be added is 100. If the number of resources of the same type exceeds this number, a warning message will appear at the bottom of the page.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Workarounds
 
@@ -40,7 +40,7 @@ It is recommended to analyze whether the configuration can be optimized before a
 
 This behavior is available by default to all the other companies in the system. It can be set on System Setup -> General Information -> Other Settings
 
-<figure><img src="../../../.gitbook/assets/image (277).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (277).png" alt=""><figcaption></figcaption></figure>
 
 ### **Resources Overview:**
 
@@ -59,7 +59,7 @@ This behavior is available by default to all the other companies in the system. 
 | **Transport Suppliers** | Specifies the transport supplierss associated as resources                                                           |
 | **Use as excluded**     | If checked, then the extras are eligible for all except the ones listed!                                             |
 
-Each section has an **Edit** button allowing detailed configuration for that specific resource.&#x20;
+Each section has an **Edit** button allowing detailed configuration for that specific resource.
 
 ***
 

@@ -15,7 +15,7 @@ This functionality enables:
 **Activation**
 
 The feature is enabled in **Tourpaq Office → Product Category → Edit Category** by selecting the checkbox\
-&#xNAN;**“Accepts multiple product selection.”**
+\&#xNAN;**“Accepts multiple product selection.”**
 
 Once activated, both the web and office booking systems allow multiple products to be selected within the same product category.
 
@@ -27,7 +27,7 @@ This scenario covers cases where a customer wants to purchase several products t
 **Example:**\
 A guest can select _Breakfast_, _Lunch_, and _Dinner_ within the **Meal** category during the booking process.
 
-<figure><img src="../../.gitbook/assets/image (168).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (168).png" alt=""><figcaption></figcaption></figure>
 
 **2. Upgrade Autoselected Product**
 
@@ -39,7 +39,7 @@ The customer can then:
 
 This ensures flexibility in product selection while maintaining a guided booking flow.
 
-<figure><img src="../../.gitbook/assets/image (169).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (169).png" alt=""><figcaption></figcaption></figure>
 
 **3. Unremovable Autoselected Product Hidden in Room Price**
 
@@ -52,7 +52,7 @@ Tourpaq also supports a combined configuration of:
 This combination is typically used when the autoselected product has a **0 DKK** price value.\
 The product price is included in the room price and remains invisible to the customer, while other products in the same category remain selectable.
 
-<figure><img src="../../.gitbook/assets/image (170).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (170).png" alt=""><figcaption></figcaption></figure>
 
 > 📝 \*_Note:_ **Please note a scenario that is not supported by the Tourpaq system.**
 
@@ -73,7 +73,7 @@ If such a setup is used, the system will display incorrect price differences.
 > The system will display a warning when the user tries to activate both\
 > “Agency hide autoselected prices” and “Multiple product selection” simultaneously, as the user must take responsibility for the consequences of such a setup.
 
-<figure><img src="../../.gitbook/assets/image (171).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (171).png" alt=""><figcaption></figcaption></figure>
 
 **Known Issue**
 

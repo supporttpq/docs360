@@ -192,7 +192,7 @@ Displays all tee times for today:
 ### Related documentation
 
 * [**Tee Times**](./) – How agents assign tee times to passengers in a booking.
-* [**Teetime**](../../../extras-setup/extras/teetime.md) – How tee-time products and time-slot availability are configured.
+* [**Teetime**](../../../extras-setup/extras-general-page/extras/teetime.md) – How tee-time products and time-slot availability are configured.
 * [**Tee Time extras list**](../../../tee-time-extras-list/) – Export/reporting for tee time bookings.
 
 ***

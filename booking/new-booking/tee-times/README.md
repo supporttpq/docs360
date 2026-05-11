@@ -85,7 +85,7 @@ The **Tee Times** tab in **Tourpaq Office** is used to create a **tee time booki
 
 ### **Related documentation**
 
-* [**Teetime**](../../../extras-setup/extras/teetime.md) – How tee-time products and time-slot availability are configured (Generic Allotment).
+* [**Teetime**](../../../extras-setup/extras-general-page/extras/teetime.md) – How tee-time products and time-slot availability are configured (Generic Allotment).
 * [**Golf Course Check‑In Module**](golf-course-check-in-module.md) – Self-service and staff check-in views for tee times.
 
 ***

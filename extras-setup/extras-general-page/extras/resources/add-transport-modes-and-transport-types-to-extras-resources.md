@@ -27,11 +27,11 @@ This is useful when selling extras such as golf bags, infant prices, or seat sel
 
 ### Screenshot
 
-<figure><img src="../../../.gitbook/assets/image (603).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (603).png" alt=""><figcaption></figcaption></figure>
 
 ### Transport Modes
 
-Transport Mode allows you to restrict results to specific modes of transportation, such as FLY (Flight) or Bus.&#x20;
+Transport Mode allows you to restrict results to specific modes of transportation, such as FLY (Flight) or Bus.
 
 If a booking does not match the selected Transport Mode, the extra will not be displayed.
 

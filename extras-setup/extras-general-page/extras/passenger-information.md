@@ -21,7 +21,7 @@ The purpose of this page is to:
 * Control when specific information appears (based on stay dates or booking dates).
 * Maintain brand-specific messaging if needed.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 | Field / Button      | Description                                                         |
 | ------------------- | ------------------------------------------------------------------- |
@@ -67,7 +67,7 @@ If booking dates are empty, the rule is triggered based only on stay dates.
 
 ⚠ Deleting a rule removes it permanently and it will no longer appear in booking flow.
 
-### &#x20;Example Scenarios
+### Example Scenarios
 
 #### Example 1 – Informational Only
 
@@ -96,15 +96,15 @@ Passengers traveling between April 1 and May 31, 2026 will see a message about f
 Only bookings made during 2025 for travel in 2025–2026 will show this message and require confirmation.
 
 {% hint style="info" %}
-#### Passenger information allows overlapping periods <a href="#passenger-information-allows-overlapping-periods" id="passenger-information-allows-overlapping-periods"></a>
+**Passenger information allows overlapping periods**
 
 Ex: If fixed info is made for the entire season (31.12.25 - 31.12.26) - Extra customer info, and another info is made for a short period (01.04.26 - 31.05.26) - Free baggage for children. Even if the periods overlap, the system will allow and display both on the ticket.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Passenger information on the ticket:
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

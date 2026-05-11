@@ -29,22 +29,18 @@ When selecting a product that is flagged as a **package** for a passenger, all p
 
 For a product to be set as **package**, you need to check the option inside **Edit Product Page → Basic Setup → Other Settings → Package Type**.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 You can modify the products that are inside the package in **Edit Product Page → Package Content** tab.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Warning messages**
 
 *   If you select the **package**, you cannot select the products inside the package as well. You will get a warning message like this:
 
-
-
     <figure><img src="https://tourpaq.gitbook.io/staging-tourpaq-docs/~gitbook/image?url=https%3A%2F%2Fdocs.tourpaq.com%2Fassets%2Fimages%2Fpackage_and_product_warning-ecd616e463d185d98ad5ac65be13b1a3.png%3Fwidth%3D1797&#x26;width=768&#x26;dpr=3&#x26;quality=100&#x26;sign=b7605443&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 *   All products inside the package must be **eligible** for the package to be selected. If they are not all eligible, you will get this warning message:
-
-
 
     <figure><img src="https://tourpaq.gitbook.io/staging-tourpaq-docs/~gitbook/image?url=https%3A%2F%2Fdocs.tourpaq.com%2Fassets%2Fimages%2Fpackage_and_product_warning_2-182f4c506926ede24ffbcb6c77f7a3c9.png%3Fwidth%3D1809&#x26;width=768&#x26;dpr=3&#x26;quality=100&#x26;sign=d66c7cf6&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 

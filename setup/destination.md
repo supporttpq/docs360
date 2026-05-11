@@ -21,7 +21,7 @@ This keeps bookings, reporting, and availability logic aligned with the correct 
 
 {% stepper %}
 {% step %}
-#### Fill in the core fields
+**Fill in the core fields**
 
 At minimum, fill in:
 
@@ -32,7 +32,7 @@ At minimum, fill in:
 {% endstep %}
 
 {% step %}
-#### (Optional) Add geographic and web fields
+**(Optional) Add geographic and web fields**
 
 Use these when you need mapping, SEO, or integration support:
 
@@ -42,7 +42,7 @@ Use these when you need mapping, SEO, or integration support:
 {% endstep %}
 
 {% step %}
-#### **Customizable Fields:**
+**Customizable Fields:**
 
 * **Default Name**
 * **List Name**
@@ -51,7 +51,7 @@ Use these when you need mapping, SEO, or integration support:
 {% endstep %}
 
 {% step %}
-#### Save
+**Save**
 
 Click **Save** to create the destination.
 {% endstep %}
@@ -224,4 +224,4 @@ Use **Passenger Information**:
 ### Related pages
 
 * [Resorts](resorts.md)
-* [Extras](../extras-setup/extras/)
+* [Extras](../extras-setup/extras-general-page/extras/)

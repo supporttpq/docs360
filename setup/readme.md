@@ -140,7 +140,7 @@ timeline
 
 * 📄 **What's new** was added to track recent Tourpaq releases and documentation updates. See [What's new](./).
 * 📄 **Price List** was updated with clearer search behavior, display logic, and bulk pricing guidance. See [Price List](../price-list/pricelist.md).
-* 📄 **Allotments** was updated with manual allotments, linked-to-transport allotments, and generic allotment guidance for Extras. See [Allotments](../extras-setup/extras/allotments.md).
+* 📄 **Allotments** was updated with manual allotments, linked-to-transport allotments, and generic allotment guidance for Extras. See [Allotments](../extras-setup/extras-general-page/extras/allotments.md).
 * 📄 **Print Tickets** was updated with clearer single-booking and bulk reprint workflows. See [Print Tickets](../tickets/print-tickets.md).
 * 📄 **Autobilling** was updated with prerequisites, invoice generation flow, lifecycle states, and troubleshooting. See [Autobilling](../autobilling/).
 * 🟢 Editable board hotel allotment. See [Hotel Allotment](../hotel/hotel-creation/hotel-allotments/editable-board.md).
