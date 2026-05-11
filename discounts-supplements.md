@@ -85,7 +85,7 @@ A manual discount/supplement will be manually chosen for a passenger; it can be 
 
 #### **Overview**
 
-<figure><img src=".gitbook/assets/image (13) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/disc name.png" alt=""><figcaption></figcaption></figure>
 
 * Discount or Suppl: choose between either discount or supplement behaviour
 * General/Specified: choose between the general or specific behaviour
@@ -106,9 +106,9 @@ A manual discount/supplement will be manually chosen for a passenger; it can be 
 * Supplier: select the supplier of the disc/suppl
 * Family discount: set the disc/suppl to behave as a family discount. This discount applies only if the first passager has the age between age rage from the discount's price section. Otherwise, a warning that the first passager doesn't meet the requirements is showing and the booking's status is changed in "Error".
 * Include in basic price: add the price of the supplement to the price of the room, while hiding it from the guest
-* Used for price adjust: if a discount/supplement is used for price adjustment it can not be removed by a user in WB
+*   Used for price adjust: if a discount/supplement is used for price adjustment it can not be removed by a user in WB&#x20;
 
-<figure><img src=".gitbook/assets/image (14) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/alcpd.png" alt=""><figcaption></figcaption></figure>
 
 The entities having this checkbox active will:
 
@@ -474,7 +474,7 @@ A bonus code is a text code that allows a visitor to book a trip with a certain 
 
 Tourpaq system allows multiple discounts to use the same bonus code. If all discounts are available they will all be applied by using the bonus code. The discounts can also be set as not combinable with other discounts, this would lead in applying only the most advantageous discount for the current booking (not per passenger but on the entire booking).
 
-<figure><img src=".gitbook/assets/image (19) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/bonus code.png" alt=""><figcaption></figcaption></figure>
 
 To set a coded discount, first set the code name, name, list text and bonus code name. The text chosen for the bonus code has to be between 4 and 20 characters long
 

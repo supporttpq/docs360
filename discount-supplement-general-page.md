@@ -48,9 +48,8 @@ The purpose of this page is to:
 
 ### Navigation
 
-```
-Setup → Discounts/Supplements
-```
+<pre><code><strong>Extras Setup → Discounts/Supplements
+</strong></code></pre>
 
 ***
 
