@@ -1,4 +1,4 @@
-# Discounts/Supplements
+# Discounts/Supplements combination in Tourpaq
 
 ## Overview
 
@@ -476,7 +476,7 @@ Tourpaq system allows multiple discounts to use the same bonus code. If all disc
 
 <figure><img src=".gitbook/assets/image (19) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-To set a coded discount, first set the code name, plain text, list text and bonus code name. The text chosen for the bonus code has to be between 4 and 20 characters long
+To set a coded discount, first set the code name, name, list text and bonus code name. The text chosen for the bonus code has to be between 4 and 20 characters long
 
 General settings for a bonus code discount to perform as required are:
 
