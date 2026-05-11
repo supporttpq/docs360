@@ -258,8 +258,6 @@ Rules:
 {% hint style="info" %}
 #### Note
 
-The **Restricted Seating** functionality must be activated by a **Super Administrator / Tourpaq** before it becomes available in the system.
-
 The seating restriction functionality needs to be activated by Tourpaq. Please contact Tourpaq if you want this functionality turned on.
 {% endhint %}
 

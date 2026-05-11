@@ -27,7 +27,7 @@ This is useful when selling extras such as golf bags, infant prices, or seat sel
 
 ### Screenshot
 
-<figure><img src="../../../../.gitbook/assets/image (603).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (603).png" alt=""><figcaption></figcaption></figure>
 
 ### Transport Modes
 
@@ -131,5 +131,5 @@ No. These filters control what is offered during booking and changes. They do no
 
 ### Related pages
 
-* [Extras](../)
+* [Extras](../extras.md)
 * [Resources](./)

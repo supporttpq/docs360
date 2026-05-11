@@ -224,4 +224,4 @@ Use **Passenger Information**:
 ### Related pages
 
 * [Resorts](resorts.md)
-* [Extras](../extras-setup/extras-general-page/extras/)
+* [Extras](../extras-setup/extras-general-page/extras.md)

@@ -192,5 +192,5 @@ Not necessarily:
 
 ### See also
 
-* [Extras](../extras-setup/extras-general-page/extras/)
+* [Extras](../extras-setup/extras-general-page/extras.md)
 * [Customer Information Booking Flow](customer-information-booking-flow.md)

@@ -24,7 +24,7 @@ Common use cases:
 * **Change log**: Why a price, resource, or allotment was changed.
 * **Team instructions**: What to do during cancellations, re-bookings, or manual handling.
 
-<figure><img src="../../../.gitbook/assets/image (585).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (585).png" alt=""><figcaption></figcaption></figure>
 
 * Input Type: Free-form text.
 * Usage Instructions:
@@ -94,6 +94,6 @@ After editing the Notes text area, click **Save.**
 
 ### Related pages
 
-* [Extras](./)
+* [Extras](extras.md)
 * [Extras – Communication](communication.md)
-* [Service Cases](../../../service-cases/)
+* [Service Cases](../../service-cases/)
