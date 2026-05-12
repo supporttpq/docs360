@@ -213,6 +213,39 @@ _Booking gift card payment: allow gift cards across agencies when All brands is 
 
 It will be automatically associated with the **currently selected company** in the system.
 
+### Use case settings for cash receipts
+
+#### Sales cash in Tourpaq
+
+For sales cash receipts in Booking Office, configure the payment method with the following settings:
+
+1. **Debit**
+2. **Active**
+3. **Cash payment**
+
+These settings allow the payment method to be used for cash registrations directly in Booking Office.
+
+<figure><img src="../.gitbook/assets/sales cash (1).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" icon="lightbulb-exclamation-on" %}
+The payment method must be marked as **Active** to be available during booking payments.
+{% endhint %}
+
+***
+
+#### Guide cash in app
+
+For guide cash receipts in the Guide app, configure the payment method with the same settings as above, and additionally enable:
+
+4. **Use for online payment**
+5. **Guide payment**
+
+These additional settings make the payment method available for cash handling in the Guide application.
+
+{% hint style="warning" icon="triangle-exclamation" %}
+If **Guide payment** is not enabled, the payment method will not be available in the Guide app.
+{% endhint %}
+
 ## **Integration & Automation Controls**
 
 #### **Online Payment Gateways**
