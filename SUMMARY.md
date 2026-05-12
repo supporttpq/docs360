@@ -436,6 +436,7 @@
   * [Create an extra with stay days functionality and select it in bookings](extras-setup/extras-general-page/create-an-extra-with-stay-days-functionality-and-select-it-in-bookings.md)
   * [Multiple product selection in product category](extras-setup/extras-general-page/multiple-product-selection-in-product-category.md)
   * [Gala Dinner](extras-setup/extras-general-page/gala-dinner.md)
+  * [Priceing per pax on extras](extras-setup/extras-general-page/priceing-per-pax-on-extras.md)
 
 ***
 
