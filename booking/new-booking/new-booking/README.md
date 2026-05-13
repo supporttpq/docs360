@@ -663,6 +663,42 @@ The passenger grid contains one row per passenger. Each row includes multiple fi
 * **System Behavior:** Age is automatically calculated from DOB. Age determines pricing category. For lead passenger, auto-populated from Customer Details DOB field when booking is first saved. System recalculates pricing when DOB is changed.
 * **Related Functionality:** Links to age threshold configuration in Brand settings. Affects Price List calculations. Required for airline passenger data (APIS). Determines child/infant categorization.
 
+**Age**
+
+* Passenger age
+*   Automatically calculated based on the date of birth entered.&#x20;
+
+    When a **Date of Birth** is entered:
+
+    * The system automatically calculates the passenger age.
+    * Age may affect:
+      * Pricing
+      * Insurance eligibility
+      * Accommodation rules
+      * Child/adult classification
+
+**Cancellation Insurance (CCL. INS.)**
+
+Used to assign cancellation protection for the passenger.
+
+Possible options may include:
+
+* No cancellation insurance
+* Standard cancellation coverage
+* Extended cancellation coverage
+* The field appear with the _**'- -'**_ input selected by default
+
+**Travel Insurance**
+
+Used to assign the travel insurance package connected to the booking.
+
+Insurance availability may depend on:
+
+* Passenger age
+* Destination
+* Supplier configuration
+* Product setup
+
 **Extras Columns (Per Category)**
 
 * **Field Type:** Dropdown selector (multiple columns)
