@@ -6,17 +6,136 @@ This section explains how companies, brands, and users are created and configure
 
 ***
 
-### **How It Works**
+## **How It Works**
 
 #### **Company Creation**
 
-* **Superadministrator only:** Only a Superadministrator can create a new company. Users who need a new company should contact Tourpaq Support.
-* **Manual Setup:**
-  * Fill in basic company details: Name, Address, Country, Postcode, IBAN, CVR, Phone, Fax.
-  * After the company is created, a **Brand** and an **Admin user** must be created first.
-* **Automated Setup:**
-  * Minimal company and user info can be entered via API.
-  * At least one agency must be created, which automatically creates a WebUser and Windows Service user.
+A company can be created only by a Superadministrator user. Those who wish to create a new company are advised to contact Tourpaq Support. A company can be created in two ways:
+
+#### **Manual Setup**
+
+This page describes the **New Company** screen used to create a new company account, configure subscription settings, and define the initial administrator user.
+
+<figure><img src="../.gitbook/assets/13.05.2026_11.28.23_REC.png" alt=""><figcaption></figcaption></figure>
+
+The form is split into two main sections: company details (left side) and account and subscription settings (right side). At the bottom, there is an optional section for defining brand-level information.
+
+***
+
+### Overview
+
+The New Company screen is used for:
+
+* Creating a new company in the system
+* Defining billing and contact information
+* Assigning subscription plan and user limits
+* Creating the first administrator user
+* Optionally configuring brands and agency-related entries
+* Fill in basic company details: Name, Address, Country, Postcode, IBAN, CVR, Phone, Fax.
+* After the company is created, a **Brand** and an **Admin user** must be created first.
+
+### Company Information (Left Side)
+
+Name \* - The official company name. This is a required field and is used as the primary identifier of the company in the system.
+
+Address - The full postal address of the company.
+
+Country - Dropdown selection for the company’s country. This value can influence localization and formatting rules.
+
+Currency - Defines the default currency used for financial data within the company.
+
+Postcode - Postal code field. Depending on configuration, it may include a selectable region and a free-text input.
+
+IBAN - International Bank Account Number used for billing and payment processing.
+
+CVR - Company registration number or tax identification number, depending on country rules.
+
+Phone - Primary contact phone number for the company.
+
+Fax - Optional fax number.
+
+***
+
+### Subscription and Admin User (Right Side)
+
+Plan Type \* - Defines the subscription plan assigned to the company. Default value is typically **TourpaqBasic**.
+
+Max Users - Sets the maximum number of users allowed under the selected plan.
+
+Has Support - Checkbox that enables or disables support entitlement for the company.
+
+Uses Elastic API - Checkbox that enables integration with Elastic API services for the company.
+
+***
+
+### Administrator Account
+
+This section defines the first user who will manage the company.
+
+User Name \* - Unique username for login access.
+
+First Name \* - First name of the administrator user.
+
+Last Name \* - Last name of the administrator user.
+
+Email \* - Email address used for login and notifications.
+
+Password \* - Initial password for the administrator account.
+
+Confirm Password \* - Must match the password field to ensure correctness.
+
+***
+
+### Brand Configuration Table
+
+At the bottom of the screen, there is a table used to define company-level brand entries.
+
+#### Columns
+
+* Brand Name: Name of the brand under the company
+* Phone: Contact number for the brand
+* Email: Contact email for the brand
+* Address: Physical address of the brand
+* Theme: UI theme assigned to the brand
+* Template: Layout or configuration template used by the brand
+
+***
+
+### Actions
+
+Save - Creates the company with the provided configuration. All required fields must be valid before saving.
+
+Cancel - Discards all changes and exits the form without creating a company.
+
+Add Agency - Adds a new brand or agency entry to the bottom table. Each entry can later be configured with its own contact and display settings.
+
+***
+
+### Validation Rules
+
+* Fields marked with \* are required
+* Password and Confirm Password must match
+* Email must be in valid format
+* Username must be unique in the system
+* Plan Type must be selected before saving
+
+***
+
+### Notes
+
+After saving, the system will:
+
+* Create the company record
+* Generate the initial admin user
+* Apply subscription limits
+* Enable selected integrations (if checked)
+
+If agency or brand entries are added, they will be linked to the newly created company.
+
+#### **Automated Setup**
+
+* Minimal company and user info can be entered via API.
+* At least one agency must be created, which automatically creates a WebUser and Windows Service user.
 * **Editing Company Info:** Once created, an Administrator can update company details (Name, Address, Country, Postcode, IBAN, CVR, Phone, Fax).
 
 ***
@@ -54,7 +173,9 @@ Each brand requires specific metadata for proper booking, ticketing, insurance, 
 
 *
 
-    <figure><img src="../.gitbook/assets/customized-stars-header-122824a932809b8c5272a49b5b95b3cf.png" alt=""><figcaption></figcaption></figure>
+```
+<figure><img src="../.gitbook/assets/customized-stars-header-122824a932809b8c5272a49b5b95b3cf.png" alt=""><figcaption></figcaption></figure>
+```
 
 #### **User Creation**
 
