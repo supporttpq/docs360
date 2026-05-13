@@ -165,6 +165,10 @@ What happens after sending:
 * If **self-booking** is enabled for your setup, the customer email includes a **Booking** button/link.
 
 <figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Send offer"><figcaption><p>Send the offer and confirm it was delivered (sent date is logged).</p></figcaption></figure>
+
+{% hint style="info" %}
+Offers are sent from the sales agent email address if the sales agent has an email inserted. If there is no email inserted for the user profile, the offer will be sent from brand email (User > Brand).
+{% endhint %}
 {% endstep %}
 {% endstepper %}
 
