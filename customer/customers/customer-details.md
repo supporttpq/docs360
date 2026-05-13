@@ -2,10 +2,21 @@
 description: >-
   View and edit a customer profile (customer card) in Tourpaq Office. See
   contact details, bookings and activity history, plus turnover/profit totals
-  and key CRM metrics.
 ---
 
 # Customer Details
+
+The Customer Details page is the main profile page for managing customer-related information in Tourpaq.
+
+It centralizes:
+
+* Customer contact information
+* Bookings and offers
+* Service cases
+* Financial totals
+* Internal customer indicators
+
+> The available fields and sections may vary depending on permissions and company configuration.
 
 {% hint style="info" %}
 **How to access:** Open a customer profile by going to [Customers](./) and clicking the customer’s **Customer No**.
@@ -15,13 +26,17 @@ description: >-
 
 ### Overview
 
-The **Customer Details** page is the customer profile (customer card) in Tourpaq Office CRM. It shows everything Tourpaq knows about one customer in one place:
+The **Customer Details** page is the customer profile (customer card) in Tourpaq Office. It shows everything Tourpaq knows about one customer in one place:
 
 * Contact details (name, email, phone, address)
 * Activity and history (bookings, offers, service cases, and more)
-* Totals and CRM metrics (turnover, profit, pax counts, and breakdowns)
+* Totals metrics (turnover, profit, pax counts, and breakdowns)
 
 Use this page to verify customer data, update contact details, and understand booking history and customer value.
+
+{% hint style="info" %}
+The Customer Details page is typically used by sales agents, customer service teams, operations staff, and administrators.
+{% endhint %}
 
 ***
 
@@ -97,24 +112,35 @@ The Details section contains customer profile information and is divided into tw
 
 Contains the main customer information fields:
 
-| Field         | Description                           |
-| ------------- | ------------------------------------- |
-| Phone         | Customer phone number                 |
-| First Name    | Customer first name                   |
-| Last Name     | Customer last name                    |
-| Address       | Street address                        |
-| Country       | Customer country                      |
-| Zip code      | Postal code                           |
-| City          | City name                             |
-| Gained Bonus  | Registered customer bonus amount      |
-| Email         | Customer email address                |
-| Special Guest | Marks the customer as a special guest |
+| Field             | Description                           |
+| ----------------- | ------------------------------------- |
+| **Phone**         | Customer phone number                 |
+| **First Name**    | Customer first name                   |
+| **Last Name**     | Customer last name                    |
+| **Address**       | Street address                        |
+| **Country**       | Customer country                      |
+| **Zip code**      | Postal code                           |
+| **City**          | City name                             |
+| **Gained Bonus**  | Registered customer bonus amount      |
+| **Email**         | Customer email address                |
+| **Special Guest** | Marks the customer as a special guest |
 
 Additional information displayed below the fields:
 
 * Happiness overall
 * Happiness represent.
 * Total Complaints
+
+#### Behaviour
+
+* Changes are not saved automatically
+* Click **Update** to save changes
+* Some fields may be read-only depending on permissions
+* Certain fields may be synchronized with external integrations
+
+{% hint style="warning" %}
+Avoid storing sensitive personal information in free-text note fields unless required by company policy.
+{% endhint %}
 
 #### Secondary Tab
 
@@ -246,13 +272,159 @@ You’ll typically find:
 
 Use this area to quickly understand the customer’s overall value and what makes up the totals.
 
+#### Totals Behaviour
+
+* Totals are calculated from bookings linked to the customer profile
+* Calculation rules may vary depending on company setup
+* Cancelled bookings may or may not be included
+* Financial visibility may depend on permissions
+
+## Customer Updates
+
+### Updating Customer Information
+
+To update customer information:
+
+1. Open the customer profile
+2. Modify the required fields
+3. Click **Update**
+
+#### Important
+
+* Unsaved changes are lost when leaving the page
+* Email and phone formatting should follow company standards
+* Updating customer information may affect exports, reports, and integrations
+
 ***
 
-### Tips
+## Booking Linkage
 
-* If you don’t see expected sections (Offers, Bonus Packages, etc.), it may be due to **permissions** or because your organization does not use that module.
-* If totals look outdated after changes, refresh the page or reopen the customer.
-* If you discover duplicate customer profiles, use [Merge customers](../../merge-customers.md) (if available to your role).
+Bookings are linked to customer profiles during the booking workflow.
+
+### Behaviour
+
+* A booking connected to a customer automatically appears in Customer Details
+* Multiple bookings can be linked to the same customer
+* Customer totals update based on linked bookings
+
+#### Common Scenarios
+
+| Scenario          | Behaviour                                         |
+| ----------------- | ------------------------------------------------- |
+| Booking cancelled | May still affect totals depending on setup        |
+| Booking deleted   | May be removed from customer history              |
+| Customer merged   | Bookings are reassigned to the remaining customer |
+
+***
+
+## Merge Customers
+
+The Merge Customers functionality is used to combine duplicate customer profiles.
+
+### Typical Use Cases
+
+Duplicate profiles may occur when:
+
+* A customer is created multiple times
+* Different agents create separate profiles
+* Customer data is imported externally
+
+***
+
+### Merge Workflow
+
+1. Open the **Merge Customers** page
+2. Select the source customer
+3. Select the target customer
+4. Review the merge information
+5. Confirm the merge
+
+***
+
+### Merge Behaviour
+
+| Data Type        | Behaviour                                 |
+| ---------------- | ----------------------------------------- |
+| Bookings         | Reassigned to the remaining customer      |
+| Offers           | Reassigned                                |
+| Notes            | Preserved                                 |
+| Service Cases    | Preserved                                 |
+| Removed customer | Deleted or deactivated depending on setup |
+
+{% hint style="warning" %}
+Merge operations is not reversible.
+{% endhint %}
+
+***
+
+## Search Behaviour
+
+Customers can typically be searched using:
+
+* Name
+* Email address
+* Phone number
+* Customer ID
+
+***
+
+## Common Workflows
+
+### Update Customer Contact Information
+
+1. Open the customer profile
+2. Edit the contact fields
+3. Click **Update**
+4. Verify the changes
+
+***
+
+### Mark a Customer as Special Guest
+
+1. Open the customer profile
+2. Enable the **Special Guest** option
+3. Save the changes
+
+#### Typical Use Cases
+
+* VIP customers
+* Priority handling
+* Internal customer categorization
+
+***
+
+### Merge Duplicate Customers
+
+1. Search for duplicate profiles
+2. Verify the correct target profile
+3. Open Merge Customers
+4. Complete the merge process
+
+{% hint style="info" %}
+Always verify bookings and contact information before merging profiles.
+{% endhint %}
+
+***
+
+## Best Practices
+
+* Always search before creating a new customer
+* Use consistent phone number formatting
+* Verify email addresses before saving
+* Merge duplicate customers regularly
+* Avoid storing sensitive personal information in notes
+* Review customer totals after major booking updates
+
+***
+
+## Related Pages
+
+* Customers
+* Merge Customers
+* Bookings
+* Offers
+* Service Cases
+* Users & Roles
 
 ***
 
