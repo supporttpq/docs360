@@ -174,6 +174,7 @@ These options control which sections appear on the ticket:
 * **Hide Payment Info Box On Individual Ticket -** If checked, this will make the payment plan with IBAN and swift not show on ticket.
 * **Show Hotel URL -** If checked, hotel URL will appear on ticket
 * **Show Hotel Info -** If checked, hotel address and thelephone will appear on ticket
+* **Show Room Info** - If checked, the room description will be added below the hotel description
 * **Show Travel Time -** If checked, travel time will appear on ticket
 * **Show Arrival Hour -** If checked, arrival hour will appear on ticket
 * **Add hotel description page -** If checked, adds a page at the end of the ticket that represents the hotel description as set in web tab of the hotel
