@@ -179,8 +179,11 @@ Offers are sent from the sales agent email address if the sales agent has an ema
 From the offers overview you can:
 
 * Find the offer again using filters (customer, email, dates, status)
-* Update details if the customer requests changes
-* Track status and follow-up
+*   Update details if the customer requests changes&#x20;
+
+    <figure><img src="../.gitbook/assets/edit offers.png" alt=""><figcaption></figcaption></figure>
+* Track or change status, follow-up date or the date until an offer is valid.
+* Convert an offer into a booking.
 
 See:
 
