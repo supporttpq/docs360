@@ -202,15 +202,21 @@ You can expand/collapse sections individually. If available, use **Close all** t
 
 ### Booking Features
 
+<figure><img src="../../.gitbook/assets/14.05.2026_09.45.18_REC.png" alt=""><figcaption></figcaption></figure>
+
 **Filters** - The `Filters` button allows filtering the booking list.
 
 **Show Older** - The `Show Older` option displays older or archived bookings for the customer. If checked, bookings with homebound in the past will be shown.
+
+<figure><img src="../../.gitbook/assets/14.05.2026_10.05.13_REC.png" alt=""><figcaption></figcaption></figure>
 
 **Pagination** - Pagination controls allow navigation between booking pages and selection of the number of entries displayed per page.
 
 ***
 
 ### Offers Section
+
+<figure><img src="../../.gitbook/assets/14.05.2026_10.12.11_REC.png" alt=""><figcaption></figcaption></figure>
 
 Displays customer-related offers.
 
@@ -219,6 +225,12 @@ If no offers are available, the system displays:
 > There are no entries to show!
 
 The section also supports the `Show Older` option for viewing older offers. If checked, offers with homebound in the past will be shown.
+
+<figure><img src="../../.gitbook/assets/14.05.2026_10.19.47_REC.png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+When the "Show Older" is checked, offers with homebound in the past will be shown. The homebound date represents the return date from the offer basket. (availability date)
+{% endhint %}
 
 ***
 
