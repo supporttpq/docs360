@@ -25,7 +25,7 @@ The purpose of the **Package Content** section is to:
 
 ### **Package products**
 
-When selecting a product that is flagged as a **package** for a passenger, all products that are inside the package are selected (after saving the passenger) with a price of `0`. Only the package itself has the price set.
+When selecting a product that is flagged as a **package** for a passenger, all eligible products that are inside the package are selected (after saving the passenger) with a price of `0`. Only the package itself has the price set.
 
 For a product to be set as **package**, you need to check the option inside **Edit Product Page → Basic Setup → Other Settings → Package Type**.
 
