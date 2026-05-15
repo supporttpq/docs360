@@ -29,51 +29,75 @@ When selecting a product that is flagged as a **package** for a passenger, all p
 
 For a product to be set as **package**, you need to check the option inside **Edit Product Page → Basic Setup → Other Settings → Package Type**.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-You can modify the products that are inside the package in **Edit Product Page → Package Content** tab.
+You can modify the products that are inside the package in **Edit Product Page → Package Content** tab.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/15.05.2026_14.52.19_REC.png" alt=""><figcaption></figcaption></figure>
 
-**Warning messages**
+*   At least one product in the package must be eligible for it to be selected.&#x20;
 
-*   If you select the **package**, you cannot select the products inside the package as well. You will get a warning message like this:
+    <figure><img src="../../.gitbook/assets/15.05.2026_14.56.48_REC.png" alt=""><figcaption></figcaption></figure>
+*   If you select the **package**, you cannot select the products inside the package as well. You will get a warning message like this:&#x20;
 
-    <figure><img src="https://tourpaq.gitbook.io/staging-tourpaq-docs/~gitbook/image?url=https%3A%2F%2Fdocs.tourpaq.com%2Fassets%2Fimages%2Fpackage_and_product_warning-ecd616e463d185d98ad5ac65be13b1a3.png%3Fwidth%3D1797&#x26;width=768&#x26;dpr=3&#x26;quality=100&#x26;sign=b7605443&#x26;sv=2" alt=""><figcaption></figcaption></figure>
-*   All products inside the package must be **eligible** for the package to be selected. If they are not all eligible, you will get this warning message:
+    <figure><img src="../../.gitbook/assets/15.05.2026_14.54.13_REC.png" alt=""><figcaption></figcaption></figure>
+*   if there are two products from the same category, and the category has multiple select enabled, both products will be applied&#x20;
 
-    <figure><img src="https://tourpaq.gitbook.io/staging-tourpaq-docs/~gitbook/image?url=https%3A%2F%2Fdocs.tourpaq.com%2Fassets%2Fimages%2Fpackage_and_product_warning_2-182f4c506926ede24ffbcb6c77f7a3c9.png%3Fwidth%3D1809&#x26;width=768&#x26;dpr=3&#x26;quality=100&#x26;sign=d66c7cf6&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/15.05.2026_14.59.30_REC.png" alt=""><figcaption></figcaption></figure>
 
-## How Package Content Works
+## Allow Multiple Extras of the Same Category
 
-When a product is booked:
+### Overview
 
-1. The system checks the Package Content configuration.
-2. All linked extras are automatically attached to the booking.
-3. Pricing is calculated based on:
-   * Included extras pricing logic
-   * Passenger allocation rules
-4. The extras appear in:
-   * Booking overview
-   * Confirmation
-   * Operational reports
+An Extra Package can contain multiple extras from the same extra category. This makes it possible to configure a single package that supports multiple booking scenarios, instead of creating separate packages for every possible combination.
 
-**Example: Winter Ski Package**
+Only eligible extras are added to the booking.
 
-Product: Al Pension\
-Package Content includes:
+This is especially useful when eligibility depends on conditions such as:
 
-* Breakfast
-* 6-day Ski Pass
-* Final Cleaning Fee
+* Transport supplier
+* Hotel
+* Destination
+* Departure
+* Booking conditions
 
-Result in Booking:
+A package may contain:
 
-When a customer books:
+* Multiple Flight Meal extras, where each extra is linked to a different transport supplier
+* Multiple Flight Baggage extras, where each extra is linked to a different transport supplier
+* Multiple Transfer extras, where each extra is linked to a different hotel
 
-* All three services are automatically included.
-* They cannot remove mandatory items.
-* Price reflects total bundled cost.
-* Supplier reports include these extras.
+Without this functionality, separate packages would need to be created for every possible combination.
 
-<br>
+Using multiple extras in the same category allows all of these scenarios to be handled by a single package configuration.
+
+***
+
+## Eligibility Logic
+
+### Package Eligibility
+
+A package is considered eligible for a booking if at least one extra in the package is eligible.
+
+If none of the extras in the package are eligible, the package is not applied.
+
+***
+
+## Extra Selection Logic
+
+### When Multiple Extras of the Same Category Are Eligible
+
+If more than one extra from the same category is eligible for the booking, the following logic is applied:
+
+#### Accepts Multiple Product Selection = Disabled
+
+If the extra category does not allow multiple product selection:
+
+* Only one extra from the category is added
+* The cheapest eligible extra is selected automatically
+
+#### Accepts Multiple Product Selection = Enabled
+
+If the extra category allows multiple product selection:
+
+* Multiple eligible extras from the same category may be added to the booking<br>
