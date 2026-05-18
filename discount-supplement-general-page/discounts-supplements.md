@@ -205,7 +205,7 @@ Each row defines a **price rule** for a discount or supplement, based on:
 
 **BKG. DATE FROM / BKG. DATE TO -** Defines the **booking period** when the rule can be applied.
 
-* BKG. DATE FROM → First booking date
+* BKG. DATE FROM → First booking date. _Can be set up to 6 months in future. This allows you to plan Discounts/Supplements starting up to 6 months in the future._
 * BKG. DATE TO → Last booking date
 
 ***
@@ -244,13 +244,13 @@ Any value from these intervals will overwrite the general price. To avoid overwr
 
 ***
 
-**BP % -** sets the price as a percentage of the basic price. When BP% is selected, the price value cannot exceed 100.
+**BP % (percent from basic price) -** sets the price as a percentage of the basic price. When BP% is selected, the price value cannot exceed 100.
 
 <figure><img src="../.gitbook/assets/image (811).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-**CD -** date when the price was created
+**CD (created date) -** date when the price was created
 
 ***
 
