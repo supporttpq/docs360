@@ -39,7 +39,7 @@ Each file must follow a strict naming structure based on the booking action type
 
 #### Notes
 
-* `XXXX` = Distributor code
+* `XXXX` = Distributor code (the "Brand Code" from the brand page is used as the distributor. This is the same code used for flight transfer. Brand Code; this is the name of the Brand.)
 * Date format = `YYYYMMDD`
 
 ***
@@ -79,34 +79,12 @@ Booking files can be delivered in two ways:
 * Sent to destination-specific email addresses
 * Imported manually by destination teams
 
-#### Important
-
+{% hint style="info" %}
 Email delivery is sometimes preferred when:
 
 * Data quality cannot be guaranteed
 * Manual verification is required
-
-***
-
-## Mapping Requirements
-
-Distributor codes and names must be preconfigured before import.
-
-### Purpose of Mapping
-
-Mapping ensures that:
-
-* Hotels
-* Units
-* Boards
-* Transfers
-* Brands
-
-are correctly identified inside the MTS Globe system.
-
-#### Important
-
-All mappings are maintained by the **Business Workflow Department**.
+{% endhint %}
 
 ***
 
@@ -116,7 +94,7 @@ New and modified bookings use the same file format.
 
 ### Modification Logic
 
-When a booking is amended:
+When a booking is modified:
 
 1. Existing booking items are cancelled
 2. New booking items are recreated from the file data
@@ -199,151 +177,3 @@ When a booking is amended:
 | GS   | Airport Services           |
 | MI   | MICE Services              |
 | MM   | Museums & Monuments        |
-
-***
-
-## Hotel Product Examples
-
-### Hotel Product Code
-
-Possible formats:
-
-| Type             | Example          |
-| ---------------- | ---------------- |
-| Distributor Code | `PMI1234`        |
-| Distributor Name | `Corali Studios` |
-| MTS/OTS Code     | `AESPMI1234`     |
-
-***
-
-### Unit Examples
-
-| Type             | Example           |
-| ---------------- | ----------------- |
-| Distributor Code | `DBLSTD`          |
-| Distributor Name | `Double Standard` |
-| MTS/OTS Code     | `RMSDDB0000`      |
-
-***
-
-### Board/Base Examples
-
-| Type             | Example              |
-| ---------------- | -------------------- |
-| Distributor Code | `A+`                 |
-| Distributor Name | `All Inclusive Plus` |
-| MTS/OTS Code     | `AI+`                |
-
-***
-
-## Transfer Information
-
-Transfer products require additional flight and routing details.
-
-| Field               | Description                           |
-| ------------------- | ------------------------------------- |
-| PickUpDropOff Hotel | Pickup or dropoff hotel               |
-| DropOffInterTf      | Hotel-to-hotel or hotel-port transfer |
-| Flight Airline      | Airline code                          |
-| Flight No           | Flight number                         |
-| Flight DEP Airport  | Departure airport                     |
-| Flight ARR Airport  | Arrival airport                       |
-| Flight DEP TIME     | Departure time                        |
-| Flight ARR TIME     | Arrival time                          |
-| AGENT               | Transfer handling agent               |
-
-***
-
-## Financial Fields
-
-| Field          | Description            |
-| -------------- | ---------------------- |
-| Cost           | Internal cost          |
-| Cost Currency  | Currency of cost       |
-| Price          | Selling/expected price |
-| Price Currency | Currency of price      |
-
-***
-
-## Additional Fields
-
-| Field    | Description                  |
-| -------- | ---------------------------- |
-| Note     | Booking comments or requests |
-| Quantity | Number of services           |
-
-#### Example Note
-
-```
-Non-smoking room on the first floor please
-```
-
-***
-
-## Cancellation File Structure
-
-Cancelled bookings use a simplified structure.
-
-### Required Fields
-
-| Field       | Required |
-| ----------- | -------- |
-| Office      | Yes      |
-| Distributor | Yes      |
-| Brand       | No       |
-| Reference   | Yes      |
-
-***
-
-## Example Cancellation File
-
-```csv
-"Office";"Distributor";"Brand";"Reference"
-"PMI";"XXXX";"";"INH19BZ4VQC"
-```
-
-***
-
-## Example – Hotel & Transfer Booking
-
-The document includes a full booking example containing:
-
-* Inbound transfer
-* Outbound transfer
-* Hotel accommodation
-
-***
-
-## Best Practices
-
-### Recommended Validation
-
-Before importing:
-
-* Verify all mandatory fields
-* Check date formats
-* Validate product mappings
-* Ensure passenger counts match passenger names
-* Verify airport and airline codes
-
-### Common Issues
-
-| Issue                   | Cause                      |
-| ----------------------- | -------------------------- |
-| Import failure          | Missing mandatory fields   |
-| Incorrect hotel mapping | Unconfigured product code  |
-| Transfer rejection      | Missing flight information |
-| Duplicate booking       | Non-unique reference       |
-
-***
-
-## Summary
-
-The MTS Globe Hotel Reporting interface provides a standardized CSV-based import mechanism for:
-
-* Hotel reservations
-* Transfers
-* Amendments
-* Cancellations
-
-Correct formatting, mapping, and field completion are essential for successful import and operational processing.
