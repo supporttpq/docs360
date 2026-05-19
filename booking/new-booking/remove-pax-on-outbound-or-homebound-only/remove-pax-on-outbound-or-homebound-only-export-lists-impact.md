@@ -18,7 +18,7 @@ For how to set No-show on a booking, see [Remove pax on outbound or homebound on
 
 ### Where this applies
 
-This affects lists generated from [Export → Lists](../../../export-1/lists/), where the output is based on travel lines.
+This affects lists generated from [Export → Lists](../../../export-1/lists.md), where the output is based on travel lines.
 
 <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (20).png" alt="Export → Lists filters and Report type selection in Tourpaq Office"><figcaption><p>Export → Lists: choose report type and filters before exporting.</p></figcaption></figure>
 

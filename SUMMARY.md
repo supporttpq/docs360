@@ -347,8 +347,7 @@
 ## Export
 
 * [Export](export-1/export.md)
-* [Lists](export-1/lists/README.md)
-  * [MTS Globe hotel reporting](export-1/lists/mts-globe-hotel-reporting.md)
+* [Lists](export-1/lists.md)
 * [Extras List](export-1/extras-list.md)
 
 ***
@@ -356,6 +355,9 @@
 * [Tee Time extras list](tee-time-extras-list/README.md)
   * [Golf Course Report](tee-time-extras-list/golf-course-report.md)
 * [Flight Transfer Export](flight-transfer-export.md)
+* [MTS Globe hotel reporting](mts-globe-hotel-reporting/README.md)
+  * [Specification & Config](mts-globe-hotel-reporting/specification-and-config.md)
+  * [MTS Globe CSV File Documentation](mts-globe-hotel-reporting/mts-globe-csv-file-documentation.md)
 
 ## Users
 

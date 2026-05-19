@@ -97,7 +97,7 @@ In exports, passengers can appear **twice** due to the two flight legs.
 
 #### Export lists: grouped per leg for guide lists
 
-In [Lists](../../export-1/lists/), passengers are grouped by flight departure/arrival dates for guide lists.
+In [Lists](../../export-1/lists.md), passengers are grouped by flight departure/arrival dates for guide lists.
 
 <figure><img src="../../.gitbook/assets/image (250).png" alt="Export list grouped by flight departure and arrival dates for a guide list"><figcaption><p>Export lists: passengers are grouped per flight leg for guide lists.</p></figcaption></figure>
 

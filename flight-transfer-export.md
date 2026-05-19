@@ -290,4 +290,4 @@ Use Excel when sorting, filtering, or further analysis is needed.
 * [Flight Transfer](flight-transfer/) — Overview of flight transfer setup and linked transfer tools.
 * [Transfer listing](flight-transfer/transfer-listing.md) — Review transfer data in a list view before exporting.
 * [Flight Transfer List](flight-transfer/flight-transfer-list.md) — Work with transfer lists related to flight transfer operations.
-* [Lists](export-1/lists/) — Export other operational booking lists from the Export module.
+* [Lists](export-1/lists.md) — Export other operational booking lists from the Export module.
