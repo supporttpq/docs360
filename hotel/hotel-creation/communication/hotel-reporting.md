@@ -2,7 +2,7 @@
 
 ### Overview
 
-**Hotel Reporting** lets you email booking lists to suppliers automatically. The list content matches the lists in [Export → Lists](../../../export-1/lists.md).
+**Hotel Reporting** lets you email booking lists to suppliers automatically. The list content matches the lists in [Export → Lists](../../../export-1/lists/).
 
 ### Purpose
 

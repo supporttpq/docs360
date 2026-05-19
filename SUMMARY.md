@@ -36,7 +36,6 @@
   * [History](booking/new-booking/history.md)
   * [E-mails](booking/new-booking/e-mails.md)
   * [Comments](booking/new-booking/comments.md)
-  * [SSR - Special Service Requests for Airlines](booking/new-booking/ssr.md)
   * [Profit](booking/new-booking/profit.md)
   * [SMS](booking/new-booking/sms.md)
   * [Hotel Room](booking/new-booking/hotel-room.md)
@@ -348,7 +347,8 @@
 ## Export
 
 * [Export](export-1/export.md)
-* [Lists](export-1/lists.md)
+* [Lists](export-1/lists/README.md)
+  * [MTS Globe hotel reporting](export-1/lists/mts-globe-hotel-reporting.md)
 * [Extras List](export-1/extras-list.md)
 
 ***

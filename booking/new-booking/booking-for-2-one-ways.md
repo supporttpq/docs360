@@ -29,7 +29,7 @@ For broader one-way scenarios, see [Multiple one way flights bookings](multiple-
 
 {% stepper %}
 {% step %}
-#### 1. Start a new booking
+**1. Start a new booking**
 
 Start in [New Booking](new-booking/).
 
@@ -37,7 +37,7 @@ Enter the number of passengers. Then open transport selection.
 {% endstep %}
 
 {% step %}
-#### 2. Select a transport with OW OUT / OW HOME seats
+**2. Select a transport with OW OUT / OW HOME seats**
 
 Pick a transport that has seat allocation for:
 
@@ -48,7 +48,7 @@ Pick a transport that has seat allocation for:
 {% endstep %}
 
 {% step %}
-#### 3. Set interval to one-way out and select the one-way home flight
+**3. Set interval to one-way out and select the one-way home flight**
 
 Change **Interval (Days)** to **one way out**.
 
@@ -66,7 +66,7 @@ Example: If the booking departs from Billund, the return is typically required b
 {% endstep %}
 
 {% step %}
-#### 4. Continue like a normal booking
+**4. Continue like a normal booking**
 
 From here, the flow is the same as a standard booking:
 
@@ -97,7 +97,7 @@ In exports, passengers can appear **twice** due to the two flight legs.
 
 #### Export lists: grouped per leg for guide lists
 
-In [Lists](../../export-1/lists.md), passengers are grouped by flight departure/arrival dates for guide lists.
+In [Lists](../../export-1/lists/), passengers are grouped by flight departure/arrival dates for guide lists.
 
 <figure><img src="../../.gitbook/assets/image (250).png" alt="Export list grouped by flight departure and arrival dates for a guide list"><figcaption><p>Export lists: passengers are grouped per flight leg for guide lists.</p></figcaption></figure>
 

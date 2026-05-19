@@ -217,7 +217,7 @@ This reduces file size and helps avoid attachment size limits.
 
 ### Related pages
 
-* [Lists](lists.md) — Export booking lists with filters, report types, and scheduling support.
+* [Lists](lists/) — Export booking lists with filters, report types, and scheduling support.
 * [Export - Scheduled Reports](../export/export.md) — Configure recurring export delivery.
 * [Extras List](extras-list.md) — Export supplier-facing extra service data.
 * [Flight Transfer Export](../flight-transfer-export.md) — Export transfer-related transport data.
