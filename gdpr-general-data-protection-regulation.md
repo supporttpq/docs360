@@ -1,22 +1,60 @@
 # GDPR (General Data Protection Regulation)
 
-**Overview**\
-The **General Data Protection Regulation (GDPR)** is an EU law governing data protection and privacy for individuals within the European Union (EU) and the European Economic Area (EEA). It also regulates the transfer of personal data outside these areas.\
-Tourpaq fully complies with GDPR requirements, ensuring secure and lawful handling of personal data.
+### Overview
 
-The Tourpaq system complies with this regulation, and the procedure of storing personal data is no longer valid. In the context of the Tourpaq system, this is done with a focus on customers **who have returned home from a trip for several days, which is configurable in the system**, \*\*if they do not have other bookings planned \*\* and also if **the customer has the newsletter option unchecked** in the Customer details window.
+The GDPR module in Tourpaq controls how personal customer data is handled, anonymized, retained, and protected across the system.
 
-So, for a certain customer which fulfills those conditions, the anonymisation can be performed automatically by running the service. Customers can be anonymized also instantly, in "Customer Center" by hitting the "Anonymize" button if **customer does not have active bookings in the future**. For using the anonymization functionality, an user with sysadmin role must be used.
+This functionality is designed to help companies comply with GDPR and internal privacy policies by:
 
-#### Purpose
+* Restricting access to personal data
+* Controlling how long customer data is stored
+* Supporting anonymization of customer records
+* Marking specific booking content as GDPR-sensitive
+* Ensuring sensitive data is removed from operational and reporting areas when required
 
-The GDPR module in Tourpaq ensures that personal data of customers who no longer have active or future bookings is anonymized or deleted according to configured settings.
+The GDPR configuration is intended for System Administrators only.
 
-The anonymization process primarily targets **customers who have returned from a trip** and meet the following conditions:
+### Access and permissions
 
-* They have **no future bookings**.
-* The **newsletter subscription** option is **unchecked** in the _Customer Details_ window.
-* A configurable number of days have passed since their return date.
+Only users with the role:
+
+* System Administrator
+
+should configure GDPR rules and retention settings.
+
+The System Administrator role has access to:
+
+* Setup
+* Booking
+* GDPR
+
+Regular agents and operational users should not modify GDPR rules.
+
+Related page:
+
+* Users and Roles
+
+### Purpose
+
+The GDPR module in Tourpaq ensures that personal data of customers who no longer have active or&#x20;
+
+The GDPR functionality exists to:
+
+* Protect customer privacy
+* Reduce unnecessary storage of personal information
+* Support legal compliance
+* Control access to sensitive data
+* Allow anonymization of customers when data should no longer remain identifiable
+* Ensure GDPR-sensitive extras and booking content are treated differently from normal operational data
+
+Typical examples:
+
+* Removing personally identifiable information after a retention period
+* Marking medical extras as GDPR-sensitive
+* Anonymizing inactive customers
+* Preventing old customer records from exposing unnecessary personal data
+
+
 
 ### Continuous deletion <a href="#continuous-deletion" id="continuous-deletion"></a>
 
@@ -25,7 +63,7 @@ The anonymization process primarily targets **customers who have returned from a
 The Continuous Deletion settings are available under:\
 **Setup → GDPR → Continuous Deletion**
 
-Only users with **Sysadmin rights** can activate or modify these settings.
+Only users with **System Administration rights** can activate or modify these settings.
 
 <figure><img src=".gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
 
@@ -35,7 +73,29 @@ GDPR- Continuous Deletion service settings allows to be activated in different w
 
 **1. Activate Continuous Deletion for Customers**
 
-Automatically anonymizes customers who have returned home more than the configured number of days ago **and have no future bookings**.\
+Automatically anonymizes customers who have returned home more than the configured number of days ago **and have no future bookings**.
+
+Purpose:
+
+Allows a customer profile to be anonymized so the person can no longer be identified.
+
+Typical anonymized fields:
+
+* Name
+* Email
+* Phone number
+* Address
+* Other personally identifiable information
+
+#### How it works
+
+When a customer is anonymized:
+
+* The booking history may still remain for financial and operational reasons
+* Personally identifiable data is removed or replaced
+* Reports no longer expose customer identity
+* Historical statistics can still remain available depending on configuration
+
 When a customer is anonymized, the following data is affected:
 
 * **Customer details:**\
@@ -60,9 +120,51 @@ When a customer is anonymized, the following data is affected:
 
 <figure><img src=".gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
 
-* **Extras, discounts, and supplements:**\
-  Any marked as _Highly Sensitive_ are anonymized.
-  * For extras: a new category “GDPR Sensitive” appears in the booking overview.
+#### Example
+
+A customer traveled three years ago and requested removal of personal information.
+
+The administrator anonymizes the customer.
+
+Result:
+
+* Booking totals remain in statistics
+* Operational history remains intact
+* The customer can no longer be identified by name, email, or phone
+
+
+
+*   **Extras, discounts, and supplements:**\
+    Any marked as _Highly Sensitive_ are anonymized.
+
+    * For extras: a new category “GDPR Sensitive” appears in the booking overview.&#x20;
+
+    This is typically used for:
+
+    * Medical services
+    * Health-related requests
+    * Accessibility assistance
+    * Sensitive passenger information
+    * Other privacy-sensitive services
+
+    #### Configuration
+
+    When configuring an Extra, administrators can mark the Extra as GDPR-related.
+
+    This indicates that the information:
+
+    * Contains sensitive customer data
+    * Requires restricted handling
+    * May require anonymization or limited visibility
+
+    #### System behavior
+
+    When an Extra is GDPR-marked:
+
+    * Access may be restricted depending on permissions
+    * Data may be anonymized according to GDPR rules
+    * Sensitive information should not appear unnecessarily in exports or reports
+    * Visibility may differ between operational users and administrators
 
 <figure><img src=".gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
 
