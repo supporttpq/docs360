@@ -62,7 +62,7 @@ On the **Passenger Information** tab you’ll typically see:
 
 {% stepper %}
 {% step %}
-#### Open the resort
+**Open the resort**
 
 1. Go to **Setup → Resorts**.
 2. Click the resort you want to configure.
@@ -71,13 +71,13 @@ You are now on the resort edit page.
 {% endstep %}
 
 {% step %}
-#### Go to Passenger Information
+**Go to Passenger Information**
 
 Open the **Passenger Information** tab to view existing entries.
 {% endstep %}
 
 {% step %}
-#### Click Create
+**Click Create**
 
 Click **Create** to add a new entry.
 
@@ -85,7 +85,7 @@ A form opens with **Save** and **Cancel**.
 {% endstep %}
 
 {% step %}
-#### Fill in the rule fields
+**Fill in the rule fields**
 
 **Travel period (required)**
 
@@ -111,7 +111,7 @@ If you enable **Acknowledge**, the booking flow will block completion until all 
 {% endstep %}
 
 {% step %}
-#### Save
+**Save**
 
 Click **Save**.
 

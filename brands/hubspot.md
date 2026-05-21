@@ -50,7 +50,7 @@ Some HubSpot portals no longer support legacy API keys. If that’s your case, u
 
 {% stepper %}
 {% step %}
-#### Add Brand Code
+**Add Brand Code**
 
 <figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -60,7 +60,7 @@ Tourpaq uses this code as a prefix in HubSpot booking data.
 {% endstep %}
 
 {% step %}
-#### Add HubSpot credentials and subscriptions
+**Add HubSpot credentials and subscriptions**
 
 <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (9).png" alt=""><figcaption></figcaption></figure>
 

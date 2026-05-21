@@ -43,25 +43,25 @@ Each ticket text entry contains the following fields:
 
 {% stepper %}
 {% step %}
-#### 1. Create a new ticket text
+**1. Create a new ticket text**
 
 Choose to add a new ticket text on the page.
 {% endstep %}
 
 {% step %}
-#### 2. Fill in the basic fields
+**2. Fill in the basic fields**
 
 Set the text type, an identification code, and the date interval. Write the text content in plain language.
 {% endstep %}
 
 {% step %}
-#### 3. Choose when it should appear
+**3. Choose when it should appear**
 
 Select the rules that decide when the text is printed. Typical rules are booking dates, product, or room type.
 {% endstep %}
 
 {% step %}
-#### 4. Save and test
+**4. Save and test**
 
 Create a sample booking that should match the rules. Generate the ticket and confirm the text is printed.
 {% endstep %}

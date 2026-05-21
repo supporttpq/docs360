@@ -91,20 +91,20 @@ Setup guide: [Departure stat weeks](../setup/departure-stat-weeks.md)
 
 {% stepper %}
 {% step %}
-#### Set your filters
+**Set your filters**
 
 Pick **Departures**, **Arrivals**, and a **Date Period**.\
 Use **More filters** if you need **Transport mode** or **Transport type**.
 {% endstep %}
 
 {% step %}
-#### Generate results
+**Generate results**
 
 Click **Display** to refresh the report.
 {% endstep %}
 
 {% step %}
-#### Drill down by week
+**Drill down by week**
 
 Use the arrow (›) on a **Week No** row to expand details.
 {% endstep %}

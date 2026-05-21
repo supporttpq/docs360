@@ -46,14 +46,14 @@ If deletion is blocked, the resort is likely in use.
 
 {% stepper %}
 {% step %}
-#### Search for a resort
+**Search for a resort**
 
 1. Type a keyword in the search field.
 2. Review the filtered list.
 {% endstep %}
 
 {% step %}
-#### Filter resorts
+**Filter resorts**
 
 1. Select a specific resort from the **Resort/ Destination/ Arrival** dropdown.
 2. Enable **Show hidden** if needed.
@@ -61,7 +61,7 @@ If deletion is blocked, the resort is likely in use.
 {% endstep %}
 
 {% step %}
-#### Create a resort
+**Create a resort**
 
 1. Click on the **Create** button.
 2. Fill in the required fields (resort code, name, country, arrival).
@@ -69,7 +69,7 @@ If deletion is blocked, the resort is likely in use.
 {% endstep %}
 
 {% step %}
-#### Delete a resort
+**Delete a resort**
 
 1. Locate the resort to remove.
 2. Click the trash bin icon under **Actions**.

@@ -17,7 +17,7 @@ Uploading and inserting an image ensures that email content is more engaging and
 
 {% stepper %}
 {% step %}
-#### 1. Open the image window
+**1. Open the image window**
 
 In the email editor, open the image tool.
 
@@ -25,7 +25,7 @@ In the email editor, open the image tool.
 {% endstep %}
 
 {% step %}
-#### 2. Upload an image
+**2. Upload an image**
 
 1. Open the **Upload** tab.
 2. Click **Browse…** and pick your image file.
@@ -38,7 +38,7 @@ In the email editor, open the image tool.
 {% endstep %}
 
 {% step %}
-#### 3. Insert the uploaded image
+**3. Insert the uploaded image**
 
 1. Open the **Image Info** tab.
 2. Click **Browse Server**.
@@ -59,7 +59,7 @@ The image is placed in the email body.
 {% endstep %}
 
 {% step %}
-#### 4. Use an image from the internet (optional)
+**4. Use an image from the internet (optional)**
 
 If the image is already online:
 
