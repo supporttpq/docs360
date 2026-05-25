@@ -158,6 +158,11 @@ In the URL field, insert the `[Hash-key-link]`. Select the other protocol, as sh
 
 <figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Link settings with Hash-key-link placeholder."><figcaption></figcaption></figure>
 
+When using the Insert Link option with an already existing system-generated link (for example, a Confirmation link), the protocol must be set to "Other".\
+This is required because the system automatically adds the correct protocol. If another protocol is manually added, the generated link becomes invalid and may result in an access error when the link is opened.
+
+<figure><img src="../../.gitbook/assets/25.05.2026_09.13.33_REC.png" alt=""><figcaption></figcaption></figure>
+
 ### Date filters
 
 <figure><img src="../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Date filter section for bookings."><figcaption></figcaption></figure>

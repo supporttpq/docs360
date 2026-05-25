@@ -29,7 +29,7 @@ Use **Business Intelligence** to:
 
 #### **Reports in this section**
 
-* [Business Intelligence – Allotment Overview](../business-intelligence/business-intelligence.md)
+* [Business Intelligence – Allotment Overview](business-intelligence.md)
 * [Business Intelligence – Flights](business-intelligence-flights.md)
 * [Business Intelligence – Accommodation](business-intelligence-accommodation.md)
 
@@ -37,25 +37,25 @@ Use **Business Intelligence** to:
 
 {% stepper %}
 {% step %}
-#### Pick the report
+**Pick the report**
 
 Open the **Business Intelligence** report that matches your question.
 {% endstep %}
 
 {% step %}
-#### Set filters
+**Set filters**
 
 Select the date period first. Then add filters like brand, resort, hotel, transport, or supplier.
 {% endstep %}
 
 {% step %}
-#### Generate results
+**Generate results**
 
 Click **Display** to refresh the report.
 {% endstep %}
 
 {% step %}
-#### Export (optional)
+**Export (optional)**
 
 Export the results if you need to share or do deeper analysis.
 {% endstep %}

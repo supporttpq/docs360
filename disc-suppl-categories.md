@@ -63,7 +63,7 @@ Rounding rules are applied in the following areas:
 
 #### General Rule
 
-If a **Round Rule** is defined on the category,  it is always applied before the price is used in a booking
+If a **Round Rule** is defined on the category, it is always applied before the price is used in a booking
 
 #### Per-Day Pricing
 
@@ -100,4 +100,4 @@ If a round rule is specified, then it is applied to the price before it is used 
 ### Related Pages
 
 * [Profit Margin Round Rule (System Settings)](profit-margin-rules.md)
-* [Discount and Supplement](discounts-supplements.md)
+* [Discount and Supplement](discount-supplement-general-page/discounts-supplements.md)

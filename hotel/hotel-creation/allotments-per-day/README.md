@@ -117,13 +117,13 @@ This helps users focus strictly on hotel availability without mixing transport d
 
 {% stepper %}
 {% step %}
-#### Open the screen
+**Open the screen**
 
 Go to **Hotel → Allotment per Day**.
 {% endstep %}
 
 {% step %}
-#### Search the dates you need
+**Search the dates you need**
 
 Select **Period**, **Room Type**, and optional **Week Days**.
 
@@ -131,7 +131,7 @@ Click **Search**.
 {% endstep %}
 
 {% step %}
-#### Edit the values
+**Edit the values**
 
 Update **No.**, **Secured**, and **Guaranteed** as needed.
 
@@ -139,7 +139,7 @@ Check **Book** and **Free** for sanity.
 {% endstep %}
 
 {% step %}
-#### Save or revert
+**Save or revert**
 
 Click **Update** to save.
 
@@ -153,13 +153,13 @@ Use this when you need to override the automated release result for specific dat
 
 {% stepper %}
 {% step %}
-#### Open the screen
+**Open the screen**
 
 Go to **Hotel → Allotment per Day**.
 {% endstep %}
 
 {% step %}
-#### Search the dates and room types
+**Search the dates and room types**
 
 Select **Period** and **Room Type**.
 
@@ -167,7 +167,7 @@ Click **Search**.
 {% endstep %}
 
 {% step %}
-#### Adjust release status and quantity
+**Adjust release status and quantity**
 
 Edit **R** to mark/unmark as released.
 
@@ -175,7 +175,7 @@ Edit **For R** to control how many rooms are available for release.
 {% endstep %}
 
 {% step %}
-#### Save
+**Save**
 
 Click **Update**.
 {% endstep %}

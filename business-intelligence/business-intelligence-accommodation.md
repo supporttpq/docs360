@@ -104,20 +104,20 @@ Setup guide: [Departure stat weeks](../setup/departure-stat-weeks.md)
 
 {% stepper %}
 {% step %}
-#### Set your filters
+**Set your filters**
 
 Select **Country**, **Resort**, **Hotel**, and **Date Period**.\
 Use **Room** if you want a single room type.
 {% endstep %}
 
 {% step %}
-#### Generate results
+**Generate results**
 
 Click **Display** to refresh the report.
 {% endstep %}
 
 {% step %}
-#### Review sales pace
+**Review sales pace**
 
 Compare **Sold %** with **Sold % 1W–4W**.\
 This shows if sales are accelerating or slowing down.

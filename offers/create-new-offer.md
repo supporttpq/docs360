@@ -165,6 +165,12 @@ What happens after sending:
 * If **self-booking** is enabled for your setup, the customer email includes a **Booking** button/link.
 
 <figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Send offer"><figcaption><p>Send the offer and confirm it was delivered (sent date is logged).</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/14.05.2026_13.52.21_REC.png" alt=""><figcaption><p>Offer email receipt with the booking button in the email</p></figcaption></figure>
+
+{% hint style="info" %}
+Offers are sent from the sales agent email address if the sales agent has an email inserted. If there is no email inserted for the user profile, the offer will be sent from brand email (User > Brand).
+{% endhint %}
 {% endstep %}
 {% endstepper %}
 
@@ -175,8 +181,11 @@ What happens after sending:
 From the offers overview you can:
 
 * Find the offer again using filters (customer, email, dates, status)
-* Update details if the customer requests changes
-* Track status and follow-up
+*   Update details if the customer requests changes&#x20;
+
+    <figure><img src="../.gitbook/assets/edit offers.png" alt=""><figcaption></figcaption></figure>
+* Track or change status, follow-up date or the date until an offer is valid.
+* Convert an offer into a booking.
 
 See:
 

@@ -83,6 +83,7 @@ Most templates include:
 * Resort/hotel details
 * Stay dates and duration
 * A price summary (and what is included)
+* A clickable button that redirects the customer to the Webbooking page where he can make the reservation with one of the offers received and which he accepts.
 
 <figure><img src="../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Trip information and extras"><figcaption><p>Example showing trip information, price summary, and possible extras.</p></figcaption></figure>
 

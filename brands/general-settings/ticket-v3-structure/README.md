@@ -293,7 +293,80 @@ Some hotels may not be suitable for guests with reduced mobility.
 
 ***
 
-## Seating & Room Allocation (TILVALG)&#x20;
+## Room Description
+
+<figure><img src="../../../.gitbook/assets/14.05.2026_16.52.56_REC.png" alt=""><figcaption></figcaption></figure>
+
+### Overview
+
+The e-ticket can display room descriptions for booked accommodation when the **Show room info** option is enabled for the brand.
+
+This functionality allows guests to see additional details about their booked room types directly on the ticket.
+
+The feature is supported for all ticket versions:
+
+* Ticket Version 1
+* Ticket Version 2
+* Ticket Version 3
+
+***
+
+### Functionality
+
+When **Show room info** is enabled from the Brand:&#x20;
+
+<figure><img src="../../../.gitbook/assets/14.05.2026_17.02.22_REC.png" alt=""><figcaption></figcaption></figure>
+
+* The system checks the booked room types included in the booking
+* For each used room type, the system retrieves the room description from:
+  * **Hotel → Room Types**
+  *   The description available behind the **PLUS (+)** icon next to the Room Code/Description&#x20;
+
+      <figure><img src="../../../.gitbook/assets/14.05.2026_17.03.43_REC.png" alt=""><figcaption></figcaption></figure>
+* If a **Brand Description** exists, it is used
+* If no Brand Description exists, the system uses the **Default Description**
+
+Only room types that are actually used in the booking are included on the ticket.
+
+***
+
+### Ticket Display Rules
+
+For every room that has a room description:
+
+* Display the **Room Name** in bold
+* Add the room description on the next line
+
+Example:
+
+**Double Room with Balcony**\
+Spacious double room with private balcony, sea view, air conditioning, and minibar.
+
+***
+
+### Important Rules
+
+### Room Without Description
+
+If a room type does not contain a room description:
+
+* Nothing is added to the ticket for that room
+* No empty section or placeholder is displayed
+
+This supports the current situation where many hotels still do not have room descriptions configured.
+
+***
+
+### Description Priority
+
+The system uses descriptions in the following order:
+
+1. Brand Description
+2. Default Description
+
+If no description exists at all, the room is skipped.
+
+## Seating & Room Allocation (TILVALG)
 
 <figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -306,7 +379,7 @@ The page is displayed only if:
 
 ***
 
-### Table Structure&#x20;
+### Table Structure
 
 #### Columns
 
@@ -320,7 +393,7 @@ The page is displayed only if:
 
 ***
 
-### Behavior&#x20;
+### Behavior
 
 * Seating:
   * Show number if selected

@@ -52,7 +52,7 @@ The text from Passenger Information will also be visible on the ticket:
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-#### Passenger information allows overlapping periods <a href="#passenger-information-allows-overlapping-periods" id="passenger-information-allows-overlapping-periods"></a>
+**Passenger information allows overlapping periods**
 
 Ex: If fixed info is made for a specific period (01.02.26 - 15.05.26) - transport errata def overlapping, and another info is made for a short period (01.05.26 - 17.05.26) - Transport Errata Default. Even if the periods overlap, the system will allow and display both on the ticket.
 {% endhint %}

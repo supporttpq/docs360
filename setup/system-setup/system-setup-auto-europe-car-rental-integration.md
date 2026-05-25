@@ -56,7 +56,7 @@ Those products can then be offered in booking flows via **Extras**.
 
 ### Related pages
 
-* [Extras](../../extras-setup/extras/)
+* [Extras](../../extras-setup/extras-general-page/extras.md)
 
 ### FAQ
 

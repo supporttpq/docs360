@@ -68,25 +68,25 @@ You can:
 
 {% stepper %}
 {% step %}
-#### 1. Create a template
+**1. Create a template**
 
 Choose whether you want an email or an SMS template. Give it a clear name.
 {% endstep %}
 
 {% step %}
-#### 2. Write the message
+**2. Write the message**
 
 Write the subject text. For emails, also write the message body.
 {% endstep %}
 
 {% step %}
-#### 3. Choose who should receive it
+**3. Choose who should receive it**
 
 Set the filters for the bookings you want to reach.
 {% endstep %}
 
 {% step %}
-#### 4. Send and confirm
+**4. Send and confirm**
 
 Review the message and the filters. Send when you are ready.
 {% endstep %}

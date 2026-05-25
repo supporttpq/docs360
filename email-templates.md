@@ -84,7 +84,7 @@ Exact behavior can vary by setup and brand.
 
 <summary>1–12: Booking, cancellation, payment, insurance, and questionnaires</summary>
 
-#### 1. Thank you for booking
+**1. Thank you for booking**
 
 Sent after a booking is created. An e-ticket is attached.
 
@@ -97,7 +97,7 @@ Typical conditions:
 
 If the booking is made in Web Booking, the email can be delayed slightly.
 
-#### 2. Reservation cancelled
+**2. Reservation cancelled**
 
 Sent after a booking is cancelled. An e-ticket is attached.
 
@@ -107,7 +107,7 @@ Typical conditions:
 * Booking status is **Cancelled**.
 * Departure date is not in the past.
 
-#### 3. Payment pre-reminder
+**3. Payment pre-reminder**
 
 Sent **3 days before** the payment due date. Not earlier than the day after booking.
 
@@ -121,7 +121,7 @@ Typical conditions:
 * Departure date is not in the past.
 * A required payment is still unpaid.
 
-#### 4. Payment reminder
+**4. Payment reminder**
 
 Sent **3 days after** the payment due date.
 
@@ -133,7 +133,7 @@ Typical conditions:
 * Departure date is not in the past.
 * Outstanding balance is above your tolerance setting.
 
-#### 5. Booking cancelled in 48 hours
+**5. Booking cancelled in 48 hours**
 
 Sent to bookings with missing payments and outstanding balances.
 
@@ -145,7 +145,7 @@ Typical conditions:
 * Departure date is not in the past.
 * One or more payment rates are unpaid.
 
-#### 6. Deposit received
+**6. Deposit received**
 
 Sent when a deposit payment is received.
 
@@ -157,7 +157,7 @@ Typical conditions:
 * Not a last-minute booking.
 * Departure date is not in the past.
 
-#### 7. Insurance information missing
+**7. Insurance information missing**
 
 Sent **14 days after booking** when insurance details are missing.
 
@@ -170,7 +170,7 @@ Typical conditions:
 * Not a last-minute booking.
 * Departure date is not in the past.
 
-#### 8. Insurance information still missing
+**8. Insurance information still missing**
 
 Sent **10 days after** “Insurance information missing”.
 
@@ -182,7 +182,7 @@ Typical conditions:
 * Departure date is not in the past.
 * “Insurance information missing” has already been sent.
 
-#### 9. Second payment received
+**9. Second payment received**
 
 Sent when the second payment is received.
 
@@ -194,7 +194,7 @@ Typical conditions:
 * Not a last-minute booking.
 * Departure date is not in the past.
 
-#### 10. Full payment received
+**10. Full payment received**
 
 Sent when the remaining balance is paid.
 
@@ -206,7 +206,7 @@ Typical conditions:
 * Not a last-minute booking.
 * Departure date is not in the past.
 
-#### 11. Welcome home
+**11. Welcome home**
 
 Sent **one day after return day**.
 
@@ -218,7 +218,7 @@ Typical conditions:
 * Booking status is **OK**.
 * Departure date is not in the past.
 
-#### 12. Reporting schedule communication
+**12. Reporting schedule communication**
 
 Sent by automated transport passenger reporting.
 
@@ -228,7 +228,7 @@ Sent by automated transport passenger reporting.
 
 <summary>13–24: Last-minute bookings, booking changes, reminders, exports, wait list, vouchers</summary>
 
-#### 13. Thank you for your LMS booking
+**13. Thank you for your LMS booking**
 
 Sent for last-minute bookings. An e-ticket is attached.
 
@@ -241,7 +241,7 @@ If it is fully paid, a payment confirmation can be added.
 
 Insurance information text can also be added if needed.
 
-#### 14. Booking updated
+**14. Booking updated**
 
 Sent when a booking changes in a way that affects the total.
 
@@ -253,11 +253,11 @@ Typical conditions:
 * Booking status is **OK**.
 * Departure date is not in the past.
 
-#### 15. Hotel release
+**15. Hotel release**
 
 Sent by hotel release automation.
 
-#### 16. Flight changes
+**16. Flight changes**
 
 Sent when a flight change is made.
 
@@ -267,7 +267,7 @@ Typical conditions:
 * Booking status is **OK**.
 * Departure date is not in the past.
 
-#### 17. Welcome home reminder
+**17. Welcome home reminder**
 
 Sent **one week after return day** if a questionnaire is still missing.
 
@@ -279,7 +279,7 @@ Typical conditions:
 * Booking status is **OK**.
 * Departure date is not in the past.
 
-#### 18. Seat email reminder
+**18. Seat email reminder**
 
 Sent to let the customer know seats can be reserved.
 
@@ -288,11 +288,11 @@ Typical timing:
 * 60 days before departure, or
 * 12 hours after booking for short lead times
 
-#### 19. Financial export
+**19. Financial export**
 
 Sent based on settings per agency. It covers bookings in a specific interval.
 
-#### 20. Questionnaire after deposit paid
+**20. Questionnaire after deposit paid**
 
 Sent after the deposit is paid.
 
@@ -304,7 +304,7 @@ Typical conditions:
 * “Thank you for booking” email has been sent.
 * Deposit was fully paid in the last 24 hours.
 
-#### 21. Wait list booking
+**21. Wait list booking**
 
 Sent when allotment is full, but wait list bookings are allowed.
 
@@ -315,7 +315,7 @@ Typical conditions:
 * Email has not been sent before.
 * Booking update is older than 20 minutes (Web Booking).
 
-#### 22. Vouchers generated
+**22. Vouchers generated**
 
 Sent after vouchers are generated.
 
@@ -327,7 +327,7 @@ Typical conditions:
 * Departure is close (configured in system setup).
 * Product attributes are filled in.
 
-#### 23. Attributes are missing
+**23. Attributes are missing**
 
 Sent when required product attributes are missing.
 
@@ -338,7 +338,7 @@ Typical conditions:
 * Booking is fully paid.
 * Departure is within 30 days.
 
-#### 24. Creditor invoice
+**24. Creditor invoice**
 
 Sent to creditors with financial information for hotels and products.
 
@@ -348,19 +348,19 @@ Sent to creditors with financial information for hotels and products.
 
 <summary>25–35: Reporting, documents, manual sends, payments waiting, and edge cases</summary>
 
-#### 25. Hotel reporting
+**25. Hotel reporting**
 
 Sent based on intervals set in the hotel’s **Communication** tab.
 
-#### 26. Extras reporting
+**26. Extras reporting**
 
 Sent based on intervals set in the extra’s **Communication** tab.
 
-#### 27. Supplier extras reporting
+**27. Supplier extras reporting**
 
 Sent based on intervals set on the supplier.
 
-#### 28. Documents uploaded
+**28. Documents uploaded**
 
 Sent when a document is uploaded for a transport, hotel, or product.
 
@@ -368,40 +368,40 @@ Typical conditions:
 
 * Booking departs in the future.
 
-#### 29. Email sent from View all bookings
+**29. Email sent from View all bookings**
 
 Sent manually by an admin or seller to filtered bookings.
 
 It is often used for changes or promotions.
 
-#### 30. Email sent from Customer Export
+**30. Email sent from Customer Export**
 
 Sent manually by an admin or seller to filtered bookings.
 
 It is often used for promotions.
 
-#### 31. Request more rooms
+**31. Request more rooms**
 
 Sent to hotels from the **Dashboard** when more rooms are needed.
 
-#### 32. Early booking rooming list
+**32. Early booking rooming list**
 
 Can include two emails, depending on settings:
 
 * A rooming list email to the supplier.
 * A financial invoice email to the creditor.
 
-#### 33. Extras category reporting
+**33. Extras category reporting**
 
 Sent based on intervals set in the extra category’s **Communication** tab.
 
-#### 34. Pending payment notification
+**34. Pending payment notification**
 
 Sometimes the payment provider (DIBS) needs more time.
 
 This email tells the customer to wait for a final status.
 
-#### 35. Captured money but no allotment
+**35. Captured money but no allotment**
 
 This can happen when two customers pay at the same time.
 
@@ -415,13 +415,13 @@ This email explains the situation. A refund may follow.
 
 <summary>36–46: Individual payments, guest app templates, and confirmations</summary>
 
-#### 36. Individual payment email
+**36. Individual payment email**
 
 Sent from the booking page to passengers with an email address.
 
 It includes a link to a customer center for individual payment.
 
-#### 37. Destination email
+**37. Destination email**
 
 Used by the Destination or Guest app.
 
@@ -432,7 +432,7 @@ It can be used for:
 * Arrival messages
 * Hotel stay messages
 
-#### 38. Hotel contract
+**38. Hotel contract**
 
 Sent with a contract attached and a link to approve or reject.
 
@@ -444,7 +444,7 @@ Important notes:
 
 If Reservation Dept Email is missing, the email will not be sent.
 
-#### Email templates with ticket attachment
+**Email templates with ticket attachment**
 
 Common examples:
 
@@ -457,7 +457,7 @@ Common examples:
 * Flight changes
 * Wait list booking
 
-#### 39. Product reservation email
+**39. Product reservation email**
 
 Sent to a passenger who bought a parking extra.
 
@@ -469,27 +469,27 @@ Typical conditions:
 * VRN (vehicle registration) is completed.
 * Sent 30 days before departure.
 
-#### 40. Special offer rejected
+**40. Special offer rejected**
 
 Sent when a hotel’s special offer is rejected from **Notifications**.
 
-#### 41. Quotation list
+**41. Quotation list**
 
 Sent to a potential customer with a detailed price list.
 
-#### 42. Stop sales introduction
+**42. Stop sales introduction**
 
 Sent when a new stop sale is created.
 
-#### 43. Mail platform for SMS
+**43. Mail platform for SMS**
 
 Sent to notify guests with general information.
 
-#### 44. Dynamic Email / SMS
+**44. Dynamic Email / SMS**
 
 Used for messages like reminders, welcomes, and product tips.
 
-#### 45. Confirmation hotel
+**45. Confirmation hotel**
 
 Confirms a hotel reservation with dates, room type, and booking number.
 
@@ -501,7 +501,7 @@ To work correctly, you usually need:
 * **Reservation Dept Email** filled in on the hotel.
 * Contract type set to **Allotment** or **Request**.
 
-#### 46. Confirmation transfer
+**46. Confirmation transfer**
 
 Confirms a scheduled transfer with date, time, and locations.
 
@@ -518,41 +518,41 @@ Typical setup requirements:
 
 <summary>47–63: Reporting, gift cards, deprecated templates, and flight change variants</summary>
 
-#### 47. Seats vs. beds reporting
+**47. Seats vs. beds reporting**
 
 Sent based on a communication scheduler. A report is attached.
 
-#### 48. Gift card email
+**48. Gift card email**
 
 Sent automatically after the gift card is paid.
 
-#### 49. Time share fee created notification
+**49. Time share fee created notification**
 
 No longer used.
 
-#### 50. Select offer SMS
+**50. Select offer SMS**
 
 Sent manually to inform the customer about a requested offer.
 
 The text can be configured under **Brands → Select Offer**.
 
-#### 51–52. Time share fee reminder / pre-reminder
+**51–52. Time share fee reminder / pre-reminder**
 
 No longer used.
 
-#### 53. Car registration
+**53. Car registration**
 
 Sent to passengers with a product requiring car registration.
 
-#### 54. Full individual payment received
+**54. Full individual payment received**
 
 Sent when a passenger completes a full individual payment.
 
-#### 55. Deposit received per passenger
+**55. Deposit received per passenger**
 
 Sent when a deposit is paid through individual payment.
 
-#### 56–63. Flight change templates
+**56–63. Flight change templates**
 
 Different flight change templates can be used based on the type of change:
 

@@ -22,12 +22,12 @@ Think of a base room type as a “master” room definition. You can still adjus
 
 ### Field Descriptions
 
-<figure><img src=".gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/21.05.2026_15.16.12_REC.png" alt=""><figcaption></figcaption></figure>
 
 #### General Information
 
 * **Room Code** – Unique system identifier. Treat this as stable once used.
-* **Plaintext** – Room name shown in Tourpaq Office.
+* **Name** – Room name shown in Tourpaq Office.
 * **List Text** – Room name used in export files.
 * **Internet** – Makes the room available via API. Used for website sales and integrations.
 * **Status** – Shows or hides the room type in the UI.
@@ -38,17 +38,17 @@ Think of a base room type as a “master” room definition. You can still adjus
 
 #### Bed Configuration
 
-* **No. Ordinary Beds** – Standard beds in the room. These always pay full price. They cannot receive extra bed discounts.
-* **Min No. Beds** – Minimum occupancy for the room.
-* **Extra Beds** – Extra adult beds. These can get extra bed discounts.
-* **Extra Beds Child** – Extra child beds. These can get extra bed discounts.
-* **Start Child Age** – Minimum child age for child extra beds.
-* **End Child Age** – Maximum child age for child extra beds.
+* **No. Ordinary Beds** – The number of beds in the room that are not extra beds.
+* **Min No. Beds** – The minimum number of beds (guests) that must be used by a booking in this room.
+* **Extra Beds** – The minimum number of beds (guests) that must be used by a booking in this room.
+* **Extra Beds Child** – The number of child-sized beds in the room. The age range for child beds can be specified in "Child age for extra beds" here, but if specified in the hotel, it takes precedence.
+* **Child age for extra bed from** – Minimum child age for child extra beds.
+* **Child age for extra bed to** – Maximum child age for child extra beds.
 
 #### Cost Configuration
 
-* **Cost Beds** – Beds counted in cost price calculations. Used by the Hotel Cost Service.
-* **Extra Beds Cost** – Extra beds counted in cost price calculations. Used by the Hotel Cost Service.
+* **Cost Beds** – The number of beds (guests) who shall pay full price, independently of age.
+* **Extra Beds Cost** – The number of beds that are used for "Extra beds cost" in the hotel.
 
 ### Hotel Allotment
 

@@ -94,7 +94,9 @@ The typical end result of an offer is one of the following:
 
 There are typically two ways an offer becomes a booking:
 
-1. **Customer self-booking**: the customer uses the booking link/button in the offer email (if enabled in your setup).
+1.  **Customer self-booking**: the customer uses the booking link/button in the offer email.&#x20;
+
+    <figure><img src="../.gitbook/assets/14.05.2026_13.56.15_REC.png" alt=""><figcaption><p>Customer self-booking</p></figcaption></figure>
 2. **Agent-created booking**: the sales agent creates the booking in Tourpaq Office.
 
 <figure><img src="../.gitbook/assets/image (268).png" alt="Offer converted to booking"><figcaption><p>When converted, the booking is created with customer, transport, and hotel details prefilled.</p></figcaption></figure>
@@ -127,25 +129,25 @@ Exporting offers is useful for reporting and analysis outside Tourpaq (for examp
 
 {% stepper %}
 {% step %}
-#### 1) Open the Offers page
+**1) Open the Offers page**
 
 Go to the Offers module and make sure you see the offers list.
 {% endstep %}
 
 {% step %}
-#### 2) Apply filters (optional)
+**2) Apply filters (optional)**
 
 If you only want to export a subset (for example a specific period or a specific agent), apply filters first.
 {% endstep %}
 
 {% step %}
-#### 3) Export
+**3) Export**
 
 Open the menu (three dots) and select **Export**.
 {% endstep %}
 
 {% step %}
-#### 4) Save the file
+**4) Save the file**
 
 The system generates a file based on your current filter results.
 {% endstep %}

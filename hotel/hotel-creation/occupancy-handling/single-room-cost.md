@@ -37,19 +37,19 @@ Base room cost: `150`
 
 {% stepper %}
 {% step %}
-#### Open the Room Cost tab
+**Open the Room Cost tab**
 
 Go to **Hotel → Room Costs → Room Cost tab**.
 {% endstep %}
 
 {% step %}
-#### Find the room
+**Find the room**
 
 Locate the room type you want to configure.
 {% endstep %}
 
 {% step %}
-#### Set the single-occupancy cost
+**Set the single-occupancy cost**
 
 Enter a value in **SINGLE PRICE**.
 
@@ -57,7 +57,7 @@ Select **SP%** if the value should be treated as a percentage.
 {% endstep %}
 
 {% step %}
-#### Save
+**Save**
 
 Save your changes.
 {% endstep %}

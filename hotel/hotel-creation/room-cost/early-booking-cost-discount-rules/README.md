@@ -35,7 +35,7 @@ Early Booking Cost Discount Rules provide a structured method for:
 
 This functionality is commonly used for promotions where bookings made before a defined deadline receive discounted hotel costs.
 
-### **System Setup**&#x20;
+### **System Setup**
 
 System Setup → General → Settings -> Use Early Booking and Stay and Pay for Discount
 
@@ -44,8 +44,6 @@ The setting **Use Early Booking and Stay and Pay for Discount** uses discounted 
 EBD rules always affect the **hotel cost** when their conditions are met.
 
 The setting only determines **how the discount is reflected in the selling price and how it is displayed to the guest**.
-
-
 
 <figure><img src="../../../../.gitbook/assets/image (424).png" alt=""><figcaption></figcaption></figure>
 
@@ -144,7 +142,7 @@ The filter section allows the list of Early Booking rules to be narrowed to spec
 *   **Room Code**: Filter used to display rules related to a specific **room type** configured in the hotel contract. Room types are defined in:
 
     **Hotel → Room Types**
-* **Period**: Filters rules based on the **stay period** defined in the rule.&#x20;
+* **Period**: Filters rules based on the **stay period** defined in the rule.
 * **Booking date**: Filters rules based on the **booking window** defined in the rule. This allows identification of rules that apply when bookings are made within certain date ranges.
 * **Departure date**: Filter by departure/stay dates.
 * **Create:** Button used to create a new **Early Booking Cost Discount Rule**. Selecting this option adds a new row in the grid where all rule parameters can be defined.
@@ -159,16 +157,16 @@ Each column defines conditions or parameters that control when the rule applies.
 | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Stay** **Start / End** | Defines the **first stay date/**&#x74;he **last stay date** for which the Early Booking rule is valid. Bookings with arrival dates **before this date/after this date** will not match the rule. The rule can apply to overlapping stay days. Example: stay 01–07 Oct, rule 05–30 Oct applies on 05–07 Oct. |
 | **Booking Start / End**  | Specifies when the booking must be made for the discount to apply.                                                                                                                                                                                                                                          |
-| Days of the Week         | Restricts the rule to arrivals on selected weekdays. This has to coincide with the arrival date of the booking. If no value is selected, the rule applies to **all days**.![](<../../../../.gitbook/assets/image (569).png>)                                                                                |
+| **Days of the Week**     | Restricts the rule to arrivals on selected weekdays. This has to coincide with the arrival date of the booking. If no value is selected, the rule applies to **all days**.![](<../../../../.gitbook/assets/image (569).png>)                                                                                |
 | **Room**                 | <p>Defines the <strong>room types</strong> to which the rule applies.</p><p>Room types must exist in:</p><p><strong>Hotel → Room Types</strong></p><p>Selecting <strong>Selected all</strong> means the rule applies to every configured room type.</p>                                                     |
 | **Board**                | Board type filter. If the booking has a board, the system looks for a matching board rule first. If none exists, it can use a rule without board.                                                                                                                                                           |
-| From Age/to Age          | Defines the age interval for which the rule applies.                                                                                                                                                                                                                                                        |
+| **From Age/to Age**      | Defines the age interval for which the rule applies.                                                                                                                                                                                                                                                        |
 | **Price**                | <p>Defines the <strong>discount value</strong> applied to the hotel cost.</p><p>How this value is interpreted depends on the <strong>IS %</strong> field.</p>                                                                                                                                               |
 | **BDNBA**                | <p>Defines whether the rule should consider <strong>booking days before arrival</strong>.</p><p>This value may be used together with booking date filters to restrict the rule based on how many days in advance the booking is made.</p>                                                                   |
 | **IS %**                 | Treats **Price** as a percent of (Room Cost + Extra Included + Extra Bed + Stay & Pay). The result is subtracted.                                                                                                                                                                                           |
 | **PR**                   | <p>Defines whether the value is applied <strong>per room</strong> or <strong>per passenger</strong>.</p><ul><li>Enabled → discount applied <strong>per room</strong></li><li>Disabled → discount applied <strong>per passenger</strong></li></ul>                                                           |
 | **S\&P**                 | <p>Indicates whether the rule can <strong>combine with Stay and Pay Cost Rules</strong>.</p><p>If enabled, both rules may be applied during cost calculation.</p><p>Stay and Pay rules are configured under:</p><p><strong>Room Costs → Stay and Pay Cost Rules</strong></p>                                |
-| E**BC**                  | Apply on Extra Bed Cost                                                                                                                                                                                                                                                                                     |
+| **EBC**                  | Apply on Extra Bed Cost                                                                                                                                                                                                                                                                                     |
 | **BB**                   | Internal indicator used to identify rules that interact with board-based configurations.                                                                                                                                                                                                                    |
 | **Min Days**             | <p>Defines the <strong>minimum number of days before arrival</strong> required for the rule to apply.</p><p>If a booking is created fewer days before arrival than defined here, the rule will not apply.</p>                                                                                               |
 | **Deposit Date**         | The cutoff date for the deposit to be paid to validate the discount.                                                                                                                                                                                                                                        |
@@ -180,6 +178,32 @@ Each column defines conditions or parameters that control when the rule applies.
 | **EBP Discount**         | Customer Early Booking Discount                                                                                                                                                                                                                                                                             |
 | **Contract**             | <p>Displays the contract associated with the rule.</p><p>This helps identify the rule when multiple contracts exist for the same hotel.</p>                                                                                                                                                                 |
 | **Invoice List**         | <p>Displays the invoice processing status for the rule.</p><p>The message <strong>“Rule not run by service”</strong> indicates that the background service responsible for applying the rule has not yet processed it.</p>                                                                                  |
+
+**Autobilling behavior**
+
+On the 'Send List Date' date, the Early booking rooming list is sent to the hotel. The Early booking rooming list is received 12.05 PM on the 'Send List Date' date. In the 'INVOICE LIST' column, the 'History' icon is now visible, but without history. Furthermore, on the 'Send List Date' date, the Early Booking invoices (without invoice number) are displayed on the Deposit page.
+
+On the Deposit date the Early Booking invoices are shown in the History pop-up field. Furthermore, Early Booking invoices are shown on the Hotel > Deposit page with an invoice number. Finally, they are generated in the Finance > Invoice page as Pending.
+
+**Example behaviour when using “Early Booking Cost Discount Rules”**
+
+Given:
+
+* Send List Date: 25-03-2026
+* Deposit Date: 26-03-2026
+
+On 25-03-2026:
+
+* The Early Booking Rooming List is sent to the hotel. (Note: The rooming list must be configured in the Email Center with the type “Early booking rooming list”).
+* The History icon becomes visible in the Invoice List column under Hotel > Deposit.
+* The History pop-up is available, but no invoices are displayed yet.
+
+On 26-03-2026:
+
+* Early Booking invoices appear in the History pop-up.
+* Early Booking invoice is sent to the hotel.
+* Early Booking invoices are displayed under Hotel > Deposit, now with assigned invoice numbers.
+* The same invoices are generated in Finance > Invoice with status Pending waiting for the hotel to approve or reject.
 
 #### Percent vs fixed value
 

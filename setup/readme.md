@@ -29,105 +29,7 @@ New features, performance improvments and automation enhancements to help you wo
 * 🔵 **Improved** — Enhancement / Update to an existing feature.
 * 📄 **Docs** — Documentation added or updated with no product change.
 
-### Recent release history
-
-```plaintext
-timeline
-    title Product Updates
-
-    2025-06 : New Price List Views
-            : Save / Update view support
-            : Manage Views dialog
-```
-
-## Changelog
-
-```mermaid
-timeline
-    title Recent Updates
-
-    v2.3.0 : Added multiple delete for saved views
-            : Improved export filters
-
-    v2.4.0 : Added agency-based extras filtering
-
-    v2.5.0 : Travelport integration released
-```
-
 {% updates format="full" %}
-{% update date="2026-05-08" tags="v15.2" %}
-##
-
-
-
-```mermaid
-timeline
-    title Product Updates
-
-    2025-01 : Initial release
-            : Basic booking flow
-
-    2025-03 : Added Travelport integration
-            : Introduced Rooming List XML export
-
-    2025-06 : New Price List Views
-            : Save / Update view support
-            : Manage Views dialog
-
-    2025-09 : Performance improvements
-```
-{% endupdate %}
-{% endupdates %}
-
-{% columns %}
-{% column width="25%" %}
-<details>
-
-<summary>All time</summary>
-
-
-
-</details>
-{% endcolumn %}
-
-{% column width="25%" %}
-<details>
-
-<summary>All categories</summary>
-
-<i class="fa-group-arrows-rotate" style="color:$primary;">:group-arrows-rotate:</i> New updates
-
-<i class="fa-dochub" style="color:violet;">:dochub:</i> Docs
-
-<i class="fa-integral" style="color:$warning;">:integral:</i> Integration
-
-<i class="fa-file-import" style="color:$success;">:file-import:</i>Improvments
-
-</details>
-{% endcolumn %}
-
-{% column width="25%" %}
-<details>
-
-<summary>All modules</summary>
-
-
-
-</details>
-{% endcolumn %}
-
-{% column %}
-<p align="center"><button type="button" class="button primary" data-action="search" data-icon="magnifying-glass">Search updates…</button></p>
-{% endcolumn %}
-{% endcolumns %}
-
-{% updates format="full" %}
-{% update date="2026-05-08" %}
-##
-
-
-{% endupdate %}
-
 {% update date="2026-06-09" %}
 ## 2026-06 (Tourpaq v15.2)
 
@@ -140,7 +42,7 @@ timeline
 
 * 📄 **What's new** was added to track recent Tourpaq releases and documentation updates. See [What's new](./).
 * 📄 **Price List** was updated with clearer search behavior, display logic, and bulk pricing guidance. See [Price List](../price-list/pricelist.md).
-* 📄 **Allotments** was updated with manual allotments, linked-to-transport allotments, and generic allotment guidance for Extras. See [Allotments](../extras-setup/extras/allotments.md).
+* 📄 **Allotments** was updated with manual allotments, linked-to-transport allotments, and generic allotment guidance for Extras. See [Allotments](../extras-setup/extras-general-page/allotments.md).
 * 📄 **Print Tickets** was updated with clearer single-booking and bulk reprint workflows. See [Print Tickets](../tickets/print-tickets.md).
 * 📄 **Autobilling** was updated with prerequisites, invoice generation flow, lifecycle states, and troubleshooting. See [Autobilling](../autobilling/).
 * 🟢 Editable board hotel allotment. See [Hotel Allotment](../hotel/hotel-creation/hotel-allotments/editable-board.md).
@@ -194,3 +96,11 @@ A release entry marked **📄 Docs** means the manual changed, but the product b
 * [Welcome to the Tourpaq Manual](../)
 * [Getting Started with Tourpaq](<../README (1).md>)
 * [Onboard a new employee (Tourpaq Office access)](../users/users/onboard-a-new-employee-tourpaq-office-access.md)
+
+{% hint style="info" %}
+🎧 **Need help?**
+
+Can't find a feature or spotted a bug?
+
+[Contact support →](mailto:support@tourpaq.com)
+{% endhint %}

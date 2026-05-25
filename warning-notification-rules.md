@@ -110,19 +110,19 @@ If you are unsure which warning to enable, start with email failures and booking
 
 {% stepper %}
 {% step %}
-#### 1. Choose who should receive warnings
+**1. Choose who should receive warnings**
 
 Open **Warning Contacts**. Add one or more recipients.
 {% endstep %}
 
 {% step %}
-#### 2. Set the sender email address
+**2. Set the sender email address**
 
 Open **Warning Sent from E-mail**. Set the sender address for warning emails.
 {% endstep %}
 
 {% step %}
-#### 3. Turn on the warnings you need
+**3. Turn on the warnings you need**
 
 Open **Warning Notification Rules**.
 
@@ -130,7 +130,7 @@ Pick the warning types you want. Set how often they can be sent.
 {% endstep %}
 
 {% step %}
-#### 4. Review and adjust
+**4. Review and adjust**
 
 If people get too many messages, reduce the warning list or lower the frequency.
 {% endstep %}

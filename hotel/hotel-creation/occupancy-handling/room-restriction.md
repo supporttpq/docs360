@@ -43,25 +43,25 @@ You can allow only specific combinations. Example: allow `2 ordinary + 1 extra c
 
 {% stepper %}
 {% step %}
-#### Open the room type
+**Open the room type**
 
 Go to **Hotel → Room Types**. Select the room type, then click **Edit**.
 {% endstep %}
 
 {% step %}
-#### Review combinations
+**Review combinations**
 
 Scroll to **Restrictions**. Review the list of combinations.
 {% endstep %}
 
 {% step %}
-#### Block combinations
+**Block combinations**
 
 Select the **Restriction** checkbox for combinations you want to block.
 {% endstep %}
 
 {% step %}
-#### Save
+**Save**
 
 Save the room type.
 {% endstep %}

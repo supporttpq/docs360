@@ -44,7 +44,7 @@ Before using this module:
 
 ### Fields & Filters – Export Generation
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 | Field                  | Description                                                                                       |
 | ---------------------- | ------------------------------------------------------------------------------------------------- |
@@ -89,7 +89,7 @@ Before using this module:
 
 You can **automate exports** by setting up schedules.
 
-<figure><img src="../.gitbook/assets/image (23) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (23) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Fields
 

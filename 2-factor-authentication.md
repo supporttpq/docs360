@@ -65,7 +65,7 @@ In this pop-up, we’ll have the following elements:
     * Any internet connection is enough to access your account.
 
     **Note: The details from the user: Email and phone number are usually used into the Select Offer Template. Still, if the user doesn’t want these details to be displayed, just simply mark this checkbox:**
-* #### Google Authenticator Methods <a href="#google-authenticator-methods" id="google-authenticator-methods"></a>
+* **Google Authenticator Methods**
 
 We will set the user email, and we will generate the QR code that will be used for authenticator
 

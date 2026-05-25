@@ -136,7 +136,7 @@ You must then enter the required values. Some fields auto-fill based on formulas
 * **TAG / TAG CH / STATUS / HNI1–HNI4**: Operational tagging and hotel name interval fields.
 
 {% hint style="info" %}
-#### Room type display logic for the Allotment filter
+**Room type display logic for the Allotment filter**
 
 **Principle**
 

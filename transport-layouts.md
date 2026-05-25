@@ -82,7 +82,7 @@ Use layouts to design the aircraft interior and seat positions.
 
 {% stepper %}
 {% step %}
-#### Create the layout
+**Create the layout**
 
 Open **Transport Layouts** and click **Create**.
 
@@ -90,7 +90,7 @@ Open **Transport Layouts** and click **Create**.
 {% endstep %}
 
 {% step %}
-#### Add a section
+**Add a section**
 
 Name the section and select a **seat list**.
 
@@ -100,7 +100,7 @@ You can also copy an existing layout.
 {% endstep %}
 
 {% step %}
-#### Place seats and elements
+**Place seats and elements**
 
 Use **Place automatically** to generate a standard section.\
 Then tweak it in the editor.
@@ -111,7 +111,7 @@ Drag and drop elements to reposition them.
 {% endstep %}
 
 {% step %}
-#### Adjust aircraft shape (nose/tail)
+**Adjust aircraft shape (nose/tail)**
 
 The aircraft width is defined by the nose and tail widths.\
 Keep nose and tail at the same width and roughly aligned on the same axis.
@@ -255,27 +255,13 @@ Rules:
 
 <figure><img src=".gitbook/assets/rs3-b533ae25e119112c62534ced51bd9440.png" alt=""><figcaption></figcaption></figure>
 
-<details>
+{% hint style="info" %}
+#### Note
 
-<summary>Technical notes (WebBooking / CC)</summary>
+The seating restriction functionality needs to be activated by Tourpaq. Please contact Tourpaq if you want this functionality turned on.
+{% endhint %}
 
-* In NewWebBooking, full validation is applied.\
-  If a seating link is returned, seat selection is allowed.\
-  No warning is shown when opening the seating popup.
-* For CC, `TransportSeating` from `VisibleTabs` is always `true`.
-* CC without selected seats:
-  * Not eligible to select seats (no price rule, etc.) → `allowToChangeSeating = false`.
-  * Container visibility comes from `help:transportseating` links.\
-    If at least one link is returned, the container is visible.
-* CC without selected seats but eligible to select seats for outbound only:
-  * `allowToChangeSeating = true`
-  * Homebound selection is not possible (popup link is missing).
-* CC with selected seats but no longer eligible to change seats:
-  * `allowToChangeSeating = false`
-  * Popup can open for viewing.\
-    An info message is shown and changes are blocked.
 
-</details>
 
 ### FAQ
 

@@ -76,14 +76,14 @@ Use this flow when configuring ticket attachments for an agency:
 
 {% stepper %}
 {% step %}
-#### 1. Open the Ticket Attachments page
+**1. Open the Ticket Attachments page**
 
 * Go to **E-mail Setup → Ticket Attachments**.
 * Select the correct **agency** at the top of the page.
 {% endstep %}
 
 {% step %}
-#### 2. Configure defaults in "All Transports"
+**2. Configure defaults in "All Transports"**
 
 * Open the **All Transports** tab.
 * Upload the standard PDFs you want on most tickets.
@@ -94,7 +94,7 @@ Use this flow when configuring ticket attachments for an agency:
 {% endstep %}
 
 {% step %}
-#### 3. Adjust documents per transport type (optional)
+**3. Adjust documents per transport type (optional)**
 
 * Switch to the specific tabs (**Charter Transports**, **Dynamic Transports**, **System Transports**, **Sys-real Transports**).
 * Upload different PDFs where you need different rules.
@@ -103,14 +103,14 @@ Use this flow when configuring ticket attachments for an agency:
 {% endstep %}
 
 {% step %}
-#### 4. Review existing attachments
+**4. Review existing attachments**
 
 * Check each tab for the expected documents.
 * Download a document to confirm it is the right version.
 {% endstep %}
 
 {% step %}
-#### 5. Verify by generating a ticket
+**5. Verify by generating a ticket**
 
 * Create a test booking that matches the transport type.
 * Generate and send a ticket.
@@ -156,7 +156,7 @@ No. Ticket Attachments are set per agency. Your changes apply only to the select
 
 <summary>What file type can I upload?</summary>
 
-PDF only.&#x20;
+PDF only.
 
 </details>
 

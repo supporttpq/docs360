@@ -19,6 +19,43 @@ The E-mail Center is used to:
 
 Open **E-mail Setup → E-mail center** in the back office.
 
+### Table Structure
+
+<figure><img src="../.gitbook/assets/15.05.2026_15.33.42_REC.png" alt=""><figcaption></figcaption></figure>
+
+Each email configuration is displayed in a row with the following columns:
+
+**Email Type** - Defines the functional purpose of the email. Each type corresponds to a specific automated process or event trigger in the system.
+
+**Brand** - Indicates the brand context under which the email configuration is applied. This ensures that email behavior can vary across different brand setups.
+
+**From Email** - Specifies the sender email address used when emails are dispatched. This field controls the visible sender identity in outgoing emails.&#x20;
+
+**Last Update** - Shows the timestamp of the most recent modification to the configuration. This helps track recent configuration changes.&#x20;
+
+**Updated By** - Displays the user or system account that performed the last update.
+
+**Active** - Indicates whether the email configuration is currently enabled.
+
+* Checked: Active and used in workflows
+* Unchecked: Disabled and ignored by the system
+
+{% hint style="info" %}
+When an email template is activated, the system checks for any failed emails from the previous 7 days and attempts to resend them.
+
+**Example**\
+If an email template is activated on 10 June, the system will also include failed email attempts from 3 June to 10 June. Any emails that failed within this period become eligible for retry and can be resent after activation.
+{% endhint %}
+
+Row Actions - Each row includes action controls:
+
+* **Edit (row click or open action depending on implementation)**\
+  Allows modification of the email configuration.
+* **Delete (trash icon)**\
+  Removes the configuration from the system.
+
+Deletion should be used carefully as it may affect live email workflows.
+
 ### Template fields
 
 For each email template, you can configure the following fields:
@@ -77,13 +114,13 @@ The system can send many types of automated emails. Common examples include:
 
 {% stepper %}
 {% step %}
-#### 1. Open the E-mail Center
+**1. Open the E-mail Center**
 
 Open **E-mail Setup → E-mail center**.
 {% endstep %}
 
 {% step %}
-#### 2. Choose a template
+**2. Choose a template**
 
 Either:
 
@@ -92,7 +129,7 @@ Either:
 {% endstep %}
 
 {% step %}
-#### 3. Fill in sender details
+**3. Fill in sender details**
 
 Set:
 
@@ -101,7 +138,7 @@ Set:
 {% endstep %}
 
 {% step %}
-#### 4. Define subject and content
+**4. Define subject and content**
 
 * Enter a clear, descriptive **email subject**.
 * In the **email body**, write the content of the message.
@@ -109,14 +146,14 @@ Set:
 {% endstep %}
 
 {% step %}
-#### 5. Set activation and save
+**5. Set activation and save**
 
 * Choose the **activation status** (keep it inactive while you are still testing).
 * Save your changes.
 {% endstep %}
 
 {% step %}
-#### 6. Test the template
+**6. Test the template**
 
 * Click the **Test** button for the template.
 * Enter your own email address (or a dedicated test mailbox) as the recipient.

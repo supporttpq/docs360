@@ -40,25 +40,25 @@ Accurate setup here reduces booking errors and keeps hotel behavior consistent a
 
 {% stepper %}
 {% step %}
-#### Enter the mandatory fields
+**Enter the mandatory fields**
 
 Complete **Code**, **Name**, **Resort**, **Contract type**, and **Standard room**.
 {% endstep %}
 
 {% step %}
-#### Complete the operational fields
+**Complete the operational fields**
 
 Review supplier, visibility, pricing, child-age, voucher, and integration settings.
 {% endstep %}
 
 {% step %}
-#### Save the hotel record
+**Save the hotel record**
 
 Save the hotel after the required setup is complete.
 {% endstep %}
 
 {% step %}
-#### Continue in related hotel areas
+**Continue in related hotel areas**
 
 Maintain rooms, contracts, costs, facilities, web content, and communication in the related hotel pages.
 {% endstep %}
@@ -170,6 +170,11 @@ This field is optional, but important when child pricing differs from adult pric
 
 This field affects how hotel price list child pricing is applied in booking flows. It should stay aligned with price list and room configuration logic.
 
+{% hint style="info" %}
+When a guest is within the age from/to, then the child price in the price list is used.\
+If no age is specified, the fallback is the age range from 2 years to "Max child age" (from the agency configuration).
+{% endhint %}
+
 **Child ages for extra bed**
 
 Defines the age interval for children using an extra bed.
@@ -177,6 +182,12 @@ Defines the age interval for children using an extra bed.
 This field is optional.
 
 If a child age falls outside this interval, the child uses adult extra-bed logic instead. This setting overrides the child age behavior defined on the base room type when a hotel-specific rule is needed.
+
+{% hint style="info" %}
+When a room type has a dedicated child extra bed, only guests within the given age range will be eligible for a child bed.\
+This overrides the age range on the room type.\
+If no age is specified, the fallback is the age range from 2 years to "Max child age" (from the agency configuration).
+{% endhint %}
 
 **Adult hotel**
 

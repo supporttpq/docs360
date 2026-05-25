@@ -28,18 +28,18 @@ Hotel → Releases / Stop Sales Log
 
 The filter section allows narrowing down the log entries.
 
-|                                |                                                                                                                                                                                           |
-| ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <h4>Supplier</h4>              | <p>Dropdown used to filter log entries by <strong>supplier</strong>.</p><p>This corresponds to the supplier linked to the hotel contract.</p>                                             |
-| <h4>Allotment From / To</h4>   | <p>Defines the date range of the allotment being analyzed.<br>Only changes affecting this period will be shown.</p>                                                                       |
-| <h4>Change Date From / To</h4> | <p>Filters based on when the change was made.<br>Useful for tracking recent updates or historical actions.</p>                                                                            |
-| <h4>Hotels</h4>                | <p>Field used to select one or more <strong>hotels</strong>.</p><ul><li>Clicking <strong>Edit</strong> opens a selection dialog</li><li>Filters log entries for specific hotels</li></ul> |
-| <h4>Room</h4>                  | Filter by specific room type.                                                                                                                                                             |
-| <h4>Show Hidden</h4>           | <p>Checkbox that includes <strong>hidden or system-level entries</strong> in the results.</p><p>When enabled, additional technical records may be displayed.</p>                          |
-| <h4>Display</h4>               | Button used to apply the selected filters and refresh the log results.                                                                                                                    |
-| **More Filters**               | Expands the filter section to include additional criteria.                                                                                                                                |
-| **Clear**                      | Resets all filters to default values.                                                                                                                                                     |
-| **Display names**              | Checkbox that toggles between **codes and readable names** for hotels and rooms.                                                                                                          |
+|                           |                                                                                                                                                                                           |
+| ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Supplier**              | <p>Dropdown used to filter log entries by <strong>supplier</strong>.</p><p>This corresponds to the supplier linked to the hotel contract.</p>                                             |
+| **Allotment From / To**   | <p>Defines the date range of the allotment being analyzed.<br>Only changes affecting this period will be shown.</p>                                                                       |
+| **Change Date From / To** | <p>Filters based on when the change was made.<br>Useful for tracking recent updates or historical actions.</p>                                                                            |
+| **Hotels**                | <p>Field used to select one or more <strong>hotels</strong>.</p><ul><li>Clicking <strong>Edit</strong> opens a selection dialog</li><li>Filters log entries for specific hotels</li></ul> |
+| **Room**                  | Filter by specific room type.                                                                                                                                                             |
+| **Show Hidden**           | <p>Checkbox that includes <strong>hidden or system-level entries</strong> in the results.</p><p>When enabled, additional technical records may be displayed.</p>                          |
+| **Display**               | Button used to apply the selected filters and refresh the log results.                                                                                                                    |
+| **More Filters**          | Expands the filter section to include additional criteria.                                                                                                                                |
+| **Clear**                 | Resets all filters to default values.                                                                                                                                                     |
+| **Display names**         | Checkbox that toggles between **codes and readable names** for hotels and rooms.                                                                                                          |
 
 ### Table Fields Explanation
 
@@ -61,7 +61,7 @@ Each row represents a **single allotment change event**.
 
 **Final R.No** - Final number of available rooms after the change.
 
-&#x20;        Example: 100 → 0 indicates a full stop sale.
+Example: 100 → 0 indicates a full stop sale.
 
 **Source** - Indicates how the change was triggered.
 

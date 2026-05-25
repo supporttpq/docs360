@@ -174,6 +174,7 @@ These options control which sections appear on the ticket:
 * **Hide Payment Info Box On Individual Ticket -** If checked, this will make the payment plan with IBAN and swift not show on ticket.
 * **Show Hotel URL -** If checked, hotel URL will appear on ticket
 * **Show Hotel Info -** If checked, hotel address and thelephone will appear on ticket
+* **Show Room Info** - If checked, the room description will be added below the hotel description
 * **Show Travel Time -** If checked, travel time will appear on ticket
 * **Show Arrival Hour -** If checked, arrival hour will appear on ticket
 * **Add hotel description page -** If checked, adds a page at the end of the ticket that represents the hotel description as set in web tab of the hotel
@@ -298,7 +299,37 @@ This section allows you to:
 
 #### 3. Age Settings
 
-**Max Child Age -** Defines the maximum age considered as a child. Affects pricing and child-related rules.
+**Max Child Age -** The **Max Child Age** setting defines the upper age limit for passengers classified as children within a brand.
+
+This value is used throughout the system for passenger classification, pricing fallback logic, and child bed calculations.
+
+The default value is 17 and is mandatory.
+
+**Tooltip**
+
+> For a booking, "Max child age" determines if a passenger is a child. Infants are 0 to 1 years old.\
+> "Max child age" is also the fallback for child prices if the hotel does not specify an age range.\
+> "Max child age" is also a fallback for child beds if the room or the hotel does not specify an age range.
+
+**Functional Impact**
+
+The configured value shall be used as fallback logic in the following cases:
+
+* Passenger classification in booking flow
+* Child pricing when hotel child age ranges are missing
+* Child bed allocation when room or hotel child age ranges are missing
+
+#### Example
+
+If **Max Child Age = 17**:
+
+* Passenger age 0-1 → Infant
+* Passenger age 2-17 → Child
+* Passenger age 18+ → Adult
+
+{% hint style="info" %}
+If a hotel does not define child pricing ages, the system shall use the brand-level **Max Child Age** value to determine child pricing eligibility.
+{% endhint %}
 
 **Retrieve age from -** Determines how the system calculates age. Usually from **Date of Birth**.
 
