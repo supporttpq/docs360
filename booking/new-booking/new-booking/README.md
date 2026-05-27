@@ -19,6 +19,8 @@ layout:
     visible: true
   tags:
     visible: true
+  actions:
+    visible: true
 ---
 
 # New Booking
@@ -635,6 +637,25 @@ The passenger grid contains one row per passenger. Each row includes multiple fi
 * **Data Source:** Title options configured in system setup.
 * **System Behavior:** Required for all passengers. Used in documentation and passenger manifests. May affect airline booking requirements.
 * **Related Functionality:** Links to passenger documentation generation. Required for travel documents.
+*   When Trying to Re-order Passengers or Change Title/Gender, the following actions are not allowed directly from the Pax grid:
+
+    * Changing passenger type:
+      * Adult → Child
+      * Child → Adult
+    * Reordering passengers
+    * Adjustments that affect passenger structure validation
+
+    When such changes are attempted, the system displays the updated warning message.
+
+    <figure><img src="../../../.gitbook/assets/27.05.2026_13.24.51_REC.png" alt=""><figcaption></figcaption></figure>
+
+    This improvement clarifies the system behavior when users attempt to:
+
+    * Reorder passengers directly in the Pax grid
+    * Change passenger type between Child and Adult
+    * Modify passenger details that affect passenger sequencing or validation
+
+    The updated message provides clearer guidance and directs users to the correct workflow.
 
 **First Name (Passenger)**
 
@@ -741,6 +762,8 @@ Insurance availability may depend on:
 * **Data Source:** Active discounts and supplements configured in Disc/Suppl management, filtered by eligibility rules.
 * **System Behavior:** Selecting a discount reduces the passenger total. Selecting a supplement increases the passenger total. Changes immediately affect Total Amount display. Multiple discounts and supplements can be combined if configuration allows.
 * **Related Functionality:** Links to Discount/Supplement rules and pricing. May affect profit margin calculations. Integrates with campaign and promotional pricing.
+
+
 
 **Save Passenger Button**
 
