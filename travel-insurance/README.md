@@ -29,6 +29,16 @@ The **General** tab contains all mandatory and optional settings that define how
 
 This setup ensures that the insurance product appears correctly during the booking flow and that all calculations and integrations run as expected.
 
+Travel Insurance can be configured for Adults, Children, and Infants. When infant support is enabled, the insurance can be selected and priced separately for infant passengers throughout the system.
+
+Supported providers:
+
+* Europæiske
+* Gouda
+* No external provider
+
+The functionality and pricing rules described below apply regardless of the configured insurance provider.
+
 #### **Purpose**
 
 The purpose of the General tab is to:
@@ -41,9 +51,9 @@ The purpose of the General tab is to:
 
 This ensures the insurance behaves correctly across all booking channels.
 
-### **Field Explanation**&#x20;
+### **Field Explanation**
 
-<figure><img src="../.gitbook/assets/image (473).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/28.05.2026_11.14.32_REC.png" alt=""><figcaption></figcaption></figure>
 
 #### **Brand Assignment (Top Section)**
 
@@ -62,11 +72,9 @@ This ensures the insurance behaves correctly across all booking channels.
 | **InsuranceID**\*                   | Internal identifier used for API calls and integrations.                                          |
 | **Product code**\*                  | Provider product code used in external systems (Gouda/Europæiske).                                |
 | **Max no. days**\*                  | Maximum number of travel days allowed for this insurance product.                                 |
-| **Price Infant**                    | Price for infant travellers, if applicable.                                                       |
 | **Add to deposit**                  | If enabled, the insurance price is added to the deposit calculation instead of the final invoice. |
 | **Cancellation insurance included** | If checked, cancellation coverage is included in this insurance.                                  |
 | **Annual insurance**                | Indicates whether this is a yearly insurance product rather than per-trip.                        |
-| **Priced Infant**                   | If enabled, infants are charged based on the “Price Infant” rule.                                 |
 | **Commission**                      | Percentage commission paid to the agency for selling the insurance.                               |
 | **Auto Select in Booking Window**   | Automatically selects this insurance by default in the booking flow.                              |
 | **Currency**                        | The currency used for this insurance product.                                                     |
@@ -89,13 +97,13 @@ This ensures the insurance behaves correctly across all booking channels.
 | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Cover**            | <p>Indicates whether the insurance applies to:</p><ul><li>A <strong>single person</strong>, or</li><li>A <strong>group</strong> (codes: <em>6, 10, 18</em>) — these group values are not sent directly to Gouda.</li></ul> |
 | **Tax**              | <p>The fee charged by Gouda for their services.<br>Default: <strong>1.1%</strong> of the insurance price.</p>                                                                                                              |
-| **Optionals**        | <p>Extra configuration field for Gouda integrations. </p><p>Additional cover options:</p><ol><li>Personal Property</li><li>Ski</li><li>Excess</li><li>Accident</li><li>Accident + Personal Property</li></ol>              |
+| **Optionals**        | <p>Extra configuration field for Gouda integrations.</p><p>Additional cover options:</p><ol><li>Personal Property</li><li>Ski</li><li>Excess</li><li>Accident</li><li>Accident + Personal Property</li></ol>               |
 | **Product version**  | Indicates which Gouda product version is used.                                                                                                                                                                             |
 | **1 year available** | Enables 1-year coverage options if offered by Gouda.                                                                                                                                                                       |
 
 ***
 
-### **Europæiske Extensions**&#x20;
+### **Europæiske Extensions**
 
 | **Field**               | **Description**                                                                         |
 | ----------------------- | --------------------------------------------------------------------------------------- |
@@ -116,12 +124,16 @@ Each insurance must contain the following price inputs, per area:
 
 #### **Extended Europe**
 
+<figure><img src="../.gitbook/assets/28.05.2026_11.17.17_REC.png" alt=""><figcaption></figcaption></figure>
+
 * Adult basic price
 * Adult price per day
 * Child basic price
 * Child price per day
 * Basic Price Senior
 * Senior day price
+* Basic price infant
+* Infant day price
 
 #### **Europe**
 
@@ -131,6 +143,8 @@ Each insurance must contain the following price inputs, per area:
 * Child price per day
 * Basic Price Senior
 * Senior day price
+* Basic price infant
+* Infant day price
 
 #### **World**
 
@@ -140,6 +154,8 @@ Each insurance must contain the following price inputs, per area:
 * Child price per day
 * Basic Price Senior
 * Senior day price
+* Basic price infant
+* Infant day price
 
 ***
 
@@ -152,36 +168,6 @@ The total insurance price for a passenger is calculated as:
 This applies to both adults and children, based on the values defined for their age group and insurance area.
 
 ***
-
-### **Passenger Using Personal Insurance**
-
-Passengers may choose to use their own travel insurance instead of purchasing one offered in the system.
-
-For this scenario:
-
-* The **Product Code** does _not_ correspond to a provider’s product
-* **Europæiske** and **Gouda extensions** do **not** need to be filled
-* Only the manually provided details (e.g., insurance company, policy number) are stored
-
-This ensures the booking remains fully compliant while allowing passengers to travel with external coverage.
-
-Example:
-
-| Travel insurance name               | Travel insurance code | Product code | Max days cover number | Description | Countries |
-| ----------------------------------- | --------------------- | ------------ | --------------------- | ----------- | --------- |
-| Årsrejsef.EU(Husst.)m.gratis  Total | ÅEH                   | AREU         | 365                   | Bulgary     | Kreta     |
-
-Let’s suppose that this travel insurance corresponds to a product provided by Gouda, so Gouda extensions should be filled in:
-
-| Cover | Optionals | Product version |
-| ----- | --------- | --------------- |
-| 6     | 0         | 4.0             |
-
-The correspondent prices:
-
-| Bkg start date | Bkg end date | Sc. basic price adult | Sc. basid price child | Sc. adult price per day | Sc. child price per day | Eur. basic price adult | Eur. basic price child | Eur. adult price per day | Eur. child price per day | W. basic price adult | W. basic price child | W. adult price per day | W. child price per day |
-| -------------- | ------------ | --------------------- | --------------------- | ----------------------- | ----------------------- | ---------------------- | ---------------------- | ------------------------ | ------------------------ | -------------------- | -------------------- | ---------------------- | ---------------------- |
-| 01-12-2009     | 01-12-2011   | 0                     | 0                     | 0                       | 0                       | 350                    | 0                      | 350                      | 0                        | 0                    | 0                    | 0                      | 0                      |
 
 ### **How It Works**
 
@@ -212,9 +198,6 @@ Options such as:
 Fields like:
 
 * Max no. days
-* Price Infant
-* Infant handling\
-  ensure the product applies correctly to each traveller.
 
 #### **6. Set Commission Rules**
 
@@ -234,13 +217,88 @@ These values must match the provider’s documentation.
 Choose which nationalities are allowed to book the product.\
 Example: Denmark, Bulgaria, Spain, Mallorca.
 
-
-
 {% hint style="info" %}
 In order to be able to track the data sent via the API, there is a log for the data sent to Gouda and Europæiske (travel insurance and cancellation), These logs can be checked in the [Internal Logs](../setup/internal-logs/insurance-payload-log-gouda-and-europaeiske.md) page of Setup
 {% endhint %}
 
 ***
+
+## Infant Support
+
+### Configuration
+
+Navigate to: **Product Setup > Travel Insurance > Date period**
+
+#### Date Period Configuration
+
+Navigate to the **Date Period** tab.
+
+For any type of insurance (Extended Europe, Europe, World), Basic price infant and infant day price are set.
+
+<figure><img src="../.gitbook/assets/28.05.2026_11.32.47_REC.png" alt=""><figcaption></figcaption></figure>
+
+***
+
+### Booking Flow
+
+When infant support is enabled:
+
+* Travel Insurance can be selected for infant passengers in the booking flow.
+* The configured infant price is used for the insurance cost calculation.
+
+<figure><img src="../.gitbook/assets/28.05.2026_11.33.42_REC.png" alt=""><figcaption></figcaption></figure>
+
+***
+
+### Web Booking
+
+When infant support is enabled:
+
+* Travel Insurance can be selected for infant passengers during Web Booking.
+* The configured infant price is used when calculating the insurance amount.
+
+***
+
+### Customer Center
+
+When infant support is enabled:
+
+* Travel Insurance can be added or modified for infant passengers in Customer Center.
+* The configured infant price is used when calculating the insurance amount.
+
+<figure><img src="../.gitbook/assets/28.05.2026_11.35.10_REC.png" alt=""><figcaption></figcaption></figure>
+
+***
+
+## Commission Calculation
+
+### Commission Rules
+
+The commission amount is calculated before tax is added to the Travel Insurance price.
+
+#### Calculation Order
+
+1. Determine the insurance base price.
+2. Calculate commission from the base price.
+3. Add tax.
+4. Calculate the final insurance amount.
+
+#### Example
+
+| Item             | Amount |
+| ---------------- | ------ |
+| Insurance Price  | 100.00 |
+| Commission (10%) | 10.00  |
+| Tax              | 25.00  |
+| Final Price      | 125.00 |
+
+In this example:
+
+* Commission is calculated from 100.00
+* Tax is added afterwards
+* Tax is not included in the commission calculation basis
+
+This calculation method applies to Adult, Child, and Infant insurance pricing.
 
 ### **Notes**
 
@@ -249,7 +307,7 @@ In order to be able to track the data sent via the API, there is a log for the d
 * Country selection must match legal coverage rules.
 * Brand assignment controls visibility across booking channels.
 
-## **Date Period**&#x20;
+## **Date Period**
 
 ### **Overview**
 
@@ -280,7 +338,7 @@ This ensures that the system always calculates the correct final price based on 
 
 ### **Field Explanation**
 
-<figure><img src="../.gitbook/assets/image (471).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/28.05.2026_11.38.42_REC.png" alt=""><figcaption></figcaption></figure>
 
 #### **General Fields (Left Panel)**
 
@@ -290,7 +348,6 @@ This ensures that the system always calculates the correct final price based on 
 | **Booking start**   | The date from which the period becomes valid. Prices and rules under this period apply for bookings made on or after this date. |
 | **Booking end**     | The last date on which the period is valid.                                                                                     |
 | **Max age child**   | The maximum age considered a child. Travellers older than this age fall into the adult category.                                |
-| **Infant**          | Checkbox indicating whether infant pricing applies during this period.                                                          |
 | **For Senior Only** | Restricts this pricing period to senior travellers only (e.g., senior insurance).                                               |
 
 ***
@@ -307,6 +364,8 @@ Pricing fields for the **Extended Europe** region.
 | **Child day price**    | Daily rate applied to child travellers.         |
 | **Basic price Senior** | Base price for senior travellers.               |
 | **Senior day price**   | Daily surcharge for seniors.                    |
+| **Basic price Infant** | Base price for infant travellers.               |
+| **Infant day price**   | Additional price per day for infants.           |
 
 ***
 
@@ -317,6 +376,7 @@ This sections (Europe, World) contain the same structure as Extended Europe:
 * Adult base and day prices
 * Child base and day prices
 * Senior base and day prices
+* Infants base and day prices
 
 ***
 
@@ -345,15 +405,15 @@ Same structure as Europe Fast Pris but applies to worldwide destinations.
 2. **Age Calculation**
    * Children are recognized based on **Max age child**.
    * Senior pricing is applied when the senior category is enabled and the traveller meets senior age criteria.
-   * Infants are priced separately when the **Infant** checkbox is checked.
+   * Infants are priced when insert the basic price infant
 3. **Price Determination**\
    The system calculates price based on:
    * Travel zone (Europe, Extended Europe, World)
-   * Age category (child, adult, senior)
+   * Age category (child, adult, senior, infant)
    * Trip duration (days)
 
 ## **Photos**
 
-The system allows add images related to the travel insurance asset.&#x20;
+The system allows add images related to the travel insurance asset.
 
 <figure><img src="../.gitbook/assets/image (472).png" alt=""><figcaption></figcaption></figure>
