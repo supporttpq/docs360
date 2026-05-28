@@ -37,16 +37,16 @@ When a booking is canceled and **cancellation insurance has been paid**, the use
 
 ### **Main Configuration**
 
-| **Field**                 | **Description**                                                                                                                                                                                                                                                                                                         |
-| ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Brand**\*               | Select the brand to which this cancellation insurance rule will apply. Mandatory field.                                                                                                                                                                                                                                 |
-| **Arr. dest**\*           | Choose the arrival destination (e.g., Dubai). This is the location where the customer is traveling to. Mandatory field.                                                                                                                                                                                                 |
-| **Booking start**\*       | Set the start date when the cancellation insurance becomes valid. Only bookings made after this date will be covered.                                                                                                                                                                                                   |
-| **Booking to**\*          | Set the end date after which the cancellation insurance will no longer apply.                                                                                                                                                                                                                                           |
-| **Type of rule**          | <p>Determines how the cancellation insurance is calculated. Options may include:<br>- <strong>Related to basic price</strong><br>- <strong>Related to transport type</strong><br>- <strong>Related to length of travel                                                         - Percentage of basic price</strong></p> |
-| **Commision**             | The commission is the percentage of the price that is used to calculate the cost (what is paid to the insurance company).                                                                                                                                                                                               |
-| **Currency**              | Defines the currency used in all related price inputs (e.g., DKK - Danish Krone).                                                                                                                                                                                                                                       |
-| **External Cancellation** | Allows linking to an external cancellation policy or provider (if integrated).                                                              - Gouda                                                                                         - Europieske                                                                |
+| **Field**                 | **Description**                                                                                                                                                                                                                                                 |
+| ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Brand**\*               | Select the brand to which this cancellation insurance rule will apply. Mandatory field.                                                                                                                                                                         |
+| **Arr. dest**\*           | Choose the arrival destination (e.g., Dubai). This is the location where the customer is traveling to. Mandatory field.                                                                                                                                         |
+| **Booking start**\*       | Set the start date when the cancellation insurance becomes valid. Only bookings made after this date will be covered.                                                                                                                                           |
+| **Booking to**\*          | Set the end date after which the cancellation insurance will no longer apply.                                                                                                                                                                                   |
+| **Type of rule**          | <p>Determines how the cancellation insurance is calculated. Options may include:<br>- <strong>Related to basic price</strong><br>- <strong>Related to transport type</strong><br>- <strong>Related to length of travel - Percentage of basic price</strong></p> |
+| **Commision**             | The commission is the percentage of the price that is used to calculate the cost (what is paid to the insurance company).                                                                                                                                       |
+| **Currency**              | Defines the currency used in all related price inputs (e.g., DKK - Danish Krone).                                                                                                                                                                               |
+| **External Cancellation** | Allows linking to an external cancellation policy or provider (if integrated). - Gouda - Europieske                                                                                                                                                             |
 
 ***
 
@@ -99,16 +99,99 @@ The cost is calculated as the commissioning percentage of the price. The commiss
 
 The cost of the **cancellation insurance** is included in:
 
-* &#x20;**Finance export files:**
-  *   **cost export**&#x20;
+* **Finance export files:**
+  *   **cost export**
 
       <figure><img src="../.gitbook/assets/image (620).png" alt=""><figcaption></figcaption></figure>
-  *   **bookings export**&#x20;
+  *   **bookings export**
 
       <figure><img src="../.gitbook/assets/image (621).png" alt=""><figcaption></figcaption></figure>
-*   **Bookings -** It is visible in the **Profit** tab, where it is considered as part of the booking’s financial calculation.&#x20;
+*   **Bookings -** It is visible in the **Profit** tab, where it is considered as part of the booking’s financial calculation.
 
     <figure><img src="../.gitbook/assets/image (619).png" alt=""><figcaption></figcaption></figure>
 * **Cost**
 
 This ensures that cancellation insurance is properly reflected in financial reporting and export data.
+
+Below is a documentation update for the Cancellation Insurance section.
+
+***
+
+## Infant Support
+
+Cancellation Insurance is available for infant passengers and follows the same rules and pricing as for all other passenger types.
+
+There is no separate infant price for Cancellation Insurance.
+
+The standard Cancellation Insurance price is applied regardless of whether the passenger is:
+
+* Adult
+* Child
+* Infant
+
+***
+
+### Booking Flow
+
+When a booking contains an infant passenger:
+
+*   Cancellation Insurance can be selected for the infant. &#x20;
+
+    <figure><img src="../.gitbook/assets/28.05.2026_11.56.35_REC.png" alt=""><figcaption></figcaption></figure>
+* The insurance is processed in the same way as for other passengers.
+* The standard Cancellation Insurance price is applied.
+
+***
+
+### Web Booking
+
+When a booking contains an infant passenger:
+
+* Cancellation Insurance can be selected during Web Booking.
+
+<figure><img src="../.gitbook/assets/28.05.2026_13.58.18_REC.png" alt=""><figcaption></figcaption></figure>
+
+* The insurance is processed in the same way as for other passengers.
+* The standard Cancellation Insurance price is applied.
+
+***
+
+### Customer Center
+
+When a booking contains an infant passenger:
+
+*   Cancellation Insurance can be added, removed, or modified for the infant passenger.&#x20;
+
+    <figure><img src="../.gitbook/assets/28.05.2026_13.50.13_REC.png" alt=""><figcaption></figcaption></figure>
+* The insurance is processed in the same way as for other passengers.
+* The standard Cancellation Insurance price is applied.
+
+***
+
+## Pricing Rules
+
+Cancellation Insurance uses the same pricing model for all passenger types.
+
+| Passenger Type | Pricing        |
+| -------------- | -------------- |
+| Adult          | Standard price |
+| Child          | Standard price |
+| Infant         | Standard price |
+
+{% hint style="info" %}
+No separate infant pricing configuration is required.
+{% endhint %}
+
+***
+
+## Provider Compatibility
+
+Infant support for Cancellation Insurance is available regardless of the configured provider:
+
+* Europæiske
+* Gouda
+* No external provider
+
+{% hint style="info" %}
+The selection, booking flow, Web Booking behavior, Customer Center behavior, and pricing rules are identical across all provider configurations.
+{% endhint %}
