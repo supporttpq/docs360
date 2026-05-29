@@ -226,7 +226,7 @@ If any required mapping is missing, the booking may fail during export.
 
 In order for a booking to be sent to Opera, the credentials and an endpoint, which are used to communicate with Opera, are manually added to the Config system.
 
-**Disable Opera Connect**
+## **Disable Opera Connect**
 
 <figure><img src=".gitbook/assets/image (780).png" alt=""><figcaption></figcaption></figure>
 
@@ -285,7 +285,7 @@ When a booking or passenger is cancelled while **Disable Opera Connect** is enab
 The notification serves as a reminder that the cancellation is not automatically synchronized to Opera and any required updates must be performed manually.
 {% endhint %}
 
-### Blocks – Mapping from Transport
+## Blocks – Mapping from Transport
 
 #### Overview
 
