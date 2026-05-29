@@ -264,10 +264,10 @@ When a user attempts to save a booking while **Disable Opera Connect** is enable
 
 **Available actions**
 
-| Action  | Outcome                                                                       |
-| ------- | ----------------------------------------------------------------------------- |
-| **Yes** | The booking and passenger changes are saved without synchronization to Opera. |
-| **No**  | The save operation is cancelled and the user remains on the booking.          |
+| Action     | Outcome                                                                       |
+| ---------- | ----------------------------------------------------------------------------- |
+| **Save**   | The booking and passenger changes are saved without synchronization to Opera. |
+| **Cancel** | The save operation is cancelled and the user remains on the booking.          |
 
 ***
 
