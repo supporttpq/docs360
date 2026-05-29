@@ -62,13 +62,21 @@ When disabled:
 3.  The ticketing deadline is registered.
 
     <figure><img src="../../.gitbook/assets/image (664).png" alt=""><figcaption><p>Ticketing deadline (time limit) is stored for the reservation.</p></figcaption></figure>
-4. The system runs a daily ticket-issuing service.
-5. If the deadline threshold is met and the booking is eligible:
-   *   The ticket is issued.
+4. The system runs the ticket-issuing service. &#x20;
 
-       <figure><img src="../../.gitbook/assets/image (666).png" alt="Ticket issued automatically after deadline threshold is met and booking is paid"><figcaption><p>When eligible and within threshold, the ticket is issued automatically.</p></figcaption></figure>
-6. For same-day deadlines after the daily run:
-   * The system still issues tickets automatically if the booking is paid.
+{% hint style="info" %}
+The ticketing service runs every 30 minutes and processes reservations when the execution time matches the Latest Ticketing Date. This is a mandatory condition to issue tickets on the same day when they expire.
+{% endhint %}
+
+5. If the deadline threshold is met and the booking is eligible:
+
+*   The ticket is issued.
+
+    <figure><img src="../../.gitbook/assets/image (666).png" alt="Ticket issued automatically after deadline threshold is met and booking is paid"><figcaption><p>When eligible and within the threshold, the ticket is issued automatically.</p></figcaption></figure>
+
+{% hint style="warning" %}
+A booking becomes eligible for ticketing 12 hours before the **Last Ticketing Date**
+{% endhint %}
 
 ### FAQ
 
