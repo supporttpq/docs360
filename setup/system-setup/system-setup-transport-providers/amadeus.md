@@ -178,3 +178,72 @@ When enabled, tickets are automatically issued after successful booking confirma
 * All fields must be valid for the system to perform Amadeus flight searches or booking actions.
 * Credentials differ between **test** and **production** environments. Verify values before switching.
 * Any change in API Key or Secret requires saving the configuration and re-authenticating.
+
+## Amadeus Cancellation Queue
+
+### Overview
+
+This feature controls how cancelled Amadeus PNRs are handled in the system. It introduces an optional step where cancelled reservations are routed to an Amadeus queue instead of being immediately cancelled in the GDS.
+
+When enabled, the PNR is placed in a queue when the booking is canceled. This enables manual processing in Amadeus. The queue is identified by a number and a category. Both values came from Amadeus.
+
+***
+
+### Configuration
+
+#### Location: `Setup > System Setup > Transport Providers > Amadeus`
+
+***
+
+#### Setting: Queue PNR upon cancel booking
+
+Enables queue-based handling of cancelled Amadeus reservations.
+
+When enabled, cancelled PNRs are sent to an Amadeus queue instead of being immediately cancelled.
+
+***
+
+#### Additional configuration (mandatory when enabled)
+
+When this setting is enabled, the following fields become required:
+
+* **Amadeus cancel queue number** (positive integer)
+* **Amadeus cancel queue category** (positive integer)
+
+These values define the target Amadeus queue.
+
+> 💡 **Note**\
+> Queue number and category are defined by Amadeus and must be provided by the airline/GDS configuration.
+
+***
+
+### System Behaviour
+
+#### 1. Behavior (Enabled)
+
+* **Booking Page Behavior**
+
+If the option **“Queue PNR upon cancel booking”** is enabled, the cancellation flow from the booking page is changed for Amadeus GDS reservations.
+
+When a user cancels a booking from the **front page of the booking**, the system automatically place the booking into the queue.
+
+This means users do not need to access or use the GDS tab to complete the cancellation process.
+
+When the setting is not enabled:
+
+1. Booking is cancelled
+2. System immediately cancels booking in Amadeus
+
+
+
+* **GDS Tab Cancellation**
+
+When the GDS Reservation is cancelled at the GDS tab, cancel the reservation directly at the transport provider
+
+#### 2. Behavior (Disabled)
+
+If the setting is not enabled:
+
+* Cancellation from the booking page follows the standard flow
+* The PNR is immediately cancelled in Amadeus
+* No queue placement is performed
