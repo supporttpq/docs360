@@ -42,9 +42,9 @@ Setup → System Setup → Transport Providers → Amadeus tab → Automatic tic
 
 When enabled:
 
-* The daily automatic ticket issuing service is activated.
-* Eligible reservations will be ticketed automatically based on deadline logic.
-* Service runs once per day.
+* The automatic ticket issuing service is activated.&#x20;
+* Eligible reservations will be ticketed automatically based on deadline logic. A booking becomes eligible for ticketing 12 hours before the **Last Ticketing Date**
+* Service runs every 30 minutes and processes reservations when the execution time matches the Latest Ticketing Date.
 
 When disabled:
 
