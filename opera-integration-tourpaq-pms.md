@@ -2,7 +2,7 @@
 
 ## Overview
 
-Opera is a portal (Leisure & Hospitality Service) in which a hotel must be managed (rooms, allotment, etc.), as well as a booking system.\
+Opera is a portal (Leisure & Hospitality Service) in which a hotel must be managed (rooms, allotment, etc.), as well as a booking system.\
 Each room in the Opera has a certain state: ready for accommodation, if the room is clean, if it needs room service, etc.
 
 The Opera integration connects Tourpaq with **Oracle Opera PMS**, enabling synchronization of hotels, allotments, extras, bookings, and customer data.
@@ -12,7 +12,7 @@ This integration ensures that availability, pricing elements, and reservations c
 This page describes how the integration is configured and how data flows from Tourpaq to Opera.
 
 {% hint style="info" %}
-&#x20;This documentation describes the integration strictly from the Tourpaq perspective.
+This documentation describes the integration strictly from the Tourpaq perspective.
 {% endhint %}
 
 ## Prerequisites (Tourpaq Side)
@@ -24,7 +24,7 @@ Before using the integration, ensure:
 * Extras categories are configured and mapped
 * Transport blocks are linked to Opera blocks
 * Required fields in the booking are available
-* Customer data is properly structured.&#x20;
+* Customer data is properly structured.
 
 ## Scope of Integration
 
@@ -47,7 +47,7 @@ Hotels that are managed in Opera must be clearly identified in Tourpaq to enable
 
 #### Configuration
 
-* A hotel is marked as **“Managed by OracleOpera”** in Tourpaq&#x20;
+* A hotel is marked as **“Managed by OracleOpera”** in Tourpaq
 
 <figure><img src=".gitbook/assets/image (771).png" alt=""><figcaption></figcaption></figure>
 
@@ -55,7 +55,7 @@ Hotels that are managed in Opera must be clearly identified in Tourpaq to enable
   * Availability is controlled externally (Opera)
   * Tourpaq acts as a distribution and booking layer
 
-#### &#x20;System Behavior
+#### System Behavior
 
 * Manual allotment handling in Tourpaq is overridden
 * Availability updates depend on Opera data (directly or via mapping) – (mapping is static)
@@ -64,11 +64,11 @@ Hotels that are managed in Opera must be clearly identified in Tourpaq to enable
 If a hotel is not marked as Managed by Opera, the integration will not correctly handle availability or bookings.
 {% endhint %}
 
-### &#x20;Opera Allotment Mapping
+### Opera Allotment Mapping
 
 #### Overview
 
-Opera allotments must be mapped to Tourpaq hotel and room structures.&#x20;
+Opera allotments must be mapped to Tourpaq hotel and room structures.
 
 Allotments, in Tourpaq, per hotel, are synchronized through a service called Bad Bank Service. Depending on the hotel's settings, this service pulls all the allotments related to the hotel connected to the opera
 
@@ -76,15 +76,15 @@ Allotments, in Tourpaq, per hotel, are synchronized through a service called Bad
 
 In Opera, there are 3 types of inventory:
 
-*   Block -> defines the rooms that can be bought with/without transport;&#x20;
+*   Block -> defines the rooms that can be bought with/without transport;
 
     <figure><img src=".gitbook/assets/image (775).png" alt=""><figcaption></figcaption></figure>
 * Room
-*   House -> represents the total number of rooms we have in a hotel&#x20;
+*   House -> represents the total number of rooms we have in a hotel
 
     <figure><img src=".gitbook/assets/image (774).png" alt=""><figcaption></figcaption></figure>
 
-For each individual room, there are other rooms assigned. The Bad Bank service looks at Opera every day and notices if it has a shortage or availability.\
+For each individual room, there are other rooms assigned. The Bad Bank service looks at Opera every day and notices if it has a shortage or availability.\
 The first time he searches the House, then on the individual room. If the latter is 0 or negative, the NO value from Hotel Allotment in Tourpaq will be updated.
 
 <figure><img src=".gitbook/assets/image (776).png" alt=""><figcaption></figcaption></figure>
@@ -98,7 +98,7 @@ The first time he searches the House, then on the individual room. If the latter
   * Room type
   * Date range
 * Tourpaq uses this mapping to:
-  * Validate availability&#x20;
+  * Validate availability
   * Allocate rooms during booking
 
 ### Opera Block / House Availability Mapping
@@ -143,7 +143,7 @@ Ex: Block code: BLL2505261 where:
 * 1 = interval 1 (7 days)
 * 2 - interval 2 (14 days)
 
-## &#x20;Extras
+## Extras
 
 ### Opera Extras Category Types
 
@@ -178,7 +178,7 @@ Opera supports different types of extras that must be aligned with Tourpaq categ
 * Each type is mapped to a corresponding **Extras Category**
 * Category defines:
   * Pricing behavior
-  * Availability rules&#x20;
+  * Availability rules
   * Mapping target in Opera
 
 {% hint style="warning" %}
@@ -232,6 +232,59 @@ In order for a booking to be sent to Opera, the credentials and an endpoint, whi
 
 Disable Opera Connect checkbox from the booking page, is used when changes are made on Booking, to be communicated to Opera. The checkbox appears only if there are communication settings with Opera.
 
+### Overview
+
+The **Disable Opera Connect** option allows users to work with a booking without synchronizing changes to Opera. When enabled, the system clearly indicates that Opera integration is disabled and provides reminders to prevent missed manual updates.
+
+### User Interface
+
+#### Opera Disabled Indicator
+
+When **Disable Opera Connect** is selected, an information banner is displayed directly below the action bar.
+
+<figure><img src=".gitbook/assets/disable opera connect.png" alt=""><figcaption></figcaption></figure>
+
+The banner contains the message:
+
+> Opera is disabled
+
+This indicator remains visible while Opera synchronization is disabled for the booking.
+
+***
+
+### Saving a Booking
+
+When a user attempts to save a booking while **Disable Opera Connect** is enabled, the system displays a confirmation dialog.
+
+<figure><img src=".gitbook/assets/save bookink opera.png" alt=""><figcaption></figcaption></figure>
+
+**Message**
+
+> Opera Connection is disabled. Are you sure you want to save without syncing to Opera?
+
+**Available actions**
+
+| Action  | Outcome                                                                       |
+| ------- | ----------------------------------------------------------------------------- |
+| **Yes** | The booking and passenger changes are saved without synchronization to Opera. |
+| **No**  | The save operation is cancelled and the user remains on the booking.          |
+
+***
+
+### Cancelling Bookings or Passengers
+
+When a booking or passenger is cancelled while **Disable Opera Connect** is enabled, the system displays a reminder notification.
+
+<figure><img src=".gitbook/assets/cancel pax opera.png" alt=""><figcaption></figcaption></figure>
+
+**Message**
+
+> Please remember to cancel the passenger/reservation in Opera as well.
+
+{% hint style="info" %}
+The notification serves as a reminder that the cancellation is not automatically synchronized to Opera and any required updates must be performed manually.
+{% endhint %}
+
 ### Blocks – Mapping from Transport
 
 #### Overview
@@ -261,10 +314,10 @@ Passengers in Tourpaq must be mapped to Opera Profiles. Defines how passengers a
 
 #### Rules
 
-* &#x20;Each passenger is matched or created as:
+* Each passenger is matched or created as:
   * Individual profile in Opera
 * Matching is typically based on:
-  * &#x20;Name&#x20;
+  * Name
   * Email
   * Phone
   * Unique identifier
@@ -273,7 +326,7 @@ Passengers in Tourpaq must be mapped to Opera Profiles. Defines how passengers a
 
 #### Behavior
 
-* &#x20;If a match is found → reuse existing profile
+* If a match is found → reuse existing profile
 * If not → create a new profile in Opera
 
 {% hint style="info" %}
@@ -304,7 +357,7 @@ Extras selected in Tourpaq bookings must be translated into Opera-compatible pro
 
 The integration logs:
 
-* &#x20;Booking export requests
+* Booking export requests
 * Responses from Opera
 * Errors and validation issues
 * Mapping failures
@@ -314,7 +367,7 @@ The integration logs:
 
 #### Backend (Database)
 
-* &#x20;Primary logs are stored in the database
+* Primary logs are stored in the database
 * Includes:
   * Request payloads
   * Response payloads
@@ -323,7 +376,7 @@ The integration logs:
 #### UI (if available)
 
 * If exposed:
-  * Integration status on the booking level&#x20;
+  * Integration status on the booking level
   * Error indicators or messages
 
 #### Behavior
@@ -337,13 +390,11 @@ The integration logs:
 
 * Always validate mappings before go-live
 * Use consistent naming between systems
-*   All customer details must be entered before Take Allotment, to avoid creating duplicates for customers.&#x20;
+*   All customer details must be entered before Take Allotment, to avoid creating duplicates for customers.
 
     <figure><img src=".gitbook/assets/image (770).png" alt=""><figcaption></figcaption></figure>
-
-
 * Test:
-  * &#x20;Booking with extras
+  * Booking with extras
   * Booking with blocks
   * Multiple passengers
 * Monitor logs after initial bookings
@@ -352,9 +403,8 @@ The integration logs:
 
 This structure can be reused for other PMS integrations:
 
-✔ Clear and standardized PMS integration framework\
-✔ All key components covered and detailed\
-✔ Reusable structure for future integrations\
-✔ Supports scalability and consistency\
+✔ Clear and standardized PMS integration framework\
+✔ All key components covered and detailed\
+✔ Reusable structure for future integrations\
+✔ Supports scalability and consistency\
 ✔ Guided by prerequisites & best practices
-
