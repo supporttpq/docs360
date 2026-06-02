@@ -28,7 +28,7 @@ The purpose of the _Edit Stop Sale_ functionality is to:
 2. Find the rule you want to change.
 3. Click **Edit** (pencil icon).
 
-<figure><img src="../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/02.06.2026_14.36.22_REC.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Only enabled rules can be removed or split.
@@ -40,7 +40,7 @@ Only enabled rules can be removed or split.
 
 Click **Remove or Split** above the rule. This opens an extra section under the list.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/02.06.2026_14.38.26_REC.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
