@@ -94,7 +94,7 @@ You can **Enable** or **Disable** any stop sale.
 
 If you disable a stop sale, the Stop Sale service ignores it when recalculating availability.
 
-<figure><img src=".gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/02.06.2026_14.31.34_REC.png" alt=""><figcaption></figcaption></figure>
 
 #### Filters & search
 
@@ -105,24 +105,23 @@ If you disable a stop sale, the Stop Sale service ignores it when recalculating 
 * **Supplier Name**: Search by supplier.
 * **Show All**: Remove filters and show everything.
 * **Display**: Apply current filters.
-* **More Filters**: Show additional filter options.
 * **Clear**: Reset filters.
 
 #### Data table columns
 
-| Column           | Meaning                                            |
-| ---------------- | -------------------------------------------------- |
-| **Edit**         | Edit the stop sale.                                |
-| **View Details** | Open log/details view for the stop sale.           |
-| **Start / End**  | Date range for the stop sale.                      |
-| **Hotel**        | Hotel code and name.                               |
-| **Room**         | Room type (or blank for full-hotel).               |
-| **Supplier**     | Supplier on the stop sale.                         |
-| **Hidden**       | Whether the stop sale is hidden.                   |
-| **Enabled**      | Whether the stop sale is active.                   |
-| **Created**      | Creation date/time.                                |
-| **Remove**       | Whether the stop sale was removed/undone.          |
-| **Agreed**       | Whether the stop sale is agreed (or agreed count). |
+| Column           | Meaning                                      |
+| ---------------- | -------------------------------------------- |
+| **Edit**         | Edit the stop sale.                          |
+| **View Details** | Open log/details view for the stop sale.     |
+| **Start / End**  | Date range for the stop sale.                |
+| **Hotel**        | Hotel code and name.                         |
+| **Room**         | Room type (or blank for full-hotel).         |
+| **Supplier**     | Supplier on the stop sale.                   |
+| **Hidden**       | Whether the stop sale is hidden on dashboard |
+| **Enabled**      | Whether the stop sale is active.             |
+| **Created**      | Creation date/time.                          |
+| **Remove**       | Whether the stop sale was removed/undone.    |
+| **Agreed**       | Agreed allotment                             |
 
 ### Stop Sale service
 
@@ -156,7 +155,7 @@ Select **View Details** to open the log view with filters prefilled from the sto
 
 <figure><img src=".gitbook/assets/image (69) (1).png" alt=""><figcaption></figcaption></figure>
 
-### Stop sales in Supplier&#x20;
+### Stop sales in Supplier
 
 <figure><img src=".gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
 
