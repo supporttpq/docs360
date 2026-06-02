@@ -47,7 +47,7 @@ Start from [Edit Stop Sale](edit-stop-sale.md) if you are unsure how to open **R
 2. Find the Stop Sale rule you want to adjust.
 3. Click **Edit** (pencil icon).
 
-<figure><img src="../.gitbook/assets/image (176).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/02.06.2026_14.43.54_REC.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
