@@ -523,6 +523,7 @@
     * [Paxport](setup/system-setup/system-setup-transport-providers/paxport.md)
     * [Amadeus](setup/system-setup/system-setup-transport-providers/amadeus.md)
     * [RailHub](setup/system-setup/system-setup-transport-providers/railhub.md)
+    * [Instant GDS Submit](setup/system-setup/system-setup-transport-providers/instant-gds-submit.md)
   * [System Setup – GDS Data](setup/system-setup/system-setup-gds-data.md)
   * [System Setup – Inflight Service](setup/system-setup/system-setup-inflight-service.md)
   * [System Setup – Firebase Configuration](setup/system-setup/system-setup-firebase-configuration.md)
