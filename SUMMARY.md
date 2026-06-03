@@ -63,6 +63,7 @@
   * [Transport only Booking](booking/new-booking/transport-only-booking.md)
   * [Child Price](booking/new-booking/child-price/README.md)
     * [Child Price in Price List](booking/new-booking/child-price/child-price-in-price-list.md)
+    * [Child age for beds and prices](booking/new-booking/child-price/child-age-for-beds-and-prices.md)
   * [A la Carte](booking/new-booking/a-la-carte/README.md)
     * [General Description](booking/new-booking/a-la-carte/general-description.md)
     * [Packages](booking/new-booking/a-la-carte/packages.md)
