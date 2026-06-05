@@ -52,7 +52,7 @@ Before using this screen, the following conditions must be met:
 
 The New Booking page is displayed.
 
-<figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1).png" alt="New Booking page in Tourpaq Office"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1).png" alt="New Booking page in Tourpaq Office"><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -76,7 +76,59 @@ Required inputs:
 
 If something is missing, you will see validation warnings.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Validation warnings on New Booking Search page"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Validation warnings on New Booking Search page"><figcaption></figcaption></figure>
+
+
+
+In the **Booking Window Search** screen, a new workflow option has been introduced
+
+**Location:** Search → Workflow
+
+**New Value:** Exclude External Provider
+
+<figure><img src="../../../.gitbook/assets/05.06.2026_15.48.07_REC.png" alt=""><figcaption></figcaption></figure>
+
+### Behaviour
+
+When the **Exclude External Provider** workflow is selected, the transport search shall exclude all transports where the provider type is **System**.
+
+Only non-System transports will be returned in the search results.
+
+#### Included
+
+* Charter transports
+* Dynamic transports managed internally
+* Any other transport transport type (inclusive System Transport)
+
+#### Excluded
+
+* GDS flights
+* Any transport with provider type **System**&#x20;
+
+### Booking Flow
+
+#### Standard Search
+
+**Workflow:** Charter & Dynamic
+
+Result:
+
+* Internal transport options are returned.
+* External provider (System/GDS) transports are returned.
+* External transports are marked accordingly.
+
+<figure><img src="../../../.gitbook/assets/05.06.2026_16.10.06_REC.png" alt=""><figcaption></figcaption></figure>
+
+#### External Provider Excluded
+
+**Workflow:** Exclude External Provider
+
+Result:
+
+* Internal transport options are returned.
+* System/GDS transports are not returned.
+
+<figure><img src="../../../.gitbook/assets/05.06.2026_16.13.08_REC.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -86,15 +138,15 @@ Fill the main fields (Adults, Departures, Arrivals, Date From/To), then click **
 
 Room allocation is available even when no hotel is selected
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Search filters for flights and hotels in New Booking Search"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Search filters for flights and hotels in New Booking Search"><figcaption></figcaption></figure>
 
 Selecting the number of rooms activates room allocation and prompts you to fill it in.
 
-<figure><img src="../../../../.gitbook/assets/image (812).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (812).png" alt=""><figcaption></figcaption></figure>
 
 Flights and hotels load as two result grids.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Search results showing flights (top) and hotels (bottom)"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Search results showing flights (top) and hotels (bottom)"><figcaption></figcaption></figure>
 
 Filters only results that match:
 
@@ -129,11 +181,11 @@ Common columns:
 
 Select a flight row to enable **Clear selected row**.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 Use **+ Filters** for flight filters.
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -143,7 +195,7 @@ Hotel rows show hotel, stay, availability, board, and prices.
 
 Use **+ Filters** for advanced hotel filters.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 You can switch the display mode:
 
@@ -152,7 +204,7 @@ You can switch the display mode:
 
 Hover the eye icon to see **View details**.
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -162,7 +214,7 @@ Select a hotel row to show actions.
 
 You will see **Create booking** and **Clear selected row**.
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 {% endstepper %}
 
@@ -178,7 +230,7 @@ Only valid combinations matching the allocation are returned
 
 The Flights section shows available transports that match the search.
 
-<figure><img src="../../../../.gitbook/assets/image (816).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (816).png" alt=""><figcaption></figcaption></figure>
 
 **Displayed information**
 
@@ -199,7 +251,7 @@ The Flights section shows available transports that match the search.
 
 The Hotels section lists available hotel rooms that match the search and selected flight.
 
-<figure><img src="../../../../.gitbook/assets/image (815).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (815).png" alt=""><figcaption></figcaption></figure>
 
 **Displayed information**
 
@@ -240,7 +292,7 @@ The Hotels section lists available hotel rooms that match the search and selecte
   * All hotels matching this distribution
   * Valid transport + stay combinations
 
-<figure><img src="../../../../.gitbook/assets/image (813).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (813).png" alt=""><figcaption></figcaption></figure>
 
 **Example 2:**
 
@@ -257,7 +309,7 @@ The Hotels section lists available hotel rooms that match the search and selecte
   * All rooms distribution for the specific hotel
   * Valid transport + stay combinations
 
-<figure><img src="../../../../.gitbook/assets/image (814).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (814).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -283,11 +335,11 @@ The Hotels section lists available hotel rooms that match the search and selecte
 
 When you click **Create booking**, a new page opens. It is pre-filled with the selected flight and hotel. From there, you complete the booking using the standard booking flow.
 
-<figure><img src="../../../../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Instructions and field descriptions
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Search filters (top section)
 
