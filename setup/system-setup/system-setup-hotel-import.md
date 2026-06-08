@@ -53,6 +53,12 @@ Before configuring the **Hotel Import** settings:
 * **Format:** Percentage.
 * **Example:** `2` means +2% on the base price.
 
+{% hint style="warning" %}
+&#x20;Every time a new hotel contract import is performed, the Single Cost will be overwritten with the value specified in Single Room Supplement Price in System setup > Hotel import.\
+If you manually change the percentage in the hotel setup, that value will be overwritten the next time the contract is reimported.\
+In addition, the percentage defined in the hotel contract will not take effect if a value is entered in System setup > Hotel import. In this case, the value configured in the System setup takes precedence and overrides the hotel contract setting.
+{% endhint %}
+
 #### Board Supplement Price
 
 * **What it does:** Adds a percentage markup for board (meal plan) supplements.
