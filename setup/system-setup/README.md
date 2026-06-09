@@ -44,7 +44,7 @@ Start here, then drill into the specific area you need:
 * [System Setup – Auto Europe (Car Rental Integration)](system-setup-auto-europe-car-rental-integration.md)
 * [System Setup – Hotel Providers](system-setup-hotel-providers/)
 * [System Setup – Hotel Import](system-setup-hotel-import.md)
-* [System Setup - Transport Providers](system-setup-transport-providers.md)
+* [System Setup - Transport Providers](system-setup-transport-providers/)
 * [System Setup – GDS Data](system-setup-gds-data.md)
 * [System Setup – Inflight Service](system-setup-inflight-service.md)
 * [System Setup – Firebase Configuration](system-setup-firebase-configuration.md)

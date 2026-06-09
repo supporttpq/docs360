@@ -42,9 +42,9 @@ Setup → System Setup → Transport Providers → Amadeus tab → Automatic tic
 
 When enabled:
 
-* The daily automatic ticket issuing service is activated.
-* Eligible reservations will be ticketed automatically based on deadline logic.
-* Service runs once per day.
+* The automatic ticket issuing service is activated.&#x20;
+* Eligible reservations will be ticketed automatically based on deadline logic. A booking becomes eligible for ticketing 12 hours before the **Last Ticketing Date**
+* Service runs every 30 minutes and processes reservations when the execution time matches the Latest Ticketing Date.
 
 When disabled:
 
@@ -62,60 +62,18 @@ When disabled:
 3.  The ticketing deadline is registered.
 
     <figure><img src="../../.gitbook/assets/image (664).png" alt=""><figcaption><p>Ticketing deadline (time limit) is stored for the reservation.</p></figcaption></figure>
-4. The system runs a daily ticket-issuing service.
+4. The system runs the ticket-issuing service. &#x20;
+
+{% hint style="info" %}
+The ticketing service runs every 30 minutes and processes reservations when the execution time matches the Latest Ticketing Date. This is a mandatory condition to issue tickets on the same day when they expire.
+{% endhint %}
+
 5. If the deadline threshold is met and the booking is eligible:
-   *   The ticket is issued.
 
-       <figure><img src="../../.gitbook/assets/image (666).png" alt="Ticket issued automatically after deadline threshold is met and booking is paid"><figcaption><p>When eligible and within threshold, the ticket is issued automatically.</p></figcaption></figure>
-6. For same-day deadlines after the daily run:
-   * The system still issues tickets automatically if the booking is paid.
+*   The ticket is issued.
 
-### FAQ
+    <figure><img src="../../.gitbook/assets/image (666).png" alt="Ticket issued automatically after deadline threshold is met and booking is paid"><figcaption><p>When eligible and within the threshold, the ticket is issued automatically.</p></figcaption></figure>
 
-<details>
-
-<summary><strong>Which bookings are eligible for automatic ticket issuing?</strong></summary>
-
-Bookings must be handled through **Amadeus** and have a registered ticketing deadline.
-
-The booking must also meet your company’s eligibility rules (for example, deposit paid).
-
-</details>
-
-<details>
-
-<summary><strong>How often does the service run?</strong></summary>
-
-It runs **once per day**.
-
-Ticket issuing is triggered when the deadline threshold is met.
-
-</details>
-
-<details>
-
-<summary><strong>What happens if the deposit is not paid?</strong></summary>
-
-The booking will not be ticketed automatically.
-
-Once the deposit is paid, it becomes eligible for the next run (or same-day handling).
-
-</details>
-
-<details>
-
-<summary><strong>What does “same-day deadlines after the daily run” mean?</strong></summary>
-
-It means a ticketing deadline can occur later the same day, after the scheduled run.
-
-In that case, the system can still issue the ticket automatically when the booking is paid.
-
-</details>
-
-<details>
-
-<summary><strong>Can we still issue tickets manually?</strong></summary>
-
-Yes. Disabling automatic ticket issuing means ticketing must be handled manually.
-
-</details>
+{% hint style="warning" %}
+A booking becomes eligible for ticketing 12 hours before the **Last Ticketing Date**
+{% endhint %}

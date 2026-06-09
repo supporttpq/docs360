@@ -19,7 +19,7 @@ The **Stop Sale Notifications** section in the Dashboard allows users to view an
 1. Go to **Notifications → Stop Sales**.
 2. The **Notifications** page opens with the Stop Sales list.
 
-<figure><img src="../.gitbook/assets/image (174).png" alt=""><figcaption><p>Open Stop Sales notifications</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/02.06.2026_15.14.02_REC.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -39,7 +39,7 @@ If you need older or future periods, expand the date range in the filters.
 1. Enable **Only Agreed Allotment**.
 2. The list updates to show only rules with an agreed allotment value.
 
-<figure><img src="../.gitbook/assets/image (175).png" alt=""><figcaption><p>Filter by agreed allotment</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/02.06.2026_15.15.36_REC.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Agreed allotment reopens limited availability while the Stop Sale stays active. See [Agreed Allotment Stop Sale](agreed-allotment-stop-sale.md) for details.

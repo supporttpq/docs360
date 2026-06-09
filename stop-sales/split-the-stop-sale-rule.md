@@ -22,7 +22,7 @@ Only **enabled** rules can be removed or split.
 2. The Stop Sales list shows all rules.
 3. The default filter uses today’s date for **Start/End**.
 
-<figure><img src="../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/02.06.2026_15.05.06_REC.png" alt=""><figcaption></figcaption></figure>
 
 ### Split a Stop Sale rule
 
@@ -33,7 +33,7 @@ Only **enabled** rules can be removed or split.
 1. Use filters to narrow down the list.
 2. Select an **enabled** Stop Sale rule.
 
-<figure><img src="../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/02.06.2026_15.07.01_REC.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -64,7 +64,7 @@ For each row, set:
 * **Start/End Date**: the period.
 * **Action**: **Remove** or **Agreed Allotment**.
 
-<figure><img src="../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/02.06.2026_15.08.06_REC.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}

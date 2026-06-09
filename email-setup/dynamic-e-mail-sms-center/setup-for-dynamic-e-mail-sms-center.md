@@ -148,6 +148,10 @@ Note: `1` means the email is sent. `0` means it is not sent.
 
 The message editor works like the regular **E-mail Center**.
 
+The email body can include the name of the Transport Supplier.
+
+Support is available for Real Transport. The Transport Supplier name inserted into the email is taken from the outbound transport.
+
 #### Add a link to the Customer Center
 
 Write the link text (for example, “Open your booking”). Select it. Then click the link button shown in the screenshot.
@@ -195,7 +199,9 @@ Transport-related filters define **how** the customer is traveling:
 
 * **Transports**
 * **Real Transports**
-* **Transport Suppliers (only supported for Charter Transport)**
+*   **Transport Suppliers -** The Transport Supplier filter supports Real Transport values.
+
+    Filtering is evaluated only against the outbound transport. The transport supplier configured on the homebound transport is not taken into account.
 * **Transport Modes**
 * **Transport Types**
 

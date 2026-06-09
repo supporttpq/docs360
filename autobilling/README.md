@@ -18,6 +18,8 @@ layout:
     visible: true
   tags:
     visible: true
+  actions:
+    visible: true
 ---
 
 # Autobilling
@@ -218,7 +220,7 @@ Autobilling uses supplier/creditor configuration. If a creditor is missing, crea
 * If creditor is missing: Autobilling fails
 * If multiple entities share configuration: invoices may be combined
 * If “Add Own Schedule” is enabled: separate invoices are generated
-* If creditor is changed:  regeneration updates invoice data
+* If creditor is changed: regeneration updates invoice data
 
 ### Troubleshooting
 
@@ -237,5 +239,5 @@ Autobilling uses supplier/creditor configuration. If a creditor is missing, crea
 * [Autobilling for Hotels](how-to-set-autobilling-for-hotels.md)
 * [Creditors](../creditor.md)
 * [Finance → Invoices](../invoice.md)
-* [Booking](/broken/pages/RD5atvvSmxEBqtYp4KiC)
+* [Booking](https://app.gitbook.com/s/ZCqO8EQ5P5Mioq1zbQAc/booking)
 * [Room Cost](../hotel/hotel-creation/room-cost/)
