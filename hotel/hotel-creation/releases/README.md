@@ -47,6 +47,16 @@ The automation runs **once per day** per company.
 
 Each rule can therefore trigger **at most once per day**.
 
+{% hint style="info" %}
+When a release rule is set for certain hotels, at a certain time, the system starts to release all the hotels in the agency that have set the scheduler at that time.
+
+* Example: if the scheduler contains a larger number of hotels with relays set at a certain time, when the system runs, it will put rules in a queue. and then take it in turn, a process that can take a long time until it is run and displayed.
+
+One way to avoid this is to plan the launch time on hotels in more/even stacks,
+
+* Exemple: spread the releases over several hours starting at 3am and every hour until 8am.
+{% endhint %}
+
 #### Single-day rule (specific target date)
 
 Use this when you want a release tied to **one target date**.
@@ -63,7 +73,7 @@ Use this when you want releases evaluated **daily** within a **start/end** perio
 
 On each daily run, Tourpaq releases the target date that matches the rule’s lead time.
 
-&#x20;\- Example: a rule with `3` days in advance evaluated on `15-05-2026` targets `18-05-2026`.
+\- Example: a rule with `3` days in advance evaluated on `15-05-2026` targets `18-05-2026`.
 
 {% hint style="info" %}
 If current day + number of days (Days) < Start period => rule is ignored.
@@ -164,24 +174,24 @@ This section documents the system behavior during the "Release" execution, compa
 
 <figure><img src="../../../.gitbook/assets/image (599).png" alt=""><figcaption><p>After Release</p></figcaption></figure>
 
-<table><thead><tr><th width="135.4443359375">Field</th><th width="100.888916015625">Before Release</th><th width="101.4444580078125">After Release</th><th>Formula after release</th></tr></thead><tbody><tr><td>NO</td><td>100</td><td>10</td><td>= Max(Book vs Guarantee)</td></tr><tr><td>SECURED</td><td>20</td><td>10</td><td>= Min(Secured vs NO After Release)</td></tr><tr><td>GUARANTEED</td><td>0</td><td>0</td><td>Remain unchanged</td></tr><tr><td>BOOK</td><td>10</td><td>10</td><td>Remain unchanged</td></tr><tr><td>AR</td><td>0</td><td>90</td><td>= NO Before release - NO After release</td></tr><tr><td>SR</td><td>0</td><td>10 </td><td>= Secured Before release - Secured After release)</td></tr></tbody></table>
+<table><thead><tr><th width="135.4443359375">Field</th><th width="100.888916015625">Before Release</th><th width="101.4444580078125">After Release</th><th>Formula after release</th></tr></thead><tbody><tr><td>NO</td><td>100</td><td>10</td><td>= Max(Book vs Guarantee)</td></tr><tr><td>SECURED</td><td>20</td><td>10</td><td>= Min(Secured vs NO After Release)</td></tr><tr><td>GUARANTEED</td><td>0</td><td>0</td><td>Remain unchanged</td></tr><tr><td>BOOK</td><td>10</td><td>10</td><td>Remain unchanged</td></tr><tr><td>AR</td><td>0</td><td>90</td><td>= NO Before release - NO After release</td></tr><tr><td>SR</td><td>0</td><td>10</td><td>= Secured Before release - Secured After release)</td></tr></tbody></table>
 
 ### Release Behavior When Editing DAYS
 
-When editing the **DAYS** value for a release, some of the affected dates may already be in the past. In this situation, the system will not clear the release checkbox if Current Date + custom days is earlier than the allotment date.&#x20;
+When editing the **DAYS** value for a release, some of the affected dates may already be in the past. In this situation, the system will not clear the release checkbox if Current Date + custom days is earlier than the allotment date.
 
 As a result, those past dates remain marked as released. Only dates that fall after the calculated release threshold will have the **Release** flag removed.
 
 **Example:**
 
 * Today’s date is **February 2**.
-*   All February dates are set to be unreleased, and the release period is changed to 7 **days**.&#x20;
+*   All February dates are set to be unreleased, and the release period is changed to 7 **days**.
 
     <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-*   According to the rule set is the **Release** tab, the releases would normally start from **Current day (February 2)+ 30 days**.&#x20;
+*   According to the rule set is the **Release** tab, the releases would normally start from **Current day (February 2)+ 30 days**.
 
     <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-*   However, February has a custom release configuration, so the system instead applies **February 2 + 7 days**, which results in February **9**.&#x20;
+*   However, February has a custom release configuration, so the system instead applies **February 2 + 7 days**, which results in February **9**.
 
     <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
