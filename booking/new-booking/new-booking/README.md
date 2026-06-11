@@ -1510,6 +1510,7 @@ The columns **TITLE**, **F NAME**, **L NAME**, and **DATE OF BIRTH** must always
 | **DATE OF BIRTH** | The passenger’s date of birth in the format `dd-mm-yyyy`.                             |
 | **CCL. INS.**     | The cancellation insurance for the passenger. This should be a value from a dropdown. |
 | **INSURANCE**     | The travel insurance code for the passenger. This should be a value from a dropdown.  |
+| **EMAIL**         | The passenger's email address                                                         |
 
 **Dynamic columns (extras)**
 
@@ -1548,7 +1549,164 @@ Common warnings include:
 
 An example file for importing passengers can include columns in the following format:
 
-<table><thead><tr><th width="82.4444580078125"></th><th width="93.5555419921875"></th><th width="99.111083984375"></th><th width="118"></th><th width="78"></th><th></th><th width="153.5555419921875"></th><th></th></tr></thead><tbody><tr><td>TITLE</td><td>F NAME</td><td>L NAME</td><td>DATE OF BIRTH</td><td>CCL. INS.</td><td>INSURANCE</td><td>Multiple-EC</td><td>BAGGAGE</td></tr><tr><td>MR</td><td>TBA1</td><td>TBA1</td><td>19-11-1988</td><td>399</td><td>X</td><td>Multiple-P1 [4D], Multiple-P1 [3D]</td><td>BAG-20</td></tr><tr><td>MS</td><td>TBA2</td><td>TBA2</td><td>03-01-1926</td><td></td><td></td><td>Multiple-P1 [3D]</td><td>N/A</td></tr></tbody></table>
+<table><thead><tr><th width="78.6944580078125"></th><th width="84.8055419921875"></th><th width="86.611083984375"></th><th width="118"></th><th width="145.5"></th><th width="71.75"></th><th width="116.75"></th><th width="153.5555419921875"></th><th></th></tr></thead><tbody><tr><td>TITLE</td><td>F NAME</td><td>L NAME</td><td>DATE OF BIRTH</td><td>EMAIL</td><td>CCL. INS.</td><td>INSURANCE</td><td>Multiple-EC</td><td>BAGGAGE</td></tr><tr><td>MR</td><td>TBA1</td><td>TBA1</td><td>19-11-1988</td><td>test1@test.com</td><td>399</td><td>X</td><td>Multiple-P1 [4D], Multiple-P1 [3D]</td><td>BAG-20</td></tr><tr><td>MS</td><td>TBA2</td><td>TBA2</td><td>03-01-1926</td><td>test2@test.com</td><td></td><td></td><td>Multiple-P1 [3D]</td><td>N/A</td></tr></tbody></table>
+
+Below is a GitBook-style documentation page that follows the structure you requested and aligns with the style commonly used for Tourpaq Office feature documentation.
+
+## Import Passenger Email Address
+
+### Overview
+
+The Passenger Import feature has been extended to support importing passenger email addresses directly from Excel files.
+
+This enhancement reduces manual work when passenger email information is already available in external spreadsheets. Imported email addresses can subsequently be used for processes that rely on passenger-specific contact information, such as individual payment communication.
+
+The email address is stored in the passenger's **Customer Data** record.
+
+***
+
+### Purpose
+
+The purpose of this feature is to:
+
+* Reduce manual data entry during passenger imports.
+* Allow passenger email addresses to be imported together with other passenger details.
+* Support workflows that require passenger-specific email communication.
+* Improve efficiency when handling large passenger lists received from external systems or partners.
+
+***
+
+### Configuration
+
+The functionality becomes available through the existing **Passenger Import** process.
+
+#### Import File Structure
+
+A new optional column has been added to the Passenger Import template:
+
+| Column | Description             |
+| ------ | ----------------------- |
+| E-mail | Passenger email address |
+
+The **E-mail** column must be placed immediately after the **Date Of Birth** column.
+
+#### Example Template Structure
+
+<figure><img src="../../../.gitbook/assets/excel.png" alt=""><figcaption></figcaption></figure>
+
+<table><thead><tr><th>First Name</th><th width="154">Last Name</th><th width="149.5">Date Of Birth</th><th>E-mail</th></tr></thead><tbody><tr><td>John</td><td>Smith</td><td>15.04.1985</td><td><a href="mailto:john.smith@email.com">john.smith@email.com</a></td></tr><tr><td>Mary</td><td>Jones</td><td>23.09.1990</td><td><a href="mailto:mary.jones@email.com">mary.jones@email.com</a></td></tr></tbody></table>
+
+#### Optional Field
+
+The **E-mail** field is optional.
+
+The import will succeed regardless of whether:
+
+* The E-mail column is included.
+* Individual passengers have an email address specified.
+* Some or all email fields are left empty.
+
+The system will continue importing all other passenger information normally.
+
+***
+
+### How It Works
+
+#### During Passenger Import
+
+When a passenger import file contains the **E-mail** column:
+
+1. The system reads the email value for each passenger.
+2. The email address is imported together with the remaining passenger data.
+3. The value is stored under the passenger's **Customer Data**.
+
+If no email value exists, the passenger is imported without an email address.
+
+***
+
+### System Manifestation
+
+#### Booking Flow
+
+* create booking
+* save booking
+* edit passenger
+*   import passenger (import excel file)&#x20;
+
+    <figure><img src="../../../.gitbook/assets/import passenger.png" alt=""><figcaption></figcaption></figure>
+
+After import, the passenger's email address is available as part of the passenger information attached to the booking, and passengers to whom the email address has been added are also given a customer check mark.
+
+<figure><img src="../../../.gitbook/assets/email pass.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/email_customer.png" alt=""><figcaption></figcaption></figure>
+
+#### Example
+
+Passenger import file:
+
+<table><thead><tr><th width="118.25">First Name</th><th width="164">Last Name</th><th>Date Of Birth</th><th>E-mail</th></tr></thead><tbody><tr><td>Anna</td><td>Hansen</td><td>11.06.1988</td><td><a href="mailto:anna.hansen@email.com">anna.hansen@email.com</a></td></tr></tbody></table>
+
+Result:
+
+* Passenger is created successfully.
+* Email address is stored on the passenger.
+* The booking contains passenger contact information without requiring manual updates.
+
+***
+
+### Passenger Details
+
+The imported value is stored in: **Passenger → Customer Data → E-mail**
+
+#### Example
+
+Imported value:
+
+`anna.hansen@email.com`
+
+Result:
+
+The email address is visible in the passenger's Customer Data section after the import has completed.
+
+***
+
+### Individual Payment Scenarios
+
+Passenger email addresses imported from Excel can be used in workflows that require passenger-specific communication.
+
+#### Example
+
+A user receives an Excel file containing 150 passengers and their email addresses.
+
+Without this feature:
+
+* Email addresses must be copied manually to each passenger.
+
+With this feature:
+
+* All passenger email addresses are imported automatically.
+* Passenger records are immediately ready for individual payment communication processes.
+
+***
+
+Existing Passenger Import files that do not contain the **E-mail** column continue to work without modification.
+
+#### Example
+
+Import file:
+
+| First Name | Last Name | Date Of Birth |
+| ---------- | --------- | ------------- |
+| John       | Smith     | 15.04.1985    |
+
+Result:
+
+* Passenger imports successfully.
+* No validation error is raised.
+* Email field remains empty.
+
+***
 
 #### Package products
 
