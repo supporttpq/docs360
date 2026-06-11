@@ -1403,7 +1403,7 @@ The system provides a responsive and reliable pricing experience, matching the u
 
 ***
 
-### Advanced features
+## Advanced features
 
 #### Import passengers (optional)
 
@@ -1418,7 +1418,7 @@ The system:
 
 #### Specification
 
-#### 1. Support for Day-Based Extras (e.g. Ski Rental)
+### 1. Support for Day-Based Extras (e.g. Ski Rental)
 
 The import file support specifying extras that include a number of days.
 
@@ -1438,7 +1438,7 @@ This enables specifying ski rental and similar products directly during import.
 
 ***
 
-#### 2. Support for Removing Selected Extras per Passenger
+### 2. Support for Removing Selected Extras per Passenger
 
 The import file support removal of extras at passenger level.
 
@@ -1461,7 +1461,7 @@ This gives full control over passenger-level extra allocation.
 
 ***
 
-#### 3. Import with Fewer Lines Than Booking Passengers
+### 3. Import with Fewer Lines Than Booking Passengers
 
 The system supports importing a file where the number of rows is lower than the number of passengers in the booking.
 
@@ -1475,7 +1475,7 @@ Behavior:
 
 ***
 
-#### 4. Group Growth Scenario Support
+### 4. Group Growth Scenario Support
 
 It must be possible to:
 
@@ -1553,9 +1553,9 @@ An example file for importing passengers can include columns in the following fo
 
 Below is a GitBook-style documentation page that follows the structure you requested and aligns with the style commonly used for Tourpaq Office feature documentation.
 
-## Import Passenger Email Address
+### 5. Import Passenger Email Address
 
-### Overview
+#### Overview
 
 The Passenger Import feature has been extended to support importing passenger email addresses directly from Excel files.
 
@@ -1565,7 +1565,7 @@ The email address is stored in the passenger's **Customer Data** record.
 
 ***
 
-### Purpose
+#### Purpose
 
 The purpose of this feature is to:
 
@@ -1576,7 +1576,7 @@ The purpose of this feature is to:
 
 ***
 
-### Configuration
+#### Configuration
 
 The functionality becomes available through the existing **Passenger Import** process.
 
@@ -1610,7 +1610,7 @@ The system will continue importing all other passenger information normally.
 
 ***
 
-### How It Works
+#### How It Works
 
 #### During Passenger Import
 
@@ -1624,7 +1624,7 @@ If no email value exists, the passenger is imported without an email address.
 
 ***
 
-### System Manifestation
+#### System Manifestation
 
 #### Booking Flow
 
@@ -1655,7 +1655,7 @@ Result:
 
 ***
 
-### Passenger Details
+#### Passenger Details
 
 The imported value is stored in: **Passenger → Customer Data → E-mail**
 
@@ -1671,7 +1671,7 @@ The email address is visible in the passenger's Customer Data section after the 
 
 ***
 
-### Individual Payment Scenarios
+#### Individual Payment Scenarios
 
 Passenger email addresses imported from Excel can be used in workflows that require passenger-specific communication.
 
