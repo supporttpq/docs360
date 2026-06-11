@@ -1879,54 +1879,6 @@ This section provides practical scenarios demonstrating the New Booking workflow
   * Payment instructions
 * Booking appears in All Bookings list
 
-### FAQ
-
-#### 1. Why can’t I find any transports or hotels for my dates?
-
-Check the following:
-
-* The **date range** is correct and within valid travel periods for the Brand.
-* You selected the correct **departure** and **arrival gateways** (for transport).
-* You did **not** filter away options with too strict **Resort/Hotel/Stars/Pension** filters.
-* Valid **allotments** and **price lists** exist for the chosen period.
-
-If nothing appears after widening the filters, the issue is usually missing setup (allotment or prices) for that Brand/period.
-
-#### 2. What happens if I change the number of passengers after I have taken allotment?
-
-If you change the **passenger count** after pressing **Take Allotment**:
-
-* You must adjust passengers in **Passenger information**.
-* You may need to press **Take Allotment** again so transport and hotel allotments match the new number.
-* Prices and discounts will be recalculated automatically.
-
-Always review the **Booking totals** after changing passenger numbers.
-
-#### 3. When should I use the passenger import feature instead of adding passengers manually?
-
-Use **Import passengers** when:
-
-* You have many passengers (e.g. groups) and data already exists in a spreadsheet.
-* You want to pre‑assign **extras**, **insurances**, or other products per passenger via dynamic columns.
-
-For 1–3 passengers it is usually faster to add them manually.
-
-#### 4. Why does the Total Amount differ from what the customer saw on WebBooking?
-
-Possible reasons include:
-
-* Different **Brand** or **sales channel** settings.
-* Additional **discounts/supplements** applied in the office booking.
-* Manual changes to **extras**, **room type**, or **transport** in New Booking.
-
-Compare:
-
-* Selected **transport, hotel, room, and board**.
-* Applied **discounts/supplements** in passenger details.
-* Any office‑only products or rules.
-
-If everything matches but the price still differs, contact your internal pricing or system administrator to review the configuration.
-
 ### **Related pages**
 
 The New Booking functionality integrates with and relates to numerous other modules in Tourpaq Office. The following pages provide additional information for specific booking scenarios and post-booking operations:
