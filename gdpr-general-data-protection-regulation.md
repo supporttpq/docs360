@@ -208,9 +208,13 @@ Automatically deletes transport reporting files with departure dates older than 
 
 Deletes extra and extra category reporting files older than the configured number of days.
 
+<figure><img src=".gitbook/assets/image (138).png" alt=""><figcaption></figcaption></figure>
+
 **9. Delete Hotel Reporting Files**
 
 Deletes automatically generated hotel lists older than the configured number of days.
+
+<figure><img src=".gitbook/assets/image (63).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src=".gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
 
