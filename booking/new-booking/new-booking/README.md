@@ -1592,9 +1592,9 @@ The **E-mail** column must be placed immediately after the **Date Of Birth** col
 
 #### Example Template Structure
 
-<figure><img src="../../../.gitbook/assets/excel.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/excel (1).png" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th>First Name</th><th width="154">Last Name</th><th width="149.5">Date Of Birth</th><th>E-mail</th></tr></thead><tbody><tr><td>John</td><td>Smith</td><td>15.04.1985</td><td><a href="mailto:john.smith@email.com">john.smith@email.com</a></td></tr><tr><td>Mary</td><td>Jones</td><td>23.09.1990</td><td><a href="mailto:mary.jones@email.com">mary.jones@email.com</a></td></tr></tbody></table>
+<table><thead><tr><th>First Name</th><th width="154">Last Name</th><th width="149.5">Date Of Birth</th><th>E-mail</th></tr></thead><tbody><tr><td>John</td><td>Smith</td><td>15-04-1985</td><td><a href="mailto:john.smith@email.com">john.smith@email.com</a></td></tr><tr><td>Mary</td><td>Jones</td><td>23-09-1990</td><td><a href="mailto:mary.jones@email.com">mary.jones@email.com</a></td></tr></tbody></table>
 
 #### Optional Field
 
@@ -1645,7 +1645,7 @@ After import, the passenger's email address is available as part of the passenge
 
 Passenger import file:
 
-<table><thead><tr><th width="118.25">First Name</th><th width="164">Last Name</th><th>Date Of Birth</th><th>E-mail</th></tr></thead><tbody><tr><td>Anna</td><td>Hansen</td><td>11.06.1988</td><td><a href="mailto:anna.hansen@email.com">anna.hansen@email.com</a></td></tr></tbody></table>
+<table><thead><tr><th width="118.25">First Name</th><th width="164">Last Name</th><th>Date Of Birth</th><th>E-mail</th></tr></thead><tbody><tr><td>Anna</td><td>Hansen</td><td>11-06-1988</td><td><a href="mailto:anna.hansen@email.com">anna.hansen@email.com</a></td></tr></tbody></table>
 
 Result:
 
@@ -1698,7 +1698,7 @@ Import file:
 
 | First Name | Last Name | Date Of Birth |
 | ---------- | --------- | ------------- |
-| John       | Smith     | 15.04.1985    |
+| John       | Smith     | 15-04-1985    |
 
 Result:
 
