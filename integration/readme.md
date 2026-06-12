@@ -46,13 +46,13 @@ New features, performance improvments and automation enhancements to help you wo
 * 📄 **Print Tickets** was updated with clearer single-booking and bulk reprint workflows. See [Print Tickets](../tickets/print-tickets.md).
 * 📄 **Autobilling** was updated with prerequisites, invoice generation flow, lifecycle states, and troubleshooting. See [Autobilling](../autobilling/).
 * 🟢 Editable board hotel allotment. See [Hotel Allotment](../hotel/hotel-creation/hotel-allotments/editable-board.md).
-* 🟢 Log for Gouda & Europeiske insurance. See [Internal Logs](internal-logs/insurance-payload-log-gouda-and-europaeiske.md).
+* 🟢 Log for Gouda & Europeiske insurance. See [Internal Logs](../setup/internal-logs/insurance-payload-log-gouda-and-europaeiske.md).
 * 🟢 Land days to Real Transports. [See Real Transport - Departures](../real-transports/departures/add-land-days-to-real-transports-offset-handling.md).
 * 🟢 Releases/Stop Sales Log. See [Releases/Stop Sales Log](../releases-stop-sales-log.md).
 * 🟢 Support user role. See [Users - Support User Role](../users/users/support-user-role-gdpr-compliance.md)
 * 🟢 Payment file import/File import format. See [File import format](../finance/payment-file-import/skjernbank-file-import-format.md).
 * 🔵 Hotel Release reporting. See [Hotel release - Reporting](../hotel/hotel-creation/releases/hotel-release-reporting.md).
-* 🔵 Remove GMT Offset. See [Arrival Gateway](arrival-gateways/) & [Departure Gateway](departure-gateways/).
+* 🔵 Remove GMT Offset. See [Arrival Gateway](../setup/arrival-gateways/) & [Departure Gateway](../setup/departure-gateways/).
 * 🔵 Improvement to the new price list. See [Price List](../price-list/pricelist.md#price-list-search).
 * 🔵 Add code/name where missing in fields/tables. See [Special Offers](../special-offers.md) & [Flight change](../flight-change/).
 * 🔵 Rounding on Extras & Discount/Supplements. See the [Extras Category](../extras-category/) & [Discounts/Supplements Categories](../disc-suppl-categories.md).

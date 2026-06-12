@@ -64,10 +64,10 @@ Avoid sharing screenshots containing full card numbers or CVC.
 
 There are four transport providers that can be configured in this menu:
 
-* [TravelPort](travelport.md)
-* [Paxport](paxport.md)
-* [Amadeus](amadeus.md)
-* [Railhub](railhub.md)
+* [TravelPort](../../../integration/transport-providers/travelport.md)
+* [Paxport](../../../integration/transport-providers/paxport.md)
+* [Amadeus](../../../integration/transport-providers/amadeus.md)
+* [Railhub](../../../integration/transport-providers/railhub.md)
 
 ### Troubleshooting
 

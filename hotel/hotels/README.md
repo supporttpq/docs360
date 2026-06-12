@@ -85,7 +85,7 @@ Shows only hotels linked to a bed bank/provider source.
 
 This field is not mandatory.
 
-This filter is used for validating imported hotels and for troubleshooting provider-linked content. Provider/import setup is maintained in [System Setup – Hotel Providers](../../setup/system-setup/system-setup-hotel-providers/) and [System Setup – Hotel Import](../../setup/system-setup/system-setup-hotel-import.md).
+This filter is used for validating imported hotels and for troubleshooting provider-linked content. Provider/import setup is maintained in [System Setup – Hotel Providers](../../integration/hotel-providers/system-setup-hotel-providers.md) and [System Setup – Hotel Import](../../setup/system-setup/system-setup-hotel-import.md).
 
 **Show hidden**
 
@@ -193,7 +193,7 @@ Indicates whether the hotel is linked to a bed bank/provider.
 
 This field is not mandatory on the list page.
 
-This value supports troubleshooting of provider-sourced hotels and clarifies which hotels are managed directly versus imported. Related configuration exists in [System Setup – Hotel Providers](../../setup/system-setup/system-setup-hotel-providers/) and [System Setup – Hotel Import](../../setup/system-setup/system-setup-hotel-import.md).
+This value supports troubleshooting of provider-sourced hotels and clarifies which hotels are managed directly versus imported. Related configuration exists in [System Setup – Hotel Providers](../../integration/hotel-providers/system-setup-hotel-providers.md) and [System Setup – Hotel Import](../../setup/system-setup/system-setup-hotel-import.md).
 
 #### Actions
 
@@ -288,7 +288,7 @@ Configure metadata used for display and filtering in [Facilities](../../faciliti
 1. Enable **Display only Bed Banks**.
 2. Filter with **Destination** and **Resort**.
 3. Validate **Bed Bank** and **Supplier** in the list.
-4. Continue provider/import checks in [System Setup – Hotel Providers](../../setup/system-setup/system-setup-hotel-providers/) and [System Setup – Hotel Import](../../setup/system-setup/system-setup-hotel-import.md).
+4. Continue provider/import checks in [System Setup – Hotel Providers](../../integration/hotel-providers/system-setup-hotel-providers.md) and [System Setup – Hotel Import](../../setup/system-setup/system-setup-hotel-import.md).
 
 **Example: Locate a hidden hotel for maintenance**
 
@@ -307,7 +307,7 @@ Configure metadata used for display and filtering in [Facilities](../../faciliti
 * [Destination](../../setup/destination.md)
 * [Resorts](../../setup/resorts.md)
 * [Suppliers](../../suppliers/)
-* [System Setup – Hotel Providers](../../setup/system-setup/system-setup-hotel-providers/)
+* [System Setup – Hotel Providers](../../integration/hotel-providers/system-setup-hotel-providers.md)
 * [System Setup – Hotel Import](../../setup/system-setup/system-setup-hotel-import.md)
 * [Booking overview](../../booking/booking-overview.md)
 * [All bookings](../../booking/all-bookings/)

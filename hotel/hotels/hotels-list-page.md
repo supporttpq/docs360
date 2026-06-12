@@ -124,7 +124,7 @@ Use **Delete** only when the hotel must be removed permanently.
 
 * Filters narrow the result list only.
 * **Clear** removes active filters and refreshes the list.
-* **Display only Bed Banks** limits the view to bed bank-linked hotels. These hotels typically relate to provider and import setup in [System Setup – Hotel Providers](../../setup/system-setup/system-setup-hotel-providers/) and [System Setup – Hotel Import](../../setup/system-setup/system-setup-hotel-import.md).
+* **Display only Bed Banks** limits the view to bed bank-linked hotels. These hotels typically relate to provider and import setup in [System Setup – Hotel Providers](../../integration/hotel-providers/system-setup-hotel-providers.md) and [System Setup – Hotel Import](../../setup/system-setup/system-setup-hotel-import.md).
 
 **Hidden hotels**
 
@@ -163,7 +163,7 @@ This filter is commonly used before contract work, allotment work, and resort-le
 
 Shows only hotels that come from, or are linked to, a bed bank source.
 
-Use this checkbox when checking imported or integrated accommodation content. It relates directly to provider/import setup in [System Setup – Hotel Providers](../../setup/system-setup/system-setup-hotel-providers/) and [System Setup – Hotel Import](../../setup/system-setup/system-setup-hotel-import.md), and to the **Bed Bank** indication in the result list.
+Use this checkbox when checking imported or integrated accommodation content. It relates directly to provider/import setup in [System Setup – Hotel Providers](../../integration/hotel-providers/system-setup-hotel-providers.md) and [System Setup – Hotel Import](../../setup/system-setup/system-setup-hotel-import.md), and to the **Bed Bank** indication in the result list.
 
 **Show hidden**
 
@@ -284,7 +284,7 @@ If the hotel has historical importance, related setup, or reporting value, hidin
 1. Enable **Display only Bed Banks**.
 2. Narrow the list with **Destination** and **Resort**.
 3. Validate **Bed Bank** and **Supplier** in the result table.
-4. Open with **Edit** and continue with provider/import investigation in [System Setup – Hotel Providers](../../setup/system-setup/system-setup-hotel-providers/) or [System Setup – Hotel Import](../../setup/system-setup/system-setup-hotel-import.md).
+4. Open with **Edit** and continue with provider/import investigation in [System Setup – Hotel Providers](../../integration/hotel-providers/system-setup-hotel-providers.md) or [System Setup – Hotel Import](../../setup/system-setup/system-setup-hotel-import.md).
 
 **Example: Locate a hidden hotel for controlled maintenance**
 
@@ -302,5 +302,5 @@ If the hotel has historical importance, related setup, or reporting value, hidin
 * [Destination](../../setup/destination.md)
 * [Resorts](../../setup/resorts.md)
 * [Suppliers](../../suppliers/)
-* [System Setup – Hotel Providers](../../setup/system-setup/system-setup-hotel-providers/)
+* [System Setup – Hotel Providers](../../integration/hotel-providers/system-setup-hotel-providers.md)
 * [System Setup – Hotel Import](../../setup/system-setup/system-setup-hotel-import.md)

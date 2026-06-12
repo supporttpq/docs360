@@ -6,7 +6,7 @@ The sync runs once per day and keeps SkiStar-managed accommodations up to date i
 
 This page explains how the sync works, how it is configured, and how Tourpaq processes allotment and pricing.
 
-Go to [System Setup – Hotel Providers](./) for provider configuration and mappings.
+Go to [System Setup – Hotel Providers](system-setup-hotel-providers.md) for provider configuration and mappings.
 
 {% hint style="warning" %}
 This sync does **not** create bookings in SkiStar.
@@ -90,13 +90,13 @@ Once the feature is enabled per company, additional hotel-level fields become av
 
 #### Hotel settings
 
-<figure><img src="../../../.gitbook/assets/image (521).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (521).png" alt=""><figcaption></figcaption></figure>
 
 * **Managed by: SkiStar** appears below “Managed by AvailPro”.
 * **SkiStar Resort ID** is only visible when “Managed by SkiStar” is enabled.
 * **Stay lengths** defines which lengths should be synced for this hotel.
 
-<figure><img src="../../../.gitbook/assets/image (522).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (522).png" alt=""><figcaption></figcaption></figure>
 
 * Example:
   * Sälen: `7,5`
@@ -170,7 +170,7 @@ For each returned accommodation:
 
 * Locate the room by **Room Code = Accommodation ID**
 
-<figure><img src="../../../.gitbook/assets/image (524).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (524).png" alt=""><figcaption></figcaption></figure>
 
 For each returned Accommodation ID, Tourpaq updates **allotment** and **cost price** for the matching room.
 
@@ -180,7 +180,7 @@ If the hotel room is hidden, Tourpaq does not update cost or allotment.
 
 * The synchronized cost is stored under **Hotel → Room Costs** as **“Per Room Per Stay”** type.
 
-<figure><img src="../../../.gitbook/assets/image (525).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (525).png" alt=""><figcaption></figcaption></figure>
 
 ### Troubleshooting
 

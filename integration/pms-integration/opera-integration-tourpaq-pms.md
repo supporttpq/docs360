@@ -49,7 +49,7 @@ Hotels that are managed in Opera must be clearly identified in Tourpaq to enable
 
 * A hotel is marked as **“Managed by OracleOpera”** in Tourpaq
 
-<figure><img src=".gitbook/assets/image (771).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (771).png" alt=""><figcaption></figcaption></figure>
 
 * This flag indicates that:
   * Availability is controlled externally (Opera)
@@ -78,18 +78,18 @@ In Opera, there are 3 types of inventory:
 
 *   Block -> defines the rooms that can be bought with/without transport;
 
-    <figure><img src=".gitbook/assets/image (775).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (775).png" alt=""><figcaption></figcaption></figure>
 * Room
 *   House -> represents the total number of rooms we have in a hotel
 
-    <figure><img src=".gitbook/assets/image (774).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (774).png" alt=""><figcaption></figcaption></figure>
 
 For each individual room, there are other rooms assigned. The Bad Bank service looks at Opera every day and notices if it has a shortage or availability.\
 The first time he searches the House, then on the individual room. If the latter is 0 or negative, the NO value from Hotel Allotment in Tourpaq will be updated.
 
-<figure><img src=".gitbook/assets/image (776).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (776).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (778).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (778).png" alt=""><figcaption></figcaption></figure>
 
 #### Behavior
 
@@ -132,7 +132,7 @@ The mapping is done by convention (if there is a room with the code CF1 in Tourp
 Blocks are typically linked to transports or contracts and should be configured carefully to avoid overbooking.
 {% endhint %}
 
-<figure><img src=".gitbook/assets/image (763).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (763).png" alt=""><figcaption></figcaption></figure>
 
 Ex: Block code: BLL2505261 where:
 
@@ -158,16 +158,16 @@ Opera supports different types of extras that must be aligned with Tourpaq categ
 * Bundled services (e.g. meals, spa packages)
 * Typically mapped to Tourpaq Extras
 
-<figure><img src=".gitbook/assets/image (767).png" alt=""><figcaption><p>Extras in Tourpaq</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (767).png" alt=""><figcaption><p>Extras in Tourpaq</p></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (768).png" alt=""><figcaption><p>Package in Opera</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (768).png" alt=""><figcaption><p>Package in Opera</p></figcaption></figure>
 
 **2. Opera Item Inventory**
 
 * Individual sellable items
 * Example: equipment, add-ons
 
-<figure><img src=".gitbook/assets/image (765).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (765).png" alt=""><figcaption></figcaption></figure>
 
 **3. Opera Baggage**
 
@@ -195,7 +195,7 @@ Incorrect mapping may result in missing or invalid extras in Opera bookings.
 
 The **Bed Bank tab** contains Opera-specific booking data required for synchronization.
 
-<figure><img src=".gitbook/assets/image (769).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (769).png" alt=""><figcaption></figcaption></figure>
 
 **Typical Fields**
 
@@ -222,13 +222,13 @@ The **Bed Bank tab** contains Opera-specific booking data required for synchroni
 If any required mapping is missing, the booking may fail during export.
 {% endhint %}
 
-<figure><img src=".gitbook/assets/image (773).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (773).png" alt=""><figcaption></figcaption></figure>
 
 In order for a booking to be sent to Opera, the credentials and an endpoint, which are used to communicate with Opera, are manually added to the Config system.
 
 ## **Disable Opera Connect**
 
-<figure><img src=".gitbook/assets/image (780).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (780).png" alt=""><figcaption></figcaption></figure>
 
 Disable Opera Connect checkbox from the booking page, is used when changes are made on Booking, to be communicated to Opera. The checkbox appears only if there are communication settings with Opera.
 
@@ -242,7 +242,7 @@ The **Disable Opera Connect** option allows users to work with a booking without
 
 When **Disable Opera Connect** is selected, an information banner is displayed directly below the action bar.
 
-<figure><img src=".gitbook/assets/disable opera connect.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/disable opera connect.png" alt=""><figcaption></figcaption></figure>
 
 The banner contains the message:
 
@@ -256,7 +256,7 @@ This indicator remains visible while Opera synchronization is disabled for the b
 
 When a user attempts to save a booking while **Disable Opera Connect** is enabled, the system displays a confirmation dialog.
 
-<figure><img src=".gitbook/assets/save bookink opera.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/save bookink opera.png" alt=""><figcaption></figcaption></figure>
 
 **Message**
 
@@ -275,7 +275,7 @@ When a user attempts to save a booking while **Disable Opera Connect** is enable
 
 When a booking or passenger is cancelled while **Disable Opera Connect** is enabled, the system displays a reminder notification.
 
-<figure><img src=".gitbook/assets/cancel pax opera.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/cancel pax opera.png" alt=""><figcaption></figcaption></figure>
 
 **Message**
 
@@ -322,7 +322,7 @@ Passengers in Tourpaq must be mapped to Opera Profiles. Defines how passengers a
   * Phone
   * Unique identifier
 
-<figure><img src=".gitbook/assets/image (779).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (779).png" alt=""><figcaption></figcaption></figure>
 
 #### Behavior
 
@@ -392,7 +392,7 @@ The integration logs:
 * Use consistent naming between systems
 *   All customer details must be entered before Take Allotment, to avoid creating duplicates for customers.
 
-    <figure><img src=".gitbook/assets/image (770).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (770).png" alt=""><figcaption></figcaption></figure>
 * Test:
   * Booking with extras
   * Booking with blocks
