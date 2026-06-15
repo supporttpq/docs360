@@ -558,7 +558,7 @@
   * [Auto Europe (Car Rental Integration)](integration/car-rental-integration/system-setup-auto-europe-car-rental-integration.md)
 * [CRM & Marketing](integration/crm-and-marketing/README.md)
   * [HubSpot](integration/crm-and-marketing/hubspot.md)
-  * [System Setup – SMS Configuration (Twilio)](integration/crm-and-marketing/system-setup-sms-configuration-twilio.md)
+  * [Twilio](integration/crm-and-marketing/system-setup-sms-configuration-twilio.md)
   * [System Setup – Mail Platform](integration/crm-and-marketing/system-setup-mail-platform.md)
 * [What's new](integration/readme.md)
 * [Glossary](integration/glossary.md)

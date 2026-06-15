@@ -54,9 +54,9 @@ Before configuring the **Hotel Import** settings:
 * **Example:** `2` means +2% on the base price.
 
 {% hint style="warning" %}
-&#x20;Every time a new hotel contract import is performed, the Single Cost will be overwritten with the value specified in Single Room Supplement Price in System setup > Hotel import.\
-If you manually change the percentage in the hotel setup, that value will be overwritten the next time the contract is reimported.\
-In addition, the percentage defined in the hotel contract will not take effect if a value is entered in System setup > Hotel import. In this case, the value configured in the System setup takes precedence and overrides the hotel contract setting.
+'If a Single Room Supplement Price is specified in System setup > Hotel import this will be automatically inserted in the Hotel > Hotels > Single Room Supplement tab.&#x20;
+
+Note if you manually change the value in Hotel > Hotels > Single Room Supplement, that value will be overwritten by the system setup setting if the Hotel contract is reimported.
 {% endhint %}
 
 #### Board Supplement Price
