@@ -47,16 +47,6 @@ The automation runs **once per day** per company.
 
 Each rule can therefore trigger **at most once per day**.
 
-{% hint style="info" %}
-When a release rule is set for certain hotels, at a certain time, the system starts to release all the hotels in the agency that have set the scheduler at that time.
-
-* Example: if the scheduler contains a larger number of hotels with releses set at a certain time, when the system runs, it will put rules in a queue, and then take it in turn, a process that can take a long time until it is run and displayed.
-
-One way to avoid this is to plan the launch time on hotels in more/even stacks,
-
-* Exemple: spread the releases over several hours starting at 3am and every hour until 8am.
-{% endhint %}
-
 #### Single-day rule (specific target date)
 
 Use this when you want a release tied to **one target date**.
