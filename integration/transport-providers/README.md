@@ -1,8 +1,6 @@
 # Transport Providers
 
-## Transport Providers
-
-### Overview
+## Overview
 
 The Transport Providers module in Tourpaq is used to manage external transport suppliers that provide services such as flights, buses, trains, ferries, and transfers.
 
