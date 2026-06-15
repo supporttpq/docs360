@@ -546,7 +546,7 @@
   * [Opera Integration (Tourpaq → PMS)](integration/pms-integration/opera-integration-tourpaq-pms.md)
   * [Seekda Integration](integration/pms-integration/seekda-integration.md)
 * [Hotel Providers](integration/hotel-providers/README.md)
-  * [System Setup – Hotel Providers](integration/hotel-providers/system-setup-hotel-providers.md)
+  * [Hotel Beds / D-Edge / SkiStar](integration/hotel-providers/system-setup-hotel-providers.md)
   * [SkiStar Sync](integration/hotel-providers/skistar-sync.md)
 * [Transport Providers](integration/transport-providers/README.md)
   * [TravelPort](integration/transport-providers/travelport.md)
