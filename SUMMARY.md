@@ -553,7 +553,7 @@
   * [Paxport](integration/transport-providers/paxport.md)
   * [Amadeus](integration/transport-providers/amadeus.md)
   * [RailHub](integration/transport-providers/railhub.md)
-* [Payments](integration/payments.md)
+* [Payments Integration](integration/payments-integration.md)
 * [Car Rental Integration](integration/car-rental-integration/README.md)
   * [System Setup – Auto Europe (Car Rental Integration)](integration/car-rental-integration/system-setup-auto-europe-car-rental-integration.md)
 * [CRM & Marketing](integration/crm-and-marketing/README.md)

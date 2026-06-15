@@ -45,8 +45,6 @@ The Hotel Providers module is designed to:
 
 Tourpaq currently supports integrations with multiple accommodation providers and hotel distribution systems.
 
-Examples include:
-
 | Provider                   | Purpose                                                                   |
 | -------------------------- | ------------------------------------------------------------------------- |
 | Hotelbeds                  | Hotel inventory, contracts, availability, pricing, facilities, and images |
