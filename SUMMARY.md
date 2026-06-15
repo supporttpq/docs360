@@ -555,7 +555,7 @@
   * [RailHub](integration/transport-providers/railhub.md)
 * [Payments Integration](integration/payments-integration.md)
 * [Car Rental Integration](integration/car-rental-integration/README.md)
-  * [System Setup – Auto Europe (Car Rental Integration)](integration/car-rental-integration/system-setup-auto-europe-car-rental-integration.md)
+  * [Auto Europe (Car Rental Integration)](integration/car-rental-integration/system-setup-auto-europe-car-rental-integration.md)
 * [CRM & Marketing](integration/crm-and-marketing/README.md)
   * [HubSpot](integration/crm-and-marketing/hubspot.md)
   * [System Setup – SMS Configuration (Twilio)](integration/crm-and-marketing/system-setup-sms-configuration-twilio.md)
