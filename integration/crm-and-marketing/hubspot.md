@@ -22,7 +22,7 @@ You will find it next to other brand integrations.
 
 ### Field reference
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (32).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (32).png" alt=""><figcaption></figcaption></figure>
 
 #### License Key
 
@@ -52,7 +52,7 @@ Some HubSpot portals no longer support legacy API keys. If that’s your case, u
 {% step %}
 **Add Brand Code**
 
-<figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Set a **Brand Code** for each brand.
 
@@ -62,7 +62,7 @@ Tourpaq uses this code as a prefix in HubSpot booking data.
 {% step %}
 **Add HubSpot credentials and subscriptions**
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (9).png" alt=""><figcaption></figcaption></figure>
 
 Add the **License Key** and **Subscriptions** for the brand.
 {% endstep %}
@@ -78,7 +78,7 @@ Example request:
 
 Example response:
 
-{% file src="../.gitbook/assets/hubspot all Subscription by email .txt" %}
+{% file src="../../.gitbook/assets/hubspot all Subscription by email .txt" %}
 
 Next, the system checks if any subscriptions listed under the **HubSpot** tab in Brand match the subscriptions returned by HubSpot.
 
@@ -88,7 +88,7 @@ If a match is found, the system verifies whether the customer should be subscrib
 
 Example request body:
 
-{% file src="../.gitbook/assets/hubspot subscribe customer.txt" %}
+{% file src="../../.gitbook/assets/hubspot subscribe customer.txt" %}
 
 Once connected, data synchronization will occur automatically according to the system’s scheduled sync jobs or configured triggers.
 
@@ -139,7 +139,7 @@ Tourpaq maps customer contact details from the booking into a HubSpot contact.
 
 It also applies brand-specific flags and sets the HubSpot owner.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Copies customer details\
    The first part maps personal and contact information from the booking object to the HubSpotUser:
@@ -181,7 +181,7 @@ Tourpaq creates or updates a HubSpot deal/custom object with financial and trave
 
 It also sets transport flags and flight details (when available).
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Create and populate the deal\
    A new CustomDeal instance is created and most fields are filled directly from the booking object:
