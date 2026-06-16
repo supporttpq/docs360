@@ -1,4 +1,4 @@
-# System Setup – Hotel Providers
+# Hotel Beds / D-Edge / SkiStar
 
 ### Overview
 
@@ -28,6 +28,18 @@ This page typically covers:
 * **Availpro / D-EDGE**
 * **SkiStar Resort** mappings (used by the SkiStar integration)
 
+## Configuration
+
+### Access
+
+Navigate to:
+
+```
+Setup → System Setup → Hotel Providers
+```
+
+Only Administrator users can configure hotel provider integrations.
+
 ### Hotel Beds (Hotelbeds) integration
 
 | **Field**                | **Description**                                           |
@@ -38,6 +50,8 @@ This page typically covers:
 | **Small Image Endpoint** | Endpoint for small hotel images, used on the import page. |
 | **API Key / API Secret** | Credentials provided by Hotel Beds for authentication.    |
 | **Facilities Template**  | Template used by Tourpaq to map hotel facilities.         |
+
+After configuration, Tourpaq can begin importing hotel content and contract information.
 
 #### Setup steps
 
@@ -51,6 +65,8 @@ This page typically covers:
 | **Field**               | **Description**                                      |
 | ----------------------- | ---------------------------------------------------- |
 | **Username / Password** | Credentials provided by Availpro for authentication. |
+
+Once credentials are entered and validated, Tourpaq can synchronize accommodation data from the provider.
 
 #### Setup steps
 
@@ -71,7 +87,7 @@ For the daily sync behavior and API logic, see [SkiStar Sync](skistar-sync.md).
 
 #### Page structure
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The page displays a simple table with the following columns:
 
@@ -125,52 +141,119 @@ Use the trash icon to remove a mapping that is no longer required.
 * **SkiStar import uses the wrong stay length:** Verify SkiStar Resort → Transport Length mappings.
 * **A provider worked yesterday but fails today:** Rotate credentials and check provider service status.
 
-### FAQ
+## Hotel Import Process
 
-<details>
+### Step 1 – Configure Provider
 
-<summary><strong>Do provider credentials apply to all brands and agencies?</strong></summary>
+Enter provider credentials in Hotel Providers setup.
 
-In most setups, System Setup credentials are company-wide.
+### Step 2 – Search Available Hotels
 
-If you need provider credentials per brand, confirm what’s supported in your environment.
+Navigate to:
 
-</details>
+```
+Hotel → Hotel Bed Bank
+```
 
-<details>
+Search by:
 
-<summary><strong>Where do the API endpoints come from for Hotel Beds?</strong></summary>
+* Country
+* Destination
+* Hotel name
+* Available contracts
 
-They are supplied by Hotel Beds (Hotelbeds).
+### Step 3 – Review Contract Information
 
-Use the values provided for your account/environment.
+Before importing, review:
 
-</details>
+* Room mappings
+* Contract details
+* Facilities
+* Available room types
 
-<details>
+### Step 4 – Import Hotel
 
-<summary><strong>What is the “Facilities Template” used for?</strong></summary>
+Select:
 
-It maps provider facility codes into Tourpaq facility values.
+* Contract
+* Room mappings
+* Facilities
+* Resort assignment
+* Hotel photos
 
-If mapping is wrong, facility filters and displays can be inconsistent.
+Save the hotel to import it into Tourpaq.
 
-</details>
+### Step 5 – Synchronization
 
-<details>
+After import, hotel information, images, prices, and availability become available within Tourpaq. Some data may require a few minutes before becoming visible.
 
-<summary><strong>Do I need SkiStar Resort mappings if we don’t use SkiStar?</strong></summary>
+***
 
-No. Those mappings only matter for SkiStar accommodation imports and sync.
+## Example
 
-</details>
+### Importing a Hotel from Hotelbeds
 
-<details>
+#### Scenario
 
-<summary><strong>Should I delete old mappings and credentials?</strong></summary>
+An administartor wants to add a new hotel in Mallorca.
 
-Avoid deleting unless you are sure they are not used.
+#### Process
 
-If you need to disable a provider, prefer disabling the integration or removing access in the provider system.
+1. Open Hotel Bed Bank.
+2. Search for Mallorca hotels.
+3. Review available contracts.
+4. Select room mappings.
+5. Import hotel details and images.
+6. Save the hotel.
 
-</details>
+#### Result
+
+The hotel becomes available for:
+
+* Booking creation
+* Dynamic packages
+* Availability searches
+* Online sales
+
+## Integration with Hotels Module
+
+Imported hotels become standard Tourpaq hotel records and can be managed from:
+
+```
+Hotel → Hotels
+```
+
+Hotels can then be:
+
+* Assigned to resorts
+* Connected to suppliers
+* Configured with room types
+* Included in allotments
+* Used in bookings
+* Published online
+
+This allows imported provider content to work seamlessly alongside manually created hotels.
+
+***
+
+## Administration
+
+### Credential Management
+
+Provider credentials are stored centrally in System Setup.
+
+Benefits include:
+
+* Single point of maintenance.
+* Shared access across brands and agencies.
+* Simplified integration management.
+
+### Monitoring
+
+Administrators should regularly verify:
+
+* Connectivity status
+* Import success
+* Pricing synchronization
+* Availability updates
+* Contract validity
