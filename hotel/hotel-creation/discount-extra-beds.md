@@ -21,12 +21,13 @@ This reduces manual corrections and keeps booking totals consistent.
 Extra-bed discounts are only applied when a passenger is actually assigned to an extra bed in the room allocation.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (795).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/disc extra bed.png" alt=""><figcaption></figcaption></figure>
 
 ### Field Explanations
 
 * **Age** – The passenger's age to which the rule applies to.
 * **Start Date / End Date** – Stay dates where the discount is valid.
+* &#x20;B**ooking Start/End -** Booking interval (interval dates when the bookings are made and the discount is valid)
 * **Discount columns** – Discount values per extra bed:
   * **1st** – First extra bed
   * **2nd** – Second extra bed (optional)
@@ -78,45 +79,3 @@ A hotel gives the following discounts for children:
 * Assigned to **Period 1**
 
 ***
-
-### FAQ
-
-#### Why is my extra bed discount not applied?
-
-Check these items:
-
-* The passenger is assigned to an **extra bed** in the room.
-* The passenger’s **age** matches the rule.
-* Stay dates match **Start Date / End Date**.
-* Booking date matches **Booking Start / End Date** (if set).
-* **Room Type**, **Transport**, and **Period** match the booking.
-
-#### What’s the difference between **%** and a fixed value?
-
-* Use **%** to discount by a percentage (example: `10` = 10%).
-* Leave **%** unchecked to discount by a fixed amount (currency).
-
-#### What does **PD (Per Day)** do?
-
-**PD** applies the discount **per day** of the stay.\
-Without **PD**, the discount is applied per interval.
-
-#### How do I discount the 2nd, 3rd, or 4th extra bed?
-
-Fill in the corresponding discount columns.\
-Leave unused columns empty if you only support fewer beds.
-
-#### What are **FHC**, **H (Hidden)**, and **HP**?
-
-* **FHC**: Calculates discount from profit. It is used with Price Margin Service.
-* **H (Hidden)**: Spreads the discount across passengers in the room.
-* **HP**: Calculates discount as a percentage of the hotel price.
-
-#### How do I restore a discount I deleted?
-
-Open **Removed Discounts** and restore the rule from there.
-
-#### How is this different from Extra Bed Costs?
-
-* **Discount Extra Beds** changes the **customer price** (discount).
-* [Extra Beds Costs](extra-beds-costs.md) changes the **hotel cost** side (what you pay the supplier).
