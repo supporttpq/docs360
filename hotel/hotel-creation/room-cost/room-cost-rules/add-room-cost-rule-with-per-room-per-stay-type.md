@@ -122,34 +122,3 @@ If the creditor uses another currency, verify the cost is shown in the creditor 
 * If you changed the rule after creating the booking, re-open the booking after recalculation runs.
 * If currency is not converted, confirm the hotel has a creditor and exchange rates exist.
 * If booking status is not **OK**, fix availability or required data first.
-
-### FAQ
-
-#### When should I use **Per Room Per Stay**?
-
-Use it when the supplier charges a fixed amount for the whole stay.\
-Example: a cleaning fee or a flat package cost.
-
-#### What is **Stay Days No** on a per-stay rule?
-
-It limits when the rule applies.\
-If you set it, the booking stay length must match that value.
-
-#### Why is the per-stay cost shown “per day” in Hotel Cost?
-
-Tourpaq can distribute the per-stay value across stay days internally.\
-This supports allocation, reporting, and totals.
-
-#### Why do I see different currencies before and after assigning a creditor?
-
-Before you assign a creditor, costs can show in the rule currency.\
-After you assign a creditor, costs can be shown in the creditor currency.
-
-#### The rule matches, but I still see no hotel cost. Why?
-
-Most misses come from filters. Check:
-
-* stay period overlap
-* room type selection
-* booking date window (if used)
-* required fields saved on the rule row

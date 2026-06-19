@@ -45,27 +45,3 @@ Select only one of them.
 
 * Create one schedule per supplier email address.
 * Use **Schedulers** to confirm what was sent and when.
-
-### FAQ
-
-#### Can I use **Bookings Made** and **Days After** together?
-
-No. Pick the one that matches your use case.
-
-#### Why did I receive a report with no bookings?
-
-**Empty List** was enabled. Disable it if you only want reports with results.
-
-#### Can I send the same report to multiple recipients?
-
-Create multiple schedules. Use one recipient email per schedule.
-
-#### Where do I see previously sent reports?
-
-Open **Schedulers**. It shows existing schedules and send history.
-
-#### My supplier says they did not receive the email. What should I check?
-
-Check the **Email** address for typos. Ask them to check spam or quarantine. Then verify the schedule exists and is saved.
-
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (44).png" alt="Hotel Reporting scheduler setup screen"><figcaption><p>Hotel Reporting scheduler setup.</p></figcaption></figure>

@@ -77,5 +77,3 @@ A hotel gives the following discounts for children:
 * Only applies to **CPHKGS70** transport
 * Valid for all room types
 * Assigned to **Period 1**
-
-***

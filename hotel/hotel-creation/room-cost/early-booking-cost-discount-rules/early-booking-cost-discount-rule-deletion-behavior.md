@@ -62,25 +62,3 @@ The Early Booking Discount details are no longer available.
 ### Expected behavior (current design)
 
 Deleting a rule deletes its related invoice data to keep the data model consistent.
-
-### FAQ
-
-#### Does deleting the rule change the invoice amount?
-
-Not always. The Early Booking Discount details can be removed while the invoice total remains unchanged.
-
-#### Does the invoice status matter?
-
-No. The cascade runs regardless of invoice status.
-
-#### Is this related to the autobilling job?
-
-No. The deletion is triggered by the rule deletion itself, not by autobilling.
-
-#### Can I restore the deleted discount details?
-
-There is no self-service restore in the UI. If you need the historical lines back, contact Tourpaq support and provide the invoice number and hotel rule context.
-
-#### How can I avoid losing the details?
-
-Download and archive the invoice before deleting the rule. Avoid deleting rules that have already been used for invoicing unless you are sure you do not need the historical details.

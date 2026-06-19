@@ -99,20 +99,3 @@ Prerequisites:
 * Room **costs** are set for the hotel.
 
 <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-### FAQ
-
-**Q: What’s the difference between “Payback Date” and “Payback On”?**\
-**A:** **Payback Date** is the planned date. **Payback On** is the actual date/time when it happened.
-
-**Q: Why isn’t the deposit deducted from the hotel invoice?**\
-**A:** The deposit must be in **Paid** status. The deduction happens on the final payment run.
-
-**Q: I created a Special Deposit Rule, but the amounts look wrong. Why?**\
-**A:** The rule uses the hotel’s room allotments and room costs. Missing data changes the calculation.
-
-**Q: What does “Archived also” do?**\
-**A:** It toggles whether archived invoices appear in the invoice list at the bottom.
-
-**Q: Can I delete a deposit entry?**\
-**A:** Yes, via the trash icon. Confirm your internal audit/accounting requirements first.

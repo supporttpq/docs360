@@ -194,52 +194,6 @@ When the corresponding **Extra Bed Cost** rule is modified:
   * EBD rule generation logic
   * Existing Discount Extra Beds behavior
 
-### FAQ
-
-#### Why is the extra bed cost always `0`?
-
-This is expected if either condition is not met:
-
-* No passengers are using an extra bed.
-* Room costs are not calculated **per passenger**.
-
-#### How are the second/third/fourth prices used?
-
-They are used when multiple extra beds are placed in the same room.
-
-* Extra bed 1 uses **Cost Price**.
-* Extra beds 2–4 use the additional columns.
-
-#### What does **PD (Per Day)** do?
-
-When enabled, the value applies **per day** of the stay. When disabled, it applies per the configured interval.
-
-#### What does **C** mean in practice?
-
-When enabled, the value is treated as a **price/supplement**. When disabled, it is treated as a **discount**.
-
-#### What does **% (Percent)** do?
-
-When enabled, the value is interpreted as a percentage. Example: `10` means **10%**.
-
-#### How do Arrival/Booking dates and Period work together?
-
-All of them must match for the rule to apply:
-
-* Guest arrival must be inside **Arrival Start/End Date**.
-* Booking date must be inside **Booking Start/End Date**.
-* Stay must match the configured **Period**.
-
-#### What happens if Extra Bed Cost is linked to Extra Bed Discount?
-
-When a rule is created under **Extra Bed Cost** and the **EBD (Link to Extra Beds Discount)** option is enabled:
-
-* A corresponding rule is automatically generated under **Discount Extra Beds**
-* The rule is currently **locked**
-* The **"H" (Hidden)** flag is automatically enabled and cannot be changed
-
-This behavior prevents users from controlling visibility of the generated discount.
-
 ### Related pages
 
 * [Discount Extra Beds](discount-extra-beds.md) — Configure the customer-price discount side that can be linked through **EBD**.

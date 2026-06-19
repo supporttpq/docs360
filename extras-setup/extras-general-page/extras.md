@@ -6,7 +6,7 @@ Extras are optional services/products that a customer can book; like transfer, c
 
 #### Brands
 
-<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Allow the user to assign an extra to an agency. An extra can be assigned as follow:
 
@@ -18,7 +18,7 @@ Allow the user to assign an extra to an agency. An extra can be assigned as foll
 * hotel sale - can be set only by a hotel agent
 * guide sale + internet sale + for sale - can be booked by a admin, guide or a WB
 
-<figure><img src="../../../.gitbook/assets/image (571).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (571).png" alt=""><figcaption></figcaption></figure>
 
 ### **Overview:**
 
@@ -49,7 +49,7 @@ Allow the user to assign an extra to an agency. An extra can be assigned as foll
 
 Used to customize the appearance and description of the extra in booking flows or documentation.
 
-<figure><img src="../../../.gitbook/assets/image (442).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (442).png" alt=""><figcaption></figcaption></figure>
 
 | Field           | Description                                                                                                                |
 | --------------- | -------------------------------------------------------------------------------------------------------------------------- |
@@ -60,7 +60,7 @@ Used to customize the appearance and description of the extra in booking flows o
 
 Allows integration with internal billing and accounting systems for accurate cost tracking and supplier payouts.
 
-<figure><img src="../../../.gitbook/assets/image (443).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (443).png" alt=""><figcaption></figcaption></figure>
 
 | Field                    | Description                                                                                  |
 | ------------------------ | -------------------------------------------------------------------------------------------- |
@@ -76,7 +76,7 @@ Allows integration with internal billing and accounting systems for accurate cos
 
 ### Golf Course
 
-<figure><img src="../../../.gitbook/assets/image (602).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (602).png" alt=""><figcaption></figcaption></figure>
 
 This section is shown **only when an Extra is configured with the type&#x20;**_**Golf**_.\
 If the Extra has a different type, this section is not displayed.
@@ -107,7 +107,7 @@ These fields are **only relevant for Extras of type Golf** and are ignored for a
 
 These settings control how the extra behaves in the booking process and what logic or restrictions apply to its use.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <table><thead><tr><th width="307.3333740234375">Setting</th><th>Description</th></tr></thead><tbody><tr><td><strong>Autoselect in booking &#x26; offer</strong></td><td>Automatically selects this extra during booking and in special offers. Useful for mandatory or strongly recommended extras. The product will already be selected by default in a new booking. When using this feature, please make sure the product does not have a discount linked to it.</td></tr><tr><td><strong>Unremovable On Web Booking</strong></td><td>Prevents customers from removing the extra themselves during online booking. Ideal for required services.</td></tr><tr><td><strong>Unremovable On Customer Center</strong></td><td>Prevents removal by users in the customer self-service portal.</td></tr><tr><td><strong>Add price to deposit</strong></td><td>Includes the price of this extra in the booking deposit calculation.</td></tr><tr><td><strong>Include in basic price</strong></td><td>If checked, this will include the price of the extra in the basic prices of the booking.<br>This is often used in combination with "Autoselect in booking &#x26; offer.</td></tr><tr><td><strong>Add On All Pax</strong></td><td>If selected for one passenger in webbooking, the product will be automatically selected for all eligible pax of the booking; If removed, will be removed from all.</td></tr><tr><td><strong>Add only one per room</strong></td><td>Limits the extra to one per room regardless of the number of passengers.</td></tr><tr><td><strong>Available to book (API)</strong></td><td>Check whether a product should be shown as available to book in the Offer API, without adding it to the total.</td></tr></tbody></table>
 
@@ -117,7 +117,7 @@ These settings control how the extra behaves in the booking process and what log
 
 These settings influence how the extra interacts with billing, privacy regulations, and system integrations.
 
-<figure><img src="../../../.gitbook/assets/image (445).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (445).png" alt=""><figcaption></figcaption></figure>
 
 | Setting                      | Description                                                                                                                                |
 | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -131,7 +131,7 @@ These settings influence how the extra interacts with billing, privacy regulatio
 
 ### Board Supplement
 
-<figure><img src="../../../.gitbook/assets/image (10) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (3).png" alt=""><figcaption></figcaption></figure>
 
 This section is shown **only when an Extra is configured with the type Pension**.\
 If the Extra has a different type, this section is not displayed.
@@ -183,13 +183,13 @@ The Clone Extras feature is used to:
 
 2.  Click “Clone” - Select the **Clone** option
 
-    <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3.  Select the code for the new Extras
 
-    <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 4.  Define Clone Settings
 
-    <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 You need to:
 
@@ -211,45 +211,3 @@ Important:
 * Review communication rules
 
 ***
-
-### FAQ
-
-#### 1. Why can’t I see the extra when I try to book it?
-
-**Q:** The extra exists, but it doesn’t show up in Office/Web Booking. Why?\
-**A:** Check `Status = visible`, and check the `Brands` channel setup (for sale / internet sale / etc.). Also confirm it’s in the right `Extras Category` and matches any `Minimum Length`, `Maximum Length`, and `Period/Trip Length` limits.
-
-#### 2. What’s the difference between “for sale” and “internet sale” in Brands?
-
-**Q:** Which one should I use?\
-**A:** `for sale` means Office only. `internet sale` means Web Booking only. Use `for sale + internet sale` if it should be bookable in both channels.
-
-#### 3. Why does the product disappear when using Days Prices Option?
-
-**Q:** I set a `Days Prices Option`, and now the extra gets removed.\
-**A:** `Days Prices Option` only works for prices that have `days` defined. If none of the prices have `days`, the product is removed from the selection.
-
-#### 4. How do I make an extra mandatory?
-
-**Q:** I want it selected by default, and customers shouldn’t remove it.\
-**A:** Enable `Autoselect in booking & offer`. Then enable `Unremovable On Web Booking` and/or `Unremovable On Customer Center`, depending on where it must be locked.
-
-#### 5. What does “Include in basic price” actually do?
-
-**Q:** Does it hide the extra or remove it?\
-**A:** It hides the extra from the customer view in Web Booking and Customer Centre. It still increases the base price. It affects booking totals.
-
-#### 6. Will “Currency Prices” update existing bookings?
-
-**Q:** We changed currency rates. Will old bookings get updated?\
-**A:** No. Currency price calculation affects new pricing logic. It does not update sales prices for existing bookings.
-
-#### 7. Where does “Custom Text” appear?
-
-**Q:** Who will see the name/description entered here?\
-**A:** The `Description` text can be shown in Guest App and Guide App. It can also be used to control how the extra is presented in booking flows.
-
-#### 8. What are SSR Codes used for?
-
-**Q:** Why should I add an SSR code to an extra?\
-**A:** If the extra is selected in a booking, the SSR code can be reported to the transport company. This creates an evidence trail for passenger requests.

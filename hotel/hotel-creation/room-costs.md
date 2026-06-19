@@ -77,25 +77,3 @@ Passenger1 stays in Room A:
 ### Related pages
 
 * [Room cost](room-cost/)
-
-### FAQ
-
-#### What’s the difference between **per room** and **per passenger**?
-
-**Per room** applies once per room and is split across occupants. **Per passenger** applies to each passenger individually.
-
-#### Why do passengers in the same room sometimes get different costs?
-
-Age filters can apply different extra prices per passenger. Board type rules can also impact cost in some setups.
-
-#### How does the system split a per-room cost?
-
-It splits the room cost evenly across room occupants. The split is recalculated if room occupancy changes.
-
-#### Why does my number look “rounded”?
-
-Splits can create decimals. Rounding depends on your currency settings and where totals are displayed.
-
-#### I changed a room cost setup, but the booking didn’t update. Why?
-
-Some totals update only after cost/profit recalculation runs. Re-open the booking and check the cost breakdown after recalculation.

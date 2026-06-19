@@ -64,29 +64,3 @@ Save your changes.
 {% endstepper %}
 
 > The system will now automatically include the single-occupancy cost in cost calculations.
-
-### FAQ
-
-#### Does Single Room Cost change the customer price?
-
-Not directly. It changes the **room cost** used in calculations.
-
-If your pricing uses margins on cost, the sales price may change.
-
-#### When should I use a fixed amount vs. percentage?
-
-Use a fixed amount when the uplift is constant.
-
-Use a percentage when it should scale with the room cost.
-
-#### What happens if I leave SINGLE PRICE empty?
-
-No single-occupancy cost is added for that room type.
-
-#### What’s the difference between “Single Room Cost” and “Single Room Supplement”?
-
-**Single Room Cost** adds cost in the Room Cost setup.
-
-[Single Room Supplement](single-room-supplement.md) applies the standard `SINGLE` supplement.
-
-Use the one that matches your setup and pricing model.
