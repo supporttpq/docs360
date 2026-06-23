@@ -297,7 +297,7 @@
 * [Airline Baggage Allowances](airline-baggage-allowances.md)
 * [Routes](routes.md)
 * [Real Transports](real-transports/README.md)
-  * [Introduction](real-transports/introduction.md)
+  * [General Settings](real-transports/general-settings.md)
   * [Dynamic transport baggage](real-transports/dynamic-transport-baggage.md)
   * [Setup for Transport Dynamic Packaging (GDS)](real-transports/setup-for-transport-dynamic-packaging-gds.md)
   * [Departures](real-transports/departures/README.md)
