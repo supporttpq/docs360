@@ -275,7 +275,8 @@
   * [Documents](transport/transport/documents.md)
   * [Passenger information](transport/transport/passengers-informations.md)
   * [Notes](transport/transport/notes.md)
-  * [Transport Reporting](transport/transport/transport-reporting.md)
+  * [Transport Reporting](transport/transport/transport-reporting/README.md)
+    * [Sunclass Transport Reporting](transport/transport/transport-reporting/sunclass-transport-reporting.md)
   * [Transport Allotment adjustment for Dynamic Transport](transport/transport/transport-allotment-adjustment-for-dynamic-transport.md)
   * [Add Transport Wizard](transport/transport/add-transport-wizard.md)
 

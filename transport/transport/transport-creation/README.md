@@ -412,58 +412,6 @@ Click **Save** to apply the layout and show seat type pricing. Repeat for the ne
 
 You can change layouts, but the new layout must have the same or a higher number of seats than the existing layout.
 
-### FAQ
-
-<details>
-
-<summary>Why can’t I select a <strong>Seat map</strong>?</summary>
-
-Most common causes:
-
-* Transport layout service is not enabled for your agency.
-* No layouts exist in [Transport Layouts](../../../transport-layouts.md).
-* You haven’t assigned a layout to the departure date under **Layout**.
-
-</details>
-
-<details>
-
-<summary>Why didn’t <strong>Fix quota</strong> generate any departures?</summary>
-
-Check these first:
-
-* **Start date** / **End date** are set, and the range is valid.
-* Your **Interval definition** exists and matches the dates you want to generate.
-* **Period** and/or **Override period** are set as expected.
-* For **child transports**, the date range is within the parent transports’ ranges.
-
-</details>
-
-<details>
-
-<summary>Where do I set customer-facing text when using <strong>Dynamic itineraries</strong>?</summary>
-
-Set it on the **Real Transport**. That includes baggage allowance info and ticket text fields.
-
-</details>
-
-<details>
-
-<summary>What’s the difference between <strong>Dynamic itineraries</strong> and <strong>Dynamic Supplement</strong>?</summary>
-
-* **Dynamic itineraries** controls how the system builds the itinerary (legs, GDS vs real transport).
-* **Dynamic Supplement** adds the transport price as a supplement in the booking.
-
-</details>
-
-<details>
-
-<summary>How do I send a flight time change email?</summary>
-
-Update the relevant line in **Timetable**, then enable **FL** and save/update. This requires the **Flight change e-mail** template.
-
-</details>
-
 ### Related pages
 
 * [Transport](../)

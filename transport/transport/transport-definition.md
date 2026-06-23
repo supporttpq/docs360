@@ -18,7 +18,7 @@ In the "Choose provider" menu, there is the possibility of making 3 different co
 
 <figure><img src="../../.gitbook/assets/image (629).png" alt=""><figcaption></figcaption></figure>
 
-**External API** - If an External API is selected in the Choose provider tab (Amadeus, Paxport, Railhub, or Travelport), then all fields are displayed except the Real Transport code.&#x20;
+**External API** - If an External API is selected in the Choose provider tab (Amadeus, Paxport, Railhub, or Travelport), then all fields are displayed except the Real Transport code.
 
 <figure><img src="../../.gitbook/assets/image (630).png" alt=""><figcaption></figcaption></figure>
 
@@ -43,9 +43,9 @@ For each leg, you define **filters**. The filters apply to **GDS** **transports*
 
 #### Time information
 
-* **Departure preferred time -** Optional target departure time.&#x20;
-* **Departure earliest time -** Earliest allowed departure time.&#x20;
-* **Departure latest time -** Latest allowed departure time.&#x20;
+* **Departure preferred time -** Optional target departure time.
+* **Departure earliest time -** Earliest allowed departure time.
+* **Departure latest time -** Latest allowed departure time.
 
 #### Travel limitations
 
@@ -117,88 +117,6 @@ Review the found flights under **Fix quota → View flights**.
 ### Load Factor
 
 You can create **load factor matrices** and link them to a transport. Each transport can use one selected matrix.
-
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (7).png" alt=""><figcaption></figcaption></figure>
-
-### FAQ
-
-<details>
-
-<summary>What is a <strong>leg</strong>?</summary>
-
-A leg is one segment of the itinerary. It’s defined by a departure city and an arrival city.
-
-</details>
-
-<details>
-
-<summary>When should I use <strong>multiple legs</strong>?</summary>
-
-Use multiple legs when the journey has more than one segment. Example: City A → City B → City C.
-
-</details>
-
-<details>
-
-<summary>What’s the difference between <strong>Search</strong> and <strong>Update flight data</strong>?</summary>
-
-* **Search** is for previewing what matches your current filters.
-* **Update flight data** refreshes the flight data using your saved filters.
-
-</details>
-
-<details>
-
-<summary>Does <strong>Update flight data</strong> book anything?</summary>
-
-No. It refreshes the stored flight data used by the dynamic itinerary logic. It does not place bookings by itself.
-
-</details>
-
-<details>
-
-<summary>Where do I see the flights the system found?</summary>
-
-Open the transport’s **Fix quota**, then go to **View flights**.
-
-</details>
-
-<details>
-
-<summary>How often does <strong>Flight search</strong> run?</summary>
-
-It runs nightly for transports using **Dynamic itineraries**. Use **Update flight data** if you need a refresh right now.
-
-</details>
-
-<details>
-
-<summary>Why don’t I see any flights in <strong>View flights</strong>?</summary>
-
-Common causes:
-
-* The leg filters are too strict.
-* The transport has no generated departures in **Fix quota**.
-* No flights are available for the selected dates.
-* Flight data has not been refreshed (run **Update flight data**).
-
-</details>
-
-<details>
-
-<summary>What should I do if I get <strong>too many</strong> results in Search?</summary>
-
-Tighten your leg filters. Start with the route, then narrow down step by step.
-
-</details>
-
-<details>
-
-<summary>How does the system choose between <strong>real transports</strong> and <strong>GDS flights</strong>?</summary>
-
-It prefers real transports unless the GDS option meets the configured rules. Those rules include guaranteed seat sales, lower cost, and a max GDS price cap.
-
-</details>
 
 ### Related pages
 

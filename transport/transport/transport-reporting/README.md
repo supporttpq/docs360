@@ -4,11 +4,11 @@ Transport Reporting is a way to send the passenger name list (**PNL**) to the ai
 
 The default reporting method is set in **Transport → General tab**. A tour operator code is required for some reporting types.
 
-<figure><img src="../../.gitbook/assets/image (109).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (109).png" alt=""><figcaption></figcaption></figure>
 
 Another reporting method can be set from the **Timetable**. This will override the method selected in the **Transport → General tab** for the duration of the flights.
 
-<figure><img src="../../.gitbook/assets/image (110).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (110).png" alt=""><figcaption></figcaption></figure>
 
 The last reporting method can be set up from the **Communication** tab.
 
@@ -18,19 +18,19 @@ By clicking **Add schedule**, you can define rules that send communication files
 
 The rules shown in the image below will send communication files to the configured email address for all bookings on the selected transport, **20**, **10**, and **1** day(s) before departure.
 
-<figure><img src="../../.gitbook/assets/image (112).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (112).png" alt=""><figcaption></figcaption></figure>
 
 **Defining one rule for an interval of days**
 
 You can combine many rules into one using **Departure Date End**. Define an interval (**Departure Date** to **Departure Date End**). If you also use the **Minutes** interval, communication files are sent every N minutes. The rule shown below sends communication files to the configured email address for the selected transport every **60 minutes** for all bookings with **1, 2, 3...50** days before departure.
 
-<figure><img src="../../.gitbook/assets/image (113).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (113).png" alt=""><figcaption></figcaption></figure>
 
 When you use **Departure Date End**, you cannot copy the rule to create a new one.
 
 It is also possible to define rules like the one below (using **Hour**):
 
-<figure><img src="../../.gitbook/assets/image (114).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (114).png" alt=""><figcaption></figcaption></figure>
 
 Rules 1, 2, and 3 are overridden by the last rule. The only difference is the email address to which the communication files are sent. This method can also override previously selected methods of defining communication files.
 
@@ -40,7 +40,7 @@ Rules 1, 2, and 3 are overridden by the last rule. The only difference is the em
 
 This rule ensures that changes to passenger seating made **after departure** are still communicated to transport suppliers. It is specifically useful for **one-way homebound transports**, where new passengers may be added or existing ones removed after the outbound trip has already departed.
 
-<figure><img src="../../.gitbook/assets/image (350).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (350).png" alt=""><figcaption></figcaption></figure>
 
 ### **How It Works**
 
@@ -119,7 +119,7 @@ This feature permits the user:
 
 It can be accessed from **Transport → Resend Transport Reporting**.
 
-<figure><img src="../../.gitbook/assets/image (115).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (115).png" alt=""><figcaption></figcaption></figure>
 
 Available filters:
 
@@ -129,7 +129,7 @@ Available filters:
 * Arrival Airport - This field identifies the airport where the flight is scheduled to land. It is also typically represented by a standard airport code.
 * Airlines - This field indicates the airline operating the flight. It can be represented by the airline's name or its designated airline code.
 
-<figure><img src="../../.gitbook/assets/image (116).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (116).png" alt=""><figcaption></figcaption></figure>
 
 **Resending section**
 
@@ -171,11 +171,11 @@ One transport may have a single Transport Supplier for all rotations in the fix 
 
 Transport Supplier can be found in **Edit Transport → Communication tab**:
 
-<figure><img src="../../.gitbook/assets/transportSupplierTabLocation-956e7aac017ec67cc51896a22b5c413b.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/transportSupplierTabLocation-956e7aac017ec67cc51896a22b5c413b.png" alt=""><figcaption></figcaption></figure>
 
 This tab shows the list of communication triggered by the rules from the Transport Supplier.
 
-<figure><img src="../../.gitbook/assets/transportSupplierTabList-e396a773c38ce57854d0a7cbe90b5761.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/transportSupplierTabList-e396a773c38ce57854d0a7cbe90b5761.png" alt=""><figcaption></figcaption></figure>
 
 This list can be ordered by Reporting Method, Transport Supplier and Period.
 
@@ -191,7 +191,7 @@ This table contains the following columns:
 * Email - Field to input one or more **email addresses** where notifications, reports, or PNL documents are sent.
 * Communications - link to PNL data files (clicking opens a modal window with file links; each link opens in a new tab).
 
-<figure><img src="../../.gitbook/assets/transportSupplierTabModal-a9bb0c7ec87df174f925a60f198ee44f.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/transportSupplierTabModal-a9bb0c7ec87df174f925a60f198ee44f.png" alt=""><figcaption></figcaption></figure>
 
 ### FAQ
 

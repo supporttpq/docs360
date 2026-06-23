@@ -47,40 +47,6 @@ The purpose of this functionality is to:
 The deadline is evaluated against the transport’s **departure date**.
 {% endhint %}
 
-### FAQ
-
-<details>
-
-<summary>Why can Office users still change names before payment?</summary>
-
-The **Office restriction** is enforced **after payment is registered**. Before payment, names can typically be corrected as part of normal booking edits.
-
-</details>
-
-<details>
-
-<summary>Do Office and WebBooking use the same deadline?</summary>
-
-Yes. **Name change deadline (days before departure)** is a shared cutoff. If a change happens after the cutoff, the system blocks it in both channels.
-
-</details>
-
-<details>
-
-<summary>What happens if I block both Office and WebBooking name changes?</summary>
-
-No one can change passenger names through normal UI flows. Only users with higher privileges or support processes can resolve it.
-
-</details>
-
-<details>
-
-<summary>Does this affect other passenger edits (phone, email, SSR, etc.)?</summary>
-
-No. It targets **passenger name changes** only. Other passenger fields follow their own rules and permissions.
-
-</details>
-
 ### Related pages
 
 * [Transport creation](./)

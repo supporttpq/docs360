@@ -53,17 +53,3 @@ Before creating a new document, ensure that:
 ***
 
 ✅ **Result**: The uploaded document is now stored under the chosen route’s **Documents** section and can be referenced by team members.
-
-### FAQ
-
-**Where are documents stored?**\
-Documents are stored on the selected route under the **Documents** tab.
-
-**Can I upload more than one document for the same route?**\
-Yes. Create a new document entry for each file you want to attach.
-
-**Who can upload documents?**\
-Only users with the required permissions can create and save documents.
-
-**What happens if I click Cancel?**\
-The window closes and nothing is saved.
