@@ -74,6 +74,7 @@
 ***
 
 * [GDS Queue Place](gds-queue-place/README.md)
+  * [General Settings](gds-queue-place/general-settings.md)
   * [GDS Bookings](gds-queue-place/gds-bookings.md)
   * [Submit a GDS Booking](gds-queue-place/submit-a-gds-booking/README.md)
     * [PNR Disconnect](gds-queue-place/submit-a-gds-booking/pnr-disconnect.md)
@@ -81,6 +82,7 @@
   * [GDS One way flight bookings](gds-queue-place/gds-one-way-flight-bookings.md)
   * [Booking State Color – GDS Bookings](gds-queue-place/booking-state-color-gds-bookings.md)
   * [GDS Transport Identification and Exclusion](gds-queue-place/gds-transport-identification-and-exclusion.md)
+  * [Dynamic transport baggage](gds-queue-place/dynamic-transport-baggage.md)
   * [Setup for Transport Dynamic Packaging (GDS)](gds-queue-place/setup-for-transport-dynamic-packaging-gds.md)
 * [Offers](offers/README.md)
   * [Create new offer](offers/create-new-offer.md)
@@ -298,10 +300,7 @@
 * [Airline Baggage Allowances](airline-baggage-allowances.md)
 * [Routes](routes.md)
 * [Real Transports](real-transports/README.md)
-  * [General Settings](real-transports/general-settings/README.md)
-    * [Create New Real Transport](real-transports/general-settings/create-new-real-transport.md)
-    * [Dynamic transport baggage](real-transports/general-settings/dynamic-transport-baggage.md)
-    * [Setup for Transport Dynamic Packaging (GDS)](real-transports/general-settings/setup-for-transport-dynamic-packaging-gds.md)
+  * [Create New Real Transport](real-transports/create-new-real-transport.md)
   * [Departures](real-transports/departures/README.md)
     * [Add Base Cost on Real Transports](real-transports/departures/add-base-cost-on-real-transports.md)
     * [Add LAND-Days to Real Transports (Offset Handling)](real-transports/departures/add-land-days-to-real-transports-offset-handling.md)

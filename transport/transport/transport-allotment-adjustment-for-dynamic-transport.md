@@ -154,4 +154,4 @@ Yes. Each triggered limit adds the cost of **one hotel night**.
 ### Related pages
 
 * [Transport Definition](transport-definition.md)
-* [Setup for Transport Dynamic Packaging (GDS)](../../real-transports/general-settings/setup-for-transport-dynamic-packaging-gds.md)
+* [Setup for Transport Dynamic Packaging (GDS)](../../gds-queue-place/setup-for-transport-dynamic-packaging-gds.md)

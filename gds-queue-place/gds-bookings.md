@@ -33,7 +33,7 @@ Use GDS bookings to manage scheduled flights in Tourpaq. Keep reservations and t
 Related setup pages:
 
 * [System Setup – GDS Data](../setup/system-setup/system-setup-gds-data.md)
-* [Setup for Transport Dynamic Packaging (GDS)](../real-transports/general-settings/setup-for-transport-dynamic-packaging-gds.md)
+* [Setup for Transport Dynamic Packaging (GDS)](setup-for-transport-dynamic-packaging-gds.md)
 * [How to set GDS](../brands/how-to-set-gds.md)
 
 ### Status lifecycle (typical)
@@ -156,7 +156,7 @@ Related setup pages:
 Other sections that should be in booking page:
 
 * [System Setup – GDS Data](../setup/system-setup/system-setup-gds-data.md)
-* [Setup for Transport Dynamic Packaging (GDS)](../real-transports/general-settings/setup-for-transport-dynamic-packaging-gds.md)
+* [Setup for Transport Dynamic Packaging (GDS)](setup-for-transport-dynamic-packaging-gds.md)
 * [How to set GDS](../brands/how-to-set-gds.md)
 
 In this section, information regarding payments rates and due dates will be displayed:
