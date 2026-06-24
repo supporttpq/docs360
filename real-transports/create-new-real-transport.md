@@ -6,11 +6,11 @@ The **New Real Transport** feature is used to create and manage transport entiti
 
 This configuration allows administrators to define transport routes, assign suppliers, configure automatic seat allocation, and control how the transport is displayed and reported throughout the platform.
 
-<figure><img src="../../.gitbook/assets/rt new.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/rt new.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-### Purpose
+## Purpose
 
 The Real Transport configuration enables you to:
 
