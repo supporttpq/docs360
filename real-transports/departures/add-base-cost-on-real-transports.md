@@ -87,17 +87,3 @@ This ensures:
 
 * Commercial pricing stability
 * Operational cost accuracy
-
-### FAQ
-
-**Does Base Cost affect bookings?**\
-No. Bookings always use the actual seat cost (including load factor).
-
-**Does Base Cost change Profit Prices (PP/PD)?**\
-No. Profit Prices keep using the Actual Cost including Load Factor.
-
-**Can I set Base Cost for only one leg (outbound or return)?**\
-Yes. Each leg is evaluated independently in the Price List calculation.
-
-**What happens if Base Cost is left empty?**\
-The system uses the normal transport cost calculation logic.

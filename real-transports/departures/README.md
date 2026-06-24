@@ -156,35 +156,3 @@ Useful for:
       * **Class** – Travel class, if used.
       * **Departure time UTC** icon – Shows the UTC times and flight time.
 3. Click **Save** to store the departure.
-
-### FAQ
-
-#### What is the difference between “Send Flight Change” and “Queue Flight Change”?
-
-**Send Flight Change** sends the update right away.
-
-**Queue Flight Change** saves the update and sends it later.
-
-#### What does “Stop Sale” do?
-
-It blocks the departure, is no longer available for sale
-
-It does not cancel existing bookings.
-
-#### How do I update many departures at once?
-
-Select the rows you want to change.
-
-Then use **Change Value** to apply one change to all selected rows.
-
-#### Why can’t I edit some fields?
-
-Some fields may be calculated or controlled by other settings.
-
-If a field is locked, edit the related setup instead.
-
-#### What does “Add days” mean?
-
-It shifts the arrival date forward by the number of days you enter.
-
-Use it for overnight flights where arrival is the next day.

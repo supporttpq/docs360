@@ -1,10 +1,10 @@
 # Documents
 
-#### **Overview** <a href="#overview" id="overview"></a>
+## **Overview** <a href="#overview" id="overview"></a>
 
 The **Documents** section allows users to attach and manage additional documents related to a route configuration (for example, _Billund – Malta_). This feature ensures that important files, references, or supporting information are stored and can be easily accessed within the system.
 
-#### **Purpose** <a href="#purpose" id="purpose"></a>
+## **Purpose** <a href="#purpose" id="purpose"></a>
 
 The purpose of this functionality is to:
 
@@ -14,7 +14,7 @@ The purpose of this functionality is to:
 
 <figure><img src="../.gitbook/assets/RT Documents.png" alt=""><figcaption></figcaption></figure>
 
-#### **Preconditions** <a href="#preconditions" id="preconditions"></a>
+## **Preconditions** <a href="#preconditions" id="preconditions"></a>
 
 Before creating a new document, ensure that:
 
@@ -22,7 +22,7 @@ Before creating a new document, ensure that:
 2. You have the necessary files prepared for upload.
 3. You have the required user permissions to create and save documents in the system.
 
-#### **Instructions** <a href="#instructions" id="instructions"></a>
+## **Instructions** <a href="#instructions" id="instructions"></a>
 
 **Step 1: Access the Documents Tab**
 

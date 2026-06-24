@@ -132,31 +132,18 @@ In the following example,, the offset is required in both directions (outbound a
 Booking details:
 
 * Number of passengers: 2 adults
-* Departure: CPH (Kastrup Lufthavn)&#x20;
+* Departure: CPH (Kastrup Lufthavn)
 * Arrival: CHQ (Chania Lufthavn)
 * Departure date: 08.05.2026
 * Arrival date: 15.05.2026
-*   Offset Departure: -1&#x20;
+*   Offset Departure: -1
 
     <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-
-*   Ofsset Arrival: +1&#x20;
+*   Ofsset Arrival: +1
 
     <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-
-* Results:&#x20;
+* Results:
   * Early arrival -1 day (07.05.2026 - extra night requierd)
   * Late departure +1 day (16.05.2026 - extra night requierd)
 
 <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-
-
-***
-
-### Summary
-
-The OFFSET field adds precise control over how transport timing impacts hotel stays.\
-It ensures consistency between flight schedules and accommodation logic, reducing manual corrections and improving booking accuracy.
