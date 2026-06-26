@@ -78,6 +78,7 @@
   * [GDS Bookings](gds-queue-place/gds-bookings.md)
   * [Submit a GDS Booking](gds-queue-place/submit-a-gds-booking/README.md)
     * [PNR Disconnect](gds-queue-place/submit-a-gds-booking/pnr-disconnect.md)
+    * [Show flight info from Amadeus when Assign/Load PNR is used](gds-queue-place/submit-a-gds-booking/show-flight-info-from-amadeus-when-assign-load-pnr-is-used.md)
     * [Automatic ticket issue](gds-queue-place/submit-a-gds-booking/automatic-ticket-issue.md)
   * [GDS One way flight bookings](gds-queue-place/gds-one-way-flight-bookings.md)
   * [Booking State Color – GDS Bookings](gds-queue-place/booking-state-color-gds-bookings.md)
