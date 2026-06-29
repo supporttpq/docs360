@@ -158,8 +158,6 @@ Review ticket cost prices, airlines, and passenger details.
 * Use the **filters** to refine searches for specific time frames, sellers, or bookings.
 * Ensure **cost prices** match expected payments to avoid discrepancies.
 
-### Refund payments
-
 ## Refund Payments
 
 ### Overview
