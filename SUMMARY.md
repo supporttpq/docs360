@@ -129,7 +129,7 @@
   * [SkjernBank File Import Format](finance/payment-file-import/skjernbank-file-import-format.md)
   * [Arbejdernes Bank Payment Integration (Danske & Syd Bank)](finance/payment-file-import/arbejdernes-bank-payment-integration-danske-and-syd-bank.md)
 * [Refund File Import](finance/refund-file-import.md)
-* [Method of Payment](finance/method-of-payment.md)
+* [Payment Method](finance/method-of-payment.md)
 
 ***
 

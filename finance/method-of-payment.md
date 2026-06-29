@@ -19,9 +19,11 @@ layout:
     visible: true
   tags:
     visible: true
+  actions:
+    visible: true
 ---
 
-# Method of Payment
+# Payment Method
 
 ### Overview
 
@@ -157,9 +159,9 @@ Before creating a new payment method, ensure:
 * You are aware of any **system integrations** that may affect the method (e.g., DIBS, bank import, Dankort).
 * The payment method is **relevant to the company** you are currently working under in the system.
 
-![Create a new payment method form](<../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
-
 _Create a payment method with a payment code, debit/credit type, and flags for online payments and imports._
+
+<figure><img src="../.gitbook/assets/paym method.png" alt=""><figcaption></figcaption></figure>
 
 ### Instructions: Create a new payment method
 
@@ -194,6 +196,27 @@ _Create a payment method with a payment code, debit/credit type, and flags for o
 | **Agent machine payment**                 | Allow guides to register payments using a payment terminal (POS).                                                                          |
 | **Booking gift card payment**             | Allow the gift card to be used for an agency other than the one it was created for (used when **All brands** is enabled on the gift card). |
 | **Booking gift card own agency payments** | Allow the gift card to be used only for your own agency payments (used when **All brands** is enabled on the gift card).                   |
+
+A new field, **Refund Method**, has been added to Debit/Credit payment method configuration.
+
+The Refund Method defines the default payment method that will automatically be selected when processing refunds in **Balance Administration**.
+
+#### Availability
+
+The field is only displayed when:
+
+* The Payment Method is configured as **Credit**.
+
+The available refund methods depend on whether the payment method is configured as **Guide Payment**.
+
+| Payment Method         | Available Refund Methods                          |
+| ---------------------- | ------------------------------------------------- |
+| Guide Payment enabled  | Debit payment methods with Guide Payment enabled  |
+| Guide Payment disabled | Debit payment methods with Guide Payment disabled |
+
+An information tooltip explains the purpose of the field:
+
+> Select the default payment method for refunds. This method will be used in Balance Administration.
 
 #### Checkbox screenshots
 

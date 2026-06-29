@@ -19,6 +19,8 @@ layout:
     visible: true
   tags:
     visible: true
+  actions:
+    visible: true
 ---
 
 # Balance Administration
@@ -158,87 +160,202 @@ Review ticket cost prices, airlines, and passenger details.
 
 ### Refund payments
 
-The refund process allows users to return payments to customers when there is a negative balance in the system.
+## Refund Payments
 
-<figure><img src=".gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Refund payments list"><figcaption><p>Refund payments: start refunds for bookings marked with Release payment.</p></figcaption></figure>
+### Overview
 
-1. (Optional) Filter by **Seller**.
-2. (Optional) Enable **Show release payment only**.
-3. Review bookings with a negative balance.
-4. Click **Refund** in the **Account** column.
-5. Confirm the refund.
+The **Refund Payments** feature provides a centralized workspace for managing customer refunds within **Balance Administration**. It enables finance users to identify refundable payments, review their payment details, and process refunds without leaving the page.
 
-After the refund, verify the booking balance and refund status.
+The feature displays two categories of refundable transactions:
 
-**Key fields explained:**
+* **Booking Refunds**, for payments made directly against a booking.
+* **Extra Order Refunds**, for payments related to Extra Orders purchased separately from the booking.
 
-* **Booking No.:** the booking number for the transaction.
-* **Seller:** The party responsible for the booking.
-* **Creation Date:** Date the transaction was recorded.
-* **Customer:** Name of the customer requesting the refund.
-* **Booking Total & Paid Amount:** Original transaction value.
-* **Balance:** Negative amount indicating a refund is needed.
-* **Released Payment & Financed:** Indicators for processed payments.
-* **Comments:** Additional notes related to the refund.
-* **Account:** The action button to trigger a refund.
-
-**Additional actions:**
-
-* Use the **Print** button to generate reports of pending refunds.
-* Check financing and released payments before issuing refunds.
+Only payments that are eligible for refund are displayed. This provides finance users with a clear overview of outstanding refunds while keeping booking payments and Extra Order payments separated.
 
 ***
 
-### FAQ
+### Configuration
 
-#### 1. What is Balance Administration used for?
+The Refund Payments feature does not require dedicated configuration.
 
-Balance Administration helps Finance users find and handle common payment issues, such as:
+The information displayed is automatically generated from:
 
-* Payments that are not linked to a booking (**Unregistered payments**)
-* Bookings with overpayment that may require money to be returned (**Negative balances**)
-* Bookings that are still not fully paid (**Unpaid bookings**)
-* Special payments and costs related to GDS bookings (**GDS payments**)
+* Registered customer payments.
+* Booking balances.
+* Extra Order payments.
+* Payment release status.
+* Financing status.
+* Seller, branch, account, and brand information.
 
-#### 2. What are “Unregistered payments”?
+A payment becomes available for refund when the customer has paid more than the outstanding balance, resulting in a refundable amount.
 
-These are payments that exist in the system but are **not linked to a booking number**. They usually appear when the bank file/payment reference did not contain the correct booking reference.
+***
 
-Once you assign the payment to the correct booking, it will no longer appear as unregistered and should instead be visible in [Payment Registration](finance/payment-registration.md).
+### Access
 
-#### 3. Why do I see a booking under “Negative balances”?
+Navigate to:
 
-A booking appears here when the customer has paid **more than the booking total**, so the booking has a negative balance (overpayment).
+**Balance Administration → Refund Payments**
 
-Whether money should be returned is typically controlled by the **Release payment** setting on the booking.
+<figure><img src=".gitbook/assets/refound.png" alt=""><figcaption></figcaption></figure>
 
-#### 4. What does “Show release payment only” mean?
+***
 
-This filter shows only bookings that have been **approved/flagged** for refund handling (Release payment enabled), so you can focus on bookings where a refund action is expected.
+### How the Feature Works
 
-#### 5. What should I check before issuing a refund?
+The refund workflow is now identical for Booking Payments and Extra Orders.
 
-Before you refund:
+1. Open **Finance → Balance Administration → Refund Payments**.
+2. Locate the booking or Extra Order requiring a refund.
+3. Click **Refund**.
+4. Review the payment information.
+5. Confirm or change the automatically selected Refund Method.
+6. Enter an optional Refund Comment.
+7. Click **Refund** in the page toolbar.
 
-* Confirm the booking really is overpaid (check **Paid amount**, **Booking total**, and **Balance**).
-* Confirm the booking has been marked for refund (for example **Release payment** enabled, depending on your internal process).
-* Add/confirm internal notes in **Comments** if your workflow requires it.
+If the payment was processed through a supported payment provider, Tourpaq executes the refund directly with the provider while simultaneously registering the refund transaction in Tourpaq.
 
-#### 6. Why is a payment in “Unpaid bookings” if the customer says they paid?
+***
 
-Common reasons include:
+## Refund Payment Method
 
-* The payment was received but registered with the wrong booking reference (it may be in **Unregistered payments**).
-* The payment exists but is outside the filters/due dates you are using.
-* The booking is only **partially paid**, so it still shows as unpaid.
+The **Refund Payment Method** section displays refundable booking payments.
 
-#### 7. What are “GDS payments” in this module?
+#### Available Filters
 
-**GDS payments** help you track costs and payment information for bookings made through a Global Distribution System (GDS), including airline details, PNR codes, and ticket cost prices.
+| Filter                        | Description                                                           |
+| ----------------------------- | --------------------------------------------------------------------- |
+| **Seller**                    | Displays refundable payments for the selected seller.                 |
+| **Show release payment only** | Displays only payments that have been released for refund processing. |
 
-Use it when you need to reconcile ticket costs, confirm booking details, or add internal notes for follow-up.
+#### Information Displayed
 
-#### 8. Where should I look to see the payment after I fix or register it?
+<table data-search="false"><thead><tr><th>Column</th><th>Description</th></tr></thead><tbody><tr><td>Booking No</td><td>Booking number.</td></tr><tr><td>Seller</td><td>Seller responsible for the booking.</td></tr><tr><td>Creation Date</td><td>Booking creation date.</td></tr><tr><td>Customer</td><td>Customer name.</td></tr><tr><td>Booking Total</td><td>Total booking value.</td></tr><tr><td>Paid Amount</td><td>Total amount paid by the customer.</td></tr><tr><td>Balance</td><td>Refundable balance. Negative values indicate an amount that can be refunded.</td></tr><tr><td>Released Payment</td><td>Indicates whether the payment has been released.</td></tr><tr><td>Financed</td><td>Indicates whether the payment is financed.</td></tr><tr><td>Comments</td><td><p>The comment is associated with the refund transaction and is displayed in the <strong>Guide Payment Comments</strong> section of the Payment Registration window.</p><p>This comment is independent of the existing <strong>Payment Comments</strong>, which remain unchanged.</p></td></tr><tr><td>Branch</td><td>Branch number.</td></tr><tr><td>Account</td><td>Customer account number.</td></tr><tr><td>Refund</td><td>Opens the refund workflow.</td></tr></tbody></table>
 
-* For booking payments and imports: use [Payment Registration](finance/payment-registration.md).
-* For refunds imported from Business Central: use [Refund File Import](finance/refund-file-import.md) (and then verify in Payment Registration, depending on your setup).
+When a refund is initiated:
+
+* If the original payment method has a configured **Refund Method**, it is selected automatically.
+* Otherwise, the payment method remains unselected and displays **-- Select --**.
+
+A refund cannot be completed until a refund payment method has been selected.
+
+The Booking Refund table has been updated with several usability enhancements:
+
+* Refunds are sorted by **Creation Date**, newest first.
+* **Show release payment only** is enabled by default.
+*   Payment methods are displayed alphabetically as `<CODE> - <NAME>`.  &#x20;
+
+    <figure><img src=".gitbook/assets/29.06.2026_15.56.48_REC.png" alt=""><figcaption></figcaption></figure>
+*   Tooltips display the original transaction amount while editing a refund.&#x20;
+
+    <figure><img src=".gitbook/assets/29.06.2026_15.59.20_REC.png" alt=""><figcaption></figcaption></figure>
+* Currency is shown for all monetary values, including:
+  * Booking Total
+  * Paid Amount
+  * Balance
+  * Debit
+  * Credit
+
+***
+
+## Extra Order Refunds
+
+The **Extra Order Refunds** section displays refundable payments originating from Extra Orders.
+
+Each refundable Extra Order is presented independently from the booking payments.
+
+When a refund is initiated, the user can:
+
+* Review the payment information.
+* Select the refund payment method.
+* Enter payment comments.
+* Process the refund directly from the expanded row.
+
+#### Information Displayed
+
+<table data-search="false"><thead><tr><th>Column</th><th>Description</th></tr></thead><tbody><tr><td>Extra Order No</td><td>Internal Extra Order identifier.</td></tr><tr><td>Payment Order ID</td><td>Payment provider reference.</td></tr><tr><td>Transaction Code</td><td>Payment transaction identifier.</td></tr><tr><td>Booking No</td><td>Related booking number.</td></tr><tr><td>Creation Date</td><td>Extra Order creation date.</td></tr><tr><td>Customer</td><td>Customer name.</td></tr><tr><td>Booking Total</td><td>Total order value.</td></tr><tr><td>Paid Amount</td><td>Amount paid.</td></tr><tr><td>Balance</td><td>Refundable amount.</td></tr><tr><td>Released Payment</td><td>Indicates whether the payment has been released.</td></tr><tr><td>Financed</td><td>Indicates whether the payment is financed.</td></tr><tr><td>Comments</td><td>Internal comments.</td></tr><tr><td>Brand</td><td>Booking brand.</td></tr><tr><td>Refund</td><td>Opens the refund workflow.</td></tr></tbody></table>
+
+***
+
+## Processing a Refund
+
+Selecting **Refund** expands the selected row and displays the payment information required to process the refund.
+
+The refund is configured directly within the page before it is submitted.
+
+### Booking Refunds
+
+For booking payments, the expanded section displays the original payment transaction together with the refund configuration.
+
+<figure><img src=".gitbook/assets/refund payment method.png" alt=""><figcaption></figcaption></figure>
+
+The following information is available:
+
+<table data-search="false"><thead><tr><th>Field</th><th>Description</th></tr></thead><tbody><tr><td>ID</td><td>Internal payment transaction identifier.</td></tr><tr><td>Transaction</td><td>Original payment transaction.</td></tr><tr><td>Payment Comments</td><td>Existing comments for the payment.</td></tr><tr><td>Method</td><td>Original payment method.</td></tr><tr><td>Debit</td><td>Original debit amount.</td></tr><tr><td>Credit</td><td>Credit amount.</td></tr><tr><td>Refund Payment Method</td><td>Select the payment method that will be used for the refund.</td></tr><tr><td>Refund Comment</td><td>Optional internal comment for the refund.</td></tr><tr><td>Refund (info point)</td><td>Selected lines will be refunded the amount specified, using the selected method. The refund is executed when the "Refund" button is pressed.</td></tr></tbody></table>
+
+***
+
+### Extra Order Refunds
+
+For Extra Order refunds, expanding the row displays the payment order that will be refunded.
+
+<figure><img src=".gitbook/assets/refund extra order.png" alt=""><figcaption></figcaption></figure>
+
+The following information is available:
+
+| Field            | Description                                          |
+| ---------------- | ---------------------------------------------------- |
+| Order ID         | Internal payment order identifier.                   |
+| Payment Method   | Payment method used for the refund.                  |
+| Debit            | Debit amount.                                        |
+| Credit           | Refund amount.                                       |
+| Payment Comments | Optional comment stored with the refund transaction. |
+
+***
+
+### Payment Provider Refunds
+
+Extra Order refunds now support automatic refunds through supported payment providers.
+
+Currently supported:
+
+* Altapay
+
+If the payment was made using a supported credit card payment method, Tourpaq sends the refund directly to the payment provider, matching the existing behaviour for booking refunds.
+
+### Completing the Refund
+
+To process a refund:
+
+1. Open **Balance Administration → Refund Payments**.
+2. Locate the booking or Extra Order that requires a refund.
+3. Click **Refund**.
+4. Review the payment details.
+5. Select the appropriate **Refund Payment Method**.
+6. Optionally enter a refund comment.
+7. Mark the payment for refund, if applicable.
+8. Click **Refund** in the page toolbar to complete the refund.
+
+The transaction is then processed using the configured payment provider.
+
+***
+
+### How the Feature Appears in Tourpaq
+
+The **Refund Payments** page provides a complete overview of refundable customer payments in a single workspace.
+
+The interface consists of two independent grids:
+
+* **Refund Payment Method**, listing refundable booking payments.
+* **Extra Order Refunds**, listing refundable Extra Order payments.
+
+Each grid supports:
+
+* Filtering (booking refunds by seller)
+* Pagination
+* Adjustable page size
+* Inline expansion of refund details
+* Direct refund processing
+
+After clicking **Refund**, the selected row expands to display the original payment information together with the fields required to configure the refund. This allows finance users to review the transaction, select the refund payment method, add optional comments, and complete the refund without navigating away from the page.
