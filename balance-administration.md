@@ -324,6 +324,8 @@ Currently supported:
 
 If the payment was made using a supported credit card payment method, Tourpaq sends the refund directly to the payment provider, matching the existing behaviour for booking refunds.
 
+<figure><img src=".gitbook/assets/29.06.2026_16.16.22_REC.png" alt=""><figcaption></figcaption></figure>
+
 ### Completing the Refund
 
 To process a refund:
