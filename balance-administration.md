@@ -304,13 +304,13 @@ For Extra Order refunds, expanding the row displays the payment order that will 
 
 The following information is available:
 
-| Field            | Description                                          |
-| ---------------- | ---------------------------------------------------- |
-| Order ID         | Internal payment order identifier.                   |
-| Payment Method   | Payment method used for the refund.                  |
-| Debit            | Debit amount.                                        |
-| Credit           | Refund amount.                                       |
-| Payment Comments | Optional comment stored with the refund transaction. |
+| Field            | Description                                                                                                                                                                             |
+| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Order ID         | Internal payment order identifier.                                                                                                                                                      |
+| Payment Method   | Payment method used for the refund.                                                                                                                                                     |
+| Debit            | Debit amount.                                                                                                                                                                           |
+| Credit           | Refund amount.                                                                                                                                                                          |
+| Payment Comments | Optional comment stored with the refund transaction. The comments are shown in the Payment Registration menu under the Guide Payment Comments column. ![](.gitbook/assets/comments.png) |
 
 ***
 
