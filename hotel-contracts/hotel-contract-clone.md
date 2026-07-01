@@ -1,98 +1,151 @@
 # Hotel Contract Clone
 
-The **Clone Hotel Contract** functionality allows you to create a copy of an existing hotel contract for a new season.
+## Overview
 
-When cloning, the system can automatically apply a percentage adjustment to the room cost values.
+The **Clone Hotel Contract** feature allows you to create a copy of an existing hotel contract, making it easier to prepare contracts for a new season without recreating all configuration from scratch.
+
+When cloning a contract, Tourpaq automatically creates a new contract based on the original and adjusts all date-based information according to the selected start date.
+
+### Before you begin
+
+Before cloning a hotel contract:
+
+* Ensure the source hotel contract contains all required configuration.
+* Decide the **new contract start date**. Tourpaq uses this date to automatically calculate all other contract dates.
+
+> The difference between the original contract start date and the new start date is applied consistently throughout the cloned contract.
 
 ### Open Clone Hotel Contract
 
-1. Open the Hotel Contract.
-2. Click **Clone**.
-3. The **Clone Hotel Contract** dialog opens.
+* Open **Hotel Contracts**.
+* Select the hotel contract you want to clone.
+* Click **Clone**.
+* Complete the **Clone Hotel Contract** dialog.
+* Click **Clone** to create the new contract.
 
-<figure><img src="../.gitbook/assets/14.05.2026_11.32.14_REC.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/clone contract.png" alt=""><figcaption></figcaption></figure>
 
-### Fields
+### Clone Hotel Contract dialog
 
-| Field                        | Description                                                                                              |
-| ---------------------------- | -------------------------------------------------------------------------------------------------------- |
-| **For season**               | Defines the target season for the new cloned contract.                                                   |
-| **Discount/Supplement Rate** | Applies a percentage increase or decrease to the room cost during cloning. Decimal values are supported. |
+1. **Select new start date** - Choose the start date for the new contract.
 
-***
+Tourpaq calculates all other dates automatically by applying the difference between:
 
-### Discount/Supplement Rate
+* the original contract start date
+* the selected new start date
 
-The **Discount/Supplement Rate** field supports up to 2 decimals.
-
-Examples:
-
-| Value   | Result                        |
-| ------- | ----------------------------- |
-| `10`    | Increases room cost by 10%    |
-| `25.35` | Increases room cost by 25.35% |
-
-> The percentage adjustment is only applied to the room cost values.
-
-#### Impacts
-
-The Discount/Supplement Rate impacts:
-
-* Room costs
-
-#### Does not impact
-
-The Discount/Supplement Rate does **not** impact:
-
-* Release rules
-* Deposit rules
-* Facilities
-* Actions
-* Activity Log
-* Board definitions
-* Weekdaysettings
-* Min/max days
-* Cancellation rules
-* Other non-room-cost configuration values
+2. **Increase room cost -** Enter the percentage by which room costs should be increased. The field clearly displays the **%** symbol to indicate that the value is percentage-based.
 
 ***
 
-### For season
+## How the feature manifests in the system
 
-The **For season** field defines which season the cloned contract belongs to.
+After the contract is cloned, Tourpaq automatically creates a new contract with the following changes.
 
-When cloning:
+### Contract name
 
-* A new contract is created for the selected season
-* Existing contract structure and configuration are copied
-* Room costs can optionally be adjusted using the Discount/Supplement Rate
+The new contract uses the original contract name with **" - copy"** appended.
 
-#### Impacts
+Example:
 
-The selected season impacts:
+```
+Winter 2026
+```
 
-* The season assignment of the new contract
-* Availability of the contract within that season
-* Seasonal separation between contracts
+becomes
 
-#### Does not impact
+```
+Winter 2026 - copy
+```
 
-Changing the season during cloning does **not**:
+You can rename the contract afterwards to follow your company's naming convention.
 
-* Modify the original contract
-* Change historical contracts
-* Automatically change rules or configuration
-* Modify non-pricing settings
-* Affect bookings already connected to the original contract
+## Date adjustments
 
-***
+When a new start date is selected, Tourpaq automatically updates all related dates by applying the difference between the original and new contract start dates.
 
-### Example
+The following elements are updated automatically.
 
-If a 2026 contract is cloned into season **2027** with a **25.75** Discount/Supplement Rate:
+### Hotel Contract
 
-* A new 2027 contract is created
-*   Room costs are increased by 25.75%&#x20;
+* Date Start
+* Date End
 
-    <figure><img src="../.gitbook/assets/14.05.2026_12.01.31_REC.png" alt=""><figcaption></figcaption></figure>
-* All other copied configurations remain unchanged unless manually edited afterward
+<figure><img src="../.gitbook/assets/01.07.2026_16.31.54_REC.png" alt=""><figcaption></figcaption></figure>
+
+### Periods
+
+All period dates are shifted accordingly.
+
+<figure><img src="../.gitbook/assets/01.07.2026_16.33.30_REC.png" alt=""><figcaption></figcaption></figure>
+
+### Gala Dinner
+
+* Start Date
+* End Date
+
+### Early Booking Discount
+
+* Stay Start
+* Stay End
+* Booking Start
+* Booking End
+* Deposit Date
+
+### Stay and Pay
+
+* Stay Start
+* Stay End
+* Booking Start
+* Booking End
+
+### Payment Plan
+
+* Deposit Date
+* Payback Date
+
+<figure><img src="../.gitbook/assets/01.07.2026_16.36.46_REC.png" alt=""><figcaption></figcaption></figure>
+
+Every date is calculated as:
+
+> **Original date + (New contract start date - Original contract start date)**
+
+No other contract configuration is changed.
+
+## Example
+
+An existing hotel contract has the following information:
+
+| Field          | Value           |
+| -------------- | --------------- |
+| Contract Start | 1 November 2025 |
+| Contract End   | 30 April 2026   |
+
+The contract is cloned using:
+
+| Field                 | Value           |
+| --------------------- | --------------- |
+| Select new start date | 8 November 2025 |
+| Increase room cost    | 5%              |
+
+The difference between the two start dates is **7 days**.
+
+Tourpaq automatically updates all supported dates by **7 days**.
+
+For example:
+
+| Original                   | New                      |
+| -------------------------- | ------------------------ |
+| Contract Start             | 1 Nov 2025 → 8 Nov 2025  |
+| Contract End               | 30 Apr 2026 → 7 May 2026 |
+| Gala Dinner                | 24 Dec → 31 Dec          |
+| Early Booking Deposit Date | 1 Sep → 8 Sep            |
+| Payment Plan Deposit Date  | 15 Oct → 22 Oct          |
+
+The cloned contract is created with the name:
+
+```
+Winter 2026 - copy
+```
+
+and all room costs are increased by **5%**.
