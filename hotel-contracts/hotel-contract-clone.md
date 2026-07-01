@@ -149,3 +149,5 @@ Winter 2026 - copy
 ```
 
 and all room costs are increased by **5%**.
+
+<figure><img src="../.gitbook/assets/01.07.2026_16.49.37_REC.png" alt=""><figcaption></figcaption></figure>
