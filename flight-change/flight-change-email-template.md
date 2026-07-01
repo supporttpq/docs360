@@ -8,6 +8,21 @@ These templates ensure that passengers receive clear and accurate communication 
 
 ***
 
+### Preconditions
+
+Before using the **Flight Change** feature, the following prerequisites must be fulfilled:
+
+1. **Configure a default email template**
+   * A default email named **Flight Change email** must be configured for every agency where the Flight Change feature will be used.
+   * This email is mandatory and is used as the default template when sending flight change notifications.
+2. **Activate the required email templates**
+   * The **Flight Change email** template must be **Active**.
+   * All email templates of the **Flight Change** type that are intended to be used must also be **Active**.
+
+If the default email is not configured, or if the required email templates are inactive, flight change emails cannot be generated or sent correctly.
+
+***
+
 #### **Template Types**
 
 To support the different types of flight changes, the following **dedicated templates** are required:
