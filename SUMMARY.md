@@ -385,6 +385,7 @@
     * [Ticket V3 - Structure](brands/general-settings/ticket-v3-structure/README.md)
       * [Ticket V3 - Ticket Customization](brands/general-settings/ticket-v3-structure/ticket-v3-ticket-customization.md)
       * [Ticket V3 - Dynamic flights](brands/general-settings/ticket-v3-structure/ticket-v3-dynamic-flights.md)
+      * [Hide Fictive Rooms on Ticket v3](brands/general-settings/ticket-v3-structure/hide-fictive-rooms-on-ticket-v3.md)
   * [How to set Payment settings](brands/how-to-set-payment-settings.md)
   * [How to set GDS](brands/how-to-set-gds.md)
   * [How to set SMTP Settings](brands/how-to-set-smtp-settings.md)
