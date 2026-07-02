@@ -291,6 +291,20 @@ Distances help customers understand accessibility and location convenience.
 Some hotels may not be suitable for guests with reduced mobility.
 {% endhint %}
 
+{% hint style="info" %}
+When **Is Fictive = true** for the Base Room Type used by a booking, Ticket v3 automatically hides all accommodation-related information for that hotel.
+
+The following changes are applied:
+
+* The hotel is removed from the **Accommodation (Indkvartering)** section.
+* The room is removed from the **Included in the Base Price (Grundprisen inkluderer)** section.
+* The entire hotel page is omitted, including:
+  * Hotel images
+  * Hotel description
+  * Facilities
+  * Any other hotel-related content
+{% endhint %}
+
 ***
 
 ## Room Description
