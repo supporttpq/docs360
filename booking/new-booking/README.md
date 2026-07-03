@@ -16,6 +16,8 @@ layout:
     visible: true
   tags:
     visible: true
+  actions:
+    visible: true
 ---
 
 # New Booking
@@ -27,7 +29,7 @@ The **New Booking** section covers everything needed to build a reservation manu
 This page is the section index. It gives you an orientation of the full New Booking workflow and maps out every sub-page so you can jump directly to the area you need.
 
 {% hint style="info" %}
-**Looking for an existing booking?** Go to [All Bookings](https://manual.tourpaq.com/booking/all-bookings) to search, filter, and open bookings that have already been created.&#x20;
+**Looking for an existing booking?** Go to [All Bookings](https://manual.tourpaq.com/booking/all-bookings) to search, filter, and open bookings that have already been created.
 {% endhint %}
 
 ***
@@ -189,32 +191,6 @@ From the search results:
 | [Child Price](https://manual.tourpaq.com/booking/new-booking/child-price)                                                           | How child pricing rules are applied within a booking                     |
 | [A la Carte](https://manual.tourpaq.com/booking/new-booking/a-la-carte)                                                             | Fully custom package with individually priced components                 |
 | [Remove Pax on Outbound or Homebound Only](https://manual.tourpaq.com/booking/new-booking/remove-pax-on-outbound-or-homebound-only) | Remove a passenger from only one leg of a two-way booking                |
-
-***
-
-### FAQ
-
-**Q: When should I use New Booking instead of Web Booking?** Use **New Booking** when an agent or internal user is creating or managing a reservation manually — for example, bookings received by phone, email, or through a partner agency, or any case requiring special handling. Use **Web Booking** when the customer is booking directly through the online booking engine.
-
-***
-
-**Q: Why do I see no available departures or hotels when I search?** The most common reasons are: the selected **Brand** has no valid Price List for the chosen period; the departure dates fall outside the configured travel lengths; or the gateway, destination, or passenger count filters are too restrictive. Start by widening the search, then check the [Price List](https://manual.tourpaq.com/price-list/pricelist) configuration if nothing appears.
-
-***
-
-**Q: The price is showing as 0 or looks wrong — what should I check?** Open **Economics** to see the full price breakdown and identify which components are missing or zero. Confirm the correct Brand is selected, verify a valid Price List exists for the period, and check whether any discount or supplement rules are affecting the price unexpectedly. See [Economics](https://manual.tourpaq.com/booking/new-booking/economics) for details.
-
-***
-
-**Q: Can I use New Booking to edit an existing booking?** No. New Booking is only for creating new reservations. To edit an existing booking, find it in [All Bookings](https://manual.tourpaq.com/booking/all-bookings) and open it from there. All editing is done within the booking's own sub-pages.
-
-***
-
-**Q: How do I handle a large group booking?** Define the number of passengers and room distribution carefully from the start. Use [Passenger Details](https://manual.tourpaq.com/booking/new-booking/passenger-details) to maintain clear records for each traveller. Use [Economics](https://manual.tourpaq.com/booking/new-booking/economics) to verify group profitability. Consider using [Copy Booking](https://manual.tourpaq.com/booking/new-booking/copy-booking) for similar group configurations.
-
-***
-
-**Q: Where do I add internal notes about a booking?** Use the [Comments](https://manual.tourpaq.com/booking/new-booking/comments) sub-page. Comments are internal only — they are never visible to the customer and do not appear on tickets, vouchers, or confirmation emails.
 
 ***
 
