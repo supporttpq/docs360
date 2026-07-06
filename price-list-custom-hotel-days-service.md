@@ -157,3 +157,124 @@ After the service has run, the rule is active, and the **Price List has been gen
 7. Save the **booking**.
 
 <figure><img src=".gitbook/assets/image (709).png" alt=""><figcaption></figcaption></figure>
+
+## Support Transport Hotel Combined with Custom Hotel Days
+
+### Overview
+
+Tourpaq supports combining Charter flights with Custom Hotel Days by allowing a passenger to stay in both a real hotel and a dedicated Transport Hotel during the same period.
+
+This is achieved by using a fictive room in a hotel configured as a **Transport Hotel**.
+
+Normally, Tourpaq prevents a passenger from being assigned to multiple hotel rooms with overlapping stay periods. With this feature, that validation is skipped when the transport hotel room is configured as fictive.
+
+This makes it possible to connect Charter flights with transport accommodation without affecting the passenger's actual hotel stay.
+
+***
+
+### How it Works
+
+When all of the following conditions are met:
+
+* The hotel is configured as **Transport Hotel**
+* The room is configured as **Fictive**
+* The booking uses **Custom Hotel Days**
+
+Tourpaq allows the passenger to be assigned to both:
+
+* the real hotel room
+* the fictive transport hotel room
+
+even if the stay periods overlap.
+
+The fictive room is used only for transport planning and does not represent an actual accommodation (the fictive hotel/room will not appear on the ticket).
+
+***
+
+### Transport Hotel Configuration
+
+To enable this functionality, configure the hotel as a **Transport Hotel**.
+
+**Hotel configuration**
+
+| Setting                  | Value   |
+| ------------------------ | ------- |
+| Custom Hotel Day Booking | Enabled |
+
+Once enabled, the hotel can be used for transport-related room assignments.
+
+***
+
+### Fictive Room Configuration
+
+Inside the Custom Hotel Day Booking, create or configure a room with the following setting.
+
+**Room configuration**
+
+| Setting    | Value   |
+| ---------- | ------- |
+| Is Fictive | Enabled |
+
+<figure><img src=".gitbook/assets/06.07.2026_13.20.50_REC.png" alt=""><figcaption></figcaption></figure>
+
+A fictive room is intended only for operational purposes and is not treated as a normal accommodation room.
+
+***
+
+### Custom Hotel Days
+
+When creating a booking with **Custom Hotel Days**, the passenger can now have:
+
+* a normal hotel stay
+* a fictive Transport Hotel stay covering the transport period
+
+The overlapping dates are accepted because the Transport Hotel validation is skipped for fictive rooms.
+
+***
+
+### Charter Flight Bookings
+
+This functionality is especially useful for Charter flight bookings.
+
+A passenger can:
+
+1. Be booked into their actual hotel.
+2. Be assigned to a fictive room in a Transport Hotel.
+3. Be connected to Charter transport without modifying the real accommodation.
+
+This simplifies transport planning while keeping the accommodation information unchanged.
+
+***
+
+### Validation Rules
+
+The standard validation that prevents overlapping hotel stays remains unchanged for all normal hotels and rooms.
+
+The validation is skipped only when **all** of the following conditions are true:
+
+| Condition                  | Required |
+| -------------------------- | -------- |
+| Hotel is a Transport Hotel | Yes      |
+| Room is marked as Fictive  | Yes      |
+
+If either condition is not met, the normal validation applies and overlapping hotel stays are not allowed.
+
+***
+
+### Example
+
+A passenger has the following booking:
+
+| Hotel                   | Room                   | Stay              |
+| ----------------------- | ---------------------- | ----------------- |
+| Ocean Beach Resort      | Standard Double        | 10 July - 17 July |
+| Airport Transport Hotel | Fictive Transport Room | 10 July - 11 July |
+
+Because:
+
+* **Airport Transport Hotel** is configured as a Transport Hotel.
+* **Fictive Transport Room** is marked as **Is Fictive**.
+
+Tourpaq allows both room assignments even though the dates overlap.
+
+The passenger remains booked in the real hotel while the fictive room is used only for transport planning.
