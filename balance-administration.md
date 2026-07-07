@@ -166,7 +166,7 @@ The **Refund Payments** feature provides a centralized workspace for managing cu
 
 The feature displays two categories of refundable transactions:
 
-* **Booking Refunds**, for payments made directly against a booking.
+* **Refund Payment Method**, for payments made directly against a booking.
 * **Extra Order Refunds**, for payments related to Extra Orders purchased separately from the booking.
 
 Only payments that are eligible for refund are displayed. This provides finance users with a clear overview of outstanding refunds while keeping booking payments and Extra Order payments separated.
@@ -245,9 +245,10 @@ The Booking Refund table has been updated with several usability enhancements:
 *   Payment methods are displayed alphabetically as `<CODE> - <NAME>`.  &#x20;
 
     <figure><img src=".gitbook/assets/29.06.2026_15.56.48_REC.png" alt=""><figcaption></figcaption></figure>
-*   Tooltips display the original transaction amount while editing a refund.&#x20;
+* Tooltips display the original transaction amount while editing a refund.&#x20;
 
-    <figure><img src=".gitbook/assets/29.06.2026_15.59.20_REC.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/07.07.2026_14.36.50_REC.png" alt=""><figcaption></figcaption></figure>
+
 * Currency is shown for all monetary values, including:
   * Booking Total
   * Paid Amount

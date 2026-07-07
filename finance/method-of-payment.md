@@ -161,12 +161,12 @@ Before creating a new payment method, ensure:
 
 _Create a payment method with a payment code, debit/credit type, and flags for online payments and imports._
 
-<figure><img src="../.gitbook/assets/paym method.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/07.07.2026_14.25.02_REC.png" alt=""><figcaption></figcaption></figure>
 
 ### Instructions: Create a new payment method
 
-1. **Navigate to**: `Admin Panel > Financial Settings > Payment Methods`
-2. **Click** the **"Add New Payment Method"** button.
+1. **Navigate to**: `Admin Panel > Finance > Payment Methods`
+2. **Click** the **"Create"** button.
 3.  **Fill in the following fields:**
 
     | **Field**                      | **Description**                                                                                       |
@@ -197,7 +197,7 @@ _Create a payment method with a payment code, debit/credit type, and flags for o
 | **Booking gift card payment**             | Allow the gift card to be used for an agency other than the one it was created for (used when **All brands** is enabled on the gift card). |
 | **Booking gift card own agency payments** | Allow the gift card to be used only for your own agency payments (used when **All brands** is enabled on the gift card).                   |
 
-A new field, **Refund Method**, has been added to Debit/Credit payment method configuration.
+A new field, **Refund Method**, has been added to Debit payment method configuration.
 
 The Refund Method defines the default payment method that will automatically be selected when processing refunds in **Balance Administration**.
 
@@ -205,7 +205,7 @@ The Refund Method defines the default payment method that will automatically be 
 
 The field is only displayed when:
 
-* The Payment Method is configured as **Credit**.
+* The Payment Method is configured as **Debit**.
 
 The available refund methods depend on whether the payment method is configured as **Guide Payment**.
 
