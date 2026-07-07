@@ -187,7 +187,11 @@ Tourpaq allows the passenger to be assigned to both:
 
 even if the stay periods overlap.
 
-The fictive room is used only for transport planning and does not represent an actual accommodation (the fictive hotel/room will not appear on the ticket).
+The fictive room is used only for transport planning and does not represent an actual accommodation.
+
+{% hint style="info" %}
+The fictive hotel/room will not appear on the ticket.
+{% endhint %}
 
 ***
 
