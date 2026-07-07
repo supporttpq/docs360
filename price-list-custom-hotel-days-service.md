@@ -176,7 +176,7 @@ This makes it possible to connect Charter flights with transport accommodation w
 
 When all of the following conditions are met:
 
-* The hotel is configured as **Transport Hotel**
+* The hotel is configured as **Transport Hotel (Rome code FLY)**
 * The room is configured as **Fictive**
 * The booking uses **Custom Hotel Days**
 
@@ -197,9 +197,9 @@ To enable this functionality, configure the hotel as a **Transport Hotel**.
 
 **Hotel configuration**
 
-| Setting                  | Value   |
-| ------------------------ | ------- |
-| Custom Hotel Day Booking | Enabled |
+| Setting         | Value   |
+| --------------- | ------- |
+| Transport Hotel | Enabled |
 
 Once enabled, the hotel can be used for transport-related room assignments.
 
@@ -278,3 +278,19 @@ Because:
 Tourpaq allows both room assignments even though the dates overlap.
 
 The passenger remains booked in the real hotel while the fictive room is used only for transport planning.
+
+### Creating a Booking Transport Hotel combined with Custom Hotel Day
+
+#### Steps
+
+1. Click **New Booking**.
+2. Select the **number of passengers**.
+3. Select the **customer**.
+4. Select the **transport**
+5. Select the **Transport Hotel** configured for Custom Hotel Day bookings.
+6. Select the **One Way** **hotel**(s)
+7. Click **Take Allotment**.
+8. Save the **passenger information**.
+9. Save the **booking**.
+
+<figure><img src=".gitbook/assets/07.07.2026_14.06.20_REC.png" alt=""><figcaption></figcaption></figure>
