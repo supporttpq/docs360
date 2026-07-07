@@ -52,8 +52,8 @@ A booking contains:
 
 Since the Base Room Type is configured with **Is Fictive = true**, the generated Ticket v3:
 
-* Does not display the hotel in the **Accommodation** section.
-* Does not list the room under **Included in the Base Price**.
+* Does not display the hotel in the **Accommodation** **(Indkvartering)** section.
+* Does not list the room under **Included in the Base Price (Grundprisen inkluderer)**.
 * Does not include the hotel information page.
 
 The customer receives a ticket containing only the relevant travel information, without any placeholder accommodation details.
