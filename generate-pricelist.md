@@ -123,62 +123,6 @@ The row stays red until the service has processed it.
 * Align rule intervals with the correct **fix quota** periods.
 * Keep transport and resort naming consistent for easier searching.
 
-## FAQ
-
-### What does Price List Generator create?
-
-It creates **price lists** (entries/structures).
-
-It does **not** create selling prices inside the price list.
-
-### What do I need to fill in to create a generation rule?
-
-At minimum:
-
-* **Agency**
-* **Arrival**
-* **Resort**
-* **Departure from** / **Departure to**
-
-If you select a **Transport**, you must also select **Fix Quotas**.
-
-### What is a fix quota, and why is it required?
-
-A fix quota defines the **validity period** used when generating price lists for a transport.
-
-Your rule interval must be within the parent fix quota interval.
-
-### Why is a row highlighted in red?
-
-Red rows are **scheduled rules**.
-
-They are queued and waiting for the generator service to run.
-
-### When will a scheduled rule run?
-
-Rules are typically queued when **hotel allotment is generated or extended**.
-
-The row stays red until the service has processed it.
-
-### How do I verify the generator worked?
-
-1. Set the same filters (arrival/resort/transport/date range).
-2. Click **Display**.
-3. Confirm the expected records exist.
-
-### Does generating a price list overwrite existing prices?
-
-The generator creates the **price list entries** for the selected combinations.
-
-Avoid overlapping date ranges to reduce unexpected results.
-
-### I saved a rule, but nothing happens. What should I check?
-
-* The rule is still red (queued) and the service has not run yet.
-* The date range is valid and does not overlap existing rules.
-* The Fix Quota interval contains your rule interval.
-* Required hotel/transport setup and allotments exist.
-
 ## Related pages
 
 * [Price List](price-list/pricelist.md)

@@ -93,33 +93,3 @@ Use `CH1D1` and `CH2D1` to validate that child discount prices:
 
 They are not the same as `CH1P1` / `CH2P1` (P1).
 {% endhint %}
-
-## FAQ
-
-#### What are CH1D1 and CH2D1?
-
-They are the **child discount prices** in the Price List for interval 1 (D1).
-
-CH1 is child 1. CH2 is child 2+.
-
-#### What is the difference between CH1P1 and CH1D1?
-
-`CH1P1` is the child selling price for P1.
-
-`CH1D1` is the child discount price for D1, using discount logic.
-
-#### Why are CH1D1 / CH2D1 blank or 0?
-
-Common causes:
-
-* Child profit margin feature is not enabled for the company.
-* You did not enable the child discount columns in the grid.
-* Missing hotel extra bed cost data for the period.
-* Missing early booking discount setup for the stay dates.
-* Missing transport cost data for the transport/date.
-
-#### Do CH1PA / CH2PA affect CH1D1 / CH2D1?
-
-Yes. Adjustments are included in the discount price calculation inputs.
-
-They can be positive or negative.

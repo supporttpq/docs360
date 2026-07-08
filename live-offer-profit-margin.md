@@ -118,29 +118,3 @@ After creating the new rule:
 * The rule appears in the main **Live Offer Profit Margin** list.
 * The **Price** column updates automatically to reflect the new margin effect.
 * When a Live Offer is generated, the system applies this margin to all matching hotel results (based on the selected filters such as provider, destination, and date).
-
-## FAQ
-
-#### What does Live Offer Profit Margin control?
-
-It controls the **profit margin** applied to **Live Offer hotel prices** returned by external providers.
-
-#### Does this change the provider net price?
-
-No. It adds a margin on top of the net price to create the selling price.
-
-#### Can I set margins per hotel or star rating?
-
-Yes. You can scope a rule by **country**, **destination**, **hotel** (optional), and **star rating** (optional).
-
-#### How do I validate that a rule works?
-
-Use **View Prices** on the rule list to review net price, margin, and total price breakdowns.
-
-#### How do I stop using a margin rule?
-
-Delete the rule, or adjust its **Departure Start/Stop** so it no longer matches your sale period.
-
-#### Who can create or edit Live Offer margins?
-
-Users with access to the **Live Offer Profit Margin** page and permission to create/edit rules.

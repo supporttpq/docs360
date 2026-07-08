@@ -19,6 +19,8 @@ layout:
     visible: true
   tags:
     visible: true
+  actions:
+    visible: true
 ---
 
 # Profit margin rules
@@ -240,24 +242,3 @@ Currently, the system supports both percentage-based and amount-based profit mar
 
 Use the same margin type within a rule to avoid incorrect calculations.
 {% endhint %}
-
-### FAQ
-
-1. **What’s the difference between Profit Margin Rules and editing the Price List manually?**\
-   Profit Margin Rules write profit margins into price lists automatically. Manual edits override the value until a rule writes it again.
-2. **How does Tourpaq handle overlapping rules?**\
-   The most specific match wins. Hotel-specific beats resort-specific, which beats “all resorts” for the destination. A stay-specific rule beats a rule without stay when both match.
-3. **What do PM1–PM4 mean?**\
-   They are four separate profit margin fields on the rule. Tourpaq applies them to the corresponding profit margin fields in the generated price lists.
-4. **Can I set profit margin as a percentage instead of an amount?**\
-   Yes. Enable **Is Percent** to interpret PM1–PM4 as percentages. Disable it to treat them as fixed amounts.
-5. **Can I set negative profit margins?**\
-   Yes, but only if the company feature **Use negative value in profit margin** is enabled. Ask an administrator if you can’t enter negative values.
-6. **How do I enter stay lengths?**\
-   Use a single value (`7`), a range (`6-8`), or a list (`7,14`). The same formats are used in filters and in rule definitions.
-7. **When do Profit Margin Rules update existing price lists?**\
-   When you save a rule, it is scheduled to update matching price lists. The rule scope decides which price lists are affected.
-8. **Why didn’t the profit margin change after I changed costs or added hotels/transports?**\
-   Cost changes and new entities trigger price recalculation, not margin changes. Margins change only when you edit Profit Margin Rules or edit the price list manually.
-9. **How do I see who changed a rule and when?**\
-   Click the **History** (📄) icon on the rule row to see a change log.

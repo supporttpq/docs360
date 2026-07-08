@@ -71,38 +71,3 @@ This confirms that:
 * The **Price List and booking modules** share identical calculation logic.
 * Multiple child passengers can correctly use repeated **CH2P1** pricing when applicable.
 * The displayed booking total remains consistent across all system views, ensuring pricing accuracy for both administrators and agents.
-
-## FAQ
-
-#### Why is CH2P1 used twice for 3 children?
-
-Because `CH1P1` is for the first child.
-
-`CH2P1` is the “child 2+” price and can be applied to additional children.
-
-#### Does this total include discounts (CH1D1/CH2D1)?
-
-The booking total reflects the active pricing logic for the selected setup.
-
-Use the Price List entry to verify whether the booking uses `CH…P…` or `CH…D…` values for the period.
-
-#### Where do I verify the values used in the calculation?
-
-Open **Price List** for the same hotel, room, departure date, and stay length.
-
-Enable the child column groups and compare `P1`, `CH1P1`, and `CH2P1`.
-
-#### What if the totals do not match between booking and Price List?
-
-Common causes:
-
-* The booking is using a different PLTA entry (different date, room, or stay).
-* Some add-ons are per pax and were not included in the comparison.
-* Child adjustments (`CH1PA` / `CH2PA`) or discounts are active for the period.
-* The Price List values were edited after the booking was created.
-
-#### What if the hotel does not have extra bed capacity for children?
-
-Then this scenario cannot be reproduced.
-
-The room type must allow extra beds for children for the stay period.

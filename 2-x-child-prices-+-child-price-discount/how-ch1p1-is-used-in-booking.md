@@ -88,34 +88,3 @@ This formula ensures that the system accurately reflects the pricing breakdown b
 
 The **CH1P1** value directly influences the total price of a booking containing child passengers. Verifying it in the **Price List** ensures consistency between backend pricing logic and the values displayed in bookings.\
 This setup guarantees transparency, helping administrators and agents validate that child pricing is applied correctly across all bookings.
-
-## FAQ
-
-#### What is CH1P1?
-
-`CH1P1` is the child selling price for **child 1** on interval **P1** in the Price List.
-
-#### When is CH1P1 used in a booking?
-
-When a booking includes a child passenger and the pricing setup uses child-1 pricing.
-
-#### Why does my booking not use CH1P1?
-
-Common causes:
-
-* The booking has no child passenger assigned to a child price type.
-* Child pricing features are not enabled for the company.
-* The hotel/room setup does not allow extra bed for children for the dates.
-* The relevant price list entry is missing for the departure/stay dates.
-
-#### How do I validate which child price was used?
-
-Open the matching Price List entry for the booking’s hotel/room/departure date.
-
-Compare the booking total breakdown with the `CH1P1` value (and related fields like `CH1PA`).
-
-#### What is the difference between CH1P1 and CH1D1?
-
-`CH1P1` is the child's selling price (P1).
-
-`CH1D1` is the child discount price (D1) and follows the discount calculation logic.
