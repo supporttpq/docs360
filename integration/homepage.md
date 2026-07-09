@@ -40,7 +40,7 @@ Browse user guides, administration, integrations and release notes.
 
 ### Explore Tourpaq
 
-<table data-view="cards"><thead><tr><th></th></tr></thead><tbody><tr><td><p>🚀 Getting Started</p><p>New to Tourpaq?</p><p>→</p></td></tr><tr><td><p>📖 User Guide</p><p>Daily operations</p><p>→</p></td></tr><tr><td><p>⚙ Administration</p><p>Configure the system</p><p>→</p></td></tr><tr><td><p>🔌 Integrations</p><p>External providers</p><p>→</p></td></tr><tr><td><p>💻 Developers</p><p>API &#x26; Webhooks</p><p>→</p></td></tr><tr><td><p>🆕 Release Notes</p><p>Latest features</p><p>→</p></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td><p>🚀 Getting Started</p><p>New to Tourpaq?</p><p>→</p></td><td></td></tr><tr><td><p>📖 User Guide</p><p>Daily operations</p><p>→</p></td><td></td></tr><tr><td><p>⚙ Administration</p><p>Configure the system</p><p>→</p></td><td></td></tr><tr><td><p>🔌 Integrations</p><p>External providers</p><p>→</p></td><td></td></tr><tr><td><p>💻 Developers</p><p>API &#x26; Webhooks</p><p>→</p></td><td></td></tr><tr><td><p>🆕 Release Notes</p><p>Latest features</p><p>→</p></td><td><a href="../.gitbook/assets/paxport.png">paxport.png</a></td></tr></tbody></table>
 
 ### Browse by module
 
@@ -88,4 +88,4 @@ View all →
 
 ### Integrations
 
-<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td>Amadeus</td><td><a href="../.gitbook/assets/amadeus-com-wordmark.png">amadeus-com-wordmark.png</a></td></tr><tr><td>Opera</td><td></td></tr><tr><td>Paxport</td><td></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td>Amadeus</td><td><a href="../.gitbook/assets/amadeus-com-wordmark.png">amadeus-com-wordmark.png</a></td></tr><tr><td>Opera</td><td></td></tr><tr><td>Paxport</td><td><a href="../.gitbook/assets/paxport.png">paxport.png</a></td></tr></tbody></table>
