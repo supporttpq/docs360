@@ -134,8 +134,8 @@ June 2026
 
 ⭐ Guide App
 
-{% hint style="info" %}
+{% hint style="info" icon="life-ring" %}
 **Need help?**
 
-Visit the Support Portal or contact the Tourpaq team.      <a class="button primary">Support</a><button type="button" class="button secondary" data-action="search" data-icon="magnifying-glass">Contact</button>
+Visit the Support Portal or contact the Tourpaq team.      <a class="button primary">Support</a><a class="button secondary">Contact</a>
 {% endhint %}
