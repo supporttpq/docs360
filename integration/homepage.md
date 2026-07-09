@@ -85,3 +85,7 @@ View all →
 
 {% endcolumn %}
 {% endcolumns %}
+
+### Integrations
+
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td>Amadeus</td><td><a href="../.gitbook/assets/amadeus-com-wordmark.png">amadeus-com-wordmark.png</a></td></tr><tr><td>Opera</td><td></td></tr><tr><td>Paxport</td><td></td></tr></tbody></table>
