@@ -83,6 +83,7 @@
   * [GDS One way flight bookings](gds-queue-place/gds-one-way-flight-bookings.md)
   * [Booking State Color – GDS Bookings](gds-queue-place/booking-state-color-gds-bookings.md)
   * [GDS Transport Identification and Exclusion](gds-queue-place/gds-transport-identification-and-exclusion.md)
+  * [GDS Extra day](gds-queue-place/gds-extra-day.md)
   * [Dynamic transport baggage](gds-queue-place/dynamic-transport-baggage.md)
   * [Setup for Transport Dynamic Packaging (GDS)](gds-queue-place/setup-for-transport-dynamic-packaging-gds.md)
 * [Offers](offers/README.md)
