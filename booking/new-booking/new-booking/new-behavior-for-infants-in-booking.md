@@ -56,6 +56,8 @@ Extras become available for infants based on their configured age interval.
 
 To make an Extra available for infants, configure the Extra price with an age range that includes **0 years**.
 
+<figure><img src="../../../.gitbook/assets/13.07.2026_16.27.41_REC.png" alt=""><figcaption></figcaption></figure>
+
 Infants can now purchase Extras in both **New Booking** and **Web Booking**.
 
 This allows optional services such as:
@@ -182,7 +184,9 @@ The system:
 
 A sales agent creates a booking containing two adults and one infant.
 
-When opening the **Extras** step, the infant can be assigned a stroller and checked baggage because both Extras are configured for age **0 years and above**.
+When opening the **Extras** step, the infant can be assigned a penssion and checked baggage because both Extras are configured for age **0 years and above**.
+
+<figure><img src="../../../.gitbook/assets/13.07.2026_16.19.21_REC.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -200,7 +204,9 @@ The booking engine automatically:
 
 A customer books a holiday with an infant.
 
-During the Extras step, a **Baby Stroller** option appears because its age configuration includes infants, while child-only activities are hidden.
+During the Extras step, a **Baggage** option appears because its age configuration includes infants.
+
+<figure><img src="../../../.gitbook/assets/13.07.2026_16.24.20_REC.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
