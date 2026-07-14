@@ -699,7 +699,7 @@ The passenger grid contains one row per passenger. Each row includes multiple fi
       * Child/adult classification
 
 {% hint style="info" %}
-If there is a hotel only or a one-way out -> hotel only -> one way home the age is calculated from the last check-in date / Departure date.
+The age is calculated from the last transport date of the booking. If hotel only or one-way out + hotel only is booked, the age is calculated from the check-out date.
 {% endhint %}
 
 **Cancellation Insurance (CCL. INS.)**
