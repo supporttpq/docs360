@@ -284,7 +284,7 @@ Tourpaq sets **All stay days must be available** to active for those extras.
 
 ### Related pages
 
-* [Board Type - Hotel allotment / Ticket](board-type-hotel-allotment-ticket.md)
-* [Board Type - Extra](board-type-extra.md)
+* [Board Type - Hotel allotment / Ticket](/broken/pages/cmFZtflwPimtmB7ftv4q)
+* [Board Type - Extra](/broken/pages/3arRI9CM44AT5Q5CFxzd)
 * [Board Type - Webboking](board-type-webboking.md)
 * [Extra Category Overview](../extras-category/extra-category-overview/)

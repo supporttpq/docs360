@@ -479,9 +479,7 @@
   * [Insurance Reporting](travel-insurance/insurance-reporting.md)
   * [Insurance Automated Reporting](travel-insurance/insurance-automated-reporting.md)
 * [Board Type](board-type/README.md)
-  * [Board Type - Hotel allotment / Ticket](board-type/board-type-hotel-allotment-ticket.md)
-  * [Board Type - Extra](board-type/board-type-extra.md)
-  * [Board Type - Webboking](board-type/board-type-webboking.md)
+  * [How to use a Board Type](board-type/board-type-webboking.md)
   * [Board Behaviour During Booking](board-type/board-behaviour-during-booking.md)
 
 ## Email Setup
