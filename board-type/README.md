@@ -43,6 +43,117 @@ Board Types represent different service packages offered by hotels. These may in
 
 ## Edit Board Type
 
+<figure><img src="../.gitbook/assets/14.07.2026_16.05.15_REC.png" alt=""><figcaption></figcaption></figure>
+
+### Overview
+
+On this page you can:
+
+* Modify an existing board type.
+* Maintain multilingual translations. (Custom text)
+* Add a customer-facing description that can be displayed in different parts of the system.
+
+***
+
+### Page Layout
+
+The page contains two language tabs:
+
+* **Default text** - The default language used by the system.
+* **Custom text (for example Tourpaq DK)** - Used to customize the appearance and description of the extra in booking flows or documentation.
+
+<figure><img src="../.gitbook/assets/14.07.2026_16.10.13_REC.png" alt=""><figcaption></figcaption></figure>
+
+Only the text fields are translated. The board type code and the list name remains the same across all languages.
+
+***
+
+## Field Description
+
+**Name \* -** The **Name** is the internal name of the board type.
+
+This value is used throughout Tourpaq when selecting a board type during hotel contract configuration.
+
+#### Example
+
+| Value         | Result                                               |
+| ------------- | ---------------------------------------------------- |
+| All Inclusive | Displayed as the board type in configuration screens |
+| Breakfast     | Used when assigning breakfast to hotel rooms         |
+
+***
+
+**Code \* -** The **Code** is the unique identifier for the board type.
+
+The code is primarily used internally by the system and integrations. It should be short, unique, and should not be changed after the board type has been used in hotel contracts.
+
+#### Example
+
+```
+ALLINC
+```
+
+***
+
+**List Name \* -** The **List Name** is the customer-friendly name shown in selection lists and dropdown menus.
+
+#### Example
+
+| Name          | List Name     |
+| ------------- | ------------- |
+| All Inclusive | All Inclusive |
+| Breakfast     | Breakfast     |
+
+***
+
+**Description -** The **Description** provides additional information about what the board type includes.
+
+This text can be displayed in customer-facing areas such as web booking or travel documents, depending on system configuration.
+
+Use this field to explain exactly what is included in the meal plan.
+
+#### Example
+
+```
+Breakfast, lunch, dinner, snacks and selected local beverages are included throughout the stay.
+```
+
+***
+
+## Custom Text
+
+Used to customize the appearance and description of the extra in booking flows or documentation.
+
+The customized fields are:
+
+* Name
+* Description
+
+The **Code** remains identical in every language.
+
+#### Example
+
+| Default       | Danish        |
+| ------------- | ------------- |
+| All Inclusive | All Inclusive |
+| Breakfast     | Morgenmad     |
+| Half Board    | Halvpension   |
+
+***
+
+## Example
+
+The following example creates a standard **All Inclusive** board type.
+
+| Field       | Value                                                                                     |
+| ----------- | ----------------------------------------------------------------------------------------- |
+| Name        | All Inclusive                                                                             |
+| Code        | ALLINC                                                                                    |
+| List Name   | All Inclusive                                                                             |
+| Description | Breakfast, lunch, dinner, snacks and selected beverages are included throughout the stay. |
+
+Once saved, the board type becomes available when configuring hotel room board basis in hotel contracts and can be selected during room setup.
+
 ### Use in System
 
 Board Types are used in:
