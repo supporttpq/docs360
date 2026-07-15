@@ -197,20 +197,6 @@ The fictive room is used only for transport planning and does not represent an a
 
 ***
 
-### Transport Hotel Configuration
-
-To enable this functionality, configure the hotel as a **Transport Hotel**.
-
-**Hotel configuration**
-
-| Setting         | Value   |
-| --------------- | ------- |
-| Transport Hotel | Enabled |
-
-Once enabled, the hotel can be used for transport-related room assignments.
-
-***
-
 ### Fictive Room Configuration
 
 Inside the Custom Hotel Day Booking, create or configure a room with the following setting.
