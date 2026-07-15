@@ -133,8 +133,9 @@ These settings influence how the extra interacts with billing, privacy regulatio
 
 <figure><img src="../../.gitbook/assets/image (10) (3).png" alt=""><figcaption></figcaption></figure>
 
-This section is shown **only when an Extra is configured with the type Pension**.\
-If the Extra has a different type, this section is not displayed.
+{% hint style="info" %}
+The Board Supplement section is displayed only for Extras that belong to an Extras Category of type _Pension_. If the selected Extras Category has any other type, this section is hidden.
+{% endhint %}
 
 #### Fields Description
 
@@ -146,11 +147,44 @@ Example:
 
 * HB – Half Board
 
-When selected, the Extra is treated as a supplement related to that board type. This means the system understands that the Extra modifies or upgrades the board basis of the room.
+The Board type is used by Tourpaq to determine the Board type of the Extra. This is used to match the extra to the relevant Board type on the web and when it is necessary to upgrade a Board basis (when the Board basis is not available for the full stay).
+
+{% hint style="warning" %}
+It is recommended to set the Board type for all Board Basis and Board Supplement extras.
+{% endhint %}
 
 **Board basis filter**
 
-Filter is used on Board Supplements to specify which Board Basis should be on the Room for the Board Supplement to be available.
+The Board basis filter is used to limit the Extras eligibility to rooms that have the specified Board Type as the Board basis.
+
+Example for a Board basis Extra:
+
+A hotel offers different Board Basis options depending on the season:
+
+* **Low season:** Breakfast
+* **High season:** Half Board
+
+These meal plans are configured as separate **Board Basis Extras**.
+
+The **Board Basis Filter** determines when each Extra is eligible. For example, the **Breakfast** Board Basis Extra has the **Board Basis Filter** set to **Breakfast**, making it available only during periods where the room's Board Basis is configured as **Breakfast**. During periods where the room's Board Basis is **Half Board**, the Breakfast Extra is not offered.
+
+This ensures that customers are only presented with the Board Basis that matches the room configuration for the selected travel period.
+
+Example with Board supplement:
+
+A hotel offers two different Board Basis options during the same travel period:
+
+* **Breakfast**
+* **Half Board**
+
+Customers can upgrade either option to **All Inclusive**, but the upgrade price differs depending on the room's included Board Basis.
+
+To support this scenario, create two separate **Board Supplement Extras**:
+
+* The first Board Supplement will set the _Board basis filter_ to Breakfast to limit it to rooms with Breakfast as their board basis.&#x20;
+* The second Board supplement will have the _Board basis filter_ set to Half board, to limit it to rooms with Half board as their Board basis.
+
+Using separate Board Supplement Extras with different **Board Basis Filters** ensures that Tourpaq displays the correct upgrade option and price based on the room's configured Board Basis.
 
 ### Clone Extras
 
