@@ -162,13 +162,15 @@ After the service has run, the rule is active, and the **Price List has been gen
 
 ### Overview
 
-Tourpaq supports combining Charter flights with Custom Hotel Days by allowing a passenger to stay in both a real hotel and a dedicated Transport Hotel during the same period.
+Tourpaq supports combining **Charter or Real Transport** with **multiple hotel stays** within a single booking by using **Custom Hotel Days** together with a dedicated **Transport Hotel**.
 
-This is achieved by using a fictive room in a hotel configured as a **Transport Hotel**.
+Instead of requiring the passenger to stay in a single hotel for the entire transport period, the booking can now be divided into multiple accommodation periods while keeping the same transport itinerary.
 
-Normally, Tourpaq prevents a passenger from being assigned to multiple hotel rooms with overlapping stay periods. With this feature, that validation is skipped when the transport hotel room is configured as fictive.
+This is achieved by assigning the passenger to a **fictive room** in a hotel configured as a **Transport Hotel**. The fictive room is used only to maintain the connection with the transport booking and does not represent an actual accommodation.
 
-This makes it possible to connect Charter flights with transport accommodation without affecting the passenger's actual hotel stay.
+Because of this, passengers can move between different hotels—or even different room types within the same hotel—without affecting the transport booking.
+
+The fictive transport room is not shown on the customer ticket.
 
 ***
 
@@ -176,21 +178,21 @@ This makes it possible to connect Charter flights with transport accommodation w
 
 When all of the following conditions are met:
 
-* The hotel is configured as **Transport Hotel (Rome code FLY)**
-* The room is configured as **Fictive**
 * The booking uses **Custom Hotel Days**
+* A **Transport Hotel** (Rome code **FLY**) is configured
+* The room in the Transport Hotel is marked as **Fictive**
 
-Tourpaq allows the passenger to be assigned to both:
+Tourpaq allows the booking to contain:
 
-* the real hotel room
-* the fictive transport hotel room
+* one or more real hotel stays;
+* different hotels during the same holiday;
+* different room types within the same hotel;
+* one fictive Transport Hotel room that remains linked to the transport.
 
-even if the stay periods overlap.
-
-The fictive room is used only for transport planning and does not represent an actual accommodation.
+The Transport Hotel period may overlap with one or more actual hotel stays. This is possible because the standard overlap validation is not applied to fictive Transport Hotel rooms.
 
 {% hint style="info" %}
-The fictive hotel/room will not appear on the ticket.
+The fictive room is used only for transport planning and does not represent an actual accommodation.
 {% endhint %}
 
 ***
@@ -236,17 +238,18 @@ The overlapping dates are accepted because the Transport Hotel validation is ski
 
 ***
 
-### Charter Flight Bookings
+### Transport Bookings
 
-This functionality is especially useful for Charter flight bookings.
+This functionality is especially useful for **Charter and Real Transport** bookings.
 
 A passenger can:
 
-1. Be booked into their actual hotel.
-2. Be assigned to a fictive room in a Transport Hotel.
-3. Be connected to Charter transport without modifying the real accommodation.
+* keep a single transport itinerary throughout the holiday;
+* stay in multiple hotels during the trip;
+* change room type during the stay if needed;
+* remain connected to the transport through a fictive Transport Hotel room without affecting the actual accommodation.
 
-This simplifies transport planning while keeping the accommodation information unchanged.
+This provides much greater flexibility than the previous Combi Hotel approach while keeping transport and accommodation independent.
 
 ***
 
@@ -300,14 +303,14 @@ This allows customers to upgrade or change accommodation during their stay witho
 
 #### Why is this useful
 
-This development removes several previous limitations when booking **charter** or **real transport** packages.
+This functionality makes it possible to combine **Charter or Real Transport** with **multiple accommodation periods** within a single booking.
 
-You can now:
+Typical use cases include:
 
-* Add **multiple hotels** to the same booking while keeping a single transport itinerary.
-* Split the holiday across different destinations or resorts.
-* Change **room type** during the stay without creating separate bookings.
-* Create flexible itineraries that were previously only possible by using **Combi Hotels**.
+* staying at multiple hotels during the same holiday;
+* splitting the stay between different destinations or resorts;
+* changing room type during the holiday;
+* keeping one transport itinerary while accommodation changes over time.
 
 
 
