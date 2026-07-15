@@ -179,7 +179,7 @@ The fictive transport room is not shown on the customer ticket.
 When all of the following conditions are met:
 
 * The booking uses **Custom Hotel Days**
-* A **Transport Hotel** (Rome code **FLY**) is configured
+* A **Transport Hotel**  is configured (Hotel -> Room Type -> Link -> Is Fictive = True)
 * The room in the Transport Hotel is marked as **Fictive**
 
 Tourpaq allows the booking to contain:
