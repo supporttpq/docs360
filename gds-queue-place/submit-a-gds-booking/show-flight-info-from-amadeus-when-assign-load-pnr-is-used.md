@@ -73,11 +73,16 @@ If changes are made later in Amadeus, the system will automatically check the PN
 
 ***
 
-## User Example
+**Example of workflow:**
 
-A customer books flights directly with an airline agent using Amadeus.
+1. A flight reservation is created in Amadeus.
+2. A booking is later created in Tourpaq.
+3. The existing Amadeus PNR is linked to the Tourpaq booking.
 
-Later, the user creates the booking in Tourpaq and links the existing PNR using **Assign PNR**.
+This enhancement ensures that the booking always displays the actual itinerary stored in the linked Amadeus PNR.
+
+\
+The flights are booked directly into Amadeus.Later, the user creates the booking in Tourpaq and links the existing PNR using **Assign PNR**.
 
 Although the same flights are no longer available in Tourpaq's flight inventory, the booking displays the flights exactly as they exist in Amadeus.
 
