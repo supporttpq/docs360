@@ -76,4 +76,4 @@ Passenger1 stays in Room A:
 
 ### Related pages
 
-* [Room cost](room-cost/)
+* [Room cost](./)
