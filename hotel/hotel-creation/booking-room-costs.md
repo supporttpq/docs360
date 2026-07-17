@@ -40,29 +40,14 @@ This provides several benefits:
 
 ***
 
-## How Booking Room Costs work
-
-Each hotel contract can contain two independent cost layers.
-
-| Cost layer            | Used by                                                                                      |
-| --------------------- | -------------------------------------------------------------------------------------------- |
-| **Room Cost**         | Hotel settlement, Auto-billing, SPOs, Cost Rules and supplier-related calculations           |
-| **Booking Room Cost** | Bookings, Price Lists, Profit calculations, Finance reports and booking-related calculations |
-
-Booking Room Cost is optional.
-
-When a Booking Room Cost exists, Tourpaq uses it for booking calculations.
-
-If no Booking Room Cost is defined, Tourpaq automatically falls back to the normal Room Cost.
-
-***
-
 ## Availability
 
 The **Booking Room Costs** tab is available only for hotel contracts with one of the following contract types:
 
 * Guarantee
 * Guarantee + Allotment
+
+<figure><img src="../../.gitbook/assets/17.07.2026_14.42.32_REC.png" alt=""><figcaption></figcaption></figure>
 
 For all other contract types, only the standard Room Cost is used.
 
@@ -74,9 +59,9 @@ This prevents Booking Room Costs from accidentally affecting contracts that do n
 
 Navigate to:
 
-**Hotels → Hotel Contract → Booking Room Costs**
+**Hotels → Booking Room Costs**
 
-The page follows the same layout and behaviour as the **Room Cost Rules** page.
+The page follows the same layout and behaviour as the **Room Costs Rules** page.
 
 Each Booking Room Cost defines:
 
@@ -88,6 +73,8 @@ Each Booking Room Cost defines:
 ### Create a Booking Room Cost
 
 Select **Create** to add a new rule.
+
+<figure><img src="../../.gitbook/assets/17.07.2026_14.44.37_REC.png" alt=""><figcaption></figcaption></figure>
 
 Each rule contains:
 
@@ -117,6 +104,8 @@ Example:
 
 Use **+** to create additional periods.
 
+<figure><img src="../../.gitbook/assets/17.07.2026_14.47.26_REC.png" alt=""><figcaption></figcaption></figure>
+
 Each **Next** column represents the start of a new arrival period and can be removed individually using the bin icon.
 
 Date validation ensures that:
@@ -132,6 +121,8 @@ Date validation ensures that:
 Each Booking Room Cost contains one or more room groups.
 
 Use **+** below the rule to create a room group.
+
+<figure><img src="../../.gitbook/assets/17.07.2026_14.51.21_REC.png" alt=""><figcaption></figcaption></figure>
 
 For every room group you define:
 
@@ -187,6 +178,8 @@ If a value is left empty, Tourpaq automatically uses the standard Room Cost.
 
 While editing Booking Room Costs, Tourpaq continuously compares the configured Booking Room Cost with the original Room Cost.
 
+<figure><img src="../../.gitbook/assets/17.07.2026_14.57.20_REC.png" alt=""><figcaption></figcaption></figure>
+
 Selecting the clock icon displays:
 
 > **Difference from Room Cost in the whole period:**\
@@ -220,25 +213,6 @@ Booking Room Cost only affects ordinary beds.
 Extra beds always use the original Room Cost.
 
 ***
-
-### Show all
-
-By default, expired Booking Room Cost rules are hidden.
-
-Rules where both:
-
-* Booking End
-* Arrival End
-
-are earlier than today are not shown.
-
-Enable **Show all** to display historical rules.
-
-***
-
-## System behaviour
-
-The introduction of Booking Room Costs separates supplier settlement from commercial booking calculations.
 
 ### Uses Booking Room Cost
 
