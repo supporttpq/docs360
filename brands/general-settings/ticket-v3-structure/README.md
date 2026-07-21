@@ -70,6 +70,10 @@ Enhanced usage:
 This field is especially important for dynamic/GDS bookings where extra flight-related information may be required.
 {% endhint %}
 
+For bookings with GDS transport, the GDS text configured under **User > Brands > GDS** is displayed only on the dedicated **GDS** page of the e-ticket.
+
+<figure><img src="../../../.gitbook/assets/21.07.2026_10.40.33_REC.png" alt=""><figcaption></figcaption></figure>
+
 ***
 
 ### Passengers (Partial List)
@@ -97,6 +101,28 @@ Continuation of all travelers:
 * First name
 * Last name
 * Date of birth / age
+
+Passenger information is displayed in the blue information box on the e-ticket.
+
+<figure><img src="../../../.gitbook/assets/21.07.2026_11.01.25_REC.png" alt=""><figcaption></figcaption></figure>
+
+The layout automatically:
+
+* Uses consistent spacing between bullet points.
+* Removes unnecessary blank lines when passenger information is added, updated, or removed.
+* Maintains a consistent appearance across all system transport types.
+
+### REJSEDELTAGERE
+
+The **REJSEDELTAGERE** section automatically adapts to page breaks to ensure the content remains readable.
+
+<figure><img src="../../../.gitbook/assets/21.07.2026_11.03.03_REC.png" alt=""><figcaption></figcaption></figure>
+
+When the participant table continues onto a new page:
+
+* The **REJSEDELTAGERE** heading is displayed together with the start of the table and is never separated from it.
+* The participant table is split correctly across pages without rows being cut off.
+* The standard text displayed below the participant list is positioned correctly above the page number when a page break occurs.
 
 {% hint style="info" %}
 This page only appears when there are more passengers than can fit on Page 1.
