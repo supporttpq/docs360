@@ -97,8 +97,10 @@ Setup guide: [Departure stat weeks](../setup/departure-stat-weeks.md)
 | **% of total capacity sold to date** | The **average weekly percentage of total capacity sold** over the selected period.                                                                                                                                                                                                                                                                                                                                                                    |
 
 {% hint style="info" %}
-### The Available and Sold seat values represent the number of seats allocated in the transport's fixed quota for the corresponding week.
+### The Available and Sold seat values represent the number of seats allocated in the transport's fixed quota for the corresponding week.&#x20;
 {% endhint %}
+
+<figure><img src="../.gitbook/assets/21.07.2026_16.54.47_REC.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
