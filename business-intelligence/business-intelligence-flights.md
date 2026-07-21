@@ -96,11 +96,11 @@ Setup guide: [Departure stat weeks](../setup/departure-stat-weeks.md)
 | **Sold 1D / 1W / 2W / 3W / 4W**      | <p>Represents additional seats sold compared to previous days or weeks(1 day, 1 week, 2–4 weeks). <br>• <strong>Sold 1D</strong> – The number of seats sold on the last day before departure.</p><p>• <strong>Sold 1W</strong> – The number of seats sold 1 week before departure.</p><p>• <strong>Sold 2W–4W</strong> – The number of seats sold 2 to 4 weeks before departure.</p><p>These columns show booking velocity and sales progression.</p> |
 | **% of total capacity sold to date** | The **average weekly percentage of total capacity sold** over the selected period.                                                                                                                                                                                                                                                                                                                                                                    |
 
-***
-
 {% hint style="info" %}
 ### The Available and Sold seat values represent the number of seats allocated in the transport's fixed quota for the corresponding week.
 {% endhint %}
+
+***
 
 ### **How to use this report**
 
