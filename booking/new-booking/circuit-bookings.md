@@ -19,6 +19,8 @@ layout:
     visible: true
   tags:
     visible: true
+  actions:
+    visible: true
 ---
 
 # Circuit Bookings
@@ -131,57 +133,6 @@ The stays are connected by three one-way transports. Each transport leg must exi
 ### Ticket output (example)
 
 <figure><img src="../../.gitbook/assets/image (249).png" alt="Example ticket layout for a circuit booking with multiple hotel stays and one-way transport legs"><figcaption><p>Example ticket for a circuit booking.</p></figcaption></figure>
-
-### FAQ
-
-#### When should I use a circuit booking?
-
-Use a circuit booking when the itinerary has **multiple hotel stays** and/or **multiple transport legs** (often **one-way flights**) that can’t be handled as a single “out + home” package.
-
-#### What’s required for circuit bookings to work?
-
-You typically need:
-
-* **One-way transports** enabled.
-* **Custom hotel days** enabled for relevant hotels/price lists.
-* Price lists that support **custom hotel days** and **multiple one-way flights**.
-
-See:
-
-* [Price List Custom Hotel days Service](../../price-list-custom-hotel-days-service.md)
-* [Multiple one way flights bookings](multiple-one-way-flights-bookings.md)
-
-#### Can a circuit booking span multiple resorts or countries?
-
-Yes. That’s a common use case.
-
-Each hotel stay and each transport leg must be available and defined for the brand/agency setup you book under.
-
-#### Why can’t I find the “middle” transport leg (between two destinations)?
-
-Circuit bookings depend on every leg being defined (for example: **A → B**, **B → C**, **C → A**).
-
-If a leg is missing, check:
-
-* the transport is created and enabled
-* the date range is valid for the leg
-* allotment and/or stop-sale rules aren’t blocking it
-* your filters aren’t hiding it
-
-#### Does Tourpaq automatically build the route for me?
-
-No. You select the transports and hotel stays in the booking flow.
-
-Treat it like building a multi-leg itinerary. Verify dates and sequence before saving.
-
-#### What should I double-check before sending tickets/documents?
-
-Always verify:
-
-* leg order and dates (outbound, middle legs, return)
-* each hotel stay dates match the intended nights (**custom hotel days**)
-* passenger names and birthdates (pricing can depend on age)
-* the ticket output shows all legs and stays as expected
 
 ### Related
 

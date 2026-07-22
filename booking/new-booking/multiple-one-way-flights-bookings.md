@@ -18,6 +18,8 @@ layout:
     visible: true
   tags:
     visible: true
+  actions:
+    visible: true
 ---
 
 # Multiple one way flights bookings
@@ -129,60 +131,3 @@ You can combine one-way flights with hotels marked **Custom Hotel Days**.
 That enables bookings where hotel stay length is flexible.
 
 See [Price List Custom Hotel days Service](../../price-list-custom-hotel-days-service.md).
-
-### FAQ
-
-<details>
-
-<summary><strong>Why is A La Carte required for multiple one-way flights?</strong></summary>
-
-Because the booking behaves like selecting multiple standalone components (flight legs).
-
-That flow requires **A La Carte** access.
-
-</details>
-
-<details>
-
-<summary><strong>What is the One Way Hotel used for?</strong></summary>
-
-It is a fictive hotel used only for pricing.
-
-It lets you create a **transport ↔ hotel** pricelist for one-way and flight-only bookings.
-
-</details>
-
-<details>
-
-<summary><strong>Why should we keep only one One Way Hotel per company?</strong></summary>
-
-It avoids misconfiguration and duplicate pricelists.
-
-It also makes the booking flow predictable for users.
-
-</details>
-
-<details>
-
-<summary><strong>Why can’t I book one-way flights even though the transport exists?</strong></summary>
-
-Check these first:
-
-* Fix quota is generated and contains **OW OUT / OW HOME** allotments.
-* A pricelist exists between the transport and the **One Way Hotel**.
-* One-way price fields (`POWO/POWH` etc.) are filled.
-
-</details>
-
-<details>
-
-<summary><strong>Can the same transport be sold as charter and flight-only?</strong></summary>
-
-Yes.
-
-Use separate price lists:
-
-* Charter/package pricing with real hotels
-* Flight-only pricing with the One Way Hotel
-
-</details>

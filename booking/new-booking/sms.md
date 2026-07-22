@@ -19,6 +19,8 @@ layout:
     visible: true
   tags:
     visible: true
+  actions:
+    visible: true
 ---
 
 # SMS
@@ -65,38 +67,3 @@ The **SMS** tab in **Tourpaq Office** shows the **booking SMS log**. It lists al
 
 * This tab is **view-only** – SMS messages **cannot be edited or deleted** from here.
 * If a message has **Status = failed** (or similar), follow your internal procedure to investigate (for example, checking the phone number, SMS configuration, or contacting support).
-
-***
-
-### **FAQ**
-
-#### **Why do I not see any SMS for this booking?**
-
-Common reasons:
-
-* No SMS has been triggered yet for this booking (for example, confirmations or reminders are not configured or have not been sent).
-* The customer’s **phone number** is missing or invalid.
-* SMS sending may be disabled or not configured for the selected **brand** or environment.
-
-If you expect SMS to appear and the list is empty, check the booking’s phone details and your SMS setup, or contact your system administrator.
-
-***
-
-#### **Can I send a new SMS directly from this tab?**
-
-No. The **SMS** tab is only a **log** of messages that have already been sent. To send new SMS messages, use the tools and workflows configured in your organisation (for example, dedicated SMS modules, automated flows, or communication centers), according to your internal guidelines.
-
-***
-
-#### **What does the Status field mean in practice?**
-
-* A **successful** status means the SMS was handed over to the SMS provider without errors.
-* A **failed** status indicates that the system or provider could not send the message.
-
-For failed messages, verify the recipient’s phone number and consult your internal support or SMS provider monitoring if repeated errors occur.
-
-***
-
-#### **Can I change the content of SMS templates from here?**
-
-No. The **Message** column only shows what was already sent for this booking. To change the **template text** used for future SMS messages, you must update the relevant SMS or email/SMS configuration pages in your setup (if you have access), or ask an administrator to do it.

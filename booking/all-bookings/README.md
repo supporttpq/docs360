@@ -18,6 +18,8 @@ layout:
     visible: true
   tags:
     visible: true
+  actions:
+    visible: true
 ---
 
 # All bookings
@@ -29,7 +31,7 @@ layout:
 Whether you are looking for one specific booking by number, reviewing today's departures, analysing last month's sales performance, or checking outstanding balances, All Bookings is your starting point.
 
 {% hint style="info" %}
-**Need to create a new booking?** All Bookings is for managing existing reservations. To create a new one, go to [New Booking](https://manual.tourpaq.com/booking/new-booking).&#x20;
+**Need to create a new booking?** All Bookings is for managing existing reservations. To create a new one, go to [New Booking](https://manual.tourpaq.com/booking/new-booking).
 {% endhint %}
 
 ***
@@ -56,7 +58,7 @@ Before using All Bookings, ensure the following:
 * Statistics views require a Brand to be selected and Display to be clicked first before the Statistics button becomes active.
 
 {% hint style="warning" %}
-If no bookings appear after clicking Display, the first thing to check is whether a **Brand** has been selected. This is the most common cause of empty results.&#x20;
+If no bookings appear after clicking Display, the first thing to check is whether a **Brand** has been selected. This is the most common cause of empty results.
 {% endhint %}
 
 ***
@@ -96,7 +98,7 @@ Set the filters that match what you are looking for. You do not need to fill in 
 * **Cancelled bookings in a period** → Status = Cancelled + Booking Period
 
 {% hint style="info" %}
-Use the **More Filters** button to access additional filter options not shown by default. A green badge on the button indicates how many additional filters are currently active.&#x20;
+Use the **More Filters** button to access additional filter options not shown by default. A green badge on the button indicates how many additional filters are currently active.
 {% endhint %}
 
 ***
@@ -388,7 +390,7 @@ After clicking Display, three additional analysis views are available. All stati
 ![](https://docs.tourpaq.com/assets/images/vab2-2ae8937c8c58496300b15fff0f0dbbf8.jpg?width=1857)
 
 {% hint style="info" %}
-For screenshots and detailed usage examples of each statistics type, see [Statistics in All Bookings](https://manual.tourpaq.com/booking/all-bookings/statistic-in-all-bookings).&#x20;
+For screenshots and detailed usage examples of each statistics type, see [Statistics in All Bookings](https://manual.tourpaq.com/booking/all-bookings/statistic-in-all-bookings).
 {% endhint %}
 
 ***
@@ -416,32 +418,6 @@ For a more detailed, totals‑focused explanation, see [All bookings Totals](all
 4. Click **Display** to see the booking results.
 5. Review the **statistics bar** for a quick overview.
 6. Click **Statistics** to view a detailed analytical breakdown by passengers, profit, turnover, and more.
-
-***
-
-### FAQ
-
-**Q: I applied filters and clicked Display but no bookings appeared — why?** The most common cause is a missing Brand selection — select at least one Brand and try again. If a Brand is selected, check that your date range filters are filled in as pairs (both start and end dates). Also verify that the Status filter isn't set to a value that excludes the bookings you're looking for. Click **Clear** to reset all filters and start fresh.
-
-***
-
-**Q: Can I see cancelled bookings in All Bookings?** Yes. Set the **Status** filter to `Cancelled` and click Display. By default, when no status filter is applied, all statuses including cancelled bookings are returned, but if you have a saved view with a status filter active this may exclude them.
-
-***
-
-**Q: How do I find a booking if I only know the customer's name?** Enter the customer name (or partial name) in the **Customer** filter, select a Brand, and click Display. You can search with partial names — for example, entering `Jensen` will return all bookings with "Jensen" in the customer name.
-
-***
-
-**Q: The statistics bar shows a negative Profit Total — is something wrong?** Not necessarily. A negative profit in a filtered period is common when the period includes a high volume of cancellations, refunds, or bookings with costs that exceed revenue. Cross-reference with the [Finance module](https://manual.tourpaq.com/finance/payment-registration) and the Totals view for a full breakdown before drawing conclusions.
-
-***
-
-**Q: What is the difference between Booking Period and Departure Period?** **Booking Period** filters by when the booking was _created_ in the system. **Departure Period** filters by when the customer _travels_. Use Booking Period for sales analysis (e.g. "how many bookings did we take last month?") and Departure Period for operational planning (e.g. "who is departing next week?").
-
-***
-
-**Q: How do I save a filter combination I use every day?** Apply your filters and click **Save View**. Give the view a descriptive name (e.g. "This Week's Departures") and save it. It will appear as a shortcut the next time you open All Bookings so you can load it with one click.
 
 ***
 

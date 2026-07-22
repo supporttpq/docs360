@@ -13,7 +13,7 @@ description: >-
 It answers questions like: _"How many bookings and passengers do we have for this departure period?"_ or _"What is the total turnover and profit for this hotel across the summer season?"_
 
 {% hint style="info" %}
-**Need per-passenger breakdowns by country, resort, or hotel?** Use [Statistics in All Bookings](https://manual.tourpaq.com/booking/all-bookings/statistic-in-all-bookings) instead.&#x20;
+**Need per-passenger breakdowns by country, resort, or hotel?** Use [Statistics in All Bookings](https://manual.tourpaq.com/booking/all-bookings/statistic-in-all-bookings) instead.
 {% endhint %}
 
 ***
@@ -39,7 +39,7 @@ Before using All Bookings Totals, ensure the following:
 * You have clicked **Display** in All Bookings — Totals reads from the current filtered result set
 
 {% hint style="warning" %}
-Totals update **only after** you click **Display** in All Bookings. If you change filters, always click Display again before reading the Totals to ensure you are seeing current data.&#x20;
+Totals update **only after** you click **Display** in All Bookings. If you change filters, always click Display again before reading the Totals to ensure you are seeing current data.
 {% endhint %}
 
 ***
@@ -119,7 +119,7 @@ Change filters and click Display again to update the Totals for a different segm
 | **Status**                       | Limit totals to bookings of a specific status (e.g. OK only, or Cancelled only)                   |
 
 {% hint style="warning" %}
-Date filters (**Booking**, **Departure**, **Arrival**) must always be used as complete pairs — both `From` and `To` must be filled in. An incomplete pair will return empty or incorrect totals.&#x20;
+Date filters (**Booking**, **Departure**, **Arrival**) must always be used as complete pairs — both `From` and `To` must be filled in. An incomplete pair will return empty or incorrect totals.
 {% endhint %}
 
 ***
@@ -135,36 +135,6 @@ Date filters (**Booking**, **Departure**, **Arrival**) must always be used as co
 | **Additional tools**     | None                            | Compare Statistics, Booking Date Stats, Seller Performance |
 
 <figure><img src="../../.gitbook/assets/image (794).png" alt=""><figcaption></figcaption></figure>
-
-***
-
-### **FAQ**
-
-**Q: Why do the Totals show 0 even though I know there are bookings?** The three most common causes are: no Brand selected, a date filter with only one date filled in (`From` without `To`, or vice versa), or filters were changed but Display was not clicked again. Verify these points, click Display, and check the Totals again.
-
-***
-
-**Q: Are totals calculated per booking or per passenger?** Totals show **booking-level aggregates** — the total count of bookings, the total count of passengers, and the sum of turnover and profit across all filtered bookings. For per-passenger averages and breakdowns, use [Statistics in All Bookings](https://manual.tourpaq.com/booking/all-bookings/statistic-in-all-bookings).
-
-***
-
-**Q: Which date filter should I use — Booking, Departure, or Arrival?** Use **Booking Period** when you want to know how much was sold in a given period (sales analysis). Use **Departure Period** when you want to know the operational volume for a given travel window. Use **Arrival Period** for destination-based planning. All three can be combined, but each must be a complete pair.
-
-***
-
-**Q: Why do my Totals differ from Statistics?** The two views use different calculation methods. Totals are aggregated sums across all bookings. Statistics figures are calculated per passenger and may show averages rather than totals. Also check that the filters and date periods are identical between the two views — even a small difference in Brand or Status filter can produce different results.
-
-***
-
-**Q: I cannot see Turnover or Profit in my Totals — why?** Your user role may not include permission to view financial data, or financial totals may be disabled in your organisation's configuration. Contact your Tourpaq administrator if you believe you should have access.
-
-***
-
-**Q: Can I export Totals to Excel?** If export is enabled for your environment, an **Export** or **Excel** button will be available on the All Bookings page. If no such option is visible, contact your Tourpaq administrator to check whether exports are available for your user role.
-
-***
-
-**Q: When should I use Totals instead of Statistics?** Use Totals when you need a fast headline figure — total bookings, passengers, and revenue for a filtered segment — without needing per-passenger breakdowns. Use Statistics when you need to understand performance by country, resort, hotel, or arrival period, or when you need to compare two time periods.
 
 ***
 

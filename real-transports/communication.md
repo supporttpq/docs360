@@ -40,7 +40,7 @@ Real Transport
 
 The feature allows administrators to manually resend passenger reporting files for a selected departure date.
 
-Typical use cases include:
+Typical use cases include
 
 * Missing supplier delivery.
 * Corrections after configuration changes.

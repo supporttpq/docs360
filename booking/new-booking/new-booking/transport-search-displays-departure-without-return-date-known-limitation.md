@@ -7,13 +7,13 @@ description: >-
 
 # Transport Search Displays Departure Without Return Date (Known Limitation)
 
-#### Overview
+### Overview
 
 When searching for transport options during the booking process, the system may display a departure date even when the corresponding return date is not defined in the transport configuration. This occurs in specific edge cases related to how transport availability is generated from [Transport Rules.](../../../transport-rules/create-transport-rule.md)
 
 This behavior has been identified as a **known limitation** and does not affect the actual availability of the transport. The system will still validate the transport configuration when the booking is finalized.
 
-#### Context
+### Context
 
 This situation can occur when the transport rule automatically extends the available departure dates, but the return day is not defined for the generated transport.
 
@@ -25,7 +25,7 @@ As a result, the search results may display a departure date that appears valid 
 
 <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### Scenario Example
+### Scenario Example
 
 1. Log in as a user.
 2. Click **New Booking**.

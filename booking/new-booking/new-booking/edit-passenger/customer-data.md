@@ -97,61 +97,8 @@ Avoid adding unnecessary sensitive data. Follow your organization’s GDPR and d
 
 Use **Customer Data** to control **who is the booking customer** and **who receives emails and SMS**. Keep contact details correct to avoid missed confirmations, invoices, and travel documents.
 
-### FAQ
-
-<details>
-
-<summary><strong>What’s the difference between </strong><em><strong>Customer</strong></em><strong> and </strong><em><strong>Passengers</strong></em><strong>?</strong></summary>
-
-Passengers are the travellers on the booking.\
-The **Customer** is the main contracting/contact person who typically receives booking documents and messages.
-
-</details>
-
-<details>
-
-<summary><strong>Can I send booking emails/SMS to more than one person?</strong></summary>
-
-Yes. Set the main person using **CUSTOMER**.\
-Then enable **EMAIL** and/or **SMS** on other passengers to send them the same messages.
-
-</details>
-
-<details>
-
-<summary><strong>Why are some fields read-only here?</strong></summary>
-
-Name, title, age, and birthdate are managed in the **Passengers** tab.\
-Customer Data focuses on communication and customer identification.
-
-</details>
-
-<details>
-
-<summary><strong>What if the wrong person is receiving confirmations and documents?</strong></summary>
-
-Open **Customer Data** and move the **CUSTOMER** flag to the correct passenger.\
-Adjust **EMAIL**/**SMS** checkboxes for any extra recipients.\
-Then click **Save Changes**.
-
-</details>
-
-<details>
-
-<summary><strong>Does marking a passenger as CUSTOMER create a CRM customer record?</strong></summary>
-
-Often, yes. If the passenger has enough contact info (typically **email** and **phone**), Tourpaq can create or update the customer profile used in CRM.
-
-</details>
-
-<details>
-
-<summary><strong>I updated email/phone, but messages still go to the old address. What should I check?</strong></summary>
-
 Make sure you clicked **Save Changes** in the Edit Passenger window.\
 If documents were already generated/sent, you may need to regenerate or resend them, depending on your ticket/email flow.
-
-</details>
 
 ### Related Pages
 

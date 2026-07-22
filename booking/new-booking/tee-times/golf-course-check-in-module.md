@@ -194,29 +194,3 @@ Displays all tee times for today:
 * [**Tee Times**](./) – How agents assign tee times to passengers in a booking.
 * [**Teetime**](../../../extras-setup/extras-general-page/teetime.md) – How tee-time products and time-slot availability are configured.
 * [**Tee Time extras list**](../../../tee-time-extras-list/) – Export/reporting for tee time bookings.
-
-***
-
-### FAQ
-
-#### What booking number format is accepted in the kiosk?
-
-The kiosk validates that the booking number is **5–6 digits** and that the booking has tee times **today**.
-
-***
-
-#### Why can’t I check in players from different tee times together?
-
-The kiosk only allows check‑in for players who belong to the **same tee time**. This prevents mixing groups across different time slots.
-
-***
-
-#### What should staff do if a guest cannot check in at the kiosk?
-
-Use the **Master Module** to search by booking number or name and register the check‑in manually, following your internal procedures.
-
-***
-
-#### What does “Blocked” mean on the Today screen?
-
-“Blocked” indicates a tee time that is not available for check‑in/usage as shown in the operational overview. The exact reason (for example, maintenance or a manually blocked slot) depends on your tee‑time configuration and daily operations.

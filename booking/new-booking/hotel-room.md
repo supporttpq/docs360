@@ -19,6 +19,8 @@ layout:
     visible: true
   tags:
     visible: true
+  actions:
+    visible: true
 ---
 
 # Hotel Room
@@ -63,37 +65,3 @@ The **Hotel Room** tab in **Tourpaq Office** lets you manage **hotel room alloca
    * The assigned **room number** is printed on the ticket so that both the customer and the hotel can see the exact room assignment.
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (98).png" alt="Hotel Room tab showing available (green) rooms to assign to a booking"><figcaption></figcaption></figure>
-
-***
-
-### **FAQ**
-
-#### **Is it mandatory to assign a specific room number?**
-
-This depends on your company’s procedures. The system allows you to assign a room when you need a **specific** room number. If your company does not require pre‑assignment, the hotel can typically allocate a room on arrival according to its own processes.
-
-***
-
-#### **What should I do if no rooms are marked in green?**
-
-If no rooms are marked as available:
-
-* There may be **no free rooms** of the selected type for the chosen dates, or
-* Allotments and room availability may not be set up correctly.
-
-In this case, verify the hotel’s allotments and availability, or contact the person responsible for hotel setup or contracting.
-
-***
-
-#### **Can I change the room after I have already assigned one?**
-
-Yes. Reopen the **Hotel Room** tab, select another **green‑marked** room, and click **Save** again. Then reprint the ticket so the updated room number appears on the customer’s documents.
-
-***
-
-#### **Where will the assigned room information be visible?**
-
-The assigned room number is:
-
-* Printed on the **ticket** for the customer.
-* Available in the booking for internal users and may appear on relevant hotel/operations lists, depending on your setup.

@@ -18,6 +18,8 @@ layout:
     visible: true
   tags:
     visible: true
+  actions:
+    visible: true
 ---
 
 # Dashboard
@@ -51,7 +53,7 @@ Before using the Dashboard, ensure the following:
 * Underlying data must exist — a fresh system with no bookings or offers will show empty widgets. This is expected behaviour.
 
 {% hint style="info" %}
-If widgets are showing zero values unexpectedly, first check that your **Brand** and **date filters** are set correctly before assuming a data issue.&#x20;
+If widgets are showing zero values unexpectedly, first check that your **Brand** and **date filters** are set correctly before assuming a data issue.
 {% endhint %}
 
 ***
@@ -76,7 +78,7 @@ The filter bar at the top of the Dashboard controls the scope of all widgets sim
 | **Clear**          | Resets all filters and reloads the default full-data view          |
 
 {% hint style="warning" %}
-All filters apply **globally** — changing one filter updates every widget on the page at the same time.&#x20;
+All filters apply **globally** — changing one filter updates every widget on the page at the same time.
 {% endhint %}
 
 ***
@@ -134,7 +136,7 @@ Provides a real-time count of customer support cases, organised by status.
 | **Closed**      | Cases that have been fully resolved and closed                           |
 
 {% hint style="info" %}
-A high number of **New** or **Waiting** cases may indicate a support backlog. Review [Service Cases](https://manual.tourpaq.com/service-cases) for details.&#x20;
+A high number of **New** or **Waiting** cases may indicate a support backlog. Review [Service Cases](https://manual.tourpaq.com/service-cases) for details.
 {% endhint %}
 
 ***
@@ -248,28 +250,6 @@ Provides a high-level financial overview of the business within the selected per
 {% hint style="warning" %}
 **Negative financial values** are possible and expected in some periods — for example, during high-cancellation months or when large refunds are processed. Always cross-check with the full [Finance](https://manual.tourpaq.com/finance/payment-registration) module before drawing conclusions.
 {% endhint %}
-
-***
-
-### FAQ
-
-**Q: Why are all my Dashboard widgets showing zero?** The most common cause is an active filter that doesn't match any data — for example, a Booking Period with no bookings, or a Brand/User combination that has no activity. Click **Clear** to reset all filters and check if data appears. If widgets remain empty after clearing filters, contact your system administrator.
-
-***
-
-**Q: The Change % figure is missing or showing "N/A" — why?** The Change % requires comparable data from a previous equivalent period. If no data exists for the comparison period (e.g. the system was not in use at that time), the field will not display a value.
-
-***
-
-**Q: Can I customise which widgets appear on the Dashboard?** Widget visibility is controlled by your user role and system configuration. Individual widget rearrangement is not currently available as a self-service option. Contact your system administrator if you need a different default view.
-
-***
-
-**Q: The financial figures on the Dashboard don't match my Finance reports — why?** The Dashboard provides a summary view based on booking-level data. Detailed finance reports may use different calculation methods, cost allocations, or include manually registered adjustments not visible in the Dashboard summary. Always use the [Finance module](https://manual.tourpaq.com/finance/payment-registration) for authoritative financial figures.
-
-***
-
-**Q: Can I export the Dashboard data?** The Dashboard itself does not have a direct export button. For exportable reports, use the [Export module](https://manual.tourpaq.com/export-1/export) or the individual finance and booking reports.
 
 ***
 

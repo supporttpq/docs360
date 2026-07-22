@@ -18,6 +18,8 @@ layout:
     visible: true
   tags:
     visible: true
+  actions:
+    visible: true
 ---
 
 # Statistics in All bookings
@@ -60,7 +62,7 @@ Before using Statistics, ensure the following:
 * Statistics are calculated **per passenger** — if you need booking-level totals, use [All Bookings Totals](https://manual.tourpaq.com/booking/all-bookings/all-bookings-totals)
 
 {% hint style="warning" %}
-Always click **Display** in All Bookings **before** opening Statistics. If you change filters, click Display again before refreshing Statistics — otherwise the statistics will reflect the previous filter set.&#x20;
+Always click **Display** in All Bookings **before** opening Statistics. If you change filters, click Display again before refreshing Statistics — otherwise the statistics will reflect the previous filter set.
 {% endhint %}
 
 ***
@@ -140,36 +142,6 @@ Change the statistics type, level, or filters as needed. Always click **Display*
 4. Click **Display** to see both periods side by side
 
 Use Compare Statistics to analyse year-on-year performance, compare two campaigns, or evaluate seasonal differences.
-
-***
-
-### FAQ
-
-**Q: Why are my statistics empty even though I know there are bookings?** The most common causes are: no Brand selected, a date filter with only one date filled in (missing `From` or `To`), or filters changed without clicking Display again. Also note: if your departure dates span more than 12 months, some interval-based statistics may not display. Check all these points, click Display in All Bookings, then reopen Statistics.
-
-***
-
-**Q: Are statistics calculated per booking or per passenger?** All statistics in this view are calculated **per passenger**. Totals, averages, and profit figures all reflect passenger-level data. If you need booking-level aggregates, use [All Bookings Totals](https://manual.tourpaq.com/booking/all-bookings/all-bookings-totals).
-
-***
-
-**Q: Which date filter should I use — Booking, Departure, or Arrival?** Use **Booking Period** when you want to analyse when customers made their reservations — ideal for campaign and sales performance analysis. Use **Departure Period** to analyse when customers travel — ideal for operational planning and capacity analysis. Use **Arrival Period** to analyse when customers reach the destination — ideal for in-destination planning. You can combine them, but always use complete pairs.
-
-***
-
-**Q: Why do Statistics numbers differ from All Bookings Totals?** Statistics are **per passenger** — averages and per-pax figures. Totals are **aggregated booking-level** counts and sums. They answer different questions. Also check that the filters and date periods are identical between the two views before comparing numbers.
-
-***
-
-**Q: How do I compare this year's results with last year's?** Use **Compare Statistics**. Set your primary filters to this year's period and click Display. In Statistics, enable Compare Statistics and set the comparison period to the equivalent period last year. Click Display to see both periods side by side.
-
-***
-
-**Q: Can I export statistics to Excel?** If export is enabled in your environment, an **Export** or **Excel** button will be visible in or near the Statistics view. If no export option is visible, contact your Tourpaq administrator to confirm whether this feature is available for your user role and configuration.
-
-***
-
-**Q: How often are statistics updated?** Statistics are generated in real time based on the current filtered result set. Every time you change filters in All Bookings and click Display, the next Statistics view will reflect the latest data.
 
 ***
 

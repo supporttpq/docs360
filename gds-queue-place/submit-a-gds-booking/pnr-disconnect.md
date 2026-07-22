@@ -156,27 +156,3 @@ A cancelled booking will still display its associated PNR in the **All Bookings*
 #### Screenshot
 
 <figure><img src="../../.gitbook/assets/image (786).png" alt=""><figcaption></figcaption></figure>
-
-
-
-### FAQ
-
-#### Does disconnecting a PNR cancel anything in Amadeus?
-
-No. Disconnecting only removes the link in Tourpaq. The Amadeus PNR stays unchanged.
-
-#### Can I reconnect the same PNR later?
-
-Yes. Reassign the PNR from the booking’s **GDS** tab. The PNR must match the criteria listed above.
-
-#### What changes can I make in Tourpaq after disconnecting?
-
-You can edit passenger details, adjust passenger count, change titles, and cancel the Tourpaq booking without affecting the Amadeus PNR.
-
-#### Why can’t I reassign the PNR after changing titles?
-
-Reassignment requires the same passenger count and the same passenger distribution per gender. If these do not match, Tourpaq blocks reassignment.
-
-#### Will Tourpaq keep syncing with Amadeus after disconnect?
-
-No. Tourpaq stops receiving GDS updates until the PNR is reassigned.
