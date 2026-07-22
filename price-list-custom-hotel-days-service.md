@@ -157,3 +157,165 @@ After the service has run, the rule is active, and the **Price List has been gen
 7. Save the **booking**.
 
 <figure><img src=".gitbook/assets/image (709).png" alt=""><figcaption></figcaption></figure>
+
+## Support Transport Hotel Combined with Custom Hotel Days
+
+### Overview
+
+Tourpaq supports combining **Charter or Real Transport** with **multiple hotel stays** within a single booking by using **Custom Hotel Days** together with a dedicated **Transport Hotel**.
+
+Instead of requiring the passenger to stay in a single hotel for the entire transport period, the booking can now be divided into multiple accommodation periods while keeping the same transport itinerary.
+
+This is achieved by assigning the passenger to a **fictive room** in a hotel configured as a **Transport Hotel**. The fictive room is used only to maintain the connection with the transport booking and does not represent an actual accommodation.
+
+Because of this, passengers can move between different hotels—or even different room types within the same hotel—without affecting the transport booking.
+
+The fictive transport room is not shown on the customer ticket.
+
+***
+
+### How it Works
+
+When all of the following conditions are met:
+
+* The booking uses **Custom Hotel Days**
+* A **Transport Hotel**  is configured (Hotel -> Room Type -> Link -> Is Fictive = True)
+* The room in the Transport Hotel is marked as **Fictive**
+
+Tourpaq allows the booking to contain:
+
+* one or more real hotel stays;
+* different hotels during the same holiday;
+* different room types within the same hotel;
+* one fictive Transport Hotel room that remains linked to the transport.
+
+The Transport Hotel period may overlap with one or more actual hotel stays. This is possible because the standard overlap validation is not applied to fictive Transport Hotel rooms.
+
+{% hint style="info" %}
+The fictive room is used only for transport planning and does not represent an actual accommodation.
+{% endhint %}
+
+***
+
+### Fictive Room Configuration
+
+Inside the Custom Hotel Day Booking, create or configure a room with the following setting.
+
+**Room configuration**
+
+| Setting    | Value   |
+| ---------- | ------- |
+| Is Fictive | Enabled |
+
+<figure><img src=".gitbook/assets/06.07.2026_13.20.50_REC.png" alt=""><figcaption></figcaption></figure>
+
+A fictive room is intended only for operational purposes and is not treated as a normal accommodation room.
+
+***
+
+### Custom Hotel Days
+
+When creating a booking with **Custom Hotel Days**, the passenger can now have:
+
+* a normal hotel stay
+* a fictive Transport Hotel stay covering the transport period
+
+The overlapping dates are accepted because the Transport Hotel validation is skipped for fictive rooms.
+
+***
+
+### Transport Bookings
+
+This functionality is especially useful for **Charter and Real Transport** bookings.
+
+A passenger can:
+
+* keep a single transport itinerary throughout the holiday;
+* stay in multiple hotels during the trip;
+* change room type during the stay if needed;
+* remain connected to the transport through a fictive Transport Hotel room without affecting the actual accommodation.
+
+This provides much greater flexibility than the previous Combi Hotel approach while keeping transport and accommodation independent.
+
+***
+
+### Validation Rules
+
+The standard validation that prevents overlapping hotel stays remains unchanged for all normal hotels and rooms.
+
+The validation is skipped only when **all** of the following conditions are true:
+
+| Condition                  | Required |
+| -------------------------- | -------- |
+| Hotel is a Transport Hotel | Yes      |
+| Room is marked as Fictive  | Yes      |
+
+If either condition is not met, the normal validation applies and overlapping hotel stays are not allowed.
+
+***
+
+### Example
+
+### Example: Booking with multiple hotels using Transport Hotel and Custom Hotel Days
+
+The following example shows how **Transport Hotel** combined with **Custom Hotel Days** allows you to split a stay into multiple hotel periods while keeping the same transport booking.
+
+<figure><img src=".gitbook/assets/14.07.2026_11.00.37_REC (1).png" alt=""><figcaption></figcaption></figure>
+
+#### **Scenario**
+
+A customer books a **8-night charter holiday** from Copenhagen (CPH) to Bangkok (BKK).
+
+Instead of staying in a single hotel for the entire holiday, the booking is divided into multiple hotel stays:
+
+* **Hotel A:** 30 Nov - 6 Dec (7 nights) - Transport Hotel selected as Custom Hotel Days
+* **Hotel B:** 30 Nov - 2 Dec (2 nights) - Hotel Only
+* **Hotel C:** 2 Dec - 6 Dec (4 nights) - Hotel Only
+
+The transport remains unchanged throughout the booking, while each hotel stay has its own check-in/check-out dates.
+
+#### Room change during the stay
+
+The same functionality can also be used when the customer stays at **the same hotel** but changes room during the holiday.
+
+For example:
+
+| Period         | Hotel      | Room Type     |
+| -------------- | ---------- | ------------- |
+| 30 Nov - 2 Dec | City Hotel | Standard Room |
+| 2 Dec - 6 Dec  | City Hotel | Deluxe Room   |
+
+This allows customers to upgrade or change accommodation during their stay without creating a separate booking.
+
+#### Why is this useful
+
+This functionality makes it possible to combine **Charter or Real Transport** with **multiple accommodation periods** within a single booking.
+
+Typical use cases include:
+
+* staying at multiple hotels during the same holiday;
+* splitting the stay between different destinations or resorts;
+* changing room type during the holiday;
+* keeping one transport itinerary while accommodation changes over time.
+
+
+
+{% hint style="info" %}
+While **Combi Hotels** were previously used to achieve similar results, **Transport Hotel combined with Custom Hotel Days** provides a much more flexible solution. Hotels and room periods can now be configured independently, making it possible to build almost any accommodation combination within a single booking.
+{% endhint %}
+
+### Creating a Booking Transport Hotel combined with Custom Hotel Day
+
+#### Steps
+
+1. Click **New Booking**.
+2. Select the **number of passengers**.
+3. Select the **customer**.
+4. Select the **transport**
+5. Select the **Transport Hotel** configured for Custom Hotel Day bookings.
+6. Select **Hotel Only**
+7. Click **Take Allotment**.
+8. Save the **passenger information**.
+9. Save the **booking**.
+
+<figure><img src=".gitbook/assets/07.07.2026_14.06.20_REC.png" alt=""><figcaption></figcaption></figure>

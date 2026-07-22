@@ -1,62 +1,34 @@
 # Real Transports
 
-Real Transports can be found in **Transports/Real Transports**. They are a special case and as such are somewhat difficult to create.
+## **Overview** <a href="#overview" id="overview"></a>
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
+Real Transport provides a hybrid model that combines dynamic GDS availability with the stability of predefined pricelist prices. Instead of relying solely on preconfigured flights or guarantee seats, the system retrieves live transport options from the GDS and constructs valid round-trip combinations at the moment of booking.
 
-1. Just like any transport, the user has to write it's code and select the departure and arrival. Unlike any transport, it is imperative to select the **Reporting Type**. After the actions have been completed, the user can click the **Save** button and proceed to the next step.
+The feature allows Tourpaq to:
 
-<figure><img src="../.gitbook/assets/image (7) (1) (2).png" alt=""><figcaption></figcaption></figure>
+* Automatically retrieve available outbound and return flights from the GDS.
+* Match flights to the travel dates and city pairs defined in the pricelist.
+* Build complete travel packages that follow predefined business rules (minimum/maximum stay, hotel pairing, transport rules).
+* Sell GDS flights at the fixed prices specified in the pricelist, independent of the underlying flight cost.
+* Reduce reliance on empty-leg flights, minimize guaranteed seat usage, and optimize prorated seat purchasing.
 
-2. The next step is to configure the transport's timetable. This process has the same steps as a normal transport, as in filling star and end dates, departure and arrival times, but now is mandatory to fill the **Flight No.** case. To complete the action, the user has to press **Insert**.
+By anchoring the dynamic transport to an existing pricelist, Tourpaq maintains commercial control and pricing consistency while gaining the flexibility and efficiency of real-time transport sourcing.
 
-<figure><img src="../.gitbook/assets/image (8) (1) (3).png" alt=""><figcaption></figcaption></figure>
+## **Purpose** <a href="#purpose" id="purpose"></a>
 
-3. The last step in creating a real transport is setting up it's allotments from **All.Manager**. The user will have to fill in the start and end dates, the number of days between flights, the number of seats, and guaranteed seat, as well as the seat price. To complete this stage, the user has to press **Create,** and after that, **Generate**.
+Transport Dynamic Packaging Anchored on Pricelist integrates Tourpaq with the GDS system, enabling the system to dynamically book real-time transport options while selling them under an existing pricelist (fixed price). This document describes how the feature works, how transport combinations are created, and how they interact with the Tourpaq booking and pricing structure.
 
-<figure><img src="../.gitbook/assets/image (9) (1) (3).png" alt=""><figcaption></figcaption></figure>
+## **Goals** <a href="#goals" id="goals"></a>
 
-<figure><img src="../.gitbook/assets/image (11) (1) (3).png" alt=""><figcaption></figcaption></figure>
+The primary goals of Transport Dynamic Packaging Anchored on Pricelist are:
 
-4. The only problem with a real transport is the fact that the user has to create one for outbound and one for homebound. So in the end, the user will have created 2 Real Transports for use on one Normal Transport.
+* To eliminate empty-leg flights.
+* To reduce costs associated with prorated and guarantee seats.
+* To dynamically pack transport while maintaining fixed pricing.
+* To support round-trip creation and valid hotel combinations within a single booking flow.
 
-## Real Transport <a href="#real-transport" id="real-transport"></a>
+## **Definitions** <a href="#definitions" id="definitions"></a>
 
-To properly use a real transport, the user must have a normal transport linked to it. A normal transport cannot be edited for this purpose. A new transport has to be created specifically for that purpose.
-
-**These settings also apply to GDS.**
-
-1.  The user creates the transport as usual, with a significant change. He will check the case for **Dynamic Itineraries**.
-
-    <figure><img src="../.gitbook/assets/image (717).png" alt=""><figcaption></figcaption></figure>
-2. For this step, the user must create an interval and assign the transport to a brand.
-3.  This step creates the link between a normal and real transports. For this, the user has to go to **Legs** and click on **New Leg** button.
-
-    <figure><img src="../.gitbook/assets/image (718).png" alt=""><figcaption></figcaption></figure>
-4. Next the user has to set the departure and arrival, as well as the days between flights and click **Save**
-
-<figure><img src="../.gitbook/assets/image (125).png" alt=""><figcaption></figcaption></figure>
-
-This action has to be repeated but with the departure and arrival places inversed. So that in the end it will look like this.
-
-<figure><img src="../.gitbook/assets/image (719).png" alt=""><figcaption></figcaption></figure>
-
-5. Another thing the user has to do is check the **OwnDatabase** and **OneWay** boxes and then click **Save**.
-
-<figure><img src="../.gitbook/assets/image (15) (2).png" alt=""><figcaption></figcaption></figure>
-
-6. The last thing to do in this section is to setup the flights. Press the **Configure** button, select the departure date and then press **Test Search**
-
-<figure><img src="../.gitbook/assets/image (720).png" alt=""><figcaption></figcaption></figure>
-
-The **Test Search** will display all available real transport flights. The user can narrow them down if there are too many, using the filters.
-
-<figure><img src="../.gitbook/assets/image (721).png" alt=""><figcaption></figcaption></figure>
-
-After the user has found the real transport they wanted, the settings can be saved. The same thing must be done for the second leg.
-
-And lastly, after all these have been made, the user has to press **Update Flight Data** for both legs.
-
-<figure><img src="../.gitbook/assets/image (17) (2).png" alt=""><figcaption></figcaption></figure>
-
-7. From this point on everything is done like in the case of a normal transport. The user can proceed to create a fix quota, save the transport, reset the cache and start booking.
+* **City pair (Leg):** A pair of valid IATA airport codes representing a travel route (e.g., BLL–AYT).
+* **Segment:** A single direct flight.
+* **Flight:** One or more linked segments creating a complete journey between the airports of a city pair.

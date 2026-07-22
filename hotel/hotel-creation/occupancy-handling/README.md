@@ -52,23 +52,3 @@ See [Single Room Suplement](single-room-supplement.md).
 * **Improved pricing accuracy:** Adjust costs for single vs. multiple occupancy.
 * **Better availability management:** Reflect real-world capacity more precisely.
 * **Optimized sales:** Prevents booking errors and maximizes room utilization.
-
-### FAQ
-
-**Q: Why can’t I see or use Occupancy / Handling?**\
-**A:** It must be enabled **per company**. If you don’t have access, ask your system admin.
-
-**Q: What’s the difference between “Single Room Cost” and “Single Room Supplement”?**\
-**A:** Both are used for single occupancy pricing, but they are configured in different places and can behave differently. Use the setup that matches your pricing model. See [Single Room Cost](single-room-cost.md) and [Single Room Suplement](single-room-supplement.md).
-
-**Q: How do I block an invalid bed/room setup from being booked?**\
-**A:** Use [Room Restriction](room-restriction.md) to define the allowed combinations.
-
-**Q: Can the same room type have different Max Pax values?**\
-**A:** Yes. Use [Different Max Pax](different-max-pax.md) and manage availability per configuration.
-
-**Q: Where do I set availability for each Max Pax configuration?**\
-**A:** Availability is managed per day in **Hotel → Allotment Per Day**. See [Different Max Pax](different-max-pax.md).
-
-**Q: Should I use a fixed amount or a percentage for single occupancy pricing?**\
-**A:** Use **fixed amount** when the uplift is constant. Use **percentage** when it should scale with the room price.

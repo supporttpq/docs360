@@ -2,7 +2,7 @@
 
 ### Overview
 
-The **Hotel Release Reporting Scheduler** is a set of configurable rules that are executed periodically by a Windows service.&#x20;
+The **Hotel Release Reporting Scheduler** is a set of configurable rules that are executed periodically by a Windows service.
 
 The **Hotel Release** functionality controls when rooms from allotment and secured inventory are withdrawn from sale.
 
@@ -88,7 +88,7 @@ Cancelled rooms that fall under a release period remain unavailable for new book
 
 #### 1. “Show all” Filter
 
-* &#x20;**“Show all”  -** checkbox
+* **“Show all” -** checkbox
 
 **Behavior**
 
@@ -124,17 +124,17 @@ The second column changes depending on the selected **INTERVAL**:
 
 ### Field definitions
 
-| Field                   | What it controls                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Interval**            | <p>How often the scheduler runs. </p><ul><li>If <strong>Daily</strong> is chosen the scheduler will run every day. Next to interval drop down is a date field and if chosen it will run the scheduler not before that date.</li><li>If <strong>Weekly</strong> the scheduler will run every week at a mandatory day specified right next to the interval drop down.</li><li>If <strong>Monthly</strong> is chosen the scheduler will run every month on a day specified right next to interval drop down.</li><li>If <strong>Annually</strong> is chosen the scheduler will run every year on a day specified right next to interval drop down.</li></ul> |
-| **Days**                | <p><strong>For DAILY:</strong></p><ul><li>Tooltip: Number of days before the release is activated.<br>After creation, the value can be adjusted in “Allotment per Day”.</li></ul><p><strong>For NON-DAILY:</strong></p><ul><li>Tooltip: Number of days before the release is activated.</li></ul>                                                                                                                                                                                                                                                                                                                                                         |
-| **Hour**                | <p>Time of day when the release is activated.<br>If an email is configured, it is sent at this time.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| **Email**               | <p>If an email address is defined, a “Hotel Release” email is sent listing affected rooms and dates.<br>Requires a configured “Hotel Release” template in Email Center for the first agency.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| **Room Type**           | The room type(s) affected by the release.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| **From Date**           | The first date when the release can be activated.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| **To Date**             | The last date when the release can be activated.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| **Cut Down Allotments** | <p>If enabled, rooms are removed from sale after the release.<br>Email sending is independent of this setting.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| **Clone**               | Enables a Clone button to duplicate existing release lines.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Field                   | What it controls                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Interval**            | <p>How often the scheduler runs.</p><ul><li>If <strong>Daily</strong> is chosen the scheduler will run every day. Next to interval drop down is a date field and if chosen it will run the scheduler not before that date.</li><li>If <strong>Weekly</strong> the scheduler will run every week at a mandatory day specified right next to the interval drop down.</li><li>If <strong>Monthly</strong> is chosen the scheduler will run every month on a day specified right next to interval drop down.</li><li>If <strong>Annually</strong> is chosen the scheduler will run every year on a day specified right next to interval drop down.</li></ul> |
+| **Days**                | <p><strong>For DAILY:</strong></p><ul><li>Tooltip: Number of days before the release is activated.<br>After creation, the value can be adjusted in “Allotment per Day”.</li></ul><p><strong>For NON-DAILY:</strong></p><ul><li>Tooltip: Number of days before the release is activated.</li></ul>                                                                                                                                                                                                                                                                                                                                                        |
+| **Hour**                | <p>Time of day when the release is activated.<br>If an email is configured, it is sent at this time.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| **Email**               | <p>If an email address is defined, a “Hotel Release” email is sent listing affected rooms and dates.<br>Requires a configured “Hotel Release” template in Email Center for the first agency.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| **Room Type**           | The room type(s) affected by the release.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| **From Date**           | The first date when the release can be activated.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **To Date**             | The last date when the release can be activated.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| **Cut Down Allotments** | <p>If enabled, rooms are removed from sale after the release.<br>Email sending is independent of this setting.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| **Clone**               | Enables a Clone button to duplicate existing release lines.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 
 ### Scheduler Types
 
@@ -185,36 +185,3 @@ In annual mode, **Days After** is ignored.
 * Each scheduler row belongs to one hotel.
 * The scheduler only runs if the Windows service is running.
 * Use the release logs to audit what was sent and when.
-
-### FAQ
-
-#### Does this scheduler release rooms, or only send a report?
-
-It sends a scheduled release list.
-
-If **Cut Down Allotments** is enabled, it also updates availability.
-
-#### Can one scheduler rule cover multiple hotels?
-
-No. Each row is linked to one hotel.
-
-#### Which email address receives the release list?
-
-The address entered in the **Email** field for that scheduler row.
-
-#### What time does the list get sent?
-
-The **Hour** value in the scheduler row.
-
-#### Why are some dates missing from the exported interval?
-
-The exported interval is limited by:
-
-* **Start Period** and **End Period**
-* any period constraints on the underlying release rules
-
-#### What’s the difference between this and “Hotel release - automation”?
-
-Automation identifies rooms to release and marks allotments as **Suitable for release**.
-
-This scheduler controls when release lists are sent and over which date interval.

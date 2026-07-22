@@ -1,21 +1,22 @@
 # Board Type
 
-Each hotel defines a default board basis per room, as specified in the current hotel contract configuration. Additionally, some hotels support the application of board supplements, which can be optionally added to enhance or modify the default board offering.
+## **Intro**
 
-Board types are configurable at the company level and may be used for various purposes beyond indicating meal inclusions (e.g., internal categorization, pricing models).
+**Board Type** defines the meal plans available in the system. A board type represents a specific meal arrangement, such as Breakfast, Half Board, or All Inclusive.
 
-Board supplement policies vary by hotel:
+At the hotel level, the **Board Basis** defines which meal plan is included in the price.
 
-* **Uniform board type per room**: All guests assigned to a room must have the same board type or supplement.
-* **Individual board type per guest**: Each guest may independently select a different board type or supplement within the same room.
+A **Board Basis Extra** represents the meal plan included in the price of the room.. Each Board Basis Extra is linked to a Board Type, which identifies the meal plan it represents.
 
-Board type assignments are subject to change over time. A hotel contract may define one board type for a room in a given year and a different board type for the same room in subsequent contract periods, depending on negotiated terms.
+A **Board Supplement Extra** represents an upgrade to a different meal plan. Like a Board Basis Extra, it is linked to a Board Type that defines the meal plan being offered.
 
-System implementations should accommodate these variations to ensure accurate handling of board type configurations and restrictions across hotels and contract versions.
+**Board Supplement Policy** controls how board supplements are handled in the booking process. The policy is configured on the **Extra Category** level and is shared by all hotels linked to that Extra Category.
+
+Board type assignments are subject to change over time. A hotel contract may define one board type for a room in a given year and a different board type for the same room in other contract periods, depending on negotiated terms.
 
 ## Board Types Management
 
-The **Board Types** section allows system administrators or product managers to configure and maintain the list of board types available in the system. These types are used to define the meal and service options associated with a room booking at a hotel.
+The **Board Types** section allows Administrators to configure and maintain the list of board types available in the system. These types are used to define the meal and service options associated with a room booking at a hotel.
 
 <figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -25,18 +26,133 @@ Board Types represent different service packages offered by hotels. These may in
 
 ### UI Elements
 
-| Column       | Description                                                                                                                                                                                    |
-| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Name**     | Display name of the board type, shown in system  (mandatory)                                                                                                                                   |
-| **Code**     | Unique system identifier (mandatory).                                                                                                                                                          |
-| **ListName** | Label displayed in selection lists (mandatory)                                                                                                                                                 |
-| **Order**    | <p>The order of Board types is used when the system must automatically downgrade or upgrade a board type.<br>The topmost board type will be considered the highest order (most expensive).</p> |
+| Column                                                                                                       | Description                                                                                                                                                                                    |
+| ------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Name**                                                                                                     | Display name of the board type, shown in system (mandatory)                                                                                                                                    |
+| **Code**                                                                                                     | Unique system identifier (mandatory).                                                                                                                                                          |
+| **List Name**                                                                                                | Is used in all communication with the hotel (lists) (mandatory)                                                                                                                                |
+| **Order** <i class="fa-arrow-up-long">:arrow-up-long:</i><i class="fa-arrow-down-long">:arrow-down-long:</i> | <p>The order of Board types is used when the system must automatically downgrade or upgrade a board type.<br>The topmost board type will be considered the highest order (most expensive).</p> |
+| **Trash icon** <i class="fa-trash-can">:trash-can:</i>                                                       | Deletes the selected board from the list.                                                                                                                                                      |
 
 ### Actions
 
 * **Create**: Click the `Create` button (top right) to add a new board type. You will need to provide values for at least the `Name, Code and ListName` fields.
 * **Delete**: Use the trash icon next to a board type to remove it. Deletion is only possible if the board type is not referenced in existing contracts or configurations.
 * **Ordering:** The order of Board types is used when the system automatically downgrades or upgrades a board type.
+* **Edit:** Opens the selected Board Basis so you can view or modify its configuration, such as Name, Code, List Name, and Description.
+
+## Edit Board Type
+
+<figure><img src="../.gitbook/assets/14.07.2026_16.05.15_REC.png" alt=""><figcaption></figcaption></figure>
+
+### Overview
+
+On this page you can:
+
+* Modify an existing board type.
+* Maintain multilingual translations. (Custom text)
+* Add a customer-facing description that can be displayed in different parts of the system.
+
+***
+
+### Page Layout
+
+The page contains two language tabs:
+
+* **Default text** - The default language used by the system.
+* **Custom text (for example Tourpaq DK)** - Used to customize the appearance and description of the extra in booking flows or documentation.
+
+<figure><img src="../.gitbook/assets/14.07.2026_16.10.13_REC.png" alt=""><figcaption></figcaption></figure>
+
+Only the text fields are translated. The board type code and the list name remains the same across all languages.
+
+***
+
+## Field Description
+
+**Name \* -** The **Name** is the internal name of the board type.
+
+This value is used throughout Tourpaq when selecting a board type during hotel contract configuration.
+
+#### Example
+
+| Value         | Result                                               |
+| ------------- | ---------------------------------------------------- |
+| All Inclusive | Displayed as the board type in configuration screens |
+| Breakfast     | Used when assigning breakfast to hotel rooms         |
+
+***
+
+**Code \* -** The **Code** is the unique identifier for the board type.
+
+The code is primarily used internally by the system and integrations. It should be short, unique, and should not be changed after the board type has been used in hotel contracts.
+
+#### Example
+
+```
+ALLINC
+```
+
+***
+
+**List Name \* -** The **List Name** is the customer-friendly name shown in selection lists and dropdown menus.
+
+#### Example
+
+| Name          | List Name     |
+| ------------- | ------------- |
+| All Inclusive | All Inclusive |
+| Breakfast     | Breakfast     |
+
+***
+
+**Description -** The **Description** provides additional information about what the board type includes.
+
+This text can be displayed in customer-facing areas such as web booking or travel documents, depending on system configuration.
+
+Use this field to explain exactly what is included in the meal plan.
+
+#### Example
+
+```
+Breakfast, lunch, dinner, snacks and selected local beverages are included throughout the stay.
+```
+
+***
+
+## Custom Text
+
+Used to customize the appearance and description of the extra in booking flows or documentation.
+
+The customized fields are:
+
+* Name
+* Description
+
+The **Code** remains identical in every language.
+
+#### Example
+
+| Default       | Danish        |
+| ------------- | ------------- |
+| All Inclusive | All Inclusive |
+| Breakfast     | Morgenmad     |
+| Half Board    | Halvpension   |
+
+***
+
+## Example
+
+The following example creates a standard **All Inclusive** board type.
+
+| Field       | Value                                                                                     |
+| ----------- | ----------------------------------------------------------------------------------------- |
+| Name        | All Inclusive                                                                             |
+| Code        | ALLINC                                                                                    |
+| List Name   | All Inclusive                                                                             |
+| Description | Breakfast, lunch, dinner, snacks and selected beverages are included throughout the stay. |
+
+Once saved, the board type becomes available when configuring hotel room board basis in hotel contracts and can be selected during room setup.
 
 ### Use in System
 

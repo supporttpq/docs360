@@ -126,23 +126,3 @@ Files include detailed passenger and customer data, such as:
 ### Release Reporting
 
 * Used to manage and communicate release-related data (details vary by vendor setup).
-
-### FAQ
-
-**Does every reporting type work out of the box?**\
-No. Each reporting type requires the corresponding service to be enabled. Contact **Tourpaq Support** to activate it for your company.
-
-**Where do I set the default reporting type for a transport?**\
-Set it in **Transport → General tab**. You can override it per timetable in **Transport → Timetable tab**.
-
-**How often does the Communication Service send/check reports?**\
-It checks the schedulers every **9 minutes**. Actual sending depends on your scheduler configuration.
-
-**What are schedulers, and where do I configure them?**\
-Schedulers control when a report is generated and sent. Configure them in **Transport → Communication tab**.
-
-**What is sent for Passenger Name List (PNL)?**\
-A PDF sent by email, containing passenger and flight details (including seats, if assigned).
-
-**Which reporting type should I choose (PNL vs Paxport vs vendor-specific formats)?**\
-Choose the one required by your vendor. Some vendors expect a PDF (PNL). Others require a specific file format (e.g., Paxport ASCII or Radixx/DAT formats).

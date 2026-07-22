@@ -74,36 +74,3 @@ Set one of them, not both.
 2. Use **Schedulers** to review status and history.
 {% endstep %}
 {% endstepper %}
-
-### FAQ
-
-#### Can I send the report to more than one email address?
-
-Yes. Add multiple addresses in **E-mail**.
-
-#### What’s the difference between **Bookings Made** and **Days After**?
-
-* **Bookings Made** targets recently created bookings.
-* **Days After** targets upcoming arrivals.
-
-#### Can I use **Bookings Made** and **Days After** together?
-
-No. Choose one. They filter different report types.
-
-#### Why did I receive an empty report?
-
-You likely enabled **Empty List**.\
-Disable it to skip empty sends.
-
-#### Where can I see what was sent earlier?
-
-Open **Schedulers** and review the scheduler history and status.
-
-#### How do I stop the emails from being sent?
-
-Disable or delete the scheduler in **Schedulers**.
-
-#### The report is not sent. What should I check?
-
-Check **Schedulers** for errors and last run time.\
-Also verify the recipient email addresses are correct.

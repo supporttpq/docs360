@@ -108,66 +108,6 @@ Shown in **Offer** and **Create Booking** when the hotel pop-up is opened. This 
 
 <figure><img src="../../.gitbook/assets/soldOutUse-817314e445a9b01d8448d11a41d559c2.png" alt=""><figcaption></figcaption></figure>
 
-### FAQ
-
-<details>
-
-<summary>Where do I find the Hotel Web page?</summary>
-
-Go to **Hotel > Hotels**. Select the hotel. Open **Overview > Web**.
-
-</details>
-
-<details>
-
-<summary>Why do I see different text per brand?</summary>
-
-Each brand has its own tab. Text you enter is saved per brand.
-
-</details>
-
-<details>
-
-<summary>Which field is shown on the website hotel page?</summary>
-
-Use **HTML description**. Use **Short description** for lists and search results.
-
-</details>
-
-<details>
-
-<summary>What does <code>[SelectOfferEmailSummary]</code> do?</summary>
-
-It is a marker used in offers. Only the text above the marker is shown in the offer summary.
-
-</details>
-
-<details>
-
-<summary>Where is “Customer info” shown?</summary>
-
-It is shown when a voucher is generated.
-
-</details>
-
-<details>
-
-<summary>Are “Internal notes” visible to customers?</summary>
-
-No. They are shown internally in **Offer** and **Create Booking**.
-
-</details>
-
-<details>
-
-<summary>Do “Sold-out dates” prevent bookings?</summary>
-
-No. They are informational only.
-
-To block sales, use [Stop Sales](../../stop-sales.md) or [Close Out](../../close-out/).
-
-</details>
-
 <details>
 
 <summary>How do I control which facilities show online?</summary>

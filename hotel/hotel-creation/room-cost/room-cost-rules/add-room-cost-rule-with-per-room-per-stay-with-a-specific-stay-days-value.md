@@ -112,45 +112,6 @@ If the cost does not show up:
 * Verify the booking stay length matches **Stay Days No** exactly.
 * If you edited the rule after creating the booking, create a **new** test booking.
 
-### FAQ
-
-#### What does **Stay Days No** measure?
-
-It is the stay length your setup uses for matching.
-
-In most setups, it follows the booking’s arrival/departure interval.
-
-If you are unsure, confirm by creating a booking and checking which stay length it reports.
-
-#### Why does a per-stay cost look like a per-day value in Hotel Cost?
-
-Tourpaq can distribute a per-stay value across days internally.
-
-This supports allocation, reporting, and totals.
-
-#### Does changing the rule update existing bookings?
-
-Usually no.
-
-Test changes on a **new booking** unless your process explicitly recalculates costs.
-
-#### Can I support multiple stay lengths?
-
-Yes.
-
-Create one rule per stay length and set **Stay Days No** on each rule.
-
-#### The booking is **OK**, but there is no Room Cost line. Why?
-
-Most misses are caused by filters.
-
-Re-check:
-
-* validity period
-* room type
-* transport interval
-* **Stay Days No** match
-
 ### Related pages
 
 * [Add room cost rule with "Per Room Per Stay" type](add-room-cost-rule-with-per-room-per-stay-type.md)

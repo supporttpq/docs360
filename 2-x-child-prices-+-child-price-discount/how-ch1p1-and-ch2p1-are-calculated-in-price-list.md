@@ -108,34 +108,3 @@ Use `CH1P1` and `CH2P1` to validate that:
 * Child prices follow the configured **child profit margin** (`CPM1`).
 * Room cost and stay length are applied correctly.
 * Transport cost is included as expected.
-
-## FAQ
-
-#### What are CH1P1 and CH2P1?
-
-They are child selling prices in the Price List for interval 1 (P1).
-
-CH1 typically represents child 1. CH2 represents child 2+.
-
-#### Do CH1P1 and CH2P1 use different profit margins?
-
-No. Both use the same child profit margin field for the interval (for example `CPM1`).
-
-#### Where do I enable the CH1/CH2 columns?
-
-Open the Price List grid’s column visibility menu (three dots).
-
-Enable the **CHILD …** column groups.
-
-#### Why are CH1P1 / CH2P1 blank or 0?
-
-Common causes:
-
-* Missing hotel cost data for the period.
-* Missing transport cost data.
-* The company feature for child profit margin is not enabled.
-* The price list entry is not fully created for the date range.
-
-#### Do child adjustments (CH1PA/CH2PA) affect CH1P1/CH2P1?
-
-Yes. They are added to the base formula and can be positive or negative.

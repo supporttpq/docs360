@@ -91,38 +91,3 @@ Create a booking with one guest in the target room type.
 {% hint style="info" %}
 If the supplement does not apply, check dates, age limits, and room type matching first.
 {% endhint %}
-
-### FAQ
-
-#### Does this change the room cost or the sales price?
-
-It adds a **supplement** to the booking.
-
-It does not directly change the **room cost** setup.
-
-#### What’s the difference between “Single Room Cost” and “Single Room Supplement”?
-
-[Single Room Cost](single-room-cost.md) adds cost in the **Room Cost** setup.
-
-Single Room Supplement applies the `SINGLE` supplement on the booking.
-
-#### Why didn’t the supplement apply?
-
-Most cases are:
-
-* The `SINGLE` supplement is not **For sale**.
-* The booking dates are outside **Start Date / End Date**.
-* The guest age is outside **From Age / To Age**.
-* The room type does not match **Hotel Room**.
-
-#### What does “PD” mean?
-
-**PD** means **Per day**.
-
-If enabled, Tourpaq applies the value per day, not per stay/interval.
-
-#### Can I set different single supplements for different rooms?
-
-Yes.
-
-Create separate rules per room type using **Hotel Room**.

@@ -39,20 +39,3 @@ On the booking page, passengers assigned through automatic seating are marked wi
 When assigning seats manually, the **Keep seat price** option is available:
 
 * If checked, the **SEAT supplement** will not be added to the passenger.
-
-### FAQ
-
-**When does automatic seating run?**\
-It runs the configured number of hours before departure, per transport, when **Use Automatic Seating** is enabled.
-
-**Who gets seats assigned automatically?**\
-Only passengers without a seat assignment are affected. Existing seat assignments are kept.
-
-**What is the difference between “Automatic Seating” and “Automatic Real Transport Seating”?**\
-Use **Automatic Seating** for normal transports. Use **Automatic Real Transport Seating** for real transports.
-
-**Who receives the report email?**\
-Recipients are taken from **Email address(es)** on the Transport page. Reporting follows the selected reporting type.
-
-**Why don’t I see the seat supplement on the ticket/Customer Center?**\
-Passengers assigned through automatic seating are marked with **No seat supplement**, so the supplement is not shown externally.

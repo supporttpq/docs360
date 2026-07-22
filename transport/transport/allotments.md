@@ -130,29 +130,3 @@ For the following transports, bookings (with 2 passengers) for all combinations 
 This is how the allotment is booked for each case:
 
 <figure><img src="../../.gitbook/assets/image-5ea6d85585845348a393ecdb2a2cd848.png" alt=""><figcaption></figcaption></figure>
-
-### FAQ
-
-**What is “Generate days number”?**\
-It’s the interval length (in days) used to generate departure dates inside a selling period. You can only pick values that match defined period intervals (for example, 7 or 14).
-
-**What do I1–I4 mean?**\
-They are period intervals. Each interval gets its own seat availability and bookings (AO1/BO1/FO1, etc.).
-
-**What do AO/BO/FO fields mean?**\
-AO\* fields are available places, BO\* fields are booked places, and FO\* fields are free places (available minus booked).
-
-**What happens with child transport bookings?**\
-A child transport booking reduces availability on the child transport and its configured parent transport(s). This applies separately to outbound and homebound sets.
-
-**Can I create a selling period if interval periods are missing?**\
-No. You must define interval periods first. Otherwise, Generate days number has no valid options.
-
-**Can I generate allotments if timetables are missing?**\
-No. Allotments are generated from timetable dates. Without timetables, there are no valid departures/returns to generate.
-
-**What prevents overbooking in practice?**\
-Free places (FO\*/FOT/FHT) are calculated from available minus booked. A booking should only be allowed when the relevant free places are sufficient.
-
-**When should I use guaranteed seats?**\
-Use them when seats are purchased upfront from a supplier. They remain a cost even if you do not sell them.

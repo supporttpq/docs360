@@ -18,6 +18,8 @@ layout:
     visible: true
   tags:
     visible: true
+  actions:
+    visible: true
 ---
 
 # Copy Booking
@@ -105,39 +107,3 @@ After passengers are copied, verify:
 * who is marked as the **main customer/contact** (email/phone)
 
 To edit passenger details, use [Edit Passenger](new-booking/edit-passenger/).
-
-### FAQ
-
-#### Can I copy passengers without creating a new booking first?
-
-No. Start in **Booking → New Booking** and build the new booking draft first.
-
-Then enter the original booking number **before** you click **Take Allotment**.
-
-#### Does Copy Booking copy transport, hotel, and extras too?
-
-You select **transport and hotel** in the new booking draft.
-
-Copy Booking then copies the **passenger list** from the original booking. Always review the booking before saving and sending anything.
-
-#### I don’t see the “copy booking number” field
-
-This field typically appears in the new booking flow **before** taking allotment. If you don’t see it:
-
-* confirm you have selected **transport and hotel** first
-* check if your user role/company configuration has this feature enabled
-
-#### The system says the booking number is invalid
-
-* Ensure you entered the correct booking number (no extra spaces).
-* Confirm that the original booking exists and that you have permission to view it.
-
-#### Passengers copied, but something looks wrong
-
-Open **Edit Passenger** and correct the details before sending documents or taking payment.
-
-#### When should I use Copy Booking vs Moved booking?
-
-Use **Copy Booking** to quickly reuse the passenger list.
-
-Use **Moved booking** when you are rescheduling and want to link the old and new bookings. See [Moved Booking](moved-booking.md).

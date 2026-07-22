@@ -262,27 +262,203 @@ This approach allows pricing to be fully managed within the **Extras Prices** ta
 
 ***
 
-### FAQ
+## Golf Course Packages
 
-#### Why is a passenger not showing in the Golf Courses list?
+### Overview
 
-Only passengers with the **Golf** checkbox enabled in the passenger list are included in the Golf Courses list.
+Golf course extras can either be sold individually or be included as part of a golf package. This feature ensures that golf rounds intended exclusively for packages are not displayed as standalone golf courses during the booking process.
 
-***
+The purpose is to prevent customers from selecting package-only golf rounds unless they have already selected the package that contains them.
 
-#### What is the difference between “Request Date/Time” and “Confirmed Time”?
-
-* **Request Date/Time** is the customer’s preferred time.
-* **Confirmed Time** is the final time confirmed by the provider (when applicable).
-
-***
-
-#### Why can’t I select any requested times?
-
-This usually means that time-slot availability is not configured for the golf product (or there is no availability for the selected date). Check the golf extra’s **Allotment Type** and time-slot setup (for example, **Generic** allotments) and confirm that allotments exist for the relevant dates.
+{% hint style="warning" %}
+Golf courses are currently **not supported in WebBooking**. This functionality applies to the Tourpaq booking application.
+{% endhint %}
 
 ***
 
-#### Do golf rounds and tee times appear on the ticket?
+## How It Works
 
-Yes, where configured: the ticket typically includes the golf course name, rounds, and requested/confirmed times. If information is missing, ensure the booking is saved and reprint/preview the ticket.
+When the **Golf Courses** page is displayed during booking, Tourpaq determines which golf course extras should be available.
+
+The visibility rules are based on the configured price of the golf extra.
+
+| Golf Extra Configuration | Behaviour                                                       |
+| ------------------------ | --------------------------------------------------------------- |
+| Price greater than 0     | Always displayed if the golf extra is eligible for the booking. |
+| Price equals 0           | Displayed only if it is included in a selected package.         |
+
+If a selected package is later removed, any golf course extras that were available solely because of that package are immediately removed from the Golf Courses page.
+
+***
+
+## Eligibility Logic
+
+### Package Eligibility
+
+A package is considered **eligible** for a booking if **at least one extra** contained in the package is eligible.
+
+If **none of the extras** in the package are eligible, the package is not applied.
+
+#### Example
+
+Package **Golf Weekend** contains:
+
+* Extra 1 (eligible)
+* Extra 2 (not eligible)
+* Extra 3 (not eligible)
+
+Because **Extra 1** is eligible, the package is applied.
+
+If none of the extras were eligible, the package would not be available.
+
+***
+
+## Configuration
+
+Extras Golf courses that should appear on the **Golf Courses** page are configured as:
+
+* **Extras Category = Golf**&#x20;
+
+<figure><img src="../../.gitbook/assets/extras ec.png" alt=""><figcaption></figcaption></figure>
+
+Golf Package- **must not** use the **Golf** extras category.
+
+Instead, they are configured using **any other Extras Category** and are linked to an **Extras Package**.
+
+Typically a package is configured as follows:
+
+*   Extras Category = Any category except **Golf**&#x20;
+
+    <figure><img src="../../.gitbook/assets/pack ec.png" alt=""><figcaption></figcaption></figure>
+*   Price should not be 0&#x20;
+
+    <figure><img src="../../.gitbook/assets/pack price.png" alt=""><figcaption></figcaption></figure>
+*   Contain more then one Extras&#x20;
+
+    <figure><img src="../../.gitbook/assets/pack content.png" alt=""><figcaption></figcaption></figure>
+
+Golf rounds that should be sold individually are configured with:
+
+* Extras Category = Golf
+* Normal selling price
+
+***
+
+## Booking Behaviour
+
+### Case 1 - Golf course sold individually
+
+A golf extra with a price greater than zero is always available for selection when it is valid for the booking.
+
+#### Example
+
+| Golf Extra |   Price | Result                             |
+| ---------- | ------: | ---------------------------------- |
+| Golf X     | 600 DKK | Displayed on the Golf Courses page |
+
+The customer can purchase the golf round independently.
+
+***
+
+### Case 2 - Golf course included in a selected package
+
+A golf extra with a price of zero is hidden unless the package containing it has been selected.
+
+#### Example
+
+Package selected:
+
+**Mallorca Golf Package**
+
+Included extras:
+
+* Extra 1
+* Extra 2
+* Extra 3
+* Extra 4
+
+| Golf Extra |   Price | Result    |
+| ---------- | ------: | --------- |
+| Golf X     | 600 DKK | Displayed |
+| Extra 1    |   0 DKK | Displayed |
+| Extra 2    |   0 DKK | Displayed |
+| Extra 3    |   0 DKK | Displayed |
+| Extra 4    |   0 DKK | Displayed |
+
+The customer now sees both individually purchasable golf rounds and the package extras included with the selected package.
+
+***
+
+### Case 3 - No package selected
+
+If no package has been selected, golf extras with a price of zero remain hidden.
+
+#### Example
+
+| Golf Extra |   Price | Result    |
+| ---------- | ------: | --------- |
+| Golf X     | 600 DKK | Displayed |
+| Extra 1    |   0 DKK | Hidden    |
+| Extra 2    |   0 DKK | Hidden    |
+| Extra 3    |   0 DKK | Hidden    |
+| Extra 4    |   0 DKK | Hidden    |
+
+Only golf rounds that can be purchased individually are shown.
+
+***
+
+### Case 4 - Package removed
+
+If a previously selected package is removed from the booking, all golf extras that were available exclusively through that package are removed from the Golf Courses page.
+
+#### Example
+
+Before removing the package:
+
+* Golf X
+* Extra 1
+* Extra 2
+* Extra 3
+* Extra 4
+
+After removing the package:
+
+* Golf X
+
+The package-only extras are no longer available because they are no longer included in the booking.
+
+***
+
+## Example Scenario
+
+The following configuration is used:
+
+| Golf Extra | Description                    |   Price |
+| ---------- | ------------------------------ | ------: |
+| Golf X     | Individual golf round          | 600 DKK |
+| Extra 1    | Golf round included in package |   0 DKK |
+| Extra 2    | Golf round included in package |   0 DKK |
+| Extra 3    | Golf round included in package |   0 DKK |
+| Extra 4    | Golf round included in package |   0 DKK |
+
+#### Without a package
+
+Customers only see:
+
+* Golf X
+
+#### After selecting a package
+
+Customers see:
+
+* Golf X
+* Extra 1
+* Extra 2
+* Extra 3
+* Extra 4
+
+#### After deselecting the package
+
+Customers again see only:
+
+* Golf X

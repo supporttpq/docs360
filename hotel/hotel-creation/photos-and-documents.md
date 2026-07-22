@@ -54,10 +54,19 @@ If you need to attach documents to a specific booking, use [Comments](../../book
    * Checkbox to mark one image as the **primary photo**.
    * The _main photo_ will be the first image customers see.
    * Only one photo should be selected per hotel.
-6. **Room Type**
-   * Links the photo to a specific room category (if applicable).
-   * Options: Dropdown with values like _Unspecified_, _Standard Room_, _Suite_, etc.
-   * If the photo represents a general facility (e.g., lobby, pool), leave as _Unspecified_.
+6.  **Room Type**
+
+    The Room Type photo functionality allows hotel images to be associated with specific room types. This helps ensure that room images displayed throughout the system accurately represent the accommodation being sold.                                                                                                           The enhancement allows a single photo to be related to multiple room types, reducing duplicate work and simplifying hotel maintenance.
+
+    #### Example
+
+    A hotel has three room types:
+
+    * Standard Double Room
+    * Superior Double Room
+    * Family Room
+
+    All three room types use the same room image. Instead of uploading the image three times, the photo can now be uploaded once and linked to all three room types.
 7. **Delete (Trash Icon)**
    * Removes the photo from the system.
    * Use with caution, as deleted images cannot be recovered unless re-uploaded.
@@ -73,92 +82,78 @@ If you need to attach documents to a specific booking, use [Comments](../../book
 3. Add a **Description** if further context is useful.
 4. Assign the photo to the appropriate **Brand(s)**.
 5. Select **Is Main Photo** for the image that should represent the hotel primarily.
-6. Choose a **Room Type** if the image is specific to a certain room category.
+6. Select one or more room types from the Room Type field.
 7. Save changes.
 8. Review all uploaded images to ensure completeness and consistency.
 
-<figure><img src="../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/photos.png" alt=""><figcaption></figcaption></figure>
 
-### FAQ
+The selected photo will now be associated with all chosen room types.
 
-<details>
+#### Example
 
-<summary>Why doesn’t my photo show for a specific brand?</summary>
+A hotel administrator uploads a photo showing a recently renovated room design.
 
-Check the photo’s **Brands** field.
+The image is linked to:
 
-If the brand is not selected, the photo will not appear for that brand.
+* Standard Room
+* Superior Room
+* Deluxe Room
 
-</details>
+The photo only needs to be maintained once while remaining available for all three room types.
 
-<details>
+***
 
-<summary>Can I use the same photo across multiple brands?</summary>
+### How the Feature Works in Hotel Setup
 
-Yes.
+During hotel maintenance, users can associate a single image with multiple room types.
 
-Select multiple brands (or use **Select all**).
+This improves efficiency when room categories share the same layout, furnishings, or promotional imagery.
 
-</details>
+#### Example
 
-<details>
+A resort offers:
 
-<summary>How do I control which photo is shown first?</summary>
+* Garden View Room
+* Pool View Room
+* Sea View Room
 
-Mark the correct image as **Is Main Photo**.
+The physical room layout is identical for all three categories.
 
-Keep only one main photo per hotel.
+The administrator uploads one room image and relates it to all three room types instead of creating separate photo records.
 
-</details>
+### How the Feature Works in APIs
 
-<details>
+Photos linked to multiple room types are available through the relevant hotel APIs.
 
-<summary>Should I set <strong>Room Type</strong> on every photo?</summary>
+API consumers can retrieve the photo together with all associated room type relationships.
 
-No.
+This ensures that integrations receive the same room imagery regardless of whether the photo is shared between one or multiple room types.
 
-Use **Room Type** only for room-specific photos.
+#### Example
 
-For hotel facilities (lobby, pool, restaurant), keep it as **Unspecified**.
+An external booking website retrieves hotel room information through the API.
 
-</details>
+A single room photo is associated with three room types in Tourpaq.
 
-<details>
+The API returns the photo as part of the room data for each applicable room type, allowing the website to display the same image where appropriate.
 
-<summary>What image formats work best?</summary>
+***
 
-Use `JPG` or `PNG`.
+### User Impact
 
-</details>
+Users can manage room photos more efficiently by maintaining a single photo record for multiple room types.
 
-<details>
+Benefits include:
 
-<summary>My photo looks blurry. What should I do?</summary>
+* Reduced duplicate uploads.
+* Faster hotel setup.
+* Easier photo maintenance.
+* Consistent room imagery across room categories.
+* Simplified API integrations.
 
-Upload a higher-resolution image.
+#### Example
 
-Aim for at least **1200 px** width.
+Before this enhancement, updating a shared room image required changing multiple photo records.
 
-Avoid screenshots and heavily compressed files.
-
-</details>
-
-<details>
-
-<summary>Can I recover a deleted photo?</summary>
-
-No.
-
-If you delete a photo, you must upload it again.
-
-</details>
-
-<details>
-
-<summary>Who can add or delete hotel photos?</summary>
-
-It depends on your user role and permissions.
-
-If you don’t see **Create** or the delete icon, ask an administrator to grant access.
-
-</details>
+Now, a single photo can be updated once and the change automatically applies to all associated room types.

@@ -79,33 +79,3 @@ This confirms that:
 
 The test validates the correct implementation of **child pricing logic** in web bookings.\
 It confirms that the **CH1P1**, **CH2P1**, and **CPM1** fields directly influence pricing calculations, ensuring a consistent and transparent experience across both **web** and **back-office** environments.
-
-## FAQ
-
-#### What does this test verify?
-
-It verifies that Web Booking pulls child pricing (`CH1P1`, `CH2P1`, `CPM1`) from the Price List.
-
-It also verifies that the final booking total matches in Tourpaq Office.
-
-#### Why do passengers show the adult price first?
-
-Web Booking can initially render base prices (P1) before applying the child discount logic.
-
-After the calculation, the **Rabat** field should adjust the total.
-
-#### What should I check if the totals do not match?
-
-* The Price List entry is the one used by Web Booking (correct PLTA ID, hotel/room/date).
-* `CH1P1` / `CH2P1` and `CPM1` are populated.
-* The hotel extra bed cost and discount rules exist for the stay period.
-* The booking uses the expected passenger mix (2 adults + 1 child).
-
-#### Which fields matter most for this scenario?
-
-Typically:
-
-* `CH1P1` (child selling price)
-* `CH1D1` (child discount price)
-* `CPM1` (child profit margin)
-* `CH1PA` (child adjustment, if used)

@@ -79,6 +79,10 @@ There are **three export types** available:
 
 <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (3) (1) (1) (1).png" alt="Export filters and export type selection"><figcaption><p>Export filters: choose export type, set booking/departure date ranges, and control what is included in the Excel report.</p></figcaption></figure>
 
+By default, the Finance export includes only bookings with departures within the selected period.\
+Enable Include past bookings with changes in the departure period to also include bookings where the Cost has been updated after departure. This ensures the latest costs are exported to financial systems such as Business Central.\
+Example: A booking departed in week 22, but its cost was changed in week 26. It will only be included in a week 26 export if this option is enabled.
+
 | **Field**                                                      | **Description**                                                                                                                                                                                                              |
 | -------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Export Type**                                                | Selects which type of data to export: _Bookings_, _Discounts_, or _Cost_.                                                                                                                                                    |

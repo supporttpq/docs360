@@ -74,25 +74,3 @@ Room Restriction blocks combinations. It does not change prices or room costs.
 {% hint style="info" %}
 Use [Different Max Pax](different-max-pax.md) to sell the same room type with different occupancies.
 {% endhint %}
-
-### FAQ
-
-#### What happens when I restrict a combination?
-
-The combination stops showing up in bookings and offers. It is treated as not sellable.
-
-#### Does Room Restriction change availability (allotments)?
-
-No. Allotments stay the same, but fewer combinations are eligible.
-
-#### Does this affect pricing?
-
-No. Pricing is controlled by room costs and price rules.
-
-#### A bed combination is missing. What should I check?
-
-Check if the combination is restricted. Also check if the room type setup supports that combination.
-
-#### How do I reset and allow all combinations?
-
-Clear all **Restriction** checkboxes. Then save the room type.

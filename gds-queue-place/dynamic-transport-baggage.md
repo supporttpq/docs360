@@ -11,7 +11,7 @@ The **Dynamic Transport Baggage** feature allows the system to automatically res
 3. Update the flights for this transport.
    *   This allows the service to detect, include, and price baggage for each flight.&#x20;
 
-       <figure><img src="../.gitbook/assets/general dynamic info.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../.gitbook/assets/general dynamic info.png" alt=""><figcaption></figcaption></figure>
 
 ### **How It Works**
 
@@ -25,7 +25,7 @@ The **Dynamic Transport Baggage** feature allows the system to automatically res
 
 **"Test Search"**
 
-<figure><img src="../.gitbook/assets/image (134).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (134).png" alt=""><figcaption></figcaption></figure>
 
 **"View Flights"**
 

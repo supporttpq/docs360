@@ -27,7 +27,7 @@ The **Profit** tab in **Tourpaq Office** provides a detailed breakdown of **book
 * The user must have permission to access financial data and, if applicable, to update internal costs.
 * Prices and cost structures must be configured for the components used in the booking.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/16.07.2026_11.12.06_REC.png" alt=""><figcaption></figcaption></figure>
 
 ### **Instructions**
 
@@ -62,37 +62,82 @@ The **Profit** tab in **Tourpaq Office** provides a detailed breakdown of **book
     * Save the changes.
 
     <div data-gb-custom-block data-tag="hint" data-style="warning" class="hint hint-warning"><p>When you edit <strong>Cost</strong>, all previous cost changes for that <strong>Cost Category</strong> (Transport, Hotel, Extra, etc.) are overwritten. Only the <strong>most recent</strong> cost update for that category is applied to the booking.</p></div>
-4.  **Open the detailed Hotel Cost Price view**
+4. **Open the detailed Hotel Cost Price view**
 
-    <figure><img src="../../.gitbook/assets/image (9) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/16.07.2026_11.13.26_REC.png" alt=""><figcaption></figcaption></figure>
 
-    * Click the blue **info** icon next to the hotel cost line to open the detailed **Hotel Cost Price** page in a new window.
+*   Click the blue **info** icon next to the hotel cost line to open the detailed **Hotel Cost Price** page in a new window.&#x20;
 
-    <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/16.07.2026_11.14.34_REC.png" alt=""><figcaption></figcaption></figure>
 
-    This view provides a detailed breakdown of the **hotel cost** for a specific booking. It displays daily and total pricing information for each passenger, along with a cost summary useful for comparison and control.
+This view provides a detailed breakdown of the **hotel cost** for a specific booking. It displays daily and total pricing information for each passenger, along with a cost summary useful for comparison and control.
 
-    *   The **left panel** lists all passengers in the booking (for example, adults and children) along with their daily cost components, such as:
+*   The **left panel** lists all passengers in the booking (for example, adults and children) along with their daily cost components, such as:
 
-        * **Room Cost**
-        * **Extra Included / Extra Bed**
-        * **Stay and Pay / Extra Room Price / Per Pax Night**
-        * **Early Booking**
+    * **Room Cost**
+    * **Extra Included / Extra Bed**
+    * **Stay and Pay / Extra Room Price / Per Pax Night**
+    * **Early Booking**
 
-        Each component is shown **per date**, so you can see how the cost changes over the stay period.
-    * The **Invoice Hotel Details Cost** box on the right summarises all hotel-related cost elements in EUR, including:
-      * Room Cost
-      * Extra Bed discounts and related offers
-      * Early Booking and Extra Cost components
-      * A **Total** line representing the total hotel cost used for invoicing.
+    Each component is shown **per date**, so you can see how the cost changes over the stay period.
+* The **Invoice Tab** box on the right provides a creditor-based overview of all hotel costs for the current booking. It is designed to support the new cost API used by the autobilling process, making it easier to verify which costs will be invoiced to each creditor.
 
-    At the bottom of the page:
+Unlike the standard cost view, which focuses on booking costs, the Invoice tab groups costs by **creditor**, reflecting how invoices are generated.
 
-    * **Total Cost** shows the total hotel cost in DKK.
-    * **Total Turnover** shows the total sales amount (including profit margin).
-    * **Booking Date** indicates when the booking was last updated.
+#### Purpose
 
-    This section helps administrators and finance staff verify that hotel pricing is correct and compare **cost versus turnover** for each booking.
+The Invoice tab allows users to:
+
+* Review all hotel costs that will be invoiced.
+* Verify the distribution of costs between different creditors.
+* Validate invoice data before the autobilling process.
+* Gain a clear overview of the financial obligations for the current booking.
+
+#### How it works
+
+When a booking is opened, Tourpaq retrieves invoice costs through the new creditor-based cost API.
+
+The system:
+
+1. Collects all hotel costs for the booking.
+2. Groups the costs by creditor.
+3. Displays the costs in the Invoice tab.
+4. Uses the same creditor information during the autobilling process when supplier invoices are generated.
+
+This ensures that the information shown in the booking matches the data used for invoicing.
+
+#### Booking behaviour
+
+The Invoice tab is read-only and reflects the current booking configuration.
+
+If hotel costs or creditors are changed, the invoice information is automatically recalculated the next time the booking costs are updated.
+
+Each creditor appears with its corresponding costs, allowing users to understand:
+
+* which supplier will be invoiced,
+* which costs belong to each supplier,
+* the total amount per creditor.
+
+### Example
+
+A booking contains accommodation provided by two different suppliers.
+
+| Creditor         | Cost |
+| ---------------- | ---- |
+| Hotel Supplier A | €850 |
+| Hotel Supplier B | €220 |
+
+The Invoice tab displays two separate invoice groups, one for each creditor, instead of combining all hotel costs into a single total.
+
+When autobilling creates supplier invoices, two invoices will be generated using the same creditor distribution shown in the Invoice tab.
+
+At the bottom of the page:
+
+* **Total Cost** shows the total hotel cost in DKK.
+* **Total Turnover** shows the total sales amount (including profit margin).
+* **Booking Date** indicates when the booking was last updated.
+
+This section helps administrators and finance staff verify that hotel pricing is correct and compare **cost versus turnover** for each booking.
 
 ***
 
@@ -121,55 +166,3 @@ At the bottom of the page, the **Hotel Cost** summary box shows:
 * An **Update** button, which administrators can use to refresh cached costs if a recalculation is required.
 
 This tab helps maintain consistency between live calculations and cached data, supporting financial accuracy and stable system performance.
-
-***
-
-### **FAQ**
-
-#### **How is the Profit tab different from the Economics tab?**
-
-* **Economics** focuses on the **payment structure and due dates** (deposit, second payment, rest, release payment, etc.).
-* **Profit** focuses on the **relationship between turnover, cost, and profit** for each booking component.
-
-Use **Economics** when working with payments and due dates, and **Profit** when analysing margins and internal costs.
-
-***
-
-#### **Why does the profit look wrong or show 0 for some items?**
-
-Typical reasons:
-
-* **Cost** is missing or set to 0, so Profit = Turnover.
-* **Turnover** is 0 (for example, a complimentary item or a 100% discount).
-* Costs were updated manually and no longer match the underlying supplier price.
-
-Check the **Cost** and **Turnover** columns for the affected row, and if needed, adjust cost values or verify pricing in the underlying setup.
-
-***
-
-#### **What happens when I change the cost for a category?**
-
-When you change the **Cost** for a category (for example, Hotel, Transport, Extra):
-
-* The system recalculates **profit** for that category and for the booking.
-* All previous manual cost edits for that **same category** are overwritten – only the most recent change applies.
-
-If you need to keep a history of why costs were changed, always use clear notes and follow your internal approval procedures.
-
-***
-
-#### **When should I use the Cost Cache tab?**
-
-Use the **Cost Cache** tab when you need to:
-
-* Verify that stored (cached) costs still match the current price logic.
-* Investigate differences between older reports and the current Profit view.
-* Refresh cached costs after significant price rule or configuration changes.
-
-If you are unsure whether to press **Update**, consult with your finance or system administrator, as recalculation can affect reported margins.
-
-***
-
-#### **Does changing costs in Profit affect supplier invoicing?**
-
-Changing costs in the **Profit** tab primarily affects **internal cost and profit calculations** in Tourpaq. Supplier invoices are usually based on your contracts and external documents. Use the detailed **Hotel Cost Price** view and Profit tab to **reconcile** against supplier invoices, but always follow your organisation’s finance procedures for handling invoice discrepancies.

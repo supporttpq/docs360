@@ -200,24 +200,3 @@ If you don’t see colors, your Room Icon image is probably not transparent.
 Hotel combinations can show layouts from the combined hotels (if the feature is enabled on those hotels).
 
 To use room selection in a hotel combination, make sure the **hotel combination** is included in the **Resources** list on the `RR` supplement.
-
-### FAQ
-
-**Q: I can see the Hotel Layout section in WebBooking, but it shows “No information was found”. Why?**\
-**A:** WebBooking only checks basic conditions on first load (layout exists, supplement exists, etc.).\
-Full validation runs when you open the Hotel Layout section. This avoids slow initial loading.
-
-**Q: Can Tourpaq scale my background and icons?**\
-**A:** No. Use correct pixel sizes for both backgrounds and elements.
-
-**Q: Why don’t I see any availability colors on the room icons?**\
-**A:** Your Room Icon image likely lacks transparency. Use a transparent background.
-
-**Q: What connects the room selection supplement to Hotel Layout?**\
-**A:** The supplement code must be `RR`.
-
-**Q: Where do I set the price for choosing a specific room?**\
-**A:** In **Room numbers → Allotments**, per room number and date. This becomes the `RR` supplement cost.
-
-**Q: Why isn’t the “Hotel Room” tab available in Office bookings?**\
-**A:** One of the prerequisites is missing. Usually the `RR` supplement resource assignment, room numbers, or the layout-room linking.

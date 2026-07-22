@@ -124,21 +124,3 @@ Always verify that rooms are mapped correctly before saving.
 Select the photos you want. They will be imported with the hotel data.
 
 To replace photos, delete the existing photos in Tourpaq first. Then re-import photos from **Hotel → Hotel Bed Bank**.
-
-### FAQ
-
-#### Can we make test bookings without payment to Hotelbeds?
-
-No. Hotelbeds does not provide a test environment. Live test bookings use real contracts.
-
-#### How do we know when a contract expires or changes?
-
-There is no automatic notification today. Check contracts and price lists manually after changes.
-
-#### Why do room costs still show the contract room type after renaming?
-
-This is a known behavior. The Room Cost tab keeps the contract room type. A fix is planned for a future release.
-
-#### How do I replace imported photos?
-
-Delete the hotel photos in Tourpaq. Then re-import the selected photos from **Hotel → Hotel Bed Bank**.

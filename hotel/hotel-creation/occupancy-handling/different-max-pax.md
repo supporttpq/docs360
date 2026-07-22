@@ -69,25 +69,3 @@ The configurations share the same underlying physical room pool. Make sure the s
 {% hint style="info" %}
 Different Max Pax controls _occupancy and availability_. Use [Room Restriction](room-restriction.md) to control _allowed bed combinations_.
 {% endhint %}
-
-### FAQ
-
-#### What is “Different Max Pax” used for?
-
-To sell the same room type with different occupancies. Example: a room can be sold as Max Pax 2 or Max Pax 3.
-
-#### Do I need to click Update after every change?
-
-Yes. Changes are not saved until you click **Update**.
-
-#### Why did availability disappear for one configuration?
-
-You likely set the daily allotment for that configuration to `0`. Check the specific day and configuration row.
-
-#### Does this change prices?
-
-No. Pricing is still controlled by your room costs and price rules.
-
-#### Is this the same as Room Restriction?
-
-No. Different Max Pax sets occupancy and availability. Room Restriction blocks specific bed combinations.
