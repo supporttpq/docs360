@@ -49,38 +49,3 @@ The **Comments** section in **Tourpaq Office** is where you add **booking commen
 * Attachments must be in **PDF format**.
 * Ticket attachments will only appear after **printing or previewing the ticket**.
 * Internal comments and attachments **do not appear on customer-facing documents**.
-
-***
-
-### **FAQ**
-
-#### **Which comments are visible to the customer?**
-
-The following are customer-facing on the ticket:
-
-* **Hotel Text** – shown on hotel lists and printed on the customer’s ticket.
-* **To the customer** – printed on the customer’s ticket.
-* **Ticket Attachments** – PDF files printed at the end of the ticket.
-
-All other comment types (**Internal Text**, **Internal Attachments**, **Economy Text**, **Destination/Guides Text**) are not shown on the customer’s ticket.
-
-***
-
-#### **What is the difference between “Hotel Text” and “To the customer”?**
-
-* **Hotel Text** appears **both** on internal hotel lists and on the customer’s ticket.
-* **To the customer** appears **only** on the customer’s ticket and is typically used for short, customer-specific information.
-
-Use **Hotel Text** when the same information is relevant to hotel/operations and the customer. Use **To the customer** when the message is only for the traveller.
-
-***
-
-#### **How can I make sure guides see specific information, but customers do not?**
-
-Use **Destination/Guides Text** for information that should be visible on **guide and airport lists** only (for guides and transport staff). Combine this with **Internal Text** for additional internal notes that should not appear in any external list or on the ticket.
-
-***
-
-#### **Which comments affect finance-related overviews?**
-
-Only **Economy Text** is used in the finance context described on this page. These notes appear in **Negative Balances** and **Unpaid Bookings** reports and are meant to help finance users understand the background behind outstanding amounts or special payment agreements.

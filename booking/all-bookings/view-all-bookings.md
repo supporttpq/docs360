@@ -18,6 +18,8 @@ layout:
     visible: true
   tags:
     visible: true
+  actions:
+    visible: true
 ---
 
 # All bookings
@@ -316,28 +318,6 @@ For teams with large numbers of transports, hotels, or users configured, filter 
 | **Choose All**                       | Selects all items in a filter, including hidden ones                                                    |
 | **Hide as Filter on Lists**          | Manually marks a specific item (e.g. an old transport) as hidden so it no longer appears                |
 | **System Setup → Hide Filter Input** | Administrator-level setting that automatically hides filter items inactive for a defined number of days |
-
-***
-
-### FAQ
-
-**Q: I set my filters and clicked Display but nothing appeared — what should I check first?** Confirm that at least one **Brand** is selected. If a Brand is selected, check that every date filter you are using has both a `From` and a `To` date — an incomplete pair will not return results. Click **Clear** to reset all filters and start fresh if needed.
-
-***
-
-**Q: Can I search by partial booking number or customer name?** Customer name supports partial search — entering `Jensen` will return all customers with that name. Booking number search requires the full number.
-
-***
-
-**Q: I saved a view but can no longer find it — where do I look?** Saved views appear in the views bar at the top of the All Bookings page. If a view is not visible, open **Manage Views** via the three dots (⋯) button to check whether it was accidentally deleted.
-
-***
-
-**Q: What does the "All Bookings" checkbox do?** When checked, the All Bookings checkbox ignores all date range filters and returns every booking for the selected Brand(s). This is useful for finding a booking when you don't know its date, but should be used carefully on systems with large booking volumes as it may load slowly.
-
-***
-
-**Q: How do I quickly get back to today's bookings?** Click the **Today's Bookings** shortcut button in the toolbar. This automatically sets the Booking Period to the current date and loads results immediately — no manual date entry needed.
 
 ***
 

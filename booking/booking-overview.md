@@ -45,7 +45,7 @@ Tourpaq supports several booking configurations to match different customer need
 | **Group Booking**                 | Large-party bookings with multiple rooms and passengers         |
 
 {% hint style="info" %}
-Not sure which booking type to use? See [New Booking](https://manual.tourpaq.com/booking/new-booking) for a step-by-step guide that covers all scenarios.&#x20;
+Not sure which booking type to use? See [New Booking](https://manual.tourpaq.com/booking/new-booking) for a step-by-step guide that covers all scenarios.
 {% endhint %}
 
 ***
@@ -65,7 +65,7 @@ Every booking in Tourpaq has a status that reflects its current state. Understan
 | **Offer**        | A price quote has been sent to the customer but not yet confirmed as a booking                              |
 
 {% hint style="warning" %}
-&#x20;Bookings with **Error** status must be resolved promptly. They may not generate correct tickets, confirmations, or financial records until fixed. Monitor these daily via [Notifications](https://manual.tourpaq.com/notifications/notification).&#x20;
+Bookings with **Error** status must be resolved promptly. They may not generate correct tickets, confirmations, or financial records until fixed. Monitor these daily via [Notifications](https://manual.tourpaq.com/notifications/notification).
 {% endhint %}
 
 ***
@@ -183,28 +183,6 @@ Use the pages below in order when creating a new booking from scratch, or jump d
 3. Enter a booking number or customer name
 4. Click **Display**
 5. Click the **Booking No.** to open the booking
-
-***
-
-### FAQ
-
-**Q: What is the difference between New Booking and Web Booking?** **New Booking** is used by agents and internal users to create bookings manually — for example, for phone or email requests. **Web Booking** is the customer-facing online booking engine where customers book themselves. Both types of bookings appear in All Bookings once confirmed.
-
-***
-
-**Q: Can I edit a booking after it has been confirmed?** Yes. Open the booking via [All Bookings](https://manual.tourpaq.com/booking/all-bookings) and make changes using the relevant sub-pages (Economics, Passenger Details, Hotel Room, Transport Seating, etc.). All changes are logged in the [History](https://manual.tourpaq.com/booking/new-booking/history) tab.
-
-***
-
-**Q: What happens if a booking has Error status?** An Error booking is in an incomplete or invalid state and may not generate correct tickets or financial records. Open the booking, identify the issue using the error description, fix it, and save. Monitor Error bookings daily via [Notifications](https://manual.tourpaq.com/notifications/notification).
-
-***
-
-**Q: How do I handle a booking where the customer wants to change their flight?** Use the [Moved Booking](https://manual.tourpaq.com/booking/new-booking/moved-booking) feature to transfer the booking to a different departure while retaining the booking number and history. For flight detail changes (time, carrier), use [Flight Change](https://manual.tourpaq.com/flight-change).
-
-***
-
-**Q: Where do I add internal notes about a booking?** Use the [Comments](https://manual.tourpaq.com/booking/new-booking/comments) sub-page. Comments are internal only — they are not visible to the customer and do not appear on tickets or confirmations.
 
 ***
 

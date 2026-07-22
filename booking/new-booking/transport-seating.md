@@ -19,6 +19,8 @@ layout:
     visible: true
   tags:
     visible: true
+  actions:
+    visible: true
 ---
 
 # Transport Seating
@@ -90,45 +92,3 @@ If you cannot select seats, the issue is often related to setup. See:
 3. Verify that the booking now shows the assigned seats (a seating-related column/field may appear depending on your layout).
 4. Click **Print Ticket**.
 5. Check the ticket – it should include a **Flight Reservation** section listing the selected seats for both outbound and homebound flights.
-
-***
-
-### **FAQ**
-
-#### **Why can’t I select any seats?**
-
-Common reasons:
-
-* The flight is not configured with seat data, so no seats are available to choose.
-* The booking is not fully saved or passengers are missing.
-* Seats are already taken or not released for selection.
-
-**Where to fix it (setup pages):**
-
-* Check that a seat map exists and seats are defined in [**Seating**](../../seating/) (Seat List / Assign Seats).
-* Check that the flight/transport has a layout assigned in [**Transport Layouts**](../../transport-layouts.md).
-* Check that the seat categories used by the layout exist in [**Seat Types**](../../seating/seat-types.md).
-
-If your organisation uses automatic seat placement, also review [**Automatic Seating**](../../transport/transport/automatic-seating.md).
-
-***
-
-#### **What does “auto-select the same seats as outbound” do?**
-
-It attempts to assign the **same seat numbers** on the return flight as on the outbound flight. This can save time and keep seating consistent, but it only works when the same seats exist and are available on the homebound flight.
-
-***
-
-#### **Do seat assignments automatically appear on the ticket?**
-
-Seat assignments appear on the ticket after they are saved. If the seats do not show up:
-
-* Make sure you clicked the relevant **Save passenger assignment** buttons for outbound/homebound.
-* Click **Save** on the page to confirm.
-* Reprint or preview the ticket again.
-
-***
-
-#### **Can I change seats after assigning them?**
-
-Yes. Reopen **Transport Seating**, update the seat selections, and save again. Then reprint the ticket to ensure the updated seats are shown on customer documents.

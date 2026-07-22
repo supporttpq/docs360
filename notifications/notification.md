@@ -17,6 +17,8 @@ layout:
     visible: true
   tags:
     visible: true
+  actions:
+    visible: true
 ---
 
 # Notifications
@@ -183,112 +185,6 @@ Use the notification row to decide your first check:
 This saves time and reduces duplicate work between agents.
 
 ***
-
-### FAQ
-
-#### What is the difference between Error Bkg and Warnings?
-
-An **Error Bkg** means the booking is in an incomplete or invalid state.
-
-Something failed during saving or processing. The booking may not be fully confirmed.
-
-A **Warning** means the booking is valid, but still needs follow-up.
-
-Examples include missing travel insurance communication, missing documents, or another non-blocking issue.
-
-#### Can the same booking appear under multiple categories at the same time?
-
-Yes.
-
-One booking can trigger several checks at once. For example, it can appear under both **Unpaid Bkg** and **Warnings**.
-
-Each category reflects a separate issue. Resolve each one at the source.
-
-#### What should I tackle first each day?
-
-Start with **Error Bkg**, **Overbkg**, and **Queue Management**.
-
-These are the categories most likely to block processing or affect departures.
-
-Then handle **Unpaid Bkg**, followed by **Warnings** and the remaining categories.
-
-#### Why does the category count not match the rows I currently see?
-
-The category count shows all unresolved items in that category.
-
-The table can still be narrowed by filters, sorting, pagination, or the current date range.
-
-If the count looks wrong, clear filters and reload the category.
-
-#### Can I clear or delete a notification manually?
-
-No.
-
-Notifications are cleared by resolving the underlying issue.
-
-If the source problem still exists, the notification will return on the next system check.
-
-#### I fixed a booking but the notification is still showing. Why?
-
-The system checks for updates every 30 minutes.
-
-After saving a fix, refresh the page after the next check cycle.
-
-If it still appears, the root cause was not fully resolved.
-
-#### Why did a notification disappear and then come back?
-
-The same condition was detected again.
-
-This usually means the issue was only partly fixed, or another background job recreated the same problem.
-
-Check the booking again. Then review any related setup, integration, or queue process.
-
-#### How do I handle Stop Sales notifications?
-
-A Stop Sales notification means a booking conflicts with an active Stop Sale rule, or agreed allotment has been exceeded.
-
-Review both the booking and the Stop Sale setup before changing anything.
-
-Use [Stop Sales](../stop-sales.md) to inspect the rule behind the alert.
-
-#### Who should handle Queue Management notifications?
-
-Usually an administrator or advanced support user.
-
-These notifications often involve failed background jobs, integrations, communication sends, or system automation.
-
-If the error description mentions GDS, SMTP, FTP, or queue processing, escalate early.
-
-#### What if I open the booking and nothing looks wrong?
-
-Start with the area named in the notification text.
-
-Then check **History**, **Economics**, **E-mails**, **SMS**, or related product setup depending on the category.
-
-Some issues are caused by background processing, not by visible booking data alone.
-
-#### Are notifications assigned to one user?
-
-No.
-
-The page is a shared operational list, not a personal task queue.
-
-Two users can work the same notification unless your team coordinates ownership outside the page.
-
-#### I can see the Notifications page, but some bookings are missing. Why?
-
-This is usually caused by user rights, brand scope, or filter settings.
-
-Check your current filters first.
-
-If the booking is still missing, ask your administrator to review your access under [Users](../users/users/).
-
-#### Where do I control which warnings are generated?
-
-Use [Warning Notification Rules](../warning-notification-rules.md).
-
-That is where you configure warning recipients, delivery method, and warning types.
 
 ### Related Pages
 

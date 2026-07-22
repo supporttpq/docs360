@@ -19,6 +19,8 @@ layout:
     visible: true
   tags:
     visible: true
+  actions:
+    visible: true
 ---
 
 # Don’t send ticket option
@@ -55,9 +57,9 @@ If “Don’t send ticket” is selected on a new booking before saving the book
 
 ### **Field description**
 
-| Field                 | Description                                                                                                                                                                                                                                                                                                  |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Don’t Send Ticket** | <p>When checked, the system will <strong>not send the automatic booking update email</strong> when you save the booking. </p><p>Note: If “Don’t send ticket” is selected on a new booking before saving the booking for the first time, the customer will not receive the “Thank you for booking” email.</p> |
+| Field                 | Description                                                                                                                                                                                                                                                                                                 |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Don’t Send Ticket** | <p>When checked, the system will <strong>not send the automatic booking update email</strong> when you save the booking.</p><p>Note: If “Don’t send ticket” is selected on a new booking before saving the booking for the first time, the customer will not receive the “Thank you for booking” email.</p> |
 
 ***
 
@@ -81,7 +83,7 @@ This setting is about **email sending**. It does **not** undo or prevent the boo
 
 1. Create or open an existing booking.
 2. Make your changes.
-3. If you do **not** want an automatic email to be sent:&#x20;
+3. If you do **not** want an automatic email to be sent:
 
 * Check **Don’t Send Ticket.**
 
@@ -99,44 +101,3 @@ To confirm whether an email was sent for the booking, open the booking’s [**E�
 * You tick **Don’t Send Ticket** and click **Save**.
 * The booking is updated, but the automatic update email is suppressed.
 * Later, when everything is finalized, you can send the correct documents/ticket through your normal ticket/email workflow (for example via [**Print Tickets**](../../tickets/print-tickets.md), depending on your setup).
-
-***
-
-### **FAQ**
-
-#### **1. What exactly is suppressed by “Don’t Send Ticket”?**
-
-It suppresses the **automatic booking update email** (often named **Booking updated** or **Update booking**) that may be triggered when saving changes on an **OK** booking.
-
-***
-
-#### **2. Why does the checkbox only appear sometimes?**
-
-Because it normally appears only when:
-
-* The booking is already **OK**, **and**
-* You made a change that the system recognizes as update‑relevant.
-
-***
-
-#### **3. Does it stop flight change emails?**
-
-No. Flight change notifications are handled separately and are sent as normal.
-
-***
-
-#### **4. Does it stop me from printing or sending tickets manually?**
-
-No. It only suppresses the **automatic update email** on save. Manual ticket sending/printing is separate (see [**Print Tickets**](../../tickets/print-tickets.md)).
-
-***
-
-#### **5. Does the checkbox stay enabled for future changes?**
-
-No. It resets after you save. If you want to suppress emails again later, you must tick it again before saving.
-
-***
-
-#### **6. How can I confirm whether an email was sent or not?**
-
-Open the booking’s [**E‑mails**](e-mails.md) tab and check the email log (type, sent date, and recipient address).

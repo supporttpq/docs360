@@ -19,6 +19,8 @@ layout:
     visible: true
   tags:
     visible: true
+  actions:
+    visible: true
 ---
 
 # QR code for vouchers
@@ -120,31 +122,3 @@ Check the most common causes:
 * The hotel/extra category/transfer/discount is missing:
   * **Issue Voucher** setting, or
   * a valid **Supplier**.
-
-***
-
-### FAQ
-
-#### 1. Where do I enable QR codes for vouchers?
-
-Enable **Show QR-code in vouchers** in **System Setup**, then save.
-
-***
-
-#### 2. I enabled the setting but still don’t see QR codes — why?
-
-QR codes are printed only on vouchers that are **generated**. If vouchers are not generated yet (for example due to timing, payment status, or missing Issue Voucher/Supplier), there will be no QR code to show.
-
-See: [Vouchers](../../setup/vouchers.md)
-
-***
-
-#### 3. Are QR codes created per booking or per passenger?
-
-It depends on your voucher setup. In many setups, vouchers (and QR codes) are created **per passenger**. In other setups, QR codes can be generated per voucher document.
-
-***
-
-#### 4. Do QR codes also appear on tickets?
-
-Depending on your setup, QR codes can also appear on tickets. Verify by previewing/printing a ticket after vouchers are generated.

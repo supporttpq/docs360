@@ -84,37 +84,3 @@ A booking shows an unexpected final price, and you need to verify when the chang
 2. Use the text search to look for **“Total change”** or other relevant keywords.
 3. Review the **Old value** and **New value** columns to see how the price changed.
 4. Check the **User** and **Engine** columns to identify whether the change was made manually by an agent or automatically by the system or an integration.
-
-***
-
-### FAQ
-
-#### 1. Why do I not see any entries in the History tab?
-
-If the History tab is empty:
-
-* The booking may be newly created with no changes yet.
-* Your user role may not have permission to **view history**.
-
-Try making a small test change on the booking, save it, and then refresh the History tab. If entries still do not appear, contact your system administrator.
-
-#### 2. Can I edit or delete history entries?
-
-No. History entries are **read‑only** by design and cannot be edited or deleted. This ensures a reliable audit trail. If a mistake was made, correct it by updating the booking; a **new** history line will record the correction.
-
-#### 3. What does the “Engine” column mean?
-
-The **Engine** column shows which system component created the change, for example:
-
-* A logged‑in **user** (office agent).
-* The **web booking** engine (customer online changes, if allowed).
-* An **API** or integration such as `APICore`.
-
-This helps you distinguish between manual edits and automatic or external updates.
-
-#### 4. How is the “Version” field used?
-
-The **Version** value groups changes by booking version. When significant changes occur (for example, moving the booking, changing core components), the version may be incremented. This allows you to:
-
-* See which changes belong to the same update.
-* Compare earlier and later versions when investigating complex edits.
