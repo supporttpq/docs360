@@ -19,6 +19,8 @@ layout:
     visible: true
   tags:
     visible: true
+  actions:
+    visible: true
 ---
 
 # How to set autobilling for handling
@@ -92,28 +94,3 @@ When **Automatic Billing** is enabled in the supplier’s handling configuration
 
 Once configured, the system automatically generates handling invoices according to the defined creditor, schedule, and billing behavior.\
 This ensures accurate, timely, and supplier-specific handling invoicing within Tourpaq.
-
-***
-
-### FAQ
-
-* **Where do I configure handling Autobilling?**\
-  On the supplier profile: **Users → Suppliers → Handling**.
-* **Do I need a creditor?**\
-  Yes. Autobilling needs a creditor to issue the invoice, set currency, and export correctly. See [How to create a creditor](how-to-create-a-creditor.md).
-* **Where can I see generated handling invoices?**\
-  In **Finance → Invoice**. See [Invoice](../invoice.md).
-* **What does “Add Own Schedule” do?**\
-  Checked: handling is invoiced separately. Unchecked: handling is included on the hotel invoice (depending on your setup).
-*   **Why is Autobilling enabled but no invoice is created?**\
-    Confirm you have:
-
-    1. A linked **Creditor**
-    2. A schedule
-    3. A handling price configured
-
-    Then check **Finance → Invoice** with supplier/creditor and date filters.
-* **When are invoices generated?**\
-  Based on the schedule you select. The exact runtime depends on your scheduled job setup (often overnight).
-* **How does supplier approval work?**\
-  If your Autobilling flow uses approvals, suppliers receive an email link to approve or reject invoices. See [Autobilling](./).

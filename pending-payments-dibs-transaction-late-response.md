@@ -176,20 +176,3 @@ The **Refund Money** tab on the dashboard highlights PENDPAY bookings that requi
 * **Pending transactions older than 5 days are no longer checked** by the system. They are automatically marked as **declined**.
 * A **PENDPAY booking cannot be manually set to OK** by an admin. Only the **Pending Payment Status Checker service** can update the booking’s status based on DIBS responses.
 * If special handling is required, consider **creating a new booking** and managing the process there.
-
-***
-
-### FAQ
-
-* **What is a PENDPAY booking?**\
-  A temporary booking created while Tourpaq waits for a final DIBS status (captured/declined).
-* **Does PENDPAY reserve rooms or seats?**\
-  No. PENDPAY bookings do not block hotel/transport allotment and do not reserve layouts.
-* **How often does Tourpaq re-check pending DIBS transactions?**\
-  The Pending Payment Status Checker runs periodically (about every 2 hours, depending on setup).
-* **What happens if DIBS never returns a final status?**\
-  If there is no update within 5 days, Tourpaq marks the transaction as failed/declined.
-* **Can an admin manually change PENDPAY to OK?**\
-  No. Only the status checker service can finalize PENDPAY based on DIBS responses.
-* **What if the payment is captured but there is no allotment?**\
-  Tourpaq creates a notice in **Refund Money**. Refund the payment in DIBS and register a matching out/credit transaction on the booking.

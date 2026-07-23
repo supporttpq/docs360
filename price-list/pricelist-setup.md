@@ -18,6 +18,8 @@ layout:
     visible: true
   tags:
     visible: true
+  actions:
+    visible: true
 ---
 
 # Price List Setup
@@ -254,41 +256,3 @@ When you select a row in **P. Ch.**, more options appear at the top.
 When **Difference from Price** is checked, **Run** calculates discount values by subtracting the configured value from the matching P price.
 
 Example: If `P1 = 2000` and `Value = 200`, then `D1 = 1800` after **Run**. Click **Save** to persist changes.
-
-### FAQ
-
-#### How do I create a new price list?
-
-Use **Create/Copy Price List**, then select brand, transport, fix quota, hotel, and rooms.
-
-#### Why is a price list not created?
-
-This usually happens when fix quotas do not cover the hotel allotment period or required data is missing.
-
-#### Can I copy an existing price list?
-
-Yes. You can copy prices from an existing price list within the same brand.
-
-#### What copy scopes are available?
-
-You can copy prices from one transport to all brand transports, from one hotel to all hotels on a transport, or from one room to all rooms of a hotel.
-
-#### What must be selected before copying prices?
-
-All checkboxes in **Price Difference** should be selected, even if the values are zero.
-
-#### What filters are available in Price List Setup?
-
-You can filter by departure date, resort, transport, transport type, hotel, allotment type, room, fix quota, hotel name, and stay length.
-
-#### Why do no rows appear after filtering?
-
-Common causes are missing brand context, incorrect date range, or no price lists created for the selected criteria.
-
-#### What information is shown in the price list grid?
-
-The grid shows hotel, room, departure date, free hotel and transport allotments, selling prices (P1–P4), child prices, group prices, discounts, and profit-related fields.
-
-#### How are child prices calculated?
-
-Child prices can be entered directly. They can also be calculated as a percentage of adult prices using **CH%** columns.

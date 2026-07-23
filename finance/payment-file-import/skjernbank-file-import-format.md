@@ -5,7 +5,7 @@
 The structure presented in this documentation is based on the FI payment format (128-character format).
 
 {% hint style="info" %}
-The official reference specification is: **"Systemvejledning for FI-advisering (128-karakter format)"**&#x20;
+The official reference specification is: **"Systemvejledning for FI-advisering (128-karakter format)"**
 
 This document can be obtained from your payment provider (e.g., Mastercard Payment Services), depending on your agreement with them.
 {% endhint %}
@@ -64,7 +64,7 @@ FI020820402267780000207443300000000000000000000000020260324112701
 <table><thead><tr><th width="104.5555419921875">Position</th><th width="95.5555419921875">Length</th><th width="163.1112060546875">Field Name</th><th width="143.1112060546875">Example</th><th>Description</th></tr></thead><tbody><tr><td>[0 : 4]</td><td>4</td><td>RecordType</td><td>FI02</td><td>Literal record identifier. Always 'FI02'.</td></tr><tr><td>[5 : 13]</td><td>8</td><td>CreditorNumber</td><td>82040226</td><td>Creditor/batch identifier used for validation. Compared against the system-stored creditor number by the C# importer.</td></tr></tbody></table>
 
 {% hint style="info" %}
-The Creditor number for each agency can be found in **User -> Brands-> Select agency -> General -> Ticket**.&#x20;
+The Creditor number for each agency can be found in **User -> Brands-> Select agency -> General -> Ticket**.
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/image (802).png" alt=""><figcaption></figcaption></figure>
@@ -105,8 +105,9 @@ The importer does not currently read this record, but it should be used for reco
 
 **Example line:**
 
-<pre><code><a data-footnote-ref href="#user-content-fn-1">FI0808204022600000000132000000068752200000000000000000</a>
-</code></pre>
+```
+FI0808204022600000000132000000068752200000000000000000
+```
 
 ### FI09 — File Trailer
 
@@ -150,78 +151,6 @@ FI09 0 45801012 0032479081 0000000000 1 0000000132
 
 Spaces have been inserted between fields in the annotated sample above for readability only. The actual file contains no spaces between fields — every field is contiguous.
 
-## FAQ
-
-#### Which lines matter for the Tourpaq import?
-
-The import logic mainly depends on:
-
-* **FI02** for creditor validation
-* **FI03** for individual payment data
-
-**FI08** and **FI09** are useful for reconciliation and integrity checks, but the importer does not currently use them to create payments.
-
-#### Which FI03 fields must be correct for a payment to import properly?
-
-The most important fields are:
-
-* **BookingNo**
-* **PayerID**
-* **TrackingCode**
-* **AccountingDate**
-* **Amount**
-* **DateCustomerPaid**
-
-If one of these values is malformed, the payment may fail validation, import incorrectly, or be hard to reconcile afterward.
-
-#### Which date is used as the payment date in Tourpaq?
-
-That depends on the import setup.
-
-This file contains both:
-
-* **DateCustomerPaid**
-* **AccountingDate**
-
-In many finance flows, **AccountingDate** is the value used for posting and reconciliation. Validation should still include both dates because they describe different stages of the transaction.
-
-#### Can BookingNo and PayerID contain different values?
-
-Partly.
-
-**BookingNo** is the first 12 characters of **PayerID**. The last 3 characters in **PayerID** are a suffix sequence. If the first 12 characters do not match the intended booking reference, the payment may be linked incorrectly or rejected by downstream validation.
-
-#### Why is the Amount field 15 characters long?
-
-The file stores the amount as a zero-padded integer in the smallest currency unit.
-
-Example:
-
-* `000000000099600` = `99600` øre = **996.00**
-
-The importer divides the raw value by **100** before storing the final payment amount.
-
-#### Can FI08 and FI09 be ignored?
-
-They should not be ignored during file validation. In the test environment, these can be ignored in generating the payment file.
-
-Even though the importer does not currently parse them into payments, they help confirm:
-
-* the expected number of payment records
-* the expected grand total
-* the file-level consistency of the import source
-
-These checks are useful when investigating missing or duplicated payments.
-
-#### What is the safest way to test a modified PBS file?
-
-Validate the file in this order:
-
-1. Confirm the **FI02 CreditorNumber** matches the expected test setup.
-2. Confirm each edited **FI03** line keeps its fixed-width length.
-3. Confirm **BookingNo**, **PayerID**, **Dates**, and **Amount** still sit at the correct positions.
-4. Import the file and verify the result in payment registration.
-
 ## Related pages
 
 * [Payment File Import](./) — import the bank file and validate payment lines.
@@ -229,5 +158,3 @@ Validate the file in this order:
 * [Refund File Import](../refund-file-import.md) — handle imported refund transactions instead of incoming payments.
 * [Method of Payment](../method-of-payment.md) — configure the payment method used for bank imports.
 * [Balance Administration](../../balance-administration.md) — reconcile balances after payment import.
-
-[^1]: 

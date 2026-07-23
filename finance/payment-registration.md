@@ -18,6 +18,8 @@ layout:
     visible: true
   tags:
     visible: true
+  actions:
+    visible: true
 ---
 
 # Payment Registration
@@ -151,40 +153,3 @@ If you don’t see your new payment in the list right away, adjust your **paymen
 2. Click **Export** to export the **currently displayed** results.
 
 This export is your payment report for the selected filters.
-
-***
-
-### FAQ
-
-#### 1. Can I register guide payments here?
-
-No. Payment Registration is used to **create booking payments**. Guide payments can be **viewed** here when you filter by **Guide**, but they are not created in this module.
-
-#### 2. I selected a guide and now I can’t filter by booking number—why?
-
-When you filter by **Guide**, Tourpaq switches to **guide payments**, which are not connected to a booking in the same way, so booking-related filters may be hidden.
-
-#### 3. What dates should I use if I can’t find a payment?
-
-Start by widening **Payment start date** and **Payment end date**, then click **Display**. If it’s tied to a booking, also check your **Departure** date filters.
-
-#### 4. What’s the difference between Debit and Credit?
-
-* **Debit** typically means money coming **into** the company (a payment received).
-* **Credit** typically means money going **out** (for example a refund).
-
-If you’re unsure, confirm with your finance setup.
-
-#### 5. Where do imported bank payments show up?
-
-After a successful import, they appear in this list.
-
-See [Payment File Import](payment-file-import/).
-
-#### 6. A payment method is missing from the dropdown—what should I do?
-
-Ask an Admin/Financial user to add or activate it in [Method of Payment](method-of-payment.md).
-
-#### 7. Does Export include all payments in the system?
-
-No. Export uses the **current filters** and exports only the results you have displayed.

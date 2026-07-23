@@ -111,20 +111,3 @@ If your role allows it, you can select **Pay** for an invoice.
 
 * Use this when you are ready to send the invoice to your payment process.
 * If **Pay** is not available, the invoice may need approval first (check **Status**) or you may not have permission.
-
-### FAQs
-
-* **I can’t find an invoice I know exists. What should I do?**\
-  Start by widening the **From date** / **To date** range. Then try searching by **Invoice Number** or **Creditor**.
-* **What’s the difference between “Due date” and “App. due date”?**\
-  **Due date** is when payment is due. **App. due date** is when the invoice was approved/registered in the system.
-* **Why is an invoice “Rejected”?**\
-  Rejected invoices usually have missing/incorrect details or need clarification. Open the invoice and check **Comments** for the reason and next steps.
-* **Where do I download the invoice PDF or XML?**\
-  Use **Download Invoice PDF** or **Download Invoice XML** in the invoice tools or directly in the invoice row (depending on your view and permissions).
-* **What does “Archived” mean?**\
-  Archived invoices are hidden from the default working list but are still available. Use **Archive Status** to show them again.
-* **Can I archive or pay multiple invoices at once?**\
-  You can select multiple invoices using the **checkboxes** and then run the available bulk action (for example **Archive**). Bulk **Pay** depends on your setup and permissions.
-* **I don’t see the Pay/Download options. Is something wrong?**\
-  Not necessarily—those actions can be permission-based. Ask your admin to confirm your role and access rights.

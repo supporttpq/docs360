@@ -19,6 +19,8 @@ layout:
     visible: true
   tags:
     visible: true
+  actions:
+    visible: true
 ---
 
 # How to set autobilling for discounts/supplements
@@ -197,20 +199,3 @@ When an invoice is regenerated:
 * How to Set Autobilling for Extras
 * Pricing Rules
 * Finance → Invoices
-
-### FAQ
-
-* **Do I need to enable Autobilling per discount/supplement?**\
-  Yes. Autobilling is configured per discount or supplement. Enable **Automatic Billing** on each item that should generate supplier invoices.
-* **Why is the creditor mandatory?**\
-  Autobilling needs a creditor to know who the invoice is issued to, which currency to use, and how to export to accounting. Create and link a creditor first: [How to create a creditor](how-to-create-a-creditor.md).
-* **Where can I see the generated invoices?**\
-  In **Finance → Invoice**. See [Invoice](../invoice.md).
-* **When are invoices generated?**\
-  Based on the schedule you select (daily/weekly/monthly/days after). The exact runtime depends on your scheduled job setup (often overnight).
-* **Does this create separate invoices?**\
-  Yes. Each discount or supplement can create its own invoice based on its schedule and creditor setup.
-* **Autobilling is enabled, but no invoice is created. What should I check?**\
-  Confirm 1) a **Creditor** is selected, 2) **Automatic Billing** is enabled, and 3) the discount/supplement is actually used on bookings in the period. Then check **Finance → Invoice** with creditor/date filters.
-* **How does supplier approval work?**\
-  If your Autobilling flow uses approvals, suppliers receive an email link to approve or reject invoices. See [Autobilling](./).

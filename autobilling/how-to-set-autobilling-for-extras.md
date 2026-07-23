@@ -19,6 +19,8 @@ layout:
     visible: true
   tags:
     visible: true
+  actions:
+    visible: true
 ---
 
 # How to set autobilling for extras
@@ -179,20 +181,3 @@ Flow:
 * How to Set Autobilling for Hotels
 * How to Create a Creditor
 * Booking → Extras
-
-### FAQ
-
-* **Do I need to enable Autobilling for each extra?**\
-  Yes. Autobilling is configured per extra. Enable **Automatic Billing** on each extra that should generate supplier invoices.
-* **Why is the creditor mandatory?**\
-  The creditor determines who the invoice is issued to, which currency to use, and which accounting settings apply. Create and link a creditor first: [How to create a creditor](how-to-create-a-creditor.md).
-* **Where can I see the generated extra invoices?**\
-  In **Finance → Invoice**. See [Invoice](../invoice.md).
-* **When are invoices generated?**\
-  Based on your selected schedule (daily/weekly/monthly/days after). The exact runtime is controlled by your scheduled job setup (often overnight).
-* **Can I generate invoices for a past period?**\
-  Yes. Use the past-date options in the schedule settings, then save.
-* **Autobilling is enabled, but no invoices are created. What should I check?**\
-  Confirm the extra has 1) a linked **Creditor**, 2) **Automatic Billing** enabled, and 3) cost data available for the booked extras. Then check **Finance → Invoice** and filter by creditor/date/type.
-* **How does supplier approval work?**\
-  If your Autobilling flow uses approvals, suppliers receive an email link to approve or reject invoices. See [Autobilling](./).
