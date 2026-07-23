@@ -62,32 +62,3 @@ Set **Minimum / Maximum** early. Period pricing and booking validation depend on
 * [Periods – Hotel Contract Configuration](periods-hotel-contract-configuration.md): Room types must exist before you add period rows.
 * [Board Supplements - Hotel Contract Configuration](board-supplements-hotel-contract-configuration.md): Room setup affects where supplements can apply.
 * [Extra Beds Cost – Hotel Contract Configuration](extra-beds-cost-hotel-contract-configuration.md): Occupancy and extra limits control allowed extra beds.
-
-***
-
-### FAQ
-
-**What’s the difference between “Room Type Code”, “Name”, and “List Text Name”?**\
-**Room Type Code** is the system key used in rules and exports.\
-**Name** is an internal label, often supplier-facing.\
-**List Text Name** is what users typically see in dropdowns.
-
-**When should I use “Parent Room”?**\
-Use it for variants of a base room type.\
-Example: “Double Sea View” under parent “Double”.
-
-**What happens if Minimum/Maximum is wrong?**\
-Bookings may fail validation or auto-match the wrong room.\
-Pricing and extra bed logic can also break.
-
-**Should I import rooms from the hotel or create them manually?**\
-Import when the hotel record is already maintained and accurate.\
-Create manually when the contract needs a custom room set.
-
-**What does “Override existing base room” actually change?**\
-It replaces the base room definition used by this contract.\
-Use it when the global definition is wrong for this supplier.
-
-**Can I delete a room type after adding periods?**\
-Avoid it. Period rows may still reference the room code.\
-Remove period rows first, then delete the room type.

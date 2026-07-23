@@ -133,25 +133,3 @@ This approach enables contract staff to store draft agreements without blocking 
 * Verify rooms in [Rooms – Hotel Contract Configuration](rooms-hotel-contract-configuration.md).
 * Verify periods and seasonal setup in [Periods – Hotel Contract Configuration](periods-hotel-contract-configuration.md).
 * Review general contract settings in [Hotel contract - General](hotel-contract-contract-name.md).
-
-### FAQ
-
-**Does reimport delete existing data?**\
-No. Data you do not select stays unchanged.\
-Selected sections are updated/replaced.
-
-**Can I reimport if I have unsaved changes?**\
-You’ll get a confirmation prompt.\
-Save first when possible.
-
-**Why can’t I use “Send email” in the Share tab?**\
-You are missing the **Hotel Contract** email template, or you lack permissions.\
-Create the template, then try again.
-
-**What does the supplier receive by email?**\
-A contract email with an accept/reject option.\
-It does not give the supplier edit access in Tourpaq.
-
-**When should I save without product details?**\
-During negotiation, when board codes/products are not final.\
-Complete the data before import.

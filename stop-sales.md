@@ -192,30 +192,3 @@ Some hotels can enable a setting that locks room selection during stop sale hour
 * [Agreed Allotment Stop Sale](stop-sales/agreed-allotment-stop-sale.md)
 * [Split the Stop Sale Rule](stop-sales/split-the-stop-sale-rule.md)
 * [Notification on Dashboard Stop Sale](stop-sales/notification-on-dashboard-stop-sale.md)
-
-### FAQ
-
-#### 1. Does a stop sale cancel existing bookings?
-
-**Q:** If I create a stop sale, will existing bookings be canceled?\
-**A:** No. A stop sale blocks _new_ bookings. Existing bookings stay unchanged.
-
-#### 2. Why do I get “Note is required”?
-
-**Q:** The Note field looks optional. Why do I get an error?\
-**A:** Your System Setup likely enforces a mandatory stop sale note.
-
-#### 3. Can I stop sale the whole hotel?
-
-**Q:** Do I need to select room types?\
-**A:** No. If you leave **Room Type** empty, the stop sale applies to the hotel. The system still stores it as separate entries per room type.
-
-#### 4. How do I temporarily ignore a stop sale?
-
-**Q:** I don’t want to delete it. I just want it not to apply.\
-**A:** Disable it in **Hotel → Stop Sales**. Disabled stop sales are ignored by the Stop Sale service.
-
-#### 5. Who can create stop sales?
-
-**Q:** Can suppliers create stop sales?\
-**A:** Yes, if they have the **Allow to make stop sale** permission. Otherwise, only users with access rights to Stop Sales can create them.

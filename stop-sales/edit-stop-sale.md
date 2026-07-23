@@ -85,25 +85,3 @@ After you save, check these spots:
 * **Stop Sales Logs → View details**
 * **Hotel → Allotment per Day** (same room and dates)
 * **Pricelist** (same room and dates)
-
-### FAQ
-
-#### Why is the “Remove” checkbox disabled?
-
-The rule is not in an editable state yet. Click **Edit** first, then open **Remove or Split**.
-
-#### What is the difference between “Removed” and “Enabled”?
-
-**Enabled** turns the rule on or off. **Removed** undoes the Stop Sale and restores availability.
-
-#### Can I split a Stop Sale into more than two periods?
-
-Yes. Enter the number of periods you need.
-
-#### What validations apply when splitting?
-
-Periods must not overlap. Periods must cover the original date range.
-
-#### Where do I confirm the system updated availability?
-
-Check **Stop Sales Logs** first. Then verify **Allotment per Day** and **Pricelist**.

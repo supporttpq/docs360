@@ -53,25 +53,3 @@ Agreed allotment reopens limited availability while the Stop Sale stays active. 
 * [Agreed Allotment Stop Sale](agreed-allotment-stop-sale.md)
 * [Remove (Undo) Stop Sale](remove-undo-stop-sale.md)
 * [Split the Stop Sale Rule](split-the-stop-sale-rule.md)
-
-### FAQ
-
-#### Why can’t I see Stop Sales outside the next 2 weeks?
-
-The default filter only shows the next 2 weeks. Expand the date range in the filters.
-
-#### What does **Only Agreed Allotment** do?
-
-It filters the list to Stop Sale rules where an agreed allotment value is set.
-
-#### What is the **Agreed Allotment** column showing?
-
-It shows the agreed allotment value configured on the Stop Sale rule (if any).
-
-#### Is Agreed Allotment the same as removing the Stop Sale?
-
-No. Removing restores the original availability. Agreed allotment keeps the Stop Sale, but reopens some capacity.
-
-#### Where do I change a Stop Sale rule from this list?
-
-Open the rule from **Hotel → Stop Sales** and edit it there. Start from [Edit Stop Sale](edit-stop-sale.md).

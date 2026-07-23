@@ -118,36 +118,3 @@ They ensure that layouts are visually accurate and context-specific (e.g., hotel
 * **Airplane backgrounds** (e.g., _Airbus A320 – 168_, _737-700_) are used for seat maps, with seats and other cabin elements added on top.
 * Backgrounds should be **high-quality and proportional** to avoid misalignment of elements.
 * Always check that the correct **For Type** is selected to prevent mixing hotel and transport layouts.
-
-### FAQ
-
-#### What’s the difference between an element and a background?
-
-An **element** is a movable item placed on the layout (seat, exit, wing, etc.).\
-A **background** is the static base image (floor plan or cabin diagram).
-
-#### When should I create a new element vs. a new seat type?
-
-Create a **new element** when you need a new icon/shape in the editor.\
-Create a **new seat type** when you need different booking rules or pricing.\
-See [Transport Layouts](transport-layouts.md).
-
-#### Which image format works best?
-
-Use **PNG with transparency** for elements.\
-Use **PNG or JPG** for backgrounds. Keep the aspect ratio consistent.
-
-#### Can I delete an element/background that’s already used?
-
-Avoid it. Deleting can break existing layouts.\
-Replace it in layouts first when possible.
-
-#### Why are elements misaligned on the background?
-
-The background image proportions are usually off.\
-Replace the background with a properly scaled version.
-
-#### I can’t find my element in the editor. What should I check?
-
-Verify **For Type** matches the layout type you’re editing.\
-Confirm the element wasn’t deleted.

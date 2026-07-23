@@ -74,27 +74,3 @@ This tells the reader to open the contract in Tourpaq to view the Notes.
 
 * [Hotel contract - General](hotel-contract-contract-name.md): Where you create and maintain the full contract.
 * [Periods – Hotel Contract Configuration](periods-hotel-contract-configuration.md): Also contains internal-only Notes (but period-specific).
-
-***
-
-### FAQ
-
-**Are Remarks required?**\
-No. Remarks are optional.
-
-**Who can see Remarks?**\
-Anyone who reads the exported Contract PDF can see them.
-
-**What’s the difference between Remarks and Notes?**\
-Use **Remarks** for text that should print in the Contract PDF.\
-Use **Notes** for internal-only comments in Tourpaq Office.
-
-**Do Notes ever appear in the PDF?**\
-Not the text itself. The PDF only shows the `[x] Internal notes` indicator.
-
-**Why do I see `[x] Internal notes` in the PDF?**\
-Someone added internal Notes on the contract. Open the contract to read them.
-
-**Can I use Remarks for pricing or legal clauses?**\
-Avoid it. Use contract rules and structured fields for anything enforceable.\
-Use Remarks for short, human-readable context only.

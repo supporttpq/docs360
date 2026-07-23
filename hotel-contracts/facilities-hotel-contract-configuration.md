@@ -59,22 +59,3 @@ Save after changing the template. This applies the facilities to the contract.
 
 * [Hotel contract - General](hotel-contract-contract-name.md)
 * [Actions - Hotel Contract Configurations](actions-hotel-contract-configurations.md) (includes reimport options for Facilities)
-
-***
-
-### FAQ
-
-**Can I select multiple facility templates on one contract?**\
-No. Only one template can be selected per contract.
-
-**Where are facility templates defined?**\
-They are configured at the company level. Your admin team maintains them.
-
-**Do facilities affect pricing or availability?**\
-Not directly. Pricing and availability come from Rooms/Periods and related rule tabs.
-
-**When should I update the facilities on a contract?**\
-Update them when the hotel’s amenities change, or when the wrong template was applied.
-
-**Why don’t I see the facility I need in the list?**\
-It is likely missing from your company templates. Add it there first.

@@ -98,32 +98,3 @@ Keep age ranges unique per **Type + Room**. Overlaps can create conflicts.
 * [Rooms – Hotel Contract Configuration](rooms-hotel-contract-configuration.md)
 * [Periods – Hotel Contract Configuration](periods-hotel-contract-configuration.md)
 * [Extra Beds Cost – Hotel Contract Configuration](extra-beds-cost-hotel-contract-configuration.md)
-
-***
-
-### FAQ
-
-**What’s the difference between “Extra Cost/Pax/Night” and “Extra Cost/Room”?**\
-**Pax/Night** scales with number of guests and nights.\
-**Room** stays fixed per room, regardless of occupancy.
-
-**Can I use both fields in the same row?**\
-Avoid it unless you explicitly need both charges.\
-If you do, double-check the total in a test booking.
-
-**Why do I see multiple rows under “Period ID”?**\
-Each row maps to one contract period.\
-It lets you change the fee by season.
-
-**Should I set an age range if the cost applies to everyone?**\
-No. Use a broad range (or the default) only when needed.\
-Keep the setup simple unless the supplier demands it.
-
-**What happens if age ranges overlap?**\
-Rules can conflict.\
-Results may depend on rule order or internal selection logic.
-
-**Why isn’t my extra cost applied in pricing?**\
-Check the **Room** scope first.\
-Then check **Period ID** and age range.\
-Finally, confirm that the amount field is filled.

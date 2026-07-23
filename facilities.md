@@ -44,7 +44,7 @@ There are four tabs:
 
 | Field                                       | Purpose                                                                            | Instructions                                                                                                                                                                                                                                              |
 | ------------------------------------------- | ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <p><strong>Name</strong></p><p></p>         | The name of the facility.                                                          | <p>Enter a clear, descriptive name for the facility. Example: “WiFi”, “Mini Market”, or “Outdoor Yoga”. Names should be concise yet descriptive.</p><p><br></p>                                                                                           |
+| **Name**                                    | The name of the facility.                                                          | <p>Enter a clear, descriptive name for the facility. Example: “WiFi”, “Mini Market”, or “Outdoor Yoga”. Names should be concise yet descriptive.</p><p><br></p>                                                                                           |
 | <p><strong>Category</strong></p><p><br></p> | <p>Defines the type or classification of the facility.</p><p><br></p>              | Select an appropriate category such as `HotelFacilities`, `Pension`, `Rooms`, or `Distance`. This helps organize and filter facilities.                                                                                                                   |
 | **Required**                                | Specifies whether this facility must be completed when adding or updating a hotel. | ✔ = required, ✖ = optional. Check the box if the facility is mandatory.                                                                                                                                                                                   |
 | **Filter on Web**                           | Determines if the facility can be used as a filter option on the website.          | ✔ = users can filter hotels based on this facility. ✖ = cannot be used as a filter.                                                                                                                                                                       |
@@ -225,68 +225,3 @@ It lets you maintain feed-specific labels without changing the guest-facing **Na
 On the website, facilities are displayed for the hotel like this:
 
 ![!](https://docs.tourpaq.com/assets/images/facilities_on_web-c0f8bedeeb3c056f7c09926e50b999b5.jpg)
-
-### FAQ
-
-<details>
-
-<summary>Why can’t I edit facilities on a hotel in <strong>Web</strong>?</summary>
-
-The hotel needs a **Facilities template** first.
-
-Select it on the hotel, then edit facilities in [Hotel Web](hotel/hotel-creation/hotel-web.md).
-
-</details>
-
-<details>
-
-<summary>What’s the difference between <strong>Show on Web</strong> and <strong>Show on Web as Filter</strong>?</summary>
-
-* **Show on Web** controls whether the facility is displayed.
-* **Show on Web as Filter** controls whether guests can filter by it.
-
-You can enable one without the other.
-
-</details>
-
-<details>
-
-<summary>When should I use <strong>Is Mandatory</strong>?</summary>
-
-Use it when a hotel template should enforce data completeness.
-
-Example: you require a value for “Distance to beach” on beach hotels.
-
-</details>
-
-<details>
-
-<summary>Should I delete facilities that are no longer used?</summary>
-
-Usually no.
-
-Delete is permanent and affects all hotels using the facility.
-
-Instead, hide it by disabling **Show on Web**, **Show on Web as Filter**, and **Show in App**.
-
-</details>
-
-<details>
-
-<summary>Why are only 5 facility documents attached to a ticket?</summary>
-
-Tickets support a maximum of **5 facility documents**.
-
-If you exceed the limit, only 5 documents are attached.
-
-</details>
-
-<details>
-
-<summary>What are <strong>All Inclusive</strong>, <strong>Swimming Pool</strong>, and <strong>Child Pool</strong> used for?</summary>
-
-They are API flags used for web differentiation.
-
-Only enable them if your website/API integration expects these flags.
-
-</details>

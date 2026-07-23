@@ -113,28 +113,6 @@ This prevents missing or inconsistent board basis after import.
 
 ***
 
-### FAQ
-
-**Will a child room’s board basis be overwritten on import?**\
-No. If the child already has a board basis, it stays unchanged.
-
-**What happens if the parent room has no board basis?**\
-Nothing is inherited. Child rooms keep their own value (or stay empty).
-
-**Does this change pricing?**\
-It updates the board basis field on the room.\
-Pricing impact depends on your pricing logic and exports.
-
-**Where do I verify the inherited board basis after import?**\
-Open the imported hotel contract.\
-Check the board basis shown on parent and child rooms.
-
-**Why didn’t a child room inherit the board basis?**\
-Most cases are missing room hierarchy detection.\
-Verify the child room is linked to the correct parent.
-
-***
-
 ### Summary
 
 If a parent room has board basis in the contract, Tourpaq applies it on import. Child rooms inherit the same value across the hierarchy.

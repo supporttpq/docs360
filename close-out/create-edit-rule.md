@@ -81,32 +81,6 @@ You can’t save if:
 * Review enabled rules regularly. Disable rules that are no longer relevant.
 * Allow up to \~2 minutes for changes to reach price lists.
 
-### FAQ
-
-#### Does Close Out cancel existing bookings?
-
-No. Close Out blocks **new** bookings by cutting FHA to `0`. Existing bookings stay unchanged.
-
-#### Why can’t I save a rule without selecting Transport/Destination/Resort/Hotel?
-
-Because the rule needs a scope. Otherwise it would match “everything” and could block sales globally.
-
-#### Can I create a rule only for a room type?
-
-Not by itself. Room types are tied to a hotel. Select **Hotel** first, then **Room Type**.
-
-#### Can I edit dates or scope after saving?
-
-Usually no. After saving, only **Enabled** is meant to change. Create a new rule for date/scope changes.
-
-#### I enabled a rule, but bookings are still possible. Why?
-
-Common causes:
-
-* The price list update has not finished yet (wait \~2 minutes).
-* The rule does not match the booking (transport/destination/resort/hotel/room type).
-* Availability is coming from another setup outside FHA (depends on configuration).
-
 ### Related tasks
 
 * [Close Out](./)

@@ -45,27 +45,6 @@ When you clear **Enabled** and click **Save**:
 * Disabling a rule does **not** restore “what it was before”. It restores whatever is configured now in the hotel setup.
 * Use a narrow scope when possible. Wide rules can block sales across many price lists.
 
-### FAQ
-
-#### Does enabling a rule cancel existing bookings?
-
-No. Close Out affects availability for **new** bookings by cutting FHA to `0`.
-
-#### I enabled/disabled a rule, but nothing changed. Why?
-
-Common causes:
-
-* The update is still running (wait \~2 minutes).
-* The rule does not match the price list scope (transport/resort/hotel/room).
-
-#### Why did FHA restore to a different value than before?
-
-Because disabling restores FHA from the **current hotel configuration**. If hotel free allotment changed meanwhile, the restored value changes too.
-
-#### Can I change a rule after saving it?
-
-Usually you only toggle **Enabled**. For scope or date changes, create a new rule and disable the old one.
-
 ### Related tasks
 
 * [Close Out](./)

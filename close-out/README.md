@@ -90,39 +90,3 @@ Common filters:
 
 * [Create / Edit rule](create-edit-rule.md)
 * [Enable / Disable rule](enable-disable-rule.md)
-
-### FAQ
-
-#### Does Close Out cancel existing bookings?
-
-No. Close Out blocks **new** bookings by cutting FHA to `0`. Existing bookings stay unchanged.
-
-#### How long does it take for a rule to apply?
-
-Usually \~2 minutes. It depends on background processing and price list updates.
-
-#### What’s the difference between Close Out and Stop Sales?
-
-Close Out blocks sales by setting **FHA to `0`** for the matched scope.
-
-Stop Sales reduces day-by-day availability in the hotel allotment flow. It can also be brand-specific.
-
-#### Why can’t I filter or create Close Out rules per brand?
-
-Close Out rules are stored and applied at **company level** only.
-
-#### I enabled a rule, but bookings are still possible. Why?
-
-Common causes:
-
-* The price list update has not finished yet (wait \~2 minutes).
-* The rule scope does not match the booking (transport/resort/hotel/room type).
-* Availability is coming from another setup outside FHA (depends on configuration).
-
-#### Can I create a rule only for a room type?
-
-Not by itself. Room types are tied to a hotel, so the rule must include at least one of:
-
-* Transport, destination, resort, or hotel
-
-Start with a narrow scope first. Expand only if needed.

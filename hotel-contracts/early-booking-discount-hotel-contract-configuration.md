@@ -104,28 +104,3 @@ If you want Early Booking to stack with Stay & Pay, ensure both the rule and the
 * [Rooms – Hotel Contract Configuration](rooms-hotel-contract-configuration.md)
 * [Periods – Hotel Contract Configuration](periods-hotel-contract-configuration.md)
 * [Stay & Pay - Hotel Contract Configuration](stay-and-pay-hotel-contract-configuration.md)
-
-***
-
-### FAQ
-
-**What’s the difference between a fixed discount and a % discount?**\
-Fixed discounts subtract a set amount.\
-Percentage discounts scale with the priced amount.
-
-**Why is my early booking discount not applied?**\
-Check **Booking (Start/End)** first.\
-Then check **Stay (Start/End)**.\
-Finally, validate **Days Before**, **Min Days**, and **Week Days**.
-
-**What happens if I leave “Room” empty?**\
-The discount targets the **board supplement** instead of the room cost.\
-Use **Board** to choose which board supplement it applies to.
-
-**Can I restrict the discount to a specific board type?**\
-Yes. Set **Board**.\
-If you also set **Room**, both must match.
-
-**How does the deposit work with Early Booking Discount?**\
-Use **Deposit** to require a deposit percentage.\
-Use **Deposit Date** to define when it must be paid.

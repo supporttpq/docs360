@@ -60,25 +60,3 @@ Click **Display** to refresh the report.
 Export the results if you need to share or do deeper analysis.
 {% endstep %}
 {% endstepper %}
-
-### **FAQ**
-
-**Why is the report empty?**
-
-Most empty reports come from filters. Check the date period first.
-
-Also verify that the underlying setup exists for that year. Many **Business Intelligence** reports require [Departure stat weeks](../setup/departure-stat-weeks.md).
-
-**The numbers look wrong. What should I check?**
-
-Confirm you are filtering the intended dimension. Some reports support both **travel period** and **booking date** filtering.
-
-Clear filters and re-run the report. Then add filters back one by one.
-
-**I can’t see the Business Intelligence menu or a specific report. Why?**
-
-This is usually permission-related. Ask an admin to verify your access to the Business Intelligence module.
-
-**Why can’t I export?**
-
-Export options can differ by report and your permissions. If the export action is missing, check your role permissions.

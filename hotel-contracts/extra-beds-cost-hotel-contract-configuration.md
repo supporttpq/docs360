@@ -98,27 +98,3 @@ Avoid overlapping age ranges for the same **Category** and **Room** selection. O
 * [Hotel contract - General](hotel-contract-contract-name.md)
 * [Rooms – Hotel Contract Configuration](rooms-hotel-contract-configuration.md)
 * [Periods – Hotel Contract Configuration](periods-hotel-contract-configuration.md)
-
-***
-
-### FAQ
-
-**What does “Rank – From/To” mean?**\
-It targets the extra bed position.\
-`1–1` prices the first extra bed only.\
-`1–2` prices the first and second extra beds.
-
-**How do I price the second extra bed differently?**\
-Create a separate rule with `Rank 2–2`.
-
-**Should I use fixed amounts or “% (Percentage)”?**\
-Use fixed amounts for stable fees.\
-Use percentage when the price should follow room cost.
-
-**Why do I see multiple rows under Period ID?**\
-Each row maps to one contract period.\
-It lets you change extra bed cost by season.
-
-**What happens if age ranges overlap?**\
-Rules can conflict.\
-Keep ranges unique per Category + Room scope.

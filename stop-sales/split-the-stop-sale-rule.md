@@ -120,39 +120,3 @@ Formula: `FHA = Final r.No - Booked rooms`.
 
 * Use splitting to apply different actions across one original date range.
 * Start verification in **Stop Sales Logs**.
-
-### FAQ
-
-#### Can I split a disabled Stop Sale rule?
-
-No. The rule must be **enabled** to split it.
-
-#### Can I create gaps in the split periods?
-
-No. The split periods must fully cover the original date range.
-
-#### Can split periods overlap?
-
-No. Overlaps are blocked by validation.
-
-#### What is the difference between **Remove** and **Agreed Allotment** in a split row?
-
-* **Remove** undoes the Stop Sale for that period.
-* **Agreed Allotment** keeps the Stop Sale, but reopens limited availability.
-
-See:
-
-* [Remove (Undo) Stop Sale](remove-undo-stop-sale.md)
-* [Agreed Allotment Stop Sale](agreed-allotment-stop-sale.md)
-
-#### Does splitting change existing bookings?
-
-No. It changes availability calculations for the dates and room.
-
-#### How do I “undo” a split?
-
-There is no merge button. Edit the split rules or recreate one new rule covering the full period.
-
-#### Where should I verify results first?
-
-Start with **Stop Sales Logs → View details**. Then check **Allotment per Day** and **Pricelist**.

@@ -95,29 +95,3 @@ You can export the report as an XML file.
 
 * The schedule can be **stopped** without deleting it, allowing it to be resumed later.
 * The schedule can also be **deleted entirely** if no longer needed.
-
-### FAQ
-
-#### What’s the difference between **Overview** and **Communication**?
-
-**Overview** is for interactive checking. **Communication** is for scheduled sending of the same data as XML.
-
-#### Why can’t I use **Days Before** together with **Date From / Date To**?
-
-They define the time window in two different ways. Use one or the other.
-
-#### What does **Hide Dynamic Flights** remove?
-
-It hides dynamic transports, including real transports and GDS.
-
-#### Where does **ROE** come from?
-
-It’s a configured value. Set it in **Setup → Average pax/room sold**.
-
-#### Can I export the report without emailing it?
-
-Yes. Use the export option in the overview to download an XML file.
-
-#### I don’t see any hotels for a departure. What should I check first?
-
-Start with filters. Then confirm the hotel contract type (Allotment/Guarantee/Bed Bank) matches your selected checkboxes.

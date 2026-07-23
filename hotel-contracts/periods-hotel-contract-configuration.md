@@ -132,25 +132,3 @@ Keep notes short. Write what changed and why.
 * [Rooms – Hotel Contract Configuration](rooms-hotel-contract-configuration.md): Room codes must exist before you add period rows.
 * [Board Supplements - Hotel Contract Configuration](board-supplements-hotel-contract-configuration.md): Supplements often reference period logic and room codes.
 * [Hotel contract - General](hotel-contract-contract-name.md): Contract header settings can impact period behavior.
-
-***
-
-### FAQ
-
-**Can I create multiple periods for the same contract?**\
-Yes. Use one period per season or pricing strategy.
-
-**What happens if periods overlap?**\
-It depends on your configuration. Overlaps can cause pricing conflicts. Avoid them.
-
-**Do I need a row for every room and board?**\
-Usually, yes. Missing combinations may not price correctly.
-
-**What is “Release days (R)”?**\
-It’s the deadline for releasing unsold allotment back to the supplier.
-
-**What’s the difference between Allotment, Guarantee, and Secured?**\
-Allotment is availability for sale. Guarantee and Secured are commitment fields, when used.
-
-**When should I use “Single Cost” and “SP%”?**\
-Use **Single Cost** for single-occupancy supplements. Use **SP%** if it’s percentage-based.
