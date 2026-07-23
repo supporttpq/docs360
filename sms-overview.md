@@ -106,17 +106,3 @@ If a customer says they did not receive an SMS:
 3. Verify the phone number format and country code in the booking/customer data.
 4. Check whether the correct **SMS type** template was used.
 5. Export the filtered list if you need to escalate to IT/support.
-
-### FAQ
-
-#### Why is the SMS text anonymized?
-
-Some setups mask message text to protect personal data. This supports GDPR and internal privacy policies.
-
-#### What does **Pending** mean?
-
-The SMS is queued and not confirmed as delivered yet. Refresh later or narrow the sent period to confirm the final status.
-
-#### Can I resend an SMS from this page?
-
-That depends on your setup and permissions. If resending is not available here, resend via the booking flow or your SMS tool.
