@@ -49,29 +49,3 @@ Use tags to filter offers and highlight selected offers on your website.
 The selected offers are now tagged. They can be filtered or highlighted on the website.
 
 <figure><img src=".gitbook/assets/image (353).png" alt=""><figcaption></figcaption></figure>
-
-### **FAQ**
-
-**What are price list tags?**\
-Price list tags are labels you can assign to specific offers (price list lines) to help identify and filter them.
-
-**Why would I use a price list tag?**\
-Tags make selected offers easier to identify and can be used for custom filtering on the website.
-
-**Who can create price list tags?**\
-Any user with access to the Price List menu can create tags.
-
-**Do I need price lists before I use tags?**\
-Yes. You must have at least one price list with transport, hotel, and room already created.
-
-**How do tags affect the website?**\
-Tags allow offers to be filtered or highlighted differently on the website.
-
-**Can tags be applied to multiple offers at once?**\
-Yes. You can select multiple offers and assign a tag to all of them.
-
-**Will tags change pricing values?**\
-No. Tags are labels only. They do not change pricing values.
-
-**Are tags mandatory for filtering?**\
-Tags are optional. Use them when you need a custom label-based filter.

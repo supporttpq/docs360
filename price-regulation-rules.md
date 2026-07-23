@@ -90,20 +90,3 @@ After you enable the feature and the service is running:
 5. Click **Save**.
 
 <figure><img src=".gitbook/assets/image (53) (1).png" alt=""><figcaption></figcaption></figure>
-
-### **FAQ**
-
-1. **What is a price regulation rule?**\
-   A price regulation rule is a set of conditions that tells Tourpaq Office when to automatically raise or lower prices based on time and offer count, while protecting minimum price limits.
-2. **Why do I need a code and a name for each rule?**\
-   The name makes the rule easy to find. The code uniquely identifies it.
-3. **What does “Hours number” mean?**\
-   It is the number of hours between price adjustments.
-4. **How do minimum price fields work?**\
-   They define the lowest prices the system can set. Prices will not go below these limits.
-5. **How often does a rule run?**\
-   The service checks your conditions continuously. When the conditions are met, prices are adjusted.
-6. **Can I prevent rules from lowering prices too much?**\
-   Yes. Set **Lowest price** limits to protect against underpricing.
-7. **Where do I see the price changes?**\
-   In **price list history**, where automatic adjustments are logged with timestamps.

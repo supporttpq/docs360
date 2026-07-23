@@ -67,32 +67,3 @@ This reduces manual work and limits copy/paste errors.
   * The user who performed the migration
   * Date of migration
 * **Show Hidden:** Displays migrations older than the number of days specified in **System Setup → Hide Filters**.
-
-## FAQ
-
-**What does Migrate Price List do?**\
-It copies price lists from one brand to another within the same company.
-
-**Who can use this feature?**\
-Only administrators.
-
-**Can I adjust prices during migration?**\
-Yes. You can apply an amount and/or percentage change during migration.
-
-**Does migration change brand assignments for transports and hotels?**\
-Yes, by default. Enable **Copy Only Price Lists** to avoid changing brand assignments.
-
-**Can I apply tags to destination price lists?**\
-Yes. Use **Set Tag** to apply a tag to migrated price list rows.
-
-**What happens to “max rooms” values?**\
-Enable **Copy Max Room** to copy max room values from the source price list.
-
-**Is there a log of migrations?**\
-Yes. All migrations are logged. You can search by brand, user, or date.
-
-**Can migration selectively include only certain source data?**\
-Yes. You can filter by **Source Agency** to migrate only selected entities.
-
-**Does migration create new price structures automatically?**\
-No. It copies existing price lists. It does not generate new pricing rules or structures.
