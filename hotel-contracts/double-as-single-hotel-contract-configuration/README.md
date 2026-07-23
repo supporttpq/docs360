@@ -77,31 +77,3 @@ It also shows period-based allotment and cost fields.
 * [Rooms – Hotel Contract Configuration](../rooms-hotel-contract-configuration.md)
 * [Periods – Hotel Contract Configuration](../periods-hotel-contract-configuration.md)
 * [Board Basis Inheritance Rule](board-basis-inheritance-rule.md)
-
-***
-
-### FAQ
-
-**What is “Double as Single” used for?**\
-It prices a double room when only one guest stays.\
-It prevents undercharging compared to double occupancy.
-
-**Can I create a discount instead of a surcharge?**\
-Yes. Enter a negative **Cost** value.\
-Example: `-10` or `-15%`.
-
-**What does the “%” checkbox change?**\
-It changes how **Cost** is interpreted.\
-Enabled means percentage. Disabled means fixed amount.
-
-**When should I enable “Per Pax”?**\
-Enable it when the adjustment is per person.\
-Leave it off for per-room adjustments.
-
-**Why does my Double as Single rule not apply?**\
-Most cases are a wrong **Period ID**.\
-Also check the booking dates match that period.
-
-**Do I need to configure rooms again here?**\
-No. Room codes come from the contract room setup.\
-This tab only adds single-occupancy pricing logic.

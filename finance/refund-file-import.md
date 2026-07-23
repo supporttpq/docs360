@@ -88,31 +88,3 @@ Fix the file/export and try again.
 
 * **BookingNo** is required so Tourpaq can connect the refund to the correct booking.
 * **PaymentCode** must already exist in Tourpaq and must be valid for refund usage.
-
-***
-
-### FAQ
-
-#### 1. What files can I import here?
-
-Only refund files **exported from Business Central**.
-
-#### 2. Why can’t I upload a file with a header row?
-
-This import expects the first line to be refund data. If you include a header row, Tourpaq will treat it as a transaction and the import will fail.
-
-#### 3. What does “PaymentCode” mean?
-
-**PaymentCode** is the internal code for the payment method used for the refund. It must match a configured payment method in Tourpaq.
-
-#### 4. What happens if the BookingNo in the file does not exist in Tourpaq?
-
-That line cannot be matched to a booking and will be shown as an error after you click **Process**.
-
-#### 5. I get an error about an unknown PaymentCode—what should I do?
-
-Make sure the payment code exists and is active in [Method of Payment](method-of-payment.md). If needed, ask an Admin/Financial user to create or activate it.
-
-#### 6. Where can I see the imported refunds after processing?
-
-After a successful import, you can typically find the transactions in your payment listings (for example in [Payment Registration](payment-registration.md)), depending on your setup and filters.

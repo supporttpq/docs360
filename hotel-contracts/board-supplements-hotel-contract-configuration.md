@@ -137,31 +137,3 @@ Common cases are New Year’s Eve and Christmas dinners.
 * [Rooms – Hotel Contract Configuration](rooms-hotel-contract-configuration.md): Room codes referenced by Board Basis.
 * [Periods – Hotel Contract Configuration](periods-hotel-contract-configuration.md): Period IDs used for Board Basis costs.
 * [Extra Beds Cost – Hotel Contract Configuration](extra-beds-cost-hotel-contract-configuration.md): Often configured alongside board and age rules.
-
-***
-
-### FAQ
-
-**What’s the difference between “Board Supplements” and “Board Basis”?**\
-Board Supplements are the supplement definitions (board, age, category, product).\
-Board Basis is where you assign costs per **Period ID**.
-
-**Why is the Board Basis menu missing?**\
-A system setting can hide it.\
-Check **System Setup →** [System Setup – Hotel Import](../setup/system-setup/system-setup-hotel-import.md).
-
-**How does the system evaluate age ranges?**\
-It uses the guest’s age in the booking context.\
-If the age is outside the range, the row is ignored.
-
-**Can I apply a supplement to only some rooms?**\
-Yes. Use the **Rooms** field in Board Basis.\
-Limit it when only certain room codes include the board option.
-
-**What’s the difference between Clear and Delete?**\
-**Clear (×)** resets the input fields. It does not remove saved rows.\
-🗑️ **Delete** removes the row from the contract.
-
-**Can I add multiple supplements for the same board type?**\
-Yes. Use separate rows.\
-Keep age ranges and codes distinct to avoid conflicts.

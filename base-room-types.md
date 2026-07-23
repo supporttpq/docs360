@@ -68,35 +68,3 @@ When you add a room type to a specific hotel, you can override:
 <figure><img src=".gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src=".gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
-
-### FAQ
-
-#### 1. What is the difference between a base room type and a hotel room type?
-
-**Q:** What’s the difference?\
-**A:** A base room type is a shared template. A hotel room type is the hotel-specific version. The hotel version can override name and beds.
-
-#### 2. Why can’t I see my room type in the booking flow?
-
-**Q:** The room type exists, but it does not show up. Why?\
-**A:** Check the room **Status** first. Then check if **Internet** must be enabled for your channel.
-
-#### 3. When should I use “Is Fictive”?
-
-**Q:** What is a fictive room type for?\
-**A:** Use it for virtual configurations. Examples include one-way hotels or internal planning setups.
-
-#### 4. What does “Ignore in Seats vs. Beds” do?
-
-**Q:** Will it affect availability or sales?\
-**A:** It only removes the room type from the **Seats vs. Beds** overview. It does not delete the room type.
-
-#### 5. Can I rename the room without breaking exports?
-
-**Q:** I want one name in the UI and another in exports. Can I do that?\
-**A:** Yes. Use **Plaintext** for the UI name. Use **List Text** for the export name.
-
-#### 6. Can I change the Room Code later?
-
-**Q:** Is it safe to change?\
-**A:** Avoid changes after the room type is in use. It is a unique identifier. Changing it can break references and integrations.

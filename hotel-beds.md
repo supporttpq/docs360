@@ -1,6 +1,6 @@
 # Hotel Beds
 
-See also: [Hotel Bed Banks - FAQ](hotel-bed-banks-faq.md).
+See also: [Hotel Bed Banks - FAQ](/broken/pages/BEG7zNLeQ8e6nTtILVtM).
 
 ### Overview
 
@@ -51,7 +51,7 @@ A bed bank is a third-party service. It provides hotel content and contract data
 
 To use this feature, set up your **Hotelbeds** credentials in **System Setup → Hotelbeds**:
 
-<figure><img src="../.gitbook/assets/image (101).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (101).png" alt=""><figcaption></figcaption></figure>
 
 If the tab is missing, an administrator must enable the feature.
 
@@ -78,7 +78,7 @@ The system returns hotels in the selected area. The results include:
 
 The hotel can be imported only if it has at least one contract code assigned to it.
 
-<figure><img src="../.gitbook/assets/image (102).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (102).png" alt=""><figcaption></figcaption></figure>
 
 ### Import hotel <a href="#import-hotel" id="import-hotel"></a>
 
@@ -100,14 +100,14 @@ Photos and allotments are not available immediately. They are typically availabl
 
 Select **View contract details** to open a pop-up with the contract information.
 
-<figure><img src="../.gitbook/assets/image (103).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (103).png" alt=""><figcaption></figcaption></figure>
 
 * If the button is missing, a “no contracts defined” message is shown instead. The hotel cannot be imported.
 * In some cases, a hotel appears to have contracts on the search page, but none are available on the details page. This happens when contracts are invalid (no rooms) or when contract rooms do not match the hotel’s rooms. The hotel cannot be imported.
 
 It is important to review a contract before importing it.
 
-<figure><img src="../.gitbook/assets/image (104).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (104).png" alt=""><figcaption></figcaption></figure>
 
 ### Select / Check room mappings <a href="#select--check-room-mappings" id="select--check-room-mappings"></a>
 
@@ -117,7 +117,7 @@ It remembers previous mappings. It may also map rooms by configuration.
 
 Always verify that rooms are mapped correctly before saving.
 
-<figure><img src="../.gitbook/assets/image (105).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (105).png" alt=""><figcaption></figcaption></figure>
 
 ### Import / Update hotel photos <a href="#import--update-hotel-photos" id="import--update-hotel-photos"></a>
 

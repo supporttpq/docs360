@@ -75,21 +75,3 @@ Add the rule and save the contract.
 
 * [Remarks - Hotel Contract Configuration](remarks-hotel-contract-configuration.md): Add printable text to the Contract PDF.
 * [Hotel contract - General](hotel-contract-contract-name.md): Create and manage the contract header.
-
-***
-
-### FAQ
-
-**What’s the difference between Rules and Remarks?**\
-Use **Rules** for contract terms you want to maintain as rules.\
-Use **Remarks** for optional free text that prints in the Contract PDF.
-
-**Can I add more than one rule to a contract?**\
-Yes. Add as many rules as needed.
-
-**Where do I create and edit rule texts?**\
-Use **Hotel → Hotel Contract Rules** to maintain the rule definitions.
-
-**If I update a rule definition, does it change existing contracts?**\
-It can. If the same rule is reused, updates may show everywhere it’s used.\
-If you need contract-specific wording, create a separate rule.

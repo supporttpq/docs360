@@ -85,27 +85,3 @@ Before accessing the Activity Log:
 * [Hotel contract - General](hotel-contract-contract-name.md)
 * [Rules - Hotel Contract Configuration](rules-hotel-contract-configuration.md)
 * [Hotel Activity Log](../hotel/hotel-creation/hotel-activity-log.md) (hotel allotment changes, not contract changes)
-
-***
-
-### FAQ
-
-**Why don’t I see any entries?**\
-Widen the date range.\
-Verify you have access to audit logs.\
-Confirm the contract was actually changed in that period.
-
-**Why do I see multiple rows with the same KEYID?**\
-KEYID groups changes for the same contract entry.\
-Each changed field is logged as a separate row.
-
-**What’s the difference between ORIGINAL VALUE and NEW VALUE?**\
-ORIGINAL VALUE is the value before the change.\
-NEW VALUE is the value after the change.
-
-**What does AGENCY = “All brands” mean?**\
-It means the change applies across all brands, not a single brand.
-
-**Can I undo changes from Activity Log?**\
-No. The Activity Log is read-only.\
-To revert a change, edit the contract back to the correct values.

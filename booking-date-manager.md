@@ -67,24 +67,3 @@ Use this page to:
 * To ensure accurate results, always set both **Booking start** and **Booking end** dates before pressing **Display**.
 * You can click on a **Booking No** to open a detailed view of that booking.
 * If the system finds matching bookings, the total number (e.g., _Found 13 bookings_) will appear above the table.
-
-***
-
-### FAQ
-
-* **Do I need to set both Booking start and Booking end?**\
-  Yes. Set both dates before selecting **Display**.
-* **What happens when I change the selected brand?**\
-  The list updates to show bookings for that brand.
-* **Are Departure start and Departure end required?**\
-  No. They are optional filters used to limit results by departure date.
-* **Can I change the original Booking Date?**\
-  No. This page is for editing **Alt. Booking Date**.
-* **When are changes saved?**\
-  Changes are stored when you select **Save** after updating **Alt. Booking Date**.
-* **How do I open the details for a specific booking?**\
-  Select the booking number in the **Booking No** column.
-* **What does “+ More filters / Clear” mean, and what does the number show?**\
-  &#xNAN;**+ More filters** opens more filter options. **Clear** resets all filters. The number shows how many filters are active.
-* **Why do I only see some bookings (and not all of them)?**\
-  The list shows only bookings that match your filters, especially your booking date range.

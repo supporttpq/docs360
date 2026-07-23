@@ -71,29 +71,3 @@ Unsure about **Contract Type** or **Creditor**? Check with finance first. These 
 
 * Configure room types in [Rooms – Hotel Contract Configuration](rooms-hotel-contract-configuration.md).
 * Configure periods, allotments, and costs in [Periods – Hotel Contract Configuration](periods-hotel-contract-configuration.md).
-
-### FAQ
-
-**What’s the difference between “Hotel” and “Contract Name”?**\
-**Hotel** identifies the property.\
-**Contract Name** identifies the agreement version for that hotel.
-
-**When should I use “Create new” for Hotel?**\
-Use it when the hotel does not exist yet.\
-If the hotel exists, always select it to avoid duplicates.
-
-**What is “Release Email” used for?**\
-It’s the email address used for release-related communication.\
-Use a shared supplier inbox when possible.
-
-**What does “Creditor” control?**\
-It links the contract to your finance setup.\
-It impacts invoices, settlements, and financial reporting.
-
-**Why do I need to set “Child Price Age” and “Child Ages for Extra Beds”?**\
-They drive how the system categorizes passengers by age.\
-They also affect which child and extra bed rules apply.
-
-**Should I enable “Combine E.B. with S\&P”?**\
-Enable it when Early Booking and Stay & Pay should both apply.\
-Leave it off if you want these rule types to stay separate.

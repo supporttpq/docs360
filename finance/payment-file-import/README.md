@@ -18,6 +18,8 @@ layout:
     visible: true
   tags:
     visible: true
+  actions:
+    visible: true
 ---
 
 # Payment File Import
@@ -171,33 +173,3 @@ Open [Payment Registration](../payment-registration.md) and search by payment da
 
 * Imported payments are validated during import. Any unmatched or erroneous lines are flagged for review.
 * The payment date used can depend on your bank file and setup. If your import source uses an **accounting date**, Tourpaq may use that date instead of today.
-
-***
-
-### FAQ
-
-#### 1. Where do imported payments show up?
-
-All the imported payments appear in [Payment Registration](../payment-registration.md).
-
-#### 2. What information must the bank file contain?
-
-At a minimum, Tourpaq needs a **booking identifier**, a **payment date**, and an **amount** for each payment line.
-
-#### 3. Why does the import fail with “booking not found” (or similar)?
-
-Usually, the booking identifier in the file does not match what Tourpaq expects (e.g., the wrong booking number, a missing reference, extra characters, etc.). Confirm the correct identifier format with your bank export specification or your finance administrator.
-
-Ex: If the booking number is not correct in the import file, in this case, when processing the file from the bank, the message "Payments with no correspondent bookings found" will appear, and it will also appear in Balance Administration, where the correct booking number can be added and after saving it will disappear from here.
-
-<figure><img src="../../.gitbook/assets/image (800).png" alt=""><figcaption></figcaption></figure>
-
-#### 4. Which payment method is used for imported payments?
-
-Imported payments should use a dedicated payment method. If it is missing, it must be configured in [Method of Payment](../method-of-payment.md).
-
-#### 5. Can I use Payment File Import for refunds?
-
-Not usually. Refunds are typically handled through a separate refund process/file (depending on your setup). If you have a refund import feature available, use that instead.
-
-If your company uses refund imports, see [Refund File Import](../refund-file-import.md).

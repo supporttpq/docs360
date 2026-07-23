@@ -77,25 +77,3 @@ After you save, check these spots:
   * Allotment values should match the pre-Stop Sale values.
 * **Pricelist** (same hotel, room type, and dates)
   * `FHA` (free-hotel-allotment) should show the restored availability.
-
-### FAQ
-
-#### Why is the “Remove” checkbox disabled?
-
-The rule is not in edit mode yet. Click **Edit** first, then open **Remove or Split**.
-
-#### Is “Disable” the same as “Remove (Undo)”?
-
-No. **Disable** stops applying the rule going forward. **Remove (Undo)** restores the original allotment that the Stop Sale replaced.
-
-#### Does removing a Stop Sale change existing bookings?
-
-No. It changes availability calculations for the dates and rooms covered by the rule.
-
-#### Can I undo a removal?
-
-Not directly. Create a new Stop Sale for the same period if you need to block sales again.
-
-#### Where should I verify the result first?
-
-Start with **Stop Sales Logs**. Then check **Allotment per Day** and **Pricelist**.

@@ -92,29 +92,3 @@ If you change payment plans on an active contract, align with finance first. It 
 * [Hotel contract - General](hotel-contract-contract-name.md)
 * [Rooms – Hotel Contract Configuration](rooms-hotel-contract-configuration.md)
 * [Periods – Hotel Contract Configuration](periods-hotel-contract-configuration.md)
-
-***
-
-### FAQ
-
-**Can I add multiple payment milestones?**\
-Yes. Add one row per payment date.
-
-**What date format should I use?**\
-Use `DD-MM-YYYY`.
-
-**When should I use “Payback Date”?**\
-Use it when a payment is expected to be returned or reconciled later.\
-If not relevant, leave it empty.
-
-**Does “Tot Amount” have to match the contract total?**\
-Not necessarily. It depends on your process and what you want to track.\
-Finance typically expects the plan to reconcile against supplier settlement.
-
-**Why can’t I change the currency here?**\
-Currency is usually fixed per contract to avoid mixed-currency settlement.\
-If you need a different currency, update the contract setup.
-
-**What does the “Year” field control?**\
-It controls grouping in the Hotel Contract export.\
-Use it to keep payment plans organized across reporting periods.

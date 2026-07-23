@@ -19,6 +19,8 @@ layout:
     visible: true
   tags:
     visible: true
+  actions:
+    visible: true
 ---
 
 # Missed Payments
@@ -111,20 +113,3 @@ Use the icons in **ACTIONS** to retry, move, view offers, or hide the entry.
 When a payment is corrected, it moves out of the “missed” category and appears in the appropriate financial overview.
 
 For booking payments, you typically find it in [Payment Registration](finance/payment-registration.md) after it is registered.
-
-***
-
-### FAQ
-
-* **What is a “missed payment” in Tourpaq?**\
-  It is a payment attempt that is not successfully processed or not recorded correctly, and is therefore logged on the **Missed Payments** page.
-* **How do I show payments for a specific time period?**\
-  Use **Payment Start** and **Payment End** to filter by the payment attempt date.
-* **What is the difference between “Status code” and “Payment status”?**\
-  **Status code** is the technical status returned by the payment gateway. **Payment status** is a descriptive status that often mirrors the status code.
-* **What does “Reason” mean, and why is it sometimes empty?**\
-  **Reason** explains why the payment failed _if available_. If the payment system does not provide a reason, the field may be blank.
-* **What does “Hide” do, and can I see hidden entries again?**\
-  Hide removes entries from the main list view. Use **Show Hidden** to display hidden entries.
-* **Can I reassign a payment to a different booking?**\
-  Yes. The **Move payment to another booking** action is available in the **ACTIONS** column.

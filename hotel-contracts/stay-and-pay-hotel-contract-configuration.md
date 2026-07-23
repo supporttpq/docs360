@@ -121,29 +121,3 @@ If you use **EB**, make sure your Early Booking setup also allows the combinatio
 * [Rooms – Hotel Contract Configuration](rooms-hotel-contract-configuration.md)
 * [Periods – Hotel Contract Configuration](periods-hotel-contract-configuration.md)
 * [Early Booking Discount – Hotel Contract Configuration](early-booking-discount-hotel-contract-configuration.md)
-
-***
-
-### FAQ
-
-**Does “Week Days” mean arrival day or every day of the stay?**\
-It is the **arrival / check-in day**.
-
-**Does Stay & Pay show up as a “special offer” in sales channels?**\
-It can. It depends on your channel setup.\
-Validate in your booking tool.
-
-**Why is my Stay & Pay not applied?**\
-Check **Booking Period** and **Stay Period** first.\
-Then confirm **Period**, **Room**, **Week Days**, and stay length.
-
-**Can I combine Stay & Pay with Early Booking Discount?**\
-Yes, if your rules are set up to allow it.\
-Use the **EB** flag and the Early Booking Discount’s **S\&P** option as needed.
-
-**What should I enter for a “7 nights for the price of 6” deal?**\
-Set **Stay Days No = 7** and **Pay Days No = 6**.
-
-**What if the guest stays longer than “Stay Days No”?**\
-The rule still requires the minimum stay.\
-If you need multiple bundles or special behavior, add dedicated rules and test pricing.

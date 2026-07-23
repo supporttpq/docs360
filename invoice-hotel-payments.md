@@ -19,6 +19,8 @@ layout:
     visible: true
   tags:
     visible: true
+  actions:
+    visible: true
 ---
 
 # Invoice Hotel Payments
@@ -75,20 +77,3 @@ The export includes the currently displayed rows and columns such as:
 * **Currency**: Transaction currency.
 * **Description**: Payment description (for example Hotel Room Payment).
 * **Invoice status**: Status (for example Pending).
-
-***
-
-### FAQ
-
-* **What is Invoice Hotel Payments used for?**\
-  Use it to review hotel booking payment lines linked to supplier invoices and export them for reconciliation and reporting.
-* **Why can’t I find a payment line I expect to see?**\
-  Start by widening the **Booking start/Booking end** range. Then filter by **invoice number**, **creditor**, and **status**.
-* **Does Export include all records in the system?**\
-  No. Export includes the **currently displayed** rows based on your filters.
-* **What does BOOKING CLX mean?**\
-  It indicates whether the booking is cancelled (YES/NO).
-* **What currency will I see in the list/export?**\
-  The currency is shown per row in **CURRENCY**. It depends on the booking/invoice setup.
-* **Where do I manage the invoice itself?**\
-  Use **Finance → Invoice** to open, download, archive, or pay invoices (permissions required). See [Invoice](invoice.md).
