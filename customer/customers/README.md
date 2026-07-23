@@ -18,6 +18,8 @@ layout:
     visible: true
   tags:
     visible: true
+  actions:
+    visible: true
 ---
 
 # Customers
@@ -159,93 +161,3 @@ Once you have results (and have selected one or more customers), you may have ac
 * **No results:** click **Clear** and try again with fewer filters.
 * **Newsletter segmentation:** use the **Newsletter** column/filter to build campaign lists.
 * **Data quality:** if you find duplicates, use **Merge customers** to clean CRM data.
-
-***
-
-### FAQ
-
-<details>
-
-<summary><strong>I can’t find a customer. What should I try?</strong></summary>
-
-1. Click **Clear** to remove all filters.
-2. Try searching by **Email** or **Phone** (these are usually more reliable than names).
-3. If the name might be misspelled, try a shorter search (for example only the last name).
-4. If the customer still doesn’t appear, they may not exist in your database yet, or your permissions may limit what you can see.
-
-</details>
-
-<details>
-
-<summary><strong>What’s the difference between “Search Customer” and the other filters?</strong></summary>
-
-* **Search Customer** is a quick, broad search.
-* The other fields (like **Customer No**, **Email**, **City**) are more specific and usually help you narrow results faster.
-
-</details>
-
-<details>
-
-<summary><strong>What is “Customer No”, and why should I use it?</strong></summary>
-
-**Customer No** is the customer’s unique ID in Tourpaq. If you have it, it’s typically the fastest and most precise way to find the correct customer.
-
-</details>
-
-<details>
-
-<summary><strong>Where do I see more information about a customer?</strong></summary>
-
-Click **Customer No** in the results list to open the customer profile.
-
-See: [Customer Details](customer-details.md)
-
-</details>
-
-<details>
-
-<summary><strong>Why can’t I see “Send Email”, “Send SMS”, or “Export”?</strong></summary>
-
-These actions depend on:
-
-* Your **user permissions/role**
-* Your organization’s **system configuration**
-
-If you believe you should have access, contact your administrator.
-
-</details>
-
-<details>
-
-<summary><strong>What does “Newsletter” mean in the list?</strong></summary>
-
-The **Newsletter** column shows whether the customer is subscribed to your newsletter. The exact icon/indicator may vary by configuration.
-
-</details>
-
-<details>
-
-<summary><strong>What are “Contact” and “Ev Phone” used for?</strong></summary>
-
-* **Contact**: filters by a specific contact person (commonly used for B2B customers or when a company has multiple contacts).
-* **Ev Phone**: often used as an _evening_ or _alternative_ phone number.
-
-</details>
-
-<details>
-
-<summary><strong>I see the same person multiple times. How do I fix duplicates?</strong></summary>
-
-Duplicates can happen when customers are created from different channels (manual entry, imports, web bookings, etc.). If you have access, you can use the merge tool:
-
-* [Merge customers](../../merge-customers.md)
-
-</details>
-
-<details>
-
-<summary><strong>Does export include all customers or just my filtered list?</strong></summary>
-
-Exports normally follow your **current filters and search results**. If you need a broader list, clear filters or adjust them before exporting.
-
-</details>

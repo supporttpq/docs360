@@ -108,12 +108,6 @@ A **Passenger Information** popup appears with the customer information notices 
 
 ***
 
-### Key notes (validation behavior)
-
-* Customer information checkboxes are **mandatory** when acknowledgment is enabled.
-* WebBooking typically blocks completion until all required notices are confirmed.
-* Customer Center edits are **limited to extras**. Transport and hotel changes are not supported there.
-
 ### See also
 
 * [Customer information (errata)](./)
