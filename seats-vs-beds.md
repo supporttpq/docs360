@@ -69,6 +69,17 @@ Hotel view looks like this. You can also expand a hotel to see all room types.
 
 You can export the report as an XML file.
 
+#### **Preconditions** <a href="#preconditions" id="preconditions"></a>
+
+Before using the _Seatsvs Bed Overview_ report:
+
+1. **Hotel allotments** and **departure stat weeks** must be defined for the selected year(s) and period.
+2. Ensure the **transport, resort, and hotels** have valid allotment data configured in the system.
+
+{% hint style="info" %}
+💡 **Tip:** To have results listed according to the filters set, make sure departure stat weeks are defined for the year(s) used. See how to set them up here: [Departure stat weeks](https://manual.tourpaq.com/setup/departure-stat-weeks)
+{% endhint %}
+
 ### Communication
 
 **Communication** lets you automatically send XML reports by email, based on transport and hotel occupancy. The attached XML contains the same data as the exported Seats vs Beds overview.
