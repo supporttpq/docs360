@@ -1,6 +1,8 @@
 # Transport Price Control
 
-> 💡 **Tip:** To have results listed according to the filters set, make sure departure stat weeks are defined for the year(s) used. See here how: [Departure stat weeks](setup/departure-stat-weeks.md)
+{% hint style="warning" %}
+💡 **Tip:** To have results listed according to the filters set, make sure departure stat weeks are defined for the year(s) used. See here how: [Departure stat weeks](setup/departure-stat-weeks.md)
+{% endhint %}
 
 ### **Overview**
 
