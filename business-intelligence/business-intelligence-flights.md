@@ -72,7 +72,7 @@ Setup guide: [Departure stat weeks](../setup/departure-stat-weeks.md)
 * **Report Generated Date:** Displays the date on which the report was generated.\
   Example: `21-10-2025`.
   * **% of Total Capacity Sold to Date:** Shows the overall percentage of sold capacity across all listed weeks.\
-    Formula:   % of Total Capacity Sold to Date=(P1​+P2​+P3​+⋯+Pn​​)/n                                                         where:                                                                                 \
+    Formula:   % of Total Capacity Sold to Date=(P1​+P2​+P3​+⋯+Px)/n                                                         where:                                                                                 \
     **n** = Total number of weeks in the selected period.\
     P1,P2.....Px = Capacity sold percentage for week "x" (stored as a numeric value, e.g. 75 for 75%).\
     Example:\
