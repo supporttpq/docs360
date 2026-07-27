@@ -110,59 +110,6 @@ Add a weekly bus route between _Copenhagen_ and _Aarhus_:
 * For seasonal routes, update **Date From** and **Date To** each season.
 * Assign the transport to the right brand(s).
 
-### FAQ
-
-<details>
-
-<summary>What’s the difference between <strong>Interval</strong> and <strong>Days</strong>?</summary>
-
-* **Interval** controls how often departures repeat.
-* **Days** is the travel length used for automatic quota generation.
-
-</details>
-
-<details>
-
-<summary>Do I have to set a <strong>Return</strong> code?</summary>
-
-Yes. Set **Return** to the code of the opposite direction route.
-
-This is required for round-trip flows.
-
-</details>
-
-<details>
-
-<summary>When should I use <strong>Free Sell</strong>?</summary>
-
-Use it when you don’t manage capacity with seat allotments.
-
-Example: transfers with unlimited capacity.
-
-</details>
-
-<details>
-
-<summary>Why can’t I find the transport after saving?</summary>
-
-Most common causes:
-
-* You did not assign any **Brands**.
-* Your filters in the transport list exclude the new code.
-* The transport is not in the date range you are working with.
-
-</details>
-
-<details>
-
-<summary>What is <strong>Override Period</strong> used for?</summary>
-
-It changes how departures are generated for this transport.
-
-Use it only when you have a specific generation requirement.
-
-</details>
-
 ### Related pages
 
 * [Transport](./)

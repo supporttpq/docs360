@@ -95,62 +95,6 @@ Pricing changes with the extra nights.
 
 One hotel night cost is added per triggered limit.
 
-### FAQ
-
-<details>
-
-<summary>Does this apply to charter or real transports?</summary>
-
-No. It applies only to **GDS transports**.
-
-</details>
-
-<details>
-
-<summary>Does this update existing bookings?</summary>
-
-No. It is applied when you **create a new booking**.
-
-Existing bookings are not recalculated automatically.
-
-</details>
-
-<details>
-
-<summary>What if only one condition is met?</summary>
-
-Then only **one** extra hotel night is added.
-
-</details>
-
-<details>
-
-<summary>What happens if the flight time is exactly on the limit?</summary>
-
-The rules use **before** and **after**.
-
-So, an exact match does not trigger an extra night.
-
-</details>
-
-<details>
-
-<summary>Where do I change the limits?</summary>
-
-Go to **Setup → System Setup → Transport Providers**.
-
-Update **Early arrival limit** and **Late departure limit**.
-
-</details>
-
-<details>
-
-<summary>Does this affect pricing?</summary>
-
-Yes. Each triggered limit adds the cost of **one hotel night**.
-
-</details>
-
 ### Related pages
 
 * [Transport Definition](transport-definition.md)

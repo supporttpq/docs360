@@ -2,17 +2,17 @@
 
 **Available to:** Admin user type
 
-#### Overview
+### Overview
 
 The **Transfer Reports** module allows administrators to generate and export various lists based on data from the **Transfer Listing**. Each report type is designed to provide a specific view of transfer operations and is available in either **PDF** or **Excel** formats, depending on the list.
 
-#### Purpose
+### Purpose
 
 These reports are primarily used to manage and monitor transfers at the airport, including passenger distribution, bus allocation, and operator assignments. The available filters differ depending on the selected report type, allowing administrators to extract only the relevant information.
 
 ***
 
-#### Report Types and Filters
+### Report Types and Filters
 
 **1. Airport Plan Overview**
 

@@ -1,6 +1,6 @@
 # Seat Types
 
-**Overview**
+### **Overview**
 
 The **Seat Types** page defines the different seat categories used across all aircraft or transport layouts.\
 Each seat type can have specific characteristics, icons, and passenger restrictions (e.g., “Extra Legroom,” “Exit Row,” “Standard,” or “No Infant Seat”).
@@ -9,7 +9,7 @@ These seat types are later used in the **Assign Seats** page to visually disting
 
 ***
 
-**Purpose**
+### **Purpose**
 
 The purpose of seat types is to:
 
@@ -20,7 +20,7 @@ The purpose of seat types is to:
 
 ***
 
-**Instructions**
+### **Instructions**
 
 1. **Open the Seat Types Page**\
    Navigate to **Transport → Seat List → Edit Seat Types**.
@@ -34,7 +34,7 @@ The purpose of seat types is to:
 
 ***
 
-**Field Descriptions**
+### **Field Descriptions**
 
 | **Field / Column**     | **Description**                                                                                                            |
 | ---------------------- | -------------------------------------------------------------------------------------------------------------------------- |
@@ -60,7 +60,7 @@ The purpose of seat types is to:
 
 ***
 
-**Result**
+#### **Result**
 
 Once seat types are defined:
 

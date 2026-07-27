@@ -182,25 +182,3 @@ A table lists all configured date periods:
 When a new season is added, it is configured on the same Transport Rule page. The system reuses the **same transports** from the previous season and generates a **new fixed quota** for the newly created season.
 
 This means the system does not create new transports for each season. Instead, it keeps the existing transport and adds a new fixed quota that applies only to the new season.
-
-### FAQ
-
-#### Can two Transport Rules have the same name?
-
-No. Transport Rule names must be unique.
-
-#### What happens when I rename a Transport Rule?
-
-The system renames all previously generated transports based on that rule.
-
-#### Can I change stay days or dates after saving?
-
-Yes, as long as transports have not been generated yet.
-
-#### Why can’t date periods overlap?
-
-Overlaps would create ambiguous season logic. The system blocks it.
-
-#### Why do quotas only exist 500 days ahead?
-
-To reduce system load. A weekly background service extends quotas automatically.

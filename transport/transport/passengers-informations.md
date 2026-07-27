@@ -62,17 +62,3 @@ Ex: If fixed info is made for a specific period (01.02.26 - 15.05.26) - transpor
 * Different brands can have unique messages per transport and date range.
 * The system ensures passengers see only messages relevant to their booking.
 * You can define multiple records with overlapping or distinct date ranges for flexibility.
-
-### FAQ
-
-**Where is the message shown to the passenger?**\
-It is shown to the passenger during the booking flow (depending on your setup) and it is also printed on the ticket.
-
-**What does Acknowledge do?**\
-When enabled, the passenger must confirm they have read the message before continuing.
-
-**Can I create multiple messages for the same transport?**\
-Yes. You can create multiple records with different or overlapping date ranges.
-
-**Why don’t I see my message on a booking?**\
-Most often, the booking date or stay dates are outside the ranges you configured, or you are viewing a different brand.

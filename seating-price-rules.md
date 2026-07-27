@@ -8,7 +8,7 @@ This page describes the functionality and usage of the Transport Seating Rules p
 Note: When there are more eleigible rules, the ssystem will choose the lowest rule from the table.
 {% endhint %}
 
-#### &#x20;**Data Table:**
+### **Data Table:**
 
 <figure><img src=".gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (3).png" alt=""><figcaption></figcaption></figure>
 
@@ -28,7 +28,7 @@ The data table displays the seating rules with the following columns:
 * **ENABLED:** Indicates whether the rule is enabled or disabled.
 * **ORDER:** Allows users to change the order of the rules (using up and down arrow buttons).
 
-#### **Navigation and Functionality:**
+### **Navigation and Functionality:**
 
 * **Set Rules Button:** Clicking this button allows users to define new seating rules.
 * **Empty Set Rules Button:** Clicking this button clears or deletes existing seating rules.

@@ -135,29 +135,26 @@ The **Infant Price** can be edited directly on a specific transport. However, an
 #### Outbound
 
 * **Transport Type** – Select the transport type for the outbound journey (Real transport / External provider).
-*   Depending on the selected transport type, the system offers several fields, such as:
+* Depending on the selected transport type, the system offers several fields, such as:
+  *   Real Transport
 
-    *   Real Transport
+      <figure><img src="../.gitbook/assets/image (614).png" alt=""><figcaption></figcaption></figure>
 
-        <figure><img src="../.gitbook/assets/image (614).png" alt=""><figcaption></figcaption></figure>
+      * Transport type - Specifies the type of transport to which the rule applies
+      * Alternative airport - Defines whether alternative arrival airports are allowed.
+      * Real Transport - Allows you to select a real transport.
+  *   External Provider
 
-        * Transport type - Specifies the type of transport to which the rule applies
-        * Alternative airport - Defines whether alternative arrival airports are allowed.
-        * Real Transport - Allows you to select a real transport.
-    *   External Provider
+      <figure><img src="../.gitbook/assets/image (615).png" alt=""><figcaption></figcaption></figure>
 
-        <figure><img src="../.gitbook/assets/image (615).png" alt=""><figcaption></figcaption></figure>
-
-        * Transport type - Specifies the type of transport to which the rule applies
-        * Alternative airport - Defines whether alternative arrival airports are allowed.
-        * Provider - Specifies the transport provider (e.g., Paxport API, Travelport API, Amadeus API, Railhub Provider).
-        * Max stops number - Defines the maximum number of stopovers allowed for the outbound journey.
-        * Max connection time (min) - Specifies the maximum allowed connection time between segments, in minutes.
-        * Max travel time (hours) - Defines the maximum total duration of the outbound journey.
-        * Max Price - Sets the maximum allowed price for the outbound transport.
-        * Baggage - Checkbox indicating whether baggage inclusion is required.
-
-
+      * Transport type - Specifies the type of transport to which the rule applies
+      * Alternative airport - Defines whether alternative arrival airports are allowed.
+      * Provider - Specifies the transport provider (e.g., Paxport API, Travelport API, Amadeus API, Railhub Provider).
+      * Max stops number - Defines the maximum number of stopovers allowed for the outbound journey.
+      * Max connection time (min) - Specifies the maximum allowed connection time between segments, in minutes.
+      * Max travel time (hours) - Defines the maximum total duration of the outbound journey.
+      * Max Price - Sets the maximum allowed price for the outbound transport.
+      * Baggage - Checkbox indicating whether baggage inclusion is required.
 
 {% hint style="info" %}
 Max stops number, Max connection time, Max travel time, Max price and Baggage field became editable only after the transports have been generated.
@@ -184,25 +181,3 @@ Max stops number, Max connection time, Max travel time fields became editable on
 * **Cancelation condition\*** - Select the cancellation condition that applies to this transport rule (mandatory).
 * **Payment Rule** – Select a payment rule applicable to this transport.
 * **Use change rule service** – If checked, activates the change rule service for this transport.
-
-### FAQ
-
-#### Can I change **Date From** / **Date To** after saving?
-
-Yes. You can edit the dates until transports have been generated.
-
-#### Where do the **Stay Days** values come from?
-
-They are maintained in Setup -> **Transport Stay Days**.
-
-#### Why does clicking **“+”** in **Stay Days** preselect a value?
-
-It speeds up setup. You can add stay days quickly in sequence.
-
-#### What does **Pick-up point required** enforce?
-
-It forces the booking flow to include a pick-up point.
-
-#### Why can’t I find the rule in list filters?
-
-Check **Status** and **Hide as filter on lists**.
