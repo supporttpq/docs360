@@ -27,7 +27,7 @@ To define **which travelers** (based on their agency, travel period, and transpo
 
 ### Actions
 
-#### &#x20;Create Button
+#### Create Button
 
 * Opens a form to **add a new survey resource rule**.
 
@@ -38,7 +38,7 @@ To define **which travelers** (based on their agency, travel period, and transpo
   * Date interval (arrival period)
   * (Optional) Transport, Resort, Hotel, Room
 
-#### 🗑️ Delete Icon
+#### Delete Icon
 
 * Removes the survey resource rule.
 
@@ -49,8 +49,6 @@ To define **which travelers** (based on their agency, travel period, and transpo
 * Always define **non-overlapping intervals** to prevent multiple surveys from being sent to the same passenger.
 * If you work with multiple brands or transport types, use **multiple entries** to target them properly.
 * Regularly review and **update intervals** before high season to keep the survey distribution relevant.
-
-
 
 ### Overview - Question resources
 
@@ -95,6 +93,8 @@ Opens a form to add a new question resource. You’ll define:
 
 #### 🗑️ Delete Button
 
-Removes the question resource from the list. ⚠️ Use with care — this will remove the question from being asked in future surveys tied to this schema.
+Removes the question resource from the list.&#x20;
+
+⚠️ Use with care — this will remove the question from being asked in future surveys tied to this schema.
 
 ***

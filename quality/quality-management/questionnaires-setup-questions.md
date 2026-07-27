@@ -1,20 +1,18 @@
 # Questionnaires - Setup questions
 
-
-
-#### **Overview**
+### **Overview**
 
 Within each **Questionnaire**, users can define the individual **questions** that will be presented to customers.\
 Each question can have different answer types, configurations, and display options.\
 These settings influence how responses are collected, displayed, and evaluated in the dashboard.
 
-#### **Purpose**
+### **Purpose**
 
 * To define how feedback is collected within a questionnaire.
 * To customize question formats and determine how results are analyzed.
 * To structure questionnaire results for better data visualization and evaluation.
 
-#### **Instructions – Create a New Question**
+### **Instructions – Create a New Question**
 
 To configure questions for a questionnaire:
 
@@ -27,7 +25,7 @@ To configure questions for a questionnaire:
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (56).png" alt=""><figcaption></figcaption></figure>
 
-#### **Fields and Descriptions**
+### **Fields and Descriptions**
 
 | **Field / Option**                  | **Description**                                                                                                                                                                                                                                                                                                                    |
 | ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

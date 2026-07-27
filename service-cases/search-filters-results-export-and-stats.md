@@ -1,10 +1,10 @@
 # Search filters, results, export & stats
 
-#### **Overview**
+### **Overview**
 
 The **Service Case Overview** page provides a comprehensive view of all service cases, with filters to narrow down results and statistics to analyze cases. By default, the page shows service cases for **departures in the ongoing year**, sorted in **reverse chronological order** of creation.
 
-#### **Available Filters**
+### **Available Filters**
 
 Users can refine the list of service cases using the following criteria:
 
@@ -22,7 +22,7 @@ Users can refine the list of service cases using the following criteria:
 * **User Who Created the Service Case**
 * **Awaiting Office Response** – Checking this option automatically clears other filters and shows only service cases that received an email from the customer (marked with a star on the case number).
 
-#### **Service Case Results**
+### **Service Case Results**
 
 The results table displays the following information for each case:
 
@@ -45,11 +45,11 @@ The results table displays the following information for each case:
 
 <figure><img src="../.gitbook/assets/image (21) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### **Statistics**
+### **Statistics**
 
 The **Totals** section displays summary statistics based on the filtered results, providing insights into complaint trends and service case metrics.
 
-#### **Export**
+### **Export**
 
 * Users can export the results list to a **CSV file** by clicking the **Export** button.
 * Exported data includes all displayed fields, allowing for external reporting and analysis.

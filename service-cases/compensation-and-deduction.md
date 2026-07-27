@@ -1,11 +1,11 @@
 # Compensation & Deduction
 
-#### **Overview**
+### **Overview**
 
 Compensation may be necessary when a customer lodges a complaint. In some cases, the compensation offered can also be **deducted from the responsible party** (e.g., hotel or agent).\
 The **Compensation & Deduction** functionality allows the agency to record and manage both compensation to the customer and deductions for responsible parties, ensuring proper tracking and finance integration.
 
-#### **Setup**
+### **Setup**
 
 The **Compensation & Deduction** section is available on the **service case edit page**.
 

@@ -1,13 +1,13 @@
 # Communication (Email & SMS)
 
-#### **Overview**
+### **Overview**
 
 Communication between the agency and the customer regarding service cases can be conducted via **Email** or **SMS**.\
 Dedicated buttons on the **service case editing page** provide direct access to these tools, allowing messages to be sent and received while maintaining a full history in the service case.
 
 <figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (5).png" alt=""><figcaption></figcaption></figure>
 
-#### **SMS Communication**
+### **SMS Communication**
 
 **Requirements:**
 
@@ -24,7 +24,7 @@ Dedicated buttons on the **service case editing page** provide direct access to 
 
 <figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### **Email Communication**
+### **Email Communication**
 
 **Requirements:**
 
@@ -48,7 +48,7 @@ All files that the customer will attach to an email sent, will be saved in the a
 
 <figure><img src="../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### **Usage Notes**
+### **Usage Notes**
 
 * SMS and Email communications are fully integrated into the service case, providing a complete history for tracking and reporting.
 * Ensure all required setup steps are completed for SMS or Email functionality before attempting to send messages.

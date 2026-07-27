@@ -1,6 +1,6 @@
 # Questionnaires - General
 
-#### **Overview**
+### **Overview**
 
 **Questionnaires** are tools that allow companies to gather feedback from customers about the quality of their services.\
 By analyzing customer responses, the company can identify areas for improvement and enhance overall service quality.
@@ -8,7 +8,7 @@ By analyzing customer responses, the company can identify areas for improvement 
 This section enables users to **manage survey schemas** used to collect feedback or other information — typically at the **Brand** level.\
 From this interface, users can **view**, **edit**, or **delete** existing questionnaires.
 
-#### **Purpose**
+### **Purpose**
 
 * To collect structured feedback from guests about their travel experience.
 * To monitor service quality and identify improvement opportunities.
@@ -16,7 +16,7 @@ From this interface, users can **view**, **edit**, or **delete** existing questi
 
 <figure><img src="../../.gitbook/assets/image (230).png" alt=""><figcaption></figcaption></figure>
 
-#### **Fields and Actions**
+### **Fields and Actions**
 
 | **Field / Icon**   | **Description**                                                                                                                                                      |
 | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -27,7 +27,7 @@ From this interface, users can **view**, **edit**, or **delete** existing questi
 
 <figure><img src="../../.gitbook/assets/image (231).png" alt=""><figcaption></figcaption></figure>
 
-#### **Create a New Questionnaire**
+### **Create a New Questionnaire**
 
 To create a new questionnaire, follow these steps:
 
