@@ -31,32 +31,6 @@ Reason:
 Impact (optional):
 ```
 
-### FAQ
-
-<details>
-
-<summary>Are Notes visible to customers?</summary>
-
-No. Notes are internal and only visible to users with access to transport rules.
-
-</details>
-
-<details>
-
-<summary>Who can read Notes?</summary>
-
-Anyone who can access the transport rule can read its Notes.
-
-</details>
-
-<details>
-
-<summary>Should I use Notes as an audit log?</summary>
-
-Use Notes for quick context. Do not rely on them as a full audit trail.
-
-</details>
-
 ### Related pages
 
 * [Create Transport Rule](create-transport-rule.md)

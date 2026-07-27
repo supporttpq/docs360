@@ -42,32 +42,6 @@ Reason:
 Impact (optional):
 ```
 
-### FAQ
-
-<details>
-
-<summary>Are Notes visible to customers?</summary>
-
-No. Notes are internal and only visible to users with access to route configuration.
-
-</details>
-
-<details>
-
-<summary>When should I use <strong>Passenger information</strong> instead of Notes?</summary>
-
-Use **Passenger information** when the message should be shown to passengers or printed on tickets. Use **Notes** when the information is internal only.
-
-</details>
-
-<details>
-
-<summary>What format works best for Notes?</summary>
-
-Start with a date and initials, then add short bullets. Example: `2026-03-10 AB: Increased quota due to Easter demand.`
-
-</details>
-
 ### Related pages
 
 * [Documents](documents.md)

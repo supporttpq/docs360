@@ -1,6 +1,6 @@
 # Flight Change - Email Template
 
-#### **Overview**
+### **Overview**
 
 Within the **Email Center** menu, you can create and manage **email and SMS templates** used to inform customers about flight changes and to collect their confirmations.
 
@@ -23,7 +23,7 @@ If the default email is not configured, or if the required email templates are i
 
 ***
 
-#### **Template Types**
+### **Template Types**
 
 To support the different types of flight changes, the following **dedicated templates** are required:
 
@@ -40,7 +40,7 @@ To support the different types of flight changes, the following **dedicated temp
 
 ***
 
-#### **Template Variables**
+### **Template Variables**
 
 All **Flight Change Email Templates** can include the following **variables** to personalize content dynamically:
 

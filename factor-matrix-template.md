@@ -1,12 +1,12 @@
 # Factor Matrix Template
 
-#### **Overview**
+### **Overview**
 
 The **Factor Matrix Templates** page provides an overview of predefined templates used to manage factor matrices within the system.
 
 A _factor matrix_ is typically used to determine various load factors. This matrix provides an overview of expected transport occupancy, based on the relationship between departure weeks and the number of weeks remaining until departure.
 
-#### **Purpose**
+### **Purpose**
 
 The purpose of **Factor Matrix Templates** is to:
 
@@ -15,7 +15,7 @@ The purpose of **Factor Matrix Templates** is to:
 
 By using templates, administrators can quickly apply consistent pricing factors without manually recreating them for each new setup.
 
-#### **Page Structure**
+### **Page Structure**
 
 <figure><img src=".gitbook/assets/image (434).png" alt=""><figcaption></figcaption></figure>
 
@@ -26,7 +26,7 @@ By using templates, administrators can quickly apply consistent pricing factors 
 
 ***
 
-#### **Buttons and Actions**
+### **Buttons and Actions**
 
 | Button     | Description                                                                                                                                        |
 | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |

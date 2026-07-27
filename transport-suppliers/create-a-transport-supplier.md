@@ -1,6 +1,22 @@
+---
+description: >-
+  Create a transport supplier for transport assignment, reporting, extras, and
+  communication.
+---
+
 # Create a Transport Supplier
 
-This page describes how to create a new Transport Supplier in the system. A Transport Supplier is an entity that provides transport services for tour operators, such as buses, vans, or private transfers.
+### Overview
+
+Create a **Transport Supplier** to represent a provider of flights, buses, transfers, or other transport services.
+
+The supplier record supports supplier assignment on Transport and Real Transport records. It also controls supplier-specific reporting, communication, and extra availability. See [Transport Suppliers](./) for supplier management and usage.
+
+### Purpose
+
+Use this form to create a reusable supplier record before assigning it to transport.
+
+The selected **Tour Operator** connects the supplier to its operating context. The **Reporting Type** supports supplier reporting and exports. Supplier assignment can determine which extras appear for a booking. After saving, configure supplier reporting delivery through [Communication Configuration – Transport Supplier](communication-configuration-transport-supplier.md).
 
 ***
 

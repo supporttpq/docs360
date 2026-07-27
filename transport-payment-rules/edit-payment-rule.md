@@ -4,9 +4,9 @@
 
 This page allows users to configure the payment schedule for travel bookings, including deposit and subsequent payment rules.
 
-### **Overview**
+## **Overview**
 
-#### **1. Payment Rule Configuration**
+### **1. Payment Rule Configuration**
 
 | Field                    | Description                                                                                |
 | ------------------------ | ------------------------------------------------------------------------------------------ |
@@ -18,11 +18,11 @@ This page allows users to configure the payment schedule for travel bookings, in
 | **Second Payment Due**   | Number of days before departure when the second payment is due (e.g., 2 days).             |
 | **Last Payment Due**     | Number of days before departure when the final payment is due (e.g., 602 days).            |
 
-The user has the possibility to set different payment rules on a brand-specific basis. If a brand has no values set, the values from the Default tab will be used.&#x20;
+The user has the possibility to set different payment rules on a brand-specific basis. If a brand has no values set, the values from the Default tab will be used.
 
 <figure><img src="../.gitbook/assets/image (179).png" alt=""><figcaption></figcaption></figure>
 
-#### **2. Exception Rules**
+### **2. Exception Rules**
 
 These rules override default payment behavior under specific conditions.
 
@@ -34,7 +34,7 @@ These rules override default payment behavior under specific conditions.
 | **2.1** | If second payment is due before the deposit, then second payment due = deposit due date.                                                          |
 | **2.2** | If rest of payment due is earlier than the second payment, then rest of payment due = second payment due date.                                    |
 
-#### **3. Payment Simulation**
+### **3. Payment Simulation**
 
 This section allows users to simulate the configured payment rule and preview how payments will be scheduled based on booking and departure dates.
 

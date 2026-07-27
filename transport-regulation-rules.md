@@ -1,10 +1,10 @@
 # Transport Regulation Rules
 
-#### Overview
+### Overview
 
 The **Transport Regulation Rules** page allows administrators to define and manage rules that regulate transport offers, pricing adjustments, and capacity handling. These rules influence how transport offers are calculated, restricted, or adjusted based on parameters such as number of days, number of offers, load factor, and pricing percentages.
 
-#### Purpose
+### Purpose
 
 Transport Regulation Rules are used to:
 
@@ -13,11 +13,11 @@ Transport Regulation Rules are used to:
 * Control pricing or load factors dynamically.
 * Ensure transport allotments align with company policies and pricing strategies.
 
-#### Page Structure
+### Page Structure
 
 <figure><img src=".gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### Table Columns
+### Table Columns
 
 * **Code** – Unique identifier for the regulation rule.
 * **Name** – Descriptive label for the rule (e.g., number of days, pax, or price adjustment).
@@ -30,7 +30,7 @@ Transport Regulation Rules are used to:
 * **Load Factor Start** – Starting value of load factor used in calculations (can be positive or negative).
 * **Load Factor Stop** – Stopping value of load factor used in calculations (can be positive or negative).
 
-#### Actions
+### Actions
 
 * **Create** – Opens a form to define a new regulation rule.
 * **Delete (trash icon)** – Removes the selected rule from the system.
@@ -58,26 +58,26 @@ Each rule contains **two sets of fields**, which define how the system applies p
 
 <figure><img src=".gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-**General fields** (used for going prices UP) :&#x20;
+**General fields** (used for going prices UP) :
 
 * Name (required) - name of the rule
-* Code (required) - it will be displayed in the price lists table&#x20;
-* Amount (required)&#x20;
+* Code (required) - it will be displayed in the price lists table
+* Amount (required)
 * Days number & Offers number (at least one of those is required)
 
 **Example:** \*If the amount is 300, days number 5 and offers number 3: If there are 3 offers made in the last 5 days, raise the price by 300. (after that, the transport allotment has a timer that is reset, so on the next verification, only the offers bought after this point are counted). \*If the amount is 400, days are not set, offers number 3: on every 3 offers, raise the price by 400. \*If the amount is 500, days number 3, offers number not set: on every 3 days, raise the price by 500.
 
-* Optional fields (used for going the prices DOWN; those can be ignored, then the rule takes the prices only up. If you fill at least one of these fields, you need to fill all)&#x20;
+* Optional fields (used for going the prices DOWN; those can be ignored, then the rule takes the prices only up. If you fill at least one of these fields, you need to fill all)
 * Amount (down)
 * Days number (down)
 * Offers number (down)
-* Lowest price1 - the price will not go under this price for interval 1&#x20;
-* Lowest price2 - the price will not go under this price for interval 2&#x20;
+* Lowest price1 - the price will not go under this price for interval 1
+* Lowest price2 - the price will not go under this price for interval 2
 * Lowest price3 - the price will not go under this price for interval 3
 * Lowest price4 - the price will not go under this price for interval 4
 * Load Factor Start and Load Factor End - rule will be applied for transports with load factor variation % within a defined interval.
 * Week Start (x) and Week End (y) - the departures for the rule to be applied - starting from today, will be applied to the departures over x weeks until y weeks; eg: the rule has start week=3 and end week = 5, and service runs on 01.01, the rule will be set for departures between 22.01 and 05.02 and so on
-* Currency - the currency for the amount set; the currency exchange will be applied on calculating PLTA, according to brand setup&#x20;
+* Currency - the currency for the amount set; the currency exchange will be applied on calculating PLTA, according to brand setup
 * Rounding Rule - rounding rule will be applied to the amount set on the rule, after currency exchange: for eg, an amount of 200 EUR and rounding rule 49,99, the amount that the pricelist will increase with is 1549 DKK - for an exchange rate of 7.5
 
 Load factor is calculated based on the defined Factor Matrix, under Transport -> Factor Matrix tab. Here user can define the load factor based on weeks for a transport. Load Factor for a certain transport is calculated behind and can be checked into Transport->Transport Price Control on the Load Factor tab.

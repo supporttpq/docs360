@@ -1,6 +1,18 @@
 # Create citizen plane rules
 
-The Tourpaq customers have leftover seats and CitizenPlane provides a service allowing the Tourpaq customers to sell the leftover seats.
+### Overview
+
+**Citizen Plane Seat Rules** defines which available transport seats Tourpaq offers through Citizen Plane.
+
+Each rule matches seats by transport, route, departure period, availability, and time before departure. Matching seats are prepared for export and appear in [Citizen Plane Seats Overview](create-citizen-plane-seats-overview.md).
+
+### Purpose
+
+Use Citizen Plane Seat Rules to:
+
+* Sell eligible leftover transport seats through Citizen Plane.
+* Control the seat quantity and price offered for each matching departure.
+* Prevent unsuitable seats from being exported through defined conditions.
 
 Go to Transport menu and click Citizen Plane Seat Rules
 
@@ -36,7 +48,7 @@ _Note: The Transport dropdown options are filtered based on the selected Departu
 | **IS PERCENT**     | If Price is a fixed value percentage.\*\* | Yes           |                                                                    |
 
 **\*** **Departure, Arrival** and **Transport**: at least one of them must be selected\
-&#xNAN;**\*\*** If **Is Percent** is checked, the new booking price is: OriginalPrice + (Price % of OriginalPrice)
+\&#xNAN;**\*\*** If **Is Percent** is checked, the new booking price is: OriginalPrice + (Price % of OriginalPrice)
 
 **Schema**
 
@@ -56,7 +68,7 @@ _Note: The Transport dropdown options are filtered based on the selected Departu
 
 **Editing** can be done by cliking the edit icon for an individual rule or by opening the three dots menu next to the Create button and clicking **Edit all** to edit multiple rules at once.
 
-**Workflow**
+### **Workflow**
 
 Every day/hour a service will run (CPSS) and will check every rule. All seats matching a rule will be marked to be published to Citizen Plane for booking.\
 The marked seats can be viewed in the page Citizne Plane Seats Overview.
@@ -68,7 +80,7 @@ Every day/hour a service will run (CPGS) and will check every marked seat, valid
 * Published
 * Invalid
 
-**Citizen Plane .csv requirements**
+### **Citizen Plane .csv requirements**
 
 _When one or more optional parameters are not available (such as segment\_1\_origin\_terminal\_airport or segment\_1\_via\_airport), just leave them empty but don't change the structure of the file, otherwise your file won't be processed._
 
