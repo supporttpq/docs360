@@ -8,11 +8,9 @@ The Transport Supplier is used by the Transport and Real Transport to identify t
 
 * A common way to describe the communication, so all Transports that uses this supplier use the Transport Supplier communication
 * The Transport Supplier can be used in Resources in Extra to select the relevant extras (e.g. different baggage options for two different transport suppliers)
-*   If a Real Transport has a supplier selected in the General tab, and another supplier is set in the Departures tab, the latter will overwrite the one chosen in General.&#x20;
+*   If a Real Transport has a supplier selected in the General tab, and another supplier is set in the Departures tab, the latter will overwrite the one chosen in General.
 
     <figure><img src="../.gitbook/assets/image (421).png" alt=""><figcaption></figcaption></figure>
-
-
 
 Example:
 
@@ -26,7 +24,7 @@ The following example shows how a transport supplier is used for extra resources
     <figure><img src="../.gitbook/assets/image (1) (3).png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../.gitbook/assets/image (2) (3).png" alt=""><figcaption></figcaption></figure>
-*   use one extra who has as resources, transport supplier TranspportSupplMel1&#x20;
+*   use one extra who has as resources, transport supplier TranspportSupplMel1
 
     <figure><img src="../.gitbook/assets/image (3) (3).png" alt=""><figcaption></figcaption></figure>
 
@@ -36,7 +34,7 @@ With all these details, the extra is available to be added in the booking. If it
 
 ***
 
-### 🔍 Filters and Controls
+### Filters and Controls
 
 <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (8).png" alt=""><figcaption></figcaption></figure>
 
@@ -66,7 +64,7 @@ With all these details, the extra is available to be added in the booking. If it
 
 ***
 
-### 📄 Table Columns
+### Table Columns
 
 | Column             | Description                                                                |
 | ------------------ | -------------------------------------------------------------------------- |
@@ -78,14 +76,14 @@ Clicking on the column headers (marked with sort icons) will sort the entries as
 
 ***
 
-### 🗑️ Actions
+### Actions
 
 * **Delete Icon (🗑️)**: Click to delete a supplier entry.
   * A confirmation prompt will appear to avoid accidental deletions.
 
 ***
 
-### ➕ Create Button
+### Create Button
 
 * Located in the top-right corner.
 * Opens a form or modal to add a new transport supplier.
@@ -93,13 +91,13 @@ Clicking on the column headers (marked with sort icons) will sort the entries as
 
 ***
 
-### 📄 Pagination and Page Size
+### Pagination and Page Size
 
 * **Pagination Controls**: Allows navigation through multiple pages if more than 25 suppliers exist.
 * **Page Size Dropdown**: Select how many entries are shown per page (default: 25).
 
 ***
 
-### 📌 Notes
+### Notes
 
 * Always ensure the correct Tour Operator and Reporting Type are selected to ensure data consistency.

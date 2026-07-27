@@ -1,11 +1,11 @@
 # Flight Change - How it Works
 
-#### **Overview**
+### **Overview**
 
 When a change is made to a flight (e.g., a schedule adjustment or flight number update), the system automatically identifies the change and assigns a **Flight Change Type**.\
 This type can be reviewed and manually edited if needed before proceeding.
 
-#### **Steps to Process a Flight Change**
+### **Steps to Process a Flight Change**
 
 1. **Edit the Flight Details**\
    When a modification is made to a flight, the **Flight Change Type** field is automatically filled in based on the detected change (e.g., Tiny, Small, Large).\
@@ -29,11 +29,11 @@ This type can be reviewed and manually edited if needed before proceeding.
 
 <figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;   4\. **Drop a Flight Change (Optional)**
+4\. **Drop a Flight Change (Optional)**
 
 * If a flight change is selected and the **Drop** button is used, that change is marked as **completed**, and **no further emails or SMS messages** can be sent for it.
 
-#### **Flight Change Statuses**
+### **Flight Change Statuses**
 
 | **Status**        | **Description**                                                                                                                          |
 | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |

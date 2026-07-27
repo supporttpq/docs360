@@ -1,17 +1,31 @@
+---
+description: Configure supplier-specific transport reporting and delivery by email or FTP.
+---
+
 # Communication Configuration – Transport Supplier
 
-This guide explains how to configure the communication setup for a transport supplier in the system.
+### Overview
+
+Communication Configuration defines how Tourpaq sends transport reporting for a **Transport Supplier**.
+
+Each rule sets the transport direction, delivery timing, reporting format, and delivery method. Rules can send reporting by email or FTP. This configuration becomes available after creating a [Transport Supplier](create-a-transport-supplier.md).
+
+### Purpose
+
+Use communication rules to deliver the right transport information to each supplier.
+
+Schedule reports relative to departure and select the required **Reporting Type**. Use **ADL (Adding Deletion List for A7)** to send changes after initial reporting. Use [Transport Suppliers](./) to manage the supplier record.
 
 ***
 
-### 🔧 Accessing the Configuration Page
+### Accessing the Configuration Page
 
 Navigate to:\
 Transport **Supplier → \[Transport Supplier Name] → Communication tab**
 
 ***
 
-### 📑 Field Descriptions
+### Field Descriptions
 
 | Field                                 | Description                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -35,7 +49,7 @@ Transport **Supplier → \[Transport Supplier Name] → Communication tab**
 
 ***
 
-### ➕ Creating a New Communication Rule
+### Creating a New Communication Rule
 
 1. Click the **Create** button in the top-right.
 2. Fill in the required fields based on the transport and business rules.
@@ -43,7 +57,7 @@ Transport **Supplier → \[Transport Supplier Name] → Communication tab**
 
 ***
 
-### 🗑️ Deleting a Rule
+### Deleting a Rule
 
 Click the trash bin icon next to a rule to delete it. A confirmation prompt will appear.
 
@@ -51,9 +65,9 @@ Click the trash bin icon next to a rule to delete it. A confirmation prompt will
 
 ***
 
-### ✅ Best Practices
+### Notes
 
-* Use clear and consistent **Subject** lines to distinguish communication types.
-* Set up **Alternative methods** in case the main method fails.
-* Use **Resend** to ensure delivery for critical messages.
-* Periodically review and clean up outdated or unused rules.
+* **Resend** only works when **ADL (Adding Deletion List for A7)** is selected.
+* **FTP System** requires a matching configuration in **System Setup FTP**.
+* Select **Stop Sale** only when the communication rule must trigger a stop sale.
+* Use clear **Subject** values to distinguish supplier communications.
