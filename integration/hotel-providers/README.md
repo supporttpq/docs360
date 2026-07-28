@@ -1,6 +1,6 @@
 # Hotel Providers
 
-## Overview
+### Overview
 
 The Hotel Providers module enables Tourpaq to connect with external hotel suppliers, bed banks, and accommodation distribution platforms. Through these integrations, Tourpaq can automatically retrieve hotel availability, room types, pricing, facilities, images, and other accommodation data directly from external providers.
 
@@ -8,7 +8,7 @@ Hotel Providers play a central role in Tourpaq's dynamic packaging and accommoda
 
 ***
 
-## Purpose
+### Purpose
 
 The Hotel Providers module is designed to:
 
@@ -22,9 +22,9 @@ The Hotel Providers module is designed to:
 
 ***
 
-## Business Benefits
+### Business Benefits
 
-### For Tour Operators
+#### For Tour Operators
 
 * Access to a larger accommodation inventory.
 * Reduced administration and hotel maintenance.
@@ -32,7 +32,7 @@ The Hotel Providers module is designed to:
 * Improved pricing accuracy.
 * Support for dynamic packaging.
 
-### For Operations Teams
+#### For Operations Teams
 
 * Automated synchronization of hotel content.
 * Centralized provider management.
@@ -41,7 +41,7 @@ The Hotel Providers module is designed to:
 
 ***
 
-## Supported Providers
+### Supported Providers
 
 Tourpaq currently supports integrations with multiple accommodation providers and hotel distribution systems.
 
@@ -55,7 +55,7 @@ Additional integrations may be available depending on customer agreements and sy
 
 ***
 
-## How Hotel Providers Work
+### How Hotel Providers Work
 
 The Hotel Providers framework acts as a bridge between external accommodation systems and Tourpaq.
 
@@ -77,11 +77,11 @@ Provider data is imported into Tourpaq and becomes available throughout the book
 
 ***
 
-## Available Data
+### Available Data
 
 Depending on the provider, the following information can be imported.
 
-### Hotel Information
+#### Hotel Information
 
 * Hotel name
 * Address
@@ -90,19 +90,19 @@ Depending on the provider, the following information can be imported.
 * Contact details
 * Resort information
 
-### Facilities
+#### Facilities
 
 * Hotel facilities
 * Room facilities
 * Board types
 * Property amenities
 
-### Media
+#### Media
 
 * Hotel images
 * Room images
 
-### Contract Information
+#### Contract Information
 
 * Room types
 * Room configurations
@@ -110,7 +110,7 @@ Depending on the provider, the following information can be imported.
 * Availability
 * Prices
 
-### Dynamic Data
+#### Dynamic Data
 
 * Availability updates
 * Stop sales
