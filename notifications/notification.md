@@ -45,7 +45,7 @@ It is particularly valuable for operations managers and senior agents who need a
 
 ***
 
-### Preconditions
+### Requirements
 
 Before using the Notifications page, ensure the following:
 
@@ -55,7 +55,7 @@ Before using the Notifications page, ensure the following:
 
 ***
 
-### How to Use the Notifications Page
+### Use the Notifications page
 
 #### Step 1 — Open Notifications
 
@@ -109,7 +109,7 @@ Notifications are not automatically cleared when you save a reservation. The sys
 
 ***
 
-### Field Reference
+### Field reference
 
 #### Left Panel — Notification Categories
 
@@ -154,7 +154,7 @@ The columns displayed depend on the selected category. The most commonly shown f
 
 ***
 
-### Working Pattern by Category
+### Working pattern by category
 
 Use the category name to decide both **priority** and **owner**.
 
@@ -186,7 +186,7 @@ This saves time and reduces duplicate work between agents.
 
 ***
 
-### Related Pages
+### Related pages
 
 * [Warning Notification Rules](../warning-notification-rules.md) — configure which system warnings are generated and who receives them
 * [Stop Sales](../stop-sales.md) — manage Stop Sales rules linked to Stop Sales notifications
