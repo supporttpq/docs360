@@ -6,7 +6,7 @@
 
 The **Flight Transfer** feature allows administrators to manage passenger transfers between **arrivals** and **resorts**. It helps organize and control how passengers are transported after landing, ensuring smooth logistics.
 
-⚠️ **Important:** This feature requires activation. Please contact **Tourpaq Support** to enable it for your company.
+⚠️ **Important:** This feature requires activation. Contact **Tourpaq Support** to enable it for your company.
 
 ### Purpose
 
