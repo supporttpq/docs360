@@ -9,7 +9,7 @@ Each layout contains one or more **sections**.\
 Use sections for cabin areas like front/rear or business/economy.
 
 {% hint style="info" %}
-To properly use this, the Layout feature has to be enabled. To have this enabled, please contact Tourpaq Support.
+The Layout feature must be enabled. Contact Tourpaq Support to enable it.
 {% endhint %}
 
 When Layouts is enabled, Tourpaq uploads a starter set of elements in [Layout Elements](layout-elements.md).\
@@ -20,15 +20,15 @@ You can add more elements if you need them.
 
 <figure><img src=".gitbook/assets/image (2) (1) (1) (1) (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-| Field / element  | Description                                                                                                                                           |
-| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Name**         | Layout name. Include capacity and aircraft type/route when useful. Example: _110 pax A7 BLLLPA_.                                                      |
-| **Type**         | Defines the layout type. Currently, all layouts are of type **Airplane**, but this field allows support for other transport types (e.g., Bus, Train). |
-| **Sections**     | Cabin sections inside the layout. Each section has its own rows and seat configuration.                                                               |
-| **Add section**  | Adds a new section to the layout. A section defines the rows, seat numbering, and seat types available in that area.                                  |
-| **Delete (🗑️)** | Deletes a layout or section. You must confirm first.                                                                                                  |
-| **Create**       | Creates a new, blank layout.                                                                                                                          |
-| **Show hidden**  | Shows layouts marked as hidden. Useful for seasonal setups.                                                                                           |
+| Field / element  | Description                                                                                                                        |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| **Name**         | Layout name. Include capacity and aircraft type/route when useful. Example: _110 pax A7 BLLLPA_.                                   |
+| **Type**         | Defines the layout type. All layouts use **Airplane**, but this field supports other transport types (for example, Bus and Train). |
+| **Sections**     | Cabin sections inside the layout. Each section has its own rows and seat configuration.                                            |
+| **Add section**  | Adds a new section to the layout. A section defines the rows, seat numbering, and seat types available in that area.               |
+| **Delete (🗑️)** | Deletes a layout or section. You must confirm first.                                                                               |
+| **Create**       | Creates a new, blank layout.                                                                                                       |
+| **Show hidden**  | Shows layouts marked as hidden. Useful for seasonal setups.                                                                        |
 
 ### Related concepts (Seat types, seat lists, and layout elements)
 
@@ -258,5 +258,5 @@ Rules:
 {% hint style="info" %}
 #### Note
 
-The seating restriction functionality needs to be activated by Tourpaq. Please contact Tourpaq if you want this functionality turned on.
+Tourpaq must activate the seating restriction functionality. Contact Tourpaq to request activation.
 {% endhint %}

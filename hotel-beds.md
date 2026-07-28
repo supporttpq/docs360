@@ -1,6 +1,6 @@
 # Hotel Beds
 
-See also: [Hotel Bed Banks - FAQ](/broken/pages/BEG7zNLeQ8e6nTtILVtM).
+See also: [Hotel Bed Banks - FAQ](/broken/spaces/ZCqO8EQ5P5Mioq1zbQAc/pages/BEG7zNLeQ8e6nTtILVtM).
 
 ### Overview
 
@@ -31,9 +31,9 @@ A bed bank is a third-party service. It provides hotel content and contract data
 | Room prices                  | Pricing per room type.                                                     |
 | Room availability            | Available rooms per date.                                                  |
 
-### Current implementation
+### Supported provider
 
-* At the time of writing, only **Hotelbeds** is integrated as a bed bank provider.
+* Only **Hotelbeds** is integrated as a bed bank provider.
 * Future updates may include additional bed bank providers.
 
 ### Customer outcome
