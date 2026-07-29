@@ -1,12 +1,12 @@
 # Guide App
 
-<figure><img src=".gitbook/assets/destinationapp-993f7b8a83693173287fae9f3939457a.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/destinationapp-993f7b8a83693173287fae9f3939457a.png" alt="" width="100%"><figcaption></figcaption></figure></div>
 
 The Guide App is a new feature used to track guides' activity, help them coordinate with each other, create complaints regarding the local environment, support customers directly through chat, and export passenger lists in multiple formats, among other features.
 
 ### Login screen
 
-<figure><img src=".gitbook/assets/Untitled (1) (1).jpg" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/Untitled (1) (1).jpg" alt="" width="100%"><figcaption></figcaption></figure></div>
 
 This is the first screen the guide will encounter when using the app. As shown in the picture, the login is quite basic, requiring the username and password used in Tourpaq.
 
@@ -16,7 +16,7 @@ The user session expires by default in 30 minutes from the last user action. To 
 
 **The unit of measure for the value is minutes.**
 
-<figure><img src=".gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (59).png" alt="" width="100%"><figcaption></figcaption></figure></div>
 
 ### Available menus
 
@@ -28,7 +28,7 @@ The list of available menus is available right after the login request succeeds.
 
 <mark style="background-color:red;">**IMPORTANT NOTE:**</mark> <mark style="background-color:red;">Only guides can add products and make them available in the application.</mark>
 
-<figure><img src=".gitbook/assets/image (279).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (279).png" alt="" width="100%"><figcaption></figcaption></figure></div>
 
 In order to be made available in the application, the extra must have selected a category of type **Tours** (General info).
 
@@ -38,38 +38,38 @@ In order to be made available in the application, the extra must have selected a
 
 The first information that appears to the guest is the description - which can be easily customized under the main tab of the extra, specifically the **Description in customer center** box. This can also be customized per brand for a wider variety of descriptions. Another thing to mention when customizing an excursion is the possibility to add one or more representative pictures. That can be easily done through the **Photos** tab of the extra (see the picture below).
 
-<figure><img src=".gitbook/assets/image (280).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (280).png" alt="" width="100%"><figcaption></figcaption></figure></div>
 
 #### Extra currency
 
 By default, the price of the sold extra will represent either the currency of the agency (if it has one) or the currency of the company. However, you can customize this by creating a creditor with the desired currency and assign it to the required extra under the "Automatic billing" box (see the picture below).
 
-<figure><img src=".gitbook/assets/image (281).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (281).png" alt="" width="100%"><figcaption></figcaption></figure></div>
 
 #### Assign the excursion to a resort
 
 An essential aspect of selling an excursion is that even if Tourpaq supports adding multiples resources to a product - such as transports, hotels and so on, the application will only take into considerations the resort field. One can assign the desired resort or resorts for where they want to sell the excursion Adding a resort is quite simple - you navigate under the **Resurser** tab of the product, click on the **New filter type**, select the desired resort and click on **Save filter type** to save your desired settings (see the picture below).
 
-<figure><img src=".gitbook/assets/image (282).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (282).png" alt="" width="100%"><figcaption></figcaption></figure></div>
 
 #### Assign the excursion to a brand
 
 An essential to-do in the process of setting up the excursion is assigning it to a brand so it will be available for sale for it. That can be done really simple under the **Brands** tab under the specific extra One must select the **Guide Sale** option for the desired brand and click on **Save Options** to save the desired configuration (see picture below).
 
-<figure><img src=".gitbook/assets/image (283).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (283).png" alt="" width="100%"><figcaption></figcaption></figure></div>
 
 #### Generate allotments for the excursion
 
 Another essential step in setting up the excursion is creating the allotments. That can easily be done by going on the desired extra, under the **Generic Allotment** tab. To start defining the desired allotments, click on the **Generate New Allotments** button in the left corner of the page. The allotments can be generated either on a daily basis or on a weekly basis (see picture below).
 
-<figure><img src=".gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (66).png" alt="" width="100%"><figcaption></figcaption></figure></div>
 
 #### Allotment schedule options
 
 * **Daily** - the tool will generate allotments each day or from n to n days (e.g. from 2 to 2 days) in a given date interval (**Duration**). In here we also have the possibility to make new allotments each n minutes (**Daily Frequency**) between a time interval (this is applying for each day) or to set up the **Specific time** of the allotments (see the picture below),
 * **Weekly** - the tool will generate allotments for one or more days of the week. We will also be able to specify the allotments frequency (each week or from n to n weeks). We will also have to define the desired time or set the allotment to be available every n minutes, exactly like in the **Daily** basis option. From this point, the steps are similar.
 
-<figure><img src=".gitbook/assets/image (67).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (67).png" alt="" width="100%"><figcaption></figcaption></figure></div>
 
 After selecting the desired time, click outside the popup window in order for the setting to be saved.
 
@@ -79,7 +79,7 @@ After filling in the settings we wanted we proceed to the next step - saving the
 
 If allotment is generated with 0 availability, or after the allotment runs out, the product can still be listed in the Guest App if it is set as bellow:
 
-<figure><img src=".gitbook/assets/image (284).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (284).png" alt="" width="100%"><figcaption></figcaption></figure></div>
 
 In the Guest App, the effect will be that the excursion/product will continue to be listed, but no buy button will be available.
 
@@ -87,13 +87,13 @@ In the Guest App, the effect will be that the excursion/product will continue to
 
 Another really important step in the process of setting up the excursion for the app is defining one or more price rules. That can be done per periods - meaning that you can have different adult or child prices for different periods. In order to do that one has to navigate to the **Extras -> Generic Product Price Rule** menu item (see the picture below).
 
-<figure><img src=".gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (22) (1).png" alt="" width="100%"><figcaption></figcaption></figure></div>
 
 #### Create a price rule for an excursion
 
 In order to create a new price rule, one has to click on the **New** button in the right corner of the page mentioned previously. Pressing the **New** button will generate a new entry to the **Price Rules** table and we will have to configure it properly (see picture below).
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (54).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (54).png" alt="" width="100%"><figcaption></figcaption></figure></div>
 
 In order to properly understand how the price rules work in the process of setting up an excursion, we will provide a summary description of each field seen above:
 
@@ -115,11 +115,11 @@ Once we finish completing all the fields mentioned above, we click on **Save** a
 
 In order to do that, we will have to navigate under the **Extras -> Routes** page (see the picture below).
 
-<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (2).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (2).png" alt="" width="100%"><figcaption></figcaption></figure></div>
 
 After you click insert, a route will be generated and you will be able to add **pickup points** (see picture below).
 
-<figure><img src=".gitbook/assets/image (72).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (72).png" alt="" width="100%"><figcaption></figcaption></figure></div>
 
 In here, you will have to fill the following fields:
 
@@ -143,7 +143,7 @@ In order to take further steps in the process of booking the excursions, we must
 
 Once we got here, we can proceed with creating a new method of payment for the guide excursions by clicking on the "New" button in the right corner of the listing page.
 
-<figure><img src=".gitbook/assets/image (73).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (73).png" alt="" width="100%"><figcaption></figcaption></figure></div>
 
 In here, the user will encounter the following fields:
 
@@ -161,7 +161,7 @@ Above are all the required fields to properly set up a method of payment for the
 
 * \*\* Agencies\*\* - This set up allows the user to assign specific brands for the method of payment (Note! This section will be active only if "Guide Payment" is checked.)
 
-<figure><img src=".gitbook/assets/image (74).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (74).png" alt="" width="100%"><figcaption></figcaption></figure></div>
 
 Usage examples:
 
@@ -170,7 +170,7 @@ Usage examples:
 
 After finishing with the creation of the payment types, we can proceed even further and assign the payment types to a guide. We can do that by entering the Edit Guide page in Users -> Guides and click edit on the desired guide to assign the payment types (see below picture).
 
-<figure><img src=".gitbook/assets/image (75).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (75).png" alt="" width="100%"><figcaption></figcaption></figure></div>
 
 Also, in here another important thing to consider is that we can override the DIBS settings for a specific guide (please take into consideration that this will only happen in the mobile apps).
 
@@ -201,25 +201,25 @@ After setting the excursion up, we can proceed to the next stage: the one of boo
 
 #### Choose an excursion from the list
 
-<figure><img src=".gitbook/assets/image (190).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (190).png" alt="" width="100%"><figcaption></figcaption></figure></div>
 
 #### View excursion details
 
-<figure><img src=".gitbook/assets/11-525720509f53db66d4be8db089be1662.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/11-525720509f53db66d4be8db089be1662.png" alt="" width="100%"><figcaption></figcaption></figure></div>
 
 #### Configure excursion details for the shopping cart
 
-![!](https://docs.tourpaq.com/assets/images/22-681f42ba0ae483955f992620f44cdda0.png)
+<div data-with-frame="true"><figure><img src="https://docs.tourpaq.com/assets/images/22-681f42ba0ae483955f992620f44cdda0.png" alt="" width="100%"><figcaption></figcaption></figure></div>
 
 #### Select a payment type and complete checkout
 
-<figure><img src=".gitbook/assets/image (191).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (191).png" alt="" width="100%"><figcaption></figcaption></figure></div>
 
 **IMPORTANT:** The Mobile Application also gives the possibility to cancel an existing order. In order to do this, the user has to click on the **Booked** tab in the **Extras** screen and tap on the existing order. In here, he can also decide whether he will refund the money back to the customer. In order to make the refund possible, a Credit method of payment assigned to this specific guide is required! (see pictures below)
 
-<figure><img src=".gitbook/assets/image (192).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (192).png" alt="" width="100%"><figcaption></figcaption></figure></div>
 
-![!](https://docs.tourpaq.com/assets/images/55-f4fe0b97ccc6779a3e8784668d4048d4.png)
+<div data-with-frame="true"><figure><img src="https://docs.tourpaq.com/assets/images/55-f4fe0b97ccc6779a3e8784668d4048d4.png" alt="" width="100%"><figcaption></figcaption></figure></div>
 
 **Note:** When ordering excursions from Guide App or Guest App the workflow is as follows: Allotment is taken but order is pending status (these orders do not appear in the system).
 
@@ -228,7 +228,7 @@ If payment approved, the order is set to status OK. If payment rejected, the all
 * Pending payment is reported as approved – an email saying your payment has been approved
 * Pending payment is reported as rejected – an email saying your payment is rejected is sent and order is canceled and allotment set back
 
-<figure><img src=".gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (1) (2).png" alt="" width="100%"><figcaption></figcaption></figure></div>
 
 In the CXL/Error menu, you’ll see bookings where extra orders (such as excursions) were canceled by the service, but the payment was still confirmed. These entries are shown to help you identify and resolve any discrepancies.
 

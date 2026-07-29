@@ -18,7 +18,7 @@ The purpose of the **Scheduled Activity** configuration is to:
 
 ### Form fields
 
-<figure><img src="../../.gitbook/assets/image (435).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (435).png" alt=""><figcaption></figcaption></figure></div>
 
 | **Field**                | **Description**                                                                                      |
 | ------------------------ | ---------------------------------------------------------------------------------------------------- |

@@ -23,7 +23,7 @@ The purpose of the **Maps** module is to:
 1. In **Tourpaq Office**, navigate to **Guest App → Maps**.
 2.  The list view will display all maps configured for different resorts.
 
-    <figure><img src=".gitbook/assets/image (436).png" alt=""><figcaption></figcaption></figure>
+    <div data-with-frame="true"><figure><img src=".gitbook/assets/image (436).png" alt=""><figcaption></figcaption></figure></div>
 
 | **Column**  | **Description**                                                                              |
 | ----------- | -------------------------------------------------------------------------------------------- |
@@ -38,14 +38,14 @@ A **Create** button is available in the top-right corner to add new maps.
 
 1.  Click **Create** to define a new map or select an existing one from the list.
 
-    <figure><img src=".gitbook/assets/image (437).png" alt=""><figcaption></figcaption></figure>
+    <div data-with-frame="true"><figure><img src=".gitbook/assets/image (437).png" alt=""><figcaption></figcaption></figure></div>
 2.  In the map editor:
 
     * Click on the map to drop a **point of interest (POI)**.
     * Fill in the **Location Details** the descripson.
     * Optionally, upload **images** related to that location to make it more informative.
 
-    <figure><img src=".gitbook/assets/image (438).png" alt=""><figcaption></figcaption></figure>
+    <div data-with-frame="true"><figure><img src=".gitbook/assets/image (438).png" alt=""><figcaption></figcaption></figure></div>
 3. Assign the map to one or more **resorts** to ensure it is displayed to guests staying in those resorts.
 4. Click **Save** to confirm the setup.
 

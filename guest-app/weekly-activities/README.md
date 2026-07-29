@@ -25,7 +25,7 @@ The purpose of the **Weekly Activities** page is to:
 
 #### View existing activities
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 The table lists all configured weekly activities along with their main details:
 

@@ -17,7 +17,7 @@ Typical examples include:
 * Common phrases (“How much does it cost?”, “Where is the beach?”)
 * Emergency or transport-related words (“Hospital”, “Taxi”, “Airport”)
 
-<figure><img src=".gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 ### How to use
 
@@ -33,7 +33,7 @@ Typical examples include:
 6. **Click Save:**
    * The new vocabulary entry will be displayed in the list and automatically shown in the Guest App for guests traveling to the selected country.
 
-<figure><img src=".gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 ### Example: English–Danish vocabulary
 

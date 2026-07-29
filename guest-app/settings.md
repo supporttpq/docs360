@@ -16,7 +16,7 @@ To configure the settings for Guest app,
 
 These are the texts for specific pages in the Guest App.
 
-<figure><img src="../.gitbook/assets/image (21) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (21) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 #### Manage application text
 
@@ -27,7 +27,7 @@ These are the texts for specific pages in the Guest App.
 * After this have been set, click on save.
 * The available menus are the menus available to the guests before and after departure.
 
-<figure><img src="../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure></div>
 
 #### Configure available menus
 
@@ -44,7 +44,7 @@ These are the texts for specific pages in the Guest App.
 
 * The notifications can be managed from this part. These notifications are for the guide part of the menu specifically, the weekly activities.
 
-<figure><img src="../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure></div>
 
 * The number of days before departure is the number of days before the departure of the booking when the guests will receive the notifications.
 * Number of times per day are the number of times a guests will receive a notification.
@@ -57,7 +57,7 @@ These are the texts for specific pages in the Guest App.
 
 * KissCam overlays can be uploaded and will be used when the guests are making pictures through the app.
 
-<figure><img src="../.gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure></div>
 
 * After everything has been set, click on Save.
 

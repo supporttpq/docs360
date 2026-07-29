@@ -17,7 +17,7 @@ This can include:
 
 It ensures that guests are well-informed and can enjoy a smoother, more enjoyable holiday experience.
 
-<figure><img src=".gitbook/assets/image (20) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (20) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 ### How to use
 
