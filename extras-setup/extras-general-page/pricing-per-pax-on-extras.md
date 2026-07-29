@@ -1,14 +1,16 @@
-# Priceing per pax on extras
+# Pricing per pax on extras
+
+## Pricing per pax on extras
 
 ### Overview
 
-The **Pricing per Pax on Extras** functionality allows extras to be priced dynamically based on the number of passengers selecting the service. This setup is commonly used for activities such as ski school, guided tours, lessons, or other extras where the price depends on the number of participants.&#x20;
+The **Pricing per Pax on Extras** functionality allows extras to be priced dynamically based on the number of passengers selecting the service. This setup is commonly used for activities such as ski school, guided tours, lessons, or other extras where the price depends on the number of participants.
 
 For using pricing per pax on extras, the extras has to be assigned to an extras category with Category Type "ActivityPricedPerPax". This category should be created from Extras->Extras Category:
 
-<figure><img src="../../.gitbook/assets/extra categ actpriceperpax.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/extra categ actpriceperpax.png" alt="Extras Category with ActivityPricedPerPax"><figcaption></figcaption></figure></div>
 
-## Purpose
+### Purpose
 
 This feature provides flexible pricing management for extras where:
 
@@ -19,9 +21,9 @@ This feature provides flexible pricing management for extras where:
 
 It ensures that the correct total and per-passenger price is automatically calculated during booking creation.
 
-## Configuration Setup
+### Configuration setup
 
-### Step 1 – Create the Extras Category
+#### Step 1: Create the Extras Category
 
 Navigate to: **Extras → Extras Category**
 
@@ -31,15 +33,15 @@ Create a category with:
 | ------------- | ---------------------- |
 | Category Type | `ActivityPricedPerPax` |
 
-<figure><img src="../../.gitbook/assets/extra categ actpriceperpax.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/extra categ actpriceperpax.png" alt="Extras Category with ActivityPricedPerPax"><figcaption></figcaption></figure></div>
 
 This category enables the pricing-per-passenger logic for all extras assigned to it.
 
-## Step 2 – Create the Extra
+#### Step 2: Create the extra
 
 When creating an extra with the type: `ActivityPricedPerPax,` additional configuration fields become available.
 
-<figure><img src="../../.gitbook/assets/extras activity (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/extras activity (1).png" alt="ActivityPricedPerPax extra fields"><figcaption></figcaption></figure></div>
 
 | Field                              | Description                                                                                                                                                                                                                                                                                                                      |
 | ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -50,16 +52,16 @@ When creating an extra with the type: `ActivityPricedPerPax,` additional configu
 
 ***
 
-## Extras Prices Configuration
+### Extras prices configuration
 
-Inside the **Prices** tab, users can define prices per passenger count.
+In the **Prices** tab, you can define prices per passenger count.
 
 The system allows pricing configuration from:
 
 * 1 passenger
 * up to the value defined in **Maximum pax**
 
-<figure><img src="../../.gitbook/assets/extras activity price.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/extras activity price.png" alt="Prices by passenger count"><figcaption></figcaption></figure></div>
 
 Additionally:
 
@@ -67,9 +69,9 @@ Additionally:
 
 ***
 
-## Extras Selection in Office
+### Extras selection in Office
 
-### Availability
+#### Availability
 
 If one or more extras are eligible for the booking:
 
@@ -78,13 +80,13 @@ If one or more extras are eligible for the booking:
 
 a new booking tab using the category tab name becomes visible in the booking.
 
-<figure><img src="../../.gitbook/assets/activity in booking.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/activity in booking.png" alt="Extras category tab in an Office booking"><figcaption></figcaption></figure></div>
 
 ***
 
-### Selecting Extras
+#### Selecting extras
 
-Inside the extras tab, the user can:
+In the extras tab, you can:
 
 * Select the extra from the dropdown list
 * Choose the passengers for the extra
@@ -97,35 +99,35 @@ As passengers are selected:
 * The price is automatically calculated next to each passenger
 * The total price is displayed immediately
 
-<figure><img src="../../.gitbook/assets/activity in booking 2.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/activity in booking 2.png" alt="Extra selection and price rules"><figcaption></figcaption></figure></div>
 
 ***
 
-### Saving the Selection
+#### Save the selection
 
 After completing the selection:
 
 1. Click **Save Selection**
 2. Return to the booking tab
-3. The selected extras and pricing will now be visible
+3. Confirm that the selected extras and pricing are visible.
 4. Save the booking again to finalize the changes
 
-<figure><img src="../../.gitbook/assets/activity in booking save.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/activity in booking save.png" alt="Saved extra selection"><figcaption></figcaption></figure></div>
 
 ***
 
-## Price Calculation Example
+### Price calculation examples
 
-### Example 1 – Individual Pricing + Hourly Pricing
+#### Individual pricing and hourly pricing
 
-#### Configuration
+**Configuration**
 
 | Setting                        | Value   |
 | ------------------------------ | ------- |
 | Individual price by pax number | Enabled |
 | Per Hour                       | Enabled |
 
-#### Price Rules
+**Price rules**
 
 | Passenger   | Price |
 | ----------- | ----- |
@@ -133,11 +135,11 @@ After completing the selection:
 | Passenger 2 | 30    |
 | Passenger 3 | 20    |
 
-#### Duration
+**Duration**
 
 * 3 hours
 
-#### Calculation
+**Calculation**
 
 $$
 Price =[(40+30+20)*3]/3
@@ -149,9 +151,9 @@ Result:
 
 ***
 
-### Example 2 – Shared Group Pricing
+#### Shared group pricing
 
-#### Configuration
+**Configuration**
 
 | Setting                        | Value    |
 | ------------------------------ | -------- |
@@ -162,11 +164,11 @@ In this scenario:
 
 * The price configured for the total number of passengers is applied equally to each passenger.
 
-<figure><img src="../../.gitbook/assets/activty calc.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/activty calc.png" alt="Shared group pricing rule"><figcaption></figcaption></figure></div>
 
 ***
 
-## Extras Selection in Webbooking
+### Extras selection in Web Booking
 
 The same extras functionality is available in **Customer Center**
 
@@ -180,7 +182,7 @@ The behavior is similar to the Office booking flow.
 
 ***
 
-## Best Practices
+### Best practices
 
 * Always verify that the extra belongs to a category with type `ActivityPricedPerPax`
 * Ensure **Maximum pax** matches the highest configured pricing tier

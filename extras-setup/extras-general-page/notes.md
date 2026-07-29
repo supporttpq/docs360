@@ -4,6 +4,8 @@ description: Add internal notes to an extra for context and traceability.
 
 # Notes
 
+## Notes
+
 ### Overview
 
 The **Notes** tab is an internal field for storing operational context and team communication for an **Extra** product.
@@ -24,7 +26,7 @@ Common use cases:
 * **Change log**: Why a price, resource, or allotment was changed.
 * **Team instructions**: What to do during cancellations, re-bookings, or manual handling.
 
-<figure><img src="../../.gitbook/assets/image (585).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (585).png" alt="Notes tab in an Extra product"><figcaption></figcaption></figure></div>
 
 * Input Type: Free-form text.
 * Usage Instructions:
@@ -43,54 +45,6 @@ Change:
 Reason:
 Impact (optional):
 ```
-
-### FAQ
-
-<details>
-
-<summary>Are Notes visible to customers (web, offer, ticket, emails)?</summary>
-
-No. Notes are meant for internal use only.
-
-</details>
-
-<details>
-
-<summary>Should I write one long note, or multiple dated entries?</summary>
-
-Use multiple dated entries. It keeps a clean audit trail and avoids overwriting context.
-
-</details>
-
-<details>
-
-<summary>My note is only relevant for one brand. What should I do?</summary>
-
-Start the note with the brand name (for example `Tourpaq SE:`) so it’s clear.
-
-</details>
-
-<details>
-
-<summary>What kind of content should not be written in Notes?</summary>
-
-Avoid:
-
-* Passenger personal data (names, passports, phone numbers, emails)
-* Payment details
-* Anything that belongs in a booking-specific service case
-
-</details>
-
-<details>
-
-<summary>I updated the note but it didn’t “stick”. Why?</summary>
-
-Most often, the page wasn’t saved.
-
-After editing the Notes text area, click **Save.**
-
-</details>
 
 ### Related pages
 

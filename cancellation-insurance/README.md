@@ -1,18 +1,20 @@
 # Cancellation Insurance
 
-#### Overview
+## Cancellation Insurance
+
+### Overview
 
 **Cancellation Insurance** represents the fee a customer pays to ensure they can recover part of the total booking amount if they are forced to cancel their trip.
 
 The insurance amount can be calculated in several ways, depending on the company’s configuration and business logic.
 
-#### Purpose
+### Purpose
 
 This feature allows travel companies to offer financial protection to customers while maintaining flexibility in how the insurance price is determined. It ensures that the cancellation insurance is tailored to factors such as trip cost, duration, or transport type.
 
-#### General Settings
+### General settings
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Cancellation Insurance general settings"><figcaption></figcaption></figure></div>
 
 **Brand**\* - Select the brand to which this cancellation insurance rule will apply. Mandatory field.
 
@@ -22,15 +24,15 @@ This feature allows travel companies to offer financial protection to customers 
 
 **Booking to**\* - Set the end date after which the cancellation insurance will no longer apply.
 
-**Type of rule -** Determines how the cancellation insurance is calculated.&#x20;
+**Type of rule -** Determines how the cancellation insurance is calculated.
 
-Options may include:&#x20;
+Options may include:
 
-\- **Related to basic price**&#x20;
+\- **Related to basic price**
 
-\- **Related to transport type**&#x20;
+\- **Related to transport type**
 
-\- **Related to length of travel**&#x20;
+\- **Related to length of travel**
 
 **- Percentage of basic price**
 
@@ -47,51 +49,52 @@ This behavior ensures that the insurance cost reflects the correct commission co
 
 **External Cancellation -** Allows linking to an external cancellation policy or provider (if integrated). - Gouda - Europieske
 
-#### Instructions
+### Configure the insurance price
 
 There are **four methods** available for setting the price of the cancellation insurance:
 
-1.  **Related to basic price**&#x20;
+#### Related to basic price
 
-    <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Cancellation Insurance related to basic price"><figcaption></figcaption></figure></div>
 
-    * The insurance fee is determined by the total amount the passenger pays for the trip.
-    * Up to **four price ranges** can be defined.
-    * Example:
-      * If the passenger’s trip price fits within the first range, a specific fee is applied.
-      * If it falls into the second range, a different fee is used, and so on.
-2.  **Related to lenght of travel**&#x20;
+* The insurance fee is determined by the total amount the passenger pays for the trip.
+* Up to **four price ranges** can be defined.
+* Example:
+  * If the passenger’s trip price fits within the first range, a specific fee is applied.
+  * If it falls into the second range, a different fee is used.
 
-    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+#### Related to length of travel
+
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Cancellation Insurance related to length of travel"><figcaption></figcaption></figure></div>
 
 * The insurance fee is determined by the length of the trip.
 * Up to **four duration ranges** can be defined, each with its own insurance fee.
 
-3.  **Based on Percentage of Basic Price**&#x20;
+#### Based on percentage of basic price
 
-    <figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Cancellation Insurance percentage of basic price"><figcaption></figcaption></figure></div>
 
 * The fee is calculated as a **percentage** of the passenger’s total trip price.
-* Example: If the percentage is 5% and the trip price is €1000, the insurance fee will be €50.
+* Example: If the percentage is 5% and the trip price is €1000, the insurance fee is €50.
 
-4. **Related to transport type**&#x20;
+#### Related to transport type
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Cancellation Insurance related to transport type"><figcaption></figcaption></figure></div>
 
 * The insurance fee is determined by the **type of transport** selected for the booking (e.g., flight, bus, train).
 
-#### External Cancellation <a href="#external-cancellation" id="external-cancellation"></a>
+### External Cancellation <a href="#external-cancellation" id="external-cancellation"></a>
 
 The **External Cancellation** setup allows integration with third-party insurance providers, enabling automatic mapping and management of external cancellation insurance products within Tourpaq.
 
-Currently, Tourpaq supports two main providers:
+Tourpaq supports two main providers:
 
 * **Gouda**
 * **Europeiske**
 
-<figure><img src="../.gitbook/assets/external-cancellation-c9308d8d9e4939f5f63674392cc01434.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/external-cancellation-c9308d8d9e4939f5f63674392cc01434.png" alt="External Cancellation provider configuration"><figcaption></figcaption></figure></div>
 
-**Gouda Configuration**
+#### Gouda configuration
 
 To configure a Gouda external cancellation insurance:
 
@@ -99,7 +102,7 @@ To configure a Gouda external cancellation insurance:
 * **Gouda ID** – Identifies and maps the cancellation insurance product from Gouda to the corresponding entry in Tourpaq.
 * **Name** – The name of the product as displayed in the web booking interface.
 
-**Europeiske Configuration**
+#### Europeiske configuration
 
 To configure a Europeiske external cancellation insurance:
 

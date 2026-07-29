@@ -1,6 +1,8 @@
 # Cancellation Rules
 
-#### Overview
+## Cancellation Rules
+
+### Overview
 
 The **Cancellation Rules** section defines how cancellation fees are calculated when a booking or passenger is canceled. The system determines the fee based on the number of days remaining until the departure date.
 
@@ -8,7 +10,7 @@ Administrators can configure up to four time ranges representing days left befor
 
 It is also possible to include **Cancellation Insurance** in the total fee calculation, depending on whether the insurance is paid and whether it covers the cancellation.
 
-#### Purpose
+### Purpose
 
 Cancellation rules ensure consistent and automated fee calculation for canceled bookings. They help travel companies:
 
@@ -16,11 +18,11 @@ Cancellation rules ensure consistent and automated fee calculation for canceled 
 * Adjust penalties based on how close the cancellation occurs to the departure date.
 * Integrate cancellation insurance coverage into the final fee.
 
-<figure><img src=".gitbook/assets/image (26) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (26) (1).png" alt="Cancellation Rules configuration"><figcaption></figcaption></figure></div>
 
-#### Instructions
+### Instructions
 
-**1. Defining Cancellation Rules**
+#### Define Cancellation Rules
 
 1. Navigate to the **Cancellation Rules** setup page.
 2. Define up to **four ranges** for the number of days left to departure.
@@ -31,14 +33,16 @@ Cancellation rules ensure consistent and automated fee calculation for canceled 
 
 > **Note:** Cancellation rules are linked to the **transport** at the time it is created.
 
-<figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Cancellation Rules range settings"><figcaption></figcaption></figure></div>
 
-**2. How the Cancellation Fee Is Calculated**
+#### How the cancellation fee is calculated
 
-* **If cancellation insurance is paid:**
+The system applies one of these calculations:
+
+* **Cancellation insurance is paid:**
   * **Cover option selected:** The cancellation fee equals the amount of the cancellation insurance.
   * **Does not cover option selected:** The fee includes both the cancellation insurance amount and the amount defined in the cancellation rules.
-* **If no cancellation insurance is paid:**
+* **No cancellation insurance is paid:**
   * Only the **Cover option** is available, and the cancellation fee will be based solely on the defined cancellation rule.
 
 > **Important:** Infants are exempt from cancellation fees.

@@ -1,21 +1,23 @@
 # Allotments
 
-## **Manual Allotments**
+## Allotments
 
-<figure><img src="../../.gitbook/assets/image (412).png" alt=""><figcaption></figcaption></figure>
+### Manual Allotments
 
-### Overview
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (412).png" alt=""><figcaption></figcaption></figure></div>
+
+#### Overview
 
 This feature is usually used for **products available at the destination** (e.g., excursions, events, or additional services). Extra allotments allow you to manage availability for these products independently from the main hotel or transport allotments.
 
-### Functionality
+#### Functionality
 
 * The user can generate allotments using a **simple generator**, making it easy to define when the product is available.
 * In the **booking module**, the system will display the product as **available** if:
   * The booking’s arrival and departure dates fall within the extra allotment period.
   * There is still allotment left (i.e., availability has not been fully consumed).
 
-### How to Create Extra Allotments
+#### How to create extra allotments
 
 1. **Navigate to the Allotments Tab**
    * Go to: _Extras Setup → Extras_
@@ -28,7 +30,7 @@ This feature is usually used for **products available at the destination** (e.g.
 
           * If the type is set to Daily, it needs to follow the next steps:
 
-          <figure><img src="../../.gitbook/assets/image (414).png" alt=""><figcaption></figcaption></figure>
+          <div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (414).png" alt=""><figcaption></figcaption></figure></div>
 
           \- Frequency - every X days
 
@@ -37,7 +39,7 @@ This feature is usually used for **products available at the destination** (e.g.
           * Allotment - how many allotments will be generated daily
           * If the type is set to Weekly:
 
-          <figure><img src="../../.gitbook/assets/image (413).png" alt=""><figcaption></figcaption></figure>
+          <div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (413).png" alt=""><figcaption></figcaption></figure></div>
 
           * Frequency - every X weeks. It requires to set at least one day or all day
           * Start date - date when the allotment will be generated
@@ -45,7 +47,8 @@ This feature is usually used for **products available at the destination** (e.g.
           * Allotment - how many allotments will be generated weekly
 
     After all the fields are set - click to Generate.
-3. Allotments table view
+
+#### Allotments table view
 
 *   **Change values selector -** checkbox - enable bulk editing. Allow to make changes to the following columns:
 
@@ -67,7 +70,7 @@ This feature is usually used for **products available at the destination** (e.g.
 
     .
 
-    <figure><img src="../../.gitbook/assets/image (415).png" alt=""><figcaption></figcaption></figure>
+    <div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (415).png" alt=""><figcaption></figcaption></figure></div>
 
     \- The system checks if all bookings are eligible to move.
 
@@ -82,7 +85,7 @@ This feature is usually used for **products available at the destination** (e.g.
 * **BO1** – (Booked Out 1 Interval) Displays the number of units already booked.
 * **Block** – Check this box if you want to block allotment for that date.
 
-4. **Filter & Manage Allotments**
+#### Filter and manage allotments
 
 * Use **Start date / End date** filters to display specific periods.
 * Use **Week Days** to filter by specific days (e.g., only Saturdays).
@@ -90,22 +93,22 @@ This feature is usually used for **products available at the destination** (e.g.
   * All dates are displayed, including normally hidden ones.
   *   This applies only when no date range filter is active.
 
-      <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+      <div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure></div>
 * **Display / Clear** allows you to manage the current view.
 
-5. **Save & Apply**
+#### Save and apply
 
 * Any changes made (e.g., adjusting allotment numbers or blocking dates) will be saved automatically and reflected in the booking system.
 *   The data displayed in the list are showing in chronological order, thus avoiding the reduced risk of selecting outdated allocations.
 
     * The oldest valid date appears at the top of the list.
 
-    <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
     * All dates in the past are automatically hidden. Users cannot view or select expired dates unless specific conditions apply.
 *   **Date Range Overrides "Show Hidden" -** If a **date range** is specified in the filter, this overrides the “Show hidden” option.
 
-    <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 | Scenario                         | Result                             |
 | -------------------------------- | ---------------------------------- |
@@ -114,17 +117,17 @@ This feature is usually used for **products available at the destination** (e.g.
 | Date range selected              | Only dates within range shown      |
 | Date range selected              | “Show hidden” disabled             |
 
-### Allotment for Out/Home Extra Category
+#### Allotment for Out/Home Extra Category
 
-#### Overview
+**Overview**
 
 When an Extra configured with manual allotment is used as an Out/Home Extra, the system manage allotments for both travel directions.
 
 The booked Extra displays the correct travel dates throughout the booking flow and customer documents.
 
-#### Functionality
+**Functionality**
 
-#### Allotment Handling
+**Allotment handling**
 
 If an Extra with **Manual Allotment** enabled is booked as an **Out/Home Extra**:
 
@@ -136,7 +139,7 @@ The system treat the outbound and return portions as separate allotment usages, 
 
 ***
 
-#### Date Handling
+**Date handling**
 
 The Extra display the correct date depending on the travel direction:
 
@@ -147,7 +150,7 @@ The Extra display the correct date depending on the travel direction:
 
 ***
 
-#### Areas Impacted
+**Areas impacted**
 
 The correct dates must be displayed in the following areas:
 
@@ -158,20 +161,20 @@ The correct dates must be displayed in the following areas:
 
 ***
 
-#### Example
+**Example**
 
 A booking contains:
 
 * Departure date: 11 July 2026
-*   Return date: 18 July 2026&#x20;
+*   Return date: 18 July 2026
 
-    <figure><img src="../../.gitbook/assets/18.05.2026_11.55.16_REC.png" alt=""><figcaption></figcaption></figure>
-*   Tilkøb af udstyr på fly Extra configured as Out/Home Extra&#x20;
+    <div data-with-frame="true"><figure><img src="../../.gitbook/assets/18.05.2026_11.55.16_REC.png" alt=""><figcaption></figcaption></figure></div>
+*   Tilkøb af udstyr på fly Extra configured as Out/Home Extra
 
-    <figure><img src="../../.gitbook/assets/18.05.2026_11.50.25_REC.png" alt=""><figcaption></figcaption></figure>
-*   Manual allotment enabled&#x20;
+    <div data-with-frame="true"><figure><img src="../../.gitbook/assets/18.05.2026_11.50.25_REC.png" alt=""><figcaption></figcaption></figure></div>
+*   Manual allotment enabled
 
-    <figure><img src="../../.gitbook/assets/18.05.2026_11.51.34_REC.png" alt=""><figcaption></figcaption></figure>
+    <div data-with-frame="true"><figure><img src="../../.gitbook/assets/18.05.2026_11.51.34_REC.png" alt=""><figcaption></figcaption></figure></div>
 
 Result:
 
@@ -180,24 +183,24 @@ Result:
 | Out       | 11 July 2026 | Out allotment     |
 | Home      | 18 July 2026 | Home allotment    |
 
-<figure><img src="../../.gitbook/assets/18.05.2026_11.57.57_REC.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/18.05.2026_11.57.57_REC.png" alt=""><figcaption></figcaption></figure></div>
 
 The booking documents and passenger overview display:
 
 * Out Bike on 11 July 2026
 * Home Bike on 18 July 2026
 
-<figure><img src="../../.gitbook/assets/18.05.2026_12.02.00_REC.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/18.05.2026_12.02.00_REC.png" alt=""><figcaption></figcaption></figure></div>
 
-## **Linked to transport Allotments**
+### Linked to transport Allotments
 
-### Overview
+#### Overview
 
 **Linked to Transport Allotments** are used for **products available only on transport** (e.g., luggage, catering, onboard services). Unlike standard Extra Allotments, these are directly tied to a transport departure and can only be booked by passengers traveling on that specific transport.
 
 This ensures that products with limited supply or availability for certain departure dates are managed correctly.
 
-### How It Works
+#### How it works
 
 * Allotments are linked to transport departure dates.
 * The system checks for availability based on the **departure interval** set for the transport.
@@ -205,19 +208,19 @@ This ensures that products with limited supply or availability for certain depar
   * The passenger is traveling on the linked transport.
   * Allotment is still available for the selected interval.
 
-### Setup Instructions
+#### Setup instructions
 
 1. **Create a New Extra**
    * Go to: _Extras → Create New Extra_.
    * Fill in the product details.
    * Under **Allotment Type**, select **Linked to Transport**.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (3) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 2. After the general settings have been set, and the extras saved, the next step is setting the brand and establishing the prices and resources.
 3. At the **Resource** tab, a must is setting the **Transport** filter.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (2) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 4. The next step is setting up the allotments.
 
@@ -225,7 +228,7 @@ This ensures that products with limited supply or availability for certain depar
 * Press **Generate New Allotments**.
 * Define the period, interval, and availability that should match the transport departure dates.
 
-<figure><img src="../../.gitbook/assets/image (416).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (416).png" alt=""><figcaption></figcaption></figure></div>
 
 * Fields:
 
@@ -241,11 +244,11 @@ This ensures that products with limited supply or availability for certain depar
 
 Note! The extra allotments are set up as the transport allotments. The allotment must be edited by a user, or overbookings may happen.
 
-### Interface and Fields
+#### Interface and fields
 
 When defining **Linked to Transport Allotments**, the system displays a table with all transport departures for the selected period.
 
-<figure><img src="../../.gitbook/assets/image (417).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (417).png" alt=""><figcaption></figcaption></figure></div>
 
 **Filters (Top Section):**
 
@@ -269,31 +272,31 @@ When defining **Linked to Transport Allotments**, the system displays a table wi
 * **FO1, FO2, FO3, FO4** – Free out allotments (remaining availability for each intervals).
 * **Block** – Checkbox to block allotment for a specific departure date.
 
-#### **Calculation for Allotment:**
+**Calculation for allotment**
 
 * Calculation for TOTAL OUT - The Total Out is calculated as a sum from the departures: TO = AI1 + AI2 + AI3 + AI4
 
-#### **Move bookings**
+**Move bookings**
 
 The **Move Bookings** functionality allows you to transfer all bookings for an extra (e.g., excursion) from one weekday to another. This is useful when the planned day of an excursion changes and bookings must be rescheduled to a different weekday.
 
-<figure><img src="../../.gitbook/assets/image (418).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (418).png" alt=""><figcaption></figcaption></figure></div>
 
-#### Purpose
+**Purpose**
 
 * To **reschedule extras** when the weekday changes (e.g., excursion originally on Tuesday moved to Friday).
 * To ensure **all affected bookings are updated consistently** in the system.
 * To prevent errors by enforcing rules that guarantee eligibility and data consistency.
 
-#### Instructions
+**Instructions**
 
-#### Step 1: Select the Bookings
+**Step 1: Select the bookings**
 
 * Go to the **Extras → Allotments/Bookings view**.
 * Use the **Change Value** tool to select the booking lines you want to move.
 * Only bookings from the **same weekday** can be moved together.
 
-#### Step 2: Choose Move Action
+**Step 2: Choose move action**
 
 There are two options available:
 
@@ -303,20 +306,20 @@ There are two options available:
 * Select the desired action from the menu.
 * The system will only enable the action if all selected bookings meet the requirements.
 
-#### Step 3: Select the New Weekday
+**Step 3: Select the new weekday**
 
 * A list of available weekdays will appear.
 * Only weekdays that exist for **all selected lines** will be shown.
   * Example: If you select Tuesday, then all Tuesday lines must be followed by a Friday line for Friday to be selectable.
 * Select the new weekday.
 
-#### Step 4: Confirm and Apply
+**Step 4: Confirm and apply**
 
 * The system checks if all bookings are eligible to move.
 * Once confirmed, bookings are reassigned to the new weekday.
 * The table updates automatically, showing the new **Booked** figures
 
-#### System Behavior
+**System behavior**
 
 * **Booking History:** Each moved booking is logged in the booking history.
 * **Customer Communication:** No automatic message is sent to the customer.
@@ -327,27 +330,27 @@ There are two options available:
 
 ✅ This ensures excursions can be rescheduled without canceling and rebooking customers, while maintaining full traceability in the system.
 
-Special case for extras that are from a category that has the **"link to column in transport"** enabled
+#### Special case: Link to column in transport
 
 For these extras, the allotment total and calculation are also displayed on the transport selection pop-up in the booking process. All extras linked to the transport will be taken into consideration when displaying the total, no matter if there are more from the same category or different categories.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (1) (1) (1) (3) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
-<figure><img src="../../.gitbook/assets/LinkedToTransport-9c2183e4a9db0582d6849ed7fee00404.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/LinkedToTransport-9c2183e4a9db0582d6849ed7fee00404.png" alt=""><figcaption></figcaption></figure></div>
 
-### **One way usage**
+#### One-way usage
 
 For ONE-WAY flights, another extra is required, as extras are not available for ONE-WAYS unless a specific action is taken, an action that will invalidate the extra for CHARTER flights.
 
-## Generic Allotment
+### Generic Allotment
 
-### Overview
+#### Overview
 
 The **Generic allotment type** for Extras is used when availability is **not managed per specific date, departure, or resource**, but instead controlled at a more general level.
 
 It is a flexible configuration intended for Extras that do not require strict inventory tracking per instance.
 
-## Purpose
+#### Purpose
 
 The purpose of Generic Allotment is to:
 
@@ -356,7 +359,7 @@ The purpose of Generic Allotment is to:
 * Manage **time-based capacity**
 * Support operational planning (e.g., transport, events, guides)
 
-### How to Create Generic Allotments
+#### How to create Generic Allotments
 
 **1. Create a Product**
 
@@ -364,10 +367,10 @@ The purpose of Generic Allotment is to:
 2. Create a new extra as usual.
 3.  In the **Allotment Type** field, select **Generic Allotment Type**. This enables the Generic Allotments Tab.
 
-    <figure><img src="../../.gitbook/assets/image (723).png" alt=""><figcaption></figcaption></figure>
+    <div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (723).png" alt=""><figcaption></figcaption></figure></div>
 4.  In the **Resources** tab, add as a resource, the resorts for which you want the defined extra to be used as an extra order.
 
-    <figure><img src="../../.gitbook/assets/image (730).png" alt=""><figcaption></figcaption></figure>
+    <div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (730).png" alt=""><figcaption></figcaption></figure></div>
 5. **Generic Allotment**
 
 The **Generic Allotment** page allows configuration of **availability per time slot**.
@@ -380,9 +383,9 @@ Each row represents a **specific date and time**, with:
 
 This ensures that bookings cannot exceed the defined capacity.
 
-<figure><img src="../../.gitbook/assets/image (724).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (724).png" alt=""><figcaption></figcaption></figure></div>
 
-### **Fields Explained**
+#### Fields explained
 
 |                         |                                                                                                                                                                                                                                                                                                                                                                                                   |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -394,7 +397,7 @@ This ensures that bookings cannot exceed the defined capacity.
 | Lock Icon (🔒)          | <p>Indicates that the <strong>booked allotments are blocked</strong></p><p>Meaning:</p><ul><li>Existing bookings cannot be modified in a way that violates the allotment</li><li>Prevents inconsistencies between bookings and availability</li></ul><p>This is a system-controlled indicator.</p>                                                                                                |
 | Block                   | <p>Action link used to <strong>block the specific time slot</strong>.</p><p>When activated:</p><ul><li>The time slot becomes <strong>unavailable for booking</strong></li><li>No new bookings can be created for that slot</li><li>Existing bookings remain unchanged</li></ul><p>This is useful for:</p><ul><li>Operational closures</li><li>Maintenance</li><li>Supplier restrictions</li></ul> |
 
-**Daily Allotments**
+#### Daily allotments
 
 * **Frequency** – Number of days in the recurring availability pattern.
 * **Daily Frequency** – Defines when during the day bookings can be made:
@@ -403,47 +406,47 @@ This ensures that bookings cannot exceed the defined capacity.
 * **Duration** – Total time span during which the product is available (01.03.2026 - 30.09.2026).
 * **Allotment** – Number of available items per slot (e.g., is set to 30 and frequency is 30 minutes).
 
-<figure><img src="../../.gitbook/assets/image (725).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (725).png" alt=""><figcaption></figcaption></figure></div>
 
-<figure><img src="../../.gitbook/assets/image (726).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (726).png" alt=""><figcaption></figcaption></figure></div>
 
-#### Weekly allotments <a href="#weekly-allotments" id="weekly-allotments"></a>
+#### Weekly allotments
 
 The only change from **Daily allotments** is
 
 *   Frequency - this time it is in weeks and not days, with the additional selection of days of the week in which the product is available
 
-    <figure><img src="../../.gitbook/assets/image (727).png" alt=""><figcaption></figcaption></figure>
+    <div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (727).png" alt=""><figcaption></figcaption></figure></div>
 
 If **All Days** is checked, allotments are created for the entire week.
 
 * When a guest departs midweek, only the first valid day of the allotment will be shown in the Guest App. _(Example: if allotment is generated for the whole week and the departure is on Tuesday → only Tuesday’s slots appear.)_
 
-<figure><img src="../../.gitbook/assets/image (728).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (728).png" alt=""><figcaption></figcaption></figure></div>
 
-<figure><img src="../../.gitbook/assets/image (729).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (729).png" alt=""><figcaption></figcaption></figure></div>
 
-## Behavior and Logic
+#### Behavior and logic
 
-### Capacity Control
+**Capacity control**
 
 * Bookings consume allotment from **TOTAL ALLOTMENTS**
 * When **BOOKED ALLOTMENTS = TOTAL ALLOTMENTS**, the slot is fully booked
 * No further bookings are allowed
 
-### Editing Allotments
+**Editing allotments**
 
 * Increasing **TOTAL ALLOTMENTS** increases availability
 * Decreasing it below **BOOKED ALLOTMENTS** may cause conflicts and is typically restricted
 
-### Time-Based Allocation
+**Time-based allocation**
 
 Each row is independent:
 
 * Different time slots can have different capacities
 * Allows fine control per departure or event time
 
-### Interaction with Bookings
+**Interaction with bookings**
 
 When a booking includes this extra:
 
@@ -451,9 +454,9 @@ When a booking includes this extra:
 * If capacity exists → booking is allowed
 * If full → booking is blocked or alternative slot must be selected
 
-<figure><img src="../../.gitbook/assets/image (731).png" alt=""><figcaption><p>Book an Extra Order in the booking flow</p></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (731).png" alt=""><figcaption><p>Book an Extra Order in the booking flow</p></figcaption></figure></div>
 
-## Example
+#### Example
 
 An excursion operates multiple times per day:
 
@@ -466,7 +469,7 @@ If there are bookings that are at the destination on 01.09.2026 and there is an 
 * That slot becomes **fully booked**
 * Other slots remain available for the next intervals
 
-## Key Notes
+#### Key notes
 
 * Generic Allotment is used when availability is **not room-based**
 * It is essential for **time-slot-based services**

@@ -1,10 +1,12 @@
 # Disc/Suppl Categories
 
-The **Discount Supplement Categories** section in BookingX allows administrators to manage and classify supplemental charges or discounts applied to bookings. These can include additional services, room preferences, change fees.
+## Disc/Suppl Categories
 
-<figure><img src=".gitbook/assets/image (9) (2).png" alt=""><figcaption></figcaption></figure>
+The **Discount Supplement Categories** section in BookingX allows administrators to manage and classify supplemental charges or discounts applied to bookings. These can include additional services, room preferences, and change fees.
 
-### Overview Table
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (9) (2).png" alt="Disc/Suppl Categories overview table"><figcaption></figcaption></figure></div>
+
+### Overview table
 
 The list contains predefined supplement or discount categories with the following attributes:
 
@@ -15,24 +17,24 @@ The list contains predefined supplement or discount categories with the followin
 | **Use in Extra Sum** | <p>Indicates whether this supplement should be included in the total calculation of extras. Marked with:<br>✅ = Included<br>❌ = Not included</p> |
 | **Behavior on Web**  | Specifies the display behavior of the category in the web booking process.                                                                       |
 
-### Creating a New Category
+### Create a new category
 
-Click the **Create** button in the top-right to add a new category.
+In **Disc/Suppl Categories**, click **Create** to add a category.
 
-<figure><img src=".gitbook/assets/image (762).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (762).png" alt="Create Disc/Suppl Category page"><figcaption></figcaption></figure></div>
 
-#### Required Fields:
+#### Required fields
 
 * **Code** – Must be unique.
-* **Round Rule** - If a round rule is specified, then it is applied to the price before it is used in a booking. If the price is a per-day price, the round rule is applied after the full price for the booking is calculated.
-* **Hide as filters on lists** - Hide the disc / suppl category in the lists throughout the system.
-* **Status** - Select the category status (Visible / Hidden)
+* **Round Rule** - Applies to the price before a booking uses it. For per-day prices, it applies after calculating the full booking price.
+* **Hide as filters on lists** - Hides the Disc/Suppl Category in lists throughout the system.
+* **Status** - Selects the category status: **Visible** or **Hidden**.
 * **Category Name** – Should clearly describe the type of discount or supplement.
-* **Use in Extra Sum** – Define whether this category contributes to the extra total.
-* **Web Behavior** – Choose visibility logic
-* **Description -** When changing a disc/suppl category's description, please test the change on Web Booking using a different browser, since a session cache is in place, or test after 30 minutes of inactivity on Web Booking.
+* **Use in Extra Sum** – Defines whether the category contributes to the extra total.
+* **Web Behavior** – Chooses the visibility logic.
+* **Description** - Test description changes in Web Booking using a different browser. Alternatively, wait 30 minutes without Web Booking activity.
 
-### Rounding on Extras & Discount/Supplements
+### Rounding on Extras and Discount/Supplements
 
 #### Overview
 
@@ -50,7 +52,7 @@ The purpose of this feature is to:
 * Avoid incorrect or non-standard pricing (e.g., 123.47 instead of 125)
 * Apply rounding automatically during booking calculations and in the booking engine
 
-#### Where It Applies
+#### Where it applies
 
 Rounding rules are applied in the following areas:
 
@@ -59,22 +61,24 @@ Rounding rules are applied in the following areas:
 * Booking Engine
 * Elastic (search and pricing layer)
 
-#### System Behavior
+#### System behavior
 
-#### General Rule
+**General rule**
 
-If a **Round Rule** is defined on the category, it is always applied before the price is used in a booking
+If a **Round Rule** is defined on the category, it is always applied before the price is used in a booking.
 
-#### Per-Day Pricing
+**Per-day pricing**
 
-If the price is defined per da&#x79;**,** the system first calculates the total booking price:
+If the price is defined per day, the system first calculates the total booking price:
 
-* ```
-  total = price_per_day × number_of_days
-  ```
+*   The calculation is:
+
+    ```
+    total = price_per_day × number_of_days
+    ```
 * Then applies the rounding rule on the final value
 
-#### Booking Engine & Elastic
+**Booking Engine and Elastic**
 
 * Rounding is always applied when a discount or supplement is calculated
 * Ensures consistency between:
@@ -82,22 +86,22 @@ If the price is defined per da&#x79;**,** the system first calculates the total 
   * Front-end (booking engine) pricing
   * Elastic search results
 
-#### **Configuration**
+#### Configuration
 
-#### Extras Setup > Disc/Suppl Categories
+**Extras Setup → Disc/Suppl Categories**
 
 **Behavior**
 
 * Applies to all discounts and supplements in the category
 * Same rounding logic as Extras Categories
 
-**Tooltip (blue info icon)**
+**Tooltip**
 
 ```
 If a round rule is specified, then it is applied to the price before it is used in a booking. If the price is a per-day price, the round rule is applied after the full price for the booking is calculated.
 ```
 
-### Related Pages
+### Related pages
 
 * [Profit Margin Round Rule (System Settings)](profit-margin-rules.md)
-* [Discount and Supplement](discount-supplement-general-page/discounts-supplements.md)
+* [Discounts/Supplements combinations in Tourpaq](discounts-supplements/discounts-supplements.md)

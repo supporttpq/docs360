@@ -1,79 +1,64 @@
 # Out / Home - Ticket
 
-### **Overview**
+## Out / Home - Ticket
 
-This page focuses on verifying how **individual transport extras** are displayed in printed tickets generated from both the **back-office booking system** and the **Web Booking customer center**. It ensures that selected extras are presented correctly, split by **direction** (outbound/homebound), with accurate pricing and explanatory notes.
+### Overview
 
-### **Purpose**
+This page describes direction-specific transport Extras in printed tickets. It covers tickets from the back-office booking system and Web Booking customer center.
 
-The purpose of this is to:
+See [Out/Home - Web Booking](out-home-web-booking.md) for booking-flow behavior.
 
-* Ensure that transport extras are properly **listed** in the printed ticket.
-* Confirm that **directional information (outbound/homebound)** is clearly separated.
-* Validate that **prices and totals** are accurate.
-* Verify that **explanations (“Forklaringer”)** reflect the correct total quantities and directional breakdown.
+### Purpose
 
-### **Preconditions**
+Tickets display selected transport Extras by direction. They show accurate pricing, totals, and explanatory notes.
 
-* You must have access to an **existing booking** with:
-  * At least one passenger
-  * **Transport extras configured and selected** for both outbound and homebound directions
-* Booking must be in a state where ticket printing is allowed
-* You must have access to:
-  * Do Booking&#x20;
-  * Web Booking customer center
+### Requirements
 
-***
+* An existing booking with at least one passenger.
+* Transport Extras selected for outbound and homebound directions.
+* A booking state that allows ticket printing.
+* Access to **Do Booking** or Web Booking customer center.
 
-### Ticket Printing with Transport Extras
+### Ticket content
 
-When a booking includes **transport extras for both outbound and homebound directions**, these details are reflected consistently in the tickets generated from both the **internal booking system** and the **customer-facing Web Booking (WB) center**.
+The ticket uses the same structure from the back-office booking system and Web Booking customer center.
 
-#### Ticket Content
+#### Specifikation af rejsebestilling
 
-The ticket displays transport extras in two main sections:
+**Specifikation af rejsebestilling** groups Extras under their category name. It displays outbound and homebound Extras in separate columns.
 
-**1. Specifikation af rejsebestilling**
+Each column shows the direction-specific price. The ticket calculates the corresponding totals.
 
-* Extras are grouped under their **respective category name**.
-* Information is organized into **two columns**: one for **outbound** and one for **homebound**.
-* Each column shows the **price per direction**, and the correct **totals** are calculated.
+#### Forklaringer
 
-**2. Forklaringer**
+**Forklaringer** groups Extras under the same category name. It uses separate paragraphs for outbound and homebound directions.
 
-* Extras appear again, grouped under the same category name.
-* The section is split into **two paragraphs**, one for outbound and one for homebound.
-* Each paragraph displays the **total number of extras** booked for that direction.
+Each paragraph shows the total Extras booked for its direction.
 
-Whether the ticket is printed from the **internal booking page** or from the **Web Booking center**, the same structure and information are displayed:
+### Print tickets from Do Booking
 
-* **Specifikation af rejsebestilling** always shows outbound and homebound extras in separate columns, with accurate pricing and totals.
-* **Forklaringer** maintains the outbound/homebound split, ensuring clarity for the traveler.
+In **Do Booking**, print a ticket:
 
-***
+1. Open an existing booking.
+2. Click **Print ticket**.
+3. Open the downloaded ticket.
 
-### **Booking flow**
+Confirm that **Specifikation af rejsebestilling** displays category Extras in outbound and homebound columns. Confirm that each column shows the correct price and total.
 
-* Open an exiting booking (that has already extras set for both directions)
-* Click on "Print ticket"
-* Open the downloaded ticket
-* Under "Specifikation af rejsebestilling" section, extras are displayed properly under dedicated extra category name split in two columns (one for outbound and one for homebound), with corresponding price (and totals)
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (322).png" alt="Ticket Specifikation af rejsebestilling section with outbound and homebound Extras"><figcaption></figcaption></figure></div>
 
-<figure><img src="../../.gitbook/assets/image (322).png" alt=""><figcaption></figcaption></figure>
+Confirm that **Forklaringer** displays each Extra Category in separate outbound and homebound paragraphs. Confirm that each paragraph shows the total booked Extras.
 
-&#x20;     Under "Forklaringer" extras are properly displayed with the total number booked, under dedicated extra category name split in two paragraphs (one for outbound and one for homebound)
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (323).png" alt="Ticket Forklaringer section with outbound and homebound Extras"><figcaption></figcaption></figure></div>
 
-<figure><img src="../../.gitbook/assets/image (323).png" alt=""><figcaption></figcaption></figure>
+### Print tickets from Web Booking customer center
 
+In Web Booking customer center, print a ticket:
 
+1. Open the booking.
+2. Click **Print ticket**.
+3. Open the ticket.
 
-Web Booking flow
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (324).png" alt="Web Booking customer center Print ticket control"><figcaption></figcaption></figure></div>
 
-* Go to Web Booking customer center
-* Click on "Print ticket"
-
-<figure><img src="../../.gitbook/assets/image (324).png" alt=""><figcaption></figcaption></figure>
-
-* Open the ticket
-* Under "Specifikation af rejsebestilling" section, extras are displayed properly under dedicated extra category name split in two columns (one for outbound and one for homebound), with corresponding price (and totals)  \
-  Under "Forklaringer" extras are properly displayed with the total number booked, under dedicated extra category name split in two paragraphs (one for outbound and one for homebound)
+Confirm that **Specifikation af rejsebestilling** and **Forklaringer** match the ticket content described on this page.

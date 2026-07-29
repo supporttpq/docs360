@@ -1,5 +1,7 @@
 # Editing Cancellation Insurance
 
+## Editing Cancellation Insurance
+
 ### Overview
 
 After booking a trip, a customer may decide to cancel the booking. **Cancellation insurance** represents the amount paid by the customer to receive reimbursement for a portion of the total booking cost in case of cancellation.
@@ -27,15 +29,15 @@ There are **four available methods** for defining the price of cancellation insu
 4. **Based on Transport Mode**
    * The fee depends on the **type of transport** used (e.g., flight, bus, or ferry).
 
-**Cancellation Fee Application**
+#### Cancellation fee application
 
 When a booking is canceled and **cancellation insurance has been paid**, the user can choose whether the insurance **covers** the cancellation:
 
 * If the insurance **covers** the cancellation, the **cancellation fee** equals the **price of the cancellation insurance**.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Cancellation Insurance fee application"><figcaption></figcaption></figure></div>
 
-### **Main Configuration**
+### Main configuration
 
 | **Field**                 | **Description**                                                                                                                                                                                                                                                 |
 | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -48,19 +50,15 @@ When a booking is canceled and **cancellation insurance has been paid**, the use
 | **Currency**              | Defines the currency used in all related price inputs (e.g., DKK - Danish Krone).                                                                                                                                                                               |
 | **External Cancellation** | Allows linking to an external cancellation policy or provider (if integrated). - Gouda - Europieske                                                                                                                                                             |
 
-***
+### Pricing rules
 
-### **Pricing Rules**
-
-#### **Percentage of Basic Price**
+#### Percentage of basic price
 
 | **Field**      | **Description**                                                                                                               |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | **Percentage** | Enter a percentage value. The cancellation insurance will be calculated as this percent of the basic travel price (e.g., 6%). |
 
-***
-
-#### **Related to Transport Type**
+#### Related to transport type
 
 | **Field**  | **Description**                                                           |
 | ---------- | ------------------------------------------------------------------------- |
@@ -68,9 +66,7 @@ When a booking is canceled and **cancellation insurance has been paid**, the use
 | **Bus**    | Enter a fixed insurance price for bus transportation.                     |
 | **Train**  | Enter a fixed insurance price for train transportation.                   |
 
-***
-
-#### **Related to Length of Travel**
+#### Related to length of travel
 
 This section defines insurance pricing rules based on the length (duration) of the travel.
 
@@ -82,9 +78,7 @@ This section defines insurance pricing rules based on the length (duration) of t
 
 > Only one of **Price** or **Percent** should be filled per row.
 
-***
-
-#### **Related to Basic Price**
+#### Related to basic price
 
 This section allows creating tiered pricing based on the base booking price.
 
@@ -93,8 +87,6 @@ This section allows creating tiered pricing based on the base booking price.
 | **From(X) - To(X)** | Define price ranges (e.g., 0 to 99999 DKK).                                   |
 | **Price**           | The cancellation insurance cost for bookings falling within this price range. |
 
-***
-
 The cost is calculated as the commissioning percentage of the price. The commissioning equals the cost.
 
 The cost of the **cancellation insurance** is included in:
@@ -102,22 +94,18 @@ The cost of the **cancellation insurance** is included in:
 * **Finance export files:**
   *   **cost export**
 
-      <figure><img src="../.gitbook/assets/image (620).png" alt=""><figcaption></figcaption></figure>
+      <div data-with-frame="true"><figure><img src="../.gitbook/assets/image (620).png" alt="Cancellation Insurance cost export"><figcaption></figcaption></figure></div>
   *   **bookings export**
 
-      <figure><img src="../.gitbook/assets/image (621).png" alt=""><figcaption></figcaption></figure>
-*   **Bookings -** It is visible in the **Profit** tab, where it is considered as part of the booking’s financial calculation.
+      <div data-with-frame="true"><figure><img src="../.gitbook/assets/image (621).png" alt="Cancellation Insurance bookings export"><figcaption></figcaption></figure></div>
+*   **Bookings**: The cost appears in the **Profit** tab as part of the booking’s financial calculation.
 
-    <figure><img src="../.gitbook/assets/image (619).png" alt=""><figcaption></figcaption></figure>
+    <div data-with-frame="true"><figure><img src="../.gitbook/assets/image (619).png" alt="Cancellation Insurance cost in the Profit tab"><figcaption></figcaption></figure></div>
 * **Cost**
 
 This ensures that cancellation insurance is properly reflected in financial reporting and export data.
 
-Below is a documentation update for the Cancellation Insurance section.
-
-***
-
-## Infant Support
+### Infant support
 
 Cancellation Insurance is available for infant passengers and follows the same rules and pricing as for all other passenger types.
 
@@ -129,46 +117,38 @@ The standard Cancellation Insurance price is applied regardless of whether the p
 * Child
 * Infant
 
-***
-
-### Booking Flow
+#### Booking flow
 
 When a booking contains an infant passenger:
 
-*   Cancellation Insurance can be selected for the infant. &#x20;
+*   Cancellation Insurance can be selected for the infant.
 
-    <figure><img src="../.gitbook/assets/28.05.2026_11.56.35_REC.png" alt=""><figcaption></figcaption></figure>
+    <div data-with-frame="true"><figure><img src="../.gitbook/assets/28.05.2026_11.56.35_REC.png" alt="Cancellation Insurance for an infant in a booking"><figcaption></figcaption></figure></div>
 * The insurance is processed in the same way as for other passengers.
 * The standard Cancellation Insurance price is applied.
 
-***
-
-### Web Booking
+#### Web Booking
 
 When a booking contains an infant passenger:
 
 * Cancellation Insurance can be selected during Web Booking.
 
-<figure><img src="../.gitbook/assets/28.05.2026_13.58.18_REC.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/28.05.2026_13.58.18_REC.png" alt="Cancellation Insurance for an infant in Web Booking"><figcaption></figcaption></figure></div>
 
 * The insurance is processed in the same way as for other passengers.
 * The standard Cancellation Insurance price is applied.
 
-***
-
-### Customer Center
+#### Customer Center
 
 When a booking contains an infant passenger:
 
-*   Cancellation Insurance can be added, removed, or modified for the infant passenger.&#x20;
+*   Cancellation Insurance can be added, removed, or modified for the infant passenger.
 
-    <figure><img src="../.gitbook/assets/28.05.2026_13.50.13_REC.png" alt=""><figcaption></figcaption></figure>
+    <div data-with-frame="true"><figure><img src="../.gitbook/assets/28.05.2026_13.50.13_REC.png" alt="Cancellation Insurance for an infant in Customer Center"><figcaption></figcaption></figure></div>
 * The insurance is processed in the same way as for other passengers.
 * The standard Cancellation Insurance price is applied.
 
-***
-
-## Pricing Rules
+#### Pricing rules
 
 Cancellation Insurance uses the same pricing model for all passenger types.
 
@@ -182,9 +162,7 @@ Cancellation Insurance uses the same pricing model for all passenger types.
 No separate infant pricing configuration is required.
 {% endhint %}
 
-***
-
-## Provider Compatibility
+#### Provider compatibility
 
 Infant support for Cancellation Insurance is available regardless of the configured provider:
 

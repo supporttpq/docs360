@@ -1,16 +1,18 @@
 # Campaigns
 
-#### Overview
+## Campaigns
 
-Campaign is a feature in Tourpaq that allows the user to create a package of discounts and products according to a specific set of rules. Campaign feature can only be used with a campaign code.
+### Overview
 
-A Campaign can be created in office, from **Extra Setup**/**Campaign**.
+Campaigns create packages of discounts and products using defined rules. A campaign can use a campaign code.
+
+A Campaign can be created in Office from **Extra Setup** → **Campaign**.
 
 This page allows system administrators or marketing managers to **view, manage, and control discount campaigns** that can be applied to bookings. Campaigns are typically linked to special promotions, early booking incentives, or seasonal offers.
 
-<figure><img src=".gitbook/assets/image (24) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (24) (1) (1).png" alt="Campaigns overview table"><figcaption></figcaption></figure></div>
 
-### Campaigns Table Explained
+### Campaigns table explained
 
 | Column                 | Description                                                                                                                                                                                               |
 | ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -24,58 +26,62 @@ This page allows system administrators or marketing managers to **view, manage, 
 | **Force Supplements**  | ❌ Indicates whether required supplements are **not** forced by the campaign.                                                                                                                              |
 | **Disable Price List** | ❌ Indicates if the campaign disables the default price list.                                                                                                                                              |
 
-### Actions Available
+### Actions available
 
-* **Create Campaign** – Use the blue `Create` button in the upper-right to launch a new campaign setup.
-* **Edit Campaign** – Click on the campaign name to modify details.
-* **Delete Campaign** – Use the 🗑️ trash icon at the end of the row to remove a campaign.
+The Campaigns table provides these actions:
 
-### Filtering and Visibility Options
+* **Create Campaign**: Click **Create** to start a campaign setup.
+* **Edit Campaign**: Click the campaign name to modify its details.
+* **Delete Campaign**: Click the trash icon to remove a campaign.
+
+### Filtering and visibility options
+
+The following filters control the Campaigns table:
 
 * **Search Filters**: Filter campaigns by `Name`, `Code`, `Status`, and `Category`.
-* **Show Hidden**: Check this to include deleted or hidden campaigns in the list.
-* **Clear Filters**: Reset all filters using the `Clear` button.
+* **Show Hidden**: Select this option to include deleted or hidden campaigns.
+* **Clear Filters**: Click **Clear** to reset all filters.
 
-### Basic Setup
+### Basic setup
 
-#### &#x20;     Overview
+#### Overview
 
-To create a new campaign, click on the “Create” button
+To create a campaign, click **Create**.
 
-You need to complete the following fields:&#x20;
+Complete the following fields:
 
-<figure><img src=".gitbook/assets/image (20) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (20) (1) (1) (1) (1).png" alt="Create Campaign fields"><figcaption></figcaption></figure></div>
 
-* Name: insert the name of the campaign&#x20;
-* Category: select the category&#x20;
-* Code: insert the campaign code that can be used to trigger the campaign. When using a code for a campaign, inserting the code in a booking will automatically add the extras and discounts available for the campaign to the passengers. When using a campaign without code, the extras available for the campaign have to be selected for the passengers in order for the discounts to be applied.&#x20;
-* Status: select the availability of the discount Status can be: open, close, full or deleted.&#x20;
-* Alarm: insert the number of bookings per day after which an alarm will be posted on the dashboard&#x20;
-* Pricelist: select the pricelist on which the campaign is available Price list can be: normal, discount, group.&#x20;
-* Currency: select the currency used for the campaign, must be the same currency used by the brand.&#x20;
+* Name: insert the name of the campaign
+* Category: select the category
+* Code: insert the campaign code that can be used to trigger the campaign. When using a code for a campaign, inserting the code in a booking will automatically add the extras and discounts available for the campaign to the passengers. When using a campaign without code, the extras available for the campaign have to be selected for the passengers in order for the discounts to be applied.
+* Status: select the availability of the discount Status can be: open, close, full or deleted.
+* Alarm: insert the number of bookings per day after which an alarm will be posted on the dashboard
+* Pricelist: select the pricelist on which the campaign is available Price list can be: normal, discount, group.
+* Currency: select the currency used for the campaign, must be the same currency used by the brand.
 * Booking limit: insert the maximum number of bookings that can use the campaign, when the maximum number of valid bookings is reached, the campaign status is changed to full and no more bookings can be made using the campaign; if bookings are canceled after the booking limit is achieved, the campaign doesn't change its status
-* &#x20;Discount limit: insert the maximum amount value available for discounts. NOTE: If the limit is set to eg. 30000, the current amount is 25000 and a booking has a discount of 10000, it will go over the limit, but it will be the last booking made with that campaign. When the amount is achieved, the campaign status is set to full.
-* &#x20;Estimate turnover: estimated amount of income, used for statistics&#x20;
-* Pax: estimated passengers, used for statistics&#x20;
-* Do not combine discounts: if checked, same rules from the Do not combine discounts apply.&#x20;
-* Do not combine with extra bed discount: if checked, it will not allow extra bed discounts for the booking.&#x20;
+* Discount limit: insert the maximum amount value available for discounts. NOTE: If the limit is set to eg. 30000, the current amount is 25000 and a booking has a discount of 10000, it will go over the limit, but it will be the last booking made with that campaign. When the amount is achieved, the campaign status is set to full.
+* Estimate turnover: estimated amount of income, used for statistics
+* Pax: estimated passengers, used for statistics
+* Do not combine discounts: if checked, same rules from the Do not combine discounts apply.
+* Do not combine with extra bed discount: if checked, it will not allow extra bed discounts for the booking.
 
-### Force Extras&#x20;
+### Force extras
 
 1. When the campaign has a code and Force extras is checked, removing an extra from a passenger also removes the campaign discounts from that passenger; if the extra has special features (add one per room, add only the first passenger, add to each x passengers etc) the campaign discounts are removed from all passengers.
-2. &#x20;When the campaign has a code and Force extras is unchecked, removing an extra from a passenger will not remove the campaign discounts (when removing the extra, the discount value will remain unchanged)&#x20;
+2. When the campaign has a code and Force extras is unchecked, removing an extra from a passenger will not remove the campaign discounts (when removing the extra, the discount value will remain unchanged)
 3. When the campaign doesn't have a code, Force extras has to always be checked, else the campaign cannot be created.
 
-### **Code**
+### Code
 
 * When using a code for a campaign, inserting the code in a booking will automatically add the extras and discounts available for the campaign to the passengers.
 * When using a campaign without code, the extras available for the campaign have to be selected for the passengers in order for the discounts to be applied.
 
-### **Brands**
+### Brands
 
 Select the brands for which the campaign is available.
 
-### **Resources tab**
+### Resources tab
 
 * Departure airport: select from the available starting airports (multiple selection)
 * Arrival airports: select from available destination airports (multiple selection)
@@ -89,14 +95,14 @@ Select the brands for which the campaign is available.
 
 If no resorts and/or transports are selected, the campaign will be applied to all bookings that use both the selected depature airports and arrival airports.
 
-### **Extras tab**
+### Extras tab
 
 * Extras: select from available extras (multiple selection)
 * New name: the name inserted will appear as the first part of the discounts name in bookings
 
 Display names - when checked will display the names of the products, rooms, hotels, resorts, departures and arrivals instead of their codes.
 
-**Discount calculation**
+#### Discount calculation
 
 * Discount type: select from 5 different types of discounts:
   * Per booking
@@ -106,7 +112,7 @@ Display names - when checked will display the names of the products, rooms, hote
   * Per room
 * Requirements:
   * Age (from-to): insert the age interval of the passengers eligible for the discount (2-12; 15-20)
-  * Rank (from-to): insert the passengers that will actually receive the discount (if the rank is set 3-4, only the 3rd and 4th passengers that have the required age will receive the discount)&#x20;
+  * Rank (from-to): insert the passengers that will actually receive the discount (if the rank is set 3-4, only the 3rd and 4th passengers that have the required age will receive the discount)
   * Select supplement: select the supplement (only for per supplement discounts)
   * Interval 1-4: for each trip period 3 discount rules can be inserted:
     * % (percentage): the passenger will receive a discount based on a percentage of the Room price
@@ -127,7 +133,7 @@ A discount line cannot have more than 1 rule for each interval (if a percentage 
 
 `Extras Setup → Campaigns → Discount Calculation`
 
-<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Discount Calculation configuration"><figcaption></figcaption></figure></div>
 
 * **Per booking discount:** Only the first passenger receives the discount according to the requirements set
 * **Per person Adult discount:** Adult passengers receive discounts. The passenger is set to MR/MRS in the booking.
@@ -140,15 +146,15 @@ The extra discount gives the inserted amount as a discount regardless of the tot
 
 The fixed price discount gives discounts depending on the total price of the extras:
 
-&#x20;      \- If the inserted amount is greater than the total price of the extra, the discount will be the total price of the extra.
+\- If the inserted amount is greater than the total price of the extra, the discount will be the total price of the extra.
 
-&#x20;     \- If the inserted amount is lower than the total price of the extra, the discount will be the difference between the total price of the extra and the inserted amount.
+\- If the inserted amount is lower than the total price of the extra, the discount will be the difference between the total price of the extra and the inserted amount.
 
 * **Per room discount:** First passengers in the room receive discounts according to the requirements set. The rank refers to the room, and not the passenger.
 
-A campaign setup should look like this (this is an example, as the campaign can be setup in many ways, depending on the needs):
+A campaign setup can vary according to the required rules:
 
-<figure><img src=".gitbook/assets/image (21) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (21) (1) (1) (1) (1).png" alt="Example campaign discount configuration"><figcaption></figcaption></figure></div>
 
 * **Per Person Adult age from the hotel:** Adult passengers receive discounts. Adult age based on age larger than the "Child price age" from the hotel; fallback is the agency Max child age.
 * **Per Person Child age from the hotel:** Child passengers receive discounts. Child age based on the "Child price age" from the hotel; fallback is the agency's max child age.
@@ -157,11 +163,11 @@ A campaign setup should look like this (this is an example, as the campaign can 
 If there are multiple discounts that are valid for a passenger, then the first one in the list is applied.
 {% endhint %}
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image.png" alt="Campaign discount order"><figcaption></figcaption></figure></div>
 
 #### Examples
 
-#### Case 1: 2+1 (Child above hotel age)
+**Case 1: 2+1 (Child above hotel age)**
 
 **Current**
 
@@ -175,7 +181,7 @@ If there are multiple discounts that are valid for a passenger, then the first o
 
 ***
 
-#### Case 2: 1+1 (Child age 11, but full-paying)
+**Case 2: 1+1 (Child age 11, but full-paying)**
 
 **Current**
 
@@ -187,16 +193,16 @@ If there are multiple discounts that are valid for a passenger, then the first o
 * Both passengers were treated as **ADT**
 * Both receive the **ADT discount**
 
-### Discount Limit <a href="#discount-limit" id="discount-limit"></a>
+### Discount limit <a href="#discount-limit" id="discount-limit"></a>
 
-There are 2 types of discount limits
+There are two types of discount limits:
 
 * Per Booking - Discount amount given to all pax on the booking will not be greater than the set value
 * Per Pax - Discount amount given to a pax will not be greater then the set value
 
 They can be used separately or combined.
 
-<figure><img src=".gitbook/assets/image (22) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (22) (1) (1) (1) (1).png" alt="Campaign discount limit settings"><figcaption></figcaption></figure></div>
 
 ### Campaign linked with product (Select your benefit) <a href="#campaign-linked-with-product-select-your-benefit" id="campaign-linked-with-product-select-your-benefit"></a>
 
@@ -204,7 +210,7 @@ This is a special type of campaign that gives a discount in relation with a sele
 
 More than one product can be selected.
 
-<figure><img src=".gitbook/assets/image (23) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (23) (1) (1).png" alt="Campaign linked product selection"><figcaption></figcaption></figure></div>
 
 The user will receive the discount after inserting the code and selecting the product the discount will apply to.
 
@@ -215,11 +221,11 @@ The only exception is the seating product:
 * In the office, you will need to first select the seating, save the booking, and after that insert the code and select the benefit.
 * In web booking, you will need to insert the code, select the product for the discount, then select the seating in transport layout pop-up.
 
-**Special cases regarding the combination of campaign features**
+### Special cases for campaign feature combinations
 
 Combining some features of the campaign will result in various behaviours as explained below.
 
-### Force Extra + Code + extra + discount <a href="#force-extra--code--extra--discount" id="force-extra--code--extra--discount"></a>
+#### Force Extra + Code + extra + discount <a href="#force-extra--code--extra--discount" id="force-extra--code--extra--discount"></a>
 
 * Per Booking discount
 * +basic extra = discount is removed only if the extra is removed from the first pax of the booking
@@ -280,15 +286,15 @@ When 2 or more types of discounts are assigned to the campaign, removing a produ
 * +AOE = discount removed from booking
 * +AOTL = discount removed from booking
 
-### Force Extra + extra + discount (Campaign without a code) <a href="#force-extra--extra--discount-campaign-without-a-code" id="force-extra--extra--discount-campaign-without-a-code"></a>
+#### Force Extra + extra + discount (Campaign without a code) <a href="#force-extra--extra--discount-campaign-without-a-code" id="force-extra--extra--discount-campaign-without-a-code"></a>
 
 For no code campaigns, removing a product assigned to the campaign will result in the removal of all discounts assigned to that campaign.
 
-### Code + extra + discount (Campaign without Force Extra enabed) <a href="#code--extra--discount-campaign-without-force-extra-enabed" id="code--extra--discount-campaign-without-force-extra-enabed"></a>
+#### Code + extra + discount (Campaign without Force Extra enabled) <a href="#code--extra--discount-campaign-without-force-extra-enabed" id="code--extra--discount-campaign-without-force-extra-enabed"></a>
 
 In this case, removal of the product will not result in the removal of the campaign discounts.
 
-### Using Campaign in office <a href="#using-campaign-in-office" id="using-campaign-in-office"></a>
+### Using Campaign in Office <a href="#using-campaign-in-office" id="using-campaign-in-office"></a>
 
 #### Campaigns with bonus codes <a href="#campaigns-with-bonus-codes" id="campaigns-with-bonus-codes"></a>
 
@@ -297,7 +303,7 @@ Campaign can be used in bookings like any other bonus code.
 After the allotment has been taken and the passenger details have been set, the Campaign code can be inserted into the Bonus code case.
 
 {% hint style="warning" %}
-Please note that the extras selected may be overwritten by the extras assigned to the campaign.
+Extras selected may be overwritten by extras assigned to the campaign.
 {% endhint %}
 
 After the bonus code has been entered, click outside of the Bonus code case to validate the campaign code, if the code is valid it will remain in the case.

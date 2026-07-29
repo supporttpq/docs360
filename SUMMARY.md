@@ -449,7 +449,7 @@
   * [Create an extra with stay days functionality and select it in bookings](extras-setup/extras-general-page/create-an-extra-with-stay-days-functionality-and-select-it-in-bookings.md)
   * [Multiple product selection in product category](extras-setup/extras-general-page/multiple-product-selection-in-product-category.md)
   * [Gala Dinner](extras-setup/extras-general-page/gala-dinner.md)
-  * [Priceing per pax on extras](extras-setup/extras-general-page/priceing-per-pax-on-extras.md)
+  * [Pricing per pax on extras](extras-setup/extras-general-page/pricing-per-pax-on-extras.md)
 
 ***
 
@@ -458,14 +458,14 @@
 * [Extras Category](extras-category/README.md)
   * [Extra Category Overview](extras-category/extra-category-overview/README.md)
     * [Edit Extra Category](extras-category/extra-category-overview/edit-extra-category.md)
-    * [Communication Tab](extras-category/extra-category-overview/communication-tab.md)
+    * [Communication tab](extras-category/extra-category-overview/communication-tab.md)
   * [Extra Category Reporting](extras-category/extra-category-reporting.md)
   * [Out / Home](extras-category/out-home/README.md)
     * [Out/Home - Web Booking](extras-category/out-home/out-home-web-booking.md)
     * [Out / Home - Ticket](extras-category/out-home/out-home-ticket.md)
   * [One product must be selected](extras-category/one-product-must-be-selected.md)
-* [Discount/Supplement General Page](discount-supplement-general-page/README.md)
-  * [Discounts/Supplements combination in Tourpaq](discount-supplement-general-page/discounts-supplements.md)
+* [Discounts/Supplements](discounts-supplements/README.md)
+  * [Discounts/Supplements combination in Tourpaq](discounts-supplements/discounts-supplements.md)
 * [Disc/Suppl Categories](disc-suppl-categories.md)
 * [Ticket Categories](ticket-categories.md)
 * [Giftcards](giftcards.md)

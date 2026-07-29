@@ -1,34 +1,43 @@
 # Out / Home
 
+## Out / Home
+
 ### Overview
 
-This feature allows the addition of one or more extras for passengers, independently, on the outbound flight or only on the return flight. (Baggage is one example; it could be 20 kg of baggage outbound and 30 kg of baggage homebound).
+Out / Home lets passengers order an Extra for one transport direction. For example, passengers can select 20 kg outbound baggage and 30 kg homebound baggage.
 
-An extra will have the possibility to be ordered only for one direction. This will be supported in the whole system:
+The setting supports direction-specific Extras throughout Tourpaq:
 
 * In the booking flow
 * In Web booking
 * In reports
 * In cost reports (profit pages, finance)
 
-### Configuration
+### Requirements
 
-All Extras of a specific category will have the out/home functionality, so this it will be needed to be configured on the Extras category level. After an extra category is created, a new checkbox appears on the Settings menu. This is called Out/Home and is used for individual transports, to distinguish between out and home products.
+* Create the Extra Category before configuring Out / Home.
+* Use an Extra Category for individual transports.
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+### Configure Out / Home
 
-When is checked, another menu (**Individual Transports**) it will be available, where it will be possible to set the out or home products available for the selected Extra Category.
+The Out / Home setting applies to every Extra in the category.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+1.  In the Extra Category **Settings** menu, select **Out/Home**.
 
-After this, click on edit to add products for individual transports
+    <div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Extra Category Settings menu with Out/Home option"><figcaption></figcaption></figure></div>
 
-<figure><img src="../../.gitbook/assets/image (211).png" alt=""><figcaption></figcaption></figure>
+    Selecting **Out/Home** makes **Individual Transports** available.
+2.  In **Individual Transports**, define the outbound and homebound products for the Extra Category.
+
+    <div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Individual Transports menu for an Extra Category"><figcaption></figcaption></figure></div>
+3.  Click **Edit** to add products for individual transports.
+
+    <div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (211).png" alt="Edit control for individual transport products"><figcaption></figcaption></figure></div>
 
 ### Booking flow
 
-When the category has the "Available for each direction," it will be possible to select the Extras for each direction of the transport (Out/Home).
+When **Available for each direction** is enabled, the booking flow offers direction-specific Extras.
 
-This can be done in the booking flow, adding in the passenger details information, the extra that are named  - "name of extra out" and "name of extra home".
+In passenger details, select the Extra for each transport direction. The booking flow displays the configured outbound and homebound Extra names.
 
-<figure><img src="../../.gitbook/assets/image (212).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (212).png" alt="Booking flow showing direction-specific Extras"><figcaption></figcaption></figure></div>
