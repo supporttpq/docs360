@@ -4,9 +4,9 @@ Applies to Administrator
 
 Extras are optional services/products that a customer can book; like transfer, catering, pension, rental car, etc. This page allows users to create and configure various extras that can be associated with bookings or transport options.
 
-#### Brands
+### Brands
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Brands settings for an Extra."><figcaption></figcaption></figure></div>
 
 Allow the user to assign an extra to an agency. An extra can be assigned as follow:
 
@@ -18,9 +18,9 @@ Allow the user to assign an extra to an agency. An extra can be assigned as foll
 * hotel sale - can be set only by a hotel agent
 * guide sale + internet sale + for sale - can be booked by a admin, guide or a WB
 
-<figure><img src="../../.gitbook/assets/image (571).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (571).png" alt="Brand assignment settings for an Extra."><figcaption></figcaption></figure></div>
 
-### **Overview:**
+### Overview
 
 | Field                       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -45,22 +45,22 @@ Allow the user to assign an extra to an agency. An extra can be assigned as foll
 | **Currency Prices**         | Enable this to input separate prices per currency. If selected, the sales price for each brand will be calculated from the default price, using the relevant currencies. The sales prices are not updated for existing bookings. **Example:** The company currency is EUR, and the brand currency is SEK. The currency rate has changed from 11,55 to 11,3. This update will trigger the service to run an automatic update of the pricelist. |
 | **Show Supplier on Ticket** | Toggle if supplier details should appear on customer tickets.                                                                                                                                                                                                                                                                                                                                                                                 |
 
-### Custom Text
+### Custom text
 
 Used to customize the appearance and description of the extra in booking flows or documentation.
 
-<figure><img src="../../.gitbook/assets/image (442).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (442).png" alt="Custom Text settings for an Extra."><figcaption></figcaption></figure></div>
 
 | Field           | Description                                                                                                                |
 | --------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | **Name**        | Custom label to override the default extra name.                                                                           |
 | **Description** | Rich text editor for detailed descriptions, highlights, or disclaimers. This text can be found in Guest APP and Guide APP. |
 
-### Automatic Billing
+### Automatic billing
 
 Allows integration with internal billing and accounting systems for accurate cost tracking and supplier payouts.
 
-<figure><img src="../../.gitbook/assets/image (443).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (443).png" alt="Automatic Billing settings for an Extra."><figcaption></figcaption></figure></div>
 
 | Field                    | Description                                                                                  |
 | ------------------------ | -------------------------------------------------------------------------------------------- |
@@ -74,9 +74,9 @@ Allows integration with internal billing and accounting systems for accurate cos
 | **Automatic Billing**    | Enable automated billing upon booking.                                                       |
 | **Schedule in the Past** | Allows scheduling billing for past dates (use with caution).                                 |
 
-### Golf Course
+### Golf course
 
-<figure><img src="../../.gitbook/assets/image (602).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (602).png" alt="Golf course settings for an Extra."><figcaption></figcaption></figure></div>
 
 This section is shown **only when an Extra is configured with the type&#x20;**_**Golf**_.\
 If the Extra has a different type, this section is not displayed.
@@ -103,21 +103,21 @@ Internal identifier that links this golf extra to its parent product in Tourpaq.
 
 These fields are **only relevant for Extras of type Golf** and are ignored for all other Extra types.
 
-### Behaviour Settings
+### Behaviour settings
 
 These settings control how the extra behaves in the booking process and what logic or restrictions apply to its use.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Behaviour settings for an Extra."><figcaption></figcaption></figure></div>
 
 <table><thead><tr><th width="307.3333740234375">Setting</th><th>Description</th></tr></thead><tbody><tr><td><strong>Autoselect in booking &#x26; offer</strong></td><td>Automatically selects this extra during booking and in special offers. Useful for mandatory or strongly recommended extras. The product will already be selected by default in a new booking. When using this feature, please make sure the product does not have a discount linked to it.</td></tr><tr><td><strong>Unremovable On Web Booking</strong></td><td>Prevents customers from removing the extra themselves during online booking. Ideal for required services.</td></tr><tr><td><strong>Unremovable On Customer Center</strong></td><td>Prevents removal by users in the customer self-service portal.</td></tr><tr><td><strong>Add price to deposit</strong></td><td>Includes the price of this extra in the booking deposit calculation.</td></tr><tr><td><strong>Include in basic price</strong></td><td>If checked, this will include the price of the extra in the basic prices of the booking.<br>This is often used in combination with "Autoselect in booking &#x26; offer.</td></tr><tr><td><strong>Add On All Pax</strong></td><td>If selected for one passenger in webbooking, the product will be automatically selected for all eligible pax of the booking; If removed, will be removed from all.</td></tr><tr><td><strong>Add only one per room</strong></td><td>Limits the extra to one per room regardless of the number of passengers.</td></tr><tr><td><strong>Available to book (API)</strong></td><td>Check whether a product should be shown as available to book in the Offer API, without adding it to the total.</td></tr></tbody></table>
 
 ***
 
-### Other Settings
+### Other settings
 
 These settings influence how the extra interacts with billing, privacy regulations, and system integrations.
 
-<figure><img src="../../.gitbook/assets/image (445).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (445).png" alt="Other settings for an Extra."><figcaption></figcaption></figure></div>
 
 | Setting                      | Description                                                                                                                                |
 | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -129,15 +129,15 @@ These settings influence how the extra interacts with billing, privacy regulatio
 
 ***
 
-### Board Supplement
+### Board supplement
 
-<figure><img src="../../.gitbook/assets/image (10) (3).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (10) (3).png" alt="Board Supplement settings for an Extra."><figcaption></figcaption></figure></div>
 
 {% hint style="info" %}
 The Board Supplement section is displayed only for Extras that belong to an Extras Category of type _Pension_. If the selected Extras Category has any other type, this section is hidden.
 {% endhint %}
 
-#### Fields Description
+#### Field descriptions
 
 **Board type**
 
@@ -181,12 +181,12 @@ Customers can upgrade either option to **All Inclusive**, but the upgrade price 
 
 To support this scenario, create two separate **Board Supplement Extras**:
 
-* The first Board Supplement will set the _Board basis filter_ to Breakfast to limit it to rooms with Breakfast as their board basis.&#x20;
+* The first Board Supplement will set the _Board basis filter_ to Breakfast to limit it to rooms with Breakfast as their board basis.
 * The second Board supplement will have the _Board basis filter_ set to Half board, to limit it to rooms with Half board as their Board basis.
 
 Using separate Board Supplement Extras with different **Board Basis Filters** ensures that Tourpaq displays the correct upgrade option and price based on the room's configured Board Basis.
 
-### Clone Extras
+### Clone extras
 
 The **Clone** functionality allows you to duplicate an existing extra configuration and reuse it for another product, period, or brand.
 
@@ -211,19 +211,19 @@ The Clone Extras feature is used to:
 * Duplicate pricing structures
 * Maintain standardized setup across brands
 
-#### How to Clone an Extra
+#### How to clone an Extra
 
 1\. Locate the Existing Extra - Navigate to: Extras → Search → Open the extra you want to duplicate.
 
 2.  Click “Clone” - Select the **Clone** option
 
-    <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Clone option for an Extra."><figcaption></figcaption></figure></div>
 3.  Select the code for the new Extras
 
-    <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Code selection for a cloned Extra."><figcaption></figcaption></figure></div>
 4.  Define Clone Settings
 
-    <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Clone settings for an Extra."><figcaption></figcaption></figure></div>
 
 You need to:
 
@@ -243,5 +243,3 @@ Important:
 * Confirm category
 * Test booking flow
 * Review communication rules
-
-***

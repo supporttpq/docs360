@@ -1,11 +1,11 @@
 # Add new Service Case
 
-#### **Overview**
+### **Overview**
 
 A **Service Case** can be created to log and manage customer complaints related to a specific booking.\
 This process ensures all relevant information is captured, and appropriate actions can be tracked until the case is resolved.
 
-#### **Steps to Create a New Service Case**
+### **Steps to Create a New Service Case**
 
 1. Navigate to: **Quality Management → Service Cases**.
 2. Click the **Create** button.
@@ -51,7 +51,7 @@ After entering the booking number, the system automatically populates booking in
 
 <figure><img src="../.gitbook/assets/image (234).png" alt=""><figcaption></figcaption></figure>
 
-#### **Usage Notes**
+### **Usage Notes**
 
 * Always verify the **brand** and **booking number** to ensure the service case is linked correctly.
 * Mandatory fields (e.g., **Reason for Complaint**) must be completed before saving.

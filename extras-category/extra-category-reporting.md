@@ -1,56 +1,58 @@
 # Extra Category Reporting
 
-#### Overview
+## Extra Category Reporting
+
+### Overview
 
 The **Extras Category Reporting** feature automatically generates and sends a list of passengers who purchased extras from a specific category. For example, it can send a report daily for passengers returning home 4 days after their trip. The report is sent as a PDF via email.
 
-#### Purpose
+### Purpose
 
-This functionality ensures your company has timely information about extras purchased by passengers, enabling better tracking, communication, and service follow-up.
+This functionality provides timely information about passenger extras. It supports tracking, communication, and service follow-up.
 
-#### Instructions
+### Requirements
 
-**1. Configuration**
+* Confirm with the Web Master that the Windows service scheduler runs.
+* Ensure the **Extras Category Reporting Service** is active.
 
-To enable Extras Reporting:
+### Configuration
 
-1. Confirm with the \[\[Web Master]] that the Windows service scheduler is running for your company.
-2. Ensure the **Extras Category Reporting Service** is active.
+#### Configure Email Center
 
-**2. Email Center Setup**
+In **Setup → E-mail Center**, configure the email sent by the service:
 
-Configure the email that the service will send:
-
-1. Navigate to **Setup → E-mail Center**.
-2. Select the relevant brand from the upper-right corner.
-3. Choose **Extra Category Reporting** in the **Email Type** dropdown.
-4. Fill in all required fields.
-5. **Activate** the email—if not activated, the report will not be sent.
-6. _(Optional)_ Include a confirmation link in the email:
+1. Select the relevant brand in the brand selector.
+2. Select **Extra Category Reporting** in the **Email Type** dropdown.
+3. Complete all required fields.
+4. Click **Activate**.
+5. Include a confirmation link if required:
 
 ```
 http://emailtracking.tourpaq.com/EmailConfirmation.aspx?messageID=[MessageID]
 ```
 
-**3. Scheduler Setup**
+The service does not send reports until the email is active.
 
-To add a new scheduler:
+#### Configure scheduler
 
-1. Navigate to **Extras Setup → Extras Categories → Edit**.
-2. Open the **Communication** tab.
-3. Click **Create** to add a new scheduler record.
+In **Extras Setup → Extras Categories → Edit**, create a scheduler record:
 
-> Example: This scheduler can send a daily report at 10:30 for passengers who purchased extras in this category and are returning home 4 days later.
+1. Open the [**Communication** tab](extra-category-overview/communication-tab.md).
+2. Click **Create**.
+3. Configure the scheduler record.
 
-**Note:** The service produces the report as a PDF file.
+For example, configure a daily 10:30 report. Include passengers returning home after four days.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (12).png" alt=""><figcaption></figcaption></figure>
+The service produces the report as a PDF file.
 
-**4. Viewing Sent Emails in E-ticket Overview**
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (12).png" alt="Communication tab showing a reporting scheduler record"><figcaption></figcaption></figure></div>
 
-1. Navigate to **Tickets → E-ticket Overview**.
-2. Select the period you want to review.
-3. Click **Show default communication email types** to see all types in the **Email Type** dropdown.
-4. Select **Extras Category Reporting** to view the emails sent.
+### View sent emails
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+In **Tickets → E-ticket Overview**, review sent reporting emails:
+
+1. Select the review period.
+2. Click **Show default communication email types**.
+3. Select **Extras Category Reporting** in the **Email Type** dropdown.
+
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="E-ticket Overview showing Extras Category Reporting emails"><figcaption></figcaption></figure></div>

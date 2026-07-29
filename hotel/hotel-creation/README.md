@@ -32,7 +32,7 @@ Other fields that are necessary for the hotel to work properly:
 * Standard room - main room type of the hotel
 * Status - set if the hotel is hidden or visible in the hotel dashboard
 * Facilities template - select a facility template from those available, which will allow the setting of the facilities available in the hotel from **the Web** tab. more information is available at [Facilities](../../facilities.md)
-* Hotel combination - allows for 2 or more hotels to be combined into 1, drawing room allotments from the hotels selected. for more information, please check [Hotel Combination](../../hotel-combination.md)
+* Hotel combination - allows for 2 or more hotels to be combined into 1, drawing room allotments from the hotels selected. For more information, see [Hotel Combination](../../hotel-combination.md).
 * Child price ages - age interval that benefits from the child price from the price list
 * Child ages for extra bed - age interval for children when taking into account the "extra bed child" from the room; if the age is outside of the interval, children will use an adult extra bed (overrides the age set in the base room type). If nothing is set, the child's ages for extra beds are not taken into consideration.
 * Adult hotel - sets an age limit preventing guests to book if there is a passenger with the age below limit
@@ -94,7 +94,7 @@ The header text for the "Stars" column can also be customized, but only when the
 
 ### Automatiic Billing
 
-For the autobilling feature, please check [Autobilling](../../autobilling/)
+For the autobilling feature, see [Autobilling](../../autobilling/).
 
 <figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -206,7 +206,7 @@ Used to sell the same room under different settings and prices. The shared allot
 
 Two room types are needed in the hotel for this feature.
 
-**Warning!** Only the room above will have real allotment, the other room taking allotment from this one.
+**Warning:** Only the room above will have real allotment, the other room taking allotment from this one.
 
 ### Allotments per day <a href="#allotments-per-day" id="allotments-per-day"></a>
 
@@ -220,19 +220,19 @@ Also, from the transport column, the number of rooms available for the transport
 
 ### Disc.Ex.Beds <a href="#discexbeds" id="discexbeds"></a>
 
-Used to define the discount received by the passengers that use an extra bed in a room. Please check [Extra Bed Discount](discount-extra-beds.md)
+Used to define the discount received by the passengers that use an extra bed in a room. See [Extra Bed Discount](discount-extra-beds.md).
 
 ### Room cost <a href="#room-cost" id="room-cost"></a>
 
-Used to define the amount paid by the agency to the hotel for the rooms. It is found on the contract between the hotel and agency. Please check [Room Cost](room-cost/)
+Used to define the amount paid by the agency to the hotel for the rooms. It is found on the contract between the hotel and agency. See [Room Cost](room-cost/).
 
 ### Ex. Beds Costs <a href="#exbeds-costs" id="exbeds-costs"></a>
 
-Used to define the cost of the extra bed paid by the agency. Please check [Extra Bed Costs](extra-beds-costs.md)
+Used to define the cost of the extra bed paid by the agency. See [Extra Bed Costs](extra-beds-costs.md).
 
 ### Special offers <a href="#special-offers" id="special-offers"></a>
 
-Used to define discounts offered by the hotel to the agency. Please check [Room Cost](room-cost/)
+Used to define discounts offered by the hotel to the agency. See [Room Cost](room-cost/).
 
 ### Photos <a href="#photos" id="photos"></a>
 
@@ -248,7 +248,7 @@ Adds layout to a hotel.
 
 More information is available in [Hotel Layout](hotel-layout.md)
 
-To use this feature, please contact Tourpaq Support.
+To use this feature, contact Tourpaq Support.
 
 ### Room numbers <a href="#room-numbers" id="room-numbers"></a>
 
@@ -262,7 +262,7 @@ Adds numbers to the rooms of a hotel with a layout.
 
 Used to configure the sending of lists with bookings made for the hotel.
 
-Please check [Hotel Reporting](communication/hotel-reporting.md)
+See [Hotel Reporting](communication/hotel-reporting.md).
 
 ### Deposit <a href="#deposit" id="deposit"></a>
 

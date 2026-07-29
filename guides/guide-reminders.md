@@ -1,21 +1,13 @@
 # Guide Reminders
 
-### **Overview**
+### Overview
 
 The **Guide Reminders** module allows guides and guide team members to create, send, and track reminders within the guide organization.\
 Each reminder consists of a message sent **from** one guide **to** another guide or guide team, with a defined **alarm date** and **status** to track whether the reminder is active or completed.
 
-The page displays all reminders accessible to the logged-in user and supports filtering, reviewing past reminders, and checking the status of scheduled notifications.
+The page displays reminders available to you. It supports filtering, reviewing past reminders, and checking scheduled-notification status.
 
-Access to this menu is **restricted**. It is available **only** for the following user types:
-
-* **Guide Master**
-* **Guide Teams**
-* **Sales Ledger**
-
-Users outside these roles will not see or access the Guide Documents module.
-
-### **Purpose**
+### Purpose
 
 This feature ensures that guides can coordinate tasks, share important notes, and set scheduled notifications for activities such as:
 
@@ -26,14 +18,24 @@ This feature ensures that guides can coordinate tasks, share important notes, an
 
 By providing a reminder overview, guides can easily track what has been scheduled, what requires attention, and whether a reminder has been completed or acknowledged.
 
-### **Instructions**
+### Requirements
 
-#### **1. Accessing Guide Reminders**&#x20;
+Access to this menu is **restricted**. It is available **only** for the following user types:
+
+* **Guide Master**
+* **Guide Teams**
+* **Sales Ledger**
+
+If your role is not listed, you cannot see or access the Guide Documents module.
+
+### Instructions
+
+#### 1. Access Guide Reminders
 
 1. Navigate to **Guide Reminders** in the main menu.
-2. The page shows all reminders the user is allowed to view, presented in a table format.
+2. Review the reminders available to you in the table.
 
-#### **2. Understanding the Fields**
+#### 2. Understand the fields
 
 <figure><img src="../.gitbook/assets/image (541).png" alt=""><figcaption></figcaption></figure>
 
@@ -46,7 +48,7 @@ By providing a reminder overview, guides can easily track what has been schedule
 | **Alarm Date**      | The scheduled time when the reminder should trigger or be noticed. |
 | **Status**          | Indicates whether the reminder is active or completed.             |
 
-#### **3. Filtering Reminders**
+#### 3. Filter reminders
 
 At the top of the page, two filters are available:
 
@@ -60,9 +62,9 @@ After selecting filters, click **Display** to refresh results.
 
 Use **Clear** to reset filters and show all reminders again.
 
-#### **4. Reviewing a Reminder**
+#### 4. Review a reminder
 
-Simply scan the table to check:
+Review the table to check:
 
 * Who sent the reminder
 * Who received it
@@ -71,9 +73,9 @@ Simply scan the table to check:
 * When the alarm is scheduled
 * Whether it has been marked as completed
 
-If a reminder has a **green icon**, it typically indicates a completed or acknowledged status.
+The completed or acknowledged status icon is green.
 
-#### **5. Adding or Editing Reminders**
+#### 5. Add or edit reminders
 
 Reminders can only be added from the Destination App by a guide team
 

@@ -1,6 +1,6 @@
 # Service Cases
 
-#### **Overview**
+### **Overview**
 
 The **Service Case Management** feature in Tourpaq helps handle customer complaints efficiently, ensuring that travelers have a positive experience even after returning from their trip.\
 It centralizes complaint handling in one interface, offering tools for tracking, responding, and analyzing customer issues.
@@ -9,7 +9,7 @@ It centralizes complaint handling in one interface, offering tools for tracking,
 
 ***
 
-#### **Purpose**
+### **Purpose**
 
 To provide a structured and efficient way of managing customer feedback and complaints by:
 
@@ -19,7 +19,7 @@ To provide a structured and efficient way of managing customer feedback and comp
 
 <figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-#### **Benefits**
+### **Benefits**
 
 * Intuitive, user-friendly interface.
 * Centralized data storage with full case history.
@@ -28,7 +28,7 @@ To provide a structured and efficient way of managing customer feedback and comp
 
 ***
 
-#### **Search Service Cases**
+### **Search Service Cases**
 
 You can locate and manage service cases using multiple filters.
 
@@ -52,7 +52,7 @@ Once all filters are selected, click **Display** to view the results.
 
 ***
 
-#### **Service Case Overview**
+### **Service Case Overview**
 
 The **Service Case Overview** section lists all service cases matching your filter criteria.\
 By default, the system displays service cases for **departures within the current year**, sorted in **reverse chronological order** based on creation date.
@@ -72,7 +72,7 @@ By default, the system displays service cases for **departures within the curren
 
 ***
 
-#### **Totals & Export Options**
+### **Totals & Export Options**
 
 At the bottom of the overview, a **Totals** section displays summary statistics related to the listed results (e.g., total number of cases, average resolution time).
 

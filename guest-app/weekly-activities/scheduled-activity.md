@@ -1,13 +1,13 @@
 # Scheduled Activity
 
-#### **Overview**
+### Overview
 
 The **Scheduled Activity** tab allows users to configure recurring or one-time activities for specific hotels and dates within a selected time range.\
 It provides more granular control compared to **Weekly Activity**, as each day of the week can have its own configuration — such as different times or service phone availability.
 
 This tab is typically used to plan and display activities or service phone hours visible in the **Guest App** for guests staying in those hotels.
 
-#### **Purpose**
+### Purpose
 
 The purpose of the **Scheduled Activity** configuration is to:
 
@@ -16,9 +16,9 @@ The purpose of the **Scheduled Activity** configuration is to:
 * Support guide and customer service visibility in the **Guest App**.
 * Synchronize service availability and timing for different resorts and hotels.
 
-#### **Form Fields**
+### Form fields
 
-<figure><img src="../../.gitbook/assets/image (435).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (435).png" alt=""><figcaption></figcaption></figure></div>
 
 | **Field**                | **Description**                                                                                      |
 | ------------------------ | ---------------------------------------------------------------------------------------------------- |
@@ -31,7 +31,7 @@ The purpose of the **Scheduled Activity** configuration is to:
 
 \*Fields marked with an asterisk (\*) are mandatory.
 
-#### **Daily Setup Table**
+#### Daily setup table
 
 Below the main fields, users can define specific configurations per **hotel** and **day of the week**.
 
@@ -50,7 +50,7 @@ Below the main fields, users can define specific configurations per **hotel** an
 
 This allows maximum flexibility — for example, a service can run daily for one hotel, but only twice a week for another.
 
-#### **Example**
+### Example
 
 In the screenshot above:
 
@@ -69,7 +69,7 @@ This setup ensures that guests staying at these hotels will see a consistent ser
 
 ***
 
-#### **Save or Cancel**
+### Save or cancel
 
 After all settings are configured:
 
@@ -78,7 +78,7 @@ After all settings are configured:
 
 ***
 
-#### **Visibility and Access**
+### Visibility and access
 
 As with Weekly Activities:
 

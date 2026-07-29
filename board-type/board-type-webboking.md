@@ -1,63 +1,57 @@
-# Board Type - Webboking
+# How to use a Board Type
 
-### How to create a board type extra and select it on webbbooking
+## How to use a Board Type
 
-#### 1. Create Extras for Board Types
+### 1. Create extras for Board Types
 
-* Create extras for different board types
+Create extras for the required board types.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Board Type extra configuration"><figcaption></figcaption></figure></div>
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt="Board Type extras list"><figcaption></figcaption></figure></div>
 
-#### 2. Create a Hotel Allotment
+### 2. Create a hotel allotment
 
-* Use one of the created board types to create a hotel allotment - Allotment should be created successfully.
+Create a hotel allotment using a board type extra. The allotment is created successfully.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Hotel allotment using a Board Type extra"><figcaption></figcaption></figure></div>
 
-#### 3. Create a Price List for the Allotment
+### 3. Assign a price list to the allotment
 
-*   Assign a price list to the hotel allotment - Allotment should be available with pricing.
+Assign a price list to the hotel allotment. The allotment is available with pricing.
 
-    <figure><img src="../.gitbook/assets/image (5) (1) (3).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (5) (1) (3).png" alt="Price list for a hotel allotment"><figcaption></figcaption></figure></div>
 
-#### 4. Access the Web Booking
+### 4. Open Webbooking
 
-*   Open the web booking platform
+Open the Webbooking platform.
 
-    <figure><img src="../.gitbook/assets/image (5) (1) (3).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (5) (1) (3).png" alt="Webbooking platform"><figcaption></figcaption></figure></div>
 
-#### 5. Add Passenger Details
+### 5. Add passenger details
 
-*   Enter details for passengers.
+Enter passenger details.
 
-    <figure><img src="../.gitbook/assets/image (6) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (6) (1) (2).png" alt="Passenger details in Webbooking"><figcaption></figcaption></figure></div>
 
-#### 6. Validate Extra Availability
+### 6. Confirm extra availability
 
-* Check if the extra appears in the list - Extra should be listed correctly.
+Confirm that the extra appears in the list.
 
-<figure><img src="../.gitbook/assets/image (7) (1) (3).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (7) (1) (3).png" alt="Board Type extra in the Webbooking list"><figcaption></figcaption></figure></div>
 
-***
+### 7. Finish the booking
 
-#### 9. Finish the Booking
+Finalize the booking. The booking is saved successfully.
 
-* Finalize the booking - Booking is saved successfully.
+### 8. Open the ticket
 
-***
+Open the generated ticket. The ticket shows the board type in the hotel section.
 
-#### 10. Open the Ticket
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (8) (5).png" alt="Board Type in the hotel section of a ticket"><figcaption></figcaption></figure></div>
 
-* Access the generated ticket - Ticket file should open and show the board type in the hotel section.
+### 9. Verify extra details in the ticket
 
-<figure><img src="../.gitbook/assets/image (8) (5).png" alt=""><figcaption></figcaption></figure>
+Verify that the ticket includes the extra details.
 
-***
-
-#### 11. Check Extra Details in Ticket
-
-* Verify that extra’s details are included - Details should be present.
-
-<figure><img src="../.gitbook/assets/image (9) (5).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (9) (5).png" alt="Board Type extra details in a ticket"><figcaption></figcaption></figure></div>

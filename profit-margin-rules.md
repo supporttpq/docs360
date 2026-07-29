@@ -54,7 +54,7 @@ This produces a scalable setup that directly feeds into the [Price List Generato
 Using the profit margin rule, all agencies can:
 
 * Configure complex profit structures without duplicate entries.
-* Adjust margins easily for specific destinations, hotels, or routes.
+* Adjust margins for specific destinations, hotels, or routes.
 * Automatically generate accurate, up-to-date **price lists**.
 * Reduce manual maintenance through **flexible**, **reusable**, and **automated** rules.
 
@@ -105,9 +105,9 @@ Each row represents an existing profit margin rule. The table contains the follo
 * **Create** — Opens a new page to create a profit margin rule. You can define all required parameters such as agency, destination, dates, and profit values.
 * **Scheduled Rules** — Indicates that a rule is planned to take effect in the future, replacing the current one.
 
-### **Example Scenario**
+### **Example scenario**
 
-#### **Creating New Rules**
+#### **Creating new rules**
 
 If a brand wants to apply a 15% profit margin for adult passengers traveling to Salzburg on `23-10-2029`, you would:
 
@@ -120,9 +120,9 @@ If a brand wants to apply a 15% profit margin for adult passengers traveling to 
 7. Mark **Is Percent** as true.
 8. Save the rule.
 
-The system will automatically apply these margins to all bookings that match the defined criteria.
+The system automatically applies these margins to all bookings that match the defined criteria.
 
-#### **Editing Existing Rules**
+#### **Editing existing rules**
 
 1. Click the **edit icon (pencil)** next to the rule you want to modify.
 2. Update the required fields in the edit dialog.
@@ -138,7 +138,7 @@ Additionally, the system supports defining different profit margins for differen
 
 There are two types of rules: **Transport Rules** and **Resort Rules**.
 
-For **Transport Rules**, users must:
+For **Transport Rules**, you must:
 
 * Select the Agency, Rule (Transport), Passenger, Arrival, Transport
 * Define **departure start** and **departure stop** intervals.
@@ -210,13 +210,13 @@ Based on the profit margin value, prices are calculated.
 * **Rule Updates**: If a rule is later updated and scheduled, it will overwrite manually updated values in the price list.
 * **Automatic Scheduling**: A Resort Rule can be scheduled automatically when new price lists are created for hotels in that resort.
 
-### Behavior of the Profit Margin Value
+### Behavior of the profit margin value
 
 The **profit margin value** only changes when it is manually updated through the **Profit Margin Rule**.\
 When a new value is saved in the Profit Margin Rule, it **overrides** any manually edited profit margin previously entered in the **Price List**.
 
-If other changes are made — such as adding new entities (which generate new price lists) or updating hotel costs — these actions will **not** alter the profit margin value.\
-In these cases, the system will simply **recalculate the final price** based on the manually adjusted profit margin defined by the user.
+If other changes are made—such as adding new entities (which generate new price lists) or updating hotel costs—these actions will **not** alter the profit margin value.\
+In these cases, the system **recalculates the final price** based on the manually adjusted profit margin defined by the user.
 
 #### Example:
 
@@ -238,7 +238,7 @@ In this case, PM1 is updated when:
 * Editing **Discounts, Supplements, or Extras**
 
 {% hint style="danger" %}
-Currently, the system supports both percentage-based and amount-based profit margins.
+The system supports both percentage-based and amount-based profit margins.
 
 Use the same margin type within a rule to avoid incorrect calculations.
 {% endhint %}

@@ -4,7 +4,7 @@ This section explains how to configure and manage images in the **Web Booking Se
 
 <figure><img src="../../.gitbook/assets/image (336).png" alt=""><figcaption></figcaption></figure>
 
-### Image Fields
+### Image fields
 
 | Field              | Description                                                                        | Usage                                                                             |
 | ------------------ | ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
@@ -15,19 +15,19 @@ This section explains how to configure and manage images in the **Web Booking Se
 | **Favicon**        | The small icon that appears in the browser tab next to the page title.             | Upload a small-sized, square icon (usually 16x16 or 32x32 pixels).                |
 | **Support Person** | An image representing customer support, shown next to help or contact information. | Should be a friendly and welcoming image to encourage user interaction.           |
 
-### Upload Instructions
+### Upload instructions
 
 * **Click** on the dashed box ("Click to browse or drag and drop here") to open a file browser and select an image.
 * **Drag and Drop** the image file directly into the dashed box.
 * Images should be **optimized** for web (small file sizes) to ensure fast page loading.
 
-#### Recommended Formats:
+#### Recommended formats
 
 * **PNG** for logos and icons (preferred for transparency).
 * **JPEG** for photos (like support person images) where transparency is not needed.
 * **ICO** for favicon (or PNG if supported).
 
-#### Size Recommendations:
+#### Size recommendations
 
 * **Logo**: \~250px width (responsive)
 * **Preloader**: Small and lightweight (\~100x100px or less)
@@ -36,7 +36,7 @@ This section explains how to configure and manage images in the **Web Booking Se
 * **Favicon**: 16x16px or 32x32px
 * **Support Person**: 200x200px or proportional depending on layout
 
-## Notes:
+### Notes
 
 * Replacing an existing image automatically updates the website; no need to manually clear cache unless instructed.
 * If no image is uploaded for a field, a default placeholder or no image may appear.

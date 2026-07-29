@@ -1,12 +1,12 @@
 # Vocabulary
 
-#### Overview
+### Overview
 
 The **Vocabulary** feature in the **Guest App** provides guests with a helpful list of basic words and expressions they can use during their vacation.\
 These keywords are configured in **Tourpaq Office**, under **Guest App → Vocabulary**, when logged in as a guide or admin.\
 The displayed vocabulary depends on the **country** associated with the guest’s booking, ensuring that the provided terms are relevant to the destination.
 
-#### Purpose
+### Purpose
 
 The purpose of the **Vocabulary** section is to help guests communicate more easily during their stay by offering simple, practical translations or keywords commonly used in the local language.\
 This enhances the overall travel experience and allows guests to engage more confidently with local people and services.
@@ -17,9 +17,9 @@ Typical examples include:
 * Common phrases (“How much does it cost?”, “Where is the beach?”)
 * Emergency or transport-related words (“Hospital”, “Taxi”, “Airport”)
 
-<figure><img src=".gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
-#### How to Use
+### How to use
 
 1. **Go to:** `Guest App / Vocabulary`
 2. **Click** **Create** to add a new entry.
@@ -33,9 +33,9 @@ Typical examples include:
 6. **Click Save:**
    * The new vocabulary entry will be displayed in the list and automatically shown in the Guest App for guests traveling to the selected country.
 
-<figure><img src=".gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
-#### Example: English–Danish Vocabulary
+### Example: English–Danish vocabulary
 
 | **Key (English)** | **Value (Danish)** |
 | ----------------- | ------------------ |

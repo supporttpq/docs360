@@ -2,7 +2,7 @@
 
 ## Overview
 
-When a booking is connected to an existing Amadeus PNR using **Assign PNR** or **Load PNR**, Tourpaq now copies the flight information directly from Amadeus into the booking.
+When a booking is connected to an existing Amadeus PNR using **Assign PNR** or **Load PNR**, Tourpaq copies the flight information directly from Amadeus into the booking.
 
 This ensures that the booking always reflects the actual flights stored in the airline reservation system, even when those flights are not available in Tourpaq's own flight inventory.
 
@@ -20,7 +20,7 @@ This enhancement ensures that the booking always displays the actual itinerary s
 
 ***
 
-## How it Works
+## How it works
 
 ### Assign PNR
 
@@ -56,7 +56,7 @@ Whenever **Load PNR** is performed:
 
 ***
 
-## System Behaviour
+## System behavior
 
 After a successful **Assign PNR** or **Load PNR** operation:
 
@@ -66,14 +66,14 @@ After a successful **Assign PNR** or **Load PNR** operation:
 * the displayed itinerary remains synchronized with the linked Amadeus reservation whenever **Load PNR** is executed
 
 {% hint style="warning" %}
-If changes are made later in Amadeus, the system will automatically check the PNR X days before departure (depending on the number set in System Setup) and update the reservation with the latest flight information.&#x20;
+If changes are made later in Amadeus, the system will automatically check the PNR X days before departure (depending on the number set in System Setup) and update the reservation with the latest flight information.
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/check pnr.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-**Example of workflow:**
+### Example workflow
 
 1. A flight reservation is created in Amadeus.
 2. A booking is later created in Tourpaq.
@@ -82,11 +82,11 @@ If changes are made later in Amadeus, the system will automatically check the PN
 This enhancement ensures that the booking always displays the actual itinerary stored in the linked Amadeus PNR.
 
 \
-The flights are booked directly into Amadeus.Later, the user creates the booking in Tourpaq and links the existing PNR using **Assign PNR**.
+Flights are booked directly into Amadeus. Later, create the booking in Tourpaq and link the existing PNR using **Assign PNR**.
 
 Although the same flights are no longer available in Tourpaq's flight inventory, the booking displays the flights exactly as they exist in Amadeus.
 
-If the airline subsequently changes the itinerary, the user simply performs **Load PNR**, and the updated flight details are copied into the booking and shown on the ticket.
+If the airline subsequently changes the itinerary, perform **Load PNR**. Tourpaq copies the updated flight details into the booking and shows them on the ticket.
 
 ***
 

@@ -1,13 +1,13 @@
 # Reasons
 
-#### **Overview**
+### **Overview**
 
 The **Service Case Reasons** menu allows users to **define, modify, and delete** reasons for customer complaints.\
 These reasons can then be selected when creating or editing service cases, ensuring consistency in categorizing complaints.
 
 ***
 
-#### **Purpose**
+### **Purpose**
 
 * To maintain a standardized list of complaint reasons across all service cases.
 * To enable quick selection of relevant reasons when logging a new service case.
@@ -15,7 +15,7 @@ These reasons can then be selected when creating or editing service cases, ensur
 
 <figure><img src="../.gitbook/assets/image (27) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### **Manage Service Case Reasons**
+### **Manage Service Case Reasons**
 
 **Viewing Reasons**
 
@@ -42,7 +42,7 @@ These reasons can then be selected when creating or editing service cases, ensur
 
 <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (30).png" alt=""><figcaption></figcaption></figure>
 
-#### **Usage Notes**
+### **Usage Notes**
 
 * Always review the existing reasons before creating new ones to avoid duplicates.
 * Editing a reason updates it globally, so all past and future service cases using that reason will reflect the change.

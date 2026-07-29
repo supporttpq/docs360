@@ -1,5 +1,7 @@
 # Edit Extra Category
 
+## Edit Extra Category
+
 ### Overview
 
 The **Extras Category** page is used to create and manage groups of optional products or services (extras) that can be sold alongside a main product (e.g., accommodation, transport, package).
@@ -8,11 +10,9 @@ An _Extras Category_ helps organize related extras (e.g., Activities, Insurance,
 
 This page contains three main sections:
 
-1. **General Information**&#x20;
+1. **General Information**
 2. **Filtering Options**
 3. **Settings**
-
-***
 
 ### Purpose
 
@@ -31,19 +31,17 @@ Proper configuration ensures:
 * Clear communication when products are sold out.
 * Organized reporting and statistics.
 
-***
-
-### Section-by-Section Field Explanation
+### Field explanations
 
 {% hint style="info" %}
 Texts from general settings can be customized per active brand.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (688).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (688).png" alt="Edit Extra Category page"><figcaption></figcaption></figure></div>
 
-#### A. General Information
+#### General information
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="General information fields"><figcaption></figcaption></figure></div>
 
 **Name** - Internal name of the extras category.
 
@@ -59,7 +57,7 @@ Texts from general settings can be customized per active brand.
 
 * **Purpose:** Improves customer communication instead of simply hiding the product.
 
-&#x20;**Description** - Rich text field allowing formatted content.
+**Description** - Rich text field allowing formatted content.
 
 * **Purpose:** Provides a detailed explanation of the category.
 * **Where displayed:** Web booking or internal interfaces (depending on setup).
@@ -75,11 +73,11 @@ Texts from general settings can be customized per active brand.
 * **Purpose:** Enhances visual presentation in Web Booking.
 * **Action:** Click **Upload photo**.
 
-#### B. Filtering Options
+#### Filtering options
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Filtering options fields"><figcaption></figcaption></figure></div>
 
-&#x20;**Display in Remember Extras** - Allows this category to appear in the "Remember Extras" functionality.
+**Display in Remember Extras** - Allows this category to appear in the "Remember Extras" functionality.
 
 **Use for Extras Statistic** - Includes this category in statistical reporting.
 
@@ -87,9 +85,9 @@ Texts from general settings can be customized per active brand.
 
 **Hide as filter on lists** - Prevents the category from appearing as a filter option in listings.
 
-#### C. Settings
+#### Settings
 
-<figure><img src="../../.gitbook/assets/image (781).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (781).png" alt="Settings fields"><figcaption></figcaption></figure></div>
 
 This section controls operational logic.
 
@@ -118,7 +116,7 @@ Ticket Category - Connects extras to ticketing logic
 
 * **Default:** None
 
-Round Rule -  If a round rule is specified, then it is applied to the price before it is used in a booking. If the price is a per-day price, the round rule is applied after the full price for the booking is calculated.
+Round Rule - If a round rule is specified, then it is applied to the price before it is used in a booking. If the price is a per-day price, the round rule is applied after the full price for the booking is calculated.
 
 Hide for Customer - If checked, this will hide the extras on the ticket, in webbooking, and in customer center. This is often combined with " Include in Basic Price", which is set on the Extras.
 
@@ -141,7 +139,7 @@ If "Order extras on e-ticket" is checked, the extras shall be sorted according t
 The Extra category order does not affect the order of Travel Insurance and Cancellation Insurance.
 {% endhint %}
 
-Days after booking category locks -  Number of days after booking when changes are no longer allowed.
+Days after booking category locks - Number of days after booking when changes are no longer allowed.
 
 Link to column in transport - Shows allotment for “linked to transport” extras in the transport selection pop-up.
 
@@ -151,7 +149,7 @@ Show description & photo opened in WebBooking - Automatically expands descriptio
 
 * **Checkbox**
 
-All stay days must be available - If selected, the extra is only eligible if it is available for the full booking period.&#x20;
+All stay days must be available - If selected, the extra is only eligible if it is available for the full booking period.
 
 * **Checkbox**
 
@@ -163,7 +161,7 @@ Stop default product selection for all passengers in WB - Prevents automatic sel
 
 * **Checkbox**
 
-&#x20;Accepts multiple product selection - Allows customers to select more than one extra from this category.
+Accepts multiple product selection - Allows customers to select more than one extra from this category.
 
 * **Checkbox**
 

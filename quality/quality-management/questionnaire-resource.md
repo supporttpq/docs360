@@ -14,7 +14,7 @@ To define **which travelers** (based on their agency, travel period, and transpo
 
 ***
 
-### Screen Elements
+### Screen elements
 
 | Column          | Description                                                                                                                                                                                        |
 | --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -27,7 +27,7 @@ To define **which travelers** (based on their agency, travel period, and transpo
 
 ### Actions
 
-#### &#x20;Create Button
+#### Create button
 
 * Opens a form to **add a new survey resource rule**.
 
@@ -38,19 +38,17 @@ To define **which travelers** (based on their agency, travel period, and transpo
   * Date interval (arrival period)
   * (Optional) Transport, Resort, Hotel, Room
 
-#### 🗑️ Delete Icon
+#### Delete icon
 
 * Removes the survey resource rule.
 
 ***
 
-### Best Practices
+### Best practices
 
 * Always define **non-overlapping intervals** to prevent multiple surveys from being sent to the same passenger.
 * If you work with multiple brands or transport types, use **multiple entries** to target them properly.
 * Regularly review and **update intervals** before high season to keep the survey distribution relevant.
-
-
 
 ### Overview - Question resources
 
@@ -68,7 +66,7 @@ Each row in this view maps a **question to a specific logic condition**, such as
 
 ***
 
-### Interface Explanation
+### Interface explanation
 
 | Column                | Description                                                                                                                                                      |
 | --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -82,19 +80,21 @@ Each row in this view maps a **question to a specific logic condition**, such as
 
 ### Actions
 
-#### Create Button
+#### Create button
 
 Opens a form to add a new question resource. You’ll define:
 
 <figure><img src="../../.gitbook/assets/image (222).png" alt=""><figcaption></figcaption></figure>
 
-* Question - select question
-* Show only if on related question - Cannot set this for "free text answer" question. Please do not condition listing of one question to a question just before it. They should be listed on separate screens under Web Customer Center. This usually means they should be 3 questions distance apart.
-* It is given this accepted response - allow the desired response depending the selected question
-* Rooms - select the room type
+* **Question** - Select a question.
+* **Show only if on related question** - Cannot set this for a "free text answer" question. Do not condition the listing of one question on the question immediately before it. List them on separate screens under **Web Customer Center**. This usually means they should be three questions apart.
+* **It is given this accepted response** - Allow the desired response, based on the selected question.
+* **Rooms** - Select the room type.
 
-#### 🗑️ Delete Button
+#### 🗑️ Delete button
 
-Removes the question resource from the list. ⚠️ Use with care — this will remove the question from being asked in future surveys tied to this schema.
+Removes the question resource from the list.
+
+⚠️ Use with care—this removes the question from future surveys tied to this schema.
 
 ***

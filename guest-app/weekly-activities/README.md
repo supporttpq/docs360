@@ -1,12 +1,12 @@
 # Weekly Activities
 
-#### **Overview**
+### Overview
 
 The **Weekly Activities** page provides an overview of all recurring activities configured for different resorts.\
 These activities are defined from **Guest App → Weekly Activities** and can also be viewed by **Guide Users** who have access to the assigned resorts.\
 Each record shows when and where a weekly activity takes place, helping agencies and guides coordinate resort events efficiently.
 
-#### **Purpose**
+### Purpose
 
 The purpose of the **Weekly Activities** page is to:
 
@@ -15,17 +15,17 @@ The purpose of the **Weekly Activities** page is to:
 * Provide a structured overview of activities (e.g., welcome meetings, excursions) for each resort and hotel.
 * Support consistent communication of activities to guests through the Guest App.
 
-#### **User Access**
+### User access
 
 * The page can be accessed by both **Admin** and **Guide Users**.
 * A **Guide User** can only see a weekly activity if they have access to **all the resorts** assigned to that specific activity.\
   This ensures guides only view and manage events relevant to their assigned destinations.
 
-#### **How to Use**
+### How to use
 
-**View Existing Activities**
+#### View existing activities
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 The table lists all configured weekly activities along with their main details:
 
@@ -40,7 +40,7 @@ The table lists all configured weekly activities along with their main details:
 | **Hotel Name**            | One or more hotels connected to the activity.                           |
 | **Delete**                | Allows the removal of an existing activity.                             |
 
-**Create a New Activity**
+#### Create a new activity
 
 1. Click **Create** in the upper-right corner.
 2. Complete the activity details:
@@ -55,7 +55,7 @@ The table lists all configured weekly activities along with their main details:
 
 ***
 
-**Filter and Search**
+#### Filter and search
 
 Use the search bar and filters at the top of the page to find specific activities:
 
@@ -65,7 +65,7 @@ Use the search bar and filters at the top of the page to find specific activitie
 
 ***
 
-**Delete an Activity**
+#### Delete an activity
 
 To remove an activity:
 
@@ -74,7 +74,7 @@ To remove an activity:
 
 ***
 
-#### **Example Use Case**
+### Example use case
 
 A **Guide User** in Tenerife creates a _Welcome Meeting_ that takes place every Monday at 10:00 between _01-11-2025_ and _31-03-2026_.\
 Because the guide has access to all resorts linked to this activity, it will appear both in the **Weekly Activities** list and the **Guest App** for guests staying in those hotels.

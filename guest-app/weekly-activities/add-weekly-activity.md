@@ -1,6 +1,6 @@
 # Add Weekly Activity
 
-#### **Overview**
+### Overview
 
 The **Weekly Activities** page displays all recurring events configured for each resort.\
 These activities are initially defined from **Guest App → Weekly Activities** and can also be managed from this section by authorized users.\
@@ -8,7 +8,7 @@ Both **Admin** and **Guide Users** can view weekly activities depending on their
 
 ***
 
-#### **Purpose**
+### Purpose
 
 The purpose of the **Weekly Activities** module is to:
 
@@ -19,7 +19,7 @@ The purpose of the **Weekly Activities** module is to:
 
 ***
 
-#### **User Access**
+### User access
 
 * **Admin Users** can view and manage all weekly activities across all agencies and resorts.
 * **Guide Users** can only see weekly activities **if they have access to all the resorts assigned** to that specific activity.\
@@ -27,16 +27,16 @@ The purpose of the **Weekly Activities** module is to:
 
 ***
 
-#### **Add Weekly Activity**
+### Add weekly activity
 
 When clicking **Create**, the **Add Weekly Activity** form opens.\
 This is where a user can define all parameters of the new weekly activity.
 
 ***
 
-**Weekly Activity Fields**
+#### Weekly activity fields
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 | **Field**         | **Description**                                                  |
 | ----------------- | ---------------------------------------------------------------- |
@@ -56,7 +56,7 @@ Click **Cancel** to discard changes.
 
 ***
 
-#### **Example**
+#### Example
 
 In the example above, an activity titled **“Christmas Season”** is configured as follows:
 
@@ -72,7 +72,7 @@ This means the activity will be visible in the Guest App every Saturday in Decem
 
 ***
 
-#### **Relation to Guest App → Weekly Activities**
+### Relation to Guest App → Weekly Activities
 
 The data created or edited in this section is synchronized with the **Guest App → Weekly Activities** module.\
 Guests can view these activities in their app during their stay, based on their resort and hotel selection.\

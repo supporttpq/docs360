@@ -4,7 +4,7 @@ This section describes how to customize the **visual appearance** of the web boo
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (14).png" alt=""><figcaption></figcaption></figure>
 
-### Color Palette
+### Color palette
 
 | Property                | Value     | Description                     |
 | ----------------------- | --------- | ------------------------------- |
@@ -55,7 +55,7 @@ This section describes how to customize the **visual appearance** of the web boo
 
 ***
 
-### Preloader and Icons
+### Preloader and icons
 
 | Property              | Value                        | Description              |
 | --------------------- | ---------------------------- | ------------------------ |
@@ -67,7 +67,7 @@ This section describes how to customize the **visual appearance** of the web boo
 
 ***
 
-### Notes:
+### Notes
 
 * Properties marked with the checkbox "IS URL" in the source are file paths for images.
 * Hex codes represent standard color values for UI consistency.

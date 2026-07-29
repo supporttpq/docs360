@@ -1,13 +1,13 @@
 # Questionnaire Results
 
-#### **Overview**
+### **Overview**
 
 The **Questionnaire Results** dashboard displays survey outcomes collected from passengers regarding different aspects of their travel experience.\
 The results help evaluate customer satisfaction across the journey — from airport experience to hotel quality — using ratings and comments gathered from submitted questionnaires.
 
 The ratings are typically shown on a **1–5 scale**, where **1** represents _very dissatisfied_ and **5** represents _very satisfied_.
 
-#### **Purpose**
+### **Purpose**
 
 To provide an overview of passenger feedback, helping travel agencies and brands:
 
@@ -17,7 +17,7 @@ To provide an overview of passenger feedback, helping travel agencies and brands
 
 <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (6).png" alt=""><figcaption></figcaption></figure>
 
-#### **Dashboard Structure**
+### **Dashboard Structure**
 
 | **Section**                                | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -29,7 +29,7 @@ To provide an overview of passenger feedback, helping travel agencies and brands
 
 <figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### **Usage Notes**
+### **Usage Notes**
 
 * Use filters to analyze results for a specific brand, destination, or season.
 * The **Average** tab provides an immediate overview of satisfaction scores.

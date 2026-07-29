@@ -2,7 +2,7 @@
 
 Available to Admin user type.
 
-To use this feature, please contact Tourpaq Support.
+To use this feature, contact Tourpaq Support.
 
 This feature enables the managing of passenger transfer between arrivals and resort.
 

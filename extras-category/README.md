@@ -1,16 +1,20 @@
 # Extras Category
 
-### Overview
+## Extras Category
 
-Applies to Administrator
+### Overview
 
 Extras categories are mandatory in the extras definition process. So in order to have optional services/products that a customer can book: like transfer, catering, pension, rental car, etc, first, an extra category needs to be created.
 
 The _Extras Category_ section provides administrators with a structured interface to manage optional services or items that can be added to bookings or reservations. These extras can range from luggage options to parking or VIP services, each with custom visibility and behavior settings.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (58).png" alt=""><figcaption></figcaption></figure>
+### Requirements
 
-### Fields&#x20;
+Administrator access is required.
+
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (58).png" alt="Extras Category page"><figcaption></figcaption></figure></div>
+
+### Fields
 
 | **Field Name**                 | **Description**                                                                              |
 | ------------------------------ | -------------------------------------------------------------------------------------------- |
@@ -21,7 +25,7 @@ The _Extras Category_ section provides administrators with a structured interfac
 | **Use for Extras Statistics**  | Determines if data on this extra is collected for statistical reporting.                     |
 | **Behavior on Web**            | Indicates how and when the extra is shown in the online booking interface.                   |
 
-### Editing or Deleting an Extra
+### Edit or delete an extra
 
-* **Edit**: Click the name of the extras. Anew page will open to edit the Rxtras Category
+* **Edit**: Click the extra name. A new page opens to edit the Extras Category.
 * **Delete**: Click the trash icon. A confirmation pop-up ensures changes are intentional.

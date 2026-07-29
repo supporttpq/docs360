@@ -1,16 +1,14 @@
-# Guide Names
+# Guide names
 
-&#x20;
-
-#### **Overview**
+### Overview
 
 The **Guide Names** section manages all guides team that can be assigned to travel programs. Each guide team has login credentials, personal details, and company associations.
 
-#### **Purpose**
+### Purpose
 
 This section ensures that guides team are properly registered in the system, making it possible to assign them to tours, manage their access, and track their activity (e.g., last login).
 
-#### **Preconditions**
+### Requirements
 
 * The user must have admin rights or permissions to manage guides team.
 * Information for the guide team (name, company, login credentials) must be available.
@@ -18,7 +16,7 @@ This section ensures that guides team are properly registered in the system, mak
 
 <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (7).png" alt=""><figcaption></figcaption></figure>
 
-#### **Instructions**
+### Instructions
 
 1. Navigate to **Guide Names** in the system.
 2. Review the existing list of guide team:

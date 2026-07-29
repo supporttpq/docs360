@@ -1,9 +1,11 @@
 # Daily Programs
 
+## Daily Programs
+
 ### Overview
 
-The **Daily Programs** module allows you to manage and organize daily itineraries associated with different travel products.\
-Each program is defined with a unique code, name, and validity interval.&#x20;
+The **Daily Programs** module manages and organizes daily itineraries associated with different travel products.\
+Each program is defined with a unique code, name, and validity interval.
 
 ### Purpose
 
@@ -11,16 +13,18 @@ Each program is defined with a unique code, name, and validity interval.&#x20;
 * To ensure that programs are valid only during defined travel periods.
 * To simplify the management of multiple programs across different destinations.
 
-### Preconditions
+### Requirements
 
-* User must have permissions to view and manage daily programs.
+* Permissions to view and manage Daily Programs.
 * Programs should be linked to relevant offers or packages where applicable.
 
-<figure><img src=".gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+### Interface overview
+
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1).png" alt="Daily Programs overview page"><figcaption></figcaption></figure></div>
 
 #### Filters
 
-At the top of the page, you can filter daily programs by:
+Filter Daily Programs by:
 
 * **Code** – Enter the program’s unique code.
 * **List name** – Search by program name.
@@ -28,7 +32,7 @@ At the top of the page, you can filter daily programs by:
 * **Display** – Applies the selected filters.
 * **Clear** – Resets all filters.
 
-#### Table Columns
+#### Table columns
 
 | Column       | Description                                           |
 | ------------ | ----------------------------------------------------- |
@@ -44,22 +48,20 @@ At the top of the page, you can filter daily programs by:
 
 #### Pagination
 
-At the bottom of the table, you can select how many records to display per page (e.g., 25 / page).
+Select the number of records displayed per page, for example 25.
 
+### Create a daily program
 
-
-## Create New Daily Program
-
-### Overview
+#### Overview
 
 The **New Daily Program** page is used to create and configure a new daily itinerary.\
 Each program must have a unique code, a descriptive name, and a validity period (start and end date).
 
 This information defines the availability of the program and ensures that it can be linked to travel offers and packages within the system.
 
-### Fields Description
+#### Field descriptions
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="New Daily Program fields"><figcaption></figcaption></figure></div>
 
 | Field            | Description                                                | Notes                                           |
 | ---------------- | ---------------------------------------------------------- | ----------------------------------------------- |
@@ -70,23 +72,22 @@ This information defines the availability of the program and ensures that it can
 
 \*Mandatory fields must be completed before saving.
 
-### Workflow
+#### Workflow
 
 1. Go to **Daily Programs** → **Create**.
-2. Fill in the required fields:
-   * Enter a unique **Code**.
-   * Provide a **Name** for the program.
-   * Set a **Start Date** and **End Date**.
-3. Click **Save** to create the program.
-4. Once saved, the program will appear in the **Daily Programs** list and can be further edited or linked to offers.
+2. Enter a unique **Code**.
+3. Enter a **Name**.
+4. Set **Start Date**.
+5. Set **End Date**.
+6. Click **Save**.
 
-## **Daily Program – Days Tab**&#x20;
+The program appears in the **Daily Programs** list after saving. It can then be edited or linked to offers.
 
-The **Days** tab allows you to define the daily itinerary for a program. Each row represents one day, with details about planned activities, descriptions, and related photos. Below is an explanation of each field:
+### Days tab
 
-***
+The **Days** tab defines the daily itinerary for a program. Each row represents one day.
 
-#### **Fields Overview**
+#### Field descriptions
 
 1. **Day No.**
    * Represents the sequential number of the day in the program (e.g., 1 for the first day, 2 for the second).
@@ -108,9 +109,7 @@ The **Days** tab allows you to define the daily itinerary for a program. Each ro
    * Clicking **View Photos** opens the photo gallery for the selected day.
    * Helps visually represent what the participants will experience.
 
-***
-
-#### **Actions**
+#### Actions
 
 * **Edit (✎ icon)**\
   Opens the edit mode for the selected day, allowing you to update the title, description, location, and photos.
@@ -119,13 +118,11 @@ The **Days** tab allows you to define the daily itinerary for a program. Each ro
 * **Add Day (button)**\
   Creates a new entry in the daily program. The system will automatically assign the next available **Day No.**, but this can be adjusted.
 
+### Resources
 
+Resources assign specific availability to the Daily Program.
 
-## Resources Section
-
-This section allows the user to assign specific resources to the daily program.&#x20;
-
-### **Fields under Resources:**
+#### Field descriptions
 
 * **Arrivals**
   * Dropdown list where you can select arrival airports

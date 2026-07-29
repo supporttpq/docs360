@@ -1,14 +1,14 @@
 # Extra supplier
 
-### **Overview / Purpose**
+### Overview
 
 Extra Suppliers represent providers of destination services, such as excursions, transfers, or other add-ons. They need an **Extra Supplier user type** to manage their offerings, receive notifications, and interact with bookings through the system.
 
 ***
 
-### **How It Works**
+### How it works
 
-#### **1. Create Extra Supplier User**
+#### 1. Create extra supplier user
 
 1. Navigate to **Users → Users**.
 2. Click **New User**.
@@ -22,7 +22,7 @@ Extra Suppliers represent providers of destination services, such as excursions,
    * Any **additional permissions or settings** required for the role.
 4. Click **Save**.
 
-#### **2. Create Extra Supplier Record**
+#### 2. Create extra supplier record
 
 1. Go to **Users → Suppliers**.
 2. Click **Create New Supplier**.
@@ -33,20 +33,20 @@ Extra Suppliers represent providers of destination services, such as excursions,
    * **Reservation Department Email** (used for dynamic transfer confirmations, if required)
 4. Click **Save**.
 
-#### **3. Assign Services**
+#### 3. Assign services
 
 * Once created, the Extra Supplier can manage lists of extras, tee times, or destination services as configured by the system administrator.
 
 <figure><img src="../.gitbook/assets/image (34) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Click on insert.&#x20;
+Click on insert.
 
-Find the new supplier and edit it&#x20;
+Find the new supplier and edit it
 
-Add the lists that the supplier has available and the product categories.&#x20;
+Add the lists that the supplier has available and the product categories.
 
 <figure><img src="../.gitbook/assets/image (35) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Set the extra schedulers. These are the same as the communication from Extras.&#x20;
+Set the extra schedulers. These are the same as the communication from Extras.
 
 Click on update

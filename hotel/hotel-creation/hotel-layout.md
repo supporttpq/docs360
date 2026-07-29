@@ -124,33 +124,33 @@ To add rooms and decor:
 
 <figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-**B. Change Layout of a Hotel**
+**B. Change the layout of a hotel**
 
 To change the layout of a hotel, follow the procedure below:
 
-1.  Upload a new layout element of type **Hotel** with the new layout image.&#x20;
+1.  Upload a new layout element of type **Hotel** with the new layout image.
 
     <figure><img src="../../.gitbook/assets/layout elements.png" alt=""><figcaption></figcaption></figure>
-2.  Open the **Layout** section in the Hotel menu.&#x20;
+2.  Open the **Layout** section in the Hotel menu.
 
     <figure><img src="../../.gitbook/assets/layout hotel.png" alt=""><figcaption></figcaption></figure>
 3. Select the new layout element.
-   *   This is usually the last layout element in the list.&#x20;
+   *   This is usually the last layout element in the list.
 
        <figure><img src="../../.gitbook/assets/select layout.png" alt=""><figcaption></figcaption></figure>
-4.  Move the room icons around so they match the new layout image.&#x20;
+4.  Move the room icons around so they match the new layout image.
 
     <figure><img src="../../.gitbook/assets/move room.png" alt=""><figcaption></figcaption></figure>
 5. Add additional room icons if needed.
-6.  Save the changes.&#x20;
+6.  Save the changes.
 
     <figure><img src="../../.gitbook/assets/save layout.png" alt=""><figcaption></figcaption></figure>
 
-### Important Notes  <a href="#important-notes" id="important-notes"></a>
+### Important notes <a href="#important-notes" id="important-notes"></a>
 
-When changing to a new layout image, the existing room icons may appear shifted. They simply need to be rearranged on the new image.
+When changing to a new layout image, the existing room icons may appear shifted. Rearrange them on the new image.
 
-You may also add additional room icons if required.
+Add room icons if required.
 
 Changing the layout will not affect existing bookings. However, room icons cannot be deleted if bookings have already been made for those room numbers.
 {% endstep %}

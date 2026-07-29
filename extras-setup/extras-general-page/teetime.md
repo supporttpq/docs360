@@ -1,13 +1,13 @@
 # Teetime
 
-### **Overview**
+## Teetime
 
-\
+### Overview
+
 The _TeeTime_ functionality allows administrators to define time-based availability schedules for specific products—typically those that need hourly or daily booking slots, such as golf tee times, spa appointments, or guided tours. TeeTimes can be configured as regular products in **Extras Setup → Extras**, but they use a **Generic Allotment Type**, which enables advanced scheduling and slot control.
 
-### **Purpose**
+### Purpose
 
-\
 TeeTime helps agencies manage products that depend on time availability by:
 
 * Defining exact booking intervals and durations.
@@ -17,9 +17,9 @@ TeeTime helps agencies manage products that depend on time availability by:
 
 This ensures that availability is accurately reflected for both back-office users and customers booking through the web or mobile app.
 
-### Tee Time - Basic Setup Field
+### Tee Time basic setup fields
 
-<figure><img src="../../../.gitbook/assets/image (488).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (488).png" alt="Tee Time basic setup fields"><figcaption></figcaption></figure></div>
 
 | **Field Name**              | **Description**                                                                                                           |
 | --------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
@@ -44,7 +44,7 @@ This ensures that availability is accurately reflected for both back-office user
 | **Show supplier on ticket** | Displays supplier name on customer-facing documents such as vouchers or tickets.                                          |
 | **Display allotment**       | Shows the remaining number of tee time slots to the user (internal or external depending on configuration).               |
 
-**How to Use**
+#### How to use
 
 **1. Create a TeeTime Product**
 
@@ -53,7 +53,7 @@ This ensures that availability is accurately reflected for both back-office user
 3. In the **Allotment Type** field, select **Generic Allotment Type**.\
    This enables the TeeTime-specific settings listed below.
 
-**TeeTime Settings:**
+#### TeeTime settings
 
 * **Pax limit** – Maximum number of products a guest can book in total.
 * **Limit per day** – Maximum number of products a guest can book per day.
@@ -61,17 +61,17 @@ This ensures that availability is accurately reflected for both back-office user
 * **Latitude / Longitude** – Used to calculate sunrise and sunset times for displaying in Office or on the web.
 * **Product Parent ID** – Used to link products that share the same allotment across multiple companies.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (55).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (55).png" alt="TeeTime settings"><figcaption></figcaption></figure></div>
 
 {% hint style="warning" %}
 **Note:** The Extra Category must be set as **TeeTime Category Type** for the product to function correctly.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (3).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (3).png" alt="TeeTime Category Type setting"><figcaption></figcaption></figure></div>
 
-### **Tee Time Rules**
+### Tee Time rules
 
-<figure><img src="../../../.gitbook/assets/image (489).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (489).png" alt="Tee Time rules"><figcaption></figcaption></figure></div>
 
 | **Field Name**            | **Description**                                                                                                                                                                              |
 | ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -83,20 +83,20 @@ This ensures that availability is accurately reflected for both back-office user
 | **Only first week(s)**    | Allow to select Tee Time only on the first (n) week(s).                                                                                                                                      |
 | **Limit Per Day**         | Maximum number of times this tee time can be booked per day (e.g., 1 = only once per day).                                                                                                   |
 | **Limit before hour**     | Restricts booking availability: **value = number of hours before**, plus an optional **cut-off time**. For example: “2 / 11:00” means bookings close _2 hours before 11:00_.                 |
-| **First available price** | When enabled, the system will automatically show the earliest available tee time price instead of the exact slot price.                                                                      |
+| **First available price** | When enabled, the system automatically shows the earliest available tee time price instead of the exact slot price.                                                                          |
 | **Requires confirmation** | Booking requires manual confirmation from staff or supplier before becoming valid.                                                                                                           |
 
 ### Prices <a href="#prices" id="prices"></a>
 
 Teetime products draw their cost and price from **Generic Product Price Rule**, any value inserted in the Price tab will be disregarded. But a price line is required to enable the product to be sold. The priceline should look like this:
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Generic Product Price Rule price line"><figcaption></figcaption></figure></div>
 
 It is similar with the seating setting.
 
 Real price of the product is set in **Extras Setup/Generic Product Price Rule**.
 
-<figure><img src="../../../.gitbook/assets/image (144).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (144).png" alt="Generic Product Price Rule"><figcaption></figcaption></figure></div>
 
 TeeTimes products appear in the **Tee Time Extras Lists**.
 
@@ -104,13 +104,13 @@ For this to work, the product needs to have a supplier assigned. The supplier ca
 
 ### Special settings <a href="#special-settings" id="special-settings"></a>
 
-**Generic Allotment**
+#### Generic Allotment
 
 The TeeTime allotment defines when and how often the product is available.
 
-<figure><img src="../../../.gitbook/assets/image (145).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (145).png" alt="Generic Allotment settings"><figcaption></figcaption></figure></div>
 
-**Daily Allotments**
+#### Daily allotments
 
 * **Frequency** – Number of days in the recurring availability pattern.
 * **Daily Frequency** – Defines when during the day bookings can be made:
@@ -119,37 +119,37 @@ The TeeTime allotment defines when and how often the product is available.
 * **Duration** – Total time span during which the product is available (e.g., 09:00–18:00).
 * **Allotment** – Number of available items per slot (e.g., if set to 4 and frequency is 30 minutes, 4 slots open every 30 minutes).
 
-<figure><img src="../../../.gitbook/assets/image (146).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (146).png" alt="Daily allotment settings"><figcaption></figcaption></figure></div>
 
 **Example:**\
 If the product is available every 30 minutes between 09:00–19:00 with an allotment of 4, there will be 20 available slots per day (one every 30 minutes).
 
-<figure><img src="../../../.gitbook/assets/image (147).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (147).png" alt="Daily allotment example"><figcaption></figcaption></figure></div>
 
-### Weekly allotments <a href="#weekly-allotments" id="weekly-allotments"></a>
+#### Weekly allotments <a href="#weekly-allotments" id="weekly-allotments"></a>
 
 The only change from **Daily allotments** is
 
 * Frequency - this time it is in weeks and not days, with the additional selection of days of the week in which the product is available
 
-<figure><img src="../../../.gitbook/assets/image (148).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (148).png" alt="Weekly allotment settings"><figcaption></figcaption></figure></div>
 
 * If **All Days** is checked, allotments are created for the entire week.
-  * When a guest departs midweek, only the first valid day of the allotment will be shown in the Guest App.\
-    \&#xNAN;_(Example: if allotment is generated for the whole week and the departure is on Tuesday → only Tuesday’s slots appear.)_
+  * When a guest departs midweek, the Guest App shows only the first valid allotment day.\
+    &#xNAN;_(Example: if allotment is generated for the whole week and the departure is on Tuesday → only Tuesday’s slots appear.)_
 
-<figure><img src="../../../.gitbook/assets/image (207).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (207).png" alt="Weekly allotment availability"><figcaption></figcaption></figure></div>
 
-<figure><img src="../../../.gitbook/assets/image (208).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (208).png" alt="Weekly allotment list"><figcaption></figcaption></figure></div>
 
 ### Block allotments <a href="#block-allotments" id="block-allotments"></a>
 
 The _Block Allotments_ feature allows admins to temporarily **block or unblock** availability for a defined date and time range.\
 Use this when certain days or hours should not be bookable (e.g., maintenance, private events, holidays)
 
-<figure><img src="../../../.gitbook/assets/image (149).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (149).png" alt="Block Allotments settings"><figcaption></figcaption></figure></div>
 
-<figure><img src="../../../.gitbook/assets/image (150).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (150).png" alt="Blocked TeeTime allotment"><figcaption></figcaption></figure></div>
 
 **Result:**\
 Once configured, TeeTime products follow the defined schedule and appear in the _TeeTime Extras Lists_. Booking availability and pricing are automatically handled by the system based on the configured rules and linked suppliers.

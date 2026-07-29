@@ -1,6 +1,6 @@
 # Specification & Config
 
-### Overview
+## Overview
 
 The MTS Globe Hotel Reporting functionality enables Tourpaq to generate and deliver hotel booking reports to MTS Globe via FTP in CSV format.
 
@@ -54,7 +54,7 @@ Extend supplier communication to support FTP-based delivery for MTS Globe report
 
 ***
 
-#### Supported Method
+### Supported Method
 
 * FTP
 * Mail
@@ -63,7 +63,7 @@ Extend supplier communication to support FTP-based delivery for MTS Globe report
 
 When FTP is selected:
 
-* The user can select one of the configured[ System FTP](../setup/system-setup-ftps.md) entries&#x20;
+* The user can select one of the configured[ System FTP](../setup/system-setup-ftps.md) entries
 
 ***
 
@@ -108,7 +108,7 @@ Examples:
 
 ***
 
-## RESEND Functionality
+### RESEND Functionality
 
 Purpose - Allow users to resend previously generated schedules.
 
@@ -118,7 +118,7 @@ Tooltip text:
 
 Resend Button - it is available in the RESEND column.
 
-### Resend Behavior
+#### Resend Behavior
 
 When clicking the Resend button:
 
@@ -137,7 +137,7 @@ For other reporting formats the current list shall be resent using existing beha
 ## 3. Company Feature Management
 
 * Control visibility of the MTS Globe functionality per company.Feature Group
-* The feature shall be located under Apps and Integrations&#x20;
+* The feature shall be located under Apps and Integrations
 * The feature can only be enabled by: Super Administrator
 
 ***
@@ -196,7 +196,7 @@ Track previously reported bookings in order to determine:
 
 ***
 
-## Reporting Logic
+### Reporting Logic
 
 The reporting system shall maintain a list of already reported bookings.
 
@@ -204,7 +204,7 @@ This list is used when the scheduler runs again.
 
 ***
 
-### New Bookings
+#### New Bookings
 
 Bookings shall be added to the NEW file when:
 
@@ -217,7 +217,7 @@ Output file example:
 
 ***
 
-### Amended Bookings
+#### Amended Bookings
 
 Bookings shall be added to the AMENDED file when:
 
@@ -230,7 +230,7 @@ Output file example:
 
 ***
 
-### Cancelled Bookings
+#### Cancelled Bookings
 
 Bookings shall be added to the CANCELLED file when:
 
@@ -244,9 +244,9 @@ Output file example:
 
 ***
 
-### Important Rules
+#### Important Rules
 
-#### Rule 1
+**Rule 1**
 
 Cancelled bookings that were never previously reported:
 
@@ -255,7 +255,7 @@ Cancelled bookings that were never previously reported:
 
 ***
 
-#### Rule 2
+**Rule 2**
 
 After each successful reporting execution:
 

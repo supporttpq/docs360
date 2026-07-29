@@ -1,12 +1,12 @@
-# Guide Profiles
+# Guide profiles
 
-#### **Overview**
+### Overview
 
 The **Guide Profiles** section manages detailed information about guides. It includes their name, representative, title, description, contact details, and optional profile image. This section ensures that guides are correctly documented and can be easily identified and contacted.
 
 ***
 
-#### **Purpose**
+### Purpose
 
 The purpose of the **Guide Profiles** module is to:
 
@@ -17,7 +17,7 @@ The purpose of the **Guide Profiles** module is to:
 
 ***
 
-#### **Preconditions**
+### Requirements
 
 * A guide account must already exist in the system (via **Guide Names**).
 * The user must have permissions to edit guide profiles.
@@ -28,7 +28,7 @@ The purpose of the **Guide Profiles** module is to:
 
 <figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### **Instructions**
+### Instructions
 
 1. **Navigate** to **Guide Profiles** from the menu.
 2. **Locate a guide profile** in the list. You can filter by:
@@ -44,9 +44,7 @@ The purpose of the **Guide Profiles** module is to:
    * **Phone**: Primary contact number.
    * **Emergency Phone**: Secondary number for emergencies.
    * **Profile Image**: Optional image representing the guide.
-4.  **To edit a guide profile**:&#x20;
-
-
+4.  **To edit a guide profile**:
 
     * Click on the guide’s entry.
 
@@ -63,4 +61,3 @@ The purpose of the **Guide Profiles** module is to:
    * Fields marked as _Not set_ should be updated as soon as information is available.
    * Verify email and phone numbers are correct before saving.
    * Use clear and professional descriptions.
-

@@ -20,11 +20,11 @@ The purpose of integrations is to:
 
 ***
 
-### Integration Categories
+### Integration categories
 
 Tourpaq supports several categories of integrations.
 
-#### Hotel Provider Integrations
+#### [Hotel provider integrations](hotel-providers/)
 
 Hotel provider integrations allow Tourpaq to retrieve and synchronize hotel data from external bed banks and accommodation suppliers.
 
@@ -42,9 +42,9 @@ Examples include:
 * D-EDGE (Availpro)
 * SkiStar Resort integrations
 
-These integrations help ensure that accommodation data remains updated and available for booking flows.&#x20;
+These integrations help ensure that accommodation data remains updated and available for booking flows.
 
-#### Transport and GDS Integrations
+#### [Transport and GDS integrations](transport-providers/)
 
 Transport integrations connect Tourpaq with external transport providers and Global Distribution Systems (GDS).
 
@@ -68,7 +68,7 @@ These integrations support both traditional package travel and dynamic packaging
 
 ***
 
-#### Payment Integrations
+#### [Payment integrations](payments-integration.md)
 
 Payment integrations allow customers and back-office users to process payments through external payment providers.
 
@@ -87,7 +87,7 @@ Examples include:
 * ePay
 * AltaPay
 
-These integrations help reduce abandoned bookings and support multiple payment methods.&#x20;
+These integrations help reduce abandoned bookings and support multiple payment methods.
 
 ***
 
@@ -106,11 +106,11 @@ Examples include:
 
 * Microsoft Business Central
 
-These integrations automate financial workflows and reduce manual bookkeeping activities.&#x20;
+These integrations automate financial workflows and reduce manual bookkeeping activities.
 
 ***
 
-#### CRM and Marketing Integrations
+#### [CRM and marketing integrations](crm-and-marketing/)
 
 CRM and marketing integrations allow customer information and booking activity to be synchronized with marketing platforms.
 
@@ -126,7 +126,7 @@ Examples include:
 
 * HubSpot
 
-These integrations help improve customer engagement and sales performance.&#x20;
+These integrations help improve customer engagement and sales performance.
 
 ***
 
@@ -149,7 +149,7 @@ Examples include:
 * Hotel communication services
 * SMS providers
 
-Communication integrations help ensure suppliers always receive the information required to deliver services.&#x20;
+Communication integrations help ensure suppliers always receive the information required to deliver services.
 
 ***
 
@@ -166,7 +166,7 @@ Examples include:
 * Travelmarket XML feeds
 * SMS providers
 
-Additional integrations may be available depending on customer requirements and agreements.&#x20;
+Additional integrations may be available depending on customer requirements and agreements.
 
 ***
 
@@ -174,11 +174,11 @@ Additional integrations may be available depending on customer requirements and 
 
 Most integrations follow a common process:
 
-1. An external provider is configured in System Setup.
+1. An external provider is configured in [System Setup](../setup/system-setup/).
 2. Authentication credentials are entered.
 3. Tourpaq establishes communication with the provider.
 4. Data is exchanged through APIs, files, scheduled services, or automated synchronization jobs.
-5. Information becomes available throughout the booking, reporting, and operational workflows.&#x20;
+5. Information becomes available throughout the booking, reporting, and operational workflows.
 
 Depending on the provider, integrations may operate in:
 
@@ -189,7 +189,7 @@ Depending on the provider, integrations may operate in:
 
 ***
 
-### Example
+### Examples
 
 #### HotelBeds Availability Synchronization
 
@@ -197,14 +197,14 @@ Depending on the provider, integrations may operate in:
 2. Tourpaq connects to the HotelBeds API.
 3. Hotel availability and pricing are retrieved.
 4. Data becomes available in booking searches.
-5. Updates continue to synchronize automatically according to the integration configuration.&#x20;
+5. Updates continue to synchronize automatically according to the integration configuration.
 
 #### Airline Passenger Reporting
 
 1. A transport reporting method is configured.
 2. A communication scheduler is defined.
 3. The Communication Service generates passenger information.
-4. Passenger lists are automatically sent to the airline according to the configured schedule.&#x20;
+4. Passenger lists are automatically sent to the airline according to the configured schedule.
 
 ***
 
@@ -218,3 +218,26 @@ Using integrations provides several advantages:
 * Real-time supplier connectivity.
 * Automated communication workflows.
 * Better financial control.
+
+***
+
+### Related topics
+
+Use these pages to configure and operate connected services:
+
+* [PMS Integration](pms-integration/) covers hotel inventory and reservation synchronization.
+* [System Setup – FTP Providers](../setup/system-setup/system-setup-ftp-providers.md) configures automated file exchange with external providers.
+* [Payment Registration](../finance/payment-registration.md) covers payment records created by payment providers.
+* [Transport Reporting](../transport/transport/transport-reporting/) configures passenger and operational reporting for transport suppliers.
+
+***
+
+### Summary
+
+Integrations connect Tourpaq with external providers and automate operational data exchange.
+
+### Next steps
+
+1. Select the provider category that matches the required integration.
+2. Review the provider-specific configuration guide.
+3. Configure credentials and test the required data flow in System Setup.

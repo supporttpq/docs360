@@ -1,12 +1,12 @@
-# Hotel Supplier
+# Hotel supplier
 
-### **Overview / Purpose**
+### Overview
 
 Suppliers in Tourpaq represent external service providers, typically hotels, who manage allotments and bookings through the system. To function correctly, each supplier requires an unassigned **Supplier user type**, which allows them to log in, manage offerings, and receive communications.
 
-### **How It Works**
+### How it works
 
-#### **1. Create Supplier User**
+#### 1. Create supplier user
 
 1. Navigate to **Users → Users**.
 2. Click **New User**.
@@ -22,7 +22,7 @@ Suppliers in Tourpaq represent external service providers, typically hotels, who
 
 <figure><img src="../.gitbook/assets/image (339).png" alt=""><figcaption></figcaption></figure>
 
-#### **2. Create Supplier Record**
+#### 2. Create supplier record
 
 1. Go to **Users → Suppliers**.
 2. Click **Create New Supplier**.
@@ -32,7 +32,7 @@ Suppliers in Tourpaq represent external service providers, typically hotels, who
 4. Click **Save**.
 5. The supplier record is now active in the system.
 
-#### **3. Assign Hotels to Supplier**
+#### 3. Assign hotels to supplier
 
 1. Navigate to **Hotel List**.
 2. Select hotels the supplier will manage.
@@ -46,21 +46,19 @@ Suppliers in Tourpaq represent external service providers, typically hotels, who
     * **Schedule**
     * **Account Debit**
 
-    &#x20;5\. Click **Save**.
+    5\. Click **Save**.
 
     > Handling fees configured here will appear in the **Profit Tab** of bookings.
 
 <figure><img src="../.gitbook/assets/image (341).png" alt=""><figcaption></figcaption></figure>
 
-
-
 <figure><img src="../.gitbook/assets/image (342).png" alt=""><figcaption></figcaption></figure>
 
-* Hotels assigned to the supplier will be displayed in the list to be assigned as having handling if required.&#x20;
+* Hotels assigned to the supplier will be displayed in the list to be assigned as having handling if required.
 
 <figure><img src="../.gitbook/assets/image (343).png" alt=""><figcaption></figcaption></figure>
 
-#### **4. General Settings**
+#### 4. General settings
 
 * In the **General Tab**, define:
   * **Email:** For receiving supplier communications

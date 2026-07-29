@@ -4,7 +4,7 @@ This section explains how to configure tracking codes and scripts for different 
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (68).png" alt=""><figcaption></figcaption></figure>
 
-### Tracker Fields Overview
+### Tracker fields overview
 
 | Field                                  | Description                                                              | Recommended Usage                                                                              |
 | -------------------------------------- | ------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------- |
@@ -18,14 +18,14 @@ This section explains how to configure tracking codes and scripts for different 
 | **Last Booking Step Body Top**         | Scripts placed at the top of the body during the last step.              | Alternative placement for lightweight tracking (e.g., event-based scripts).                    |
 | **Last Booking Step Body Bottom**      | Scripts placed at the bottom of the body during the last step.           | Often used for "thank you" page-specific tracking, pixels, or customer surveys.                |
 
-### How to Use
+### How to use
 
 * **Paste or type** your full tracking script (e.g., JavaScript, HTML) into the desired field.
 * Multiple scripts can be included in one field if separated properly (e.g., `<script>...</script>` tags).
 * Ensure correct placement to avoid loading errors or missing event tracking.
 * Always validate your page after inserting new scripts to make sure there are no console errors.
 
-### Best Practices
+### Best practices
 
 * **Google Analytics / Tag Manager**: Place in **All Pages** or **Body Top**.
 * **Conversion Pixels (e.g., Facebook, Google Ads)**: Place in **Last Booking Step Header** or **Last Booking Step Body Bottom**.
@@ -33,7 +33,7 @@ This section explains how to configure tracking codes and scripts for different 
 * **Performance Optimization**: Prefer asynchronous loading (`async` or `defer`) when possible to prevent slowing down page load times.
 * **Testing**: Always test new scripts in a staging environment before pushing them to live bookings.
 
-## Notes:
+### Notes
 
 * Fields are **empty by default**—nothing will be injected unless you manually add content.
 * Scripts here can be powerful but misplacement can cause critical issues; proceed with caution.

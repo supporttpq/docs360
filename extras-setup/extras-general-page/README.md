@@ -49,13 +49,13 @@ Extras Setup → Extras
 
 ***
 
-## 📸 Screenshot – Extras Overview
+### Extras overview screenshot
 
-<figure><img src="../../.gitbook/assets/extras main.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/extras main.png" alt="Extras overview page."><figcaption></figcaption></figure></div>
 
 ***
 
-## Interface Overview
+### Interface overview
 
 The page is divided into:
 
@@ -65,13 +65,13 @@ The page is divided into:
 
 ***
 
-## 📸 Screenshot – Extras Filters
+### Extras filters screenshot
 
-<figure><img src="../../.gitbook/assets/extras filters.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/extras filters.png" alt="Extras filters."><figcaption></figcaption></figure></div>
 
 ***
 
-## Field Description – Filters
+### Filter fields
 
 | Field Name       | Description                                                                                                            |
 | ---------------- | ---------------------------------------------------------------------------------------------------------------------- |
@@ -83,13 +83,13 @@ The page is divided into:
 
 ***
 
-## 📸 Screenshot – Extras List
+### Extras list screenshot
 
-<figure><img src="../../.gitbook/assets/extras list.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/extras list.png" alt="Extras list."><figcaption></figcaption></figure></div>
 
 ***
 
-## Field Description – List Columns
+### List fields
 
 | Field Name    | Description                                                                                                                                           |
 | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -103,9 +103,9 @@ The page is divided into:
 
 ***
 
-## Configuration Steps
+### Configuration steps
 
-### Create a New Extra
+#### Create a new Extra
 
 1. Open **Extras**
 2. Click **Create**
@@ -119,7 +119,7 @@ The page is divided into:
 
 ***
 
-### Search for Existing Extras
+#### Search for existing Extras
 
 1. Enter search criteria:
    * Code/Name
@@ -129,7 +129,7 @@ The page is divided into:
 
 ***
 
-### Delete an Extra
+#### Delete an Extra
 
 1. Locate the Extra in the list
 2. Click the delete icon
@@ -137,19 +137,19 @@ The page is divided into:
 
 ***
 
-### Pagination
+#### Pagination
 
 The table is paginated. Use the page number controls at the bottom to navigate, or change the number of rows displayed per page using the items-per-page dropdown (default: 25).
 
 {% hint style="info" %}
-Codes are case-sensitive and must be unique across all extras. Agree on a naming convention with your team before creating new ones. Users & rolesLocations&#x20;
+Codes are case-sensitive and must be unique across all extras. Agree on a naming convention with your team before creating new ones. Users & rolesLocations
 {% endhint %}
 
 ***
 
-## Examples
+### Examples
 
-### Example 1 – Gala Dinner
+#### Example 1: Gala dinner
 
 | Configuration | Value                  |
 | ------------- | ---------------------- |
@@ -162,7 +162,7 @@ The customer pays for the dinner, but it is not displayed separately on the e-ti
 
 ***
 
-### Example 2 – Board Supplement
+#### Example 2: Board supplement
 
 | Configuration | Value           |
 | ------------- | --------------- |
@@ -174,7 +174,7 @@ The Extra supplements the hotel board basis pricing.
 
 ***
 
-### Example 3 – Transfer Extra
+#### Example 3: Transfer Extra
 
 | Configuration | Value   |
 | ------------- | ------- |
@@ -187,7 +187,7 @@ The Extra becomes available only for one-way transport bookings.
 
 ***
 
-## Related Pages
+### Related pages
 
 * Extras Categories
 * Hotel Contracts

@@ -14,7 +14,7 @@ This screen provides a centralized list of suppliers, ensuring transparency and 
 
 ***
 
-### Preconditions
+### Requirements
 
 * You must have the correct access rights to view or edit suppliers.
 * Supplier details (name, email, country, etc.) should be available before adding a new supplier.
@@ -25,7 +25,7 @@ This screen provides a centralized list of suppliers, ensuring transparency and 
 
 <figure><img src="../.gitbook/assets/image (338).png" alt=""><figcaption></figcaption></figure>
 
-#### 1. Filters (Top Section)
+#### 1. Filters (top section)
 
 You can refine the supplier list by using the filter options:
 
@@ -37,7 +37,7 @@ You can refine the supplier list by using the filter options:
 
 ***
 
-#### 2. Supplier List (Main Table)
+#### 2. Supplier list (main table)
 
 Each supplier is displayed in a row with the following fields:
 
@@ -70,7 +70,7 @@ Each supplier is displayed in a row with the following fields:
 
 ***
 
-### Example Workflow
+### Example workflow
 
 1. Open the **Suppliers** screen.
 2. Use filters (e.g., by Name or Country) to find an existing supplier.

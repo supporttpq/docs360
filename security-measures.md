@@ -2,15 +2,15 @@
 
 Starting with **version 3.7**, several new **security improvements** have been implemented to enhance user data protection and system integrity.
 
-#### HTTPS Connection
+### HTTPS connection
 
 All login operations are now secured using the **HTTPS protocol**, ensuring that all communication between the client and server is **encrypted** and protected from interception or tampering.
 
-#### MD5 Encryption
+### MD5 encryption
 
 User passwords are now stored in the database using **MD5 encryption**, providing an additional layer of security by preventing the storage of plain-text credentials.
 
-#### Password Strength Validation
+### Password strength validation
 
 The **Edit User** and **Change Password** pages now include real-time password strength validation.\
 When a user enters a new password, the system displays an indicator showing whether the password is:

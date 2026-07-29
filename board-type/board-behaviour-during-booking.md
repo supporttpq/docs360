@@ -7,6 +7,8 @@ description: >-
 
 # Board Behaviour During Booking
 
+## Board behavior during booking
+
 ### Overview
 
 This functionality defines how the system handles **board types (pension)** during the booking flow, especially in scenarios where:
@@ -19,91 +21,83 @@ The goal is to ensure that the customer is offered a valid board option for the 
 
 ***
 
-### Customer Outcome
+### Customer outcome
 
-The customer will only see board options that are valid for the entire booking period.
+The customer sees only board options that are valid for the entire booking period.
 
 Example:
 
 * The hotel offers:
   * BB for the first days
   * HB for the remaining days
-* The system will check availability across the full stay and propose:
+* The system checks availability across the full stay and proposes:
   * HB for the entire stay (if possible via combination)
 
 If no valid combination exists:
 
-* no consistent board will be offered
-* only individually available supplements will be displayed
+* the system offers no consistent board
+* the system displays only individually available supplements
 
-***
-
-### Key Concepts
-
-#### Board Consistency Rule
+### Board consistency rule
 
 A board can only be selected if:
 
 * it is available for all days in the booking
 * there is no closeout on any day
 
-***
+### Board type setup
 
-### Extras Setup | Board Types
-
-#### Ordering Board Types
+#### Ordering board types
 
 To support automatic upgrade/downgrade scenarios, board types must be ordered.
 
-#### Functionality
+**Functionality:**
 
 * Board types can be reordered
 * Reordering is done via:
   * drag & drop or
   * arrow buttons
 
-#### UI Placement
+**UI placement:**
 
-* Move arrows are located between List Name and the delete (trash) icon
+* Move arrows are located between **List Name** and the **Trash icon**.
 
-<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (13).png" alt="Board Type order controls"><figcaption></figcaption></figure></div>
 
-**Tooltip**
+**Tooltip:**
 
 > The order of Board types is used when the system has to downgrade or upgrade a board type automatically.\
-> The topmost board type will be considered the highest order (most expensive).
+> The board type with the highest order is considered the most expensive.
 
-**Rules**
+**Rules:**
 
-* Top position = highest board (e.g. ALLINC)
-* Bottom position = lowest board (e.g. HB)
+* Highest order = highest board, for example `ALLINC`.
+* Lowest order = lowest board, for example `HB`.
 
-***
+### Extras Category setting
 
-### Extras Category Setting
+#### All stay days must be available
 
-#### New Option: All stay days must be available
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="All stay days must be available setting"><figcaption></figcaption></figure></div>
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Extras Category settings"><figcaption></figcaption></figure></div>
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+**Location:**
 
-**Location**
+* **Extras Category** → **Settings**
 
-* Extras Category → Settings
+**Visibility:**
 
-**Visibility**
+Tourpaq shows this option only when:
 
-This option is only visible when:
+* **Category type** = **Pension**
+* **Category type** = **Gala dinner**
 
-* Category type = Pension
-* Category type = Gala dinner
-
-**Tooltip**
+**Tooltip:**
 
 > If selected, the extra is only eligible if it is available for the full booking period.
 
-**Behaviour**
+**Behavior:**
 
 If enabled:
 
@@ -111,31 +105,25 @@ If enabled:
   * it has pricing for all days
   * it is not closed out on any day
 
-**Note**
-
 Used for:
 
 * Board supplements → enabled
 * Gala dinner → optional
 
-***
-
-### Boards Eligible for Booking
+### Boards eligible for booking
 
 A board supplement can only be selected if:
 
 * it is available for all days of the booking
 * it complies with the "All stay days must be available" rule
 
-***
-
-### Board Basis Changes During Booking Period
+### Board basis changes during booking period
 
 #### Problem
 
 Some hotels have different board basis depending on the period (e.g. BB → HB)
 
-#### System Solution
+#### System solution
 
 **Step 1: Identify the main board**
 
@@ -152,7 +140,7 @@ Some hotels have different board basis depending on the period (e.g. BB → HB)
     * main board basis
     * supplements for differences
 
-    <figure><img src="../.gitbook/assets/image (803).png" alt=""><figcaption></figcaption></figure>
+    <div data-with-frame="true"><figure><img src="../.gitbook/assets/image (803).png" alt="Board basis and supplement combination"><figcaption></figcaption></figure></div>
 
 **Step 4: Validate**
 
@@ -161,22 +149,18 @@ The combination is valid only if:
 * it covers all days
 * all supplements are available
 
-***
-
 #### Fallback
 
 If NO valid combination is found:
 
 * the system stops trying to build a consistent board
-* displays only individually available supplements
+* the system displays only individually available supplements
 
-***
-
-#### Ticket Display
+#### Ticket display
 
 *   The system displays the main board (highest order)
 
-    <figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+    <div data-with-frame="true"><figure><img src="../.gitbook/assets/image (11).png" alt="Main board displayed in a ticket"><figcaption></figcaption></figure></div>
 
 #### Pricing
 
@@ -185,13 +169,11 @@ If NO valid combination is found:
     * includes all supplements
     * is aggregated into the base booking price
 
-    <figure><img src="../.gitbook/assets/image (804).png" alt=""><figcaption></figcaption></figure>
+    <div data-with-frame="true"><figure><img src="../.gitbook/assets/image (804).png" alt="Booking price including board supplements"><figcaption></figcaption></figure></div>
 
-***
+### Backward compatibility
 
-### Backward Compatibility
-
-#### Identify Existing Board Supplements
+#### Identify existing board supplements
 
 To preserve existing Board Supplement behavior after this update, all previously configured Board Supplements must be updated to enable **“All stay days must be available.”** at the **Extras Category** level.
 
@@ -200,37 +182,37 @@ This update applies only to extras that meet both of the following conditions:
 * The extra uses an Extras Category with type **“Pension”**
 * The setting **“Use Stay days in prices”** is enabled
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt="Extras Category with all-stay-days setting"><figcaption></figcaption></figure></div>
 
-*   In the Prices tab, use the "Per day" checkbox marked
+*   In **Prices**, select **Per day**.
 
-    <figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <div data-with-frame="true"><figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt="Per day checkbox in the Prices tab"><figcaption></figcaption></figure></div>
 
 {% hint style="warning" %}
-The option **“All stay days must be available”** is configured on the **Extras Category.**
+The option **All stay days must be available** is configured on the **Extras Category**.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/All stay days must be available.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/All stay days must be available.png" alt="All stay days must be available configuration"><figcaption></figcaption></figure></div>
 
-### Example Scenario
+### Example scenario
 
 #### Input
 
 * Booking: 7 nights
 
-<figure><img src="../.gitbook/assets/image (805).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (805).png" alt="Seven-night booking"><figcaption></figcaption></figure></div>
 
 *   Hotel:
 
     * days 1–3: BB
     * days 4–7: HB
 
-    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <div data-with-frame="true"><figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Hotel board basis by stay date"><figcaption></figcaption></figure></div>
 * Board Types order:
   * HB (top)
   * BB
 
-<figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (9) (1).png" alt="Board Type order"><figcaption></figcaption></figure></div>
 
 #### Output
 
@@ -239,52 +221,22 @@ The option **“All stay days must be available”** is configured on the **Extr
     * selects HB as the main board
     * adds supplements for days 1–3
 
-    <figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <div data-with-frame="true"><figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt="Board supplement configuration for the stay"><figcaption></figcaption></figure></div>
 
-<figure><img src="../.gitbook/assets/image (806).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (806).png" alt="Board supplement selection"><figcaption></figcaption></figure></div>
 
 #### Result
 
 * Customer sees:
   *   HB for the entire stay
 
-      <figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+      <div data-with-frame="true"><figure><img src="../.gitbook/assets/image (11).png" alt="Highest-order board displayed for the full stay"><figcaption></figcaption></figure></div>
 * Price:
   * includes upgrade supplements
 
-### FAQ
-
-#### Why does the booking show the higher board for the full stay?
-
-Tourpaq uses the highest ordered valid board as the main board.
-
-Supplement lines cover the days where the hotel contract uses a lower board.
-
-This keeps the stay consistent in booking output and pricing.
-
-#### What happens if one board day is closed out?
-
-That board cannot be used for a full-stay combination.
-
-The system only accepts a board when every required day is available.
-
-If no full-stay combination is valid, only individually available supplements are shown.
-
-#### Does this rule apply only to board supplements?
-
-No. The same availability rule can also be used for **Gala dinner** extras.
-
-The option is available only for **Pension** and **Gala dinner** category types.
-
-#### What happens to existing board supplements after this behavior is enabled?
-
-Existing board supplements that match the supported setup are updated automatically.
-
-Tourpaq sets **All stay days must be available** to active for those extras.
-
 ### Related pages
 
-* [Board Type - Hotel allotment / Ticket](/broken/pages/cmFZtflwPimtmB7ftv4q)
-* [Board Type - Extra](/broken/pages/3arRI9CM44AT5Q5CFxzd)
-* [Board Type - Webboking](board-type-webboking.md)
+* [Board Type - Hotel allotment / Ticket](/broken/spaces/ZCqO8EQ5P5Mioq1zbQAc/pages/cmFZtflwPimtmB7ftv4q)
+* [Board Type - Extra](/broken/spaces/ZCqO8EQ5P5Mioq1zbQAc/pages/3arRI9CM44AT5Q5CFxzd)
+* [How to use a Board Type](board-type-webboking.md)
 * [Extra Category Overview](../extras-category/extra-category-overview/)

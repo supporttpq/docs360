@@ -1,41 +1,41 @@
 # Ticket Categories
 
-"Ticket Categories" represents a meta-category for one or more extra categories. This ticket category is displayed only on the ticket, grouping the extras under the same ticket category.
+## Ticket Categories
 
-<figure><img src=".gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+**Ticket Categories** is a meta-category for one or more Extra Categories. It appears only on tickets and groups related Extras under one ticket category.
 
-<figure><img src=".gitbook/assets/image (20) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+### Overview
 
-Push the Create button from the upper left corner to create a new Ticket Category.
+Ticket Categories organize ticket content for internal tracking, reporting, and workflow purposes.
 
-<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (5).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Ticket Categories overview"><figcaption></figcaption></figure></div>
 
-#### Overview
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (20) (1) (1) (1).png" alt="Ticket Category grouping on a ticket"><figcaption></figcaption></figure></div>
 
-The New **Ticket Category** interface allows administrators or authorized users to create a  new  ticket category.&#x20;
+### Requirements
 
-This functionality is typically used to update how tickets are categorized for internal tracking, reporting, or workflow purposes.
+* Administrator or authorized access to Ticket Categories.
+* At least one related Extra Category.
 
-***
+### Create a Ticket Category
 
-#### ✏️ Editable Fields
+In Ticket Categories, click **Create**.
 
-| Field    | Description                                                                                                                                |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Code** | A short identifier for the ticket category. It should be unique and descriptive enough for backend referencing                             |
-| **Name** | The display name of the ticket category shown in interfaces and reports. This is more user-friendly and can be longer or more descriptive. |
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (5).png" alt="Create Ticket Category page"><figcaption></figcaption></figure></div>
 
-***
+#### Field descriptions
 
-#### ✅ Best Practices
+| Field    | Description                                                                        |
+| -------- | ---------------------------------------------------------------------------------- |
+| **Code** | A unique short identifier for the Ticket Category. It supports backend references. |
+| **Name** | The display name shown in interfaces and reports.                                  |
 
-* Use clear and consistent naming conventions.
-* Avoid special characters in the **Code** field unless required.
-* Keep the **Name** user-friendly for customer service or support teams.
-* Ensure translations (in other agency tabs) are provided if the system supports multiple languages.
+#### Naming guidance
 
-***
+* Use clear, consistent names.
+* Avoid special characters in **Code** unless required.
+* Add translations in other agency tabs when required.
 
-#### 💾 Saving Changes
+#### Save changes
 
-Once edits are made, ensure you **save** the changes before navigating away to avoid losing input.
+Save the Ticket Category before navigating away.

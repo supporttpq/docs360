@@ -1,11 +1,11 @@
 # Good to Know
 
-#### Overview
+### Overview
 
 The **Good to Know** module allows guides and admins to create and manage informational notes about specific resorts. These notes are displayed in the **Guest App**, helping guests access useful tips, local recommendations, and general information about their destination during their stay.\
 Each entry can include a short description and optional image, making it easy to provide guests with engaging, relevant, and visually supported content.
 
-#### Purpose
+### Purpose
 
 The purpose of the **Good to Know** feature is to enhance the guest experience by giving them quick access to important or interesting information about their resort or destination.\
 This can include:
@@ -17,9 +17,9 @@ This can include:
 
 It ensures that guests are well-informed and can enjoy a smoother, more enjoyable holiday experience.
 
-<figure><img src=".gitbook/assets/image (20) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (20) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
-#### How to Use
+### How to use
 
 1. **Go to:** `Guest App / Good to Know`
 2. **Click** **Create** to add a new entry.

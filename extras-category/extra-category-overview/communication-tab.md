@@ -1,4 +1,6 @@
-# Communication Tab
+# Communication tab
+
+## Communication tab
 
 ### Overview
 
@@ -10,7 +12,7 @@ This functionality allows the system to:
 * Send automated email notifications
 * Trigger PDF exports
 * Control timing before departure
-* Manage communication frequency (daily, weekly, monthly, annually, or custom)
+* Manage communication frequency: daily, weekly, monthly, annually, or custom.
 
 Each row in this section represents a scheduled communication rule.
 
@@ -31,7 +33,9 @@ This feature is typically used for:
 * Transfer services
 * Homebound or outbound extras management
 
-<figure><img src="../../.gitbook/assets/image (683).png" alt=""><figcaption></figcaption></figure>
+### Interface overview
+
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (683).png" alt="Communication tab showing communication rules"><figcaption></figcaption></figure></div>
 
 The Communication tab contains:
 
@@ -41,28 +45,28 @@ The Communication tab contains:
 
 Each communication entry includes scheduling, delivery method, and reporting type.
 
-1. **Interval** - Determines how often the lists are sent:
+### Field descriptions
 
-Examples:
+1.  **Interval** - Determines how often the lists are sent:
 
-* Custom Interval, 3 Days
-* Annually (specific date) - Lists are sent on a specific calendar date for departures happening within _X_ days.
-* Monthly (specific day) - Lists are sent on a selected day of the month (1–31) for departures happening within _X_ days.
-* Weekly (specific weekday) - Lists are sent once a week on a selected day (e.g., Monday) for departures happening within _X_ days.
-* Daily - Lists are sent daily for departures occurring within X days prior t&#x6F;_&#x58;_ days before the send date.
+    Examples:
 
-This determines the recurrence pattern.
+    * Custom Interval, 3 Days
+    * Annually (specific date) - Lists are sent on a specific calendar date for departures happening within _X_ days.
+    * Monthly (specific day) - Lists are sent on a selected day of the month (1–31) for departures happening within _X_ days.
+    * Weekly (specific weekday) - Lists are sent once a week on a selected day (e.g., Monday) for departures happening within _X_ days.
+    * Daily - Lists are sent daily for departures within the configured interval.
 
-2. **Days Before Departure** - Specifies how many days before departure the report should be generated or sent.
+    This determines the recurrence pattern.
+2.  **Days Before Departure** - Specifies how many days before departure the report should be generated or sent.
 
-Examples:
+    Examples:
 
-* 0 = same day as departure
-* 1 = one day before departure
-* 2 = two days before departure
+    * 0 = same day as departure
+    * 1 = one day before departure
+    * 2 = two days before departure
 
-This ensures suppliers receive information in advance.
-
+    This ensures suppliers receive information in advance.
 3. **Hour** - The exact hour (in Denmark time) when the list is automatically sent.
 4. **Email** - The recipient email address where the report or communication will be sent. Multiple recipients may be configured depending on system capabilities.
 5.  **FTP** - Indicates whether the communication is sent via FTP.
@@ -72,23 +76,21 @@ This ensures suppliers receive information in advance.
 
     Used when automated file transfer to external systems is required.
 6. **Communication** - Contains a **View** link. This allows reviewing communication details
-7. **Reporting** - Specifies the report template being generated.
+7.  **Reporting** - Specifies the report template being generated.
 
-Example:\
-Homebound Extras List PDF
-
+    Example: Homebound Extras List PDF
 8. **Empty List** - If checked, the system will send an empty list even when there are no bookings.
    * ✔ = Send even if empty
    * ✖ = Do not send if empty
 9. **Generate Dep date Only** - The report will include bookings only from the departure date and not from the entire interval (the interval starting from the current date until departure date set in " Days Before Departure").
 10. **Edit icon (Pencil)** - Allows modification of an existing communication rule.
-11. **Delete Icon (Trash**) - Removes the communication rule.
+11. **Delete Icon (Trash)** - Removes the communication rule.
 
 Once the communication rule is set and saved, the system will automatically generate and send the lists according to the defined schedule. Sent communications can be reviewed in the **Communication** log.
 
-### Example Configuration
+### Example configuration
 
-#### Example: Weekly Activity Supplier Report
+#### Weekly Activity Supplier Report
 
 | Field                   | Value                     |
 | ----------------------- | ------------------------- |
@@ -101,7 +103,7 @@ Once the communication rule is set and saved, the system will automatically gene
 | Empty List              | No                        |
 | Generate Dep. Date Only | Yes                       |
 
-#### Result:
+#### Result
 
 * Every Monday at 10:00
 * The system sends a PDF report

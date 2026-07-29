@@ -4,7 +4,7 @@ This page explains each field and option available in the **Web Booking Settings
 
 <figure><img src="../../.gitbook/assets/image (159).png" alt=""><figcaption></figcaption></figure>
 
-### General Fields
+### General fields
 
 * **Extra Bed Information**: Optional field to enter any additional information related to extra beds during booking.
 * **Footer Text**: Text displayed in the footer of the web booking page.
@@ -15,7 +15,7 @@ This page explains each field and option available in the **Web Booking Settings
   \&#xNAN;_Example: "https://messenger.providesupport.com/messenger/primotours.html"_
 * **Info Mail To**: Email address where general inquiries are sent.
 
-### Email Settings
+### Email settings
 
 * **Abandon Email Enable**: Enables sending emails when users abandon the booking process.
 * **Abandon Email From**: Email address shown as the sender for abandonment emails.
@@ -23,20 +23,20 @@ This page explains each field and option available in the **Web Booking Settings
 * **Error Email From / To**: Addresses used for sending and receiving error notifications.
 * **Warning Email To**: Address used for sending warnings (optional).
 
-### External Links
+### External links
 
 * **Financing Info Link**: Link to information about financing options.\
   \&#xNAN;_Example: "http://www.primotours.dk/info/værd-at-vide/finansiering"_
 * **Trust Pilot Source**: URL to fetch Trustpilot reviews or ratings.\
   \&#xNAN;_Example: "https://vjmphp.dk/primotours/webbooking\_trustpilot.php"_
 
-### Offer Settings
+### Offer settings
 
 * **Offer Box Style**: Select style for the offer display (Default selected).
 * **Date Format**: Defines the date and time format.\
   \&#xNAN;_Example: "DD.MM.YYYY HH:mm"_
 
-### Display Options
+### Display options
 
 | Option                                        | Description                                                                     |
 | --------------------------------------------- | ------------------------------------------------------------------------------- |
@@ -58,7 +58,7 @@ This page explains each field and option available in the **Web Booking Settings
 | **Collapsible Product Sections**              | Enable collapsible sections for products to enhance page organization.          |
 | **Passenger Details Required on Web Booking** | Expose phone and email fields in WebBooking Process                             |
 
-## Notes:
+### Notes
 
 * Fields marked with a **checkbox** are either active (checked) or inactive (unchecked).
 * Make sure to correctly fill mandatory fields (such as email addresses) to avoid booking or communication errors.

@@ -1,6 +1,6 @@
 # PMS Integration
 
-## Overview
+### Overview
 
 The PMS (Property Management System) Integration in Tourpaq enables accommodation providers and tour operators to synchronize hotel inventory, availability, pricing, and reservation data between Tourpaq and external hotel management systems.
 
@@ -10,7 +10,7 @@ PMS integrations form part of Tourpaq's broader integration framework, which sup
 
 ***
 
-## Purpose
+### Purpose
 
 The PMS Integration is designed to:
 
@@ -23,9 +23,9 @@ The PMS Integration is designed to:
 
 ***
 
-## Business Benefits
+### Business benefits
 
-### For Tour Operators
+#### For Tour Operators
 
 * Real-time accommodation availability.
 * Faster reservation processing.
@@ -33,7 +33,7 @@ The PMS Integration is designed to:
 * Improved booking accuracy.
 * Better scalability when working with large hotel portfolios.
 
-### For Hotels
+#### For hotels
 
 * Automatic receipt of reservations.
 * Reduced manual registration of bookings.
@@ -42,7 +42,7 @@ The PMS Integration is designed to:
 
 ***
 
-## Supported Integration Framework
+### Supported integration framework
 
 Tourpaq supports integrations with external hotel providers and accommodation systems through its hotel integration architecture.
 
@@ -55,7 +55,7 @@ The exact PMS systems available depend on the customer's Tourpaq setup and integ
 
 ***
 
-## How PMS Integration Works
+### How PMS Integration works
 
 The integration follows a standard accommodation synchronization workflow:
 
@@ -79,11 +79,11 @@ When a booking is created in Tourpaq, reservation details can be transmitted bac
 
 ***
 
-## Data Exchange
+### Data exchange
 
 Depending on the PMS implementation, the following information may be exchanged.
 
-### Hotel Information
+#### Hotel information
 
 * Hotel name
 * Hotel code
@@ -92,21 +92,21 @@ Depending on the PMS implementation, the following information may be exchanged.
 * Facilities
 * Images
 
-### Availability
+#### Availability
 
 * Available rooms
 * Allotments
 * Stop sales
 * Restrictions
 
-### Pricing
+#### Pricing
 
 * Room rates
 * Seasonal prices
 * Dynamic pricing
 * Supplements
 
-### Reservation Data
+#### Reservation data
 
 * Booking number
 * Arrival date
@@ -114,3 +114,15 @@ Depending on the PMS implementation, the following information may be exchanged.
 * Passenger details
 * Room allocation
 * Reservation status
+
+***
+
+### Summary
+
+PMS Integration synchronizes accommodation inventory and reservation data between Tourpaq and connected hotel systems.
+
+### Next steps
+
+1. Confirm the available PMS integration and commercial agreement.
+2. Review the provider-specific configuration guide.
+3. Configure credentials, then validate availability and reservation synchronization.
