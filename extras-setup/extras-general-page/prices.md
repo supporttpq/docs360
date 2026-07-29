@@ -13,7 +13,7 @@ There are **three types of intervals** that determine when a price is applied:
 
 Each interval defines the **conditions** under which the price is valid.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Prices section for an Extra."><figcaption></figcaption></figure></div>
 
 ### Purpose
 
@@ -26,7 +26,7 @@ This helps:
 * Support promotional or seasonal offers.
 * Differentiate costs and profit margins across age groups, dates, and brands.
 
-### How to Use
+### How to use
 
 **Define a Price for an Extra**
 
@@ -50,7 +50,7 @@ This helps:
     | **Contract**                 | References the contract name related to this price.                                                                       |
 5. Click **Save** once all details are completed.
 
-### Price Calculation
+### Price calculation
 
 The total price per day is calculated using the following formula:
 
@@ -66,21 +66,21 @@ Tourpaq supports defining different prices per brand.
 * If only a **default price** is set, it applies to all agencies.
 * If a **brand-specific price** is added, that price will apply only to the selected agency or brand.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Price per brand settings."><figcaption></figcaption></figure></div>
 
 * Editing prices is available only for the **default** configuration; for agency-specific prices, only **Price**, **Group Price**, **Margin**, and **Max Cost** can be updated.
 
 To enable price-per-brand functionality, please contact **Tourpaq Support**.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Default price configuration."><figcaption></figcaption></figure></div>
 
 * The system supports editing prices across multiple rows within the same view and saving all changes in a single operation.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Multiple price rows for an Extra."><figcaption></figcaption></figure></div>
 
 To optimize production workflow, users can perform multiple price corrections or updates at the same time and save everything with one click, instead of saving each row individually.
 
-#### **Split prices**
+#### Split prices
 
 The **Split** function allows dividing existing price or cost intervals — for example, when updating prices or managing stop sales.\
 Prices can be split by:
@@ -89,23 +89,23 @@ Prices can be split by:
 * **Departure Date**
 * **Booking Date**
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Split prices option."><figcaption></figcaption></figure></div>
 
-#### **How to Split a Price:**
+**How to split a price**
 
 1. Click on the **Split** button below the price lines.
 2.  Choose how many splits you want to create.
 
-    <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Number of price splits."><figcaption></figcaption></figure></div>
 3.  Adjust the date or age intervals as needed:
 
     * When splitting by **Departure** or **Booking Date**, set the **Date From** of the first line to the original start date and the **Date To** to the new stop date.
     * The **second line** will automatically use the new **Date From** and original **Date To**.
     * It’s recommended to use the **current day** or **next day** as the stop date for the first line.
 
-    <figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Date and age intervals for split prices."><figcaption></figcaption></figure></div>
 4. Click **Split** to confirm.
 
 After splitting, the system will display separate price lines for each new interval.
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Separate price lines after splitting."><figcaption></figcaption></figure></div>
