@@ -1,6 +1,6 @@
 # Insider Tips
 
-#### Overview
+### Overview
 
 The **Insider Tips** feature allows guides and admins to share personalized advice, recommendations, or local insights with guests through the **Guest App**.\
 These tips are configured in **Tourpaq Office**, under **Guest App → Insider Tips**, and once created, they appear in the **Insider Tips** section of the app.\
@@ -10,7 +10,7 @@ This functionality helps enhance the guest experience by offering valuable, expe
 
 ***
 
-#### Purpose
+### Purpose
 
 The purpose of **Insider Tips** is to provide guests with authentic, practical, and engaging recommendations that enrich their stay at the destination.\
 This can include:
@@ -23,7 +23,7 @@ By offering this information digitally, guests can easily access relevant insigh
 
 ***
 
-#### How to Use
+### How to use
 
 1. **Go to:** `Guest App / Insider Tips`
 2. **Click** **Create** to add a new tip.
@@ -41,24 +41,26 @@ By offering this information digitally, guests can easily access relevant insigh
 
 ***
 
-### **Add Insider Tip**
+### Add insider tip
 
-#### **Overview**
+#### Overview
 
 The **Add Insider Tip** page allows users to create and share valuable local insights or recommendations related to a specific resort or destination. These insider tips enhance the resort presentation by providing authentic, experience-based suggestions for travelers—such as places to visit, eat, or enjoy local culture.
 
 ***
 
-#### **Purpose**
+#### Purpose
 
 This feature enriches destination content with personalized information that helps customers discover unique experiences.\
 By adding insider tips, agencies can improve traveler engagement and differentiate destinations with authentic and practical advice.
 
 ***
 
-#### **Instructions**
+#### Instructions
 
 <figure><img src=".gitbook/assets/image (439).png" alt=""><figcaption></figcaption></figure>
+
+#### Field descriptions
 
 **1. Description\***
 
@@ -98,7 +100,7 @@ Upload a relevant image to illustrate the tip.
 
 ***
 
-#### **How to Use**
+#### How to use
 
 1. **Access the Insider Tips Section**
    * Navigate to the _Insider Tips_ module within the admin interface.
@@ -115,7 +117,7 @@ Upload a relevant image to illustrate the tip.
 
 ***
 
-#### **💡 Tips**
+#### Tips
 
 * Write concise and engaging content focused on real experiences.
 * Avoid generic travel advice—focus on what makes the location special.

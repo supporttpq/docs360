@@ -1,13 +1,13 @@
 # Maps
 
-#### **Overview**
+### Overview
 
 The **Maps** section allows users to configure interactive resort maps that are displayed in the **Guest App** under the **Destination → Maps** tab.\
 Through this feature, guests can view an interactive map of their current booking resort and explore **points of interest** such as hotels, attractions, meeting points, or local landmarks.
 
 Maps are configured and managed from **Tourpaq Office → Guest App → Maps** by users with **Guide** or **Admin** access.
 
-#### **Purpose**
+### Purpose
 
 The purpose of the **Maps** module is to:
 
@@ -16,9 +16,9 @@ The purpose of the **Maps** module is to:
 * Enhance guest experience through easy navigation and localized information.
 * Allow guides and admins to manage map content directly from Tourpaq Office.
 
-#### **How to Use**
+### How to use
 
-**Accessing the Maps Section**
+#### Access the Maps section
 
 1. In **Tourpaq Office**, navigate to **Guest App → Maps**.
 2.  The list view will display all maps configured for different resorts.
@@ -34,7 +34,7 @@ The purpose of the **Maps** module is to:
 
 A **Create** button is available in the top-right corner to add new maps.
 
-**Creating or Editing a Map**
+#### Create or edit a map
 
 1.  Click **Create** to define a new map or select an existing one from the list.
 
@@ -49,7 +49,7 @@ A **Create** button is available in the top-right corner to add new maps.
 3. Assign the map to one or more **resorts** to ensure it is displayed to guests staying in those resorts.
 4. Click **Save** to confirm the setup.
 
-#### **Guest App Display**
+### Guest App display
 
 In the **Guest App**, guests can access the configured map under:
 

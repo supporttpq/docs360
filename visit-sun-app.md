@@ -16,6 +16,8 @@ From here, user can access available tabs in the application: Booking, Guide, De
 
 In this tab, user can access information about the booking.
 
+#### Welcome screen
+
 **Welcome screen** provide information about number of days before departure, an introduction text and latest news regarding the destination. Introduction text displayed on "Welcome screen" can be configured from Tourpaq Office logged as admin by accessing **Guest App->Settings->Edit Agency->General settings**
 
 <figure><img src=".gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
@@ -24,13 +26,23 @@ In this section, there are also displayed notifications for insider tips. Notifi
 
 Also, **push notifications** sent by the guides (from Tourpaq Office -> Guide-> View all bookings -> "Send push notifications") are received on the app, if logged in with a booking that a push notification was sent to. If the notification pup-up is clicked, the app is opened and the message is displayed and stored under **"Today's updates"**
 
+#### Booking info
+
 **Booking info** provide information about names and number of passengers, resort, hotel name, room types, arrival and departure airports and timeline. In this section, user can access also Customer Center page in order to perform changes related to the booking .
+
+#### Ticket
 
 **Ticket** section will display the booking ticket.
 
+#### Hotel
+
 In **Hotel** section, user can check pictures, facilities, facts, description about the hotel where he is staying. Details shown here can be configured in Tourpaq Office, on **Edit Hotel-> Web tab**. If HTML Description is set, then will be displayed in the application, otherwise short description will be shown.
 
+#### Weather
+
 In **Weather** tab, details about weather during stay days are shown. Weather API URL which provide weather information can be set in Tourpaq **Service->Guest APP-> Settings** at Weather section.
+
+#### Upgrade your vacantion
 
 Using **Upgrade your vacantion** tab, user can update the booking by adding products (like seating or baggage facilities) to his reservation from Customer Center. Products which can be booked here are defined in Tourpaq Office and description and photos for products available in the application can be configured in Tourpaq Office under **Extras Setup->Extras Categories** tab.
 
@@ -38,11 +50,17 @@ Using **Upgrade your vacantion** tab, user can update the booking by adding prod
 
 ### Guide tab <a href="#guide-tab" id="guide-tab"></a>
 
+#### Your guides
+
 In **Your guides** section, user will be able to call or send e-mail to guides assigned to specific resort on which reservation is made. Guides names displayed are configured in **Office->Users-> Guides Profiles**.
 
 <figure><img src=".gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
+#### Chat
+
 Using **Chat** tab, user can start conversation with guides from the booking destination. If the booking is in the future, then the message sent by the user will be available to all guides and admin users. First guide that answer will automatically pick up the conversation. If the user is already at the destination, the conversation will be sent to all guides on that resort.
+
+#### Weekly activities
 
 In **Weekly activities** section, user will be able to see weekly activities defined from **Guest App->Weekly Activities**.
 
@@ -50,9 +68,13 @@ In **Weekly activities** section, user will be able to see weekly activities def
 
 <figure><img src=".gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
+#### Excursions
+
 Under **"Excursions"** (Udflugter) section, excursions which are defined in **Office->Extras** when logged-in as a guide will be available for booking. This can be done when accessing **Excursions(Udflugfter)** tab. For detailed information about how this type of an excursion/extras is created, please check [Destination - Mobile guide App](destination-mobile-guide-app.md)
 
 Remark: Excursions are displayed also according to stop sales hours setup on the extra. Details here: [Extras](https://app.gitbook.com/s/ZCqO8EQ5P5Mioq1zbQAc/extras-setup)
+
+#### Vouchers
 
 **Vouchers** section displays the hotel voucher or excursions which are already confirmed for that specific booking. Hotel vouchers displayed in this section are hotels with Issue Voucher option checked.
 
@@ -62,17 +84,23 @@ Remark: Excursions are displayed also according to stop sales hours setup on the
 
 ### Destination tab <a href="#destination-tab" id="destination-tab"></a>
 
-* **Good to know** or "Things to see and do" section, contains tips configured when logged in as guide/admin in Tourpaq Office under **Guest App->Good to know** menu.
+#### Good to know
+
+**Good to know** or "Things to see and do" section, contains tips configured when logged in as guide/admin in Tourpaq Office under **Guest App->Good to know** menu.
 
 <figure><img src=".gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* **Vocabulary** section display a series of key words to be used by the guest during his vacation. Words are defined in Tourpaq Office from **Guest App-> Vocabulary** when logged in as guide or admin and are displayed in the application based on the country in which user travels.
+#### Vocabulary
+
+**Vocabulary** section display a series of key words to be used by the guest during his vacation. Words are defined in Tourpaq Office from **Guest App-> Vocabulary** when logged in as guide or admin and are displayed in the application based on the country in which user travels.
 
 <figure><img src=".gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src=".gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* Under **Maps** section, user can check the map for current booking resort. Map displayed here can be configured in Tourpaq Office under **Guest App->Maps**. The guide/admin can define here also points of interest on the map by simply clicking on the map and entering "Location Details". It is possible also to upload pictures for defined point of interest.
+#### Maps
+
+Under **Maps** section, user can check the map for current booking resort. Map displayed here can be configured in Tourpaq Office under **Guest App->Maps**. The guide/admin can define here also points of interest on the map by simply clicking on the map and entering "Location Details". It is possible also to upload pictures for defined point of interest.
 
 <figure><img src=".gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -80,7 +108,9 @@ In the mobile application it is displayed like below:
 
 <figure><img src=".gitbook/assets/dc7ce3dc-76df-4ca1-8d75-86e0a3330f77-9348e6031e09ec52b71125dbe9de4388.jpg" alt=""><figcaption></figcaption></figure>
 
-* **Kiss Cam** section allow to user to take photos using predefined overlays from **Guest App->Settings->KissCam Overlays**.
+#### Kiss Cam
+
+**Kiss Cam** section allow to user to take photos using predefined overlays from **Guest App->Settings->KissCam Overlays**.
 
 <figure><img src=".gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -93,6 +123,8 @@ User can save photo or publish on social media.
 This tab offers the possibility to the user to check Guest App special features like: Dine-around, In-room breakfast, Fast check-in or Room selection.
 
 <figure><img src=".gitbook/assets/image (20) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+#### Dine Around
 
 **Dine Around** allow to guests to book lunch and/or dinner until the day before the latest one at a different hotel/restaurant than the one used on the booking from Guest App group.
 
@@ -117,6 +149,8 @@ Photo,hotel name, product, date and remaining allotments are displayed here.
 
 Booked products "Dine Around" type are displayed on Booked tab and can be also removed from there.
 
+#### In Room Breakfast
+
 **In Room Breakfast** allow guests to order breakfast in room two times per week during his stay.
 
 * For configuring this (check "Dine Around" product configuration), the extras category "In Room Breakfast" has to be defined when logged-in as admin from Office **Extras Setup->Extras Category**.
@@ -130,11 +164,17 @@ When ordering "In Room Breakfast" from the application, guests can select the ho
 
 ![!](https://docs.tourpaq.com/assets/images/880897a4-322c-4e0e-9ba9-b8b82a6d84ff-34b7860dcc3087ccd94fa6fc0baf7c4b.jpg)
 
+#### Fast Check in
+
 **Fast Check in** give guests the possibility to do fast check-in at hotel where they are staying from home. Information like first name and last name, passport number, nationality and date of birth should be filled in in order to enable the "Fast Check in".
 
 ![!](https://docs.tourpaq.com/assets/images/259c9e95-8548-4164-bca5-ceeafb6132c2-60197085a5202e014d32a59f6326c516.jpg)
 
-Information added here will be updated on the booking and after that Hotel List will be sent to the hotel by the supplier from **Agent->Hotel List**. From **Insider Tips** section guest will be able to find out insider tips related to his trip. Insider tips shown here are configured when logged in as guide/ admin from the **Guest App->Insider Tips** menu.
+Information added here will be updated on the booking and after that Hotel List will be sent to the hotel by the supplier from **Agent->Hotel List**.
+
+#### Insider Tips
+
+From **Insider Tips** section guest will be able to find out insider tips related to his trip. Insider tips shown here are configured when logged in as guide/ admin from the **Guest App->Insider Tips** menu.
 
 <figure><img src=".gitbook/assets/image (14) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

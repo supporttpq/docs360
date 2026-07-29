@@ -4,13 +4,13 @@
 
 The Guide App is a new feature used to track guides' activity, help them coordinate with each other, create complaints regarding the local environment, support customers directly through chat, and export passenger lists in multiple formats, among other features.
 
-### **Login Screen**
+### Login screen
 
 <figure><img src=".gitbook/assets/Untitled (1) (1).jpg" alt=""><figcaption></figcaption></figure>
 
 This is the first screen the guide will encounter when using the app. As shown in the picture, the login is quite basic, requiring the username and password used in Tourpaq.
 
-### **User Session**
+### User session
 
 The user session expires by default in 30 minutes from the last user action. To change this value, the admin must modify the "Destination API Token" value in the Edit Brand General tab. The newly set value will be used in order to make the session expire and stop notification from sending after the set value from the last user action. The sending of notifications will be stopped by a service, a slight delay might occur.
 
@@ -18,13 +18,13 @@ The user session expires by default in 30 minutes from the last user action. To 
 
 <figure><img src=".gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
 
-### **Available menus**
+### Available menus
 
 The list of available menus is available right after the login request succeeds. You can access the menu either directly from the screen that pops up after the log in, or from the side-menu after clicking the top-left burger icon.
 
-#### **Extras**
+### Extras
 
-**Configuring an extra**
+#### Configure an extra
 
 <mark style="background-color:red;">**IMPORTANT NOTE:**</mark> <mark style="background-color:red;">Only guides can add products and make them available in the application.</mark>
 
@@ -34,37 +34,37 @@ In order to be made available in the application, the extra must have selected a
 
 In order to be made available in the application, the extra must have selected a category of type **Tours** (General info).
 
-#### **Customize the excursion for the apps**
+#### Customize the excursion for the apps
 
 The first information that appears to the guest is the description - which can be easily customized under the main tab of the extra, specifically the **Description in customer center** box. This can also be customized per brand for a wider variety of descriptions. Another thing to mention when customizing an excursion is the possibility to add one or more representative pictures. That can be easily done through the **Photos** tab of the extra (see the picture below).
 
 <figure><img src=".gitbook/assets/image (280).png" alt=""><figcaption></figcaption></figure>
 
-#### **Extra currency**
+#### Extra currency
 
 By default, the price of the sold extra will represent either the currency of the agency (if it has one) or the currency of the company. However, you can customize this by creating a creditor with the desired currency and assign it to the required extra under the "Automatic billing" box (see the picture below).
 
 <figure><img src=".gitbook/assets/image (281).png" alt=""><figcaption></figcaption></figure>
 
-#### **Assign the excursion to a resort**
+#### Assign the excursion to a resort
 
 An essential aspect of selling an excursion is that even if Tourpaq supports adding multiples resources to a product - such as transports, hotels and so on, the application will only take into considerations the resort field. One can assign the desired resort or resorts for where they want to sell the excursion Adding a resort is quite simple - you navigate under the **Resurser** tab of the product, click on the **New filter type**, select the desired resort and click on **Save filter type** to save your desired settings (see the picture below).
 
 <figure><img src=".gitbook/assets/image (282).png" alt=""><figcaption></figcaption></figure>
 
-**Assign the excursion to a brand**
+#### Assign the excursion to a brand
 
 An essential to-do in the process of setting up the excursion is assigning it to a brand so it will be available for sale for it. That can be done really simple under the **Brands** tab under the specific extra One must select the **Guide Sale** option for the desired brand and click on **Save Options** to save the desired configuration (see picture below).
 
 <figure><img src=".gitbook/assets/image (283).png" alt=""><figcaption></figcaption></figure>
 
-**Generate allotments for the excursion**
+#### Generate allotments for the excursion
 
 Another essential step in setting up the excursion is creating the allotments. That can easily be done by going on the desired extra, under the **Generic Allotment** tab. To start defining the desired allotments, click on the **Generate New Allotments** button in the left corner of the page. The allotments can be generated either on a daily basis or on a weekly basis (see picture below).
 
 <figure><img src=".gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
 
-**Detailed description for each option:**
+#### Allotment schedule options
 
 * **Daily** - the tool will generate allotments each day or from n to n days (e.g. from 2 to 2 days) in a given date interval (**Duration**). In here we also have the possibility to make new allotments each n minutes (**Daily Frequency**) between a time interval (this is applying for each day) or to set up the **Specific time** of the allotments (see the picture below),
 * **Weekly** - the tool will generate allotments for one or more days of the week. We will also be able to specify the allotments frequency (each week or from n to n weeks). We will also have to define the desired time or set the allotment to be available every n minutes, exactly like in the **Daily** basis option. From this point, the steps are similar.
@@ -75,7 +75,7 @@ After selecting the desired time, click outside the popup window in order for th
 
 After filling in the settings we wanted we proceed to the next step - saving them. We will fill the number of available allotments for this rule set and click on **Generate**. Immediately after we will be able to see the newly created allotments.
 
-**Have the excursion(product) still listed in the app as read only mode**
+#### Keep the excursion listed as read-only
 
 If allotment is generated with 0 availability, or after the allotment runs out, the product can still be listed in the Guest App if it is set as bellow:
 
@@ -83,13 +83,13 @@ If allotment is generated with 0 availability, or after the allotment runs out, 
 
 In the Guest App, the effect will be that the excursion/product will continue to be listed, but no buy button will be available.
 
-#### **Setting the selling price(s) for an excursion**
+#### Set selling prices for an excursion
 
 Another really important step in the process of setting up the excursion for the app is defining one or more price rules. That can be done per periods - meaning that you can have different adult or child prices for different periods. In order to do that one has to navigate to the **Extras -> Generic Product Price Rule** menu item (see the picture below).
 
 <figure><img src=".gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
 
-**Creating a new price rule for an excursion**
+#### Create a price rule for an excursion
 
 In order to create a new price rule, one has to click on the **New** button in the right corner of the page mentioned previously. Pressing the **New** button will generate a new entry to the **Price Rules** table and we will have to configure it properly (see picture below).
 
@@ -111,7 +111,7 @@ In order to properly understand how the price rules work in the process of setti
 
 Once we finish completing all the fields mentioned above, we click on **Save** and the rule will be generated. Also, the existing rules can also be modified by clicking the **Edit** button on them.
 
-**Creating a new route for an excursion**
+#### Create a route for an excursion
 
 In order to do that, we will have to navigate under the **Extras -> Routes** page (see the picture below).
 
@@ -137,7 +137,7 @@ In here, you will have to fill the following fields:
 <mark style="color:red;">IMPORTANT:</mark> There are also some more tabs under the Route, but for this type of extras, we should not take all of them into consideration. The remaining one that should be taken into consideration is the "Brands" tab. In here, we assign an agency to the currently defined route and mark it as for sale.
 {% endhint %}
 
-**Set up guide payment**
+#### Set up guide payment
 
 In order to take further steps in the process of booking the excursions, we must create two new guide payment types. One for debit (cash in) and one for credit (cash out). These payment types can be created in the backoffice on an Administrator account under Finance -> Method of payment (see below).
 
@@ -180,38 +180,38 @@ For example we can let it to default and the payment will be made using the sele
 
 After finishing with setting up everything in here, the guide is ready to go.
 
-**The recommended setup would be as follows:**
+#### Recommended setup
 
 * 2 payment types for cash (1 cash in and 1 cash out)
 * 2 payment types for regular credit cards (1 in and 1 out)
 * 2 payment types for dankort credit cards( 1 in and 1 out)
 
-**IMPORTANT REMARK:**
+#### Payment fees
 
 * Most (if not all) credit card types come with a tax of 25 kr (3.33 EUR) which applies to an order.
 * A tax of 25 kr (3.33 EUR) is also present for the cash payment if the currency of the order is DKK.
 
 In order to proceed with using the earlier created payments, the user must select an available excursion from the list (**in the APP**), tap on buy, fill all the details and select a desired method of payment (cash, agent machine or card). If for example one selects Cash, but no Cash method of payment is configured in the backoffice, the system will not complete the order, as it will not find a matching method of payment into the system.
 
-### **Booking an excursion in the app**
+### Book an excursion in the app
 
 After setting the excursion up, we can proceed to the next stage: the one of booking it. By doing this, the user can log in with the guide account that has been set up at the previous stage and click on the **Extras** option from the menu. If everything is configured properly, a list of available excursions will show up (see pictures below).
 
 **Remark:** Stop sales hours setup won't have any impact here. Guide should see all the available excursions, regardless of the stop sales hours setup.
 
-**Choose an excursion from the list**
+#### Choose an excursion from the list
 
 <figure><img src=".gitbook/assets/image (190).png" alt=""><figcaption></figcaption></figure>
 
-**See the details of the excursion**
+#### View excursion details
 
 <figure><img src=".gitbook/assets/11-525720509f53db66d4be8db089be1662.png" alt=""><figcaption></figcaption></figure>
 
-**Configure its detials for the shopping cart**
+#### Configure excursion details for the shopping cart
 
 ![!](https://docs.tourpaq.com/assets/images/22-681f42ba0ae483955f992620f44cdda0.png)
 
-**Select the previously created payment types and proceed to the checkout**
+#### Select a payment type and complete checkout
 
 <figure><img src=".gitbook/assets/image (191).png" alt=""><figcaption></figcaption></figure>
 
@@ -234,11 +234,11 @@ In the CXL/Error menu, you’ll see bookings where extra orders (such as excursi
 
 The status in the app will be cleared when the guest is traveling home.
 
-### **Export lists**
+### Export lists
 
 Now that we have managed to properly set things up for selling the excursions, we need a way to track down the guests that will book them. Tourpaq offers this functionality either by using the backoffice's **Destination Lists** page (under **Extras -> Destination Lists**) or by using the **Lists** menu item in the App (a guide or guide master login is required to be able to generate the export files).
 
-**Sales ledger**
+#### Sales ledger
 
 Sales ledger is used to check the excursions sold and the amount paid for each order by the booking that has bought it.
 
