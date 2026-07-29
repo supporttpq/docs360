@@ -66,7 +66,7 @@ In **Weekly activities** section, user will be able to see weekly activities def
 
 <figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="359"><figcaption></figcaption></figure>
 
 #### Excursions
 
@@ -80,7 +80,7 @@ Remark: Excursions are displayed also according to stop sales hours setup on the
 
 <figure><img src=".gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="412"><figcaption></figcaption></figure>
 
 ### Destination tab <a href="#destination-tab" id="destination-tab"></a>
 
@@ -96,23 +96,23 @@ Remark: Excursions are displayed also according to stop sales hours setup on the
 
 <figure><img src=".gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="286"><figcaption></figcaption></figure>
 
 #### Maps
 
 Under **Maps** section, user can check the map for current booking resort. Map displayed here can be configured in Tourpaq Office under **Guest App->Maps**. The guide/admin can define here also points of interest on the map by simply clicking on the map and entering "Location Details". It is possible also to upload pictures for defined point of interest.
 
-<figure><img src=".gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 In the mobile application it is displayed like below:
 
-<figure><img src=".gitbook/assets/dc7ce3dc-76df-4ca1-8d75-86e0a3330f77-9348e6031e09ec52b71125dbe9de4388.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/dc7ce3dc-76df-4ca1-8d75-86e0a3330f77-9348e6031e09ec52b71125dbe9de4388.jpg" alt="" width="539"><figcaption></figcaption></figure>
 
 #### Kiss Cam
 
 **Kiss Cam** section allow to user to take photos using predefined overlays from **Guest App->Settings->KissCam Overlays**.
 
-<figure><img src=".gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 User can save photo or publish on social media.
 
@@ -122,7 +122,7 @@ User can save photo or publish on social media.
 
 This tab offers the possibility to the user to check Guest App special features like: Dine-around, In-room breakfast, Fast check-in or Room selection.
 
-<figure><img src=".gitbook/assets/image (20) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (20) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="285"><figcaption></figcaption></figure>
 
 #### Dine Around
 
@@ -145,7 +145,7 @@ This tab offers the possibility to the user to check Guest App special features 
 
 Photo,hotel name, product, date and remaining allotments are displayed here.
 
-![!](https://docs.tourpaq.com/assets/images/b2977b75-1c4d-44d3-be78-15c5f0641343-c389b3a157bfa2aee1be6927e6b0bd2b.jpg)
+<img src="https://docs.tourpaq.com/assets/images/b2977b75-1c4d-44d3-be78-15c5f0641343-c389b3a157bfa2aee1be6927e6b0bd2b.jpg" alt="!" width="375">
 
 Booked products "Dine Around" type are displayed on Booked tab and can be also removed from there.
 
@@ -158,17 +158,17 @@ Booked products "Dine Around" type are displayed on Booked tab and can be also r
 * Admin can configure also in Edit Hotel, "Allowed in-room breakfasts per week" from Edit Hotel.
 * Next step is to define the product "In Room Breakfast" when logged-in as a supplier. The resource on the "In Room Breakfast" product should be the hotel from the booking and the allotments should be generated here. "In Room Breakfast" product is available for reservation in the app.:
 
-<figure><img src=".gitbook/assets/4055c3a6-eb50-4f03-abdf-d4ba9c047a3e-c2aaf6d66c211f21cd7288c8f34a0138.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/4055c3a6-eb50-4f03-abdf-d4ba9c047a3e-c2aaf6d66c211f21cd7288c8f34a0138.jpg" alt="" width="360"><figcaption></figcaption></figure>
 
 When ordering "In Room Breakfast" from the application, guests can select the hour on which the product will be booked:
 
-![!](https://docs.tourpaq.com/assets/images/880897a4-322c-4e0e-9ba9-b8b82a6d84ff-34b7860dcc3087ccd94fa6fc0baf7c4b.jpg)
+<img src="https://docs.tourpaq.com/assets/images/880897a4-322c-4e0e-9ba9-b8b82a6d84ff-34b7860dcc3087ccd94fa6fc0baf7c4b.jpg" alt="!" width="375">
 
 #### Fast Check in
 
 **Fast Check in** give guests the possibility to do fast check-in at hotel where they are staying from home. Information like first name and last name, passport number, nationality and date of birth should be filled in in order to enable the "Fast Check in".
 
-![!](https://docs.tourpaq.com/assets/images/259c9e95-8548-4164-bca5-ceeafb6132c2-60197085a5202e014d32a59f6326c516.jpg)
+<img src="https://docs.tourpaq.com/assets/images/259c9e95-8548-4164-bca5-ceeafb6132c2-60197085a5202e014d32a59f6326c516.jpg" alt="!" width="375">
 
 Information added here will be updated on the booking and after that Hotel List will be sent to the hotel by the supplier from **Agent->Hotel List**.
 
@@ -180,4 +180,4 @@ From **Insider Tips** section guest will be able to find out insider tips relate
 
 Tips entered here are available for guest when accessing "Insider tips" section.
 
-![!](https://docs.tourpaq.com/assets/images/0fb0190b-0984-463f-8c88-d7b74570cc03-3099e97761a183f92ef99197bc334bfe.jpg)
+<img src="https://docs.tourpaq.com/assets/images/0fb0190b-0984-463f-8c88-d7b74570cc03-3099e97761a183f92ef99197bc334bfe.jpg" alt="!" width="375">
