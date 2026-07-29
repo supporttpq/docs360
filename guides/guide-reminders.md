@@ -7,14 +7,6 @@ Each reminder consists of a message sent **from** one guide **to** another guide
 
 The page displays reminders available to you. It supports filtering, reviewing past reminders, and checking scheduled-notification status.
 
-Access to this menu is **restricted**. It is available **only** for the following user types:
-
-* **Guide Master**
-* **Guide Teams**
-* **Sales Ledger**
-
-If your role is not listed, you cannot see or access the Guide Documents module.
-
 ### Purpose
 
 This feature ensures that guides can coordinate tasks, share important notes, and set scheduled notifications for activities such as:
@@ -25,6 +17,16 @@ This feature ensures that guides can coordinate tasks, share important notes, an
 * Scheduled alerts that require action at a specific time.
 
 By providing a reminder overview, guides can easily track what has been scheduled, what requires attention, and whether a reminder has been completed or acknowledged.
+
+### Requirements
+
+Access to this menu is **restricted**. It is available **only** for the following user types:
+
+* **Guide Master**
+* **Guide Teams**
+* **Sales Ledger**
+
+If your role is not listed, you cannot see or access the Guide Documents module.
 
 ### Instructions
 

@@ -21,15 +21,21 @@ First, a user will enter their username and a password. Then, instead of immedia
 
 ### Working principle <a href="#working-principle" id="working-principle"></a>
 
-* **Super Administrator** This feature will be activated by a Super Admin from Users → Companies → Feature Access.
+#### Super Administrator
+
+This feature will be activated by a Super Admin from Users → Companies → Feature Access.
 
 <figure><img src=".gitbook/assets/image (36) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* **System Setup** We'll add a new setting window in order to choose what 2FA methods will be used. It's recommended to select all methods. But, it will be up to you.
+#### System Setup
+
+We'll add a new setting window in order to choose what 2FA methods will be used. It's recommended to select all methods. But, it will be up to you.
 
 <figure><img src=".gitbook/assets/image (37) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* **User setup** We will set the user's email and password that will be used for authentication
+#### User setup
+
+We will set the user's email and password that will be used for authentication
 
 <figure><img src=".gitbook/assets/image (38) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -41,7 +47,7 @@ If any of the fields are wrong, the user's profile will not be saved and an erro
 
 **Note: The first field is mandatory.**
 
-* **Main LOGIN screen**
+#### Main LOGIN screen
 
 After the login will be made as it is now, the user will complete the username and password, and then a new pop-up will appear with the following text:
 
@@ -54,18 +60,21 @@ In this pop-up, we’ll have the following elements:
 * Redirection to another method of verification, just if it exists.
 * Details regarding the company, in order to not leaving the user locked out
 
-### 2 FA Methods <a href="#id-2-fa-methods" id="id-2-fa-methods"></a>
+### 2FA methods <a href="#id-2-fa-methods" id="id-2-fa-methods"></a>
 
-* **Text Message**
-  * Text messages for two-factor authentication send a login code to a mobile device number you register with the account (in a User case it will be sent to the phone number from the User's profile, and in a Customer case it will be sent to the Customer mobile number). This is the most streamlined form of 2FA.
-  * In addition, personal phone plans may not offer service everywhere, which risks a user locking themselves out of their accounts while on an international business trip.
-*   **Email**
+#### Text message
 
-    * Text messages for two-factor authentication send a login code to a mail address you register with the account (in a User case it will be sent to the email from the User's profile, and in a Customer case it will be sent to the Customer email address).
-    * Any internet connection is enough to access your account.
+* Text messages for two-factor authentication send a login code to a mobile device number you register with the account (in a User case it will be sent to the phone number from the User's profile, and in a Customer case it will be sent to the Customer mobile number). This is the most streamlined form of 2FA.
+* In addition, personal phone plans may not offer service everywhere, which risks a user locking themselves out of their accounts while on an international business trip.
 
-    **Note: The details from the user: Email and phone number are usually used into the Select Offer Template. Still, if the user doesn’t want these details to be displayed, just simply mark this checkbox:**
-* **Google Authenticator Methods**
+#### Email
+
+* Text messages for two-factor authentication send a login code to a mail address you register with the account (in a User case it will be sent to the email from the User's profile, and in a Customer case it will be sent to the Customer email address).
+* Any internet connection is enough to access your account.
+
+**Note: The details from the user: Email and phone number are usually used into the Select Offer Template. Still, if the user doesn’t want these details to be displayed, just simply mark this checkbox:**
+
+#### Google Authenticator methods
 
 We will set the user email, and we will generate the QR code that will be used for authenticator
 
@@ -96,7 +105,7 @@ After you install the app, you will have 2 possibilities to get your code:
 
 <figure><img src=".gitbook/assets/google_auth_genarated_code-16b7157a778acd7f80c489a483688cb5.png" alt=""><figcaption></figcaption></figure>
 
-**Enter the Encoded key**
+**Enter the encoded key**
 
 * copy the encoded key from the user authenticator
 * click on enter a setup key on your device

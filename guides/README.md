@@ -1,8 +1,6 @@
-# Guide Teams
+# Guide teams
 
-##
-
-## **Overview**
+### Overview
 
 Guide Teams are used to group guides, assign them to specific resorts, control the payment methods they can use, and manage settings that directly affect the Destination App and back-office workflows.\
 Each Guide Team defines:
@@ -15,7 +13,7 @@ Each Guide Team defines:
 
 This module ensures the correct distribution of responsibilities and permissions for field staff.
 
-## **Purpose**
+### Purpose
 
 Creating a Guide Team allows you to:
 
@@ -27,7 +25,7 @@ Creating a Guide Team allows you to:
 
 Guide Teams are essential for large operations where each resort or region has its own dedicated staff.
 
-## **Preconditions**
+### Requirements
 
 Before creating a new Guide Team, ensure:
 
@@ -36,21 +34,21 @@ Before creating a new Guide Team, ensure:
 3. Payment methods, resorts, and user accounts are already configured (if you plan to assign them).
 4. You know which guides and team members should belong to this new team.
 
-## **How It Works**
+### How it works
 
 <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (8).png" alt=""><figcaption></figcaption></figure>
 
-### **1. Create Guide Teams User**
+#### 1. Create Guide Teams user
 
-#### **Navigate to Guide Teams**
+**Navigate to Guide Teams**
 
 1. Select the **Guide Teams** tab.
 2. Click **Create** to start a new entry.
 
-### **2. Assign Guide Team Details**
+#### 2. Assign Guide Team details
 
 1. Fill in the required fields:
-   * Guide Team Member&#x73;**:**&#x20;
+   * Guide Team Member&#x73;**:**
      * A dropdown allowing you to select the guide(s) team who belongs to this team.
      * A team must contain at least **one guide team**.
    * **Emails:** Enter the guide’s team email addresses for communication.
@@ -64,14 +62,14 @@ Before creating a new Guide Team, ensure:
    * User Team Members - Add team members who are regular Tourpaq users.
 2. Emails will be sent to the guide team during the period specified in the system.
 
-### **3.Saving the Guide Team**
+#### 3. Save the Guide Team
 
 Once all fields are correctly filled:
 
 1. Review the selected guides, resorts, and payment methods.
 2. Click **Save** to create the Guide Team.
 
-## **Summary**
+### Summary
 
 A Guide Team is a key building block for organizing guide operations.\
 Using this documentation, a new employee can confidently:

@@ -4,9 +4,9 @@ The **Company** page shown in your screenshot allows administrators to manage an
 
 <figure><img src="../.gitbook/assets/image (337).png" alt=""><figcaption></figcaption></figure>
 
-### **Edit Company – Page Overview**
+### Edit Company – page overview
 
-#### **Editable Fields:**
+#### Editable fields
 
 | **Field**           | **Description**                                                     |
 | ------------------- | ------------------------------------------------------------------- |
@@ -20,7 +20,7 @@ The **Company** page shown in your screenshot allows administrators to manage an
 | **Phone**           | Main contact phone number for the company.                          |
 | **Fax**             | Fax number (if applicable).                                         |
 
-#### **Functionality You Can Perform:**
+#### Available actions
 
 1. **Edit Company Info**
    * Update any field with current or corrected information.

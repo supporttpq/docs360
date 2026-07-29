@@ -1,10 +1,10 @@
-# Hotel Manager
+# Hotel manager
 
-#### **Overview**
+### Overview
 
 The **Hotel Manager** page allows administrators to manage the list of hotel manager accounts that are associated with the system. Each entry includes basic contact information and management actions such as adding or removing a hotel manager.
 
-#### **Purpose**
+### Purpose
 
 This section provides an overview of all hotel managers configured in the system. It enables users to:
 
@@ -14,7 +14,7 @@ This section provides an overview of all hotel managers configured in the system
 
 This functionality helps maintain accurate contact and operational data for hotels managed within the platform.
 
-#### **Page Structure**
+### Page structure
 
 <figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -27,9 +27,9 @@ This functionality helps maintain accurate contact and operational data for hote
 | **URL**             | (Optional) May link to a related resource or hotel system profile.                                         |
 | **🗑️ Delete icon** | Allows the removal of the selected hotel manager from the list.                                            |
 
-#### **Actions**
+### Actions
 
-**Create a New Hotel Manager**
+#### Create a new hotel manager
 
 1. Click the **Create** button located at the top right of the page.
 2. Fill in the required details in the creation form (e.g., Name, City, Country, Email, URL).
@@ -37,7 +37,7 @@ This functionality helps maintain accurate contact and operational data for hote
 
 <figure><img src=".gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### Fields and Descriptions
+**Fields and descriptions**
 
 | Field                       | Description                                                                          |
 | --------------------------- | ------------------------------------------------------------------------------------ |
@@ -59,7 +59,7 @@ This functionality helps maintain accurate contact and operational data for hote
 | **Link Address**            | Link to the hotel’s website or booking page.                                         |
 | **Quest. Filter**           | A dropdown selection used for filtering purposes (context specific).                 |
 
-**Delete an Existing Hotel Manager**
+#### Delete an existing hotel manager
 
 1. Locate the hotel manager entry you wish to remove.
 2. Click the **🗑️ Delete** icon in the same row.

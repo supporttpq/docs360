@@ -36,7 +36,7 @@ Related page:
 
 ### Purpose
 
-The GDPR module in Tourpaq ensures that personal data of customers who no longer have active or&#x20;
+The GDPR module in Tourpaq ensures that personal data of customers who no longer have active or
 
 The GDPR functionality exists to:
 
@@ -54,8 +54,6 @@ Typical examples:
 * Anonymizing inactive customers
 * Preventing old customer records from exposing unnecessary personal data
 
-
-
 ### Continuous deletion <a href="#continuous-deletion" id="continuous-deletion"></a>
 
 #### Access
@@ -69,7 +67,7 @@ Only users with **System Administration rights** can activate or modify these se
 
 GDPR- Continuous Deletion service settings allows to be activated in different ways depending on which information related to customer is needed to be anonymized. Settings below are relevant only when continuous deletion is choosed.
 
-#### Configuration Options
+#### Configuration options
 
 **1. Activate Continuous Deletion for Customers**
 
@@ -87,7 +85,7 @@ Typical anonymized fields:
 * Address
 * Other personally identifiable information
 
-#### How it works
+**How it works**
 
 When a customer is anonymized:
 
@@ -120,7 +118,7 @@ When a customer is anonymized, the following data is affected:
 
 <figure><img src=".gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
 
-#### Example
+**Example**
 
 A customer traveled three years ago and requested removal of personal information.
 
@@ -132,43 +130,42 @@ Result:
 * Operational history remains intact
 * The customer can no longer be identified by name, email, or phone
 
+**Extras, discounts, and supplements**
 
+Any marked as _Highly Sensitive_ are anonymized.
 
-*   **Extras, discounts, and supplements:**\
-    Any marked as _Highly Sensitive_ are anonymized.
+For extras, a new category “GDPR Sensitive” appears in the booking overview.
 
-    * For extras: a new category “GDPR Sensitive” appears in the booking overview.&#x20;
+This is typically used for:
 
-    This is typically used for:
+* Medical services
+* Health-related requests
+* Accessibility assistance
+* Sensitive passenger information
+* Other privacy-sensitive services
 
-    * Medical services
-    * Health-related requests
-    * Accessibility assistance
-    * Sensitive passenger information
-    * Other privacy-sensitive services
+**Extra configuration**
 
-    #### Configuration
+When configuring an Extra, administrators can mark the Extra as GDPR-related.
 
-    When configuring an Extra, administrators can mark the Extra as GDPR-related.
+This indicates that the information:
 
-    This indicates that the information:
+* Contains sensitive customer data
+* Requires restricted handling
+* May require anonymization or limited visibility
 
-    * Contains sensitive customer data
-    * Requires restricted handling
-    * May require anonymization or limited visibility
+**Extra system behavior**
 
-    #### System behavior
+When an Extra is GDPR-marked:
 
-    When an Extra is GDPR-marked:
-
-    * Access may be restricted depending on permissions
-    * Data may be anonymized according to GDPR rules
-    * Sensitive information should not appear unnecessarily in exports or reports
-    * Visibility may differ between operational users and administrators
+* Access may be restricted depending on permissions
+* Data may be anonymized according to GDPR rules
+* Sensitive information should not appear unnecessarily in exports or reports
+* Visibility may differ between operational users and administrators
 
 <figure><img src=".gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
 
-* For discounts/supplements: displayed as “GDPR Sensitive” in the passenger grid.
+For discounts/supplements: displayed as “GDPR Sensitive” in the passenger grid.
 
 <figure><img src=".gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
 
@@ -218,7 +215,7 @@ Deletes automatically generated hotel lists older than the configured number of 
 
 <figure><img src=".gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
 
-#### GDPR Log
+#### GDPR log
 
 All anonymization activities are logged and can be reviewed under:\
 **Setup → GDPR → Log**\

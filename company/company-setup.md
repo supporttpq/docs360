@@ -1,18 +1,18 @@
-# Company Setup
+# Company setup
 
-### **Overview / Purpose**
+### Overview&#x20;
 
 This section explains how companies, brands, and users are created and configured within Tourpaq. Proper setup ensures smooth booking operations, financial management, and role-based access control. Only Superadministrator users can create new companies, after which administrators and other roles manage brands and users for their company.
 
 ***
 
-## **How It Works**
+### How it works
 
-#### **Company Creation**
+#### Company creation
 
 A company can be created only by a Superadministrator user. Those who wish to create a new company are advised to contact Tourpaq Support. A company can be created in two ways:
 
-#### **Manual Setup**
+**Manual setup**
 
 This page describes the **New Company** screen used to create a new company account, configure subscription settings, and define the initial administrator user.
 
@@ -22,7 +22,7 @@ The form is split into two main sections: company details (left side) and accoun
 
 ***
 
-### Overview
+**Overview**
 
 The New Company screen is used for:
 
@@ -34,7 +34,7 @@ The New Company screen is used for:
 * Fill in basic company details: Name, Address, Country, Postcode, IBAN, CVR, Phone, Fax.
 * After the company is created, a **Brand** and an **Admin user** must be created first.
 
-### Company Information (Left Side)
+**Company information (left side)**
 
 Name \* - The official company name. This is a required field and is used as the primary identifier of the company in the system.
 
@@ -56,7 +56,7 @@ Fax - Optional fax number.
 
 ***
 
-### Subscription and Admin User (Right Side)
+**Subscription and admin user (right side)**
 
 Plan Type \* - Defines the subscription plan assigned to the company. Default value is typically **TourpaqBasic**.
 
@@ -68,7 +68,7 @@ Uses Elastic API - Checkbox that enables integration with Elastic API services f
 
 ***
 
-### Administrator Account
+**Administrator account**
 
 This section defines the first user who will manage the company.
 
@@ -86,11 +86,11 @@ Confirm Password \* - Must match the password field to ensure correctness.
 
 ***
 
-### Brand Configuration Table
+**Brand configuration table**
 
 At the bottom of the screen, there is a table used to define company-level brand entries.
 
-#### Columns
+**Columns**
 
 * Brand Name: Name of the brand under the company
 * Phone: Contact number for the brand
@@ -101,7 +101,7 @@ At the bottom of the screen, there is a table used to define company-level brand
 
 ***
 
-### Actions
+**Actions**
 
 Save - Creates the company with the provided configuration. All required fields must be valid before saving.
 
@@ -111,7 +111,7 @@ Add Agency - Adds a new brand or agency entry to the bottom table. Each entry ca
 
 ***
 
-### Validation Rules
+**Validation rules**
 
 * Fields marked with \* are required
 * Password and Confirm Password must match
@@ -121,7 +121,7 @@ Add Agency - Adds a new brand or agency entry to the bottom table. Each entry ca
 
 ***
 
-### Notes
+**Notes**
 
 After saving, the system will:
 
@@ -132,7 +132,7 @@ After saving, the system will:
 
 If agency or brand entries are added, they will be linked to the newly created company.
 
-#### **Automated Setup**
+**Automated setup**
 
 * Minimal company and user info can be entered via API.
 * At least one agency must be created, which automatically creates a WebUser and Windows Service user.
@@ -140,9 +140,9 @@ If agency or brand entries are added, they will be linked to the newly created c
 
 ***
 
-## **Manual Setup**
+#### Manual setup
 
-#### **Brand Creation**
+**Brand creation**
 
 Each brand requires specific metadata for proper booking, ticketing, insurance, and web functionality.
 
@@ -177,7 +177,7 @@ Each brand requires specific metadata for proper booking, ticketing, insurance, 
 <figure><img src="../.gitbook/assets/customized-stars-header-122824a932809b8c5272a49b5b95b3cf.png" alt=""><figcaption></figcaption></figure>
 ```
 
-#### **User Creation**
+**User creation**
 
 Users are assigned roles with permissions tailored to their responsibilities.
 
@@ -208,7 +208,7 @@ Users are assigned roles with permissions tailored to their responsibilities.
 
 ***
 
-### **Key Features / Functions**
+**Key features / functions**
 
 * **Role-Based Access:** Users have permissions according to their roles (Admin, Sales, Financial, etc.)
 * **Booking & Web Integration:** Brands and users control booking IDs, WebBooking access, and ticket settings
@@ -217,7 +217,7 @@ Users are assigned roles with permissions tailored to their responsibilities.
 
 <figure><img src="../.gitbook/assets/image (28) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### **Notes / Best Practices**
+**Notes / best practices**
 
 * Ensure **ID ranges for bookings, offers, gift cards, and vouchers** do not overlap across brands.
 * First brand and admin must be created by a Superadmin; afterward, admins can manage additional brands and users.
@@ -225,15 +225,15 @@ Users are assigned roles with permissions tailored to their responsibilities.
 * Use password validity and 2FA settings to enhance security.
 * Update contact details, financial, and insurance info as needed to avoid operational issues.
 
-## Automated Setup <a href="#automated-setup" id="automated-setup"></a>
+#### Automated setup <a href="#automated-setup" id="automated-setup"></a>
 
-### **Overview / Purpose**
+**Overview / purpose**
 
 The Automated Setup feature allows for quick creation of a new company, along with its initial user and agency, through a streamlined API process. This reduces manual entry and ensures that necessary default users (WebUser and Windows Service) are created automatically.
 
 <figure><img src="../.gitbook/assets/image (29) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### **How It Works**
+**How it works**
 
 1. Navigate to: **USERS → Company → New API**.
 2. Fill in the required **Company Information**:
@@ -266,7 +266,7 @@ These default users are ready for use and linked to the newly created company.
 
 <figure><img src="../.gitbook/assets/image (30) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### **Key Features / Functions**
+**Key features / functions**
 
 * Fully automated company, agency, and user creation.
 * Automatic creation of essential users (WebUser & Windows Service) without extra steps.
@@ -275,7 +275,7 @@ These default users are ready for use and linked to the newly created company.
 
 ***
 
-### **Examples / Scenarios**
+**Examples / scenarios**
 
 1. **New Travel Agency Setup:**
    * Fill company details: “Torpak DK” type “Tour Operator,” currency “EUR,” country “Denmark.”

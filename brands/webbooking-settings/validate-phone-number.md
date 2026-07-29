@@ -1,12 +1,12 @@
-# Validate Phone Number
+# Validate phone number
 
-### **Overview / Purpose**
+### Overview / purpose
 
 Tourpaq WebBooking allows brands to collect customer phone numbers in a **split format** to ensure correct international dialing. This improves data accuracy and ensures phone numbers are properly formatted for booking confirmations and communications.
 
 ***
 
-### **How It Works**
+### How it works
 
 * The phone number field is split into **two parts**:
   1. **Country Code** – pre-filled based on the selected country but editable via a dropdown list.
@@ -16,28 +16,28 @@ Tourpaq WebBooking allows brands to collect customer phone numbers in a **split 
 
 ***
 
-### **Key Features / Functions**
+### Key features / functions
 
-#### **Country Code Field**
+#### Country code field
 
 * Autofilled based on the selected country.
 * Editable to allow a different country code from the dropdown list.
 * Uses country codes defined by the system (configured by Super Administrators).
 
-#### **Phone Number Field**
+#### Phone number field
 
 * Accepts only numeric characters.
 * Minimum length: 8 digits.
 * Validates input to prevent incorrect entries.
 
-#### **Full Number Saving**
+#### Full number saving
 
 * If the **country code differs from the selected country**, the system saves the **complete number,** including the prefix.
 * If the **country code matches the country**, the phone number is saved **without a prefix** and displayed correctly on the booking.
 
 <figure><img src="../../.gitbook/assets/image (167).png" alt=""><figcaption></figcaption></figure>
 
-### **Examples / Scenarios**
+### Examples / scenarios
 
 1. **Matching Country Code**
    * Country: Denmark (+45)
@@ -53,7 +53,7 @@ Tourpaq WebBooking allows brands to collect customer phone numbers in a **split 
 
 ***
 
-### **Notes / Best Practices**
+### Notes / best practices
 
 * Ensure the **checkbox in Brand → Web Booking Settings** is enabled to activate this feature.
 * Regularly update **country codes** in the system to reflect valid international dialing codes.

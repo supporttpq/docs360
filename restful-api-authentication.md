@@ -1,13 +1,13 @@
 # Restful API authentication
 
-#### Overview
+### Overview
 
 The **Tourpaq Export API** uses **token-based authentication** to ensure secure access.\
 Authentication tokens are issued via the `/api/token` endpoint and are required for all subsequent API calls.
 
 ***
 
-### Requesting a Token
+### Requesting a token
 
 The authentication token can be requested by making a **POST** call to:
 
@@ -15,7 +15,7 @@ The authentication token can be requested by making a **POST** call to:
 https://api.tourpaq.com/api/token
 ```
 
-#### Example Request (using Fiddler)
+#### Example request (using Fiddler)
 
 ```
 POST https://api.tourpaq.com/api/token HTTP/1.1
@@ -30,7 +30,7 @@ Origin: null
 grant_type=password&scope=read&username=name&password=password123
 ```
 
-#### Example Response
+#### Example response
 
 ```json
 {
@@ -43,7 +43,7 @@ grant_type=password&scope=read&username=name&password=password123
 
 ***
 
-#### Request Parameters
+#### Request parameters
 
 | Parameter       | Description                                                                                |
 | --------------- | ------------------------------------------------------------------------------------------ |
@@ -54,7 +54,7 @@ grant_type=password&scope=read&username=name&password=password123
 
 ***
 
-#### Authorization Header
+#### Authorization header
 
 The **Authorization** header must use **Basic authentication**.\
 The value should be a **Base64-encoded** string containing the **client\_id** and **secret**, separated by a colon `:`.
@@ -83,7 +83,7 @@ secret: 5ad20e05e46f6e4b8eda95f344eca10b5
 
 ***
 
-#### Response Fields
+#### Response fields
 
 | Field              | Description                                                                                                  |
 | ------------------ | ------------------------------------------------------------------------------------------------------------ |
@@ -94,7 +94,7 @@ secret: 5ad20e05e46f6e4b8eda95f344eca10b5
 
 ***
 
-### Making an API Request
+### Making an API request
 
 Once the access token is obtained, include it in the **Authorization** header for all API calls:
 
@@ -112,7 +112,7 @@ Authorization: Bearer vtbwcg-TmHnA-..._HqJ5bJ965iB0EVC_TEcjGNkRZ3OOOVKAGw
 
 ***
 
-### Refreshing the Token
+### Refreshing the token
 
 When the **Access Token expires**, the API will respond with:
 
@@ -124,7 +124,7 @@ WWW-Authenticate: Bearer
 
 In this case, a **new Access Token** must be requested using the **Refresh Token**.
 
-#### Example Request
+#### Example request
 
 ```
 POST https://api.tourpaq.com/api/token HTTP/1.1
@@ -143,7 +143,7 @@ The response will contain a new **access\_token** and **refresh\_token** pair.
 
 ***
 
-#### Summary
+### Summary
 
 | Action               | Endpoint                                    | Method | Authentication                   |
 | -------------------- | ------------------------------------------- | ------ | -------------------------------- |

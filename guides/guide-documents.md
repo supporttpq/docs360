@@ -1,20 +1,12 @@
 # Guide Documents
 
-### **Overview**
+### Overview
 
 The **Guide Documents** menu is a dedicated module used for storing, managing, and distributing documents needed by guide teams during daily operations. Each document can be associated with an agency, marked for guide teams, and optionally shared with customers. The page displays all uploaded files in a structured table, allowing users to quickly identify, edit, or remove guide-related materials.
 
-Access to this menu is **restricted**. It is available **only** for the following user types:
-
-* **Guide Master**
-* **Guide Teams**
-* **Sales Ledger**
-
-Users outside these roles will not see or access the Guide Documents module.
-
 ***
 
-### **Purpose**
+### Purpose
 
 The Guide Documents module ensures that all guides and relevant administrative teams have easy access to the latest and most accurate information for each destination or operation. Its main purposes include:
 
@@ -27,15 +19,27 @@ By providing a structured and controlled environment for guide documentation, th
 
 ***
 
-### **Instructions**
+### Requirements
 
-#### **1. Access the Guide Documents Menu**
+Access to this menu is **restricted**. It is available **only** for the following user types:
+
+* **Guide Master**
+* **Guide Teams**
+* **Sales Ledger**
+
+Users outside these roles will not see or access the Guide Documents module.
+
+***
+
+### Instructions
+
+#### 1. Access the Guide Documents menu
 
 1. Log in with a user account that has one of the following roles:\
    **Guide Master**, **Guide Teams**, or **Sales Ledger**.
 2. Navigate to **Guide Documents** in the main menu.
 
-#### **2.  Document List**
+#### 2. Document list
 
 Each entry in the table includes the following fields:
 
@@ -50,7 +54,7 @@ Each entry in the table includes the following fields:
 * **For Customers** – Indicates whether the document is visible to customers (green checkmark = visible).
 * **Actions** – Icons for deleting the document.
 
-#### **3. Upload a New Document (only for Guide Teams)**
+#### 3. Upload a new document (only for Guide Teams)
 
 <figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -65,14 +69,14 @@ Each entry in the table includes the following fields:
 4. Choose whether the document should be **visible to customers**.
 5. Save the document.
 
-#### **4. Edit an Existing Document**
+#### 4. Edit an existing document
 
 1. Click the **edit** icon next to the document.
 2. Update the title, description, file, or visibility settings.
 3. Save your changes.
 
-#### **5. Delete a Document**
+#### 5. Delete a document
 
 1. Click the **trash** icon next to the document.
 2. Confirm the deletion.\
-   &#xNAN;_&#x4E;ote: Deleted documents cannot be restored._
+   \&#xNAN;_Note: Deleted documents cannot be restored._

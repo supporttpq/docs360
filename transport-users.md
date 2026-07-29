@@ -1,12 +1,12 @@
-# Transport Users
+# Transport users
 
-### **Overview**
+### Overview
 
 The **Transport Users** page displays a list of users who are assigned to manage or interact with specific transports within the system. Each entry links a user account to one or more transport codes and, when applicable, an airline. This page is typically used by administrators to review, add, or update which users are associated with transport operations.
 
 ***
 
-### **Purpose**
+### Purpose
 
 * To provide a centralized overview of all users involved in transport handling.
 * To show which transport codes are assigned to each user.
@@ -15,11 +15,11 @@ The **Transport Users** page displays a list of users who are assigned to manage
 
 ***
 
-### **Page Structure & Fields**
+### Page structure and fields
 
 <figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (15).png" alt=""><figcaption></figcaption></figure>
 
-#### **Table Columns**
+#### Table columns
 
 | **Column**     | **Description**                                                                                                                                                                   |
 | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -28,9 +28,9 @@ The **Transport Users** page displays a list of users who are assigned to manage
 | **Transports** | A list of transport codes assigned to the user. Users may be associated with one or multiple transport identifiers. Each code represents a specific transport route or operation. |
 | **Airline**    | The airline associated with the user, if applicable (e.g., _Airseven_). Some users may not have an airline assigned.                                                              |
 
-### **Actions**
+### Actions
 
-#### **Create Button**
+#### Create button
 
 <figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
@@ -44,7 +44,7 @@ The **Transport Users** page displays a list of users who are assigned to manage
 
 ***
 
-### **Usage Instructions**
+### Usage instructions
 
 1. **View Existing Users**
    * Browse the list to see all registered transport users, their usernames, and assigned transports.
@@ -61,7 +61,7 @@ The **Transport Users** page displays a list of users who are assigned to manage
 
 ***
 
-### **Tips**
+### Tips
 
 * Ensure that each transport operation has an assigned responsible user to maintain correct operational workflow.
 * Use consistent naming conventions for easier auditing.
