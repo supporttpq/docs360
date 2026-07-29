@@ -50,7 +50,7 @@ When a customer makes a booking through the Web Booking, extras behave as follow
   * One for **homebound** extras
 * Only the extras that are **eligible for the corresponding direction** are shown.
 * Customers can select extras per passenger and per direction. Once selected, the extras are **saved correctly** to the booking.
-* If no products are available on one direction, or no extras are eligible, the category for that direction will simply **not be displayed**.
+* If no products are available on one direction, or no extras are eligible, the category for that direction will **not be displayed**.
 
 ***
 
