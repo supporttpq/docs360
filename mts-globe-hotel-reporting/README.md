@@ -37,7 +37,7 @@ Each file must follow a strict naming structure based on the booking action type
 | Cancelled Bookings | `XXXX_canx_20170907.csv`  |
 | Modified Bookings  | `XXXX_amend_20170907.csv` |
 
-#### Notes
+### Notes
 
 * `XXXX` = Distributor code (the "Brand Code" from the brand page is used as the distributor. This is the same code used for flight transfer. Brand Code; this is the name of the Brand.)
 * Date format = `YYYYMMDD`
@@ -54,7 +54,7 @@ The import file must use the following format:
 | Separator      | Semicolon `;`     |
 | Text Delimiter | Double Quotes `"` |
 
-#### Example
+### Example
 
 ```csv
 "Office";"Distributor";"Reference";"Pax Name"
@@ -146,7 +146,7 @@ When a booking is modified:
 
 ***
 
-## Product Information
+### Product Information
 
 | Field  | Required | Description                 |
 | ------ | -------- | --------------------------- |
@@ -157,7 +157,7 @@ When a booking is modified:
 
 ***
 
-## Product Type Codes
+#### Product Type Codes
 
 | Code | Meaning                    |
 | ---- | -------------------------- |

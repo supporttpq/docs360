@@ -1,14 +1,14 @@
 # Users
 
-## **Users and Roles in Tourpaq**
+## Users and roles in Tourpaq
 
-### **Overview / Purpose**
+### Overview / purpose
 
 Tourpaq manages access to its system using **user roles**, which define what each user can view, edit, or manage. This ensures secure, role-based access and prevents unauthorized changes in bookings, payments, or configurations. Each role has its own scope of permissions, ranging from system-wide control to limited operational functions.
 
 ***
 
-### **How It Works**
+### How it works
 
 * Each user is assigned to a **company** and, optionally, one or more **agencies** within that company.
 * A **role** determines the level of access. Only one role can be assigned to a user.
@@ -18,7 +18,7 @@ Tourpaq manages access to its system using **user roles**, which define what eac
 
 ***
 
-### **Key Features / Functions by Role**
+### Key features / functions by role
 
 #### 🔑 **Super Administrator**
 
@@ -198,7 +198,7 @@ The guide master user type is used as a supervising role for the guides, being a
 
 ***
 
-### **Examples or Scenarios**
+### Examples or scenarios
 
 * A **Super Administrator** sets up a new company, creates agencies, and configures user roles.
 * An **Administrator** at a travel agency creates new bookings, manages hotels, and oversees payments for their company.
@@ -209,7 +209,7 @@ The guide master user type is used as a supervising role for the guides, being a
 
 ***
 
-### **Notes / Best Practices**
+### Notes / best practices
 
 * Always assign the **minimum role necessary** to complete a user’s tasks.
 * Remember: only **one Super Administrator** can exist in a system.
