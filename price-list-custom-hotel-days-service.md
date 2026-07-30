@@ -179,7 +179,9 @@ The fictive transport room is not shown on the customer ticket.
 When all of the following conditions are met:
 
 * The booking uses **Custom Hotel Days**
-* A **Transport Hotel**  is configured (Hotel -> Room Type -> Link -> Is Fictive = True)
+*   A **Transport Hotel**  is configured (Hotel -> Web -> General Settings -> Transport hotel = True)&#x20;
+
+    <figure><img src=".gitbook/assets/30.07.2026_16.48.10_REC.png" alt=""><figcaption></figcaption></figure>
 * The room in the Transport Hotel is marked as **Fictive**
 
 Tourpaq allows the booking to contain:
@@ -210,17 +212,6 @@ Inside the Custom Hotel Day Booking, create or configure a room with the followi
 <figure><img src=".gitbook/assets/06.07.2026_13.20.50_REC.png" alt=""><figcaption></figcaption></figure>
 
 A fictive room is intended only for operational purposes and is not treated as a normal accommodation room.
-
-***
-
-### Custom Hotel Days
-
-When creating a booking with **Custom Hotel Days**, the passenger can now have:
-
-* a normal hotel stay
-* a fictive Transport Hotel stay covering the transport period
-
-The overlapping dates are accepted because the Transport Hotel validation is skipped for fictive rooms.
 
 ***
 

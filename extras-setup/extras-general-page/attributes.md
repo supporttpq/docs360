@@ -29,7 +29,7 @@ The _Attributes_ tab displays all current tags or characteristics assigned to th
 #### Fields
 
 * **Attributes**: Displays the current attribute(s) applied. In this example, the attribute is:\
-  &#xNAN;**→ Birthday**\
+  **→ Birthday**\
   This could relate to special configurations, offers, or logic specific to birthday-related services.
 * **Edit Button**: Click this button to open the attribute editor and modify existing attributes or add new ones.
 * **Automatically Select Default Attribute Value**:\
