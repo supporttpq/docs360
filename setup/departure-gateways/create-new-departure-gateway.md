@@ -17,7 +17,7 @@ Setup → Destinations → Departure Gateways → Create
 
 ### Required Fields
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 IATA Code - Three-letter airport code, for example OSL, ARN, CPH. Must be unique in the system. Used in flight matching and integrations.
 
@@ -42,7 +42,7 @@ Internet (Checkbox) - If enabled Departure gateway is available for online booki
 
 These values must correspond with the selected timezone.
 
-URL Alias - Used for web routing or SEO friendly URLs if applicable. Optional unless required by web configuration.&#x20;
+URL Alias - Used for web routing or SEO friendly URLs if applicable. Optional unless required by web configuration.
 
 ### Expected Behavior
 

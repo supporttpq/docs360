@@ -6,7 +6,7 @@ The **Destination** page (under **Setup → Destination**) lets you create and m
 
 Destinations are shared master data. They are used to group **resorts** and control where **extras** can be sold.
 
-<figure><img src="../.gitbook/assets/destinationmain-e8f3152d7db437457e91ef7405246a36.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/destinationmain-e8f3152d7db437457e91ef7405246a36.png" alt=""><figcaption></figcaption></figure></div>
 
 ### How destinations are used
 
@@ -17,7 +17,7 @@ This keeps bookings, reporting, and availability logic aligned with the correct 
 
 ### Create a destination <a href="#destination-create" id="destination-create"></a>
 
-<figure><img src="../.gitbook/assets/destinationsave-16eb115620cee510abdf3601f4378f05.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/destinationsave-16eb115620cee510abdf3601f4378f05.png" alt=""><figcaption></figcaption></figure></div>
 
 {% stepper %}
 {% step %}
@@ -82,13 +82,13 @@ Click **Save** to create the destination.
 
 A resort can reference a destination.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 #### Extras
 
 An extra resource can be associated with a destination.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 ### Notes and best practices
 
@@ -99,16 +99,16 @@ An extra resource can be associated with a destination.
 
 ### Passenger Information
 
-#### **Overview**
+#### Overview
 
-The **Passenger Information** section, found under **Setup → Destination**, allows the user to define informational messages related to a specific destination.\
+The **Passenger Information** section, found under **Setup → Destination**, allows administrators to define informational messages for a specific destination.\
 These entries control what information is associated with that destination and can be used to provide guests with destination-specific notes such as arrival guidelines, service information, or important updates.
 
 Passenger Information is managed per destination and can include conditions based on **stay period** and **booking period**.
 
-#### **Purpose**
+#### Purpose
 
-The purpose of the **Passenger Information** page is to:
+The purpose of the **Passenger Information** section is to:
 
 * Manage destination-level informational content that can later be used in various parts of the system or shared with guests.
 * Define and control which information applies to passengers depending on their **travel dates** or **booking dates**.
@@ -116,15 +116,15 @@ The purpose of the **Passenger Information** page is to:
 
 #### Instructions
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 **Accessing Passenger Information**
 
 1. Go to **Setup → Destination**.
-2. Select the desired **destination** (e.g., _CHQ_).
+2. Select the required **destination** (for example, _CHQ_).
 3. Open the **Passenger Information** tab.
 
-The list will display all entries configured for the selected destination.
+The list displays all entries configured for the selected destination.
 
 | **Column**                 | **Description**                                                                  |
 | -------------------------- | -------------------------------------------------------------------------------- |
@@ -144,82 +144,24 @@ The list will display all entries configured for the selected destination.
    * **Acknowledge** – enable if passengers must confirm they have read the information.
 3. Click **Save** to store the configuration.
 
-#### **Example**
+#### Example
 
 In the provided example:
 
 * The destination **CHQ** has one passenger information entry titled **Dest Errata Def**.
-* It applies to stays from **28-10-2025** to **28-10-2026** and to stays from **01-02-2026** to **28-02-2026**.
+* It applies to stays from **28-10-2025** to **28-10-2026** and booking dates from **01-02-2026** to **28-02-2026**.
 
 {% hint style="info" %}
-**Passenger information allows overlapping periods**
+**Passenger Information allows overlapping periods**
 
-Ex: If fixed info is made for the entire season (28.10.25 - 28.10.26) - Dest errata Def, and another info is made for a short period (01.02.26 - 28.02.26) - Destination passenger information overlap period. Even if the periods overlapping, the system will allow and displayed both on the ticket.
+For example, **Dest errata Def** can apply for an entire season (28.10.25–28.10.26). **Destination passenger information overlap period** can apply for a shorter period (01.02.26–28.02.26). The periods can overlap. The system allows both entries and displays them on the ticket.
 {% endhint %}
 
-* The entrys is marked as _Acknowledged_, meaning passengers are required to confirm it.
+* The entry is marked as _Acknowledged_, meaning passengers must confirm it.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-### FAQ
-
-<details>
-
-<summary>What is a <strong>destination</strong> in Tourpaq?</summary>
-
-A destination is a shared location container.
-
-It is used to group resorts and control where extras can apply.
-
-</details>
-
-<details>
-
-<summary>What’s the difference between <strong>Default name</strong> and <strong>List name</strong>?</summary>
-
-* **Default name** is the standard system name.
-* **List name** is what users typically see in dropdowns and lists.
-
-Keep Default name stable. Optimize List name for readability.
-
-</details>
-
-<details>
-
-<summary>Do I need latitude and longitude?</summary>
-
-Only if your setup uses maps or geo-based filtering.
-
-If you don’t use those features, you can leave coordinates empty.
-
-</details>
-
-<details>
-
-<summary>Why can’t I delete a destination?</summary>
-
-Most common reasons:
-
-* You don’t have permission to delete master data.
-* The destination is referenced by resorts, extras, transports, or historical bookings.
-
-If it is still needed for history, keep it and stop using it going forward.
-
-</details>
-
-<details>
-
-<summary>How do I show an important message for a destination during a specific period?</summary>
-
-Use **Passenger Information**:
-
-1. Add a new entry.
-2. Set **Stay From/To** (and optionally **Booking Date From/To**).
-3. Enable **Acknowledge** if you need confirmation.
-
-</details>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 ### Related pages
 

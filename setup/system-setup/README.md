@@ -2,98 +2,74 @@
 
 ### Overview
 
-**System Setup** is the global configuration for Tourpaq.
+**System Setup** controls company-wide configuration in Tourpaq.
 
-These settings affect the entire company, including bookings, payments, integrations, and reporting.
+These settings affect bookings, payments, integrations, reporting, and communication services.
 
-Go to **Setup → System Setup**.
+Changes can affect every brand and agency.
+
+### Requirements
+
+* **Administrator** rights are required.
+* A safe test environment is recommended for high-impact changes.
+
+### Navigation
+
+To open System Setup:
+
+1. In Tourpaq Office, click **Setup**.
+2. Click **System Setup**.
+
+### Purpose
+
+Use System Setup to:
+
+* Define company defaults for currency, payments, and booking visibility.
+* Control dashboard, reminder, filter, and allotment behavior.
+* Configure email, SMS, and third-party integrations.
+* Set reporting and export parameters.
+
+### System behavior
 
 {% hint style="warning" %}
 Changes apply system-wide.
 
-Test changes in a safe environment when possible.
+Test high-impact changes in a safe environment.
 {% endhint %}
-
-Only users with **Administrator** rights should edit these settings.
 
 Some rules and configurations cannot be deleted manually. Tourpaq removes them programmatically to protect data integrity.
 
-### What you use it for
-
-Use System Setup to:
-
-* Establish **company-wide defaults** such as currency, payment rules, and booking visibility.
-* Control **functional behavior** of dashboards, reminders, filters, and allotments.
-* Configure **communication services**, including SMS and email.
-* Manage **integration credentials** for third-party providers (transport, hotels, GDS, car rental, etc.).
-* Define **reporting and export parameters** to support financial and operational workflows.
-
-Correct setup keeps behavior consistent across brands and agencies. It also reduces errors in pricing, payments, and booking workflows.
-
 ### Main sections
 
-Start here, then drill into the specific area you need:
+Choose the section that matches the required configuration:
 
-* [System Setup – General Information Settings](system-setup-general-information-settings.md)
-* [System Setup – Payment Rate Rules](system-setup-payment-rate-rules.md)
-* [System Setup – Radix Data](system-setup-radix-data.md)
-* [System Setup – Currency](system-setup-currency.md)
-* [System Setup – Deposit Rules](system-setup-deposit-rules.md)
-* [System Setup – SMS Configuration (Twilio)](../../integration/crm-and-marketing/system-setup-sms-configuration-twilio.md)
-* [System Setup – Mail Platform](../../integration/crm-and-marketing/system-setup-mail-platform.md)
-* [System Setup – Auto Europe (Car Rental Integration)](../../integration/car-rental-integration/system-setup-auto-europe-car-rental-integration.md)
-* [System Setup – Hotel Providers](../../integration/hotel-providers/system-setup-hotel-providers.md)
-* [System Setup – Hotel Import](system-setup-hotel-import.md)
-* [System Setup - Transport Providers](system-setup-transport-providers/)
-* [System Setup – GDS Data](system-setup-gds-data.md)
-* [System Setup – Inflight Service](system-setup-inflight-service.md)
-* [System Setup – Firebase Configuration](system-setup-firebase-configuration.md)
-* [System Setup – Travel Lengths](system-setup-travel-lengths.md)
-* [System Setup – Two-Factor Authentication (2F Auth)](system-setup-two-factor-authentication-2f-auth.md)
-* [System Setup – FTP Providers](system-setup-ftp-providers.md)
-* [System Setup - Web Hook Configuration](web-hook-configuration.md)
-* [System Setup – Flight Change Queue](system-setup-flight-change-queue.md)
+#### Company defaults and security
 
-### FAQ
+* [General Information Settings](system-setup-general-information-settings.md)
+* [Radix Data](system-setup-radix-data.md)
+* [Currency](system-setup-currency.md)
+* [Deposit Rules](system-setup-deposit-rules.md)
+* [Travel Lengths](system-setup-travel-lengths.md)
+* [Two-Factor Authentication (2F Auth)](system-setup-two-factor-authentication-2f-auth.md)
 
-<details>
+#### Payments and operations
 
-<summary><strong>Who should edit System Setup?</strong></summary>
+* [Payment Rate Rules](system-setup-payment-rate-rules.md)
+* [Flight Change Queue](system-setup-flight-change-queue.md)
+* [Inflight Service](system-setup-inflight-service.md)
 
-Admins only.
+#### Communication services
 
-Many settings affect bookings, finance, and integrations immediately.
+* [SMS Configuration (Twilio)](../../integration/crm-and-marketing/system-setup-sms-configuration-twilio.md)
+* [Mail Platform](../../integration/crm-and-marketing/system-setup-mail-platform.md)
+* [Firebase Configuration](system-setup-firebase-configuration.md)
 
-</details>
+#### Providers and data exchange
 
-<details>
-
-<summary><strong>Why can’t I delete a rule or configuration?</strong></summary>
-
-Some configuration is protected to avoid breaking references in historical data.
-
-Those items are removed by the system when it is safe to do so.
-
-</details>
-
-<details>
-
-<summary><strong>What should I validate after changing a setting?</strong></summary>
-
-At minimum:
-
-* Create a test booking.
-* Run the relevant export/report.
-* Verify the downstream integration (email/SMS/provider) if impacted.
-
-</details>
-
-<details>
-
-<summary><strong>Do System Setup changes affect all brands?</strong></summary>
-
-Yes. System Setup is company-wide.
-
-Brand-specific configuration is usually handled in brand/agency modules.
-
-</details>
+* [Auto Europe (Car Rental Integration)](../../integration/car-rental-integration/system-setup-auto-europe-car-rental-integration.md)
+* [Hotel Providers](../../integration/hotel-providers/system-setup-hotel-providers.md)
+* [Hotel Import](system-setup-hotel-import.md)
+* [Transport Providers](system-setup-transport-providers/)
+* [GDS Data](system-setup-gds-data.md)
+* [FTP Providers](system-setup-ftp-providers.md)
+* [Web Hook Configuration](web-hook-configuration.md)

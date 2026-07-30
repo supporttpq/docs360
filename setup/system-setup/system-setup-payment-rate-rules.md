@@ -2,11 +2,20 @@
 
 ### Overview
 
-Payment Rate Rules define how a booking is split into one or more payments.
+**Payment Rate Rules** define how Tourpaq splits a booking into payments.
 
-Use them to decide whether customers pay everything at once or in installments.
+They control whether a booking uses one, two, or three payment stages.
 
-Go to **Setup → System Setup → Payment Rate Rules**.
+They work with [Deposit Rules](system-setup-deposit-rules.md), which define payment amounts and deadlines.
+
+### Requirements
+
+* Access to **System Setup** is required.
+* A test booking is recommended before changing live payment behavior.
+
+### Navigation
+
+In Tourpaq Office, go to **Setup → System Setup → Payment Rate Rules**.
 
 {% hint style="warning" %}
 Changes can impact your payment flow system-wide.
@@ -18,11 +27,13 @@ Validate changes on a test booking when possible.
 
 Use payment rate rules to:
 
-* Standardize how payments are split across bookings.
-* Offer deposit-based and installment-based payments.
+* Define the number of payment stages for each booking.
+* Support full payments, deposits, and installments.
 * Keep payment behavior consistent across brands and agencies.
 
 ### Configuration options
+
+The available payment structures are:
 
 | **Rule Type**           | **Description**                                                                     |
 | ----------------------- | ----------------------------------------------------------------------------------- |
@@ -32,65 +43,38 @@ Use payment rate rules to:
 
 ### How it works
 
-* The **deposit** is collected at booking time, or by a defined due date.
-* The **second payment** (if used) is due later, based on your policy.
-* The **final balance** is due by the last payment deadline.
+Payment Rate Rules use these payment stages:
 
-You typically configure **amounts/percentages** and **due dates** in related settings like [System Setup – Deposit Rules](system-setup-deposit-rules.md).
+* A **deposit** is collected at booking time or by its due date.
+* A **second payment** is optional and follows the deposit.
+* A **final balance** is due by the final payment deadline.
+
+Configure payment amounts, percentages, and due dates in [Deposit Rules](system-setup-deposit-rules.md).
+
+### Configuration workflow
+
+Configure payment behavior in this order:
+
+1. In **Payment Rate Rules**, select the required payment structure.
+2. In [Deposit Rules](system-setup-deposit-rules.md), define amounts or percentages.
+3. Set the deposit, second-payment, and final-payment due dates.
+4. Create a test booking and validate the payment schedule.
+
+### Examples
+
+#### Single-rate payment
+
+A customer pays the full booking amount in one payment.
+
+#### Two-rate payments
+
+A customer pays a deposit, then the remaining balance.
+
+#### Three-rate payments
+
+A customer pays a deposit, a second payment, and the remaining balance.
 
 ### Related settings
 
-* [System Setup – Deposit Rules](system-setup-deposit-rules.md)
-* [System Setup – General Information Settings](system-setup-general-information-settings.md)
-
-### FAQ
-
-<details>
-
-<summary><strong>What’s the difference between Payment Rate Rules and Deposit Rules?</strong></summary>
-
-Payment Rate Rules define **how many payments** a booking can have.
-
-Deposit Rules define **how much** is due and **when** it’s due.
-
-</details>
-
-<details>
-
-<summary><strong>When should I use three-rate payments?</strong></summary>
-
-Use three-rate payments if you want a deposit, a mid-point payment, and a final balance.
-
-This is common for longer lead-time bookings.
-
-</details>
-
-<details>
-
-<summary><strong>Do these rules affect all brands and agencies?</strong></summary>
-
-These settings are typically used as company-wide defaults.
-
-If your setup varies by brand, validate the behavior per brand after changes.
-
-</details>
-
-<details>
-
-<summary><strong>What should I test after changing a payment rate rule?</strong></summary>
-
-Create a test booking and verify:
-
-* Which payments are created (deposit/second/balance).
-* Due dates and amounts/percentages.
-* Any related emails, reminders, and exports.
-
-</details>
-
-<details>
-
-<summary><strong>Why can’t I see or edit the due dates or percentages here?</strong></summary>
-
-In many setups, due dates and amounts are configured in [System Setup – Deposit Rules](system-setup-deposit-rules.md) instead.
-
-</details>
+* [Deposit Rules](system-setup-deposit-rules.md)
+* [General Information Settings](system-setup-general-information-settings.md)
