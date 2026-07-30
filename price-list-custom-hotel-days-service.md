@@ -303,7 +303,7 @@ While **Combi Hotels** were previously used to achieve similar results, **Transp
 2. Select the **number of passengers**.
 3. Select the **customer**.
 4. Select the **transport**
-5. Select the **Transport Hotel** configured for Custom Hotel Day bookings.
+5. Select the **Hotel** configured for Transport Hotel
 6. Select **Hotel Only**
 7. Click **Take Allotment**.
 8. Save the **passenger information**.
