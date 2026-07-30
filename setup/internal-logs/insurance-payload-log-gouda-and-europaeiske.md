@@ -1,199 +1,185 @@
+---
+description: Review insurance payload activity sent to Gouda and Europæiske.
+---
+
 # Insurance Payload Log (Gouda & Europæiske)
 
-### Introduction
+## Insurance Payload Log (Gouda & Europæiske)
 
-The **Insurance Payload Log** provides visibility into the data sent from Tourpaq to external insurance providers, specifically **Gouda** and **Europæiske**.
-
-This functionality is directly related to:
-
-* **Brands → General → Insurance** (where insurance providers are configured)
-* **Booking flow** (where insurance is added to passengers)
-* **API integrations** (where data is transmitted to external systems)
-
-The log enables traceability of insurance communication and is primarily used for troubleshooting and audit purposes.
-
-***
+The **Insurance Payload Log** records insurance data sent to **Gouda** and **Europæiske**. Use it to investigate reporting activity for [Travel Insurance](../../travel-insurance/) and [Cancellation Insurance](../../cancellation-insurance/).
 
 ### Overview
 
-The Insurance Payload Log stores structured records of all payloads sent to:
-
-* Gouda
-* Europæiske
-
-The log captures key booking and travel data along with the result of the API transmission.
-
-***
+The log stores one entry for each payload sent to an insurance provider. Each entry includes booking data, travel data, and the transmission result.
 
 ### Purpose
 
-* Provide transparency into data sent to insurance providers
-* Support debugging of API issues
-* Enable verification of successful insurance reporting
-* Maintain a historical record of insurance transactions
+Use the log to:
 
-***
+* Verify insurance reporting.
+* Investigate provider transmission failures.
+* Maintain an audit record of insurance transactions.
 
 ### Requirements
 
-*   Insurance provider configured under **Brands → General → Insurance**
+The log requires:
 
-    <figure><img src="../../.gitbook/assets/image (757).png" alt=""><figcaption></figcaption></figure>
-* Active bookings with Travel or Cancellation insurance
-* API communication enabled between Tourpaq and provider
+* An insurance provider configured under **Brands → General → Insurance**.
+* An active booking with Travel or Cancellation insurance.
+* API communication between Tourpaq and the provider.
 
-***
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (757).png" alt="Insurance provider settings under Brands, General, and Insurance"><figcaption></figcaption></figure></div>
 
 ### Navigation
 
-This log is **available in Setup -> Internal Logs -> Insurance Hystory (Type)**
+The log is available in **Setup → Internal Logs → Insurance Hystory (Type)**.
 
-Access is provided via:
+The following roles can access the log:
 
-* **Elastic (logging platform)**
-* Available to **Tourpaq Support**
+* **Elastic**
+* **Tourpaq Support**
 
-***
+### Interface overview
 
-### Interface Overview
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (772).png" alt="Insurance Payload Log filters and results table"><figcaption></figcaption></figure></div>
 
-<figure><img src="../../.gitbook/assets/image (772).png" alt=""><figcaption></figcaption></figure>
+The interface contains filters and a results table.
 
-The interface consists of two main sections:
+#### Filters
 
-**1. Filters Bar**
+| Field              | Description                                                |
+| ------------------ | ---------------------------------------------------------- |
+| **Date period**    | Defines the period used to retrieve log entries.           |
+| **Select user**    | Limits results to activity from the selected user.         |
+| **Select type**    | Limits results by entity type, such as `InsuranceHistory`. |
+| **Filter type ID** | Limits results by **KeyId**.                               |
+| **Display**        | Loads entries matching the selected filters.               |
+| **Clear**          | Removes the selected filter values.                        |
+| **Export**         | Downloads the displayed result set.                        |
 
-Located at the top of the page:
+#### Results table
 
-* **Date period** – defines the time interval for logs
-* **Select user** – filters logs by user
-* **Select type** – filters by entity type (e.g. _InsuranceHistory_)
-* **Filter type ID** - filters by Key ID
-* **Display** – loads results
-* **Clear** – resets filters
-* **Export** – downloads the result set
+The table groups entries by execution instance, user, and type. Each row records one operation for a specific insurance property.
 
-**2. Results Table**
+| Field              | Description                                                                  |
+| ------------------ | ---------------------------------------------------------------------------- |
+| **KeyId**          | Identifies the booking number. Use this value with **Filter type ID**.       |
+| **Action**         | Identifies the recorded operation, such as `Insert`.                         |
+| **Entity Name**    | Identifies the log entity. Insurance payload entries use `InsuranceHistory`. |
+| **Property Name**  | Identifies the insurance property recorded in the row.                       |
+| **Original Value** | Shows the previous value when an earlier value exists.                       |
+| **New Value**      | Shows the value recorded by the operation.                                   |
+| **Agency**         | Identifies the brand or agency context for the entry.                        |
+| **Description**    | Shows system-generated information about the operation.                      |
 
-Displays log entries grouped by execution instance (timestamp + user + type).
+### Property names
 
-Each entry represents one payload sent to an insurance provider.
+The following **Property Name** values identify insurance payload data:
 
-***
+#### Insurance Booking date
 
-#### Field Description
+Shows the date when insurance was added to the booking. It can differ from the booking creation date.
 
-Each row in the table represents a logged operation on a specific entity property.
+#### Type of insurance
 
-| Field              | Description                                           |
-| ------------------ | ----------------------------------------------------- |
-| **KeyId**          | Booking number                                        |
-| **Action**         | Type of operation performed (e.g. _Insert)_.          |
-| **Entity Name**    | Log type (in this case, _InsuranceHistory_).          |
-| **Property Name**  | The specific field that was modified or recorded.     |
-| **Original Value** | The previous value before the change (if applicable). |
-| **New Value**      | The new value after the operation.                    |
-| **Agency**         | The brand or agency context where the change applies. |
-| **Description**    | Additional system-generated details about the action. |
+Shows the insurance category, such as Travel Insurance. The category determines the provider endpoint and reporting logic.
 
-### Property Names Description
+#### Reporting date to Gouda/Europæsike
 
-Each log entry contains the following fields:
+Shows the date when Tourpaq sent the payload to the provider. Use this value to investigate reporting delays or failures.
 
-#### - Insurance Booking date: Date when the insurance product was added to the booking.
+#### Arrival gateway
 
-* Reflects when insurance became active in the booking
-* May differ from the booking creation date
+Shows the booking's arrival destination. The value can use an IATA code or a configured arrival location.
 
-#### - Type of insurance: Defines the insurance category (Travel Insurance)
+#### Departure date
 
-* Determines which API endpoint and logic are used
+Shows the travel start date from the booking. It supports insurance policy calculations.
 
-#### - Reporting date to Gouda/Europæsike: Date when the payload was sent to the insurance provider.
+#### Status (OK / FAILED)
 
-* Used to track delays or failures in reporting
-* Important for compliance with provider requirements
+Shows the provider transmission result:
 
-#### - Arrival gateway: The arrival destination associated with the booking.
+* **OK** indicates that the provider processed the payload.
+* **FAILED** indicates that the transmission encountered an error.
 
-* Typically corresponds to IATA or configured arrival location
-* Used by insurance provider to determine travel region
+### Configuration steps
 
-#### - Departure date: Start date of the travel.
+The log has no direct configuration. Configure the provider before Tourpaq can record payload activity:
 
-* Used in insurance policy calculation
-* Must align with booking travel dates
+{% stepper %}
+{% step %}
+#### Open the provider settings
 
-#### - Status (OK / FAILED): Indicates the result of the API transmission.
+In **Brands**, open **General**.
+{% endstep %}
 
-Values:
+{% step %}
+#### Select Insurance
 
-* **OK** → Payload successfully processed by provider
-* **FAILED** → Error occurred during transmission
-* Critical for monitoring integration health
-* Used as primary filter during troubleshooting
+Select **Insurance**.
+{% endstep %}
 
-***
+{% step %}
+#### Enter Insurance Agent Username
 
-### Configuration Steps
+Enter the provider username in **Insurance Agent Username**.
+{% endstep %}
 
-No direct configuration is required for the log itself.
+{% step %}
+#### Enter Insurance Agent Password
 
-To ensure logging works correctly:
+Enter the provider password in **Insurance Agent Password**.
+{% endstep %}
 
-1.  Configure insurance provider under:\
-    **Brands → General → Insurance**
+{% step %}
+#### Enter Insurance Agent Code
 
-    <figure><img src="../../.gitbook/assets/image (757).png" alt=""><figcaption></figcaption></figure>
-2. Ensure valid credentials are entered:
-   * Insurance Agent Username
-   * Insurance Agent Password
-   * Insurance Agent Code
-   * Insurance Agency Code
-3. Create a booking with insurance
-4. Trigger insurance reporting (automatic or manual process)
+Enter the provider code in **Insurance Agent Code**.
+{% endstep %}
 
-The system will automatically generate log entries.
+{% step %}
+#### Enter Insurance Agency Code
 
-***
+Enter the agency code in **Insurance Agency Code**.
+{% endstep %}
+{% endstepper %}
 
-### System Behavior
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (757).png" alt="Insurance provider credential fields in Brands settings"><figcaption></figcaption></figure></div>
 
-* A log entry is created each time a payload is sent to Gouda or Europæiske
-* Applies to both Travel and Cancellation insurance
-* Logs are stored in Elastic
-* Data retention is a minimum of **12 weeks**
-* Logs are read-only and cannot be modified
+### System behavior
 
-If transmission fails:
+Tourpaq creates a log entry when it sends a payload to Gouda or Europæiske. The log covers Travel Insurance and Cancellation Insurance.
 
-* Status is marked as **FAILED**
-* Entry remains available for investigation
+Tourpaq stores logs in Elastic for at least 12 weeks. The entries are read-only.
 
-***
+When a transmission fails, Tourpaq records **FAILED**. The entry remains available for investigation.
 
 ### Examples
 
-#### Example 1 – Successful Transmission
+#### Successful transmission
 
-* Booking number: 123456
-* Type of insurance: Travel
-* Reporting date: 01.02.2026
-* Status: OK
+An entry has the following values:
 
-Interpretation:\
-Insurance data was successfully sent and accepted.
+* **KeyId**: `123456`
+* **Type of insurance**: Travel
+* **Reporting date to Gouda/Europæsike**: `01.02.2026`
+* **Status (OK / FAILED)**: **OK**
 
-***
+The provider processed the insurance payload.
 
-#### Example 2 – Failed Transmission
+#### Failed transmission
 
-* Booking number: 123789
-* Type of insurance: Cancellation
-* Reporting date: 02.02.2026
-* Status: FAILED
+An entry has the following values:
 
-Interpretation:\
-Payload was not processed successfully. Investigation required.
+* **KeyId**: `123789`
+* **Type of insurance**: Cancellation
+* **Reporting date to Gouda/Europæsike**: `02.02.2026`
+* **Status (OK / FAILED)**: **FAILED**
 
-***
+Investigate the entry details and provider configuration.
+
+### Related pages
+
+* [Travel Insurance](../../travel-insurance/) configures travel insurance products and provider types.
+* [Cancellation Insurance](../../cancellation-insurance/) configures cancellation insurance and external provider mapping.

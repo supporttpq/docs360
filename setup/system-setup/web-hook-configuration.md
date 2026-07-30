@@ -6,60 +6,82 @@ description: >-
 
 # System Setup – Web Hook Configuration
 
-The Web Hook tab in System Setup is used to enable/disable webhooks per brand and configure an API key per brand.
+### Overview
 
-Go to **Setup → System Setup → Web Hook**.
+**Web Hook** sends hotel-update notifications to an external URL. The configuration applies separately to each brand.
 
-### Web Hook Edit <a href="#web-hook-edit" id="web-hook-edit"></a>
+Web Hook uses **Web Hook URL** from [General Information Settings](system-setup-general-information-settings.md).
 
-To save a configuration for any brand, you must fill in **API key**.
+### Purpose
 
-<figure><img src="../../.gitbook/assets/webHookTab-f11ebd9f02befd9cf500432fe8b575ae.png" alt=""><figcaption></figcaption></figure>
+Use **Web Hook** to keep an external system informed about hotel changes. The external system receives a notification after supported hotel updates.
 
-After enabling the feature for a brand, updating hotel descriptions, photos, or facilities will send a webhook to the target URL configured in [System Setup – General Information Settings](system-setup-general-information-settings.md) → **Other Settings** → **Web Hook URL**.
+### Requirements
 
-<figure><img src="../../.gitbook/assets/webHookURL-3b85bd984339deda202b5169f2cd88ac.png" alt=""><figcaption></figcaption></figure>
+Before enabling webhooks, confirm these requirements:
 
-You can find API details here: [Hotel API webhook](https://docsv2.tourpaq.com/docs/hotel-api/webhook).
+* Administrator access to **System Setup**.
+* A target endpoint for **Web Hook URL**.
+* An **API key** for each enabled brand.
+* Access to the target system for validation.
 
-### FAQ
+### Navigation
 
-<details>
+In Tourpaq Office, open **Setup → System Setup → Web Hook**.
 
-<summary><strong>Is the webhook enabled per company or per brand?</strong></summary>
+### Interface overview
 
-Webhook enablement and the API key are configured per brand in the Web Hook tab.
+The **Web Hook** tab stores configuration for each brand. **API key** is required before a brand configuration can be saved.
 
-</details>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/webHookTab-f11ebd9f02befd9cf500432fe8b575ae.png" alt="Web Hook configuration for a brand, including the API key setting."><figcaption><p>Web Hook API key configuration by brand.</p></figcaption></figure></div>
 
-<details>
+**Web Hook URL** provides the destination used by every enabled webhook.
 
-<summary><strong>Where do I set the target URL?</strong></summary>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/webHookURL-3b85bd984339deda202b5169f2cd88ac.png" alt="General Information Settings showing the Web Hook URL under Other Settings."><figcaption><p>Web Hook URL configuration in General Information Settings.</p></figcaption></figure></div>
 
-Set it in **Setup → System Setup → General Information** → **Other Settings** → **Web Hook URL**.
+### Field descriptions
 
-</details>
+| Field            | Description                                                                                                                                                                        |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **API key**      | Required for each brand configuration. Stores the API key for that brand's webhook configuration. A configuration cannot be saved without this value.                              |
+| **Web Hook URL** | Required before an enabled webhook can reach an external system. Defines the destination URL for webhook notifications. This setting applies through General Information Settings. |
 
-<details>
+### Configuration steps
 
-<summary><strong>What events trigger a webhook?</strong></summary>
+To configure webhooks for a brand:
 
-Hotel updates such as descriptions, photos, and facilities.
+1. In **General Information Settings**, open **Other Settings**.
+2. In **Web Hook URL**, enter the target endpoint.
+3. In **System Setup**, open **Web Hook**.
+4. In **Web Hook**, select the required brand.
+5. In **API key**, enter the brand API key.
+6. Enable webhooks for the brand.
+7. Save the configuration.
+8. Update a test hotel description, photo, or facility.
+9. Confirm that the target system receives the webhook.
 
-</details>
+### System behavior
 
-<details>
+After a brand is enabled, Tourpaq sends webhooks to **Web Hook URL**. Each brand uses its own **API key**.
 
-<summary><strong>Why can’t I save the configuration?</strong></summary>
+Supported hotel events include updates to descriptions, photos, and facilities.
 
-The **API key** is required for saving per brand.
+### Examples
 
-</details>
+#### Hotel content integration
 
-<details>
+A brand uses an external hotel-content platform. Set the platform endpoint in **Web Hook URL**. Then configure the brand **API key** and enable its webhook.
 
-<summary><strong>How can I test that webhooks work?</strong></summary>
+When a hotel description changes, Tourpaq sends a notification to the platform.
 
-Enable the webhook for a test brand, set a test **Web Hook URL**, then update a hotel description/photo/facility and confirm the callback is received.
+#### Multiple brands
 
-</details>
+Two brands require webhook notifications. Configure an **API key** for each brand. Enable webhooks only for brands requiring notifications.
+
+### Related pages
+
+Use these related guides:
+
+* [System Setup](./) describes company-wide configuration.
+* [General Information Settings](system-setup-general-information-settings.md) contains **Web Hook URL**.
+* [Hotel API webhook](https://docsv2.tourpaq.com/docs/hotel-api/webhook) documents the webhook API.

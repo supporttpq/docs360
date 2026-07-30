@@ -2,9 +2,18 @@
 
 ### Overview
 
-Radix Data stores the credentials used for **Radixx** transport reporting in Tourpaq.
+**Radix Data** stores credentials for Radixx transport reporting in Tourpaq.
 
-Go to **Setup → System Setup → Radix Data**.
+Tourpaq uses these credentials to retrieve transport data for reports and exports.
+
+### Requirements
+
+* Valid Radixx credentials are required.
+* Radixx transport reporting must be configured for the company.
+
+### Navigation
+
+In Tourpaq Office, go to **Setup → System Setup → Radix Data**.
 
 {% hint style="warning" %}
 These are sensitive credentials.
@@ -20,7 +29,17 @@ Use Radix Data to:
 * Retrieve transport data for reporting and exports.
 * Keep Radixx credentials in one place.
 
+### System behavior
+
+Tourpaq authenticates against Radixx with the configured credentials.
+
+Incorrect values can block report generation and exports. Update the fields after any credential change in Radixx.
+
 ### Configuration fields
+
+Configure these fields:
+
+All fields are required for Radixx reporting.
 
 | **Field**                       | **Description**                                                   |
 | ------------------------------- | ----------------------------------------------------------------- |
@@ -31,66 +50,25 @@ Use Radix Data to:
 | **TravelPortalBookingAgent**    | Booking agent ID used when retrieving booking and passenger data. |
 | **TravelPortalBookingAgentPWD** | Password for the booking agent ID.                                |
 
-### Usage notes
+### Configuration steps
 
-* These fields are required for Radixx reporting to work.
-* Update values immediately after a credential change in Radixx.
-* Wrong values can block report generation and exports.
+Configure Radix Data in this order:
 
-### Quick checks
+1. Open **Radix Data**.
+2. Enter the **Username** and **Password** credentials.
+3. Enter the TravelPortal values supplied by Radixx.
+4. Save the configuration.
+5. Run a Radixx report.
+6. Validate the result.
 
-Use this list when reporting fails:
+### Troubleshooting
+
+If reporting fails, check these items:
 
 * Verify usernames and passwords first.
 * Confirm the TravelPortal values match Radixx.
 * Re-run the report after saving changes.
 
-### FAQ
+### Related pages
 
-<details>
-
-<summary><strong>Do I need Radix Data if we don’t use Radixx?</strong></summary>
-
-No. It’s only needed for Radixx-based transport reporting.
-
-</details>
-
-<details>
-
-<summary><strong>Where do I get these values?</strong></summary>
-
-Your Radixx administrator provides them.
-
-They are usually issued per portal and booking agent.
-
-</details>
-
-<details>
-
-<summary><strong>Which password should I update if Radixx changes credentials?</strong></summary>
-
-Update the password that matches what was changed in Radixx.
-
-That can be **Password** or **TravelPortalBookingAgentPWD**.
-
-</details>
-
-<details>
-
-<summary><strong>What happens if I enter the wrong values?</strong></summary>
-
-Radixx authentication will fail.
-
-Reports and exports can return errors or empty results.
-
-</details>
-
-<details>
-
-<summary><strong>Who should have access to this screen?</strong></summary>
-
-Limit access to admins who manage integrations.
-
-Treat these values like API secrets.
-
-</details>
+* [System Setup](./)

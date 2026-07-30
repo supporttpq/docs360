@@ -20,7 +20,7 @@ Use this feature to:
 * Reduce response time by alerting the right people immediately.
 * Avoid missed issues by using clear rules for who gets what.
 
-### Tabs Overview
+### Tabs overview
 
 You will see three tabs:
 
@@ -32,9 +32,9 @@ You will see three tabs:
 
 Create contacts that can receive warning emails or SMS messages.
 
-<figure><img src=".gitbook/assets/image (78).png" alt="Warning Contacts list."><figcaption><p>Warning contacts list.</p></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (78).png" alt="Warning Contacts list."><figcaption><p>Warning contacts list.</p></figcaption></figure></div>
 
-<figure><img src=".gitbook/assets/image (79).png" alt="Add or edit a warning contact."><figcaption><p>Add or edit a warning contact.</p></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (79).png" alt="Add or edit a warning contact."><figcaption><p>Add or edit a warning contact.</p></figcaption></figure></div>
 
 #### Warning Sent from E-mail
 
@@ -42,7 +42,7 @@ Set which sender email address is shown on warning emails.
 
 All warning emails will appear to come from this address.
 
-<figure><img src=".gitbook/assets/image (80).png" alt="Set sender email address for warnings."><figcaption><p>Choose the sender email address.</p></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (80).png" alt="Set sender email address for warnings."><figcaption><p>Choose the sender email address.</p></figcaption></figure></div>
 
 #### Warning Notification Rules
 
@@ -50,11 +50,11 @@ Set rules for which warning types each contact should receive.
 
 You can also control how often a warning is sent.
 
-<figure><img src=".gitbook/assets/image (81).png" alt="Warning notification rules list."><figcaption><p>Rules list.</p></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (81).png" alt="Warning notification rules list."><figcaption><p>Rules list.</p></figcaption></figure></div>
 
-<figure><img src=".gitbook/assets/image (82).png" alt="Edit a warning rule."><figcaption><p>Edit a rule.</p></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (82).png" alt="Edit a warning rule."><figcaption><p>Edit a rule.</p></figcaption></figure></div>
 
-### Types of Warnings
+### Types of warnings
 
 Warning names match what you see in the system.
 
@@ -106,23 +106,23 @@ These are common examples:
 If you are unsure which warning to enable, start with email failures and booking errors.
 {% endhint %}
 
-### Instructions for Use
+### Instructions for use
 
 {% stepper %}
 {% step %}
-**1. Choose who should receive warnings**
+#### Choose who should receive warnings
 
 Open **Warning Contacts**. Add one or more recipients.
 {% endstep %}
 
 {% step %}
-**2. Set the sender email address**
+#### Set the sender email address
 
 Open **Warning Sent from E-mail**. Set the sender address for warning emails.
 {% endstep %}
 
 {% step %}
-**3. Turn on the warnings you need**
+#### Turn on the warnings you need
 
 Open **Warning Notification Rules**.
 
@@ -130,63 +130,8 @@ Pick the warning types you want. Set how often they can be sent.
 {% endstep %}
 
 {% step %}
-**4. Review and adjust**
+#### Review and adjust
 
 If people get too many messages, reduce the warning list or lower the frequency.
 {% endstep %}
 {% endstepper %}
-
-### FAQ
-
-<details>
-
-<summary>Who should receive warning notifications?</summary>
-
-Send warnings to the people who can act on them.
-
-Usually this is an administrator, an operations inbox, or a small support group.
-
-</details>
-
-<details>
-
-<summary>Should I use email, SMS, or both?</summary>
-
-Use **email** for most warnings.
-
-Use **SMS** only for urgent issues that need fast attention.
-
-</details>
-
-<details>
-
-<summary>Why am I getting too many warnings?</summary>
-
-This usually happens when:
-
-* Too many warning types are enabled, or
-* The frequency is set too high.
-
-Start small. Enable only the warnings you truly need.
-
-</details>
-
-<details>
-
-<summary>Why is a warning email not being delivered?</summary>
-
-First check that the contact has a valid email address.
-
-Then check that your sender address is set and the warning rule is enabled.
-
-</details>
-
-<details>
-
-<summary>Can I use a shared inbox for warnings?</summary>
-
-Yes. This is often the best choice.
-
-Use an inbox your team monitors during business hours.
-
-</details>

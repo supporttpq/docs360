@@ -2,101 +2,121 @@
 
 ### Overview
 
-The **Inflight Service** module allows Tourpaq to generate and send transport reporting files for inflight services. These files are typically exported to airline or transport providers via FTP and are used for passenger service management.
+**Inflight Service** generates transport reporting files for inflight passenger services.
 
-Go to **Setup → System Setup → Inflight Service**.
+Tourpaq transfers the files to airlines or transport providers through FTP.
+
+The feature works with [Communication](../../transport/transport/communication.md) and transport reporting.
+
+### Purpose
+
+Use **Inflight Service** to automate passenger-service file generation and delivery.
+
+The configuration stores the provider's FTP connection and file-naming requirements.
+
+### Requirements
+
+Before configuring **Inflight Service**, complete these requirements:
+
+* Obtain the provider's FTP host, port, credentials, and target folder.
+* Confirm the required file prefix and folder-separator format.
+* Ensure **Communication Service** is enabled for the required reporting type.
+* Ensure administrator access to **System Setup**.
 
 {% hint style="warning" %}
 FTP credentials are sensitive.
 
-Limit access and rotate the password if you suspect exposure.
+Restrict access and rotate the password after suspected exposure.
 {% endhint %}
 
-### Purpose
+### Navigation
 
-* Automate the generation of inflight service reports.
-* Ensure accurate passenger information is sent to transport providers.
-* Centralize configuration of file generation and delivery.
+In Tourpaq Office, open **Setup → System Setup → Inflight Service**.
+
+### Interface overview
+
+**Inflight Service** contains connection, file-naming, and activation settings.
+
+The configuration determines where Tourpaq sends generated reporting files.
 
 ### Configuration fields
 
-| **Field**               | **Description**                                                                   |
-| ----------------------- | --------------------------------------------------------------------------------- |
-| **Username / Password** | Credentials for accessing the inflight service system.                            |
-| **Host Address**        | FTP server address for file delivery.                                             |
-| **File Prefix**         | Prefix for generated files (default: `PassengerData_`).                           |
-| **Folder**              | FTP folder path where files are stored. Use `//` as directory separators.         |
-| **Port**                | FTP port (default: 21 if left blank).                                             |
-| **Enabled**             | Check to enable inflight service; uncheck to disable file generation and sending. |
+| Field                   | Requirement | Description                                                |
+| ----------------------- | ----------- | ---------------------------------------------------------- |
+| **Username / Password** | Required    | Stores FTP credentials supplied by the transport provider. |
+| **Host Address**        | Required    | Sets the FTP server address for file delivery.             |
+| **File Prefix**         | Optional    | Sets the generated-file prefix. Default: `PassengerData_`. |
+| **Folder**              | Required    | Sets the target FTP folder. Use `//` as separators.        |
+| **Port**                | Optional    | Sets the FTP port. Tourpaq uses `21` when blank.           |
+| **Enabled**             | Optional    | Activates file generation and FTP delivery.                |
 
-### How to set it up
+**Username / Password**, **Host Address**, **Folder**, and **Port** control the provider connection.
 
-1. Get the FTP details from your airline/transport provider:
-   * Host
-   * Port
-   * Username/password
-   * Target folder
-2. Enter the values in **Inflight Service**.
-3. Keep the default file prefix unless your provider requires another naming rule.
-4. Enable the service and save.
-5. Run the export flow and verify the file appears on the FTP server.
+**File Prefix** controls the generated filename.
+
+**Enabled** controls whether Tourpaq creates and sends inflight service files.
+
+### Configuration steps
+
+Configure **Inflight Service** as follows:
+
+1. In **System Setup**, open **Inflight Service**.
+2. Enter **Username / Password**.
+3. Enter **Host Address**.
+4. Enter **Folder**.
+5. Enter **Port**, when the provider does not use port `21`.
+6. Set **File Prefix** to the provider's required naming prefix.
+7. Select **Enabled**.
+8. Save the configuration.
 
 {% hint style="info" %}
-If your provider requires a specific folder format, mirror it exactly.
+Use the provider's exact folder format.
 
-Example: `//inflight//exports`
+For example: `//inflight//exports`
 {% endhint %}
 
-### Usage notes
+### System behavior
 
-* Only administrators can configure inflight service settings.
-* Ensure that the folder structure exists on the FTP server to prevent errors.
-* Files are named automatically with the prefix and current date.
-* Disabled services will not generate or send files.
+When **Enabled** is selected, Tourpaq generates inflight service reporting files.
 
-### Troubleshooting
+Tourpaq sends the files to the configured FTP server.
 
-* **No file is created:** Confirm **Enabled** is on and the export flow is triggered.
-* **File is created but not delivered:** Verify host, port, credentials, and folder path.
-* **FTP connection fails:** Confirm the server is reachable from your Tourpaq environment and the port is open.
-* **Files land in the wrong folder:** Re-check the **Folder** value and required separators (`//`).
+Files use **File Prefix** and a date-based suffix.
 
-### FAQ
+When **Enabled** is cleared, Tourpaq does not generate or send files.
 
-<details>
+The **Communication Service** checks reporting schedulers every nine minutes.
 
-<summary><strong>What does Inflight Service generate?</strong></summary>
+### Examples
 
-It generates transport reporting files containing passenger/service data.
+#### Default FTP port
 
-Those files are delivered to a provider via FTP.
+Leave **Port** blank when the provider uses FTP port `21`.
 
-</details>
+Tourpaq uses port `21` for the connection.
 
-<details>
+#### Provider-specific folder
 
-<summary><strong>Does disabling the service stop file sending?</strong></summary>
+Set **Folder** to `//inflight//exports` when the provider requires that location.
 
-Yes. When **Enabled** is off, Tourpaq does not generate or send files.
+Tourpaq transfers generated files to the configured folder.
 
-</details>
+### Operational guidance
 
-<details>
+#### Usage notes
 
-<summary><strong>What port should I use?</strong></summary>
+* Only administrators can configure **Inflight Service**.
+* Ensure the target folder exists on the FTP server.
+* Confirm file delivery after enabling a new provider configuration.
 
-Use the port provided by your provider.
+#### Troubleshooting
 
-If empty, Tourpaq defaults to `21`.
+* **No file is created:** Confirm **Enabled** is selected and reporting is triggered.
+* **File is not delivered:** Verify **Host Address**, **Port**, **Username / Password**, and **Folder**.
+* **FTP connection fails:** Confirm the server is reachable and **Port** is open.
+* **Files use the wrong folder:** Check **Folder** and the required `//` separators.
 
-</details>
+### Related pages
 
-<details>
-
-<summary><strong>How are files named?</strong></summary>
-
-Tourpaq uses the configured **File Prefix** plus a date-based suffix.
-
-If your provider requires a specific naming format, align the prefix with that requirement.
-
-</details>
+* [Communication](../../transport/transport/communication.md) explains transport reporting and service activation.
+* [System Setup](./) lists company-wide configuration areas.

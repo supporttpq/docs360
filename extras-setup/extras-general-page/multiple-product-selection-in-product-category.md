@@ -19,7 +19,7 @@ This functionality enables:
 #### Activation
 
 The feature is enabled in **Tourpaq Office → Product Category → Edit Category** by selecting the checkbox\
-&#xNAN;**“Accepts multiple product selection.”**
+**“Accepts multiple product selection.”**
 
 Once activated, both the web and office booking systems allow multiple products to be selected within the same product category.
 

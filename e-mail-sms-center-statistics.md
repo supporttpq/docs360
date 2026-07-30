@@ -22,21 +22,23 @@ Use this page to:
 * See message status, like **sent**, **failed**, **confirmed**, and **queued**.
 * Compare results across templates and categories.
 
-<figure><img src=".gitbook/assets/image (25) (1) (1) (1) (1).png" alt="E-mail/SMS Center Statistics overview."><figcaption><p>High-level overview of message activity.</p></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (25) (1) (1) (1) (1).png" alt="E-mail/SMS Center Statistics overview."><figcaption><p>High-level overview of message activity.</p></figcaption></figure></div>
 
-### Revenue totals (optional)
+### Statistics
+
+#### Revenue totals
 
 If your setup supports it, you can also see **revenue totals**.
 
 You can view totals per **template** or **category**. You can also view an overall total.
 
-### Percentages
+#### Percentages
 
 The page also shows percentages for the selected period.
 
 These percentages can include **opened**, **sent**, **failed**, and **queued**.
 
-<figure><img src=".gitbook/assets/image (26) (1) (1) (1).png" alt="E-mail/SMS Center Statistics percentages."><figcaption><p>Percentages for opened, sent, failed, and queued messages.</p></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (26) (1) (1) (1).png" alt="E-mail/SMS Center Statistics percentages."><figcaption><p>Percentages for opened, sent, failed, and queued messages.</p></figcaption></figure></div>
 
 ### Date range
 
@@ -61,69 +63,6 @@ From the list, you can:
 * See related booking details.
 * Manually confirm messages (if available).
 * Export the list to a file.
-
-### FAQ
-
-<details>
-
-<summary>What is the difference between “sent”, “failed”, “confirmed”, and “queued”?</summary>
-
-* **Sent** means the system tried to send the message.
-* **Failed** means it could not be sent.
-* **Queued** means it is waiting to be sent.
-* **Confirmed** means it was accepted as sent in the system.
-
-Exact meanings can depend on your email or SMS provider.
-
-</details>
-
-<details>
-
-<summary>Why do I see results for some templates, but not others?</summary>
-
-Most often, the template was not used in the selected date range.
-
-Also check that you are looking at the right brand and template type.
-
-</details>
-
-<details>
-
-<summary>Why is the “opened” percentage missing or very low?</summary>
-
-Open tracking is usually available for **E-mails** only.
-
-It can also be affected by customer email settings and spam filters.
-
-</details>
-
-<details>
-
-<summary>Can I export the message list?</summary>
-
-Yes. Open the message list and use the export option.
-
-</details>
-
-<details>
-
-<summary>Why are many SMS messages shown as queued?</summary>
-
-This can happen if there is a temporary delay at the SMS provider.
-
-Wait a bit and refresh. If it continues, check provider status.
-
-</details>
-
-<details>
-
-<summary>Where does the revenue total come from?</summary>
-
-It comes from bookings linked to messages sent through **Dynamic E-mail/SMS**.
-
-If you do not see revenue, it may not be enabled in your setup.
-
-</details>
 
 ### Related pages
 

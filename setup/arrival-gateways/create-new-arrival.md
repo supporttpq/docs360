@@ -1,6 +1,6 @@
 # Create New Arrival
 
-#### Overview
+### Overview
 
 The **New Arrival** configuration is used to create a new arrival destination in the system.\
 An arrival can represent an airport, city, train station, or other transport hub used in bookings, transfers, insurance, and integrations.
@@ -32,7 +32,7 @@ Setup → Destinations → Arrivals → Create New
 
 ### Field Specifications
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 **IATA Code -** Official three-letter airport code. Required when the arrival represents an airport.
 
@@ -42,17 +42,17 @@ Plain Text (not flight) - Used when the arrival is not a flight-based location.
 
 Country - Select the country where the arrival is located. Used for reporting and insurance logic.
 
-Latitude - Geographical latitude. Used for map integrations and transfer calculations.&#x20;
+Latitude - Geographical latitude. Used for map integrations and transfer calculations.
 
-Longitude - Geographical longitude. Used together with latitude for location-based services.&#x20;
+Longitude - Geographical longitude. Used together with latitude for location-based services.
 
-TimeZone - Select the applicable timezone. Required for correct arrival time calculations.&#x20;
+TimeZone - Select the applicable timezone. Required for correct arrival time calculations.
 
 Insurance Area - Assign the arrival to a specific insurance zone. Used for travel insurance calculations and compliance.
 
-Internet (Checkbox) - If enabled, the arrival is available in online booking environments.&#x20;
+Internet (Checkbox) - If enabled, the arrival is available in online booking environments.
 
-Source Agency - Optional mapping to a source agency if applicable. Used for integrations or external system mapping.&#x20;
+Source Agency - Optional mapping to a source agency if applicable. Used for integrations or external system mapping.
 
 URL-Alias - Optional field for web or SEO-related references. Can be used for web booking routes.
 

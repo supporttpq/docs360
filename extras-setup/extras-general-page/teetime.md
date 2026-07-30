@@ -136,7 +136,7 @@ The only change from **Daily allotments** is
 
 * If **All Days** is checked, allotments are created for the entire week.
   * When a guest departs midweek, the Guest App shows only the first valid allotment day.\
-    &#xNAN;_(Example: if allotment is generated for the whole week and the departure is on Tuesday → only Tuesday’s slots appear.)_
+    _(Example: if allotment is generated for the whole week and the departure is on Tuesday → only Tuesday’s slots appear.)_
 
 <div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (207).png" alt="Weekly allotment availability"><figcaption></figcaption></figure></div>
 

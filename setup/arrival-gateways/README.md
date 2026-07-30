@@ -54,7 +54,7 @@
 * **Extended Europe** usually means “Europe + extra covered countries”. The exact list depends on your insurance setup.
 * **World** typically means destinations outside your European insurance areas.
 
-**What is "Extended Europe"?**
+#### What is "Extended Europe"?
 
 It typically includes:
 
@@ -69,54 +69,10 @@ It typically includes:
 
 So "Extended Europe" is a **marketing or practical term** used by insurers to indicate you're covered in **more countries than just the EU**.
 
-**When would "Extended Europe" be relevant?**
+#### When would "Extended Europe" be relevant?
 
 * If you're traveling or driving beyond Scandinavia into **non-EU Eastern Europe** or **Turkey**
 * If you want broader coverage that includes **less typical destinations** within Europe.
 
 1. "World" signifies destinations outside of the European insurance coverage.
 2. Some locations are categorized differently based on insurance policies.
-
-This interface is designed to streamline airport gateway management efficiently and intuitively.
-
-### FAQ
-
-<details>
-
-<summary><strong>What’s the difference between “Plaintext” and “Plaintext (Not Flight)”?</strong></summary>
-
-Use **Plaintext** as the standard display name. Use **Plaintext (Not Flight)** when the system needs a name outside flight contexts.
-
-</details>
-
-<details>
-
-<summary><strong>What is the “Insurance area” used for?</strong></summary>
-
-It groups gateways for insurance-related logic and reporting. The available values come from your configuration.
-
-</details>
-
-<details>
-
-<summary><strong>Can I reuse the same IATA code for multiple gateways?</strong></summary>
-
-Arrival gateways are typically unique per IATA code. If you need multiple names, prefer adjusting the display fields instead.
-
-</details>
-
-<details>
-
-<summary><strong>What happens if I delete an arrival gateway?</strong></summary>
-
-The gateway is removed from the list. Anything referencing it may fail or need remapping. If you are unsure, validate dependencies first.
-
-</details>
-
-<details>
-
-<summary><strong>Do you support placeholder IATA codes (for example, <code>ZZZ</code>)?</strong></summary>
-
-Some setups use placeholder codes for non-standard airports or manual handling. If you use placeholders, keep the naming consistent across arrival and departure gateways.
-
-</details>

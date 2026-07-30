@@ -33,7 +33,7 @@ Weeks start on the system’s week start day (often Monday).
   * Use this when your “business year” is not the calendar year.
   * Controls the range Tourpaq uses to build weekly statistics.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1).png" alt="Departure stat weeks configuration showing the agency selector and year interval fields"><figcaption></figcaption></figure></div>
 
 ### Common tasks
 
@@ -73,45 +73,3 @@ This aligns reporting with an operational year instead of the calendar year.
 
 * First departure stat week: **15-12-2025 → 21-12-2025**
 * Last departure stat week: **starts 13-12-2026**
-
-### FAQ
-
-<details>
-
-<summary><strong>What happens if a brand has no year definition?</strong></summary>
-
-Tourpaq uses the **default interval**, if one is defined.
-
-If no default exists, weekly statistics may be incomplete or misaligned.
-
-</details>
-
-<details>
-
-<summary><strong>When should I use Start / end period?</strong></summary>
-
-Use it when your reporting year does not match the calendar year.
-
-This is common for seasonal operations.
-
-</details>
-
-<details>
-
-<summary><strong>Why does the first stat week not start on 01-01?</strong></summary>
-
-Weeks follow the system’s week start day.
-
-If 01-01 is mid-week, the first full week starts later.
-
-</details>
-
-<details>
-
-<summary><strong>Can I define different intervals per brand?</strong></summary>
-
-Yes. The agency selector scopes the definition to a single brand.
-
-Brands without a definition can still inherit the default interval.
-
-</details>

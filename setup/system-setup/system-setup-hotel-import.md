@@ -2,149 +2,174 @@
 
 ### Overview
 
-Hotel Import defines default settings used when importing hotel data and hotel contracts.
+**Hotel Import** defines default values for imported hotel data and hotel contracts.
 
-It standardizes:
+The settings affect releases, single-room supplements, board supplements, and gala dinners.
 
-* Price adjustments (single room, board supplements, gala dinners)
-* Default hotel release hour
-* Whether board basis extras are created during hotel contract import
+They also control whether contract imports create Board Basis extras.
 
-Go to **Setup → System Setup → Hotel Import**.
+These settings support [Hotel Contracts](../../hotel-contracts/) and [Releases](../../hotel/hotel-creation/releases/).
+
+### Purpose
+
+Use **Hotel Import** to apply consistent defaults during hotel contract imports.
+
+The defaults reduce repeated setup across hotel contracts.
+
+They also align imported contract data with the company pricing policy.
+
+### Requirements
+
+Before configuring **Hotel Import**, confirm the following:
+
+1. Administrator access to **Setup → System Setup** is available.
+2. Hotel data is ready for import, or a hotel contract is available for testing.
+3. The company pricing policy defines the required percentage adjustments.
 
 {% hint style="warning" %}
 Changes can affect future imports and contract behavior.
 
-Validate changes on a test contract/import when possible.
+Validate changes with a test contract or import before using production contracts.
 {% endhint %}
 
-### Purpose
+### Navigation
 
-Use these settings to keep imported hotel data consistent and reduce manual corrections.
+In Tourpaq Office, open **Setup → System Setup → Hotel Import**.
 
-They help you:
+### Interface overview
 
-* Automate price adjustments for certain services.
-* Apply consistent release timing.
-* Reduce manual errors during imports.
+The screen contains one time field, three percentage fields, and one checkbox.
 
-### Preconditions
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (393).png" alt="Hotel Import settings, including release hour, price adjustments, and the board basis extras checkbox."><figcaption><p>Hotel Import settings.</p></figcaption></figure></div>
 
-Before configuring the **Hotel Import** settings:
+The fields apply defaults when a hotel contract is imported.
 
-1. You must have **administrator access** to System Setup.
-2. Basic hotel data should already exist in the system or be ready for import.
-3. You should understand the company’s pricing policies for single rooms, board supplements, and gala dinners.
-
-### Fields
-
-<figure><img src="../../.gitbook/assets/image (393).png" alt=""><figcaption></figcaption></figure>
+### Field descriptions
 
 #### Hotel Release Hour
 
-* **What it does:** Sets the default release time used on imported hotel releases.
-* **Default:** `07:00` if not set.
-* **Format:** 24-hour time (`HH:MM`).
-* **Example:** `06:00` means releases are set to 06:00 (6 AM).
+**Hotel Release Hour** sets the default release time for imported hotel releases.
+
+This field is optional. Tourpaq uses `07:00` when no value is configured.
+
+Enter a 24-hour time in `HH:MM` format.
+
+For example, `06:00` sets imported releases to 6 AM.
+
+This setting affects the release data used in [Releases](../../hotel/hotel-creation/releases/).
 
 #### Single Room Supplement Price
 
-* **What it does:** Adds a percentage markup for single room bookings.
-* **Format:** Percentage.
-* **Example:** `2` means +2% on the base price.
+**Single Room Supplement Price** adds a percentage markup for single-room bookings.
 
-{% hint style="warning" %}
-If a Single Room Supplement Price is specified in System setup > Hotel import this will be automatically inserted in the Hotel > Hotels > Single Room Supplement tab.&#x20;
+This field is optional. Enter a percentage value without a percent sign.
 
-Note if you manually change the value in Hotel > Hotels > Single Room Supplement, that value will be overwritten by the system setup setting if the Hotel contract is reimported.
-{% endhint %}
+For example, `2` adds a 2% markup to the base price.
+
+During import, Tourpaq inserts this value in **Hotel → Hotels → Single Room Supplement**.
+
+Reimporting a hotel contract overwrites a manually changed supplement value.
+
+See [Single Room Supplement](../../hotel/hotel-creation/occupancy-handling/single-room-supplement.md) for rule configuration.
 
 #### Board Supplement Price
 
-* **What it does:** Adds a percentage markup for board (meal plan) supplements.
-* **Format:** Percentage.
-* **Example:** `2` means +2% on top of the base room price.
+**Board Supplement Price** adds a percentage markup for board, or meal-plan, supplements.
+
+This field is optional. Enter a percentage value without a percent sign.
+
+For example, `2` adds a 2% markup to the base room price.
+
+This default relates to board supplements in imported hotel contracts.
+
+See [Board Supplements - Hotel Contract Configuration](../../hotel-contracts/board-supplements-hotel-contract-configuration.md) for contract-level setup.
 
 #### Gala Dinner Price
 
-* **What it does:** Adds a percentage markup when a gala dinner is included.
-* **Format:** Percentage.
-* **Example:** `2` means +2% on the booking price when gala dinner is included.
+**Gala Dinner Price** adds a percentage markup when an imported hotel contract includes a gala dinner.
+
+This field is optional. Enter a percentage value without a percent sign.
+
+For example, `2` adds a 2% markup to the booking price.
+
+This default relates to the **Gala Dinner** section in hotel contracts.
 
 #### Do not create extras for board basis
 
-* **What it does:** Prevents creating extras for board basis when importing a hotel contract.
-* **Format:** Checkbox.
-* **When to use:** If your setup does not use board basis as extras.
+**Do not create extras for board basis** controls Board Basis extras during hotel contract import.
 
-### How to use
+Select this checkbox when board basis must not create extras.
 
-1. Go to **Setup → System Setup → Hotel Import**.
-2. Set the **Hotel Release Hour** according to company standards.
-3. Enter the percentage values for **Single Room Supplement**, **Board Supplement**, and **Gala Dinner Price** as per pricing policy.
-4. Configure **Do not create extras for board basis** if needed.
-5. Save changes.
+When selected, Tourpaq does not create Board Basis extras during import.
 
-### Related pages
+The **Board Basis** menu is also hidden in the hotel contract.
 
-* [Hotel Contracts](../../hotel-contracts/)
-* [Releases](../../hotel/hotel-creation/releases/)
+Leave this checkbox cleared when Board Basis extras are required.
+
+See [Board Supplements - Hotel Contract Configuration](../../hotel-contracts/board-supplements-hotel-contract-configuration.md) for Board Basis behavior.
+
+### Configuration steps
+
+1. In **Setup → System Setup → Hotel Import**, set **Hotel Release Hour**.
+2. Enter **Single Room Supplement Price** according to the company pricing policy.
+3. Enter **Board Supplement Price** according to the company pricing policy.
+4. Enter **Gala Dinner Price** according to the company pricing policy.
+5. Select **Do not create extras for board basis** when Board Basis extras are not required.
+6. Save the settings.
+7. Import a test hotel contract and verify the imported values.
+
+### System behavior
+
+#### Import defaults
+
+Tourpaq applies the configured values as defaults during hotel contract import.
+
+Existing manual values can be replaced when the related hotel contract is reimported.
+
+#### Board Basis extras
+
+Tourpaq creates Board Basis extras during import when the checkbox remains cleared.
+
+Selecting **Do not create extras for board basis** prevents their creation.
+
+The selection also hides **Board Basis** in the hotel contract.
+
+#### Release time
+
+Tourpaq uses the configured **Hotel Release Hour** for imported hotel releases.
+
+Without a configured value, Tourpaq uses `07:00`.
+
+### Examples
+
+#### Earlier release time
+
+Set **Hotel Release Hour** to `06:00`.
+
+Imported hotel releases use 6 AM as their default release time.
+
+#### Single-room markup
+
+Set **Single Room Supplement Price** to `2`.
+
+Imported single-room supplement prices receive a 2% markup.
+
+#### No Board Basis extras
+
+Select **Do not create extras for board basis**.
+
+Importing a hotel contract does not create Board Basis extras.
 
 ### Troubleshooting
 
-* **Release time looks wrong after import:** Confirm **Hotel Release Hour** is set and saved.
-* **Unexpected price changes:** Re-check the percentage fields (single/board/gala).
-* **Missing board extras after import:** Ensure **Do not create extras for board basis** is not enabled.
-* **Board extras created but you don’t want them:** Enable **Do not create extras for board basis** and re-import/recreate the contract flow as needed.
+* **Release time is incorrect after import:** Confirm **Hotel Release Hour** is saved.
+* **Unexpected price changes occur:** Review all three percentage fields.
+* **Board Basis extras are missing:** Clear **Do not create extras for board basis**, then import the contract again.
+* **Board Basis extras are not needed:** Select **Do not create extras for board basis**, then reimport or recreate the contract.
 
-### FAQ
+### Related pages
 
-<details>
-
-<summary><strong>Do these settings affect existing hotel contracts?</strong></summary>
-
-These settings are used as defaults during import.
-
-Existing contracts may not change automatically.
-
-</details>
-
-<details>
-
-<summary><strong>What time format should I use for Hotel Release Hour?</strong></summary>
-
-Use 24-hour time: `HH:MM`.
-
-Example: `06:00`, `14:30`.
-
-</details>
-
-<details>
-
-<summary><strong>What does “2” mean in the price fields?</strong></summary>
-
-It means 2 percent.
-
-`2` = +2% markup.
-
-</details>
-
-<details>
-
-<summary><strong>When should I enable “Do not create extras for board basis”?</strong></summary>
-
-Enable it if your company does not use board basis as extras.
-
-This avoids creating extra products during contract import.
-
-</details>
-
-<details>
-
-<summary><strong>Why are board basis extras useful?</strong></summary>
-
-They can be useful if you sell board upgrades as separate line items.
-
-If you don’t, disabling creation keeps your extras list cleaner.
-
-</details>
+* [Hotel Contracts](../../hotel-contracts/): Import targets and contract configuration.
+* [Board Supplements - Hotel Contract Configuration](../../hotel-contracts/board-supplements-hotel-contract-configuration.md): Board Basis and gala dinner configuration.
+* [Single Room Supplement](../../hotel/hotel-creation/occupancy-handling/single-room-supplement.md): Single-room supplement rules.
+* [Releases](../../hotel/hotel-creation/releases/): Hotel release rules and behavior.

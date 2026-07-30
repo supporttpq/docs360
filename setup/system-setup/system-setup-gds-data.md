@@ -1,87 +1,125 @@
 # System Setup – GDS Data
 
-### **Overview**
+### Overview
 
-The **GDS Data** section configures Tourpaq to integrate with Global Distribution Systems (GDS) for transport and ticketing. This allows Tourpaq to create reservations, manage ticketing, and retrieve PNR (Passenger Name Record) information from external providers.
+**GDS Data** configures Global Distribution System (GDS) integration for transport and ticketing.
 
-### **Purpose**
+The configuration supports reservations, ticketing, PNR retrieval, and booking synchronization.
 
-* Enable automated booking and ticketing through GDS providers.
-* Centralize transport provider credentials and settings.
-* Ensure accurate and timely retrieval of booking and ticket data.
+It supports the [GDS Bookings](../../gds-queue-place/gds-bookings.md) workflow and provider-specific transport setup.
 
-### **Configuration Fields**
+### Purpose
 
-| **Field**                                   | **Description**                                                         |
-| ------------------------------------------- | ----------------------------------------------------------------------- |
-| **Currency**                                | Sets the currency for GDS transactions.                                 |
-| **User / Password**                         | Credentials provided by the GDS provider for authentication.            |
-| **Branch**                                  | Branch code used for ticketing and reporting.                           |
-| **Days Number for Ticketing**               | Number of days allowed for ticketing after reservation creation.        |
-| **Max GDS Search Results**                  | Maximum number of results returned by GDS queries.                      |
-| **Queue Number**                            | Queue to which GDS bookings are assigned for ticketing.                 |
-| **Pseudo City Code / Own Pseudo City Code** | Codes used to identify the booking office.                              |
-| **Price Change Margin**                     | Margin allowed for price modifications in GDS bookings.                 |
-| **Fares Indicator**                         | Indicator used for fare calculations.                                   |
-| **Payment Rule**                            | Payment rules applied to GDS reservations.                              |
-| **Card Details**                            | Owner, type, number, expiration (year/month), and CVC for payments.     |
-| **Confirmation Email**                      | Email address for receiving booking confirmations from Travelport.      |
-| **Days Number for Check PNR**               | Number of days before departure to check the PNR status.                |
-| **Show Ticket Number on Ticket**            | Option to display ticket numbers on printed tickets.                    |
-| **Time Frame Before Departure**             | Minutes before departure to remove flights from bookings automatically. |
+Use **GDS Data** to centralize provider credentials, ticketing rules, queues, and search behavior.
 
-### **Transport Selection Rules**
+The configuration controls Tourpaq's exchange of booking and ticketing data with GDS providers.
 
-| **Setting**                     | **Description**                                |
-| ------------------------------- | ---------------------------------------------- |
-| **Use Division PNR by Classes** | Divides bookings by class to optimize pricing. |
+### Requirements
 
-***
+Before configuring **GDS Data**, complete these requirements:
 
-### **Usage Notes**
+* Obtain the GDS provider credentials and booking-office codes.
+* Obtain the provider's ticketing, payment, and queue rules.
+* Ensure administrator access to **System Setup**.
 
-* All fields are mandatory for proper GDS integration.
-* Incorrect credentials or configuration may prevent bookings or ticket generation.
-* Administrators should verify all settings before enabling GDS operations.
+### Navigation
 
-### **FAQ**
+In Tourpaq Office, open **System Setup → GDS Data**.
 
-<details>
+### Interface overview
 
-<summary><strong>What is a PNR?</strong></summary>
+**GDS Data** contains provider connection, ticketing, search, payment, PNR, and ticket-output settings.
 
-PNR stands for **Passenger Name Record**.
+All listed fields require valid configuration for proper GDS integration.
 
-It is the booking record stored in the GDS.
+### Connection and booking-office fields
 
-</details>
+| Field                                       | Requirement | Description                                            |
+| ------------------------------------------- | ----------- | ------------------------------------------------------ |
+| **Currency**                                | Required    | Sets the currency used for GDS transactions.           |
+| **User / Password**                         | Required    | Stores the credentials supplied by the GDS provider.   |
+| **Branch**                                  | Required    | Sets the branch code used for ticketing and reporting. |
+| **Pseudo City Code / Own Pseudo City Code** | Required    | Identifies the booking office for GDS reservations.    |
+| **Confirmation Email**                      | Required    | Receives Travelport booking confirmations.             |
 
-<details>
+These fields establish the provider connection used by [GDS Bookings](../../gds-queue-place/gds-bookings.md).
 
-<summary><strong>Which settings are most critical to verify first?</strong></summary>
+### Ticketing and payment fields
 
-Start with the provider credentials (**User / Password**, **Branch**, **PCC**) and the **Queue Number**.
+| Field                            | Requirement | Description                                                         |
+| -------------------------------- | ----------- | ------------------------------------------------------------------- |
+| **Days Number for Ticketing**    | Required    | Sets the allowed ticketing days after reservation creation.         |
+| **Queue Number**                 | Required    | Assigns GDS bookings to the ticketing queue.                        |
+| **Payment Rule**                 | Required    | Applies payment rules to GDS reservations.                          |
+| **Card Details**                 | Required    | Stores payment owner, type, number, expiration year/month, and CVC. |
+| **Show Ticket Number on Ticket** | Required    | Displays ticket numbers on printed tickets.                         |
 
-These commonly cause authentication and ticketing failures.
+These settings affect submission and ticketing in [Submit a GDS Booking](../../gds-queue-place/submit-a-gds-booking/).
 
-</details>
+### Search and fare fields
 
-<details>
+| Field                      | Requirement | Description                                              |
+| -------------------------- | ----------- | -------------------------------------------------------- |
+| **Max GDS Search Results** | Required    | Limits the results returned by GDS searches.             |
+| **Price Change Margin**    | Required    | Sets the permitted margin for GDS booking price changes. |
+| **Fares Indicator**        | Required    | Controls the indicator used for fare calculations.       |
 
-<summary><strong>Why don’t I see ticket numbers on printed tickets?</strong></summary>
+These settings affect GDS flight search results and pricing behavior.
 
-Enable **Show Ticket Number on Ticket**.
+### PNR and flight-maintenance fields
 
-Also confirm the booking has been ticketed in the provider.
+| Field                           | Requirement | Description                                                       |
+| ------------------------------- | ----------- | ----------------------------------------------------------------- |
+| **Days Number for Check PNR**   | Required    | Sets the days before departure for PNR status checks.             |
+| **Time Frame Before Departure** | Required    | Sets when Tourpaq removes flights from bookings before departure. |
 
-</details>
+Tourpaq uses these settings to maintain PNR and flight information in GDS bookings.
 
-<details>
+### Transport selection rules
 
-<summary><strong>What does “Days Number for Ticketing” control?</strong></summary>
+| Field                           | Requirement | Description                                                |
+| ------------------------------- | ----------- | ---------------------------------------------------------- |
+| **Use Division PNR by Classes** | Required    | Divides bookings by class to support pricing optimization. |
 
-It controls how many days after reservation creation ticketing is allowed.
+This setting affects how Tourpaq structures PNRs for GDS transport.
 
-After that window, ticketing may be blocked by process or policy.
+### Configuration steps
 
-</details>
+Configure **GDS Data** as follows:
+
+1. In **System Setup**, open **GDS Data**.
+2. Enter **Currency**, **User / Password**, and **Branch**.
+3. Enter **Pseudo City Code / Own Pseudo City Code** and **Confirmation Email**.
+4. Configure ticketing, payment, search, PNR, and flight-maintenance fields.
+5. Save the GDS configuration.
+6. Test the configuration through a GDS booking workflow.
+
+### System behavior
+
+Tourpaq uses **User / Password**, **Branch**, and booking-office codes to authenticate with the GDS.
+
+Tourpaq applies ticketing, payment, and queue settings when processing GDS reservations.
+
+Tourpaq retrieves PNR, flight, ticket, and booking updates through the configured provider connection.
+
+Invalid credentials or settings can prevent booking submission or ticket generation.
+
+### Examples
+
+#### Ticketing queue example
+
+**Queue Number** assigns GDS reservations to the provider ticketing queue.
+
+Tourpaq uses that queue during the GDS booking and ticketing workflow.
+
+#### PNR monitoring example
+
+**Days Number for Check PNR** sets the pre-departure period for PNR status checks.
+
+Tourpaq uses the setting to monitor GDS booking status before departure.
+
+### Related pages
+
+* [GDS Bookings](../../gds-queue-place/gds-bookings.md) describes GDS reservation processing.
+* [Submit a GDS Booking](../../gds-queue-place/submit-a-gds-booking/) describes booking submission and ticketing.
+* [Setup for Transport Dynamic Packaging (GDS)](../../gds-queue-place/setup-for-transport-dynamic-packaging-gds.md) describes GDS transport setup.

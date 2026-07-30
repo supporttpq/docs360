@@ -28,7 +28,7 @@ Setup → Destinations → Departure Gateways
 
 ### Editable Fields
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 IATA Code - Can be modified if necessary.
 
@@ -66,7 +66,7 @@ TimeZone - Changing timezone affects:
 * Flight duration logic
 * Integration timestamps
 
-This field must be verified carefully before saving. Avoid changing if active bookings depend on it.&#x20;
+This field must be verified carefully before saving. Avoid changing if active bookings depend on it.
 
 URL Alias - Used for web routing. Can be updated if web structure changes. Does not affect operational logic.
 

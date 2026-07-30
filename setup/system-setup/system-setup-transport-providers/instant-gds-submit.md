@@ -1,56 +1,95 @@
 # Instant GDS Submit
 
+### Overview
+
+Instant GDS Submit automatically submits eligible GDS reservations from Tourpaq Office.
+
+The setting complements the manual workflow in [Submit a GDS Booking](../../../gds-queue-place/submit-a-gds-booking/).
+
 ### Purpose
 
-The Instant GDS Submit feature automatically submits eligible GDS reservations as soon as all required conditions have been met. This removes the need for users to manually submit reservations through the GDS tab and helps secure airline inventory and pricing without delay.
+Instant GDS Submit removes manual submission from the booking **GDS** tab.
 
-By submitting reservations immediately, the system helps ensure that reservations are created in the GDS at the earliest possible moment.
+Tourpaq submits the reservation when all configured conditions are satisfied.
 
-***
+### Requirements
 
-### Configuration
+Before enabling Instant GDS Submit, complete these requirements:
 
-The feature configuration setting: **System Setup -> Transport Providers -> General ->** **Submit GDS reservations made in Tourpaq Office**
+* Configure the relevant GDS provider. See [GDS Bookings](../../../gds-queue-place/gds-bookings.md).
+* Ensure the booking contains GDS flights.
+* Ensure the booking meets all submission conditions, including first payment and booking deposit.
 
-<figure><img src="../../../.gitbook/assets/02.06.2026_11.22.04_REC.png" alt=""><figcaption></figcaption></figure>
+### Navigation
 
-#### Enabled
+In Tourpaq Office, open **System Setup → Transport Providers → General**.
 
-When this setting is enabled, the system automatically submits GDS reservations as soon as all required submission conditions are met (the GDS reservation is submitted once the first payment is made for the booking).
+Configure **Submit GDS reservations made in Tourpaq Office**.
 
-#### Disabled
+### Interface overview
 
-When this setting is disabled, the system does not automatically submit reservations.
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/02.06.2026_11.22.04_REC.png" alt="Transport Providers General tab showing the Submit GDS reservations made in Tourpaq Office checkbox"><figcaption><p>Use this checkbox to enable automatic GDS reservation submission.</p></figcaption></figure></div>
 
-#### Example
+#### Submit GDS reservations made in Tourpaq Office
 
-A user enables **Submit GDS reservations made in Tourpaq Office**.
+This optional checkbox controls automatic GDS submission for Tourpaq Office bookings.
 
-A booking contains a GDS flight and the customer made the first payment for the booking. Once all submission conditions are fulfilled, the reservation is automatically submitted to the GDS.
+Select the checkbox to submit eligible GDS reservations automatically.
 
-***
+Clear the checkbox to retain manual submission through the booking **GDS** tab.
 
-### How the Feature Works in the Booking Flow
+This setting applies to the GDS workflow described in [GDS Bookings](../../../gds-queue-place/gds-bookings.md).
 
-During the booking flow, the system continuously evaluates whether a booking is eligible for GDS submission.
+### Configuration steps
 
-When all required conditions have been met, including payment-related requirements such as the first payment and the booking deposit, the reservation is submitted immediately.
+Configure Instant GDS Submit as follows:
 
-No manual action is required from the user.
+1. In **System Setup**, open **Transport Providers**.
+2. Open the **General** tab.
+3. Select **Submit GDS reservations made in Tourpaq Office**.
+4. Save the transport provider configuration.
 
-#### Booking Flow Example
+### System behavior
 
-1. A user creates a booking containing GDS flights.
-2. The booking remains pending until all submission requirements are satisfied.
-3. The customer makes the first payment of the booking.
-4. The booking becomes eligible for GDS submission.
-5. The system immediately submits the reservation to the GDS.
-6. The booking is updated with the resulting GDS reservation details.
+Tourpaq evaluates GDS bookings during the booking flow.
 
-***
+When a booking meets every submission condition, Tourpaq submits its reservation immediately.
 
-### User Impact
+The conditions include the booking's first payment and booking deposit.
 
-Users no longer need to remember to manually submit reservations through the GDS tab when the booking becomes eligible.
+Tourpaq records the resulting GDS reservation details in the booking.
 
-The system automatically performs the submission once the required conditions have been met.
+When the checkbox is clear, Tourpaq does not submit reservations automatically.
+
+Manual submission remains available from the booking **GDS** tab. See [Submit a GDS Booking](../../../gds-queue-place/submit-a-gds-booking/).
+
+### Booking flow example
+
+This example shows an eligible GDS reservation:
+
+1. Create a booking containing GDS flights.
+2. Register the booking's first payment.
+3. Complete the booking deposit requirement.
+4. Tourpaq verifies the submission conditions.
+5. Tourpaq submits the reservation to the GDS.
+6. Tourpaq stores the returned GDS reservation details.
+
+### Examples
+
+#### Automatic submission enabled
+
+A booking contains GDS flights and satisfies every payment condition.
+
+Tourpaq submits the reservation without a manual **GDS**-tab action.
+
+#### Automatic submission disabled
+
+A booking contains GDS flights, but the checkbox remains clear.
+
+Staff submit the reservation through the booking **GDS** tab when appropriate.
+
+### Related pages
+
+* [GDS Bookings](../../../gds-queue-place/gds-bookings.md) explains GDS reservation processing.
+* [Submit a GDS Booking](../../../gds-queue-place/submit-a-gds-booking/) describes manual GDS submission.
+* [System Setup – Transport Providers](./) describes transport provider configuration.

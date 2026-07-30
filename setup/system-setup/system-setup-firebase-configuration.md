@@ -2,80 +2,93 @@
 
 ### Overview
 
-The **Firebase Configuration** section allows Tourpaq to integrate with Firebase for notifications, analytics, and real-time data updates within the platform.
+**Firebase Configuration** connects Tourpaq to Firebase services.
 
-Go to **Setup → System Setup → Firebase Configuration**.
+The connection supports notifications, analytics, and real-time data updates.
+
+This page is part of [System Setup](./).
+
+### Purpose
+
+Use **Firebase Configuration** to store the Firebase credentials and parameters for a company.
+
+The configuration supports Tourpaq features that use Firebase services.
+
+### Requirements
+
+Before configuring **Firebase Configuration**, complete these requirements:
+
+* Ensure administrator access to **System Setup**.
+* Contact **Tourpaq Support** for the company-specific Firebase configuration.
+* Identify the Firebase-dependent features requiring validation.
 
 {% hint style="warning" %}
 Firebase credentials are sensitive.
 
-Limit access and rotate keys/tokens if you suspect exposure.
+Restrict access and rotate keys or tokens after suspected exposure.
 {% endhint %}
 
-### Purpose
+### Navigation
 
-* Enable push notifications and real-time updates in the Tourpaq system.
-* Centralize Firebase credentials for secure access.
-* Support system features that rely on Firebase services, such as mobile notifications and analytics tracking.
+In Tourpaq Office, open **Setup → System Setup → Firebase Configuration**.
+
+### Interface overview
+
+**Firebase Configuration** stores the Firebase credentials and configuration parameters supplied by **Tourpaq Support**.
+
+The required values depend on the company and Firebase environment.
+
+Do not replace values without a replacement configuration from **Tourpaq Support**.
 
 ### Configuration steps
 
-1. Contact **Tourpaq Support** to obtain the correct Firebase setup for your company.
-2. The support team will provide the necessary credentials and configuration parameters.
-3. Insert the provided credentials into the **System Setup → Firebase Configuration** fields.
+Configure **Firebase Configuration** as follows:
+
+1. Contact **Tourpaq Support** for the Firebase configuration.
+2. Obtain the credentials and configuration parameters.
+3. In **Firebase Configuration**, enter each supplied value.
 4. Save the configuration.
+5. Validate a Firebase-dependent feature.
 
-### What to validate after setup
+### System behavior
 
-Validate at least one Firebase-dependent flow:
+Tourpaq uses the saved configuration to connect Firebase-dependent features to Firebase services.
 
-* A real-time update in the relevant UI (if used in your setup).
-* A push notification flow in the relevant app (if enabled).
+The configuration supports push notifications, analytics, and real-time data updates.
 
-If you have multiple brands/environments, validate each one.
+Incorrect configuration prevents Firebase-dependent features from operating correctly.
 
-### Usage notes
+Configuration changes can affect every brand and agency using the same setup.
 
-* Only administrators can configure Firebase settings.
-* Incorrect configuration will prevent real-time updates and push notifications.
-* All Firebase-dependent features rely on the credentials and setup provided by Tourpaq Support.
+### Validation examples
 
-### FAQ
+#### Real-time update
 
-<details>
+Trigger a configured real-time update in the relevant Tourpaq interface.
 
-<summary><strong>Do I need Firebase Configuration if we don’t use mobile apps or chat?</strong></summary>
+Confirm that the interface receives the expected updated data.
 
-Not always.
+#### Push notification
 
-If your Tourpaq features don’t rely on Firebase, it may not be required.
+Trigger a configured push-notification flow in the relevant application.
 
-</details>
+Confirm that the application receives the expected notification.
 
-<details>
+### Operational guidance
 
-<summary><strong>Where do I get the Firebase credentials?</strong></summary>
+#### Usage notes
 
-Tourpaq Support provides the correct values for your company and environment.
+* Only administrators can configure **Firebase Configuration**.
+* Validate each configured brand and environment after changes.
+* Store credentials only in the approved configuration fields.
 
-</details>
+#### Troubleshooting
 
-<details>
+* **Real-time updates fail:** Confirm each supplied Firebase value is saved correctly.
+* **Push notifications fail:** Confirm the relevant application uses the configured Firebase environment.
+* **Configuration values are unavailable:** Contact **Tourpaq Support** for the company configuration.
 
-<summary><strong>What happens if the configuration is wrong?</strong></summary>
+### Related pages
 
-Firebase-dependent features can stop working.
-
-Common symptoms are missing real-time updates or failed push notifications.
-
-</details>
-
-<details>
-
-<summary><strong>Should I change these values myself?</strong></summary>
-
-Only if you know exactly what your environment expects.
-
-When in doubt, coordinate changes with Tourpaq Support.
-
-</details>
+* [System Setup](./) explains company-wide configuration.
+* [SMS Configuration (Twilio)](../../integration/crm-and-marketing/system-setup-sms-configuration-twilio.md) covers SMS notification configuration.
