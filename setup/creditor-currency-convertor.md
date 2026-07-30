@@ -1,157 +1,153 @@
+---
+description: >-
+  Configure price recalculation when a creditor change also changes supplier
+  currency.
+---
+
 # Creditor Currency Converter
+
+## Creditor Currency Converter
 
 ### Overview
 
-The **Creditor Currency Converter** helps you handle supplier costs in multiple currencies.
+**Creditor Currency Converter** controls price recalculation after a creditor change changes the supplier currency.
 
-It supports automatic recalculation when you change a creditor to one with a different currency.
+It uses creditor currencies and the [System Setup – Currency](system-setup/system-setup-currency.md) exchange-rate configuration. It applies to hotel, extra, and discount supplement costs.
 
-Go to **Setup → Creditor Currency Converter**.
+### Purpose
 
-<figure><img src="../.gitbook/assets/creditor-main-page-9f82fca52cb1aeba549f467970240fc2.png" alt=""><figcaption></figcaption></figure>
+Use this page to:
 
-### How it works
+* Review conversion entries created after relevant creditor changes.
+* Confirm the source and target currencies.
+* Enable price recalculation for approved conversions.
 
-When you change a creditor on:
+### Requirements
 
-* **Hotels**
-* **Extras**
-* **Discount supplements**
+Before activating a conversion entry:
 
-…and the new creditor uses a different currency, Tourpaq creates a new entry here.
+* The original and replacement [creditors](../creditor.md) must use the intended currencies.
+* The required exchange rates must exist in [System Setup – Currency](system-setup/system-setup-currency.md).
+* The creditor change must apply to a hotel, extra, or discount supplement cost.
 
-The entry does **not** affect pricing until you activate it.
+### Navigation
 
-<figure><img src="../.gitbook/assets/creditor-currency-convertor-create-e8cbe64c3996bf0b836c8d83884b2a1f.png" alt=""><figcaption></figcaption></figure>
+In Tourpaq Office, open **Setup → Creditor Currency Converter**.
 
-### Fields
+### Interface overview
 
-These fields are required when you create a converter rule:
+The page lists conversion entries created after qualifying creditor changes. Review the cost type, item, currencies, and recalculation setting before enabling an entry.
 
-* **Type**
-  * What the cost belongs to.
-  * Options: **Hotel Cost**, **Product Cost**, **Discount Supplement Cost**
-* **Name**
-  * The name of the cost item you are converting.
-* **From Currency**
-  * The original currency.
-* **To Currency**
-  * The target currency.
-* **Trigger Price Recalculation on Creditor Change**
-  * If enabled, Tourpaq recalculates prices when a creditor change triggers conversion.
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/creditor-main-page-9f82fca52cb1aeba549f467970240fc2.png" alt="Creditor Currency Converter page in Tourpaq Office"><figcaption></figcaption></figure></div>
 
-### Activate a converter rule
+### System behavior
+
+When a creditor changes for a **Hotel**, **Extra**, or **Discount supplement**, Tourpaq compares the currencies.
+
+If the new creditor uses another currency, Tourpaq creates a conversion entry. The entry does not affect pricing until it is enabled.
+
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/creditor-currency-convertor-create-e8cbe64c3996bf0b836c8d83884b2a1f.png" alt="Creditor currency conversion entry"><figcaption></figcaption></figure></div>
+
+#### Hotel currency converter trigger <a href="#hotel-currency-convertor-trigger" id="hotel-currency-convertor-trigger"></a>
+
+Tourpaq creates an entry when a hotel creditor changes to a creditor with another currency.
+
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/hotel-creditor-3d7beb8e30273e40dabf227c5c2f46d6.png" alt="Hotel creditor currency converter trigger"><figcaption></figcaption></figure></div>
+
+#### Extras currency converter trigger <a href="#extras-currency-convertor-trigger" id="extras-currency-convertor-trigger"></a>
+
+Tourpaq creates an entry when an extra creditor changes to a creditor with another currency.
+
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/extras-creditor-66698e96860b4cfa7bd2200c8c7dc411.png" alt="Extra creditor currency converter trigger"><figcaption></figcaption></figure></div>
+
+#### Discount supplements currency converter trigger <a href="#discount-supplements-currency-convertor-trigger" id="discount-supplements-currency-convertor-trigger"></a>
+
+Tourpaq creates an entry when a discount supplement creditor changes to a creditor with another currency.
+
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/disc-supp-creditor-7a1e95924127b87d499e71fb1a7bafe5.png" alt="Discount supplement creditor currency converter trigger"><figcaption></figcaption></figure></div>
+
+### Field descriptions
+
+| **Field**                                          | **Description**                                                                                                                           |
+| -------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| **Type**                                           | Identifies the cost type. Values are **Hotel Cost**, **Product Cost**, or **Discount Supplement Cost**.                                   |
+| **Name**                                           | Identifies the cost item that Tourpaq converts.                                                                                           |
+| **From Currency**                                  | Shows the original creditor currency.                                                                                                     |
+| **To Currency**                                    | Shows the currency of the replacement creditor.                                                                                           |
+| **Trigger Price Recalculation on Creditor Change** | Enables price recalculation when this creditor change requires conversion. Enable only after validating the currencies and exchange rate. |
+
+### Configure a conversion entry
 
 {% stepper %}
 {% step %}
-**Find the new entry**
+#### Open the converter
 
-Change a creditor on a hotel/extra/discount supplement.
-
-If the currency changes, a new entry is created here.
+In Tourpaq Office, open **Setup → Creditor Currency Converter**.
 {% endstep %}
 
 {% step %}
-**Review the From/To currencies**
+#### Select the entry
 
-Confirm the currencies match what you intended.
+Select the entry created by the creditor change.
 {% endstep %}
 
 {% step %}
-**Activate the rule**
+#### Validate From Currency
 
-Enable the rule so conversion is applied.
+Confirm **From Currency** matches the original creditor currency.
+{% endstep %}
+
+{% step %}
+#### Validate To Currency
+
+Confirm **To Currency** matches the replacement creditor currency.
+{% endstep %}
+
+{% step %}
+#### Enable recalculation
+
+Enable **Trigger Price Recalculation on Creditor Change**.
 {% endstep %}
 {% endstepper %}
 
 {% hint style="info" %}
-Exchange rates are configured separately.
+Maintain exchange rates separately.
 
-See [Currency rates](price-currency.md) if you need to maintain currency rates.
+See [System Setup – Currency](system-setup/system-setup-currency.md).
 {% endhint %}
-
-### Hotel currency converter trigger <a href="#hotel-currency-convertor-trigger" id="hotel-currency-convertor-trigger"></a>
-
-<figure><img src="../.gitbook/assets/hotel-creditor-3d7beb8e30273e40dabf227c5c2f46d6.png" alt=""><figcaption></figcaption></figure>
-
-### Extras currency converter trigger <a href="#extras-currency-convertor-trigger" id="extras-currency-convertor-trigger"></a>
-
-<figure><img src="../.gitbook/assets/extras-creditor-66698e96860b4cfa7bd2200c8c7dc411.png" alt=""><figcaption></figcaption></figure>
-
-### Discount supplements currency converter trigger <a href="#discount-supplements-currency-convertor-trigger" id="discount-supplements-currency-convertor-trigger"></a>
-
-<figure><img src="../.gitbook/assets/disc-supp-creditor-7a1e95924127b87d499e71fb1a7bafe5.png" alt=""><figcaption></figcaption></figure>
 
 ### Examples
 
-1. **Hotel Supplier Currency Change:**
-   * Original creditor currency: EUR
-   * New creditor currency: DKK
-   * A conversion rule is automatically added to the **Creditor Currency Converter** page (EUR → DKK).
-2. **Extra Supplier Update:**
-   * An extras supplier switches from SEK to EUR.
-   * A new converter entry is created to handle **SEK → EUR** conversions for that extra type.
-3. **Discount Supplement Example:**
-   * A discount supplement creditor updates from USD to EUR.
-   * A rule is created automatically for **USD → EUR** conversion.
+#### Hotel creditor change
 
-<figure><img src="../.gitbook/assets/Untitled (1).png" alt=""><figcaption></figcaption></figure>
+A hotel creditor changes from **EUR** to **DKK**.
 
-### Best practices
+Tourpaq creates an entry with **From Currency** set to **EUR** and **To Currency** set to **DKK**. Enable **Trigger Price Recalculation on Creditor Change** after validating the rate.
 
-* Price conversion rules must be **activated manually** before they apply.
-* Always double-check conversion settings to ensure consistency across bookings and financial exports.
-* Review auto-created entries after creditor changes.
-* Clean up unused or outdated rules to avoid confusion.
+#### Extra creditor change
 
-### FAQ
+An extra creditor changes from **SEK** to **EUR**.
 
-<details>
+Tourpaq creates a conversion entry for **SEK** to **EUR** for that extra cost.
 
-<summary><strong>Why was a new converter entry created?</strong></summary>
+#### Discount supplement creditor change
 
-Because you changed a creditor and the new creditor uses a different currency.
+A discount supplement creditor changes from **USD** to **EUR**.
 
-Tourpaq creates an entry so you can decide whether conversion should apply.
+Tourpaq creates a conversion entry for **USD** to **EUR**.
 
-</details>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/Untitled (1).png" alt="Example creditor currency conversion entry"><figcaption></figcaption></figure></div>
 
-<details>
+### Validation
 
-<summary><strong>Why didn’t prices change after I changed the creditor?</strong></summary>
+Before enabling an entry:
 
-Converter entries must be activated manually.
+* Confirm the change applies to the intended cost item.
+* Confirm **From Currency** and **To Currency** match the two creditors.
+* Confirm the exchange rate in **System Setup – Currency**.
 
-Activate the rule, then re-check the affected costs.
+### Related pages
 
-</details>
-
-<details>
-
-<summary><strong>Should I activate every auto-created entry?</strong></summary>
-
-No.
-
-Activate only entries that match your intended workflow and accounting rules.
-
-</details>
-
-<details>
-
-<summary><strong>Where do the exchange rates come from?</strong></summary>
-
-Rates are maintained in the currency setup.
-
-See [Currency rates](price-currency.md).
-
-</details>
-
-<details>
-
-<summary><strong>Can I delete outdated converter rules?</strong></summary>
-
-Yes, if they are no longer needed.
-
-Remove old rules to keep the list clean, but confirm they are not used in active workflows first.
-
-</details>
+* [Creditor](../creditor.md)
+* [System Setup – Currency](system-setup/system-setup-currency.md)
+* [System Setup](system-setup/)

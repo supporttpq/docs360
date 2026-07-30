@@ -1,56 +1,75 @@
+---
+description: >-
+  Configure customer-facing information, images, and extra-selection behavior in
+  Web Booking.
+---
+
 # Web Customer Center
+
+## Web Customer Center
 
 ### Overview
 
-The **Web Customer Center** section in Tourpaq controls the customer-facing content displayed during the web booking flow.
+**Web Customer Center** controls customer-facing texts, images, and extra-selection behavior in the web booking flow.
 
-This section allows you to define informational texts and behavioral rules that appear to end customers when they book packages online. The content configured here is visible in the Web Customer Center  & Web Booking interface and directly affects how products, services, and extras are presented.
+The configuration complements [WebBooking Settings](../brands/webbooking-settings/). It affects how products, services, and extras appear in Web Booking.
 
-This area is content-driven and does not control pricing logic or availability. It controls how information is communicated and how extras are preselected during booking.
+This area does not control pricing or availability. It controls information and preselected extras.
 
 ### Purpose
 
-The purpose of the Web Customer Center configuration is to:
+Use Web Customer Center to:
 
-* Provide clear and structured information to customers during booking
-* Reduce customer confusion by explaining transfers, insurance, tours, and pickup details
-* Standardize communication across products
-* Control how extras are automatically selected in web bookings
-* Improve conversion by guiding customer decisions
+* Show consistent service information during booking.
+* Explain transfers, insurance, tours, and pickup arrangements.
+* Configure how Tourpaq preselects extras.
 
-Correct configuration ensures consistency between operational setup and customer expectations.
+### Requirements
 
-### Field-by-Field Explanation
+Before changing customer-facing content:
 
-Below is a description of each section visible in the Web Customer Center.
+* Confirm the text with the responsible operational or commercial team.
+* Confirm transfer, insurance, and tour details against the related setup.
+* Prepare an image in a supported file format when adding an image.
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+### Navigation
 
-#### 1. Party Package
+In Tourpaq Office, open **Setup → Web Customer Center**.
 
-**Purpose**\
-Used to describe what is included in a party package or special themed package.
+### Interface overview
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+The page contains one content area for each customer-facing subject.
 
-**What to include**
+Select a section to edit its text or image. The **Extras Selection on Web Booking** section controls automatic extra selection.
+
+### Field descriptions
+
+Each section affects the matching part of the customer booking flow.
+
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (2) (1) (1).png" alt="Web Customer Center sections in Tourpaq Office"><figcaption></figcaption></figure></div>
+
+#### Party Package
+
+Describes inclusions and conditions for a party package or themed package.
+
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Party Package content section"><figcaption></figcaption></figure></div>
+
+Include:
 
 * Description of inclusions
 * Important restrictions
 * Target audience
 * Any operational limitations
 
-**Customer impact**\
-Displayed in the booking flow when a party package is selected. Helps customers understand what they are purchasing.
+Tourpaq displays this content when a party package is selected.
 
-#### 2. Transfer
+#### Transfer
 
-**Purpose**\
-Explains how transfers work for the selected destination or product.
+Explains transfer arrangements for the selected destination or product.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1).png" alt="Transfer content section"><figcaption></figcaption></figure></div>
 
-**What to include**
+Include:
 
 * Meeting point details
 * Transfer type (shared or private)
@@ -58,145 +77,168 @@ Explains how transfers work for the selected destination or product.
 * Special instructions for arrival
 * Exceptions or additional costs
 
-**Customer impact**\
-Visible during booking and in customer documentation. Reduces transfer-related support cases.
+Tourpaq shows this content during booking and in customer documentation.
 
-Always verify operational accuracy with the transport setup.
+Validate transfer information against [Transport](../transport/transport/) setup.
 
-#### 3. Insurance
+#### Insurance
 
-**Purpose**\
-Describes the standard travel insurance offered in the booking flow.
+Describes standard travel insurance in the booking flow.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1).png" alt="Insurance content section"><figcaption></figcaption></figure></div>
 
-**What to include**
+Include:
 
 * Coverage overview
 * Claims process summary
 * Legal references if required
 
-#### 4. Cancellation Insurance
+#### Cancellation Insurance
 
-**Purpose**\
 Explains the cancellation protection product.
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (2) (1) (1) (1).png" alt="Cancellation Insurance content section"><figcaption></figcaption></figure></div>
 
-**What to include**
+Include:
 
 * Coverage scope
 * Valid cancellation reasons
 * Refund conditions
 * Important exclusions
 
-**Customer impact**\
-Helps customers understand refund eligibility before purchase.
+Tourpaq shows this content before purchase.
 
-#### 5. Tours
+#### Tours
 
-**Purpose**\
-Describes optional excursions or activities available at the destination.
+Describes optional excursions or activities at the destination.
 
-**What to include**
+Include:
 
 * General information about excursions
 * Booking process
 * Whether prebooking is required
 * Age or participation restrictions
 
-**Customer impact**\
-Encourages upselling and clarifies how excursions are handled.
+This content explains how excursion booking works.
 
-#### 6. PickupPoint
+#### PickupPoint
 
-**Purpose**\
-Defines instructions regarding pickup locations for transfers or tours.
+Defines pickup instructions for transfers or tours.
 
-<figure><img src="../.gitbook/assets/image (5) (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (5) (1) (3) (1).png" alt="PickupPoint content section"><figcaption></figcaption></figure></div>
 
-**What to include**
+Include:
 
 * Default pickup location
 * Communication process if pickup varies
 * Special hotel-specific conditions
 
-**Customer impact**\
-Reduces confusion at arrival or excursion departure.
+This content informs customers about arrival and excursion pickup arrangements.
 
-#### 7. Extras Selection on Web Booking
+#### Extras Selection on Web Booking
 
-This section controls how extras are automatically selected during booking.
+Controls how Tourpaq automatically selects extras during booking.
 
-<figure><img src="../.gitbook/assets/image (6) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (6) (1) (2) (1).png" alt="Extras Selection on Web Booking options"><figcaption></figcaption></figure></div>
 
-Available options:
+Use one of these options:
 
 **Default**
 
-System behavior follows standard configuration without automatic price prioritization.
+Uses the standard configuration without automatic price prioritization.
 
 **Select cheapest**
 
-The system automatically preselects the lowest priced extra option.
+Tourpaq preselects the lowest-priced extra option.
 
-Used when:
+Use when:
 
 * You want price optimization
 * Multiple similar extras exist
 
 **Select the most expensive**
 
-The system automatically preselects the highest priced extra option.
+Tourpaq preselects the highest-priced extra option.
 
-Used when:
+Use when:
 
 * Premium upgrade strategy is desired
 * Upsell optimization is a priority
 
-## Add an Image to a Section in Web Customer Center
+### Add an image to a section
 
-**Overview**\
-In the Web Customer Center, each section (for example Party Package, Transfer, Insurance, Tours, etc.) can contain an image. This image is displayed to customers and helps visually represent the service or product offered in that section.
+Each content section can include an image for the related service or product.
 
-**Purpose**\
-Adding an image improves the presentation of the section and helps customers quickly understand the type of service associated with it.
+{% stepper %}
+{% step %}
+#### Select the section
 
-***
+Select the section that needs an image.
+{% endstep %}
 
-#### Steps to Add an Image
+{% step %}
+#### Edit the section
 
-1. Open **Web Customer Center**.
-2. Locate the section where you want to add an image (for example, _Party Package_, _Transfer_, _Insurance_).
-3.  Click the **Edit icon (pencil)** on the right side of the section.&#x20;
+Click the **Edit icon (pencil)**.
 
-    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-4.  In the edit window:&#x20;
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Edit icon for a Web Customer Center section"><figcaption></figcaption></figure></div>
+{% endstep %}
 
-    * Locate the **Image Upload** field.
-    * Click **Upload** or **Choose File**.
-    * Select the image from your computer.
+{% step %}
+#### Locate Image Upload
 
-    <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-5. Save the changes.
+Locate **Image Upload**.
+{% endstep %}
 
-After saving, the image will be associated with that section and will be displayed in the Web Customer Center interface.
+{% step %}
+#### Upload the file
 
-***
+Click **Upload** or **Choose File**.
 
-#### Supported Image Formats
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Image Upload field in the section editor"><figcaption></figcaption></figure></div>
+{% endstep %}
 
-The system only accepts the following file formats:
+{% step %}
+#### Select the file
+
+Select the approved image file.
+{% endstep %}
+
+{% step %}
+#### Save the section
+
+Save the changes.
+{% endstep %}
+{% endstepper %}
+
+Tourpaq associates the saved image with the selected section. The image appears in Web Customer Center.
+
+#### Supported image formats
+
+**Image Upload** accepts these file formats:
 
 * **.jpg**
 * **.gif**
 * **.png**
 * **.bmp**
 
-If a file with a different format is uploaded, the system will display the following warning message:
+For an unsupported format, Tourpaq displays this message:
 
 > **This file format is not supported. Please upload an image file with one of the following extensions: jpg, gif, png, bmp.**
 
-<figure><img src="../.gitbook/assets/image (8) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (8) (1) (1) (1) (1).png" alt="Unsupported image format warning"><figcaption></figcaption></figure></div>
 
-In this case, the file will not be uploaded and the user must select a supported image format before saving.
+Tourpaq does not upload the file. Select a supported format before saving.
+
+### System behavior
+
+Text and images appear in the matching customer-facing section.
+
+**Extras Selection on Web Booking** determines the preselected extra option. It does not change extra pricing.
+
+### Related pages
+
+* [WebBooking Settings](../brands/webbooking-settings/)
+* [WebBooking images](../brands/webbooking-settings/images.md)
+* [Travel Insurance](../travel-insurance/)
+* [Cancellation Insurance](../cancellation-insurance/)

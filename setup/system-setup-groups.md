@@ -1,94 +1,123 @@
+---
+description: >-
+  Configure minimum passenger thresholds for group conditions by brand and
+  destination.
+---
+
 # System Setup Groups
+
+## System Setup Groups
 
 ### Overview
 
-The **System Setup Groups** page lets admins define group rules for bookings.
+**System Setup Groups** defines group qualification thresholds for each **Brand** and **Destination** combination.
 
-Each rule is linked to a **Destination** and a **Brand**. This lets the system apply group-specific conditions for that destination.
+Tourpaq uses the same master data as [Brands](../brands/) and [Destination](destination.md).
 
 ### Purpose
 
-* Standardize group configurations across agencies and brands.
-* Apply minimum passenger requirements and special offers for group bookings.
-* Centralize management of group rules to prevent duplication and ensure consistency.
+Use this page to:
 
-### Permissions
+* Set the minimum passenger count for group conditions.
+* Apply different thresholds for each brand and destination.
+* Maintain one rule for each **Brand** and **Destination** combination.
 
-Admins can:
+### Requirements
 
-1. **View** all system setup groups that belong to their company.
-2. **Edit** existing system setup groups.
-3. **Insert** new system setup groups.
-4. **Delete** system setup groups.
+Before creating a rule:
 
-### Behavior rules
+* An administrator needs access to **Setup → System Setup → Groups**.
+* The required [Brand](../brands/) must exist.
+* The required [Destination](destination.md) must exist.
 
-* A group rule is unique per **Brand + Destination**.
-* If you insert a rule that already exists, the system updates the existing rule.
-  * It does not create a duplicate entry.
+### Navigation
+
+In Tourpaq Office:
+
+1. Click **Setup**.
+2. Click **System Setup**.
+3. Click **Groups**.
+
+### Interface overview
+
+The page lists the group rules available for the company.
+
+Each rule combines **Brand**, **Destination**, and **Minimum Number of Passengers**.
+
+Click **Insert** to add a rule. Select an existing rule to edit it.
 
 ### Fields
 
-| **Field**                        | **Description**                                                           |
-| -------------------------------- | ------------------------------------------------------------------------- |
-| **Brand**                        | The brand to which the group belongs.                                     |
-| **Destination**                  | The destination associated with the group rule.                           |
-| **Minimum Number of Passengers** | The minimum passenger count required to qualify for the group conditions. |
+| **Field**                        | **Description**                                                                                                      |
+| -------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| **Brand**                        | Selects the brand that owns the group rule. It separates this rule from rules for other brands.                      |
+| **Destination**                  | Selects the destination for the group rule. It links the threshold to the destination used in booking-related setup. |
+| **Minimum Number of Passengers** | Sets the passenger count required to qualify for group conditions. Align this value with the approved sales policy.  |
 
-### How to create or update a group rule
+### Configure a group rule
 
-1. Go to **Setup → System Setup → Groups**.
-2. Click **Insert**.
-3. Select the **Brand** and **Destination**.
-4. Set **Minimum Number of Passengers**.
-5. Save.
+{% stepper %}
+{% step %}
+#### Open Groups
 
-If a rule already exists for the same **Brand + Destination**, saving updates it.
+In Tourpaq Office, go to **Setup → System Setup → Groups**.
+{% endstep %}
+
+{% step %}
+#### Create or select a rule
+
+Click **Insert** to add a rule.
+
+Select an existing rule to change its threshold.
+{% endstep %}
+
+{% step %}
+#### Select the Brand
+
+Select the **Brand**.
+{% endstep %}
+
+{% step %}
+#### Select the Destination
+
+Select the **Destination**.
+{% endstep %}
+
+{% step %}
+#### Set the group threshold
+
+Enter **Minimum Number of Passengers**.
+
+Use the approved sales-policy threshold for this brand and destination.
+{% endstep %}
+
+{% step %}
+#### Save the rule
+
+Save the rule.
+{% endstep %}
+{% endstepper %}
+
+### System behavior
+
+Tourpaq permits one rule for each **Brand** and **Destination** combination.
+
+Saving an existing combination updates that rule. Tourpaq does not create a duplicate entry.
 
 {% hint style="info" %}
 Keep **Minimum Number of Passengers** aligned with your sales policy.
 
-If you change it, re-check any flows that depend on group qualification.
+Review dependent group-qualification flows after changing the threshold.
 {% endhint %}
 
-### FAQ
+### Example
 
-<details>
+For a **Brand** and **Destination**, set the approved group threshold.
 
-<summary><strong>What makes a group rule “unique”?</strong></summary>
+For example, `10` requires at least 10 passengers for group conditions.
 
-The combination of **Brand** and **Destination**.
+### Related pages
 
-You can only have one rule per Brand + Destination.
-
-</details>
-
-<details>
-
-<summary><strong>Why did my new rule overwrite an existing one?</strong></summary>
-
-Because a rule already existed for that **Brand + Destination**.
-
-The system updates instead of creating duplicates.
-
-</details>
-
-<details>
-
-<summary><strong>What does “Minimum Number of Passengers” affect?</strong></summary>
-
-It controls when a booking qualifies for the group conditions for that destination.
-
-Use the smallest passenger count that should be treated as a group.
-
-</details>
-
-<details>
-
-<summary><strong>Should we delete group rules we no longer use?</strong></summary>
-
-Delete only if you are sure it should never be used again.
-
-Otherwise, consider keeping the rule and adjusting the minimum passenger count.
-
-</details>
+* [System Setup](system-setup/)
+* [Brands](../brands/)
+* [Destination](destination.md)

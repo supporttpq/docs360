@@ -1,123 +1,125 @@
+---
+description: Review system activity by date, agency or brand, user, and action type.
+---
+
 # Internal logs
+
+## Internal logs
 
 ### Overview
 
-Internal logs show a history of what people did in Tourpaq.
+**Internal logs** records activity across Tourpaq.
 
-Use it when you need to see who changed something. It also helps you understand what happened and when.
+Use it to investigate changes by date, agency or brand, user, or action type. For changes within one booking, use the [booking History tab](../../booking/new-booking/history.md).
 
-<figure><img src="../../.gitbook/assets/image (361).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (361).png" alt="Internal logs filters and activity list"><figcaption></figcaption></figure></div>
 
-***
+### Purpose
 
-### Where to find it
+Use Internal logs to:
 
-Go to **Setup → Internal Logs**.
+* Identify when an action occurred.
+* Identify the user responsible for an action.
+* Investigate activity across several records or modules.
 
-Only admins can open this page.
+### Requirements
 
-***
+Only administrators can open Internal logs.
 
-### How to use it
+### Navigation
+
+In Tourpaq Office, open **Setup → Internal Logs**.
+
+### Interface overview
+
+The filter area contains **Start date**, **End date**, **Agency/Brand**, **User**, and **Action type**.
+
+The results list shows activity that matches the selected filters.
+
+### Field descriptions
+
+| **Field**        | **Description**                                      |
+| ---------------- | ---------------------------------------------------- |
+| **Start date**   | Sets the first date included in the results.         |
+| **End date**     | Sets the last date included in the results.          |
+| **Agency/Brand** | Limits results to activity for one agency or brand.  |
+| **User**         | Limits results to activity performed by one user.    |
+| **Action type**  | Limits results to one category of recorded activity. |
+
+### Find an activity record
 
 {% stepper %}
 {% step %}
-**Pick a time period**
+#### Set Start date
 
-Choose a **start date** and **end date**.
-
-This is the fastest way to narrow results.
+Enter **Start date**.
 {% endstep %}
 
 {% step %}
-**Add filters (optional)**
+#### Set End date
 
-Filter by:
-
-* **Agency/Brand** (only show actions for one part of the business)
-* **User** (only show actions by one person)
-* **Action type** (only show a certain kind of activity)
+Enter **End date**.
 {% endstep %}
 
 {% step %}
-**Review the list**
+#### Select Agency/Brand
 
-Look for the item you need.
+Select **Agency/Brand** to investigate one agency or brand.
+{% endstep %}
 
-Use the date and the username to confirm what happened.
+{% step %}
+#### Select User
+
+Select **User** to investigate one user.
+{% endstep %}
+
+{% step %}
+#### Select Action type
+
+Select **Action type** to investigate one activity category.
+{% endstep %}
+
+{% step %}
+#### Review the results
+
+Review the matching activity records.
 {% endstep %}
 {% endstepper %}
 
-***
+### System behavior
 
-### What you can look up
+Internal logs uses the selected date range and filters to narrow the activity list.
 
-Internal logs can include many types of actions, for example:
-
-* Exports (financial files, hotel lists)
-* Hotel messages sent from the system
-* Customer merges
-* Changes to discounts or products
-* Changes to room types or extra bed discounts
+The page is read-only. Correct changes in the relevant Tourpaq area.
 
 {% hint style="info" %}
-If you get too many results, start with a shorter date range.
+Start with a short date range.
 
-Then add a user filter.
+Add **User** or **Action type** if the result set remains large.
 {% endhint %}
 
-### Tips
+### Recorded activity
 
-* Use Internal logs when a colleague says “I didn’t change it”.
-* Check the date range first if you see no results.
-* Export the list if you need to share it internally.
+Internal logs can include:
 
-### FAQ
+* Exports, including financial files and hotel lists.
+* Hotel messages sent from Tourpaq.
+* Customer merges.
+* Changes to discounts, products, room types, or extra bed discounts.
 
-<details>
+### Example
 
-<summary><strong>Who can see Internal logs?</strong></summary>
+An export cannot be located in the expected period.
 
-Only admins can access Internal logs.
+To find the export activity:
 
-</details>
+1. Set **Start date** to the first day of the expected period.
+2. Set **End date** to the last day of the expected period.
+3. Select **Action type** for exports.
+4. Review the result list for the matching activity.
 
-<details>
+### Related pages
 
-<summary><strong>Why don’t I see any results?</strong></summary>
-
-Your date range may be too narrow.
-
-Try a wider range and clear extra filters.
-
-</details>
-
-<details>
-
-<summary><strong>Why do I see so many entries?</strong></summary>
-
-Internal logs can record a lot of activity.
-
-Filter by **user** and a shorter date range.
-
-</details>
-
-<details>
-
-<summary><strong>Can I undo a change from Internal logs?</strong></summary>
-
-No. Internal logs are read-only.
-
-To fix something, change it back in the relevant screen.
-
-</details>
-
-<details>
-
-<summary><strong>Should we check Internal logs regularly?</strong></summary>
-
-Yes, if you often troubleshoot issues.
-
-It can also help you spot unusual activity early.
-
-</details>
+* [History](../../booking/new-booking/history.md)
+* [All bookings](../../booking/all-bookings/view-all-bookings.md)
+* [Export](../../export/)
