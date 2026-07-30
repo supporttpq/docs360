@@ -26,13 +26,13 @@ Use this page to:
 * Make sure messages for orders, cancellations, and payments are sent correctly.
 * Keep customer communication accurate and consistent.
 
-<figure><img src=".gitbook/assets/image (107).png" alt="Destination SMS Mappings page."><figcaption><p>Overview of template mappings.</p></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (107).png" alt="Destination SMS Mappings page."><figcaption><p>Overview of template mappings.</p></figcaption></figure></div>
 
-### Types of SMS/Email Templates
+### Types of SMS and email templates
 
-<figure><img src=".gitbook/assets/image (108).png" alt="Template types in Destination SMS Mappings."><figcaption><p>Template types you can configure.</p></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (108).png" alt="Template types in Destination SMS Mappings."><figcaption><p>Template types you can configure.</p></figcaption></figure></div>
 
-### Field Explanation
+### Field explanations
 
 #### Template Name (required)
 
@@ -57,60 +57,6 @@ Available options:
 * **Cancel order**: SMS is sent when you cancel an extra order.
 * **Flight Change**: SMS is sent when the transport has a flight schedule change.
 
-The templates for Hotel, Excursion, Arrival, and Resort (Called 'Destination' in the Guide APP) are displayed like this in the Guide APP.
+The templates for **Hotel**, **Excursion**, **Arrival**, and **Resort** appear as **Destination** in the Guide APP.
 
-<figure><img src=".gitbook/assets/guide app menu.png" alt=""><figcaption></figcaption></figure>
-
-### FAQ
-
-<details>
-
-<summary>Do messages from this page send automatically?</summary>
-
-In most setups, yes.
-
-The Destination app uses these templates when the related event happens.
-
-</details>
-
-<details>
-
-<summary>Why does the email text look different from what I wrote here?</summary>
-
-For some email types (like Excursions, Arrivals, Hotels, and Resorts), the Destination app may replace the default text.
-
-This can depend on whether you use custom text and how your app is configured.
-
-</details>
-
-<details>
-
-<summary>What should I write in “Template Name”?</summary>
-
-Use a name your team will recognize later.
-
-Include the purpose and channel if helpful. For example: “Arrival info – SMS”.
-
-</details>
-
-<details>
-
-<summary>Which “Template For” option should I choose?</summary>
-
-Choose the option that matches when the message should be used.
-
-If you are unsure, start with **Order** for general messages.
-
-</details>
-
-<details>
-
-<summary>Why didn’t a customer receive an SMS or email?</summary>
-
-Common reasons:
-
-* The customer has no phone number or email address.
-* The wrong template type was used for that situation.
-* The app is using a different default text for that message type.
-
-</details>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/guide app menu.png" alt="Guide APP Destination template selection for Hotel, Excursion, Arrival, and Resort messages."><figcaption><p>Destination templates in the Guide APP.</p></figcaption></figure></div>

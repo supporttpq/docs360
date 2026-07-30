@@ -12,9 +12,9 @@ This feature is designed to:
 * Keep the wording consistent across email and SMS.
 * Reduce manual work by sending messages based on rules and filters.
 
-### General
+### Template setup
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="New template setup screen for Dynamic E-mail/SMS Center."><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="New template setup screen for Dynamic E-mail/SMS Center."><figcaption><p>New Dynamic E-mail/SMS template setup.</p></figcaption></figure></div>
 
 ### Access
 
@@ -30,7 +30,7 @@ You can create different template types, such as:
 
 If you are setting up confirmation templates, also read [Hotel and transfer confirmation emails to suppliers](../../hotel-and-transfer-confirmation-e-mail-to-suppliers.md).
 
-### Required first step: select a brand
+### Configure the template
 
 Before you edit anything, select the correct **brand** in the top-left dropdown.
 
@@ -59,7 +59,7 @@ Before you edit anything, select the correct **brand** in the top-left dropdown.
 
 ### Sending options
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (83).png" alt="Sending options and rule builder for a dynamic template."><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (83).png" alt="Sending options and rule builder for a dynamic template."><figcaption><p>Sending options and rule builder.</p></figcaption></figure></div>
 
 Use these fields to decide **when** the message should be sent.
 
@@ -92,15 +92,17 @@ The examples below show how this works.
 
 * If you use two or more different rule types, the booking must match all of them. The message is still sent only once.
 
-**Example:** Send an email or SMS **60 days before departure** and **2 days after booking date**.
+#### Different rule types
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (28).png" alt=""><figcaption></figcaption></figure>
+Send an email or SMS **60 days before departure** and **2 days after booking date**.
+
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (28).png" alt="Sending rules configured for 60 days before departure and two days after booking date."><figcaption><p>Example of combined rule types.</p></figcaption></figure></div>
 
 * If you set the same rule type more than once, the booking matches any of them. The system still sends only one message.
 
-Example:
+#### Same rule type
 
-<figure><img src="../../.gitbook/assets/image (465).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (465).png" alt="Multiple departure-date sending rules configured for one template."><figcaption><p>Example of repeated departure-date rules.</p></figcaption></figure></div>
 
 1.  **First Booking**:\
     One booking is made more than 25 days before departure, and the email template is configured as follows:
@@ -118,7 +120,7 @@ The system sends **only one message per template**, even if you add several “w
 
 ### Product and discount/supplement filters
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Product and discount/supplement filters for dynamic templates."><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Product and discount or supplement filters for dynamic templates."><figcaption><p>Product and discount or supplement filters.</p></figcaption></figure></div>
 
 Use these fields to filter bookings based on what they bought. “Disc/suppl” means **discounts and supplements**.
 
@@ -138,13 +140,13 @@ If you select multiple items in **Customers who have not bought**, a booking is 
 
 For example, the email will be sent out as follows:
 
-![Example of bought/not bought filter logic](https://docs.tourpaq.com/assets/images/email_center_bought_or_not-2d059498dd98bfbfdb95f18ad94222f1.png)
+![Example of bought and not bought filter logic](https://docs.tourpaq.com/assets/images/email_center_bought_or_not-2d059498dd98bfbfdb95f18ad94222f1.png)
 
 Note: `1` means the email is sent. `0` means it is not sent.
 
 ### Message content
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Message editor for a dynamic template."><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Message editor for a dynamic email template."><figcaption><p>Dynamic template message editor.</p></figcaption></figure></div>
 
 The message editor works like the regular **E-mail Center**.
 
@@ -156,32 +158,32 @@ Support is available for Real Transport. The Transport Supplier name inserted in
 
 Write the link text (for example, “Open your booking”). Select it. Then click the link button shown in the screenshot.
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Add link button in the message editor."><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Add link button in the message editor."><figcaption><p>Add link button in the message editor.</p></figcaption></figure></div>
 
 In the URL field, insert the `[Hash-key-link]`. Select the other protocol, as shown in the screenshot.
 
-<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Link settings with Hash-key-link placeholder."><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Link settings with the Hash-key-link placeholder and Other protocol."><figcaption><p>Customer Center link settings.</p></figcaption></figure></div>
 
-When using the Insert Link option with an already existing system-generated link (for example, a Confirmation link), the protocol must be set to "Other".\
+When using the Insert Link option with an already existing system-generated link (for example, a Confirmation link), the protocol must be set to "Other".\
 This is required because the system automatically adds the correct protocol. If another protocol is manually added, the generated link becomes invalid and may result in an access error when the link is opened.
 
-<figure><img src="../../.gitbook/assets/25.05.2026_09.13.33_REC.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/25.05.2026_09.13.33_REC.png" alt="Link dialog configured with the Other protocol for a system-generated link."><figcaption><p>Protocol setting for a system-generated link.</p></figcaption></figure></div>
 
 ### Date filters
 
-<figure><img src="../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Date filter section for bookings."><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Date filter section for bookings."><figcaption><p>Booking date filters.</p></figcaption></figure></div>
 
 Use these fields to filter bookings by booking, departure, arrival, and return dates.
 
-### Destination filters
+### Destination and transport filters
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Destination and transport filter controls for dynamic templates."><figcaption><p>Destination and transport filters.</p></figcaption></figure></div>
 
 Dynamic Emails can be configured to vary their content based on departure/arrival details and transport characteristics. This makes it possible to deliver highly targeted emails, such as departure specific instructions or airport related information.
 
 Dynamic Emails can be filtered so that a specific email template is sent only when defined booking, destination, or transport conditions are met. Filters are combined to precisely control when an email is triggered.
 
-**Destination Filters**
+#### Destination filters
 
 Destination filters define **where** the booking applies. You can filter Dynamic Emails by:
 
@@ -193,7 +195,7 @@ Destination filters define **where** the booking applies. You can filter Dynamic
 
 This allows, for example, sending different emails based on the departure airport or destination hotel.
 
-**Transport Filters**
+#### Transport filters
 
 Transport-related filters define **how** the customer is traveling:
 
@@ -207,13 +209,13 @@ Transport-related filters define **how** the customer is traveling:
 
 These filters make it possible to distinguish between different suppliers, charter vs GDS flights, or system vs external transports.
 
-**How Filtering Works**
+#### How filtering works
 
 * Filters are **inclusive**. If a filter is set, the booking must match it for the email to be sent.
 * Multiple filters can be combined to create highly specific rules.
 * If a filter category is left empty, it does not restrict the email.
 
-**Typical Use Case**
+#### Typical use case
 
 You can configure different Dynamic Email variants such as:
 
@@ -229,11 +231,11 @@ These filtering options ensure that customers receive only the most relevant com
 
 Use **Resource filters** to send clickable product links to guests. Guests can add the product to their booking with very little effort.
 
-<figure><img src="../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Resource filters selection for product links."><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Resource filters selection for product links."><figcaption><p>Resource filters for product links.</p></figcaption></figure></div>
 
 When you use Resource filters, a special variable becomes available in the email body.
 
-<figure><img src="../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Variable for inserting product links into the email body."><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Variable for inserting product links into the email body."><figcaption><p>Variable for inserting product links.</p></figcaption></figure></div>
 
 You can attach this variable to a button, text, or image. When the guest clicks it, they are taken to the Customer Center. They will see a message that the product is added. They must save the booking to confirm it.
 
@@ -252,117 +254,3 @@ If you send several links, only the clicked link is applied.
 * An email or SMS template that has been sent to a booking cannot be resent.
 * Be careful when creating a template. If you make a mistake, avoid editing the same template. A booking can receive a template only once.
 {% endhint %}
-
-### FAQ
-
-<details>
-
-<summary>Can I resend the same template to the same booking?</summary>
-
-No. A booking can receive a template only once. Create a new template if you need to send a corrected message.
-
-</details>
-
-<details>
-
-<summary>What happens if I leave “Hour to Send” blank?</summary>
-
-The message is sent as soon as all rules and filters match.
-
-</details>
-
-<details>
-
-<summary>Why can there be a delay after the selected time?</summary>
-
-Sending can be delayed by up to about 20 minutes. This is normal.
-
-</details>
-
-<details>
-
-<summary>I added several “when to send” rules. Will the booking get several messages?</summary>
-
-No. The system sends only one message per template. The extra rules only decide when that one message should be sent.
-
-</details>
-
-<details>
-
-<summary>What is the difference between email and SMS templates?</summary>
-
-Email templates can include a subject and a message body. SMS templates are meant for short messages.
-
-</details>
-
-<details>
-
-<summary>Why does my product filter include more bookings than I expected?</summary>
-
-In the default setup, “Customers who have bought” matches if the booking bought at least one selected item. Switch to “Product Resourcer With And” if you want “all selected items”.
-
-</details>
-
-<details>
-
-<summary>Where do I select the brand?</summary>
-
-Use the brand dropdown in the top-left corner of the setup screen. Always check it before you save or activate a template.
-
-</details>
-
-<details>
-
-<summary>What does “Hidden” do?</summary>
-
-Hidden removes the template from the dashboard list. Use it to keep the list clean.
-
-</details>
-
-<details>
-
-<summary>Why is my email missing sender details?</summary>
-
-Email templates need sender details. Fill in **From name** and **From e-mail**.
-
-</details>
-
-<details>
-
-<summary>Why is my link not working?</summary>
-
-Make sure the URL contains the exact `[Hash-key-link]` text. Also make sure you selected the correct protocol in the link dialog.
-
-</details>
-
-<details>
-
-<summary>How many product links can I add per category?</summary>
-
-Only one link per category can be used.
-
-</details>
-
-<details>
-
-<summary>Can I attach the ticket to an SMS?</summary>
-
-No. Ticket attachments are available for email templates only.
-
-</details>
-
-<details>
-
-<summary>What does “Attach ticket” do?</summary>
-
-It adds the booking ticket PDF to the email.
-
-</details>
-
-<details>
-
-<summary>What does “Customers who have not bought” mean?</summary>
-
-It is an exclude filter. If a booking bought something from the selected categories, it will not receive the message.
-
-</details>

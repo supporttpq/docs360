@@ -56,13 +56,13 @@ The page includes **five tabs**, each corresponding to a transport type:
 
 Each tab shows which documents are set up for that transport type:
 
-<figure><img src="../../.gitbook/assets/image (302).png" alt="Ticket Attachments overview screen."><figcaption><p>Ticket Attachments overview for an agency.</p></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (302).png" alt="Ticket Attachments overview screen."><figcaption><p>Ticket Attachments overview for an agency.</p></figcaption></figure></div>
 
 #### All Transports
 
 If you upload a document in **All Transports**, it becomes the default. Other tabs use that default unless you override it.
 
-<figure><img src="../../.gitbook/assets/image (303).png" alt="All Transports tab configuration."><figcaption><p>All Transports tab, showing default documents for all transport types.</p></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (303).png" alt="All Transports tab configuration."><figcaption><p>All Transports tab, showing default documents for all transport types.</p></figcaption></figure></div>
 
 ### How it works
 
@@ -76,14 +76,14 @@ Use this flow when configuring ticket attachments for an agency:
 
 {% stepper %}
 {% step %}
-**1. Open the Ticket Attachments page**
+#### Open the Ticket Attachments page
 
 * Go to **E-mail Setup → Ticket Attachments**.
 * Select the correct **agency** at the top of the page.
 {% endstep %}
 
 {% step %}
-**2. Configure defaults in "All Transports"**
+#### Configure defaults in **All Transports**
 
 * Open the **All Transports** tab.
 * Upload the standard PDFs you want on most tickets.
@@ -94,7 +94,7 @@ Use this flow when configuring ticket attachments for an agency:
 {% endstep %}
 
 {% step %}
-**3. Adjust documents per transport type (optional)**
+#### Adjust documents per transport type
 
 * Switch to the specific tabs (**Charter Transports**, **Dynamic Transports**, **System Transports**, **Sys-real Transports**).
 * Upload different PDFs where you need different rules.
@@ -103,14 +103,14 @@ Use this flow when configuring ticket attachments for an agency:
 {% endstep %}
 
 {% step %}
-**4. Review existing attachments**
+#### Review existing attachments
 
 * Check each tab for the expected documents.
 * Download a document to confirm it is the right version.
 {% endstep %}
 
 {% step %}
-**5. Verify by generating a ticket**
+#### Verify by generating a ticket
 
 * Create a test booking that matches the transport type.
 * Generate and send a ticket.
@@ -134,52 +134,10 @@ You can upload a PDF that is:
 * Sent as a **separate attachment**, or
 * **Added to the end** of the ticket PDF.
 
-<figure><img src="../../.gitbook/assets/image (304).png" alt="Upload dialog for ticket attachments."><figcaption><p>Uploading conditions documents to be attached to tickets.</p></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (304).png" alt="Upload dialog for ticket attachments."><figcaption><p>Uploading conditions documents to be attached to tickets.</p></figcaption></figure></div>
 
 #### Download an attachment
 
 You can download existing documents for review or reuse.
 
-<figure><img src="../../.gitbook/assets/image (305).png" alt="Download option for ticket attachments."><figcaption><p>Downloading existing ticket attachment documents.</p></figcaption></figure>
-
-### FAQ
-
-<details>
-
-<summary>Do my changes affect all agencies?</summary>
-
-No. Ticket Attachments are set per agency. Your changes apply only to the selected agency.
-
-</details>
-
-<details>
-
-<summary>What file type can I upload?</summary>
-
-PDF only.
-
-</details>
-
-<details>
-
-<summary>What is the difference between “separate attachment” and “added to the ticket”?</summary>
-
-Separate attachment means the customer receives another PDF file in the email. Added to the ticket means the pages are appended to the ticket PDF.
-
-</details>
-
-<details>
-
-<summary>Why does a document show in “All Transports” but not in another tab?</summary>
-
-All Transports sets the default. Other tabs can override the default with their own documents.
-
-</details>
-
-<details>
-
-<summary>How do I make sure customers get the new document?</summary>
-
-Generate a test ticket and send it to yourself. Previously sent tickets will not change automatically.
-
-</details>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (305).png" alt="Download option for ticket attachments."><figcaption><p>Downloading existing ticket attachment documents.</p></figcaption></figure></div>

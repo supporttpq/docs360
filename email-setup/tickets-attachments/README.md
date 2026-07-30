@@ -1,122 +1,130 @@
+---
+description: Configure PDF documents that Tourpaq adds to ticket emails and ticket PDFs.
+---
+
 # Tickets attachments
 
-### **Overview**
+Ticket attachments add PDF documents to customer tickets. They support standard travel documents and booking-specific information. The configuration works with [Ticket Attachments](ticket-attachments.md), [Print Tickets](../../tickets/print-tickets.md), and ticket email delivery.
 
-The **Ticket Attachments** module (available only to **Administrator** users) allows a Tourpaq company to attach additional PDF documents to booking confirmation emails and printed tickets.
+### Overview
 
-Attachments are configured per **agency**, so each agency can have its own set of documents that are automatically included with the customer’s ticket.
+The **Ticket Attachments** module adds PDF documents to ticket emails. Depending on the delivery method, Tourpaq sends each PDF separately or appends it to the ticket PDF.
 
-### **Access & Permissions**
+Settings apply per agency. Each agency can therefore use its own customer documents.
 
-* Path: **E-mail Setup → Ticket Attachments**
-* Only users with **Administrator** rights can configure ticket attachments.
-* Settings are **agency-specific** – make sure the correct agency is selected before making changes.
+### Purpose
 
-***
+Use ticket attachments to distribute documents that customers need with their travel documents, including terms and conditions, baggage rules, and hotel information.
 
-### **How Attachments Are Delivered**
+Tourpaq evaluates the booking when it generates a ticket. It includes every attachment that matches the booking configuration.
 
-Documents can be sent in **two different ways**. When you upload a PDF, you choose one of the following delivery options:
+### Requirements
 
-1. **As a separate attachment**
-   * Example: A _Terms & Conditions_ PDF is sent alongside the ticket as an additional file in the email.
-2. **Merged into the ticket PDF**
-   * Example: A _Terms & Conditions_ PDF is appended at the end of the ticket so the customer receives a **single combined PDF**.
-
-***
-
-### **Where Attachments Can Come From**
-
-Ticket attachments can be linked at several levels. For a given booking, the system checks the booking data (transport, resort, hotel, etc.) and includes all relevant documents that are configured.
-
-* **Global attachments (all bookings)**
-  * Generic documents such as **Terms & Conditions** that should apply to every booking.
-* **Scenario-specific attachments**
-  * Documents that apply only under particular booking scenarios (for example, specific brands, seasons, or products), as defined in your setup.
-* **Resort-specific attachments**
-  * Files linked to a particular **resort**.
-  * Whenever a booking includes that resort, the document is attached or merged according to its configuration.
-* **Hotel-specific attachments**
-  * Files linked directly to a **hotel**.
-  * Used for hotel-level conditions, welcome information, or local rules.
-* **Facility-specific attachments**
-  * Documents linked to a **facility** within a hotel (e.g. _Pool Bar Rules_, _Spa Regulations_).
-  * If a booking includes a hotel using that facility, the facility document is automatically included.
-  * **Maximum of 5 facility documents** can be merged per ticket.
-  * The **facility category must be configured to appear on the ticket**; otherwise, its document will not be included.
-* **Transport attachments**
-  * Files linked to a specific **transport** (e.g. _charter flight rules_, _baggage regulations_).
-  * These are sent when the booking uses that transport.
-
-***
-
-### **Limitations & Recommendations**
-
-To keep tickets readable and ensure email deliverability, the following technical limits apply:
-
-* **Maximum number of facility documents merged**: **5 per ticket**
-  * If more than 5 facilities have documents linked, **only the first 5** will be merged into the ticket.
-* **Maximum file size per document**: **1 MB**
-* **Facility visibility requirement**: The facility’s **category must be visible on the ticket** or its attachment will be ignored.
+* An **Administrator** role is required.
+* The selected agency must be the agency that sends the ticket.
+* Each document must be a PDF no larger than 1 MB.
+* A facility attachment requires its category to appear on the ticket.
 
 {% hint style="warning" %}
-Large or numerous attachments increase the risk that important emails (such as **Thank You**, **Booking Updated**, or other ticket emails) are not delivered. Keep PDFs as small as possible and avoid adding unnecessary documents.
+Large or numerous attachments can prevent ticket emails from reaching recipients. Keep PDFs small and attach only required documents.
 {% endhint %}
 
-***
+### Navigation
 
-### **Example: Effect in Practice**
+In Tourpaq Office, open **E-mail Setup → Ticket Attachments**.
 
-Consider a holiday booking that includes:
+Select the agency before opening or changing an attachment configuration.
 
-* A hotel with several facilities (Pool Bar, Spa, Kids' Club) that each have an attached rules PDF.
-* A charter flight with its own flight rules PDF.
-* A global Terms & Conditions PDF defined for all bookings.
+### Interface overview
 
-If all of these are configured:
+The **Ticket Attachments** page contains these controls:
 
-1. The global **Terms & Conditions** document is attached or merged for every booking.
-2. Any **resort** and **hotel** documents linked to the selected products are included.
-3. Up to **5 facility documents** (e.g. Pool Bar rules, Spa rules) are also included, provided their facilities are visible on the ticket.
-4. The **transport** document (e.g. charter flight rules) is included based on the chosen transport.
+* **Agency** selects the agency whose attachment configuration appears. This setting scopes every upload and replacement.
+* Transport-type tabs define the attachment scope. **All Transports** supplies the default configuration.
+* The attachment list shows configured PDF documents for the selected scope. Use its upload and download actions to manage documents.
+* The delivery choice controls whether Tourpaq adds the document to the email or the ticket PDF.
 
-The customer receives a ticket containing **all relevant information automatically**, without any manual sending from the agency, improving compliance and transparency.
+For the tab names, upload controls, and transport-specific behavior, see [Ticket Attachments](ticket-attachments.md).
 
-***
+### Delivery options
 
-### **FAQ**
+Choose one delivery option for each uploaded PDF:
 
-#### 1. Which emails include ticket attachments?
+* **Separate attachment** sends the PDF as an additional file with the ticket email.
+* **Merged into ticket** appends the PDF pages to the ticket PDF. The customer receives one combined PDF.
 
-Ticket attachments are included with emails that contain the **ticket PDF** (for example, booking confirmation / "Thank You" emails and booking update emails that resend the ticket). If an email does **not** include a ticket, no ticket attachments are sent.
+Use **Merged into ticket** for documents that must remain with the ticket. Use **Separate attachment** when the document should remain a distinct file.
 
-#### 2. Why is my document not attached to the ticket?
+### Attachment sources
 
-Check the following:
+Tourpaq can include attachments from several booking levels:
 
-* The document is uploaded as a **PDF** and is **below 1 MB**.
-* You are editing the correct **agency** in **E-mail Setup → Ticket Attachments**.
-* The document is linked at the right level (Global / Resort / Hotel / Facility / Transport).
-* For **facility documents**, the **facility category is configured to appear on the ticket**.
-* For **transport documents**, the booking actually uses that specific transport.
+* **Global attachments** apply to all bookings.
+* **Scenario-specific attachments** apply to configured brands, seasons, or products.
+* **Resort**, **Hotel**, **Facility**, and **Transport** attachments apply when the booking contains that item.
 
-#### 3. What is the difference between "separate attachment" and "merged into ticket"?
+Facility documents support hotel facilities. A facility category must print on the ticket. Tourpaq merges at most five facility documents per ticket.
 
-* **Separate attachment** – the PDF is sent as an **additional file** in the email, alongside the ticket PDF.
-* **Merged into ticket** – the PDF pages are **appended to the end of the ticket PDF**, so the customer receives one combined document.
+### Configure ticket attachments
 
-#### 4. What happens if more than 5 facility documents are linked to a booking?
+{% stepper %}
+{% step %}
+#### Select the agency
 
-Only **5 facility documents** can be merged per ticket. If more than 5 facilities have documents configured, **only the first 5** (according to the system’s internal order) will be included. The remaining facility documents are ignored for that ticket.
+In **E-mail Setup → Ticket Attachments**, select the agency that sends the ticket.
 
-#### 5. What happens if a PDF file is larger than 1 MB?
+Review the selected agency before uploading or replacing a document.
+{% endstep %}
 
-Files larger than **1 MB** should be avoided. Oversized files increase the risk that emails containing tickets and attachments are **not delivered** by the recipient’s mail server. Reduce the file size (for example, by compressing the PDF) and upload it again.
+{% step %}
+#### Set the default documents
 
-#### 6. Can I use different attachments for different transport types?
+Open **All Transports**.
 
-Yes. You can configure attachments per **transport** and, on the detailed **Ticket Attachments** configuration page, per **transport type** (such as charter, dynamic, or system transports). This allows you to send different rules or conditions depending on how the customer is travelling.
+Upload the standard PDFs and choose their delivery option.
+{% endstep %}
 
-#### 7. Do I need to re-send the ticket after changing attachments?
+{% step %}
+#### Add transport-specific documents
 
-Yes. Changes to ticket attachments **do not affect previously sent emails**. After updating attachments, you must **re-send the ticket email** (or create a new booking/ticket) for customers to receive the updated documents.
+Open the required transport-type tab.
+
+Upload the replacement or additional PDF for that transport type.
+{% endstep %}
+
+{% step %}
+#### Verify the result
+
+In **Print Tickets**, generate a test ticket for a matching booking.
+
+Check the ticket PDF and email attachments before using the configuration for customer tickets.
+{% endstep %}
+{% endstepper %}
+
+### System behavior
+
+Ticket attachments are included only with emails that contain a ticket PDF. Emails without a ticket PDF do not include them.
+
+Changes do not alter emails that Tourpaq has already sent. Generate and send a ticket again to deliver updated documents.
+
+If more than five facility documents match a booking, Tourpaq merges the first five. The remaining facility documents are ignored.
+
+### Examples
+
+#### Standard terms and conditions
+
+Add **Terms & Conditions** in **All Transports**. Select **Merged into ticket**. Tourpaq appends the terms to every matching ticket PDF.
+
+#### Charter baggage rules
+
+Open **Charter Transports** and upload the charter baggage rules. Select **Separate attachment**. Tourpaq sends the document only with tickets for matching charter transport bookings.
+
+#### Hotel facility rules
+
+Link a pool or spa rules PDF to the relevant facility. Ensure that the facility category appears on the ticket. Tourpaq includes the document when the booking uses that facility.
+
+### Related pages
+
+* [Ticket Attachments](ticket-attachments.md) explains transport-type tabs and attachment actions.
+* [Print Tickets](../../tickets/print-tickets.md) explains ticket generation and email delivery.
+* [E-tickets Overview](../../e-tickets-overview.md) helps verify sent and failed ticket emails.

@@ -10,9 +10,11 @@ You control three things:
 * where the link goes, and
 * how it opens when someone clicks it.
 
-<figure><img src="../../.gitbook/assets/image (347).png" alt="Link dialog with tabs: Link Info, Target, Upload."><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (347).png" alt="Link dialog with Link Info, Target, and Upload tabs."><figcaption><p>Link dialog tabs.</p></figcaption></figure></div>
 
-### Link Info tab
+### Link dialog tabs
+
+#### Link Info tab
 
 This is the main tab. You will use it for most links.
 
@@ -25,9 +27,9 @@ This is the main tab. You will use it for most links.
 * **URL**: the address the link should open.
 * **Browse Server**: pick a file or image you already uploaded.
 
-<figure><img src="../../.gitbook/assets/image (346).png" alt="Link Info settings with fields like Protocol, URL, and Browse Server."><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (346).png" alt="Link Info settings with Protocol, URL, and Browse Server fields."><figcaption><p>Link Info tab settings.</p></figcaption></figure></div>
 
-### Target tab
+#### Target tab
 
 This tab defines how the link should open when clicked.
 
@@ -36,9 +38,9 @@ This tab defines how the link should open when clicked.
   * **New Window (\_blank)** – Opens link in a new tab/window.
   * **Same Window (\_self)** – Opens link in the same window/tab.
   * **Parent Frame (\_parent)** – Opens link in the parent frame (if applicable).
-  * **Topmost Window (\_top)** – Opens link in the full browser window.
+* **Topmost Window (\_top)** – Opens link in the full browser window.
 
-### Upload tab
+#### Upload tab
 
 Use this tab to upload a file and link to it.
 
@@ -61,45 +63,3 @@ Use these settings:
 * **Link Type**: `URL`
 * **Protocol**: `<other>`
 * **URL**: `[Hash-key-link]`
-
-### FAQ
-
-<details>
-
-<summary>What does “Protocol” mean?</summary>
-
-It is the start of the link address. Most web links use `https://`.
-
-If you are using a placeholder like `[Hash-key-link]`, choose `<other>`.
-
-</details>
-
-<details>
-
-<summary>When should I use “New Window (_blank)”?</summary>
-
-Use it when you want the link to open in a new tab.
-
-This helps the reader keep the email page open.
-
-</details>
-
-<details>
-
-<summary>My placeholder link does not work. What is the usual reason?</summary>
-
-Most of the time, **Protocol** was not set to `<other>`.
-
-Set **Protocol** to `<other>` and keep the URL exactly as `[Hash-key-link]`.
-
-</details>
-
-<details>
-
-<summary>Can I link to a file I uploaded?</summary>
-
-Yes. Use the **Upload** tab to upload the file.
-
-Or use **Browse Server** if the file is already there.
-
-</details>
