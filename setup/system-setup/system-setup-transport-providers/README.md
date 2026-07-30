@@ -2,119 +2,149 @@
 
 ### Overview
 
-Transport Providers configures integrations to external transport systems (flights, rail, etc.).
+**Transport Providers** configures shared transport behavior and provider connections in Tourpaq.
 
-These settings control how Tourpaq searches, books, tickets, and pays when using provider APIs.
+These settings support transport search, booking, ticketing, payment, and PNR processing.
 
-Go to **Setup → System Setup → Transport Providers**.
+Provider-specific tabs store credentials and connection parameters for each external provider.
+
+### Purpose
+
+Use **Transport Providers** to standardize shared transport settings across provider integrations.
+
+The **General** tab controls defaults, payment settings, booking limits, and provider selection.
+
+Provider tabs define each provider's authentication and connection settings.
+
+### Requirements
+
+Before configuring **Transport Providers**, confirm the following:
+
+1. Administrator access to **Setup → System Setup** is available.
+2. The provider has supplied valid credentials and required connection details.
+3. The company payment policy defines the card and payment-rule configuration.
+4. A test environment is available when the provider supports one.
 
 {% hint style="warning" %}
 This page contains payment and API credentials.
 
 Treat values as secrets and restrict access.
-{% endhint %}
 
-### Purpose
-
-Use these settings to standardize transport behavior across providers:
-
-* Default currency and payment behavior.
-* Card and payment credentials used for automated processes.
-* Rules for selecting and updating transport data.
-* Timing and restrictions for reservation management.
-
-### Tabs
-
-The **Transport Providers** section includes several tabs, such as:
-
-* **General**: Core configuration and default rules.
-* **TravelPort**, **Paxport**, **Amadeus**, **RailHub**: Provider-specific authentication and connection settings.
-
-### General tab
-
-<figure><img src="../../../.gitbook/assets/sys_setup_dts.png" alt=""><figcaption></figcaption></figure>
-
-| **Field**                                           | **Description**                                                                                                                                                                                        |
-| --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Currency**                                        | Defines the currency used for transport transactions. Example: _EUR_.                                                                                                                                  |
-| **Price change margin**                             | The percentage margin applied when a price change occurs (e.g., 50%).                                                                                                                                  |
-| **Payment rule**                                    | Sets the rule for payment processing (e.g., _Normal deposit + GDS cost_). Determines how deposits and GDS-related fees are applied.                                                                    |
-| **Card Owner**                                      | Name of the cardholder used for automated payments or API-based transactions.                                                                                                                          |
-| **Card Type**                                       | Type of payment card used (e.g., _VISA_, _MasterCard_).                                                                                                                                                |
-| **Card Number**                                     | Stores the payment card number used for automated processes. Clicking **Change** allows updating card details.                                                                                         |
-| **Expiration Date (Year / Month)**                  | Defines the card’s expiration date. Both _Year_ and _Month_ are required.                                                                                                                              |
-| **CVC**                                             | The card security code used for transaction validation.                                                                                                                                                |
-| **Submit GDS reservation made in Tourpaq Office**   | <p>If checked, GDS reservations made in Tourpaq Office will automatically be submitted.</p><p>The bookings made from web booking are always submitted.</p>                                             |
-| <p><br>(Note: This uses the SubmitGDS service).</p> |                                                                                                                                                                                                        |
-| **Days number for check PNR**                       | Indicates how many days before departure the system should check PNR (Passenger Name Record) information.                                                                                              |
-| **Show TicketNo on Ticket**                         | Displays the GDS ticket number on printed tickets.                                                                                                                                                     |
-| **Time frame before departure**                     | Minutes before departure when a flight can be removed from a booking (when booking date equals departure date).                                                                                        |
-| **Transport selection rule**                        | Determines the logic for selecting transport offers, e.g., _Cached flight/winning deal_.                                                                                                               |
-| **Default Provider**                                | Defines which transport provider is used by default (e.g., _Paxport API_).                                                                                                                             |
-| **Early arrival limit**                             | If the arrival time for departure is before the limit, then the guest needs the hotel on the day before the arrival date, adding one extra day (+DAYS) to the stay. This applies only to new bookings. |
-| **Late departure limit**                            | If the return departure time is after the limit, the guest needs one extra hotel night (LAND DAYS). This adds one extra day to the stay. Applies only to new bookings.                                 |
-
-{% hint style="warning" %}
-If you store card details here, follow your internal compliance rules.
+When storing card details, follow internal compliance rules.
 
 Avoid sharing screenshots containing full card numbers or CVC.
 {% endhint %}
 
-### Provider tabs
+### Navigation
 
-There are four transport providers that can be configured in this menu:
+In Tourpaq Office, open **Setup → System Setup → Transport Providers**.
 
-* [TravelPort](../../../integration/transport-providers/travelport.md)
-* [Paxport](../../../integration/transport-providers/paxport.md)
-* [Amadeus](../../../integration/transport-providers/amadeus.md)
-* [Railhub](../../../integration/transport-providers/railhub.md)
+### Interface overview
+
+The page contains one shared **General** tab and provider-specific tabs.
+
+Use **General** for currency, payment, GDS, booking, and provider-selection settings.
+
+Use provider tabs for authentication and provider-specific connection parameters.
+
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/sys_setup_dts.png" alt="Transport Providers General tab with payment, GDS, and transport selection settings."><figcaption><p>Transport Providers General tab.</p></figcaption></figure></div>
+
+### General tab fields
+
+| Field                                             | Description                                                                                  | Requirement and related behavior                                                                                |
+| ------------------------------------------------- | -------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| **Currency**                                      | Defines the currency used for transport transactions. For example, _EUR_.                    | Required status is not indicated.                                                                               |
+| **Price change margin**                           | Defines the percentage margin applied when a price changes. For example, `50%`.              | Review this value when transport prices differ unexpectedly.                                                    |
+| **Payment rule**                                  | Sets the payment-processing rule. For example, _Normal deposit + GDS cost_.                  | Determines how deposits and GDS-related fees are applied.                                                       |
+| **Card Owner**                                    | Defines the cardholder name for automated payments or API transactions.                      | Used with the other card fields. Follow internal compliance rules.                                              |
+| **Card Type**                                     | Defines the payment card type. For example, _VISA_ or _MasterCard_.                          | Used with the other card fields.                                                                                |
+| **Card Number**                                   | Stores the payment card number for automated processes.                                      | **Change** updates card details. Restrict access to this value.                                                 |
+| **Expiration Date (Year / Month)**                | Defines the card expiration date.                                                            | Both **Year** and **Month** are required.                                                                       |
+| **CVC**                                           | Stores the card security code used for transaction validation.                               | Restrict access to this value.                                                                                  |
+| **Submit GDS reservation made in Tourpaq Office** | Automatically submits GDS reservations made in Tourpaq Office when selected.                 | Reservations made through Web Booking are always submitted. This setting uses the SubmitGDS service.            |
+| **Days number for check PNR**                     | Specifies the number of days before departure when Tourpaq checks PNR information.           | PNR means Passenger Name Record.                                                                                |
+| **Show TicketNo on Ticket**                       | Displays the GDS ticket number on printed tickets.                                           | Requires the provider to return a ticket number.                                                                |
+| **Time frame before departure**                   | Specifies the minutes before departure when a flight can be removed from a booking.          | Applies when the booking date equals the departure date.                                                        |
+| **Transport selection rule**                      | Defines the logic for selecting transport offers. For example, _Cached flight/winning deal_. | Affects which offer Tourpaq selects.                                                                            |
+| **Default Provider**                              | Defines the transport provider used by default. For example, _Paxport API_.                  | Select a provider configured on its own tab.                                                                    |
+| **Early arrival limit**                           | Defines the arrival-time limit for adding a hotel day before arrival.                        | If the arrival time is before the limit, Tourpaq adds one hotel day (+DAYS). Applies only to new bookings.      |
+| **Late departure limit**                          | Defines the return-departure limit for adding a hotel night.                                 | If the departure time is after the limit, Tourpaq adds one hotel day (LAND DAYS). Applies only to new bookings. |
+
+### Configuration steps
+
+1. In **Setup → System Setup → Transport Providers**, open **General**.
+2. Set **Currency**, **Price change margin**, and **Payment rule**.
+3. Configure the card fields when automated payment requires a card.
+4. Set GDS and PNR options for the company workflow.
+5. Set **Time frame before departure**, **Early arrival limit**, and **Late departure limit**.
+6. Select the configured **Default Provider**.
+7. Open the provider tab and enter provider-specific connection settings.
+8. Save the configuration.
+9. Validate search, booking, and ticketing in the provider test environment.
+
+### System behavior
+
+#### Shared defaults
+
+Tourpaq uses the **General** tab for shared transport behavior.
+
+The selected **Default Provider** defines the provider used by default.
+
+#### GDS reservations and tickets
+
+Selecting **Submit GDS reservation made in Tourpaq Office** submits Office GDS reservations automatically.
+
+Web Booking reservations are always submitted.
+
+Selecting **Show TicketNo on Ticket** displays the returned GDS ticket number on printed tickets.
+
+#### Hotel-day adjustments
+
+Tourpaq evaluates **Early arrival limit** and **Late departure limit** for new bookings.
+
+An early arrival adds one hotel day before arrival.
+
+A late return departure adds one hotel day after the stay.
+
+### Examples
+
+#### Display ticket numbers
+
+Select **Show TicketNo on Ticket**.
+
+Tourpaq displays the provider's GDS ticket number on printed tickets.
+
+#### Check PNRs before departure
+
+Set **Days number for check PNR** to `3`.
+
+Tourpaq checks PNR information three days before departure.
+
+#### Add a hotel day for an early arrival
+
+Set an **Early arrival limit** that matches the company arrival policy.
+
+Tourpaq adds one hotel day when the arrival occurs before that limit.
+
+### Provider-specific configuration
+
+Configure the provider selected in **Default Provider**:
+
+* [TravelPort](../../../integration/transport-providers/travelport.md): GDS credentials, ticketing, queue, fare, and email settings.
+* [Paxport](../../../integration/transport-providers/paxport.md): API URL, syndicator credentials, target, and API version.
+* [Amadeus](../../../integration/transport-providers/amadeus.md): Amadeus connection settings.
+* [RailHub](../../../integration/transport-providers/railhub.md): Rail-provider connection settings.
 
 ### Troubleshooting
 
-* **No search results:** Verify provider is enabled, credentials are correct, and you are using the right environment (test vs production).
-* **Authentication failed:** Re-check usernames, passwords/tokens, and office/branch/PCC codes.
-* **Ticket number not shown:** Ensure **Show TicketNo on Ticket** is enabled and the provider returns a ticket number.
-* **Unexpected price changes:** Review **Price change margin** and payment rules.
-* **PNR checks not happening:** Verify **Days number for check PNR** and that your workflow uses PNR checking.
+* **No search results:** Verify that the provider is enabled, credentials are correct, and the selected environment is correct.
+* **Authentication failed:** Recheck usernames, passwords, tokens, and office, branch, or PCC codes.
+* **Ticket number is not shown:** Confirm **Show TicketNo on Ticket** is selected and the provider returns a ticket number.
+* **Unexpected price changes:** Review **Price change margin** and **Payment rule**.
+* **PNR checks do not occur:** Verify **Days number for check PNR** and confirm the workflow uses PNR checking.
 
-### FAQ
+### Related pages
 
-<details>
-
-<summary><strong>Do these settings apply to all brands and agencies?</strong></summary>
-
-In most setups, System Setup values are company-wide.
-
-If you need per-brand settings, confirm what your environment supports.
-
-</details>
-
-<details>
-
-<summary><strong>Should I use test or production targets?</strong></summary>
-
-Use **test** for validation and onboarding.
-
-Use **production** only when credentials and workflows are ready.
-
-</details>
-
-<details>
-
-<summary><strong>Why are there both “General” and provider tabs?</strong></summary>
-
-General controls shared behavior (currency, payment rules, ticket display, etc.).
-
-Provider tabs store connection details and provider-specific rules.
-
-</details>
-
-<details>
-
-<summary><strong>Is it safe to store card details here?</strong></summary>
-
-Follow your internal compliance requirements.
-
-Avoid sharing screenshots or exports containing sensitive card data.
-
-</details>
+* [Transport Providers](../../../integration/transport-providers/): Transport provider concepts and integration scope.
+* [TravelPort](../../../integration/transport-providers/travelport.md): TravelPort GDS configuration.
+* [Paxport](../../../integration/transport-providers/paxport.md): Paxport API configuration.

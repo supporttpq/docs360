@@ -1,10 +1,14 @@
+---
+description: Configure flight-change thresholds and warning notifications.
+---
+
 # System Setup – Flight Change Queue
 
 ### Overview
 
-The **Flight Change Configuration** section lets admins define thresholds and notifications for flight schedule changes.
+**Flight Change Configuration** defines thresholds and warning notifications for flight schedule changes. It forms part of the company-wide settings in [System Setup](./).
 
-The system classifies changes as **Tiny**, **Small**, or **Large**. It can also send alerts and trigger extra warnings close to departure.
+Tourpaq classifies changes as **Tiny**, **Small**, or **Large**. It also supports warning emails and departure-related warnings.
 
 ### Purpose
 
@@ -16,129 +20,107 @@ Use this configuration to:
 
 Standardized thresholds reduce manual checks and missed changes.
 
-***
+### Requirements
 
-### Fields and options
+Before configuring Flight Change Queue, confirm these requirements:
 
-<figure><img src="../../.gitbook/assets/image (359).png" alt=""><figcaption></figcaption></figure>
+* **Administrator** rights for **System Setup**.
+* Approved threshold values for **Tiny**, **Small**, and **Large** changes.
+* A monitored recipient for **Warning – Email**.
 
-Each change category (Tiny/Small/Large) has its own **Earlier** and **Later** threshold. Thresholds are in minutes.
+Use a safe test environment for high-impact changes.
 
-#### 1. Earlier (minutes)
+### Navigation
 
-Defines how many minutes _earlier_ a flight can move and still be classified in each category.
+In Tourpaq Office, open **Setup → System Setup → Flight Change Queue → Flight Change Configuration**.
 
-Example:
+### Interface overview
 
-* Tiny: 10 minutes earlier
-* Small: 20 minutes earlier
-* Large: 60 minutes earlier
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (359).png" alt="Flight Change Configuration fields for Tiny, Small, and Large thresholds, Warning – Email, and Warning – Before Departure (hours)."><figcaption><p>Flight Change Configuration fields.</p></figcaption></figure></div>
 
-#### 2. Later (minutes)
+Each change category has **Earlier** and **Later** thresholds. Tourpaq measures both thresholds in minutes.
 
-Defines how many minutes _later_ a flight can move and still be classified in each category.
+### Field descriptions
 
-Example:
+| Field                                  | Description                                                                                                        |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| **Tiny**                               | Defines the smallest flight-change category. Configure **Earlier** and **Later** thresholds for this category.     |
+| **Small**                              | Defines the intermediate flight-change category. Configure **Earlier** and **Later** thresholds for this category. |
+| **Large**                              | Defines the largest flight-change category. Configure **Earlier** and **Later** thresholds for this category.      |
+| **Earlier**                            | Defines how many minutes earlier a flight can move for each category.                                              |
+| **Later**                              | Defines how many minutes later a flight can move for each category.                                                |
+| **Warning – Email**                    | Specifies the email address that receives flight-change alerts. Use a monitored shared inbox where appropriate.    |
+| **Warning – Before Departure (hours)** | Defines how close to departure Tourpaq applies before-departure warning logic.                                     |
 
-* Tiny: 20 minutes later
-* Small: 30 minutes later
-* Large: 70 minutes later
+The screen does not indicate required fields. Configure all categories and warning settings needed by company policy.
 
-#### 3. Warning – Email
+### Configuration steps
 
-The email address that receives flight change alerts.
+1. In **Flight Change Configuration**, set the **Earlier** threshold for **Tiny**.
+2. Set the remaining **Earlier** thresholds for **Small** and **Large**.
+3. Set the **Later** thresholds for **Tiny**, **Small**, and **Large**.
+4. In **Warning – Email**, enter the alert recipient.
+5. In **Warning – Before Departure (hours)**, enter the warning timeframe.
+6. To apply the settings, save the configuration.
 
-Enter a shared inbox if possible (for example operations or customer service).
+### System behavior
 
-#### 4. Warning – Before Departure (hours)
+After saving, Tourpaq classifies flight time changes using the configured thresholds. It sends alerts to **Warning – Email**.
 
-Defines how close to departure the system should apply the “before departure” warning logic.
+Tourpaq applies before-departure warning logic inside the configured timeframe.
 
-Example: `5` means “within 5 hours of departure”.
+### Examples
 
-***
+#### Earlier threshold example
 
-### Instructions for Configuration
+The following thresholds classify an earlier flight change:
 
-1. Go to **Setup → System Setup → Flight Change Queue → Flight Change Configuration**.
-2. Set **Earlier** and **Later** thresholds for **Tiny**, **Small**, and **Large**.
-   * Example: If Tiny is up to 10 minutes earlier, then 15 minutes earlier becomes Small.
-3. Enter the **Warning – Email** recipient.
-4. Set **Warning – Before Departure (hours)**.
-5. Save.
+* **Tiny:** 10 minutes earlier.
+* **Small:** 20 minutes earlier.
+* **Large:** 60 minutes earlier.
 
-Once saved, the system will automatically classify flight time changes and notify the specified contact by email.
+A flight moving 15 minutes earlier is classified as **Small**.
 
-***
+#### Later threshold example
 
-### Troubleshooting Guide
+The following thresholds classify a later flight change:
 
-#### 1. Not receiving flight change emails
+* **Tiny:** 20 minutes later.
+* **Small:** 30 minutes later.
+* **Large:** 70 minutes later.
 
-* **Cause:** Incorrect or inactive email address entered.
-* **Solution:** Verify the address and confirm the inbox can receive system emails.
+#### Departure warning example
 
-#### 2. Flight changes are not classified correctly
+Set **Warning – Before Departure (hours)** to `5`. Tourpaq applies before-departure warning logic within five hours of departure.
 
-* **Cause:** Incorrect thresholds set in _Earlier_ or _Later_ fields.
-* **Solution:** Review and adjust minute values to match company policy.
+### Troubleshooting
 
-#### 3. “Before departure” warnings are not triggered
+#### Not receiving flight change emails
 
-* **Cause:** _Before Departure_ value set too high or too low.
-* **Solution:** Adjust hours to a practical timeframe (e.g., 5 hours ensures timely action).
+* **Cause:** **Warning – Email** contains an incorrect or inactive address.
+* **Solution:** Confirm the address and inbox access.
 
-#### 4. Overlapping categories
+#### Flight changes are not classified correctly
 
-* **Cause:** Inconsistent configuration (e.g., Tiny later = 20 min, Small earlier = 20 min).
-* **Solution:** Ensure Tiny < Small < Large for both Earlier and Later.
+* **Cause:** **Earlier** or **Later** values do not match company policy.
+* **Solution:** Review each category threshold.
 
-***
+#### “Before departure” warnings are not triggered
+
+* **Cause:** **Warning – Before Departure (hours)** does not cover the required timeframe.
+* **Solution:** Adjust the number of hours.
+
+#### Overlapping categories
+
+* **Cause:** Category thresholds do not increase consistently.
+* **Solution:** Keep **Tiny**, **Small**, and **Large** thresholds in ascending order.
 
 {% hint style="info" %}
-Start with company-standard values (for example Tiny: 10–20 min, Small: 20–30 min, Large: 60–70 min).
+Start with approved company values.
 
-Test after changes by simulating a flight update in a non-production environment if possible.
+Test threshold changes with a non-production flight update.
 {% endhint %}
 
-### FAQ
+### Related pages
 
-<details>
-
-<summary><strong>Do I have to configure both Earlier and Later?</strong></summary>
-
-Yes. Flights can move both earlier and later.
-
-Configure both so the system can classify changes consistently in both directions.
-
-</details>
-
-<details>
-
-<summary><strong>Should the thresholds be higher for Large than for Small and Tiny?</strong></summary>
-
-Yes. Keep thresholds increasing from Tiny → Small → Large.
-
-That avoids overlaps and unexpected classification.
-
-</details>
-
-<details>
-
-<summary><strong>What does “Warning – Before Departure” actually control?</strong></summary>
-
-It defines a time window (in hours) before departure.
-
-Changes detected inside that window can trigger extra warning behavior.
-
-</details>
-
-<details>
-
-<summary><strong>What email should I use for “Warning – Email”?</strong></summary>
-
-Use an inbox that is monitored during operating hours.
-
-A shared mailbox usually works better than a single person.
-
-</details>
+* [System Setup](./) describes the company-wide settings area.

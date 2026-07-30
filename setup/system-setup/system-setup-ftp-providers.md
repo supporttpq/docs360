@@ -8,172 +8,113 @@ description: >-
 
 ### Overview
 
-The **FTP Providers** section in **System Setup** is used to configure FTP (File Transfer Protocol) connections for various services. This setup enables the system to securely exchange files (such as booking data, manifests, or reports) with external providers through FTP servers. Each provider (e.g., Inflight Service FTP, Airshoppen FTP, Paxport FTP) can be configured separately.
+**FTP Providers** configures file-transfer connections for external provider services. Tourpaq uses these connections to exchange booking data, manifests, and reports.
+
+Each provider tab stores a separate connection. The configuration can support services such as [Inflight Service](system-setup-inflight-service.md).
 
 {% hint style="warning" %}
 FTP usernames and passwords are sensitive.
 
-Restrict access and rotate credentials if you suspect exposure.
+Restrict access and rotate credentials after suspected exposure.
 {% endhint %}
 
 ### Purpose
 
-The purpose of this configuration is to establish automated file transfers between the system and external providers. Correct FTP setup ensures seamless communication, file synchronization, and data integration without requiring manual uploads or downloads.
+Use **FTP Providers** to establish automated file exchange with each provider. The configuration controls the connection destination, authentication, folder, and transfer security.
 
-### Fields & Options
+### Requirements
 
-<figure><img src="../../.gitbook/assets/image (358).png" alt=""><figcaption></figcaption></figure>
+Before configuring a provider, collect these details:
 
-#### 1. **Username**
+* Administrator access to **System Setup**.
+* The provider tab that requires the connection.
+* The provider's **Username**, **Password**, **Host Address**, and **Port**.
+* The required **Folder**, **File Prefix**, and security protocol.
+* Approval to activate the connection after validation.
 
-* **Description:** The login username required to access the FTP server.
-* **Purpose:** Authenticates the system with the provider’s FTP server.
-* **Instruction:** Enter the FTP account username provided by the service provider.
+### Navigation
 
-#### 2. **Password**
+In Tourpaq Office, open **Setup → System Setup → FTP Providers**.
 
-* **Description:** The password paired with the username for FTP login.
-* **Purpose:** Provides secure authentication for file transfer.
-* **Instruction:** Enter the password exactly as provided. Use the eye icon to reveal it if necessary.
+### Interface overview
 
-#### 3. **Host Address**
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (358).png" alt="FTP Providers settings showing Username, Password, Host Address, File Prefix, Folder, Port, Secure FTP, and Enabled."><figcaption><p>FTP Providers configuration fields.</p></figcaption></figure></div>
 
-* **Description:** The domain name or IP address of the FTP server.
-* **Purpose:** Specifies the location of the external FTP server.
-* **Instruction:** Enter the FTP host (e.g., `ftp.provider.com` or `192.168.1.1`).
+Select a provider tab before entering the connection details.
 
-#### 4. **File Prefix**
+### Field descriptions
 
-* **Description:** A text string that will be added at the beginning of files transferred.
-* **Purpose:** Helps organize or distinguish files, preventing overwrites or confusion.
-* **Instruction:** Define a unique prefix if required by the provider (e.g., `report_`).
+| Field            | Description                                                                                                            |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| **Username**     | Required. Identifies the FTP account used to authenticate with the provider server.                                    |
+| **Password**     | Required. Authenticates the account defined in **Username**. Enter the provider-supplied value exactly.                |
+| **Host Address** | Required. Defines the provider FTP server domain name or IP address.                                                   |
+| **File Prefix**  | Optional unless the provider requires a naming convention. Tourpaq adds this value before transferred file names.      |
+| **Folder**       | Optional unless the provider requires a target directory. Defines the remote folder for file uploads or downloads.     |
+| **Port**         | Required when the provider specifies a custom port. The default FTP port is `21`.                                      |
+| **Secure FTP**   | Optional. Enables encrypted FTP transfer when required by the provider. This setting relates to the provider protocol. |
+| **Enabled**      | Required to activate the provider connection. Clear this option while the configuration remains unverified.            |
 
-#### 5. **Folder**
+### Configuration steps
 
-* **Description:** The target directory on the FTP server where files will be uploaded or downloaded.
-* **Purpose:** Ensures files are transferred to the correct location.
-* **Instruction:** Enter the path of the designated folder (e.g., `/incoming` or `/exports`).
+To configure a provider connection:
 
-#### 6. **Port**
+1. In **FTP Providers**, select the required provider tab.
+2. In **Username**, enter the provider-supplied account name.
+3. In **Password**, enter the provider-supplied password.
+4. In **Host Address**, enter the provider server address.
+5. In **Port**, enter the provider port or retain `21`.
+6. When required, enter the file-name prefix in **File Prefix**.
+7. When required, enter the provider directory in **Folder**.
+8. Select **Secure FTP** when the provider requires encrypted transfer.
+9. Select **Enabled** after validating the connection details.
+10. Click **Save**.
 
-* **Description:** The communication port used to connect to the FTP server.
-* **Default Value:** `21` (standard FTP port).
-* **Instruction:** Enter the port number if the provider specifies a custom one. Otherwise, leave it as `21`.
+### System behavior
 
-#### 7. **Secure FTP**
+Tourpaq uses an enabled provider configuration for the related file-exchange workflow. The selected provider tab determines which service uses the connection.
 
-* **Description:** Checkbox to enable **SFTP (Secure File Transfer Protocol)** or FTPS (FTP over SSL).
-* **Purpose:** Ensures files are transferred over an encrypted connection for better security.
-* **Instruction:** Tick this box if the provider requires secure FTP access.
+**File Prefix** helps distinguish transferred files. **Folder** determines the provider directory used for the transfer.
 
-#### 8. **Enabled**
+When **Secure FTP** is selected, Tourpaq uses encrypted transfer for that connection. When **Enabled** is cleared, Tourpaq does not use the provider configuration.
 
-* **Description:** Checkbox to activate or deactivate the FTP configuration.
-* **Purpose:** Determines whether this FTP setup is active.
-* **Instruction:** Tick this box to enable the connection. Leave unticked if the setup is not yet ready.
+### Examples
 
-### Instructions for Configuration
+#### Standard FTP connection
 
-1. Navigate to **Setup → System Setup → FTP Providers**.
-2. Select the appropriate tab for the provider you need to configure (e.g., _Inflight Service FTP_).
-3. Fill in the required fields:
-   * **Username** and **Password** as provided by the FTP provider.
-   * **Host Address** of the FTP server.
-   * **Port** (leave as `21` unless otherwise specified).
-   * Optional fields: **File Prefix** and **Folder** depending on provider requirements.
-4. Tick **Secure FTP** if the provider uses encrypted connections.
-5. Tick **Enabled** to activate the configuration.
-6. Save the configuration.
+For a provider requiring ordinary FTP:
 
-✅ Once saved, the system will automatically use this setup for exchanging files with the configured provider.
+1. Enter the provider FTP server in **Host Address**.
+2. Enter `21` in **Port**.
+3. Leave **Secure FTP** cleared.
 
-### Troubleshooting Guide
+#### Provider-specific file naming
 
-#### 1. **Login Failed / Authentication Error**
+For a provider requiring the `report_` prefix:
 
-* **Cause:** Incorrect username or password.
-* **Solution:** Double-check credentials with the provider and re-enter them carefully.
+1. Enter `report_` in **File Prefix**.
+2. Enter the provider directory in **Folder**.
+3. Select **Enabled** after validation.
 
-#### 2. **Unable to Connect to FTP Server**
+### Troubleshooting
 
-* **Cause:** Wrong host address or firewall blocking the connection.
-* **Solution:** Verify the **Host Address** and **Port**. Check with IT if firewall rules are blocking access.
+| Issue                              | Cause                                                        | Resolution                                                         |
+| ---------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------------ |
+| Login fails                        | **Username** or **Password** is incorrect.                   | Confirm the credentials with the provider, then re-enter them.     |
+| Connection fails                   | **Host Address**, **Port**, or firewall access is incorrect. | Verify the connection details and confirm firewall access with IT. |
+| Connection times out               | The provider requires another port or encrypted transfer.    | Confirm the port and select **Secure FTP** when required.          |
+| Files appear in the wrong location | **Folder** does not match the provider directory.            | Confirm the required folder path with the provider.                |
+| Files overwrite each other         | **File Prefix** does not create unique names.                | Enter the provider-required prefix.                                |
 
-#### 3. **Port Connection Timeout**
+{% hint style="info" %}
+Confirm the FTP details with the provider before making changes.
 
-* **Cause:** Wrong port number or provider requires Secure FTP.
-* **Solution:** Confirm the correct port (default is `21` for FTP, `22` for SFTP). Enable **Secure FTP** if needed.
+Escalate unresolved connection errors to the IT or security team.
+{% endhint %}
 
-#### 4. **Files Not Appearing in Correct Location**
+### Related pages
 
-* **Cause:** Incorrect folder path.
-* **Solution:** Verify the **Folder** field matches the provider’s designated directory.
+Use these related guides:
 
-#### 5. **Duplicate or Overwritten Files**
-
-* **Cause:** No unique file naming convention.
-* **Solution:** Use a **File Prefix** (e.g., `daily_` or `report_`) to avoid overwriting.
-
-#### 6. **Connection Works but Files Transfer Insecurely**
-
-* **Cause:** Secure FTP not enabled.
-* **Solution:** Tick the **Secure FTP** checkbox if encryption is required.
-
-***
-
-✅ **Tips:**\
-Always confirm the required FTP details (username, password, host, port, folder, security requirements) directly with the provider before making changes. If an error persists after checking all fields, escalate the issue to the IT/security team.
-
-### FAQ
-
-<details>
-
-<summary><strong>What’s the difference between FTP, FTPS, and SFTP?</strong></summary>
-
-**FTP** is unencrypted.
-
-**FTPS** is FTP over SSL/TLS.
-
-**SFTP** is a different protocol that runs over SSH (usually port `22`).
-
-</details>
-
-<details>
-
-<summary><strong>What does “Secure FTP” enable?</strong></summary>
-
-It enables encrypted file transfer.
-
-Depending on your provider, this may mean **SFTP** or **FTPS**.
-
-</details>
-
-<details>
-
-<summary><strong>Which port should I use?</strong></summary>
-
-Use the port provided by the provider.
-
-Common defaults are `21` (FTP/FTPS) and `22` (SFTP).
-
-</details>
-
-<details>
-
-<summary><strong>How do I test that the configuration works?</strong></summary>
-
-Enable the configuration and trigger the relevant export/import flow.
-
-Then confirm the file appears in the expected folder on the provider side.
-
-</details>
-
-<details>
-
-<summary><strong>Why do files land in the wrong folder?</strong></summary>
-
-Usually the folder path is wrong or uses the wrong format.
-
-Confirm the exact path with the provider and mirror it exactly.
-
-</details>
+* [System Setup](./) describes company-wide configuration.
+* [Inflight Service](system-setup-inflight-service.md) uses FTP delivery for inflight reporting files.
