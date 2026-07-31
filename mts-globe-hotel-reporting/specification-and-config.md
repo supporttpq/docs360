@@ -29,7 +29,7 @@ The purpose of the MTS Globe Hotel Reporting functionality is to:
 
 ***
 
-## Main Components
+## Main components
 
 The implementation consists of the following areas:
 
@@ -42,7 +42,7 @@ The implementation consists of the following areas:
 
 ***
 
-## 1. Supplier Communication Configuration
+## 1. Supplier communication configuration
 
 ### Location
 
@@ -54,7 +54,7 @@ Extend supplier communication to support FTP-based delivery for MTS Globe report
 
 ***
 
-### Supported Method
+### Supported method
 
 * FTP
 * Mail
@@ -77,7 +77,7 @@ When using FTP communication:
 
 ***
 
-## 2. Scheduler & Reporting Management
+## 2. Scheduler and reporting management
 
 ### Purpose
 
@@ -89,7 +89,7 @@ Allow users to:
 
 ***
 
-### Scheduler File Visibility
+### Scheduler file visibility
 
 All files sent through the scheduler shall be accessible under the:
 
@@ -108,7 +108,7 @@ Examples:
 
 ***
 
-### RESEND Functionality
+### RESEND functionality
 
 Purpose - Allow users to resend previously generated schedules.
 
@@ -118,7 +118,7 @@ Tooltip text:
 
 Resend Button - it is available in the RESEND column.
 
-#### Resend Behavior
+#### Resend behavior
 
 When clicking the Resend button:
 
@@ -134,7 +134,7 @@ For other reporting formats the current list shall be resent using existing beha
 
 ***
 
-## 3. Company Feature Management
+## 3. Company feature management
 
 * Control visibility of the MTS Globe functionality per company.Feature Group
 * The feature shall be located under Apps and Integrations
@@ -142,13 +142,13 @@ For other reporting formats the current list shall be resent using existing beha
 
 ***
 
-## 4. Supplier Handling Code
+## 4. Supplier handling code
 
 The MTS Globe reporting format requires a supplier handling code.This code is included in the generated reporting files.
 
 ***
 
-### Supplier General Changes
+### Supplier general changes
 
 A new field is added to the Supplier General section.
 
@@ -164,7 +164,7 @@ Info Tooltip - Tooltip text:
 
 ***
 
-## 5. Export List Support
+## 5. Export list support
 
 * Location: Exports → Lists
 * Allow users to manually generate MTS Globe booking exports.
@@ -174,7 +174,7 @@ Info Tooltip - Tooltip text:
 
 ***
 
-### Export Behavior
+### Export behavior
 
 The export shall:
 
@@ -184,7 +184,7 @@ The export shall:
 
 ***
 
-## 6. Reporting Specifications
+## 6. Reporting specifications
 
 ### Purpose
 
@@ -196,7 +196,7 @@ Track previously reported bookings in order to determine:
 
 ***
 
-### Reporting Logic
+### Reporting logic
 
 The reporting system shall maintain a list of already reported bookings.
 
@@ -204,7 +204,7 @@ This list is used when the scheduler runs again.
 
 ***
 
-#### New Bookings
+#### New bookings
 
 Bookings shall be added to the NEW file when:
 
@@ -217,7 +217,7 @@ Output file example:
 
 ***
 
-#### Amended Bookings
+#### Amended bookings
 
 Bookings shall be added to the AMENDED file when:
 
@@ -230,7 +230,7 @@ Output file example:
 
 ***
 
-#### Cancelled Bookings
+#### Cancelled bookings
 
 Bookings shall be added to the CANCELLED file when:
 
@@ -244,7 +244,7 @@ Output file example:
 
 ***
 
-#### Important Rules
+#### Important rules
 
 **Rule 1**
 
@@ -264,7 +264,7 @@ After each successful reporting execution:
 
 ***
 
-## File Naming Convention
+## File naming convention
 
 The following file naming structure shall be used:
 
@@ -276,9 +276,9 @@ The following file naming structure shall be used:
 
 ***
 
-## Example Reporting Scenario
+## Example reporting scenario
 
-### Initial Scheduler Run
+### Initial scheduler run
 
 Current bookings:
 
@@ -300,7 +300,7 @@ These bookings are now stored as reported.
 
 ***
 
-### Second Scheduler Run
+### Second scheduler run
 
 Changes:
 
@@ -310,7 +310,7 @@ Changes:
 
 Generated files:
 
-#### New File
+#### New file
 
 XXXX\_new\_date.csv
 
@@ -318,4 +318,4 @@ Contains:
 
 * Booking D
 
-#### Amended File
+#### Amended file

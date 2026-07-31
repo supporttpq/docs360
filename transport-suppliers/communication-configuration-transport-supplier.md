@@ -18,14 +18,14 @@ Schedule reports relative to departure and select the required **Reporting Type*
 
 ***
 
-### Accessing the Configuration Page
+### Accessing the configuration page
 
 Navigate to:\
 Transport **Supplier → \[Transport Supplier Name] → Communication tab**
 
 ***
 
-### Field Descriptions
+### Field descriptions
 
 | Field                                 | Description                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -45,21 +45,21 @@ Transport **Supplier → \[Transport Supplier Name] → Communication tab**
 | **Stop Sale**                         | Checkbox: Mark if this triggers a Stop Sale action.                                                                                                                                                                                                                                                                                                                                                                                             |
 | **ADL (Adding Deletion List for A7)** | <p>Checkbox: Enable ADL flag if needed. ADL reporting must is done whenever there are changes to a flight after the initial reporting is sent.</p><p>Example:</p><p>The full list is sent 08:00 4 days before departure</p><p>There is a last minute booking done 3 days before departure => ADL sent</p><p>There is a cancellation 2 days before departure => ADL sent</p><p>There is a name change 2 days before departure => ADL is sent</p> |
 | **Resend**                            | Work only with ADL checkbox marked and offer the posibility to resend any ADl report for a specific date.                                                                                                                                                                                                                                                                                                                                       |
-| **Comm. (View)**                      | Click `View` to see detailed communication reporting                                                                                                                                                                                                                                                                                                                                                                                            |
+| **Comm. (View)**                      | Click **View** to see detailed communication reporting                                                                                                                                                                                                                                                                                                                                                                                          |
 
 ***
 
-### Creating a New Communication Rule
+### Creating a new communication rule
 
-1. Click the **Create** button in the top-right.
+1. In the communication rules list, click **Create**.
 2. Fill in the required fields based on the transport and business rules.
 3. Press **Save** to add the new communication setup.
 
 ***
 
-### Deleting a Rule
+### Deleting a rule
 
-Click the trash bin icon next to a rule to delete it. A confirmation prompt will appear.
+For the rule, click the trash bin icon. A confirmation prompt appears.
 
 ***
 

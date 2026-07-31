@@ -70,7 +70,7 @@ In **Weekly activities** section, user will be able to see weekly activities def
 
 #### Excursions
 
-Under **"Excursions"** (Udflugter) section, excursions which are defined in **Office->Extras** when logged-in as a guide will be available for booking. This can be done when accessing **Excursions(Udflugfter)** tab. For detailed information about how this type of an excursion/extras is created, please check [Destination - Mobile guide App](destination-mobile-guide-app.md)
+Under **"Excursions"** (Udflugter) section, excursions which are defined in **Office->Extras** when logged-in as a guide will be available for booking. This can be done when accessing **Excursions(Udflugfter)** tab. For detailed information about how this type of an excursion/extras is created, see [Destination - Mobile guide App](destination-mobile-guide-app.md)
 
 Remark: Excursions are displayed also according to stop sales hours setup on the extra. Details here: [Extras](https://app.gitbook.com/s/ZCqO8EQ5P5Mioq1zbQAc/extras-setup)
 
@@ -136,7 +136,7 @@ This tab offers the possibility to the user to check Guest App special features 
 
 <div data-with-frame="true"><figure><img src=".gitbook/assets/image (12) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
-* Please make sure that product have a resourcer on that hotel and allotments are generated from "Generate Allotment". In the picture below, it is shown an basic example of "Dine Around" product configuration.
+* Ensure that the product has a resource for that hotel and that **Generate Allotment** generates allotments. The picture below shows a basic example of **Dine Around** product configuration.
 
 <div data-with-frame="true"><figure><img src=".gitbook/assets/image (13) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 

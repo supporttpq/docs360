@@ -8,7 +8,7 @@ description: >-
 
 ### Overview
 
-**All Bookings Totals** provides a high-level financial and operational summary based on the filters currently active in All Bookings. Where Statistics breaks data down per passenger across multiple dimensions, Totals keeps things simple — giving you the headline numbers for the filtered booking set at a glance.
+**All Bookings Totals** provides a high-level financial and operational summary based on the filters currently active in All Bookings. Where Statistics breaks data down per passenger across multiple dimensions, Totals keeps things simple—giving you the headline numbers for the filtered booking set at a glance.
 
 It answers questions like: _"How many bookings and passengers do we have for this departure period?"_ or _"What is the total turnover and profit for this hotel across the summer season?"_
 
@@ -44,7 +44,7 @@ Totals update **only after** you click **Display** in All Bookings. If you chang
 
 ***
 
-### How to Use All Bookings Totals
+### How to use All Bookings Totals
 
 #### Step 1 — Open All Bookings and select a Brand
 
@@ -87,13 +87,13 @@ Review the aggregated figures shown:
 
 #### Step 5 — Adjust and compare
 
-Change filters and click Display again to update the Totals for a different segment. Use **Saved Views** to quickly switch between common filter combinations.
+Change filters and click **Display** again to update the Totals for a different segment. Use **Saved Views** to quickly switch between common filter combinations.
 
 ***
 
-### Field Reference
+### Field reference
 
-#### Totals Metrics
+#### Totals metrics
 
 | Metric         | Description                                                                                                                                                                              |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -104,7 +104,7 @@ Change filters and click Display again to update the Totals for a different segm
 
 ***
 
-#### Filters That Drive Totals
+#### Filters that drive totals
 
 | Filter                           | Description                                                                                       |
 | -------------------------------- | ------------------------------------------------------------------------------------------------- |
@@ -124,7 +124,7 @@ Date filters (**Booking**, **Departure**, **Arrival**) must always be used as co
 
 ***
 
-### Totals vs. Statistics — When to Use Which
+### Totals vs. Statistics—when to use which
 
 |                          | All Bookings Totals             | Statistics in All Bookings                                 |
 | ------------------------ | ------------------------------- | ---------------------------------------------------------- |
@@ -138,7 +138,7 @@ Date filters (**Booking**, **Departure**, **Arrival**) must always be used as co
 
 ***
 
-### Related Pages
+### Related pages
 
 * [All Bookings](https://manual.tourpaq.com/booking/all-bookings) — parent page and filter reference
 * [View All Bookings](https://manual.tourpaq.com/booking/all-bookings/view-all-bookings) — filter setup, saved views, and bookings table

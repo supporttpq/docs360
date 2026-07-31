@@ -2,7 +2,7 @@
 
 <div data-with-frame="true"><figure><img src=".gitbook/assets/destinationapp-993f7b8a83693173287fae9f3939457a.png" alt="" width="100%"><figcaption></figcaption></figure></div>
 
-The Guide App is a new feature used to track guides' activity, help them coordinate with each other, create complaints regarding the local environment, support customers directly through chat, and export passenger lists in multiple formats, among other features.
+The Guide App tracks guides' activity, helps them coordinate with each other, creates complaints regarding the local environment, supports customers directly through chat, and exports passenger lists in multiple formats.
 
 ### Login screen
 
@@ -36,7 +36,7 @@ In order to be made available in the application, the extra must have selected a
 
 #### Customize the excursion for the apps
 
-The first information that appears to the guest is the description - which can be easily customized under the main tab of the extra, specifically the **Description in customer center** box. This can also be customized per brand for a wider variety of descriptions. Another thing to mention when customizing an excursion is the possibility to add one or more representative pictures. That can be easily done through the **Photos** tab of the extra (see the picture below).
+The first information that appears to the guest is the description. Customize it under the main tab of the extra, specifically the **Description in customer center** box. This can also be customized per brand for a wider variety of descriptions. Add one or more representative pictures through the **Photos** tab of the extra (see the picture below).
 
 <div data-with-frame="true"><figure><img src=".gitbook/assets/image (280).png" alt="" width="100%"><figcaption></figcaption></figure></div>
 
@@ -48,19 +48,19 @@ By default, the price of the sold extra will represent either the currency of th
 
 #### Assign the excursion to a resort
 
-An essential aspect of selling an excursion is that even if Tourpaq supports adding multiples resources to a product - such as transports, hotels and so on, the application will only take into considerations the resort field. One can assign the desired resort or resorts for where they want to sell the excursion Adding a resort is quite simple - you navigate under the **Resurser** tab of the product, click on the **New filter type**, select the desired resort and click on **Save filter type** to save your desired settings (see the picture below).
+An essential aspect of selling an excursion is that even if Tourpaq supports adding multiples resources to a product—such as transports, hotels, and so on—the application will only take into considerations the resort field. Assign the desired resort or resorts under the **Resurser** tab of the product. Click **New filter type**, select the desired resort, and click **Save filter type** (see the picture below).
 
 <div data-with-frame="true"><figure><img src=".gitbook/assets/image (282).png" alt="" width="100%"><figcaption></figcaption></figure></div>
 
 #### Assign the excursion to a brand
 
-An essential to-do in the process of setting up the excursion is assigning it to a brand so it will be available for sale for it. That can be done really simple under the **Brands** tab under the specific extra One must select the **Guide Sale** option for the desired brand and click on **Save Options** to save the desired configuration (see picture below).
+An essential step in setting up the excursion is assigning it to a brand so it will be available for sale. Under the **Brands** tab of the extra, select the **Guide Sale** option for the desired brand and click **Save Options** (see picture below).
 
 <div data-with-frame="true"><figure><img src=".gitbook/assets/image (283).png" alt="" width="100%"><figcaption></figcaption></figure></div>
 
 #### Generate allotments for the excursion
 
-Another essential step in setting up the excursion is creating the allotments. That can easily be done by going on the desired extra, under the **Generic Allotment** tab. To start defining the desired allotments, click on the **Generate New Allotments** button in the left corner of the page. The allotments can be generated either on a daily basis or on a weekly basis (see picture below).
+Another essential step in setting up the excursion is creating the allotments. Under the **Generic Allotment** tab of the extra, click **Generate New Allotments** to define the desired allotments. The allotments can be generated either on a daily basis or on a weekly basis (see picture below).
 
 <div data-with-frame="true"><figure><img src=".gitbook/assets/image (66).png" alt="" width="100%"><figcaption></figcaption></figure></div>
 
@@ -134,7 +134,7 @@ In here, you will have to fill the following fields:
 * **Return hour** - the hour when the guests will finish the excursion
 
 {% hint style="warning" %}
-<mark style="color:red;">IMPORTANT:</mark> There are also some more tabs under the Route, but for this type of extras, we should not take all of them into consideration. The remaining one that should be taken into consideration is the "Brands" tab. In here, we assign an agency to the currently defined route and mark it as for sale.
+<mark style="color:red;">IMPORTANT:</mark> There are also some more tabs under the Route, but for this type of extras, we should not take all of them into consideration. The remaining one that should be taken into consideration is the "Brands" tab. In here, we assign an agency to the defined route and mark it as for sale.
 {% endhint %}
 
 #### Set up guide payment
@@ -172,7 +172,7 @@ After finishing with the creation of the payment types, we can proceed even furt
 
 <div data-with-frame="true"><figure><img src=".gitbook/assets/image (75).png" alt="" width="100%"><figcaption></figcaption></figure></div>
 
-Also, in here another important thing to consider is that we can override the DIBS settings for a specific guide (please take into consideration that this will only happen in the mobile apps).
+Also, in here another important thing to consider is that we can override the DIBS settings for a specific guide (this only happens in the mobile apps).
 
 In order to set this option up, one must select an option from the **Override agency DIBS** dropdown.
 

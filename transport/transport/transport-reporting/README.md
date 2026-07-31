@@ -177,9 +177,9 @@ This tab shows the list of communication triggered by the rules from the Transpo
 
 <figure><img src="../../../.gitbook/assets/transportSupplierTabList-e396a773c38ce57854d0a7cbe90b5761.png" alt=""><figcaption></figcaption></figure>
 
-This list can be ordered by Reporting Method, Transport Supplier and Period.
+This list can be ordered by Reporting Method, Transport Supplier, and Period.
 
-You can filter this list by using Start Date, End Date and Reporting method. Start date and End date will return a list that has the period inside the interval set by these two fields.
+You can filter this list by using Start Date, End Date, and Reporting method. Start date and End date will return a list that has the period inside the interval set by these two fields.
 
 This table contains the following columns:
 

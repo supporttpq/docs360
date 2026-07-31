@@ -10,9 +10,9 @@ The dashboard displays key operational data, including flight numbers, routes, d
 
 This page is designed to support the transport and operation teams in managing and verifying flight movements. It helps ensure accurate planning of seat allotments, identifies flights with remaining capacity, and provides quick access to detailed flight information when needed.
 
-By filtering by date range, departure, or arrival location, users can easily narrow down the list to focus on specific routes or time periods.
+By filtering by date range, departure, or arrival location, users can narrow the list to specific routes or time periods.
 
-### Field Descriptions
+### Field descriptions
 
 <figure><img src=".gitbook/assets/image (432).png" alt=""><figcaption></figcaption></figure>
 

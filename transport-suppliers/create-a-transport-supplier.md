@@ -28,7 +28,7 @@ To add a new Transport Supplier, go to:
 
 ***
 
-### Form Fields Overview
+### Form fields overview
 
 The form to create a new transport supplier includes the following mandatory and optional fields:
 
@@ -50,7 +50,7 @@ The form to create a new transport supplier includes the following mandatory and
 
 #### 4. **Hide as filter on lists** (Not mandatory – Checkbox)
 
-* **Description**: When checked, this supplier will be hidden from lists.
+* **Description**: When checked, this supplier is hidden from lists.
 
 #### 5. **Status** (Not mandatory)
 
@@ -60,13 +60,13 @@ The form to create a new transport supplier includes the following mandatory and
 
 ***
 
-### Saving the Form
+### Saving the form
 
 Once all required fields are completed:
 
 1. Double-check all entries for correctness.
-2. Click **Save** (button located at the bottom of the form).
-3. After the Save button has been pressed and the new Transport Supplier has been created, a new tab, **Communication**, will appear.
+2. At the bottom of the form, click **Save**.
+3. After saving the Transport Supplier, the **Communication** tab appears.
 
 ***
 

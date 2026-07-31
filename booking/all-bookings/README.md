@@ -98,7 +98,7 @@ Set the filters that match what you are looking for. You do not need to fill in 
 * **Cancelled bookings in a period** → Status = Cancelled + Booking Period
 
 {% hint style="info" %}
-Use the **More Filters** button to access additional filter options not shown by default. A green badge on the button indicates how many additional filters are currently active.
+Use the **More Filters** button to access additional filter options not shown by default. A green badge on the button indicates how many additional filters are active.
 {% endhint %}
 
 ***

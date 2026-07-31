@@ -60,7 +60,7 @@ Key points:
 * The current default deposit and due dates come from the main fields (shown as **#1** in the screenshots).
 *   The **Deposit rules** tab lets you add older default deposit values for earlier booking periods.
 
-    * **Please note!** If we enter a rule today, it will automatically set the rule with today's date.
+    * When entering a rule, Tourpaq automatically sets the rule date to the entry date.
 
     <figure><img src="../.gitbook/assets/image (30) (1).png" alt=""><figcaption><p>#1 / #2</p></figcaption></figure>
 
@@ -91,7 +91,7 @@ The company default can be overridden by:
 <figure><img src="../.gitbook/assets/image (34) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
-History for past deposit values is not currently supported for agency and transport rules.
+History for past deposit values is not supported for agency and transport rules.
 {% endhint %}
 
 ### FAQ
@@ -130,9 +130,7 @@ For example, cancellation insurance and certain products may be required in the 
 
 <summary><strong>Do agency or transport rules also support “history” by date?</strong></summary>
 
-Not currently.
-
-Only the company default deposit rules support history by booking date intervals.
+No. Only the company default deposit rules support history by booking date intervals.
 
 </details>
 

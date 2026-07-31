@@ -1,15 +1,15 @@
 # Transport Payment Rules
 
-### **Overview**
+### Overview
 
 The **Transport Payment Rules** page allows administrators to define and manage payment structures for transport services such as flights, buses, or other transfers.\
-Each rule determines how and when payments are collected for a booking — for example, through a deposit and a second (final) payment.
+Each rule determines how and when payments are collected for a booking—for example, through a deposit and a second (final) payment.
 
 This configuration ensures flexibility across different brands, products, or transport types (e.g., charter vs. scheduled flights).
 
 ***
 
-### **Purpose**
+### Purpose
 
 The purpose of this module is to:
 
@@ -21,7 +21,7 @@ These rules are later linked to transport setups or booking configurations, ensu
 
 ***
 
-### Table Structure
+### Table structure
 
 <figure><img src=".gitbook/assets/image (433).png" alt=""><figcaption></figcaption></figure>
 
@@ -32,14 +32,14 @@ These rules are later linked to transport setups or booking configurations, ensu
 | **Second Payment** | Any additional payment amount due at a later stage.                                    |
 | 🗑️ (Delete Icon)  | Removes the payment rule permanently from the list.                                    |
 
-### &#x20;**Buttons and Actions**
+### Buttons and actions
 
 | Button     | Description                                                                                                                                 |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Create** | Opens a new form to define a transport payment rule. When creating a rule, specify a clear name, deposit amount, and second payment amount. |
-| **Delete** | Removes a payment rule from the list. Rules currently used in active configurations should not be deleted.                                  |
+| **Delete** | Removes a payment rule from the list. Rules used in active configurations should not be deleted.                                            |
 
-### **Instructions**
+### Instructions
 
 1. Go to **Transport Payment Rules**.
 2. Click **Create** to open a new payment rule form.
@@ -53,7 +53,7 @@ These rules are later linked to transport setups or booking configurations, ensu
 4. Click **Save** to confirm.
 5. The rule will appear in the overview list and can be selected when configuring transport definitions.
 
-### **Exception rules**
+### Exception rules
 
 1.1. If second payment due date / rest of payment due date < booking date + deposit due, then second payment due date / rest of payment due date = booking date + 2, except if departure date < booking date + 14
 
@@ -67,6 +67,6 @@ These rules are later linked to transport setups or booking configurations, ensu
 
 ### Features
 
-* **Create Rule Button -** Located in the top right, this button opens a form to create a new transport payment rule.
+* **Create Rule Button -** This button opens a form to create a new transport payment rule.
 * **Sorted Columns -** Columns like _Deposit_ and _Second Payment_ can be sorted to easily identify highest/lowest values.
-* Click on Payment Rule name  to view/edit the rule
+* Click **Payment Rule** to view or edit the rule.

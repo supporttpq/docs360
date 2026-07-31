@@ -1,21 +1,21 @@
 # Flight change
 
-### **Overview**
+### Overview
 
 The **Flight Change System** automatically detects and manages updates to flight details such as departure times, arrival times, and flight numbers. It ensures passengers are notified about flight modifications and provides tracking for unconfirmed notifications.
 
 ***
 
-### **Purpose**
+### Purpose
 
 The main purposes of the _Flight Changes_ page are:
 
 * To provide visibility into **all flight schedule modifications**
 * To allow teams to **filter changes** based on criteria like airline, gateway, booking, type, or status
-* To help users quickly identify changes that require action (Queued, Resent First, etc.)
+* To help users identify changes that require action (Queued, Resent First, etc.)
 * To understand how each change affects downstream systems, customer itineraries, and operational workflows
 
-### **Automatic Flight Change Generation**
+### Automatic flight change generation
 
 A **flight change** is automatically created when any of the following occur:
 
@@ -31,7 +31,7 @@ Each flight change is categorized by **magnitude** and **direction** based on th
 
 ***
 
-### **Queue Management**
+### Queue management
 
 * Each flight change is **queued** in the **Flight Change System**.
 * Flight changes must be **manually released or dropped** by the user.
@@ -39,25 +39,25 @@ Each flight change is categorized by **magnitude** and **direction** based on th
 
 ***
 
-### **Overview and Filtering**
+### Overview and filtering
 
-The system provides a detailed **overview of destinations and flight changes**, with **multiple filtering options** to help users manage and locate specific updates easily.
+The system provides a detailed **overview of destinations and flight changes**, with **multiple filtering options** to help users manage and locate specific updates.
 
 ***
 
-### **Guest Communication Process**
+### Guest communication process
 
 1. When a flight change is submitted, a **notification email** is sent to the guest.
    * The email contains a **confirmation link** for the guest to acknowledge the change.
 2. If the guest **does not confirm receipt**, the system will:
    * **Resend the email** several times.
    * Then, **send an SMS reminder** asking the guest to check their email and confirm the change.
-3. Within the system, it is easy to identify guests who **have not yet confirmed** receipt.
+3. The system identifies guests who **have not yet confirmed** receipt.
 4. If no confirmation is received after multiple attempts, the flight change is **forwarded to a service email**, allowing the team to take further action (such as calling the passenger).
 
 ***
 
-### **Customer Outcome**
+### Customer outcome
 
 * Ensures **transparent communication** with passengers regarding flight schedule updates.
 * Reduces **manual workload** by automating detection, notification, and follow-up processes.
@@ -65,7 +65,7 @@ The system provides a detailed **overview of destinations and flight changes**, 
 
 <figure><img src="../.gitbook/assets/image (737).png" alt=""><figcaption></figcaption></figure>
 
-### Filter Section (Top Panel)
+### Filter section (top panel)
 
 | **Filter Field**               | **Description**                                                             |
 | ------------------------------ | --------------------------------------------------------------------------- |
@@ -88,7 +88,7 @@ The system provides a detailed **overview of destinations and flight changes**, 
 
 ***
 
-### Table Columns
+### Table columns
 
 | **Column Name**       | **Description**                                                                        |
 | --------------------- | -------------------------------------------------------------------------------------- |

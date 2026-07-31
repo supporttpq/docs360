@@ -35,7 +35,7 @@ Each email configuration is displayed in a row with the following columns:
 
 **Updated By** - Displays the user or system account that performed the last update.
 
-**Active** - Indicates whether the email configuration is currently enabled.
+**Active** - Indicates whether the email configuration is enabled.
 
 * Checked: Active and used in workflows
 * Unchecked: Disabled and ignored by the system
