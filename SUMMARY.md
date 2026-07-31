@@ -570,4 +570,4 @@
 * [What's new](integration/readme.md)
 * [Glossary](integration/glossary.md)
 * [Troubleshooting](integration/troubleshooting.md)
-* [Homepage](integration/homepage.md)
+* [Tourpaq documentation for travel booking and operations](integration/tourpaq-documentation-for-travel-booking-and-operations.md)
