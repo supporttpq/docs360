@@ -141,7 +141,7 @@ For cancelled passengers:
 
 ## Page 3 – Accommodation & Payment
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/05.08.2026_15.05.24_REC.png" alt=""><figcaption></figcaption></figure>
 
 ### Accommodation
 
