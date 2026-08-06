@@ -91,6 +91,8 @@ These fields are used **only for testing** and do not affect the saved configura
 * **Date -** Travel date used for the test search.
 * **Test Search Button -** Executes a live search using the current Fix Quotas configuration.
 
+<figure><img src="../.gitbook/assets/06.08.2026_17.09.28_REC.png" alt=""><figcaption></figcaption></figure>
+
 {% hint style="info" %}
 Always run a test search before saving, especially when using filters like carriers, cabins, or connection limits.
 {% endhint %}
