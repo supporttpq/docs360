@@ -66,7 +66,7 @@ The configuration screen contains two sections:
 * Select an existing departure location from the dropdown list.
 * This field is mandatory.
 
-**Example:** `Stockholm`
+**Example: Stockholm**
 
 ***
 
@@ -77,11 +77,11 @@ The configuration screen contains two sections:
 * Select an existing arrival location.
 * This field is mandatory.
 
-**Example:** `Barcelona`
+**Example: Barcelona**
 
 ***
 
-I**nfo Customer 1 / 2 / 3 -** These fields allow administrators to store additional information that can be displayed to customers during booking.
+I**nfo Customer 1 / 2 / 3 -** These fields allow administrators to store additional information that can be displayed to customers during booking and is shown on the ticket.
 
 Typical uses include:
 
@@ -92,25 +92,24 @@ Typical uses include:
 
 **Examples**
 
-| Field           | Example Value                              |
-| --------------- | ------------------------------------------ |
-| Info Customer 1 | `Check-in opens 2 hours before departure.` |
-| Info Customer 2 | `Meet guide at Terminal 3.`                |
-| Info Customer 3 | `Bring valid passport.`                    |
-|                 |                                            |
+| Field           | Example Value                            |
+| --------------- | ---------------------------------------- |
+| Info Customer 1 | Check-in opens 2 hours before departure. |
+| Info Customer 2 | Meet guide at Terminal 3.                |
+| Info Customer 3 | Bring valid passport.                    |
 
 <figure><img src="../.gitbook/assets/05.08.2026_16.23.01_REC.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-**Airline -** Associates the transport with a specific airline.
+**Airline -** Associates the transport with a specific airline.&#x20;
 
 **Instructions**
 
 * Select an airline from the dropdown list.
-* Primarily used for flight-based transports.
+* It is the default option and can be configured in the [**Departure**](departures/) tab.
 
-**Example:** `Scandinavian Airlines (SAS)`
+**Example:** Scandinavian Airlines (SAS)
 
 ***
 
@@ -120,7 +119,7 @@ Typical uses include:
 
 Enter the operator name if the transport belongs to a specific operator.
 
-**Example:** `RWB Tours`
+**Example: RWB Tours**
 
 ***
 
@@ -140,11 +139,56 @@ Examples may include:
 
 ***
 
-**Parent -** Links the transport to a parent transport.
+**Parent - this field it is** used to link one real transport to another real transport.
 
-**Instructions**
+If you use **parent-child transports**, the platform can **share the same seat layout** between them:
 
-Select an exisating real transport as a parent
+* The child transport uses the **same layout selected for the parent** in the **Layout** tab.
+
+For **Real Transport + Parent/Child transports**, the system ties together **allotments**, **seat layout**, and **seat cost** like this:
+
+#### 1) Allotment handling (what gets booked) <a href="#undefined" id="undefined"></a>
+
+When a booking is created with a **child transport**, the seat usage is deducted from **both**:
+
+* the **child transport allotment**, and
+* the relevant **parent transport allotment(s)**
+
+Outbound and homebound can come from different parents, and the docs explicitly note both legs are booked from the correct parent sets on the correct departure/return dates.
+
+See: [Allotments](https://manual.tourpaq.com/transport/transport/allotments)
+
+Also, for **child transports**, **Fix quota generation depends on the parents**—your child quota date range must fall within the parents’ date ranges.
+
+See: [Transport creation](https://manual.tourpaq.com/transport/transport/transport-creation)
+
+#### 2) Layout (what seats look like) <a href="#undefined" id="undefined"></a>
+
+If you use **shared layouts** (parent/child):
+
+* Select the **same layout as the parent** in the child’s **Layout tab**
+* Seats/occupancy stays synchronized both ways (child booking shows occupied on parent and vice-versa)
+* Enable **Automatic Seating** for each child transport
+
+See: [Transport Layouts](https://manual.tourpaq.com/transport-layouts)
+
+For a specific **Real Transport departure**, assign the seating layout in the Real Transport **Layout tab** (per departure date).
+
+See: [Layout](https://manual.tourpaq.com/real-transports/layout)
+
+#### 3) Cost (how seat prices are calculated) <a href="#undefined" id="undefined"></a>
+
+* Seat **cost price per seat** is derived from **transport allotments** (guaranteed seats, pro rates, free/booked intervals) and **tax**, per the algorithm in the Transport Dashboard.
+* If **Simple cost** is enabled, that detailed allotment-based explanation is bypassed.
+
+See: [Transport Dashboard](https://manual.tourpaq.com/transport-dashboard)
+
+If you set **Base Cost** on a **Real Transport** departure:
+
+* it overrides **calculated seat cost in the Price List only**
+* it **does not** change booking operational cost
+
+See: [Add Base Cost on Real Transports](https://manual.tourpaq.com/real-transports/departures/add-base-cost-on-real-transports)
 
 ***
 
