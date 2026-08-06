@@ -18,8 +18,6 @@ This helps your bookings match what the supplier will actually operate.
 
 Make sure these are in place:
 
-* The **Real Transport** is created and linked to a Transport Rule.
-* The **Airline** and **Transport Supplier** exist in the system.
 * You have confirmed times, seats, and prices with the supplier.
 
 ### View departures

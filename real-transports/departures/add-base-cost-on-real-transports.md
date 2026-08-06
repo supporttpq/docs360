@@ -2,8 +2,6 @@
 
 ### Overview
 
-A new field named **Base Cost** is introduced on Real Transport departures.
-
 The Base Cost field allows a fixed transport cost to be defined on a Real Transport departure. When specified, this cost is used in the Price List calculation instead of the calculated seat cost.
 
 Base Cost affects pricing only. It does not change the actual operational seat cost used in bookings.

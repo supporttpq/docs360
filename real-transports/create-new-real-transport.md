@@ -81,7 +81,7 @@ The configuration screen contains two sections:
 
 ***
 
-I**nfo Customer 1 / 2 / 3 -** These fields allow administrators to store additional information that can be displayed to customers during booking or included in reports.
+I**nfo Customer 1 / 2 / 3 -** These fields allow administrators to store additional information that can be displayed to customers during booking.
 
 Typical uses include:
 
@@ -97,6 +97,9 @@ Typical uses include:
 | Info Customer 1 | `Check-in opens 2 hours before departure.` |
 | Info Customer 2 | `Meet guide at Terminal 3.`                |
 | Info Customer 3 | `Bring valid passport.`                    |
+|                 |                                            |
+
+<figure><img src="../.gitbook/assets/05.08.2026_16.23.01_REC.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -219,7 +222,7 @@ Multiple email addresses can be separated by comma.
 | Departure             | `Stockholm`              |
 | Arrival               | `Barcelona`              |
 | Airline               | `SAS`                    |
-| Tour Operator         | RWB `Tours`              |
+| Tour Operator         | `RWB Tours`              |
 | Reporting Type        | `PNL`                    |
 | Transport Supplier    | `saxaxa`                 |
 | Use Automatic Seating | Enabled                  |

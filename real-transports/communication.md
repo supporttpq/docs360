@@ -2,7 +2,7 @@
 
 ## Overview
 
-ransport Reporting is a way to send the passenger name list (**PNL**) to the airline. There are multiple methods to send the PNL.
+Transport Reporting is a way to send the passenger name list (**PNL**) to the airline. There are multiple methods to send the PNL.
 
 The default reporting method is set in **Real** **Transport → General tab**. A tour operator code is required for some reporting types.
 
