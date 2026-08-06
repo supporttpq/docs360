@@ -89,5 +89,5 @@ Example: `DKK (kr.)`.
 ### Related pages
 
 * [Transport](transport/)
-* [Transport Definition](transport/transport-definition.md)
+* [Transport Definition](../real-transports/transport-definition.md)
 * [Transport Matrix](transport/transport-matrix.md)

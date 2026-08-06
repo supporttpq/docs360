@@ -97,5 +97,5 @@ One hotel night cost is added per triggered limit.
 
 ### Related pages
 
-* [Transport Definition](transport-definition.md)
+* [Transport Definition](../../real-transports/transport-definition.md)
 * [Setup for Transport Dynamic Packaging (GDS)](../../gds-queue-place/setup-for-transport-dynamic-packaging-gds.md)

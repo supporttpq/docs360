@@ -50,4 +50,4 @@ The deadline is evaluated against the transport’s **departure date**.
 ### Related pages
 
 * [Transport creation](./)
-* [Transport Definition](../transport-definition.md)
+* [Transport Definition](../../../real-transports/transport-definition.md)

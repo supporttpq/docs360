@@ -4,35 +4,43 @@
 
 When you create a transport, you can enable **Dynamic itineraries**. This lets the system combine **GDS flights** with **your own real transports**. This is done per departure, based on the **Legs** you define.
 
+<figure><img src="../.gitbook/assets/06.07.2026_13.22.42_REC.png" alt=""><figcaption></figcaption></figure>
+
+After the transport was created, the next step is to create an interval and assign the transport to a brand.
+
+<figure><img src="../.gitbook/assets/06.08.2026_16.07.36_REC.png" alt=""><figcaption></figcaption></figure>
+
 ### Legs
 
 Use **Legs** to define how the itinerary is built.
 
 * A **leg** is one segment in the itinerary. It connects a departure city to an arrival city.
 
-<figure><img src="../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In the "Choose provider" menu, there is the possibility of making 3 different configurations depending on the type of provider chosen, as follows:
 
 **Own Database -** If on the tabs of legs on the tabs of choose providers you have own database checked, in the general tab -> configure, only the test and real transport code fields will be displayed.
 
-<figure><img src="../../.gitbook/assets/image (629).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (629).png" alt=""><figcaption></figcaption></figure>
+
+<img src="../.gitbook/assets/file.excalidraw (7).svg" alt="" class="gitbook-drawing">
 
 **External API** - If an External API is selected in the Choose provider tab (Amadeus, Paxport, Railhub, or Travelport), then all fields are displayed except the Real Transport code.
 
-<figure><img src="../../.gitbook/assets/image (630).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (630).png" alt=""><figcaption></figcaption></figure>
 
 **Own Database + External API** - If we have both an external API and Own Database on the chosen provider, then all the fields will be displayed.
 
-<figure><img src="../../.gitbook/assets/image (631).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (631).png" alt=""><figcaption></figcaption></figure>
 
-<img src="../../.gitbook/assets/file.excalidraw (1) (1) (1) (1) (1).svg" alt="" class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (1) (1) (1) (1) (1).svg" alt="" class="gitbook-drawing">
 
 For each leg, you define **filters**. The filters apply to **GDS** **transports**.
 
 * Click **Search** to preview which options match your filters.
 
-<figure><img src="../../.gitbook/assets/image (605).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (605).png" alt=""><figcaption></figcaption></figure>
 
 ### Field descriptions and instructions
 
@@ -112,7 +120,7 @@ If a transport can use both **real transport segments** and **GDS segments**, th
 
 Review the found flights under **Fix quota → View flights**.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (25).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (25).png" alt=""><figcaption></figcaption></figure>
 
 ### Load Factor
 
@@ -120,6 +128,5 @@ You can create **load factor matrices** and link them to a transport. Each trans
 
 ### Related pages
 
-* [Transport creation](transport-creation/)
-* [Transport Matrix](transport-matrix.md)
-* [Real Transports](../../real-transports/)
+* [Transport creation](../transport/transport/transport-creation/)
+* [Real Transports](./)

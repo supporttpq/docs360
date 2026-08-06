@@ -36,4 +36,4 @@ Treat the matrix as a planning signal. It is not a guarantee.
 ### Related pages
 
 * [Transport Price Control](../../transport-price-control.md)
-* [Transport Definition](transport-definition.md)
+* [Transport Definition](../../real-transports/transport-definition.md)
