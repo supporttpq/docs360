@@ -299,6 +299,20 @@ Footer reporting is optional.
 | Header Identifier | 998                              |
 | Total Lines       | Total number of exported records |
 
+{% hint style="info" %}
+### When one or mare passengers are canceled, they will appear separetly under the cancelled section
+{% endhint %}
+
+Example:
+
+In booking 21135, there are 3 passengers cancelled. They will appear in the Sunclass reporting under the cancelled section
+
+<figure><img src="../../../.gitbook/assets/07.08.2026_15.43.23_REC.png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+The resend passenger list will not be affected by the previously sent reports, and it should  send the full list for the departure date
+{% endhint %}
+
 ***
 
 ## Manifestation in the system
