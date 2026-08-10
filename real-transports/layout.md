@@ -46,16 +46,12 @@ The screen consists of:
 
 Allows users to select and display departures managed by a specific allocation or transport manager.
 
-**Instructions**
-
 * Select a manager or departure period from the dropdown.
 * The list refreshes and displays matching departures.
 
 **Example**
 
-```
 26-06-2026 - 26-06-2026
-```
 
 ***
 

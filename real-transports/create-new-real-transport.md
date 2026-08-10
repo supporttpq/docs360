@@ -52,32 +52,17 @@ The configuration screen contains two sections:
 
 **Code** \* - Defines the unique identifier for the transport.
 
-**Instructions**
-
-* The code must be unique.
-* Use a naming convention that clearly identifies the service.
-
 ***
 
 **Departure** \* - Specifies the transport departure location.
 
-**Instructions**
-
-* Select an existing departure location from the dropdown list.
-* This field is mandatory.
-
-**Example: Stockholm**
+* Select an existing departure location from the dropdown list. (**Example: Stockholm)**
 
 ***
 
 **Arrival** \* - Specifies the transport destination.
 
-**Instructions**
-
-* Select an existing arrival location.
-* This field is mandatory.
-
-**Example: Barcelona**
+* Select an existing arrival location. (**Example: Barcelona)**
 
 ***
 
@@ -104,28 +89,18 @@ Typical uses include:
 
 **Airline -** Associates the transport with a specific airline.&#x20;
 
-**Instructions**
-
 * Select an airline from the dropdown list.
-* It is the default option and can be configured in the [**Departure**](departures/) tab.
-
-**Example:** Scandinavian Airlines (SAS)
+* It is the default option and can be configured in the [**Departure**](departures/) tab (**Example:** Scandinavian Airlines (SAS))
 
 ***
 
 **Tour Operator -** Specifies the responsible tour operator for the transport.
 
-**Instructions**
-
-Enter the operator name if the transport belongs to a specific operator.
-
-**Example: RWB Tours**
+Enter the operator name if the transport belongs to a specific operator.(**Example: RWB Tours**)
 
 ***
 
 **Reporting Type** \* - Select from the dropdown the reporting used for this transport
-
-**Instructions**
 
 Select the appropriate reporting type from the dropdown list.
 
@@ -139,9 +114,9 @@ Examples may include:
 
 ***
 
-**Parent - this field it is** used to link one real transport to another real transport.
+**Parent -** this field it is used to link one real transport to another real transport.
 
-If you use **parent-child transports**, the platform can **share the same seat layout** between them:
+If you use **parent-child transports**, the system can **share the same seat layout** between them:
 
 * The child transport uses the **same layout selected for the parent** in the **Layout** tab.
 
@@ -192,13 +167,7 @@ See: [Add Base Cost on Real Transports](https://manual.tourpaq.com/real-transpor
 
 ***
 
-**Transport Supplier -** Defines the supplier responsible for operating the transport.
-
-**Instructions**
-
-Select an existing supplier.
-
-**Example:** `saxaxa`
+**Transport Supplier -** Defines the supplier responsible for operating the transport (**Example: saxaxa)**
 
 ***
 
@@ -233,8 +202,6 @@ When disabled, seat assignment must be performed manually.
 
 **Hour Before Departure -** How many hours before departure the system will automatically place the passengers into the airplane
 
-**Instructions**
-
 Enter the number of hours before departure when the system should execute seat allocation.
 
 **Example**
@@ -260,18 +227,18 @@ Multiple email addresses can be separated by comma.
 
 ## Example Configuration
 
-| Field                 | Example                  |
-| --------------------- | ------------------------ |
-| Code                  | STOBCN                   |
-| Departure             | `Stockholm`              |
-| Arrival               | `Barcelona`              |
-| Airline               | `SAS`                    |
-| Tour Operator         | `RWB Tours`              |
-| Reporting Type        | `PNL`                    |
-| Transport Supplier    | `saxaxa`                 |
-| Use Automatic Seating | Enabled                  |
-| Hour Before Departure | `24`                     |
-| Email Address         | `operations@company.com` |
+| Field                 | Example                |
+| --------------------- | ---------------------- |
+| Code                  | STOBCN                 |
+| Departure             | Stockholm              |
+| Arrival               | Barcelona              |
+| Airline               | SAS                    |
+| Tour Operator         | RWB Tours              |
+| Reporting Type        | PNL                    |
+| Transport Supplier    | saxaxa                 |
+| Use Automatic Seating | Enabled                |
+| Hour Before Departure | 24                     |
+| Email Address         | operations@company.com |
 
 #### Result
 

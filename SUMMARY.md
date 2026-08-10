@@ -305,7 +305,6 @@
   * [Transport Definition](real-transports/transport-definition.md)
   * [Create New Real Transport](real-transports/create-new-real-transport.md)
   * [Departures](real-transports/departures/README.md)
-    * [Add Base Cost on Real Transports](real-transports/departures/add-base-cost-on-real-transports.md)
     * [Add LAND-Days to Real Transports (Offset Handling)](real-transports/departures/add-land-days-to-real-transports-offset-handling.md)
   * [Communication](real-transports/communication.md)
   * [Passenger Information](real-transports/passenger-information.md)
