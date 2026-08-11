@@ -1,4 +1,4 @@
-# Booking Room Costs
+# Booking Room Costspta-ma pe
 
 ### Overview
 
@@ -264,3 +264,13 @@ This ensures that supplier payments always reflect the agreed hotel contract, re
 In the booking, go to **Profit → Hotel Cost**. In the **Creditor** tab, the system displays the **real Room Cost**, while the **Cost per Day** is calculated using the **Booking Room Cost**.
 
 <figure><img src="../../.gitbook/assets/11.08.2026_14.46.16_REC.png" alt=""><figcaption></figcaption></figure>
+
+***
+
+### Related pages
+
+* [Room Cost Rules](room-cost/room-cost-rules/) explains how to configure the contractual Room Cost and Stay Type.
+* [Hotel allotment overview](hotel-allotment-overview.md) explains guaranteed-room availability and allotment usage.
+* [Profit](../../booking/new-booking/profit.md) explains how to review hotel costs and profitability in a booking.
+* [Price List](../../price-list/pricelist.md) explains price-list management for hotel and transport packages.
+* [How to set autobilling for hotels](../../autobilling/how-to-set-autobilling-for-hotels.md) explains supplier-invoice setup using the contractual Room Cost.
