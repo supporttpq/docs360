@@ -18,7 +18,7 @@ Improper configuration may lead to unreadable tickets or inconsistent brand pres
 
 ## Field-by-Field Explanation
 
-<figure><img src="../../../.gitbook/assets/image (689).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (689).png" alt=""><figcaption></figcaption></figure></div>
 
 ### **1. Faded Color**
 
