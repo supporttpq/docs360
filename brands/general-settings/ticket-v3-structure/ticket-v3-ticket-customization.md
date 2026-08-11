@@ -18,20 +18,20 @@ Improper configuration may lead to unreadable tickets or inconsistent brand pres
 
 ## Field-by-Field Explanation
 
-<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (689).png" alt=""><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/11.08.2026_16.42.09_REC.png" alt=""><figcaption></figcaption></figure></div>
 
 ### **1. Faded Color**
 
 Secondary gradient color used in the ticket background. It works together with the Main Color to create the gradient effect in Version 3.\
 Used for visual depth and background transitions. It usually represents a lighter tone of the primary brand color.
 
-<figure><img src="../../../.gitbook/assets/image (690).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (690).png" alt=""><figcaption></figcaption></figure></div>
 
 ### 2. Main Color
 
 Primary brand color used in headers, highlight areas, buttons and key visual sections of the ticket. Defines the dominant visual identity of the ticket.
 
-<figure><img src="../../../.gitbook/assets/image (691).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (691).png" alt=""><figcaption></figcaption></figure></div>
 
 Important: The Main Color directly impacts visibility of headings and structural blocks.
 
@@ -49,7 +49,7 @@ When a color is selected, it is applied to the following words on the ticket:
 
 The selected color allows the brand to apply a specific text color to these elements without changing the **Main Color** used for the rest of the ticket.
 
-<figure><img src="../../../.gitbook/assets/05.08.2026_14.44.02_REC.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/11 aug. 2026, 16_50.jpeg" alt="" width="563"><figcaption></figcaption></figure></div>
 
 {% hint style="info" %}
 The Text Color setting applies only to the supported words: **Brugernavn**, **Adgangskode**, and **Annulleret**.
@@ -59,7 +59,7 @@ The Text Color setting applies only to the supported words: **Brugernavn**, **Ad
 
 Main decorative image displayed in the Customer Information section of the ticket.
 
-<figure><img src="../../../.gitbook/assets/image (692).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (692).png" alt=""><figcaption></figcaption></figure></div>
 
 **Instructions**
 
@@ -75,7 +75,7 @@ Best practice: Use compressed images optimized for PDF output to avoid large fil
 
 Small decorative graphical element displayed near the Customer Information section. Enhances visual appearance without affecting core content.
 
-<figure><img src="../../../.gitbook/assets/image (693).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (693).png" alt=""><figcaption></figcaption></figure></div>
 
 **Instructions**
 
@@ -89,7 +89,7 @@ Typical usage: lines, abstract shapes, light branding accents.
 
 Icon used to represent full hotel star classification. Defines how hotel rating stars appear visually on the ticket.
 
-<figure><img src="../../../.gitbook/assets/image (694).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (694).png" alt=""><figcaption></figcaption></figure></div>
 
 **Instructions**
 
@@ -103,7 +103,7 @@ Note: The system repeats this icon based on the hotel’s star rating.
 
 Icon used when hotel rating includes a half star (e.g. 3.5 stars). Ensures accurate graphical representation of non-integer ratings.
 
-<figure><img src="../../../.gitbook/assets/image (695).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (695).png" alt=""><figcaption></figcaption></figure></div>
 
 **Instructions**
 
@@ -126,7 +126,7 @@ Defines the font file format used in the ticket.
 
 Controls typography rendering in the generated document.
 
-<figure><img src="../../../.gitbook/assets/image (696).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (696).png" alt=""><figcaption></figcaption></figure></div>
 
 **Instructions**
 
@@ -139,7 +139,7 @@ Controls typography rendering in the generated document.
 Font file used for standard text (paragraphs, passenger names, descriptions).\
 Defines readability and base typography of the ticket.
 
-<figure><img src="../../../.gitbook/assets/image (697).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (697).png" alt=""><figcaption></figcaption></figure></div>
 
 **Instructions**
 
@@ -153,7 +153,7 @@ Important: If the font lacks character support, some languages may render incorr
 
 Font file used for headings and emphasized text.
 
-<figure><img src="../../../.gitbook/assets/image (698).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (698).png" alt=""><figcaption></figcaption></figure></div>
 
 **Instructions**
 
