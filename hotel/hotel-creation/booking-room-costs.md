@@ -122,7 +122,7 @@ Each Booking Room Cost contains one or more room groups.
 
 Use **+** below the rule to create a room group.
 
-<figure><img src="../../.gitbook/assets/17.07.2026_14.51.21_REC.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/11.08.2026_13.20.50_REC.png" alt=""><figcaption></figcaption></figure>
 
 For every room group you define:
 
@@ -150,7 +150,7 @@ Booking Room Cost can be entered as either:
 * a fixed amount
 * a percentage
 
-The **%** checkbox controls which method is used.
+The **%** checkbox controls which method is used. The cost values can contain 2 decimals.
 
 #### Fixed amount
 
@@ -178,16 +178,15 @@ If a value is left empty, Tourpaq automatically uses the standard Room Cost.
 
 While editing Booking Room Costs, Tourpaq continuously compares the configured Booking Room Cost with the original Room Cost.
 
-<figure><img src="../../.gitbook/assets/17.07.2026_14.57.20_REC.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/11.08.2026_13.25.32_REC.png" alt=""><figcaption></figcaption></figure>
 
 Selecting the clock icon displays:
 
-> **Difference from Room Cost in the whole period:**\
-> XXX Currency
+> Shows the difference between the Room Cost and Booking Room Cost in the period. Assumes we have 1 Guarantee Room on each day in the period for the selected Rooms
 
 The calculation is updated immediately, even before the changes are saved.
 
-This allows you to verify that the phased Booking Room Costs match the contractual Room Cost over the full season if desired.
+The cost-related discounts will not be based on booking room cost (Early booking, Stay\&pay, SPO, Extra Beds)
 
 ***
 
@@ -226,6 +225,26 @@ The following areas use Booking Room Cost whenever one is available:
 
 If no Booking Room Cost exists, Room Cost is used automatically.
 
+When calculating the room cost, Tourpaq determines whether the **Booking Room Cost** or the **Room Cost** should be applied based on the following logic:
+
+1. **Check if a Booking Room Cost exists**
+   * If no Booking Room Cost exists, the system uses the applicable **Room Cost**.
+   * If a Booking Room Cost exists, the system identifies the corresponding **Room Cost** for the same hotel, room type, and validity period.
+2. **Check the Stay Type of the corresponding Room Cost**
+   * If the **Stay Type** is set to **Per Pax Per Night**, the system uses the **Booking Room Cost** for the calculation.
+   * If the **Stay Type** is different from **Per Pax Per Night**, the system ignores the Booking Room Cost and uses the **Room Cost** instead.
+3.  **Result**
+
+    The Booking Room Cost is therefore applied **only when a corresponding Room Cost exists for the same period and its Stay Type is set to Per Pax Per Night**.
+
+**Rule:**
+
+`Booking Room Cost is used = Booking Room Cost exists AND Room Cost Stay Type = Per Pax Per Night`
+
+In all other cases, the **Room Cost** is used.
+
+<figure><img src="../../.gitbook/assets/11 aug. 2026, 14_39_07.png" alt=""><figcaption></figcaption></figure>
+
 ### Uses Room Cost
 
 The following areas always use the contractual Room Cost:
@@ -240,31 +259,8 @@ This ensures that supplier payments always reflect the agreed hotel contract, re
 
 ***
 
-## Example
+### Invoice
 
-A hotel contract guarantees 30 rooms for the entire summer season.
+In the booking, go to **Profit → Hotel Cost**. In the **Creditor** tab, the system displays the **real Room Cost**, while the **Cost per Day** is calculated using the **Booking Room Cost**.
 
-The hotel charges a flat contractual Room Cost of **€100** per night from April through October.
-
-The tour operator wants booking costs to better reflect seasonal demand.
-
-The following Booking Room Costs are configured:
-
-| Arrival period      | Booking Room Cost |
-| ------------------- | ----------------- |
-| April - May         | €85               |
-| June - August       | €120              |
-| September - October | €95               |
-
-The result is:
-
-| Area                       | Cost used         |
-| -------------------------- | ----------------- |
-| Hotel settlement           | €100              |
-| Auto-billing               | €100              |
-| Price List (April booking) | €85               |
-| Price List (July booking)  | €120              |
-| Profit calculation         | Booking Room Cost |
-| Finance reporting          | Booking Room Cost |
-
-The hotel is always settled using the contractual Room Cost of **€100**, while Tourpaq uses the phased Booking Room Cost for commercial pricing, profitability, and financial reporting.
+<figure><img src="../../.gitbook/assets/11.08.2026_14.46.16_REC.png" alt=""><figcaption></figcaption></figure>
