@@ -154,3 +154,154 @@ Useful for:
       * **Class** – Travel class, if used.
       * **Departure time UTC** icon – Shows the UTC times and flight time.
 3. Click **Save** to store the departure.
+
+## Real Transport Cost Calculation
+
+The Real Transport cost represents the cost allocated to each passenger based on the transport's guaranteed commitment and the number of passengers booked on the corresponding departure.
+
+The cost is calculated separately for the **outbound** and **homebound** flights. The resulting costs are then combined to determine the total transport cost for the passenger's round trip.
+
+### Cost configuration
+
+The Real Transport departure contains the values used as the basis for the cost calculation.
+
+In the **Departures** tab, the relevant cost fields are displayed in the **Cost (EUR)** section:
+
+| Field           | Description                                                                                                                      |
+| --------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| **Allotment**   | The number of seats allocated to the departure.                                                                                  |
+| **Guaranteed**  | The guaranteed number of seats committed for the departure. This value is used to calculate the guaranteed transport commitment. |
+| **Pro Rate**    | The pro-rata cost associated with the departure, when applicable.                                                                |
+| **Base Cost**   | The base cost used for the transport cost calculation.                                                                           |
+| **Load Factor** | The load factor applied to the transport cost, when configured.                                                                  |
+| **Booked**      | The number of passengers booked on the departure.                                                                                |
+
+{% hint style="info" %}
+The guaranteed commitment is calculated from the guaranteed seats and the applicable cost per guaranteed seat.
+{% endhint %}
+
+### How the passenger cost is calculated
+
+The cost is calculated separately for each flight direction.
+
+#### 1. Calculate the guaranteed commitment
+
+The guaranteed commitment is calculated as:
+
+**Guaranteed seats × Cost per guaranteed seat**
+
+For example:
+
+**174 seats × EUR 1,283.00 = EUR 223,242.00**
+
+#### 2. Divide the commitment by the actual number of booked passengers
+
+The guaranteed commitment is distributed across the passengers booked on that departure.
+
+**Guaranteed commitment ÷ Actual booked passengers = Cost per passenger**
+
+For example:
+
+**EUR 223,242.00 ÷ 171 passengers = EUR 1,305.51**
+
+#### 3. Add applicable tax
+
+Any applicable tax is added to the calculated passenger cost.
+
+**Passenger cost + Tax = Final cost per passenger**
+
+#### 4. Calculate the round-trip cost
+
+For a round trip, the outbound and homebound costs are calculated independently and then added together.
+
+**Outbound cost + Homebound cost = Round-trip cost per passenger**
+
+#### 5. Calculate the booking cost
+
+The round-trip passenger cost is multiplied by the number of passengers included in the booking.
+
+**Round-trip cost per passenger × Number of passengers = Total booking transport cost**
+
+The final booking amount is rounded according to the applicable currency rounding rules.
+
+***
+
+### Example
+
+Consider the following two departures:
+
+#### Outbound flight
+
+**Departure:** 09 May 2026
+
+* Guaranteed seats: **174**
+* Cost per guaranteed seat: **EUR 1,283.00**
+* Actual booked passengers: **171**
+* Tax: **EUR 316.00**
+
+**Guaranteed commitment**
+
+174 × EUR 1,283.00 = **EUR 223,242.00**
+
+**Cost allocated per passenger**
+
+EUR 223,242.00 ÷ 171 = **EUR 1,305.51**
+
+**Final outbound cost**
+
+EUR 1,305.51 + EUR 316.00 = **EUR 1,621.51**
+
+**Outbound cost per passenger: EUR 1,621.51**
+
+***
+
+#### Homebound flight
+
+**Departure:** 16 May 2026
+
+* Guaranteed seats: **174**
+* Cost per guaranteed seat: **EUR 1,283.00**
+* Actual booked passengers: **173**
+* Tax: **EUR 0.00**
+
+**Guaranteed commitment**
+
+174 × EUR 1,283.00 = **EUR 223,242.00**
+
+**Cost allocated per passenger**
+
+EUR 223,242.00 ÷ 173 = **EUR 1,290.42**
+
+**Final homebound cost**
+
+EUR 1,290.42 + EUR 0.00 = **EUR 1,290.42**
+
+**Homebound cost per passenger: EUR 1,290.42**
+
+***
+
+### Round-trip cost
+
+The two flight costs are added together:
+
+**EUR 1,621.51 + EUR 1,290.42 = EUR 2,911.93**
+
+Therefore:
+
+**Round-trip transport cost per passenger = EUR 2,911.93**
+
+#### Cost for two passengers
+
+For a booking containing two passengers:
+
+**EUR 2,911.93 × 2 = EUR 5,823.86**
+
+After rounding:
+
+**Total transport cost = EUR 5,824**
+
+***
+
+### When is the cost updated on the booking?
+
+The transport cost on the booking is based on the cost calculated for the relevant Real Transport departures and is update when the cost is changed.
