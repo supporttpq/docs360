@@ -12,7 +12,7 @@ Each page has a specific role and the header (ticket number + version) is repeat
 
 ## Booking Overview & Flight Information Section
 
-<figure><img src="../../../.gitbook/assets/12.08.2026_10.54.08_REC (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/12.08.2026_10.54.08_REC (1).png" alt=""><figcaption></figcaption></figure></div>
 
 ### Booking Header
 
@@ -90,7 +90,7 @@ If the number of passengers exceeds the page limit, the list continues on the ne
 
 ## Passenger List (Continuation)
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 ### Passenger List
 
@@ -102,7 +102,7 @@ Continuation of all travelers:
 
 Passenger information is displayed in the blue information box on the e-ticket.
 
-<figure><img src="../../../.gitbook/assets/12.08.2026_09.55.38_REC.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/12.08.2026_09.55.38_REC.png" alt=""><figcaption></figcaption></figure></div>
 
 The layout automatically:
 
@@ -114,7 +114,7 @@ The layout automatically:
 
 The **REJSEDELTAGERE** section automatically adapts to page breaks to ensure the content remains readable.
 
-<figure><img src="../../../.gitbook/assets/21.07.2026_11.03.03_REC.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/21.07.2026_11.03.03_REC.png" alt=""><figcaption></figcaption></figure></div>
 
 When the participant table continues onto a new page:
 
@@ -139,7 +139,7 @@ For cancelled passengers:
 
 ## Accommodation & Payment Section
 
-<figure><img src="../../../.gitbook/assets/05.08.2026_15.05.24_REC.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/05.08.2026_15.05.24_REC.png" alt=""><figcaption></figcaption></figure></div>
 
 ### Accommodation
 
@@ -223,7 +223,7 @@ Payment due dates and payment status indicators are dynamically displayed based 
 
 ## Price Specification (Passengers 1–3) Section
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 ### Price Breakdown per Passenger
 
@@ -278,7 +278,7 @@ If a cancellation fee exists, an additional line is displayed before **Total kr.
 
 ## Price Specification (Summary & Remaining Passengers) Section
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 ### Included in Base Price
 
@@ -308,7 +308,7 @@ Same structure as previous page:
 
 ## Hotel Information Section (Part 1)
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 ### Hotel Details
 
@@ -358,7 +358,7 @@ Distances help customers understand accessibility and location convenience.
 
 ## Hotel Information Section (Part 2)
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 ### Board Options
 
@@ -387,7 +387,7 @@ Distances help customers understand accessibility and location convenience.
 
 ## Room Description Section
 
-<figure><img src="../../../.gitbook/assets/14.05.2026_16.52.56_REC.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/14.05.2026_16.52.56_REC.png" alt=""><figcaption></figcaption></figure></div>
 
 ### Overview
 
@@ -405,16 +405,19 @@ The feature is supported for all ticket versions:
 
 ### Functionality
 
-When **Show room info** is enabled from the Brand:&#x20;
+When **Show room info** is enabled from the Brand:
 
-<figure><img src="../../../.gitbook/assets/14.05.2026_17.02.22_REC.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/14.05.2026_17.02.22_REC.png" alt=""><figcaption></figcaption></figure></div>
 
 * The system checks the booked room types included in the booking
-* For each used room type, the system retrieves the room description from:
-  * **Hotel → Room Types**
-  *   The description available behind the **PLUS (+)** icon next to the Room Code/Description&#x20;
+*   For each used room type, the system retrieves the room description from:
 
-      <figure><img src="../../../.gitbook/assets/14.05.2026_17.03.43_REC.png" alt=""><figcaption></figcaption></figure>
+    * **Hotel → Room Types**
+    * The description available behind the **PLUS (+)** icon next to the Room Code/Description
+
+
+
+    <div data-with-frame="true"><figure><img src="../../../.gitbook/assets/14.05.2026_17.03.43_REC.png" alt=""><figcaption></figcaption></figure></div>
 * If a **Brand Description** exists, it is used
 * If no Brand Description exists, the system uses the **Default Description**
 
@@ -460,7 +463,7 @@ If no description exists at all, the room is skipped.
 
 ## Seating & Room Allocation Section (TILVALG)
 
-<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 ### Display Conditions
 
