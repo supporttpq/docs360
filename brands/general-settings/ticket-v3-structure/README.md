@@ -10,9 +10,9 @@ Each page has a specific role and the header (ticket number + version) is repeat
 
 ***
 
-## Page 1 – Booking Overview & Flight Information
+## Booking Overview & Flight Information Section
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/12.08.2026_10.54.08_REC (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Booking Header
 
@@ -72,8 +72,6 @@ This field is especially important for dynamic/GDS bookings where extra flight-r
 
 For bookings with GDS transport, the GDS text configured under **User > Brands > GDS** is displayed only on the dedicated **GDS** page of the e-ticket.
 
-<figure><img src="../../../.gitbook/assets/21.07.2026_10.40.33_REC.png" alt=""><figcaption></figcaption></figure>
-
 ***
 
 ### Passengers (Partial List)
@@ -90,7 +88,7 @@ If the number of passengers exceeds the page limit, the list continues on the ne
 
 ***
 
-## Page 2 – Passenger List (Continuation)
+## Passenger List (Continuation)
 
 <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -104,7 +102,7 @@ Continuation of all travelers:
 
 Passenger information is displayed in the blue information box on the e-ticket.
 
-<figure><img src="../../../.gitbook/assets/21.07.2026_11.01.25_REC.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/12.08.2026_09.55.38_REC.png" alt=""><figcaption></figcaption></figure>
 
 The layout automatically:
 
@@ -139,7 +137,7 @@ For cancelled passengers:
 
 ***
 
-## Page 3 – Accommodation & Payment
+## Accommodation & Payment Section
 
 <figure><img src="../../../.gitbook/assets/05.08.2026_15.05.24_REC.png" alt=""><figcaption></figcaption></figure>
 
@@ -223,7 +221,7 @@ Payment due dates and payment status indicators are dynamically displayed based 
 
 ***
 
-## Page 4 – Price Specification (Passengers 1–3)
+## Price Specification (Passengers 1–3) Section
 
 <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -278,7 +276,7 @@ If a cancellation fee exists, an additional line is displayed before **Total kr.
 
 ***
 
-## Page 5 – Price Specification (Summary & Remaining Passengers)
+## Price Specification (Summary & Remaining Passengers) Section
 
 <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -308,7 +306,7 @@ Same structure as previous page:
 
 ***
 
-## Page 6 – Hotel Information (Part 1)
+## Hotel Information Section (Part 1)
 
 <figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -358,7 +356,7 @@ Distances help customers understand accessibility and location convenience.
 
 ***
 
-## Page 7 – Hotel Information (Part 2)
+## Hotel Information Section (Part 2)
 
 <figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -387,7 +385,7 @@ Distances help customers understand accessibility and location convenience.
 
 ***
 
-## Room Description
+## Room Description Section
 
 <figure><img src="../../../.gitbook/assets/14.05.2026_16.52.56_REC.png" alt=""><figcaption></figcaption></figure>
 
@@ -460,7 +458,7 @@ The system uses descriptions in the following order:
 
 If no description exists at all, the room is skipped.
 
-## Seating & Room Allocation (TILVALG)
+## Seating & Room Allocation Section (TILVALG)
 
 <figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
