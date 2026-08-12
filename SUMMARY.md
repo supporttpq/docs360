@@ -223,6 +223,7 @@
     * [Room Restriction](hotel/hotel-creation/occupancy-handling/room-restriction.md)
     * [Single Room Cost](hotel/hotel-creation/occupancy-handling/single-room-cost.md)
     * [Single Room Supplement](hotel/hotel-creation/occupancy-handling/single-room-supplement.md)
+  * [Hotel night calculation](hotel/hotel-creation/hotel-night-calculation.md)
 
 ***
 
