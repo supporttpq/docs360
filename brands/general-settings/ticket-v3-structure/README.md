@@ -72,6 +72,8 @@ This field is especially important for dynamic/GDS bookings where extra flight-r
 
 For bookings with GDS transport, the GDS text configured under **User > Brands > GDS** is displayed only on the dedicated **GDS** page of the e-ticket.
 
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/12.08.2026_14.51.45_REC.png" alt=""><figcaption></figcaption></figure></div>
+
 ***
 
 ### Passengers (Partial List)
