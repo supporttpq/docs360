@@ -217,7 +217,7 @@
     * [Special Offer Cost Rules](hotel/hotel-creation/room-cost/special-offer-cost-rules.md)
     * [Room Cost Rule Interactions](hotel/hotel-creation/room-cost/room-cost-rule-interactions-and-faq.md)
     * [Room costs](hotel/hotel-creation/room-cost/room-costs.md)
-  * [Booking Room Costspta-ma pe](hotel/hotel-creation/booking-room-costspta-ma-pe.md)
+  * [Booking Room Costs](hotel/hotel-creation/booking-room-costs.md)
   * [Occupancy / Handling](hotel/hotel-creation/occupancy-handling/README.md)
     * [Different Max Pax](hotel/hotel-creation/occupancy-handling/different-max-pax.md)
     * [Room Restriction](hotel/hotel-creation/occupancy-handling/room-restriction.md)
