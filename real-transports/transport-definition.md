@@ -2,13 +2,13 @@
 
 ### Overview
 
-When you create a transport, you can enable **Dynamic itineraries**. This lets the system combine **GDS flights** with **your own real transports**. This is done per departure, based on the **Legs** you define.
+For a Transport to be configured as a **Real Transport**, the **Dynamic Itineraries** option must be enabled on the **Settings** page. This lets the system combine **GDS flights** with **own real transports**. This is done per departure, based on the **Legs** define.
 
-<figure><img src="../.gitbook/assets/06.07.2026_13.22.42_REC.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/20.08.2026_11.02.04_REC.png" alt=""><figcaption></figcaption></figure>
 
 After the transport was created, the next step is to create an interval and assign the transport to a brand.
 
-<figure><img src="../.gitbook/assets/06.08.2026_16.07.36_REC.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/20.08.2026_11.14.24_REC.png" alt=""><figcaption></figcaption></figure>
 
 ### Legs
 
@@ -16,11 +16,11 @@ Use **Legs** to define how the itinerary is built.
 
 * A **leg** is one segment in the itinerary. It connects a departure city to an arrival city.
 
-<figure><img src="../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/20.08.2026_11.18.01_REC.png" alt=""><figcaption></figcaption></figure>
 
 In the "Choose provider" menu, there is the possibility of making 3 different configurations depending on the type of provider chosen, as follows:
 
-**Own Database -** If on the tabs of legs on the tabs of choose providers you have own database checked, in the general tab -> configure, only the test and real transport code fields will be displayed.
+**Own Database -** If **Own Database** is selected in the **Choose Providers** tab for the legs, in the general tab -> configure, only the test and real transport code fields will be displayed.
 
 <figure><img src="../.gitbook/assets/image (629).png" alt=""><figcaption></figcaption></figure>
 
@@ -34,7 +34,7 @@ In the "Choose provider" menu, there is the possibility of making 3 different co
 
 <figure><img src="../.gitbook/assets/image (631).png" alt=""><figcaption></figcaption></figure>
 
-<img src="../.gitbook/assets/file.excalidraw (1) (1) (1) (1) (1).svg" alt="" class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (6).svg" alt="" class="gitbook-drawing">
 
 For each leg, you define **filters**. The filters apply to **GDS** **transports**.
 
@@ -103,6 +103,10 @@ Always run a test search before saving, especially when using filters like carri
 {% hint style="info" %}
 Use **Search** to validate your filters. Use **Update flight data** when you want the system to refresh the stored flight data.
 {% endhint %}
+
+<figure><img src="../.gitbook/assets/20.08.2026_11.41.09_REC.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/20.08.2026_11.44.33_REC.png" alt=""><figcaption></figcaption></figure>
 
 ### Flight Search <a href="#flight-search" id="flight-search"></a>
 

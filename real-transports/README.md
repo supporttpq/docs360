@@ -17,11 +17,11 @@ A Real Transport can then be **used by a Transport to define the route operated 
 This chapter contains:
 
 * [Transport Definition](transport-definition.md)
-* [How to create a Real Transport](create-new-real-transport.md)
-  * [Departures](departures/)
-  * [Communication](communication.md)
-  * [Passenger information](passenger-information.md)
-  * [Documents](documents.md)
-  * [Layout](layout.md)
-  * [Notes](notes.md)
+* [Create New Real Transport](create-new-real-transport.md)
+* [Departures](departures/)
+* [Communication](communication.md)
+* [Passenger information](passenger-information.md)
+* [Documents](documents.md)
+* [Layout](layout.md)
+* [Notes](notes.md)
 
