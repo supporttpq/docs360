@@ -127,7 +127,7 @@ A numeric field used to adjust hotel stay dates.
 
 ### Example
 
-In the following example,, the offset is required in both directions (outbound and homebound).
+In the following example, the offset is required in both directions (outbound and homebound).
 
 Booking details:
 
@@ -139,11 +139,11 @@ Booking details:
 *   Offset Departure: -1
 
     <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-*   Ofsset Arrival: +1
+*   Offset Arrival: +1
 
     <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 * Results:
-  * Early arrival -1 day (07.05.2026 - extra night requierd)
-  * Late departure +1 day (16.05.2026 - extra night requierd)
+  * Early arrival -1 day (07.05.2026 - extra night required)&#x20;
+  * Late departure +1 day (16.05.2026 - extra night required)
 
 <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

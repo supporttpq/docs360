@@ -8,6 +8,8 @@ This configuration allows administrators to define transport routes, assign supp
 
 <figure><img src="../.gitbook/assets/rt new.png" alt=""><figcaption></figcaption></figure>
 
+<figure><img src="../.gitbook/assets/20.08.2026_13.19.20_REC.png" alt=""><figcaption></figcaption></figure>
+
 ***
 
 ## Purpose
