@@ -18,7 +18,7 @@ Use **Legs** to define how the itinerary is built.
 
 <figure><img src="../.gitbook/assets/20.08.2026_11.18.01_REC.png" alt=""><figcaption></figcaption></figure>
 
-In the "Choose provider" menu, there is the possibility of making 3 different configurations depending on the type of provider chosen, as follows:
+In the "Choose provider" menu, there is the possibility of making different configurations depending on the type of provider chosen, as follows:
 
 **Own Database -** If **Own Database** is selected in the **Choose Providers** tab for the legs, in the general tab -> configure, only the test and real transport code fields will be displayed.
 
@@ -36,50 +36,11 @@ In the "Choose provider" menu, there is the possibility of making 3 different co
 
 <img src="../.gitbook/assets/file.excalidraw (6).svg" alt="" class="gitbook-drawing">
 
-For each leg, you define **filters**. The filters apply to **GDS** **transports**.
+For each leg, you define **filters**. The filters apply to **Real Tansports**.
 
 * Click **Search** to preview which options match your filters.
 
-<figure><img src="../.gitbook/assets/image (605).png" alt=""><figcaption></figcaption></figure>
-
-### Field descriptions and instructions
-
-#### Route information
-
-* **Departure -** Fixed departure airport for this transport (read-only).
-* **Arrival -** Fixed arrival airport for this transport (read-only).
-
-#### Time information
-
-* **Departure preferred time -** Optional target departure time.
-* **Departure earliest time -** Earliest allowed departure time.
-* **Departure latest time -** Latest allowed departure time.
-
-#### Travel limitations
-
-* **Maximum stops number -** Maximum number of stops allowed.
-* **Maximum travel time (h) -** Maximum total journey duration in hours, including connections.
-* **Maximum connection time (min) -** Maximum allowed layover time between legs, in minutes.
-
-#### Cabin configuration
-
-* **Permitted Cabins -** Cabins that are allowed (for example Economy, Business). Only selected cabins will be returned.
-* **Preferred Cabins -** Cabins that should be prioritized when available, but not strictly enforced.
-
-#### Connection points
-
-* **Permitted connection points -** Cities or airports where connections are allowed.\
-  Use **Add** to define CITY and/or AIRPORT.
-* **Prohibited connection points -** Cities or airports where connections are not allowed.<br>
-
-#### Carrier rules
-
-* **Permitted carriers -** Airlines that are allowed for this transport.
-* **Excluded carriers -** Airlines that must never be used.
-
-#### Booking rules
-
-* **Booking Classes**<br>
+<figure><img src="../.gitbook/assets/21.08.2026_14.25.36_REC.png" alt=""><figcaption></figcaption></figure>
 
 ### Test Search Options
 
@@ -100,37 +61,13 @@ Always run a test search before saving, especially when using filters like carri
 * Click **Save** to store your filters.
 * Click **Update flight data** to fetch flight data using the saved filters. The selection logic is described in [Flight search](transport-definition.md#flight-search).
 
+<figure><img src="../.gitbook/assets/21.08.2026_14.48.25_REC.png" alt=""><figcaption></figcaption></figure>
+
 {% hint style="info" %}
-Use **Search** to validate your filters. Use **Update flight data** when you want the system to refresh the stored flight data.
+Use **Update flight data** when you want the system to refresh the stored flight data. A new search will be performed in **Real Transport** using the newly added filters. The **Transport** can then be linked to a newly created **Real Transport**.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/20.08.2026_11.41.09_REC.png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/20.08.2026_11.44.33_REC.png" alt=""><figcaption></figcaption></figure>
-
-### Flight Search <a href="#flight-search" id="flight-search"></a>
-
-Each night, the system checks for the **best available flight** per departure. This only applies to transports using **Dynamic itineraries**.
-
-The system stores:
-
-* timetables
-* flight numbers
-* airline information
-
-If a transport can use both **real transport segments** and **GDS segments**, the system uses GDS segments when these rules match:
-
-1. Guaranteed seats must be sold according to the load matrix.
-2. The GDS **cost price** is lower.
-3. The GDS **sales price** is lower than _Max price from GDS_.
-
-Review the found flights under **Fix quota → View flights**.
-
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (25).png" alt=""><figcaption></figcaption></figure>
-
-### Load Factor
-
-You can create **load factor matrices** and link them to a transport. Each transport can use one selected matrix.
+<figure><img src="../.gitbook/assets/21.08.2026_14.54.47_REC.png" alt=""><figcaption></figcaption></figure>
 
 ### Related pages
 
