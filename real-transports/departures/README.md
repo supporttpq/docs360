@@ -183,7 +183,9 @@ The cost is calculated separately for the **outbound** and **homebound** flights
 
 The Real Transport departure contains the values used as the basis for the cost calculation.
 
-In the **Departures** tab, the relevant cost fields are displayed in the **Cost (EUR)** section:
+In the **Departures** tab, the relevant cost fields are displayed in the **Cost** section:
+
+<figure><img src="../../.gitbook/assets/21.08.2026_15.28.51_REC.png" alt=""><figcaption></figcaption></figure>
 
 | Field           | Description                                                                                                                      |
 | --------------- | -------------------------------------------------------------------------------------------------------------------------------- |
@@ -200,126 +202,83 @@ The guaranteed commitment is calculated from the guaranteed seats and the applic
 
 ### How the passenger cost is calculated
 
-The cost is calculated separately for each flight direction.
+There are **two methods for calculating the passenger cost**, depending on whether the flight has departed:
 
-#### 1. Calculate the guaranteed commitment
-
-The guaranteed commitment is calculated as:
-
-**Guaranteed seats × Cost per guaranteed seat**
-
-For example:
-
-**174 seats × EUR 1,283.00 = EUR 223,242.00**
-
-#### 2. Divide the commitment by the actual number of booked passengers
-
-The guaranteed commitment is distributed across the passengers booked on that departure.
-
-**Guaranteed commitment ÷ Actual booked passengers = Cost per passenger**
-
-For example:
-
-**EUR 223,242.00 ÷ 171 passengers = EUR 1,305.51**
-
-#### 3. Add applicable tax
-
-Any applicable tax is added to the calculated passenger cost.
-
-**Passenger cost + Tax = Final cost per passenger**
-
-#### 4. Calculate the round-trip cost
-
-For a round trip, the outbound and homebound costs are calculated independently and then added together.
-
-**Outbound cost + Homebound cost = Round-trip cost per passenger**
-
-#### 5. Calculate the booking cost
-
-The round-trip passenger cost is multiplied by the number of passengers included in the booking.
-
-**Round-trip cost per passenger × Number of passengers = Total booking transport cost**
-
-The final booking amount is rounded according to the applicable currency rounding rules.
+1. **Before departure**\
+   The passenger cost is calculated based on the expected **Load Factor**. This provides an estimated cost per passenger based on the expected number of seats to be sold. The result is therefore an **approximate cost**, based on projected sales.
+2. **After departure**\
+   Once the flight has departed, the passenger cost is recalculated using the **actual number of seats sold**. The total flight cost is divided by the actual number of passengers booked. This represents the **actual passenger cost for the flight** and is no longer based on the expected Load Factor or sales projections.
 
 ***
 
-### Example
+### Examples
 
-Consider the following two departures:
+The passenger cost is calculated differently before and after the flight departure.
 
-#### Outbound flight
+#### Example 1: Passenger cost before departure
 
-**Departure:** 09 May 2026
+Before departure, the passenger cost is based on the expected **Load Factor**.
+
+Assume:
 
 * Guaranteed seats: **174**
-* Cost per guaranteed seat: **EUR 1,283.00**
-* Actual booked passengers: **171**
-* Tax: **EUR 316.00**
+* Cost per guaranteed seat: **1,283.00**
+* Total flight cost: **174 × 1,283.00 = 223,242.00**
+* Expected Load Factor: **90%**
+* Expected passengers: **174 × 90% = 156.6**, approximately **157 passengers**
 
-**Guaranteed commitment**
+The estimated passenger cost is:
 
-174 × EUR 1,283.00 = **EUR 223,242.00**
+**223,242.00 ÷ 157 = 1,422.56**
 
-**Cost allocated per passenger**
+Therefore, before departure, the estimated passenger cost is approximately **1,422.56 per passenger**.
 
-EUR 223,242.00 ÷ 171 = **EUR 1,305.51**
+This is an **estimated cost**, because it is based on the expected Load Factor and the number of passengers expected to be sold.
 
-**Final outbound cost**
+#### Example 2: Passenger cost after departure
 
-EUR 1,305.51 + EUR 316.00 = **EUR 1,621.51**
+After the flight has departed, the calculation uses the **actual number of passengers booked** instead of the expected Load Factor.
 
-**Outbound cost per passenger: EUR 1,621.51**
-
-***
-
-#### Homebound flight
-
-**Departure:** 16 May 2026
+Assume:
 
 * Guaranteed seats: **174**
-* Cost per guaranteed seat: **EUR 1,283.00**
-* Actual booked passengers: **173**
-* Tax: **EUR 0.00**
+* Cost per guaranteed seat: **1,283.00**
+* Total flight cost: **174 × 1,283.00 = 223,242.00**
+* Actual passengers booked: **171**
 
-**Guaranteed commitment**
+The actual passenger cost is:
 
-174 × EUR 1,283.00 = **EUR 223,242.00**
+**223,242.00 ÷ 171 = 1,305.51**
 
-**Cost allocated per passenger**
+Therefore, after departure, the actual passenger cost is **1,305.51 per passenger**.
 
-EUR 223,242.00 ÷ 173 = **EUR 1,290.42**
+#### Difference between the two calculations
 
-**Final homebound cost**
+|                            |     Before departure |          After departure |
+| -------------------------- | -------------------: | -----------------------: |
+| Calculation basis          | Expected Load Factor | Actual passengers booked |
+| Expected/actual passengers |                  157 |                      171 |
+| Total flight cost          |           223,242.00 |               223,242.00 |
+| Passenger cost             |             1,422.56 |                 1,305.51 |
+| Cost type                  |            Estimated |                   Actual |
 
-EUR 1,290.42 + EUR 0.00 = **EUR 1,290.42**
-
-**Homebound cost per passenger: EUR 1,290.42**
-
-***
-
-### Round-trip cost
-
-The two flight costs are added together:
-
-**EUR 1,621.51 + EUR 1,290.42 = EUR 2,911.93**
-
-Therefore:
-
-**Round-trip transport cost per passenger = EUR 2,911.93**
-
-#### Cost for two passengers
-
-For a booking containing two passengers:
-
-**EUR 2,911.93 × 2 = EUR 5,823.86**
-
-After rounding:
-
-**Total transport cost = EUR 5,824**
+The key difference is that **before departure, the calculation uses projected sales based on the Load Factor, while after departure, it uses the actual number of passengers booked**. Therefore, the post-departure calculation represents the actual cost per passenger for the flight.
 
 ***
 
 ### When is the cost updated on the booking?
 
-The transport cost on the booking is based on the cost calculated for the relevant Real Transport departures and is update when the cost is changed.
+The transport cost on the booking is based on the cost calculated for the relevant Real Transport departures and is updated when the cost is changed.
+
+When the cost of a **Departure** is modified, the updated cost is not applied to the related bookings immediately.
+
+A background service runs at a configurable interval, **30 minutes by default**, and recalculates:
+
+* all **Pricelists** linked to the affected **Real Transport**
+* all **Bookings** that use that **Real Transport**
+
+The **30-minute interval is configurable per company**.
+
+The total time required to complete the recalculation depends on the number of records that need to be processed. A large number of affected **Pricelists and Bookings** can increase the time required for the service to complete the update.
+
+Therefore, the cost update on a booking may not be immediate. The booking is updated when the background recalculation service processes the affected records.
