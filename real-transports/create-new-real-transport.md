@@ -56,15 +56,15 @@ The configuration screen contains two sections:
 
 ***
 
-**Departure** \* - Specifies the transport departure location.
+**Departure** \* - Specifies the transport departure airport.
 
-* Select an existing departure location from the dropdown list. (**Example: Stockholm)**
+* Select an existing departure airport from the dropdown list. (**Example: Stockholm)**
 
 ***
 
-**Arrival** \* - Specifies the transport destination.
+**Arrival** \* - Specifies the transport destination airport.
 
-* Select an existing arrival location. (**Example: Barcelona)**
+* Select an existing arrival airport. (**Example: Barcelona)**
 
 ***
 
@@ -131,7 +131,7 @@ When a booking is created with a **child transport**, the seat usage is deducted
 * the **child transport allotment**, and
 * the relevant **parent transport allotment(s)**
 
-Outbound and homebound can come from different parents, and the docs explicitly note both legs are booked from the correct parent sets on the correct departure/return dates.
+The **outbound Real Transport** uses one Real Transport, while the **homebound Real Transport** uses another. Therefore, they always have **different parent Real Transports**.
 
 See: [Allotments](https://manual.tourpaq.com/transport/transport/allotments)
 
@@ -145,7 +145,6 @@ If you use **shared layouts** (parent/child):
 
 * Select the **same layout as the parent** in the child’s **Layout tab**
 * Seats/occupancy stays synchronized both ways (child booking shows occupied on parent and vice-versa)
-* Enable **Automatic Seating** for each child transport
 
 See: [Transport Layouts](https://manual.tourpaq.com/transport-layouts)
 
@@ -156,7 +155,6 @@ See: [Layout](https://manual.tourpaq.com/real-transports/layout)
 #### 3) Cost (how seat prices are calculated) <a href="#undefined" id="undefined"></a>
 
 * Seat **cost price per seat** is derived from **transport allotments** (guaranteed seats, pro rates, free/booked intervals) and **tax**, per the algorithm in the Transport Dashboard.
-* If **Simple cost** is enabled, that detailed allotment-based explanation is bypassed.
 
 See: [Transport Dashboard](https://manual.tourpaq.com/transport-dashboard)
 

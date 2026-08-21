@@ -44,8 +44,26 @@ Use these filters at the top of the page:
 #### Buttons and actions
 
 * **Create** – Opens a new line to create a departure manually.
-* **Send Flight Change** – Sends updated flight details to connected systems. It also saves your edits.
+* **Send Flight Change** – Sends updated flight details to connected systems. It also saves your edits.&#x20;
+
+{% hint style="info" %}
+When a flight change is submitted, a **notification email** is sent to the guest.
+
+* The email contains a **confirmation link** for the guest to acknowledge the change.
+
+If the guest **does not confirm receipt**, the system will:
+
+* **Resend the email** several times.
+* Then, **send an SMS reminder** asking the guest to check their email and confirm the change.
+
+Within the system, it is easy to identify guests who **have not yet confirmed** receipt.
+
+If no confirmation is received after multiple attempts, the flight change is **forwarded to a service email**, allowing the team to take further action (such as calling the passenger).
+{% endhint %}
+
 * **Queue Flight Change** – Saves your edits and puts the change in a queue for later processing.
+
+See [Flight Change](../../flight-change/)
 
 ### Select rows (row selector)
 
