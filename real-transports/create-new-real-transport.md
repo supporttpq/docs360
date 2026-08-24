@@ -213,15 +213,23 @@ Enter the number of hours before departure when the system should execute seat a
 
 ***
 
-**Email Address(es)** - Specifies recipients who should receive notifications related to automatic seating.
-
-**Instructions**
-
-Enter one or more email addresses.
-
-Multiple email addresses can be separated by comma.
+**Email Address(es)** - Enter one or more email addresses (separated by commas). After automatic seating is completed, a report is sent to the listed recipients, based on the chosen reporting type.
 
 **Example:** operations@company.com, transport@company.com
+
+When **Automatic Seating** finishes, the system sends **one “seating report” by email** to the recipients you configured under **Transport → (Automatic Seating) → Email address(es)** — and the exact report format is **based on the transport’s chosen reporting type** ([Automatic Seating](https://manual.tourpaq.com/transport/transport/automatic-seating)).
+
+Common reporting types you can get via this email-based passenger reporting include:
+
+* **Passenger name list (Air)** — generates a **PDF** sent via email to the airline ([Communication](https://manual.tourpaq.com/transport/transport/communication))
+* **Passenger list with addresses**
+* **Inflight**
+* **Bus Feed**
+* **Gate Gourmet**
+* **Infection Detection**
+* **AirSeven Full**
+
+These reporting “list types” are described as **alternative reporting types** for passenger list sending via transport reporting ([Transport Reporting](https://manual.tourpaq.com/transport/transport/transport-reporting)).
 
 ***
 

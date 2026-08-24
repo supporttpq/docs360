@@ -109,3 +109,19 @@ For the departure on **26-06-2026**:
 * Seat availability is controlled by the layout.
 * Passenger manifests include assigned seat numbers.
 * Automatic seating can allocate remaining passengers to free seats.
+
+#### Parent/child transports <a href="#undefined" id="undefined"></a>
+
+Parent/child transports let you **link one transport to another** so they can share operational setup. Configure the link on the **child transport** (via the **Parent** field in Real Transports). See [Create New Real Transport](https://manual.tourpaq.com/real-transports/create-new-real-transport) for the **Parent** field.
+
+#### Shared seat layout <a href="#undefined" id="undefined"></a>
+
+If you use **parent-child transports**, you can **share the same seat layout**.
+
+{% hint style="info" %}
+On the **child transport** you can select layout only for departures that are not attached to a parrent. If the departures are the same with the departures from the parent, the layout will not be available to be selected.
+{% endhint %}
+
+Result:
+
+* Seats selected in a booking using the **child** transport show as occupied in bookings using the **parent** transport — and vice versa.
