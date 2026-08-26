@@ -23,11 +23,27 @@ New features, performance improvments and automation enhancements to help you wo
 
 
 
-### Release symbols
+{% columns %}
+{% column %}
+Every release below is grouped by month, with tags for new features, improvements, and documentation updates.\
+<br>
+{% endcolumn %}
 
-* 🟢 **New** — New feature or page added.
-* 🔵 **Improved** — Enhancement / Update to an existing feature.
-* 📄 **Docs** — Documentation added or updated with no product change.
+{% column %}
+**Categories**\
+🆕 New Features — 10\
+🔧 Improvements — 15\
+📄 Docs — 8\
+\
+**Legend**\
+🟢 New — new feature or page added\
+🔵 Improved — enhancement to an existing feature\
+📄 Docs — documentation added or updated, no product change\
+\
+**🎧 Need help?**\
+Can't find a feature or spotted a bug? [Contact support](#user-content-fn-1)[^1]
+{% endcolumn %}
+{% endcolumns %}
 
 {% updates format="full" %}
 {% update date="2026-06-09" %}
@@ -97,10 +113,4 @@ A release entry marked **📄 Docs** means the manual changed, but the product b
 * [Getting Started with Tourpaq](<../README (1).md>)
 * [Onboard a new employee (Tourpaq Office access)](../users/users/onboard-a-new-employee-tourpaq-office-access.md)
 
-{% hint style="info" %}
-🎧 **Need help?**
-
-Can't find a feature or spotted a bug?
-
-[Contact support →](mailto:support@tourpaq.com)
-{% endhint %}
+[^1]: [mailto:support@tourpaq.com](mailto:support@tourpaq.com)
