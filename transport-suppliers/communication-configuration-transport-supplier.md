@@ -27,9 +27,13 @@ Transport **Supplier → \[Transport Supplier Name] → Communication tab**
 
 ### Field descriptions
 
+<figure><img src="../.gitbook/assets/26.08.2026_09.19.52_REC.png" alt=""><figcaption></figcaption></figure>
+
 | Field                                 | Description                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Out/Home**                          | Select the direction of the transport communication: `Outbound` or `Homebound`.                                                                                                                                                                                                                                                                                                                                                                 |
+| **Departure**                         | <p></p><p> Restrict the communication rule to transports departing from specific departure points.</p><blockquote><p><strong>Tooltip:</strong> Only transports with matching departure will use the specified communication rule.</p></blockquote>                                                                                                                                                                                              |
+| **Arrival**                           | <p></p><p>Restrict the communication rule to transports arriving at specific arrival points.</p><blockquote><p><strong>Tooltip:</strong> Only transports with matching arrival (or Alternative arrival is set) will use the specified communication rule.</p></blockquote>                                                                                                                                                                      |
 | **Hour**                              | Set the scheduled hour (HH:MM) for communication dispatch.                                                                                                                                                                                                                                                                                                                                                                                      |
 | **Reporting Type**                    | Choose the reporting format. Example: `Paxport`.                                                                                                                                                                                                                                                                                                                                                                                                |
 | **Minutes B.D.**                      | Set the minutes before departure when the communication should be triggered.                                                                                                                                                                                                                                                                                                                                                                    |
@@ -57,17 +61,121 @@ Transport **Supplier → \[Transport Supplier Name] → Communication tab**
 
 ***
 
+## Communication Configuration
+
+Transport Supplier communication rules define how transport reporting is sent to transport suppliers. Communication rules can be configured for specific transport conditions so that the correct information is sent to the appropriate recipient.
+
+### Communication Filters
+
+In **Transport > Transport Supplier > Communication**, communication configurations can be filtered by **OUT/HOME**, **Departure**, and **Arrival**.
+
+The **Departure** and **Arrival** filters are optional. When they are configured, the communication rule is applied only to transports matching the selected departure and/or arrival points.
+
+#### Departure
+
+Use this field to restrict the communication rule to transports departing from specific departure airport.
+
+> **Tooltip:** Only transports with matching departure will use the specified communication rule.
+
+Multiple departure airports can be selected for the same communication rule.
+
+<figure><img src="../.gitbook/assets/26.08.2026_09.28.10_REC.png" alt=""><figcaption></figcaption></figure>
+
+The departure selector uses the standard multi-select interface and supports the **Show code** option. Enable **Show code** to display the code associated with each departure point, making it easier to identify the required departure when multiple points have similar names.
+
+If no departure is selected, the communication rule is not restricted by departure.
+
+#### Arrival
+
+Use this field to restrict the communication rule to transports arriving at specific arrival airport.
+
+> **Tooltip:** Only transports with matching arrival (or Alternative arrival is set) will use the specified communication rule.
+
+Multiple arrival points can be selected for the same communication rule.
+
+<figure><img src="../.gitbook/assets/26.08.2026_09.29.55_REC.png" alt=""><figcaption></figcaption></figure>
+
+The arrival selector uses the standard multi-select interface and supports the **Show code** option. Enable **Show code** to display the code associated with each arrival point.
+
+If no arrival is selected, the communication rule is not restricted by arrival.
+
+### How Departure and Arrival Filters Affect Reporting
+
+When transport reporting is generated, the configured communication filters determine which communication rule can be used for a transport.
+
+For a rule with a configured **Departure**, only transports with a matching departure are eligible to use that communication rule.
+
+For a rule with a configured **Arrival**, only transports with a matching arrival are eligible. If an **Alternative arrival** is configured for the transport, the alternative arrival is also considered when is used the Arrival filter.
+
+When both **Departure** and **Arrival** are configured, the transport must satisfy both filters for the communication rule to apply.
+
+If either field is left empty, that field does not restrict the communication rule.
+
+#### Supported Transport Types
+
+The Departure and Arrival filters apply to transport reporting for:
+
+* **Real Transports**
+* **Charter Transports (normal Transports)**
+
+This allows reporting to be limited to the airport-specific transport information required for each departure and arrival.
+
+### Example
+
+Assume a transport supplier receives different reporting for transports operating through different airports.
+
+A communication rule can be configured as follows:
+
+| OUT/HOME | DEPARTURE | ARRIVAL  |
+| -------- | --------- | -------- |
+| Outbound | Billund   | Tenerife |
+
+The rule is used only for transports matching:
+
+* **OUT/HOME:** Outbound
+* **Departure:** Billund
+* **Arrival:** Tenerife
+
+A transport departing from another airport does not match this communication rule, even if its arrival is Tenerife.
+
+Similarly, a transport arriving at another airport does not match the rule, even if its departure is Billund.
+
+If multiple departures or arrivals are selected, a transport can match any of the selected values for that filter.
+
+### Multi-Select and Show Code
+
+The **DEPARTURE** and **ARRIVAL** fields support multiple selections.
+
+Use the multi-select dialog to:
+
+1. Open the Departure or Arrival selector.
+2. Select one or more values.
+3. Optionally enable **Show code** to display the corresponding codes.
+4. Confirm the selection.
+
+The **Show code** option only changes how the values are displayed in the selector. It does not change the filtering behavior.
+
+### Configuration Behavior
+
+The filters are optional and can be used independently or together:
+
+| Departure      | Arrival        | Result                                                                         |
+| -------------- | -------------- | ------------------------------------------------------------------------------ |
+| Not configured | Not configured | The rule is not restricted by departure or arrival.                            |
+| Configured     | Not configured | Only transports matching a selected departure use the rule.                    |
+| Not configured | Configured     | Only transports matching a selected arrival use the rule.                      |
+| Configured     | Configured     | Only transports matching both the selected departure and arrival use the rule. |
+
+These filters allow transport supplier communication rules to be configured with airport-specific conditions, ensuring that transport reporting is sent using the appropriate communication configuration.
+
 ### Deleting a rule
 
 For the rule, click the trash bin icon. A confirmation prompt appears.
 
-***
-
-***
+<figure><img src="../.gitbook/assets/26.08.2026_09.36.13_REC.png" alt=""><figcaption></figcaption></figure>
 
 ### Notes
 
 * **Resend** only works when **ADL (Adding Deletion List for A7)** is selected.
-* **FTP System** requires a matching configuration in **System Setup FTP**.
+* **FTP System** requires a matching configuration in [**System Setup FTP**](../setup/system-setup-ftps.md).
 * Select **Stop Sale** only when the communication rule must trigger a stop sale.
-* Use clear **Subject** values to distinguish supplier communications.
