@@ -2,9 +2,14 @@
 
 ## How to use a Board Type
 
-{% hint style="warning" %}
-Screenshots pending update - every screenshot below still uses the Half Board example flagged as confusing in THT-61637. Before this page goes live, recapture them using a Breakfast (BB) Board Basis extra with an All Inclusive Board Supplement extra. The Open Webbooking step's image also needs a fresh screenshot regardless of example, since it currently duplicates the price list image and does not show Webbooking.
-{% endhint %}
+### Overview
+
+This page walks through a complete example of setting up and using a [.](./ "mention"), from initial configuration through to how it appears on a booking and its ticket.
+
+The example covers two parts:
+
+* **Setup** — creating the Hotel Allotment, the Extras Category, and the Board Basis and Board Supplement extras that represent the board type.
+* **Booking** — searching Webbooking, adding a passenger, and confirming how the board type and any Board Supplement upgrade appear on the booking and the generated ticket.
 
 ### 1. Create a Hotel Allotment
 
