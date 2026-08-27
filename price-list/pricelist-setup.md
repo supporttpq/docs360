@@ -196,7 +196,7 @@ Below the filters are the following tabs:
 
 **Column filters** – Controls which columns show in **Prices**. Unchecked fields are hidden.
 
-<figure><img src="../.gitbook/assets/image (633).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/27.08.2026_10.18.37_REC.png" alt=""><figcaption></figcaption></figure>
 
 Filter categories:
 

@@ -387,10 +387,12 @@ At the beginning of each row, there are tree icons:
 
 #### Column Filters <a href="#column-filters" id="column-filters"></a>
 
-<figure><img src="../.gitbook/assets/image (33) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/27.08.2026_10.18.37_REC.png" alt=""><figcaption></figcaption></figure>
 
 **Column Filters** allow you to display specific portions of information from the Price List grid.
 
+* **F** - Check to see the final prices. The final price includes discounts, supplements, and handling.
+* **P** - Check to see the price list (P). The price list prices are the prices based on cost/profit, or set directly.
 * Each **interval group** has a corresponding checkbox: **Interval 1 (P1), Interval 2 (P2), Interval 3 (P3), Interval 4 (P4)**.
 * Example: If **ALL PRICES (P1, P2, P3, P4)** is checked and **Interval 1** is selected as the active filter, only the **P1** column will be displayed in the table.
 * Columns **not grouped into intervals** are always shown by default.

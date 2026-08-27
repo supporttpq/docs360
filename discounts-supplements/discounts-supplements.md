@@ -31,7 +31,9 @@ Each discount/supplement is defined with the following information:
 
 ### Combination rules <a href="#discounts-and-supplements-combinations-in-tourpaq" id="discounts-and-supplements-combinations-in-tourpaq"></a>
 
-(Please set them as you will see them here, as other combinations are not defined or supported in Tourpaq)
+{% hint style="warning" %}
+Please set them as you will see them here, as other combinations are not defined or supported in Tourpaq
+{% endhint %}
 
 **Specificate** + **Permanent** = **AUTOMATIC** (always on the booking, cannot be changed)
 
@@ -133,7 +135,7 @@ The entities having this checkbox active will:
 * Only one book/person:
 * Available for first passenger in room: only the first passenger in the room will receive the disc/suppl
 * Don't display in Api:
-* Passengers no. to apply discount to: number of passengers in a booking that can benefit from the disc/suppl (only if //Available for first pass// is checked) !!NOTE: The discount is applied only for adults. The children doesn't count.
+* Passengers no. to apply discount to: number of passengers in a booking that can benefit from the disc/suppl. If "Passengers no. to apply discount to" has a value, the discount applies to the first N passengers in the booking regardless of that checkbox.
 * Auto Select in Bkg Wnd:
 * Not combine with disc: if checked, the disc/suppl will not allow any other disc/suppl in the booking
 * Not combine with extra bed disc: if checked, the disc/suppl wil not allow the extra bed discount to be given, also this rule applies to child price(CH1 in pricelist). Discount will remove all extra beds from the booking even if it is applied to only one pax.
