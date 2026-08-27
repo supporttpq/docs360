@@ -70,9 +70,7 @@ Only the text fields are translated. The board type code and list name remain th
 
 ### Field descriptions
 
-#### Name
-
-**Name \*** is the internal name of the board type.
+**Name** - is the internal name of the board type.
 
 This value is used throughout Tourpaq when selecting a board type during hotel contract configuration.
 
@@ -83,21 +81,13 @@ This value is used throughout Tourpaq when selecting a board type during hotel c
 | All Inclusive | Displayed as the board type in configuration screens |
 | Breakfast     | Used when assigning breakfast to hotel rooms         |
 
-#### Code
-
-**Code \*** is the unique identifier for the board type.
+**Code** - is the unique identifier for the board type.
 
 The code is primarily used internally by the system and integrations. It should be short, unique, and should not be changed after the board type has been used in hotel contracts.
 
-**Example:**
+**Example: ALLINC**
 
-```
-ALLINC
-```
-
-#### List Name
-
-**List Name \*** is the customer-facing name shown in selection lists and dropdown menus.
+**List Name** - is the customer-facing name shown in selection lists and dropdown menus.
 
 **Example:**
 
@@ -106,9 +96,7 @@ ALLINC
 | All Inclusive | All Inclusive |
 | Breakfast     | Breakfast     |
 
-#### Description
-
-**Description** provides additional information about what the board type includes.
+**Description** - provides additional information about what the board type includes.
 
 This text can be displayed in customer-facing areas such as web booking or travel documents, depending on system configuration.
 
