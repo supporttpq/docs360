@@ -326,21 +326,7 @@ After performing a search, the **Price List** results are displayed in a table f
 
 Column titles are abbreviated to keep the table tidy. Most fields include **tooltips** that display the full column name. Below is a full list of columns with explanations:
 
-| Column        | Description                                                                                                                                                                                                                                                                                                                                      |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **PLTA ID**   | Price List Unique Identifier. Double-clicking the ID redirects to the **Web Booking Page** for the specific booking configuration.                                                                                                                                                                                                               |
-| **Hotel**     | Hotel Code corresponding to the booking configuration.                                                                                                                                                                                                                                                                                           |
-| **Room**      | Room Code corresponding to the booking configuration.                                                                                                                                                                                                                                                                                            |
-| **Dep. Date** | Departure date for the booking configuration.                                                                                                                                                                                                                                                                                                    |
-| **STAYS**     | Length of stay for interval 1 of the transport.                                                                                                                                                                                                                                                                                                  |
-| **FHA**       | Free Hotel Allotment – Number of rooms available for this departure. Default value represents a one-week trip (interval 1). Hover displays allotments for 1, 2, 3, or 4 weeks.                                                                                                                                                                   |
-| **FTA**       | Free Transport Allotment – Number of transport seats available. Default represents a one-week round trip. Hover displays available seats for 1, 2, 3, or 4 weeks round trip, as well as one-way outbound and inbound trips.                                                                                                                      |
-| **P1**        | Price for Interval 1.                                                                                                                                                                                                                                                                                                                            |
-| **P2**        | Price for Interval 2.                                                                                                                                                                                                                                                                                                                            |
-| **P3**        | Price for Interval 3.                                                                                                                                                                                                                                                                                                                            |
-| **P4**        | Price for Interval 4.                                                                                                                                                                                                                                                                                                                            |
-| **CH1**       | Child Price Interval 1 – Price for a child occupying an extra bed. Calculated using an extra bed discount applied to the Grundprins (base price).                                                                                                                                                                                                |
-| **Status**    | <p>Guarantee Availability of the PLTA (Transport + Hotel). Possible statuses:<br>- <strong>GREEN</strong> – Both transport and hotel have guaranteed allotments.<br>- <strong>YELLOW</strong> – One of transport or hotel lacks Guarantee Availability.<br>- <strong>PINK</strong> – Neither transport nor hotel has Guarantee Availability.</p> |
+<table><thead><tr><th width="374">Column</th><th>Description</th></tr></thead><tbody><tr><td><strong>PLTA ID</strong></td><td>Price List Unique Identifier. Double-clicking the ID redirects to the <strong>Web Booking Page</strong> for the specific booking configuration.</td></tr><tr><td><strong>Hotel</strong></td><td>Hotel Code corresponding to the booking configuration.</td></tr><tr><td><strong>Room</strong></td><td>Room Code corresponding to the booking configuration.</td></tr><tr><td><strong>Dep. Date</strong></td><td>Departure date for the booking configuration.</td></tr><tr><td><strong>STAYS</strong></td><td>Length of stay for interval 1 of the transport.</td></tr><tr><td><strong>FHA</strong></td><td>Free Hotel Allotment – Number of rooms available for this departure. Default value represents a one-week trip (interval 1). Hover displays allotments for 1, 2, 3, or 4 weeks.</td></tr><tr><td><strong>FTA</strong></td><td>Free Transport Allotment – Number of transport seats available. Default represents a one-week round trip. Hover displays available seats for 1, 2, 3, or 4 weeks round trip, as well as one-way outbound and inbound trips.</td></tr><tr><td><strong>P1</strong></td><td>Price for Interval 1.</td></tr><tr><td><strong>P2</strong></td><td>Price for Interval 2.</td></tr><tr><td><strong>P3</strong></td><td>Price for Interval 3.</td></tr><tr><td><strong>P4</strong></td><td>Price for Interval 4.</td></tr><tr><td><strong>CH1</strong></td><td>Child Price Interval 1 – Price for a child occupying an extra bed. Calculated using an extra bed discount applied to the Grundprins (base price).</td></tr><tr><td><strong>Status</strong></td><td>Guarantee Availability of the PLTA (Transport + Hotel). Possible statuses:<br>- <strong>GREEN</strong> – Both transport and hotel have guaranteed allotments.<br>- <strong>YELLOW</strong> – One of transport or hotel lacks Guarantee Availability.<br>- <strong>PINK</strong> – Neither transport nor hotel has Guarantee Availability.</td></tr><tr><td><strong>FP</strong></td><td>Final price. Price including discounts, supplements, and handling. Price per person, based on the number of adults from <strong>Ordinary beds</strong>.</td></tr><tr><td><strong>FD</strong></td><td>Final discount price. Price including discounts, supplements, and handling. Price per person, based on the number of adults from <strong>Ordinary beds</strong>.</td></tr><tr><td><strong>FG</strong></td><td>Final group price. Price including discounts, supplements, and handling. Price per person, based on the number of adults from <strong>Ordinary beds</strong>.</td></tr><tr><td><strong>FCH1P</strong></td><td>Final child 1 price. Price including discounts, supplements, and handling. Price per person.</td></tr><tr><td><strong>FCH1D</strong></td><td>Final child 1 discount price. Price including discounts, supplements, and handling. Price per person.</td></tr><tr><td><strong>FCH2P</strong></td><td>Final child 2 price. Price including discounts, supplements, and handling. Price per person.</td></tr><tr><td><strong>FCH2D</strong></td><td>Final child 2 discount price. Price including discounts, supplements, and handling. Price per person.</td></tr><tr><td><strong>FCH</strong></td><td>Final child price. Price including discounts, supplements, and handling. Price per person.</td></tr></tbody></table>
 
 ### Change Price Functionality <a href="#price-list-history" id="price-list-history"></a>
 
@@ -387,15 +373,44 @@ At the beginning of each row, there are tree icons:
 
 #### Column Filters <a href="#column-filters" id="column-filters"></a>
 
+The Price List column selector allows users to choose which price types and intervals are displayed.
+
 <figure><img src="../.gitbook/assets/27.08.2026_10.18.37_REC.png" alt=""><figcaption></figcaption></figure>
 
 **Column Filters** allow you to display specific portions of information from the Price List grid.
 
-* **F** - Check to see the final prices. The final price includes discounts, supplements, and handling.
-* **P** - Check to see the price list (P). The price list prices are the prices based on cost/profit, or set directly.
+* **F** - Select **F** to display the Final Prices for the selected price groups. When F is selected, the corresponding Final Price columns are displayed.
+* **P** - Select **P** to display the original Price List Prices.&#x20;
 * Each **interval group** has a corresponding checkbox: **Interval 1 (P1), Interval 2 (P2), Interval 3 (P3), Interval 4 (P4)**.
 * Example: If **ALL PRICES (P1, P2, P3, P4)** is checked and **Interval 1** is selected as the active filter, only the **P1** column will be displayed in the table.
 * Columns **not grouped into intervals** are always shown by default.
+
+### Saving the column configuration
+
+The selected Price List columns are saved **per browser**.
+
+When the Price List is opened again, it uses the column configuration from the previous session.
+
+The system no longer automatically loads the left-most saved view when opening the Price List.
+
+This means users can keep the configuration they normally use without having to select the required columns every time.
+
+The saved configuration includes:
+
+* F / Final Price selection
+* P / Price List Price selection
+* Price groups
+* Interval selections
+
+#### Example
+
+A yield user who normally works with Final Prices for intervals 1 and 2 can configure:
+
+**F → PRICES → DISCOUNTS → I1 → I2**
+
+After saving the configuration, the same columns are displayed when the Price List is opened again in the same browser.
+
+📸 **PHOTO: Add a screenshot showing the configured columns, followed by a screenshot of the Price List reopened with the same configuration.**
 
 #### Discounts <a href="#discounts" id="discounts"></a>
 
