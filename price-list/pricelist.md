@@ -455,3 +455,279 @@ This function allows prices to be **automatically recalculated when the Transpor
 * Example: If **P1** was previously updated using the **Also Update Prices on Transports** tool, and the **Transport Price** is modified, **P1** will be recalculated accordingly based on the price list for that transport.
 
 ![!](https://docs.tourpaq.com/assets/images/updatePriceBasedOnTransport-b76eb367aade9faa3c6b2428cdd5760c.png)
+
+## How Final Prices are calculated
+
+The Final Price is the **price per person for a booking**, including:
+
+* Discounts
+* Supplements
+* Handling
+
+It does not include extras.
+
+The calculation is designed to reproduce the price that will appear on the web for the same package configuration.
+
+### Adult price calculation
+
+The calculation uses a standard booking configuration based on the room.
+
+#### Number of passengers
+
+The number of adult passengers is taken from the room's:
+
+**Ordinary beds**
+
+For example:
+
+* Ordinary beds = 1 → calculation uses 1 adult
+* Ordinary beds = 2 → calculation uses 2 adults
+* Ordinary beds = 3 → calculation uses 3 adults
+
+#### Adult age
+
+The adult passengers use the age configured as:
+
+**System Setup → Other Settings → Default Adult Age**
+
+If **Default Adult Age** is not configured, the calculation uses age **99**.
+
+#### Price per person
+
+The total calculated booking price is divided by the number of ordinary beds:
+
+**Final Price = Total booking price ÷ Number of ordinary beds**
+
+The same approach is used for the Final P and Final D prices.
+
+***
+
+### Child price calculation
+
+Child Final Prices are calculated using a booking configuration containing up to two children.
+
+The adult configuration remains the same as for the adult calculation.
+
+The child age used for the calculation is:
+
+**Max Child Age ÷ 2**
+
+This age is used to create the child booking scenario used for the Final Child Price calculation.
+
+#### Example
+
+If:
+
+**Max Child Age = 12**
+
+then:
+
+**Child age used for the calculation = 12 ÷ 2 = 6**
+
+The system uses a child passenger with age 6 when calculating the Final Child Price.
+
+📸 **PHOTO: Add a screenshot of System Setup → Other Settings showing Default Adult Age and, if available in the relevant configuration, Max Child Age.**
+
+***
+
+## Example: Supplement
+
+Consider a double room with:
+
+* Ordinary beds: 2
+* Price List P1: 4,000 SEK
+* Room supplement: 200 SEK
+* No discounts
+* No handling fee
+
+The Price List P1 remains:
+
+**P1 = 4,000 SEK**
+
+The Final Price calculation includes the supplement.
+
+The resulting Final Price is calculated from the booking price after the supplement is applied.
+
+The important distinction is:
+
+| Price      | Value                          |
+| ---------- | ------------------------------ |
+| P1         | 4,000 SEK                      |
+| Supplement | +200 SEK                       |
+| FP1        | Calculated final selling price |
+
+The **P1 value is not changed** to 4,200 SEK.
+
+Instead, **FP1** represents the calculated final selling price.
+
+📸 **PHOTO: Add a screenshot showing the room supplement configuration and the corresponding FP1 value in the Price List.**
+
+***
+
+## Example: Discount
+
+Consider a trip with:
+
+* Price List P1: 5,000 SEK
+* Discount: 500 SEK
+* No supplements
+* No handling fee
+
+The Price List values remain:
+
+**P1 = 5,000 SEK**
+
+The discount is included when calculating the Final Discount Price.
+
+The resulting Final Discount Price represents the selling price after the discount has been applied.
+
+| Price    | Value                                   |
+| -------- | --------------------------------------- |
+| P1       | 5,000 SEK                               |
+| Discount | -500 SEK                                |
+| FD1      | Calculated final discount selling price |
+
+Again, the original **P1 and D1 values are not modified**.
+
+The Final Price columns provide the calculated selling price separately.
+
+📸 **PHOTO: Add a screenshot showing the discount/supplement configuration and the corresponding FD1 value in the Price List.**
+
+***
+
+## Final Prices and profit calculation
+
+Profit calculations in the Price List are based on the **Final Price**, rather than the original P/D/G values.
+
+This allows yield users to see the forecasted profit based on the price that the customer will actually pay after applicable discounts, supplements, and handling.
+
+The profit columns include:
+
+| Column   | Description                                                                |
+| -------- | -------------------------------------------------------------------------- |
+| **PP**   | Profit forecast based on the final price. For one pax. Interval n          |
+| **PD**   | Profit forecast based on the final discount price. For one pax. Interval n |
+| **PG**   | Profit forecast based on the final group price. For one pax. Interval n    |
+| **PCH1** | Profit forecast based on the final child 1 price. For one pax. Interval n  |
+| **PCH2** | Profit forecast based on the final child 2 price. For one pax. Interval n  |
+
+The child profit columns PCH1 and PCH2 are handled by the child price adjustment functionality.
+
+The tooltip on the profit column heading explains that the forecast is based on the corresponding Final Price.
+
+***
+
+## PD tooltip
+
+The tooltip displayed for a PD price explains the costs and adjustments included in the price.
+
+The tooltip includes:
+
+| Item            | Description                           |
+| --------------- | ------------------------------------- |
+| **Discounts**   | The sum of all eligible discounts     |
+| **Supplements** | The sum of all eligible supplements   |
+| **Handling**    | The sum of all eligible handling fees |
+
+This makes it possible to understand why the Final Price differs from the original Price List Price.
+
+📸 **PHOTO: Add a screenshot with the PD tooltip open and the Discounts, Supplements and Handling entries visible.**
+
+***
+
+## When Final Prices are calculated
+
+Final Prices are calculated together with the other Price List prices.
+
+For example:
+
+* When a P price is calculated or updated, the corresponding FP price is also calculated.
+* When a D price is calculated or updated, the corresponding FD price is also calculated.
+* When a G price is calculated or updated, the corresponding FG price is also calculated.
+* The same principle applies to the applicable child prices.
+
+This keeps the Final Price values synchronized with the underlying Price List.
+
+***
+
+## Booking window
+
+The booking window uses Final Prices in the hotel selection dialogs.
+
+This ensures that salespeople see the same price calculation that will be used for the booking.
+
+The following dialogs use Final Prices:
+
+#### Select Hotel
+
+
+
+#### Select Room
+
+The **Select Room** dialog uses the corresponding Final Prices.
+
+The displayed price headings are:
+
+* FP
+* FD
+* FG
+
+📸 **PHOTO: Add a screenshot of the Select Room dialog showing the Final Price columns.**
+
+#### Select Independent Hotel
+
+The **Select Independent Hotel** dialog also uses Final Prices.
+
+The displayed price headings are:
+
+* FP
+* FD
+* FG
+
+📸 **PHOTO: Add a screenshot of the Select Independent Hotel dialog showing the Final Price columns.**
+
+***
+
+## Booking price including extras
+
+Final Prices do not include extras.
+
+When the complete booking price is required, including extras, the system provides access to the booking price calculated through the Elastic API.
+
+The calculation is available for a **2-pax booking** and provides a quick way to verify the booking price without manually creating a test booking.
+
+This is useful when a customer asks for the expected booking price and the package contains additional extras.
+
+#### Example
+
+A package can have:
+
+* Final Price: 4,500 SEK
+* Supplement: included in Final Price
+* Discount: included in Final Price
+* Handling: included in Final Price
+* Extra: 300 SEK
+
+The Final Price remains:
+
+**4,500 SEK**
+
+The complete booking price including the extra is:
+
+**4,800 SEK**
+
+The complete amount should be checked using the booking price calculation rather than the Final Price column.
+
+***
+
+## Recommended workflow
+
+Use the following workflow when checking whether the Price List reflects the customer selling price:
+
+1. Open the **Price List**.
+2. Select **F** in the column selector.
+3. Select the required price group, such as **PRICES** or **DISCOUNTS**.
+4. Select the required interval.
+5. Review the corresponding Final Price.
+6. If necessary, open the booking window and compare the price shown in the hotel dialogs.
+7. If extras need to be included, use the booking price calculation to verify the complete booking price.
