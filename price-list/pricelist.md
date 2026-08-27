@@ -492,6 +492,8 @@ The adult passengers use the age configured as:
 
 If **Default Adult Age** is not configured, the calculation uses age **99**.
 
+<figure><img src="../.gitbook/assets/27.08.2026_14.20.21_REC.png" alt=""><figcaption></figcaption></figure>
+
 #### Price per person
 
 The total calculated booking price is divided by the number of ordinary beds:
@@ -516,17 +518,13 @@ This age is used to create the child booking scenario used for the Final Child P
 
 #### Example
 
-If:
+If: **Max Child Age = 12**
 
-**Max Child Age = 12**
-
-then:
-
-**Child age used for the calculation = 12 ÷ 2 = 6**
+then: **Child age used for the calculation = 12 ÷ 2 = 6**
 
 The system uses a child passenger with age 6 when calculating the Final Child Price.
 
-📸 **PHOTO: Add a screenshot of System Setup → Other Settings showing Default Adult Age and, if available in the relevant configuration, Max Child Age.**
+<figure><img src="../.gitbook/assets/27.08.2026_14.23.04_REC.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -560,8 +558,6 @@ The **P1 value is not changed** to 4,200 SEK.
 
 Instead, **FP1** represents the calculated final selling price.
 
-📸 **PHOTO: Add a screenshot showing the room supplement configuration and the corresponding FP1 value in the Price List.**
-
 ***
 
 ## Example: Discount
@@ -590,8 +586,6 @@ The resulting Final Discount Price represents the selling price after the discou
 Again, the original **P1 and D1 values are not modified**.
 
 The Final Price columns provide the calculated selling price separately.
-
-📸 **PHOTO: Add a screenshot showing the discount/supplement configuration and the corresponding FD1 value in the Price List.**
 
 ***
 
@@ -631,7 +625,7 @@ The tooltip includes:
 
 This makes it possible to understand why the Final Price differs from the original Price List Price.
 
-📸 **PHOTO: Add a screenshot with the PD tooltip open and the Discounts, Supplements and Handling entries visible.**
+<figure><img src="../.gitbook/assets/27.08.2026_16.37.33_REC.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -660,31 +654,11 @@ The following dialogs use Final Prices:
 
 #### Select Hotel
 
-
-
-#### Select Room
-
-The **Select Room** dialog uses the corresponding Final Prices.
-
-The displayed price headings are:
-
-* FP
-* FD
-* FG
-
-📸 **PHOTO: Add a screenshot of the Select Room dialog showing the Final Price columns.**
+<figure><img src="../.gitbook/assets/27.08.2026_14.28.05_REC.png" alt=""><figcaption></figcaption></figure>
 
 #### Select Independent Hotel
 
-The **Select Independent Hotel** dialog also uses Final Prices.
-
-The displayed price headings are:
-
-* FP
-* FD
-* FG
-
-📸 **PHOTO: Add a screenshot of the Select Independent Hotel dialog showing the Final Price columns.**
+<figure><img src="../.gitbook/assets/27.08.2026_14.34.00_REC.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
