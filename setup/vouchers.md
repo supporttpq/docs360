@@ -16,6 +16,67 @@ The automatic process saves time and helps avoid mistakes.
 
 It also ensures bookings meet the required conditions before creating a voucher.
 
+### Requirements
+
+Before an attribute can appear on an Extra Voucher:
+
+* Create the attribute in [extras-attributes.md](../extras-attributes.md "mention").
+* Assign it to the extra in [attributes.md](../extras-setup/extras-general-page/attributes.md "mention").
+* Enable **Appears on voucher** for the attribute.
+* Select the extra for the relevant passenger.
+
+Enable **Is mandatory** when a value is required before voucher generation.
+
+### Attributes on vouchers
+
+#### Overview
+
+Attributes collect information for an extra, such as equipment size or a service day.
+
+#### Purpose
+
+Use attributes when a supplier needs information beyond the selected extra.
+
+For example, a ski-rental supplier can require **Height** and **Start date**. The Extra Voucher then includes these values.
+
+#### Navigation
+
+Use these locations:
+
+* In checkout, select the extra and complete the **Attributers** fields.
+* In Tourpaq Office, open the booking, select **Edit Passenger**, and select the extra.
+* In Extras setup, open **Extras → Extra → Attributes**.
+
+<figure><img src="../.gitbook/assets/28.08.2026_14.17.51_REC.png" alt=""><figcaption></figcaption></figure>
+
+#### Enter data in the booking window
+
+1. In Tourpaq Office, open the booking and select **Passenger Details**.
+2. Select one passenger.
+3. Select the extra in its extra category.
+4.  Enter or select the attribute values shown for that extra.&#x20;
+
+    <figure><img src="../.gitbook/assets/28.08.2026_14.20.11_REC.png" alt=""><figcaption></figcaption></figure>
+5. Click **Save Passenger**.
+
+#### System behavior
+
+* **Automatically Select Default Attribute Value** populates the configured default when enabled.
+* A mandatory attribute without a value blocks Extra Voucher generation.
+* An attribute prints on the Extra Voucher only when **Appears on voucher** is enabled.
+* Changing an attribute after a voucher exists requires voucher regeneration. Select **Regenerate all vouchers** to update all voucher documents.
+
+#### Example
+
+An extra named Ski Rental has these attributes:
+
+* **Height** uses the **Integer** type and has **Is mandatory** enabled.
+* **Start date** uses **display as stay days choices** and has **Appears on voucher** enabled.
+
+During checkout or in **Passenger Details**, the passenger selects Ski Rental. **Attributers** collects Height and Start date.
+
+Tourpaq blocks the Extra Voucher if Height has no value. The voucher prints Start date because **Appears on voucher** is enabled.
+
 ### Types of vouchers
 
 * **Hotel vouchers**
