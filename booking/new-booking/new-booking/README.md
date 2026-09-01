@@ -420,7 +420,7 @@ This section provides comprehensive descriptions of all fields available in the 
 
 #### Hotel Search Dialog Filter Fields
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/01.09.2026_14.20.08_REC.png" alt=""><figcaption></figcaption></figure>
 
 **Resort**
 
@@ -429,7 +429,7 @@ This section provides comprehensive descriptions of all fields available in the 
 * **Description:** Filters hotel search results to show only properties located in the selected resort area.
 * **Data Source:** Active resorts configured in Resort Management linked to the selected destination.
 * **System Behavior:** When selected, only hotels within the chosen resort appear in results. Leave as "All Resorts" to view hotels across all resort areas.
-* **Related Functionality:** Links to Resort configuration. Resorts are defined in Setup module.
+* **Related Functionality:** Links to Resort configuration. Resorts are defined in the Setup module.
 
 **Hotel**
 
@@ -564,21 +564,20 @@ This section provides comprehensive descriptions of all fields available in the 
 * **System Behavior:** Displays current available rooms from Hotel Allotment system. Updates in real-time as bookings are made. Shows minimum availability across all nights in the booking period.
 * **Related Functionality:** Links to Hotel Allotment Management. Availability calculated from allotment data.
 
-**P1 Column (Price Interval 1)**
+**FP1 Column (Final Price Interval 1)**
 
 * **Field Type:** Currency display
 * **Mandatory:** Display only
-* **Description:** Price per person for the first pricing interval configured in the Price List.
+* **Description:** Price per person, based on the number of adults from Ordinary beds. configured in the Price List.
 * **System Behavior:** Shows pricing from Price List for the standard interval. Currency format follows system configuration.
-* **Related Functionality:** Links to Price List configuration. Pricing calculated based on duration and passenger composition.
+* **Related Functionality:** Links to Price List configuration. Price including discounts, supplements, and handling
 
-**D1 / G1 Columns**
+**FD1 / FG1 Columns**
 
 * **Field Type:** Currency display
 * **Mandatory:** Display only
-* **Description:** Discount price (D1) or Group price (G1) per person for the first interval. Alternative pricing tiers available in Price List.
-* **System Behavior:** Shows reduced pricing when discount or group rates are configured. May be empty if no alternative pricing exists.
-* **Related Functionality:** Links to Price List discount and group pricing rules.
+* **Description:** Final Discount price (FD1) - Price including discounts, supplements, and handling. Price per person, based on the number of adults from Ordinary beds.
+* &#x20;Final Group price (FG1) - Price including discounts, supplements, and handling. Price per person, based on the number of adults from Ordinary beds.
 
 **N, D, G Selection Checkboxes**
 
