@@ -10,7 +10,7 @@ Each record type (FI01–FI09) has a fixed-length structure and must follow stri
 
 ### File Overview
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### FI01 — File Header
 
@@ -45,7 +45,7 @@ From the **FI02** line, in the test environment, only the **Creditor Number** fi
 {% endhint %}
 
 {% hint style="info" %}
-The Creditor number for each agency can be found in **User -> Brands-> Select agency -> General -> Ticket**. &#x20;
+The Creditor number for each agency can be found in **User -> Brands-> Select agency -> General -> Ticket**.
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/image (801).png" alt=""><figcaption></figcaption></figure>

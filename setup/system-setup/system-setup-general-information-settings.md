@@ -49,7 +49,7 @@ This section controls core financial logic, reminder timing, and export formats:
 
 #### Settings
 
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 This area contains global preferences, voucher display rules, and profit margin behavior:
 
@@ -94,7 +94,7 @@ This area contains global preferences, voucher display rules, and profit margin 
 
 #### Other settings
 
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 This section covers default age rules, offer follow-up defaults, and a few integrations:
 

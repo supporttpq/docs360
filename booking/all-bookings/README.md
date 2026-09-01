@@ -363,7 +363,7 @@ For teams with many configured transports, hotels, or users, the filter dropdown
 
 After clicking Display, three additional analysis views are available. All statistics are calculated **per passenger** by default.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Available Statistics Types
 

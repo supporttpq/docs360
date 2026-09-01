@@ -330,6 +330,8 @@ Column titles are abbreviated to keep the table tidy. Most fields include **tool
 
 ### Change Price Functionality <a href="#price-list-history" id="price-list-history"></a>
 
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
 <figure><img src="../.gitbook/assets/image (735).png" alt=""><figcaption></figcaption></figure>
 
 The Change Price tool allows bulk modification of pricing values.
@@ -384,6 +386,8 @@ The Price List column selector allows users to choose which price types and inte
 * Each **interval group** has a corresponding checkbox: **Interval 1 (P1), Interval 2 (P2), Interval 3 (P3), Interval 4 (P4)**.
 * Example: If **ALL PRICES (P1, P2, P3, P4)** is checked and **Interval 1** is selected as the active filter, only the **P1** column will be displayed in the table.
 * Columns **not grouped into intervals** are always shown by default.
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ### Saving the column configuration
 
@@ -508,19 +512,20 @@ Child Final Prices are calculated using a booking configuration containing up to
 
 The adult configuration remains the same as for the adult calculation.
 
-The child age used for the calculation is:
+The child age used for the calculation is: **Max Child Age.** This age is used to create the child booking scenario used for the Final Child Price calculation.
 
-**Max Child Age ÷ 2**
-
-This age is used to create the child booking scenario used for the Final Child Price calculation.
+{% hint style="info" %}
+The calculation of the final price will be done when the other prices are calculated.\
+E.g., if there is a P price, the corresponding FP price shall be updated at the same time.
+{% endhint %}
 
 #### Example
 
 If: **Max Child Age = 12**
 
-then: **Child age used for the calculation = 12 ÷ 2 = 6**
+then: Child age used for the calculation = 12
 
-The system uses a child passenger with age 6 when calculating the Final Child Price.
+The system uses a child passenger with age 12when calculating the Final Child Price.
 
 <figure><img src="../.gitbook/assets/27.08.2026_14.23.04_REC.png" alt=""><figcaption></figcaption></figure>
 
@@ -534,11 +539,8 @@ Consider a double room with:
 * Price List P1: 4,000 SEK
 * Room supplement: 200 SEK
 * No discounts
-* No handling fee
 
-The Price List P1 remains:
-
-**P1 = 4,000 SEK**
+The Price List P1 remains: **P1 = 4,000 SEK**
 
 The Final Price calculation includes the supplement.
 
@@ -554,7 +556,7 @@ The important distinction is:
 
 The **P1 value is not changed** to 4,200 SEK.
 
-Instead, **FP1** represents the calculated final selling price.
+Instead, **FP1** represents the calculated final selling price. (FP1 = 4200 SEK/pers)
 
 ***
 
@@ -565,25 +567,47 @@ Consider a trip with:
 * Price List P1: 5,000 SEK
 * Discount: 500 SEK
 * No supplements
-* No handling fee
 
-The Price List values remain:
-
-**P1 = 5,000 SEK**
+The Price List values remain: **P1 = 5,000 SEK**
 
 The discount is included when calculating the Final Discount Price.
 
-The resulting Final Discount Price represents the selling price after the discount has been applied.
+The resulting Final Price represents the selling price after the discount has been applied.
 
-| Price    | Value                                   |
-| -------- | --------------------------------------- |
-| P1       | 5,000 SEK                               |
-| Discount | -500 SEK                                |
-| FD1      | Calculated final discount selling price |
+| Price     | Value                          |
+| --------- | ------------------------------ |
+| P1        | 5,000 SEK                      |
+| Discount  | -500 SEK                       |
+| FP1       | Calculated final selling price |
 
-Again, the original **P1 and D1 values are not modified**.
+Again, the original **P1 value is not modified**.
 
-The Final Price columns provide the calculated selling price separately.
+## Example: Discount + Supplement
+
+Consider a trip with:
+
+* Price List P1: 5,000 SEK
+* Discount: 500 SEK
+* Supplement: 1000 SEK
+
+| Price      | Value                          |
+| ---------- | ------------------------------ |
+| P1         | 5,000 SEK                      |
+| Discount   | -500 SEK                       |
+| Supplement | 1000 SEK                       |
+| FP1        | Calculated final selling price |
+
+The Price List values remain: **P1 = 5,000 SEK**
+
+The discount and supplement are included when calculating the Final Discount Price.
+
+The resulting Final Price represents the selling price after the discount and supplement  have been applied.
+
+{% hint style="info" %}
+The same examples also apply for D1, G1, CH1, C1H1, C2H1 for all intervals
+
+C1H1 & C2H1 are displayed in the pricelist only when "Child profit margin" option is checked by a Super Administrator. If isn't checked  the CH1 appears.
+{% endhint %}
 
 ***
 
@@ -642,35 +666,3 @@ The following dialogs use Final Prices:
 #### Select Independent Hotel
 
 <figure><img src="../.gitbook/assets/27.08.2026_14.34.00_REC.png" alt=""><figcaption></figcaption></figure>
-
-***
-
-## Booking price including extras
-
-Final Prices do not include extras.
-
-When the complete booking price is required, including extras, the system provides access to the booking price calculated through the Elastic API.
-
-The calculation is available for a **2-pax booking** and provides a quick way to verify the booking price without manually creating a test booking.
-
-This is useful when a customer asks for the expected booking price and the package contains additional extras.
-
-#### Example
-
-A package can have:
-
-* Final Price: 4,500 SEK
-* Supplement: included in Final Price
-* Discount: included in Final Price
-* Handling: included in Final Price
-* Extra: 300 SEK
-
-The Final Price remains:
-
-**4,500 SEK**
-
-The complete booking price including the extra is:
-
-**4,800 SEK**
-
-The complete amount should be checked using the booking price calculation rather than the Final Price column.

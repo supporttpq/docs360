@@ -225,7 +225,7 @@ Payment due dates and payment status indicators are dynamically displayed based 
 
 ## Price Specification (Passengers 1–3) Section
 
-<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 ### Price Breakdown per Passenger
 
