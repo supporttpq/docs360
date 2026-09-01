@@ -50,7 +50,6 @@ Other fields that are necessary for the hotel to work properly:
 * Hide as filter on lists - hides the hotel from filters on all lists in the system
 * Is VisitSun
 * Custom Hotel Days Booking - enables rooms to be set for Hotel Price Per Day option (A la carte) in **Room Types**
-* Uses infant beds - infant will now occupy beds in rooms assigned to the hotel
 
 ### **Customized Stars**
 

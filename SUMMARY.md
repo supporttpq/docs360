@@ -195,6 +195,7 @@
   * [Releases](hotel/hotel-creation/releases/README.md)
     * [Hotel release - automation](hotel/hotel-creation/releases/hotel-release-automation.md)
     * [Hotel release - Reporting](hotel/hotel-creation/releases/hotel-release-reporting.md)
+  * [Room Types](hotel/hotel-creation/room-types.md)
   * [Photos & Documents](hotel/hotel-creation/photos-and-documents.md)
   * [Discount Extra Beds](hotel/hotel-creation/discount-extra-beds.md)
   * [Extra Beds Costs](hotel/hotel-creation/extra-beds-costs.md)
