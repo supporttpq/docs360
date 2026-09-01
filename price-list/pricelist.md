@@ -410,8 +410,6 @@ A yield user who normally works with Final Prices for intervals 1 and 2 can conf
 
 After saving the configuration, the same columns are displayed when the Price List is opened again in the same browser.
 
-📸 **PHOTO: Add a screenshot showing the configured columns, followed by a screenshot of the Price List reopened with the same configuration.**
-
 #### Discounts <a href="#discounts" id="discounts"></a>
 
 <figure><img src="../.gitbook/assets/image (34) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
@@ -629,21 +627,6 @@ This makes it possible to understand why the Final Price differs from the origin
 
 ***
 
-## When Final Prices are calculated
-
-Final Prices are calculated together with the other Price List prices.
-
-For example:
-
-* When a P price is calculated or updated, the corresponding FP price is also calculated.
-* When a D price is calculated or updated, the corresponding FD price is also calculated.
-* When a G price is calculated or updated, the corresponding FG price is also calculated.
-* The same principle applies to the applicable child prices.
-
-This keeps the Final Price values synchronized with the underlying Price List.
-
-***
-
 ## Booking window
 
 The booking window uses Final Prices in the hotel selection dialogs.
@@ -691,17 +674,3 @@ The complete booking price including the extra is:
 **4,800 SEK**
 
 The complete amount should be checked using the booking price calculation rather than the Final Price column.
-
-***
-
-## Recommended workflow
-
-Use the following workflow when checking whether the Price List reflects the customer selling price:
-
-1. Open the **Price List**.
-2. Select **F** in the column selector.
-3. Select the required price group, such as **PRICES** or **DISCOUNTS**.
-4. Select the required interval.
-5. Review the corresponding Final Price.
-6. If necessary, open the booking window and compare the price shown in the hotel dialogs.
-7. If extras need to be included, use the booking price calculation to verify the complete booking price.
