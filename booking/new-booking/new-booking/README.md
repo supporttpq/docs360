@@ -1036,9 +1036,9 @@ f. Optional: Check **Search waitlist also** to include sold-out transports
 
 1. Locate the Hotel section below Transport
 2. Click the **Select Hotel** button
-3.  The Select Hotel dialog opens
+3.  The Select Hotel dialog opens&#x20;
 
-    <figure><img src="../../../.gitbook/assets/image (511).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/01.09.2026_14.20.08_REC.png" alt=""><figcaption></figcaption></figure>
 4.  Configure search filters:
 
     a. Optional: Select **Resort** from dropdown to filter by resort area
@@ -1059,8 +1059,8 @@ f. Optional: Check **Search waitlist also** to include sold-out transports
 * Check **Room** column for room type and board type
 * Review **Avail.** column to verify sufficient availability
 * Check **MB/XB/XB CH** columns for room capacity
-* Review **P1** column for base price
-* Check **D1/G1** columns for discount/group pricing if applicable
+* Review F**P1** column for final price
+* Check F**D1/FG1** columns for final discount/group pricing if applicable
 
 6. Select pricing tier by clicking the appropriate radio button:
 
@@ -1068,10 +1068,10 @@ f. Optional: Check **Search waitlist also** to include sold-out transports
 * **D** for Discount Price
 * **G** for Group Price
 
-7.  Click the **Select** button to choose the hotel/room combination
+7.  Click the **Select** button to choose the hotel/room combination&#x20;
 
-    <figure><img src="../../../.gitbook/assets/image (512).png" alt=""><figcaption></figcaption></figure>
-8. The Select Hotel dialog closes
+    <figure><img src="../../../.gitbook/assets/01.09.2026_15.18.31_REC.png" alt=""><figcaption></figcaption></figure>
+8. he Select Hotel dialog closes
 9. Hotel details populate in the Hotel section
 
 **Step 7: Take Allotment**
