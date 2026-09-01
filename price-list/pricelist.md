@@ -414,6 +414,19 @@ A yield user who normally works with Final Prices for intervals 1 and 2 can conf
 
 After saving the configuration, the same columns are displayed when the Price List is opened again in the same browser.
 
+The P selector controls the following price types:
+
+* Pn
+* Dn
+* Gn
+* CH1Pn
+* CH1Dn
+* CH2Pn
+* CH2Dn
+* CHn
+
+where **n** represents the interval number.
+
 #### Discounts <a href="#discounts" id="discounts"></a>
 
 <figure><img src="../.gitbook/assets/image (34) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
@@ -512,7 +525,9 @@ Child Final Prices are calculated using a booking configuration containing up to
 
 The adult configuration remains the same as for the adult calculation.
 
-The child age used for the calculation is: **Max Child Age.** This age is used to create the child booking scenario used for the Final Child Price calculation.
+The child age used for the calculation is: **Max Child Age ÷ 2**
+
+This age is used to create the child booking scenario used for the Final Child Price calculation.
 
 {% hint style="info" %}
 The calculation of the final price will be done when the other prices are calculated.\
@@ -523,9 +538,9 @@ E.g., if there is a P price, the corresponding FP price shall be updated at the 
 
 If: **Max Child Age = 12**
 
-then: Child age used for the calculation = 12
+then: Child age used for the calculation = 12 **÷ 2 = 6**
 
-The system uses a child passenger with age 12when calculating the Final Child Price.
+The system uses a child passenger with age 6 when calculating the Final Child Price.
 
 <figure><img src="../.gitbook/assets/27.08.2026_14.23.04_REC.png" alt=""><figcaption></figcaption></figure>
 
