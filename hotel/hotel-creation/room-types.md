@@ -132,6 +132,19 @@ Editing a field on the linked Base Room Type record changes it for every hotel t
 **Room Restrictions** lists every occupancy combination (adults and children) that fits within the room type's bed configuration, up to its maximum occupancy. Tick a combination and click **Save Restriction Rules** to apply the restriction.
 {% endhint %}
 
+#### Infant Occupancy Rules
+
+The room configuration determines whether an infant is allowed and whether the infant is included in the maximum room occupancy.
+
+* **DBL1: Infant not allowed**\
+  Infants are not permitted in the room. The room is intended for adults only. For example, a child aged 17 is treated as an adult.
+* **DBL2: Infant included in occupancy**\
+  Infants are allowed but are included in the room's maximum occupancy.\
+  For example, if the maximum occupancy is **2 adults + 2 children**, a booking can contain a maximum of **2 adults + 1 child + 1 infant**.
+* **DBL3: Infant allowed over occupancy**\
+  Infants are allowed in addition to the room's maximum occupancy and do not count towards the occupancy limit.\
+  For example, if the maximum occupancy is **2 adults + 2 children**, a booking can contain **2 adults + 2 children + 1 infant**. The infant is accommodated at **no additional cost**.
+
 #### Room description
 
 <figure><img src="../../.gitbook/assets/room-description.jpeg" alt="Room description editor opened from the plus icon, showing the Default text and brand tabs"><figcaption><p>The room type description editor, with per-brand tabs.</p></figcaption></figure>
