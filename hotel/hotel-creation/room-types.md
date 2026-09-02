@@ -19,6 +19,8 @@ On this tab you can:
 
 The room code, name, list text, and full bed and cost configuration for a room type live on its linked Base Room Type record, opened from this tab via **Link**.
 
+Tourpaq treats a passenger as an infant only while they are one year old or younger on the day the trip returns; once older, the passenger is booked, and priced, as a child or adult for the whole stay.
+
 ## Purpose
 
 Use the Room Types tab to:
@@ -99,6 +101,8 @@ Room Types list
 | **Show hidden**         | Shows room types that have **Hide Room** ticked, in addition to visible ones.                               |                                                                                         |
 | **Delete (trash icon)** | Permanently deletes the room type from the hotel, after a confirmation prompt.                              | Cannot be undone.                                                                       |
 
+
+
 {% hint style="warning" %}
 Editing a field on the linked Base Room Type record changes it for every hotel that shares that Base Room Type, not only this one.
 {% endhint %}
@@ -107,16 +111,20 @@ Editing a field on the linked Base Room Type record changes it for every hotel t
 
 <figure><img src="../../.gitbook/assets/room-type-settings.png" alt="Room type settings screen showing bed numbers, minimum age, infant fields, and the Room Restrictions table"><figcaption><p>Occupancy and infant settings for a room type, with Room Restrictions.</p></figcaption></figure>
 
-| Field                   | Description                                              | Notes                                                                              |
-| ----------------------- | -------------------------------------------------------- | ---------------------------------------------------------------------------------- |
-| **Room type**           | The Base Room Type this room type is created from.       | Only selectable when creating a new room type; locked once the room type is saved. |
-| **Ordinary bed number** | The number of standard beds in the room.                 |                                                                                    |
-| **Extra beds adult**    | The number of extra beds available for adults.           |                                                                                    |
-| **Extra beds child**    | The number of extra, child-sized beds.                   |                                                                                    |
-| **Minimum Age**         | The minimum age allowed for guests in this room type.    | Leave empty to apply no age limit.                                                 |
-| **Infants allowed**     | Allows infants to stay in this room type.                |                                                                                    |
-| **Infant beds**         | Infants use an extra bed in this room type.              | Relevant only when **Infants allowed** is ticked.                                  |
-| **Max infants**         | The maximum number of infants allowed in this room type. | Leave empty for no limit.                                                          |
+| Field                   | Description                                              | Notes                                                                                                                                                                                                                                        |
+| ----------------------- | -------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Room type**           | The Base Room Type this room type is created from.       | Only selectable when creating a new room type; locked once the room type is saved.                                                                                                                                                           |
+| **Ordinary bed number** | The number of standard beds in the room.                 |                                                                                                                                                                                                                                              |
+| **Extra beds adult**    | The number of extra beds available for adults.           |                                                                                                                                                                                                                                              |
+| **Extra beds child**    | The number of extra, child-sized beds.                   |                                                                                                                                                                                                                                              |
+| **Minimum Age**         | The minimum age allowed for guests in this room type.    | Leave empty to apply no age limit. When set here, or when the hotel is set up as an **Adult hotel** with an age limit, infants are never allowed in the room type — **Infants allowed, Infant beds**, and **Max infants b**elow are ignored. |
+| **Infants allowed**     | Allows infants to stay in this room type.                | Ticked by default for new room types. Unticking it disables **Infant beds** and **Max infants** below, and blocks infants from the room type entirely.                                                                                       |
+| **Infant beds**         | Infants use an extra bed in this room type.              | Editable only when **Infants allowed** is ticked; greyed out otherwise. Unticked by default.                                                                                                                                                 |
+| **Max infants**         | The maximum number of infants allowed in this room type. | Editable only when **Infant beds is** unticked; greyed out otherwise. Leave empty for no limit — the default. Maximum value: 2.                                                                                                              |
+
+{% hint style="info" %}
+If this hotel previously used the hotel-level **Uses infant beds** setting, every existing room type already has **Infants allowed** and **Infant beds** ticked, so infant handling is unchanged until you edit a room type here.
+{% endhint %}
 
 {% hint style="info" %}
 **Room Restrictions** lists every occupancy combination (adults and children) that fits within the room type's bed configuration, up to its maximum occupancy. Tick a combination and click **Save Restriction Rules** to apply the restriction.
