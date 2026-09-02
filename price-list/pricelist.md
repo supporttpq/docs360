@@ -513,7 +513,11 @@ If **Default Adult Age** is not configured, the calculation uses age **99**.
 
 The total calculated booking price is divided by the number of ordinary beds:
 
-**Final Price = Total booking price ÷ Number of ordinary beds**
+**Final Price = Total booking price ÷ Number of ordinary beds**&#x20;
+
+{% hint style="info" %}
+The formula uses the average of ordinary beds - Ex: if a discount/supplement is used only for the first passenger, the final price is calculated from the booking price after the supplement is applied.
+{% endhint %}
 
 The same approach is used for the Final P and Final D prices.
 
@@ -538,11 +542,29 @@ E.g., if there is a P price, the corresponding FP price shall be updated at the 
 
 If: **Max Child Age = 12**
 
-then: Child age used for the calculation = 12 **÷ 2 = 6**
+then: Child age used for the calculation = 12 ÷ 2 = 6
 
 The system uses a child passenger with age 6 when calculating the Final Child Price.
 
 <figure><img src="../.gitbook/assets/27.08.2026_14.23.04_REC.png" alt=""><figcaption></figcaption></figure>
+
+**Max Child Age Priority**
+
+If a **Max Child Age** value is configured for a specific hotel, the system will use the hotel's value, even if a different value is configured in **System Setup**.
+
+If no **Max Child Age** value is configured for the hotel, the system will fall back to the value defined in **System Setup**.
+
+**Example:**
+
+* Hotel Max Child Age: **12**
+* System Setup Max Child Age: **14**
+* **Value used by the system: 12**
+
+If the Hotel Max Child Age is not configured:
+
+* Hotel Max Child Age: **Not set**
+* System Setup Max Child Age: **14**
+* **Value used by the system: 14**
 
 ***
 
@@ -571,7 +593,7 @@ The important distinction is:
 
 The **P1 value is not changed** to 4,200 SEK.
 
-Instead, **FP1** represents the calculated final selling price. (FP1 = 4200 SEK/pers)
+Instead, **FP1** represents the calculated final selling price. (FP1 = 4100 SEK/pers)
 
 ***
 
