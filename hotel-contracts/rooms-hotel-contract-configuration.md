@@ -26,7 +26,7 @@ Use the Rooms tab to:
 * If you plan to reuse a room type already configured on the hotel, that room type exists on the hotel record — see [Base room types](../base-room-types.md).
 * You know the supplier's occupancy rules for each room type, including its infant policy: whether infants are allowed, whether they occupy a bed, and any maximum count.
 
-#### How-to
+## How-to
 
 {% stepper %}
 {% step %}
@@ -81,7 +81,7 @@ Click **Save**.
 
 The room type becomes available for periods, pricing, and booking searches on this contract as soon as you save.
 
-#### Field Reference
+## Field Reference
 
 
 
@@ -97,11 +97,7 @@ The room type becomes available for periods, pricing, and booking searches on th
 | **Max Extra**             | Sets how many guests beyond the base occupancy can be added as extra adults.                                                                                                                                             |                                                                                                     |
 | **Max Extra Child**       | Sets how many children can be added beyond the base occupancy, in addition to **Max Extra** adults.                                                                                                                      |                                                                                                     |
 
-Tooltip on **Room Type Code**:
-
-```
-Note: the hotel code will automatically be appended to the specified code, when the contract is imported.
-```
+Tooltip on **Room Type Code**: Note: the hotel code will automatically be appended to the specified code, when the contract is imported.
 
 **Infant handling**
 

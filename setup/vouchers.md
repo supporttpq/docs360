@@ -92,18 +92,6 @@ Set the voucher-generation timing in **System Setup → Vouchers Generation**.
 
 <figure><img src="../.gitbook/assets/28.08.2026_13.38.12_REC.png" alt="Extra attribute settings showing mandatory and default-value options."><figcaption><p>Configure mandatory attributes and default attribute values.</p></figcaption></figure>
 
-{% hint style="info" %}
-If a voucher is missing, check these conditions in order:
-
-* The booking is not **OK**.
-* The booking is not fully paid.
-* It is not yet **X days before departure**.
-* A voucher of the same type already exists.
-* The hotel, extra category, or discount does not have **Issue Voucher** enabled.
-* The hotel, extra category, or discount is missing a **Supplier**.
-* Required extra attributes are not filled in.
-{% endhint %}
-
 #### Related pages
 
 * [qr-code-for-vouchers.md](../booking/new-booking/qr-code-for-vouchers.md "mention") — Add QR codes to generated voucher documents.
