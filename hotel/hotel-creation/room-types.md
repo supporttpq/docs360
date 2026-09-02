@@ -123,7 +123,9 @@ Editing a field on the linked Base Room Type record changes it for every hotel t
 | **Max infants**         | The maximum number of infants allowed in this room type. | Editable only when **Infant beds is** unticked; greyed out otherwise. Leave empty for no limit — the default. Maximum value: 2.                                                                                                              |
 
 {% hint style="info" %}
-If this hotel previously used the hotel-level **Uses infant beds** setting, every existing room type already has **Infants allowed** and **Infant beds** ticked, so infant handling is unchanged until you edit a room type here.
+* Infant configuration is set per room type only —  Whatever is selected for **Infants allowed, Infant beds** and **Max infants** here governs this room type, with no hotel-level fallback.
+* Tourpaq migrates each hotel's previous hotel-level **Use infant beds** setting to every one of its room types automatically, ticking In**fant beds** to match. This is why every existing room type already has In**fants allowed and Infant beds** ticked — infant handling is unchanged until you edit a room type here.
+* **For all hotels configured as "Adult Hotel", all infant-related checkboxes must remain unselected.** This ensures that infants are not accepted when the hotel is configured as an adult-only hotel.
 {% endhint %}
 
 {% hint style="info" %}
