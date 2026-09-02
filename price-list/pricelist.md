@@ -669,21 +669,3 @@ The tooltip includes:
 This makes it possible to understand why the Final Price differs from the original Price List Price.
 
 <figure><img src="../.gitbook/assets/27.08.2026_16.37.33_REC.png" alt=""><figcaption></figcaption></figure>
-
-***
-
-## Booking window
-
-The booking window uses Final Prices in the hotel selection dialogs.
-
-This ensures that salespeople see the same price calculation that will be used for the booking.
-
-The following dialogs use Final Prices:
-
-#### Select Hotel
-
-<figure><img src="../.gitbook/assets/27.08.2026_14.28.05_REC.png" alt=""><figcaption></figcaption></figure>
-
-#### Select Independent Hotel
-
-<figure><img src="../.gitbook/assets/27.08.2026_14.34.00_REC.png" alt=""><figcaption></figcaption></figure>
