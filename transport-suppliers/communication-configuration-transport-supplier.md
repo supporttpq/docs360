@@ -160,8 +160,6 @@ For example, if **Departure** is configured with **Billund** and **Copenhagen**,
 
 This allows transport supplier communication rules to be configured with specific airport conditions while keeping the filters flexible. Depending on the configuration, a rule can apply to all transports or only to transports operating through specific departure and/or arrival airports.
 
-I think this is cleaner than having separate **Example** and **Configuration Behavior** sections because the table and the example now explain the same matching logic in one place.
-
 ### Deleting a rule
 
 For the rule, click the trash bin icon. A confirmation prompt appears.
