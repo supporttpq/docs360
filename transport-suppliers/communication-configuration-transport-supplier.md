@@ -156,8 +156,6 @@ The filters are optional and can be combined as needed:
 
 If multiple departures or arrivals are selected, a transport can match **any of the selected values** for that filter.
 
-For example, if **Departure** is configured with **Billund** and **Copenhagen**, a transport departing from either airport can match the rule. If **Arrival** is also configured with **Tenerife** and **Gran Canaria**, the transport must arrive at one of those airports.
-
 This allows transport supplier communication rules to be configured with specific airport conditions while keeping the filters flexible. Depending on the configuration, a rule can apply to all transports or only to transports operating through specific departure and/or arrival airports.
 
 ### Deleting a rule
