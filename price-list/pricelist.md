@@ -593,7 +593,7 @@ The important distinction is:
 
 The **P1 value is not changed** to 4,200 SEK.
 
-Instead, **FP1** represents the calculated final selling price. (FP1 = 4100 SEK/pers)
+Instead, **FP1** represents the calculated final selling price. (FP1 = 4200 SEK/pers)
 
 ***
 
@@ -644,12 +644,6 @@ The resulting Final Price represents the selling price after the discount and su
 The same examples also apply for D1, G1, CH1, C1H1, C2H1 for all intervals
 
 C1H1 & C2H1 are displayed in the pricelist only when "Child profit margin" option is checked by a Super Administrator. If isn't checked  the CH1 appears.
-{% endhint %}
-
-{% hint style="info" %}
-**Permanent Discounts** and **Supplements** are displayed under **“Show/hide all disc. & suppl.”** in the **Edit Passengers** section of the booking.
-
-Only **Permanent Discounts** and **Supplements** are included in the **final price calculation**. Other discounts or supplements displayed in this section do not affect the final price.
 {% endhint %}
 
 ***
