@@ -525,38 +525,53 @@ The child age used for the calculation is: **Max Child Age ÷ 2**
 
 This age is used to create the child booking scenario used for the Final Child Price calculation.
 
-{% hint style="info" %}
-The calculation of the final price will be done when the other prices are calculated.\
-E.g., if there is a P price, the corresponding FP price shall be updated at the same time.
-{% endhint %}
-
-#### Example
-
-If: **Max Child Age = 12**
-
-then: Child age used for the calculation = 12 ÷ 2 = 6
-
-The system uses a child passenger with age 6 when calculating the Final Child Price.
-
-<figure><img src="../.gitbook/assets/27.08.2026_14.23.04_REC.png" alt=""><figcaption></figcaption></figure>
-
 **Max Child Age Priority**
 
 If a **Max Child Age** value is configured for a specific hotel, the system will use the hotel's value, even if a different value is configured in **System Setup**.
 
 If no **Max Child Age** value is configured for the hotel, the system will fall back to the value defined in **System Setup**.
 
+The system first checks whether a **Max Child Age** is configured for the hotel.
+
+If a **Max Child Age** is configured at hotel level, the system uses this value for the calculation, regardless of the value configured in **System Setup**.
+
 **Example:**
 
 * Hotel Max Child Age: **12**
 * System Setup Max Child Age: **14**
-* **Value used by the system: 12**
 
-If the Hotel Max Child Age is not configured:
+The system uses the **Hotel Max Child Age = 12**.
+
+Child age used for the calculation:
+
+**12 ÷ 2 = 6**
+
+The system uses a child passenger with age **6** when calculating the **Final Child Price**.
+
+If no **Max Child Age** is configured for the hotel, the system falls back to the **Max Child Age** configured in **System Setup**.
+
+**Example:**
 
 * Hotel Max Child Age: **Not set**
 * System Setup Max Child Age: **14**
-* **Value used by the system: 14**
+
+The system uses the **System Setup Max Child Age = 14**.
+
+Child age used for the calculation:
+
+**14 ÷ 2 = 7**
+
+The system uses a child passenger with age **7** when calculating the **Final Child Price**.
+
+**Validation priority:**
+
+1. **Hotel Max Child Age** is checked first.
+2. If the hotel value is not configured, the system uses **System Setup Max Child Age**.
+
+{% hint style="info" %}
+The calculation of the final price will be done when the other prices are calculated.\
+E.g., if there is a P price, the corresponding FP price shall be updated at the same time.
+{% endhint %}
 
 ***
 
@@ -611,6 +626,8 @@ The resulting Final Price represents the selling price after the discount has be
 
 Again, the original **P1 value is not modified**.
 
+The resulting Final Price represents the selling price after the discount  has been applied                    (**FP1 = 4500 SEK/pers)**
+
 ## Example: Discount + Supplement
 
 Consider a trip with:
@@ -630,7 +647,7 @@ The Price List values remain: **P1 = 5,000 SEK**
 
 The discount and supplement are included when calculating the Final Discount Price.
 
-The resulting Final Price represents the selling price after the discount and supplement  have been applied.
+The resulting Final Price represents the selling price after the discount and supplement  have been applied. (FP1 = 5000 SEK - 500 SEK + 1000 SEK = 5500 SEK/pers)
 
 {% hint style="info" %}
 The same examples also apply for D1, G1, CH1, C1H1, C2H1 for all intervals
