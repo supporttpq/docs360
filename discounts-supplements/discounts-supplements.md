@@ -135,7 +135,9 @@ The entities having this checkbox active will:
 * Only one book/person:
 * Available for first passenger in room: only the first passenger in the room will receive the disc/suppl
 * Don't display in Api:
-* Passengers no. to apply discount to: number of passengers in a booking that can benefit from the disc/suppl. If "Passengers no. to apply discount to" has a value, the discount applies to the first N passengers in the booking regardless of that checkbox.
+*   Passengers no. to apply discount to: number of passengers in a booking that can benefit from the disc/suppl. If "Passengers no. to apply discount to" has a value, the discount applies to the first N passengers in the booking regardless of that checkbox.&#x20;
+
+    <figure><img src="../.gitbook/assets/03.09.2026_09.40.24_REC.png" alt=""><figcaption></figcaption></figure>
 * Auto Select in Bkg Wnd:
 * Not combine with disc: if checked, the disc/suppl will not allow any other disc/suppl in the booking
 * Not combine with extra bed disc: if checked, the disc/suppl wil not allow the extra bed discount to be given, also this rule applies to child price(CH1 in pricelist). Discount will remove all extra beds from the booking even if it is applied to only one pax.
