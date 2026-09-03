@@ -271,7 +271,7 @@ Golf course extras can either be sold individually or be included as part of a g
 The purpose is to prevent customers from selecting package-only golf rounds unless they have already selected the package that contains them.
 
 {% hint style="warning" %}
-Golf courses are currently **not supported in WebBooking**. This functionality applies to the Tourpaq booking application.
+Golf courses are **not supported in WebBooking**. This functionality applies to the Tourpaq booking application.
 {% endhint %}
 
 ***
@@ -317,7 +317,7 @@ If none of the extras were eligible, the package would not be available.
 
 Extras Golf courses that should appear on the **Golf Courses** page are configured as:
 
-* **Extras Category = Golf**&#x20;
+* **Extras Category = Golf**
 
 <figure><img src="../../.gitbook/assets/extras ec.png" alt=""><figcaption></figcaption></figure>
 
@@ -327,13 +327,13 @@ Instead, they are configured using **any other Extras Category** and are linked 
 
 Typically a package is configured as follows:
 
-*   Extras Category = Any category except **Golf**&#x20;
+*   Extras Category = Any category except **Golf**
 
     <figure><img src="../../.gitbook/assets/pack ec.png" alt=""><figcaption></figcaption></figure>
-*   Price should not be 0&#x20;
+*   Price should not be 0
 
     <figure><img src="../../.gitbook/assets/pack price.png" alt=""><figcaption></figcaption></figure>
-*   Contain more then one Extras&#x20;
+*   Contain more then one Extras
 
     <figure><img src="../../.gitbook/assets/pack content.png" alt=""><figcaption></figcaption></figure>
 

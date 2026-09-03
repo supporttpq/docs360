@@ -23,13 +23,13 @@ The purpose of Sunclass Transport Reporting is to:
 
 ***
 
-### How It Works
+### How it works
 
 When the reporting service runs, Tourpaq identifies all bookings eligible for reporting.
 
 <figure><img src="../../../.gitbook/assets/sunclass.png" alt=""><figcaption></figcaption></figure>
 
-#### First-Time Reporting
+#### First-time reporting
 
 If a booking has never been reported before:
 
@@ -43,7 +43,7 @@ Since Sunclass has no knowledge of the booking, both new and changed bookings ar
 
 Cancelled bookings are ignored because they have never been sent previously.
 
-#### Previously Reported Bookings
+#### Previously reported bookings
 
 If the booking has already been reported:
 
@@ -54,7 +54,7 @@ If the booking has already been reported:
 
 This ensures Sunclass receives updates and cancellations only for bookings that already exist in their system.
 
-#### Tracking Reported Bookings
+#### Tracking reported bookings
 
 Tourpaq maintains a list of bookings previously sent to Sunclass.
 
@@ -68,7 +68,7 @@ This tracking mechanism is designed to support future reporting integrations as 
 
 ## Configuration
 
-### SSR Mapping Configuration
+### SSR mapping configuration
 
 Sunclass reporting relies on SSR mappings configured in:
 
@@ -120,9 +120,9 @@ Example:
 
 ***
 
-### SSR Export Logic
+### SSR export logic
 
-#### Meal Codes
+#### Meal codes
 
 Tourpaq searches passenger SSR codes for mappings configured in:
 
@@ -136,7 +136,7 @@ Rules:
 * If no meal SSR is found, value `NM` is reported.
 * Values shorter than 2 characters are padded with spaces.
 
-#### Meal Direction
+#### Meal direction
 
 | Value | Meaning         |
 | ----- | --------------- |
@@ -144,7 +144,7 @@ Rules:
 | H     | Homebound       |
 | B     | Both Directions |
 
-#### Wheelchair Codes
+#### Wheelchair codes
 
 Tourpaq searches passenger SSR codes for mappings configured in:
 
@@ -157,7 +157,7 @@ Rules:
 * Only the first matching wheelchair SSR is reported.
 * If none is found, a blank space is reported.
 
-#### SSR Codes
+#### SSR codes
 
 SSR codes mapped as:
 
@@ -170,7 +170,7 @@ Tourpaq reports the first three remaining SSR codes.
 
 ***
 
-## File Structure
+## File structure
 
 The Sunclass export is a fixed-width text file consisting of:
 
@@ -182,7 +182,7 @@ The Sunclass export is a fixed-width text file consisting of:
 
 ***
 
-### Header Record
+### Header record
 
 The header contains flight and export information.
 
@@ -192,7 +192,7 @@ The header contains flight and export information.
 260301101530N999CLU260401DK709   Y260408DK710   YCPHACECPH
 ```
 
-#### Main Fields
+#### Main fields
 
 | Field                        | Description                        |
 | ---------------------------- | ---------------------------------- |
@@ -206,11 +206,11 @@ The header contains flight and export information.
 
 ***
 
-### Passenger Record
+### Passenger record
 
 Each passenger generates one passenger line.
 
-#### Passenger Name
+#### Passenger name
 
 Reported as:
 
@@ -234,7 +234,7 @@ Names exceeding field length are truncated.
 
 ***
 
-#### Gender Values
+#### Gender values
 
 | Value | Meaning |
 | ----- | ------- |
@@ -255,7 +255,7 @@ N
 
 ***
 
-#### Age Reporting
+#### Age reporting
 
 | Age   | Reported Value         |
 | ----- | ---------------------- |
@@ -273,7 +273,7 @@ Examples:
 
 ***
 
-#### Passenger Record Example
+#### Passenger record example
 
 ```
 GUNARSON JONAS VON DER M1234567890      NM B W  SPMLPETC
@@ -281,7 +281,7 @@ GUNARSON JONAS VON DER M1234567890      NM B W  SPMLPETC
 
 ***
 
-### Footer Record
+### Footer record
 
 Footer reporting is optional.
 
@@ -299,9 +299,23 @@ Footer reporting is optional.
 | Header Identifier | 998                              |
 | Total Lines       | Total number of exported records |
 
+{% hint style="info" %}
+### When one or mare passengers are canceled, they will appear separetly under the cancelled section
+{% endhint %}
+
+Example:
+
+In booking 21135, there are 3 passengers cancelled. They will appear in the Sunclass reporting under the cancelled section
+
+<figure><img src="../../../.gitbook/assets/07.08.2026_15.43.23_REC.png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+The resend passenger list will not be affected by the previously sent reports, and it should  send the full list for the departure date
+{% endhint %}
+
 ***
 
-## Manifestation in the System
+## Manifestation in the system
 
 The reporting process is fully automated.
 
@@ -318,11 +332,11 @@ When the scheduled reporting service executes:
 
 ***
 
-## Example SSR Configuration
+## Example SSR configuration
 
 The screenshot below illustrates how SSR codes are configured and mapped for Sunclass reporting.
 
-#### Example Mappings
+#### Example mappings
 
 | SSR Code | SUNCLASS MEAL | SUNCLASS WHEELCHAIR |
 | -------- | ------------- | ------------------- |

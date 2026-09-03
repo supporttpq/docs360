@@ -2,7 +2,7 @@
 
 ## Overview
 
-ransport Reporting is a way to send the passenger name list (**PNL**) to the airline. There are multiple methods to send the PNL.
+Transport Reporting is a way to send the passenger name list (**PNL**) to the airline. There are multiple methods to send the PNL.
 
 The default reporting method is set in **Real** **Transport → General tab**. A tour operator code is required for some reporting types.
 
@@ -14,7 +14,7 @@ By clicking **Add schedule**, you can define rules that send communication files
 
 **Defining separate rules for each departure date**
 
-The rules shown in the image below will send communication files to the configured email address for all bookings on the selected transport, **20**, **10**, and **1** day(s) before departure date.
+The rules shown in the image below will send communication files to the configured email address for all bookings on the selected transport, **20**, **10**, and **1** day(s) before the departure date.
 
 <figure><img src="../.gitbook/assets/reporting.png" alt=""><figcaption></figcaption></figure>
 
@@ -28,11 +28,9 @@ Tourpaq provides a manual resend function from the transport configuration.
 
 Go to:
 
-```
-Real Transport
-→ Communication
+Real Transport\
+→ Communication\
 → Resend Passenger List
-```
 
 <figure><img src="../.gitbook/assets/resend.png" alt=""><figcaption></figcaption></figure>
 
@@ -58,17 +56,8 @@ Typical use cases include
 
 #### Actions
 
-**Resend**
-
-Generates a new passenger reporting file using the current reporting logic and selected departure.
-
-The file is processed using the same Sunclass export format as standard reporting.
-
-**Copy Pnr Data**
-
-Copies the passenger reservation data used for reporting.
-
-This function is primarily intended for support, troubleshooting, and validation of exported passenger information.
+* **Resend -** Generates a new passenger reporting file using the current reporting logic and selected departure. The file is processed using the same Sunclass export format as standard reporting.
+* **Copy Pnr Data -** Copies the passenger reservation data used for reporting. This function is primarily intended for support, troubleshooting, and validation of exported passenger information.
 
 #### Notes
 
@@ -83,15 +72,13 @@ The **Transport Supplier** tab provides an overview of previously generated tran
 
 #### Navigation
 
-```
-Real Transport
-→ Communication
+Real Transport\
+→ Communication\
 → Transport Supplier
-```
 
 <figure><img src="../.gitbook/assets/transp suplier.png" alt=""><figcaption></figcaption></figure>
 
-This tab shows the list of communication triggered by the rules from the Transport Supplier.
+This tab shows the list of communication triggered by the rules from the [Transport Supplier.](../transport-suppliers/)
 
 #### Purpose
 
@@ -114,10 +101,6 @@ The page is used to:
 
 #### Actions
 
-**Display**
+**Display -** Retrieves all reporting records matching the selected filters.
 
-Retrieves all reporting records matching the selected filters.
-
-**Clear**
-
-Resets all filters and returns the search criteria to their default state.
+**Clear -** Resets all filters and returns the search criteria to their default state.

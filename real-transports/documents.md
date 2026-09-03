@@ -2,7 +2,7 @@
 
 ## **Overview** <a href="#overview" id="overview"></a>
 
-The **Documents** section allows users to attach and manage additional documents related to a route configuration (for example, _Billund – Malta_). This feature ensures that important files, references, or supporting information are stored and can be easily accessed within the system.
+The **Documents** section allows users to attach and manage additional documents related to a route configuration (for example, _Salzburg – Københavns_). This feature ensures that important files, references, or supporting information are stored and can be accessed within the system.
 
 ## **Purpose** <a href="#purpose" id="purpose"></a>
 
@@ -18,7 +18,7 @@ The purpose of this functionality is to:
 
 Before creating a new document, ensure that:
 
-1. You are on the **Documents** tab under the selected route (e.g., _Billund – Malta_).
+1. You are on the **Documents** tab under the selected route (e.g., _Salzburg – Københavns_).
 2. You have the necessary files prepared for upload.
 3. You have the required user permissions to create and save documents in the system.
 
@@ -26,12 +26,12 @@ Before creating a new document, ensure that:
 
 **Step 1: Access the Documents Tab**
 
-* From the route configuration screen, click on the **Documents** tab located in the lower navigation menu.
+* In the transport navigation menu, click **Documents** tab.
 * The section will display existing documents or indicate if no entries are available.
 
 **Step 2: Add a New Document**
 
-* Click on the **Add document** button on the right side of the **Documents** section.
+* In the **Documents** section, click **Add document**.
 * A pop-up window titled **“Add new document”** will appear.
 
 **Step 3: Enter Document Details**

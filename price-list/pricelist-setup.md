@@ -105,23 +105,30 @@ A price list is blank when first created.
 
 You must then enter the required values. Some fields auto-fill based on formulas and existing values. A filled price list looks like this:
 
-<figure><img src="../.gitbook/assets/image (632).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/27.08.2026_11.29.13_REC.png" alt=""><figcaption></figcaption></figure>
 
 #### Price list grid fields (PLTA lines)
 
 * **Tools (row icons)**:
-  * **Show/Hide History**: See changes for the price list line.
-  * **Reset price list in API v4.1**: Clears cached price list data.
+  * **Show/Hide History( >)**: See changes for the price list line.
+  * **Reset price list in API v4**  : Clears cached price list data. (is made automatically on each save)
   * **Recalculate FHA**: Recalculates Free Hotel Allotment (FHA) on demand.
 * **PLTA ID**: Unique identifier for the price list line.
 * **Hotel / Room / Dep. date / Stays**: Context fields. Mostly auto-filled.
 * **FHA / FTA**: Free Hotel Allotment and Free Transport Allotment. Auto-filled.
 * **P1–P4**: Selling prices per interval. Entered manually unless rules fill them.
 * **PP1–PP4**: Profit forecast for P1–P4. Auto-calculated.
+* **FP1-FP4:** Final Price. Price including discounts and supplements. Price per person, number of adults from "Ordinary beds". Auto calculated
 * **D1–D4**: Discount prices (used in web booking when configured). Entered manually.
 * **PD1–PD4**: Profit forecast for D1–D4. Auto-calculated.
 * **G1–G4 / PG1–PG4**: Group prices and profit forecast.
+* **FG1-FG4:** Final group price (includes discounts and supplements / price per person, numer of adults from "Ordinary beds" for each interval)&#x20;
 * **CH1P1–CH1P4**: Child prices per interval.
+* **FCH1P** - Final child 1 price. Price including discounts, supplements, and handling. Price per person. Uses **Child profit margin.**
+* **FCH1D** - Final child 1 discount price. Price including discounts, supplements, and handling. Price per person. Uses **Child profit margin**
+* **FCH2P** - Final child 2 price. Price including discounts, supplements, and handling. Price per person.
+* **FCH2D** - Final child 2 discount price. Price including discounts, supplements, and handling. Price per person.
+* **FCH** - Final child price. Price including discounts, supplements, and handling. Price per person.
 * **CH%**: Calculates child prices as a percentage of P prices.
 * **POWO / POWH**: One-way outbound / homebound prices.
 * **GPOWO / GPOWH / CPOWO / CPOWH / DPOWO / DPOWH**: One-way group/child/discount fields.
@@ -196,7 +203,7 @@ Below the filters are the following tabs:
 
 **Column filters** – Controls which columns show in **Prices**. Unchecked fields are hidden.
 
-<figure><img src="../.gitbook/assets/image (633).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/27.08.2026_10.18.37_REC.png" alt=""><figcaption></figcaption></figure>
 
 Filter categories:
 
@@ -209,16 +216,17 @@ Filter categories:
 * Ch. prices - display child prices per intervals
 * Max rooms - display max number of rooms per intervals
 * Low. reg. prices - lowest value of price regulation rules
-*   Generic filters
+* Generic filters
+  * P. Ch. - increase/decrease prices per interval
+  * Hide average profit - hides average real profit per pax
+  * TP - transport price
 
-    * P. Ch. - increase/decrease prices per interval
-    * Hide average profit - hides average real profit per pax
-    * TP - transport price
+{% hint style="warning" %}
+&#x20;Some extra bed discount setups use **TP (Transport Price)** as input. Validate your results after edits.
+{% endhint %}
 
-    ⚠️ **Warning:** Some extra bed discount setups use **TP (Transport Price)** as input. Validate your results after edits.
-
-    * GR - guarantee rooms
-    * GS - guarantee seats
+* GR - guarantee rooms
+* GS - guarantee seats
 * Regulation rules - display price regulation rule filters
 * Other tools
   * Waitlist

@@ -55,7 +55,7 @@ Texts from general settings can be customized per active brand.
 
 **Replace product name when Sold Out -** Text that replaces the product name when the extra is sold out.
 
-* **Purpose:** Improves customer communication instead of simply hiding the product.
+* **Purpose:** Improves customer communication rather than hiding the product.
 
 **Description** - Rich text field allowing formatted content.
 

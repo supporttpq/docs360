@@ -39,7 +39,7 @@ We will set the user's email and password that will be used for authentication
 
 <figure><img src=".gitbook/assets/image (38) (1).png" alt=""><figcaption></figcaption></figure>
 
-Two additional fields for input of mail address will be added to user profile interface. These two fields will (currently) only be in use for the 2FA authentication code in supplement to the existing functions of the 1st field. When the 2nd and or 3rd field is infilled, the 2FA email will be sent to these addresses also. When the field is empty, it will be ignored.
+Two additional fields for input of mail address will be added to user profile interface. These two fields will only be in use for the 2FA authentication code in supplement to the existing functions of the 1st field. When the 2nd and or 3rd field is infilled, the 2FA email will be sent to these addresses also. When the field is empty, it will be ignored.
 
 <figure><img src=".gitbook/assets/image (39) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -47,7 +47,7 @@ If any of the fields are wrong, the user's profile will not be saved and an erro
 
 **Note: The first field is mandatory.**
 
-#### Main LOGIN screen
+#### Main login screen
 
 After the login will be made as it is now, the user will complete the username and password, and then a new pop-up will appear with the following text:
 
@@ -72,7 +72,7 @@ In this pop-up, we’ll have the following elements:
 * Text messages for two-factor authentication send a login code to a mail address you register with the account (in a User case it will be sent to the email from the User's profile, and in a Customer case it will be sent to the Customer email address).
 * Any internet connection is enough to access your account.
 
-**Note: The details from the user: Email and phone number are usually used into the Select Offer Template. Still, if the user doesn’t want these details to be displayed, just simply mark this checkbox:**
+**Note: The details from the user: Email and phone number are usually used into the Select Offer Template. Still, if the user doesn’t want these details to be displayed, select this checkbox:**
 
 #### Google Authenticator methods
 

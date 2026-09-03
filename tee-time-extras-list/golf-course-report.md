@@ -28,7 +28,7 @@ It is designed for reporting, analysis, and communication with golf course suppl
 
 ***
 
-#### 2. Report Type
+#### 2. Report type
 
 **Purpose:** Defines the format and type of report to be generated.
 
@@ -36,7 +36,7 @@ It is designed for reporting, analysis, and communication with golf course suppl
 
 ***
 
-#### 3. Arrival Period
+#### 3. Arrival period
 
 **Purpose:** Filters bookings based on the passengers’ arrival date.
 
@@ -45,7 +45,7 @@ It is designed for reporting, analysis, and communication with golf course suppl
 
 ***
 
-#### 4. Booking Period
+#### 4. Booking period
 
 **Purpose:** Filters by the date when the booking was created.
 
@@ -72,7 +72,7 @@ It is designed for reporting, analysis, and communication with golf course suppl
 
 ***
 
-#### 7. Columns for Export
+#### 7. Columns for export
 
 **Purpose:** Allows you to select which columns (fields) should be included in the exported file.
 
@@ -81,7 +81,7 @@ It is designed for reporting, analysis, and communication with golf course suppl
 
 ***
 
-#### 8. Additional Options
+#### 8. Additional options
 
 | Option                 | Description                                                                                |
 | ---------------------- | ------------------------------------------------------------------------------------------ |
@@ -90,16 +90,16 @@ It is designed for reporting, analysis, and communication with golf course suppl
 
 ***
 
-#### 9. Export Button
+#### 9. Export button
 
 **Purpose:** Generates and downloads the export file based on your selected filters.
 
 * After setting all filters and options, click **Export** to generate the file.
-* The file will be downloaded automatically in **.XLS** format.
+* Tourpaq downloads the file automatically in **.XLS** format.
 
 <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (37).png" alt=""><figcaption></figcaption></figure>
 
-The export file include the following columns:
+The export file includes the following columns:
 
 | COLUMN NAME             | COLUMN                          |
 | ----------------------- | ------------------------------- |
@@ -115,12 +115,12 @@ The export file include the following columns:
 
 ***
 
-### Example Workflow
+### Example workflow
 
 1. Set **Supplier** to _All Suppliers_.
 2. Choose the **Report Type** → _Golf Course (XLS)_.
 3. Select a **Booking Period** (e.g., 29-09-2025 to 05-10-2025).
-4. Click **Edit** under _Columns for export_ to include Passenger, Golf Course, and Confirmed Time.
+4. Under _Columns for export_, click **Edit** to include Passenger, Golf Course, and Confirmed Time.
 5. Check **Compress as ZIP** if you expect a large file.
 6. Click **Export** to download the Excel report.
 

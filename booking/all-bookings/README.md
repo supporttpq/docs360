@@ -98,7 +98,7 @@ Set the filters that match what you are looking for. You do not need to fill in 
 * **Cancelled bookings in a period** → Status = Cancelled + Booking Period
 
 {% hint style="info" %}
-Use the **More Filters** button to access additional filter options not shown by default. A green badge on the button indicates how many additional filters are currently active.
+Use the **More Filters** button to access additional filter options not shown by default. A green badge on the button indicates how many additional filters are active.
 {% endhint %}
 
 ***
@@ -363,7 +363,7 @@ For teams with many configured transports, hotels, or users, the filter dropdown
 
 After clicking Display, three additional analysis views are available. All statistics are calculated **per passenger** by default.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Available Statistics Types
 

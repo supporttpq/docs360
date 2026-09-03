@@ -420,7 +420,7 @@ This section provides comprehensive descriptions of all fields available in the 
 
 #### Hotel Search Dialog Filter Fields
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/01.09.2026_14.20.08_REC.png" alt=""><figcaption></figcaption></figure>
 
 **Resort**
 
@@ -429,7 +429,7 @@ This section provides comprehensive descriptions of all fields available in the 
 * **Description:** Filters hotel search results to show only properties located in the selected resort area.
 * **Data Source:** Active resorts configured in Resort Management linked to the selected destination.
 * **System Behavior:** When selected, only hotels within the chosen resort appear in results. Leave as "All Resorts" to view hotels across all resort areas.
-* **Related Functionality:** Links to Resort configuration. Resorts are defined in Setup module.
+* **Related Functionality:** Links to Resort configuration. Resorts are defined in the Setup module.
 
 **Hotel**
 
@@ -564,21 +564,20 @@ This section provides comprehensive descriptions of all fields available in the 
 * **System Behavior:** Displays current available rooms from Hotel Allotment system. Updates in real-time as bookings are made. Shows minimum availability across all nights in the booking period.
 * **Related Functionality:** Links to Hotel Allotment Management. Availability calculated from allotment data.
 
-**P1 Column (Price Interval 1)**
+**FP1 Column (Final Price Interval 1)**
 
 * **Field Type:** Currency display
 * **Mandatory:** Display only
-* **Description:** Price per person for the first pricing interval configured in the Price List.
+* **Description:** Price per person, based on the number of adults from Ordinary beds. configured in the Price List.
 * **System Behavior:** Shows pricing from Price List for the standard interval. Currency format follows system configuration.
-* **Related Functionality:** Links to Price List configuration. Pricing calculated based on duration and passenger composition.
+* **Related Functionality:** Links to Price List configuration. Price including discounts, supplements, and handling
 
-**D1 / G1 Columns**
+**FD1 / FG1 Columns**
 
 * **Field Type:** Currency display
 * **Mandatory:** Display only
-* **Description:** Discount price (D1) or Group price (G1) per person for the first interval. Alternative pricing tiers available in Price List.
-* **System Behavior:** Shows reduced pricing when discount or group rates are configured. May be empty if no alternative pricing exists.
-* **Related Functionality:** Links to Price List discount and group pricing rules.
+* **Description:** Final Discount price (FD1) - Price including discounts, supplements, and handling. Price per person, based on the number of adults from Ordinary beds.
+* &#x20;Final Group price (FG1) - Price including discounts, supplements, and handling. Price per person, based on the number of adults from Ordinary beds.
 
 **N, D, G Selection Checkboxes**
 
@@ -1037,9 +1036,9 @@ f. Optional: Check **Search waitlist also** to include sold-out transports
 
 1. Locate the Hotel section below Transport
 2. Click the **Select Hotel** button
-3.  The Select Hotel dialog opens
+3.  The Select Hotel dialog opens&#x20;
 
-    <figure><img src="../../../.gitbook/assets/image (511).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/01.09.2026_14.20.08_REC.png" alt=""><figcaption></figcaption></figure>
 4.  Configure search filters:
 
     a. Optional: Select **Resort** from dropdown to filter by resort area
@@ -1060,8 +1059,8 @@ f. Optional: Check **Search waitlist also** to include sold-out transports
 * Check **Room** column for room type and board type
 * Review **Avail.** column to verify sufficient availability
 * Check **MB/XB/XB CH** columns for room capacity
-* Review **P1** column for base price
-* Check **D1/G1** columns for discount/group pricing if applicable
+* Review F**P1** column for final price
+* Check F**D1/FG1** columns for final discount/group pricing if applicable
 
 6. Select pricing tier by clicking the appropriate radio button:
 
@@ -1069,10 +1068,10 @@ f. Optional: Check **Search waitlist also** to include sold-out transports
 * **D** for Discount Price
 * **G** for Group Price
 
-7.  Click the **Select** button to choose the hotel/room combination
+7.  Click the **Select** button to choose the hotel/room combination&#x20;
 
-    <figure><img src="../../../.gitbook/assets/image (512).png" alt=""><figcaption></figcaption></figure>
-8. The Select Hotel dialog closes
+    <figure><img src="../../../.gitbook/assets/01.09.2026_15.18.31_REC.png" alt=""><figcaption></figcaption></figure>
+8. he Select Hotel dialog closes
 9. Hotel details populate in the Hotel section
 
 **Step 7: Take Allotment**

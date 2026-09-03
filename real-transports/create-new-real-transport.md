@@ -8,6 +8,8 @@ This configuration allows administrators to define transport routes, assign supp
 
 <figure><img src="../.gitbook/assets/rt new.png" alt=""><figcaption></figcaption></figure>
 
+<figure><img src="../.gitbook/assets/20.08.2026_13.19.20_REC.png" alt=""><figcaption></figcaption></figure>
+
 ***
 
 ## Purpose
@@ -52,36 +54,21 @@ The configuration screen contains two sections:
 
 **Code** \* - Defines the unique identifier for the transport.
 
-**Instructions**
+***
 
-* The code must be unique.
-* Use a naming convention that clearly identifies the service.
+**Departure** \* - Specifies the transport departure airport.
+
+* Select an existing departure airport from the dropdown list. (**Example: Stockholm)**
 
 ***
 
-**Departure** \* - Specifies the transport departure location.
+**Arrival** \* - Specifies the transport destination airport.
 
-**Instructions**
-
-* Select an existing departure location from the dropdown list.
-* This field is mandatory.
-
-**Example:** `Stockholm`
+* Select an existing arrival airport. (**Example: Barcelona)**
 
 ***
 
-**Arrival** \* - Specifies the transport destination.
-
-**Instructions**
-
-* Select an existing arrival location.
-* This field is mandatory.
-
-**Example:** `Barcelona`
-
-***
-
-I**nfo Customer 1 / 2 / 3 -** These fields allow administrators to store additional information that can be displayed to customers during booking or included in reports.
+I**nfo Customer 1 / 2 / 3 -** These fields allow administrators to store additional information that can be displayed to customers during booking and is shown on the ticket.
 
 Typical uses include:
 
@@ -92,38 +79,30 @@ Typical uses include:
 
 **Examples**
 
-| Field           | Example Value                              |
-| --------------- | ------------------------------------------ |
-| Info Customer 1 | `Check-in opens 2 hours before departure.` |
-| Info Customer 2 | `Meet guide at Terminal 3.`                |
-| Info Customer 3 | `Bring valid passport.`                    |
+| Field           | Example Value                            |
+| --------------- | ---------------------------------------- |
+| Info Customer 1 | Check-in opens 2 hours before departure. |
+| Info Customer 2 | Meet guide at Terminal 3.                |
+| Info Customer 3 | Bring valid passport.                    |
+
+<figure><img src="../.gitbook/assets/05.08.2026_16.23.01_REC.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-**Airline -** Associates the transport with a specific airline.
-
-**Instructions**
+**Airline -** Associates the transport with a specific airline.&#x20;
 
 * Select an airline from the dropdown list.
-* Primarily used for flight-based transports.
-
-**Example:** `Scandinavian Airlines (SAS)`
+* It is the default option and can be configured in the [**Departure**](departures/) tab (**Example:** Scandinavian Airlines (SAS))
 
 ***
 
 **Tour Operator -** Specifies the responsible tour operator for the transport.
 
-**Instructions**
-
-Enter the operator name if the transport belongs to a specific operator.
-
-**Example:** `RWB Tours`
+Enter the operator name if the transport belongs to a specific operator.(**Example: RWB Tours**)
 
 ***
 
 **Reporting Type** \* - Select from the dropdown the reporting used for this transport
-
-**Instructions**
 
 Select the appropriate reporting type from the dropdown list.
 
@@ -137,21 +116,58 @@ Examples may include:
 
 ***
 
-**Parent -** Links the transport to a parent transport.
+**Parent -** this field it is used to link one real transport to another real transport.
 
-**Instructions**
+If you use **parent-child transports**, the system can **share the same seat layout** between them:
 
-Select an exisating real transport as a parent
+* The child transport uses the **same layout selected for the parent** in the **Layout** tab.
+
+For **Real Transport + Parent/Child transports**, the system ties together **allotments**, **seat layout**, and **seat cost** like this:
+
+#### 1) Allotment handling (what gets booked) <a href="#undefined" id="undefined"></a>
+
+When a booking is created with a **child transport**, the seat usage is deducted from **both**:
+
+* the **child transport allotment**, and
+* the relevant **parent transport allotment(s)**
+
+The **outbound Real Transport** uses one Real Transport, while the **homebound Real Transport** uses another. Therefore, they always have **different parent Real Transports**.
+
+See: [Allotments](https://manual.tourpaq.com/transport/transport/allotments)
+
+Also, for **child transports**, **Fix quota generation depends on the parents**—your child quota date range must fall within the parents’ date ranges.
+
+See: [Transport creation](https://manual.tourpaq.com/transport/transport/transport-creation)
+
+#### 2) Layout (what seats look like) <a href="#undefined" id="undefined"></a>
+
+If you use **shared layouts** (parent/child):
+
+* Select the **same layout as the parent** in the child’s **Layout tab**
+* Seats/occupancy stays synchronized both ways (child booking shows occupied on parent and vice-versa)
+
+See: [Transport Layouts](https://manual.tourpaq.com/transport-layouts)
+
+For a specific **Real Transport departure**, assign the seating layout in the Real Transport **Layout tab** (per departure date).
+
+See: [Layout](https://manual.tourpaq.com/real-transports/layout)
+
+#### 3) Cost (how seat prices are calculated) <a href="#undefined" id="undefined"></a>
+
+* Seat **cost price per seat** is derived from **transport allotments** (guaranteed seats, pro rates, free/booked intervals) and **tax**, per the algorithm in the Transport Dashboard.
+
+See: [Transport Dashboard](https://manual.tourpaq.com/transport-dashboard)
+
+If you set **Base Cost** on a **Real Transport** departure:
+
+* it overrides **calculated seat cost in the Price List only**
+* it **does not** change booking operational cost
+
+See: [Add Base Cost on Real Transports](https://manual.tourpaq.com/real-transports/departures/add-base-cost-on-real-transports)
 
 ***
 
-**Transport Supplier -** Defines the supplier responsible for operating the transport.
-
-**Instructions**
-
-Select an existing supplier.
-
-**Example:** `saxaxa`
+**Transport Supplier -** Defines the supplier responsible for operating the transport (**Example: saxaxa)**
 
 ***
 
@@ -186,8 +202,6 @@ When disabled, seat assignment must be performed manually.
 
 **Hour Before Departure -** How many hours before departure the system will automatically place the passengers into the airplane
 
-**Instructions**
-
 Enter the number of hours before departure when the system should execute seat allocation.
 
 **Example**
@@ -199,32 +213,40 @@ Enter the number of hours before departure when the system should execute seat a
 
 ***
 
-**Email Address(es)** - Specifies recipients who should receive notifications related to automatic seating.
-
-**Instructions**
-
-Enter one or more email addresses.
-
-Multiple email addresses can be separated by comma.
+**Email Address(es)** - Enter one or more email addresses (separated by commas). After automatic seating is completed, a report is sent to the listed recipients, based on the chosen reporting type.
 
 **Example:** operations@company.com, transport@company.com
+
+When **Automatic Seating** finishes, the system sends **one “seating report” by email** to the recipients you configured under **Transport → (Automatic Seating) → Email address(es)** — and the exact report format is **based on the transport’s chosen reporting type** ([Automatic Seating](https://manual.tourpaq.com/transport/transport/automatic-seating)).
+
+Common reporting types you can get via this email-based passenger reporting include:
+
+* **Passenger name list (Air)** — generates a **PDF** sent via email to the airline ([Communication](https://manual.tourpaq.com/transport/transport/communication))
+* **Passenger list with addresses**
+* **Inflight**
+* **Bus Feed**
+* **Gate Gourmet**
+* **Infection Detection**
+* **AirSeven Full**
+
+These reporting “list types” are described as **alternative reporting types** for passenger list sending via transport reporting ([Transport Reporting](https://manual.tourpaq.com/transport/transport/transport-reporting)).
 
 ***
 
 ## Example Configuration
 
-| Field                 | Example                  |
-| --------------------- | ------------------------ |
-| Code                  | STOBCN                   |
-| Departure             | `Stockholm`              |
-| Arrival               | `Barcelona`              |
-| Airline               | `SAS`                    |
-| Tour Operator         | RWB `Tours`              |
-| Reporting Type        | `PNL`                    |
-| Transport Supplier    | `saxaxa`                 |
-| Use Automatic Seating | Enabled                  |
-| Hour Before Departure | `24`                     |
-| Email Address         | `operations@company.com` |
+| Field                 | Example                |
+| --------------------- | ---------------------- |
+| Code                  | STOBCN                 |
+| Departure             | Stockholm              |
+| Arrival               | Barcelona              |
+| Airline               | SAS                    |
+| Tour Operator         | RWB Tours              |
+| Reporting Type        | PNL                    |
+| Transport Supplier    | saxaxa                 |
+| Use Automatic Seating | Enabled                |
+| Hour Before Departure | 24                     |
+| Email Address         | operations@company.com |
 
 #### Result
 

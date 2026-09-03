@@ -34,7 +34,7 @@ With all these details, the extra is available to be added in the booking. If it
 
 ***
 
-### Filters and Controls
+### Filters and controls
 
 <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (8).png" alt=""><figcaption></figcaption></figure>
 
@@ -46,7 +46,7 @@ With all these details, the extra is available to be added in the booking. If it
 #### 2. **Reporting Type Filter**
 
 * A dropdown allowing selection of a specific reporting type.
-* Only suppliers linked to the selected reporting type will be shown.
+* Only suppliers linked to the selected reporting type appear.
 
 #### 3. **Show All Checkbox**
 
@@ -64,7 +64,7 @@ With all these details, the extra is available to be added in the booking. If it
 
 ***
 
-### Table Columns
+### Table columns
 
 | Column             | Description                                                                |
 | ------------------ | -------------------------------------------------------------------------- |
@@ -72,18 +72,18 @@ With all these details, the extra is available to be added in the booking. If it
 | **TOUR OPERATOR**  | Identifies the tour operator associated with the supplier.                 |
 | **REPORTING TYPE** | Indicates the reporting format or export type used for this supplier.      |
 
-Clicking on the column headers (marked with sort icons) will sort the entries ascending or descending.
+Clicking the column headers marked with sort icons sorts entries ascending or descending.
 
 ***
 
 ### Actions
 
 * **Delete Icon (🗑️)**: Click to delete a supplier entry.
-  * A confirmation prompt will appear to avoid accidental deletions.
+  * A confirmation prompt appears to avoid accidental deletions.
 
 ***
 
-### Create Button
+### Create button
 
 * Located in the top-right corner.
 * Opens a form or modal to add a new transport supplier.
@@ -91,7 +91,7 @@ Clicking on the column headers (marked with sort icons) will sort the entries as
 
 ***
 
-### Pagination and Page Size
+### Pagination and page size
 
 * **Pagination Controls**: Allows navigation through multiple pages if more than 25 suppliers exist.
 * **Page Size Dropdown**: Select how many entries are shown per page (default: 25).

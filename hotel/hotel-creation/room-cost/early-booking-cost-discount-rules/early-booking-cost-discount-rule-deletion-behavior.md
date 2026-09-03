@@ -4,7 +4,7 @@
 
 Deleting an **Early Booking Cost Discount Rule** on a hotel also deletes the related autobilling invoice data stored in the `EarlyBookingDepositInvoiceLine` table.
 
-This happens regardless of invoice status. This is current Tourpaq behavior.
+This happens regardless of invoice status. This is Tourpaq behavior.
 
 ### What happens when you delete the rule
 
@@ -18,7 +18,7 @@ This happens regardless of invoice status. This is current Tourpaq behavior.
 * The invoice total may still remain unchanged after deletion.
 
 {% hint style="danger" %}
-Even if the Early Booking Discount details are removed, the invoice sum can remain the same. This is expected in the current implementation.
+Even if the Early Booking Discount details are removed, the invoice sum can remain the same. This is expected behavior.
 {% endhint %}
 
 ### Steps to reproduce
@@ -59,6 +59,6 @@ The Early Booking Discount details are no longer available.
 {% endstep %}
 {% endstepper %}
 
-### Expected behavior (current design)
+### Expected behavior
 
 Deleting a rule deletes its related invoice data to keep the data model consistent.

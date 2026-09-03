@@ -18,28 +18,48 @@ Improper configuration may lead to unreadable tickets or inconsistent brand pres
 
 ## Field-by-Field Explanation
 
-<figure><img src="../../../.gitbook/assets/image (689).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/11.08.2026_16.42.09_REC.png" alt=""><figcaption></figcaption></figure></div>
 
-### **1. Faded Color**&#x20;
+### **1. Faded Color**
 
-&#x20;Secondary gradient color used in the ticket background. It works together with the Main Color to create the gradient effect in Version 3.\
+Secondary gradient color used in the ticket background. It works together with the Main Color to create the gradient effect in Version 3.\
 Used for visual depth and background transitions. It usually represents a lighter tone of the primary brand color.
 
-<figure><img src="../../../.gitbook/assets/image (690).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (690).png" alt=""><figcaption></figcaption></figure></div>
 
 ### 2. Main Color
 
 Primary brand color used in headers, highlight areas, buttons and key visual sections of the ticket. Defines the dominant visual identity of the ticket.
 
-<figure><img src="../../../.gitbook/assets/image (691).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (691).png" alt=""><figcaption></figcaption></figure></div>
 
 Important: The Main Color directly impacts visibility of headings and structural blocks.
 
-### 3. Customer Info Image&#x20;
+### 3. Text Color
 
-Main decorative image displayed in the Customer Information section of the ticket.&#x20;
+Brand-specific text color used for selected words displayed on the Version 3 ticket.
 
-<figure><img src="../../../.gitbook/assets/image (692).png" alt=""><figcaption></figcaption></figure>
+The **Text Color** field is displayed directly below **Main Color** in the Ticket Customization settings.
+
+When a color is selected, it is applied to the following words on the ticket:
+
+* **Brugernavn**
+* **Adgangskode**
+* **Annulleret**
+
+The selected color allows the brand to apply a specific text color to these elements without changing the **Main Color** used for the rest of the ticket.
+
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/11 aug. 2026, 16_50.jpeg" alt="" width="563"><figcaption></figcaption></figure></div>
+
+{% hint style="info" %}
+The Text Color setting applies only to the supported words: **Brugernavn**, **Adgangskode**, and **Annulleret**.
+{% endhint %}
+
+### 4. Customer Info Image
+
+Main decorative image displayed in the Customer Information section of the ticket.
+
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (692).png" alt=""><figcaption></figcaption></figure></div>
 
 **Instructions**
 
@@ -51,11 +71,11 @@ Main decorative image displayed in the Customer Information section of the ticke
 
 Best practice: Use compressed images optimized for PDF output to avoid large file size.
 
-### 4. Customer Info Decorator Image
+### 5. Customer Info Decorator Image
 
-&#x20;Small decorative graphical element displayed near the Customer Information section. Enhances visual appearance without affecting core content.
+Small decorative graphical element displayed near the Customer Information section. Enhances visual appearance without affecting core content.
 
-<figure><img src="../../../.gitbook/assets/image (693).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (693).png" alt=""><figcaption></figcaption></figure></div>
 
 **Instructions**
 
@@ -65,11 +85,11 @@ Best practice: Use compressed images optimized for PDF output to avoid large fil
 
 Typical usage: lines, abstract shapes, light branding accents.
 
-### 5. Hotel Star Representation&#x20;
+### 6. Hotel Star Representation
 
 Icon used to represent full hotel star classification. Defines how hotel rating stars appear visually on the ticket.
 
-<figure><img src="../../../.gitbook/assets/image (694).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (694).png" alt=""><figcaption></figcaption></figure></div>
 
 **Instructions**
 
@@ -79,11 +99,11 @@ Icon used to represent full hotel star classification. Defines how hotel rating 
 
 Note: The system repeats this icon based on the hotel’s star rating.
 
-### 6. Hotel Half Star Representation&#x20;
+### 7. Hotel Half Star Representation
 
-&#x20;Icon used when hotel rating includes a half star (e.g. 3.5 stars). Ensures accurate graphical representation of non-integer ratings.
+Icon used when hotel rating includes a half star (e.g. 3.5 stars). Ensures accurate graphical representation of non-integer ratings.
 
-<figure><img src="../../../.gitbook/assets/image (695).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (695).png" alt=""><figcaption></figcaption></figure></div>
 
 **Instructions**
 
@@ -93,7 +113,7 @@ Note: The system repeats this icon based on the hotel’s star rating.
 
 Consistency between full and half star icons is mandatory.
 
-### 7. Font Type&#x20;
+### 8. Font Type
 
 Defines the font file format used in the ticket.
 
@@ -106,7 +126,7 @@ Defines the font file format used in the ticket.
 
 Controls typography rendering in the generated document.
 
-<figure><img src="../../../.gitbook/assets/image (696).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (696).png" alt=""><figcaption></figcaption></figure></div>
 
 **Instructions**
 
@@ -114,30 +134,30 @@ Controls typography rendering in the generated document.
 2. Ensure uploaded font files match the selected format.
 3. Confirm licensing rights before using commercial fonts.
 
-### 8. Regular Font File&#x20;
+### 9. Regular Font File
 
 Font file used for standard text (paragraphs, passenger names, descriptions).\
 Defines readability and base typography of the ticket.
 
-<figure><img src="../../../.gitbook/assets/image (697).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (697).png" alt=""><figcaption></figcaption></figure></div>
 
 **Instructions**
 
-1. Upload the regular font file&#x20;
+1. Upload the regular font file
 2. Ensure file format matches selected Font Type.
 3. Test special characters and multilingual support.
 
 Important: If the font lacks character support, some languages may render incorrectly.
 
-### 9. Bold Font File
+### 10. Bold Font File
 
-Font file used for headings and emphasized text.&#x20;
+Font file used for headings and emphasized text.
 
-<figure><img src="../../../.gitbook/assets/image (698).png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (698).png" alt=""><figcaption></figcaption></figure></div>
 
 **Instructions**
 
-1. Upload the bold version of the same font family&#x20;
+1. Upload the bold version of the same font family
 2. Ensure font family consistency with the Regular font.
 3. Avoid mixing different font families unless approved by design guidelines.
 
@@ -150,6 +170,10 @@ After making any changes:
 3. Export the ticket.
 4. Validate:
    * Color contrast
+   * Main Color and Text Color
+   * Text Color applied to **Brugernavn**
+   * Text Color applied to **Adgangskode**
+   * Text Color applied to **Annulleret**
    * Image scaling
    * Star alignment
    * Font rendering
@@ -163,3 +187,5 @@ Never deploy branding changes directly in production without validation.
 * Ticket Customization is exclusive to Version 3.
 * Changes do not retroactively modify already generated tickets.
 * High-resolution images increase PDF size and processing time.
+* Text Color is displayed below Main Color in Ticket Customization.
+* Text Color applies to Brugernavn, Adgangskode and Annulleret.

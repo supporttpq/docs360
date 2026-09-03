@@ -54,4 +54,29 @@ Complete the following fields:
 \*The Display Rules are hardcoded, meaning they are predefined and cannot be modified by the customer. Any changes to these rules can only be made by a Tourpaq developer.
 {% endhint %}
 
+### Display rule and voucher creation
+
+The **Display rule** controls which stay-day values Tourpaq offers for an extra attribute. It does not create a voucher or change voucher timing.
+
+The selected value is stored with the extra in the booking. It can appear on the voucher when **Appears on voucher** is enabled.
+
+#### System behavior
+
+* **display as stay days choices** offers every day of the linked product's stay. Select the relevant service day before voucher generation.
+* **display default days** offers only the product's first stay day. This is usually the check-in date.
+* When **Is mandatory** is enabled, a value is required before Tourpaq generates the Extra Voucher.
+* When **Is mandatory** is disabled, an empty value does not block voucher generation.
+
+The **Display rule** limits the available value choices. It does not make the attribute mandatory.
+
+#### Example
+
+An equipment-rental extra runs from 10 June through 16 June:
+
+* **display as stay days choices** allows a selected value from 10 June through 16 June.
+* **display default days** allows only 10 June.
+* If **Is mandatory** is enabled and no value is selected, Tourpaq does not generate the Extra Voucher.
+
+See [vouchers.md](setup/vouchers.md "mention") for all voucher generation requirements.
+
 [^1]: View the information at the bottom of the page.

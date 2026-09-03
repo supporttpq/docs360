@@ -1,3 +1,30 @@
+---
+cover: ../../.gitbook/assets/hb_logo_7.png
+coverY: 0
+layout:
+  width: default
+  cover:
+    visible: false
+    size: full
+    mask: radial
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
+---
+
 # Hotel Beds / D-Edge / SkiStar
 
 ### Overview

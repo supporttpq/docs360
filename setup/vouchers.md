@@ -1,145 +1,100 @@
+---
+description: >-
+  How Tourpaq automatically generates hotel, extra, and discount vouchers, what
+  must be true first, and what to check when one is missing.
+---
+
 # Vouchers
 
-### Overview
+#### Overview
 
-Tourpaq creates voucher documents automatically.
+A voucher is the document Tourpaq generates to confirm a booked service - it is what the customer and the supplier use to prove what was booked. Tourpaq generates vouchers automatically, checking several times a day, in three types: Hotel vouchers (one per hotel stay), Extra category vouchers (one per booked extra, such as an equipment rental or activity), and Discount and supplement vouchers (one per discount or supplement applied to the booking). Some extras also carry attributes - extra details a supplier needs beyond the extra itself, such as an equipment size or a service date. When an attribute is marked Appears on voucher its value prints on the Extra Voucher; when it is marked Is mandatory, Tourpaq will not generate the voucher until that value is filled in.
 
-It runs several times per day.
+#### Purpose
 
-Vouchers can be created for hotels, extras, transfers, and discounts.
+* Provide customers and suppliers with the documents needed before departure.
+* Save time and reduce manual errors through automatic generation.
+* Verify that each booking meets voucher-generation conditions.
 
-### Purpose
+#### Preconditions
 
-Vouchers make sure customers and suppliers have the right documents before departure.
+Tourpaq generates a voucher only when all conditions are met:
 
-The automatic process saves time and helps avoid mistakes.
+* The booking status is **OK**.
+* The booking is fully paid.
+* A voucher of the same type does not already exist.
+* The departure date is not in the past.
+* The departure date is within **X days before departure**. Set **X** in **System Setup → Vouchers Generation**.
+* The hotel, extra, or discount has **Issue Voucher** enabled and a **Supplier** selected.
+* For an **Extra Package**, every extra in the package has a **Supplier** assigned.
+* Any attribute marked **Is mandatory** on a booked extra has a value.
 
-It also makes sure bookings meet the required conditions before a voucher is created.
+Before an attribute can appear on an **Extra Voucher**:
 
-### Types of vouchers
+* Create the attribute in [extras-attributes.md](../extras-attributes.md "mention").
+* Assign the attribute to the extra in [attributes.md](../extras-setup/extras-general-page/attributes.md "mention").
+* Enable **Appears on voucher** for the attribute.
+* Select the extra for the relevant passenger.
 
-* **Hotel vouchers**
-* **Extra category vouchers**
-* **Transfer vouchers**
-* **Discount and supplement vouchers**
+#### How-to
 
-### When vouchers are created
+Attribute values can also be entered during checkout or through **Edit Passenger**.
 
-Vouchers are created only when all rules below are met.
+**Enter attribute values for a passenger**
 
-1. **Timing**
-   * Vouchers are created **X days before departure**.
-   * Set **X** in **System Setup → Vouchers Generation**.
-2. **Booking Conditions**
-   * Booking status must be **OK**.
-   * The booking must be **fully paid**.
-   * A voucher of the same type must not already exist.
-3. **Extras Categories**
-   * If an extra needs additional details (attributes), you must fill them in first.
-4. **System Setup Constraints**
-   * Vouchers are not created for bookings with departure dates in the past.
-5. **Entity Requirements**
-   * The hotel/extra/transfer/discount must have:
-     * **Issue Voucher** enabled.
-     * A **Supplier** selected.
+1. In Tourpaq Office, open the booking and select **Passenger Details**.
+2. Select the passenger.
+3. Select the extra in its extra category.
+4.  Enter or select the attribute values.
 
-{% hint style="info" %}
-If a voucher is missing, start by checking the booking status and payment.
+    <figure><img src="../.gitbook/assets/28.08.2026_14.20.11_REC.png" alt="Passenger Details showing attribute value fields for the selected extra."><figcaption><p>Enter the selected extra's attribute values in Passenger Details.</p></figcaption></figure>
+5. Click **Save Passenger**.
 
-Then check that **Issue Voucher** and **Supplier** are set on the hotel/extra/transfer/discount.
-{% endhint %}
+**Regenerate vouchers after a change**
 
-### Troubleshooting
+1. In Tourpaq Office, open the booking.
+2. Select **Vouchers**.
+3. Click **Regenerate all vouchers**.
 
-If you expected a voucher but did not get one, check these common reasons:
+#### Field reference
 
-* The booking is not **OK**.
-* The booking is not **fully paid**.
-* It is not yet **X days before departure**.
-* A voucher of the same type already exists.
-* The hotel/extra category/transfer/discount does not have **Issue Voucher** enabled.
-* The hotel/extra category/transfer/discount is missing a **Supplier**.
-* Required extra attributes are not filled in.
+Configure extra attributes in **Extras → Extra → Attributes**.
 
-### Related pages
+<figure><img src="../.gitbook/assets/28.08.2026_14.17.51_REC.png" alt="Extra Attributes configuration for an extra in Tourpaq Office."><figcaption><p>Configure attributes for an extra in Extras.</p></figcaption></figure>
 
-* [QR code for vouchers](../booking/new-booking/qr-code-for-vouchers.md)
+| Field                                            | Description                                                  | Notes                                                                                                                                         |
+| ------------------------------------------------ | ------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Is mandatory**                                 | Requires a value before Tourpaq generates the Extra Voucher. | Ski Rental: **Height** uses the **Integer** type and has **Is mandatory** enabled. Tourpaq blocks the Extra Voucher when Height has no value. |
+| **Appears on voucher**                           | Prints the attribute value on the Extra Voucher.             | Ski Rental: **Start date** uses **display as stay days choices** and has **Appears on voucher** enabled. The voucher prints Start date.       |
+| **Automatically Select Default Attribute Value** | Populates the configured default value when enabled.         | The default value appears under **Passenger Details**.                                                                                        |
 
-### FAQ
+The **Attributers** fields collect Ski Rental's Height and Start date during checkout or in **Passenger Details**.
 
-<details>
+Set the voucher-generation timing in **System Setup → Vouchers Generation**.
 
-<summary><strong>When will vouchers be created?</strong></summary>
+<figure><img src="../.gitbook/assets/28.08.2026_11.12.39_REC.png" alt="Vouchers Generation settings in System Setup."><figcaption><p>Set the number of days before departure for voucher generation.</p></figcaption></figure>
 
-They are created automatically when you are **X days before departure**.
+| Field             | Description                                                   | Notes                                                                                                                                  |
+| ----------------- | ------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| **Issue Voucher** | Enables voucher generation for the hotel, extra, or discount. | Tourpaq does not generate a voucher unless this setting is enabled.                                                                    |
+| **Supplier**      | Selects the supplier for the hotel, extra, or discount.       | Every extra in an **Extra Package** requires a Supplier. Tourpaq does not generate a voucher for the package when any extra lacks one. |
 
-You set **X** in **System Setup → Vouchers Generation**.
+<figure><img src="../.gitbook/assets/28.08.2026_11.09.29_REC.png" alt="Voucher settings for a hotel, extra, or discount, including Issue Voucher and Supplier."><figcaption><p>Enable Issue Voucher and select a Supplier for the booked entity.</p></figcaption></figure>
 
-</details>
+| Control                     | Description                        | Notes                                                                                                                                                                           |
+| --------------------------- | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **View**                    | Opens an existing voucher.         | Available on the booking's **Vouchers** tab.                                                                                                                                    |
+| **Send**                    | Sends an existing voucher.         | Available on the booking's **Vouchers** tab.                                                                                                                                    |
+| **Regenerate voucher**      | Regenerates one voucher.           | Use after changes that affect that voucher.                                                                                                                                     |
+| **Regenerate all vouchers** | Regenerates all voucher documents. | Use after an attribute changes or when another Extra Voucher is generated after multiple vouchers already exist. This updates all vouchers with the latest booking information. |
 
-<details>
+<figure><img src="../.gitbook/assets/28.08.2026_13.40.15_REC.png" alt="Vouchers tab in a booking showing voucher regeneration controls."><figcaption><p>Regenerate voucher documents from the booking's Vouchers tab.</p></figcaption></figure>
 
-<summary><strong>Why wasn’t a voucher created for a booking?</strong></summary>
+<figure><img src="../.gitbook/assets/28.08.2026_13.38.12_REC.png" alt="Extra attribute settings showing mandatory and default-value options."><figcaption><p>Configure mandatory attributes and default attribute values.</p></figcaption></figure>
 
-Most common reasons:
+#### Related pages
 
-* The booking status is not **OK**.
-* The booking is not **fully paid**.
-* The hotel/extra/transfer/discount is missing **Issue Voucher** or **Supplier**.
-* It is not yet time to generate vouchers.
-
-</details>
-
-<details>
-
-<summary><strong>Will Tourpaq create vouchers for past departures?</strong></summary>
-
-No.
-
-Vouchers are not created for bookings with departure dates in the past.
-
-</details>
-
-<details>
-
-<summary><strong>Can vouchers be created for extras?</strong></summary>
-
-Yes, if the extra category is set to issue vouchers.
-
-If the extra requires extra details (attributes), those must be filled in first.
-
-</details>
-
-<details>
-
-<summary><strong>What does “Issue Voucher” mean?</strong></summary>
-
-It is a setting that tells Tourpaq that this hotel/extra/transfer/discount should produce a voucher.
-
-If it is not enabled, no voucher will be created for it.
-
-</details>
-
-<details>
-
-<summary><strong>Do I need a supplier to create vouchers?</strong></summary>
-
-Yes.
-
-The hotel/extra/transfer/discount must have a **Supplier** selected.
-
-</details>
-
-<details>
-
-<summary><strong>Is a voucher the same as a ticket?</strong></summary>
-
-No.
-
-A **voucher** is usually for services like hotels, transfers, or extras.
-
-A **ticket** is usually for travel documents and check-in information.
-
-See [Print Tickets](../tickets/print-tickets.md).
-
-</details>
+* [qr-code-for-vouchers.md](../booking/new-booking/qr-code-for-vouchers.md "mention") — Add QR codes to generated voucher documents.
+* [extras-attributes.md](../extras-attributes.md "mention") — Configure mandatory attributes and values used on extra vouchers.
+* [extra-suplier.md](../suppliers/extra-suplier.md "mention") — Create suppliers for extras and assign their services.
+* [general-settings](../brands/general-settings/ "mention") — Configure voucher numbering for a Brand.

@@ -64,7 +64,7 @@ The interface consists of:
 
 ### Configuration Grid
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Field Explanations
 
@@ -134,7 +134,7 @@ Path: **Hotel > Hotels > Extra Bed Cost**
 
 When a rule is created under **Extra Bed Cost** and the **EBD (Link to Extra Beds Discount)** option is enabled:
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * A corresponding rule is automatically generated under **Discount Extra Beds**
 

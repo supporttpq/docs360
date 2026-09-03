@@ -326,23 +326,11 @@ After performing a search, the **Price List** results are displayed in a table f
 
 Column titles are abbreviated to keep the table tidy. Most fields include **tooltips** that display the full column name. Below is a full list of columns with explanations:
 
-| Column        | Description                                                                                                                                                                                                                                                                                                                                      |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **PLTA ID**   | Price List Unique Identifier. Double-clicking the ID redirects to the **Web Booking Page** for the specific booking configuration.                                                                                                                                                                                                               |
-| **Hotel**     | Hotel Code corresponding to the booking configuration.                                                                                                                                                                                                                                                                                           |
-| **Room**      | Room Code corresponding to the booking configuration.                                                                                                                                                                                                                                                                                            |
-| **Dep. Date** | Departure date for the booking configuration.                                                                                                                                                                                                                                                                                                    |
-| **STAYS**     | Length of stay for interval 1 of the transport.                                                                                                                                                                                                                                                                                                  |
-| **FHA**       | Free Hotel Allotment – Number of rooms available for this departure. Default value represents a one-week trip (interval 1). Hover displays allotments for 1, 2, 3, or 4 weeks.                                                                                                                                                                   |
-| **FTA**       | Free Transport Allotment – Number of transport seats available. Default represents a one-week round trip. Hover displays available seats for 1, 2, 3, or 4 weeks round trip, as well as one-way outbound and inbound trips.                                                                                                                      |
-| **P1**        | Price for Interval 1.                                                                                                                                                                                                                                                                                                                            |
-| **P2**        | Price for Interval 2.                                                                                                                                                                                                                                                                                                                            |
-| **P3**        | Price for Interval 3.                                                                                                                                                                                                                                                                                                                            |
-| **P4**        | Price for Interval 4.                                                                                                                                                                                                                                                                                                                            |
-| **CH1**       | Child Price Interval 1 – Price for a child occupying an extra bed. Calculated using an extra bed discount applied to the Grundprins (base price).                                                                                                                                                                                                |
-| **Status**    | <p>Guarantee Availability of the PLTA (Transport + Hotel). Possible statuses:<br>- <strong>GREEN</strong> – Both transport and hotel have guaranteed allotments.<br>- <strong>YELLOW</strong> – One of transport or hotel lacks Guarantee Availability.<br>- <strong>PINK</strong> – Neither transport nor hotel has Guarantee Availability.</p> |
+<table><thead><tr><th width="374">Column</th><th>Description</th></tr></thead><tbody><tr><td><strong>PLTA ID</strong></td><td>Price List Unique Identifier. Double-clicking the ID redirects to the <strong>Web Booking Page</strong> for the specific booking configuration.</td></tr><tr><td><strong>Hotel</strong></td><td>Hotel Code corresponding to the booking configuration.</td></tr><tr><td><strong>Room</strong></td><td>Room Code corresponding to the booking configuration.</td></tr><tr><td><strong>Dep. Date</strong></td><td>Departure date for the booking configuration.</td></tr><tr><td><strong>STAYS</strong></td><td>Length of stay for interval 1 of the transport.</td></tr><tr><td><strong>FHA</strong></td><td>Free Hotel Allotment – Number of rooms available for this departure. Default value represents a one-week trip (interval 1). Hover displays allotments for 1, 2, 3, or 4 weeks.</td></tr><tr><td><strong>FTA</strong></td><td>Free Transport Allotment – Number of transport seats available. Default represents a one-week round trip. Hover displays available seats for 1, 2, 3, or 4 weeks round trip, as well as one-way outbound and inbound trips.</td></tr><tr><td><strong>P1</strong></td><td>Price for Interval 1.</td></tr><tr><td><strong>P2</strong></td><td>Price for Interval 2.</td></tr><tr><td><strong>P3</strong></td><td>Price for Interval 3.</td></tr><tr><td><strong>P4</strong></td><td>Price for Interval 4.</td></tr><tr><td><strong>CH1</strong></td><td>Child Price Interval 1 – Price for a child occupying an extra bed. Calculated using an extra bed discount applied to the Grundprins (base price).</td></tr><tr><td><strong>Status</strong></td><td>Guarantee Availability of the PLTA (Transport + Hotel). Possible statuses:<br>- <strong>GREEN</strong> – Both transport and hotel have guaranteed allotments.<br>- <strong>YELLOW</strong> – One of transport or hotel lacks Guarantee Availability.<br>- <strong>PINK</strong> – Neither transport nor hotel has Guarantee Availability.</td></tr><tr><td><strong>FP</strong></td><td>Final price. Price including discounts, supplements, and handling. Price per person, based on the number of adults from <strong>Ordinary beds</strong>.</td></tr><tr><td><strong>FD</strong></td><td>Final discount price. Price including discounts, supplements, and handling. Price per person, based on the number of adults from <strong>Ordinary beds</strong>.</td></tr><tr><td><strong>FG</strong></td><td>Final group price. Price including discounts, supplements, and handling. Price per person, based on the number of adults from <strong>Ordinary beds</strong>.</td></tr><tr><td><strong>FCH1P</strong></td><td>Final child 1 price. Price including discounts, supplements, and handling. Price per person.</td></tr><tr><td><strong>FCH1D</strong></td><td>Final child 1 discount price. Price including discounts, supplements, and handling. Price per person.</td></tr><tr><td><strong>FCH2P</strong></td><td>Final child 2 price. Price including discounts, supplements, and handling. Price per person.</td></tr><tr><td><strong>FCH2D</strong></td><td>Final child 2 discount price. Price including discounts, supplements, and handling. Price per person.</td></tr><tr><td><strong>FCH</strong></td><td>Final child price. Price including discounts, supplements, and handling. Price per person.</td></tr></tbody></table>
 
 ### Change Price Functionality <a href="#price-list-history" id="price-list-history"></a>
+
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (735).png" alt=""><figcaption></figcaption></figure>
 
@@ -387,23 +375,59 @@ At the beginning of each row, there are tree icons:
 
 #### Column Filters <a href="#column-filters" id="column-filters"></a>
 
-<figure><img src="../.gitbook/assets/image (33) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+The Price List column selector allows users to choose which price types and intervals are displayed.
+
+<figure><img src="../.gitbook/assets/27.08.2026_10.18.37_REC.png" alt=""><figcaption></figcaption></figure>
 
 **Column Filters** allow you to display specific portions of information from the Price List grid.
 
+* **F** - Select **F** to display the Final Prices for the selected price groups. When F is selected, the corresponding Final Price columns are displayed.
+* **P** - Select **P** to display the original Price List Prices.&#x20;
 * Each **interval group** has a corresponding checkbox: **Interval 1 (P1), Interval 2 (P2), Interval 3 (P3), Interval 4 (P4)**.
 * Example: If **ALL PRICES (P1, P2, P3, P4)** is checked and **Interval 1** is selected as the active filter, only the **P1** column will be displayed in the table.
 * Columns **not grouped into intervals** are always shown by default.
 
-#### Discounts <a href="#discounts" id="discounts"></a>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (34) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+### Saving the column configuration
 
-### Relation PL & Related PL <a href="#relation-pl--related-pl" id="relation-pl--related-pl"></a>
+The selected Price List columns are saved **per browser**.
 
-These are covered in [Relational price list](../relational-price-list.md)
+When the Price List is opened again, it uses the column configuration from the previous session.
 
-#### Also Update Prices on Transports <a href="#also-update-prices-on-transports" id="also-update-prices-on-transports"></a>
+The system no longer automatically loads the left-most saved view when opening the Price List.
+
+This means users can keep the configuration they normally use without having to select the required columns every time.
+
+The saved configuration includes:
+
+* F / Final Price selection
+* P / Price List Price selection
+* Price groups
+* Interval selections
+
+#### Example
+
+A yield user who normally works with Final Prices for intervals 1 and 2 can configure:
+
+**F → PRICES → DISCOUNTS → I1 → I2**
+
+After saving the configuration, the same columns are displayed when the Price List is opened again in the same browser.
+
+The P selector controls the following price types:
+
+* Pn
+* Dn
+* Gn
+* CH1Pn
+* CH1Dn
+* CH2Pn
+* CH2Dn
+* CHn
+
+where **n** represents the interval number.
+
+#### Update Prices on Transports <a href="#also-update-prices-on-transports" id="also-update-prices-on-transports"></a>
 
 The fields are displayed only if the hotel is selected in the search form.
 
@@ -438,3 +462,235 @@ This function allows prices to be **automatically recalculated when the Transpor
 * Example: If **P1** was previously updated using the **Also Update Prices on Transports** tool, and the **Transport Price** is modified, **P1** will be recalculated accordingly based on the price list for that transport.
 
 ![!](https://docs.tourpaq.com/assets/images/updatePriceBasedOnTransport-b76eb367aade9faa3c6b2428cdd5760c.png)
+
+## How Final Prices are calculated
+
+The Final Price is the **price per person for a booking**, including:
+
+* Discounts
+* Supplements
+* Handling
+
+It does not include extras.
+
+The calculation is designed to reproduce the price that will appear on the web for the same package configuration.
+
+### Adult price calculation
+
+The calculation uses a standard booking configuration based on the room.
+
+#### Number of passengers
+
+The number of adult passengers is taken from the room's:
+
+**Ordinary beds**
+
+For example:
+
+* Ordinary beds = 1 → calculation uses 1 adult
+* Ordinary beds = 2 → calculation uses 2 adults
+* Ordinary beds = 3 → calculation uses 3 adults
+
+#### Adult age
+
+The adult passengers use the age configured as:
+
+**System Setup → Other Settings → Default Adult Age**
+
+If **Default Adult Age** is not configured, the calculation uses age **99**.
+
+<figure><img src="../.gitbook/assets/27.08.2026_14.20.21_REC.png" alt=""><figcaption></figcaption></figure>
+
+#### Price per person
+
+The total calculated booking price is divided by the number of ordinary beds:
+
+**Final Price = Total booking price ÷ Number of ordinary beds**&#x20;
+
+{% hint style="info" %}
+The formula uses the average of ordinary beds - Ex: if a discount/supplement is used only for the first passenger, the final price is calculated from the booking price after the supplement is applied.
+{% endhint %}
+
+The same approach is used for the Final P and Final D prices.
+
+***
+
+### Child price calculation
+
+Child Final Prices are calculated using a booking configuration containing up to two children.
+
+The adult configuration remains the same as for the adult calculation.
+
+The child age used for the calculation is: **Max Child Age ÷ 2**
+
+This age is used to create the child booking scenario used for the Final Child Price calculation.
+
+**Max Child Age Priority**
+
+If a **Max Child Age** value is configured for a specific hotel, the system will use the hotel's value, even if a different value is configured in **System Setup**.
+
+If no **Max Child Age** value is configured for the hotel, the system will fall back to the value defined in **System Setup**.
+
+The system first checks whether a **Max Child Age** is configured for the hotel.
+
+If a **Max Child Age** is configured at hotel level, the system uses this value for the calculation, regardless of the value configured in **System Setup**.
+
+**Example:**
+
+* Hotel Max Child Age: **12**
+* System Setup Max Child Age: **14**
+
+The system uses the **Hotel Max Child Age = 12**.
+
+Child age used for the calculation:
+
+**12 ÷ 2 = 6**
+
+The system uses a child passenger with age **6** when calculating the **Final Child Price**.
+
+If no **Max Child Age** is configured for the hotel, the system falls back to the **Max Child Age** configured in **System Setup**.
+
+**Example:**
+
+* Hotel Max Child Age: **Not set**
+* System Setup Max Child Age: **14**
+
+The system uses the **System Setup Max Child Age = 14**.
+
+Child age used for the calculation:
+
+**14 ÷ 2 = 7**
+
+The system uses a child passenger with age **7** when calculating the **Final Child Price**.
+
+**Validation priority:**
+
+1. **Hotel Max Child Age** is checked first.
+2. If the hotel value is not configured, the system uses **System Setup Max Child Age**.
+
+{% hint style="info" %}
+The calculation of the final price will be done when the other prices are calculated.\
+E.g., if there is a P price, the corresponding FP price shall be updated at the same time.
+{% endhint %}
+
+***
+
+## Example: Supplement
+
+Consider a double room with:
+
+* Ordinary beds: 2
+* Price List P1: 4,000 SEK
+* Room supplement: 200 SEK
+* No discounts
+
+The Price List P1 remains: **P1 = 4,000 SEK**
+
+The Final Price calculation includes the supplement.
+
+The resulting Final Price is calculated from the booking price after the supplement is applied.
+
+The important distinction is:
+
+| Price      | Value                          |
+| ---------- | ------------------------------ |
+| P1         | 4,000 SEK                      |
+| Supplement | +200 SEK                       |
+| FP1        | Calculated final selling price |
+
+The **P1 value is not changed** to 4,200 SEK.
+
+Instead, **FP1** represents the calculated final selling price. (FP1 = 4200 SEK/pers)
+
+***
+
+## Example: Discount
+
+Consider a trip with:
+
+* Price List P1: 5,000 SEK
+* Discount: 500 SEK
+* No supplements
+
+The Price List values remain: **P1 = 5,000 SEK**
+
+The discount is included when calculating the Final Discount Price.
+
+The resulting Final Price represents the selling price after the discount has been applied.
+
+| Price     | Value                          |
+| --------- | ------------------------------ |
+| P1        | 5,000 SEK                      |
+| Discount  | -500 SEK                       |
+| FP1       | Calculated final selling price |
+
+Again, the original **P1 value is not modified**.
+
+The resulting Final Price represents the selling price after the discount  has been applied                    (**FP1 = 4500 SEK/pers)**
+
+## Example: Discount + Supplement
+
+Consider a trip with:
+
+* Price List P1: 5,000 SEK
+* Discount: 500 SEK
+* Supplement: 1000 SEK
+
+| Price      | Value                          |
+| ---------- | ------------------------------ |
+| P1         | 5,000 SEK                      |
+| Discount   | -500 SEK                       |
+| Supplement | 1000 SEK                       |
+| FP1        | Calculated final selling price |
+
+The Price List values remain: **P1 = 5,000 SEK**
+
+The discount and supplement are included when calculating the Final Discount Price.
+
+The resulting Final Price represents the selling price after the discount and supplement  have been applied. (FP1 = 5000 SEK - 500 SEK + 1000 SEK = 5500 SEK/pers)
+
+{% hint style="info" %}
+The same examples also apply for D1, G1, CH1, C1H1, C2H1 for all intervals
+
+C1H1 & C2H1 are displayed in the pricelist only when "Child profit margin" option is checked by a Super Administrator. If isn't checked  the CH1 appears.
+{% endhint %}
+
+***
+
+## Final Prices and profit calculation
+
+Profit calculations in the Price List are based on the **Final Price**, rather than the original P/D/G values.
+
+This allows yield users to see the forecasted profit based on the price that the customer will actually pay after applicable discounts, supplements, and handling.
+
+The profit columns include:
+
+| Column   | Description                                                                |
+| -------- | -------------------------------------------------------------------------- |
+| **PP**   | Profit forecast based on the final price. For one pax. Interval n          |
+| **PD**   | Profit forecast based on the final discount price. For one pax. Interval n |
+| **PG**   | Profit forecast based on the final group price. For one pax. Interval n    |
+| **PCH1** | Profit forecast based on the final child 1 price. For one pax. Interval n  |
+| **PCH2** | Profit forecast based on the final child 2 price. For one pax. Interval n  |
+
+The child profit columns PCH1 and PCH2 are handled by the child price adjustment functionality.
+
+The tooltip on the profit column heading explains that the forecast is based on the corresponding Final Price.
+
+***
+
+## PD tooltip
+
+The tooltip displayed for a PD price explains the costs and adjustments included in the price.
+
+The tooltip includes:
+
+| Item            | Description                           |
+| --------------- | ------------------------------------- |
+| **Discounts**   | The sum of all eligible discounts     |
+| **Supplements** | The sum of all eligible supplements   |
+| **Handling**    | The sum of all eligible handling fees |
+
+This makes it possible to understand why the Final Price differs from the original Price List Price.
+
+<figure><img src="../.gitbook/assets/27.08.2026_16.37.33_REC.png" alt=""><figcaption></figcaption></figure>
