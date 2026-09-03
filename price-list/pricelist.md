@@ -427,15 +427,7 @@ The P selector controls the following price types:
 
 where **n** represents the interval number.
 
-#### Discounts <a href="#discounts" id="discounts"></a>
-
-<figure><img src="../.gitbook/assets/image (34) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-### Relation PL & Related PL <a href="#relation-pl--related-pl" id="relation-pl--related-pl"></a>
-
-These are covered in [Relational price list](../relational-price-list.md)
-
-#### Also Update Prices on Transports <a href="#also-update-prices-on-transports" id="also-update-prices-on-transports"></a>
+#### Update Prices on Transports <a href="#also-update-prices-on-transports" id="also-update-prices-on-transports"></a>
 
 The fields are displayed only if the hotel is selected in the search form.
 
