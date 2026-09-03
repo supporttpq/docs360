@@ -120,53 +120,47 @@ The Departure and Arrival filters apply to transport reporting for:
 
 This allows reporting to be limited to the airport-specific transport information required for each departure and arrival.
 
-### Example
+#### Example
 
 Assume a transport supplier receives different reporting for transports operating through different airports.
 
-A communication rule can be configured as follows:
+A communication rule can be configured using the **OUT/HOME**, **Departure**, and **Arrival** filters. These filters can be used independently or together to determine which transports the rule applies to.
+
+For example, the following rule is configured:
 
 | OUT/HOME | DEPARTURE | ARRIVAL  |
 | -------- | --------- | -------- |
 | Outbound | Billund   | Tenerife |
 
-The rule is used only for transports matching:
+The rule is used only for transports matching **all configured filters**:
 
 * **OUT/HOME:** Outbound
 * **Departure:** Billund
 * **Arrival:** Tenerife
 
-A transport departing from another airport does not match this communication rule, even if its arrival is Tenerife.
+Therefore:
 
-Similarly, a transport arriving at another airport does not match the rule, even if its departure is Billund.
+* A transport departing from **Billund** and arriving in **Tenerife** matches the rule.
+* A transport departing from another airport does **not** match the rule, even if its arrival is Tenerife.
+* A transport arriving at another airport does **not** match the rule, even if its departure is Billund.
+* A transport that is not **Outbound** does **not** match the rule.
 
-If multiple departures or arrivals are selected, a transport can match any of the selected values for that filter.
+The filters are optional and can be combined as needed:
 
-### Multi-Select and Show Code
+| Departure      | Arrival        | Result                                                                                                                           |
+| -------------- | -------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| Not configured | Not configured | The rule is not restricted by departure or arrival. It can apply to transports regardless of their departure or arrival airport. |
+| Configured     | Not configured | Only transports matching a selected departure use the rule.                                                                      |
+| Not configured | Configured     | Only transports matching a selected arrival use the rule.                                                                        |
+| Configured     | Configured     | Only transports matching both a selected departure and arrival use the rule.                                                     |
 
-The **DEPARTURE** and **ARRIVAL** fields support multiple selections.
+If multiple departures or arrivals are selected, a transport can match **any of the selected values** for that filter.
 
-Use the multi-select dialog to:
+For example, if **Departure** is configured with **Billund** and **Copenhagen**, a transport departing from either airport can match the rule. If **Arrival** is also configured with **Tenerife** and **Gran Canaria**, the transport must arrive at one of those airports.
 
-1. Open the Departure or Arrival selector.
-2. Select one or more values.
-3. Optionally enable **Show code** to display the corresponding codes.
-4. Confirm the selection.
+This allows transport supplier communication rules to be configured with specific airport conditions while keeping the filters flexible. Depending on the configuration, a rule can apply to all transports or only to transports operating through specific departure and/or arrival airports.
 
-The **Show code** option only changes how the values are displayed in the selector. It does not change the filtering behavior.
-
-### Configuration Behavior
-
-The filters are optional and can be used independently or together:
-
-| Departure      | Arrival        | Result                                                                         |
-| -------------- | -------------- | ------------------------------------------------------------------------------ |
-| Not configured | Not configured | The rule is not restricted by departure or arrival.                            |
-| Configured     | Not configured | Only transports matching a selected departure use the rule.                    |
-| Not configured | Configured     | Only transports matching a selected arrival use the rule.                      |
-| Configured     | Configured     | Only transports matching both the selected departure and arrival use the rule. |
-
-These filters allow transport supplier communication rules to be configured with airport-specific conditions, ensuring that transport reporting is sent using the appropriate communication configuration.
+I think this is cleaner than having separate **Example** and **Configuration Behavior** sections because the table and the example now explain the same matching logic in one place.
 
 ### Deleting a rule
 
