@@ -109,12 +109,6 @@ Tooltip on **Room Type Code**: Note: the hotel code will automatically be append
 | **Infant Beds** | Gives each infant in the room an extra bed.                                       | Editable only when **Infant** is checked; greyed out otherwise. Checking it greys out and clears **Max Infants** — the two fields are mutually exclusive. Unchecked by default.                                           |
 | **Max Infants** | Caps the number of infants allowed in the room type. Leave it empty for no limit. | Editable only when **Infant** is checked and **Infant Beds** is unchecked. Accepts `0`–`2`; Tourpaq rejects a higher value and blocks **Save** with _"The Max infants field should be maximum 2!"_ until it is corrected. |
 
-Tooltip on **Infant**: If checked, infants are allowed in the room type.
-
-Tooltip on **Infant Beds**: When checked, infants will use an extra bed in the room type.
-
-Tooltip on **Max Infants**: Specify the maximum number of infants in the room type. If the value is empty the hotel has not set a limit.
-
 {% hint style="info" %}
 An infant who does not use **Infant Beds** still needs a **Max Infants** limit if you want to cap how many can share the room outside its normal occupancy — leaving the field empty means the hotel has not set a limit. An infant using **Infant Beds** instead counts against **Max Extra** like any other extra occupant, so **Max Infants** does not apply and is disabled.
 {% endhint %}
