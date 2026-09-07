@@ -1,7 +1,7 @@
 ---
 description: >-
   Create hotel-only bookings in Tourpaq Office using a car-type transport as a
-  placeholder. Covers setup, allotment (Fix quota), pricing, and FAQ.
+  placeholder. Covers setup, allotment (Fix quota), pricing.
 ---
 
 # Hotel Only Bookings
