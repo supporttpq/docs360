@@ -76,6 +76,16 @@ Then:
 2. Select the hotel/room as usual.
 3. Complete passenger details, extras, and payments as normal.
 
+#### Pricing
+
+The total price shown in the Hotel Only pop-up (**P1**) is the per-night rate multiplied by the length of stay.
+
+This total does not include supplements or discounts from the pricelist. Supplements and discounts are not applied on a per-night basis, so they cannot currently be summed into a single per-stay total for Hotel Only — this is expected behaviour, not a defect.
+
+{% hint style="info" %}
+A total that includes supplements and discounts for Hotel Only ("Final Price") is not currently available. It is a possible future enhancement, not yet built.
+{% endhint %}
+
 ### Purpose
 
 Use hotel-only bookings when you need a standard booking flow, but without real transport.
@@ -83,5 +93,5 @@ Use hotel-only bookings when you need a standard booking flow, but without real 
 This keeps:
 
 * availability and allotment logic consistent (Fix quota)
-* pricing logic consistent (pricelists, discounts, supplements)
+* pricing logic consistent (pricelists; supplements and discounts apply to individual room prices, but are not reflected in the Hotel Only total — see Pricing)
 * exports and reporting consistent (still a booking with a “transport”)
