@@ -8,6 +8,8 @@ This configuration allows administrators to define transport routes, assign supp
 
 <figure><img src="../.gitbook/assets/rt new.png" alt=""><figcaption></figcaption></figure>
 
+The Real Transport can then be used by a Transport to define the flights used in one or both legs.
+
 <figure><img src="../.gitbook/assets/20.08.2026_13.19.20_REC.png" alt=""><figcaption></figcaption></figure>
 
 ***
