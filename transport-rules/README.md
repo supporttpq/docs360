@@ -42,4 +42,13 @@ The purpose of this functionality is to provide a flexible framework for handlin
 * **Filter row (Code, Departure, Arrival, Clear)**
   * Located above the table.
   * Allows filtering by **rule code**, **departure airport**, or **arrival airport**.
+  * **Show hidden** - Includes transport rules that are hidden from normal selection. With this checkbox cleared (the default), hidden rules are left out of the result set entirely; enabling it adds them back into the list so they can be reviewed.
   * "Clear" resets all applied filters.
+
+**Hidden rows** - When **Show hidden** is enabled, any transport rule that is hidden is displayed with its entire table row highlighted in red, distinguishing it at a glance from active, non-hidden rules. There is no separate icon or tooltip marking a hidden rule; the red row shading is the only visual indicator.
+
+<figure><img src="../.gitbook/assets/07.09.2026_14.26.45_REC.png" alt=""><figcaption></figcaption></figure>
+
+What marks a transport rule as hidden? - This filter relates to the transport rule **Status** set in the [Transport Rule](create-transport-rule.md).&#x20;
+
+<figure><img src="../.gitbook/assets/07.09.2026_14.33.26_REC.png" alt=""><figcaption></figcaption></figure>

@@ -174,10 +174,21 @@ Max stops number, Max connection time, Max travel time fields became editable on
 
 #### Settings
 
+These fields refer to the transports attached to the rule, and control their visibility, cancellation condition, payment rule, and change rule service.
+
 <figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* **Status** – Defines the rule’s visibility in the system (e.g., Visible / Hidden).
-* **Hide as filter on lists** – If checked, this rule will not appear as a filter option in lists.
-* **Cancelation condition\*** - Select the cancellation condition that applies to this transport rule (mandatory).
-* **Payment Rule** – Select a payment rule applicable to this transport.
+* **Status** – Defines the rule’s visibility in the system (e.g., Visible / Hidden). Setting Status to Hidden removes the rule from the Transport Rule list by default; a Show hidden checkbox on the list lets you bring hidden rules back into view.
+* **Hide as filter on lists** – If checked, the transport attached to this rule does not appear as a filter option in lists — this applies to the attached transport, not to the rule itself. (Ex: Export - List Cancellation List - Transport Filter).
+* **Cancelation condition\*** - Select the cancellation condition that applies to the transport attached to this rule (mandatory).
+* **Payment Rule** – Select the payment rule applicable to the transport attached to this rule, not to the rule itself.
 * **Use change rule service** – If checked, activates the change rule service for this transport.
+
+{% hint style="info" %}
+A Show hidden checkbox on the Transport Rule list toggles hidden rules back into view.
+
+1. When Show hidden is not checked, a hidden Transport Rule searched by code does not appear as an option, either in Search or in the list.
+2. When Show hidden is checked, the hidden Transport Rule appears as an option in Search, and in the list it is shown highlighted in red.
+{% endhint %}
+
+<figure><img src="../.gitbook/assets/07.09.2026_15.04.37_REC.png" alt=""><figcaption></figcaption></figure>
