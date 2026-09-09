@@ -51,10 +51,17 @@ When a flight change is submitted, a **notification email** is sent to the guest
 
 * The email contains a **confirmation link** for the guest to acknowledge the change.
 
-If the guest **does not confirm receipt**, the system will:
+If the guest **does not confirm receipt**, the system will folow the settings made in system setup regarding Flight Change Schedules:
 
-* **Resend the email** several times.
+* **First resend**
+* **Second resend**
 * Then, **send an SMS reminder** asking the guest to check their email and confirm the change.
+
+Example: if there is a departure in 20 days, and there is a flight change, in the system setup you can set when to resend the flight change email:&#x20;
+
+* First resend - 10 days before departure,&#x20;
+* Second resend - 5 days before departure and&#x20;
+* SMS sending - 1 day before departure.
 
 Within the system, it is easy to identify guests who **have not yet confirmed** receipt.
 
