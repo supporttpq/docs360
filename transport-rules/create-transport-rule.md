@@ -183,5 +183,3 @@ These fields refer to the transports attached to the rule, and control their vis
 * **Cancelation condition\*** - Select the cancellation condition that applies to the transport attached to this rule (mandatory).
 * **Payment Rule** – Select the payment rule applicable to the transport attached to this rule, not to the rule itself.
 * **Use change rule service** – If checked, activates the change rule service for this transport.
-
-<figure><img src="../.gitbook/assets/07.09.2026_15.04.37_REC.png" alt=""><figcaption></figcaption></figure>
