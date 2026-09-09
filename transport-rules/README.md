@@ -8,7 +8,7 @@ The **Transport Rules** module allows administrators to define and manage rules 
 
 The purpose of this functionality is to provide a flexible framework for handling route-specific transport regulations, enabling the system to apply pricing, restrictions, or special conditions automatically. By centralizing these rules, administrators ensure consistent application across bookings and departures.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/09.09.2026_15.38.43_REC.png" alt=""><figcaption></figcaption></figure>
 
 ### **Columns in the Transport Rules Table**
 
@@ -39,13 +39,15 @@ The purpose of this functionality is to provide a flexible framework for handlin
 * **Pencil icon (✏️) -** Used to edit an existing transport rule.
 * **Trash bin icon (🗑️) -** Deletes the selected transport rule.
 * **Create button (top right) -** Allows users to create a new transport rule by defining all the above fields.
-* **Filter row (Code, Departure, Arrival, Clear)**
+* **Filter row (Code, Departure, Arrival, Show hidden, Clear)**
   * Located above the table.
-  * Allows filtering by **rule code**, **departure airport**, or **arrival airport**.
-  * **Show hidden** - Includes transport rules that are hidden from normal selection. With this checkbox cleared (the default), hidden rules are left out of the result set entirely; enabling it adds them back into the list so they can be reviewed.
+  * Allows filtering by **rule code**, **departure airport**, **arrival airport or visible/hidden rule**.
+  * **Show hidden** - When not selected (default), only Visible Transport Rules are displayed. When selected, both Visible and Hidden Transport Rules are shown, with Hidden rules highlighted in red.
   * "Clear" resets all applied filters.
 
-**Hidden rows** - When **Show hidden** is enabled, any transport rule that is hidden is displayed with its entire table row highlighted in red, distinguishing it at a glance from active, non-hidden rules. There is no separate icon or tooltip marking a hidden rule; the red row shading is the only visual indicator.
+Hidden Transport Rules are displayed with their entire table row highlighted in red, making them easy to identify compared to visible rules.
+
+There is no separate icon or tooltip for Hidden rules; the red row highlighting is the only visual indicator.
 
 <figure><img src="../.gitbook/assets/07.09.2026_14.26.45_REC.png" alt=""><figcaption></figcaption></figure>
 
