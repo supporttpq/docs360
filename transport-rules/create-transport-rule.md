@@ -178,17 +178,8 @@ These fields refer to the transports attached to the rule, and control their vis
 
 <figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* **Status** – Defines the rule’s visibility in the system (e.g., Visible / Hidden). Setting Status to Hidden removes the rule from the Transport Rule list by default; a Show hidden checkbox on the list lets you bring hidden rules back into view.
+* **Status** – Defines the rule’s visibility in the system (Visible / Hidden). By default, only rules with Status = Visible are displayed in the Transport Rule list. When Show hidden is enabled, both Visible and Hidden rules are displayed, with Hidden rules highlighted in red.
 * **Hide as filter on lists** – If checked, the transport attached to this rule does not appear as a filter option in lists — this applies to the attached transport, not to the rule itself. (Ex: Export - List Cancellation List - Transport Filter).
 * **Cancelation condition\*** - Select the cancellation condition that applies to the transport attached to this rule (mandatory).
 * **Payment Rule** – Select the payment rule applicable to the transport attached to this rule, not to the rule itself.
 * **Use change rule service** – If checked, activates the change rule service for this transport.
-
-{% hint style="info" %}
-A Show hidden checkbox on the Transport Rule list toggles hidden rules back into view.
-
-1. When Show hidden is not checked, a hidden Transport Rule searched by code does not appear as an option, either in Search or in the list.
-2. When Show hidden is checked, the hidden Transport Rule appears as an option in Search, and in the list it is shown highlighted in red.
-{% endhint %}
-
-<figure><img src="../.gitbook/assets/07.09.2026_15.04.37_REC.png" alt=""><figcaption></figcaption></figure>

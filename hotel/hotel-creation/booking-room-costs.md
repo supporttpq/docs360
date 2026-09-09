@@ -1,4 +1,4 @@
-# Booking Room Costspta-ma pe
+# Booking Room Costs
 
 ### Overview
 
@@ -207,9 +207,7 @@ Example:
 
 ### Extra beds
 
-Booking Room Cost only affects ordinary beds.
-
-Extra beds always use the original Room Cost.
+The Extra bed discount uses the normal room cost as a base. Then it is subtracted from the booking room cost to give you your final cost.
 
 ***
 
