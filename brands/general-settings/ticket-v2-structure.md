@@ -8,7 +8,7 @@ description: >-
 
 ### Overview
 
-Ticket Version 2 (BILLET) is one of three selectable e-ticket layouts, configured on the General Settings page, under Ticket → Version.&#x20;
+Ticket Version 2 (BILLET) is one of three selectable e-ticket layouts, configured on the General Settings page, under Ticket → Version.
 
 <figure><img src="../../.gitbook/assets/11.09.2026_09.09.33_REC.png" alt=""><figcaption></figcaption></figure>
 
@@ -25,7 +25,7 @@ Use this page to:
 
 ### Preconditions
 
-* The booking exists and contains at least one product (hotel, transport, or similar) — see Print Tickets.
+* The booking exists and contains at least one product (hotel, transport, or similar).
 * The brand's ticket layout is set to Version 2 on the General Settings page, under Ticket → Version.
 * You know which Extras and discounts are configured on the booking, so you can locate them on the printed ticket.
 * For Bus or Train segments, you know the pickup point configured on the transport's route, since it determines the ticket's Fra / Från value.
@@ -42,7 +42,7 @@ Go to System Setup → Brands → General, open the brand, expand Ticket, and se
 {% step %}
 Generate the ticket
 
-Go to Booking → Open Booking → Tickets / Print, enter the Booking No, and use Print One Ticket or Send E-Ticket as described in Print Tickets.
+Go to Booking → Open Booking → Click Print Ticket ->Save
 {% endstep %}
 {% endstepper %}
 
@@ -54,49 +54,49 @@ Ticket Customization is not available on this layout. Brand colours, fonts, star
 
 ### Field Reference
 
-#### Page 1 — Booking summary, itinerary and payment plan
+### Page 1 — Booking summary, itinerary and payment plan
 
 <figure><img src="../../.gitbook/assets/11.09.2026_09.28.35_REC.png" alt=""><figcaption></figcaption></figure>
 
-#### Booking header &#x20;
+#### Booking header
 
 <figure><img src="../../.gitbook/assets/11.09.2026_09.38.14_REC.png" alt=""><figcaption></figcaption></figure>
 
 Left column:
 
-* Shows Booking nr.,&#x20;
+* Shows Booking nr.,
 * the customer's name and address,
-* Bestillingsdato (booking date),&#x20;
-* Udskriftsdato (print date),&#x20;
-* Ferierådgiver (travel consultant),&#x20;
+* Bestillingsdato (booking date),
+* Udskriftsdato (print date),
+* Ferierådgiver (travel consultant),
 
 Right column:
 
-* The brand's company details (name, address, phone, CVR No.).  The company details come from General Settings → Ticket&#x20;
+* The brand's company details (name, address, phone, CVR No.). The company details come from General Settings → Ticket
 * Company logo / banner - Displays the brand's Logo and Banner images from General Settings
 
 <figure><img src="../../.gitbook/assets/11.09.2026_09.40.30_REC.png" alt=""><figcaption></figcaption></figure>
 
 \
-Min billet - login:&#x20;
+Min billet - login:
 
 A boxed callout with the Bookingnr. and Adgangskode Internet (web password) the customer uses to log in to Customer Center
 
-#### Rejseplan (itinerary)&#x20;
+#### Rejseplan (itinerary)
 
 One row per transport segment in the booking. Flight segments show:
 
-* Afrejsedato (departure date),&#x20;
-* Afgang (departure time),&#x20;
+* Afrejsedato (departure date),
+* Afgang (departure time),
 * From (departure airport),
-* Flyselskab (airline),&#x20;
-* Fly nr. (flight number),&#x20;
-* Ankomstdato,&#x20;
-* Ankomst (arrival time),&#x20;
-* Flytid (flight duration),&#x20;
+* Flyselskab (airline),
+* Fly nr. (flight number),
+* Ankomstdato,
+* Ankomst (arrival time),
+* Flytid (flight duration),
 * Til (arrival airport).
 
-&#x20;Bus and Train segments use the same table structure as Flight, with brand-specific column names matching the brand's language.
+Bus and Train segments use the same table structure as Flight, with brand-specific column names matching the brand's language.
 
 <figure><img src="../../.gitbook/assets/11.09.2026_09.54.59_REC.png" alt=""><figcaption></figcaption></figure>
 
@@ -106,72 +106,88 @@ One row per transport segment in the booking. Flight segments show:
 * No summary block appears above the table — the departure date, arrival date, and passenger count are shown only in the detailed rows.
 * No `Kørselsvejledning` (driving/collection instructions) line prints for Bus and Train segments.
 
-#### Opholdet (accommodation)&#x20;
+#### Opholdet (accommodation)
 
 <figure><img src="../../.gitbook/assets/11.09.2026_09.59.15_REC.png" alt=""><figcaption></figcaption></figure>
 
-One row per stay:&#x20;
+One row per stay:
 
-* Rejsemål (destination),&#x20;
-* Hotel (hotel name),&#x20;
-* a custom star-rating text,&#x20;
-* Ankomst (arrival day),&#x20;
-* Afrejse (departure day),&#x20;
-* Antal (number of units),&#x20;
-* Værelser (room type).&#x20;
+* Rejsemål (destination),
+* Hotel (hotel name),
+* a custom star-rating text,
+* Ankomst (arrival day),
+* Afrejse (departure day),
+* Antal (number of units),
+* Værelser (room type).
 
-#### Rejsedeltagere (passengers)&#x20;
+#### Rejsedeltagere (passengers)
 
 <figure><img src="../../.gitbook/assets/11.09.2026_10.05.17_REC.png" alt=""><figcaption></figcaption></figure>
 
-One row per traveller:&#x20;
+One row per traveller:
 
-* Bookingnr.,&#x20;
-* Navn (passenger name),&#x20;
-* Fødselsdato (date of birth),&#x20;
-* Værelser (room type),&#x20;
-* Transport,&#x20;
-* Pension (Board Type),&#x20;
-* Price. Followed by Total Price, Deposit, and Skyldigt (amount due).&#x20;
+* Bookingnr.,
+* Navn (passenger name),
+* Fødselsdato (date of birth),
+* Værelser (room type),
+* Transport,
+* Pension (Board Type),
+* Price. Followed by Total Price, Deposit, and Skyldigt (amount due).
 
-#### Betalingsplan (payment plan)&#x20;
+#### Betalingsplan (payment plan)
 
 <figure><img src="../../.gitbook/assets/11.09.2026_10.08.06_REC.png" alt=""><figcaption></figcaption></figure>
 
-One row per rate (deposit, balance) with amount and due date, followed by IBAN-number and BIC-kode/SWIFT-adresse.&#x20;
+One row per rate (deposit, balance) with amount and due date, followed by IBAN-number and BIC-kode/SWIFT-adresse.
 
-This part can be hidden when Hide Payment Details is enabled in General Settings
+This part can be hidden when **Hide Payment Details** is enabled in General Settings
 
-Page 2 — Price specification and seat/room assignment\
-Field Description Required Notes\
-Specifikation af rejsebestilling A single table listing every participant in one row, with columns Grundpris (base price), Rabat (discount), Forsikring (insurance), Afb.fors. (cancellation insurance), Golf Course, AutIndDirection, Seating, TREX, Tillæg i alt (supplements total), Pris pr. pers., and one column per instalment due date. A Totalpris DKK row sums every column. Yes —\
-Tildelinger (room assignments) One row per participant: Rejsedeltagere, Hotel, Værelser, Room Number. Conditional — shown when room numbers are assigned Printed as a separate table from Flysæde reservation (seat reservation) below.\
-Flysæde reservation (seat reservation) One row per participant, showing the seat chosen (sædevalg) for each flight date, followed by the aircraft seat-map type (for example A320 Seat Type). Conditional — shown when seating is selected as an Extra Category Printed as a separate table from Tildelinger (room assignments) above.
+### Page 2 — Price specification and seat/room assignment
 
-{% hint style="danger" %}
-TO VERIFY — AutIndDirection and TREX are column headings taken directly from the sample ticket's Specifikation af rejsebestilling and Forklaringer tables; in that booking they corresponded to an AUTOMATION AUTOSELECT extra and a Standard Meal extra respectively. Neither term appears in the glossary or elsewhere in the manual. What do AutIndDirection and TREX represent, and should they be added to the glossary?
-{% endhint %}
+<figure><img src="../../.gitbook/assets/11.09.2026_10.37.14_REC.png" alt=""><figcaption></figcaption></figure>
 
-Page 3 — Explanations and special service requests\
-Field Description Required Notes\
-Forklaringer (explanations) A legend that expands every price code used on page 2 — Vaerelse, Rabat, Forsikring, Golf Course, AutIndDirection, Seating, TREX, Tillæg i alt — each with the participant number(s) it applies to and a quantity (Antal). Yes —\
-Bemærkninger (remarks) Standard legal text on the tour operator's right to adjust prices up to 20 days before departure. Yes Fixed text; not booking-specific.\
-Anmodninger om special services (SSR) One entry per participant, listing every requested SSR code with its plain-language description (for example AVML ( Vegetarian Meal Requested )). Conditional — shown when Show SSR On Ticket is enabled in General Settings Show SSR On Ticket is a general Ticket setting, not specific to this layout.\
-Pages 4–5 — Hotel information\
-Field Description Required Notes\
-Værelsesbeskrivelse (room description) The booked room's name in bold, followed by its description text on the next line. Conditional — shown when Show room info is enabled and the room type has a description Uses the Brand Description if one exists, otherwise the Default Description; rooms with no description at all are skipped with no placeholder shown.\
-Hotelfaciliteter (hotel facilities) A Pension table showing the board option's Numerical option and Time (for example Dag, meaning per day). Conditional — shown when the hotel has facility data configured The sample ticket's hotel had minimal facility data, so only the Pension table appeared. See TO VERIFY below.
+#### Field Description
 
-{% hint style="danger" %}
-TO VERIFY — The sample Version 2 ticket's hotel had very little facility content configured, and only a Pension table printed. Does Version 2 print a fuller hotel description, facilities, and distances when a hotel has that content configured, or is Hotelfaciliteter on Version 2 always limited to the Pension table shown here?
-{% endhint %}
+Specifikation af rejsebestilling (Travel booking specifications)
 
-{% hint style="danger" %}
-TO VERIFY — The sample ticket had no cancelled participants and no GDS/dynamic-flight or golf-voucher content, so the following could not be confirmed on Version 2: how a cancelled passenger is shown (status text, price treatment, any cancellation-fee line), whether a dedicated page appears for System Transport bookings (PNR, e-ticket number, baggage table), and whether a Golf Voucher page (tee-time tables) is produced when golf products are booked. Does Version 2 include these, and if so, what do they show?
-{% endhint %}
+* A single table listing every passenger in one row, with columns Grundpris (base price), Rabat (discount), Forsikring (insurance), Afb.fors. (cancellation insurance), Golf Course, AutIndDirection, Seating, TREX, Tillæg i alt (supplements total), Pris pr. pers., and one column per instalment due date. A Totalpris DKK row sums every column.
+* Tildelinger (room assignments) - One row per passenger:
+  * Rejsedeltagere (passenger name),
+  * Hotel,
+  * Værelser (room type),
+  * Room Number — shows how passengers are allocated to rooms (how they are grouped by room)
+* Flysæde reservation (seat reservation)- One row per passenger, showing the seat chosen (sædevalg) for each flight date, followed by the aircraft seat-map type (for example A320 Seat Type). It is shown when seating is selected as an Extra Category
 
-Related pages\
-General Settings\
-Print Tickets\
-Customer Information displayed on the Ticket\
-E-tickets Overview
+### Page 3 — Explanations and special service requests
+
+#### Field Description
+
+<figure><img src="../../.gitbook/assets/11.09.2026_10.51.45_REC.png" alt=""><figcaption></figcaption></figure>
+
+#### Forklaringer (explanations)
+
+* A legend that expands every extras, discounts/supplemnets used on page 2 — Vaerelse, Rabat, Forsikring, Golf Course, AutIndDirection, Seating, TREX, Tillæg i alt — each with the passenger number(s) it applies to and a quantity (Antal).
+* Bemærkninger (remarks) - Ticket help text comment - it can be configured under the Brands -> General settings-> Ticket -> Ticket help text comments
+
+<figure><img src="../../.gitbook/assets/11.09.2026_10.56.50_REC.png" alt=""><figcaption></figcaption></figure>
+
+* List of special services (SSR) - One entry per participant, listing every requested SSR code with its plain-language description (for example AVML ( Vegetarian Meal Requested )) — shown when Show SSR On Ticket is enabled in General Settings Show SSR On Ticket is a general Ticket setting.
+
+### Pages 4–5 — Room/Hotel information
+
+#### Field Description
+
+* Værelsesbeskrivelse (room description) - The booked room's name in bold, followed by its description text on the next line. It is shown when Show room info is enabled and the room type has a description Uses the Brand Description if one exists, otherwise the Default Description; rooms with no description at all are skipped with no placeholder shown.
+
+<figure><img src="../../.gitbook/assets/11.09.2026_11.07.29_REC.png" alt=""><figcaption></figcaption></figure>
+
+* Hotelfaciliteter (hotel facilities) - shows the hotel facilities — shown when the hotel has facility data configured
+
+<figure><img src="../../.gitbook/assets/11.09.2026_11.08.57_REC.png" alt=""><figcaption></figcaption></figure>
+
+### Related pages
+
+* [.](./ "mention") configures the brand's **Ticket** settings and ticket version.
+* [print-tickets.md](../../tickets/print-tickets.md "mention") explains how to generate, print, and email ticket PDFs.
+* [customer-information-displayed-on-the-ticket.md](../../customer-information-errata/customer-information-displayed-on-the-ticket.md "mention") explains where customer information appears in ticket versions 1–3.
+* [e-tickets-overview.md](../../e-tickets-overview.md "mention") explains how to verify e-ticket email delivery.
