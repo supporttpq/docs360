@@ -8,7 +8,7 @@ description: >-
 
 ### Overview
 
-Ticket Version 2 (BILLET) is one of three selectable e-ticket layouts, configured on the General Settings page, under Ticket → Version.
+Ticket Version 2 (BILLET) is one of three selectable e-ticket layouts, configured on the Brands General Settings page, under Ticket → Version.
 
 <figure><img src="../../.gitbook/assets/11.09.2026_09.09.33_REC.png" alt=""><figcaption></figcaption></figure>
 
