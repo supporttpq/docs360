@@ -2,6 +2,8 @@
 description: >-
   The Version 2 ticket is a multi-page PDF booking document laid out as plain
   tables, with no brand colours, custom fonts, or decorative imagery.
+tags:
+  - '15.5'
 ---
 
 # Ticket V2 - Structure

@@ -1,3 +1,7 @@
 - tag: v15.2
   label: v15.2
   color: blue
+- tag: '15.5'
+  label: '15.5'
+  icon: tag
+  color: $primary
