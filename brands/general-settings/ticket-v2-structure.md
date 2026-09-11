@@ -10,7 +10,7 @@ description: >-
 
 Ticket Version 2 (BILLET) is one of three selectable e-ticket layouts, configured on the Brands General Settings page, under Ticket → Version.
 
-<figure><img src="../../.gitbook/assets/11.09.2026_09.09.33_REC.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/11.09.2026_09.09.33_REC.png" alt="Version 2 ticket preview showing the booking header, itinerary, accommodation, passengers, and payment plan."><figcaption><p>Version selection</p></figcaption></figure></div>
 
 It is generated from the same booking data — transport (flights, buses, and trains), accommodation, passengers, pricing, payment plan and hotel information.
 
@@ -56,11 +56,11 @@ Ticket Customization is not available on this layout. Brand colours, fonts, star
 
 ### Page 1 — Booking summary, itinerary and payment plan
 
-<figure><img src="../../.gitbook/assets/11.09.2026_09.28.35_REC.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/11.09.2026_09.28.35_REC.png" alt="First page of a Version 2 ticket showing the booking header, Rejseplan, Opholdet, Rejsedeltagere, and Betalingsplan sections."><figcaption><p>Page 1 combines the booking summary, itinerary, accommodation, passenger details, and payment plan.</p></figcaption></figure></div>
 
 #### Booking header
 
-<figure><img src="../../.gitbook/assets/11.09.2026_09.38.14_REC.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/11.09.2026_09.38.14_REC.png" alt="Ticket booking header with Booking nr., customer details, booking date, print date, Ferierådgiver, and brand company details."><figcaption><p>Booking header showing customer, booking, travel consultant, and brand company information.</p></figcaption></figure></div>
 
 Left column:
 
@@ -75,7 +75,7 @@ Right column:
 * The brand's company details (name, address, phone, CVR No.). The company details come from General Settings → Ticket
 * Company logo / banner - Displays the brand's Logo and Banner images from General Settings
 
-<figure><img src="../../.gitbook/assets/11.09.2026_09.40.30_REC.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/11.09.2026_09.40.30_REC.png" alt="Min billet login callout showing Bookingnr. and Adgangskode Internet for Customer Center access."><figcaption><p>Set the Logo and Banner in Brands -> Ticket</p></figcaption></figure></div>
 
 \
 Min billet - login:
@@ -98,7 +98,7 @@ One row per transport segment in the booking. Flight segments show:
 
 Bus and Train segments use the same table structure as Flight, with brand-specific column names matching the brand's language.
 
-<figure><img src="../../.gitbook/assets/11.09.2026_09.54.59_REC.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/11.09.2026_09.54.59_REC.png" alt="Rejseplan table showing transport segment dates, times, departure and arrival locations, airline, flight number, and flight duration."><figcaption><p>Rejseplan lists each transport segment with its schedule, route, and transport details.</p></figcaption></figure></div>
 
 * The `Fra` / `Från` (From) value is the pickup point configured on the transport's route (also shown elsewhere as `Opsamlingssted`). Pickup points, and meeting, departure and return times, all come from that route setup.
 * When no pickup point is selected on the booking, the field shows a fallback message instead of being left blank.
@@ -108,7 +108,7 @@ Bus and Train segments use the same table structure as Flight, with brand-specif
 
 #### Opholdet (accommodation)
 
-<figure><img src="../../.gitbook/assets/11.09.2026_09.59.15_REC.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/11.09.2026_09.59.15_REC.png" alt="Opholdet table showing destination, hotel, star rating, arrival date, departure date, number of units, and room type."><figcaption><p>Opholdet lists every booked stay, including hotel, dates, quantity, and Værelser.</p></figcaption></figure></div>
 
 One row per stay:
 
@@ -122,7 +122,7 @@ One row per stay:
 
 #### Rejsedeltagere (passengers)
 
-<figure><img src="../../.gitbook/assets/11.09.2026_10.05.17_REC.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/11.09.2026_10.05.17_REC.png" alt="Rejsedeltagere table showing Bookingnr., passenger name, date of birth, room type, transport, pension, price, total price, deposit, and amount due."><figcaption><p>Rejsedeltagere lists passenger details, booked services, and payment amounts.</p></figcaption></figure></div>
 
 One row per traveller:
 
@@ -136,7 +136,7 @@ One row per traveller:
 
 #### Betalingsplan (payment plan)
 
-<figure><img src="../../.gitbook/assets/11.09.2026_10.08.06_REC.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/11.09.2026_10.08.06_REC.png" alt="Betalingsplan table showing payment amounts, due dates, IBAN-number, and BIC-kode or SWIFT-adresse."><figcaption><p>Betalingsplan shows each instalment, its due date, and payment account details.</p></figcaption></figure></div>
 
 One row per rate (deposit, balance) with amount and due date, followed by IBAN-number and BIC-kode/SWIFT-adresse.
 
@@ -144,7 +144,7 @@ This part can be hidden when **Hide Payment Details** is enabled in General Sett
 
 ### Page 2 — Price specification and seat/room assignment
 
-<figure><img src="../../.gitbook/assets/11.09.2026_10.37.14_REC.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/11.09.2026_10.37.14_REC.png" alt="Second page of a Version 2 ticket showing travel booking specifications, room assignments, and flight seat reservations."><figcaption><p>Page 2 contains price specifications, Tildelinger, and Flysæde reservation.</p></figcaption></figure></div>
 
 #### Field Description
 
@@ -162,14 +162,14 @@ Specifikation af rejsebestilling (Travel booking specifications)
 
 #### Field Description
 
-<figure><img src="../../.gitbook/assets/11.09.2026_10.51.45_REC.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/11.09.2026_10.51.45_REC.png" alt="Forklaringer section showing the explanations legend for price components, extras, discounts, and passenger quantities."><figcaption><p>Page 3</p></figcaption></figure></div>
 
 #### Forklaringer (explanations)
 
 * A legend that expands every extras, discounts/supplemnets used on page 2 — Vaerelse, Rabat, Forsikring, Golf Course, AutIndDirection, Seating, TREX, Tillæg i alt — each with the passenger number(s) it applies to and a quantity (Antal).
 * Bemærkninger (remarks) - Ticket help text comment - it can be configured under the Brands -> General settings-> Ticket -> Ticket help text comments
 
-<figure><img src="../../.gitbook/assets/11.09.2026_10.56.50_REC.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/11.09.2026_10.56.50_REC.png" alt="Special service request list showing passenger names, SSR codes, and plain-language service descriptions."><figcaption><p>Ticket help text comment</p></figcaption></figure></div>
 
 * List of special services (SSR) - One entry per participant, listing every requested SSR code with its plain-language description (for example AVML ( Vegetarian Meal Requested )) — shown when Show SSR On Ticket is enabled in General Settings Show SSR On Ticket is a general Ticket setting.
 
@@ -179,11 +179,11 @@ Specifikation af rejsebestilling (Travel booking specifications)
 
 * Værelsesbeskrivelse (room description) - The booked room's name in bold, followed by its description text on the next line. It is shown when Show room info is enabled and the room type has a description Uses the Brand Description if one exists, otherwise the Default Description; rooms with no description at all are skipped with no placeholder shown.
 
-<figure><img src="../../.gitbook/assets/11.09.2026_11.07.29_REC.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/11.09.2026_11.07.29_REC.png" alt="Værelsesbeskrivelse section showing a booked room name and its descriptive text."><figcaption><p>Værelsesbeskrivelse shows the booked room name and available room description.</p></figcaption></figure></div>
 
 * Hotelfaciliteter (hotel facilities) - shows the hotel facilities — shown when the hotel has facility data configured
 
-<figure><img src="../../.gitbook/assets/11.09.2026_11.08.57_REC.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/11.09.2026_11.08.57_REC.png" alt="Hotelfaciliteter section showing facilities configured for the booked hotel."><figcaption><p>Hotelfaciliteter lists facilities configured for the booked hotel.</p></figcaption></figure></div>
 
 ### Related pages
 
