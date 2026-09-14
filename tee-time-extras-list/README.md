@@ -30,7 +30,7 @@ This tool is designed to:
 
 #### Supplier Dropdown
 
-* **Function**: Select a specific **golf supplier** or choose **All suppliers**.
+* **Function**: Select a supplier or All suppliers
 * **Use case**: Useful when generating reports for a single golf partner.
 
 ***
