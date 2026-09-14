@@ -4,7 +4,7 @@
 
 ### Overview
 
-The _TeeTime_ functionality allows administrators to define time-based availability schedules for specific products—typically those that need hourly or daily booking slots, such as golf tee times, spa appointments, or guided tours. TeeTimes can be configured as regular products in **Extras Setup → Extras**, but they use a **Generic Allotment Type**, which enables advanced scheduling and slot control.
+The **TeeTime** functionality is used to set up availability for products that are booked at specific times or time slots, such as golf tee times, spa appointments, or guided tours. TeeTimes are created as regular products under **Extras Setup → Extras**, but they use the **Generic Allotment Type**, which allows you to manage the available time slots and scheduling.
 
 ### Purpose
 
@@ -13,63 +13,36 @@ TeeTime helps agencies manage products that depend on time availability by:
 * Defining exact booking intervals and durations.
 * Controlling the number of guests or bookings per slot.
 * Managing allotments dynamically (daily or weekly).
-* Automatically calculating prices through the **Generic Product Price Rule**.
 
 This ensures that availability is accurately reflected for both back-office users and customers booking through the web or mobile app.
 
-### Tee Time basic setup fields
+#### Preconditions
 
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (488).png" alt="Tee Time basic setup fields"><figcaption></figcaption></figure></div>
-
-| **Field Name**              | **Description**                                                                                                           |
-| --------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| **Name**\*                  | The official name of the tee time product shown in the system and sales channels.                                         |
-| **List Name**\*             | The name used in product lists; helps categorize or display products more clearly.                                        |
-| **Code**\*                  | Unique identifier for the tee time product used internally and in integrations.                                           |
-| **Status**                  | Controls visibility (e.g., visible, hidden). Determines if the product appears in sales channels.                         |
-| **Stop sales hours**        | Number of hours before the tee time when bookings stop automatically.                                                     |
-| **Minimum length**          | Minimum allowed duration for the tee time (if applicable).                                                                |
-| **Contract Type**           | Defines the contract model associated with this tee time (e.g., allotment, guarantee etc ).                               |
-| **Days prices option**      | Controls how many days forward the system calculates or displays prices.                                                  |
-| **Allotment Type**          | Availability control type (e.g., Generic, Manua Linked to Transportl, ).                                                  |
-| **Extras Category**\*       | Classification for the product, identifying it as a tee time in reporting and pricing (e.g., “Tee tider”).                |
-| **Age**                     | Age rule for the product (if tee time pricing or access varies by age category).                                          |
-| **Period/Trip length**      | Allowed trip or period lengths for which the tee time is valid.                                                           |
-| **SSR Codes**               | Special Service Request codes used to pass additional information to suppliers or other systems. Supports multiple codes. |
-| **Select Supplier**         | Supplier providing the tee time service. Links the product to its provider.                                               |
-| **Round Rule**              | Select the round rule                                                                                                     |
-| **One-way (only)**          | If enabled, the product is restricted to **one-way** operations.                                                          |
-| **Currency**                | Currency in which the tee time is priced (e.g., EUR, USD).                                                                |
-| **Currency prices**         | When enabled, pricing uses the selected currency instead of the system base currency.                                     |
-| **Show supplier on ticket** | Displays supplier name on customer-facing documents such as vouchers or tickets.                                          |
-| **Display allotment**       | Shows the remaining number of tee time slots to the user (internal or external depending on configuration).               |
+* The Extras product exists and its **Extras Category** is set to `Teetime`.
+* You know the golf course's own booking limits and cut-off times, so the values you enter match its policy.
 
 #### How to use
 
 **1. Create a TeeTime Product**
 
-1. Go to **Extras Setup → Extras**.
-2. Create a new extra as usual.
-3. In the **Allotment Type** field, select **Generic Allotment Type**.\
+1. The Extra Category must be set as **TeeTime Category Type** for the product to function correctly.
+2. Go to **Extras Setup → Extras**.
+3. Create a new extra as usual.
+4. In the **Allotment Type** field, select **Generic Allotment Type**.\
    This enables the TeeTime-specific settings listed below.
 
-#### TeeTime settings
-
-* **Pax limit** – Maximum number of products a guest can book in total.
-* **Limit per day** – Maximum number of products a guest can book per day.
-* **Limit before hour** – Restricts booking availability before a specific time.
-* **Latitude / Longitude** – Used to calculate sunrise and sunset times for displaying in Office or on the web.
-* **Product Parent ID** – Used to link products that share the same allotment across multiple companies.
-
 <div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (55).png" alt="TeeTime settings"><figcaption></figcaption></figure></div>
-
-{% hint style="warning" %}
-**Note:** The Extra Category must be set as **TeeTime Category Type** for the product to function correctly.
-{% endhint %}
 
 <div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (3).png" alt="TeeTime Category Type setting"><figcaption></figcaption></figure></div>
 
 ### Tee Time rules
+
+**Tee Time Rules** is a section on a Teetime product's **Basic setup** tab. It controls how many times the product can be booked, which weeks and hours it can be booked in, how its price is calculated, and whether it needs manual confirmation. The section only appears when the product's **Extras Category** is set to `Teetime`.
+
+Use Tee Time Rules to:
+
+* Limit how many times a passenger, or the allotment as a whole, can book this tee time.
+* Restrict sale to the first weeks of the season, or stop sale before a fixed hour on the day of play.
 
 <div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (489).png" alt="Tee Time rules"><figcaption></figcaption></figure></div>
 
@@ -86,17 +59,17 @@ This ensures that availability is accurately reflected for both back-office user
 | **First available price** | When enabled, the system automatically shows the earliest available tee time price instead of the exact slot price.                                                                          |
 | **Requires confirmation** | Booking requires manual confirmation from staff or supplier before becoming valid.                                                                                                           |
 
+{% hint style="warning" %}
+**TeeTime PINPin** is not saved by the refresh icon alone. If you shuffle the PIN and leave the page without clicking **Save**, the product keeps its previous PIN.
+{% endhint %}
+
 ### Prices <a href="#prices" id="prices"></a>
 
-Teetime products draw their cost and price from **Generic Product Price Rule**, any value inserted in the Price tab will be disregarded. But a price line is required to enable the product to be sold. The priceline should look like this:
+Tourpaq takes the TeeTime price from the product's **Extras** configuration in **Product Price**. This price applies when the TeeTime product is sold.
 
 <div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Generic Product Price Rule price line"><figcaption></figcaption></figure></div>
 
-It is similar with the seating setting.
-
-Real price of the product is set in **Extras Setup/Generic Product Price Rule**.
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (144).png" alt="Generic Product Price Rule"><figcaption></figcaption></figure></div>
+Configure the applicable product price in **Extras Setup → Extras**. The TeeTime product uses that configured extra price.
 
 TeeTimes products appear in the **Tee Time Extras Lists**.
 
@@ -124,7 +97,7 @@ The TeeTime allotment defines when and how often the product is available.
 **Example:**\
 If the product is available every 30 minutes between 09:00–19:00 with an allotment of 4, there will be 20 available slots per day (one every 30 minutes).
 
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (147).png" alt="Daily allotment example"><figcaption></figcaption></figure></div>
+<figure><img src="../../.gitbook/assets/14.09.2026_14.25.35_REC.png" alt=""><figcaption></figcaption></figure>
 
 #### Weekly allotments <a href="#weekly-allotments" id="weekly-allotments"></a>
 
