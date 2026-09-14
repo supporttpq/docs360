@@ -9,11 +9,9 @@ tags:
 
 The Paxport API integration lets Tourpaq report flight bookings to Paxport automatically, in real time, using Paxport's REST-based API ("OpenPax") instead of file-based (FTP) or email reporting.
 
-It exists so that bookings can be reported to Paxport as soon as they occur, without waiting for a scheduled file export (see **What the Paxport API solution reports** below for exactly which booking events are covered). It is the first of what is expected to be several API-based transport reporting integrations in Tourpaq, so the setup is built to support additional providers later.
-
 This affects users who configure **Transport Suppliers** and **Transport Reporting** for airlines/carriers that report through Paxport, and anyone who monitors transport reporting errors through the **Transport Warnings** notifications.
 
-> Paxport can still also be reported to using the existing file-based method (**Reporting Type: Paxport**). The new **Paxport API** reporting type is a separate, independent option — it does not replace or inherit settings from the file-based Paxport configuration.
+> Paxport can still also be reported to using the existing file-based method (**Reporting Type: Paxport**). The **Paxport API** reporting type is a separate, independent option — it does not replace settings from the file-based Paxport configuration.
 
 #### What the Paxport API solution reports
 
@@ -35,7 +33,7 @@ Transport Reporting is how Tourpaq sends booking information for flights to the 
 | **Mail** | Tourpaq sends the report as an email, to the address and subject configured on the rule.                                                                                                                                                  |
 | **API**  | Tourpaq calls the reporting provider's own REST API directly, in real time, instead of producing a file or an email. **API** is the method introduced by this feature; today it is only available for the **Paxport API** reporting type. |
 
-Which methods can be selected on a given Communication rule depends on its **Reporting Type** — a reporting type must specifically support a method for that option to be selectable. Existing reporting types continue to use **FTP** and/or **Mail** as before; **Paxport API** is the first reporting type built to use **API** only. As further API-based reporting providers are added to Tourpaq in the future, they are expected to follow the same pattern: a dedicated Reporting Type, paired with the **API** method on the Communication tab.
+The methods can be selected on a given Communication rule depends on its **Reporting Type** — a reporting type must specifically support a method for that option to be selectable. Existing reporting types continue to use **FTP** and/or **Mail** as before; **Paxport API** is the first reporting type built to use **API** only.&#x20;
 
 ### Configuration
 
@@ -81,29 +79,27 @@ This tab maintains the mapping between a flight number's airline prefix and its 
 
 #### Transport Supplier
 
-**Reporting Type** on a Transport Supplier's **Overview** tab now includes **Paxport API** as one of the available reporting types (alongside the existing types such as Paxport, AirSeven, Radixx, DAT, Amadeus, and others). Selecting **Paxport API** is only meaningful once the Paxport API has been enabled under **Setup > Reporting API > Paxport**.
+**Reporting Type** on a Transport Supplier's **Overview** tab includes **Paxport API** as one of the available reporting types (alongside the existing types such as Paxport, AirSeven, Radixx, DAT, Amadeus, and others).&#x20;
 
 <figure><img src="../.gitbook/assets/transport-supplier-communication-tab.png" alt=""><figcaption></figcaption></figure>
 
-On the Transport Supplier's **Communication** tab, each communication rule now starts with a **Method** column (moved to be the first/leftmost column), offering the three methods described under **Transport Reporting methods** above (**FTP** / **Mail** / **API**). Which of these can be selected depends on the rule's **Reporting Type** — see **Rules and conditions** below for exactly when **API** is enabled or disabled.
+On the Transport Supplier's **Communication** tab, each communication rule starts with a **Method** column, offering the three methods described under **Transport Reporting methods** above (**FTP** / **Mail** / **API**). Which of these can be selected depends on the rule's **Reporting Type** — see **Rules and conditions** below for exactly when **API** is enabled or disabled.
 
 The remaining columns on the Communication tab define when and how the rule fires. The ones introduced or changed by this feature are described above; the other columns already existed for FTP/Mail-based reporting and are listed here for completeness:
 
-| Column                                                              | Description                                                                                                                                                                  |
-| ------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Out/Home**                                                        | Direction the rule applies to: **Outbound** or **Homebound**.                                                                                                                |
-| **Departure** / **Arrival**                                         | The departure and/or arrival points the rule is restricted to (multi-select, e.g. "Selected all (6)" or "Multiple selected (2)"; left empty to apply to all).                |
-| **Hour**                                                            | Time of day the report is sent.                                                                                                                                              |
-| **Reporting Type**                                                  | The Transport Reporting type this rule applies to (e.g. Paxport API).                                                                                                        |
-| **Minutes B.D**, **Days B.D**, **Days B.D.T**, **Minutes interval** | Not specified in detail by this feature — existing scheduling fields controlling how long before departure, and at what interval, the report is triggered.                   |
-| **Alternative**                                                     | Not specified.                                                                                                                                                               |
-| **Email** / **Subject**                                             | Notification email address and subject used for this rule.                                                                                                                   |
-| **FTP System**                                                      | The FTP system to use — not applicable when Method is API.                                                                                                                   |
-| **Use F.no**, **Stop Sale**, **ADI**                                | Checkboxes; their exact effect is not specified in the requirement.                                                                                                          |
-| **Resend**                                                          | Not specified in detail — intended to let the user trigger the rule again.                                                                                                   |
-| **Comm.**                                                           | Communication link: gives access to the latest payload sent to, and the latest response received from, the Paxport API for this rule, to help diagnose communication issues. |
-
-**SSR codes:** the requirement states that SSR codes can be connected to the **Paxport API** reporting type independently of the existing **Paxport** (file-based) configuration — i.e. Paxport API does not inherit the SSR codes configured for Paxport. The exact screen where this is configured is **not specified**.
+| Column                                                              | Description                                                                                                                                                                                                                                             |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Out/Home**                                                        | Direction the rule applies to: **Outbound** or **Homebound**.                                                                                                                                                                                           |
+| **Departure** / **Arrival**                                         | The departure and/or arrival points the rule is restricted to (multi-select, e.g. "Selected all" or "Multiple selected"; left empty to apply to all).                                                                                                   |
+| **Hour**                                                            | Time of day the report is sent.                                                                                                                                                                                                                         |
+| **Reporting Type**                                                  | The Transport Reporting type this rule applies to (e.g. Paxport API).                                                                                                                                                                                   |
+| **Minutes B.D**, **Days B.D**, **Days B.D.T**, **Minutes interval** | Not specified in detail by this feature — existing scheduling fields controlling how long before departure, and at what interval, the report is triggered.                                                                                              |
+| **Alternative**                                                     | Alternative reporting type                                                                                                                                                                                                                              |
+| **Email** / **Subject**                                             | Enter the recipient's email address and define the subject line of the email.                                                                                                                                                                           |
+| **FTP System**                                                      | The FTP system to use — not applicable when Method is API. If using FTP, select the appropriate FTP configuration/system. (is defined in System Setup FTP menu).                                                                                        |
+| **Use F.no**, **Stop Sale**, **ADL**                                | <p>Checkbox: Use flight number if enabled.</p><p>Checkbox: Mark if this triggers a Stop Sale action.<br>Checkbox: Enable ADL flag if needed. ADL reporting must is done whenever there are changes to a flight after the initial reporting is sent.</p> |
+| **Resend**                                                          | Work only with ADL checkbox marked and offer the posibility to resend any ADl report for a specific date.                                                                                                                                               |
+| **Comm.**                                                           | Communication link: gives access to the latest payload sent to, and the latest response received from, the Paxport API for this rule, to help diagnose communication issues.                                                                            |
 
 ### How it works
 
@@ -164,7 +160,9 @@ The remaining columns on the Communication tab define when and how the rule fire
 
 ### Expected result
 
-Once **Setup > Reporting API > Paxport** is enabled with valid credentials (confirmed via **Check connection**) and a Transport Supplier is set to Reporting Type **Paxport API** with a Communication rule using Method **API**, Tourpaq reports new, updated, and cancelled bookings for that supplier's flights to Paxport automatically through the REST API. Flight numbers are resolved to carriers via the Carrier codes mapping, all traffic is logged for 4 weeks, and any errors surface in the Transport Warnings notification list and on the rule's Comm. link.
+Once **Setup > Reporting API > Paxport** is enabled with valid credentials (confirmed via **Check connection**) and a Transport Supplier is set to Reporting Type **Paxport API** with a Communication rule using Method **API**, Tourpaq reports new, updated, and cancelled bookings for that supplier's flights to Paxport automatically through the REST API.&#x20;
+
+Flight numbers are resolved to carriers via the Carrier codes mapping, all traffic is logged for 4 weeks, and any errors surface in the Transport Warnings notification list and on the rule's Comm. link.
 
 ### Related pages
 
