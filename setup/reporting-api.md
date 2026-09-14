@@ -133,7 +133,7 @@ The remaining columns on the Communication tab define when and how the rule fire
 
 ### Manifestation in Tourpaq
 
-* **Setup**: **Reporting API** menu item, with **Paxport** and **Carrier codes** tabs.&#x20;
+* **Setup**: **Reporting API** menu item, with **Paxport** and **Carrier codes** tabs.
 * **Transport > Transport Suppliers**: new **Paxport API** option in the **Reporting Type** field; new **Method** column (with the **API** option) on the **Communication** tab, including the **Comm.** payload/response link.
 * **Notifications**: reporting errors and warnings appear in the **Transport Warnings** notification list.
 
@@ -165,3 +165,7 @@ The remaining columns on the Communication tab define when and how the rule fire
 ### Expected result
 
 Once **Setup > Reporting API > Paxport** is enabled with valid credentials (confirmed via **Check connection**) and a Transport Supplier is set to Reporting Type **Paxport API** with a Communication rule using Method **API**, Tourpaq reports new, updated, and cancelled bookings for that supplier's flights to Paxport automatically through the REST API. Flight numbers are resolved to carriers via the Carrier codes mapping, all traffic is logged for 4 weeks, and any errors surface in the Transport Warnings notification list and on the rule's Comm. link.
+
+### Related pages
+
+* [communication-configuration-transport-supplier.md](../transport-suppliers/communication-configuration-transport-supplier.md "mention") — Configure reporting rules and delivery settings for each Transport Supplier.
