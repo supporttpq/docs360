@@ -33,7 +33,7 @@ Transport Reporting is how Tourpaq sends booking information for flights to the 
 | **Mail** | Tourpaq sends the report as an email, to the address and subject configured on the rule.                                                                                                                                                  |
 | **API**  | Tourpaq calls the reporting provider's own REST API directly, in real time, instead of producing a file or an email. **API** is the method introduced by this feature; today it is only available for the **Paxport API** reporting type. |
 
-The methods can be selected on a given Communication rule depends on its **Reporting Type** — a reporting type must specifically support a method for that option to be selectable. Existing reporting types continue to use **FTP** and/or **Mail** as before; **Paxport API** is the first reporting type built to use **API** only.&#x20;
+The methods can be selected on a given Communication rule depends on its **Reporting Type** — a reporting type must specifically support a method for that option to be selectable. Existing reporting types continue to use **FTP** and/or **Mail** as before; **Paxport API** is the first reporting type built to use **API** only.
 
 ### Configuration
 
@@ -79,7 +79,7 @@ This tab maintains the mapping between a flight number's airline prefix and its 
 
 #### Transport Supplier
 
-**Reporting Type** on a Transport Supplier's **Overview** tab includes **Paxport API** as one of the available reporting types (alongside the existing types such as Paxport, AirSeven, Radixx, DAT, Amadeus, and others).&#x20;
+**Reporting Type** on a Transport Supplier's **Overview** tab includes **Paxport API** as one of the available reporting types (alongside the existing types such as Paxport, AirSeven, Radixx, DAT, Amadeus, and others).
 
 <figure><img src="../.gitbook/assets/transport-supplier-communication-tab.png" alt=""><figcaption></figcaption></figure>
 
@@ -100,6 +100,24 @@ The remaining columns on the Communication tab define when and how the rule fire
 | **Use F.no**, **Stop Sale**, **ADL**                                | <p>Checkbox: Use flight number if enabled.</p><p>Checkbox: Mark if this triggers a Stop Sale action.<br>Checkbox: Enable ADL flag if needed. ADL reporting must is done whenever there are changes to a flight after the initial reporting is sent.</p> |
 | **Resend**                                                          | Work only with ADL checkbox marked and offer the posibility to resend any ADl report for a specific date.                                                                                                                                               |
 | **Comm.**                                                           | Communication link: gives access to the latest payload sent to, and the latest response received from, the Paxport API for this rule, to help diagnose communication issues.                                                                            |
+
+#### Transport
+
+Besides being configured on the **Transport Supplier, Paxport API** reporting can also be set directly on an individual transport, in two places: its **Communication tab** and its **Overview tab.**
+
+**On the transport's own Communication ta**b **(General sub-tab), each row defines a communication rule the same way as on the** Transport Supplier's Communication ta&#x62;**:** Reporting Type **can be set to** Paxport AP&#x49;**, alongside the other scheduling and delivery columns described above.**
+
+**It can also be set directly on the transport: open its** Overview ta&#x62;**, expand** Setting&#x73;**, and set** Reporting typ&#x65;**.**
+
+<figure><img src="../.gitbook/assets/image (300).png" alt="The Settings section on a transport&#x27;s Overview tab, with Tour Operator Name and Reporting Type (set to Paxport API) highlighted"><figcaption><p>The Settings section under a transport's Overview tab, with Tour Operator Name and Reporting Type set to Paxport API.</p></figcaption></figure>
+
+{% hint style="info" %}
+The **Tour Operator Name** field is available next to **Tour Operator Code** in **Settings**. Both of them must be completed when **Paxport API** is selected as the reporting type, as the value is required for **Paxport API** reporting.
+{% endhint %}
+
+The same **Reporting Type** and **Tour Operator Name** settings are also available in the general settings of a **Real Transport**, so reporting can be configured per departure.
+
+<figure><img src="../.gitbook/assets/14.09.2026_12.56.42_REC.png" alt=""><figcaption></figcaption></figure>
 
 ### How it works
 
@@ -160,7 +178,7 @@ The remaining columns on the Communication tab define when and how the rule fire
 
 ### Expected result
 
-Once **Setup > Reporting API > Paxport** is enabled with valid credentials (confirmed via **Check connection**) and a Transport Supplier is set to Reporting Type **Paxport API** with a Communication rule using Method **API**, Tourpaq reports new, updated, and cancelled bookings for that supplier's flights to Paxport automatically through the REST API.&#x20;
+Once **Setup > Reporting API > Paxport** is enabled with valid credentials (confirmed via **Check connection**) and a Transport Supplier is set to Reporting Type **Paxport API** with a Communication rule using Method **API**, Tourpaq reports new, updated, and cancelled bookings for that supplier's flights to Paxport automatically through the REST API.
 
 Flight numbers are resolved to carriers via the Carrier codes mapping, all traffic is logged for 4 weeks, and any errors surface in the Transport Warnings notification list and on the rule's Comm. link.
 
