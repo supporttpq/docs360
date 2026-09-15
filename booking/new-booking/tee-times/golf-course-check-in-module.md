@@ -193,9 +193,11 @@ Displays all tee times for today:
 * Player names
 * Handicap
 
-<figure><img src="../../../.gitbook/assets/image (307).png" alt=""><figcaption></figcaption></figure>
-
 This diagram illustrates the step-by-step flow of the Master Module functionality described above: staff log in with the extra ID and PIN, then choose to either manage allotments (selecting a product and date, viewing or confirming/unconfirming bookings, and optionally filtering by booking number or name) or view availability for a selected date.
+
+```mermaid
+graph TD; A[Enter username extra ID] --> B["Enter PIN generated in the Tee Time Rules panel, random 1000-9999)"]; B --> C{Choose action}; C -->|Manage allotments| D["Select a product and a date"]; C -->|View availability| E["Select a date"]; D --> F["View all bookings and their allotments"]; D --> G{"Optional filters"}; F --> H["Confirm / unconfirm allotments"]; G -->|Booking no provided| I["Show allotments only for that booking"]; G -->|Name provided| J["Search by name - known issue partial match works but exact full-name match returns no results"]; E --> K["View list of free or confirmed allotments for that date"];
+```
 
 ***
 
