@@ -161,12 +161,16 @@ graph TD; A[Client logs in] --> B[Sees list of agencies with bookings and allotm
 
 #### Login
 
-Access: on any Customer Check-In screen, tap the small gear icon in the bottom-left corner of the kiosk to open the Master Module login screen.
+Access: on the Self Check-In screen, tap the small gear icon in the bottom-left corner of the kiosk to open the Master Module login screen.
 
 * **Username:** Extra ProductID (for example, `3692`)
 * **Password:** A 4‑digit PIN displayed in the extra configuration (the extra's TeeTime Pin field).
 
-PIN generation: the TeeTime Pin is a system-generated identifier stored on the tee-time product's Tee Time Rules configuration (Extras Setup → Extras, product using the TeeTime Category Type). Staff can regenerate it from that page using the shuffle/refresh icon next to the field, but the new PIN only takes effect once the product is saved — leaving the page without clicking Save keeps the previous PIN active. If the product is a child of a parent product, regenerating the PIN updates the parent's PIN as well.
+PIN generation: the TeeTime Pin is a system-generated identifier stored on the tee-time product's Tee Time Rules configuration (Extras Setup → Extras, product using the TeeTime Category Type).&#x20;
+
+<figure><img src="../../../.gitbook/assets/15.09.2026_14.40.36_REC.png" alt=""><figcaption></figcaption></figure>
+
+Staff can regenerate it from that page using the shuffle/refresh icon next to the field, but the new PIN only takes effect once the product is saved — leaving the page without clicking Save keeps the previous PIN active. If the product is a child of a parent product, regenerating the PIN updates the parent's PIN as well.
 
 <figure><img src="../../../.gitbook/assets/image (483).png" alt=""><figcaption></figcaption></figure>
 
