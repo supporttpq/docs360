@@ -112,7 +112,7 @@ Besides being configured on the **Transport Supplier, Paxport API** reporting ca
 <figure><img src="../.gitbook/assets/image (300).png" alt="The Settings section on a transport&#x27;s Overview tab, with Tour Operator Name and Reporting Type (set to Paxport API) highlighted"><figcaption><p>The Settings section under a transport's Overview tab, with Tour Operator Name and Reporting Type set to Paxport API.</p></figcaption></figure>
 
 {% hint style="info" %}
-The **Tour Operator Name** field is available next to **Tour Operator Code** in **Settings**. Both of them must be completed when **Paxport API** is selected as the reporting type, as the value is required for **Paxport API** reporting.
+The **Tour Operator Name** field is available next to **Tour Operator Code** in **Settings**. Both of them must be completed when **Paxport API** is selected as the reporting type, as the value is required (not mandatory) for **Paxport API** reporting.
 {% endhint %}
 
 The same **Reporting Type** and **Tour Operator Name** settings are also available in the general settings of a **Real Transport**, so reporting can be configured per departure.
