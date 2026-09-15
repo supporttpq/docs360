@@ -39,6 +39,19 @@ The purpose of the check‑in module is to:
 
 ***
 
+### Configuration: TeeTime Category Type
+
+For the Golf Course Check-In module to work, the underlying tee-time product's Extras Category must use the TeeTime Category Type (Extras Setup → Extras → Basic setup). Setting the category to this type enables a Tee Time Rules section on the product, which is what actually drives the check-in kiosk and Master Module:&#x20;
+
+* TeeTime Pin – the PIN used as the Master Module password (see Backend Login below).
+* Product Parent ID – links this product's allotment to a parent product for shared availability.
+* Pax limit – how many times a passenger can book this tee time per interval.
+* Limit Per Day / Only first week(s) – caps on how often and how far ahead the tee time can be booked.
+* Limit before hour – closes bookings a set number of hours before a cut-off time on the day of play.
+* Requires confirmation – if enabled, a booking needs manual staff confirmation before it is valid, which affects what shows as confirmed in the Master Module.
+
+For the full field reference and how the Generic Allotment (daily/weekly slots, block allotments) is set up, see the [Teetime page](../../../extras-setup/extras-general-page/teetime.md).
+
 ### 1. Customer Check‑In Flow (Kiosk)
 
 <figure><img src="../../../.gitbook/assets/image (474).png" alt="Customer check-in kiosk flow for tee times (screens overview)"><figcaption></figcaption></figure>
@@ -79,6 +92,10 @@ The purpose of the check‑in module is to:
 **Language**
 
 The kiosk automatically switches to the language of the booking’s Brand.
+
+{% hint style="info" %}
+Agencies appear automatically based on whether they have a matching booking for today. No direct configuration is required — only Agencies associated with today’s qualifying Tee Time bookings are displayed.
+{% endhint %}
 
 **Displayed**
 
@@ -144,8 +161,12 @@ graph TD; A[Client logs in] --> B[Sees list of agencies with bookings and allotm
 
 #### Login
 
+Access: on any Customer Check-In screen, tap the small gear icon in the bottom-left corner of the kiosk to open the Master Module login screen.
+
 * **Username:** Extra ProductID (for example, `3692`)
-* **Password:** A 4‑digit PIN displayed in the extra configuration
+* **Password:** A 4‑digit PIN displayed in the extra configuration (the extra's TeeTime Pin field).
+
+PIN generation: the TeeTime Pin is a system-generated identifier stored on the tee-time product's Tee Time Rules configuration (Extras Setup → Extras, product using the TeeTime Category Type). Staff can regenerate it from that page using the shuffle/refresh icon next to the field, but the new PIN only takes effect once the product is saved — leaving the page without clicking Save keeps the previous PIN active. If the product is a child of a parent product, regenerating the PIN updates the parent's PIN as well.
 
 <figure><img src="../../../.gitbook/assets/image (483).png" alt=""><figcaption></figcaption></figure>
 
