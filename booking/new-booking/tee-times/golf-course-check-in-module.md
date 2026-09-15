@@ -43,6 +43,8 @@ The purpose of the check‑in module is to:
 
 For the Golf Course Check-In module to work, the underlying tee-time product's Extras Category must use the TeeTime Category Type (Extras Setup → Extras → Basic setup). Setting the category to this type enables a Tee Time Rules section on the product, which is what actually drives the check-in kiosk and Master Module:&#x20;
 
+<figure><img src="../../../.gitbook/assets/15.09.2026_14.50.21_REC.png" alt=""><figcaption></figcaption></figure>
+
 * TeeTime Pin – the PIN used as the Master Module password (see Backend Login below).
 * Product Parent ID – links this product's allotment to a parent product for shared availability.
 * Pax limit – how many times a passenger can book this tee time per interval.
