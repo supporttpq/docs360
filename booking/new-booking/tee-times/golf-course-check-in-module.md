@@ -130,6 +130,10 @@ Displays:
 * 5‑second countdown.
 * Auto return to Screen 1 (full reset).
 
+<figure><img src="../../../.gitbook/assets/image (313).png" alt=""><figcaption></figcaption></figure>
+
+This diagram illustrates the step-by-step flow of the Customer Check-In functionality described above: the client logs in and sees the list of agencies with bookings and allotments dated today, enters the booking number, chooses which allotments to confirm for the passengers, confirms the date, and the booking allotments are then confirmed.
+
 ***
 
 ### 2. Master Module (Staff interface)
