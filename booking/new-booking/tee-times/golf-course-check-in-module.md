@@ -187,6 +187,10 @@ Displays all tee times for today:
 * Player names
 * Handicap
 
+<figure><img src="../../../.gitbook/assets/image (307).png" alt=""><figcaption></figcaption></figure>
+
+This diagram illustrates the step-by-step flow of the Master Module functionality described above: staff log in with the extra ID and PIN, then choose to either manage allotments (selecting a product and date, viewing or confirming/unconfirming bookings, and optionally filtering by booking number or name) or view availability for a selected date.
+
 ***
 
 ### Related documentation
