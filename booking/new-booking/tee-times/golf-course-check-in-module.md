@@ -130,9 +130,11 @@ Displays:
 * 5‑second countdown.
 * Auto return to Screen 1 (full reset).
 
-<figure><img src="../../../.gitbook/assets/image (313).png" alt=""><figcaption></figcaption></figure>
-
 This diagram illustrates the step-by-step flow of the Customer Check-In functionality described above: the client logs in and sees the list of agencies with bookings and allotments dated today, enters the booking number, chooses which allotments to confirm for the passengers, confirms the date, and the booking allotments are then confirmed.
+
+```mermaid
+graph TD; A[Client logs in] --> B[Sees list of agencies with bookings and allotments dated today UTC]; B --> C[Enters the booking number]; C --> D[Chooses which allotments to confirm for the passengers]; D --> E[Confirms the date]; E --> F[Booking allotments are confirmed];
+```
 
 ***
 
