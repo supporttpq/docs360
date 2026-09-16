@@ -182,7 +182,13 @@ A booking with stays at the same hotel before and after the safari. The e-ticket
 | `Dobbeltværelse med havudsigt` (double room, sea view) | `Pension iflg. program` (board according to the itinerary) | 3      | 12-01-2027 | 15-01-2027 |
 | `Club værelse` (club room)                             | `Pension iflg. program` (board according to the itinerary) | 9      | 17-01-2027 | 26-01-2027 |
 
-When using a Combi Hotel with two check-in/check-out dates in the same room: In the booking used for this example, the two periods use different room types (double room, sea view/club room) at the same hotel, not the same room. The observed output still shows both periods as separate entries, consistent with the rule's stated outcome, but it isn't confirmed whether "same room" in the requirement was meant literally (same room type/code) or as shorthand for "same hotel.
+When using a Combi Hotel with two check-in/check-out dates in the same room: In the booking used for this example, the two periods use different room types (double room, sea view/club room) at the same hotel, not the same room.&#x20;
+
+{% hint style="info" %}
+**A Transport Hotel with a Fictive room:** When a Combi Hotel includes a child hotel configured as a **Transport Hotel** with a **Fictive** room, no information for this child hotel is displayed on the e-ticket.
+
+**Multiple check-in/check-out periods:** If a Combi Hotel has multiple check-in/check-out periods for the same hotel and room combination, each period is displayed separately on the e-ticket. The same hotel/room combination is therefore shown as a separate entry for each period.
+{% endhint %}
 
 ***
 
