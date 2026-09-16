@@ -155,6 +155,37 @@ For cancelled passengers:
 
 ***
 
+### Combi Hotel
+
+**A Combi Hotel** combines an accommodation stay with a package in a single hotel product. Internally, the booking is built from several **child hotels**:
+
+* One or more child hotels represent the accommodation the guest actually stays in.
+* A child hotel flagged as a **Transport hotel**, with its room set to **Fictive**, represents the safari days. It exists to hold those dates in the booking and does not represent a real room.
+
+<figure><img src="../../../.gitbook/assets/16.09.2026_12.54.23_REC.png" alt=""><figcaption></figcaption></figure>
+
+#### **How it is displayed**
+
+The e-ticket only shows real accommodation:
+
+* A child hotel that is a **Transport hotel** with a **Fictive** room is never shown on the e-ticket.
+* When the accommodation hotel is booked for two separate periods, each period is shown as its own entry. Hotel name, destination, room type, board type, number of nights, check-in date and check-out date are all repeated for the second period rather than merged with the first.
+
+<figure><img src="../../../.gitbook/assets/16.09.2026_12.59.55_REC.png" alt=""><figcaption></figcaption></figure>
+
+**Example**
+
+A booking with stays at the same hotel before and after the safari. The e-ticket shows two accommodation entries for that hotel — one per stay period — with the safari days in between not listed as accommodation:
+
+| Room type                                              | Board                                                      | Nights | Check-in   | Check-out  |
+| ------------------------------------------------------ | ---------------------------------------------------------- | ------ | ---------- | ---------- |
+| `Dobbeltværelse med havudsigt` (double room, sea view) | `Pension iflg. program` (board according to the itinerary) | 3      | 12-01-2027 | 15-01-2027 |
+| `Club værelse` (club room)                             | `Pension iflg. program` (board according to the itinerary) | 9      | 17-01-2027 | 26-01-2027 |
+
+When using a Combi Hotel with two check-in/check-out dates in the same room: In the booking used for this example, the two periods use different room types (double room, sea view/club room) at the same hotel, not the same room. The observed output still shows both periods as separate entries, consistent with the rule's stated outcome, but it isn't confirmed whether "same room" in the requirement was meant literally (same room type/code) or as shorthand for "same hotel.
+
+***
+
 ### Payment Information
 
 The **BETALING** element is always displayed, including when the booking is fully cancelled.
