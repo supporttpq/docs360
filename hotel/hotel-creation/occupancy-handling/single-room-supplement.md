@@ -29,7 +29,7 @@ Go to **Hotel → Single Room Supplement**.
 *   A supplement with code **SINGLE** exists.
 
     <figure><img src="../../../.gitbook/assets/image (546).png" alt=""><figcaption></figcaption></figure>
-*   The **SINGLE** supplement is set **For sale + Internet sale**
+*   The **SINGLE** supplement is set **For sale** on the active Brand
 
     <figure><img src="../../../.gitbook/assets/image (547).png" alt=""><figcaption></figcaption></figure>
 *   The rule in **Hotel → Single Room Supplement** matches the booking.
@@ -55,8 +55,8 @@ When you add the first rule for a hotel, Tourpaq can auto-create missing data:
 * **Actions**: Edit an existing rule.
 * **From Age**: The minimum age at which the Room Supplement is added.
 * **To Age**: The maximum age at which the room supplement is added.
-* **Start Date**: First date the rule can apply, matched against the guest's arrival date.
-* **End Date**: Last date the rule can apply, matched against the guest's arrival date.
+* **Start Date**: The start period (from/to) where the room supplement rule is active.
+* **End Date**: The stay period (from/to) where the room supplement rule is active.
 * Supplement Code: **The code of the supplement added, typically `SINGLE`. The code must be set** For sale **on the active brand.**
 * **Price: The price of the supplement, in hotel currency or as a percentage of the Single Cost. An amount is added on top of the Single Cost. When Percent is off, Tourpaq shows the amount in Creditor Currency (or Company Currency if the hotel has no creditor set), and the Booking Engine converts it to the booking's sale currency.**
 * **Percent**: If checked, Price is a percentage on top of the Single Cost instead of a fixed amount.
