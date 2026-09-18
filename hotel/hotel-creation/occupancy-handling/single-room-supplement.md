@@ -65,10 +65,14 @@ When you add the first rule for a hotel, Tourpaq can auto-create missing data:
 
 {% hint style="info" %}
 Tourpaq selects the matching Single Room Supplement rule once, using the guest's arrival date (the first night of the stay), age, and room type. When Percent is off, Tourpaq takes Price as a fixed amount in Creditor Currency (or Company Currency if the hotel has no creditor configured), multiplies it by the stay interval (nights), and the Booking Engine converts the total to the booking's sale currency; this amount does not change even if the Single Cost changes during the stay. When Percent is on, Tourpaq calculates the percentage on top of the applicable Single Cost for each night of the stay and sums the result across the stay; no currency conversion applies.
+
+For example: a hotel with a Creditor configured has a SINGLE rule with Price = 50 DKK, Percent off, for a 3-night stay. Tourpaq reads the 50 DKK in the Creditor Currency, multiplies by 3 nights, and the Booking Engine converts 150 DKK to the sale currency. If the same hotel had no Creditor configured, Tourpaq would read the 50 DKK in the Company Currency instead, then apply the same 3-night multiplication and conversion.
 {% endhint %}
 
 {% hint style="warning" %}
 Changing a Single Room Supplement rule does not change the price on bookings that already exist. The new rule applies only to bookings created after the change.
+
+For example: a booking made under the 50 DKK rule above keeps its 150 DKK Single Room Supplement even after the rule's Price is later changed to 60 DKK. Only bookings created after the change use 60 DKK.
 {% endhint %}
 
 ### Instructions for use
