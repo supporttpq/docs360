@@ -70,10 +70,26 @@ For example: a hotel with a Creditor configured has a SINGLE rule with Price = 5
 {% endhint %}
 
 {% hint style="warning" %}
-Changing a Single Room Supplement rule does not change the price on bookings that already exist. The new rule applies only to bookings created after the change.
+Changing a Single Room Supplement rule does not change the price on bookings that already exist. The&#x20;
+
+new rule applies only to bookings created after the change.
 
 For example: a booking made under the 50 DKK rule above keeps its 150 DKK Single Room Supplement even after the rule's Price is later changed to 60 DKK. Only bookings created after the change use 60 DKK.
 {% endhint %}
+
+### Examples
+
+#### Percentage supplement on top of Single Cost
+
+When Percent is on, Tourpaq calculates the Single Room Supplement on top of the Single Cost from [Single Room Cost](single-room-cost.md), not on top of the full double room cost.
+
+For a double room costing 580 DKK per night, with a Single Room Cost rule adding 20% and a Single Room Supplement rule with Percent = true and Price = 125:
+
+* Single Cost = 20% × 580 DKK = 116 DKK
+* Single Room Supplement = 116 DKK × 125% = 145 DKK
+* Total single occupancy charge = Single Cost + Single Room Supplement = 116 DKK + 145 DKK = 261 DKK
+
+Tourpaq shows this 261 DKK total on Passenger disc./supplement, the ticket, and the Profit tab. The booking's Room Cost per day on the Profit tab adds the Single Cost to the double room cost (580 DKK + 116 DKK = 696 DKK); the Single Room Supplement itself is not part of that cost line, since it is a charge to the passenger, not a cost to Tourpaq.
 
 ### Instructions for use
 
