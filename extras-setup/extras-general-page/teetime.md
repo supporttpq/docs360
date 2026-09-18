@@ -60,7 +60,7 @@ Use Tee Time Rules to:
 | **Requires confirmation** | Booking requires manual confirmation from staff or supplier before becoming valid.                                                                                                           |
 
 {% hint style="warning" %}
-**TeeTime PINPin** is not saved by the refresh icon alone. If you shuffle the PIN and leave the page without clicking **Save**, the product keeps its previous PIN.
+**TeeTime PIN** is not saved by the refresh icon alone. If you shuffle the PIN and leave the page without clicking **Save**, the product keeps its previous PIN.
 {% endhint %}
 
 ### Prices <a href="#prices" id="prices"></a>
