@@ -1,7 +1,8 @@
 ---
 description: >-
   Add a fixed or percentage extra charge for single occupancy, limited by age,
-  dates, and room type, and priced in Creditor Currency.
+  dates, and room type, and priced in Creditor Currency, or Company Currency if
+  none is set.
 ---
 
 # Single Room Supplement
@@ -58,12 +59,12 @@ When you add the first rule for a hotel, Tourpaq can auto-create missing data:
 * **Start Date**: The start period (from/to) where the room supplement rule is active.
 * **End Date**: The stay period (from/to) where the room supplement rule is active.
 * Supplement Code: **The code of the supplement added, typically `SINGLE`. The code must be set** For sale **on the active brand.**
-* **Price: The price of the supplement, in hotel currency or as a percentage of the Single Cost. An amount is added on top of the Single Cost. When Percent is off, Tourpaq shows the amount in Creditor Currency (or Company Currency if the hotel has no creditor set), and the Booking Engine converts it to the booking's sale currency.**
+* **Price:** The supplement amount for the rule. When Percent is off, Tourpaq treats Price as a fixed amount in Creditor Currency (or Company Currency if the hotel has no creditor configured), multiplies it by the stay interval (the number of nights), and the Booking Engine converts the total to the booking's sale currency. When Percent is on, Tourpaq treats Price as a percentage added on top of the applicable Single Cost for each night of the stay; no currency conversion applies.
 * **Percent**: If checked, Price is a percentage on top of the Single Cost instead of a fixed amount.
 * **Room Type:** The room type where this rule is applicable.
 
 {% hint style="info" %}
-Tourpaq calculates the Single Room Supplement once, using the Single Cost and the matching rule for the guest's arrival date (the first night of the stay). That price applies to every night of the booking, even if the Single Cost changes later in the stay. When Percent is off, Tourpaq shows Price in Creditor Currency, or Company Currency if the hotel has no creditor set, and the Booking Engine converts it to the booking's sale currency. When Percent is on, no currency conversion applies.
+Tourpaq selects the matching Single Room Supplement rule once, using the guest's arrival date (the first night of the stay), age, and room type. When Percent is off, Tourpaq takes Price as a fixed amount in Creditor Currency (or Company Currency if the hotel has no creditor configured), multiplies it by the stay interval (nights), and the Booking Engine converts the total to the booking's sale currency; this amount does not change even if the Single Cost changes during the stay. When Percent is on, Tourpaq calculates the percentage on top of the applicable Single Cost for each night of the stay and sums the result across the stay; no currency conversion applies.
 {% endhint %}
 
 {% hint style="warning" %}
