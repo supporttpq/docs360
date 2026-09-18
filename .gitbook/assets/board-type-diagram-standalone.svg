@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 1200" role="img" aria-label="Flowchart of nine steps to configure and use a Board Type in Tourpaq, split into a Setup phase of three steps and a Booking phase of six steps, with the Board Type field on the extras linking step three to step six."><style>text{font-family:Inter,Arial,sans-serif;}.phase-label{font-weight:700;font-size:12.5px;letter-spacing:0.1em;}.num{font-weight:700;font-size:16px;}.step-title{font-weight:700;font-size:15.5px;}.step-sub{font-size:12.8px;}.link-label{font-weight:600;font-size:11.5px;}</style><rect x="0" y="0" width="760" height="1200" fill="#f6f4ee"/>
+      <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path d="M0,0 L10,5 L0,10 z" fill="#647066"></path>
+        </marker>
+        <marker id="arrowAccent" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path d="M0,0 L10,5 L0,10 z" fill="#b8722a"></path>
+        </marker>
+      </defs>
+
+      <!-- Phase bands -->
+      <rect x="40" y="40" width="680" height="372" rx="20" fill="#e6efe6"></rect>
+      <rect x="40" y="432" width="680" height="744" rx="20" fill="#e5eef5"></rect>
+
+      <text x="64" y="28" class="phase-label" fill="#2f7a5d">SETUP</text>
+      <text x="64" y="420" class="phase-label" fill="#2a6fa8">BOOKING</text>
+
+      <!-- Vertical flow arrows between consecutive steps -->
+      <line x1="380" y1="144" x2="380" y2="176" stroke="#647066" stroke-width="2" marker-end="url(#arrow)"></line>
+      <line x1="380" y1="268" x2="380" y2="300" stroke="#647066" stroke-width="2" marker-end="url(#arrow)"></line>
+      <line x1="380" y1="392" x2="380" y2="444" stroke="#647066" stroke-width="2" marker-end="url(#arrow)"></line>
+      <line x1="380" y1="536" x2="380" y2="568" stroke="#647066" stroke-width="2" marker-end="url(#arrow)"></line>
+      <line x1="380" y1="660" x2="380" y2="692" stroke="#647066" stroke-width="2" marker-end="url(#arrow)"></line>
+      <line x1="380" y1="784" x2="380" y2="816" stroke="#647066" stroke-width="2" marker-end="url(#arrow)"></line>
+      <line x1="380" y1="908" x2="380" y2="940" stroke="#647066" stroke-width="2" marker-end="url(#arrow)"></line>
+      <line x1="380" y1="1032" x2="380" y2="1064" stroke="#647066" stroke-width="2" marker-end="url(#arrow)"></line>
+
+      <!-- Cross-link: the Board Type field set in step 3 is what step 6 matches on -->
+      <path d="M 620,350 C 704,350 704,742 622,742" fill="none" stroke="#b8722a" stroke-width="2" stroke-dasharray="2 6" stroke-linecap="round" marker-end="url(#arrowAccent)"></path>
+      <text class="link-label" fill="#b8722a" x="712" y="546" text-anchor="middle" transform="rotate(-90 712 546)">Board Type field matches</text>
+
+      <!-- Step 1 -->
+      <circle cx="100" cy="102" r="20" fill="#ffffff" stroke="#2f7a5d" stroke-width="2"></circle>
+      <text x="100" y="108" text-anchor="middle" class="num" fill="#2f7a5d">1</text>
+      <line x1="120" y1="102" x2="140" y2="102" stroke="#ddd7c8" stroke-width="2"></line>
+      <rect x="140" y="60" width="480" height="84" rx="14" fill="#ffffff" stroke="#ddd7c8"></rect>
+      <rect x="140" y="60" width="6" height="84" rx="3" fill="#2f7a5d"></rect>
+      <text x="166" y="94" class="step-title" fill="#202b24">Create a Hotel Allotment</text>
+      <text x="166" y="118" class="step-sub" fill="#647066">Sets the Board Basis for the period — the board included in the room price</text>
+
+      <!-- Step 2 -->
+      <circle cx="100" cy="226" r="20" fill="#ffffff" stroke="#2f7a5d" stroke-width="2"></circle>
+      <text x="100" y="232" text-anchor="middle" class="num" fill="#2f7a5d">2</text>
+      <line x1="120" y1="226" x2="140" y2="226" stroke="#ddd7c8" stroke-width="2"></line>
+      <rect x="140" y="184" width="480" height="84" rx="14" fill="#ffffff" stroke="#ddd7c8"></rect>
+      <rect x="140" y="184" width="6" height="84" rx="3" fill="#2f7a5d"></rect>
+      <text x="166" y="218" class="step-title" fill="#202b24">Create an Extras Category</text>
+      <text x="166" y="242" class="step-sub" fill="#647066">Type = Pension — required for Board Basis &amp; Board Supplement extras</text>
+
+      <!-- Step 3 -->
+      <circle cx="100" cy="350" r="20" fill="#ffffff" stroke="#2f7a5d" stroke-width="2"></circle>
+      <text x="100" y="356" text-anchor="middle" class="num" fill="#2f7a5d">3</text>
+      <line x1="120" y1="350" x2="140" y2="350" stroke="#ddd7c8" stroke-width="2"></line>
+      <rect x="140" y="308" width="480" height="84" rx="14" fill="#ffffff" stroke="#ddd7c8"></rect>
+      <rect x="140" y="308" width="6" height="84" rx="3" fill="#2f7a5d"></rect>
+      <text x="166" y="342" class="step-title" fill="#202b24">Create the board extras</text>
+      <text x="166" y="366" class="step-sub" fill="#647066">Board Basis + Board Supplement, tied together by the Board Type field</text>
+
+      <!-- Step 4 -->
+      <circle cx="100" cy="494" r="20" fill="#ffffff" stroke="#2a6fa8" stroke-width="2"></circle>
+      <text x="100" y="500" text-anchor="middle" class="num" fill="#2a6fa8">4</text>
+      <line x1="120" y1="494" x2="140" y2="494" stroke="#ddd7c8" stroke-width="2"></line>
+      <rect x="140" y="452" width="480" height="84" rx="14" fill="#ffffff" stroke="#ddd7c8"></rect>
+      <rect x="140" y="452" width="6" height="84" rx="3" fill="#2a6fa8"></rect>
+      <text x="166" y="486" class="step-title" fill="#202b24">Open Webbooking</text>
+      <text x="166" y="510" class="step-sub" fill="#647066">Search hotel &amp; dates — included board and eligible upgrades appear</text>
+
+      <!-- Step 5 -->
+      <circle cx="100" cy="618" r="20" fill="#ffffff" stroke="#2a6fa8" stroke-width="2"></circle>
+      <text x="100" y="624" text-anchor="middle" class="num" fill="#2a6fa8">5</text>
+      <line x1="120" y1="618" x2="140" y2="618" stroke="#ddd7c8" stroke-width="2"></line>
+      <rect x="140" y="576" width="480" height="84" rx="14" fill="#ffffff" stroke="#ddd7c8"></rect>
+      <rect x="140" y="576" width="6" height="84" rx="3" fill="#2a6fa8"></rect>
+      <text x="166" y="610" class="step-title" fill="#202b24">Add passenger details</text>
+      <text x="166" y="634" class="step-sub" fill="#647066">Enter the traveller information for the booking</text>
+
+      <!-- Step 6 -->
+      <circle cx="100" cy="742" r="20" fill="#ffffff" stroke="#2a6fa8" stroke-width="2"></circle>
+      <text x="100" y="748" text-anchor="middle" class="num" fill="#2a6fa8">6</text>
+      <line x1="120" y1="742" x2="140" y2="742" stroke="#ddd7c8" stroke-width="2"></line>
+      <rect x="140" y="700" width="480" height="84" rx="14" fill="#ffffff" stroke="#ddd7c8"></rect>
+      <rect x="140" y="700" width="6" height="84" rx="3" fill="#2a6fa8"></rect>
+      <text x="166" y="734" class="step-title" fill="#202b24">Confirm extra availability</text>
+      <text x="166" y="758" class="step-sub" fill="#647066">The Board Type extra is offered as an eligible upgrade</text>
+
+      <!-- Step 7 -->
+      <circle cx="100" cy="866" r="20" fill="#ffffff" stroke="#2a6fa8" stroke-width="2"></circle>
+      <text x="100" y="872" text-anchor="middle" class="num" fill="#2a6fa8">7</text>
+      <line x1="120" y1="866" x2="140" y2="866" stroke="#ddd7c8" stroke-width="2"></line>
+      <rect x="140" y="824" width="480" height="84" rx="14" fill="#ffffff" stroke="#ddd7c8"></rect>
+      <rect x="140" y="824" width="6" height="84" rx="3" fill="#2a6fa8"></rect>
+      <text x="166" y="858" class="step-title" fill="#202b24">Finish the booking</text>
+      <text x="166" y="882" class="step-sub" fill="#647066">The booking is finalized and saved</text>
+
+      <!-- Step 8 -->
+      <circle cx="100" cy="990" r="20" fill="#ffffff" stroke="#2a6fa8" stroke-width="2"></circle>
+      <text x="100" y="996" text-anchor="middle" class="num" fill="#2a6fa8">8</text>
+      <line x1="120" y1="990" x2="140" y2="990" stroke="#ddd7c8" stroke-width="2"></line>
+      <rect x="140" y="948" width="480" height="84" rx="14" fill="#ffffff" stroke="#ddd7c8"></rect>
+      <rect x="140" y="948" width="6" height="84" rx="3" fill="#2a6fa8"></rect>
+      <text x="166" y="982" class="step-title" fill="#202b24">Open the ticket</text>
+      <text x="166" y="1006" class="step-sub" fill="#647066">The generated ticket shows the board type in the hotel section</text>
+
+      <!-- Step 9 -->
+      <circle cx="100" cy="1114" r="20" fill="#ffffff" stroke="#2a6fa8" stroke-width="2"></circle>
+      <text x="100" y="1120" text-anchor="middle" class="num" fill="#2a6fa8">9</text>
+      <line x1="120" y1="1114" x2="140" y2="1114" stroke="#ddd7c8" stroke-width="2"></line>
+      <rect x="140" y="1072" width="480" height="84" rx="14" fill="#ffffff" stroke="#ddd7c8"></rect>
+      <rect x="140" y="1072" width="6" height="84" rx="3" fill="#2a6fa8"></rect>
+      <text x="166" y="1106" class="step-title" fill="#202b24">Verify extra details on the ticket</text>
+      <text x="166" y="1130" class="step-sub" fill="#647066">The Pension section lists the board extra and its details</text>
+    </svg>
