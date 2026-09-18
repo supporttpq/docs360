@@ -64,7 +64,10 @@ When you add the first rule for a hotel, Tourpaq can auto-create missing data:
 * **Room Type:** The room type where this rule is applicable.
 
 {% hint style="info" %}
-Tourpaq selects the matching Single Room Supplement rule once, using the guest's arrival date (the first night of the stay), age, and room type. When Percent is off, Tourpaq takes Price as a fixed amount in Creditor Currency (or Company Currency if the hotel has no creditor configured), multiplies it by the stay interval (nights), and the Booking Engine converts the total to the booking's sale currency; this amount does not change even if the Single Cost changes during the stay. When Percent is on, Tourpaq calculates the percentage on top of the applicable Single Cost for each night of the stay and sums the result across the stay; no currency conversion applies.
+Tourpaq selects the matching Single Room Supplement rule once, using the guest's arrival date (the first night of the stay), age, and room type.&#x20;
+
+* When Percent is off, Tourpaq takes Price as a fixed amount in Creditor Currency (or Company Currency if the hotel has no creditor configured), multiplies it by the stay interval (nights), and the Booking Engine converts the total to the booking's sale currency; this amount does not change even if the Single Cost changes during the stay.&#x20;
+* When Percent is on, Tourpaq calculates the percentage on top of the applicable Single Cost for each night of the stay and sums the result across the stay; no currency conversion applies. The calculation formula is: **Single Price from Room Cost \* Single Room Supplement price + Single Price for Room Cost**
 
 For example: a hotel with a Creditor configured has a SINGLE rule with Price = 50 DKK, Percent off, for a 3-night stay. Tourpaq reads the 50 DKK in the Creditor Currency, multiplies by 3 nights, and the Booking Engine converts 150 DKK to the sale currency. If the same hotel had no Creditor configured, Tourpaq would read the 50 DKK in the Company Currency instead, then apply the same 3-night multiplication and conversion.
 {% endhint %}
@@ -79,17 +82,17 @@ For example: a booking made under the 50 DKK rule above keeps its 150 DKK Single
 
 ### Examples
 
-#### Percentage supplement on top of Single Cost
+1\.  **Single room supplement** (automatically added) for: Passenger disc./supplement, Print Ticket, Profit Tab
 
-When Percent is on, Tourpaq calculates the Single Room Supplement on top of the Single Cost from [Single Room Cost](single-room-cost.md), not on top of the full double room cost.
+<figure><img src="../../../.gitbook/assets/18.09.2026_10.32.26_REC.png" alt=""><figcaption></figcaption></figure>
 
-For a double room costing 580 DKK per night, with a Single Room Cost rule adding 20% and a Single Room Supplement rule with Percent = true and Price = 125:
+<figure><img src="../../../.gitbook/assets/18.09.2026_10.33.28_REC.png" alt=""><figcaption></figcaption></figure>
 
-* Single Cost = 20% × 580 DKK = 116 DKK
-* Single Room Supplement = 116 DKK × 125% = 145 DKK
-* Total single occupancy charge = Single Cost + Single Room Supplement = 116 DKK + 145 DKK = 261 DKK
+2. **Single Room Supplement:** percent = true
 
-Tourpaq shows this 261 DKK total on Passenger disc./supplement, the ticket, and the Profit tab. The booking's Room Cost per day on the Profit tab adds the Single Cost to the double room cost (580 DKK + 116 DKK = 696 DKK); the Single Room Supplement itself is not part of that cost line, since it is a charge to the passenger, not a cost to Tourpaq.
+<figure><img src="../../../.gitbook/assets/18.09.2026_10.37.14_REC.png" alt=""><figcaption></figcaption></figure>
+
+**Calculation**: Single Price from Room Cost \* Single Room Supplement price + Single Price for Room Cost ( 116 \* 125/100 + 116 = 261 DKK)
 
 ### Instructions for use
 
