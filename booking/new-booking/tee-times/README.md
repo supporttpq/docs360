@@ -21,6 +21,8 @@ layout:
     visible: true
   actions:
     visible: true
+  anchors:
+    visible: true
 ---
 
 # Tee Times
@@ -43,9 +45,9 @@ The **Tee Times** tab in **Tourpaq Office** is used to create a **tee time booki
 
 * The booking must be created and saved with at least one passenger.
 * The booking must include an **extra** that supports tee-time/time-slot reservations.
-* Time slots must be configured for the product in the system (otherwise no available times will be shown).
+* Configure time slots for the product in the system (otherwise no available times will be shown).
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (24).png" alt="Tee Times tab showing available time slots and passenger assignment"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/18.09.2026_11.00.44_REC.png" alt=""><figcaption></figcaption></figure>
 
 ### **Instructions**
 
@@ -69,19 +71,28 @@ The **Tee Times** tab in **Tourpaq Office** is used to create a **tee time booki
 2. Click the desired time slot to reserve it for that passenger.
 3. Repeat for the remaining passengers.
 
+<figure><img src="../../../.gitbook/assets/18.09.2026_11.00.44_REC.png" alt=""><figcaption></figcaption></figure>
+
+4. Hover over the selected allotment to view about total allotments, booked allotments, price and cost)&#x20;
+
 ***
 
 #### **Finalize the reservation**
 
 1. When all passengers have been assigned a time, click **Take Allotment**.
-2. Click **Save** to confirm.
+2. Click **Save** to confirm. The total amount of the booking it will be changed with the total cost af the tee times added
 
 ***
 
 #### **Result**
 
 * Each selected passenger is assigned to the chosen time slot.
-* The assigned times will be visible in the booking and may also appear on printed documents or operational lists, depending on your setup.
+*   In the booking page -> passenger details, the tee time extra category will be displayed with the extras calculated for each passenger&#x20;
+
+    <figure><img src="../../../.gitbook/assets/18.09.2026_11.08.48_REC.png" alt=""><figcaption></figcaption></figure>
+*   The assigned times will be visible in the booking and may also appear on printed documents or operational lists, depending on your setup.&#x20;
+
+    <figure><img src="../../../.gitbook/assets/18.09.2026_11.12.40_REC.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
