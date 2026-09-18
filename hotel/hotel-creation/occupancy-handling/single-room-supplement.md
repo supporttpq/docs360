@@ -21,10 +21,6 @@ In Tourpaq, this uses the standard supplement code `SINGLE`.
 * Limit when it applies (dates, ages, room types).
 * Support both fixed amounts and percentages.
 
-### Where to find it
-
-Go to **Hotel → Single Room Supplement**.
-
 ### Preconditions
 
 *   A supplement with code **SINGLE** exists.
@@ -33,9 +29,13 @@ Go to **Hotel → Single Room Supplement**.
 *   The **SINGLE** supplement is set **For sale** on the active Brand
 
     <figure><img src="../../../.gitbook/assets/image (547).png" alt=""><figcaption></figcaption></figure>
-*   The rule in **Hotel → Single Room Supplement** matches the booking.
+*   The rule in **Hotel →** The supplement does not require a price rule because the values of the single room supplement are calculated under the hotel
 
     <figure><img src="../../../.gitbook/assets/image (548).png" alt=""><figcaption></figcaption></figure>
+
+### Where to find it
+
+Go to **Hotel → Single Room Supplement**.
 
 ### How it works
 
@@ -46,30 +46,27 @@ When a room type is booked for **one guest**, Tourpaq applies the rule below (if
 
 <figure><img src="../../../.gitbook/assets/image (181) (1).png" alt=""><figcaption></figcaption></figure>
 
-When you add the first rule for a hotel, Tourpaq can auto-create missing data:
+When you add the first rule for a hotel, Tourpaq auto-create missing data:
 
 * A supplement category named `single-room` with code `SINGLE`.
 * A supplement with code `SINGLE` named **Single room supplement (automatically added)**.
 
 ### Field reference
 
-* **Actions**: Edit an existing rule.
 * **From Age**: The minimum age at which the Room Supplement is added.
 * **To Age**: The maximum age at which the room supplement is added.
 * **Start Date**: The start period (from/to) where the room supplement rule is active.
 * **End Date**: The stay period (from/to) where the room supplement rule is active.
 * Supplement Code: **The code of the supplement added, typically `SINGLE`. The code must be set** For sale **on the active brand.**
-* **Price:** The supplement amount for the rule. When Percent is off, Tourpaq treats Price as a fixed amount in Creditor Currency (or Company Currency if the hotel has no creditor configured), multiplies it by the stay interval (the number of nights), and the Booking Engine converts the total to the booking's sale currency. When Percent is on, Tourpaq treats Price as a percentage added on top of the applicable Single Cost for each night of the stay; no currency conversion applies.
+* **Price:** The supplement amount for the rule.&#x20;
 * **Percent**: If checked, Price is a percentage on top of the Single Cost instead of a fixed amount.
 * **Room Type:** The room type where this rule is applicable.
 
 {% hint style="info" %}
 Tourpaq selects the matching Single Room Supplement rule once, using the guest's arrival date (the first night of the stay), age, and room type.&#x20;
 
-* When Percent is off, Tourpaq takes Price as a fixed amount in Creditor Currency (or Company Currency if the hotel has no creditor configured), multiplies it by the stay interval (nights), and the Booking Engine converts the total to the booking's sale currency; this amount does not change even if the Single Cost changes during the stay.&#x20;
+* When Percent is off, Tourpaq takes Price as a fixed amount in Creditor Currency (or Company Currency if the hotel has no creditor configured), multiplies it by the stay interval (nights), and the system converts the total to the booking's sale currency; this amount does not change even if the Single Cost changes during the stay.&#x20;
 * When Percent is on, Tourpaq calculates the percentage on top of the applicable Single Cost for each night of the stay and sums the result across the stay; no currency conversion applies. The calculation formula is: **Single Price from Room Cost \* Single Room Supplement price + Single Price for Room Cost**
-
-For example: a hotel with a Creditor configured has a SINGLE rule with Price = 50 DKK, Percent off, for a 3-night stay. Tourpaq reads the 50 DKK in the Creditor Currency, multiplies by 3 nights, and the Booking Engine converts 150 DKK to the sale currency. If the same hotel had no Creditor configured, Tourpaq would read the 50 DKK in the Company Currency instead, then apply the same 3-night multiplication and conversion.
 {% endhint %}
 
 {% hint style="warning" %}
