@@ -47,8 +47,6 @@ The **Tee Times** tab in **Tourpaq Office** is used to create a **tee time booki
 * The booking must include an **extra** that supports tee-time/time-slot reservations.
 * Configure time slots for the product in the system (otherwise no available times will be shown).
 
-<figure><img src="../../../.gitbook/assets/18.09.2026_11.00.44_REC.png" alt=""><figcaption></figcaption></figure>
-
 ### **Instructions**
 
 #### **Access the Tee Times tab**
@@ -80,7 +78,7 @@ The **Tee Times** tab in **Tourpaq Office** is used to create a **tee time booki
 #### **Finalize the reservation**
 
 1. When all passengers have been assigned a time, click **Take Allotment**.
-2. Click **Save** to confirm. The total amount of the booking it will be changed with the total cost af the tee times added
+2. Click **Save** to confirm. The total amount of the booking it will be changed with the total price of the tee times added
 
 ***
 
