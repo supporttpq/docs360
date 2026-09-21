@@ -6,49 +6,62 @@ description: >-
 
 # Check-out flow/customer center for A la carte
 
-**Applies to: Tourpaq Customer Center, Web Booking. Last reviewed: 2026-09-21.**
-
-#### Overview
+### Overview
 
 An **A la carte** booking combines more than one hotel stay and/or one-way transport in a single booking, instead of a single fixed package. This page explains how the check-out flow in Customer Center, and the equivalent Web Booking flow, identify an A la carte booking, and how passengers, products, and supplements are matched back to the correct hotel or transport inside it.
 
-#### Purpose
+### Purpose
 
 * Recognise why an A la carte booking returns more than one item where a normal booking returns one.
 * Match a passenger, product, or supplement to the correct hotel or transport inside an A la carte booking.
 * Build or debug an integration against Customer Center or Web Booking for A la carte bookings.
 
-#### Preconditions
+### Preconditions
 
 * The booking is confirmed and reachable through the office API, see the [.](./ "mention") page.
 * The booking's `agencyID` and `hash` are known for Customer Center, or its offer details are known for Web Booking, needed to call the API.
 * A PLTA ID identifies one trip component, one hotel stay or one transport, within a booking—see [.](./ "mention") in the Tourpaq Web Booking - Technical documentation page.
 
-#### How-to
+### How-to
 
 {% stepper %}
 {% step %}
-#### Identify the booking type
+#### Customer Center
 
-Call the office API `api/office/bookings/0?agencyID={agencyID}&hash={hash}`. Then read the `help:priceavailability` array in the response's `_embedded` object. One item means a normal booking, a single charter or one-way hotel. More than one item means an A la carte booking, and each item holds the basic configuration for one hotel or transport.
+* Call the office API `api/office/bookings/0?agencyID=&hash=`.&#x20;
+* Then read the `help:priceavailability` array in the response's `_embedded objects`.&#x20;
+* In a normal booking, this array contains only 1 item (the charter, or the one way hotel). In an ALC hotel (comprised of multiple hotels, and/or transports) this array contains multiple items.
+
+<figure><img src="../../.gitbook/assets/21.09.2026_10.37.34_REC.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
-#### Fetch room and transport availability
+#### **Room Availability:**
 
-Read the same `help:priceavailability` array, this time under `_links`, which lists one GET path per item. Call each path to retrieve the full availability details for that hotel or transport. This is an array of calls to make and objects to store, one per item, instead of the single call and object a normal booking needs.
+* Looking at the \_links object, it has the same "help:priceavailability" array, this time it's a list of paths. These need to be called using GET, to get all the details about the hotels.
+* In short terms, before you were making one call and memorizing one object, now we have an array.
 {% endstep %}
 
 {% step %}
-#### Match passengers to their room or transport
+#### **Passengers**
 
-Call the passengers endpoint. Each passenger appears once per room or transport they are booked into, each occurrence with its own `roomDetails` node. A passenger sharing two rooms or hotels appears twice, once per room, but is the same physical passenger, matched back together using `uniquepaxhash`. Find which room or transport a given occurrence belongs to using the `pltaID` inside its `roomDetails`. Supplements are not affected by this multiplication since they are bound to the passenger, not the room. Preselected products are assigned to the pax/room pair and so have no PLTA ID of their own.
+* In the passengers call, you will have your pax multiplied. Each entry has a different "roomDetails" node. For example, if a pax stays in 2 rooms/hotels, they will appear twice, each with said room/hotel. BUT THEY ARE ESSENTIALLY THE SAME PAX. (identified by the unique pax hash)
+* You can identify what pax is from what room by the pltaID in the roomDetails.
+* Supplements are untouched since those are pax-bound, not room-bound.
+* Preselected products are assigned on the pax/room pair. So they don't have their own PLTAID.
 {% endstep %}
 
 {% step %}
-#### Match products and manual supplements to their room or transport
+#### **Products**
 
-Call the products endpoint, where each product has an `availableForPltaIDs` array listing which hotels or transports, PLTAs, it can be sold for, and offer it only to passengers booked into one of those PLTAs. Call the manual supplements endpoint, where supplements carry the same `availableForPltaIDs` array and are matched the same way.
+* In the relevant product call, we have products. These items have a "availableForPltaIDs" aray, that tells you which hotels they are eligible for. These will only be assignable to pax in THAT room.
+* Insurance and cancellation insurance are also PLTA agnostic.
+{% endstep %}
+
+{% step %}
+#### **Manual Supplements**
+
+* In the relevant supplement call, we have supplements. These items have an "availableForPltaIDs" array. Same as relevant products, these denote which PLTA these are eligible for.
 {% endstep %}
 {% endstepper %}
 
@@ -60,21 +73,10 @@ The Web Booking flow, DoBooking, follows the same logic. The only difference is 
 
 #### Field Reference
 
-| Field                                | Description                                                                                      | Required                                          | Notes                                                                                        |
-| ------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| `help:priceavailability` \[embedded] | The list of hotels/transports in the booking                                                     | Always present                                    | Contains one item for a normal booking, several for an A la carte booking.                   |
-| `help:priceavailability` \[links]    | GET paths, one per item above, used to fetch each hotel's or transport's full availability       | Always present                                    | Call every path, there is no longer a single object to read.                                 |
-| `roomDetails`                        | The room/transport-specific details attached to one occurrence of a passenger                    | Always present on each passenger occurrence       | A passenger booked into two rooms has two occurrences, each with its own `roomDetails`.      |
-| `pltaID` \[in roomDetails]           | Identifies which hotel or transport this passenger occurrence, product, or supplement belongs to | Always present                                    | Used to route products and supplements to the right passengers.                              |
-| `uniquepaxhash`                      | Identifies one physical passenger across all of their occurrences                                | Always present                                    | Use it to collapse multiplied passenger occurrences back into one person.                    |
-| `availableForPltaIDs`                | The PLTA ID(s) a product or manual supplement can be sold against                                | Always present on products and manual supplements | Insurance and cancellation insurance ignore this field, they can be sold regardless of PLTA. |
+<table><thead><tr><th width="260">Field</th><th width="241">Description</th><th>Notes</th></tr></thead><tbody><tr><td><code>help:priceavailability</code> [embedded]</td><td>The list of hotels/transports in the booking</td><td>Contains one item for a normal booking, several for an A la carte booking.</td></tr><tr><td><code>help:priceavailability</code> [links]</td><td>GET paths, one per item above, used to fetch each hotel's or transport's full availability</td><td>Call every path, there is no longer a single object to read.</td></tr><tr><td><code>roomDetails</code></td><td>The room/transport-specific details attached to one occurrence of a passenger</td><td>A passenger booked into two rooms has two occurrences, each with its own <code>roomDetails</code>.</td></tr><tr><td><code>pltaID</code> [in roomDetails]</td><td>Identifies which hotel or transport this passenger occurrence, product, or supplement belongs to</td><td>Used to route products and supplements to the right passengers.</td></tr><tr><td><code>uniquepaxhash</code></td><td>Identifies one physical passenger across all of their occurrences</td><td>Use it to collapse multiplied passenger occurrences back into one person.</td></tr><tr><td><code>availableForPltaIDs</code></td><td>The PLTA ID(s) a product or manual supplement can be sold </td><td>Insurance and cancellation insurance ignore this field, they can be sold regardless of PLTA.</td></tr></tbody></table>
 
 {% hint style="info" %}
 Supplements are matched to a passenger directly and never carry a PLTA ID of their own - only products and manual supplements do.
-{% endhint %}
-
-{% hint style="danger" %}
-TO VERIFY - what are the exact endpoint paths for the passengers, products, and manual supplements calls referenced above? Only the office call and `/api/offer` are documented elsewhere in this manual.
 {% endhint %}
 
 #### Related pages
