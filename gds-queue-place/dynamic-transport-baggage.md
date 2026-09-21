@@ -9,9 +9,9 @@ The **Dynamic Transport Baggage** feature allows the system to automatically res
 1. Navigate to the **Legs** tab of the relevant dynamic transport.
 2. In the **General Dynamic Information** section, check the **Dynamic Baggage** checkbox.
 3. Update the flights for this transport.
-   *   This allows the service to detect, include, and price baggage for each flight.&#x20;
+   *   This allows the service to detect, include, and price baggage for each flight.
 
-       <figure><img src="../../.gitbook/assets/general dynamic info.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../.gitbook/assets/image (13)" alt=""><figcaption></figcaption></figure>
 
 ### **How It Works**
 
@@ -25,7 +25,7 @@ The **Dynamic Transport Baggage** feature allows the system to automatically res
 
 **"Test Search"**
 
-<figure><img src="../../.gitbook/assets/image (134).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14)" alt=""><figcaption></figcaption></figure>
 
 **"View Flights"**
 

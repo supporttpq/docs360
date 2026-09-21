@@ -28,7 +28,7 @@ Make sure these are in place:
 
 ### Page layout
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17)" alt=""><figcaption></figcaption></figure>
 
 #### Filters and tools
 
@@ -44,7 +44,7 @@ Use these filters at the top of the page:
 #### Buttons and actions
 
 * **Create** – Opens a new line to create a departure manually.
-* **Send Flight Change** – Sends updated flight details to connected systems. It also saves your edits.&#x20;
+* **Send Flight Change** – Sends updated flight details to connected systems. It also saves your edits.
 
 {% hint style="info" %}
 When a flight change is submitted, a **notification email** is sent to the guest.
@@ -57,10 +57,10 @@ If the guest **does not confirm receipt**, the system will folow the settings ma
 * **Second resend**
 * Then, **send an SMS reminder** asking the guest to check their email and confirm the change.
 
-Example: if there is a departure in 20 days, and there is a flight change, in the system setup you can set when to resend the flight change email:&#x20;
+Example: if there is a departure in 20 days, and there is a flight change, in the system setup you can set when to resend the flight change email:
 
-* First resend - 10 days before departure,&#x20;
-* Second resend - 5 days before departure and&#x20;
+* First resend - 10 days before departure,
+* Second resend - 5 days before departure and
 * SMS sending - 1 day before departure.
 
 Within the system, it is easy to identify guests who **have not yet confirmed** receipt.

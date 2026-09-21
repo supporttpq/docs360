@@ -38,7 +38,7 @@ Only want to undo part of the date range? Use [Split the Stop Sale Rule](split-t
 2. Find the rule you want to undo.
 3. Click **Edit** (pencil icon).
 
-<figure><img src="../.gitbook/assets/02.06.2026_14.31.34_REC (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/02.06.2026_14.31.34_REC.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Only **enabled** rules can be removed or split.
