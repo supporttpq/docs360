@@ -22,6 +22,8 @@ An **A la carte** booking combines more than one hotel stay and/or one-way trans
 * The booking's `agencyID` and `hash` are known for Customer Center, or its offer details are known for Web Booking, needed to call the API.
 * A PLTA ID identifies one trip component, one hotel stay or one transport, within a booking—see [.](./ "mention") in the Tourpaq Web Booking - Technical documentation page.
 
+In the case of DoBooking flow, it is necessary to aquiere a "package GUID"with which you will start the booking flow.(this replaces the traditional parameters from \<LINK TO WB PARAMS.)
+
 ### How-to
 
 {% stepper %}
@@ -39,7 +41,7 @@ An **A la carte** booking combines more than one hotel stay and/or one-way trans
 #### **Room Availability:**
 
 * Looking at the \_links object, it has the same "help:priceavailability" array, this time it's a list of paths. These need to be called using GET, to get all the details about the hotels.
-* In short terms, before you were making one call and memorizing one object, now we have an array.
+* In short terms, for a normal booking you would be making one call and memorizing it's result, in the a la carte scenario you need to make multiple cals and memorize the results.
 {% endstep %}
 
 {% step %}
@@ -54,7 +56,7 @@ An **A la carte** booking combines more than one hotel stay and/or one-way trans
 {% step %}
 #### **Products**
 
-* In the relevant product call, we have products. These items have a "availableForPltaIDs" aray, that tells you which hotels they are eligible for. These will only be assignable to pax in THAT room.
+* In the relevant product call, we have products. These items have a "availableForPltaIDs" array, that tells you which hotels they are eligible for. These will only be assignable to pax in THAT room.
 * Insurance and cancellation insurance are also PLTA agnostic.
 {% endstep %}
 
