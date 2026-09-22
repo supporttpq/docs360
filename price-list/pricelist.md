@@ -21,6 +21,8 @@ layout:
     visible: true
   actions:
     visible: true
+  anchors:
+    visible: true
 ---
 
 # Price List
@@ -154,6 +156,12 @@ This enables bulk price updates across a broader selection.
 {% hint style="warning" %}
 Room availability depends on the selected hotels and date interval.
 {% endhint %}
+
+To make the full hotel name easier to identify when it is truncated in the interface, a tooltip is displayed when the user hovers over the hotel name in the **Hotels** filter.
+
+The tooltip displays the **full hotel name**, allowing users to see the complete name without changing the layout or expanding the field.
+
+<figure><img src="../.gitbook/assets/22.09.2026_13.37.28_REC.png" alt=""><figcaption></figcaption></figure>
 
 * **Fix Quotas Dropdown**: Select a transport fix quota
 
@@ -382,7 +390,7 @@ The Price List column selector allows users to choose which price types and inte
 **Column Filters** allow you to display specific portions of information from the Price List grid.
 
 * **F** - Select **F** to display the Final Prices for the selected price groups. When F is selected, the corresponding Final Price columns are displayed.
-* **P** - Select **P** to display the original Price List Prices.&#x20;
+* **P** - Select **P** to display the original Price List Prices.
 * Each **interval group** has a corresponding checkbox: **Interval 1 (P1), Interval 2 (P2), Interval 3 (P3), Interval 4 (P4)**.
 * Example: If **ALL PRICES (P1, P2, P3, P4)** is checked and **Interval 1** is selected as the active filter, only the **P1** column will be displayed in the table.
 * Columns **not grouped into intervals** are always shown by default.
@@ -505,7 +513,7 @@ If **Default Adult Age** is not configured, the calculation uses age **99**.
 
 The total calculated booking price is divided by the number of ordinary beds:
 
-**Final Price = Total booking price ÷ Number of ordinary beds**&#x20;
+**Final Price = Total booking price ÷ Number of ordinary beds**
 
 {% hint style="info" %}
 The formula uses the average of ordinary beds - Ex: if a discount/supplement is used only for the first passenger, the final price is calculated from the booking price after the supplement is applied.
@@ -569,7 +577,7 @@ The system uses a child passenger with age **7** when calculating the **Final Ch
 2. If the hotel value is not configured, the system uses **System Setup Max Child Age**.
 
 {% hint style="info" %}
-The calculation of the final price will be done when the other prices are calculated.\
+The calculation of the final price will be done when the other prices are calculated.\
 E.g., if there is a P price, the corresponding FP price shall be updated at the same time.
 {% endhint %}
 
@@ -618,15 +626,15 @@ The discount is included when calculating the Final Discount Price.
 
 The resulting Final Price represents the selling price after the discount has been applied.
 
-| Price     | Value                          |
-| --------- | ------------------------------ |
-| P1        | 5,000 SEK                      |
-| Discount  | -500 SEK                       |
-| FP1       | Calculated final selling price |
+| Price    | Value                          |
+| -------- | ------------------------------ |
+| P1       | 5,000 SEK                      |
+| Discount | -500 SEK                       |
+| FP1      | Calculated final selling price |
 
 Again, the original **P1 value is not modified**.
 
-The resulting Final Price represents the selling price after the discount  has been applied                    (**FP1 = 4500 SEK/pers)**
+The resulting Final Price represents the selling price after the discount has been applied (**FP1 = 4500 SEK/pers)**
 
 ## Example: Discount + Supplement
 
@@ -647,12 +655,12 @@ The Price List values remain: **P1 = 5,000 SEK**
 
 The discount and supplement are included when calculating the Final Discount Price.
 
-The resulting Final Price represents the selling price after the discount and supplement  have been applied. (FP1 = 5000 SEK - 500 SEK + 1000 SEK = 5500 SEK/pers)
+The resulting Final Price represents the selling price after the discount and supplement have been applied. (FP1 = 5000 SEK - 500 SEK + 1000 SEK = 5500 SEK/pers)
 
 {% hint style="info" %}
 The same examples also apply for D1, G1, CH1, C1H1, C2H1 for all intervals
 
-C1H1 & C2H1 are displayed in the pricelist only when "Child profit margin" option is checked by a Super Administrator. If isn't checked  the CH1 appears.
+C1H1 & C2H1 are displayed in the pricelist only when "Child profit margin" option is checked by a Super Administrator. If isn't checked the CH1 appears.
 {% endhint %}
 
 ***
