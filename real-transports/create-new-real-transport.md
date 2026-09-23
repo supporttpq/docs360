@@ -165,6 +165,10 @@ If you set **Base Cost** on a **Real Transport** departure:
 * it overrides **calculated seat cost in the Price List only**
 * it **does not** change booking operational cost
 
+**Parent/child cost rule:** When a booking uses a parent and a child real transport, the system always applies the **parent transport cost**. The child transport's own cost is not used, even if the two flights have different costs.
+
+**Example:** A passenger flies from Aalborg, lands in Copenhagen, and then continues on a second flight. Although the journey consists of two flights with different costs, the system uses the cost of the parent real transport.
+
 ***
 
 **Transport Supplier -** Defines the supplier responsible for operating the transport (**Example: saxaxa)**
