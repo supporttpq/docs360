@@ -91,7 +91,7 @@ Typical uses include:
 
 ***
 
-**Airline -** Associates the transport with a specific airline.&#x20;
+**Airline -** Associates the transport with a specific airline.
 
 * Select an airline from the dropdown list.
 * It is the default option and can be configured in the [**Departure**](departures/) tab (**Example:** Scandinavian Airlines (SAS))
@@ -164,8 +164,6 @@ If you set **Base Cost** on a **Real Transport** departure:
 
 * it overrides **calculated seat cost in the Price List only**
 * it **does not** change booking operational cost
-
-See: [Add Base Cost on Real Transports](https://manual.tourpaq.com/real-transports/departures/add-base-cost-on-real-transports)
 
 ***
 
