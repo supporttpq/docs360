@@ -101,11 +101,11 @@ Examples:
 | Hotel Only booking (no transport)                    | 10 (populated the same way as for transport + hotel bookings)     |
 | Child cancelled from the room (amendment)            | (empty) — reverts to blank once no children remain in the room    |
 
-<figure><img src="../.gitbook/assets/chd-ages-new-booking-examples.png" alt=""><figcaption><p> <em>The CHD Ages column is populated only for rows with children and left blank for adults-only or infant-only rows</em></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/23.09.2026_09.10.58_REC.png" alt=""><figcaption><p> <em>The CHD Ages column is populated only for rows with children and left blank for adults-only or infant-only rows</em></p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/chd-ages-hotel-only-example.png" alt=""><figcaption><p><em>A hotel-only booking shows CHD Ages populated the same way as for combined transport-and-hotel bookings.</em></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/23.09.2026_09.12.41_REC.png" alt=""><figcaption><p><em>A hotel-only booking shows CHD Ages populated the same way as for combined transport-and-hotel bookings.</em></p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/chd-ages-amendment-example.png" alt=""><figcaption><p><em>When a child is cancelled from a booking, it</em> reverts CHD Ages and Child Names to blank for that reference, matching the new CHD count of 0.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/23.09.2026_09.13.43_REC.png" alt=""><figcaption><p><em>CHD Ages before and after cancelation</em></p></figcaption></figure>
 
 The MTS Globe CSV file is a structured booking export used for supplier communication and operational synchronization.
 
