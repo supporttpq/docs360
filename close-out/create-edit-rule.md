@@ -1,87 +1,109 @@
-# Create / Edit rule
+---
+description: >-
+  Create a Close Out rule for one or more date periods, optionally limited to
+  selected brands, one arrival gateway, transports, destinations and hotels.
+---
+
+# Create a Close Out rule
+
+**Applies to:** Tourpaq Office · **Available from:** Tourpaq v15.5 · **Last reviewed:** 2026-09-25
 
 ### Overview
 
-The system allows administrators to define rules that control availability and restrictions based on transport, destination, resort, hotel, or room type. Rules are time-bound and can be enabled or disabled as needed.
+**New Close Out** is the page where you create a [Close Out](README.md) rule. One rule can cover several date periods, called **intervals**. The rule takes effect for every interval you add.
 
-This functionality ensures precise control over booking conditions, making it possible to handle seasonal restrictions, transport limitations, or hotel-specific rules.
+The fields on this page are the same as the columns in the Close Out list, in the same order. After you save, you edit or delete the rule from the list.
 
-### Key rules
+### Purpose
 
-* **Start Date** and **End Date** are mandatory.
-* **End Date** must be later than **Start Date**.
-* **Note** is mandatory.
-* You must select at least one scope field: **Transport**, **Destination**, **Resort**, or **Hotel**.
-* After you save a rule, you typically only change **Enabled**. For other changes, create a new rule and disable the old one.
+Use New Close Out to:
 
-### Create a rule
+* Close sales while a hotel contract is not yet in place — for example, all hotels on Kreta for two weeks in October.
+* Close sales for one arrival airport only, for example when the charter flight to `CHQ - Chania Lufthavn` is full.
+* Close sales for selected brands only, for example **Bravo Tours** and **Bravo Golf**, while the other brands keep selling.
 
-1. Open **Hotel → Close Out**.
-2. Click **Edit** (new line) to create a new rule.
-3. Fill in the fields (see below).
-4. Keep **Enabled** checked if the rule should apply immediately.
-5. Click **Save**.
+### Preconditions
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+* Your user has access to **Hotel → Close Out** — see [Users](../users/users/README.md).
+* The [brands](../brands/README.md), [arrival gateways](../setup/arrival-gateways/README.md), transports and hotels you want to close already exist.
+* You know the arrival dates to close. A Close Out blocks arrivals on those dates only — bookings that arrive earlier and stay over the dates are not blocked.
 
-After saving, the rule is shown at the top of the list.
+### How-to
 
-### Fields and dependencies
+{% stepper %}
+{% step %}
+**Open New Close Out**
 
-#### Fields
+Go to **Hotel → Close Out** and click **Create**.
+{% endstep %}
 
-* **Start Date**: First date the rule applies.
-* **End Date**: Last date the rule applies.
-* **Transport Type**: Filters the available transports.
-* **Transports**: One or more transports.
-* **Destination**: One or more destinations.
-* **Resort**: One or more resorts.
-* **Hotel**: One or more hotels.
-* **Room Type**: One or more room types.
-* **Note**: Internal description of why the rule exists.
-* **Enabled**: Turns the rule on/off (default: enabled).
+{% step %}
+**Add the intervals**
 
-#### Field filtering (dependency chain)
+1. Enter **FROM DATE** and **TO DATE** for the first period, for example `05-10-2026` to `11-10-2026`.
+2. To add another period, click the plus icon under the intervals and fill in the new row, for example `19-10-2026` to `25-10-2026`.
+3. To remove a period, click the bin icon at the end of its row.
+{% endstep %}
 
-* **Transport** is filtered by **Transport Type**.
-* **Destination** is filtered by **Transport(s)**.
-* **Resort** is filtered by **Destination(s)** and **Transport(s)**.
-* **Hotel** is filtered by **Resort(s)**.
-* **Room Type** is filtered by **Hotel(s)**.
+{% step %}
+**Limit the rule**
+
+1. Select **Brand** to close sales for some brands only. Leave it empty to close all brands.
+2. Select **Arrival** to close sales for one arrival gateway only. Leave `All Arrivals` to close every arrival.
+3. Select **Transport Type**, **Transport**, **Destination**, **Resort** and **Hotel** as needed.
+4. To close specific room types, select exactly one hotel, then select the **Room Type**.
+{% endstep %}
+
+{% step %}
+**Describe and save**
+
+1. Enter a **Note** explaining why the rule exists, for example `Hotel contracts for Kreta not signed yet`.
+2. Click **Save**. Click **Cancel** to return to the list without creating a rule.
+{% endstep %}
+{% endstepper %}
+
+Tourpaq returns to the Close Out list, where the new rule is shown. Sales stop in the matching price lists once the background update has run — allow a few minutes before you check availability.
 
 {% hint style="warning" %}
-You must select at least one of: **Transport**, **Destination**, **Resort**, **Hotel**.\
-Room types cannot stand alone without a hotel.
+Saving a rule sets FHA to `0` for every price list the rule matches. A rule on a whole destination can close sales across many thousands of price lists. Start with a narrow scope and widen it only when needed.
 {% endhint %}
 
-### Validation
+The whole page works from the keyboard. Press **Tab** to move between fields.
 
-You can’t save if:
+### Field Reference
 
-* Start Date or End Date is empty.
-* End Date is not after Start Date.
-* Note is empty.
-* None of Transport/Destination/Resort/Hotel is selected.
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/close-out-new.png" alt="New Close Out page with two intervals, 05-10-2026 to 11-10-2026 and 19-10-2026 to 25-10-2026, two brands selected, arrival CHQ - Chania Lufthavn, transport type Charter Transports, destination Kreta and a note"><figcaption><p>New Close Out with two intervals.</p></figcaption></figure></div>
 
-### Edit an existing rule
+| Field | Description | Required | Notes |
+| --- | --- | --- | --- |
+| **Intervals** — **FROM DATE** / **TO DATE** | The arrival periods the rule closes. | Yes | At least one interval is required. Intervals in the same rule must not overlap. Use the plus icon to add an interval and the bin icon to remove one. |
+| **Brand** | Limits the rule to the selected brands. | No | Opens a **Brands** window with **Select all**. Leave empty to close all brands. |
+| **Arrival** | Limits the rule to one arrival gateway. | No | Default `All Arrivals`. Only active arrivals are listed, as `CODE - Name` in alphabetical order. |
+| **Transport Type** | Limits the rule to one type of transport. | No | Options: `Charter Transports`, `Dynamic Transports`, `System Transports`, `Sys-real Transports`. Narrows the list in **Transport**. |
+| **Transport** | Limits the rule to the selected transports. | No | Filtered by **Transport Type**. |
+| **Destination** | The destinations to close. | No | Filtered by the selected transports. |
+| **Resort** | The resorts to close. | No | Filtered by the selected destinations and transports. |
+| **Hotel** | The hotels to close. | No | Filtered by the selected resorts. |
+| **Room Type** | The room types to close. | No | Available only when exactly one hotel is selected. |
+| **Note** | Why the rule exists. | No | Shown in the Close Out list. Write a note you will understand later — it is the only description the rule has. |
 
-* Toggle **Enabled**, then click **Save**.
-* To change dates or scope, create a new rule and disable the old one.
+The fields with a blue info icon show these tooltips:
 
-### Examples
+```
+Intervals: The Close Out takes effect for every interval added here.
+Brand: If one or more brands are selected, the Close Out will only take effect for the selected brands
+Arrival: When an arrival is selected, the Close Out will only take effect for the selected Arrival. This is relevant when a Close Out is needed for all arrivals to a single airport.
+Room Type: Room types can only be selected for a single hotel.
+```
 
-* **Seasonal restriction:** Close a hotel from `01-11-2025` to `01-03-2026`.
-* **Transport restriction:** Block hotels only for a specific flight/transport.
-* **Room block:** Block a specific room type for peak dates (via Hotel + Room Type).
+{% hint style="danger" %}
+**TO VERIFY** — Is **Note** still mandatory, and must a rule still have at least one of **Transport**, **Destination**, **Resort** or **Hotel**? The previous version of this page stated both; the new page no longer marks them as required.
+{% endhint %}
 
-### Notes / best practices
+### Related pages
 
-* Write a clear **Note**. You’ll rely on it later.
-* Start with a narrow scope. Expand only when needed.
-* Review enabled rules regularly. Disable rules that are no longer relevant.
-* Allow up to \~2 minutes for changes to reach price lists.
-
-### Related tasks
-
-* [Close Out](./)
-* [Enable / Disable rule](enable-disable-rule.md)
+* [Close Out](README.md)
+* [Stop Sales](../stop-sales.md)
+* [Brands](../brands/README.md)
+* [Arrival Gateways](../setup/arrival-gateways/README.md)
+* [Price List](../price-list/pricelist.md)

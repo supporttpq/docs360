@@ -88,7 +88,7 @@ A booking type for round-trip or multi-leg itineraries where the passenger visit
 
 #### Close Out
 
-A hotel availability setting that completely blocks a room type or hotel from being sold for a specific period. More absolute than Stop Sales. Configured under **Hotel → Close Out**.
+A rule the tour operator uses in daily operations to block new bookings for selected hotels and room types on specific arrival dates, optionally limited to selected brands or one arrival gateway. It sets Free Hotel Allotment (FHA) to `0` in the matching price lists and stays active until deleted. Configured under **Hotel → Close Out**. When the hotel asks to stop sales, use _Stop Sales_ instead. See [Close Out](../close-out/README.md).
 
 #### Coded Discount
 
