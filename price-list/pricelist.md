@@ -330,6 +330,10 @@ After performing a search, the **Price List** results are displayed in a table f
 
 <figure><img src="../.gitbook/assets/image (290).png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="info" %}
+A yellow warning icon right after the lightning icon on a line means that the room type has sales blocked by an active [Close Out](../close-out/README.md) rule. **FHA** on that line is `0`. The icon's tooltip reads: *The room type has sales blocked due to an active Close Out*.
+{% endhint %}
+
 #### Column Overview
 
 Column titles are abbreviated to keep the table tidy. Most fields include **tooltips** that display the full column name. Below is a full list of columns with explanations:
