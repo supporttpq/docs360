@@ -95,8 +95,8 @@ The list shows the rules that match your filters. Changes reach the price lists 
 | --- | --- | --- | --- |
 | **Start date** | First date of the period you want to see rules for. | Yes | Defaults to today. |
 | **End date** | Last date of the period you want to see rules for. | Yes | Defaults to one year from today. |
-| **Brand** | Shows only rules that close sales for the selected brand. | No | Default `All Brands`. Rules that apply to all brands are also shown, because they affect the selected brand too. |
-| **Arrival** | Shows only rules that are limited to the selected arrival gateway. | No | Default `All Arrivals`. Rules set to **All Arrivals** are **not** shown when you pick an arrival. Arrivals are listed as `CODE - Name`, in alphabetical order, for example `CHQ - Chania Lufthavn`. |
+| **Brand** | Shows only rules that close sales for the selected brand. | No | Default `All Brands`. Rules that apply to all brands are also shown, because they affect the selected brand too. Brands are listed in the same order as in the brand selector at the top of Tourpaq Office. |
+| **Arrival** | Shows only rules that are limited to the selected arrival gateway. | No | Default `All Arrivals`. Rules set to **All Arrivals** are **not** shown when you pick an arrival. Only active arrivals are listed, as `CODE - Name`, in alphabetical order, for example `CHQ - Chania Lufthavn`. |
 | **Transport Type** | Shows only rules for the selected type of transport. | No | Default `All transport types`. |
 | **+ More filters** | Opens the **Transports**, **Destinations**, **Resorts**, **Hotels** and **Room Type** filters. | No | Click **Edit** above a filter to choose values. Click **- More filters** to hide them again. |
 | **Display** | Runs the search with the current filters. | — | |
@@ -109,8 +109,8 @@ The list shows the rules that match your filters. Changes reach the price lists 
 | --- | --- | --- | --- |
 | **FROM DATE** | First arrival date the rule closes. | Yes | Editable. Sortable. |
 | **TO DATE** | Last arrival date the rule closes. | Yes | Editable. Sortable. Must not be before **FROM DATE**. |
-| **BRAND** | The brands the rule closes sales for. | No | Editable. Empty (`Select Brands`) means all brands. |
-| **ARRIVAL** | The arrival gateway the rule is limited to. | No | Editable. `All Arrivals` means every arrival. |
+| **BRAND** | The brands the rule closes sales for. | No | Editable. Empty (`Select Brands`) means all brands. Hover over the column header to see its tooltip. |
+| **ARRIVAL** | The arrival gateway the rule is limited to. | No | Editable. `All Arrivals` means every arrival. Hover over the column header to see its tooltip. |
 | **TRANSPORT TYPE** | The type of transport the rule is limited to. | No | Narrows the list in **TRANSPORT**. |
 | **TRANSPORT** | The transports the rule is limited to. | No | Editable. |
 | **DESTINATION** | The destinations the rule closes. | No | Editable. |
@@ -125,8 +125,17 @@ The list shows the rules that match your filters. Changes reach the price lists 
 
 The list shows 25 rules per page by default. Change this in the page-size selector next to the page numbers.
 
+The **BRAND** and **ARRIVAL** column headers show these tooltips:
+
+```
+BRAND: If one or more brands are selected, the Close Out will only take effect for the selected brands
+ARRIVAL: When an arrival is selected, the Close Out will only take effect for the selected Arrival. This is relevant when a Close Out is needed for all arrivals to a single airport.
+```
+
 {% hint style="info" %}
 Close Out rules have no **Enabled** setting. A rule is active from the moment it is saved until it is deleted. To stop a rule, delete it.
+
+Rules that were disabled before the **Enabled** setting was removed were deleted when the change was installed. They no longer appear in the list and do not affect sales.
 {% endhint %}
 
 {% hint style="info" %}
@@ -139,15 +148,13 @@ Tourpaq processes each change to a rule as a background job. If you change a rul
 
 #### Close Out in the price list
 
-In **Price List → Price list**, a line whose package is blocked by an active Close Out shows a yellow warning icon right after the lightning icon. The icon's tooltip reads:
+In **Price List → Price list**, a line whose room type is blocked by an active Close Out shows a yellow warning icon right after the lightning icon, and **FHA** on the line is `0`. The icon's tooltip reads:
 
 ```
 The room type has sales blocked due to an active Close Out
 ```
 
-{% hint style="danger" %}
-**TO VERIFY** — Confirm the yellow warning icon on staging and add a screenshot. It could not be checked while writing this page.
-{% endhint %}
+See [Price List](../price-list/pricelist.md) for the rest of the price list screen.
 
 ### Related pages
 
