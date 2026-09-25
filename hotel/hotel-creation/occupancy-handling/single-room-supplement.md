@@ -80,7 +80,7 @@ Changing a Single Room Supplement rule does not change the price on existing boo
 
 2. **Single Room Supplement:** percent = true
 
-**Calculation**: Single Price from Room Cost \* Single Room Supplement price + Single Price for Room Cost ( 116 \* 125/100 + 116 = 261 DKK)
+**Calculation**: Single Price from Room Cost \* Single Room Supplement percentage value+ Single Price for Room Cost
 
 The Single Room Supplement can be visible in:
 
