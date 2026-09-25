@@ -85,8 +85,8 @@ flowchart LR
         P2["help:priceavailability"]
         P3["help:priceavailability"]
                        .
-                       .
-                       .
+                       ..
+                       ...
         PN["help:priceavailability"]
     end
     P1 --> D["pricelist details"]
