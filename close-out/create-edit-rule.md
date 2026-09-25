@@ -10,7 +10,7 @@ description: >-
 
 ### Overview
 
-**New Close Out** is the page where you create a [Close Out](README.md) rule. One rule can cover several date periods, called **intervals**. The rule takes effect for every interval you add.
+**New Close Out** is the page where you create a [Close Out](./) rule. One rule can cover several date periods, called **intervals**. The rule takes effect for every interval you add.
 
 The fields on this page are the same as the columns in the Close Out list, in the same order. After you save, you edit or delete the rule from the list.
 
@@ -24,8 +24,8 @@ Use New Close Out to:
 
 ### Preconditions
 
-* Your user has access to **Hotel → Close Out** — see [Users](../users/users/README.md).
-* The [brands](../brands/README.md), [arrival gateways](../setup/arrival-gateways/README.md), transports and hotels you want to close already exist.
+* Your user has access to **Hotel → Close Out** — see [Users](../users/users/).
+* The [brands](../brands/), [arrival gateways](../setup/arrival-gateways/), transports and hotels you want to close already exist.
 * You know the arrival dates to close. A Close Out blocks arrivals on those dates only — bookings that arrive earlier and stay over the dates are not blocked.
 
 ### How-to
@@ -65,7 +65,7 @@ Go to **Hotel → Close Out** and click **Create**.
 Tourpaq returns to the Close Out list, where the new rule is shown. Sales stop in the matching price lists once the background update has run — allow a few minutes before you check availability.
 
 {% hint style="warning" %}
-Saving a rule sets FHA to `0` for every price list the rule matches. A rule on a whole destination can close sales across many thousands of price lists. Start with a narrow scope and widen it only when needed.
+Saving a rule sets FHA to 0 for every price list the rule matches. A rule on a whole destination can close sales across many thousands of price lists. Start with a narrow scope and widen it only when needed.
 {% endhint %}
 
 The whole page works from the keyboard. Press **Tab** to move between fields.
@@ -74,36 +74,30 @@ The whole page works from the keyboard. Press **Tab** to move between fields.
 
 <div data-with-frame="true"><figure><img src="../.gitbook/assets/close-out-new.png" alt="New Close Out page with two intervals, 05-10-2026 to 11-10-2026 and 19-10-2026 to 25-10-2026, two brands selected, arrival CHQ - Chania Lufthavn, transport type Charter Transports, destination Kreta and a note"><figcaption><p>New Close Out with two intervals.</p></figcaption></figure></div>
 
-| Field | Description | Required | Notes |
-| --- | --- | --- | --- |
-| **Intervals** — **FROM DATE** / **TO DATE** | The arrival periods the rule closes. | Yes | At least one interval is required. Intervals in the same rule must not overlap. Use the plus icon to add an interval and the bin icon to remove one. |
-| **Brand** | Limits the rule to the selected brands. | No | Opens a **Brands** window with **Select all**. Leave empty to close all brands. |
-| **Arrival** | Limits the rule to one arrival gateway. | No | Default `All Arrivals`. Only active arrivals are listed, as `CODE - Name` in alphabetical order. |
-| **Transport Type** | Limits the rule to one type of transport. | No | Options: `Charter Transports`, `Dynamic Transports`, `System Transports`, `Sys-real Transports`. Narrows the list in **Transport**. |
-| **Transport** | Limits the rule to the selected transports. | No | Filtered by **Transport Type**. |
-| **Destination** | The destinations to close. | No | Filtered by the selected transports. |
-| **Resort** | The resorts to close. | No | Filtered by the selected destinations and transports. |
-| **Hotel** | The hotels to close. | No | Filtered by the selected resorts. |
-| **Room Type** | The room types to close. | No | Available only when exactly one hotel is selected. |
-| **Note** | Why the rule exists. | No | Shown in the Close Out list. Write a note you will understand later — it is the only description the rule has. |
+| Field                                       | Description                                 | Notes                                                                                                                                                |
+| ------------------------------------------- | ------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Intervals** — **FROM DATE** / **TO DATE** | The arrival periods the rule closes.        | At least one interval is required. Intervals in the same rule must not overlap. Use the plus icon to add an interval and the bin icon to remove one. |
+| **Brand**                                   | Limits the rule to the selected brands.     | Opens a **Brands** window with **Select all**. Leave empty to close all brands.                                                                      |
+| **Arrival**                                 | Limits the rule to one arrival gateway.     | Default `All Arrivals`. Only active arrivals are listed, as `CODE - Name` in alphabetical order.                                                     |
+| **Transport Type**                          | Limits the rule to one type of transport.   | Options: `Charter Transports`, `Dynamic Transports`, `System Transports`, `Sys-real Transports`. Narrows the list in **Transport**.                  |
+| **Transport**                               | Limits the rule to the selected transports. | Filtered by **Transport Type**.                                                                                                                      |
+| **Destination**                             | The destinations to close.                  | Filtered by the selected transports.                                                                                                                 |
+| **Resort**                                  | The resorts to close.                       | Filtered by the selected destinations and transports.                                                                                                |
+| **Hotel**                                   | The hotels to close.                        | Filtered by the selected resorts.                                                                                                                    |
+| **Room Type**                               | The room types to close.                    | Available only when exactly one hotel is selected.                                                                                                   |
+| **Note**                                    | Why the rule exists.                        | Shown in the Close Out list. Write a note you will understand later — it is the only description the rule has.                                       |
 
 The fields with a blue info icon show these tooltips:
 
-```
-Intervals: The Close Out takes effect for every interval added here.
-Brand: If one or more brands are selected, the Close Out will only take effect for the selected brands
-Arrival: When an arrival is selected, the Close Out will only take effect for the selected Arrival. This is relevant when a Close Out is needed for all arrivals to a single airport.
+Intervals: The Close Out takes effect for every interval added here.\
+Brand: If one or more brands are selected, the Close Out will only take effect for the selected brands\
+Arrival: When an arrival is selected, the Close Out will only take effect for the selected Arrival. This is relevant when a Close Out is needed for all arrivals to a single airport.\
 Room Type: Room types can only be selected for a single hotel.
-```
-
-{% hint style="danger" %}
-**TO VERIFY** — Is **Note** still mandatory, and must a rule still have at least one of **Transport**, **Destination**, **Resort** or **Hotel**? The previous version of this page stated both; the new page no longer marks them as required.
-{% endhint %}
 
 ### Related pages
 
-* [Close Out](README.md)
+* [Close Out](./)
 * [Stop Sales](../stop-sales.md)
-* [Brands](../brands/README.md)
-* [Arrival Gateways](../setup/arrival-gateways/README.md)
+* [Brands](../brands/)
+* [Arrival Gateways](../setup/arrival-gateways/)
 * [Price List](../price-list/pricelist.md)

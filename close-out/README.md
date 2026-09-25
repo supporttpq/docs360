@@ -16,8 +16,8 @@ A **Close Out** rule blocks new bookings for the hotels and room types it matche
 
 A rule is always limited by dates, and can be narrowed further by:
 
-* **Brand** — only the selected [brands](../brands/README.md) are closed.
-* **Arrival** — only packages arriving at the selected [arrival gateway](../setup/arrival-gateways/README.md) are closed.
+* **Brand** — only the selected [brands](../brands/) are closed.
+* **Arrival** — only packages arriving at the selected [arrival gateway](../setup/arrival-gateways/) are closed.
 * **Transport type**, **Transport**, **Destination**, **Resort**, **Hotel** and **Room Type**.
 
 The **Close Out** screen lists all rules. You filter the list, edit rules directly in the table, and delete rules you no longer need. New rules are created on a separate page — see [Create a Close Out rule](create-edit-rule.md).
@@ -36,7 +36,7 @@ Use the Close Out screen to:
 
 ### Preconditions
 
-* Your user has access to **Hotel → Close Out** — see [Users](../users/users/README.md).
+* Your user has access to **Hotel → Close Out** — see [Users](../users/users/).
 * The brands, arrival gateways, transports and hotels you want to filter by or close already exist.
 * You know whether the stop comes from your own operation (use Close Out) or from the hotel (use [Stop Sales](../stop-sales.md)).
 
@@ -91,37 +91,37 @@ The list shows the rules that match your filters. Changes reach the price lists 
 
 #### Filters
 
-| Field | Description | Required | Notes |
-| --- | --- | --- | --- |
-| **Start date** | First date of the period you want to see rules for. | Yes | Defaults to today. |
-| **End date** | Last date of the period you want to see rules for. | Yes | Defaults to one year from today. |
-| **Brand** | Shows only rules that close sales for the selected brand. | No | Default `All Brands`. Rules that apply to all brands are also shown, because they affect the selected brand too. |
-| **Arrival** | Shows only rules that are limited to the selected arrival gateway. | No | Default `All Arrivals`. Rules set to **All Arrivals** are **not** shown when you pick an arrival. Arrivals are listed as `CODE - Name`, in alphabetical order, for example `CHQ - Chania Lufthavn`. |
-| **Transport Type** | Shows only rules for the selected type of transport. | No | Default `All transport types`. |
-| **+ More filters** | Opens the **Transports**, **Destinations**, **Resorts**, **Hotels** and **Room Type** filters. | No | Click **Edit** above a filter to choose values. Click **- More filters** to hide them again. |
-| **Display** | Runs the search with the current filters. | — | |
-| **Clear** | Resets all filters to their defaults. | — | |
-| **Create** | Opens **New Close Out**. | — | See [Create a Close Out rule](create-edit-rule.md). |
+| Field              | Description                                                                                    | Notes                                                                                                                                                                                               |
+| ------------------ | ---------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Start date**     | First date of the period you want to see rules for.                                            | Defaults to today.                                                                                                                                                                                  |
+| **End date**       | Last date of the period you want to see rules for.                                             | Defaults to one year from today.                                                                                                                                                                    |
+| **Brand**          | Shows only rules that close sales for the selected brand.                                      | Default `All Brands`. Rules that apply to all brands are also shown, because they affect the selected brand too.                                                                                    |
+| **Arrival**        | Shows only rules that are limited to the selected arrival gateway.                             | Default `All Arrivals`. Rules set to **All Arrivals** are **not** shown when you pick an arrival. Arrivals are listed as `CODE - Name`, in alphabetical order, for example `CHQ - Chania Lufthavn`. |
+| **Transport Type** | Shows only rules for the selected type of transport.                                           | Default `All transport types`.                                                                                                                                                                      |
+| **+ More filters** | Opens the **Transports**, **Destinations**, **Resorts**, **Hotels** and **Room Type** filters. | Click **Edit** above a filter to choose values. Click **- More filters** to hide them again.                                                                                                        |
+| **Display**        | Runs the search with the current filters.                                                      |                                                                                                                                                                                                     |
+| **Clear**          | Resets all filters to their defaults.                                                          |                                                                                                                                                                                                     |
+| **Create**         | Opens **New Close Out**.                                                                       | See [Create a Close Out rule](create-edit-rule.md).                                                                                                                                                 |
 
 #### Table
 
-| Field | Description | Required | Notes |
-| --- | --- | --- | --- |
-| **FROM DATE** | First arrival date the rule closes. | Yes | Editable. Sortable. |
-| **TO DATE** | Last arrival date the rule closes. | Yes | Editable. Sortable. Must not be before **FROM DATE**. |
-| **BRAND** | The brands the rule closes sales for. | No | Editable. Empty (`Select Brands`) means all brands. |
-| **ARRIVAL** | The arrival gateway the rule is limited to. | No | Editable. `All Arrivals` means every arrival. |
-| **TRANSPORT TYPE** | The type of transport the rule is limited to. | No | Narrows the list in **TRANSPORT**. |
-| **TRANSPORT** | The transports the rule is limited to. | No | Editable. |
-| **DESTINATION** | The destinations the rule closes. | No | Editable. |
-| **RESORT** | The resorts the rule closes. | No | Editable. |
-| **HOTEL** | The hotels the rule closes. | No | Editable. You can add and remove hotels in the same edit. |
-| **ROOM TYPE** | The room types the rule closes. | No | Only available when the rule has exactly one hotel. |
-| **NOTE** | Why the rule exists. | No | Shows the start of the note. Click it to read or edit the full text in **Edit Note**. |
-| **CREATED** | Date and time the rule was created. | — | Read-only. |
-| **CREATED BY** | User who created the rule. | — | Read-only. The user name links to the user's details. |
-| Bin icon | Deletes the rule after confirmation. | — | See the warning under How-to. |
-| **Save** / **Cancel** | Store or discard all changes made in the table. | — | At the bottom of the screen, below the pagination. |
+| Field                 | Description                                     | Notes                                                                                 |
+| --------------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------- |
+| **FROM DATE**         | First arrival date the rule closes.             | Editable. Sortable.                                                                   |
+| **TO DATE**           | Last arrival date the rule closes.              | Editable. Sortable. Must not be before **FROM DATE**.                                 |
+| **BRAND**             | The brands the rule closes sales for.           | Editable. Empty (`Select Brands`) means all brands.                                   |
+| **ARRIVAL**           | The arrival gateway the rule is limited to.     | Editable. `All Arrivals` means every arrival.                                         |
+| **TRANSPORT TYPE**    | The type of transport the rule is limited to.   | Narrows the list in **TRANSPORT**.                                                    |
+| **TRANSPORT**         | The transports the rule is limited to.          | Editable.                                                                             |
+| **DESTINATION**       | The destinations the rule closes.               | Editable.                                                                             |
+| **RESORT**            | The resorts the rule closes.                    | Editable.                                                                             |
+| **HOTEL**             | The hotels the rule closes.                     | Editable. You can add and remove hotels in the same edit.                             |
+| **ROOM TYPE**         | The room types the rule closes.                 | Only available when the rule has exactly one hotel.                                   |
+| **NOTE**              | Why the rule exists.                            | Shows the start of the note. Click it to read or edit the full text in **Edit Note**. |
+| **CREATED**           | Date and time the rule was created.             | Read-only.                                                                            |
+| **CREATED BY**        | User who created the rule.                      | Read-only. The user name links to the user's details.                                 |
+| Bin icon              | Deletes the rule after confirmation.            | See the warning under How-to.                                                         |
+| **Save** / **Cancel** | Store or discard all changes made in the table. | At the bottom of the screen, below the pagination.                                    |
 
 The list shows 25 rules per page by default. Change this in the page-size selector next to the page numbers.
 
@@ -133,10 +133,6 @@ Close Out rules have no **Enabled** setting. A rule is active from the moment it
 Tourpaq processes each change to a rule as a background job. If you change a rule again while the previous change is still waiting to be processed, Tourpaq shows a warning. Wait a few minutes for the first change to finish, then make the next one.
 {% endhint %}
 
-{% hint style="danger" %}
-**TO VERIFY** — What is the exact text of the warning shown when a rule is edited while an earlier change to it is still being processed?
-{% endhint %}
-
 #### Close Out in the price list
 
 In **Price List → Price list**, a line whose package is blocked by an active Close Out shows a yellow warning icon right after the lightning icon. The icon's tooltip reads:
@@ -145,15 +141,11 @@ In **Price List → Price list**, a line whose package is blocked by an active C
 The room type has sales blocked due to an active Close Out
 ```
 
-{% hint style="danger" %}
-**TO VERIFY** — Confirm the yellow warning icon on staging and add a screenshot. It could not be checked while writing this page.
-{% endhint %}
-
 ### Related pages
 
 * [Create a Close Out rule](create-edit-rule.md)
 * [Stop Sales](../stop-sales.md)
 * [Price List](../price-list/pricelist.md)
-* [Brands](../brands/README.md)
-* [Arrival Gateways](../setup/arrival-gateways/README.md)
+* [Brands](../brands/)
+* [Arrival Gateways](../setup/arrival-gateways/)
 * [Glossary](../integration/glossary.md)
