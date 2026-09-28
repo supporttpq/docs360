@@ -6,8 +6,6 @@ description: >-
 
 # Create a Close Out rule
 
-**Applies to:** Tourpaq Office · **Available from:** Tourpaq v15.5 · **Last reviewed:** 2026-09-25
-
 ### Overview
 
 **New Close Out** is the page where you create a [Close Out](./) rule. One rule can cover several date periods, called **intervals**. The rule takes effect for every interval you add.
