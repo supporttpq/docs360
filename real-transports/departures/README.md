@@ -292,13 +292,13 @@ Therefore, the cost update on a booking may not be immediate. The booking is upd
 
 ### Cost update on bookings after departure
 
-For bookings that use a **Real Transport**, Tourpaq updates the transport cost on the booking automatically after departure. The cost is calculated separately for the outbound and homebound legs.
+For bookings that use a **Real Transport**, Tourpaq can updates the transport cost on the booking automatically after departure. The cost is calculated separately for the outbound and homebound legs.
 
 The day after the outbound departure date, Tourpaq recalculates the cost of both legs and updates the booking. Whether the booking is updated again after the homebound flight depends on the **Update cost on bookings after the homebound flight** setting.
 
 #### Update cost on bookings after the homebound flight
 
-The setting is found under **Super Administration → Company → Features**, directly above **Ignore Transport Cost**. It is unchecked by default and is only relevant for transports that use Real Transports.
+The setting is found under **Super Administration → Company → Features**. It is unchecked by default and is only relevant for transports that use Real Transports.
 
 <figure><img src="../../.gitbook/assets/28.09.2026_14.42.57_REC.png" alt=""><figcaption></figcaption></figure>
 
