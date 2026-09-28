@@ -214,7 +214,7 @@ There are **two methods for calculating the passenger cost**, depending on wheth
 1. **Before departure**\
    The passenger cost is calculated based on the expected **Load Factor**. This provides an estimated cost per passenger based on the expected number of seats to be sold. The result is therefore an **approximate cost**, based on projected sales.
 2. **After departure**\
-   Once the flight has departed, the passenger cost is recalculated using the **actual number of seats sold**. The total flight cost is divided by the actual number of passengers booked. This represents the **actual passenger cost for the flight** and is no longer based on the expected Load Factor or sales projections.
+   The day after the flight has departed, the passenger cost is recalculated using the **actual number of seats sold**. The total flight cost is divided by the actual number of passengers booked. This represents the **actual passenger cost for the flight** and is no longer based on the expected Load Factor or sales projections. For when this cost is applied to the booking, see **Cost update on bookings after departure**.
 
 ***
 
@@ -289,3 +289,39 @@ The **30-minute interval is configurable per company**.
 The total time required to complete the recalculation depends on the number of records that need to be processed. A large number of affected **Pricelists and Bookings** can increase the time required for the service to complete the update.
 
 Therefore, the cost update on a booking may not be immediate. The booking is updated when the background recalculation service processes the affected records.
+
+### Cost update on bookings after departure
+
+For bookings that use a **Real Transport**, Tourpaq updates the transport cost on the booking automatically after departure. The cost is calculated separately for the outbound and homebound legs.
+
+The day after the outbound departure date, Tourpaq recalculates the cost of both legs and updates the booking. Whether the booking is updated again after the homebound flight depends on the **Update cost on bookings after the homebound flight** setting.
+
+#### Update cost on bookings after the homebound flight
+
+The setting is found under **Super Administration → Company → Features**, directly above **Ignore Transport Cost**. It is unchecked by default and is only relevant for transports that use Real Transports.
+
+<figure><img src="../../.gitbook/assets/28.09.2026_14.42.57_REC.png" alt=""><figcaption></figcaption></figure>
+
+The tooltip on the setting reads:
+
+_If checked, the booking will have the transport cost updated based on the actual load factor on the homebound flight._\
+_This option is only relevant when Real Transports are used._
+
+| Setting                 | Day after the outbound departure                                                                                                                           | Day after the homebound departure                                                                      |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| **Unchecked** (default) | The booking is updated with the **actual cost** for both the outbound and the homebound leg.                                                               | No update. The transport cost on the booking does not change.                                          |
+| **Checked**             | The booking is updated with the **actual cost** for the outbound leg and the **estimated cost** (based on the expected Load Factor) for the homebound leg. | The homebound leg is updated to the **actual cost**, based on the actual load of the homebound flight. |
+
+When the setting is checked, the real cost is calculated for the outbound leg and the estimated cost for the homebound.\
+If unchecked, the real cost is used for both.
+
+The cost for the homebound leg will then be updated tomorrow (one day after the return)
+
+#### Example: cost update after departure
+
+A booking travels out on 23 July and home on 30 July.
+
+| Date                              | Setting unchecked                              | Setting checked                                             |
+| --------------------------------- | ---------------------------------------------- | ----------------------------------------------------------- |
+| **24 July** (day after outbound)  | Outbound: actual cost. Homebound: actual cost. | Outbound: actual cost. Homebound: estimated cost.           |
+| **31 July** (day after homebound) | No update.                                     | Homebound: updated to the actual cost. Outbound: unchanged. |
