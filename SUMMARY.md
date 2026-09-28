@@ -472,7 +472,6 @@
 * [Giftcards](giftcards.md)
 * [Daily Programs](daily-programs.md)
 * [Campaigns](campaigns.md)
-* [Generic Product Price Rules](generic-product-price-rules.md)
 * [Cancellation Rules](cancellation-rules.md)
 * [Cancellation Insurance](cancellation-insurance/README.md)
   * [Editing Cancellation Insurance](cancellation-insurance/editing-cancellation-insurance.md)
