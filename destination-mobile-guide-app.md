@@ -85,31 +85,7 @@ In the Guest App, the effect will be that the excursion/product will continue to
 
 #### Set selling prices for an excursion
 
-Another really important step in the process of setting up the excursion for the app is defining one or more price rules. That can be done per periods - meaning that you can have different adult or child prices for different periods. In order to do that one has to navigate to the **Extras -> Generic Product Price Rule** menu item (see the picture below).
-
-<div data-with-frame="true"><figure><img src=".gitbook/assets/image (22) (1).png" alt="" width="100%"><figcaption></figcaption></figure></div>
-
-#### Create a price rule for an excursion
-
-In order to create a new price rule, one has to click on the **New** button in the right corner of the page mentioned previously. Pressing the **New** button will generate a new entry to the **Price Rules** table and we will have to configure it properly (see picture below).
-
-<div data-with-frame="true"><figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (54).png" alt="" width="100%"><figcaption></figcaption></figure></div>
-
-In order to properly understand how the price rules work in the process of setting up an excursion, we will provide a summary description of each field seen above:
-
-* **Name** - this field represents the name of the desired price rule (customization purpose),
-* **Product** - in here we select the excursion for which we will generate the price rule,
-* **Bkg Date Start** - representing the start date interval of the **bookings** for whom this rule will apply,
-* **Bkg Date End** - representing the end date interval of the **bookings** for whom this rule will apply,
-* **All Date Start** - representing the start date interval of the **allotments** for whom this rule will apply,
-* **All Date End** - representing the end date interval of the **allotments** for whom this rule will apply,
-* **Agency** - representing the agency for whom this rule will be available,
-* **Price** - representing the default price (or adult price if child price is higher than 0),
-* **Child price** - representing the child price for the given price rule,
-* **Cost** - there is no need to fill this one out for the excursion (we will just leave it 0),
-* **Enabled** - representing the availability trigger of a price rule (unchecking it will disable the price rule).
-
-Once we finish completing all the fields mentioned above, we click on **Save** and the rule will be generated. Also, the existing rules can also be modified by clicking the **Edit** button on them.
+Another really important step in the process of setting up the excursion for the app is defining one or more price rules. That can be done per periods - meaning that you can have different adult or child prices for different periods.
 
 #### Create a route for an excursion
 
