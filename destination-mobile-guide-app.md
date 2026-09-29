@@ -289,6 +289,22 @@ In the CXL/Error menu, you’ll see bookings where extra orders (such as excursi
 
 The status in the app will be cleared when the guest is traveling home.
 
+#### Example: an Extra Order with Manual allotment
+
+The screenshots below show an excursion that uses **Manual** allotment. The steps are the same as for any other excursion.
+
+**1. Add the excursion to the cart.** On the **Extras** screen, check the booking details and the number of adults and children, then tap **ADD TO CART**.
+
+<div align="center"><figure><img src=".gitbook/assets/image (481).png" alt="Guide App Extras screen with booking number, guest name, hotel, pick-up time, room, 1 adult and 1 child, and the ADD TO CART button" width="188"><figcaption></figcaption></figure></div>
+
+**2. Check out.** On **Cart Checkout**, check the excursion, date, number of passengers (**Pax**) and price. Select the payment type under **Paid by** and complete the order.
+
+<figure><img src=".gitbook/assets/image (507).png" alt="Guide App Cart Checkout screen with the booking, a manual allotment excursion for 2 passengers, the total, observation fields and the Paid by payment options" width="188"><figcaption></figcaption></figure>
+
+**3. Find the order.** The order is listed on the **Booked** tab of **Booked extras**, under **Unpaid orders** or **Paid orders**. Expand an order to see the excursion, date, time, number of passengers and price.
+
+<figure><img src=".gitbook/assets/image (549).png" alt="Guide App Booked extras screen, Booked tab, with an unpaid manual allotment excursion order expanded and a list of paid orders" width="188"><figcaption></figcaption></figure>
+
 ### Export lists
 
 Now that we have managed to properly set things up for selling the excursions, we need a way to track down the guests that will book them. Tourpaq offers this functionality either by using the backoffice's **Destination Lists** page (under **Extras -> Destination Lists**) or by using the **Lists** menu item in the App (a guide or guide master login is required to be able to generate the export files).
