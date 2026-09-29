@@ -1,9 +1,5 @@
 # Prices
 
-###
-
-###
-
 ### Overview
 
 In **Tourpaq Office**, each **Extra** (such as insurance, car rental, excursions, or other optional services) can have one or more **price configurations**.\
@@ -115,7 +111,7 @@ After splitting, the system will display separate price lines for each new inter
 
 <div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Separate price lines after splitting."><figcaption></figcaption></figure></div>
 
-**Prices for Extra Orders**
+### **Prices for Extra Orders**
 
 Prices for Extra Orders (Extras assigned to **Guide sale**) are defined on this tab. The separate **Generic Product Price Rules** page is no longer used; its prices have been moved to the **Prices** tab of the relevant Extras.
 
@@ -125,7 +121,3 @@ Prices for Extra Orders (Extras assigned to **Guide sale**) are defined on this 
 <div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (349).png" alt="Prices tab with START TIME and END TIME columns and three price lines for adults, children and a late departure"><figcaption><p>Price lines of an Extra Order with START TIME and END TIME.</p></figcaption></figure></div>
 
 <div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (352).png" alt="Prices tab of a Manual allotment Extra with an adult line aged 12 to 120 at 200 DKK and a child line aged 0 to 11 at 100 DKK, without time columns"><figcaption><p>Adult and child price lines on a Manual allotment Extra.</p></figcaption></figure></div>
-
-{% hint style="danger" %}
-**TO VERIFY** — On staging, START TIME and END TIME are visible on the Generic allotment Extra `TFS-EG` but not on the Manual allotment Extra `JJR_TEST_MAN_ALL`, which is also assigned to Guide sale. Confirm the rule and adjust the Start Time / End Time row above.
-{% endhint %}
