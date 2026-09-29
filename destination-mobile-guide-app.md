@@ -44,10 +44,6 @@ The same Extra can be ordered in these places:
 Extras with **Manual** and **Generic** allotment are sold in the same way in the Guide App and Guest App. The allotment type decides how availability is managed, not whether the excursion can be sold in the apps.
 {% endhint %}
 
-{% hint style="danger" %}
-**TO VERIFY** — The Allotment Type dropdown on staging still offers **None** and **LinkedToTransport** when an Extra is assigned to **Guide sale**. The specification says these must not be selectable for Extra Orders. Confirm whether the restriction is enforced on **Save**, and what message the user sees.
-{% endhint %}
-
 #### Configure an extra
 
 <mark style="background-color:red;">**IMPORTANT NOTE:**</mark> <mark style="background-color:red;">Only guides can add products and make them available in the application.</mark>
@@ -96,10 +92,6 @@ In the **Brands** section at the top of the **Overview** tab of the Extra, selec
 | **Guide sale**                            | Orderable as an Extra Order in the Guide App and Guest App.                                                                   |
 | **Guide sale + Internet Sale + For Sale** | Orderable as an Extra Order in the Guide App, Guest App, WebBooking (OneHome) and on the **Extra Orders** tab of the booking. |
 
-{% hint style="danger" %}
-**TO VERIFY** — During development it was stated that an Extra with **Guide sale + Internet Sale + For Sale** is not offered as a normal (pre-booked) Extra in **New Booking** in Tourpaq Office, and that an Extra with **Guide sale** only is used only by the Guest App. Confirm the final rule for each combination, including whether **Guide sale** only is also available in the Guide App.
-{% endhint %}
-
 <div data-with-frame="true"><figure><img src=".gitbook/assets/image (2).png" alt="Brands section with the Bravo Tours dropdown open and Guide sale + Internet Sale + For Sale selected"><figcaption><p>Brand assignment options. Any option that includes Guide sale makes the Extra an Extra Order for that brand.</p></figcaption></figure></div>
 
 #### Generate allotments for the excursion
@@ -132,17 +124,9 @@ Open the **Prices** tab of the Extra and create one price line per age group and
 
 The apps and the Destination API show these as the **Adult Price** and **Child Price** of the excursion.
 
-{% hint style="danger" %}
-**TO VERIFY** — The specification sets child prices at ages 2–11. Test Extras on staging use `0`–`11` and `1`–`11` for the child line. Confirm the age range customers must use, and whether infants (under 2) are priced or excluded.
-{% endhint %}
-
 For an Extra Order, the Prices tab can also show **START TIME** and **END TIME**. Use them to give the same date different prices during the day — for example a morning and an afternoon departure. The **S** split button next to them divides a price line into two time periods. The defaults are `00:00` and `23:59`, which means one price for the whole day. See [Prices ](extras-setup/extras-general-page/prices.md)for every column.
 
 <div data-with-frame="true"><figure><img src=".gitbook/assets/image (400).png" alt="Prices tab of a Generic allotment Extra showing START TIME and END TIME columns between the departure and booking date columns"><figcaption><p>START TIME and END TIME on the Prices tab of an Extra Order.</p></figcaption></figure></div>
-
-{% hint style="danger" %}
-**TO VERIFY** — On staging, **START TIME** and **END TIME** are shown for the Generic allotment Extra `TFS-EG`, but not for the Manual allotment Extra `JJR_TEST_MAN_ALL`, although both are assigned to **Guide sale + Internet Sale + For Sale**. The specification says the columns are shown for every Extra Order. Confirm whether the columns apply to Generic allotment only.
-{% endhint %}
 
 **Payment and cancellation**
 
@@ -153,18 +137,13 @@ How an Extra Order is paid depends on when it is ordered.
 | In the Guide App or Guest App at the destination | Paid with the Extra Order, using the guide payment types below.                                           | **Extra Orders** tab, Destination lists, **Booked** tab in the Guide App. |
 | Before departure, in WebBooking (OneHome)        | Added to the booking total and paid with the booking. No payment is registered on the Extra Order itself. | **Extra Orders** tab, Destination lists.                                  |
 
-When an Extra Order is cancelled:
+When an Extra is cancelled, what happens depends on the payment flow:
 
-* An Extra Order paid in the app is cancelled and refunded as described under **Book an excursion in the app**.
-* An Extra Order paid with the booking is removed from the booking. The amount appears as a negative balance in [Balance Administration](balance-administration.md), not as an Extra Order refund.
+* **Extra Order** (ordered and paid in the app): cancelled in the same way as today, from the **Booked** tab, and refunded as described under **Book an excursion in the app**.
+* **Pre-booked Extra** (booking payment flow): removed from the booking. The difference is shown as a negative balance for the booking in **Balance Administration**.
+* **Booked through OneHome (WebBooking)**: the Booking API inserts the product as an Extra Order. Its price is added to the booking total and no payment is assigned to the Extra Order. The product is included in the Guide App export, and guides can cancel it from the Guide App. The amount is shown as a negative balance for the booking, not as an Extra Order refund.
 
-{% hint style="danger" %}
-**TO VERIFY** — Cancellation of pre-booked Extra Orders. The specification asks for cancellation from the Guide App, but the comment of 24-09-2026 states that cancellation of Extra Orders ordered through OneHome is not implemented, and that guests must contact the tour operator to cancel. Confirm which cancellation routes are available at release.
-{% endhint %}
-
-{% hint style="danger" %}
-**TO VERIFY** — Open QA findings from 24-09-2026: Extra Orders created through WebBooking (Extra Order types 3 and 4) are not shown in **Booked** in the Guide App, and ordering an Extra added a discount to the booking passengers. Update this page when these are resolved.
-{% endhint %}
+See **Cancelling an Extra** on the [Extra Orders](booking/new-booking/extra-orders.md) page.
 
 **Create a route for an excursion**
 

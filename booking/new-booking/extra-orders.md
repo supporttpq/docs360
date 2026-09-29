@@ -75,6 +75,22 @@ An Extra Order created from WebBooking before departure is paid with the booking
 
 Service Cases are typically used to document and track follow-ups such as customer complaints, service requests, missing information, or other booking-related issues.
 
+**Cancelling an Extra**
+
+When an Extra is cancelled, what happens depends on the payment flow the Extra was booked with.
+
+| Payment flow                                | How the Extra is booked and paid                                                                                                                                                                        | What happens on cancellation                                                                                                                                           |
+| ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Extra Order**                             | Ordered in the Guide App or Guest App and paid with the Extra Order.                                                                                                                                    | Cancelled in the same way as today: the guide cancels the order from the **Booked** tab in the Guide App and can refund the guest.                                     |
+| **Pre-booked Extra** (booking payment flow) | Added to the booking and paid with the booking.                                                                                                                                                         | The Extra is removed from the booking. The difference is shown as a negative balance for the booking in [**Balance Administration**](../../balance-administration.md). |
+| **OneHome (WebBooking)**                    | The Booking API inserts the product as an Extra Order. The price is added to the booking total, and no payment is assigned to the Extra Order, the same way as for bookings created from the Guide App. | The guide can cancel the Extra from the Guide App. The amount is shown as a negative balance for the booking, not as an Extra Order refund.                            |
+
+Because Extras booked through OneHome are stored as Extra Orders:
+
+* The product is included in the export used by the Guide App.
+* Guides can still cancel the Extra from the Guide App.
+* When a pre-booked Extra is cancelled from the Guide App, the amount appears as a negative balance for the booking instead of being added to the Extra Order refund.
+
 ***
 
 ### **Field Descriptions**
