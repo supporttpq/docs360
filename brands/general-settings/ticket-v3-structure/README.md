@@ -92,7 +92,7 @@ If the number of passengers exceeds the page limit, the list continues on the ne
 
 ## Passenger List (Continuation)
 
-<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 ### Passenger List
 
@@ -182,7 +182,7 @@ A booking with stays at the same hotel before and after the safari. The e-ticket
 | `Dobbeltværelse med havudsigt` (double room, sea view) | `Pension iflg. program` (board according to the itinerary) | 3      | 12-01-2027 | 15-01-2027 |
 | `Club værelse` (club room)                             | `Pension iflg. program` (board according to the itinerary) | 9      | 17-01-2027 | 26-01-2027 |
 
-When using a Combi Hotel with two check-in/check-out dates in the same room: In the booking used for this example, the two periods use different room types (double room, sea view/club room) at the same hotel, not the same room.&#x20;
+When using a Combi Hotel with two check-in/check-out dates in the same room: In the booking used for this example, the two periods use different room types (double room, sea view/club room) at the same hotel, not the same room.
 
 {% hint style="info" %}
 **A Transport Hotel with a Fictive room:** When a Combi Hotel includes a child hotel configured as a **Transport Hotel** with a **Fictive** room, no information for this child hotel is displayed on the e-ticket.
@@ -262,7 +262,7 @@ Payment due dates and payment status indicators are dynamically displayed based 
 
 ## Price Specification (Passengers 1–3) Section
 
-<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 ### Price Breakdown per Passenger
 
@@ -453,8 +453,6 @@ When **Show room info** is enabled from the Brand:
 
     * **Hotel → Room Types**
     * The description available behind the **PLUS (+)** icon next to the Room Code/Description
-
-
 
     <div data-with-frame="true"><figure><img src="../../../.gitbook/assets/14.05.2026_17.03.43_REC.png" alt=""><figcaption></figcaption></figure></div>
 * If a **Brand Description** exists, it is used

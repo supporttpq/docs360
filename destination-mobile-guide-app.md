@@ -24,15 +24,50 @@ The list of available menus is available right after the login request succeeds.
 
 ### Extras
 
+**Excursions as Extra Orders**
+
+An excursion sold in the Guide App or Guest App is an **Extra Order**: an [Extra](extras-setup/extras-general-page/extras.md) that is ordered and paid separately from the booking. An Extra becomes an Extra Order when two things are true:
+
+* At least one brand assignment on the Extra includes **Guide sale**.
+* The Extra uses an allotment type that supports Extra Orders: **Manual** or **Generic**.
+
+The same Extra can be ordered in these places:
+
+| Where                                                                                        | Who orders                                                                    |
+| -------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| **Guide App**                                                                                | A guide, on behalf of the guest.                                              |
+| **Guest App**                                                                                | The guest.                                                                    |
+| [**Extra Orders**](booking/new-booking/extra-orders.md) tab of the booking in Tourpaq Office | An Administrator or Guide user.                                               |
+| WebBooking (OneHome)                                                                         | The customer, before departure. The order is created through the Booking API. |
+
+{% hint style="info" %}
+Extras with **Manual** and **Generic** allotment are sold in the same way in the Guide App and Guest App. The allotment type decides how availability is managed, not whether the excursion can be sold in the apps.
+{% endhint %}
+
+{% hint style="danger" %}
+**TO VERIFY** — The Allotment Type dropdown on staging still offers **None** and **LinkedToTransport** when an Extra is assigned to **Guide sale**. The specification says these must not be selectable for Extra Orders. Confirm whether the restriction is enforced on **Save**, and what message the user sees.
+{% endhint %}
+
 #### Configure an extra
 
 <mark style="background-color:red;">**IMPORTANT NOTE:**</mark> <mark style="background-color:red;">Only guides can add products and make them available in the application.</mark>
 
 <div data-with-frame="true"><figure><img src=".gitbook/assets/image (279).png" alt="" width="100%"><figcaption></figcaption></figure></div>
 
-In order to be made available in the application, the extra must have selected a category of type **Tours** (General info).
+Go to **Extras Setup → Extras**, click **Create** (or open an existing Extra) and fill in the **Basic setup**. Select an **Extras Category** of type **Tours**. Only Extras in a Tours category are shown in the apps.
 
-In order to be made available in the application, the extra must have selected a category of type **Tours** (General info).
+**Select the allotment type**
+
+In **Allotment Type** on the **Basic setup** tab, select **Manual** or **Generic**.
+
+| Allotment type | Use it when                                                          | Allotment tab         |
+| -------------- | -------------------------------------------------------------------- | --------------------- |
+| **Manual**     | The excursion runs on set days, with one capacity per day.           | **Allotments**        |
+| **Generic**    | The excursion runs in time slots, with a capacity per date and time. | **Generic Allotment** |
+
+**None** and **LinkedToTransport** do not support Extra Orders.
+
+<figure><img src=".gitbook/assets/image.png" alt="Allotment Type dropdown open, showing None, Manual, LinkedToTransport and Generic, with Manual selected"><figcaption><p>Allotment Type on the Basic setup tab of the Extra.</p></figcaption></figure>
 
 #### Customize the excursion for the apps
 
@@ -54,30 +89,33 @@ An essential aspect of selling an excursion is that even if Tourpaq supports add
 
 #### Assign the excursion to a brand
 
-An essential step in setting up the excursion is assigning it to a brand so it will be available for sale. Under the **Brands** tab of the extra, select the **Guide Sale** option for the desired brand and click **Save Options** (see picture below).
+In the **Brands** section at the top of the **Overview** tab of the Extra, select an option that includes **Guide sale** for each brand that sells the excursion, then click **Save**.
 
-<div data-with-frame="true"><figure><img src=".gitbook/assets/image (283).png" alt="" width="100%"><figcaption></figcaption></figure></div>
+| Brand assignment                          | Effect on the excursion                                                                                                       |
+| ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| **Guide sale**                            | Orderable as an Extra Order in the Guide App and Guest App.                                                                   |
+| **Guide sale + Internet Sale + For Sale** | Orderable as an Extra Order in the Guide App, Guest App, WebBooking (OneHome) and on the **Extra Orders** tab of the booking. |
+
+{% hint style="danger" %}
+**TO VERIFY** — During development it was stated that an Extra with **Guide sale + Internet Sale + For Sale** is not offered as a normal (pre-booked) Extra in **New Booking** in Tourpaq Office, and that an Extra with **Guide sale** only is used only by the Guest App. Confirm the final rule for each combination, including whether **Guide sale** only is also available in the Guide App.
+{% endhint %}
+
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (2).png" alt="Brands section with the Bravo Tours dropdown open and Guide sale + Internet Sale + For Sale selected"><figcaption><p>Brand assignment options. Any option that includes Guide sale makes the Extra an Extra Order for that brand.</p></figcaption></figure></div>
 
 #### Generate allotments for the excursion
 
-Another essential step in setting up the excursion is creating the allotments. Under the **Generic Allotment** tab of the extra, click **Generate New Allotments** to define the desired allotments. The allotments can be generated either on a daily basis or on a weekly basis (see picture below).
+Open the allotment tab that matches the allotment type, click **Generate New Allotments**, and choose **Daily** or **Weekly**.
 
-<div data-with-frame="true"><figure><img src=".gitbook/assets/image (66).png" alt="" width="100%"><figcaption></figcaption></figure></div>
+* **Manual** — open the **Allotments** tab. Each row is one date with one capacity.
+* **Generic** — open the **Generic Allotment** tab. Each row is one date and time slot with its own capacity.
 
-#### Allotment schedule options
+A guest is offered the excursion only on allotment dates that fall within the stay, and only while allotment is left. The field-by-field description is on [Allotments](extras-setup/extras-general-page/allotments.md).
 
-* **Daily** - the tool will generate allotments each day or from n to n days (e.g. from 2 to 2 days) in a given date interval (**Duration**). In here we also have the possibility to make new allotments each n minutes (**Daily Frequency**) between a time interval (this is applying for each day) or to set up the **Specific time** of the allotments (see the picture below),
-* **Weekly** - the tool will generate allotments for one or more days of the week. We will also be able to specify the allotments frequency (each week or from n to n weeks). We will also have to define the desired time or set the allotment to be available every n minutes, exactly like in the **Daily** basis option. From this point, the steps are similar.
-
-<div data-with-frame="true"><figure><img src=".gitbook/assets/image (67).png" alt="" width="100%"><figcaption></figcaption></figure></div>
-
-After selecting the desired time, click outside the popup window in order for the setting to be saved.
-
-After filling in the settings we wanted we proceed to the next step - saving them. We will fill the number of available allotments for this rule set and click on **Generate**. Immediately after we will be able to see the newly created allotments.
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (391).png" alt="Allotments tab of a Manual allotment Extra with Monday and Thursday dates, 10 units each and 0 booked"><figcaption><p>Manual allotment: one row per date. BO1 shows the number of units booked.</p></figcaption></figure></div>
 
 #### Keep the excursion listed as read-only
 
-If allotment is generated with 0 availability, or after the allotment runs out, the product can still be listed in the Guest App if it is set as bellow:
+If the allotment is generated with 0 availability, or runs out, the excursion can still be listed in the Guest App. Tick **Keep showing in app** on the **Basic setup** tab of the Extra (TO VERIFY — the screenshot below predates the current Basic setup layout; confirm it shows this setting):
 
 <div data-with-frame="true"><figure><img src=".gitbook/assets/image (284).png" alt="" width="100%"><figcaption></figcaption></figure></div>
 
@@ -85,9 +123,50 @@ In the Guest App, the effect will be that the excursion/product will continue to
 
 #### Set selling prices for an excursion
 
-Another really important step in the process of setting up the excursion for the app is defining one or more price rules. That can be done per periods - meaning that you can have different adult or child prices for different periods.
+Open the **Prices** tab of the Extra and create one price line per age group and period. Prices for Extra Orders are defined on the **Prices** tab only. The **Generic Product Price Rules** page is no longer used.
 
-#### Create a route for an excursion
+| Price line  | From Age | To Age |
+| ----------- | -------- | ------ |
+| Child price | `2`      | `11`   |
+| Adult price | `12`     | `120`  |
+
+The apps and the Destination API show these as the **Adult Price** and **Child Price** of the excursion.
+
+{% hint style="danger" %}
+**TO VERIFY** — The specification sets child prices at ages 2–11. Test Extras on staging use `0`–`11` and `1`–`11` for the child line. Confirm the age range customers must use, and whether infants (under 2) are priced or excluded.
+{% endhint %}
+
+For an Extra Order, the Prices tab can also show **START TIME** and **END TIME**. Use them to give the same date different prices during the day — for example a morning and an afternoon departure. The **S** split button next to them divides a price line into two time periods. The defaults are `00:00` and `23:59`, which means one price for the whole day. See [Prices ](extras-setup/extras-general-page/prices.md)for every column.
+
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (400).png" alt="Prices tab of a Generic allotment Extra showing START TIME and END TIME columns between the departure and booking date columns"><figcaption><p>START TIME and END TIME on the Prices tab of an Extra Order.</p></figcaption></figure></div>
+
+{% hint style="danger" %}
+**TO VERIFY** — On staging, **START TIME** and **END TIME** are shown for the Generic allotment Extra `TFS-EG`, but not for the Manual allotment Extra `JJR_TEST_MAN_ALL`, although both are assigned to **Guide sale + Internet Sale + For Sale**. The specification says the columns are shown for every Extra Order. Confirm whether the columns apply to Generic allotment only.
+{% endhint %}
+
+**Payment and cancellation**
+
+How an Extra Order is paid depends on when it is ordered.
+
+| Ordered                                          | Payment                                                                                                   | Where the order is visible                                                |
+| ------------------------------------------------ | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| In the Guide App or Guest App at the destination | Paid with the Extra Order, using the guide payment types below.                                           | **Extra Orders** tab, Destination lists, **Booked** tab in the Guide App. |
+| Before departure, in WebBooking (OneHome)        | Added to the booking total and paid with the booking. No payment is registered on the Extra Order itself. | **Extra Orders** tab, Destination lists.                                  |
+
+When an Extra Order is cancelled:
+
+* An Extra Order paid in the app is cancelled and refunded as described under **Book an excursion in the app**.
+* An Extra Order paid with the booking is removed from the booking. The amount appears as a negative balance in [Balance Administration](balance-administration.md), not as an Extra Order refund.
+
+{% hint style="danger" %}
+**TO VERIFY** — Cancellation of pre-booked Extra Orders. The specification asks for cancellation from the Guide App, but the comment of 24-09-2026 states that cancellation of Extra Orders ordered through OneHome is not implemented, and that guests must contact the tour operator to cancel. Confirm which cancellation routes are available at release.
+{% endhint %}
+
+{% hint style="danger" %}
+**TO VERIFY** — Open QA findings from 24-09-2026: Extra Orders created through WebBooking (Extra Order types 3 and 4) are not shown in **Booked** in the Guide App, and ordering an Extra added a discount to the booking passengers. Update this page when these are resolved.
+{% endhint %}
+
+**Create a route for an excursion**
 
 In order to do that, we will have to navigate under the **Extras -> Routes** page (see the picture below).
 
@@ -171,7 +250,7 @@ In order to proceed with using the earlier created payments, the user must selec
 
 ### Book an excursion in the app
 
-After setting the excursion up, we can proceed to the next stage: the one of booking it. By doing this, the user can log in with the guide account that has been set up at the previous stage and click on the **Extras** option from the menu. If everything is configured properly, a list of available excursions will show up (see pictures below).
+After setting the excursion up, we can proceed to the next stage: the one of booking it. By doing this, the user can log in with the guide account that has been set up at the previous stage and click on the **Extras** option from the menu. If everything is configured properly, a list of available excursions will show up (see pictures below). Excursions with **Manual** and **Generic** allotment are listed in the same way.
 
 **Remark:** Stop sales hours setup won't have any impact here. Guide should see all the available excursions, regardless of the stop sales hours setup.
 

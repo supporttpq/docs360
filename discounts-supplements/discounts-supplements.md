@@ -135,7 +135,7 @@ The entities having this checkbox active will:
 * Only one book/person:
 * Available for first passenger in room: only the first passenger in the room will receive the disc/suppl
 * Don't display in Api:
-*   Passengers no. to apply discount to: number of passengers in a booking that can benefit from the disc/suppl. If "Passengers no. to apply discount to" has a value, the discount applies to the first N passengers in the booking regardless of that checkbox.&#x20;
+*   Passengers no. to apply discount to: number of passengers in a booking that can benefit from the disc/suppl. If "Passengers no. to apply discount to" has a value, the discount applies to the first N passengers in the booking regardless of that checkbox.
 
     <figure><img src="../.gitbook/assets/03.09.2026_09.40.24_REC.png" alt=""><figcaption></figcaption></figure>
 * Auto Select in Bkg Wnd:
@@ -313,13 +313,13 @@ PASSENGER = All
 
 1. **If the discount/supplement is set as Manual** and the Price is set for Adult in the hotel and Child from the hotel, the discount/supplement will be added manually to the booking like this
 
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt="Manual discount or supplement on a booking"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt="Manual discount or supplement on a booking"><figcaption></figcaption></figure></div>
 
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt="Booking with manual discount or supplement"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt="Booking with manual discount or supplement"><figcaption></figcaption></figure></div>
 
 *   on the booking page, after assigning passengers, click on "Show/Hide all Disc/Suppl -> Add Disc/Suppl.
 
-    <div data-with-frame="true"><figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt="Show Hide all Disc Suppl control"><figcaption></figcaption></figure></div>
+    <div data-with-frame="true"><figure><img src="../.gitbook/assets/image (3) (1) (1) (1).png" alt="Show Hide all Disc Suppl control"><figcaption></figcaption></figure></div>
 *   A new page opens where you can add all the discounts/supplements available for the booking.
 
     <div data-with-frame="true"><figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt="Add discount or supplement page"><figcaption></figcaption></figure></div>
@@ -331,11 +331,11 @@ PASSENGER = All
 
 2. **If the discount/supplement is set to Automatic,** the discount/supplement will be added automatically to the booking, like this
 
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (1) (1).png" alt="Automatic discount or supplement on a booking"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt="Automatic discount or supplement on a booking"><figcaption></figcaption></figure></div>
 
 *   on the booking page, after assigning passengers, click on "Show/Hide all Disc/Suppl and you will see that the discount/supplement is already added to the booking
 
-    <div data-with-frame="true"><figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt="Automatic discount or supplement in booking details"><figcaption></figcaption></figure></div>
+    <div data-with-frame="true"><figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt="Automatic discount or supplement in booking details"><figcaption></figcaption></figure></div>
 *   All Automatic discounts will not appear selectable in the add discount/supplement window, as they are already assigned to the booking.
 
     <div data-with-frame="true"><figure><img src="../.gitbook/assets/image (8).png" alt="Add discount or supplement window"><figcaption></figcaption></figure></div>
@@ -344,13 +344,13 @@ PASSENGER = All
 When the discount/supplement is set to be applied automatically, and the Rounding rule is set on the category, the discount/supplement rounding rule will be applied. The discount will be rounded down, and the supplement will be rounded up.
 {% endhint %}
 
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (2) (1).png" alt="Discount and supplement rounding rule"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt="Discount and supplement rounding rule"><figcaption></figcaption></figure></div>
 
 <div data-with-frame="true"><figure><img src="../.gitbook/assets/image (9).png" alt="Discount and supplement booking values"><figcaption></figcaption></figure></div>
 
 If, at some point, something changes in the booking that may influence the discount/supplement price (Ex, a passenger's age changes), for the price to be automatically updated in the booking, we must use (uncheck) the "Keep automatic discount prices" checkbox, and resave the passengers. After resaving, the system automatically recalculates the new discount/supplement price.
 
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (3) (1).png" alt="Keep automatic discount prices option"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt="Keep automatic discount prices option"><figcaption></figcaption></figure></div>
 
 When a discount/supplement is part of a campaign, to apply it to a booking, insert the campaign code in the "Disc/Suppl Bonus Code" field when the booking is in Edit passenger. After entering the code, click Save Passengers, and the discount will be applied to the booking.
 

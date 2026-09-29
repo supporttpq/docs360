@@ -21,6 +21,8 @@ layout:
     visible: true
   actions:
     visible: true
+  anchors:
+    visible: true
 ---
 
 # New Booking
@@ -285,7 +287,7 @@ This section provides comprehensive descriptions of all fields available in the 
 
 #### Transport Search Results Table Columns
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Status Column**
 
@@ -577,7 +579,7 @@ This section provides comprehensive descriptions of all fields available in the 
 * **Field Type:** Currency display
 * **Mandatory:** Display only
 * **Description:** Final Discount price (FD1) - Price including discounts, supplements, and handling. Price per person, based on the number of adults from Ordinary beds.
-* &#x20;Final Group price (FG1) - Price including discounts, supplements, and handling. Price per person, based on the number of adults from Ordinary beds.
+* Final Group price (FG1) - Price including discounts, supplements, and handling. Price per person, based on the number of adults from Ordinary beds.
 
 **N, D, G Selection Checkboxes**
 
@@ -686,7 +688,7 @@ The passenger grid contains one row per passenger. Each row includes multiple fi
 **Age**
 
 * Passenger age
-*   Automatically calculated based on the date of birth entered.&#x20;
+*   Automatically calculated based on the date of birth entered.
 
     When a **Date of Birth** is entered:
 
@@ -765,8 +767,6 @@ Insurance availability may depend on:
 * **Data Source:** Active discounts and supplements configured in Disc/Suppl management, filtered by eligibility rules.
 * **System Behavior:** Selecting a discount reduces the passenger total. Selecting a supplement increases the passenger total. Changes immediately affect Total Amount display. Multiple discounts and supplements can be combined if configuration allows.
 * **Related Functionality:** Links to Discount/Supplement rules and pricing. May affect profit margin calculations. Integrates with campaign and promotional pricing.
-
-
 
 **Save Passenger Button**
 
@@ -1036,7 +1036,7 @@ f. Optional: Check **Search waitlist also** to include sold-out transports
 
 1. Locate the Hotel section below Transport
 2. Click the **Select Hotel** button
-3.  The Select Hotel dialog opens&#x20;
+3.  The Select Hotel dialog opens
 
     <figure><img src="../../../.gitbook/assets/01.09.2026_14.20.08_REC.png" alt=""><figcaption></figcaption></figure>
 4.  Configure search filters:
@@ -1068,7 +1068,7 @@ f. Optional: Check **Search waitlist also** to include sold-out transports
 * **D** for Discount Price
 * **G** for Group Price
 
-7.  Click the **Select** button to choose the hotel/room combination&#x20;
+7.  Click the **Select** button to choose the hotel/room combination
 
     <figure><img src="../../../.gitbook/assets/01.09.2026_15.18.31_REC.png" alt=""><figcaption></figcaption></figure>
 8. he Select Hotel dialog closes
@@ -1634,7 +1634,7 @@ If no email value exists, the passenger is imported without an email address.
 * create booking
 * save booking
 * edit passenger
-*   import passenger (import excel file)&#x20;
+*   import passenger (import excel file)
 
     <figure><img src="../../../.gitbook/assets/import passenger.png" alt=""><figcaption></figcaption></figure>
 

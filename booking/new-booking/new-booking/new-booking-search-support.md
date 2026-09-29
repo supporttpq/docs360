@@ -78,8 +78,6 @@ If something is missing, you will see validation warnings.
 
 <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Validation warnings on New Booking Search page"><figcaption></figcaption></figure>
 
-
-
 In the **Booking Window Search** screen, a new workflow option has been introduced
 
 **Location:** Search → Workflow
@@ -103,7 +101,7 @@ Only non-System transports will be returned in the search results.
 #### Excluded
 
 * GDS flights
-* Any transport with provider type **System**&#x20;
+* Any transport with provider type **System**
 
 ### Booking Flow
 
@@ -195,7 +193,7 @@ Hotel rows show hotel, stay, availability, board, and prices.
 
 Use **+ Filters** for advanced hotel filters.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 You can switch the display mode:
 

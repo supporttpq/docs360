@@ -338,7 +338,7 @@ Column titles are abbreviated to keep the table tidy. Most fields include **tool
 
 ### Change Price Functionality <a href="#price-list-history" id="price-list-history"></a>
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (735).png" alt=""><figcaption></figcaption></figure>
 
@@ -395,7 +395,7 @@ The Price List column selector allows users to choose which price types and inte
 * Example: If **ALL PRICES (P1, P2, P3, P4)** is checked and **Interval 1** is selected as the active filter, only the **P1** column will be displayed in the table.
 * Columns **not grouped into intervals** are always shown by default.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 ### Saving the column configuration
 

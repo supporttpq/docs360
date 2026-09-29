@@ -54,7 +54,7 @@ This behavior allows users to repeatedly press **“+”** and quickly add all r
 
 #### Price Information
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Infant price** – Defines the transport price that will be applied to passengers categorized as **infants**.
   * Currency follows the system or transport currency configuration.

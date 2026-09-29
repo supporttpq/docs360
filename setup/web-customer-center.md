@@ -195,7 +195,7 @@ Locate **Image Upload**.
 
 Click **Upload** or **Choose File**.
 
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Image Upload field in the section editor"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Image Upload field in the section editor"><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}

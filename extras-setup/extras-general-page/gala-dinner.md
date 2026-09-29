@@ -87,7 +87,7 @@ When an extra has “Include in Basic Price” enabled:
 
 #### Use Stay dates in prices
 
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Use Stay dates in prices option"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Use Stay dates in prices option"><figcaption></figcaption></figure></div>
 
 The **Use Stay dates in prices** option is available in the **Basic setup** tab when configuring an **Extra** such as a **Gala Dinner**. This option controls how the system interprets the date periods defined in the **Prices** tab.
 

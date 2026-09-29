@@ -1,5 +1,9 @@
 # Prices
 
+###
+
+###
+
 ### Overview
 
 In **Tourpaq Office**, each **Extra** (such as insurance, car rental, excursions, or other optional services) can have one or more **price configurations**.\
@@ -35,19 +39,20 @@ This helps:
 3. Click **Create** to configure a new price rule.
 4.  Fill in the following fields:
 
-    | Field                        | Description                                                                                                               |
-    | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-    | **Age From / To**            | Sets the age range for which the price applies.                                                                           |
-    | **Departure Date From / To** | Defines the departure period covered by this price.                                                                       |
-    | **Booking Date From / To**   | Defines when the booking must be created for the price to apply.                                                          |
-    | **Price**                    | The amount paid by the passenger (in local currency).                                                                     |
-    | **Group Price**              | The group rate, if applicable.                                                                                            |
-    | **Cost Price**               | The agency’s cost for this extra (based on creditor or local currency).                                                   |
-    | **Days**                     | The number of days the extra is available. If the booking duration is shorter than this, the extra will not be available. |
-    | **Margin**                   | Defines the profit margin applied (especially for car rentals).                                                           |
-    | **Max Cost**                 | Sets the maximum car cost the agency can sell.                                                                            |
-    | **Per Day**                  | If enabled, the price and cost are calculated per day.                                                                    |
-    | **Contract**                 | References the contract name related to this price.                                                                       |
+    | Field                        | Description                                                                                                                                                                                               |
+    | ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+    | **Age From / To**            | Sets the age range for which the price applies.                                                                                                                                                           |
+    | **Departure Date From / To** | Defines the departure period covered by this price.                                                                                                                                                       |
+    | **Booking Date From / To**   | Defines when the booking must be created for the price to apply.                                                                                                                                          |
+    | **Start Time / End Time**    | Shown only when the Extra is an Extra Order. Limits the price line to part of the day, so a morning and an afternoon excursion on the same date can have different prices. Defaults: `00:00` and `23:59`. |
+    | **Price**                    | The amount paid by the passenger (in local currency).                                                                                                                                                     |
+    | **Group Price**              | The group rate, if applicable.                                                                                                                                                                            |
+    | **Cost Price**               | The agency’s cost for this extra (based on creditor or local currency).                                                                                                                                   |
+    | **Days**                     | The number of days the extra is available. If the booking duration is shorter than this, the extra will not be available.                                                                                 |
+    | **Margin**                   | Defines the profit margin applied (especially for car rentals).                                                                                                                                           |
+    | **Max Cost**                 | Sets the maximum car cost the agency can sell.                                                                                                                                                            |
+    | **Per Day**                  | If enabled, the price and cost are calculated per day.                                                                                                                                                    |
+    | **Contract**                 | References the contract name related to this price.                                                                                                                                                       |
 5. Click **Save** once all details are completed.
 
 ### Price calculation
@@ -72,7 +77,7 @@ Tourpaq supports defining different prices per brand.
 
 To enable price-per-brand functionality, please contact **Tourpaq Support**.
 
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Default price configuration."><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Default price configuration."><figcaption></figcaption></figure></div>
 
 * The system supports editing prices across multiple rows within the same view and saving all changes in a single operation.
 
@@ -109,3 +114,18 @@ Prices can be split by:
 After splitting, the system will display separate price lines for each new interval.
 
 <div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Separate price lines after splitting."><figcaption></figcaption></figure></div>
+
+**Prices for Extra Orders**
+
+Prices for Extra Orders (Extras assigned to **Guide sale**) are defined on this tab. The separate **Generic Product Price Rules** page is no longer used; its prices have been moved to the **Prices** tab of the relevant Extras.
+
+* **Adult and child prices** — create one line for children, **From Age** `2` **To Age** `11`, and one for adults, **From Age** `12` **To Age** `120`. The Guest App, Guide App and the **Extra Orders** tab show them as **Adult Price** and **Child Price**.
+* **Time of day** — the **START TIME** and **END TIME** columns sit between **DEPARTURE TO** and **BOOKING FROM**, with their own **S** split button. Split a line by time to price two periods of the same day separately.
+
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (349).png" alt="Prices tab with START TIME and END TIME columns and three price lines for adults, children and a late departure"><figcaption><p>Price lines of an Extra Order with START TIME and END TIME.</p></figcaption></figure></div>
+
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (352).png" alt="Prices tab of a Manual allotment Extra with an adult line aged 12 to 120 at 200 DKK and a child line aged 0 to 11 at 100 DKK, without time columns"><figcaption><p>Adult and child price lines on a Manual allotment Extra.</p></figcaption></figure></div>
+
+{% hint style="danger" %}
+**TO VERIFY** — On staging, START TIME and END TIME are visible on the Generic allotment Extra `TFS-EG` but not on the Manual allotment Extra `JJR_TEST_MAN_ALL`, which is also assigned to Guide sale. Confirm the rule and adjust the Start Time / End Time row above.
+{% endhint %}

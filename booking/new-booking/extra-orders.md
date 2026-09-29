@@ -7,7 +7,7 @@ description: >-
 
 # Extra Orders
 
-<figure><img src="../../.gitbook/assets/image (306).png" alt="Extra Orders tab showing extra order list and linked service cases"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (372).png" alt="Extra Orders tab of a booking with three Extra Orders: one cancelled automatically by the service, one paid by guide payment and one created from WebBooking, and the Book button top right"><figcaption><p>Extra Orders tab. The Book button opens the list of excursions the booking can order.</p></figcaption></figure>
 
 ### **Overview**
 
@@ -39,6 +39,8 @@ Use this page when you need to:
 * At least one guide must be assigned to the resort on the booking.
 * The extra used for the extra order must have the resort on the booking assigned in the resource table.
 * Refund handling requires that transactions are processed through an integrated **payment system** and that your user has the required permissions.
+* The Extra is assigned to the brand of the booking with an option that includes **Guide sale** — see [Extras](../../extras-setup/extras-general-page/extras.md).
+* The Extra uses **Manual** or **Generic** allotment, and has allotment on a date within the stay — see [Allotments](../../extras-setup/extras-general-page/allotments.md).
 
 ***
 
@@ -52,14 +54,22 @@ Use this page when you need to:
    * Each row represents a single **extra order**.
 4. Use **Details** to view the itemized contents of the order.
 5. Use **View Refunds** to review existing refunds or initiate a refund (if available).
-6. Use the **Book** button to purchase an **extra order (excursion)** directly from the booking page.
+6. Click **Book** to order an excursion for the booking. The **Search Extra Orders** window lists every excursion with allotment during the stay, with **Allotment Date**, **Name**, **Allotments** (booked / total), **Adult Price**, **Child Price** and **Currency**. Click **Book** on a line to order it. Excursions with **Manual** and **Generic** allotment are both listed.
 
-<figure><img src="../../.gitbook/assets/image (308).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (368).png" alt="Search Extra Orders window listing excursions by allotment date with booked and total allotment, adult and child prices in DKK and a Book button per line"><figcaption><p>Search Extra Orders window. The Book button on each line orders that excursion.</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (309).png" alt="Extra order details view showing itemized products and amounts"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 If you cannot see **Book** or **View Refunds**, it usually means either (1) your user role does not have permission, or (2) the selected payment method/provider does not support the action from this view.
+{% endhint %}
+
+{% hint style="danger" %}
+**TO VERIFY** — On staging (29-09-2026) the Manual allotment Extra `Udflugt - manual allotment JJR`, which has allotment on 12-10-2026 and 15-10-2026, was not listed in **Search Extra Orders** for bookings 200205125 and 200202985 (stay 10-10-2026 to 17-10-2026), although the ticket names these bookings as eligible. The list also contained excursions from several islands. Confirm the eligibility rules (resort filter, already ordered, brand) before publishing step 6.
+{% endhint %}
+
+{% hint style="info" %}
+An Extra Order created from WebBooking before departure is paid with the booking. It shows no **PAYMENT ORDER ID** or **METHOD** on this tab, and **ROOM NO.** shows `Not reserved yet`. If it is cancelled, the amount appears as a negative balance in [Balance Administration](../../balance-administration.md) rather than as a refund.
 {% endhint %}
 
 #### **Viewing Service Cases**

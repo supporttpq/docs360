@@ -55,7 +55,7 @@ There are **four methods** available for setting the price of the cancellation i
 
 #### Related to basic price
 
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Cancellation Insurance related to basic price"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Cancellation Insurance related to basic price"><figcaption></figcaption></figure></div>
 
 * The insurance fee is determined by the total amount the passenger pays for the trip.
 * Up to **four price ranges** can be defined.

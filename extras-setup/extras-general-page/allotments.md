@@ -1,5 +1,9 @@
 # Allotments
 
+{% hint style="info" %}
+**Extra Orders** (excursions sold in the Guide App, Guest App, WebBooking and on the **Extra Orders** tab of the booking) work with **Manual** and **Generic** allotments. **Linked to Transport** allotments do not support Extra Orders. See [Guide App](../../destination-mobile-guide-app.md).
+{% endhint %}
+
 ## Allotments
 
 ### Manual Allotments
@@ -16,6 +20,7 @@ This feature is usually used for **products available at the destination** (e.g.
 * In the **booking module**, the system will display the product as **available** if:
   * The booking’s arrival and departure dates fall within the extra allotment period.
   * There is still allotment left (i.e., availability has not been fully consumed).
+* An Extra with Manual allotment and a brand assignment that includes **Guide sale** is sold as an Extra Order. The guest is offered each allotment date that falls within the stay, as long as allotment is left.
 
 #### How to create extra allotments
 
@@ -368,7 +373,7 @@ The purpose of Generic Allotment is to:
 3.  In the **Allotment Type** field, select **Generic Allotment Type**. This enables the Generic Allotments Tab.
 
     <div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (723).png" alt=""><figcaption></figcaption></figure></div>
-4.  In the **Resources** tab, add as a resource, the resorts for which you want the defined extra to be used as an extra order.
+4.  In the **Resources** tab, add the resorts where the Extra is sold. The same resort filter is required for Extra Orders with **Manual** allotment.
 
     <div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (730).png" alt=""><figcaption></figcaption></figure></div>
 5. **Generic Allotment**
