@@ -26,10 +26,6 @@ Any option that includes **Guide sale** makes the Extra an **Extra Order** for t
 
 The full set-up of an excursion is described in [Guide App](../../destination-mobile-guide-app.md).
 
-{% hint style="danger" %}
-**TO VERIFY** — Whether an Extra assigned to **Guide sale + Internet Sale + For Sale** is also offered as a normal (pre-booked) Extra in **New Booking** in Tourpaq Office.
-{% endhint %}
-
 <div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (571).png" alt="Brand assignment settings for an Extra."><figcaption></figcaption></figure></div>
 
 ### Overview
