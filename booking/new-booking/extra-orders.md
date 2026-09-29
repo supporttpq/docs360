@@ -64,10 +64,6 @@ Use this page when you need to:
 If you cannot see **Book** or **View Refunds**, it usually means either (1) your user role does not have permission, or (2) the selected payment method/provider does not support the action from this view.
 {% endhint %}
 
-{% hint style="danger" %}
-**TO VERIFY** — On staging (29-09-2026) the Manual allotment Extra `Udflugt - manual allotment JJR`, which has allotment on 12-10-2026 and 15-10-2026, was not listed in **Search Extra Orders** for bookings 200205125 and 200202985 (stay 10-10-2026 to 17-10-2026), although the ticket names these bookings as eligible. The list also contained excursions from several islands. Confirm the eligibility rules (resort filter, already ordered, brand) before publishing step 6.
-{% endhint %}
-
 {% hint style="info" %}
 An Extra Order created from WebBooking before departure is paid with the booking. It shows no **PAYMENT ORDER ID** or **METHOD** on this tab, and **ROOM NO.** shows `Not reserved yet`. If it is cancelled, the amount appears as a negative balance in [Balance Administration](../../balance-administration.md) rather than as a refund.
 {% endhint %}
