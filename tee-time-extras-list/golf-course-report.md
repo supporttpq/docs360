@@ -5,7 +5,7 @@
 The **TeeTime List** tool allows you to generate export files containing information about golf course bookings.\
 It is designed for reporting, analysis, and communication with golf course suppliers. You can filter bookings by supplier, period, and category, and export the results in Excel format.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

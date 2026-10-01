@@ -32,7 +32,7 @@ Setup → Destinations → Arrivals → Create New
 
 ### Field Specifications
 
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 **IATA Code -** Official three-letter airport code. Required when the arrival represents an airport.
 

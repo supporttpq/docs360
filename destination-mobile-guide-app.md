@@ -63,7 +63,7 @@ In **Allotment Type** on the **Basic setup** tab, select **Manual** or **Generic
 
 **None** and **LinkedToTransport** do not support Extra Orders.
 
-<figure><img src=".gitbook/assets/image.png" alt="Allotment Type dropdown open, showing None, Manual, LinkedToTransport and Generic, with Manual selected"><figcaption><p>Allotment Type on the Basic setup tab of the Extra.</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5).png" alt="Allotment Type dropdown open, showing None, Manual, LinkedToTransport and Generic, with Manual selected"><figcaption><p>Allotment Type on the Basic setup tab of the Extra.</p></figcaption></figure>
 
 #### Customize the excursion for the apps
 
@@ -92,7 +92,7 @@ In the **Brands** section at the top of the **Overview** tab of the Extra, selec
 | **Guide sale**                            | Orderable as an Extra Order in the Guide App and Guest App.                                                                   |
 | **Guide sale + Internet Sale + For Sale** | Orderable as an Extra Order in the Guide App, Guest App, WebBooking (OneHome) and on the **Extra Orders** tab of the booking. |
 
-<div data-with-frame="true"><figure><img src=".gitbook/assets/image (2).png" alt="Brands section with the Bravo Tours dropdown open and Guide sale + Internet Sale + For Sale selected"><figcaption><p>Brand assignment options. Any option that includes Guide sale makes the Extra an Extra Order for that brand.</p></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (2) (1).png" alt="Brands section with the Bravo Tours dropdown open and Guide sale + Internet Sale + For Sale selected"><figcaption><p>Brand assignment options. Any option that includes Guide sale makes the Extra an Extra Order for that brand.</p></figcaption></figure></div>
 
 #### Generate allotments for the excursion
 

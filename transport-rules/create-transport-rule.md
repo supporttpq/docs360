@@ -15,7 +15,7 @@ Transport rules are used to:
 
 ### Field Explanation
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### General
 
@@ -41,7 +41,7 @@ This behavior allows users to repeatedly press **“+”** and quickly add all r
 
 #### Transportation
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Pick-up point required** – If checked, the booking must include a pick-up point.
 * **Travel Length Correction +/-** – Adjust the travel duration by a specified number of days.
@@ -54,7 +54,7 @@ This behavior allows users to repeatedly press **“+”** and quickly add all r
 
 #### Price Information
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Infant price** – Defines the transport price that will be applied to passengers categorized as **infants**.
   * Currency follows the system or transport currency configuration.
@@ -176,7 +176,7 @@ Max stops number, Max connection time, Max travel time fields became editable on
 
 These fields refer to the transports attached to the rule, and control their visibility, cancellation condition, payment rule, and change rule service.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Status** – Defines the rule’s visibility in the system (Visible / Hidden). By default, only rules with Status = Visible are displayed in the Transport Rule list. When Show hidden is enabled, both Visible and Hidden rules are displayed, with Hidden rules highlighted in red.
 * **Hide as filter on lists** – If checked, the transport attached to this rule does not appear as a filter option in lists — this applies to the attached transport, not to the rule itself. (Ex: Export - List Cancellation List - Transport Filter).

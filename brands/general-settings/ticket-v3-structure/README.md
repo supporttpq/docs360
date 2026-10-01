@@ -92,7 +92,7 @@ If the number of passengers exceeds the page limit, the list continues on the ne
 
 ## Passenger List (Continuation)
 
-<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 ### Passenger List
 
@@ -262,7 +262,7 @@ Payment due dates and payment status indicators are dynamically displayed based 
 
 ## Price Specification (Passengers 1–3) Section
 
-<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 ### Price Breakdown per Passenger
 
@@ -317,7 +317,7 @@ If a cancellation fee exists, an additional line is displayed before **Total kr.
 
 ## Price Specification (Summary & Remaining Passengers) Section
 
-<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 ### Included in Base Price
 
@@ -347,7 +347,7 @@ Same structure as previous page:
 
 ## Hotel Information Section (Part 1)
 
-<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 ### Hotel Details
 

@@ -34,7 +34,7 @@ The goal is to:
 
 #### Extras: Include in Basic Price option
 
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Include in Basic Price option"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Include in Basic Price option"><figcaption></figcaption></figure></div>
 
 **Location - Extras Setup → Extras → Behaviour Settings**
 
@@ -57,7 +57,7 @@ When checked:
 
 #### Extras Category: Hide for Customers option
 
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Hide for Customers option"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Hide for Customers option"><figcaption></figcaption></figure></div>
 
 **Location - Extras Setup → Extras Category → Settings box**
 
@@ -87,7 +87,7 @@ When an extra has “Include in Basic Price” enabled:
 
 #### Use Stay dates in prices
 
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Use Stay dates in prices option"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Use Stay dates in prices option"><figcaption></figcaption></figure></div>
 
 The **Use Stay dates in prices** option is available in the **Basic setup** tab when configuring an **Extra** such as a **Gala Dinner**. This option controls how the system interprets the date periods defined in the **Prices** tab.
 
@@ -103,7 +103,7 @@ When enabled, the system evaluates the **stay dates of the booking** against the
 
 <div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (4) (1) (1) (3).png" alt="Stay date price rule"><figcaption></figcaption></figure></div>
 
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Stay date price configuration"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Stay date price configuration"><figcaption></figcaption></figure></div>
 
 * The correct price is selected based on the **stay period**, not the departure date.
 * The extra applies only when the guest is **present at the hotel during the event date**.
