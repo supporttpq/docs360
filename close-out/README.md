@@ -81,10 +81,6 @@ The list shows the rules that match your filters. Changes reach the price lists 
 **Edit** and **Delete** change availability for every price list the rule matches — for a rule on a whole destination this can be many thousands of price lists. Deleting a rule cannot be undone: to restore it, create it again.
 {% endhint %}
 
-{% hint style="danger" %}
-**TO VERIFY** — Is a deletion applied as soon as you click **Delete** in the prompt, or only after clicking **Save** at the bottom of the screen?
-{% endhint %}
-
 ### Field Reference
 
 <div data-with-frame="true"><figure><img src="../.gitbook/assets/close-out-list.png" alt="Close Out list with the filter bar above the table, rules sorted by FROM DATE, editable dropdowns in every row and a bin icon at the end of each row"><figcaption><p>The Close Out list under Hotel → Close Out.</p></figcaption></figure></div>
@@ -131,6 +127,10 @@ Close Out rules have no **Enabled** setting. A rule is active from the moment it
 
 {% hint style="info" %}
 Tourpaq processes each change to a rule as a background job. If you change a rule again while the previous change is still waiting to be processed, Tourpaq shows a warning. Wait a few minutes for the first change to finish, then make the next one.
+{% endhint %}
+
+{% hint style="info" %}
+
 {% endhint %}
 
 #### Close Out in the price list
