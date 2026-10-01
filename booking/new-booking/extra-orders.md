@@ -54,7 +54,7 @@ Use this page when you need to:
    * Each row represents a single **extra order**.
 4. Use **Details** to view the itemized contents of the order.
 5. Use **View Refunds** to review existing refunds or initiate a refund (if available).
-6. Click **Book** to order an excursion for the booking. The **Search Extra Orders** window lists every excursion with allotment during the stay, with **Allotment Date**, **Name**, **Allotments** (booked / total), **Adult Price**, **Child Price** and **Currency**. Click **Book** on a line to order it. Excursions with **Manual** and **Generic** allotment are both listed.
+6. Click **Book** to order an excursion for the booking. The **Search Extra Orders** window lists every excursion with **Category Type as Tours**, allotment during the stay, with **Allotment Date**, **Name**, **Allotments** (booked / total), **Adult Price**, **Child Price** and **Currency**. Click **Book** on a line to order it. Excursions with **Manual** and **Generic** allotment are both listed.
 
 <figure><img src="../../.gitbook/assets/image (368).png" alt="Search Extra Orders window listing excursions by allotment date with booked and total allotment, adult and child prices in DKK and a Book button per line"><figcaption><p>Search Extra Orders window. The Book button on each line orders that excursion.</p></figcaption></figure>
 
