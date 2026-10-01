@@ -157,7 +157,7 @@ Opera holds three inventory values. Tourpaq reads all three.
 
 | Value     | Description                                                                                                                                                                           |
 | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **House** | The total number of rooms in the hotel.                                                                                                                                               |
+| **House** | The number of rooms in the hotel that are still available for sale.                                                                                                                   |
 | **Room**  | The number of rooms available for one room type.                                                                                                                                      |
 | **Block** | Rooms reserved in Opera under a block code, for a specific name and period. Block allotments are available only to bookings that include transport. Opera has no notion of transport. |
 
@@ -165,10 +165,10 @@ Opera holds three inventory values. Tourpaq reads all three.
 
 The synchronisation service reads House, Room and Block inventory every hour. A full synchronisation of all room types, including the whole season of the blocks and the House availability, took about 40 minutes in a load test. New block inventory in Opera therefore becomes sellable in Tourpaq, in Office and online, after 40 minutes to 1 hour 40 minutes, depending on when the service runs.
 
-**Package trips with transport.** For every room type, Tourpaq checks availability in this order:
+**Package trips with transport.** The Block and House calculation applies only to package trips with transport, and to all room types. For every room type, Tourpaq checks availability in this order:
 
 1. **Block** allotment of the booking's block.
-2. If the Block allotment for the room type is 0 or negative, **House** allotment. House can be booked only when its value is greater than zero.
+2. If the Block allotment for the room type is 0 or negative, **House** allotment. House can be booked only when its value is greater than zero. House is also limited by the Room value of the room type: Tourpaq uses the smaller of House and Room.
 
 If a booking needs more rooms than the block holds, Tourpaq takes the available rooms from the block and the rest from House.
 
@@ -177,7 +177,7 @@ If a booking needs more rooms than the block holds, Tourpaq takes the available 
 | The room type has 1 room on the block and none on House.                                  | The booking succeeds. The Block allotment drops to 0, and the Opera reservation carries the block code. |
 | The booking asks for 2 rooms of a room type. The block holds 1 room and House holds more. | The booking succeeds. Tourpaq takes 1 room from the block and 1 room from House.                        |
 
-**Hotel Only bookings.** Availability is limited to the House and Room inventory. Block allotment is not checked.
+**Hotel Only bookings.** Availability is limited to the House and Room inventory. Block allotment is not checked. The Block and House order above does not apply to Hotel Only bookings.
 
 For a room type, Tourpaq treats House and Room together as follows:
 
@@ -279,7 +279,7 @@ A staging booking for two rooms with a bus transport, and the reservation that O
 | Stay                   | 30-10-2026 to 06-11-2026                                       | **Arrival** 30/10/2026, **Departure** 06/11/2026                                                                          |
 | Outbound transport     | `BLL-ACE`, `JTD531`, 30.10                                     | **Transportation → Pick Up**: 30/10/2026, 11:25, Type `BUS`, Station `ACE`, Carrier `Jet Time`, Transport Number `JTD531` |
 | Return transport       | `ACE-BLL`, `JTD532`, 06.11                                     | **Transportation → Drop off**: 06/11/2026, Type `BUS`, Station `BLL`, Carrier `Jet Time`, Transport Number `JTD532`       |
-| Block                  | None                                                           | **Block Code** empty                                                                                                      |
+| Block                  | None. The rooms come from House.                               | **Block Code** empty, because no block was used                                                                           |
 | Reservation identifier | **Bed Bank** tab → **Reference** `575010084`                   | **Confirmation Number** `575010084`, **External References** type `OPERA`                                                 |
 | Status                 | **Bed Bank** tab → **Status** `Confirmed`                      | **Status** `Reserved`                                                                                                     |
 
