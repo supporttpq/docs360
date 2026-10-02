@@ -429,6 +429,17 @@
   * [Scheduled Activity](guest-app/weekly-activities/scheduled-activity.md)
 * [Good to Know](good-to-know.md)
 * [Settings](guest-app/settings.md)
+* [Guide App](guest-app/guide-app/README.md)
+  * [Extras](guest-app/guide-app/extras.md)
+  * [Services](guest-app/guide-app/services.md)
+  * [Lists](guest-app/guide-app/lists.md)
+  * [Tickets](guest-app/guide-app/tickets.md)
+  * [Documents](guest-app/guide-app/documents.md)
+  * [Guides](guest-app/guide-app/guides.md)
+  * [Reminder](guest-app/guide-app/reminder.md)
+  * [Reports](guest-app/guide-app/reports.md)
+  * [Sms](guest-app/guide-app/sms.md)
+  * [Conversations](guest-app/guide-app/conversations.md)
 
 ## Extras Setup
 
