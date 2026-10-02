@@ -83,7 +83,7 @@ The list shows the rules that match your filters. Changes reach the price lists 
 
 ### Field Reference
 
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/close-out-list.png" alt="Close Out list with the filter bar above the table, rules sorted by FROM DATE, editable dropdowns in every row and a bin icon at the end of each row"><figcaption><p>The Close Out list under Hotel → Close Out.</p></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/02.10.2026_09.20.37_REC.png" alt="Close Out list with the filter bar above the table, rules sorted by FROM DATE, editable dropdowns in every row and a bin icon at the end of each row"><figcaption><p>The Close Out list under Hotel → Close Out.</p></figcaption></figure></div>
 
 #### Filters
 
@@ -101,24 +101,6 @@ The list shows the rules that match your filters. Changes reach the price lists 
 
 #### Table
 
-| Field                 | Description                                     | Notes                                                                                 |
-| --------------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------- |
-| **FROM DATE**         | First arrival date the rule closes.             | Editable. Sortable.                                                                   |
-| **TO DATE**           | Last arrival date the rule closes.              | Editable. Sortable. Must not be before **FROM DATE**.                                 |
-| **BRAND**             | The brands the rule closes sales for.           | Editable. Empty (`Select Brands`) means all brands.                                   |
-| **ARRIVAL**           | The arrival gateway the rule is limited to.     | Editable. `All Arrivals` means every arrival.                                         |
-| **TRANSPORT TYPE**    | The type of transport the rule is limited to.   | Narrows the list in **TRANSPORT**.                                                    |
-| **TRANSPORT**         | The transports the rule is limited to.          | Editable.                                                                             |
-| **DESTINATION**       | The destinations the rule closes.               | Editable.                                                                             |
-| **RESORT**            | The resorts the rule closes.                    | Editable.                                                                             |
-| **HOTEL**             | The hotels the rule closes.                     | Editable. You can add and remove hotels in the same edit.                             |
-| **ROOM TYPE**         | The room types the rule closes.                 | Only available when the rule has exactly one hotel.                                   |
-| **NOTE**              | Why the rule exists.                            | Shows the start of the note. Click it to read or edit the full text in **Edit Note**. |
-| **CREATED**           | Date and time the rule was created.             | Read-only.                                                                            |
-| **CREATED BY**        | User who created the rule.                      | Read-only. The user name links to the user's details.                                 |
-| Bin icon              | Deletes the rule after confirmation.            | See the warning under How-to.                                                         |
-| **Save** / **Cancel** | Store or discard all changes made in the table. | At the bottom of the screen, below the pagination.                                    |
-
 The list shows 25 rules per page by default. Change this in the page-size selector next to the page numbers.
 
 {% hint style="info" %}
@@ -129,9 +111,13 @@ Close Out rules have no **Enabled** setting. A rule is active from the moment it
 Tourpaq processes each change to a rule as a background job. If you change a rule again while the previous change is still waiting to be processed, Tourpaq shows a warning. Wait a few minutes for the first change to finish, then make the next one.
 {% endhint %}
 
-{% hint style="info" %}
+#### **Processing and status**
 
-{% endhint %}
+The service runs every two minutes and adds all new changes to a processing queue. Changes are processed one by one, in the order they were added.
+
+While a creation or change is being processed, the affected row is highlighted in **red**. The row remains highlighted until the processing is completed.
+
+The two-minute interval refers to how often the service checks for and picks up new changes, not to the total processing time. The actual completion time depends on the size and complexity of the changes and the number of tasks already waiting in the queue. Small changes may be completed within a few minutes, while larger jobs or jobs waiting behind other tasks can take **30 minutes or more**.
 
 #### Close Out in the price list
 
