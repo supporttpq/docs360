@@ -236,9 +236,9 @@ Assume:
 
 The estimated passenger cost is:
 
-**223,242.00 ÷ 157 = 1,422.56**
+**223,242.00 ÷ 157 = 1,421.92**
 
-Therefore, before departure, the estimated passenger cost is approximately **1,422.56 per passenger**.
+Therefore, before departure, the estimated passenger cost is approximately **1,421.92 per passenger**.
 
 This is an **estimated cost**, because it is based on the expected Load Factor and the number of passengers expected to be sold.
 
@@ -266,7 +266,7 @@ Therefore, after departure, the actual passenger cost is **1,305.51 per passenge
 | Calculation basis          | Expected Load Factor | Actual passengers booked |
 | Expected/actual passengers |                  157 |                      171 |
 | Total flight cost          |           223,242.00 |               223,242.00 |
-| Passenger cost             |             1,422.56 |                 1,305.51 |
+| Passenger cost             |             1,421.92 |                 1,305.51 |
 | Cost type                  |            Estimated |                   Actual |
 
 The key difference is that **before departure, the calculation uses projected sales based on the Load Factor, while after departure, it uses the actual number of passengers booked**. Therefore, the post-departure calculation represents the actual cost per passenger for the flight.
@@ -304,18 +304,18 @@ The setting is found under **Super Administration → Company → Features**. It
 
 The tooltip on the setting reads:
 
-_If checked, the booking will have the transport cost updated based on the actual load factor on the homebound flight._\
-_This option is only relevant when Real Transports are used._
+_If checked, the booking will have the transport cost updated based on the actual load factor on the homebound flight._\
+_&#x54;his option is only relevant when Real Transports are used._
 
 | Setting                 | Day after the outbound departure                                                                                                                           | Day after the homebound departure                                                                      |
 | ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
 | **Unchecked** (default) | The booking is updated with the **actual cost** for both the outbound and the homebound leg.                                                               | No update. The transport cost on the booking does not change.                                          |
 | **Checked**             | The booking is updated with the **actual cost** for the outbound leg and the **estimated cost** (based on the expected Load Factor) for the homebound leg. | The homebound leg is updated to the **actual cost**, based on the actual load of the homebound flight. |
 
-When the setting is checked, the real cost is calculated for the outbound leg and the estimated cost for the homebound.\
+When the setting is checked, the real cost is calculated for the outbound leg and the estimated cost for the homebound.\
 If unchecked, the real cost is used for both.
 
-The cost for the homebound leg will then be updated tomorrow (one day after the return)
+The cost for the homebound leg will then be updated one day after the return.
 
 #### Example: cost update after departure
 
