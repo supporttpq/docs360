@@ -123,9 +123,7 @@ The two-minute interval refers to how often the service checks for and picks up 
 
 In **Price List → Price list**, a line whose package is blocked by an active Close Out shows a yellow warning icon right after the lightning icon. The icon's tooltip reads:
 
-```
-The room type has sales blocked due to an active Close Out
-```
+_"The room type has sales blocked due to an active Close Out"_
 
 ### Related pages
 
