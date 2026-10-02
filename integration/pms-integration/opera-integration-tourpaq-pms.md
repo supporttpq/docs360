@@ -305,8 +305,6 @@ The Extra's category decides what it becomes in Opera. The code is the link. Qua
 | **Opera Package**        | A reservation package                | Total quantity. Excluded quantity (passengers of the Extra's passenger type minus the quantity). Start = check-in. End = check-in + the Extra's days, or check-out when the Extra has no days. One schedule line per day with the quantity. | Tourpaq price, Extra name       |
 | **Opera Item Inventory** | An inventory item on the reservation | Quantity. Check-in to check-out.                                                                                                                                                                                                            | Tourpaq price, Extra name, days |
 
-**Grouped package codes.** A code with an underscore is split. `SPA_A-B` sends two packages, `A` and `B`, both in package group `SPA`.
-
 **Price.** The package price comes from Opera. When a booking is updated, Tourpaq keeps the per-day price already on the Opera reservation, or reads the package rate from Opera when none is there.
 
 **Data sent to Opera**
@@ -315,7 +313,6 @@ When a booking is created, Tourpaq sends:
 
 | Data           | Fields                                                                       |
 | -------------- | ---------------------------------------------------------------------------- |
-| **Booking**    | Booking No                                                                   |
 | **Customer**   | Name, first name, phone, email, birthday, nationality                        |
 | **Passengers** | Name, first name, phone, email, birthday, gender                             |
 | **Products**   | Products on the booking                                                      |
@@ -330,7 +327,7 @@ When a booking is updated, Tourpaq sends all of the booking data again, not only
 
 Tourpaq reuses an existing Opera guest profile when it can find one, and creates a new one only when it cannot.
 
-When a booking is created, passengers that already carry an Opera profile ID are sent with that ID. The first passenger is the primary guest. A booking with no passengers yet is sent with the customer as primary guest (name, title, gender, language, nationality).
+When a booking is created, passengers that already carry an Opera profile ID are sent with that ID. The first passenger is the primary guest. A booking with no passengers yet is sent with the customer as primary guest (name, first name, phone, email, birthday,language, nationality).
 
 When a booking is updated, Tourpaq matches each passenger in this order. The first match wins.
 
@@ -343,15 +340,6 @@ When a booking is updated, Tourpaq matches each passenger in this order. The fir
 One Opera profile is used for only one passenger on a room. If two passengers match the same profile, the second moves on to the next step.
 
 **What Tourpaq writes to the profile.** A matched profile is overwritten with the Tourpaq values: first and last name, title, language, nationality, gender, birth date, phone, address, postal code and email. Tourpaq also sets two user-defined fields:
-
-| Field      | Value                                                                       |
-| ---------- | --------------------------------------------------------------------------- |
-| **UDFC01** | `ADULT`, `CHILD` or `INFANT` — from the title: MR/MS, CHD, otherwise infant |
-| **UDFC10** | The passenger's first name                                                  |
-
-The reservation carries the number of infants in **UDFN01**.
-
-When Tourpaq creates a profile, a birth date on or before 2 January 1970 is left out.
 
 {% hint style="warning" %}
 A matched profile is overwritten with the Tourpaq values. Changes made to that profile in Opera are replaced at the next booking update.
