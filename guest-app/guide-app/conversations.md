@@ -7,39 +7,50 @@ description: The Conversations section on the Guide App Home screen.
 **Applies to:** Tourpaq Office · **Last reviewed:** 02-10-2026
 
 {% hint style="danger" %}
-**TO VERIFY** — The **Conversations** section of the Guide App has not been inspected for TQA-4298. The introduction of the existing Guide App page says the app supports customers directly through chat.
+**TO VERIFY** — The **Conversations** section of the Guide App has not been inspected for TQA-4298. The statements below are carried from the previous Guide App page, the Guest App page and the booking **Conversation** page.
 {% endhint %}
 
 #### Overview
 
-**Conversations** is one of the ten sections on the Guide App **Home** screen.
+**Conversations** is one of the ten sections on the Guide App **Home** screen. The Guide App supports guests directly through chat, and this section is the likely place where a guide reads and answers those chats.
+
+In the Guest App, a guest starts a conversation with the guides of the booking destination from the **Chat** tab. The booking **Conversation** tab in Tourpaq Office shows the conversation log with the guest messages, agent replies, timestamps, read status and who handled the thread.
 
 {% hint style="danger" %}
-**TO VERIFY** — What does the **Conversations** section show or let the guide do? Tourpaq Office documents a Conversation tab on each booking, and the Guest App has a Chat tab that reaches guides. Is **Conversations** where guides read and answer those chats?
+**TO VERIFY** — Is **Conversations** where guides read and answer the Guest App chats? What does the guide see on the screen, and can the guide start a conversation?
 {% endhint %}
 
 #### Purpose
 
-{% hint style="danger" %}
-**TO VERIFY** — What problem does **Conversations** solve for the guide?
-{% endhint %}
+* Answer guest questions directly from the destination.
+* Keep the conversation history on the booking, for support and auditing.
 
 #### Preconditions
 
+* The guest uses the Guest App and has a booking — see Guest App.
+* The guide is assigned to the resort of the booking.
+
 {% hint style="danger" %}
-**TO VERIFY** — Which Tourpaq Office settings, user rights or data must exist before **Conversations** shows content?
+**TO VERIFY** — Which user rights does a guide need for **Conversations**, and does a guide see only the resorts of their guide team?
 {% endhint %}
 
 #### How-to
 
 {% hint style="danger" %}
-**TO VERIFY** — Steps for using **Conversations** in the app, and the Tourpaq Office path that configures it.
+**TO VERIFY** — Steps for opening, answering and closing a conversation in the Guide App.
 {% endhint %}
+
+The routing of a guest message, as described for the Guest App:
+
+| Guest situation                         | Who receives the message                                                           |
+| --------------------------------------- | ---------------------------------------------------------------------------------- |
+| The booking is in the future            | All guides and admin users. The first guide who answers picks up the conversation. |
+| The guest is already at the destination | All guides on that resort.                                                         |
 
 #### Field Reference
 
 {% hint style="danger" %}
-**TO VERIFY** — Fields and options that control **Conversations**.
+**TO VERIFY** — Fields and options that control **Conversations**, and what the guide sees when there are no conversations.
 {% endhint %}
 
 #### Related pages

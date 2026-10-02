@@ -15,7 +15,7 @@ description: The Guides section on the Guide App Home screen.
 **Guides** is one of the ten sections on the Guide App **Home** screen.
 
 {% hint style="danger" %}
-**TO VERIFY** — What does the **Guides** section show or let the guide do? Tourpaq Office shows **Guide Teams**, **Guide Names** and **Guide Profiles** under **Users**. Does **Guides** list the guides of a team, coordinate guides, or both?
+**TO VERIFY** — What does the **Guides** section show or let the guide do? Tourpaq Office shows **Guide Teams**, **Guide Names** and **Guide Profiles** under **Users**. The previous Guide App page says the app helps guides coordinate with each other. Does **Guides** list the guides of a team, coordinate guides, or both?
 {% endhint %}
 
 #### Purpose
@@ -27,7 +27,7 @@ description: The Guides section on the Guide App Home screen.
 #### Preconditions
 
 {% hint style="danger" %}
-**TO VERIFY** — Which Tourpaq Office settings, user rights or data must exist before **Guides** shows content?
+**TO VERIFY** — Which Tourpaq Office settings, user rights or data must exist before **Guides** shows content? Which user rights does the guide need?
 {% endhint %}
 
 #### How-to
@@ -39,7 +39,7 @@ description: The Guides section on the Guide App Home screen.
 #### Field Reference
 
 {% hint style="danger" %}
-**TO VERIFY** — Fields and options that control **Guides**.
+**TO VERIFY** — Fields and options that control **Guides**, and what the guide sees when nothing is configured.
 {% endhint %}
 
 #### Related pages

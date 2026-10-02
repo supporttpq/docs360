@@ -15,7 +15,7 @@ description: The Reports section on the Guide App Home screen.
 **Reports** is one of the ten sections on the Guide App **Home** screen.
 
 {% hint style="danger" %}
-**TO VERIFY** — What does the **Reports** section show or let the guide do? The introduction of the existing Guide App page says the app lets guides create complaints about the local environment. Is that **Reports**?
+**TO VERIFY** — What does the **Reports** section show or let the guide do? The previous Guide App page says the app lets guides create complaints about the local environment. Is that **Reports**? If so, do the complaints become Service Cases in Tourpaq Office?
 {% endhint %}
 
 #### Purpose
@@ -27,7 +27,7 @@ description: The Reports section on the Guide App Home screen.
 #### Preconditions
 
 {% hint style="danger" %}
-**TO VERIFY** — Which Tourpaq Office settings, user rights or data must exist before **Reports** shows content?
+**TO VERIFY** — Which Tourpaq Office settings, user rights or data must exist before **Reports** shows content? Which user rights does the guide need?
 {% endhint %}
 
 #### How-to
@@ -39,11 +39,11 @@ description: The Reports section on the Guide App Home screen.
 #### Field Reference
 
 {% hint style="danger" %}
-**TO VERIFY** — Fields and options that control **Reports**.
+**TO VERIFY** — Fields and options that control **Reports**, and what the guide sees when nothing is configured.
 {% endhint %}
 
 #### Related pages
 
 * Guide App
-* Guide App (existing page)
+* Guide App (previous page)
 * Service Cases

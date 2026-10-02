@@ -15,7 +15,7 @@ description: The Services section on the Guide App Home screen.
 **Services** is one of the ten sections on the Guide App **Home** screen.
 
 {% hint style="danger" %}
-**TO VERIFY** — What does the **Services** section show or let the guide do? The introduction of the existing Guide App page lists these capabilities: tracking guides' activity, coordinating guides, creating complaints about the local environment, supporting customers by chat, and exporting passenger lists. Which of them, if any, is **Services**?
+**TO VERIFY** — What does the **Services** section show or let the guide do? The previous Guide App page lists these capabilities: tracking guides' activity, coordinating guides, creating complaints about the local environment, supporting guests by chat, and exporting passenger lists. Which of them, if any, is **Services**?
 {% endhint %}
 
 #### Purpose
@@ -27,7 +27,7 @@ description: The Services section on the Guide App Home screen.
 #### Preconditions
 
 {% hint style="danger" %}
-**TO VERIFY** — Which Tourpaq Office settings, user rights or data must exist before **Services** shows content?
+**TO VERIFY** — Which Tourpaq Office settings, user rights or data must exist before **Services** shows content? Which user rights does the guide need?
 {% endhint %}
 
 #### How-to
@@ -39,10 +39,10 @@ description: The Services section on the Guide App Home screen.
 #### Field Reference
 
 {% hint style="danger" %}
-**TO VERIFY** — Fields and options that control **Services**.
+**TO VERIFY** — Fields and options that control **Services**, and what the guide sees when nothing is configured.
 {% endhint %}
 
 #### Related pages
 
 * Guide App
-* Guide App (existing page)
+* Guide App (previous page)

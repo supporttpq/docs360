@@ -27,7 +27,7 @@ description: The Documents section on the Guide App Home screen.
 #### Preconditions
 
 {% hint style="danger" %}
-**TO VERIFY** — Which Tourpaq Office settings, user rights or data must exist before **Documents** shows content?
+**TO VERIFY** — Which Tourpaq Office settings, user rights or data must exist before **Documents** shows content? Which user rights does the guide need?
 {% endhint %}
 
 #### How-to
@@ -39,7 +39,7 @@ description: The Documents section on the Guide App Home screen.
 #### Field Reference
 
 {% hint style="danger" %}
-**TO VERIFY** — Fields and options that control **Documents**.
+**TO VERIFY** — Fields and options that control **Documents**, and what the guide sees when nothing is configured.
 {% endhint %}
 
 #### Related pages

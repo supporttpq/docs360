@@ -15,7 +15,7 @@ description: The Reminder section on the Guide App Home screen.
 **Reminder** is one of the ten sections on the Guide App **Home** screen.
 
 {% hint style="danger" %}
-**TO VERIFY** — What does the **Reminder** section show or let the guide do? Tourpaq Office has a Guide Reminders page under Guide teams. Is it the source of this section?
+**TO VERIFY** — What does the **Reminder** section show or let the guide do? Tourpaq Office has a Guide Reminders page under Guide teams. Is it the source of this section? The previous Guide App page says notifications stop when a session expires. Are those notifications the reminders?
 {% endhint %}
 
 #### Purpose
@@ -27,7 +27,7 @@ description: The Reminder section on the Guide App Home screen.
 #### Preconditions
 
 {% hint style="danger" %}
-**TO VERIFY** — Which Tourpaq Office settings, user rights or data must exist before **Reminder** shows content?
+**TO VERIFY** — Which Tourpaq Office settings, user rights or data must exist before **Reminder** shows content? Which user rights does the guide need?
 {% endhint %}
 
 #### How-to
@@ -39,7 +39,7 @@ description: The Reminder section on the Guide App Home screen.
 #### Field Reference
 
 {% hint style="danger" %}
-**TO VERIFY** — Fields and options that control **Reminder**.
+**TO VERIFY** — Fields and options that control **Reminder**, and what the guide sees when nothing is configured.
 {% endhint %}
 
 #### Related pages
