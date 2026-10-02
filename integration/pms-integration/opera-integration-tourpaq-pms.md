@@ -230,8 +230,6 @@ For a hotel managed by Opera, a manually entered allotment number is overwritten
 
 **Block codes**
 
-The name of a block in Opera is free text. Tourpaq uses the **Block Code** of the block. In the Opera staging environment, for example, block codes such as `BLL202620271` and `CPH202620271` start with a departure airport code and run from 01-11-2026 to 01-11-2027.
-
 Opera shows these fields for each block in **Bookings → Blocks → Manage Block**:
 
 | Column                       | Description                                     |
@@ -259,7 +257,7 @@ Example: a transport from BLL on 24 May 2027 in period 1 looks for block `BLL240
 Tourpaq looks for a block only when:
 
 * The transport period is 1, 2, 3 or 4.
-* The departure airport is BLL, CPH or RNN. Other airports never get a block code.
+* Departure Airport examples: BLL, CPH
 
 Hotel Only bookings never get a block code. Opera receives them with the internal general note `OUTSIDE ALLOTMENT`.
 
@@ -327,7 +325,7 @@ When a booking is updated, Tourpaq sends all of the booking data again, not only
 
 Tourpaq reuses an existing Opera guest profile when it can find one, and creates a new one only when it cannot.
 
-When a booking is created, passengers that already carry an Opera profile ID are sent with that ID. The first passenger is the primary guest. A booking with no passengers yet is sent with the customer as primary guest (name, first name, phone, email, birthday,language, nationality).
+When a booking is created, passengers that already carry an Opera profile ID are sent with that ID. The first passenger is the primary guest. A booking with no passengers yet is sent with the customer as primary guest (name, first name, phone, email, birthday, gender).
 
 When a booking is updated, Tourpaq matches each passenger in this order. The first match wins.
 
@@ -339,7 +337,7 @@ When a booking is updated, Tourpaq matches each passenger in this order. The fir
 
 One Opera profile is used for only one passenger on a room. If two passengers match the same profile, the second moves on to the next step.
 
-**What Tourpaq writes to the profile.** A matched profile is overwritten with the Tourpaq values: first and last name, title, language, nationality, gender, birth date, phone, address, postal code and email. Tourpaq also sets two user-defined fields:
+**What Tourpaq writes to the profile.** A matched profile is overwritten with the Tourpaq values: first and last name, phone, email, birthday, gender.&#x20;
 
 {% hint style="warning" %}
 A matched profile is overwritten with the Tourpaq values. Changes made to that profile in Opera are replaced at the next booking update.
