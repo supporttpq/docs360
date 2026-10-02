@@ -290,7 +290,7 @@ Extras that Tourpaq sends to Opera use an Opera **Category Type**:
 
 Only the Extra's code is mapped, by naming convention.
 
-In Opera, the reservation has a **Packages** dialog with the tabs **Packages**, **Inventory Items** and **Daily View**. The **Packages** tab lists the available packages by **Code**, **Description**, **Calculation Rule**, **Rhythm** and **Price**, and the packages already on the reservation under **Selected Packages**. The **Item Inventory** link on the reservation shows the inventory items.
+In Opera, the reservation has a **Packages** dialog with the tabs **Packages**, **Inventory Items** and **Daily View**. The **Packages** tab lists the available packages by **Code**, **Description**, **Calculation Rule**, and **Price**, and the packages already on the reservation under **Selected Packages**. The **Item Inventory** link on the reservation shows the inventory items.
 
 {% hint style="warning" %}
 If Opera does not recognise the code of an Extra in an Opera category, Opera returns an error for the Extra. The booking is still created in Tourpaq. Create the matching package in Opera, or move the Extra to a category that is not an Opera category.
