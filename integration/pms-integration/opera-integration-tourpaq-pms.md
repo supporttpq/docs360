@@ -37,7 +37,7 @@ Matching rules
   Transport                   ═══ block code         ═══   Opera Block Code
 ```
 
-<figure><img src="../../.gitbook/assets/opera-integration-system-drawing.png" alt="Tourpaq and Opera Cloud side by side. The hourly sync reads room, house and block inventory from Opera into the Tourpaq allotment. A Tourpaq booking sends three flows to Opera: a block code lookup built from the outbound transport, a match-or-create call for each passenger's guest profile, and the reservation with its Extras as packages and inventory items. Every call is written to the OperaRequest log."><figcaption><p>How the parts of the integration interact.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/opera-integration-system-drawing.png" alt="Tourpaq and Opera Cloud side by side. The hourly sync reads room, house and block inventory from Opera into the Tourpaq allotment. A Tourpaq booking sends three flows to Opera: a block code lookup built from the outbound transport, a match-or-create call for each passenger&#x27;s guest profile, and the reservation with its Extras as packages and inventory items. Every call is written to the OperaRequest log."><figcaption><p>How the parts of the integration interact.</p></figcaption></figure>
 
 A booking pushes data to Opera along three flows: the block lookup, the guest profiles and the reservation. The only flow back is the hourly allotment sync. Every call to Opera is stored in the OperaRequest log.
 
@@ -200,11 +200,11 @@ Tourpaq does not check that a room is linked to the right block in Opera. If the
 
 The hourly sync rewrites the Tourpaq allotment number (**NO.**) for each day from three Opera inventories plus what Tourpaq has already sold:
 
-| Part                  | Value used                                                                                                                                                 |
-| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Room**              | Opera availability for the room type, never below 0.                                                                                                       |
-| **House**             | Opera House availability.                                                                                                                                  |
-| **Booked in Tourpaq** | Rooms already booked on that allotment day.                                                                                                                |
+| Part                  | Value used                                                                                                                                                                                 |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Room**              | Opera availability for the room type, never below 0.                                                                                                                                       |
+| **House**             | Opera House availability.                                                                                                                                                                  |
+| **Booked in Tourpaq** | Rooms already booked on that allotment day.                                                                                                                                                |
 | **Block**             | Remaining rooms in each block for every departure airport linked to the hotel room, periods 1 and 2 only. The block code is built as described in **How a booking finds its Opera block**. |
 
 Allotment = the smaller of House and Room + Booked in Tourpaq + the remaining rooms of each block.
@@ -213,7 +213,7 @@ Example: Room 5, House 3, 2 rooms booked, block `BLL2405271` has 4 rooms left an
 
 The sync updates only the allotment number, and only on days where it changed. Other allotment values are not touched.
 
-The sync runs for these room codes: `CF1`, `CF2`, `CF22`, `CFV1`, `CFV2`, `CFV22`, `SP1`, `SP2`, `SP22`, `SP42`, `SU1SV`, `SU2`, `SU2SV`, `SU2H`, `SU3LUX` and `PH42`. For other room codes the sync returns `Nothing to do!`.
+Example of mapped room codes `CF1`, `CF2`, `CF22`, `CFV1`, `CFV2`, `CFV22`, `SP1`, `SP2`, `SP22`, `SP42`, `SU1SV`, `SU2`, `SU2SV`, `SU2H`, `SU3LUX` and `PH42`.&#x20;
 
 A manual run of the sync per price list is allowed for the roles SysAdmin, Administrator, BrandManager, Sales and Financial.
 
@@ -248,11 +248,11 @@ On the Opera reservation, the used block appears in **Block Code**. The field is
 
 Tourpaq does not store a link between a transport and a block. It builds the block code from the booking's outbound transport each time, and looks that code up in Opera.
 
-| Part of the block code    | Length | Example  |
-| ------------------------- | ------ | -------- |
-| Departure airport code    | 3      | `BLL`    |
-| Departure date as DDMMYY  | 6      | `240527` |
-| Transport period number   | 1      | `1`      |
+| Part of the block code   | Length | Example  |
+| ------------------------ | ------ | -------- |
+| Departure airport code   | 3      | `BLL`    |
+| Departure date as DDMMYY | 6      | `240527` |
+| Transport period number  | 1      | `1`      |
 
 Example: a transport from BLL on 24 May 2027 in period 1 looks for block `BLL2405271`.
 
@@ -300,10 +300,10 @@ If Opera does not recognise the code of an Extra in an Opera category, Opera ret
 
 The Extra's category decides what it becomes in Opera. The code is the link. Quantity and dates travel with it; the Tourpaq price does not.
 
-| Category Type            | Becomes in Opera                     | Sent with the code                                                                                                                                                                                                                                  | Not sent                          |
-| ------------------------ | ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------- |
-| **Opera Package**        | A reservation package                | Total quantity. Excluded quantity (passengers of the Extra's passenger type minus the quantity). Start = check-in. End = check-in + the Extra's days, or check-out when the Extra has no days. One schedule line per day with the quantity. | Tourpaq price, Extra name         |
-| **Opera Item Inventory** | An inventory item on the reservation | Quantity. Check-in to check-out.                                                                                                                                                                                                                    | Tourpaq price, Extra name, days   |
+| Category Type            | Becomes in Opera                     | Sent with the code                                                                                                                                                                                                                          | Not sent                        |
+| ------------------------ | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------- |
+| **Opera Package**        | A reservation package                | Total quantity. Excluded quantity (passengers of the Extra's passenger type minus the quantity). Start = check-in. End = check-in + the Extra's days, or check-out when the Extra has no days. One schedule line per day with the quantity. | Tourpaq price, Extra name       |
+| **Opera Item Inventory** | An inventory item on the reservation | Quantity. Check-in to check-out.                                                                                                                                                                                                            | Tourpaq price, Extra name, days |
 
 **Grouped package codes.** A code with an underscore is split. `SPA_A-B` sends two packages, `A` and `B`, both in package group `SPA`.
 
@@ -429,13 +429,13 @@ The **Bed Bank** tab of the booking shows the **Reference**, the **Status** and 
 
 Every call Tourpaq makes to Opera is stored as one row in the **OperaRequest** table of the Tourpaq database.
 
-| Column                 | Holds                                                                                                         |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------- |
-| **ClientReference**    | The Tourpaq booking reference. Empty for availability checks.                                                 |
-| **OperaReservationID** | The Opera reservation, on reservation calls.                                                                  |
-| **Created**            | Date and time of the call.                                                                                    |
-| **CompanyID**          | The Tourpaq company.                                                                                          |
-| **RequestMessage**     | The call as JSON: Method, Url, Headers, RequestBody, ResponseStatus, ResponseContent, ErrorMessage.           |
+| Column                 | Holds                                                                                               |
+| ---------------------- | --------------------------------------------------------------------------------------------------- |
+| **ClientReference**    | The Tourpaq booking reference. Empty for availability checks.                                       |
+| **OperaReservationID** | The Opera reservation, on reservation calls.                                                        |
+| **Created**            | Date and time of the call.                                                                          |
+| **CompanyID**          | The Tourpaq company.                                                                                |
+| **RequestMessage**     | The call as JSON: Method, Url, Headers, RequestBody, ResponseStatus, ResponseContent, ErrorMessage. |
 
 Logged calls: profile search, create and update; block lookup and block availability; House availability; reservation create, update and cancel; package rates.
 
@@ -449,12 +449,12 @@ Opera warnings come back to the booking as `<status> <text>`.
 
 **Messages shown when an export to Opera fails**
 
-| Message                                  | Meaning                                                                                                        |
-| ---------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| `Room is not available on Opera!`        | Neither the block nor House has the room.                                                                      |
+| Message                                  | Meaning                                                                                                                         |
+| ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| `Room is not available on Opera!`        | Neither the block nor House has the room.                                                                                       |
 | `Block Code Not Found '<code>'`          | The block code built from the transport does not exist in Opera, or has no rooms — see **How a booking finds its Opera block**. |
-| `Room not Available '<room code>'`       | House has fewer units than requested.                                                                          |
-| `Reservation not availabe on the house!` | No block was used and House is full.                                                                           |
+| `Room not Available '<room code>'`       | House has fewer units than requested.                                                                                           |
+| `Reservation not availabe on the house!` | No block was used and House is full.                                                                                            |
 
 **Who can read the logs.** The OperaRequest table is read with database access. Tourpaq has no screen for it.
 
