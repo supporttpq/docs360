@@ -92,7 +92,7 @@ In the **Brands** section at the top of the **Overview** tab of the Extra, selec
 | **Guide sale**                            | Orderable as an Extra Order in the Guide App and Guest App.                                                                   |
 | **Guide sale + Internet Sale + For Sale** | Orderable as an Extra Order in the Guide App, Guest App, WebBooking (OneHome) and on the **Extra Orders** tab of the booking. |
 
-<div data-with-frame="true"><figure><img src=".gitbook/assets/image (2) (1).png" alt="Brands section with the Bravo Tours dropdown open and Guide sale + Internet Sale + For Sale selected"><figcaption><p>Brand assignment options. Any option that includes Guide sale makes the Extra an Extra Order for that brand.</p></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (367).png" alt="Brands section with the Bravo Tours dropdown open and Guide sale + Internet Sale + For Sale selected"><figcaption><p>Brand assignment options. Any option that includes Guide sale makes the Extra an Extra Order for that brand.</p></figcaption></figure></div>
 
 #### Generate allotments for the excursion
 
@@ -103,7 +103,7 @@ Open the allotment tab that matches the allotment type, click **Generate New All
 
 A guest is offered the excursion only on allotment dates that fall within the stay, and only while allotment is left. The field-by-field description is on [Allotments](extras-setup/extras-general-page/allotments.md).
 
-<div data-with-frame="true"><figure><img src=".gitbook/assets/image (391).png" alt="Allotments tab of a Manual allotment Extra with Monday and Thursday dates, 10 units each and 0 booked"><figcaption><p>Manual allotment: one row per date. BO1 shows the number of units booked.</p></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (374).png" alt="Allotments tab of a Manual allotment Extra with Monday and Thursday dates, 10 units each and 0 booked"><figcaption><p>Manual allotment: one row per date. BO1 shows the number of units booked.</p></figcaption></figure></div>
 
 #### Keep the excursion listed as read-only
 
@@ -126,7 +126,7 @@ The apps and the Destination API show these as the **Adult Price** and **Child P
 
 For an Extra Order, the Prices tab can also show **START TIME** and **END TIME**. Use them to give the same date different prices during the day — for example a morning and an afternoon departure. The **S** split button next to them divides a price line into two time periods. The defaults are `00:00` and `23:59`, which means one price for the whole day. See [Prices ](extras-setup/extras-general-page/prices.md)for every column.
 
-<div data-with-frame="true"><figure><img src=".gitbook/assets/image (400).png" alt="Prices tab of a Generic allotment Extra showing START TIME and END TIME columns between the departure and booking date columns"><figcaption><p>START TIME and END TIME on the Prices tab of an Extra Order.</p></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (349).png" alt="Prices tab of a Generic allotment Extra showing START TIME and END TIME columns between the departure and booking date columns"><figcaption><p>START TIME and END TIME on the Prices tab of an Extra Order.</p></figcaption></figure></div>
 
 **Payment and cancellation**
 

@@ -37,19 +37,19 @@ Use the Name Change Rule to:
 
 #### How-to
 
-1. **Check the company setting.**&#x20;
+1. **Check the company setting.**
 
 * Go to **Setup → System Setup** and find **Disable Name Change**. Leave it cleared if customer name changes are to be controlled per transport. Enable it only if customers must be blocked from changing names on every transport.
 
-2. **Open the transport.**&#x20;
+2. **Open the transport.**
 
 * Go to **Transport → Transport**, open the transport, and find the **Name Change Rule** section.
 
-3. **Set the restrictions.**&#x20;
+3. **Set the restrictions.**
 
 * Enable **Do Not Allow Name Change Office**, **Do Not Allow Name Change Web**, or both, according to your supplier policy.
 
-4. **Set the deadline.**&#x20;
+4. **Set the deadline.**
 
 * Enter the number of days before departure after which no name change is allowed, then click **Save**.
 
@@ -61,11 +61,30 @@ For customers, the rule applies only while **Disable Name Change** in System Set
 
 <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (5).png" alt="Transport creation page with the Name Change Rule section highlighted, showing both restriction checkboxes and the deadline field"><figcaption><p>The Name Change Rule section in Transport creation.</p></figcaption></figure>
 
-| Field                                            | Description                                                                                                                                            | Notes                                                                                                                                             |
-| ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Do Not Allow Name Change Office**              | Blocks back-office staff from changing passenger names on this transport.                                                                              | Enforced after payment is registered. Not affected by **Disable Name Change** in System Setup.                                                    |
-| **Do Not Allow Name Change Web**                 | Blocks customers from changing passenger names in WebBooking.                                                                                          | Cannot override **Disable Name Change** in System Setup: when that setting is enabled, customers cannot change names even if this box is cleared. |
-| **Name change deadline (days before departure)** | The last point at which a name change is accepted. Enter `7` to allow changes until seven days before departure. After that, name changes are blocked. | Evaluated against the transport's departure date. For customers, applies only while **Disable Name Change** in System Setup is cleared.           |
+| Field                                            | Description                                                                                                                                                                                                                                                                                                                                                                                                      | Notes                                                                                                                                             |
+| ------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Do Not Allow Name Change Office**              | Blocks back-office staff from changing passenger names on this transport.                                                                                                                                                                                                                                                                                                                                        | Enforced after payment is registered. Not affected by **Disable Name Change** in System Setup.                                                    |
+| **Do Not Allow Name Change Web**                 | Blocks customers from changing passenger names in WebBooking.                                                                                                                                                                                                                                                                                                                                                    | Cannot override **Disable Name Change** in System Setup: when that setting is enabled, customers cannot change names even if this box is cleared. |
+| **Name change deadline (days before departure)** | The point at which name changes stop being accepted. Name changes are allowed before the deadline. On the deadline itself and after it, name change is not allowed, and the pencil icon for editing the name is not shown in WebBooking. Enter `7` to allow name changes up to, but not on, the point seven days before departure. From that point onward, including the point itself, name changes are blocked. | Evaluated against the transport's departure date. For customers, applies only while **Disable Name Change** in System Setup is cleared.           |
+
+**Deadline example**
+
+Name change deadline is `70`, **Disable Name Change** in System Setup is cleared, and **Do Not Allow Name Change Web** is cecked.
+
+| When the customer opens the booking in WebBooking | Pencil icon for editing the name | Name change     |
+| ------------------------------------------------- | -------------------------------- | --------------- |
+| 70 days before departure                          | Shown                            | **Allowed**     |
+| Exactly 75 days before departure (the deadline)   | Not shown                        | **Not allowed** |
+| 77 days before departure                          | Not shown                        | **Not allowed** |
+
+*   when the days before departure are set and the departure date is more than numer set:
+
+    <figure><img src="../../../.gitbook/assets/05.10.2026_13.17.22_REC.png" alt=""><figcaption></figcaption></figure>
+
+
+*   when the days before departure are set and the departure date is less than numer set:&#x20;
+
+    <figure><img src="../../../.gitbook/assets/05.10.2026_13.01.45_REC.png" alt=""><figcaption></figcaption></figure>
 
 **System Setup**
 
@@ -77,12 +96,13 @@ For customers, the rule applies only while **Disable Name Change** in System Set
 
 **How the settings combine**
 
-| System Setup: Disable Name Change | Transport: Name Change Rule              | Result                                                                       |
-| --------------------------------- | ---------------------------------------- | ---------------------------------------------------------------------------- |
-| Enabled                           | Anything, including nothing set          | Name change is **not allowed**.                                              |
-| Cleared                           | Nothing set                              | Name change is **allowed**.                                                  |
-| Cleared                           | **Do Not Allow Name Change Web** enabled | Name change is **not allowed**.                                              |
-| Cleared                           | Deadline set                             | Name change is **allowed** before the deadline and **not allowed** after it. |
+| System Setup: Disable Name Change | Transport: Name Change Rule                                                                                                                        | Result                                                                                                                                   |
+| --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| Enabled                           | Anything, including nothing set                                                                                                                    | Name change is **not allowed**.                                                                                                          |
+| Cleared                           | Nothing set                                                                                                                                        | Name change is **allowed**.                                                                                                              |
+| Cleared                           | **Do Not Allow Name Change Web** enabled                                                                                                           | Name change is **not allowed**.                                                                                                          |
+| Cleared                           | Deadline set                                                                                                                                       | Name change is **allowed** before the deadline and **not allowed** after it.                                                             |
+| Cleared                           | <p>Multiple transports: One transport: <strong>Nothing set</strong><br>Second transport: <strong>Do Not Allow Name Change Web enabled</strong></p> | **Name change is not allowed.** One transport does not allow name changes, so the customer cannot change passenger names on the booking. |
 
 {% hint style="warning" %}
 Enabling **Disable Name Change** in System Setup blocks customers from changing names on every transport, including transports whose Name Change Rule is empty. Confirm that is intended before saving.
