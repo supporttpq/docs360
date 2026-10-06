@@ -157,8 +157,8 @@ After sign-in, the **Home** screen shows the sections listed under Field Referen
 
 ### Related pages
 
-* Extras
-* Lists
+* [Extras](../../extras-setup/extras-general-page/)
+* [Lists](../../export-1/lists.md)
 * [Guest App](../../visit-sun-app.md)
 * [Guide teams](../../guides/)
 * [Brands](../../brands/)

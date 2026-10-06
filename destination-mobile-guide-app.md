@@ -4,6 +4,16 @@
 
 The Guide App tracks guides' activity, helps them coordinate with each other, creates complaints regarding the local environment, supports customers directly through chat, and exports passenger lists in multiple formats.
 
+### Related pages
+
+Use [guide-app](guest-app/guide-app/ "mention") for the Guide App Home screen and its sections:
+
+* [extras.md](guest-app/guide-app/extras.md "mention"), [services.md](guest-app/guide-app/services.md "mention"), and [lists.md](guest-app/guide-app/lists.md "mention").
+* [tickets.md](guest-app/guide-app/tickets.md "mention"), [documents.md](guest-app/guide-app/documents.md "mention"), and [guides.md](guest-app/guide-app/guides.md "mention").
+* [reminder.md](guest-app/guide-app/reminder.md "mention"), [reports.md](guest-app/guide-app/reports.md "mention"), [sms.md](guest-app/guide-app/sms.md "mention"), and [conversations.md](guest-app/guide-app/conversations.md "mention").
+
+Also see [visit-sun-app.md](visit-sun-app.md "mention"), [guide-profiles.md](guides/guide-profiles.md "mention"), and [weekly-activities](guest-app/weekly-activities/ "mention").
+
 ### Login screen
 
 <div data-with-frame="true"><figure><img src=".gitbook/assets/Untitled (1) (1).jpg" alt="" width="100%"><figcaption></figcaption></figure></div>
