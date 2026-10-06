@@ -6,15 +6,6 @@ description: >-
 
 # Extras
 
-{% hint style="danger" %}
-
-
-**Applies to:** Tourpaq Office · **Last reviewed:** 02-10-2026
-
-{% hint style="danger" %}
-**TO VERIFY** — The Guide App screens on this page have not been inspected for TQA-4298. The configuration is carried from the previous Guide App documentation and has not been re-checked on a Guide App screen. Each open question is marked where it applies.
-{% endhint %}
-
 #### Overview
 
 **Extras** lists the excursions that a guide can order on behalf of a guest, and shows the orders already made on the **Booked** tab of **Booked extras**.
@@ -60,117 +51,92 @@ Extras with **Manual** and **Generic** allotment are sold in the same way. The a
 **Configure the Extra**
 
 1. Go to **Extras Setup → Extras** and open the Extra, or click **Create**.
-2. Select an **Extras Category** of type **Tours**.
+2.  Select an **Extras Category** of type **Tours**.
+
+    ![](https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-dce28b7a9e3e4b0568273aaa4aee5b94ac2efb9e%2Fimage%20\(279\).png?alt=media)
 3. Select **Manual** or **Generic** in **Allotment Type** on the **Basic setup** tab.
-4. Under **Brands** on the **Overview** tab, select an option that includes **Guide sale** for each brand that sells the excursion, then click **Save**.
-5. Assign the resort on the **Resources** tab: click **New filter type**, select the resort, then click **Save filter type**.
-6. Click **Generate New Allotments** on the **Allotments** tab (Manual) or the **Generic Allotment** tab (Generic), and choose **Daily** or **Weekly**.
+4. Under **Brands** on the **Overview** tab, select an option that includes **Guide sale** for each brand that sells the excursion, then click **Save**.\
+   ![](https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-f4a1ec7cfd51a78b5a1acdc2cf2370433853c643%2Fimage%20\(283\).png?alt=media)
+5. Assign the resort on the **Resources** tab: click **New filter type**, select the resort, then click **Save filter type**.\
+   ![](https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-a94439bab8957dbd0929554f0cbd75e54cbf18f6%2Fimage%20\(282\).png?alt=media)
+6. Click **Generate New Allotments** on the **Allotments** tab (Manual) or the **Generic Allotment** tab (Generic), and choose **Daily** or **Weekly**.\
+   ![](https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-1397b7254ee97754ad5c234a1613ea61d524598b%2Fimage%20\(66\).png?alt=media)\
+   **Daily** - the tool will generate allotments each day or from n to n days (e.g. from 2 to 2 days) in a given date interval (**Duration**). In here we also have the possibility to make new allotments each n minutes (**Daily Frequency**) between a time interval (this is applying for each day) or to set up the **Specific time** of the allotments (see the picture below),\
+   **Weekly** - the tool will generate allotments for one or more days of the week. We will also be able to specify the allotments frequency (each week or from n to n weeks). We will also have to define the desired time or set the allotment to be available every n minutes, exactly like in the **Daily** basis option. From this point, the steps are similar.\
+   ![](https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-6e50f6e3fbb85fc89093a51fb0b97e22c0c67911%2Fimage%20\(67\).png?alt=media)
 7. Create one price line per age group and period on the **Prices** tab.
-8. Add pictures on the **Photos** tab and a text in **Description in customer center**.
+8. Add pictures on the **Photos** tab and a text in **Description in customer center**.\
+   ![](https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-7f8ee839d8dfd840f2ec3c39ea9118ba6faaf186%2Fimage%20\(280\).png?alt=media)
 {% endstep %}
 
 {% step %}
 **Create the pick-up points (route)**
 
-1. Go to **Extras → Routes** and click insert. A route is generated.
-2. Add the pick-up points and fill in the fields listed under Field Reference.
+1. Go to **Extras → Routes** and click insert. A route is generated.\
+   ![](https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-412610f3a993ea20e9614a5334dfd7dbdc7b75f2%2Fimage%20\(2\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20\(1\)%20%20%20\(2\).png?alt=media)
+2. Add the pick-up points and fill in the fields listed under Field Reference.\
+   ![](https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-2acec4ae18694a734b0133eb64a15a2c07c2fa76%2Fimage%20\(72\).png?alt=media)
 3. On the **Brands** tab of the route, assign the agency and mark the route as for sale.
 {% endstep %}
 
 {% step %}
 **Create the guide payment types**
 
-Go to **Finance → Method of payment** as an Administrator and click **New**. Tick **Guide payment** and **Active**. Create one **Debit** type for sales (cash in) and one **Credit** type for refunds (cash out).
+Go to **Finance → Method of payment** as an Administrator and click **New**. Tick **Guide payment** and **Active**. Create one **Debit** type for sales (cash in) and one **Credit** type for refunds (cash out).\
+![](https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-f08deaf552adfb4bcdf6bf65eb97d549faff356f%2Fimage%20\(73\).png?alt=media)\
+![](https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-474ee969c1c856335bfa1d624c0fce427eed2f66%2Fimage%20\(74\).png?alt=media)
 {% endstep %}
 
 {% step %}
 **Assign the payment types to the guide**
 
-Open the guide on the Edit Guide page and assign the payment types. To use the DIBS settings of a specific agency for all payments by this guide, select the agency in **Override agency DIBS**. Leave it at the default to use the agency selected in the app.
+Open the guide on the Edit Guide page and assign the payment types. To use the DIBS settings of a specific agency for all payments by this guide, select the agency in **Override agency DIBS**. Leave it at the default to use the agency selected in the app.\
+![](https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-81c590c478f5f572b2f662064f65399a8a1dcad1%2Fimage%20\(75\).png?alt=media)
 {% endstep %}
 
 {% step %}
 **Sell an excursion in the app**
 
-1. Sign in and tap **Extras**. A list of the available excursions is shown.
-2. Select an excursion and view its details.
-3. Check the booking details and the number of adults and children, then tap **ADD TO CART**.
+1. Sign in and tap **Extras**. A list of the available excursions is shown.\
+   ![](https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-c546f57881a6c738cb14b377766bde4726e1b07f%2Fimage%20\(190\).png?alt=media)
+2. Select an excursion and view its details.\
+   ![](https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-d90839cd76a579eaffa6447f91c1b220e7b862a6%2F11-525720509f53db66d4be8db089be1662.png?alt=media)
+3. Check the booking details and the number of adults and children, then tap **ADD TO CART**.\
+   ![](https://docs.tourpaq.com/assets/images/22-681f42ba0ae483955f992620f44cdda0.png)
 4. On **Cart Checkout**, check the excursion, date, passengers (**Pax**), price and the observation fields.
-5. Select the payment type under **Paid by**: cash, agent machine or card.
+5. Select the payment type under **Paid by**: cash, agent machine or card.\
+   ![](https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-578c44e1a2c0b32ca1f6f8be20f58acd98abbac0%2Fimage%20\(191\).png?alt=media)
 6. Complete the order.
 {% endstep %}
 
 {% step %}
 **Cancel an order**
 
-On **Extras**, open the **Booked** tab and tap the order. Choose whether to refund the money to the guest. A refund needs a credit payment type assigned to the guide.
+On **Extras**, open the **Booked** tab and tap the order. Choose whether to refund the money to the guest. A refund needs a credit payment type assigned to the guide.\
+![](https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-3899bb7b981daf66ed4f62a7cfc465275c20b701%2Fimage%20\(192\).png?alt=media)\
+![](https://docs.tourpaq.com/assets/images/55-f4fe0b97ccc6779a3e8784668d4048d4.png)
 {% endstep %}
 {% endstepper %}
 
 The order is listed on the **Booked** tab of **Booked extras**, under **Unpaid orders** or **Paid orders**. Expand an order to see the excursion, date, time, number of passengers and price. The order is also listed on the **Extra Orders** tab of the booking in Tourpaq Office.
 
-{% hint style="danger" %}
-**TO VERIFY** — (1) The previous page says guide payment types are assigned under **Users → Guides**. Tourpaq Office now shows **Guide Teams**, **Guide Names** and **Guide Profiles** under **Users**. Which one holds the payment types and **Override agency DIBS**? (2) The previous page calls the tab for the resort **Resurser**. Confirm the current label. (3) Is a route required for every excursion, and where does the app show the pick-up points? (4) The previous page gives the route path as **Extras → Routes**. Confirm it on staging.
-{% endhint %}
-
 #### Field Reference
 
 **Extra**
 
-| Field                              | Description                                                                                                                                   | Required | Notes                                                                                                                                              |
-| ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Extras Category**                | Decides whether the Extra is shown in the apps. Only Extras in a **Tours** category are shown.                                                | Yes      |                                                                                                                                                    |
-| **Allotment Type**                 | Decides how availability is managed. **Manual** gives one capacity per day, on set days. **Generic** gives a capacity per date and time slot. | Yes      | **None** and **LinkedToTransport** do not support Extra Orders.                                                                                    |
-| **Brands**                         | Makes the Extra orderable for a brand. An option that includes **Guide sale** makes it an Extra Order in the Guide App and Guest App.         | Yes      | **Guide sale + Internet Sale + For Sale** also makes it orderable in WebBooking (OneHome) and on the **Extra Orders** tab of the booking.          |
-| **Resources** (resort)             | Assigns the Extra to a resort.                                                                                                                | Yes      | Other resource types, such as transports and hotels, are ignored by the apps.                                                                      |
-| **Description in customer center** | The first information shown for the excursion.                                                                                                | No       | Can be set per brand to give different descriptions.                                                                                               |
-| **Photos**                         | Pictures shown with the excursion.                                                                                                            | No       | Add one or more representative pictures.                                                                                                           |
-| **Prices**                         | One line per age group and period. Shown as **Adult Price** and **Child Price**.                                                              | Yes      | Prices for Extra Orders are defined on this tab only. The Generic Product Price Rules page is no longer used.                                      |
-| **START TIME** / **END TIME**      | Gives the same date different prices during the day, for example a morning and an afternoon departure.                                        | No       | Defaults are `00:00` and `23:59`, which is one price for the whole day. The **S** button splits a price line into two time periods.                |
-| **Keep showing in app**            | Keeps the excursion listed when allotment is 0 or sold out. No buy button is shown.                                                           | No       | Documented for the Guest App.                                                                                                                      |
-| **Automatic billing** (creditor)   | Sets the currency of the sold Extra.                                                                                                          | No       | Without a creditor, the agency currency applies, then the company currency. Create a creditor with the wanted currency and assign it to the Extra. |
+<table data-search="false"><thead><tr><th>Field</th><th>Description</th><th>Notes</th></tr></thead><tbody><tr><td><strong>Extras Category</strong></td><td>Decides whether the Extra is shown in the apps. Only Extras in a <strong>Tours</strong> category are shown.</td><td></td></tr><tr><td><strong>Allotment Type</strong></td><td>Decides how availability is managed. <strong>Manual</strong> gives one capacity per day, on set days. <strong>Generic</strong> gives a capacity per date and time slot.</td><td><strong>None</strong> and <strong>LinkedToTransport</strong> do not support Extra Orders.</td></tr><tr><td><strong>Brands</strong></td><td>Makes the Extra orderable for a brand. An option that includes <strong>Guide sale</strong> makes it an Extra Order in the Guide App and Guest App.</td><td><strong>Guide sale + Internet Sale + For Sale</strong> also makes it orderable in WebBooking (OneHome) and on the <strong>Extra Orders</strong> tab of the booking.</td></tr><tr><td><strong>Resources</strong> (resort)</td><td>Assigns the Extra to a resort.</td><td>Other resource types, such as transports and hotels, are ignored by the apps.</td></tr><tr><td><strong>Description in customer center</strong></td><td>The first information shown for the excursion.</td><td>Can be set per brand to give different descriptions.</td></tr><tr><td><strong>Photos</strong></td><td>Pictures shown with the excursion.</td><td>Add one or more representative pictures.</td></tr><tr><td><strong>Prices</strong></td><td>One line per age group and period. Shown as <strong>Adult Price</strong> and <strong>Child Price</strong>.</td><td>Prices for Extra Orders are defined on this tab only. The Generic Product Price Rules page is no longer used.</td></tr><tr><td><strong>START TIME</strong> / <strong>END TIME</strong></td><td>Gives the same date different prices during the day, for example a morning and an afternoon departure.</td><td>Defaults are <code>00:00</code> and <code>23:59</code>, which is one price for the whole day. The <strong>S</strong> button splits a price line into two time periods.</td></tr><tr><td><strong>Keep showing in app</strong></td><td>Keeps the excursion listed when allotment is 0 or sold out. No buy button is shown.</td><td>Documented for the Guest App.<br><img src="https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-6ffc67467a0d8187f436565c6fff8781bb4e8c04%2Fimage%20(284).png?alt=media" alt=""></td></tr><tr><td><strong>Automatic billing</strong> (creditor)</td><td>Sets the currency of the sold Extra.</td><td>Without a creditor, the agency currency applies, then the company currency. Create a creditor with the wanted currency and assign it to the Extra.<br><img src="https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-5e2202d873991fe83e1a68fc837862b4d9939c60%2Fimage%20(281).png?alt=media" alt=""></td></tr></tbody></table>
 
 A guest is offered the excursion only on allotment dates within the stay, and only while allotment is left.
 
-{% hint style="danger" %}
-**TO VERIFY** — Is **Keep showing in app** present on the current **Basic setup** tab, and does it apply to the Guide App as well as the Guest App?
-{% endhint %}
-
 **Route pick-up point**
 
-| Field              | Description                                               | Required | Notes        |
-| ------------------ | --------------------------------------------------------- | -------- | ------------ |
-| **Code**           | Code of the pick-up point.                                | Yes      |              |
-| **Description**    | Short description of the pick-up point.                   | Yes      |              |
-| **List name**      | Name of the pick-up point as printed on the export files. | Yes      |              |
-| **Price**          | Not used for this type of route.                          | No       | Leave empty. |
-| **Cost**           | Not used for this type of route.                          | No       | Leave empty. |
-| **Price tag**      | Not used for this type of route.                          | No       | Leave empty. |
-| **Meeting hour**   | The hour when the guests start to gather.                 | Yes      |              |
-| **Departure hour** | The hour when the guests move on with the excursion.      | Yes      |              |
-| **Return hour**    | The hour when the guests finish the excursion.            | Yes      |              |
+<table data-search="false"><thead><tr><th>Field</th><th>Description</th></tr></thead><tbody><tr><td><strong>Code</strong></td><td>Code of the pick-up point.</td></tr><tr><td><strong>Description</strong></td><td>Short description of the pick-up point.</td></tr><tr><td><strong>List name</strong></td><td>Name of the pick-up point as printed on the export files.</td></tr><tr><td><strong>Price</strong></td><td>Not used for this type of route.</td></tr><tr><td><strong>Cost</strong></td><td>Not used for this type of route.</td></tr><tr><td><strong>Price tag</strong></td><td>Not used for this type of route.</td></tr><tr><td><strong>Meeting hour</strong></td><td>The hour when the guests start to gather.</td></tr><tr><td><strong>Departure hour</strong></td><td>The hour when the guests move on with the excursion.</td></tr><tr><td><strong>Return hour</strong></td><td>The hour when the guests finish the excursion.</td></tr></tbody></table>
 
 Of the other tabs on a route, only **Brands** is used for this type of Extra.
 
-{% hint style="danger" %}
-**TO VERIFY** — Which route fields are mandatory? The previous page does not say.
-{% endhint %}
-
 **Guide payment type**
 
-| Field                       | Description                                                                                  | Required | Notes                                                                                                                                         |
-| --------------------------- | -------------------------------------------------------------------------------------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Code**                    | Code of the payment type.                                                                    | Yes      |                                                                                                                                               |
-| **Plaintext**               | Short description of the payment type.                                                       | Yes      |                                                                                                                                               |
-| **Debit/Credit**            | **Debit** is used to buy the excursion (cash in). **Credit** is used for refunds (cash out). | Yes      |                                                                                                                                               |
-| **Guide payment**           | Makes the type available to guides.                                                          | Yes      | Must be ticked, because all excursions are sold through guides. The **Agencies** section is active only when it is ticked.                    |
-| **Active Y/N**              | Sets the type active or inactive.                                                            | Yes      |                                                                                                                                               |
-| **Cash payment**            | Limits the type to cash.                                                                     | No       | If a guide selects Cash and no cash type exists, the system finds no matching payment type and does not complete the order.                   |
-| **Agent Machine Payment**   | Like cash, but the guide enters a transaction code from the payment machine.                 | No       |                                                                                                                                               |
-| **'Pay from home' Payment** | Like cash, but shows as **Paid from home** on the excursion list.                            | No       |                                                                                                                                               |
-| **Is Dankort**              | Limits the type to Dankort cards.                                                            | No       |                                                                                                                                               |
-| **Agencies**                | Assigns brands to the payment type.                                                          | No       | With two payment types on different brands, the system takes the one for the selected agency. With two on the same brand, it takes the first. |
-| **Override agency DIBS**    | On the guide: use the DIBS settings of a chosen agency for all payments by this guide.       | No       | Applies only in the mobile apps. Default uses the agency selected in the app.                                                                 |
+<table data-search="false"><thead><tr><th>Field</th><th>Description</th><th>Notes</th></tr></thead><tbody><tr><td><strong>Code</strong></td><td>Code of the payment type.</td><td></td></tr><tr><td><strong>Plaintext</strong></td><td>Short description of the payment type.</td><td></td></tr><tr><td><strong>Debit/Credit</strong></td><td><strong>Debit</strong> is used to buy the excursion (cash in). <strong>Credit</strong> is used for refunds (cash out).</td><td></td></tr><tr><td><strong>Guide payment</strong></td><td>Makes the type available to guides.</td><td>Must be ticked, because all excursions are sold through guides. The <strong>Agencies</strong> section is active only when it is ticked.</td></tr><tr><td><strong>Active Y/N</strong></td><td>Sets the type active or inactive.</td><td></td></tr><tr><td><strong>Cash payment</strong></td><td>Limits the type to cash.</td><td>If a guide selects Cash and no cash type exists, the system finds no matching payment type and does not complete the order.</td></tr><tr><td><strong>Agent Machine Payment</strong></td><td>Like cash, but the guide enters a transaction code from the payment machine.</td><td></td></tr><tr><td><strong>'Pay from home' Payment</strong></td><td>Like cash, but shows as <strong>Paid from home</strong> on the excursion list.</td><td></td></tr><tr><td><strong>Is Dankort</strong></td><td>Limits the type to Dankort cards.</td><td></td></tr><tr><td><strong>Agencies</strong></td><td>Assigns brands to the payment type.</td><td>With two payment types on different brands, the system takes the one for the selected agency. With two on the same brand, it takes the first.</td></tr><tr><td><strong>Override agency DIBS</strong></td><td>On the guide: use the DIBS settings of a chosen agency for all payments by this guide.</td><td>Applies only in the mobile apps. Default uses the agency selected in the app.</td></tr></tbody></table>
 
 **Recommended setup:** two cash types (one in, one out), two regular credit card types (one in, one out) and two Dankort types (one in, one out).
 
@@ -200,7 +166,8 @@ An order made in the app takes allotment first and stays pending. These orders d
 {% endhint %}
 
 {% hint style="info" %}
-In the **CXL/Error** menu in Tourpaq Office, you see bookings where the service cancelled an Extra Order but the payment was still confirmed. Use it to find and resolve these differences. The status of an order in the app is cleared when the guest travels home.
+In the **CXL/Error** menu in Tourpaq Office, you see bookings where the service cancelled an Extra Order, but the payment was still confirmed. Use it to find and resolve these differences. The status of an order in the app is cleared when the guest travels home.\
+![](https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-a18e48168c1c487ac8ae3ca77fede223f1f60f10%2Fimage%20\(1\)%20\(2\).png?alt=media)
 {% endhint %}
 
 {% hint style="info" %}
@@ -216,4 +183,3 @@ The guide's list is not affected by stop sales hours. A guide sees all available
 * Prices
 * Extra Orders
 * Payment Method
-{% endhint %}
