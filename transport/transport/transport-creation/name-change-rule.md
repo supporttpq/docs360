@@ -19,7 +19,7 @@ You set the restriction separately for two groups:
 
 Both groups share a single deadline, expressed in days before departure.
 
-The company-wide **Disable Name Change** setting in **Setup → System Setup** takes priority over the Name Change Rule for customers. When it is enabled, customers cannot change passenger names in the Customer Center, whatever is configured on the transport. It does not affect Office users.
+The company-wide Disable Name Change setting (Setup → System Setup) overrides the Name Change Rule defined in Transport → Name Change Rules. If name change is disabled at company level, passenger names cannot be changed in Customer Center, even if the Transport allows it.
 
 #### Purpose
 
