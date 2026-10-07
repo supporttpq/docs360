@@ -304,7 +304,7 @@ The setting is found under **Super Administration → Company → Features**. It
 
 The tooltip on the setting reads:
 
-_If checked, the booking will have the transport cost updated based on the load factor on the homebound flight._\
+_If checked, the booking will have the transport cost based on the load factor on the homebound flight._\
 _&#x54;his option is only relevant when Real Transports are used._
 
 | Setting                 | Day after the outbound departure                                                                                                                           | Day after the homebound departure                                                                                                                                     |
