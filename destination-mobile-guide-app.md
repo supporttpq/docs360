@@ -43,13 +43,6 @@ An excursion sold in the Guide App or Guest App is an **Extra Order**: an [Extra
 
 The same Extra can be ordered in these places:
 
-| Where                                                                                        | Who orders                                                                    |
-| -------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| **Guide App**                                                                                | A guide, on behalf of the guest.                                              |
-| **Guest App**                                                                                | The guest.                                                                    |
-| [**Extra Orders**](booking/new-booking/extra-orders.md) tab of the booking in Tourpaq Office | An Administrator or Guide user.                                               |
-| WebBooking (OneHome)                                                                         | The customer, before departure. The order is created through the Booking API. |
-
 | Where                                                                                        | Who orders                                                                                                          |
 | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
 | **Guide App**                                                                                | A guide, on behalf of the guest.                                                                                    |
@@ -104,11 +97,6 @@ An essential aspect of selling an excursion is that even if Tourpaq supports add
 
 In the **Brands** section at the top of the **Overview** tab of the Extra, select an option that includes **Guide sale** for each brand that sells the excursion, then click **Save**.
 
-| Brand assignment                          | Effect on the excursion                                                                                                       |
-| ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| **Guide sale**                            | Orderable as an Extra Order in the Guide App and Guest App.                                                                   |
-| **Guide sale + Internet Sale + For Sale** | Orderable as an Extra Order in the Guide App, Guest App, WebBooking (OneHome) and on the **Extra Orders** tab of the booking. |
-
 | Brand assignment                          | Effect on the excursion                                                                                                                                                        |
 | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Guide sale**                            | Orderable as an Extra Order in the Guide App and Guest App.                                                                                                                    |
@@ -153,11 +141,6 @@ For an Extra Order, the Prices tab can also show **START TIME** and **END TIME**
 **Payment and cancellation**
 
 How an Extra Order is paid depends on when it is ordered.
-
-| Ordered                                          | Payment                                                                                                   | Where the order is visible                                                |
-| ------------------------------------------------ | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| In the Guide App or Guest App at the destination | Paid with the Extra Order, using the guide payment types below.                                           | **Extra Orders** tab, Destination lists, **Booked** tab in the Guide App. |
-| Before departure, in WebBooking (OneHome)        | Added to the booking total and paid with the booking. No payment is registered on the Extra Order itself. | **Extra Orders** tab, Destination lists.                                  |
 
 | Ordered                                          | Payment                                                                                                   | Where the order is visible                                                |
 | ------------------------------------------------ | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
