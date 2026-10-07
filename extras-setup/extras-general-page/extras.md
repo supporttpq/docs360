@@ -10,15 +10,15 @@ Extras are optional services/products that a customer can book; like transfer, c
 
 Assign the Extra to each brand with one of these options:
 
-| Option                                    | Where the Extra can be booked                                                                          |
-| ----------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| **Not assigned**                          | Not available for the brand.                                                                           |
-| **For sale**                              | Tourpaq Office only.                                                                                   |
-| **Internet sale**                         | WebBooking only.                                                                                       |
-| **For sale+Internet sale**                | Tourpaq Office and WebBooking.                                                                         |
-| **Guide sale**                            | As an Extra Order, by a guide or a guest.                                                              |
-| **Hotel sale**                            | By a hotel agent only.                                                                                 |
-| **Guide sale + Internet Sale + For Sale** | As an Extra Order in the Guide App, Guest App, WebBooking and the **Extra Orders** tab of the booking. |
+| Option                                    | Where the Extra can be booked                                                                                                                                      |
+| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Not assigned**                          | Not available for the brand.                                                                                                                                       |
+| **For sale**                              | Tourpaq Office only.                                                                                                                                               |
+| **Internet sale**                         | WebBooking only.                                                                                                                                                   |
+| **For sale+Internet sale**                | Tourpaq Office and WebBooking.                                                                                                                                     |
+| **Guide sale**                            | As an Extra Order, by a guide or a guest.                                                                                                                          |
+| **Hotel sale**                            | By a hotel agent only.                                                                                                                                             |
+| **Guide sale + Internet Sale + For Sale** | As an Extra Order in the Guide App, Guest App and the **Extra Orders** tab of the booking. Web booking requires API support. Reach out to Tourpaq for API support. |
 
 **Extra Orders**
 

@@ -50,13 +50,20 @@ The same Extra can be ordered in these places:
 | [**Extra Orders**](booking/new-booking/extra-orders.md) tab of the booking in Tourpaq Office | An Administrator or Guide user.                                               |
 | WebBooking (OneHome)                                                                         | The customer, before departure. The order is created through the Booking API. |
 
+| Where                                                                                        | Who orders                                                                                                          |
+| -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| **Guide App**                                                                                | A guide, on behalf of the guest.                                                                                    |
+| **Guest App**                                                                                | The guest.                                                                                                          |
+| [**Extra Orders**](booking/new-booking/extra-orders.md) tab of the booking in Tourpaq Office | An Administrator or Guide user.                                                                                     |
+| WebBooking                                                                                   | The customer, before departure. The order is created through the Booking API. Reach out to Tourpaq for API support. |
+
 {% hint style="info" %}
 Extras with **Manual** and **Generic** allotment are sold in the same way in the Guide App and Guest App. The allotment type decides how availability is managed, not whether the excursion can be sold in the apps.
 {% endhint %}
 
 #### Configure an extra
 
-<mark style="background-color:red;">**IMPORTANT NOTE:**</mark> <mark style="background-color:red;">Only guides can add products and make them available in the application.</mark>
+<mark style="background-color:red;">**IMPORTANT NOTE:**</mark> <mark style="background-color:red;">Guides sell Extra Orders in the Guide App. Access to Extra Orders as an administrator requires super-admin rights. Reach out to Tourpaq Support.</mark>
 
 <div data-with-frame="true"><figure><img src=".gitbook/assets/image (279).png" alt="" width="100%"><figcaption></figcaption></figure></div>
 
@@ -102,6 +109,11 @@ In the **Brands** section at the top of the **Overview** tab of the Extra, selec
 | **Guide sale**                            | Orderable as an Extra Order in the Guide App and Guest App.                                                                   |
 | **Guide sale + Internet Sale + For Sale** | Orderable as an Extra Order in the Guide App, Guest App, WebBooking (OneHome) and on the **Extra Orders** tab of the booking. |
 
+| Brand assignment                          | Effect on the excursion                                                                                                                                                        |
+| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Guide sale**                            | Orderable as an Extra Order in the Guide App and Guest App.                                                                                                                    |
+| **Guide sale + Internet Sale + For Sale** | Orderable as an Extra Order in the Guide App, Guest App and on the **Extra Orders** tab of the booking. WebBooking requires API support. Reach out to Tourpaq for API support. |
+
 <div data-with-frame="true"><figure><img src=".gitbook/assets/image (367).png" alt="Brands section with the Bravo Tours dropdown open and Guide sale + Internet Sale + For Sale selected"><figcaption><p>Brand assignment options. Any option that includes Guide sale makes the Extra an Extra Order for that brand.</p></figcaption></figure></div>
 
 #### Generate allotments for the excursion
@@ -146,6 +158,11 @@ How an Extra Order is paid depends on when it is ordered.
 | ------------------------------------------------ | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
 | In the Guide App or Guest App at the destination | Paid with the Extra Order, using the guide payment types below.                                           | **Extra Orders** tab, Destination lists, **Booked** tab in the Guide App. |
 | Before departure, in WebBooking (OneHome)        | Added to the booking total and paid with the booking. No payment is registered on the Extra Order itself. | **Extra Orders** tab, Destination lists.                                  |
+
+| Ordered                                          | Payment                                                                                                   | Where the order is visible                                                |
+| ------------------------------------------------ | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| In the Guide App or Guest App at the destination | Paid with the Extra Order, using the guide payment types below.                                           | **Extra Orders** tab, Destination lists, **Booked** tab in the Guide App. |
+| Before departure, in WebBooking                  | Added to the booking total and paid with the booking. No payment is registered on the Extra Order itself. | **Extra Orders** tab, Destination lists.                                  |
 
 When an Extra is cancelled, what happens depends on the payment flow:
 
@@ -245,25 +262,39 @@ After setting the excursion up, we can proceed to the next stage: the one of boo
 
 #### Choose an excursion from the list
 
-<div data-with-frame="true"><figure><img src=".gitbook/assets/image (190).png" alt="" width="100%"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/guide-app-extras-list.png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 #### View excursion details
 
-<div data-with-frame="true"><figure><img src=".gitbook/assets/11-525720509f53db66d4be8db089be1662.png" alt="" width="100%"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/guide-app-excursion-details.png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 #### Configure excursion details for the shopping cart
 
-<div data-with-frame="true"><figure><img src="https://docs.tourpaq.com/assets/images/22-681f42ba0ae483955f992620f44cdda0.png" alt="" width="100%"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/guide-app-add-to-cart.png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 #### Select a payment type and complete checkout
 
-<div data-with-frame="true"><figure><img src=".gitbook/assets/image (191).png" alt="" width="100%"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/guide-app-cart-checkout.png" alt="" width="375"><figcaption></figcaption></figure></div>
+
+
+
+#### **Take payment in local currency (currency converter)**
+
+Excursion prices are always shown in the brand currency, and the Extra Order is always registered in the brand currency. When a guest at the destination wants to pay cash in the local currency, use the currency converter on the Cart Checkout screen to see the amount to collect in that currency.
+
+1. On the Cart Checkout screen, tap Currency in the top-right corner.
+2. Select the currency the guest pays in. Total to pay is shown converted to that currency.
+3. Collect the converted amount from the guest and tap Checkout.
+
+The conversion only changes the amount the guide collects. The price of the Extra Order, the booking and the Guide Sales Ledger stay in the brand currency.
 
 **IMPORTANT:** The Mobile Application also gives the possibility to cancel an existing order. In order to do this, the user has to click on the **Booked** tab in the **Extras** screen and tap on the existing order. In here, he can also decide whether he will refund the money back to the customer. In order to make the refund possible, a Credit method of payment assigned to this specific guide is required! (see pictures below)
 
-<div data-with-frame="true"><figure><img src=".gitbook/assets/image (192).png" alt="" width="100%"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/guide-app-booked-extras.png" alt="" width="375"><figcaption></figcaption></figure></div>
 
-<div data-with-frame="true"><figure><img src="https://docs.tourpaq.com/assets/images/55-f4fe0b97ccc6779a3e8784668d4048d4.png" alt="" width="100%"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/guide-app-cancel-extras.png" alt="" width="375"><figcaption></figcaption></figure></div>
+
+<div><figure><img src=".gitbook/assets/guide-app-cancel-confirm.png" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/guide-app-order-canceled.png" alt=""><figcaption></figcaption></figure></div>
 
 **Note:** When ordering excursions from Guide App or Guest App the workflow is as follows: Allotment is taken but order is pending status (these orders do not appear in the system).
 

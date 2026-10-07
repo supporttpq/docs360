@@ -1,8 +1,8 @@
 ---
 description: >-
-  Manage extra orders in Tourpaq Office bookings. Review post-booking add-ons
-  like excursions, check payment confirmation, open order details, and handle
-  refunds. Includes linked service cases.
+  See and order every Extra Order on a booking, such as excursions, wherever it
+  was ordered. Check payment, open order details, handle refunds and review
+  service cases.
 ---
 
 # Extra Orders
@@ -11,11 +11,11 @@ description: >-
 
 ### **Overview**
 
-The **Extra Orders** tab in **Tourpaq Office** shows **post-booking add-ons** and transactions connected to a booking (for example excursions, upgrades, and extra services). The same view also includes **Service Cases**, where you can review support cases linked to the booking.
+The **Extra Orders** tab in **Tourpaq Office** shows every Extra Order connected to a booking, for example excursions, no matter when or where it was ordered: before departure through WebBooking (paid with the booking), at the destination in the Guide App or Guest App, or from this tab with Book. The same view also includes **Service Cases**, where you can review support cases linked to the booking.
 
 Use this page when you need to:
 
-* Review what additional services were purchased after the booking was created.
+* Review which Extra Orders the booking has, both those ordered before departure and those ordered at the destination.
 * Check payment references and confirmation status.
 * Open order details and handle refunds.
 * See related service cases raised for the same booking.
