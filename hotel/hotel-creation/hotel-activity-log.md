@@ -155,14 +155,14 @@ The system log changes for the following photo properties made in the [Hotel -> 
 * Order ID - shows the position of the photo
 * File Name - unique name of the inserted photo in the system
 * Hotel ID - hotel id
-* Original File Name - name of the photo&#x20;
+* Original File Name - name of the photo
 * Insert Date - date when the photo was uploaded
 
 {% hint style="info" %}
 All changes recorded in the Activity Log will also be available in the **Internal Logs** menu, under **Setup → Internal Logs → Hotel Photo**.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

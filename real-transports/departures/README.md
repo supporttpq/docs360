@@ -28,7 +28,7 @@ Make sure these are in place:
 
 ### Page layout
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17)" alt=""><figcaption></figcaption></figure>
 
 #### Filters and tools
 
@@ -44,7 +44,7 @@ Use these filters at the top of the page:
 #### Buttons and actions
 
 * **Create** – Opens a new line to create a departure manually.
-* **Send Flight Change** – Sends updated flight details to connected systems. It also saves your edits.&#x20;
+* **Send Flight Change** – Sends updated flight details to connected systems. It also saves your edits.
 
 {% hint style="info" %}
 When a flight change is submitted, a **notification email** is sent to the guest.
@@ -57,10 +57,10 @@ If the guest **does not confirm receipt**, the system will folow the settings ma
 * **Second resend**
 * Then, **send an SMS reminder** asking the guest to check their email and confirm the change.
 
-Example: if there is a departure in 20 days, and there is a flight change, in the system setup you can set when to resend the flight change email:&#x20;
+Example: if there is a departure in 20 days, and there is a flight change, in the system setup you can set when to resend the flight change email:
 
-* First resend - 10 days before departure,&#x20;
-* Second resend - 5 days before departure and&#x20;
+* First resend - 10 days before departure,
+* Second resend - 5 days before departure and
 * SMS sending - 1 day before departure.
 
 Within the system, it is easy to identify guests who **have not yet confirmed** receipt.
@@ -214,7 +214,7 @@ There are **two methods for calculating the passenger cost**, depending on wheth
 1. **Before departure**\
    The passenger cost is calculated based on the expected **Load Factor**. This provides an estimated cost per passenger based on the expected number of seats to be sold. The result is therefore an **approximate cost**, based on projected sales.
 2. **After departure**\
-   Once the flight has departed, the passenger cost is recalculated using the **actual number of seats sold**. The total flight cost is divided by the actual number of passengers booked. This represents the **actual passenger cost for the flight** and is no longer based on the expected Load Factor or sales projections.
+   The day after the flight has departed, the passenger cost is recalculated using the **actual number of seats sold**. The total flight cost is divided by the actual number of passengers booked. This represents the **actual passenger cost for the flight** and is no longer based on the expected Load Factor or sales projections. For when this cost is applied to the booking, see **Cost update on bookings after departure**.
 
 ***
 
@@ -236,9 +236,9 @@ Assume:
 
 The estimated passenger cost is:
 
-**223,242.00 ÷ 157 = 1,422.56**
+**223,242.00 ÷ 157 = 1,421.92**
 
-Therefore, before departure, the estimated passenger cost is approximately **1,422.56 per passenger**.
+Therefore, before departure, the estimated passenger cost is approximately **1,421.92 per passenger**.
 
 This is an **estimated cost**, because it is based on the expected Load Factor and the number of passengers expected to be sold.
 
@@ -266,7 +266,7 @@ Therefore, after departure, the actual passenger cost is **1,305.51 per passenge
 | Calculation basis          | Expected Load Factor | Actual passengers booked |
 | Expected/actual passengers |                  157 |                      171 |
 | Total flight cost          |           223,242.00 |               223,242.00 |
-| Passenger cost             |             1,422.56 |                 1,305.51 |
+| Passenger cost             |             1,421.92 |                 1,305.51 |
 | Cost type                  |            Estimated |                   Actual |
 
 The key difference is that **before departure, the calculation uses projected sales based on the Load Factor, while after departure, it uses the actual number of passengers booked**. Therefore, the post-departure calculation represents the actual cost per passenger for the flight.
@@ -289,3 +289,38 @@ The **30-minute interval is configurable per company**.
 The total time required to complete the recalculation depends on the number of records that need to be processed. A large number of affected **Pricelists and Bookings** can increase the time required for the service to complete the update.
 
 Therefore, the cost update on a booking may not be immediate. The booking is updated when the background recalculation service processes the affected records.
+
+### Cost update on bookings after departure
+
+For bookings that use a **Real Transport**, Tourpaq can update the transport cost on the booking automatically after departure. The cost is calculated separately for the outbound and homebound legs.
+
+The day after the outbound departure date, Tourpaq updates the booking with the actual cost of the outbound leg and the estimated cost (based on the expected Load Factor) of the homebound leg. Whether the booking is updated again after the homebound flight depends on the **Update cost on bookings after the homebound flight** setting.
+
+#### Update cost on bookings after the homebound flight
+
+The setting is found under **Super Administration → Company → Features**. It is unchecked by default and is only relevant for transports that use Real Transports.
+
+<figure><img src="../../.gitbook/assets/28.09.2026_14.42.57_REC.png" alt=""><figcaption></figcaption></figure>
+
+The tooltip on the setting reads:
+
+_If checked, the booking will have the transport cost based on the load factor on the homebound flight._\
+_&#x54;his option is only relevant when Real Transports are used._
+
+| Setting                 | Day after the outbound departure                                                                                                                           | Day after the homebound departure                                                                                                                                     |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Unchecked** (default) | The booking is updated with the **actual cost** for the outbound leg and the **estimated cost** (based on the expected Load Factor) for the homebound leg. | No update. The homebound leg keeps the estimated cost (based on the expected Load Factor). No recalculation is done based on the actual load of the homebound flight. |
+| **Checked**             | The booking is updated with the **actual cost** for the outbound leg and the **estimated cost** (based on the expected Load Factor) for the homebound leg. | The homebound leg is updated to the **actual cost**, based on the actual load of the homebound flight.                                                                |
+
+Regardless of the setting, the day after the outbound departure the booking is updated with the actual cost for the outbound leg and the estimated cost (based on the expected Load Factor) for the homebound leg.
+
+If the setting is unchecked, the homebound leg is not recalculated after departure. The homebound cost on the booking stays based on the expected Load Factor, also after the homebound flight. If the setting is checked, the homebound leg is updated to the actual cost one day after the homebound departure.
+
+#### Example: cost update after departure
+
+A booking travels out on 23 July and home on 30 July.
+
+| Date                              | Setting unchecked                                 | Setting checked                                             |
+| --------------------------------- | ------------------------------------------------- | ----------------------------------------------------------- |
+| **24 July** (day after outbound)  | Outbound: actual cost. Homebound: estimated cost. | Outbound: actual cost. Homebound: estimated cost.           |
+| **31 July** (day after homebound) | No update. Homebound stays at the estimated cost. | Homebound: updated to the actual cost. Outbound: unchanged. |

@@ -92,7 +92,7 @@ If the number of passengers exceeds the page limit, the list continues on the ne
 
 ## Passenger List (Continuation)
 
-<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 ### Passenger List
 
@@ -152,6 +152,43 @@ For cancelled passengers:
 * Number of nights
 * Check-in date
 * Check-out date
+
+***
+
+### Combi Hotel
+
+**A Combi Hotel** combines an accommodation stay with a package in a single hotel product. Internally, the booking is built from several **child hotels**:
+
+* One or more child hotels represent the accommodation the guest actually stays in.
+* A child hotel flagged as a **Transport hotel**, with its room set to **Fictive**, represents the safari days. It exists to hold those dates in the booking and does not represent a real room.
+
+<figure><img src="../../../.gitbook/assets/16.09.2026_12.54.23_REC.png" alt=""><figcaption></figcaption></figure>
+
+#### **How it is displayed**
+
+The e-ticket only shows real accommodation:
+
+* A child hotel that is a **Transport hotel** with a **Fictive** room is never shown on the e-ticket.
+* When the accommodation hotel is booked for two separate periods, each period is shown as its own entry. Hotel name, destination, room type, board type, number of nights, check-in date and check-out date are all repeated for the second period rather than merged with the first.
+
+<figure><img src="../../../.gitbook/assets/16.09.2026_12.59.55_REC.png" alt=""><figcaption></figcaption></figure>
+
+**Example**
+
+A booking with stays at the same hotel before and after the safari. The e-ticket shows two accommodation entries for that hotel — one per stay period — with the safari days in between not listed as accommodation:
+
+| Room type                                              | Board                                                      | Nights | Check-in   | Check-out  |
+| ------------------------------------------------------ | ---------------------------------------------------------- | ------ | ---------- | ---------- |
+| `Dobbeltværelse med havudsigt` (double room, sea view) | `Pension iflg. program` (board according to the itinerary) | 3      | 12-01-2027 | 15-01-2027 |
+| `Club værelse` (club room)                             | `Pension iflg. program` (board according to the itinerary) | 9      | 17-01-2027 | 26-01-2027 |
+
+When using a Combi Hotel with two check-in/check-out dates in the same room: In the booking used for this example, the two periods use different room types (double room, sea view/club room) at the same hotel, not the same room.
+
+{% hint style="info" %}
+**A Transport Hotel with a Fictive room:** When a Combi Hotel includes a child hotel configured as a **Transport Hotel** with a **Fictive** room, no information for this child hotel is displayed on the e-ticket.
+
+**Multiple check-in/check-out periods:** If a Combi Hotel has multiple check-in/check-out periods for the same hotel and room combination, each period is displayed separately on the e-ticket. The same hotel/room combination is therefore shown as a separate entry for each period.
+{% endhint %}
 
 ***
 
@@ -225,7 +262,7 @@ Payment due dates and payment status indicators are dynamically displayed based 
 
 ## Price Specification (Passengers 1–3) Section
 
-<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 ### Price Breakdown per Passenger
 
@@ -280,7 +317,7 @@ If a cancellation fee exists, an additional line is displayed before **Total kr.
 
 ## Price Specification (Summary & Remaining Passengers) Section
 
-<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 ### Included in Base Price
 
@@ -310,7 +347,7 @@ Same structure as previous page:
 
 ## Hotel Information Section (Part 1)
 
-<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 ### Hotel Details
 
@@ -416,8 +453,6 @@ When **Show room info** is enabled from the Brand:
 
     * **Hotel → Room Types**
     * The description available behind the **PLUS (+)** icon next to the Room Code/Description
-
-
 
     <div data-with-frame="true"><figure><img src="../../../.gitbook/assets/14.05.2026_17.03.43_REC.png" alt=""><figcaption></figcaption></figure></div>
 * If a **Brand Description** exists, it is used

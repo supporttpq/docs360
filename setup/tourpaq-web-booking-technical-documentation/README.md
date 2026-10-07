@@ -1,7 +1,3 @@
----
-noIndex: true
----
-
 # Tourpaq Web Booking - Technical documentation
 
 ### Overview
@@ -34,7 +30,7 @@ Staging is usually a copy of live data. It can be up to 2–3 weeks behind and m
 
 Example URL:
 
-`https://primotours.webbooking.tourpaq.com/DoBooking.aspx?pltaID=84042&p=1&rno=3&pt=2&a=6&c=1&aa=14&ca=3&f=1&fd=12&ft=1`
+`https://[agencyBrandName].webbooking.tourpaq.com/DoBooking.aspx?pltaID=84042&p=1&rno=3&pt=2&a=6&c=1&aa=14&ca=3&f=1&fd=12&ft=1`
 
 | Name        | Meaning                                                                                        | Accepted values (required unless stated otherwise)                                                                                                                                                     |
 | ----------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -59,7 +55,7 @@ Some setups support booking more than one room type in the same booking. In that
 
 Example:
 
-`https://primotours.webbooking.tourpaq.com/DoBooking.aspx?pltaID=84042,84572&p=1&rno=3,1&pt=2,1&a=6,2&c=1,1&aa=14&ca=3,7&f=1&fd=12&ft=1`
+`https://[agencyBrandName].webbooking.tourpaq.com/DoBooking.aspx?pltaID=84042,84572&p=1&rno=3,1&pt=2,1&a=6,2&c=1,1&aa=14&ca=3,7&f=1&fd=12&ft=1`
 
 ### Children ages per room (using `|`)
 
@@ -91,7 +87,7 @@ In Faster Web Booking, a detailed warning is shown on screen when something is w
 
 In older setups, a validation error could redirect to a page like:
 
-`http://primotours.webbooking.tourpaq.com/Error.aspx?e=0&salg=0`
+`http://[agencyBrandName].webbooking.tourpaq.com/Error.aspx?e=0&salg=0`
 
 | Name     | Meaning                              | Possible values                      |
 | -------- | ------------------------------------ | ------------------------------------ |
@@ -99,63 +95,5 @@ In older setups, a validation error could redirect to a page like:
 | **salg** | Shows extra details when set to `1`. | `0` (default) or `1` (more details). |
 
 If you need support, include the full Error URL and the parameters you used.
-
-</details>
-
-### FAQ
-
-<details>
-
-<summary><strong>What is the easiest way to build a correct Web Booking link?</strong></summary>
-
-Start from a working example for the same brand/agency.
-
-Change only one thing at a time (for example `pltaID`).
-
-</details>
-
-<details>
-
-<summary><strong>Why is a booking link rejected?</strong></summary>
-
-Common reasons:
-
-* The departure date is in the past.
-* The departure is too close to travel date (minimum limit).
-* Passenger count does not fit the room(s).
-* `c` and `ca` don’t match (number of children and child ages).
-* The selected trip ID does not belong to the current brand/agency.
-
-</details>
-
-<details>
-
-<summary><strong>How should I format multiple room types?</strong></summary>
-
-Use comma-separated values for the parameters that relate to each room type.
-
-Keep the same number of values across those parameters.
-
-</details>
-
-<details>
-
-<summary><strong>How do I split children ages per room?</strong></summary>
-
-Use `|` (pipe) inside `ca`.
-
-Each side of the pipe represents one room.
-
-</details>
-
-<details>
-
-<summary><strong>What should I send to support if something fails?</strong></summary>
-
-Send:
-
-* the full URL you used
-* whether you tested on live or staging
-* screenshots of the message shown to the customer
 
 </details>

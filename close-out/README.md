@@ -1,92 +1,135 @@
+---
+description: >-
+  Find, edit and delete Close Out rules that block hotel sales for selected
+  dates, brands, arrivals, transports, destinations, resorts and hotels.
+---
+
 # Close Out
+
+**Applies to:** Tourpaq Office · **Available from:** Tourpaq v15.5 · **Last reviewed:** 2026-09-25
+
+Close Out is the tour operator's own tool for stopping sales during daily office work — for example, while a hotel contract is still being negotiated, or when a charter flight to one airport is full. When the hotel itself asks you to stop selling rooms, use [Stop Sales](../stop-sales.md) instead.
 
 ### Overview
 
-**Close Out** restricts availability for selected transports, destinations, resorts, hotels, and room types within a date range.
+A **Close Out** rule blocks new bookings for the hotels and room types it matches, on the arrival dates it covers. Tourpaq does this by setting **Free Hotel Allotment (FHA)** to `0` in the matching price lists.
 
-When a Close Out rule is enabled, the system sets **Free Hotel Allotment (FHA)** to `0` for the matching hotels/rooms. This blocks new bookings for those combinations.
+A rule is always limited by dates, and can be narrowed further by:
+
+* **Brand** — only the selected [brands](../brands/) are closed.
+* **Arrival** — only packages arriving at the selected [arrival gateway](../setup/arrival-gateways/) are closed.
+* **Transport type**, **Transport**, **Destination**, **Resort**, **Hotel** and **Room Type**.
+
+The **Close Out** screen lists all rules. You filter the list, edit rules directly in the table, and delete rules you no longer need. New rules are created on a separate page — see [Create a Close Out rule](create-edit-rule.md).
+
+{% hint style="warning" %}
+A Close Out blocks **arrivals** on the dates in the rule. It does not block bookings that arrive earlier and stay over those dates. A Close Out on Monday `12-10-2026` does not prevent a 14-day booking arriving on `05-10-2026`.
+{% endhint %}
 
 ### Purpose
 
-This feature is used by **travel coordinators, back-office staff, and product managers** to:
+Use the Close Out screen to:
 
-* Define and review **Close Out rules** that affect sales and availability.
-* Filter and identify rules by date range, transport, destination, hotel, or room type.
-* Confirm when and by whom rules were created.
-* Enable/disable rules, or adjust them when needed.
+* Stop sales for part of your programme as part of daily operations — one brand, one arrival airport, one destination or a list of hotels.
+* Correct a rule after it is created — dates, brands, arrival, transports, destinations, resorts, hotels or note.
+* Remove a rule completely when the reason for it is gone, for example when a hotel contract is signed.
 
 ### Preconditions
 
-* The user must have access rights to the **Hotel → Close Out** menu.
-* Create rules carefully. They can block sales across many products.
-* The relevant transport/hotel/room types must exist in the system.
+* Your user has access to **Hotel → Close Out** — see [Users](../users/users/).
+* The brands, arrival gateways, transports and hotels you want to filter by or close already exist.
+* You know whether the stop comes from your own operation (use Close Out) or from the hotel (use [Stop Sales](../stop-sales.md)).
 
-### Step-by-step
+### How-to
 
-#### Step 1: Open Close Out
+{% stepper %}
+{% step %}
+**Find a rule**
 
-* Navigate to the **Hotel menu**.
-* Select **Close Out** (below **Stop Sales**).
+1. Go to **Hotel → Close Out**.
+2. Set **Start date** and **End date**.
+3. Optionally select a **Brand**, an **Arrival** or a **Transport Type**.
+4. To filter by transport, destination, resort, hotel or room type, click **+ More filters** and click **Edit** above the filter you need.
+5. Click **Display**.
 
-#### Step 2: Understand what you see
+To sort the list, click the **FROM DATE** or **TO DATE** column header. Click **Clear** to reset all filters.
+{% endstep %}
 
-The list shows existing rules.
+{% step %}
+**Edit a rule**
 
-Each rule has an **Edit** action.
+1. Change the values directly in the row. All rows are open for editing.
+2. To change a note, click the **NOTE** cell. Edit the text in the **Edit Note** window and click **Save** in that window.
+3. Click **Save** at the bottom of the screen to store all changes. Click **Cancel** to discard them.
 
-Rules are created on **company level** (not per brand).
+Tourpaq updates the affected price lists for the changed part of the rule only. If you extend a rule by a week, only that extra week is recalculated.
+{% endstep %}
 
-#### Step 3: Filter the list
+{% step %}
+**Delete a rule**
 
-<figure><img src="../.gitbook/assets/image (11) (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
+1. Click the bin icon at the end of the row.
+2. In **Delete Close Out**, click **Delete** to confirm, or **Cancel** to keep the rule.
 
-Fill in filters, then click **Display**.
+When a rule is deleted, Tourpaq recalculates FHA on the affected price lists from the current hotel setup. Any other Close Out rule or stop sale that still covers the same dates stays in force.
+{% endstep %}
+{% endstepper %}
 
-Common filters:
+The list shows the rules that match your filters. Changes reach the price lists in the background, so allow a few minutes before you check availability.
 
-* **Start date** (default today)
-* **End date** (default one year ahead)
-* **Transport type** (multi-select)
-* **Transports** (multi-select)
-  * Options include _Select all_, _Show hidden_, and _Show code_.
-* **Destination** (multi-select)
-* **Resort** (multi-select)
-* **Hotel** (multi-select)
-* **Room type** (multi-select)
+{% hint style="warning" %}
+**Edit** and **Delete** change availability for every price list the rule matches — for a rule on a whole destination this can be many thousands of price lists. Deleting a rule cannot be undone: to restore it, create it again.
+{% endhint %}
 
-#### Step 4: Results table columns
+### Field Reference
 
-| **Field/Option**          | **Description**                                                            |
-| ------------------------- | -------------------------------------------------------------------------- |
-| **Start Date / End Date** | Date interval for rule validity (departure date range).                    |
-| **Transport Type**        | Filters rules by type of transport (e.g., charter, dynamic).               |
-| **Transports**            | Specific transports where the rule applies.                                |
-| **Destination**           | Destination filter.                                                        |
-| **Resorts**               | Resort filter.                                                             |
-| **Hotels**                | Hotel filter.                                                              |
-| **Room Type**             | Room type filter.                                                          |
-| **Note**                  | Additional description set on the rule (truncated, full text on hover).    |
-| **Enabled**               | Shows whether the rule is active.                                          |
-| **Created / Created By**  | Date, time, and user who created the rule. Username links to user details. |
-| **Display Button**        | Executes the filter search.                                                |
-| **Clear Button**          | Removes all applied filters and reloads full list.                         |
-| **Pagination**            | Navigates results (25 rules per page by default).                          |
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/02.10.2026_09.20.37_REC.png" alt="Close Out list with the filter bar above the table, rules sorted by FROM DATE, editable dropdowns in every row and a bin icon at the end of each row"><figcaption><p>The Close Out list under Hotel → Close Out.</p></figcaption></figure></div>
 
-#### Step 5: Sort and paginate (optional)
+#### Filters
 
-* Navigate through multiple pages using **pagination**.
-* Sort results by **Start Date** or **End Date** (ascending/descending).
+| Field              | Description                                                                                    | Notes                                                                                                                                                                                               |
+| ------------------ | ---------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Start date**     | First date of the period you want to see rules for.                                            | Defaults to today.                                                                                                                                                                                  |
+| **End date**       | Last date of the period you want to see rules for.                                             | Defaults to one year from today.                                                                                                                                                                    |
+| **Brand**          | Shows only rules that close sales for the selected brand.                                      | Default `All Brands`. Rules that apply to all brands are also shown, because they affect the selected brand too.                                                                                    |
+| **Arrival**        | Shows only rules that are limited to the selected arrival gateway.                             | Default `All Arrivals`. Rules set to **All Arrivals** are **not** shown when you pick an arrival. Arrivals are listed as `CODE - Name`, in alphabetical order, for example `CHQ - Chania Lufthavn`. |
+| **Transport Type** | Shows only rules for the selected type of transport.                                           | Default `All transport types`.                                                                                                                                                                      |
+| **+ More filters** | Opens the **Transports**, **Destinations**, **Resorts**, **Hotels** and **Room Type** filters. | Click **Edit** above a filter to choose values. Click **- More filters** to hide them again.                                                                                                        |
+| **Display**        | Runs the search with the current filters.                                                      |                                                                                                                                                                                                     |
+| **Clear**          | Resets all filters to their defaults.                                                          |                                                                                                                                                                                                     |
+| **Create**         | Opens **New Close Out**.                                                                       | See [Create a Close Out rule](create-edit-rule.md).                                                                                                                                                 |
 
-#### Step 6: Clear filters
+#### Table
 
-* Click **Clear** to reset all filter inputs.
+The list shows 25 rules per page by default. Change this in the page-size selector next to the page numbers.
 
-### Notes
+{% hint style="info" %}
+Close Out rules have no **Enabled** setting. A rule is active from the moment it is saved until it is deleted. To stop a rule, delete it.
+{% endhint %}
 
-* Filtering by **brand** is not available. Close Outs are created on company level.
-* Changes can take up to \~2 minutes to reach price lists.
+{% hint style="info" %}
+Tourpaq processes each change to a rule as a background job. If you change a rule again while the previous change is still waiting to be processed, Tourpaq shows a warning. Wait a few minutes for the first change to finish, then make the next one.
+{% endhint %}
 
-### Related tasks
+#### **Processing and status**
 
-* [Create / Edit rule](create-edit-rule.md)
-* [Enable / Disable rule](enable-disable-rule.md)
+The service runs every two minutes and adds all new changes to a processing queue. Changes are processed one by one, in the order they were added.
+
+While a creation or change is being processed, the affected row is highlighted in **red**. The row remains highlighted until the processing is completed.
+
+The two-minute interval refers to how often the service checks for and picks up new changes, not to the total processing time. The actual completion time depends on the size and complexity of the changes and the number of tasks already waiting in the queue. Small changes may be completed within a few minutes, while larger jobs or jobs waiting behind other tasks can take **30 minutes or more**.
+
+#### Close Out in the price list
+
+In **Price List → Price list**, a line whose package is blocked by an active Close Out shows a yellow warning icon right after the lightning icon. The icon's tooltip reads:
+
+_"The room type has sales blocked due to an active Close Out"_
+
+### Related pages
+
+* [Create a Close Out rule](create-edit-rule.md)
+* [Stop Sales](../stop-sales.md)
+* [Price List](../price-list/pricelist.md)
+* [Brands](../brands/)
+* [Arrival Gateways](../setup/arrival-gateways/)
+* [Glossary](../integration/glossary.md)

@@ -108,8 +108,8 @@ When a booking is modified:
 | Field       | Required | Description              | Example               |
 | ----------- | -------- | ------------------------ | --------------------- |
 | Office      | Yes      | Handling office code     | `PMI`                 |
-| Distributor | Yes      | Distributor code         | `XXXX`                |
-| Brand       | No       | Brand code               | `MTS`                 |
+| Distributor | Yes      | Distributor code         | `TPQ`                 |
+| Brand       | Yes      | Brand code               | Tourpaq DK            |
 | Reference   | Yes      | Unique booking reference | `INH19BZ4VQC`         |
 | Pax Name    | Yes      | Lead passenger           | `KOLEN, ROSA JOHANNA` |
 
@@ -120,19 +120,13 @@ When a booking is modified:
 | Field             | Required | Description                            |
 | ----------------- | -------- | -------------------------------------- |
 | ADT               | Yes      | Number of adults                       |
-| Additional Adults | No       | Additional adult names separated by \` |
+| Additional Adults | Yes      | Additional adult names separated by \` |
 | Adult\_Ages       | No       | Adult ages separated by `,`            |
-| CHD               | No       | Number of children                     |
-| CHD Ages          | No       | Child ages separated by `,`            |
-| Child Names       | No       | Child names separated by \`            |
-| INF               | No       | Number of infants                      |
+| CHD               | Yes      | Number of children                     |
+| CHD Ages          | Yes      | Child ages separated by `,`            |
+| Child Names       | Yes      | Child names separated by \`            |
+| INF               | Yes      | Number of infants                      |
 | Infant Names      | No       | Infant names separated by \`           |
-
-#### Example
-
-```
-"KOLEN, ROSITA JOHANNES | KOLEN, JUAN CARLES"
-```
 
 ***
 

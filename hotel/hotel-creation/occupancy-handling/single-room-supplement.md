@@ -1,12 +1,24 @@
+---
+description: >-
+  Add a fixed or percentage extra charge for single occupancy, limited by age,
+  dates, and room type, and priced in Creditor Currency, or Company Currency if
+  none is set.
+---
+
 # Single Room Supplement
 
 ### Overview
 
 A **single room supplement** is an extra charge when one guest uses a room meant for two or more guests (for example, a double room).
 
-In Tourpaq, this uses the standard supplement code `SINGLE`.
+In Tourpaq, this uses the standard supplement code `SINGLE`.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (181).png" alt=""><figcaption></figcaption></figure>
+When you add the first rule for a hotel, Tourpaq auto-create missing data:
+
+* A supplement category named `single-room` with code `SINGLE`.
+* A supplement with code `SINGLE` named **Single room supplement (automatically added)**.
+
+<figure><img src="../../../.gitbook/assets/single-room-supplement.png" alt="Single Room Supplement grid on a hotel&#x27;s Occupancy tab, listing rules by From Age, To Age, Start Date, End Date, Supplement Code, Price, Percent, and Room Type"><figcaption></figcaption></figure>
 
 ### Purpose
 
@@ -14,21 +26,21 @@ In Tourpaq, this uses the standard supplement code `SINGLE`.
 * Limit when it applies (dates, ages, room types).
 * Support both fixed amounts and percentages.
 
-### Where to find it
-
-Go to **Hotel → Single Room Supplement**.
-
 ### Preconditions
 
 *   A supplement with code **SINGLE** exists.
 
     <figure><img src="../../../.gitbook/assets/image (546).png" alt=""><figcaption></figcaption></figure>
-*   The **SINGLE** supplement is set **For sale**.
+*   The **SINGLE** supplement is set **For sale** on the active Brand
 
     <figure><img src="../../../.gitbook/assets/image (547).png" alt=""><figcaption></figcaption></figure>
-*   The rule in **Hotel → Single Room Supplement** matches the booking.
+*   The rule in **Hotel →** The supplement does not require a price rule because the values of the single room supplement are calculated under the hotel
 
     <figure><img src="../../../.gitbook/assets/image (548).png" alt=""><figcaption></figcaption></figure>
+
+### Where to find it
+
+Go to **Hotel → Single Room Supplement**.
 
 ### How it works
 
@@ -39,24 +51,54 @@ When a room type is booked for **one guest**, Tourpaq applies the rule below (if
 
 <figure><img src="../../../.gitbook/assets/image (181) (1).png" alt=""><figcaption></figcaption></figure>
 
-When you add the first rule for a hotel, Tourpaq can auto-create missing data:
-
-* A supplement category named `single-room` with code `SINGLE`.
-* A supplement with code `SINGLE` named **Single room supplement (automatically added)**.
-
 ### Field reference
 
-* **Actions**: Edit an existing rule.
-* **From Age**: Minimum guest age for the rule.
-* **To Age**: Maximum guest age for the rule.
-* **Start Date**: First date the rule can apply.
-* **End Date**: Last date the rule can apply.
-* **Supplement Code**: The supplement to apply (typically `SINGLE`).
-* **Price**: Fixed amount to add.
-* **Percent**: Apply **Price** as a percentage instead of a fixed amount.
-* **PD**: Per day. Apply the value per day instead of per interval.
-* **Hotel Room**: The room type the rule targets.
-* **Period**: Limits the rule to a specific hotel period (if used).
+* **From Age**: The minimum age at which the Room Supplement is added.
+* **To Age**: The maximum age at which the room supplement is added.
+* **Start Date**: The start period (from/to) where the room supplement rule is active.
+* **End Date**: The start period (from/to) where the room supplement rule is active.
+* **Price:** The supplement amount for the rule.
+* **Percent**: If checked, Price is a percentage on top of the Single Cost instead of a fixed amount.
+* **Room Type:** The room type where this rule is applicable.
+
+{% hint style="info" %}
+Tourpaq selects the matching Single Room Supplement rule once, using the guest's arrival date (the first night of the stay), age, and room type.
+
+* When Percent is off, Tourpaq takes Price as a fixed amount in Creditor Currency (or Company Currency if the hotel has no creditor configured), multiplies it by the stay interval (nights), and the system converts the total to the booking's sale currency; this amount does not change even if the Single Cost changes during the stay.
+* When Percent is on, Tourpaq calculates the percentage on top of the applicable Single Cost for each night of the stay and sums the result across the stay; no currency conversion applies. The calculation formula is: **Single Price from Room Cost \* Single Room Supplement price + Single Price for Room Cost**
+{% endhint %}
+
+{% hint style="warning" %}
+Changing a Single Room Supplement rule does not change the price on existing bookings. The new rule applies only to bookings created after the change.
+{% endhint %}
+
+### Examples
+
+1\. **Single room supplement:** percent = false, use the price as a fixed amount multiplies it by the stay interval (nights), and the system converts the total to the booking's sale currency;
+
+**Calculation: (Single Room Supplement Price \* Stay Interval) \* Currency Converter**
+
+2. **Single Room Supplement:** percent = true
+
+**Calculation**: Single Price from Room Cost \* Single Room Supplement percentage value+ Single Price for Room Cost
+
+The Single Room Supplement can be visible in:
+
+<figure><img src="../../../.gitbook/assets/23.09.2026_16.45.57_REC.png" alt=""><figcaption></figcaption></figure>
+
+*   Booking Office Passenger discount/supplement&#x20;
+
+    <figure><img src="../../../.gitbook/assets/23.09.2026_16.47.37_REC.png" alt=""><figcaption></figcaption></figure>
+
+
+*   Profit Tab&#x20;
+
+    <figure><img src="../../../.gitbook/assets/23.09.2026_16.49.41_REC.png" alt=""><figcaption></figcaption></figure>
+
+
+*   Print ticket&#x20;
+
+    <figure><img src="../../../.gitbook/assets/23.09.2026_16.51.36_REC.png" alt=""><figcaption></figcaption></figure>
 
 ### Instructions for use
 
@@ -70,13 +112,13 @@ Go to **Hotel → Single Room Supplement**.
 {% step %}
 **Confirm the `SINGLE` supplement is sellable**
 
-Make sure `SINGLE` exists and is set **For sale**.
+Make sure `SINGLE` exists and is set **For sale + Internet Sale**
 {% endstep %}
 
 {% step %}
 **Create the rule**
 
-Click **Create** and set dates, age range, room type, and value.
+Click **Create** and set dates, age range, room type, and price.
 {% endstep %}
 
 {% step %}
@@ -91,3 +133,13 @@ Create a booking with one guest in the target room type.
 {% hint style="info" %}
 If the supplement does not apply, check dates, age limits, and room type matching first.
 {% endhint %}
+
+{% hint style="warning" %}
+The **Single Room Supplement** is not supported for **Hotel Combination** bookings.
+{% endhint %}
+
+### Related pages
+
+* [Single Room Cost](single-room-cost.md)
+* [Hotel night calculation](../hotel-night-calculation.md)
+* [Hotel creation](../)

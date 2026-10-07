@@ -55,7 +55,7 @@ There are **four methods** available for setting the price of the cancellation i
 
 #### Related to basic price
 
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Cancellation Insurance related to basic price"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Cancellation Insurance related to basic price"><figcaption></figcaption></figure></div>
 
 * The insurance fee is determined by the total amount the passenger pays for the trip.
 * Up to **four price ranges** can be defined.
@@ -65,21 +65,21 @@ There are **four methods** available for setting the price of the cancellation i
 
 #### Related to length of travel
 
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Cancellation Insurance related to length of travel"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Cancellation Insurance related to length of travel"><figcaption></figcaption></figure></div>
 
 * The insurance fee is determined by the length of the trip.
 * Up to **four duration ranges** can be defined, each with its own insurance fee.
 
 #### Based on percentage of basic price
 
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Cancellation Insurance percentage of basic price"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Cancellation Insurance percentage of basic price"><figcaption></figcaption></figure></div>
 
 * The fee is calculated as a **percentage** of the passenger’s total trip price.
 * Example: If the percentage is 5% and the trip price is €1000, the insurance fee is €50.
 
 #### Related to transport type
 
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Cancellation Insurance related to transport type"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Cancellation Insurance related to transport type"><figcaption></figcaption></figure></div>
 
 * The insurance fee is determined by the **type of transport** selected for the booking (e.g., flight, bus, train).
 

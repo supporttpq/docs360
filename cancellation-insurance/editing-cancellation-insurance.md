@@ -35,7 +35,7 @@ When a booking is canceled and **cancellation insurance has been paid**, the use
 
 * If the insurance **covers** the cancellation, the **cancellation fee** equals the **price of the cancellation insurance**.
 
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Cancellation Insurance fee application"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Cancellation Insurance fee application"><figcaption></figcaption></figure></div>
 
 ### Main configuration
 

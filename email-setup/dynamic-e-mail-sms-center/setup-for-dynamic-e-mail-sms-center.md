@@ -177,7 +177,7 @@ Use these fields to filter bookings by booking, departure, arrival, and return d
 
 ### Destination and transport filters
 
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Destination and transport filter controls for dynamic templates."><figcaption><p>Destination and transport filters.</p></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Destination and transport filter controls for dynamic templates."><figcaption><p>Destination and transport filters.</p></figcaption></figure></div>
 
 Dynamic Emails can be configured to vary their content based on departure/arrival details and transport characteristics. This makes it possible to deliver highly targeted emails, such as departure specific instructions or airport related information.
 

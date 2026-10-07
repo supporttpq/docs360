@@ -317,5 +317,3 @@ XXXX\_new\_date.csv
 Contains:
 
 * Booking D
-
-#### Amended file

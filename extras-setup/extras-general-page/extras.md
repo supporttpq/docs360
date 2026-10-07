@@ -6,17 +6,25 @@ Extras are optional services/products that a customer can book; like transfer, c
 
 ### Brands
 
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Brands settings for an Extra."><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (367).png" alt="Brands section with the Bravo Tours dropdown open, listing all seven assignment options from Not assigned to Guide sale + Internet Sale + For Sale"><figcaption><p>Brand assignment options on the Overview tab of an Extra. Any option that includes Guide sale makes the Extra an Extra Order for that brand.</p></figcaption></figure></div>
 
-Allow the user to assign an extra to an agency. An extra can be assigned as follow:
+Assign the Extra to each brand with one of these options:
 
-* not assigned
-* for sale - the extra can be booked only on office;
-* internet sale - the extra can be booked only on WB
-* for sale + internet sale - can be booked both, office and WB
-* guide sale - can be booked only by a guide agent
-* hotel sale - can be set only by a hotel agent
-* guide sale + internet sale + for sale - can be booked by a admin, guide or a WB
+| Option                                    | Where the Extra can be booked                                                                                                                                      |
+| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Not assigned**                          | Not available for the brand.                                                                                                                                       |
+| **For sale**                              | Tourpaq Office only.                                                                                                                                               |
+| **Internet sale**                         | WebBooking only.                                                                                                                                                   |
+| **For sale+Internet sale**                | Tourpaq Office and WebBooking.                                                                                                                                     |
+| **Guide sale**                            | As an Extra Order, by a guide or a guest.                                                                                                                          |
+| **Hotel sale**                            | By a hotel agent only.                                                                                                                                             |
+| **Guide sale + Internet Sale + For Sale** | As an Extra Order in the Guide App, Guest App and the **Extra Orders** tab of the booking. Web booking requires API support. Reach out to Tourpaq for API support. |
+
+**Extra Orders**
+
+Any option that includes **Guide sale** makes the Extra an **Extra Order** for that brand, provided the **Allotment Type** is **Manual** or **Generic**. An Extra Order is ordered and paid separately from the booking, and appears in Destination lists and on the [Extra Orders](../../booking/new-booking/extra-orders.md) tab of the booking. When it is ordered before departure through WebBooking, its price is added to the booking total and paid with the booking.
+
+The full set-up of an excursion is described in [Guide App](../../destination-mobile-guide-app.md).
 
 <div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (571).png" alt="Brand assignment settings for an Extra."><figcaption></figcaption></figure></div>
 
@@ -32,7 +40,9 @@ Allow the user to assign an extra to an agency. An extra can be assigned as foll
 | **Minimum Length**          | Minimum number of days a trip must be to allow this extra.                                                                                                                                                                                                                                                                                                                                                                                    |
 | **Contract Type**           | Specify the contract type (Allotment, Guarantee, Request, FreeSell).                                                                                                                                                                                                                                                                                                                                                                          |
 | **Days Prices Option**      | <p>Allows limiting the prices per day options presented to the web user. Default is <code>0</code> if no variation. Only works for prices declared with days!!!!!! If no Days are declared, the product will be removed!<br>Ex: stay days = 14<br>days price option = 1<br>price days = 7,14,21</p><p>price days >= stay days - X</p><p>7,14,21 >= 14 - 1 => 14,21</p>                                                                        |
-| **Allotment Type**          | Is used to control the number of products available and the time they are available in. The choices are **Manual, Generic** and **Linked to transport**                                                                                                                                                                                                                                                                                       |
+| **Keep showing in app**     | Keeps the excursion listed in the Guest App when its allotment is 0 or sold out. No buy button is shown. TO VERIFY — behaviour taken from the existing Guide App page ("Keep the excursion listed as read-only"); confirm it is this checkbox.                                                                                                                                                                                                |
+| **Display allotment**       | TO VERIFY — the field is on the Basic setup tab, but its effect is not described in THT-60657. Copy the tooltip text from the product.                                                                                                                                                                                                                                                                                                        |
+| **Allotment Type**          | Controls how many units are available and when. The options are **None**, **Manual**, **LinkedToTransport** and **Generic**. Only **Manual** and **Generic** support Extra Orders (brand assignment with **Guide sale**). **Manual** shows the **Allotments** tab; **Generic** shows the **Generic Allotment** tab. See [Allotments](allotments.md).                                                                                          |
 | **Extras Category**         | Categorize the extra (e.g., Meal, Transfer, Tour). The user can choose from the dropdown one of the categories created in the Extras Category. This is required.                                                                                                                                                                                                                                                                              |
 | **Age**                     | Define the applicable age group (e.g., Adult, Child, Infant).                                                                                                                                                                                                                                                                                                                                                                                 |
 | **Period/Trip Length**      | Limit availability by trip length interval.                                                                                                                                                                                                                                                                                                                                                                                                   |
@@ -186,10 +196,10 @@ The Clone Extras feature is used to:
 
 2.  Click “Clone” - Select the **Clone** option
 
-    <div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Clone option for an Extra."><figcaption></figcaption></figure></div>
+    <div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Clone option for an Extra."><figcaption></figcaption></figure></div>
 3.  Select the code for the new Extras
 
-    <div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Code selection for a cloned Extra."><figcaption></figcaption></figure></div>
+    <div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Code selection for a cloned Extra."><figcaption></figcaption></figure></div>
 4.  Define Clone Settings
 
     <div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Clone settings for an Extra."><figcaption></figcaption></figure></div>

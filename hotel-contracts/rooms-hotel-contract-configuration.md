@@ -83,8 +83,6 @@ The room type becomes available for periods, pricing, and booking searches on th
 
 ## Field Reference
 
-
-
 **Room identification and occupancy**
 
 | Field                     | Description                                                                                                                                                                                                              | Notes                                                                                               |
@@ -97,7 +95,15 @@ The room type becomes available for periods, pricing, and booking searches on th
 | **Max Extra**             | Sets how many guests beyond the base occupancy can be added as extra adults.                                                                                                                                             |                                                                                                     |
 | **Max Extra Child**       | Sets how many children can be added beyond the base occupancy, in addition to **Max Extra** adults.                                                                                                                      |                                                                                                     |
 
-Tooltip on **Room Type Code**: Note: the hotel code will automatically be appended to the specified code, when the contract is imported.
+#### Room Type Name Tooltip
+
+To make the full room type name easier to identify when it is truncated in the interface, a tooltip is displayed when the user hovers over the room type.
+
+The tooltip displays the **full List Text Name** of the room type. Where applicable, it also displays the **full Name** of the room type.
+
+This allows users to view the complete room type name without changing the layout or expanding the field.
+
+<figure><img src="../.gitbook/assets/22.09.2026_12.48.24_REC.png" alt=""><figcaption></figcaption></figure>
 
 **Infant handling**
 

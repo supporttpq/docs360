@@ -39,6 +39,21 @@ The purpose of the check‑in module is to:
 
 ***
 
+### Configuration: TeeTime Category Type
+
+For the Golf Course Check-In module to work, the underlying tee-time product's Extras Category must use the TeeTime Category Type (Extras Setup → Extras → Basic setup). Setting the category to this type enables a Tee Time Rules section on the product, which is what actually drives the check-in kiosk and Master Module:&#x20;
+
+<figure><img src="../../../.gitbook/assets/15.09.2026_14.50.21_REC.png" alt=""><figcaption></figcaption></figure>
+
+* TeeTime Pin – the PIN used as the Master Module password (see Backend Login below).
+* Product Parent ID – links this product's allotment to a parent product for shared availability.
+* Pax limit – how many times a passenger can book this tee time per interval.
+* Limit Per Day / Only first week(s) – caps on how often and how far ahead the tee time can be booked.
+* Limit before hour – closes bookings a set number of hours before a cut-off time on the day of play.
+* Requires confirmation – if enabled, a booking needs manual staff confirmation before it is valid, which affects what shows as confirmed in the Master Module.
+
+For the full field reference and how the Generic Allotment (daily/weekly slots, block allotments) is set up, see the [Teetime page](../../../extras-setup/extras-general-page/teetime.md).
+
 ### 1. Customer Check‑In Flow (Kiosk)
 
 <figure><img src="../../../.gitbook/assets/image (474).png" alt="Customer check-in kiosk flow for tee times (screens overview)"><figcaption></figcaption></figure>
@@ -79,6 +94,10 @@ The purpose of the check‑in module is to:
 **Language**
 
 The kiosk automatically switches to the language of the booking’s Brand.
+
+{% hint style="info" %}
+Agencies appear automatically based on whether they have a matching booking for today. No direct configuration is required — only Agencies associated with today’s qualifying Tee Time bookings are displayed.
+{% endhint %}
 
 **Displayed**
 
@@ -130,6 +149,12 @@ Displays:
 * 5‑second countdown.
 * Auto return to Screen 1 (full reset).
 
+This diagram illustrates the step-by-step flow of the Customer Check-In functionality described above: the client logs in and sees the list of agencies with bookings and allotments dated today, enters the booking number, chooses which allotments to confirm for the passengers, confirms the date, and the booking allotments are then confirmed.
+
+```mermaid
+graph TD; A[Client logs in] --> B[Sees list of agencies with bookings and allotments dated today UTC]; B --> C[Enters the booking number]; C --> D[Chooses which allotments to confirm for the passengers]; D --> E[Confirms the date]; E --> F[Booking allotments are confirmed];
+```
+
 ***
 
 ### 2. Master Module (Staff interface)
@@ -138,8 +163,16 @@ Displays:
 
 #### Login
 
+Access: on the Self Check-In screen, tap the small gear icon in the bottom-left corner of the kiosk to open the Master Module login screen.
+
 * **Username:** Extra ProductID (for example, `3692`)
-* **Password:** A 4‑digit PIN displayed in the extra configuration
+* **Password:** A 4‑digit PIN displayed in the extra configuration (the extra's TeeTime Pin field).
+
+PIN generation: the TeeTime Pin is a system-generated identifier stored on the tee-time product's Tee Time Rules configuration (Extras Setup → Extras, product using the TeeTime Category Type).&#x20;
+
+<figure><img src="../../../.gitbook/assets/15.09.2026_14.40.36_REC.png" alt=""><figcaption></figcaption></figure>
+
+Staff can regenerate it from that page using the shuffle/refresh icon next to the field, but the new PIN only takes effect once the product is saved — leaving the page without clicking Save keeps the previous PIN active. If the product is a child of a parent product, regenerating the PIN updates the parent's PIN as well.
 
 <figure><img src="../../../.gitbook/assets/image (483).png" alt=""><figcaption></figcaption></figure>
 
@@ -186,6 +219,12 @@ Displays all tee times for today:
 * Status: Available / Blocked / Occupied
 * Player names
 * Handicap
+
+This diagram illustrates the step-by-step flow of the Master Module functionality described above: staff log in with the extra ID and PIN, then choose to either manage allotments (selecting a product and date, viewing or confirming/unconfirming bookings, and optionally filtering by booking number or name) or view availability for a selected date.
+
+```mermaid
+graph TD; A[Enter username extra ID] --> B["Enter PIN generated in the Tee Time Rules panel, random 1000-9999)"]; B --> C{Choose action}; C -->|Manage allotments| D["Select a product and a date"]; C -->|View availability| E["Select a date"]; D --> F["View all bookings and their allotments"]; D --> G{"Optional filters"}; F --> H["Confirm / unconfirm allotments"]; G -->|Booking no provided| I["Show allotments only for that booking"]; G -->|Name provided| J["Search by name - known issue partial match works but exact full-name match returns no results"]; E --> K["View list of free or confirmed allotments for that date"];
+```
 
 ***
 

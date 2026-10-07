@@ -161,6 +161,6 @@ Results are paginated. Use the numbered controls at the bottom of the page to na
 * [hotel-contracts](../hotel-contracts/ "mention")
 * [pricelist.md](../price-list/pricelist.md "mention")
 * [special-offers.md](../special-offers.md "mention")
-* [generic-product-price-rules.md](../generic-product-price-rules.md "mention")
+* [Broken link](/broken/pages/U071prLgobwCAk4yXKIv "mention")
 * [transport-price-control.md](../transport-price-control.md "mention")
 * [web-booking-api-flow.md](../setup/web-booking-api-flow.md "mention")
