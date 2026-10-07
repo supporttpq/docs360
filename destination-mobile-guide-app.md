@@ -272,7 +272,7 @@ If payment approved, the order is set to status OK. If payment rejected, the all
 * Pending payment is reported as approved – an email saying your payment has been approved
 * Pending payment is reported as rejected – an email saying your payment is rejected is sent and order is canceled and allotment set back
 
-<div data-with-frame="true"><figure><img src=".gitbook/assets/image (1) (2).png" alt="" width="100%"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/07.10.2026_11.36.37_REC.png" alt=""><figcaption></figcaption></figure></div>
 
 In the CXL/Error menu, you’ll see bookings where extra orders (such as excursions) were canceled by the service, but the payment was still confirmed. These entries are shown to help you identify and resolve any discrepancies.
 
