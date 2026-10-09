@@ -17,12 +17,12 @@ An excursion sold in the app is an **Extra Order**: an Extra that is ordered and
 
 The same Extra can be ordered in these places:
 
-| Where                                                 | Who orders                                                                    |
-| ----------------------------------------------------- | ----------------------------------------------------------------------------- |
-| **Guide App**                                         | A guide, on behalf of the guest.                                              |
-| **Guest App**                                         | The guest.                                                                    |
-| **Extra Orders** tab of the booking in Tourpaq Office | An Administrator or Guide user.                                               |
-| WebBooking (OneHome)                                  | The customer, before departure. The order is created through the Booking API. |
+| Where                                                 | Who orders                                                                                                          |
+| ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| **Guide App**                                         | A guide, on behalf of the guest.                                                                                    |
+| **Guest App**                                         | The guest.                                                                                                          |
+| **Extra Orders** tab of the booking in Tourpaq Office | An Administrator or Guide user.                                                                                     |
+| WebBooking                                            | The customer, before departure. The order is created through the Booking API. Reach out to Tourpaq for API support. |
 
 Extras with **Manual** and **Generic** allotment are sold in the same way. The allotment type decides how availability is managed, not whether the excursion can be sold.
 
@@ -42,7 +42,7 @@ Extras with **Manual** and **Generic** allotment are sold in the same way. The a
 * Prices exist for the Extra — see Prices.
 * One debit and one credit guide payment type exist — see Payment Method.
 * The guide has those payment types assigned.
-* The user signs in as a guide. Only guides can add products and make them available in the app.
+* Guides sell Extra Orders in the Guide App. Access to Extra Orders as an administrator requires super-admin rights. Reach out to Tourpaq Support.
 
 #### How-to
 
@@ -56,7 +56,7 @@ Extras with **Manual** and **Generic** allotment are sold in the same way. The a
     ![](https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-dce28b7a9e3e4b0568273aaa4aee5b94ac2efb9e%2Fimage%20\(279\).png?alt=media)
 3. Select **Manual** or **Generic** in **Allotment Type** on the **Basic setup** tab.
 4. Under **Brands** on the **Overview** tab, select an option that includes **Guide sale** for each brand that sells the excursion, then click **Save**.\
-   ![](https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-f4a1ec7cfd51a78b5a1acdc2cf2370433853c643%2Fimage%20\(283\).png?alt=media)
+   ![](https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-d1d5c81b8818bcebe66633278d14c5c712dbc942%2Fimage%20\(367\).png?alt=media)
 5. Assign the resort on the **Resources** tab: click **New filter type**, select the resort, then click **Save filter type**.\
    ![](https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-a94439bab8957dbd0929554f0cbd75e54cbf18f6%2Fimage%20\(282\).png?alt=media)
 6. Click **Generate New Allotments** on the **Allotments** tab (Manual) or the **Generic Allotment** tab (Generic), and choose **Daily** or **Weekly**.\
@@ -98,23 +98,37 @@ Open the guide on the Edit Guide page and assign the payment types. To use the D
 **Sell an excursion in the app**
 
 1. Sign in and tap **Extras**. A list of the available excursions is shown.\
-   ![](https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-c546f57881a6c738cb14b377766bde4726e1b07f%2Fimage%20\(190\).png?alt=media)
+   ![](https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-e9c1d6a28e599a2e6f26757546ac6821ab5f5df3%2Fguide-app-extras-list.png?alt=media)
 2. Select an excursion and view its details.\
-   ![](https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-d90839cd76a579eaffa6447f91c1b220e7b862a6%2F11-525720509f53db66d4be8db089be1662.png?alt=media)
+   ![](https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-11a601266b245568ea47621bef299fe67130e60f%2Fguide-app-excursion-details.png?alt=media)
 3. Check the booking details and the number of adults and children, then tap **ADD TO CART**.\
-   ![](https://docs.tourpaq.com/assets/images/22-681f42ba0ae483955f992620f44cdda0.png)
+   ![](https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-a19d154c7e21ba6af3219e899ec7774e58bc9fd4%2Fguide-app-add-to-cart.png?alt=media)
 4. On **Cart Checkout**, check the excursion, date, passengers (**Pax**), price and the observation fields.
 5. Select the payment type under **Paid by**: cash, agent machine or card.\
-   ![](https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-578c44e1a2c0b32ca1f6f8be20f58acd98abbac0%2Fimage%20\(191\).png?alt=media)
+   ![](https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-8be7c859c796c2b9a056c939465f288678982800%2Fguide-app-cart-checkout.png?alt=media)
 6. Complete the order.
+{% endstep %}
+
+{% step %}
+**Take payment in local currency (currency converter)**
+
+Excursion prices are always shown in the brand currency, and the Extra Order is always registered in the brand currency. When a guest at the destination wants to pay cash in the local currency, use the currency converter on the Cart Checkout screen to see the amount to collect in that currency.
+
+1. On the Cart Checkout screen, tap **Currency** in the top-right corner.
+2. Select the currency the guest pays in. Total to pay is shown converted to that currency.
+3. Collect the converted amount from the guest and tap Checkout.
+
+The conversion only changes the amount the guide collects. The price of the Extra Order, the booking and the Guide Sales Ledger stay in the brand currency.
 {% endstep %}
 
 {% step %}
 **Cancel an order**
 
 On **Extras**, open the **Booked** tab and tap the order. Choose whether to refund the money to the guest. A refund needs a credit payment type assigned to the guide.\
-![](https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-3899bb7b981daf66ed4f62a7cfc465275c20b701%2Fimage%20\(192\).png?alt=media)\
-![](https://docs.tourpaq.com/assets/images/55-f4fe0b97ccc6779a3e8784668d4048d4.png)
+![](https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-7d0577dff87c7f25a2b676b7d802a4007f39b019%2Fguide-app-booked-extras.png?alt=media)\
+![](https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-c9d87a3b39173c835ecc619d14e32f0285acb4ec%2Fguide-app-cancel-extras.png?alt=media)
+
+![](https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-f2916c3a5d8ff8d35744c784b7e659b5d0cc2c2e%2Fguide-app-cancel-confirm.png?alt=media) ![](https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-4b31532f9a8af6153bd7ed6b1b47cae8933c6a90%2Fguide-app-order-canceled.png?alt=media)
 {% endstep %}
 {% endstepper %}
 
@@ -124,7 +138,7 @@ The order is listed on the **Booked** tab of **Booked extras**, under **Unpaid o
 
 **Extra**
 
-<table data-search="false"><thead><tr><th>Field</th><th>Description</th><th>Notes</th></tr></thead><tbody><tr><td><strong>Extras Category</strong></td><td>Decides whether the Extra is shown in the apps. Only Extras in a <strong>Tours</strong> category are shown.</td><td></td></tr><tr><td><strong>Allotment Type</strong></td><td>Decides how availability is managed. <strong>Manual</strong> gives one capacity per day, on set days. <strong>Generic</strong> gives a capacity per date and time slot.</td><td><strong>None</strong> and <strong>LinkedToTransport</strong> do not support Extra Orders.</td></tr><tr><td><strong>Brands</strong></td><td>Makes the Extra orderable for a brand. An option that includes <strong>Guide sale</strong> makes it an Extra Order in the Guide App and Guest App.</td><td><strong>Guide sale + Internet Sale + For Sale</strong> also makes it orderable in WebBooking (OneHome) and on the <strong>Extra Orders</strong> tab of the booking.</td></tr><tr><td><strong>Resources</strong> (resort)</td><td>Assigns the Extra to a resort.</td><td>Other resource types, such as transports and hotels, are ignored by the apps.</td></tr><tr><td><strong>Description in customer center</strong></td><td>The first information shown for the excursion.</td><td>Can be set per brand to give different descriptions.</td></tr><tr><td><strong>Photos</strong></td><td>Pictures shown with the excursion.</td><td>Add one or more representative pictures.</td></tr><tr><td><strong>Prices</strong></td><td>One line per age group and period. Shown as <strong>Adult Price</strong> and <strong>Child Price</strong>.</td><td>Prices for Extra Orders are defined on this tab only. The Generic Product Price Rules page is no longer used.</td></tr><tr><td><strong>START TIME</strong> / <strong>END TIME</strong></td><td>Gives the same date different prices during the day, for example a morning and an afternoon departure.</td><td>Defaults are <code>00:00</code> and <code>23:59</code>, which is one price for the whole day. The <strong>S</strong> button splits a price line into two time periods.</td></tr><tr><td><strong>Keep showing in app</strong></td><td>Keeps the excursion listed when allotment is 0 or sold out. No buy button is shown.</td><td>Documented for the Guest App.<br><img src="https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-6ffc67467a0d8187f436565c6fff8781bb4e8c04%2Fimage%20(284).png?alt=media" alt=""></td></tr><tr><td><strong>Automatic billing</strong> (creditor)</td><td>Sets the currency of the sold Extra.</td><td>Without a creditor, the agency currency applies, then the company currency. Create a creditor with the wanted currency and assign it to the Extra.<br><img src="https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-5e2202d873991fe83e1a68fc837862b4d9939c60%2Fimage%20(281).png?alt=media" alt=""></td></tr></tbody></table>
+<table data-search="false"><thead><tr><th>Field</th><th>Description</th><th>Notes</th></tr></thead><tbody><tr><td><strong>Extras Category</strong></td><td>Decides whether the Extra is shown in the apps. Only Extras in a <strong>Tours</strong> category are shown.</td><td></td></tr><tr><td><strong>Allotment Type</strong></td><td>Decides how availability is managed. <strong>Manual</strong> gives one capacity per day, on set days. <strong>Generic</strong> gives a capacity per date and time slot.</td><td><strong>None</strong> and <strong>LinkedToTransport</strong> do not support Extra Orders.</td></tr><tr><td><strong>Brands</strong></td><td>Makes the Extra orderable for a brand. An option that includes <strong>Guide sale</strong> makes it an Extra Order in the Guide App and Guest App.</td><td><strong>Guide sale + Internet Sale + For Sale</strong> also makes it orderable in WebBooking and on the <strong>Extra Orders</strong> tab of the booking. WebBooking requires API support. Reach out to Tourpaq for API support.</td></tr><tr><td><strong>Resources</strong> (resort)</td><td>Assigns the Extra to a resort.</td><td>Other resource types, such as transports and hotels, are ignored by the apps.</td></tr><tr><td><strong>Description in customer center</strong></td><td>The first information shown for the excursion.</td><td>Can be set per brand to give different descriptions.</td></tr><tr><td><strong>Photos</strong></td><td>Pictures shown with the excursion.</td><td>Add one or more representative pictures.</td></tr><tr><td><strong>Prices</strong></td><td>One line per age group and period. Shown as <strong>Adult Price</strong> and <strong>Child Price</strong>.</td><td>Prices for Extra Orders are defined on this tab only. The Generic Product Price Rules page is no longer used.</td></tr><tr><td><strong>START TIME</strong> / <strong>END TIME</strong></td><td>Gives the same date different prices during the day, for example a morning and an afternoon departure.</td><td>Defaults are <code>00:00</code> and <code>23:59</code>, which is one price for the whole day. The <strong>S</strong> button splits a price line into two time periods.</td></tr><tr><td><strong>Keep showing in app</strong></td><td>Keeps the excursion listed when allotment is 0 or sold out. No buy button is shown.</td><td>Documented for the Guest App.<br><img src="https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-6ffc67467a0d8187f436565c6fff8781bb4e8c04%2Fimage%20(284).png?alt=media" alt=""></td></tr><tr><td><strong>Automatic billing</strong> (creditor)</td><td>Sets the currency of the sold Extra.</td><td>Without a creditor, the agency currency applies, then the company currency. Create a creditor with the wanted currency and assign it to the Extra.<br><img src="https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-5e2202d873991fe83e1a68fc837862b4d9939c60%2Fimage%20(281).png?alt=media" alt=""></td></tr></tbody></table>
 
 A guest is offered the excursion only on allotment dates within the stay, and only while allotment is left.
 
@@ -149,15 +163,15 @@ How an Extra Order is paid depends on when it is ordered.
 | Ordered                                          | Payment                                                                                            | Where the order is visible                                                |
 | ------------------------------------------------ | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
 | In the Guide App or Guest App at the destination | Paid with the Extra Order, using a guide payment type.                                             | **Extra Orders** tab, Destination lists, **Booked** tab in the Guide App. |
-| Before departure, in WebBooking (OneHome)        | Added to the booking total and paid with the booking. No payment is registered on the Extra Order. | **Extra Orders** tab, Destination lists.                                  |
+| Before departure, in WebBooking                  | Added to the booking total and paid with the booking. No payment is registered on the Extra Order. | **Extra Orders** tab, Destination lists.                                  |
 
 How an order is cancelled depends on the payment flow:
 
-| Order type                                    | How it is cancelled                                                                                                                                                                                                                   |
-| --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Extra Order** (ordered and paid in the app) | From the **Booked** tab. Refunded as described under Sell and Cancel above.                                                                                                                                                           |
-| **Pre-booked Extra** (booking payment flow)   | Removed from the booking. The difference is shown as a negative balance in Balance Administration.                                                                                                                                    |
-| Booked through OneHome (WebBooking)           | The Booking API inserts the product as an Extra Order. The product is in the Guide App export, and a guide can cancel it from the Guide App. The amount is shown as a negative balance for the booking, not as an Extra Order refund. |
+| Order type                                    | How it is cancelled                                                                                                                                                                                                                                                                                                          |
+| --------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Extra Order** (ordered and paid in the app) | From the **Booked** tab. Refunded as described under Sell and Cancel above.                                                                                                                                                                                                                                                  |
+| **Pre-booked Extra** (booking payment flow)   | Removed from the booking. The difference is shown as a negative balance in Balance Administration.                                                                                                                                                                                                                           |
+| Booked through OneHome (WebBooking)           | The Booking API inserts the product as an Extra Order. Its price is added to the booking total and no payment is assigned to the Extra Order. The product is in the Guide App export, and a guide can cancel it from the Guide App. The amount is shown as a negative balance for the booking, not as an Extra Order refund. |
 
 See **Cancelling an Extra** on Extra Orders.
 
@@ -167,7 +181,7 @@ An order made in the app takes allotment first and stays pending. These orders d
 
 {% hint style="info" %}
 In the **CXL/Error** menu in Tourpaq Office, you see bookings where the service cancelled an Extra Order, but the payment was still confirmed. Use it to find and resolve these differences. The status of an order in the app is cleared when the guest travels home.\
-![](https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-a18e48168c1c487ac8ae3ca77fede223f1f60f10%2Fimage%20\(1\)%20\(2\).png?alt=media)
+![](https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-a1aa8f84a528ffc30ede0143260fbb9bdbddd603%2F07.10.2026_11.36.37_REC.png?alt=media)
 {% endhint %}
 
 {% hint style="info" %}

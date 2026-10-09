@@ -6,9 +6,7 @@ description: >-
 
 # Close Out
 
-**Applies to:** Tourpaq Office · **Available from:** Tourpaq v15.5 · **Last reviewed:** 2026-09-25
-
-Close Out is the tour operator's own tool for stopping sales during daily office work — for example, while a hotel contract is still being negotiated, or when a charter flight to one airport is full. When the hotel itself asks you to stop selling rooms, use [Stop Sales](../stop-sales.md) instead.
+_Close Out is the Travel Agency's own tool for stopping sales during daily office operations — for example, while a hotel contract is still being negotiated, or when a charter flight to one airport is full. When the hotel suppliers themselves want to make a stop sale on a Hotel or specific rooms,_ [_Stop Sales_](https://manual.tourpaq.com/stop-sales) _is used._
 
 ### Overview
 
