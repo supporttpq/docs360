@@ -1,6 +1,6 @@
 # Guide App
 
-<div data-with-frame="true"><figure><img src=".gitbook/assets/destinationapp-993f7b8a83693173287fae9f3939457a.png" alt="" width="100%"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/destinationapp-993f7b8a83693173287fae9f3939457a.png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 The Guide App tracks guides' activity, helps them coordinate with each other, creates complaints regarding the local environment, supports customers directly through chat, and exports passenger lists in multiple formats.
 
@@ -16,7 +16,7 @@ Also see [visit-sun-app.md](visit-sun-app.md "mention"), [guide-profiles.md](gui
 
 ### Login screen
 
-<div data-with-frame="true"><figure><img src=".gitbook/assets/Untitled (1) (1).jpg" alt="" width="100%"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/Untitled (1) (1).jpg" alt="" width="150"><figcaption></figcaption></figure></div>
 
 This is the first screen the guide will encounter when using the app. As shown in the picture, the login is quite basic, requiring the username and password used in Tourpaq.
 
@@ -26,7 +26,7 @@ The user session expires by default in 30 minutes from the last user action. To 
 
 **The unit of measure for the value is minutes.**
 
-<div data-with-frame="true"><figure><img src=".gitbook/assets/image (59).png" alt="" width="100%"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (59).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 ### Available menus
 
@@ -58,7 +58,7 @@ Extras with **Manual** and **Generic** allotment are sold in the same way in the
 
 <mark style="background-color:red;">**IMPORTANT NOTE:**</mark> <mark style="background-color:red;">Guides sell Extra Orders in the Guide App. Access to Extra Orders as an administrator requires super-admin rights. Reach out to Tourpaq Support.</mark>
 
-<div data-with-frame="true"><figure><img src=".gitbook/assets/image (279).png" alt="" width="100%"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (279).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 Go to **Extras Setup → Extras**, click **Create** (or open an existing Extra) and fill in the **Basic setup**. Select an **Extras Category** of type **Tours**. Only Extras in a Tours category are shown in the apps.
 
@@ -73,25 +73,25 @@ In **Allotment Type** on the **Basic setup** tab, select **Manual** or **Generic
 
 **None** and **LinkedToTransport** do not support Extra Orders.
 
-<figure><img src=".gitbook/assets/image (5).png" alt="Allotment Type dropdown open, showing None, Manual, LinkedToTransport and Generic, with Manual selected"><figcaption><p>Allotment Type on the Basic setup tab of the Extra.</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5).png" alt="Allotment Type dropdown open, showing None, Manual, LinkedToTransport and Generic, with Manual selected" width="375"><figcaption><p>Allotment Type on the Basic setup tab of the Extra.</p></figcaption></figure>
 
 #### Customize the excursion for the apps
 
 The first information that appears to the guest is the description. Customize it under the main tab of the extra, specifically the **Description in customer center** box. This can also be customized per brand for a wider variety of descriptions. Add one or more representative pictures through the **Photos** tab of the extra (see the picture below).
 
-<div data-with-frame="true"><figure><img src=".gitbook/assets/image (280).png" alt="" width="100%"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (280).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 #### Extra currency
 
 By default, the price of the sold extra will represent either the currency of the agency (if it has one) or the currency of the company. However, you can customize this by creating a creditor with the desired currency and assign it to the required extra under the "Automatic billing" box (see the picture below).
 
-<div data-with-frame="true"><figure><img src=".gitbook/assets/image (281).png" alt="" width="100%"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (281).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 #### Assign the excursion to a resort
 
 An essential aspect of selling an excursion is that even if Tourpaq supports adding multiples resources to a product—such as transports, hotels, and so on—the application will only take into considerations the resort field. Assign the desired resort or resorts under the **Resurser** tab of the product. Click **New filter type**, select the desired resort, and click **Save filter type** (see the picture below).
 
-<div data-with-frame="true"><figure><img src=".gitbook/assets/image (282).png" alt="" width="100%"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (282).png" alt="" width="309"><figcaption></figcaption></figure></div>
 
 #### Assign the excursion to a brand
 
@@ -102,7 +102,7 @@ In the **Brands** section at the top of the **Overview** tab of the Extra, selec
 | **Guide sale**                            | Orderable as an Extra Order in the Guide App and Guest App.                                                                                                                    |
 | **Guide sale + Internet Sale + For Sale** | Orderable as an Extra Order in the Guide App, Guest App and on the **Extra Orders** tab of the booking. WebBooking requires API support. Reach out to Tourpaq for API support. |
 
-<div data-with-frame="true"><figure><img src=".gitbook/assets/image (367).png" alt="Brands section with the Bravo Tours dropdown open and Guide sale + Internet Sale + For Sale selected"><figcaption><p>Brand assignment options. Any option that includes Guide sale makes the Extra an Extra Order for that brand.</p></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (367).png" alt="Brands section with the Bravo Tours dropdown open and Guide sale + Internet Sale + For Sale selected" width="375"><figcaption><p>Brand assignment options. </p></figcaption></figure></div>
 
 #### Generate allotments for the excursion
 
@@ -113,13 +113,13 @@ Open the allotment tab that matches the allotment type, click **Generate New All
 
 A guest is offered the excursion only on allotment dates that fall within the stay, and only while allotment is left. The field-by-field description is on [Allotments](extras-setup/extras-general-page/allotments.md).
 
-<div data-with-frame="true"><figure><img src=".gitbook/assets/image (374).png" alt="Allotments tab of a Manual allotment Extra with Monday and Thursday dates, 10 units each and 0 booked"><figcaption><p>Manual allotment: one row per date. BO1 shows the number of units booked.</p></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (374).png" alt="Allotments tab of a Manual allotment Extra with Monday and Thursday dates, 10 units each and 0 booked" width="375"><figcaption><p>Manual allotment: one row per date.</p></figcaption></figure></div>
 
 #### Keep the excursion listed as read-only
 
 If the allotment is generated with 0 availability, or runs out, the excursion can still be listed in the Guest App. Tick **Keep showing in app** on the **Basic setup** tab of the Extra (TO VERIFY — the screenshot below predates the current Basic setup layout; confirm it shows this setting):
 
-<div data-with-frame="true"><figure><img src=".gitbook/assets/image (284).png" alt="" width="100%"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (284).png" alt="" width="310"><figcaption></figcaption></figure></div>
 
 In the Guest App, the effect will be that the excursion/product will continue to be listed, but no buy button will be available.
 
@@ -136,7 +136,7 @@ The apps and the Destination API show these as the **Adult Price** and **Child P
 
 For an Extra Order, the Prices tab can also show **START TIME** and **END TIME**. Use them to give the same date different prices during the day — for example a morning and an afternoon departure. The **S** split button next to them divides a price line into two time periods. The defaults are `00:00` and `23:59`, which means one price for the whole day. See [Prices ](extras-setup/extras-general-page/prices.md)for every column.
 
-<div data-with-frame="true"><figure><img src=".gitbook/assets/image (349).png" alt="Prices tab of a Generic allotment Extra showing START TIME and END TIME columns between the departure and booking date columns"><figcaption><p>START TIME and END TIME on the Prices tab of an Extra Order.</p></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (349).png" alt="Prices tab of a Generic allotment Extra showing START TIME and END TIME columns between the departure and booking date columns" width="375"><figcaption><p>START TIME and END TIME on the Prices tab of an Extra Order.</p></figcaption></figure></div>
 
 **Payment and cancellation**
 
@@ -159,11 +159,11 @@ See **Cancelling an Extra** on the [Extra Orders](booking/new-booking/extra-orde
 
 In order to do that, we will have to navigate under the **Extras -> Routes** page (see the picture below).
 
-<div data-with-frame="true"><figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (2).png" alt="" width="100%"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (2).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 After you click insert, a route will be generated and you will be able to add **pickup points** (see picture below).
 
-<div data-with-frame="true"><figure><img src=".gitbook/assets/image (72).png" alt="" width="100%"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (72).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 In here, you will have to fill the following fields:
 
@@ -187,7 +187,7 @@ In order to take further steps in the process of booking the excursions, we must
 
 Once we got here, we can proceed with creating a new method of payment for the guide excursions by clicking on the "New" button in the right corner of the listing page.
 
-<div data-with-frame="true"><figure><img src=".gitbook/assets/image (73).png" alt="" width="100%"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (73).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 In here, the user will encounter the following fields:
 
@@ -205,7 +205,7 @@ Above are all the required fields to properly set up a method of payment for the
 
 * \*\* Agencies\*\* - This set up allows the user to assign specific brands for the method of payment (Note! This section will be active only if "Guide Payment" is checked.)
 
-<div data-with-frame="true"><figure><img src=".gitbook/assets/image (74).png" alt="" width="100%"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (74).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 Usage examples:
 
@@ -214,7 +214,7 @@ Usage examples:
 
 After finishing with the creation of the payment types, we can proceed even further and assign the payment types to a guide. We can do that by entering the Edit Guide page in Users -> Guides and click edit on the desired guide to assign the payment types (see below picture).
 
-<div data-with-frame="true"><figure><img src=".gitbook/assets/image (75).png" alt="" width="100%"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (75).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 Also, in here another important thing to consider is that we can override the DIBS settings for a specific guide (this only happens in the mobile apps).
 
@@ -236,7 +236,7 @@ After finishing with setting up everything in here, the guide is ready to go.
 * **Cash** Fee: 0. No fee applies to cash payments.
 * To remove the card fee, contact Tourpaq support.
 
-<figure><img src=".gitbook/assets/image (391).png" alt="Shopping Cart in the Guide App. With Cash selected, Cash Fee shows 0.00 DKK. With Card selected, Card Fee shows 25.00 DKK."><figcaption><p>Cash Fee is 0.00 DKK when paying with cash (top). Card Fee is 25.00 DKK when paying by card (bottom).</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (391).png" alt="Shopping Cart in the Guide App. With Cash selected, Cash Fee shows 0.00 DKK. With Card selected, Card Fee shows 25.00 DKK." width="375"><figcaption><p>Cash Fee is 0.00 DKK when paying with cash (top).</p></figcaption></figure>
 
 In order to proceed with using the earlier created payments, the user must select an available excursion from the list (**in the APP**), tap on buy, fill all the details and select a desired method of payment (cash, agent machine or card). If for example one selects Cash, but no Cash method of payment is configured in the backoffice, the system will not complete the order, as it will not find a matching method of payment into the system.
 
@@ -248,19 +248,19 @@ After setting the excursion up, we can proceed to the next stage: the one of boo
 
 #### Choose an excursion from the list
 
-<div data-with-frame="true"><figure><img src=".gitbook/assets/guide-app-extras-list.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/guide-app-extras-list.png" alt="" width="188"><figcaption></figcaption></figure></div>
 
 #### View excursion details
 
-<div data-with-frame="true"><figure><img src=".gitbook/assets/guide-app-excursion-details.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/guide-app-excursion-details.png" alt="" width="188"><figcaption></figcaption></figure></div>
 
 #### Configure excursion details for the shopping cart
 
-<div data-with-frame="true"><figure><img src=".gitbook/assets/guide-app-add-to-cart.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/guide-app-add-to-cart.png" alt="" width="188"><figcaption></figcaption></figure></div>
 
 #### Select a payment type and complete checkout
 
-<div data-with-frame="true"><figure><img src=".gitbook/assets/fee (1).jpg" alt="" width="375"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/fee (1).jpg" alt="" width="188"><figcaption></figcaption></figure></div>
 
 
 
@@ -276,11 +276,11 @@ The conversion only changes the amount the guide collects. The price of the Extr
 
 **IMPORTANT:** The Mobile Application also gives the possibility to cancel an existing order. In order to do this, the user has to click on the **Booked** tab in the **Extras** screen and tap on the existing order. In here, he can also decide whether he will refund the money back to the customer. In order to make the refund possible, a Credit method of payment assigned to this specific guide is required! (see pictures below)
 
-<div data-with-frame="true"><figure><img src=".gitbook/assets/guide-app-booked-extras.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/guide-app-booked-extras.png" alt="" width="188"><figcaption></figcaption></figure></div>
 
-<div data-with-frame="true"><figure><img src=".gitbook/assets/guide-app-cancel-extras.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/guide-app-cancel-extras.png" alt="" width="188"><figcaption></figcaption></figure></div>
 
-<div><figure><img src=".gitbook/assets/guide-app-cancel-confirm.png" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/guide-app-order-canceled.png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src=".gitbook/assets/guide-app-cancel-confirm.png" alt="" width="188"><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/guide-app-order-canceled.png" alt="" width="188"><figcaption></figcaption></figure></div>
 
 **Note:** When ordering excursions from Guide App or Guest App the workflow is as follows: Allotment is taken but order is pending status (these orders do not appear in the system).
 
@@ -289,7 +289,7 @@ If payment approved, the order is set to status OK. If payment rejected, the all
 * Pending payment is reported as approved – an email saying your payment has been approved
 * Pending payment is reported as rejected – an email saying your payment is rejected is sent and order is canceled and allotment set back
 
-<div data-with-frame="true"><figure><img src=".gitbook/assets/07.10.2026_11.36.37_REC.png" alt=""><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/07.10.2026_11.36.37_REC.png" alt="" width="187"><figcaption></figcaption></figure></div>
 
 In the CXL/Error menu, you’ll see bookings where extra orders (such as excursions) were canceled by the service, but the payment was still confirmed. These entries are shown to help you identify and resolve any discrepancies.
 
