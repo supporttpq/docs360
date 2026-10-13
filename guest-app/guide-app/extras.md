@@ -154,7 +154,9 @@ Of the other tabs on a route, only **Brands** is used for this type of Extra.
 
 **Recommended setup:** two cash types (one in, one out), two regular credit card types (one in, one out) and two Dankort types (one in, one out).
 
-**Payment fees:** most credit card types carry a fee of 25 kr (3.33 EUR) per order. Cash carries the same fee when the order currency is DKK.
+**Payment fees:** the Card Fee is a fixed fee of 25 DKK per order paid by card. It is not configurable. The Cash Fee is 0. To remove the card fee, contact Tourpaq Support.
+
+<figure><img src="../../.gitbook/assets/image (391).png" alt="Shopping Cart in the Guide App. With Cash selected, Cash Fee shows 0.00 DKK. With Card selected, Card Fee shows 25.00 DKK."><figcaption><p>Cash Fee is 0.00 DKK when paying with cash (top). Card Fee is 25.00 DKK when paying by card (bottom).</p></figcaption></figure>
 
 **Payment and cancellation**
 

@@ -232,8 +232,11 @@ After finishing with setting up everything in here, the guide is ready to go.
 
 #### Payment fees
 
-* Most (if not all) credit card types come with a tax of 25 kr (3.33 EUR) which applies to an order.
-* A tax of 25 kr (3.33 EUR) is also present for the cash payment if the currency of the order is DKK.
+* **Card Fee**: a fixed fee of 25 DKK applies to each order paid by card. It is not configurable.
+* **Cash** Fee: 0. No fee applies to cash payments.
+* To remove the card fee, contact Tourpaq support.
+
+<figure><img src=".gitbook/assets/image (391).png" alt="Shopping Cart in the Guide App. With Cash selected, Cash Fee shows 0.00 DKK. With Card selected, Card Fee shows 25.00 DKK."><figcaption><p>Cash Fee is 0.00 DKK when paying with cash (top). Card Fee is 25.00 DKK when paying by card (bottom).</p></figcaption></figure>
 
 In order to proceed with using the earlier created payments, the user must select an available excursion from the list (**in the APP**), tap on buy, fill all the details and select a desired method of payment (cash, agent machine or card). If for example one selects Cash, but no Cash method of payment is configured in the backoffice, the system will not complete the order, as it will not find a matching method of payment into the system.
 
