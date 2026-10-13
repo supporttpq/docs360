@@ -105,7 +105,7 @@ Open the guide on the Edit Guide page and assign the payment types. To use the D
    ![](https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-a19d154c7e21ba6af3219e899ec7774e58bc9fd4%2Fguide-app-add-to-cart.png?alt=media)
 4. On **Cart Checkout**, check the excursion, date, passengers (**Pax**), price and the observation fields.
 5. Select the payment type under **Paid by**: cash, agent machine or card.\
-   ![](https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-8be7c859c796c2b9a056c939465f288678982800%2Fguide-app-cart-checkout.png?alt=media)
+   ![](<../../.gitbook/assets/fee (1).jpg>)
 6. Complete the order.
 {% endstep %}
 
