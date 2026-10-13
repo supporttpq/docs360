@@ -438,7 +438,7 @@
   * [Guides](guest-app/guide-app/guides.md)
   * [Reminder](guest-app/guide-app/reminder.md)
   * [Reports](guest-app/guide-app/reports.md)
-  * [Sms](guest-app/guide-app/sms.md)
+  * [SMS](guest-app/guide-app/sms.md)
   * [Conversations](guest-app/guide-app/conversations.md)
 
 ## Extras Setup

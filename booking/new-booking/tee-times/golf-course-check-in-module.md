@@ -41,7 +41,7 @@ The purpose of the check‑in module is to:
 
 ### Configuration: TeeTime Category Type
 
-For the Golf Course Check-In module to work, the underlying tee-time product's Extras Category must use the TeeTime Category Type (Extras Setup → Extras → Basic setup). Setting the category to this type enables a Tee Time Rules section on the product, which is what actually drives the check-in kiosk and Master Module:&#x20;
+For the Golf Course Check-In module to work, the underlying tee-time product's Extras Category must use the TeeTime Category Type (Extras Setup → Extras → Basic setup). Setting the category to this type enables a Tee Time Rules section on the product, which is what actually drives the check-in kiosk and Master Module:
 
 <figure><img src="../../../.gitbook/assets/15.09.2026_14.50.21_REC.png" alt=""><figcaption></figcaption></figure>
 
@@ -57,6 +57,24 @@ For the full field reference and how the Generic Allotment (daily/weekly slots, 
 ### 1. Customer Check‑In Flow (Kiosk)
 
 <figure><img src="../../../.gitbook/assets/image (474).png" alt="Customer check-in kiosk flow for tee times (screens overview)"><figcaption></figcaption></figure>
+
+#### Agency Display in Self Check-in
+
+Agencies are not configured directly for the Self Check-in screen. The system determines which Agencies to display dynamically based on bookings scheduled for the current UTC date.
+
+The system retrieves bookings that meet all the following criteria:
+
+* The booking is associated with a Tee Time product.
+* The product has the TeeTime Category Type.
+* The product uses the Generic allotment type.
+
+The system groups the matching bookings by Agency and displays only Agencies with at least one matching booking for the current UTC date.
+
+Example: If only Agency A and Agency B have bookings that meet these criteria for today, only those Agencies appear on the Self Check-in screen. An Agency without a matching booking is not displayed, even if it exists in the system.
+
+**Important:** The Agency list is generated dynamically from booking data. No separate Agency configuration is required for this screen.
+
+<figure><img src="../../../.gitbook/assets/self-checkin-blurred.png" alt=""><figcaption></figcaption></figure>
 
 #### Screen 1 – Booking number entry
 
@@ -168,7 +186,7 @@ Access: on the Self Check-In screen, tap the small gear icon in the bottom-left 
 * **Username:** Extra ProductID (for example, `3692`)
 * **Password:** A 4‑digit PIN displayed in the extra configuration (the extra's TeeTime Pin field).
 
-PIN generation: the TeeTime Pin is a system-generated identifier stored on the tee-time product's Tee Time Rules configuration (Extras Setup → Extras, product using the TeeTime Category Type).&#x20;
+PIN generation: the TeeTime Pin is a system-generated identifier stored on the tee-time product's Tee Time Rules configuration (Extras Setup → Extras, product using the TeeTime Category Type).
 
 <figure><img src="../../../.gitbook/assets/15.09.2026_14.40.36_REC.png" alt=""><figcaption></figcaption></figure>
 
