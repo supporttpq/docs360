@@ -260,7 +260,7 @@ After setting the excursion up, we can proceed to the next stage: the one of boo
 
 #### Select a payment type and complete checkout
 
-<div data-with-frame="true"><figure><img src=".gitbook/assets/guide-app-cart-checkout.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/fee (1).jpg" alt="" width="375"><figcaption></figcaption></figure></div>
 
 
 
