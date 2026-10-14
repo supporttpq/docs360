@@ -86,6 +86,23 @@ It reads: "Our chat is open 7 days before departure – but you can contact us a
 
 <figure><img src="../../.gitbook/assets/imagesguide-app-conversation-info-popup (2).png" alt="Information window showing booking number, hotel, resort, agency, adults and children"><figcaption></figcaption></figure>
 {% endstep %}
+
+{% step %}
+**Open a conversation and chat with the guest**
+
+1. Tap the guest name in a conversation row. Do not tap the information icon.
+2. The chat opens. The guest name is at the top of the screen and the message history is below it.
+3. Type your message in the field at the bottom of the screen and tap **Send**.
+4. To add a picture, tap **Media**, then tap **Choose a picture** or **Take a picture**. To close the window without adding a picture, tap [**Cancel**](#user-content-fn-1)[^1].
+
+When you open a conversation from **Untaken conversations**,[ ](#user-content-fn-1)[^1]it is moved from **Untaken conversations** to **My conversations.**
+
+<div><figure><img src="../../.gitbook/assets/guide-app-conversation-chat.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/guide-app-conversation-media.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/guide-app-my-conversations.jpg" alt=""><figcaption></figcaption></figure></div>
+
+
+
+
+{% endstep %}
 {% endstepper %}
 
 #### Conversations in Tourpaq Office
@@ -179,3 +196,5 @@ The **Customer chat** window lists unread conversations. Whether a read conversa
 * [Guest App](file:///guest-app/visit-sun-app.md)
 * [Guide teams](file:///guides.md)
 * [Users](file:///users/users.md)
+
+[^1]: 
