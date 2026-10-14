@@ -556,7 +556,8 @@
 * [Currency rates](setup/price-currency.md)
 * [Vouchers](setup/vouchers.md)
 * [Autobilling](setup/autobilling.md)
-* [SSR Codes](setup/ssr-codes.md)
+* [SSR Codes](setup/ssr-codes/README.md)
+  * [SSR Codes whitelist and PNL reporting format](setup/ssr-codes/ssr-codes-whitelist-and-pnl-reporting-format.md)
 * [Web Booking API flow](setup/web-booking-api-flow.md)
 
 ## Integration

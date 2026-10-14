@@ -200,3 +200,5 @@ In the SunClass example, the exported value may use the configured Sun Class Cod
 * Passenger selects vegetarian meal during booking
 * Booking stores SSR `VLML`
 * SunClass exports convert the SSR to mapping value `V`
+
+For the full whitelist, the code format each report writes, and the PNL layouts, see [SSR Codes whitelist and PNL reporting format](ssr-codes-whitelist-and-pnl-reporting-format.md)
