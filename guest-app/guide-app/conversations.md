@@ -97,11 +97,7 @@ It reads: "Our chat is open 7 days before departure – but you can contact us a
 
 When you open a conversation from **Untaken conversations**,[ ](#user-content-fn-1)[^1]it is moved from **Untaken conversations** to **My conversations.**
 
-<div><figure><img src="../../.gitbook/assets/guide-app-conversation-chat.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/guide-app-conversation-media.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/guide-app-my-conversations.jpg" alt=""><figcaption></figcaption></figure></div>
-
-
-
-
+<div><figure><img src="../../.gitbook/assets/guide-app-my-conversations.jpg" alt="" width="375"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/guide-app-conversation-chat.jpg" alt="" width="375"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/guide-app-conversation-media.jpg" alt="" width="375"><figcaption></figcaption></figure></div>
 {% endstep %}
 {% endstepper %}
 
