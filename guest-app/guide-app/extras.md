@@ -128,7 +128,7 @@ On **Extras**, open the **Booked** tab and tap the order. Choose whether to refu
 ![](https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-7d0577dff87c7f25a2b676b7d802a4007f39b019%2Fguide-app-booked-extras.png?alt=media)\
 ![](https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-c9d87a3b39173c835ecc619d14e32f0285acb4ec%2Fguide-app-cancel-extras.png?alt=media)
 
-![](https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-f2916c3a5d8ff8d35744c784b7e659b5d0cc2c2e%2Fguide-app-cancel-confirm.png?alt=media) ![](https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-4b31532f9a8af6153bd7ed6b1b47cae8933c6a90%2Fguide-app-order-canceled.png?alt=media)
+<div><img src="https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-f2916c3a5d8ff8d35744c784b7e659b5d0cc2c2e%2Fguide-app-cancel-confirm.png?alt=media" alt="" width="375"> <img src="https://155167782-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4ho2ecpjkno5JvDRSja9%2Fuploads%2Fgit-blob-4b31532f9a8af6153bd7ed6b1b47cae8933c6a90%2Fguide-app-order-canceled.png?alt=media" alt="" width="375"></div>
 {% endstep %}
 {% endstepper %}
 
