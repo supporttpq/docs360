@@ -44,6 +44,10 @@ Vores chat er åben 7 dage før afrejse - men du kan kontakte os på info@exampl
 
 It reads: "Our chat is open 7 days before departure – but you can contact us at info@example.dk."
 
+<figure><img src="../../.gitbook/assets/imagesguest-app-guide-menu (2).png" alt="Guest App Guide tab with the Chat entry between Dine rejseledere and Ugens program" width="375"><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/imagesguest-app-chat-screen (2).png" alt="Guest App chat screen with the opening-time notice, one sent message and the message field" width="375"><figcaption></figcaption></figure>
+
 ### How-to
 
 #### Conversations in the Guide App
@@ -62,6 +66,13 @@ It reads: "Our chat is open 7 days before departure – but you can contact us a
 1. Tap the **SELECTED LIST TYPE** field.
 2. In the **Types of conversations** window, tap **My conversations**, **Untaken conversations** or **Other conversations from the same destination**.
 3. To leave the window without choosing, tap **Close**.
+4. The list shows the conversations of the chosen type. When there are none, the screen shows **No conversations**.
+
+<figure><img src="../../.gitbook/assets/imagesguide-app-types-of-conversations (2).png" alt="Types of conversations window listing the three list types" width="375"><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/imagesguide-app-my-conversations-empty (2).png" alt="Conversations screen with My conversations selected and the text No conversations" width="375"><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/imagesguide-app-other-conversations-empty (2).png" alt="Conversations screen with Other conversations from the same destination selected and No conversations" width="375"><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -70,24 +81,12 @@ It reads: "Our chat is open 7 days before departure – but you can contact us a
 1. Find the conversation in the list. Each row shows the guest name and the booking number, for example `Anna Larsen - 773524`.
 2. Tap the information icon at the right of the row.
 3. Read the booking details, then tap **Ok**.
+
+<figure><img src="../../.gitbook/assets/imagesguide-app-untaken-conversations (2).png" alt="Untaken conversations list with one conversation row and an information icon" width="375"><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/imagesguide-app-conversation-info-popup (2).png" alt="Information window showing booking number, hotel, resort, agency, adults and children"><figcaption></figcaption></figure>
 {% endstep %}
 {% endstepper %}
-
-The list shows the conversations of the chosen type. When there are none, the screen shows **No conversations**.
-
-<figure><img src="../../.gitbook/assets/imagesguest-app-guide-menu (1).png" alt="Guest App Guide tab with the Chat entry between Dine rejseledere and Ugens program" width="375"><figcaption><p>Where a guest starts a chat: the <strong>Chat</strong> entry on the Guest App <strong>Guide</strong> tab.</p></figcaption></figure>
-
-<figure><img src="../../.gitbook/assets/imagesguest-app-chat-screen (1).png" alt="Guest App chat screen with the opening-time notice, one sent message and the message field" width="375"><figcaption><p>The Guest App <strong>Chat</strong> screen with a message sent by the guest.</p></figcaption></figure>
-
-<figure><img src="../../.gitbook/assets/imagesguide-app-types-of-conversations (1).png" alt="Types of conversations window listing the three list types" width="375"><figcaption><p>The three list types in the Guide App.</p></figcaption></figure>
-
-<figure><img src="../../.gitbook/assets/imagesguide-app-my-conversations-empty (1).png" alt="Conversations screen with My conversations selected and the text No conversations" width="375"><figcaption><p>An empty list shows <strong>No conversations</strong>.</p></figcaption></figure>
-
-<figure><img src="../../.gitbook/assets/imagesguide-app-untaken-conversations (1).png" alt="Untaken conversations list with one conversation row and an information icon" width="375"><figcaption><p>A conversation in <strong>Untaken conversations</strong>.</p></figcaption></figure>
-
-<figure><img src="../../.gitbook/assets/imagesguide-app-conversation-info-popup (1).png" alt="Information window showing booking number, hotel, resort, agency, adults and children" width="375"><figcaption><p>The booking details opened with the information icon.</p></figcaption></figure>
-
-<figure><img src="../../.gitbook/assets/imagesguide-app-other-conversations-empty (1).png" alt="Conversations screen with Other conversations from the same destination selected and No conversations" width="375"><figcaption><p><strong>Other conversations from the same destination</strong> with no conversations.</p></figcaption></figure>
 
 #### Conversations in Tourpaq Office
 
@@ -97,18 +96,26 @@ The list shows the conversations of the chosen type. When there are none, the sc
 
 1. Click the chat icon in the top bar, left of your user name. A red number on the icon shows how many conversations are unread.
 2. In the **Customer chat** window, click **Admin Conversation**, **Destination Conversations** or **My conversations**.
+
+<figure><img src="../../.gitbook/assets/imagesoffice-chat-icon-dashboard (2).png" alt="Tourpaq Office dashboard with an arrow pointing at the chat icon showing a red number 4"><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/imagesoffice-customer-chat-admin-conversation (2).png" alt="Customer chat window with the Admin Conversation tab selected and two unread conversations"><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
 **Read the list**
 
 Under **Unread conversations**, find the booking in the table. The columns are **BOOKING**, **BRAND**, **NAME**, **HOTEL**, **RESORT**, **ADULTS**, **CHILDSNO**, **UNREAD**, **LAST MESSAGE DATE** and **TAKEN BY**.
+
+<figure><img src="../../.gitbook/assets/imagesoffice-customer-chat-destination-conversations (2).png" alt="Customer chat window with the Destination Conversations tab selected and one unread conversation"><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
 **Open the chat**
 
 Click the speech bubble icon at the start of the row. A **Chat - Booking No** window opens at the bottom right of the screen. It shows the messages of the booking and the label `- unread` under a message that has not been read.
+
+<figure><img src="../../.gitbook/assets/imagesoffice-chat-window-booking-782502 (2).png" alt="Chat window for booking 782502 opened from the speech bubble icon, with one unread message and a Send button"><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -116,20 +123,12 @@ Click the speech bubble icon at the start of the row. A **Chat - Booking No** wi
 
 1. In the **BOOKING** column, click the booking number.
 2. In the booking, open the **Conversations** tab.
+
+<figure><img src="../../.gitbook/assets/imagesoffice-booking-conversations-tab (2).png" alt="Conversations tab of booking 782502 with one message and empty READ DATE and TAKEN BY columns"><figcaption></figcaption></figure>
 {% endstep %}
 {% endstepper %}
 
 The **Conversations** tab lists every message of the booking with **SENT DATE**, **FROM**, **MESSAGE**, **READ DATE** and **TAKEN BY**. A message from the guest shows the booking number in **FROM**.
-
-<figure><img src="../../.gitbook/assets/imagesoffice-chat-icon-dashboard (1).png" alt="Tourpaq Office dashboard with an arrow pointing at the chat icon showing a red number 4"><figcaption><p>The chat icon in the Tourpaq Office top bar opens <strong>Customer chat</strong>.</p></figcaption></figure>
-
-<figure><img src="../../.gitbook/assets/imagesoffice-customer-chat-admin-conversation (1).png" alt="Customer chat window with the Admin Conversation tab selected and two unread conversations"><figcaption><p>The <strong>Admin Conversation</strong> tab. </p></figcaption></figure>
-
-<figure><img src="../../.gitbook/assets/imagesoffice-customer-chat-destination-conversations (1).png" alt="Customer chat window with the Destination Conversations tab selected and one unread conversation"><figcaption><p>The <strong>Destination Conversations</strong> tab.</p></figcaption></figure>
-
-<figure><img src="../../.gitbook/assets/imagesoffice-chat-window-booking-782502 (1).png" alt="Chat window for booking 782502 opened from the speech bubble icon, with one unread message and a Send button"><figcaption><p>The <strong>Chat - Booking No</strong> window opened from the speech bubble icon.</p></figcaption></figure>
-
-<figure><img src="../../.gitbook/assets/imagesoffice-booking-conversations-tab (1).png" alt="Conversations tab of booking 782502 with one message and empty READ DATE and TAKEN BY columns"><figcaption><p>The <strong>Conversations</strong> tab of a booking.</p></figcaption></figure>
 
 #### How a guest message is routed
 
@@ -144,11 +143,20 @@ Routing is described on the [Guest App](file:///guest-app/visit-sun-app.md) page
 
 #### Guide App
 
-<table data-search="false"><thead><tr><th>Field</th><th>Description</th></tr></thead><tbody><tr><td><strong>SELECTED LIST TYPE</strong></td><td>Chooses which conversations the screen lists. Tap it to open <strong>Types of conversations</strong>.</td></tr><tr><td><strong>My conversations</strong></td><td>List type.</td></tr><tr><td><strong>Untaken conversations</strong></td><td>List type.</td></tr><tr><td><strong>Other conversations from the same destination</strong></td><td>List type.</td></tr><tr><td><strong>Close</strong></td><td>Closes <strong>Types of conversations</strong> without changing the list type.</td></tr><tr><td>Conversation row</td><td>One conversation: the guest name and the booking number, separated by a dash.</td></tr><tr><td>Information icon</td><td>Opens the booking details of the conversation.</td></tr><tr><td><strong>No conversations</strong></td><td>Text shown when the chosen list type has no conversations.</td></tr></tbody></table>
+| Field                                             | Description                                                                              |
+| ------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| **SELECTED LIST TYPE**                            | Chooses which conversations the screen lists. Tap it to open **Types of conversations**. |
+| **My conversations**                              | List type.                                                                               |
+| **Untaken conversations**                         | List type.                                                                               |
+| **Other conversations from the same destination** | List type.                                                                               |
+| **Close**                                         | Closes **Types of conversations** without changing the list type.                        |
+| Conversation row                                  | One conversation: the guest name and the booking number, separated by a dash.            |
+| Information icon                                  | Opens the booking details of the conversation.                                           |
+| **No conversations**                              | Text shown when the chosen list type has no conversations.                               |
 
 #### Tourpaq Office: Customer chat
 
-<table data-search="false"><thead><tr><th>Field</th><th>Description</th></tr></thead><tbody><tr><td><strong>Admin Conversation</strong></td><td>Tab with unread conversations.</td></tr><tr><td><strong>Destination Conversations</strong></td><td>Tab with unread conversations.</td></tr><tr><td><strong>My conversations</strong></td><td>Tab with conversations.</td></tr><tr><td><strong>BOOKING</strong></td><td>Booking number of the conversation.</td></tr><tr><td><strong>BRAND</strong></td><td>Brand of the booking.</td></tr><tr><td><strong>NAME</strong></td><td>Guest name of the booking.</td></tr><tr><td><strong>HOTEL</strong></td><td>Hotel of the booking.</td></tr><tr><td><strong>RESORT</strong></td><td>Resort of the booking.</td></tr><tr><td><strong>ADULTS</strong></td><td>Number of adults on the booking.</td></tr><tr><td><strong>CHILDSNO</strong></td><td>Number of children on the booking.</td></tr><tr><td><strong>UNREAD</strong></td><td>Number of unread messages in the conversation.</td></tr><tr><td><strong>LAST MESSAGE DATE</strong></td><td>Date and time of the latest message.</td></tr><tr><td><strong>TAKEN BY</strong></td><td>The Tourpaq user who took the conversation.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Description</th><th data-hidden>Required</th></tr></thead><tbody><tr><td><strong>Admin Conversation</strong></td><td>Tab with unread conversations.</td><td>No</td></tr><tr><td><strong>Destination Conversations</strong></td><td>Tab with unread conversations.</td><td>No</td></tr><tr><td><strong>My conversations</strong></td><td>Tab with conversations.</td><td>No</td></tr><tr><td><strong>BOOKING</strong></td><td>Booking number of the conversation.</td><td>No</td></tr><tr><td><strong>BRAND</strong></td><td>Brand of the booking.</td><td>No</td></tr><tr><td><strong>NAME</strong></td><td>Guest name of the booking.</td><td>No</td></tr><tr><td><strong>HOTEL</strong></td><td>Hotel of the booking.</td><td>No</td></tr><tr><td><strong>RESORT</strong></td><td>Resort of the booking.</td><td>No</td></tr><tr><td><strong>ADULTS</strong></td><td>Number of adults on the booking.</td><td>No</td></tr><tr><td><strong>CHILDSNO</strong></td><td>Number of children on the booking.</td><td>No</td></tr><tr><td><strong>UNREAD</strong></td><td>Number of unread messages in the conversation.</td><td>No</td></tr><tr><td><strong>LAST MESSAGE DATE</strong></td><td>Date and time of the latest message.</td><td>No</td></tr><tr><td><strong>TAKEN BY</strong></td><td>The Tourpaq user who took the conversation.</td><td>No</td></tr></tbody></table>
 
 #### Tourpaq Office: booking Conversations tab
 
