@@ -107,7 +107,7 @@ After sign-in, the **Home** screen shows the sections listed under Field Referen
 
 #### Select Brand screen
 
-<figure><img src="../../.gitbook/assets/guide-app-select-brand.png" alt="Select Brand screen with a Select Brand drop-down list and a green Save button" width="178"><figcaption><p>The Select Brand screen, shown over a blurred Home screen.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/guide-app-select-brand.png" alt="Select Brand screen with a Select Brand drop-down list and a green Save button" width="178"><figcaption><p>The Select Brand screen</p></figcaption></figure>
 
 | Field            | Description                                 |
 | ---------------- | ------------------------------------------- |
@@ -116,7 +116,7 @@ After sign-in, the **Home** screen shows the sections listed under Field Referen
 
 #### Side menu
 
-<figure><img src="../../.gitbook/assets/guide-app-side-menu.png" alt="Side menu listing the ten Home sections, then Change Password and Logout, with the brand selector at the bottom" width="188"><figcaption><p>The side menu, opened with the three lines icon from inside a section.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/guide-app-side-menu.png" alt="Side menu listing the ten Home sections, then Change Password and Logout, with the brand selector at the bottom" width="375"><figcaption><p>The side menu, opened with the three lines icon </p></figcaption></figure>
 
 | Item                                                                                                                               | Description                                                                                    |
 | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
