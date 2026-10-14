@@ -70,7 +70,7 @@ It reads: "Our chat is open 7 days before departure – but you can contact us a
 
 <figure><img src="../../.gitbook/assets/imagesguide-app-types-of-conversations (2).png" alt="Types of conversations window listing the three list types" width="375"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/imagesguide-app-my-conversations-empty (2).png" alt="Conversations screen with My conversations selected and the text No conversations" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/conversation1.jpg" alt="Conversations screen with My conversations selected and the text No conversations" width="375"><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/imagesguide-app-other-conversations-empty (2).png" alt="Conversations screen with Other conversations from the same destination selected and No conversations" width="375"><figcaption></figcaption></figure>
 {% endstep %}
@@ -78,7 +78,7 @@ It reads: "Our chat is open 7 days before departure – but you can contact us a
 {% step %}
 **Check which booking a conversation belongs to**
 
-1. Find the conversation in the list. Each row shows the guest name and the booking number, for example `Anna Larsen - 773524`.
+1. Find the conversation in the list. Each row shows the guest name and the booking number, for example `Name Surname - 773524`.
 2. Tap the information icon at the right of the row.
 3. Read the booking details, then tap **Ok**.
 
