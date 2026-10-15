@@ -64,13 +64,21 @@ In **Room Restrictions**, tick the occupancy combinations you want to restrict, 
 {% step %}
 ### Add a brand-specific description
 
-Click **+** next to a room type to open its description editor. Write the **Default text**, or select a brand tab (for example **Bravo Tours**) to write a description shown only to that brand, then click **Save**.
+Click **+** next to a room type to open its description editor. Write the **Default text**, or select a brand tab to write a description shown only to that brand, then click **Save**.
 {% endstep %}
 
 {% step %}
 ### Hide, show, or remove a room type
 
 Tick **Hide Room** to take a room type out of sale without deleting it. Tick **Show hidden** to bring hidden room types back into the list. Click the trash icon and confirm to permanently delete a room type from the hotel.
+{% endstep %}
+
+{% step %}
+### Use a room type for Custom Hotel Days
+
+Enable **Custom Hotel Days Booking** on the hotel's [General tab](general-tab.md). Then tick **Used for Custom Hotel Day** on each room type that is used for Custom Hotel Day bookings. Generate allotment for the room type, click **Copy Room Cost** to create its room cost lines, and enter the price. Enter the daily prices under **Price List → Price List Hotel Days**. See [Price List Custom Hotel Days](../../price-list-custom-hotel-days-service.md).
+
+
 {% endstep %}
 {% endstepper %}
 
@@ -82,26 +90,25 @@ Deleting a room type removes it from this hotel. Confirm it isn't referenced in 
 
 #### Field Reference
 
-<figure><img src="../../.gitbook/assets/room-types-list.jpeg" alt="Room Types tab for a hotel, listing three room types with their bed counts, hide and base room controls"><figcaption><p>The Room Types tab for a hotel.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/room-types-custom-hotel-day-blurred.png" alt="Room Types tab of a hotel, with the Used for Custom Hotel Day column showing a ticked checkbox for two of the three room types"><figcaption><p>The Room Types tab for a hotel. The Used for Custom Hotel Day column sits between Hide Room and Base Room.</p></figcaption></figure>
 
 Room Types list
 
-| Field                   | Description                                                                                                 | Notes                                                                                   |
-| ----------------------- | ----------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| **Room Code**           | The room type's code for this hotel. Click it to open its occupancy and infant settings.                    | Set when the room type is created; not editable afterwards.                             |
-| **Room Name**           | The room type's display name in Tourpaq Office.                                                             | Maintained on the linked Base Room Type record — click **Link** to edit it.             |
-| **List Name**           | The room type's name used in export files.                                                                  | Corresponds to the **List Text** field on the linked Base Room Type record.             |
-| **Ordinary Bed Number** | The number of standard beds in the room, used to build its occupancy combinations.                          | Edit via **Room Code → Ordinary bed number**, described under Room type settings below. |
-| **Extra Bed Adults**    | The number of extra beds available for adults.                                                              | Edit via **Room Code → Extra beds adult**.                                              |
-| **Extra Bed Childs**    | The number of extra, child-sized beds.                                                                      | Edit via **Room Code → Extra beds child**.                                              |
-| **Order**               | The room type's sort position, used to prioritise room offers elsewhere in Tourpaq.                         | Related to Customise room offer priority on the hotel's [General ta](general-tab.md)b.  |
-| **Hide Room**           | Removes the room type from sale without deleting it.                                                        | Hidden room types are excluded from this list unless **Show hidden** is ticked.         |
-| **Base Room**           | Opens the room type's linked [Base Room](../../base-room-types.md) [Type](../../base-room-types.md) record. |                                                                                         |
-| **Create**              | Opens a blank room type so you can add it to the hotel.                                                     |                                                                                         |
-| **Show hidden**         | Shows room types that have **Hide Room** ticked, in addition to visible ones.                               |                                                                                         |
-| **Delete (trash icon)** | Permanently deletes the room type from the hotel, after a confirmation prompt.                              | Cannot be undone.                                                                       |
-
-
+| Field                         | Description                                                                                                 | Notes                                                                                                                                                                                                                                                                                                                                                                |
+| ----------------------------- | ----------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Room Code**                 | The room type's code for this hotel. Click it to open its occupancy and infant settings.                    | Set when the room type is created; not editable afterwards.                                                                                                                                                                                                                                                                                                          |
+| **Room Name**                 | The room type's display name in Tourpaq Office.                                                             | Maintained on the linked Base Room Type record — click **Link** to edit it.                                                                                                                                                                                                                                                                                          |
+| **List Name**                 | The room type's name used in export files.                                                                  | Corresponds to the **List Text** field on the linked Base Room Type record.                                                                                                                                                                                                                                                                                          |
+| **Ordinary Bed Number**       | The number of standard beds in the room, used to build its occupancy combinations.                          | Edit via **Room Code → Ordinary bed number**, described under Room type settings below.                                                                                                                                                                                                                                                                              |
+| **Extra Bed Adults**          | The number of extra beds available for adults.                                                              | Edit via **Room Code → Extra beds adult**.                                                                                                                                                                                                                                                                                                                           |
+| **Extra Bed Childs**          | The number of extra, child-sized beds.                                                                      | Edit via **Room Code → Extra beds child**.                                                                                                                                                                                                                                                                                                                           |
+| **Order**                     | The room type's sort position, used to prioritise room offers elsewhere in Tourpaq.                         | Related to Customise room offer priority on the hotel's [General ta](general-tab.md)b.                                                                                                                                                                                                                                                                               |
+| **Hide Room**                 | Removes the room type from sale without deleting it.                                                        | Hidden room types are excluded from this list unless **Show hidden** is ticked.                                                                                                                                                                                                                                                                                      |
+| **Used for Custom Hotel Day** | Enables prices per day to be created for the room type.                                                     | Enable Custom Hotel Days Booking on the [General tab](general-tab.md) first. It allows rooms to use the Hotel Price Per Day option (A la carte). After ticking, generate allotment and room cost for the room, then enter prices per day under Price List → Price List Hotel Days. See [Price List Custom Hotel Days](../../price-list-custom-hotel-days-service.md) |
+| **Base Room**                 | Opens the room type's linked [Base Room](../../base-room-types.md) [Type](../../base-room-types.md) record. |                                                                                                                                                                                                                                                                                                                                                                      |
+| **Create**                    | Opens a blank room type so you can add it to the hotel.                                                     |                                                                                                                                                                                                                                                                                                                                                                      |
+| **Show hidden**               | Shows room types that have **Hide Room** ticked, in addition to visible ones.                               |                                                                                                                                                                                                                                                                                                                                                                      |
+| **Delete (trash icon)**       | Permanently deletes the room type from the hotel, after a confirmation prompt.                              | Cannot be undone.                                                                                                                                                                                                                                                                                                                                                    |
 
 {% hint style="warning" %}
 Editing a field on the linked Base Room Type record changes it for every hotel that shares that Base Room Type, not only this one.
@@ -109,7 +116,7 @@ Editing a field on the linked Base Room Type record changes it for every hotel t
 
 #### Room type settings
 
-<figure><img src="../../.gitbook/assets/room-type-settings.png" alt="Room type settings screen showing bed numbers, minimum age, infant fields, and the Room Restrictions table"><figcaption><p>Occupancy and infant settings for a room type, with Room Restrictions.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/room-type-settings-blurred (1).png" alt="Room type settings form with bed numbers, minimum age and infant fields on the left and the Room Restrictions table on the right"><figcaption><p>Occupancy and infant settings for a room type, with Room Restrictions.</p></figcaption></figure>
 
 | Field                   | Description                                              | Notes                                                                                                                                                                                                                                        |
 | ----------------------- | -------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -145,7 +152,7 @@ The room configuration determines whether an infant is allowed and whether the i
 
 #### Room description
 
-<figure><img src="../../.gitbook/assets/room-description.jpeg" alt="Room description editor opened from the plus icon, showing the Default text and brand tabs"><figcaption><p>The room type description editor, with per-brand tabs.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/room-description-editor-blurred.png" alt="Room description editor opened from the plus icon, showing the Default text tab and a brand tab above an empty text box"><figcaption><p>The room type description editor, with per-brand tabs.</p></figcaption></figure>
 
 Click **+** next to a room type to write a description shown to customers. Use the **Default text** tab for the description shown when no brand-specific text is set, or select a brand tab to write text shown only to that brand.
 
