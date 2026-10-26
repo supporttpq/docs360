@@ -33,7 +33,6 @@ Use allotments to manage hotel contracts by setting aside a fixed number of room
 * **Allotment status / Extend** –
   * **Calendar icon**: Shows the last generated date.
   * **Extend**: Extends the allotment beyond **Period Stop**.
-* **Delete (trash icon)** – Deletes the selected allotment line.
 
 Click **Save** to store your changes.
 
@@ -48,6 +47,35 @@ Rooms cannot be used in bookings until the allotment is **generated**.
 The **Extend** button lets you extend the same allotment line without creating a new row. Enter a new **Period Stop** date and click **Extend**.
 
 <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+#### Delete Hotel Allotments
+
+There are two ways to delete allotments, each with a different impact on room availability and pricelists.
+
+1. **Delete Allotment (trash icon under "Delete Allotment" column)**
+
+This option deletes all records associated with the allotments from hotel for the selected period without removing the allotment line or its associated pricelists.
+
+* The associated pricelists remain available in the system;
+* The room still appear as available for sale in Booking;
+* Use this option when you want to remove the generated allotments, for example, to regenerate them;
+* If any active bookings exist within the allotment period, the allotment cannot be deleted;
+* If all active bookings are cancelled, the allotment can be deleted;
+* Attempting to complete a booking will result in an error because there are no allotments available: _"The room you trying to book has no allotments!"_
+
+2. **Delete Allotment Line (trash icon under "Delete" column)**
+
+This option deletes the entire allotment line, including its associated pricelists for the selected period.
+
+* The associated pricelists are permanently deleted;
+* The room will no longer be available for sale in Booking for the affected configuration and period;
+* If any bookings have been created within the allotment period, the line cannot be deleted, even if those bookings have been cancelled.
+
+**Note:**&#x20;
+
+For both delete options, when deletion is blocked due to existing bookings, the following warning message is displayed:&#x20;
+
+_"You are not allowed to delete this connection, as it has connection allotments that have been booked!"_
 
 #### Hotel allotment control
 
