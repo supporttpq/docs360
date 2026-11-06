@@ -21,6 +21,8 @@ layout:
     visible: true
   actions:
     visible: true
+  anchors:
+    visible: true
 ---
 
 # Profit margin rules
@@ -58,7 +60,7 @@ Using the profit margin rule, all agencies can:
 * Automatically generate accurate, up-to-date **price lists**.
 * Reduce manual maintenance through **flexible**, **reusable**, and **automated** rules.
 
-<figure><img src=".gitbook/assets/image (5) (1) (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (650).png" alt="Profit Margin Rules Overview"><figcaption></figcaption></figure>
 
 ### **Instructions**
 
@@ -71,6 +73,7 @@ Use the filters to narrow down the list of rules displayed below.
 * **Departures / Arrivals:** Filter rules by departure or arrival locations.
 * **Resorts:** Select a specific resort if you want to see only rules for that destination.
 * **Passenger Type:** Choose the type of passenger (e.g., Adult, Child) that the rule applies to.
+* **Transport Type:** Filter rules by transport type.
 * **Stay Length:** Filter by the length of stay defined in the rule. Used to filter rules for a specific stay length. Valid input: `7`, `6-8`, `7,14`.
 * **Show older:** When enabled, displays Profit Margin rules with Departure Stop date in the past.
 * **Show codes:** Displays system codes instead of names, useful for internal references.
@@ -127,6 +130,18 @@ The system automatically applies these margins to all bookings that match the de
 1. Click the **edit icon (pencil)** next to the rule you want to modify.
 2. Update the required fields in the edit dialog.
 3. Save changes and verify they appear correctly in the grid.
+
+For **Resort** rules, you can also add or remove resorts and hotels after the rule is saved. Use this to add new hotels to an existing rule during the season, instead of creating a new rule, or to move a hotel from one rule to another.
+
+* Select or clear resorts in the **Resort** column and hotels in the **Hotel** column, then click the **save icon**.
+* After saving, the profit margin of the rule is applied to the price lists of the added resorts and hotels and is no longer applied to those of the removed ones. Resorts and hotels that stay on the rule are not recalculated.
+* **Brand**, **Rule**, **Passenger**, **Arrival**, **Transport Type** and **Transport** cannot be changed after the rule is saved.
+
+<figure><img src=".gitbook/assets/pmr-edit-saved-resort-rule.png" alt="Resort rule in edit mode: Brand, Rule, Passenger and Arrival are locked, Resort and Hotel are editable"><figcaption><p>Resort rule in edit mode</p></figcaption></figure>
+
+{% hint style="warning" %}
+If a hotel is already covered by another rule for an overlapping period, the rule is not saved. To move a hotel to another rule, remove it from the first rule and save, then add it to the other rule.
+{% endhint %}
 
 Profit Margin Rules support multiple profit margins per rule, which increases flexibility.
 
