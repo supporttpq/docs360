@@ -20,6 +20,8 @@ layout:
     visible: true
   actions:
     visible: true
+  anchors:
+    visible: true
 ---
 
 # Payment File Import
@@ -31,7 +33,7 @@ layout:
 This is a function that allows importing in the system the payments that have been made to the bank by the customers.
 
 {% hint style="info" %}
-Each company in the system can choose a certain bank where its payments will be made.
+The company selects the banks it uses in **System Setup**, and each brand has its own **Bank** and **Creditor number** in the brand's **General** settings.
 {% endhint %}
 
 The bank will provide a file with payments together with the specification for importing them in the system.
@@ -59,8 +61,10 @@ Although the file format depends on your bank, each payment line normally needs:
 * Make sure you have the **payment file** from your bank.
 * Make sure the file contains the **booking reference/identifier** Tourpaq expects.
 * Each payment from the system has a certain “method of payment” associated. For the payments that come from the bank, a special method of payment will be needed.
+  * The method must be **active** and have **Use for FI payments** checked. It sets the debit/credit accounts used for the payments.
   * If you do not see a suitable method, ask an Admin/Financial user to configure it in [Method of Payment](../method-of-payment.md).
-* You must have the required permissions (typically **Financial** or **Administrator**).
+* To import one file for all brands (**All Brand**), each brand must have its **Creditor number** set (brand **General** settings). Brands without a creditor number are not included.
+* To upload and process the file you need the **Payment File Import** permission and the **Administrator** or **Brand Manager** role.
 
 {% hint style="info" %}
 Your bank (or your finance setup) should provide the **specification** that explains which file format to export and which booking identifier Tourpaq expects.
@@ -83,6 +87,7 @@ Before importing any payment file, ensure that the correct input type is configu
 <figure><img src="../../.gitbook/assets/image (797).png" alt=""><figcaption></figcaption></figure>
 
 * This setting defines which file formats are supported
+* The banks selected here (Sydbank, Skjern Bank, Danske Bank, Arbejdernes Landsbank) are the options of **Input payment type** on the import screen
 * Different banks/providers may require different formats
 * The system parses the file based on this configuration
 
@@ -103,7 +108,7 @@ To ensure a successful payment import, follow this sequence:
 2. Verify that the file matches the expected provider format\
    (e.g. FI 128-character format)
 3. Import the file via:
-   * **Finance → Payment File Import**
+   * **Finance → Payment File Import**, selecting the **Brand**, **Payment Method** and **Input payment type**
 4. The system processes the file based on the selected configuration
 
 ### Notes
@@ -118,7 +123,7 @@ The format described in this section should be used as a reference guide, not as
 
 ### Import a payment file
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (50).png" alt="Payment File Import screen"><figcaption><p>Upload a bank payment file to import booking payments and validate matching.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/mcp-claude-in-chrome-blob-1794211715212-aeymqc.png" alt="Payment File Import screen with Brand, Payment Method and Input payment type"><figcaption><p>Select the brand, payment method and input payment type, then upload the bank payment file.</p></figcaption></figure>
 
 {% stepper %}
 {% step %}
@@ -136,34 +141,53 @@ Go to **Finance → Payment File Import**.
 {% endstep %}
 
 {% step %}
+#### Select the brand and payment settings
+
+* **Brand** – one brand, or **All Brand** (default) to import one file with the payments of all brands.
+* **Payment Method** – the FI method of payment used for the payments, shown as code - name.
+* **Input payment type** – the bank format of the file. For a single brand, it must match the **Bank** set on that brand.
+
+If only one payment method or input payment type is available, it is selected automatically. **Payment Method** and **Input payment type** are required to process the file.
+{% endstep %}
+
+{% step %}
 #### Upload the file
 
 1. Select the file.
 2. Upload/import it.
 
-<figure><img src="../../.gitbook/assets/image (798).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/payment-file-import-uploaded.png" alt="Payment File Import after a successful upload"><figcaption><p>After a successful upload, the Upload button changes to Process.</p></figcaption></figure>
 
-Tourpaq validates the file during the upload/import.
+Uploading only stores the file. Tourpaq reads and checks its content when you click **Process**.
 {% endstep %}
 
 {% step %}
 #### Process the file
 
-<figure><img src="../../.gitbook/assets/image (799).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/mcp-claude-in-chrome-blob-1794212311069-fi0izv.png" alt="Processed All Brand import with the Brand column"><figcaption><p>Processed file with All Brand: the Brand column shows the brand of each payment.</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
 #### Review validation results
 
-If Tourpaq flags errors (for example missing booking reference or invalid amount), correct the file and upload again.
+If Tourpaq shows an error (for example a creditor number that does not belong to the selected brand(s), or invalid file content), correct the file and upload again.
 
 When the file is accepted, the payments are created in Tourpaq.
+
+* With **All Brand**, a payment is registered on a booking only when the booking number and the creditor number of the booking's brand both match the file.
+* Payments that cannot be matched are listed under **Payments with no correspondent bookings found**. They are saved without a booking and appear in **Finance → Balance Administration → Unregistered Payments**.
+* Both tables have a **Brand** column (after **Accounting Date**); unmatched payments imported with All Brand show **All Brand**.
+* Payments that were already imported are skipped. If all payments in the file were already imported, Tourpaq shows an error.
+
+{% hint style="warning" %}
+If the import fails, no payments from the file are saved.
+{% endhint %}
 {% endstep %}
 
 {% step %}
 #### Verify the imported payments
 
-Open [Payment Registration](../payment-registration.md) and search by payment date range and payment method (for example **BANKIN**) to confirm the payments are listed.
+Open [Payment Registration](../payment-registration.md) and search by payment date range and the payment method you selected (for example **BANKIN**) to confirm the payments are listed.
 {% endstep %}
 {% endstepper %}
 
@@ -172,4 +196,4 @@ Open [Payment Registration](../payment-registration.md) and search by payment da
 ### Notes
 
 * Imported payments are validated during import. Any unmatched or erroneous lines are flagged for review.
-* The payment date used can depend on your bank file and setup. If your import source uses an **accounting date**, Tourpaq may use that date instead of today.
+* Payment date: **Skjern Bank** files use the accounting date from the file; the other banks use the **Payment Date** selected on the screen.
