@@ -11,8 +11,42 @@ This is useful in cases where:
 * Room reservations need to be managed by **stay duration** (e.g., reserving rooms for long stays vs. short stays).
 * The agency protects the rooms from being booked between its normal charter flights, thus using the rooms every day.
 
+### Before you start
+
+Set up the following before you reserve rooms for stay lengths.
+
+#### Room Occupancy
+
 {% hint style="warning" %}
 This option requires **Room Occupancy** to be enabled by a **superadmin**.
+{% endhint %}
+
+#### Minimum Reserve Stay Length
+
+The shortest stay length you can reserve rooms for is set per company in **Setup → System Setup → General Information → Other settings → Minimum Reserve Stay Length**. The setting is visible only when **Room Occupancy** is enabled.
+
+| Value              | Use                        |
+| ------------------ | -------------------------- |
+| **Five** (default) | Stays of 5 days or longer. |
+| **Three**          | Stays of 3 days or longer. |
+
+Stay lengths shorter than the minimum are not shown and cannot be reserved.
+
+#### Transport interval 1
+
+The company must use only transport **interval 1**. Stay lengths are read from interval 1; a company that still has prices on intervals 2, 3 or 4 must switch to interval 1 first.
+
+#### Changing the minimum stay length
+
+When you change the value and save, the dialog **Change Minimum Reserve Stay Length?** opens. It warns that the change can cause errors when booking or when calculating reserved stay lengths.
+
+* Click **Accept & Save** to save the new value.
+* Click **Cancel** to keep the current value. Nothing is saved.
+
+{% hint style="danger" %}
+If rooms are already reserved for stay lengths, contact Tourpaq Support **before** you change the setting.
+
+Reservations for a stay length below the new minimum (for example, 3 or 4 days when you change from **Three** to **Five**) keep affecting the allotment, but they are no longer shown in **Allotment per day** and cannot be edited there. Support must remove them.
 {% endhint %}
 
 ### How to access
@@ -44,17 +78,17 @@ This lets you reserve rooms for specific durations.
 | SECURED       | The number of secured rooms                                                                                                                                                                                                   |
 | GUARANTEED    | The number of guaranteed rooms                                                                                                                                                                                                |
 | BOOK          | Rooms booked for the date.                                                                                                                                                                                                    |
-| FREE          | Rooms still available (`NO. - BOOK`).                                                                                                                                                                                         |
+| FREE          | Rooms still available.                                                                                                                                                                                                        |
 | DAYS          | <p>The number of days before arrival, the release is executed (only daily releases).<br>The cell is empty if no release rules are defined.<br>The cell is editable, allowing the release days to be edited.</p>               |
 | R             | <p>If the release is executed, the box is checked, and the release can be undone by removing the checkmark.</p><p>When a release is undone, edit DAYS with the new deadline and update AR and SR to make rooms available.</p> |
 | AR            | <p>The number of allotment rooms released.</p><p>Edit AR when a release is undone to adjust the number of rooms moved back.</p>                                                                                               |
 | SR            | <p>The number of secured rooms released.<br>Edit SR when a release is undone to adjust the number of rooms moved back.</p>                                                                                                    |
 | PAX 1 - PAX 4 | Max rooms by occupancy (1–4 pax).                                                                                                                                                                                             |
 | MIN           | Minimum stay (nights).                                                                                                                                                                                                        |
-| STAY LENGTH   | Columns where you reserve rooms per stay length.                                                                                                                                                                              |
+| STAY LENGTH   | Columns where you reserve rooms per stay length. Only stay lengths from the company's **Minimum Reserve Stay Length** (3 or 5 days) and up are shown.                                                                         |
 
 {% hint style="warning" %}
-**Stay length (5, 6, 7, 8)**: Hover a cell to see reserved, booked, available, and free rooms for that stay length.
+**Stay length (for example 5, 6, 7, 8)**: Hover a cell to see reserved, booked, available, and free rooms for that stay length.
 {% endhint %}
 
 <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (3).png" alt=""><figcaption></figcaption></figure>
