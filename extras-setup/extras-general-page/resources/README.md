@@ -28,17 +28,20 @@ It is recommended to analyze whether the configuration can be optimized before a
 
 **Arrival Airport** resource for products is not recognized by the old webbooking. The use of this resource is not recommended for companies using the old webbooking.
 
-> Combining multiple resource filters **types** behaves differently in Tourpaq, as follows:
+When an extra has more than one resource type, the **Product Resourser Type** setting decides how they are combined. Set it in **System Setup -> General Information -> Other Settings**.
 
-> combining with **AND** condition
+* **AND** – the booking must match **every** resource type on the extra.
+* **OR** – the booking must match **at least one** resource type on the extra.
 
-* For a product with both Hotel and Transport (or other) resources => offer has the product eligible ONLY IF it contains one of the Hotels **AND** one of the Transport resources center round important 60%>
+**Example:** an excursion has the resources Resort **Rhodos** and Hotel **City Hotel**.
 
-> combining resources with **OR** condition
+| Booking                   | AND           | OR            |
+| ------------------------- | ------------- | ------------- |
+| City Hotel, Rhodos        | ✅ Offered     | ✅ Offered     |
+| Another hotel in Rhodos   | ❌ Not offered | ✅ Offered     |
+| A hotel in another resort | ❌ Not offered | ❌ Not offered |
 
-* For a product with both Hotel and Transport (or other) resources => offer has the product eligible ONLY IF it contains one of the Hotels **OR** one of the Transport resources
-
-This behavior is available by default to all the other companies in the system. It can be set on System Setup -> General Information -> Other Settings
+The setting also applies to Extra Orders in the Guide App and Guest App. An excursion that does not match the booking is not offered, and an order for it is refused with the message _Product \<name> can't be booked for this booking!_
 
 <div data-with-frame="true"><figure><img src="../../../.gitbook/assets/image (277).png" alt="Resource filter settings."><figcaption></figcaption></figure></div>
 
@@ -55,8 +58,8 @@ This behavior is available by default to all the other companies in the system. 
 | **Rooms**               | Associates the room types as resources                                                                               |
 | **Real transports**     | Specifies the real transports associated as resources                                                                |
 | **Arrival airport**     | Specifies the arrival airports associated as resources                                                               |
-| **Destinations**        | Specifies the destinationss associated as resources                                                                  |
-| **Transport Suppliers** | Specifies the transport supplierss associated as resources                                                           |
+| **Destinations**        | Specifies the destinations associated as resources                                                                   |
+| **Transport Suppliers** | Specifies the transport suppliers associated as resources                                                            |
 | **Use as excluded**     | If checked, the extras are eligible for all except the listed resources.                                             |
 
 Each section has an **Edit** button allowing detailed configuration for that specific resource.
