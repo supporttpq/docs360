@@ -164,7 +164,7 @@ Uploading only stores the file. Tourpaq reads and checks its content when you cl
 {% step %}
 #### Process the file
 
-<figure><img src="../../.gitbook/assets/mcp-claude-in-chrome-blob-1794212311069-fi0izv.png" alt="Processed All Brand import with the Brand column"><figcaption><p>Processed file with All Brand: the Brand column shows the brand of each payment.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/payment-file-import-processed.png" alt="Processed All Brand import with the Brand column"><figcaption><p>Processed file with All Brand: the Brand column shows the brand of each payment.</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
