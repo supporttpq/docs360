@@ -36,7 +36,7 @@ You do not need Assign PNR when you submit a booking from Tourpaq. In that case 
 
 {% stepper %}
 {% step %}
-### **Open the GDS tab**
+**Open the GDS tab**
 
 Open the booking and select the **GDS** tab.
 
@@ -44,7 +44,7 @@ The tab shows the PNR code field and the **Assign PNR** button next to the exist
 {% endstep %}
 
 {% step %}
-### **Enter the PNR code**
+**Enter the PNR code**
 
 Type the PNR code from Amadeus into the PNR code field. Enter at least six alphanumeric characters and no spaces.
 
@@ -52,7 +52,7 @@ Type the PNR code from Amadeus into the PNR code field. Enter at least six alpha
 {% endstep %}
 
 {% step %}
-### **Assign the PNR**
+**Assign the PNR**
 
 Click **Assign PNR**.
 
@@ -64,7 +64,7 @@ Tourpaq retrieves the reservation from Amadeus and runs the checks described bel
 {% endstep %}
 
 {% step %}
-### Confirm the result
+Confirm the result
 
 Check that the booking now shows the Amadeus flight information, and open the **History** tab to confirm the entry `Assign PNR for booking`
 {% endstep %}
