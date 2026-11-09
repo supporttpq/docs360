@@ -89,7 +89,9 @@ By default, the price of the sold extra will represent either the currency of th
 
 #### Assign the excursion to a resort
 
-An essential aspect of selling an excursion is that even if Tourpaq supports adding multiples resources to a product—such as transports, hotels, and so on—the application will only take into considerations the resort field. Assign the desired resort or resorts under the **Resurser** tab of the product. Click **New filter type**, select the desired resort, and click **Save filter type** (see the picture below).
+Assign the desired resort or resorts under the **Resurser** tab of the product. Click **New filter type**, select the desired resort, and click **Save filter type** (see the picture below).
+
+Other resources on the excursion, such as hotels, also apply in the apps, combined according to the **Product Resourser Type** setting (AND / OR). An excursion that does not match the booking is not offered, and an order for it is refused. See [Resources](extras-setup/extras-general-page/resources/) for an example.
 
 <div data-with-frame="true"><figure><img src=".gitbook/assets/image (282).png" alt="" width="309"><figcaption></figcaption></figure></div>
 
@@ -102,7 +104,7 @@ In the **Brands** section at the top of the **Overview** tab of the Extra, selec
 | **Guide sale**                            | Orderable as an Extra Order in the Guide App and Guest App.                                                                                                                    |
 | **Guide sale + Internet Sale + For Sale** | Orderable as an Extra Order in the Guide App, Guest App and on the **Extra Orders** tab of the booking. WebBooking requires API support. Reach out to Tourpaq for API support. |
 
-<div data-with-frame="true"><figure><img src=".gitbook/assets/image (367).png" alt="Brands section with the Bravo Tours dropdown open and Guide sale + Internet Sale + For Sale selected" width="375"><figcaption><p>Brand assignment options. </p></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/image (367).png" alt="Brands section with the Bravo Tours dropdown open and Guide sale + Internet Sale + For Sale selected" width="375"><figcaption><p>Brand assignment options.</p></figcaption></figure></div>
 
 #### Generate allotments for the excursion
 
@@ -261,8 +263,6 @@ After setting the excursion up, we can proceed to the next stage: the one of boo
 #### Select a payment type and complete checkout
 
 <div data-with-frame="true"><figure><img src=".gitbook/assets/fee (1).jpg" alt="" width="188"><figcaption></figcaption></figure></div>
-
-
 
 #### **Take payment in local currency (currency converter)**
 
