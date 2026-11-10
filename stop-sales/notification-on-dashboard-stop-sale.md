@@ -7,7 +7,6 @@ The **Stop Sale Notifications** section in the Dashboard allows users to view an
 ### When to use it
 
 * You want to see which Stop Sales will apply soon.
-* You want to find Stop Sales with **Agreed Allotment** set.
 * You want to review Stop Sales without opening each rule.
 
 ### View Stop Sale notifications
@@ -19,37 +18,24 @@ The **Stop Sale Notifications** section in the Dashboard allows users to view an
 1. Go to **Notifications → Stop Sales**.
 2. The **Notifications** page opens with the Stop Sales list.
 
-<figure><img src="../.gitbook/assets/02.06.2026_15.14.02_REC.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/notifications-stop-sales.png" alt="Notifications page with the StopSales tab selected and the list of stop sales: Start Date, End Date, Hotel Name, Room Name, Note, Create Date and View Details"><figcaption><p>Stop Sales notifications</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
 **Understand the default list and columns**
 
 * The default date filter shows Stop Sales for the next **2 weeks** (from today).
-* The **Agreed Allotment** column shows the agreed allotment value on the rule (if set).
+* **Room Name** lists all room types in the stop sale.
+* **View Details** opens the **Releases / Stop Sales Log** filtered on the stop sale.
 
 {% hint style="info" %}
 If you need older or future periods, expand the date range in the filters.
-{% endhint %}
-{% endstep %}
-
-{% step %}
-**Filter to only rules with Agreed Allotment**
-
-1. Enable **Only Agreed Allotment**.
-2. The list updates to show only rules with an agreed allotment value.
-
-<figure><img src="../.gitbook/assets/02.06.2026_15.15.36_REC.png" alt=""><figcaption></figcaption></figure>
-
-{% hint style="info" %}
-Agreed allotment reopens limited availability while the Stop Sale stays active. See [Agreed Allotment Stop Sale](/broken/pages/7gtEfAbpAgh4AY2wE3iA) for details.
 {% endhint %}
 {% endstep %}
 {% endstepper %}
 
 ### Related Stop Sale tasks
 
+* [Stop Sales](../stop-sales.md)
 * [Edit Stop Sale](edit-stop-sale.md)
-* [Agreed Allotment Stop Sale](/broken/pages/7gtEfAbpAgh4AY2wE3iA)
-* [Remove (Undo) Stop Sale](remove-undo-stop-sale.md)
-* [Split the Stop Sale Rule](/broken/pages/e9MGjzNon0N36fK501Aa)
+* [Delete Stop Sale](remove-undo-stop-sale.md)
