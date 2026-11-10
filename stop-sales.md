@@ -2,148 +2,142 @@
 
 ### Overview
 
-The **Stop Sale** page allows users to create a stop sale for specific hotels and room types within a selected date range. A _stop sale_ prevents new bookings for the specified period — it is typically used when a hotel reaches full occupancy or temporarily stops accepting reservations.
+The **Stop Sale** page allows users to create a stop sale for specific hotels and room types within one or more date periods. A _stop sale_ prevents new bookings for the specified period — it is typically used when a hotel reaches full occupancy or temporarily stops accepting reservations.
 
-A supplier can remove a hotel room from selling by creating a stop sale for that room. He can do that by going to the Stop Sale page and filling in the filters for that room and the period. The stop sale will run for each date and reduce the number of rooms available.
+A supplier can remove a hotel room from selling by creating a stop sale for that room. He can do that by going to the Stop Sale page and filling in the hotel, the room and the periods. The allotment of the room is kept as it is; for each date in the period the room is marked as **stopped for sale**.
 
-**Important:** It is not possible to make Stop Sale for secured and guaranteed rooms.
+**Important:** A stop sale blocks **allotment rooms** only. Secured and guaranteed rooms can still be sold — see [Availability calculation](stop-sales.md#availability-calculation-guaranteed-vs-secured-vs-booked).
 
 ### Key rules
 
-* Stop sales apply per day in the selected date range.
-* Stop sales take effect immediately after saving.
-* You cannot create stop sales for **secured rooms**.
-* **Note** can be mandatory, based on your System Setup settings.
+* Stop sales apply per day in the selected date periods.
+* Stop sales are applied by the Stop Sale service in the background after saving.
+* The allotment in **Allotment per Day** is not changed by a stop sale.
+* **Note** can be mandatory, based on your System Setup settings. Maximum 500 characters.
 * Fields marked with a red asterisk (\*) are mandatory.
 
 ### Create a stop sale
 
-Navigate to **Stop Sales → Create New Stop Sale**.
+Navigate to **Hotel → Stop Sales** and click **Create**.
 
-1. Select **Start date** and **End date**.
-2. Select **Brand** (or leave it as _All brands_).
-3. Select the **Hotel**.
-4. Select **Room Type** (optional).
-5. Add a **Note** (optional unless required).
-6. Click **Save**.
+1. Select the **Hotel**. The cursor is already in this field.
+2. Select **Room Type** (optional).
+3. Under **Periods**, select **From** and **To**. Click **+** to add another period. Click the bin icon to remove a period.
+4. Add a **Note** (optional unless required).
+5. Click **Save**.
 
-<figure><img src=".gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/new-stop-sale.png" alt="New Stop Sale page with a hotel, two room types, two From/To periods and a note"><figcaption><p>New Stop Sale with two periods</p></figcaption></figure>
+
+{% hint style="info" %}
+One stop sale is created for each period, with all the selected room types. Periods must not overlap, and at least one period is required.
+{% endhint %}
 
 ### Fields
 
-| Field          | What it controls                                                                                    |
-| -------------- | --------------------------------------------------------------------------------------------------- |
-| **Start date** | First day of the stop sale period.                                                                  |
-| **End date**   | Last day of the stop sale period (inclusive).                                                       |
-| **Brand**      | Brand the stop sale applies to. Default is _All brands_.                                            |
-| **Hotel**      | The hotel that will be blocked for sale.                                                            |
-| **Room Type**  | One or more room types. If empty, the stop sale applies to the whole hotel.                         |
-| **Note**       | Reason for the stop sale (for internal reference and reporting). Can be mandatory via System Setup. |
+| Field         | What it controls                                                                                                    |
+| ------------- | ------------------------------------------------------------------------------------------------------------------- |
+| **Hotel**     | The hotel that will be blocked for sale.                                                                            |
+| **Room Type** | One or more room types. If empty, the stop sale applies to all room types of the hotel.                             |
+| **Periods**   | One or more **From** / **To** date periods (both days included). **To** must be the same as or later than **From**. |
+| **Note**      | Reason for the stop sale (for internal reference and reporting). Can be mandatory via System Setup.                 |
 
 ### Example
 
-To stop sales for **Inside Elounda** on **13 October 2025** for room type _DBL.VM_:
+To stop sales for **Maspalomas Princess** for two room types in two weeks:
 
-* **Start date:** 13-10-2025
-* **End date:** 13-10-2025
-* **Brand:** All brands
-* **Hotel:** 107754 – Inside Elounda
-* **Room Type:** DBL.VM
-* **Note:** Fully booked for the selected date
+* **Hotel:** LPA004 – Maspalomas Princess
+* **Room Type:** Double Room with balcony/terrace, Junior Suite with balcony/terrace
+* **Periods:** 16-05-2027 to 22-05-2027, and 20-06-2027 to 26-06-2027
+* **Note:** Fully booked for the selected dates
 
-Click **Save** to create the stop sale.
+Click **Save**. Two stop sales are created, one for each period.
 
-### Availability calculation (guaranteed vs booked)
+### Availability calculation (guaranteed vs secured vs booked)
 
-When a stop sale is applied, availability is recalculated against:
+While a stop sale is active, the allotment rooms cannot be sold. Only guaranteed or secured rooms can still be sold:
 
-* **Guaranteed rooms** (if configured)
-* **Booked rooms**
+`Rooms for sale = Guaranteed (or Secured) − Booked` (never below 0).
 
-Rules:
-
-* If guaranteed rooms exist and **guaranteed > booked**, availability is reduced to the **guaranteed** number.
-* If guaranteed rooms do not exist, or **booked ≥ guaranteed**, availability is reduced to the **booked** number.
+{% hint style="info" %}
+A room type has either guaranteed or secured rooms on a date, never both. Tourpaq does not save an allotment with both values and shows: _There can not be both guaranteed rooms and secured rooms on the same allotment!_
+{% endhint %}
 
 #### Scenarios
 
-| Available rooms before | Guaranteed rooms | Booked rooms | Available rooms after |
-| ---------------------- | ---------------- | ------------ | --------------------- |
-| 10                     | 5                | 4            | 5                     |
-| 10                     | 5                | 6            | 6                     |
-| 10                     | –                | 6            | 6                     |
-| 10                     | –                | 10           | 10                    |
+| Allotment | Secured | Guaranteed | Booked | Rooms for sale |
+| --------- | ------- | ---------- | ------ | -------------- |
+| 10        | –       | 5          | 4      | 1              |
+| 10        | –       | 5          | 6      | 0              |
+| 10        | 3       | –          | 1      | 2              |
+| 10        | –       | –          | 6      | 0              |
+
+{% hint style="info" %}
+**Cancelled rooms stay stopped.** If a booking is cancelled while the stop sale is active, the room does not go back on sale.
+{% endhint %}
 
 ### What happens after saving
 
-After you create a stop sale, the supplier is redirected to the **Hotel Allotment** page.
+After you create a stop sale, you return to the **Stop Sales** list.
 
-Filters are automatically filled so you can review the change.
+The room types are marked as stopped for sale for each date of the periods. In **Allotment per Day**, a yellow warning icon is shown next to the **Allotment** value.
 
-<figure><img src=".gitbook/assets/image (66) (1).png" alt=""><figcaption></figcaption></figure>
-
-If you create a stop sale for the whole hotel, the system saves it as **one stop sale per room type**.
+Room types added to the hotel later are not included automatically. To block them, add them to the existing stop sale — see [Edit Stop Sale](stop-sales/edit-stop-sale.md).
 
 ### Manage stop sales (admin view)
 
-On **Hotel → Stop Sales**, you can see all stop sales, including _ignored_ ones.
+On **Hotel → Stop Sales**, you can see all stop sales.
 
-Ignored stop sales are shown with a red background.
+All lines are open for editing. Change **From**, **To**, **Room**, **Note** or **Hidden** in the list and click **Save** at the bottom of the page — see [Edit Stop Sale](stop-sales/edit-stop-sale.md).
 
-You can **Enable** or **Disable** any stop sale.
+To remove a stop sale, click the bin icon on its line — see [Delete Stop Sale](stop-sales/remove-undo-stop-sale.md).
 
-If you disable a stop sale, the Stop Sale service ignores it when recalculating availability.
-
-<figure><img src=".gitbook/assets/02.06.2026_14.31.34_REC.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/stop-sales-list.png" alt="Stop Sales list with filters, editable From, To, Room, Note and Hidden columns, Created, Created By, bin icon and the Save and Cancel buttons"><figcaption><p>Stop Sales list</p></figcaption></figure>
 
 #### Filters & search
 
-* **Start Date / End Date**: Date range for stop sales.
+* **From date / To date**: Date range for stop sales. **From date** is today by default.
 * **Create Date**: Date the stop sale was created.
+* **Destinations**: Select one or more destinations.
+* **Resorts**: Select one or more resorts.
 * **Hotels**: Select one or more hotels.
 * **Rooms**: Filter by room types.
-* **Supplier Name**: Search by supplier.
-* **Show All**: Remove filters and show everything.
+* **Show All**: Also show stop sales for hidden rooms.
 * **Display**: Apply current filters.
 * **Clear**: Reset filters.
 
 #### Data table columns
 
-| Column           | Meaning                                      |
-| ---------------- | -------------------------------------------- |
-| **Edit**         | Edit the stop sale.                          |
-| **View Details** | Open log/details view for the stop sale.     |
-| **Start / End**  | Date range for the stop sale.                |
-| **Hotel**        | Hotel code and name.                         |
-| **Room**         | Room type (or blank for full-hotel).         |
-| **Supplier**     | Supplier on the stop sale.                   |
-| **Hidden**       | Whether the stop sale is hidden on dashboard |
-| **Enabled**      | Whether the stop sale is active.             |
-| **Created**      | Creation date/time.                          |
-| **Remove**       | Whether the stop sale was removed/undone.    |
-| **Agreed**       | Agreed allotment                             |
+| Column         | Meaning                                                                        |
+| -------------- | ------------------------------------------------------------------------------ |
+| **From / To**  | Date range for the stop sale. Editable.                                        |
+| **Hotel**      | Hotel name. Click it to open **Allotment per Day** for the hotel in a new tab. |
+| **Room**       | Room types in the stop sale. Editable.                                         |
+| **Note**       | Reason for the stop sale. Click it to edit the note in a popup.                |
+| **Log**        | Opens the **Releases / Stop Sales Log** filtered on this stop sale.            |
+| **Hidden**     | Whether the stop sale is hidden on dashboard. Editable.                        |
+| **Created**    | Creation date.                                                                 |
+| **Created By** | User who created the stop sale.                                                |
+| Bin icon       | Deletes the stop sale.                                                         |
 
 ### Stop Sale service
 
-The Stop Sale service validates stop sales (including future dates).
+The Stop Sale service applies the stop sales to the hotel allotment days.
 
-It also checks for cancellations that would change booked room counts.
+When a stop sale is changed or deleted, the service opens again the dates and room types that are no longer covered by an active stop sale.
 
-If cancellations occur, the service **recalculates availability** using the rules above.
-
-To exclude a stop sale from the service, go to **Hotel → Stop Sales** and click **Disable** on that stop sale.
+Every change is written to the **Releases / Stop Sales Log**.
 
 ### Stop sale logs
 
 Admins can review changes in the **Release/Stop Sale logs** from the Hotel area.
 
-The last column shows whether the log entry was created by:
+The **Active** column shows whether the room was stopped for sale on that date. The last column shows whether the log entry was created by:
 
 * a release
 * a stop sale
 * the Stop Sale service
 
-<figure><img src=".gitbook/assets/image (67) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/releases-stop-sales-log.png" alt="Releases / Stop Sales Log with Change date/time, Supplier, User, All.Date, Hotel, Room, Active and Source columns"><figcaption><p>Releases / Stop Sales Log</p></figcaption></figure>
 
 ### Stop sales in Notifications
 
@@ -161,11 +155,11 @@ Select **View Details** to open the log view with filters prefilled from the sto
 
 If a supplier has the **Allow to make stop sale** right, they can view stop sales in **Agent → Stop sales list**.
 
-Suppliers can **Enable** or **Disable** stop sales they created.
+Suppliers can create, edit and delete stop sales in the same way. The **Log** link is not shown for suppliers.
 
 ### Stop sale email
 
-After a new stop sale is created, an email can be sent to the company with the stop sale filters.
+After a new stop sale is created, an email can be sent to the company with the stop sale filters. One email is sent for each period.
 
 Prerequisites:
 
@@ -188,7 +182,7 @@ Some hotels can enable a setting that locks room selection during stop sale hour
 ### Related tasks
 
 * [Edit Stop Sale](stop-sales/edit-stop-sale.md)
-* [Remove (Undo) Stop Sale](stop-sales/remove-undo-stop-sale.md)
-* [Agreed Allotment Stop Sale](stop-sales/agreed-allotment-stop-sale.md)
-* [Split the Stop Sale Rule](stop-sales/split-the-stop-sale-rule.md)
+* [Delete Stop Sale](stop-sales/remove-undo-stop-sale.md)
 * [Notification on Dashboard Stop Sale](stop-sales/notification-on-dashboard-stop-sale.md)
+* [Allotments per day](hotel/hotel-creation/allotments-per-day/)
+* [Releases/Stop Sales Log](releases-stop-sales-log.md)
