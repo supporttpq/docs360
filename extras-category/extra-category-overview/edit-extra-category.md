@@ -111,6 +111,7 @@ Behavior on Web - Determines when the category appears during booking flow.
 Category Type - Assign to a category type
 
 * **Example:** Party Package
+* **Opera:** `Opera Package` sends the category's Extras to Opera as packages, `Opera Item Inventory` as inventory items. `Opera Baggage` is not supported. See [Opera integration](../../integration/pms-integration/opera-integration-tourpaq-pms/#extras-sent-to-opera).
 
 Ticket Category - Connects extras to ticketing logic
 

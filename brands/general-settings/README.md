@@ -383,7 +383,7 @@ If a hotel does not define child pricing ages, the system shall use the brand-le
 
 **Uses Restful Offer API -** Checks whether the agency uses the RESTful Offer API.
 
-**Rate Code -** Used for rate mapping with external systems.
+**Rate Code -** The Opera rate plan for the brand's bookings, for example `CLSDK`. Used by the [Opera integration](../../integration/pms-integration/opera-integration-tourpaq-pms/#set-the-brand-rate-code) for reservations, block searches and availability checks.
 
 **Destination API Token -** Delete user tokens after X minutes. The default value is 30 minutes if not set.
 
