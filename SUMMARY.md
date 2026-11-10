@@ -234,7 +234,7 @@
 * [Base room types](base-room-types.md)
 * [Stop Sales](stop-sales.md)
   * [Edit Stop Sale](stop-sales/edit-stop-sale.md)
-  * [Remove (Undo) Stop Sale](stop-sales/remove-undo-stop-sale.md)
+  * [Delete Stop Sale](stop-sales/remove-undo-stop-sale.md)
   * [Notification on Dashboard Stop Sale](stop-sales/notification-on-dashboard-stop-sale.md)
 * [Close Out](close-out/README.md)
   * [Create a Close Out rule](close-out/create-edit-rule.md)
