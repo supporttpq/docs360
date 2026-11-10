@@ -2,8 +2,6 @@
 description: >-
   What the Guide App is, how guides sign in and select a brand, and which
   Tourpaq Office settings feed each Home section.
-hidden: true
-noIndex: true
 ---
 
 # Guide App
