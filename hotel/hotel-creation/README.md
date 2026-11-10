@@ -35,9 +35,9 @@ Other fields that are necessary for the hotel to work properly:
 * Hotel combination - allows for 2 or more hotels to be combined into 1, drawing room allotments from the hotels selected. For more information, see [Hotel Combination](../../hotel-combination.md).
 * Child price ages - age interval that benefits from the child price from the price list
 * Child ages for extra bed - age interval for children when taking into account the "extra bed child" from the room; if the age is outside of the interval, children will use an adult extra bed (overrides the age set in the base room type). If nothing is set, the child's ages for extra beds are not taken into consideration.
-* Adult hotel - sets an age limit preventing guests to book if there is a passenger with the age below limit.&#x20;
-  * When **Adult Hotel** is enabled, **Adult Age Limit is mandatory** and must be configured with a valid age limit.&#x20;
-  * When a hotel is configured as an **Adult Hotel**, the user must verify that the hotel's rooms are configured correctly and **do not allow infants**.&#x20;
+* Adult hotel - sets an age limit preventing guests to book if there is a passenger with the age below limit.
+  * When **Adult Hotel** is enabled, **Adult Age Limit is mandatory** and must be configured with a valid age limit.
+  * When a hotel is configured as an **Adult Hotel**, the user must verify that the hotel's rooms are configured correctly and **do not allow infants**.
   * The **Adult Hotel** setting alone does not replace or override the room-level infant configuration. Each applicable room should be checked to ensure that infants cannot be accommodated.
 * Order No. - Tourpaq API, order of the hotels sent to the website
 * Customise room offer priority - The checkbox allows the user to decide whether they want to use a personalized priority of room types (i.e., by orderId) or let the API decide automatically based on the room configuration (i.e., by number of beds).
@@ -216,7 +216,7 @@ Used for controlling allotments.
 
 <figure><img src="../../.gitbook/assets/image (62) (1).png" alt=""><figcaption></figcaption></figure>
 
-The number of available rooms can be set from here by increasing or decreasing the value from the NO. RMS column.
+The number of allotment rooms can be set from here by increasing or decreasing the value in the ALLOTMENT column. The NO. column is calculated (Allotment + Secured + Guaranteed). See [Allotments per day](allotments-per-day/).
 
 Also, from the transport column, the number of rooms available for the transport can be controlled when there is more than one transport assigned to that room type. See more on the Hotel Allotments/Hotel Allotment Control page.
 
