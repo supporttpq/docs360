@@ -19,6 +19,8 @@ layout:
     visible: true
   actions:
     visible: true
+  anchors:
+    visible: true
 ---
 
 # Notifications
@@ -122,7 +124,7 @@ Notifications are not automatically cleared when you save a reservation. The sys
 | **Hotel Special Offer** | Issues related to hotel special offers — for example, an offer that was applied incorrectly or is inconsistent with contract conditions                      |
 | **Extra Special Offer** | Issues with special offers on extras — similar to Hotel Special Offer but for extra products                                                                 |
 | **Upsale**              | Alerts related to upsell opportunities or upsell products that have an issue requiring review                                                                |
-| **Stop Sales**          | Bookings or products affected by an active Stop Sales rule, including cases where agreed allotment has been exceeded                                         |
+| **Stop Sales**          | Bookings or products affected by an active Stop Sales rule                                                                                                   |
 | **Queue Management**    | Errors in background processing queues — for example, failed confirmation sends, communication jobs, or automated processing tasks                           |
 
 ***
