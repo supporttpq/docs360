@@ -47,7 +47,7 @@ These columns are standard availability data:
 * **Room Type**: Room category for the row.
 * **Date**: Arrival date.
 * **Day**: Day of week.
-* **No.**: Total rooms allocated for that date.
+* **No.**: Available rooms (free and booked): `Allotment + Secured + Guaranteed`. Not editable.
 * **Secured**: Secured rooms. Not automatically released.
 * **Guaranteed**: Rooms you pay for, regardless of sales.
 * **Book**: Rooms already booked.
@@ -128,6 +128,7 @@ By default, undoing a release restores all released rooms unless adjusted.
 
 The Change Value tool can be used to:
 
+* Edit **ALLOTMENT**, **SECURED** or **GUARANTEED** for multiple rows
 * Edit **DAYS** for multiple rows
 * Uncheck **R** for multiple rows
 * Adjust **AR** and **SR** for multiple rows
