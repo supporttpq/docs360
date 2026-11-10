@@ -1,3 +1,8 @@
+---
+hidden: true
+noIndex: true
+---
+
 # Guide App
 
 <div data-with-frame="true"><figure><img src=".gitbook/assets/destinationapp-993f7b8a83693173287fae9f3939457a.png" alt="" width="375"><figcaption></figcaption></figure></div>
