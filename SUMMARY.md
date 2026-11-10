@@ -235,8 +235,6 @@
 * [Stop Sales](stop-sales.md)
   * [Edit Stop Sale](stop-sales/edit-stop-sale.md)
   * [Remove (Undo) Stop Sale](stop-sales/remove-undo-stop-sale.md)
-  * [Agreed Allotment Stop Sale](stop-sales/agreed-allotment-stop-sale.md)
-  * [Split the Stop Sale Rule](stop-sales/split-the-stop-sale-rule.md)
   * [Notification on Dashboard Stop Sale](stop-sales/notification-on-dashboard-stop-sale.md)
 * [Close Out](close-out/README.md)
   * [Create a Close Out rule](close-out/create-edit-rule.md)

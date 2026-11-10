@@ -42,7 +42,7 @@ If you need older or future periods, expand the date range in the filters.
 <figure><img src="../.gitbook/assets/02.06.2026_15.15.36_REC.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-Agreed allotment reopens limited availability while the Stop Sale stays active. See [Agreed Allotment Stop Sale](agreed-allotment-stop-sale.md) for details.
+Agreed allotment reopens limited availability while the Stop Sale stays active. See [Agreed Allotment Stop Sale](/broken/pages/7gtEfAbpAgh4AY2wE3iA) for details.
 {% endhint %}
 {% endstep %}
 {% endstepper %}
@@ -50,6 +50,6 @@ Agreed allotment reopens limited availability while the Stop Sale stays active. 
 ### Related Stop Sale tasks
 
 * [Edit Stop Sale](edit-stop-sale.md)
-* [Agreed Allotment Stop Sale](agreed-allotment-stop-sale.md)
+* [Agreed Allotment Stop Sale](/broken/pages/7gtEfAbpAgh4AY2wE3iA)
 * [Remove (Undo) Stop Sale](remove-undo-stop-sale.md)
-* [Split the Stop Sale Rule](split-the-stop-sale-rule.md)
+* [Split the Stop Sale Rule](/broken/pages/e9MGjzNon0N36fK501Aa)
