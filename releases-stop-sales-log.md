@@ -20,7 +20,9 @@ This page is primarily used for troubleshooting, auditing, and operational monit
 
 Hotel → Releases / Stop Sales Log
 
-<figure><img src=".gitbook/assets/image (738).png" alt=""><figcaption></figcaption></figure>
+You can also click **Log** on a line in **Hotel → Stop Sales**. The log opens filtered on that stop sale.
+
+<figure><img src=".gitbook/assets/releases-stop-sales-log (1).png" alt="Releases / Stop Sales Log with filters and the Change date/time, Supplier, User, All.Date, Hotel, Room, Active and Source columns"><figcaption><p>Releases / Stop Sales Log</p></figcaption></figure>
 
 ***
 
@@ -57,17 +59,14 @@ Each row represents a **single allotment change event**.
 
 **Room** - Room type affected by the change.
 
-**Initial R.No** - Initial number of available rooms before the change.
-
-**Final R.No** - Final number of available rooms after the change.
-
-Example: 100 → 0 indicates a full stop sale.
+**Active** - Checked when the room was stopped for sale on that date. Unchecked when the room was opened again.
 
 **Source** - Indicates how the change was triggered.
 
 ### Expected Behavior
 
 * All stop sale and release actions are logged
+* Creating, changing and deleting a stop sale is logged
 * Data reflects both manual and automated updates
 * Logs are immutable (read-only)
 * Filters dynamically control visible data
@@ -79,37 +78,16 @@ Example: 100 → 0 indicates a full stop sale.
 
 ### Stop Sale
 
-When:
+A stop sale does not change the number of rooms. The room is only marked as stopped for sale:
 
-* **INITIAL R.NO > 0**
-* **FINAL R.NO = 0**
-
-This indicates that availability was **closed (stop sale)**.
-
-***
-
-### Release
-
-When:
-
-* **FINAL R.NO > INITIAL R.NO**
-
-This indicates that rooms were **released back into availability**.
-
-***
-
-### No Availability Change
-
-If values are equal, the log may represent:
-
-* A system check
-* A non-impacting update
+* **Active** checked: the stop sale was applied to the date.
+* **Active** unchecked: the date was opened again, for example because the stop sale was deleted, shortened, or the room was removed from it.
 
 ***
 
 ## Practical Use Cases
 
-Investigating Overbooking - Check whether allotment was reduced after bookings were made.
+Investigating Overbooking - Check whether rooms were stopped after bookings were made.
 
 Investigating Closed Availability - Identify when and why rooms became unavailable.
 

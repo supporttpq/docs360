@@ -28,7 +28,7 @@ You remove Stop Sales from **Hotel → Stop Sales**. Start from [Edit Stop Sale]
 
 ### Remove a Stop Sale
 
-Only want to undo part of the date range? Use [Split the Stop Sale Rule](/broken/pages/e9MGjzNon0N36fK501Aa).
+Only want to undo part of the date range? Use [Split the Stop Sale Rule](https://app.gitbook.com/s/ZCqO8EQ5P5Mioq1zbQAc/stop-sales/split-the-stop-sale-rule).
 
 {% stepper %}
 {% step %}
