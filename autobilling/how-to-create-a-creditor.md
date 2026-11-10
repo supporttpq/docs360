@@ -19,6 +19,10 @@ layout:
     visible: true
   tags:
     visible: true
+  actions:
+    visible: true
+  anchors:
+    visible: true
 ---
 
 # How to create a creditor
@@ -87,19 +91,25 @@ Add a new creditor and complete all required fields.
 
 All fields are mandatory for Autobilling to work correctly.
 
-| Field             | Description                | Impact                   |
-| ----------------- | -------------------------- | ------------------------ |
-| Creditor Name     | Supplier name              | Appears on invoices      |
-| Email             | Recipient(s) of invoices   | Controls delivery        |
-| SWIFT Code        | Bank identifier            | Required for payments    |
-| IBAN              | Bank account               | Required for transfers   |
-| Account Credit    | Accounting reference       | Used in exports          |
-| Creditor Number   | Unique ID                  | Internal tracking        |
-| Currency          | Payment currency           | Affects invoice values   |
-| Automatic         | Enables Autobilling        | Core activation flag     |
-| Approval Interval | Days to approve invoice    | Controls workflow timing |
-| Payment Days      | Days to pay after approval | Defines payment deadline |
-| Invoice as PDF    | Sends invoice as PDF       | Controls format          |
+| Field             | Description                                                                                                                       | Impact                                            |
+| ----------------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
+| Creditor Name     | Supplier name                                                                                                                     | Appears on invoices                               |
+| Email             | Recipient(s) of invoices                                                                                                          | Controls delivery                                 |
+| SWIFT Code        | Bank identifier                                                                                                                   | Required for payments                             |
+| IBAN              | Bank account                                                                                                                      | Required for transfers                            |
+| Account Credit    | Accounting reference                                                                                                              | Used in exports                                   |
+| Creditor Number   | Unique ID                                                                                                                         | Internal tracking                                 |
+| Currency          | Payment currency. Mandatory (red star): it starts as **-Select Currency-** and must be selected before the creditor can be saved. | Affects invoice values and Invoice Fee conversion |
+| Automatic         | Enables Autobilling                                                                                                               | Core activation flag                              |
+| Approval Interval | Days to approve invoice                                                                                                           | Controls workflow timing                          |
+| Payment Days      | Days to pay after approval                                                                                                        | Defines payment deadline                          |
+| Invoice as PDF    | Sends invoice as PDF                                                                                                              | Controls format                                   |
+
+After the creditor is saved, the **Invoice Fee** and **Activity Log** tabs become available. See [Invoice fee](invoice-fee.md).
+
+{% hint style="info" %}
+If a default Invoice Fee is configured in `Setup → System Setup → Settings`, it is added to the new creditor's **Invoice Fee** tab automatically, converted to the creditor currency. If no currency conversion exists between the company currency and the creditor currency, the creditor cannot be created until the rate is added.
+{% endhint %}
 
 ### How it works
 
@@ -113,6 +123,19 @@ Once a creditor is created:
    * Export it to the accounting system using the **Account Credit** and **Currency** settings.
 
 If **Automatic Invoicing** is enabled, invoices are created without manual intervention according to the set schedule.
+
+***
+
+### Activity Log
+
+The **Activity Log** tab (the last tab on the creditor) lists changes made on the creditor's **General** and **Invoice Fee** tabs, for example a new Account Credit or Payment Days, Invoice Fee rows added, changed or deleted, and changes to the Invoice Fee account.
+
+1. Open the creditor and select the **Activity Log** tab.
+2. Set the **Change Date** range (default: the last month).
+3. Optionally select an **Activity**: _Creditor - General_ or _Creditor - Invoice Fee_.
+4. Click **Search** to show the entries.
+
+Each row shows the change date, user, activity, property name, original value, new value and description. Invoice Fee changes are described as _Invoice fee from \<date>_. Hover over a description to see the full text, or click it to open it.
 
 ***
 
@@ -145,7 +168,7 @@ If **Automatic Invoicing** is enabled, invoices are created without manual inter
 
 ### Edge Cases
 
-* If **Automatic is disabled**:  no invoices will be generated
+* If **Automatic is disabled**: no invoices will be generated
 * If **email is missing or incorrect**: invoices are not delivered
 * If **currency mismatch exists**: creditor may not work with multi-brand setups
 * If **creditor is changed after invoice generation**: regeneration updates invoice assignment
@@ -154,10 +177,19 @@ If **Automatic Invoicing** is enabled, invoices are created without manual inter
 
 ### Troubleshooting
 
-| Issue                      | Cause                  | Solution                     |
-| -------------------------- | ---------------------- | ---------------------------- |
-| No invoices generated      | Automatic not enabled  | Enable checkbox              |
-| Invoice not received       | Email incorrect        | Verify email field           |
-| Approval not working       | Interval misconfigured | Check approval days          |
-| Payment tracking incorrect | Payment days missing   | Set payment days             |
-| Creditor not available     | Not assigned to entity | Link creditor to hotel/extra |
+| Issue                      | Cause                                                   | Solution                                           |
+| -------------------------- | ------------------------------------------------------- | -------------------------------------------------- |
+| No invoices generated      | Automatic not enabled                                   | Enable checkbox                                    |
+| Invoice not received       | Email incorrect                                         | Verify email field                                 |
+| Approval not working       | Interval misconfigured                                  | Check approval days                                |
+| Payment tracking incorrect | Payment days missing                                    | Set payment days                                   |
+| Creditor not available     | Not assigned to entity                                  | Link creditor to hotel/extra                       |
+| "Currency is Required"     | Currency not selected                                   | Select a currency                                  |
+| Creditor cannot be created | Default Invoice Fee needs a missing currency conversion | Add the rate in System Setup → Currency conversion |
+
+***
+
+### Related Pages
+
+* [Autobilling](./)
+* [Invoice fee](invoice-fee.md)

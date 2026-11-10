@@ -86,6 +86,8 @@ Then connect room numbers to room types:
 1. Go to **Room numbers → Room Icons**.
 2. Add a layout element of type **Room icon** to each room number.
 
+On hover, the room type displays the **List Name** in a tooltip.
+
 Based on the **Room Icons** setup, Tourpaq generates room allotments.\
 You can view and update them in **Room numbers → Allotments**.
 

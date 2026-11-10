@@ -36,9 +36,51 @@ Without this configuration, flight booking functionality connected to Amadeus wi
 
 ### General Configuration
 
-<figure><img src="../../../.gitbook/assets/amadeus.png" alt=""><figcaption></figcaption></figure>
+All fields below are set on the **Default** tab.
 
-<table><thead><tr><th width="259" align="center">Field</th><th width="490.25">Description</th></tr></thead><tbody><tr><td align="center"><strong>API Key</strong></td><td>Authentication key provided by Amadeus Web Services. Used to identify the integration client.</td></tr><tr><td align="center"><strong>API Secret</strong></td><td>Secret token paired with the API key for secure authentication. Must remain confidential.</td></tr><tr><td align="center"><strong>Target</strong></td><td>Identifier for the Amadeus environment (test or production). Determines which Amadeus system the platform communicates with.</td></tr><tr><td align="center"><strong>URL</strong></td><td>The endpoint address for the Amadeus API services. Defines where requests are sent (e.g., test or live environment).</td></tr><tr><td align="center"><strong>Office ID</strong></td><td>Amadeus office identifier (Pseudo City Code / PCC). Determines ownership of bookings and ticketing access.</td></tr><tr><td align="center"><strong>Duty Code</strong></td><td>Code defining the agent’s permission level within Amadeus. Often matches the Office ID.</td></tr></tbody></table>
+<figure><img src="../../.gitbook/assets/amadeus-def-sharp.png" alt="Amadeus Default tab with all fields"><figcaption></figcaption></figure>
+
+| Field                                                   | Description                                                                                                                                                                                                                                                                 |
+| ------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Api Key**                                             | Required. Authentication key provided by Amadeus Web Services. Used to identify the integration client.                                                                                                                                                                     |
+| **Api Secret**                                          | Required. Secret token paired with the API key for secure authentication. Must remain confidential.                                                                                                                                                                         |
+| **Target**                                              | Required. Identifier for the Amadeus environment (test or production). Determines which Amadeus system the platform communicates with.                                                                                                                                      |
+| **URL**                                                 | Required. The endpoint address for the Amadeus API services (test or live environment).                                                                                                                                                                                     |
+| **Office ID**                                           | Required. Amadeus office identifier (Pseudo City Code / PCC). Determines ownership of bookings and ticketing access. Brands can use their own Office IDs, see [Brand Office IDs](amadeus.md#brand-office-ids).                                                              |
+| **Duty Code**                                           | Required. Code defining the agent’s permission level within Amadeus.                                                                                                                                                                                                        |
+| **Airline Configuration**                               | Airline-specific methods to extend the ticket-issuing deadline. See [Airline Configuration Section](amadeus.md#airline-configuration-section).                                                                                                                              |
+| **Enable Fare Optimizer**                               | If checked, the PNR is placed in a queue when the reservation is made, so the Amadeus Fare Optimizer can process it. Shows the two fields below.                                                                                                                            |
+| **Fare optimizer Queue**                                | Amadeus queue number for fare optimization. Whole number, 0 or higher. Example: `30`.                                                                                                                                                                                       |
+| **Fare optimizer Category**                             | Queue category used with the optimizer queue. Whole number, 0 or higher. Example: `0`.                                                                                                                                                                                      |
+| **Queue PNR upon cancel booking**                       | If checked, the PNR is placed in a queue when the booking is cancelled, for manual processing in Amadeus. Shows the two fields below. See [Amadeus Cancellation Queue](amadeus.md#amadeus-cancellation-queue).                                                              |
+| **Amadeus cancel queue number**                         | Queue that receives the cancelled PNRs. Whole number, 0 or higher. Example: `40`.                                                                                                                                                                                           |
+| **Amadeus cancel queue category**                       | Queue category used for cancellations. Whole number, 0 or higher. Example: `1`.                                                                                                                                                                                             |
+| **Use Instant Search**                                  | If checked, Tourpaq uses the Amadeus Instant Search service for flight searches. Otherwise, standard search is used.                                                                                                                                                        |
+| **Automatic ticket issuing**                            | If checked, a background service issues the e-tickets for GDS bookings with status OK, when all flight segments are confirmed (HK) and the airline's last ticketing date is within the next 12 hours. If issuing fails, the warning **Unable to issue tickets!** is logged. |
+| **PNR Reservation Office ID** / **Ticketing Office ID** | Read-only on the Default tab. Set them on a brand tab, see [Brand Office IDs](amadeus.md#brand-office-ids).                                                                                                                                                                 |
+
+> 💡 **Note**\
+> Queue numbers and categories are defined by Amadeus.
+
+### Brand Office IDs
+
+The Amadeus page has a **Default** tab and one tab for each brand. Use the brand tabs when a brand must work in Amadeus with its own Office ID.
+
+* The **Default** tab holds all the settings described on this page. On the brand tabs these settings are shown but cannot be edited.
+* Each brand tab has two optional fields:
+
+<figure><img src="../../.gitbook/assets/amadeus-dk-sharp.png" alt="Brand tab with PNR Reservation Office ID and Ticketing Office ID"><figcaption></figcaption></figure>
+
+| Field                         | Description                                                                                                                                                                            |
+| ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **PNR Reservation Office ID** | Office ID used for the brand's bookings in Amadeus: flight search from the booking, PNR creation, PNR load and cancellation. If empty, the **Office ID** from the Default tab is used. |
+| **Ticketing Office ID**       | Office ID used when the brand's booking is queued for ticketing. If empty, the same Office ID as the booking is used.                                                                  |
+
+{% hint style="info" %}
+**Use Instant Search** always uses the **Office ID** from the Default tab.
+{% endhint %}
+
+<figure><img src="../../.gitbook/assets/amadeus-office-id-diagram.png" alt="Which Office ID is used for each Amadeus action"><figcaption></figcaption></figure>
 
 ***
 
@@ -46,12 +88,11 @@ Without this configuration, flight booking functionality connected to Amadeus wi
 
 The **Airline Configuration** table allows airline-specific behavior customization.
 
-| Column          | Description                                                                                                     |
-| --------------- | --------------------------------------------------------------------------------------------------------------- |
-| **Airline**     | Airline code and airline name. Select the airline that has a dedicated ticket-issuing deadline extension method |
-| **Method**      | Communication method used. Select the method used to extend the ticket-issuing deadline.                        |
-| **Free Text**   | Specify the free text associated with the method. The free text depends on the actual company agreement.        |
-| **Delete Icon** | Removes the airline configuration                                                                               |
+| Column        | Description                                                                                                     |
+| ------------- | --------------------------------------------------------------------------------------------------------------- |
+| **Airline**   | Airline code and airline name. Select the airline that has a dedicated ticket-issuing deadline extension method |
+| **Method**    | Communication method used. Select the method used to extend the ticket-issuing deadline.                        |
+| **Free Text** | Specify the free text associated with the method. The free text depends on the actual company agreement.        |
 
 #### Available Actions
 
@@ -71,85 +112,12 @@ The **Airline Configuration** table allows airline-specific behavior customizati
 
 #### Example Usage
 
-When a booking is made with Norwegian Airlines, the system automatically sends the configured OS/free-text message to Amadeus during booking processing.
+When the PNR is created in Amadeus for a booking with a Norwegian (D8) flight, the system adds the configured OS element with its free text to the PNR.
 
 This ensures:
 
 * Correct airline communication
 * Special operational handling
-* Automated queue management
-
-***
-
-## Fare Optimizer Settings
-
-### Enable Fare Optimizer
-
-If checked, the PNR is placed in a queue when the reservation is made. This allows the Amadeus Fare Optimizer to process it.\
-The queue is identified by a number and a category. Both values come from Amadeus.
-
-The following options are only shown if "Enable Fare Optimizer" is selected:
-
-* Fare optimizer Queue (positive number)
-* Fare optimizer category (positive number)
-
-***
-
-### Fare Optimizer Queue
-
-Defines the Amadeus queue number used for fare optimization processing.
-
-#### Example
-
-`30`
-
-***
-
-### Fare Optimizer Category
-
-Defines the queue category used together with the optimizer queue.
-
-#### Example
-
-`0`
-
-***
-
-## Queue PNR upon Cancel Booking
-
-When enabled, the PNR is placed in a queue when the booking is canceled. This enables manual processing in Amadeus. The queue is identified by a number and a category. Both values came from Amadeus.
-
-***
-
-### Amadeus Cancel Queue Number
-
-Defines which queue receives cancellation requests.
-
-#### Example
-
-`40`
-
-***
-
-### Amadeus Cancel Queue Category
-
-Defines the queue category used for cancellations.
-
-#### Example
-
-`1`
-
-***
-
-## Use Instant Search
-
-Enables the Amadeus Instant Search method for faster flight availability responses. When disabled, standard search is used instead.
-
-***
-
-## Automatic Ticket Issuing
-
-When enabled, tickets are automatically issued after successful booking confirmation.Enables automated issuing of e-tickets for GDS bookings handled through Amadeus.
 
 ***
 
@@ -171,13 +139,14 @@ When enabled, tickets are automatically issued after successful booking confirma
    * Fare optimizer
    * Queue cancellations
    * Automatic ticket issuing
-5. Save configuration
+5. Optional: on a brand tab, enter the brand's Office IDs
+6. Save configuration
 
 ### **Usage notes**
 
 * All fields must be valid for the system to perform Amadeus flight searches or booking actions.
 * Credentials differ between **test** and **production** environments. Verify values before switching.
-* Any change in API Key or Secret requires saving the configuration and re-authenticating.
+* Changes take effect only after you click **Save**.
 
 ## Amadeus Cancellation Queue
 
@@ -185,35 +154,9 @@ When enabled, tickets are automatically issued after successful booking confirma
 
 This feature controls how cancelled Amadeus PNRs are handled in the system. It introduces an optional step where cancelled reservations are routed to an Amadeus queue instead of being immediately cancelled in the GDS.
 
-When enabled, the PNR is placed in a queue when the booking is canceled. This enables manual processing in Amadeus. The queue is identified by a number and a category. Both values came from Amadeus.
-
-***
-
-### Configuration
-
-#### Location: `Setup > System Setup > Transport Providers > Amadeus`
-
-***
-
-#### Setting: Queue PNR upon cancel booking
-
-Enables queue-based handling of cancelled Amadeus reservations.
-
-When enabled, cancelled PNRs are sent to an Amadeus queue instead of being immediately cancelled.
-
-***
-
-#### Additional configuration (mandatory when enabled)
-
-When this setting is enabled, the following fields become required:
-
-* **Amadeus cancel queue number** (positive integer)
-* **Amadeus cancel queue category** (positive integer)
-
-These values define the target Amadeus queue.
-
-> 💡 **Note**\
-> Queue number and category are defined by Amadeus and must be provided by the airline/GDS configuration.
+{% hint style="warning" %}
+The **Amadeus cancel queue number** and **Amadeus cancel queue category** are not checked on save. If one is empty, cancelling the booking stops with the message **Missing Cancel Queue Number or Cancel Queue Category from Setting!** and the booking is not cancelled.
+{% endhint %}
 
 ***
 
@@ -225,16 +168,9 @@ These values define the target Amadeus queue.
 
 If the option **“Queue PNR upon cancel booking”** is enabled, the cancellation flow from the booking page is changed for Amadeus GDS reservations.
 
-When a user cancels a booking from the **front page of the booking**, the system automatically place the booking into the queue.
+When a user cancels a booking from the **front page of the booking**, the system automatically places the booking into the queue.
 
 This means users do not need to access or use the GDS tab to complete the cancellation process.
-
-When the setting is not enabled:
-
-1. Booking is cancelled
-2. System immediately cancels booking in Amadeus
-
-
 
 * **GDS Tab Cancellation**
 

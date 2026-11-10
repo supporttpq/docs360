@@ -59,6 +59,8 @@ The report includes the transport values above, plus:
 
 Hotel and room values are color-coded based on your hotel setup settings. The legend is shown below and also appears at the bottom of the page. The first column is hotels. The second column is rooms.
 
+A room with an active **Stop Sale** on a date is shown with a red background (**STOP SALE** in the legend). On those dates only guaranteed or secured rooms are counted as available, so the allotment rooms are deducted.
+
 <figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (27).png" alt=""><figcaption></figcaption></figure>
 
 Hotel view looks like this. You can also expand a hotel to see all room types.

@@ -2,86 +2,62 @@
 
 ### Overview
 
-The _Stop Sales_ page allows users to manage and modify existing stop sale rules applied to hotels, rooms, or suppliers. A stop sale defines specific periods during which a hotel or room cannot be sold due to operational restrictions or supplier limitations. The _Edit Stop Sale_ function provides tools to adjust, remove, or split existing stop sale records to better match business requirements.
+The _Stop Sales_ page allows users to manage and modify existing stop sale rules applied to hotels and rooms. A stop sale defines specific periods during which a hotel or room cannot be sold due to operational restrictions or supplier limitations. All lines in the list are open for editing, and you save all changes at once.
 
 ### **Purpose**
 
 The purpose of the _Edit Stop Sale_ functionality is to:
 
-* Modify the details of an existing stop sale period.
-* Remove an active stop sale when it is no longer required.
-* Split a stop sale period into multiple intervals for more granular control. This feature ensures flexibility in managing sales restrictions and maintains accurate availability data for partners and customers.
+* Change the period of an existing stop sale.
+* Add or remove room types in an existing stop sale.
+* Change the note or the **Hidden** setting.
+
+Edit the existing stop sale instead of creating a new line for each correction.
 
 ### When to use it
 
-* Adjust a date range or other rule values.
-* Undo a Stop Sale that is no longer needed.
-* Split one long period into smaller periods.
+* The hotel extends or shortens the stop sale.
+* The hotel stops or opens again one of the room types.
+* The hotel creates a new room type that must also be blocked. New room types are not added to a stop sale automatically.
+
+To remove a stop sale completely, see [Delete Stop Sale](remove-undo-stop-sale.md).
 
 ### Edit a Stop Sale
 
 {% stepper %}
 {% step %}
-**Open the rule in edit mode**
+**Find the stop sale**
 
 1. Go to **Hotel → Stop Sales**.
-2. Find the rule you want to change.
-3. Click **Edit** (pencil icon).
-
-<figure><img src="../.gitbook/assets/02.06.2026_14.36.22_REC.png" alt=""><figcaption></figcaption></figure>
-
-{% hint style="info" %}
-Only enabled rules can be removed or split.
-{% endhint %}
+2. Use the filters to find the stop sale, and click **Display**.
 {% endstep %}
 
 {% step %}
-**Open “Remove or Split”**
+**Change the line**
 
-Click **Remove or Split** above the rule. This opens an extra section under the list.
+Change what you need directly in the line:
 
-<figure><img src="../.gitbook/assets/02.06.2026_14.38.26_REC.png" alt=""><figcaption></figcaption></figure>
-{% endstep %}
-
-{% step %}
-**Choose what you want to do**
-
-You have two common paths:
-
-* **Remove (Undo)**: remove the Stop Sale and restore availability.
-* **Split**: create multiple Stop Sale periods from one rule.
-
-Use these pages for the detailed flow:
-
-* [Remove (Undo) Stop Sale](remove-undo-stop-sale.md)
-* [Split the Stop Sale Rule](split-the-stop-sale-rule.md)
+* **From** / **To**: select the new dates. **To** must be the same as or later than **From**.
+* **Room**: click the field, select or clear room types of the hotel and click **Ok**.
+* **Note**: click the note, change the text in the **Edit Note** popup and click **Save**.
+* **Hidden**: tick or clear the checkbox.
 {% endstep %}
 
 {% step %}
 **Save or cancel**
 
-Click **Save** to apply changes. Click **Cancel** to discard changes.
+Click **Save** at the bottom of the page to save all changed lines. Click **Cancel** to discard changes.
 {% endstep %}
 {% endstepper %}
 
-### Example
-
-You have one Stop Sale from `2019-07-06` to `2029-07-06`. You want two periods instead.
-
-1. Click **Edit**.
-2. Click **Remove or Split**.
-3. Enter `2` as the number of split records.
-4. Adjust dates for each row.
-5. Apply the split and save.
-
-{% hint style="info" %}
-Before you save, ensure periods do not overlap. Ensure periods still cover the original date range.
+{% hint style="warning" %}
+Dates and room types you remove from a stop sale can be sold again, unless another active stop sale covers them. The Stop Sale service applies the change in the background and writes it to the log.
 {% endhint %}
 
 ### Verify your changes
 
 After you save, check these spots:
 
-* **Stop Sales Logs → View details**
-* **Hotel → Allotment per Day** (same room and dates)
+* **Log** on the stop sale line (opens the Releases / Stop Sales Log)
+* **Hotel → Allotment per Day** (same room and dates): the yellow warning icon next to **Allotment** shows the stopped dates
 * **Pricelist** (same room and dates)

@@ -1,12 +1,12 @@
-# Remove (Undo) Stop Sale
+# Delete Stop Sale
 
 ### Overview
 
-Use **Remove (Undo)** to remove a Stop Sale rule and restore availability.
+Use the bin icon to delete a Stop Sale rule and make the rooms available for sale again.
 
 ### Purpose
 
-Remove a Stop Sale when the restriction is no longer needed. Tourpaq restores the original allotment and availability for the same dates.
+Delete a Stop Sale when the restriction is no longer needed. The allotment in **Allotment per Day** is not changed: the rooms are for sale again with the current allotment for the same dates.
 
 ### When to use it
 
@@ -15,65 +15,41 @@ Remove a Stop Sale when the restriction is no longer needed. Tourpaq restores th
 * A Stop Sale was created by mistake.
 
 {% hint style="info" %}
-You remove Stop Sales from **Hotel → Stop Sales**. Start from [Edit Stop Sale](edit-stop-sale.md) if you are unsure which rule to edit.
+Only want to reopen part of the dates or some room types? Change the stop sale instead — see [Edit Stop Sale](edit-stop-sale.md).
 {% endhint %}
 
-### Key fields and sections
-
-* **Stop Sales list**: Shows Stop Sale rules. It is filtered by current dates by default.
-* **Edit** (pencil icon): Opens the rule in edit mode.
-* **Remove or Split**: Expands the section where you can remove or split the rule.
-* **Remove** checkbox: Removes the Stop Sale and restores the original allotment.
-* **Info** (tooltip): Explains what Remove does.
-
-### Remove a Stop Sale
-
-Only want to undo part of the date range? Use [Split the Stop Sale Rule](split-the-stop-sale-rule.md).
+### Delete a Stop Sale
 
 {% stepper %}
 {% step %}
-**Open the rule in edit mode**
+**Find the rule**
 
 1. Go to **Hotel → Stop Sales**.
-2. Find the rule you want to undo.
-3. Click **Edit** (pencil icon).
-
-<figure><img src="../.gitbook/assets/02.06.2026_14.31.34_REC.png" alt=""><figcaption></figcaption></figure>
-
-{% hint style="info" %}
-Only **enabled** rules can be removed or split.
-{% endhint %}
+2. Find the rule you want to delete.
 {% endstep %}
 
 {% step %}
-**Open “Remove or Split”**
+**Click the bin icon**
 
-Click **Remove or Split**. The section opens under the rule.
+Click the bin icon at the end of the line. The **Delete Stop Sale** message opens: _Deleting the stop sale will restore the current allotment._
 {% endstep %}
 
 {% step %}
-**Select “Remove”**
+**Confirm or cancel**
 
-Check the **Remove** box. If the checkbox is disabled, you are not in edit mode yet.
-{% endstep %}
-
-{% step %}
-**Save or cancel**
-
-Click **Save** to apply the removal. Click **Cancel** to discard changes.
-
-<figure><img src="../.gitbook/assets/02.06.2026_14.41.16_REC.png" alt=""><figcaption></figcaption></figure>
+Click **Delete** to delete the stop sale. Click **Cancel** to keep it.
 {% endstep %}
 {% endstepper %}
 
+<figure><img src="../.gitbook/assets/delete-stop-sale.png" alt="Delete Stop Sale confirmation opened from the bin icon of a stop sale line, with Cancel and Delete buttons"><figcaption><p>Delete Stop Sale confirmation</p></figcaption></figure>
+
 ### Verify availability was restored
 
-After you save, check these spots:
+After you delete, check these spots:
 
-* **Stop Sales Logs → View details**
-  * `Initial r.No`: the record number created when the Stop Sale was enabled.
-  * `Final r.No`: the original allotment record number restored after removal.
+* **Releases / Stop Sales Log** (same hotel, room and dates)
+  * The new entries show **Active** unchecked for the dates that were opened again.
 * **Hotel → Allotment per Day** (same room and dates)
-  * Allotment values should match the pre-Stop Sale values.
+  * The yellow warning icon next to **Allotment** is gone, unless another active stop sale covers the date.
 * **Pricelist** (same hotel, room type, and dates)
   * `FHA` (free-hotel-allotment) should show the restored availability.
