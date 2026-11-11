@@ -2,7 +2,7 @@
 
 ## Overview
 
-The MTS Globe Hotel Reporting functionality enables Tourpaq to generate and deliver hotel booking reports to MTS Globe via FTP in CSV format.
+The MTS Globe Hotel Reporting functionality enables Tourpaq to generate and deliver hotel booking reports to MTS Globe by FTP or email, in CSV format.
 
 The integration supports automated reporting for:
 
@@ -127,6 +127,7 @@ When clicking the Resend button:
   * New bookings are resent
   * Cancelled bookings are resent
   * Amended bookings are resent
+* The resent files contain the rooms reported on the last reporting day, with that day's date in the file name. Changes made since then are not included; they are sent with the next scheduled run.
 
 {% hint style="info" %}
 For other reporting formats the current list shall be resent using existing behavior
@@ -202,14 +203,18 @@ The reporting system shall maintain a list of already reported bookings.
 
 This list is used when the scheduler runs again.
 
+Each room in a booking is tracked and reported separately, as one row in the file. A booking with more rooms can therefore have rooms in different files in the same run.
+
 ***
 
 #### New bookings
 
-Bookings shall be added to the NEW file when:
+Rooms shall be added to the NEW file when:
 
 * The booking was created since the previous reporting
 * The booking was not previously reported
+* A room was added to a booking that was already reported
+* The room type or the hotel was changed: the room with the new room type or at the new hotel is New
 
 Output file example:
 
@@ -219,10 +224,11 @@ Output file example:
 
 #### Amended bookings
 
-Bookings shall be added to the AMENDED file when:
+Rooms shall be added to the AMENDED file when the room was already reported and:
 
-* The booking was already reported
-* The booking has been updated or modified
+* Pax were added to or removed from the room, and the room still has pax
+* Pax were moved between two rooms already in the booking: both rooms are Amended
+* Any other data in the file changed, such as names, dates, board or note
 
 Output file example:
 
@@ -232,11 +238,12 @@ Output file example:
 
 #### Cancelled bookings
 
-Bookings shall be added to the CANCELLED file when:
+Rooms shall be added to the CANCELLED file when the room was already reported and:
 
-* The booking was previously reported
-* The booking was cancelled
-* The booking no longer belongs to the hotel
+* The booking was cancelled: all its rooms are Cancelled
+* All pax were removed from the room, or the room was removed
+* The room type was changed: the old room type is Cancelled
+* The booking no longer belongs to the hotel: Cancelled at the old hotel, New at the new hotel
 
 Output file example:
 
@@ -264,6 +271,24 @@ After each successful reporting execution:
 
 ***
 
+**Rule 3**
+
+A room that is the same as when it was last reported is not reported again, even if it was changed in between.
+
+Example: the room type is changed and changed back before the next run. Nothing is reported.
+
+***
+
+**Rule 4**
+
+A room keeps the **Reference** it was first reported with:
+
+* A one-room booking is reported with the booking number, for example `12345678`. In a booking with more rooms, each room is reported as booking number and room number, for example `12345678-2`.
+* A second room is added to a one-room booking: only the new room is reported, as New with `12345678-2`. The first room stays `12345678` for the hotel.
+* A room is removed from a booking with more rooms: only that room is reported, as Cancelled. The other rooms are reported only if they change.
+
+***
+
 ## File naming convention
 
 The following file naming structure shall be used:
@@ -274,46 +299,71 @@ The following file naming structure shall be used:
 | Cancelled Bookings | XXXX\_canx\_date.csv  |
 | Amended Bookings   | XXXX\_amend\_date.csv |
 
-***
-
-## Example reporting scenario
-
-### Initial scheduler run
-
-Current bookings:
-
-* Booking A
-* Booking B
-* Booking C
-
-Generated:
-
-* XXXX\_new\_date.csv
-
-Contents:
-
-* Booking A
-* Booking B
-* Booking C
-
-These bookings are now stored as reported.
+* `XXXX` = the first four letters of the supplier name, in capitals and without spaces.
+* `date` = the reporting date, in the format `YYYYMMDD`.
+* A file is generated only when it has rows.
 
 ***
 
-### Second scheduler run
+## Examples: what is sent for each change
 
-Changes:
+Each scheduled run compares every room with what the hotel received in the previous run. The tables below show, for each change made in the booking between two runs, which file the room is sent in.
 
-* Booking D created
-* Booking B modified
-* Booking C cancelled
+In the examples, booking `1001` has one room with 2 adults, and booking `2001` has two rooms (`2001-1` and `2001-2`), each with 2 adults. All of them were already sent to the hotel, unless the row says otherwise.
 
-Generated files:
+{% hint style="info" %}
+**How to read the tables:** `new` = the room is in the NEW file, `amend` = in the AMENDED file, `canx` = in the CANCELLED file. **Nothing sent** means the room is in none of the files.
+{% endhint %}
 
-#### New file
+### New bookings and new rooms
 
-XXXX\_new\_date.csv
+| Change in the booking                            | Example                                     | What the hotel receives                                                     |
+| ------------------------------------------------ | ------------------------------------------- | --------------------------------------------------------------------------- |
+| A booking is created                             | New booking `1002`, one room                | `new`: room `1002`                                                          |
+| A booking is created on the schedule's first run | All active bookings that match the schedule | `new`: all their rooms                                                      |
+| A room is added to a booking already sent        | A second room added to `1001`               | `new`: room `1001-2` only. Room `1001` keeps its Reference and is not sent. |
 
-Contains:
+### Pax changes
 
-* Booking D
+| Change in the booking                                 | Example                                           | What the hotel receives                           |
+| ----------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------- |
+| Pax added to a room                                   | A child added to `1001`                           | `amend`: room `1001`                              |
+| Some pax removed or cancelled; the room still has pax | One of the 2 adults in `1001` cancelled           | `amend`: room `1001`                              |
+| All pax in a room removed or cancelled                | Both adults in `2001-2` cancelled                 | `canx`: room `2001-2`. Room `2001-1` is not sent. |
+| Pax moved between two rooms already in the booking    | One adult moved from `2001-1` to `2001-2`         | `amend`: rooms `2001-1` and `2001-2`              |
+| Some pax moved to a new room                          | One adult from `1001` moved to a new, second room | `amend`: room `1001`, and `new`: room `1001-2`    |
+| All pax moved out of a room                           | Both adults in `2001-2` moved to `2001-1`         | `canx`: room `2001-2`, and `amend`: room `2001-1` |
+
+### Changes to the booking details
+
+| Change in the booking        | Example                                        | What the hotel receives                                                                   |
+| ---------------------------- | ---------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| Pax name changed             | Lead passenger's last name corrected in `1001` | `amend`: room `1001`                                                                      |
+| Dates changed                | Arrival in `1001` moved from 03-01 to 10-01    | `amend`: room `1001`                                                                      |
+| Board changed                | `1001` changed from HB to AI                   | `amend`: room `1001`                                                                      |
+| Hotel comment (Note) changed | A note added to `1001`                         | `amend`: room `1001`                                                                      |
+| Room type changed            | `1001` changed from a double room to a suite   | `canx`: room `1001` with the old room type, and `new`: room `1001` with the new room type |
+| Hotel changed                | `1001` moved to another hotel                  | `canx`: room `1001` at the old hotel, and `new`: room `1001` at the new hotel             |
+
+### Cancellations
+
+| Change in the booking              | Example               | What the hotel receives                           |
+| ---------------------------------- | --------------------- | ------------------------------------------------- |
+| The booking is cancelled           | `2001` cancelled      | `canx`: rooms `2001-1` and `2001-2`               |
+| A room is removed from the booking | Room `2001-2` removed | `canx`: room `2001-2`. Room `2001-1` is not sent. |
+
+### Changes that send nothing
+
+| Change in the booking                                      | Example                                                     | What the hotel receives |
+| ---------------------------------------------------------- | ----------------------------------------------------------- | ----------------------- |
+| A change is made and undone before the next run            | Room type of `1001` changed, then changed back the same day | Nothing sent            |
+| A booking is created and cancelled before it was ever sent | `1003` created and cancelled before the next run            | Nothing sent            |
+| A change to data that is not in the file                   | A transfer or an extra added to `1001`                      | Nothing sent            |
+
+### Several changes at once
+
+When several changes are made before the next run, each room is reported once, based on how it looks at the time of the run.
+
+| Change in the booking                                                  | What the hotel receives                                                                                                                                |
+| ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| In `1001`: room type changed, a second room added and a transfer added | `canx`: room `1001` with the old room type. `new`: the room with the new room type, now sent as `1001-1`, and room `1001-2`. The transfer is not sent. |
