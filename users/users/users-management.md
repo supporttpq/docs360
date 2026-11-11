@@ -19,7 +19,7 @@ The **Users dashboard** provides a centralized view of all users within the agen
 
 <figure><img src="../../.gitbook/assets/users filters.png" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="172.75">Field Name</th><th width="275.75">Description</th><th>Notes / System Impact</th></tr></thead><tbody><tr><td>Username</td><td>Filter by username</td><td>Supports search and dropdown selection</td></tr><tr><td>First name</td><td>Filter by first name</td><td>Free text search</td></tr><tr><td>Last name</td><td>Filter by last name</td><td>Free text search</td></tr><tr><td>Signature</td><td>Filter by seller signature</td><td>Used for identifying booking ownership. Represents the Seller ID in the booking. It is defined when a user is created and is used in <strong>All Bookings</strong> in the <strong>Owne</strong>r filter ((show code checkbox must be checked) </td></tr><tr><td>Role</td><td>Filter by user role</td><td>Useful for role-based audits</td></tr><tr><td>Show hidden</td><td>Include hidden users in results</td><td>Shows inactive/hidden users. For a user to have hidden status, and no longer appear across the system, the status must be set to Hidden in Edit User.</td></tr><tr><td>Display</td><td>Applies filters</td><td>Refreshes the list</td></tr><tr><td>Clear</td><td>Resets filters</td><td>Clears all filter inputs</td></tr><tr><td>Create</td><td>Creates a new user</td><td>Opens <strong>Create User</strong> page</td></tr></tbody></table>
+<table><thead><tr><th width="172.75">Field Name</th><th width="275.75">Description</th><th>Notes / System Impact</th></tr></thead><tbody><tr><td>Username</td><td>Filter by username</td><td>Supports search and dropdown selection</td></tr><tr><td>First name</td><td>Filter by first name</td><td>Free text search</td></tr><tr><td>Last name</td><td>Filter by last name</td><td>Free text search</td></tr><tr><td>Signature</td><td>Filter by seller signature</td><td>Used for identifying booking ownership. Represents the Seller ID in the booking. It is defined when a user is created and is used in <strong>All Bookings</strong> in the <strong>Owne</strong>r filter ((show code checkbox must be checked)</td></tr><tr><td>Role</td><td>Filter by user role</td><td>Useful for role-based audits</td></tr><tr><td>Show hidden</td><td>Include hidden users in results</td><td>Shows inactive/hidden users. For a user to have hidden status, and no longer appear across the system, the status must be set to Hidden in Edit User.</td></tr><tr><td>Display</td><td>Applies filters</td><td>Refreshes the list</td></tr><tr><td>Clear</td><td>Resets filters</td><td>Clears all filter inputs</td></tr><tr><td>Create</td><td>Creates a new user</td><td>Opens <strong>Create User</strong> page</td></tr></tbody></table>
 
 ### **User Table Fields**
 
@@ -79,8 +79,42 @@ The **Users dashboard** provides a centralized view of all users within the agen
 
 #### **Block / User** 🚫
 
+A **Super Administrator** can block or unblock all users in a company. Individual accounts can also be blocked by users who can edit users: **System Administrators and Super Administrators**, plus **Administrators and Brand Managers** with the **Users** permission when user editing is enabled for the company.
+
+Blocking is managed in **Users → Users** and prevents the account from logging in.
+
 * Blocked users remain in the system but cannot log in.
 * Useful for temporary suspensions or seasonal employees.
+
+To block a user:
+
+{% stepper %}
+{% step %}
+**Search for the user**
+
+Use the filters at the top of **Users** to find the user you want to block, then click **Display**.
+{% endstep %}
+
+{% step %}
+**Open the three dots menu**
+
+Click the three dots and select **Block Users**.
+{% endstep %}
+
+{% step %}
+**Confirm**
+
+Confirm **Block Users** in the pop-up.
+{% endstep %}
+{% endstepper %}
+
+A check mark appears in the **User Blocked** column. Click **Clear** to reset the filters and see the full list of users again.
+
+To unblock a user, follow the same steps and select **Unblock Users** instead.
+
+{% hint style="warning" %}
+**Block Users** and **Unblock Users** apply to every user shown on the current page of the list, not only to one user. Filter the list down to the user you want before you open the three dots menu. If you do not filter, all users on the page are blocked or unblocked.
+{% endhint %}
 
 #### **View Login Activity**
 
