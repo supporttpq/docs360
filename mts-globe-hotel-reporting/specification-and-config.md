@@ -317,11 +317,11 @@ In the examples, booking `1001` has one room with 2 adults, and booking `2001` h
 
 ### New bookings and new rooms
 
-| Change in the booking                            | Example                                     | What the hotel receives                                                     |
-| ------------------------------------------------ | ------------------------------------------- | --------------------------------------------------------------------------- |
-| A booking is created                             | New booking `1002`, one room                | `new`: room `1002`                                                          |
-| A booking is created on the schedule's first run | All active bookings that match the schedule | `new`: all their rooms                                                      |
-| A room is added to a booking already sent        | A second room added to `1001`               | `new`: room `1001-2` only. Room `1001` keeps its Reference and is not sent. |
+| Change in the booking                                       | Example                                                                            | What the hotel receives                                                                                                                                              |
+| ----------------------------------------------------------- | ---------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| The schedule runs for the first time                        | Bookings `1001` and `2001` already exist when the schedule runs for the first time | `new`: rooms `1001`, `2001-1` and `2001-2`. All active bookings that match the schedule are sent, no matter when they were created. Cancelled bookings are not sent. |
+| A new booking is created after the schedule has already run | Booking `1002` is created between two runs                                         | `new`: room `1002` only. Bookings already sent are not sent again.                                                                                                   |
+| A room is added to a booking already sent                   | A second room added to `1001`                                                      | `new`: room `1001-2` only. Room `1001` keeps its Reference and is not sent.                                                                                          |
 
 ### Pax changes
 
