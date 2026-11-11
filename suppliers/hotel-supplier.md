@@ -160,6 +160,8 @@ The **Schedulers** tab has two sub-tabs: **Extra Schedulers** and **Hotel Schedu
 The trash icon deletes a schedule, and **Resend** sends the last report to the hotel again at once. Both take effect immediately.
 {% endhint %}
 
+For how `Hotel Manifest CSV` reports new, amended and cancelled rooms, see [Specification & Config](../mts-globe-hotel-reporting/specification-and-config.md).
+
 **Handling tab**
 
 <figure><img src="https://1539646852-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZCqO8EQ5P5Mioq1zbQAc%2Fuploads%2F2bNk7X9RpuHNITPe4UWY%2Fimage.png?alt=media&#x26;token=9c6588fa-012e-4f8a-8781-b28c5b3f276e" alt="The Handling Options sub-tab with the required Creditor drop-down, the Account Debit field, and the Add Own Schedule checkbox"><figcaption><p>Handling Options.</p></figcaption></figure>

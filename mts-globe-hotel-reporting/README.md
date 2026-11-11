@@ -39,7 +39,7 @@ Each file must follow a strict naming structure based on the booking action type
 
 ### Notes
 
-* `XXXX` = Distributor code (the "Brand Code" from the brand page is used as the distributor. This is the same code used for flight transfer. Brand Code; this is the name of the Brand.)
+* `XXXX` = the first four letters of the supplier name, in capitals and without spaces.
 * Date format = `YYYYMMDD`
 
 ***
