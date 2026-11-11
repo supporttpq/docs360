@@ -77,7 +77,7 @@ The **Users dashboard** provides a centralized view of all users within the agen
 
 * Permanently remove a user (only possible if no dependent bookings or financial records exist).
 
-#### **Block / User** 🚫
+#### **Block / Unblock User** 🚫
 
 A **Super Administrator** can block or unblock all users in a company. Individual accounts can also be blocked by users who can edit users: **System Administrators and Super Administrators**, plus **Administrators and Brand Managers** with the **Users** permission when user editing is enabled for the company.
 
