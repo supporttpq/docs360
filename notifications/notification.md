@@ -140,17 +140,17 @@ The number next to the tab is the number of Extras in the list, not a count of u
 
 The table has one row per Extra:
 
-| Column           | Description                             |
-| ---------------- | --------------------------------------- |
-| **ID**           | The ID of the Extra.                    |
-| **Code**         | The code of the Extra.                  |
-| **Name**         | The name of the Extra.                  |
-| **View details** | A link on each row. See the note below. |
+| Column           | Description                                                                                                                       |
+| ---------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| **ID**           | The ID of the Extra.                                                                                                              |
+| **Code**         | The code of the Extra.                                                                                                            |
+| **Name**         | The name of the Extra.                                                                                                            |
+| **View details** | A link on each row. It opens a grid of the Extra's allotment per date. Use the **Back To Products** button to return to the list. |
 
 To add an Extra to the tab, tick **Display allotment** on the Extra. To remove it, untick **Display allotment**. The same setting controls whether the Extra's available allotment is shown in the booking window. See [Extras](../extras-setup/extras-general-page/extras.md).
 
 {% hint style="danger" %}
-**TO VERIFY** — (1) What does **View details** open for an Extra? (2) Is the list limited to the brand selected in the top bar, or does it show Extras for all brands? Both answers need confirming in the product before this page is published to the manual.
+**TO VERIFY** — (1) Is the list limited to the brand selected in the top bar, or does it show Extras for all brands? It was only checked with **All brands** selected. (2) What do the abbreviated column headings in the **View details** grid mean (for example `AI1`–`AI4`, `BI1`–`BI4`, `FO1`–`FO4`, `URET`, `BOUT`, `BRET` and `TOTAL OUT`)? Both need confirming with the product team before this page is published to the manual.
 {% endhint %}
 
 ***
