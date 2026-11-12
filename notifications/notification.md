@@ -136,7 +136,7 @@ The **Extras With Allotments** tab lists every [Extra](../extras-setup/extras-ge
 
 The number next to the tab is the number of Extras in the list, not a count of unresolved notifications.
 
-<figure><img src="../.gitbook/assets/notification-tabs-extras-with-allotments.png" alt="Notification left panel with the Extras With Allotments tab selected and a count of 22 beside it"><figcaption><p>The Extras With Allotments tab in the Notification left panel. The count is the number of Extras with Display allotment ticked.</p></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/notification-extras-with-allotments-boxed.png" alt="Notification page with the Extras With Allotments tab selected and the row of Extra 16731 CHQ_KRIKRI marked by a red rectangle"><figcaption><p>The Extras With Allotments tab. Extra 16731 (CHQ_KRIKRI) is listed because Display allotment is ticked on the Extra.</p></figcaption></figure></div>
 
 The table has one row per Extra:
 

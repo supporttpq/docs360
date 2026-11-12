@@ -55,13 +55,17 @@ The full set-up of an excursion is described in [Guide App](../../destination-mo
 | **Currency Prices**         | Enable this to input separate prices per currency. If selected, the sales price for each brand will be calculated from the default price, using the relevant currencies. The sales prices are not updated for existing bookings. **Example:** The company currency is EUR, and the brand currency is SEK. The currency rate has changed from 11,55 to 11,3. This update will trigger the service to run an automatic update of the pricelist.                                                               |
 | **Show Supplier on Ticket** | Toggle if supplier details should appear on customer tickets.                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/extras-display-allotment-checkbox.png" alt="The Display allotment checkbox, ticked and highlighted, below Show supplier on ticket, with an information icon that opens its tooltip"><figcaption><p>The Display allotment checkbox on the Basic setup tab of an Extra.</p></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/extras-display-allotment-tooltip-boxed.png" alt="Basic setup tab of an Extra with the Display allotment checkbox ticked and marked by a red rectangle, and the tooltip of Display allotment open above it"><figcaption><p>The Display allotment checkbox and its tooltip on the Basic setup tab of an Extra.</p></figcaption></figure></div>
 
 The tooltip of **Display allotment** reads:
 
 ```
 This will display the allotment of the Extra in Office booking when you edit 'Transport' and on notification dashboard.
 ```
+
+When **Display allotment** is ticked, the Extra is listed in the **Extras With Allotments** tab on the [Notifications](../../notifications/notification.md) page. In the example below, Extra `16731` (`CHQ_KRIKRI`) has the box ticked, so it appears in the list.
+
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/notification-extras-with-allotments-boxed.png" alt="Notification page with the Extras With Allotments tab selected and the row of Extra 16731 CHQ_KRIKRI marked by a red rectangle"><figcaption><p>An Extra with Display allotment ticked, listed in the Extras With Allotments tab on the Notifications page.</p></figcaption></figure></div>
 
 ### Custom text
 
