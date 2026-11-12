@@ -115,43 +115,18 @@ Notifications are not automatically cleared when you save a reservation. The sys
 
 #### Left Panel — Notification Categories
 
-| Category                   | Description                                                                                                                                                                             |
-| -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Unpaid Bkg**             | Bookings with outstanding payments — the customer owes a balance that has not been registered                                                                                           |
-| **Overbkg**                | Overbooking situations, broken down by type: Homebound transport, Hotels, Rooms, and Outbound transport                                                                                 |
-| **Error Bkg**              | Bookings that encountered a system error during saving or processing and are in an incomplete or invalid state                                                                          |
-| **Warnings**               | Bookings in a valid state but with a condition that requires attention — for example, travel insurance was not sent, or a special service request is missing                            |
-| **Hotel Special Offer**    | Issues related to hotel special offers — for example, an offer that was applied incorrectly or is inconsistent with contract conditions                                                 |
-| **Extra Special Offer**    | Issues with special offers on extras — similar to Hotel Special Offer but for extra products                                                                                            |
-| **Upsale**                 | Alerts related to upsell opportunities or upsell products that have an issue requiring review                                                                                           |
-| **Stop Sales**             | Bookings or products affected by an active Stop Sales rule                                                                                                                              |
-| **Queue Management**       | Errors in background processing queues — for example, failed confirmation sends, communication jobs, or automated processing tasks                                                      |
-| **Extras With Allotments** | A list of the Extras that have **Display allotment** ticked. It is a reference list, not a list of errors. See [Extras With Allotments tab](notification.md#extras-with-allotments-tab) |
-
-***
-
-#### Extras With Allotments tab
-
-The **Extras With Allotments** tab lists every [Extra](../extras-setup/extras-general-page/extras.md) that has **Display allotment** ticked on its **Basic setup** tab. An Extra is listed because of that setting. It is not listed because of an error, and no allotment threshold is involved. An Extra that has allotments but does not have **Display allotment** ticked does not appear.
-
-The number next to the tab is the number of Extras in the list, not a count of unresolved notifications.
-
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/notification-extras-with-allotments-boxed.png" alt="Notification page with the Extras With Allotments tab selected and the row of Extra 16731 CHQ_KRIKRI marked by a red rectangle"><figcaption><p>The Extras With Allotments tab. Extra 16731 (CHQ_KRIKRI) is listed because Display allotment is ticked on the Extra.</p></figcaption></figure></div>
-
-The table has one row per Extra:
-
-| Column           | Description                                                                                                                       |
-| ---------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| **ID**           | The ID of the Extra.                                                                                                              |
-| **Code**         | The code of the Extra.                                                                                                            |
-| **Name**         | The name of the Extra.                                                                                                            |
-| **View details** | A link on each row. It opens a grid of the Extra's allotment per date. Use the **Back To Products** button to return to the list. |
-
-To add an Extra to the tab, tick **Display allotment** on the Extra. To remove it, untick **Display allotment**. The same setting controls whether the Extra's available allotment is shown in the booking window. See [Extras](../extras-setup/extras-general-page/extras.md).
-
-{% hint style="danger" %}
-**TO VERIFY** — (1) Is the list limited to the brand selected in the top bar, or does it show Extras for all brands? It was only checked with **All brands** selected. (2) What do the abbreviated column headings in the **View details** grid mean (for example `AI1`–`AI4`, `BI1`–`BI4`, `FO1`–`FO4`, `URET`, `BOUT`, `BRET` and `TOTAL OUT`)? Both need confirming with the product team before this page is published to the manual.
-{% endhint %}
+| Category                   | Description                                                                                                                                                                |
+| -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Unpaid Bkg**             | Bookings with outstanding payments — the customer owes a balance that has not been registered                                                                              |
+| **Overbkg**                | Overbooking situations, broken down by type: Homebound transport, Hotels, Rooms, and Outbound transport                                                                    |
+| **Error Bkg**              | Bookings that encountered a system error during saving or processing and are in an incomplete or invalid state                                                             |
+| **Warnings**               | Bookings in a valid state but with a condition that requires attention — for example, travel insurance was not sent, or a special service request is missing               |
+| **Hotel Special Offer**    | Issues related to hotel special offers — for example, an offer that was applied incorrectly or is inconsistent with contract conditions                                    |
+| **Extra Special Offer**    | Issues with special offers on extras — similar to Hotel Special Offer but for extra products                                                                               |
+| **Upsale**                 | Alerts related to upsell opportunities or upsell products that have an issue requiring review                                                                              |
+| **Stop Sales**             | Bookings or products affected by an active Stop Sales rule                                                                                                                 |
+| **Queue Management**       | Errors in background processing queues — for example, failed confirmation sends, communication jobs, or automated processing tasks                                         |
+| **Extras With Allotments** | A reference list of the Extras that have **Display allotment** ticked. It is not a list of errors or warnings. See [Extras](../extras-setup/extras-general-page/extras.md) |
 
 ***
 
