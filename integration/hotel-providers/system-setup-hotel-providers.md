@@ -55,7 +55,7 @@ This page typically covers:
 
 * **Hotel Beds** (Hotelbeds)
 * **Availpro / D-EDGE**
-* **SkiStar Resort**: the stay lengths SkiStar Sync fetches for each SkiStar resort. The SkiStar connection itself has no tab: Tourpaq Support sets it up. See [SkiStar integration](skistar-sync.md).
+* **SkiStar Resort**: the stay lengths SkiStar Sync fetches for each SkiStar resort. The SkiStar connection itself has no tab: Tourpaq Support sets it up. See [SkiStar integration](skistar-integration.md).
 
 ## Configuration
 
@@ -108,7 +108,7 @@ Once credentials are entered and validated, Tourpaq can synchronize accommodatio
 
 #### Overview
 
-The **SkiStar Resort** tab tells SkiStar Sync which stay lengths to fetch from SkiStar for each SkiStar resort. Each row is one resort and one stay length. See [SkiStar integration](skistar-sync.md).
+The **SkiStar Resort** tab tells SkiStar Sync which stay lengths to fetch from SkiStar for each SkiStar resort. Each row is one resort and one stay length. See [SkiStar integration](skistar-integration.md).
 
 For each row, the sync asks SkiStar about every Sunday arrival with that stay length, and updates allotment and cost on the room types coded for that stay, e.g. `-7D4` for 4 nights.
 
@@ -162,7 +162,7 @@ Hotels with SkiStar Resort ID `1` are synced for 7- and 5-night stays; hotels wi
 
 * **No availability/prices imported:** Verify credentials first, then provider endpoints.
 * **Images don’t import:** Verify Image/Small Image endpoints (Hotel Beds).
-* **A SkiStar room gets no allotment or cost:** check that the hotel's SkiStar resort has a row for the room's stay length on the **SkiStar Resort** tab. See [SkiStar integration](skistar-sync.md#troubleshooting).
+* **A SkiStar room gets no allotment or cost:** check that the hotel's SkiStar resort has a row for the room's stay length on the **SkiStar Resort** tab. See [SkiStar integration](skistar-integration.md#troubleshooting).
 * **A provider worked yesterday but fails today:** Rotate credentials and check provider service status.
 
 ## Hotel Import Process

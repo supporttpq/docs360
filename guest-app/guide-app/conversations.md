@@ -93,11 +93,11 @@ It reads: "Our chat is open 7 days before departure – but you can contact us a
 1. Tap the guest name in a conversation row. Do not tap the information icon.
 2. The chat opens. The guest name is at the top of the screen and the message history is below it.
 3. Type your message in the field at the bottom of the screen and tap **Send**.
-4. To add a picture, tap **Media**, then tap **Choose a picture** or **Take a picture**. To close the window without adding a picture, tap [**Cancel**](#user-content-fn-1)[^1].
+4. To add a picture, tap **Media**, then tap **Choose a picture** or **Take a picture**. To close the window without adding a picture, tap **Cancel**.
 
-When you open a conversation from **Untaken conversations**,[ ](#user-content-fn-1)[^1]it is moved from **Untaken conversations** to **My conversations.**
+When you open a conversation from **Untaken conversations**, it is moved from **Untaken conversations** to **My conversations.**
 
-<div><figure><img src="../../.gitbook/assets/guide-app-my-conversations.jpg" alt="" width="375"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/guide-app-conversation-chat.jpg" alt="" width="375"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/guide-app-conversation-media.jpg" alt="" width="375"><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/conversation1.jpg" alt="" width="375"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/guide-app-conversation-chat.jpg" alt="" width="375"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/guide-app-conversation-media.jpg" alt="" width="375"><figcaption></figcaption></figure></div>
 {% endstep %}
 {% endstepper %}
 
@@ -192,5 +192,3 @@ The **Customer chat** window lists unread conversations. Whether a read conversa
 * [Guest App](file:///guest-app/visit-sun-app.md)
 * [Guide teams](file:///guides.md)
 * [Users](file:///users/users.md)
-
-[^1]: 

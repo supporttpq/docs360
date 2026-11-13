@@ -77,8 +77,6 @@ Tick **Hide Room** to take a room type out of sale without deleting it. Tick **S
 ### Use a room type for Custom Hotel Days
 
 Enable **Custom Hotel Days Booking** on the hotel's [General tab](general-tab.md). Then tick **Used for Custom Hotel Day** on each room type that is used for Custom Hotel Day bookings. Generate allotment for the room type, click **Copy Room Cost** to create its room cost lines, and enter the price. Enter the daily prices under **Price List → Price List Hotel Days**. See [Price List Custom Hotel Days](../../price-list-custom-hotel-days-service.md).
-
-
 {% endstep %}
 {% endstepper %}
 
@@ -116,7 +114,7 @@ Editing a field on the linked Base Room Type record changes it for every hotel t
 
 #### Room type settings
 
-<figure><img src="../../.gitbook/assets/room-type-settings-blurred (1).png" alt="Room type settings form with bed numbers, minimum age and infant fields on the left and the Room Restrictions table on the right"><figcaption><p>Occupancy and infant settings for a room type, with Room Restrictions.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/room-type-settings-blurred.png" alt="Room type settings form with bed numbers, minimum age and infant fields on the left and the Room Restrictions table on the right"><figcaption><p>Occupancy and infant settings for a room type, with Room Restrictions.</p></figcaption></figure>
 
 | Field                   | Description                                              | Notes                                                                                                                                                                                                                                        |
 | ----------------------- | -------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

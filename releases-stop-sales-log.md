@@ -22,7 +22,7 @@ Hotel → Releases / Stop Sales Log
 
 You can also click **Log** on a line in **Hotel → Stop Sales**. The log opens filtered on that stop sale.
 
-<figure><img src=".gitbook/assets/releases-stop-sales-log (1).png" alt="Releases / Stop Sales Log with filters and the Change date/time, Supplier, User, All.Date, Hotel, Room, Active and Source columns"><figcaption><p>Releases / Stop Sales Log</p></figcaption></figure>
+<figure><img src=".gitbook/assets/releases-stop-sales-log.png" alt="Releases / Stop Sales Log with filters and the Change date/time, Supplier, User, All.Date, Hotel, Room, Active and Source columns"><figcaption><p>Releases / Stop Sales Log</p></figcaption></figure>
 
 ***
 

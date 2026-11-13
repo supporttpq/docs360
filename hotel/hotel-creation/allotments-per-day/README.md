@@ -189,7 +189,7 @@ Click **Update**.
 
 ### SkiStar Allotment per Day
 
-For a hotel managed by **SkiStar**, each room type is one SkiStar accommodation: one house or one apartment. SkiStar Sync sets its allotment twice a day (see [SkiStar integration](../../../integration/hotel-providers/skistar-sync.md)):
+For a hotel managed by **SkiStar**, each room type is one SkiStar accommodation: one house or one apartment. SkiStar Sync sets its allotment twice a day (see [SkiStar integration](../../../integration/hotel-providers/skistar-integration.md)):
 
 * SkiStar has the accommodation free: **Free** is `1` (allotment = rooms booked + 1).
 * SkiStar has no free accommodation for the stay: **Free** is `0` (allotment = rooms booked).

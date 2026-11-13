@@ -28,20 +28,20 @@ In SkiStar, every accommodation is one unit: one house or one apartment. SkiStar
 
 **What must match**
 
-| Tourpaq                                                            | SkiStar                         | Rule                                                                                   | Example                                                     |
-| ------------------------------------------------------------------ | ------------------------------- | -------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
-| Hotel **SkiStar Resort ID**                                        | Resort ID                       | Identical. Several hotels can have the same resort ID.                                 | `5` = Trysil                                                |
-| Base room type **Room Code**                                       | Accommodation ID, plus the stay | `<Accommodation ID>-<weekday>D<nights>` — see [Room codes](skistar-sync.md#room-codes) | `23030-7D4` = accommodation 23030, Sunday arrival, 4 nights |
-| **System Setup → Hotel Providers → SkiStar Resort**                | Stay lengths sold in the resort | One row per resort and stay length                                                     | Resort `5`, `4D`                                            |
-| [Transport Stay Days](../../setup/transport-stay-days.md) **Days** | Stay length in nights           | Same number                                                                            | `4D` = 4 days                                               |
-| Price list transport                                               | The room's stay                 | Same length                                                                            | `23030-7D4` only with 4-day transports                      |
-| Hotel creditor currency                                            | Price currency                  | Same currency. Tourpaq does not convert.                                               |                                                             |
+| Tourpaq                                                            | SkiStar                         | Rule                                                                                          | Example                                                     |
+| ------------------------------------------------------------------ | ------------------------------- | --------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| Hotel **SkiStar Resort ID**                                        | Resort ID                       | Identical. Several hotels can have the same resort ID.                                        | `5` = Trysil                                                |
+| Base room type **Room Code**                                       | Accommodation ID, plus the stay | `<Accommodation ID>-<weekday>D<nights>` — see [Room codes](skistar-integration.md#room-codes) | `23030-7D4` = accommodation 23030, Sunday arrival, 4 nights |
+| **System Setup → Hotel Providers → SkiStar Resort**                | Stay lengths sold in the resort | One row per resort and stay length                                                            | Resort `5`, `4D`                                            |
+| [Transport Stay Days](../../setup/transport-stay-days.md) **Days** | Stay length in nights           | Same number                                                                                   | `4D` = 4 days                                               |
+| Price list transport                                               | The room's stay                 | Same length                                                                                   | `23030-7D4` only with 4-day transports                      |
+| Hotel creditor currency                                            | Price currency                  | Same currency. Tourpaq does not convert.                                                      |                                                             |
 
-The sync covers Sunday arrivals with stays of up to 7 nights, for the current and the next ski season. The details are under [How it works](skistar-sync.md#how-it-works).
+The sync covers Sunday arrivals with stays of up to 7 nights, for the current and the next ski season. The details are under [How it works](skistar-integration.md#how-it-works).
 
 ## Before you start
 
-* Tourpaq Support has connected the company to SkiStar. See [Connect the company to SkiStar](skistar-sync.md#connect-the-company-to-skistar).
+* Tourpaq Support has connected the company to SkiStar. See [Connect the company to SkiStar](skistar-integration.md#connect-the-company-to-skistar).
 * You know the SkiStar resort IDs and accommodation IDs you sell.
 * Each stay length you sell exists in [Transport Stay Days](../../setup/transport-stay-days.md), e.g. `4D` with **Days** `4` and `7D` with **Days** `7`.
 * Your transports for SkiStar trips have those stay lengths.
@@ -101,7 +101,7 @@ Stay lengths longer than 7 days are not synced. See [System Setup – Hotel Prov
 
 SkiStar can sell an accommodation for one stay length and not for another over the same dates, e.g. 7 nights but not 4. Tourpaq therefore keeps one room type per accommodation and stay length, each with its own allotment and cost.
 
-1. For each SkiStar accommodation and each stay length you sell, create a [base room type](../../base-room-types.md) with the Room Code `<Accommodation ID>-<weekday>D<nights>`. See [Room codes](skistar-sync.md#room-codes).
+1. For each SkiStar accommodation and each stay length you sell, create a [base room type](../../base-room-types.md) with the Room Code `<Accommodation ID>-<weekday>D<nights>`. See [Room codes](skistar-integration.md#room-codes).
 2. Add the base room types to the hotel.
 
 <figure><img src="../../.gitbook/assets/skistar-base-room-types.webp" alt="Base Room Types with the room codes 3691-7D7, 3691-7D5 and 3691-7D4, all named SkiStar Lodge Lindvallen 302 Mountain View"><figcaption><p>Three room types for SkiStar accommodation 3691: 7, 5 and 4 nights from Sunday.</p></figcaption></figure>
@@ -271,8 +271,8 @@ The check waits for SkiStar. When SkiStar's API is slow, offers and bookings on 
 * **A room gets no allotment or cost:** check that the Room Code is `<Accommodation ID>-7D<nights>`, that the resort has a row for that stay length, and that the room is not hidden. Rooms only get Sunday arrivals inside the synced season.
 * **A room gets allotment but no cost:** create the stay length in [Transport Stay Days](../../setup/transport-stay-days.md).
 * **Offers show a room with the wrong stay, or twice:** the room type is on price lists with another stay length. Remove it from those price lists.
-* **Allotment of a room without a stay in its code looks wrong for 4- or 5-night stays:** give the room a stay code. See [Room codes without a stay](skistar-sync.md#room-codes).
-* **Web Booking is slow on SkiStar hotels:** SkiStar's API is answering slowly. See [Availability check when booking](skistar-sync.md#availability-check-when-booking).
+* **Allotment of a room without a stay in its code looks wrong for 4- or 5-night stays:** give the room a stay code. See [Room codes without a stay](skistar-integration.md#room-codes).
+* **Web Booking is slow on SkiStar hotels:** SkiStar's API is answering slowly. See [Availability check when booking](skistar-integration.md#availability-check-when-booking).
 
 ## Related pages
 
