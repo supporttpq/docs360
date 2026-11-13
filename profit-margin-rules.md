@@ -60,7 +60,7 @@ Using the profit margin rule, all agencies can:
 * Automatically generate accurate, up-to-date **price lists**.
 * Reduce manual maintenance through **flexible**, **reusable**, and **automated** rules.
 
-<figure><img src=".gitbook/assets/image (650).png" alt="Profit Margin Rules page: filters at the top, including Transport Type, and the list of rules with Resort, Hotel, Transport Type, departure dates and PM1–PM4 columns"><figcaption><p>Profit Margin Rules page</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (649).png" alt="Profit Margin Rules page: filters at the top, including Transport Type, and the list of rules with Resort, Hotel, Transport Type, departure dates and PM1–PM4 columns"><figcaption><p>Profit Margin Rules page</p></figcaption></figure>
 
 ### **Instructions**
 

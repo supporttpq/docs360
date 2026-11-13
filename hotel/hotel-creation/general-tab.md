@@ -171,7 +171,7 @@ This field is optional, but important when child pricing differs from adult pric
 This field affects how hotel price list child pricing is applied in booking flows. It should stay aligned with price list and room configuration logic.
 
 {% hint style="info" %}
-When a guest is within the age from/to, then the child price in the price list is used.\
+When a guest is within the age from/to, then the child price in the price list is used.\
 If no age is specified, the fallback is the age range from 2 years to "Max child age" (from the agency configuration).
 {% endhint %}
 
@@ -184,8 +184,8 @@ This field is optional.
 If a child age falls outside this interval, the child uses adult extra-bed logic instead. This setting overrides the child age behavior defined on the base room type when a hotel-specific rule is needed.
 
 {% hint style="info" %}
-When a room type has a dedicated child extra bed, only guests within the given age range will be eligible for a child bed.\
-This overrides the age range on the room type.\
+When a room type has a dedicated child extra bed, only guests within the given age range will be eligible for a child bed.\
+This overrides the age range on the room type.\
 If no age is specified, the fallback is the age range from 2 years to "Max child age" (from the agency configuration).
 {% endhint %}
 
@@ -237,29 +237,21 @@ This field is optional.
 
 The configured name appears on the ticket and in web booking when extra-bed discount logic is used. It relates to [Discount Extra Beds](discount-extra-beds.md).
 
-**Managed by Availpro**
+**Managed by**
 
-Marks the hotel as managed by Availpro.
+Selects the external system that manages the hotel's rooms: D-Edge (Availpro), Oracle Opera, Hotelbeds, Skistar or Seekda.
 
-This field is optional.
+This field is optional. Leave it empty for hotels managed in Tourpaq only.
 
-When enabled, the hotel uses rooms and costs from Availpro. This affects how room and cost data is sourced and maintained.
-
-**Managed by SkiStar**
-
-Marks the hotel as managed by SkiStar.
-
-This field is optional and only available when SkiStar Sync is enabled for the company.
-
-When enabled, Tourpaq performs automatic daily synchronization of allotment and cost prices for SkiStar accommodations. This affects how hotel availability and cost data are updated.
+The choice decides where rooms, allotment or costs come from. With **Skistar**, Tourpaq updates allotment and cost of the hotel's SkiStar rooms twice a day and checks with SkiStar when a booking takes a room. See [SkiStar integration](../../integration/hotel-providers/skistar-sync.md).
 
 **SkiStar Resort ID**
 
-Defines the SkiStar resort identifier.
+Defines the hotel's resort ID in SkiStar, e.g. `1` for Sälen.
 
-This field is only relevant when **Managed by SkiStar** is enabled.
+This field is shown only when **Managed by** is **Skistar**, and is required for SkiStar Sync. Selecting another **Managed by** option clears it.
 
-The value links the hotel to the correct SkiStar resort in the synchronization flow.
+Several hotels can have the same SkiStar Resort ID. The stay lengths synced for the resort are set on [System Setup – Hotel Providers → SkiStar Resort](../../integration/hotel-providers/system-setup-hotel-providers.md#skistar-resort).
 
 <figure><img src="../../.gitbook/assets/image (526).png" alt="Managed by SkiStar and SkiStar Resort ID fields"><figcaption><p>SkiStar-related fields.</p></figcaption></figure>
 

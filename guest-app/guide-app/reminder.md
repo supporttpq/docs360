@@ -38,7 +38,7 @@ Use Reminder to:
 
 On the Guide App Home screen, tap **Reminder**. The **Reminders** screen opens. Tap the list name at the top to switch between **Accepted and local reminders**, **Not answered reminders** and **Sent reminders**.
 
-<figure><img src="../../.gitbook/assets/image (18).jpg" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).jpg" alt="" width="375"><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -46,9 +46,9 @@ On the Guide App Home screen, tap **Reminder**. The **Reminders** screen opens. 
 
 Tap **+** at the top right of the **Reminders** screen. Enter a **Title**, for example `Airport pick-up – group of 12`. Enter a **Description**, for example `Meet the group at arrivals, hall B`. Select the **Date** and **Time**, for example `14 Oct 2026` and `07:30`. Tap **Set alarm** and select when the alarm fires, for example **1 hour before**. Optional: select an **Alarm sound**. Tap **Save**.
 
-<figure><img src="../../.gitbook/assets/image (17).jpg" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8).jpg" alt="" width="375"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (16).jpg" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9).jpg" alt="" width="375"><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -77,8 +77,6 @@ Open the **Not answered reminders** list and tap the reminder. Read the title, d
 **Check the answer to a reminder you sent**
 
 Open the **Sent reminders** list. Each entry shows the receiving guide and the answer: **Accepted** or **Declined**.
-
-
 {% endstep %}
 
 {% step %}

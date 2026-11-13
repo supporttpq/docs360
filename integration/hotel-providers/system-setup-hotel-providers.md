@@ -23,6 +23,8 @@ layout:
     visible: true
   actions:
     visible: true
+  anchors:
+    visible: true
 ---
 
 # Hotel Beds / D-Edge / SkiStar
@@ -53,7 +55,7 @@ This page typically covers:
 
 * **Hotel Beds** (Hotelbeds)
 * **Availpro / D-EDGE**
-* **SkiStar Resort** mappings (used by the SkiStar integration)
+* **SkiStar Resort**: the stay lengths SkiStar Sync fetches for each SkiStar resort. The SkiStar connection itself has no tab: Tourpaq Support sets it up. See [SkiStar integration](skistar-sync.md).
 
 ## Configuration
 
@@ -102,58 +104,53 @@ Once credentials are entered and validated, Tourpaq can synchronize accommodatio
 3. Enter the **username** and **password** provided.
 4. Save the configuration.
 
-### SkiStar Resort mappings
+### SkiStar Resort
 
 #### Overview
 
-The **SkiStar Resort** tab allows administrators to configure mappings between **SkiStar Resort IDs** and **Transport Length IDs**. These mappings ensure that when SkiStar accommodation data is imported, the system can correctly determine the default transport duration associated with each resort.
+The **SkiStar Resort** tab tells SkiStar Sync which stay lengths to fetch from SkiStar for each SkiStar resort. Each row is one resort and one stay length. See [SkiStar integration](skistar-sync.md).
 
-This configuration is required for proper handling of allotment, availability, pricing, and booking logic for SkiStar accommodations.
-
-For the daily sync behavior and API logic, see [SkiStar Sync](skistar-sync.md).
+For each row, the sync asks SkiStar about every Sunday arrival with that stay length, and updates allotment and cost on the room types coded for that stay, e.g. `-7D4` for 4 nights.
 
 #### Page structure
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="The SkiStar Resort tab with two rows for Ski Resort ID 1: 4D and 7D, a delete icon per row and a Create button"><figcaption><p>Resort 1 synced for 4-night and 7-night stays.</p></figcaption></figure>
 
-The page displays a simple table with the following columns:
+| Column                  | Description                                                                                                                                            |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Ski Resort ID**       | The resort's ID in SkiStar, e.g. `1` = Sälen, `4` = Hemsedal, `5` = Trysil. The same number as the **SkiStar Resort ID** on the hotels of that resort. |
+| **Transport Length ID** | A stay length from [Transport Stay Days](../../setup/transport-stay-days.md), e.g. `4D`. Stay lengths longer than 7 days are not synced.               |
 
-**Ski Resort ID**
+#### Add a stay length to a resort
 
-Represents the unique identifier of the resort in the SkiStar system.\
-Each row corresponds to one resort configuration.
+1. Select **Create**. A new row appears at the bottom of the list.
+2. In the new row, enter the **Ski Resort ID**.
+3. In **Transport Length ID**, select the stay length.
+4. Select the save icon at the start of the row. The **X** next to it discards the row.
 
-**Transport Length ID**
+Add one row per resort and stay length. To change a row, delete it and create a new one.
 
-Specifies the predefined travel length (e.g., 4 days, 7 days) linked to the resort.\
-This determines the default stay duration applied to SkiStar bookings imported into Tourpaq.
+#### Remove a stay length from a resort
 
-**Actions**
+Select the trash icon on the row. From the next sync, SkiStar Sync no longer updates the rooms coded for that stay in that resort. Allotment and cost already in Tourpaq stay.
 
-A delete icon is available to remove an existing mapping.
+#### Example
 
-#### Available actions
+| Ski Resort ID | Transport Length ID |
+| ------------- | ------------------- |
+| `1`           | `7D`                |
+| `1`           | `5D`                |
+| `4`           | `7D`                |
+| `4`           | `5D`                |
+| `4`           | `4D`                |
 
-**Create a new mapping**
-
-Click the **Create** button to add a new SkiStar Resort → Transport Length relationship.\
-You will be prompted to select:
-
-* **Ski Resort ID**
-* **Transport Length ID**
-
-Once saved, the new mapping appears in the table.
-
-**Delete a mapping**
-
-Use the trash icon to remove a mapping that is no longer required.
+Hotels with SkiStar Resort ID `1` are synced for 7- and 5-night stays; hotels with `4` also for 4-night stays.
 
 #### Why this matters
 
-* Ensures SkiStar data is correctly linked to Tourpaq travel lengths.
-* Eliminates manual selection of duration during import.
-* Supports automation when syncing SkiStar allotment and availability.
-* Required for accurate package creation and price calculation.
+* Without a row for a resort, its hotels are not synced.
+* Without a row for a stay length, the rooms coded for that stay get no allotment and no cost.
+* Each stay length must also exist in Transport Stay Days, because SkiStar Sync stores the cost per transport length.
 
 ### Usage notes
 
@@ -165,7 +162,7 @@ Use the trash icon to remove a mapping that is no longer required.
 
 * **No availability/prices imported:** Verify credentials first, then provider endpoints.
 * **Images don’t import:** Verify Image/Small Image endpoints (Hotel Beds).
-* **SkiStar import uses the wrong stay length:** Verify SkiStar Resort → Transport Length mappings.
+* **A SkiStar room gets no allotment or cost:** check that the hotel's SkiStar resort has a row for the room's stay length on the **SkiStar Resort** tab. See [SkiStar integration](skistar-sync.md#troubleshooting).
 * **A provider worked yesterday but fails today:** Rotate credentials and check provider service status.
 
 ## Hotel Import Process

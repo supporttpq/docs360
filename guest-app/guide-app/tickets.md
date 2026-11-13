@@ -33,8 +33,6 @@ Use Tickets to:
 
 <figure><img src="../../.gitbook/assets/guide-app-tickets-guide-app-list.jpg" alt="The Tickets screen in the Guide App with booking number 782495 in the search field and a booking card showing Booking No, Customer, Arrival date, Departure date, Hotel and Passengers" width="375"><figcaption></figcaption></figure>
 
-
-
 <figure><img src="../../.gitbook/assets/guide-app-tickets-guide-app-generating-pdf.jpg" alt="The Tickets screen in the Guide App after tapping the booking card, with the message &#x22;The Pdf is generating for booking no: 782495! Please wait!&#x22; over the booking card" width="375"><figcaption></figcaption></figure>
 
 The ticket PDF opens in the viewer.
@@ -62,17 +60,17 @@ For the ticket features available to an administrator, see Print Tickets.
 
 **Booking card**
 
-<figure><img src="../../.gitbook/assets/guide-app-tickets-guide-app-list (1).jpg" alt="The Tickets screen in the Guide App with booking number 782495 in the search field and a booking card showing Booking No, Customer, Arrival date, Departure date, Hotel and Passengers" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/guide-app-tickets-guide-app-list.jpg" alt="The Tickets screen in the Guide App with booking number 782495 in the search field and a booking card showing Booking No, Customer, Arrival date, Departure date, Hotel and Passengers" width="375"><figcaption></figcaption></figure>
 
-| Field              | Description                                              | Notes                                                                                                                            |
-| ------------------ | -------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| **Search field**   | Finds the booking by booking number or by customer name. | In the verified example it holds `782495`. It also works with a customer name, for example Stefania.                             |
-| **Booking No**     | The booking number in Tourpaq Office.                    | Matches the booking number selected under **Booking → Print Tickets** in Tourpaq Office.                                         |
-| **Customer**       | The customer name on the booking.                        | Matches the customer shown next to the booking number in Tourpaq Office, for example `782495 - Stefania Tester`.                 |
-| **Arrival date**   | The arrival date of the booking.                         | Shown as `05 Oct 2026` in the verified example.                                                                                  |
-| **Departure date** | The departure date of the booking.                       | Shown as `05 Oct 2026` in the verified example. The ticket PDF for the same booking shows a stay from 05-10-2026 to 12-10-2026.  |
-| **Hotel**          | The hotel booked.                                        | In the verified example, the name matches the hotel on the ticket PDF.                                                           |
-| **Passengers**     | One line per passenger, with the room code.              | Shown as `Name - Room:code`. In the example the second passenger's code ends with a dash and no suffix.                          |
+| Field              | Description                                              | Notes                                                                                                                           |
+| ------------------ | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| **Search field**   | Finds the booking by booking number or by customer name. | In the verified example it holds `782495`. It also works with a customer name, for example Stefania.                            |
+| **Booking No**     | The booking number in Tourpaq Office.                    | Matches the booking number selected under **Booking → Print Tickets** in Tourpaq Office.                                        |
+| **Customer**       | The customer name on the booking.                        | Matches the customer shown next to the booking number in Tourpaq Office, for example `782495 - Stefania Tester`.                |
+| **Arrival date**   | The arrival date of the booking.                         | Shown as `05 Oct 2026` in the verified example.                                                                                 |
+| **Departure date** | The departure date of the booking.                       | Shown as `05 Oct 2026` in the verified example. The ticket PDF for the same booking shows a stay from 05-10-2026 to 12-10-2026. |
+| **Hotel**          | The hotel booked.                                        | In the verified example, the name matches the hotel on the ticket PDF.                                                          |
+| **Passengers**     | One line per passenger, with the room code.              | Shown as `Name - Room:code`. In the example the second passenger's code ends with a dash and no suffix.                         |
 
 **Ticket PDF**
 
