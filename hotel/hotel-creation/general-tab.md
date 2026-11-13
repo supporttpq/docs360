@@ -243,7 +243,7 @@ Selects the external system that manages the hotel's rooms: D-Edge (Availpro), O
 
 This field is optional. Leave it empty for hotels managed in Tourpaq only.
 
-The choice decides where rooms, allotment or costs come from. With **Skistar**, Tourpaq updates allotment and cost of the hotel's SkiStar rooms twice a day and checks with SkiStar when a booking takes a room. See [SkiStar integration](../../integration/hotel-providers/skistar-sync.md).
+The choice decides where rooms, allotment or costs come from. With **Skistar**, Tourpaq updates allotment and cost of the hotel's SkiStar rooms twice a day and checks with SkiStar when a booking takes a room. See [SkiStar integration](../../integration/hotel-providers/skistar-integration.md).
 
 **SkiStar Resort ID**
 
