@@ -44,12 +44,11 @@ Other fields that are necessary for the hotel to work properly:
 * Issue voucher - allows for vouchers to be issued
 * For one way - a hotel used only for one-way transport
 * Extra Bed Discount Name - Name of the Extra Bed Discount on the ticket and in webbooking
-* Managed by Availpro - the hotel is using rooms and costs from Availpro
-*   Managed by SkiStar (available if SkiStar Sync is enabled for Company) - allow to **automatic daily synchronization** of allotment and cost prices for SkiStar accommodations.
+*   Managed by - the external system that manages the hotel's rooms: D-Edge (Availpro), Oracle Opera, Hotelbeds, Skistar or Seekda. Leave it empty for hotels managed in Tourpaq only.
 
-    * SkiStar Resort ID - the resort id set in the SkiStar
+    * SkiStar Resort ID - shown when **Skistar** is selected: the hotel's resort ID in SkiStar. Tourpaq then updates allotment and cost of the hotel's SkiStar rooms twice a day. See [SkiStar integration](../../integration/hotel-providers/skistar-sync.md).
 
-    <figure><img src="../../.gitbook/assets/image (526).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (526).png" alt="Managed by set to Skistar, with SkiStar Resort ID 1"><figcaption></figcaption></figure>
 * Hide as filter on lists - hides the hotel from filters on all lists in the system
 * Is VisitSun
 * Custom Hotel Days Booking - enables rooms to be set for Hotel Price Per Day option (A la carte) in **Room Types**

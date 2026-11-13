@@ -1,191 +1,284 @@
-# SkiStar Sync
+---
+description: >-
+  How Tourpaq keeps SkiStar accommodations up to date: allotment and cost from
+  SkiStar twice a day, room types per stay length, and the availability check
+  when a booking is made.
+---
 
-SkiStar Sync lets Tourpaq automatically import **allotment** and **cost prices** from SkiStar’s FixedPeriodProduct API.
+# SkiStar integration
 
-The sync runs once per day and keeps SkiStar-managed accommodations up to date in Tourpaq.
+SkiStar runs ski resorts in Sweden and Norway and rents out houses and apartments there through its Booking API. The SkiStar integration lets Tourpaq sell those accommodations in package trips: Tourpaq keeps their allotment and cost in line with SkiStar, and asks SkiStar before a booking takes one.
 
-This page explains how the sync works, how it is configured, and how Tourpaq processes allotment and pricing.
+## Overview
 
-Go to [System Setup – Hotel Providers](system-setup-hotel-providers.md) for provider configuration and mappings.
+In Tourpaq, SkiStar is a hotel provider, like D-Edge, Hotelbeds or Opera. A hotel with **Managed by: Skistar** gets its allotment and cost from SkiStar instead of from a hotel contract. Each SkiStar resort is one or more hotels in Tourpaq, and each SkiStar accommodation is a room type on such a hotel, one for each stay length you sell. From there, the rooms work like any other hotel's: you put them on price lists with your transports, and Tourpaq Office and Web Booking sell the packages.
+
+<figure><img src="../../.gitbook/assets/skistar-components.svg" alt="SkiStar&#x27;s Booking API holds the resorts and the accommodations. Twice a day, SkiStar Sync reads allotment and cost from SkiStar into Allotment per Day and Room Costs; price lists use them, and Tourpaq Office and Web Booking sell the packages. When a booking takes a room, Tourpaq asks SkiStar whether the accommodation is free. The booking itself is made by hand in SkiStar. Setup in Tourpaq: the hotel managed by Skistar with its SkiStar Resort ID, room types per stay length, and the stay lengths per resort in System Setup."><figcaption><p>The parts of the integration.</p></figcaption></figure>
+
+Data moves in both directions:
+
+* **SkiStar → Tourpaq: allotment and cost.** Twice a day, **SkiStar Sync** asks SkiStar which accommodations are free for each Sunday arrival and stay length, and at what price. It writes the answer to the hotel's **Allotment per Day** (free `1` or `0`) and **Room Costs** (**Per Room Per Stay**). Price lists that use the rooms pick up the new values.
+* **Tourpaq → SkiStar: availability check.** When a booking takes a SkiStar room, in Tourpaq Office or on Web Booking, Tourpaq asks SkiStar whether the accommodation is still free for the booking's dates. If it is not, the booking stops.
 
 {% hint style="warning" %}
-This sync does **not** create bookings in SkiStar.
-
-It only updates allotment and cost prices in Tourpaq.
+Tourpaq does **not** create bookings in SkiStar. Book the accommodation in SkiStar's own system after the booking is made in Tourpaq.
 {% endhint %}
 
-### Overview
+In SkiStar, every accommodation is one unit: one house or one apartment. SkiStar organises them as **Resort → Area → SubArea → Group → Accommodation**. Tourpaq uses only the resort and the accommodation.
 
-SkiStar Sync retrieves availability for the current or upcoming season.
+**What must match**
 
-It uses the SkiStar Resort IDs configured on hotels in Tourpaq.
+| Tourpaq                                                            | SkiStar                         | Rule                                                                                   | Example                                                     |
+| ------------------------------------------------------------------ | ------------------------------- | -------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| Hotel **SkiStar Resort ID**                                        | Resort ID                       | Identical. Several hotels can have the same resort ID.                                 | `5` = Trysil                                                |
+| Base room type **Room Code**                                       | Accommodation ID, plus the stay | `<Accommodation ID>-<weekday>D<nights>` — see [Room codes](skistar-sync.md#room-codes) | `23030-7D4` = accommodation 23030, Sunday arrival, 4 nights |
+| **System Setup → Hotel Providers → SkiStar Resort**                | Stay lengths sold in the resort | One row per resort and stay length                                                     | Resort `5`, `4D`                                            |
+| [Transport Stay Days](../../setup/transport-stay-days.md) **Days** | Stay length in nights           | Same number                                                                            | `4D` = 4 days                                               |
+| Price list transport                                               | The room's stay                 | Same length                                                                            | `23030-7D4` only with 4-day transports                      |
+| Hotel creditor currency                                            | Price currency                  | Same currency. Tourpaq does not convert.                                               |                                                             |
 
-In SkiStar, each property is an individual accommodation unit (house/apartment).
+The sync covers Sunday arrivals with stays of up to 7 nights, for the current and the next ski season. The details are under [How it works](skistar-sync.md#how-it-works).
 
-When an accommodation is available, SkiStar returns a free allotment of **1**.
+## Before you start
 
-Tourpaq maps each SkiStar accommodation as a **Base Room Type** linked to the correct hotel.
+* Tourpaq Support has connected the company to SkiStar. See [Connect the company to SkiStar](skistar-sync.md#connect-the-company-to-skistar).
+* You know the SkiStar resort IDs and accommodation IDs you sell.
+* Each stay length you sell exists in [Transport Stay Days](../../setup/transport-stay-days.md), e.g. `4D` with **Days** `4` and `7D` with **Days** `7`.
+* Your transports for SkiStar trips have those stay lengths.
+* The hotel's creditor uses the same currency as SkiStar's prices. Tourpaq stores SkiStar's prices without currency conversion.
 
-The sync performs API calls for configured stay lengths and Sunday departures within the season window.
+## Set up the SkiStar integration
 
-### Purpose
+### Connect the company to SkiStar
 
-* Ensure Tourpaq always has the **current allotment and cost information** for all SkiStar accommodations.
-* Remove the need for manual maintenance of allotment and costs.
-* Guarantee that pricing and availability used in offers, bookings, and operations remain correct throughout the ski season.
+Tourpaq Support sets up the SkiStar connection, one per company. There is no screen for it. Send Tourpaq Support:
 
-Bookings in SkiStar are handled externally.
+| Required                | Where it comes from                                                                     | Used for                             |
+| ----------------------- | --------------------------------------------------------------------------------------- | ------------------------------------ |
+| **SkiStar API address** | SkiStar: the live address (`https://www.skistar.com`) or the test address they give you | The address of every call to SkiStar |
+| **Identity**            | SkiStar: your agent name in their Booking API                                           | Sent as `Identity` on every call     |
+| **API key**             | SkiStar: the key that belongs to that identity                                          | Sent as `apikey` on every call       |
 
-Tourpaq Sync only updates **allotment** and **cost prices**.
+{% hint style="danger" %}
+The API key gives access to SkiStar on your behalf. Send it to Tourpaq Support in a secure way, never in a ticket comment or an email thread with other people.
+{% endhint %}
 
-### Expected behavior
+Tourpaq Support also turns on the **SkiStar** access feature for the company (SuperAdmin, **Users → Companies → the company → Access features → Going Dynamic**). Without it, the sync skips the company.
 
-* Tourpaq performs a **daily synchronization** with SkiStar.
-* The sync updates **only**:
-  * Allotment
-  * Cost prices
-* If the accommodation/room is **hidden** in Tourpaq, Tourpaq does not apply updates.
-* Each SkiStar accommodation corresponds to a **Base Room Type** in Tourpaq where:\
-  **Room Code = SkiStar Accommodation ID**
-* If the returned currency differs from the hotel creditor currency, Tourpaq shows a **notification warning**.
+### Add the stay lengths for each resort
 
-### SkiStar structure
+The SkiStar Resort tab tells the sync which stay lengths to fetch for each SkiStar resort.
 
-SkiStar uses the following data structure:
+1. Go to **Setup → System Setup → Hotel Providers → SkiStar Resort**.
+2. Select **Create**. A new row appears at the bottom of the list.
+3. In the new row, enter the **Ski Resort ID**.
+4. In **Transport Length ID**, select the stay length by its Transport Stay Days name, e.g. `4D` or `4 days`.
+5. Select the save icon at the start of the row. The **X** next to it discards the row.
+6. Repeat for each resort and stay length you sell.
 
-**Resort → Area → SubArea → Group → Accommodation**
+<figure><img src="../../.gitbook/assets/skistar-resort-create.webp" alt="The SkiStar Resort list with nine rows for resorts 1, 4 and 5 and the stay lengths 7, 4 and 5 days; at the bottom, a new row with a save icon and an X, Ski Resort ID 0 and an empty Transport Length ID"><figcaption><p>Resorts 1, 4 and 5 synced for 4, 5 and 7 days, and a new row after Create.</p></figcaption></figure>
 
-Each **Accommodation** is a **unique unit** (house, apartment). If the accommodation is available, the free allotment is always 1.
+Example:
 
-### Mapping SkiStar data into Tourpaq
+| Ski Resort ID  | Transport Length ID |
+| -------------- | ------------------- |
+| `1` (Sälen)    | `7D`, `5D`          |
+| `4` (Hemsedal) | `7D`, `5D`, `4D`    |
+| `5` (Trysil)   | `7D`, `5D`, `4D`    |
 
-To integrate SkiStar accommodations into Tourpaq, the following structure is used:
+Stay lengths longer than 7 days are not synced. See [System Setup – Hotel Providers](system-setup-hotel-providers.md#skistar-resort).
 
-* Each SkiStar **Hotel/Resort** is added in Tourpaq and linked using the corresponding **SkiStar Resort ID**.
-* Every SkiStar **Accommodation** is created in Tourpaq as a **Base Room Type**, where:
-  * **Room Code = SkiStar Accommodation ID**
-* The Base Room Type is then assigned to the correct hotel in Tourpaq.
+### Mark the hotel as managed by SkiStar
 
-This setup ensures that each accommodation is individually represented and correctly tied to its parent resort, allowing Tourpaq to work with SkiStar’s hierarchical structure while maintaining precise allotment and availability control.
+1. Open the hotel and go to the **General** tab.
+2. In **Managed by**, select **Skistar**.
+3. In **SkiStar Resort ID**, enter the SkiStar resort ID, e.g. `1`.
+4. Save the hotel.
 
-### Season logic
+<figure><img src="../../.gitbook/assets/image (521).png" alt="The hotel&#x27;s additional settings with Managed by set to Skistar and SkiStar Resort ID 2"><figcaption><p>Managed by Skistar, with the SkiStar Resort ID below it.</p></figcaption></figure>
 
-A SkiStar season is always: **12 December → 20 April (next year)**
+### Create a room type per accommodation and stay length
 
-The system synchronizes according to the current date:
+SkiStar can sell an accommodation for one stay length and not for another over the same dates, e.g. 7 nights but not 4. Tourpaq therefore keeps one room type per accommodation and stay length, each with its own allotment and cost.
 
-* **21 April 2025 → 20 April 2026:** sync from _today_ until **20 April 2026**
-* **From 21 April 2026:** sync from **12 December 2026 → 20 April 2027**
-* And so on for future years.
+1. For each SkiStar accommodation and each stay length you sell, create a [base room type](../../base-room-types.md) with the Room Code `<Accommodation ID>-<weekday>D<nights>`. See [Room codes](skistar-sync.md#room-codes).
+2. Add the base room types to the hotel.
 
-This ensures that the upcoming ski season is always included.
+<figure><img src="../../.gitbook/assets/skistar-base-room-types.webp" alt="Base Room Types with the room codes 3691-7D7, 3691-7D5 and 3691-7D4, all named SkiStar Lodge Lindvallen 302 Mountain View"><figcaption><p>Three room types for SkiStar accommodation 3691: 7, 5 and 4 nights from Sunday.</p></figcaption></figure>
 
-### Company & hotel settings
+Create a room type only for the stay lengths you sell.
 
-For a company to have access to the SkiStar feature, a SuperAdmin will need to activate this feature for the company.
+### Create the price lists
 
-#### Enable/disable “SkiStar Sync”
+The sync fills allotment and cost. It does not create price lists.
 
-Once the feature is enabled per company, additional hotel-level fields become available:
+1. Wait for the first sync. Then check **Allotment per Day** and **Room Costs** on the hotel.
+2. Create the price lists for the SkiStar rooms and add the profit.
+3. Put each room type only on price lists whose transport has the room's stay length: `23030-7D4` with 4-day transports, `23030-7D7` with 7-day transports.
 
-#### Hotel settings
+{% hint style="warning" %}
+Tourpaq does not check the stay length on price lists. A room type on a price list with another stay length sells with the wrong availability and cost.
+{% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (521).png" alt=""><figcaption></figcaption></figure>
+After that, the sync keeps the price lists up to date: when it changes allotment or cost, the price lists that use the room get the new values, and the profit margin rules run again.
 
-* **Managed by: SkiStar** appears below “Managed by AvailPro”.
-* **SkiStar Resort ID** is only visible when “Managed by SkiStar” is enabled.
-* **Stay lengths** defines which lengths should be synced for this hotel.
+## Everyday tasks
 
-<figure><img src="../../.gitbook/assets/image (522).png" alt=""><figcaption></figcaption></figure>
+### Add a SkiStar accommodation
 
-* Example:
-  * Sälen: `7,5`
-  * Hemsedal & Trysil: `7,5,4`
+1. Create the base room types for the accommodation, one per stay length (`<Accommodation ID>-7D<nights>`).
+2. Add them to the hotel with the accommodation's SkiStar resort ID.
+3. After the next sync, add the room types to the price lists with the matching stay length.
 
-These settings govern which API calls must be performed for the hotel.
+### Sell a new stay length
 
-Each hotel may have different stay length rules depending on the Resort.
+1. If the stay length is missing in [Transport Stay Days](../../setup/transport-stay-days.md), create it.
+2. On **System Setup → Hotel Providers → SkiStar Resort**, add a row for each resort that sells it.
+3. Create the room types with that stay in the code, e.g. `-7D4`.
+4. After the next sync, create the price lists with transports of that length.
 
-### Daily sync process
+### Stop syncing a room
 
-The daily sync performs the following steps:
+Hide the room on the hotel. The sync skips hidden rooms. The allotment and cost already in Tourpaq stay as they are.
 
-#### 1. Identify hotels with SkiStar Resort ID
+### Check what the sync wrote
 
-All hotels marked “Managed by SkiStar” are included.
+* **Hotel → Allotment per Day:** for SkiStar rooms, **Free** is `1` when SkiStar has the accommodation free, otherwise `0`. See [Allotments per day](../../hotel/hotel-creation/allotments-per-day/#skistar-allotment-per-day).
 
-Currently, SkiStar uses:
+<figure><img src="../../.gitbook/assets/skistar-allotment-per-day.webp" alt="Allotment per Day for room type 3691-7D4, 13 to 23 December 2026: No., Allotment and Free are 1 from Sunday 13 to Wednesday 16 December and 0 from Sunday 20 to Wednesday 23 December"><figcaption><p>3691-7D4: SkiStar has it free for 4 nights from Sunday 13 December, not from Sunday 20 December.</p></figcaption></figure>
 
-* `1` = Sälen
-* `4` = Hemsedal
-* `5` = Trysil
+* **Hotel → Room Costs → Room Cost Rules:** one **Per Room Per Stay** rule per room, arrival Sunday and transport length.
 
-#### 2. Request allotment and cost data
+<figure><img src="../../.gitbook/assets/image (525).png" alt="Room Cost Rules of a SkiStar hotel: rows per room with Per Room Per Stay and transport length 4D or 7D"><figcaption><p>Room costs written by the sync, per room and transport length.</p></figcaption></figure>
 
-For each Resort ID:
+## How it works
 
-1. Determine all relevant **Sundays** (departures) within the synchronization period.
-2. For each Sunday, request each configured **stay length**.
-3. Use SkiStar endpoint: **/BookingApi/v1/FixedPeriodProduct/Search**
-4. To ensure accurate allotment for shorter stays (5 and 4 days), also retrieve data for the **preceding 7-day period**.
+### When the sync runs
 
-#### 3. Build requests per Sunday
+The sync runs twice a day, at 02:00 and 14:00. It is the service **Hotel Configurator Service SkiStar** (`HCSS`) in **Application → Running Services** (SuperAdmin only).
 
-For each resort ID, Tourpaq treats each valid Sunday as a departure day.
+It includes every company with the **SkiStar** access feature and a SkiStar connection, and every hotel of that company with **Managed by: Skistar** and a SkiStar Resort ID.
 
-For each Sunday, Tourpaq requests the configured stay lengths for that hotel.
+### Season
 
-To support shorter stays (5 and 4 days), Tourpaq also retrieves data for the **preceding 7-day period** to ensure the final **allotment** is correct.
+A SkiStar season runs from **12 December to 20 April** the year after. Between 12 December and 20 April, the sync also fetches the next season, which SkiStar usually opens in December.
 
-Example API load per resort:
+| Today                            | Synced                                                      |
+| -------------------------------- | ----------------------------------------------------------- |
+| 12 December 2026 – 20 April 2027 | Today – 20 April 2027, and 12 December 2027 – 20 April 2028 |
+| 21 April 2027 – 11 December 2027 | 12 December 2027 – 20 April 2028                            |
+| 12 December 2027 – 20 April 2028 | Today – 20 April 2028, and 12 December 2028 – 20 April 2029 |
 
-```
-≈ 18 Sundays × 3 stay lengths ≈ 54 requests per Resort per sync
-```
+### Requests to SkiStar
 
-#### 4. Retrieve accommodation results
+For each SkiStar resort ID, the sync asks SkiStar about every Sunday in the synced period: the first Sunday on or after the start, then every 7 days. For each Sunday, it asks for each stay length set up for the resort, the longest first.
 
-Each response includes:
+Each question is one call to `/BookingApi/v1/FixedPeriodProduct/Search` with:
 
-* Accommodation ID
-* Pricing container
-* Currency
-* Availability (allotment = 1 if available)
+| Parameter       | Value                                       |
+| --------------- | ------------------------------------------- |
+| `ArrivalDate`   | The Sunday, `YYYYMMDD`                      |
+| `DepartureDate` | The Sunday plus the stay length, `YYYYMMDD` |
+| `rid`           | The SkiStar resort ID                       |
+| `adults`        | Always `2`                                  |
 
-#### 5. Cost price calculation
+SkiStar answers with the accommodations that are free for that stay, with their price and currency. The sync also reads the accommodation's details from `/BookingApi/v1/Accommodation`.
 
-Tourpaq calculates the cost price using:
+A stay length with no room types for it is not requested. A season of about 18 Sundays with 3 stay lengths gives about 54 searches per resort; between 12 December and 20 April, the next season adds as many again.
+
+### Room codes
+
+The Room Code of a SkiStar room type has three parts: `<Accommodation ID>-<weekday>D<nights>`.
+
+| Part             | Meaning                                                                                              |
+| ---------------- | ---------------------------------------------------------------------------------------------------- |
+| Accommodation ID | The SkiStar accommodation ID, e.g. `23030`                                                           |
+| weekday          | The arrival weekday: 1 = Monday … 7 = Sunday. The sync covers Sunday arrivals, so this is always `7` |
+| nights           | The stay length in nights; one of the stay lengths set up for the resort                             |
+
+Example for accommodation 23030 in a resort with the stay lengths 4, 5 and 7:
+
+| Room Code   | Sold as                  |
+| ----------- | ------------------------ |
+| `23030-7D4` | Sunday arrival, 4 nights |
+| `23030-7D5` | Sunday arrival, 5 nights |
+| `23030-7D7` | Sunday arrival, 7 nights |
+
+The sync and the booking check send SkiStar only the part before the dash: `23030`.
+
+**Room codes without a stay.** A Room Code with only the accommodation ID (`23030`) is still synced, for backward compatibility. Such a room gets every stay length set up for the resort, on one allotment. The longest stay is written first and each shorter stay overwrites the nights it covers, so the first nights of the week show the shortest stay's availability. Use stay codes for rooms SkiStar sells differently per stay length.
+
+A Room Code with a dash but another ending, e.g. `23030-7X4`, is skipped.
+
+### Allotment
+
+For each room and each night of the stay (from the arrival Sunday to the last night), the sync sets the allotment:
+
+* SkiStar returned the accommodation: allotment = rooms booked + 1. **Free** is `1`.
+* SkiStar did not return it: allotment = rooms booked. **Free** is `0`.
+
+If the room has no allotment period for the synced dates, the sync creates it.
+
+### Cost
+
+The cost price is calculated from SkiStar's `prices` container:
 
 ```
 Cost = prices.gross – prices.commission + mandatoryaddonprice.gross
 ```
 
-#### 6. Currency validation
+The sync stores it as a room cost rule on the hotel (**Hotel → Room Costs**):
 
-If SkiStar’s currency differs from the hotel creditor currency, Tourpaq shows a **notification warning**.
+| Field                               | Value                                                        |
+| ----------------------------------- | ------------------------------------------------------------ |
+| **Room**                            | The room type                                                |
+| **Arrival start** / **Arrival end** | The arrival Sunday / the last night of the stay              |
+| **B.Start date** / **B.End date**   | The day the rule is created / two years later                |
+| **Price**                           | The cost from SkiStar, for the whole stay                    |
+| **Stay type**                       | Per Room Per Stay                                            |
+| **Transport length**                | The Transport Stay Days entry with the stay's number of days |
 
-#### 7. Update Tourpaq rooms
+Each sync updates the price when SkiStar returns the accommodation. When SkiStar no longer returns it, the last price stays and only the allotment drops. If no Transport Stay Days entry has the stay's number of days, the sync writes the allotment but no cost.
 
-For each returned accommodation:
+### Availability check when booking
 
-* Locate the room by **Room Code = Accommodation ID**
+When a booking takes a room on a hotel managed by SkiStar (a new booking, or a change that needs a room the booking does not hold yet), Tourpaq asks SkiStar whether the accommodation is free for the booking's real check-in and check-out dates. Web Booking makes the same check when it prices an offer.
 
-<figure><img src="../../.gitbook/assets/image (524).png" alt=""><figcaption></figcaption></figure>
+* Free: the booking continues.
+* Not free, or SkiStar gives no answer: the booking stops with **There are no prices available for rooms: `<Room Code>`**.
 
-For each returned Accommodation ID, Tourpaq updates **allotment** and **cost price** for the matching room.
+The check waits for SkiStar. When SkiStar's API is slow, offers and bookings on SkiStar hotels are slow too.
 
-If the hotel room is hidden, Tourpaq does not update cost or allotment.
+### Limits
 
-#### 8. Cost storage
+* Sunday arrivals only.
+* Stays of up to 7 nights.
+* Prices are for 2 adults.
+* One accommodation per room type, so the free allotment is never more than `1`.
+* No bookings, images or descriptions are sent to or taken from SkiStar.
 
-* The synchronized cost is stored under **Hotel → Room Costs** as **“Per Room Per Stay”** type.
+## Messages
 
-<figure><img src="../../.gitbook/assets/image (525).png" alt=""><figcaption></figcaption></figure>
+| Message                                                | Where          | What to do                                                                                                                                       |
+| ------------------------------------------------------ | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| There are no prices available for rooms: `<Room Code>` | Booking, offer | SkiStar has sold the accommodation since the last sync, or SkiStar did not answer. Choose another room. The next sync sets the allotment to `0`. |
+| Missing configuration for Skistar!                     | Booking, offer | The company has no SkiStar connection. Contact Tourpaq Support.                                                                                  |
 
-### Troubleshooting
+## Troubleshooting
 
-* **Nothing updates:** Confirm the company feature is enabled and the hotel is **Managed by SkiStar**.
-* **A single hotel does not sync:** Check the hotel has a **SkiStar Resort ID** and stay lengths set.
-* **No rooms update:** Confirm Base Room Types exist and **Room Code** matches the SkiStar Accommodation ID.
-* **Allotment doesn’t look right for 4/5-day stays:** Verify stay lengths and that the Sunday departures fall within the season window.
-* **Currency warnings:** Confirm the hotel creditor currency and your finance process for currency conversion.
+* **Nothing updates:** check that the company has the **SkiStar** access feature and a SkiStar connection, and that the hotel has **Managed by: Skistar** and a **SkiStar Resort ID**.
+* **One hotel does not sync:** check that its SkiStar Resort ID has rows on **System Setup → Hotel Providers → SkiStar Resort**.
+* **A room gets no allotment or cost:** check that the Room Code is `<Accommodation ID>-7D<nights>`, that the resort has a row for that stay length, and that the room is not hidden. Rooms only get Sunday arrivals inside the synced season.
+* **A room gets allotment but no cost:** create the stay length in [Transport Stay Days](../../setup/transport-stay-days.md).
+* **Offers show a room with the wrong stay, or twice:** the room type is on price lists with another stay length. Remove it from those price lists.
+* **Allotment of a room without a stay in its code looks wrong for 4- or 5-night stays:** give the room a stay code. See [Room codes without a stay](skistar-sync.md#room-codes).
+* **Web Booking is slow on SkiStar hotels:** SkiStar's API is answering slowly. See [Availability check when booking](skistar-sync.md#availability-check-when-booking).
+
+## Related pages
+
+* [System Setup – Hotel Providers](system-setup-hotel-providers.md)
+* [General tab](../../hotel/hotel-creation/general-tab.md)
+* [Allotments per day](../../hotel/hotel-creation/allotments-per-day/)
+* [Transport Stay Days](../../setup/transport-stay-days.md)
+* [Base room types](../../base-room-types.md)
+* [Add room cost rule with "Per Room Per Stay" with a specific stay days value](../../hotel/hotel-creation/room-cost/room-cost-rules/add-room-cost-rule-with-per-room-per-stay-with-a-specific-stay-days-value.md)

@@ -189,9 +189,11 @@ Click **Update**.
 
 ### SkiStar Allotment per Day
 
-When a hotel is managed by **SkiStar**, each hotel represents one house or apartment. Availability is therefore binary per unit.
+For a hotel managed by **SkiStar**, each room type is one SkiStar accommodation: one house or one apartment. SkiStar Sync sets its allotment twice a day (see [SkiStar integration](../../../integration/hotel-providers/skistar-sync.md)):
 
-* If the unit is available, allotment is always `1`.
-* If the unit is not available, allotment is `0`.
+* SkiStar has the accommodation free: **Free** is `1` (allotment = rooms booked + 1).
+* SkiStar has no free accommodation for the stay: **Free** is `0` (allotment = rooms booked).
 
-<figure><img src="../../../.gitbook/assets/image (607).png" alt=""><figcaption></figcaption></figure>
+The sync writes the nights of each Sunday arrival for the room's stay length, e.g. Sunday to Wednesday for a room coded `-7D4`.
+
+<figure><img src="../../../.gitbook/assets/skistar-allotment-per-day.webp" alt="Allotment per Day for room type 3691-7D4, 13 to 23 December 2026: No., Allotment and Free are 1 from Sunday 13 to Wednesday 16 December and 0 from Sunday 20 to Wednesday 23 December"><figcaption><p>A 4-night SkiStar room: free from Sunday 13 December, not from Sunday 20 December.</p></figcaption></figure>
