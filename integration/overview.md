@@ -2,7 +2,7 @@
 
 The Integrations framework in Tourpaq connects the platform with external systems, suppliers, financial services, communication providers, and travel industry partners. These integrations allow information to flow automatically between Tourpaq and third-party systems, reducing manual work and ensuring that operational data remains synchronized.
 
-Integrations are used throughout the Tourpaq ecosystem, supporting hotel providers, transport providers, GDS systems, payment gateways, accounting systems, CRM platforms, marketing tools, insurance providers, and supplier communication services. They enable Tourpaq to function as a central operational platform while maintaining connectivity with external partners and services. ([tourpaq.com](https://www.tourpaq.com/features-category/integrations?utm_source=chatgpt.com))
+Integrations are used throughout the Tourpaq ecosystem, supporting hotel providers, transport providers, GDS systems, payment gateways, accounting systems, CRM platforms, marketing tools, insurance providers, and supplier communication services. They enable Tourpaq to function as a central operational platform while maintaining connectivity with external partners and services.
 
 ***
 
@@ -16,7 +16,7 @@ The purpose of integrations is to:
 * Improve booking accuracy and operational efficiency.
 * Support dynamic packaging and real-time availability.
 * Streamline financial and communication workflows.
-* Ensure suppliers and partners receive timely information required to deliver services. ([tourpaq.com](https://www.tourpaq.com/features-category/integrations?utm_source=chatgpt.com))
+* Ensure suppliers and partners receive timely information required to deliver services.
 
 ***
 
@@ -112,21 +112,19 @@ These integrations automate financial workflows and reduce manual bookkeeping ac
 
 #### [CRM and marketing integrations](crm-and-marketing/)
 
-CRM and marketing integrations allow customer information and booking activity to be synchronized with marketing platforms.
+CRM and marketing integrations send customers and bookings from Tourpaq to a CRM, one way.
 
 Typical functionality includes:
 
-* Customer synchronization
-* Automated marketing campaigns
-* Lead management
-* Customer segmentation
-* Marketing automation
+* Customers as contacts
+* Booked and canceled bookings as deals
+* Newsletter consent as a subscription
 
 Examples include:
 
-* HubSpot
+* [HubSpot](crm-and-marketing/hubspot/)
 
-These integrations help improve customer engagement and sales performance.
+Lead handling, campaigns, and segmentation happen in the CRM itself.
 
 ***
 
