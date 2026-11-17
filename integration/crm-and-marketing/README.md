@@ -1,36 +1,39 @@
+---
+description: >-
+  Send customers and bookings from Tourpaq to a CRM, and send text messages
+  through an SMS provider.
+---
+
 # CRM & Marketing
 
 ### Introduction
 
-The CRM & Marketing Integrations framework in Tourpaq connects customer, booking, and sales data with external CRM and marketing automation platforms. The purpose of these integrations is to help travel businesses centralize customer information, automate marketing activities, improve lead nurturing, and increase conversion rates through personalized communication.
+CRM and marketing integrations send your customers and bookings from Tourpaq to a CRM, so your sales and marketing teams work with the same customers and bookings as Tourpaq Office.
 
-By synchronizing customer and booking data between Tourpaq and external systems, travel companies can create a unified customer journey from initial inquiry through booking, travel, and post-trip engagement.
+The data goes one way: Tourpaq sends, and nothing in the CRM changes Tourpaq.
 
 ***
 
 ## Purpose
 
-CRM and marketing integrations enable organizations to:
+Use a CRM integration to:
 
-* Centralize customer and booking data
-* Automate customer communication
-* Improve lead management processes
-* Increase sales conversion rates
-* Create personalized marketing campaigns
-* Track customer interactions and booking history
-* Support customer retention and loyalty initiatives
-* Improve reporting and business insights
+* See your booked and canceled bookings in the CRM, each linked to its customer.
+* Keep the customers' contact details in the CRM the same as in Tourpaq.
+* Add customers who agree to your newsletter to a subscription in the CRM.
+
+{% hint style="info" %}
+The integration sends bookings, not offers or enquiries. Offers and their follow-up stay in Tourpaq's [Offers](../../offers/) module. Lead handling, campaigns, and segmentation happen in the CRM itself.
+{% endhint %}
 
 ***
 
 ## Supported Integrations
 
-Based on Tourpaq's documented integrations and marketing materials, CRM & Marketing integrations include:
+| Integration                                                 | What it does                                                                                                                            |
+| ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| [HubSpot](hubspot/)                                         | Sends each customer as a contact and each booking as a deal, every hour, per brand. Subscribes customers who agree to your newsletter.  |
+| [Twilio](system-setup-sms-configuration-twilio.md)          | Sends Tourpaq's text messages through your Twilio account.                                                                              |
+| [Mail Platform](system-setup-mail-platform.md) (deprecated) | Sends Tourpaq's text messages through an email-to-SMS gateway: Tourpaq emails each message to the phone number at the gateway's domain. |
 
-| Integration                                                                                      | Purpose                                                                                           |
-| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------- |
-| HubSpot                                                                                          | CRM, customer management, sales pipeline tracking, marketing automation, customer synchronization |
-| [Marketing Platform](https://www.tourpaq.com/features/other-integrations?utm_source=chatgpt.com) | Marketing automation, campaign management, customer communication workflows                       |
-| Other CRM & Marketing Platforms                                                                  | Additional integrations may be available through custom implementation or partner integrations.   |
-
-CRM & Marketing Integrations extend Tourpaq beyond booking management by connecting customer and booking data with external CRM and marketing automation platforms. Through integrations such as HubSpot and Marketing Platform, travel businesses can automate customer communication, improve lead management, and create personalized customer experiences throughout the entire travel lifecycle.
+Tourpaq sends text messages through one SMS provider per company.
