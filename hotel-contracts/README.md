@@ -79,3 +79,4 @@ Below is a visual representation of the Hotel Contract List interface:
 * [Rooms – Hotel Contract Configuration](rooms-hotel-contract-configuration.md)
 * [Periods – Hotel Contract Configuration](periods-hotel-contract-configuration.md)
 * [Board Supplements - Hotel Contract Configuration](board-supplements-hotel-contract-configuration.md)
+* [Hotel Contract PDF](hotel-contract-pdf.md)

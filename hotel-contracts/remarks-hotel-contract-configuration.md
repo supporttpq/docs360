@@ -24,7 +24,7 @@ Keep Remarks short. Long blocks make the PDF harder to scan.
 
 ### Screenshot (how it looks in the Contract PDF)
 
-<figure><img src="../.gitbook/assets/image (390).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/hotel-contract-pdf-remarks.png" alt="The Remarks box of the Contract PDF: a grey title bar with the word Remarks, followed by one bullet for each remark."><figcaption><p>The Remarks box in the Contract PDF.</p></figcaption></figure>
 
 ***
 
@@ -62,15 +62,16 @@ Notes are **not printed** in the Contract PDF.
 
 If Notes exist, the Contract PDF shows a small indicator under **Remarks**:
 
-* `[x] Internal notes`
+* `[X] Internal Notes`
 
 This tells the reader to open the contract in Tourpaq to view the Notes.
 
-<figure><img src="../.gitbook/assets/image (392).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/hotel-contract-pdf-internal-notes (3).png" alt="The line [X] Internal Notes under the last table of the Contract PDF."><figcaption><p>The internal notes indicator in the Contract PDF.</p></figcaption></figure>
 
 ***
 
 ### Related workflows
 
+* [Hotel Contract PDF](hotel-contract-pdf.md): The layout of the exported PDF and what each part shows.
 * [Hotel contract - General](hotel-contract-contract-name.md): Where you create and maintain the full contract.
 * [Periods – Hotel Contract Configuration](periods-hotel-contract-configuration.md): Also contains internal-only Notes (but period-specific).
