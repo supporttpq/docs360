@@ -91,6 +91,10 @@ The hotel information in the file comes from the hotel in Tourpaq Office. Change
 
 <figure><img src=".gitbook/assets/xml-feed-hotel-general-settings.png" alt="The General settings section on the Web tab of a hotel, with the fields Latitude, Longitude, Distance to Local Center, and Distance to Main Objective."><figcaption><p><strong>General settings</strong> on the <strong>Web</strong> tab of a hotel.</p></figcaption></figure>
 
+<figure><img src=".gitbook/assets/xml-feed-hotel-facilities.png" alt="The Hotel facilities section on the Web tab of a hotel, with the facilities Pool and Børnepool selected."><figcaption><p><strong>Hotel facilities</strong> on the <strong>Web</strong> tab of a hotel.</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/xml-feed-hotel-room-types.png" alt="The Room Types tab of a hotel, with the columns Room Name and Ordinary Bed Number."><figcaption><p>The <strong>Room Types</strong> tab of a hotel.</p></figcaption></figure>
+
 ## Example: follow one offer
 
 This offer is from a real feed. To follow it, open hotel 11383 in Tourpaq Office, and compare each value.
