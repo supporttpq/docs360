@@ -33,6 +33,7 @@ The integration sends bookings, not offers or enquiries. Offers and their follow
 | Integration                                                 | What it does                                                                                                                            |
 | ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | [HubSpot](hubspot/)                                         | Sends each customer as a contact and each booking as a deal, every hour, per brand. Subscribes customers who agree to your newsletter.  |
+| [Compaya](compaya/)                                         | Sends Tourpaq's text messages through your Compaya account, with a sender per brand and a copy to the passengers who agreed to get it.  |
 | [Twilio](system-setup-sms-configuration-twilio.md)          | Sends Tourpaq's text messages through your Twilio account.                                                                              |
 | [Mail Platform](system-setup-mail-platform.md) (deprecated) | Sends Tourpaq's text messages through an email-to-SMS gateway: Tourpaq emails each message to the phone number at the gateway's domain. |
 

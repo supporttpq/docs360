@@ -584,6 +584,8 @@
     * [HubSpot – technical reference](integration/crm-and-marketing/hubspot/hubspot-technical-reference.md)
   * [Twilio](integration/crm-and-marketing/system-setup-sms-configuration-twilio.md)
   * [System Setup – Mail Platform](integration/crm-and-marketing/system-setup-mail-platform.md)
+  * [Compaya](integration/crm-and-marketing/compaya/README.md)
+    * [Compaya – technical reference](integration/crm-and-marketing/compaya/compaya-technical-reference.md)
 * [What's new](integration/readme.md)
 * [Glossary](integration/glossary.md)
 * [Troubleshooting](integration/troubleshooting.md)
