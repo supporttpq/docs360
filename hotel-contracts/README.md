@@ -4,24 +4,24 @@
 
 ### Overview
 
-The Hotel Contract List ~~is the overview screen for hotel contracts. Use it to find contracts fast, check statuses, and open details.~~ provides a centralised overview of all hotel contracts in the system. It enables users to quickly locate contracts, monitor their status, and access individual contract details.
+The Hotel Contract List provides a centralised overview of all hotel contracts in the system. It enables users to quickly locate contracts, monitor their status, and access individual contract details.
 
 ### Purpose
 
 Use this page to:
 
-* ~~Track the status of contracts (imported, accepted, rejected)~~ Monitor the status of hotel contracts, including imported, accepted, and rejected contracts.
-* ~~Filter and search across hotels and contracts~~ Search and filter the list to quickly find specific hotels or contracts.
-* ~~Open a contract to review or update it~~ Open individual contracts to review their details or make updates, where permitted.
-* ~~Remove contracts you no longer want to keep in the list~~ Remove contracts from the list when they are no longer required.
+* Monitor the status of hotel contracts, including imported, accepted, and rejected contracts.
+* Search and filter the list to quickly find specific hotels or contracts.
+* Open individual contracts to review their details or make updates, where permitted.
+* Remove contracts from the list when they are no longer required.
 
 ### Preconditions
 
 Before using the Hotel Contract List, ensure that:
 
-* ~~Contracts are created or imported via the correct process~~ Contracts have been created or imported into the system using the appropriate process.
-* ~~Hotels referenced in the contract exist in the system~~ All hotels referenced in the contracts have been created and are available in the system.
-* ~~The user has appropriate permissions to view, edit, or delete contracts~~ You have the necessary user permission to view, edit, or delete contracts, as applicable.
+* Contracts have been created or imported into the system using the appropriate process.
+* All hotels referenced in the contracts have been created and are available in the system.
+* You have the necessary user permission to view, edit, or delete contracts, as applicable.
 
 ***
 
