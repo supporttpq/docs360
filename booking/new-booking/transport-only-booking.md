@@ -50,28 +50,23 @@ If you are also using **one-way bookings** (OW OUT / OW HOME), see:
 
 {% stepper %}
 {% step %}
-**1. Enable “Transport hotel” on the hotel**
+**1. Enable “Transport Hotel” on the hotel**
 
-On the hotel, open **Overview > Web** and expand **General settings**. See [Hotel Web](../../hotel/hotel-creation/hotel-web.md).
+On the hotel, open the **Web** tab.
 
-Select **Transport hotel**.
+Enable **Transport Hotel**.
 
-This lets you price the transport even when the room has no cost:
-
-* The price list cost is the transport cost plus the room cost, also when the room cost is `0`.
-* Without **Transport hotel**, a period with no room cost gets a total cost of `0`, transport included.
-
-<figure><img src="../../.gitbook/assets/image (257).png" alt="Hotel Web tab with Transport Hotel checkbox enabled"><figcaption><p>Enable <strong>Transport hotel</strong> on the hotel used for transport-only bookings.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (257).png" alt="Hotel Web tab with Transport Hotel checkbox enabled"><figcaption><p>Enable <strong>Transport Hotel</strong> on the hotel used for transport-only bookings.</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
 **2. Create a fictive room type**
 
-Create a base room type used only for transport-only bookings, with **Is Fictive** selected. See [Base room types](../../base-room-types.md).
+Create a room type used only for transport-only bookings.
 
-Then add it to the hotel as a room type.
+Enable **Is Fictive**.
 
-For one-way flights, also select **For one way** on the base room type.
+One-way flights typically require **Is Fictive** plus the additional one-way related option on the room type.
 
 <figure><img src="../../.gitbook/assets/image (256).png" alt="Room type setup showing Is Fictive and other options"><figcaption><p>Room type setup for transport-only and one-way scenarios.</p></figcaption></figure>
 {% endstep %}
@@ -101,4 +96,4 @@ The fictive room does **not** appear as a real room on the ticket.
 
 <figure><img src="../../.gitbook/assets/image (258).png" alt="Ticket example for a transport-only booking"><figcaption><p>Ticket output for a transport-only booking.</p></figcaption></figure>
 
-The ticket leaves the Transport hotel out of the hotel overview and doesn't add a hotel description page for it.
+Ticket information is taken from the **Transport Hotel** and can be customized via the hotel’s content/settings.
