@@ -28,23 +28,23 @@ Use this page to:
 
 #### Brand tabs
 
-Each **brand** has its own tab (for example, _TourpaqDK_). Switching the tab changes which text is edited and displayed.
+The first tab, **Default text**, holds the standard text. Each brand that sells the hotel (for sale or internet sale) has its own tab (for example, _TourpaqDK_). Switching the tab changes which text is edited and displayed.
 
 #### Text fields
 
-* **Short description**
+* **Short Description**
   * Short summary for lists and search results.
-* **Customer info**
+* **Customer Info**
   * Customer-facing text shown when a voucher is generated.
-* **HTML description**
+* **HTML Description**
   * Main hotel description.
   * Used on the website, in tickets, and in offers.
   * Add the marker `[SelectOfferEmailSummary]` if you want offers to show only the text above it.
-* **Alternative HTML description**
+* **Alternative HTML Description**
   * Optional text used for certain brands or layouts.
-* **Internal notes**
+* **Internal Notes**
   * Internal text shown in **Offer** and **Create Booking** when the hotel pop-up is opened.
-* **Sold-out dates**
+* **Sold-Out Dates**
   * Informational text shown in **Offer** and **Create Booking** when the hotel pop-up is opened.
 
 ***
@@ -53,6 +53,7 @@ Each **brand** has its own tab (for example, _TourpaqDK_). Switching the tab cha
 
 * **General settings**
   * Basic hotel facts like construction year, number of floors, and number of beds.
+  * **Transport hotel**: marks the hotel as used for transport-only bookings. Its price list cost includes the transport even when the room has no cost. See [Transport only Booking](../../booking/new-booking/transport-only-booking.md).
 * **Hotel facilities**
   * Amenities shown on the website (pool, Wi‑Fi, restaurant, etc.).
 * **Customer opinion**
