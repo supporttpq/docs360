@@ -4,24 +4,24 @@
 
 ### Overview
 
-The **Hotel Contract List** is the overview screen for hotel contracts. Use it to find contracts fast, check statuses, and open details.
+The Hotel Contract List ~~is the overview screen for hotel contracts. Use it to find contracts fast, check statuses, and open details.~~ provides a centralised overview of all hotel contracts in the system. It enables users to quickly locate contracts, monitor their status, and access individual contract details.
 
 ### Purpose
 
 Use this page to:
 
-* Track the status of contracts (imported, accepted, rejected)
-* Filter and search across hotels and contracts
-* Open a contract to review or update it
-* Remove contracts you no longer want to keep in the list
+* ~~Track the status of contracts (imported, accepted, rejected)~~ Monitor the status of hotel contracts, including imported, accepted, and rejected contracts.
+* ~~Filter and search across hotels and contracts~~ Search and filter the list to quickly find specific hotels or contracts.
+* ~~Open a contract to review or update it~~ Open individual contracts to review their details or make updates, where permitted.
+* ~~Remove contracts you no longer want to keep in the list~~ Remove contracts from the list when they are no longer required.
 
 ### Preconditions
 
 Before using the Hotel Contract List, ensure that:
 
-* Contracts are created or imported via the correct process
-* Hotels referenced in the contract exist in the system
-* The user has appropriate permissions to view, edit, or delete contracts
+* ~~Contracts are created or imported via the correct process~~ Contracts have been created or imported into the system using the appropriate process.
+* ~~Hotels referenced in the contract exist in the system~~ All hotels referenced in the contracts have been created and are available in the system.
+* ~~The user has appropriate permissions to view, edit, or delete contracts~~ You have the necessary user permission to view, edit, or delete contracts, as applicable.
 
 ***
 
@@ -29,7 +29,7 @@ Before using the Hotel Contract List, ensure that:
 
 #### Accessing the page
 
-Navigate to **Hotels → Contract List** in the main menu. Some setups label it as **Hotel → Hotel Contracts**.
+To access the Hotel Contract List, navigate to Hotel → Hotel Contracts in the main menu.
 
 #### Filtering contracts
 
@@ -58,7 +58,7 @@ Each row displays:
 * 🗑️ **Delete** – Removes the contract entry from the list
 
 {% hint style="warning" %}
-Deleting a contract removes it from the list. If you need it again, you may need to recreate it or re-import it.
+**Important:** Deleting a hotel contract permanently removes the contract from the system, including its previous import record. However, the hotel first created or imported in connection with the contract is retained and is not deleted. If you need to import the same contract again, you must first recreate the contract before you can reimport it.
 {% endhint %}
 
 #### Creating a new contract
