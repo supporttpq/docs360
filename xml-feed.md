@@ -1,7 +1,7 @@
 ---
 description: >-
-  What the Tourpaq XML feed contains, where each value comes from, and how to
-  set it up for a brand.
+  What the Tourpaq XML feed contains, how to set it up for a brand, and where
+  each value in the file comes from.
 hidden: true
 ---
 
@@ -11,17 +11,24 @@ hidden: true
 
 ## Purpose
 
-The XML feed is a file with the offers of a brand that Tourpaq builds for an external partner. Each offer is one hotel stay on one departure date, with the prices, the flights, and the hotel information. Each offer has a booking link to your website.
+The XML feed is a file with the offers of a brand. Tourpaq builds it for an external partner, such as Travelmarket. Each offer has a booking link to your website.
+
+Each offer is one hotel stay on one departure date. It has:
+
+* The hotel, with its description, photos, and facilities.
+* The departure and the destination.
+* The outbound flight and the homebound flight.
+* The board and the extras, such as a visa.
+* The price for each number of travelers.
+* The link to your website.
 
 Tourpaq builds the feed in two formats: one for Travelmarket and one for Skisport. This page describes the Travelmarket format.
 
-You set up the brand-level settings of the feed in Tourpaq Office. Most of the hotel information in the file comes from the hotel itself, so a change on the hotel shows in the feed. See [Where each value comes from](xml-feed.md#where-each-value-comes-from).
-
 ## How to use
 
-If the brand has no feed yet, contact Tourpaq support first. See [Before you start](xml-feed.md#before-you-start).
-
 ### Set up the feed of a brand
+
+If the brand has no feed yet, contact Tourpaq support first. See [Before you start](xml-feed.md#before-you-start).
 
 1. Open the brand, and then click the **Xml Feed** tab.
 2. In **Adults Number**, enter the number of adults.
@@ -36,16 +43,23 @@ If the brand has no feed yet, contact Tourpaq support first. See [Before you sta
 The booking link of each offer is the **Presentation Site Url** followed by the **URL Format**. Tourpaq replaces each placeholder, such as `[HotelID]` and `[DepartureDate]`, with the value of the offer.
 {% endhint %}
 
-### Name a facility for the feed
+### Keep the offers in the feed correct
 
-A hotel facility can have a separate name in the feed, so you can change it without changing the name guests see. See the **Name for Feeds** section of [Facilities](facilities.md).
+Most of what the file shows comes from the hotel. Change it on the hotel in Tourpaq Office. The feed shows the change after the next update. See [Where the file is published and how often it is updated](xml-feed.md#where-the-file-is-published-and-how-often-it-is-updated) and [Where each value comes from](xml-feed.md#where-each-value-comes-from).
+
+### If a value in the file is wrong
+
+* **A facility shows No in `Amenities`, but the hotel has it.** The feed doesn't read the name of the facility. Open the facility in **Hotel › Facilities**, and mark it **Swimming pool**, **Child pool**, or **All inclusive**.
+* **A change isn't in the file yet.** The feed shows the change after the data is synced and the next update finishes. Ask Tourpaq support for the update schedule of your brand.
+* **The booking link opens the wrong page.** Check the **Presentation Site Url** and the **URL Format** of the brand.
+* **Tourpaq Office asks you to contact support when you save.** The brand has no feed record. Ask Tourpaq support to set up the feed.
 
 ## Reference
 
 ### Before you start
 
 * Roles: Administrator, BrandManager, Support, and SuperAdministrator can open and change the **Xml Feed** tab. All except SuperAdministrator can open only the brands of their own company.
-* The brand needs a feed record. If you click **Save** and Tourpaq Office asks you to contact support, ask Tourpaq support to set up the feed for the brand.
+* The brand needs a feed record. Tourpaq support creates it.
 
 ### Configuration
 
@@ -55,20 +69,6 @@ A hotel facility can have a separate name in the feed, so you can change it with
 | **Hotel Image Size**      | Size of the hotel images. Each image link in the file has this size.                                                      | Width and height separated by `x`, such as `570x294` | Yes      |
 | **Presentation Site Url** | The address of your website. It is the start of every booking link.                                                       | Text                                                 | Yes      |
 | **URL Format**            | The rest of the booking link. Add placeholders from the list, such as `[HotelID]`, `[DepartureDate]`, and `[TripLength]`. | Text and placeholders                                | Yes      |
-
-### What the file contains
-
-The file starts with an `Offers` node that has a date and time. Each `Offer` node inside has these groups of nodes:
-
-| Group        | Nodes                                                                                                                                                      | What it shows                                                                                                                                                                                                                                                                                                                                   |
-| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Offer        | `Offer` (attribute `id`), `Duration`, `Interval`, `Currency`, `BookingURL`, `IsLastMinute`                                                                 | The offer, the length of the stay in days, the stay as an interval (1 for 7 days, 2 for 14 days), the currency, the link to your website, and 1 in `IsLastMinute` when the price list line is marked as a **Hot Deal** (the **HD** column of the price list). The `id` is the ID of the price list line (**PLTA ID**).                          |
-| Prices       | `Prices` with one `Price` per number of travelers, with the attributes `required_pax`, `price_for_pax`, and `normal_price`                                 | The total price for the whole party. `Price` is the sales price. `normal_price` is the price before the discount, so it is never lower than the price. The smallest party is the **Ordinary Bed Number** of the room type, and each next price is for one more traveler.                                                                        |
-| Departures   | `Name`, `IATA`, `Country`, `CountryCode`, `Time`, `Date`                                                                                                   | The departure airport, and the date and time of the outbound flight. Each offer has one departure.                                                                                                                                                                                                                                              |
-| Destinations | `Name`, `Code`, `IATA`, `Country`, `CountryCode`, `Resort`, `ResortCode`                                                                                   | The destination of the hotel with its code, the resort of the hotel with its code, and the airport where the outbound flight lands. Each offer has one destination.                                                                                                                                                                             |
-| Hotel        | `Accommodation` (attribute `id`)                                                                                                                           | The hotel and the room type of the offer, with the facilities in `Amenities` and the photos in `Images`.                                                                                                                                                                                                                                        |
-| Products     | `Product` with `ProductID`, `Code`, `Name`, `Days`, and `BoardTypeCode`                                                                                    | The board of the offer, or an extra such as a visa. An offer has no product or one product. For a board, `BoardTypeCode` is the code of the board type in **Board Types** (such as `AI` for All Inclusive and `HB` for Half Board), and `Name` is the name of the board extra. The `Code` of a board product starts with the code of the hotel. |
-| Transport    | `Transport` with `Direction` (Outbound or Homebound), `Mode`, and `Type` (the transport type), and one `Segment` per flight with `Departure` and `Arrival` | The flights: airport, flight number, date, and time. Each offer has one outbound flight and one homebound flight. The homebound flight returns to the departure airport, and its date is the outbound date plus `Duration`.                                                                                                                     |
 
 ### Limits of the feed
 
@@ -83,7 +83,7 @@ The file starts with an `Offers` node that has a date and time. Each `Offer` nod
 * The file is a zip file named `offer.xml.zip`. It is on the web booking site of the brand, such as `https://<your web booking site>/xmlfeed/offer.xml.zip`.
 * Tourpaq sets the update schedule of each feed. You can't change it in Tourpaq Office. Ask Tourpaq support for the schedule of your brand.
 * At each run, Tourpaq updates the file with the changes since the last run. When the last full rebuild is older than the interval Tourpaq set for the feed, Tourpaq rebuilds the whole file instead.
-* A change you make in Tourpaq Office, such as a facility flag or a price, shows in the file after the data is synced and the next run finishes.
+* A change you make in Tourpaq Office, such as a facility mark or a price, shows in the file after the data is synced and the next run finishes.
 
 ### Where each value comes from
 
@@ -106,11 +106,93 @@ The hotel information in the file comes from the hotel in Tourpaq Office. Change
 | `DistanceBeach` and `DistanceCenter`    | **Afstand til strand** and **Afstand til centrum** in the **Afstande** group of the hotel facilities, in meters.                                                                                                                                                                                                            |
 | `BookingURL`                            | **Presentation Site Url** and **URL Format** of the brand.                                                                                                                                                                                                                                                                  |
 
-<figure><img src=".gitbook/assets/xml-feed-hotel-general-settings.png" alt="The General settings section on the Web tab of a hotel, with the fields Latitude, Longitude, Distance to Local Center, and Distance to Main Objective."><figcaption><p><strong>General settings</strong> on the <strong>Web</strong> tab of a hotel.</p></figcaption></figure>
+<figure><img src=".gitbook/assets/xml-feed-hotel-general-settings.png" alt="The General settings section on the Web tab of a hotel, with the fields Latitude, Longitude, Distance to Local Center, and Distance to Main Objective."><figcaption><p>The <strong>General settings</strong> section on the <strong>Web</strong> tab of a hotel.</p></figcaption></figure>
 
-<figure><img src=".gitbook/assets/xml-feed-hotel-facilities.png" alt="The Hotel facilities section on the Web tab of a hotel, with the facilities Pool and Børnepool selected."><figcaption><p><strong>Hotel facilities</strong> on the <strong>Web</strong> tab of a hotel.</p></figcaption></figure>
+<figure><img src=".gitbook/assets/xml-feed-hotel-facilities.png" alt="The Hotel facilities section on the Web tab of a hotel, with the facilities Pool and Børnepool selected."><figcaption><p>The <strong>Hotel facilities</strong> section on the <strong>Web</strong> tab of a hotel.</p></figcaption></figure>
 
 <figure><img src=".gitbook/assets/xml-feed-hotel-room-types.png" alt="The Room Types tab of a hotel, with the columns Room Name and Ordinary Bed Number."><figcaption><p>The <strong>Room Types</strong> tab of a hotel.</p></figcaption></figure>
+
+### What the file contains
+
+The file starts with an `Offers` node. It has a date and time in the attributes `DateTime` and `LastChangesUpdate`. Each `Offer` node inside has the nodes below.
+
+**Offer**
+
+| Node                                   | What it shows                                                                                              |
+| -------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| `Offer` (attribute `id`)               | One offer. The `id` is the ID of the price list line (**PLTA ID**).                                        |
+| `Duration`                             | The length of the stay in days.                                                                            |
+| `Interval`                             | The stay as an interval: 1 for 7 days, 2 for 14 days.                                                      |
+| `OfferType`                            | The value is 1.                                                                                            |
+| `Currency`                             | The currency of the prices, such as `DKK`.                                                                 |
+| `BookingURL`                           | The link to your website. See [Configuration](xml-feed.md#configuration).                                  |
+| `IsLastMinute`                         | 1 when the price list line is marked as a **Hot Deal** (the **HD** column of the price list), otherwise 0. |
+| `Note`, `Discounts`, and `Supplements` | Not used. The nodes are empty.                                                                             |
+
+**Prices**
+
+`Prices` has one `Price` for each number of travelers. The smallest number is the **Ordinary Bed Number** of the room type, and each next price is for one more traveler.
+
+| Node or attribute                  | What it shows                                                                       |
+| ---------------------------------- | ----------------------------------------------------------------------------------- |
+| `Price` (the value)                | The sales price for the whole party.                                                |
+| `required_pax` and `price_for_pax` | The number of travelers the price is for. Both have the same value.                 |
+| `normal_price`                     | The price before the discount for the same party. It is never lower than the price. |
+
+**Departures and destinations**
+
+Each offer has one `Departure` and one `Destination`.
+
+| Node                                                   | What it shows                                                                         |
+| ------------------------------------------------------ | ------------------------------------------------------------------------------------- |
+| `Departure` › `Name`, `IATA`, `Country`, `CountryCode` | The departure airport.                                                                |
+| `Departure` › `Date` and `Time`                        | The date and time of the outbound flight.                                             |
+| `Destination` › `Name` and `Code`                      | The destination of the hotel, with its code.                                          |
+| `Destination` › `Resort` and `ResortCode`              | The resort of the hotel, with its code.                                               |
+| `Destination` › `IATA`, `Country`, and `CountryCode`   | The airport where the outbound flight lands.                                          |
+| `Destination` › `Arrivalgateway`                       | The arrival gateway of the offer, when it has one. The node is empty for most offers. |
+| `Departure` › `Note` and `Destination` › `Note`        | Not used. The nodes are empty.                                                        |
+
+**Hotel**
+
+`Accommodation` (attribute `id`) has the hotel and the room type of the offer. See [Where each value comes from](xml-feed.md#where-each-value-comes-from).
+
+| Node                                                        | What it shows                                                                 |
+| ----------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| `Name`, `Rating`, `Address`, `URL`, `Latitude`, `Longitude` | The hotel.                                                                    |
+| `Description` and `HtmlDescription`                         | The text of the hotel, plain and with HTML.                                   |
+| `Room` and `persons_per_room`                               | The room type and its ordinary beds.                                          |
+| `Images` › `Image`                                          | A link to each photo of the hotel, with the size of the **Hotel Image Size**. |
+| `Amenities` › `AllInclusive`, `Pool`, `ChildPool`           | Yes or No.                                                                    |
+| `Amenities` › `DistanceBeach` and `DistanceCenter`          | The distances, in meters.                                                     |
+| `Amenities` › `Breakfast`, `HalfPension`, `FullPension`     | Not used. The value is always `false`. The board is in `Products`.            |
+| `Type`                                                      | The value is `Hotel`.                                                         |
+| `GuaranteeHotel` and `GuaranteeTransport`                   | Not used. The value is always `false`.                                        |
+| `Note`                                                      | Not used. The node is empty.                                                  |
+
+**Products**
+
+An offer has no product or one product: the board of the offer, or an extra such as a visa.
+
+| Attribute of `Product` | What it shows                                                                                                                                       |
+| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `ProductID`            | The ID of the product.                                                                                                                              |
+| `Code`                 | The code of the product. For a board, it starts with the code of the hotel.                                                                         |
+| `Name`                 | The name of the product, such as the board extra of the hotel.                                                                                      |
+| `CategoryType`         | 2 for a board, and 5 for another extra, such as a visa.                                                                                             |
+| `BoardTypeCode`        | The code of the board type in **Board Types**, such as `AI` for All Inclusive and `HB` for Half Board. It is empty for an extra that isn't a board. |
+| `Days`                 | The value is 0 or 7.                                                                                                                                |
+
+**Transport**
+
+Each offer has one outbound and one homebound `Transport`. Each has one `Segment`, a single flight.
+
+| Node or attribute               | What it shows                                                                                                                        |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| `Transport` › `Direction`       | `Outbound` or `Homebound`. The homebound flight returns to the departure airport, and its date is the outbound date plus `Duration`. |
+| `Transport` › `Mode` and `Type` | The kind of transport, such as `plane`, and the transport type.                                                                      |
+| `Segment` › `No`                | The number of the flight. It is always 1.                                                                                            |
+| `Departure` and `Arrival`       | The airport (`Name`, `IATA`, `CountryCode`), the `FlightNo`, and the `Date` and `Time`.                                              |
 
 ## Example: follow one offer
 
