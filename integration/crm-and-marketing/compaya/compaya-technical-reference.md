@@ -74,7 +74,7 @@ Accept: application/json, text/javascript
 | `message` | The SMS text, with non-breaking spaces replaced by normal spaces, cut after 160 characters unless **Remove Body Limitation** is selected.                                                                                  |
 | `from`    | The brand's **Send SMS From**, or else **SMS From**.                                                                                                                                                                       |
 
-Phone numbers: Tourpaq turns `00` at the start into `+`, removes a single leading `0`, and puts the customer's country code in front of a number without `+` when the number is the customer's **Phone**. It sends any other character, such as a space, as it is. The passengers' numbers get none of these changes. See [Phone numbers](../../../sms-overview.md#phone-numbers).
+Phone numbers: Tourpaq removes spaces, brackets, dashes, dots, and slashes, drops a `(0)` after `+` or `00`, turns `00` at the start into `+`, removes a single leading `0`, and puts the customer's country code in front of a number without `+` when the number is the customer's **Phone**. A number with any other character isn't sent: the SMS gets the status **failed**. The passengers' numbers get none of these changes: Tourpaq sends them as they're stored on the booking. See [Phone numbers](../../../sms-overview.md#phone-numbers).
 
 ## Response
 
@@ -100,9 +100,9 @@ When Compaya accepts at least one recipient, the SMS counts as sent, even if Com
 
 Errors Compaya returned to Tourpaq:
 
-| Compaya's message                                 | Cause                                                           | What to do                                    |
-| ------------------------------------------------- | --------------------------------------------------------------- | --------------------------------------------- |
-| Country is not in the allowed countries           | The Compaya account doesn't allow SMS to that country.          | Allow the country in Compaya.                 |
-| Phone number length and country code do not match | The number is too long or too short for its country code.       | Correct the number on the customer.           |
-| Phone number should be specified as a number      | The number has a character that isn't a digit, such as a space. | Correct the number on the customer.           |
-| HTTP 400 Bad Request, without a message           | Compaya refused the whole request.                              | Tourpaq Support checks the SMS Service's log. |
+| Compaya's message                                 | Cause                                                                                                          | What to do                                    |
+| ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
+| Country is not in the allowed countries           | The Compaya account doesn't allow SMS to that country.                                                         | Allow the country in Compaya.                 |
+| Phone number length and country code do not match | The number is too long or too short for its country code.                                                      | Correct the number on the customer.           |
+| Phone number should be specified as a number      | A passenger's number has a character that isn't a digit, such as a space. Tourpaq doesn't clean those numbers. | Correct the passenger's number.               |
+| HTTP 400 Bad Request, without a message           | Compaya refused the whole request.                                                                             | Tourpaq Support checks the SMS Service's log. |
