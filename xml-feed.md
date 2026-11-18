@@ -28,6 +28,8 @@ If the brand has no feed yet, contact Tourpaq support first. See [Before you sta
 5. In **URL Format**, build the booking link: select a placeholder in the list to add it to the text, and complete the rest of the address by typing.
 6. Click **Save**.
 
+<figure><img src=".gitbook/assets/xml-feed-brand-tab.png" alt="The Xml Feed tab of a brand with the fields Adults Number, Hotel Image Size, Presentation Site Url, and URL Format filled in."><figcaption><p>The <strong>Xml Feed</strong> tab of a brand.</p></figcaption></figure>
+
 {% hint style="info" %}
 The booking link of each offer is the **Presentation Site Url** followed by the **URL Format**. Tourpaq replaces each placeholder, such as `[HotelID]` and `[DepartureDate]`, with the value of the offer.
 {% endhint %}
@@ -86,6 +88,8 @@ The hotel information in the file comes from the hotel in Tourpaq Office. Change
 | `Pool`, `ChildPool`, and `AllInclusive` | The hotel facilities **Pool**, **Børnepool**, and **All Inclusive** in the **Hotel facilities** section of the **Web** tab: Yes when the facility is selected, No when it isn't. |
 | `DistanceBeach` and `DistanceCenter`    | **Afstand til strand** and **Afstand til centrum** in the **Afstande** group of the hotel facilities, in meters.                                                                 |
 | `BookingURL`                            | **Presentation Site Url** and **URL Format** of the brand.                                                                                                                       |
+
+<figure><img src=".gitbook/assets/xml-feed-hotel-general-settings.png" alt="The General settings section on the Web tab of a hotel, with the fields Latitude, Longitude, Distance to Local Center, and Distance to Main Objective."><figcaption><p><strong>General settings</strong> on the <strong>Web</strong> tab of a hotel.</p></figcaption></figure>
 
 ## Example: follow one offer
 
