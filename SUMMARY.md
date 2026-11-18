@@ -588,3 +588,7 @@
 * [Glossary](integration/glossary.md)
 * [Troubleshooting](integration/troubleshooting.md)
 * [Tourpaq documentation for travel booking and operations](integration/tourpaq-documentation-for-travel-booking-and-operations.md)
+
+***
+
+* [XML feed](xml-feed.md)
