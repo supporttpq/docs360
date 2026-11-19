@@ -87,13 +87,21 @@ Select the brands for which the campaign is available.
 * Arrival airports: select from available destination airports (multiple selection)
 * Country: select from available countries (multiple selection)
 * Resort: select from available resorts (multiple selection)
+* Transport modes: select from available transport modes (multiple selection)
+* Transport types: select from **Charter Transports**, **Dynamic Transports**, **Sys-real Transports**, and **System Transports** (multiple selection)
 * Transport: select from available transports (multiple selection)
 * Real transport: select from available real transport (multiple choice)
 * Hotels: select from available hotels (multiple selection)
 * Rooms: select from available rooms (multiple selection)
 * Hotel categories: select from available hotel categories (multiple selection)
 
-If no resorts and/or transports are selected, the campaign will be applied to all bookings that use both the selected depature airports and arrival airports.
+A resource without selected values doesn't limit the campaign. A booking must match every resource that has selected values. For example, it must match both the selected departure airports and the selected arrival airports.
+
+To apply a campaign to every transport of one type, select the type instead of listing each transport. For example, select **System Transports** to cover all system transports, regardless of destination. In each list, **Select all** selects every value.
+
+Every resource has a **Use as Excluded** checkbox. When you select it, the campaign applies to everything except the selected values. It works only when you select at least one value for the resource.
+
+<div data-with-frame="true"><figure><img src=".gitbook/assets/campaign-resources-transport.png" alt="Resources tab of a campaign with the Transport Modes and Transport Types boxes above Transport"><figcaption><p>The <strong>Transport Modes</strong> and <strong>Transport Types</strong> boxes on the Resources tab of a campaign.</p></figcaption></figure></div>
 
 ### Extras tab
 
