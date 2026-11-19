@@ -164,12 +164,12 @@ This section provides comprehensive descriptions of all fields available in the 
 
 * **Field Type:** Dropdown selector
 * **Mandatory:** Yes
-* **Description:** Passenger title or salutation indicating gender, age category, and formal designation. Common values include MR (Mister), MS (Miss), CHD (Child), INF (Infant)
+* **Description:** Passenger title or salutation indicating gender, age category, and formal designation. Common values include MR (Mister), MS (Ms), CHD (Child), INF (Infant)
 * **Data Source:** Title values are configured in System Setup and may vary by Brand configuration. Standard titles include adult designations (MR, MS) and child designations (CHD, INF)
-* **System Behavior:** Selection of title affects how the passenger name appears on tickets, vouchers, and travel documents. Some titles (CHD, INF) may trigger age-based validation rules. Title does not directly affect pricing but should correspond to the passenger's age category.
+* **System Behavior:** Selection of title affects how the passenger name appears on tickets, vouchers, and travel documents. CHD and INF also set the passenger type sent to the airline (GDS), the travel insurance price and the infant check (an INF passenger must be under 2 on the return date). Keep the title in line with the passenger's age.
 * **Format Requirements:** Single selection from predefined list. No custom titles can be entered.
 * **Related Functionality:** Links to ticket generation where title appears on passenger documents. Integrates with airline systems for passenger manifest data. Affects formal communication and document presentation.
-* **Validation Rules:** Title must be selected before saving. Title should logically correspond to passenger age (e.g., INF for infants under 1 year, CHD for children).
+* **Validation Rules:** Title must be selected before saving. Title should logically correspond to passenger age (e.g., INF for infants under 2, CHD for children).
 
 **F. NAME**
 
@@ -197,21 +197,19 @@ This section provides comprehensive descriptions of all fields available in the 
 
 * **Field Type:** Numeric display (auto-calculated)
 * **Mandatory:** No (calculated field)
-* **Description:** Passenger age in years calculated from the BIRTHDATE field relative to the travel departure date. This value determines the passenger's pricing category (Adult, Child, or Infant) and affects price calculations throughout the booking.
-* **System Behavior:** Age is automatically calculated when BIRTHDATE is entered or modified. The system calculates age as of the departure date, not the current date. Age determines which price category applies from the Price List (Adult pricing, Child pricing, or Infant pricing). Age changes trigger automatic price recalculation for the affected passenger.
-* **Calculation Method:** Age = (Departure Date - BIRTHDATE) / 365 days, rounded down to whole years. Age is evaluated at the time of departure, not at the time of booking.
+* **Description:** Passenger age in years calculated from the BIRTHDATE field on the date of the booking's last transport. For hotel-only, or one-way out plus hotel-only, the check-out date is used. This value determines the passenger's pricing category (Adult, Child, or Infant) and affects price calculations throughout the booking.
+* **System Behavior:** Age is automatically calculated when BIRTHDATE is entered or modified. The system calculates age as of that date, not the current date. Age determines which price category applies from the Price List (Adult pricing, Child pricing, or Infant pricing). Age changes trigger automatic price recalculation for the affected passenger.
+* **Calculation Method:** Whole years on that date: the passenger turns one year older on their birthday. Age is evaluated on that travel date, not at the time of booking.
 * **Related Functionality:** Links to Price List configuration where age thresholds define Adult/Child/Infant categories. Affects pricing calculations for transport, hotel, and extras. Determines insurance eligibility and pricing. Influences room bed allocation rules. May affect airline ticketing requirements.
-* **Age Category Thresholds (typical):**
-  * Infant: Age 0-1 (under 2 years)
-  * Child: Age 2-11
-  * Adult: Age 12 and over
-  * Exact thresholds are configurable per Brand in Brand Settings
+* **Age Category Thresholds:**
+  * Infant: under 2 years (age 0–1). This limit is fixed.
+  * Child and adult: depend on the hotel's child ages, the brand's Max Child Age and the transport. See [Child age for beds and prices](../../child-price/child-age-for-beds-and-prices.md).
 * **Data Source:** Calculated from BIRTHDATE field. Cannot be edited directly.
 
 **BIRTHDATE**
 
 * **Field Type:** Date picker
-* **Mandatory:** Yes (typically required, depends on Brand configuration)
+* **Mandatory:** Required when the brand's **Retrieve age from** is set to Date of birth.
 * **Description:** Passenger date of birth. This field stores the passenger's birth date and is used to calculate age, determine pricing category, validate travel document requirements, and comply with airline data collection rules.
 * **Format Requirements:** Date format DD-MM-YYYY (day-month-year) or format configured in system locale settings. Must represent a valid date in the past (cannot be future date). Date must be realistic for human age (typically not more than 120 years ago).
 * **System Behavior:** When BIRTHDATE is entered or modified, the system immediately recalculates the AGE field. Age recalculation triggers price recalculation for the passenger. Birthdate is used to validate passenger category eligibility (Infant, Child, Adult). Birthdate data is transmitted to airline systems for passenger manifests.
@@ -330,7 +328,7 @@ If prices look wrong, verify the **birthdate** first.
 Typically, age is calculated from **birthdate**. If age looks wrong:
 
 * Confirm the birthdate is entered correctly (day/month/year).
-* Make sure the travel dates are correct (age is usually evaluated “at time of travel”).
+* Make sure the travel dates are correct (age is taken on the date of the booking's last transport; for hotel-only, the check-out date).
 
 #### Can I add passengers after I already started the booking?
 
