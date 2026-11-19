@@ -45,11 +45,11 @@ The Hotel Providers module is designed to:
 
 Tourpaq currently supports integrations with multiple accommodation providers and hotel distribution systems.
 
-| Provider                   | Purpose                                                                   |
-| -------------------------- | ------------------------------------------------------------------------- |
-| Hotelbeds                  | Hotel inventory, contracts, availability, pricing, facilities, and images |
-| D-EDGE (formerly Availpro) | Hotel connectivity, availability, and pricing synchronization             |
-| SkiStar                    | Accommodation and resort-specific inventory management                    |
+| Provider                                            | Purpose                                                                   |
+| --------------------------------------------------- | ------------------------------------------------------------------------- |
+| [Hotelbeds](hotelbeds-integration.md)               | Hotel inventory, contracts, availability, pricing, facilities, and images |
+| [D-Edge](d-edge-integration.md) (formerly Availpro) | Hotel connectivity, availability, and pricing synchronization             |
+| [SkiStar](skistar-integration.md)                   | Accommodation and resort-specific inventory management                    |
 
 Additional integrations may be available depending on customer agreements and system configuration.
 

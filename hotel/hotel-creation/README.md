@@ -44,8 +44,9 @@ Other fields that are necessary for the hotel to work properly:
 * Issue voucher - allows for vouchers to be issued
 * For one way - a hotel used only for one-way transport
 * Extra Bed Discount Name - Name of the Extra Bed Discount on the ticket and in webbooking
-*   Managed by - the external system that manages the hotel's rooms: D-Edge (Availpro), Oracle Opera, Hotelbeds, Skistar or Seekda. Leave it empty for hotels managed in Tourpaq only.
+*   Managed by - the external system that manages the hotel's rooms: D-Edge, Oracle Opera, Hotelbeds, SkiStar, or Seekda. Leave it empty for hotels managed in Tourpaq only.
 
+    * D-Edge Contract Type - shown when Managed by is **D-Edge**: Allotment (default) or Guarantee. It decides which rooms columns D-Edge updates in Allotment per Day. See [D-Edge integration](../../integration/hotel-providers/d-edge-integration.md).
     * SkiStar Resort ID - shown when **Skistar** is selected: the hotel's resort ID in SkiStar. Tourpaq then updates allotment and cost of the hotel's SkiStar rooms twice a day. See [SkiStar integration](../../integration/hotel-providers/skistar-integration.md).
 
     <figure><img src="../../.gitbook/assets/image (526).png" alt="Managed by set to Skistar, with SkiStar Resort ID 1"><figcaption></figcaption></figure>

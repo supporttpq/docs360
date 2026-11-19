@@ -239,11 +239,19 @@ The configured name appears on the ticket and in web booking when extra-bed disc
 
 **Managed by**
 
-Selects the external system that manages the hotel's rooms: D-Edge (Availpro), Oracle Opera, Hotelbeds, Skistar or Seekda.
+Selects the external system that manages the hotel's rooms: D-Edge, Oracle Opera, Hotelbeds, SkiStar, or Seekda.
 
 This field is optional. Leave it empty for hotels managed in Tourpaq only.
 
 The choice decides where rooms, allotment or costs come from. With **Skistar**, Tourpaq updates allotment and cost of the hotel's SkiStar rooms twice a day and checks with SkiStar when a booking takes a room. See [SkiStar integration](../../integration/hotel-providers/skistar-integration.md).
+
+**D-Edge Contract Type**
+
+Defines which rooms D-Edge updates for the hotel.
+
+This field is shown only when **Managed by** is **D-Edge**. The default is **Allotment**.
+
+With **Allotment**, Tourpaq updates the NO. column of Allotment per Day. With **Guarantee**, it updates NO. and GUARANTEED. Selecting another **Managed by** option clears the field. See [D-Edge integration](../../integration/hotel-providers/d-edge-integration.md).
 
 **SkiStar Resort ID**
 

@@ -39,7 +39,7 @@ Typical functionality includes:
 Examples include:
 
 * HotelBeds
-* D-EDGE (Availpro)
+* D-Edge
 * SkiStar Resort integrations
 
 These integrations help ensure that accommodation data remains updated and available for booking flows.
