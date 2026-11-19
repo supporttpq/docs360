@@ -10,6 +10,8 @@ Rules typically cover booking constraints, supplier policies, and other terms th
 Use **Rules** for reusable contract terms. Use **Remarks** for one-off text printed in the Contract PDF.
 {% endhint %}
 
+In the Contract PDF, each rule prints with its number. Each line of the rule text prints on its own line, and a line that wraps is indented. See [Hotel Contract PDF](hotel-contract-pdf.md).
+
 ***
 
 ### Screenshot

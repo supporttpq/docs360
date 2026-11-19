@@ -260,6 +260,7 @@
   * [Actions - Hotel Contract Configurations](hotel-contracts/actions-hotel-contract-configurations.md)
   * [Activity Log - Hotel Contract Configuration](hotel-contracts/activity-log-hotel-contract-configuration.md)
   * [Hotel Contract Clone](hotel-contracts/hotel-contract-clone.md)
+  * [Hotel Contract PDF](hotel-contracts/hotel-contract-pdf.md)
 * [Business Intelligence](business-intelligence/README.md)
   * [Business Intelligence – Allotment Overview](business-intelligence/business-intelligence.md)
   * [Business Intelligence – Flights](business-intelligence/business-intelligence-flights.md)

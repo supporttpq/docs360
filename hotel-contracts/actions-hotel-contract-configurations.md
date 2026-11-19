@@ -90,13 +90,13 @@ Check the relevant tabs after the reimport. Focus on **Rooms**, **Periods**, and
 
 Use this tab to share the contract with external recipients.
 
-* **Export hotel contract (PDF)**: Exports the contract as a PDF file.
-* **Send email**: Sends the contract to the supplier. You can add multiple email addresses. The supplier can accept or reject the contract.
+* **Export Hotel Contract (PDF)**: Exports the contract as a PDF file. See [Hotel Contract PDF](hotel-contract-pdf.md) for what each part of the PDF shows.
+* **Send Email**: Sends the contract to the supplier. You can add multiple email addresses. The supplier can accept or reject the contract.
 
 <figure><img src="../.gitbook/assets/image (10) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
-To use **Send email**, you must create an email template for **Hotel Contract**. Otherwise, the system shows a warning.
+To use **Send Email**, you must create an email template for **Hotel Contract**. Otherwise, the system shows a warning.
 {% endhint %}
 
 ### Save a hotel contract without product details
