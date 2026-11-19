@@ -1,106 +1,76 @@
-# System Setup – SMS Configuration (Twilio)
+---
+description: >-
+  Send Tourpaq's SMS through your own Twilio account: the Account SID, the Auth
+  Token, and the sender on the SMS Config tab.
+---
+
+# Twilio
 
 ### Overview
 
-SMS Configuration connects Tourpaq to Twilio so Tourpaq can send SMS.
+Twilio is one of the three SMS providers Tourpaq can send SMS through. With Twilio, Tourpaq sends your company's SMS through your own Twilio account, from one Twilio phone number or sender ID, for all your brands. A separate account or sender per brand isn't possible.
 
-It is used for automated notifications to customers and staff.
+Tourpaq only sends. Delivery reports and replies stay in Twilio.
 
-Go to **Setup → System Setup → SMS Configuration (Twilio)**.
+Which SMS Tourpaq sends, when, and with which status is the same for every provider: see [How Tourpaq sends SMS](../../sms-overview.md#how-tourpaq-sends-sms).
+
+Go to **Setup** › **System Setup** › **SMS Config** › **Twilio**.
 
 {% hint style="warning" %}
-The account token is a secret.
-
-Limit access and rotate it if you suspect exposure.
+The **Twilio Account Token** gives full access to your Twilio account. Give access to **System Setup** only to users who may see it. If the token is exposed, change it in Twilio and enter the new one here.
 {% endhint %}
 
 ### Purpose
 
-* Provide real-time communication via SMS.
-* Automate notifications such as booking confirmations, reminders, and alerts.
-* Ensure reliable delivery using Twilio’s messaging platform.
+* Send the SMS that Tourpaq creates, such as booking SMS, offer reminders, and two-factor login codes, through your own Twilio account.
+* Choose the number or name your customers see as the sender.
 
 ### Configuration fields
 
-| **Field**                 | **Description**                                                               |
-| ------------------------- | ----------------------------------------------------------------------------- |
-| **Twilio Account Number** | The account SID provided by Twilio for authentication.                        |
-| **Twilio Account Token**  | The authentication token for the Twilio account.                              |
-| **Twilio Phone Number**   | The phone number registered with Twilio (in E.164 format) used as the sender. |
+<figure><img src="../../.gitbook/assets/twilio-tab.webp" alt="The Twilio tab on System Setup, SMS Config, with the fields Twilio Account Number, Twilio Account Token, and Twilio Phone Number, filled in with example values."><figcaption><p>The Twilio tab on SMS Config.</p></figcaption></figure>
+
+| **Field**                 | **Description**                                                                                                                                                                       |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Twilio Account Number** | Your Twilio **Account SID**.                                                                                                                                                          |
+| **Twilio Account Token**  | Your Twilio **Auth Token**.                                                                                                                                                           |
+| **Twilio Phone Number**   | The sender of every SMS: a Twilio phone number in E.164 format, such as `+4512345678`, or an alphanumeric sender ID, such as your company name, in countries where Twilio allows one. |
+
+All three fields are required. If one is empty, Tourpaq sends no SMS and keeps them in the queue.
 
 ### How to set it up
 
-1. Create or access your Twilio account.
-2. Copy the **Account SID** and **Auth Token** from Twilio.
-3. Buy/configure a Twilio phone number for sending SMS.
-4. Enter the values in **SMS Configuration (Twilio)** in Tourpaq.
-5. Send a test SMS and confirm delivery.
+1. Ask Tourpaq Support to turn on **SMS integration** for your company and to schedule the **SMS Service**.
+2. In Twilio, create or open your account, and get a phone number or sender ID that can send SMS to your customers' countries.
+3. In the Twilio Console, copy the **Account SID** and the **Auth Token**.
+4. In Tourpaq, go to **Setup** › **System Setup** › **SMS Config** › **Twilio**.
+5. Enter the three fields, and click **Save**.
+6. On the **General** tab, select **Twilio** in **SMS Provider**, and click **Save**.
+7. Send a test SMS: in **All Bookings**, select a booking and open the SMS dialog, write a short text and click **Test**. Tourpaq sends it to your brand's phone number, not to the booking's customer, on the next run of the SMS Service.
+8. In **Tickets** › **SMS Overview**, check that the SMS has the status **sent**, and that it arrived.
 
-{% hint style="info" %}
-Use the E.164 phone number format.
+### What Tourpaq sends to Twilio
 
-Example: `+14155552671`
-{% endhint %}
+For each SMS, Tourpaq sends Twilio:
 
-Related pages
+* **To**: the phone number, formatted as described in [Phone numbers](../../sms-overview.md#phone-numbers). With Twilio, a leading `0` stays.
+* **From**: the **Twilio Phone Number**.
+* **Body**: the SMS text, cut after 160 characters unless **Remove Body Limitation** is selected on the **General** tab.
 
-* [SMS Overview](../../sms-overview.md)
+When Twilio accepts the SMS, it gets the status **sent**, and Tourpaq keeps Twilio's message SID with it, so Tourpaq Support can find the SMS in Twilio.
+
+For your IT staff: Tourpaq sends each SMS through Twilio's .NET library, authenticated with the Account SID and the Auth Token, with `To`, `From`, and `Body`. It sets no status callback, so Twilio reports nothing back to Tourpaq.
 
 ### Troubleshooting
 
-* **Nothing is sent:** Re-check the Account SID, token, and sender number.
-* **SMS is sent but not delivered:** Verify Twilio delivery status and destination phone number format.
-* **Wrong sender number:** Confirm the Twilio phone number is configured as the SMS sender.
+* **SMS stay queued:** check that all three fields are filled in and that **Twilio** is selected in **SMS Provider**. If they are, ask Tourpaq Support whether the SMS Service runs for your company.
+* **SMS fail:** Twilio refused them, for example because of a number Twilio doesn't accept. Tourpaq doesn't keep Twilio's error message: Tourpaq Support finds it in the SMS Service's log.
+* **Wrong or expired token:** Twilio refuses every SMS. Each one gets the status **failed**, and Tourpaq doesn't send it again. Correct the token as soon as you see failed SMS; SMS created after that go out on the next run.
+* **SMS is sent but not delivered:** Tourpaq shows **sent** when Twilio accepted the SMS. Check the delivery status in Twilio's message logs, and the phone number format.
+* **Wrong sender number:** check the **Twilio Phone Number**. All your brands send from it.
 * **Only some countries work:** Check Twilio account settings and country restrictions.
 
-### FAQ
+### Related pages
 
-<details>
-
-<summary><strong>Where do I find the Twilio Account SID and Auth Token?</strong></summary>
-
-You can find them in the Twilio Console for your account.
-
-Copy the values exactly and save after updating.
-
-</details>
-
-<details>
-
-<summary><strong>What format should the phone number use?</strong></summary>
-
-Use **E.164** format.
-
-Example: `+14155552671`
-
-</details>
-
-<details>
-
-<summary><strong>What happens if the token is wrong or expired?</strong></summary>
-
-Tourpaq cannot authenticate with Twilio.
-
-SMS sending will fail until the token is corrected.
-
-</details>
-
-<details>
-
-<summary><strong>Should we use a shared Twilio account across brands?</strong></summary>
-
-It depends on your operating model and compliance needs.
-
-If you separate brands operationally, consider separate Twilio projects/accounts.
-
-</details>
-
-<details>
-
-<summary><strong>How can I test that the integration works?</strong></summary>
-
-Update the settings, then trigger a known SMS flow in Tourpaq.
-
-Confirm delivery in Twilio and on the recipient phone.
-
-</details>
+* [SMS Overview](../../sms-overview.md)
+* [How Tourpaq sends SMS](../../sms-overview.md#how-tourpaq-sends-sms)
+* The other SMS providers: [Compaya](compaya/) and [Mail Platform](system-setup-mail-platform.md) (deprecated)
