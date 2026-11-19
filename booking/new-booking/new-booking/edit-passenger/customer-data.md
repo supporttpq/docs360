@@ -77,7 +77,7 @@ Click **Save Changes** in the Edit Passenger window.
 
 | Field         | What it means                                                                                                                                             |
 | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **TITLE**     | Passenger title (Mr., Mrs., Chd, Inf, etc.). Read-only here.                                                                                              |
+| **TITLE**     | Passenger title: MR, MS, CHD (child) or INF (infant). Read-only here.                                                                                     |
 | **F. NAME**   | First name. Read-only here.                                                                                                                               |
 | **L. NAME**   | Last name. Read-only here.                                                                                                                                |
 | **AGE**       | Passenger age used for pricing logic. Read-only here.                                                                                                     |

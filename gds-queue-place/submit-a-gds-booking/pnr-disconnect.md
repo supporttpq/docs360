@@ -19,7 +19,7 @@ Tourpaq supports only a limited set of updates coming from Amadeus. While name u
 
 Examples of unsupported changes include:
 
-* Changing titles (for example MR to MRS)
+* Changing titles (for example MR to MS)
 * Changing the number of passengers
 
 In these cases, the recommended workflow is to disconnect the PNR, perform the required adjustments independently in both systems, and then reassign the PNR to the booking.
@@ -81,14 +81,18 @@ The booking returns to a standard editable state, similar to a non-GDS booking.
 
     <figure><img src="../../.gitbook/assets/image (592).png" alt="Reassign PNR action in the GDS tab"><figcaption><p>Reassign the PNR after both systems match again.</p></figcaption></figure>
 
-For a PNR to be assigned to Amadeus, it must meet these criteria:
+For a PNR to be assigned to a booking, it must meet these criteria:
 
-* have the same number of passengers
-* have the same number of passengers per gender
-* have the same departure and arrival
-* have the same departure date and arrival date
+* the PNR is not assigned to another booking
+* the PNR code has at least 6 characters
+* the PNR has the same number of passengers as the booking (cancelled passengers are not counted)
+* the PNR has the same number of passengers per title (MR, MS, CHD, INF). This check is skipped when the first and last name of every passenger in the booking is found in the PNR
+* the outbound and homebound journeys start and end at the same airports as in the booking. Connection airports may differ (see Airports below)
+* the outbound and homebound departure dates are the same as in the booking
 
-If one of these criteria is not met, the system will display an error message.
+The booking must have both an outbound and a homebound flight.
+
+If one of these criteria is not met, the system will display an error message. The message also lists the route and the travellers found in the PNR.
 
 Example: In the original booking, there are 2 MR passengers:
 
@@ -101,6 +105,52 @@ And we changed one of them to an MS passenger:
 When we try to assign the PNR, we will receive a warning message and the PNR will not be assigned:
 
 <figure><img src="../../.gitbook/assets/image (595).png" alt="Warning message when PNR reassignment criteria are not met"><figcaption><p>PNR reassignment is blocked if criteria don’t match.</p></figcaption></figure>
+
+#### Airports
+
+Each journey in the PNR, outbound and homebound, must start and end at the same airports as in the booking. The connection airports in between may differ.
+
+Example for a round trip BLL – LPA:
+
+| Journey   | Booking in Tourpaq | PNR in Amadeus  | Result                                            |
+| --------- | ------------------ | --------------- | ------------------------------------------------- |
+| Outbound  | BLL → AMS → LPA    | BLL → PAR → LPA | Accepted: same first and last airport             |
+| Homebound | LPA → AMS → BLL    | LPA → PAR → BLL | Accepted: same first and last airport             |
+| Homebound | LPA → AMS → BLL    | LPA → PAR → BCN | Not accepted: the journey ends at another airport |
+
+After **Assign PNR**, the booking shows the flights booked in Amadeus, including their connection airports. See [Show flight info from Amadeus when Assign/Load PNR is used](show-flight-info-from-amadeus-when-assign-load-pnr-is-used.md).
+
+#### How passengers are matched to the PNR
+
+When a PNR is assigned or loaded, each traveller in the PNR is linked to one passenger in the booking:
+
+1. Tourpaq looks for a passenger with the same first and last name. Upper and lower case are ignored, and special characters in the Tourpaq name are compared in their GDS spelling (for example Ø as OE).
+2. If no passenger has that name, the traveller is linked to a passenger with the same title who has not been linked yet.
+
+Each passenger is linked to one traveller only.
+
+{% hint style="warning" %}
+Matching by title cannot tell two passengers with the same title apart. Make sure the names are spelled the same way in Tourpaq and in Amadeus before you assign the PNR.
+{% endhint %}
+
+#### Titles
+
+Passengers in Tourpaq have one of these titles: **MR**, **MS**, **CHD** (child) or **INF** (infant).
+
+In Amadeus, the title is written after the first name, for example `JOHN MR`. Tourpaq reads it as follows:
+
+| In the PNR         | Title in Tourpaq |
+| ------------------ | ---------------- |
+| MR                 | MR               |
+| MRS or MS          | MS               |
+| Passenger type CHD | CHD              |
+| Passenger type INF | INF              |
+
+When Tourpaq creates the PNR itself, it sends the Tourpaq title after the first name.
+
+#### Passenger names after Assign PNR and Load PNR
+
+After **Assign PNR** or **Load PNR**, the first and last name of each linked passenger is updated to the name in the PNR, without the title. The passenger names in Tourpaq then follow the spelling used in Amadeus.
 
 #### Important notes
 
