@@ -44,7 +44,7 @@ If these values are defined, they are used to determine eligibility for a child 
 
 #### 3. Agency Maximum Child Age
 
-Defines the default maximum child age when neither the hotel nor the room type provides a child age configuration. If neither the hotel nor the base room type provides child age limits, the system uses the agency-level **Max Child Age** setting.
+Defines the default maximum child age when neither the hotel nor the room type provides a child age configuration. If neither the hotel nor the base room type provides child age limits, the system uses the agency-level **Max Child Age** setting. If the brand has no **Max Child Age**, 17 is used.
 
 <figure><img src="../../../.gitbook/assets/03.06.2026_09.53.38_REC.png" alt=""><figcaption></figcaption></figure>
 
@@ -54,7 +54,7 @@ Defines the default maximum child age when neither the hotel nor the room type p
 2. Base Room Type: Child age for extra bed from / Child age for extra bed to
 3. Agency: Max Child Age
 
-The first available configuration is used.
+The first available configuration is used. Infants (title INF) are not checked against these ages.
 
 #### Example
 
@@ -138,5 +138,3 @@ Agency configuration:
 | 7             | Child Price |
 | 11            | Child Price |
 | 12            | Adult Price |
-
-This structure follows the typical product documentation pattern: purpose, evaluation logic, priority order, and practical examples.
