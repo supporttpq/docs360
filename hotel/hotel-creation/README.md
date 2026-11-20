@@ -33,8 +33,8 @@ Other fields that are necessary for the hotel to work properly:
 * Status - set if the hotel is hidden or visible in the hotel dashboard
 * Facilities template - select a facility template from those available, which will allow the setting of the facilities available in the hotel from **the Web** tab. more information is available at [Facilities](../../facilities.md)
 * Hotel combination - allows for 2 or more hotels to be combined into 1, drawing room allotments from the hotels selected. For more information, see [Hotel Combination](../../hotel-combination.md).
-* Child price ages - age interval that benefits from the child price from the price list
-* Child ages for extra bed - age interval for children when taking into account the "extra bed child" from the room; if the age is outside of the interval, children will use an adult extra bed (overrides the age set in the base room type). If nothing is set, the child's ages for extra beds are not taken into consideration.
+* Child price ages - age interval that benefits from the child price from the price list. If nothing is set, the brand's Max Child Age is used.
+* Child ages for extra bed - age interval for children when taking into account the "extra bed child" from the room; if the age is outside of the interval, children will use an adult extra bed (overrides the age set in the base room type). If nothing is set, the base room type's child ages for extra beds are used, and without those the brand's Max Child Age.
 * Adult hotel - sets an age limit preventing guests to book if there is a passenger with the age below limit.
   * When **Adult Hotel** is enabled, **Adult Age Limit is mandatory** and must be configured with a valid age limit.
   * When a hotel is configured as an **Adult Hotel**, the user must verify that the hotel's rooms are configured correctly and **do not allow infants**.
