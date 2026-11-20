@@ -144,8 +144,8 @@ A discount line cannot have more than 1 rule for each interval (if a percentage 
 <div data-with-frame="true"><figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Discount Calculation configuration"><figcaption></figcaption></figure></div>
 
 * **Per booking discount:** Only the first passenger receives the discount according to the requirements set
-* **Per person Adult discount:** Adult passengers receive discounts. The passenger is set to MR/MRS in the booking.
-* **Per person Child discount:** Child passengers receive discounts. The passenger is set to CHILD in the booking.
+* **Per person Adult discount:** Adult passengers receive discounts. The passenger is set to MR/MS in the booking.
+* **Per person Child discount:** Child passengers receive discounts. The passenger is set to CHD in the booking.
 * **Per extra:** All passengers receive discounts for the eligible and selected extras.
 
 The extra percentage discount is calculated as a percentage from the total price of the extras available in the campaign for the passenger.
