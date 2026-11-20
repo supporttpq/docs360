@@ -331,7 +331,9 @@ If **Max Child Age = 17**:
 If a hotel does not define child pricing ages, the system shall use the brand-level **Max Child Age** value to determine child pricing eligibility.
 {% endhint %}
 
-**Retrieve age from -** Determines how the system calculates age. Usually from **Date of Birth**.
+**Retrieve age from -** Decides whether passenger forms ask for the date of birth or the age: **Date of birth**, **Age**, or **Use company setting** (the default in System Setup → General Information). With a date of birth, Tourpaq works out the age.
+
+**Show Calculated Age -** Shows the age worked out from the date of birth. Available when the date of birth is asked for.
 
 #### 4. Localization & Currency
 
@@ -363,7 +365,7 @@ If a hotel does not define child pricing ages, the system shall use the brand-le
 
 **Mandatory email in Passenger Details in BackOffice -** Email becomes required field when a new customer is created in Office
 
-**Ask for default adult age in BackOffice -** Prompts user to enter adult age if not provided.
+**Ask for default adult age in BackOffice -** Shows a warning in Edit Booking when an adult's age equals the default adult age.
 
 **Autocomplete passenger names from last booking -** Prefills passenger names from previous bookings.
 
