@@ -47,9 +47,9 @@ These rules are later linked to transport setups or booking configurations, ensu
    * **Payment Rule Name** – clear, descriptive name (e.g., “Charter 50/50 Rule”).
    * **Deposit** – amount or percentage collected at booking.
    * **Second Payment** – amount or percentage collected later.
-   * **Deposit due** - Number of days before departure when the **first payment** required to confirm a booking.
-   * Second payment due - Number of days before departure when the second payment is requierd.
-   * Last payment due - Number of days before departure when the final payment must be done
+   * **Deposit Due** – Number of days after booking when the deposit is due.
+   * **Second Payment Due** – Number of days before departure when the second payment is due.
+   * **Last Payment Due** – Number of days before departure when the final payment is due.
 4. Click **Save** to confirm.
 5. The rule will appear in the overview list and can be selected when configuring transport definitions.
 
@@ -64,6 +64,16 @@ These rules are later linked to transport setups or booking configurations, ensu
 2.1. If second payment due date < deposit due date, then second payment due date = deposit due date
 
 2.2. If rest of payment due date < second payment due date, then rest of payment due date = second payment due date
+
+### Recalculation of payment due dates
+
+Whenever you modify and save a booking, Tourpaq recalculates its payment due dates based on the payment rule settings in effect at that time.
+
+This means that changes to a payment rule also affect existing bookings. Even if a booking was created under an earlier version of the rule, its due dates follow the rule as it is the next time you modify and save the booking.
+
+Due dates that you change manually on the **Economics** tab are overwritten in the same way.
+
+**Example:** You change the deposit due of a rule from 0 to 3 days. A booking created with a 0-day deposit deadline gets the 3-day deadline the next time you modify and save it.
 
 ### Features
 

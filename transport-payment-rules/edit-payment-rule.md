@@ -20,6 +20,10 @@ This page allows users to configure the payment schedule for travel bookings, in
 
 The user has the possibility to set different payment rules on a brand-specific basis. If a brand has no values set, the values from the Default tab will be used.
 
+{% hint style="info" %}
+The values set for a brand override the values on the **Default** tab for that brand.
+{% endhint %}
+
 <figure><img src="../.gitbook/assets/image (179).png" alt=""><figcaption></figcaption></figure>
 
 ### **2. Exception Rules**
