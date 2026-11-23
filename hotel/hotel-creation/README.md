@@ -205,7 +205,7 @@ Used to sell the same room under different settings and prices. The shared allot
 
 <figure><img src="../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Two room types are needed in the hotel for this feature.
+Two room types are needed in the hotel for this feature. For the steps and the fields, see [Shared Allotment](shared-allotment.md).
 
 **Warning:** Only the room above will have real allotment, the other room taking allotment from this one.
 
