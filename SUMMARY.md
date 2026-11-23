@@ -188,6 +188,7 @@
 * [Hotel creation](hotel/hotel-creation/README.md)
   * [Create using the wizard](hotel/hotel-creation/create-using-the-wizard.md)
   * [General tab](hotel/hotel-creation/general-tab.md)
+  * [Shared Allotment](hotel/hotel-creation/shared-allotment.md)
   * [Hotel allotments](hotel/hotel-creation/hotel-allotments/README.md)
     * [Editable Board](hotel/hotel-creation/hotel-allotments/editable-board.md)
   * [Hotel allotment overview](hotel/hotel-creation/hotel-allotment-overview.md)
@@ -227,7 +228,6 @@
     * [Single Room Cost](hotel/hotel-creation/occupancy-handling/single-room-cost.md)
     * [Single Room Supplement](hotel/hotel-creation/occupancy-handling/single-room-supplement.md)
   * [Hotel night calculation](hotel/hotel-creation/hotel-night-calculation.md)
-  * [Shared Allotment](hotel/hotel-creation/shared-allotment.md)
 
 ***
 
