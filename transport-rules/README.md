@@ -36,7 +36,7 @@ The purpose of this functionality is to provide a flexible framework for handlin
 
 ### **Other Elements in the Table**
 
-* **Pencil icon (✏️) -** Used to edit an existing transport rule.
+* **Pencil icon (✏️) -** Used to edit an existing transport rule. In the rule, the **Passenger Information** tab holds notices for all its generated transports. See [Passenger Information](passenger-information.md).
 * **Trash bin icon (🗑️) -** Deletes the selected transport rule.
 * **Create button (top right) -** Allows users to create a new transport rule by defining all the above fields.
 * **Filter row (Code, Departure, Arrival, Show hidden, Clear)**
@@ -51,6 +51,6 @@ There is no separate icon or tooltip for Hidden rules; the red row highlighting 
 
 <figure><img src="../.gitbook/assets/07.09.2026_14.26.45_REC.png" alt=""><figcaption></figcaption></figure>
 
-What marks a transport rule as hidden? - This filter relates to the transport rule **Status** set in the [Transport Rule](create-transport-rule.md).&#x20;
+What marks a transport rule as hidden? - This filter relates to the transport rule **Status** set in the [Transport Rule](create-transport-rule.md).
 
 <figure><img src="../.gitbook/assets/07.09.2026_14.33.26_REC.png" alt=""><figcaption></figcaption></figure>

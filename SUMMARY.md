@@ -294,6 +294,7 @@
   * [Create Transport Rule](transport-rules/create-transport-rule.md)
   * [Edit Transport Rule](transport-rules/edit-transport-rule.md)
   * [Edit Quota](transport-rules/edit-quota.md)
+  * [Passenger Information](transport-rules/passenger-information.md)
   * [Notes](transport-rules/notes.md)
   * [Transport Rules for Hotel Only](transport-rules/transport-rules-for-hotel-only.md)
   * [Transport Rule Weekdays Support](transport-rules/transport-rule-weekdays-support.md)
