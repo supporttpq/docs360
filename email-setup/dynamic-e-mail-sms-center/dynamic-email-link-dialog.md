@@ -2,7 +2,7 @@
 
 ### Overview
 
-Use the **Link dialog** to add a link in your email text. You can also use it to edit an existing link.
+Use the **Link** dialog to add a link in your email text. You can also use it to edit an existing link.
 
 You control three things:
 
@@ -16,12 +16,12 @@ You control three things:
 
 #### Link Info tab
 
-This is the main tab. You will use it for most links.
+This is the main tab. You use it for most links.
 
 * **Display Text**: the clickable text people see. Example: `Open booking`.
 * **Link Type**:
   * **URL**: a normal web address.
-  * **Anchor**: a jump to a place in the same content.
+  * **Link to anchor in the text**: a jump to a place in the same content.
   * **E-mail**: a clickable email address.
 * **Protocol**: the start of the address, like `https://`.
 * **URL**: the address the link should open.
@@ -35,27 +35,31 @@ This tab defines how the link should open when clicked.
 
 * Options may include:
   * **\<not set>** (default behavior)
+  * **\<frame>** – Opens link in a named frame. Enter the name in **Target Frame Name**.
+  * **\<popup window>** – Opens link in a popup window. Enter the name in **Popup Window Name** and choose the window features under **Popup Window Features**.
   * **New Window (\_blank)** – Opens link in a new tab/window.
   * **Same Window (\_self)** – Opens link in the same window/tab.
-  * **Parent Frame (\_parent)** – Opens link in the parent frame (if applicable).
-* **Topmost Window (\_top)** – Opens link in the full browser window.
+  * **Parent Window (\_parent)** – Opens link in the parent frame (if applicable).
+  * **Topmost Window (\_top)** – Opens link in the full browser window.
 
 #### Upload tab
 
 Use this tab to upload a file and link to it.
 
 1. Click **Choose File** and select the file.
-2. Click **Upload to Server**.
-3. After upload, the link address is filled in for you.
+2. Click **Send it to the Server**.
+3. Wait until you see **Success**.
+4. Open the **Link Info** tab, and then click **Browse Server**.
+5. Select the file. Its address is filled in the **URL** field.
 
 ### Using placeholders (variables) as links
 
 Some links are not normal web addresses. They are **placeholders** that the system replaces when sending. A common example is the customer link: `[Hash-key-link]`.
 
 {% hint style="info" %}
-When you use a placeholder as a link, set **Protocol** to .
+When you use a placeholder as a link, set **Protocol** to **\<other>**.
 
-This prevents the editor from adding `https://` in front of the placeholder.
+This prevents the editor from adding `http://` in front of the placeholder.
 {% endhint %}
 
 Use these settings:

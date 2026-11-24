@@ -499,7 +499,6 @@
 
 * [Tickets attachments](email-setup/tickets-attachments/README.md)
   * [Ticket Attachments](email-setup/tickets-attachments/ticket-attachments.md)
-  * [Ticket texts](email-setup/tickets-attachments/ticket-texts.md)
 * [E-mail center](email-setup/e-mail-center.md)
 * [Dynamic E-mail/SMS Center](email-setup/dynamic-e-mail-sms-center/README.md)
   * [Setup for Dynamic E-mail/SMS Center](email-setup/dynamic-e-mail-sms-center/setup-for-dynamic-e-mail-sms-center.md)

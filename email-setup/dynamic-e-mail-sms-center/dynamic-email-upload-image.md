@@ -11,7 +11,7 @@ You can either:
 
 ### Purpose
 
-Uploading and inserting an image ensures that email content is more engaging and visually informative. This functionality supports both image uploads from the local device and the use of existing online image URLs.
+Use the image window to add a picture to a dynamic email, either from a file on your computer or from an image address.
 
 ### Steps
 
@@ -19,7 +19,7 @@ Uploading and inserting an image ensures that email content is more engaging and
 {% step %}
 #### Open the image window
 
-In the email editor, open the image tool.
+In the email editor, click the **Image** button.
 
 <div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (380).png" alt="Image window in the email editor."><figcaption><p>Image window in the email editor.</p></figcaption></figure></div>
 {% endstep %}
@@ -28,13 +28,15 @@ In the email editor, open the image tool.
 #### Upload an image
 
 1. Open the **Upload** tab.
-2. Click **Browse…** and pick your image file.
+2. Click **Choose File** and pick your image file.
 3. Click **Send it to the Server**.
-4. Wait until you see **File Uploaded**.
+4. Wait until you see **Success**.
+
+The image can be up to 500 KB.
 
 <div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (381).png" alt="Upload tab with Browse and Send it to the Server controls."><figcaption><p>Upload an image to the server.</p></figcaption></figure></div>
 
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (383).png" alt="Upload completed message showing File Uploaded."><figcaption><p>Successful image upload.</p></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (383).png" alt="Upload tab with a chosen file and the Send it to the Server button."><figcaption><p>Send the chosen file to the server.</p></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
@@ -47,13 +49,13 @@ In the email editor, open the image tool.
 
 The image is placed in the email body.
 
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (382).png" alt="Image Info tab with the Browse Server button."><figcaption><p>Open the image server.</p></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (382).png" alt="Upload tab with the Choose File button."><figcaption><p>Upload tab with the Choose File button.</p></figcaption></figure></div>
 
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (384).png" alt="Browse Server window."><figcaption><p>Browse Server window.</p></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/up-browse-server-v2.png" alt="Image Info tab with the Browse Server button."><figcaption><p>Open the Browse Server window.</p></figcaption></figure></div>
 
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (385).png" alt="Select an image from the server list."><figcaption><p>Select an uploaded image.</p></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/up-select-image-v2.png" alt="Select an image from the server list."><figcaption><p>Select an uploaded image.</p></figcaption></figure></div>
 
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (386).png" alt="Confirm image insertion with the OK button."><figcaption><p>Confirm the image insertion.</p></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/up-confirm-ok-v2.png" alt="Confirm image insertion with the OK button."><figcaption><p>Confirm the image insertion.</p></figcaption></figure></div>
 
 <div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (387).png" alt="Image inserted in the email body."><figcaption><p>Image inserted in an email.</p></figcaption></figure></div>
 {% endstep %}
@@ -73,4 +75,8 @@ Use a direct link to the image file, not a web page link.
 
 {% hint style="info" %}
 If you upload an image once, you can reuse it later with **Browse Server**.
+{% endhint %}
+
+{% hint style="warning" %}
+Don't delete a file in **Browse Server** if an email still uses it: the email then shows a broken image. A file you upload with the name of an existing file replaces that file.
 {% endhint %}

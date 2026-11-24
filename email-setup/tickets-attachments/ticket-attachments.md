@@ -10,11 +10,11 @@ For the full module overview, see [Tickets attachments](./).
 
 ### Access
 
-* Path: **E-mail Setup → Ticket Attachments**
-* Note: Settings are **agency-specific**. Select the right agency before you change anything.
+* Path: **Email Setup → Ticket Attachments**
+* Note: Settings are brand-specific. Select the right brand before you change anything.
 
 {% hint style="warning" %}
-Always check the selected agency before you upload or replace documents. Your changes apply only to that agency.
+Always check the selected brand before you upload or replace documents. Your changes apply only to that brand.
 {% endhint %}
 
 ### Purpose
@@ -34,14 +34,14 @@ Some labels match what you see in the system. Here is what they mean in plain la
 * **Real transport**: a transport you manage directly in Tourpaq.
 * **Transport Rule**: a rule that creates transports automatically.
 * **Fix Quotas**: a fixed number of seats you control.
-* **Dynamic itinerary**: a trip built from live supplier data.
+* **Dynamic itinerary**: an itinerary set up in Tourpaq whose legs use real transports or external suppliers.
 
 ### Tabs by transport type
 
-The page includes **five tabs**, each corresponding to a transport type:
+The page includes up to **five tabs**, each corresponding to a transport type. **System Transports** and **Sys-real Transports** show only when the company feature **UseTransportRule** is on.
 
 1. **All Transports**
-   * Default documents for **all** transport types.
+   * Documents for **all** transport types. For each field, a document here is used instead of the same field on the other tabs.
 2. **Charter Transports**
    * Charter flights that use **Fix Quotas**.
 3. **Dynamic Transports**
@@ -56,50 +56,48 @@ The page includes **five tabs**, each corresponding to a transport type:
 
 Each tab shows which documents are set up for that transport type:
 
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (302).png" alt="Ticket Attachments overview screen."><figcaption><p>Ticket Attachments overview for an agency.</p></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (302).png" alt="Ticket Attachments overview screen."><figcaption><p>Ticket Attachments overview for a brand.</p></figcaption></figure></div>
 
 #### All Transports
 
-If you upload a document in **All Transports**, it becomes the default. Other tabs use that default unless you override it.
+For each field, Tourpaq uses the document in **All Transports** first. It uses the document of another tab only when that field is empty in **All Transports**.
 
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (303).png" alt="All Transports tab configuration."><figcaption><p>All Transports tab, showing default documents for all transport types.</p></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (303).png" alt="All Transports tab with its tooltip."><figcaption><p>All Transports tab. Its documents are used for every transport type.</p></figcaption></figure></div>
 
 ### How it works
 
-* Attachments must be uploaded as **PDF files**.
+* Upload attachments as **PDF files**. This page doesn't check the file type or size when you upload.
 * You can set **different documents per transport type**.
-* Documents are included automatically when you generate and send a ticket.
+* Tourpaq includes the documents automatically when you generate and send a ticket.
 
 ### Typical setup (step-by-step)
 
-Use this flow when configuring ticket attachments for an agency:
+Use this flow when configuring ticket attachments for a brand:
 
 {% stepper %}
 {% step %}
 #### Open the Ticket Attachments page
 
-* Go to **E-mail Setup → Ticket Attachments**.
-* Select the correct **agency** at the top of the page.
+* Go to **Email Setup → Ticket Attachments**.
+* Select the correct brand at the top of the page.
 {% endstep %}
 
 {% step %}
-#### Configure defaults in **All Transports**
+#### Configure shared documents in **All Transports**
 
 * Open the **All Transports** tab.
 * Upload the standard PDFs you want on most tickets.
-* For each document type, choose how it is delivered:
-  * **Separate attachment** in the email, or
-  * **Added to the end of the ticket PDF**.
-* These documents become the default for the other tabs.
+* Upload each PDF in the field for how it is delivered:
+  * as a separate attachment in the email, or
+  * added to the end of the ticket PDF.
 {% endstep %}
 
 {% step %}
 #### Adjust documents per transport type
 
 * Switch to the specific tabs (**Charter Transports**, **Dynamic Transports**, **System Transports**, **Sys-real Transports**).
-* Upload different PDFs where you need different rules.
-* Choose separate vs added to the ticket.
-* Anything you upload here overrides the **All Transports** default.
+* Upload different PDFs where you need different rules. Use the field for a separate attachment or the field for the end of the ticket.
+* Tourpaq uses a document from these tabs only when the same field is empty in **All Transports**.
 {% endstep %}
 
 {% step %}
@@ -112,15 +110,15 @@ Use this flow when configuring ticket attachments for an agency:
 {% step %}
 #### Verify by generating a ticket
 
-* Create a test booking that matches the transport type.
-* Generate and send a ticket.
-* Confirm the right PDFs are included.
+* Create a test booking that matches the transport type. Give it your own email address as the customer email address.
+* In **Print Tickets**, enter the booking number, select **Send E-Ticket**, and click **Print/Send**.
+* Confirm the ticket PDF and the email attachments are the right ones.
 {% endstep %}
 {% endstepper %}
 
 ### Best practices
 
-* Set shared documents in **All Transports** first. Override only when needed.
+* Set shared documents in **All Transports**. Leave a field empty there when a transport type needs its own document in that field.
 * Use clear file names. Include language and valid dates when relevant.
 * Agree changes with the right owner before replacing official documents.
 * After any change, generate a test ticket again.
@@ -131,13 +129,17 @@ Use this flow when configuring ticket attachments for an agency:
 
 You can upload a PDF that is:
 
-* Sent as a **separate attachment**, or
-* **Added to the end** of the ticket PDF.
+* Sent as a separate attachment, or
+* Added to the end of the ticket PDF.
 
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (304).png" alt="Upload dialog for ticket attachments."><figcaption><p>Uploading conditions documents to be attached to tickets.</p></figcaption></figure></div>
+Select or drag the PDF into the field, and then click **Upload**. Each field holds one document. To replace a document, click **Delete**, and then upload the new one.
+
+{% hint style="warning" %}
+Give each document its own file name. Tourpaq stores all documents of a brand in one folder, so a file with the same name as an earlier upload replaces that file, also in other tabs and fields.
+{% endhint %}
+
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (304).png" alt="Charter Transports tab with two uploaded PDF files and their Delete buttons."><figcaption><p>Uploaded conditions documents on a transport tab.</p></figcaption></figure></div>
 
 #### Download an attachment
 
-You can download existing documents for review or reuse.
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (305).png" alt="Download option for ticket attachments."><figcaption><p>Downloading existing ticket attachment documents.</p></figcaption></figure></div>
+You can download existing documents for review or reuse. Click the file name to download it.
