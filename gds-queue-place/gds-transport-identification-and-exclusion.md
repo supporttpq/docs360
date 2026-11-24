@@ -6,7 +6,7 @@ The GDS Transport Identification and Exclusion feature improves visibility and c
 
 The feature allows users to:
 
-* Distinguish between Sys-Real and external (GDS/System) transports
+* Distinguish between Sys-real and external (GDS/System) transports
 * Understand transport seat types directly from visual indicators
 * Exclude external providers during package searches
 * Maintain consistent transport visibility across booking flow and web-booking
@@ -42,7 +42,7 @@ A new drop-down selection is available in Workflow search criteria.
 When enabled:
 
 * System transports are excluded
-* Only Sys-Real and other internal transports remain visible
+* Only Sys-real and other internal transports remain visible
 
 This allows users to search for packages without external providers.
 
@@ -56,7 +56,7 @@ The `TYPE` column identifies the transport provider type.
 
 | Value | Meaning            |
 | ----- | ------------------ |
-| `R`   | Sys-Real Transport |
+| `R`   | Sys-real Transport |
 | `S`   | System Transport   |
 
 <figure><img src="../.gitbook/assets/26.05.2026_09.46.03_REC.png" alt=""><figcaption></figcaption></figure>
@@ -73,9 +73,9 @@ A new `STATUS` column is introduced in the Select Transport dialog.
 
 ### Placement
 
-The STATUS column is:\
-\- Positioned on the left next to each transport\
-\- Displays colored squares\
+The STATUS column is:\
+\- Positioned on the left next to each transport\
+\- Displays colored squares\
 \- Use tooltips to explain the status
 
 ***
@@ -88,7 +88,7 @@ The STATUS column is:\
 | ------ | -------------------- | ----------------------------------------- |
 | Green  | Guaranteed seats     | `Guarantee seats`                         |
 | Pink   | Allotment seats      | `Allotment seats`                         |
-| Blue   | Sys-Real transport   | `Own transport provider (Real Transport)` |
+| Blue   | Sys-real transport   | `Own transport provider (Real Transport)` |
 | Purple | System/GDS transport | `External transport provider (GDS, etc.)` |
 
 ***
@@ -97,9 +97,9 @@ The STATUS column is:\
 
 ### How It Appears
 
-#### Sys-Real Transport
+#### Sys-real Transport
 
-A Sys-Real transport displays:
+A Sys-real transport displays:
 
 * TYPE = `R`
 * Blue STATUS indicator
@@ -131,7 +131,7 @@ The list contains:
 
 | STATUS | TYPE | Description                 |
 | ------ | ---- | --------------------------- |
-| Blue   | R    | Internal Sys-Real transport |
+| Blue   | R    | Internal Sys-real transport |
 | Purple | S    | External GDS transport      |
 | Green  | -    | Guaranteed seats            |
 | Pink   | -    | Allotment seats             |

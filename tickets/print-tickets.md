@@ -53,7 +53,7 @@ Tickets cannot display content that has not been configured or saved in the book
 
 #### Navigation
 
-Use a **code block** in GitBook: Booking > Open Booking > Tickets / Print
+Open **Tickets** › **Print Tickets**.
 
 {% hint style="info" %}
 If you only need to check whether a ticket email was sent (and whether it failed), use [E-tickets Overview](../e-tickets-overview.md).
@@ -79,7 +79,7 @@ In **Booking No**, enter the booking number (booking reference).
 Select the options that match your task:
 
 * **Print One Ticket**
-  * Prints **one combined ticket** for the whole booking (instead of separate tickets where applicable).
+  * Prints **one combined ticket** for the whole booking.
 * **Send E-Ticket**
   * Sends the ticket by email to the **customer email address on the booking**.
 * **Copy to e-mail**

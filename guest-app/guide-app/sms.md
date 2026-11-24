@@ -12,7 +12,7 @@ The **SMS** section of the Guide App lets a guide send a text message to custome
 
 <figure><img src="../../.gitbook/assets/blurred-guide-app-sms-menu.jpg" alt="Guide App SMS menu listing Hotel, Excursions, Arrival, Booking, Homebound and Destination" width="375"><figcaption><p>The SMS menu in the Guide App.</p></figcaption></figure>
 
-In Tourpaq Office, messages sent this way are listed under **Tickets → SMS Overview** with the SMS type **Destination APP Sms**.&#x20;
+In Tourpaq Office, messages sent this way are listed under **Tickets → SMS Overview** with the SMS type **Destination APP Sms**.
 
 #### Purpose
 
@@ -21,7 +21,7 @@ Use the SMS section to notify customers of practical information during their st
 #### Preconditions
 
 * The guide is signed in to the Guide App.
-* An SMS template exists for the message type, when a template is used. Templates are maintained under Destination SMS Mappings.
+* An SMS template exists for the message type, also when the guide writes custom text. Templates are maintained under Destination SMS Mappings.
 * The customer has a valid phone number and the SMS integration is enabled, as described in SMS Overview.
 
 #### How-to

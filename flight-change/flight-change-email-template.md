@@ -13,30 +13,31 @@ These templates ensure that passengers receive clear and accurate communication 
 Before using the **Flight Change** feature, the following prerequisites must be fulfilled:
 
 1. **Configure a default email template**
-   * A default email named **Flight Change email** must be configured for every agency where the Flight Change feature will be used.
+   * A default email named **Flight Changes Email** must be configured for every agency where the Flight Change feature will be used.
    * This email is mandatory and is used as the default template when sending flight change notifications.
 2. **Activate the required email templates**
-   * The **Flight Change email** template must be **Active**.
+   * The **Flight Changes Email** template must be **Active**.
    * All email templates of the **Flight Change** type that are intended to be used must also be **Active**.
 
-If the default email is not configured, or if the required email templates are inactive, flight change emails cannot be generated or sent correctly.
+If the default email is not configured or is inactive, Tourpaq doesn't send flight change emails.
 
 ***
 
 ### **Template Types**
 
-To support the different types of flight changes, the following **dedicated templates** are required:
+To support the different types of flight changes, you can create the following **dedicated templates**. They appear in the **Email Center** only when the company feature **Scheduled Flight Change** is on.
 
-| **Template Name**         | **Purpose**                                                             |
-| ------------------------- | ----------------------------------------------------------------------- |
-| _Flight Change – Tiny_    | Used for minor time adjustments (e.g., a few minutes earlier or later). |
-| _Flight Change – Small_   | Used for moderate schedule changes.                                     |
-| _Flight Change – Large_   | Used for major schedule adjustments or flight number changes.           |
-| _Flight Change – Earlier_ | Used when the new departure time is earlier than the original.          |
-| _Flight Change – Later_   | Used when the new departure time is delayed.                            |
+| **Template Name**                                               | **Purpose**                                                                                      |
+| --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| _Flight Changes Tiny Earlier_ and _Flight Changes Tiny Later_   | Used when the time changes by no more than the **Tiny** limit.                                   |
+| _Flight Changes Small Earlier_ and _Flight Changes Small Later_ | Used when the time changes by more than the **Tiny** limit and no more than the **Small** limit. |
+| _Flight Changes Large Earlier_ and _Flight Changes Large Later_ | Used when the time changes by more than the **Small** limit.                                     |
+| _Flight Changes Flight Number_                                  | Used when the flight number changes.                                                             |
+
+Earlier and Later show the direction of the time change. Set the limits in minutes, separately for earlier and later changes, in **System Setup** → **Flight Change Queue** → **Flight Change Configuration**.
 
 > **Note:**\
-> If a specific template matching the flight change type is **not found**, the system automatically uses the **default "Flight Change Email"** template as a fallback.
+> If a specific template matching the flight change type is **not found** or is not active, the system automatically uses the **default "Flight Changes Email"** template as a fallback.
 
 ***
 

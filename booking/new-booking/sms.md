@@ -21,6 +21,8 @@ layout:
     visible: true
   actions:
     visible: true
+  anchors:
+    visible: true
 ---
 
 # SMS
@@ -58,7 +60,7 @@ The **SMS** tab in **Tourpaq Office** shows the **booking SMS log**. It lists al
        | **Field**            | **Description**                                                |
        | -------------------- | -------------------------------------------------------------- |
        | **Send Date & Hour** | The exact timestamp when the SMS was sent.                     |
-       | **Company**          | The company or brand that initiated the message.               |
+       | **Company**          | The company that sent the message.                             |
        | **Phone Number**     | The recipient’s phone number.                                  |
        | **Message**          | The full text content of the SMS that was sent.                |
        | **Status**           | Indicates whether the message was successfully sent or failed. |

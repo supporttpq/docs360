@@ -26,7 +26,7 @@ Correct setup ensures customers see the right images in lists and hotel views.
 
 This page covers hotel **photos**.
 
-If you need to deliver hotel-related PDF documents to customers, use [Ticket Attachments](../../email-setup/tickets-attachments/ticket-attachments.md).
+If you need to deliver hotel-related PDF documents to customers, upload them on the **Documents** tab of the hotel. Tourpaq accepts PDF files only and adds them to the tickets of bookings that include the hotel. To deliver documents for all bookings of a brand, use [Ticket Attachments](../../email-setup/tickets-attachments/ticket-attachments.md).
 
 If you need to attach documents to a specific booking, use [Comments](../../booking/new-booking/comments.md).
 
@@ -56,7 +56,7 @@ If you need to attach documents to a specific booking, use [Comments](../../book
    * Only one photo should be selected per hotel.
 6.  **Room Type**
 
-    The Room Type photo functionality allows hotel images to be associated with specific room types. This helps ensure that room images displayed throughout the system accurately represent the accommodation being sold.                                                                                                           The enhancement allows a single photo to be related to multiple room types, reducing duplicate work and simplifying hotel maintenance.
+    The Room Type photo functionality allows hotel images to be associated with specific room types. This helps ensure that room images displayed throughout the system accurately represent the accommodation being sold. The enhancement allows a single photo to be related to multiple room types, reducing duplicate work and simplifying hotel maintenance.
 
     #### Example
 

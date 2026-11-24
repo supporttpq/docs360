@@ -14,20 +14,20 @@ This helps you validate bookings before you finalize them.
 
 ### Purpose
 
-* Automate confirmation requests to suppliers.
+* Send confirmation requests to suppliers from the booking.
 * Reduce manual follow-ups.
 * Keep room and transfer reservations accurate.
 
 ### How It Works
 
 * Tourpaq uses the [**Dynamic E-mail/SMS Center**](email-setup/dynamic-e-mail-sms-center/) and a dedicated confirmation template.
-* When a booking requires supplier confirmation, a **Send confirmation** button appears on the booking.
+* When a booking requires supplier confirmation, a **Send hotel Confirm.** button appears on the booking.
 * Clicking it sends the confirmation email to the supplier.
 
 ### Notes
 
 * You must configure a confirmation template in the [Dynamic E-mail/SMS Center](email-setup/dynamic-e-mail-sms-center/).
-* Only bookings flagged as requiring confirmation show **Send confirmation**.
+* Only bookings with a hotel or transfer that meets the requirements below show **Send hotel Confirm.**, and only when the **Hotel and Transfer Confirmation** setting is selected for the company.
 
 <figure><img src=".gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -62,7 +62,6 @@ Example: if you send a confirmation for 4 passengers (pax), then cancel one pass
 
 In addition to the email template, hotel confirmations require:
 
-* A **Supplier** on the hotel.
 * A **Reservation Dept Email** on the hotel.
 * **Contract type** set to **Allotment** or **Request**.
 
@@ -87,7 +86,7 @@ In addition to the email template, transfer confirmations require:
 
 ### Supplier setup
 
-To send confirmation emails, the supplier must have **Reservation Dept Email** filled.
+To send transfer confirmation emails, the supplier must have **Reservation Depth Email** filled.
 
 This field is required.
 

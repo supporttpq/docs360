@@ -123,7 +123,7 @@ Tourpaq creates an SMS for:
 
 * SMS you send to bookings from **All Bookings** (**Booking SMS**), and to customers (**Customer SMS**).
 * Templates of the [Dynamic E-mail/SMS Center](email-setup/dynamic-e-mail-sms-center/) (**Dynamic SMS**).
-* [Guide App SMS](guest-app/guide-app/sms.md), and confirmations and cancellations of extra orders (**Destination APP Sms**).
+* [Guide App SMS](guest-app/guide-app/sms.md), and confirmations and automatic cancellations of extra orders (**Destination APP Sms**).
 * Offers and offer reminders (**Select Offer Sms**). See [Customer Offer SMS template](offers/customer-offer-sms-template.md).
 * Flight change reminders (**Flight Time Change**). See [Flight change](flight-change/).
 * SMS from a service case. See [Communication (Email & SMS)](service-cases/communication-email-and-sms.md).

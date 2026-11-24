@@ -95,7 +95,7 @@ Use the **Booking No** in the notification row to locate the affected booking. O
 * Register a missing payment for an **Unpaid Bkg**
 * Adjust allotment or move a passenger for an **Overbkg**
 * Fix missing or invalid data for an **Error Bkg**
-* Review and update product rules for **Warnings**
+* Fix the cause named in a **Warnings** message, and then select **Read** and **Mark as READ**
 
 ***
 
@@ -120,12 +120,12 @@ Notifications are not automatically cleared when you save a reservation. The sys
 | **Unpaid Bkg**             | Bookings with outstanding payments — the customer owes a balance that has not been registered                                                                              |
 | **Overbkg**                | Overbooking situations, broken down by type: Homebound transport, Hotels, Rooms, and Outbound transport                                                                    |
 | **Error Bkg**              | Bookings that encountered a system error during saving or processing and are in an incomplete or invalid state                                                             |
-| **Warnings**               | Bookings in a valid state but with a condition that requires attention — for example, travel insurance was not sent, or a special service request is missing               |
+| **Warnings**               | System warning messages of today that are not marked as read — for example, a reporting email that failed to send, or an error while sending travel insurance              |
 | **Hotel Special Offer**    | Issues related to hotel special offers — for example, an offer that was applied incorrectly or is inconsistent with contract conditions                                    |
 | **Extra Special Offer**    | Issues with special offers on extras — similar to Hotel Special Offer but for extra products                                                                               |
 | **Upsale**                 | Alerts related to upsell opportunities or upsell products that have an issue requiring review                                                                              |
 | **Stop Sales**             | Bookings or products affected by an active Stop Sales rule                                                                                                                 |
-| **Queue Management**       | Errors in background processing queues — for example, failed confirmation sends, communication jobs, or automated processing tasks                                         |
+| **Queue Management**       | The GDS queues of your GDS account, with the number of messages in each queue. Click a queue name to see the PNRs in it                                                    |
 | **Extras With Allotments** | A reference list of the Extras that have **Display allotment** ticked. It is not a list of errors or warnings. See [Extras](../extras-setup/extras-general-page/extras.md) |
 
 ***
@@ -163,14 +163,14 @@ Use the category name to decide both **priority** and **owner**.
 
 Some notifications can be resolved by an agent in the booking. Others point to a wider setup or system issue and should go to an administrator or product owner.
 
-| Category             | Typical owner                    | Typical next action                                             | What usually clears it                                    |
-| -------------------- | -------------------------------- | --------------------------------------------------------------- | --------------------------------------------------------- |
-| **Unpaid Bkg**       | Sales or finance user            | Register payment, correct payment method, or verify balance     | The balance no longer matches the unpaid rule             |
-| **Overbkg**          | Operations or product user       | Move passengers, adjust allotment, or review availability       | The booking no longer exceeds hotel or transport capacity |
-| **Error Bkg**        | Senior agent or admin            | Open the booking, fix invalid data, then save again             | The booking passes validation and background checks       |
-| **Warnings**         | Agent, operations user, or admin | Read the warning text and complete the missing follow-up        | The missing task or condition is no longer true           |
-| **Stop Sales**       | Product or operations user       | Review the booking together with the Stop Sale rule             | The booking no longer conflicts with the active rule      |
-| **Queue Management** | Admin or support user            | Check the failed background job, integration, or resend process | The queue job succeeds on the next run                    |
+| Category             | Typical owner                    | Typical next action                                         | What usually clears it                                    |
+| -------------------- | -------------------------------- | ----------------------------------------------------------- | --------------------------------------------------------- |
+| **Unpaid Bkg**       | Sales or finance user            | Register payment, correct payment method, or verify balance | The balance no longer matches the unpaid rule             |
+| **Overbkg**          | Operations or product user       | Move passengers, adjust allotment, or review availability   | The booking no longer exceeds hotel or transport capacity |
+| **Error Bkg**        | Senior agent or admin            | Open the booking, fix invalid data, then save again         | The booking passes validation and background checks       |
+| **Warnings**         | Agent, operations user, or admin | Read the warning text and complete the missing follow-up    | You mark the warning as read, or the next day starts      |
+| **Stop Sales**       | Product or operations user       | Review the booking together with the Stop Sale rule         | The booking no longer conflicts with the active rule      |
+| **Queue Management** | Admin or support user            | Open the queue and review its PNRs                          | The message is no longer in the GDS queue                 |
 
 {% hint style="info" %}
 If a notification points to a setup issue, fixing one booking may not be enough. Check whether similar bookings could be affected by the same rule, contract, or integration problem.
@@ -182,7 +182,7 @@ Use the notification row to decide your first check:
 
 * Check **Departure Date** first for anything time-sensitive.
 * Check **Balance** first for **Unpaid Bkg**.
-* Check **Error Description** first for **Error Bkg**, **Warnings**, and **Queue Management**.
+* Check **Error Description** first for **Error Bkg**. For **Warnings**, read the message first.
 * Check whether the issue looks **booking-specific** or **system-wide** before you start editing data.
 
 This saves time and reduces duplicate work between agents.
@@ -191,7 +191,7 @@ This saves time and reduces duplicate work between agents.
 
 ### Related pages
 
-* [Warning Notification Rules](../warning-notification-rules.md) — configure which system warnings are generated and who receives them
+* [Warning Notification Rules](../warning-notification-rules.md) — choose who receives which system warnings, by email or SMS
 * [Stop Sales](../stop-sales.md) — manage Stop Sales rules linked to Stop Sales notifications
 * [All Bookings](../booking/all-bookings/) — find and open bookings referenced in notifications
 * [Service Cases](../service-cases/) — manage customer service issues that may also generate notifications

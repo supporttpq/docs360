@@ -203,7 +203,7 @@ Attachments are commonly used for terms and conditions or travel instructions.
 {% endhint %}
 
 {% hint style="warning" %}
-Only PDF files are supported for ticket attachments.
+Use PDF files for ticket attachments. Document uploads for hotels and resorts, and ticket attachments in a booking's **Comments**, accept PDF files only. The **Ticket Attachments** page doesn't check the file type or size.
 {% endhint %}
 
 ### Troubleshooting checklist
