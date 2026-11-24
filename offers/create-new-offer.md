@@ -110,7 +110,18 @@ After selecting an option, review the offer details and price breakdown:
 * **Trip details** (dates, duration, passenger setup)
 * **Price specification** (adult/child prices, discounts, totals)
 
-<figure><img src="../.gitbook/assets/image (223).png" alt="Offer details and price specification"><figcaption><p>Review travel details and the price specification before sending.</p></figcaption></figure>
+When a child gets a child price from the [Price List](../price-list/pricelist.md), the **Price specification** shows the child at that price:
+
+* The child row shows the child price, for example **1 x Children age 11** at 5799, and **PRICE PC** shows the same price.
+* With two children, each child shows at their own child price (the first child at CH1, the second child at CH2), and **PRICE PC** shows the average of the two.
+* No **Children Extra Bed Discount** line is listed, and **TOT. DISC.** doesn't include the difference between the adult price and the child price.
+* The **Children Extra Bed Discount** line is listed only when the child doesn't get a child price and the hotel gives an extra bed discount for children.
+
+{% hint style="info" %}
+A brand can set its own name for the **Children Extra Bed Discount** line.
+{% endhint %}
+
+<figure><img src="../.gitbook/assets/offer-basket-price-specification.png" alt="Price specification in the offer Basket for 2 adults and 1 child age 11: the child row shows 5799 and no Children Extra Bed Discount line is listed"><figcaption><p>The Price specification shows the child at the child price, without a Children Extra Bed Discount line.</p></figcaption></figure>
 
 If you need a different option, you can typically:
 
@@ -181,7 +192,7 @@ Offers are sent from the sales agent email address if the sales agent has an ema
 From the offers overview you can:
 
 * Find the offer again using filters (customer, email, dates, status)
-*   Update details if the customer requests changes&#x20;
+*   Update details if the customer requests changes
 
     <figure><img src="../.gitbook/assets/edit offers.png" alt=""><figcaption></figcaption></figure>
 * Track or change status, follow-up date or the date until an offer is valid.
