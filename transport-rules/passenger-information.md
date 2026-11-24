@@ -12,7 +12,7 @@ description: >-
 
 Use the **Passenger Information** tab to enter a notice once on a transport rule, instead of on every transport the rule generates. A rule often generates many transports, one for each stay length. Typical notices are that a flight is a GDS flight the guest must acknowledge, or information that applies to a whole charter route.
 
-Tourpaq copies the entry to the transports the rule has generated, and keeps the copies in step when you edit or delete the entry. On those transports the information is read-only.
+Tourpaq copies the entry to the transports the rule has generated, and keeps the copies in step when you edit or delete the entry. These are System transports and Sys-real transports. On those transports the information is read-only.
 
 ## How to use
 
@@ -22,7 +22,7 @@ Check [Before you start](passenger-information.md#before-you-start) first.
 
 1. Click **Transport**, and then click **Transport Rules**.
 2. Open the rule.
-3. Click the **Passenger Information** tab.
+3. Click the **Passenger Information** tab. It is between **Edit Quota** and **Notes**. A rule that has no **Edit Quota** tab shows it after **General**.
 4. Click **Create**.
 5. Enter **Stay From** and **Stay To**.
 6. Optional: enter **Booking Date From** and **Booking Date To**. Enter both dates or neither.
