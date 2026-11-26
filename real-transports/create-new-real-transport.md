@@ -174,9 +174,9 @@ The seats and the load factor always come from the parent.
 
 <figure><img src="../.gitbook/assets/system-setup-use-child-cost.png" alt="The Real Transport: Use child cost option in System Setup, with its tooltip."><figcaption><p>The Real Transport: Use child cost option in System Setup.</p></figcaption></figure>
 
-**Example:** A passenger flies from Aalborg to Phuket through Copenhagen. On the same date, the child transport AALHKT has a guaranteed seat cost of 4,150 and a tax of 1,459. Its parent CPHHKT has a guaranteed seat cost of 4,000 and a tax of 1,393. With **Real Transport: Use child cost** checked, the transport cost of the outbound flight is 5,609 (4,150 + 1,459). With the option unchecked, it is 5,393 (4,000 + 1,393).
+**Example:** A passenger flies from Aalborg to Phuket through Copenhagen. On the outbound departure, the child transport AALHKT has a guaranteed seat cost of 4,900 and a tax of 1,459. Its parent CPHHKT has a guaranteed seat cost of 4,750 and a tax of 1,393. On the way back, the child costs 4,900 plus a tax of 1,458, and the parent costs 4,750 plus a tax of 1,392. For two passengers, the transport cost in the **Profit** tab of the booking is 25,434 with **Real Transport: Use child cost** checked, and 24,570 with the option unchecked.
 
-<figure><img src="../.gitbook/assets/booking-profit-child-transport-cost.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/booking-profit-child-transport-cost.png" alt="The Profit tab of a booking with a child transport, with a transport cost of 25,434 DKK."><figcaption><p>The transport cost in the Profit tab of a booking with a child transport.</p></figcaption></figure>
 
 {% hint style="warning" %}
 Enter the cost on the departures of the child transport. Tourpaq doesn't use the parent cost as a fallback, so a child departure without a cost has a transport cost of 0.
