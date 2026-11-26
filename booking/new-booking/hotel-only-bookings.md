@@ -31,7 +31,7 @@ The hotel must support **Custom Hotel Day booking**. Eligible room types, allotm
 
 Create a transport with the For a la carte checkbox marked
 
-Configure it like a normal transport (interval + timetable in the period).
+When you save the transport, Tourpaq creates its interval, timetable, and fix quota. You don't set them up yourself.
 
 See [Transport creation](../../transport/transport/transport-creation/) if you need the full transport setup flow.
 {% endstep %}
@@ -56,6 +56,21 @@ See [Pricelist Hotel Day](../../price-list-custom-hotel-days-service.md) if you 
 Give the transport a short, recognisable code (ALC, OWN) — it appears as the Transports filter in the price list.
 {% endstep %}
 {% endstepper %}
+
+### Fix quota and new seasons
+
+The fix quota of an ALC transport is view only. This is by design: Tourpaq creates and extends it for you. To sell hotel only in a new season, add the new dates in the price list instead.
+
+* On the **Fix Quotas** tab of the transport, click **View** to open a fix quota.
+* **Create**, edit, copy, **Calendar** (extend), generate, and delete are disabled.
+* To open a new season, create a new line in **Price List Hotel Day**. See [Open a new season](../../price-list-custom-hotel-days-service.md#open-a-new-season).
+* Tourpaq adds the fix quota for the new year automatically.
+
+<figure><img src="../../.gitbook/assets/alc-fix-quota-view-only.png" alt="Fix Quotas tab of an ALC transport. The Create button and the edit, copy, calendar, and delete icons are disabled."><figcaption><p>Fix Quotas tab of an ALC transport. You can only view the fix quotas.</p></figcaption></figure>
+
+{% hint style="info" %}
+A second fix quota on the same ALC transport would double the fix quota and give wrong profit margins in the price list. That's why Tourpaq doesn't allow you to create or extend it.
+{% endhint %}
 
 ### Book a hotel-only stay
 

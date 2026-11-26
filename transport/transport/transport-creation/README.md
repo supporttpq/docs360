@@ -324,6 +324,10 @@ Used to set the date and time of the flights.
 
 Used to generate and divide the places on the transport between flights and intervals.
 
+{% hint style="info" %}
+For a transport with **For A La Carte** selected, the fix quota is view only, by design. Tourpaq creates and extends it for you. See [Hotel Only Bookings](../../../booking/new-booking/hotel-only-bookings.md#fix-quota-and-new-seasons).
+{% endhint %}
+
 * **Start date**: Date of the first departure. Next departures are generated based on the selected **Period** (or **Interval**).
 * **End date**: Last date included in generation.
 * **Place number**: Total seats in the transport. `Place number = I1 + I2 + I3 + I4 + One way out`

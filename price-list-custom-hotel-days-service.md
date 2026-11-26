@@ -56,7 +56,7 @@ After you generate the allotment, you can click **Copy Room Cost** to simplify s
 
 #### B. Creating a Custom Hotel Day Price List
 
-1. Navigate to **Price List → Price List Hotel Days**.
+1. Navigate to **Price List → Price List Hotel Day**.
 2.  Click **Create**.
 
     <figure><img src=".gitbook/assets/image (704).png" alt=""><figcaption><p>Create a new Price List Hotel Days record.</p></figcaption></figure>
@@ -71,10 +71,27 @@ After you generate the allotment, you can click **Copy Room Cost** to simplify s
 4.  Use the **Enabled** toggle to activate or deactivate the price list.
 
     <figure><img src=".gitbook/assets/image (706).png" alt=""><figcaption><p>Use <strong>Enabled</strong> to activate or deactivate the price list.</p></figcaption></figure>
-5.  Click **View Prices** to define or adjust the hotel prices for the selected period.
+5.  Click **View Prices** to define the profit margin rules for the selected period. You need at least one rule to save the line. See [Profit margin rules](price-list-custom-hotel-days-service.md#profit-margin-rules-field-explanations).
 
-    <figure><img src=".gitbook/assets/image (707).png" alt=""><figcaption><p>Open <strong>View Prices</strong> to set daily hotel prices.</p></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (707).png" alt=""><figcaption><p>Open <strong>View Prices</strong> to define the profit margin rules.</p></figcaption></figure>
 6. Save the configuration.
+
+#### Open a new season
+
+To sell hotel only in a new season, create a new price list line for the new dates:
+
+1. Go to **Price List → Price List Hotel Day**.
+2. Click **Create**, and then fill in the fields as in section B. Enter the dates of the new season in **Departure Start** and **Departure Stop**. The period can't be longer than one year.
+3. Click **View Prices**, and then define at least one profit margin rule.
+4. Save the line.
+
+<figure><img src=".gitbook/assets/price-list-hotel-day-new-season.png" alt="Price List Custom Hotel Days with a line from 01-01-2028 to 01-04-2028, highlighted."><figcaption><p>A new line in Price List Hotel Day for the new season.</p></figcaption></figure>
+
+After the scheduled service has run, Tourpaq updates the fix quota of the ALC transport for you. It creates a fix quota for the whole calendar year of the new dates, if that year doesn't have one yet. For example, the line from 01-01-2028 to 01-04-2028 gets the fix quota from 01-01-2028 to 31-12-2028.
+
+<figure><img src=".gitbook/assets/alc-fix-quota-2028-created.png" alt="Fix Quotas tab of the ALC transport with the fix quota from 01-01-2028 to 31-12-2028 highlighted."><figcaption><p>Tourpaq creates the fix quota for 2028 automatically.</p></figcaption></figure>
+
+You can't create or extend the fix quota yourself, because the fix quota of an ALC transport is view only. See [Hotel Only Bookings](booking/new-booking/hotel-only-bookings.md#fix-quota-and-new-seasons).
 
 ### Profit margin rules (field explanations)
 
@@ -179,7 +196,7 @@ The fictive transport room is not shown on the customer ticket.
 When all of the following conditions are met:
 
 * The booking uses **Custom Hotel Days**
-*   A **Transport Hotel**  is configured (Hotel -> Web -> General Settings -> Transport hotel = True)&#x20;
+*   A **Transport Hotel** is configured (Hotel -> Web -> General Settings -> Transport hotel = True)
 
     <figure><img src=".gitbook/assets/30.07.2026_16.48.10_REC.png" alt=""><figcaption></figcaption></figure>
 * The room in the Transport Hotel is marked as **Fictive**
@@ -288,8 +305,6 @@ Typical use cases include:
 * splitting the stay between different destinations or resorts;
 * changing room type during the holiday;
 * keeping one transport itinerary while accommodation changes over time.
-
-
 
 {% hint style="info" %}
 While **Combi Hotels** were previously used to achieve similar results, **Transport Hotel combined with Custom Hotel Days** provides a much more flexible solution. Hotels and room periods can now be configured independently, making it possible to build almost any accommodation combination within a single booking.
