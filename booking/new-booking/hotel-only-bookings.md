@@ -59,7 +59,7 @@ Give the transport a short, recognisable code (ALC, OWN) — it appears as the T
 
 ### Fix quota and new seasons
 
-The fix quota of an ALC transport is view only. This is by design: Tourpaq creates and extends it for you. To sell hotel only in a new season, add the new dates in the price list instead.
+The fix quota of an ALC transport is view only. This is by design: Tourpaq creates and extends it for you. To sell hotel only in a new season, add the new dates in the Price List Hotel Days instead.
 
 * On the **Fix Quotas** tab of the transport, click **View** to open a fix quota.
 * **Create**, edit, copy, **Calendar** (extend), generate, and delete are disabled.
