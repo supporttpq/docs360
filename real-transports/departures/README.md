@@ -207,6 +207,14 @@ In the **Departures** tab, the relevant cost fields are displayed in the **Cost*
 The guaranteed commitment is calculated from the guaranteed seats and the applicable cost per guaranteed seat.
 {% endhint %}
 
+### Cost of a child transport
+
+On a child transport, an info icon appears next to **Cost**. Hover over the icon to see where the child cost is used: the sales price in the Price List, when a Profit Margin rule is set, and the **Profit** tab of a booking with a child transport.
+
+The **Real Transport: Use child cost** option in **Setup → System Setup → General Information** decides which cost applies. When it is checked, Tourpaq uses the cost and the Base Cost of the child transport. When it is unchecked, Tourpaq uses the cost and the Base Cost of the parent transport. See [Create New Real Transport](../create-new-real-transport.md).
+
+<figure><img src="../../.gitbook/assets/departures-cost-tooltip.png" alt="The info icon next to Cost in the Departures tab of a child transport, with its tooltip."><figcaption><p>The info icon next to Cost on a child transport.</p></figcaption></figure>
+
 ### How the passenger cost is calculated
 
 There are **two methods for calculating the passenger cost**, depending on whether the flight has departed:

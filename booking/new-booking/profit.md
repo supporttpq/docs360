@@ -36,13 +36,13 @@ The **Profit** tab in **Tourpaq Office** provides a detailed breakdown of **book
    * Click the **Profit** tab to view detailed turnover and cost information.
 2.  **Understand the columns**
 
-    | **Column**   | **Description**                                                          |
-    | ------------ | ------------------------------------------------------------------------ |
-    | **Category** | The **type** of item (for example, Product, Discount/Supplement, Room).  |
-    | **Item**     | The specific product, discount, supplement, room, or service.            |
-    | **Turnover** | The amount the customer pays for each item or service.                   |
-    | **Cost**     | The internal cost associated with each item or service.                  |
-    | **Profit**   | The calculated difference between **Turnover** and **Cost** for the row. |
+    | **Column**   | **Description**                                                                                                                                                                                                                                                                                                                                              |
+    | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+    | **Category** | The **type** of item (for example, Product, Discount/Supplement, Room).                                                                                                                                                                                                                                                                                      |
+    | **Item**     | The specific product, discount, supplement, room, or service.                                                                                                                                                                                                                                                                                                |
+    | **Turnover** | The amount the customer pays for each item or service.                                                                                                                                                                                                                                                                                                       |
+    | **Cost**     | The internal cost associated with each item or service. For a booking with a child transport, the transport cost comes from the child transport when **Real Transport: Use child cost** is checked in System Setup, and from the parent transport when it is unchecked. See [Create New Real Transport](../../real-transports/create-new-real-transport.md). |
+    | **Profit**   | The calculated difference between **Turnover** and **Cost** for the row.                                                                                                                                                                                                                                                                                     |
 3.  **Edit costs**
 
     You can update the **Cost** values manually for the booking when you need to adjust internal margins or align with supplier invoices.
@@ -66,7 +66,7 @@ The **Profit** tab in **Tourpaq Office** provides a detailed breakdown of **book
 
 <figure><img src="../../.gitbook/assets/16.07.2026_11.13.26_REC.png" alt=""><figcaption></figcaption></figure>
 
-*   Click the blue **info** icon next to the hotel cost line to open the detailed **Hotel Cost Price** page in a new window.&#x20;
+*   Click the blue **info** icon next to the hotel cost line to open the detailed **Hotel Cost Price** page in a new window.
 
     <figure><img src="../../.gitbook/assets/16.07.2026_11.14.34_REC.png" alt=""><figcaption></figcaption></figure>
 
