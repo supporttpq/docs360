@@ -2,7 +2,8 @@
 description: >-
   What the Tourpaq XML feed contains, how to set it up for a brand, and where
   each value in the file comes from.
-hidden: true
+keywords:
+  - XML
 ---
 
 # XML feed
